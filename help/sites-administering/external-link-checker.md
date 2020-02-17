@@ -1,0 +1,50 @@
+---
+title: O Verificador de links externos
+seo-title: O Verificador de links externos
+description: Saiba mais sobre o Verificador de links externos no AEM.
+seo-description: Saiba mais sobre o Verificador de links externos no AEM.
+uuid: 09160594-e45f-4604-8b36-f14b148b9f63
+contentOwner: Guillaume Carlino
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: operations
+content-type: reference
+discoiquuid: d1ccd194-8549-4188-8932-7136be1e88a2
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 0a94bf49a7136c5831c42eb274d07517c12014ec
+
+---
+
+
+# O Verificador de links externos{#the-external-link-checker}
+
+Um verificador de links externo é fornecido no AEM. O verificador de links:
+
+* verifica todas as páginas de conteúdo
+* gera uma lista de todos os links válidos e inválidos
+* marca links inválidos como quebrados in situ em páginas de conteúdo individuais
+
+## Como validar links externos {#how-to-validate-external-links}
+
+Para usar o verificador de links externos:
+
+1. Usando **Navegação**, selecione **Ferramentas** e, em seguida, **Sites**.
+1. Selecione Verificador **de links** externos, uma lista de todos os links externos é gerada.
+1. Valide um link específico selecionando-o na lista e, em seguida, clicando em **Verificar**:
+
+   ![](assets/telc-01.png)
+
+   As informações são exibidas:
+
+   * **Status** do link
+   * **URL**
+   * **Referenciador**
+   * hora desde que o link foi **marcado pela última vez** (validado)
+   * o **último status** retornado
+
+   * tempo desde que o link foi **disponibilizado pela última vez**
+   * hora desde que o link foi acessado pela **última vez**
+
+1. Nas páginas de conteúdo individuais, os links inválidos serão exibidos como quebrados:
+
+   ![](assets/chlimage_1-143.png)
