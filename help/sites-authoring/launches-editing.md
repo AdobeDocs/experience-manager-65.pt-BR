@@ -1,0 +1,101 @@
+---
+title: Edição de lançamentos
+seo-title: Edição de lançamentos
+description: 'Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s). '
+seo-description: 'Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s). '
+uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
+contentOwner: Alison Heimoz
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+content-type: reference
+topic-tags: site-features
+discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
+docset: aem65
+legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
+translation-type: tm+mt
+source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+
+---
+
+
+# Edição de lançamentos{#editing-launches}
+
+## Edição de páginas de lançamento {#editing-launch-pages}
+
+Quando um lançamento foi criado para uma página (ou um conjunto de páginas), é possível editar o conteúdo na cópia de lançamento da(s) página(s).
+
+1. Acesse [Lançamento a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
+1. Selecione **Vá para a página** para abrir a página para edição.
+
+### Edição de páginas de lançamento sujeitas a uma live copy {#editing-launch-pages-subject-to-a-live-copy}
+
+Se o seu lançamento se basear em uma [live copy](/help/sites-administering/msm.md), você:
+
+* verá símbolos de bloqueio (pequenos cadeados) ao editar um componente (conteúdo e/ou propriedades).
+* verá a guia **Live Copy** em **Propriedades da página**
+
+Uma live copy é usada para sincronizar o conteúdo *da* ramificação de origem *com* a ramificação de lançamento (para manter seu lançamento atualizado com as alterações feitas na fonte).
+
+Você pode fazer alterações da mesma forma como pode editar uma live copy padrão, por exemplo:
+
+* Clicar em um cadeado fechado interromperá essa sincronização e permitirá que você faça novas atualizações no conteúdo do seu lançamento. Após o desbloqueio (cadeado aberto), suas alterações não serão substituídas por quaisquer alterações feitas no mesmo local na ramificação de origem.
+* **Suspender** (e **Retomar**) herança para uma página específica.
+
+Consulte [Alteração do conteúdo da live copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) para obter mais informações.
+
+## Comparação de uma página de lançamento com sua página de origem {#comparing-a-launch-page-to-its-source-page}
+
+Para acompanhar as alterações feitas, você pode visualizar o lançamento em **Referências** e comparar a página de lançamento com sua página de origem:
+
+1. No console **Sites**, [navegue até a página de origem do seu lançamento e selecione-a](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
+1. Abra o painel **[Referências](/help/sites-authoring/basic-handling.md#references)**e selecione **Lançamentos**.
+1. Selecione seu lançamento específico e depois **Comparar com a origem**:
+
+   ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
+
+1. As duas páginas (lançamento e origem) serão abertas lado a lado.
+
+   Para obter informações completas sobre como usar esse recurso, consulte [Diferencial de página](/help/sites-authoring/page-diff.md).
+
+## Alteração nas páginas de origem usadas {#changing-the-source-pages-used}
+
+A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de páginas de origem para um lançamento:
+
+1. Acesse e selecione o lançamento a partir do seguinte:
+
+   * o [console Lançamentos](/help/sites-authoring/launches.md#the-launches-console):
+
+      * Selecione **Editar**.
+   * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
+
+      * Selecione **Editar lançamento**.
+   As páginas de origem serão mostradas.
+
+1. Faça as alterações necessárias e confirme com **Salvar**.
+
+   >[!NOTE]
+   >
+   >Para adicionar páginas a um lançamento, elas devem estar abaixo de uma raiz de linguagem comum, isto é, dentro de um único site.
+
+## Edição de configuração de lançamento {#editing-a-launch-configuration}
+
+A qualquer momento, você pode editar as propriedades de um lançamento:
+
+1. Acesse e selecione o lançamento a partir do seguinte:
+
+   * o [console Lançamentos](/help/sites-authoring/launches.md#the-launches-console):
+
+      * Selecione **Propriedades**.
+   * [Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis:
+
+      * Selecione **Editar propriedades**.
+   Os detalhes serão mostrados.
+
+1. Faça as alterações necessárias e confirme com **Salvar**.
+
+   Consulte [Lançamentos - a ordem de eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre o propósito e a interação dos campos **Data de lançamento** e **Pronto para produção**.
+
+## Descoberta do status de lançamento de uma página {#discovering-the-launch-status-of-a-page}
+
+O status é mostrado quando você seleciona um lançamento específico na guia Referências (consulte [Lançamentos em Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
+
+![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)
