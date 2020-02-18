@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93f3696242c681a019c2252364fe7cee510cb933
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
@@ -312,11 +312,15 @@ Esta seção contém detalhes e instruções sobre a Configuração da Adobe Ana
 
 **Referências:**
 
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html)
+* [Integração ao Adobe Analytics](../../sites-administering/adobeanalytics.md)
+
+* [Conexão com o Adobe Analytics e criação de estruturas](../../sites-administering/adobeanalytics-connect.md)
+
+* [Visualizar dados de análise de página](../../sites-authoring/pa-using.md)
+
+* [Configuração de análises e relatórios](configure-analytics-forms-documents.md)
+
+* [Exibir e entender relatórios de análise do AEM Forms](view-understand-aem-forms-analytics-reports.md)
 
 ### Configuração do serviço em nuvem do Adobe Analytics {#adobe-analytics-cloud-service-configuration}
 
@@ -432,7 +436,7 @@ Os modelos editáveis incluídos neste pacote também vêm pré-configurados com
 
 Os modelos incluídos neste pacote também suportam o Sistema de estilo:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
+[Sistema de estilos](../../sites-authoring/style-system.md)
 
 #### Logotipos modelo {#template-logos}
 
@@ -446,7 +450,7 @@ Ao editar a página e os modelos de formulário, é possível optar por atualiza
 
 Consulte Edição do conteúdo da página para obter mais informações:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32)
+[Editar conteúdo da página](../../sites-authoring/editing-content.md)
 
 ### Personalização de páginas de sites {#sites-pages-customization}
 
@@ -458,7 +462,7 @@ Essas páginas do site também usam o pacote Grade AEM para controlar o layout d
 
 As páginas incluídas neste pacote também suportam o Sistema de estilo:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
+[Sistema de estilos](../../sites-authoring/style-system.md)
 
 Você também pode consultar o sistema [de estilo de personalização de](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) Modelos para obter a documentação sobre estilos suportados.
 
@@ -480,8 +484,8 @@ Esses formulários podem ser personalizados para se ajustarem a determinados cas
 
 Os formulários adaptáveis também podem ser estilizados usando o Editor de estilos ou o Editor de temas:
 
-* [https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html)
-* [https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html](https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html)
+* [Estilo em linha de componentes de formulário adaptáveis](inline-style-adaptive-forms.md)
+* [Criação e uso de temas](themes.md)
 
 ### Personalização do fluxo de trabalho {#workflow-customization}
 
