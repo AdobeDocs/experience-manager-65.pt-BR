@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 9532c1fb8af37b29285007bc72e86d42d5eb9c4d
+source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
 
 ---
 
@@ -27,7 +27,7 @@ Um componente tally personalizado pode ser criado ao estender a classe tally abs
 
 [A classificação](rating-basics.md) é uma implementação do tally que usa um sistema de estrelas para expressar uma gama de opiniões de positivas a negativas.
 
-A partir do AEM 6.1, o componente de [pesquisa](poll-basics.md) não estará mais disponível.
+A partir do AEM 6.1, o componente de pesquisa não estará mais disponível.
 
 [As revisões](reviews-basics.md) são um componente do quadro SEPA para os cartões que é um híbrido de [comentários](essentials-comments.md) e [classificações](rating-basics.md).
 
