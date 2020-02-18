@@ -185,7 +185,7 @@ Se um modelo de fluxo de trabalho estiver presente na interface clássica, mas e
 
 1. Navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**. Selecione **[!UICONTROL Solicitar ativação]** e selecione **[!UICONTROL Editar]**.
 
-1. Selecione **[!UICONTROL Editar]**, abra o menu Informações **[!UICONTROL da]** página e selecione **[UICONTROL Abrir propriedades]** e vá para a guia **[!UICONTROL Básico]** (se ainda não estiver aberta).
+1. Selecione **[!UICONTROL Editar]**, abra o menu Informações **[!UICONTROL da]** página e selecione **[!UICONTROL Abrir propriedades]** e vá para a guia **[!UICONTROL Básico]** (se ainda não estiver aberta).
 
 1. Adicionar `Workflow : DAM` ao campo **[!UICONTROL Tags]** . Confirme a seleção com a verificação (marca de verificação).
 
