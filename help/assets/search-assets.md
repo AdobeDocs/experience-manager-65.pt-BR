@@ -7,7 +7,7 @@ discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
 
 ---
 
@@ -459,7 +459,7 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 | Ao procurar imagens visualmente semelhantes, uma imagem irrelevante é exibida | Comportamento da pesquisa visual. | O AEM exibe quantos ativos potencialmente relevantes forem possíveis. Imagens menos relevantes, se houver, são adicionadas aos resultados, mas com uma classificação de pesquisa mais baixa. A qualidade das correspondências e a relevância dos ativos pesquisados diminuem à medida que você percorre os resultados da pesquisa. |
 | Ao selecionar e operar em ativos pesquisados, todos os ativos pesquisados não são operados | A opção [!UICONTROL Selecionar tudo] seleciona apenas os primeiros 100 resultados de pesquisa na exibição de cartão e os primeiros 200 resultados de pesquisa na exibição de lista. |  |
 
->[!MORE COMO ESTE]
+>[!MORELIKETHIS]
 >
 >* [Guia de implementação de pesquisa do AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuração avançada de predicados de pesquisa de tags e valores múltiplos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
