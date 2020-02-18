@@ -2,12 +2,9 @@
 title: Pesquisar ativos digitais e imagens no AEM
 description: Saiba como localizar os ativos necessários no AEM usando o painel Filtros e como usar os ativos exibidos na pesquisa.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
-docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
+source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
 
 ---
 
@@ -62,11 +59,15 @@ Você pode descobrir os ativos desejados mais rapidamente a partir da página de
 
 Você pode executar pesquisas de palavras-chave a partir do campo OmniSearch. A pesquisa de palavra-chave não diferencia maiúsculas de minúsculas e é uma pesquisa de texto completo (nos campos de metadados populares). Se mais de uma palavra-chave for pesquisada, o operador padrão entre as palavras-chave será `AND` para pesquisa padrão e será `OR` quando os ativos tiverem tags inteligentes.
 
-Os resultados são classificados por relevância, começando com correspondências mais próximas. Para várias palavras-chave, os resultados mais relevantes são os ativos que contêm ambos os termos em seus metadados. Nos metadados, as palavras-chave que aparecem como tags inteligentes são classificadas mais alto do que as palavras-chave que aparecem em outros campos de metadados. O AEM permite fornecer um termo de pesquisa específico com um peso maior. Além disso, é possível [aumentar a classificação](#searchrank) de alguns ativos direcionados para termos de pesquisa específicos.
+Os resultados são classificados por relevância, começando com correspondências mais próximas. Para várias palavras-chave, os resultados mais relevantes são os ativos que contêm ambos os termos em seus metadados. Nos metadados, as palavras-chave que aparecem como tags inteligentes são classificadas mais alto do que as palavras-chave que aparecem em outros campos de metadados. O AEM permite que você atribua um determinado termo de pesquisa maior peso. Além disso, é possível [aumentar a classificação](#searchrank) de alguns ativos direcionados para termos de pesquisa específicos.
 
-Para encontrar rapidamente os ativos relevantes, a interface avançada fornece mecanismos de filtragem, classificação e seleção. Você pode filtrar os resultados com base em vários critérios e ver o número de ativos pesquisados para vários filtros. Como alternativa, você pode executar novamente a pesquisa alterando a consulta no campo Omnisearch. Quando você altera seus termos de pesquisa ou filtros, os outros filtros permanecem aplicados para preservar o contexto da pesquisa. Quando os resultados forem superiores a 1000, o AEM não exibirá todos os ativos pesquisados e exibirá 1000+ como o número de ativos pesquisados. Isso é para melhorar o desempenho da pesquisa. À medida que você percorre para ver mais ativos, para além de 1000, o número aumenta gradualmente nos passos de 200.
+Para encontrar rapidamente os ativos relevantes, a interface avançada fornece mecanismos de filtragem, classificação e seleção. Você pode filtrar os resultados com base em vários critérios e ver o número de ativos pesquisados para vários filtros. Como alternativa, você pode executar novamente a pesquisa alterando a consulta no campo Omnisearch. Quando você altera seus termos de pesquisa ou filtros, os outros filtros permanecem aplicados para preservar o contexto da pesquisa.
 
-Às vezes, você pode ver alguns ativos inesperados nos resultados da pesquisa. Para obter mais informações, consulte resultados [](#unexpectedresults)inesperados.
+Quando os resultados forem muitos ativos, o AEM exibirá os primeiros 100 na exibição de cartão e 200 na exibição de lista. À medida que os usuários rolam, mais ativos são carregados. Isso é para melhorar o desempenho.
+
+>[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+
+Às vezes, você pode ver alguns ativos inesperados nos resultados da pesquisa. Para obter mais informações, consulte resultados [](#troubleshoot-unexpected-search-results-and-issues)inesperados.
 
 O AEM pode pesquisar vários formatos de arquivo e os filtros de pesquisa podem ser personalizados para atender às suas necessidades comerciais. Entre em contato com o administrador para saber quais opções de pesquisa estão disponíveis para o repositório DAM e quais restrições sua conta tem.
 
@@ -243,7 +244,7 @@ Você pode passar os seguintes parâmetros de solicitação em um URL para inici
 | tipo de ativo (S) | imagens, documentos, multimídia, arquivos | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Use essa opção para filtrar os tipos de ativos com base no valor passado. |
 | root | &lt;caminho_da_pasta> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite que você selecione apenas ativos secundários (diretos/indiretos) na pasta raiz. |
 
-Para acessar a interface do seletor de ativos, acesse `https://[AEM server]:[port]/aem/assetpicker`. Navegue até a pasta desejada e selecione um ou mais ativos. Como alternativa, procure o ativo desejado na caixa Omnisearch, aplique o filtro conforme necessário e selecione-o.
+Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[port]/aem/assetpicker`. Navegue até a pasta desejada e selecione um ou mais ativos. Como alternativa, procure o ativo desejado na caixa Omnisearch, aplique o filtro conforme necessário e selecione-o.
 
 ![Procurar e selecionar ativo no seletor de ativos](assets/assetpicker.png)
 
@@ -258,7 +259,7 @@ O recurso de pesquisa nos ativos AEM tem as seguintes limitações:
 * O AEM pode continuar a mostrar o termo de pesquisa depois que você seleciona as propriedades de um ativo dos resultados pesquisados e cancela a pesquisa. <!-- (CQ-4273540) -->
 * Ao procurar pastas ou arquivos e pastas, os resultados da pesquisa não podem ser classificados em nenhum parâmetro.
 * Se você pressionar return sem digitar nada na barra Omnisearch, o AEM retornará uma lista de somente arquivos e não pastas. Se você pesquisar especificamente por pastas sem usar uma palavra-chave, o AEM não retornará nenhum resultado.
-* Usando a caixa de seleção [!UICONTROL Selecionar tudo] , você só pode selecionar os primeiros 100 ativos pesquisados na exibição de cartão e os primeiros 200 ativos pesquisados na exibição de lista.
+* Usando a caixa de seleção [!UICONTROL Selecionar tudo] , você só pode selecionar os primeiros 100 ativos pesquisados na exibição de cartão e os primeiros 200 ativos pesquisados na exibição de lista. Se você rolar e carregar mais ativos na interface do usuário, poderá selecionar mais usando a opção [!UICONTROL Selecionar tudo] .
 
 Pesquisa visual ou pesquisa de semelhança tem as seguintes limitações:
 
@@ -457,7 +458,7 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 | O filtro de pesquisa/predicado não está disponível | <ul><li>O filtro de pesquisa não está configurado.</li><li>Ele não está disponível para seu logon.</li><li>(Menos provável) As opções de pesquisa não são personalizadas na implantação que você está usando.</li></ul> | <ul><li>Entre em contato com o administrador para verificar se as personalizações de pesquisa estão disponíveis ou não.</li><li>Entre em contato com o administrador para verificar se sua conta tem o privilégio/permissões para usar a personalização.</li><li>Entre em contato com o administrador e verifique as personalizações disponíveis para a implantação dos ativos AEM que você está usando.</li></ul> |
 | Ao procurar imagens visualmente semelhantes, uma imagem esperada está ausente | <ul><li>A imagem não está disponível no AEM.</li><li>A imagem não está indexada. Normalmente, quando é carregado recentemente.</li><li>A imagem não está com tags inteligentes.</li></ul> | <ul><li>Adicione a imagem aos ativos AEM.</li><li>Entre em contato com o administrador para indexar novamente o repositório. Além disso, verifique se você está usando o índice apropriado.</li><li>Entre em contato com o administrador para obter uma tag inteligente dos ativos relevantes.</li></ul> |
 | Ao procurar imagens visualmente semelhantes, uma imagem irrelevante é exibida | Comportamento da pesquisa visual. | O AEM exibe quantos ativos potencialmente relevantes forem possíveis. Imagens menos relevantes, se houver, são adicionadas aos resultados, mas com uma classificação de pesquisa mais baixa. A qualidade das correspondências e a relevância dos ativos pesquisados diminuem à medida que você percorre os resultados da pesquisa. |
-| Ao selecionar e operar em ativos pesquisados, todos os ativos pesquisados não são operados | A opção [!UICONTROL Selecionar tudo] seleciona apenas os primeiros 100 resultados de pesquisa na exibição de cartão e os primeiros 200 resultados de pesquisa na exibição de lista. |  |
+| Ao selecionar e operar nos resultados da pesquisa, todos os ativos pesquisados não são operados | A opção [!UICONTROL Selecionar tudo] seleciona apenas os primeiros 100 resultados de pesquisa na exibição de cartão e os primeiros 200 resultados de pesquisa na exibição de lista. |  |
 
 >[!MORELIKETHIS]
 >
