@@ -3,7 +3,7 @@ title: Adicionar mapas de imagem com hiperlinks para imagens digitais
 description: Saiba como adicionar um mapa de imagem com hiperlinks a uma imagem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: e547dde53011003a2db4814916c3e923da947cce
 
 ---
 
