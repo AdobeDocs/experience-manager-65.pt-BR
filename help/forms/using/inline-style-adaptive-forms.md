@@ -9,12 +9,12 @@ topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
 
-# Estilo em linha de componentes de formulário adaptáveis{#inline-styling-of-adaptive-form-components}
+# Estilo em linha de componentes de formulário adaptáveis {#inline-styling-of-adaptive-form-components}
 
 É possível definir a aparência geral e o estilo de um formulário adaptável especificando estilos usando o editor [de](../../forms/using/themes.md)temas. Além disso, é possível aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações dinamicamente. Os estilos incorporados substituem o estilo fornecido no tema.
 
