@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
 
 ---
 
@@ -174,19 +174,25 @@ Quando você executa um fluxo de trabalho no modo [transitório](/help/sites-dev
 
 ## Disponibilizar modelos de fluxo de trabalho na interface do usuário para toque {#classic2touchui}
 
-Se um modelo de fluxo de trabalho que está presente na interface clássica, mas está ausente no menu pop-up de seleção no painel Linha do tempo da interface de usuário de toque, siga a configuração para disponibilizá-lo. As etapas a seguir ilustram o uso de modelos de fluxo de trabalho do AEM Assets chamados **[!UICONTROL Solicitação de ativação]** e **[!UICONTROL Solicitação de desativação]**.
+Se um modelo de fluxo de trabalho estiver presente na interface clássica, mas estiver ausente no menu pop-up de seleção no painel **[!UICONTROL Linha]** do tempo da interface de usuário de toque, siga a configuração para disponibilizá-lo. As etapas a seguir ilustram o uso do modelo de fluxo de trabalho chamado **[!UICONTROL Solicitação de ativação]**.
 
-1. Confirme se o modelo não está disponível na interface habilitada para toque. Acessar um ativo usando `/assets.html/content/dam` caminho. Selecione o ativo. Abra **[!UICONTROL Linha do tempo]** no painel esquerdo. Clique em **[!UICONTROL Iniciar fluxo de trabalho]** e observe que os modelos **[!UICONTROL Solicitação de ativação]** e **[!UICONTROL Solicitação de desativação]** não estão presentes na lista suspensa.
-1. Clique em **[!UICONTROL Ferramentas > Geral > Marcação]**. Selecione **[!UICONTROL Fluxo de trabalho]**.
-1. Clique em **[!UICONTROL Criar > Criar tag]**. Defina **[!UICONTROL Título]** como `DAM` e **[!UICONTROL Nome]** como `dam`. Clique em **[!UICONTROL Enviar]**.
+1. Confirme se o modelo não está disponível na interface habilitada para toque. Acessar um ativo usando `/assets.html/content/dam` caminho. Selecione um ativo. Abra **[!UICONTROL Linha do tempo]** no painel esquerdo. Clique em **[!UICONTROL Iniciar fluxo de trabalho]** e confirme se o modelo **[!UICONTROL Solicitar ativação]** não está presente na lista suspensa.
 
+1. Navegue por **[!UICONTROL Ferramentas > Geral > Marcação]**. Selecione **[!UICONTROL Fluxo de trabalho]**.
+
+1. Selecione **[!UICONTROL Criar > Criar tag]**. Defina **[!UICONTROL Título]** como `DAM` e **[!UICONTROL Nome]** como `dam`. Selecione **[!UICONTROL Enviar]**.
    ![Criar tag no modelo de fluxo de trabalho](assets/workflow_create_tag.png)
 
-1. Clique em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**. Selecione **[!UICONTROL Solicitar ativação]** (ou **[!UICONTROL Solicitar desativação]**). Clique em **[!UICONTROL Editar]**.
-1. No sidekick, vá para a guia **[!UICONTROL Página]** . Open **[!UICONTROL Page Properties]**.
-1. Adicionar `Workflow : DAM` ao campo **[!UICONTROL Tags/Palavras-chave]** . Clique em **[!UICONTROL OK]**. Clique em **[!UICONTROL Salvar]**.
+1. Navegue até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**. Selecione **[!UICONTROL Solicitar ativação]** e selecione **[!UICONTROL Editar]**.
 
+1. Selecione **[!UICONTROL Editar]**, abra o menu Informações **[!UICONTROL da]** página e selecione **[UICONTROL Abrir propriedades]** e vá para a guia **[!UICONTROL Básico]** (se ainda não estiver aberta).
+
+1. Adicionar `Workflow : DAM` ao campo **[!UICONTROL Tags]** . Confirme a seleção com a verificação (marca de verificação).
+
+1. Confirme a adição da tag com **[!UICONTROL Salvar e fechar]**.
    ![Editar propriedades da página do modelo](assets/workflow_model_edit_activation1.png)
+
+1. Conclua o processo com a **[!UICONTROL sincronização]**. O fluxo de trabalho agora está disponível na interface habilitada para toque.
 
 ### Configuração de um fluxo de trabalho para suporte a vários recursos {#configuring-a-workflow-for-multi-resource-support}
 
