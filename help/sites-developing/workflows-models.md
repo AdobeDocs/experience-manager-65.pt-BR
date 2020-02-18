@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
+source-git-commit: 9f260d3ccb98409790cd18b2540329fc36a07c05
 
 ---
 
@@ -48,8 +48,9 @@ Para criar um novo fluxo de trabalho com o editor:
 >Se estiver criando modelos de forma programática (usando um pacote crx), você também poderá criar uma subpasta dentro de:
 >
 >`/var/workflow/models`
-
+>
 >Por exemplo, `/var/workflow/models/prototypes`
+>
 >Essa pasta pode ser usada para [gerenciar o acesso aos modelos dessa pasta](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
 ## Editar um fluxo de trabalho {#editing-a-workflow}
@@ -89,7 +90,8 @@ Ao abrir um modelo [](/help/sites-developing/workflows.md#workflow-types) Padrã
 * permitir que você faça alterações
 
 >[!NOTE]
-Consulte [Locais de modelos](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) de fluxo de trabalho para obter mais informações.
+>
+>Consulte [Locais de modelos](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) de fluxo de trabalho para obter mais informações.
 
 ![wf-22](assets/wf-22.png)
 
@@ -102,7 +104,8 @@ Quando você edita um modelo, as etapas disponíveis são exibidas nos vários g
 ![wf-10](assets/wf-10.png)
 
 >[!NOTE]
-Para obter informações sobre os componentes de etapa primária instalados com o AEM, consulte Referência [de etapas do](/help/sites-developing/workflows-step-ref.md)fluxo de trabalho.
+>
+>Para obter informações sobre os componentes de etapa primária instalados com o AEM, consulte Referência [de etapas do](/help/sites-developing/workflows-step-ref.md)fluxo de trabalho.
 
 Para adicionar etapas ao modelo de fluxo de trabalho:
 
@@ -144,7 +147,8 @@ Você pode **Configurar** e personalizar o comportamento de uma etapa do fluxo d
 
    * Clique duas vezes na etapa.
    >[!NOTE]
-   Para obter informações sobre os componentes de etapa primária instalados com o AEM, consulte Referência [de etapas do](/help/sites-developing/workflows-step-ref.md)fluxo de trabalho.
+   >
+   >Para obter informações sobre os componentes de etapa primária instalados com o AEM, consulte Referência [de etapas do](/help/sites-developing/workflows-step-ref.md)fluxo de trabalho.
 
 1. Configure as propriedades **da** etapa conforme necessário; as propriedades disponíveis dependem do tipo de etapa, também pode haver várias guias disponíveis. Por exemplo, a Etapa **padrão do** participante, presente em um novo fluxo de trabalho como `Step 1`:
 
@@ -170,7 +174,8 @@ Você pode criar um modelo de fluxo de trabalho [Transitório](/help/sites-devel
    Consulte [Sincronizar seu fluxo de trabalho](#sync-your-workflow-generate-a-runtime-model) para obter detalhes.
 
 >[!NOTE]
-Quando você executa um fluxo de trabalho no modo [transitório](/help/sites-developing/workflows.md#transient-workflows) , o AEM não armazena nenhum histórico de fluxo de trabalho. Portanto, a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) não exibe nenhuma informação relacionada a esse fluxo de trabalho. [](/help/sites-authoring/basic-handling.md#timeline)
+>
+>Quando você executa um fluxo de trabalho no modo [transitório](/help/sites-developing/workflows.md#transient-workflows) , o AEM não armazena nenhum histórico de fluxo de trabalho. Portanto, a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) não exibe nenhuma informação relacionada a esse fluxo de trabalho. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Disponibilizar modelos de fluxo de trabalho na interface do usuário para toque {#classic2touchui}
 
@@ -214,7 +219,8 @@ Você pode configurar um modelo de fluxo de trabalho para o suporte [a](/help/si
 [As Etapas](/help/sites-developing/workflows.md#workflow-stages) do fluxo de trabalho ajudam a visualizar o progresso de um fluxo de trabalho ao manipular tarefas.
 
 >[!CAUTION]
-Se os estágios do fluxo de trabalho forem definidos em Propriedades **da** página, mas não forem usados para nenhuma das etapas do fluxo de trabalho, a barra de progresso não mostrará nenhum progresso (independentemente da etapa do fluxo de trabalho atual).
+>
+>Se os estágios do fluxo de trabalho forem definidos em Propriedades **da** página, mas não forem usados para nenhuma das etapas do fluxo de trabalho, a barra de progresso não mostrará nenhum progresso (independentemente da etapa do fluxo de trabalho atual).
 
 As fases a disponibilizar são definidas nos modelos de fluxo de trabalho; os modelos de fluxo de trabalho existentes podem ser atualizados para incluir definições de estágio. É possível definir qualquer número de estágios para o modelo de fluxo de trabalho.
 
@@ -340,7 +346,8 @@ Para ilustrar algumas das possibilidades de criação de um fluxo de trabalho, o
    * Activate **Notify user via email**.
    * Selecione `Administrator` ( `admin`) para o campo **Usuário/Grupo** .
    >[!NOTE]
-   Para que emails sejam enviados, [os detalhes do serviço de email e da conta do usuário precisam ser configurados](/help/sites-administering/notification.md).
+   >
+   >Para que emails sejam enviados, [os detalhes do serviço de email e da conta do usuário precisam ser configurados](/help/sites-administering/notification.md).
 
 1. Confirme as atualizações com a marca de verificação.
 
@@ -393,7 +400,8 @@ Para definir uma regra OU, proceda da seguinte forma:
    `/apps/myapp/workflow/scripts`
 
    >[!NOTE]
-   Os scripts devem ter uma [função `check()`](#function-check) que retorne um booleano.
+   >
+   >Os scripts devem ter uma [função `check()`](#function-check) que retorne um booleano.
 
 1. Edite o fluxo de trabalho e adicione **OU Dividir** ao modelo.
 1. Edite as propriedades da **Ramificação 1** da **OU Dividir**:
@@ -403,7 +411,8 @@ Para definir uma regra OU, proceda da seguinte forma:
    * Como **Regra**, defina o caminho para o script. Por exemplo:
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
-   Você pode trocar a ordem de ramificação, se necessário.
+   >
+   >Você pode trocar a ordem de ramificação, se necessário.
 
 1. Edite as propriedades da **Ramificação 2** da Divisão **OU**.
 
@@ -418,7 +427,8 @@ Para definir uma regra OU, proceda da seguinte forma:
 #### Function Check() {#function-check}
 
 >[!NOTE]
-Consulte [Uso do ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+>
+>Consulte [Uso do ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
 
 O script de amostra a seguir retornará `true` se o nó estiver `JCR_PATH` localizado em `/content/we-retail/us/en`:
 
