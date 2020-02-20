@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 3ba9308f7a6252f7ea6ae0de6455ab3e97e3b8dd
+source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
 
 ---
 
@@ -174,6 +174,22 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
 
 1. Faça logon na instância do AEM e crie uma Comunicação interativa. Para usar a comunicação interativa mencionada no código de amostra fornecido abaixo, [clique aqui](assets/SimpleMediumIC.zip).
 1. [Crie e implante um projeto AEM usando o Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) na sua instância do AEM.
+1. Adicione o SDK do cliente do [AEM Forms versão 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou posterior e o mais recente Jar [do](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) AEM Uber na lista de dependências do arquivo POm do seu projeto AEM. Por exemplo,
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aemfd</groupId>
+           <artifactId>aemfd-client-sdk</artifactId>
+           <version>6.0.122</version>
+       </dependency>
+       <dependency>
+          <groupId>com.adobe.aem</groupId>
+          <artifactId>uber-jar</artifactId>
+          <version>6.5.0</version>
+          <classifier>apis</classifier>
+          <scope>provided</scope>
+       </dependency>
+   ```
 1. Abra o projeto Java e crie um arquivo .java, por exemplo CCMBatchServlet.java. Adicione o seguinte código ao arquivo:
 
    ```java
@@ -271,7 +287,7 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
                            throw new Exception("Invalid JSON Data. File name : " + filePath, ex);
                        }
                    }
-                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/testsample/mediumic").build();
+                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/[path of the interactive communcation]").build();
                    BatchConfig batchConfig = batchBuilderFactory.getBatchConfigBuilder().setBatchType(BatchType.WEB_AND_PRINT).build();
                    BatchResult batchResult = batchGeneratorService.generateBatch(batchInput, batchConfig);
                    List<RecordResult> recordList = batchResult.getRecordResults();
@@ -338,9 +354,7 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
    * Quando você especifica as opções IMPRIMIR e WEB, os documentos PDF e um arquivo JSON por registro são gerados.
 
 1. [Use o maven para implantar o código atualizado na sua instância](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)do AEM.
-1. Chame a API de lote para gerar a comunicação interativa. A API em lote imprime um fluxo de arquivos PDF e .json dependendo do número de registros. Você pode usar o arquivo JSON para [preencher previamente um modelo](#web-template)da Web.
-
-   Se você usar o código acima, a API será implantada em `http://localhost:4502/bin/batchServlet`. Se você usar o exemplo de comunicação interativa fornecido na etapa 1, poderá usar o [records.json](assets/records.json) para gerar uma comunicação interativa. Por exemplo, `http://localhost:4502/bin/batchServlet?filePath=C:/aem/records.json>.` ele imprime e retorna um fluxo de um PDF e um arquivo JSON.
+1. Chame a API de lote para gerar a comunicação interativa. A API em lote imprime um fluxo de arquivos PDF e .json dependendo do número de registros. Você pode usar o arquivo JSON para [preencher previamente um modelo](#web-template)da Web. Se você usar o código acima, a API será implantada em `http://localhost:4502/bin/batchServlet`. O código imprime e retorna um fluxo de arquivos PDF e JSON.
 
 ### Preencher previamente um modelo da Web {#web-template}
 
