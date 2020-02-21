@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 ---
 
@@ -152,16 +152,17 @@ Para excluir um parágrafo:
 >[!NOTE]
 >
 >Caso tenha configurado as [Propriedades do usuário para exibir a barra de ferramentas de edição global,](/help/sites-classic-ui-authoring/author-env-user-props.md) também é possível executar determinadas ações nos parágrafos utilizando os botões **Copiar**, **Cortar**, **Colar**, **Excluir** disponíveis.
-
->Vários [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) também estão disponíveis.
 >
+>Vários [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) também estão disponíveis.
+
 ## Cortar/Copiar/Colar um componente {#cut-copy-paste-a-component}
 
 Como ao [Excluir um componente](#deleting-a-component), você pode usar o menu de contexto para copiar, cortar e/ou colar um componente
 
 >[!NOTE]
-Caso tenha configurado as [Propriedades do usuário para exibir a barra de ferramentas de edição global,](/help/sites-classic-ui-authoring/author-env-user-props.md) também é possível executar determinadas ações nos parágrafos utilizando os botões **Copiar**, **Cortar**, **Colar**, **Excluir** disponíveis.
-
+>
+>Caso tenha configurado as [Propriedades do usuário para exibir a barra de ferramentas de edição global,](/help/sites-classic-ui-authoring/author-env-user-props.md) também é possível executar determinadas ações nos parágrafos utilizando os botões **Copiar**, **Cortar**, **Colar**, **Excluir** disponíveis.
+>
 >Vários [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) também estão disponíveis.
 
 >[!NOTE]
