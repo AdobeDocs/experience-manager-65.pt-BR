@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 2b8d64082e3ba837c057ab5ee8c45ea0735ef6d0
 
 ---
 
@@ -423,8 +423,15 @@ Quando quiser enviar a mesma carta em idiomas diferentes para seus clientes, loc
 1. Toque em **OK** no alerta. O Gerenciamento de correspondência baixa um arquivo zip em seu computador com o nome DataDictionary-&lt;Nome>.zip.
 1. O arquivo Zip contém um arquivo .properties. Esse arquivo define o dicionário de dados baixado. O conteúdo do arquivo de propriedade é semelhante ao seguinte:
 
-   # Qua 20 de maio 16:06:23 BST 2015
-   DataDictionary.EmployeeDD.description=DataDictionary.EmployeeDD.displayName=EmployeeDataDictionaryDataDictionaryElement.name.description=DataDictionaryElement.name.displayName=nameDataDictionaryElement.people.description=DataDictionaryElement.people.displayName=people
+   ```
+   #Wed May 20 16:06:23 BST 2015
+   DataDictionary.EmployeeDD.description=
+   DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
+   DataDictionaryElement.name.description=
+   DataDictionaryElement.name.displayName=name
+   DataDictionaryElement.person.description=
+   DataDictionaryElement.person.displayName=person
+   ```
 
    A estrutura do arquivo de propriedades define uma linha cada para a descrição e o nome de exibição para o dicionário de dados e cada elemento do dicionário de dados no dicionário de dados. Além disso, o arquivo de propriedades define uma linha para um valor enum definido para cada elemento do dicionário de dados. Como ocorre com um dicionário de dados, o arquivo de propriedades correspondente pode ter várias definições de elementos do dicionário de dados. Além disso, o arquivo pode conter as definições de um ou mais conjuntos de valores enum.
 
