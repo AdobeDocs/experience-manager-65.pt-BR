@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: d522c5ec6c72a9fd391d021f2fac37f88c686bd9
 
 ---
 
@@ -153,16 +153,16 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 
 * adicionar propriedades de pontuação e marcação
 
-       &quot;
- regras de     pontuação = [/etc/community/scoring/rules/comments-scoring,
-     /etc/community/scoring/rules/forums-scoring]
-     &quot;
-     
- &quot;     
-     
-     
-     Regras de classificaçãoClassificação =[/etc/community/badging/rules/comments-scoring,/etc/community/rules/forums-scoring]&quot;
-   
+   ```
+   scoringRules = [/etc/community/scoring/rules/comments-scoring,
+   /etc/community/scoring/rules/forums-scoring]
+   ```
+
+   ```
+   badgingRules =[/etc/community/badging/rules/comments-scoring,
+   /etc/community/badging/rules/forums-scoring]
+   ```
+
 * localizar o nó do componente do fórum
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -184,15 +184,15 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 * adicionar propriedades de pontuação e marcação
 
    ```
-       scoringRules = [/etc/community/scoring/rules/comments-scoring,
-        /etc/community/scoring/rules/forums-scoring]
-       ```
-   
-       ```
-       badgingRules =[/etc/community/badging/rules/comments-scoring,
-        /etc/community/badging/rules/forums-scoring]
-       ```
-   
+   scoringRules = [/etc/community/scoring/rules/comments-scoring,
+   /etc/community/scoring/rules/forums-scoring]
+   ```
+
+   ```
+   badgingRules =[/etc/community/badging/rules/comments-scoring,
+   /etc/community/badging/rules/forums-scoring]
+   ```
+
 * localizar o nó do componente do fórum
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
