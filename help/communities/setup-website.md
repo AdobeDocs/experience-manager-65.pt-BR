@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
 
 ---
 
@@ -38,9 +38,9 @@ O código neste tutorial dependerá do nome da pasta principal ser o mesmo para 
 >* Nomes de nó podem conter espaços, mas quando usados em um URI, o espaço deve ser codificado como &#39;%20&#39; ou &#39;+&#39;
 >* Os nomes de nó podem conter hifens e sublinhados, mas devem ser codificados quando referenciados como um nome de pacote dentro de um arquivo Java. Os hífens e os sublinhados são escapados com o sublinhado seguido pelo valor unicode:
    >
-   >  
-* hífen torna-se &#39;_002d&#39;
->  * underscore torna-se &#39;_005f&#39;
+   >   
+   * hífen torna-se &#39;_002d&#39;
+   >   * underscore torna-se &#39;_005f&#39;
 
 
 ## Configurar o diretório do aplicativo (/apps) {#setup-the-application-directory-apps}
