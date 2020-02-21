@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8f90dc4865126d52e04effc9197ef7145b1a167e
+source-git-commit: 8ae69f5bb67d51d759f143a076fef4f5f0375809
 
 ---
 
@@ -52,7 +52,7 @@ Execute as seguintes etapas para alterar o cronograma de publicação:
 >Se você estiver executando sua implementação do AEM Forms em um cluster, execute as seguintes etapas em cada nó do cluster.
 
 1. Pare a instância do servidor do AEM Forms.
-1. 
+1. &#x200B;
 
    * (Para Windows) Abra o `[JBoss root]/bin/run.conf.bat` arquivo em um editor.
    * (Para Linux, AIX e Solaris) `[JBoss root]/bin/run.conf.sh` em um editor.
