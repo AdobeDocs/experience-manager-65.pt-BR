@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
 
 ---
 
@@ -100,7 +100,7 @@ O arquivo map.pdf e o arquivo Direcções.pdf devem ser colocados em um objeto d
 
 >[!NOTE]
 >
->Um `AssemblerResult` objeto, que contém um objeto de coleção, será retornado se você chamar a operação `invokeDDX` . Essa operação é usada quando você passa dois ou mais documentos PDF de entrada para o serviço Assembler. No entanto, se você enviar apenas um PDF de entrada para o serviço Assembler e esperar apenas um documento de retorno, chame a `invokeOneDocument` operação. Ao invocar esta operação, um único documento é retornado. Para obter informações sobre como usar essa operação, consulte [Montagem de documentos]PDF criptografados (/help/forms/develop/assembling-encrypted-pdf-documents-assembling assembling-encrypted-pdf-documents-assembling.md#assembling-encrypted-pdf-documents).
+>Um `AssemblerResult` objeto, que contém um objeto de coleção, será retornado se você chamar a operação `invokeDDX` . Essa operação é usada quando você passa dois ou mais documentos PDF de entrada para o serviço Assembler. No entanto, se você enviar apenas um PDF de entrada para o serviço Assembler e esperar apenas um documento de retorno, chame a `invokeOneDocument` operação. Ao invocar esta operação, um único documento é retornado. Para obter informações sobre como usar essa operação, consulte [Montagem de documentos](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents)PDF criptografados.
 
 **Definir opções de tempo de execução**
 
