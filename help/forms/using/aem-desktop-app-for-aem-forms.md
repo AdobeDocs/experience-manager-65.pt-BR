@@ -10,7 +10,7 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 6fa293028332596bb93013119b4339c7721eb536
+source-git-commit: 3460909eb77cc078b728d1af4becd47cc4377b73
 
 ---
 
@@ -34,7 +34,7 @@ Você pode usar o aplicativo para sincronizar arquivos binários do AEM Forms do
 O aplicativo de desktop AEM usa o protocolo WebDAV no Microsoft Windows e SMB1 no Mac OS X para se conectar a um servidor de formulários AEM. O servidor AEM Forms não está habilitado para sincronizar arquivos binários e outros ativos com um cliente WebDAV ou SMB. Execute as seguintes etapas para ativar os formulários AEM para o aplicativo de desktop AEM:
 
 1. Faça logon no AEM Forms como administrador.
-1. Na instância do autor, clique em ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Ferramentas **![martelo](assets/hammer.png)**> Implantação > Operações > Console]**da Web. O Console da Web é aberto em uma nova janela.
+1. Na instância do autor, clique em ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Ferramentas]** ![martelo](assets/hammer.png) **[!UICONTROL > Implantação > Operações > Console]** da Web. O Console da Web é aberto em uma nova janela.
 1. Na janela Console da Web, localize e abra a opção Configuração **[!UICONTROL do complemento]** FormsManager.
 1. Na caixa de diálogo Configuração do complemento do FormsManager, desmarque a caixa de seleção Recursos **[!UICONTROL de sincronização]** assíncrona e clique em **[!UICONTROL Salvar]**.
 1. Reinicie o servidor do AEM Forms. Após a reinicialização, o servidor do AEM Forms é habilitado a aceitar e compartilhar conteúdo com aplicativos de desktop do AEM.
