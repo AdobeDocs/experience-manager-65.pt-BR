@@ -4,7 +4,7 @@ seo-title: Definir configurações de Ausência Temporária
 description: Configurar configurações de Ausência Temporária
 seo-description: Definir configurações de Ausência Temporária
 translation-type: tm+mt
-source-git-commit: 52e4564ecab61cedaf3aca3d10339f6bcee2f71e
+source-git-commit: 7ed5c2d0121029811d8ddeca3b1121912bc761f4
 
 ---
 
@@ -48,7 +48,7 @@ Execute as seguintes etapas para Ativar a configuração Fora do escritório par
 
    Repita a etapa para adicionar mais destinatários. <br>
 
-   [!NOTE]
+   >[!NOTE]
    >A ordem dos destinatários é importante. Quando um item é atribuído a um usuário que ativou a configuração de não-escritório, o item é avaliado em relação à lista de destinatários especificados na ordem em que os destinatários são adicionados. Quando um item corresponde aos critérios, ele é atribuído ao destinatário e o destinatário seguinte não está marcado.
 
 1. Toque em **[!UICONTROL Salvar]**. A configuração entra em vigor na data e hora de início especificadas. Se você fizer logon enquanto estiver fora do escritório, não será considerado no escritório até que você altere suas configurações.
@@ -56,9 +56,9 @@ Execute as seguintes etapas para Ativar a configuração Fora do escritório par
 Agora, os itens atribuídos a você durante o período Fora do escritório são automaticamente atribuídos ao destinatário especificado.\
 ![Fora do escritório](assets/out-of-office.png)
 
-[!NOTE]
+>[!NOTE]
 >(Somente para itens de fluxo de trabalho centrados no Forms) Ative **Permitir que o destinatário delegue usando a opção de configurações** &#39;Fora do Office&#39; da etapa de tarefa **** Atribuir no fluxo de trabalho. Somente os itens com a opção mencionada acima ativada são delegados a outros usuários.
-> 
+
 ## Limitações {#limitations}
 
 * Não há suporte para a atribuição de itens a um grupo.
