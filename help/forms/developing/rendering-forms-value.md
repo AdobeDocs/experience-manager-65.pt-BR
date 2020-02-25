@@ -138,7 +138,7 @@ Renderize um formulário por valor usando a API de formulários (Java):
 
 **Consulte também:**
 
-[Renderização de formulários por valor](/help/forms/develop/rendering-forms-rendering-forms-value-rendering-forms-forms.md#rendering-forms-by-value)
+[Renderização de formulários por valor](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
 
 [Início rápido (modo SOAP): Renderização por valor usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
