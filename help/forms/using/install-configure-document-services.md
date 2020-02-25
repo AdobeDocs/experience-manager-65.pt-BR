@@ -415,6 +415,7 @@ O pacote complementar AEM Forms é um aplicativo implantado no AEM. O pacote con
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Salve e feche o arquivo.
 
 ### Configurar o serviço do gerenciador de fontes {#configuring-the-font-manager-service}

@@ -190,6 +190,7 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
           <scope>provided</scope>
        </dependency>
    ```
+
 1. Abra o projeto Java e crie um arquivo .java, por exemplo CCMBatchServlet.java. Adicione o seguinte código ao arquivo:
 
    ```java

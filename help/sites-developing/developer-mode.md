@@ -36,16 +36,13 @@ Isso ajuda um desenvolvedor a:
 >
 >* Está disponível somente na interface habilitada para toque (ao editar páginas).
 >* Não está disponível em dispositivos móveis ou janelas pequenas na área de trabalho (devido a restrições de espaço).
-   >
-   >    
-   * Isso ocorre quando a largura é inferior a 1024px.
 >
-* Exige as permissões/privilégios apropriados:
-
-   * O acesso ao modo Desenvolvedor é concedido aos usuários que têm acesso de gravação `/apps`.
-
-
-
+>    * Isso ocorre quando a largura é inferior a 1024px.
+>
+>* Exige as permissões/privilégios apropriados:
+>
+>    * O acesso ao modo Desenvolvedor é concedido aos usuários que têm acesso de gravação `/apps`.
+>
 
 >[!CAUTION]
 >

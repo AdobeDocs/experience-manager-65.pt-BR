@@ -114,7 +114,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 
 * C significa que esta entrada provém do cliente (é uma solicitação para uma página da Web)
 * 0 é o número da conexão (o contador de conexão é iniciado em 0)
-* # 00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
+* &#x200B;# 00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
 * [GET &lt;?>] é o conteúdo da solicitação, por exemplo, um dos cabeçalhos HTTP (url).
 
 Quando uma conexão é fechada, as seguintes informações são registradas:

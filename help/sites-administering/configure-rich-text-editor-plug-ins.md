@@ -282,19 +282,18 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
 >
 >O Editor de Rich Text usa um elemento DOM de contêiner com uma ID `CQrte` que pode ser usada para fornecer estilos diferentes para exibição e edição:
 >
->
-```>
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
->```>
->```>
+>```
+>
+>```
 >#CQrte td {
 > // defines the style for editing
 > }
->```>
-
-
+>```
+>
 
 ### Especificar os Estilos disponíveis na lista pop-up {#stylesindropdown}
 

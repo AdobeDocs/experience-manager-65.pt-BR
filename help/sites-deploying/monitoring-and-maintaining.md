@@ -358,27 +358,33 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
 
          Valor: especificar, se for caso disso, o controlo da rotação dos ficheiros por dimensão/data;por exemplo, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` controla a rotação do arquivo de log ao configurar:
-   * um tamanho máximo de arquivo
-   * uma programação de data/hora
-   para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
-   * Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, isso será considerado como o número de bytes, ou você poderá adicionar um dos indicadores de tamanho - `KB`, `MB`ou `GB` (caso seja ignorado).
-   * Uma programação de hora/data pode ser especificada como um `java.util.SimpleDateFormat` padrão. Define o período após o qual o arquivo será girado; também o sufixo anexado ao arquivo girado (para identificação).
-   O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
-   Assim, por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de registro depois disso ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. O registro para o dia 21 de janeiro será enviado para (um novo e vazio) ../logs/error.log até que seja lançado na próxima mudança de dia.
-       | `&#39;.&#39;
-    aaaa-MM&quot;|Rotação no início de cada mês|
- |—|—|     | &#39;&#39;.&#39;aaaa-ww`|Rotação no primeiro dia de cada semana (depende da localidade). |
-       | `&#39;.&#39;aaaa-MM-dd`|Rotação à meia-noite todos os dias. |
-       | `&#39;.&#39;aaaa-MM-dd-a&quot;|Rotação à meia-noite e ao meio-dia de cada dia. |
-       | `&#39;.&#39;aaaa-MM-dd-HH`|Rotação no topo de cada hora. |
-       | `&#39;.&#39;aaaa-MM-dd-HH-mm&quot;|Rotação no início de cada minuto. 
- |    
-      
-Nota: Ao especificar uma data/hora:       1. 
- O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples ( &quot;&#39;);       isso serve para evitar que determinados caracteres sejam interpretados como letras padrão.
-       1. Use somente caracteres permitidos para um nome de arquivo válido em qualquer lugar na opção.
-   
+   >
+   >`org.apache.sling.commons.log.file.size` controla a rotação do arquivo de log ao configurar:
+   >
+   >* um tamanho máximo de arquivo
+   >* uma programação de data/hora
+   >
+   >para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
+   >
+   >* Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, isso será considerado como o número de bytes, ou você poderá adicionar um dos indicadores de tamanho - `KB`, `MB`ou `GB` (caso seja ignorado).
+   >* Uma programação de hora/data pode ser especificada como um `java.util.SimpleDateFormat` padrão. Define o período após o qual o arquivo será girado; também o sufixo anexado ao arquivo girado (para identificação).
+   >
+   >O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
+   >
+   >Assim, por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de registro depois disso ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. O registro para o dia 21 de janeiro será enviado para (um novo e vazio) ../logs/error.log até que seja lançado na próxima mudança de dia.
+   >
+   >| `&#39;.&#39;aaaa-MM&quot;|Rotação no início de cada mês|
+   >|---|---|
+   >| &#39;&#39;.&#39;aaaa-ww`|Rotação no primeiro dia de cada semana (depende da localidade). |
+   >| `&#39;.&#39;aaaa-MM-dd`|Rotação à meia-noite todos os dias. |
+   >| `&#39;.&#39;aaaa-MM-dd-a&quot;|Rotação à meia-noite e ao meio-dia de cada dia. |
+   >| `&#39;.&#39;aaaa-MM-dd-HH`|Rotação no topo de cada hora. |
+   >| `&#39;.&#39;aaaa-MM-dd-HH-mm&quot;|Rotação no início de cada minuto. |
+   >
+   >Nota: Ao especificar uma data/hora:
+   >1. O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples ( &quot;&#39;);
+   >   isso serve para evitar que determinados caracteres sejam interpretados como letras padrão.
+   >1. Use somente caracteres permitidos para um nome de arquivo válido em qualquer lugar na opção.
 
 1. Leia seu novo arquivo de log com a ferramenta escolhida.
 

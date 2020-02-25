@@ -576,8 +576,7 @@ Para obter a exclusão das classes compiladas dos JSPs, configuramos o plug-in M
 >
 >Por exemplo, se você incluir `/libs/foundation/global.jsp`, poderá usar a seguinte configuração para a configuração `maven-resources-plugin` em vez da configuração acima, que ignora completamente `/libs`.
 >
->
-```
+>```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -586,6 +585,7 @@ Para obter a exclusão das classes compiladas dos JSPs, configuramos o plug-in M
 >       </includes>  
 >   </resource>  
 >```
+>
 
 ### Como trabalhar com sistemas SCM {#how-to-work-with-scm-systems}
 

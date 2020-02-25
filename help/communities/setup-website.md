@@ -37,11 +37,9 @@ O código neste tutorial dependerá do nome da pasta principal ser o mesmo para 
 >* Os nomes vistos no CRXDE são nomes de nós que formam o caminho para o conteúdo endereçável
 >* Nomes de nó podem conter espaços, mas quando usados em um URI, o espaço deve ser codificado como &#39;%20&#39; ou &#39;+&#39;
 >* Os nomes de nó podem conter hifens e sublinhados, mas devem ser codificados quando referenciados como um nome de pacote dentro de um arquivo Java. Os hífens e os sublinhados são escapados com o sublinhado seguido pelo valor unicode:
-   >
-   >   
-   * hífen torna-se &#39;_002d&#39;
-   >   * underscore torna-se &#39;_005f&#39;
-
+>
+>   * hífen torna-se &#39;_002d&#39;
+>   * underscore torna-se &#39;_005f&#39;
 
 ## Configurar o diretório do aplicativo (/apps) {#setup-the-application-directory-apps}
 

@@ -138,12 +138,9 @@ Para abrir o fragmento para edição:
    >[!NOTE]
    >
    >1. Uma mensagem será exibida quando o fragmento já estiver referenciado em uma página de conteúdo.
-      >
-      >
-      >
-
-   2. O painel lateral pode ser oculto/exibido usando o ícone **Alternar painel** lateral.
-
+   >
+   >
+   >2. O painel lateral pode ser oculto/exibido usando o ícone **Alternar painel** lateral.
 
 1. Navegue pelos três modos usando os ícones no painel lateral:
 

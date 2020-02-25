@@ -1318,11 +1318,11 @@ Para ilustrar essas etapas, o exemplo a seguir define um relatório que lista to
    >
    >É o mesmo que as definições:
    >
-   >
-   ```
+   >```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
+   >
    >Quando a função simplesmente retorna o valor recebido.
 
 1. Defina seu design de relatório. Por exemplo `osgireport[cq:Page]` em `/etc/designs/reports`.
@@ -1389,13 +1389,13 @@ Uma instância do seu novo relatório agora pode ser criada:
    >
    >Como este exemplo não tem nenhuma coluna agrupável, os gráficos não estarão disponíveis. Para ver gráficos, defina `groupable` como `true`:
    >
-   >
-   ```
+   >```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Configuração dos serviços de estrutura de relatórios {#configuring-the-report-framework-services}
 

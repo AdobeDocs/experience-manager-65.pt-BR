@@ -60,10 +60,8 @@ Para casos de uso mais avançados, o MSM também pode ser usado em mestres de id
 >Para todos os casos de uso, é recomendável ler as seguintes práticas recomendadas:
 >
 >* [Práticas recomendadas para a MSM](/help/sites-administering/msm-best-practices.md); em particular:
-   >
-   >   
-   * [Criar site](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [Sites MSM e multilíngues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [Criar site](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [Sites MSM e multilíngues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Práticas recomendadas para tradução](/help/sites-administering/tc-bp.md)
-
