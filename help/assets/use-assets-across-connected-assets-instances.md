@@ -3,7 +3,7 @@ title: Usar ativos conectados para compartilhar ativos DAM no fluxo de trabalho 
 description: Use os ativos disponíveis em uma implantação remota dos ativos Adobe Experience Manager ao criar suas páginas da Web em outra implantação do Site do Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a107f3d3f10e2f5b5aed7722aee467a838f9d13d
+source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
 
 ---
 
@@ -27,9 +27,9 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 * Os usuários fazem parte de grupos de usuários apropriados em cada implantação.
 * Para os tipos de implantação do Adobe Experience Manager, um dos critérios suportados é atendido. Os ativos AEM 6.5 funcionam com o AEM como um serviço em nuvem. Para obter mais informações, consulte Funcionalidade de ativos [conectados no AEM como um serviço](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)em nuvem.
 
-   |  | AEM Sites como um serviço em nuvem | AEM 6.5 Sites no AMS | Sites do AEM 6.5 no local |
+   |  | AEM Sites como Cloud Service | AEM 6.5 Sites no AMS | Sites do AEM 6.5 no local |
    |---|---|---|---|
-   | **AEM Assets como um serviço em nuvem** | Suportado | Suportado | Suportado |
+   | **Ativos AEM como Cloud Service** | Suportado | Suportado | Suportado |
    | **AEM 6.5 Assets no AMS** | Não suportado | Suportado | Suportado |
    | **Ativos no local do AEM 6.5** | Não suportado | Não suportado | Não suportado |
 
@@ -159,7 +159,7 @@ Use a configuração acima para tentar a experiência de criação para entender
 
 Os ativos obtidos podem ser usados como qualquer outro ativo local, exceto que os metadados associados não podem ser editados.
 
-## Limitações {#limitations}
+## Limitações  {#limitations}
 
 **Permissões e gerenciamento de ativos**
 
@@ -171,7 +171,7 @@ Os ativos obtidos podem ser usados como qualquer outro ativo local, exceto que o
 * Todos os autores de sites têm permissões de leitura nas cópias buscadas, mesmo que não tenham acesso à implantação remota de DAM.
 * Nenhum suporte a API para personalizar a integração.
 * A funcionalidade oferece suporte à pesquisa e uso contínuos de ativos remotos. Para disponibilizar muitos ativos remotos em uma implantação local, considere migrar os ativos. Consulte Guia [de migração de](assets-migration-guide.md)ativos.
-* Não é possível usar um ativo remoto como uma miniatura para uma página da Web na guia [!UICONTROL Miniatura] em Propriedades [!UICONTROL da] página clicando em [!UICONTROL Selecionar imagem].
+* Não é possível usar um ativo remoto como uma miniatura de página na interface do usuário Propriedades [!UICONTROL da] página. Você pode definir uma miniatura de uma página da Web na interface do usuário Propriedades [!UICONTROL da] página na [!UICONTROL miniatura] clicando em [!UICONTROL Selecionar imagem].
 
 **Configurar e licenciar**
 
