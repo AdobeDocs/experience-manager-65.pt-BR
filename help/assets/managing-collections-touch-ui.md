@@ -150,33 +150,19 @@ Os metadados da coleção incluem dados sobre a coleção, incluindo quaisquer t
 1. Na página **[!UICONTROL Metadados da coleção]**, visualize os metadados da coleção nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]**.
 1. Modifique os metadados, conforme necessário, e toque/clique em **[!UICONTROL Salvar e fechar]** na barra de ferramentas para salvar as alterações.
 
-## Editar metadados de várias coleções em massa {#editing-collection-metadata-in-bulk}
+### Editar metadados da coleção em massa {#editing-collection-metadata-in-bulk}
 
 Você pode editar os metadados de várias coleções simultaneamente. Essa funcionalidade ajuda a replicar rapidamente metadados comuns em várias coleções.
 
 1. No console Coleções, selecione duas ou mais coleções para as quais deseja editar metadados.
 1. Na barra de ferramentas, toque/clique no ícone **[!UICONTROL Propriedades]** .
 1. Na página **[!UICONTROL Metadados da coleção]**, edite os metadados nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]**, conforme necessário.
-1. Para exibir as propriedades de metadados de uma coleção específica, desmarque as coleções restantes na lista de coleções. Os campos do editor de metadados são preenchidos com os metadados da coleção específica.
-
-   >[!NOTE]
-   >
-   >* Na página de propriedades da coleção, é possível remover coleções da lista de coleções desmarcando-as. A lista de coleções tem todas as coleções selecionadas por padrão. Os metadados das coleções que você remover não são atualizados.
-   >* Na parte superior da lista, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre a seleção das coleções e a limpeza da lista.
-
-
 1. Toque/clique em **[!UICONTROL Salvar e fechar]** na barra de ferramentas e feche a caixa de diálogo de confirmação para concluir o processo.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Toque/clique em **[!UICONTROL Enviar]**.
 
    >[!NOTE]
    >
-   >Os metadados adicionados para as coleções selecionadas substituem os metadados anteriores para essas coleções. Use o modo  Anexar para adicionar novos valores aos metadados existentes nos campos que podem conter vários valores. Campos de valor único são sempre substituídos. Quaisquer tags adicionadas no campo [!UICONTROL Tags] serão anexadas à lista existente de tags nos metadados.
-
-Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo a adição, modificação e exclusão de propriedades de metadados, use o Editor de esquema.
-
->[!TIP]
->
->O método de edição em massa funciona para ativos disponíveis em uma coleção. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é possível atualizar [em massa os metadados após a pesquisa](/help/assets/search-assets.md#metadataupdates).
+   >O Modo anexar funciona somente para campos que podem conter vários valores. Em campos que podem conter apenas um valor, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o **[!UICONTROL Modo anexar]**.
 
 ## Pesquisar coleções {#searching-collections}
 
@@ -220,6 +206,34 @@ Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é bai
 1. Na caixa de diálogo **[!UICONTROL Download]** , toque/clique em **[!UICONTROL Download]**. Se desejar baixar as representações dos ativos dentro da coleção, selecione **[!UICONTROL Representações]**. Selecione a opção **[!UICONTROL Email]** para enviar uma notificação por email ao proprietário da coleção.
 
    Quando você seleciona uma coleção para download, a hierarquia completa da pasta sob a coleção é baixada. Para incluir cada coleção que você baixa (incluindo ativos em coleções secundárias aninhadas sob a coleção pai) em uma pasta individual, selecione **[!UICONTROL Criar pasta separada para cada ativo]**.
+
+## Editar propriedades de metadados de várias coleções {#edit-metadata-in-bulk}
+
+Os ativos Adobe Enterprise Manager (AEM) permitem que você edite os metadados de muitas coleções em massa. Use a página [!UICONTROL Propriedades] para executar alterações nos metadados em várias coleções, por exemplo, altere as propriedades dos metadados para um valor comum ou adicione ou modifique tags.
+
+Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo a adição, modificação e exclusão de propriedades de metadados, use o Editor de esquema.
+
+>[!NOTE]
+>
+>Os métodos de edição em massa funcionam para ativos disponíveis em uma coleção. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é possível atualizar [em massa os metadados após a pesquisa](/help/assets/search-assets.md#metadataupdates).
+
+1. No console de coleções, selecione as coleções que deseja editar.
+1. Na barra de ferramentas, toque/clique em **[!UICONTROL Propriedades]** para abrir a página [!UICONTROL Propriedades] das coleções selecionadas.
+1. Modifique as propriedades de metadados para coleções selecionadas nas várias guias.
+
+   >[!NOTE]
+   >
+   >Os metadados adicionados para as coleções selecionadas substituem os metadados anteriores para essas coleções, exceto as tags. Quaisquer tags adicionadas no campo **[!UICONTROL Tags]** serão anexadas à lista existente de tags nos metadados.
+
+1. Para exibir as propriedades de metadados de uma coleção específica, desmarque as coleções restantes na lista de coleções. Os campos do editor de metadados são preenchidos com os metadados da coleção específica.
+
+   >[!NOTE]
+   >
+   >* Na página de propriedades da coleção, é possível remover coleções da lista de coleções desmarcando-as. A lista de coleções tem todas as coleções selecionadas por padrão. Os metadados das coleções que você remover não são atualizados.
+   >* Na parte superior da lista, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre a seleção das coleções e a limpeza da lista.
+
+
+1. Salve as alterações.
 
 ## Criar coleções aninhadas {#creating-nested-collections}
 
@@ -286,5 +300,6 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
 >[!MORELIKETHIS]
 >
 >* [Configurar notificações por email dos ativos do Experience Manager](/help/sites-administering/notification.md#assetsconfig)
+>* [Editar propriedades de metadados de várias coleções](managing-multiple-assets.md)
 >* [Criar uma tarefa de revisão para Coleções](bulk-approval.md)
 
