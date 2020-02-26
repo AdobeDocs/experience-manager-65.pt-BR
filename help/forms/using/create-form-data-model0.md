@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -83,7 +83,7 @@ Faça o seguinte para configurar seu banco de dados MySQL:
 
       * **Classe** de driver JDBC: Especifique o nome da classe Java do driver JDBC. Para o banco de dados MySQL, especifique **com.mysql.jdbc.Driver**.
 
-      * **URI** de conexão JDBC: Especifique o URL de conexão do banco de dados. Para o banco de dados MySQL em execução na porta 3306 e teleca de esquema, o URL é: jdbc:mysql://[server]:3306/teleca?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8
+      * **URI** de conexão JDBC: Especifique o URL de conexão do banco de dados. Para o banco de dados MySQL em execução na porta 3306 e teleca de esquema, o URL é: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **** Nome de usuário: Nome de usuário do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **** Senha: Senha do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **** Teste de emprestado: Ative a opção **Testar em empréstimo** .
