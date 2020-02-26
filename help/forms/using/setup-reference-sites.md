@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -220,8 +220,8 @@ Para saber mais sobre como usar pacotes e compartilhamento de pacotes, consulte 
 
 Depois de instalar os pacotes e iniciar as instâncias de autor e publicação, visite os seguintes URLs no seu navegador:
 
-* https://[server]:[port]/wegov
-* https://[server]:[port]/wefinance
+* `https://[server]:[port]/wegov`
+* `https://[server]:[port]/wefinance`
 
 Se sua instalação for bem-sucedida, você poderá acessar as páginas de aterrissagem dos sites de referência e We.Finance.
 
@@ -231,12 +231,12 @@ Os sites de referência do aplicativo hipotecário doméstico e do aplicativo de
 
 Para importar a entidade personalizada para o aplicativo de seguro automático:
 
-1. Baixe o pacote de solução **WeFinanceAutoInsurance_1_0.zip** do https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip em sua instância do autor de AEM.
+1. Baixe o pacote da solução **WeFinanceAutoInsurance_1_0.zip** `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` na instância do autor do AEM.
 1. Na instância do Microsoft Dynamics, vá até **Configurações > Soluções** e clique em **Importar**. Selecione e importe o pacote.
 
 Para importar a entidade personalizada para o aplicativo de seguro automático:
 
-1. Baixe o pacote **AEMFormsFSIRefsite_1_0.zip** de https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Selecione e importe o pacote.
+1. Baixe o pacote **AEMFormsFSIRefsite_1_0.zip** de `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Selecione e importe o pacote.
 
 1. Na instância do Microsoft Dynamics, vá até **Configurações > Soluções** e clique em **Importar**. Selecione e importe o pacote.
 
@@ -244,9 +244,9 @@ Para importar os registros do cliente e da apólice de seguro:
 
 1. Baixe os arquivos de dados de **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv** e **home** dos seguintes locais na sua instância do autor do AEM:
 
-   * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv
-   * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv
-   * https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-hipoteca/ms-dynamics/Sarah%20Rose%20Contact.csv
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Na instância do Microsoft Dynamics, faça o seguinte:
 
@@ -273,7 +273,7 @@ Configure o serviço de nuvem OAuth no AEM Forms para permitir a comunicação e
 
 Faça o seguinte nas instâncias de autor e publicação:
 
-1. Vá para o console de configuração da Web do AEM em https://[server]:[host]/system/console/configMgr.
+1. Vá para o console de configuração da Web do AEM em `https://[server]:[host]/system/console/configMgr`.
 1. Localize e toque em Serviço **[!UICONTROL de configuração do]** Adobe Sign para abri-lo para configuração.
 1. Configure a Expressão **[!UICONTROL do Agendador de Atualização de]** Status como **0 0/2 * * * ?**.
 
