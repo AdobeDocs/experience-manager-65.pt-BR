@@ -3,7 +3,7 @@ title: Gerenciar vários ativos e coleções
 description: Saiba como editar os metadados de vários ativos e coleções simultaneamente para propagar rapidamente alterações comuns de metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
 
 ---
 
@@ -44,31 +44,11 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
 
 1. Para selecionar um esquema de metadados diferente para os ativos, toque/clique no ícone **[!UICONTROL Configurações]** na barra de ferramentas e selecione o esquema desejado.
 1. Salve as alterações.
-1. Para anexar os novos metadados aos metadados existentes em campos que contêm vários valores, selecione o modo **** Anexar. Se você não selecionar essa opção, os novos metadados substituirão os metadados existentes nos campos. Toque/clique em **[!UICONTROL Enviar]**.
+1. Para anexar os novos metadados aos existentes em campos que contêm vários valores, selecione o **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Toque/clique em **[!UICONTROL Enviar]**.
 
    >[!CAUTION]
    >
-   >Para campos de valor único, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o modo **** Anexar.
-
-## Editar propriedades de metadados de várias coleções {#editing-metadata-properties-of-multiple-collections}
-
-1. No console Coleções, selecione as coleções que deseja editar.
-1. Na barra de ferramentas, toque/clique em **[!UICONTROL Propriedades]** para abrir a página de propriedades das coleções selecionadas.
-1. Modifique as propriedades de metadados para coleções selecionadas nas várias guias.
-
-   >[!NOTE]
-   >
-   >Os metadados adicionados para as coleções selecionadas substituem os metadados anteriores para essas coleções, exceto as tags. Quaisquer tags adicionadas no campo **[!UICONTROL Tags]** serão anexadas à lista existente de tags nos metadados.
-
-1. Para exibir as propriedades de metadados de uma coleção específica, desmarque as coleções restantes na lista de coleções. Os campos do editor de metadados são preenchidos com os metadados da coleção específica.
-
-   >[!NOTE]
-   >
-   >* Na página de propriedades da coleção, é possível remover coleções da lista de coleções desmarcando-as. A lista de coleções tem todas as coleções selecionadas por padrão. Os metadados das coleções que você remover não são atualizados.
-   >* Na parte superior da lista, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre a seleção das coleções e a limpeza da lista.
-
-
-1. Salve as alterações.
+   >Em campos de valor único, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o **[!UICONTROL Modo anexar]**.
 
 ## Configurar limite para atualização de metadados em massa {#configlimit}
 
@@ -76,4 +56,9 @@ Para evitar uma situação semelhante ao DOS, o AEM limita o número de parâmet
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Para alterar o limite, acesse o Console da Web ( **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web) e altere o valor de Parâmetros **[!UICONTROL de POST]** Máximo na configuração **[!UICONTROL do OSGi de Tratamento]** de Parâmetro de Solicitação Sling do Apache.
+Para alterar o limite, acesse o Console da Web (**[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**) e altere o valor de **[!UICONTROL Parâmetros de POST máximo]** na configuração OSGi da **[!UICONTROL Manipulação de parâmetro da solicitação do Apache]**.
+
+>[!MORELIKETHIS]
+>
+>* [Editar propriedades de metadados de várias coleções](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
