@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 9f3129aff8a3e389231b0fe0973794e5d34480a0
 
 ---
 
@@ -335,7 +335,7 @@ Renderize um formulário HTML usando a API de formulários (serviço da Web):
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Um valor `TransformTo` enum que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário HTML compatível com HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * Um `BLOB` objeto que contém dados a serem unidos ao formulário. Se você não deseja unir dados, passe `null`. (Consulte [Pré-preencher formulários com layouts]flutuantes (/help/forms/develop/rendering-forms-prepopulating-forms-fluxable-layouts-prepopulating.md#prepopulating-forms-with-fluxable-layouts).
+   * Um `BLOB` objeto que contém dados a serem unidos ao formulário. Se você não deseja unir dados, passe `null`. (Consulte [Pré-preenchimento de formulários com layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)flutuantes.)
    * O `HTMLRenderSpec` objeto que armazena opções de tempo de execução HTML.
    * Um valor de string que especifica o valor do `HTTP_USER_AGENT` cabeçalho; por exemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Você pode passar uma string vazia se não quiser definir esse valor.
    * Um `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML. (Consulte [Especificar valores](/help/forms/developing/rendering-interactive-pdf-forms.md)de URI.)
