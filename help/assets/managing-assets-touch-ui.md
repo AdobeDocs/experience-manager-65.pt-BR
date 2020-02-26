@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
 
 ---
 
@@ -354,13 +354,11 @@ Consulte também [Visualizar ativos de mídia dinâmica.](/help/assets/previewin
 
    ![chlimage_1-218](assets/chlimage_1-13.png)
 
-1. No campo **[!UICONTROL Tags]** , selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione Enter. A nova tag é salva no AEM.
-
-   O YouTube requer Tags para publicar e ter um link para o YouTube (se for possível encontrar um link adequado).
+1. No campo **[!UICONTROL Tags]** , selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione Enter. A nova tag é salva no AEM. O YouTube requer tags para publicação. Consulte [publicar vídeos no YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
-   >Para criar tags, é necessário ter permissão de gravação `/content/cq:tags/default` no repositório CRX.
+   >Para criar tags, você precisa de permissão de gravação `/content/cq:tags/default` no repositório CRX.
 
 1. Para fornecer uma classificação ao ativo, toque/clique na guia **[!UICONTROL Avançado]** e, em seguida, toque/clique na estrela na posição apropriada para atribuir a classificação desejada.
 
@@ -532,7 +530,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 ## Baixar ativos {#downloading-assets}
 
-Consulte [Baixar ativos do AEM](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publishing-assets}
 
@@ -602,7 +600,7 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
 1. Publique a pasta e tente acessá-la da instância de publicação. Uma tela de login é exibida.
 1. Se você for um membro do CUG, insira suas credenciais de segurança. A pasta é exibida depois que o AEM o autentica.
 
-## Search assets {#assetsearch}
+## Pesquisar ativos {#assetsearch}
 
 Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos pelos usuários e comerciantes de negócios ou para administração por administradores de DAM.
 
