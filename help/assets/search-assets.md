@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
+source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
 
 ---
 
@@ -42,7 +42,7 @@ Familiarize-se com a interface de pesquisa e as ações disponíveis.
 
 *Figura: Noções básicas da interface de resultados da pesquisa de Ativos*
 
-**** A. Salve a pesquisa como uma coleção inteligente. **** B. Filtros (predicados) para restringir os resultados da pesquisa. **C.** Exibir arquivos, pastas ou ambos nos resultados da pesquisa. **** D. Clique em Filtros para abrir ou fechar o painel esquerdo. **** E. O local de pesquisa é DAM. **** F. Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **** G. Marque a caixa para selecionar todos os resultados da pesquisa. **** H. Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. ******Eu. Feche a pesquisa** J. Alterne entre a exibição do cartão e a exibição da lista.
+**A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros (predicados) para limitar os resultados da pesquisa. **C.** Exiba arquivos, pastas ou ambos nos resultados da pesquisa. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. ************ F. Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G. Marque a caixa para selecionar todos os resultados da pesquisa.** H. Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. **Eu. Feche a pesquisa** J. Alterne entre a exibição do cartão e a exibição da lista.
 
 ### Aspectos de pesquisa dinâmica {#dynamicfacets}
 
@@ -113,7 +113,7 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos cam
 
 Você pode melhorar a relevância das palavras-chave de ativos específicos para ajudar a aumentar as pesquisas com base nas palavras-chave. Em outras palavras, as imagens para as quais você promove palavras-chave específicas aparecem na parte superior dos resultados da pesquisa quando você pesquisa com base nessas palavras-chave.
 
-1. Na interface do usuário Ativos, abra a página de propriedades do ativo. Clique em **[!UICONTROL Avançado]** e clique/toque em **[!UICONTROL Adicionar]** em **[!UICONTROL Elevar para palavras-chave]** de pesquisa.
+1. Na interface do usuário do Assets, abra a página de propriedades do ativo. Clique em **[!UICONTROL Avançado]** e clique/toque em **[!UICONTROL Adicionar]**, em **[!UICONTROL Elevar para palavras-chave de pesquisa]**.
 1. Na caixa **[!UICONTROL Pesquisar promoção]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique/toque em **[!UICONTROL Adicionar]**. É possível especificar várias palavras-chave da mesma maneira.
 1. Clique/toque em **[!UICONTROL Salvar e fechar]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
@@ -138,7 +138,7 @@ O AEM fornece vários métodos, como filtros, que se aplicam aos ativos pesquisa
 
 ### Localizar imagens semelhantes {#visualsearch}
 
-Para localizar imagens que sejam visualmente semelhantes a uma imagem selecionada pelo usuário, clique na opção **[!UICONTROL Localizar semelhante]** na exibição de cartão de uma imagem ou na barra de ferramentas. O AEM exibe as imagens com tags inteligentes do repositório DAM que são semelhantes a uma imagem selecionada pelo usuário. Consulte [como configurar a pesquisa](#configvisualsearch)de semelhança.
+Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usuário, clique na opção **[!UICONTROL Localizar semelhante]** na exibição de cartão de uma imagem ou na barra de ferramentas. O AEM exibe as imagens com tags inteligentes do repositório DAM que são semelhantes a uma imagem selecionada pelo usuário. Consulte [como configurar a pesquisa de semelhança](#configvisualsearch).
 
 ![Localizar imagens semelhantes usando a opção na exibição de cartão](assets/search_find_similar.png)
 
@@ -151,7 +151,7 @@ Na interface do usuário do AEM, os usuários podem pesquisar ativos [do](/help/
 
 ### Ativos do Dynamic Media {#dmassets}
 
-Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Mídia dinâmica > Conjuntos]** no painel **[!UICONTROL Filtros]** . Filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
+Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media > Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
 
 ### Pesquisar usando valores específicos em campos de metadados {#gqlsearch}
 
@@ -217,7 +217,7 @@ Na interface do usuário do AEM, os usuários podem pesquisar ativos do Adobe St
 
 ### Pesquisar ativos do Dynamic Media {#dynamicmedia}
 
-Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]** . Filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação. Durante a criação de páginas da Web, os autores podem pesquisar por conjuntos no Localizador de conteúdo. Um filtro para conjuntos está disponível em um menu pop-up.
+Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação. Ao criar páginas da Web, os autores podem pesquisar por conjuntos no Localizador de conteúdo. Há um filtro para conjuntos disponível em um menu pop-up.
 
 ### Pesquisar ativos no Localizador de conteúdo ao criar páginas da Web {#contentfinder}
 
@@ -251,7 +251,7 @@ Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[por
 
 *Figura:Procurar e selecionar ativo no seletor de ativos*
 
-## Limitações {#limitations}
+## Limitações  {#limitations}
 
 O recurso de pesquisa nos ativos AEM tem as seguintes limitações:
 
@@ -380,7 +380,7 @@ Os predicados são usados para criar facetas. Os administradores podem personali
 
 Você pode procurar ativos digitais com base em uma ou mais das seguintes propriedades. Os filtros que se aplicam a algumas dessas propriedades estão disponíveis por padrão e alguns outros filtros podem ser criados personalizados para serem aplicados a outras propriedades.
 
-| Campo de pesquisa | Pesquisar valores de propriedade |
+| Campo Pesquisa | Pesquisar valores de propriedade |
 |---|---|
 | Tipos MIME | Imagens, documentos, multimídia, arquivos ou outros. |
 | Última modificação | Hora, dia, semana, mês ou ano. |
@@ -408,7 +408,7 @@ Depois de ver alguns ativos pesquisados que correspondem aos seus critérios, vo
 
 ### Classificar resultados pesquisados {#sort}
 
-A classificação dos resultados da pesquisa ajuda a descobrir o ativo necessário mais rapidamente. A classificação dos resultados da pesquisa funciona na exibição de lista e somente quando você seleciona **[!UICONTROL [Arquivos](#searchui)]**no painel**[!UICONTROL  Filtros ]**. O AEM Assets usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independentemente do número) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do servidor fornece resultados mais rápidos e precisos do que a classificação do cliente.
+A classificação dos resultados de pesquisa ajuda a descobrir o ativo necessário mais rapidamente. A classificação dos resultados de pesquisa funciona na exibição de lista e somente ao selecionar **[!UICONTROL [Arquivos](#searchui)]**no painel**[!UICONTROL  Filtros ]**. O AEM Assets usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
 Na exibição de lista, você pode classificar os resultados da pesquisa da mesma forma que pode classificar os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimensões, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Finalizado.
 
@@ -420,7 +420,7 @@ Você pode verificar informações detalhadas de ativos pesquisados na página d
 
 Para ver todos os metadados de um ativo, selecione o ativo e clique em **[!UICONTROL propriedades]** na barra de ferramentas.
 
-Para verificar os comentários em um ativo ou histórico de versão de um ativo, clique no ativo para abrir uma visualização de grande porte. Abra a linha do tempo no painel esquerdo e selecione **[!UICONTROL Comentários]** ou **[!UICONTROL Versões]**. Também é possível classificar a atividade da linha do tempo como comentários ou versões em ordem cronológica.
+Para verificar os comentários em um ativo ou histórico de versão de um ativo, clique nele para abrir uma visualização de grande. Abra a linha do tempo no painel à esquerda e selecione **[!UICONTROL Comentários]** ou **[!UICONTROL Versões]**. Também é possível classificar a atividade da linha do tempo, como comentários ou versões em ordem cronológica.
 
 ![Classificar entradas de linha do tempo para um ativo de pesquisa](assets/sort_timeline_search_results.gif)
 
@@ -435,7 +435,7 @@ Você pode baixar os ativos pesquisados e suas representações da mesma forma q
 
 É possível fazer atualizações em massa nos campos de metadados comuns de vários ativos. Nos resultados da pesquisa, selecione um ou mais ativos. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas e atualize os metadados conforme necessário. Clique em **[!UICONTROL Salvar e fechar]** quando terminar. Os metadados existentes anteriormente nos campos atualizados são substituídos.
 
-Para os ativos que estão disponíveis em uma única pasta ou coleção, é mais fácil [atualizar os metadados em massa](/help/assets/managing-multiple-assets.md). Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é mais rápido atualizar os metadados em massa por meio da pesquisa.
+Para os ativos que estão disponíveis em uma única pasta ou coleção, é mais fácil [atualizar os metadados em massa](/help/assets/managing-multiple-assets.md) sem usar a funcionalidade de pesquisa. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é mais rápido atualizar os metadados em massa por meio da pesquisa.
 
 ### Coleções inteligentes {#collections-1}
 
@@ -444,7 +444,7 @@ Uma coleção é um conjunto ordenado de ativos que podem incluir ativos de loca
 * Uma lista de referência estática de ativos, pastas e outras coleções.
 * Uma lista dinâmica (coleção inteligente) que preenche ativos na coleção com base em critérios de pesquisa.
 
-Você pode criar coleções inteligentes com base nos critérios de pesquisa. No painel **[!UICONTROL Filtros]** , selecione **[!UICONTROL Arquivos]** e clique em **[!UICONTROL Salvar coleção]** inteligente. Consulte [gerenciar coleções](/help/assets/managing-collections-touch-ui.md).
+Você pode criar coleções inteligentes com base nos critérios de pesquisa. No painel **[!UICONTROL Filtros]**, selecione **[!UICONTROL Arquivos]** e clique em **[!UICONTROL Salvar coleção inteligente]**. Consulte [gerenciar coleções](/help/assets/managing-collections-touch-ui.md).
 
 ## Solucionar problemas e resultados de pesquisa inesperados {#troubleshoot-unexpected-search-results-and-issues}
 
