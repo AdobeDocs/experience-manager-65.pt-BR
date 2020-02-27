@@ -3,7 +3,7 @@ title: Ativar detecção de ativos duplicados
 description: Saiba como ativar a detecção de ativos duplicados no AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -17,7 +17,6 @@ Se você tentar carregar um ativo que existe nos ativos Adobe Experience Manager
 1. Selecione a opção **[!UICONTROL detectar duplicata]** e clique/toque em **[!UICONTROL Salvar]**.
 
    ![Selecione a opção detectar duplicata no servlet](assets/chlimage_1-377.png)
-
 
    *Figura: Selecione a opção detectar duplicata no servlet*
 
