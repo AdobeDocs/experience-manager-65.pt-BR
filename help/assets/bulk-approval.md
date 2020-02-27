@@ -3,7 +3,7 @@ title: Revisar ativos e coleções de pastas
 description: Configure fluxos de trabalho de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para buscar feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -23,7 +23,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 ## Criar uma tarefa de revisão para pastas {#creating-a-review-task-for-folders}
 
 1. Na interface do usuário Ativos, selecione a pasta para a qual deseja criar uma tarefa de revisão.
-1. Na barra de ferramentas, toque em **[!UICONTROL Criar tarefa]** de revisão para abrir a página **[!UICONTROL Verificar tarefa]** . Se você não conseguir ver a opção na barra de ferramentas, toque/clique em **[!UICONTROL Mais]** e selecione a opção.
+1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, tap/click **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -47,13 +47,13 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
    ![review_name](assets/review_name.png)
 
-1. Toque/clique em **[!UICONTROL Enviar]** e toque/clique em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
+1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
 1. Faça logon nos ativos AEM como aprovador e navegue até a interface do usuário dos ativos. Para aprovar ativos, toque em **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 
    ![Notificação de ativos](assets/aemAssetsNotification.png)
 
-1. Na página **[!UICONTROL Revisar tarefa]** , examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
-1. Na página **[!UICONTROL Revisar tarefa]** , selecione os ativos e toque em **[!UICONTROL Aprovar/Rejeitar]** para aprovar ou rejeitar, conforme apropriado.
+1. Na página **[!UICONTROL Tarefa de revisão]**, examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
+1. In the **[!UICONTROL Review Task]** page, select assets, and tap **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
 
    ![review_task](assets/review_task.png)
 
@@ -71,7 +71,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 ## Criar uma tarefa de revisão para coleções {#creating-a-review-task-for-collections}
 
 1. Na página Coleções, selecione a coleção para a qual deseja criar uma tarefa de revisão.
-1. Na barra de ferramentas, toque em **[!UICONTROL Criar tarefa]** de revisão para abrir a página **[!UICONTROL Verificar tarefa]** . Se não conseguir ver a opção na barra de ferramentas, toque em **[!UICONTROL Mais]** e selecione a opção.
+1. From the toolbar, tap **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, tap **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -91,9 +91,9 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Toque/clique em **[!UICONTROL Enviar]** e toque/clique em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
+1. Toque/clique em **[!UICONTROL Enviar]** e em **[!UICONTROL Concluído]** para fechar a mensagem de confirmação. Uma notificação para a nova tarefa é enviada ao aprovador.
 1. Faça logon nos ativos AEM como aprovador e navegue até o console Ativos. Para aprovar ativos, toque em **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
-1. Na página **[!UICONTROL Revisar tarefa]** , examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
+1. Na página **[!UICONTROL Tarefa de revisão]**, examine os detalhes da tarefa de revisão e toque/clique em **[!UICONTROL Revisar]**.
 1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e toque em **[!UICONTROL Aprovar/Rejeitar]** para aprovar ou rejeitar ativos, conforme apropriado.
 
    ![review_task_collection](assets/review_task_collection.png)
@@ -102,7 +102,9 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 1. Navegue até o console Coleções e abra a coleção. Os ícones de status de aprovação dos ativos são exibidos nas exibições Cartão e Lista.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
+
    *Figura:Exibição de cartão*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
+
    *Figura:Exibição de lista*
