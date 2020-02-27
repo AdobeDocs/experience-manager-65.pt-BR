@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
 
 ---
 
@@ -361,6 +361,8 @@ Além disso, podem ser obtidas informações para até 10 clientes (instâncias 
 * `TransferredSegmentBytes:`o número total de bytes transferidos para este cliente.
 
 ## Manutenção do Repositório Standby Frio {#cold-standby-repository-maintenance}
+
+### Limpeza de revisão {#revision-clean}
 
 >[!NOTE]
 Se você executar a Limpeza [de revisão](/help/sites-deploying/revision-cleanup.md) online na instância principal, o procedimento manual apresentado abaixo não é necessário. Além disso, se você estiver usando a Limpeza de revisão on-line, a operação na instância `cleanup ()` em espera será executada automaticamente.
