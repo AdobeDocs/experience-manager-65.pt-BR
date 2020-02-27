@@ -3,7 +3,7 @@ title: Esquemas de metadados
 description: O esquema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar um esquema de metadados personalizado, editar o esquema de metadados e aplicar o esquema de metadados aos ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
 
 ---
 
@@ -28,27 +28,26 @@ Você pode usar o editor de Formulários de esquema de metadados para modificar 
 
    Para modificar o tipo MIME de um ativo, use um formulário de esquema de metadados personalizado ou modifique um formulário existente. Consulte [Editar formulários](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de esquema de metadados para obter mais informações. Se você modificar o esquema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um esquema jpeg em `default/image` apenas modifica o layout de metadados (propriedades de ativos) para ativos com tipo MIME `image/jpeg`. No entanto, se você editar o esquema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
 
-1. Para exibir uma lista de formulários/modelos, clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Esquemas **[!UICONTROL de metadados]**.
+1. Para exibir uma lista de formulários/modelos, clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**.
 
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
    O AEM fornece os seguintes modelos prontos para uso:
-
    * **padrão**: O formulário de esquema de metadados base para ativos.
-   Os seguintes formulários filho herdam as propriedades do formulário padrão:
-i. **imagem**: Formulário de esquema para ativos com o tipo MIME &quot;image&quot;, por exemplo, `image/jpeg`, `image/png`etc.
-O formulário &quot;image&quot; tem os seguintes modelos de formulário filho:a. **jpeg**: Formulário de esquema para ativos com subtipo `jpeg`.
-b. **TIFF**: Formulário de esquema para os ativos com subtipo `tiff`.
 
-   ii. **aplicação**: Formulário de esquema para ativos com tipo MIME `application`, por exemplo `application/pdf`, `application/zip`etc.
-a. **pdf**: Formulário de esquema para ativos com subtipo `pdf`.
+      Os seguintes formulários filho herdam as propriedades do formulário padrão:
 
-   iii. **vídeo**: Formulário de esquema para ativos com tipo MIME `video`, como `video/avi`, `video/mp4`etc.
+      1. **imagem**: Formulário de esquema para ativos com o tipo MIME &quot;image&quot;, por exemplo, `image/jpeg`, `image/png`etc.
 
+         O formulário &quot;image&quot; tem os seguintes modelos de formulário filho:
+         * **jpeg**: Formulário de esquema para ativos com subtipo `jpeg`.
+         * **TIFF**: Formulário de esquema para os ativos com subtipo `tiff`.
+      1. **aplicação**: Formulário de esquema para ativos com tipo MIME `application`, por exemplo `application/pdf`, `application/zip`etc.
+         * **pdf**: Formulário de esquema para ativos com subtipo `pdf`.
+      1. **vídeo**: Formulário de esquema para ativos com tipo MIME `video`, como `video/avi`, `video/mp4`etc.
    * **coleção**: Formulário de esquema para coleções.
    * **** contentfragment: Formulário de esquema para Fragmentos de conteúdo.
    * **formulários**: Este formulário de esquema está relacionado aos Formulários [do](/help/forms/home.md)Adobe Experience Manager.
-
 
 >[!NOTE]
 >
@@ -77,11 +76,11 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
 É possível adicionar novas guias ou itens de formulário ao formulário de esquema de metadados. As guias e os itens de formulário derivados do pai estão no estado bloqueado. Não é possível alterá-los no nível da criança.
 
-1. Na página Formulários de esquema, marque a caixa de seleção antes de um formulário e clique no ícone Editar na barra de ferramentas.
+1. Na página Formulários de esquema, marque a caixa de seleção ao lado de um formulário e clique no ícone Editar na barra de ferramentas.
 
    ![chlimage_1-39](assets/chlimage_1-175.png)
 
-1. Na página Editor **[!UICONTROL de esquema de]** metadados, personalize a página de propriedades do ativo arrastando um ou mais componentes da lista de tipos de componentes na guia **[!UICONTROL Criar formulário]** para a guia **[!UICONTROL Básico]** .
+1. Na página **[!UICONTROL Editor de esquema de metadados]**, personalize a página de propriedades do ativo arrastando um ou mais componentes da lista de tipos de componentes na guia **[!UICONTROL Criar formulário]** para a guia **[!UICONTROL Básico]**.
 
    ![chlimage_1-40](assets/chlimage_1-176.png)
 
@@ -120,9 +119,9 @@ Estes são os valores válidos para esta propriedade:
 
 Estes são os valores válidos para esta propriedade:
 
-* `./jcr:content/metadata/dc:title`: Armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
+* `./jcr:content/metadata/dc:title`: armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
 
-* `./jcr:created`: Exibe a propriedade JCR no nó do ativo. Se você configurar essas propriedades nas propriedades de exibição, recomendamos marcá-las como Desativar edição, pois elas estão protegidas. Caso contrário, o erro [!UICONTROL Asset(s) não modificará] os resultados ao salvar as propriedades do ativo.
+* `./jcr:created`: Exibe a propriedade JCR no nó do ativo. Se você configurar essas propriedades nas propriedades de exibição, recomendamos marcá-las como Desativar edição, pois elas estão protegidas. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
 
 Para garantir que o componente seja exibido corretamente no formulário de esquema de metadados, o caminho da propriedade não deve incluir espaços.
 
@@ -140,7 +139,7 @@ Para garantir que o componente seja exibido corretamente no formulário de esque
 >
 >O componente Campo oculto não inclui esses atributos. Em vez disso, inclui propriedades, como Nome dos atributos, Valor, Rótulo do campo e Descrição. Os valores do componente Campo oculto são enviados como um parâmetro POST sempre que o ativo é salvo. Ele não é salvo como metadados do ativo.
 
-Se você selecionar a opção **[!UICONTROL Obrigatório]** , poderá pesquisar por ativos sem metadados obrigatórios. No painel **[!UICONTROL Filtros]** , expanda o predicado Validação **[!UICONTROL de]** metadados e selecione a opção **[!UICONTROL Inválido]** . Os resultados da pesquisa exibem ativos que não têm metadados obrigatórios que você configurou por meio do formulário de esquema.
+Se você selecionar a opção **[!UICONTROL Obrigatório]**, poderá pesquisar por ativos sem metadados obrigatórios. No painel **[!UICONTROL Filtros]**, expanda o predicado **[!UICONTROL Validação de metadados]** e selecione a opção **[!UICONTROL Inválido]**. Os resultados de pesquisa exibem ativos que não têm metadados obrigatórios configurados por meio do formulário de esquema.
 
 ![chlimage_1-42](assets/chlimage_1-178.png)
 
@@ -154,11 +153,11 @@ Para incluir qualquer guia na página de propriedades, além da guia na qual o c
 
 ### Especificar propriedades no arquivo JSON {#specify-properties-in-json-file}
 
-Em vez de especificar propriedades para as opções na guia **[!UICONTROL Configurações]** , você pode definir as opções em um arquivo JSON especificando pares de valores chave correspondentes. Especifique o caminho do arquivo JSON no campo Caminho **** JSON.
+Em vez de especificar propriedades para as opções na guia **[!UICONTROL Configurações]**, defina as opções em um arquivo JSON especificando pares de valores chave correspondentes. Especifique o caminho do arquivo JSON no campo **[!UICONTROL Caminho JSON]**.
 
 #### Adicionar ou excluir uma guia no formulário de esquema {#adding-deleting-a-tab-in-the-schema-form}
 
-O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]** , **[!UICONTROL IPTC]** e Extensão **** IPTC, por padrão.
+O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão IPTC]**, por padrão.
 
 ![chlimage_1-45](assets/chlimage_1-181.png)
 
@@ -190,7 +189,7 @@ O AEM Assets fornece formulários padrão para vários tipos MIME prontos para u
 
 ### Adicionar novos formulários para tipos MIME {#add-new-forms-for-mime-types}
 
-Crie um novo formulário no tipo de formulário apropriado. Por exemplo, para adicionar um novo modelo para o subtipo **image/png** , crie o formulário sob os formulários &quot;image&quot;. O título do formulário de esquema é o nome do subtipo. Nesse caso, o título é &quot;png.**&quot;**
+Crie um novo formulário no tipo de formulário apropriado. Por exemplo, para adicionar um novo modelo para o subtipo **image/png**, crie o formulário nos formulários &quot;image&quot;. O título do formulário de esquema é o nome do subtipo. Nesse caso, o título é &quot;png.**&quot;**
 
 #### Usar um modelo de esquema existente para vários tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -237,7 +236,7 @@ A herança de metadados por ativos baseia-se no esquema aplicado à pasta de pri
 
 Se a pasta tiver uma subpasta, os ativos dentro da subpasta herdarão os metadados do esquema aplicado no nível da subpasta se um esquema diferente for aplicado no nível da subpasta. No entanto, se nenhum esquema ou o mesmo esquema for aplicado no nível da subpasta, os ativos da subpasta herdarão os metadados do esquema aplicado no nível da pasta pai.
 
-1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Esquemas **[!UICONTROL de metadados]**. A página Formulários **[!UICONTROL de esquema de]** metadados é exibida.
+1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Marque a caixa de seleção antes de um formulário, por exemplo, o formulário de metadados padrão, clique ou toque no ícone de cópia e salve-o como um formulário personalizado. Especifique um nome personalizado para o formulário, por exemplo `my_default`. Como alternativa, é possível criar um formulário personalizado.
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -270,7 +269,7 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 >
 >Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na exibição Cartões, o AEM não exibe a mensagem de aviso sobre metadados ausentes para esses campos de metadados obrigatórios.
 
-1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Esquemas **[!UICONTROL de metadados]**. A página Formulários **[!UICONTROL de esquema de]** metadados é exibida.
+1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve como `my_default`.
 
    ![chlimage_1-53](assets/chlimage_1-189.png)
