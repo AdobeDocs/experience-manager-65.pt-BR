@@ -3,7 +3,7 @@ title: Importar e exportar metadados de ativos em massa
 description: Importar e exportar metadados de ativos em massa
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -22,7 +22,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
 
 1. Navegue até a interface do usuário Ativos e toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. No menu, selecione **[!UICONTROL Metadados]**.
-1. Na página Importação **[!UICONTROL de]** metadados, toque/clique em **[!UICONTROL Selecionar arquivo]**. Selecione o arquivo CSV com os metadados.
+1. Na página **[!UICONTROL Importação de metadados]**, toque/clique em **[!UICONTROL Selecionar arquivo]**. Selecione o arquivo CSV com os metadados.
 1. Especifique os seguintes parâmetros:
 
    | Parâmetros de importação de metadados | Descrição |
@@ -56,9 +56,10 @@ Alguns casos de uso para exportar metadados em massa são:
 1. No campo **[!UICONTROL Propriedades a serem exportadas]** , especifique se deseja exportar todas as propriedades ou propriedades específicas. Se você escolher Propriedades seletivas a serem exportadas, adicione as propriedades desejadas.
 
 1. Na barra de ferramentas, toque/clique em **[!UICONTROL Exportar]**. Uma mensagem confirma que os metadados são exportados. Feche a mensagem.
-1. Abra a notificação da caixa de entrada para o trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, toque/clique em Download **** CSV na barra de ferramentas. Click **[!UICONTROL Close]**.
+1. Abra a notificação da caixa de entrada do trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, toque/clique em **[!UICONTROL Download de CSV]** na barra de ferramentas. Clique em **[!UICONTROL Fechar]**.
 
    ![Caixa de diálogo para baixar o arquivo CSV que contém os metadados exportados em massa](assets/csv_download.png)
+
    *Figura: Caixa de diálogo para baixar o arquivo CSV que contém os metadados exportados em massa*
 
 >[!MORELIKETHIS]
