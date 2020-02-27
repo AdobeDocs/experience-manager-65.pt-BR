@@ -4,7 +4,7 @@ description: Use ativos em várias páginas/pastas que são derivadas e vinculad
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -68,6 +68,7 @@ Para criar cópias ao vivo usando o primeiro método, siga estas etapas:
 1. Selecione os ativos ou pastas de origem. Na barra de ferramentas, clique em **[!UICONTROL Criar > Live Copy]**.
 
    ![Criar live copy a partir da interface do AEM](assets/create_lc1.png)
+
    *Figura:Criar live copy a partir da interface do AEM*
 
 1. Selecione uma pasta de destino. Clique em **[!UICONTROL Avançar]**.
@@ -79,6 +80,7 @@ Para criar cópias ao vivo usando o segundo método, siga estas etapas:
 1. Na interface do AEM, no canto superior direito, clique em **[!UICONTROL Criar > Live Copy]**.
 
    ![Criar live copy a partir da interface do AEM](assets/create_lc2.png)
+
    *Figura:Criar live copy a partir da interface do AEM*
 
 1. Selecione o ativo ou pasta de origem. Clique em **[!UICONTROL Avançar]**.
@@ -101,16 +103,17 @@ Os dois métodos a seguir funcionam para ativos e pastas:
 
 >[!TIP]
 >
-> Para verificar o status de algumas cópias ativas separadas, use o primeiro método que estiver vendo a página Propriedades. Para verificar os status de muitas cópias ativas, use o segundo método, ou seja, consulte a página Status **[!UICONTROL do]** Relacionamento.
+> Para verificar o status de algumas cópias ativas separadas, use o primeiro método que estiver vendo a página Propriedades. Para verificar os status de muitas cópias ativas, use o segundo método, ou seja, consulte a página **[!UICONTROL Status do relacionamento]**.
 
 ### Informações e status de uma live copy {#statuslcasset}
 
 Para verificar as informações e os status de um ativo de live copy ou de uma pasta, siga estas etapas.
 
 1. Selecione um ativo de live copy ou uma pasta. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
-1. Clique em **[!UICONTROL Live Copy]**. Você pode verificar o caminho da origem, o status da suspensão, o status da sincronização, a data da última implantação e o usuário que realizou a última implantação.
+1. Click **[!UICONTROL Live Copy]**. Você pode verificar o caminho da origem, o status da suspensão, o status da sincronização, a data da última implantação e o usuário que realizou a última implantação.
 
    ![As informações e os status da Live Copy são exibidos em um console nas Propriedades](assets/lcfolder_info_properties.png)
+
    *Figura:Informações e status do Live Copy*
 
 1. Você pode ativar ou desativar se os ativos filho pegarem a configuração da live copy emprestada.
@@ -122,12 +125,13 @@ Para verificar as informações e os status de um ativo de live copy ou de uma p
 O AEM fornece um console para verificar as estátuas de todas as cópias online de uma pasta de origem. Esse console exibe o status de todos os ativos filho.
 
 1. Selecione uma pasta de origem. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
-1. Clique em Fonte **** da Live Copy. Para abrir o console, clique em Visão geral **** da Live Copy. Este painel fornece um status de nível superior de todos os ativos filho.
+1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**. Esse painel fornece um status de nível superior de todos os ativos secundários.
 
    ![Exibir status de cópias online no Console Live Copy da origem](assets/livecopy-statuses.png)
+
    *Figura:Exibir status de cópias online no Console Live Copy da origem*
 
-1. Para exibir as informações detalhadas sobre cada ativo na pasta live copy, selecione um ativo e clique em Status **[!UICONTROL do]** Relacionamento na barra de ferramentas.
+1. Para exibir as informações detalhadas sobre cada ativo na pasta live copy, selecione um ativo e clique em **[!UICONTROL Status do relacionamento]** na barra de ferramentas.
 
    ![Informações e status detalhados de um ativo filho de uma live copy em uma pasta](assets/livecopy_relationship_status.png)
 
@@ -147,13 +151,17 @@ Para um ativo ou pasta de origem, você pode ver as seguintes informações e re
 * Suspenda a relação ou altere a configuração de implantação de uma cópia ativa específica.
 * Acesse o console de visão geral do live copy.
 
-Selecione o ativo de origem ou a pasta, abra o painel esquerdo e clique em **[!UICONTROL Referências]**. Como alternativa, selecione um ativo ou pasta e use o atalho de teclado `Alt + 4`.
+Select the source asset or folder, open the left rail, and click **[!UICONTROL References]**. Como alternativa, selecione um ativo ou pasta e use o atalho de teclado `Alt + 4`.
 
-![Ações e informações disponíveis no painel Referências para a fonte](assets/referencerail_source.png)selecionada *Figura:Ações e informações disponíveis no painel Referências para a fonte selecionada*
+![Ações e informações disponíveis no painel Referências para a fonte selecionada](assets/referencerail_source.png)
+
+*Figura:Ações e informações disponíveis no painel Referências para a fonte selecionada*
 
 Para obter uma cópia online específica, clique em **[!UICONTROL Editar Live Copy]** para suspender a relação ou alterar a configuração de implantação.
 
-![Para uma cópia ao vivo específica, a opção de suspender a relação ou alterar a configuração de implantação é acessível no painel Referências quando o ativo de origem é selecionado](assets/referencerail_editlc_options.png)*Figura:Suspender relação ou alterar a configuração de implantação de uma cópia ativa específica*
+![Para uma cópia ativa específica, a opção de suspender a relação ou alterar a configuração de implantação é acessível do painel Referências quando o ativo de origem é selecionado](assets/referencerail_editlc_options.png)
+
+*Figura:Suspender relação ou alterar a configuração de implantação de uma cópia ativa específica*
 
 ### Ações rápidas do painel Referências para live copy {#refraillc}
 
@@ -163,9 +171,11 @@ Para um ativo ou pasta live copy, você pode ver as seguintes informações e re
 * Abra ou revele uma cópia ativa específica na interface do usuário do AEM.
 * Implantar as atualizações.
 
-Selecione um ativo ou uma pasta de live copy, abra o painel esquerdo e clique em **[!UICONTROL Referências]**. Como alternativa, selecione um ativo ou pasta e use o atalho de teclado `Alt + 4`.
+Selecione um ativo ou uma pasta de live copy, abra o painel à esquerda e clique em **[!UICONTROL Referências]**. Como alternativa, selecione um ativo ou pasta e use o atalho de teclado `Alt + 4`.
 
-![Ações disponíveis no painel Referências para a live copy](assets/referencerail_livecopy.png)*Figura selecionada:Ações disponíveis no painel Referências para a live copy selecionada*
+![Ações disponíveis no painel Referências para a live copy selecionada](assets/referencerail_livecopy.png)
+
+*Figura:Ações disponíveis no painel Referências para a live copy selecionada*
 
 ## Propagar modificações de cópias de origem para cópias online {#rolloutsync}
 
@@ -176,10 +186,11 @@ Depois que uma fonte é modificada, as alterações podem ser propagadas para as
 Você pode iniciar uma ação de implantação a partir do ativo de origem e atualizar todas ou algumas cópias ao vivo selecionadas.
 
 1. Selecione um ativo de live copy ou uma pasta. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
-1. Clique em Fonte **** da Live Copy. Clique em **[!UICONTROL Rollout]** na barra de ferramentas na parte superior.
+1. Clique em **[!UICONTROL Origem da Live Copy]**. Clique em **[!UICONTROL Implantação]** na barra de ferramentas, na parte superior.
 1. Selecione as cópias online que deseja atualizar. Clique em **[!UICONTROL Rollout]**. Para implementar as atualizações feitas nos ativos filho, selecione Origem do **[!UICONTROL roll-out e Todos os filhos]**.
 
    ![Implantar as modificações da origem em algumas ou todas as cópias online](assets/livecopy_rollout_page.png)
+
    *Figura:Implantar as modificações da origem em algumas ou todas as cópias online*
 
 >[!NOTE]
@@ -188,7 +199,9 @@ Você pode iniciar uma ação de implantação a partir do ativo de origem e atu
 
 Como alternativa, você pode iniciar uma ação de implantação do painel Referências depois de selecionar uma cópia ativa específica. Para obter mais informações, consulte Ações [rápidas no painel Referências para cópia](#refraillc)ativa. Neste método de implantação, somente a cópia ao vivo selecionada e, opcionalmente, seus filhos são atualizados.
 
-![Implantar as modificações da fonte na](assets/livecopy_rollout_dialog.png)Figura da cópia *dinâmica selecionada:Implantar as modificações da origem na live copy selecionada*
+![Implantar as modificações da origem na live copy selecionada](assets/livecopy_rollout_dialog.png)
+
+*Figura:Implantar as modificações da origem na live copy selecionada*
 
 ### Sobre a ação de sincronização {#aboutsync}
 
@@ -202,11 +215,13 @@ Uma ação de sincronização puxa as modificações de uma fonte somente para a
 
 ### Sincronizar uma live copy {#synclc}
 
-Para iniciar uma ação de sincronização, abra a página **[!UICONTROL Propriedades]** de uma live copy, clique em **[!UICONTROL Live Copy]** e clique na ação desejada na barra de ferramentas.
+Para iniciar uma ação de sincronização, abra a página **[!UICONTROL Propriedades]** de uma live copy, clique em **[!UICONTROL Live Copy]** e na ação desejada da barra de ferramentas.
 
 Para ver os status e as informações relacionadas a uma ação de sincronização, consulte [Informações e status de uma live copy](#statuslcasset) e [Informações e status de todas as live copies de uma pasta](#statuslcfolder).
 
-![A ação de sincronização puxa as alterações feitas na fonte](assets/livecopy_sync.png)*Figura:A ação de sincronização puxa as alterações feitas na origem*
+![A ação de sincronização puxa as alterações feitas na origem](assets/livecopy_sync.png)
+
+*Figura:A ação de sincronização puxa as alterações feitas na origem*
 
 >[!NOTE]
 >
@@ -218,17 +233,18 @@ Você pode suspender temporariamente a relação para impedir que uma cópia ati
 
 Para suspender ou retomar, abra a página **[!UICONTROL Propriedades]** de uma live copy, clique em **[!UICONTROL Live Copy]** e clique na ação desejada na barra de ferramentas.
 
-Como alternativa, você pode suspender ou retomar rapidamente as relações de vários ativos em uma pasta live copy a partir do console Visão geral **** do Live Copy. Consulte [Realizar ações em muitos ativos em pastas](#bulkactions)de live copy.
+Como alternativa, você pode suspender ou retomar rapidamente os relacionamentos de vários ativos em uma pasta de live copy a partir do console **[!UICONTROL Visão geral da Live Copy]**. Consulte [Realizar ações em muitos ativos nas pastas de live copy](#bulkactions).
 
 ## Fazer modificações locais em uma live copy {#localmods}
 
 Uma live copy é uma réplica da fonte original quando é criada. Os valores de metadados de uma live copy são herdados da fonte. Os campos de metadados mantêm a herança individualmente com os respectivos campos do ativo de origem.
 
-Entretanto, você tem a flexibilidade de fazer modificações locais em uma live copy para alterar algumas propriedades selecionadas. Para fazer modificações locais, cancele a herança da propriedade desejada. Quando a herança de um ou mais campos de metadados é cancelada, a relação ao vivo do ativo e a herança dos outros campos de metadados são mantidas. Qualquer sincronização ou implementação não substitui as modificações locais. Para fazer isso, abra a página **[!UICONTROL Propriedades]** de um ativo de live copy, clique no ícone **[!UICONTROL cancelar herança]** ao lado de um campo de metadados.
+Entretanto, você tem a flexibilidade de fazer modificações locais em uma live copy para alterar algumas propriedades selecionadas. Para fazer modificações locais, cancele a herança da propriedade desejada. Quando a herança de um ou mais campos de metadados é cancelada, o relacionamento em tampo real do ativo e a herança dos outros campos de metadados são mantidas. Qualquer sincronização ou implementação não substitui as modificações locais. Para isso, abra a página **[!UICONTROL Propriedades]** de um ativo de live copy, clique no ícone **[!UICONTROL Cancelar herança]** ao lado de um campo de metadados.
 
 Você pode desfazer todas as modificações locais e reverter o ativo para o estado de sua origem. A ação de redefinição substitui irrevogavelmente e instantaneamente todas as modificações locais e restabelece a herança em todos os campos de metadados. Para reverter, na página **[!UICONTROL Propriedades]** de um ativo de live copy, clique em **[!UICONTROL Redefinir]** na barra de ferramentas.
 
 ![A ação de redefinição substitui as edições locais e traz a cópia online parcialmente com sua fonte.](assets/livecopy_reset.png)
+
 *Figura: A ação Redefinir substitui as edições locais e traz a cópia online parcialmente com sua fonte*
 
 ## Remover relação ao vivo {#detach}
@@ -237,26 +253,28 @@ Você pode remover completamente a relação entre uma fonte e uma cópia ao viv
 
 1. Selecione um ativo ou pasta de cópia ativa. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
 
-1. Clique em **[!UICONTROL Live Copy]**. Clique em **[!UICONTROL Desanexar]** na barra de ferramentas. Clique em **[!UICONTROL Desanexar]** na caixa de diálogo apresentada.
+1. Click **[!UICONTROL Live Copy]**. Clique em **[!UICONTROL Desanexar]** na barra de ferramentas. Clique em **[!UICONTROL Desanexar]** na caixa de diálogo apresentada.
 
    ![A ação de desanexação remove completamente a relação entre a origem e a cópia ativa](assets/livecopy_detach.png)
+
    *Figura:A ação de desanexação remove completamente a relação entre a origem e a cópia ativa*
 
    >[!CAUTION]
    >
    >A relação é removida imediatamente quando você clica em **[!UICONTROL Desanexar]** da caixa de diálogo. Não é possível desfazer isso clicando em **[!UICONTROL Cancelar]** na página Propriedades.
 
-Como alternativa, você pode desanexar rapidamente vários ativos em uma pasta live copy do console Visão geral **** da Live Copy. Consulte [Realizar ações em muitos ativos em pastas](#bulkactions)de live copy.
+Alternatively, you can quickly detach multiple assets in a live copy folder from the **[!UICONTROL Live Copy Overview]** console. Consulte [Realizar ações em muitos ativos nas pastas de live copy](#bulkactions).
 
 ## Execute ações em muitos ativos em uma pasta live copy {#bulkactions}
 
 Se você tiver vários ativos em uma pasta live copy, iniciar ações em cada ativo pode ser tedioso. Você pode iniciar rapidamente as ações básicas em muitos ativos a partir do Console de Live Copy. Os métodos acima continuam a funcionar para ativos individuais.
 
 1. Selecione uma pasta de origem. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
-1. Clique em Fonte **** da Live Copy. Para abrir o console, clique em Visão geral **** da Live Copy.
-1. Neste painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Sincronizar]**, **[!UICONTROL Redefinir]**, **[!UICONTROL Suspender]** e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer número de pastas de live copy que estejam em um relacionamento ativo com a pasta de origem selecionada.
+1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**.
+1. Nesse painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Sincronizar]**, **[!UICONTROL Redefinir]**, **[!UICONTROL Suspender]** e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer número de pastas de live copy que estejam em um relacionamento ativo com a pasta de origem selecionada.
 
    ![Atualize facilmente muitos ativos em pastas de Live Copy do console Visão geral da Live Copy](assets/livecopyconsole_update_many_assets.png)
+
    *Figura:Atualize facilmente muitos ativos em pastas de Live Copy do console Visão geral da Live Copy*
 
 ## Estender MSM para ativos {#extendapi}
