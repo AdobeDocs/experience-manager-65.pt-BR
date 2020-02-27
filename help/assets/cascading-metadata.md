@@ -3,7 +3,7 @@ title: Metadados em cascata
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -32,8 +32,8 @@ Considere um cenário em que você deseja exibir metadados em cascata com base n
 
 Independentemente do tipo de ativo escolhido, exiba as informações de direitos autorais como um campo obrigatório.
 
-1. Toque/clique no logotipo do AEM e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Esquemas **[!UICONTROL de metadados]**.
-1. Na página Formulários **[!UICONTROL de]** esquema, selecione um formulário de esquema e toque/clique em **[!UICONTROL Editar]** na barra de ferramentas para editar o esquema.
+1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**.
+1. Na página **[!UICONTROL Formulários de esquema]**, selecione um formulário de esquema e toque/clique em **[!UICONTROL Editar]** na barra de ferramentas para editar o esquema.
 
    ![select_form](assets/select_form.png)
 
@@ -74,8 +74,8 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    ![select_depenentfield](assets/select_dependentfield.png)
 
-1. Em **[!UICONTROL Requisito]**, escolha **[!UICONTROL Obrigatório, com base na nova opção de regra]** .
-1. Toque/clique em **[!UICONTROL Adicionar regra]** e escolha o campo Tipo **[!UICONTROL de]** ativo para criar uma dependência. Também escolha o valor do campo sobre o qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. Toque/clique em **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Toque/clique em **[!UICONTROL Concluído]** para salvar as alterações.
 
    ![define_rule](assets/define_rule.png)
 
@@ -83,9 +83,9 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
    >
    >A lista suspensa com valores predefinidos manualmente pode ser usada com regras. Menus suspensos com caminho JSON configurado não podem ser usados com regras que usam valores predefinidos para aplicar condições. Se os valores forem carregados do JSON no tempo de execução, não será possível aplicar uma regra predefinida.
 
-1. Em **[!UICONTROL Visibilidade]**, escolha **[!UICONTROL Visível, com base na nova opção de regra]** .
+1. Em **[!UICONTROL Visibilidade]**, escolha **[!UICONTROL Visível, com base na nova opção de regra]**.
 
-1. Toque/clique em **[!UICONTROL Adicionar regra]** e escolha o campo Tipo **[!UICONTROL de]** ativo para criar uma dependência. Também escolha o valor do campo sobre o qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. Toque/clique em **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Toque/clique em **[!UICONTROL Concluído]** para salvar as alterações.
 
    ![define_regra de visibilidade](assets/define_visibilityrule.png)
 
@@ -95,7 +95,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    >[!NOTE]
    >
-   >É possível aplicar as condições **[!UICONTROL de Requisito]** e **[!UICONTROL Visibilidade]** independentemente umas das outras.
+   >É possível aplicar as condições de **[!UICONTROL Requisito]** e **[!UICONTROL Visibilidade]** independentemente umas das outras.
 
 1. Da mesma forma, crie uma dependência entre o valor Vídeo no campo Tipo de ativo e outros campos, como Codec e Duração.
 1. Repita as etapas para criar dependência entre ativos de documento (PDF e Word) no campo Tipo [!UICONTROL de] ativo e campos como Contagem [!UICONTROL de] página e [!UICONTROL Autor].
@@ -104,7 +104,9 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 1. Navegue até a pasta na qual você aplicou o Esquema de metadados e abra a página de propriedades de um ativo. Dependendo de sua escolha no campo Tipo de ativo, os campos de metadados em cascata pertinentes são exibidos.
 
    ![Metadados em cascata para o ativo Vídeo](assets/video_asset.png)
+
    *Figura: Metadados em cascata para um vídeo*
 
    ![Metadados em cascata para ativo de documento](assets/doc_type_fields.png)
+
    *Figura: Metadados em cascata para um documento*
