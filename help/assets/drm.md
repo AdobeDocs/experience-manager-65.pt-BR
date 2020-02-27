@@ -3,12 +3,12 @@ title: Gerenciamento de direitos digitais em ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados no AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# Gerenciamento de direitos digitais para ativos digitais {#digital-rights-management-in-assets}
+# Digital Rights Management for digital assets {#digital-rights-management-in-assets}
 
 Os ativos digitais geralmente são associados a uma licença, que especifica seus termos e duração de uso. Como os ativos Adobe Experience Manager (AEM) são totalmente integrados à plataforma AEM, você pode gerenciar com eficiência as informações de expiração de ativos e os estados de ativos. Também é possível associar informações de licenciamento a ativos.
 
@@ -18,11 +18,15 @@ A expiração do ativo é uma forma eficaz de aplicar os requisitos de licença 
 
 Você pode exibir o status de expiração de um ativo no console Ativos nas exibições Cartão e Lista.
 
-![expired_flag_card](assets/expired_flag_card.png)<br> *Figura: Na exibição do cartão, um sinalizador no cartão indica o ativo expirado.*
+![expired_flag_card](assets/expired_flag_card.png)
+
+*Figura: Na exibição do cartão, um sinalizador no cartão indica o ativo expirado.*
 
 **Exibição de lista**
 
-![expired_flag_list](assets/expired_flag_list.png)*Figura: Na exibição de lista, a coluna **[!UICONTROL Status]**exibe o banner **[!UICONTROL Expirado]**.*
+![expired_flag_list](assets/expired_flag_list.png)
+
+*Figura: Na exibição de lista, a coluna[!UICONTROL Status]exibe o banner[!UICONTROL Expirado].*
 
  Você pode exibir o status de expiração de um ativo na linha do tempo. Selecione o ativo e escolha Linha do tempo no menu GlobalNav.
 
@@ -59,7 +63,7 @@ Você pode pesquisar ativos expirados, incluindo subativos expirados no painel P
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Clique/toque na opção Status **[!UICONTROL de]** expiração para expandi-la.
+1. Clique/toque na opção **[!UICONTROL Status de expiração]** para expandi-la.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -73,14 +77,14 @@ Se você modificar a data de expiração de um ativo publicado para uma data ant
 
 Além disso, se uma falha ou erro impedir que o programador detecte ativos expirados no ciclo atual, o programador examinará novamente esses ativos no ciclo seguinte e detectará seu status expirado.
 
-Para permitir que o console Ativos exiba os ativos compostos de referência junto com os subativos expirados, configure um fluxo de trabalho de Notificação **** de expiração do Adobe CQ DAM no AEM Configuration Manager.
+Para permitir que o console Assets exiba os ativos compostos de referência junto com os ativos secundários expirados, configure um fluxo de trabalho de **Notificação de expiração do Adobe CQ DAM** no AEM Configuration Manager.
 
 1. Abra o AEM Configuration Manager.
 1. Escolha **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Por padrão, o Agendador **[!UICONTROL baseado em]** tempo é selecionado, o que agenda uma tarefa para verificar em um horário específico se um ativo expirou subativos. Após a conclusão da tarefa, os ativos que têm subativos expirados e ativos referenciados são exibidos como expirados nos resultados da pesquisa.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
-1. Para executar o job periodicamente, desmarque o campo Regra **[!UICONTROL do Agendador com Base em]** Tempo e modifique o tempo em segundos no campo Agendador **** Periódico. Por exemplo, a expressão de exemplo &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; dispara o trabalho às 00 horas.
+1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; aciona o trabalho às 00 horas.
 1. Selecione **[!UICONTROL enviar email]** para receber emails quando um ativo expirar.
 
    >[!NOTE]
@@ -134,15 +138,15 @@ O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários e
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
 1. Pressione return (Retornar) e, em seguida, toque em **[!UICONTROL GlobalNav]** para exibir o painel Search (Pesquisar).
-1. No painel Pesquisar, toque/clique em **[!UICONTROL Publicar status]** e selecione **[!UICONTROL Publicado]** para procurar ativos publicados nos ativos AEM.
+1. No painel Pesquisar, toque/clique em **[!UICONTROL Publicar status]** e selecione **[!UICONTROL Publicado]** para procurar ativos publicados nos AEM Assets.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Toque/clique em Status **[!UICONTROL de]** aprovação e clique na opção apropriada para procurar ativos aprovados ou rejeitados.
+1. Toque/clique em **[!UICONTROL Status de aprovação]** e clique na opção apropriada para procurar ativos aprovados ou rejeitados.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Para pesquisar ativos com base em seu status de expiração, selecione Status **[!UICONTROL de]** expiração no painel Pesquisar e escolha a opção apropriada.
+1. Para pesquisar ativos com base no status de expiração, selecione **[!UICONTROL Status de expiração]** no painel Pesquisar e escolha a opção adequada.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -150,7 +154,7 @@ O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários e
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## Gerenciamento de direitos digitais em ativos {#digital-rights-management-in-assets-1}
+## Digital Rights Management in Assets {#digital-rights-management-in-assets-1}
 
 Este recurso impõe a aceitação do contrato de licença antes de você poder baixar um ativo licenciado dos ativos Adobe Experience Manager (AEM).
 
@@ -172,12 +176,12 @@ Um ativo é considerado protegido se uma dessas condições for cumprida:
 ### Baixar ativos protegidos por DRM {#downloading-drm-assets}
 
 1. Na exibição Cartão, selecione os ativos que deseja baixar e clique em **[!UICONTROL Download]**.
-1. Na página Gerenciamento **[!UICONTROL de]** direitos autorais, selecione o ativo que deseja baixar na lista.
+1. Na página **[!UICONTROL Gerenciamento de direitos autorais]**, selecione o ativo que deseja baixar na lista.
 1. No painel Licença, escolha **[!UICONTROL Concordar]**. Uma marca de verificação é exibida ao lado do ativo para o qual você aceita o contrato de licença. Toque/clique no botão **[!UICONTROL Download]** .
 
    >[!NOTE]
    >
-   >O botão **[!UICONTROL Download]** é ativado somente quando você opta por concordar com o contrato de licença de um ativo protegido. No entanto, se sua seleção incluir ativos protegidos e desprotegidos, somente os ativos protegidos serão listados no painel esquerdo e o botão **[!UICONTROL Download]** será ativado para baixar os ativos desprotegidos. Para aceitar simultaneamente contratos de licença para vários ativos protegidos, selecione os ativos na lista e escolha **[!UICONTROL Concordar]**.
+   >O botão **[!UICONTROL Download]** é ativado somente quando você opta por concordar com o contrato de licença de um ativo protegido. No entanto, se sua seleção incluir ativos protegidos e desprotegidos, somente os ativos protegidos serão listados no painel à esquerda e o botão **[!UICONTROL Download]** será ativado para baixar os ativos desprotegidos. Para aceitar simultaneamente contratos de licença para vários ativos protegidos, selecione os ativos na lista e escolha **[!UICONTROL Concordar]**.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
