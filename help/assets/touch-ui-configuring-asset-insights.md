@@ -3,7 +3,7 @@ title: Configurar insights de ativos
 description: Configurar insights de ativos nos ativos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -20,11 +20,10 @@ O Adobe Experience Manager (AEM) Assets obtém dados de uso em ativos AEM usados
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
-1. Clique no cartão Configuração **[!UICONTROL do]** Insights.
+1. Clique no cartão **[!UICONTROL Configuração do Insights]**.
 1. No assistente, selecione um centro de dados e forneça suas credenciais, incluindo o nome de sua organização, o nome de usuário e o segredo compartilhado.
 
    ![Configurar o Adobe Analytics para insights de ativos no AEM](assets/insights_config2.png)
-
 
    *Figura:Configurar o Adobe Analytics para insights de ativos no AEM*
 
@@ -40,5 +39,5 @@ Depois de configurar sua conta do Adobe Analytics, o código do rastreador de p�
 
    ![chlimage_1-73](assets/chlimage_1-214.png)
 
-1. Na página **[!UICONTROL Navegação]** , clique no cartão do **[!UICONTROL Insights Page Tracker]** .
+1. Na página **[!UICONTROL Navegação]**, clique no cartão do **[!UICONTROL Rastreador de páginas do Insights]**.
 1. Clique em **[!UICONTROL Download]** para baixar o código do rastreador de página.
