@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -689,7 +689,9 @@ Também é possível adicionar mapas de imagem usando o editor de imagens. Para 
 
 A linha do tempo permite exibir vários eventos de um item selecionado, como fluxos de trabalho ativos de um ativo, comentários/anotações, registros de atividades e versões.
 
-![Classificar as entradas da linha do tempo de um ativo](assets/sort_timeline.gif)*Figura: Classificar entradas de linha do tempo de um ativo*
+![Classificar entradas de linha do tempo de um ativo](assets/sort_timeline.gif)
+
+*Figura: Classificar entradas de linha do tempo de um ativo*
 
 >[!NOTE]
 >
