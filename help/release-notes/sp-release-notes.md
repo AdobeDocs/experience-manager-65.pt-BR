@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37d0225f69800225e82f253ad9dbab8b2b30ac5e
+source-git-commit: fdcd9173b02347a7a9527b292635d63e8aa9ce19
 
 ---
 
@@ -51,7 +51,7 @@ Alguns destaques principais desta versão do Service pack:
 
 ### Lista de alterações {#list-of-changes}
 
-#### Assets {#assets-6530-enhancements}
+#### Ativos {#assets-6530-enhancements}
 
 **Aprimoramentos do produto**
 
@@ -291,6 +291,12 @@ Alguns destaques principais desta versão do Service pack:
 **Foundation JEE**
 
 * A configuração de ação não carrega os nomes de processo para Chamar uma ação de envio do Forms Workflow (NPR-31478).
+* Os usuários do AEM Forms em JEE encontram erros semelhantes aos seguintes ao importar arquivos .lca ou configurar o LDAP no console de administração:
+
+   `com.ibm.ws.webcontainer.filter.FilterInstanceWrapper doFilter SRVE8109W: Uncaught exception thrown by filter um: java.lang.NoClassDefFoundError: org/apache/commons/io/IOUtils at org.apache.commons.fileupload.util.Streams.copy`
+
+   `Error 500: javax.servlet.ServletException: java.lang.NoClassDefFoundError: org.apache.commons.io.IOUtils` (NPR-30931)
+
 
 ### Feature Packs incluídos {#feature-packs-included-6530}
 
