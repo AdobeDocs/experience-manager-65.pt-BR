@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -49,7 +49,6 @@ Familiarize-se com a interface de pesquisa e as ações disponíveis.
 Você pode descobrir os ativos desejados mais rapidamente a partir da página de resultados da pesquisa usando o número atualizado dinamicamente dos resultados de pesquisa esperados nas facetas de pesquisa. O número esperado de ativos é atualizado mesmo antes de aplicar o filtro de pesquisa. Ver a contagem esperada em relação ao filtro ajuda a navegar pelos resultados da pesquisa de forma rápida e eficiente. Para obter mais informações, consulte [Pesquisar ativos no AEM](search-assets.md).
 
 ![Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.](assets/asset_search_results_in_facets_filters.png)
-
 
 *Figura:Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.*
 
@@ -100,7 +99,6 @@ Para receber sugestões para mais de uma palavra-chave de pesquisa, continue dig
 
 ![Digite várias palavras-chave para exibir sugestões que se ajustem a todas](assets/search_suggestionsmanykeywords.gif)
 
-
 *Figura:Digite várias palavras-chave para exibir sugestões que se ajustem a todas*
 
 ### Classificação de pesquisa e aumento {#searchrank}
@@ -133,7 +131,6 @@ O AEM fornece vários métodos, como filtros, que se aplicam aos ativos pesquisa
 
 ![Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros](assets/search_folder_select.gif)
 
-
 *Figura:Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros*
 
 ### Localizar imagens semelhantes {#visualsearch}
@@ -141,7 +138,6 @@ O AEM fornece vários métodos, como filtros, que se aplicam aos ativos pesquisa
 Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usuário, clique na opção **[!UICONTROL Localizar semelhante]** na exibição de cartão de uma imagem ou na barra de ferramentas. O AEM exibe as imagens com tags inteligentes do repositório DAM que são semelhantes a uma imagem selecionada pelo usuário. Consulte [como configurar a pesquisa de semelhança](#configvisualsearch).
 
 ![Localizar imagens semelhantes usando a opção na exibição de cartão](assets/search_find_similar.png)
-
 
 *Figura:Localizar imagens semelhantes usando a opção na exibição de cartão*
 
@@ -248,7 +244,6 @@ Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[por
 
 ![Procurar e selecionar ativo no seletor de ativos](assets/assetpicker.png)
 
-
 *Figura:Procurar e selecionar ativo no seletor de ativos*
 
 ## Limitações  {#limitations}
@@ -290,7 +285,6 @@ Use aspas duplas em torno de palavras-chave para localizar ativos que contenham 
 
 ![Comportamento de pesquisa com e sem aspas](assets/search_with_quotes.gif)
 
-
 *Figura:Comportamento de pesquisa com e sem aspas*
 
 **Pesquisar com um asterisco** curinga: Para ampliar a pesquisa, use um asterisco antes ou depois da palavra de pesquisa para corresponder a qualquer número de caracteres. Por exemplo, a pesquisa por executar sem um asterisco não retorna ativos que contenham qualquer variação da palavra (incluindo nos metadados). Um asterisco substitui qualquer número de caracteres. Por exemplo,
@@ -301,7 +295,6 @@ Use aspas duplas em torno de palavras-chave para localizar ativos que contenham 
 * `*run*` retorna todas as combinações possíveis.
 
 ![Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo](assets/search_with_asterisk_run.gif)
-
 
 *Figura:Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo*
 
@@ -315,13 +308,11 @@ Use aspas duplas em torno de palavras-chave para localizar ativos que contenham 
 
 ![Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo](assets/search_with_questionmark_run.gif)
 
-
 *Figura:Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo*
 
 **Excluir uma palavra-chave**: Use o traço para procurar ativos que não contêm uma palavra-chave. Por exemplo, `running -shoe` a consulta retorna ativos que contêm `running`, mas não `shoe`. Da mesma forma, `camp -night` a consulta retorna ativos que contêm `camp` , mas não `night`. Observe que `camp-night` a consulta retorna ativos que contêm `camp` e `night`.
 
 ![Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída](assets/search_dash_exclude_keyword.gif)
-
 
 *Figura:Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída*
 
@@ -423,7 +414,6 @@ Para ver todos os metadados de um ativo, selecione o ativo e clique em **[!UICON
 Para verificar os comentários em um ativo ou histórico de versão de um ativo, clique nele para abrir uma visualização de grande. Abra a linha do tempo no painel à esquerda e selecione **[!UICONTROL Comentários]** ou **[!UICONTROL Versões]**. Também é possível classificar a atividade da linha do tempo, como comentários ou versões em ordem cronológica.
 
 ![Classificar entradas de linha do tempo para um ativo de pesquisa](assets/sort_timeline_search_results.gif)
-
 
 *Figura:Classificar entradas de linha do tempo para um ativo de pesquisa*
 
