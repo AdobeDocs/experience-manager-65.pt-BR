@@ -3,7 +3,7 @@ title: Usar ativos conectados para compartilhar ativos DAM no fluxo de trabalho 
 description: Use os ativos disponíveis em uma implantação remota dos ativos Adobe Experience Manager ao criar suas páginas da Web em outra implantação do Site do Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -35,16 +35,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
 ### Formatos de arquivo não suportados {#mimetypes}
 
-Os autores podem procurar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao `Download` componente e as imagens podem ser adicionadas ao `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer componente AEM personalizado que estende os componentes padrão `Download` ou `Image` .
-
-* Microsoft Word (DOC e DOCX)
-* Microsoft Excel (XLS e XLSX)
-* Microsoft PowerPoint (PPT e PPTX)
-* Adobe PDF (PDF)
-* Texto OpenDocument (ODT)
-* RTF (Rich Text Format)
-* Texto sem formatação (TXT)
-* Páginas da Web (HTML)
+Os autores podem procurar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao `Download` componente e as imagens podem ser adicionadas ao `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer componente AEM personalizado que estende os componentes padrão `Download` ou `Image` . Para obter uma lista dos formatos suportados, consulte Formatos [compatíveis com os ativos](assets-formats.md#supported-document-formats)conectados.
 
 ### Users and groups involved {#users-and-groups-involved}
 
