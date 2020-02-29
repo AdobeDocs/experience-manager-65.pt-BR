@@ -3,7 +3,7 @@ title: Usar ativos conectados para compartilhar ativos DAM no fluxo de trabalho 
 description: Use os ativos disponíveis em uma implantação remota dos ativos Adobe Experience Manager ao criar suas páginas da Web em outra implantação do Site do Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
 
 ---
 
@@ -29,13 +29,16 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
    |  | AEM Sites como Cloud Service | AEM 6.5 Sites no AMS | Sites do AEM 6.5 no local |
    |---|---|---|---|
-   | **Ativos AEM como Cloud Service** | Suportado | Suportado | Suportado |
+   | **AEM Assets as a Cloud Service** | Suportado | Suportado | Suportado |
    | **AEM 6.5 Assets no AMS** | Não suportado | Suportado | Suportado |
    | **Ativos no local do AEM 6.5** | Não suportado | Não suportado | Não suportado |
 
 ### Formatos de arquivo não suportados {#mimetypes}
 
-Os autores podem procurar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao `Download` componente e as imagens podem ser adicionadas ao `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer componente AEM personalizado que estende os componentes padrão `Download` ou `Image` . Para obter uma lista dos formatos suportados, consulte Formatos [compatíveis com os ativos](assets-formats.md#supported-document-formats)conectados.
+Os autores podem procurar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao `Download` componente e as imagens podem ser adicionadas ao `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer componente AEM personalizado que estende os componentes padrão `Download` ou `Image` . A lista de formatos suportados é:
+
+* **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagem são suportados pelos Ativos conectados. Os Componentes de Dynamic Media não são suportados.
+* **Formatos** de documento: Consulte Formatos [de documento compatíveis com os ativos](assets-formats.md#supported-document-formats)conectados.
 
 ### Users and groups involved {#users-and-groups-involved}
 
