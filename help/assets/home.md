@@ -4,7 +4,7 @@ seo-title: Guia do usuário dos ativos AEM 6.5
 description: Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
 seo-description: Abrange todas as tarefas do AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: b90343874d5afd9858d8a6d82828eabdfa1d3ccd
 
 ---
 
@@ -39,11 +39,11 @@ Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer 
 
 ## Principais recursos do AEM
 
-* [Tutoriais do AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Tutoriais em vídeo do AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [Fórum da comunidade do AEM Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [Guia do usuário HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Preparação do RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
