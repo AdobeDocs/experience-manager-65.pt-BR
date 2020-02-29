@@ -3,7 +3,7 @@ title: Formatos compatíveis de ativos
 description: Lista de formatos de arquivo suportados pelo AEM Assets e recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
 
 ---
 
@@ -87,13 +87,13 @@ Consulte Biblioteca [de transcodificação de](imaging-transcoding-library.md)im
 
 ## Camera bruta suportada {#supported-camera-raw}
 
-A biblioteca do Adobe Camera Raw permite que os ativos AEM assimilem imagens brutas. See [Camera Raw Support](camera-raw.md).
+A biblioteca do Adobe Camera Raw permite que os ativos AEM assimilem imagens brutas. See [Camera Raw support](camera-raw.md).
 
 ## Formatos de documento suportados {#supported-document-formats}
 
 Os formatos de documento suportados para recursos de gerenciamento de ativos são os seguintes:
 
-| Formato | Armazenamento | Gerenciamento de metadados<br> | Metadata<br> extraction | Geração de miniaturas<br> | Edição interativa<br> | Writeback de metadados<br> | Insights | Connected Assets |
+| Formato | Armazenamento | Gerenciamento de metadados<br> | Metadata<br> extraction | Geração de miniaturas<br> | Edição interativa<br> | Writeback de metadados<br> | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
