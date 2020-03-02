@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -189,22 +189,22 @@ Esta seção descreve como instalar e configurar o software EMC NetWorker no Con
 
 1. Defina a senha do arquivo de configuração da seguinte maneira:
 
-   * Abra um prompt de comando e altere para *[NetWorker_root]*\Legato\nsr\bin.
+   * Abra um prompt de comando e altere para `[NetWorker_root]\Legato\nsr\bin`.
    * Execute o seguinte comando: `-nsrnmdsv.exe -f`*&lt;caminho_para_arquivo_cfg> -P &lt;senha>*
 
 1. Crie os arquivos em lote executáveis (.bat) usados para fazer backup do banco de dados. (Consulte a documentação do NetWorker.) Defina os detalhes nos arquivos de lote de acordo com sua instalação.
 
    * Backup completo do banco de dados (nsrnmdbf.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nome de`-U`*[usuário ]*`-P`*[senha]*`-l full`*&lt;nome_do_banco_de_dados>*
+      `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]`senha`-P`*[]*`-l full`*&lt;nome_do_banco_de_dados>*
 
    * Backup incremental do banco de dados (nsrnmddbi.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nome de`-U`*[usuário ]*`-P`*[senha]*`-l 1 -R`*&lt;nome_do_banco_de_dados>*
+      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;nome_do_banco_de_dados>*
 
    * Backup do log do banco de dados (nsrnmddbl.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*nome de`-U`*[usuário ]*`-P`*[senha]*`-l incr -R`*&lt;nome_do_banco_de_dados>*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nome_do_banco_de_dados>*
 
       Em que:
 
@@ -240,7 +240,7 @@ Execute as seguintes tarefas depois de concluir um backup completo dos dados dos
 >
 >Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg criado em [Preparação do EMC Document Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Abra um prompt de comando e altere para *[NetWorker_root]*\Legato\nsr\bin.
+1. Abra um prompt de comando e altere para `[NetWorker_root]\Legato\nsr\bin`.
 1. Execute o seguinte comando:
 
    ```as3
@@ -266,4 +266,3 @@ Execute as seguintes tarefas antes de restaurar os dados dos formulários do AEM
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
-
