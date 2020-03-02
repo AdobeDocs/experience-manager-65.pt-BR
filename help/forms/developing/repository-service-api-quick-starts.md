@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -53,7 +53,7 @@ O caminho para um recurso localizado no repositório do AEM Forms é:
 
 >[!NOTE]
 >
->Você pode navegar pelo AEM Forms Repository usando um navegador da Web. Para navegar pelo repositório, insira o seguinte URL em um navegador da Web https://[server name]:[server port]/repository. Você pode verificar os resultados de início rápido usando um navegador da Web. Por exemplo, se você adicionar conteúdo ao AEM Forms Repository, poderá ver o conteúdo em um navegador da Web.
+>Você pode navegar pelo AEM Forms Repository usando um navegador da Web. Para navegar pelo repositório, insira o seguinte URL em um navegador da Web `https://[server name]:[server port]/repository`. Você pode verificar os resultados de início rápido usando um navegador da Web. Por exemplo, se você adicionar conteúdo ao AEM Forms Repository, poderá ver o conteúdo em um navegador da Web.
 
 >[!NOTE]
 >
