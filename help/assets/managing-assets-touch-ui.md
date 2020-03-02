@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
+source-git-commit: 68692e7b82aecd81a21f3a970f3707f2ff39792a
 
 ---
 
@@ -627,7 +627,7 @@ Na exibição do cartão, a opção **[!UICONTROL Selecionar]** é exibida como 
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Ao navegar em uma pasta ou coleção na interface do usuário Ativos em um navegador, você pode selecionar todos os ativos usando a opção [!UICONTROL Selecionar tudo] no canto superior direito.
+Ao navegar em uma pasta ou coleção na interface do usuário Ativos em um navegador, você pode selecionar todos os ativos exibidos ou carregados usando a opção [!UICONTROL Selecionar tudo] no canto superior direito. Se você não rolar abaixo, apenas 100 ativos são carregados na exibição de cartão e 200 são carregados na exibição de lista. A opção Selecionar tudo seleciona somente esses muitos ativos.
 
 Para obter mais informações, consulte [Exibir e selecionar seus recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
