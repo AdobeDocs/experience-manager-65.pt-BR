@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -144,7 +144,7 @@ O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um
 
 ## Início rápido (modo SOAP): Converter um documento PDF em arquivos JPEG usando a API Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* em um conjunto de arquivos JPEG e os armazena no diretório C:\Adobe directory. Cada arquivo é nomeado *[tempFileindex].jpg*, onde o primeiro arquivo de imagem é chamado *tempFile0.jpg*. (Consulte [Converter documentos PDF em formatos](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)de imagem.)
+O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* em um conjunto de arquivos JPEG e os armazena no diretório C:\Adobe directory. Cada arquivo é nomeado `tempFile[index].jpg`, onde o primeiro arquivo de imagem é chamado de *tempFile0.jpg*. (Consulte [Converter documentos PDF em formatos](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)de imagem.)
 
 ```as3
  /*
