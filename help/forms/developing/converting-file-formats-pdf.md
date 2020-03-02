@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -156,7 +156,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
    * Um `com.adobe.idp.Document` objeto que representa o arquivo a ser convertido.
    * Um `java.lang.String` objeto que contém a extensão de arquivo.
    * Um `java.lang.String` objeto que contém as configurações de tipo de arquivo a serem usadas na conversão. As configurações de tipo de arquivo fornecem configurações de conversão para diferentes tipos de arquivo, como .doc ou .xls.
-   * Um `java.lang.String` objeto que contém o nome das configurações do PDF a serem usadas. Por exemplo, você pode especificar `Standard`.
+   * Um `java.lang.String` objeto que contém o nome das configurações do PDF a serem usadas. For example, you can specify `Standard`.
    * Um `java.lang.String` objeto que contém o nome das configurações de segurança a serem usadas.
    * Um `com.adobe.idp.Document` objeto opcional que contém configurações a serem aplicadas ao gerar o documento PDF.
    * Um `com.adobe.idp.Document` objeto opcional que contém informações de metadados a serem aplicadas ao documento PDF.
@@ -713,7 +713,7 @@ Se você planeja trabalhar em arquivos XML de diálogo ou script, instale o apli
 Os arquivos de diálogo e script residem no arquivo appmondata.jar. Antes de poder modificar qualquer um desses arquivos ou adicionar novo script ou arquivos de diálogo, você deve desempacotar esse arquivo JAR. Por exemplo, suponha que você deseja adicionar suporte ao aplicativo EditPlus. Você cria dois arquivos XML, chamados appmon.editplus.script.en_US.xml e appmon.editplus.script.add.en_US.xml. Esses scripts XML devem ser adicionados ao arquivo adobe-appmondata.jar em dois locais, conforme especificado abaixo:
 
 * adobe-livecycle-native-jHead-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. O arquivo adobe-livecycle-native-jpatrão-x86_win32.ear está na pasta de exportação em `[AEM forms install directory]\configurationManager`. (se o AEM Forms for implantado em outro servidor de aplicativos J2EE, substitua o arquivo adobe-livecycle-native-jHead-x86_win32.ear pelo arquivo EAR que corresponde ao servidor de aplicativos J2EE.)
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (o arquivo adobe-appmondata.jar está no arquivo adobe-generatepdf-dsc.jar). O arquivo adobe-generatepdf-dsc.jar está no diretório *[de instalação dos formulários]* AEM\na pasta de implantação.
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (o arquivo adobe-appmondata.jar está no arquivo adobe-generatepdf-dsc.jar). O arquivo adobe-generatepdf-dsc.jar está na `[AEM forms install directory]\deploy` pasta.
 
 Depois de adicionar esses arquivos XML ao arquivo adobe-appmondata.jar, é necessário reimplantar o componente GeneratePDF. Para adicionar arquivos XML de diálogo e script ao arquivo adobe-appmondata.jar, execute estas tarefas:
 
@@ -741,7 +741,7 @@ Depois de adicionar esses arquivos XML ao arquivo adobe-appmondata.jar, é neces
 
 Se quiser direcionar arquivos para um novo aplicativo nativo, você deve criar um arquivo XML de script para esse aplicativo. Se quiser modificar como o serviço Gerar PDF interage com um aplicativo nativo que já é suportado, você deve modificar o script desse aplicativo.
 
-O script contém instruções que navegam pelos elementos de janela do aplicativo nativo e fornecem respostas específicas a esses elementos. O arquivo que contém essas informações é appmon.*[appname]*.script.*[locale]*.xml. Um exemplo é appmon.notepad.script.en_US.xml.
+O script contém instruções que navegam pelos elementos de janela do aplicativo nativo e fornecem respostas específicas a esses elementos. O arquivo que contém essas informações é `appmon.[appname]``.script.[locale].xml`. Um exemplo é appmon.notepad.script.en_US.xml.
 
 #### Como identificar etapas que o script deve executar {#identifying-steps-the-script-must-execute}
 
@@ -836,16 +836,16 @@ Se você criar um script para um aplicativo nativo que não era suportado anteri
 
 >[!NOTE]
 >
->Neste contexto, o termo adicional significa o conteúdo do aplicativo.[application].add.[arquivo locale].xml. Esse arquivo especifica substituições e adições ao arquivo XML de diálogo.
+>Neste contexto, o termo adicional significa o conteúdo do `appmon.[applicationname].addition.[locale].xml` arquivo. Esse arquivo especifica substituições e adições ao arquivo XML de diálogo.
 
 Você também pode modificar o arquivo XML de diálogo adicional para um aplicativo nativo para esses fins:
 
 * Substituição do arquivo XML de diálogo para um aplicativo com uma resposta diferente
 * Para adicionar uma resposta a uma caixa de diálogo que não é abordada no arquivo XML de diálogo desse aplicativo
 
-O nome do arquivo que identifica um arquivo XML de diálogo adicional é appmon.*[appname]*.add.*[locale]*.xml. Um exemplo é appmon.excel.add.en_US.xml.
+O nome do arquivo que identifica um arquivo dialogXML adicional é `appmon.[appname].addition.[locale].xml`. Um exemplo é appmon.excel.add.en_US.xml.
 
-O nome do arquivo XML da caixa de diálogo adicional deve usar o formato appmon.*[application]*.add.*[locale]*.xml, onde *application name* deve corresponder exatamente ao nome do aplicativo usado no arquivo de configuração XML e no script.
+O nome do arquivo XML da caixa de diálogo adicional deve usar o formato `appmon.[applicationname].addition.[locale].xml`, onde *application name* deve corresponder exatamente ao nome do aplicativo usado no arquivo de configuração XML e no script.
 
 >[!NOTE]
 >
@@ -898,7 +898,7 @@ Neste exemplo, os dados de configuração padrão fornecidos com o serviço Gera
 
 #### Criação de uma variável de ambiente para localizar o aplicativo nativo {#creating-an-environment-variable-to-locate-the-native-application}
 
-Crie uma variável de ambiente que especifique o local do executável do aplicativo nativo. A variável deve usar o formato *[application name]*_PATH, no qual *application name* deve corresponder exatamente ao nome do aplicativo usado no arquivo de configuração XML e no script, e no qual o caminho contém o caminho para o executável entre aspas duplas. Um exemplo dessa variável de ambiente é `Photoshop_PATH`.
+Crie uma variável de ambiente que especifique o local do executável do aplicativo nativo. A variável deve usar o formato `[applicationname]_PATH`, no qual o *nome* do aplicativo deve corresponder exatamente ao nome do aplicativo usado no arquivo de configuração XML e no script e no qual o caminho contém o caminho para o executável entre aspas duplas. Um exemplo dessa variável de ambiente é `Photoshop_PATH`.
 
 Depois de criar a nova variável de ambiente, você deve reiniciar o servidor no qual o serviço Gerar PDF está implantado.
 
@@ -907,7 +907,7 @@ Depois de criar a nova variável de ambiente, você deve reiniciar o servidor no
 1. Selecione **Painel de controle > Sistema**.
 1. Na caixa de diálogo Propriedades do sistema, clique na guia **Avançado** e, em seguida, clique em Variáveis **de** ambiente.
 1. Em Variáveis do sistema na caixa de diálogo Variáveis de ambiente, clique em **Novo**.
-1. Na caixa de diálogo Nova variável do sistema, na caixa Nome **da** variável, digite um nome que use o formato *[application name]*_PATH.
+1. Na caixa de diálogo Nova variável do sistema, na caixa Nome **da** variável, digite um nome que use o formato `[applicationname]_PATH`.
 1. Na caixa Valor **da** variável, digite o caminho completo e o nome do arquivo executável do aplicativo e clique em **OK**. For example, type: `c:\windows\Notepad.exe`
 1. Na caixa de diálogo Variáveis de ambiente, clique em **OK**.
 
