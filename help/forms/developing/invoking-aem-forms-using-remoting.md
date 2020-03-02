@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -963,7 +963,7 @@ O tipo de dados totalmente qualificado do tipo complexo AEM Forms é atribuído 
 Os campos da classe ActionScript correspondem aos campos que pertencem ao tipo complexo de formulários AEM. Os seis campos localizados na classe ActionScript do cliente correspondem aos campos que pertencem a `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
-Uma boa maneira de determinar os nomes de campo que pertencem a um tipo complexo de formulários é exibir o WSDL de um serviço em um navegador da Web. Uma WSDL especifica os tipos complexos de um serviço e os membros de dados correspondentes. O seguinte WSDL é usado para o serviço de Atendimento ao cliente: *https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.*
+Uma boa maneira de determinar os nomes de campo que pertencem a um tipo complexo de formulários é exibir o WSDL de um serviço em um navegador da Web. Uma WSDL especifica os tipos complexos de um serviço e os membros de dados correspondentes. O seguinte WSDL é usado para o serviço de Atendimento ao cliente: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 A classe ActionScript do cliente pertence a um pacote chamado cliente. É recomendável colocar todas as classes ActionScript que mapeiam para tipos de dados complexos do AEM Forms em seus próprios pacotes. Crie uma pasta na pasta src do projeto Flex e coloque o arquivo ActionScript na pasta, como mostrado na ilustração a seguir.
 
