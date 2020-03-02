@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -368,7 +368,7 @@ Você pode usar o JAX-WS para converter um WSDL de serviço do Forms para classe
 1. Instale o JDK 1.6 ou posterior.
 
    * Adicione o diretório JDK bin ao caminho da classe.
-   * Adicione o diretório JRE bin ao caminho da classe. Esse compartimento está localizado no diretório [*JDK_INSTALL_LOCATION*]/jre.
+   * Adicione o diretório JRE bin ao caminho da classe. Este compartimento está localizado no `[JDK_INSTALL_LOCATION]/jre` diretório.
    * Defina a variável de `JAVA_HOME` ambiente no diretório em que você instalou o JDK.
    O JDK 1.6 inclui o programa wsimport usado no arquivo build.xml. O JDK 1.5 não inclui esse programa.
 
@@ -558,7 +558,7 @@ Você pode gerar arquivos da biblioteca Java Axis executando as seguintes etapas
    * xalan.jar
    * xbean.jar
    * xercesImpl.jar
-   Esses arquivos JAR estão no diretório *[de]* instalação/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty.
+   Esses arquivos JAR estão no `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty` diretório.
 
 **Consulte também:**
 
