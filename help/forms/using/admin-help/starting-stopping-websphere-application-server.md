@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -21,7 +21,7 @@ Vários procedimentos exigem que você pare ou inicie a instância do WebSphere 
 
 ## Exibir o status do WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
-1. Em um prompt de comando, vá para o diretório raiz *[/bin do]* appserver.
+1. Em um prompt de comando, vá para o `[appserver root]/bin` diretório.
 1. Digite o seguinte comando, substituindo *server_name* pelo nome do Servidor de aplicativos WebSphere:
 
    * (Windows) `serverStatus.bat`*server_name *
@@ -29,7 +29,7 @@ Vários procedimentos exigem que você pare ou inicie a instância do WebSphere 
 
 ## Iniciar o WebSphere Application Server {#start-websphere-application-server}
 
-1. Em um prompt de comando, vá para o diretório raiz *[/bin do]* appserver.
+1. Em um prompt de comando, vá para o `[appserver root]/bin` diretório.
 1. Digite o seguinte comando, substituindo *server_name* pelo nome do Servidor de aplicativos WebSphere:
 
    * (Windows) `startServer.bat`*server_name *
@@ -37,7 +37,7 @@ Vários procedimentos exigem que você pare ou inicie a instância do WebSphere 
 
 ## Parar o WebSphere Application Server {#stop-websphere-application-server}
 
-1. Em um prompt de comando, vá para o diretório raiz *[/bin do]* appserver.
+1. Em um prompt de comando, vá para o `[appserver root]/bin` diretório.
 1. Digite o seguinte comando, substituindo *server_name* pelo nome do Servidor de aplicativos WebSphere:
 
    * (Windows) `stopServer.bat`*server_name *
