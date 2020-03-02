@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: 049e28176c9b98eeb3c2c6764cb868c51f1141bb
+source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
 
 ---
 
@@ -215,7 +215,7 @@ Options:
 
 Veja a seguir algumas tarefas comuns executadas no VLT. Para obter informações detalhadas sobre cada comando, consulte os [comandos](#vlt-commands)individuais.
 
-### Fazendo check-out de uma árvore {#checking-out-a-subtree}
+### Fazendo check-out de uma subárvore {#checking-out-a-subtree}
 
 Se você quiser fazer check-out apenas de uma subárvore do repositório, por exemplo, `/apps/geometrixx`, digite o seguinte:
 
@@ -654,7 +654,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 | `--force` | força a operação a ser executada |
 | `<file> [<file> ...]` | arquivo ou diretório local a ser adicionado |
 
-### Excluir {#delete}
+### Exclua {#delete}
 
 Remove arquivos e diretórios do controle de versão.
 
