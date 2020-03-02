@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -154,7 +154,7 @@ O diretório raiz do armazenamento de conteúdo contém o repositório do Conten
 
 O diretório raiz de armazenamento de conteúdo é criado quando o Content Services (obsoleto) é instalado. A localização do diretório raiz de armazenamento de conteúdo é determinada durante o processo de instalação dos formulários AEM.
 
-O local padrão do diretório raiz de armazenamento de conteúdo é *[aem-forms root]*/lccs_data.
+O local padrão do diretório raiz de armazenamento de conteúdo é `[aem-forms root]/lccs_data`.
 
 Faça backup dos seguintes diretórios localizados no diretório raiz de armazenamento de conteúdo:
 
@@ -176,7 +176,7 @@ Quando você instala o Content Services (obsoleto) em um ambiente clusterizado, 
 
 **** Diretório raiz do índice: Um diretório criado em cada nó no cluster, sempre com o mesmo caminho e nome de diretório
 
-O local padrão do diretório raiz de armazenamento de conteúdo é raiz *[/lccs_data do]* GDS, onde raiz *[do]* GDS é o local descrito no local [do](files-back-recover.md#gds-location)GDS. Faça backup dos seguintes diretórios localizados no diretório raiz de armazenamento de conteúdo:
+O local padrão do diretório raiz de armazenamento de conteúdo é `[GDS root]/lccs_data`, onde `[GDS root]` é o local descrito no local [](files-back-recover.md#gds-location)GDS. Faça backup dos seguintes diretórios localizados no diretório raiz de armazenamento de conteúdo:
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ O local padrão do diretório raiz de armazenamento de conteúdo é raiz *[/lccs
 
 Se o diretório /backup-lucene-indexes não estiver presente, faça backup do diretório /lucene-indexes, também localizado no diretório raiz do armazenamento de conteúdo. Se o diretório /backup-lucene-indexes estiver presente, não faça backup do diretório /lucene-indexes porque pode causar erros.
 
-O local padrão para o diretório Raiz do índice é *[aem-forms root]*/lucene-index em cada nó.
+O local padrão do diretório Raiz do índice está `[aem-forms root]/lucene-indexes` em cada nó.
 
 ## Fontes instaladas pelo cliente {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ Se você instalou fontes adicionais no ambiente de formulários do AEM, é neces
 
 >[!NOTE]
 >
->Por padrão, as fontes da Adobe instaladas com formulários AEM estão localizadas no diretório raiz [/fontes de formulários]aem.
+>Por padrão, as fontes da Adobe instaladas com formulários AEM estão localizadas no `[aem-forms root]/fonts` diretório.
 
 Se você estiver reinicializando o sistema operacional no computador host e quiser usar fontes do sistema operacional anterior, o backup do conteúdo do diretório de fontes do sistema também deverá ser feito. (Para obter instruções específicas, consulte a documentação do seu sistema operacional).
