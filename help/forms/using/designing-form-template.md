@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -25,7 +25,7 @@ Para obter recursos comuns do XFA, consulte as seguintes práticas recomendadas 
 
 ## Best practices {#best-practices}
 
-A maioria das etapas para criar um modelo de formulário, como vínculos de esquema ou lógica de formulário de gravação, são as mesmas. No entanto, devido às diferenças inerentes entre a renderização e o mecanismo de scripts de um cliente espesso, como o Adobe Reader e formulários baseados em navegador, há algumas recomendações descritas no artigo de práticas [recomendadas](/help/forms/using/design-accessible-html5-forms.md) . Essas práticas recomendadas ajudam a projetar modelos de formulário para funcionarem como esperado em ambos os formatos.
+A maioria das etapas para criar um modelo de formulário, como vínculos de esquema ou lógica de formulário de gravação, são as mesmas. No entanto, devido às diferenças inerentes entre a renderização e o mecanismo de scripts de um cliente espesso, como o Adobe Reader e formulários baseados em navegador, há algumas recomendações descritas no artigo de práticas [recomendadas](/help/forms/using/design-accessible-html5-forms.md) . Essas práticas recomendadas ajudam você a projetar modelos de formulário para funcionarem como esperado em ambos os formatos.
 
 ### Recursos no AEM Forms Designer para HTML5 Forms {#capabilities-in-aem-forms-designer-for-html-forms}
 
@@ -39,4 +39,8 @@ O principal destino para formulários HTML5 é dispositivos de toque. Portanto, 
 
 ![4](assets/4.png)
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+#### Rich text format {#rich-text-format}
+
+Para adicionar uma lista de opções de formatação a um campo de texto no formulário HTML5 renderizado, é possível definir um formato de campo para o campo de texto no Forms Designer. Toque no campo de texto na Visualização **** de design. Na guia **[!UICONTROL Campo]** , selecione **[!UICONTROL Rich Text]** na lista suspensa Formato **[!UICONTROL de]** campo para aplicar as configurações. O campo de texto exibe opções de formatação quando renderizado em um formulário HTML5.
+
+[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
