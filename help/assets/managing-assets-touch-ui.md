@@ -20,7 +20,7 @@ Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, vo
 >[!NOTE]
 >
 >* O compartilhamento de uma pasta Ativos do tipo `sling:OrderedFolder`não é suportado ao compartilhar com a Marketing Cloud. Se desejar compartilhar uma pasta, não selecione [!UICONTROL Solicitado] ao criar uma pasta.
->* O Experience Manager não permite o uso de `subassets` word como nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos.
+>* O Experience Manager não permite o uso de `subassets` word como o nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos.
 
 
 1. Navegue até o local na pasta de ativos digitais onde deseja criar uma nova pasta. No menu, clique em **[!UICONTROL Criar]**. Selecione **[!UICONTROL Nova pasta]**.
@@ -39,7 +39,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos PDF, arquivos RAW etc.) da sua pasta local ou de uma unidade de rede para os ativos AEM.
+Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos PDF, arquivos RAW e assim por diante) da pasta local ou de uma unidade de rede para os ativos AEM.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Para pastas com um perfil de processamento atribuído, o nome do perfil aparece 
 Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/assets/assets-formats.md) compatível com os ativos AEM.
 
 1. Na interface do usuário do Assets, navegue até o local onde deseja adicionar ativos digitais.
-1. Para carregar os ativos, execute um dos procedimentos a seguir:
+1. Para fazer upload dos ativos, execute um dos procedimentos a seguir:
 
    * Na barra de ferramentas, toque no ícone **[!UICONTROL Criar]** . Em seguida, no menu, toque em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do usuário dos Ativos. A caixa de diálogo para renomear o arquivo não é exibida.
@@ -60,7 +60,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
 
-   Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo posteriormente a partir da mesma página. Toque no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um upload é iniciado.
+   Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Toque no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um upload é iniciado.
 
    ![chlimage_1-211](assets/chlimage_1-5.png)
 
@@ -82,7 +82,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    Para configurar a tarefa de limpeza para as tarefas de carregamento de segmentos não concluídas, vá para `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
-   Se você carregar um ativo com o mesmo nome de um ativo já disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
+   Se você fizer upload de um ativo com o mesmo nome de um ativo já disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
 
    Você pode optar por substituir um ativo existente, criar outra versão ou manter ambos renomeando o novo ativo que é carregado. Se você substituir um ativo existente, os metadados do ativo e quaisquer modificações anteriores (por exemplo, anotação ou recorte) que você fez no ativo existente serão excluídos. Se você optar por manter ambos os ativos, o novo ativo será renomeado com o número `1` anexado ao seu nome.
 
@@ -130,7 +130,7 @@ Por padrão, o carregamento em série de ativos é ativado. Para desativar o rec
 
 ### Fazer upload de ativos usando FTP {#uploading-assets-using-ftp}
 
-O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FTP. Se você pretende carregar ativos grandes (> 1 GB) ou pastas e subpastas inteiras, deve usar o FTP. Você pode até mesmo configurar o upload do FTP para que ocorra de forma recorrente.
+O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FTP. Se você pretende carregar ativos grandes (> 1 GB) ou pastas e subpastas inteiras, deve usar o FTP. Você pode até mesmo configurar o upload do FTP para que ocorra de forma recorrente e programada.
 
 >[!NOTE]
 >
@@ -161,7 +161,7 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 1. No canto inferior direito da página Carregar, toque em **[!UICONTROL Enviar upload]**.
 
    Para exibir o progresso do upload, na barra de navegação global, toque em **[!UICONTROL Tarefas]**. A página Tarefas exibe o progresso do upload. Você pode continuar trabalhando no AEM e voltar para a página de Tarefas no Dynamic Media Classic a qualquer momento para revisar um trabalho em andamento.
-Para cancelar um trabalho de upload em andamento, toque em **[!UICONTROL Cancelar]** ao lado da Duração.
+Para cancelar um trabalho de upload em andamento, toque em **[!UICONTROL Cancelar]** ao lado do Tempo de duração.
 
 #### Carregar opções de trabalho {#upload-job-options}
 
@@ -174,19 +174,19 @@ Para cancelar um trabalho de upload em andamento, toque em **[!UICONTROL Cancela
 | Opções de trabalho |  | Toque/ clique em Opções **[!UICONTROL de]** trabalho para abrir a caixa de diálogo Opções [!UICONTROL de trabalho de] upload e escolha as opções que afetam todo o trabalho de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher as opções padrão para fazer upload de arquivos a partir da página Configurações gerais do aplicativo. Para abrir esta página, escolha **[!UICONTROL Configuração]** > Configuração **** do aplicativo. Toque no botão Opções **[!UICONTROL de upload]** padrão para abrir a caixa de diálogo Opções [!UICONTROL de] upload de trabalho. |
 |  | Quando | Selecione Uma vez ou Recorrente. Para definir um trabalho recorrente, escolha uma opção Repetir (Diário, Semanal, Mensal ou Personalizado) para especificar quando você deseja que o trabalho de upload do FTP seja repetido. Em seguida, especifique as opções de agendamento conforme necessário. |
 |  | Incluir subpastas | Carregue todas as subpastas dentro da pasta que você deseja carregar. Os nomes da pasta e suas subpastas carregadas são inseridos automaticamente nos ativos AEM. |
-|  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. A quantidade de imagens cortadas depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você digitar 75 nas caixas de texto Superior, Direita, Inferior e Esquerda, meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direita, Inferior e Esquerda para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar com base em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para aparar com base na cor, especifique 0 para recortar pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferenças de cor.<br>Para aparar com base na transparência, especifique 0 para cortar pixels somente se eles forem transparentes. Números mais próximos a 1 permitem mais transparência.</li></ul><br>Observe que essas opções de corte não são destrutivas. |
-|  | Opções de perfil de cor | Escolha uma conversão de cores ao criar arquivos otimizados usados para entrega:<ul><li>Preservação de cor padrão: Mantém as cores da imagem de origem sempre que as imagens contêm informações de espaço de cor; não há conversão de cores. Quase todas as imagens hoje têm o perfil de cor apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cor incorporado, as cores serão convertidas em espaço de cor sRGB (azul verde padrão). sRGB é o espaço de cores recomendado para exibir imagens em páginas da Web.</li><li>Manter espaço de cor original: Mantém as cores originais sem qualquer conversão de cores no momento. Para imagens sem um perfil de cor incorporado, qualquer conversão de cor é feita usando os perfis de cor padrão definidos nas configurações de Publicação. Os perfis de cores podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Os menus Personalizado de > Para<br> abre para que você possa escolher um espaço de cores Converter de e Converter em. Essa opção avançada substitui todas as informações de cores incorporadas no arquivo de origem. Selecione essa opção quando todas as imagens que você está enviando contiverem dados de perfil de cor incorretos ou ausentes.</li></ul> |
+|  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. A quantidade de imagens cortadas depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você digitar 75 nas caixas de texto Superior, Direita, Inferior e Esquerda, meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direita, Inferior e Esquerda para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar com base em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para aparar com base na cor, especifique 0 para recortar os pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferenças de cor.<br>Para aparar com base na transparência, especifique 0 para cortar pixels somente se eles forem transparentes. Números mais próximos a 1 permitem mais transparência.</li></ul><br>Observe que essas opções de corte não são destrutivas. |
+|  | Opções de perfil de cor | Escolha uma conversão de cores ao criar arquivos otimizados usados para entrega:<ul><li>Preservação de cor padrão: Mantém as cores da imagem de origem sempre que as imagens contêm informações de espaço de cor; não há conversão de cores. Quase todas as imagens hoje têm o perfil de cor apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cor incorporado, as cores serão convertidas em espaço de cor sRGB (azul verde padrão). O sRGB é o espaço de cores recomendado para exibir imagens em páginas da Web.</li><li>Manter espaço de cor original: Mantém as cores originais sem qualquer conversão de cores no momento. Para imagens sem um perfil de cor incorporado, qualquer conversão de cor é feita usando os perfis de cor padrão configurados nas configurações de Publicação. Os perfis de cores podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Os menus Personalizado de > Para<br> abre para que você possa escolher um espaço de cores Converter de e Converter em. Essa opção avançada substitui todas as informações de cores incorporadas no arquivo de origem. Selecione essa opção quando todas as imagens que você está enviando contiverem dados de perfil de cor incorretos ou ausentes.</li></ul> |
 |  | Opções de edição de imagens | É possível preservar as máscaras de recorte em imagens e escolher um perfil de cor.<br> Consulte [Configuração de opções de edição de imagens no upload](#setting-image-editing-options-at-upload). |
 |  | Opções de Postscript | Você pode rasterizar arquivos PostScript®, cortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload do PostScript e do Illustrator. |
 |  | Opções do Photoshop | Você pode criar modelos a partir de arquivos do Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Observe que os modelos não são suportados no AEM.<br> Consulte [Configuração de opções](#setting-photoshop-upload-options)de upload do Photoshop. |
 |  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cor.<br> Observe que o AEM não oferece suporte a eCatalogs. <br> Consulte [Configuração de opções](#setting-pdf-upload-options)de upload de PDF. |
 |  | Opções do Illustrator | Você pode rasterizar arquivos do Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload do PostScript e do Illustrator. |
 |  | Opções de vídeo | Você pode transcodificar um arquivo de vídeo escolhendo uma predefinição de vídeo.<br> Consulte [Configuração de opções](#setting-evideo-upload-options)de upload de eVideo. |
-|  | Predefinições de Conjunto de Lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Predefinições de configuração/conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
+|  | Predefinições de Conjunto de Lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Predefinições de Configuração de aplicativo/Conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
 
 #### Definir opções de edição de imagem no upload {#setting-image-editing-options-at-upload}
 
-Ao carregar arquivos de imagem, incluindo arquivos AI, EPS e PSD, você pode realizar as seguintes ações de edição na caixa de diálogo Opções [!UICONTROL de trabalho de] upload:
+Ao fazer upload de arquivos de imagem, incluindo arquivos AI, EPS e PSD, você pode realizar as seguintes ações de edição na caixa de diálogo Opções [!UICONTROL de trabalho de] upload:
 
 * Recorte o espaço em branco da borda das imagens (consulte a descrição na tabela acima).
 * Recorte manualmente das laterais das imagens (consulte a descrição na tabela acima).
@@ -212,7 +212,7 @@ Ao carregar arquivos de imagem, incluindo arquivos AI, EPS e PSD, você pode rea
 
 #### Definir opções de upload do PostScript e do Illustrator {#setting-postscript-and-illustrator-upload-options}
 
-Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cor. As opções para a formatação de arquivos PostScript e Illustrator estão disponíveis na caixa de diálogo Opções [!UICONTROL de trabalho de] upload, em Opções  PostScript e Opções [!UICONTROL do]Illustrator.
+Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cor. As opções para a formatação de arquivos PostScript e Illustrator estão disponíveis na caixa de diálogo Opções [!UICONTROL de trabalho de] upload, em Opções [!UICONTROL de] PostScript e Opções [!UICONTROL do]Illustrator.
 
 | Opção | Subopção | Descrição |
 |---|---|---|
@@ -229,7 +229,7 @@ Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode 
 
 Os arquivos PSD (Photoshop Document) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela Carregar).
 
-O Dynamic Media cria várias imagens de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
+O Dynamic Media cria várias imagens a partir de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
 
 Use as Opções [!UICONTROL de] corte e as Opções [!UICONTROL de perfil de]cor, descritas acima, com as opções de upload do Photoshop.
 
@@ -244,7 +244,7 @@ Use as Opções [!UICONTROL de] corte e as Opções [!UICONTROL de perfil de]cor
 | Extrair texto |  | Extrai o texto para que os usuários possam pesquisar por texto em um Visualizador. |
 | Estender camadas ao tamanho do plano de fundo |  | Estende o tamanho das camadas de imagem recortadas até o tamanho da camada de plano de fundo. |
 | Nomenclatura de camada |  | As camadas no arquivo PSD são carregadas como imagens separadas. |
-|  | Nome da camada | Nomeia as imagens após seus nomes de camada no arquivo PSD. Por exemplo, uma camada chamada Tag de preço no arquivo PSD original se torna uma imagem chamada Tag de preço. Entretanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD, não seus nomes de camada padrão. |
+|  | Nome da camada | Nomeia as imagens após seus nomes de camada no arquivo PSD. Por exemplo, uma camada chamada Tag de preço no arquivo PSD original se torna uma imagem chamada Tag de preço. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD, não seus nomes de camada padrão. |
 |  | Photoshop e número de camada | Nomeia as imagens após seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo do Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado Spring Ad.psd é chamada Spring Ad_2 mesmo se ela tiver um nome não padrão no Photoshop. |
 |  | Photoshop e nome de camada | Nomeia as imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada será usado se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop. Por exemplo, uma camada chamada Marca de preço em um arquivo PSD chamado SpringAd é chamada Marca Ad_Price Primavera. Uma camada com o nome padrão Camada 2 é chamada Primavera Ad_2. |
 | Âncora |  | Especifique como as imagens são ancoradas em modelos gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que as imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. Imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se o aplicativo exigir as imagens de substituição para preencher o espaço alocado no modelo. |
@@ -278,8 +278,8 @@ Para transcodificar um arquivo de vídeo escolhendo uma variedade de predefiniç
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Vídeo adaptável |  | Uma única predefinição de codificação que funciona com qualquer proporção para criar vídeos para entrega em dispositivos móveis, tablets e desktops. Os vídeos de origem carregados codificados com essa predefinição são definidos com uma altura fixa. Entretanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação de vídeo adaptável. |
-| Predefinições de codificação única | Classificar predefinições de codificação | Selecione Nome ou Tamanho para classificar as predefinições de codificação listadas em Desktop, Móvel e Tablet por nome ou tamanho de resolução. |
+| Vídeo adaptável |  | Uma única predefinição de codificação que funciona com qualquer proporção para criar vídeos para entrega em dispositivos móveis, tablets e desktops. Os vídeos de origem carregados que são codificados com essa predefinição são definidos com uma altura fixa. Entretanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação de vídeo adaptável. |
+| Predefinições de codificação única | Classificar predefinições de codificação | Selecione Nome ou Tamanho para classificar as predefinições de codificação listadas em Desktop, Móvel e Tablet por nome ou por tamanho de resolução. |
 |  | Área de trabalho | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo para computadores desktop.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 |  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android.Selecione uma ou mais proporções com o tamanho de resolução e a taxa de dados de destino desejados. |
 |  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android.Selecione uma ou mais proporções com o tamanho de resolução e a taxa de dados de destino desejados. |
@@ -288,11 +288,11 @@ Para transcodificar um arquivo de vídeo escolhendo uma variedade de predefiniç
 
 Se quiser criar automaticamente um Conjunto de imagens ou um Conjunto de rotação a partir de imagens carregadas, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição.
 
- Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.
+Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.
 
 ### Carregamentos em fluxo {#streamed-uploads}
 
-Se você fizer upload de muitos ativos para o AEM, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até mesmo fazer com que algumas tarefas de upload sejam encerradas. O AEM Assets oferece suporte ao upload simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de carregamento de grandes ativos e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado nos ativos AEM.
+Se você fizer upload de muitos ativos para o AEM, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até mesmo fazer com que algumas tarefas de upload sejam encerradas. O AEM Assets oferece suporte ao upload simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado nos ativos AEM.
 
 >[!NOTE]
 >
@@ -310,7 +310,7 @@ Após a extração ser concluída, o AEM notifica você na área de notificaçã
 
 Algumas limitações do recurso são:
 
-* Se uma pasta com o mesmo nome existir no destino, os ativos do arquivo ZIP serão extraídos na pasta existente.
+* Se existir uma pasta com o mesmo nome no destino, os ativos do arquivo ZIP serão extraídos na pasta existente.
 * Se você cancelar a extração, os ativos já extraídos não serão excluídos.
 * Não é possível selecionar dois arquivos ZIP ao mesmo tempo e extraí-los. Você só pode extrair um arquivo ZIP por vez.
 * Ao carregar um arquivo ZIP, se a caixa de diálogo de upload exibir um erro de servidor 500, tente novamente após instalar o service pack mais recente.
@@ -324,7 +324,7 @@ Para visualizar um ativo, siga estas etapas.
 
 1. No modo de visualização, as opções de zoom estão disponíveis para os tipos [de imagem](/help/assets/assets-formats.md#supported-raster-image-formats) suportados (com edição interativa).
 
-   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao aplicar zoom, você pode observar cuidadosamente qualquer área da imagem ao aplicar panorama. A seta para redefinir zoom leva você de volta à exibição original.
+   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta para redefinir zoom leva você de volta à exibição original.
 
    ![uploadicon](assets/uploadicon.png)
 
@@ -392,7 +392,7 @@ Alguns atributos exclusivos a uma cópia específica de um ativo não são trans
 
 As outras propriedades e informações de metadados são mantidas. Uma cópia parcial não é criada ao copiar um ativo.
 
-1. Na interface do usuário do Assets, selecione um ou mais ativos e toque/clique no ícone **[!UICONTROL Copiar]** da barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** no cartão de ativos.
+1. Na interface do usuário do Assets, selecione um ou mais ativos e, em seguida, toque/clique no ícone **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** no cartão de ativos.
    ![copy_icon](assets/copy_icon.png)
 
    >[!NOTE]
@@ -431,7 +431,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >* Ao renomear, o espaço em branco não é permitido no nome do arquivo.
 
 
-1. Na caixa de diálogo **[!UICONTROL Selecionar destino]** , siga um destes procedimentos:
+1. Na caixa de diálogo **[!UICONTROL Selecionar destino]** , execute um dos procedimentos a seguir:
 
    * Navegue até o novo local dos ativos e toque/clique em **[!UICONTROL Avançar]** para continuar.
 
@@ -540,7 +540,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 >
 >Para obter mais informações específicas do Dynamic Media, consulte [Publicação de ativos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
-1. Navegue até o local dos ativos/pastas que deseja publicar
+1. Navegue até o local do(s) ativo(s)/pasta que deseja publicar
 
 1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque/clique no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas/não foram publicadas são exibidas. Escolha as referências que deseja publicar.
@@ -555,11 +555,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 >[!CAUTION]
 >
->Se você publicar ativos que estão sendo processados, somente o conteúdo original será publicado. As execuções estão faltando. Aguarde a conclusão do processamento e publique ou republique o ativo quando o processamento for concluído.
+>Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As execuções estão faltando. Aguarde a conclusão do processamento e publique ou republique o ativo quando o processamento for concluído.
 
 ## Cancelar publicação de ativos {#unpublishing-assets}
 
-1. Navegue até o local da pasta de ativos/ativos que deseja remover do ambiente de publicação (cancelar publicação).
+1. Navegue até o local da pasta de ativos/ativos que deseja remover do ambiente de publicação (cancelar a publicação).
 
 1. Selecione o ativo/pasta para cancelar a publicação e toque/clique no ícone **[!UICONTROL Gerenciar publicação]** na barra de ferramentas.
 
@@ -604,7 +604,7 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
 
 ## Pesquisar ativos {#assetsearch}
 
-Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos pelos usuários e comerciantes de negócios ou para administração por administradores de DAM.
+Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos por parte de usuários e comerciantes, ou para administração por administradores de DAM.
 
 Para obter pesquisas simples, avançadas e personalizadas para descobrir e usar os ativos mais apropriados, consulte Ativos de [pesquisa no AEM](search-assets.md).
 
@@ -613,13 +613,13 @@ Para obter pesquisas simples, avançadas e personalizadas para descobrir e usar 
 Os ícones de ação rápida estão disponíveis para um único ativo por vez. Dependendo do seu dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
 
 * Dispositivos de toque: Toque e segure. Por exemplo, em um iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
-* Dispositivos não sensíveis ao toque: Ponteiro do mouse. Por exemplo, em um dispositivo desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
+* Dispositivos não sensíveis ao toque: Passe o ponteiro do mouse. Por exemplo, em um dispositivo de desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
 
 ### Navegar e selecionar ativos {#navigating-and-selecting-assets}
 
 Você pode exibir, navegar e selecionar ativos com qualquer uma das exibições disponíveis (Cartão, Coluna e Lista) usando a opção **[!UICONTROL Selecionar]** .
 
-Na exibição de lista e na exibição de coluna, a opção **[!UICONTROL Selecionar]** é exibida quando você passa o ponteiro sobre a miniatura do ativo.
+Na exibição de lista e na exibição de coluna, a opção **[!UICONTROL Selecionar]** é exibida quando você passa o ponteiro do mouse sobre a miniatura do ativo.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
@@ -635,7 +635,7 @@ Para obter mais informações, consulte [Exibir e selecionar seus recursos](/hel
 
 ## Editar imagens {#editing-images}
 
-As ferramentas de edição na interface do AEM Assets permitem executar pequenos trabalhos de edição em ativos de imagem. Você pode cortar, girar, virar e executar outras tarefas de edição em imagens. Também é possível adicionar mapas de imagem a ativos.
+As ferramentas de edição na interface do AEM Assets permitem executar pequenos trabalhos de edição em ativos de imagem. É possível recortar, girar, virar e executar outras tarefas de edição em imagens. Também é possível adicionar mapas de imagem a ativos.
 
 >[!NOTE]
 >
@@ -679,7 +679,7 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
 
 >[!NOTE]
 >
->A edição de imagens é compatível com os formatos BMP, GIF, PNG e JPEG.
+>A edição de imagens é compatível com os formatos de arquivos BMP, GIF, PNG e JPEG.
 
 Também é possível adicionar mapas de imagem usando o editor de imagens. Para obter detalhes, consulte [Adicionar mapas](/help/assets/image-maps.md)de imagem.
 
@@ -707,13 +707,13 @@ A linha do tempo permite exibir vários eventos de um item selecionado, como flu
 
 Anotações são comentários ou notas explicativas adicionadas a imagens ou vídeos. As anotações fornecem aos comerciantes a capacidade de colaborar e deixar feedback sobre os ativos.
 
-As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo suportados pelo AEM Assets dependem do navegador.
+As anotações de vídeo são compatíveis apenas em navegadores com formatos de vídeo compatíveis com HTML5. Os formatos de vídeo compatíveis com o AEM Assets dependem do navegador.
 
 >[!NOTE]
 >
 >Para Fragmentos de conteúdo, [as anotações são criadas no editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)de fragmentos.
 
-1. Navegue até o local do ativo ao qual deseja adicionar anotações.
+1. Navegue até o local do ativo ao qual você deseja adicionar anotações.
 1. Toque/clique no ícone **[!UICONTROL Anotar]** de um dos seguintes:
 
    * [Ações rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
@@ -757,7 +757,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
 >[!NOTE]
 >
->Também é possível adicionar anotações a uma coleção. No entanto, se uma coleção contiver coleções secundárias, você poderá adicionar anotações/comentários somente à coleção pai. A opção Anotar não está disponível para coleções secundárias.
+>Também é possível adicionar anotações a uma coleção. No entanto, se uma coleção contiver coleções-filho, você poderá adicionar anotações/comentários somente à coleção-pai. A opção Anotar não está disponível para coleções filhas.
 
 ### Exibir anotações salvas {#viewing-saved-annotations}
 
@@ -803,7 +803,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    ![chlimage_1-244](assets/chlimage_1-40.png)
 
-1. Na caixa de diálogo Imprimir, escolha a posição que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se desejar que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Superior esquerda** . Está selecionado por padrão.
+1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se desejar que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Superior esquerda** . Está selecionado por padrão.
 
    ![Selecione a posição do status de anotação/revisão para exibir no PDF na caixa de diálogo Imprimir](assets/Print-annotation-dialog.png)
 
@@ -836,7 +836,7 @@ Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas n
 1. Abra a página de configuração do serviço CQ-DAM-Handler-Gibson Font Manager do URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Para configurar o serviço CQ-DAM-Handler-Gibson Font Manager, execute um dos seguintes procedimentos:
 
-   * Na opção de diretório Fontes do sistema, especifique o caminho completo para o diretório de fontes no sistema. Por exemplo, se você for um usuário do Mac, poderá especificar o caminho como */Library/Fonts* na opção de diretório System Fonts. O AEM busca as fontes desse diretório.
+   * Na opção de diretório Fontes do sistema, especifique o caminho completo para o diretório de fontes no sistema. Por exemplo, se você for um usuário do Mac, poderá especificar o caminho como */Library/Fonts* na opção de diretório System Fonts (Fontes do sistema). O AEM busca as fontes desse diretório.
    * Crie um diretório nomeado `fonts` dentro da ``crx-quickstart`` pasta. O serviço CQ-DAM-Handler-Gibson Font Manager busca automaticamente as fontes no local `crx-quickstart/fonts`. Você pode substituir esse caminho padrão na opção de diretório Fontes do Adobe Server.
 
    * Crie uma nova pasta para fontes em seu sistema e armazene as fontes desejadas na pasta. Em seguida, especifique o caminho completo para essa pasta na opção de diretório Fontes do cliente.
@@ -899,7 +899,7 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![version_option](assets/versions_option.png)
 
-1. Selecione uma versão específica do ativo para visualizá-lo ou permitir que ele apareça na interface do usuário do Assets.
+1. Selecione uma versão específica para o ativo para visualizá-lo ou permitir que ele apareça na interface do usuário do Assets.
 
    ![select_version](assets/select_version.png)
 
