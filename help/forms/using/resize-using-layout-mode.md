@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cc4b667bb20622949c71eee64b07d679109482c1
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -42,8 +42,8 @@ Selecione **Layout** na lista suspensa que é exibida na parte superior da inter
 
    A barra de ferramentas que é exibida após tocar nos componentes consiste nas seguintes opções:
 
-   * **** Pai: Selecione o pai de um componente.
-   * **** Flutuar para nova linha: Alterne o componente para a linha seguinte se houver vários componentes dentro da mesma linha.
+   * **Pai:** Selecione o pai de um componente.
+   * **Flutuar para nova linha:** Alterne o componente para a linha seguinte se houver vários componentes dentro da mesma linha.
    Você pode desfazer todas as alterações de redimensionamento e aplicar o layout padrão ao painel que contém componentes redimensionados usando a opção **[!UICONTROL Reverter layout]** do ponto de interrupção ( ![Reverter ponto de interrupção](assets/reverttopreviouslypublishedversion.png)). Toque no pai do componente redimensionado para exibir a opção.
 
    >[!NOTE]
@@ -52,7 +52,7 @@ Selecione **Layout** na lista suspensa que é exibida na parte superior da inter
 
 ### Exemplo {#example}
 
-**** Objetivo: Você deseja inserir um componente de tabela e um componente de Imagem e posicioná-los paralelamente entre si em uma Comunicação interativa.
+**Objetivo:** Você deseja inserir um componente de tabela e um componente de Imagem e posicioná-los paralelamente entre si em uma Comunicação interativa.
 
 1. Insira os componentes de tabela e imagem usando o modo Editar no canal da Web. O componente de imagem é exibido após o componente de tabela.
 1. Alterne para o modo Layout e toque no componente Tabela. Os pontos azuis para redimensionar o componente são exibidos nas colunas 1 e 12.
@@ -76,6 +76,20 @@ Execute as seguintes etapas se quiser redimensionar o painel inteiro em vez de c
 
 1. Arraste e solte os pontos azuis para definir a posição do painel na grade responsiva.
 Você pode repetir as etapas 1 e 2 e selecionar ![Selecionar pai](assets/float_to_new_line_icon.svg) para deslocar o painel redimensionado para a linha seguinte.
+
+## Definir o layout de várias colunas para um painel
+
+Execute as seguintes etapas para definir o número de colunas de um painel:
+
+1. No modo **[!UICONTROL Editar]** , toque no painel, selecione ![Configurar](assets/configure_icon.png)e selecione **[!UICONTROL Responsivo - tudo na página sem a opção de navegação]** .
+
+1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+
+1. No modo **[!UICONTROL Layout]** , toque em qualquer um dos componentes no painel que você deseja redimensionar, selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione a primeira opção na lista suspensa, se o painel for o pai imediato do componente.
+
+1. Toque em ![várias colunas](assets/multi-column.svg) e selecione o número de colunas na lista suspensa. O número de colunas pode variar de 1 a 12. O painel é dividido em um layout de várias colunas.
+
+![várias colunas no modo de layout](assets/multi-column-layout.png)
 
 ## Habilitar a nova grade responsiva para layouts responsivos antigos {#enableresponsivegrid}
 
@@ -102,7 +116,7 @@ Para ativar o modo Layout, selecione **Layout** na lista suspensa que aparece na
 
 ## Desativar o modo Layout para formulários com layout responsivo antigo {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
-É possível desativar o modo Layout para formulários com layout responsivo antigo editando as propriedades do modelo usado no formulário.
+É possível desativar o modo Layout para formulários com layout responsivo antigo editando as propriedades para o modelo usado no formulário.
 
 Execute as seguintes etapas para desativar o modo Layout:
 
