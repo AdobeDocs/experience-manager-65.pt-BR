@@ -1,6 +1,6 @@
 ---
-title: Sua Caixa de entrada
-seo-title: Sua Caixa de entrada
+title: 'Sua Caixa de entrada  '
+seo-title: 'Sua Caixa de entrada  '
 description: Gerenciar suas tarefas com a caixa de entrada
 seo-description: Gerenciar suas tarefas com a caixa de entrada
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,12 +10,12 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
 
-# Sua Caixa de entrada{#your-inbox}
+# Sua Caixa de entrada  {#your-inbox}
 
 Você pode receber notificações de diversas áreas do AEM, incluindo fluxos de trabalho e projetos; por exemplo, sobre:
 
@@ -69,22 +69,22 @@ O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo
 * Permitir coleta de dados estatísticos de uso agregados
 * [Configurar HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Abrir a Caixa de entrada {#opening-the-inbox}
+## Abrir a Caixa de entrada   {#opening-the-inbox}
 
 Para abrir a caixa de entrada de notificação do AEM:
 
 1. Clique/toque no indicador na barra de ferramentas.
 
 1. Selecione **Exibir todos**. A **Caixa de entrada do AEM** será aberta. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
-1. A exibição padrão é a [Exibição de lista](#inbox-list-view), mas você também pode alternar para a [Visualização do calendário](#inbox-calendar-view). Isso é feito com o seletor de exibição (barra de ferramentas, canto superior direito).
+1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
 
    Para ambas as exibições você também pode definir [Configurações de exibição](#inbox-view-settings); as opções disponíveis dependem da exibição atual.
 
-   ![wf-79](assets/wf-79.png)
+   ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) or [Search](/help/sites-authoring/search.md) to navigate to another location when you are finished.
+>A caixa de entrada funciona como um console, portanto, use [Navegação global](/help/sites-authoring/basic-handling.md#global-navigation) ou [Pesquisar](/help/sites-authoring/search.md) para navegar para outro local quando terminar.
 
 ### Caixa de entrada - exibição de lista {#inbox-list-view}
 
@@ -109,7 +109,7 @@ Essa exibição apresenta itens de acordo com sua posição no calendário e a e
 
 ![wf-91](assets/wf-91.png)
 
-### Caixa de entrada - configurações de exibição {#inbox-view-settings}
+### Inbox - Settings {#inbox-view-settings}
 
 Para ambas as exibições (Lista e Calendário), você pode definir configurações:
 
@@ -126,9 +126,29 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
    Para a **Exibição de lista**, você pode configurar o mecanismo de classificação:
 
-   * **Classificar por**
+   * **Classificar campo**
    * **Ordem de classificação**
-   ![wf-83](assets/wf-83.png)
+   ![wf-83](assets/inbox-settings.png)
+
+### Caixa de entrada - Controle de administrador {#inbox-admin-control}
+
+Os usuários que fazem parte do grupo de administradores **de** fluxo de trabalho podem exibir a opção Controle de administrador na lista. Com essa opção, os administradores podem:
+
+* Defina personalizações para o texto e o logotipo disponíveis no cabeçalho.
+
+* Controle a exibição das opções de navegação disponíveis no cabeçalho e restrinja os usuários para alternar para o modo de criação do fluxo de trabalho ou navegar até Ajuda ou outros links da solução.
+
+![controle admin](assets/admin-control.png)
+
+* **Personalização da marca**
+
+   * **Personalizar o texto do cabeçalho:** Especifique o texto neste campo para substituir o texto existente do **Adobe Experience Manager** exibido no cabeçalho.
+
+   * **Personalizar logotipo:** Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a usando esse campo para substituir o logotipo do Adobe Experience Manager exibido no cabeçalho.
+
+* **Navegação do usuário**
+   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho, como a opção para navegar para outras soluções, o link Ajuda e as opções exibidas ao tocar no logotipo ou texto do Adobe Experience Manager.
+* **Salvar:** Toque/clique nesta opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
 
@@ -138,7 +158,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
    As ações são apropriadas ao item e incluem:
 
-   * **Concluir a ação; por exemplo, uma tarefa ou item de fluxo de trabalho.**
+   * **Concluir** ação; por exemplo, uma tarefa ou um item de fluxo de trabalho.
    * **Atribuir novamente**/**Delegar** um item.
    * **Abrir** um item; dependendo do tipo de item, essa ação pode:
 
@@ -197,7 +217,7 @@ Na caixa de entrada, você pode criar tarefas:
 
 1. Selecione **Enviar**.
 
-## Criação de um projeto {#creating-a-project}
+## Criação de um projeto   {#creating-a-project}
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
@@ -205,7 +225,7 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >Somente tarefas criadas usando a opção **Criar** da **Caixa de entrada** podem ser usadas para criar um projeto.
    >
    >Itens de trabalho (de um fluxo de trabalho) não podem ser usado para criar um projeto.
 
