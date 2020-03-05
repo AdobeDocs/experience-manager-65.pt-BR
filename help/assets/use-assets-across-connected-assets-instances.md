@@ -3,7 +3,7 @@ title: Usar ativos conectados para compartilhar ativos DAM no fluxo de trabalho 
 description: Use os ativos disponíveis em uma implantação remota dos ativos Adobe Experience Manager ao criar suas páginas da Web em outra implantação do Site do Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
+source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
 
 ---
 
@@ -27,15 +27,15 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 * Os usuários fazem parte de grupos de usuários apropriados em cada implantação.
 * Para os tipos de implantação do Adobe Experience Manager, um dos critérios suportados é atendido. Os ativos AEM 6.5 funcionam com o AEM como um serviço em nuvem. Para obter mais informações, consulte Funcionalidade de ativos [conectados no AEM como um serviço](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)em nuvem.
 
-   |  | AEM Sites como Cloud Service | AEM 6.5 Sites no AMS | Sites do AEM 6.5 no local |
+   |  | AEM Sites as a Cloud Service | AEM 6.5 Sites no AMS | Sites do AEM 6.5 no local |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Suportado | Suportado | Suportado |
-   | **AEM 6.5 Assets no AMS** | Não suportado | Suportado | Suportado |
+   | **AEM 6.5 Assets no AMS** | Suportado | Suportado | Suportado |
    | **Ativos no local do AEM 6.5** | Não suportado | Não suportado | Não suportado |
 
 ### Formatos de arquivo não suportados {#mimetypes}
 
-Os autores podem procurar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao `Download` componente e as imagens podem ser adicionadas ao `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer componente AEM personalizado que estende os componentes padrão `Download` ou `Image` . A lista de formatos suportados é:
+Os autores podem pesquisar por imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao `Download` componente e as imagens podem ser adicionadas ao `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer componente AEM personalizado que estende os componentes padrão `Download` ou `Image` . A lista de formatos suportados é:
 
 * **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagem são suportados pelos Ativos conectados. Os Componentes de Dynamic Media não são suportados.
 * **Formatos** de documento: Consulte Formatos [de documento compatíveis com os ativos](assets-formats.md#supported-document-formats)conectados.
@@ -74,7 +74,7 @@ Para configurar a conectividade dos ativos conectados e dos sites locais, siga e
    1. Credenciais de um distribuidor DAM (usuário técnico).
    1. No campo **[!UICONTROL Ponto]** de montagem, insira o caminho AEM local onde o AEM busca os ativos. Por exemplo, `remoteassets` pasta.
 
-   1. Ajuste os valores do Limite **[!UICONTROL de otimização da transferência binária]** original, dependendo da rede. Uma representação de ativo com um tamanho maior que esse limite é transferida de forma assíncrona.
+   1. Ajuste os valores do Limite **[!UICONTROL de otimização da transferência binária]** original, dependendo da sua rede. Uma representação de ativo com um tamanho maior que esse limite é transferida de forma assíncrona.
    1. Selecione **[!UICONTROL Armazenamento de dados compartilhado com ativos]** conectados se você usar um armazenamento de dados para armazenar seus ativos e o armazenamento de dados for o armazenamento comum entre as duas implantações do AEM. Nesse caso, o limite não importa, pois os binários de ativos reais residem no armazenamento de dados e não são transferidos.
    ![Uma configuração típica para ativos conectados](assets/connected-assets-typical-config.png)
 
@@ -97,7 +97,7 @@ Para configurar a conectividade dos ativos conectados e dos sites locais, siga e
 
    >[!NOTE]
    >
-   >Todas as renderizações disponíveis na implantação remota do AEM são buscadas, quando os autores buscam um ativo. Se quiser criar mais representações de um ativo buscado, pule esta etapa de configuração. O fluxo de trabalho do Ativo de atualização do DAM é acionado e cria mais execuções. Essas execuções estão disponíveis somente na implantação local de Sites e não na implantação remota de DAM.
+   >Todas as execuções que estão disponíveis na implantação remota do AEM são buscadas, quando os autores buscam um ativo. Se você quiser criar mais representações de um ativo buscado, pule esta etapa de configuração. O fluxo de trabalho do Ativo de atualização do DAM é acionado e cria mais execuções. Essas execuções estão disponíveis somente na implantação local de Sites e não na implantação remota de DAM.
 
 1. Adicione a instância do AEM Sites como uma das Origens **** permitidas na configuração remota do CORS do AEM Assets.
 
@@ -113,9 +113,9 @@ Os autores do site usam o Content Finder para se conectar à instância do DAM. 
 
 Os autores podem usar os ativos disponíveis em ambas as instâncias, DAM local e DAM remoto, em uma única página da Web. Use o Localizador de conteúdo para alternar entre a pesquisa no DAM local ou a pesquisa no DAM remoto.
 
-Somente as tags de ativos remotos que têm uma tag correspondente exata, com a mesma hierarquia de taxonomia, estão disponíveis na instância de Sites local. Quaisquer outras tags são descartadas. Os autores podem pesquisar ativos remotos usando todas as tags presentes na implantação remota do AEM, já que o AEM oferece uma pesquisa em texto completo.
+Somente as tags de ativos remotos que têm uma tag correspondente exata — com a mesma hierarquia de taxonomia — estão disponíveis na instância de Sites local. Quaisquer outras tags são descartadas. Os autores podem pesquisar ativos remotos usando todas as tags presentes na implantação remota do AEM, já que o AEM oferece uma pesquisa em texto completo.
 
-### Apresentação do uso {#walk-through-of-usage}
+### Progresso do uso {#walk-through-of-usage}
 
 Use a configuração acima para tentar a experiência de criação para entender como a funcionalidade funciona. Use documentos ou imagens de sua escolha na implantação remota do DAM.
 
@@ -141,7 +141,7 @@ Use a configuração acima para tentar a experiência de criação para entender
 
    *Figura: Notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.*
 
-1. Ao publicar uma página, o AEM exibe uma lista completa de ativos usados na página. Certifique-se de que os ativos remotos sejam buscados com êxito no momento da publicação. Para verificar o status de cada ativo obtido, consulte a interface do usuário de trabalhos [assíncronos](/help/assets/asynchronous-jobs.md) .
+1. Ao publicar uma página, o AEM exibe uma lista completa de ativos que são usados na página. Certifique-se de que os ativos remotos sejam buscados com êxito no momento da publicação. Para verificar o status de cada ativo obtido, consulte a interface do usuário de trabalhos [assíncronos](/help/assets/asynchronous-jobs.md) .
 
    >[!NOTE]
    >
@@ -153,7 +153,7 @@ Use a configuração acima para tentar a experiência de criação para entender
 
 Os ativos obtidos podem ser usados como qualquer outro ativo local, exceto que os metadados associados não podem ser editados.
 
-## Limitações  {#limitations}
+## Limitações   {#limitations}
 
 **Permissões e gerenciamento de ativos**
 
@@ -177,7 +177,7 @@ Os ativos obtidos podem ser usados como qualquer outro ativo local, exceto que o
 **Uso**
 
 * Somente a funcionalidade suportada é a pesquisa de ativos remotos e a arrastar os ativos remotos na página local para criar conteúdo.
-* A operação de busca expira após 5 segundos. Os autores podem ter problemas para buscar ativos, digamos se houver problemas de rede. Os autores podem tentar novamente arrastando o ativo remoto do [!UICONTROL Content Finder] para o [!UICONTROL Page Editor].
+* A operação de busca expira após 5 segundos. Os autores podem ter problemas para buscar ativos, digamos se houver problemas de rede. Os autores podem tentar novamente arrastando o ativo remoto do Localizador [!UICONTROL de] conteúdo para o Editor [!UICONTROL de]páginas.
 * Edições simples que não são destrutivas e a edição é suportada pelo componente AEM `Image` , podem ser feitas em ativos obtidos. Os ativos são somente leitura.
 
 ## Solução de problemas {#troubleshoot}
