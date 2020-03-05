@@ -3,7 +3,7 @@ title: Usar ativos conectados para compartilhar ativos DAM no fluxo de trabalho 
 description: Use os ativos disponíveis em uma implantação remota dos ativos Adobe Experience Manager ao criar suas páginas da Web em outra implantação do Site do Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
+source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
 
 ---
 
@@ -37,7 +37,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
 Os autores podem pesquisar por imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao `Download` componente e as imagens podem ser adicionadas ao `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer componente AEM personalizado que estende os componentes padrão `Download` ou `Image` . A lista de formatos suportados é:
 
-* **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagem são suportados pelos Ativos conectados. Os Componentes de Dynamic Media não são suportados.
+* **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagem são suportados pelos Ativos conectados. Imagens do Dynamic Media não são compatíveis.
 * **Formatos** de documento: Consulte Formatos [de documento compatíveis com os ativos](assets-formats.md#supported-document-formats)conectados.
 
 ### Users and groups involved {#users-and-groups-involved}
@@ -113,7 +113,7 @@ Os autores do site usam o Content Finder para se conectar à instância do DAM. 
 
 Os autores podem usar os ativos disponíveis em ambas as instâncias, DAM local e DAM remoto, em uma única página da Web. Use o Localizador de conteúdo para alternar entre a pesquisa no DAM local ou a pesquisa no DAM remoto.
 
-Somente as tags de ativos remotos que têm uma tag correspondente exata — com a mesma hierarquia de taxonomia — estão disponíveis na instância de Sites local. Quaisquer outras tags são descartadas. Os autores podem pesquisar ativos remotos usando todas as tags presentes na implantação remota do AEM, já que o AEM oferece uma pesquisa em texto completo.
+Somente as tags de ativos remotos que têm uma tag correspondente exata, com a mesma hierarquia de taxonomia, estão disponíveis na instância de Sites local. Quaisquer outras tags são descartadas. Os autores podem pesquisar ativos remotos usando todas as tags presentes na implantação remota do AEM, já que o AEM oferece uma pesquisa em texto completo.
 
 ### Progresso do uso {#walk-through-of-usage}
 
