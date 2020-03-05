@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas para gerenciar coleções de ativos, co
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 27fdeaf50255379fd6e5bb45eaf593cec895cd04
 
 ---
 
@@ -119,7 +119,7 @@ Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou 
 
 ## Editar uma coleção inteligente {#editing-a-smart-collection}
 
-As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa da pesquisa [](#editing-saved-searches)salva.
+As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa da pesquisa [](#saved-searches)salva.
 
 1. Na interface do usuário do Assets, toque/clique no ícone de pesquisa na barra de ferramentas.
 
@@ -209,11 +209,11 @@ Você pode editar configurações da coleção, como título e descrição, ou a
 
    >[!NOTE]
    >
-   >Também é possível excluir coleções inteligentes [excluindo pesquisas](#deleting-saved-searches)salvas.
+   >Também é possível excluir coleções inteligentes [excluindo pesquisas](#saved-searches)salvas.
 
 ## Baixar uma coleção {#downloading-a-collection}
 
-Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é baixada, incluindo pastas e coleções secundárias.
+Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é baixada, incluindo pastas e coleções-filho.
 
 1. No console Coleções, selecione uma ou mais coleções para baixar.
 1. Na barra de ferramentas, toque/clique no ícone de download.
