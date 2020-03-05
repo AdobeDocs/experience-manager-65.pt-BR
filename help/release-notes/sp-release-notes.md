@@ -87,7 +87,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * A contagem de resultados da pesquisa no canto superior direito não é atualizada corretamente quando a pesquisa é acionada do painel de filtros (NPR-31316).
 
-* Todas as caixas de seleção são desmarcadas ao desmarcar as caixas de seleção de segundo nível no filtro Tipo de arquivo e o texto na barra de pesquisa não está sincronizado com as propriedades selecionadas/não selecionadas (NPR-31287).
+* Todas as caixas de seleção são desmarcadas ao desmarcar as caixas de seleção de segundo nível no filtro Tipo de arquivo, e o texto na barra de pesquisa não está sincronizado com as propriedades selecionadas/não selecionadas (NPR-31287).
 
 * Não é possível remover todos os membros (utilizadores/grupos) da seção Membros de uma pasta; ao tentar remover todos os usuários, o usuário conectado é adicionado à lista (NPR-31171).
 
@@ -115,7 +115,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Grandes trabalhos de sling são criados e o banner Processamento é reexibido quando as ações realizadas em ativos do AEM são passadas para o Scene 7 (NPR-30947).
 
-* O conflito ocorre ao criar a Cópia de idioma dos ativos e os ativos não são carregados no Scene 7 (NPR-30932).
+* O conflito ocorre ao criar a Cópia de idioma dos ativos e os ativos não são carregados para o Scene 7 (NPR-30932).
 
 * As renderizações dinâmicas baixadas do AEM em execução no modo Híbrido do Dynamic Media estão quebradas (elas são do tipo de texto com o conteúdo &quot;não é possível localizar a imagem&quot; em vez do tipo de conteúdo da imagem) (NPR-30876).
 
@@ -129,7 +129,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Altura incorreta do contêiner de um modelo 3D carregado visualizado no DimensionalViewer na página Detalhes do ativo (CQ-4283309).
 
-* Não é possível reproduzir vídeos com o SmartCropVideoViewer no Internet Explorer 11 e no Safari (CQ-4281422).
+* Os vídeos não podem ser reproduzidos com o SmartCropVideoViewer no Internet Explorer 11 e no Safari (CQ-4281422).
 
 * O uso do botão mover para mover vários ativos, de uma pasta para outra, falha no AEM em execução no Dynamic Media - modo de execução cena7 (CQ-4280384).
 
@@ -147,7 +147,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Os arquivos PDF não são indexados e o conteúdo não é pesquisável (CQ-4278916).
 
-* Erro &quot;Grupo não listado pelo seletor de usuários: esperado &quot;falso para verdadeiro igual&quot; é observado ao adicionar o Grupo de usuários fechado com diferentes `principalName` e `authorizableId` (CQ-4278177).
+* Erro &quot;Grupo não listado pelo seletor de usuários: esperado &quot;falso para igual a verdadeiro&quot; é observado ao adicionar o Grupo de usuários fechado com diferentes `principalName` e `authorizableId` (CQ-4278177).
 
 * A Exibição de coluna da interface do usuário do Assets está mostrando todos os caminhos, independentemente do caminho raiz do locatário específico (CQ-4278175).
 
@@ -171,7 +171,7 @@ Alguns destaques principais desta versão do Service pack:
 * Para um novo Blueprint, se o número de registros for superior a 40, somente os primeiros 40 registros serão exibidos. O Blueprint exibe linhas em branco para o restante dos registros (NPR-31182).
 * Quando um usuário adiciona caracteres japoneses ou coreanos na propriedade de descrição de um menu, o menu exibe caracteres distorcidos para o texto em japonês e coreano. (NPR-31331).
 * O Editor de Rich Text (RTE) não permite inserir uma Tabela incorporada como um item de lista (NPR-30879).
-* Fora da caixa, andaime do Editor de Rich Text (RTE). aplica o tamanho da fonte em linha aos elementos, inesperadamente (NPR-31284).
+* Fora da caixa, andaime do Editor de Rich Text (RTE). aplica o tamanho da fonte embutida a elementos, inesperadamente (NPR-31284).
 * Quando um usuário foca nos campos do painel à esquerda e usa um atalho do teclado para colar o conteúdo, ele cola o conteúdo da área de transferência do editor de páginas em vez do conteúdo copiado dos campos do painel à esquerda (NPR-31172).
 * Quando um usuário adiciona um campo Upload de arquivo a um campo múltiplo, o caminho da imagem é armazenado no nó do componente em vez do nó de vários campos (NPR-30882).
 * A API ResponsiveGridExporter não retorna a interface com.day.cq.wcm.Foundation.model.impl.export.AllowedComponentsExporter. O pacote com.day.cq.wcm.Foundation.model.impl é declarado como pacote privado (NPR-31398).
@@ -197,7 +197,7 @@ Alguns destaques principais desta versão do Service pack:
 
 #### Plataforma {#platform}
 
-* A opção Mime type no console Web não funciona (NPR-31108).
+* A opção de tipo Mime no console da Web não funciona (NPR-31108).
 
 * O certificado do cliente não é aceito ao configurar o logon único (NPR-31165).
 
@@ -270,7 +270,7 @@ Alguns destaques principais desta versão do Service pack:
 
 **Gerenciamento de correspondência**
 
-* As legendas e dicas de ferramentas não são exibidas ao migrar letras do LiveCycle ES4SP1 para o AEM 6.5 (NPR-31615).
+* As legendas e dicas de ferramentas não são exibidas durante a migração de letras do LiveCycle ES4SP1 para o AEM 6.5 (NPR-31615).
 
 * **A formatação do fluxo de texto não é mais exibida uma mensagem de erro compatível** ao salvar letras como rascunhos (NPR-30463).
 
@@ -403,7 +403,7 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 
 Esta seção lista os recursos e recursos que foram marcados como obsoletos com o AEM 6.5.3.0. Os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma opção alternativa a ser usada.
 
-Recomenda-se que os clientes verifiquem se utilizam o recurso ou a capacidade na implantação atual e façam planos para alterar sua implementação para usar a opção alternativa.
+Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em sua implantação atual e façam planos para alterar sua implementação para usar a opção alternativa.
 
 | Área | Recurso | Substituição |
 |---|---|---|
