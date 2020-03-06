@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -28,14 +28,14 @@ Ao planejar uma atualização, as seguintes áreas de uma implementação precis
 
 ## Visão geral {#overview}
 
-1. **Detector** de padrões - execute o Detector de padrões conforme descrito no planejamento de atualização e descrito detalhadamente [nesta página](/help/sites-deploying/pattern-detector.md) para obter um relatório do detector de padrões que contenha mais detalhes sobre áreas que precisam ser abordadas além das APIs/pacotes indisponíveis na versão Target do AEM. O relatório de Detecção de padrão deve fornecer uma indicação de quaisquer incompatibilidades no código. Se não houver nenhuma, sua implantação já será compatível com a versão 6.5, você ainda poderá optar por fazer um novo desenvolvimento para utilizar a funcionalidade 6.5, mas não precisará apenas para manter a compatibilidade. Se houver incompatibilidades reportadas, você poderá optar por a) Executar no modo de compatibilidade e adiar seu desenvolvimento para novos recursos 6.5 ou compatibilidade, b) Decidir fazer o desenvolvimento após a atualização e passar para a etapa 2. Consulte Compatibilidade [retroativa no AEM 6.5](/help/sites-deploying/backward-compatibility.md) para obter mais detalhes.
+1. **Detector** de padrões - execute o Detector de padrões conforme descrito no planejamento de atualização e descrito detalhadamente [nesta página](/help/sites-deploying/pattern-detector.md) para obter um relatório do detector de padrões que contenha mais detalhes sobre áreas que precisam ser abordadas além das APIs/pacotes indisponíveis na versão Target do AEM. O relatório de Detecção de padrão deve fornecer uma indicação de quaisquer incompatibilidades no código. Se não houver nenhuma, sua implantação já será compatível com a versão 6.5, você ainda poderá optar por fazer um novo desenvolvimento para utilizar a funcionalidade 6.5, mas não precisará apenas para manter a compatibilidade. Se houver incompatibilidades reportadas, você poderá optar por a) Executar no modo de compatibilidade e adiar seu desenvolvimento para novos recursos 6.5 ou compatibilidade, b) Decidir fazer o desenvolvimento após a atualização e passar para a etapa 2. Consulte Compatibilidade [com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md) para obter mais detalhes.
 
 1. **Desenvolver base de código para 6.5 **- Criar uma ramificação ou repositório dedicado para a base de código para a versão do Target. Use as informações da Compatibilidade de pré-atualização para planejar áreas de código a serem atualizadas.
-1. **Compile com o pom de 6.5 Uber **- Atualize os POMs de base de código para apontar para o pod de 6.5 uber e compile o código para este.
+1. **Compile com o pom de 6.5 Uber **- Atualize os POMs de base de código para apontar para o pod de 6.5 uber e compile o código em relação a isso.
 1. **Atualizar personalizações** do AEM* - *Qualquer personalização ou extensão do AEM deve ser atualizada/validada para funcionar na versão 6.5 e adicionada à base de código 6.5. Inclui Formulários de pesquisa de interface do usuário, Personalizações de ativos, qualquer coisa que use /mnt/overlay
 
 1. **Implantação no ambiente** 6.5 - uma instância limpa do AEM 6.5 (Autor + Publicar) deve estar em um ambiente de Desenvolvimento/QA. A base de código atualizada e uma amostra representativa de conteúdo (da produção atual) devem ser implantadas.
-1. **Validação do controle de qualidade e correção** de erros - O controle de qualidade deve validar o aplicativo nas instâncias de Autor e Publicação do 6.5. Quaisquer erros encontrados devem ser corrigidos e confirmados para a base de códigos 6.5. Repita Dev-Cycle conforme necessário até que todos os erros sejam corrigidos.
+1. **Validação do controle de qualidade e correção** de erros - O controle de qualidade deve validar o aplicativo nas instâncias de Autor e Publicação da versão 6.5. Quaisquer erros encontrados devem ser corrigidos e confirmados para a base de códigos 6.5. Repita Dev-Cycle conforme necessário até que todos os erros sejam corrigidos.
 
 Antes de continuar com uma atualização, você deve ter uma base de código de aplicativo estável que tenha sido testada completamente em relação à versão de destino do AEM. Com base em observações feitas em testes, pode haver maneiras de otimizar o código personalizado. Isso pode incluir a refatoração do código para evitar atravessar o repositório, a indexação personalizada para otimizar a pesquisa ou o uso de nós não ordenados no JCR, entre outros.
 
@@ -52,7 +52,7 @@ Todos os códigos e configurações necessários para sua implementação do AEM
 
 ### Atualizar a versão do AEM Uber Jar {#update-the-aem-uber-jar-version}
 
-O AEM Uber jar inclui todas as APIs do AEM como uma única dependência no projeto do Maven `pom.xml`. É sempre uma prática recomendada incluir o Uber Jar como uma única dependência em vez de incluir dependências individuais da API do AEM. Ao atualizar a base de código, a versão do Uber Jar deve ser alterada para apontar para a versão de destino do AEM. Se o projeto foi desenvolvido em uma versão do AEM anterior à existência do Uber Jar, todas as dependências individuais da API do AEM devem ser removidas e substituídas por uma única inclusão do Uber Jar para a versão de destino do AEM. A base de código deve então ser recompilada em relação à nova versão do Uber Jar. Quaisquer APIs ou métodos obsoletos devem ser atualizados para serem compatíveis com a versão de destino do AEM.
+O AEM Uber jar inclui todas as APIs do AEM como uma única dependência no projeto do Maven `pom.xml`. É sempre uma prática recomendada incluir o Uber Jar como uma única dependência em vez de incluir dependências individuais da API do AEM. Ao atualizar a base de código, a versão do Uber Jar deve ser alterada para apontar para a versão de destino do AEM. Se o seu projeto foi desenvolvido em uma versão do AEM anterior à existência do Uber Jar, todas as dependências individuais da API do AEM devem ser removidas e substituídas por uma única inclusão do Uber Jar para a versão de destino do AEM. A base de código deve então ser recompilada em relação à nova versão do Uber Jar. Quaisquer APIs ou métodos obsoletos devem ser atualizados para serem compatíveis com a versão de destino do AEM.
 
 ```
 <dependency>
@@ -72,7 +72,7 @@ O uso de uma sessão administrativa por meio do AEM 6.0 `SlingRepository.loginAd
 
 Qualquer uso de consultas na base de códigos precisa ser testado minuciosamente como parte da atualização da base de códigos. Para clientes que atualizam do Jackrabbit 2 (versões do AEM anteriores à 6.0), isso é especialmente importante, pois o Oak não indexa o conteúdo automaticamente e talvez seja necessário criar índices personalizados. Se a atualização de uma versão do AEM 6.x for feita, as definições de índice Oak podem ter sido alteradas e podem afetar consultas existentes.
 
-Estão disponíveis várias ferramentas para analisar e inspecionar o desempenho da consulta:
+Várias ferramentas para analisar e inspecionar o desempenho da consulta estão disponíveis:
 
 * [Ferramentas de índice AEM](/help/sites-deploying/queries-and-indexing.md)
 
@@ -82,13 +82,13 @@ Estão disponíveis várias ferramentas para analisar e inspecionar o desempenho
 
 ### Classic UI Authoring {#classic-ui-authoring}
 
-A criação da interface de usuário clássica ainda está disponível no AEM 6.5, mas está sendo substituída. Mais informações podem ser encontradas [aqui](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Se seu aplicativo estiver em execução no ambiente de criação da interface clássica, é recomendável atualizar para o AEM 6.5 e continuar usando a interface clássica. A migração para a interface de usuário de toque pode ser planejada como um projeto separado a ser concluído em vários ciclos de desenvolvimento. Para usar a interface clássica no AEM 6.5, várias configurações OSGi precisam ser confirmadas na base de código. Mais detalhes sobre como configurar isso podem ser encontrados [aqui](/help/sites-administering/enable-classic-ui.md).
+A criação da interface de usuário clássica ainda está disponível no AEM 6.5, mas está sendo descontinuada. Mais informações podem ser encontradas [aqui](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Se seu aplicativo estiver em execução no ambiente de criação da interface clássica, é recomendável atualizar para o AEM 6.5 e continuar usando a interface clássica. A migração para a interface de usuário de toque pode ser planejada como um projeto separado a ser concluído em vários ciclos de desenvolvimento. Para usar a interface clássica no AEM 6.5, várias configurações OSGi precisam ser confirmadas na base de código. Mais detalhes sobre como configurar isso podem ser encontrados [aqui](/help/sites-administering/enable-classic-ui.md).
 
 ## Alinhar com a estrutura do repositório 6.5 {#align-repository-structure}
 
 Para facilitar as atualizações e garantir que as configurações não sejam substituídas durante uma atualização, o repositório é reestruturado na versão 6.4 para separar o conteúdo da configuração.
 
-Portanto, algumas configurações devem ser movidas para que não residam mais `/etc` como acontecia no passado. Para analisar o conjunto completo de preocupações de reestruturação do repositório que devem ser revisadas e acomodadas na atualização para o AEM 6.4, consulte Reestruturação do [repositório no AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+Portanto, algumas configurações devem ser movidas para que não residam mais `/etc` como acontecia no passado. Para analisar o conjunto completo de preocupações de reestruturação do repositório que devem ser revisadas e acomodadas na atualização para o AEM 6.4, consulte Reestruturação do [repositório no AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## Personalizações do AEM {#aem-customizations}
 
@@ -130,7 +130,7 @@ Você pode preparar personalizações para a interface do usuário do Assets exe
 
 ### Geração de IDs de ativos para ativos existentes {#generating-asset-ids-for-existing-assets}
 
-Para gerar IDs de ativos para ativos existentes, atualize os ativos ao atualizar sua instância do AEM para executar o AEM 6.5. Isso é necessário para habilitar o recurso [](/help/assets/touch-ui-asset-insights.md)Assets Insights. Para obter mais detalhes, consulte [Adicionar código](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)incorporado.
+Para gerar IDs de ativos para ativos existentes, atualize os ativos ao atualizar sua instância do AEM para executar o AEM 6.5. Isso é necessário para ativar o recurso [](/help/assets/touch-ui-asset-insights.md)Assets Insights. Para obter mais detalhes, consulte [Adicionar código](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)incorporado.
 
 Para atualizar ativos, configure o pacote Associate Asset IDs no console JMX. Dependendo do número de ativos no repositório, `migrateAllAssets` pode levar muito tempo. Nossos testes internos estimam aproximadamente uma hora para 125 mil ativos no TarMK.
 
@@ -187,7 +187,7 @@ Abaixo estão áreas críticas de qualquer implementação do AEM que devem ser 
    <td>Testando a implementação do AEM e o código associado na camada<br /> de publicação por meio do dispatcher. Deve incluir critérios para atualizações de página e invalidação de cache<br /> .</td>
   </tr>
   <tr>
-   <td>Criação</td>
+   <td>Criação  </td>
    <td>Testando a implementação do AEM e o código associado na camada Autor. Deve incluir páginas, criação de componentes e caixas de diálogo.</td>
   </tr>
   <tr>
@@ -196,7 +196,7 @@ Abaixo estão áreas críticas de qualquer implementação do AEM que devem ser 
   </tr>
   <tr>
    <td>Integrações com sistemas de terceiros</td>
-   <td>Quaisquer integrações de terceiros devem ser validadas nos níveis de Autor e Publicação.</td>
+   <td>Todas as integrações de terceiros devem ser validadas nos níveis de Autor e Publicação.</td>
   </tr>
   <tr>
    <td>Autenticação, segurança e permissões</td>
@@ -223,4 +223,4 @@ Abaixo estão áreas críticas de qualquer implementação do AEM que devem ser 
 
 ### Plano de teste e resultados do documento {#document-test-plan-and-results}
 
-Deve ser criado um plano de ensaio que abranja as áreas de ensaio de implementação acima referidas. Em muitos casos, fará sentido separar o plano de teste pelas listas de tarefas Autor e Publicar. Este plano de teste deve ser executado em ambientes de desenvolvimento, controle de qualidade e estágio antes da atualização dos ambientes de produção. Os resultados do teste e as métricas de desempenho devem ser capturados em ambientes mais baixos para fornecer comparação ao atualizar os ambientes de estágio e produção.
+Deve ser criado um plano de ensaio que abranja as áreas de ensaio de implementação acima referidas. Em muitos casos, fará sentido separar o plano de teste pelas listas de tarefas Autor e Publicar. Este plano de teste deve ser executado em ambientes de desenvolvimento, controle de qualidade e estágio antes da atualização dos ambientes de produção. Os resultados do teste e as métricas de desempenho devem ser capturados em ambientes mais baixos para fornecer comparação ao atualizar os ambientes de estágio e de produção.
