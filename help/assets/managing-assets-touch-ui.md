@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
+source-git-commit: 76fe7f99273139243e8944448ccfb013408b38de
 
 ---
 
@@ -562,8 +562,6 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque/clique no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas/não foram publicadas são exibidas. Escolha as referências que deseja publicar.
-
-   ![chlimage_1-225](assets/chlimage_1-21.png)
 
    >[!NOTE]
    >
