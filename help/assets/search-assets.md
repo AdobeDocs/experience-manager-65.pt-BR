@@ -4,25 +4,25 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c491b77dac1bf25b9e348ed12d16ed7894e5493e
 
 ---
 
 
 # Pesquisar ativos no AEM {#search-assets-in-aem}
 
-Os ativos Adobe Experience Manager (AEM) fornecem métodos robustos de descoberta de ativos que ajudam você a atingir uma velocidade de conteúdo mais alta. Suas equipes reduzem o tempo de comercialização com uma experiência de pesquisa inteligente e perfeita, usando recursos prontos para uso e métodos personalizados. Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos pelos usuários e comerciantes de negócios ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que você pode executar por meio da interface de usuário do AEM Assets ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
+Os ativos Adobe Experience Manager (AEM) fornecem métodos robustos de descoberta de ativos que ajudam você a atingir uma velocidade de conteúdo mais alta. Suas equipes reduzem o tempo de comercialização com uma experiência de pesquisa inteligente e perfeita, usando recursos prontos para uso e métodos personalizados. Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos por parte de usuários e comerciantes, ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que você pode executar por meio da interface de usuário do AEM Assets ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
 
 O AEM oferece suporte aos seguintes casos de uso e este artigo descreve o uso, os conceitos, as configurações, as limitações e a solução de problemas desses casos de uso.
 
 | Pesquisar ativos | Configuração e administração | Trabalhar com resultados de pesquisa |
 |---|---|---|
 | [Pesquisas básicas](#searchbasics) | [Índice de pesquisa](#searchindex) | [Classificar resultados](#sort) |
-| [Entender a interface de usuário de pesquisa](#searchui) | [Pesquisa visual ou de semelhança](#configvisualsearch) | [Verificar propriedades e metadados de um ativo](#checkinfo) |
+| [Compreender a interface de usuário de pesquisa](#searchui) | [Pesquisa visual ou de semelhança](#configvisualsearch) | [Verificar propriedades e metadados de um ativo](#checkinfo) |
 | [Sugestões de pesquisa](#searchsuggestions) | [Metadados obrigatórios](#mandatorymetadata) | [Download](#download) |
 | [Compreender os resultados e o comportamento da pesquisa](#searchbehavior) | [Modificar aspectos de pesquisa](#searchfacets) | [Atualizações de metadados em massa](#metadataupdates) |
 | [Classificação de pesquisa e aumento](#searchrank) | [Extração de texto](#extracttextupload) | [Coleções inteligentes](#collections) |
-| [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Previsões personalizadas](#custompredicates) | [Entenda resultados inesperados e solucione problemas](#troubleshoot-unexpected-search-results-and-issues) |
+| [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Previsões personalizadas](#custompredicates) | [Entenda os resultados inesperados e solucione problemas](#troubleshoot-unexpected-search-results-and-issues) |
 | [Pesquise de outras soluções e aplicativos](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicativo de desktop do AEM](#desktopapp)</li><li>[Imagens do Adobe Stock](#adobestock)</li><li>[Ativos do Dynamic Media](#dynamicmedia)</li></ul> |  |  |
 | [Seletor/seletor de ativos](#assetselector) |  |  |
 | [Limitações](#limitations) e [dicas](#tips) |  |  |
@@ -42,7 +42,7 @@ Familiarize-se com a interface de pesquisa e as ações disponíveis.
 
 *Figura: Noções básicas da interface de resultados da pesquisa de Ativos*
 
-**A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros (predicados) para limitar os resultados da pesquisa. **C.** Exiba arquivos, pastas ou ambos nos resultados da pesquisa. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. ************ F. Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G. Marque a caixa para selecionar todos os resultados da pesquisa.** H. Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. **Eu. Feche a pesquisa** J. Alterne entre a exibição do cartão e a exibição da lista.
+**A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros (predicados) para limitar os resultados da pesquisa. **C.** Exiba arquivos, pastas ou ambos nos resultados da pesquisa. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. **F.** Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G.** Marque a caixa para selecionar todos os resultados da pesquisa. **H.** Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. **Eu.** Feche a pesquisa **J.** Alterne entre a exibição do cartão e a exibição da lista.
 
 ### Aspectos de pesquisa dinâmica {#dynamicfacets}
 
@@ -50,7 +50,7 @@ Você pode descobrir os ativos desejados mais rapidamente a partir da página de
 
 ![Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.](assets/asset_search_results_in_facets_filters.png)
 
-*Figura:Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.*
+*Figura: Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.*
 
 ## Compreender os resultados e o comportamento da pesquisa {#searchbehavior}
 
@@ -72,7 +72,7 @@ O AEM pode pesquisar vários formatos de arquivo e os filtros de pesquisa podem 
 
 ### Resultados com e sem Tags inteligentes aprimoradas {#withsmarttags}
 
-Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
+Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave mulheres em execução. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
 
 * `woman running`
 * `woman.running`
@@ -99,7 +99,7 @@ Para receber sugestões para mais de uma palavra-chave de pesquisa, continue dig
 
 ![Digite várias palavras-chave para exibir sugestões que se ajustem a todas](assets/search_suggestionsmanykeywords.gif)
 
-*Figura:Digite várias palavras-chave para exibir sugestões que se ajustem a todas*
+*Figura: Digite várias palavras-chave para exibir sugestões que se ajustem a todas*
 
 ### Classificação de pesquisa e aumento {#searchrank}
 
@@ -131,7 +131,7 @@ O AEM fornece vários métodos, como filtros, que se aplicam aos ativos pesquisa
 
 ![Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros](assets/search_folder_select.gif)
 
-*Figura:Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros*
+*Figura: Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros*
 
 ### Localizar imagens semelhantes {#visualsearch}
 
@@ -139,7 +139,7 @@ Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usu
 
 ![Localizar imagens semelhantes usando a opção na exibição de cartão](assets/search_find_similar.png)
 
-*Figura:Localizar imagens semelhantes usando a opção na exibição de cartão*
+*Figura: Localizar imagens semelhantes usando a opção na exibição de cartão*
 
 ### Imagens do Adobe Stock {#adobestock}
 
@@ -166,7 +166,7 @@ Você pode pesquisar ativos com base nos valores exatos de campos de metadados e
 | Criado | criado:AAAA-MM-DDTHH |
 | Data de expiração | expira:AAAA-MM-DDTHH |
 | Hora | hora única:AAAA-MM-DTHH |
-| Hora de desligar | tempo limite:AAAA-MM-DTHH |
+| Hora de desligar | offtime:YYYY-MM-DTHH |
 | Intervalo de tempo(expira em dateontime,offtime) | campo de faceta : limite inferior...upperbound |
 | Caminho | /content/dam/&lt;nome da pasta> |
 | Título do PDF | pdftitle: &quot;Adobe Document&quot; |
@@ -209,7 +209,7 @@ Usuários e comerciantes de linha de negócios usam o Brand Portal para comparti
 
 ### Pesquisar imagens do Adobe Stock {#adobestock-1}
 
-Na interface do usuário do AEM, os usuários podem pesquisar ativos do Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch. Você também pode usar o painel **[!UICONTROL Filtros]** para localizar todos os ativos licenciados ou não ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock. Consulte [Gerenciar imagens do Adobe Stock no AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Na interface do usuário do AEM, os usuários podem pesquisar ativos do Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch. Você também pode usar o painel **[!UICONTROL Filtros]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock. Consulte [Gerenciar imagens do Adobe Stock no AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Pesquisar ativos do Dynamic Media {#dynamicmedia}
 
@@ -236,7 +236,7 @@ Você pode passar os seguintes parâmetros de solicitação em um URL para inici
 | sufixo do recurso (B) | Caminho da pasta como o sufixo do recurso no URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Para iniciar o seletor de ativos com uma pasta específica selecionada, por exemplo, com a pasta `/content/dam/we-retail/en/activities` selecionada, o URL deve ser do formato: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Se você precisar que uma pasta específica seja selecionada quando o seletor de ativos for iniciado, passe-o como um sufixo de recurso. |
 | modo | único, múltiplo | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | No modo múltiplo, você pode selecionar vários ativos simultaneamente usando o seletor de ativos. |
 | mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) de um ativo (curinga também compatível) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Use-o para filtrar ativos com base em tipos MIME |
-| caixa de diálogo | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use esses parâmetros para abrir o seletor de ativos como Caixa de diálogo Granite. Essa opção só é aplicável quando você inicia o seletor de ativos por meio do campo Caminho de Granite e o configura como URL pickerSrc. |
+| caixa de diálogo | verdadeiro, falso | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use esses parâmetros para abrir o seletor de ativos como Caixa de diálogo Granite. Essa opção só é aplicável quando você inicia o seletor de ativos por meio do campo Caminho de Granite e o configura como URL pickerSrc. |
 | tipo de ativo (S) | imagens, documentos, multimídia, arquivos | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Use essa opção para filtrar os tipos de ativos com base no valor passado. |
 | root | &lt;caminho_da_pasta> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite que você selecione apenas ativos secundários (diretos/indiretos) na pasta raiz. |
 
@@ -244,9 +244,9 @@ Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[por
 
 ![Procurar e selecionar ativo no seletor de ativos](assets/assetpicker.png)
 
-*Figura:Procurar e selecionar ativo no seletor de ativos*
+*Figura: Procurar e selecionar ativo no seletor de ativos*
 
-## Limitações  {#limitations}
+## Limitações   {#limitations}
 
 O recurso de pesquisa nos ativos AEM tem as seguintes limitações:
 
@@ -285,9 +285,9 @@ Use aspas duplas em torno de palavras-chave para localizar ativos que contenham 
 
 ![Comportamento de pesquisa com e sem aspas](assets/search_with_quotes.gif)
 
-*Figura:Comportamento de pesquisa com e sem aspas*
+*Figura: Comportamento de pesquisa com e sem aspas*
 
-**Pesquisar com um asterisco** curinga: Para ampliar a pesquisa, use um asterisco antes ou depois da palavra de pesquisa para corresponder a qualquer número de caracteres. Por exemplo, a pesquisa por executar sem um asterisco não retorna ativos que contenham qualquer variação da palavra (incluindo nos metadados). Um asterisco substitui qualquer número de caracteres. Por exemplo,
+**Pesquisar com o curinga** de asterisco: Para ampliar a pesquisa, use um asterisco antes ou depois da palavra de pesquisa para corresponder a qualquer número de caracteres. Por exemplo, a pesquisa por executar sem um asterisco não retorna ativos que contenham qualquer variação da palavra (incluindo nos metadados). Um asterisco substitui qualquer número de caracteres. Por exemplo,
 
 * `run` retorna ativos com uma palavra-chave de execução exata
 * `run*` retorna ativos com execução, execução, desistência e assim por diante.
@@ -296,7 +296,7 @@ Use aspas duplas em torno de palavras-chave para localizar ativos que contenham 
 
 ![Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo](assets/search_with_asterisk_run.gif)
 
-*Figura:Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo*
+*Figura: Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo*
 
 **Pesquisa com curinga de ponto de interrogação**: Para ampliar a pesquisa, use um ou mais &#39;?&#39; caracteres para corresponder ao número exato de caracteres. Por exemplo, na ilustração a seguir,
 
@@ -308,13 +308,13 @@ Use aspas duplas em torno de palavras-chave para localizar ativos que contenham 
 
 ![Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo](assets/search_with_questionmark_run.gif)
 
-*Figura:Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo*
+*Figura: Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo*
 
 **Excluir uma palavra-chave**: Use o traço para procurar ativos que não contêm uma palavra-chave. Por exemplo, `running -shoe` a consulta retorna ativos que contêm `running`, mas não `shoe`. Da mesma forma, `camp -night` a consulta retorna ativos que contêm `camp` , mas não `night`. Observe que `camp-night` a consulta retorna ativos que contêm `camp` e `night`.
 
 ![Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída](assets/search_dash_exclude_keyword.gif)
 
-*Figura:Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída*
+*Figura: Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída*
 
 ## Tarefas de configuração e administração relacionadas à funcionalidade de pesquisa {#configadmin}
 
@@ -395,7 +395,7 @@ Depois de ver alguns ativos pesquisados que correspondem aos seus critérios, vo
 * Exibir propriedades de metadados e outras informações.
 * Baixe um ou mais ativos.
 * Use as Ações da área de trabalho para abrir esses ativos no aplicativo da área de trabalho.
-* Criar coleções inteligentes.
+* Crie coleções inteligentes.
 
 ### Classificar resultados pesquisados {#sort}
 
@@ -415,7 +415,7 @@ Para verificar os comentários em um ativo ou histórico de versão de um ativo,
 
 ![Classificar entradas de linha do tempo para um ativo de pesquisa](assets/sort_timeline_search_results.gif)
 
-*Figura:Classificar entradas de linha do tempo para um ativo de pesquisa*
+*Figura: Classificar entradas de linha do tempo para um ativo de pesquisa*
 
 ### Baixar ativos pesquisados {#download}
 
@@ -440,19 +440,19 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 
 | Erro, problemas, sintomas | Possível motivo | Possível correção ou compreensão do problema |
 |---|---|---|
-| Resultados incorretos ao procurar ativos com metadados ausentes |  Ao pesquisar ativos que não possuem os metadados obrigatórios, o AEM pode exibir alguns ativos que têm metadados válidos. Os resultados são baseados na propriedade de metadados indexados. | Após a atualização dos metadados, a reindexação é necessária para refletir o estado correto dos metadados dos ativos. Consulte metadados [](metadata-schemas.md#define-mandatory-metadata)obrigatórios. |
+| Resultados incorretos ao procurar ativos com metadados ausentes | Ao pesquisar ativos que não possuem os metadados obrigatórios, o AEM pode exibir alguns ativos que têm metadados válidos. Os resultados são baseados na propriedade de metadados indexados. | Após a atualização dos metadados, a reindexação é necessária para refletir o estado correto dos metadados dos ativos. Consulte metadados [](metadata-schemas.md#define-mandatory-metadata)obrigatórios. |
 | Muitos resultados de pesquisa | Parâmetro de pesquisa abrangente. | Considere limitar o [escopo da pesquisa](#scope). O uso de tags inteligentes pode fornecer mais resultados de pesquisa do que o esperado. Consulte Comportamento [de pesquisa com tags](#withsmarttags)inteligentes. |
 | Resultados de pesquisa não relacionados ou parcialmente relacionados | Alterações no comportamento da pesquisa com marcação inteligente. | Entenda [como a pesquisa muda após a marcação](#withsmarttags)inteligente. |
 | Nenhuma sugestão de preenchimento automático para ativos | Os ativos carregados recentemente ainda não estão indexados. Os metadados não estão disponíveis imediatamente como sugestões quando você começa a digitar uma palavra-chave de pesquisa na barra Omnisearch. | Os ativos AEM esperam até o término de um período limite (uma hora por padrão) antes de executar um trabalho em segundo plano para indexar os metadados de todos os ativos recentemente carregados ou atualizados e, em seguida, adicionam os metadados à lista de sugestões. |
-| Nenhum resultado de pesquisa | <ul><li>Não existem ativos que correspondam à sua consulta.</li><li>Você adicionou um espaço em branco antes da consulta de pesquisa.</li><li>Um campo de metadados não suportado contém a palavra-chave que você pesquisa.</li><li>O tempo de ativação e de desativação é configurado para o ativo e a pesquisa é feita durante o tempo de inatividade do ativo.</li></ul> | <ul><li>Pesquise usando uma palavra-chave diferente. Como alternativa, use a marcação (inteligente) para melhorar os resultados da pesquisa.</li><li>É uma limitação [](#limitations)conhecida.</li><li>Nem todos os campos de metadados são considerados para pesquisas. Consulte [escopo](#scope).</li><li>Pesquise posteriormente ou modifique os horários de ativação e desativação dos ativos necessários.</li></ul> |
+| Nenhum resultado de pesquisa | <ul><li>Não existem ativos que correspondam à sua consulta.</li><li>Você adicionou um espaço em branco antes da consulta de pesquisa.</li><li>Um campo de metadados não suportado contém a palavra-chave que você pesquisa.</li><li>O tempo de ativação e de desativação é configurado para o ativo e a pesquisa é feita durante o tempo de inatividade do ativo.</li></ul> | <ul><li>Pesquise usando uma palavra-chave diferente. Como alternativa, use a marcação (inteligente) para melhorar os resultados da pesquisa.</li><li>É uma limitação [](#limitations)conhecida.</li><li>Nem todos os campos de metadados são considerados para pesquisas. Consulte [escopo](#scope).</li><li>Pesquise mais tarde ou modifique os horários de ativação e desativação dos ativos necessários.</li></ul> |
 | O filtro de pesquisa/predicado não está disponível | <ul><li>O filtro de pesquisa não está configurado.</li><li>Ele não está disponível para seu logon.</li><li>(Menos provável) As opções de pesquisa não são personalizadas na implantação que você está usando.</li></ul> | <ul><li>Entre em contato com o administrador para verificar se as personalizações de pesquisa estão disponíveis ou não.</li><li>Entre em contato com o administrador para verificar se sua conta tem o privilégio/permissões para usar a personalização.</li><li>Entre em contato com o administrador e verifique as personalizações disponíveis para a implantação dos ativos AEM que você está usando.</li></ul> |
 | Ao procurar imagens visualmente semelhantes, uma imagem esperada está ausente | <ul><li>A imagem não está disponível no AEM.</li><li>A imagem não está indexada. Normalmente, quando é carregado recentemente.</li><li>A imagem não está com tags inteligentes.</li></ul> | <ul><li>Adicione a imagem aos ativos AEM.</li><li>Entre em contato com o administrador para indexar novamente o repositório. Além disso, verifique se você está usando o índice apropriado.</li><li>Entre em contato com o administrador para obter uma tag inteligente dos ativos relevantes.</li></ul> |
 | Ao procurar imagens visualmente semelhantes, uma imagem irrelevante é exibida | Comportamento da pesquisa visual. | O AEM exibe quantos ativos potencialmente relevantes forem possíveis. Imagens menos relevantes, se houver, são adicionadas aos resultados, mas com uma classificação de pesquisa mais baixa. A qualidade das correspondências e a relevância dos ativos pesquisados diminuem à medida que você percorre os resultados da pesquisa. |
-| Ao selecionar e operar nos resultados da pesquisa, todos os ativos pesquisados não são operados | A opção [!UICONTROL Selecionar tudo] seleciona apenas os primeiros 100 resultados de pesquisa na exibição de cartão e os primeiros 200 resultados de pesquisa na exibição de lista. |  |
+| Ao selecionar e operar nos resultados da pesquisa, todos os ativos pesquisados não são operados em | A opção [!UICONTROL Selecionar tudo] seleciona apenas os primeiros 100 resultados de pesquisa na exibição de cartão e os primeiros 200 resultados de pesquisa na exibição de lista. |  |
 
 >[!MORELIKETHIS]
 >
 >* [Guia de implementação de pesquisa do AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
->* [Configuração avançada de predicados de pesquisa de tags e valores múltiplos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
+>* [Configuração avançada de predições de pesquisa de tags e valores múltiplos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
 >* [Configurar pesquisa de tradução inteligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
