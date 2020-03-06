@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
 | Versão | 6.5.4.0 |
 | Tipo | Lançamento do Service Pack |
 | Data | 05 de março de 2020 |
-| URL de download | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
+| URL de download | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), Distribuição [de software (Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## O que está incluído no Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
@@ -70,7 +70,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Todas as caixas de seleção no painel Filtro são apagadas quando a primeira e a segunda caixas de seleção são apagadas, quando as caixas de seleção de nível dois da árvore de caixas de seleção no Adobe Stock são selecionadas (NPR-31919).
 
-* A pesquisa de arquivos e pastas usando aspectos Omnisearch dá exceção (NPR-31872).
+* A pesquisa de Arquivos e Pastas usando aspectos Omnisearch dá exceção (NPR-31872).
 
 * O realce de campo para seleção de campo obrigatória no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de esquema de metadados correspondente (NPR-31834).
 
@@ -128,8 +128,6 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Ao mover o conteúdo dentro da mesma pasta, a opção de movimentação de página é desativada (NPR-31840).
 
-* Quando os URLs que terminam com /_jcr_content/.html ou /jcr:content/.html são acessados, os picos da CPU e o AEM para de responder (NPR-31837).
-
 * No modo de estrutura de modelos editáveis, a lista de componentes permitidos no contêiner de layout exibe resultados incorretos. Somente os componentes com caixa de diálogo de design são exibidos no contêiner de layout (NPR-31816).
 
 * Quando uma página tem permissões somente leitura para um usuário, a opção de propriedades Abrir fica visível em sites.html, mas não no editor.html (NPR-31770).
@@ -179,8 +177,6 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 ### Editor de modelos WCM {#wcm-template-editor-6540}
 
 * No modo de estrutura de modelos editáveis, a lista de componentes permitidos no contêiner de layout não exibe o componente de botão de link (CQ-4282099).
-
-* Picos de CPU e o Experience Manager não responde quando URLs terminam com `/_jcr_content/.html` ou `/jcr:content/.html` são acessados (CQ-4280770).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
