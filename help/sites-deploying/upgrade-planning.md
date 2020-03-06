@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -86,7 +86,7 @@ Abaixo, você encontrará uma lista das áreas afetadas em um projeto de atualiz
  </tbody>
 </table>
 
-É importante garantir que você esteja executando um sistema operacional suportado, Java runtime, httpd e Dispatcher version. Para obter mais informações, consulte a página [Requisitos técnicos do](/help/sites-deploying/technical-requirements.md)AEM 6.5. A atualização desses componentes precisará ser contabilizada no plano do projeto e deve ocorrer antes da atualização do AEM.
+É importante garantir que você esteja executando um sistema operacional suportado, Java runtime, httpd e Dispatcher version. Para obter mais informações, consulte a página [Requisitos técnicos do](/help/sites-deploying/technical-requirements.md)AEM 6.5. A atualização desses componentes precisará ser contabilizada no seu plano de projeto e deve ocorrer antes da atualização do AEM.
 
 ## Fases do projeto {#project-phases}
 
@@ -136,7 +136,7 @@ Examine os requisitos técnicos do AEM 6.5 e verifique se seu hardware e softwar
 
 #### Considerações sobre reestruturação de conteúdo {#content-restructuring-considerations}
 
-O AEM introduziu alterações na estrutura do repositório que ajudarão a tornar as atualizações mais simples. As alterações envolvem mover o conteúdo da pasta /etc para pastas, incluindo /libs, /apps e /content, com base no fato de a Adobe ou um cliente possuir o conteúdo, limitando assim as chances de sobrescrever o conteúdo durante as versões. A reestruturação do repositório foi feita de modo que não deve exigir alterações de código no momento da atualização do 6.5, embora seja recomendável rever os detalhes na reestruturação do [repositório no AEM](/help/sites-deploying/repository-restructuring-in-aem65.md) enquanto planeja uma atualização.
+O AEM introduziu alterações na estrutura do repositório que ajudarão a tornar as atualizações mais ininterruptas. As alterações envolvem mover o conteúdo da pasta /etc para pastas, incluindo /libs, /apps e /content, com base no fato de a Adobe ou um cliente possuir o conteúdo, limitando assim as chances de sobrescrever o conteúdo durante as versões. A reestruturação do repositório foi feita de modo que não deve exigir alterações de código no momento da atualização do 6.5, embora seja recomendável rever os detalhes na reestruturação do [repositório no AEM](/help/sites-deploying/repository-restructuring.md) enquanto planeja uma atualização.
 
 ### Avaliação da complexidade da atualização {#assessing-upgrade-complexity}
 
@@ -158,7 +158,7 @@ Embora a Adobe tenha documentado o processo de atualização de uma instância d
 
 Fornecemos procedimentos de atualização e reversão no procedimento [de](/help/sites-deploying/upgrade-procedure.md) atualização, bem como instruções passo a passo para aplicar a atualização em Realizar uma atualização [no local](/help/sites-deploying/in-place-upgrade.md). Essas instruções devem ser analisadas e levadas em consideração com a arquitetura do sistema, as personalizações e a tolerância ao tempo de inatividade para determinar os procedimentos apropriados de alternância e reversão que você executará durante a atualização. Quaisquer alterações na arquitetura ou no tamanho do servidor devem ser incluídas ao criar seu runbook personalizado. É importante notar que este aspecto deve ser tratado como um primeiro projeto. À medida que sua equipe conclui seus ciclos de controle de qualidade e desenvolvimento e implanta a atualização para o ambiente de preparo temporário, é provável que a necessidade de algumas etapas adicionais seja necessária. Idealmente, este documento deve conter informações suficientes para que, se ele for entregue a um membro da equipe de operações, ele possa concluir a atualização completamente a partir das informações contidas nele.
 
-### Desenvolver um plano de projeto {#developing-a-project-plan}
+### Desenvolvimento de um plano de projeto {#developing-a-project-plan}
 
 Podemos usar o resultado dos exercícios anteriores para criar um plano de projeto que cubra os prazos esperados para nossos esforços de teste ou desenvolvimento, treinamento e execução de atualização real.
 
@@ -185,11 +185,11 @@ O processo de desenvolvimento e teste costuma ser iterativo. Devido às personal
 
 ### Teste final {#final-testing}
 
-Recomendamos uma rodada final de testes depois que a base de códigos tiver sido certificada pela equipe de controle de qualidade de sua organização. Esta ronda de testes envolverá a validação do runbook em um ambiente de preparo, seguido de rondas de aceitação pelo usuário, desempenho e teste de segurança.
+Recomendamos uma rodada final de testes depois que a base de códigos tiver sido certificada pela equipe de controle de qualidade de sua organização. Essa rodada de testes envolverá a validação do runbook em um ambiente de preparo, seguido de rondas de aceitação, desempenho e teste de segurança do usuário.
 
 ![cinci_croped](assets/cinci_cropped.png)
 
-Essa etapa é vital, pois é a única vez que você pode validar as etapas no runbook em relação a um ambiente semelhante à produção. Depois que o ambiente for atualizado, é importante permitir que os usuários finais façam logon e passem pelas atividades que fazem ao usar o sistema em suas atividades diárias. Não é raro os usuários aproveitarem uma parte do sistema que não foi considerada anteriormente. Encontrar e corrigir problemas nessas áreas antes de entrar em operação pode ajudar a evitar interrupções dispendiosas na produção. Como uma nova versão do AEM contém mudanças significativas na plataforma subjacente, também é importante executar testes de desempenho, carga e segurança no sistema como se o iniciássemos pela primeira vez.
+Essa etapa é vital, pois é a única vez que você pode validar as etapas no runbook em relação a um ambiente semelhante à produção. Depois que o ambiente for atualizado, é importante permitir que os usuários finais façam logon e passem pelas atividades que fazem ao usar o sistema em suas atividades diárias. Não é raro os usuários aproveitarem uma parte do sistema que não foi considerada anteriormente. Encontrar e corrigir problemas nessas áreas antes de entrar em operação pode ajudar a evitar paralisações dispendiosas na produção. Como uma nova versão do AEM contém mudanças significativas na plataforma subjacente, também é importante executar testes de desempenho, carga e segurança no sistema como se o iniciássemos pela primeira vez.
 
 ### Execução da atualização {#performing-the-upgrade}
 
@@ -197,4 +197,4 @@ Depois de receber o logoff final de todas as partes interessadas, é tempo de ex
 
 ![performance-upgrade](assets/perform-upgrade.png)
 
-Fornecemos algumas etapas nas instruções de atualização para a validação do ambiente. Isso inclui verificações básicas, como a verificação dos registros de atualização e verificação de que todos os pacotes OSGi foram iniciados corretamente, mas recomendamos também a validação com seus próprios casos de teste, com base nos processos de negócios. Também recomendamos verificar o cronograma da Limpeza online de revisão do AEM e as rotinas relacionadas para garantir que elas ocorrerão durante um período de silêncio para sua empresa. Essas rotinas são essenciais para o desempenho a longo prazo do AEM.
+Fornecemos algumas etapas nas instruções de atualização para a validação do ambiente. Isso inclui verificações básicas, como a verificação dos registros de atualização e verificação de que todos os pacotes OSGi foram iniciados corretamente, mas recomendamos também a validação com seus próprios casos de teste, com base nos processos de negócios. Também recomendamos verificar o agendamento da Limpeza online de revisão do AEM e as rotinas relacionadas para garantir que elas ocorrerão durante um período de silêncio para sua empresa. Essas rotinas são essenciais para o desempenho a longo prazo do AEM.
