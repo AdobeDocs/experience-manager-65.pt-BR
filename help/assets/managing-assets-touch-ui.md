@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f191f90f7a417387930d2d4cf7b9482aabbd6156
+source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
 
 ---
 
@@ -331,6 +331,24 @@ Para visualizar um ativo, siga estas etapas.
    Toque em **[!UICONTROL Redefinir]** para redefinir a exibição para o tamanho original.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
+
+**Visualizar ativos usando apenas teclas do teclado**
+
+Para visualizar um ativo usando o teclado, siga estas etapas:
+
+1. Na interface do usuário dos Ativos, navegue até o local do ativo que deseja visualizar, usando `Tab` as teclas de seta.
+
+1. Abra o ativo desejado.
+
+   No modo de visualização, as opções de zoom e redefinição estão disponíveis para os tipos [de imagem](/help/assets/assets-formats.md#supported-raster-image-formats) suportados (com edição interativa).
+1. Para aplicar zoom no ativo:
+   1. Use a `Tab` tecla para mover o foco para o ícone de zoom.
+   1. Use a `Enter` tecla para aplicar zoom na imagem.
+   Para diminuir o zoom, use a `Tab` tecla para mover o foco para o ícone de afastar o zoom e pressione `Enter`.
+
+1. Use as teclas `Shift` + `Tab` para mover o foco de volta para a imagem.
+
+1. Use as teclas de seta para mover-se em torno da imagem ampliada.
 
 Consulte também [Visualizar ativos de mídia dinâmica.](/help/assets/previewing-assets.md)
 
