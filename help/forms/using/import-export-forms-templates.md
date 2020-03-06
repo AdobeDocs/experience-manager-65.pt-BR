@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -21,14 +21,14 @@ Você pode mover formulários e ativos relacionados, temas, dicionários de dado
 
 >[!NOTE]
 >
->* No AEM 6.4 Forms, a estrutura e os caminhos do crx-repository foram alterados. Se você importar ativos de uma versão anterior para o AEM 6.4 Forms e o formulário tiver algumas dependências na estrutura mais antiga, é necessário exportar manualmente as dependências. Para obter detalhes sobre alterações na estrutura e caminhos do repositório, consulte Reestruturação [do repositório no AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+>* No AEM 6.4 Forms, a estrutura e os caminhos do crx-repository foram alterados. Se você importar ativos de uma versão anterior para o AEM 6.4 Forms e o formulário tiver algumas dependências na estrutura mais antiga, é necessário exportar manualmente as dependências. Para obter detalhes sobre alterações na estrutura e caminhos do repositório, consulte Reestruturação [do repositório no AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
 
 
 ## Baixar ou fazer upload de ativos do Forms &amp; Documents {#download-or-upload-forms-amp-documents-assets}
 
-A interface do usuário do AEM Forms permite exportar ativos de uma instância do AEM baixando-os como um pacote do AEM CRX ou arquivos binários. Você pode importar o pacote AEM CRX baixado ou o arquivo binário para outra instância do AEM.
+A interface do usuário do AEM Forms permite exportar ativos de uma instância do AEM baixando-os como um pacote do AEM CRX ou arquivos binários. Em seguida, você pode importar o pacote AEM CRX baixado ou o arquivo binário para outra instância do AEM.
 
 Exportar e importar por meio da interface do usuário do AEM Forms é suportado para todos os ativos, exceto para modelos de formulário adaptável e políticas de conteúdo de formulário adaptável. Portanto, ao exportar um formulário adaptável da interface do usuário do AEM Forms, o modelo de formulário adaptável relacionado e as políticas de conteúdo não são exportados automaticamente como outros ativos relacionados.
 
@@ -43,11 +43,11 @@ Para baixar ativos do Forms &amp; Documents:
 1. Selecione os ativos de formulários e toque no ícone **Download** .
 1. Em Baixar ativos, escolha uma das opções a seguir e toque em **Baixar**.
 
-   * **** Baixar como Pacote CRX: Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma instância do AEM Forms para outra. Ele baixa todos os ativos e pastas como pacote crx. Qualquer ativo(s) de formulário, incluindo os formulários criados no AEM (formulários adaptáveis, Comunicações interativas e fragmentos de formulário adaptáveis), conjuntos de formulários, modelos de formulários, documentos PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacote da interface do usuário do AEM Forms.
+   * **Baixar como Pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma instância do AEM Forms para outra. Ele baixa todos os ativos e pastas como pacote crx. Qualquer ativo(s) de formulário, incluindo os formulários criados no AEM (formulários adaptáveis, Comunicações interativas e fragmentos de formulário adaptáveis), conjuntos de formulários, modelos de formulários, documentos PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacote da interface do usuário do AEM Forms.
 A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Quando você seleciona este formulário adaptável e o baixa como pacote, o pacote baixado também contém o modelo de formulário, XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
 
-   * **** Baixar ativos como arquivos binários: Use a opção para baixar somente modelos de formulário (XDP), formulários PDF (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilo). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos de formulários que têm binários, como XSDs, XDPs, imagens, PDFs e XDPs como um arquivo .zip.
-Não é possível baixar formulários adaptáveis, Comunicações interativas, fragmentos de formulário adaptáveis, temas e conjuntos de formulários com a opção **Baixar ativos como arquivos** binários. Para baixar esses ativos, você deve usar a opção **Download como Pacote** CRX.
+   * **Baixar ativos como arquivos binários:** Use a opção para baixar somente modelos de formulário (XDP), formulários PDF (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilo). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos de formulários que têm binários, como XSDs, XDPs, imagens, PDFs e XDPs como um arquivo .zip.
+Não é possível baixar formulários adaptáveis, Comunicações interativas, fragmentos de formulário adaptáveis, temas e conjuntos de formulários com a opção **Baixar ativos como arquivos** binários. Para baixar esses ativos, você deve usar a opção **Baixar como Pacote** CRX.
    Os ativos selecionados são baixados como um arquivo morto (arquivo .zip).
 
    >[!NOTE]
@@ -67,11 +67,11 @@ Para fazer upload de ativos de Formulários e Documentos:
 
    Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e toque em **Carregar**.
 
-   Se você carregar um ativo de formulários existente, o ativo será atualizado.
+   Caso você carregue um ativo de formulários existente, o ativo será atualizado.
 
    >[!NOTE]
    >
-   >Carregar um pacote não substitui a hierarquia de pastas existente. Por exemplo, se você tiver um formulário adaptável chamado &#39;Treinamento&#39; no local /content/dam/formsanddocuments em um servidor. Faça o download do formulário adaptável e faça o upload do formulário em outro servidor. O segundo servidor também tem uma pasta com o nome &#39;Treinamento&#39; no mesmo local /content/dam/formsanddocuments. Falha no carregamento.
+   >Carregar um pacote não substitui a hierarquia de pastas existente. Por exemplo, se você tiver um formulário adaptável chamado &#39;Treinamento&#39; no local /content/dam/formsanddocuments em um servidor. Faça o download do formulário adaptável e faça o upload do formulário em outro servidor. O segundo servidor também tem uma pasta com o nome &quot;Training&quot; (Treinamento) no mesmo local /content/dam/formsanddocuments. Falha no carregamento.
 
 ## Download ou upload de um tema {#downloading-or-uploading-a-theme}
 
@@ -87,7 +87,7 @@ Para baixar um tema:
 1. Toque no ícone do Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > ícone de ![bússola](assets/compass.png) de navegação > Formulários > Temas.
 1. Selecione o tema e toque em **Download**. O tema é baixado como um arquivo morto (arquivo .zip).
 
-### Carregar um tema {#uploading-a-theme}
+### Fazer upload de um tema {#uploading-a-theme}
 
 Você pode usar temas criados com predefinições de estilização em seu projeto. Você pode importar pacotes de temas que outras pessoas criarem fazendo upload deles no seu projeto.
 
@@ -115,7 +115,7 @@ Para compartilhar ativos, como dicionários de dados, letras e fragmentos de doc
 
    ![exportação](assets/export.png)
 
-1. Para exibir as dependências exportadas, toque em Resolver. Ou pule para a próxima etapa. Mesmo se você não tocar em resolver, as dependências ainda serão exportadas.
+1. Para exibir as dependências que são exportadas, toque em Resolver. Ou pule para a próxima etapa. Mesmo se você não tocar em resolver, as dependências ainda serão exportadas.
 1. Para baixar o arquivo .cmp, toque em **OK**.
 1. O Gerenciamento de correspondência baixa um arquivo .cmp em seu computador.
 
@@ -123,7 +123,7 @@ Para compartilhar ativos, como dicionários de dados, letras e fragmentos de doc
 
 ### Exportar todos os ativos do Gerenciamento de correspondência como um pacote {#export-all-the-correspondence-management-assets-as-a-package}
 
-Use essa opção para baixar todos os ativos do Gerenciamento de correspondência e as dependências relacionadas como um pacote de uma instância de formulários AEM.
+Use essa opção para baixar todos os ativos do Gerenciamento de correspondência e as dependências relacionadas como um pacote de uma instância de formulários do AEM.
 
 Por exemplo, se o Gerenciamento de correspondência tiver uma carta que usa uma imagem e um texto, o pacote baixado também conterá a imagem e o texto relacionado à carta. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas. Depois de baixar o pacote (.cmp), você pode [importar o pacote para uma instância](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)do AEM Forms diferente.
 
@@ -131,7 +131,7 @@ Para baixar todos os ativos do Gerenciamento de correspondência e as dependênc
 
 1. Faça logon no servidor AEM Forms como um usuário de formulários.
 1. Toque em **Adobe Experience Manager** na barra Navegação global.
-1. Toque em ferramentas ( ![ferramentas](assets/tools.png)) e toque em **Formulários**.
+1. Toque em ferramentas ( ![ferramentas](assets/tools.png)) e, em seguida, toque em **Formulários**.
 1. Tap **Export Correspondence Management Assets**.
 
    ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
@@ -142,7 +142,7 @@ Para baixar todos os ativos do Gerenciamento de correspondência e as dependênc
 
 1. Toque em **Exportar** e, na mensagem de confirmação, toque em **OK**.
 
-   Após a conclusão de um processo em lote, os detalhes da última execução e o link para baixar o pacote serão atualizados. Isso inclui informações como o logon do Administrador e se o lote foi executado com êxito ou com falha. Os ativos são exportados para um pacote e o link Download de pacote exportado é exibido.
+   Após a conclusão de um processo em lote, os detalhes da última execução e o link para baixar o pacote serão atualizados. Isso inclui informações como o logon do Administrador e se o lote foi executado com êxito ou com falha. Os ativos são exportados para um pacote e o link Baixar pacote exportado é exibido.
 
    >[!NOTE]
    >
@@ -191,19 +191,19 @@ Você pode usar o gerenciador de pacote AEM para exportar aplicativos de fluxo d
 
 ## Pastas e organização de ativos {#folders-and-organizing-assets}
 
- A interface do usuário do AEM Forms usa pastas para organizar ativos. Essas pastas são usadas para organizar ativos criados na interface do usuário do AEM Forms. Você pode renomear, criar subpastas e armazenar ativos e documentos nessas pastas. Organizar documentos e ativos em uma pasta permite agrupar os arquivos para facilitar o gerenciamento. Você pode selecionar uma pasta e optar por baixá-la ou excluí-la.
+A interface do usuário do AEM Forms usa pastas para organizar ativos. Essas pastas são usadas para organizar ativos criados na interface do usuário do AEM Forms. Você pode renomear, criar subpastas e armazenar ativos e documentos nessas pastas. Organizar documentos e ativos em uma pasta permite agrupar os arquivos para facilitar o gerenciamento. Você pode selecionar uma pasta e optar por baixá-la ou excluí-la.
 
 Para criar uma pasta, conclua as seguintes etapas:
 
 ### Criar uma pasta {#create-a-folder}
 
 1. Faça logon na interface do usuário do AEM Forms em `https://<server>:<port>/aem/forms.html`.
-1. Navegue até o local em que deseja criar uma pasta.
+1. Navegue até o local sob o qual você deseja criar uma pasta.
 1. Toque em Criar > Pasta.
 1. Digite os seguintes detalhes:
 
-   * **** Título: Nome de exibição da pasta
-   * **** Nome: *(Obrigatório)* O nome do nó sob o qual você deseja armazenar a pasta no repositório
+   * **Título:** Nome de exibição da pasta
+   * **Nome:** *(Obrigatório)* O nome do nó sob o qual você deseja armazenar a pasta no repositório
    >[!NOTE]
    >
    >Por padrão, o valor do campo de nome é automaticamente preenchido a partir do título. O nome só pode conter caracteres alfanuméricos ou os caracteres especiais hífen (-) e underscore (_). Quaisquer outros caracteres especiais inseridos no título serão automaticamente substituídos por um hífen e você será solicitado a confirmar o novo nome. Você pode optar por continuar com o nome sugerido ou editá-lo posteriormente.
@@ -239,7 +239,7 @@ Quando você pesquisa ativos, o AEM Forms exibe o painel lateral. Você também 
 
 ![search_topbar](assets/search_topbar.png)
 
-******A. Procure** B. Filtro
+**A.** Procure **B.** Filtro
 
 ![Painel lateral - Filtros](assets/search_sidepanel.png)
 
