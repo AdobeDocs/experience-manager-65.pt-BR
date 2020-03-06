@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -130,7 +130,7 @@ As etapas necessárias são:
 
 1. repita as etapas 3 e 4 em todas as instâncias de autor e publicação
 
-Mais informações sobre a instalação de pacotes estão disponíveis na página Console [da](/help/sites-deploying/configuring-web-console.md#bundles) Web.
+Mais informações sobre a instalação de pacotes estão disponíveis na página Console [da](/help/sites-deploying/web-console.md) Web.
 
 #### Exemplo: Pacote do Conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
@@ -146,7 +146,7 @@ O mecanismo SCORM do AEM Communities é necessário para o recurso de [ativaçã
 
 **Para instalar um pacote SCORM**
 
-1. Instale o [cq-social-scorm-package, versão 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) do Package Share.
+1. Instale o [cq-social-scorm-package, versão 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) do Compartilhamento de pacotes.
 1. Baixe `/libs/social/config/scorm/database_scormengine_data.sql` da instância cq e execute-a no servidor mysql para criar um esquema scormEngineDB atualizado.
 1. Adicione `/content/communities/scorm/RecordResults` a propriedade Caminhos excluídos no filtro CSRF de `https://<hostname>:<port>/system/console/configMgr` em editores.
 
@@ -176,7 +176,7 @@ Para obter detalhes e informações sobre instalação, consulte Configuração 
 
 **Pacotes visíveis na Adobe AEM Cloud**
 
-Os links para pacotes nesta página não exigem nenhuma instância em execução do AEM, pois eles são usados para compartilhar pacotes `adobeaemcloud.com`. Enquanto os pacotes são visualizáveis, o `Install`botão é para instalar os pacotes em um site hospedado da Adobe. Se você pretende instalar em uma instância AEM local, selecionar `Install`resultará em um erro.
+Os links para pacotes nesta página não exigem nenhuma instância em execução do AEM, pois eles são usados para compartilhar pacotes `adobeaemcloud.com`. Enquanto os pacotes são visualizáveis, o `Install`botão é para instalar os pacotes em um site hospedado da Adobe. Se você pretende instalar em uma instância AEM local, a seleção `Install`resultará em um erro.
 
 **Como instalar na instância local do AEM**
 
@@ -199,7 +199,7 @@ No AEM Communities, uma loja comum é usada para armazenar o conteúdo gerado pe
 
 A loja comum oferece suporte à moderação e análise do UGC no ambiente de publicação, além de eliminar a necessidade de [replicação](/help/communities/sync.md) do UGC.
 
-* [Armazenamento](/help/communities/working-with-srp.md) de conteúdo da comunidade: discute as opções de armazenamento SRP para comunidades AEM
+* [Repositório](/help/communities/working-with-srp.md) de conteúdo da comunidade: discute as opções de armazenamento SRP para comunidades AEM
 
 * [Topologias](/help/communities/topologies.md) recomendadas: discute a topologia a ser usada, dependendo do caso de uso e da escolha do SRP
 
@@ -271,7 +271,7 @@ As imagens a seguir mostram os resultados da alteração da porta de 4503 para 6
 
 ### Serviço de túnel no autor {#tunnel-service-on-author}
 
-Ao usar o ambiente do autor para [criar sites](/help/communities/sites-console.md), [modificar as propriedades](/help/communities/sites-console.md#modifying-site-properties) do site ou [gerenciar membros](/help/communities/members.md)da comunidade, é necessário acessar membros (usuários) registrados no ambiente de publicação, e não usuários registrados no autor.
+Ao usar o ambiente do autor para [criar sites](/help/communities/sites-console.md), [modificar as propriedades](/help/communities/sites-console.md#modifying-site-properties) do site ou [gerenciar membros](/help/communities/members.md)da comunidade, é necessário acessar os membros (usuários) registrados no ambiente de publicação, e não os usuários registrados no autor.
 
 O serviço de túnel fornece esse acesso usando o agente de replicação do autor.
 
