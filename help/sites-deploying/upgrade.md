@@ -12,7 +12,7 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -31,7 +31,7 @@ Nesta seção, cobrimos a atualização de uma instalação do AEM para o AEM 6.
 * [Verificações e solução de problemas da pós-atualização](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Atualizações sustentáveis](/help/sites-deploying/sustainable-upgrades.md)
 * [Migração de conteúdo ociosa](/help/sites-deploying/lazy-content-migration.md)
-* [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring-in-aem65.md)
+* [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md)
 
 Para facilitar a referência às instâncias do AEM envolvidas nesses procedimentos, os termos a seguir são usados nestes artigos:
 
@@ -50,7 +50,7 @@ O AEM 6.0 apresentou o novo repositório do Jackrabbit Oak. Os gerentes de persi
 
 Se o Asset Insights for usado e você estiver atualizando de uma versão anterior ao AEM 6.2, os ativos deverão ser migrados e ter IDs geradas por meio de um bean JMX. Em nossos testes internos, 125 mil ativos em um ambiente TarMK foram migrados em uma hora, mas seus resultados podem variar.
 
-6.3 introduziu um novo formato para o TarMK `SegmentNodeStore`, que é a base da sua implementação. Se você estiver atualizando de uma versão anterior ao AEM 6.3, isso exigirá uma migração de repositório como parte da atualização, envolvendo tempo de inatividade do sistema.
+6.3 introduziu um novo formato para o TarMK `SegmentNodeStore`, que é a base da implementação do TarMK. Se você estiver atualizando de uma versão anterior ao AEM 6.3, isso exigirá uma migração de repositório como parte da atualização, envolvendo tempo de inatividade do sistema.
 
 O departamento de engenharia da Adobe estima que seja em torno de 20 minutos. Observe que a reindexação não será necessária. Além disso, uma nova versão da ferramenta crx2oak foi lançada para funcionar com o novo formato de repositório.
 
@@ -81,7 +81,7 @@ A atualização do AEM é um processo de várias etapas, às vezes de vários me
 
 ## Fluxo de atualização {#upgrade-overview-1}
 
-O diagrama abaixo captura a abordagem de atualização do fluxo geral recomendado. Observe a referência aos novos recursos que apresentamos. A atualização deve começar com o Detector de padrão (consulte [Avaliação da complexidade de atualização com o Detector](/help/sites-deploying/pattern-detector.md)de padrão), que deve permitir que você decida o caminho que deseja seguir para a compatibilidade com o AEM 6.4 com base nos padrões do relatório gerado.
+O diagrama abaixo captura o fluxo geral recomendado para realçar a abordagem de atualização. Observe a referência aos novos recursos que apresentamos. A atualização deve começar com o Detector de padrão (consulte [Avaliação da complexidade de atualização com o Detector](/help/sites-deploying/pattern-detector.md)de padrão), que deve permitir que você decida o caminho que deseja seguir para a compatibilidade com o AEM 6.4 com base nos padrões do relatório gerado.
 
 Havia um grande foco na versão 6.5 para manter todos os novos recursos compatíveis com versões anteriores, mas nos casos em que ainda há problemas de compatibilidade com versões anteriores, o modo de compatibilidade permite adiar temporariamente o desenvolvimento para manter seu código personalizado em conformidade com a versão 6.5. Essa abordagem ajuda a evitar esforços de desenvolvimento imediatamente após a atualização (consulte Compatibilidade [com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
