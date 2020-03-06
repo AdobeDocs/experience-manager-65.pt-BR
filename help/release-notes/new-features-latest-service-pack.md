@@ -4,14 +4,14 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d867ee46ca9cd5945c7413d42fc002b90332c3c
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
 
 # Novidades do Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Em 2020, para o Adobe Experience Manager (AEM) 6.5, novos recursos e melhorias são fornecidos nos Service Packs trimestrais. Os clientes se beneficiam dessa nova abordagem à medida que adotam as inovações mais rapidamente.
+Em 2020, o Adobe Experience Manager (AEM) 6.5 oferece recursos e melhorias contínuas em Service Packs trimestrais. Os clientes se beneficiam dessa nova abordagem à medida que adotam as inovações mais rapidamente.
 
 O AEM Service Pack 4 (6.5.4.0) mais recente foi lançado em 5 **de março de 2020**. Este artigo destaca os recursos que o Service Pack mais recente oferece para tornar sua jornada do AEM mais enriquecedora.
 
@@ -19,15 +19,16 @@ O AEM Service Pack 4 (6.5.4.0) mais recente foi lançado em 5 **de março de 202
 
 ### Melhorias no desempenho em várias áreas {#performance-improvements}
 
-* Reduza o tempo de carregamento e inicialização do ContextHub em um site (contexthub.kernel.js). Resulta em carregamento mais rápido da 1ª página durante uma visita ao site.
+* Redução do tempo para carregar e inicializar o ContextHub em um site (contexthub.kernel.js). Isso resulta no carregamento de uma página mais rápido durante uma visita ao site.
 
-* No Editor de páginas, reduza o tempo de atualização da página após arrastar e soltar Fragmentos de experiência na tela da página.
+* Redução do tempo para atualizar uma página após arrastar e soltar Fragmentos de experiência na tela de um editor de página.
 
-* Em Visão geral da Live Copy, reduza o tempo para carregar entradas quando o site tiver muitas cópias online (+200).
+* Em Visão geral da Live Copy, o tempo para carregar entradas foi reduzido quando um site tem mais de 200 cópias online.
 
-* No Editor de modelos, melhore a manipulação de URLs incompletos/inválidos que podem fazer com que o Editor de modelos fique lento.
+* No Editor de modelos, foi aprimorada a manipulação de URLs incompletos ou inválidos que podem fazer com que o Editor de modelos fique lento.
 
-Além disso, a partir do AEM 6.5 SP4, o Sistema de estilo foi aprimorado, os estilos agora também podem ser selecionados em uma caixa de diálogo de componente.
+Além disso, o AEM 6.5 SP4 inclui melhorias no Sistema de estilo. Agora você também pode selecionar estilos em uma caixa de diálogo de componente.
+
 
 ## Ativos AEM {#aem-assets}
 
