@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -21,7 +21,7 @@ Os formulários do Adobe Experience Manager (AEM) podem ajudá-lo a transformar 
 
 Este documento fornece orientações e recomendações de que administradores, autores e desenvolvedores de formulários podem se beneficiar ao trabalhar com formulários AEM, especialmente componentes de formulários adaptáveis. Ele discute as práticas recomendadas desde a configuração de um projeto de desenvolvimento de formulários até a configuração, personalização, criação e otimização de formulários AEM. Essas práticas recomendadas contribuem coletivamente para o desempenho geral do ecossistema do AEM Forms.
 
-Além disso, veja algumas leituras recomendadas para práticas recomendadas gerais do AEM:
+Além disso, veja algumas leituras recomendadas para as práticas recomendadas gerais do AEM:
 
 * [Práticas recomendadas: Implantação e manutenção do AEM](/help/sites-deploying/best-practices.md)
 * [Práticas recomendadas: Criação de conteúdo](/help/sites-authoring/best-practices.md)
@@ -36,7 +36,7 @@ Uma estrutura de projeto simplificada e normalizada pode reduzir significativame
 
 * Use o Apache Maven `aem-project-archetype` para criar e gerenciar a estrutura para o projeto do AEM. Ele cria a estrutura e os modelos recomendados para seu projeto do AEM. Além disso, fornece sistemas de automação de criação e controle de alterações para ajudar a gerenciar o projeto.
 
-   * Use o comando maven `archetype:generate` para gerar a estrutura inicial.
+   * Use o `archetype:generate` comando maven para gerar a estrutura inicial.
    * Use o `eclipse:eclipse` comando maven para gerar os arquivos de projeto do eclipse e importar o projeto para o eclipse.
 
 Para obter mais informações, consulte [Como criar projetos do AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
@@ -54,7 +54,7 @@ Depois de configurar seu projeto do AEM, defina a estratégia para criar e perso
 
    * **Nenhum**: Os formulários adaptáveis criados com essa opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
    * **Esquema** XML ou JSON: Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema back-end em sua organização. É possível associar um esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estão disponíveis na guia Objeto de modelo de dados do navegador de conteúdo para a criação de formulários adaptáveis. Você pode arrastar e soltar os elementos do esquema para criar o formulário.
-   * **Modelo** de formulário XFA: É um modelo de formulário ideal se você tiver investimentos em formulários HTML5 baseados em XFA. Ele fornece uma maneira direta de converter formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptativos associados. Os formulários adaptativos resultantes suportam construções XFA, como validações, eventos, propriedades e padrões.
+   * **Modelo** de formulário XFA: É um modelo de formulário ideal se você tiver investimentos em formulários HTML5 baseados em XFA. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptativos associados. Os formulários adaptativos resultantes suportam construções XFA, como validações, eventos, propriedades e padrões.
    * **Modelo** de dados de formulário: É o modelo de formulário preferido se você deseja integrar seus sistemas de backend, como bancos de dados, serviços da Web e perfil de usuário do AEM, para preencher previamente formulários adaptáveis e gravar dados de formulário enviados de volta nos sistemas de backend. Um editor de Modelo de dados de formulário permite que você defina e configure entidades e serviços em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Para obter mais informações, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
 
 É importante escolher cuidadosamente o modelo de dados que atende não apenas às suas necessidades, mas amplia seus investimentos existentes em ativos XFA e XSD, se houver. É recomendável usar o Modelo XSD para criar modelos de formulário, pois o XML gerado contém dados conforme o XPATH definido pelo esquema. O uso do Modelo XSD como uma opção padrão para o Modelo de dados de formulário também ajuda porque ele dissocia o design de formulário do sistema back-end que processa e consome dados e melhora o desempenho do formulário devido a um mapeamento de um para um campo de formulário. Além disso, BindRef do campo pode tornar-se o XPATH de seu valor de dados em XML.
@@ -78,7 +78,7 @@ Para obter mais informações, consulte [Criar um formulário](/help/forms/using
 * Você também pode personalizar componentes de formulário adaptáveis específicos, como campos e layout de painel.
 
    * Use a funcionalidade [Sobreposição](/help/sites-developing/overlays.md) do AEM para modificar uma cópia de um componente. Não é recomendado modificar componentes padrão.
-   * Para personalizar o layout dos componentes de formulário adaptável prontos para uso em /libs, [crie componentes](/help/forms/using/custom-layout-components-forms.md) de layout personalizados além dos layouts [](/help/forms/using/layout-capabilities-adaptive-forms.md)padrão.
+   * Para personalizar o layout dos componentes de formulário adaptáveis prontos para uso em /libs, [crie componentes](/help/forms/using/custom-layout-components-forms.md) de layout personalizados além dos layouts [](/help/forms/using/layout-capabilities-adaptive-forms.md)padrão.
    * Introduza interatividades personalizadas criando widgets ou aparências personalizados. Não é recomendado modificar componentes padrão. Para obter mais informações, consulte [Estrutura](/help/forms/using/introduction-widgets.md)de aparência.
 
 * Consulte [Manuseio de informações](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) de identificação pessoal para obter recomendações sobre como manipular dados de PII.
@@ -147,10 +147,10 @@ Considere as seguintes práticas recomendadas para solucionar problemas de desem
 
 * É recomendável criar formulários adaptáveis usando o modelo de dados de formulário XSD mesmo ao converter um XFA em um formulário adaptável, se possível.
 * Inclua apenas os campos e painéis em formulários adaptáveis que capturam informações do usuário. Considere manter o conteúdo estático mínimo ou use URLs para abri-los em uma janela separada.
-* Embora cada formulário seja projetado para uma finalidade específica, há alguns segmentos comuns na maioria dos formulários. Por exemplo, detalhes pessoais, endereço, detalhes de emprego e assim por diante. Crie fragmentos [](/help/forms/using/adaptive-form-fragments.md) de formulário adaptáveis para elementos e seções de formulário comuns e use-os em formulários. Também é possível salvar um painel em um formulário existente como um fragmento. Qualquer alteração em um fragmento é refletida em todos os formulários adaptativos associados. Ela promove a criação colaborativa, já que vários autores podem trabalhar simultaneamente em diferentes fragmentos que compõem um formulário.
+* Embora cada formulário seja projetado para uma finalidade específica, há alguns segmentos comuns na maioria dos formulários. Por exemplo, detalhes pessoais, endereço, detalhes de emprego e assim por diante. Crie fragmentos [de formulário](/help/forms/using/adaptive-form-fragments.md) adaptáveis para elementos e seções de formulário comuns e use-os em formulários. Também é possível salvar um painel em um formulário existente como um fragmento. Qualquer alteração em um fragmento é refletida em todos os formulários adaptativos associados. Ela promove a criação colaborativa, já que vários autores podem trabalhar simultaneamente em diferentes fragmentos que compõem um formulário.
 
    * Semelhante aos formulários adaptáveis, recomenda-se que todos os estilos específicos do fragmento e scripts personalizados sejam definidos na biblioteca do cliente usando a caixa de diálogo do contêiner de fragmento. Além disso, tente criar fragmentos autossuficientes que não dependem de objetos fora dele.
-   * Evite usar scripts entre fragmentos. Se houver algum objeto fora do fragmento que você deve consultar, tente tornar esse objeto parte do formulário pai. Se o objeto ainda precisar residir em outro fragmento, consulte-o pelo seu nome no script.
+   * Evite usar scripts entre fragmentos. Se houver algum objeto fora do fragmento ao qual você deve se referir, tente tornar esse objeto parte do formulário pai. Se o objeto ainda precisar residir em outro fragmento, consulte-o pelo seu nome no script.
 
 * Use Salvar e Retomar com o salvamento automático para salvar o formulário adaptável periodicamente e permitir que os usuários revisitem mais tarde para preencher o formulário.
 * Configure os fragmentos para carregá-los de maneira fácil. No tempo de execução, o fragmento marcado para carregar com folga é renderizado somente quando necessário. Reduz significativamente o tempo de carga para formulários grandes. Também é compatível com fragmentos com painéis repetíveis. Para obter mais informações, consulte [Configurar carregamento](/help/forms/using/lazy-loading-adaptive-forms.md)lento.
@@ -170,7 +170,7 @@ Considere as seguintes práticas recomendadas para solucionar problemas de desem
 
 * Para formulários adaptáveis com base no modelo de dados de formulário, o AEM Forms fornece serviço de preenchimento rápido do modelo de dados de formulário. O serviço de preenchimento prévio consulta fontes de dados para objetos de modelo de dados no formulário adaptável e preenche previamente os valores de campo ao renderizar o formulário.
 * Você também pode usar os protocolos de arquivo, crx, service ou http para preencher formulários adaptáveis.
-* O AEM Forms oferece suporte a serviços de preenchimento prévio personalizados que você pode conectar como um serviço OSGi para preencher previamente formulários adaptáveis.
+* O AEM Forms oferece suporte a serviços de preenchimento prévio personalizados que podem ser conectados como um serviço OSGi para preencher previamente formulários adaptáveis.
 
 Para obter mais informações, consulte [Preencher campos](/help/forms/using/prepopulate-adaptive-form-fields.md)de formulário adaptável.
 
@@ -190,7 +190,7 @@ Você pode aproveitar a experiência de vários sinais do Adobe Sign em formulá
 
 ### Gerando documento de registro {#generating-document-of-record}
 
-Um documento de registro (DoR) é uma versão em PDF nivelada de um formulário adaptável que pode ser impresso, assinado ou arquivado.
+Um documento de registro (DoR) é uma versão em PDF achatada de um formulário adaptável que pode ser impresso, assinado ou arquivado.
 
 * Dependendo do modelo de dados de formulário no qual um formulário adaptável é baseado, é possível configurar um modelo para DoR da seguinte maneira:
 
@@ -201,7 +201,7 @@ Um documento de registro (DoR) é uma versão em PDF nivelada de um formulário 
 * Configure o cabeçalho, o rodapé, as imagens, a cor, a fonte e assim por diante, diretamente da guia Documento de registro do editor de formulário adaptável.
 * Use `DoRService` para gerar o DoR de forma programática.
 * Excluir campos ocultos do DoR.
-* Use o parâmetro `afAcceptLang` request para exibir DoR em outra localidade.
+* Use o parâmetro de `afAcceptLang` solicitação para exibir DoR em outra localidade.
 
 ### Depuração e teste de formulários adaptáveis {#debugging-and-testing-adaptive-forms}
 
@@ -228,7 +228,7 @@ Para obter mais informações, consulte [Automatizar o teste de formulários](/h
 
 ### Validação de formulários adaptáveis no servidor AEM {#validating-adaptive-forms-on-aem-server}
 
-As validações do lado do servidor são necessárias para impedir tentativas de ignorar validações no cliente e qualquer possível comprometimento de envios de dados e violações de regras comerciais. As validações do servidor são executadas no servidor carregando a biblioteca do cliente necessária.
+As validações do lado do servidor são necessárias para impedir tentativas de ignorar validações no cliente e qualquer possível comprometimento de envios de dados e violações de regras comerciais. As validações do lado do servidor são executadas no servidor carregando a biblioteca do cliente necessária.
 
 * Inclua funções em uma biblioteca do cliente para validar expressões em formulários adaptáveis e especifique a biblioteca do cliente na caixa de diálogo do contêiner de formulários adaptáveis. Para obter mais informações, consulte Revalidação [](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p)no servidor.
 * A validação do servidor valida o modelo de formulário. É recomendável criar uma biblioteca de cliente separada para validações e não misturá-la com outros itens como estilo HTML e manipulação DOM na mesma biblioteca de cliente.
@@ -245,7 +245,7 @@ Algumas práticas recomendadas ao localizar formulários adaptativos são as seg
 
    `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* Atualmente, o AEM Forms suporta a localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-br), chinês (zh-tn), chinês-Taiwan (zh-tw) e coreano (ko-kr). No entanto, você pode adicionar suporte para novas localidades para formulários adaptáveis em tempo de execução. Para obter mais informações, consulte [Suporte a novas localidades para a localização](/help/forms/using/supporting-new-language-localization.md)de formulários adaptáveis.
+* Atualmente, o AEM Forms suporta a localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). No entanto, você pode adicionar suporte para novas localidades para formulários adaptáveis em tempo de execução. Para obter mais informações, consulte [Suporte a novas localidades para a localização](/help/forms/using/supporting-new-language-localization.md)de formulários adaptáveis.
 
 ## Preparar projeto de formulários para produção {#prepare-forms-project-for-production}
 
@@ -291,7 +291,7 @@ Algumas práticas recomendadas para configurar o AEM para melhorar o desempenho 
 
 Em um ambiente de produção, é recomendável não armazenar dados de formulário enviados no repositório do AEM. A implementação padrão das ações de envio PDF Store, Store Content e Store do Portal de Formulários armazena dados de formulário no repositório do AEM. Estas ações apresentadas destinam-se apenas a fins de demonstração. Além disso, os recursos Salvar e Retomar e Salvar automaticamente usam o armazenamento do portal por padrão. Portanto, considere as seguintes recomendações:
 
-* **Armazenamento de dados** de rascunho: Se você estiver usando o recurso Rascunho de formulários adaptáveis, deverá implementar uma SPI (Service Provider Interface) personalizada para armazenar dados de rascunho em um armazenamento mais seguro como o banco de dados. Para obter mais informações, consulte [Exemplo para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md).
+* **Armazenamento de dados** de rascunho: Se você estiver usando o recurso Rascunho de formulários adaptáveis, deverá implementar uma SPI (Service Provider Interface) personalizada para armazenar dados de rascunho em um armazenamento mais seguro como o banco de dados. Para obter mais informações, consulte [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md).
 
 * **Armazenamento de dados** de envio: Se você estiver usando o repositório de envio do portal de formulários, deverá implementar um SPI personalizado para armazenar dados de envio em um banco de dados. Consulte [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md) para obter uma amostra da integração.
 
