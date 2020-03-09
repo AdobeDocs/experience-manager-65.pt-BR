@@ -112,7 +112,7 @@ Para obter mais informações, consulte [Criar modelos de formulário para formu
 
 Além dos novos recursos, o AEM 6.5 Service Pack 4 inclui os seguintes destaques principais:
 
-* Somente subárvores de conteúdo seletivo podem ser sincronizadas no modo *Mídia* dinâmica - Scene7 em vez de em todos os `content/dam`.
+* Somente subárvores de conteúdo seletivo podem ser sincronizadas no modo ***Mídia*** dinâmica - Scene7 em vez de em todos os `content/dam`.
 
 * A integração do modelo de dados de formulário usando o serviço da Web SOAP agora oferece suporte a grupos de escolha ou atributos em elementos.
 
