@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
+source-git-commit: ff006375b9ac958c7a5f9adf122990bf23808834
 
 ---
 
@@ -32,7 +32,7 @@ Alguns dos principais recursos e melhorias introduzidos no AEM 6.5.4.0 incluem:
 
 * O AEM Assets agora está configurado com o Brand Portal por meio do console de E/S da Adobe.
 
-* Uma nova etapa [Gerar saída](../forms/using/aem-forms-workflow-step-reference.md) imprimível agora está disponível para fluxos de trabalho do AEM.
+* Uma nova etapa [Gerar saída](../forms/using/aem-forms-workflow-step-reference.md) imprimível agora está disponível para fluxos de trabalho do AEM Forms.
 
 * [Suporte](../forms/using/resize-using-layout-mode.md) para várias colunas no modo de layout para formulários adaptáveis e Comunicações interativas.
 
@@ -43,62 +43,6 @@ Alguns dos principais recursos e melhorias introduzidos no AEM 6.5.4.0 incluem:
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.10.8.
 
 Para obter uma lista completa dos recursos, destaques principais, recursos principais introduzidos em service packs AEM 6.5 anteriores, consulte [Novidades do Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
-
-### Ativos {#assets-6540-enhancements}
-
-* O botão para acionar o fluxo de trabalho na página de coleta de ativos está desativado (NPR-32471).
-
-* Uma pasta sem nome é criada no SPS (Scene7 Publishing System) ao mover um ativo de uma pasta para outra no Experience Manager com a configuração do Dynamic Media Scene7 (NPR-32440).
-
-* A ação para mover todos os ativos (usando Selecionar tudo e mover) para uma pasta que contém os ativos publicados falha com erro (NPR-32366).
-
-* Falha na geração da execução de ativos com ${extension} (NPR-32294).
-
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
-
-* O arquivo ZIP baixado do DAM não pode ser aberto usando o WinZip (NPR-32293).
-
-* As permissões originais de uma pasta são atualizadas quando as Configurações da pasta são abertas para alterar o título da pasta ou a imagem em miniatura e salvas (NPR-32292).
-
-* O ícone de calendário para a ativação programada não está sendo exibido na coluna Status (na interface clássica da lista de ativos DAM) para ativos cuja ativação está programada para uma data e hora posteriores (NPR-32291).
-
-* A criação de fragmentos usando modelos de fragmento fornece erro ao pesquisar coleções durante o processo de criação de fragmento (NPR-32290).
-
-* Várias consultas de pesquisa são acionadas quando várias tags são selecionadas no filtro de pesquisa (NPR-32143).
-
-* A interface do usuário do Experience Manager Assets exibe nomes de arquivo truncados quando ativos com mais de 50 caracteres no nome do arquivo são carregados (NPR-32054).
-
-* Todas as caixas de seleção no painel Filtro são apagadas quando a primeira e a segunda caixas de seleção são apagadas, quando as caixas de seleção de nível dois da árvore de caixas de seleção no Adobe Stock são selecionadas (NPR-31919).
-
-* A pesquisa de Arquivos e Pastas usando aspectos Omnisearch dá exceção (NPR-31872).
-
-* O realce de campo para seleção de campo obrigatória no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de esquema de metadados correspondente (NPR-31834).
-
-* Os nomes completos das tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
-
-* O uso do comando back da página Propriedades do ativo no navegador Safari dá um erro (NPR-31753).
-
-* A página de resultados da pesquisa de interface de toque (feita pelo Omnisearch) rola automaticamente para cima e perde a posição de rolagem do usuário (NPR-31307).
-
-* A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução do Dynamic Media Scene7 (CQ-4286705).
-
-* Agora é possível fazer upload de ativos maiores que 2 GB no Dynamic Media-Scene7 (CQ-4286561).
-
-* Os ativos demoram muito para serem processados pelo processo de upload em lote do Scene7 (CQ-4286445).
-
-* O botão Salvar não importa o Conjunto Remoto quando o usuário não tiver feito nenhuma alteração no Editor de Conjunto no Cliente de Mídia Dinâmica (CQ-4285690).
-
-* A miniatura de ativos 3D não é informativa quando um modelo 3D suportado é assimilado no AEM (CQ-4283701).
-
-* O status não processado da predefinição do visualizador de vídeo de recorte inteligente aparece duas vezes no texto do banner ao lado do nome predefinido (CQ-4283517).
-
-* A altura incorreta do contêiner de um modelo 3D carregado visualizado no visualizador 3D é observada na página de detalhes do ativo (CQ-4283309).
-
-* O Editor de carrossel não abre no IE 11 no modo Híbrido de mídia dinâmica do Experience Manager (CQ-4255590).
-
-* O foco do teclado fica travado no menu suspenso Email na caixa de diálogo Download, nos navegadores Chrome e Safari (NPR-32067).
-
-* A caixa de seleção Sincronizar todo o conteúdo não está ativada por padrão ao tentar adicionar a configuração de nuvem DM no AEM (CQ-4288533).
 
 ### Sites {#sites-fixes}
 
@@ -144,13 +88,69 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Uma mensagem de erro é exibida ao exibir informações do fluxo de trabalho usando a Caixa de entrada (CQ-4282168).
 
+### Ativos {#assets-6540-enhancements}
+
+* O botão para acionar o fluxo de trabalho na página de coleta de ativos está desativado (NPR-32471).
+
+* Uma pasta sem nome é criada no SPS (Scene7 Publishing System) ao mover um ativo de uma pasta para outra no Experience Manager com a configuração do Dynamic Media Scene7 (NPR-32440).
+
+* A ação para mover todos os ativos (usando Selecionar tudo e mover) para uma pasta que contém os ativos publicados falha com erro (NPR-32366).
+
+* Falha na geração da execução de ativos com ${extension} (NPR-32294).
+
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
+
+* O arquivo ZIP baixado do DAM não pode ser aberto usando o WinZip (NPR-32293).
+
+* As permissões originais de uma pasta são atualizadas quando as Configurações da pasta são abertas para alterar o título da pasta ou a imagem em miniatura e salvas (NPR-32292).
+
+* O ícone de calendário para a ativação programada não está sendo exibido na coluna Status (na interface clássica da lista de ativos DAM) para ativos cuja ativação está programada para uma data e hora posteriores (NPR-32291).
+
+* A criação de fragmentos usando modelos de fragmento fornece erro ao pesquisar coleções durante o processo de criação de fragmento (NPR-32290).
+
+* Várias consultas de pesquisa são acionadas quando várias tags são selecionadas no filtro de pesquisa (NPR-32143).
+
+* A interface do usuário do Experience Manager Assets exibe nomes de arquivo truncados quando ativos com mais de 50 caracteres no nome do arquivo são carregados (NPR-32054).
+
+* Todas as caixas de seleção no painel Filtro são apagadas quando a primeira e a segunda caixas de seleção são apagadas, quando as caixas de seleção de nível dois da árvore de caixas de seleção no Adobe Stock são selecionadas (NPR-31919).
+
+* A pesquisa de arquivos e pastas usando aspectos Omnisearch dá exceção (NPR-31872).
+
+* O realce de campo para seleção de campo obrigatória no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de esquema de metadados correspondente (NPR-31834).
+
+* Os nomes completos das tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
+
+* O uso do comando back da página Propriedades do ativo no navegador Safari dá um erro (NPR-31753).
+
+* A página de resultados da pesquisa de interface de toque (feita pelo Omnisearch) rola automaticamente para cima e perde a posição de rolagem do usuário (NPR-31307).
+
+* A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução do Dynamic Media Scene7 (CQ-4286705).
+
+* Agora é possível fazer upload de ativos maiores que 2 GB no Dynamic Media-Scene7 (CQ-4286561).
+
+* Os ativos demoram muito para serem processados pelo processo de upload em lote do Scene7 (CQ-4286445).
+
+* O botão Salvar não importa o Conjunto Remoto quando o usuário não tiver feito nenhuma alteração no Editor de Conjunto no Cliente de Mídia Dinâmica (CQ-4285690).
+
+* A miniatura de ativos 3D não é informativa quando um modelo 3D suportado é assimilado no AEM (CQ-4283701).
+
+* O status não processado da predefinição do visualizador de vídeo de recorte inteligente aparece duas vezes no texto do banner ao lado do nome predefinido (CQ-4283517).
+
+* A altura incorreta do contêiner de um modelo 3D carregado visualizado no visualizador 3D é observada na página de detalhes do ativo (CQ-4283309).
+
+* O Editor de carrossel não abre no IE 11 no modo Híbrido de mídia dinâmica do Experience Manager (CQ-4255590).
+
+* O foco do teclado fica travado no menu suspenso Email na caixa de diálogo Download, nos navegadores Chrome e Safari (NPR-32067).
+
+* A caixa de seleção Sincronizar todo o conteúdo não está ativada por padrão ao tentar adicionar a configuração de nuvem DM no AEM (CQ-4288533).
+
 ### Interface do usuário do Foundation {#foundation-ui-6540}
 
 * O controle do mouse muda para o campo de filtro anterior em vez de permanecer no campo de filtro existente enquanto pesquisa ativos usando o painel Filtro (NPR-32538).
 
-* [Ou a Pesquisa por tags] `rootPath` de plataforma digitando nos campos de tags mostra tags fora dos limites raiz e não respeita a propriedade dos campos de tags (NPR-31895).
+* Marcação de plataforma: Pesquise por tags digitando nos campos de tag mostra tags fora dos limites raiz e não respeita a propriedade `rootPath` dos campos de tag (NPR-31895).
 
-* [O navegador de caminho da interface do usuário] da plataforma é quebrado se um caminho inválido for adicionado ao campo de texto (NPR-31884).
+* Interface do usuário da plataforma: O navegador de caminho quebra se um caminho inválido for adicionado no campo de texto (NPR-31884).
 
 * A notificação fica oculta atrás de um menu fixo na seleção da página (NPR-31628).
 
@@ -240,9 +240,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Document Security: Um arquivo PDF protegido falha ao abrir offline com a opção DisableGlobalOfflineSynchronizationData definida como True (NPR-32078).
 
-* Designer: Se a opção de marcação estiver ativada, a borda do subformulário desaparecerá na saída PDF gerada (NPR-32547).
-
-* Designer: Se a opção de marcação estiver ativada, a borda do subformulário desaparecerá na saída PDF gerada (NPR-31983, NPR-31950).
+* Designer: Se a opção de marcação estiver ativada, a borda do subformulário desaparecerá na saída PDF gerada (NPR-32547, NPR-31983, NPR-31950).
 
 * Designer: Se houver células unidas em uma tabela, o teste de acessibilidade falhará para o arquivo PDF de saída convertido de um formulário XDP usando o serviço de saída (CQ-4285372).
 
