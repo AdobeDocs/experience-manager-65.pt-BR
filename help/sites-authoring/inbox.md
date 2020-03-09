@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
 
 ---
 
@@ -132,22 +132,24 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
 ### Caixa de entrada - Controle de administrador {#inbox-admin-control}
 
-Os usuários que fazem parte do grupo de administradores **de** fluxo de trabalho podem exibir a opção Controle de administrador na lista. Com essa opção, os administradores podem:
+A opção Controle de administrador permite que os administradores:
 
-* Defina personalizações para o texto e o logotipo disponíveis no cabeçalho.
+* Personalizar o texto e o logotipo do cabeçalho
 
-* Controle a exibição das opções de navegação disponíveis no cabeçalho e restrinja os usuários para alternar para o modo de criação do fluxo de trabalho ou navegar até Ajuda ou outros links da solução.
+* Controlar a exibição de links de navegação disponíveis no cabeçalho
+
+A opção Controle de administrador é exibida na lista suspensa do seletor de exibição somente se você for membro do grupo de administradores ou administradores de fluxo de trabalho.
 
 ![controle admin](assets/admin-control.png)
 
 * **Personalização da marca**
 
-   * **Personalizar o texto do cabeçalho:** Especifique o texto neste campo para substituir o texto existente do **Adobe Experience Manager** exibido no cabeçalho.
+   * **Personalizar o texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho.
 
-   * **Personalizar logotipo:** Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a usando esse campo para substituir o logotipo do Adobe Experience Manager exibido no cabeçalho.
+   * **Personalizar logotipo:** Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a para exibi-la no cabeçalho.
 
 * **Navegação do usuário**
-   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho, como a opção para navegar para outras soluções, o link Ajuda e as opções exibidas ao tocar no logotipo ou texto do Adobe Experience Manager.
+   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
 * **Salvar:** Toque/clique nesta opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
