@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -23,7 +23,7 @@ A localização de formulários adaptáveis depende de dois tipos de dicionário
 
 **Dicionário** específico do formulário Contém strings usadas em formulários adaptáveis. Por exemplo, rótulos, nomes de campos, mensagens de erro, descrições de ajuda e assim por diante. Ele é gerenciado como um conjunto de arquivos XLIFF para cada localidade e você pode acessá-lo em `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Dicionários** globais Existem dois dicionários globais, gerenciados como objetos JSON, na biblioteca do cliente AEM. Esses dicionários contêm mensagens de erro padrão, nomes de mês, símbolos monetários, padrões de data e hora e assim por diante. Você pode encontrar esses dicionários no CRXDe Lite em /libs/fd/xfaforms/clientlibs/I18N. Esses locais contêm pastas separadas para cada localidade. Como os dicionários globais geralmente não são atualizados com frequência, a manutenção de arquivos JavaScript separados para cada localidade permite que os navegadores os armazenem em cache e reduzam o uso da largura de banda da rede ao acessar formulários adaptáveis diferentes no mesmo servidor.
+**Dicionários** globais Existem dois dicionários globais, gerenciados como objetos JSON, na biblioteca do cliente AEM. Esses dicionários contêm mensagens de erro padrão, nomes de mês, símbolos de moeda, padrões de data e hora e assim por diante. Você pode encontrar esses dicionários no CRXDe Lite em /libs/fd/xfaforms/clientlibs/I18N. Esses locais contêm pastas separadas para cada localidade. Como os dicionários globais geralmente não são atualizados com frequência, a manutenção de arquivos JavaScript separados para cada localidade permite que os navegadores os armazenem em cache e reduzam o uso da largura de banda da rede ao acessar formulários adaptáveis diferentes no mesmo servidor.
 
 ### Como funciona a localização do formulário adaptável {#how-localization-of-adaptive-form-works}
 
@@ -42,7 +42,7 @@ Se uma biblioteca do cliente para a localidade solicitada não existir, ela veri
 
 ## Adicionar suporte de localização para localidades não suportadas {#add-localization-support-for-non-supported-locales}
 
-Atualmente, o AEM Forms suporta a localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-br), chinês (zh-tn), chinês-Taiwan (zh-tw) e coreano (ko-kr).
+Atualmente, o AEM Forms suporta a localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
 Para adicionar suporte para uma nova localidade em tempo de execução de formulários adaptáveis:
 
@@ -93,12 +93,12 @@ LogMessages.js
 
 ### Adicionar suporte de localidade para o dicionário {#add-locale-support-for-the-dictionary-br}
 
-Execute essa etapa somente se o item `<locale>` que você está adicionando não estiver entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja``ko-kr`, .
+Execute essa etapa somente se o item `<locale>` que você está adicionando não estiver entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja``ko-kr`, .
 
 1. Crie um `nt:unstructured` nó `languages` em `etc`, se ainda não estiver presente.
 
 1. Adicione uma propriedade de string com vários valores `languages` ao nó, se ainda não estiver presente.
-1. Adicione os valores de localidade `<locale>` padrão `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`, se ainda não estiver presente.
+1. Adicione os valores de localidade `<locale>` padrão `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, se ainda não estiver presente.
 
 1. Adicione os valores `<locale>` da `languages` propriedade de `/etc/languages`.
 
