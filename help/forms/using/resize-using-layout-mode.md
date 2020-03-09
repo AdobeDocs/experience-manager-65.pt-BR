@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -81,11 +81,11 @@ Você pode repetir as etapas 1 e 2 e selecionar ![Selecionar pai](assets/float_t
 
 Execute as seguintes etapas para definir o número de colunas de um painel:
 
-1. No modo **[!UICONTROL Editar]** , toque no painel, selecione ![Configurar](assets/configure_icon.png)e selecione **[!UICONTROL Responsivo - tudo na página sem a opção de navegação]** .
+1. No modo **[!UICONTROL Editar]** , toque no painel, selecione ![Configurar](assets/configure_icon.png)e selecione **[!UICONTROL Responsivo - tudo na página sem a opção de navegação]** na lista suspensa Layout **[!UICONTROL do]** painel.
 
 1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
 
-1. No modo **[!UICONTROL Layout]** , toque em qualquer um dos componentes no painel que você deseja redimensionar, selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione a primeira opção na lista suspensa, se o painel for o pai imediato do componente.
+1. No modo **[!UICONTROL Layout]** , toque em qualquer um dos componentes no painel, selecione ![Selecionar pai](assets/select_parent_icon.svg)e selecione o painel.
 
 1. Toque em ![várias colunas](assets/multi-column.svg) e selecione o número de colunas na lista suspensa. O número de colunas pode variar de 1 a 12. O painel é dividido em um layout de várias colunas.
 
