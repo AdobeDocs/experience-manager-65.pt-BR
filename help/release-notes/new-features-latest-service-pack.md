@@ -4,14 +4,14 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 93521f102596a7f5cb247ddc430626d352338ce8
+source-git-commit: c9e8e1f2ebb72efc2f54c13c3ddae525ec55349f
 
 ---
 
 
 # Novidades do Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Em 2020, o Adobe Experience Manager (AEM) 6.5 oferece recursos e melhorias contínuas em Service Packs trimestrais. Os clientes se beneficiam dessa nova abordagem à medida que adotam as inovações mais rapidamente.
+O Adobe Experience Manager (AEM) 6.5 fornece recursos e melhorias contínuas por meio de Service Packs trimestrais este ano. A nova abordagem beneficia nossos clientes à medida que eles adotam as inovações mais rapidamente.
 
 O AEM Service Pack 4 (6.5.4.0) mais recente foi lançado em 5 **de março de 2020**. Este artigo destaca os recursos que o Service Pack mais recente oferece para tornar sua jornada do AEM mais enriquecedora.
 
@@ -23,20 +23,17 @@ O AEM Service Pack 4 (6.5.4.0) mais recente foi lançado em 5 **de março de 202
 
 * Redução do tempo para atualizar uma página após arrastar e soltar Fragmentos de experiência na tela de um editor de página.
 
-* Em Visão geral da Live Copy, o tempo para carregar entradas foi reduzido quando um site tem mais de 200 cópias online.
+* Redução do tempo de carregamento de entradas para uma página Sites com mais de 200 cópias online na Visão geral da Live Copy.
 
-* No Editor de modelos, foi aprimorada a manipulação de URLs incompletos ou inválidos que podem fazer com que o Editor de modelos fique lento.
+* Aprimorado o tratamento de URLs incompletos ou inválidos que podem fazer com que o Editor de modelos fique lento no Editor de modelos.
 
-Além disso, o AEM 6.5 SP4 inclui melhorias no Sistema de estilo. Agora você também pode selecionar estilos em uma caixa de diálogo de componente.
-
+Além disso, o AEM 6.5 Service Pack 4 inclui melhorias no Sistema de estilo. Agora você também pode selecionar estilos em uma caixa de diálogo de componente.
 
 ## Ativos AEM {#aem-assets}
 
 ### Integração com o Brand Portal por meio do Console de E/S da Adobe {#assets-integration-bp}
 
-Os ativos AEM agora estão configurados com o Portal de marcas por meio da E/S da Adobe, que obtém um token IMS para autorização do locatário do Portal de marcas. Anteriormente, ele era configurado na interface clássica por meio do Gateway OAuth herdado.
-
-As novas integrações com o OAuth herdado não serão suportadas após 6 de abril de 2020 e serão transferidas para o console de E/S da Adobe. Se você não modificar a integração, as configurações existentes continuarão funcionando.
+Agora você pode configurar os ativos AEM com o Portal de marcas por meio do Console de E/S da Adobe. O Console de E/S da Adobe obtém um token IMS para autorização do locatário do Brand Portal. Anteriormente, os ativos AEM eram configurados com o Brand Portal na interface clássica por meio do gateway OAuth herdado. As configurações que usam o Gateway OAuth Herdado serão suportadas até 6 de abril de 2020. Se você não modificar a integração, as configurações existentes continuarão funcionando.
 
 Você pode criar uma nova integração ou atualizar suas configurações de integração para o Console de E/S da Adobe.
 
@@ -56,7 +53,7 @@ Você pode criar uma nova integração ou atualizar suas configurações de inte
 
 ### Gerar saída imprimível em fluxos de trabalho do AEM Forms {#generate-printable-output}
 
-Se você quiser uma solução para imprimir várias cópias de um arquivo de modelo de origem e integrá-lo a um arquivo de dados com vários registros, uma nova etapa do fluxo de trabalho Gerar saída imprimível estará disponível no AEM Forms. Por exemplo, se você quiser imprimir um formulário de origem com um nome diferente toda vez que ele for impresso, poderá ter esses nomes no arquivo de dados e integrá-lo a um arquivo de modelo padrão.
+Se você quiser que uma solução imprima ou salve várias cópias de um arquivo de modelo de origem e integre-o a um arquivo de dados com vários registros, uma nova etapa do fluxo de trabalho Gerar saída imprimível estará disponível no AEM Forms. Por exemplo, se você quiser imprimir um formulário de origem com um nome diferente toda vez que ele for impresso, poderá ter esses nomes no arquivo de dados e integrá-lo a um arquivo de modelo padrão.
 
 Tire proveito desse recurso usando **Ferramentas** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Criar]** e pesquise a etapa do fluxo de trabalho **[!UICONTROL Gerar saída]** imprimível.
 
@@ -68,7 +65,7 @@ Para obter mais informações sobre esse recurso, consulte Fluxo de trabalho cen
 
 Agora é possível definir o número de colunas para um painel em formulários adaptáveis e comunicações interativas.
 
-Você pode encontrar a nova opção alternando para o modo Layout, tocar no painel que deseja converter em um formato de várias colunas, selecionar seu pai e tocar no ícone de várias colunas, conforme mostrado na figura a seguir, para definir o número de colunas do painel.
+Você pode encontrar a nova opção alternando para o modo Layout. Toque no painel que deseja converter em um formato de várias colunas, selecione seu pai e toque no ícone de várias colunas para definir o número de colunas para o painel.
 
 ![Layout de várias colunas](assets/multi-column-layout.gif)
 
@@ -80,13 +77,13 @@ Você já sentiu a necessidade de personalizar as opções disponíveis no cabe�
 
 **Personalize o texto do cabeçalho**
 
-Os usuários que pertencem ao grupo de administradores **de** fluxo de trabalho agora podem personalizar o texto do cabeçalho disponível na parte superior com o texto de sua própria escolha para substituir o texto existente do **[!UICONTROL Adobe Experience Manager]** .
+Os administradores de fluxo de trabalho agora podem especificar o texto do cabeçalho de sua própria escolha.
 
 Você pode encontrar a nova opção **[!UICONTROL Personalizar o texto]** do cabeçalho sob o seletor de exibição (disponível na parte superior direita da barra de ferramentas) > Controle **[!UICONTROL de]** administração.
 
 **Personalizar logotipo**
 
-Assim como personalizar o texto do cabeçalho, os usuários que pertencem ao grupo de administradores **de** fluxo de trabalho agora podem personalizar o logotipo disponível na parte superior com o logotipo de sua escolha.
+Semelhante à personalização do texto do cabeçalho, os administradores do fluxo de trabalho agora podem especificar o logotipo do cabeçalho de sua própria escolha.
 
 Você pode encontrar a nova opção **[!UICONTROL Personalizar logotipo]** no seletor de exibição > Controle **[!UICONTROL de]** administração.
 
@@ -94,7 +91,7 @@ Para obter mais informações sobre esse recurso, consulte [Sua Caixa de entrada
 
 ### Controle de navegação do usuário {#user-navigation-control}
 
-Os usuários que pertencem ao grupo de administradores **de** fluxo de trabalho têm a opção de fazer com que os usuários trabalhem no AEM em um modo restrito com base em sua função. Os administradores podem controlar a exibição das opções de navegação disponíveis no cabeçalho e restringir os usuários a alternar para o modo de criação do fluxo de trabalho ou navegar até Ajuda ou outros links da solução.
+Os administradores de fluxo de trabalho agora têm a opção de fazer com que os usuários trabalhem no AEM em um modo restrito com base em sua função. Os administradores podem controlar a exibição de opções de navegação disponíveis no cabeçalho para restringir os usuários a alternarem para o modo de criação do fluxo de trabalho ou outros links da solução.
 
 Confira as novas opções **[!UICONTROL de navegação]** Ocultar no seletor de exibição > Controle **** administrativo.
 
@@ -102,9 +99,9 @@ Para obter mais informações sobre esse recurso, consulte [Sua Caixa de entrada
 
 ### Suporte a Rich Text em formulários HTML5 {#rich-text-support}
 
-O campo de texto agora pode exibir uma lista de opções de formatação no formulário HTML5 renderizado. É necessário definir um formato de campo para o campo de texto no Forms Designer para aplicar as configurações apropriadas ao campo.
+O campo de texto agora pode exibir uma lista de opções de formatação no formulário HTML5 renderizado. É necessário definir um formato para o campo de texto no Forms Designer para aplicar as configurações apropriadas ao campo.
 
-Para usar esse recurso, toque no campo de texto na Exibição **[!UICONTROL de]** design no Designer de formulários. Na guia **[!UICONTROL Campo]** , selecione **[!UICONTROL Rich Text]** na lista suspensa Formato **[!UICONTROL de]** campo para aplicar as configurações. O campo de texto agora exibe opções de formatação quando renderizado em um formulário HTML5.
+Para usar esse recurso, toque no campo de texto na Exibição **[!UICONTROL de]** design no Designer de formulários. Na guia **[!UICONTROL Campo]** , selecione **[!UICONTROL Rich Text]** na lista suspensa Formato **[!UICONTROL de]** campo para aplicar as configurações.
 
 Para obter mais informações, consulte [Criar modelos de formulário para formulários](../forms/using/designing-form-template.md)HTML5.
 
@@ -112,9 +109,9 @@ Para obter mais informações, consulte [Criar modelos de formulário para formu
 
 Além dos novos recursos, o AEM 6.5 Service Pack 4 inclui os seguintes destaques principais:
 
-* Somente subárvores de conteúdo seletivo podem ser sincronizadas no modo ***Mídia*** dinâmica - Scene7 em vez de em todos os `content/dam`.
+* Agora você pode sincronizar subárvores de conteúdo seletivo no Scene7 em vez de todas as subárvores disponíveis no `content/dam`.
 
-* A integração do modelo de dados de formulário usando o serviço da Web SOAP agora oferece suporte a grupos de escolha ou atributos em elementos.
+* A integração do modelo de dados de formulário com o serviço da Web SOAP agora oferece suporte a grupos de escolha ou atributos em elementos.
 
 * A entrada ou saída SOAP e estruturas de dados complexas agora suportam Substituição de Grupo Dinâmico.
 
@@ -158,7 +155,7 @@ Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes
 
 * AEM Sites: Tipo de arquivo do projeto 23A melhor maneira de iniciar um novo projeto do AEM. Com o Archetype 23, estamos [mesclando o Project Archetype for SPA e os sites regulares em um único](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23), além de fornecer um tema padrão para iniciar seu desenvolvimento de front-end.
 
-* AEM Sites: Site de referência WKNDetodos os [novos projetos](https://www.wknd.site/) de referência com as práticas recomendadas sobre como criar sites com o AEM. Saiba mais sobre como ler o tutorial [totalmente atualizado do](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) WKND e obter o código do [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
+* AEM Sites: Site de referência WKNDetodos os [novos projetos](https://www.wknd.site/) de referência com as práticas recomendadas sobre como criar sites com o AEM. Saiba mais ao ler o tutorial [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) WKND completamente atualizado e capturar o código do [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
 
 * AEM Sites: Commerce CIF Core Components 0.7.0 e 0.9.0Integrando o AEM Sites e o Magento Commerce. Estamos [estendendo continuamente os Componentes principais dedicados e um Arquivo de projeto com foco no Comércio](https://github.com/adobe/aem-core-cif-components/releases).
 
