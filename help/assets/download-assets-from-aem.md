@@ -1,16 +1,16 @@
 ---
-title: Baixar ativos do AEM
+title: Baixar ativos no AEM
 description: Saiba como baixar ativos do AEM e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
 
-# Baixar ativos do AEM {#download-assets-from-aem}
+# Baixar ativos no AEM {#download-assets-from-aem}
 
-Você pode baixar ativos incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente dos ativos AEM. Os ativos baixados são agrupados em um arquivo ZIP. O arquivo ZIP compactado tem um tamanho máximo de 1 GB para o trabalho de exportação. É permitido um máximo de 500 ativos por tarefa de exportação.
+Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente dos ativos AEM. Os ativos baixados são agrupados em um arquivo ZIP. O arquivo ZIP compactado tem um tamanho máximo de 1 GB para o trabalho de exportação. É permitido um máximo de 500 ativos por tarefa de exportação.
 
 >[!NOTE]
 >
@@ -20,13 +20,15 @@ Para baixar ativos, navegue até um ativo, selecione o ativo e toque em **[!UICO
 
 Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de mídia mista e Conjuntos de carrossel não podem ser baixados.
 
-![Opções disponíveis ao baixar ativos do AEM Assets](assets/asset_download_dialog.png)*Figura: Opções disponíveis ao baixar ativos do AEM Assets*
+![Opções disponíveis ao baixar ativos do AEM Assets](assets/asset_download_dialog.png)
+
+*Figura: Opções disponíveis ao baixar ativos do AEM Assets*
 
 Veja a seguir as opções de Exportação/Download. As renderizações dinâmicas são exclusivas do Dynamic Media e permitem que você gere renderizações dinamicamente, além do ativo selecionado - essa opção só estará disponível se o Dynamic Media estiver ativado.
 
 | Opções de exportação ou download | Descrições |
 |---|---|
-| [!UICONTROL Assets] | Selecione essa opção para baixar o ativo em seu formulário original sem execuções. |
+| [!UICONTROL Ativos] | Selecione essa opção para baixar o ativo em seu formulário original sem execuções. |
 | [!UICONTROL Representações] | Uma representação é uma representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Podem ter qualquer número de representações. <br> Com essa opção, você pode selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
 | [!UICONTROL Representações dinâmicas] | Uma execução dinâmica gera outras execuções dinamicamente. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista Predefinição [de](image-presets.md) imagem. <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cor, a resolução e qualquer modificador de imagem (por exemplo, para inverter a imagem) |
 | [!UICONTROL E-mail] | Uma notificação por email é enviada ao usuário. Os modelos padrão de e-mails estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> Os modelos que você personaliza durante a implantação devem estar presentes nesses locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>Você pode armazenar modelos personalizados específicos do locatário nesses locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
@@ -58,7 +60,7 @@ Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Sha
 
 ## Desativar o servlet de download de ativos {#disable-asset-download-servlet}
 
-O `Asset Download Servlet` pode ser desativado em instâncias de publicação de AEM atualizando a configuração do dispatcher para bloquear quaisquer solicitações de download de ativos. O servlet também pode ser desativado manualmente através do console OSGi diretamente.
+O `Asset Download Servlet` pode ser desativado em instâncias de publicação de AEM atualizando a configuração do dispatcher para bloquear quaisquer solicitações de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
 
 1. Para bloquear solicitações de download de ativos por meio de uma configuração do dispatcher, edite a `dispatcher.any` configuração e adicione uma nova regra à seção [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro.
 
