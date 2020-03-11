@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d09e02c451c01955b93bc3149fc663754435fdf
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -52,7 +52,7 @@ Você pode descobrir os ativos desejados mais rapidamente a partir da página de
 
 ![Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.](assets/asset_search_results_in_facets_filters.png)
 
-*Figura: Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.*
+*Figura: Veja o número aproximado de ativos sem filtrar os resultados da pesquisa nas facetas de pesquisa*
 
 ## Compreender os resultados e o comportamento da pesquisa {#searchbehavior}
 
@@ -74,7 +74,7 @@ O AEM pode pesquisar vários formatos de arquivo e os filtros de pesquisa podem 
 
 ### Resultados com e sem Tags inteligentes aprimoradas {#withsmarttags}
 
-Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave mulheres em execução. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
+Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
 
 * `woman running`
 * `woman.running`
