@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d0038181326037ab71f4df9b509d2f0827191c86
+source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
 
 ---
 
@@ -19,15 +19,15 @@ O AEM Service Pack 4 (6.5.4.0) mais recente foi lançado em 5 **de março de 202
 
 ### Melhorias no desempenho em várias áreas {#performance-improvements}
 
-* Redução do tempo para carregar e inicializar o ContextHub em um site (contexthub.kernel.js). Isso resulta no carregamento de uma página mais rápido durante uma visita ao site.
+* Redução do tempo para carregar e inicializar o ContextHub em um site (contexthub.kernel.js). Isso resulta em cargas de página mais rápidas durante uma visita ao site.
 
-* Redução do tempo para atualizar uma página após arrastar e soltar Fragmentos de experiência na tela de um editor de página.
+* Reduziu o tempo de atualização de uma página depois de arrastar e soltar Fragmentos de experiência no editor de página Sites.
 
 * Redução do tempo de carregamento de entradas para uma página Sites com mais de 200 cópias online na Visão geral da Live Copy.
 
-* Aprimorado o tratamento de URLs incompletos ou inválidos que podem fazer com que o Editor de modelos fique lento no Editor de modelos.
+* Funcionamento aprimorado de URLs incompletos ou inválidos. Tais URLs podem retardar o Editor de modelos.
 
-Além disso, o AEM 6.5 Service Pack 4 inclui melhorias no Sistema de estilo. Agora você também pode selecionar estilos em uma caixa de diálogo de componente.
+Além disso, o AEM 6.5.4.0 inclui melhorias no Sistema de estilo. Agora é possível selecionar estilos na caixa de diálogo do componente.
 
 ## Ativos AEM {#aem-assets}
 
