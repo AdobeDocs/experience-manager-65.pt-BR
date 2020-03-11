@@ -3,7 +3,7 @@ title: Gerenciamento de direitos digitais em ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados no AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -20,7 +20,7 @@ Você pode exibir o status de expiração de um ativo no console Ativos nas exib
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figura: Na exibição do cartão, um sinalizador no cartão indica o ativo expirado.*
+*Figura: Na exibição de cartão, um sinalizador no cartão indica o ativo expirado*
 
 **Exibição de lista**
 
@@ -28,11 +28,11 @@ Você pode exibir o status de expiração de um ativo no console Ativos nas exib
 
 *Figura: Na exibição de lista, a coluna[!UICONTROL Status]exibe o banner[!UICONTROL Expirado].*
 
- Você pode exibir o status de expiração de um ativo na linha do tempo. Selecione o ativo e escolha Linha do tempo no menu GlobalNav.
+Você pode exibir o status de expiração de um ativo na linha do tempo. Selecione o ativo e escolha Linha do tempo no menu GlobalNav.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
- Você também pode exibir o status de expiração dos ativos no painel **[!UICONTROL Referências]** . Ele gerencia os status e as relações de expiração de ativos entre ativos compostos e subativos, coleções e projetos referenciados.
+Você também pode exibir o status de expiração dos ativos no painel **[!UICONTROL Referências]** . Ele gerencia os status e as relações de expiração de ativos entre ativos compostos e subativos, coleções e projetos referenciados.
 
 1. Navegue até o ativo para o qual você deseja exibir páginas da Web de referência e ativos compostos.
 1. Selecione o ativo e o logotipo do Experience Manager.
@@ -85,7 +85,7 @@ Para permitir que o console Assets exiba os ativos compostos de referência junt
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
 1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; aciona o trabalho às 00 horas.
-1. Selecione **[!UICONTROL enviar email]** para receber emails quando um ativo expirar.
+1. Selecione **[!UICONTROL enviar e-mail]** para receber e-mails quando um ativo expirar.
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ Para permitir que o console Assets exiba os ativos compostos de referência junt
 
 ## Estados do ativo {#asset-states}
 
-O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários estados dos ativos. Dependendo do estado atual de um ativo específico, sua exibição de cartão exibe um rótulo que descreve seu estado, por exemplo, Expirado, Publicado, Aprovado, Rejeitado etc.
+O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários estados dos ativos. Dependendo do estado atual de um ativo específico, sua exibição de cartão exibe um rótulo que descreve seu estado, por exemplo, Expirado, Publicado, Aprovado, Rejeitado e assim por diante.
 
 1. Na interface do usuário Ativos, selecione um ativo.
 
