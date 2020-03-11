@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c491b77dac1bf25b9e348ed12d16ed7894e5493e
+source-git-commit: 1d09e02c451c01955b93bc3149fc663754435fdf
 
 ---
 
@@ -31,6 +31,8 @@ O AEM oferece suporte aos seguintes casos de uso e este artigo descreve o uso, o
 Procure ativos usando o campo Omnisearch na parte superior da interface da Web do AEM. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** no AEM, clique no ícone de pesquisa na barra superior, digite a palavra-chave de pesquisa e pressione return. Como alternativa, use o atalho de palavra-chave / (barra) para abrir o campo Omnisearch. Local: os ativos são pré-selecionados para limitar as pesquisas aos ativos DAM. O AEM fornece sugestões para começar a digitar uma palavra-chave de pesquisa.
 
 Use o painel **[!UICONTROL Filtros]** para restringir sua pesquisa filtrando os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento do Adobe Stock. Seus administradores podem personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando aspectos de pesquisa.
+
+Observe que o filtro Tipo [!UICONTROL de] arquivo no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto, o que significa que, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível não estão selecionadas e, em vez disso, são riscadas.
 
 O recurso de pesquisa do AEM oferece suporte à pesquisa de coleções e à pesquisa de ativos em uma coleção. Consulte Coleções [de pesquisa](/help/assets/managing-collections-touch-ui.md).
 
