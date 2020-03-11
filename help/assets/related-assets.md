@@ -3,7 +3,7 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos que compartilham determinados atributos comuns. Você também pode usar o recurso para criar relações de origem/derivadas entre ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
+source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
 
 ---
 
@@ -14,7 +14,7 @@ Os ativos Adobe Experience Manager (AEM) permitem relacionar manualmente os ativ
 
 Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou JPG de baixa resolução com fornecedores ou agências e disponibilizar o arquivo INDD de alta resolução somente mediante solicitação.
 
->[!NOTE] Os usuários com permissões de edição podem relacionar e desrelacionar ativos.
+>[!NOTE] Somente os usuários com permissões de edição podem relacionar e desrelacionar ativos.
 >
 
 ## Relate assets {#relating-assets}
