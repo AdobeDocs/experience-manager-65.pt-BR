@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -41,6 +41,6 @@ O principal destino para formulários HTML5 é dispositivos de toque. Portanto, 
 
 #### Rich text format {#rich-text-format}
 
-Defina um formato de campo de texto formatado para o campo de texto no Forms Designer para adicionar uma lista de opções de formatação ao campo no formulário HTML5 renderizado. Para aplicar as configurações, toque no campo de texto na Exibição **[!UICONTROL de projeto]**. Na guia **[!UICONTROL Campo]** , selecione **[!UICONTROL Rich Text]** na lista suspensa Formato **[!UICONTROL de]** campo. O campo de texto exibe opções de formatação quando renderizado em um formulário HTML5.
+É possível converter um campo de texto em um campo de texto formatado. Ela adiciona uma lista de opções de formatação ao campo de texto. Para converter, abra o Designer de Formulários e toque no campo de texto na Exibição **[!UICONTROL de]** design. Na guia **[!UICONTROL Campo]** , selecione **[!UICONTROL Rich Text]** na lista suspensa Formato **[!UICONTROL de]** campo. Agora, quando o formulário XFA é renderizado como um Formulário HTML5, o campo é renderizado como um campo Rich Text.
 
 [Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
