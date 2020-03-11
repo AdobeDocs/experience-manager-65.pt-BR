@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -138,15 +138,15 @@ A opção Controle de administrador permite que os administradores:
 
 * Controlar a exibição de links de navegação disponíveis no cabeçalho
 
-A opção Controle de administrador é exibida na lista suspensa do seletor de exibição somente se você for membro do grupo de administradores ou administradores de fluxo de trabalho.
+A opção Controle de administrador está visível somente para os membros do grupo de administradores ou administradores de fluxo de trabalho.
 
 ![controle admin](assets/admin-control.png)
 
 * **Personalização da marca**
 
-   * **Personalizar o texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho.
+   * **Personalizar o texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto padrão do **Adobe Experience Manager** .
 
-   * **Personalizar logotipo:** Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a para exibi-la no cabeçalho.
+   * **Personalizar logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a no campo.
 
 * **Navegação do usuário**
    * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
