@@ -3,7 +3,7 @@ title: Usar ativos conectados para compartilhar ativos DAM no fluxo de trabalho 
 description: Use os ativos disponíveis em uma implantação remota dos ativos Adobe Experience Manager ao criar suas páginas da Web em outra implantação do Site do Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -109,7 +109,7 @@ Para configurar a conectividade dos ativos conectados e dos sites locais, siga e
 
 ## Usar ativos remotos {#use-remote-assets}
 
-Os autores do site usam o Content Finder para se conectar à instância do DAM. Os autores podem procurar e arrastar os ativos remotos em um componente. Para autenticar no DAM remoto, mantenha as credenciais do usuário DAM fornecidas pelo administrador acessíveis.
+Os autores do site usam o Content Finder para se conectar à instância do DAM. Os autores podem navegar, procurar e arrastar os ativos remotos em um componente. Para autenticar no DAM remoto, mantenha as credenciais do usuário DAM fornecidas pelo administrador acessíveis.
 
 Os autores podem usar os ativos disponíveis em ambas as instâncias, DAM local e DAM remoto, em uma única página da Web. Use o Localizador de conteúdo para alternar entre a pesquisa no DAM local ou a pesquisa no DAM remoto.
 
@@ -139,7 +139,7 @@ Use a configuração acima para tentar a experiência de criação para entender
 
    ![Notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.](assets/assets_async_transfer_fails.png)
 
-   *Figura: Notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.*
+   *Figura: Notificação sobre a busca assíncrona de ativos que ocorre em segundo plano*
 
 1. Ao publicar uma página, o AEM exibe uma lista completa de ativos que são usados na página. Certifique-se de que os ativos remotos sejam buscados com êxito no momento da publicação. Para verificar o status de cada ativo obtido, consulte a interface do usuário de trabalhos [assíncronos](/help/assets/asynchronous-jobs.md) .
 
