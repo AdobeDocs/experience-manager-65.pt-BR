@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
 
-# Configurar o Editor de Rich Text {#configure-the-rich-text-editor}
+# Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 O Editor de Rich Text (RTE) fornece aos autores uma ampla variedade de funcionalidades para editar seu conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto WYSIWYG.
 
@@ -20,15 +20,21 @@ O RTE pode ser configurado para ativar, desativar e estender os recursos dispon�
 
 O fluxo de trabalho a seguir ilustra uma ordem recomendada para a conclusão das tarefas de configuração do RTE.
 
-![Sequência de etapas para aprender como configurar a](assets/rte_workflow_v1.png)*Figura: Sequência de etapas para saber como configurar o RTE*
+![Sequência de etapas para saber como configurar a taxa](assets/rte_workflow_v1.png)
+
+*Figura: Sequência de etapas para saber como configurar o RTE*
 
 ## Entenda a interface habilitada para toque e a interface clássica {#understand-touch-enabled-ui-and-classic-ui}
 
 A interface habilitada para toque é a interface de usuário padrão do AEM. A Adobe introduziu a interface do usuário para toque com design [](/help/sites-authoring/responsive-layout.md) responsivo para o ambiente de criação. A interface do usuário de toque foi projetada para dispositivos de toque e desktop. A interface do usuário é consideravelmente diferente da interface clássica original.
 
-![Barra de ferramentas do Editor de Rich Text na interface habilitada para toque](assets/chlimage_1-35.png)*Figura: Barra de ferramentas do Editor de Rich Text na interface habilitada para toque*
+![Barra de ferramentas do Editor de Rich Text na interface habilitada para toque](assets/chlimage_1-35.png)
 
-![Barra de ferramentas do Editor de Rich Text na interface clássica](assets/rtedefault.png)*Figura: Barra de ferramentas do Editor de Rich Text na interface clássica*
+*Figura: Barra de ferramentas do Editor de Rich Text na interface habilitada para toque*
+
+![Barra de ferramentas do Editor de Rich Text na interface clássica](assets/rtedefault.png)
+
+*Figura: Barra de ferramentas do Editor de Rich Text na interface clássica*
 
 >[!MORELIKETHIS]
 >
@@ -47,7 +53,7 @@ Os autores podem criar e editar conteúdo textual no AEM usando os diferentes mo
 | Inline | Edição no local para edições rápidas e secundárias; Formatar sem abrir uma caixa de diálogo | Recursos mínimos do RTE | S | S |
 | RTE tela cheia | Cobre a página inteira | Todos os recursos RTE necessários | S | N |
 | Caixa de diálogo | Caixa de diálogo sobre o conteúdo da página, mas não cobre a página inteira | Todos os recursos do RTE necessários na interface clássica; habilite criteriosamente os recursos na interface do usuário de toque | S | S |
-| Tela cheia do diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo ao lado do RTE | Todos os recursos RTE necessários | S | N |
+| Tela cheia da caixa de diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo ao lado do RTE | Todos os recursos RTE necessários | S | N |
 
 >[!NOTE]
 >
@@ -55,27 +61,35 @@ Os autores podem criar e editar conteúdo textual no AEM usando os diferentes mo
 
 ### Edição em linha {#inline-editing}
 
-Quando aberto (com um toque/clique duplo lento), o conteúdo pode ser editado na página. Uma barra de ferramentas compacta com opções muito básicas é apresentada.
+Quando aberto (com um toque/clique duplo lento), o conteúdo pode ser editado dentro da página. Uma barra de ferramentas compacta com opções muito básicas é apresentada.
 
-![Edição em linha com a barra de ferramentas básica na interface do usuário habilitada para toque](assets/chlimage_1-36.png)*Figura: Edição em linha com barra de ferramentas básica na interface habilitada para toque*
+![Edição em linha com barra de ferramentas básica na interface habilitada para toque](assets/chlimage_1-36.png)
+
+*Figura: Edição em linha com barra de ferramentas básica na interface habilitada para toque*
 
 Na interface clássica, um clique duplo lento no componente permite a edição em linha e um contorno laranja destaca o conteúdo. Se o Localizador de conteúdo estiver aberto, uma barra de ferramentas com as opções de formatação RTE disponíveis será exibida na parte superior da janela. Se o Localizador de conteúdo não estiver aberto, as opções de formatação não serão exibidas e você só poderá fazer edições de texto básicas.
 
-### Edição em tela cheia {#full-screen-editing}
+### Full screen editing {#full-screen-editing}
 
-Os componentes do AEM podem ser abertos na exibição em tela cheia que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia de uma versão detalhada da edição em linha, já que ela oferece as opções de edição mais avançadas. Pode ser aberto clicando em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta ao usar o modo de edição em linha.
+Os componentes do AEM podem ser abertos na exibição em tela cheia que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia de uma versão detalhada da edição em linha, já que ela oferece as opções de edição mais avançadas. Para abri-lo, clique em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
 
-No modo de tela cheia da caixa de diálogo, juntamente com uma barra de ferramentas RTE detalhada, as opções e os componentes disponíveis em uma caixa de diálogo também estão disponíveis. É aplicável somente para uma caixa de diálogo que contenha RTE junto com outros componentes.
+No modo de tela cheia da caixa de diálogo, juntamente com uma barra de ferramentas RTE detalhada, as opções e os componentes disponíveis em uma caixa de diálogo também estão disponíveis. É aplicável somente para uma caixa de diálogo que contém o RTE junto com outros componentes.
 
-![A barra de ferramentas RTE detalhada ao editar no modo de tela cheia na interface habilitada para toque](assets/chlimage_1-37.png)*Figura: A barra de ferramentas RTE detalhada ao editar no modo de tela cheia na interface habilitada para toque*
+![A barra de ferramentas RTE detalhada ao editar no modo de tela cheia na interface habilitada para toque](assets/chlimage_1-37.png)
+
+*Figura: A barra de ferramentas RTE detalhada ao editar no modo de tela cheia na interface habilitada para toque*
 
 ### Edição de diálogo {#dialog-editing}
 
 Quando um componente é clicado duas vezes, uma caixa de diálogo é aberta para edição do conteúdo. A caixa de diálogo é aberta na parte superior da página existente. Em alguns cenários específicos, a caixa de diálogo é aberta como uma janela pop-up. Por exemplo, quando um componente de Texto faz parte de uma coluna em um layout de página de várias colunas e a área disponível para a caixa de diálogo é menor.
 
-![Modo de edição de diálogo na interface de usuário habilitada para toque](assets/dialog_editing_modetouchui.png)*Figura: Modo de edição de diálogo na interface habilitada para toque*
+![Modo de edição de diálogo na interface habilitada para toque](assets/dialog_editing_modetouchui.png)
 
-![Caixa de diálogo na interface clássica que contém a barra de ferramentas detalhada para edição](assets/chlimage_1-38.png)*Figura: Caixa de diálogo na interface clássica que contém a barra de ferramentas detalhada para edição*
+*Figura: Modo de edição de diálogo na interface habilitada para toque*
+
+![Caixa de diálogo na interface clássica que contém a barra de ferramentas detalhada para edição](assets/chlimage_1-38.png)
+
+*Figura: Caixa de diálogo na interface clássica que contém a barra de ferramentas detalhada para edição*
 
 ## Sobre plug-ins RTE e os recursos associados {#aboutplugins}
 
@@ -146,7 +160,7 @@ Configure as seguintes propriedades que se aplicam no modo de edição de Diálo
 
    Quando essa propriedade é verdadeira, a edição de Richtext é, por padrão, iniciada no evento &quot;base-contentloaded&quot;.
 
-   Para evitar isso, defina a propriedade `customStart` como `True`e dispare o evento &#39;início-da-taxa&#39; para iniciar a edição do RTE. Quando essa propriedade é &#39;true&#39;, o comportamento padrão, iniciar na hora do clique, não funciona.
+   Para evitar isso, defina a propriedade `customStart` como `True`e dispare o evento &#39;início-da-taxa&#39; para iniciar a edição do RTE. Quando essa propriedade for &#39;true&#39;, o comportamento padrão, iniciar na hora do clique, não funcionará.
 
 * `customStart`: Defina essa propriedade Booliana definida no nó RTE como `True`, para controlar quando iniciar o RTE acionando o evento `rte-start`.
 
@@ -164,7 +178,7 @@ Para obter configurações detalhadas dos plug-ins RTE, consulte [como ativar e 
 
 >[!NOTE]
 >
->O componente [de texto Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) principais permite que os editores de modelo configurem muitos plug-ins RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com configurações de interface do usuário do RTE conforme descrito neste documento.
+>O componente [de texto Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) principais permite que os editores de modelo configurem muitos plug-ins RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com configurações de interface do usuário do RTE, conforme descrito neste documento.
 >
 >Para obter mais informações, consulte a seção Configurações da interface do usuário do [RTE e políticas](/help/sites-administering/rich-text-editor.md) de conteúdo deste documento, bem como [Criar modelos](/help/sites-authoring/templates.md) de página e a documentação [do desenvolvedor dos Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)principais.
 
@@ -287,7 +301,7 @@ Em uma página, você pode incluir a clientlib do RTE CoralUI 2 ou a clientlib d
 >Se você estiver usando plug-ins personalizados para CoralUI3 RTE, use a `rte.coralui3` biblioteca.
 
 
-1. Sobreponha o nó `/libs/cq/gui/components/authoring/editors/clientlibs/core` em `/apps`e faça o seguinte:
+1. Sobreponha o nó `/libs/cq/gui/components/authoring/editors/clientlibs/core` em `/apps`, e faça o seguinte:
 
    * Replace `rte.coralui3` with `rte.coralui2` for the dependencies property.
    * Replace `cq.authoring.editor.core.inlineediting.rte.coralui3` with `cq.authoring.editor.core.inlineediting.rte.coralui2` for the embed property.
