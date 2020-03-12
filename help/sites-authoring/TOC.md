@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
 
 ---
 
@@ -14,40 +14,41 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 + [Visão geral do Guia do usuário de criação](home.md)
 + Tarefas essenciais, ferramentas e conceitos para a criação do AEM {#essentials}
    + [Primeiros passos para autores](first-steps.md)
+   + [Criação de página](page-authoring.md)
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
    + [Conceito de criação](author.md)
    + [Manuseio básico](basic-handling.md)
    + [Pesquisar](search.md)
    + [Configurar o ambiente da sua conta](user-properties.md)
    + [Sua Caixa de entrada](inbox.md)
-   + [Atalhos de teclado para os consoles](keyboard-shortcuts.md)
+   + [Atalhos de teclado para Consoles](keyboard-shortcuts.md)
    + [Selecionar sua interface do usuário](select-ui.md)
 + Criação {#authoring}
    + [Ambiente e ferramentas de criação](author-environment-tools.md)
    + [Anotações ao editar uma página](annotations.md)
    + [Criar e organizar páginas](managing-pages.md)
    + [Editar conteúdo da página](editing-content.md)
-   + [Usar o Editor de Rich Text para criar conteúdo](rich-text-editor.md)
+   + [Uso do Editor de rich text para criar conteúdo](rich-text-editor.md)
    + [Editar as propriedades da página](editing-page-properties.md)
    + [Publicar páginas](publishing-pages.md)
    + [Criação de página com fragmentos de conteúdo](content-fragments.md)
    + [Fragmentos de experiência](experience-fragments.md)
    + [Exportar para CSV](csv-export.md)
    + [Componentes](default-components.md)
-   + [Criação de uma página para dispositivos móveis](mobile.md)
-   + [Solucionar problemas do AEM durante a criação](troubleshooting.md)
+   + [Criação de uma página para dispositivos móveis  ](mobile.md)
+   + [Solucionar problemas do AEM durante a criação  ](troubleshooting.md)
    + [Atalhos de teclado ao editar as páginas](page-authoring-keyboard-shortcuts.md)
-   + [Melhores práticas](best-practices.md)
+   + [Práticas recomendadas  ](best-practices.md)
 + Recursos de site e página {#siteandpage}
    + [Uso de tags](tags.md)
-   + [Criação de modelos de páginas](templates.md)
+   + [Criação de modelos de páginas  ](templates.md)
    + [Sistema de estilos](style-system.md)
    + [Trabalhar com versões de páginas](working-with-page-versions.md)
    + [Diferencial de páginas](page-diff.md)
    + [Console de componentes](default-components-console.md)
    + [Layout responsivo](responsive-layout.md)
    + [Content Insight](content-insights.md)
-   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)](creating-accessible-content.md)
+   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)  ](creating-accessible-content.md)
    + [Andaime](scaffolding.md)
    + [Configuração dos componentes no Modo de design](default-components-designmode.md)
    + [Componentes fundamentais](default-components-foundation.md)
