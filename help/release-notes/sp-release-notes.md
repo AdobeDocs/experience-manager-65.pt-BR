@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 7cc22c6558394c5e12ea2477bb07ff02dabc8dbc
 
 ---
 
@@ -118,7 +118,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * O realce de campo para seleção de campo obrigatória no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de esquema de metadados correspondente (NPR-31834).
 
-* Nomes completos de tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
+* Os nomes completos das tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
 
 * O uso do comando back da página Propriedades do ativo no navegador Safari dá um erro (NPR-31753).
 
@@ -244,7 +244,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Designer: Se houver células unidas em uma tabela, o teste de acessibilidade falhará para o arquivo PDF de saída convertido de um formulário XDP usando o serviço de saída (CQ-4285372).
 
-* JEE de base: O servidor que é desconectado de um cluster falha na reconexão devido a problemas de cache (NPR-32412).
+* JEE de base: Se um servidor do AEM Forms for desconectado de um cluster, problemas de cache impedirão que ele se reconecte ao servidor (NPR-32412).
 
 ## Install 6.5.4.0 {#install}
 
