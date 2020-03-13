@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Selecionar sua interface do usuário](author-env-select-ui.md)
    + [Pesquisar](author-env-search.md)
    + [Sua Caixa de entrada](author-env-inbox.md)
-   + [Atalhos de teclado para os consoles](author-env-keyboard-shortcuts.md)
+   + [Atalhos de teclado para Consoles](author-env-keyboard-shortcuts.md)
 + Criação {#authoring}
    + [Criar páginas](classic-page-author.md)
    + [Criação - o Ambiente e as ferramentas](classic-page-author-env-tools.md)
@@ -31,9 +31,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Publicar páginas](classic-page-author-publish-pages.md)
    + [Editar as propriedades da página](classic-page-author-edit-page-properties.md)
    + [Anotações ao editar uma página](classic-page-author-annotations.md)
-   + [Solucionar problemas do AEM durante a criação](classic-page-author-troubleshooting.md)
-   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Criação de uma página para dispositivos móveis](classic-feature-mobile.md)
+   + [Solucionar problemas do AEM durante a criação  ](classic-page-author-troubleshooting.md)
+   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)  ](classic-page-author-accessible-content.md)
+   + [Criação de uma página para dispositivos móveis  ](classic-feature-mobile.md)
    + [Componentes da autoria de página](classic-page-author-edit-mode.md)
    + [Atalhos de teclado ao editar as páginas](classic-page-author-keyboard-shortcuts.md)
 + Recursos de site e página {#siteandpage}
@@ -74,6 +74,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Trabalhar com o Adobe Campaign](classic-personalization-ac.md)
    + [Componentes do Adobe Campaign](classic-personalization-ac-components.md)
    + [Direcionar seu Adobe Campaign](classic-personalization-ac-target.md)
+   + [Criação de formulários do Adobe Campaign no AEM](classic-personalization-ac-forms.md)
 + Criação de ativos na interface clássica {#assets}
    + [Trabalhar com ativos](classicui-assets.md)
    + [Entrega de ativos de Mídia dinâmica](dynamic-media-assets-delivering.md)
