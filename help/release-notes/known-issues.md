@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 0ae42d9f81df89a7e1c08fac5cce5240f14e8c60
 
 ---
 
 
-# Problemas conhecidos{#known-issues}
+# Problemas conhecidos {#known-issues}
 
 Esta página apresenta uma lista de problemas conhecidos do Adobe Experience Manager 6.5, lançado em abril de 2019.
 
@@ -30,9 +30,9 @@ Em cada uma dessas ações, verifique se a propriedade &quot;*htmllibmanager.fil
 
 Um artigo da [Base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) de conhecimento está disponível com mais detalhes e a solução alternativa para esse problema.
 
-## Assets {#assets}
+## Ativos {#assets}
 
-* **** Pesquisar: A pesquisa não resultará em nenhum retorno se a string de pesquisa contiver espaços à esquerda ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
+* **Pesquisar:** A pesquisa não resultará em nenhum retorno se a string de pesquisa contiver espaços à esquerda ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Esquema de metadados de pasta**: depois de adicionar um botão de escolha, os campos ID e Valor não são renderizados como esperado e a funcionalidade de exclusão não funciona. (CQ-4261144)
 * Ao renomear um ativo, não é possível usar um espaço em branco no nome do ativo. (CQ-4266403)
 
