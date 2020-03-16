@@ -1,18 +1,18 @@
 ---
 title: Notas de versão do AEM Sites
-description: Notas de versão específicas do Adobe Experience Manager 6.4 Sites.
+description: Notas de versão específicas do Adobe Experience Manager 6.5 Sites.
 uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
 
-# AEM Sites Notas de versão{#aem-sites-release-notes}
+# Notas de versão do AEM Sites{#aem-sites-release-notes}
 
 Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
@@ -48,7 +48,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
 * Componentes principais 2.3.2+, consulte o [Github para obter notas de versão](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Sistema de grade para Contêiner de layout, consulte o [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
-* Gerenciador de clientlib: padrão do Google Closure Compiler para a miniificação de clientlibs do JavaScript (padrão antigo era Yahoo YUI) e o Compilador de Fechamento do Google atualizado para a versão v20190121
+* Gerenciador de clientlib: padrão do Google Closure Compiler para a miniificação de clientlibs do JavaScript (o padrão antigo era Yahoo YUI) e o Compilador de Fechamento do Google atualizado para a versão v20190121
 * Editor de modelo e políticas
 
    * Crie e edite modelos para aplicativos de página única que estão usando o JS SDK (também chamado de Editor do SPA)
@@ -120,7 +120,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
 ## AEM e Adobe Analytics {#aem-amp-adobe-analytics}
 
-* `s_code.js` H.27.5 está incluído. A Adobe recomenda alternar a implementação para `AppMeasurement.js`
+* `s_code.js` H.27.5 está incluído. A Adobe recomenda que você mude a implementação para `AppMeasurement.js`
 * `AppMeasurement.js` v1.8.0 está incluído. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
 
 ## AEM e comércio {#aem-commerce}
