@@ -12,7 +12,7 @@ discoiquuid: c5dcc90a-05d2-4701-a625-2b655ad0b458
 docset: aem65
 pagetitle: Deploying eCommerce with hybris
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 9e39868768d2fc70f587b18d36042e742d5fae45
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
 
 >[!NOTE]
 >
->O conector para AEM 6.5 não está pronto.
+>O conector para o AEM 6.5 não está pronto.
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ Este documento está disponível na seção ( `/content/geometrixx-outdoors/en_U
 
 ### Requisitos técnicos - servidor hybris {#technical-requirements-hybris-server}
 
-A extensão hybris do eCommerce Integration Framework foi atualizada para suportar o Hybris 5 (como padrão), mantendo a compatibilidade retroativa com o [Hybris 4](/help/sites-developing/hybris.md#developing-for-hybris).
+A extensão hybris do eCommerce Integration Framework foi atualizada para suportar o Hybris 5 (como padrão), mantendo a compatibilidade retroativa com o Hybris 4 <!--[Hybris 4](/help/sites-developing/hybris.md#developing-for-hybris). -->
 
 >[!NOTE]
 >
 >* Suporta até hybris 6.4 com OCC versão 2.
 >* Você precisará do Java 7 para executar o servidor [hybris 5.](https://www.hybris.com/en/architecture-technology)
->* O complemento hybris, o [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), não é suportado pela extensão do AEM.
+>* O complemento hybris, o Acelerador [Telco](https://www.hybris.com/en/products/telecommunication), não é suportado pela extensão AEM.
 >
 
 
@@ -64,7 +64,7 @@ A extensão hybris do eCommerce Integration Framework foi atualizada para suport
 Para instalar a funcionalidade de comércio eletrônico, é necessário:
 
 * Seu servidor hybris, disponível a partir de [hybris](#configureandbuildthehybrisserver).
-* Estrutura de comércio eletrônico do AEM:
+* Estrutura de eCommerce do AEM:
 
    * isso é parte de uma instalação padrão do AEM
 
@@ -193,7 +193,7 @@ As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também
 
 1. Clique em **Inicializar** e confirme a ação de inicialização (pois ela excluirá os dados existentes).
 
-   O progresso será mostrado no console, indicando a `FINISHED` conclusão.
+   O progresso será mostrado no console, com a `FINISHED` indicação de conclusão.
 
    >[!NOTE]
    >
@@ -234,7 +234,7 @@ Este procedimento fará upload e configurará a loja de demonstração - Geometr
 
 1. Na barra lateral, selecione **Sistema**, **Ferramentas** e, em seguida, **Importar**.
 
-1. **Carregue** o seguinte arquivo **de** importação:
+1. **Carregue** o seguinte arquivo **** de importação:
 
    [Obter arquivo](assets/base-store.csv)para hybris 5.7, use o seguinte:
 
