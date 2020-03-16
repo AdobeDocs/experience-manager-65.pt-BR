@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ded190d4fee4e4ef9849dc34372774c529844f
+source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
 
 ---
 
@@ -38,7 +38,7 @@ Alguns dos principais recursos e melhorias introduzidos no AEM 6.5.4.0 incluem:
 
 * Suporte para [Rich Text](../forms/using/designing-form-template.md) em formulários HTML5.
 
-* Aprimoramentos de acessibilidade em Ativos.
+* [Aprimoramentos](new-features-latest-service-pack.md#accessibility-enhancements) de acessibilidade nos ativos Experience Manager.
 
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.10.8.
 
@@ -118,7 +118,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * O realce de campo para seleção de campo obrigatória no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de esquema de metadados correspondente (NPR-31834).
 
-* Nomes completos de tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
+* Os nomes completos das tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
 
 * O uso do comando back da página Propriedades do ativo no navegador Safari dá um erro (NPR-31753).
 
@@ -136,7 +136,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * O status não processado da predefinição do visualizador de vídeo de recorte inteligente aparece duas vezes no texto do banner ao lado do nome predefinido (CQ-4283517).
 
-* Altura incorreta do contêiner de um modelo 3D carregado visualizado no visualizador 3D é observada na página de detalhes do ativo (CQ-4283309).
+* A altura incorreta do contêiner de um modelo 3D carregado visualizado no visualizador 3D é observada na página de detalhes do ativo (CQ-4283309).
 
 * O Editor de carrossel não abre no IE 11 no modo Híbrido de mídia dinâmica do Experience Manager (CQ-4255590).
 
