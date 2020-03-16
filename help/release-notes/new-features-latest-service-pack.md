@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
+source-git-commit: ed756d785864131c2e031aec4331388bc057576b
 
 ---
 
@@ -39,15 +39,17 @@ Você pode criar uma nova integração ou atualizar suas configurações de inte
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
-* As caixas de seleção de estado misto agora têm um atributo marcado com ária com um valor &quot;misto&quot;, para expor seu estado misto aos leitores de tela.
+Os ativos do Experience Manager incluem os seguintes aprimoramentos de acessibilidade:
 
-* Os controles baseados em teclado agora são suportados além dos gestos baseados em caminho para mover-se em imagens ampliadas.
+* Teclas de seta no teclado podem ser usadas para mover e deslocar áreas em imagens ampliadas. Para obter mais informações, consulte [visualizar ativos usando apenas](../assets/managing-assets-touch-ui.md#previewing-assets)as teclas do teclado.
 
-* As restrições de formato de data foram fornecidas em rótulos de campo para que usuários somente de teclado digitem manualmente a data.
+* As caixas de seleção de estado misto (nas quais, a menos que você selecione todos os predicados aninhados, as caixas de seleção de primeiro nível não serão selecionadas e passarão por elas) no painel Filtros podem ser lidas pelos leitores de tela.
 
-* O atributo Alt foi adicionado aos ícones decorativos e removeu o atributo role=img, de modo que tais ícones e imagens não sejam expostos aos usuários do leitor de tela.
+* As restrições de formato de data e hora são fornecidas nos rótulos de campo dos campos de data, para permitir que os usuários digitem a data no formato correto usando o teclado.
 
-* O atributo Alt foi adicionado para fechar ícones para indicar aos usuários do leitor de tela quando eles o preparem.
+   Por exemplo, `On Time (MM-DD-YYYY HH:mm)`. Aqui MM é mês em formato de dois dígitos, AAAA é ano, DD é dia em formato de dois dígitos, HH é hora em formato militar de 24 horas e mm é minuto.
+
+* O `X` símbolo no botão para remover as tags atualmente selecionadas agora é anunciado pelos leitores de tela, juntamente com o número de tags selecionadas.
 
 ## Formulários AEM {#aem-forms}
 
