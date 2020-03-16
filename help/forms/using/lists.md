@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -60,7 +60,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
    [ ![Barra de ferramentas](assets/advancedediting.png)
 
-   * **Link**: Inserir link de hipertexto no texto. Toque em **[!UICONTROL Link]**, especifique o link no campo **[!UICONTROL URL]** , remova o nome do objeto padrão do campo Texto **** alternativo e toque em ![Salvar](assets/save_icon.svg).
+   * **Link**: Inserir link de [hipertexto](#insert-hyperlink) no texto.
    * **Repetir**: Repetir imprime o elemento de coleta no Dicionário de dados usando um delimitador.
    * **Condição**: Toque em para inserir uma condição. Inserir texto com base na condição. Se a condição for verdadeira, o texto estará visível na letra, caso contrário não.
    * **Adicionar descrição**: Adicione uma anotação a um texto. Esses são metadados visíveis para o autor, mas não são parte da carta criada.
@@ -131,6 +131,18 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
 
 1. Você pode usar condições embutidas e repetir para tornar sua carta altamente contextual e bem estruturada. Para obter mais informações sobre a condição em linha e repetir, consulte Condições em [linha e repetir em letras](/help/forms/using/cm-inline-condition.md).
 1. Toque em **Salvar**.
+
+#### Inserir hiperlink em um texto {#insert-hyperlink}
+
+Execute as seguintes etapas para criar um hiperlink em um ativo de texto:
+
+1. Selecione o texto ou o objeto de modelo de dados no editor de texto.
+
+2. Toque em **[!UICONTROL Link]**. Toque no campo Texto **** alternativo para remover o texto ou o nome do objeto do modelo de dados existente.
+
+3. Especifique o URL e toque em ![Salvar](assets/save_icon.svg).
+
+![Criar hiperlink em um ativo de texto](assets/text-create-hyperlink.png)
 
 #### Como pesquisar e substituir texto {#searching-and-replacing-text}
 
