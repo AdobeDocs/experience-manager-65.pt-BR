@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
+source-git-commit: 64fe2634bae6289aa313dd1e5a135d1bdd654dbe
 
 ---
 
@@ -92,8 +92,9 @@ Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets
 
    * **[!UICONTROL Caminho da pasta raiz da empresa]**
 
-   * **[!UICONTROL Publicar ativos]** - a opção **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema ingere os ativos e fornece o URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos. A opção **[!UICONTROL Na ativação]** significa que você precisa publicar o ativo explicitamente primeiro antes de fornecer um URL/link Incorporado.
-
+   * **[!UICONTROL Publicar ativos]** - você pode escolher entre as três opções a seguir:
+      * **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema ingere os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.
+      * **[!UICONTROL Na ativação]** , significa que você precisa publicar explicitamente o ativo primeiro antes de fornecer um URL/link Incorporado.
    * **[!UICONTROL Servidor]** de visualização segura - permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as renderizações são geradas, o AEM pode acessar e visualizar com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do AEM).
 A menos que você tenha uma disposição especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe Systems recomenda deixar essa configuração como especificado.
 
