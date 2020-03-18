@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed756d785864131c2e031aec4331388bc057576b
+source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
 
 ---
 
@@ -31,11 +31,12 @@ Além disso, o AEM 6.5.4.0 inclui melhorias no Sistema de estilo. Agora é poss�
 
 ## Ativos AEM {#aem-assets}
 
-### Integração com o Brand Portal por meio do Console de E/S da Adobe {#assets-integration-bp}
+### Configurar ativos AEM com o Portal de marcas {#configure-assets-bp}
 
-Agora você pode configurar os ativos AEM com o Portal de marcas por meio do Console de E/S da Adobe. O Console de E/S da Adobe obtém um token IMS para autorização do locatário do Brand Portal. Anteriormente, os ativos AEM eram configurados com o Brand Portal na interface clássica por meio do gateway OAuth herdado. As configurações que usam o Gateway OAuth Herdado serão suportadas até 6 de abril de 2020. Se você não modificar a integração, as configurações existentes continuarão funcionando.
+O canal de autorização entre os ativos AEM e o Portal de marcas foi alterado. Anteriormente, o Brand Portal estava configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um token de Acesso IMS para autorização. Os ativos AEM agora estão configurados com o Portal de marcas por meio da E/S da Adobe, que obtém um token IMS para autorização do locatário do Portal de marcas.
 
-Você pode criar uma nova integração ou atualizar suas configurações de integração para o Console de E/S da Adobe.
+As etapas para configurar os ativos AEM com o Brand Portal são diferentes dependendo da versão do AEM e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos AEM com o Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) da marca para obter detalhes.
+
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
@@ -133,7 +134,7 @@ Você pode compartilhar seus itens da Caixa de entrada com outro usuário. Quand
 
 ### Configurar configuração fora do escritório para seus itens da Caixa de entrada {#configure-out-of-office}
 
-Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
+Se planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
 Você tem a opção de especificar uma data e hora de início e uma data e hora de término para que suas configurações de encerramento entrem em vigor. É possível definir uma pessoa padrão para a qual todos os itens serão enviados. Consulte [Configurar configurações](../forms/using/configure-out-of-office-settings.md)fora do escritório.
 
 ### Gerar várias comunicações interativas usando a API de lote {#generate-multiple-ic}
