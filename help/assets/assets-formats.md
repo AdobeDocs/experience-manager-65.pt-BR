@@ -3,7 +3,7 @@ title: Formatos compatíveis de ativos
 description: Lista de formatos de arquivo suportados pelo AEM Assets e recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
+source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
 
 ---
 
@@ -18,7 +18,7 @@ Use a legenda para entender o nível de suporte.
 
 | Nível de suporte | Descrição |
 |:---:|---|
-| ✓ | Suportado |
+| ✓ | Compatível |
 | * | Suportado com recursos complementares |
 | - | Não aplicável |
 
@@ -55,7 +55,7 @@ Os formatos de imagem rasterizados compatíveis com os recursos do Dynamic Media
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
- &amp;ast; A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+&amp;ast; A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Além das informações acima, considere o seguinte:
 
@@ -71,7 +71,7 @@ Além das informações acima, considere o seguinte:
 
 A biblioteca do Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos Adobe Illustrator e PDF grandes e com grande quantidade de conteúdo. A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
 
-* Arquivos AI/PDF com uso intenso de conteúdo que consomem muitos recursos para processamento.
+* Arquivos AI/PDF com uso intenso de conteúdo que consomem muitos recursos para serem processados.
 * Arquivos AI/PDF, para os quais as miniaturas não são geradas por padrão.
 * Arquivos AI com cores Pantone Matching System (PMS).
 
@@ -153,7 +153,7 @@ Além da funcionalidade acima, considere o seguinte:
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Formatos de vídeo de entrada suportados para a Transcodificação de mídia dinâmica {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Formatos de vídeo de entrada suportados para a Transcodificação de Dynamic Media {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extensão do arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |---|---|---|---|
@@ -188,18 +188,17 @@ Os formatos de arquivo suportados e a aplicabilidade dos fluxos de trabalho DAM 
 
 ## Outros formatos suportados {#other-supported-formats}
 
-A aplicabilidade de fluxos de trabalho DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo.
+A aplicabilidade de fluxos de trabalho DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo. A funcionalidade DAM comum, exceto a Entrega de Dynamic Media, é compatível com todos os arquivos.
 
 | Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (quando configurado com o próprio domínio de entrega) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Os outros formatos são suportados no DAM para armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados.
+**&amp;ast;** Os outros formatos são suportados no DAM para armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -247,7 +246,7 @@ Consulte também [Habilitando o suporte](/help/sites-administering/scene7.md#ena
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
