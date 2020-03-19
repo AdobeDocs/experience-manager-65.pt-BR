@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -30,9 +30,9 @@ A primeira etapa é adicionar uma propriedade de supertipo de recurso ao `/apps/
 Usando o CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Nome: `sling:resourceSuperType`
-    * Tipo: ‘String`
-    * Valor: &quot;fundação/componentes/página&quot;
+    Nome: `sling:resourceSuperType`
+    Tipo: `String`
+    Valor: &quot;fundação/componentes/página&quot;
 
 1. Clique em verde **[!UICONTROL [+]Adicionar]**
 1. Clique em **[!UICONTROL Salvar tudo]**
@@ -86,9 +86,9 @@ Usando o CRXDE Lite:
 
    Para configurar a criação, sobreponha-se `body.jsp` a um script local e inclua um sistema de parágrafo (parsys) no corpo:
 
-   1. navigate to `/apps/an-scf-sandbox/components`
-   1. selecionar o `playpage`nó
-   1. clique com o botão direito do mouse e selecione `Create > Create File...`
+   1. Vá até `/apps/an-scf-sandbox/components`
+   1. Selecionar o `playpage`nó
+   1. Clique com o botão direito do mouse e selecione `Create > Create File...`
 
       * Nome: **body.jsp**
    1. Clique em **[!UICONTROL Salvar tudo]**
@@ -167,11 +167,11 @@ Altere o URL do navegador para a página raiz: [http://localhost:4502/editor.htm
 * Selecionar propriedades **[!UICONTROL abertas]**
 * Na guia AVANÇADO
 
-   * Para a entrada Redirecionar, navegue até **[!UICONTROL Sites > Site do SCF Sandbox > Caixa de proteção do SCF]**
+   * Para a entrada Redirecionar, navegue até **[!UICONTROL Sites > Sites > Sites do SCF Sandbox > Caixa de proteção do SCF]**
    * Clique em **[!UICONTROL OK]**
 
 * Clique em **[!UICONTROL OK]**
 
 Depois que o site é publicado, navegar até a página raiz em uma instância de publicação redirecionará para a página em inglês.
 
-A última etapa antes de reproduzir com as comunidades componentes do SCF é adicionar uma pasta da biblioteca do cliente (clientlibs) ... . **[⇒](add-clientlibs.md)**
+A última etapa antes de reproduzir com as comunidades componentes do SCF é adicionar uma Pasta da biblioteca do cliente (clientlibs) .... [Adicionar Clienlibs](add-clientlibs.md)
