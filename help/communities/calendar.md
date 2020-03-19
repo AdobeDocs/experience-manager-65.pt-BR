@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Recurso de calendário{#calendar-feature}
+# Recurso de calendário {#calendar-feature}
 
 ## Introdução {#introduction}
 
@@ -24,8 +24,8 @@ O recurso de calendário oferece suporte ao fornecimento de informações de eve
 
 Esta seção da documentação descreve
 
-* adicionar o recurso de calendário a um site do AEM
-* configurações para `Calendar`componentes
+* Adicionar o recurso de calendário a um site do AEM
+* Configurações para `Calendar`componentes
 
 ## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
 
@@ -41,7 +41,7 @@ Quando as bibliotecas [do lado do cliente](/help/communities/calendar-basics-for
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-### Configurar calendário {#configuring-calendar}
+### Configuração do calendário {#configuring-calendar}
 
 Selecione o `Calendar`componente inserido a ser acessado e selecione o `Configure` ícone que abre a caixa de diálogo de edição.
 
@@ -49,67 +49,119 @@ Selecione o `Calendar`componente inserido a ser acessado e selecione o `Configur
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **Configurações **s, especifique se as tags devem ou não ser aplicadas às entradas do calendário.
+Na guia **Configurações** , especifique se as tags devem ou não ser aplicadas às entradas do calendário.
 
-* **Eventos por página** Define o número de eventos exibidos por página. O padrão é 10.
+* **Eventos por página**
 
-* **Moderado** Se marcado, a publicação de eventos de calendário e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
+   Define o número de eventos exibidos por página. O padrão é 10.
 
-* **Fechado** Se marcado, o calendário será fechado para novas entradas e comentários do evento. O padrão está desmarcado.
+* **Moderada**
 
-* **Editor** de Rich Text Se marcado, os eventos do calendário e os comentários podem ser inseridos com marcação. O padrão está marcado.
+   Se marcada, a publicação de eventos de calendário e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
 
-* **Permitir marcação** Se marcada, permita que os membros adicionem etiquetas aos eventos que publicam (consulte a guia Campo **de** tag ). O padrão está marcado.
+* **Fechado**
 
-* **Permitir uploads** de arquivoSe marcada, permita que os anexos de arquivo sejam adicionados a um evento de calendário ou comentário. O padrão está marcado.
+   Se marcada, o calendário é fechado para novas entradas e comentários do evento. O padrão está desmarcado.
 
-* **Permitir seguidores** Se esta opção estiver marcada, permita que os membros sigam os eventos postados no calendário. O padrão está marcado.
+* **Editor de Rich Text**
 
-* **Tamanho** de arquivo máximo relevante somente se `Allow File Uploads` estiver marcado. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+   Se marcada, os eventos do calendário e os comentários podem ser inseridos com marcação. O padrão está marcado.
 
-* **Tipos** de arquivo permitidosRelevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+* **Permitir marcação**
 
-* **Tamanho** de arquivo de imagem de anexo máximo relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152** **(2 Mb).
+   Se marcada, permita que os membros adicionem rótulos de tags aos eventos que publicam (consulte a guia Campo **** de tag). O padrão está marcado.
 
-* **Tipos** de imagem de capa permitidosUma lista separada por vírgulas de extensões de arquivos de imagem com o separador &quot;ponto&quot;. O padrão é `.jpg,.jpeg,.png,.gif,.bmp`.
+* **Permitir carregamento de arquivos**
 
-* **Permitir respostas encadeadas** Se marcada, permita respostas a comentários postados no evento de calendário. O padrão está marcado.
+   Se marcada, permita que os anexos de arquivo sejam adicionados a um evento de calendário ou comentário. O padrão está marcado.
 
-* **Permitir que os usuários excluam comentários e eventos** Se marcados, permitirá que os membros excluam os comentários e os eventos de calendário que publicaram. O padrão está ** **marcado.
+* **Permitir monitoramento**
 
-* **Permitir votação** Se marcada, inclua o recurso de votação com um evento de calendário. O padrão está marcado.
+   Se marcada, permita que os membros sigam eventos postados no calendário. O padrão está marcado.
 
-* **Mostrar navegações estruturais** Mostrar navegações estruturais na página do evento. O padrão está marcado.
+* **Tamanho máximo do arquivo**
 
-* **Filtro** de intervalo de datasDefine o número de dias adicionados à data atual para calcular o valor &quot;Até&quot; do filtro de página de listagem de eventos do calendário. O número padrão é 30.
+   Relevante apenas se `Allow File Uploads` for verificada. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
-* **Permitir conteúdo** em destaque se marcado, a ideia pode ser identificada como conteúdo [em](/help/communities/featured.md)destaque. O padrão está desmarcado.
+* **Tipos de arquivos permitidos**
 
-Na guia **Moderação do usuário **, especifique como os tópicos e as respostas publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+
+* **Tamanho máximo do arquivo de imagem a ser anexado**
+
+   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152** **(2 Mb).
+
+* **Tipos de imagem de capa permitidos**
+
+   Uma lista separada por vírgulas de extensões de arquivos de imagem com o separador &quot;ponto&quot;. O padrão é `.jpg,.jpeg,.png,.gif,.bmp`.
+
+* **Permitir respostas encadeadas**
+
+   Se marcada, permita respostas para comentários postados no evento de calendário. O padrão está marcado.
+
+* **Permitir que usuários excluam comentários e eventos**
+
+   Se marcada, permita que os membros excluam os comentários e os eventos de calendário publicados. O padrão está ** **marcado.
+
+* **Permitir votação**
+
+   Se marcada, inclua o recurso Voto com um evento de calendário. O padrão está marcado.
+
+* **Mostrar navegações estruturais**
+
+   Mostrar navegações estruturais na página do evento. O padrão está marcado.
+
+* **Filtro do intervalo de datas**
+
+   Define o número de dias adicionados à data atual para calcular o valor &quot;Até&quot; do filtro da página de listagem de eventos do calendário. O número padrão é 30.
+
+* **Ativar conteúdo em destaque**
+
+   Se marcada, a ideia pode ser identificada como conteúdo [em](/help/communities/featured.md)destaque. O padrão está desmarcado.
+
+Na guia Moderação **do** usuário, especifique como os tópicos e as respostas publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-* **Negar publicações** Se marcada, os moderadores de membros confiáveis poderão negar publicações e impedir que a publicação apareça no fórum público. O padrão está marcado.
+* **Negar postagens**
 
-* **Fechar / Reabrir eventos** Se marcados, os moderadores de membros confiáveis podem fechar um evento para outras edições e comentários, e também podem reabrir um evento. O padrão está marcado.
+   Se marcada, os moderadores de membros confiáveis poderão negar publicações e impedir que a publicação apareça no fórum público. O padrão está marcado.
 
-* **Sinalizar publicações** Se marcada, permita que os membros sinalizem os eventos ou comentários de outras pessoas como inadequados. O padrão está marcado**.**
+* **Fechar / Reabrir eventos**
 
-* **Sinalizar lista** de motivos Se marcada, permita que os membros escolham, em uma lista suspensa, o motivo para sinalizar um evento ou comentário como inapropriado. O padrão está desmarcado.
+   Se marcada, os moderadores de membros confiáveis podem fechar um evento para outras edições e comentários, e também podem reabrir um evento. O padrão está marcado.
 
-* **Motivo** de sinalização personalizado Se marcado, permita que os membros insiram seu próprio motivo para marcar um evento ou comentário como inapropriado. O padrão está desmarcado**.**
+* **Sinalizar postagens**
 
-* **Limite** de moderaçãoInsira o número de vezes que um evento ou comentário deve ser sinalizado pelos membros antes que os moderadores sejam notificados. O padrão é 1 (uma vez).
+   Se marcada, permita que os membros sinalizem eventos ou comentários de outras pessoas como inadequados. O padrão está marcado**.**
 
-* **Limite de sinalização** Digite o número de vezes que um evento ou comentário deve ser sinalizado antes de ser ocultado da exibição pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
+* **Sinalizar lista de motivo**
+
+   Se marcada, permita que os membros escolham, em uma lista suspensa, seu motivo para marcar um evento ou comentário como inapropriado. O padrão está desmarcado.
+
+* **Motivo personalizado de sinalização**
+
+   Se marcada, permita que os membros digitem seu próprio motivo para marcar um evento ou comentário como inapropriado. O padrão está desmarcado**.**
+
+* **Limite de moderação**
+
+   Insira o número de vezes que um evento ou comentário deve ser sinalizado pelos membros antes que os moderadores sejam notificados. O padrão é 1 (uma vez).
+
+* **Limite de sinalização**
+
+   Insira o número de vezes que um evento ou comentário deve ser sinalizado antes de ser ocultado da exibição pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na guia **Settings **, são limitadas de acordo com os namespaces escolhidos.
+Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na guia **Configurações** , são limitadas de acordo com os namespaces escolhidos.
 
-* **Namespaces permitidos** Relevante se `Allow Tagging` estiver marcado na guia **Settings **tab. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todos os namespaces são permitidos.
+* **Espaços de nomes permitidos**
 
-* **Limite de sugestão** Insira o número de tags a serem exibidas como uma sugestão para o membro postar no fórum. O padrão é **-**1 (sem limites).
+   Relevante se `Allow Tagging` estiver marcada na guia **Settings **tab. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todos os namespaces são permitidos.
+
+* **Limite sugerido**
+
+   Insira o número de tags a serem exibidas como uma sugestão para o membro postando no fórum. O padrão é **-**1 (sem limites).
 
 >[!NOTE]
 >
@@ -117,9 +169,11 @@ Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na gui
 
 #### Guia Tradução {#translation-tab}
 
-Na guia **Tradução **s, se a tradução estiver ativada para o site da comunidade, a tradução pode ser definida para traduzir o thread inteiro (evento e comentários) em vez de postagens específicas.
+Na guia **Tradução** , se a tradução estiver ativada para o site da comunidade, a tradução pode ser definida para traduzir o thread inteiro (evento e comentários) em vez de postagens específicas.
 
-* **Traduzir tudo** Se marcado, o evento e os comentários serão traduzidos para o idioma preferencial do usuário. O padrão está marcado.
+* **Converter tudo**
+
+   Se marcada, o evento e os comentários são traduzidos para o idioma preferencial do usuário. O padrão está marcado.
 
 ## Experiência do visitante do site {#site-visitor-experience}
 
@@ -139,13 +193,13 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 Quando o usuário conectado é membro da comunidade ou membro [](/help/communities/users.md#privileged-members-group) privilegiado (dependendo da configuração), ele pode optar por `New Event` criar e publicar um novo evento de calendário.
 
-Especificamente, podem
+Concretamente, podem:
 
-* criar um novo evento de calendário
-* publicar um comentário em um evento de calendário
-* editar seu próprio evento de calendário ou comentário
-* excluir seus próprios eventos de calendário ou comentários
-* sinalizar eventos ou comentários de calendário de outras pessoas
+* Criar um novo evento de calendário
+* Publicar um comentário em um evento de calendário
+* Editar seu próprio evento de calendário ou comentário
+* Excluir seus próprios eventos ou comentários do calendário
+* Sinalizar eventos de calendário ou comentários de outras pessoas
 
 ![chlimage_1-151](assets/chlimage_1-151.png) ![chlimage_1-152](assets/chlimage_1-152.png)
 
