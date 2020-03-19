@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Uso de comentários{#using-comments}
+# Uso de comentários {#using-comments}
 
 ## Introdução {#introduction}
 
@@ -24,8 +24,8 @@ O recurso comments é usado para permitir que os visitantes do site conectados (
 
 O documento descreve:
 
-* adicionar `Comments`a uma página.
-* configurações do `Comments`componente.
+* Adicionando `Comments`a uma página.
+* Configurações do `Comments`componente.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Quando as bibliotecas [do cliente](/help/communities/essentials-comments.md#esse
 
 >[!NOTE]
 >
->Somente um `Comments`componente pode existir em uma página. Observe que vários recursos das Comunidades já incluem comentários, como um blog, calendário, fórum, QnA e revisões.
+>Somente um `Comments`componente pode existir em uma página. Esteja ciente de que vários recursos das Comunidades já incluem comentários, como um blog, calendário, fórum, QnA e revisões.
 
 ### Configuração de comentários {#configuring-comments}
 
@@ -81,7 +81,7 @@ Na guia **Comentários** , especifique como os comentários são inseridos pelos
 
 * **Tipos de arquivos permitidos**
 
-   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Uma lista separada por vírgulas de extensões de nome de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que** **todos os tipos de arquivos são permitidos.
+   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Uma lista separada por vírgulas de extensões de nome de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **Editor de Rich Text**
 
@@ -101,9 +101,11 @@ Na guia **Comentários** , especifique como os comentários são inseridos pelos
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia **Moderação do usuário **, especifique como os comentários publicados serão gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Na guia Moderação **do** usuário, especifique como os comentários publicados serão gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
 
-* **Pré-moderação** Se marcada, os comentários devem ser aprovados antes de serem exibidos em um site de publicação. O padrão está desmarcado.
+* **Pré-moderação**
+
+   Se marcada, os comentários devem ser aprovados antes de serem exibidos em um site de publicação. O padrão está desmarcado.
 
 * **Excluir comentários**
 
@@ -139,7 +141,7 @@ Na guia **Moderação do usuário **, especifique como os comentários publicado
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 
-Na guia **Configurações de classificação **s, especifique como os comentários publicados são classificados quando exibidos.
+Na guia **Classificar configurações** , especifique como os comentários publicados são classificados quando exibidos.
 
 * **Classificar campo**
 
@@ -155,7 +157,7 @@ Ao alterar o Tipo de recurso de comentário, o sistema de comentários não gera
 
 Depois que os tipos de recursos personalizados forem conhecidos, entre no Modo [de](/help/sites-authoring/default-components-designmode.md) design e clique duas vezes no componente inserido `Comments` para abrir uma caixa de diálogo com uma guia extra.
 
-Na guia **Tipos de recurso **, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting`componentes:
+Na guia Tipos **de** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting`componentes:
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -185,10 +187,10 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 Quando o visitante do site está conectado, dependendo da configuração, ele pode
 
-* publicar um novo comentário
-* editar seus próprios comentários
-* excluir seus próprios comentários
-* sinalizar comentários de outras pessoas
+* Publicar um novo comentário
+* Editar seus próprios comentários
+* Excluir seus próprios comentários
+* Sinalizar comentários de outras pessoas
 
 #### Anônimo {#anonymous}
 
