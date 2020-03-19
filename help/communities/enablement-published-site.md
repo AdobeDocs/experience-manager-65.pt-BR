@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -28,7 +28,7 @@ Agora que o site da comunidade recém-criado e seus recursos de ativação e cam
 Comece navegando até o URL exibido ao criar o site, mas no servidor de publicação, por exemplo
 
 * URL do autor = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
-* publicar URL = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
+* URL de publicação = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
 Se a página inicial [padrão tiver sido definida](enablement-create-site.md#changethedefaulthomepage), basta navegar até [http://localhost:4503/](http://localhost:4503/) para iniciar o site.
 
@@ -75,7 +75,7 @@ Para proteger o conteúdo do site da sua comunidade do acesso de usuários anôn
 
 ## Membro inscrito {#enrolled-member}
 
-Essa experiência depende dos usuários `Riley Taylor` e `Sidney Croft` está sendo [criada](enablement-setup.md#publishcreateenablementmembers) e [atribuída](resource.md#settings) ao caminho de aprendizado das *Lições* de Esqui através de sua associação ao grupo *Community Ski Class* .
+Essa experiência depende dos usuários `Riley Taylor` e `Sidney Croft` está sendo [criada](enablement-setup.md#publishcreateenablementmembers) e [atribuída](resource.md#settings) ao caminho de aprendizado das *Lições* de Esqui por meio de sua associação ao grupo *Community Ski Class* .
 
 Logon com
 
@@ -161,7 +161,7 @@ A página inicial é identificada pelo primeiro item de menu, Atribuições. Qui
 
 ### Administração {#administration}
 
-O que há, é atividade dos dois alunos `Riley Taylor` e `Sidney Croft. By s`ao selecionar o `Administration`link para acessar o console de moderação, a Quinn é capaz de usar o console [de moderação em](moderation.md) massa para moderar suas publicações.
+O que existe é atividade dos dois alunos, `Riley Taylor` e `Sidney Croft`. Ao selecionar o `Administration` link para acessar o Console de moderação, o Quinn é capaz de usar o console [de moderação em](moderation.md) massa para moderar suas publicações.
 
 Selecionar o ícone do painel lateral alterna para abrir os filtros usados para pesquisar o conteúdo da comunidade.
 
@@ -171,7 +171,7 @@ Passar o mouse sobre um cartão de comentários exibe ações de moderação.
 
 ## Relatórios sobre o autor {#reports-on-author}
 
-Há duas maneiras de acessar relatórios sobre alunos e recursos de ativação.
+Há duas maneiras de acessar os relatórios dos alunos e os recursos de ativação.
 
 No autor, navegue até **Communities (Comunidades),[Resources console](resources.md)**(Recursos), onde os recursos de ativação são gerenciados e, após selecionar um site da comunidade, é possível gerar relatórios para
 
@@ -203,8 +203,8 @@ Com uma pequena atividade e interação com os Recursos na publicação, a exibi
 * Fazer logon com privilégios administrativos
 * Navegue do menu principal até **[!UICONTROL Comunidades > Recursos]**
 * Selecionar o `Enablement Tutorial` site
-* Selecione o `Report`ícone para obter um resumo de todos os Recursos
-* Selecione um Recurso e, em seguida, o `Report`ícone para um relatório sobre esse Recurso
+* Selecione o `Report` ícone para obter um resumo de todos os Recursos
+* Selecione um Recurso e, em seguida, o `Report` ícone para um relatório sobre esse Recurso
 
 Observe que provavelmente é muito cedo para mostrar dados do Adobe Analytics, que podem levar de 1 a 12 horas para serem exibidos. No entanto, os relatórios SCORM básicos já estão disponíveis.
 
@@ -218,7 +218,7 @@ Observe que provavelmente é muito cedo para mostrar dados do Adobe Analytics, q
 
 * Abrir cartão `Enablement Tutorial`
 * Abrir cartão `Ski Lessons`
-* `select Report, User Report`
+* Selecionar `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
