@@ -1,8 +1,8 @@
 ---
 title: Como usar a ferramenta VLT
 seo-title: Como usar a ferramenta VLT
-description: A ferramenta Jackrabbit FileVault (VLT) é desenvolvida pela Fundação Apache que mapeia o conteúdo de uma instância Jackrabbit/AEM para seu sistema de arquivos
-seo-description: A ferramenta Jackrabbit FileVault (VLT) é desenvolvida pela Fundação Apache que mapeia o conteúdo de uma instância Jackrabbit/AEM para seu sistema de arquivos
+description: A ferramenta Jackrabbit FileVault (VLT) é desenvolvida pela Fundação Apache que mapeia o conteúdo de uma instância do Jackrabbit/AEM para seu sistema de arquivos
+seo-description: A ferramenta Jackrabbit FileVault (VLT) é desenvolvida pela Fundação Apache que mapeia o conteúdo de uma instância do Jackrabbit/AEM para seu sistema de arquivos
 uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,20 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
+source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
 
 ---
 
 
 # Como usar a ferramenta VLT {#how-to-use-the-vlt-tool}
 
-A ferramenta Jackrabbit FileVault (VLT) é uma ferramenta desenvolvida pela Fundação [](https://www.apache.org/) Apache que mapeia o conteúdo de uma instância Jackrabbit/AEM para seu sistema de arquivos. A ferramenta VLT tem funções semelhantes ao cliente do sistema de controle de origem (como um cliente SVN (Subversion)), fornecendo operações normais de check-in, check-out e gerenciamento, bem como opções de configuração para representação flexível do conteúdo do projeto.
+A ferramenta Jackrabbit FileVault (VLT) é uma ferramenta desenvolvida pela Fundação [](https://www.apache.org/) Apache que mapeia o conteúdo de uma instância do Jackrabbit/AEM para seu sistema de arquivos. A ferramenta VLT tem funções semelhantes ao cliente do sistema de controle de origem (como um cliente SVN (Subversion)), fornecendo operações normais de check-in, check-out e gerenciamento, bem como opções de configuração para representação flexível do conteúdo do projeto.
 
 Execute a ferramenta VLT na linha de comando. Este documento descreve como usar a ferramenta, incluindo como começar e obter ajuda, bem como uma lista de todos os [comandos](#vlt-commands) e [opções](#vlt-global-options)disponíveis.
 
 ## Conceitos e arquitetura {#concepts-and-architecture}
 
-Consulte a Visão geral [do](https://jackrabbit.apache.org/filevault/overview.html) Filevault e a página [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) da documentação [oficial do](https://jackrabbit.apache.org/filevault/index.html) Apache Jackrabbit Filevault para obter uma visão geral completa dos conceitos e da estrutura da ferramenta Filevault.
+Consulte a Visão geral [do](https://jackrabbit.apache.org/filevault/overview.html) Filevault e a página do [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) na documentação [oficial do](https://jackrabbit.apache.org/filevault/index.html) Apache Jackrabbit Filevault para obter uma visão geral completa dos conceitos e da estrutura da ferramenta Filevault.
 
 ## Introdução ao VLT {#getting-started-with-vlt}
 
@@ -39,7 +39,7 @@ Para começar a usar o VLT, é necessário fazer o seguinte:
 
 Para usar a ferramenta VLT, primeiro é necessário instalá-la. Por padrão, ele não é instalado, pois é uma ferramenta adicional. Além disso, é necessário definir a variável de ambiente do sistema.
 
-1. Baixe o arquivo de arquivo FileVault do site [Apache Jackrabbit.](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. Baixe o arquivo de arquivamento do FileVault no repositório de artefatos [Maven.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >A origem da ferramenta VLT está [disponível no GitHub.](https://github.com/apache/jackrabbit-filevault)
@@ -243,7 +243,7 @@ Um filtro de exemplo:
 </workspaceFilter>
 ```
 
-### Uso do controle Importar/exportar em vez do controle .vlt {#using-import-export-instead-of-vlt-control}
+### Uso do controle Importar/Exportar em vez do controle .vlt {#using-import-export-instead-of-vlt-control}
 
 É possível importar e exportar conteúdo entre um repositório JCR e o sistema de arquivos local sem usar arquivos de controle.
 
@@ -315,7 +315,7 @@ A tabela a seguir descreve todos os comandos VLT disponíveis. Consulte os coman
 | Comando | Comando abreviado | Descrição |
 | `export` |  | Exporta de um repositório JCR (sistema de arquivos padrão) para o sistema de arquivos local sem arquivos de controle. |
 | `import` |  | Importa um sistema de arquivos local para um repositório JCR (sistema de arquivos de cofre). |
-| `checkout` | `co` | Verifica um sistema de arquivos Vault. Use-o para um repositório JCR inicial no sistema de arquivos local. (Observação: Primeiro, faça o check-out do repositório na subversão.) |
+| `checkout` | `co` | Verifica um sistema de arquivos Vault. Use-o para um repositório JCR inicial para o sistema de arquivos local. (Observação: Primeiro, faça o check-out do repositório na subversão.) |
 | `analyze` |  | Analisa pacotes. |
 | `status` | `st` | Imprime o status dos arquivos e diretórios da cópia de trabalho. |
 | `update` | `up` | Importa alterações do repositório para a cópia de trabalho. |
@@ -348,7 +348,7 @@ export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | saída detalhada |
-| `-t (--type) <arg>` | especifica o tipo de exportação, seja plataforma ou jar. |
+| `-t (--type) <arg>` | especifica o tipo de exportação, seja a plataforma ou o jar. |
 | `-p (--prune-missing)` | especifica se os arquivos locais ausentes devem ser excluídos |
 | `<uri>` | uri ponto de montagem |
 | `<jcrPath>` | Caminho JCR |
@@ -403,7 +403,7 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 | `--force` | força o check-out para substituir arquivos locais se eles já existirem |
 | `-v (--verbose)` | saída detalhada |
 | `-q (--quiet)` | imprime o mínimo possível |
-| `-f (--filter) <file>` | especifica filtros automáticos se nenhum estiver definido |
+| `-f (--filter) <file>` | especifica os filtros automáticos se nenhum estiver definido |
 | `<uri>` | uri ponto de montagem |
 | `<jcrPath>` | (opcional) caminho remoto |
 | `<localPath>` | (opcional) caminho local |
@@ -526,7 +526,7 @@ commit -v|-q|--force|-N <file1> [<file2> ...]
 | `-q (--quiet)` | imprime o mínimo possível |
 | `--force` | força a confirmação mesmo se a cópia remota for modificada |
 | `-N (--non-recursive)` | opera em um único diretório |
-| `<file> [<file> ...]` | arquivo ou diretório para confirmar |
+| `<file> [<file> ...]` | arquivo ou diretório a ser confirmado |
 
 ### Reverter {#revert}
 
@@ -544,7 +544,7 @@ revert -q|-R <file1> [<file2> ...]
 |--- |--- |
 | `-q (--quiet)` | imprime o mínimo possível |
 | `-R (--recursive)` | descendente recursivamente |
-| `<file> [<file> ...]` | arquivo ou diretório para confirmar |
+| `<file> [<file> ...]` | arquivo ou diretório a ser confirmado |
 
 ### Resolvido {#resolved}
 
@@ -721,7 +721,7 @@ rcp -q|-r|-b <size>|-t <seconds>|-u|-n|-e <arg1> [<arg2> ...] <src> <dst>
 |  |  |
 |--- |--- |
 | `-q (--quiet)` | Imprime o mínimo possível. |
-| `-r (--recursive)` | Desce recursivamente. |
+| `-r (--recursive)` | Descende recursivamente. |
 | `-b (--batchSize) <size>` | Número de nós a serem processados antes de uma gravação intermediária. |
 | `-t (--throttle) <seconds>` | Número de segundos para aguardar após uma gravação intermediária. |
 | `-u (--update)` | Substituir/excluir nós existentes. |
@@ -878,7 +878,7 @@ O `.vlt-sync-config.properties` arquivo permite configurar as seguintes propried
 
 **sync-log** Define o nome do arquivo de log. Por padrão, o valor é .vlt-sync.log
 
-### Usar sincronização VLT para desenvolvimento {#using-vlt-sync-for-development}
+### Uso da sincronização VLT para desenvolvimento {#using-vlt-sync-for-development}
 
 Para configurar um ambiente de desenvolvimento com base em uma pasta de sincronização, faça o seguinte:
 
@@ -942,7 +942,7 @@ Para configurar um ambiente de desenvolvimento com base em uma pasta de sincroni
    ***
    ```
 
-Sua pasta local agora é sincronizada com o repositório. A sincronização é bidirecional, portanto a modificação do repositório será aplicada à sua pasta de sincronização local e vice-versa.
+Sua pasta local agora é sincronizada com o repositório. A sincronização é bidirecional, portanto, a modificação do repositório será aplicada à sua pasta de sincronização local e vice-versa.
 
 >[!NOTE]
 >
