@@ -11,25 +11,25 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# Criar um novo site da comunidade para habilitação{#author-a-new-community-site-for-enablement}
+# Criar um novo site da comunidade para habilitação {#author-a-new-community-site-for-enablement}
 
 ## Criar site da comunidade {#create-community-site}
 
-[A criação](/help/communities/sites-console.md) do site da comunidade emprega um assistente que o orienta pelas etapas da criação de um site da comunidade. É possível avançar para a `Next`etapa ou `Back`para a etapa anterior antes de confirmar o site na etapa final.
+[A criação](/help/communities/sites-console.md) do site da comunidade emprega um assistente que o orienta pelas etapas da criação de um site da comunidade. É possível avançar para a etapa `Next` ou `Back` para a etapa anterior antes de confirmar o site na etapa final.
 
 Para começar a criar um novo site da comunidade:
 
 Uso da instância do [autor](https://localhost:4502/)
 
-* fazer logon com privilégios de administrador
-* navegar para **Comunidades,** **Sites**
+* Fazer logon com privilégios de administrador
+* Navegue até Comunidades de controle **[UIC > Sites]**
 
-* select **Create**
+* Selecione **Criar**
 
 ### Etapa 1: Modelo de site {#step-site-template}
 
@@ -44,13 +44,13 @@ Na etapa Modelo **de** site, insira um título, descrição, o nome do URL e sel
 * **Raiz** do site da comunidade: (deixe em branco para a raiz padrão `/content/sites`)
 
 * **Configurações** da nuvem: (deixe em branco se nenhuma configuração de nuvem for especificada) forneça o caminho para as configurações de nuvem especificadas.
-* **Idioma** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas básicos dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo a melhor prática descrita em [Traduzir conteúdo para sites](/help/sites-administering/translation.md)multilíngues. A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
+* **Idioma** base do site da comunidade: (deixe intocado para uma única língua: Inglês) use o menu suspenso para escolher um *ou mais* idiomas básicos dos idiomas disponíveis - alemão, italiano, francês, japonês, espanhol, português (Brasil), chinês (tradicional) e chinês (simplificado). Um site da comunidade será criado para cada idioma adicionado e existirá dentro da mesma pasta do site, seguindo as práticas recomendadas descritas em [Translating Content for Multilingual Sites](/help/sites-administering/translation.md). A página raiz de cada site conterá uma página secundária nomeada pelo código de idioma de um dos idiomas selecionados, como &quot;en&quot; para inglês ou &quot;fr&quot; para francês.
 
 * **Nome do site da comunidade**: `enable`
 
-   * o URL inicial será exibido abaixo do Nome do site da comunidade
-   * para um URL válido, acrescente um código de idioma base + &quot;.html&quot;
-      *por exemplo*, https://localhost:4502/content/sites/ `enable/en.html`
+   * O URL inicial será exibido abaixo do Nome do site da comunidade
+   * Para um URL válido, acrescente um código de idioma base + &quot;.html&quot;
+      *Por exemplo*, https://localhost:4502/content/sites/ `enable/en.html`
 
 * **Modelo** de site de referência: menu suspenso para escolher `Reference Structured Learning Site Template`
 
@@ -62,7 +62,7 @@ A etapa de design é apresentada em duas seções para selecionar o tema e o ban
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
-Selecione o estilo desejado para aplicar ao modelo. Quando selecionado, o tema será sobreposto com uma marca de seleção.
+Selecione o estilo desejado a ser aplicado ao modelo. Quando selecionado, o tema será sobreposto com uma marca de seleção.
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
@@ -72,7 +72,7 @@ Selecione o estilo desejado para aplicar ao modelo. Quando selecionado, o tema s
 
 Selecione **Próximo**.
 
-### Etapa 3 :Configurações {#step-settings}
+### Etapa 3 : Configurações {#step-settings}
 
 Na etapa Configurações, antes de selecionar `Next`, observe que há sete seções que fornecem acesso às configurações que envolvem gerenciamento de usuários, marcação, funções, moderação, análise, tradução e ativação.
 
@@ -86,9 +86,9 @@ Verifique se a maioria das caixas de seleção está desmarcada para Gerenciamen
 
 * NÃO permitir que os visitantes do site se registrem automaticamente
 * NÃO permitir que os visitantes anônimos do site vejam o site
-* opcional, para permitir ou não mensagens entre membros da comunidade
+* Opcional se permite ou não mensagens entre membros da comunidade
 * NÃO permitir logon com o Facebook
-* não permitir logon com o Twitter
+* NÃO permitir logon com o Twitter
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
@@ -100,8 +100,8 @@ Além disso, selecionar os namespaces de tags para o site da comunidade limita a
 
 Encontrar namespaces é fácil usando a pesquisa de tipo avançado. Por exemplo,
 
-* type &#39;tut&#39;
-* select `Tutorial`
+* Tipo `tut`
+* Selecionar `Tutorial`
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
@@ -113,8 +113,8 @@ Para permitir que um membro da comunidade (ou grupo de membros) experimente o si
 
 Por exemplo,
 
-* digite &quot;q&quot;
-* selecione [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Tipo `q`
+* Selecione [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
@@ -140,8 +140,8 @@ A seleção vista na captura de tela `Communities`é o exemplo de estrutura da d
 
 As configurações [de](/help/communities/sites-console.md#translation) Tradução especificam se o UGC pode ser traduzido ou não e em qual idioma, se houver.
 
-* verifique **Permitir tradução automática**
-* usar as configurações padrão
+* Verifique **Permitir tradução automática**
+* Usar as configurações padrão
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -151,10 +151,10 @@ Para uma comunidade de ativação, é necessário identificar um ou mais Gerente
 
 * **Gerentes** de ativação (obrigatório) Os membros do `Community Enablement Managers` grupo estão disponíveis para serem selecionados para gerenciar este site da comunidade.
 
-   * tipo &quot;s&quot;
-   * select `Sirius Nilson`
+   * Tipo `s`
+   * Selecionar `Sirius Nilson`
 
-* **ID** de organização da Marketing Cloud (opcional) A ID de uma conta do Adobe Analytics, necessária ao incluir o [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) no relatório de ativação.
+* **ID** de organização da Marketing Cloud (opcional) A ID de uma conta do Adobe Analytics, necessária ao incluir a Análise [do](/help/communities/analytics.md#video-heartbeat-analytics) Video Heartbeat no relatório de ativação.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -166,7 +166,7 @@ Selecione **Criar.**
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-Quando o processo for concluído, a pasta do novo site será exibida no console Comunidades - Sites.
+Quando o processo for concluído, a pasta do novo site será exibida no console Comunidades > Sites.
 
 ![enablementsitecreated](assets/enablementsitecreated.png)
 
@@ -184,16 +184,26 @@ Ao selecionar o ícone de elipses (ícone Mais ações), as opções Exportar si
 
 Da esquerda para a direita estão:
 
-* **Abrir Site** selecione o ícone de lápis para abrir o site da comunidade no modo de edição do autor, para adicionar e/ou configurar componentes da página
+* **Abrir site**
 
-* **Editar site** selecione o ícone de propriedades para abrir o site da comunidade para modificação de propriedades, como o título ou para alterar o tema
+   Selecione o ícone de lápis para abrir o site da comunidade no modo de edição do autor, para adicionar e/ou configurar componentes da página
 
-* **Publicar site** selecione o ícone do mundo para publicar o site da comunidade (para localhost:4503 por padrão)
+* **Editar site**
 
-* **Exportar site** selecione o ícone exportar para criar um pacote do site da comunidade que esteja armazenado no gerenciador [de](/help/sites-administering/package-manager.md) pacotes e baixado.
+   Selecione o ícone de propriedades para abrir o site da comunidade para modificação de propriedades, como o título ou para alterar o tema
+
+* **Publicar site**
+
+   Selecione o ícone do mundo para publicar o site da comunidade (para localhost:4503 por padrão)
+
+* **Exportar site**
+
+   Selecione o ícone de exportação para criar um pacote do site da comunidade que esteja armazenado no gerenciador [de](/help/sites-administering/package-manager.md) pacotes e baixado.
 Observe que o UGC não está incluído no pacote do site.
 
-* **Excluir site** Para excluir o site da comunidade, selecione o ícone Excluir site que aparece ao passar o mouse sobre o site no console do site Comunidades. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
+* **Excluir site**
+
+   Para excluir o site da comunidade, selecione o ícone Excluir site que aparece ao passar o mouse sobre o site no console do site Comunidades. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
 
 ![ativesiteactions](assets/enablesiteactions.png)
 
@@ -225,14 +235,14 @@ Usando o console Grupos da comunidade, os membros podem ser adicionados individu
 
 Neste exemplo, o grupo `Community Ski Class` é adicionado como membro do grupo `Community Enable Members` e como membro `Quinn Harper`.
 
-* navegue até o console **Comunidades, Grupos**
-* selecionar grupo Habilitar Membros *da* Comunidade
-* digite &#39;ski&#39; na caixa de pesquisa **Adicionar membros ao grupo**
-* selecionar classe *de esqui da* comunidade (grupo de alunos)
-* digite &#39;quinn&#39; na caixa de pesquisa
-* selecione *Quinn Harper* (contato de recurso de ativação)
+* Navegue até o console **Comunidades, Grupos**
+* Selecionar grupo de membros *da* comunidade habilitados
+* Digite &#39;ski&#39; na caixa de pesquisa **Adicionar membros ao grupo**
+* Selecionar classe *de esqui da* comunidade (grupo de alunos)
+* Digite &#39;quinn&#39; na caixa de pesquisa
+* Selecione *Quinn Harper* (contato de recursos de ativação)
 
-* select **Save**
+* Selecione **Salvar**
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -244,7 +254,7 @@ Neste exemplo, o grupo `Community Ski Class` é adicionado como membro do grupo 
 
 ### Erro ao configurar para autenticação {#configure-for-authentication-error}
 
-Depois que um site é configurado e enviado para publicação, [configure o mapeamento](/help/communities/sites-console.md#configure-for-authentication-error) de logon ( `Adobe Granite Login Selector Authentication Handler`) na instância de publicação. O benefício é que quando as credenciais de logon não forem inseridas corretamente, o erro de autenticação exibirá novamente a página de logon do site da comunidade com uma mensagem de erro.
+Depois que um site é configurado e enviado para publicação, [configure o mapeamento](/help/communities/sites-console.md#configure-for-authentication-error) de logon ( `Adobe Granite Login Selector Authentication Handler`) na instância de publicação. O benefício é que, quando as credenciais de logon não forem inseridas corretamente, o erro de autenticação exibirá novamente a página de logon do site da comunidade com uma mensagem de erro.
 
 Adicionar um `Login Page Mapping` como
 
@@ -258,14 +268,14 @@ Para fazer isso, é necessário usar o [CRX|DE](https://localhost:4503/crx/de) L
 
 Para começar
 
-1. ao publicar, acesse o CRXDE e faça logon com privilégios de administrador
+1. Ao publicar, acesse o CRXDE e faça logon com privilégios de administrador
 
-   * por exemplo, navegue até [https://localhost:4503/crx/de](https://localhost:4503/crx/de) e faça logon com `admin/admin`
+   * Por exemplo, navegue até [https://localhost:4503/crx/de](https://localhost:4503/crx/de) e faça logon com `admin/admin`
 
-1. no navegador do projeto, expanda `/etc/map`
-1. selecione o `http` nó
+1. No navegador do projeto, expanda `/etc/map`
+1. Selecione o `http` nó
 
-   * selecione **Criar nó**
+   * Selecionar nó **Criar**
 
       * **Nome** localhost.4503
 
@@ -273,27 +283,27 @@ Para começar
 
       * **Tipo** [sling:Mapeamento](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
-1. com o `localhost.4503` nó recém-criado selecionado
+1. Com o `localhost.4503` nó recém-criado selecionado
 
-* propriedade add
+   * Adicionar propriedade
 
-   * **Seleção de nome** :correspondência
-   * **String de tipo**
-   * **Valor** localhost.4503/$
+      * **Seleção de nome** :correspondência
+      * **String de tipo**
+      * **Valor** localhost.4503/$
+   (deve terminar com o caractere &#39;$&#39;)
 
-      (deve terminar com o caractere &#39;$&#39;)
+   * Adicionar propriedade
 
-* propriedade add
+      * **Nomear** sling:internalRedirect
+      * **String de tipo**
+      * **Valor** /content/sites/enable/en.html
 
-   * **Nomear** sling:internalRedirect
-   * **String de tipo**
-   * **Valor** /content/sites/enable/en.html
 
-1. selecione **Salvar tudo**
-1. (opcional) excluir o histórico de navegação
-1. navegue até https://localhost:4503/
+1. Selecione **Salvar tudo**
+1. (Opcional) Exclua o histórico de navegação
+1. Navegue até https://localhost:4503/
 
-* chegar em https://localhost:4503/content/sites/enable/en.html
+   * Chegar em https://localhost:4503/content/sites/enable/en.html
 
 >[!NOTE]
 >
@@ -303,7 +313,7 @@ Para começar
 
 #### Solução de problemas: Erro ao salvar mapa {#troubleshooting-error-saving-map}
 
-Se não for possível salvar as alterações, verifique se o nome do nó é `localhost.4503`, com um separador &quot;ponto&quot; e não `localhost:4503` com um separador &quot;dois pontos&quot;, pois não `localhost`é um prefixo de namespace válido.
+Se não for possível salvar as alterações, verifique se o nome do nó é `localhost.4503`, com um separador &quot;ponto&quot; e não `localhost:4503` com um separador &quot;dois pontos&quot;, pois não `localhost` é um prefixo de namespace válido.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -321,7 +331,7 @@ Após qualquer modificação, lembre-se de **Salvar** e **publicar** o site nova
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para criar páginas](/help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
 
 ### Adicionar um catálogo {#add-a-catalog}
 
@@ -331,7 +341,7 @@ Caso contrário, a função de catálogo pode ser facilmente adicionada. Isso pe
 
 Se a estrutura do site já contiver o recurso de catálogo, seu Título poderá ser alterado.
 
-Para modificar a estrutura do site, navegue até **Comunidades, console Sites** , abra a `enable` pasta e selecione o **ícone Editar site **para acessar as propriedades do `Enablement Tutorial`.
+Para modificar a estrutura do site, navegue até **Comunidades, console Sites** , abra a `enable` pasta e selecione o ícone **Editar site** para acessar as propriedades do `Enablement Tutorial`.
 
 Selecione o painel ESTRUTURA para adicionar um catálogo ou modificar um catálogo existente:
 
