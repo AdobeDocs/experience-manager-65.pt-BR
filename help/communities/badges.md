@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Console de símbolos{#badges-console}
+# Console de símbolos {#badges-console}
 
-## Sobre emblemas {#about-badges}
+## Sobre os emblemas {#about-badges}
 
 O console Distintos de comunidades fornece a capacidade de adicionar emblemas personalizados que podem ser exibidos para um membro quando obtidos (concedidos) ou quando assumem uma função específica na comunidade (atribuídos).
 
@@ -26,15 +26,15 @@ O console Distintos de comunidades fornece a capacidade de adicionar emblemas pe
 
 Atualmente, os emblemas que um membro da comunidade recebe ou está atribuído serão exibidos junto com seu nome e avatar nos seguintes locais:
 
-* perfis
-* [fóruns](/help/communities/forum.md)
+* Perfis
+* [Fóruns](/help/communities/forum.md)
 * [Perguntas e respostas](/help/communities/working-with-qna.md)
-* [quadros](/help/communities/enabling-leaderboard.md)
-* [ideação](/help/communities/ideation-feature.md)
+* [Quadros de líderes](/help/communities/enabling-leaderboard.md)
+* [Ideação](/help/communities/ideation-feature.md)
 
 No ambiente do autor, para acessar o console Distintos
 
-* da navegação global : **Ferramentas, comunidades, emblemas**
+* Na navegação global, navegue até **[UIControl Tools > Communities > Badges]**
 
 Esse console exibe os emblemas disponíveis no momento e a partir dos quais novos emblemas podem ser adicionados.
 
@@ -48,13 +48,21 @@ Se o ambiente de publicação for um farm de editores, será necessário configu
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-* **Carregar imagem**(*obrigatório*) Uma imagem de emblema com um tamanho recomendado de 32 x 32 pixels em 72 dpi no formato JPEG ou PNG.
+* **Carregar imagem**
 
-* **Nome**(*obrigatório*) O nome do crachá. É o nome padrão `Display Name` e o nome do nó do repositório. Se o nome do nó do repositório não `Name` for válido, ele será modificado.
+   (*Obrigatório*) Uma imagem de emblema com um tamanho recomendado de 32 x 32 pixels em 72 dpi no formato JPEG ou PNG.
 
-* **Nome** de exibição (*opcional*) O nome a ser exibido para o crachá na interface do usuário. Padrão é o texto inalterado inserido para o `Name`.
+* **Nome**
 
-* **Descrição**(*opcional*) Uma descrição para o crachá.
+   (*Obrigatório*) O nome do crachá. É o nome padrão `Display Name` e o nome do nó do repositório. Se o nome do nó do repositório não `Name` for válido, ele será modificado.
+
+* **Nome para exibição**
+
+   (*Opcional*) O nome a ser exibido para o crachá na interface do usuário. Padrão é o texto inalterado inserido para o `Name`.
+
+* **Descrição**
+
+   (*Opcional*) Uma descrição para o crachá.
 
 ## Informações adicionais {#additional-information}
 
