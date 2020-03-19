@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
@@ -65,7 +65,7 @@ Os componentes, as funções e os recursos do AEM Communities fornecem os elemen
 
 ## Grupos de comunidades {#community-groups}
 
-[Grupos](overview.md#communitygroups) da comunidade é o conceito de permitir que membros da comunidade formem subcomunidades dentro do site da comunidade. A criação de um grupo da comunidade pode ocorrer no ambiente de publicação ou autor.
+[Grupos](overview.md#communitygroups) da comunidade é o conceito de permitir que membros da comunidade formem subcomunidades dentro do site da comunidade. A criação de um grupo da comunidade pode ocorrer no ambiente de publicação ou criação.
 
 * [Essenciais do grupo comunitário](essentials-groups.md)
 * [Função Grupos](functions.md#groups-function)
@@ -76,7 +76,7 @@ Os componentes, as funções e os recursos do AEM Communities fornecem os elemen
 ## Gerenciamento de dados {#managing-data}
 
 * [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos do utilitário de API SRP
-* [Tag Essentials](tag.md) - possibilidade de membros da comunidade marcarem os recursos de ativação do UGC e/ou catalogados
+* [Tag Essentials](tag.md) - possibilidade de membros da comunidade marcarem os recursos de habilitação do UGC e/ou catalogados
 
 ## Tutoriais {#tutorials}
 
