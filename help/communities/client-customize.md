@@ -10,18 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
 # Personalização do cliente {#client-side-customization}
 
-| **[⇐ Fundamentos de recursos](essentials.md)** | **[Personalização do servidor](server-customize.md)** |
+| **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Auxiliares da proteção contra a fraude SCF](handlebars-helpers.md)** |
 
-Para personalizar a aparência e/ou o comportamento de um componente do AEM Communities no cliente, há várias abordagens.
+Para personalizar a aparência e/ou o comportamento de um componente do AEM Communities no lado do cliente, há várias abordagens.
 
 Duas abordagens principais são sobrepor ou estender um componente.
 
@@ -102,9 +102,9 @@ Os estilos personalizados substituirão os estilos de estrutura padrão e o comp
 
 >[!CAUTION]
 >
->Qualquer nome de classe CSS com prefixo** scf-js-&amp;ast;**tem um uso específico no código javascript. Essas classes afetam o estado de um componente (por exemplo, alternar de oculto para visível) e não devem ser substituídas nem removidas.
+>Qualquer nome de classe CSS com prefixo `scf-js` tem um uso específico no código javascript. Essas classes afetam o estado de um componente (por exemplo, alternar de oculto para visível) e não devem ser substituídas nem removidas.
 >
->Enquanto o scf-js-&amp;ast; classes não afetam estilos, os nomes de classe podem ser usados em folhas de estilos com a ressalva de que, como controlam os estados dos elementos, pode haver efeitos colaterais.
+>Embora as `scf-js` classes não afetem estilos, os nomes das classes podem ser usados em folhas de estilo com a ressalva de que, como controlam os estados dos elementos, podem haver efeitos colaterais.
 
 ## Extensão do Javascript {#extending-javascript}
 
@@ -145,7 +145,7 @@ Para estender uma implementação do Javascript de componentes, é necessário a
 
 As tags de script são uma parte inerente da estrutura do lado do cliente. Elas são a cola que ajuda a vincular a marcação gerada no lado do servidor aos modelos e visualizações no lado do cliente.
 
-As tags de script nos scripts SCF não devem ser removidas ao substituir ou substituir componentes. As tags de script SCF criadas automaticamente para injetar JSON no HTML são identificadas com o atributo `data-scf-json=`true.
+As tags de script nos scripts SCF não devem ser removidas ao substituir ou substituir componentes. As tags de script SCF criadas automaticamente para injetar JSON no HTML são identificadas com o atributo `data-scf-json=true`.
 
 ## Clientlibs para SCF {#clientlibs-for-scf}
 
@@ -164,12 +164,12 @@ Os clientlibs completos (não autores) incluem dependências e são convenientes
 
 Essas versões são encontradas em:
 
-* /etc/clientlibs/social/hbs/&lt;nome do componente>
+* `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
 Por exemplo:
 
-* Nó de pasta do cliente: /etc/clientlibs/social/hbs/forum
-* Propriedade Categorias: cq.social.hbs.forum
+* Nó de pasta do cliente: `/etc/clientlibs/social/hbs/forum`
+* Propriedade Categorias: `cq.social.hbs.forum`
 
 O guia [Componentes da](components-guide.md) comunidade lista as clientlibs completas necessárias para cada componente do SCF.
 
@@ -183,16 +183,16 @@ Essas clientlibs nunca devem ser incluídas diretamente, mas estão disponíveis
 
 Essas versões são encontradas na pasta libs SCF:
 
-* /libs/social/&lt;recurso>/components/hbs/&lt;nome do componente>/clientlibs
+* `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
 Por exemplo:
 
-* Nó de pasta do cliente: /libs/social/forum/hbs/forum/clientlibs
-* Propriedade Categorias: cq.social.author.hbs.forum
+* Nó de pasta do cliente: `/libs/social/forum/hbs/forum/clientlibs`
+* Propriedade Categorias: `cq.social.author.hbs.forum`
 
-Observação: embora clientlibs do autor nunca incorporem outras bibliotecas, eles listam suas dependências. Quando incorporadas em outras bibliotecas, as dependências não são automaticamente extraídas e também devem ser incorporadas.
+Observação: embora os clientlibs do autor nunca incorporem outras bibliotecas, eles listam suas dependências. Quando incorporadas em outras bibliotecas, as dependências não são automaticamente extraídas e também devem ser incorporadas.
 
-Os clientlibs do autor necessários podem ser identificados inserindo &quot;autor&quot; nos clientlibs listados para cada componente SCF no guia [Componentes da](components-guide.md)comunidade.
+Os clientlibs do autor necessários podem ser identificados inserindo &quot;autor&quot; nos clientlibs listados para cada componente do SCF no guia [Componentes da](components-guide.md)comunidade.
 
 ### Considerações sobre o uso {#usage-considerations}
 
@@ -202,7 +202,7 @@ Cada site é diferente em como gerenciam bibliotecas de clientes. Vários fatore
 * Tempo curto para a primeira página: Talvez o desejo seja que a primeira página seja carregada rapidamente. Nesse caso, o Javascript está em vários arquivos pequenos para serem referenciados somente quando necessário.
 * Um equilíbrio entre o carregamento da primeira página e os downloads subsequentes.
 
-| **[⇐ Fundamentos de recursos](essentials.md)** | **[Personalização do servidor](server-customize.md)** |
+| **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Auxiliares da proteção contra a fraude SCF](handlebars-helpers.md)** |
 
