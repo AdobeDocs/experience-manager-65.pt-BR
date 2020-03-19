@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Recurso de transmissão de atividades{#activity-streams-feature}
+# Recurso de transmissão de atividades {#activity-streams-feature}
 
 ## Introdução {#introduction}
 
@@ -26,8 +26,8 @@ A capacidade de seguir adiciona outra visão das atividades quando os membros da
 
 O documento descreve:
 
-* adicionar o componente de Fluxos de atividade a um site do AEM
-* configurações do componente de Fluxos de atividade
+* Adicionar o componente de Fluxos de atividade a um site do AEM
+* Configurações do componente de Fluxos de atividade
 
 ### Adicionar fluxos de atividade a uma página {#adding-activity-streams-to-a-page}
 
@@ -53,15 +53,25 @@ Na guia Atividades **do** usuário, especifique as atividades a serem exibidas:
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-* **Número máximo de atividades** o número de atividades a serem exibidas
+* **Número máximo de atividades**
 
-* **Caminho** do recurso de fluxo Deixe em branco para o padrão do site da comunidade ou do grupo da comunidade. O caminho do recurso de fluxo identifica a origem das atividades. O padrão está em branco.
+   O número de atividades a serem exibidas
 
-* **Exibir visualização** de atividades do usuário se marcada, a página de atividades incluirá uma guia que filtra as atividades com base nas geradas na comunidade pelo membro atual. O padrão está marcado.
+* **Caminho do recurso do fluxo**
 
-* **Exibir a exibição** de todas as atividades, se marcada, a página de atividades incluirá uma guia que inclui todas as atividades geradas na comunidade às quais o membro atual tem acesso. O padrão está marcado.
+   Deixe em branco como padrão para o site da comunidade ou grupo da comunidade. O caminho do recurso de fluxo identifica a origem das atividades. O padrão está em branco.
 
-* **Exibir exibição** seguinte se marcada, a página de atividades incluirá uma guia que filtra as atividades com base nas atividades que o membro atual está seguindo. O padrão está marcado.
+* **Visualização Exibir atividades do usuário**
+
+   Se marcada, a página de atividades incluirá uma guia que filtra as atividades com base naquelas geradas na comunidade pelo membro atual. O padrão está marcado.
+
+* **Visualização Exibir todas as atividades**
+
+   Se marcada, a página de atividades incluirá uma guia que inclui todas as atividades geradas na comunidade à qual o membro atual tem acesso. O padrão está marcado.
+
+* **Mostrar exibição seguinte**
+
+   Se marcada, a página de atividades incluirá uma guia que filtra as atividades com base nas atividades que o membro atual está seguindo. O padrão está marcado.
 
 ### Exibição Seguinte {#following-view}
 
@@ -69,11 +79,11 @@ Os componentes devem ser configurados para permitir o seguinte. Os recursos que 
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-O botão **Seguir **fornece um meio de seguir entradas como atividades, [notificações](/help/communities/notifications.md)ou [assinaturas](/help/communities/subscriptions.md). Sempre que o botão **Seguir **for selecionado, é possível ativar ou desativar uma seleção. A `Email Subscriptions` seleção só está presente quando configurada.
+O botão **Seguir** fornece um meio de seguir entradas como atividades, [notificações](/help/communities/notifications.md)ou [assinaturas](/help/communities/subscriptions.md). Cada vez que o botão **Seguir** é selecionado, é possível ativar ou desativar uma seleção. A `Email Subscriptions` seleção só está presente quando configurada.
 
-Se algum método de seguir for selecionado, o texto do botão mudará para **Seguinte**. Para sua conveniência, é possível optar por desativar todos os métodos `Unfollow All` .
+Se algum método de seguir for selecionado, o texto do botão mudará para **Seguinte**. Para sua conveniência, é possível selecionar `Unfollow All` alternar todos os métodos.
 
-O botão **Seguir **será exibido
+O botão **Seguir** será exibido
 
 * ao visualizar o perfil de outro membro
 * em uma página principal de recursos, como fóruns, QnA e blogs
