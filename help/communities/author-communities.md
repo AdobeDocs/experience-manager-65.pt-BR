@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: aaa067e0718d15cedde46296c1be69d422359097
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Componentes do Communities{#communities-components}
+# Componentes do Communities {#communities-components}
 
 ## Introdução {#introduction}
 
@@ -70,7 +70,7 @@ Consulte também o guia [interativo Componentes da](/help/communities/components
 | Perguntas relacionadas | [Perguntas e respostas](/help/communities/working-with-qna.md) |
 | Revisões | [Revisões](/help/communities/reviews.md) |
 | Resumo das revisões (Exibição) | [Revisões](/help/communities/reviews.md) |
-| Pesquisar | [Pesquisar](/help/communities/search.md) |
+| Pesquisar   | [Pesquisar](/help/communities/search.md) |
 | Resultados da pesquisa | [Pesquisar](/help/communities/search.md) |
 | Nuvem de tags sociais | [Nuvem de tags sociais](/help/communities/tagcloud.md) |
 | Votação | [Votação](/help/communities/voting.md) |
