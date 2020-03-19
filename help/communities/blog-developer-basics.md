@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Blog Essentials{#blog-essentials}
+# Blog Essentials {#blog-essentials}
 
 A partir do AEM 6.1 Communities, um blog é uma atividade comunitária. Os artigos de blog agora são publicados a partir do ambiente de publicação, onde antes os artigos de blog só podiam ser criados no ambiente do autor e publicados.
 
@@ -113,7 +113,7 @@ Consulte Editor [principal](/help/communities/deploy-communities.md#primary-publ
 
 A plataforma AEM bloqueia links de outros sites para impedir ataques de XSS, conforme descrito em
 
-* [Proteger contra Scripts entre Sites (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Proteger contra o cross-site Scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 A partir do AEM 6.2, as modificações anteriormente necessárias para serem feitas manualmente são incluídas no arquivo de configuração padrão do AntiSamy.
 
