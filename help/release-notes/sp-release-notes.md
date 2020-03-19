@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
+source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
 
 ---
 
@@ -41,6 +41,12 @@ Alguns dos principais recursos e melhorias introduzidos no AEM 6.5.4.0 incluem:
 * [Aprimoramentos](new-features-latest-service-pack.md#accessibility-enhancements) de acessibilidade nos ativos Experience Manager.
 
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.10.8.
+
+* Agora você pode sincronizar subárvores de conteúdo seletivo para o *Dynamic Media - modo* Scene7 em vez de todos os disponíveis em `content/dam`.
+
+* A integração do modelo de dados de formulário com o serviço da Web SOAP agora oferece suporte a grupos de escolha ou atributos em elementos.
+
+* A entrada ou saída SOAP e estruturas de dados complexas agora suportam Substituição de Grupo Dinâmico.
 
 Para obter uma lista completa dos recursos, destaques principais, recursos principais introduzidos em service packs AEM 6.5 anteriores, consulte [Novidades do Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
 
@@ -114,7 +120,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Todas as caixas de seleção no painel Filtro são apagadas quando a primeira e a segunda caixas de seleção são apagadas, quando as caixas de seleção de nível dois da árvore de caixas de seleção no Adobe Stock são selecionadas (NPR-31919).
 
-* A pesquisa de arquivos e pastas usando aspectos Omnisearch dá exceção (NPR-31872).
+* A pesquisa de Arquivos e Pastas usando aspectos Omnisearch dá exceção (NPR-31872).
 
 * O realce de campo para seleção de campo obrigatória no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de esquema de metadados correspondente (NPR-31834).
 
