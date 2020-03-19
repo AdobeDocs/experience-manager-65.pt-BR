@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -41,7 +41,7 @@ Essas instruções descrevem como se conectar ao servidor MySQL e estabelecer o 
 
 Como o SQL não diferencia maiúsculas de minúsculas, para sistemas operacionais sensíveis a maiúsculas e minúsculas, é necessário incluir uma configuração para minúsculas em todos os nomes de tabelas.
 
-Por exemplo, para especificar todos os nomes de tabela de minúsculas em um sistema operacional Linux:
+Por exemplo, para especificar todos os nomes de tabela de letras minúsculas em um sistema operacional Linux:
 
 * Editar arquivo `/etc/my.cnf`
 * Na `[mysqld]` seção, adicione a seguinte linha:
@@ -112,7 +112,7 @@ Abra a conexão Comunidades para instalar o banco de dados.
 
 ### Obter o script SQL {#obtain-the-sql-script}
 
-O script SQL é obtido do repositório AEM:
+O script SQL é obtido do repositório do AEM:
 
 1. Navegue até CRXDE Lite
 
@@ -125,8 +125,8 @@ O script SQL é obtido do repositório AEM:
 
 Um método para baixar o esquema é para
 
-* Selecione o `jcr:content`nó para o arquivo sql
-* Observe que o valor da `jcr:data`propriedade é um link de exibição
+* Selecione o `jcr:content` nó para o arquivo sql
+* Observe que o valor da `jcr:data` propriedade é um link de exibição
 
 * Selecione o link de exibição para salvar os dados em um arquivo local
 
@@ -155,7 +155,7 @@ Na imagem a seguir, o `init_schema.sql` arquivo está pronto para ser executado:
 
 #### Atualizar {#refresh}
 
-Depois que o script é executado, é necessário atualizar a `SCHEMAS`seção do `Navigator` para ver o novo banco de dados. Use o ícone de atualização à direita de &#39;SCHEMAS&#39;:
+Depois que o script é executado, é necessário atualizar a `SCHEMAS` seção do `Navigator` para visualizar o novo banco de dados. Use o ícone de atualização à direita de &#39;SCHEMAS&#39;:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
