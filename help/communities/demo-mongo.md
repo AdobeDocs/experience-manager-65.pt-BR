@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -69,7 +69,7 @@ Isso iniciará um servidor MongoDB usando a porta padrão 27017.
 
 >[!NOTE]
 >
->Se o MongoDB for iniciado *depois de *AEM, **reiniciar **todas as instâncias **AEM **para que eles se conectem corretamente ao MongoDB.
+>Se o MongoDB for iniciado *após* o AEM, **reinicie** todas as instâncias do **AEM** para que elas se conectem corretamente ao MongoDB.
 
 ### Opção de produção de demonstração: Configurar Conjunto de Réplicas MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -148,7 +148,7 @@ Siga as instruções na página principal da documentação: [MSRP - Loja comum 
 
 Para testar e verificar a loja comum MongoDB, poste um comentário na instância de publicação e exiba-a na instância do autor, bem como visualize o UGC no MongoDB e no Solr:
 
-1. Na instância de publicação, navegue até a página [Community Components Guide](http://localhost:4503/content/community-components/en/comments.html) e selecione o componente Comentários.
+1. Na instância de publicação, navegue até a página Guia [dos componentes da](http://localhost:4503/content/community-components/en/comments.html) comunidade e selecione o componente Comentários.
 1. Faça logon para postar um comentário:
 1. Digite o texto na caixa de entrada de texto do comentário e clique em **[!UICONTROL Postar]**
 
@@ -176,7 +176,7 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 
 ### Nenhum UGC é exibido {#no-ugc-appears}
 
-1. Verifique se o MongoDB está instalado e funcionando corretamente.
+1. Verifique se o MongoDB está instalado e em execução corretamente.
 
 1. Verifique se o MSRP foi configurado para ser o provedor padrão:
 
