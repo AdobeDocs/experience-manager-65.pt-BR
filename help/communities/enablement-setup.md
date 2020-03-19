@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -19,19 +19,19 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Iniciar instâncias de autor e publicação {#start-author-and-publish-instances}
 
-Para fins de desenvolvimento e demonstração, será necessário executar uma instância de autor e publicação.
+Para fins de desenvolvimento e demonstração, será necessário executar uma instância de autor e uma instância de publicação.
 
 Siga as instruções básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) ao AEM que resultarão em
 
-* ambiente do autor em [localhost:4502](http://localhost:4502/)
-* ambiente de publicação em [localhost:4503](http://localhost:4503/)
+* Ambiente do autor em [localhost:4502](http://localhost:4502/)
+* Ambiente de publicação no [localhost:4503](http://localhost:4503/)
 
 Para o AEM Communities,
 
 * O ambiente do autor é para
 
    * Desenvolvimento de sites, modelos, componentes, recursos de ativação e caminhos de aprendizagem
-   * Atribuição de membros e grupos de membros para habilitar recursos e caminhos de aprendizagem
+   * Atribuição de membros e grupos de membros para habilitar recursos e caminhos de aprendizado
    * Geração de relatórios em atribuições, exibições e postagens
    * Tarefas administrativas e de configuração
 
@@ -43,7 +43,7 @@ Para o AEM Communities,
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
@@ -71,7 +71,7 @@ See [Configuring Email](email.md).
 
 ## Ativar o serviço de túnel {#enable-the-tunnel-service}
 
-Ao criar um site da comunidade no ambiente do autor, o serviço de túnel possibilita a criação e o gerenciamento de usuários e grupos de usuários registrados no ambiente de publicação (membros), atribuir funções a membros da comunidade confiáveis e atribuir conteúdo a alunos.
+Ao criar um site da comunidade no ambiente do autor, o serviço de túnel possibilita a criação e o gerenciamento de usuários e grupos de usuários registrados no ambiente de publicação (membros), a atribuição de funções a membros da comunidade confiáveis e a atribuição de conteúdo a alunos.
 
 Para obter mais informações, consulte [Gerenciamento de usuários e grupos](users.md)de usuários.
 
@@ -125,8 +125,8 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 * **ID**: estrada
 * **Email**: riley.taylor@mailinator.com
-* **Senha**:password
-* **Confirmar senha**:password
+* **Senha**: password
+* **Confirmar senha**: password
 * **Nome**: Riley
 * **Sobrenome**: Taylor
 
@@ -134,10 +134,10 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 [Crie um segundo membro](members.md#create-new-member) que será adicionado ao grupo Classe de esqui da comunidade.
 
-* **ID**:calçada
+* **ID**: calçada
 * **Email**: sidney.croft@mailinator.com
-* **Senha**:password
-* **Confirmar senha**:password
+* **Senha**: password
+* **Confirmar senha**: password
 * **Nome**: Sidney
 * **Sobrenome**: Corte
 
@@ -147,8 +147,8 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 * **ID**: quinn
 * **Email**: quinn.harper@mailinator.com
-* **Senha**:password
-* **Confirmar senha**:password
+* **Senha**: password
+* **Confirmar senha**: password
 * **Nome**: Quinn
 * **Sobrenome**: Harper
 
@@ -161,7 +161,7 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 * **Descrição**: um grupo de exemplo para atribuir recursos de ativação
 * **Adicionar membros ao grupo** &#39;add&#39;:
 
-   *  estrada
+   * estrada
    * calçada
 
 * Selecione **[!UICONTROL Salvar]**
@@ -197,8 +197,8 @@ Crie um usuário no *autor*, ao qual seja atribuída a função de Administrador
 
    * **ID&amp;ast;**: sírio
    * **Endereço** Emai: sirius.nilson@mailinator.com
-   * **Senha&amp;passado;**:password
-   * **Confirmar Senha&amp;passado;**:password
+   * **Senha&amp;passado;**: password
+   * **Confirmar Senha&amp;passado;**: password
    * **Nome**: Sirius
    * **Sobrenome&amp;ast;**: Nilson
 
