@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
 
 Quando a implantação é um farm [de](/help/sites-deploying/recommended-deploys.md#tarmk-farm)publicação, os membros precisam fazer logon e ver seus dados em qualquer nó de publicação.
 
-Usuários e grupos de usuários (dados de usuário) criados no ambiente de publicação não são necessários no ambiente do autor.
+Os usuários e os grupos de usuários (dados do usuário) criados no ambiente de publicação não são necessários no ambiente do autor.
 
 A maioria dos dados do usuário criados no ambiente do autor deve permanecer no ambiente do autor e não ser copiada para publicar instâncias.
 
@@ -34,7 +34,7 @@ A partir do AEM 6.1, quando a sincronização do usuário estiver ativada, os da
 
 Os dados do usuário, juntamente com suas [ACLs](/help/sites-administering/security.md), são armazenados no [Oak Core](/help/sites-deploying/platform.md), a camada abaixo de Oak JCR, e são acessados usando a API [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/oak/api/package-tree.html)Oak. Com atualizações raras, é razoável que os dados do usuário sejam sincronizados com outras instâncias de publicação usando a Distribuição [de conteúdo](https://github.com/apache/sling/blob/trunk/contrib/extensions/distribution/README.md) Sling (distribuição Sling).
 
-Os benefícios da sincronização do usuário usando a distribuição Sling, em comparação à replicação tradicional são:
+Os benefícios da sincronização do usuário usando a distribuição Sling, em comparação com a replicação tradicional são:
 
 * *usuários*, perfis *de* usuário e grupos *de* usuários criados na publicação não são criados no autor
 
@@ -64,7 +64,7 @@ Os benefícios da sincronização do usuário usando a distribuição Sling, em 
 
 A sincronização do usuário depende do ambiente do autor para gerenciar as distribuições de dados do usuário, mesmo que os dados do usuário não sejam criados no autor. Muito, mas não toda, da configuração acontece no ambiente do autor e cada etapa identifica claramente se ela deve ser executada no autor ou publicação.
 
-Veja a seguir as etapas necessárias para ativar a sincronização do usuário, seguidas por uma seção [Solução de problemas](#troubleshooting) :
+Veja a seguir as etapas necessárias para habilitar a sincronização do usuário, seguidas por uma seção [Solução de problemas](#troubleshooting) :
 
 ### Pré-requisitos {#prerequisites}
 
@@ -77,7 +77,7 @@ Quando a sincronização do usuário estiver ativada, somente os usuários e gru
 * [Atualizações da plataforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
 * [Atualizações do AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
-### 1.Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
+### 1. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Ativar sincronização de usuário**
 
@@ -174,7 +174,7 @@ Depois que um usuário autorizado, um membro do grupo de usuários **`administra
 
 ![](assets/chlimage_1-22.png)
 
-### 4.Apache Sling Distribution Agent - Fábrica de agentes da fila {#apache-sling-distribution-agent-queue-agents-factory}
+### 4. Apache Sling Distribution Agent - Fábrica de agentes da fila {#apache-sling-distribution-agent-queue-agents-factory}
 
 **Ativar sincronização de usuário**
 
@@ -218,7 +218,7 @@ Depois que um usuário autorizado, um membro do grupo de usuários **`administra
 
 ![](assets/screen-shot_2019-05-24at090809.png)
 
-### 6.Apache Sling Distribution Trigger - Fábrica de Acionadores Programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### 6. Apache Sling Distribution Trigger - Fábrica de Acionadores Programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Opcional) modificar o intervalo de polling**
 
@@ -244,9 +244,9 @@ Por padrão, o autor pesquisará as alterações a cada 30 segundos. Para altera
 
 ## Configurar para várias instâncias de publicação {#configure-for-multiple-publish-instances}
 
-A configuração padrão é para uma única instância de publicação. Como o motivo para ativar a sincronização do usuário é para sincronizar várias instâncias de publicação, como para um farm de publicação, as instâncias de publicação adicionais precisarão ser adicionadas ao Sync Agents Fatory.
+A configuração padrão é para uma única instância de publicação. Como o motivo para ativar a sincronização do usuário é para sincronizar várias instâncias de publicação, como para um farm de publicação, as instâncias de publicação adicionais precisarão ser adicionadas à Fábrica de agentes de sincronização.
 
-### 7.Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory-1}
+### 7. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **Adicionar instâncias de publicação:**
 
@@ -263,19 +263,19 @@ A configuração padrão é para uma única instância de publicação. Como o m
 
 ![](assets/chlimage_1-25.png)
 
-* **Extremidades do exportador** Deve haver um terminal de exportador para cada editor. Por exemplo, se houver 2 editores, localhost:4503 e 4504, haverá 2 entradas:
+* **Extremidades do exportador** Deve haver um terminal de exportador para cada editor. Por exemplo, se houver 2 editores, localhost:4503 e 4504, deve haver 2 entradas:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
-* **Pontos finais** do importador Deve haver um ponto de extremidade do importador para cada editor. Por exemplo, se houver 2 editores, localhost:4503 e 4504, haverá 2 entradas:
+* **Pontos de extremidade** do importador Deve haver um ponto de extremidade do importador para cada editor. Por exemplo, se houver 2 editores, localhost:4503 e 4504, deve haver 2 entradas:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
 
 * select `Save`
 
-### 8.Ouvinte de sincronização de usuário do AEM Communities {#aem-communities-user-sync-listener}
+### 8. Ouvinte de sincronização de usuário do AEM Communities {#aem-communities-user-sync-listener}
 
 **(Opcional) Sincronizar nós JCR adicionais**
 
@@ -318,7 +318,7 @@ Pastas padrão para sincronizar
    * social/relações
    * atividades
 
-### 9.ID de Sling exclusiva {#unique-sling-id}
+### 9. ID de Sling exclusiva {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -328,7 +328,7 @@ Se a Sling ID for a mesma para várias instâncias de publicação em um farm de
 
 Para validar se todos os valores de ID de Sling diferem, em cada instância de publicação:
 
-1. navegue até [https://*host:port*/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
+1. navegar até `http://<host>:<port>/system/console/status-slingsettings`
 1. verifique o valor da **Sling ID**
 
 ![](assets/chlimage_1-27.png)
@@ -397,7 +397,7 @@ Quando a topologia é um farm [de](/help/sites-deploying/recommended-deploys.md#
 
 Por padrão, os dados do usuário criados no ambiente de publicação não aparecem no ambiente do autor e vice-versa.
 
-Quando o console Administração e segurança [do](/help/sites-administering/security.md) usuário for usado para adicionar novos usuários no ambiente de publicação, a sincronização do usuário sincronizará os novos usuários e sua associação de grupo com outras instâncias de publicação, se necessário. A sincronização do usuário também sincronizará os grupos de usuários criados pelo console de segurança.
+Quando o console Administração e segurança [do](/help/sites-administering/security.md) usuário for usado para adicionar novos usuários no ambiente de publicação, a sincronização do usuário sincronizará os novos usuários e sua associação de grupo com outras instâncias de publicação, se necessário. A sincronização do usuário também sincronizará os grupos de usuários criados por meio do console de segurança.
 
 ## Resolução de Problemas{#troubleshooting}
 
@@ -438,7 +438,7 @@ Após a conclusão das tarefas, para reativar a sincronização do usuário:
 
 O Diagnóstico de sincronização do usuário é uma ferramenta que verifica a configuração e tenta identificar qualquer problema.
 
-No autor, basta navegar do console principal por **Ferramentas, Operações, Diagnóstico, Diagnóstico de sincronização do usuário.**
+No autor, basta navegar do console principal por meio de **Ferramentas, Operações, Diagnóstico, Diagnóstico de sincronização do usuário.**
 
 Basta entrar no console Diagnóstico de sincronização do usuário para exibir os resultados.
 
@@ -470,7 +470,7 @@ Veja a seguir as exibições de como as configurações padrão editadas devem a
 
 ![](assets/chlimage_1-31.png)
 
-#### (publicar) Um Apache Sling Distribution Agent - Fábrica de agentes de fila {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
+#### (publicar) Um agente de distribuição Apache Sling - Fábrica de agentes de fila {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
 ![](assets/chlimage_1-32.png)
 
