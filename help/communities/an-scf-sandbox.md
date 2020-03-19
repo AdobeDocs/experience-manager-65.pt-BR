@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
@@ -50,10 +50,10 @@ Este tutorial presume que você tenha um autor de AEM e uma instância de public
 
 A seguir estão alguns links úteis para desenvolvedores novos na plataforma AEM:
 
-* [Introdução](../../help/sites-deploying/deploy.md#getting-started) - Para implantar instâncias do AEM
+* [Introdução](../../help/sites-deploying/deploy.md#getting-started): para implantar instâncias do AEM
 
-   * [Noções básicas](../../help/sites-developing/the-basics.md) - Para desenvolvedores de sites e recursos
-   * [Primeiros passos para autores](../../help/sites-authoring/first-steps.md) - Para criar conteúdo de página
+   * [Noções básicas](../../help/sites-developing/the-basics.md): para desenvolvedores de sites e recursos
+   * [Primeiros passos para autores](../../help/sites-authoring/first-steps.md): para criar conteúdo de página
 
 ## Uso do ambiente de desenvolvimento CRXDE Lite {#using-crxde-lite-development-environment}
 
@@ -71,7 +71,7 @@ Depois de fazer logon com privilégios administrativos, há várias maneiras de 
 
 3. Navegue diretamente para `CRXDE Lite`: `<server>:<port>/crx/de`
 
-   Por exemplo, em uma instância de autor local: ` [http://localhost:4502/crx/de](http://localhost:4502/crx/de)`
+   Por exemplo, em uma instância de autor local: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 Para trabalhar com o CRXDE Lite, você deve fazer logon com privilégios de desenvolvedor ou administrador. Para a instância padrão localhost, você pode fazer logon com
 
