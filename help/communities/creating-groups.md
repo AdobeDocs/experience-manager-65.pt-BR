@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Grupos de comunidades{#community-groups}
+# Grupos de comunidades {#community-groups}
 
 O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criada dinamicamente em um site da comunidade por usuários autorizados (membros da comunidade e autores) dos ambientes de publicação e autor.
 
@@ -26,39 +26,51 @@ Um modelo [de grupo da](/help/communities/tools-groups.md) comunidade fornece o 
 
 Um ou mais modelos de grupo são selecionados para a função de grupos quando a função é adicionada à estrutura de um site da comunidade ou a um modelo de site da comunidade. Esta lista de modelos de grupo é apresentada ao membro ou autor que cria dinamicamente um novo grupo a partir do site da comunidade.
 
-## Criando um novo grupo {#creating-a-new-group}
+## Creating a New Group {#creating-a-new-group}
 
 A capacidade de criar um novo grupo da comunidade depende da existência de um site da comunidade que inclui a função de grupos, como um criado a partir do ` [Reference Site Template](/help/communities/sites.md)`.
 
 Os exemplos a seguir usam o site da comunidade criado a partir do `Reference Site Template` como descrito no tutorial [Introdução ao AEM Communities](/help/communities/getting-started.md) .
 
-Esta é a página que é carregada na publicação quando o item de menu **Grupos **é selecionado:
+Esta é a página que é carregada na publicação quando o item de menu **Grupos** é selecionado:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 Quando você seleciona o ícone **Novo grupo** , uma caixa de diálogo de edição é aberta.
 
-Na **guia **Configurações **você fornece os recursos básicos do grupo:
+Na guia **Configurações** , você fornece os recursos básicos do grupo:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-* **Nome** do grupoO título do grupo a ser exibido no site da comunidade.
+* **Nome do grupo**
 
-* **Descrição** Uma descrição do grupo a ser exibido no site da comunidade.
+   O título do grupo a ser exibido no site da comunidade.
 
-* **Convidar** Uma lista de membros para convidar para entrar no grupo. A pesquisa antecipada fornecerá sugestões de membros da comunidade a serem convidados.
+* **Descrição**
 
-* **Nome** do URL do grupoO nome da página do grupo que se torna parte do URL.
+   Uma descrição do grupo a ser exibido no site da comunidade.
 
-* **Abrir grupo** A seleção `Open Group` indica que qualquer visitante anônimo do site pode exibir o conteúdo e desmarcará a seleção `Member Only Group`.
+* **Convite**
 
-* **Grupo** somente membro A seleção `Member Only Group` indica que somente os membros do grupo podem exibir o conteúdo e desmarcarão a seleção `Open Group`.
+   Uma lista de membros para convidar para ingressar no grupo. A pesquisa antecipada fornecerá sugestões de membros da comunidade a serem convidados.
 
-Na guia **Modelo **é a capacidade de selecionar na lista de modelos de grupos da comunidade que foram especificados quando a função de grupos foi incluída na estrutura do site da comunidade ou em um modelo de site da comunidade.
+* **Nome do URL do grupo**
+
+   O nome da página de grupo que se torna parte do URL.
+
+* **Abrir grupo**
+
+   A seleção `Open Group` indica que qualquer visitante anônimo do site pode exibir o conteúdo e desmarcará a seleção `Member Only Group`.
+
+* **Grupo somente de membros**
+
+   A seleção `Member Only Group` indica que somente os membros do grupo podem exibir o conteúdo e desmarcarão a seleção `Open Group`.
+
+Na guia **Modelo** está a capacidade de selecionar na lista de modelos de grupos da comunidade que foram especificados quando a função de grupos foi incluída na estrutura do site da comunidade ou em um modelo de site da comunidade.
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-Na guia **Imagem **é a capacidade de carregar uma imagem para ser exibida para o grupo na página Grupos do site da comunidade. A folha de estilos padrão dimensionará a imagem para 170 x 90 pixels.
+Na guia **Imagem** está a capacidade de carregar uma imagem para ser exibida para o grupo na página Grupos do site da comunidade. A folha de estilos padrão dimensionará a imagem para 170 x 90 pixels.
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
