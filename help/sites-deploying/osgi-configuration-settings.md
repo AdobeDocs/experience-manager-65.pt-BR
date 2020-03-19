@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0849cfdd0e4f9a614c455214e6520ead07ae6da0
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 [O OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia do AEM. É usado para controlar os pacotes compostos do AEM e suas configurações.
 
-O OSGi &quot;*fornece as primitivas padronizadas que permitem que os aplicativos sejam construídos com componentes pequenos, reutilizáveis e colaborativos. Esses componentes podem ser compostos em um aplicativo e implantados*&quot;.
+O OSGi &quot;*fornece as primitivas padronizadas que permitem que os aplicativos sejam construídos a partir de componentes pequenos, reutilizáveis e colaborativos. Esses componentes podem ser compostos em um aplicativo e implantados*&quot;.
 
 Isso permite o gerenciamento fácil de pacotes, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são tratadas automaticamente. Cada componente OSGi (consulte a Especificação [](https://www.osgi.org/Specifications/HomePage)OSGi) está contido em um dos vários pacotes. When working with AEM there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
@@ -36,7 +36,7 @@ As seguintes configurações OSGi (listadas de acordo com o pacote) são relevan
 
 >[!NOTE]
 >
->A ferramenta Detalhes [de configuração do](https://www.aemstuff.com/osgi.html) AEM OSGi pode ser usada para listar as configurações padrão do OSGi.
+>A ferramenta Dif de configuração do OSGi, parte das Ferramentas [do](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, pode ser usada para listar as configurações padrão do OSGi.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ As seguintes configurações OSGi (listadas de acordo com o pacote) são relevan
 **Repositório** do cliente Sling CRX Configure o acesso ao repositório de conteúdo subjacente.
 
 * A senha **de** administrador deve ser alterada após a instalação para garantir a [segurança](/help/sites-administering/security-checklist.md) da sua instância.
-* Outras alterações não devem ser necessárias e devem ser tomadas precauções, pois podem afetar o acesso ao repositório.
+* Outras alterações não devem ser necessárias e devem ser tomadas precauções, uma vez que podem afetar o acesso ao repositório.
 
 **Serviço** Wiki Mail Configure as configurações de email para emails enviados por um wiki.
 
@@ -116,7 +116,7 @@ Determinadas configurações podem afetar o desempenho; elas devem ser desativad
 
 * **Pastas de instalação nomeiam regexp** e profundidade de hierarquia **máxima de pastas** de instalação - especifica onde e em que profundidade as pastas do repositório são pesquisadas para que os recursos sejam instalados. Quando um curinga é usado (como em .*/install) todas as correspondências apropriadas serão pesquisadas, por exemplo, `/libs/sling/install` e `/libs/cq/core/install`.
 
-* **Caminho** de pesquisa, a lista de caminhos que o jcrinstall pesquisa os recursos a serem instalados, juntamente com um número indicando o fator de ponderação para esse caminho.
+* **Caminho** de pesquisa, a lista de caminhos que o jcrinstall pesquisa os recursos a serem instalados, juntamente com um número que indica o fator de ponderação para esse caminho.
 
 **Manipulador** de eventos de trabalho Apache Sling Configure parâmetros que gerenciam a programação de trabalhos:
 
@@ -141,7 +141,7 @@ Em especial, para as instâncias de produção:
 
 **Configuração** de registro do Apache Sling Configurar:
 
-* **Nível** de log e Arquivo **** de log, para definir o local e o nível de log da configuração central de log (error.log). O nível pode ser definido como `DEBUG`, `INFO`, `WARN`e `ERROR` `FATAL`.
+* **Nível** de log e Arquivo **** de log, para definir o local e o nível de log da configuração central de log (error.log). O nível pode ser definido como um de `DEBUG`, `INFO`, `WARN`, `ERROR` e `FATAL`.
 
 * **Número de Arquivos** de Log e Limite **de Arquivo de** Log para definir o tamanho e a rotação da versão do arquivo de log.
 
@@ -202,7 +202,7 @@ Consulte a Lista de verificação de [segurança - Problemas com falsificação]
 
 * **Ative o Log** de acesso para ativar ou desativar.
 
-Isso é combinado com o [Apache Sling Customizable Request Data Logger](#apacheslingcustomizablerequestdatalogger).
+Isso é emparelhado com o [Apache Sling Customizable Request Data Logger](#apacheslingcustomizablerequestdatalogger).
 
 Para obter mais informações, consulte Registro [de AEM e Registro de](/help/sites-deploying/configure-logging.md) Sling [](https://sling.apache.org/site/logging.html).
 
@@ -302,11 +302,11 @@ Ao usar grupos [de usuários](/help/sites-administering/cug.md) fechados, você 
 
 **Tarefa** do Verificador de links CQ de dia Defina as configurações de uma única tarefa do verificador de links (uma tarefa que verifica um link externo):
 
-* Verifique os intervalos definidos em **Bom intervalo** de teste de link e Intervalo de teste de link **inválido**
+* Verifique os intervalos definidos em Intervalo **de teste de link** bom e Intervalo de teste de link **incorreto**
 
 * Os vários parâmetros relacionados aos proxies para acesso à Internet e ao NTLM necessários para acesso externo ao verificar um link.
 
-**Serviço** de e-mail CQ de dia Configure o nome do host e os detalhes de acesso do servidor de e-mail. Consulte a seção Configuração do serviço de e-mail.
+**Serviço** de e-mail do CQ de Dia Configure o nome do host e os detalhes de acesso do servidor de e-mail. Consulte a seção Configuração do serviço de e-mail.
 
 **Newsletter Day CQ MCM** Configure as várias configurações usadas com o boletim informativo.
 
@@ -341,7 +341,7 @@ Usando o Mapeamento raiz do AEM, você pode configurar a interface que deseja te
 
 Várias propriedades de configuração estão disponíveis:
 
-* **Caminho** Caminho para o qual o manipulador de autenticação está ativo. Se esse parâmetro ficar vazio, o manipulador de autenticação será desativado. Por exemplo, o caminho / faz com que o manipulador de autenticação seja usado para todo o repositório.
+* **Caminho** Caminho para o qual o manipulador de autenticação está ativo. Se esse parâmetro for deixado em branco, o manipulador de autenticação será desativado. Por exemplo, o caminho / faz com que o manipulador de autenticação seja usado para todo o repositório.
 
 * **O valor de classificação de serviço** OSGi Framework é usado para indicar a ordem usada para chamar esse serviço. Esse é um `int` valor em que valores mais altos designam precedência mais alta.
 O valor padrão é `0`.
@@ -354,7 +354,7 @@ O valor padrão é `0`.
 
 * **Mapa** de usuário Para usuários selecionados, o nome de usuário extraído da solicitação HTTP pode ser substituído por outro no objeto de credenciais. O mapeamento é definido aqui. Se o nome de usuário `admin` for exibido em ambos os lados do mapa, o mapeamento será ignorado. Lembre-se de que o caractere &quot;=&quot; deve ser escapado com um &quot;\&quot; à esquerda.
 
-* **Formato** Indica o formato no qual a ID de usuário é fornecida. Use:
+* **Formato** Indica o formato no qual a ID de usuário é fornecida. Uso:
 
    * `Basic` se a ID do usuário estiver codificada no formato HTTP Basic Authentication
    * `AsIs` se a ID do usuário for fornecida em texto sem formatação ou qualquer expressão regular aplicada, o valor deve ser usado como está ou como qualquer expressão regular
@@ -411,7 +411,7 @@ Os outros modos podem ser acessados do sidekick, ou o sufixo `?wcmmode=disabled`
 * **Ativar Expurgação**
 
 * **Expurgar caminhos**, os caminhos que uma ação de pesquisa procurará
-* **Caminhos** de controle de versão implícitos, os caminhos onde o controle de versão implícito está ativo.
+* **Caminhos** de controle de versão implícitos, os caminhos nos quais o controle de versão implícito está ativo.
 
 * **Idade** máxima da versão, a idade máxima (em dias) de uma versão
 
@@ -437,7 +437,7 @@ As seguintes propriedades só se aplicam se HTTPS estiver ativado.
 * **Porta** HTTPS, Porta para acompanhar a solicitação HTTPS. O padrão é 433.
 * **NIO para HTTPS**, se deve ou não usar NIO para HTTP. O padrão é o valor da propriedade NIO para HTTP.
 * **Keystore**, caminho absoluto para o Keystore a ser usado para HTTPS. Obrigatório se HTTPS estiver ativado.
-* **Senha** do Keystore, Senha para acessar o Keystore.
+* **Senha** do armazenamento de chaves, Senha para acessar o armazenamento de chaves.
 * **Alias**-chave, Alias da chave secreta no Keystore.
 * **Senha** da chave, Senha para desbloquear a chave secreta no Keystore.
 * **Certificado** do cliente, requisito para que o cliente forneça um certificado válido. O padrão é nenhum.
