@@ -10,12 +10,12 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Guia de componentes da comunidade {#community-components-guide}
+# Guia de componentes da comunidade  {#community-components-guide}
 
 O guia Community Components é uma ferramenta de desenvolvimento interativo para o quadro de componentes [sociais (SCF)](scf.md). Fornece uma lista dos componentes AEM Communities disponíveis ou dos recursos mais complexos criados de vários componentes.
 
@@ -40,7 +40,7 @@ As interações com os componentes das Comunidades variam, dependendo de:
 
 No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o primeiro segmento de caminho após o nome do servidor:
 
-* Interface padrão:
+* Interface do usuário padrão:
 
    [https://&lt;servidor>:&lt;porta>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
@@ -62,7 +62,7 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 
 ### Página Inicial {#home-page}
 
-O guia fornece uma lista de componentes SCF disponíveis para visualização e protótipo no lado esquerdo da página.
+O guia fornece uma lista de componentes SCF disponíveis para visualização e prototipagem no lado esquerdo da página.
 
 Guia de componentes conforme exibido em uma instância do autor no modo Editar:
 
@@ -77,7 +77,7 @@ Selecione um componente na lista ao lado esquerdo da página.
 O corpo principal da guia exibe:
 
 1. Título: O nome do componente selecionado
-1. [Bibliotecas](#client-side-libraries)do cliente: Uma lista de uma ou mais categorias obrigatórias
+1. [Bibliotecas](#client-side-libraries)do lado do cliente: Uma lista de uma ou mais categorias obrigatórias
 1. [Incluível](scf.md#add-or-include-a-communities-component): Se o componente puder ser incluído dinamicamente, o estado pode ser alternado no modo de edição do autor:
 
    * Se adicionado, o texto exibido é: &quot;Esse componente é incluído por meio de seu nó par.&quot;
@@ -118,7 +118,7 @@ Ao usar o guia em uma instância de publicação, é possível experimentar os c
 
 >[!NOTE]
 >
->Lembre-se de que, se o SRP for deixado como padrão para [JSRP](jsrp.md), o UGC inserido na instância de publicação estará visível somente na publicação e *não será visível do console de [moderação](moderate-ugc.md) na instância do autor.
+>Observe que, se o SRP for deixado como padrão para [JSRP](jsrp.md), o UGC inserido na instância de publicação estará visível somente na publicação e *não* estará visível do console de [moderação](moderate-ugc.md) na instância do autor.
 
 ## Bibliotecas do lado do cliente {#client-side-libraries}
 
@@ -183,7 +183,7 @@ Selecione a guia CSS para ver o CSS associado ao componente.
 
 Se um componente for um composto de vários componentes, alguns CSS podem ser listados em um dos outros componentes.
 
-O Editor CSS permite que o CSS seja modificado e aplicado à instância do componente de amostra na parte superior da página.
+O Editor de CSS permite que o CSS seja modificado e aplicado à instância do componente de amostra na parte superior da página.
 
 Uma regra pode ser selecionada para realçar as partes do DOM usando essa regra clicando em ao lado da regra na medianiz.
 
