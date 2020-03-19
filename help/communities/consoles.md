@@ -10,14 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # Consoles de comunidades {#communities-consoles}
 
-Os consoles do AEM Communities, disponíveis no ambiente do autor no painel de navegação global, fornecem acesso a tarefas administrativas como
+Os consoles do AEM Communities, disponíveis no ambiente do autor no painel de navegação global, fornecem acesso a tarefas administrativas como:
 
 * [Criação de um site da comunidade](sites-console.md)
 * Adicionar [grupos](groups.md) aninhados dentro do site
@@ -29,11 +29,11 @@ Os consoles do AEM Communities, disponíveis no ambiente do autor no painel de n
 
 Quando o armazenamento [de](working-with-srp.md) UGC é configurado para ser uma loja comum compartilhada por ambientes de autor e publicação, o console [de](moderation.md)moderação, disponível em ambientes de autor e publicação, opera em uma instância solitária do UGC.
 
-No ambiente do autor, após fazer logon com privilégios de administrador, os `Communities` consoles ficam disponíveis nos consoles de navegação e ferramentas.
+No ambiente do autor, depois de fazer logon com privilégios de administrador, os `Communities` consoles ficam disponíveis nos consoles de navegação e ferramentas.
 
 >[!NOTE]
 >
->No ambiente de publicação, um site [da](sites-console.md) comunidade exibirá um item de `Administration`menu quando o membro conectado tiver privilégios apropriados.
+>No ambiente de publicação, um site [da](sites-console.md) comunidade exibirá um item de `Administration` menu quando o membro conectado tiver privilégios apropriados.
 
 ## Painel de navegação global {#global-navigation-panel}
 
@@ -60,7 +60,7 @@ Para acessar os vários consoles Comunidades, na navegação global selecione **
 
 * [Membros, Grupos](members.md)
 
-   Os consoles Membros e Grupos são para gerenciar membros da comunidade e grupos de membros que existem no ambiente de publicação a partir do ambiente do autor.
+   Os consoles Membros e Grupos são destinados ao gerenciamento de membros da comunidade e grupos de membros que existem no ambiente de publicação a partir do ambiente do autor.
 
 * [Relatórios](reports.md)
 
