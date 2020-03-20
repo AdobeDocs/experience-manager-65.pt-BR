@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 76fe7f99273139243e8944448ccfb013408b38de
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -336,11 +336,10 @@ Para visualizar um ativo, siga estas etapas.
 
 Para visualizar um ativo usando o teclado, siga estas etapas:
 
-1. Na interface do usuário dos Ativos, navegue até o local do ativo que deseja visualizar, usando `Tab` as teclas de seta.
+1. Na interface do usuário Ativos, navegue até o ativo desejado usando `Tab` as teclas de seta e &lt;barra de espaço>.
 
-1. Abra o ativo desejado.
+1. Pressione a `Enter` tecla no ativo desejado para abri-lo. É possível aplicar zoom em ativos no modo de visualização.
 
-   No modo de visualização, as opções de zoom e redefinição estão disponíveis para os tipos [de imagem](/help/assets/assets-formats.md#supported-raster-image-formats) suportados (com edição interativa).
 1. Para aplicar zoom no ativo:
    1. Use a `Tab` tecla para mover o foco para o ícone de zoom.
    1. Use a `Enter` tecla para aplicar zoom na imagem.
@@ -368,11 +367,15 @@ Consulte também [Visualizar ativos de mídia dinâmica.](/help/assets/previewin
 
 1. Para programar uma data/hora específica para a ativação do ativo, use o seletor de datas ao lado do campo **[!UICONTROL No horário]**.
 
-   ![chlimage_1-217](assets/chlimage_1-12.png)
+   ![use o seletor de data e hora ou as teclas do teclado no campo Hora ativa para adicionar data e hora para a ativação do ativo](assets/schedule-activation.png)
+
+   *Figura: Agendar ativação de ativos*
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo Tempo de **[!UICONTROL desativação]** . A data de desativação deve ser posterior à data de ativação de um ativo. Depois do tempo de [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web Ativos ou por meio da API HTTP.
 
-   ![chlimage_1-218](assets/chlimage_1-13.png)
+   ![use o seletor de data e hora ou as teclas do teclado no campo Hora de desligar para adicionar data e hora para a desativação de ativos](assets/schedule-deactivation.png)
+
+   *Figura: Agendar desativação de ativos*
 
 1. No campo **[!UICONTROL Tags]** , selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione Enter. A nova tag é salva no AEM. O YouTube requer tags para publicação. Consulte [publicar vídeos no YouTube](video.md#publishing-videos-to-youtube).
 
