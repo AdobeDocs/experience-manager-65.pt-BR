@@ -3,14 +3,14 @@ title: Como editar ou adicionar metadados
 description: Saiba mais sobre metadados de ativos no AEM Assets e sobre várias maneiras pelas quais você pode editar metadados de ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
 
 ---
 
 
 # Como editar ou adicionar metadados {#how-to-edit-or-add-metadata}
 
-Os metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é extraído automaticamente quando você carrega uma imagem. Você pode editar os metadados existentes ou adicionar novas propriedades de metadados a campos existentes (por exemplo, quando um campo de metadados estiver em branco).
+Metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é extraído automaticamente quando você carrega uma imagem. Você pode editar os metadados existentes ou adicionar novas propriedades de metadados a campos existentes (por exemplo, quando um campo de metadados estiver em branco).
 
 Como as empresas precisam de vocabulários de metadados controlados e confiáveis, os ativos AEM não permitem a adição ad hoc de novas propriedades de metadados. Embora os autores não possam adicionar novos campos de metadados para ativos, os desenvolvedores podem. Consulte [Criar nova propriedade de metadados para ativos](meta-edit.md#editing-metadata-schema).
 
@@ -24,11 +24,15 @@ Para editar metadados:
    * Na miniatura do ativo, selecione a ação rápida **[!UICONTROL Exibir propriedades]** .
    * Na página do ativo, clique/toque no ícone **[!UICONTROL Exibir propriedades]** na barra de ferramentas.
       ![chlimage_1-168](assets/chlimage_1-168.png)
+      *Figura: Ícone Propriedades*
    A página do ativo exibe todos os metadados do ativo. Esses metadados foram extraídos automaticamente quando foram carregados (assimilados) nos ativos AEM.
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+   ![selecione Propriedades do ativo para exibir metadados](assets/asset-metadata.png)
 
-1. Faça edições nos metadados sob as várias guias, conforme necessário, e quando concluído, clique/toque em **[!UICONTROL Salvar]** na barra de ferramentas para salvar as alterações. Clique/toque em **[!UICONTROL Fechar]** para retornar à interface da Web dos Ativos.
+
+   *Figura: Editar ou adicionar metadados na página Propriedades do ativo*
+
+1. Faça edições nos metadados em várias guias, conforme necessário, e quando concluído, clique/toque em **[!UICONTROL Salvar]** na barra de ferramentas para salvar as alterações. Clique/toque em **[!UICONTROL Fechar]** para retornar à interface da Web do Assets.
 
    >[!NOTE]
    >
