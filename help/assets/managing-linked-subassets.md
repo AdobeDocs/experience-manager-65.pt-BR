@@ -3,7 +3,7 @@ title: Gerenciar ativos compostos com referências e ativos de várias páginas 
 description: Saiba como criar referências a ativos AEM no InDesign, no Illustrator e no Photoshop. Use o recurso Visualizador de página para exibir páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b13fe70c4b67b27e0f18bdb557c52e25d21e7f75
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,9 @@ Você pode fazer referência a ativos AEM existentes em um arquivo do Adobe Illu
 
 1. Usando o aplicativo [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM para desktop, monte o repositório AEM Assets como uma unidade em sua máquina local. Na unidade montada, navegue até o local do ativo que deseja referenciar.
 1. Arraste o ativo da unidade montada para o arquivo do Illustrator.
+
 1. Salve o arquivo do Illustrator na unidade montada ou [carregue](/help/assets/managing-assets-touch-ui.md#uploading-assets) no repositório do AEM.
+
 1. Após a conclusão do fluxo de trabalho, vá para a página de detalhes do ativo do ativo. As referências aos ativos AEM existentes estão listadas em **[!UICONTROL Dependências]** na coluna **[!UICONTROL Referências]** .
 
    ![chlimage_1-84](assets/chlimage_1-258.png)
@@ -35,7 +37,9 @@ Você pode fazer referência a ativos AEM existentes em um arquivo do Adobe Illu
 
 1. Clique em **[!UICONTROL Exibir propriedades]** na barra de ferramentas. Na página [!UICONTROL Propriedades] , a lista de arquivos que fazem referência ao ativo atual é exibida na coluna **[!UICONTROL Referências]** da guia **[!UICONTROL Básico]** .
 
-   ![chlimage_1-86](assets/chlimage_1-260.png)
+   ![exibir as referências dos ativos do Experience Manager na coluna Referências nos detalhes do ativo](assets/asset-references.png)
+
+   *Figura: Referências de ativos em detalhes de ativos*
 
 ## Adicionar ativos AEM como referências no Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
 
