@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -30,9 +30,7 @@ O AEM oferece suporte aos seguintes casos de uso e este artigo descreve o uso, o
 
 Procure ativos usando o campo Omnisearch na parte superior da interface da Web do AEM. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** no AEM, clique no ícone de pesquisa na barra superior, digite a palavra-chave de pesquisa e pressione return. Como alternativa, use o atalho de palavra-chave / (barra) para abrir o campo Omnisearch. Local: os ativos são pré-selecionados para limitar as pesquisas aos ativos DAM. O AEM fornece sugestões para começar a digitar uma palavra-chave de pesquisa.
 
-Use o painel **[!UICONTROL Filtros]** para restringir sua pesquisa filtrando os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento do Adobe Stock. Seus administradores podem personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando aspectos de pesquisa.
-
-Observe que o filtro Tipo [!UICONTROL de] arquivo no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto, o que significa que, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível não estão selecionadas e, em vez disso, são riscadas.
+Use o painel **[!UICONTROL Filtros]** para restringir sua pesquisa filtrando os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento do Adobe Stock. Seus administradores podem personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando aspectos de pesquisa. O filtro Tipo [!UICONTROL de] arquivo no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível não são selecionadas e, em vez disso, são filtradas.
 
 O recurso de pesquisa do AEM oferece suporte à pesquisa de coleções e à pesquisa de ativos em uma coleção. Consulte Coleções [de pesquisa](/help/assets/managing-collections-touch-ui.md).
 
@@ -74,7 +72,7 @@ O AEM pode pesquisar vários formatos de arquivo e os filtros de pesquisa podem 
 
 ### Resultados com e sem Tags inteligentes aprimoradas {#withsmarttags}
 
-Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
+Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave mulheres em execução. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
 
 * `woman running`
 * `woman.running`
@@ -248,7 +246,7 @@ Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[por
 
 *Figura: Procurar e selecionar ativo no seletor de ativos*
 
-## Limitações   {#limitations}
+## Limitações     {#limitations}
 
 O recurso de pesquisa nos ativos AEM tem as seguintes limitações:
 
