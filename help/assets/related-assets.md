@@ -3,7 +3,7 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos que compartilham determinados atributos comuns. Você também pode usar o recurso para criar relações de origem/derivadas entre ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -14,14 +14,16 @@ Os ativos Adobe Experience Manager (AEM) permitem relacionar manualmente os ativ
 
 Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou JPG de baixa resolução com fornecedores ou agências e disponibilizar o arquivo INDD de alta resolução somente mediante solicitação.
 
->[!NOTE] Somente os usuários com permissões de edição podem relacionar e desrelacionar ativos.
+>[!NOTE] Somente os usuários com permissões de edição em ativos podem relacionar e desrelacionar os ativos.
 >
 
 ## Relate assets {#relating-assets}
 
-1. Na interface do AEM, abra a página [!UICONTROL Propriedades] de um ativo que você deseja relacionar.
+1. Na interface do AEM, abra a página **[!UICONTROL Propriedades]** de um ativo que você deseja relacionar.
 
-   ![chlimage_1-272](assets/chlimage_1-272.png)
+   ![abrir a página Propriedades de um ativo para relacionar o ativo](assets/asset-properties-relate-assets.png)
+
+   *Figura: Página de propriedades do ativo para relacionar ativos*
 
    Como alternativa, selecione o ativo na exibição de lista.
 
@@ -67,11 +69,14 @@ Criar relacionamentos de origem/derivados entre ativos usando o recurso Ativos r
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se o arquivo de origem estiver relacionado a outro ativo, o AEM Assets buscará o ativo referenciado e o incluirá para conversão.
+Se o arquivo de origem estiver relacionado a outro ativo, o Experience Manager Assets buscará o ativo referenciado e o incluirá para conversão.
 
-![chlimage_1-282](assets/chlimage_1-282.png)
+![a página Propriedades do ativo mostra o arquivo de origem do ativo relacionado a ser incluído para conversão](assets/asset-properties-source-asset.png)
+
+*Figura: Ativo de origem dos ativos relacionados a serem incluídos para conversão*
 
 1. Traduza os ativos na pasta de origem para um idioma de destino seguindo as etapas em [Criar um novo projeto](translation-projects.md#create-a-new-translation-project)de tradução. Por exemplo, neste caso, traduza seus ativos para francês.
+
 1. Na página [!UICONTROL Projetos] , abra a pasta de tradução.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
