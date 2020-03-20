@@ -3,7 +3,7 @@ title: Esquemas de metadados
 description: O esquema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar um esquema de metadados personalizado, editar o esquema de metadados e aplicar o esquema de metadados aos ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -14,7 +14,7 @@ Nos ativos Adobe Experience Manager (AEM), um esquema de metadados define o layo
 
 Você pode usar o editor de Formulários de esquema de metadados para modificar esquemas existentes ou adicionar esquemas de metadados personalizados.
 
-1. Para exibir a página de propriedades de um ativo, clique ou toque no ícone **[!UICONTROL Exibir propriedades]** de Ações rápidas no bloco de ativo na exibição Cartão.
+1. Para exibir a página de propriedades de um ativo, clique ou toque no ícone Propriedades **[!UICONTROL da]** exibição em Ações rápidas no bloco de ativo na exibição Cartão.
 
    ![chlimage_1-34](assets/chlimage_1-170.png)
 
@@ -24,7 +24,10 @@ Você pode usar o editor de Formulários de esquema de metadados para modificar 
 
 1. Edite várias propriedades de metadados nas várias guias. No entanto, não é possível modificar o tipo de ativo na página de propriedades.
 
-   ![chlimage_1-36](assets/chlimage_1-172.png)
+   ![não é possível alterar o Tipo de ativo na guia básica de Propriedades do ativo](assets/asset-properties-basic-tab.png)
+
+   *Figura: Guia Básico em Propriedades do ativo*
+
 
    Para modificar o tipo MIME de um ativo, use um formulário de esquema de metadados personalizado ou modifique um formulário existente. Consulte [Editar formulários](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de esquema de metadados para obter mais informações. Se você modificar o esquema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um esquema jpeg em `default/image` apenas modifica o layout de metadados (propriedades de ativos) para ativos com tipo MIME `image/jpeg`. No entanto, se você editar o esquema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
 
@@ -46,7 +49,7 @@ Você pode usar o editor de Formulários de esquema de metadados para modificar 
          * **pdf**: Formulário de esquema para ativos com subtipo `pdf`.
       1. **vídeo**: Formulário de esquema para ativos com tipo MIME `video`, como `video/avi`, `video/mp4`etc.
    * **coleção**: Formulário de esquema para coleções.
-   * **** contentfragment: Formulário de esquema para Fragmentos de conteúdo.
+   * **contentfragment:** Formulário de esquema para Fragmentos de conteúdo.
    * **formulários**: Este formulário de esquema está relacionado aos Formulários [do](/help/forms/home.md)Adobe Experience Manager.
 
 >[!NOTE]
@@ -82,7 +85,10 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
 1. Na página **[!UICONTROL Editor de esquema de metadados]**, personalize a página de propriedades do ativo arrastando um ou mais componentes da lista de tipos de componentes na guia **[!UICONTROL Criar formulário]** para a guia **[!UICONTROL Básico]**.
 
-   ![chlimage_1-40](assets/chlimage_1-176.png)
+   ![adicionar componentes de Formulário de compilação ao editor de esquema de metadados para personalizar as Propriedades do ativo](assets/metadata-schema-editor.png)
+
+
+   *Figura: Guia Básica do editor de esquema de metadados*
 
 1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **Configurações** .
 
@@ -104,14 +110,14 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário usados n
 | [!UICONTROL Ativo referenciado por] | Adicione este componente para exibir a lista de ativos referenciados pelo ativo. |
 | [!UICONTROL Fazer referência ao ativo] | Adicionar para exibir uma lista de ativos que fazem referência ao ativo. |
 | [!UICONTROL Referências de produtos] | Adicionar para mostrar a lista de produtos vinculados ao ativo. |
-| [!UICONTROL Classificação do ativo] | Adicionar para exibir opções para classificar o ativo. |
-| [!UICONTROL Metadados do contexto] | Adicionar para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
+| [!UICONTROL Classificação do ativo] | Adicione para exibir opções para classificar o ativo. |
+| [!UICONTROL Metadados do contexto] | Adicione para controlar a exibição de outras guias de metadados na página de propriedades dos ativos. |
 
 #### Editar o componente de metadados {#edit-the-metadata-component}
 
 Para editar as propriedades de um componente de metadados no formulário, clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Configurações]** .
 
-**Rótulo** do campo: O nome da propriedade de metadados exibida na página de propriedades do ativo.
+**Rótulo** do campo: O nome da propriedade de metadados que é exibida na página de propriedades do ativo.
 
 **Mapear para propriedade**: Essa propriedade especifica o caminho/nome relativo para o nó do ativo no qual ele é salvo no repositório CRX. Começa com `./` porque indica que o caminho está sob o nó do ativo.
 
@@ -127,7 +133,7 @@ Para garantir que o componente seja exibido corretamente no formulário de esque
 
 **Espaço reservado**: Use essa propriedade para especificar o texto relevante do espaço reservado para a propriedade metadata.
 **Obrigatório**: Use essa propriedade para marcar uma propriedade de metadados como obrigatória na página de propriedades.
-**Desativar edição**: Use essa propriedade para tornar uma propriedade de metadados não editável na página de propriedades.
+**Desabilitar edição**: Use essa propriedade para tornar uma propriedade de metadados não editável na página de propriedades.
 **Mostrar campo vazio em somente**leitura: Marque essa propriedade para exibir uma propriedade de metadados na página de propriedades, mesmo que ela não tenha valor. Por padrão, quando uma propriedade de metadados não tem valor, ela não é listada na página de propriedades.
 **Mostrar lista ordenada**: Use essa propriedade para exibir uma lista ordenada de opções **Opções**: Use essa propriedade para especificar opções em uma lista **Descrição** : Use essa propriedade para adicionar uma breve descrição para o componente de metadados.
 **Classe**: Classe de objeto à qual a propriedade está associada.
@@ -137,7 +143,7 @@ Para garantir que o componente seja exibido corretamente no formulário de esque
 
 >[!NOTE]
 >
->O componente Campo oculto não inclui esses atributos. Em vez disso, inclui propriedades, como Nome dos atributos, Valor, Rótulo do campo e Descrição. Os valores do componente Campo oculto são enviados como um parâmetro POST sempre que o ativo é salvo. Ele não é salvo como metadados do ativo.
+>O componente Campo oculto não inclui esses atributos. Em vez disso, inclui propriedades, como Nome dos atributos, Valor, Rótulo do campo e Descrição. Os valores do componente Campo oculto são enviados como um parâmetro POST sempre que o ativo é salvo. Ele não é salvo como metadados para o ativo.
 
 Se você selecionar a opção **[!UICONTROL Obrigatório]**, poderá pesquisar por ativos sem metadados obrigatórios. No painel **[!UICONTROL Filtros]**, expanda o predicado **[!UICONTROL Validação de metadados]** e selecione a opção **[!UICONTROL Inválido]**. Os resultados de pesquisa exibem ativos que não têm metadados obrigatórios configurados por meio do formulário de esquema.
 
@@ -147,9 +153,11 @@ Se você adicionar o componente Metadados contextuais a qualquer guia de qualque
 
 ![chlimage_1-43](assets/chlimage_1-179.png)
 
-Para incluir qualquer guia na página de propriedades, além da guia na qual o componente Metadados contextuais é aplicado, selecione a guia na lista. A guia é adicionada à página de propriedades.
+Para exibir qualquer guia na página de propriedades, além da guia na qual o componente Metadados contextuais é aplicado, selecione a guia na lista. A guia é adicionada à página de propriedades.
 
-![chlimage_1-44](assets/chlimage_1-180.png)
+![selecione uma guia na lista de metadados contextuais para exibir na página de propriedades](assets/contextual-metadata-asset-properties.png)
+
+*Figura: Metadados contextuais na página de propriedades do ativo*
 
 ### Especificar propriedades no arquivo JSON {#specify-properties-in-json-file}
 
@@ -169,7 +177,7 @@ Clique `X` para excluir uma guia.
 
 ## Excluir formulários de esquema de metadados {#delete-metadata-schema-forms}
 
-O AEM permite que você exclua apenas formulários de esquema personalizados. Isso não permite excluir os formulários/modelos de esquema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
+O AEM permite que você exclua apenas formulários de esquema personalizados. Isso não permite que você exclua os formulários/modelos de esquema padrão. No entanto, é possível excluir quaisquer alterações personalizadas nesses formulários.
 
 Para excluir um formulário, selecione-o e clique no ícone Excluir.
 
@@ -199,7 +207,7 @@ Nesse caso, crie um novo nó `/etc/dam/metadataeditor/mimetypemappings` no repos
 
 | Nome | Descrição | Tipo | Valor |
 |---|---|---|---|
-| `exposedmimetype` |  Nome do formulário existente a ser mapeado | `String` | `image/jpeg` |
+| `exposedmimetype` | Nome do formulário existente a ser mapeado | `String` | `image/jpeg` |
 | `mimetypes` | Lista de tipos MIME que usam o formulário definido no `exposedmimetype` atributo | `String` | `image/png` |
 
 O AEM Assets mapeia os seguintes tipos MIME e formulários de esquema:
@@ -230,7 +238,7 @@ Por exemplo, você pode definir uma variante do esquema de metadados padrão e a
 
 Somente os ativos carregados na pasta à qual este esquema é aplicado estarão em conformidade com os metadados modificados definidos no esquema de metadados da variante.
 
-Os ativos em outras pastas onde o esquema original é aplicado continuam em conformidade com os metadados definidos no esquema original.
+Os ativos em outras pastas em que o esquema original é aplicado continuam em conformidade com os metadados definidos no esquema original.
 
 A herança de metadados por ativos baseia-se no esquema aplicado à pasta de primeiro nível na hierarquia. Em outras palavras, se uma pasta não contiver subpastas, os ativos dentro dela herdarão os metadados do esquema aplicado à pasta.
 
@@ -246,7 +254,9 @@ Se a pasta tiver uma subpasta, os ativos dentro da subpasta herdarão os metadad
 
 1. Na página Editor **[!UICONTROL de esquema de]** metadados, adicione um campo de texto ao formulário de esquema. Por exemplo, adicione um campo com o rótulo **[!UICONTROL Categoria]**.
 
-   ![chlimage_1-50](assets/chlimage_1-186.png)
+   ![adicionar um campo de texto ao editor de formulários de esquema de metadados](assets/text-field-metadata-schema-editor.png)
+
+   *Figura: Campo de texto adicionado ao editor de formulários de esquema de metadados*
 
 1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Formulários **[!UICONTROL de esquema de]** metadados.
 1. Clique/toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
@@ -263,20 +273,22 @@ Se a pasta tiver uma subpasta, os ativos dentro da subpasta herdarão os metadad
 
 ## Definir metadados obrigatórios {#define-mandatory-metadata}
 
-Você pode definir campos obrigatórios em nível de pasta, que é imposto aos ativos que são carregados na pasta. Se você carregar ativos com metadados ausentes para os campos obrigatórios definidos anteriormente, uma indicação visual para metadados ausentes será exibida nos ativos na exibição de Cartão.
+Você pode definir campos obrigatórios em nível de pasta, que é imposto aos ativos que são carregados na pasta. Se você carregar ativos com metadados ausentes para os campos obrigatórios definidos anteriormente, uma indicação visual para metadados ausentes aparecerá nos ativos na exibição de Cartão.
 
 >[!NOTE]
 >
 >Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na exibição Cartões, o AEM não exibe a mensagem de aviso sobre metadados ausentes para esses campos de metadados obrigatórios.
 
 1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
-1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve como `my_default`.
+1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve-o como `my_default`.
 
    ![chlimage_1-53](assets/chlimage_1-189.png)
 
 1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um campo **[!UICONTROL Categoria]** e torne o campo obrigatório.
 
-   ![chlimage_1-54](assets/chlimage_1-190.png)
+   ![adicionar campo ao formulário de metadados e selecionar Obrigatório na guia Regras para torná-lo obrigatório](assets/mandatory-field-metadata-schema-editor.png)
+
+   *Figura: Campo obrigatório no editor de formulários de esquema de metadados*
 
 1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Formulários **[!UICONTROL de esquema de]** metadados. Selecione o formulário e clique ou toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 
@@ -296,4 +308,4 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 
    >[!CAUTION]
    >
-   >As verificações de validação de metadados exigem muitos recursos e podem afetar o desempenho do sistema. Agendar as verificações em conformidade. Se o servidor não conseguir lidar com a carga, tente desativar esta tarefa.
+   >As verificações de validação de metadados exigem muitos recursos e podem afetar o desempenho do seu sistema. Agendar as verificações em conformidade. Se o servidor não conseguir lidar com a carga, tente desativar esta tarefa.
