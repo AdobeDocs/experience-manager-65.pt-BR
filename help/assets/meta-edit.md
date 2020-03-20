@@ -3,7 +3,7 @@ title: Como editar ou adicionar metadados
 description: Saiba mais sobre metadados de ativos no AEM Assets e sobre várias maneiras pelas quais você pode editar metadados de ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,8 @@ Para editar metadados:
    * Na miniatura do ativo, selecione a ação rápida **[!UICONTROL Exibir propriedades]** .
    * Na página do ativo, clique/toque no ícone **[!UICONTROL Exibir propriedades]** na barra de ferramentas.
       ![chlimage_1-168](assets/chlimage_1-168.png)
-      *Figura: Ícone Propriedades*
+   *Figura: Ícone Propriedades*
+
    A página do ativo exibe todos os metadados do ativo. Esses metadados foram extraídos automaticamente quando foram carregados (assimilados) nos ativos AEM.
 
    ![selecione Propriedades do ativo para exibir metadados](assets/asset-metadata.png)
