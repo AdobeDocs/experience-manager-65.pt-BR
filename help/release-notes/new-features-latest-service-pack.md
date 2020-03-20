@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
+source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
 
 ---
 
@@ -17,6 +17,8 @@ O AEM Service Pack 4 (6.5.4.0) mais recente foi lançado em 5 **de março de 202
 
 ## AEM Sites {#aem-sites}
 
+O AEM 6.5.4.0 inclui melhorias no sistema de estilo. Agora é possível selecionar estilos na caixa de diálogo do componente.
+
 ### Melhorias no desempenho em várias áreas {#performance-improvements}
 
 * Redução do tempo para carregar e inicializar o ContextHub em um site (`contexthub.kernel.js`). Isso resulta em cargas de página mais rápidas durante uma visita ao site.
@@ -26,8 +28,6 @@ O AEM Service Pack 4 (6.5.4.0) mais recente foi lançado em 5 **de março de 202
 * Tempo de carregamento reduzido para entradas em uma página Sites com mais de 200 cópias online na Visão geral **** da Live Copy.
 
 * Funcionamento aprimorado de URLs incompletos ou inválidos. Tais URLs podem retardar o Editor de modelos.
-
-Além disso, o AEM 6.5.4.0 inclui melhorias no Sistema de estilo. Agora é possível selecionar estilos na caixa de diálogo do componente.
 
 ## Ativos AEM {#aem-assets}
 
@@ -99,7 +99,7 @@ O Experience Manager Forms inclui os seguintes aprimoramentos de acessibilidade:
 
 A geração de imagens inteligentes usa as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento. A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo de entrega para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagem [inteligente](../assets/imaging-faq.md).
 
-### Pesquisa visual para AEM Assets (6.5.2.0) {#visual-search}
+### Pesquisa visual para ativos AEM (6.5.2.0) {#visual-search}
 
 Os usuários do Assets podem pesquisar imagens visualmente semelhantes. O AEM exibe as imagens com tags inteligentes do repositório DAM que são semelhantes a uma imagem selecionada pelo usuário. See [Visual search](../assets/search-assets.md).
 
@@ -116,16 +116,19 @@ Você tem a opção de especificar uma data e hora de início e uma data e hora 
 
 Você pode usar a API de lote para produzir várias comunicações interativas a partir de um modelo. O modelo é uma comunicação interativa sem dados. A API de lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, declarações de cartão de crédito para vários clientes. Consulte [Gerar várias comunicações interativas usando a API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)de lote.
 
-
-
 ## Versões de chave desde o AEM 6.5 SP3
 
 Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes recursos que estão fora do principal produto do AEM:
 
-* AEM Cloud Manager 2020.1.0 e 2020.2.0As atualizações de versão melhoram o status do pipeline e a capacidade de baixar registros para várias etapas. Para obter mais informações, consulte:
+* AEM Cloud Manager 2020.1.0 e 2020.2.0
+
+   As atualizações da versão melhoram o status do pipeline e a capacidade de baixar registros para várias etapas. Para obter mais informações, consulte:
+
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
+
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+
 
 * Atualizações da CLI do AEM Cloud Manager
 
