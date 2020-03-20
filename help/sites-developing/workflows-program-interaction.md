@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
 
 ---
 
@@ -37,30 +37,12 @@ A classe também fornece vários métodos para intervir nos ciclos de vida do fl
 
 A tabela a seguir fornece links para a documentação de referência de vários objetos-chave Java a serem usados ao interagir programaticamente com fluxos de trabalho. Os exemplos a seguir demonstram como obter e usar os objetos de classe no código.
 
-<table>
- <tbody>
-  <tr>
-   <th>Recursos<a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"></a></th>
-   <th>Objetos<br /> </th>
-  </tr>
-  <tr>
-   <td>Acessar um fluxo de trabalho<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html"><code>WorkflowSession</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Execução e consulta de uma instância de fluxo de trabalho<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html"><code>Workflow</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html"><code>WorkItem</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html"><code>WorkflowData</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Gerenciamento de um modelo de fluxo de trabalho<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html"><code>WorkflowModel</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html"><code>WorkflowNode</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html"><code>WorkflowTransition</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Informações para um nó que está no fluxo de trabalho (ou não) </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"><code>WorkflowStatus</code></a></td>
-  </tr>
- </tbody>
-</table>
+| Recursos | Objetos |
+|---|---|
+| Acessar um fluxo de trabalho | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| Execução e consulta de uma instância de fluxo de trabalho | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| Gerenciamento de um modelo de fluxo de trabalho | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| Informações para um nó que está no fluxo de trabalho (ou não) | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## Obtenção de objetos de fluxo de trabalho em scripts ECMA {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -89,7 +71,7 @@ As seguintes ações são compatíveis com a REST API:
 
 >[!NOTE]
 >
->Ao usar o Firebug, uma extensão Firefox para desenvolvimento da Web, é possível seguir o tráfego HTTP quando o console é operado. Por exemplo, você pode verificar os parâmetros e os valores enviados para o servidor AEM com uma `POST` solicitação.
+>Ao usar o Firebug, uma extensão Firefox para desenvolvimento da Web, é possível seguir o tráfego HTTP quando o console é operado. Por exemplo, você pode verificar os parâmetros e os valores enviados para o servidor de AEM com uma `POST` solicitação.
 
 Nesta página, presume-se que o AEM seja executado em localhost na porta `4502` e que o contexto de instalação seja &quot; `/`&quot; (raiz). Se não for o caso da sua instalação, os URIs aos quais as solicitações HTTP se aplicam precisam ser adaptados de acordo.
 
@@ -115,7 +97,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Cria uma nova instância do fluxo de trabalho. <br /> Os parâmetros são: - <code>model</code>: a ID (URI) do respectivo modelo<br /> de fluxo de trabalho - <code>payloadType</code>: que contém o tipo de carga (por exemplo, <code>JCR_PATH</code> ou URL).<br /> A carga é enviada como parâmetro <code>payload</code>. Uma resposta <code>201</code> (<code>CREATED</code>) é enviada de volta com um cabeçalho de localização contendo o URL do novo recurso de instância do fluxo de trabalho.</p> </td>
+   <td><p>Cria uma nova instância do fluxo de trabalho. Os parâmetros são:<br /> - <code>model</code>: a ID (URI) do respectivo modelo<br /> de fluxo de trabalho - <code>payloadType</code>: que contém o tipo de carga (por exemplo, <code>JCR_PATH</code> ou URL).<br /> A carga é enviada como parâmetro <code>payload</code>. Uma resposta <code>201</code> (<code>CREATED</code>) é enviada de volta com um cabeçalho de localização contendo o URL do novo recurso de instância do fluxo de trabalho.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -128,7 +110,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
 
 | Método de solicitação HTTP | Ações |
 |---|---|
-| `GET` | Lista as instâncias de fluxo de trabalho disponíveis e seus estados ( `RUNNING`, `SUSPENDED`ou `ABORTED` `COMPLETED`) |
+| `GET` | Lista as instâncias de fluxo de trabalho disponíveis e seus estados ( `RUNNING`, `SUSPENDED`, `ABORTED` ou `COMPLETED`) |
 
 #### Gerenciando uma instância de fluxo de trabalho por sua ID {#managing-a-workflow-instance-by-its-id}
 
@@ -458,9 +440,9 @@ curl -u admin:admin http://localhost:4502/etc/workflow/models.json
 >
 >Consulte também [Gerenciamento de modelos](#managing-workflow-models)de fluxo de trabalho.
 
-### Como obter um objeto WorkflowSession {#obtaining-a-workflowsession-object}
+### Obtenção de um objeto WorkflowSession {#obtaining-a-workflowsession-object}
 
-A `com.adobe.granite.workflow.WorkflowSession` classe é adaptável a partir de um `javax.jcr.Session` objeto ou `org.apache.sling.api.resource.ResourceResolver` objeto.
+A `com.adobe.granite.workflow.WorkflowSession` classe é adaptável a partir de um `javax.jcr.Session` objeto ou de um `org.apache.sling.api.resource.ResourceResolver` objeto.
 
 #### Obtenção de um objeto WorkflowSession - Java {#obtaining-a-workflowsession-object-java}
 
@@ -510,7 +492,7 @@ Ao criar um novo modelo:
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
-   Ao criar um modelo, você deve primeiro criar esse `cq:Page` nó e usar seu `jcr:content` nó como pai do nó modelo.
+   Ao criar um modelo, você deve primeiro criar esse `cq:Page` nó e usar seu `jcr:content` nó como o pai do nó modelo.
 
 * O `id` argumento que alguns métodos exigem para identificar o modelo é o caminho absoluto do nó do modelo no repositório:
 
@@ -637,7 +619,7 @@ wfSession.resumeWorkflow(workflow);
 wfSession.terminateWorkflow(workflow);
 ```
 
-#### Interação com instâncias de fluxo de trabalho - REST usando o cursor {#interacting-with-workflow-instances-rest-using-curl}
+#### Interação com instâncias de fluxo de trabalho - REST usando o curl {#interacting-with-workflow-instances-rest-using-curl}
 
 * **Iniciar um fluxo de trabalho**
 
@@ -748,7 +730,7 @@ wfSession.complete(workItem, routes.get(0));
    curl -u admin:admin http://localhost:4502/bin/workflow/inbox
    ```
 
-   Serão listados os detalhes dos itens de trabalho atualmente na Caixa de entrada; por exemplo:
+   Serão listados os detalhes dos itens de trabalho que estão atualmente na Caixa de entrada; por exemplo:
 
    ```shell
    [{
