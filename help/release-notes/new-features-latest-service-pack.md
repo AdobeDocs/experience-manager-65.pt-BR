@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
+source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
 
 ---
 
@@ -16,6 +16,8 @@ O Adobe Experience Manager (AEM) 6.5 oferece recursos e melhorias contínuas por
 O AEM Service Pack 4 (6.5.4.0) mais recente foi lançado em 5 **de março de 2020**. Este artigo destaca os recursos que o Service Pack mais recente oferece para tornar sua jornada do AEM mais enriquecedora.
 
 ## AEM Sites {#aem-sites}
+
+### Aprimoramentos do Sistema de estilo
 
 O AEM 6.5.4.0 inclui melhorias no sistema de estilo. Agora é possível selecionar estilos na caixa de diálogo do componente.
 
@@ -122,7 +124,7 @@ Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes
 
 * AEM Cloud Manager 2020.1.0 e 2020.2.0
 
-   As atualizações da versão melhoram o status do pipeline e a capacidade de baixar registros para várias etapas. Para obter mais informações, consulte:
+   Melhore o status do pipeline e a capacidade de baixar registros para várias etapas. Consulte:
 
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
@@ -132,7 +134,7 @@ Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes
 
 * Atualizações da CLI do AEM Cloud Manager
 
-   As atualizações da versão incluem a automação das tarefas do Cloud Manager usando a ferramenta de linha de comando. Consulte [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+   Automatize as tarefas do Cloud Manager usando a ferramenta de linha de comando. Consulte [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
 * AEM Sites: Tipo de Arquivo do Projeto 23
 
@@ -148,7 +150,7 @@ Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes
 
 * AEM Assets: Aplicativo para desktop 2.0.1.1
 
-   Para obter mais informações, consulte [Obter acesso de desktop aos ativos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+   Consulte [Obter acesso ao desktop para os ativos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
 * AEM Screens: Feature Pack 202001
 
