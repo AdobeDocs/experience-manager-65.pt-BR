@@ -3,7 +3,7 @@ title: Formatos compatíveis de ativos
 description: Lista de formatos de arquivo suportados pelo AEM Assets e recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8431275c0e4de408e1ebafafafa94dcfae3c1127
+source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
 
 ---
 
@@ -190,18 +190,15 @@ Os formatos de arquivo suportados e a aplicabilidade dos fluxos de trabalho DAM 
 
 ## Outros formatos suportados {#other-supported-formats}
 
-A aplicabilidade de fluxos de trabalho DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo. A funcionalidade DAM comum, exceto a Entrega de Dynamic Media, é compatível com todos os arquivos.
+A aplicabilidade de fluxos de trabalho DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo. A funcionalidade comum do DAM, como armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados, exceto o fornecimento de Dynamic Media, é compatível com todos os arquivos.
 
 | Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **²** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (quando configurado com o próprio domínio de entrega) |  |  |  |  |  | ✓ |
-
-**²** Os outros formatos são suportados no DAM para armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados.
 
 ## Supported MIME types {#supported-mime-types}
 
