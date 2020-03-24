@@ -47,7 +47,7 @@ Para o AEM Communities,
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
-Este tutorial cria um site [de comunidade de](overview.md#enablement-community)ativação. Para garantir que o pacote de recursos mais recente esteja instalado, visite:
+Este tutorial cria um site [de comunidade de](overview.md#enablement-community)ativação. Para verificar se o pacote de recursos mais recente está instalado, visite:
 
 * [Versões mais recentes](deploy-communities.md#latest-releases)
 
