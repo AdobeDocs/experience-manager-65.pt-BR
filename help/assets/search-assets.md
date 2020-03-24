@@ -72,7 +72,7 @@ O AEM pode pesquisar vários formatos de arquivo e os filtros de pesquisa podem 
 
 ### Resultados com e sem Tags inteligentes aprimoradas {#withsmarttags}
 
-Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave mulheres em execução. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
+Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
 
 * `woman running`
 * `woman.running`
@@ -246,7 +246,7 @@ Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[por
 
 *Figura: Procurar e selecionar ativo no seletor de ativos*
 
-## Limitações     {#limitations}
+## Limitações      {#limitations}
 
 O recurso de pesquisa nos ativos AEM tem as seguintes limitações:
 
