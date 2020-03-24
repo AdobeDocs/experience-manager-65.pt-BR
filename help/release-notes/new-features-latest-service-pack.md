@@ -101,7 +101,7 @@ O Experience Manager Forms inclui os seguintes aprimoramentos de acessibilidade:
 
 A geração de imagens inteligentes usa as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento. A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo de entrega para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagem [inteligente](../assets/imaging-faq.md).
 
-### Pesquisa visual para ativos AEM (6.5.2.0) {#visual-search}
+### Pesquisa visual para AEM Assets (6.5.2.0) {#visual-search}
 
 Os usuários do Assets podem pesquisar imagens visualmente semelhantes. O AEM exibe as imagens com tags inteligentes do repositório DAM que são semelhantes a uma imagem selecionada pelo usuário. See [Visual search](../assets/search-assets.md).
 
