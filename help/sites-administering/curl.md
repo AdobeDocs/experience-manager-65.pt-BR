@@ -1,6 +1,6 @@
 ---
-title: Usar cURL com o AEM
-seo-title: Usar cURL com o AEM
+title: Uso do cURL com o AEM
+seo-title: Uso do cURL com o AEM
 description: Saiba como usar o cURL com o AEM.
 seo-description: Saiba como usar o cURL com o AEM.
 uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
@@ -10,16 +10,16 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+source-git-commit: 7ee76afa11384aedc79b17e823c8dc9594662388
 
 ---
 
 
-# Usar cURL com o AEM{#using-curl-with-aem}
+# Uso do cURL com o AEM{#using-curl-with-aem}
 
-Os administradores geralmente precisam automatizar ou simplificar tarefas comuns em qualquer sistema. Por exemplo, no AEM, gerenciar usuários, instalar pacotes e gerenciar pacotes OSGi são tarefas que devem ser realizadas com frequência.
+Geralmente, os administradores precisam automatizar ou simplificar tarefas comuns em qualquer sistema. Por exemplo, no AEM, gerenciar usuários, instalar pacotes e gerenciar pacotes OSGi são tarefas que devem ser realizadas com frequência.
 
-Devido à natureza RESTful da estrutura Sling na qual o AEM é criado, a maioria das tarefas pode ser reduzida a uma chamada de URL. cURL pode ser usado para executar essas chamadas de URL e pode ser uma ferramenta útil para administradores de AEM.
+Devido à natureza RESTful da estrutura Sling na qual o AEM é criado, a maioria das tarefas pode ser reduzida a uma chamada de URL. cURL pode ser usado para executar tais chamadas de URL e pode ser uma ferramenta útil para administradores de AEM.
 
 ## O que é cURL {#what-is-curl}
 
@@ -31,7 +31,7 @@ Devido à natureza RESTful da estrutura Sling na qual o AEM é criado, a maioria
 
 >[!NOTE]
 >
->Qualquer comando do AEM executado por meio de cURL deve ser autorizado, assim como qualquer usuário do AEM. Todas as ACLs e direitos de acesso são respeitados ao usar cURL para executar um comando AEM.
+>Qualquer comando do AEM executado por meio de cURL deve ser autorizado, assim como qualquer usuário do AEM. Todas as ACLs e direitos de acesso são respeitados ao usar cURL para executar um comando do AEM.
 
 ## Download do cURL {#downloading-curl}
 
@@ -43,7 +43,7 @@ O repositório de origem do cURL também pode ser encontrado no GitHub.
 
 Os comandos cURL podem ser criados para a maioria das operações no AEM, como acionar fluxos de trabalho, verificar configurações do OSGi, disparar comandos JMX, criar agentes de replicação e muito mais.
 
-Para encontrar o comando exato necessário para sua operação específica, é necessário usar as ferramentas do desenvolvedor no navegador para capturar a chamada POST para o servidor ao executar o comando AEM.
+Para encontrar o comando exato necessário para sua operação específica, é necessário usar as ferramentas do desenvolvedor em seu navegador para capturar a chamada POST para o servidor ao executar o comando AEM.
 
 As etapas a seguir descrevem como fazer isso usando a criação de uma nova página no navegador Chrome como exemplo.
 
@@ -74,7 +74,7 @@ Esta é uma lista de comandos cURL do AEM para tarefas administrativas e operaci
 
 >[!NOTE]
 >
->Os exemplos a seguir presumem que o AEM está sendo executado `localhost` na porta `4502` e usa o usuário `admin` com senha `admin`. Marcadores de posição de comando adicionais são definidos entre colchetes.
+>Os exemplos a seguir presumem que o AEM está sendo executado `localhost` na porta `4502` e usa o usuário `admin` com senha `admin`. Marcadores de posição de comando adicionais são definidos em colchetes angulares.
 
 ### Gerenciamento de pacotes {#package-management}
 
@@ -273,7 +273,7 @@ curl -u admin:admin -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/
 
 ### Communities {#communities}
 
-#### Atribuir e revogar símbolos {#assign-and-revoke-badges}
+#### Atribuir e Revogar Crachás {#assign-and-revoke-badges}
 
 Consulte Pontuação de [comunidades e emblemas](/help/communities/implementing-scoring.md#assign-and-revoke-badges) para obter detalhes.
 
@@ -309,7 +309,7 @@ Esta é uma lista de comandos cURL do AEM para manipulação de conteúdo.
 
 >[!NOTE]
 >
->Os exemplos a seguir presumem que o AEM está sendo executado `localhost` na porta `4502` e usa o usuário `admin` com senha `admin`. Marcadores de posição de comando adicionais são definidos entre colchetes.
+>Os exemplos a seguir presumem que o AEM está sendo executado `localhost` na porta `4502` e usa o usuário `admin` com senha `admin`. Marcadores de posição de comando adicionais são definidos em colchetes angulares.
 
 ### Gerenciamento de página {#page-management}
 
@@ -355,7 +355,7 @@ Consulte [Interação com fluxos de trabalho programaticamente](/help/sites-deve
 
 ### Sling Content {#sling-content}
 
-#### Criar uma pasta {#create-a-folder}
+#### Create a Folder {#create-a-folder}
 
 ```shell
 curl -u admin:admin -F jcr:primaryType=sling:Folder http://localhost:4502/etc/test
@@ -370,13 +370,13 @@ curl -u admin:admin -F :operation=delete http://localhost:4502/etc/test/test.pro
 #### Mover um nó {#move-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Copiar um nó {#copy-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Carregar arquivos usando Sling PostServlet {#upload-files-using-sling-postservlet}
@@ -385,7 +385,7 @@ curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/targe
 curl -u admin:admin -F"*=@test.properties"  http://localhost:4502/etc/test
 ```
 
-#### Carregar arquivos usando Sling PostServlet e especificar o nome do nó {#upload-files-using-sling-postservlet-and-specifying-node-name}
+#### Carregar arquivos usando o Sling PostServlet e especificar o nome do nó {#upload-files-using-sling-postservlet-and-specifying-node-name}
 
 ```shell
 curl -u admin:admin -F"test2.properties=@test.properties"  http://localhost:4502/etc/test
