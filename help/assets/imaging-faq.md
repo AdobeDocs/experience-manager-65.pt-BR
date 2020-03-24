@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 9807bd4366315ad470128911cb67a31e7e9fd288
+source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 9807bd4366315ad470128911cb67a31e7e9fd288
 
 ## O que é &quot;Smart Imaging&quot;? {#what-is-smart-imaging}
 
-A tecnologia Smart Imaging aproveita os recursos do Adobe Sensei AI e trabalha com &quot;predefinições de imagens&quot; existentes para melhorar o desempenho da entrega de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem, com base nos recursos do navegador do cliente.
+A tecnologia Smart Imaging aproveita os recursos do Adobe Sensei AI e trabalha com &quot;predefinições de imagens&quot; existentes para melhorar o desempenho do delivery de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem, com base nos recursos do navegador do cliente.
 
 O Smart Imaging também se beneficia do aumento de desempenho ao ser totalmente integrado ao melhor serviço premium CDN da Adobe. Este serviço encontra a melhor rota da Internet entre servidores, redes e pontos de peering que tem a menor latência e/ou a menor taxa de perda de pacotes do que a rota padrão da Internet.
 
@@ -44,7 +44,7 @@ Aprimoramentos na versão mais recente do Smart Imaging:
 * A Imagem inteligente pode ser desativada usando o parâmetro de URL &quot;bfc&quot;.
 * TTL (Tempo de vida) independente. Anteriormente, um TTL mínimo de 12 horas era obrigatório para que a Imagem inteligente funcionasse.
 * Anteriormente, as imagens original e derivada eram armazenadas em cache e era um processo de 2 etapas para invalidar o cache. Na última geração de imagens inteligentes, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de etapa única.
-* Os clientes que usam cabeçalhos personalizados em seus conjuntos de regras (por exemplo, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot;, conforme sugerido em [Adicionar um valor de cabeçalho personalizado a respostas de imagem|O Dynamic Media Classic](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarão da imagem inteligente mais recente, já que esses cabeçalhos não estão bloqueados, ao contrário da versão anterior do Smart Imaging.
+* Os clientes que usam cabeçalhos personalizados em seus conjuntos de regras (por exemplo, &quot;Origem de permissão de tempo&quot;, &quot;X-Robot&quot;, conforme sugerido em [Adicionar um valor de cabeçalho personalizado a respostas de imagem|O Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarão da imagem inteligente mais recente, já que esses cabeçalhos não estão bloqueados, ao contrário da versão anterior do Smart Imaging.
 
 ## Há algum custo de licenciamento associado à geração de imagens inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -100,12 +100,12 @@ O Smart Imaging funciona com imagens entregues por HTTP ou HTTPS. Além disso, t
 
 ## Estou qualificado para usar imagens inteligentes? {#am-i-eligible-to-use-smart-imaging}
 
-Para usar o Smart Imaging, o Dynamic Media Classic ou o Dynamic Media da sua empresa na conta do AEM deve atender aos seguintes requisitos:
+Para usar a Imagem inteligente, seu empresa Dynamic Media Classic ou Dynamic Media na conta AEM deve atender aos seguintes requisitos:
 
-* Use o CDN (Content Delivery Network) fornecido pela Adobe como parte da sua licença.
+* Use o CDN (Content Delivery Network) fornecido pela Adobe como parte de sua licença.
 * Use um domínio dedicado (por exemplo, `images.company.com` ou `mycompany.scene7.com`), não um domínio genérico (por exemplo, `s7d1.scene7.com`, `s7d2.scene7.com`ou `s7d13.scene7.com`).
 
-Para localizar seus domínios, faça logon em sua conta ou contas da empresa.
+Para localizar seus domínios, faça logon em sua conta ou contas de empresa.
 
 Tap **[!UICONTROL Setup > Application Setup > General Settings]**. Procure o campo Nome **[!UICONTROL do servidor]** publicado. Se você estiver usando um domínio genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição ao enviar um ticket de suporte técnico.
 
@@ -119,9 +119,9 @@ Você deve iniciar a solicitação para usar a geração inteligente de imagens;
 1. Forneça as seguintes informações em sua solicitação de suporte:
 
    1. Nome do contato principal, email, telefone.
-   1. Todos os domínios a serem ativados para geração de imagens inteligente (ou seja, images.company.com ou mycompany.sceno7.com).
+   1. Todos os domínios a serem ativados para geração de imagens inteligente (ou seja, images.empresa.com ou mycompany.sceno7.com).
 
-      Para localizar seus domínios, faça logon em sua conta ou contas da empresa.
+      Para localizar seus domínios, faça logon em sua conta ou contas de empresa.
 
       Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**.
 
@@ -129,15 +129,15 @@ Você deve iniciar a solicitação para usar a geração inteligente de imagens;
    1. Verifique se você está usando o CDN pela Adobe e não é gerenciado com um relacionamento direto.
    1. Verifique se você está usando um domínio dedicado, como `images.company.com` ou `mycompany.scene7.com`, e não um domínio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Para localizar seus domínios, faça logon em sua conta ou contas da empresa.
+      Para localizar seus domínios, faça logon em sua conta ou contas de empresa.
 
       Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**.
 
-      Procure o campo Nome **[!UICONTROL do servidor]** publicado. Se você estiver usando um domínio genérico do Dynamic Media Classic, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
+      Procure o campo Nome **[!UICONTROL do servidor]** publicado. Se você estiver usando um domínio genérico do Dynamic Media Classic, é possível solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
    1. Indique se você também precisa que isso funcione em HTTP/2.
 
 1. O suporte técnico adicionará você à Lista de espera do cliente de Smart Imaging com base na ordem em que as solicitações foram enviadas.
-1. Quando a Adobe estiver pronta para lidar com sua solicitação, o suporte entrará em contato com você para coordenar e definir uma data de destino.
+1. Quando a Adobe estiver pronta para lidar com sua solicitação, o suporte entrará em contato com você para coordenar e definir uma data de público alvo.
 1. **Opcional**: Você tem a opção de testar a geração inteligente de imagens no armazenamento temporário antes de a Adobe colocar o novo recurso em produção.
 1. Você é notificado após a conclusão pelo suporte.
 1. Para maximizar os aprimoramentos de desempenho do Smart Imaging, a Adobe recomenda definir o Tempo de vida (TTL) como 24 horas ou mais. O TTL define quanto tempo os ativos são armazenados em cache pelo CDN. Para alterar essa configuração:
@@ -156,12 +156,12 @@ Pode ser que haja um longo lead time, pois a habilitação da Imagem inteligente
 
 Não há risco para uma página da Web do cliente. No entanto, você deve estar ciente de que a transição para o Smart Imaging limpa seu cache no CDN, pois isso envolve mudar para uma nova configuração do Dynamic Media Classic ou do Dynamic Media no AEM.
 
-Durante a transição inicial, as imagens não armazenadas em cache atingem diretamente os servidores de origem da Adobe até que o cache seja reconstruído novamente. Por esse motivo, a Adobe planeja lidar com algumas transições de clientes de cada vez para que o desempenho aceitável seja mantido ao retirar solicitações de nossa origem. Para a maioria dos clientes, o cache é totalmente construído novamente no CDN dentro de aproximadamente 1 a 2 dias.
+Durante a transição inicial, as imagens não armazenadas em cache acessam diretamente os servidores de origem da Adobe até que o cache seja reconstruído novamente. Por esse motivo, a Adobe planeja lidar com algumas transições de clientes de cada vez para que o desempenho aceitável seja mantido ao retirar solicitações de nossa origem. Para a maioria dos clientes, o cache é totalmente construído novamente no CDN dentro de aproximadamente 1 a 2 dias.
 
 ## Como posso verificar se a geração de imagens inteligentes está funcionando como esperado?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Depois que a sua conta for configurada com imagens inteligentes, carregue um URL de imagem do Dynamic Media Classic (Scene7)/Dynamic Media no navegador.
-1. Abra o painel do desenvolvedor do Chrome clicando em **[!UICONTROL Exibir > Desenvolvedor > Ferramentas]** do desenvolvedor no navegador. Ou escolha qualquer ferramenta de desenvolvedor de navegador de sua escolha.
+1. Abra o painel do desenvolvedor do Chrome clicando em **[!UICONTROL Visualização > Desenvolvedor > Ferramentas]** do desenvolvedor no navegador. Ou escolha qualquer ferramenta de desenvolvedor de navegador de sua escolha.
 
 1. Certifique-se de que o cache esteja desativado quando as ferramentas do desenvolvedor estiverem abertas.
 
