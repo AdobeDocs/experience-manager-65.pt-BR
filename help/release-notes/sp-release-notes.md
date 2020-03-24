@@ -120,7 +120,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Todas as caixas de seleção no painel Filtro são apagadas quando a primeira e a segunda caixas de seleção são apagadas, quando as caixas de seleção de nível dois da árvore de caixas de seleção no Adobe Stock são selecionadas (NPR-31919).
 
-* A pesquisa de Arquivos e Pastas usando aspectos Omnisearch dá exceção (NPR-31872).
+* A pesquisa de arquivos e pastas usando aspectos Omnisearch dá exceção (NPR-31872).
 
 * O realce de campo para seleção de campo obrigatória no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de esquema de metadados correspondente (NPR-31834).
 
