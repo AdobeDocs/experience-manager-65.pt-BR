@@ -5,7 +5,7 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: dc625b31b5f4d0db0941de2da0e869b3af177551
 
 ---
 
@@ -14,13 +14,30 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
 A newsletter mensal do Dynamic Media pela Experience League foi projetada para ajudá-lo a se familiarizar com o Dynamic Media e o Dynamic Media Classic, para que você possa começar a perceber o valor imediatamente.
 
-Neste boletim de balcão único, descubra recursos valiosos de criação de conhecimento, como vídeos passo a passo, visão geral da solução e apresentações para alguns dos principais recursos e recursos da solução, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais.
+Neste boletim de balcão único, descubra recursos valiosos para a criação de conhecimento, como vídeos passo a passo, visão geral da solução e apresentações para alguns dos principais recursos e recursos da solução, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais.
 
-## Inspire-se. Fique informado.
+## Inspire-se. Mantenha-se informado.
 
 [Inscreva-se](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para receber a newsletter do Dynamic Media mensalmente na sua caixa de entrada.
 
 ## Ocorreu um problema com a newsletter do Dynamic Media?
+
+* **[Fevereiro de 2020, Edição 2](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**Nesta edição:
+
+   * Participe de novos webinars do Construtor de habilidades e transforme-se em um especialista do Dynamic Media Classic.
+   * Veja onde você encontrará o Dynamic Media no Adobe Summit 2020.
+   * Descubra como usar a magia de recorte do Dynamic Media.
+   * Tire proveito de uma auditoria gratuita para ajudá-lo a obter mais valor do Dynamic Media Classic.
+   * Saiba mais sobre a nova interface do usuário para o Dynamic Media Classic.
+   * Conheça Georgia Myers, gerente de sucesso do cliente para a Adobe Experience Cloud.
+
+* **[Janeiro de 2020, Edição 1](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**Nesta edição:
+
+   * Cinco novos Webinars do Construtor de habilidades para aprimorar suas habilidades do Dynamic Media Classic.
+   * Uma auditoria gratuita para ajudá-lo a obter mais valor do Dynamic Media Classic.
+   * Uma temporada de compras de fim de ano recordada para nossos clientes de mídia avançada.
+   * Seu guia prático para selecionar um DAM (Digital Asset Manager, Gerenciador de ativos digitais) que atende às suas necessidades atuais e o prepara para o que há de novo em mídia avançada amanhã.
+   * Conheça Mark Dean, especialista em mídia digital.
 
 * **[Novembro de 2019, Edição 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**Nesta edição:
 
@@ -78,14 +95,14 @@ Neste boletim de balcão único, descubra recursos valiosos de criação de conh
 
 * **[Maio de 2019, Edição 05](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**Nesta edição:
 
-   * Descubra os 10 principais recursos ocultos do Dynamic Media Classic em uma publicação de blog
+   * Descubra os 10 principais recursos ocultos do Dynamic Media Classic em uma postagem de blog
    * Assista aos vídeos práticos da Experience League.
    * Saiba mais sobre o próximo Tour do Adobe Insider.
    * Leia uma série de blogues de três partes para atualizar sua estratégia de mídia avançada.
    * Saiba mais sobre o recorte inteligente de vídeo controlado por AI.
 
 * **[Edição de abril de 2019, edição 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**Bem-vindo à edição de inauguração da Newsletter Dynamic Media, nosso novo boletim informativo mensal com notícias, eventos e recursos para usuários do Dynamic Media nos ativos Adobe Experience Manager e Adobe Dynamic Media Classic. Nesta edição:
-   * Registre-se no webinar Recursos ocultos do Dynamic Media Classic.
+   * Registre-se em nosso webinar Recursos ocultos do Dynamic Media Classic.
    * Saiba mais sobre nossa série de webinars sob demanda para ajudá-lo a desenvolver sua estratégia de mídia avançada.
    * Leia sobre os principais casos de uso de mídias avançadas e suas soluções para eles.
    * ... e muito mais!
