@@ -438,7 +438,7 @@ Após a conclusão das tarefas, para reativar a sincronização do usuário:
 
 O Diagnóstico de sincronização do usuário é uma ferramenta que verifica a configuração e tenta identificar qualquer problema.
 
-No autor, basta navegar do console principal por meio de **Ferramentas, Operações, Diagnóstico, Diagnóstico de sincronização do usuário.**
+Em autor, basta navegar do console principal por meio de **Ferramentas, Operações, Diagnóstico, Diagnóstico de sincronização do usuário.**
 
 Basta entrar no console Diagnóstico de sincronização do usuário para exibir os resultados.
 
