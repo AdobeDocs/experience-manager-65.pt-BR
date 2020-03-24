@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
+source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
 
 ---
 
@@ -88,7 +88,7 @@ Além disso, se as predefinições de imagem forem usadas para retornar `fmt !=J
 
 ## Será necessário alterar quaisquer URLs, predefinições de imagens ou implantar qualquer novo código no meu site para o Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-A Imagem inteligente funciona perfeitamente com os URLs de imagem e as predefinições de imagem existentes. Além disso, o Smart Imaging não exige que você adicione qualquer código ao seu site para detectar o navegador de um usuário. Tudo isso é feito automaticamente.
+Não. A Imagem inteligente funciona perfeitamente com os URLs de imagem e as predefinições de imagem existentes. Além disso, o Smart Imaging não exige que você adicione qualquer código ao seu site para detectar o navegador de um usuário. Tudo isso é feito automaticamente.
 
 Como mencionado anteriormente, o Smart Imaging suporta apenas formatos de imagem JPEG e PNG. Para outros formatos, é necessário anexar o `bfc=off` modificador ao URL, conforme descrito anteriormente.
 
@@ -115,11 +115,11 @@ Seu primeiro domínio personalizado não tem custo adicional com uma licença do
 
 Você deve iniciar a solicitação para usar a geração inteligente de imagens; ela não é ativada automaticamente.
 
-1. Iniciar uma solicitação de suporte técnico (email: s7support@adobe.com).
+1. Iniciar uma solicitação de suporte técnico (email: `s7support@adobe.com`).
 1. Forneça as seguintes informações em sua solicitação de suporte:
 
    1. Nome do contato principal, email, telefone.
-   1. Todos os domínios a serem ativados para geração de imagens inteligente (ou seja, images.empresa.com ou mycompany.sceno7.com).
+   1. Todos os domínios a serem ativados para geração de imagens inteligente (isto é, `images.company.com` ou `mycompany.scene7.com`).
 
       Para localizar seus domínios, faça logon em sua conta ou contas de empresa.
 
