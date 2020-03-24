@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
+source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
 ---
 
@@ -98,7 +98,7 @@ As propriedades são distribuídas por meio de várias guias.
 
    Indica se você deseja que a página use a URL personalizada.
 
-### Avançado {#advanced}
+### Avançado   {#advanced}
 
 * **Idioma**
 
@@ -122,11 +122,11 @@ As propriedades são distribuídas por meio de várias guias.
 
    >[!NOTE]
    >
-   >O alias define a `sling:alias` propriedade para definir um nome de alias para o recurso (isso afeta apenas o recurso, não o caminho).
+   >O alias ajusta a propriedade `sling:alias` para definir um nome de alias para o recurso (isso afeta apenas o recurso, não o caminho).
    >
-   >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada via `/content/we-retail/latin-language`
+   >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada por meio de `/content/we-retail/latin-language`
    >
-   >Para obter mais detalhes, consulte Nomes de página [localizados em SEO e Práticas](/help/managing/seo-and-url-management.md#localized-page-names)recomendadas de gerenciamento de URL.
+   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Herdado de &lt;*path*>**
 
@@ -163,7 +163,7 @@ As propriedades são distribuídas por meio de várias guias.
 
    Especifique uma configuração de exportação.
 
-### Miniatura {#thumbnail}
+### Miniatura   {#thumbnail}
 
 Exibe a imagem de miniatura da página. É possível:
 
@@ -191,11 +191,12 @@ Exibe a imagem de miniatura da página. É possível:
 
    * **Permitir o compartilhamento de usuário para Facebook**
    * **Permitir o compartilhamento de usuário para Pinterest**
-   * **Variação preferida de XF** define a variação do fragmento de experiência usada para gerar metadados para a página
+   * **Variação preferida de XF**
+Define a variação do fragmento de experiência usada para gerar metadados para a página
 
-### Serviços em nuvem {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Serviços em nuvem**
+* **Cloud Services**
 
    Defina as propriedades para os [serviços em nuvem](/help/sites-developing/extending-cloud-config.md).
 
@@ -209,7 +210,10 @@ Exibe a imagem de miniatura da página. É possível:
 
    Selecione uma [Marca para especificar um escopo para a segmentação](/help/sites-authoring/target-adobe-campaign.md).
 
-### Permissões {#permissions}
+   >[!NOTE]
+   >Essa opção exige que a conta de usuário esteja no `Target Adminstrators`grupo.
+
+### Permissões   {#permissions}
 
 * **Permissões**
 
@@ -234,15 +238,15 @@ Exibe a imagem de miniatura da página. É possível:
 
 * **Blueprint**
 
-   Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live-copy.
+   Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site {#site-structure}
+### Estrutura do site   {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
@@ -254,14 +258,14 @@ Exibe a imagem de miniatura da página. É possível:
 
    * [Criação de uma nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page) (um subconjunto das propriedades)
 
-   * Clicking or tapping **Properties**
+   * Ao clicar ou tocar em **Propriedades**
 
       * Para uma página única
       * Para várias páginas (apenas um subconjunto das propriedades está disponível para edição em massa)
 
-* No editor de página:
+* No editor de páginas:
 
-   * Using **Page Information** (then **Open Properties**)
+   * Ao usar **Informações da página** (em seguida, **Abrir propriedades**)
 
 ### No console Sites - Página única {#from-the-sites-console-single-page}
 
@@ -269,7 +273,7 @@ Ao clicar ou tocar em **Propriedades** para definir as propriedades da página:
 
 1. Usando o console **Sites**, navegue até o local da página no qual deseja visualizar e editar as propriedades.
 
-1. Select the **Properties** option for the required page using either:
+1. Selecione a opção **Propriedades da exibição** para a página desejada usando uma das seguintes opções:
 
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#selectionmode)
@@ -298,11 +302,11 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
 ### No console Sites - Várias páginas {#from-the-sites-console-multiple-pages}
 
-No console **Sites** é possível selecionar várias páginas, em seguida, use a opção **Propriedades da exibição** para visualizar e/ou editar as propriedades da página. Isso refere-se à edição de itens em massa das propriedades da página.
+No console **Sites**, é possível selecionar várias páginas e usar **Propriedades de exibição** para exibir e/ou editar as propriedades da página. Isso é conhecido como edição em massa das propriedades da página.
 
 >[!NOTE]
 >
->A edição de itens em massa das propriedades também está disponível para o Assets. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/managing-multiple-assets.md) para obter detalhes.
+>A edição de itens em massa das propriedades também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/managing-multiple-assets.md) para obter detalhes.
 >
 >Também existe o [Editor de itens em massa](/help/sites-administering/bulk-editor.md), que permite que você pesquise o conteúdo de várias páginas usando o GQL (Google Query Language) e, em seguida, editar o conteúdo diretamente no editor de itens em massa antes de salvar as alterações para as páginas de origem.
 
@@ -313,14 +317,14 @@ No console **Sites** é possível selecionar várias páginas, em seguida, use a
 
 ![epp-01](assets/epp-01.png)
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+Após selecionar as páginas e, em seguida, clicar ou tocar na opção **Propriedades**, as propriedades em massa serão mostradas:
 
 ![epp-02](assets/epp-02.png)
 
 Só é possível fazer a edição de itens em massa nas páginas que:
 
 * Compartilham o mesmo tipo de recurso
-* Não são parte de uma livecopy
+* Não fazem parte de uma live copy
 
    * Uma mensagem será mostrada quando as propriedades forem abertas, se qualquer página estiver em uma live copy.
 
