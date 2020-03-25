@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7ae0055e09c3ae2ff2898ac4f6c537a825dc0cf0
+source-git-commit: 7345d629aa628c2e2e094a8194d9306d7c3d2d60
 
 ---
 
@@ -22,19 +22,19 @@ Alguns destaques principais desta versão do Service pack:
 
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.10.6.
 
-* Os ativos do Experience Manager agora oferecem suporte a arquivos ZIP criados com o algoritmo Deflate 64.
+* Os ativos Adobe Experience Manager agora são compatíveis com arquivos ZIP criados com o algoritmo Deflate64.
 
-* A nova coluna para a data criada, que é classificável, foi adicionada na exibição de lista DAM e nos resultados da pesquisa de ativos na exibição de lista.
+* A nova coluna para a data criada, que é classificável, foi adicionada na visualização de lista DAM e nos resultados da pesquisa de ativos na visualização de listas.
 
-* A classificação de ativos com base na coluna Nome foi ativada na exibição Lista.
+* A classificação de ativos com base na coluna Nome foi ativada na visualização de Lista.
 
 * O Dynamic Media agora é compatível com ativos de vídeo de Recorte inteligente. O Smart Crop é um recurso orientado por aprendizado de máquina que recorta um vídeo enquanto move o quadro para seguir o ponto focal da cena.
 
 * O Dynamic Media suporta a criação de imagens inteligentes.
 
-* Capacidade de [definir preferências de Ausência Temporária](../forms/using/configure-out-of-office-settings.md) nos fluxos de trabalho do AEM.
+* Capacidade de [definir preferências de Ausência Temporária](../forms/using/configure-out-of-office-settings.md) em workflows AEM.
 
-* Capacidade de [compartilhar itens](../forms/using/configure-shared-queues-osgi.md) de Caixa de entrada ou Caixa de entrada com outros usuários nos fluxos de trabalho do AEM.
+* Capacidade de [compartilhar itens](../forms/using/configure-shared-queues-osgi.md) de Caixa de entrada ou Caixa de entrada com outros usuários em workflows AEM.
 
 * Capacidade de [gerar Comunicações interativas no modo](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Lote.
 
@@ -46,11 +46,11 @@ Alguns destaques principais desta versão do Service pack:
 
 * Os ativos do Experience Manager agora oferecem suporte a arquivos ZIP criados com o algoritmo Deflate 64 (NPR-27573).
 
-* A nova coluna para a data criada, que é classificável, foi adicionada na exibição de lista DAM e nos resultados da pesquisa de ativos na exibição de lista (NPR-31312).
+* A nova coluna para a data criada, que é classificável, foi adicionada na visualização de lista DAM e nos resultados da pesquisa de ativos na visualização de lista (NPR-31312).
 
-* A classificação de ativos com base na coluna Nome foi permitida na exibição Lista (NPR-31299).
+* A classificação de ativos com base na coluna Nome foi permitida na visualização da Lista (NPR-31299).
 
-* Os arquivos de ativos GLB, GLTF, OBJ e STL suportam a visualização de ativos na página Detalhes do ativo no DAM (CQ-4282277).
+* Os arquivos de ativos GLB, GLTF, OBJ e STL suportam a pré-visualização de ativos na página Detalhes do ativo no DAM (CQ-4282277).
 
 * O evento ReplicationOnModifyListener é acionado para nós de segmentos durante o carregamento de segmentos no Dynamic Media (CQ-4281279).
 
@@ -58,7 +58,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * O Dynamic Media oferece suporte para o Smart Imaging (CQ-4222249).
 
-* A exibição de pesquisa/navegação foi definida como exibição padrão no seletor do Foundation se os parâmetros de consulta forem passados na solicitação (NPR-31601).
+* A visualização de pesquisa/navegação foi definida como visualização padrão no seletor do Foundation se os parâmetros de query forem transmitidos na solicitação (NPR-31601).
 
 **Correções**
 
@@ -68,11 +68,11 @@ Alguns destaques principais desta versão do Service pack:
 
 * As edições no formulário de pesquisa padrão Assets Admin * Search Rail não funcionam como esperado (NPR-31502).
 
-* As sugestões não são mostradas ao usar a exibição Omnisearch em ativos para pesquisar ativos (NPR-31496).
+* As sugestões não são mostradas ao usar o Omnisearch em ativos visualização para pesquisar ativos (NPR-31496).
 
 * As referências de ativos em coleções não são atualizadas quando os ativos referenciados são movidos para outro local, nos casos em que os mesmos ativos são referenciados por coleção diferente por usuários diferentes (NPR-31486).
 
-* Tags IPTC duplicadas são adicionadas aos metadados do ativo (NPR-31328).
+* As tags IPTC do Duplicado são adicionadas aos metadados do ativo (NPR-31328).
 
 * A contagem de resultados da pesquisa no canto superior direito não é atualizada corretamente quando a pesquisa é acionada do painel de filtros (NPR-31316).
 
@@ -86,7 +86,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * A seleção de pasta Criar > item de ação FileUpload está ausente quando a ACL para Negar jcr:removeChildNodes e jcr:removeNode no caminho é aplicada para um usuário (NPR-30840).
 
-* Os fluxos de trabalho do DAM entram em estado obsoleto quando determinados ativos mp4 são carregados, fazendo com que todos os fluxos de trabalho restantes entrem em estado obsoleto (NPR-30662).
+* workflows DAM entram em estado obsoleto quando determinados ativos mp4 são carregados, fazendo com que todos os workflows restantes entrem em estado obsoleto (NPR-30662).
 
 * Erro de falta de memória é observado quando um grande arquivo PDF (de vários Gigabytes) é carregado no DAM e seus subativos são processados (NPR-30614).
 
@@ -94,7 +94,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Os nomes dos ativos são alterados para letras minúsculas ao mover ativos de uma pasta para outra no AEM em execução no modo de execução do Dynamic Media Scene 7 (NPR-31630).
 
-* Ocorreu um erro ao editar um conjunto de imagens remoto, para a imagem que reside na pasta com o mesmo nome que o nome da empresa Scene 7 (NPR-31340).
+* Ocorreu um erro ao editar um conjunto de imagens remoto, para a imagem que reside na pasta com o mesmo nome de empresa do Scene 7 (NPR-31340).
 
 * Os ativos do Dynamic Media que contêm referências não estão sendo publicados (NPR-31180).
 
@@ -110,13 +110,13 @@ Alguns destaques principais desta versão do Service pack:
 
 * O fluxo de trabalho do Dynamic Media Encode Video está falhando ao gerar miniatura para o vídeo que é migrado do Scene 7 para o Dynamic Media - modo de execução do Scene 7 (CQ-4282011).
 
-* IpsApiException observou ao migrar ativos de uma instância para outra usando diferentes IDs de empresa do Scene 7 (CQ-4280548).
+* IpsApiException observou ao migrar ativos de uma instância para outra usando IDs de empresa Scene 7 diferentes (CQ-4280548).
 
 * A miniatura de ativos 3D não é informativa quando um modelo 3D suportado é assimilado no AEM (CQ-4283701).
 
-* Os botões de rolagem são exibidos no visualizador, se um ativo 3D tiver poucas exibições de câmera (CQ-4283322).
+* Os botões de rolagem são exibidos no visualizador, se um ativo 3D tiver poucas visualizações de câmera (CQ-4283322).
 
-* Altura incorreta do contêiner de um modelo 3D carregado visualizado no DimensionalViewer na página Detalhes do ativo (CQ-4283309).
+* Altura incorreta do container de um modelo 3D carregado visualizado no DimensionalViewer na página Detalhes do ativo (CQ-4283309).
 
 * Os vídeos não podem ser reproduzidos com o SmartCropVideoViewer no Internet Explorer 11 e no Safari (CQ-4281422).
 
@@ -138,13 +138,13 @@ Alguns destaques principais desta versão do Service pack:
 
 * Erro &quot;Grupo não listado pelo seletor de usuários: esperado &quot;falso para igual a verdadeiro&quot; é observado ao adicionar o Grupo de usuários fechado com diferentes `principalName` e `authorizableId` (CQ-4278177).
 
-* A Exibição de coluna da interface do usuário do Assets está mostrando todos os caminhos, independentemente do caminho raiz do locatário específico (CQ-4278175).
+* A Visualização da coluna da interface do usuário do Assets está mostrando todos os caminhos, independentemente do caminho raiz do locatário específico (CQ-4278175).
 
 * A pesquisa do seletor de ativos não está funcionando como esperado (CQ-4275886).
 
-* Os fluxos de trabalho de execução estão falhando (CQ-4271928).
+* Os Workflows de execução estão com falha (CQ-4271928).
 
-* A Expurgação de evento do DAM exclui os dados de evento mais recentes (maxSavedActivities) e armazena os dados criados anteriormente (NPR-31336).
+* A Expurgação do Evento DAM exclui os dados mais recentes do evento (maxSavedActivities) e retém os dados criados anteriormente (NPR-31336).
 
 * A página de resultados da pesquisa de interface de toque (feita pelo Omnisearch) rola automaticamente para cima e perde a posição de rolagem do usuário (NPR-31307).
 
@@ -163,13 +163,13 @@ Alguns destaques principais desta versão do Service pack:
 * Quando um usuário adiciona um campo Upload de arquivo a um campo múltiplo, o caminho da imagem é armazenado no nó do componente em vez do nó de vários campos (NPR-30882).
 * A API ResponsiveGridExporter não retorna a interface com.day.cq.wcm.Foundation.model.impl.export.AllowedComponentsExporter. O pacote com.day.cq.wcm.Foundation.model.impl é declarado como pacote privado (NPR-31398).
 * Quando uma página que contém alguns Fragmentos de experiência é aberta no modo não editor (no Autor sem o `editor.html` prefixo e `wcmmode=disabled`, ou no Editor)., a solicitação termina no código de erro de status HTTP 500 (NPR-30743).
-* Os usuários não podem alterar sua senha e acessar sua página de perfil (NPR-31161).
+* Os usuários não podem alterar sua senha e acessar sua página do perfil (NPR-31161).
 
 ### Pesquisa e interface do usuário {#search-ui-interface}
 
-* Ao alternar da exibição Cartão para a exibição Lista em uma página de resultados de pesquisa, há um atraso antes que a página possa ser rolada (NPR-31286).
+* Ao alternar da visualização de cartão para a visualização de Lista em uma página de resultados de pesquisa, há um atraso antes que a página possa ser rolada (NPR-31286).
 
-* A caixa de seleção Selecionar tudo fica oculta na exibição Lista na interface do usuário do Sites (NPR-31614).
+* A caixa de seleção Selecionar tudo está oculta na visualização de Lista na interface do usuário do Sites (NPR-31614).
 
 * A contagem Selecionar tudo em uma página de resultados de pesquisa está incorreta (NPR-31120).
 
@@ -187,9 +187,9 @@ Alguns destaques principais desta versão do Service pack:
 
 * As atualizações na configuração de tamanho do buffer do serviço HTTP baseado em Java não são salvas (NPR-30925).
 
-* O QueryBuilder agora suporta orderby ``fn:name()`` em consultas xpath (NPR-31322).
+* O QueryBuilder agora suporta orderby ``fn:name()`` em query xpath (NPR-31322).
 
-* A árvore de ativação duplicada é criada ao atualizar do AEM 6.3 (NPR-31513).
+* A árvore de ativação do Duplicado é criada ao atualizar do AEM 6.3 (NPR-31513).
 
 * As solicitações encaminhadas não preservam cabeçalhos de resposta que são definidos durante a autenticação Sling (NPR-30013).
 
@@ -201,7 +201,7 @@ Alguns destaques principais desta versão do Service pack:
 
 ### Projetos {#projects}
 
-* Alternar exibições de calendário não funciona (NPR-31271).
+* A alternância de visualizações de calendário não funciona (NPR-31271).
 
 ### Brand Portal {#assets-brand-portal}
 
@@ -215,7 +215,7 @@ Alguns destaques principais desta versão do Service pack:
 * Ao criar uma nova pasta de contribuição, uma ou ambas as subpastas (NOVO e COMPARTILHADO) não aparecem na pasta de contribuição (CQ-4282424).
 * O sistema lança uma exceção se o usuário tentar publicar novamente a pasta Contribuição do AEM para o Brand Portal depois de receber novos recursos na pasta Contribuição do Portal de Marcas (CQ-4279740).
 * A criação da pasta Contribuição em uma pasta Contribuição (pasta aninhada) é proibida para evitar a complexidade (CQ-4278391).
-* O sistema lança uma exceção ao fazer upload da lista de usuários do Brand Portal (arquivo .csv) importada do Admin Console do AEM. Somente os campos Email, Nome e Sobrenome no arquivo .csv são obrigatórios (CQ-4278390).
+* O sistema lança uma exceção ao fazer upload da lista de usuário do Brand Portal (arquivo .csv) importada do Admin Console do AEM. Somente os campos Email, Nome e Sobrenome no arquivo .csv são obrigatórios (CQ-4278390).
 
 ### Communities {#communities}
 
@@ -223,7 +223,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Os links rápidos para gerenciar grupos (Abrir/Editar/Publicar/Excluir grupos) não estão visíveis para os administradores da Comunidade (Administrador de grupo/Administrador de site) (NPR-31627).
 * Um blog enviado não é exibido, a menos que a página seja atualizada/recarregada manualmente (NPR-31599).
-* A consulta JCR usada pelo recurso &quot;Menções&quot; diferencia maiúsculas de minúsculas e demora muito para retornar os resultados (NPR-31475).
+* O query JCR usado pelo recurso &quot;Menções&quot; diferencia maiúsculas de minúsculas e demora muito para retornar os resultados (NPR-31475).
 * O arquivo UberJar do AEM 6.5 lança uma exceção, `cq-social-translation` pacote ausente do arquivo UberJar do AEM 6.5 (NPR-31186).
 * As bibliotecas de Jackson Databind foram atualizadas para a versão 2.9.9.3 para endereçar novas vulnerabilidades (NPR-30967).
 * Os títulos Atividades e Notificações são inconsistentes (NPR-30941).
@@ -298,7 +298,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Aprimoramento da funcionalidade Ativos conectados para adicionar suporte à busca de documentos a partir de implantações remotas do DAM. Os autores do site agora podem pesquisar e filtrar tipos de documentos compatíveis no Localizador de conteúdo. Os documentos remotos podem ser adicionados ao Componente de download em páginas da Web. Consulte [usar ativos conectados](../assets/use-assets-across-connected-assets-instances.md).
 
-* AprimorarFiltros de tipo de documento com mais tipos MIME para suportar opções de vários valores.
+* Aprimorarfiltros do tipo Document com mais tipos MIME para suportar opções de vários valores.
 * Introdução de um fluxo de trabalho externo de reprocessamento para oferecer suporte a vários recursos.
 * Otimização do desempenho do Dynamic Media usando filtros de ativos padrão para replicação.
 * Restauração das opções de edição de cortar/girar ativos para o DMS7.
@@ -380,7 +380,7 @@ Alguns destaques principais desta versão do Service pack:
 
 **Aprimoramentos do produto**
 
-* AprimorarFiltros de tipo de documento com mais tipos MIME para suportar opções de vários valores. Hotfix do CQ-4270694
+* Aprimorarfiltros do tipo Document com mais tipos MIME para suportar opções de vários valores. Hotfix do CQ-4270694
 
 ### Gerenciamento de fragmentos de conteúdo {#content-fragment-management-6520}
 
@@ -500,7 +500,7 @@ Alguns destaques principais desta versão do Service pack:
 ### Ativos
 
 * Atualização da interface DAM DMGGateway para oferecer suporte a várias peças S3. NPR-29740: Hotfix do CQ-4226303
-* A visualização de execuções gera `Only empty tenantId is currently supported` erro após a atualização para o AEM 6.5\. NPR-29986: Hotfix do CQ-4272353
+* A pré-visualização de execuções gera `Only empty tenantId is currently supported` erro após a atualização para o AEM 6.5\. NPR-29986: Hotfix do CQ-4272353
 * A caixa de diálogo Excluir não está visível para permitir a exclusão de trabalhos. NPR-29720: Hotfix do CQ-4271074
 * Depois de adicionar o título do ativo na página de propriedades, quando um usuário tentar fechar a página, o AEM abre a página de propriedades novamente. NPR-29627: Hotfix do CQ-4264929
 * VersioningTimelineEventProvider deve fornecer a versão raiz juntamente com o nó do tipo nt: version. Hotfix do GRANITE-26063
@@ -537,7 +537,7 @@ Alguns destaques principais desta versão do Service pack:
 ### Fragmentos de experiência
 
 * Exporte fragmentos de experiência do AEM para o Adobe Target. Hotfix do CQ-4265469
-* A exportação de fragmentos de experiência para o destino falha com a imagem inteligente. Hotfix do CQ-4269606
+* A exportação de Fragmentos de experiência para o público alvo falha com a imagem inteligente. Hotfix do CQ-4269606
 
 * O usuário atinge um beco sem saída quando tenta mover os Fragmentos de experiência pelo Omnisearch na exibição de cartão. Hotfix do CQ-4263848
 
@@ -616,7 +616,7 @@ Os principais destaques dos formulários do AEM 6.5.1.0 são:
 * Quando o AEM Forms é instalado no IBM WebSphere, a criação de um modelo de dados de formulário com base no SOAP falha. Hotfix do CQ-4251134
 * Ativação de suporte para o Ative Diretory Federation Services (ADFS) v3.0 para integração local do Microsoft Dynamics. Hotfix do CQ-4270586
 * Quando o título de uma fonte de dados é alterado, o modelo de dados do formulário não exibe o título atualizado. Hotfix do CQ-4265599
-* Se o nome de uma entidade ou atributo contiver hífen ou espaço, as expressões não avaliarão essas entidades e atributos. Hotfix do CQ-4225129
+* Se o nome de uma entidade ou atributo contiver hífen ou espaço, o expressão não avaliará essas entidades e atributos. Hotfix do CQ-4225129
 
 * A saída incorreta é observada quando um dois pontos está presente na saída da string primitiva. Hotfix do CQ-4260825
 
@@ -641,7 +641,7 @@ Os principais destaques dos formulários do AEM 6.5.1.0 são:
 * O modelo de comunicação interativa não lista componentes de cabeçalho e rodapé na lista de componentes permitidos. Hotfix do CQ-4237895
 * Ao criar um modelo de impressão de comunicação interativa contendo um campo de imagem, o título do gráfico é definido como em branco. Hotfix do CQ-4264772
 * A cor da linha de um gráfico, quando excluída, é definida como indefinida. Hotfix do CQ-4264762
-* As alterações na camada de layout feitas no Fragmento do documento desaparecem ao executar manter as alterações sincronizadas. Hotfix do CQ-4266054
+* As alterações na camada de layout feitas no Fragmento do Documento desaparecem ao executar manter as alterações sincronizadas. Hotfix do CQ-4266054
 * O elemento do modelo de dados de formulário dentro de um Fragmento do documento vinculado a um campo de texto não mostra o ícone de herança e permite combinação. Hotfix do CQ-4261089
 * A API de renderização do Canal de impressão não tem a opção de transferir dados como parâmetro na API. Hotfix do CQ-4263540
 * As configurações do agente não estão visíveis, pois a caixa de seleção Editável pelo agente fica desmarcada quando o tipo de vínculo é alterado do fragmento de texto para Nenhum/Objeto de modelo de dados para o campo/variável String. Hotfix do CQ-4261953
