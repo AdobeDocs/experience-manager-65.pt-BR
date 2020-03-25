@@ -3,7 +3,7 @@ title: Sobre o AEM Assets
 description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e a oferta de ativos AEM da Adobe
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 01475dc8cf4f1e4cb0575c60523c27105ebd1150
 
 ---
 
@@ -66,21 +66,21 @@ Ao trabalhar com ativos digitais no AEM, é preciso entender a seguinte terminol
 
    * Dublin Core: inclui criador, descrição, data, assunto e assim por diante.
    * IPTC: inclui evento, modelo, local e assim por diante.
-   * WCM: incluindo propriedades de página, Tempo  ligado e Tempo [!UICONTROL desligado]e assim por diante.
+   * WCM: incluindo as propriedades da página, Tempo  ligado e Tempo [!UICONTROL desligado]e assim por diante.
 
 * **Os ativos de marcação** podem ser marcados e classificados. Consulte Uso de tags e Administração de tags.
 
 * **Representações** Uma representação é a representação binária de um ativo. Os ativos sempre possuem uma representação primária: a do arquivo enviado. Eles podem ter qualquer número de representações adicionais que são criadas, por exemplo, por etapas de fluxo de trabalho personalizadas ou quando um ativo é carregado. As representações podem ter tamanhos diferentes, com uma resolução diferente, com uma marca d&#39;água adicionada ou alguma outra característica alterada.
 
-* **O controle de versão** cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. Consulte Controle de versão do AEM Assets.
+* **O controle de versão** cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
 * **Sub-ativos** Sub-ativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo do Adobe Photoshop ou páginas em um arquivo PDF. No AEM Assets, é possível gerenciar subativos como se fossem ativos.
 
 ### How to work with assets {#how-to-work-with-assets}
 
-Uma ação é executada em um ativo ou em uma coleção. As ações podem criar ou modificar ativos, coleções e execuções. Muitas das ações básicas executadas em ativos - carregar, excluir, atualizar, salvar subativos - acionam fluxos de trabalho pré-configurados. Esses são ativados automaticamente no AEM Assets e descritos detalhadamente nos manipuladores de mídia do AEM Assets.
+Uma ação é executada em um ativo ou em uma coleção. As ações podem criar ou modificar ativos, coleções e execuções. Muitas das ações básicas executadas em ativos - carregar, excluir, atualizar, salvar subativos - acionam workflows pré-configurados. Esses são ativados automaticamente no AEM Assets e descritos detalhadamente nos manipuladores de mídia do AEM Assets.
 
-As tarefas que você pode executar com esses fluxos de trabalho pré-configurados:
+As tarefas que você pode executar com esses workflows pré-configurados:
 
 * salvam o ativo no ou excluem o ativo do repositório.
 * extraem e salvam metadados para o ativo; os itens individuais são salvos como metadados XMP.
