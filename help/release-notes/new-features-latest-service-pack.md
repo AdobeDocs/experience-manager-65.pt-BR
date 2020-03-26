@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
+source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
 
 O Adobe Experience Manager (AEM) 6.5 oferece recursos e melhorias contínuas por meio de Service Packs trimestrais. A abordagem o beneficia à medida que as inovações se tornam mais fáceis de adotar.
 
-O AEM Service Pack 4 (6.5.4.0) foi lançado em 5 **de março de 2020**. Este artigo destaca os principais recursos que os Service Packs 6.5 oferecem para tornar sua jornada do AEM mais enriquecedora.
+O AEM Service Pack 4 (6.5.4.0) foi lançado em 5 **de março de 2020**. Este artigo destaca os principais recursos da oferta 6.5 Service Packs para tornar sua jornada do AEM mais enriquecedora.
 
 ## AEM Sites {#aem-sites}
 
@@ -35,7 +35,7 @@ Agora é possível selecionar estilos na caixa de diálogo do componente usando 
 
 ### Configurar ativos AEM com o Portal de marcas {#configure-assets-bp}
 
-O canal de autorização entre os ativos AEM e o Portal de marcas foi alterado. Anteriormente, o Brand Portal estava configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um token de Acesso IMS para autorização. Os ativos AEM agora estão configurados com o Portal de marcas por meio da E/S da Adobe, que obtém um token IMS para autorização do locatário do Portal de marcas.
+O canal de autorização entre os ativos AEM e o Portal de marcas foi alterado. Anteriormente, o Brand Portal estava configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização. Os ativos AEM agora estão configurados com o Portal de marcas por meio da E/S da Adobe, que obtém um token IMS para autorização do locatário do Portal de marcas.
 
 As etapas para configurar os ativos AEM com o Brand Portal são diferentes dependendo da versão do AEM e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos AEM com o Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) da marca para obter detalhes.
 
@@ -44,9 +44,9 @@ As etapas para configurar os ativos AEM com o Brand Portal são diferentes depen
 
 Os ativos do Experience Manager incluem os seguintes aprimoramentos de acessibilidade:
 
-* Teclas de seta no teclado podem ser usadas para mover e deslocar áreas em imagens ampliadas. Para obter mais informações, consulte [visualizar ativos usando apenas](../assets/managing-assets-touch-ui.md#previewing-assets)as teclas do teclado.
+* Teclas de seta no teclado podem ser usadas para mover e deslocar áreas em imagens ampliadas. Para obter mais informações, consulte [pré-visualizações usando apenas](../assets/managing-assets-touch-ui.md#previewing-assets)teclas de teclado.
 
-* As caixas de seleção de estado misto (nas quais, a menos que você selecione todos os predicados aninhados, as caixas de seleção de primeiro nível não serão selecionadas e passarão por elas) no painel Filtros podem ser lidas pelos leitores de tela.
+* As caixas de seleção de estado misto (nas quais, a menos que você marque todos os predicados aninhados, as caixas de seleção de primeiro nível não serão selecionadas e passarão por elas) no painel Filtros poderão ser lidas pelos leitores de tela.
 
 * As restrições de formato de data e hora são fornecidas nos rótulos de campo dos campos de data, para permitir que os usuários digitem a data no formato correto usando o teclado.
 
@@ -56,7 +56,7 @@ Os ativos do Experience Manager incluem os seguintes aprimoramentos de acessibil
 
 ## Formulários AEM {#aem-forms}
 
-### Gerar saída imprimível em fluxos de trabalho do AEM Forms {#generate-printable-output}
+### Gerar saída imprimível em workflows do AEM Forms {#generate-printable-output}
 
 A etapa de fluxo de trabalho Gerar saída imprimível permite integrar um arquivo de modelo de origem a um arquivo de dados. Essa integração permite que você imprima ou salve cópias diferentes do arquivo de modelo. A etapa gera uma saída PCL, PostScript, ZPL, IPL, TPCL ou DPL. Para obter mais informações sobre esse recurso, consulte Fluxo de trabalho centrado no [Forms em OSGi - Referência](../forms/using/aem-forms-workflow-step-reference.md)de etapas.
 
@@ -86,8 +86,6 @@ Converta um campo de texto em um formulário XFA em um campo de texto formatado 
 
 O Experience Manager Forms inclui os seguintes aprimoramentos de acessibilidade:
 
-* Os usuários podem alterar o foco da guia sem problemas para o tema de referência Ultramarine-Accessible de um formulário adaptável.
-
 * Os leitores de tela anunciam as caixas de seleção, os links, o Seletor de data e os campos de Entrada de data corretamente em um formulário adaptável.
 
 * Cada página de um formulário adaptável agora inclui um título e um rótulo principal.
@@ -96,7 +94,7 @@ O Experience Manager Forms inclui os seguintes aprimoramentos de acessibilidade:
 
 ### Imagem inteligente para Dynamic Media (6.5.3.0) {#smart-imaging}
 
-A geração de imagens inteligentes usa as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento. A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo de entrega para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagem [inteligente](../assets/imaging-faq.md).
+A geração de imagens inteligentes usa as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento. A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagem [inteligente](../assets/imaging-faq.md).
 
 ### Pesquisa visual para AEM Assets (6.5.2.0) {#visual-search}
 
@@ -108,8 +106,8 @@ Você pode compartilhar seus itens da Caixa de entrada com outro usuário. Quand
 
 ### Defina as configurações de disponibilidade para itens da Caixa de entrada de um usuário do AEM Forms (6.5.3.0) {#configure-out-of-office}
 
-Se planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
-Você tem a opção de especificar uma data e hora de início e uma data e hora de término para que suas configurações de encerramento entrem em vigor. Você pode definir uma pessoa padrão para a qual todos os itens serão enviados. Consulte [Configurar configurações](../forms/using/configure-out-of-office-settings.md)fora do escritório.
+Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
+Você tem a opção de especificar uma data e hora de start e uma data e hora de término para que suas configurações de fora do escritório entrem em vigor. Você pode definir uma pessoa padrão para a qual todos os itens serão enviados. Consulte [Configurar configurações](../forms/using/configure-out-of-office-settings.md)fora do escritório.
 
 ### Gerar várias comunicações interativas usando a API de lote para AEM Forms (6.5.3.0) {#generate-multiple-ic}
 
@@ -131,11 +129,11 @@ Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes
 
 * Atualizações da CLI do AEM Cloud Manager
 
-   Automatize as tarefas do Cloud Manager usando a ferramenta de linha de comando. Consulte [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+   Automatize tarefas do Cloud Manager usando a ferramenta de linha de comando. Consulte [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
 * AEM Sites: Tipo de Arquivo do Projeto 23
 
-   A melhor maneira de iniciar um novo projeto do AEM. O Archetype 23 mescla o [Project Archetype para SPA e os sites regulares em um único](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23) e fornece um tema padrão para iniciar seu desenvolvimento de front-end.
+   A melhor maneira de start de um novo projeto do AEM. O Archetype 23 mescla o [Project Archetype para SPA e os sites regulares em um único](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23) e fornece um tema padrão para lançar o start do seu desenvolvimento de front-end.
 
 * AEM Sites: Site de referência WKND
 
