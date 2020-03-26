@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
+source-git-commit: 61d1531c020b5a25207b5e3f1c2b0c14e2974e02
 
 ---
 
@@ -60,7 +60,7 @@ Os ativos do Experience Manager incluem os seguintes aprimoramentos de acessibil
 
 A etapa de fluxo de trabalho Gerar saída imprimível permite integrar um arquivo de modelo de origem a um arquivo de dados. Essa integração permite que você imprima ou salve cópias diferentes do arquivo de modelo. A etapa gera uma saída PCL, PostScript, ZPL, IPL, TPCL ou DPL. Para obter mais informações sobre esse recurso, consulte Fluxo de trabalho centrado no [Forms em OSGi - Referência](../forms/using/aem-forms-workflow-step-reference.md)de etapas.
 
-![Gerar saída para impressão](assets/generate-print-output-demo.gif)
+![Gerar saída para impressão](assets/generate-print-output-step.gif)
 
 ### Suporte a várias colunas para formulários adaptáveis e comunicações interativas no modo Layout {#multi-column-adaptive-forms}
 
@@ -106,7 +106,7 @@ Você pode compartilhar seus itens da Caixa de entrada com outro usuário. Quand
 
 ### Defina as configurações de disponibilidade para itens da Caixa de entrada de um usuário do AEM Forms (6.5.3.0) {#configure-out-of-office}
 
-Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
+Se planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
 Você tem a opção de especificar uma data e hora de start e uma data e hora de término para que suas configurações de fora do escritório entrem em vigor. Você pode definir uma pessoa padrão para a qual todos os itens serão enviados. Consulte [Configurar configurações](../forms/using/configure-out-of-office-settings.md)fora do escritório.
 
 ### Gerar várias comunicações interativas usando a API de lote para AEM Forms (6.5.3.0) {#generate-multiple-ic}
@@ -124,7 +124,7 @@ Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
 
-   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-2-0.html)
 
 
 * Atualizações da CLI do AEM Cloud Manager
