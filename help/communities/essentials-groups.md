@@ -10,26 +10,26 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
 # Essenciais do grupo comunitário {#community-group-essentials}
 
-O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criada dinamicamente em um site da comunidade por usuários autorizados dos ambientes de publicação e criação.
+O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criada dinamicamente em um site da comunidade por usuários autorizados dos ambientes de publicação e autor.
 
 No pacote de [recursos de Comunidades 1](deploy-communities.md#latestfeaturepack), é possível que os grupos sejam aninhados dentro de outros grupos
 
 ## Essenciais para o lado do cliente {#essentials-for-client-side}
 
-### Lista de membros dos grupos da comunidade {#community-groups-member-list}
+### Lista de membros de grupos da comunidade {#community-groups-member-list}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/grupo/componentes/hbs/communitygroup memberlist</td>
+   <td>social/grupo/componentes/hbs/communitygroupmemberlist</td>
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
@@ -85,7 +85,7 @@ No pacote de [recursos de Comunidades 1](deploy-communities.md#latestfeaturepack
 
 ### Função Grupos {#groups-function}
 
-Uma estrutura de site da comunidade que inclui uma função [](functions.md#groups-function) Grupos oferecerá suporte à criação de novos ambientes `community groups` de publicação e criação. O grupo de comunidade criado incluirá um `community groups member list` componente que listará os membros do grupo.
+Uma estrutura de site da comunidade que inclui uma função [](functions.md#groups-function) Grupos oferecerá suporte à criação de novos ambientes `community groups` de publicação e autor. O grupo de comunidade criado incluirá um `community groups member list` componente que irá lista dos membros do grupo.
 
 Um ou mais modelos [de grupo da](tools-groups.md)comunidade, que fornecem o design das páginas de grupo da comunidade, podem ser configurados para a função Grupos quando a função está sendo adicionada a um modelo [de site da](sites.md) comunidade ou aninhada em um modelo de grupo da comunidade.
 
