@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Essenciais de atribuições{#assignments-essentials}
+# Essenciais de atribuições {#assignments-essentials}
 
 Leia para saber mais sobre as informações essenciais para trabalhar com o recurso de atribuições de [ativação de sites da comunidade](/help/communities/overview.md#enablement-community) .
 
@@ -48,7 +48,7 @@ O recurso de atribuições é a capacidade de atribuir recursos de ativação e 
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>consulte Recurso <a href="/help/communities/assignments.md">Atribuições</a></td>
+   <td>Consulte, Recurso <a href="/help/communities/assignments.md">Atribuições</a></td>
   </tr>
  </tbody>
 </table>
@@ -89,7 +89,7 @@ Uma estrutura de site da comunidade que inclui a função [](/help/communities/f
 
 * [API de ativação](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API de relatórios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [API do Relatórios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API do Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [API do Relatórios Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 
