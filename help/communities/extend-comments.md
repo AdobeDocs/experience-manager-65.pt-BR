@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -31,7 +31,7 @@ Suponha que o cabeçalho do componente de comentário deve ser exibido com uma a
 
 Para implementar essa solução, crie um novo componente que estenda (substitui) o existente e modifique o script Handlebars. A área do site que usa os novos comentários pode usar o extendido, enquanto os sites que usam a aparência padrão permanecem não afetados.
 
-O componente de comentário é, na verdade, um dos dois componentes que compõem o sistema de comentários. Assim, há dois componentes a serem estendidos: *comentários* e *comentários*. O script a ser editado está no arquivo *comment *component&#39;s, enquanto o componente pai `header.hbs` comments ** (o sistema de comentários) é o que um autor adiciona à página.
+O componente de comentário é, na verdade, um dos dois componentes que compõem o sistema de comentários. Assim, há dois componentes a serem estendidos: *comentários* e *comentários*. O script a ser editado está no arquivo do componente de *comentário* , enquanto o componente de `header.hbs` comentários ** pai (o sistema de comentários) é o que um autor realmente adiciona à página.
 
 Para estender comentários, é necessário:
 
