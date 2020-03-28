@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Recurso de quadro de líderes{#leaderboard-feature}
+# Recurso de quadro de líderes {#leaderboard-feature}
 
 ## Introdução {#introduction}
 
@@ -26,8 +26,8 @@ Antes de incluir o componente de quadro de líderes em uma página, é necessár
 
 Esta seção da documentação descreve
 
-* adicionar o `Leaderboard` componente a um site da [comunidade](/help/communities/overview.md#community-sites)
-* configurações do `Leaderboard` componente
+* Adicionar o `Leaderboard` componente a um site da [comunidade](/help/communities/overview.md#community-sites)
+* Configurações para o `Leaderboard` componente
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -51,7 +51,7 @@ Selecione o componente inserido a ser acessado e selecione o `Leaderboard` `Conf
 
 #### Guia Configurações {#settings-tab}
 
-Na **guia **Configurações **, especifique quais informações relacionadas ao membro são exibidas:
+Na guia **Configurações** , especifique quais informações relacionadas ao membro serão exibidas:
 
 * **Nome para exibição**
 
@@ -79,21 +79,19 @@ Na guia **Regras** , o site da comunidade e suas regras de pontuação e marcaç
 
 * **Local da regra**
 
-   (obrigatório) Local onde a regra de Pontuação/Classificação está configurada.
+   (Obrigatório) Local onde a regra de Pontuação/Classificação está configurada.
 
 * **Regra de pontuação**
 
-   (obrigatório) Regra específica que gera as pontuações a serem exibidas.
+   (Obrigatório) Regra específica que gera as pontuações a serem exibidas.
 
 * **Regra para insígnias**
 
-   (obrigatório) Regra específica que gera o crachá a ser exibido.
+   (Obrigatório) Regra específica que gera o crachá a ser exibido.
 
 * **Limite de exibição**
 
-   Número de membros a serem exibidos por página.
-
-   O padrão é 10.
+   Número de membros a serem exibidos por página. O padrão é 10.
 
 ### Exemplo: Painel de líderes de participantes {#example-participants-leaderboard}
 
