@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
+source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
 
 ---
 
@@ -12,18 +12,18 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
 # AEM 6.5 Assets User Guide {#assets}
 
 + [Guia do usuário do Assets](home.md)
-+ [Notas de versão do AEM 6.5 Assets](../release-notes/assets.md)
++ [Notas de versão do AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
 + Usar ativos AEM {#using}
-   + [Experiência da página inicial do AEM Assets](assets-home-page.md)
+   + [Experiência de home page do AEM Assets](assets-home-page.md)
    + [Pesquisar ativos no AEM](search-assets.md)
    + [Ativos multilíngues](multilingual-assets.md)
    + [Usar ativos do Adobe Stock nos ativos AEM](aem-assets-adobe-stock.md)
    + [Visualização de ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
-   + [Fluxo de atividade na linha do tempo](activity-stream.md)
-   + [Aplicar fluxos de trabalho a ativos](assets-workflow.md)
+   + [Atividade na linha do tempo](activity-stream.md)
+   + [Aplicar workflows a ativos](assets-workflow.md)
    + [Adicionar mapas de imagem](image-maps.md)
    + [Reutilizar ativos usando MSM](reuse-assets-using-msm.md)
    + [Ativos conectados ao AEM Sites](use-assets-across-connected-assets-instances.md)
@@ -71,7 +71,7 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Trabalho com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
    + [Personalizar e estender ativos AEM](extending-assets.md)
-   + [Processar ativos usando manipuladores de mídia e fluxos de trabalho](media-handlers.md)
+   + [Processar ativos usando manipuladores de mídia e workflows](media-handlers.md)
    + [Ampliar funcionalidade de pesquisa](searchx.md)
    + [Instalar e configurar o ImageMagick para trabalhar com os ativos AEM](best-practices-for-imagemagick.md)
    + [Integrar ativos ao fluxo de atividade](extending-activity-stream.md)
@@ -118,7 +118,7 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Importação e exportação de metadados em massa](metadata-import-export.md)
    + [Modelos de ativos](asset-templates.md)
    + [Práticas recomendadas para compartilhar pastas com a Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-   + [Esquema de metadados de pasta](folder-metadata-schema.md)
+   + [Esquema de metadados de pastas](folder-metadata-schema.md)
    + [Gerenciar tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
@@ -140,7 +140,7 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Gerenciar coleções](managing-collections-touch-ui.md)
    + [Gerenciar vários ativos e coleções](managing-multiple-assets.md)
    + [Configurar a marcação usando o Serviço de conteúdo inteligente](config-smart-tagging.md)
-   + [Habilitar detecção de duplicata](duplicate-detection.md)
+   + [Ativar detecção de duplicados](duplicate-detection.md)
    + [Organizar ativos digitais](organize-assets.md)
    + [Gerenciar ativos de vídeo](managing-video-assets.md)
    + [Criar projetos de tradução](translation-projects.md)
@@ -152,7 +152,7 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Ativar insights de ativos por meio do DTM](touch-ui-using-dtm-for-asset-insights.md)
    + [Configurar insights de ativos](touch-ui-configuring-asset-insights.md)
    + [Fazer check-in e check-out de ativos](check-out-and-submit-assets.md)
-   + [Aplicar serviços de tradução em nuvem a pastas](transition-cloud-services.md)
+   + [Aplicar serviços da nuvem de tradução a pastas](transition-cloud-services.md)
    + [Usar o rastreador de página e incorporar código em páginas da Web](touch-ui-using-page-tracker.md)
    + [Gerenciar ativos compostos](managing-linked-subassets.md)
    + [Ativos relacionados](related-assets.md)
