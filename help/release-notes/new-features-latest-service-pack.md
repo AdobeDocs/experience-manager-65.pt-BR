@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 61d1531c020b5a25207b5e3f1c2b0c14e2974e02
+source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
 
 ---
 
@@ -39,6 +39,10 @@ O canal de autorização entre os ativos AEM e o Portal de marcas foi alterado. 
 
 As etapas para configurar os ativos AEM com o Brand Portal são diferentes dependendo da versão do AEM e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos AEM com o Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) da marca para obter detalhes.
 
+
+### Problemas conhecidos {#known-issues-bp}
+
+* Os usuários do Brand Portal não podem publicar ativos da pasta de contribuição nos ativos AEM ao atualizar para a E/S da Adobe no AEM 6.5.4.
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
