@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -139,7 +139,7 @@ Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
 ## Criar uma pasta da biblioteca do cliente {#create-a-client-library-folder}
 
-Para evitar ter que incluir explicitamente essa biblioteca de cliente, o valor das categorias para a clientlib do sistema de comentários padrão poderia ser usado ( `cq.social.author.hbs.comments`), mas essa clientlib também seria incluída para todas as instâncias do componente padrão.
+Para evitar a necessidade de incluir explicitamente essa biblioteca de cliente, o valor do categoria para a clientlib do sistema de comentários padrão poderia ser usado ( `cq.social.author.hbs.comments`), mas essa clientlib também seria incluída para todas as instâncias do componente padrão.
 
 Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -160,14 +160,14 @@ Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
    * **Nome**: `js.txt`
    * **Nome**: customcommentsystem.js
 
-* Digite &#39;customcommentsystem.js&#39; como conteúdo de `js.txt`
+* Digite &#39;customcommentsystem.js&#39; como o conteúdo de `js.txt`
 * Selecione **[!UICONTROL Salvar tudo]**
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-## Registrar o modelo e a exibição do quadro {#register-the-scf-model-view}
+## Registre o modelo e a Visualização do SCF {#register-the-scf-model-view}
 
-Ao estender (substituir) um componente SCF, o resourceType é diferente (a sobreposição usa o mecanismo de pesquisa relativo que pesquisa `/apps` antes `/libs` para que o resourceType permaneça o mesmo). É por isso que é necessário gravar JavaScript (na biblioteca do cliente) para registrar o modelo JS SCF e exibir o resourceType personalizado.
+Ao estender (substituir) um componente SCF, o resourceType é diferente (a sobreposição usa o mecanismo de pesquisa relativo que pesquisa `/apps` antes `/libs` para que o resourceType permaneça o mesmo). É por isso que é necessário gravar o JavaScript (na biblioteca do cliente) para registrar o modelo e a visualização do SCF JS para o resourceType personalizado.
 
 Digite o seguinte texto como conteúdo do `customcommentsystem.js`:
 
