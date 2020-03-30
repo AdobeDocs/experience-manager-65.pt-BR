@@ -1,6 +1,6 @@
 ---
-title: Excluir formulários e recursos relacionados
-seo-title: Excluir formulários e recursos relacionados
+title: Excluindo formulários e recursos relacionados
+seo-title: Excluindo formulários e recursos relacionados
 description: Como excluir um formulário ou ativo no AEM Forms e o impacto nos ativos referenciados e referenciadores e formulários XFA.
 seo-description: Como excluir um formulário ou ativo no AEM Forms e o impacto nos ativos referenciados e referenciadores e formulários XFA.
 uuid: df522b87-59d8-4678-922d-c9aab82b1381
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Excluir formulários e recursos relacionados {#deleting-forms-and-related-resources}
+# Excluindo formulários e recursos relacionados {#deleting-forms-and-related-resources}
 
 É possível excluir os formulários e ativos para remover esses ativos do repositório. A operação de exclusão funciona em todos os tipos de ativos e pastas.
 
@@ -22,7 +22,7 @@ Se você excluir um ativo da instância Autor, o ativo também será excluído d
 
 ## Como excluir um formulário {#how-to-delete-a-form}
 
-1. Faça logon na interface do usuário do AEM Forms acessando `https://[hostname]:[portport]/aem/forms.html.`
+1. Faça logon na interface do usuário do AEM Forms acessando `https://[hostname]:'port'/aem/forms.html.`
 1. Navegue até o formulário que deseja excluir e selecione-o. Clique em Excluir ![aem6forms_delete2](assets/aem6forms_delete2.png) da barra de ferramentas e confirme a operação de exclusão.
 
    >[!NOTE]
