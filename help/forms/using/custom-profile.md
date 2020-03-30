@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 Um perfil é um nó de recurso no [Apache Sling](https://sling.apache.org/). Representa a versão personalizada do serviço de execução de formulários HTML5. Você pode usar o serviço de representação de formulários HTML5 para personalizar a aparência, o comportamento e as interações dos formulários HTML5. Existe um nó de perfil na `/content` pasta no repositório JCR. Você pode colocar o nó diretamente sob a `/content` pasta ou qualquer subpasta da `/content` pasta.
 
-O nó do perfil tem a propriedade **sling:resourceSuperType** e o valor padrão é **xfaforms/profile**. O script de renderização para o nó está em /libs/xfaforms/profile.
+O nó do perfil tem a propriedade **sling:resourceSuperType** e o valor padrão é **xfaforms/perfil**. O script de renderização para o nó está em /libs/xfaforms/perfil.
 
-Os scripts Sling são scripts JSP. Esses scripts JSP servem como contêineres para reunir o HTML para o formulário solicitado e os artefatos JS / CSS necessários. Esses scripts Sling também são chamados de scripts **do Renderizador de** perfil. O renderizador de perfil chama o serviço OSGi do Forms para renderizar o formulário solicitado.
+Os scripts Sling são scripts JSP. Esses scripts JSP servem como container para reunir o HTML para o formulário solicitado e os artefatos JS / CSS necessários. Esses scripts Sling também são chamados de scripts **do Renderizador de** Perfis. O renderizador de perfis chama o serviço OSGi do Forms para renderizar o formulário solicitado.
 
 O script de perfil está em html.jsp e html.POST.jsp para solicitações GET e POST. Você pode copiar e modificar um ou mais arquivos para substituir e adicionar suas personalizações. Não faça alterações no local, a atualização de patch substitui essas alterações.
 
@@ -50,23 +50,23 @@ No início, o formulário HTML5 renderiza apenas a primeira página do formulár
 
 O módulo footer.jsp está vazio. Isso permite que você adicione scripts usados apenas para interação do usuário.
 
-## Criação de perfis personalizados {#creating-custom-profiles}
+## Criação de Perfis personalizados {#creating-custom-profiles}
 
 Para criar um perfil personalizado, execute as seguintes etapas:
 
-### Criar nó do perfil {#create-profile-node}
+### Criar nó de Perfil {#create-profile-node}
 
-1. Navegue até a interface CRX DE no URL: `https://[server]:[port]/crx/de` e faça logon na interface com credenciais de administrador.
+1. Navegue até a interface CRX DE no URL: `https://'[server]:[port]'/crx/de` e faça logon na interface com credenciais de administrador.
 
-1. No painel esquerdo, navegue até o local */content/xfaforms/profile*.
+1. No painel esquerdo, navegue até o local */content/xfaforms/perfis*.
 
-1. Copie o nó padrão e cole o nó em outra pasta (*/content/profile*) com o nome *hrform*.
+1. Copie o nó padrão e cole o nó em outra pasta (*/content/perfis*) com o nome *hrform*.
 
 1. Selecione o novo nó, *forma* e adicione uma propriedade de string: *sling:resourceType* com valor: *forma/demonstração*.
 
 1. Clique em Salvar tudo no menu da barra de ferramentas para salvar as alterações.
 
-### Criar o script do renderizador de perfil {#create-the-profile-renderer-script}
+### Criar o script do renderizador de perfis {#create-the-profile-renderer-script}
 
 Depois de criar um perfil personalizado, adicione informações de renderização a esse perfil. Ao receber uma solicitação para o novo perfil, o CRX verifica a existência da pasta /apps para a página JSP a ser renderizada. Crie a página JSP na pasta /apps.
 
@@ -78,8 +78,8 @@ Depois de criar um perfil personalizado, adicione informações de renderizaçã
 1. Cole o nó **html.jsp** na `/apps/hrform/demo` pasta criada acima com o mesmo nome **html.jsp** e clique em **Salvar**.
 1. Se você tiver outros componentes do script de perfil, siga as etapas de 1 a 6 para copiar os componentes na pasta /apps/hrform/demo.
 
-1. Para verificar se o perfil foi criado, abra o URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
+1. Para verificar se o perfil foi criado, abra o URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-Para verificar seus formulários, [importe seus formulários](/help/forms/using/get-xdp-pdf-documents-aem.md) do sistema de arquivos local para o AEM Forms e [visualize o formulário](/help/forms/using/previewing-forms.md) na instância do autor do servidor AEM.
+Para verificar seus formulários, [importe seus formulários](/help/forms/using/get-xdp-pdf-documents-aem.md) do sistema de arquivos local para o AEM Forms e [pré-visualização o formulário](/help/forms/using/previewing-forms.md) na instância do autor do servidor AEM.
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
