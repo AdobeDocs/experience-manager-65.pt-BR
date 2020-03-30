@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Início rápido da API Java (SOAP) do Registro do Endpoint {#endpoint-registry-java-api-quickstart-soap}
+# Start rápido (SOAP) da API Java do Registro do Endpoint {#endpoint-registry-java-api-quickstart-soap}
 
-O Java API Quick Start (SOAP) está disponível para o Endpoint Registry.
+O SOAP (Java API Quick Start) está disponível para o Endpoint Registry.
 
 [Início rápido: Adicionar um terminal EJB usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
@@ -39,13 +39,13 @@ O Java API Quick Start (SOAP) está disponível para o Endpoint Registry.
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-***Observação **: Início rápido localizado em Programação com formulários AEM são baseados no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+***Observação **: O start rápido localizado em Programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
 
 **Observação**: Não é possível trabalhar com pontos de extremidade usando um serviço da Web.
 
 ## Início rápido: Adicionar um terminal EJB usando a API Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um terminal EJB a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos finais](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
+O exemplo de código Java a seguir adiciona um ponto de extremidade EJB a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos finais](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
 
 ```as3
  /*
@@ -109,7 +109,7 @@ O exemplo de código Java a seguir adiciona um terminal EJB a um serviço chamad
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -208,7 +208,7 @@ O exemplo de código Java a seguir adiciona um terminal SOAP a um serviço chama
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -248,7 +248,7 @@ O exemplo de código Java a seguir adiciona um terminal de Pasta assistida a um 
 
 >[!NOTE]
 >
->Você deve incluir o arquivo WatchedFolderEndpointConfigConstants.java no seu projeto para compilar e executar o seguinte início rápido. (Consulte [Valores de configuração de pasta monitorados no arquivo](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)constante.)
+>Você deve incluir o arquivo WatchedFolderEndpointConfigConstants.java no seu projeto para compilar e executar o seguinte start rápido. (Consulte [Valores de configuração de pasta monitorados no arquivo](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)constante.)
 
 ```as3
  /*
@@ -311,7 +311,7 @@ O exemplo de código Java a seguir adiciona um terminal de Pasta assistida a um 
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -379,11 +379,11 @@ O exemplo de código Java a seguir adiciona um terminal de Pasta assistida a um 
 
 ## Início rápido: Adicionar um terminal de email usando a API Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um ponto de extremidade Email a um serviço chamado *MyApplication/* EncryptDocument. (Consulte [Adicionar Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)de Email.)
+O exemplo de código Java a seguir adiciona um ponto de extremidade Email a um serviço chamado *MyApplication/* EncryptDocument. (Consulte [Adicionando Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)de Email.)
 
 >[!NOTE]
 >
->Você deve incluir o arquivo EmailEndpointConfigConstants.java no seu projeto para compilar e executar o seguinte início rápido. (Consulte Valores de configuração de [email constantes do arquivo](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Você deve incluir o arquivo EmailEndpointConfigConstants.java no seu projeto para compilar e executar o seguinte start rápido. (Consulte o arquivo [constante de valores de configuração de](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)email.)
 
 ```as3
  /*
@@ -446,7 +446,7 @@ O exemplo de código Java a seguir adiciona um ponto de extremidade Email a um s
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -590,7 +590,7 @@ O exemplo de código Java a seguir adiciona um terminal Remoting a um serviço c
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -693,7 +693,7 @@ O exemplo de código Java a seguir adiciona um terminal do TaskManager a um serv
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -804,7 +804,7 @@ O exemplo de código Java a seguir modifica um endpoint de Pasta assistida.O end
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -956,7 +956,7 @@ O código Java a seguir remove um terminal EJB de um serviço chamado *MyApplica
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1005,7 +1005,7 @@ O código Java a seguir remove um terminal EJB de um serviço chamado *MyApplica
 
 ## Início rápido: Recuperando informações do conector do ponto de extremidade usando a API Java {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-O código Java a seguir recupera informações sobre um endpoint de Pasta assistida. As informações sobre cada valor de configuração são recuperadas e exibidas. Essa lista de códigos especifica se cada valor de configuração é obrigatório ou opcional. Além disso, o nome e o valor de cada valor de configuração são exibidos. (Consulte [Recuperando Informações](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)do Conector do Ponto Final.)
+O código Java a seguir recupera informações sobre um endpoint de Pasta assistida. As informações sobre cada valor de configuração são recuperadas e exibidas. Esta lista de código especifica se cada valor de configuração é obrigatório ou opcional. Além disso, o nome e o valor de cada valor de configuração são exibidos. (Consulte [Recuperando Informações](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)do Conector do Ponto Final.)
 
 ```as3
  /*
@@ -1070,7 +1070,7 @@ O código Java a seguir recupera informações sobre um endpoint de Pasta assist
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
