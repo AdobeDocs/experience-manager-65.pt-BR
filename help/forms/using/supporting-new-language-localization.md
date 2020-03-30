@@ -1,6 +1,6 @@
 ---
-title: Suporte a novas localidades para a localização de formulários adaptáveis
-seo-title: Suporte a novas localidades para a localização de formulários adaptáveis
+title: Suporte a novas localidades para localização de formulários adaptáveis
+seo-title: Suporte a novas localidades para localização de formulários adaptáveis
 description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptativos. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
 seo-description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptativos. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
 uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
@@ -10,12 +10,12 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Suporte a novas localidades para a localização de formulários adaptáveis{#supporting-new-locales-for-adaptive-forms-localization}
+# Suporte a novas localidades para localização de formulários adaptáveis{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## Sobre dicionários de localidades {#about-locale-dictionaries}
 
@@ -30,7 +30,7 @@ A localização de formulários adaptáveis depende de dois tipos de dicionário
 Quando um formulário adaptável é renderizado, ele identifica a localidade solicitada, observando os seguintes parâmetros na ordem especificada:
 
 * Parâmetro de solicitação `afAcceptLang`Para substituir a localidade do navegador de usuários, é possível passar o parâmetro de `afAcceptLang` solicitação para forçar a localidade. Por exemplo, o URL a seguir forçará a renderização do formulário na localidade japonesa:
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
 
@@ -42,7 +42,7 @@ Se uma biblioteca do cliente para a localidade solicitada não existir, ela veri
 
 ## Adicionar suporte de localização para localidades não suportadas {#add-localization-support-for-non-supported-locales}
 
-Atualmente, o AEM Forms suporta a localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
+Atualmente, o AEM Forms suporta localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
 Para adicionar suporte para uma nova localidade em tempo de execução de formulários adaptáveis:
 
@@ -54,10 +54,10 @@ Para adicionar suporte para uma nova localidade em tempo de execução de formul
 1. [Adicionar suporte de localidade para o dicionário](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Reinicie o servidor](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Adicionar uma localidade ao serviço de localização do guia {#add-a-locale-to-the-guide-localization-service-br}
+### Adicionar uma localidade ao serviço de Localização do Guia {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Ir para `https://[server]:[port]/system/console/configMgr`.
-1. Clique para editar o componente Serviço **de localização do** Guia.
+1. Ir para `https://'[server]:[port]'/system/console/configMgr`.
+1. Clique para editar o componente Serviço **de Localização do** Guia.
 1. Adicione a localidade que deseja adicionar à lista de localidades compatíveis.
 
 ![GuideLocalizationService](assets/configservice.png)
@@ -102,7 +102,7 @@ Execute essa etapa somente se o item `<locale>` que você está adicionando não
 
 1. Adicione os valores `<locale>` da `languages` propriedade de `/etc/languages`.
 
-O `<locale>` será exibido em `https://[server]:[port]/libs/cq/i18n/translator.html`.
+O `<locale>` será exibido em `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
 
 ### Restart the server {#restart-the-server}
 
