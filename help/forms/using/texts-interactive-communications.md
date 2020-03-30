@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
 
 Um fragmento de documento de texto consiste em um ou mais parágrafos de texto. Um parágrafo pode ser estático ou dinâmico. Um parágrafo dinâmico pode conter propriedades e variáveis do modelo de dados de formulário. Também é possível aplicar regras e repetir em um fragmento de documento de texto. Por exemplo, o nome do cliente em uma saudação pode ser uma propriedade do Form Data Model (FDM) com seu valor disponibilizado em tempo de execução. Ao alterar esses valores, a mesma Comunicação interativa pode ser usada para preparar a Comunicação interativa para clientes diferentes usando a interface do usuário do agente.
 
-O fragmento do documento de texto no Interative Communication oferece suporte ao seguinte tipo de dados dinâmicos:
+O fragmento de documento de texto no Interative Communication oferece suporte ao seguinte tipo de dados dinâmicos:
 
 * **Objetos** do modelo de dados: As propriedades de dados usam uma fonte de dados back-end.
 * **Conteúdo** baseado em regras: Partes do conteúdo em um texto que aparecem ou são ocultadas com base em uma regra. Uma regra também pode se basear em propriedades e variáveis do modelo de dados de formulário.
@@ -29,12 +29,12 @@ O fragmento do documento de texto no Interative Communication oferece suporte ao
 
 ## Create text {#createtext}
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **** de documento.
+1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
 1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Texto]**.
 1. Especifique as seguintes informações:
 
    * **[!UICONTROL Título]**: (Opcional) Insira o título do fragmento do documento de texto. Os títulos não precisam ser exclusivos e podem ter caracteres especiais e caracteres diferentes do inglês. Os textos são referenciados por seus títulos (quando disponíveis), como em miniaturas e propriedades.
-   * **[!UICONTROL Nome]**: O nome exclusivo do texto, em uma pasta. Não podem existir dois fragmentos de documento (texto, condição ou lista) em qualquer estado com o mesmo nome em uma pasta. No campo Nome, é possível digitar somente caracteres, números e hífens em inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
+   * **[!UICONTROL Nome]**: O nome exclusivo do texto, em uma pasta. Não podem existir dois fragmentos de documento (texto, condição ou lista) em qualquer estado com o mesmo nome em uma pasta. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
 
    * **[!UICONTROL Descrição]**: Digite uma descrição do texto.
    * **[!UICONTROL Modelo]** de dados de formulário: Como opção, selecione o botão de opção Modelo de dados de formulário para criar o texto com base em um modelo de dados de formulário. Quando o botão de opção Modelo de dados de formulário é selecionado, o campo Modelo **[!UICONTROL de dados de]** formulário é exibido. Procure e selecione um modelo de dados de formulário. Ao criar texto e condição para uma Comunicação interativa, certifique-se de usar o mesmo modelo de dados que pretende usar na Comunicação interativa. Para obter mais informações sobre o Modelo de dados de formulário, consulte Integração [de](/help/forms/using/data-integration.md)dados.
@@ -69,23 +69,23 @@ O fragmento do documento de texto no Interative Communication oferece suporte ao
 
 ## Editar texto {#edittext}
 
-É possível editar um fragmento de documento existente usando as seguintes etapas. Você também pode optar por editar um fragmento de documento de texto a partir de um editor de Comunicação interativa.
+É possível editar um fragmento de documento de texto existente usando as seguintes etapas. Você também pode optar por editar um fragmento de documento de texto a partir de um editor de Comunicação interativa.
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **** de documento.
+1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
 1. Navegue até um fragmento de documento de texto e selecione-o.
 1. Toque em **[!UICONTROL Editar]**.
 1. Faça as alterações necessárias. Para obter mais informações sobre opções em texto, consulte [Criar texto](#createtext).
-1. Toque em **[!UICONTROL Salvar]** e toque em **[!UICONTROL Fechar]**.
+1. Toque em **[!UICONTROL Salvar]** e, em seguida, toque em **[!UICONTROL Fechar]**.
 
 ## Personalização de um fragmento de documento de texto usando propriedades de modelo de dados de formulário {#formdatamodel}
 
-É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo propriedades de modelo de dados de formulário no texto, é possível buscar e preencher dados específicos do destinatário da fonte de dados associada ao visualizar uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo as propriedades do modelo de dados de formulário no texto, é possível buscar e preencher dados específicos do recipient da fonte de dados associada enquanto visualiza uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
 
 Se você tiver especificado um modelo de dados de formulário ao criar um texto, as propriedades no modelo de dados de formulário aparecerão no painel esquerdo do editor de texto. O modelo de dados de formulário especificado deve ser o mesmo para o fragmento do documento de texto, bem como para a Comunicação interativa que o inclui.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Para inserir uma propriedade de modelo de dados de formulário no texto, posicione o cursor no local em que deseja inserir a propriedade, selecione a propriedade **[A]** no painel esquerdo tocando nela e toque em **[!UICONTROL [B]Adicionar selecionados]**. Você também pode tocar duas vezes na propriedade para inseri-la na posição do cursor**[ C ]**. As propriedades do modelo de dados de formulário são realçadas em uma cor de fundo acastanhada.
+* Para inserir uma propriedade de modelo de dados de formulário no texto, posicione o cursor no local em que deseja inserir a propriedade, selecione a propriedade **[A]** no painel esquerdo tocando nela e toque em **[!UICONTROL [B]Adicionar selecionados]**. Você também pode apenas tocar com o duplo na propriedade para inseri-la na posição do cursor**[ C ]**. As propriedades do modelo de dados de formulário são realçadas em uma cor de plano de fundo acastanhada.
 
 Como alternativa, você pode pesquisar e adicionar a propriedade de modelo de dados de formulário usando o símbolo @ no editor de texto. Posicione o cursor no local em que deseja inserir a propriedade. Digite @ seguido pela string de pesquisa. A operação de pesquisa é executada em todas as propriedades e variáveis do modelo de dados de formulário disponíveis no fragmento do documento. As propriedades ou variáveis que contêm a string de pesquisa são recuperadas e exibidas como uma lista suspensa. Navegue pelos resultados da pesquisa e clique na propriedade que deseja inserir no local do cursor. Pressione Esc para ocultar os resultados da pesquisa.
 
@@ -100,10 +100,10 @@ As variáveis são espaços reservados que podem ser vinculados ao criar uma com
 Você pode usar variáveis em vez de propriedades de modelo de dados de formulário quando:
 
 * Um fragmento de documento de texto deve ser usado em várias Comunicações interativas, onde o vínculo precisa ser diferente para diferentes Comunicações interativas.
-* O fragmento do documento de texto não tem um modelo de dados de formulário no momento de sua criação. É possível inserir variáveis e, posteriormente, vinculá-las às propriedades do modelo de dados de formulário no momento da criação da Comunicação interativa.
-* É necessário vincular e recuperar texto de um fragmento de documento de texto. Somente esses fragmentos de documento de texto podem ser vinculados a variáveis não devem ter variáveis que não tenham variáveis.
+* O fragmento de documento de texto não tem um modelo de dados de formulário no momento da criação. É possível inserir variáveis e, posteriormente, vinculá-las às propriedades do modelo de dados de formulário no momento da criação da Comunicação interativa.
+* É necessário vincular e recuperar o texto de um fragmento de documento de texto. Somente esses fragmentos de documento de texto podem ser vinculados a variáveis não devem ter variáveis que não tenham variáveis.
 
-Ao criar ou editar um fragmento de documento de texto, você pode criar e inserir variáveis. As variáveis criadas aparecem na guia Dados da interface do usuário do agente. O agente especifica os valores para as variáveis ao [preparar e enviar comunicação interativa usando a interface do usuário](/help/forms/using/prepare-send-interactive-communication.md)do agente.
+Ao criar ou editar um fragmento de documento de texto, você pode criar e inserir variáveis. As variáveis que você cria são exibidas na guia Dados da interface do usuário do agente. O agente especifica os valores para as variáveis ao [preparar e enviar comunicação interativa usando a interface do usuário](/help/forms/using/prepare-send-interactive-communication.md)do agente.
 
 ### Criar variáveis {#createvariables}
 
@@ -122,7 +122,7 @@ Ao criar ou editar um fragmento de documento de texto, você pode criar e inseri
    * **[!UICONTROL Nome]** : Nome da variável.
    * **[!UICONTROL Descrição]** : Opcionalmente, insira uma descrição sobre a variável.
    * **[!UICONTROL Tipo]** : Selecione um tipo de variável: String, Number, Boolean ou Date.
-   * **[!UICONTROL Permitir apenas]** valores específicos: Para variáveis String e Number, você pode garantir que o agente escolha a partir de um conjunto específico de valores para um espaço reservado na interface do usuário do agente. Para especificar o conjunto de valores, selecione essa opção e especifique valores separados por vírgulas que são permitidos no campo **[!UICONTROL Valores]** .
+   * **[!UICONTROL Permitir apenas]** valores específicos: Para variáveis String e Number, é possível garantir que o agente escolha a partir de um conjunto específico de valores para um espaço reservado na interface do agente. Para especificar o conjunto de valores, selecione essa opção e especifique valores separados por vírgulas que são permitidos no campo **[!UICONTROL Valores]** .
 
 1. Toque em **[!UICONTROL Criar]**.
 
@@ -144,7 +144,7 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 
 * Strings
 * Números
-* Expressão matemática
+* expressão matemática
 * Datas
 * Propriedades do modelo de dados de formulário associado
 * Quaisquer variáveis que você possa ter criado no texto
@@ -157,7 +157,7 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 
 1. Toque em **[!UICONTROL Criar regra]**.
 
-   A caixa de diálogo Criar regra é exibida. Além da string, do número, da expressão matemática e da data, os seguintes itens também estão disponíveis no Editor de regras para criar instruções das regras:
+   A caixa de diálogo Criar regra é exibida. Além da string, do número, da expressão matemática e da data, os seguintes itens também estão disponíveis no Editor de regras para a criação de declarações das regras:
 
    * Propriedades do modelo de dados de formulário associado
    * Quaisquer variáveis que você tenha criado
@@ -169,15 +169,15 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
    >
    >A propriedade Collection não é compatível com a criação de regras para condicionalizar e exibir texto.
 
-1. Selecione o operador apropriado para avaliar a regra, como É igual a, Contém e Começa com.
+1. Selecione o operador apropriado para avaliar a regra, como É igual a, Contém e Start com.
 
    ![ruleeditorfdm-1](assets/ruleeditorfdm-1.png)
 
 1. Insira a expressão de avaliação, o valor, a propriedade do modelo de dados ou a variável.
 
-   ![Regra para exibir o texto selecionado se o local do destinatário for US de acordo com os dados de origem do FDM](assets/ruleeditorfdm-1-1.png)
+   ![Regra para exibir o texto selecionado se o local do recipient for US de acordo com os dados de origem do FDM](assets/ruleeditorfdm-1-1.png)
 
-   Regra para exibir o texto selecionado se o local do destinatário for US de acordo com os dados de origem do FDM
+   Regra para exibir o texto selecionado se o local do recipient for US de acordo com os dados de origem do FDM
 
    * Ao criar ou editar uma regra, você também pode tocar em ![icon_resize](assets/icon_resize.png) (Redimensionar) para expandir a caixa de diálogo Criar regra/Editar regra. A caixa de diálogo expandida e em janela cheia permite arrastar e soltar propriedades e variáveis do modelo de dados de formulário para criar regras. Toque em Redimensionar novamente para voltar à caixa de diálogo Criar regra.
    * Você também pode criar várias condições em uma regra.
@@ -185,7 +185,7 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 
 1. Toque em **[!UICONTROL Concluído]**.
 
-   A regra é aplicada. O texto ou conteúdo ao qual a regra é aplicada é realçado em verde. Quando você passa o mouse sobre a alça esquerda do realce, a regra aplicada é exibida.
+   A regra é aplicada. O texto ou o conteúdo ao qual a regra é aplicada é realçado em verde. Quando você passa o mouse sobre a alça esquerda do realce, a regra aplicada é exibida.
 
    ![appliedruletext](assets/appliedruletext.png)
 
@@ -216,9 +216,9 @@ Para realçar\enfatizar partes de texto em um fragmento de documento editável, 
 
 ![textbackground Colorido-1](assets/textbackgroundcolorapplied-1.png)
 
-Você pode tocar diretamente em uma cor básica **[A]** presente na paleta Cores básicas ou tocar em **Selecionar** depois de usar o controle deslizante **[B]** para escolher o sombreamento apropriado da cor.
+Você pode tocar diretamente em uma cor básica `**[A]**` presente na paleta Cores básicas ou tocar em **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
 
-Opcionalmente, você também pode ir para a guia Avançado para selecionar a Matiz, a Luminosidade e a Saturação **[C]** apropriadas para criar a cor precisa e, em seguida, tocar em Selecionar **[D]** para aplicar a cor para realçar o texto.
+Opcionalmente, você também pode ir para a guia Avançado para selecionar a Matiz, a Luminosidade e a Saturação apropriadas `**[C]**` para criar a cor precisa e, em seguida, tocar em Selecionar `**[D]**` para aplicar a cor para realçar o texto.
 
 ![textbackground color-2](assets/textbackgroundcolor-2.png)
 
@@ -226,7 +226,7 @@ Opcionalmente, você também pode ir para a guia Avançado para selecionar a Mat
 
 Para reutilizar um ou mais parágrafos de texto existentes em outro aplicativo, como páginas do Microsoft® Word ou HTML, copie e cole o texto no editor de texto. A formatação do texto copiado é retida no editor de texto.
 
-É possível copiar e colar um ou mais parágrafos de texto em um fragmento de documento de texto editável. Por exemplo, você pode ter um documento do Microsoft® Word com uma lista com marcadores de comprovações de residência aceitáveis, como:
+É possível copiar e colar um ou mais parágrafos de texto em um fragmento de documento de texto editável. Por exemplo, você pode ter um documento do Microsoft® Word com uma lista com marcadores de provas de residência aceitáveis como:
 
 ![pastetextmsword-2](assets/pastetextmsword-2.png)
 
@@ -267,5 +267,5 @@ O recurso Localizar e substituir permite que você procure (e substitua) qualque
    * Se outra instância não for encontrada, a caixa de diálogo Localizar e substituir exibirá uma mensagem: Fim do módulo atingido.
    Você também pode tocar em Substituir tudo para substituir todas as correspondências de uma só vez.
 
-   Localizar e substituir também inclui uma pesquisa de expressão regular avançada. Para usar o regex na pesquisa, selecione **[!UICONTROL Reg ex]** e toque em **[!UICONTROL Localizar]** ou **[!UICONTROL Substituir]**.
+   Localizar e substituir também inclui uma pesquisa regular avançada de expressões. Para usar o regex em sua pesquisa, selecione **[!UICONTROL Reg ex]** e toque em **[!UICONTROL Localizar]** ou **[!UICONTROL Substituir]**.
 
