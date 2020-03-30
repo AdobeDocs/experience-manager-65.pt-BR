@@ -10,26 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Início rápido da API Java da Credential Service (SOAP) {#credential-service-java-api-quickstart-soap}
+# Start rápido (SOAP) da API do serviço de credenciais {#credential-service-java-api-quickstart-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço de Credenciais.
+O SOAP (Java API Quick Start) está disponível para o serviço de Credenciais.
 
-[Início rápido (modo SOAP): Importando credenciais usando a API Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Start rápido (modo SOAP): Importando credenciais usando a API Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Início rápido (modo SOAP): Excluindo credenciais usando a API Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Start rápido (modo SOAP): Excluindo credenciais usando a API Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-***Observação **: As iniciações rápidas localizadas em Programação com formulários AEM têm por base o FormsServer que está sendo implantado no JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+***Observação **: start rápidos localizados em Programação com formulários AEM são baseados no FormsServer que está sendo implantado no JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
 
 ***Observação **: Não é possível executar operações de serviço de credenciais usando serviços da Web.*
 
-## Início rápido (modo SOAP): Importando credenciais usando a API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## Start rápido (modo SOAP): Importando credenciais usando a API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
 O exemplo de código a seguir importa uma credencial com base em um arquivo chamado *cred.p12*. O valor alias usado para importar a credencial é `Secure`. (Consulte [Importação de credenciais usando a API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)do Gerenciador de confiança.)
 
@@ -95,7 +95,7 @@ O exemplo de código a seguir importa uma credencial com base em um arquivo cham
  
           //Set connection properties required to invoke AEM Forms using SOAP mode
               Properties connectionProps = new Properties();
-              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -130,7 +130,7 @@ O exemplo de código a seguir importa uma credencial com base em um arquivo cham
  
 ```
 
-## Início rápido (modo SOAP): Excluindo credenciais usando a API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Start rápido (modo SOAP): Excluindo credenciais usando a API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
 O exemplo de código a seguir exclui uma credencial com base em um valor alias *protegido*. (Consulte [Excluindo credenciais usando a API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)do Gerenciador de confiança.)
 
@@ -197,7 +197,7 @@ O exemplo de código a seguir exclui uma credencial com base em um valor alias *
  
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
