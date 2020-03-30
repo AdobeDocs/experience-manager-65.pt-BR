@@ -10,26 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Início rápido da API Java do Serviço DocConverter (SOAP) {#docconverter-service-java-api-quickstart-soap}
+# Start rápido da API Java do Serviço DocConverter (SOAP) {#docconverter-service-java-api-quickstart-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço DocConverter.
+O SOAP (Java API Quick Start) está disponível para o serviço DocConverter.
 
-[Início rápido (modo SOAP): Como determinar a conformidade do PDF/A usando a API Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Start rápido (modo SOAP): Como determinar a conformidade do PDF/A usando a API Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Início rápido (modo SOAP): Converter um documento em um documento PDF/A usando a API Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Start rápido (modo SOAP): Converter um documento em um documento PDF/A usando a API Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-***Observação **: Os Início rápido localizados em Programação com formulários AEM têm por base o Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+***Observação **: Start rápidos localizados em Programação com formulários AEM são baseados no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
 
-## Início rápido (modo SOAP): Converter um documento em um documento PDF/A usando a API Java {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
+## Start rápido (modo SOAP): Converter um documento em um documento PDF/A usando a API Java {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* em um documento PDF/A salvo como um arquivo PDF chamado *LoanArchive.pdf*. (Consulte [Convertendo documentos em documentos](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)PDF/A.)
+O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* em um documento PDF/A que é salvo como um arquivo PDF chamado *LoanArchive.pdf*. (Consulte [Converter Documentos em Documentos](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)PDF/A.)
 
 ```as3
  /*
@@ -95,7 +95,7 @@ O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* 
      try{
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -130,7 +130,7 @@ O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* 
  }
 ```
 
-## Início rápido (modo SOAP): Como determinar a conformidade do PDF/A usando a API Java {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
+## Start rápido (modo SOAP): Como determinar a conformidade do PDF/A usando a API Java {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
 O exemplo de código Java a seguir determina se o documento PDF de entrada é compatível com PDF/A. O documento PDF de entrada passado para o serviço DocConverter é denominado *LoanArchive.pdf*. Os resultados da validação são gravados em um arquivo XML chamado *ValidationResults.xml*. (Consulte Determinando [Programaticamente a conformidade](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)do PDF/A.)
 
@@ -198,7 +198,7 @@ O exemplo de código Java a seguir determina se o documento PDF de entrada é co
      try{
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
