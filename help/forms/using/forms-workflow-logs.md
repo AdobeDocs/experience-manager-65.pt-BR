@@ -1,6 +1,6 @@
 ---
-title: Logon em fluxos de trabalho do AEM Forms
-seo-title: Logon em fluxos de trabalho do AEM Forms
+title: Logon em workflows do AEM Forms
+seo-title: Logon em workflows do AEM Forms
 description: Use logs para depurar problemas de fluxo de trabalho do AEM Forms.
 seo-description: Use logs para depurar problemas de fluxo de trabalho do AEM Forms.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
@@ -10,18 +10,18 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Logon em fluxos de trabalho do AEM Forms{#logging-in-aem-forms-workflows}
+# Logon em workflows do AEM Forms{#logging-in-aem-forms-workflows}
 
-As etapas do fluxo de trabalho do Forms fornecem registros detalhados para depurar problemas relacionados ao fluxo de trabalho de forma conveniente. Ative o registro de depuração para fluxos de trabalho do AEM Forms para exibir os registros.
+As etapas do fluxo de trabalho do Forms fornecem registros detalhados para depurar problemas relacionados ao fluxo de trabalho de forma conveniente. Ative o registro de depuração para workflows do AEM Forms para visualização dos registros.
 
 Por padrão, todas as informações de registro estão disponíveis no arquivo **error.log** no diretório */crx-repository/logs/* .
 
-Os registros de depuração para fluxos de trabalho de formulários incluem:
+Os registros de depuração para workflows de formulários incluem:
 
 * Entrada de cada etapa do fluxo de trabalho. Por exemplo:\
    `[DEBUG] "Executing Invoke DDX Process step"`
@@ -54,7 +54,7 @@ Os registros de depuração para fluxos de trabalho de formulários incluem:
     [DEBUG] Locale to be used for Document of Record is <locale>
    ```
 
-O exemplo a seguir ilustra os registros da etapa Assinar documento:
+O exemplo a seguir ilustra os registros da etapa do Documento Sign:
 
 ```xml
 [DEBUG] Executing sign document step.
@@ -70,17 +70,17 @@ Use os registros para avaliar que:
 
 * Você está usando uma configuração correta do adobe sign.
 * O Adobe Sign Service sai após a criação de um contrato com êxito.
-* A etapa Assinar documento sai com uma mensagem de sucesso.
+* A etapa Assinar Documento sai com uma mensagem de sucesso.
 
-Se houver uma exceção, você poderá exibir o rastreamento completo da pilha para avaliar a causa do erro.
+Se houver uma exceção, você poderá visualização o rastreamento completo da pilha para avaliar a causa do erro.
 
-## Ativar o registro de depuração para fluxos de trabalho do AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
+## Ativar o registro de depuração para workflows do AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Execute as seguintes etapas para ativar o registro de depuração para fluxos de trabalho do AEM Forms:
+Execute as seguintes etapas para ativar o registro de depuração para workflows do AEM Forms:
 
 1. Vá para o gerenciador de configuração do console da Web do AEM em:
 
-   https://[server]:[port]/system/console/configMgr
+   https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Selecione **[!UICONTROL Sling]** > Suporte **** de registro.
 1. Toque em **[!UICONTROL Adicionar novo registrador.]**
