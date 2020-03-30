@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,7 +37,7 @@ Para fazer isso, é necessário:
 
 Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguinte:
 
-1. Vá para `https://[server]:[port]/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta apps, crie uma pasta chamada config com caminho/estrutura semelhante à pasta config, que está em libs/fd/cm/config, usando as seguintes etapas:
 
    1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor nó**:
@@ -48,11 +48,11 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **** Caminho: /libs/fd/cm/config
+      **Caminho:** /libs/fd/cm/config
 
-      **** Localização: /apps/
+      **Localização:** /apps/
 
-      **** Corresponder tipos de nós: Selecionado
+      **Corresponder tipos de nós:** Selecionado
 
       ![Nó Sobreposição](assets/2.png)
 
@@ -71,7 +71,7 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
 1. Abra o arquivo tbxeditor-config.xml em apps/fd/cm/config e faça as alterações necessárias.
 
-   1. Clique duas vezes no arquivo tbxeditor-config.xml em apps/fd/cm/config. O arquivo é aberto.
+   1. Duplo clique no arquivo tbxeditor-config.xml em apps/fd/cm/config. O arquivo é aberto.
 
       ```xml
       <editorConfig>
@@ -175,7 +175,7 @@ Para personalizar fontes editando o arquivo tbxeditor-config.xml, faça o seguin
 
 Quando você acessa uma fonte no editor de texto do Gerenciamento de correspondência, ela precisa estar presente no computador cliente que você está usando para acessar o Gerenciamento de correspondência. Para poder usar uma fonte personalizada no editor de texto, primeiro é necessário instalar a mesma fonte no computador cliente.
 
-Para obter mais informações sobre a instalação de fontes, consulte:
+Para obter mais informações sobre como instalar fontes, consulte o seguinte:
 
 * [Instalar ou desinstalar fontes no Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
 * [Noções básicas sobre Mac: Livro de fontes](https://support.apple.com/en-us/HT201749)
