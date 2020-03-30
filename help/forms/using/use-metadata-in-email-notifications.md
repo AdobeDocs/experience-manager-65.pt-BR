@@ -8,14 +8,14 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Usar metadados em uma notificação por email {#use-metadata-in-an-email-notification}
 
-Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada para o usuário definido ou para cada membro do grupo definido. Uma notificação [por](../../forms/using/use-custom-email-template-assign-task-step.md) email típica contém um link da tarefa atribuída e informações relacionadas à tarefa.
+Você pode usar a etapa Atribuir Tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada para o usuário definido ou para cada membro do grupo definido. Uma notificação [por](../../forms/using/use-custom-email-template-assign-task-step.md) email típica contém um link da tarefa atribuída e informações relacionadas à tarefa.
 
 Você pode usar metadados em um modelo de email para preencher dinamicamente as informações em uma notificação por email. Por exemplo, o valor do título, a descrição, a data de vencimento, a prioridade, o fluxo de trabalho e a última data na notificação por email a seguir são selecionados dinamicamente no tempo de execução (quando uma notificação por email é gerada).
 
@@ -155,9 +155,9 @@ Você também pode usar metadados personalizados em uma notificação por email.
 
 [O ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) é uma linguagem de script. É usado para aplicativos de servidor e scripts do cliente. Execute as seguintes etapas para usar o ECMAScript para adicionar metadados personalizados para um modelo de email:
 
-1. Faça logon no CRX DE com uma conta administrativa. O URL é https://[server]:[port]/crx/de/index.jsp
+1. Faça logon no CRX DE com uma conta administrativa. O URL é https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
-1. Navegue até /apps/fd/dashboard/scripts/metadataScripts. Crie um arquivo com extensão .ecma. Por exemplo, usermetadata.ecma
+1. Navegue até /apps/fd/painel/scripts/metadataScripts. Crie um arquivo com a extensão .ecma. Por exemplo, usermetadata.ecma
 
    Se o caminho mencionado acima não existir, crie-o.
 
@@ -177,7 +177,7 @@ Você também pode usar metadados personalizados em uma notificação por email.
 
 1. Clique em Salvar tudo. Agora, o script está disponível para seleção no modelo de fluxo de trabalho do AEM.
 
-   ![atribui-metadata](assets/assigntask-metadata.png)
+   ![atribuir metadados-tarefa](assets/assigntask-metadata.png)
 
 1. (Opcional) Especifique o título do script:
 
@@ -190,11 +190,11 @@ Você também pode usar metadados personalizados em uma notificação por email.
       | Nome | jcr:title |
       |---|---|
       | Tipo | Sequência de caracteres |
-      | Valor | Especifique o título do script. Por exemplo, metadados personalizados para o detentor da política. O valor especificado é exibido na etapa de atribuição da tarefa. |
+      | Valor | Especifique o título do script. Por exemplo, metadados personalizados para o detentor da política. O valor especificado é exibido na etapa de atribuição de tarefa. |
 
 ### Usar um pacote OSGi e uma interface Java para adicionar metadados personalizados {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-Você pode usar a interface Java WorkitemUserMetadataService para adicionar metadados personalizados para modelos de email. Você pode criar um pacote OSGi que usa a interface Java WorkitemUserMetadataService e implantá-lo no servidor de formulários AEM. Disponibiliza os metadados para seleção na etapa Atribuir tarefa.
+Você pode usar a interface Java WorkitemUserMetadataService para adicionar metadados personalizados para modelos de email. Você pode criar um pacote OSGi que usa a interface Java WorkitemUserMetadataService e implantá-lo no servidor de formulários AEM. Disponibiliza os metadados para seleção na etapa Atribuir Tarefa.
 
 Para criar um pacote OSGi com interface Java, adicione arquivos jar do SDK [do cliente do](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms e jar jar [granite](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) como dependências externas ao projeto do pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
 
@@ -252,4 +252,4 @@ Para criar um pacote OSGi com interface Java, adicione arquivos jar do SDK [do c
 
 1. Carregue o pacote em um servidor de formulários AEM. Você pode usar o Gerenciador de pacotes de AEM para importar o pacote para o servidor de formulários de AEM.
 
-Depois que o pacote é importado, você pode selecionar os metadados na etapa Atribuir tarefa e usá-los como modelo de email.
+Depois que o pacote é importado, você pode selecionar os metadados na etapa Atribuir Tarefa e usá-los como modelo de email.
