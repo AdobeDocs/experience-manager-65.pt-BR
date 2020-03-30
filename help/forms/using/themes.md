@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ## Introdução {#introduction}
 
-É possível criar e aplicar temas para estilizar um formulário adaptável ou uma comunicação interativa. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de plano de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado reflete nos componentes correspondentes. Os temas são gerenciados de forma independente sem referência a um formulário adaptável ou comunicação interativa.
+É possível criar e aplicar temas para estilizar um formulário adaptável ou uma comunicação interativa. Um tema contém detalhes de estilização para os componentes e painéis. Os estilos incluem propriedades como cores de plano de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado reflete nos componentes correspondentes. Os temas são gerenciados de forma independente sem referência a um formulário adaptável ou comunicação interativa.
 
 É possível:
 
@@ -36,12 +36,12 @@ Com o AEM Forms, você pode criar, baixar ou carregar temas. Um tema é criado c
 
 Execute as seguintes etapas para criar um tema:
 
-1. Clique em **Adobe Experience Manager**, clique em **Formulários** e em **Temas**.
+1. Clique em **Adobe Experience Manager**, **Forms** e clique em **Temas**.
 
 1. Na página Temas, clique em **Criar > Tema**.
 Um assistente para criar um tema é iniciado.
 
-1. Na guia Básico do assistente Criar tema, forneça **Título** e **Nome** do tema. Estes são campos obrigatórios.
+1. Na guia Básico do assistente para Criar tema, forneça **Título** e **Nome** do tema. Estes são campos obrigatórios.
 
 1. Na guia Avançado, você obtém dois campos:
 
@@ -49,13 +49,13 @@ Um assistente para criar um tema é iniciado.
 
    * **Categoria** Clientlib: Fornece um campo de texto para inserir o nome da categoria clientlib para o tema.
 
-1. Clique em **Criar** e, em seguida, clique em **Editar** para abrir o tema no Editor de temas ou clique em **Concluído** para retornar à página de temas.
+1. Clique em **Criar** e, em seguida, clique em **Editar** para abrir o tema no Editor de temas ou clique em **Concluído** para retornar à página temas.
 
 ### Download de um tema {#downloading-a-theme}
 
 Você pode exportar temas como um arquivo zip e usá-los em outros projetos ou instâncias do AEM. Para baixar um tema:
 
-1. Clique em **Adobe Experience Manager**, clique em **Formulários** e em **Temas**.
+1. Clique em **Adobe Experience Manager**, **Forms** e clique em **Temas**.
 
 1. Na página Temas, **selecione** um tema e clique em **Download**. Será exibida uma caixa de diálogo com os detalhes do tema.
 
@@ -65,21 +65,21 @@ Você pode exportar temas como um arquivo zip e usá-los em outros projetos ou i
 >
 >Se você fizer download de um tema que tenha um formulário adaptável associado e o formulário adaptativo associado for baseado em um modelo personalizado, faça o download do modelo personalizado. Ao carregar o tema e o formulário adaptável baixados em um servidor de formulários AEM, faça upload do modelo personalizado relacionado também.
 
-### Carregar um tema {#uploading-a-theme}
+### Fazer upload de um tema {#uploading-a-theme}
 
 Você pode usar temas criados com predefinições de estilização em seu projeto. Você pode importar pacotes de temas que outras pessoas criarem fazendo upload deles no seu projeto.
 
 Para carregar um tema:
 
-1. Clique em **Adobe Experience Manager**, clique em **Formulários** e em **Temas**.
+1. Clique em **Adobe Experience Manager**, **Forms** e clique em **Temas**.
 
 1. Na página Temas, clique em **Criar > Upload** de arquivo.
 1. No prompt Upload de arquivo, navegue e selecione um pacote de tema no computador e clique em **Carregar**.
-O tema carregado está disponível na página de temas.
+O tema carregado está disponível na página temas.
 
 ## Metadados de um tema {#metadata-of-a-theme}
 
-Lista de meta-propriedades de um tema (encontrada na página de propriedades de um tema).
+Lista de meta-propriedades de um tema (encontrado na página de propriedades de um tema).
 
 <table>
  <tbody>
@@ -159,7 +159,7 @@ Lista de meta-propriedades de um tema (encontrada na página de propriedades de 
    <td>Links</td>
    <td>
     <ul>
-     <li>Contém a seção 'Referenciado por'. Lista formulários que usam o tema.</li>
+     <li>Contém a seção 'Referenciado por'. Listas formulários que usam o tema.</li>
      <li>Como o tema não se refere a nenhum outro ativo, não há seção "Referências".</li>
     </ul> </td>
   </tr>
@@ -170,9 +170,9 @@ Lista de meta-propriedades de um tema (encontrada na página de propriedades de 
    <td>
     <ul>
      <li>O caminho do repositório definido pelo usuário em '/etc' onde os clientlibs correspondentes a esse tema são armazenados.</li>
-     <li>Valor padrão - '/etc/clientlibs/fd/topics' + caminho relativo do ativo do tema.</li>
+     <li>Valor padrão - '/etc/clientlibs/fd/temas + caminho relativo do ativo do tema.</li>
      <li>Se o local não existir, a hierarquia de pastas será gerada automaticamente.</li>
-     <li>Quando esse valor é alterado, a estrutura do nó clientlib é movida para o novo local inserido.<br /><em> <strong></strong>Observação: Se você alterar o local padrão clientlib, no repositório CRXDE atribua <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>a <code>forms-users</code> e <code>crx:replicate</code>a <code>jcr:read </code><code>fd-service</code> no novo local. Além disso, anexe outra ACL adicionando <code>deny jcr:addChildNodes</code> para <code>forms-user</code></em></li>
+     <li>Quando esse valor é alterado, a estrutura do nó clientlib é movida para o novo local inserido.<br /> <em><strong>Observação:</strong> Se você alterar o local padrão clientlib, no repositório CRXDE atribua <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>a <code>forms-users</code> e <code>crx:replicate</code>a <code>jcr:read </code><code>fd-service</code> no novo local. Além disso, anexe outra ACL adicionando <code>deny jcr:addChildNodes</code> para <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -181,10 +181,10 @@ Lista de meta-propriedades de um tema (encontrada na página de propriedades de 
    <td>Sim</td>
    <td>
     <ul>
-     <li>O nome da categoria clientlib definida pelo usuário para este tema.</li>
+     <li>O nome de categoria clientlib definido pelo usuário para este tema.</li>
      <li>Um erro será exibido se o nome já estiver sendo usado por outro tema existente.</li>
      <li>Valor padrão - calculado usando a localização do tema.</li>
-     <li>Quando esse valor é alterado, o nome da categoria é atualizado no nó clientlib correspondente. A atualização do Nome da categoria Clientlib nos arquivos jsp não é necessária porque o nome da categoria clientlib é usado por referência.</li>
+     <li>Quando esse valor é alterado, o nome da categoria é atualizado no nó clientlib correspondente. A atualização do Nome de Categoria Clientlib nos arquivos jsp não é necessária porque o nome de categoria clientlib é usado por referência.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -194,36 +194,36 @@ Lista de meta-propriedades de um tema (encontrada na página de propriedades de 
 
 O AEM Forms é enviado com o Editor de Temas. Trata-se de uma interface amigável para usuários empresariais e Web designer/desenvolvedor, que oferece funcionalidades necessárias para especificar o estilo de vários formulários adaptáveis e elementos de comunicação interativa com facilidade. Ao criar um tema, ele é armazenado como uma entidade separada, como formulários, comunicações interativas, letras, fragmentos de documento e dicionários de dados.
 
-O Editor de Temas permite personalizar estilos dos componentes estilizados em um tema. Você pode personalizar a aparência de um formulário ou comunicação interativa em um dispositivo.
+O Editor de Temas permite personalizar estilos dos componentes estilizados em um tema. Você pode personalizar a aparência de um formulário ou de uma comunicação interativa em um dispositivo.
 
 O Editor de Temas é dividido em dois painéis:
 
-* **Tela** de desenho - Aparece no lado direito. Mostra um exemplo de formulário adaptável ou comunicação interativa em que todas as alterações de estilo refletem instantaneamente. Você também pode selecionar objetos diretamente da tela para procurar estilos associados a eles e editar esses estilos. Uma régua de resolução de dispositivo na parte superior governa a Tela. Selecionar um ponto de interrupção de resolução na régua mostra a visualização do formulário de amostra ou a comunicação interativa para a respectiva resolução. A tela é discutida detalhadamente [abaixo](../../forms/using/themes.md#using-canvas).
+* **Tela** de desenho - Aparece no lado direito. Mostra um exemplo de formulário adaptável ou comunicação interativa em que todas as alterações de estilo refletem instantaneamente. Você também pode selecionar objetos diretamente da tela de desenho para procurar estilos associados a eles e editar esses estilos. Uma régua de resolução de dispositivo na parte superior governa a Tela. Selecionar um ponto de interrupção de resolução na régua mostra a pré-visualização do formulário de amostra ou a comunicação interativa para a respectiva resolução. A tela é discutida detalhadamente [abaixo](../../forms/using/themes.md#using-canvas).
 
 * **Barra lateral**- Aparece no lado esquerdo. Ele tem os seguintes itens:
 
-   * **** Seletor: Mostra o componente selecionado para estilização e suas propriedades que podem ser estilizadas. O seletor representa todos os componentes de um tipo. Se você selecionar um componente de caixa de texto em um tema para estilização, todas as caixas de texto em seu formulário ou comunicação interativa herdarão o estilo. Os seletores permitem selecionar um componente genérico ou um componente específico para estilização. Por exemplo, um componente de campo é um componente genérico e uma caixa de texto é um componente específico.
+   * **Seletor:** Mostra o componente selecionado para estilização e suas propriedades que podem ser estilizadas. O seletor representa todos os componentes de um tipo. Se você selecionar um componente de caixa de texto em um tema para estilização, todas as caixas de texto em seu formulário ou comunicação interativa herdarão o estilo. Os seletores permitem selecionar um componente genérico ou um componente específico para estilização. Por exemplo, um componente de campo é um componente genérico e uma caixa de texto é um componente específico.
 
-      ****Componente genérico de estilo:
+      **Componente genérico de estilo:**
 Um campo pode ser um campo de caixa numérico, como idade, ou um campo de caixa de texto, como endereço.
 Ao criar um estilo para um campo, todos os campos, como idade, nome e endereço, têm o estilo.
 
       **Componente**específico de estilo:
 Um componente específico afeta objetos da categoria específica. Quando você estimula o componente de caixa numérica no tema, somente o objeto de caixa numérica na herda o estilo.
 
-      Por exemplo, um campo de caixa de texto, como endereço, é maior e um campo de caixa numérica, como idade, é menor em comprimento. É possível selecionar um campo de caixa numérico, reduzir seu comprimento e aplicar ao formulário. A largura de todos os campos de caixa numérica é reduzida no formulário.
+      Por exemplo, um campo de caixa de texto, como endereço, é maior e um campo de caixa numérica, como idade, é menor em comprimento. É possível selecionar um campo de caixa numérico, reduzir seu comprimento e aplicar ao formulário. A largura de todos os campos de caixa numérica é reduzida em seu formulário.
 
       Ao personalizar todos os componentes do campo com uma cor de plano de fundo específica, todos os campos, como idade, nome e endereço, herdam a cor de plano de fundo. Quando você seleciona uma caixa numérica, como idade, e reduz sua largura, largura de todas as caixas numéricas, como idade, o número de pessoas em uma família é reduzido. A largura das caixas de texto não é alterada.
 
-   * **** Estado: Permite personalizar estilos de um objeto em um estado específico. Por exemplo, você pode especificar a aparência de um objeto quando ele está no padrão, foco, desativado, focalizado ou no estado de erro.
-   * **** Categorias de propriedade: As propriedades de estilo são divididas em várias categorias. Por exemplo, Dimensão e posição, Texto, Plano de fundo, Borda e Efeitos. Em cada categoria, você fornece informações de estilização. Por exemplo, em Plano de fundo, é possível fornecer Cor do plano de fundo e Imagem e gradiente.
+   * **Estado:** Permite personalizar estilos de um objeto em um estado específico. Por exemplo, você pode especificar a aparência de um objeto quando ele está no padrão, foco, desativado, focalizado ou no estado de erro.
+   * **Categorias de propriedades:** As propriedades de estilo são divididas em várias categorias. Por exemplo, Dimensão e posição, Texto, Plano de fundo, Borda e Efeitos. Em cada categoria, você fornece informações de estilização. Por exemplo, em Plano de fundo, é possível fornecer Cor do plano de fundo e Imagem e gradiente.
 
-   * **** Avançado: Permite adicionar CSS personalizado a um objeto, que substitui as propriedades que os controles visuais definem se há uma sobreposição.
+   * **Avançado:** Permite adicionar CSS personalizado a um objeto, que substitui as propriedades que os controles visuais definem se há uma sobreposição.
 
-   * **Exibir CSS**: Permite exibir o CSS do componente selecionado
-   Além disso, na barra lateral, na parte inferior há uma seta. Ao clicar na seta, você obtém mais duas opções: **Simule o sucesso** e **simule o erro.** Essas opções, juntamente com as opções descritas acima, são discutidas em detalhes [abaixo](../../forms/using/themes.md#using-rail).
+   * **CSS** de Visualização: Permite que você visualização o CSS do componente selecionado
+   Além disso, na barra lateral, na parte inferior há uma seta. Ao clicar na seta, você obtém mais duas opções: **Simule o sucesso** e **simule o erro.** Essas opções, juntamente com as opções descritas acima, são discutidas detalhadamente [abaixo](../../forms/using/themes.md#using-rail).
 
-[ Editor de ![temas com Painel e Tela realçada.](assets/themes.png)](assets/themes-1.png)**** **A. Barra lateral** B. Tela
+[ Editor de ![temas com Painel e Tela realçada.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Tela
 
 ### Componentes de estilo {#styling-components}
 
@@ -237,11 +237,11 @@ Clicar no botão editar em um componente na barra lateral seleciona o componente
 
 Determinados componentes, como caixa de texto, caixa numérica, botão de opção e caixa de seleção, são classificados em componentes genéricos, como Campo. Por exemplo, você deseja personalizar o estilo de botões de opção. Para selecionar botões de opção para estilização, selecione **Campo > Widget > Botão** de opção.
 
-Clique em **EXPANDIR TUDO** na barra lateral para exibir, selecionar e criar o estilo de componentes categorizados que não estão visíveis no início.
+Clique em **EXPANDIR TUDO** na barra lateral para visualização, selecionar e estilo de componentes categorizados que não estão visíveis no início.
 
 ### Layouts de painel de estilo {#styling-panel-layouts-br}
 
-Temas no AEM Forms oferecem suporte ao estilo de elementos no layout de painéis em seus formulários e comunicações interativas. O estilo de elementos em layouts predefinidos e layouts personalizados é compatível.
+Temas no AEM Forms suportam estilos de elementos no layout de painéis em seus formulários e comunicações interativas. O estilo de elementos em layouts predefinidos e layouts personalizados é compatível.
 
 Os painéis predefinidos incluem:
 
@@ -266,11 +266,11 @@ O estilo de layouts personalizados do Editor de Temas envolve:
 
 Os layouts para desktop e dispositivos móveis podem ter estilos levemente diferentes. Para dispositivos móveis, tablets e telefones compartilham layouts semelhantes, exceto tamanhos de componentes.
 
-Use os pontos de interrupção do Editor de Temas para definir estilos alternativos para tamanhos de tela diferentes. Você pode selecionar um dispositivo ou uma resolução base na qual você começa a criar o tema, e as variações de estilo para outras resoluções são geradas automaticamente. Você pode modificar explicitamente o estilo de todas as resoluções.
+Use os pontos de interrupção do Editor de Temas para definir estilos alternativos para tamanhos de tela diferentes. Você pode selecionar um dispositivo ou uma resolução base na qual start criar o tema, e as variações de estilo para outras resoluções são geradas automaticamente. Você pode modificar explicitamente o estilo de todas as resoluções.
 
 >[!NOTE]
 >
->O tema é criado primeiro usando um formulário ou uma comunicação interativa e, em seguida, aplicado em diferentes formulários ou comunicações interativas. Os pontos de interrupção usados na criação de temas podem ser diferentes do formulário ou da comunicação interativa em que o tema é aplicado. As consultas de mídia CSS são baseadas no formulário ou na comunicação interativa usada na criação de temas, e não no formulário ou na comunicação interativa em que o tema é aplicado.
+>O tema é criado primeiro usando um formulário ou uma comunicação interativa e, em seguida, aplicado em diferentes formulários ou comunicações interativas. Os pontos de interrupção usados na criação de temas podem ser diferentes do formulário ou da comunicação interativa em que o tema é aplicado. Os query de mídia CSS são baseados no formulário ou na comunicação interativa usada na criação de temas, e não no formulário ou na comunicação interativa na qual o tema é aplicado.
 
 ### Alterações de contexto de propriedades de estilo na barra lateral ao selecionar objetos {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -278,17 +278,17 @@ Quando você seleciona um componente na Tela de desenho, suas propriedades de es
 
 ### Estilos usados recentemente no Editor de Temas {#recently-used-styles-in-theme-editor}
 
-O editor de temas armazena em cache até 10 estilos aplicados a um componente. Você pode usar os estilos em cache com outro componente de um tema. Estilos usados recentemente estão disponíveis logo abaixo do componente selecionado na barra lateral como uma caixa de listagem. Inicialmente, a lista de estilos usados recentemente está vazia.
+O editor de temas armazena em cache até 10 estilos aplicados a um componente. Você pode usar os estilos em cache com outro componente de um tema. Estilos usados recentemente estão disponíveis logo abaixo do componente selecionado na barra lateral como uma caixa de lista. Inicialmente, a lista de estilos usados recentemente está vazia.
 
 ![biblioteca de ativos](assets/asset-library.png)
 
-À medida que você estimula um componente, os estilos são armazenados em cache e listados na caixa de listagem. Neste exemplo, o rótulo da caixa de texto tem o estilo de alterar o tamanho e a cor da fonte. Você pode seguir etapas semelhantes para escolher uma imagem ou alterar as cores para estilizar um componente. Observe como o estilo é armazenado em cache e listado na caixa de listagem quando o estilo do rótulo do campo é alterado.
+À medida que você estimula um componente, os estilos são armazenados em cache e listados na caixa lista. Neste exemplo, o rótulo da caixa de texto tem o estilo de alterar o tamanho e a cor da fonte. Você pode seguir etapas semelhantes para escolher uma imagem ou alterar as cores para estilizar um componente. Observe como o estilo é armazenado em cache e listado na caixa lista quando o estilo do rótulo do campo é alterado.
 
 ![Estilo de fonte em cache para um componente disponível para outro](assets/font-style-cached.png)
 
 Neste exemplo, o estilo do rótulo do campo é alterado e quando a opção Descrição do painel responsivo é selecionada para estilo, uma entrada de lista é adicionada à biblioteca de ativos. A entrada na biblioteca de ativos pode ser usada para alterar o estilo da Descrição do painel responsivo.
 
-Quando um estilo é adicionado na biblioteca de ativos, ele fica disponível para outros temas e no modo [de](../../forms/using/inline-style-adaptive-forms.md) estilo do editor de formulários ou da interface do editor de comunicações interativa. Da mesma forma, quando você usa o modo de estilo do editor de formulários ou a interface do editor de comunicação interativa para criar o estilo de um componente, o estilo é armazenado em cache e está disponível em temas.
+Quando um estilo é adicionado na biblioteca de ativos, ele fica disponível para outros temas e no modo [de](../../forms/using/inline-style-adaptive-forms.md) estilo do editor de formulários ou da interface do editor de comunicações interativa. Da mesma forma, quando você usa o modo de estilo do editor de formulário ou da interface do editor de comunicação interativa para criar o estilo de um componente, o estilo é armazenado em cache e está disponível em temas.
 
 O botão mais na biblioteca de ativos permite salvar permanentemente o estilo com um nome que você fornece. O botão mais salva o estilo mesmo se você não clicar no botão Salvar na barra lateral para aplicar o estilo a um componente. O botão mais para salvar um estilo para uso posterior não está disponível no modo de estilo.
 
@@ -301,9 +301,9 @@ Quando você fornece um nome personalizado para um estilo, o estilo é vinculado
 
    ![Excluir o estilo salvo](assets/manage-styles.png)
 
-### Visualização ao vivo, salvamento e descarte as alterações {#live-preview-save-and-discard-changes}
+### pré-visualização ao vivo, salvar e descartar alterações {#live-preview-save-and-discard-changes}
 
-As modificações feitas no estilo são refletidas instantaneamente no formulário ou na comunicação interativa carregada na tela de desenho. A visualização ao vivo permite definir e visualizar interativamente o impacto do estilo. Quando você altera o estilo de um componente, o botão **Concluído** é ativado na barra lateral. Para reter as alterações, use o botão **Concluído** .
+As modificações feitas no estilo são refletidas instantaneamente no formulário ou na comunicação interativa carregada na tela de desenho. A pré-visualização ao vivo permite que você defina e veja interativamente o impacto do estilo. Quando você altera o estilo de um componente, o botão **Concluído** é ativado na barra lateral. Para reter as alterações, use o botão **Concluído** .
 
 >[!NOTE]
 >
@@ -311,7 +311,7 @@ As modificações feitas no estilo são refletidas instantaneamente no formulár
 
 ### Tema com outro formulário adaptável ou comunicação interativa {#theme-with-another-adaptive-form-or-interactive-communication}
 
-Quando você cria um tema, ele é criado com um formulário enviado com o Editor de Temas. Você fornece estilização para componentes neste formulário. Em vez do formulário enviado com o Editor de Temas, você pode selecionar um formulário ou uma comunicação interativa de sua escolha para fornecer estilos e visualizar seus resultados.
+Quando você cria um tema, ele é criado com um formulário enviado com o Editor de Temas. Você fornece estilização para componentes neste formulário. Em vez do formulário enviado com o Editor de Temas, você pode selecionar um formulário ou uma comunicação interativa de sua escolha para fornecer estilos e pré-visualização aos resultados.
 
 Para substituir o formulário atual ou a comunicação interativa na Tela do Editor de Temas:
 
@@ -325,34 +325,34 @@ Você pode desfazer ou refazer as alterações indesejadas que ocorrem acidental
 
 ![Refazer e desfazer ações](assets/redo_undo_new.png)
 
-Botões Desfazer/Refazer na tela
+Botões Desfazer/Refazer na Tela de desenho
 
-Os botões Refazer/Desfazer aparecem quando você estimula um componente no Editor de temas.
+Os botões Refazer/Desfazer aparecem quando você estimula um componente no Editor de Temas.
 
 ## Uso do Editor de Temas {#using-the-theme-editor}
 
-O Editor de Temas permite que você edite um tema criado ou carregado. Navegue até **Formulários e documentos > Temas**, selecione um tema e abra-o. O tema é aberto no Editor de Temas.
+O Editor de Temas permite que você edite um tema criado ou carregado. Navegue até **Formulários e Documentos > Temas**, selecione um tema e abra-o. O tema é aberto no Editor de Temas.
 
 Como discutido acima, o Editor de Temas tem dois painéis: Barra lateral e Tela de desenho.
 ![editor de temas](assets/theme-editor.png)
 
 Personalizar o estilo de estado de sucesso do componente de Widget de caixa de texto no Editor de temas. O componente é selecionado na Tela de desenho e seu estado é selecionado na barra lateral. As opções de estilo disponíveis na barra lateral são usadas para personalizar a aparência de um componente.
 
-### Uso da tela {#using-canvas}
+### Uso da tela de desenho {#using-canvas}
 
-O tema é criado usando o formulário pronto para uso ou usando um formulário ou uma comunicação interativa de sua escolha. A tela de desenho mostra a visualização do formulário ou a comunicação interativa usada para criar o tema com personalizações especificadas no tema. A régua acima do formulário é usada para determinar o layout de acordo com o tamanho da exibição do dispositivo.
+O tema é criado usando o formulário pronto para uso ou usando um formulário ou uma comunicação interativa de sua escolha. A Tela de desenho mostra a pré-visualização do formulário ou a comunicação interativa usada para criar o tema com personalizações especificadas no tema. A régua acima do formulário é usada para determinar o layout de acordo com o tamanho da exibição do dispositivo.
 
 Na barra de ferramentas Tela de desenho, você verá:
 
 * **Alternar painel** lateral ![alternar painel](assets/toggle-side-panel.png): Permite mostrar ou ocultar a barra lateral.
 * **Opções** do tema Opções do ![tema](assets/theme-options.png): Fornece três opções
 
-   * Configurar: Fornece opções para selecionar o formulário de visualização ou a comunicação interativa, a clientlib base e a configuração do typekit.
-   * Exibir CSS do tema: Gera CSS para o tema selecionado.
+   * Configurar: Fornece opções para selecionar o formulário de pré-visualização ou a comunicação interativa, a clientlib base e a configuração do typekit.
+   * Tema de Visualização CSS: Gera CSS para o tema selecionado.
    * Gerenciar estilos: Fornece opções para gerenciar estilos de texto e imagem
    * Ajuda: Executa um tour guiado por imagem do Editor de Temas.
 
-* **Régua** de emulador ![](assets/ruler.png): Emula a aparência do seu tema para tamanhos de exibição diferentes. Um tamanho de exibição é tratado como um ponto de interrupção no emulador. Você pode selecionar um ponto de interrupção e especificar um estilo para ele. Por exemplo, Desktop e Tablet são dois pontos de interrupção. Você pode especificar estilos diferentes para cada ponto de interrupção.
+* **Emulador** ![de régua](assets/ruler.png): Emula a aparência do seu tema para tamanhos de exibição diferentes. Um tamanho de exibição é tratado como um ponto de interrupção no emulador. Você pode selecionar um ponto de interrupção e especificar um estilo para ele. Por exemplo, Desktop e Tablet são dois pontos de interrupção. Você pode especificar estilos diferentes para cada ponto de interrupção.
 
 Ao selecionar um componente na Tela de desenho, você verá a barra de ferramentas do componente na parte superior. A barra de ferramentas do componente permite selecionar componentes ou alternar para componentes genéricos. Por exemplo, você seleciona uma caixa de texto numérico em um painel. Você verá as seguintes opções na barra de ferramentas do componente:
 
@@ -382,7 +382,7 @@ Abaixo estão as opções exibidas na barra lateral ao selecionar um componente:
 
 #### Estado {#state}
 
-Um estado é um indicador da interação do usuário com um componente. Por exemplo, quando um usuário digita dados incorretos em uma caixa de texto, o estado da caixa de texto muda para um estado de erro. O editor de temas permite que você especifique o estilo para um estado específico.
+Um estado é um indicador da interação do usuário com um componente. Por exemplo, quando um usuário digita dados errôneos em uma caixa de texto, o estado da caixa de texto muda para um estado de erro. O editor de temas permite que você especifique o estilo para um estado específico.
 
 As opções para personalizar estilos de estado variam para componentes diferentes.
 
@@ -392,7 +392,7 @@ As opções para personalizar estilos de estado variam para componentes diferent
  <tbody>
   <tr>
    <td><strong>Propriedade</strong></td>
-   <td><strong>Use</strong></td>
+   <td><strong>Uso</strong></td>
   </tr>
   <tr>
    <td><p>Dimensões e Posição</p> </td>
@@ -415,7 +415,7 @@ As opções para personalizar estilos de estado variam para componentes diferent
    <td><p>Permite adicionar efeitos especiais aos componentes, como opacidade, modo de mesclagem e sombras. </p> </td>
   </tr>
   <tr>
-   <td><p>Avançado</p> </td>
+   <td><p>Avançado  </p> </td>
    <td><p>Permite adicionar:</p>
     <ul>
      <li>Propriedades para <code>::before</code> e <code>::after</code> pseudo-elementos para adicionar conteúdo depois ou antes do conteúdo padrão no seletor, e estilizá-lo.<br /> Consulte Pseudo-elementos <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">do</a>CSS.</li>
@@ -429,7 +429,7 @@ As opções para personalizar estilos de estado variam para componentes diferent
 
 As opções Simular erro e sucesso estão disponíveis na parte inferior da barra lateral. É possível vê-los usando uma seta de mostrar/ocultar visível na parte inferior da barra lateral. Usando o Editor de Temas, você pode criar um estilo para vários estados de um componente.
 
-Por exemplo, você adiciona um campo numérico no formulário e especifica seu estilo no editor de temas. Quando um usuário digita um valor alfanumérico no campo, você deseja alterar a cor de fundo da caixa de texto. Selecione o campo numérico no tema e use a opção de estado na barra lateral. Selecione o estado Erro na barra lateral e altere a cor do plano de fundo para vermelho. Para visualizar o comportamento, use a opção Simular erro disponível na barra lateral. As opções Simular erro e sucesso são descritas em detalhes abaixo:
+Por exemplo, você adiciona um campo numérico em seu formulário e especifica seu estilo no editor de temas. Quando um usuário digita um valor alfanumérico no campo, você deseja alterar a cor de fundo da caixa de texto. Selecione o campo numérico no tema e use a opção de estado na barra lateral. Selecione o estado Erro na barra lateral e altere a cor do plano de fundo para vermelho. Para pré-visualização do comportamento, use a opção Simular erro disponível na barra lateral. As opções Simular erro e sucesso são descritas em detalhes abaixo:
 
 * **Simular sucesso**:
 Permite ver a aparência de um componente se você especificar seu estilo para o estado de sucesso. Por exemplo, em um formulário, os clientes definem a senha. Os usuários podem definir a senha de acordo com as diretrizes fornecidas. Quando um usuário digita uma senha seguindo todas as orientações fornecidas, a caixa de texto fica verde. Quando a caixa de texto fica verde, ela está em estado de sucesso. Você pode especificar o estilo para um componente em estado de sucesso e simular sua aparência usando a opção Simular sucesso.
@@ -457,7 +457,7 @@ Em vez de selecionar Widget **de caixa** numérica, selecione Widget **de** camp
 
 ### Campos de estilo para um determinado estado {#styling-fields-given-state}
 
-Com a barra de ferramentas do componente, também é possível especificar o estilo dos componentes para seus diferentes estados. Por exemplo, se um componente estiver desativado, ele estará em um estado desativado. Os estados comumente usados de um componente que você pode estilizar no editor de temas são: Padrão, Foco, Desativado, Erro, Sucesso e Passe o mouse. Você pode selecionar um componente na Tela de desenho e usar a opção Estado na barra lateral para personalizar sua aparência.
+Com a barra de ferramentas do componente, também é possível especificar o estilo dos componentes para seus diferentes estados. Por exemplo, se um componente estiver desativado, ele estará em um estado desativado. Os estados comumente usados de um componente que você pode estilizar no editor de temas são: Padrão, Foco, Desativado, Erro, Êxito e Passe o mouse. Você pode selecionar um componente na Tela de desenho e usar a opção Estado na barra lateral para personalizar sua aparência.
 
 Execute as seguintes etapas para personalizar o estilo de um componente em um estado específico:
 
@@ -469,18 +469,18 @@ A barra lateral mostra opções para personalizar o estilo do componente.
 
 Quando você personaliza o estilo de um componente depois de especificar seu estado, a personalização aparece para o componente somente para o estado especificado. Por exemplo, se você personaliza o estilo do componente quando o estado de passagem é selecionado. A personalização é exibida para o componente quando você move o ponteiro sobre o componente no formulário renderizado ou na comunicação interativa à qual você aplica o tema.
 
-Para simular o comportamento de estados diferentes de erro e sucesso, use o modo de visualização. Para usar o modo de visualização, clique em **Visualizar** na barra de ferramentas da página.
+Para simular o comportamento de estados diferentes de erro e sucesso, use o modo de Pré-visualização. Para usar o modo de Pré-visualização, clique em **Pré-visualização** na barra de ferramentas da página.
 
 ### Layouts de estilo para telas menores {#styling-layouts-for-smaller-displays}
 
-Use a régua na Tela de desenho para selecionar pontos de interrupção para dispositivos com telas menores. Clique na ![régua](assets/ruler.png) do emulador na Tela para exibir a régua e os pontos de interrupção. Os pontos de interrupção permitem que você visualize um formulário ou uma comunicação interativa para tamanhos de exibição pertencentes a dispositivos diferentes, como telefones e tablets. Vários tamanhos de exibição são suportados no Editor de Temas.
+Use a régua na Tela de desenho para selecionar pontos de interrupção para dispositivos com telas menores. Clique na ![régua](assets/ruler.png) do emulador em Tela para visualização da régua e dos pontos de interrupção. Os pontos de interrupção permitem que você pré-visualização um formulário ou uma comunicação interativa para tamanhos de exibição pertencentes a diferentes dispositivos, como telefones e tablets. Vários tamanhos de exibição são suportados no Editor de Temas.
 
 Para estilizar componentes para diferentes pontos de interrupção:
 
 1. Na tela de desenho, selecione um ponto de interrupção acima da régua.
 Um ponto de interrupção representa um dispositivo móvel e seu tamanho de exibição.
 1. Use a barra lateral para personalizar o estilo de componentes de formulário ou comunicação interativa no tema para o tamanho de exibição selecionado.
-1. Verifique se a personalização foi salva.
+1. Certifique-se de que a personalização esteja salva.
 
 É possível criar um estilo de componentes de formulário ou comunicação interativa para vários dispositivos. Os componentes de forma e comunicação interativa para desktops e dispositivos móveis podem ter estilos completamente diferentes.
 
@@ -510,7 +510,7 @@ Execute as seguintes etapas para configurar um tema para usar a configuração T
 
 Você pode usar o serviço de configuração de tema para adicionar mais fontes ao editor de temas. Execute as seguintes etapas para adicionar fontes:
 
-1. Faça logon no console da Web do AEM com privilégios administrativos. O URL do console da Web do AEM é `https://[server]:[port]/system/console/configMgr`.
+1. Faça logon no console da Web do AEM com privilégios administrativos. O URL do console da Web do AEM é `https://'[server]:[port]'/system/console/configMgr`.
 1. Abra o Serviço **de configuração do tema de formulário** adaptável.
 
    ![configuração do tema](assets/theme-config.png)
@@ -523,21 +523,21 @@ Você pode usar o botão + para adicionar uma fonte. Quando você adiciona uma f
 
 ![Nova fonte listada no editor de temas](assets/theme-font.png)
 
-Além da opção de configuração de tema, também é possível adicionar a fonte do editor de temas. Digite a fonte que deseja usar no campo família de fontes na barra lateral e pressione a tecla de retorno no teclado.
+Além da opção de configuração de tema, também é possível adicionar a fonte do próprio editor de temas. Digite a fonte que deseja usar no campo família de fontes na barra lateral e pressione a tecla de retorno no teclado.
 
 ![Digitação e seleção de fonte no editor de temas](assets/font-selection.png)
 
-Quando você seleciona uma fonte, ela é adicionada sob a lista de famílias de fontes. Você pode usar a opção Máscara no editor de temas para desativar ou ativar as fontes listadas.
+Quando uma fonte é selecionada, ela é adicionada sob a lista da família de fontes. Você pode usar a opção Máscara no editor de temas para desativar ou ativar as fontes listadas.
 
 ![multifontes](assets/multi-fonts.jpg)
 
 Você pode ver a alteração da fonte do componente.
 
-O campo Família de fontes suporta várias fontes. Quando você digita uma fonte, o navegador a procura e a aplica ao componente selecionado. Se o navegador não conseguir localizar uma fonte, ele procurará uma fonte próxima a ela na família. Você pode começar digitando a fonte específica que está procurando. Se você não encontrar a fonte que deseja usar, digite uma fonte genérica na família e use-a.
+O campo Família de fontes suporta várias fontes. Quando você digita uma fonte, o navegador a procura e a aplica ao componente selecionado. Se o navegador não conseguir localizar uma fonte, ele procurará uma fonte próxima a ela na família. Você pode start ao digitar a fonte específica que está procurando. Se você não encontrar a fonte que deseja usar, digite uma fonte genérica na família e use-a.
 
 #### Estilos de máscara aplicados no editor de temas {#mask-styles-applied-in-theme-editor}
 
-É possível mascarar estilos aplicados em um tema. Na barra lateral do editor de temas, você pode usar o ![toggle_](assets/toggle_eye.png)eyeicon para desativar um estilo aplicado. Por exemplo, se você alterar as dimensões de um componente em um formulário ou comunicação interativa, poderá usar o botão de máscara à esquerda de uma propriedade para desativá-la. Quando você salva um tema, as opções de máscara selecionadas são mantidas.
+É possível mascarar estilos aplicados em um tema. Na barra lateral do editor de temas, você pode usar o ![toggle_](assets/toggle_eye.png)eyeicon para desativar um estilo aplicado. Por exemplo, se você mudar dimensão um componente em um formulário ou comunicação interativa, é possível usar o botão de máscara à esquerda de uma propriedade para desativá-la. Quando você salva um tema, as opções de máscara selecionadas são mantidas.
 
 ![Opção de máscara disponível na barra lateral do editor de temas](assets/mask-styles.png)
 
@@ -550,7 +550,7 @@ O exemplo abaixo mostra estilos mascarados e não mascarados em um tema.
 Para aplicar um tema a um formulário adaptável:
 
 1. Abra o formulário no modo de edição. Para abrir um formulário no modo de edição, selecione-o e clique em **Abrir**.
-1. No modo de edição, selecione um componente, clique em nível ![de](assets/field-level.png) campo > Contêiner **de formulário** adaptável e, em seguida, clique em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente, clique em nível ![de](assets/field-level.png) campo > Container **de formulário** adaptável e, em seguida, clique em ![cmppr](assets/cmppr.png).
 
    É possível editar as propriedades do formulário na barra lateral.
 
@@ -560,7 +560,7 @@ Para aplicar um tema a um formulário adaptável:
 Para aplicar um tema a uma comunicação interativa:
 
 1. Abra sua comunicação interativa no modo de edição. Para abrir uma comunicação interativa no modo de edição, selecione um formulário e clique em **Abrir**.
-1. No modo de edição, selecione um componente, clique em nível ![de](assets/field-level.png) campo > Contêiner **** de documento e, em seguida, clique em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente, clique em nível ![de](assets/field-level.png) campo > Container **do** Documento e, em seguida, clique em ![cmppr](assets/cmppr.png).
 
    É possível editar as propriedades do formulário na barra lateral.
 
@@ -580,7 +580,7 @@ A `themeOverride` opção permite fornecer um caminho para um tema. Altera o tem
 
 ## Obter aparência específica usando Temas {#specific-af-appearance}
 
-Com o AEM Forms, juntamente com o tema de tela predefinido, há muitos outros temas. Se você quiser criar seu formulário ou comunicação interativa usando outros temas, juntamente com alterações adicionais, copie o tema da pasta Biblioteca de Temas. Cole os temas copiados fora da pasta Biblioteca de Temas e edite o tema copiado de acordo com as alterações desejadas.
+Com o AEM Forms, juntamente com o tema de tela predefinido, há muitos outros temas. Se quiser projetar seu formulário ou comunicação interativa usando outros temas, juntamente com alterações adicionais, copie o tema da pasta Biblioteca de Temas. Cole os temas copiados fora da pasta Biblioteca de Temas e edite o tema copiado de acordo com as alterações desejadas.
 
 Para copiar um tema, execute as seguintes etapas:
 
@@ -594,19 +594,19 @@ Depois de personalizar o tema, aplique-o ao formulário ou à comunicação inte
 
 >[!NOTE]
 >
->Não modifique os temas disponíveis na pasta Biblioteca de Temas. Esta pasta contém temas do sistema. Qualquer alteração feita nesses temas será substituída na instalação de uma versão mais recente ou de uma correção de AEM Forms.
+>Não modifique os temas disponíveis na pasta Biblioteca de Temas. Esta pasta contém temas do sistema. Todas as alterações feitas nesses temas são substituídas pela instalação de uma versão mais recente ou correção de AEM Forms.
 
 ## Impacto em outros casos de uso de formulários adaptáveis {#impact-on-other-adaptive-form-use-cases}
 
-* **** Publicar/desfazer a publicação de um formulário: Ao publicar um formulário, o tema aplicado também é publicado (se ainda não estiver publicado)
-* **** Importar/exportar um formulário: Ao importar ou exportar um formulário, seu tema associado também é automaticamente importado ou exportado.
-* **** Referências de um formulário: A seção Referências em referências de formulário contém uma entrada extra para o tema.
-* **** Hora da última modificação de um formulário: Atualizado quando o tema associado é alterado.
-* **** Teste A/B: É possível aplicar um tema diferente a duas versões do formulário em testes A/B. As informações dos dois temas são armazenadas individualmente nos dois contêineres de guia.
+* **Publicar/desfazer a publicação de um formulário:** Ao publicar um formulário, o tema aplicado também é publicado (se ainda não estiver publicado)
+* **Importar/exportar um formulário:** Ao importar ou exportar um formulário, seu tema associado também é automaticamente importado ou exportado.
+* **Referências de um formulário:** A seção Referências em referências de formulário contém uma entrada extra para o tema.
+* **Hora da última modificação de um formulário:** Atualizado quando o tema associado é alterado.
+* **Teste A/B:** É possível aplicar um tema diferente a duas versões do formulário em testes A/B. As informações dos dois temas são armazenadas individualmente nos dois container-guia.
 
 ## Sequência de geração de CSS {#css-generation-sequence}
 
-Quando você seleciona exibir CSS, o Editor de Temas coleta todas as informações de estilização e cria um CSS. Ele coleta informações na seguinte ordem:
+Quando você seleciona visualização CSS, o Editor de Temas coleta todas as informações de estilização e cria um CSS. Ele coleta informações na seguinte ordem:
 
 1. Estilo definido na biblioteca de cliente base do tema.
 1. Estilo definido pelo usuário, especificado usando as propriedades na barra lateral.
@@ -616,16 +616,16 @@ Por exemplo, a cor de fundo de uma caixa de texto é azul na biblioteca de clien
 
 ## Estilos de depuração {#debugging-styles}
 
-Ao especificar estilos para componentes no Editor de Temas, um CSS é gerado. Quando você estimula um componente genérico, vários componentes incluídos nele também são estilizados. Por exemplo, quando você estimula um campo, a caixa de texto e o rótulo nele também têm o estilo. Quando você estimula a caixa de texto dentro do campo, ela recebe seu próprio CSS. Se você quiser depurar o CSS gerado para o campo e o componente, o Editor de Temas fornece opções que permitem a exibição do CSS.
+Ao especificar estilos para componentes no Editor de Temas, um CSS é gerado. Quando você estimula um componente genérico, vários componentes incluídos nele também são estilizados. Por exemplo, quando você estimula um campo, a caixa de texto e o rótulo nele também têm o estilo. Quando você estimula a caixa de texto dentro do campo, ela recebe seu próprio CSS. Se você quiser depurar o CSS gerado para o campo e o componente, o Editor de Temas fornece opções que permitem a visualização do CSS.
 
 Você pode ver o CSS gerado usando as seguintes opções:
 
-* **Exibir opção CSS** na barra lateral: Ao selecionar um componente no Tema, você pode ver a opção EXIBIR CSS na barra lateral. Mostra o CSS gerado, incluindo o CSS para `::before` e `::after` pseudo-elementos.
-* **Exibir a opção Tema CSS** na barra de ferramentas da tela: Na barra de ferramentas da Tela, clique em opções ![de](assets/theme-options.png) tema > **Exibir CSS** de tema. Você pode ver todo o tema CSS gerado a partir das propriedades definidas no Editor de Temas.
+* **Visualização da opção CSS** na barra lateral: Ao selecionar um componente no Tema, você pode ver a opção CSS de VISUALIZAÇÃO na barra lateral. Mostra o CSS gerado, incluindo o CSS para `::before` e `::after` pseudo-elementos.
+* **Opção CSS** do tema da Visualização na barra de ferramentas da tela: Na barra de ferramentas Tela, clique em ![opções](assets/theme-options.png) de tema > CSS **do tema de** Visualização. Você pode ver todo o tema CSS gerado a partir das propriedades definidas no Editor de Temas.
 
 ## Solução de problemas, recomendações e práticas recomendadas {#troubleshooting-recommendations-and-best-practices}
 
-* **Como evitar ativos de outro tema**
+* **Como evitar ativos de outro Tema**
 
    Ao editar um tema, você pode navegar e adicionar ativos (como imagens) de outros temas. Por exemplo, você está editando o plano de fundo de uma página. Por exemplo, ao selecionar **Página** , botão ![de](assets/edit-button.png)edição > **Plano de fundo** > **Adicionar** > **Imagem**, você verá uma caixa de diálogo que permite navegar e adicionar imagens em outro tema.
 
@@ -637,7 +637,7 @@ Você pode ver o CSS gerado usando as seguintes opções:
       A biblioteca de cliente base contém informações de estilização. Para usar informações de estilização em bibliotecas do lado do cliente em temas.
 
       1. Navegue até **Experience Manager > Formulários > Temas**.
-      1. Na página Temas, selecione um tema e clique em **Exibir propriedades**.
+      1. Na página Temas, selecione um tema e clique em Propriedades **da** Visualização.
       1. Na página Propriedades que é aberta, clique em **Avançado**.
       1. Na guia Avançado, no campo Local do Clientlib, procure e selecione a biblioteca de cliente que deseja usar.
       1. Clique em **Salvar**.
@@ -647,22 +647,22 @@ Consulte [Obtendo aparência específica usando Temas](#specific-af-appearance)
 
    * **Editor de temas:**
 
-      O Editor de Temas permite que você crie temas para criar um estilo no seu formulário ou comunicação interativa. Você pode especificar o estilo dos componentes em um tema, que permite a consistência na aparência entre vários formulários ou comunicações interativas desenvolvidas. É recomendável especificar informações de estilização em um tema e aplicar o tema a um formulário.
+      O Editor de Temas permite criar temas para criar um estilo no formulário ou para comunicação interativa. Você pode especificar o estilo dos componentes em um tema, que permite a consistência na aparência entre vários formulários ou comunicações interativas desenvolvidas. É recomendável especificar informações de estilização em um tema e aplicar o tema a um formulário.
 
    * **Estilo em linha:**
 
-      Você pode criar estilo de componentes usando o modo Estilo no editor de formulário ou de comunicação interativa multicanal ao trabalhar com um formulário. Usar o modo de estilo para alterar o estilo do componente de formulário substitui o estilo especificado no tema. Se desejar alterar o estilo de determinados componentes de um formulário específico, consulte Estilo [incorporado dos componentes](../../forms/using/inline-style-adaptive-forms.md).
+      É possível criar um estilo de componentes usando o modo Estilo no editor de formulário ou de comunicação interativa multicanal ao trabalhar com um formulário. Usar o modo de estilo para alterar o estilo do componente de formulário substitui o estilo especificado no tema. Se desejar alterar o estilo de determinados componentes de um formulário específico, consulte Estilo [incorporado dos componentes](../../forms/using/inline-style-adaptive-forms.md).
 
 
 * **Uso de bibliotecas do lado do cliente**
 
    Se quiser criar bibliotecas de clientes para importar informações de estilização, consulte [Uso de bibliotecas](/help/sites-developing/clientlibs.md)do lado do cliente. Depois de criar uma biblioteca de cliente, você pode importá-la no seu tema usando as etapas mencionadas acima.
 
-* **Alteração da largura do layout do painel de contêiner**
+* **Alteração da largura de layout do painel container**
 
-   Não é recomendável alterar a largura do layout do painel do contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
+   Não é recomendável alterar a largura de layout do painel container. Quando você especifica a largura de um painel de container, ele se torna estático e não se adapta a diferentes telas.
 
 * **Quando usar o editor de formulário ou editor de tema para trabalhar com cabeçalho e rodapé**
 
    Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilização, como estilo de fonte, plano de fundo e transparência.
-Se desejar fornecer informações como imagem de logotipo, nome da empresa no cabeçalho e informações de copyright no rodapé, use as opções do editor de formulário.
+Se desejar fornecer informações como uma imagem de logotipo, nome da empresa no cabeçalho e informações de copyright no rodapé, use as opções do editor de formulário.
