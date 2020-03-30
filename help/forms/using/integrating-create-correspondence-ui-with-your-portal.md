@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ Uma maneira de chamar o aplicativo Criar correspondência a partir de um portal 
 * o URL para os dados XML obtidos da fonte de dados desejada (usando o parâmetro cmDataUrl).
 
 Por exemplo, o portal personalizado prepararia o URL como\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, que pode ser o href de um link no portal.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, que pode ser o href de um link no portal.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Por exemplo, o portal personalizado prepararia o URL como\
 
 ## Invocação em linha baseada em dados {#inline-data-based-invocation}
 
-Outra maneira (e mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente acessar o URL em https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html, enviando os parâmetros e dados para chamar o aplicativo Criar correspondência como uma solicitação POST (ocultando-os do usuário final). Isso também significa que agora você pode passar os dados XML para o aplicativo Criar correspondência em linha (como parte da mesma solicitação, usando o parâmetro cmData), que não era possível/ideal na abordagem anterior.
+Outra maneira (e mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente acessar o URL em https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, enviando os parâmetros e dados para chamar o aplicativo Criar correspondência como uma solicitação POST (ocultando-os do usuário final). Isso também significa que agora você pode passar os dados XML para o aplicativo Criar correspondência em linha (como parte da mesma solicitação, usando o parâmetro cmData), que não era possível/ideal na abordagem anterior.
 
 ### Parâmetros para especificar a carta {#parameters-for-specifying-letter}
 
@@ -94,7 +94,7 @@ A ordem dos parâmetros na tabela especifica a preferência dos parâmetros usad
   <tr>
    <td>cmPreview<br /> </td> 
    <td>Booleano</td> 
-   <td>Verdadeiro para abrir a letra no modo de visualização<br /> </td> 
+   <td>Verdadeiro para abrir a letra no modo de pré-visualização<br /> </td> 
   </tr>
   <tr>
    <td>Aleatório</td> 
