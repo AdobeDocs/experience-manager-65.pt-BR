@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: a7ef7682df1dc627565f1cc30047ed775d2dbd13
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -554,7 +554,7 @@ Para usar a criptografia AES 256 para arquivos PDF, obtenha e instale os arquivo
 
 O serviço Assembler depende do serviço Reader Extensions, do serviço Signature, do serviço Forms e do serviço Output. Execute as seguintes etapas para verificar se os serviços necessários estão ativos e em execução:
 
-1. Faça logon no URL `https://[server]:[port]/system/console/bundles` como administrador.
+1. Faça logon no URL `https://'[server]:[port]'/system/console/bundles` como administrador.
 1. Pesquise o serviço a seguir e verifique se os serviços estão ativos e em execução:
 
 <table> 
