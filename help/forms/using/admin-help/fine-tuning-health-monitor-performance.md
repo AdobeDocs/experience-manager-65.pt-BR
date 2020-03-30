@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -69,10 +69,10 @@ A coleta de estatísticas do sistema que preenchem o Monitor de integridade afet
 
 ## Adicionar opções Java ao WebLogic {#add-java-options-to-weblogic}
 
-1. Inicie o console de administração do WebLogic digitando https://[host name]:[port]/console na linha URL de um navegador da Web.
-1. Digite o nome de usuário e a senha que você criou para o domínio do WebLogic Server e clique em Registrar em Centro de alterações e clique em Bloquear e editar.
+1. Start o console de administração WebLogic digitando https://[host name]:&#39;port&#39;/console na linha URL de um navegador da Web.
+1. Digite o nome de usuário e a senha que você criou para o domínio do WebLogic Server e clique em Registrar em Change Center (Centro de alterações) e clique em Bloquear e editar.
 1. Em Estrutura do domínio, clique em Ambiente > Servidores e, no painel direito, clique no nome do servidor gerenciado.
-1. Na tela seguinte, clique na guia Configuração > Guia Início do servidor.
+1. Na tela seguinte, clique na guia Configuração > guia Start do servidor.
 1. Na caixa Argumentos, anexe os argumentos necessários ao final do conteúdo atual. Por exemplo, adicionar - `Dadobe.healthmonitor.enabled=false` desativa o Monitor de integridade.
 1. Clique em Salvar e em Ativar alterações.
 1. Reinicie o servidor gerenciado WebLogic.
