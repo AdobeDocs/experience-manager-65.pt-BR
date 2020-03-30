@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,13 +32,13 @@ Além da abordagem padrão mencionada acima, uma implementação alternativa tam
 
 >[!NOTE]
 >
->Quando você usa a ação de envio do Portal do Forms ou habilita a opção Armazenar dados no portal de formulários em forma adaptável, os dados do formulário são armazenados no repositório AEM. Em um ambiente de produção, é recomendável não armazenar dados de formulário preliminares ou enviados no repositório do AEM. Em vez disso, é necessário integrar os rascunhos e o componente de envio a um armazenamento seguro, como o banco de dados corporativo, para armazenar rascunhos e dados de formulários enviados.
+>Quando você usa a ação de envio do Portal do Forms ou habilita a opção Armazenar dados no portal de formulários em forma adaptável, os dados do formulário são armazenados no repositório do AEM. Em um ambiente de produção, é recomendável não armazenar dados de formulário rascunho ou enviados no repositório do AEM. Em vez disso, é necessário integrar os rascunhos e o componente de envio a um armazenamento seguro como o banco de dados corporativo para armazenar rascunhos e dados de formulários enviados.
 >
->Para obter mais informações, consulte [Exemplo para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md).
+>Para obter mais informações, consulte [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md).
 
 ## Configurar serviços de envio e rascunhos do Portal do Forms {#configuring-forms-portal-drafts-and-submissions-services}
 
-Em Configuração do console da Web do AEM ( `https://[host]:[port]/system/console/configMgr`), clique para abrir Configuração **de rascunho e envio do portal de** formulários no modo de edição.
+Em Configuração do console da Web do AEM ( `https://[host]:'port'/system/console/configMgr`), clique para abrir Configuração **de rascunho e envio do portal de** formulários no modo de edição.
 
 Especifique os valores para as propriedades com base em seus requisitos, conforme descrito abaixo:
 
@@ -102,7 +102,7 @@ Os dados são enviados diretamente para a instância remota configurada
 
 Além da configuração especificada acima, forneça informações sobre a instância de processamento remoto configurada.
 
-Na Configuração do console da Web do AEM ( `https://[host]:[port]/system/console/configMgr`), clique para abrir o Serviço **de configurações do** AEM DS no modo de edição. Na caixa de diálogo Serviço de configurações do AEM DS, forneça informações sobre o processamento do URL do servidor, o nome de usuário do servidor de processamento e a senha.
+Na Configuração do console da Web do AEM ( `https://[host]:'port'/system/console/configMgr`), clique para abrir o Serviço **de configurações do** AEM DS no modo de edição. Na caixa de diálogo Serviço de configurações do AEM DS, forneça informações sobre o processamento do URL do servidor, o nome de usuário do servidor de processamento e a senha.
 
 >[!NOTE]
 >
