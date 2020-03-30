@@ -10,14 +10,14 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Configuração de análises e relatórios{#configuring-analytics-and-reports}
 
-O AEM Forms integra-se ao Adobe Analytics, que permite capturar e rastrear métricas de desempenho para formulários e documentos publicados. O objetivo da análise dessas métricas é tomar decisões informadas com base nos dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
+O AEM Forms integra-se ao Adobe Analytics, que permite capturar e rastrear métricas de desempenho para seus formulários e documentos publicados. O objetivo da análise dessas métricas é tomar decisões informadas com base nos dados sobre as alterações necessárias para tornar os formulários ou o documento mais utilizáveis.
 
 >[!NOTE]
 >
@@ -55,13 +55,13 @@ Execute as seguintes etapas para criar um conjunto de relatórios.
 
    Criar novo conjunto de relatórios
 
-1. Certifique-se de que a primeira lista suspensa esteja definida como **Criar de um modelo** e selecione **Comércio**.
+1. Verifique se a primeira lista suspensa está definida como **Criar de um modelo** e selecione **Comércio**.
 1. Localize o campo ID **do conjunto de** relatórios e adicione uma nova ID do conjunto de relatórios. Por exemplo, JJEsquire. Uma ID do conjunto de relatórios é exibida abaixo do campo ID do conjunto de relatórios. Inclui um prefixo automático, que geralmente é o nome da empresa.
 1. Adicionar novo Título **** do Site. Por exemplo, JJEsquire Getting Started Suite. Esse título é usado na interface do usuário do Analytics. Use a ID do conjunto de relatórios em seu código.
 1. Selecione um Fuso **horário** na lista suspensa. Todos os dados que entram neste conjunto de relatórios são registrados com base no fuso horário definido.
 1. Deixe vazios os campos URL **** básico e Página **** padrão. Esses dois valores são usados apenas na interface da Adobe Marketing Cloud para vincular ao seu site.
 1. Deixe a Data de **ativação** definida como hoje. A Data de ativação determina o dia em que o conjunto de relatórios é ativado.
-1. No campo Visualizações de página **estimadas por dia** , digite 100. Use este campo para estimar o número de exibições de página que você antecipa para seu site por dia. Essa estimativa permite que a Adobe instale a quantidade apropriada de hardware para processar os dados que você coletará.
+1. No campo Visualizações de página **estimadas por dia** , digite 100. Use este campo para estimar o número de visualizações de página que você antecipa para seu site por dia. Essa estimativa permite que a Adobe instale a quantidade apropriada de hardware para processar os dados que você coletará.
 1. Selecione uma Moeda **** Base na lista suspensa. Todos os dados monetários que entram neste conjunto de relatórios são convertidos e armazenados neste formato de moeda.
 1. Clique em **Criar conjunto de relatórios** . Você deve ver a atualização da página com uma mensagem informando que o conjunto de relatórios foi criado com êxito.
 1. Selecione o conjunto de relatórios recém-criado. Navegue até **Editar configurações** > **Geral** > Configurações **** gerais da conta.
@@ -70,20 +70,20 @@ Execute as seguintes etapas para criar um conjunto de relatórios.
 
    Configurações gerais da conta
 
-1. Na tela Configurações gerais da conta, ative o Relatório **geográfico** e clique em **Salvar.**
+1. Na tela Configurações gerais da conta, ative o Relatórios **geográfico e clique em****Salvar.**
 1. Navegue até **Editar configurações** > **Tráfego** > Variáveis **** de tráfego.
 1. No conjunto de relatórios, configure e ative as seguintes variáveis de tráfego.
 
    * **formName**: Identificador de um formulário adaptável.
-   * **formInstance**: Identificador de uma instância de formulário adaptável. Ative os relatórios Caminho para essa variável.
-   * **fieldName**: Identificador de um campo de formulário adaptável. Ative os relatórios Caminho para essa variável.
-   * **panelName**: Identificador de um painel de formulário adaptável. Ative os relatórios Caminho para essa variável.
+   * **formInstance**: Identificador de uma instância de formulário adaptável. Ative os relatórios de Caminho para essa variável.
+   * **fieldName**: Identificador de um campo de formulário adaptável. Ative os relatórios de Caminho para essa variável.
+   * **panelName**: Identificador de um painel de formulário adaptável. Ative os relatórios de Caminho para essa variável.
    * **formTitle**: Título do formulário.
    * **fieldTitle**: Título do campo de formulário.
    * **panelTitle**: Título do painel de formulários.
    * **analyticsVersion**: Versão de análise de formulário.
 
-1. Navegue até **Editar configurações** > **Conversão** > Eventos **bem-sucedidos**. Defina e ative os seguintes eventos bem-sucedidos:
+1. Navegue até **Editar configurações** > **Conversão** > Eventos **de** sucesso. Defina e ative os seguintes eventos bem-sucedidos:
 
    | Evento bem-sucedido | Tipo |
    |---|---|
@@ -99,7 +99,7 @@ Execute as seguintes etapas para criar um conjunto de relatórios.
 
    >[!NOTE]
    >
-   >Um número de evento e um número de propriedade usados para configurar a análise do AEM Forms devem ser diferentes do número do evento e do número de propriedade usados na configuração de análise [do](/help/sites-administering/adobeanalytics.md) AEM.
+   >Um número de evento e um número de propriedade usados para configurar a análise do AEM Forms devem ser diferentes do número de evento e do número de propriedade usados na configuração de análise [do](/help/sites-administering/adobeanalytics.md) AEM.
 
 1. Faça logout da conta da Adobe Marketing Cloud.
 
@@ -117,7 +117,7 @@ A configuração do Serviço em nuvem é uma informação sobre sua conta do Ado
 
 1. Quando o painel Editar abrir na página de configuração, preencha os campos:
 
-   * **Empresa**: O nome da sua empresa, como mostrado no Adobe Analytics.
+   * **Empresa**: Seu nome de empresa, como mostrado no Adobe Analytics.
    * **Nome de usuário**: O nome usado para fazer logon no Adobe Analytics.
    * **Senha**: A senha do Adobe Analytics para a conta acima.
    * **Data center**: O data center de sua conta do Adobe Analytics.
@@ -144,7 +144,7 @@ Uma estrutura do Adobe Analytics é um conjunto de mapeamentos entre as variáve
 1. Arraste um componente **de Análise de** formulário da **outra** categoria de SideKick até a estrutura.
 1. Para mapear variáveis do Analytics com variáveis definidas no componente, arraste uma variável do AEM Content Finder para um campo no componente de rastreamento.
 
-   ![Mapeamento de variáveis AEM com variáveis do Adobe Analytics](assets/analytics_new.png)
+   ![Mapeamento de variáveis do AEM com variáveis do Adobe Analytics](assets/analytics_new.png)
 
 1. Ative a estrutura usando a guia **** de página no sidekick e clique em **Ativar estrutura**.
 
@@ -160,11 +160,11 @@ Uma estrutura do Adobe Analytics é um conjunto de mapeamentos entre as variáve
 1. Especifique os valores apropriados para os campos a seguir e clique em **Salvar**.
 
    * **Estrutura** do SiteCatalyst: Selecione a estrutura/configuração definida na seção Configurar uma estrutura para rastreamento.
-   * **Linha de base** de rastreamento de tempo do campo: Especifique a duração, em segundos, após a qual a visita de campo deve ser acompanhada. O valor padrão é 0. Quando o valor for maior que 0 (zero), dois eventos de rastreamento separados serão enviados para o servidor do Adobe Analytics. O primeiro evento instrui o servidor do Analytics a parar de rastrear o campo encerrado. O segundo evento é enviado depois que a duração especificada decorre. O segundo evento instrui o servidor do Analytics a iniciar o rastreamento do campo visitado. O uso de dois eventos separados ajuda a medir com precisão o tempo gasto em um campo. Quando o valor for 0 (zero), um único evento de rastreamento será enviado para o servidor do Adobe Analytics.
+   * **Linha de base** de rastreamento de tempo do campo: Especifique a duração, em segundos, após a qual a visita de campo deve ser rastreada. O valor padrão é 0. Quando o valor for maior que 0 (zero), dois eventos de rastreamento separados serão enviados para o servidor do Adobe Analytics. O primeiro evento instrui o servidor do Analytics a parar de rastrear o campo encerrado. O segundo evento é enviado depois que a duração especificada decorre. O segundo evento instrui o servidor do Analytics a rastrear o start do campo visitado. O uso de dois eventos separados ajuda a medir com precisão o tempo gasto em um campo. Quando o valor for 0 (zero), um único evento de rastreamento será enviado para o servidor do Adobe Analytics.
 
    * **Cron** de sincronização de relatórios do Analytics: Especifique a expressão cron para obter relatórios do Adobe Analytics. O valor padrão é 0 0 2 ? * *.
 
-   * **** Tempo limite de busca do relatório: Especifique a duração, em segundos, para aguardar que o servidor responda ao relatório de análise. O tempo padrão é de 120 segundos.
+   * **Tempo limite de busca do relatório:** Especifique a duração, em segundos, para aguardar que o servidor responda ao relatório de análise. O tempo padrão é de 120 segundos.
    >[!NOTE]
    >
    >Pode levar até 10 segundos a mais para a operação de busca de relatório de tempo limite e depois o número especificado de segundos.
@@ -175,14 +175,14 @@ Agora, você pode ativar a análise para formulários e gerar um relatório de a
 
 ## Habilitar análise para um formulário ou documento {#enabling-analytics-for-a-form-or-document}
 
-1. Faça logon no portal do AEM em `https://[hostname]:[port]`.
-1. Clique em **Formulários > Formulários e documentos**, selecione um formulário ou documento e clique em **Ativar o Analytics**. A análise está ativada.
+1. Faça logon no portal do AEM em `https://[hostname]:'port'`.
+1. Clique em **Formulários > Formulários e Documentos**, selecione um formulário ou documento e clique em **Ativar o Analytics**. A análise está ativada.
 
    ![Habilitar análise para um formulário ou documento](assets/enable-analytics-1.png)
 
    Habilitar análise para um formulário
 
-   ******A. Ative o botão** B do Analytics. Formulário selecionado
+   **A.** Ative o botão **B do Analytics.** Formulário selecionado
 
    Para obter informações detalhadas sobre como visualizar relatórios de análise de formulários, consulte [Visualizar e entender relatórios de análise de formulários AEM](../../forms/using/view-understand-aem-forms-analytics-reports.md)
 
