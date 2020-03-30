@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ A área de trabalho do AEM Forms está ativada por SSO. Se um usuário tiver fei
 
 O tempo limite da sessão para um usuário pode ser configurado no Console de administração.
 
-Para definir o tempo limite, faça logon `https://[server]:[port]/adminui`, navegue até **Configurações > Gerenciamento de usuários > Configuração > Configurar atributos** avançados do sistema e faça as configurações desejadas.
+Para definir o tempo limite, faça logon `https://'[server]:[port]'/adminui`, navegue até **Configurações > Gerenciamento de usuários > Configuração > Configurar atributos** avançados do sistema e faça as configurações desejadas.
 
 No espaço de trabalho do AEM Forms, o tempo limite é tratado como:
 
@@ -39,4 +39,4 @@ Nesta caixa de diálogo pop-up:
 >
 >Se nenhuma ação for executada, o usuário será automaticamente desconectado da área de trabalho do AEM Forms três segundos antes da expiração da sessão.
 
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
+**[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
