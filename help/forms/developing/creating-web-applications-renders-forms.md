@@ -1,6 +1,6 @@
 ---
-title: Criação de aplicativos da Web que renderizam formulários
-seo-title: Criação de aplicativos da Web que renderizam formulários
+title: Criação de Aplicações web que renderizam formulários
+seo-title: Criação de Aplicações web que renderizam formulários
 description: 'null'
 seo-description: 'null'
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Criação de aplicativos da Web que renderizam formulários {#creating-web-applications-thatrenders-forms}
+# Criação de Aplicações web que renderizam formulários {#creating-web-applications-thatrenders-forms}
 
-## Criação de aplicativos da Web que renderizam formulários {#creating-web-applications-that-renders-forms}
+## Criação de Aplicações web que renderizam formulários {#creating-web-applications-that-renders-forms}
 
 Você pode criar um aplicativo baseado na Web que use servlets Java para chamar o serviço de Formulários e renderizar formulários. Uma vantagem de usar um servlet Java™ é que você pode gravar o valor de retorno do processo em um navegador da Web cliente. Ou seja, um servlet Java pode ser usado como o link entre o serviço Forms que retorna um formulário e um navegador da Web cliente.
 
@@ -26,7 +26,7 @@ Você pode criar um aplicativo baseado na Web que use servlets Java para chamar 
 >
 >Esta seção descreve como criar um aplicativo baseado na Web que usa um servlet Java que chama o serviço Forms e renderiza formulários com base em fragmentos. (Consulte [Renderização de formulários com base em fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
 
-Usando um servlet Java, você pode gravar um formulário em um navegador da Web do cliente para que um cliente possa visualizar e inserir dados no formulário. Depois de preencher o formulário com dados, o usuário da Web clica em um botão Enviar localizado no formulário para enviar informações de volta ao servlet Java, onde os dados podem ser recuperados e processados. Por exemplo, os dados podem ser enviados para outro processo.
+Usando um servlet Java, você pode gravar um formulário em um navegador da Web do cliente para que um cliente possa visualização e inserir dados no formulário. Depois de preencher o formulário com dados, o usuário da Web clica em um botão Enviar localizado no formulário para enviar informações de volta ao servlet Java, onde os dados podem ser recuperados e processados. Por exemplo, os dados podem ser enviados para outro processo.
 
 Esta seção discute como criar um aplicativo baseado na Web que permite ao usuário selecionar dados de formulário baseados em EUA ou dados de formulário baseados em Canadá, conforme mostrado na ilustração a seguir.
 
@@ -67,7 +67,7 @@ Os arquivos de dados XML usados pelo aplicativo da Web foram movidos da pasta Da
 Para criar aplicativos baseados na Web que renderizam formulários com base em fragmentos, execute as seguintes etapas:
 
 1. Crie um novo projeto da Web.
-1. Criar lógica de aplicativo Java que representa o servlet Java.
+1. Crie uma lógica de aplicativo Java que represente o servlet Java.
 1. Crie a página da Web para o aplicativo da Web.
 1. Compacte o aplicativo da Web em um arquivo WAR.
 1. Implante o arquivo WAR no servidor de aplicativos J2EE.
@@ -79,7 +79,7 @@ Para criar aplicativos baseados na Web que renderizam formulários com base em f
 
 ### Criação de um projeto da Web {#creating-a-web-project}
 
-A primeira etapa para criar um aplicativo da Web que contenha um servlet Java que possa chamar o serviço Forms é criar um novo projeto da Web. O Java IDE no qual este documento se baseia é o Eclipse 3.3. Usando o Eclipse IDE, crie um projeto da Web e adicione os arquivos JAR necessários ao seu projeto. Finalmente, adicione uma página HTML chamada *index.html* e um servlet Java ao seu projeto.
+A primeira etapa para criar um aplicativo da Web que contenha um servlet Java que possa chamar o serviço Forms é criar um novo projeto da Web. O IDE Java no qual esse documento se baseia é o Eclipse 3.3. Usando o Eclipse IDE, crie um projeto da Web e adicione os arquivos JAR necessários ao seu projeto. Finalmente, adicione uma página HTML chamada *index.html* e um servlet Java ao seu projeto.
 
 A lista a seguir especifica os arquivos JAR que você deve adicionar ao seu projeto da Web:
 
@@ -92,11 +92,11 @@ Para obter a localização desses arquivos JAR, consulte [Inclusão de arquivos]
 
 **Para criar um projeto da Web:**
 
-1. Inicie o Eclipse e clique em **Arquivo** > **Novo projeto**.
+1. Eclipse do Start e clique em **Arquivo** > **Novo projeto**.
 1. Na caixa de diálogo **Novo projeto** , selecione **Web** > Projeto **da Web** dinâmico.
-1. Digite `FragmentsWebApplication` o nome do projeto e clique em **Concluir**.
+1. Digite `FragmentsWebApplication` o nome do seu projeto e clique em **Concluir**.
 
-**Para adicionar arquivos JAR necessários ao seu projeto:**
+**Para adicionar os arquivos JAR necessários ao seu projeto:**
 
 1. Na janela do Project Explorer, clique com o botão direito do mouse no `FragmentsWebApplication` projeto e selecione **Propriedades**.
 1. Clique em caminho **de compilação** Java e clique na guia **Bibliotecas** .
@@ -111,7 +111,7 @@ Para obter a localização desses arquivos JAR, consulte [Inclusão de arquivos]
 **Para adicionar uma página HTML ao seu projeto:**
 
 1. Na janela do Project Explorer, clique com o botão direito do mouse no `FragmentsWebApplication` projeto e selecione **Novo** > **Outro**.
-1. Expanda a pasta **Web** , selecione **HTML** e clique em **Avançar**.
+1. Expanda a pasta **da Web** , selecione **HTML** e clique em **Avançar**.
 1. Na caixa de diálogo Novo HTML, digite `index.html` o nome do arquivo e clique em **Concluir**.
 
 >[!NOTE]
@@ -146,7 +146,7 @@ Para renderizar um formulário com base em fragmentos usando a API de serviço d
 1. Crie um `URLSpec` objeto que armazene valores de URI usando seu construtor.
 1. Chame o método do `URLSpec` objeto `setApplicationWebRoot` e passe um valor de string que representa a raiz da Web do aplicativo.
 1. Chame o método do `URLSpec` objeto `setContentRootURI` e transmita um valor de string que especifica o valor do URI raiz do conteúdo. Verifique se o design de formulário e os fragmentos estão localizados no URI raiz do conteúdo. Caso contrário, o serviço Forms lança uma exceção. Para fazer referência ao repositório do AEM Forms, especifique `repository://`.
-1. Chame o método do `URLSpec` objeto `setTargetURL` e passe um valor de string que especifique o valor do URL de destino para onde os dados do formulário são postados. Se você definir o URL de destino no design de formulário, poderá passar uma string vazia. Também é possível especificar o URL para o qual um formulário é enviado para executar cálculos.
+1. Chame o método do `URLSpec` objeto `setTargetURL` e passe um valor de string que especifique o valor do URL do público alvo para onde os dados do formulário são postados. Se você definir o URL do público alvo no design de formulário, poderá passar uma string vazia. Também é possível especificar o URL para o qual um formulário é enviado para executar cálculos.
 1. Chame o método do `FormsServiceClient` objeto `renderPDFForm` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo.
@@ -162,7 +162,7 @@ Para renderizar um formulário com base em fragmentos usando a API de serviço d
 1. Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
 1. Crie um `java.io.InputStream` objeto chamando o `com.adobe.idp.Document` método do `getInputStream` objeto.
 1. Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o `InputStream` método do `read`objeto e transmitindo a matriz de bytes como um argumento.
-1. Chame o método do `javax.servlet.ServletOutputStream` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
+1. Chame o método `javax.servlet.ServletOutputStream` `write` do objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
 
 O exemplo de código a seguir representa o servlet Java que chama o serviço Forms e renderiza um formulário com base em fragmentos.
 
@@ -219,7 +219,7 @@ O exemplo de código a seguir representa o servlet Java que chama o serviço For
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -258,9 +258,9 @@ O exemplo de código a seguir representa o servlet Java que chama o serviço For
              //Specify URI values that are required to render a form
              //design based on fragments
              URLSpec uriValues = new URLSpec();
-             uriValues.setApplicationWebRoot("https://[server]:[port]/RenderFormFragment");
+             uriValues.setApplicationWebRoot("https://'[server]:[port]'/RenderFormFragment");
              uriValues.setContentRootURI("repository:///");
-             uriValues.setTargetURL("https://[server]:[port]/FormsServiceClientApp/HandleData");
+             uriValues.setTargetURL("https://'[server]:[port]'/FormsServiceClientApp/HandleData");
  
              //Invoke the renderPDFForm method and write the
              //results to a client web browser
@@ -336,7 +336,7 @@ O código HTML a seguir está localizado no arquivo index.html que foi criado du
  </head>
  
  <body>
- <form name="myform" action="https://[server]:[port]/FragmentsWebApplication/RenderFormFragment" method="post">
+ <form name="myform" action="https://'[server]:[port]'/FragmentsWebApplication/RenderFormFragment" method="post">
       <table>
       <tr>
         <th>Forms Fragment Web Client</th>
@@ -371,7 +371,7 @@ O código HTML a seguir está localizado no arquivo index.html que foi criado du
 
 Para implantar o servlet Java que chama o serviço Forms, empacote seu aplicativo Web em um arquivo WAR. Verifique se os arquivos JAR externos dos quais a lógica comercial do componente depende, como adobe-livecycle-client.jar e adobe-forms-client.jar, também estão incluídos no arquivo WAR.
 
-**Para disponibilizar um aplicativo da Web em um arquivo WAR:**
+**Para empacotar um aplicativo da Web em um arquivo WAR:**
 
 1. Na janela **Project Explorer** , clique com o botão direito do mouse no `FragmentsWebApplication` projeto e selecione **Exportar** > arquivo **** WAR.
 1. Na caixa de texto do módulo **da** Web, digite `FragmentsWebApplication` o nome do projeto Java.
