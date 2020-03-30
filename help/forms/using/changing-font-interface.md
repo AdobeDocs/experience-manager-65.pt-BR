@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,7 +28,7 @@ Siga as etapas [genéricas para personalização](../../forms/using/generic-step
 
 Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação superior para Courier New, siga estas etapas:
 
-1. Faça logon no CRXDE Lite acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Faça logon no CRXDE Lite acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Faça uma das seguintes opções:
 
    1. Para alterar a família de fontes em um estilo existente, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
@@ -41,7 +41,7 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
 
    1. Para adicionar a família de fontes em linha para o elemento HTML, copie o `/libs/ws/js/runtime/templates/appnavigation.html` arquivo para `/apps/ws/js/runtime/templates/appnavigation.html`.
 
-      Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html como segue:
+      Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 
       ```
       <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
@@ -83,4 +83,4 @@ Barra de navegação superior antes da personalização de fontes
 
 Barra de navegação superior após personalização da primeira guia
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
