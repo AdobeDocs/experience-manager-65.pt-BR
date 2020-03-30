@@ -11,20 +11,20 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Ativar o registro em log para formulários HTML5{#enable-logging-for-html-forms}
 
-Você pode configurar o utilitário logger para começar a criar registros para formulários HTML5. O utilitário logger tem vários níveis, você pode definir um nível conforme suas necessidades. Os formulários HTML5 têm componentes de servidor e cliente. Você pode configurar registros para ambos os componentes.
+Você pode configurar o utilitário logger para start criando registros para formulários HTML5. O utilitário logger tem vários níveis, você pode definir um nível conforme suas necessidades. Os formulários HTML5 têm componentes de servidor e cliente. Você pode configurar registros para ambos os componentes.
 
 ## Configuração do registro no servidor {#configuring-server-side-logging}
 
 Execute as seguintes etapas para configurar os registros do servidor:
 
-1. Ir para `https://[server]:[port]/system/console/configMgr`. Localize e abra a opção de configuração *do agente de log do* Apace Sling. Uma caixa de diálogo é exibida:
+1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção de configuração *do agente de log do* Apace Sling. Uma caixa de diálogo é exibida:
 
    ![ Caixa de diálogo da opção de configuração do registrador de Sling Apace](assets/logconfig.png)
 
@@ -53,7 +53,7 @@ Usando esse método, você pode gerar logs para uma solicitação específica. O
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
-A configuração do log é composta pelo nível do log e pela categoria do agente de log.
+A configuração do log é composta pelo nível do log e pela categoria do logger.
 
 #### Destino do registro {#log-destination}
 
@@ -121,7 +121,7 @@ A configuração do log é composta pelo nível do log e pela categoria do agent
  </tbody>
 </table>
 
-#### Categorias do logarista {#logger-categories}
+#### Categorias do registrador {#logger-categories}
 
 <table>
  <tbody>
@@ -146,7 +146,7 @@ A configuração do log é composta pelo nível do log e pela categoria do agent
 
 #### Configuração do registro {#log-configuration}
 
-No URL do log, o parâmetro da string de consulta de configuração do log é definido da seguinte forma:
+No URL do log, o parâmetro da string de configuração do query é definido da seguinte forma:
 
 `{destination}-{a level}-{b level}-{c level}`
 
@@ -160,7 +160,7 @@ Por exemplo:
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>Destino: Nível xfa do servidor<br /> : Nível de INFO<br /> xfaView: Nível DEBUG<br /> xfaPerf:TRAÇO</td>
+   <td>Destino: Nível xfa do servidor<br /> : Nível de INFO<br /> xfaView: Nível DEBUG<br /> xfaPerf: TRAÇO</td>
   </tr>
  </tbody>
 </table>
@@ -176,7 +176,7 @@ Por exemplo:
 
 Se você usar o Configuration Manager para ativar o registro, os registros serão gerados para cada solicitação de renderização até que o registro seja desabilitado novamente.
 
-1. Faça logon no CQ Configuration Manager em `https://[server]:[port]/system/console/configMgr` e faça logon com credenciais de administrador.
+1. Faça logon no CQ Configuration Manager em `https://'[server]:[port]'/system/console/configMgr` e faça logon com as credenciais de administrador.
 1. Procure e clique em Configurações **de formulários** móveis.
 1. Na caixa de texto Opções de depuração, digite as configurações de log conforme descrito na seção anterior, por exemplo, **2-a4-b5-c6**
 
@@ -192,7 +192,7 @@ Por padrão, todas as informações são adicionadas ao arquivo error.log no dir
 
 Para alterar o local e o nome do arquivo de log:
 
-1. Faça logon no Configuration Manager como administrador. O URL padrão do Configuration Manager é `https://[Server]:[Port]/system/console/configMgr`.
+1. Faça logon no Configuration Manager como administrador. O URL padrão do Configuration Manager é `https://'[server]:[port]'/system/console/configMgr`.
 1. Clique em **Apache Sling Logging Logger Configuration (Configuração** do registrador Apache Sling). Uma caixa de diálogo é exibida.
 
    ![logconfig-1](assets/logconfig-1.png)
@@ -207,4 +207,4 @@ Para alterar o local e o nome do arquivo de log:
 
 1. Altere o **Logger** para **HTMLFormsPerfLogger** e clique em **Salvar**.
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
