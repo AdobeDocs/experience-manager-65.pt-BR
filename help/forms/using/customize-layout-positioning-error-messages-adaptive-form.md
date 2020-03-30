@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -45,12 +45,12 @@ Com o AEM Forms, agora é possível criar um tema e aplicá-lo ao formulário. O
 Crie um tema usando o Editor de Temas para personalizar o layout de todos os campos do formulário. Depois de criar um tema, execute as seguintes etapas para aplicá-lo a um formulário:
 
 1. Abra o formulário no modo de edição.
-1. No modo de edição, selecione um componente, em seguida, toque em nível ![de](assets/field-level.png) campo > Contêiner **de formulário** adaptável e, em seguida, toque em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente, em seguida, toque em nível ![de](assets/field-level.png) campo > Container **de formulário** adaptável e, em seguida, toque em ![cmppr](assets/cmppr.png).
 1. Na barra lateral, em Tema de formulário adaptável, selecione o tema que você criou usando o Editor de temas.
 
 ## Criar um layout de campo personalizado {#create-a-custom-field-layout}
 
-1. Abra o CRXDE lite. O URL padrão é https://[Server]:[Port]/crx/de.
+1. Abra o CRXDE lite. O URL padrão é https://&#39;[server]:[port]&#39;/crx/de.
 1. Copie um layout de campo do nó /libs/fd/af/layouts/field (Por exemplo, defaultFieldLayout) para o nó /apps (Por exemplo, /apps/af-field-layout).
 1. Renomeie o nó copiado e o arquivo defaultFieldLayout.jsp. Por exemplo, errorOnRight.jsp.
 
@@ -58,7 +58,7 @@ Crie um tema usando o Editor de Temas para personalizar o layout de todos os cam
 
 1. Para adicionar novos estilos e comportamento, crie uma biblioteca de cliente no nó /etc.
 
-   Por exemplo, no local /etc/af-field-layout-clientlib, crie o nó client-library. Adicione a propriedade category com o valor af.field.errorOnRight e o arquivo style.less com o seguinte código:
+   Por exemplo, no local /etc/af-field-layout-clientlib, crie o nó client-library. Adicione a propriedade categoria com o valor af.field.errorOnRight e o arquivo style.less com o seguinte código:
 
    ```css
    .widgetErrorWrapper {
