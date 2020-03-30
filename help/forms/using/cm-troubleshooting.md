@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -34,7 +34,7 @@ Esses erros podem ocorrer devido a um dos seguintes:
 
 ### Solução {#workaround}
 
-Verifique se o dicionário de dados que você está usando na carta está presente no servidor e não tem um sublinhado (_) no nome.
+Certifique-se de que o dicionário de dados que você está usando na carta esteja presente no servidor e não tenha um sublinhado (_) em seu nome.
 
 ## Erro ao visualizar uma carta {#error-when-previewing-a-letter}
 
@@ -46,7 +46,7 @@ Ao visualizar uma carta, o erro &quot;Erro na carta de carregamento: &quot;Não 
 
 Redefina o cache de letras na instância de publicação usando as etapas a seguir e tente exibir novamente a carta:
 
-1. Vá para **`https://[server]:[port]/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
+1. Vá para **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
 1. Selecione Configurações **de gerenciamento de** correspondência.
 1. Em Configurações **de gerenciamento de** correspondência, desative **Ativar cache de carta** e clique **em Salvar.**
 1. Ative **Ativar Cache** Carta e clique em **Salvar**.
