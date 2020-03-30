@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,8 +23,8 @@ Este artigo discute estratégias e práticas recomendadas que você pode impleme
 
 Você pode configurar e controlar a estratégia de cache para formulários AEM usando o componente Configurações **de formulários** móveis no console de configuração da Web do AEM em:
 
-* (Formulários AEM no OSGi) `https://[server]:[port]/system/console/configMgr`
-* (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
+* (Formulários AEM no OSGi) `https://'[server]:[port]'/system/console/configMgr`
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 As opções disponíveis para armazenamento em cache são as seguintes:
 
@@ -131,7 +131,7 @@ Adicione a seguinte configuração no arquivo `APACHE_HOME/conf/httpd.conf` de c
    </Location>
    ```
 
-   Para acessar o servidor crx, use `https://[server]:80`, onde `server` é o nome do servidor no qual o servidor Apache está sendo executado.
+   Para acessar o servidor crx, use `https://'server':80`, onde `server` é o nome do servidor no qual o servidor Apache está sendo executado.
 
 ## Usar um antivírus em um servidor que executa o AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -147,15 +147,15 @@ Para melhorar o desempenho, é possível direcionar o software antivírus para e
 
 * Diretório temporário do servidor de aplicativos. O local padrão é:
 
-   * (JHead) Diretório [de instalação do]AEM \jboss\standalone\tmp
+   * (Jpatrão) Diretório de instalação [do AEM]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (Webphere) \Arquivos de Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+   * (Webphere) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(AEM Forms somente no JEE)** diretório Global Document Storage (GDS). O local padrão é:
+* **(AEM Forms somente em JEE)** Diretório GDS (Global Documento Armazenamento). O local padrão é:
 
-   * (JBoss) [appserver root]/server/[server]/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver root]/installedApps/adobe/[server]/DocumentStorage
+   * (JBoss) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+   * (WebSphere) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(Formulários AEM somente no JEE)** Registros do servidor do AEM Forms e diretório temporário. O local padrão é:
 
@@ -164,9 +164,9 @@ Para melhorar o desempenho, é possível direcionar o software antivírus para e
 
 >[!NOTE]
 >
->* Se você estiver usando um local diferente para GDS e diretório temporário, abra AdminUI em `https://[server]:[port]/adminui`, navegue até **Início > Configurações > Configurações principais do sistema > Configurações** principais para confirmar o local em uso.
+>* Se você estiver usando um local diferente para GDS e diretório temporário, abra AdminUI em `https://'[server]:[port]'/adminui`, navegue até **Início > Configurações > Configurações principais do sistema > Configurações** principais para confirmar o local em uso.
 
-* Se o servidor do AEM Forms executar lentamente mesmo depois de excluir os diretórios sugeridos, exclua também o arquivo executável Java (java.exe).
+* Se o servidor de formulários AEM for executado lentamente mesmo depois de excluir os diretórios sugeridos, exclua também o arquivo executável Java (java.exe).
 
 
 
