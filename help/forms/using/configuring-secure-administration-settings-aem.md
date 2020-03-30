@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,15 +18,15 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
 Saiba como administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção do AEM Forms no JEE.
 
-Geralmente, os desenvolvedores não usam o ambiente de produção para criar e testar seus aplicativos. Portanto, você deve administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção.
+Geralmente, os desenvolvedores não usam o ambiente de produção para criar e testar seus aplicativos. Portanto, você deve administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são exigidos em um ambiente de produção.
 
-Este artigo descreve os métodos para reduzir a superfície geral do ataque por meio das opções de administração que o AEM Forms fornece no JEE.
+Este artigo descreve os métodos para reduzir a superfície geral do ataque por meio das opções de administração fornecidas pelo AEM Forms no JEE.
 
 ## Desativar acesso remoto não essencial a serviços {#disabling-non-essential-remote-access-to-services}
 
 Depois que o AEM Forms no JEE é instalado e configurado, muitos serviços estão disponíveis para invocação remota no SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, refere-se a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou AMF (Action Message Format) para o servidor de aplicativos.
 
-Embora os formulários AEM em serviços JEE exijam credenciais válidas para um chamador autorizado, você deve permitir somente acesso remoto aos serviços que precisam ser acessados remotamente. Para obter acessibilidade limitada, você deve reduzir o conjunto de serviços acessíveis remotamente ao mínimo possível para um sistema operacional e, em seguida, habilitar a chamada remota para os serviços adicionais de que precisa.
+Embora os formulários AEM em serviços JEE exijam credenciais válidas para um chamador autorizado, você deve permitir somente acesso remoto aos serviços que precisam ser acessados remotamente. Para obter acessibilidade limitada, você deve reduzir o conjunto de serviços acessíveis remotamente ao mínimo possível para um sistema operacional e, em seguida, habilitar a invocação remota para os serviços adicionais de que precisa.
 
 O AEM Forms em serviços JEE sempre precisa de pelo menos acesso SOAP. Normalmente, esses serviços são necessários para uso pelo Workbench, mas também incluem serviços que são chamados pelo aplicativo da Web do Workspace.
 
@@ -35,23 +35,23 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
 1. Faça logon no Console de administração digitando o seguinte URL em um navegador da Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Clique em **Serviços > Aplicativos e serviços > Preferências**.
-1. Defina as Preferências para exibir até 200 serviços e pontos de extremidade na mesma página.
+1. Defina Preferências para visualização de até 200 serviços e pontos finais na mesma página.
 1. Clique em **Serviços** > **Aplicativos e serviços** > Gerenciamento **de** ponto de extremidade.
 1. Selecione **EJB** na lista **Provedor** e clique em **Filtro**.
 1. Para desativar todos os pontos de extremidade EJB, marque a caixa de seleção ao lado de cada um na lista e clique em **Desativar**.
-1. Clique em **Avançar** e repita a etapa anterior para todos os pontos finais EJB. Verifique se o EJB está listado na coluna Provedor antes de desativar os pontos de extremidade.
+1. Clique em **Avançar** e repita a etapa anterior para todos os pontos finais EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos de extremidade.
 1. Selecione **SOAP** na lista **Provedor** e clique em **Filtro**.
 1. Para remover pontos de extremidade SOAP, marque a caixa de seleção ao lado de cada um na lista e clique em **Remover**. Não remova os seguintes pontos finais:
 
    * AuthenticationManagerService
    * DiretoryManagerService
    * JobManager
-   * event_management_service
-   * event_configuration_service
+   * evento_management_service
+   * evento_configuration_service
    * ProcessManager
    * TemplateManager
    * RepositoryService
@@ -61,7 +61,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Clique em **Avançar** e repita a etapa anterior para pontos de extremidade SOAP que não estão na lista acima. Certifique-se de que SOAP esteja listado na coluna Provedor antes de remover pontos de extremidade.
+1. Clique em **Avançar** e repita a etapa anterior para pontos de extremidade SOAP que não estejam na lista acima. Certifique-se de que SOAP esteja listado na coluna Provedor antes de remover pontos de extremidade.
 
 ## Desativar o acesso anônimo não essencial aos serviços {#disabling-non-essential-anonymous-access-to-services}
 
@@ -70,7 +70,7 @@ Alguns serviços de servidor de formulários permitem invocação não autentica
 1. Faça logon no console de administração digitando o seguinte URL em um navegador da Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Clique em **Serviços > Aplicativos e serviços > Gerenciamento** de serviços.
@@ -112,7 +112,7 @@ Os usuários finais podem autenticar no AEM Forms por meio do Workbench, de apli
 1. Faça logon no console de administração digitando o seguinte URL em um navegador da Web:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Clique em **Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos** de configuração.
