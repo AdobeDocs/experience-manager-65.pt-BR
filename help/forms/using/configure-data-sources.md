@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -21,18 +21,18 @@ source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
 A integração de dados do AEM Forms permite configurar e conectar-se a fontes de dados diferentes. Os seguintes tipos são suportados prontamente. No entanto, com pouca personalização, também é possível integrar outras fontes de dados.
 
 * Bancos de dados relacionais - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
-* Perfil de usuário do AEM
+* perfil de usuário do AEM
 * Serviços Web RESTful
 * Serviços Web baseados em SOAP
 * Serviços OData
 
-A integração de dados suporta os tipos de autenticação OAuth2.0, Autenticação básica e Chave de API prontos para uso e permite implementar autenticação personalizada para acessar serviços da Web. Embora os serviços RESTful, SOAP e OData estejam configurados nos serviços da AEM Cloud, o JDBC para bancos de dados relacionais e o conector para o perfil de usuário do AEM são configurados no console da Web do AEM.
+A integração de dados suporta os tipos de autenticação OAuth2.0, Autenticação básica e Chave de API prontos para uso e permite implementar autenticação personalizada para acessar serviços da Web. Embora os serviços RESTful, baseados em SOAP e OData estejam configurados nos serviços da AEM Cloud, o JDBC para bancos de dados relacionais e o conector para o perfil de usuário do AEM são configurados no console da Web do AEM.
 
 ## Configurar banco de dados relacional {#configure-relational-database}
 
 Você pode configurar bancos de dados relacionais usando a Configuração do console da Web do AEM. Faça o seguinte:
 
-1. Vá para o console da Web do AEM em https://[server]:[host]/system/console/configMgr.
+1. Vá para o console da Web do AEM em https://server:host/system/console/configMgr.
 1. Procure a configuração **[!UICONTROL Apache Sling Connection Pooling DataSource]** . Toque em para abrir a configuração no modo de edição.
 1. Na caixa de diálogo de configuração, especifique os detalhes do banco de dados que deseja configurar, como:
 
@@ -47,7 +47,7 @@ Você pode configurar bancos de dados relacionais usando a Configuração do con
    >
    >    
    >    
-   >    1. Vá para https://[server]:[port]/system/console/crypto.
+   >    1. Vá para https://&#39;[server]:[port]&#39;/system/console/crypto.
    >    1. No campo Texto **** simples, especifique a senha ou qualquer string a ser criptografada e clique em **[!UICONTROL Proteger]**.
    >    
    >    
@@ -55,20 +55,20 @@ Você pode configurar bancos de dados relacionais usando a Configuração do con
    >O texto criptografado aparece no campo Texto protegido que você pode especificar na configuração.
 
 1. Ative **[!UICONTROL Testar emprestado]** ou **[!UICONTROL Testar ao Retornar]** para especificar que os objetos são validados antes de serem emprestados ou devolvidos de e para o pool, respectivamente.
-1. Especifique uma consulta SQL SELECT no campo Consulta **[!UICONTROL de]** Validação para validar conexões do pool. A consulta deve retornar pelo menos uma linha. Com base no banco de dados, especifique um dos seguintes:
+1. Especifique um query SELECT SQL no campo Query **** Validação para validar conexões do pool. O query deve retornar pelo menos uma linha. Com base no banco de dados, especifique um dos seguintes:
 
    * SELECT 1 (MySQL e MS SQL)
    * SELECT 1 from dual (Oracle)
 
 1. Toque em **[!UICONTROL Salvar]** para salvar a configuração.
 
-## Configurar perfil de usuário do AEM {#configure-aem-user-profile}
+## Configurar o perfil de usuário do AEM {#configure-aem-user-profile}
 
-Você pode configurar o perfil de usuário do AEM usando a configuração do Conector de perfil do usuário no console da Web do AEM. Faça o seguinte:
+Você pode configurar o perfil do usuário do AEM usando a configuração do Conector do Perfil do usuário no console da Web do AEM. Faça o seguinte:
 
-1. Vá para o console da Web do AEM em https://[server]:[host]/system/console/configMgr.
-1. Procure Integrações de dados de formulários **[!UICONTROL AEM - Configuração]** do conector do perfil do usuário e toque para abrir a configuração no modo de edição.
-1. Na caixa de diálogo Configuração do Conector de Perfil de Usuário, você pode adicionar, remover ou atualizar as propriedades do perfil de usuário. As propriedades especificadas estarão disponíveis para uso no modelo de dados de formulário. Use o seguinte formato para especificar as propriedades do perfil de usuário:
+1. Vá para o console da Web do AEM em https://&#39;[server]:[port]&#39;system/console/configMgr.
+1. Procure Integrações de dados de formulários **[!UICONTROL AEM - Configuração]** do conector do Perfil do usuário e toque para abrir a configuração no modo de edição.
+1. Na caixa de diálogo Configuração do conector do Perfil do usuário, você pode adicionar, remover ou atualizar as propriedades do perfil do usuário. As propriedades especificadas estarão disponíveis para uso no modelo de dados de formulário. Use o seguinte formato para especificar as propriedades do perfil do usuário:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -86,7 +86,7 @@ Você pode configurar o perfil de usuário do AEM usando a configuração do Con
 
 **Observação**: A configuração da pasta de serviços em nuvem é necessária para configurar serviços em nuvem para os serviços RESTful, SOAP e OData.
 
-Todas as configurações de serviço em nuvem no AEM são consolidadas na `/conf` pasta no repositório do AEM. Por padrão, a `conf` pasta contém a `global` pasta onde você pode criar configurações de serviço em nuvem. Entretanto, é necessário ativá-lo manualmente para configurações de nuvem. Você também pode criar pastas adicionais em `conf` para criar e organizar configurações de serviço em nuvem.
+Todas as configurações de serviço em nuvem no AEM são consolidadas na `/conf` pasta no repositório do AEM. Por padrão, a `conf` pasta contém a `global` pasta onde você pode criar configurações de serviço em nuvem. No entanto, é necessário ativá-lo manualmente para configurações de nuvem. Você também pode criar pastas adicionais em `conf` para criar e organizar configurações de serviço em nuvem.
 
 Para configurar a pasta das configurações do serviço de nuvem:
 
@@ -124,7 +124,7 @@ Faça o seguinte para configurar os serviços RESTful:
       * Caminho básico: O prefixo de URL para todos os caminhos de API. É um campo opcional.\
          Se necessário, edite os valores pré-preenchidos para esses campos.
    * Selecione o tipo de autenticação — Nenhum, OAuth2.0, Autenticação básica, Chave da API ou Autenticação personalizada — para acessar o serviço RESTful e, portanto, fornecer detalhes para autenticação.
-   Se você selecionar a chave **[!UICONTROL da]** API como o tipo de autenticação, especifique o valor para a chave da API. A chave da API pode ser enviada como um cabeçalho de solicitação ou como um parâmetro de consulta. Selecione uma dessas opções na lista suspensa **[!UICONTROL Local]** e especifique o nome do cabeçalho ou do parâmetro de consulta no campo Nome **[!UICONTROL do]** parâmetro de acordo.
+   Se você selecionar a chave **[!UICONTROL da]** API como o tipo de autenticação, especifique o valor para a chave da API. A chave da API pode ser enviada como um cabeçalho de solicitação ou como um parâmetro de query. Selecione uma dessas opções na lista suspensa **[!UICONTROL Local]** e especifique o nome do parâmetro header ou query no campo Nome **[!UICONTROL do]** parâmetro de acordo.
 
 1. Toque em **[!UICONTROL Criar]** para criar a configuração de nuvem para o serviço RESTful.
 
@@ -137,7 +137,7 @@ Os serviços Web baseados em SOAP são descritos usando as especificações [WSD
    Consulte [Configurar pasta para configurações](../../forms/using/configure-data-sources.md#cloud-folder) de serviço em nuvem para obter informações sobre como criar e configurar uma pasta para configurações de serviço em nuvem.
 
 1. Toque em **[!UICONTROL Criar]** para abrir o assistente **** Criar configuração de fonte de dados. Especifique um nome e, opcionalmente, um título para a configuração, selecione **[!UICONTROL SOAP Web Service]** no menu suspenso Tipo **[!UICONTROL de]** serviço, navegue e selecione uma imagem em miniatura para a configuração e toque em **[!UICONTROL Próximo]**.
-1. Especifique o seguinte para o serviço Web SOAP:
+1. Especifique o seguinte para o serviço da Web SOAP:
 
    * URL WSDL para o serviço da Web.
    * Terminal de serviço. Especifique um valor neste campo para substituir o ponto de extremidade de serviço mencionado em WSDL.
