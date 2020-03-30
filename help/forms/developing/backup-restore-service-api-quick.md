@@ -1,6 +1,6 @@
 ---
-title: Serviço de Backup e Restauração APIQuick inicia
-seo-title: Serviço de Backup e Restauração APIQuick inicia
+title: Start APIQuick do Serviço de Backup e Restauração
+seo-title: Start APIQuick do Serviço de Backup e Restauração
 description: 'null'
 seo-description: 'null'
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
@@ -10,26 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Início rápido da API de serviço de backup e restauração {#backup-and-restore-service-apiquick-starts}
+# Start rápidos da API de serviço de backup e restauração {#backup-and-restore-service-apiquick-starts}
 
-O Java API Quick Start (SOAP) está disponível para a API Serviço de Backup e Restauração.
+O SOAP (Java API Quick Start) está disponível para a API de serviço de backup e restauração.
 
-[Início rápido: Entrando no modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Start rápido: Entrando no modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Início rápido: Sair do modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Start rápido: Sair do modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-* ***Observação **: Os Início rápido localizados em Programação com formulários AEM são baseados no sistema operacional Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.*
+* ***Observação **: Start rápidos localizados em Programação com AEM Forms são baseados no sistema operacional Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.*
 
-## Início rápido (modo SOAP): Entrando no modo de backup usando a API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Start rápido (modo SOAP): Entrando no modo de backup usando a API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-O exemplo de código Java a seguir entra no modo de backup com uma etiqueta exclusiva por duas horas. Depois que o tempo de backup expirar ou se o modo de backup for explicitamente encerrado, o servidor de formulários retornará à remoção de arquivos do Armazenamento de documentos global. (Consulte [Entrando no modo de backup no servidor](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)de formulários.)
+O exemplo de código Java a seguir entra no modo de backup com uma etiqueta exclusiva por duas horas. Depois que o tempo de backup expira ou se o modo de backup for explicitamente encerrado, o servidor de formulários retornará à remoção de arquivos do Armazenamento Global Documento. (Consulte [Entrando no modo de backup no servidor](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)de formulários.)
 
 ```as3
  /*
@@ -95,7 +95,7 @@ O exemplo de código Java a seguir entra no modo de backup com uma etiqueta excl
          {
              // Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME,"administrator");
@@ -142,9 +142,9 @@ O exemplo de código Java a seguir entra no modo de backup com uma etiqueta excl
  
 ```
 
-## Início rápido (modo SOAP): Sair do modo de backup usando a API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Start rápido (modo SOAP): Sair do modo de backup usando a API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-O exemplo de código Java a seguir faz com que o Forms Server saia do modo de backup e volte para a remoção de arquivos do Armazenamento de documentos global. (Consulte [Saindo do Modo de backup no servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formulários.)
+O exemplo de código Java a seguir faz com que o Forms Server saia do modo de backup e volte para a remoção de arquivos do Armazenamento do Documento Global. (Consulte [Saindo do Modo de backup no servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formulários.)
 
 ```as3
  /*
@@ -211,7 +211,7 @@ O exemplo de código Java a seguir faz com que o Forms Server saia do modo de ba
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[host]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'server':`port`");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME,"administrator");
