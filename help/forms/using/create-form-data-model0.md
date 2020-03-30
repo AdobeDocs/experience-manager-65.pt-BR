@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
+source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
 
 ---
 
@@ -38,7 +38,7 @@ O modelo de dados de formulário é semelhante ao seguinte:
 
 ![Modelo de dados de formulário](assets/form_data_model_callouts_new.png)
 
-**A.** Fontes de dados configuradas **B.** Esquemas de fontes de dados **C.** Serviços disponíveis **D.** Objetos de modelo de dados **E.** Serviços configurados
+**A.** Fontes de dados configuradas **B.** schemas de fonte de dados **C.** Serviços disponíveis **D.** Objetos de modelo de dados **E.** Serviços configurados
 
 ## Pré-requisitos {#prerequisites}
 
@@ -121,7 +121,7 @@ Faça o seguinte para configurar seu banco de dados MySQL:
    1. Faça logon na instância de autor do AEM Forms como administrador e vá para pacotes de console da Web do AEM. O URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
    1. Toque em **Instalar/atualizar**. Uma caixa de diálogo **Carregar / Instalar pacotes** é exibida.
 
-   1. Toque em **Escolher arquivo** para navegar e selecionar o pacote OSGi do driver JDBC do MySQL. Selecione **Iniciar pacote** e **atualizar pacotes** e toque em **Instalar** ou **atualizar**. Certifique-se de que o Driver JDBC da Oracle Corporation para MySQL esteja ativo. O driver está instalado.
+   1. Toque em **Escolher arquivo** para navegar e selecionar o pacote OSGi do driver JDBC do MySQL. Selecione Pacote **de** Start e **Atualize pacotes** e toque em **Instalar** ou **Atualizar**. Certifique-se de que o Driver JDBC da Oracle Corporation para MySQL esteja ativo. O driver está instalado.
 
 1. Configure o banco de dados MySQL como uma fonte de dados:
 
@@ -135,14 +135,14 @@ Faça o seguinte para configurar seu banco de dados MySQL:
 
       * **Classe** de driver JDBC: Especifique o nome da classe Java do driver JDBC. Para o banco de dados MySQL, especifique **com.mysql.jdbc.Driver**.
 
-      * **URI** de conexão JDBC: Especifique o URL de conexão do banco de dados. Para o banco de dados MySQL em execução na porta 3306 e teleca de esquema, o URL é: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI** de conexão JDBC: Especifique o URL de conexão do banco de dados. Para o banco de dados MySQL em execução na porta 3306 e teleca do schema, o URL é: `jdbc:mysql://'server':3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Nome de usuário:** Nome de usuário do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **Senha:** Senha do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **Teste de emprestado:** Ative a opção **Testar em empréstimo** .
 
       * **Teste na devolução:** Ative a opção **Testar ao Retornar** .
 
-      * **Consulta de validação:** Especifique uma consulta SQL SELECT para validar conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecione * de cliente**.
+      * **Query de validação:** Especifique um query SQL SELECT para validar conexões do pool. O query deve retornar pelo menos uma linha. Por exemplo, **selecione * de cliente**.
 
       * **Isolamento** da transação: Defina o valor como **READ_COMPROMISTED**.
    Deixe outras propriedades com [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) padrão e toque em **Salvar**.
@@ -185,7 +185,7 @@ A configuração do modelo de dados de formulário inclui:
 
    ![Fonte de dados MYSQL para FDM](assets/mysql_fdm_new.png)
 
-1. Expanda a árvore da fonte de dados **MySQL** . Selecione os seguintes objetos e serviços de modelo de dados do esquema **teleca** :
+1. Expanda a árvore da fonte de dados **MySQL** . Selecione os seguintes objetos de modelo de dados e serviços do **teleca** schema:
 
    * **Objetos** do modelo de dados:
 
@@ -206,7 +206,7 @@ A configuração do modelo de dados de formulário inclui:
 
 ### Criar propriedades secundárias calculadas para o objeto de modelo de dados {#create-computed-child-properties-for-data-model-object}
 
-Uma propriedade calculada é aquela cujo valor é calculado com base em uma regra ou uma expressão. Usando uma regra, é possível definir o valor de uma propriedade calculada como uma string literal, um número, resultado de uma expressão matemática ou o valor de outra propriedade no modelo de dados de formulário.
+Uma propriedade calculada é aquela cujo valor é calculado com base em uma regra ou expressão. Usando uma regra, é possível definir o valor de uma propriedade calculada como uma string literal, um número, resultado de uma expressão matemática ou o valor de outra propriedade no modelo de dados de formulário.
 
 Com base no caso de uso, crie a propriedade computada secundária **usagecharges** no objeto de modelo de dados **bill** usando a seguinte expressão matemática:
 
@@ -228,7 +228,7 @@ Execute as seguintes etapas para criar propriedades filhas computadas para o obj
 
    ![Editor de regras de encargos de uso](assets/usage_charges_rule_editor_new.png)
 
-1. Na expressão matemática, selecione **cobranças** e **cálculos** como primeiro e segundo objetos, respectivamente. Selecione **mais** como operador. Toque na expressão matemática e toque em **Extend Expression** para adicionar **smscharges**, **internetrates**, **roamingnational**, **roamingintnl****** e telaobjetos à expressão.
+1. Na expressão matemática, selecione **cobranças** e **cálculos** como primeiro e segundo objetos, respectivamente. Selecione **mais** como operador. Toque na expressão matemática e toque em **Estender Expressão** para adicionar **sorteios**, **sobretaxas**, **roamingnational**, **roamingintnl****** e telade objetos à expressão.
 
    A imagem a seguir descreve a expressão matemática no editor de regras:
 
@@ -258,7 +258,7 @@ Execute as seguintes etapas para criar associações entre objetos de modelo de 
    * Especifique um título para a associação. É um campo opcional.
    * Selecione **Um para muitos** na lista suspensa **Tipo** .
 
-   * Selecione **chamadas** na lista suspensa Objeto **** modelo.
+   * Selecione **chamadas** na lista suspensa Objeto **** Modelo.
 
    * Selecione **obter** na lista suspensa **Serviço** .
 
@@ -299,7 +299,7 @@ Os objetos de modelo de faturamento e dados do cliente são vinculados usando as
 
    * Selecione **cliente** na lista suspensa **Vínculo para** .
 
-   * Selecione **customerplan** na lista suspensa Valor **de** vínculo.
+   * Selecione **customerplan** na lista suspensa Valor **de** vinculação.
 
    * Toque em **Concluído** para criar um vínculo entre as propriedades billplan e customerplan.
    ![Adicionar associação para fatura de cliente](assets/add_association_customer_bills_new.png)
@@ -314,17 +314,17 @@ Depois de criar associações entre o cliente e outros objetos de modelo de dado
 
 1. Marque a caixa de seleção na parte superior do objeto de modelo de dados do **cliente** para selecioná-lo e toque em **Editar propriedades**. O painel **Editar propriedades** é aberto.
 1. Especifique o **cliente** como o objeto **Modelo de nível** superior.
-1. Selecione **obter** na lista suspensa Serviço **de** leitura.
+1. Selecione **obter** na lista suspensa **Ler serviço** .
 1. Na seção **Argumentos** :
 
    * Selecione Atributo **de** solicitação na lista suspensa **Vínculo para** .
 
    * Especifique **mobilenum** como o Valor de vínculo.
 
-1. Selecione **atualizar** na lista suspensa Serviço de **gravação** .
+1. Selecione **update** na lista suspensa Serviço de **gravação** .
 1. Na seção **Argumentos** :
 
-   * Para a propriedade **mobilenum** , selecione **cliente** na lista suspensa **Vínculo para** .
+   * Para a propriedade **mobilenum** , selecione **cliente** na lista suspensa **Vínculo** .
 
    * Selecione **mobilenum** na lista suspensa Valor **de** vínculo.
 
@@ -345,7 +345,7 @@ Depois de criar associações entre o cliente e outros objetos de modelo de dado
 1. No painel **Editar propriedades** :
 
    * Insira um título e uma descrição opcionais.
-   * Selecione **cliente** na lista suspensa Objeto **do Modelo de** saída.
+   * Selecione **cliente** na lista suspensa Objeto **do Modelo de** Saída.
 
    * Toque em **Concluído** para salvar as propriedades.
    ![Editar propriedades](assets/edit_properties_get_details_new.png)
