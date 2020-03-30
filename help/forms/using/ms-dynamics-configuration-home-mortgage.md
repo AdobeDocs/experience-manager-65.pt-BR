@@ -8,12 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
 
-# Configure o Microsoft Dynamics 365 para o fluxo de trabalho hipotecário residencial do site de referência We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
+# Configurar o Microsoft Dynamics 365 para o fluxo de trabalho hipotecário residencial do site de referência We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Saiba como aproveitar os serviços do Microsoft® Dynamics 365 através de formulários adaptáveis para o fluxo de trabalho hipotecário residencial do site de Referência do We.Finance
 
@@ -34,18 +34,18 @@ Antes de começar a configurar o Dynamics 365, verifique se você:
 * Aplicativo registrado para o serviço do Dynamics 365 com o Microsoft® Azure Ative Diretory
 * ID do cliente e segredo do cliente para o aplicativo registrado
 
-## Vincule a calculadora de hipotecas domésticas à página inicial do site {#link-the-home-mortgage-calculator-with-your-site-home-page}
+## Vincule a calculadora de hipotecas residenciais ao home page do site {#link-the-home-mortgage-calculator-with-your-site-home-page}
 
 1. Na instância do autor, vá para a seguinte página:
 
-   https://[sderver]:[porta]/editor.html/content/we-finance/global/en/loan-landing-page.html
+   `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Role para baixo até a Calculadora Hipoteca Inicial.
-1. Realce o painel da coluna direita (da calculadora) e toque para exibir o menu pop-up. No menu pop-up, toque em Configurar. A caixa de diálogo Editar contêiner de formulários AEM é exibida.
+1. Realce o painel da coluna direita (da calculadora) e toque para exibir o menu pop-up. No menu pop-up, toque em Configurar. A caixa de diálogo Editar Container de formulários AEM é exibida.
 
    ![calculadora configurepanel](assets/calculatorconfigurepanel.png)
 
-1. Na caixa de diálogo Editar contêiner de formulários AEM, procure o caminho do ativo e selecione a calculadora de hipoteca inicial no seguinte caminho e toque em **Confirmar**:
+1. Na caixa de diálogo Editar o Container de formulários AEM, navegue pelo caminho do ativo e selecione a calculadora de hipoteca inicial no seguinte caminho e toque em **Confirmar**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
@@ -56,13 +56,13 @@ Antes de começar a configurar o Dynamics 365, verifique se você:
 
    >[!NOTE]
    >
-   >O vínculo dos campos da calculadora com o FDM é pré-configurado pelo pacote do site de referência We.Finance. Para exibir o vínculo, abra o formulário no modo de criação e veja as referências de vínculo de campo.
+   >O vínculo dos campos da calculadora com o FDM é pré-configurado pelo pacote do site de referência We.Finance. Para visualização do vínculo, abra o formulário no modo de criação e veja as referências de vínculo de campo.
 
 1. Para criar uma entidade personalizada para armazenar o registro do candidato para o aplicativo de hipoteca residencial, importe o pacote da solução AEMFormsFSIRefsite_1_0.zip para a instância do Microsoft® Dynamics:
 
    1. Baixe o pacote de:
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
    1. Importe o pacote da solução para a instância do Microsoft® Dynamics. Em sua instância do Microsoft® Dynamics, vá até **Configurações** > **Soluções** e toque em **Importar**.
 
@@ -70,7 +70,7 @@ Antes de começar a configurar o Dynamics 365, verifique se você:
 
    1. Baixe o pacote de:
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
    1. Importe o pacote para sua instância do Microsoft® Dynamics. Em sua instância do Microsoft® Dynamics, vá até **Vendas** > **Contatos** e toque em **Importar dados**.
 
