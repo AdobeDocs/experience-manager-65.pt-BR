@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,19 +28,19 @@ Evite invocar qualquer processo enquanto o servidor estiver no modo de manutenç
 
 1. Em um navegador da Web, digite:
 
-   `https://`*[nome do host ]*`:`*[porta]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[administrador nome de usuário ]*`&password=`*[senha]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
    Uma mensagem &quot;agora pausada&quot; é exibida na janela do navegador.
 
    >[!NOTE]
    >
-   >Se você encerrar o servidor enquanto ele estiver no modo de manutenção, ele ainda estará no modo de manutenção quando for reiniciado. Você deve desativar o modo de manutenção quando terminar as tarefas de manutenção.
+   >Se você encerrar o servidor enquanto ele estiver no modo de manutenção, ele ainda estará no modo de manutenção quando for reiniciado. Você deve desativar o modo de manutenção quando terminar suas tarefas de manutenção.
 
 **Verifique se os formulários AEM estão sendo executados no modo de manutenção**
 
 1. Em um navegador da Web, digite:
 
-   `https://`*[nome]do host:nome de usuário[do ]*administrador`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[da porta]* `&password=`*[senha ]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
    O status é exibido na janela do navegador. Um status &quot;true&quot; indica que o servidor está sendo executado no modo de manutenção e &quot;false&quot; indica que o servidor não está no modo de manutenção.
 
@@ -48,7 +48,7 @@ Evite invocar qualquer processo enquanto o servidor estiver no modo de manutenç
 
 1. Em um navegador da Web, digite:
 
-   `https://`*[nome]do host:nome de usuário[do ]*administrador`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[da porta]* `&password=`*[senha ]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 
    Uma mensagem &quot;agora em execução&quot; é exibida na janela do navegador.
 
