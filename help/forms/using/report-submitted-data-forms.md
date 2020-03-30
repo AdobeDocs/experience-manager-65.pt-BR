@@ -1,28 +1,28 @@
 ---
 title: APIs para trabalhar com formulários enviados no portal de formulários
 seo-title: APIs para trabalhar com formulários enviados no portal de formulários
-description: O AEM Forms fornece APIs que você pode usar para consultar e executar ações em dados de formulários enviados no portal de formulários.
-seo-description: O AEM Forms fornece APIs que você pode usar para consultar e executar ações em dados de formulários enviados no portal de formulários.
+description: O AEM Forms fornece APIs que podem ser usadas para query e execução de ações em dados de formulários enviados no portal de formulários.
+seo-description: O AEM Forms fornece APIs que podem ser usadas para query e execução de ações em dados de formulários enviados no portal de formulários.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # APIs para trabalhar com formulários enviados no portal de formulários {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-O AEM Forms fornece APIs que podem ser usadas para consultar dados de formulários enviados pelo portal de formulários. Além disso, você pode publicar comentários ou atualizar propriedades de formulários enviados usando as APIs explicadas neste documento.
+O AEM Forms fornece APIs que você pode usar para query de dados de formulários enviados pelo portal de formulários. Além disso, você pode publicar comentários ou atualizar as propriedades de formulários enviados usando as APIs explicadas neste documento.
 
 >[!NOTE]
 >
 >Os usuários que chamarão as APIs devem ser adicionados ao grupo de revisores, conforme descrito em [Associando os revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
 
-## OBTER /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## OBTENHA /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Retorna uma lista de todos os formulários elegíveis.
 
@@ -92,7 +92,7 @@ Especifique os seguintes parâmetros no URL da solicitação:
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (opcional)</td>
-   <td>Especifica uma lista separada por vírgulas de propriedades de formulário a serem incluídas nos resultados. <br /> As propriedades padrão são: <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>Especifica uma lista separada por vírgulas das propriedades do formulário a ser incluída nos resultados. As propriedades padrão são:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (opcional)</td>
@@ -141,14 +141,14 @@ Especifique os seguintes parâmetros no URL da solicitação:
 
 ### Resposta {#response-2}
 
-Retorna uma ID de comentário sobre a publicação bem-sucedida de um comentário.
+Retorna uma ID de comentário sobre a postagem bem-sucedida de um comentário.
 
 ### Exemplo {#example-2}
 
 **URL de solicitação**
 
 ```
-https://[host:[port]/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
+https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
 **Resposta**
@@ -186,7 +186,7 @@ O objeto response contém uma matriz JSON que inclui todos os comentários assoc
 **URL de solicitação**
 
 ```
-https://[host]:[port]/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
+https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
 **Resposta**
@@ -218,7 +218,7 @@ Retorna um objeto JSON com informações sobre a atualização publicada.
 **URL de solicitação**
 
 ```
-https://[host]:[port]/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
+https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 ```
 
 **Resposta**
