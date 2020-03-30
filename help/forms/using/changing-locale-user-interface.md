@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ A área de trabalho do AEM Forms fornece suporte imediato para idiomas inglês, 
 Para localizar a interface de usuário do espaço de trabalho do AEM Forms para o idioma de sua escolha:
 
 * Localize o texto da área de trabalho do AEM Forms.
-* Localize categorias, filas e processos recolhidos.
+* Localize categorias recolhidas, filas e processos.
 * Localizar o seletor de datas
 
 Antes de executar as etapas acima, siga as etapas listadas em Etapas [genéricas para personalização](../../forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
@@ -37,7 +37,7 @@ Antes de executar as etapas acima, siga as etapas listadas em Etapas [genéricas
 Execute as seguintes etapas para adicionar suporte para um idioma *Novo* e o código de idioma do navegador *agora*.
 
 1. Faça logon no CRXDE Lite.
-O URL padrão do CRXDE Lite é `https://[server]:[port]/lc/crx/de/index.jsp`.
+O URL padrão do CRXDE Lite é `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Navegue até o local `apps/ws/locales` e crie uma nova pasta `nw.`
 1. Copie o arquivo `translation.json`do local `/apps/ws/locales/en-US` para o local `/apps/ws/locales/nw` .
 1. Navegue até `/apps/ws/locales/nw` e abra `translation.json` para edição. Faça alterações específicas à localidade no arquivo Translation.json.
@@ -50,11 +50,11 @@ O URL padrão do CRXDE Lite é `https://[server]:[port]/lc/crx/de/index.jsp`.
 
 A área de trabalho do AEM Forms usa imagens para exibir cabeçalhos de categorias, filas e processos. Você precisa de um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código de espaço de trabalho do AEM Forms.](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
 
-Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categories_nw.png*, *Queue_nw.png* e *Processes_nw.png*. A largura recomendada das imagens é de 19x.
+Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categoria_nw.png*, *Queue_nw.png* e *Processes_nw.png*. A largura recomendada das imagens é de 19x.
 
 >[!NOTE]
 >
->Para localizar o código de idioma do navegador do seu navegador. Abrir `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>Para localizar o código de idioma do navegador do seu navegador. Abrir `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![collapsing_panel_image](assets/collapsing_panels_image.png)
 
@@ -191,4 +191,4 @@ Você precisa de um pacote de desenvolvimento para localizar a API *datepicker* 
    }
    ```
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
