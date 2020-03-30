@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,19 +25,19 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 * Formulários PDF
 * Documento (documentos PDF simples)
 
-Você pode fazer upload dos tipos de ativos suportados individualmente ou como um arquivo ZIP. Você pode carregar um ativo do tipo `Resource`, somente ao lado de um formulário XFA em um arquivo ZIP.
+Você pode fazer upload dos tipos de ativos suportados individualmente ou como um arquivo ZIP. Você pode fazer upload de um ativo do tipo `Resource`, somente ao lado de um formulário XFA em um arquivo ZIP.
 
 >[!NOTE]
 >
->Certifique-se de que você é um membro do `form-power-users` grupo para poder carregar arquivos XDP. Entre em contato com o administrador para se tornar membro do grupo.
+>Certifique-se de que você é um membro do `form-power-users` grupo para poder carregar arquivos XDP. Entre em contato com o administrador para se tornar um membro do grupo.
 
 ## Carregar formulários {#uploading-forms}
 
-1. Faça logon na interface do usuário do AEM Forms acessando `https://[server]:[port]/aem/forms.html`.
+1. Faça logon na interface do usuário do AEM Forms acessando `https://'[server]:[port]'/aem/forms.html`.
 1. Navegue até a pasta onde deseja carregar o formulário ou a pasta que contém os formulários.
 1. Na barra de ferramentas de ações, toque em **Criar > Upload** de arquivo.
 
-   ![Arquivos da opção de armazenamento local em Criar](assets/step.png)
+   ![Arquivos da opção armazenamento local em Criar](assets/step.png)
 
 1. A caixa de diálogo Carregar formulário(s) ou pacote permite que você navegue e escolha o arquivo que deseja carregar. O navegador de arquivos exibe apenas os formatos de arquivo suportados (ZIP, XDP e PDF).
 
@@ -45,11 +45,11 @@ Você pode fazer upload dos tipos de ativos suportados individualmente ou como u
    >
    >Um nome de arquivo só pode conter caracteres alfanuméricos, hífen ou sublinhado.
 
-1. Clique em Carregar após a seleção do arquivo para fazer upload dos arquivos ou clique em &#39;Cancelar&#39; para cancelar o upload. Uma pop-up lista os ativos que são adicionados e os ativos que são atualizados no local atual.
+1. Clique em Carregar após a seleção do arquivo para fazer upload dos arquivos ou clique em &#39;Cancelar&#39; para cancelar o upload. Um pop-up lista os ativos adicionados e os ativos que são atualizados no local atual.
 
    >[!NOTE]
    >
-   >Para um arquivo ZIP, os caminhos relativos de todos os ativos suportados são exibidos. Os ativos não suportados dentro do ZIP são ignorados e não listados. Entretanto, se o arquivo ZIP contiver apenas os ativos não suportados, uma mensagem de erro será exibida em vez da caixa de diálogo pop-up.
+   >Para um arquivo ZIP, os caminhos relativos de todos os ativos suportados são exibidos. Os ativos não suportados dentro do ZIP são ignorados e não listados. No entanto, se o arquivo ZIP contiver apenas os ativos não suportados, uma mensagem de erro será exibida em vez da caixa de diálogo pop-up.
 
    ![Carregar caixa de diálogo ao carregar um formulário XFA](assets/upload-scr.png)
 
@@ -57,15 +57,15 @@ Você pode fazer upload dos tipos de ativos suportados individualmente ou como u
 
    ![Mensagem de erro ao carregar um formulário XFA](assets/upload-scr-err.png)
 
-Quando o upload for concluído, um fluxo de trabalho em segundo plano gerará miniaturas para cada ativo, com base na visualização do ativo. As versões mais recentes dos ativos, se carregados, substituem os ativos existentes.
+Quando o upload for concluído, um fluxo de trabalho em segundo plano gerará miniaturas para cada ativo, com base na pré-visualização do ativo. As versões mais recentes dos ativos, se carregados, substituem os ativos existentes.
 
 ### Modo protegido {#protected-mode}
 
-O servidor do AEM Forms permite executar código JavaScript. Um código JavaScript mal-intencionado pode prejudicar um ambiente AEM Forms. O modo protegido restringe o AEM Forms a executar arquivos XDP somente de ativos e locais confiáveis. Todos os XDP disponíveis na interface do usuário do AEM Forms são considerados ativos confiáveis.
+O servidor do AEM Forms permite executar código JavaScript. Um código JavaScript mal-intencionado pode prejudicar um ambiente do AEM Forms. O modo protegido restringe o AEM Forms a executar arquivos XDP somente de ativos e locais confiáveis. Todos os XDP disponíveis na interface do usuário do AEM Forms são considerados ativos confiáveis.
 
 O modo protegido está ativado, por padrão. Se necessário, você pode desativar o modo protegido:
 
-1. Faça logon no console da Web do AEM como administrador. O URL é https://[server]:[port]/system/console/configMgr
+1. Faça logon no console da Web do AEM como administrador. O URL é https://&#39;[server]:[port]&#39;/system/console/configMgr
 1. Abra Configurações de formulários móveis para edição.
 1. Desmarque a opção Modo protegido e clique em **Salvar**. O modo protegido está desativado.
 
