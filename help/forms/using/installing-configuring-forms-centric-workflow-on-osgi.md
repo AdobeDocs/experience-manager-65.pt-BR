@@ -1,14 +1,14 @@
 ---
 title: Instalação e configuração do fluxo de trabalho centrado em formulários no OSGi
 seo-title: Instalação e configuração do fluxo de trabalho centrado em formulários no OSGi
-description: Instale e configure o AEM Forms Interative Communications para criar correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, faturas e kits de boas-vindas.
-seo-description: Instale e configure o AEM Forms Interative Communications para criar correspondências comerciais, documentos, declarações, avisos de benefícios, emails de marketing, faturas e kits de boas-vindas.
+description: Instale e configure o AEM Forms Interative Communications para criar correspondências de negócios, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas.
+seo-description: Instale e configure o AEM Forms Interative Communications para criar correspondências de negócios, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas.
 uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
 topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,21 +19,21 @@ source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
 
 As empresas coletam e processam dados de vários formulários, sistemas back-end e outras fontes de dados. O processamento de dados envolve procedimentos de revisão e aprovação, tarefas repetitivas e arquivamento de dados. Por exemplo, revisar um formulário e convertê-lo em documento PDF. Quando feitas manualmente, as tarefas repetitivas podem levar muito tempo e recursos.
 
-Você pode usar o fluxo de trabalho centrado no [Forms no OSGi](../../forms/using/aem-forms-workflow.md) para criar rapidamente fluxos de trabalho adaptáveis baseados em formulários. Esses fluxos de trabalho podem ajudá-lo a automatizar os fluxos de trabalho de revisão e aprovação, os fluxos de trabalho de processos de negócios e outras tarefas repetitivas. Esses fluxos de trabalho também ajudam a processar documentos (criar, montar, distribuir e arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos, decodificar formulários com códigos de barras e muito mais) e usar o fluxo de trabalho de assinatura do Adobe Sign com formulários e documentos.
+Você pode usar o fluxo de trabalho centrado em [formulários no OSGi](../../forms/using/aem-forms-workflow.md) para criar rapidamente workflows adaptáveis baseados em formulários. Esses workflows podem ajudá-lo a automatizar workflows de revisão e aprovação, workflows de processos comerciais e outras tarefas repetitivas. Esses workflows também ajudam a processar documentos (criar, montar, distribuir e arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos, decodificar formulários com códigos de barras e muito mais) e usar o fluxo de trabalho de assinatura do Adobe Sign com formulários e documentos.
 
-Depois de configurados, esses fluxos de trabalho podem ser acionados manualmente para concluir um processo definido ou executados de forma programática quando os usuários enviam um formulário ou uma comunicação interativa. O recurso está incluído no pacote complementar do AEM Forms.
+Depois de configurados, esses workflows podem ser acionados manualmente para concluir um processo definido ou executados de forma programática quando os usuários enviam um formulário ou uma comunicação interativa. O recurso está incluído no pacote complementar do AEM Forms.
 
-O AEM Forms é uma plataforma avançada de classe empresarial. O fluxo de trabalho centrado em formulários no OSGi é apenas um dos recursos do AEM Forms. Para obter a lista completa de recursos, consulte [Introdução ao AEM Forms](../../forms/using/introduction-aem-forms.md).
+O AEM Forms é uma plataforma avançada de classe empresarial. O fluxo de trabalho centrado em formulários no OSGi é apenas um dos recursos do AEM Forms. Para obter a lista completa dos recursos, consulte [Introdução ao AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 >[!NOTE]
 >
->Com o fluxo de trabalho centrado no Forms no OSGi, você pode criar e implantar rapidamente fluxos de trabalho para várias tarefas na pilha OSGi, sem precisar instalar o recurso de gerenciamento de processos completo na pilha JEE. Veja uma [comparação](../../forms/using/capabilities-osgi-jee-workflows.md) dos fluxos de trabalho do AEM centrados no Forms no OSGi e no Process Management no JEE para saber mais sobre as diferenças e as semelhanças nos recursos.
+>Com o fluxo de trabalho centrado no Forms no OSGi, você pode criar e implantar rapidamente workflows para várias tarefas na pilha OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha JEE. Veja uma [comparação](../../forms/using/capabilities-osgi-jee-workflows.md) dos Workflows AEM centrados no Forms no OSGi e no Process Management no JEE para saber mais sobre as diferenças e similaridades nos recursos.
 >
 >Após a comparação, se você optar por instalar o recurso Process Management na pilha JEE, consulte [Instalar ou atualizar formulários AEM no JEE](/help/forms/home.md) para obter informações detalhadas sobre como instalar e configurar a pilha JEE e os recursos de Process Management.
 
 ## Topologia de implantação {#deployment-topology}
 
-O pacote complementar AEM Forms é um aplicativo implantado no AEM. É necessário apenas um mínimo de uma instância de autor ou processamento de AEM (autor da produção) para executar o fluxo de trabalho centrado em formulários no recurso OSGi.  Uma instância de processamento é uma instância de autor [de AEM](/help/forms/using/hardening-securing-aem-forms-environment.md) endurecida. Não execute nenhuma criação real, como criar fluxos de trabalho ou formulários adaptáveis, no autor da produção.
+O pacote complementar AEM Forms é um aplicativo implantado no AEM. É necessário apenas um mínimo de uma instância de autor ou processamento de AEM (autor da produção) para executar o fluxo de trabalho centrado em formulários no recurso OSGi. Uma instância de processamento é uma instância de autor [de AEM](/help/forms/using/hardening-securing-aem-forms-environment.md) endurecida. Não execute nenhuma criação real, como criar workflows ou formulários adaptáveis, no autor da produção.
 
 A topologia a seguir é indicativa para executar o AEM Forms Interative Communications, o Correspondence Management, a captura de dados do AEM Forms e o fluxo de trabalho centralizado em formulários em recursos OSGi. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação para o AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -49,13 +49,13 @@ O fluxo de trabalho do AEM Forms centrado em formulários no OSGi executa a Caix
 
 Antes de começar a instalar e configurar o fluxo de trabalho centrado no Forms no OSGi, verifique se:
 
-* A infraestrutura de hardware e software está instalada. Para obter uma lista detalhada do hardware e software suportados, consulte os requisitos [](/help/sites-deploying/technical-requirements.md)técnicos.
+* A infraestrutura de hardware e software está em vigor. Para obter uma lista detalhada do hardware e software suportados, consulte os requisitos [](/help/sites-deploying/technical-requirements.md)técnicos.
 
 * O caminho de instalação da instância do AEM não contém espaços em branco.
 * Uma instância do AEM está ativa e em execução. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM em execução em um servidor no modo de autor ou publicação. Você precisa de pelo menos uma instância do AEM (Autor ou Processamento) para executar o fluxo de trabalho centrado no Forms no OSGi:
 
    * **Autor**: Uma instância do AEM usada para criar, carregar e editar conteúdo e administrar o site. Depois que o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
-   * **** Processando: Uma instância de processamento é uma instância de autor [de AEM](/help/forms/using/hardening-securing-aem-forms-environment.md) endurecida. Você pode configurar uma instância de Autor e endurecê-la depois de executar a instalação.
+   * **Processando:** Uma instância de processamento é uma instância de autor [de AEM](/help/forms/using/hardening-securing-aem-forms-environment.md) endurecida. Você pode configurar uma instância de Autor e endurecê-la depois de executar a instalação.
 
    * **Publicar**: Uma instância do AEM que fornece o conteúdo publicado ao público pela Internet ou por uma rede interna.
 
@@ -99,8 +99,8 @@ Antes de começar a instalar e configurar o fluxo de trabalho centrado no Forms 
 
 O pacote complementar AEM Forms é um aplicativo implantado no AEM. O pacote contém um fluxo de trabalho centrado no Forms no OSGi e outros recursos. Execute as seguintes etapas para instalar o pacote complementar:
 
-1. Faça logon no servidor [](https://localhost:4502) AEM como administrador e abra o compartilhamento [](https://localhost:4502/crx/packageshare)de pacote. Você precisa de uma Adobe ID para fazer logon no compartilhamento de pacote.
-1. No compartilhamento [de pacote do](https://localhost:4502/crx/packageshare/login.html)AEM, pesquise nos pacotes de complementos do **AEM 6.5** ou nos **service packs** mais recentes, clique no pacote aplicável ao seu sistema operacional e clique em **Download**. Leia e aceite o contrato de licença e clique em **OK**. O download é iniciado. Após o download, a palavra **Download** é exibida ao lado do pacote.
+1. Faça logon no servidor [](https://localhost:4502) AEM como administrador e abra o compartilhamento [](https://localhost:4502/crx/packageshare)de pacote. Você precisa de uma ID da Adobe para fazer logon no compartilhamento de pacote.
+1. No compartilhamento [de pacote do](https://localhost:4502/crx/packageshare/login.html)AEM, pesquise nos pacotes de complementos do **AEM 6.5** ou nos **service packs** mais recentes, clique no pacote aplicável ao seu sistema operacional e clique em **Download**. Leia e aceite o contrato de licença e clique em **OK**. Os start de download. Após o download, a palavra **Download** é exibida ao lado do pacote.
 
    Você também pode usar o número da versão para pesquisar um pacote de complementos. Para obter o número da versão do pacote mais recente, consulte o artigo de versões [](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) do AEM Forms.
 
@@ -113,7 +113,7 @@ O pacote complementar AEM Forms é um aplicativo implantado no AEM. O pacote con
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
-O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração das bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do dispatcher e do Adobe Target.
+O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração das bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do dispatcher e do Público alvo da Adobe.
 
 ### Configurações obrigatórias pós-instalação {#mandatory-post-installation-configurations}
 
@@ -124,7 +124,7 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 1. Pare a instância subjacente do AEM.
 1. Abra o diretório [\crx-quickstart\conf\sling.properties de instalação do]AEM para edição.
 
-   Se você usou o diretório [\crx-quickstart\bin\start.bat de instalação do]AEM para iniciar o AEM, edite sling.properties localizado em [AEM_root]\crx-quickstart\.
+   Se você usou o diretório [\crx-quickstart\bin\start.bat de instalação do]AEM para start AEM, edite sling.properties localizado em [AEM_root]\crx-quickstart\.
 
 1. Adicione as seguintes propriedades ao arquivo sling.properties:
 
@@ -133,14 +133,14 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
 
-1. Salve e feche o arquivo e inicie a instância do AEM.
+1. Salve e feche o arquivo e start a instância do AEM.
 1. Repita as etapas de 1 a 4 em todas as instâncias de Autor e Publicação.
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
 Execute as seguintes etapas em todas as instâncias de Autor e Publicação na lista de permissões do pacote:
 
-1. Abra o AEM Configuration Manager em uma janela do navegador. O URL padrão é https://[server]:[port]/system/console/configMgr.
+1. Abra o AEM Configuration Manager em uma janela do navegador. O URL padrão é https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Pesquise e abra a Configuração **do firewall de** desserialização.
 1. Adicione o pacote **sun.util.calendário** ao campo de lista de **permissões** . Clique em Salvar.
 1. Repita as etapas de 1 a 3 em todas as instâncias de Autor e Publicação.
@@ -159,9 +159,9 @@ O Dispatcher está em cache e na ferramenta de balanceamento de carga para o AEM
 
    Salve e feche o arquivo. Para obter informações detalhadas sobre filtros, consulte a documentação [do](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)Dispatcher.
 
-1. Configure o serviço de filtro do referenciador:
+1. Configure o serviço de filtro de quem indicou:
 
-   Faça logon no gerenciador de configuração Apache Felix como administrador. O URL padrão do gerenciador de configuração é https://[server]:[port_number]/system/console/configMgr. No menu **Configurações** , selecione a opção **Apache Sling Referrer Filter (Filtro** de referência Apache Sling). No campo Permitir hosts, digite o nome de host do dispatcher para permitir como referenciador e clique em **Salvar**. O formato da entrada é `https://[server]:[port]`.
+   Faça logon no gerenciador de configuração Apache Felix como administrador. O URL padrão do gerenciador de configuração é https://&#39;server&#39;:[port_number]/system/console/configMgr. No menu **Configurações** , selecione a opção Filtro **** de Quem indicou Apache Sling. No campo Permitir hosts, digite o nome de host do dispatcher para permitir como uma quem indicou e clique em **Salvar**. O formato da entrada é `https://'[server]:[port]'`.
 
 #### Configurar cache {#configure-cache}
 
@@ -172,7 +172,7 @@ O cache é um mecanismo para reduzir os tempos de acesso aos dados, reduzir a la
 
 Execute as seguintes etapas para configurar o cache de formulários adaptáveis:
 
-1. Vá para o gerenciador de configuração do console da Web do AEM em `https://[server]:[port]/system/console/configMgr`.
+1. Vá para o gerenciador de configuração do console da Web do AEM em `https://'[server]:[port]'/system/console/configMgr`.
 1. Clique em Serviço **** de configuração de formulário adaptável para editar seus valores de configuração. Na caixa de diálogo Editar valores de configuração, especifique o número máximo de formulários ou documentos que uma instância do servidor de formulários AEM pode armazenar em cache no campo **Número de formulários** adaptáveis. O valor padrão é 100. Clique em **Salvar**.
 
    >[!NOTE]
@@ -181,9 +181,9 @@ Execute as seguintes etapas para configurar o cache de formulários adaptáveis:
 
 #### Configurar o Adobe Sign {#configure-adobe-sign}
 
-O Adobe Sign permite fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos legais, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muitas outras áreas.
+O Adobe Sign permite workflows de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os workflows para processar documentos para áreas legais, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muitas outras áreas.
 
-Em um fluxo de trabalho típico centrado no Adobe Sign e no Forms no cenário OSGi, um usuário preenche um formulário adaptável para **solicitar um serviço**. Por exemplo, um aplicativo de cartão de crédito e um formulário de benefícios para o cidadão. Quando um usuário preenche, envia e assina o formulário do aplicativo, um fluxo de trabalho de aprovação/rejeição é iniciado. O provedor de serviços revisa o aplicativo na Caixa de entrada do AEM e usa o Adobe Sign para assinar eletronicamente o aplicativo. Para ativar fluxos de trabalho de assinatura eletrônica semelhantes, é possível integrar o Adobe Sign com o AEM Forms.
+Em um fluxo de trabalho típico centrado no Adobe Sign e no Forms no cenário OSGi, um usuário preenche um formulário adaptável para **solicitar um serviço**. Por exemplo, um aplicativo de cartão de crédito e um formulário de benefícios para o cidadão. Quando um usuário preenche, envia e assina o formulário do aplicativo, um fluxo de trabalho de aprovação/rejeição é iniciado. O provedor de serviço revisa o aplicativo na Caixa de entrada do AEM e usa o Adobe Sign para assinar eletronicamente o aplicativo. Para ativar workflows semelhantes de assinatura eletrônica, é possível integrar o Adobe Sign aos formulários do AEM.
 
 Para usar o Adobe Sign com formulários AEM, [integre o Adobe Sign aos formulários](../../forms/using/adobe-sign-integration-adaptive-forms.md)AEM.
 
@@ -191,7 +191,7 @@ Para usar o Adobe Sign com formulários AEM, [integre o Adobe Sign aos formulár
 
 Você configurou um ambiente para usar o fluxo de trabalho centrado no Forms em recursos OSGi. Agora, as etapas para usar esse recurso são:
 
-* [Usar fluxo de trabalho centrado em formulários no OSGi](../../forms/using/aem-forms-workflow.md)
-* [Referência da etapa do fluxo de trabalho](/help/sites-developing/workflows-step-ref.md)
+* [Uso de fluxo de trabalho centrado em formulários no OSGi](../../forms/using/aem-forms-workflow.md)
+* [Referência da Etapa do Fluxo de Trabalho](/help/sites-developing/workflows-step-ref.md)
 * [Pós-processamento de cartas e comunicações interativas](../../forms/using/submit-letter-topostprocess.md)
 
