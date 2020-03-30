@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
 
 Eventos como erros de tempo de execução ou inicialização são registrados nos arquivos de log do servidor de aplicativos. Se tiver problemas ao implantar no servidor de aplicativos, você pode usar os arquivos de log para ajudar a encontrar o problema. É possível abrir os arquivos de registro usando qualquer editor de texto.
 
-(JBoss) Os seguintes arquivos de log estão localizados no `[appserver root]/server/[server]/log` diretório:
+(JBoss) Os seguintes arquivos de log estão localizados no `[appserver root]/server/'server'/log` diretório:
 
 * boot.log
 * server.log.*[aaaa-mm-dd]*
