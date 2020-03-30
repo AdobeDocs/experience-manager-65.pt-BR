@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,12 +18,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 A instalação e as configurações padrão do AEM Forms permitem que apenas um espaço de trabalho do AEM Forms esteja disponível no servidor. No entanto, pode ser necessário hospedar duas instâncias diferentes de espaço de trabalho do AEM Forms em um único servidor do AEM Forms. As duas instâncias são acessíveis por URLs diferentes.
 
-Os administradores do AEM Forms personalizam o espaço de trabalho para criar dois URLs diferentes e disponibilizar dois espaços de trabalho no mesmo servidor. Neste artigo de personalização, supomos que os dois espaços de trabalho estejam acessíveis em `https://[server]:[port]/lc/ws` e `https://[server]:[port]:/lc/ws2`.
+Os administradores do AEM Forms personalizam o espaço de trabalho para criar dois URLs diferentes e disponibilizar dois espaços de trabalho no mesmo servidor. Neste artigo de personalização, supomos que os dois espaços de trabalho estejam acessíveis em `https://'[server]:[port]'/lc/ws` e `https://'[server]:[port]':/lc/ws2`.
 
 Siga estas etapas para configurar a área de trabalho do AEM Forms.
 
-1. Instale o pacote dev da área de trabalho do AEM Forms em seu servidor. Consulte o pacote [](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)dev para obter instruções de criação.
-1. Faça logon no CRXDE Lite como administrador, acessando `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Instale o pacote dev da área de trabalho do AEM Forms em seu servidor. Consulte o pacote [](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)dev para obter instruções sobre como criá-lo.
+1. Faça logon no CRXDE Lite como administrador, acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copie o nó em /content e cole em /content. Renomeie o nó como ws2. Clique em **[!UICONTROL Salvar tudo]**. Nas propriedades desse nó, altere o valor de `sling:resourceType` para ws2. Clique em **[!UICONTROL Salvar tudo]**.
 
 1. Copie a pasta de /libs e cole em /apps. Renomeie a pasta para ws2. Clique em **[!UICONTROL Salvar tudo]**.
@@ -93,4 +93,4 @@ Siga estas etapas para configurar a área de trabalho do AEM Forms.
 
 1. Altere o valor de `sling:match` para `^[^/\||]/[^/\||]/ws2$`.
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
