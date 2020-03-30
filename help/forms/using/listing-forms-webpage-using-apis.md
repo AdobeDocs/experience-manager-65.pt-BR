@@ -1,24 +1,24 @@
 ---
 title: Listar formulários em uma página da Web usando APIs
 seo-title: Listar formulários em uma página da Web usando APIs
-description: Consulte Programaticamente o Gerenciador de Formulários para recuperar uma lista filtrada de formulários e exibir em suas próprias páginas da Web.
-seo-description: Consulte Programaticamente o Gerenciador de Formulários para recuperar uma lista filtrada de formulários e exibir em suas próprias páginas da Web.
+description: query programaticamente o Gerenciador de Formulários para recuperar uma lista filtrada de formulários e exibir em suas próprias páginas da Web.
+seo-description: query programaticamente o Gerenciador de Formulários para recuperar uma lista filtrada de formulários e exibir em suas próprias páginas da Web.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: db69c393fc44ca2fcb30f9fcb0c5ca456ba35ed5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Listar formulários em uma página da Web usando APIs {#listing-forms-on-a-web-page-using-apis}
 
-O AEM Forms fornece uma API de pesquisa baseada em REST que os desenvolvedores da Web podem usar para consultar e recuperar um conjunto de formulários que atende aos critérios de pesquisa. Você pode usar APIs para pesquisar formulários com base em vários filtros. O objeto response contém atributos de formulário, propriedades e pontos finais de formulários.
+O AEM Forms fornece uma API de pesquisa baseada em REST que os desenvolvedores da Web podem usar para query e recuperação de um conjunto de formulários que atende aos critérios de pesquisa. Você pode usar APIs para pesquisar formulários com base em vários filtros. O objeto response contém atributos de formulário, propriedades e pontos finais de formulários.
 
-Para pesquisar formulários usando a REST API, envie uma solicitação GET ao servidor com os parâmetros de consulta `https://[server]:[port]/libs/fd/fm/content/manage.json` descritos abaixo.
+Para pesquisar formulários usando a REST API, envie uma solicitação GET ao servidor com os parâmetros de query `https://'[server]:[port]'/libs/fd/fm/content/manage.json` descritos abaixo.
 
 ## Query parameters {#query-parameters}
 
@@ -32,11 +32,11 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
    <td>func<br /> </td>
    <td><p>Especifica a função a ser chamada. Para pesquisar formulários, defina o valor do <code>func </code>atributo como <code>searchForms</code>.</p> <p>Por exemplo, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong></strong> Observação: <em>Este parâmetro é obrigatório.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Observação:</strong> <em>Este parâmetro é obrigatório.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Especifica o caminho do aplicativo para pesquisar formulários. Por padrão, o atributo appPath pesquisa todos os aplicativos disponíveis no nível do nó raiz.<br /> </p> <p>É possível especificar vários caminhos de aplicativo em uma única consulta de pesquisa. Separe vários caminhos com um caractere de barra vertical (|). </p> </td>
+   <td><p>Especifica o caminho do aplicativo para pesquisar formulários. Por padrão, o atributo appPath pesquisa todos os aplicativos disponíveis no nível do nó raiz.<br /> </p> <p>Você pode especificar vários caminhos de aplicativo em um único query de pesquisa. Separe vários caminhos com um caractere de barra vertical (|). </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
@@ -57,11 +57,11 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
   </tr>
   <tr>
    <td>maxSize</td>
-   <td>Especifica o número máximo de formulários a serem obtidos.</td>
+   <td>Especifica o número máximo de formulários a serem buscados.</td>
   </tr>
   <tr>
    <td>deslocamento</td>
-   <td>Especifica o número de formulários a serem ignorados desde o início.</td>
+   <td>Especifica o número de formulários a serem ignorados do start.</td>
   </tr>
   <tr>
    <td>returnCount</td>
@@ -69,7 +69,7 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
   </tr>
   <tr>
    <td>demonstrativos</td>
-   <td><p>Especifica a lista de declarações. As consultas são executadas na lista de declarações especificadas no formato JSON. </p> <p>Por exemplo,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Especifica a lista de instruções. Os query são executados na lista das declarações especificadas no formato JSON. </p> <p>Por exemplo,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
@@ -85,18 +85,18 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
        <li>LT - Menor que</li>
        <li>GTEQ - maior que ou igual a</li>
        <li>LTEQ - menor que ou igual a</li>
-       <li>CONTÉM - A contém B se B faz parte de A</li>
+       <li>CONTAINS - A contém B se B faz parte de A</li>
        <li>FULLTEXT - Pesquisa de texto completo</li>
-       <li>STARTSWITH - A começa com B se B for a parte inicial de A</li>
+       <li>STARTSWITH - A start com B se B for a parte inicial de A</li>
        <li>ENDSWITH - A termina com B se B for a parte final de A</li>
        <li>LIKE - Implementa o operador LIKE</li>
        <li>AND - Combine várias declarações</li>
-      </ul> <p><strong></strong> Observação: Os operadores <em>GT, LT, GTEQ e LTEQ são aplicáveis para propriedades de tipo linear como LONG, DOUBLE e DATE.</em></p> </li>
+      </ul> <p><strong>Observação:</strong> Os operadores <em>GT, LT, GTEQ e LTEQ são aplicáveis para propriedades de tipo linear como LONG, DUPLO e DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>pedidos<br /> </td>
-   <td><p>Especifica os critérios de ordem para os resultados da pesquisa. Os critérios são definidos no formato JSON. É possível classificar os resultados da pesquisa em mais de um campo. Os resultados são classificados na ordem à medida que os campos aparecem na consulta.</p> <p>Por exemplo,</p> <p>Para recuperar os resultados da consulta ordenados por propriedade de título na ordem crescente, adicione o seguinte parâmetro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Especifica os critérios de ordem para os resultados da pesquisa. Os critérios são definidos no formato JSON. É possível classificar os resultados da pesquisa em mais de um campo. Os resultados são classificados na ordem à medida que os campos aparecem no query.</p> <p>Por exemplo,</p> <p>Para recuperar os resultados do query ordenados pela propriedade title na ordem crescente, adicione o seguinte parâmetro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
@@ -142,7 +142,7 @@ statements: [{"name":"name","value":"*Claim.xdp","operator":"CONTAINS"},
 orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 ```
 
-## Resposta de exemplo {#sample-response}
+## Amostra de resposta {#sample-response}
 
 ```
 [
@@ -170,7 +170,7 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 * [Ativar componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
 * [Criar página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
-* [Listar formulários em uma página da Web usando APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
+* [Lista de formulários em uma página da Web usando APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Usar componente Rascunhos e envios](/help/forms/using/draft-submission-component.md)
 * [Personalizar o armazenamento de rascunhos e formulários enviados](/help/forms/using/draft-submission-component.md)
 * [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md)
