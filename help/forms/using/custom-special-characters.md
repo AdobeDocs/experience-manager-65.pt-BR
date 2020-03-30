@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 08e53eec26e29c2403cdfc3239da3ea23da3f321
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ O administrador pode adicionar suporte para caracteres especiais mais/personaliz
 
 Use as seguintes etapas para adicionar suporte para caracteres especiais personalizados:
 
-1. Vá para `https://[server]:[port]/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta apps, crie uma pasta chamada caracteres **** especiais com caminho/estrutura semelhante à pasta de caracteres especiais (localizada na pasta textEditorConfig em libs):
 
    1. Clique com o botão direito do mouse na pasta de caracteres **** especiais no seguinte caminho e selecione **Sobrepor nó**:
@@ -49,11 +49,11 @@ Use as seguintes etapas para adicionar suporte para caracteres especiais persona
 
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **** Caminho: /libs/fd/cm/ma/gui/configuration/textEditorConfiguração/caracteres especiais
+      **Caminho:** /libs/fd/cm/ma/gui/configuration/textEditorConfiguração/caracteres especiais
 
-      **** Localização da sobreposição: /apps/
+      **Localização da sobreposição:** /apps/
 
-      **** Corresponder tipos de nós: Verificado
+      **Corresponder tipos de nós:** Verificado
 
       >[!NOTE]
       >
@@ -83,7 +83,7 @@ Use as seguintes etapas para adicionar suporte para caracteres especiais persona
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcaracteres/&lt;YourChildNode>
 
-1. Atualize a página Editor de texto\Criar interface de usuário de correspondência. O nó que você adicionou é o último na lista de caracteres Especiais na interface do usuário.
+1. Atualize a página Editor de texto\Criar interface de usuário de correspondência. O nó que você adicionou é o último na lista de caracteres especiais na interface do usuário.
 1. Clique em **Salvar tudo**.
 1. Faça as alterações nos caracteres especiais, conforme necessário:
 
