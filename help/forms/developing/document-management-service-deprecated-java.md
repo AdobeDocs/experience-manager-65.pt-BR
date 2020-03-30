@@ -1,6 +1,6 @@
 ---
-title: Serviço de gerenciamento de documentos (obsoleto)Início rápido da API Java (SOAP)
-seo-title: Serviço de gerenciamento de documentos (obsoleto)Início rápido da API Java (SOAP)
+title: Serviço de gerenciamento de Documentos (obsoleto)Start rápido da API Java (SOAP)
+seo-title: Serviço de gerenciamento de Documentos (obsoleto)Start rápido da API Java (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
@@ -10,42 +10,42 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Início rápido da API Java (SOAP) do Document Management Service (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Start rápido da API Java (SOAP) do Documento Management Service (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
 
-As seguintes Inicializações rápidas estão disponíveis para o serviço de Gerenciamento de documentos (obsoleto).
+Os Start Rápidos a seguir estão disponíveis para o serviço Gerenciamento de Documentos (Obsoleto).
 
 >[!NOTE]
 >
->A partir de 5 de agosto de 2011, a Adobe está migrando clientes do Content Services ES para o Adobe Digital Enterprise Platform Experience Services. O roteiro do produto para clientes que usam o Content Services é mudar para o novo ADEP Experience Services - Core, que inclui um Repositório de Conteúdo nativo baseado na arquitetura CRX moderna e modular, adquirida durante a aquisição do Day Software pela Adobe.
+>A partir de 5 de agosto de 2011, a Adobe está migrando clientes do Content Services ES para o Adobe Digital Enterprise Platform Experience Services. O roteiro do produto para clientes que usam o Content Services é migrar para o novo ADEP Experience Services - Core, que inclui um Repositório de Conteúdo nativo baseado na arquitetura CRX moderna e modular, adquirida durante a aquisição do Day Software pela Adobe.
 
-[Início rápido (modo SOAP): Criar espaços do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
+[Start rápido (modo SOAP): Criar espaços do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
-[Início rápido (modo SOAP): Excluir o conteúdo do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
+[Start rápido (modo SOAP): Excluir o conteúdo do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
 
-[Início rápido (modo SOAP): Adicionar conteúdo aos serviços de conteúdo usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
+[Start rápido (modo SOAP): Adicionar conteúdo aos serviços de conteúdo usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
 
-[Início rápido (modo SOAP): Recuperar conteúdo do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
+[Start rápido (modo SOAP): Recuperar conteúdo do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
 
-[Início rápido (modo SOAP): Mover o conteúdo do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
+[Start rápido (modo SOAP): Mover o conteúdo do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
 
-[Início rápido (modo SOAP): Listar o conteúdo dos serviços de conteúdo usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
+[Start rápido (modo SOAP): Conteúdo do Lista Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
 
-[Início rápido (modo SOAP): Pesquisar conteúdo do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
+[Start rápido (modo SOAP): Pesquisar conteúdo do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
 
-[Início rápido (modo SOAP): Configuração de permissões de serviços de conteúdo usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
+[Start rápido (modo SOAP): Configuração de permissões de serviços de conteúdo usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-***Observação **: As iniciações rápidas localizadas em Programação com formulários AEM têm por base o Forms Server que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+***Observação **: start rápidos localizados em Programação com formulários AEM são baseados no Forms Server que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
 
-## Início rápido (modo SOAP): Criar espaços do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Criar espaços do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir cria um novo espaço chamado Diretório *de* teste localizado na Página inicial da empresa. O valor de identificação do novo espaço é gravado no console.
+O exemplo de código Java a seguir cria um novo espaço chamado Diretório *de* teste localizado em Início da Empresa. O valor de identificação do novo espaço é gravado no console.
 
 ```as3
  /*
@@ -109,7 +109,7 @@ O exemplo de código Java a seguir cria um novo espaço chamado Diretório *de* 
  
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -139,9 +139,9 @@ O exemplo de código Java a seguir cria um novo espaço chamado Diretório *de* 
  
 ```
 
-## Início rápido (modo SOAP): Excluir o conteúdo dos Serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Excluir o conteúdo dos Serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir exclui um espaço chamado /Company Home/Test Diretory.
+O exemplo de código Java a seguir exclui um espaço chamado /Empresa Home/Test Diretory.
 
 ```as3
  /*
@@ -205,7 +205,7 @@ O exemplo de código Java a seguir exclui um espaço chamado /Company Home/Test 
  
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -239,9 +239,9 @@ O exemplo de código Java a seguir exclui um espaço chamado /Company Home/Test 
  
 ```
 
-## Início rápido (modo SOAP): Adicionar conteúdo aos serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Adicionar conteúdo aos serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgageForm.pdf* a uma pasta chamada /Company Home/Test Diretory. Os atributos de criador e descrição são definidos. O valor de identificação do novo conteúdo é gravado no console.
+O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgageForm.pdf* a uma pasta chamada /Empresa Home/Test Diretory. Os atributos de criador e descrição são definidos. O valor de identificação do novo conteúdo é gravado no console.
 
 ```as3
  /*
@@ -308,7 +308,7 @@ O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgageForm
  
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -362,9 +362,9 @@ O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgageForm
  
 ```
 
-## Início rápido (modo SOAP): Recuperar conteúdo do Content Services usando a API Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Recuperar conteúdo do Content Services usando a API Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm.pdf* de /Company Home. O arquivo PDF é salvo no sistema de arquivos local e é nomeado como *UpdatesMortgageForm.pdf*.
+O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm.pdf* de /Empresa Home. O arquivo PDF é salvo no sistema de arquivos local e é nomeado como *UpdatesMortgageForm.pdf*.
 
 ```as3
  /*
@@ -430,7 +430,7 @@ O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -468,9 +468,9 @@ O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm
  
 ```
 
-## Início rápido (modo SOAP): Mover o conteúdo do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Mover o conteúdo do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf* de /Company Home/Test Diretory para /Company Home. O valor de identificação do conteúdo movido é gravado no console.
+O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf* de /Empresa Home/Test Diretory para /Empresa Home. O valor de identificação do conteúdo movido é gravado no console.
 
 ```as3
  /*
@@ -534,7 +534,7 @@ O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf
  
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -569,9 +569,9 @@ O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf
  
 ```
 
-## Início rápido (modo SOAP): Listar o conteúdo dos serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Conteúdo do Lista Content Services usando a API Java (obsoleto) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir lista o conteúdo que está localizado em /Company Home. Cada tipo de nó e nome do nó é exibido.
+O exemplo de código Java a seguir lista o conteúdo localizado em /Empresa Home. Cada tipo de nó e nome do nó é exibido.
 
 ```as3
  /*
@@ -636,7 +636,7 @@ O exemplo de código Java a seguir lista o conteúdo que está localizado em /Co
  
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -682,9 +682,9 @@ O exemplo de código Java a seguir lista o conteúdo que está localizado em /Co
  
 ```
 
-## Início rápido (modo SOAP): Pesquisar conteúdo do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Pesquisar conteúdo do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
-O código Java a seguir pesquisa por um documento que contém o texto MortgageForm /Empresa em /Página inicial. As subpastas também são pesquisadas.
+O código Java a seguir pesquisa /Empresa Home em busca de um documento que contenha o texto MortgageForm. As subpastas também são pesquisadas.
 
 ```as3
  /*
@@ -750,7 +750,7 @@ O código Java a seguir pesquisa por um documento que contém o texto MortgageFo
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -792,7 +792,7 @@ O código Java a seguir pesquisa por um documento que contém o texto MortgageFo
  
 ```
 
-## Início rápido (modo SOAP): Configuração de permissões de serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Configuração de permissões de serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
 O exemplo de código Java a seguir define uma permissão para um usuário chamado tony blue. O domínio especificado é o domínio padrão. A permissão Consumidor é especificada e o nó é `/Company Home/Test Directory`.
 
@@ -860,7 +860,7 @@ O exemplo de código Java a seguir define uma permissão para um usuário chamad
  
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -902,7 +902,7 @@ O exemplo de código Java a seguir define uma permissão para um usuário chamad
  
 ```
 
-## Início rápido (Modo SOAP): Criação de associações usando a API Java (obsoleta) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
+## Start rápido (Modo SOAP): Criação de associações usando a API Java (obsoleta) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
 O código Java a seguir cria uma associação com um arquivo de dados XML e um formulário PDF. Esse tipo de associação é chamado de LinkedBy.O documento PDF deve ter o aspecto vinculável aplicado a ele.
 
@@ -968,7 +968,7 @@ O código Java a seguir cria uma associação com um arquivo de dados XML e um f
  
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
