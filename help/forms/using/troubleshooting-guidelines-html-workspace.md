@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,18 +25,18 @@ Após instalar o patch, abra a área de trabalho do AEM Forms. Se você encontra
 
 Ao instalar o pacote, se você encontrar um erro `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, execute as seguintes etapas:
 
-1. Efetue logon no CRX DE lite. O url padrão é `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Efetue logon no CRX DE lite. O url padrão é `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Exclua o seguinte nó:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Vá para o Gerenciador de pacotes. O URL padrão é `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. Vá para o Gerenciador de pacotes. O URL padrão é `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Pesquise e instale o `adobe-lc-workspace-pkg-[version].zip` pacote.
 1. Reinicie o servidor de aplicativos.
 
-## Log de espaço de trabalho do AEM Forms {#aem-forms-workspace-nbsp-logging}
+## Registro em log da área de trabalho do AEM Forms {#aem-forms-workspace-nbsp-logging}
 
-Você pode gerar registros em vários níveis para permitir a solução ideal de erros. Por exemplo, em um aplicativo complexo, o logon no nível do componente ajuda na depuração e solução de problemas de componentes específicos.
+Você pode gerar registros em vários níveis para permitir a solução ideal de erros. Por exemplo, em um aplicativo complexo, o registro em log no nível do componente ajuda na depuração e solução de problemas de componentes específicos.
 
 Na área de trabalho do AEM Forms:
 
@@ -94,7 +94,7 @@ Na área de trabalho do AEM Forms:
   <tr>
    <td><p>favoritecategoryModel</p> </td>
    <td><p>sharequeueModel</p> </td>
-   <td><p>uisetsModel</p> </td>
+   <td><p>uisettingsModel</p> </td>
   </tr>
   <tr>
    <td><p>filterlistView</p> </td>
@@ -164,14 +164,14 @@ Scripts e estilos podem ser depurados em navegadores diferentes.
 1. O formulário PDF não está sendo renderizado ou enviado no Google Chrome.
 
    1. Instale o plug-in do Adobe® Reader®.
-   1. No Chrome, abra chrome://plugins para exibir os plug-ins disponíveis.
+   1. No Chrome, abra chrome://plugins para visualização dos plug-ins disponíveis.
    1. Desative o plug-in Chrome PDF Viewer e ative o plug-in Adobe Reader.
 
 1. O formulário SWF ou o Guia não é renderizado no Google Chrome.
 
-   1. No Chrome, abra chrome://plugins para exibir os plug-ins disponíveis.
+   1. No Chrome, abra chrome://plugins para visualização dos plug-ins disponíveis.
    1. Consulte os detalhes do plug-in Adobe Flash® Player.
-   1. Desative o PepperFlash no plug-in Adobe Flash Player.
+   1. Desative o PepperFlash no plug-in do Adobe Flash Player.
 
 1. Eu personalizei a área de trabalho do AEM Forms, mas não consigo visualizar as alterações.
 
@@ -179,11 +179,11 @@ Scripts e estilos podem ser depurados em navegadores diferentes.
 
 1. O que precisa ser feito pelo usuário para permitir que o formulário seja renderizado em HTML quando aberto na área de trabalho?
 
-   Selecione o botão de opção HTML para o perfil padrão na etapa de atribuição de tarefa ao usar o Workbench.
+   Selecione o botão de opção HTML para o perfil padrão na etapa atribuir tarefa ao usar o Workbench.
 
 1. O anexo não aparece quando clicado.
 
-   Para exibir anexos, ative pop-ups no navegador.
+   Para visualização de anexos, ative pop-ups no navegador.
 
 1. Um usuário está conectado a um aplicativo de formulários. Se o usuário tentar fazer logon na área de trabalho, talvez ele não seja carregado, se o usuário não tiver permissões de área de trabalho.
 
@@ -193,4 +193,4 @@ Scripts e estilos podem ser depurados em navegadores diferentes.
 
    Ao projetar formulários, ao usar Propriedades do processo, ele adiciona um botão Enviar dentro do formulário. Quando renderizado como um PDF na área de trabalho do AEM Forms, o botão Enviar não estará visível para o usuário final. Entretanto, ao renderizar como um formulário HTML na área de trabalho do AEM Forms, o botão Enviar fica visível para o usuário final. Clicar nesse botão Enviar dentro do formulário não inicia nenhuma ação. Clicar no botão Enviar na parte inferior da área de trabalho do AEM Forms, fora do formulário, conclui a tarefa.
 
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
