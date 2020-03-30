@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -60,7 +60,7 @@ Os usuários que têm a função Administrador do PDFG ou Usuário do PDFG podem
 
 1. (Administradores PDFG) No console de administração, clique em Serviços > Gerador de PDF > Impressora de rede PDFG.
 
-   (Usuários PDFG) Vá até `http(s)://[host]:[port]/pdfgui` e clique no link em PDFG Network Printer Installation (Instalação da impressora em rede PDFG).
+   (Usuários PDFG) Vá até `http(s)://[host]:'port'/pdfgui` e clique no link em PDFG Network Printer Installation (Instalação da impressora em rede PDFG).
 
 1. Em Instalação da impressora em rede PDFG, clique no link. Quando solicitado a fornecer informações de conta de usuário, especifique o nome de usuário e a senha usados na etapa 1 para fazer logon. Será exibida uma mensagem informando que a impressora foi instalada com êxito.
 
