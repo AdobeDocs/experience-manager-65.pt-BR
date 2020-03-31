@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 352924b29ba145177482c1ceb0ce3b685c10d363
 translation-type: tm+mt
 
 ---
@@ -9,7 +9,7 @@ translation-type: tm+mt
 
 Sabemos que os usuários do Adobe Experience Manager estão trabalhando em ambientes altamente competitivos, lutando para criar experiências digitais que os separarão de seus concorrentes. Portanto, é vital que, quando a Adobe fornecer novas ferramentas avançadas no AEM, essas ferramentas sejam complementadas com documentação precisa e clara para permitir que o cliente aproveite imediatamente seu investimento no AEM e maximize o ROI.
 
-O objetivo da documentação do AEM é colocar a documentação nas mãos dos usuários do AEM assim que possível. Portanto, priorizamos a documentação precisa e utilizável e nos esforçamos para atualizá-la continuamente e aprimorá-la.
+O objetivo da documentação do AEM é colocar a documentação nas mãos dos usuários do AEM o mais rápido possível. Portanto, priorizamos a documentação precisa e utilizável e nos esforçamos para atualizá-la continuamente e aprimorá-la.
 
 ## Contribuições de documentação do AEM
 
@@ -17,15 +17,15 @@ Para melhorar continuamente a documentação do AEM, a comunidade inteira de usu
 
 ## Normas de documentação
 
-Embora possamos receber contribuições para nossa documentação, qualquer contribuição para a documentação do AEM, seja na forma de solicitação por push ou problema, deve estar em conformidade com os nossos padrões de contribuição e documentação.
+Embora possamos receber contribuições para nossa documentação, qualquer contribuição para a documentação do AEM, seja na forma de solicitação por push ou problema, deve estar em conformidade com nossos padrões de contribuição e documentação.
 
 As contribuições que não cumprem estes padrões podem ser rejeitadas.
 
-### Documentamos casos de uso padrão.
+### Nós documento casos de uso padrão.
 
 A documentação do AEM cobre casos de uso padrão. Casos de uso além do escopo de instalação padrão e uso do produto não fazem parte da documentação do AEM.
 
-### Geralmente, não documentamos bugs nem suas soluções.
+### Geralmente, não documento erros nem as suas soluções.
 
 A documentação do AEM cobre casos de uso padrão. Por essa razão, os erros, os efeitos causados por erros e as soluções alternativas para erros geralmente não estão documentados.
 
@@ -33,23 +33,23 @@ As exceções a essa regra se aplicam às notas de versão onde os problemas con
 
 ### As contribuições para a documentação não se destinam a responder a questões técnicas.
 
-Quaisquer ideias que você precisar melhorar a documentação do AEM são bem-vindas como contribuições. No entanto, comentários, problemas e solicitações de baixa automática são destinados apenas a *contribuições* . Eles não devem ser usados para responder suas perguntas sobre como usar o AEM ou resolver problemas técnicos.
+Quaisquer ideias que você precisar melhorar a documentação do AEM são bem-vindas como contribuições. No entanto, comentários, problemas e solicitações de baixa automática são destinados apenas a *contribuições* . Eles não devem ser usados para responder suas perguntas sobre como usar o AEM, implementar seu projeto do AEM ou resolver problemas técnicos.
 
 Quaisquer dúvidas sobre o uso do AEM ou erros técnicos que possam ter sido relatados por meio do processo de suporte normal pelo Portal [de suporte do](https://daycare.day.com/home.html) Experience Manager ou discutidos na comunidade [](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)Experience Manager.
 
-***As contribuições de documentação do AEM não são uma substituição do suporte*** da Adobe e quaisquer contribuições que buscam respostas para perguntas relacionadas ao suporte serão rejeitadas.
+***As contribuições de documentação do AEM não são uma substituição do suporte da Adobe*** e quaisquer contribuições que buscam respostas para perguntas relacionadas ao suporte serão rejeitadas.
 
 ### As contribuições devem mencionar claramente as páginas de documentação afetadas.
 
-Se você criar um problema para sugerir melhorias na documentação, deverá incluir links para as páginas afetadas. Se você criar um problema usando o link **Editar esta página** em uma página de documentação, o problema será criado automaticamente com um link para a página.
+Se você criar um problema para sugerir melhorias na documentação, deverá incluir links para as páginas afetadas. Caso crie um problema usando o link **Editar esta página** em uma página de documentação, o problema será criado automaticamente com um link para a página.
 
-Isso não se aplica a solicitações de baixa automática, pois as solicitações de baixa automática incluem as páginas afetadas por definição.
+Isso não se aplica a solicitações de baixa automática, pois as solicitações de baixa automática por sua natureza fazem referência às páginas afetadas.
 
 ## Diretrizes de documentação
 
 Solicitamos que qualquer contribuição para nossa documentação siga determinadas diretrizes de estilo.
 
-Seguir essas diretrizes facilita a revisão de sua contribuição e, portanto, a integração à nossa documentação é mais rápida. No entanto, o incumprimento ou a inobservância incompleta das presentes orientações não significa que a contribuição seja rejeitada.
+Seguir essas diretrizes facilita a revisão de sua contribuição e, portanto, a integração à nossa documentação é mais rápida.
 
 ### Idioma e estilo
 
@@ -81,7 +81,7 @@ Marcadores ou outras anotações em capturas de tela (como quadros vermelhos, se
 
 ### Referências específicas à versão
 
-Tente evitar referências diretas a uma versão específica no conteúdo da documentação, sempre que possível. Isso torna a documentação mais flexível e extensível para versões futuras.
+Tente evitar referências diretas a uma versão específica em todo o conteúdo da documentação, sempre que possível. Isso torna a documentação mais flexível e extensível para versões futuras.
 
 ### Uso do dia, AEM, CQ, CRX
 
