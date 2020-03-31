@@ -1,14 +1,14 @@
 ---
 title: Formatos compatíveis de ativos
-description: Lista de formatos de arquivo suportados pelo AEM Assets e recursos compatíveis com cada formato.
+description: Lista de formatos de arquivo suportados pelo AEM Assets e pelo Dynamic Media e recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
+source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
 
 ---
 
 
-# Assets supported formats {#assets-supported-formats}
+# Formatos de ativos suportados {#assets-supported-formats}
 
 O AEM Assets oferece suporte para diversos formatos de arquivo e cada funcionalidade tem suporte variado para diferentes tipos de MIME.
 
@@ -22,9 +22,7 @@ Use a legenda para entender o nível de suporte.
 | * | Suportado com recursos complementares |
 | - | Não aplicável |
 
-## Formatos de imagem rasterizada suportados {#supported-raster-image-formats}
-
-Os formatos de imagem rasterizados compatíveis com os recursos de gerenciamento de ativos são os seguintes:
+## Formatos de imagem de rasterização suportados nos ativos AEM {#supported-raster-image-formats}
 
 | Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Edição interativa | Writeback de metadados | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -44,9 +42,9 @@ Os formatos de imagem rasterizados compatíveis com os recursos de gerenciamento
 
 **¹** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
-Os formatos de imagem rasterizados compatíveis com os recursos do Dynamic Media são os seguintes:
+## Formatos de imagem rasterizada suportados no Dynamic Media (#supported-raster-image-format-dynamic-media)
 
-| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Visualizar<br> representação dinâmica<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
+| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de Pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -65,13 +63,29 @@ Além das informações acima, considere o seguinte:
 
 * A gravação de metadados funciona no formato de arquivo PSB quando é adicionada ao manipulador `NComm` .
 
-* Para usar o Dynamic Media para visualizar e gerar renderizações dinâmicas para arquivos EPS, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos EPS, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de estruturação de documentos PostScript (PS-Adobe).
+* Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de estruturação de Documentos PostScript (PS-Adobe).
+
+## Formatos de imagem rasterizada não suportados no Dynamic Media (#unsupported-image-format-dynamic-media)
+
+A tabela a seguir descreve os subtipos de formatos de imagem rasterizada que *não* são suportados no Dynamic Media. A tabela também descreve os métodos sugeridos que você pode usar para detectar esses arquivos.
+
+| Formato | O que não é suportado? | Método de detecção sugerido |
+|---|---|---|
+| JPEG | Arquivos nos quais os três bytes iniciais estão incorretos. | Para identificar um arquivo JPEF, os três bytes iniciais devem ser `ff d8 ff`. Se forem mais alguma coisa, então não é classificado como um JPEG.<br>・ Não há nenhuma ferramenta de software que possa ajudar neste problema.<br>・ Um pequeno programa C++/java que lê os três bytes iniciais de um arquivo deve ser capaz de detectar esses tipos de arquivos.<br>・ Pode ser melhor rastrear a fonte desses arquivos e observar a ferramenta que gera o arquivo. |
+| PNG | Arquivos com um tamanho de bloco IDAT maior que 100 MB. | Você pode detectar esse problema usando o [libpng](http://www.libpng.org/pub/png/libpng.html) no C++. |
+| PSB |  | Use exiftool se o tipo de arquivo for PSB.<br>Exemplo em um log ExifTool:<br>1. Tipo de arquivo: `PSB` |
+| PSD | Arquivos com um espaço de cor diferente de CMYK, RGB, Escala de cinza ou Bitmap não são suportados.<br>Espaços de cores Indexadas, Lab e DuoTone não são suportados. | Use ExifTool se o modo Cor for Duotônico.<br>Exemplo em um log ExifTool:<br>1. Modo de cores: `Duotone` |
+|  | Arquivos com terminações abruptas. | A Adobe não consegue detectar essa condição. Além disso, esses arquivos não podem ser abertos com o Adobe PhotoShop. A Adobe sugere que você examine a ferramenta usada para criar tal arquivo e solucionar problemas na fonte. |
+|  | Arquivos com uma profundidade de bits maior que 16. | Use ExifTool se a profundidade de bits for maior que 16.<br>Exemplo em um log ExifTool:<br>1. Profundidade de bits: `32` |
+|  | Arquivo com espaço de cor Lab. | Use exiftool se o modo de cor for Lab.<br>Exemplo em um log ExifTool:<br>1. Modo de cores: `Lab` |
+| TIFF | Arquivos com dados de ponto flutuante. Ou seja, um arquivo TIFF com profundidade de 32 bits não é suportado. | Use ExifTool se o tipo MIME for `image/tiff` e SampleFormat tiver `Float` o valor. Exemplo em um log ExifTool:<br>1. Tipo MIME: Formato `image/tiff`<br>de amostra: `Float #`<br>2. Tipo MIME: Formato `image/tiff`<br>de amostra: `Float; Float; Float; Float` |
+|  | Arquivos com espaço de cor Lab. | Use ExifTool se o modo de cor for Lab.<br>Exemplo em um log ExifTool:<br>1. Modo de cores: `Lab` |
 
 ## Biblioteca PDF Rasterizer compatível {#supported-pdf-rasterizer-library}
 
-A biblioteca do Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos Adobe Illustrator e PDF grandes e com grande quantidade de conteúdo. A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
+A biblioteca do Adobe PDF Rasterizer gera miniaturas e pré-visualizações de alta qualidade para arquivos Adobe Illustrator e PDF grandes e com grande quantidade de conteúdo. A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
 
 * Arquivos AI/PDF com uso intenso de conteúdo que consomem muitos recursos para serem processados.
 * Arquivos AI/PDF, para os quais as miniaturas não são geradas por padrão.
@@ -91,9 +105,9 @@ Consulte Biblioteca [de transcodificação de](imaging-transcoding-library.md)im
 
 A biblioteca do Adobe Camera Raw permite que os ativos AEM assimilem imagens brutas. See [Camera Raw support](camera-raw.md).
 
-## Formatos de documento suportados {#supported-document-formats}
+## Formatos de documento de ativos suportados {#supported-document-formats}
 
-Os formatos de documento suportados para recursos de gerenciamento de ativos são os seguintes:
+Os formatos de Documento suportados para recursos de gerenciamento de ativos são os seguintes:
 
 | Formato | Armazenamento | Gerenciamento de metadados<br> | Metadata<br> extraction | Geração de miniaturas<br> | Edição interativa<br> | Writeback de metadados<br> | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -116,9 +130,9 @@ Os formatos de documento suportados para recursos de gerenciamento de ativos sã
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-Os formatos de documento suportados para recursos do Dynamic Media são os seguintes:
+## Formatos de documento suportados no Dynamic Media (##supported-documento-format-dynamic-media)
 
-| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Visualizar<br> representação dinâmica<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
+| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de Pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -128,7 +142,7 @@ Além da funcionalidade acima, considere o seguinte:
 
 * Para usar o Dynamic Media para gerar renderizações dinâmicas para arquivos PDF, consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Para usar o Dynamic Media para visualizar e gerar renderizações dinâmicas para arquivos AI, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos AI, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para usar o Dynamic Media para gerar execuções dinâmicas para arquivos INDD, consulte o formato [de arquivo](../assets/managing-image-presets.md#indesign-indd-file-format)InDesign (INDD).
 
@@ -155,7 +169,7 @@ Além da funcionalidade acima, considere o seguinte:
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Formatos de vídeo de entrada suportados para a Transcodificação de Dynamic Media {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Formatos de vídeo de entrada suportados no Dynamic Media para transcodificação {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extensão do arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |---|---|---|---|
@@ -178,9 +192,9 @@ Além da funcionalidade acima, considere o seguinte:
 
 ## Formatos de arquivo suportados {#supported-archive-formats}
 
-Os formatos de arquivo suportados e a aplicabilidade dos fluxos de trabalho DAM comuns são abordados na tabela a seguir.
+Os formatos de arquivamento suportados e a aplicabilidade dos workflows DAM comuns são abordados na tabela a seguir.
 
-| Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
+| Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -190,15 +204,15 @@ Os formatos de arquivo suportados e a aplicabilidade dos fluxos de trabalho DAM 
 
 ## Outros formatos suportados {#other-supported-formats}
 
-A aplicabilidade de fluxos de trabalho DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo. A funcionalidade comum do DAM, como armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados, exceto o fornecimento de Dynamic Media, é compatível com todos os arquivos.
+A aplicabilidade de workflows DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo. A funcionalidade comum do DAM, como armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados, exceto o Delivery de Mídia dinâmica, é compatível com todos os arquivos.
 
-| Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
+| Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript (quando configurado com o próprio domínio de entrega) |  |  |  |  |  | ✓ |
+| JavaScript (quando configurado com o próprio domínio do delivery) |  |  |  |  |  | ✓ |
 
 ## Supported MIME types {#supported-mime-types}
 
