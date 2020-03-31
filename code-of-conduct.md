@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6cd417e3607eee30fb250b5f5af99acbc2e644e3
+source-git-commit: 352924b29ba145177482c1ceb0ce3b685c10d363
 translation-type: tm+mt
 
 ---
@@ -7,7 +7,7 @@ translation-type: tm+mt
 
 ## Nosso compromisso
 
-No interesse de promover um ambiente aberto e acolhedor, nós, colaboradores e mantenedores, nos comprometemos a fazer da participação em nosso projeto e em nossa comunidade uma experiência sem assédio para todos, independentemente da idade, tamanho do corpo, deficiência, etnia, identidade e expressão de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
+No interesse de promover um ambiente aberto e acolhedor, nós, como contribuidores e mantenedores, nos comprometemos a fazer da participação em nosso projeto e em nossa comunidade uma experiência sem assédio para todos, independentemente da idade, tamanho corporal, deficiência, etnia, identidade e expressão de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
 
 ## Nossos padrões
 
@@ -19,7 +19,7 @@ Exemplos de comportamento que contribuem para a criação de um ambiente positiv
 * Concentração no que é melhor para a comunidade
 * Mostrando empatia com outros membros da comunidade
 
-Exemplos de comportamentos inaceitáveis dos participantes incluem:
+Exemplos de comportamento inaceitável por parte dos participantes incluem:
 
 * Uso de linguagem ou imagens sexualizadas e atenção ou avanços sexuais indesejados
 * Trolando, insultando/depreciando comentários e ataques pessoais ou políticos
@@ -45,4 +45,4 @@ Os mantenedores de projetos que não sigam ou apliquem o Código de Conduta de b
 
 ## Atribuição
 
-Este código de conduta é adaptado do Pacto do [Contribuidor](https://contributor-covenant.org), versão 1.4, disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Este código de conduta é adaptado do Pacto de [Contribuinte](https://contributor-covenant.org), versão 1.4, disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
