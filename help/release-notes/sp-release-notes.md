@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
+source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
 
 ---
 
@@ -32,7 +32,7 @@ Alguns dos principais recursos e melhorias introduzidos no AEM 6.5.4.0 incluem:
 
 * O AEM Assets agora está configurado com o Brand Portal por meio do console de E/S da Adobe.
 
-* Uma nova etapa [Gerar saída](../forms/using/aem-forms-workflow-step-reference.md) imprimível agora está disponível para fluxos de trabalho do AEM Forms.
+* Uma nova etapa [Gerar saída](../forms/using/aem-forms-workflow-step-reference.md) imprimível agora está disponível para workflows do AEM Forms.
 
 * [Suporte](../forms/using/resize-using-layout-mode.md) para várias colunas no modo de layout para formulários adaptáveis e Comunicações interativas.
 
@@ -78,19 +78,19 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Ao mover o conteúdo dentro da mesma pasta, a opção de movimentação de página é desativada (NPR-31840).
 
-* No modo de estrutura de modelos editáveis, a lista de componentes permitidos no contêiner de layout exibe resultados incorretos. Somente os componentes com caixa de diálogo de design são exibidos no contêiner de layout (NPR-31816).
+* No modo de estrutura de modelos editáveis, a lista de componentes permitidos no container de layout exibe resultados incorretos. Somente os componentes com caixa de diálogo de design são exibidos no container de layout (NPR-31816).
 
 * Quando uma página tem permissões somente leitura para um usuário, a opção de propriedades Abrir fica visível em sites.html, mas não no editor.html (NPR-31770).
 
 * Quando um usuário clica no botão Criar, a opção de página não está disponível (NPR-31756).
 
-* Não é possível sincronizar a campanha na campanha Adobe que contém o componente de importador de design OOTB (pronto para uso) (NPR-31728).
+* Não é possível sincronizar a campanha na campanha da Adobe que contém o componente importador de design OOTB (pronto para uso) (NPR-31728).
 
-* Quando você tenta alterar uma lista de marcadores para lista numerada, somente os dois primeiros itens da lista são alterados (NPR-31636).
+* Quando você tenta alterar uma lista de marcador para lista numerada, somente os dois primeiros itens da lista são alterados (NPR-31636).
 
 * Quando uma página não é criada e o nó filho é selecionado, a caixa de diálogo de seleção ainda exibe o nó inicial. Quando a página é criada e o usuário clica em navegar, a página redireciona para o nó raiz em vez do nó criado (NPR-31618).
 
-* A caixa de diálogo de configuração de exibição não funciona corretamente para o recurso de fluxo de trabalho de personalização da Caixa de entrada (NPR-32503 e NPR-32492).
+* A caixa de diálogo de configuração da visualização não funciona corretamente para o recurso de fluxo de trabalho de personalização da Caixa de entrada (NPR-32503 e NPR-32492).
 
 * Uma mensagem de erro é exibida ao exibir informações do fluxo de trabalho usando a Caixa de entrada (CQ-4282168).
 
@@ -104,17 +104,17 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Falha na geração da execução de ativos com ${extension} (NPR-32294).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
 
 * O arquivo ZIP baixado do DAM não pode ser aberto usando o WinZip (NPR-32293).
 
 * As permissões originais de uma pasta são atualizadas quando as Configurações da pasta são abertas para alterar o título da pasta ou a imagem em miniatura e salvas (NPR-32292).
 
-* O ícone de calendário para a ativação programada não está sendo exibido na coluna Status (na interface clássica da lista de ativos DAM) para ativos cuja ativação está programada para uma data e hora posteriores (NPR-32291).
+* O ícone de calendário para ativação programada não é exibido na coluna Status (na interface clássica da lista de ativos DAM) para ativos cuja ativação está programada para uma data e hora posteriores (NPR-32291).
 
 * A criação de fragmentos usando modelos de fragmento fornece erro ao pesquisar coleções durante o processo de criação de fragmento (NPR-32290).
 
-* Várias consultas de pesquisa são acionadas quando várias tags são selecionadas no filtro de pesquisa (NPR-32143).
+* Vários query de pesquisa são disparados quando várias tags são selecionadas do filtro de pesquisa (NPR-32143).
 
 * A interface do usuário do Experience Manager Assets exibe nomes de arquivo truncados quando ativos com mais de 50 caracteres no nome do arquivo são carregados (NPR-32054).
 
@@ -122,7 +122,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * A pesquisa de arquivos e pastas usando aspectos Omnisearch dá exceção (NPR-31872).
 
-* O realce de campo para seleção de campo obrigatória no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de esquema de metadados correspondente (NPR-31834).
+* O realce de campo para seleção obrigatória de campo no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de schema de metadados correspondente (NPR-31834).
 
 * Os nomes completos das tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
 
@@ -142,7 +142,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * O status não processado da predefinição do visualizador de vídeo de recorte inteligente aparece duas vezes no texto do banner ao lado do nome predefinido (CQ-4283517).
 
-* A altura incorreta do contêiner de um modelo 3D carregado visualizado no visualizador 3D é observada na página de detalhes do ativo (CQ-4283309).
+* Altura incorreta do container de um modelo 3D carregado visualizado no visualizador 3D é observada na página de detalhes do ativo (CQ-4283309).
 
 * O Editor de carrossel não abre no IE 11 no modo Híbrido de mídia dinâmica do Experience Manager (CQ-4255590).
 
@@ -182,7 +182,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 ### Editor de modelos WCM {#wcm-template-editor-6540}
 
-* No modo de estrutura de modelos editáveis, a lista de componentes permitidos no contêiner de layout não exibe o componente de botão de link (CQ-4282099).
+* No modo de estrutura de modelos editáveis, a lista de componentes permitidos no container de layout não exibe o componente de botão de link (CQ-4282099).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
@@ -190,17 +190,24 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 ### Campaign Targeting {#campaign-targeting-6540}
 
-* Falha na configuração da nuvem do Target com o erro de falha na solicitação de obtenção de mboxes (CQ-4279880).
+* Falha na configuração da nuvem de Públicos alvos com o erro de obtenção de mboxes (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal}
 
-* Os valores suspensos do esquema de metadados não estão visíveis nas propriedades do ativo (CQ-4283287).
+* Os usuários do Brand Portal não podem publicar ativos de pasta de contribuição nos ativos AEM ao atualizar para a E/S da Adobe no AEM 6.5.4 (CQDOC-15655).
+
+   Esse problema será corrigido no próximo service pack AEM 6.5.5.
+
+   Para corrigir imediatamente o AEM 6.5.4, é recomendável [baixar a correção](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalá-la na instância do autor.
+
+
+* Os valores suspensos do schema de metadados não estão visíveis nas propriedades do ativo (CQ-4283287).
 
 * O subesquema de metadados não exibe guias com base no tipo MIME nas propriedades do ativo (CQ-4283288).
 
-* Cancelar a publicação do esquema de metadados preenche uma mensagem de erro, embora o esquema seja removido no backend.
+* Cancelar a publicação do schema de metadados preenche uma mensagem de erro, embora o schema seja removido do backend.
 
-* A imagem de visualização não é exibida para um ativo publicado (CQ-4285886).
+* A imagem de Pré-visualização não é exibida para um ativo publicado (CQ-4285886).
 
 * O usuário não pode publicar ou cancelar a publicação de ativos contendo aspas simples no nome (CQ-4272686).
 
@@ -212,9 +219,9 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * O formulário Criar membro é exibido como uma página em branco (NPR-31997).
 
-* O usuário não pode exibir o relatório do Analytics na instância do autor (NPR-30913).
+* O usuário não pode visualização o relatório do Analytics na instância do autor (NPR-30913).
 
-### Oak - Indexação e consultas {#oak-indexing-6540}
+### Oak - Indexação e Query {#oak-indexing-6540}
 
 * Os documentos do MS Word e do MS Excel, que contêm imagem JPEG, quando analisados com o analisador Tika não conseguem analisar e o erro de classe não encontrada é observado (NPR-31952).
 
@@ -224,17 +231,17 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 >
 >O AEM Service Pack não inclui correções para o AEM Forms. Eles são entregues usando um pacote complementar separado do Forms. Além disso, é lançado um instalador cumulativo que inclui correções para o AEM Forms no JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
-* Gerenciamento de correspondência: As letras exibem caracteres extras após o envio para os fluxos de trabalho do processo de publicação (NPR-32626).
+* Gerenciamento de correspondência: As letras exibem caracteres extras após o envio aos workflows do processo de publicação (NPR-32626).
 
-* Gerenciamento de correspondência: As letras exibem um espaço reservado suspenso como um componente de texto após a submissão aos fluxos de trabalho pós-processo (NPR-32539).
+* Gerenciamento de correspondência: As letras exibem um espaço reservado suspenso como um componente de texto após a submissão a workflows pós-processo (NPR-32539).
 
-* Gerenciamento de correspondência: Os valores padrão definidos no modelo de letra não são exibidos no modo de Visualização (NPR-32511).
+* Gerenciamento de correspondência: Os valores padrão definidos no modelo de letra não são exibidos no modo de Pré-visualização (NPR-32511).
 
 * Formulários móveis: O botão Enviar é exibido como expandido em tamanho ao renderizar um formulário XDP em uma versão HTML (NPR-32514).
 
-* Serviços de documento: Problemas de acesso ao URL para Cartas e outras páginas após a aplicação do Service Pack 2 (NPR-32508, NPR-32509).
+* Serviços do Documento: Problemas de acesso ao URL para Cartas e outras páginas após a aplicação do Service Pack 2 (NPR-32508, NPR-32509).
 
-* Serviços de documento: Se o número de transações em um servidor exceder um limite específico, a conversão de HTML em PDF falhará e as configurações de tipo de arquivo serão removidas do servidor de formulários AEM (NPR-32204).
+* Serviços do Documento: Se o número de transações em um servidor exceder um limite específico, a conversão de HTML em PDF falhará e as configurações de tipo de arquivo serão removidas do servidor de formulários AEM (NPR-32204).
 
 * Formulários adaptativos: A ferramenta de acessibilidade do navegador relata falhas em formulários adaptáveis de acordo com as diretrizes WCAG2 Nível AA (NPR-32312, NPR-32309, CQ-4285439).
 
@@ -244,7 +251,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Bancada: Uma mensagem de erro é exibida ao usar a operação Obter propriedades do PDF para o serviço Utilitários do PDF (NPR-32150).
 
-* Document Security: Um arquivo PDF protegido falha ao abrir offline com a opção DisableGlobalOfflineSynchronizationData definida como True (NPR-32078).
+* Segurança do Documento: Um arquivo PDF protegido falha ao abrir offline com a opção DisableGlobalOfflineSynchronizationData definida como True (NPR-32078).
 
 * Designer: Se a opção de marcação estiver ativada, a borda do subformulário desaparecerá na saída PDF gerada (NPR-32547, NPR-31983, NPR-31950).
 
@@ -345,13 +352,13 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 
 ## Recursos obsoletos {#removed-deprecated-features}
 
-Esta seção lista os recursos e recursos que foram marcados como obsoletos com o AEM 6.5.4.0. Os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma opção alternativa a ser usada.
+Esta seção lista recursos e recursos que foram marcados como obsoletos com o AEM 6.5.4.0. Os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma opção alternativa a ser usada.
 
 Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em sua implantação atual e façam planos para alterar sua implementação para usar a opção alternativa.
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | The **[!UICONTROL AEM Cloud Services Opt-In]** screen has been deprecated. Com a integração do AEM e do Target atualizada no AEM 6.5 para oferecer suporte à API do Target Standard, que usa autenticação por meio do Adobe IMS e E/S, e com a função crescente do Adobe Launch para instrumentar páginas do AEM para análise e personalização, o assistente de aceitação se tornou funcionalmente irrelevante. | Configurar conexões do sistema, autenticação do Adobe IMS e integrações de E/S da Adobe por meio dos respectivos serviços em nuvem do AEM |
+| Integrações | The **[!UICONTROL AEM Cloud Services Opt-In]** screen has been deprecated. Com a integração do AEM e do Público alvo atualizada no AEM 6.5 para suportar a API do Público alvo Standard, que usa autenticação por meio do Adobe IMS e E/S, e a função crescente do Adobe Launch para instrumentar páginas do AEM para análise e personalização, o assistente de opção de participação se tornou funcionalmente irrelevante. | Configurar conexões do sistema, autenticação do Adobe IMS e integrações de E/S da Adobe por meio dos respectivos serviços em nuvem do AEM |
 
 ## Problemas conhecidos {#known-issues}
 
@@ -359,7 +366,7 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 * Os seguintes erros e mensagens de aviso podem ser exibidos durante a instalação do AEM 6.5.x.x:
    * &quot;Quando a integração do Target é configurada no AEM usando a API do Target Standard (autenticação IMS), a exportação de Fragmentos de experiência para o Target resulta na criação de tipos de ofertas incorretos. Em vez do tipo &quot;Fragmento de experiência&quot;/fonte &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/fonte &quot;Adobe Target Classic&quot;.
    * com.adobe.granite.manutenção.impl.TaskScheduler: nenhuma janela de manutenção encontrada em granite/operations/maintenance.
-   * A validação do lado do servidor do Formulário adaptável falha quando funções agregadas, como SUM, MAX e MIN são usadas. CQ-4274424
+   * A validação do lado do servidor do Formulário adaptável falha quando funções de agregação, como SUM, MAX e MIN são usadas. CQ-4274424
    * com.adobe.granite.manutenção.impl.TaskScheduler: nenhuma janela de manutenção encontrada em granite/operations/maintenance.
    * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner de compra.
 
