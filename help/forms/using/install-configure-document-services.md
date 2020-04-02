@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: ba4e4908c0564af6e7f0759c5119a5c02f274dbd
 
 ---
 
@@ -178,7 +178,7 @@ Se você estiver usando o sistema operacional baseado em UNIX, instale os seguin
    * libfontconfig.so.1
    * libfreetype.so.6
    * libdl.so.2
-   * library.so.1
+   * librt.so.1
    * libpthread.so.0
    * libstdc++.so.6
    * libm.so.6
@@ -414,6 +414,7 @@ O pacote complementar AEM Forms é um aplicativo implantado no AEM. O pacote con
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Salve e feche o arquivo.
 
 ### Configurar o serviço do gerenciador de fontes {#configuring-the-font-manager-service}
@@ -573,11 +574,11 @@ O serviço Assembler depende do serviço Reader Extensions, do serviço Signatur
   </tr> 
   <tr> 
    <td>Serviço do Forms</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-conector<br /> </td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td> 
   </tr> 
   <tr> 
    <td>Serviço de saída</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-conector</td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td> 
   </tr> 
  </tbody> 
 </table>
