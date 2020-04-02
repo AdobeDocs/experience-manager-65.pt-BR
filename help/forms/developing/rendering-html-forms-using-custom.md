@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: fcbe1d860410e215cb7c438f94579e0b14d262a5
 
 ---
 
@@ -22,9 +22,9 @@ O serviço Forms renderiza formulários HTML em resposta a uma solicitação HTT
 
 O serviço Forms analisa silenciosamente o arquivo CSS personalizado. Ou seja, o serviço Forms não relata erros que podem ser encontrados se o arquivo CSS personalizado não estiver em conformidade com os padrões CSS. Nessa situação, o serviço Forms ignora o estilo e continua com os estilos restantes localizados no arquivo CSS.
 
-A lista a seguir especifica estilos compatíveis com um arquivo CSS personalizado:
+A lista a seguir especifica estilos suportados em um arquivo CSS personalizado:
 
-* **Pares** de estilo seletor de nível de classe: Se estiverem presentes em um arquivo CSS personalizado, os seletores usados no formulário HTML como estilos de classe serão usados. Os estilos de classe não utilizados são ignorados.
+* **Pares** de estilo do seletor de nível de classe: Se estiverem presentes em um arquivo CSS personalizado, os seletores usados no formulário HTML como estilos de classe serão usados. Os estilos de classe não utilizados são ignorados.
 * **Pares** de estilo seletor de nível de identificador: Todos os estilos de identificador serão usados se forem usados no formulário HTML.
 * **Pares** de estilo seletor de nível de elemento: Todos os estilos de elemento serão usados se forem usados no formulário HTML.
 * **Prioridade** do estilo: A prioridade de estilo (como importante) é suportada e pode ser usada em um arquivo CSS personalizado.
@@ -80,13 +80,13 @@ Quando o serviço Forms renderiza um formulário HTML, ele retorna um fluxo de d
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de formulários](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Start rápidos da API do Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Como renderizar formulários PDF interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Renderizar formulários como HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Criação de aplicativos da Web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Criação de Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Renderizar um formulário HTML que usa um arquivo CSS usando a API Java {#render-an-html-form-that-uses-a-css-file-using-the-java-api}
 
@@ -112,8 +112,8 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Um valor `TransformTo` enum que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário HTML compatível com HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * Um `com.adobe.idp.Document` objeto que contém dados a serem unidos ao formulário. Se você não quiser unir dados, passe um `com.adobe.idp.Document` objeto vazio.
-   * O `HTMLRenderSpec` objeto que armazena opções de tempo de execução HTML.
+   * Um `com.adobe.idp.Document` objeto que contém dados para mesclar com o formulário. Se você não quiser unir dados, passe um `com.adobe.idp.Document` objeto vazio.
+   * O `HTMLRenderSpec` objeto que armazena as opções de tempo de execução HTML.
    * Um valor de string que especifica o valor do `HTTP_USER_AGENT` cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Um `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
@@ -133,7 +133,7 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
 
 [Como renderizar formulários HTML usando arquivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
 
-[Início rápido (modo SOAP): Renderização de um formulário HTML que usa um arquivo CSS usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
+[Start rápido (modo SOAP): Renderização de um formulário HTML que usa um arquivo CSS usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -146,7 +146,7 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
 1. Incluir arquivos de projeto
 
    * Crie classes proxy Java que consomem o serviço Forms WSDL.
-   * Inclua as classes proxy Java no caminho da classe.
+   * Inclua as classes proxy Java no seu caminho de classe.
 
 1. Criar um objeto da API Java do Forms
 
@@ -163,8 +163,8 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Um valor `TransformTo` enum que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário HTML compatível com HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * Um `BLOB` objeto que contém dados a serem unidos ao formulário. Se você não deseja unir dados, passe `null`. (Consulte [Pré-preencher formulários com layouts]flutuantes (/help/forms/develop/rendering-forms-prepopulating-forms-fluxable-layouts-prepopulating.md#prepopulating-forms-with-fluxable-layouts).
-   * O `HTMLRenderSpec` objeto que armazena opções de tempo de execução HTML.
+   * Um `BLOB` objeto que contém dados para mesclar com o formulário. Se você não deseja unir dados, passe `null`. (Consulte [Pré-preenchimento de formulários com layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md)flutuantes.)
+   * O `HTMLRenderSpec` objeto que armazena as opções de tempo de execução HTML.
    * Um valor de string que especifica o valor do `HTTP_USER_AGENT` cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Você pode passar uma string vazia se não quiser definir esse valor.
    * Um `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
