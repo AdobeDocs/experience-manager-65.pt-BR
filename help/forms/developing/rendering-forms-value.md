@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
 
 ---
 
@@ -31,7 +31,7 @@ Em vez de passar um design de formulário por referência, é possível passar u
 As limitações a seguir se aplicam quando um design de formulário é aprovado pelo valor:
 
 * Nenhum conteúdo vinculado relativo pode estar no design de formulário. Todas as imagens e fragmentos devem ser incorporados dentro do design de formulário ou absolutamente referenciados.
-* Os cálculos do lado do servidor não podem ser executados após a renderização do formulário. Se o formulário for submetido de volta ao serviço Forms, os dados serão extraídos e retornados sem qualquer cálculo no servidor.
+* Os cálculos do lado do servidor não podem ser executados depois que o formulário é renderizado. Se o formulário for submetido de volta ao serviço Forms, os dados serão extraídos e retornados sem qualquer cálculo no servidor.
 * Como o HTML só pode usar imagens vinculadas em tempo de execução, não é possível gerar HTML com imagens incorporadas. Isso ocorre porque o serviço do Forms oferece suporte a imagens incorporadas com HTML recuperando as imagens de um design de formulário referenciado. Como um design de formulário transmitido pelo valor não tem um local referenciado, as imagens incorporadas não podem ser extraídas quando a página HTML é exibida. Portanto, as referências de imagem devem ser caminhos absolutos a serem renderizados em HTML.
 
 >[!NOTE]
@@ -66,7 +66,7 @@ Ao renderizar um formulário por valor, é necessário criar um `com.adobe.idp.D
 
 >[!NOTE]
 >
->Esta seção e o início rápido correspondente fazem referência a um arquivo XDP existente.
+>Esta seção e o start rápido correspondente fazem referência a um arquivo XDP existente.
 
 **Renderizar um formulário por valor**
 
@@ -90,11 +90,11 @@ Quando o serviço Forms renderiza um formulário por valor, ele retorna um fluxo
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de formulários](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Start rápidos da API do Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Transmissão de documentos ao serviço Forms](/help/forms/developing/passing-documents-forms-service.md)
+[Transmissão de Documentos ao serviço de formulários](/help/forms/developing/passing-documents-forms-service.md)
 
-[Criação de aplicativos da Web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Criação de Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Renderizar um formulário por valor usando a API Java {#render-a-form-by-value-using-the-java-api}
 
@@ -121,7 +121,7 @@ Renderize um formulário por valor usando a API de formulários (Java):
    * Um valor de string vazio. (Normalmente, esse parâmetro requer um valor de string que especifica o nome do design de formulário.)
    * Um `com.adobe.idp.Document` objeto que contém o design de formulário. Normalmente, esse valor de parâmetro é reservado para dados que são unidos ao formulário.
    * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução. Esse é um parâmetro opcional e você pode especificar `null` se não deseja especificar opções de tempo de execução.
-   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
+   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço de Formulários.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
    O `renderPDFForm` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que pode ser gravado no navegador da Web do cliente.
 
@@ -138,9 +138,9 @@ Renderize um formulário por valor usando a API de formulários (Java):
 
 **Consulte também:**
 
-[Renderização de formulários por valor](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
+[Renderização de formulários por valor](/help/forms/developing/rendering-forms.md)
 
-[Início rápido (modo SOAP): Renderização por valor usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[Start rápido (modo SOAP): Renderização por valor usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -162,7 +162,7 @@ Renderize um formulário por valor usando a API de formulários (serviço da Web
 1. Referência ao design de formulário
 
    * Crie um `java.io.FileInputStream` objeto usando seu construtor. Passe um valor de string que especifica o local do arquivo XDP.
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar um documento PDF criptografado com uma senha.
+   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar um documento PDF que é criptografado com uma senha.
    * Crie uma matriz de bytes que armazene o conteúdo do `java.io.FileInputStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo o tamanho do `java.io.FileInputStream` objeto usando seu `available` método.
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `java.io.FileInputStream` objeto `read` e transmitindo a matriz de bytes.
    * Preencha o `BLOB` objeto chamando seu `setBinaryData` método e transmitindo a matriz de bytes.
@@ -174,7 +174,7 @@ Renderize um formulário por valor usando a API de formulários (serviço da Web
    * Um valor de string vazio. (Normalmente, esse parâmetro requer um valor de string que especifica o nome do design de formulário.)
    * Um `BLOB` objeto que contém o design de formulário. Normalmente, esse valor de parâmetro é reservado para dados que são unidos ao formulário.
    * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução. Esse é um parâmetro opcional e você pode especificar `null` se não deseja especificar opções de tempo de execução.
-   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
+   * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço de Formulários.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
    * Um `com.adobe.idp.services.holders.BLOBHolder` objeto vazio que é preenchido pelo método. Isso é usado para armazenar o formulário PDF renderizado.
    * Um `javax.xml.rpc.holders.LongHolder` objeto vazio que é preenchido pelo método. (Esse argumento armazena o número de páginas no formulário.)
