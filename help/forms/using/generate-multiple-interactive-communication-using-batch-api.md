@@ -6,14 +6,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
+source-git-commit: 6a29cf13c89b71f851c67f85b01e8e648c0896b9
 
 ---
 
 
 # Gerar várias comunicações interativas usando a API de lote {#use-batch-api-to-generate-multiple-ic}
 
-Você pode usar a API de lote para produzir várias comunicações interativas de um modelo. O modelo é uma comunicação interativa sem dados. A API de lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, declarações de cartão de crédito para vários clientes.
+Você pode usar a API de lote para produzir várias comunicações interativas a partir de um modelo. O modelo é uma comunicação interativa sem dados. A API de lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, declarações de cartão de crédito para vários clientes.
 
 A API em lote aceita registros (dados) no formato JSON e de um Modelo de dados de formulário. O número de comunicações interativas produzidas é igual aos registros especificados no arquivo JSON de entrada no Modelo de dados de formulário configurado. Você pode usar a API para produzir as saídas Imprimir e Web. A opção IMPRIMIR produz um documento PDF e a opção WEB produz dados no formato JSON para cada registro individual.
 
@@ -98,11 +98,11 @@ Para criar comunicação interativa a partir de registros salvos em um arquivo J
 1. Use a pasta assistida para gerar comunicação interativa:
    1. Abra a pasta assistida. Navegue até a pasta de entrada.
    1. Crie uma pasta na pasta de entrada e coloque o arquivo JSON na pasta recém-criada.
-   1. Aguarde a Pasta assistida processar o arquivo. Quando o processamento é iniciado, o arquivo de entrada e a subpasta que contém o arquivo são movidos para a pasta de preparo.
-   1. Abra a pasta de saída para exibir a saída:
+   1. Aguarde a Pasta assistida processar o arquivo. Quando os start de processamento, o arquivo de entrada e a subpasta que contém o arquivo são movidos para a pasta de preparo.
+   1. Abra a pasta de saída para visualização na saída:
       * Quando você especifica a opção IMPRIMIR em Configuração de pasta assistida, a saída PDF para a comunicação interativa é gerada.
       * Quando você especifica a opção WEB em Configuração de pasta assistida, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo](#web-template)da Web.
-      * Quando você especifica as opções IMPRIMIR e WEB, os documentos PDF e um arquivo JSON por registro são gerados.
+      * Quando você especifica as opções IMPRIMIR e WEB, são gerados documentos PDF e um arquivo JSON por registro.
 
 #### Use dados de entrada salvos em uma fonte de dados externa e acessados por meio do modelo de dados de formulário para produzir uma comunicação interativa {#use-fdm-as-data-source}
 
@@ -160,11 +160,11 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um mode
 1. Use a pasta assistida para gerar comunicação interativa:
    1. Abra a pasta assistida. Navegue até a pasta de entrada.
    1. Crie uma pasta na pasta de entrada. Coloque o arquivo JSON criado na Etapa 2 na pasta recém-criada.
-   1. Aguarde a Pasta assistida processar o arquivo. Quando o processamento é iniciado, o arquivo de entrada e a subpasta que contém o arquivo são movidos para a pasta de preparo.
-   1. Abra a pasta de saída para exibir a saída:
+   1. Aguarde a Pasta assistida processar o arquivo. Quando os start de processamento, o arquivo de entrada e a subpasta que contém o arquivo são movidos para a pasta de preparo.
+   1. Abra a pasta de saída para visualização na saída:
       * Quando você especifica a opção IMPRIMIR em Configuração de pasta assistida, a saída PDF para a comunicação interativa é gerada.
       * Quando você especifica a opção WEB em Configuração de pasta assistida, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo](#web-template)da Web.
-      * Quando você especifica as opções IMPRIMIR e WEB, os documentos PDF e um arquivo JSON por registro são gerados.
+      * Quando você especifica as opções IMPRIMIR e WEB, são gerados documentos PDF e um arquivo JSON por registro.
 
 ## Chamar a API de lote usando solicitações REST
 
@@ -174,7 +174,7 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
 
 1. Faça logon na instância do AEM e crie uma Comunicação interativa. Para usar a comunicação interativa mencionada no código de amostra fornecido abaixo, [clique aqui](assets/SimpleMediumIC.zip).
 1. [Crie e implante um projeto AEM usando o Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) na sua instância do AEM.
-1. Adicione o SDK do cliente do [AEM Forms versão 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou posterior e o mais recente Jar [do](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) AEM Uber na lista de dependências do arquivo POm do seu projeto AEM. Por exemplo,
+1. Adicione o SDK do cliente do [AEM Forms versão 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou posterior e o mais recente Jar [do](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) AEM Uber em dependências lista do arquivo POm do seu projeto AEM. Por exemplo,
 
    ```XML
        <dependency>
@@ -352,14 +352,14 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
 1. No código acima, substitua o caminho do modelo (setTemplatePath) pelo caminho do modelo e defina o valor da API setBatchType:
    * Quando você especifica a saída PDF da opção IMPRIMIR para a comunicação interativa é gerada.
    * Quando você especifica a opção WEB, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo](#web-template)da Web.
-   * Quando você especifica as opções IMPRIMIR e WEB, os documentos PDF e um arquivo JSON por registro são gerados.
+   * Quando você especifica as opções IMPRIMIR e WEB, são gerados documentos PDF e um arquivo JSON por registro.
 
 1. [Use o maven para implantar o código atualizado na sua instância](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)do AEM.
 1. Chame a API de lote para gerar a comunicação interativa. A API em lote imprime um fluxo de arquivos PDF e .json dependendo do número de registros. Você pode usar o arquivo JSON para [preencher previamente um modelo](#web-template)da Web. Se você usar o código acima, a API será implantada em `http://localhost:4502/bin/batchServlet`. O código imprime e retorna um fluxo de arquivos PDF e JSON.
 
 ### Preencher previamente um modelo da Web {#web-template}
 
-Quando você define o batchType para renderizar o Canal da Web, a API gera um arquivo JSON para cada registro de dados. Você pode usar a seguinte sintaxe para unir o arquivo JSON ao canal da Web correspondente para gerar uma comunicação interativa:
+Quando você define o batchType para renderizar o Canal da Web, a API gera um arquivo JSON para cada registro de dados. Você pode usar a seguinte sintaxe para unir o arquivo JSON ao Canal da Web correspondente para gerar uma comunicação interativa:
 
 **Sintaxe**`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
@@ -367,7 +367,7 @@ Quando você define o batchType para renderizar o Canal da Web, a API gera um ar
 
 Em seguida, o seguinte URL no nó de publicação exibe o Canal da Web da comunicação interativa`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
-Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no repositório CRX, no sistema de arquivos, no servidor da Web ou pode acessar dados por meio do serviço de preenchimento prévio OSGI. Sintaxe para unir dados usando vários protocolos são:
+Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no repositório CRX, no sistema de arquivos, no servidor da Web ou pode acessar os dados por meio do serviço de preenchimento prévio OSGI. Sintaxe para unir dados usando vários protocolos são:
 
 * **Protocolo CRX**
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
