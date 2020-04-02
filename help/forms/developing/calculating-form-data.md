@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 4b9e2ceafc301db9337868b78bcae87c0f07e14b
+source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
 
 ---
 
@@ -22,9 +22,9 @@ O serviço Forms pode calcular os valores que um usuário digita em um formulár
 
 Como parte do processo de design de formulário, você pode usar cálculos e scripts para proporcionar uma experiência mais avançada ao usuário. Cálculos e scripts podem ser adicionados à maioria dos campos e objetos de formulário. É necessário criar um script de design de formulário para executar operações de cálculo nos dados inseridos pelo usuário em um formulário interativo.
 
-O usuário insere valores no formulário e clica no botão Calcular para exibir os resultados. O processo a seguir descreve um exemplo de aplicativo que permite que um usuário calcule dados:
+O usuário insere valores no formulário e clica no botão Calcular para visualização dos resultados. O processo a seguir descreve um exemplo de aplicativo que permite que um usuário calcule dados:
 
-* O usuário acessa uma página HTML chamada StartLoan.html que atua como a página inicial do aplicativo da Web. Esta página chama um Servlet Java chamado `GetLoanForm`.
+* O usuário acessa uma página HTML chamada StartLoan.html que atua como a página de start do aplicativo da Web. Esta página chama um Servlet Java chamado `GetLoanForm`.
 * O `GetLoanForm` servlet renderiza um formulário de empréstimo. Este formulário contém um script, campos interativos, um botão calcular e um botão enviar.
 * O usuário insere valores nos campos do formulário e clica no botão Calcular. O formulário é enviado para o `CalculateData` Java Servlet onde o script é executado. O formulário é enviado de volta ao usuário com os resultados do cálculo exibidos no formulário.
 * O usuário continua inserindo e calculando valores até que um resultado satisfatório seja exibido. Quando satisfeito, o usuário clica no botão Enviar para processar o formulário. O formulário é enviado para outro Java Servlet `ProcessForm` que é responsável pela recuperação dos dados enviados. (Consulte [Manuseio De Formulários](/help/forms/developing/rendering-forms.md#handling-submitted-forms)Enviados.)
@@ -46,11 +46,11 @@ A tabela a seguir descreve as etapas neste diagrama.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>O Servlet <code>GetLoanForm</code> Java é chamado da página inicial HTML. </p></td>
+   <td><p>O <code>GetLoanForm</code> Java Servlet é chamado da página do start HTML. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>O <code>GetLoanForm</code> Java Servlet usa a API do cliente de serviço do Forms para renderizar o formulário de empréstimo no navegador da Web do cliente. A diferença entre a renderização de um formulário que contém um script configurado para execução no servidor e a renderização de um formulário que não contém um script é que você deve especificar o local de destino usado para executar o script. Se um local de destino não for especificado, um script configurado para execução no servidor não será executado. Por exemplo, considere o aplicativo apresentado nesta seção. O Servlet <code>CalculateData</code> Java é o local de destino onde o script é executado.</p></td>
+   <td><p>O <code>GetLoanForm</code> Java Servlet usa a API do cliente de serviço do Forms para renderizar o formulário de empréstimo no navegador da Web do cliente. A diferença entre a renderização de um formulário que contém um script configurado para execução no servidor e a renderização de um formulário que não contém um script é que é necessário especificar o local do público alvo usado para executar o script. Se um local de público alvo não for especificado, um script configurado para execução no servidor não será executado. Por exemplo, considere o aplicativo apresentado nesta seção. O Servlet <code>CalculateData</code> Java é o local do público alvo onde o script é executado.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -67,13 +67,13 @@ A tabela a seguir descreve as etapas neste diagrama.
  </tbody>
 </table>
 
-Normalmente, um formulário enviado como conteúdo PDF contém scripts executados no cliente. No entanto, cálculos do lado do servidor também podem ser executados. Um botão Enviar não pode ser usado para calcular scripts. Nessa situação, os cálculos não são executados porque o serviço Forms considera a interação concluída.
+Normalmente, um formulário enviado como conteúdo PDF contém scripts executados no cliente. No entanto, os cálculos do lado do servidor também podem ser executados. Um botão Enviar não pode ser usado para calcular scripts. Nessa situação, os cálculos não são executados porque o serviço do Forms considera a interação concluída.
 
 Para ilustrar o uso de um script de design de formulário, esta seção examina um formulário interativo simples que contém um script configurado para execução no servidor. O diagrama a seguir mostra um design de formulário contendo um script que adiciona valores que um usuário digita nos dois primeiros campos e exibe o resultado no terceiro campo.
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-******A. Um campo chamado NumericField1** B. Um campo chamado NumericField2 **C.** Um campo chamado NumericField3
+**A.** Um campo chamado NumericField1 **B.** Um campo chamado NumericField2 **C.** Um campo chamado NumericField3
 
 A sintaxe do script localizado neste design de formulário é a seguinte:
 
@@ -81,7 +81,7 @@ A sintaxe do script localizado neste design de formulário é a seguinte:
      NumericField3 = NumericField2 + NumericField1
 ```
 
-Nesse design de formulário, o botão Calcular é um botão de comando e o script está localizado no `Click` evento desse botão. Quando um usuário digita valores nos dois primeiros campos (NumericField1 e NumericField2) e clica no botão Calcular, o formulário é enviado para o serviço Forms, onde o script é executado. O serviço Forms renderiza o formulário de volta ao dispositivo cliente com os resultados do cálculo exibidos no campo NumericField3.
+Nesse design de formulário, o botão Calcular é um botão de comando e o script está localizado no `Click` evento desse botão. Quando um usuário digita valores nos dois primeiros campos (NumericField1 e NumericField2) e clica no botão Calcular, o formulário é enviado para o serviço de Formulários, onde o script é executado. O serviço Forms renderiza o formulário de volta ao dispositivo cliente com os resultados do cálculo exibidos no campo NumericField3.
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Antes de executar programaticamente uma operação de API do cliente do serviço
 
 **Recuperar um formulário contendo um script de cálculo**
 
-Use a API do cliente do serviço Forms para criar uma lógica de aplicativo que manipule um formulário que contenha um script configurado para execução no servidor. O processo é semelhante ao processamento de um formulário enviado. (Consulte [Manuseio de formulários]enviados (/help/forms/develop/rendering-forms-handling-submit-forms-handling-submit-md#handling-submit-forms).)
+Use a API do cliente do serviço Forms para criar uma lógica de aplicativo que manipule um formulário que contenha um script configurado para execução no servidor. O processo é semelhante ao manuseio de um formulário enviado. (Consulte [Manuseio De Formulários](/help/forms/developing/handling-submitted-forms.md)Enviados.)
 
 Verifique se o estado de processamento associado ao formulário enviado é `1` `(Calculate)`, o que significa que o serviço Forms está executando uma operação de cálculo nos dados do formulário e os resultados devem ser gravados de volta no usuário. Nessa situação, um script configurado para execução no servidor é executado automaticamente.
 
@@ -120,7 +120,7 @@ Depois de verificar se o estado de processamento associado a um formulário envi
 
 **Consulte também:**
 
-[Incluindo arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms[Calcule os dados do formulário usando a API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)Java[Calcule os dados do formulário usando a API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)do serviço Web[Configurando propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão API do serviço[Forms Início rápido](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Renderização interativa de formulários PDFsCriação de aplicativos Web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Incluindo arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms[Calcule os dados do formulário usando a API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)Java[Calcule os dados do formulário usando a API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)do serviço da Web[Configurando propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão API do serviço[Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Rápido Renderizando formulários PDF interativosComo criar Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular dados de formulário usando a API Java {#calculate-form-data-using-the-java-api}
 
