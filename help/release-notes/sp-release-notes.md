@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
+source-git-commit: a83def358e026b516add577f968dcc709357e458
 
 ---
 
@@ -131,8 +131,6 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 * A página de resultados da pesquisa de interface de toque (feita pelo Omnisearch) rola automaticamente para cima e perde a posição de rolagem do usuário (NPR-31307).
 
 * A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução do Dynamic Media Scene7 (CQ-4286705).
-
-* Agora é possível fazer upload de ativos maiores que 2 GB no Dynamic Media-Scene7 (CQ-4286561).
 
 * Os ativos demoram muito para serem processados pelo processo de upload em lote do Scene7 (CQ-4286445).
 
