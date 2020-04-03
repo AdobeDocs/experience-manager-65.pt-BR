@@ -3,7 +3,7 @@ title: Guia de dimensionamento de ativos
 description: Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar os ativos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
 
 ---
 
@@ -20,18 +20,18 @@ Um erro comum cometido ao dimensionar o espaço em disco necessário para uma im
 
 A maioria dos usuários define representações personalizadas, além de execuções prontas. Além das execuções, os ativos AEM permitem extrair subativos de tipos de arquivos comuns, como o InDesign e o Illustrator.
 
-Por fim, os recursos de controle de versão do AEM armazenam duplicatas dos ativos no histórico de versões. Você pode configurar as versões a serem removidas com frequência. No entanto, muitos usuários optam por reter versões no sistema por um longo tempo, o que consome espaço de armazenamento adicional.
+Por fim, os recursos de controle de versão dos duplicados do AEM armazenam os ativos no histórico de versões. Você pode configurar as versões a serem removidas com frequência. Entretanto, muitos usuários optam por reter versões no sistema por um longo tempo, o que consome mais espaço no armazenamento.
 
-Considerando esses fatores, você precisa de uma metodologia para calcular um espaço de armazenamento de dados aceitável para armazenar os ativos do usuário.
+Considerando esses fatores, você precisa de uma metodologia para calcular um espaço de armazenamento com precisão aceitável para armazenar os ativos do usuário.
 
 1. Determine o tamanho e o número de ativos que serão carregados no sistema.
 1. Obtenha uma amostra representativa dos ativos a serem carregados no AEM. Por exemplo, se você planeja carregar arquivos PSD, JPG, AI e PDF no sistema, é necessário várias imagens de amostra de cada formato de arquivo. Além disso, essas amostras devem ser representativas dos diferentes tamanhos de arquivo e complexidades das imagens.
 1. Defina as representações a serem usadas.
-1. Crie as execuções no AEM usando os aplicativos ImageMagick ou Creative Cloud da Adobe. Além das representações que os usuários especificam, crie execuções predefinidas. Para usuários que implementam o Scene7, você pode usar o binário IC para gerar as execuções PTIFF a serem armazenadas no AEM.
+1. Crie as execuções no AEM usando os aplicativos ImageMagick ou Creative Cloud da Adobe. Além das representações que os usuários especificam, crie execuções prontas para uso. Para usuários que implementam o Scene7, você pode usar o binário IC para gerar as execuções PTIFF a serem armazenadas no AEM.
 1. Se você planeja usar subativos, gere-os para os tipos de arquivo apropriados. Consulte a documentação on-line sobre como gerar páginas de subativos de arquivos do InDesign ou arquivos PNG/PDF de camadas do Illustrator.
 1. Compare o tamanho das imagens de saída, representações e subativos com as imagens originais. Ele permite gerar um fator de crescimento esperado quando o sistema é carregado. Por exemplo, se você gerar representações e subativos com um tamanho combinado de 3 GB após o processamento de 1 GB de ativos, o fator de crescimento da representação será 3.
 1. Determine o tempo máximo durante o qual as versões de ativos devem ser mantidas no sistema.
-1. Determine com que frequência os ativos existentes são modificados no sistema. Se o AEM for usado como um hub de colaboração em fluxos de trabalho criativos, a quantidade de alterações será alta. Se apenas os ativos finalizados forem carregados no sistema, esse número será muito menor.
+1. Determine com que frequência os ativos existentes são modificados no sistema. Se o AEM for usado como um hub de colaboração em workflows criativos, a quantidade de alterações será alta. Se apenas os ativos finalizados forem carregados no sistema, esse número será muito menor.
 1. Determine quantos ativos são carregados no sistema a cada mês. Se não tiver certeza, verifique o número de ativos que estão disponíveis no momento e divida o número pela idade do ativo mais antigo para calcular um número aproximado.
 
 A execução das etapas 1 a 9 ajuda a determinar o seguinte:
@@ -76,24 +76,24 @@ Para operações AWS, a implementação de um único local central (via S3), em 
 
 #### Problemas de desempenho {#performance-concerns}
 
-Um armazenamento de dados compartilhado exige que os binários sejam armazenados em uma unidade montada em rede que seja compartilhada entre todas as instâncias. Como esses binários são acessados em uma rede, o desempenho do sistema é afetado negativamente. Você pode atenuar parcialmente o impacto usando uma conexão de rede rápida para um array rápido de discos. Mas essa é uma proposta cara. No caso de operações AWS, todos os discos são remotos e exigem conectividade de rede. Os volumes efêmeros perdem dados quando a instância é iniciada ou interrompida.
+Um armazenamento de dados compartilhado exige que os binários sejam armazenados em uma unidade montada em rede que seja compartilhada entre todas as instâncias. Como esses binários são acessados em uma rede, o desempenho do sistema é afetado negativamente. Você pode atenuar parcialmente o impacto usando uma conexão de rede rápida para um array rápido de discos. No entanto, esta é uma proposta dispendiosa. No caso de operações AWS, todos os discos são remotos e exigem conectividade de rede. Os volumes efêmeros perdem dados quando a instância é start ou interrompida.
 
 #### Latência {#latency}
 
 A latência em implementações S3 é introduzida pelos threads de escrita em segundo plano. Os procedimentos de backup devem levar em conta essa latência. Além disso, os índices Lucene podem ficar incompletos ao fazer um backup. Ele se aplica a qualquer arquivo que faz distinção de tempo gravado no armazenamento de dados S3 e acessado de outra instância.
 
-### Armazenamento de nós ou armazenamento de documentos {#node-store-document-store}
+### Loja de nós ou documento {#node-store-document-store}
 
 É difícil obter números precisos de dimensionamento para um NodeStore ou DocumentStore devido aos recursos consumidos pelos seguintes:
 
 * Metadados do ativo
 * Versões de ativos
 * Logs de auditoria
-* Fluxos de trabalho arquivados e ativos
+* workflows arquivados e ativos
 
 Como os binários são armazenados no armazenamento de dados, cada binário ocupa algum espaço. A maioria dos repositórios tem menos de 100 GB. No entanto, pode haver repositórios maiores de até 1 TB de tamanho. Além disso, para executar compactação offline, é necessário espaço livre suficiente no volume para regravar o repositório compactado junto com a versão pré-compactada. Uma boa regra é dimensionar o disco para 1,5 vezes o tamanho esperado para o repositório.
 
-Para o repositório, use SSDs ou discos com um nível IOPS superior a 3 kilobytes. Para eliminar as chances de o IOPS introduzir gargalos no desempenho, monitore os níveis de espera de E/S da CPU para obter os primeiros sinais de problemas.
+Para o repositório, use SSDs ou discos com um nível IOPS superior a 3000. Para eliminar as chances de o IOPS introduzir gargalos no desempenho, monitore os níveis de espera de E/S da CPU para obter os primeiros sinais de problemas.
 
 [Obter arquivo](assets/aem_environment_sizingtool.xlsx)
 
@@ -101,11 +101,11 @@ Para o repositório, use SSDs ou discos com um nível IOPS superior a 3 kilobyte
 
 O AEM Assets tem vários casos de uso que tornam o desempenho da rede mais importante do que em muitos de nossos projetos do AEM. Um cliente pode ter um servidor rápido, mas se a conexão de rede não for grande o suficiente para suportar a carga dos usuários que estão carregando e baixando ativos do sistema, ele ainda parecerá estar lento. Há uma boa metodologia para determinar o ponto de estrangulamento na conexão de rede de um usuário ao AEM em considerações de ativos [AEM para experiência do usuário, dimensionamento de instância, avaliação de fluxo de trabalho e topologia](/help/assets/assets-network-considerations.md)de rede.
 
-## Limitações {#limitations}
+## Limitações       {#limitations}
 
-Ao dimensionar uma implementação, é importante ter em mente as limitações do sistema. Se a implementação proposta exceder essas limitações, utilize estratégias criativas, como a divisão dos ativos em várias implementações de Ativos.
+Ao dimensionar uma implementação, é importante ter em mente as limitações do sistema. Se a implementação proposta exceder essas limitações, empregue estratégias criativas, como a divisão dos ativos em várias implementações de Ativos.
 
-O tamanho do arquivo não é o único fator que contribui para problemas de falta de memória (OOM). Também depende das dimensões da imagem. Você pode evitar problemas de OOM fornecendo um tamanho de heap maior ao iniciar o AEM.
+O tamanho do arquivo não é o único fator que contribui para problemas de falta de memória (OOM). Também depende das dimensões da imagem. Você pode evitar problemas de OOM fornecendo um tamanho de heap maior ao start do AEM.
 
 Além disso, você pode editar a propriedade de tamanho limite do `com.day.cq.dam.commons.handler.StandardImageHandler` componente no Configuration Manager para usar um arquivo temporário intermediário maior que zero.
 
@@ -119,4 +119,4 @@ Se as renderizações forem geradas incorretamente, use a biblioteca do Camera R
 
 ## Dimensão dos ativos {#size-of-assets}
 
-Por padrão, o AEM permite carregar ativos de tamanho de arquivo de até 2 GB. Para carregar ativos muito grandes no AEM, consulte [Configuração para carregar ativos](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)muito grandes.
+Por padrão, o AEM permite carregar ativos de tamanho de arquivo de até 2 GB. Para fazer upload de ativos muito grandes no AEM, consulte [Configuração para fazer upload de ativos](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)muito grandes.
