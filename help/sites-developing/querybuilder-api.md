@@ -1,8 +1,8 @@
 ---
-title: API do Query Builder
-seo-title: API do Query Builder
-description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java e REST.
-seo-description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java e REST.
+title: API do Construtor de Query
+seo-title: API do Construtor de Query
+description: A funcionalidade do Construtor de Query de compartilhamento de ativos é exposta por meio de uma API Java e REST.
+seo-description: A funcionalidade do Construtor de Query de compartilhamento de ativos é exposta por meio de uma API Java e REST.
 uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,18 +12,18 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: a491d4e9bd9ffc68c4ba7cac3149f48cf7576ee8
 
 ---
 
 
-# API do Query Builder{#query-builder-api}
+# API do Construtor de Query{#query-builder-api}
 
-A funcionalidade do Construtor [de consultas de compartilhamento de](/help/assets/assets-finder-editor.md) ativos é exposta por meio de uma API Java e REST. Esta seção descreve essas APIs.
+A funcionalidade do Construtor [de Query de compartilhamento de](/help/assets/assets-finder-editor.md) ativos é exposta por meio de uma API Java e uma API REST. Esta seção descreve essas APIs.
 
-O construtor de consultas do lado do servidor ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) aceitará uma descrição de consulta, criará e executará uma consulta XPath, filtrará opcionalmente o conjunto de resultados e também extrairá aspectos, se desejado.
+O construtor de query do lado do servidor ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) aceitará uma descrição de query, criará e executará um query XPath, opcionalmente filtrará o conjunto de resultados e também extrairá aspectos, se desejado.
 
-A descrição da consulta é simplesmente um conjunto de predicados ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Os exemplos incluem um predicado de texto completo, que corresponde à `jcr:contains()` função no XPath, e um predicado de tamanho de imagem que procura propriedades de largura e altura na subárvore de ativos DAM.
+A descrição do query é simplesmente um conjunto de predicados ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Os exemplos incluem um predicado de texto completo, que corresponde à `jcr:contains()` função no XPath.
 
 Para cada tipo de predicado, há um componente avaliador ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe como lidar com esse predicado específico para XPath, filtragem e extração de facetas. É muito fácil criar avaliadores personalizados, que são conectados por meio do tempo de execução do componente OSGi.
 
@@ -31,17 +31,17 @@ A REST API fornece acesso aos mesmos recursos por meio de HTTP, com respostas se
 
 >[!NOTE]
 >
->A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Consultar dados do Adobe Experience Manager usando a API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)JCR.
+>A API do QueryBuilder é criada usando a API JCR. Você também pode query o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Consultar dados do Adobe Experience Manager usando a API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)JCR.
 
 ## Sessão Gem {#gem-session}
 
-[O AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) é uma série de soluções técnicas oferecidas por especialistas da Adobe Experience Manager. Esta sessão dedicada ao construtor de consultas é muito útil para uma visão geral e uso da ferramenta.
+[O AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) é uma série de soluções técnicas oferecidas por especialistas da Adobe Experience Manager. Esta sessão dedicada ao construtor de query é muito útil para uma visão geral e uso da ferramenta.
 
 >[!NOTE]
 >
->Consulte os formulários de [pesquisa de sessão do AEM Gem facilitados com o AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) para obter uma visão geral detalhada do construtor de consultas.
+>Consulte os formulários de [pesquisa de sessão do AEM Gem facilitados com o AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) para obter uma visão geral detalhada do construtor de query.
 
-## Consultas de amostra {#sample-queries}
+## Query de amostra {#sample-queries}
 
 Essas amostras são fornecidas na notação de estilo de propriedades Java. Para usá-los com a API Java, use um Java `HashMap` como na amostra de API a seguir.
 
@@ -49,19 +49,19 @@ Para o Servlet `QueryBuilder` JSON, cada exemplo inclui um link para a instalaç
 
 >[!CAUTION]
 >
->Por padrão, o servlet json do construtor de consultas exibe no máximo 10 ocorrências.
+>Por padrão, o servlet json do construtor de query exibe no máximo 10 ocorrências.
 >
->A adição do seguinte parâmetro permite que o servlet exiba todos os resultados da consulta:
+>A adição do seguinte parâmetro permite que o servlet exiba todos os resultados do query:
 >
 >**`p.limit=-1`**
 
 >[!NOTE]
 >
->Para exibir os dados JSON retornados no seu navegador, você pode usar um plug-in como JSONView para Firefox.
+>Para visualização dos dados JSON retornados no seu navegador, você pode usar um plug-in como JSONView para Firefox.
 
 ### Retorno de todos os resultados {#returning-all-results}
 
-**A consulta a seguir** retornará dez resultados **(ou para ser preciso no máximo dez), mas informará o** Número de ocorrências: que estão efetivamente disponíveis:
+O query a seguir **retornará dez resultados** (ou, para ser preciso, no máximo dez), mas informará o **Número de ocorrências:** que estão efetivamente disponíveis:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&orderby=path`
 
@@ -73,7 +73,7 @@ path=/content
 orderby=path
 ```
 
-A mesma consulta (com o parâmetro `p.limit=-1`) **retornará todos os resultados** (pode ser um número alto dependendo da sua instância):
+O mesmo query (com o parâmetro `p.limit=-1`) **retornará todos os resultados** (pode ser um número alto, dependendo da sua instância):
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.limit=-1&orderby=path`
 
@@ -92,7 +92,7 @@ O objetivo do `p.guessTotal` parâmetro é retornar o número adequado de result
 
 A desvantagem do parâmetro é que os usuários não veem o total exato. Mas você pode definir um número mínimo como p.advindoTotal=1000 para que ele sempre leia até 1000, então você obtém totais exatos para conjuntos de resultados menores, mas se for mais que isso, você só pode mostrar &quot;e mais&quot;.
 
-Adicione `p.guessTotal=true` à consulta abaixo para ver como funciona:
+Adicione `p.guessTotal=true` ao query abaixo para ver como ele funciona:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=true&orderby=path`
 
@@ -105,7 +105,7 @@ p.guessTotal=true
 orderby=path
 ```
 
-A consulta retornará o `p.limit` padrão de `10` resultados com um `0` deslocamento:
+O query retornará o `p.limit` padrão dos `10` resultados com um `0` deslocamento:
 
 ```xml
 "success": true,
@@ -115,7 +115,7 @@ A consulta retornará o `p.limit` padrão de `10` resultados com um `0` deslocam
 "offset": 0,
 ```
 
-A partir do AEM 6.0 SP2, você também pode usar um valor numérico para contar até um número personalizado de resultados máximos. Use a mesma consulta como acima, mas altere o valor de `p.guessTotal` para `50`:
+A partir do AEM 6.0 SP2, você também pode usar um valor numérico para contar até um número personalizado de resultados máximos. Use o mesmo query como acima, mas altere o valor de `p.guessTotal` para `50`:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=50&orderby=path`
 
@@ -131,19 +131,19 @@ Ele retornará um número no mesmo limite padrão de 10 resultados com um desloc
 
 ### Implementação da paginação {#implementing-pagination}
 
-Por padrão, o Query Builder também fornece o número de ocorrências. Dependendo do tamanho do resultado, isso pode levar muito tempo para determinar a contagem precisa envolve verificar todos os resultados para o controle de acesso. A maior parte do total é usada para implementar a paginação para a interface do usuário final. Como determinar a contagem exata pode ser lenta, é recomendável usar o recurso de chuteTotal para implementar a paginação.
+Por padrão, o Construtor de Query também fornece o número de ocorrências. Dependendo do tamanho do resultado, isso pode levar muito tempo, já que determinar a contagem precisa envolve verificar todos os resultados para o controle de acesso. A maior parte do total é usada para implementar a paginação para a interface do usuário final. Como determinar a contagem exata pode ser lenta, é recomendável usar o recurso de chuteTotal para implementar a paginação.
 
 Por exemplo, a interface do usuário pode adaptar a seguinte abordagem:
 
 * Obter e exibir a contagem precisa do número total de ocorrências ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou total na resposta querybuilder.json) são menores ou iguais a 100;
-* Defina `guessTotal` como 100 ao fazer a chamada para o Query Builder.
+* Defina `guessTotal` como 100 ao fazer a chamada para o Construtor de Query.
 
 * A resposta pode ter os seguintes resultados:
 
    * `total=43`, `more=false` - Indica que o número total de ocorrências é 43. A interface do usuário pode exibir até dez resultados como parte da primeira página e fornecer paginação para as próximas três páginas. Você também pode usar essa implementação para exibir um texto descritivo como **&quot;43 resultados encontrados&quot;**.
-   * `total=100`, `more=true` - Indica que o número total de ocorrências é maior que 100 e que a contagem exata não é conhecida. A interface do usuário pode exibir até dez como parte da primeira página e fornecer paginação para as próximas dez páginas. Você também pode usar esse recurso para exibir um texto como **&quot;mais de 100 resultados encontrados&quot;**. À medida que o usuário vai para as próximas páginas, as chamadas feitas para o Query Builder aumentariam o limite de e também dos parâmetros `guessTotal` e `offset` `limit` .
+   * `total=100`, `more=true` - Indica que o número total de ocorrências é maior que 100 e que a contagem exata não é conhecida. A interface do usuário pode exibir até dez como parte da primeira página e fornecer paginação para as próximas dez páginas. Você também pode usar esse recurso para exibir um texto como **&quot;mais de 100 resultados encontrados&quot;**. À medida que o usuário vai para as próximas páginas, as chamadas feitas para o Construtor de Query aumentariam o limite de e também dos `guessTotal` e `offset` `limit` parâmetros.
 
-`guessTotal` também deve ser usado nos casos em que a interface precisa usar rolagem infinita, para evitar que o Query Builder determine a contagem exata de ocorrências.
+`guessTotal` também deve ser usado nos casos em que a interface do usuário precisa usar a rolagem infinita, para evitar que o Construtor de Query determine a contagem exata de ocorrências.
 
 ### Encontre os arquivos jar e solicite-os, os mais recentes primeiro {#find-jar-files-and-order-them-newest-first}
 
@@ -212,11 +212,11 @@ group.1_path=/content/geometrixx/en/company/management
 group.2_path=/content/geometrixx/en/company/bod
 ```
 
-Essa consulta usa um *grupo* (chamado &quot; `group`&quot;), que atua para delimitar subexpressões em uma consulta, assim como os parênteses fazem em classificações mais padrão. Por exemplo, a consulta anterior pode ser expressa em um estilo mais familiar como:
+Esse query usa um *grupo* (chamado &quot; `group`&quot;), que atua para delimitar subexpressões dentro de um query, assim como os parênteses fazem em classificações mais padrão. Por exemplo, o query anterior pode ser expresso em um estilo mais familiar como:
 
 `"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
 
-No grupo do exemplo, o `path` predicado é usado várias vezes. Para diferenciar e ordenar as duas instâncias do predicado (a ordem é necessária para alguns predicados), você deve prefixar os predicados com *N* `_ where`*N *é o índice de pedidos. No exemplo anterior, os predicados resultantes são`1_path`e`2_path`.
+Dentro do grupo no exemplo, o `path` predicado é usado várias vezes. Para diferenciar e ordenar as duas instâncias do predicado (a ordem é necessária para alguns predicados), você deve prefixar os predicados com *N* `_ where`*N *é o índice de ordenação. No exemplo anterior, os predicados resultantes são`1_path`e`2_path`.
 
 O `p` in `p.or` é um delimitador especial indicando que o que segue (neste caso, um `or`) é um *parâmetro* do grupo, em oposição a um subpredicado do grupo, como `1_path`.
 
@@ -224,7 +224,7 @@ Se nenhum `p.or` for dado então todos os predicados são Eed juntos, ou seja, c
 
 >[!NOTE]
 >
->Não é possível usar o mesmo prefixo numérico em uma única consulta, mesmo para predicados diferentes.
+>Não é possível usar o mesmo prefixo numérico em um único query, mesmo para predicados diferentes.
 
 ### Pesquisar propriedades {#search-for-properties}
 
@@ -307,7 +307,7 @@ property.value=Triangle
 p.hits=full
 ```
 
-Use
+Uso
 
 ```
 p.hits=selective
@@ -338,7 +338,7 @@ Outra coisa que você pode fazer é incluir nós filhos na resposta do QueryBuil
 p.nodedepth=n
 ```
 
-onde `n` é o número de níveis que você deseja que a consulta retorne. Observe que, para que um nó filho seja retornado, ele deve ser especificado pelo seletor de propriedades
+onde `n` é o número de níveis que você deseja que o query retorne. Observe que, para que um nó filho seja retornado, ele deve ser especificado pelo seletor de propriedades
 
 ```
 p.hits=full
@@ -357,15 +357,15 @@ p.nodedepth=5
 
 ## Mais Predicados {#morepredicates}
 
-Para obter mais predicados, consulte a página [Referência do Predicado do](/help/sites-developing/querybuilder-predicate-reference.md)Query Builder.
+Para obter mais predicados, consulte a página [Referência de previsão do Construtor de](/help/sites-developing/querybuilder-predicate-reference.md)Query.
 
 Você também pode verificar o [Javadoc em busca das `PredicateEvaluator` classes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). O Javadoc para essas classes contém a lista de propriedades que você pode usar.
 
-O prefixo do nome da classe (por exemplo, &quot; `similar`&quot; em [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) é a propriedade ** principal da classe. Essa propriedade também é o nome do predicado a ser usado na consulta (em minúsculas).
+O prefixo do nome da classe (por exemplo, &quot; `similar`&quot; em [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) é a propriedade ** principal da classe. Essa propriedade também é o nome do predicado a ser usado no query (em minúsculas).
 
-Para essas propriedades principais, você pode encurtar a consulta e usar &quot; `similar=/content/en`&quot; em vez da variante totalmente qualificada &quot; `similar.similar=/content/en`&quot;. O formulário totalmente qualificado deve ser usado para todas as propriedades não principais de uma classe.
+Para essas propriedades principais, você pode encurtar o query e usar &quot; `similar=/content/en`&quot; em vez da variante totalmente qualificada &quot; `similar.similar=/content/en`&quot;. O formulário totalmente qualificado deve ser usado para todas as propriedades não principais de uma classe.
 
-## Exemplo de uso da API do Query Builder {#example-query-builder-api-usage}
+## Exemplo de uso da API do Construtor de Query {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "Geometrixx";
@@ -425,13 +425,13 @@ Para essas propriedades principais, você pode encurtar a consulta e usar &quot;
 >
 >Para saber como criar um pacote OSGi que usa a API do QueryBuilder e usar esse pacote OSGi em um aplicativo do Adobe Experience Manager, consulte [Criação de pacotes OSGi do Adobe CQ que usam a](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API do Query Builder.
 
-A mesma consulta executada por HTTP usando o Servlet do Query Builder (JSON):
+O mesmo query executado por HTTP usando o servlet Query Builder (JSON):
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=Geometrixx&group.1_fulltext.relPath=jcr:content&group.2_fulltext=Geometrixx&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
-## Armazenamento e carregamento de consultas {#storing-and-loading-queries}
+## Armazenamento e carregamento de query {#storing-and-loading-queries}
 
-As consultas podem ser armazenadas no repositório para que você possa usá-las posteriormente. O `QueryBuilder` fornece o &quot; `storeQuery` método&quot; com a seguinte assinatura:
+Os Query podem ser armazenados no repositório para que você possa usá-los posteriormente. O `QueryBuilder` fornece o &quot; `storeQuery` método&quot; com a seguinte assinatura:
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
@@ -443,7 +443,7 @@ Ao usar o [`QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Qualquer consulta armazenada anteriormente pode ser carregada do repositório usando o [`QueryBuilder#loadQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession) método:
+Qualquer query armazenado anteriormente pode ser carregado do repositório usando o [`QueryBuilder#loadQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession) método:
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -457,7 +457,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 ## Teste e depuração {#testing-and-debugging}
 
-Para reproduzir e depurar consultas do querybuilder, você pode usar o console do depurador do QueryBuilder em
+Para reproduzir e depurar query do querybuilder, você pode usar o console do depurador do QueryBuilder em
 
 `http://localhost:4502/libs/cq/search/content/querydebug.html`
 
@@ -471,66 +471,66 @@ ou, alternativamente, o servlet json querybuilder em
 
 ### Obter XPath explicável por meio de registro {#obtain-explain-able-xpath-via-logging}
 
-Explique **todas** as consultas durante o ciclo de desenvolvimento em relação ao conjunto de índices de destino.
+Explique **todos** os query durante o ciclo de desenvolvimento em relação ao conjunto de índice do público alvo.
 
-* Ative registros DEBUG para o QueryBuilder para obter consulta XPath subjacente explicável
+* Ative registros DEBUG para o QueryBuilder para obter o query XPath subjacente explicável
 
    * Navegue até https://&lt;nomedoservidor>:&lt;serverport>/system/console/slinglog. Crie um novo agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
 
-* Depois que DEBUG for ativado para a classe acima, os registros exibirão o XPath gerado pelo Query Builder.
-* Copie a consulta XPath da entrada de log da consulta QueryBuilder associada, Por exemplo:
+* Depois que DEBUG for ativado para a classe acima, os registros exibirão o XPath gerado pelo Construtor de Query.
+* Copie o query XPath da entrada de registro do query QueryBuilder associado, por exemplo:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Colar a consulta XPath na Consulta [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obter o plano de consulta
+* Cole o query XPath em [Explique o Query](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obter o plano do query
 
-### Obter XPath explicável por meio do depurador do Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
+### Obtenha XPath explicável por meio do depurador do Construtor de Query {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Use o depurador do AEM QueryBuilder para gerar uma consulta XPath explicável:
+* Use o depurador do AEM QueryBuilder para gerar um query XPath explicável:
 
-Explique **todas** as consultas durante o ciclo de desenvolvimento em relação ao conjunto de índices de destino.
+Explique **todos** os query durante o ciclo de desenvolvimento em relação ao conjunto de índice do público alvo.
 
 **Obter XPath explicável por meio de registro**
 
-* Ative registros DEBUG para o QueryBuilder para obter consulta XPath subjacente explicável
+* Ative registros DEBUG para o QueryBuilder para obter o query XPath subjacente explicável
 
    * Navegue até https://&lt;nomedoservidor>:&lt;serverport>/system/console/slinglog. Crie um novo agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
 
-* Depois que DEBUG for ativado para a classe acima, os registros exibirão o XPath gerado pelo Query Builder.
-* Copie a consulta XPath da entrada de log da consulta QueryBuilder associada, Por exemplo:
+* Depois que DEBUG for ativado para a classe acima, os registros exibirão o XPath gerado pelo Construtor de Query.
+* Copie o query XPath da entrada de registro do query QueryBuilder associado, por exemplo:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Colar a consulta XPath na Consulta [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obter o plano de consulta
+* Cole o query XPath em [Explique o Query](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obter o plano do query
 
-**Obter XPath explicável por meio do depurador do Query Builder**
+**Obtenha XPath explicável por meio do depurador do Construtor de Query**
 
-* Use o depurador do AEM QueryBuilder para gerar uma consulta XPath explicável:
+* Use o depurador do AEM QueryBuilder para gerar um query XPath explicável:
 
 ![chlimage_1-66](assets/chlimage_1-66a.png)
 
-1. Forneça a consulta do Query Builder no depurador do Query Builder
+1. Forneça o query do Construtor de Query no depurador do Construtor de Query
 1. Executar a pesquisa
 1. Obter o XPath gerado
-1. Cole a consulta XPath em Explain Query as XPath para obter o plano de consulta
+1. Cole o query XPath em Explique o Query como XPath para obter o plano do query
 
 >[!NOTE]
 >
->Consultas que não são do querybuilder (XPath, JCR-SQL2) podem ser fornecidas diretamente para Explicar Consulta.
+>Os query que não são do querybuilder (XPath, JCR-SQL2) podem ser fornecidos diretamente para Explicar o Query.
 
-Para obter um resumo sobre como depurar consultas com o QueryBuilder, consulte o vídeo abaixo.
+Para obter um resumo sobre como depurar query com o QueryBuilder, consulte o vídeo abaixo.
 
 >[!NOTE]
 >
 >[https://www.youtube.com/watch?v=BnyXjhRKYKc](https://www.youtube.com/watch?v=BnyXjhRKYKc)
 
-## Depuração de consultas com registro {#debugging-queries-with-logging}
+## Depuração de Query com registro {#debugging-queries-with-logging}
 
 >[!NOTE]
 >
 >A configuração dos registradores está descrita na seção [Creating Your Own Loggers and Writers (Criação de seus próprios registradores e escritores](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers)).
 
-A saída de log (nível INFO) da implementação do construtor de consultas ao executar a consulta descrita em Testes e Depuração:
+A saída de log (nível INFO) da implementação do construtor de query ao executar o query descrito em Teste e Depuração:
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -547,7 +547,7 @@ com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
 
-Se você tiver uma consulta usando avaliadores de predicado que filtram ou usam uma ordem personalizada por comparador, isso também será observado na consulta:
+Se você tiver um query usando avaliadores de predicado que filtram ou usam um pedido personalizado por comparador, isso também será observado no query:
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -566,7 +566,7 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Descrição** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | API de consulta e do QueryBuilder básico |
+| [com.day.cq.search](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | API básica do QueryBuilder e do Query |
 | [com.day.cq.search.result](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | API de resultado |
 | [com.day.cq.search.facets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | Aspectos |
 | [com.day.cq.search.facets.buckets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Grupos (contidos em facetas) |
