@@ -8,7 +8,7 @@ discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
 mini-toc-levels: 1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ac4c5ec920ed768002da1b4598590bfd9ca301f6
+source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
 
 ---
 
@@ -69,7 +69,9 @@ Depois de ativar um plug-in, siga estas diretrizes para configurar a `features` 
 
 ## Entenda o plug-in findreplace {#findreplace}
 
-O plug- `findreplace` -in não precisa de nenhuma configuração. Funciona como esperado, fora da caixa.
+O plug- `findreplace` -in não precisa de nenhuma configuração. Funciona fora da caixa.
+
+Ao usar a funcionalidade de substituição, a string de substituição a ser substituída deve ser inserida ao mesmo tempo que a string de localização. No entanto, você ainda pode clicar em localizar para procurar a string antes de substituí-la. Se a string de substituição for inserida após clicar em Localizar, a pesquisa será redefinida para o início do texto.
 
 A caixa de diálogo localizar e substituir fica transparente quando a localização é clicada e se torna opaca quando a substituição é clicada. Isso permite que o autor reveja o texto que o autor substituirá. Se os usuários clicarem em substituir tudo, a caixa de diálogo será fechada e exibirá o número de substituições feitas.
 
