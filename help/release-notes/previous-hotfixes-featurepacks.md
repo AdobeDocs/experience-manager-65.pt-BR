@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0e95ac8850a693764b82a29960b472d156dac535
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -92,13 +92,13 @@ Alguns destaques principais desta versão do Service pack:
 
 * A movimentação em massa de ativos está falhando e exibindo a mensagem de aviso (NPR-30610).
 
-* Os nomes dos ativos são alterados para minúsculas ao mover ativos de uma pasta para outra em [!DNL Experience Manager] execução no modo de execução [!DNL Dynamic Media] Scene 7 (NPR-31630).
+* Os nomes dos ativos são alterados para letras minúsculas ao mover ativos de uma pasta para outra em [!DNL Experience Manager] execução no modo [!DNL Dynamic Media]-Scene7 (NPR-31630).
 
 * Ocorreu um erro ao editar um conjunto de imagens remoto, para a imagem que reside na pasta com o mesmo nome de empresa do Scene 7 (NPR-31340).
 
 * [!DNL Dynamic Media] ativos que contêm referências não estão sendo publicados (NPR-31180).
 
-* Os carregamentos de [!DNL Experience Manager Dynamic Media] - modo de execução Scene 7 para Scene 7 estão demorando muito para serem concluídos (NPR-31048).
+* Os carregamentos do modo [!DNL Dynamic Media]7-Scene7 [!DNL Dynamic Media Classic] estão demorando muito para serem concluídos (NPR-31048).
 
 * O ponto de acesso adicionado a um ativo de imagem não é visível por meio do Visualizador de imagem interativo na página de detalhes do ativo (NPR-30979).
 
@@ -106,11 +106,11 @@ Alguns destaques principais desta versão do Service pack:
 
 * O conflito ocorre ao criar a Cópia de idioma dos ativos e os ativos não são carregados para o Scene 7 (NPR-30932).
 
-* As renderizações dinâmicas baixadas da [!DNL Experience Manager] execução no modo [!DNL Dynamic Media] Híbrido estão quebradas (elas são do tipo de texto com o conteúdo &quot;não é possível localizar a imagem&quot; em vez do tipo de conteúdo de imagem) (NPR-30876).
+* As renderizações dinâmicas baixadas da [!DNL Experience Manager] execução no modo [!DNL Dynamic Media]Híbrido estão quebradas (elas são do tipo de texto com o conteúdo &quot;não é possível localizar a imagem&quot; em vez do tipo de conteúdo de imagem) (NPR-30876).
 
-* [!DNL Dynamic Media] O fluxo de trabalho Codificar vídeo está falhando ao gerar miniatura para o vídeo que é migrado do modo de execução Scene 7 para [!DNL Dynamic Media] - Scene 7 (CQ-4282011).
+* [!DNL Dynamic Media] O fluxo de trabalho Codificar vídeo está falhando ao gerar miniatura para o vídeo que é migrado do modo [!DNL Dynamic Media Classic] para o [!DNL Dynamic Media]Scene7 no Adobe Experience Manager (CQ-4282011).
 
-* IpsApiException observou ao migrar ativos de uma instância para outra usando IDs de empresa Scene 7 diferentes (CQ-4280548).
+* IpsApiException observado ao migrar ativos de uma instância para outra usando IDs de empresa do Scene7 diferentes (CQ-4280548).
 
 * A miniatura de ativos 3D não é informativa quando um modelo 3D suportado é assimilado [!DNL Experience Manager] (CQ-4283701).
 
@@ -120,7 +120,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Os vídeos não podem ser reproduzidos com o SmartCropVideoViewer no Internet Explorer 11 e no Safari (CQ-4281422).
 
-* O uso do botão mover para mover vários ativos, de uma pasta para outra, falha ao [!DNL Experience Manager] executar em [!DNL Dynamic Media] - modo de execução cena7 (CQ-4280384).
+* O uso do botão de movimentação para mover vários ativos, de uma pasta para outra, falha na [!DNL Experience Manager] execução no modo de execução [!DNL Dynamic Media]-Scene7 (CQ-4280384).
 
 * Vídeo distorcido é visto nos detalhes do ativo quando o tipo MIME é diferente de MP4 (CQ-4279704).
 
@@ -336,7 +336,7 @@ Alguns destaques principais desta versão do Service pack:
 * O formulário de esquema de metadados da pasta não detecta automaticamente o tipo de dados e, portanto, não cria o TypeHint relacionado no envio do formulário. NPR-30599: Hotfix do CQ-4275227
 * As opções de edição Recortar e Girar do ativo estão desativadas na interface do usuário de criação do DMS7. NPR-30118: Hotfix do CQ-4273221
 * Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492: Hotfix do CQ-4273651
-* Adding the [!DNL Dynamic Media] Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix do CQ-4275962
+* Adding the [!DNL Dynamic Media]–Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: Hotfix do CQ-4275962
 * Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490: Hotfix do CQ-4273614
 * [!DNL Dynamic Media]: Adicionados filtros padrão para excluir ativos de serem replicados para o nó de [!DNL Experience Manager] publicação. NPR-30538: Hotfix do CQ-4274678
 * Introdução de um fluxo de trabalho externo de reprocessamento para suporte a vários recursos de forma a permitir a pasta como uma carga. O fluxo de trabalho tem duas etapas: reprocessa ativos não manuseados pelo mapa de metadados para a próxima etapa e recarrega todos os ativos não manuseados para S7 em um único trabalho IPS. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489: Hotfix do CQ-4272903
@@ -351,7 +351,7 @@ Alguns destaques principais desta versão do Service pack:
 * Sorting search query by relevance returns [!DNL InDesign] documents along with [!DNL InDesign] templates. Hotfix do CQ-4273864
 * Se o usuário tiver uma ID de email em letras maiúsculas, os usuários não poderão fazer check-in nos ativos cujo check-out foi feito anteriormente. Hotfix do CQ-4276575
 * A operação Excluir se aplica somente às predefinições selecionadas e, se a tela atualizar automaticamente a lista após a operação, ela mostrará outras predefinições que já foram atualizadas. Hotfix do CQ-4261461
-* Configuring [!DNL Dynamic Media] Cloud Services in DMHybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix do CQ-4249780
+* Configuring [!DNL Dynamic Media] Cloud Services in [!DNL Dynamic Media]–Hybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Hotfix do CQ-4249780
 * Rename operation in [!DNL Experience Manager] asset to duplicated name fails to synchronize to Scene7. Hotfix do CQ-4276763
 * O conteúdo gerado pelo usuário é exibido incorretamente no painel Filtro de pesquisa. Hotfix do CQ-4273875
 * A opção Localizar semelhante não está disponível para imagens TIFF. Hotfix do CQ-4278238
@@ -494,7 +494,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 Alguns destaques principais desta versão do Service pack:
 
 * Habilitação da inclusão do estado da interface do usuário dinâmica em eventos de rastreamento como atributos personalizados.
-* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media] Scene 7.
+* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. Para obter mais informações, consulte [Configurar quebra automática de texto em japonês](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
 ### Ativos
