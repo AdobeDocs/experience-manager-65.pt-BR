@@ -2,7 +2,7 @@
 title: Notas de versão do Adobe Experience Manager Assets
 description: Novos recursos e melhorias do Adobe Experience Manager 6.5 Assets.
 translation-type: tm+mt
-source-git-commit: 92619acaa2eb820eda304355f8eaf79ec4a400e1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -21,7 +21,7 @@ Read on to know the specific capabilities and integrations of [!DNL Experience M
 
 [!DNL Adobe Asset Link] fortalece a colaboração entre criativos e profissionais de marketing no processo de criação de conteúdo. Creatives can access content stored in [!DNL Experience Manager Assets], without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] apps.
 
-[!DNL Adobe Asset Link] faz parte da oferta da [Creative Cloud para empresas](https://www.adobe.com/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] faz parte da oferta da [Creative Cloud para empresas](https://www.adobe.com/br/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html).
 
 ![Pesquisar ativos no Adobe Photoshop](assets/asset_search_photoshop.png)
 
@@ -65,7 +65,7 @@ Em grandes empresa, a infraestrutura necessária para criar sites pode ser distr
 
 [!DNL Dynamic Media] fornece criação aprimorada de rich media e delivery [!DNL Experience Manager Assets] para impulsionar experiências de ponta que são imersivas e personalizadas. Ao fazer upload de um único ativo mestre de alta qualidade e usar nossos visualizadores e renderização em nuvem avançada, você pode fornecer qualquer combinação de execuções dinamicamente para suportar a estratégia de mídia de sua organização.
 
-For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
+For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### Suporte para vídeo 360 {#video-support}
 
@@ -77,7 +77,7 @@ Agora é possível personalizar as miniaturas dos ativos de vídeo usando quadro
 
 ### Aprimoramentos de acessibilidade {#accessibility-enhancements}
 
-[!DNL Dynamic Media] os visualizadores agora suportam recursos de acessibilidade aprimorados, como suporte a Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Notas de versão dos visualizadores do Dynamic Media](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
+[!DNL Dynamic Media] os visualizadores agora suportam recursos de acessibilidade aprimorados, como suporte a Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Notas de versão dos visualizadores do Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 ## Aprimoramento da experiência de pesquisa {#search-experience-enhancement}
 
