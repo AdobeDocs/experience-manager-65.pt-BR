@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a83def358e026b516add577f968dcc709357e458
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -291,7 +291,7 @@ Há duas maneiras de instalar automaticamente o AEM 6.5.4.0 em uma instância em
 
 A. Coloque a embalagem em ..*pasta /crx-quickstart/install* enquanto o servidor estiver disponível online. O pacote é instalado automaticamente.
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - make sure that you use cmd=install&amp;recursive=true - so the nested packages  are  installed.
+B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/pt/crx/2-3/how_to/package_manager.html) - make sure that you use cmd=install&amp;recursive=true - so the nested packages  are  installed.
 
 >[!NOTE]
 >
@@ -317,7 +317,7 @@ In order to see what platforms are certified to run with this release, please re
 >AEM 6.5.4.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Se você estiver usando uma versão mais antiga do pacote Compatibilidade com formulários AEM e estiver atualizando para o AEM 6.5.4.0, instale a versão mais recente do pacote Compatibilidade com formulários AEM após a instalação do Pacote complementar de formulários.
 
 1. Verifique se você instalou o AEM Service Pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 ### Install AEM Forms on JEE {#install-aem-forms-jee-installer}
@@ -326,7 +326,7 @@ In order to see what platforms are certified to run with this release, please re
 >
 >Pule se você não estiver usando o AEM Forms no JEE. Correções no AEM Forms em JEE são entregues por meio de um instalador separado.
 
-For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
+For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/br/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
 
 #### Instalador do Workbench
 
@@ -335,6 +335,8 @@ Como se trata de um instalador completo, o tamanho do arquivo é maior comparado
 ### UberJar {#uber-jar}
 
 The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
+
+A versão atualizada do UberJar para 6.5.4.0 que inclui o pacote **com.fasterxml.Jackson.core.async** está disponível no repositório [do](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe Public Maven.
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
