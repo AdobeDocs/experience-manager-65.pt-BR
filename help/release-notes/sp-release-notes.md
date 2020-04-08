@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
+source-git-commit: be4a8a78b8555149809b8026bfd059f4cc9e9401
 
 ---
 
@@ -104,7 +104,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Falha na geração da execução de ativos com ${extension} (NPR-32294).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
 
 * O arquivo ZIP baixado do DAM não pode ser aberto usando o WinZip (NPR-32293).
 
@@ -336,8 +336,6 @@ Como se trata de um instalador completo, o tamanho do arquivo é maior comparado
 
 The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
 
-A versão atualizada do UberJar para 6.5.4.0 que inclui o pacote **com.fasterxml.Jackson.core.async** está disponível no repositório [do](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe Public Maven.
-
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
 ```shell
@@ -345,6 +343,20 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
       <version>6.5.4</version>
+      <classifier>apis</classifier>
+      <scope>provided</scope>
+</dependency>
+```
+
+A versão atualizada do UberJar para 6.5.4.0 que inclui o pacote **com.fasterxml.Jackson.core.async** está disponível no repositório [do](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe Public Maven.
+
+Se você usar a versão atualizada do UberJar, inclua a seguinte dependência no POM do projeto:
+
+```shell
+<dependency>
+      <groupId>com.adobe.aem</groupId>
+      <artifactId>uber-jar</artifactId>
+      <version> 6.5.4-1.0</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
