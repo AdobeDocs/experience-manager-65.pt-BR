@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -298,9 +298,9 @@ Execute as seguintes etapas para experimentar a criação do teste A/B para o fo
 1. Vá para a interface do usuário de formulários e Documentos, selecione o formulário, clique em **Mais** e selecione Teste **A/B** do Start.
 1. Agora, abra o formulário no navegador do cromo várias vezes usando o seguinte URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Observação: Remova o cookie com o nome **mbox** da persistência de cookies do navegador antes de abrir o formulário na próxima vez. As experiências A e B do formulário serão exibidas aleatoriamente.
+   >[!NOTE] Remova o cookie com o nome **mbox** da persistência de cookies do navegador antes de abrir o formulário na próxima vez. As experiências A e B do formulário serão exibidas aleatoriamente.
 
 1. Selecione o formulário, clique em **Mais** e clique em Relatório **de teste** A/B. Você não encontrará muitos dados no relatório, pois acabou de iniciar os testes. Agora, vamos fornecer alguns dados semente para ver a aparência do relatório de teste A/B.
 1. Abra o CRXDE Lite e faça um backup do seguinte arquivo: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -546,7 +546,7 @@ Execute as seguintes etapas na instância do autor para experimentar a criação
 1. Modifique o formulário conforme desejado para criar uma experiência diferente da experiência padrão A.
 1. Vá para a interface do usuário de formulários e Documentos, selecione o formulário, clique em **Mais** e selecione Teste **A/B** do Start.
 1. Agora, abra o formulário no navegador do cromo várias vezes usando o seguinte URL:
-   `https://&lt;hostname&gt;:&lt;port&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
 
    >[!NOTE]
    > Remova o cookie com o nome **mbox** da persistência de cookies do navegador antes de abrir o formulário na próxima vez. As experiências A e B do formulário serão exibidas aleatoriamente.
