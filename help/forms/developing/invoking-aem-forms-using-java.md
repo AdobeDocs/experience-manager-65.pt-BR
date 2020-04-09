@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 3fe5f243c3e39029c1605a1a1977a48dba595d64
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -55,7 +55,7 @@ O site do Adobe Developer contém os seguintes artigos que discutem como chamar 
 
 [Invocar um processo de duração curta usando a API de chamada](#invoking-a-short-lived-process-using-the-invocation-api)
 
-[Criação de um aplicativo da Web Java que chama um processo de vida longa centrado no ser humano](/help/forms/developing/invoking-human-centric-long-lived.md)
+[Criação de um aplicativo da Web Java que chama um processo de vida longa centrado em humanos](/help/forms/developing/invoking-human-centric-long-lived.md)
 
 ## Incluir arquivos da biblioteca Java do AEM Forms {#including-aem-forms-java-library-files}
 
@@ -64,7 +64,9 @@ Para chamar programaticamente um serviço AEM Forms usando a API Java, inclua os
 * O serviço AEM Forms para chamar. Um aplicativo cliente pode chamar um ou mais serviços.
 * O modo no qual você deseja chamar um serviço de Formulários AEM. Você pode usar o modo EJB ou SOAP. (Consulte [Configuração das propriedades](invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
 
->[!NOTE] (Somente chave) Start o servidor AEM Forms com comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` para especificar um IP de servidor para EJB
+>[!NOTE]
+>
+>(Somente chave) Start o servidor AEM Forms com comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` para especificar um IP de servidor para EJB
 
 * O servidor de aplicativos J2EE no qual o AEM Forms é implantado.
 
@@ -97,7 +99,7 @@ A tabela a seguir lista os arquivos JAR necessários para chamar os serviços do
    <td><p>&lt;diretório<i></i>de instalação&gt;/sdk//client-libs/&lt;servidor de aplicativos&gt;</p></td>
   </tr>
   <tr>
-   <td><p>adobe-application-manager-client-sdk.jar</p></td>
+   <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Obrigatório para chamar o serviço Application Manager.</p></td>
    <td><p>&lt;diretório<i></i>de instalação&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -122,7 +124,7 @@ A tabela a seguir lista os arquivos JAR necessários para chamar os serviços do
    <td><p>&lt;diretório<i></i>de instalação&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-dicler-client.jar</p></td>
+   <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Obrigatório para chamar o serviço Distiller.</p></td>
    <td><p>&lt;diretório<i></i>de instalação&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -137,7 +139,7 @@ A tabela a seguir lista os arquivos JAR necessários para chamar os serviços do
    <td><p>&lt;diretório<i></i>de instalação&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-encrypc-client.jar</p></td>
+   <td><p>adobe-encryption-client.jar</p></td>
    <td><p>Necessário para chamar o serviço de Criptografia.</p></td>
    <td><p>&lt;diretório<i></i>de instalação&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -189,7 +191,7 @@ A tabela a seguir lista os arquivos JAR necessários para chamar os serviços do
   <tr>
    <td>
     <ul>
-     <li><p>adobe-rights-management-client.jar</p></li>
+     <li><p>adobe-rightsmanagement-client.jar</p></li>
      <li><p>namespace.jar</p></li>
      <li><p>jaxb-api.jar</p></li>
      <li><p>jaxb-impl.jar</p></li>
@@ -202,7 +204,7 @@ A tabela a seguir lista os arquivos JAR necessários para chamar os serviços do
    <td><p>&lt;diretório<i></i>de instalação&gt;/sdk/client-libs/common</p><p>Diretório lib específico do JBoss</p></td>
   </tr>
   <tr>
-   <td><p>adobe-signature-client.jar</p></td>
+   <td><p>adobe-signatures-client.jar</p></td>
    <td><p>Obrigatório para chamar o serviço de assinatura.</p></td>
    <td><p>&lt;diretório<i></i>de instalação&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -235,11 +237,11 @@ A tabela a seguir lista os arquivos JAR que dependem do modo de conexão e do se
   <tr>
    <td>
     <ul>
-     <li><p>ativação.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
-     <li><p>commons-detection.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
      <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
      <li><p>jaxen-1.1-beta-9.jar</p> </li>
@@ -259,7 +261,7 @@ A tabela a seguir lista os arquivos JAR que dependem do modo de conexão e do se
    <td><p>&lt;diretório<em></em>de instalação&gt;/sdk/client-libs/thirdparty</p> </td>
   </tr>
   <tr>
-   <td><p> jpatrão-client.jar</p> </td>
+   <td><p> jboss-client.jar</p> </td>
    <td><p>se o AEM Forms for implantado no JBoss Application Server, inclua esse arquivo JAR.</p> <p>As classes necessárias não serão encontradas pelo classloader se jEFP-client.jar e os jars referenciados não estiverem co-localizados.</p> </td>
    <td><p>Diretório de biblioteca do cliente JBoss</p> <p>Se você implantar seu aplicativo cliente no mesmo servidor de aplicativos J2EE, não será necessário incluir esse arquivo.</p> </td>
   </tr>
@@ -308,7 +310,7 @@ A tabela a seguir especifica a chamada de cenários e lista os arquivos JAR nece
      <li><p>adobe-usermanager-client.jar</p> </li>
     </ul>
     <ul>
-     <li>jpatrão-client.jar</li>
+     <li>jboss-client.jar</li>
     </ul>
     <ul>
      <li>adobe-forms-client.jar<br /> </li>
@@ -325,13 +327,13 @@ A tabela a seguir especifica a chamada de cenários e lista os arquivos JAR nece
      <li><p>adobe-usermanager-client.jar</p> </li>
     </ul>
     <ul>
-     <li>jpatrão-client.jar<br /> </li>
+     <li>jboss-client.jar<br /> </li>
      <li>commons-httpclient-3.1.jar</li>
     </ul>
     <ul>
      <li><p>adobe-forms-client.jar</p> </li>
      <li><p>adobe-reader-extensions-client.jar</p> </li>
-     <li><p>adobe-signature-client.jar</p> </li>
+     <li><p>adobe-signatures-client.jar</p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -343,11 +345,11 @@ A tabela a seguir especifica a chamada de cenários e lista os arquivos JAR nece
      <li><p>adobe-livecycle-client.jar</p> </li>
      <li><p>adobe-usermanager-client.jar</p> </li>
      <li><p>wlclient.jar</p> </li>
-     <li><p>ativação.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
-     <li><p>commons-detection.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
      <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
      <li><p>jai_imageio.jar</p> </li>
@@ -372,11 +374,11 @@ A tabela a seguir especifica a chamada de cenários e lista os arquivos JAR nece
      <li><p>adobe-livecycle-client.jar</p> </li>
      <li><p>adobe-usermanager-client.jar</p> </li>
      <li><p>wlclient.jar</p> </li>
-     <li><p>ativação.jar</p> </li>
+     <li><p>activation.jar</p> </li>
      <li><p>axis.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
-     <li><p>commons-detection.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
      <li><p>commons-logging.jar</p> </li>
      <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
      <li><p>jai_imageio.jar</p> </li>
@@ -391,7 +393,7 @@ A tabela a seguir especifica a chamada de cenários e lista os arquivos JAR nece
      <li><p>xercesImpl.jar</p> </li>
      <li><p>adobe-forms-client.jar</p> </li>
      <li><p>adobe-reader-extensions-client.jar</p> </li>
-     <li><p>adobe-signature-client.jar</p> </li>
+     <li><p>adobe-signatures-client.jar</p> </li>
     </ul> </td>
   </tr> xmp-uti
  </tbody>
@@ -403,7 +405,7 @@ Se você estiver atualizando do LiveCycle para o AEM Forms, é recomendável inc
 
 Supondo que você esteja atualizando para o AEM Forms. Para usar um aplicativo Java que chame o serviço Rights Management, inclua as versões do AEM Forms dos seguintes arquivos JAR:
 
-* adobe-rights-management-client.jar
+* adobe-rightsmanagement-client.jar
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 
