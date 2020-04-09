@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
 
 ## Submissão de dados do formulário adaptável {#adaptive-form-data-submission}
 
-Os formulários adaptativos fornecem vários fluxos de trabalho de ações [de](../../forms/using/configuring-submit-actions.md) envio prontos para uso para enviar os dados do formulário para diferentes pontos de extremidade.
+Os formulários adaptativos fornecem vários workflows de ações [de](../../forms/using/configuring-submit-actions.md) envio prontos para uso para enviar os dados do formulário para diferentes pontos de extremidade.
 
 Por exemplo, a ação de envio de ação **de** email envia um email sobre o envio bem-sucedido de um formulário adaptável. Também pode ser configurado para enviar os dados do formulário e o PDF no email.
 
@@ -31,17 +31,17 @@ Este artigo detalha as etapas para habilitar a ação Email em um formulário ad
 
 ## Email action {#email-action}
 
-A ação Email permite que um autor envie emails automaticamente para um ou mais destinatários no envio bem-sucedido de um formulário adaptável.
+A ação Email permite que um autor envie emails automaticamente para um ou mais recipient no envio bem-sucedido de um formulário adaptável.
 
 >[!NOTE]
 >
->Para usar a ação Email, é necessário configurar o serviço de email AEM conforme descrito em [Configuração do serviço]de email (/help/sites-administering/notification.md#configuração do serviço de email).
+>Para usar a ação Email, é necessário configurar o serviço de email AEM conforme descrito em [Configuração do serviço](/help/sites-administering/notification.md#configuring-the-mail-service)de email.
 
 ### Ativação da ação Email em um formulário adaptável {#enabling-email-action-on-an-adaptive-form}
 
 1. Abra um formulário adaptável no modo de edição.
 
-1. Clique em **Editar** ao lado de **Iniciar de uma barra de ferramentas de formulário** adaptável.
+1. Clique em **Editar** ao lado do **Start da barra de ferramentas Formulário** adaptável.
 
    A caixa de diálogo Editar componente é aberta.
 
