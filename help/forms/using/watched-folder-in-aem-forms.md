@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -23,8 +23,7 @@ Um administrador pode configurar uma pasta de rede, conhecida como Pasta assisti
 
 Você pode usar um dos seguintes métodos para criar uma Pasta assistida no sistema de arquivos:
 
-* Ao configurar as propriedades de um nó de configuração de Pasta assistida, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta assistida a ser criada, como mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`\
-   A `MyWatchedFolder`pasta não existe, o AEM Forms tenta criar a pasta no caminho especificado.
+* Ao configurar as propriedades de um nó de configuração de Pasta assistida, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta assistida a ser criada, como mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`A `MyWatchedFolder`pasta não existe, o AEM Forms tenta criar a pasta no caminho especificado.
 
 * Crie uma pasta no sistema de arquivos antes de configurar um ponto final de Pasta assistida e forneça o caminho completo na propriedade folderPath. Para obter informações detalhadas sobre a propriedade folderPath, consulte Propriedades [da pasta](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)assistida.
 
@@ -84,14 +83,14 @@ Você pode configurar as seguintes propriedades para uma Pasta assistida.
 
 * **stageFileExpirationDuration (Long, default -1)**: O número de segundos de espera antes de um arquivo/pasta de entrada que já foi selecionado para processamento deve ser tratado como tendo o tempo limite expirado e marcado como uma falha. Esse mecanismo de expiração só é ativado quando o valor dessa propriedade é um número positivo.
 
-   **Observação:** *Mesmo quando uma entrada é marcada como tendo expirado usando esse mecanismo, ainda pode estar sendo processada em segundo plano, mas apenas levando mais tempo do que o esperado. Se o conteúdo de entrada foi consumido antes do mecanismo de tempo limite ser iniciado, o processamento pode até mesmo continuar a ser concluído mais tarde e a saída ser despejada na pasta de resultados. Se o conteúdo não foi consumido antes do tempo limite, é muito provável que o processamento falhe mais tarde ao tentar consumir o conteúdo, e esse erro também será registrado na pasta de falha da mesma entrada. Por outro lado, se o processamento para a entrada nunca tiver sido ativado devido a um erro intermitente de trabalho/fluxo de trabalho (que é o cenário que o mecanismo de expiração pretende resolver), então, claro, nenhuma destas duas situações ocorrerá. Assim, para quaisquer entradas na pasta de falha que foram marcadas como falhas devido a um tempo limite (procure mensagens do formulário &quot;Arquivo não processado após um tempo significativo, marcando como falha!&quot; no registro de falhas), é aconselhável verificar a pasta de resultados (e também a própria pasta de falhas para outra entrada para a mesma entrada) para verificar se algum dos casos descritos anteriormente ocorreu de fato.*
+   **Observação:** *Mesmo quando uma entrada é marcada como tendo expirado usando esse mecanismo, ainda pode estar sendo processada em segundo plano, mas apenas levando mais tempo do que o esperado. Se o conteúdo de entrada foi consumido antes do mecanismo de tempo limite ser iniciado, o processamento pode até mesmo continuar a ser concluído mais tarde e a saída ser despejada para a pasta de resultados. Se o conteúdo não foi consumido antes do tempo limite, é muito provável que o processamento falhe mais tarde ao tentar consumir o conteúdo, e esse erro também será registrado na pasta de falha da mesma entrada. Por outro lado, se o processamento para a entrada nunca tiver sido ativado devido a um erro intermitente de trabalho/fluxo de trabalho (que é o cenário que o mecanismo de expiração pretende resolver), então, claro, nenhuma destas duas situações ocorrerá. Assim, para quaisquer entradas na pasta de falha que foram marcadas como falhas devido a um tempo limite (procure mensagens do formulário &quot;Arquivo não processado após um tempo significativo, marcando como falha!&quot; no registro de falhas), é aconselhável verificar a pasta de resultados (e também a própria pasta de falhas para outra entrada para a mesma entrada) para verificar se algum dos casos descritos anteriormente ocorreu de fato.*
 
 * 
 * **deleteExpiredStageFileOnlyWhenThrottled (Booliano, padrão true):** Se o mecanismo de expiração deve ser ativado somente quando a pasta monitorada for limitada. O mecanismo é mais relevante para as pastas monitoradas limitadas, já que um pequeno número de arquivos que permanecem em um estado não processado (devido a falhas intermitentes de trabalho/fluxo de trabalho) tem o potencial de reduzir o processamento para todo o lote quando a limitação está ativada. Se essa propriedade for mantida como true (o padrão), o mecanismo de expiração não será ativado para pastas monitoradas que não são limitadas. Se a propriedade for mantida como falsa, o mecanismo sempre será ativado, desde que a propriedade stageFileExpirationDuration seja um número positivo.
 
 * **pollInterval (Longo)**: O intervalo em segundos para verificar a entrada da Pasta assistida. A menos que a configuração de aceleração esteja ativada, o Intervalo de pesquisa deve ser maior que o tempo para processar um trabalho médio; caso contrário, o sistema poderá ficar sobrecarregado. O valor padrão é 5. Consulte a descrição do Tamanho do lote para obter mais informações. O valor do intervalo de polling deve ser maior ou igual a um.
-* **excludeFilePattern (String)**: Uma lista delimitada por ponto-e-vírgula (;) de padrões que uma Pasta assistida usa para determinar quais arquivos e pastas serão examinados e coletados. Nenhum arquivo ou pasta com esse padrão é verificado para processamento. Essa configuração é útil quando a entrada é uma pasta com vários arquivos. O conteúdo da pasta pode ser copiado em uma pasta com um nome que é selecionado pela Pasta assistida. Isso evita que a Pasta assistida pegue uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. O valor padrão é nulo.\
-   Você pode usar padrões [de](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) arquivo para excluir:
+* **excludeFilePattern (String)**: Uma lista delimitada por ponto-e-vírgula (;) de padrões que uma Pasta assistida usa para determinar quais arquivos e pastas serão examinados e coletados. Nenhum arquivo ou pasta com esse padrão é verificado para processamento. Essa configuração é útil quando a entrada é uma pasta com vários arquivos. O conteúdo da pasta pode ser copiado em uma pasta com um nome que é selecionado pela Pasta assistida. Isso evita que a Pasta assistida pegue uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. O valor padrão é nulo.
+Você pode usar padrões [de](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) arquivo para excluir:
 
    * Arquivos com extensões de nome de arquivo específicas; por exemplo, *.dat, *.xml, .pdf, *.*
    * Arquivos com nomes específicos; por exemplo, data* excluiria arquivos e pastas chamados data1, data2 e assim por diante.
@@ -216,16 +215,13 @@ Um Serviço é uma implementação personalizada da `com.adobe.aemfd.watchfolder
 
 #### Implementação personalizada da interface ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-A implementação personalizada aceita um contexto de processamento (um objeto do tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lê documentos de entrada e parâmetros de configuração do contexto, processa as entradas e adiciona a saída de volta ao\
-contexto. O ProcessorContext tem as seguintes APIs:
+A implementação personalizada aceita um contexto de processamento (um objeto do tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lê documentos de entrada e parâmetros de configuração do contexto, processa as entradas e adiciona a saída de volta ao contexto. O ProcessorContext tem as seguintes APIs:
 
 * **getWatchFolderId**: Retorna a ID da pasta assistida.
 * **getInputMap**: Retorna um mapa do tipo Mapa. As chaves do mapa são o nome do arquivo de entrada e um objeto de documento que contém o conteúdo do arquivo. Use a API getinputMap para ler os arquivos de entrada.
-* **getConfigParameters**: Retorna um mapa imutável do tipo Mapa. O mapa contém\
-   os parâmetros de configuração de uma Pasta assistida.
+* **getConfigParameters**: Retorna um mapa imutável do tipo Mapa. O mapa contém os parâmetros de configuração de uma Pasta monitorada.
 
-* **setResult**: A implementação do ContentProcessor\
-   usa a API para gravar o documento de saída na pasta de resultados. Você pode fornecer um nome para o arquivo de saída para a API setResult. A API pode optar por usar ou ignorar o arquivo fornecido, dependendo da pasta de saída/padrão de arquivo especificado. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito no padrão de arquivo.
+* **setResult**: A implementação ContentProcessor usa a API para gravar o documento de saída na pasta de resultados. Você pode fornecer um nome para o arquivo de saída para a API setResult. A API pode optar por usar ou ignorar o arquivo fornecido, dependendo da pasta de saída/padrão de arquivo especificado. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito no padrão de arquivo.
 
 Por exemplo, o código a seguir é uma implementação personalizada da interface ContentProcessor com uma propriedade foo=bar personalizada.
 
@@ -276,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -298,8 +294,8 @@ Agora, você pode usar o local personalizado configurado para salvar os scripts.
 Os Workflows permitem que você automatize as atividades do Experience Manager. Os Workflows consistem em uma série de etapas executadas em uma ordem específica. Cada etapa executa uma atividade distinta, como ativar uma página ou enviar uma mensagem de email. Os Workflows podem interagir com ativos no repositório, contas de usuário e serviços do Experience Manager. Portanto, workflows podem coordenar coisas complicadas.
 
 * Antes de criar um fluxo de trabalho, considere os seguintes pontos:
-* A saída de uma etapa deve estar disponível para todas as etapas subsequentes.\
-   As etapas devem ser capazes de atualizar (ou mesmo excluir) as saídas existentes geradas pelas etapas anteriores.
+* A saída de uma etapa deve estar disponível para todas as etapas subsequentes.
+As etapas devem ser capazes de atualizar (ou mesmo excluir) as saídas existentes geradas pelas etapas anteriores.
 * As variáveis mutáveis são usadas para continuar os dados dinâmicos personalizados entre as etapas.
 
 Execute as seguintes etapas para processar arquivos usando workflows:
@@ -347,7 +343,7 @@ Consideração para a API setResult, quando usada em workflows:
 >
 >Chamar a API setResult com conteúdo nulo em qualquer outro cenário resultaria em um erro.
 
-O exemplo a seguir é implementado como uma etapa de fluxo de trabalho. No exemplo, o ECMAscript usa uma variável stepCount para rastrear o número de vezes que uma etapa é chamada na instância de fluxo de trabalho atual.\
+O exemplo a seguir é implementado como uma etapa de fluxo de trabalho. No exemplo, o ECMAscript usa uma variável stepCount para rastrear o número de vezes que uma etapa é chamada na instância de fluxo de trabalho atual.
 O nome da pasta de saída é uma combinação do número da etapa atual, do nome do arquivo original e do prefixo especificado no parâmetro outPrefix.
 
 O ECMAScript recebe uma referência do serviço de contexto do fluxo de trabalho e cria uma implementação da interface WorkflowContextProcessor. A implementação WorkflowContextProcessor aceita arquivos de entrada, copia o arquivo para um local temporário e retorna um documento representando o arquivo copiado. Com base no valor da variável Booliana purgePrevious, a etapa atual exclui a saída gerada pela última vez pela mesma etapa quando a etapa foi iniciada na instância de fluxo de trabalho atual. No final, o método wfSvc.execute é chamado para executar a implementação WorkflowContextProcessor. O conteúdo do documento de saída é salvo na pasta de resultados no caminho físico mencionado no nó de configuração Pasta assistida.
@@ -366,8 +362,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -378,7 +374,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -631,8 +627,8 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
 
 ### Criar um fluxo de trabalho {#create-a-workflow}
 
-1. Abra a interface do usuário do fluxo de trabalho do AEM em uma janela do navegador.\
-   https://[do servidor]:&#39;porta&#39;/worklow
+1. Abra a interface do usuário do fluxo de trabalho do AEM em uma janela do navegador.
+https://[do servidor]:&#39;porta&#39;/worklow
 
 1. Na visualização Modelos, clique em **Novo**. Na caixa de diálogo Novo fluxo de trabalho, especifique **Título** e clique em **OK**.
 
@@ -642,7 +638,7 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
 
 1. Exclua a etapa padrão do fluxo de trabalho. Arraste e solte a Etapa do processo do Sidekick para o fluxo de trabalho.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. Clique com o botão direito do mouse na Etapa do processo e selecione **Editar**. A janela Propriedades da etapa é exibida.
 
@@ -660,8 +656,8 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
 
 1. Adicione as seguintes propriedades ao nó:
 
-   * folderPath (String): O caminho da pasta a ser digitalizada em intervalos de tempo definidos. A pasta deve estar em um local compartilhado com todos os servidores com acesso total ao servidor.\
-      inputProcessorType (String): O tipo do processo a ser start. Neste tutorial, especifique o fluxo de trabalho.
+   * folderPath (String): O caminho da pasta a ser digitalizada em intervalos de tempo definidos. A pasta deve estar em um local compartilhado com todos os servidores com acesso total ao servidor.
+inputProcessorType (String): O tipo do processo a ser start. Neste tutorial, especifique o fluxo de trabalho.
 
    * inputProcessorId (String): O comportamento da propriedade inputProcessorId é baseado no valor especificado para a propriedade inputProcessorType. Neste exemplo, o valor da propriedade inputProcessorType é workflow. Portanto, para a propriedade inputProcessorId, especifique o seguinte caminho do fluxo de trabalho PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
