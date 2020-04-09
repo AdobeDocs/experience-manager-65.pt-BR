@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -107,7 +107,7 @@ O exemplo cria um modelo de fluxo de trabalho e um aplicativo de hipoteca para s
 
    ![OU Exemplo de divisão](assets/orsplit_branch1_active_new.png)
 
-   **expressão do Roteamento da Ramificação 2**
+   **expressão do Roteamento para a Ramificação 1**
 
    Quando um usuário toca em **Rejeitar** na Caixa de entrada do AEM, a Ramificação 2 é ativada.
 
@@ -271,4 +271,4 @@ Você pode usar as etapas Atribuir Tarefa e Enviar e-mail de Workflows do AEM pa
 
 ### Expurgar instâncias de fluxo de trabalho {#purge-workflow-instances}
 
-Minimizar o número de instâncias do fluxo de trabalho aumenta o desempenho do motor de workflow, para que você possa expurgar regularmente as instâncias do fluxo de trabalho concluídas ou em execução do repositório. Para obter informações detalhadas, consulte Expurgação [regular de instâncias]de fluxo de trabalho (/help/sites-administering/workflows-administering.md#expurgação regular de instâncias de fluxo de trabalho).
+Minimizar o número de instâncias do fluxo de trabalho aumenta o desempenho do motor de workflow, para que você possa expurgar regularmente as instâncias do fluxo de trabalho concluídas ou em execução do repositório. Para obter informações detalhadas, consulte Expurgação [Regular de Instâncias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de Fluxo de Trabalho.
