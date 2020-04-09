@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -98,9 +98,13 @@ O Experience Manager Forms inclui os seguintes aprimoramentos de acessibilidade:
 
 ## Principais recursos dos Service Packs anteriores do AEM 6.5 {#key-features-previous-service-packs}
 
-### Imagem inteligente para Dynamic Media (6.5.3.0) {#smart-imaging}
+### Imagem inteligente para o Dynamic Media {#smart-imaging}
 
 A geração de imagens inteligentes usa as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento. A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagem [inteligente](../assets/imaging-faq.md).
+
+### Recorte inteligente em perfis de vídeo para Dynamic Media (6.5.3.0) {#smart-crop-video}
+
+Recorte inteligente para vídeo e recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial no Adobe Sensei para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho. Consulte [Sobre como usar o recorte inteligente em perfis](../assets/video-profiles.md)de vídeo.
 
 ### Pesquisa visual para AEM Assets (6.5.2.0) {#visual-search}
 
@@ -112,7 +116,7 @@ Você pode compartilhar seus itens da Caixa de entrada com outro usuário. Quand
 
 ### Defina as configurações de disponibilidade para itens da Caixa de entrada de um usuário do AEM Forms (6.5.3.0) {#configure-out-of-office}
 
-Se planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
+Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
 Você tem a opção de especificar uma data e hora de start e uma data e hora de término para que suas configurações de fora do escritório entrem em vigor. Você pode definir uma pessoa padrão para a qual todos os itens serão enviados. Consulte [Configurar configurações](../forms/using/configure-out-of-office-settings.md)fora do escritório.
 
 ### Gerar várias comunicações interativas usando a API de lote para AEM Forms (6.5.3.0) {#generate-multiple-ic}
@@ -151,7 +155,7 @@ Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes
 
 * AEM Assets: Aplicativo para desktop 2.0.1.1
 
-   Consulte [Obter acesso ao desktop para os ativos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+   Consulte [Obter acesso ao desktop para os ativos](https://docs.adobe.com/content/help/pt-BR/experience-manager-desktop-app/using/release-notes.html).
 
 * AEM Screens: Feature Pack 202001
 
