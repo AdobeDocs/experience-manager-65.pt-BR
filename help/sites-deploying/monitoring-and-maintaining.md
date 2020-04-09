@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
 
 ---
 
@@ -366,19 +366,18 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
    * Uma programação de hora/data pode ser especificada como um `java.util.SimpleDateFormat` padrão. Isso define o período após o qual o arquivo será girado; também o sufixo anexado ao arquivo girado (para identificação).
    O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
    Assim, por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de registro depois disso ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. O registro para o dia 21 de janeiro será enviado para (um novo e vazio) ../logs/error.log até que seja lançado na próxima mudança de dia.
-       | `&#39;.&#39;aaaa-MM&quot;|Rotação no início de cada mês|
-    |—|—|
-    | &#39;&#39;.&#39;aaaa-ww`|Rotação no primeiro dia de cada semana (depende da localidade). |
-       | `&#39;.&#39;aaaa-MM-dd`|Rotação à meia-noite todos os dias. |
-       | `&#39;.&#39;aaaa-MM-dd-a&quot;|Rotação à meia-noite e ao meio-dia de cada dia. |
-       | `&#39;.&#39;aaaa-MM-dd-HH`|Rotação no topo de cada hora. |
-       | `&#39;.&#39;aaaa-MM-dd-HH-mm&quot;|Rotação no início de cada minuto. |
-     
-     Nota: Ao especificar uma data/hora:
-       1. O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples ( &quot;&#39;);
-       isso serve para evitar que determinados caracteres sejam interpretados como letras padrão.
-       1. Use somente caracteres permitidos para um nome de arquivo válido em qualquer lugar na opção.
-   
+   | `'.'yyyy-MM` | Rotação no início de cada mês |
+   |---|---|
+   | `'.'yyyy-ww` | Rotação no primeiro dia de cada semana (depende da localidade). |
+   | `'.'yyyy-MM-dd` | Rotação à meia-noite todos os dias. |
+   | `'.'yyyy-MM-dd-a` | Rotação à meia-noite e ao meio-dia de cada dia. |
+   | `'.'yyyy-MM-dd-HH` | Rotação no topo de cada hora. |
+   | `'.'yyyy-MM-dd-HH-mm` | Rotação no início de cada minuto. |
+   Observação: Ao especificar uma data/hora:
+   1. O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples ( &quot;&#39;);
+isso serve para evitar que determinados caracteres sejam interpretados como letras padrão.
+   1. Use somente caracteres permitidos para um nome de arquivo válido em qualquer lugar na opção.
+
 
 1. Leia seu novo arquivo de log com a ferramenta escolhida.
 
