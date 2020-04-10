@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
 
 ---
 
@@ -47,7 +47,7 @@ Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos 
 
 Você pode optar por carregar ativos para pastas com ou sem um perfil de processamento atribuído a eles.
 
-Para pastas com um perfil de processamento atribuído, o nome do perfil aparece na miniatura na exibição de cartão. Na exibição de lista, o nome do perfil aparece na coluna Perfil **de** processamento. Consulte Perfis [de processamento](/help/assets/processing-profiles.md).
+Para pastas com um perfil de processamento atribuído, o nome do perfil aparece na miniatura na visualização do cartão. Na visualização da lista, o nome do perfil é exibido na coluna Perfil **de** processamento. Consulte [Processando Perfis](/help/assets/processing-profiles.md).
 
 Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/assets/assets-formats.md) compatível com os ativos AEM.
 
@@ -60,7 +60,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
 
-   Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Toque no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um upload é iniciado.
+   Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Toque no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um start é carregado.
 
    ![chlimage_1-211](assets/chlimage_1-5.png)
 
@@ -76,11 +76,11 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    Para cancelar um upload em andamento, clique em Fechar (`X`) ao lado da barra de progresso. Ao cancelar a operação de upload, os ativos AEM excluem a parte parcialmente carregada do ativo.
 
-   A capacidade de retomar o carregamento é especialmente útil em cenários de largura de banda baixa e falhas de rede, onde demora muito para carregar um grande ativo. Você pode pausar a operação de upload e continuar mais tarde quando a situação melhorar. Ao retomar, o upload é iniciado a partir do ponto em que você o pausou.
+   A capacidade de retomar o carregamento é especialmente útil em cenários de largura de banda baixa e falhas de rede, onde demora muito para carregar um grande ativo. Você pode pausar a operação de upload e continuar mais tarde quando a situação melhorar. Ao retomar, carregando start a partir do ponto em que você o pausou.
 
    Durante a operação de upload, o AEM salva as partes do ativo que estão sendo carregadas como partes de dados no repositório CRX. Quando o upload é concluído, o AEM consolida esses blocos em um único bloco de dados no repositório.
 
-   Para configurar a tarefa de limpeza para as tarefas de carregamento de segmentos não concluídas, vá para `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
+   Para configurar a tarefa de limpeza para os trabalhos de carregamento de segmentos não concluídos, vá para `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
    Se você fizer upload de um ativo com o mesmo nome de um ativo já disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
 
@@ -94,15 +94,15 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
    >
    >Se o Asset Insights estiver habilitado para rastrear impressões/cliques com o Adobe Analytics, a ID de ativo regenerada invalida os dados capturados para o ativo no Analytics.
 
-   Se o ativo carregado existir nos ativos AEM, a caixa de diálogo **[!UICONTROL Duplicatas detectadas]** avisará que você está tentando carregar um ativo duplicado. A caixa de diálogo é exibida somente se o valor de `SHA 1` soma de verificação do binário do ativo existente corresponder ao valor de soma de verificação do ativo que você carrega. Neste caso, os nomes dos ativos não importam.
+   Se o ativo carregado existir nos ativos AEM, a caixa de diálogo **[!UICONTROL Duplicados detectados]** avisa que você está tentando carregar um ativo de duplicado. A caixa de diálogo é exibida somente se o valor de `SHA 1` soma de verificação do binário do ativo existente corresponder ao valor de soma de verificação do ativo que você carrega. Neste caso, os nomes dos ativos não importam.
 
    >[!NOTE]
    >
-   >A caixa de diálogo [!UICONTROL Duplicatas detectadas] é exibida somente quando o recurso de detecção de duplicatas está ativado. Para ativar o recurso de detecção de duplicatas, consulte [Ativar detecção](/help/assets/duplicate-detection.md)de duplicatas.
+   >A caixa de diálogo [!UICONTROL Duplicados detectados] aparece somente quando o recurso de detecção de duplicados está ativado. Para ativar o recurso de detecção de duplicados, consulte [Ativar detecção](/help/assets/duplicate-detection.md)de Duplicados.
 
    ![chlimage_1-214](assets/chlimage_1-8.png)
 
-   Para manter o ativo duplicado nos ativos AEM, toque/clique em **[!UICONTROL Manter]**. Para excluir o ativo duplicado carregado, toque/clique em **[!UICONTROL Excluir]**.
+   Para manter o ativo do duplicado nos ativos AEM, toque/clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, toque/clique em **[!UICONTROL Excluir]**.
 
    Os ativos AEM impedem que você carregue ativos com os caracteres proibidos em seus nomes de arquivo. Se você tentar carregar um ativo com um nome de arquivo contendo um caractere não permitido ou mais, os ativos AEM exibirão uma mensagem de aviso e pararão o upload até que você remova esses caracteres ou faça upload com um nome permitido.
 
@@ -138,7 +138,7 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 
 >[!NOTE]
 >
->Para carregar ativos via FTP no modo Dynamic Media - Scene7, instale o Feature Pack 18912 nas instâncias do autor de AEM. Entre em contato com o Atendimento [ao cliente da](https://helpx.adobe.com/contact/enterprise-support.ec.html) Adobe para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Para obter mais informações, consulte [Instalação do pacote de recursos 18912 para migração](/help/assets/bulk-ingest-migrate.md)de ativos em massa.
+>Para carregar ativos via FTP no modo Dynamic Media - Scene7, instale o Feature Pack 18912 nas instâncias do autor de AEM. Entre em contato com o Atendimento [ao cliente da](https://helpx.adobe.com/br/contact/enterprise-support.ec.html) Adobe para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Para obter mais informações, consulte [Instalação do pacote de recursos 18912 para migração](/help/assets/bulk-ingest-migrate.md)de ativos em massa.
 >
 >Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas no AEM serão ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definidas no Dynamic Media Classic, são usadas.
 
@@ -160,7 +160,7 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 1. No canto inferior direito da caixa de diálogo Carregar opções de trabalho, toque em **[!UICONTROL Salvar]**.
 1. No canto inferior direito da página Carregar, toque em **[!UICONTROL Enviar upload]**.
 
-   Para exibir o progresso do upload, na barra de navegação global, toque em **[!UICONTROL Tarefas]**. A página Tarefas exibe o progresso do upload. Você pode continuar trabalhando no AEM e voltar para a página de Tarefas no Dynamic Media Classic a qualquer momento para revisar um trabalho em andamento.
+   Para visualização do progresso do upload, na barra de navegação global, toque em **[!UICONTROL Tarefas]**. A página Tarefas exibe o progresso do upload. Você pode continuar trabalhando no AEM e voltar para a página de Tarefas no Dynamic Media Classic a qualquer momento para revisar um trabalho em andamento.
 Para cancelar um trabalho de upload em andamento, toque em **[!UICONTROL Cancelar]** ao lado do Tempo de duração.
 
 #### Carregar opções de trabalho {#upload-job-options}
@@ -175,8 +175,8 @@ Para cancelar um trabalho de upload em andamento, toque em **[!UICONTROL Cancela
 |  | Quando | Selecione Uma vez ou Recorrente. Para definir um trabalho recorrente, escolha uma opção Repetir (Diário, Semanal, Mensal ou Personalizado) para especificar quando você deseja que o trabalho de upload do FTP seja repetido. Em seguida, especifique as opções de agendamento conforme necessário. |
 |  | Incluir subpastas | Carregue todas as subpastas dentro da pasta que você deseja carregar. Os nomes da pasta e suas subpastas carregadas são inseridos automaticamente nos ativos AEM. |
 |  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. A quantidade de imagens cortadas depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você digitar 75 nas caixas de texto Superior, Direita, Inferior e Esquerda, meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direita, Inferior e Esquerda para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar com base em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para aparar com base na cor, especifique 0 para recortar os pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferenças de cor.<br>Para aparar com base na transparência, especifique 0 para cortar pixels somente se eles forem transparentes. Números mais próximos a 1 permitem mais transparência.</li></ul><br>Observe que essas opções de corte não são destrutivas. |
-|  | Opções de perfil de cor | Escolha uma conversão de cores ao criar arquivos otimizados usados para entrega:<ul><li>Preservação de cor padrão: Mantém as cores da imagem de origem sempre que as imagens contêm informações de espaço de cor; não há conversão de cores. Quase todas as imagens hoje têm o perfil de cor apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cor incorporado, as cores serão convertidas em espaço de cor sRGB (azul verde padrão). O sRGB é o espaço de cores recomendado para exibir imagens em páginas da Web.</li><li>Manter espaço de cor original: Mantém as cores originais sem qualquer conversão de cores no momento. Para imagens sem um perfil de cor incorporado, qualquer conversão de cor é feita usando os perfis de cor padrão configurados nas configurações de Publicação. Os perfis de cores podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Os menus Personalizado de > Para<br> abre para que você possa escolher um espaço de cores Converter de e Converter em. Essa opção avançada substitui todas as informações de cores incorporadas no arquivo de origem. Selecione essa opção quando todas as imagens que você está enviando contiverem dados de perfil de cor incorretos ou ausentes.</li></ul> |
-|  | Opções de edição de imagens | É possível preservar as máscaras de recorte em imagens e escolher um perfil de cor.<br> Consulte [Configuração de opções de edição de imagens no upload](#setting-image-editing-options-at-upload). |
+|  | Opções de Perfil de cores | Escolha uma conversão de cores ao criar arquivos otimizados usados para o delivery:<ul><li>Preservação de cor padrão: Mantém as cores da imagem de origem sempre que as imagens contêm informações de espaço de cor; não há conversão de cores. Quase todas as imagens hoje têm o perfil de cor apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cor incorporado, as cores serão convertidas em espaço de cor sRGB (azul verde padrão). O sRGB é o espaço de cores recomendado para exibir imagens em páginas da Web.</li><li>Manter espaço de cor original: Mantém as cores originais sem qualquer conversão de cores no momento. Para imagens sem um perfil de cor incorporado, qualquer conversão de cor é feita usando os perfis de cor padrão definidos nas configurações de Publicação. Os perfis coloridos podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Os menus Personalizado de > Para<br> abre para que você possa escolher um espaço de cores Converter de e Converter em. Essa opção avançada substitui todas as informações de cores incorporadas no arquivo de origem. Selecione essa opção quando todas as imagens que você está enviando contiverem dados de perfil de cor incorretos ou ausentes.</li></ul> |
+|  | Opções de edição de imagens | É possível preservar as máscaras de recorte em imagens e escolher um perfil colorido.<br> Consulte [Configuração de opções de edição de imagens no upload](#setting-image-editing-options-at-upload). |
 |  | Opções de Postscript | Você pode rasterizar arquivos PostScript®, cortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload do PostScript e do Illustrator. |
 |  | Opções do Photoshop | Você pode criar modelos a partir de arquivos do Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Observe que os modelos não são suportados no AEM.<br> Consulte [Configuração de opções](#setting-photoshop-upload-options)de upload do Photoshop. |
 |  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cor.<br> Observe que o AEM não oferece suporte a eCatalogs. <br> Consulte [Configuração de opções](#setting-pdf-upload-options)de upload de PDF. |
@@ -190,7 +190,7 @@ Ao fazer upload de arquivos de imagem, incluindo arquivos AI, EPS e PSD, você p
 
 * Recorte o espaço em branco da borda das imagens (consulte a descrição na tabela acima).
 * Recorte manualmente das laterais das imagens (consulte a descrição na tabela acima).
-* Escolha um perfil de cor (consulte a descrição da opção na tabela acima).
+* Escolha um perfil colorido (consulte a descrição da opção na tabela acima).
 * Crie uma máscara a partir de um caminho de recorte.
 * Nitidez de imagens com opções de máscara nítida
 * Plano de fundo de separação
@@ -227,11 +227,11 @@ Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode 
 
 #### Definir opções de upload do Photoshop {#setting-photoshop-upload-options}
 
-Os arquivos PSD (Photoshop Document) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela Carregar).
+Os arquivos do Documento do Photoshop (PSD) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela Carregar).
 
 O Dynamic Media cria várias imagens a partir de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
 
-Use as Opções [!UICONTROL de] corte e as Opções [!UICONTROL de perfil de]cor, descritas acima, com as opções de upload do Photoshop.
+Use as Opções [!UICONTROL de] corte e as Opções [!UICONTROL de Perfil]colorido, descritas acima, com as opções de upload do Photoshop.
 
 >[!NOTE]
 >
@@ -239,7 +239,7 @@ Use as Opções [!UICONTROL de] corte e as Opções [!UICONTROL de perfil de]cor
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Manter camadas |  | Limpa as camadas no PSD, se houver, em ativos individuais. As camadas de ativo permanecem associadas ao PSD. É possível visualizá-los abrindo o arquivo PSD na exibição Detalhe e selecionando o painel de camadas. |
+| Manter camadas |  | Limpa as camadas no PSD, se houver, em ativos individuais. As camadas de ativo permanecem associadas ao PSD. É possível visualização-los abrindo o arquivo PSD na visualização Detalhe e selecionando o painel de camadas. |
 | Criar modelo |  | Cria um modelo a partir das camadas no arquivo PSD. |
 | Extrair texto |  | Extrai o texto para que os usuários possam pesquisar por texto em um Visualizador. |
 | Estender camadas ao tamanho do plano de fundo |  | Estende o tamanho das camadas de imagem recortadas até o tamanho da camada de plano de fundo. |
@@ -278,11 +278,11 @@ Para transcodificar um arquivo de vídeo escolhendo uma variedade de predefiniç
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Vídeo adaptável |  | Uma única predefinição de codificação que funciona com qualquer proporção para criar vídeos para entrega em dispositivos móveis, tablets e desktops. Os vídeos de origem carregados que são codificados com essa predefinição são definidos com uma altura fixa. Entretanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação de vídeo adaptável. |
+| Vídeo adaptável |  | Uma única predefinição de codificação que funciona com qualquer proporção para criar vídeos para delivery, tablet e desktop. Os vídeos de origem carregados que são codificados com essa predefinição são definidos com uma altura fixa. Entretanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação de vídeo adaptável. |
 | Predefinições de codificação única | Classificar predefinições de codificação | Selecione Nome ou Tamanho para classificar as predefinições de codificação listadas em Desktop, Móvel e Tablet por nome ou por tamanho de resolução. |
-|  | Área de trabalho | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo para computadores desktop.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
-|  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android.Selecione uma ou mais proporções com o tamanho de resolução e a taxa de dados de destino desejados. |
-|  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android.Selecione uma ou mais proporções com o tamanho de resolução e a taxa de dados de destino desejados. |
+|  | Área de trabalho | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo para computadores desktop.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados do público alvo desejados. |
+|  | Móvel | Crie um arquivo MP4 para delivery em dispositivos móveis iPhone ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados do público alvo desejados. |
+|  | Tablet | Crie um arquivo MP4 para delivery em dispositivos tablet iPad ou Android.Selecione uma ou mais proporções com o tamanho de resolução e a taxa de dados do público alvo desejados. |
 
 #### Definir predefinições de conjunto de lotes ao carregar {#setting-batch-set-presets-at-upload}
 
@@ -292,7 +292,7 @@ Consulte [Configuração de predefinições de conjuntos de lotes para gerar aut
 
 ### Carregamentos em fluxo {#streamed-uploads}
 
-Se você fizer upload de muitos ativos para o AEM, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até mesmo fazer com que algumas tarefas de upload sejam encerradas. O AEM Assets oferece suporte ao upload simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado nos ativos AEM.
+Se você fizer upload de muitos ativos para o AEM, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode fazer com que algumas tarefas de upload fiquem esgotadas. O AEM Assets oferece suporte ao upload simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado nos ativos AEM.
 
 >[!NOTE]
 >
@@ -302,11 +302,11 @@ Se você fizer upload de muitos ativos para o AEM, as solicitações de E/S para
 
 Você pode carregar arquivos ZIP como qualquer outro ativo suportado. As mesmas regras de nome de arquivo se aplicam aos arquivos ZIP. O AEM permite que você extraia um arquivo ZIP para um local DAM. Se os arquivos de arquivamento não contiverem ZIP como extensão, ative a detecção de tipo de arquivo usando conteúdo.
 
-Selecione um arquivo ZIP de cada vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção para lidar com conflitos, se houver. Se os ativos no arquivo ZIP já existirem na pasta de destino, você poderá selecionar uma destas opções: ignore a extração, substitua os arquivos existentes, mantenha ambos os ativos renomeando ou crie uma nova versão.
+Selecione um arquivo ZIP de cada vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção para lidar com conflitos, se houver. Se os ativos no arquivo ZIP já existirem na pasta de destino, você poderá selecionar uma destas opções: pule a extração, substitua os arquivos existentes, mantenha ambos os ativos renomeando ou crie uma nova versão.
 
-Após a extração ser concluída, o AEM notifica você na área de notificação. Enquanto o AEM extrai o ZIP, você pode voltar ao seu trabalho sem interromper a extração.
+Depois que a extração é concluída, o AEM notifica você na área de notificação. Enquanto o AEM extrai o ZIP, você pode voltar ao seu trabalho sem interromper a extração.
 
-![Notificação da extração de ZIP](assets/Zip-extraction-notification.png)
+![Notificação de extração ZIP](assets/Zip-extraction-notification.png)
 
 Algumas limitações do recurso são:
 
@@ -315,30 +315,30 @@ Algumas limitações do recurso são:
 * Não é possível selecionar dois arquivos ZIP ao mesmo tempo e extraí-los. Você só pode extrair um arquivo ZIP por vez.
 * Ao carregar um arquivo ZIP, se a caixa de diálogo de upload exibir um erro de servidor 500, tente novamente após instalar o service pack mais recente.
 
-## Visualizar ativos {#previewing-assets}
+## Pré-visualizações {#previewing-assets}
 
-Para visualizar um ativo, siga estas etapas.
+Para pré-visualização de um ativo, siga estas etapas.
 
-1. Na interface do usuário Ativos, navegue até o local do ativo que deseja visualizar.
+1. Na interface do usuário Ativos, navegue até o local do ativo que deseja pré-visualização.
 1. Toque no ativo desejado para abri-lo.
 
-1. No modo de visualização, as opções de zoom estão disponíveis para os tipos [de imagem](/help/assets/assets-formats.md#supported-raster-image-formats) suportados (com edição interativa).
+1. No modo de pré-visualização, as opções de zoom estão disponíveis para os tipos [de imagem](/help/assets/assets-formats.md#supported-raster-image-formats) suportados (com edição interativa).
 
-   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta para redefinir zoom leva você de volta à exibição original.
+   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta de redefinição de zoom leva você de volta à visualização original.
 
    ![uploadicon](assets/uploadicon.png)
 
-   Toque em **[!UICONTROL Redefinir]** para redefinir a exibição para o tamanho original.
+   Toque em **[!UICONTROL Redefinir]** para redefinir a visualização para o tamanho original.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
 
-**Visualizar ativos usando apenas teclas do teclado**
+**Pré-visualizações usando apenas teclas de teclado**
 
-Para visualizar um ativo usando o teclado, siga estas etapas:
+Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 1. Na interface do usuário Ativos, navegue até o ativo desejado usando `Tab` as teclas de seta e &lt;barra de espaço>.
 
-1. Pressione a `Enter` tecla no ativo desejado para abri-lo. É possível aplicar zoom em ativos no modo de visualização.
+1. Pressione a `Enter` tecla no ativo desejado para abri-lo. É possível aplicar zoom em ativos no modo de pré-visualização.
 
 1. Para aplicar zoom no ativo:
    1. Use a `Tab` tecla para mover o foco para o ícone de zoom.
@@ -349,13 +349,13 @@ Para visualizar um ativo usando o teclado, siga estas etapas:
 
 1. Use as teclas de seta para mover-se em torno da imagem ampliada.
 
-Consulte também [Visualizar ativos de mídia dinâmica.](/help/assets/previewing-assets.md)
+Consulte também Ativos de mídia dinâmica da [Pré-visualização.](/help/assets/previewing-assets.md)
 
 ## Editar propriedades e metadados {#editing-properties}
 
 1. Navegue até o local do ativo cujos metadados você deseja editar.
 
-1. Selecione o ativo e toque/clique em **[!UICONTROL Propriedades]** na barra de ferramentas para exibir as propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
+1. Selecione o ativo e toque/clique em **[!UICONTROL Propriedades]** na barra de ferramentas para visualização das propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
@@ -363,17 +363,17 @@ Consulte também [Visualizar ativos de mídia dinâmica.](/help/assets/previewin
 
    >[!NOTE]
    >
-   >O layout da página [!UICONTROL Propriedades] e as propriedades de metadados disponíveis dependem do esquema de metadados subjacente. Para saber como modificar o layout da página [!UICONTROL Propriedades] , consulte Esquemas [de metadados](/help/assets/metadata-schemas.md).
+   >O layout da página [!UICONTROL Propriedades] e as propriedades de metadados disponíveis dependem do schema de metadados subjacente. Para saber como modificar o layout da página [!UICONTROL Propriedades] , consulte Schemas [de](/help/assets/metadata-schemas.md)metadados.
 
 1. Para programar uma data/hora específica para a ativação do ativo, use o seletor de datas ao lado do campo **[!UICONTROL No horário]**.
 
-   ![use o seletor de data e hora ou as teclas do teclado no campo Hora ativa para adicionar data e hora para a ativação do ativo](assets/schedule-activation.png)
+   ![use o seletor de data e hora ou as teclas do teclado no campo Hora ativa para adicionar data e hora para a ativação de ativos](assets/schedule-activation.png)
 
    *Figura: Agendar ativação de ativos*
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo Tempo de **[!UICONTROL desativação]** . A data de desativação deve ser posterior à data de ativação de um ativo. Depois do tempo de [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web Ativos ou por meio da API HTTP.
 
-   ![use o seletor de data e hora ou as teclas do teclado no campo Hora de desligar para adicionar data e hora para a desativação de ativos](assets/schedule-deactivation.png)
+   ![use o seletor de data e hora ou as teclas do teclado no campo Hora de desligar para adicionar data e hora para a desativação do ativo](assets/schedule-deactivation.png)
 
    *Figura: Agendar desativação de ativos*
 
@@ -389,21 +389,21 @@ Consulte também [Visualizar ativos de mídia dinâmica.](/help/assets/previewin
 
    A pontuação de classificação atribuída ao ativo é exibida em **[!UICONTROL Suas Classificações]**. A pontuação de classificação média recebida dos usuários que classificaram o ativo é exibida em **[!UICONTROL Classificação]**. Além disso, a análise das pontuações de classificação que contribuem para a pontuação de classificação média é exibida em **[!UICONTROL Análise]** de classificação. Você pode pesquisar ativos com base nas pontuações de classificação médias.
 
-1. Para exibir as estatísticas de uso do ativo, clique/toque na guia **[!UICONTROL Insights]** .
+1. Para obter estatísticas de uso de visualização para o ativo, clique/toque na guia **[!UICONTROL Insights]** .
 
    As estatísticas de uso incluem o seguinte:
 
    * Número de vezes que o ativo foi exibido ou baixado
-   * Canais/dispositivos pelos quais o ativo foi usado
+   * Canais/dispositivos através dos quais o ativo foi usado
    * Soluções criativas onde o ativo foi usado recentemente
    Para obter mais detalhes, consulte [Asset Insights](/help/assets/touch-ui-asset-insights.md).
 
 1. Toque/clique em **[!UICONTROL Salvar e fechar]**.
-1. Navegue até a interface do usuário Ativos. As propriedades de metadados editadas, incluindo título, descrição, classificações e assim por diante, são exibidas no cartão de ativos na exibição Cartão e nas colunas relevantes na exibição Lista.
+1. Navegue até a interface do usuário Ativos. As propriedades de metadados editadas, incluindo título, descrição, classificações e assim por diante, são exibidas no cartão de ativos na visualização do cartão e em colunas relevantes na visualização da Lista.
 
 ## Copiar ativos {#copying-assets}
 
-Quando você copia um ativo ou uma pasta, o ativo inteiro ou a pasta é copiado, juntamente com sua estrutura de conteúdo. Um ativo copiado ou uma pasta é duplicado no local de destino. O ativo no local de origem não é alterado.
+Quando você copia um ativo ou uma pasta, o ativo inteiro ou a pasta é copiado, juntamente com sua estrutura de conteúdo. Um ativo copiado ou uma pasta é duplicado no local do público alvo. O ativo no local de origem não é alterado.
 
 Alguns atributos exclusivos a uma cópia específica de um ativo não são transmitidos. Alguns exemplos são:
 
@@ -482,15 +482,15 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. No painel **[!UICONTROL Representações]** , visualize a lista de representações geradas para o ativo.
+1. No painel **[!UICONTROL Representações]** , visualização a lista de representações geradas para o ativo.
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >Por padrão, os ativos AEM não exibem a representação original do ativo no modo de visualização. Se você for um administrador, poderá usar sobreposições para configurar os ativos AEM para exibir as representações originais no modo de visualização.
+   >Por padrão, os ativos AEM não exibem a representação original do ativo no modo de pré-visualização. Se você for um administrador, poderá usar sobreposições para configurar os ativos AEM para exibir as representações originais no modo de pré-visualização.
 
-1. Selecione uma representação para exibir ou excluir a representação.
+1. Selecione uma representação para visualização ou exclua a representação.
 
    **Excluir uma representação**
 
@@ -578,7 +578,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Cancelar publicação de ativos {#unpublishing-assets}
 
-1. Navegue até o local da pasta de ativos/ativos que deseja remover do ambiente de publicação (cancelar a publicação).
+1. Navegue até o local da pasta de ativos/ativos que deseja remover do ambiente de publicação (cancelar publicação).
 
 1. Selecione o ativo/pasta para cancelar a publicação e toque/clique no ícone **[!UICONTROL Gerenciar publicação]** na barra de ferramentas.
 
@@ -589,7 +589,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
    ![unpublish_action](assets/unpublish_action.png)
 
 1. Para cancelar a publicação do ativo mais tarde, selecione **[!UICONTROL Cancelar publicação mais tarde]** e selecione uma data para cancelar a publicação do ativo.
-1. Agende uma data para o ativo ficar indisponível no ambiente de publicação.
+1. Agende uma data para o ativo ficar indisponível a partir do ambiente de publicação.
 1. Se o ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Toque/clique em **[!UICONTROL Cancelar publicação]**.
 1. Na caixa de diálogo de confirmação, toque/clique em:
 
@@ -636,21 +636,21 @@ Os ícones de ação rápida estão disponíveis para um único ativo por vez. D
 
 ### Navegar e selecionar ativos {#navigating-and-selecting-assets}
 
-Você pode exibir, navegar e selecionar ativos com qualquer uma das exibições disponíveis (Cartão, Coluna e Lista) usando a opção **[!UICONTROL Selecionar]** .
+Você pode visualização, navegar e selecionar ativos com qualquer uma das visualizações disponíveis (Cartão, Coluna e Lista) usando a opção **[!UICONTROL Selecionar]** .
 
-Na exibição de lista e na exibição de coluna, a opção **[!UICONTROL Selecionar]** é exibida quando você passa o ponteiro do mouse sobre a miniatura do ativo.
+Na visualização de lista e na visualização de coluna, a opção **[!UICONTROL Selecionar]** é exibida quando você passa o ponteiro do mouse sobre a miniatura do ativo.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
-Na exibição do cartão, a opção **[!UICONTROL Selecionar]** é exibida como uma ação rápida.
+Na visualização do cartão, a opção **[!UICONTROL Selecionar]** é exibida como uma ação rápida.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Ao navegar em uma pasta ou coleção na interface do usuário Ativos em um navegador, você pode selecionar todos os ativos exibidos ou carregados usando a opção [!UICONTROL Selecionar tudo] no canto superior direito. Se você não rolar abaixo, apenas 100 ativos são carregados na exibição de cartão e 200 são carregados na exibição de lista. A opção Selecionar tudo seleciona somente esses muitos ativos.
+Ao navegar em uma pasta ou coleção na interface do usuário Ativos em um navegador, você pode selecionar todos os ativos exibidos ou carregados usando a opção [!UICONTROL Selecionar tudo] no canto superior direito. Se você não rolar abaixo, apenas 100 ativos são carregados na visualização do cartão e 200 são carregados na visualização da lista. A opção Selecionar tudo seleciona somente esses muitos ativos.
 
-Para obter mais informações, consulte [Exibir e selecionar seus recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+Para obter mais informações, consulte [visualização e seleção de recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Editar imagens {#editing-images}
 
@@ -663,7 +663,7 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
 1. Execute um dos procedimentos a seguir para abrir um ativo no modo de edição:
 
    * Selecione o ativo e clique/toque no ícone **[!UICONTROL Editar]** na barra de ferramentas.
-   * Toque/clique no ícone **[!UICONTROL Editar]** que aparece em um ativo na exibição Cartão.
+   * Toque/clique no ícone **[!UICONTROL Editar]** que aparece em um ativo na visualização Cartão.
    * Na página do ativo, toque/clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
    ![edit_icon](assets/edit_icon.png)
 
@@ -708,7 +708,7 @@ Também é possível adicionar mapas de imagem usando o editor de imagens. Para 
 
 ## Linha do tempo {#timeline}
 
-A linha do tempo permite exibir vários eventos de um item selecionado, como fluxos de trabalho ativos de um ativo, comentários/anotações, registros de atividades e versões.
+A linha do tempo permite que você visualização vários eventos para um item selecionado, como workflows ativos para um ativo, comentários/anotações, registros de atividades e versões.
 
 ![Classificar entradas de linha do tempo de um ativo](assets/sort_timeline.gif)
 
@@ -716,7 +716,7 @@ A linha do tempo permite exibir vários eventos de um item selecionado, como flu
 
 >[!NOTE]
 >
->No console [](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console)Coleções, a lista **[!UICONTROL Mostrar tudo]** fornece opções para exibir somente comentários e fluxos de trabalho. Além disso, a linha do tempo é exibida somente para coleções de nível superior listadas no console. Ela não será exibida se você navegar dentro de qualquer uma das coleções.
+>No console [](/help/assets/managing-collections-touch-ui.md#navigating-the-collections-console)Coleções, a lista **[!UICONTROL Mostrar todas]** fornece opções para visualização somente de comentários e workflows. Além disso, a linha do tempo é exibida somente para coleções de nível superior listadas no console. Ela não será exibida se você navegar dentro de qualquer uma das coleções.
 
 >[!NOTE]
 >
@@ -760,15 +760,15 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
    >É possível adicionar várias anotações antes de salvá-las.
 
 1. Toque/clique em **[!UICONTROL Fechar]** para sair do modo Anotar.
-1. Para exibir a notificação, faça logon nos ativos AEM com as credenciais do Aaron MacDonald e clique no ícone **[!UICONTROL Notificações]** para exibir a notificação.
+1. Para visualização da notificação, faça logon nos ativos AEM com as credenciais do Aaron MacDonald e clique no ícone **[!UICONTROL Notificações]** para visualização da notificação.
 
    >[!NOTE]
    >
    >As anotações também podem ser adicionadas aos ativos de vídeo. Ao anotar vídeos, o player pausa para permitir que você anote em um quadro. Para obter detalhes, consulte [Gerenciamento de ativos](/help/assets/managing-video-assets.md)de vídeo.
 
-1. Para escolher uma cor diferente para diferenciar os usuários, clique/toque no ícone Perfil e clique/toque em **[!UICONTROL Minhas preferências]**.
+1. Para escolher uma cor diferente para diferenciar os usuários, clique/toque no ícone de Perfil e clique/toque em **[!UICONTROL Minhas preferências]**.
 
-   ![Selecione o ícone de perfil de usuário e, em seguida, Minhas preferências para abrir Preferências de usuário](assets/User-profile-preferences.png)
+   ![Selecione o ícone de perfil do usuário e, em seguida, Minhas preferências para abrir Preferências do usuário](assets/User-profile-preferences.png)
 
    Especifique a cor desejada na caixa **[!UICONTROL Cor da anotação]** e clique/toque em **[!UICONTROL Aceitar]**.
 
@@ -778,11 +778,11 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 >
 >Também é possível adicionar anotações a uma coleção. No entanto, se uma coleção contiver coleções-filho, você poderá adicionar anotações/comentários somente à coleção-pai. A opção Anotar não está disponível para coleções filhas.
 
-### Exibir anotações salvas {#viewing-saved-annotations}
+### Anotações salvas da Visualização {#viewing-saved-annotations}
 
-1. Para exibir anotações salvas para um ativo, navegue até o local do ativo e abra a página do ativo para o ativo.
+1. Para visualização de anotações salvas para um ativo, navegue até o local do ativo e abra a página do ativo para o ativo.
 
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** na lista.
+1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha]** do tempo na lista.
 
    ![chlimage_1-239](assets/chlimage_1-35.png)
 
@@ -790,7 +790,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    ![chlimage_1-240](assets/chlimage_1-36.png)
 
-   Toque/clique em um comentário no painel **[!UICONTROL Linha]** do tempo para exibir a anotação correspondente na imagem.
+   Toque/clique em um comentário no painel **[!UICONTROL Linha]** do tempo para visualização a anotação correspondente na imagem.
 
    ![chlimage_1-241](assets/chlimage_1-37.png)
 
@@ -804,7 +804,7 @@ Você também pode imprimir somente as anotações ou o status da revisão.
 
 Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICONTROL Imprimir]** e siga as instruções do assistente. O ícone **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos uma anotação ou status de revisão atribuídos a ele.
 
-1. Na interface do usuário Ativos, abra a página de visualização de um ativo.
+1. Na interface do usuário Ativos, abra a página pré-visualização de um ativo.
 1. Faça uma das seguintes opções:
 
    * Para imprimir todas as anotações e o status da revisão, pule a etapa 3 e vá diretamente para a etapa 4.
@@ -893,7 +893,7 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
 A funcionalidade de controle de versão permite fazer o seguinte:
 
 * Criar uma versão de um ativo.
-* Exibir a revisão atual de um ativo.
+* Visualização da revisão atual de um ativo.
 * Restaure o ativo para uma versão anterior.
 
 1. Navegue até o local do ativo para o qual deseja criar uma versão e toque/clique nele para abrir sua página de ativo.
@@ -902,7 +902,7 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![linha do tempo](assets/timeline.png)
 
-1. Toque/clique no ícone **[!UICONTROL Ações]** (seta) na parte inferior para exibir as ações disponíveis que podem ser executadas no ativo.
+1. Toque/clique no ícone **[!UICONTROL Ações]** (seta) na parte inferior para visualização das ações disponíveis que podem ser executadas no ativo.
 
    ![chlimage_1-249](assets/chlimage_1-45.png)
 
@@ -918,13 +918,13 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![version_option](assets/versions_option.png)
 
-1. Selecione uma versão específica para o ativo para visualizá-lo ou permitir que ele apareça na interface do usuário do Assets.
+1. Selecione uma versão específica para o ativo a ser pré-visualização ou permita que ele apareça na interface do usuário do Assets.
 
    ![select_version](assets/select_version.png)
 
    >[!NOTE]
    >
-   >Você também pode selecionar o ativo na exibição [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) Lista ou na exibição [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)Coluna.
+   >Você também pode selecionar o ativo na visualização [da](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) Lista ou na visualização [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)Coluna.
 
 1. Adicione um rótulo e um comentário para a versão para reverter para a versão específica na interface do usuário do Assets.
 
@@ -940,32 +940,9 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![compare_Versões](assets/compare_versions.png)
 
-### Iniciar um fluxo de trabalho em um ativo {#starting-a-workflow-on-an-asset}
+### Start de um fluxo de trabalho em um ativo {#starting-a-workflow-on-an-asset}
 
-1. Navegue até o local do ativo para o qual você deseja iniciar um fluxo de trabalho e toque/clique no ativo para abrir a página do ativo.
-1. Toque no ícone GlobalNav e selecione **[!UICONTROL Linha]** do tempo no menu para exibir a linha do tempo.
-
-   ![linha do tempo 1](assets/timeline.png)
-
-1. Toque no ícone **[!UICONTROL Ações]** (seta) na parte inferior para abrir a lista de ações disponíveis para o ativo.
-
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
-1. Toque em **[!UICONTROL Iniciar fluxo de trabalho]** na lista.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
-
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
-
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
-1. (Opcional) Especifique um título para o fluxo de trabalho, que pode ser usado para fazer referência à instância do fluxo de trabalho.
-
-   ![chlimage_1-255](assets/chlimage_1-51.png)
-
-1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Cada etapa do fluxo de trabalho é exibida na linha do tempo como um evento.
-
-   ![chlimage_1-256](assets/chlimage_1-52.png)
+Para aplicar um fluxo de trabalho para processar um ativo, consulte Fluxo de trabalho do [start em um ativo](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
 ## Coleções {#collections}
 
