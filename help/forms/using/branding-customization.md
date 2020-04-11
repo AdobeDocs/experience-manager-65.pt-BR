@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -37,7 +37,7 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 #### Para iOS {#for-ios}
 
 1. Abra o `Capture.xcodeproj` projeto no Xcode.
-1. (***Para personalizar o ícone***) Na exibição do navegador de Captura, navegue até **[!UICONTROL Capturar > Capturar > Arquivos de suporte > Capture-info.plist]**. Clique na lista suspensa ao lado dos arquivos de Ícone. Especifique o nome do arquivo de ícone (.png) e faça upload do arquivo em **[!UICONTROL Captura > Capturar > Recursos > ícones]**. As dimensões atualmente suportadas são: 29 x 29, 50 x 50, 58 x 58, 72 x 72, 100 x 100 e 144 x 144.
+1. (***Para personalizar o ícone***) Na visualização do navegador de Captura, navegue até **[!UICONTROL Capturar > Capturar > Arquivos de suporte > Capture-info.plist]**. Clique na lista suspensa ao lado dos arquivos de Ícone. Especifique o nome do arquivo de ícone (.png) e faça upload do arquivo em **[!UICONTROL Captura > Capturar > Recursos > ícones]**. As dimensões atualmente suportadas são: 29 x 29, 50 x 50, 58 x 58, 72 x 72, 100 x 100 e 144 x 144.
 1. (***Para personalizar imagens*** de ativação) Certifique-se de que os nomes de arquivo de suas imagens sejam:
 
    * Para retrato: `Default-Portrait~ipad.png` e `Default-Portrait@2x~ipad.png`
@@ -90,7 +90,7 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 ### Para iOS {#for-ios-1}
 
 1. Abra o `Capture.xcodeproj` projeto no Xcode.
-1. Na exibição do navegador de Captura, navegue até **[!UICONTROL Capturar > Capturar > Arquivos de suporte > InfoPlist.strings]**.
+1. Na visualização do navegador Capture, navegue até **[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**.
 
    Atualize o valor do `CFBundleDisplayName` atributo para um nome que você deseja exibir para o aplicativo.
 
@@ -221,5 +221,3 @@ Verifique se você tem a seguinte imagem:
 1. Navegue até a `MWSWindows\www\wsmobile\images`pasta.
 1. Para alterar o logotipo, substitua o arquivo padrão `aem_icon.png` pelo arquivo personalizado `aem_icon.png` .
 1. Crie e execute o aplicativo AEM Forms no dispositivo Windows.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
