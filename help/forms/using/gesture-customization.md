@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -29,18 +29,18 @@ No aplicativo AEM Forms, o deslize para a esquerda abre uma nova tarefa ou ponto
    * Para Android, abra o projeto do Android no Eclipse.
    * Para Windows, abra `MWSWindows.sln` no Visual Studio.
 
-1. Navegue até a pasta de exibições e abra o `task.js` arquivo para edição.
+1. Navegue até a pasta visualização e abra o `task.js` arquivo para edição.
 
-   * No Xcode, navegue até a pasta **Capture > www > wsmobile > js > runtime > views** .
-   * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > tempo de execução > exibições** .
-   * No Visual Studio, navegue até a pasta **MWSWwindows > www > wsmobile > js > tempo de execução > exibições** .
+   * No Xcode, navegue até a pasta **Capture > www > wsmobile > js > runtime > visualização** .
+   * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > tempo de execução > visualização** .
+   * No Visual Studio, navegue até a pasta **MWSWwindows > www > wsmobile > js > tempo de execução > pasta visualização** .
    >[!NOTE]
    >
-   >O arquivo task.js contém a exibição de backbone associada a cada tarefa ou ponto de partida listado nas listas de tarefas ou pontos de partida.
+   >O arquivo tarefa.js contém a visualização de backbone associada a cada tarefa ou ponto de partida listado nas listas de tarefa ou ponto de partida.
 
-1. No `task.js` arquivo, procure a propriedade events da exibição.
+1. No `task.js` arquivo, procure a propriedade eventos da visualização.
 
-   A propriedade events é um mapa com cada entrada no formato:
+   A propriedade eventos é um mapa com cada entrada no formato:
 
    `"EventName Selector": "Function"`
 
@@ -52,7 +52,7 @@ No aplicativo AEM Forms, o deslize para a esquerda abre uma nova tarefa ou ponto
 
       &quot;tocar em .taskOpenArea&quot;: &quot;onTaskClick&quot;,
 
-      &quot;toque em .task-content&quot; : &quot;onTaskClick&quot;,
+      &quot;toque em .tarefa-content&quot; : &quot;onTaskClick&quot;,
 
       &quot;toque em .last_empty_div&quot; : &quot;onTaskClick&quot;,
    e substitua por
@@ -61,14 +61,12 @@ No aplicativo AEM Forms, o deslize para a esquerda abre uma nova tarefa ou ponto
 
       &quot;deslize .taskOpenArea&quot;: &quot;onTaskClick&quot;,
 
-      &quot;arraste com o dedo .task-content&quot;: &quot;onTaskClick&quot;,
+      &quot;deslize o conteúdo .tarefa&quot;: &quot;onTaskClick&quot;,
 
       &quot;deslize .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 
 1. Salve e feche o `task.js` arquivo.
-1. Crie e execute o aplicativo AEM Forms. Agora você pode abrir um usando com o dedo esquerdo e o dedo direito.
+1. Crie e execute o aplicativo AEM Forms. Agora você pode abrir um usando com o dedo para a esquerda e o dedo para a direita.
 
-Da mesma forma, é possível fazer alterações em outras exibições para várias combinações de gestos, elementos HTML e funções.
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
+Da mesma forma, é possível fazer alterações em outras visualizações para várias combinações de gestos, elementos HTML e funções.
