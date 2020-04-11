@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Suporte a cláusula de imagem para formulários HTML5 {#picture-clause-support-for-html-forms}
 
-Os formulários HTML5 oferecem suporte à cláusula Imagem XFA para valores de exibição e valores formatados para símbolos de data, texto e numéricos. As expressões da cláusula Picture a seguir são suportadas:
+Os formulários HTML5 oferecem suporte à cláusula Imagem XFA para valores de exibição e valores formatados para símbolos de data, texto e numéricos. As seguintes Expressões de cláusula de imagem são suportadas:
 
-* category(locale){picture-cláusula}| category(locale){picture-cláusula}| category(locale){picture-cláusula}
+* categoria(locale){picture-cláusula}| categoria(locale){picture-cláusula}| categoria(locale){picture-cláusula}
 * category.subcategory{}
 
 >[!NOTE]
@@ -28,7 +28,7 @@ Os formulários HTML5 oferecem suporte à cláusula Imagem XFA para valores de e
 
 ## Símbolos de campo de data suportados {#supported-date-field-symbols}
 
-Expressão suportada para cláusula de imagem de data:
+expressão suportada para cláusula de imagem de data:
 
 * date.long{}
 * date.short{}
@@ -39,7 +39,7 @@ Expressão suportada para cláusula de imagem de data:
 
 >[!NOTE]
 >
->O padrão padrão da cláusula de imagem é {MMM D, YYYY}. Se nenhum padrão for aplicado, o padrão será usado.
+>O padrão padrão da cláusula de imagem é {MMM D, YYYY} padrão. Se nenhum padrão for aplicado, o padrão será usado.
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ O número **10000** é formatado como **10.000** em formulários HTML e PDF.
 
 O número 1000000 é formatado como 1.000.000 em formulários PDF. Entretanto, no Forms HTML, o número permanece sem formatação como 1000000.
 
-As expressões suportadas para a cláusula Imagem numérica no Forms **** HTML são:
+expressões suportadas para cláusula de imagem numérica em formulários **** HTML são:
 
 * num.integer{}
 * num.decimal{}
@@ -121,7 +121,7 @@ As expressões suportadas para a cláusula Imagem numérica no Forms **** HTML s
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Formatação</strong>de saída: um único dígito. Ou para o dígito zero se os dados de entrada estiverem vazios ou um espaço na posição correspondente.<br /> </td>
+   <td><strong>Formatação</strong>de saída: um único dígito. Ou para o dígito zero se os dados de entrada estiverem vazios ou se houver um espaço na posição correspondente.<br /> </td>
    <td>Um único dígito</td>
   </tr>
   <tr>
@@ -207,8 +207,6 @@ Os formulários HTML5 suportam as seguintes expressões de cláusula de Imagem d
 |---|---|
 | A | Um caractere alfabético único. |
 | X | Um caractere único. |
-|  O | Um caractere alfanumérico único. |
+| O | Um caractere alfanumérico único. |
 | 0 (zero) | Um caractere alfanumérico único. |
 | 9 | Um único dígito. |
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
