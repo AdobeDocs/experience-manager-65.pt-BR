@@ -10,14 +10,14 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Introdução ao Process Relatórios{#getting-started-with-process-reporting}
 
-O Relatórios de processos oferece aos usuários do AEM Forms a capacidade de query de informações sobre processos do AEM Forms que estão definidos na implementação do AEM Forms. Entretanto, o Relatórios Process não acessa dados diretamente do repositório do AEM Forms. Os dados são publicados pela primeira vez no repositório de Relatórios do Processo de forma programada (*pelos* serviços ProcessDataPublisher e ProcessDataStorage). Os relatórios e query em andamento são gerados a partir dos dados de Relatórios do processo publicados no repositório. O Relatórios Process é instalado como parte do módulo de Fluxo de trabalho do Forms.
+O Relatórios de processos oferece aos usuários do AEM Forms a capacidade de query de informações sobre processos do AEM Forms que estão definidos na implementação do AEM Forms. Entretanto, o Relatórios Process não acessa dados diretamente do repositório do AEM Forms. Os dados são publicados pela primeira vez no repositório de Relatórios do Processo de forma programada (*pelos* serviços ProcessDataPublisher e ProcessDataStorage). Os relatórios e query em andamento são gerados a partir dos dados de Relatórios do Processo publicados no repositório. O Relatórios Process é instalado como parte do módulo de Fluxo de trabalho do Forms.
 
 Este artigo detalha as etapas para permitir a publicação de dados do AEM Forms no repositório do Process Relatórios. Depois disso, você poderá usar o Processar Relatórios para executar relatórios e query. O artigo também aborda as opções disponíveis para configurar os serviços de Relatórios do Processo.
 
@@ -279,5 +279,3 @@ Para obter detalhes sobre o serviço de publicação de dados e como agendar ess
 * **[!UICONTROL Sincronizar]**: Sincronize o repositório incorporado do Relatórios do Processo com o banco de dados do AEM Forms.
 * **[!UICONTROL Ajuda]**: Visualização na documentação de Ajuda do Process Relatórios.
 * **[!UICONTROL Logout]**: Fazer logout do Relatórios Process
-
-[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
