@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -192,5 +192,3 @@ Scripts e estilos podem ser depurados em navegadores diferentes.
 1. Formulários HTML, usando Propriedades do processo em seu design, quando renderizados na área de trabalho do AEM Forms, exibem o botão Enviar dentro do formulário.
 
    Ao projetar formulários, ao usar Propriedades do processo, ele adiciona um botão Enviar dentro do formulário. Quando renderizado como um PDF na área de trabalho do AEM Forms, o botão Enviar não estará visível para o usuário final. Entretanto, ao renderizar como um formulário HTML na área de trabalho do AEM Forms, o botão Enviar fica visível para o usuário final. Clicar nesse botão Enviar dentro do formulário não inicia nenhuma ação. Clicar no botão Enviar na parte inferior da área de trabalho do AEM Forms, fora do formulário, conclui a tarefa.
-
-[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
