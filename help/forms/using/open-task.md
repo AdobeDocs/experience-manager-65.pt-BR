@@ -1,6 +1,6 @@
 ---
-title: Abrindo uma tarefa
-seo-title: Abrindo uma tarefa
+title: Abrir uma tarefa
+seo-title: Abrir uma tarefa
 description: Etapas para abrir uma tarefa no aplicativo AEM Forms.
 seo-description: Etapas para abrir uma tarefa no aplicativo AEM Forms.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
@@ -9,20 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-# Abrindo uma tarefa {#opening-a-task}
+# Abrir uma tarefa {#opening-a-task}
 
-Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. As tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho do AEM.
+Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. Tarefas são etapas no Fluxo de trabalho definido na bancada ou no editor de fluxo de trabalho do AEM.
 
 Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvar um rascunho](/help/forms/using/save-as-draft.md).
 
 **Para abrir uma tarefa**
 
-1. Toque na tarefa na lista de tarefas.
+1. Toque na tarefa na lista da tarefa.
 
    Quando você seleciona uma tarefa, a descrição da tarefa, conforme definida no Workbench, é exibida abaixo do nome da tarefa. Após a descrição, as ações/ações do usuário associadas à tarefa são exibidas.
 
@@ -31,7 +31,7 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 1. Toque na tarefa para abri-la.
 
-   Você pode tocar em **Exibir resumo** para exibir instruções adicionais especificadas no processo do Workbench.
+   Você pode tocar em Resumo **da** Visualização para visualização de instruções adicionais especificadas no processo do Workbench.
 
 **Para abrir um aplicativo**
 
@@ -44,6 +44,4 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 1. Toque na tarefa para abri-la.
 
-   Você pode tocar em **Exibir resumo** para exibir instruções adicionais especificadas para o aplicativo.
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
+   Você pode tocar em Resumo **da** Visualização para visualização de instruções adicionais especificadas para o aplicativo.
