@@ -1,22 +1,22 @@
 ---
 title: Personalizar tabelas de rastreamento
 seo-title: Personalizar tabelas de rastreamento
-description: Como personalizar a exibição dos detalhes dos processos do usuário na tabela de tarefas exibida na guia de rastreamento da área de trabalho do AEM Forms.
-seo-description: Como personalizar a exibição dos detalhes dos processos do usuário na tabela de tarefas exibida na guia de rastreamento da área de trabalho do AEM Forms.
+description: Como personalizar a exibição dos detalhes dos processos do usuário na tabela tarefa exibida na guia de rastreamento da área de trabalho do AEM Forms.
+seo-description: Como personalizar a exibição dos detalhes dos processos do usuário na tabela tarefa exibida na guia de rastreamento da área de trabalho do AEM Forms.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Personalizar tabelas de rastreamento{#customize-tracking-tables}
 
-A guia de rastreamento na área de trabalho do AEM Forms é usada para exibir os detalhes das instâncias de processo nas quais o usuário conectado está envolvido. Para exibir as tabelas de rastreamento, primeiro selecione um nome de processo no painel esquerdo para ver sua lista de instâncias no painel do meio. Selecione uma instância do processo para ver uma tabela de tarefas geradas por essa instância no painel direito. Por padrão, as colunas da tabela exibem os seguintes atributos de tarefa (o atributo correspondente no modelo de tarefa é fornecido entre parênteses):
+A guia de rastreamento na área de trabalho do AEM Forms é usada para exibir os detalhes das instâncias de processo nas quais o usuário conectado está envolvido. Para visualização das tabelas de rastreamento, primeiro selecione um nome de processo no painel esquerdo para ver sua lista de instâncias no painel do meio. Selecione uma instância do processo para ver uma tabela de tarefas gerada por essa instância no painel direito. Por padrão, as colunas da tabela exibem os seguintes atributos de tarefa (o atributo correspondente no modelo de tarefa é fornecido entre parênteses):
 
 * ID ( `taskId`)
 * Nome ( `stepName`)
@@ -26,7 +26,7 @@ A guia de rastreamento na área de trabalho do AEM Forms é usada para exibir os
 * Tempo de conclusão ( `completeTime`)
 * Proprietário ( `currentAssignment.queueOwner`)
 
-Os atributos restantes no modelo de tarefa disponíveis para exibição na tabela de tarefas são:
+Os atributos restantes no modelo de tarefa disponíveis para exibição na tabela de tarefa são:
 
 <table>
  <tbody>
@@ -113,7 +113,7 @@ Os atributos restantes no modelo de tarefa disponíveis para exibição na tabel
  </tbody>
 </table>
 
-Para as seguintes personalizações na tabela de tarefas, é necessário fazer alterações semânticas no código-fonte. Consulte [Introdução à personalização da área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) do AEM Forms para saber como fazer alterações semânticas usando o SDK da área de trabalho e criar um pacote minified a partir da fonte alterada.
+Para as seguintes personalizações na tabela tarefa, é necessário fazer alterações semânticas no código-fonte. Consulte [Introdução à personalização da área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) do AEM Forms para saber como fazer alterações semânticas usando o SDK da área de trabalho e criar um pacote minified a partir da fonte alterada.
 
 ## Alteração das colunas da tabela e sua ordem {#changing-table-columns-and-their-order}
 
@@ -153,9 +153,9 @@ Para as seguintes personalizações na tabela de tarefas, é necessário fazer a
 
 ## Classificação de uma tabela de rastreamento {#sorting-a-tracking-table}
 
-Para classificar a tabela da lista de tarefas ao clicar no cabeçalho da coluna:
+Para classificar a tabela de lista de tarefa ao clicar no cabeçalho da coluna:
 
-1. Registre um manipulador de cliques para `.fixedTaskTableHeader th` no arquivo `js/runtime/views/processinstancehistory.js`.
+1. Registre um manipulador de cliques para `.fixedTaskTableHeader th` o no arquivo `js/runtime/views/processinstancehistory.js`.
 
    ```as3
    events: {
@@ -175,7 +175,7 @@ Para classificar a tabela da lista de tarefas ao clicar no cabeçalho da coluna:
 
 1. Exponha o `TaskTableHeaderClick` método em `js/runtime/util/history.js`.
 
-   O método encontra o atributo de tarefa do evento click, classifica a lista de tarefas nesse atributo e renderiza a tabela de tarefas com a lista de tarefas classificada.
+   O método encontra o atributo tarefa do evento click, classifica a lista de tarefas desse atributo e renderiza a tabela tarefa com a lista de tarefas classificada.
 
    A classificação é feita usando a função de classificação Backbone na coleção da lista de tarefas, fornecendo uma função de comparação.
 
@@ -210,5 +210,3 @@ Para classificar a tabela da lista de tarefas ao clicar no cabeçalho da coluna:
            render();
        };
    ```
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
