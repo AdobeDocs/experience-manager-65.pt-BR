@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -83,5 +83,3 @@ Nessa orquestração de amostra, um funcionário envia um formulário de solicit
 Na área de trabalho do AEM Forms, quando você abre uma tarefa, o URL de resumo acessa o nó CRX e o renderizador HTML exibe o resumo.
 
 O layout de resumo pode ser alterado sem modificar o processo. O renderizador HTML exibe o resumo adequadamente.
-
-**[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
