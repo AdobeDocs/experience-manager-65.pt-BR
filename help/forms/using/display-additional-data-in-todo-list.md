@@ -1,6 +1,6 @@
 ---
-title: Exibição de dados adicionais na lista de Tarefas
-seo-title: Exibição de dados adicionais na lista de Tarefas
+title: Exibição de dados adicionais na lista do ToDo
+seo-title: Exibição de dados adicionais na lista do ToDo
 description: Como personalizar a exibição da lista de tarefas do LiveCycle AEM Forms para mostrar mais informações além do padrão.
 seo-description: Como personalizar a exibição da lista de tarefas do LiveCycle AEM Forms para mostrar mais informações além do padrão.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
@@ -10,14 +10,14 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-# Exibição de dados adicionais na lista de Tarefas{#displaying-additional-data-in-todo-list}
+# Exibição de dados adicionais na lista do ToDo{#displaying-additional-data-in-todo-list}
 
-Por padrão, a lista de Tarefas a fazer do espaço de trabalho do AEM Forms exibe o nome de exibição e a descrição da tarefa. No entanto, você pode adicionar outras informações, como data de criação e data de término. Você também pode adicionar ícones e alterar o estilo da exibição.
+Por padrão, a lista A fazer do espaço de trabalho do AEM Forms exibe o nome e a descrição de exibição da tarefa. No entanto, você pode adicionar outras informações, como data de criação e data de término. Você também pode adicionar ícones e alterar o estilo da exibição.
 
 ![Uma amostra da guia HTML Workspace To-do mostrando a configuração padrão](assets/html-todo-list.png)
 
@@ -32,7 +32,7 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [este
 ## Exibição de informações em uma tarefa {#displaying-information-on-a-task}
 
 1. Siga as etapas [genéricas para personalização](../../forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
-1. Para exibir informações adicionais para uma tarefa, os pares de valores chave correspondentes devem ser adicionados no bloco de tarefas de `translation.json`.
+1. Para exibir informações adicionais de uma tarefa, os pares de valores chave correspondentes devem ser adicionados dentro do bloco de tarefa de `translation.json`.
 
    Por exemplo, alteração `/apps/ws/locales/en-US/translation.json` para inglês:
 
@@ -110,7 +110,7 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [este
    >
    >Adicione pares de valores chave correspondentes para todos os idiomas suportados.
 
-1. Por exemplo, adicione informações dentro do bloco de tarefas:
+1. Por exemplo, adicione informações dentro do bloco de tarefa:
 
    ```
    "stepname" : {
@@ -135,7 +135,7 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [este
 
 ## Adicionar entrada no modelo HTML {#adding-entry-in-the-html-template}
 
-Finalmente, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar uma, consulte Criar código de área de trabalho do AEM Forms.
+Por fim, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar uma, consulte Criar código de área de trabalho do AEM Forms.
 
 1. Copiar `task.html`:
 
@@ -149,5 +149,3 @@ Finalmente, é necessário incluir uma entrada no pacote dev para cada proprieda
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
