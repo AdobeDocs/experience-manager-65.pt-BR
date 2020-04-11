@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Personalização da lista de instâncias de processo {#customizing-the-listing-of-process-instances}
 
-A lista de instâncias do processo é exibida na guia Rastreamento da área de trabalho do AEM Forms.
+A lista da instância do processo é exibida na guia Rastreamento da área de trabalho do AEM Forms.
 
-Na lista de instâncias do processo, para cada instância do processo, a área de trabalho do AEM Forms mostra algumas propriedades dessa instância. As seguintes propriedades estão disponíveis para cada instância do processo. Essas propriedades são armazenadas como atributos no modelo de componente da instância do processo e estão disponíveis para uso em sua exibição e modelo.
+Na lista da instância do processo, para cada instância do processo, a área de trabalho do AEM Forms mostra algumas propriedades dessa instância. As seguintes propriedades estão disponíveis para cada instância do processo. Essas propriedades são armazenadas como atributos no modelo de componente da instância do processo e estão disponíveis para uso em sua visualização e modelo.
 
 <table>
  <tbody>
@@ -94,5 +94,3 @@ Para exibir a `description` propriedade da instância do processo no cartão de 
        padding : 2px;
    }
    ```
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
