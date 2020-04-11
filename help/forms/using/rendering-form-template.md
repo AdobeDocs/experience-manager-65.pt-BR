@@ -1,15 +1,15 @@
 ---
 title: Renderizar modelo de formulário para formulários HTML5
 seo-title: Renderizar modelo de formulário para formulários HTML5
-description: Os perfis de formulários HTML5 estão associados às renderizações de perfil. Renderizações de perfil são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço Forms OSGi.
-seo-description: Os perfis de formulários HTML5 estão associados às renderizações de perfil. Renderizações de perfil são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço Forms OSGi.
+description: perfis de formulários HTML5 estão associados a renderizações de perfis. Renderizações de Perfil são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço Forms OSGi.
+seo-description: perfis de formulários HTML5 estão associados a renderizações de perfis. Renderizações de Perfil são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço Forms OSGi.
 uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -18,13 +18,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Renderizar ponto final {#render-endpoint}
 
-Formulários HTML5 têm a noção de **Perfis** que são expostos como Pontos finais REST para permitir a renderização móvel de modelos de formulário. Esses Perfis associaram o Renderizador **de perfil**. Elas são páginas JSP responsáveis por gerar representação HTML do formulário chamando o serviço Forms OSGi. O caminho JCR do nó Perfil determina o URL do ponto final de renderização. O ponto final de renderização padrão do formulário que aponta para o perfil &#39;padrão&#39; é semelhante a:
+Formulários HTML5 têm a noção de **Perfis** que são expostos como pontos finais REST para permitir a renderização móvel de modelos de formulário. Esses Perfis associaram o **Perfil Renderer**. Elas são páginas JSP responsáveis por gerar a representação HTML do formulário chamando o serviço Forms OSGi. O caminho JCR do nó do Perfil determina o URL do ponto final de renderização. O ponto final de renderização padrão do formulário que aponta para o perfil &#39;padrão&#39; é semelhante a:
 
 https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*caminho da pasta que contém o formulário xdp*>&amp;template=&lt;*nome do xdp*>
 
 Por exemplo, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
-Para um perfil personalizado, o ponto de extremidade é alterado de acordo. Por exemplo, o ponto final para o perfil personalizado com o nome formas é:
+Para um perfil personalizado, o ponto de extremidade é alterado de acordo. Por exemplo, o ponto final do perfil personalizado com o nome formas é:
 
 `http://localhost:4502/content/xfaforms/profiles/hrforms.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
@@ -70,16 +70,14 @@ Os parâmetros de solicitação suportados ao renderizar o formulário como HTML
 
 ### Transmissão do parâmetro de renderização {#passing-the-render-parameter}
 
-Os formulários HTML5 suportam três métodos para transmitir os parâmetros de renderização. Você pode passar parâmetros por URLs, pares de valores chave e nó de perfil. No parâmetro de renderização, o par de valor chave tem a maior precedência seguida pelo nó do perfil. O parâmetro de Solicitação de URL tem menos precedência.
+Os formulários HTML5 suportam três métodos para transmitir os parâmetros de renderização. Você pode passar parâmetros por URLs, pares de valores chave e nó de perfil. No parâmetro de renderização, o par key-value tem a maior precedência seguida pelo nó do perfil. O parâmetro de Solicitação de URL tem menos precedência.
 
 * **Parâmetros** de solicitação de URL: Você pode especificar os parâmetros de renderização no URL. Nos parâmetros de solicitação de URL, os parâmetros ficam visíveis para o usuário final. Por exemplo, o URL de envio a seguir contém um parâmetro de modelo no URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
 
 * **Parâmetros** de solicitação SetAttribute: Você pode especificar os parâmetros de renderização como um par de valores chave. Nos parâmetros de solicitação SetAttribute, os parâmetros não são visíveis para o usuário final. Você pode encaminhar uma solicitação de qualquer outro JSP para o renderizador de perfil de formulário HTML5 JSP e usar *setAttribute* no objeto de solicitação para passar todos os parâmetros de renderização. Este método tem a maior precedência.
 
-* **** Parâmetros de solicitação do nó de perfil: Você pode especificar os parâmetros de renderização como propriedades de nó de um nó de perfil. Nos parâmetros de solicitação do nó de perfil, os parâmetros não são visíveis para o usuário final. O nó do perfil é o nó onde a solicitação é enviada. Para especificar parâmetros como propriedades de nó, use a lista CRXDE.
+* **Parâmetros de solicitação de nó de Perfil:** Você pode especificar os parâmetros de renderização como propriedades de nó de um nó de perfil. Nos parâmetros de solicitação do nó de perfil, os parâmetros não são visíveis para o usuário final. O nó Perfil é o nó para o qual a solicitação é enviada. Para especificar parâmetros como propriedades de nó, use a lista CRXDE.
 
 ### Enviar parâmetros {#submit-parameters}
 
 Dados de envio de formulários HTML5; execute scripts do lado do servidor e serviços da Web em servidores AEM. Para obter informações detalhadas sobre parâmetros usados para executar scripts do lado do servidor e serviços da Web em servidores AEM, consulte Proxy [de Serviço para formulários](/help/forms/using/service-proxy.md)HTML5.
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
