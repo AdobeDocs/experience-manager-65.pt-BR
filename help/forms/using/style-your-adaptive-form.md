@@ -8,7 +8,7 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -46,22 +46,22 @@ Baixe as imagens de estilo cabeçalho e logotipo, fornecidas abaixo, em sua máq
 
 ## Etapa 1: Aplicar um tema ao formulário adaptável {#step-apply-a-theme-to-your-adaptive-form}
 
-O editor de formulários adaptativos fornece vários temas predefinidos. Se você planeja não usar um estilo personalizado para seu formulário adaptável, também pode publicar seus formulários adaptáveis com um tema predefinido. Temas são independentes de formas adaptativas. É possível aplicar o mesmo tema a vários formulários adaptáveis. Para aplicar um tema a um formulário adaptável:
+O editor de formulários adaptativos fornece vários temas prontos para uso. Se você planeja não usar um estilo personalizado para seu formulário adaptável, também pode publicar seus formulários adaptáveis com um tema predefinido. Os Temas são independentes das formas adaptativas. É possível aplicar o mesmo tema a vários formulários adaptáveis. Para aplicar um tema a um formulário adaptável:
 
 1. Abra o formulário adaptável para edição.
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-1. Abra as propriedades do contêiner **de Formulário** adaptável. No navegador de propriedades, navegue até **Básico** > Tema **de formulário** adaptável. O campo Tema **de formulário** adaptável lista todos os temas predefinidos e personalizados. Por padrão, o tema Tela de desenho é aplicado.
-1. Selecione um tema no campo Tema **de formulário** adaptável. Por exemplo, tema **do** Survey. Toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para aplicar o tema selecionado.
+1. Abra as propriedades do container **** de formulário adaptável. No navegador de propriedades, navegue até **Básico** > Tema **de formulário** adaptável. O campo Tema **de formulário** adaptável lista todos os temas predefinidos e personalizados. Por padrão, o tema Tela de desenho é aplicado.
+1. Selecione um tema no campo Tema **de formulário** adaptável. Por exemplo, tema **de** Pesquisa. Toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para aplicar o tema selecionado.
 
 ![Formulário adaptável com o tema padrão](assets/default-adaptive-form.png)
 
-**** Figura: Formulário *adaptável com o tema padrão*
+**Figura:** Formulário *adaptável com o tema padrão*
 
 ![Formulário adaptável com o tema Pesquisa](assets/adaptive-form-with-survey-theme.png)
 
-**** Figura: Formulário *adaptável com o tema Pesquisa*
+**Figura:** Formulário *adaptável com o tema Pesquisa*
 
 ## Etapa 2: Atualizar o formulário adaptável {#step-update-your-adaptive-form}
 
@@ -74,8 +74,8 @@ O design exibido acima requer alterações no texto do espaço reservado e no lo
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
    1. Toque na imagem do logotipo no componente do cabeçalho e toque em ![propriedades cmppr](assets/cmppr.png) . Na propriedade image, toque em X para remover a imagem do logotipo existente.
-   1. Toque em carregar, selecione o logo.png e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações. A imagem foi baixada na seção [Antes de iniciar](/help/forms/using/style-your-adaptive-form.md#before-you-start) .
-   1. Toque no texto do cabeçalho `We.Retail`e toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Altere o texto do cabeçalho para `we retail`. Aplica a formatação em negrito somente `we`em `we retail`.
+   1. Toque em carregar, selecione o logo.png e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações. A imagem foi baixada na seção [Antes do start](/help/forms/using/style-your-adaptive-form.md#before-you-start) .
+   1. Toque no texto do cabeçalho `We.Retail`e toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Altere o texto do cabeçalho para `we retail`. Aplique a formatação em negrito somente `we`em `we retail`.
    ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Remova o título e adicione texto de espaço reservado:
@@ -92,35 +92,35 @@ Você pode usar o editor [de](/help/forms/using/themes.md) temas para criar tema
 
 Um tema é uma entidade separada, como formas adaptativas. Ele contém estilos (CSS) para os componentes e painéis de um formulário adaptável. Os estilos incluem propriedades CSS, como cores de plano de fundo, cores de estado, transparência, alinhamento e tamanho. Quando um tema é aplicado, o estilo especificado é aplicado aos componentes correspondentes de um formulário adaptável.
 
-Neste tutorial, você estilizará o cabeçalho e o rodapé, os componentes de texto e numéricos, o componente de anexo e os botões. Vamos começar com a criação de um tema:
+Neste tutorial, você estilizará o cabeçalho e o rodapé, os componentes de texto e numéricos, o componente de anexo e os botões. Vamos start na criação de um tema:
 
 ### Criar um tema {#create-a-theme}
 
 1. Faça logon na instância do autor do AEM e navegue até **Adobe Experience Manager** > **Formulários** > **Temas**. O URL padrão é [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Toque em **[!UICONTROL Criar]** e selecione **[!UICONTROL Tema]**. A página Criar tema com os campos necessários para criar um tema é exibida. Os campos Título e Nome são obrigatórios:
 
-   * **** Título: Especifique um título do tema. Por exemplo, Tema **Global.** O título ajuda a identificar o tema da lista de temas.
-   * **** Nome: Especifique o nome do tema. Por exemplo, Tema **Global.** Um nó com o nome especificado é criado no repositório. À medida que você digita um título, o valor do campo de nome é gerado automaticamente. Você pode alterar o valor sugerido. O campo de nome pode incluir somente caracteres alfanuméricos, hífens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
+   * **Título:** Especifique um título do tema. Por exemplo, Tema **Global.** O título ajuda a identificar o tema a partir da lista de temas.
+   * **Nome:** Especifique o nome do tema. Por exemplo, Tema **Global.** Um nó com o nome especificado é criado no repositório. À medida que você digita um título, o valor do campo de nome é gerado automaticamente. Você pode alterar o valor sugerido. O campo de nome pode incluir somente caracteres alfanuméricos, hífens e sublinhados. Todas as entradas inválidas são substituídas por um hífen.
 
 1. Toque em **Criar**. Um tema é criado e uma caixa de diálogo para abrir o formulário para edição é exibida. Toque em **Abrir** para abrir o tema recém-criado em uma nova guia. O tema abre no editor de temas. Para estilizar, o editor de temas usa um formulário adaptativo pronto para uso fornecido com o AEM Forms.
 
    Para obter informações sobre como usar a interface do editor de temas, consulte [Sobre o editor](/help/forms/using/themes.md#aboutthethemeeditor)de temas.
 
-1. Toque em Opções **de** tema Opções ![de](assets/theme-options.png) tema **>** Configurar. No campo **Visualizar formulário** , selecione o formulário adaptável **Shipping-address-add-update-form** , toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)e em **Salvar**. Agora, o editor de temas está configurado para usar seu próprio formulário adaptativo em vez do formulário adaptativo padrão. Toque em **Cancelar** para retornar ao editor de temas.
+1. Toque em Opções **de** tema Opções ![de](assets/theme-options.png) tema **>** Configurar. No campo Formulário **de** Pré-visualização, selecione o formulário adaptável **Shipping-address-add-update-form** , toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)e em **Salvar**. Agora, o editor de temas está configurado para usar seu próprio formulário adaptativo em vez do formulário adaptativo padrão. Toque em **Cancelar** para retornar ao editor de temas.
 
    ![tema personalizado](assets/custom-theme.png)
 
-   **** Figura: Editor de *temas com o formulário adaptável de entrega-address-add-update-form*
+   **Figura:** Editor de *temas com o formulário adaptável de entrega-address-add-update-form*
 
    ![criar um tema](assets/create-a-theme.png)
 
-   **** Figura: Formulário *adaptável com o formulário padrão*
+   **Figura:** Formulário *adaptável com o formulário padrão*
 
 ### Cabeçalho e rodapé de estilo {#style-header-and-footer}
 
 O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um formulário adaptável. Geralmente, o cabeçalho contém o logotipo e o nome da organização, o rodapé contém informações de direitos autorais e permanecem idênticos em várias formas de uma organização. Para estilizar o cabeçalho e o rodapé do formulário adaptável de formulário de entrega-address-add-update-form:
 
-1. Navegue pela opção **Cabeçalho** > **Texto** no painel Seletores. O painel Seletores fica à esquerda do editor de temas. Se o painel não estiver visível, toque em ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/toggle-side-panel.png) Alternar painel lateral.
+1. Navegue pela opção **Cabeçalho** > **Texto** no painel Seletores. O painel Seletores fica à esquerda do editor de temas. Se o painel não estiver visível, toque em ![](assets/toggle-side-panel.png) Alternar painel lateral.
 
 1. Defina as seguintes propriedades no acordeão de **texto** e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -130,14 +130,14 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
    | Cor da fonte | FFFFFF |
    | Tamanho da Fonte | 54px |
 
-1. Toque no widget de cabeçalho e toque em **Cabeçalho**. As opções para estilo do widget Cabeçalho são exibidas à esquerda. Expanda a opção **Dimensões e posição** , defina a **Altura** como `120px`e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Toque no widget de cabeçalho e toque em **Cabeçalho**. As opções para estilizar o widget Cabeçalho são exibidas à esquerda. Expanda a opção **Dimensões e posição** , defina a **Altura** como `120px`e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expanda a opção Plano de fundo do widget de cabeçalho e defina a Cor **de** plano de fundo como `F6921E.`
 
    Passe o mouse sobre **Imagem e gradiente** > **+ Adicionar**, toque em **Imagem**. Defina as seguintes propriedades e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propriedade | Valor |
    |---|---|
-   | imagem | Carregue o header-style.png. A imagem foi baixada na seção [Antes de iniciar](/help/forms/using/style-your-adaptive-form.md#before-you-start) . |
+   | imagem | Carregue o header-style.png. A imagem foi baixada na seção [Antes do start](/help/forms/using/style-your-adaptive-form.md#before-you-start) . |
    | Posição | Parte Inferior Direita |
    | Lado a lado | Sem Repetição |
 
@@ -156,7 +156,7 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
      <li>Parte superior: 1,5rem</li> 
      <li>Parte inferior: -35 px</li> 
      <li>Esquerda: 1rem<strong><br /></strong></li> 
-    </ul> <p><strong></strong> Dica: Toque no ícone de <img src="assets/link.png"> link para fornecer um valor diferente para cada campo.<br /> </p> </td> 
+    </ul> <p><strong>Dica:</strong> Toque no ícone de <img src="assets/link.png"> link para fornecer um valor diferente para cada campo.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Altura</td> 
@@ -227,7 +227,7 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
  </tbody> 
 </table>
 
-1. Toque na área vazia acima do campo ID do cliente e toque em Contêiner **do painel** responsivo. Defina **Background** > **Background Color** como F1F2F2. Toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Toque na área vazia acima do campo ID do cliente e toque em Container **do painel** responsivo. Defina **Background** > **Background Color** como F1F2F2. Toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![](do-not-localize/responsive-panel-container.png)
 
@@ -303,7 +303,7 @@ Alguns estilos se aplicam somente a um componente específico. Esses componentes
    | Flutuar | À esquerda |
    | Largura | 10% |
 
-1. Toque na opção Prova **de endereço aprovada pelo** Governo e toque em ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Defina as seguintes propriedades:
+1. Toque na opção prova **de endereço aprovada pelo** Governo e toque em ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Defina as seguintes propriedades:
 
 <table> 
  <tbody> 
@@ -432,22 +432,22 @@ Alguns estilos se aplicam somente a um componente específico. Esses componentes
 
 ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Etapa 5:Seção de bônus: Usar fontes da Web em um tema personalizado {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Etapa 5: Seção de bônus: Usar fontes da Web em um tema personalizado {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
-É possível usar várias fontes para criar um formulário adaptável. Nem todos os dispositivos nos quais o formulário adaptativo é exibido possuem as fontes usadas para projetar o formulário adaptável. Você pode usar um serviço de fonte da Web para fornecer as fontes necessárias ao dispositivo de destino.
+É possível usar várias fontes para criar um formulário adaptável. Nem todos os dispositivos nos quais o formulário adaptativo é exibido podem ter as fontes usadas para projetar o formulário adaptável. Você pode usar um serviço de fontes da Web para fornecer as fontes necessárias ao dispositivo de público alvo.
 
 O Adobe Typekit é um serviço de fontes da Web. Você pode configurar e usar o serviço com formulários adaptáveis. Para usar o Adobe Typekit em um formulário adaptável:
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit agora é chamado Adobe Fonts e está incluído na Creative Cloud e outras assinaturas. [Saiba mais](https://fonts.adobe.com/).
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit agora é chamado Adobe Fonts e está incluído na Creative Cloud e outras subscrições. [Saiba mais](https://fonts.adobe.com/).
 
 1. Crie uma conta do [Adobe Typekit](https://typekit.com/) , crie um kit, adicione fontes Myriad Pro ao kit, publique o kit e obtenha a ID do Kit. É necessário usar fontes do Adobe Typekit (fontes da Web) em um formulário adaptável.
 1. No servidor AEM Forms, navegue até ![adobeexperience](assets/adobeexperiencemanager.png) Manager **>** Ferramentas **** martelo ![>](assets/hammer.png) Implantação **** ****> Serviços daCloud. Na página Serviços em nuvem, navegue até Serviços **de** terceiros > **Typekit** e clique em **Configurar** agora em Typekit. Se uma configuração já estiver disponível, clique no botão + para criar uma nova instância.
 
    Na caixa de diálogo Criar configuração, especifique um **Título** para a configuração e clique em **Criar**. Você é redirecionado para a página de configuração. Na caixa de diálogo Editar componente que é exibida, forneça a ID **do** Kit e clique em **OK**.
 
-1. Configure seu tema para usar a configuração TypeKit. Na instância do autor, abra Tema **** global no editor de temas. No editor de temas, navegue até Opções de temas Opções de ![tema](assets/theme-options.png) > Configurar. No campo Configuração **do** Typekit, selecione o kit e clique em **Salvar**.
+1. Configure seu tema para usar a configuração do TypeKit. Na instância do autor, abra Tema **** global no editor de temas. No editor de temas, navegue até Opções de temas Opções de ![tema opções](assets/theme-options.png) > Configurar. No campo Configuração **do** Typekit, selecione o kit e clique em **Salvar**.
 
    As fontes adicionadas ao Typekit estão disponíveis para seleção na tabela **Texto** de todos os componentes.
 
