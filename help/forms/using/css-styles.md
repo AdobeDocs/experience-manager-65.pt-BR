@@ -1,6 +1,6 @@
 ---
-title: Criar estilos CSS para formulários HTML5
-seo-title: Criar estilos CSS para formulários HTML5
+title: Criação de estilos CSS para formulários HTML5
+seo-title: Criação de estilos CSS para formulários HTML5
 description: Saiba como alterar a aparência de formulários HTML5 modificando a classe CSS associada ao elemento de formulário HTML.
 seo-description: Saiba como alterar a aparência de formulários HTML5 modificando a classe CSS associada ao elemento de formulário HTML.
 uuid: 43c689b4-243c-43de-a8be-1eef10d75295
@@ -10,12 +10,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-# Criar estilos CSS para formulários HTML5 {#creating-css-styles-for-html-forms}
+# Criação de estilos CSS para formulários HTML5 {#creating-css-styles-for-html-forms}
 
 A execução HTML5 de um modelo de formulário baseado em XFA consiste em vários elementos HTML. Esses elementos são organizados em uma ordem. Cada elemento tem classes CSS bem definidas. Você pode usar essa classe CSS para selecionar e alterar a aparência de um elemento.
 
@@ -193,7 +193,7 @@ Cada campo tem um widget associado que representa o elemento da interface do usu
   </tr>
   <tr>
    <td>PasswordField<br type="_moz" /> </td>
-   <td>senha<br type="_moz" /> </td>
+   <td>passwordfield<br type="_moz" /> </td>
    <td>defaultWidget<br type="_moz" /> </td>
    <td>passwordfieldwidget<br type="_moz" /> </td>
    <td>tipo de entrada=senha<br type="_moz" /> </td>
@@ -224,7 +224,7 @@ Cada campo tem um widget associado que representa o elemento da interface do usu
 
 ## Classes CSS para diferentes Elementos de desenho {#css-classes-for-different-draw-elements}
 
-É possível inserir elementos de desenho estáticos, como texto e imagens, usando o AEM Forms Designer. Para cada elemento draw, uma classe CSS separada é associada a esse elemento. A lista de classes CSS para elementos draw está listada abaixo. Cada elemento draw tem uma classe draw associada a ele.
+É possível inserir elementos de desenho estáticos, como texto e imagens, usando o AEM Forms Designer. Para cada elemento draw, uma classe CSS separada é associada a esse elemento. A lista das classes CSS para elementos draw está listada abaixo. Cada elemento draw tem uma classe draw associada a ele.
 
 | **Tipo de desenho** | **Classe CSS** |
 |---|---|
@@ -248,5 +248,3 @@ Quando a validação de um campo resulta em um aviso, um aviso em linha é exibi
 `Styling Fields with Validation Errors`
 
 Quando a validação de um campo falha, o estilo do widget muda. Essa alteração de estilo é feita aplicando um **widgetError** de classe CSS no componente do widget. Para modificar o estilo padrão, substitua a classe **widgetError** .
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
