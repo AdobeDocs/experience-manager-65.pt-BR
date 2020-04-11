@@ -1,8 +1,8 @@
 ---
 title: Depuração de formulários HTML5
 seo-title: Depuração de formulários HTML5
-description: As etapas da lista de documentos para solucionar vários problemas conhecidos.
-seo-description: As etapas da lista de documentos para solucionar vários problemas conhecidos.
+description: As etapas da lista do documento para solucionar vários problemas conhecidos.
+seo-description: As etapas da lista do documento para solucionar vários problemas conhecidos.
 uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -75,8 +75,8 @@ Verifique os seguintes parâmetros:
 
 ## Problema: Renderizações de formulário sem estilos {#problem-form-renders-without-styles}
 
-1. No seu navegador, abra Ferramentas **do** desenvolvedor. Verifique se profile.css está disponível.
-1. Se o arquivo profile.css não estiver disponível, faça logon no CRX DE em https://&lt;servidor>:&lt;porta>/crx/de.
+1. No seu navegador, abra Ferramentas **do** desenvolvedor. Verifique se perfil.css está disponível.
+1. Se o arquivo perfil.css não estiver disponível, faça logon no CRX DE em https://&lt;servidor>:&lt;porta>/crx/de.
 1. Na hierarquia de pastas à esquerda, navegue até /etc/clientlibs/fd/xfaforms/. Abra os arquivos css.txt listados nas pastas.
 
    * o perfil do visitante
@@ -85,7 +85,7 @@ Verifique os seguintes parâmetros:
    * toolbar
    * xfalib
 
-1. Verifique se os arquivos mencionados no css.txt estão presentes no CRX DE lite em /libs/fd/xfaforms/clientlibs/xfalib/css.
+1. Verifique se os arquivos mencionados dentro do css.txt estão presentes no CRX DE lite em /libs/fd/xfaforms/clientlibs/xfalib/css.
 
    ```css
    #base=css
@@ -100,7 +100,7 @@ Verifique os seguintes parâmetros:
 
 ### Problema: Erro inesperado encontrado {#problem-unexpected-error-encountered}
 
-1. No URL do formulário, adicione um parâmetro de consulta debugClientLibs e defina seu valor como true (por exemplo: https://&lt;servidor>:&lt;porta>/content/xfaforms/profiles/test.html?contentRoot=&lt;algum caminho>&amp;template=&lt;nome do arquivo xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. No URL do formulário, adicione um parâmetro de query debugClientLibs e defina seu valor como true (por exemplo: https://&lt;servidor>:&lt;porta>/content/xfaforms/profiles/test.html?contentRoot=&lt;algum caminho>&amp;template=&lt;nome do arquivo xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. No navegador de desktop como o chrome, vá até Developer Tools -> Console.
 1. Abra os registros para identificar o tipo de erro. Para obter informações detalhadas sobre registros, consulte [logs para formulários](/help/forms/using/enable-logs.md)HTML5.
 1. Vá para Ferramentas do desenvolvedor -> Console. Use o rastreamento de pilha para localizar o código que está causando o erro. Depurar o erro para resolver o problema.
@@ -118,7 +118,7 @@ Verifique os seguintes parâmetros:
 
 ## Problema: Mensagens de erro localizadas não são exibidas {#problem-localized-error-messages-do-not-display}
 
-1. Renderize o formulário com o parâmetro de consulta adicional **debugClientLibs=true** no navegador da área de trabalho e vá para Ferramentas do desenvolvedor -> Recursos e verifique o arquivo I18N.css.
+1. Renderize o formulário com o parâmetro de query adicional **debugClientLibs=true** no navegador de desktop e vá para Ferramentas do desenvolvedor -> Recursos e verifique o arquivo I18N.css.
 1. Se o arquivo não estiver disponível, faça logon no CRX DE em https://&lt;servidor>:&lt;porta>/crx/de.
 1. Na hierarquia de pastas à esquerda, navegue até /libs/fd/xfaforms/clientlibs/I18N e verifique se os seguintes arquivos e pastas existem:
 
@@ -179,5 +179,3 @@ Texto da etapa
 1. No navegador do desktop, vá para Ferramentas do desenvolvedor -> Recursos.
 
    Verifique no lado esquerdo em Quadros se essa imagem é exibida.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
