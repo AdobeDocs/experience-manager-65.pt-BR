@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -188,7 +188,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
    * from `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
-1. Agora, modifique o valor da propriedade `sling:message` do nó (na pasta de código de localidade desejada) para o qual você deseja alterar o texto. A tradução é feita por meio da chave mencionada no valor da `sling:key` propriedade do nó.
+1. Agora, modifique o valor da propriedade `sling:message` do nó (sob a pasta de código de localidade desejada) para o qual você deseja alterar o texto. A tradução é feita por meio da chave mencionada no valor da `sling:key` propriedade do nó.
 1. Para adicionar um novo par de valores chave, execute as seguintes ações. Verifique um exemplo na captura de tela a seguir.
 
    1. Crie um nó do tipo `sling:MessageEntry`, ou copie um nó existente e renomeie-o em todas as pastas de localidade.
@@ -268,7 +268,7 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 1. Adicione novas imagens em `/apps/livecycle/core/content/login`. Para adicionar imagem:
 
    1. Instale o cliente WebDAV.
-   1. Navegue até a `/apps/livecycle/core/content/login` pasta, usando o cliente webDAV.  Para obter mais informações, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navegue até a `/apps/livecycle/core/content/login` pasta, usando o cliente webDAV. Para obter mais informações, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    1. Adicione novas imagens.
 
@@ -296,5 +296,3 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
    
    <div class="newLginContainerBkg">
    ```
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
