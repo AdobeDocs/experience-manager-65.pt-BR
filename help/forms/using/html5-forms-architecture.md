@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -185,4 +185,3 @@ Como descrito acima, o renderizador de perfis JSP chama o Forms Service por meio
 
 Os formulários HTML5 permitem que os desenvolvedores criem o Perfil e o Perfil Renderer para personalizar a aparência dos formulários. Por exemplo, formulários HTML permitem que desenvolvedores integrem formulários em um painel ou seção &lt;div> de um portal HTML existente.
 Para obter mais detalhes sobre como criar perfis personalizados, consulte [Criação de um Perfil](/help/forms/using/custom-profile.md)personalizado.
-[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
