@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -296,7 +296,7 @@ O botão mais na biblioteca de ativos permite salvar permanentemente o estilo co
 
 Quando você fornece um nome personalizado para um estilo, o estilo é vinculado a um tema e não está mais disponível para outros temas. Para excluir um estilo salvo:
 
-1. Na barra de ferramentas CANVAS, clique em Opções **de** tema ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png) > **Gerenciar estilos**.
+1. Na barra de ferramentas CANVAS, clique em Opções **de** tema ![](assets/theme-options.png) > **Gerenciar estilos**.
 1. Na caixa de diálogo Gerenciar estilos, selecione um estilo salvo e clique em **Excluir**.
 
    ![Excluir o estilo salvo](assets/manage-styles.png)
