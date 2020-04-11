@@ -1,6 +1,6 @@
 ---
-title: Configurar ambiente para o aplicativo AEM Forms
-seo-title: Configurar ambiente para o aplicativo AEM Forms
+title: Configurar o ambiente para o aplicativo AEM Forms
+seo-title: Configurar o ambiente para o aplicativo AEM Forms
 description: Hardware, software e licenças para criar e implantar o aplicativo AEM Forms.
 seo-description: Hardware, software e licenças para criar e implantar o aplicativo AEM Forms.
 uuid: 4123a6b7-5766-476c-9afb-f57029b148ad
@@ -11,12 +11,12 @@ topic-tags: forms-app
 discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-# Configurar ambiente para o aplicativo AEM Forms{#set-up-environment-for-aem-forms-app}
+# Configurar o ambiente para o aplicativo AEM Forms{#set-up-environment-for-aem-forms-app}
 
 Você precisa do seguinte hardware, software e licenças para criar e implantar o aplicativo AEM Forms:
 
@@ -31,18 +31,16 @@ Você precisa do seguinte hardware, software e licenças para criar e implantar 
 * Apple Mac baseado em Intel executando Mac OS X 10.9.5 ou superior
 * iOS SDK 8.4 ou superior
 * Versão Xcode: Xcode 6.4 para OS X ou superior
-* Associação ao programa iOS Developer Enterprise
+* Associação ao programa corporativo para desenvolvedores iOS
 * Certificado empresarial para distribuição de aplicativos iOS internos
 * Apple iPad com iOS 8.4 ou posterior
 
 ## Para dispositivos Android {#for-android-devices}
 
 * Android Development Toolkit (pacote ADT) que pode ser baixado de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
-* Se o ambiente estiver configurado em um sistema MAC, o ADT deve ser instalado na pasta Aplicativos.
+* Se o ambiente estiver configurado em um sistema MAC, o ADT deverá ser instalado na pasta Aplicativos.
 * Se o ADT estiver instalado em qualquer outro local no MAC, ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT precisa ser atualizado no `local.properties` arquivo disponível na `src\android` pasta no arquivo de origem extraído `mobileworkspace-src.zip`. Neste arquivo, aponte a `sdk.dir` variável para o local do ADT SDK em sua área de trabalho.
 
 >[!NOTE]
 >
->O adobe-lc-mobileworkspace-src.zip contém o PhoneGap SDK 5.0. Verifique se o SDK do PhoneGap não está pré-instalado.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+>O adobe-lc-mobileworkspace-src.zip contém o PhoneGap SDK 5.0. Certifique-se de que o SDK do PhoneGap não esteja pré-instalado.
