@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -74,7 +74,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
       }
       ```
 
-   1. Abra o evento de apresentação de formulário para edição. Adicione o script a seguir ao evento para remover a instância oculta do script antes de editar. Impede o envio de dados do Subformulário oculto no envio.
+   1. Abra o evento de formulário de pré-envio para edição. Adicione o script a seguir ao evento para remover a instância oculta do script antes de editar. Impede o envio de dados do Subformulário oculto no envio.
 
       ```
       if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
@@ -82,21 +82,21 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
       }
       ```
 
-1. Existem limitações em relação ao uso de subformulários ocultos?
+1. Há alguma limitação em relação ao uso de subformulários ocultos?
 
    Resposta: Um subformulário oculto com hierarquia complexa que é dividida entre páginas causa problemas de layout. Uma solução alternativa é marcar o subformulário inicialmente visível e ocultá-lo em um script de inicialização com base em alguma lógica ou dados.
 
 1. Por que alguns textos estão truncados ou são exibidos incorretamente em HTML5?
 
-   Resposta: Quando um elemento de texto Desenhar ou Legenda não tem espaço suficiente para exibir o conteúdo, o texto aparece truncado na execução do formulário móvel. Essa truncagem também é visível na visualização Design do AEM Forms Designer. Embora esse truncamento possa ser manipulado nos PDFs, ele não pode ser manipulado nos formulários HTML5. Para evitar o problema, forneça espaço suficiente para Desenhar ou Legendar texto, de modo que ele não trunque no modo de design do AEM Forms Designer.
+   Resposta: Quando um elemento de texto Desenhar ou Legenda não tem espaço suficiente para exibir o conteúdo, o texto aparece truncado na execução do formulário móvel. Essa truncagem também está visível na visualização Design do AEM Forms Designer. Embora esse truncamento possa ser manipulado nos PDFs, ele não pode ser manipulado nos formulários HTML5. Para evitar o problema, forneça espaço suficiente para Desenhar ou Legendar texto, de modo que ele não trunque no modo de design do AEM Forms Designer.
 
 1. Estou observando problemas de layout relacionados a conteúdo ausente ou sobreposto. Qual é a razão?
 
-   Resposta: Se houver um elemento Desenhar texto ou Desenhar imagem junto com outro elemento sobreposto na mesma posição (por exemplo, um retângulo), o conteúdo Desenhar texto não estará visível se for exibido posteriormente na ordem do documento (na exibição Hierarquia do AEM Forms Designer). O PDF oferece suporte a camadas transparentes, mas o HTML/navegador não oferece suporte a camadas transparentes.
+   Resposta: Se houver um elemento Desenhar texto ou Desenhar imagem junto com outro elemento sobreposto na mesma posição (digamos um retângulo), o conteúdo Desenhar texto não estará visível se for exibido posteriormente na ordem de documento (na visualização Hierarquia do AEM Forms Designer). O PDF oferece suporte a camadas transparentes, mas o HTML/navegador não oferece suporte a camadas transparentes.
 
 1. Por que algumas fontes são exibidas no formulário HTML diferentes daquelas usadas ao projetar o formulário?
 
-   Resposta: Os formulários HTML5 não incorporam fontes (ao contrário dos formulários PDF nos quais as fontes são incorporadas no formulário). Para que a versão HTML do formulário seja renderizada como esperado, verifique se as fontes especificadas no XDP estão disponíveis no servidor e no computador cliente. Se as fontes necessárias não estiverem disponíveis no servidor, serão usadas as fontes fallback. Além disso, se você usar fontes no Modelo de formulário que não estão disponíveis no dispositivo cliente, as fontes padrão do navegador serão usadas para renderizar o texto.
+   Resposta: Os formulários HTML5 não incorporam fontes (ao contrário dos formulários PDF nos quais as fontes são incorporadas dentro do formulário). Para que a versão HTML do formulário seja renderizada como esperado, verifique se as fontes especificadas no XDP estão disponíveis no servidor e no computador cliente. Se as fontes necessárias não estiverem disponíveis no servidor, serão usadas as fontes fallback. Além disso, se você usar fontes no Modelo de formulário que não estão disponíveis no dispositivo cliente, as fontes padrão do navegador serão usadas para renderizar o texto.
 
 1. Os atributos vAlign e hAlign são suportados em formulários HTML?
 
@@ -132,12 +132,12 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
    Resposta: Sim, tabelas acessíveis têm as seguintes limitações:
 
    * Tabelas aninhadas e subformulários dentro de uma tabela não são suportados.
-   * Os cabeçalhos só são suportados para as colunas da linha superior ou esquerda da tabela. Os cabeçalhos não são suportados para elementos de tabela média. É possível aplicar cabeçalhos a vários cabeçalhos de linha e coluna, desde que todas as linhas e colunas sejam acompanhadas da linha superior ou da coluna mais à esquerda da tabela.
+   * Os cabeçalhos só são suportados para as colunas da linha superior ou esquerda da tabela. Os cabeçalhos não são suportados para elementos de tabela intermediária. É possível aplicar cabeçalhos a vários cabeçalhos de linha e coluna, desde que todas as linhas e colunas sejam acompanhadas da linha superior ou da coluna mais à esquerda da tabela.
    * `Rowspan`e `colspan`de um local aleatório dentro da tabela não é suportado.
 
    * Não é possível adicionar ou remover dinamicamente a instância de linhas que contêm elementos com valor de expansão de linha maior que 1.
 
-1. Qual é a ordem de leitura de dica de ferramenta e legenda para leitores de tela?
+1. Qual é a ordem de leitura da dica de ferramenta e da legenda para leitores de tela?
 
    * Quando a legenda e a dica de ferramenta estão presentes, a única legenda é lida. Se a legenda não estiver disponível, a dica de ferramenta será lida. Também é possível especificar a precedência para leitura em um XDP usando o designer de formulários
    * Quando você passa o mouse sobre um elemento, a dica de ferramenta é exibida. Se a dica de ferramenta não estiver disponível, o texto de fala será exibido. Se o texto de fala não estiver disponível, o nome do campo será exibido.
@@ -177,7 +177,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Há alguma limitação no uso do formCalc?
 
-   Resposta: Atualmente, apenas um subconjunto dos scripts formCalc é implementado. Para obter informações detalhadas, consulte Suporte a [scripts](/help/forms/using/scripting-support.md).
+   Resposta: No momento, apenas um subconjunto dos scripts formCalc é implementado. Para obter informações detalhadas, consulte Suporte a [scripts](/help/forms/using/scripting-support.md).
 
 1. Há alguma convenção de nomenclatura recomendada e há alguma palavra-chave reservada para evitar?
 
@@ -194,20 +194,18 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    1. Abra o CRXde lite e navegue até o `/content/xfaforms/profiles/default` nó.
    1. Adicione uma propriedade `mfDataDependentFloatingField`do tipo String e defina o valor da propriedade como `true`.
-   1. Clique em **Salvar tudo**. Agora os campos flutuantes são ativados para os formulários HTML usando o perfil de renderização atualizado.
+   1. Clique em **Salvar tudo**. Agora, os campos flutuantes são ativados para os Formulários HTML usando o perfil de renderização atualizado.
 
       >[!NOTE]
       >
       >Para ativar campos flutuantes para um formulário específico sem atualizar o perfil de renderização, passe a propriedade mfDataDependentFloatingField=true como um parâmetro de URL.
 
-1. Os formulários HTML5 executam o script de inicialização e o evento form ready várias vezes?
+1. Os formulários HTML5 executam o script de inicialização e o evento pronto para o formulário várias vezes?
 
-   Sim, os scripts de inicialização e os eventos prontos para o formulário são executados várias vezes, pelo menos uma vez no servidor e uma vez no cliente. É sugerido gravar scripts como initialize ou form:ready com base em alguma lógica comercial (dados de formulário ou de campo) para que a ação seja executada com base no estado dos dados e ID (se os dados forem os mesmos).
+   Sim, os scripts de inicialização e os eventos prontos para o formulário são executados várias vezes, pelo menos uma vez no servidor e uma vez no cliente. Sugere-se gravar scripts como eventos initialize ou form:ready com base em alguma lógica de negócios (dados de formulário ou de campo) para que a ação seja executada com base no estado dos dados e dos dados (se os dados forem os mesmos).
 
 ### Criando XDP {#designing-xdp}
 
 1. Existem palavras-chave reservadas em formulários HTML5?
 
-   Resposta:Todas as APIs de formulários HTML5 são palavras-chave reservadas. Para APIs/funções personalizadas, use um nome que não seja idêntico às APIs [de formulários](/help/forms/using/scripting-support.md)HTML5. Além das palavras-chave reservadas, se você usar nomes de objetos que comecem com um sublinhado (_), é recomendável adicionar um prefixo exclusivo após o sublinhado. Adicionar um prefixo ajuda a evitar qualquer possível conflito com as APIs internas de formulários HTML5. Por exemplo, `_fpField1`
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+   Resposta: Todas as APIs de formulários HTML5 são palavras-chave reservadas. Para APIs/funções personalizadas, use um nome que não seja idêntico às APIs [de formulários](/help/forms/using/scripting-support.md)HTML5. Além das palavras-chave reservadas, se você usar nomes de objetos que comecem com um sublinhado (_), é recomendável adicionar um prefixo exclusivo após o sublinhado. Adicionar um prefixo ajuda a evitar qualquer possível conflito com as APIs internas de formulários HTML5. Por exemplo, `_fpField1`
