@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -21,7 +21,7 @@ Você pode modificar o esquema de cores das partes da interface do usuário da �
 
 ## Top navigation bar {#top-navigation-bar}
 
-### Uso da imagem de fundo {#using-background-image}
+### Uso da imagem de plano de fundo {#using-background-image}
 
 Para atualizar a barra de navegação na parte superior da área de trabalho do AEM Forms.
 
@@ -51,12 +51,10 @@ Para atualizar a barra de navegação na parte superior da área de trabalho do 
    }
    ```
 
-## Componente da categoria {#category-component}
+## componente Categoria {#category-component}
 
-O componente Categoria exibe as várias categorias de suas tarefas no painel esquerdo. Para alterar sua cor, defina a cor do plano de fundo no `.category` elemento do arquivo CSS.
+O componente de Categoria exibe as várias categorias de suas tarefas no painel esquerdo. Para alterar sua cor, defina a cor do plano de fundo no `.category` elemento do arquivo CSS.
 
-## Componente de tarefa {#task-component}
+## componente Tarefa {#task-component}
 
-As tarefas são exibidas no painel do meio chamado Componente TaskList. Para alterar sua cor, modifique o estilo associado ao seletor .task na folha de estilos.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+As Tarefas são exibidas no painel do meio chamado Componente TaskList. Para alterar sua cor, modifique o estilo associado ao seletor .tarefa na folha de estilos.
