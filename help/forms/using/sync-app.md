@@ -11,7 +11,7 @@ topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 
 ## Sincronizar o aplicativo {#synchronizing-the-app-1}
 
-Os formulários no aplicativo são baixados do servidor de formulários AEM. Os formulários são baixados nas guias Tarefas e Formulários. Os rascunhos criados a partir de formulários são baixados na guia rascunhos e os rascunhos criados a partir de tarefas são baixados na guia tarefas. Para um formulário independente no servidor OSGi, os formulários e rascunhos são baixados nas guias Formulários e Rascunho, respectivamente.
+Os formulários em seu aplicativo são baixados do servidor de formulários AEM. Os formulários são baixados nas guias Tarefa e Forms. Os rascunhos criados a partir de formulários são baixados na guia rascunhos e os rascunhos criados a partir do tarefa são baixados na guia tarefa. Para um formulário independente no servidor OSGi, os formulários e rascunhos são baixados nas guias Formulários e Rascunho, respectivamente.
 
 Quando você preenche e envia um formulário, o formulário é carregado de volta ao servidor do AEM Forms instantaneamente se o aplicativo estiver online. Os formulários são obtidos do servidor quando o aplicativo é sincronizado. No entanto, os rascunhos são sincronizados com o servidor instantaneamente se o aplicativo estiver online.
 
@@ -45,6 +45,4 @@ Toque no botão Sincronizar aplicativo ![de](assets/sync-app.png) sincronizaçã
 * A lógica principal de enviar os dados do aplicativo offline para o servidor do AEM Forms está incluída em runtime/offline/util/offline.js.
 * Na função .js, a chamada para a função processOfflineSubmitedSavedTasks(...) envia as tarefas salvas / enviadas ao servidor. Também lida com erros ou conflitos no processo de sincronização. Se o envio de uma tarefa falhar, a tarefa no aplicativo será marcada como com falha. Além disso, a tarefa permanece em sua Caixa de saída.
 * As funções syncSubmitedTask() e syncSavedTask() executam operações em tarefas individuais.
-* A chamada para a função processOfflineSubmitedSavedTasks() é iniciada pelo componente da lista de tarefas depois que um usuário seleciona para sincronizar o estado offline com o servidor ou uma sincronização automática pelo thread em segundo plano.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
+* A chamada para a função processOfflineSubmitedSavedTasks() é iniciada pelo componente de lista depois que um usuário seleciona para sincronizar o estado offline com o servidor ou uma sincronização automática pelo thread em segundo plano.
