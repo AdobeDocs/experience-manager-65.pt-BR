@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -23,7 +23,7 @@ Este artigo destina-se a desenvolvedores com conhecimento suficiente dos widgets
 A estrutura de aparência depende de várias opções, eventos (acionadores) e funções para capturar as interações do usuário com o formulário e responde às alterações no modelo para informar o usuário final. Além disso:
 
 * A estrutura fornece um conjunto de opções para a aparência de um campo. Essas opções são pares de valores chave e divididas em duas categorias: opções comuns e opções específicas de tipo de campo.
-* A aparência, como parte do contrato, aciona um conjunto de eventos, como entrada e saída.
+* A aparência, como parte do contrato, aciona um conjunto de eventos como entrada e saída.
 * A aparência é necessária para implementar um conjunto de funções. Algumas funções são comuns, enquanto outras são específicas para funções de tipo de campo.
 
 ## Opções comuns {#common-options}
@@ -38,7 +38,7 @@ A seguir estão as opções globais definidas. Essas opções estão disponívei
   </tr>
   <tr>
    <td>name</td>
-   <td>Um identificador usado para especificar esse objeto ou evento em expressões de script. Por exemplo, essa propriedade especifica o nome do aplicativo host.</td>
+   <td>Um identificador usado para especificar esse objeto ou evento nas expressões de script. Por exemplo, essa propriedade especifica o nome do aplicativo host.</td>
   </tr>
   <tr>
    <td>valor</td>
@@ -70,7 +70,7 @@ A seguir estão as opções globais definidas. Essas opções estão disponívei
   </tr>
   <tr>
    <td>access</td>
-   <td>Controles usados para acessar o conteúdo de um objeto de contêiner, como um subformulário.</td>
+   <td>Controles usados para acessar o conteúdo de um objeto de container, como um subformulário.</td>
   </tr>
   <tr>
    <td>paraStyles</td>
@@ -98,20 +98,20 @@ Para interagir com a estrutura de formulários, um widget aciona alguns eventos 
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>XFA_ENTER_EVENT</td>
-   <td>Esse evento é acionado sempre que o campo está em foco. Isso permite que o script "enter" seja executado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>XFA_ENTER_EVENTO</td>
+   <td>Esse evento é acionado sempre que o campo está em foco. Isso permite que o script "enter" seja executado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENTO)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_EXIT_EVENT</td>
-   <td>Esse evento é acionado sempre que o usuário sai do campo. Permite que o mecanismo defina o valor do campo e execute seu script "exit". A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>XFA_EXIT_EVENTO</td>
+   <td>Esse evento é acionado sempre que o usuário sai do campo. Permite que o mecanismo defina o valor do campo e execute seu script "exit". A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENTO)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_CHANGE_EVENT</td>
-   <td>Esse evento é acionado para permitir que o mecanismo execute o script "change" gravado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>XFA_CHANGE_EVENTO</td>
+   <td>Esse evento é acionado para permitir que o mecanismo execute o script "change" gravado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENTO)<br /> </td>
   </tr>
   <tr>
-   <td>XFA_CLICK_EVENT</td>
-   <td>Esse evento é acionado sempre que o campo é clicado. permite que o mecanismo execute o script "click" gravado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>XFA_CLICK_EVENTO</td>
+   <td>Esse evento é acionado sempre que o campo é clicado. permite que o mecanismo execute o script "click" gravado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENTO)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -132,11 +132,11 @@ A estrutura de aparência chama algumas funções do widget que são implementad
   </tr>
   <tr>
    <td>clique em: function()</td>
-   <td>Coloca o foco no campo e chama XFA_CLICK_EVENT.</td>
+   <td>Coloca o foco no campo e chama XFA_CLICK_EVENTO.</td>
   </tr>
   <tr>
    <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: string </em>representando o erro<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Observação</strong>: Aplicável somente para formulários HTML5.</p> </td>
-   <td>Envia mensagem de erro e tipo de erro ao widget. O widget exibe o erro.</td>
+   <td>Envia mensagem de erro e tipo de erro para o widget. O widget exibe o erro.</td>
   </tr>
   <tr>
    <td><p>clearError: function()</p> <p><strong>Observação</strong>: Aplicável somente para formulários HTML5.</p> </td>
@@ -186,7 +186,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
   </tr>
   <tr>
    <td>items<br /> </td>
-   <td>Matriz de objetos a serem exibidos como opções. <br /> Cada objeto contém duas propriedades - salvar<br /> : valor a ser salvo, exibir: valor a ser exibido. <br /> </td>
+   <td>Matriz de objetos a serem exibidos como opções. Cada objeto contém duas propriedades - salvar<br /> : valor a ser salvo, exibir: valor a ser exibido.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>editável</p> <p><strong>Observação</strong>: Aplicável somente para formulários HTML5.<br /> </p> </td>
@@ -212,7 +212,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <th>Descrição</th>
   </tr>
   <tr>
-   <td><p><em> addItem: function(itemValues)<br /> itemValues: objeto que contém o valor de exibição e salvamento <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;salvar valor&gt;}</em></p> </td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: objeto que contém o valor de exibição e salvamento <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;salvar valor&gt;}</em></p> </td>
    <td>Adiciona um item à lista.</td>
   </tr>
   <tr>
@@ -267,5 +267,3 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
 | meses | Nomes de mês localizados para esse campo. |
 | zero | O texto localizado para o número 0. |
 | clearText | O texto localizado para o botão limpar. |
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
