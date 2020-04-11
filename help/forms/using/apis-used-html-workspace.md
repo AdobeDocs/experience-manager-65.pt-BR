@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -30,7 +30,7 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>getGroups</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getGroups</td>
-   <td>Pesquisa grupos. retorna uma lista de todos os grupos se nada for especificado, caso contrário retorna grupos com o nome especificado.</td>
+   <td>Pesquisa grupos. retorna uma lista de todos os grupos se nada for especificado, caso contrário, retorna grupos com o nome especificado.</td>
   </tr>
   <tr>
    <td>getUsersAndGroups</td>
@@ -48,19 +48,19 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>submitTask</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>submit</td>
-   <td>Ele envia o objeto de documento associado a uma tarefa (e o processo de envio por sua vez).</td>
+   <td>Ele submete o objeto de documento associado a uma tarefa (e, por sua vez, envia o processo).</td>
   </tr>
   <tr>
    <td>getRootEndpointCategories</td>
    <td>ProcessManagementStartpointService</td>
    <td>getRootEndpointCategories</td>
-   <td>Ele busca todas as categorias raiz presentes no servidor.</td>
+   <td>Ele obtém todas as categorias raiz presentes no servidor.</td>
   </tr>
   <tr>
    <td>getDirectChildCategories</td>
    <td>ProcessManagementStartpointService</td>
    <td>getDirectChildCategories2</td>
-   <td>Ele captura todos os filhos diretos de uma categoria.</td>
+   <td>Ele traz todas as crianças diretas para uma categoria.</td>
   </tr>
   <tr>
    <td>getAllStartpoints</td>
@@ -102,7 +102,7 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>submitWithData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithData</td>
-   <td>Ele envia os dados do formulário (transmitidos como sequência de caracteres) associados à tarefa usando a API de envio do TaskManager. É usado para formulários flexíveis que não chamam a API de envio do TaskManager.</td>
+   <td>Ele envia os dados do formulário (passados como sequência de caracteres) associados à tarefa usando a API de envio do TaskManager. É usado para formulários flexíveis que não chamam a API de envio do TaskManager.</td>
   </tr>
   <tr>
    <td>save</td>
@@ -114,19 +114,19 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>complete</td>
    <td>ProcessManagementTaskService</td>
    <td>complete</td>
-   <td>Ele conclui uma tarefa e a tarefa é passada para a próxima etapa de acordo com o design do processo.</td>
+   <td>Ele conclui uma tarefa e a tarefa é passada para a próxima etapa de acordo com o projeto do processo.</td>
   </tr>
   <tr>
    <td>getAttachment</td>
    <td>ProcessManagementTaskService</td>
    <td>getAttachment</td>
-   <td>Retorna o url de um anexo onde o anexo está disponível.</td>
+   <td>Retorna o url de um anexo no qual o anexo está disponível.</td>
   </tr>
   <tr>
    <td>getAllAttachments</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableAttachments</td>
-   <td>Ele obtém todos os anexos e observações de uma tarefa.</td>
+   <td>Ele obtém todos os anexos e anotações de uma tarefa.</td>
   </tr>
   <tr>
    <td>participação</td>
@@ -162,25 +162,25 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>bloqueio</td>
    <td>ProcessManagementTaskService</td>
    <td>bloqueio</td>
-   <td>Bloqueia uma tarefa e ela não pode ser reivindicada por outro usuário se compartilhada.</td>
+   <td>Bloqueia uma tarefa e a tarefa não pode ser reivindicada por outro usuário se compartilhada.</td>
   </tr>
   <tr>
    <td>rejeição</td>
    <td>ProcessManagementTaskService</td>
    <td>rejeição</td>
-   <td>Retorna a tarefa ao proprietário anterior da tarefa.</td>
+   <td>Retorna tarefa ao proprietário anterior da tarefa.</td>
   </tr>
   <tr>
    <td>abandono</td>
    <td>ProcessManagementTaskService</td>
    <td>abandono</td>
-   <td>Isso exclui uma tarefa.</td>
+   <td>Ela exclui uma tarefa.</td>
   </tr>
   <tr>
    <td>setVisibility</td>
    <td>ProcessManagementTaskService</td>
    <td>setVisibility</td>
-   <td>Ela define a visibilidade de uma tarefa. Se a visibilidade for definida como false, a tarefa não ficará visível para o usuário depois.</td>
+   <td>Ela define a visibilidade de uma tarefa. Se a visibilidade for definida como false, a tarefa não estará visível para o usuário depois.</td>
   </tr>
   <tr>
    <td>getUsers</td>
@@ -252,13 +252,13 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>getAllProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getAllProcesses</td>
-   <td>Ele retorna uma lista de todos os processos.</td>
+   <td>Retorna a lista de todos os processos.</td>
   </tr>
   <tr>
    <td>getParticipatedProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getParticipatedProcesses</td>
-   <td>Retorna a lista de todos os nomes de processos que participaram de usuários conectados.</td>
+   <td>Retorna a lista de todos os nomes de processos que tenham participado do usuário conectado.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
@@ -282,7 +282,7 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>getTasksForProcessInstance</td>
    <td>ProcessManagementQueryService</td>
    <td>getTasksForProcessInstance</td>
-   <td>Ele recebe todas as tarefas de uma instância do processo.</td>
+   <td>Ele obtém todas as tarefas para uma instância do processo.</td>
   </tr>
   <tr>
    <td>getAllSearchTemplates</td>
@@ -306,7 +306,7 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>Ele recebe todas as atribuições de uma tarefa. Por exemplo: - Se o usuário encaminha ou consulta uma tarefa a outro usuário, então é uma atribuição para uma tarefa.</td>
+   <td>Recebe todas as atribuições de uma tarefa. Por exemplo:- Se o usuário encaminha ou consulta uma tarefa a outro usuário, então é uma atribuição para uma tarefa.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -324,7 +324,7 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>Ele retorna todas as tarefas dos relatórios diretos do gerenciador conectado.</td>
+   <td>Ele retorna todas as tarefas de relatórios diretos do gerenciador conectado.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
@@ -336,13 +336,13 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
    <td>forwardTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>forwardTaskOfDirectReport</td>
-   <td>Ele encaminha uma tarefa de relatório direto para outro usuário.</td>
+   <td>Ele encaminha uma tarefa de um relatório direto para outro usuário.</td>
   </tr>
   <tr>
    <td>cancelTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>cancelTaskOfDirectReport</td>
-   <td>Retorna uma tarefa de um relatório direto para o usuário anterior.</td>
+   <td>Ele retorna uma tarefa de um relatório direto para o usuário anterior.</td>
   </tr>
   <tr>
    <td>getProperty</td>
@@ -400,6 +400,3 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
   </tr>
  </tbody>
 </table>
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
-
