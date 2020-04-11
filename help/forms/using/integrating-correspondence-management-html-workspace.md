@@ -9,7 +9,7 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -114,5 +114,3 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
    >[!NOTE]
    >
    >O botão Enviar não é ativado até que todas as variáveis necessárias na letra sejam preenchidas.
-
-[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
