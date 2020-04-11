@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -98,5 +98,3 @@ As etapas genéricas para executar qualquer personalização são:
 1. Clique em **[!UICONTROL Salvar tudo]**, limpar o cache e atualizar a área de trabalho do AEM Forms.
 
    Acesse o URL `https://'[server]:[port]'/lc/ws` e faça logon com as credenciais de administrador/senha. O navegador é redirecionado para `https://'[server]:[port]'/lc/apps/ws/index.html`.
-
-[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
