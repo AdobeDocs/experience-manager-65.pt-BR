@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -123,5 +123,3 @@ O relatório de Volume do fluxo de trabalho exibe o número de instâncias atual
    * **Atualizar**: Atualiza o relatório com os dados mais recentes no armazenamento
    * **Alterar cor** da legenda: Selecionar e alterar a cor da legenda do relatório
    * **Exportar para CSV**: Exportar e baixar os dados do relatório para um arquivo separado por vírgulas
-
-[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
