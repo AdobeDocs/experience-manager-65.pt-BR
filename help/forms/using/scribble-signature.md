@@ -11,7 +11,7 @@ topic-tags: designer
 discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -29,7 +29,7 @@ Os formulários HTML5 estão sendo cada vez mais usados em dispositivos de toque
 
    >[!NOTE]
    >
-   >As dimensões do campo selecionado no Forms Designer são refletidas quando o campo é renderizado. No entanto, a dimensão da caixa de assinatura renderizada é calculada com base na proporção do campo, e não na dimensão especificada no Designer de Formulários.
+   >As dimensões do campo selecionado no Designer de Formulários são refletidas quando o campo é renderizado. No entanto, a dimensão da caixa de assinatura renderizada é calculada com base na proporção do campo, e não na dimensão especificada no Designer de Formulários.
 
 1. Configure o campo Signature Scribble.
 
@@ -40,7 +40,7 @@ Os formulários HTML5 estão sendo cada vez mais usados em dispositivos de toque
 
       >[!NOTE]
       >
-      >Para abrir a guia Origem XML, clique em **Exibir** > Fonte **** XML.
+      >Para abrir a guia Origem XML, clique em **Visualização** > Fonte **** XML.
 
    1. Localize a `<ui>` tag na `<field>` tag e modifique o código-fonte para que se pareça com o seguinte:
 
@@ -50,10 +50,10 @@ Os formulários HTML5 estão sendo cada vez mais usados em dispositivos de toque
       </extras>
       ```
 
-   1. Selecione a guia Exibição **de** projeto. Na caixa de confirmação, clique em **Sim**.
+   1. Selecione a guia **Visualização** de design. Na caixa de confirmação, clique em **Sim**.
    1. Salve o formulário.
 
-1. Renderize o formulário em um navegador de dispositivo/desktop compatível.
+1. Renderize o formulário em um navegador de dispositivo/área de trabalho compatível.
 
 ## Interface com as assinaturas Scribble {#interfacing-with-the-scribble-signatures}
 
@@ -63,11 +63,11 @@ Depois que um campo Scribble de assinatura for adicionado ao formulário e rende
 
 ![geolocalização](assets/geolocation.png)
 
-******** A. Pincel **B. Borracha** C.**Geolocation** D. Informações sobre geolocalização
+**A.** Pincel **B.** Borracha **C.** Geolocation **D.** Informações sobre geolocalização
 
 ### Marcação geográfica {#geo-tagging}
 
-Clicar no ícone de localização geográfica ao criar o script faz com que as informações de localização geográfica e hora sejam incorporadas ao campo.
+Clicar no ícone de geolocalização ao criar o script faz com que as informações de localização geográfica e hora sejam incorporadas ao campo.
 
 >[!NOTE]
 No iPad, por padrão, a incorporação de informações de geolocalização é obrigatória.
@@ -76,12 +76,12 @@ No iPad, o ícone de geolocalização não é exibido por padrão, e as informa�
 
 Para iPads, essa configuração pode ser alterada modificando-se o valor do `geoLocManadatoryOnIpad` parâmetro para `0`, nos parâmetros de inicialização do campo.
 
-* Quando a informação de geolocalização é obrigatória, o usuário recebe uma área de desenho reduzida. O texto de localização geográfica é adicionado quando o usuário clica no ícone **OK** na área restante.
+* Quando a informação de geolocalização é obrigatória, o usuário recebe uma área de desenho reduzida. O texto de geolocalização é adicionado quando o usuário clica no ícone **OK** na área restante.
 * Em outros casos, é apresentada ao usuário uma área de desenho completa. Se o usuário optar por incorporar informações de geolocalização, essa área será redimensionada para acomodar o texto da geolocalização.
 
 ### Limpando uma assinatura {#clearing-a-signature}
 
-Ao usar esse recurso, um usuário pode clicar no ícone **Borracha** para limpar o campo e recomeçar. Se as informações de geolocalização forem adicionadas, também serão limpas.
+Ao usar esse recurso, um usuário pode clicar no ícone **Borracha** para limpar o campo e start sobre ele. Se as informações de geolocalização forem adicionadas, também serão limpas.
 
 ### Salvar uma assinatura {#saving-a-signature}
 
@@ -101,5 +101,3 @@ Para excluir as assinaturas do formulário:
 
 * (Dispositivos móveis) Pressione por muito tempo o campo de assinatura e, na caixa de diálogo de confirmação, toque em **Sim**.
 * (Desktop) Passe o mouse sobre o campo de assinatura, clique no ícone **Cancelar** e, na caixa de diálogo de confirmação, clique em **Sim**.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
