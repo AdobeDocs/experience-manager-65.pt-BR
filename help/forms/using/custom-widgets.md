@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -28,7 +28,7 @@ Um exemplo do widget padrão e personalizado
 
 ### Criar um perfil {#create-a-profile-nbsp}
 
-Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre como criar perfis, consulte [Criação de perfis](/help/forms/using/custom-profile.md)personalizados.
+Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre como criar perfis, consulte [Criação de Perfis](/help/forms/using/custom-profile.md)personalizados.
 
 ### Criar um widget {#create-a-widget}
 
@@ -46,7 +46,7 @@ Formulários HTML5 fornecem uma implementação da estrutura do widget que pode 
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> {<br /> desfoque: XFA_EXIT_EVENT,<br /> }<br /> Este exemplo mostra que o desfoque é um evento HTML e XFA_EXIT_EVENT é um evento XFA correspondente. </td>
+   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> {<br /> desfoque: XFA_EXIT_EVENTO,<br /> }<br /> Este exemplo mostra que o desfoque é um evento HTML e XFA_EXIT_EVENTO é um evento XFA correspondente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -58,11 +58,11 @@ Formulários HTML5 fornecem uma implementação da estrutura do widget que pode 
   </tr>
   <tr>
    <td>showValue</td>
-   <td>Por padrão, em XFA no evento enter, rawValue do campo é exibido. Essa função é chamada para mostrar o rawValue ao usuário. </td>
+   <td>Por padrão, no XFA ao inserir o evento, o rawValue do campo é exibido. Essa função é chamada para mostrar o rawValue ao usuário. </td>
   </tr>
   <tr>
    <td>showDisplayValue</td>
-   <td>Por padrão, no evento XFA on exit, o formattedValue do campo é exibido. Essa função é chamada para mostrar o formattedValue para o usuário. </td>
+   <td>Por padrão, em XFA no evento exit, o formattedValue do campo é exibido. Essa função é chamada para mostrar o formattedValue para o usuário. </td>
   </tr>
  </tbody>
 </table>
@@ -91,14 +91,13 @@ A configuração do widget é fornecida como um objeto JSON (uma coleção de pa
 
 *{*
 
-*&quot;identifier1&quot; : &quot;customwidgetname&quot;,&quot;identifier2&quot; : &quot;customwidgetname2&quot;,.. }*
+*&quot;identifier1&quot; : &quot;customwidgetname&quot;,&quot;identifier2&quot; : &quot;customwidgetname2&quot;,...
+}*
 
-onde &quot;identificador&quot; é um seletor CSS do jQuery que representa um campo específico, um conjunto de campos de um tipo específico ou todos os campos. A seguir, é mostrado o valor do identificador em casos diferentes:
+onde &quot;identificador&quot; é um seletor CSS do jQuery que representa um campo específico, um conjunto de campos de um tipo específico ou todos os campos. O seguinte lista o valor do identificador em casos diferentes:
 
 | Tipo de identificador | Identificador | Descrição |
 |---|---|---|
 | Campo específico com nome campo | Identificador:&quot;div.fieldname&quot; | Todos os campos com o nome &quot;nome do campo&quot; são renderizados usando o widget. |
 | Todos os campos do tipo &quot;type&quot; (onde o tipo é NumericField, DateField e assim por diante).: | Identificador: &quot;div.type&quot; | Para Timefield e DateTimeField, o tipo é textField, pois esses campos não são suportados. |
 | Todos os campos | Identificador: &quot;div.field&quot; |  |
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
