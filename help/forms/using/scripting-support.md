@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -31,7 +31,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   <tr>
    <td><code>prevText</code></td>
    <td>Especifica o conteúdo do campo antes de sua alteração em resposta a ações de um usuário. Esse valor pode ser retomado, semelhante a um recurso desfazer.</td>
-   <td><p>Não funciona em caixas de listagem e de menus. <code>PrevText </code>não funciona corretamente nos seguintes casos:</p>
+   <td><p>Não funciona para caixas suspensas e listas. <code>PrevText </code>não funciona corretamente nos seguintes casos:</p>
     <ul>
      <li>Ao digitar algumas teclas de caractere especiais (por exemplo $, (,), &amp;, @ e mais) nos campos numéricos no iPad e </li>
      <li>Para o campo Data (quando a data é informada pelo calendário).<br /> </li>
@@ -39,7 +39,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td><code>target</code></td>
-   <td>Especifica o objeto no qual o evento está agindo.</td>
+   <td>Especifica o objeto sobre o qual o evento está agindo.</td>
    <td>Não há suporte para a configuração de valor por meio de script.<br /> </td>
   </tr>
   <tr>
@@ -47,9 +47,9 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td>Especifica o conteúdo do campo após a sua alteração em resposta a ações de usuários.</td>
    <td><p>A <code>newText</code> propriedade não funciona corretamente nos seguintes casos:</p>
     <ul>
-     <li>Sobre a seleção e substituição de textos</li>
+     <li>Sobre a seleção e a substituição de textos</li>
      <li>Ao excluir, copiar e colar textos.</li>
-     <li>Ao digitar algumas teclas de caractere especiais (por exemplo $, (, ), &amp;, @ e mais) em campos numéricos<br /> </li>
+     <li>Ao digitar algumas teclas de caractere especiais (por exemplo $, (, ), &amp;, @ e muito mais) em campos numéricos<br /> </li>
      <li>Ao usar a combinação shift+alfanumérico. </li>
      <li>Ao usar campos de data/hora.</li>
     </ul>
@@ -62,7 +62,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td>Especifica o valor que um usuário insere ou cola em um campo imediatamente após executar a ação. </td>
    <td><p>A propriedade change não funciona corretamente nos seguintes casos:</p>
     <ul>
-     <li>Sobre a seleção e substituição de textos</li>
+     <li>Sobre a seleção e a substituição de textos</li>
      <li>Ao excluir, copiar e colar textos.</li>
      <li>Ao digitar algumas teclas de caractere especiais (por exemplo $, (,), &amp;, @ e mais) em campos numéricos<br /> </li>
      <li>Ao usar a combinação shift+alfanumérico. </li>
@@ -108,13 +108,13 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td><code>platform</code></td>
-   <td>Retorna uma string representando a plataforma do computador que executa o script.</td>
+   <td>Retorna uma string que representa a plataforma do computador que executa o script.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
    <td><code>title</code></td>
-   <td> Especifica o título do documento. Apenas está disponível para aplicativos clientes.</td>
-   <td>Ele retorna o título do documento HTML no formulário, em vez do título dos metadados do formulário, como no caso dos formulários PDF.</td>
+   <td>Especifica o título do documento. Apenas está disponível para aplicativos clientes.</td>
+   <td>Ele retorna o título do documento HTML no formulário, em vez do título dos metadados do formulário, como no caso dos Formulários PDF.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
@@ -154,11 +154,11 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   <tr>
    <td><code>messageBox</code></td>
    <td>Exibe uma caixa de diálogo na tela. Apenas está disponível para aplicativos clientes</td>
-   <td>Caixa de mensagem do tipo Sim/Não é convertida em OK/Cancelar. Caixa de mensagem com três botões não é suportada.</td>
+   <td>Caixa de mensagem do tipo Sim/Não é convertida em OK/Cancelar. Não há suporte para a caixa de mensagem com três botões.</td>
   </tr>
   <tr>
    <td>currentPage</td>
-   <td><p>Define a página atualmente ativa de um documento em tempo de execução.</p> <p>Os valores de páginas usam 0 como base e, portanto, a primeira página de um documento retorna um valor 0.</p> <p>A propriedade currentPage está disponível quando a propriedade layout:ready é executada em um cliente. Entretanto, não está disponível quando a propriedade layout:ready é executada no servidor porque essa propriedade só será executada quando o layout do formulário for executado.</p> </td>
+   <td><p>Define a página atualmente ativa de um documento no tempo de execução.</p> <p>Os valores de páginas usam 0 como base e, portanto, a primeira página de um documento retorna um valor 0.</p> <p>A propriedade currentPage está disponível quando a propriedade layout:ready é executada em um cliente. Entretanto, não está disponível quando a propriedade layout:ready é executada no servidor porque essa propriedade só será executada quando o layout do formulário for executado.</p> </td>
    <td>Nenhum</td>
   </tr>
  </tbody>
@@ -175,7 +175,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td><code>presence</code></td>
-   <td>Controla a participação do objeto associado em diferentes fases de processamento. Se o objeto for um contêiner, o conteúdo do contêiner herdará quaisquer restrições que esse controle aplicar.</td>
+   <td>Controla a participação do objeto associado em diferentes fases de processamento. Se o objeto for um container, o conteúdo do container herdará quaisquer restrições que esse controle aplicar.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
@@ -185,7 +185,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td><code>name</code></td>
-   <td>Um identificador usado para identificar esse elemento em expressões de script.</td>
+   <td>Um identificador usado para identificar esse elemento nas expressões de script.</td>
    <td>Formulários HTML5 não permitem definir a propriedade name para objetos. É uma propriedade somente leitura para formulários HTML5.</td>
   </tr>
   <tr>
@@ -315,12 +315,12 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td>x</td>
-   <td>Especifica a coordenada X do ponto de ancoragem do contêiner em relação ao canto superior esquerdo do contêiner pai quando posicionado com o layout posicionado.</td>
+   <td>Especifica a coordenada X do ponto de ancoragem do container em relação ao canto superior esquerdo do container pai quando posicionado com o layout posicionado.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica a coordenada Y do ponto de ancoragem de um contêiner em relação ao canto superior esquerdo do contêiner pai quando posicionado com o layout posicionado.</td>
+   <td>Especifica a coordenada Y do ponto de ancoragem de um container em relação ao canto superior esquerdo do container pai quando posicionado com o layout posicionado.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
@@ -356,15 +356,15 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
 
 | Propriedade | Descrição |
 |---|---|
-| `name` | Um identificador usado para identificar esse elemento em expressões de script. |
-| `occur` | Descreve as restrições sobre o número de instâncias permitidas para seu contêiner de inclusão. |
+| `name` | Um identificador usado para identificar esse elemento nas expressões de script. |
+| `occur` | Descreve as restrições sobre o número de instâncias permitidas para seu container de inclusão. |
 | `min` | Especifica o número mínimo de instâncias que podem ser instanciadas. |
 | `max` | Especifica o número máximo de instâncias que podem ser instanciadas. |
 | `count` | Especifica o número atual de instâncias instanciadas. |
 | `setInstances` | Adiciona ou remove os subformulários ou conjuntos de subformulários especificados desse nó. |
 | `addInstance` | Adiciona uma nova instância de um subformulário ou conjunto de subformulários a esse nó. |
 | `removeInstance` | Remove um subformulário ou conjunto de subformulários desse nó. |
-| `moveInstance` | Move um objeto filho de um objeto de modelo de formulário para outro local especificado no modelo de formulário. As informações do modelo de dados correspondentes ao objeto também são realocadas no modelo de dados. |
+| `moveInstance` | Move um objeto filho de um objeto de modelo de formulário para outro local especificado no modelo de formulário. As informações correspondentes do modelo de dados para o objeto também são realocadas no modelo de dados. |
 | `insertInstance` | Insere uma nova instância de um subformulário ou conjunto de subformulários nesse nó. |
 
 ## list {#list}
@@ -443,12 +443,12 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td>x</td>
-   <td>Especifica a coordenada X do ponto de ancoragem do contêiner em relação ao canto superior esquerdo do contêiner pai quando posicionado com o layout posicionado.</td>
+   <td>Especifica a coordenada X do ponto de ancoragem do container em relação ao canto superior esquerdo do container pai quando posicionado com o layout posicionado.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica a coordenada Y do ponto de ancoragem de um contêiner em relação ao canto superior esquerdo do contêiner pai quando posicionado com o layout posicionado.</td>
+   <td>Especifica a coordenada Y do ponto de ancoragem de um container em relação ao canto superior esquerdo do container pai quando posicionado com o layout posicionado.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
@@ -458,7 +458,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td>name</td>
-   <td>Um identificador usado para identificar esse elemento em expressões de script.</td>
+   <td>Um identificador usado para identificar esse elemento nas expressões de script.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
@@ -816,7 +816,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td>name<br /> </td>
-   <td>Um identificador usado para identificar esse elemento em expressões de script.</td>
+   <td>Um identificador usado para identificar esse elemento nas expressões de script.</td>
    <td>Nenhum</td>
   </tr>
  </tbody>
@@ -936,12 +936,12 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td>x</td>
-   <td>Especifica a coordenada X do ponto de ancoragem do contêiner em relação ao canto superior esquerdo do contêiner pai quando posicionado com o layout posicionado.</td>
+   <td>Especifica a coordenada X do ponto de ancoragem do container em relação ao canto superior esquerdo do container pai quando posicionado com o layout posicionado.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica a coordenada Y do ponto de ancoragem de um contêiner em relação ao canto superior esquerdo do contêiner pai quando posicionado com o layout posicionado.</td>
+   <td>Especifica a coordenada Y do ponto de ancoragem de um container em relação ao canto superior esquerdo do container pai quando posicionado com o layout posicionado.</td>
    <td>Nenhum</td>
   </tr>
   <tr>
@@ -1114,7 +1114,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
 
 ### Funções suportadas por FormCalc {#formcalc-supported-functions}
 
-### Suporte à expressão FormCalc {#formcalc-expression-support}
+### Suporte de Expressão FormCalc {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1134,7 +1134,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
    <td>var a<br /> var a=3<br /> a=3</td>
   </tr>
   <tr>
-   <td>Expressão lógica</td>
+   <td>expressão lógica</td>
    <td>
     <ul>
      <li>Lógica (e/ou)</li>
@@ -1143,7 +1143,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
    <td>A ou 1<br /> 1 &lt;&gt; 2<br /> A NE B<br /> A ou 1<br /> 1 &lt;&gt; 2<br /> A NE B</td>
   </tr>
   <tr>
-   <td>expressão If</td>
+   <td>Se expressão</td>
    <td><br type="_moz" /> </td>
    <td>if (a&gt;b) then 2 endif</td>
   </tr>
@@ -1213,7 +1213,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. Term()
+   1. Termo()
 
 1. **Funções lógicas**
 
@@ -1254,7 +1254,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
   </tr>
   <tr>
    <td>console.println()</td>
-   <td>Essa API acrobat descarta a saída no console javascript.</td>
+   <td>Essa API acrobat descarta a saída para o console javascript.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1279,7 +1279,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
   </tr>
   <tr>
    <td>app.setInterval()</td>
-   <td>Especifica um script JavaScript e um período de tempo. O script é executado sempre que o período decorre. O valor de retorno desse método deve ser mantido em uma variável JavaScript. Caso contrário, o objeto de intervalo estará sujeito à coleta de lixo, o que faria o relógio parar. Para encerrar a execução periódica, passe o objeto de intervalo retornado para clearInterval.</td>
+   <td>Especifica um script JavaScript e um período de tempo. O script é executado sempre que o período decorre. O valor de retorno desse método deve ser mantido em uma variável JavaScript. Caso contrário, o objeto de intervalo estará sujeito à coleta de lixo, o que faria com que o relógio parasse. Para encerrar a execução periódica, passe o objeto de intervalo retornado para clearInterval.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1303,8 +1303,8 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
    <td> </td>
   </tr>
   <tr>
-   <td>app.ativeDocs</td>
-   <td>Uma matriz que contém o objeto Doc para cada documento ativo. Se nenhum documento estiver ativo, ativeDocs não retornará nada; ou seja, ele tem o mesmo comportamento de d = new Array(0) no JavaScript principal.</td>
+   <td>app.activeDocs</td>
+   <td>Uma matriz que contém o objeto Doc para cada documento ativo. Se nenhum documentos estiver ativo, ativeDocs não retornará nada; ou seja, ele tem o mesmo comportamento de d = new Array(0) no JavaScript principal.</td>
    <td>Retorna uma matriz vazia para formulários HTMl5.</td>
   </tr>
   <tr>
@@ -1313,7 +1313,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
    <td>Sempre verdadeiro para formulários HTMl5.</td>
   </tr>
   <tr>
-   <td>app.constantes</td>
+   <td>app.constants</td>
    <td>Um objeto wrapper para manter vários valores constantes. No momento, essa propriedade retorna um objeto com uma única propriedade, alinhar.</td>
    <td>Formulários HTML5 retornam um objeto de alinhamento vazio.</td>
   </tr>
@@ -1335,7 +1335,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
  </tbody>
 </table>
 
-## Eventos XFA suportados {#supported-xfa-events}
+## eventos XFA suportados {#supported-xfa-events}
 
 Os seguintes eventos XFA do lado do cliente são suportados:
 
@@ -1351,5 +1351,3 @@ Os seguintes eventos XFA do lado do cliente são suportados:
 >[!NOTE]
 >
 >Os formulários HTML5 são renderizados no lado do cliente (navegador). Recomenda-se usar a **validação** e o **cálculo** de scripts no cliente em vez de scripts no servidor.
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
