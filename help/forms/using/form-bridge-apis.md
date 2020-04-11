@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
-source-git-commit: 8f90dc4865126d52e04effc9197ef7145b1a167e
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # APIs Form Bridge para formulários HTML5 {#form-bridge-apis-for-html-forms}
 
-Você pode usar as APIs Form Bridge para abrir um canal de comunicação entre formulários HTML5 baseados em XFA e seus aplicativos. As APIs Form Bridge fornecem uma API **connect** para criar a conexão.
+Você pode usar as APIs Form Bridge para abrir um canal de comunicação entre formulários HTML5 baseados em XFA e seus aplicativos. As APIs Form Bridge fornecem uma API de **conexão** para criar a conexão.
 
 A API **connect** aceita um manipulador como argumento. Depois que uma conexão bem-sucedida é criada entre o formulário HTML5 baseado em XFA e o Form Bridge, o identificador é chamado.
 
@@ -59,7 +59,7 @@ Retorna o número da versão da biblioteca de scripts
 * **Entrada**:
 
    * **manipulador**: Função a ser executada após a conexão do Form Bridge
-   * **contexto**: O objeto ao qual o contexto (this) da função *handler* está definido.
+   * **contexto**: O objeto ao qual o contexto (this) da função do *manipulador* está definido.
 
 * **Saída**: Nenhum
 * **Erro**: Nenhum
@@ -68,32 +68,32 @@ Retorna o número da versão da biblioteca de scripts
 
 * **Entrada:**
 
-   * **** opções: Objeto JavaScript contendo as seguintes propriedades:
+   * **opções:** Objeto JavaScript que contém as seguintes propriedades:
 
       * **Erro**: Função de manipulador de erros
       * **sucesso**: Função de manipulador de sucesso. Essa função é transmitida a um objeto que contém XML na propriedade *data* .
       * **contexto**: O objeto ao qual o contexto (esta) da função de *sucesso* está definido
-      * **validationChecker**: Função para chamar para verificar erros de validação recebidos do servidor. A função de validação é transmitida por uma matriz de sequências de caracteres de erro.
+      * **validationChecker**: Função para chamar para verificar os erros de validação recebidos do servidor. A função de validação é transmitida por uma matriz de sequências de caracteres de erro.
       * **formState**: O estado JSON do Formulário XFA para o qual o XML de dados deve ser retornado. Se não for especificado, retornará o XML de dados para o formulário renderizado no momento.
 
-* **** Saída: Nenhum
-* **** Erro: Nenhum
+* **Saída:** Nenhum
+* **Erro:** Nenhum
 
 **registerConfig(configName, config)** Registra configurações específicas do usuário/portal com o FormBridge. Essas configurações substituem as configurações padrão. As configurações compatíveis são especificadas na seção de configuração.
 
 * **Entrada:**
 
-   * **** configName: Nome da configuração a ser substituída
+   * **configName:** Nome da configuração a ser substituída
 
-      * **** widgetConfig: Permite que o usuário substitua os widgets padrão no formulário por widgets personalizados. A configuração é substituída da seguinte maneira:
+      * **widgetConfig:** Permite que o usuário substitua os widgets padrão no formulário por widgets personalizados. A configuração é substituída da seguinte maneira:
 
          *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **** pagingConfig: Permite que o usuário substitua o comportamento padrão de renderização somente da primeira página. A configuração é substituída da seguinte maneira:
+      * **pagingConfig:** Permite que o usuário substitua o comportamento padrão de renderização somente da primeira página. A configuração é substituída da seguinte maneira:
 
          *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true| false>, saninkPageDisabled: &lt;true| false> }).*
 
-      * **** LoggingConfig: Permite que o usuário substitua o nível de registro, desative o registro para uma categoria ou exiba o console de registros ou envie para o servidor. A configuração pode ser substituída da seguinte maneira:
+      * **LoggingConfig:** Permite que o usuário substitua o nível de registro, desative o registro para uma categoria ou exiba o console de registros ou envie para o servidor. A configuração pode ser substituída da seguinte maneira:
 
       ```JavaScript
       formBridge.registerConfig{
@@ -107,7 +107,7 @@ Retorna o número da versão da biblioteca de scripts
         }
       ```
 
-      * **** SubmitServiceProxyConfig: Permitir que os usuários registrem os serviços de envio e proxy de agente de log.
+      * **SubmitServiceProxyConfig:** Permitir que os usuários registrem os serviços de envio e proxy de agente de log.
 
          ```JavaScript
          window.formBridge.registerConfig("submitServiceProxyConfig",
@@ -117,31 +117,31 @@ Retorna o número da versão da biblioteca de scripts
          "submitUrl" : "`<submitUrl>`"
          });
          ```
-   * **** configuração: Valor da configuração
+   * **configuração:** Valor da configuração
 
 
 
-* **** Saída: Objeto que contém o valor original da configuração na propriedade *data* .
+* **Saída:** Objeto que contém o valor original da configuração na propriedade *data* .
 
-* **** Erro: Nenhum
+* **Erro:** Nenhum
 
 **hideFields(fieldArray)** Oculta os campos cujas expressões Som são fornecidas no fieldArray. Define a propriedade presence dos campos especificados como invisível
 
 * **Entrada:**
 
-   * **** fieldArray: Matriz de expressões Som para ocultar os campos
+   * **fieldArray:** Matriz de expressões Som para os campos ocultarem
 
-* **** Saída: Nenhum
-* **** Erro: Nenhum
+* **Saída:** Nenhum
+* **Erro:** Nenhum
 
 **showFields(fieldArray)** Mostra os campos cujas expressões Som são fornecidas no fieldArray. Define a propriedade presence dos campos fornecidos como visível
 
 * **Entrada:**
 
-   * **** fieldArray: Matriz de expressões Som para mostrar os campos
+   * **fieldArray:** Matriz de expressões Som para os campos serem exibidos
 
-* **** Saída: Nenhum
-* **** Erro: Nenhum
+* **Saída:** Nenhum
+* **Erro:** Nenhum
 
 **hideSubmitButtons()** Oculta todos os botões Enviar no formulário
 
@@ -151,47 +151,47 @@ Retorna o número da versão da biblioteca de scripts
 
 **getFormState()** Retorna o JSON que representa o Estado do Formulário
 
-* **** Entrada: Nenhum
-* **** Saída: Objeto que contém JSON que representa o Estado de formulário atual na propriedade *data* .
+* **Entrada:** Nenhum
+* **Saída:** Objeto que contém JSON que representa o Estado de formulário atual na propriedade *data* .
 
-* **** Erro: Nenhum
+* **Erro:** Nenhum
 
 **restoreFormState(opções)** Restaura o Estado do formulário a partir do estado JSON fornecido no objeto options. O estado é aplicado e os manipuladores bem-sucedidos ou de erros são chamados depois que a operação é concluída
 
 * **Entrada:**
 
-   * **** Opções: Objeto JavaScript contendo as seguintes propriedades:
+   * **Opções:** Objeto JavaScript que contém as seguintes propriedades:
 
       * **Erro**: Função de manipulador de erros
       * **sucesso**: Função de manipulador de sucesso
       * **contexto**: O objeto ao qual o contexto (esta) da função de *sucesso* está definido
       * **formState**: Estado JSON do formulário. O formulário é restaurado para o estado JSON.
 
-* **** Saída: Nenhum
-* **** Erro: Nenhum
+* **Saída:** Nenhum
+* **Erro:** Nenhum
 
 **setFocus (som)** Define o foco no campo especificado na expressão Som
 
-* **** Entrada: Uma expressão do campo no qual definir foco
-* **** Saída: Nenhum
-* **** Erro: Emite uma exceção no caso de uma expressão Som incorreta
+* **Entrada:** Algumas expressões do campo em que o foco deve ser definido
+* **Saída:** Nenhum
+* **Erro:** Emite uma exceção em caso de expressão Som incorreta
 
 **setFieldValue (som, valor)** Define o valor dos campos para as expressões Som fornecidas
 
 * **Entrada:**
 
-   * **** som: Matriz que contém expressões Som do campo. A expressão som para definir o valor dos campos.
-   * **** valor: Matriz que contém valores correspondentes a expressões Som fornecidas em uma **** matriz somal. Se o tipo de dados do valor não for igual ao fieldType, o valor não será modificado.
+   * **som:** Matriz contendo algumas expressões do campo. A expressão para definir o valor dos campos.
+   * **valor:** Matriz que contém valores correspondentes a expressões Som fornecidas em uma **** matriz sombria. Se o tipo de dados do valor não for igual ao fieldType, o valor não será modificado.
 
-* **** Saída: Nenhum
-* **** Erro: Emite uma Exceção no caso de uma expressão Som incorreta
+* **Saída:** Nenhum
+* **Erro:** Emite uma Exceção no caso de uma expressão Som incorreta
 
 **getFieldValue (som)** Retorna o valor dos campos para as expressões Som fornecidas
 
-* **** Entrada: Matriz contendo expressões Som dos campos cujo valor precisa ser recuperado
-* **** Saída: Objeto que contém o resultado como Matriz na propriedade **data** .
+* **Entrada:** Matriz contendo expressões Som dos campos cujo valor precisa ser recuperado
+* **Saída:** Objeto que contém o resultado como Matriz na propriedade **data** .
 
-* **** Erro: Nenhum
+* **Erro:** Nenhum
 
 ### Exemplo da API getFieldValue() {#example-of-nbsp-getfieldvalue-api}
 
@@ -206,27 +206,27 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, propriedade)** Recupera a lista de valores para determinada propriedade dos campos especificados nas expressões Som
+**getFieldProperties(som, propriedade)** Recupera a lista de valores para determinada propriedade dos campos especificados no Som expressão
 
 * **Entrada:**
 
-   * **** som: Matriz que contém expressões Som para os campos
+   * **som:** Matriz contendo expressões Som para os campos
    * **propriedade**: Nome da propriedade cujo valor é obrigatório
 
-* **** Saída: Objeto que contém o resultado como Matriz na propriedade *data*
+* **Saída:** Objeto que contém o resultado como Matriz na propriedade *data*
 
-* **** Erro: Nenhum
+* **Erro:** Nenhum
 
-**setFieldProperties(som, propriedade, valores)** Define o valor da propriedade especificada para todos os campos especificados nas expressões Som
+**setFieldProperties(som, propriedade, valores)** Define o valor de determinada propriedade para todos os campos especificados nas expressões Som
 
 * **Entrada:**
 
-   * **** som: Matriz contendo expressões Som dos campos cujo valor precisa ser definido
+   * **som:** Matriz contendo expressões Som dos campos cujo valor precisa ser definido
    * **propriedade**: Propriedade cujo valor deve ser definido
-   * **** valor: Matriz que contém valores de determinada propriedade para campos especificados em expressões Som
+   * **valor:** Matriz que contém valores de determinada propriedade para campos especificados em expressões Som
 
-* **** Saída: Nenhum
-* **** Erro: Nenhum
+* **Saída:** Nenhum
+* **Erro:** Nenhum
 
 ## Exemplo de uso da API Form Bridge {#sample-usage-of-form-bridge-api}
 
@@ -261,5 +261,3 @@ if(a.errors) {
     formBridge.submitForm({success:suc,error:err}); // not passing a context means that this will be formBridge itself. Validation errors will be checked.
   }
 ```
-
-**[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)**
