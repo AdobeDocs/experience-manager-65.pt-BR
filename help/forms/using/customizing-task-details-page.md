@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -28,9 +28,9 @@ Para personalizar a página de detalhes da tarefa:
 1. Siga as etapas [genéricas para personalização da área de trabalho do AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
 1. Para mostrar quaisquer informações adicionais, adicione pares de valores chave correspondentes ao `translation.json` arquivo em `todo`bloco > `details`bloco > `app`bloco > [ bloco `required`].
 
-   O [ bloco `required`] refere-se aos blocos disponíveis, como o bloco de tarefas para informações de tarefa, o bloco de processo para informações de processo e o bloco de tarefas atual para informações de tarefas pendentes.
+   O [ bloco `required`] se refere aos blocos disponíveis, como o bloco de tarefa para informações de tarefa, o bloco de processo para informações de processo e o bloco de tarefas atual para informações tarefas pendentes.
 
-   Por exemplo, para adicionar informações sobre a Seleção de rota obrigatória na página de detalhes da tarefa, você pode adicionar o seguinte par de valores chave no bloco de tarefas:
+   Por exemplo, para adicionar informações sobre a Seleção de rota obrigatória na página de detalhes da tarefa, adicione o seguinte par de valores chave no bloco de tarefa:
 
    ```
    "todo" : {
@@ -82,8 +82,6 @@ Para personalizar a página de detalhes da tarefa:
 
 >[!NOTE]
 >
->Para personalizar a página de detalhes da tarefa com tarefas criadas na guia **Iniciar processo** da área de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Para personalizar a página de detalhes da tarefa com tarefas criadas na guia Processo **do** Start da área de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >Para adicionar novos estilos para as informações adicionadas na página de detalhes, modifique o arquivo CSS usando a seção de alterações *da interface do* usuário em Personalização [da](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3)Workspace.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
