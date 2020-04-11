@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -18,13 +18,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 O modo offline do aplicativo AEM Forms permite que você trabalhe sem problemas mesmo se o aplicativo ficar offline. Você pode abrir, atualizar e enviar um formulário sem precisar de conectividade de rede.
 
-Você começa a trabalhar no aplicativo AEM Forms sincronizando seu aplicativo com o servidor AEM Forms. Todos os formulários atribuídos a você são baixados no aplicativo. Para o AEM Forms em JEE, as tarefas são buscadas na guia tarefas e os pontos de partida associados a formulários e outros formulários na guia Formulários. Para formulários AEM no OSGi, somente os formulários são carregados na guia Formulários.
+start de trabalhar no aplicativo AEM Forms sincronizando seu aplicativo com o servidor AEM Forms. Todos os formulários atribuídos a você são baixados no aplicativo. Para o AEM Forms em JEE, o tarefa é buscado na guia tarefa e os pontos de partida associados a formulários e outros formulários na guia Formulários. Para formulários AEM no OSGi, somente os formulários são carregados na guia Formulários.
 
 Para obter detalhes sobre como sincronizar o aplicativo, consulte [Sincronizar o aplicativo](/help/forms/using/sync-app.md).
 
 ## Disponibilização offline de formulários {#making-forms-available-offline}
 
-Quando você sincroniza seu aplicativo com o servidor de formulários AEM, os formulários são baixados para seu dispositivo móvel. No entanto, por padrão, os anexos associados ao formulário não são baixados. Isso significa que, se você estiver online, poderá exibir os anexos. Entretanto, para garantir que você possa exibir o anexo no modo offline, altere as configurações padrão no aplicativo.
+Quando você sincroniza seu aplicativo com o servidor de formulários AEM, os formulários são baixados para seu dispositivo móvel. No entanto, por padrão, os anexos associados ao formulário não são baixados. Isso significa que, se você estiver online, poderá visualização os anexos. Entretanto, para garantir que você possa visualização o anexo no modo offline, altere as configurações padrão no aplicativo.
 
 Para garantir que os anexos associados sejam baixados com cada formulário, defina a opção Buscar anexos como ON. Para obter detalhes, consulte [Atualização de configurações](/help/forms/using/update-general-settings.md)gerais.
 
@@ -32,7 +32,7 @@ Como o download de dados no dispositivo móvel pode afetar o desempenho do dispo
 
 ## Configurar o serviço offline para o aplicativo AEM Forms {#configuring-offline-service-for-aem-forms-app-br}
 
-O serviço offline do aplicativo AEM Forms identifica os recursos usados em um formulário. O aplicativo AEM Forms depende desse serviço para obter informações sobre dependências de formulários. São necessárias informações sobre dependências de formulário para ativar funcionalidades offline.  O serviço offline do aplicativo AEM Forms armazena em cache os caminhos ou URLs dos recursos usados em um formulário. O cache é atualizado com base nas alterações no formulário e no período de validade configurado para o serviço offline. O cache de caminhos ou URLs dos recursos usados em um formulário melhora o desempenho do servidor.
+O serviço offline do aplicativo AEM Forms identifica os recursos usados em um formulário. O aplicativo AEM Forms depende desse serviço para obter informações sobre dependências de formulários. As informações sobre dependências de formulário são necessárias para ativar funcionalidades offline. O serviço offline do aplicativo AEM Forms armazena em cache os caminhos ou URLs dos recursos usados em um formulário. O cache é atualizado com base nas alterações no formulário e no período de validade configurado para o serviço offline. O cache de caminhos ou URLs dos recursos usados em um formulário melhora o desempenho do servidor.
 
 Para configurar o componente offline do lado do servidor do aplicativo AEM Forms:
 
@@ -48,5 +48,3 @@ Para configurar o componente offline do lado do servidor do aplicativo AEM Forms
    * **Caminhos** de observação de recursos: Especifica caminhos nos quais o serviço offline monitora alterações de recursos. Se ocorrerem alterações nos caminhos especificados, o cache offline de todos os formulários dependentes será atualizado. Por exemplo, `/etc/clientlibs/fd,/content/dam/images`.
 
 1. Na guia Cache **de recursos** manual, especifique as dependências de formulário que o serviço offline não pode identificar. Você pode especificar recursos como imagens carregadas em JavaScript. O aplicativo AEM Forms baixará esses recursos também para o modo offline.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
