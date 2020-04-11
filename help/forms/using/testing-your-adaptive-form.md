@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
 
 Este tutorial é uma etapa da série [Criar seu primeiro formulário](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) adaptável. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso do tutorial completo.
 
-Depois que o formulário adaptativo estiver pronto, é importante testar seu adaptador antes de distribuí-lo para os usuários finais. Você pode testar manualmente (teste funcional) cada campo ou automatizar o teste do formulário adaptável. Quando você tem vários formulários adaptáveis, testar manualmente todos os campos de todos os formulários adaptáveis torna-se uma tarefa assustadora.
+Depois que o formulário adaptativo estiver pronto, é importante testar seu adaptador antes de distribuí-lo para os usuários finais. Você pode testar manualmente (teste funcional) todos os campos ou automatizar o teste do formulário adaptável. Quando você tem vários formulários adaptáveis, testar manualmente todos os campos de todos os formulários adaptativos se torna uma tarefa assustadora.
 
 O AEM Forms fornece uma estrutura de teste, Calvin, para automatizar o teste de seus formulários adaptáveis. Usando a estrutura, você grava e executa testes de interface diretamente em um navegador da Web. A estrutura fornece APIs JavaScript para a criação de testes. O teste automatizado permite testar a experiência de preenchimento prévio de um formulário adaptável, enviar a experiência de um formulário adaptável, regras de expressão, de validações, carregamento lento e interações de UI. Este tutorial o orienta pelas etapas para criar e executar testes automatizados em um formulário adaptável. No final deste tutorial, você poderá:
 
@@ -50,8 +50,8 @@ Os conjuntos de testes têm uma coleção de casos de teste. Você pode ter vár
    <td>Ativado</td>
    <td>
     <ul>
-     <li>granite.testing.hobbes.testing<br /> </li>
-     <li>granite.testing.calvin.testing</li>
+     <li>granite.testing.hobbes.tests<br /> </li>
+     <li>granite.testing.calvin.tests</li>
     </ul> </td>
   </tr>
   <tr>
@@ -147,8 +147,8 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
    <td>Ativado</td>
    <td>
     <ul>
-     <li>granite.testing.hobbes.testing<br /> </li>
-     <li>granite.testing.hobbes.testing.testForm</li>
+     <li>granite.testing.hobbes.tests<br /> </li>
+     <li>granite.testing.hobbes.tests.testForm</li>
     </ul> </td>
   </tr>
   <tr>
@@ -157,7 +157,7 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
    <td>Ativado</td>
    <td>
     <ul>
-     <li>granite.testing.calvin.testing</li>
+     <li>granite.testing.calvin.tests</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -210,22 +210,22 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
 
 Um conjunto de testes pode ter vários casos de teste. Você pode executar todos os casos de teste em um conjunto de testes de uma vez ou individualmente. Quando você executa um teste, os ícones indicam os resultados:
 
-* Um ícone de marca de seleção indica um teste aprovado: ![](https://helpx.adobe.com/content/dam/help/icons/Checkmark.png)
-* Um ícone &quot;X&quot; indica uma falha no teste: ![](https://helpx.adobe.com/content/dam/help/icons/Cross.png)
+* Um ícone de marca de seleção indica um teste aprovado: ![](assets/save_icon.svg)
+* Um ícone &quot;X&quot; indica uma falha no teste: ![](assets/close-icon.svg)
 
 1. Navegue até o ícone AEM > **[!UICONTROL Ferramentas]**> **[!UICONTROL Operações]**> **[!UICONTROL Testes]**
 1. Para executar todos os testes do Test Suite:
 
-   1. No painel Testes, toque em **[!UICONTROL Varejo - Testes (1)]**. A suíte é expandida para exibir a lista de testes.
+   1. No painel Testes, toque em **[!UICONTROL Varejo - Testes (1)]**. A suíte se expande para exibir a lista do teste.
    1. Toque no botão **[!UICONTROL Executar testes]** . A área em branco no lado direito da tela é substituída pela forma adaptável à medida que o teste é executado.
    ![teste &quot;run-all-test&quot;](assets/run-all-test.png)
 
-1. Para executar um único teste do Test Suite:
+1. Para executar um único teste a partir do Test Suite:
 
-   1. No painel Testes, toque em **[!UICONTROL Varejo - Testes (1)]**. A suíte é expandida para exibir a lista de testes.
+   1. No painel Testes, toque em **[!UICONTROL Varejo - Testes (1)]**. A suíte se expande para exibir a lista do teste.
    1. Toque em **[!UICONTROL Prefill Test (Teste]** de pré-preenchimento) e toque no botão **[!UICONTROL Run Tests (Executar testes]** ). A área em branco no lado direito da tela é substituída pela forma adaptável à medida que o teste é executado.
 
-1. Toque no nome do teste, Teste de preenchimento prévio, para analisar os resultados do caso de teste. Ele abre o painel Resultado. Toque no nome do caso de teste na exibição do painel Resultado para todos os detalhes do teste.
+1. Toque no nome do teste, Teste de preenchimento prévio, para analisar os resultados do caso de teste. Ele abre o painel Resultado. Toque no nome do caso de teste na visualização do painel Resultado para obter todos os detalhes do teste.
 
    ![resultados da revisão](assets/review-results.png)
 
