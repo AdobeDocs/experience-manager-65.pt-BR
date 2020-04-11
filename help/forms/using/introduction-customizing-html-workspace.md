@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -26,7 +26,7 @@ Um exemplo de um espaço de trabalho personalizado
 
 ## Tipos de personalizações {#types-of-customizations}
 
-A área de trabalho do AEM Forms suporta uma grande variedade de personalizações para atualizar o layout da interface do usuário, sua aparência, funcionalidade e muito mais. As personalizações envolvem a atualização de um ou mais dos seguintes:
+A área de trabalho do AEM Forms oferece suporte a uma grande variedade de personalizações para atualizar o layout da interface do usuário, sua aparência, funcionalidade e muito mais. As personalizações envolvem a atualização de um ou mais dos seguintes:
 
 * Aparências da interface do usuário
 * Funcionalidade usando personalizações semânticas
@@ -42,7 +42,7 @@ As etapas mais comumente aplicáveis são abordadas nas etapas [Genéricas para 
 
 Antes de personalizar o espaço de trabalho, familiarize-se com a folha de estilos padrão fornecida com os formulários AEM em /libs/ws/css/style.css.
 
-Para personalizar o espaço de trabalho, é recomendável que você se familiarize com a folha de estilos existente, style.css, localizada na pasta /libs/ws/css. Descreve - se a seguir alguns componentes importantes.
+Para personalizar o espaço de trabalho, é recomendável que você se familiarize com a folha de estilos existente, style.css, localizada na pasta /libs/ws/css. Descreve - se a seguir alguns componentes de relevo.
 
 <table>
  <tbody>
@@ -56,55 +56,55 @@ Para personalizar o espaço de trabalho, é recomendável que você se familiari
   </tr>
   <tr>
    <td><p>.categoryList</p> </td>
-   <td><p>Lista de categorias</p> </td>
+   <td><p>lista Categoria</p> </td>
   </tr>
   <tr>
    <td><p>.categoryList .header</p> </td>
-   <td><p>Cabeçalho da lista de categorias</p> </td>
+   <td><p>Cabeçalho da lista da categoria</p> </td>
   </tr>
   <tr>
-   <td><p>.category, .filter</p> </td>
-   <td><p>Espaço abaixo da lista de categorias</p> </td>
+   <td><p>.categoria, .filtros</p> </td>
+   <td><p>Espaço abaixo da lista da categoria</p> </td>
   </tr>
   <tr>
-   <td><p>.category, .filter</p> </td>
+   <td><p>.categoria, .filter</p> </td>
    <td><p>Categoria</p> </td>
   </tr>
   <tr>
-   <td><p>.category:hover, .category.seleted, .filter:hover, .filter.seleted</p> </td>
-   <td><p>Categoria selecionada e passar o mouse sobre o estilo da categoria</p> </td>
+   <td><p>.categoria:pairar, .categoria.seleted, .filter:pairar, .filter.seleted</p> </td>
+   <td><p>categoria e mouse sobre o estilo de categoria selecionados</p> </td>
   </tr>
   <tr>
    <td><p>categoryListBar .tool, categoryListBar .content</p> </td>
-   <td><p>Página de início do processo (lista de Categoria fechada)</p> </td>
+   <td><p>Página de processo de Start (lista fechada)</p> </td>
   </tr>
   <tr>
    <td><p>filterListBar .tool, filterListBar .content</p> </td>
-   <td><p>Página Para Fazer (lista de Filtros fechada)</p> </td>
+   <td><p>Página de Tarefas Pendentes (lista de Filtro Fechado)</p> </td>
   </tr>
   <tr>
    <td><p>processNameListBar .tool, processNameListBar .content</p> </td>
-   <td><p>Página de rastreamento (lista fechada de nomes de processos)</p> </td>
+   <td><p>Página de rastreamento (lista de nome de processo fechada)</p> </td>
   </tr>
   <tr>
    <td><p>.startPointList, .tasklist</p> </td>
-   <td><p>A lista de pontos de partida ou a lista de tarefas</p> </td>
+   <td><p>A lista do ponto de partida ou a lista da tarefa</p> </td>
   </tr>
   <tr>
    <td><p>.startPointList .header, .tasklist .header</p> </td>
-   <td><p>O cabeçalho de uma lista de pontos de partida ou de uma lista de tarefas</p> </td>
+   <td><p>O cabeçalho de uma lista de ponto de partida ou de uma lista de tarefa</p> </td>
   </tr>
   <tr>
-   <td><p>.startpoint.seleted, .task.seleted</p> </td>
+   <td><p>.startpoint.seleted, .tarefa.seleted</p> </td>
    <td><p>O ponto de partida ou a tarefa selecionada</p> </td>
   </tr>
   <tr>
-   <td><p>.startpoint.seleted .description, .task.seleted .description</p> </td>
-   <td><p>Descrição do ponto de partida ou da tarefa selecionada</p> </td>
+   <td><p>.startpoint.seleted .description, .tarefa.seleted .description</p> </td>
+   <td><p>Descrição do ponto de partida ou tarefa selecionado</p> </td>
   </tr>
   <tr>
    <td><p>#taskarea</p> </td>
-   <td><p>A área Tarefa</p> </td>
+   <td><p>Área da Tarefa</p> </td>
   </tr>
   <tr>
    <td><p>#header.dropdown</p> </td>
@@ -161,8 +161,8 @@ Para modificar a funcionalidade do espaço de trabalho do AEM Forms, altere o c�
 As etapas de nível superior para fazer alterações semânticas para modificar a funcionalidade do espaço de trabalho do AEM Forms são:
 
 * Em uma pasta criada pelo usuário, faça cópias dos arquivos padrão apropriados.
-* Adicione novos modelos e exibições na pasta definida pelo usuário.
-* Faça atualizações relevantes, como atualizar caminhos de modelos e exibições recém-adicionados nos arquivos JavaScript padrão.
+* Adicione novos modelos e visualizações na pasta definida pelo usuário.
+* Faça atualizações relevantes, como atualizar caminhos de modelos e visualizações recém-adicionados nos arquivos JavaScript padrão.
 * Reduza o pacote para otimizar o desempenho.
 
 Para obter mais informações conceituais sobre os componentes que fazem parte do código-fonte, consulte a [Descrição de componentes](/help/forms/using/description-reusable-components.md)reutilizáveis. Para essas personalizações, use o Pacote de desenvolvedores.
@@ -177,7 +177,7 @@ Para obter mais informações conceituais, consulte a [Descrição de componente
 
 ### Pacote SDK {#sdk-package}
 
-O pacote contém o código fonte da área de trabalho do AEM Forms. O pacote está disponível em `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+O pacote contém o código-fonte da área de trabalho do AEM Forms. O pacote está disponível em `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 Ele se destina principalmente a personalizações, pois fornece a capacidade de gerar:
 
@@ -207,13 +207,13 @@ Ele se destina principalmente a personalizações, pois fornece a capacidade de 
          * resource_generator - usado para gerar register.js e modelcontrollerpath.js.
          * tempo de execução:
 
-            * initializer - contém initializer.js usado para inicializar exibições de backbone e modelos usados na área de trabalho do AEM Forms.
+            * initializer - contém initializer.js usado para inicializar visualizações de backbone e modelos usados na área de trabalho do AEM Forms.
             * modelos - contém modelos de backbone de todos os componentes presentes na área de trabalho do AEM Forms.
-            * rotas - contém arquivos javascript e arquivos HTML que carregam processos de início, Tarefas, rastreamento e preferências na área de trabalho do AEM Forms.
+            * rotas - contém arquivos javascript e arquivos HTML que carregam processos de start, tarefas, rastreamento e preferências na área de trabalho do AEM Forms.
             * services - contém service.js usado na área de trabalho do AEM Forms. Todas as chamadas do servidor são feitas por meio de service.js.
-            * modelos - contém todos os modelos, ou seja, arquivos HTML de todas as exibições na área de trabalho do AEM Forms.
+            * modelos - contém todos os modelos, ou seja, arquivos HTML de todas as visualizações na área de trabalho do AEM Forms.
             * util - contém todos os arquivos de utilitário (javascript) usados na área de trabalho do AEM Forms.
-            * exibições - contém exibições de backbone de todos os componentes na área de trabalho do AEM Forms.
+            * visualização - contém visualizações de backbone de todos os componentes na área de trabalho do AEM Forms.
          * main.js
          * router.js
       * libs/ws: pdf.html e pluginPing.pdf são usados para carregar formulários PDF na área de trabalho do AEM Forms e WSNextAdapter.swf é usado para carregar formulários SWF e Guias na área de trabalho do AEM Forms.
@@ -238,16 +238,16 @@ Este pacote pode ser criado usando os três perfis descritos abaixo.
 
 | **Perfil** | **Descrição** | **Uso** |
 |---|---|---|
-| Perfil de envio | Esse perfil cria um pacote CRX do menor tamanho possível usando a miniificação. Este pacote é o mais eficiente. Todos os arquivos JavaScript™ são combinados e reduzidos em um único arquivo JS. | Use esse perfil quando não forem necessárias mais alterações semânticas nos arquivos JS. |
-| Perfil de depuração | Este perfil cria um pacote CRX moderadamente eficiente. O tamanho do pacote é ligeiramente maior do que o pacote criado usando o perfil de Entrega. Este pacote tem a maioria dos arquivos JavaScript combinados em um único arquivo JS. | Use este perfil para depuração. |
-| Perfil de desenvolvedor | Este perfil cria um pacote CRX do maior tamanho possível. Todos os arquivos JavaScript estão disponíveis separadamente, como estão no pacote SDK. | Use esse perfil ao incorporar alterações semânticas. |
+| perfil de remessa | Este perfil cria um pacote CRX do menor tamanho possível usando a miniificação. Este pacote é o mais eficiente. Todos os arquivos JavaScript™ são combinados e reduzidos em um único arquivo JS. | Use esse perfil quando não forem necessárias mais alterações semânticas nos arquivos JS. |
+| Depurar perfil | Este perfil cria um pacote CRX moderadamente eficiente. O tamanho do pacote é ligeiramente maior do que o pacote criado usando o perfil de remessa. Este pacote tem a maioria dos arquivos JavaScript combinados em um único arquivo JS. | Use este perfil para depuração. |
+| perfil Dev | Este perfil cria um pacote CRX do maior tamanho possível. Todos os arquivos JavaScript estão disponíveis separadamente, como estão no pacote SDK. | Use esse perfil ao incorporar alterações semânticas. |
 
-#### Perfil de envio {#ship-profile}
+#### Perfil de remessa {#ship-profile}
 
 #### Comando {#command}
 
 * mvn clean -P Envio da instalação na pasta client-pkg do pacote de origem enviado ao cliente.
-* A execução do comando de perfil de remessa funciona somente em uma JVM de 64 bits.
+* A execução do comando Entregar perfil funciona somente em uma JVM de 64 bits.
 
 #### Conteúdo WS {#ws-content-1}
 
@@ -281,18 +281,18 @@ Este pacote pode ser criado usando os três perfis descritos abaixo.
    * html.jsp - contém código para descobrir a localidade atual do navegador.
 
 * Índice - contém .content.xml
-* profile - Contém offline.jsp.
+* perfil - contém offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml
 * _rep_policy.xml
 
-#### Perfil de depuração {#debug-profile}
+#### Depurar Perfil {#debug-profile}
 
 #### Comando {#command-1}
 
-* instalação de Depuração de mvn clean -P no client-pkg
-* A execução do comando de perfil de depuração funciona somente em JVM de 64 bits.
+* instalação de Depuração de mvn clean -P em client-pkg
+* A execução do comando Depurar perfil funciona somente em JVM de 64 bits.
 
 #### Conteúdo WS {#ws-content-2}
 
@@ -326,13 +326,13 @@ Este pacote pode ser criado usando os três perfis descritos abaixo.
    * html.jsp - contém código para descobrir a localidade atual do navegador.
 
 * Índice - contém .content.xml
-* profile - Contém offline.jsp.
+* perfil - contém offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml
 * _rep_policy.xml
 
-#### Perfil de desenvolvedor {#dev-profile}
+#### Perfil Dev {#dev-profile}
 
 #### Comando {#command-2}
 
@@ -351,11 +351,11 @@ instalação mvn clean -P Dev em client-pkg
 
       * initializer - contém initializer.js e modelcontrollerpath.js.
       * modelos - contém modelos de todos os componentes na área de trabalho do AEM Forms.
-      * rotas - contém arquivos javascript e arquivos HTML que carregam processos de início, Tarefas, rastreamento e preferências na área de trabalho do AEM Forms.
+      * rotas - contém arquivos javascript e arquivos HTML que carregam processos de start, tarefas, rastreamento e preferências na área de trabalho do AEM Forms.
       * services - contém service.js usado na área de trabalho do AEM Forms.
       * modelos - contém todos os modelos, ou seja, arquivos HTML de todos os componentes na área de trabalho do AEM Forms.
       * util - contém todos os arquivos de utilitário (JavaScript) que são usados na área de trabalho do AEM Forms.
-      * exibições - contém exibições de todos os componentes na área de trabalho do AEM Forms.
+      * visualização - contém visualizações de todos os componentes na área de trabalho do AEM Forms.
    * main.js
    * registry.js
    * router.js
@@ -375,10 +375,8 @@ instalação mvn clean -P Dev em client-pkg
    * html.jsp - contém código para descobrir a localidade atual do navegador.
 
 * Índice - contém .content.xml
-* profile - Contém offline.jsp.
+* perfil - contém offline.jsp.
 * GET.jsp
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
