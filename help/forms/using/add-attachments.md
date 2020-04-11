@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 
 ## Adicionar anexos em formulários sincronizados com o servidor de fluxo de trabalho do AEM Forms (AEM Forms no JEE) {#adding-annotations}
 
-O aplicativo AEM Forms permite anexar imagens, notas com script e notas de texto ao formulário sincronizado com o servidor AEM Forms JEE. Se o formulário for carregado de um servidor de fluxo de trabalho do AEM Forms, seus anexos serão adicionados ao formulário. Você pode tocar no botão de anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação vermelha especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão de notificações vermelhas. Se não houver anexos no formulário, quando você tocar no botão de anexos ![anexar](assets/attch.png), você obterá opções para anexar fotos ou scripts.
+O aplicativo AEM Forms permite anexar imagens, notas com script e notas de texto ao formulário sincronizado com o servidor JEE do AEM Forms. Se o formulário for carregado de um servidor de fluxo de trabalho do AEM Forms, seus anexos serão adicionados ao formulário. Você pode tocar no botão de anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação vermelha especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão de notificações vermelhas. Se não houver anexos no formulário, quando você tocar no botão de anexos ![anexar](assets/attch.png), você obterá opções para anexar fotos ou scripts.
 
 Suas opções são:
 
@@ -86,7 +86,4 @@ Os anexos para formulários móveis sincronizados com os servidores OSGi do AEM 
 
 Os anexos de nível de formulário não são suportados para formulários adaptáveis carregados no aplicativo a partir de um servidor OSGi do AEM Forms. Para anexar imagens ou notas de texto, ative os anexos de nível de campo no formulário ao criá-lo. Arraste e solte o componente de anexo de arquivo do navegador de componentes no campo.
 
-No caso de formulários adaptáveis, é possível exibir os arquivos anexados no documento de registro (DoR). Consulte [Gerar documento de registro para formulários](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adaptáveis não XFA.
-
-[Contate o suporte](https://www.adobe.com/account/sign-in.supportportal.html)
-
+No caso de formulários adaptáveis, você pode visualização os arquivos anexados no documento de registro (DoR). Consulte [Gerar Documento de registro para formulários](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adaptáveis não XFA.
