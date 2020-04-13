@@ -3,24 +3,24 @@ title: Processar ativos para realizar processos de negócios, realizar auditoria
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf291206a8c0e435053fbdba493ad949619ee5b3
+source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
 
 ---
 
 
 # Processar ativos digitais {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] permite que você trabalhe com seus ativos digitais de várias maneiras para permitir um processamento robusto de ativos. Você pode usar os métodos de processamento disponíveis ou estender os métodos para garantir a conclusão completa dos processos de negócios usando, auditorias e conformidade, detecção e distribuição de e a sanidade básica de seus ativos digitais. Você pode fazer tudo isso, além de atingir a escala e a personalização necessárias.
+[!DNL Adobe Experience Manager Assets] permite que você trabalhe com seus ativos digitais de várias maneiras para permitir um processamento robusto de ativos. Você pode usar os métodos de processamento padrão ou personalizado para garantir a conclusão completa dos processos de negócios, as auditorias e a conformidade, a descoberta e distribuição e a sanidade básica dos ativos digitais. Você pode fazer as tarefas de gerenciamento de ativos e, ao mesmo tempo, atingir a escala e a personalização necessárias.
 
 ## Entender workflows {#understand-workflows}
 
-Para processamento de ativos, [!DNL Experience Manager] usa workflows. Os Workflows ajudam a automatizar a lógica comercial ou as atividades. As etapas granulares para realizar tarefas específicas são fornecidas por padrão e os desenvolvedores podem criar suas próprias etapas personalizadas. Essas etapas podem ser combinadas em uma ordem lógica para criar workflows. Por exemplo, um fluxo de trabalho pode aplicar automaticamente uma marca d&#39;água em imagens carregadas com base em critérios específicos, como metadados incorporados à imagem, pasta para a qual é carregado, resolução da imagem e assim por diante. Outro exemplo é um fluxo de trabalho configurado para criar imagens de marca d&#39;água de tal maneira e, ao mesmo tempo, atendendo a várias necessidades de gerenciamento de ativos, como adicionar metadados, criar execuções, adicionar tags inteligentes para descoberta de ativos, publicar em um armazenamento de dados, definir permissões para acesso do usuário e assim por diante.
+Para processamento de ativos, [!DNL Experience Manager] usa workflows. Os Workflows ajudam a automatizar a lógica comercial ou as atividades. As etapas granulares para realizar tarefas específicas são fornecidas por padrão e os desenvolvedores podem criar suas próprias etapas personalizadas. Essas etapas podem ser combinadas em uma ordem lógica para criar workflows. Por exemplo, um fluxo de trabalho pode aplicar uma marca d&#39;água em imagens carregadas com base em critérios específicos, como pasta para a qual é carregado, resolução da imagem e assim por diante. Outro exemplo é um fluxo de trabalho configurado para marca d&#39;água e, simultaneamente, adicionar metadados, criar execuções, adicionar tags inteligentes e publicar em um armazenamento de dados.
 
-## workflows padrão disponíveis no Experience Manager {#default-workflows}
+## workflows padrão disponíveis em [!DNL Experience Manager]{#default-workflows}
 
 Por padrão, todos os ativos carregados são processados usando o fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM. O fluxo de trabalho é executado para cada ativo carregado e realiza tarefas básicas de gerenciamento de ativos, como geração de representação, gravação de metadados, extração da página, extração de mídia e transcodificação.
 
-Para ver os vários modelos de fluxo de trabalho disponíveis por padrão, consulte [!UICONTROL Ferramentas > Fluxo de trabalho > Modelos] em [!DNL Experience Manager].
+Para ver os vários modelos de fluxo de trabalho disponíveis por padrão, consulte **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]** em [!DNL Experience Manager].
 
 ![Alguns dos fluxos de trabalho padrão](assets/aem-default-workflows.png)
 
@@ -38,6 +38,9 @@ Use workflows em ativos digitais para ativar o ativo ou criar marcas d&#39;água
 
 ## Aplicar um fluxo de trabalho a um ativo {#apply-a-workflow-to-an-asset}
 
+<!-- 
+TBD: Add animated GIF for these steps instead of all these screenshots.
+-->
 Para aplicar um fluxo de trabalho a um ativo, siga estas etapas:
 
 1. Navegue até o local do ativo para o qual você deseja start um fluxo de trabalho e clique no ativo para abrir a página do ativo. Selecione **[!UICONTROL Linha]** do tempo no menu para exibir a linha do tempo.
@@ -46,11 +49,7 @@ Para aplicar um fluxo de trabalho a um ativo, siga estas etapas:
 
 1. Clique em **[!UICONTROL Ações]** na parte inferior para abrir a lista de ações disponíveis para o ativo.
 
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
 1. Clique em Fluxo de trabalho **[!UICONTROL do]** Start na lista.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
 
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
@@ -83,7 +82,7 @@ Para aplicar um fluxo de trabalho a um ativo, siga estas etapas:
 
 ## Aplicar um fluxo de trabalho a várias pastas {#applying-a-workflow-to-multiple-folders}
 
-O procedimento para aplicar um fluxo de trabalho a várias pastas é semelhante ao procedimento para aplicar um fluxo de trabalho a vários ativos. Selecione as pastas no console Ativos e execute as etapas de 2 a 7 do procedimento para [aplicar um fluxo de trabalho a vários ativos](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
+O procedimento para aplicar um fluxo de trabalho a várias pastas é semelhante ao procedimento para aplicar um fluxo de trabalho a vários ativos. Selecione as pastas na [!DNL Assets] interface e execute as etapas 2 a 7 do procedimento para [aplicar um fluxo de trabalho a vários ativos](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
 
 ## Aplicar um fluxo de trabalho a uma coleção {#applying-a-workflow-to-a-collection}
 
@@ -93,7 +92,7 @@ Consulte [aplicar um fluxo de trabalho em uma coleção](/help/assets/managing-c
 
 Os administradores podem configurar o fluxo de trabalho para executar e processar automaticamente ativos com base em condições predefinidas. A funcionalidade é útil para usuários de linha de negócios e comerciantes, por exemplo, para criar fluxo de trabalho personalizado em pastas específicas. Diga que todos os ativos da fotografia de uma agência podem ter marca d&#39;água ou que todos os ativos carregados por um freelancer podem ser processados para criar representações específicas.
 
-Para um modelo de fluxo de trabalho, os usuários podem criar um inicializador de fluxo de trabalho que o inicialize. Os administradores podem fornecer acesso aos comerciantes para criar os workflows e configurar o iniciador. Os usuários podem modificar o fluxo de trabalho padrão do Ativo [!UICONTROL de atualização do] DAM para adicionar as etapas adicionais necessárias para processar ativos específicos. O fluxo de trabalho é executado em todos os ativos carregados recentemente, portanto, use uma das seguintes abordagens para limitar a execução das etapas extras em ativos específicos:
+Para um modelo de fluxo de trabalho, os usuários podem criar um inicializador de fluxo de trabalho que o execute. Um iniciador de fluxo de trabalho monitora as alterações no repositório de conteúdo e executa o fluxo de trabalho quando as condições predefinidas são cumpridas. Os administradores podem fornecer acesso aos comerciantes para criar os workflows e configurar o iniciador. Os usuários podem modificar o fluxo de trabalho padrão do Ativo [!UICONTROL de atualização do] DAM para adicionar as etapas adicionais necessárias para processar ativos específicos. O fluxo de trabalho é executado em todos os ativos carregados recentemente. Use uma das seguintes abordagens para limitar a execução das etapas extras em ativos específicos:
 
 * Faça uma cópia do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM e modifique-o para ser executado em uma hierarquia de pastas específica. Essa abordagem é útil para algumas pastas.
 * As etapas de processamento adicionais podem ser adicionadas usando uma divisão [OU](/help/sites-developing/workflows-step-ref.md#or-split) , como aplicável condicionalmente a quantas pastas forem necessárias.
@@ -102,6 +101,7 @@ Para um modelo de fluxo de trabalho, os usuários podem criar um inicializador d
 >
 >* [Aplicar e participar de workflows](/help/sites-authoring/workflows.md)
 >* [Criar modelos de fluxo de trabalho e ampliar a funcionalidade do fluxo de trabalho](/help/sites-developing/workflows.md)
+>* [Métodos para executar workflows](/help/sites-administering/workflows-starting.md)
 >* [Práticas recomendadas de fluxo de trabalho](/help/sites-developing/workflows-best-practices.md)
 >* [Artigo da comunidade sobre a modificação de ativos usando o fluxo de trabalho](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
