@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
 
 ---
 
@@ -878,65 +878,61 @@ Este é um exemplo de como configurar o AEM para imprimir anotações em CJK (ch
 1. Configure o arquivo PDF de anotação definindo o parâmetro font-family como `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Esta configuração está disponível por padrão e funciona para todos os idiomas europeus e CJK.
 1. Se o idioma de sua escolha for diferente dos idiomas mencionados na etapa 2, anexe uma entrada apropriada (separada por vírgulas) à família de fontes padrão.
 
-## Versões de ativos {#asset-versioning}
+## Criar, gerenciar, pré-visualização e reverter versões de ativos {#asset-versioning}
 
 O controle de versão cria um instantâneo de ativos digitais em um ponto específico do tempo. O controle de versão ajuda a restaurar ativos para um estado anterior posteriormente. Por exemplo, se você deseja desfazer uma alteração feita em um ativo, restaure a versão não editada do ativo.
 
-A seguir estão os cenários nos quais você cria versões:
+Você pode criar versões no Experience Manager nos seguintes cenários:
 
-* Você modifica uma imagem em um aplicativo diferente e faz upload para os ativos AEM. Uma versão da imagem é criada para que sua imagem original não seja substituída.
+* Carregue um ativo com o mesmo nome de arquivo que existe no mesmo local. Pode ser um novo ativo ou uma versão modificada do mesmo ativo.
+* Edite uma imagem no Experience Manager e salve as alterações.
 * Edite os metadados de um ativo.
-* Use o aplicativo de desktop AEM para fazer check-out de um ativo existente e salvar as alterações. Uma nova versão é criada sempre que o ativo é salvo.
+* Use o aplicativo de desktop do AEM para fazer check-out de um ativo existente, editá-lo e [fazer upload de suas alterações](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Quando você cria uma versão para um ativo, os metadados e as execuções são salvos junto com a versão. As execuções são alternativas renderizadas das mesmas imagens, por exemplo, uma execução PNG de um arquivo JPEG carregado.
 
-A funcionalidade de controle de versão permite fazer o seguinte:
+No Experience Manager, você pode:
 
 * Criar uma versão de um ativo.
 * Visualização da revisão atual de um ativo.
 * Restaure o ativo para uma versão anterior.
 
-1. Navegue até o local do ativo para o qual deseja criar uma versão e toque/clique nele para abrir sua página de ativo.
+1. Navegue até o local do ativo para o qual deseja criar uma versão e clique nele para abrir sua pré-visualização. No canto superior esquerdo da página, abra o menu e selecione **[!UICONTROL Linha do tempo]**.
 
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** no menu.
+   ![No menu de navegação esquerdo, selecione a opção linha do tempo](assets/timeline.png)
 
-   ![linha do tempo](assets/timeline.png)
+*Figura: Abra o menu na área superior esquerda da página e selecione a opção[!UICONTROL Linha do tempo].*
 
-1. Clique nas **[!UICONTROL Ações]** na parte inferior para visualização das ações disponíveis que podem ser executadas no ativo.
+1. Para criar uma versão do ativo:
 
-1. Toque/clique em **[!UICONTROL Salvar como versão]** para criar uma versão para o ativo.
+   * Clique em **[!UICONTROL Ações]** na parte inferior.
+   * Clique em **[!UICONTROL Salvar como versão]** para criar uma versão para o ativo. Como opção, adicione um rótulo e um comentário.
+   * Clique em **[!UICONTROL Criar]** para criar uma versão.
 
-   ![chlimage_1-250](assets/chlimage_1-46.png)
+      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
 
-1. Adicione um rótulo e um comentário e clique em **[!UICONTROL Criar]** para criar uma versão. Como alternativa, toque/clique em **Cancelar** para sair da operação.
+1. Para visualização de uma versão de um ativo:
 
-   ![chlimage_1-251](assets/chlimage_1-47.png)
+   * Clique em **[!UICONTROL Mostrar tudo]** na [!UICONTROL Linha do tempo].
+   * Clique em **[!UICONTROL Versões]**. Todas as versões criadas para um ativo são listadas na barra lateral esquerda.
 
-1. Para exibir a nova versão, abra a lista **[!UICONTROL Mostrar tudo]** na linha do tempo da página Detalhes do ativo ou na interface do usuário do Assets e escolha **[!UICONTROL Versões]**. Todas as versões criadas para um ativo são listadas na guia Linha do tempo. Filtre a lista para mostrar Versões ao clicar na seta suspensa e selecionar **[!UICONTROL Versões]** na lista.
+      ![version_option](assets/versions_option.png)
 
-   ![version_option](assets/versions_option.png)
+   * Selecione uma versão específica do ativo e clique em Versão **[!UICONTROL da]** Pré-visualização.
 
-1. Selecione uma versão específica para o ativo a ser pré-visualização ou permita que ele apareça na interface do usuário do Assets.
+1. Para reverter para uma versão anterior do ativo, faça o seguinte: Após a reversão, essa versão é exibida na [!DNL Assets] interface e está disponível para uso.
 
-   ![select_version](assets/select_version.png)
+   * Clique em uma versão do ativo. Como opção, adicione um rótulo e um comentário.
+   * Click **[!UICONTROL Revert to this Version]**.
 
-   >[!NOTE]
-   >
-   >Você também pode selecionar o ativo na visualização [da](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) Lista ou na visualização [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)Coluna.
+      ![select_version](assets/select_version.png)
 
-1. Adicione um rótulo e um comentário para a versão para reverter para a versão específica na interface do usuário do Assets.
+1. Para comparar duas versões de uma imagem, siga estas etapas:
+   * Clique na versão a ser comparada com a versão atual.
+   * Arraste o controle deslizante para a esquerda para sobrepor esta versão sobre a versão atual e compare.
+   ![Use o controle deslizante para comparar as versões selecionadas de um ativo com a versão atual](assets/version-slider.gif)
 
-   ![save_version](assets/save_version.png)
-
-1. Para gerar uma visualização da versão, toque/clique em **[!UICONTROL Visualizar versão]**.
-1. Para exibir essa versão na interface do usuário do Assets, selecione **[!UICONTROL Reverter para esta versão]**.
-1. Para comparar entre duas versões, vá para a página de ativos do ativo e toque/clique na versão a ser comparada com a versão atual.
-
-   ![select_version_to-compare](assets/select_version_tocompare.png)
-
-1. Na linha do tempo, selecione a versão que deseja comparar e arraste o controle deslizante para a esquerda para sobrepor essa versão à versão atual e compare.
-
-   ![compare_Versões](assets/compare_versions.png)
+   *Figura: Use o controle deslizante para comparar facilmente as versões selecionadas de um ativo com a versão atual.*
 
 ### Start de um fluxo de trabalho em um ativo {#starting-a-workflow-on-an-asset}
 
