@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be4a8a78b8555149809b8026bfd059f4cc9e9401
+source-git-commit: 9daad219d885c1c6972ace0b247f3537dcdc38a9
 
 ---
 
@@ -104,7 +104,7 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 
 * Falha na geração da execução de ativos com ${extension} (NPR-32294).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
 
 * O arquivo ZIP baixado do DAM não pode ser aberto usando o WinZip (NPR-32293).
 
@@ -177,6 +177,8 @@ Para obter uma lista completa dos recursos, destaques principais, recursos princ
 * A geração do URL da biblioteca de inicialização é baseada somente em `path` e `library_name` valores da API de inicialização e não se baseia no `library_path` valor (NPR-31550).
 
 * Uma mensagem de erro é exibida durante o processamento de itens relacionados ao LiveFyre (FYR-12420).
+
+* ReportSuitesServlet está vulnerável a SSRF (NPR-32156).
 
 ### Editor de modelos WCM {#wcm-template-editor-6540}
 
