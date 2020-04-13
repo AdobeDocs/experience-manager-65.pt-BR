@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
+source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
 
 ---
 
@@ -902,9 +902,7 @@ A funcionalidade de controle de versão permite fazer o seguinte:
 
    ![linha do tempo](assets/timeline.png)
 
-1. Toque/clique no ícone **[!UICONTROL Ações]** (seta) na parte inferior para visualização das ações disponíveis que podem ser executadas no ativo.
-
-   ![chlimage_1-249](assets/chlimage_1-45.png)
+1. Clique nas **[!UICONTROL Ações]** na parte inferior para visualização das ações disponíveis que podem ser executadas no ativo.
 
 1. Toque/clique em **[!UICONTROL Salvar como versão]** para criar uma versão para o ativo.
 
