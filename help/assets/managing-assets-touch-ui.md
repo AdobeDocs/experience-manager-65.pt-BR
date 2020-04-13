@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
+source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
 
 ---
 
@@ -880,7 +880,7 @@ Este é um exemplo de como configurar o AEM para imprimir anotações em CJK (ch
 
 ## Criar, gerenciar, pré-visualização e reverter versões de ativos {#asset-versioning}
 
-O controle de versão cria um instantâneo de ativos digitais em um ponto específico do tempo. O controle de versão ajuda a restaurar ativos para um estado anterior posteriormente. Por exemplo, se você deseja desfazer uma alteração feita em um ativo, restaure a versão não editada do ativo.
+O controle de versão cria um instantâneo de ativos digitais em um ponto específico do tempo. O controle de versão ajuda a restaurar ativos para um estado anterior posteriormente. Por exemplo, se você deseja desfazer uma alteração feita em um ativo, restaure a versão não editada do ativo. No Experience Manager, você pode criar uma versão, visualização a revisão atual, visualização as diferenças lado a lado entre duas versões de imagens e restaurar um ativo para a versão anterior.
 
 Você pode criar versões no Experience Manager nos seguintes cenários:
 
@@ -891,17 +891,11 @@ Você pode criar versões no Experience Manager nos seguintes cenários:
 
 Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Quando você cria uma versão para um ativo, os metadados e as execuções são salvos junto com a versão. As execuções são alternativas renderizadas das mesmas imagens, por exemplo, uma execução PNG de um arquivo JPEG carregado.
 
-No Experience Manager, você pode:
-
-* Criar uma versão de um ativo.
-* Visualização da revisão atual de um ativo.
-* Restaure o ativo para uma versão anterior.
-
 1. Navegue até o local do ativo para o qual deseja criar uma versão e clique nele para abrir sua pré-visualização. No canto superior esquerdo da página, abra o menu e selecione **[!UICONTROL Linha do tempo]**.
 
    ![No menu de navegação esquerdo, selecione a opção linha do tempo](assets/timeline.png)
 
-*Figura: Abra o menu na área superior esquerda da página e selecione a opção[!UICONTROL Linha do tempo].*
+   *Figura: Abra o menu na área superior esquerda da página e selecione a opção[!UICONTROL Linha do tempo].*
 
 1. Para criar uma versão do ativo:
 
@@ -910,6 +904,8 @@ No Experience Manager, você pode:
    * Clique em **[!UICONTROL Criar]** para criar uma versão.
 
       ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+
+      *Figura: Crie uma versão de um ativo na barra lateral esquerda da[!UICONTROL Linha do tempo].*
 
 1. Para visualização de uma versão de um ativo:
 
@@ -926,6 +922,8 @@ No Experience Manager, você pode:
    * Click **[!UICONTROL Revert to this Version]**.
 
       ![select_version](assets/select_version.png)
+
+      *Figura: Selecione uma versão e reverta para ela. Ela se torna a versão atual que está disponível para os usuários do DAM.*
 
 1. Para comparar duas versões de uma imagem, siga estas etapas:
    * Clique na versão a ser comparada com a versão atual.
