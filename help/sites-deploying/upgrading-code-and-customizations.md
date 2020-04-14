@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -150,7 +150,7 @@ As configurações do ContextHub são afetadas por uma atualização. As instru�
 
 ### Personalizações do fluxo de trabalho {#workflow-customizations}
 
-É uma prática comum atualizar a modificação dos workflows prontos para uso para adicionar ou remover a funcionalidade desnecessária. Um fluxo de trabalho comum personalizado é o fluxo de trabalho do Ativo de atualização do DAM. Todos os workflows necessários para uma implementação personalizada devem ter backup e ser armazenados no controle de versão, pois podem ser substituídos durante uma atualização.
+É uma prática comum atualizar a modificação dos workflows prontos para uso para adicionar ou remover a funcionalidade desnecessária. Um fluxo de trabalho comum personalizado é o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM. Todos os workflows necessários para uma implementação personalizada devem ter backup e ser armazenados no controle de versão, pois podem ser substituídos durante uma atualização.
 
 ### Modelos editáveis {#editable-templates}
 
