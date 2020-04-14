@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -127,7 +127,7 @@ Para obter mais informações sobre a interface de criação de Comunicação in
  </tbody>
 </table>
 
-Você também pode substituir o vínculo entre uma área de público alvo e um fragmento de documento soltando o novo fragmento na área do público alvo usando a guia **Ativos** . O sombreamento da cor azul da área do público alvo ao arrastar o fragmento indica que o fragmento do documento pode ser solto na área do público alvo.
+Também é possível substituir o vínculo entre uma área de público alvo e um fragmento de documento soltando o novo fragmento na área do público alvo usando a guia **[!UICONTROL Ativos]** . O sombreamento da cor azul da área do público alvo ao arrastar o fragmento indica que o fragmento do documento pode ser solto na área do público alvo.
 
 Para obter mais informações sobre fragmentos de documento, consulte Fragmentos [de](/help/forms/using/document-fragments.md)Documento.
 
@@ -178,11 +178,11 @@ Toque no fragmento do documento, toque em ![configure_icon](assets/configure_ico
 
 1. Mude para o Canal **[!UICONTROL da Web]**. O canal da Web é exibido no editor de Comunicação interativa. Quando você alterna do canal Imprimir para o canal da Web pela primeira vez, a sincronização automática ocorre. Para obter mais informações, consulte [Sincronização do canal da Web do canal](../../forms/using/create-interactive-communication.md#synchronize)de impressão.
 
-   Como estamos usando a opção Imprimir como mestre para a Web neste exemplo, os espaços reservados para canais de impressão, o conteúdo e o vínculo de dados são sincronizados com o canal da Web. No entanto, você pode alterar e personalizar o conteúdo específico no canal da Web. [Cancele a herança](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) das áreas de público alvo e variáveis que foram geradas usando o canal de impressão para personalizar o conteúdo.
+   Como estamos usando a opção Imprimir como mestre para a Web neste exemplo, os espaços reservados para canais de impressão, o conteúdo e o vínculo de dados são sincronizados com o canal da Web. No entanto, você pode alterar e personalizar o conteúdo específico no canal da Web. [Cancele a herança](#cancelinheritance) das áreas de público alvo e variáveis que foram geradas usando o canal de impressão para personalizar o conteúdo.
 
    ![webcanelassets](assets/webchannelassets.png)
 
-   Toque no fragmento do documento, toque em ![configure_icon](assets/configure_icon.png) (Configurar) e, em seguida, toque em **[!UICONTROL Propriedades]** no sidekick da Comunicação interativa. A seção **[!UICONTROL Variáveis e objetos]** de modelo de dados lista as variáveis, incluindo as variáveis ocultas, e os objetos de modelo de dados usados nos fragmentos do documento. Use o ícone ![editar](assets/edit.svg) (Editar) ao lado de cada objeto ou variável do modelo de dados para editar as propriedades. Além disso, para fragmentos de documento que foram gerados [](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) automaticamente no canal da Web usando o canal Imprimir, use o ícone ![](assets/cancelinheritance.png) (Cancelar herança) ao lado de cada objeto de modelo de dados e variável para [cancelar a herança](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) e editá-los.
+   Toque no fragmento do documento, toque em ![configure_icon](assets/configure_icon.png) (Configurar) e, em seguida, toque em **[!UICONTROL Propriedades]** no sidekick da Comunicação interativa. A seção **[!UICONTROL Variáveis e objetos]** de modelo de dados lista as variáveis, incluindo as variáveis ocultas, e os objetos de modelo de dados usados nos fragmentos do documento. Use o ícone ![editar](assets/edit.svg) (Editar) ao lado de cada objeto ou variável do modelo de dados para editar as propriedades. Além disso, para fragmentos de documento que foram gerados [](#synchronize) automaticamente no canal da Web usando o canal Imprimir, use o ícone ![](assets/cancelinheritance.png) (Cancelar herança) ao lado de cada objeto de modelo de dados e variável para [cancelar a herança](#cancelinheritance) e editá-los.
 
 1. Para adicionar outros componentes ao canal da Web, com o canal da Web selecionado, toque em **[!UICONTROL Componentes]**. Arraste e solte componentes no canal da Web de sua Comunicação interativa, conforme necessário, e continue a configurá-los.
 
@@ -581,9 +581,9 @@ Toque no componente para visualização as seguintes opções:
 * **Pai:** Selecione o pai de um componente.
 * **Expressão SOM Visualização:** Visualização a expressão [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM do componente.
 
-* **Agrupar objetos no painel:** Agrupe os componentes em um painel para poder executar operações nesses componentes simultaneamente. Para obter detalhes, consulte **[Agrupar objetos no Painel](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **Agrupar objetos no painel:** Agrupe os componentes em um painel para poder executar operações nesses componentes simultaneamente. Para obter detalhes, consulte [Agrupar objetos no Painel](#groupobjectspanel).
 
-* **Cancelar herança:** [Cancele a herança](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) dos componentes dentro da área do público alvo para editá-los.
+* **Cancelar herança:** [Cancele a herança](#cancelinheritance) dos componentes dentro da área do público alvo para editá-los.
 
 ### Group objects in Panel {#groupobjectspanel}
 
