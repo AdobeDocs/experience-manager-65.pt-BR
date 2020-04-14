@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -84,7 +84,7 @@ O AEM Forms permite incorporar [perfeitamente um Formulário](../../forms/using/
 
 #### Restringir a disponibilidade de modelos de formulários adaptáveis a caminhos específicos {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-Formulários adaptáveis adicionaram suporte para a propriedade cq:allowPaths. A propriedade [restringe a disponibilidade de modelos de Formulários adaptáveis a caminhos](../../forms/using/creating-adaptive-form.md#main-pars-text)específicos.
+Formulários adaptáveis adicionaram suporte para a propriedade cq:allowPaths. A propriedade [restringe a disponibilidade de modelos de Formulários adaptáveis a caminhos](creating-adaptive-form.md#adaptive-form-templates)específicos.
 
 #### Adicionar caixas de seleção ao formulário adaptativo dinamicamente {#add-check-boxes-to-the-adaptive-form-dynamically}
 
