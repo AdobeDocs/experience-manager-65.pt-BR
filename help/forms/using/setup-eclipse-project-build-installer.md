@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 Execute as seguintes etapas na sequência recomendada para criar o aplicativo Android para formulários AEM.
 
-1. [Baixar o pacote de código-fonte do aplicativo AEM Forms](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-277929160)
-1. [Definir as variáveis de ambiente](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-111803610)
-1. [Criar aplicativo AEM Forms padrão](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-heading-0)
+1. [Baixar o pacote de código-fonte do aplicativo AEM Forms](#download-android-zip)
+1. [Definir as variáveis de ambiente](#set-environment-variable-android)
+1. [Criar aplicativo AEM Forms padrão](#set-up-the-xcode-project)
 
 ## Baixar o pacote de código-fonte do aplicativo AEM Forms {#download-android-zip}
 
@@ -50,8 +50,8 @@ Defina as seguintes variáveis de ambiente antes de iniciar o processo de criaç
 
 Depois de salvar o arquivo adobe-lc-mobileworkspace-src-&lt;versão>.zip no sistema de arquivos local e definir as variáveis do ambiente, crie um aplicativo AEM Forms Android padrão usando qualquer uma das seguintes opções:
 
-* [Criar aplicativo AEM Forms usando o Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-1347434739)
-* [Gerar arquivo .apk usando o Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-0)
+* [Criar aplicativo AEM Forms usando o Android Studio](#using-android-studio)
+* [Gerar arquivo .apk usando o Android Studio](#generate-apk-android-studio)
 
 ### Criar aplicativo AEM Forms usando o Android Studio {#using-android-studio}
 
