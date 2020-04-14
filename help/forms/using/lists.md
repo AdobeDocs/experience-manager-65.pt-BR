@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -65,7 +65,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
    * **Condição**: Toque em para inserir uma condição. Inserir texto com base na condição. Se a condição for verdadeira, o texto estará visível na letra, caso contrário não.
    * **Adicionar descrição**: Adicione uma anotação a um texto. Esses são metadados visíveis para o autor, mas não são parte da carta criada.
    * **Quebra** de página: Se você definir o atributo de quebra de página de um módulo de texto como falso, o módulo de texto não será quebrado nas páginas.
-   Um editor de texto é aberto. Insira o texto. A barra de ferramentas muda dependendo do tipo de edições que você escolher fazer: Parágrafo, Alinhamento ou Listagem:
+   Um editor de texto é aberto. Enter the text. A barra de ferramentas muda dependendo do tipo de edições que você escolher fazer: Parágrafo, Alinhamento ou Listagem:
 
    ![Selecionar tipo de barra de ferramentas](assets/toolbarselection.png)
 
@@ -265,7 +265,7 @@ Para alterar a ordem dos ativos na lista, toque e segure o ícone de setas ( ![a
    * **Selecionado:** Quando essa opção é selecionada, o conteúdo é pré-selecionado na interface do usuário Criar correspondência.
    * **Ignorar estilo:** Quando essa opção é selecionada, o conteúdo ignora marcadores e numeração na interface do usuário Criar correspondência. (Essa opção não está disponível para módulos de imagem. Além disso, entre Ignorar estilo, Composto e Ignorar estilo de Lista, somente uma das opções pode ser aplicada a um módulo. Uma dessas opções pode ser usada para um módulo quando você seleciona Adicionar marcadores para um módulo.)
    * **Recuo:** Você pode alterar o nível de recuo de cada módulo/conteúdo selecionado como parte da Lista. O recuo é especificado em termos de Níveis (começando com zero), de forma que cada nível de recuo corresponda a um preenchimento de 36 pontos.
-   * **Composto:** Quando selecionada, a numeração composta é aplicada como uma combinação do estilo de Lista externo (pai) e seu próprio estilo. A numeração composta nessa Lista aninhada se baseia na ordem em que essa Lista aninhada aparece na Lista externa.
+   * **Composto:** Quando selecionada, a numeração composta é aplicada como uma combinação do estilo de Lista externo (pai) e seu próprio estilo. A numeração composta nessa Lista aninhada é baseada na ordem em que essa Lista aninhada aparece na Lista externa.
    * **Ignorar estilo de lista:** Se a opção Numeração composta estiver desmarcada, a opção Ignorar estilo de Lista estará ativada. Essa seleção ignora o estilo próprio da Lista aninhada e a numeração continua a partir da Lista externa. Portanto, os módulos da lista aninhada são tratados como parte da própria lista externa, ignorando quaisquer estilos especificados na Lista aninhada. Se a opção Ignorar estilo de Lista estiver desmarcada para uma Lista aninhada, os módulos que fazem parte dessa Lista aninhada terão seu próprio estilo de numeração.
    * **Manter com o próximo:** Define a quebra de página para os ativos contidos em uma lista. Se você definir a propriedade Manter com o próximo de um ativo de uma lista como **Ligado**, esse ativo e o próximo ativo permanecerão na mesma página. Isso implica que o conteúdo do ativo selecionado e do ativo seguinte não se dividirão nas páginas.
 
@@ -408,7 +408,7 @@ Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em 
    * **Rodapé**: texto a ser exibido para o rodapé
    * **Tipo**: tipo de coluna adicional. Área do campo ou do Público alvo. O tipo é ativado para tabelas de espaço reservado estáticas. O tipo pode ser definido no nível da coluna e não no nível da célula. Todas as células em uma coluna estendida seriam do mesmo tipo. Para uma tabela dinâmica, todas as colunas são do tipo Campo. Para tabelas sem espaço reservado, não é possível definir o tipo de colunas adicionais. Neste caso, o tipo de células adicionais na coluna alargada é igual ao tipo da última coluna dessa linha; e o tipo de célula em linha adicional é o mesmo que o tipo da última célula nessa coluna.
    * **Taxa de largura:** proporção das larguras de coluna da tabela.
-   Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em fragmentos de layout, consulte [Exemplo com arquivos de amostra: usando tabelas estáticas e dinâmicas em uma letra](#main-pars-header-28).
+   Para obter um exemplo detalhado de como usar tabelas estáticas e dinâmicas em fragmentos de layout, consulte [Exemplo com arquivos de amostra: usando tabelas estáticas e dinâmicas em uma letra](#examplewithsamplefiles).
 
 1. Toque em **Salvar**.
 
