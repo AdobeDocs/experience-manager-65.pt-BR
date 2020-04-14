@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -23,7 +23,7 @@ Para que ocorra a transcodificação correta, o administrador deve [instalar o F
 
 ## Configurar perfis de vídeo {#configure-video-profiles}
 
-Talvez você queira definir perfis de vídeo para usar em elementos HTML5. Os escolhidos aqui são usados em ordem. Para acessar, use o Modo [de](/help/sites-authoring/default-components-designmode.md) design (somente interface clássica) e selecione a guia **[!UICONTROL Perfis]** :
+Talvez você queira definir perfis de vídeo para usar em elementos HTML5. Os escolhidos aqui são usados em ordem. Para acessar, use o Modo [de](/help/sites-authoring/default-components-designmode.md) design (somente Interface clássica) e selecione a guia **[!UICONTROL Perfis]** :
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
@@ -33,13 +33,13 @@ Você também pode configurar o design dos componentes e parâmetros do vídeo p
 
 The Video Component relies on the third-party open-source product FFmpeg for proper transcoding of videos that can be downloaded from [https://ffmpeg.org/](https://ffmpeg.org/). Depois de instalar o FFmpeg, é necessário configurar o AEM para usar um codec de áudio específico e opções específicas de tempo de execução.
 
-**Para instalar o FFmpeg para sua plataforma**:
+**Para instalar o FFmpeg para a sua plataforma**:
 
 * **No Windows:**
 
    1. Baixar o binário compilado como `ffmpeg.zip`
    1. Descompacte para uma pasta.
-   1. Defina a variável de ambiente do sistema como `PATH``<*your-ffmpeg-locatio*n>\bin`
+   1. Defina a variável de ambiente do sistema `PATH` como `<*your-ffmpeg-locatio*n>\bin`
    1. Reinicie o AEM.
 
 * **No Mac OS X:**
@@ -51,7 +51,7 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
       `sudo port install ffmpeg`
 
-      `FFmpeg` deve estar em `PATH` modo que o AEM possa selecioná-lo via linha de comando.
+      `FFmpeg` deve estar em `PATH` modo que o AEM possa selecioná-lo por meio da linha de comando.
 
 * **Usar a versão pré-compilada para o OS X 10.6:**
 
@@ -88,5 +88,5 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 >[!NOTE]
 >
->Os modelos de fluxo de trabalho OTB não são preservados quando você atualiza sua instância do AEM. A Adobe recomenda copiar os modelos de fluxo de trabalho OTB antes de editá-los. Por exemplo, copie o modelo de Ativo de atualização de DAM OOTB antes de editar a etapa de Transcodificação FFmpeg no modelo de Ativo de atualização de DAM para escolher nomes de perfil de vídeo existentes antes da atualização. Em seguida, você pode sobrepor o `/apps` nó para permitir que o AEM recupere as alterações personalizadas no modelo OOTB.
+>Os modelos de fluxo de trabalho OTB não são preservados quando você atualiza sua instância do AEM. A Adobe recomenda que você copie modelos de fluxo de trabalho OOTB antes de editá-los. Por exemplo, copie o modelo de Ativo [!UICONTROL de atualização de] DAM OOTB antes de editar a etapa de Transcodificação de FFmpeg no modelo de Ativo [!UICONTROL de atualização de] DAM para escolher nomes de perfis de vídeo existentes antes da atualização. Em seguida, você pode sobrepor o `/apps` nó para permitir que o AEM recupere as alterações personalizadas no modelo OOTB.
 
