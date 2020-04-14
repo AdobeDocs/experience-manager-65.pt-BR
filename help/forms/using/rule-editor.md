@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -306,7 +306,7 @@ Para definir uma regra com base em uma função personalizada, selecione Saída 
 
 ![Funções personalizadas](assets/custom_functions_set_options_new.png)
 
-Para criar uma função personalizada, consulte funções [personalizadas no editor](../../forms/using/rule-editor.md#main-pars-header-296220653)de regras.
+Para criar uma função personalizada, consulte funções [personalizadas no editor](#custom-functions)de regras.
 
 Para definir uma regra com base em um modelo de dados de formulário:
 
@@ -349,7 +349,7 @@ A guia Objetos de formulário mostra uma visualização hierárquica de todos os
 
 Os objetos de formulário com uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se qualquer regra aplicada a um objeto de formulário for inválida, o objeto de formulário será marcado com um ponto Amarelo.
 
-A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx. de, Média de, Número de e Validar Formulário. É possível usar essas funções para calcular valores em painéis repetitivos e linhas de tabela e usá-los em declarações de ação e condição ao gravar regras. Entretanto, também é possível criar funções [](../../forms/using/rule-editor.md#custom-functions) personalizadas.
+A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx. de, Média de, Número de e Validar Formulário. É possível usar essas funções para calcular valores em painéis repetitivos e linhas de tabela e usá-los em declarações de ação e condição ao gravar regras. Entretanto, também é possível criar funções [](#custom-functions) personalizadas.
 
 ![A guia Funções](assets/functions.png)
 
