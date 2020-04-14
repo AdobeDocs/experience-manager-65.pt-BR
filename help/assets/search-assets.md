@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 25acffc6a0101be4ea6811b92c40bc76f554f5f0
+source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
 
 ---
 
@@ -147,7 +147,7 @@ Na interface do usuário do AEM, os usuários podem pesquisar ativos [do](/help/
 
 ### Ativos do Dynamic Media {#dmassets}
 
-Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media > Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
+Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
 
 ### Pesquisar usando valores específicos em campos de metadados {#gqlsearch}
 
