@@ -3,7 +3,7 @@ title: Use o Connected Assets para compartilhar ativos do DAM no fluxo de trabal
 description: Use os ativos disponíveis em uma implantação remota do Adobe Experience Manager Assets ao criar suas páginas da Web em outra implantação do Experience Manager Site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
 
 ---
 
@@ -95,7 +95,7 @@ Para configurar a conectividade do Connected Assets e dos Sites local, siga esta
 
    >[!NOTE]
    >
-   >Todas as representações disponíveis na implantação remota do AEM são buscadas, quando os autores buscam um ativo. Se você quiser criar mais representações de um ativo buscado, pule esta etapa de configuração. O fluxo de trabalho do Ativo de atualização do DAM é acionado e cria mais execuções. Essas representações estão disponíveis somente na implantação local do Sites e não na implantação remota do DAM.
+   >Todas as representações disponíveis na implantação remota do AEM são buscadas, quando os autores buscam um ativo. Se você quiser criar mais representações de um ativo buscado, pule esta etapa de configuração. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. Adicione a instância do AEM Sites como uma das **[!UICONTROL Origens permitidas]** na configuração remota do CORS do AEM Assets.
 
@@ -111,7 +111,7 @@ Os autores do site usam o Localizador de conteúdo para se conectar à instânci
 
 Os autores podem usar os ativos disponíveis nas instâncias do DAM local e do DAM remoto, em uma única página da Web. Use o Localizador de conteúdo para alternar entre a pesquisa no DAM local ou a pesquisa no DAM remoto.
 
-São buscadas somente as tags de ativos remotos que têm uma tag exata correspondente - com a mesma hierarquia de taxonomia - disponível na instância do Sites local. Quaisquer outras tags são descartadas. Os autores podem pesquisar ativos remotos usando todas as tags presentes na implantação remota do AEM, já que o AEM oferece uma pesquisa em texto completo.
+Somente as tags de ativos remotos que têm uma tag correspondente exata junto com a mesma hierarquia de taxonomia, estão disponíveis na instância de Sites local. Quaisquer outras tags são descartadas. Os autores podem pesquisar ativos remotos usando todas as tags presentes na implantação remota do AEM, já que o AEM oferece uma pesquisa em texto completo.
 
 ### Apresentação do uso {#walk-through-of-usage}
 
