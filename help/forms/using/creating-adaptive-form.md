@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -145,7 +145,7 @@ Além disso, você pode usar o editor de modelos para criar seus próprios model
 
 >[!NOTE]
 >
->Quando você abre um formulário adaptável criado usando o modelo avançado para edição, uma mensagem de erro é exibida. O modelo avançado tem um componente Etapa de assinatura e o Adobe Sign está habilitado para ele por padrão. Crie e selecione uma configuração [em nuvem do](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configure um assinante](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) para resolver o erro.
+>Quando você abre um formulário adaptável criado usando o modelo avançado para edição, uma mensagem de erro é exibida. O modelo avançado tem um componente Etapa de assinatura e o Adobe Sign está habilitado para ele por padrão. Crie e selecione uma configuração [em nuvem do](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configure um assinante](working-with-adobe-sign.md#addsignerstoanadaptiveform) para resolver o erro.
 
 ## Editar propriedades do Modelo de formulário de um formulário adaptável {#edit-form-model}
 
