@@ -1,6 +1,6 @@
 ---
 title: Pós-processamento de cartas e comunicações interativas
-seo-title: Pós-processamento de cartas
+seo-title: Post Processing of Letters
 description: O pós-processamento de cartas no Gerenciamento de correspondência permite criar processos de publicação do AEM e do Forms, como impressão e-mail, e integrá-los às suas cartas.
 seo-description: O pós-processamento de cartas no Gerenciamento de correspondência permite criar processos de publicação do AEM e do Forms, como impressão e-mail, e integrá-los às suas cartas.
 uuid: 40cb349d-6ba2-4794-9ec6-dcab15c35b8d
@@ -10,24 +10,24 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
 
-# Pós-processamento de cartas e comunicações interativas{#post-processing-of-letters-and-interactive-communications}
+# Post processing of letters and interactive communications{#post-processing-of-letters-and-interactive-communications}
 
 ## Pós-processamento {#post-processing}
 
-Os agentes podem associar e executar fluxos de trabalho de pós-processamento em letras e comunicações interativas. O processo de postagem a ser executado pode ser selecionado na exibição Propriedades do modelo Carta. Você pode configurar processos de publicação para enviar emails, imprimir, enviar fax ou arquivar suas cartas finais.
+Os agentes podem associar e executar workflows de pós-processamento em letras e comunicações interativas. Post process to be executed can be selected in the Properties view of the Letter template. Você pode configurar processos de publicação para enviar emails, imprimir, enviar fax ou arquivar suas cartas finais.
 
 ![Pós-processamento](assets/ppoverview.png)
 
-Para associar processos de publicação a letras ou comunicações interativas, primeiro é necessário configurar os processos de publicação. Dois tipos de fluxos de trabalho podem ser executados em letras enviadas:
+To associate post processes with letters or interactive communications, you first need to set up the post processes. Dois tipos de workflows podem ser executados em cartas enviadas:
 
-1. **** Fluxo de trabalho dos formulários: Esses são os fluxos de trabalho de gerenciamento de processos do AEM Forms em JEE. Instruções para configurar o fluxo de trabalho [do](../../forms/using/submit-letter-topostprocess.md#main-pars-header-3)Forms.
+1. **Fluxo de trabalho dos formulários:** Estes são os workflows de gerenciamento de processos do AEM Forms em JEE. Instruções para configurar o fluxo de trabalho [do](#formsworkflow)Forms.
 
-1. **** Fluxo de trabalho do AEM: Os fluxos de trabalho do AEM também podem ser usados como processos de publicação para cartas enviadas. Instruções para configurar o fluxo de trabalho [do](../../forms/using/aem-forms-workflow.md)AEM.
+1. **Fluxo de trabalho do AEM:** workflows AEM também podem ser usados como processos de publicação para cartas enviadas. Instruções para configurar o fluxo de trabalho [do](../../forms/using/aem-forms-workflow.md)AEM.
 
 ## Fluxo de trabalho dos formulários {#formsworkflow}
 
@@ -53,66 +53,66 @@ Para associar processos de publicação a letras ou comunicações interativas, 
 
    Por exemplo, se a lista suspensa na página Propriedades da letra exibir o nome do processo como Fluxo de trabalho do Forms -> ValidCCPostProcess/SaveXML, adicione um Nome de serviço como `ValidCCPostProcess/SaveXML`.
 
-1. Para usar o AEM Forms em fluxos de trabalho JEE para pós-processamento, configure os parâmetros e as saídas necessários. Os valores padrão dos parâmetros são indicados abaixo.
+1. Para usar o AEM Forms em workflows JEE para pós-processamento, configure os parâmetros e as saídas necessários. Os valores padrão dos parâmetros são indicados abaixo.
 
    Acesse a página Configurações do console da Web do Adobe Experience Manager > Configurações **[!UICONTROL de gerenciamento de]** correspondência e configure os seguintes parâmetros:
 
-   1. **** inPDFDoc (parâmetro de documento PDF): Um documento PDF como entrada. Esta entrada contém a letra renderizada como entrada. Os nomes de parâmetros indicados são configuráveis. Eles podem ser configurados nas configurações do Gerenciamento de correspondência a partir da configuração.
-   1. **** inXMLDoc (parâmetro de dados XML): Um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário na forma de XML.
-   1. **** inXDPDoc (parâmetro de documento XDP): Um documento XML como entrada. Esta entrada contém layout subjacente (XDP).
-   1. **** inAttachmentDocs (parâmetro Documentos de anexo): Um parâmetro de entrada de lista. Esta entrada contém todos os anexos como entrada.
-   1. **** redirectURL (Redirecionar saída de URL): Um tipo de saída que indica o url para o qual redirecionar.
+   1. **inPDFDoc (parâmetro de documento PDF):** Um documento PDF como entrada. Esta entrada contém a letra renderizada como entrada. Os nomes de parâmetros indicados são configuráveis. Eles podem ser configurados nas configurações do Gerenciamento de correspondência a partir da configuração.
+   1. **inXMLDoc (parâmetro de dados XML):** Um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário na forma de XML.
+   1. **inXDPDoc (parâmetro de documento XDP):** Um documento XML como entrada. Esta entrada contém o layout subjacente (XDP).
+   1. **inAttachmentDocs (parâmetro de Documentos Attachment):** Um parâmetro de entrada de lista. Esta entrada contém todos os anexos como entrada.
+   1. **redirectURL (Redirecionar saída de URL):** Um tipo de saída que indica o url para o qual redirecionar.
    Seu fluxo de trabalho de formulários deve ter parâmetro de documento PDF ou parâmetro de dados XML como entrada com o mesmo nome especificado nas Configurações **[!UICONTROL de gerenciamento de]** correspondência. Isso é necessário para que o processo seja listado na lista suspensa Processo de publicação.
 
 ## Configurações na instância Publicar {#settings-on-the-publish-instance}
 
 1. login em `https://localhost:publishport/aem/forms`.
-1. Navegue até **[!UICONTROL Cartas]** para exibir a carta publicada que está disponível na instância de publicação.
-1. Configure as configurações do AEM DS. Consulte [Definição das configurações](../../forms/using/configuring-the-processing-server-url-.md)do AEM DS.
+1. Navegue até **[!UICONTROL Cartas]** para visualização da carta publicada que está disponível na instância de publicação.
+1. Configure as configurações do AEM DS. See [Configuring AEM DS settings](../../forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
->Ao usar os fluxos de trabalho do Forms ou AEM, antes de fazer qualquer envio do servidor de publicação, é necessário configurar o serviço de configurações do DS. Caso contrário, a apresentação do formulário não será efetuada.
+>Ao usar o Forms ou workflows AEM, antes de fazer qualquer envio do servidor de publicação, é necessário configurar o serviço de configurações do DS. Otherwise, the Form submission shall fail.
 
-## Recuperação de instâncias de carta {#letter-instances-retrieval}
+## Letter Instances Retrieval {#letter-instances-retrieval}
 
-As instâncias de carta salvas podem ser mais manipuladas, como recuperação de instâncias de carta e exclusão de instâncias de carta, usando as seguintes APIs definidas em LetterInstanceService.
+Saved letter instances can be manipulated further, such as retrieval of letter instances and deletion of letter instances, by using the following APIs defined in LetterInstanceService.
 
 <table>
  <tbody>
   <tr>
-   <td><strong>API do servidor</strong></td>
-   <td><strong>Nome da operação</strong></td>
+   <td><strong>Server-side API</strong></td>
+   <td><strong>Operation name</strong></td>
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td><p>CartaInstanceVO pública</p> <p>getLetterInstance(String letterInstanceId)</p> <p>Lança o ICCException; </p> </td>
+   <td><p>Public LetterInstanceVO</p> <p>getLetterInstance(String letterInstanceId)</p> <p>Throws ICCException; </p> </td>
    <td>getLetterInstance</td>
-   <td>Buscar a instância da carta especificada </td>
+   <td>Fetch the specified letter instance </td>
   </tr>
   <tr>
-   <td>Public void deleteLetterInstance(String letterInstanceId) lança ICCException; </td>
+   <td>Public void deleteLetterInstance(String letterInstanceId) throws ICCException; </td>
    <td>deleteLetterInstance </td>
    <td>Excluída a instância da carta especificada </td>
   </tr>
   <tr>
-   <td>A lista getAllLetterInstances(Query) lança ICCException; </td>
+   <td>Lista getAllLetterInstances(Query) lança ICCException; </td>
    <td>getAllLetterInstances </td>
-   <td>Essa API busca instâncias de carta com base no parâmetro de consulta de entrada. Para buscar todas as instâncias de carta, o parâmetro de consulta pode ser passado como nulo.<br /> </td>
+   <td>Essa API obtém instâncias de carta com base no parâmetro de query de entrada. Para buscar todas as instâncias de letra, o parâmetro de query pode ser passado como nulo.<br /> </td>
   </tr>
   <tr>
-   <td>Letra booleana públicaInstanceExists(String letterInstanceName) lança ICCException; </td>
+   <td>Public Boolean letterInstanceExists(String letterInstanceName) throws ICCException; </td>
    <td>letterInstanceExists </td>
    <td>Verificar se uma LetterInstance existe pelo nome fornecido </td>
   </tr>
  </tbody>
 </table>
 
-## Associar um processo de publicação a uma carta {#associating-a-post-process-with-a-letter}
+## Associating a post process with a letter {#associating-a-post-process-with-a-letter}
 
 Na interface do usuário do CCR, conclua as seguintes etapas para associar um processo de publicação a uma letra:
 
-1. Passe o mouse sobre uma letra e toque em **Exibir propriedades**.
+1. Passe o mouse sobre uma letra e toque em Propriedades **da** Visualização.
 1. Selecione **Editar**.
 1. Nas Propriedades básicas, usando o menu suspenso Processo de publicação, selecione o processo de publicação a ser associado à letra. Os processos de publicação relacionados ao AEM e ao Forms são listados na lista suspensa.
 1. Toque em **Salvar**.
