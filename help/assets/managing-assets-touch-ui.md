@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
+source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
 
 ---
 
@@ -19,7 +19,7 @@ Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, vo
 
 >[!NOTE]
 >
->* O compartilhamento de uma pasta Ativos do tipo `sling:OrderedFolder`não é suportado ao compartilhar com a Marketing Cloud. Se desejar compartilhar uma pasta, não selecione [!UICONTROL Solicitado] ao criar uma pasta.
+>* O compartilhamento de uma pasta Ativos do tipo não `sling:OrderedFolder` é suportado ao compartilhar com a Marketing Cloud. Se desejar compartilhar uma pasta, não selecione [!UICONTROL Solicitado] ao criar uma pasta.
 >* O Experience Manager não permite o uso de `subassets` word como o nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos.
 
 
@@ -56,13 +56,13 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * Na barra de ferramentas, toque no ícone **[!UICONTROL Criar]** . Em seguida, no menu, toque em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do usuário dos Ativos. A caixa de diálogo para renomear o arquivo não é exibida.
-   ![criar opção no aem](assets/create-options.png)
+   ![Criar opção para carregar ativos](assets/create-options.png)
 
    Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
 
    Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Toque no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um start é carregado.
 
-   ![chlimage_1-211](assets/chlimage_1-5.png)
+   ![Barra de progresso Carregar ativos](assets/chlimage_1-5.png)
 
    O tamanho acima do qual um ativo é considerado um grande ativo é configurável. Por exemplo, você pode configurar o sistema para considerar ativos acima de 1000 MB (em vez de 500 MB) como ativos grandes. Nesse caso, **[!UICONTROL Pausar]** é exibido na barra de progresso quando ativos de tamanho maior que 1000 MB são carregados.
 
@@ -72,7 +72,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    Quando você clica no ícone **[!UICONTROL Pausar]** , ele alterna para um ícone **[!UICONTROL Reproduzir]** . Para retomar o carregamento, clique no ícone **[!UICONTROL Reproduzir]** .
 
-   ![chlimage_1-212](assets/chlimage_1-6.png)
+   ![Retomar o upload do ativo pausado usando o ícone Reproduzir](assets/chlimage_1-6.png)
 
    Para cancelar um upload em andamento, clique em Fechar (`X`) ao lado da barra de progresso. Ao cancelar a operação de upload, os ativos AEM excluem a parte parcialmente carregada do ativo.
 
@@ -86,7 +86,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    Você pode optar por substituir um ativo existente, criar outra versão ou manter ambos renomeando o novo ativo que é carregado. Se você substituir um ativo existente, os metadados do ativo e quaisquer modificações anteriores (por exemplo, anotação ou recorte) que você fez no ativo existente serão excluídos. Se você optar por manter ambos os ativos, o novo ativo será renomeado com o número `1` anexado ao seu nome.
 
-   ![chlimage_1-213](assets/chlimage_1-7.png)
+   ![Caixa de diálogo Conflitos de nomes para resolver o conflito de nomes de ativos](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
    >
    >A caixa de diálogo [!UICONTROL Duplicados detectados] aparece somente quando o recurso de detecção de duplicados está ativado. Para ativar o recurso de detecção de duplicados, consulte [Ativar detecção](/help/assets/duplicate-detection.md)de Duplicados.
 
-   ![chlimage_1-214](assets/chlimage_1-8.png)
+   ![Caixa de diálogo Ativo do Duplicado detectado](assets/chlimage_1-8.png)
 
    Para manter o ativo do duplicado nos ativos AEM, toque/clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, toque/clique em **[!UICONTROL Excluir]**.
 
@@ -112,7 +112,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * o nome do arquivo de ativo não deve conter `* / : [ \\ ] | # % { } ? &`
    * o nome da pasta de ativos não deve conter `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-   ![chlimage_1-215](assets/chlimage_1-10.png)
+   ![A caixa de diálogo de andamento do upload mostra o status dos arquivos carregados com êxito e dos arquivos que não foram carregados](assets/chlimage_1-10.png)
 
    Além disso, a interface do usuário Ativos exibe o ativo mais recente que você carregou ou a pasta que criou primeiro.
 
