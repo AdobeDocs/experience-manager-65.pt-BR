@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -26,7 +26,7 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 | Fechar o navegador Propriedades do componente de formulário adaptativo selecionado | Ctrl+Alt+W | Command+Alt+W |
 | Salvar alterações no navegador Propriedades do componente de formulário adaptativo selecionado | Ctrl+S | Command+S |
 | Editar regra para o componente de formulário adaptável selecionado | Ctrl+Alt+Enter | Command+Alt+Return |
-| Alternar entre a Visualização e o modo selecionado no momento (por exemplo, Editar, Andaime etc.) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
+| Alternar entre a Pré-visualização e o modo selecionado no momento (por exemplo, Editar, Andaime etc.) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Refazer a última alteração | Ctrl+Y | Ctrl+Y;ast; |
 | Selecionar vários componentes | Shift+Click | Shift+Click |
@@ -35,9 +35,9 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 | Colar componentes | Ctrl+V | Ctrl+V |
 | Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&amp;ast; |
 | Excluir componentes selecionados | Ctrl+Backspace | Ctrl+Backspace&amp;ast; |
-| Colocar o texto em negrito ao usar o componente Editor de Rich Text no modo de Visualização | Ctrl+B | Ctrl+P&amp;ampa;ast; |
-| Colocar o texto em itálico ao usar o componente Editor de Rich Text no modo de Visualização | Ctrl+I | Ctrl+I&amp;ast; |
-| Colocar o texto em negrito ao usar o componente Editor de Rich Text no modo de Visualização | Ctrl+U | Ctrl+U&amp;ast; |
+| Colocar o texto em negrito ao usar o componente Editor de Rich Text no modo de Pré-visualização | Ctrl+B | Ctrl+P&amp;ampa;ast; |
+| Colocar o texto em itálico ao usar o componente Editor de Rich Text no modo de Pré-visualização | Ctrl+I | Ctrl+I&amp;ast; |
+| Colocar o texto em negrito ao usar o componente Editor de Rich Text no modo de Pré-visualização | Ctrl+U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 | **Ação** | **Atalho no Windows** | **Atalho no Mac OS** |
 |---|---|---|
 | Expandir todas as opções na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todas as opções, seguidas pela seta para a direita para expandir | Command+A para selecionar todos os acordeões seguidos pela seta para a direita para expandir |
-| Recolher todas as acordeões na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todos os acordeões seguidos pela seta para a esquerda para recolher | Command+A para selecionar todos os acordeões seguidos pela seta para a esquerda para recolher |
+| Recolher todas as acordeões na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todos os acordeões seguidos de Seta para a esquerda para recolher | Command+A para selecionar todos os acordeões seguidos pela seta para a esquerda para recolher |
 | Expandir a opção selecionada na árvore Objetos de formulário | Seta para a direita | Seta para a direita |
 | Recolher a opção selecionada na árvore Objetos de formulário | Seta para a esquerda | Seta para a esquerda |
 | Selecione o próximo item na árvore Objetos de formulário | Seta para baixo | Seta para baixo |
@@ -85,7 +85,7 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 
 Esta seção lista vários teclados e atalhos de acessibilidade que podem ser usados no editor de texto do Gerenciamento de correspondência. Você pode usar esses atalhos enquanto estiver:
 
-* Criação ou edição de um ativo de [Texto](/help/forms/using/document-fragments.md#main-pars-header-0)
+* Criação ou edição de um ativo de [Texto](texts-interactive-communications.md)
 * Editar um módulo de texto depois de tocar no ícone Editar relevante ( ![edittext](assets/edittextmodule.png)) ao [criar uma correspondência](/help/forms/using/create-correspondence.md).
 
 ### Seleção de texto e movimento do cursor ao redor {#text-selection-and-moving-the-cursor-around}
@@ -153,9 +153,9 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
    <td>Shift+Seta para a direita</td> 
   </tr>
   <tr>
-   <td><p>Selecione o texto um por um parágrafo na direção posterior</p> </td> 
-   <td><p>Shift+Tecla para cima</p> </td> 
-   <td>Shift+Tecla para cima</td> 
+   <td><p>Selecione o texto um por um parágrafo na direção inversa</p> </td> 
+   <td><p>Shift+Chave para Cima</p> </td> 
+   <td>Shift+Chave para Cima</td> 
   </tr>
   <tr>
    <td><p>Selecione o texto um por um parágrafo na direção direta</p> </td> 
@@ -178,7 +178,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
    <td>Fn+Seta para baixo</td> 
   </tr>
   <tr>
-   <td><p>Cursor para o início da página</p> </td> 
+   <td><p>Cursor para o start da página</p> </td> 
    <td><p>Page Up</p> </td> 
    <td>Fn+Seta para cima</td> 
   </tr>
@@ -188,7 +188,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
    <td>Command+Shift+Seta para baixo<br /> </td> 
   </tr>
   <tr>
-   <td><p>Selecionar texto da posição atual até o início (do módulo)</p> </td> 
+   <td><p>Selecionar texto da posição atual para o start (do módulo)</p> </td> 
    <td><p>Shift+Ctrl+Home</p> </td> 
    <td>Command+Shift+Seta para cima</td> 
   </tr>
@@ -221,7 +221,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
    <td>Ctrl+Command+E</td> 
   </tr>
   <tr>
-   <td><p>Fazer um parágrafo alinhado à esquerda</p> </td> 
+   <td><p>Alinhamento à esquerda de um parágrafo</p> </td> 
    <td><p>Ctrl+L</p> </td> 
    <td>Ctrl+Command+L</td> 
   </tr>
