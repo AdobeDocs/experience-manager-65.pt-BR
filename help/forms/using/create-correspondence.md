@@ -1,5 +1,5 @@
 ---
-title: Criar correspondência
+title: Create Correspondence
 seo-title: Criar correspondência
 description: Depois de criar um modelo de carta, você pode usá-lo para criar correspondência no AEM Forms gerenciando dados, conteúdo e anexos.
 seo-description: Depois de criar um modelo de carta, você pode usá-lo para criar correspondência no AEM Forms gerenciando dados, conteúdo e anexos.
@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -31,7 +31,7 @@ Selecione a letra para pré-visualização usando as seguintes etapas:
 
    Selecionar carta
 
-1. Para uma carta baseada no Dicionário de dados, selecione **Pré-visualização** > **Pré-visualização**. Ou, para uma carta não baseada em Dicionário de dados, selecione **Pré-visualização**. Você também pode passar o mouse sobre uma letra (sem selecioná-la) e tocar no ícone Pré-visualização Carta para pré-visualização.
+1. Para uma carta baseada no Dicionário de dados, selecione **Pré-visualização** > **Pré-visualização**. Ou, para uma carta não baseada em Dicionário de dados, selecione **Pré-visualização**. You can also hover over a letter (without selecting it) and tap the Letter Preview icon to preview it.
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Selecione a letra para pré-visualização usando as seguintes etapas:
 
 1. Se você selecionou **Pré-visualização** > **Personalizado**, uma caixa de diálogo será aberta. Na caixa de diálogo, selecione um arquivo de dados, correspondente ao dicionário de dados, para pré-visualização a carta e, em seguida, selecione **Pré-visualização**. Um arquivo de dados é criado com base em um dicionário de dados para uma carta específica. Para obter mais informações sobre o arquivo de dados, consulte Dicionário [de](../../forms/using/data-dictionary.md#p-working-with-test-data-p)dados.
 
-   ![carta Pré-visualização](assets/8_previewcustomdatafile.png)
+   ![Preview letter](assets/8_previewcustomdatafile.png)
 
 1. A letra pré-visualização HTML (pré-visualização de formulários móveis) é aberta com a guia Dados em foco por padrão.
 
@@ -75,7 +75,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    ![guia Conteúdo - realçar módulo no conteúdo](assets/3_content.png)
 
-1. Edite os módulos de conteúdo, conforme necessário, na guia Conteúdo. Para trazer o foco para o módulo de conteúdo relevante na hierarquia de conteúdo, é possível tocar na linha ou parágrafo relevante na pré-visualização da letra ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
+1. Edite os módulos de conteúdo, conforme necessário, na guia Conteúdo. Para trazer o foco para o módulo de conteúdo relevante na hierarquia de conteúdo, você pode tocar na linha ou parágrafo relevante na pré-visualização da letra ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
 
    Por exemplo, a linha &quot;Nós revisamos... &quot; é selecionado no gráfico abaixo e o módulo de conteúdo relevante é selecionado na guia Conteúdo.
 
@@ -83,7 +83,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    Na guia Conteúdo ou Dados, ao tocar em Realçar módulos selecionados ( ![realçar seleted modulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) no canto superior esquerdo da pré-visualização de letras HTML, você pode desativar ou ativar a funcionalidade para ir para o módulo de conteúdo/dados quando o texto, parágrafo ou campo de dados relevante for selecionado na pré-visualização de letras.
 
-   Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface](../../forms/using/create-letter.md#main-pars-header-9)do usuário Criar correspondência.
+   Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface](#actions-and-info-available-in-the-create-correspondence-content-tab)do usuário Criar correspondência.
 
 1. Para localizar módulos de conteúdo, use o campo Localizar. Digite o nome completo ou parcial do módulo de conteúdo para procurá-lo na correspondência.
 1. Toque no ícone Exibir ( ![exibição](assets/display.png)) na frente de uma área de lista, texto, condição ou público alvo para exibi-la ou ocultá-la na letra.
@@ -145,7 +145,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    É possível inserir quebras de página acima e abaixo dos módulos de dados mesmo quando eles fazem parte de listas e condições.
 
-1. Toque em Abrir/Fechar variável de conteúdo ( ![opencont entvariables](assets/opencontentvariables.png)) para abrir as variáveis de conteúdo e preenchê-las adequadamente.
+1. Tap Open/Close Content Variable ( ![opencontentvariables](assets/opencontentvariables.png)) to open the content variables and fill them appropriately.
 1. Depois de preencher a variável não preenchida corretamente, a contagem da variável não preenchida é definida como 0.
 
    Na interface do usuário Criar correspondência, a contagem de variáveis não preenchidas é exibida em cada nível da hierarquia de qualquer módulo que contenha pelo menos uma variável. Se um módulo contiver variáveis não preenchidas, a contagem será exibida nos níveis de variável, módulo, área do público alvo e modelo de carta.
@@ -158,7 +158,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
    * Somente instâncias de variáveis exclusivas. Se um módulo, área de público alvo ou modelo de carta contiver duas ou mais instâncias da mesma variável, a contagem será exibida como 1 (uma). No entanto, para cada uma das instâncias, a contagem é exibida como 1.
    A contagem de variáveis não preenchidas não inclui módulos desmarcados. Se um módulo estiver incluído em um modelo de carta, mas não estiver na letra, a contagem de variáveis não preenchidas neste módulo não será exibida.
 
-   Para a área do público alvo, módulo e variável, a contagem é exibida à direita de cada objeto no modelo de letra. Entretanto, para o modelo completo, a contagem é exibida na barra de status Criar correspondência.
+   Para a área do público alvo, módulo e variável, a contagem é exibida à direita de cada objeto no modelo de letra. However, for the complete template, the count is displayed in the Create Correspondence status bar.
 
    Os módulos em um modelo de carta exibem a contagem de variáveis não preenchidas conforme descrito abaixo:
 
@@ -168,7 +168,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
    * **Área** do Público alvo Exibe a soma de todas as variáveis não preenchidas exclusivas contidas nos módulos atribuídos à área do público alvo.
    Observe o seguinte em relação às variáveis com valores padrão:
 
-   * O padrão de um campo de variável Booliana é *false*. No entanto, a variável é considerada como não preenchida. Isso implica que a contagem de variáveis inclui todos os campos de variável Booliana com valor *false*.
+   * O padrão de um campo de variável Booliana é *false*. However, the variable is considered to be unfilled. This implies that the variable count includes all Boolean variable fields with value *false*.
 
    * O padrão de um campo de variável numérica é *0 (zero)*. No entanto, a variável é considerada como não preenchida. Isso implica que a contagem de variáveis inclui todos os campos de variável numérica com valor *0 (zero)*.
 
@@ -183,7 +183,7 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 * Bloqueio do pedido (informações): Indica que a ordem do conteúdo não pode ser alterada.
 * Valores não preenchidos (informações): Indica o número de variáveis não preenchidas na área do público alvo.
 
-**Módulo**
+**Module**
 
 * Seleção (ícone de olho): Inclui\exclui o módulo da letra.
 * Ignorar marcadores (aplicável para módulos de lista e seus módulos filho): Ignora marcadores em um módulo específico.
@@ -222,15 +222,15 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    O conteúdo editável da carta é realçado com fundo cinza.
 
-   ![Realçar conteúdo editável](assets/4_highlightmoduleincontent-1.png)
+   ![Highlight editable content](assets/4_highlightmoduleincontent-1.png)
 
-1. Edite os módulos de conteúdo, conforme necessário, na guia Conteúdo. Para trazer o foco para o módulo de conteúdo relevante na hierarquia de conteúdo, é possível tocar na linha ou parágrafo relevante na pré-visualização da letra ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
+1. Edite os módulos de conteúdo, conforme necessário, na guia Conteúdo. Para trazer o foco para o módulo de conteúdo relevante na hierarquia de conteúdo, você pode tocar na linha ou parágrafo relevante na pré-visualização da letra ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
 
    Por exemplo, a linha &quot;Para permitir o acesso...&quot; for selecionado no gráfico abaixo e o módulo de conteúdo correspondente for selecionado na guia Conteúdo.
 
    Ao tocar em Realçar módulos selecionados no conteúdo ( ![realçar modulesincontentcr](assets/highlightselectedmodulesincontentccr.png)selecionado), você pode desativar ou ativar a funcionalidade para realçar o módulo de conteúdo na guia Conteúdo quando o texto, parágrafo ou campo de dados relevante for tocado na pré-visualização da letra.
 
-   Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface](../../forms/using/create-letter.md#main-pars-header-9)do usuário Criar correspondência.
+   Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface](#actions-and-info-available-in-the-create-correspondence-content-tab)do usuário Criar correspondência.
 
 1. Para adicionar uma quebra de página à letra, toque no local em que deseja inserir uma quebra de página e selecione Quebra de página antes ou Quebra de página depois ( ![quebra de página antes](assets/pagebreakbeforeafter.png)).
 
@@ -240,27 +240,27 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
    >
    >Como os formulários móveis não suportam quebras de página, os cabeçalhos e rodapés são exibidos apenas uma vez. Entretanto, é possível definir explicitamente cabeçalhos e rodapés no layout (por página) para que apareçam na pré-visualização de formulários móveis. Além disso, as páginas em branco na letra, se houver, não aparecem na pré-visualização de formulários do Mobile.
 
-   ![Quebra explícita de página](assets/8_pagebreak.png)
+   ![Explicit page break](assets/8_pagebreak.png)
 
 1. Para salvar a carta como um rascunho, no qual você pode continuar trabalhando posteriormente, toque em Salvar como rascunho. Para usar essa opção, sua carta precisa ser [publicada](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obter mais informações, consulte Instância de rascunho em [Salvar rascunhos e enviar instâncias](#savingdrafts)de carta.
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   A caixa de diálogo Nome da carta de rascunho é exibida com a ID da instância da letra. Você pode, opcionalmente, editar essa ID. Anote a ID da letra e toque em **Concluído**. Posteriormente, é possível usar essa ID para [recarregar a carta](../../forms/using/submit-letter-topostprocess.md#main-pars-header-1)de rascunho.
+   The Draft Letter Name dialog appears with the letter instance id. You can, optionally edit this ID. Make a note of the letter Id and then tap **Done**. You can later use this ID to [reload the draft letter](submit-letter-topostprocess.md#reloaddraft).
 
-1. Para pré-visualização a letra como um PDF nivelado com o layout exato e quebras de página como serão enviadas, toque em ( ![pré-visualização](assets/preview.png)) Pré-visualização.
+1. To preview the letter as a flattened PDF with the exact layout and page breaks as it will be submitted, tap ( ![preview](assets/preview.png)) Preview.
 
-   A carta é exibida como um PDF nivelado. O PDF nivelado é a representação exata da carta, pois será enviada com as fontes, quebras e layout corretos da carta.
+   The letter appears as a flattened PDF. The flattened PDF is the exact representation of the letter as it will be submitted with the correct fonts, breaks, and layout of the letter.
 
    >[!NOTE]
    >
-   >Se você estiver usando o Mozilla Firefox e o tipo de execução HTML, para pré-visualização a letra como PDF nivelado, certifique-se de usar o plug-in nativo do navegador e não o plug-in do Acrobat. Para selecionar o plug-in nativo do navegador, vá para as configurações do Mozilla Firefox e, para o tipo de conteúdo PDF, selecione Pré-visualização no Firefox.
+   >If you are using Mozilla Firefox and HTML rendition type, to preview the letter as flattened PDF, ensure that you use the native browser plug-in and not the Acrobat plugin. To select the native browser plug-in, go to Mozilla Firefox&#39;s settings and for content type PDF, select Preview in Firefox.
 
-1. Se a pré-visualização em PDF nivelada for satisfatória, toque em **Enviar** para enviar a carta. Ou para fazer alterações na carta, toque em **Sair da Pré-visualização** para voltar à pré-visualização Criar interface de usuário de correspondência da carta para fazer alterações na carta. Quando você toca em Enviar, se a configuração Gerenciar instância da carta estiver ativada na instância Publicar, a instância da carta de envio será gerada.
+1. If you find the flattened PDF preview to be satisfactory, tap **Submit** to submit the letter. Or to make changes to the letter, tap **Exit Preview** to go back to the Create Correspondence UI preview of the letter to make changes in the letter. When you tap Submit, if the Manage Letter Instance configuration is enabled on the Publish instance, the submit letter instance is generated.
 
-   Para obter mais informações, consulte Instância de rascunho em Salvar rascunhos e enviar instâncias de carta.
+   For more information, see Draft Instance under Saving drafts and submitting letter instances.
 
-   Você também pode salvar a carta como rascunho para fazer alterações na carta posteriormente.
+   You can also save the letter as a draft to make changes to the letter later.
 
    Depois de fazer as alterações necessárias, você pode enviar a carta da pré-visualização HTML5 ou tocar em Pré-visualização novamente para revisar a saída de PDF nivelado.
 
@@ -268,13 +268,13 @@ Na guia conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
 ## Salvar rascunhos e enviar instâncias de carta {#savingdrafts}
 
-Quando uma carta é renderizada na interface do usuário Criar correspondência, você pode salvar a carta como sendo visualizada.
+When a letter is rendered in the Create Correspondence user interface, you can save the letter as being viewed.
 
 Há dois tipos de instâncias de carta que podem ser salvas: Instância de rascunho e instância de envio.
 
-* **Instância** de rascunho: A instância de rascunho captura o estado atual da carta que você está visualizando. Para salvar uma instância de rascunho, primeiro verifique se a carta e todos os ativos aos quais a carta faz referência estão no estado Publicado. Para obter informações sobre como publicar uma carta, consulte [Publicar um ativo](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Você precisa Publicar uma carta antes de poder salvá-la como um rascunho, pois ao publicar uma carta, você cria uma versão da carta, seus ativos dependentes e dados nesse momento. A versão publicada de uma carta não pode ser editada por você ou por outro usuário e pode ser restaurada mais tarde sem quaisquer discrepâncias inesperadas da versão publicada. Você pode voltar para essa instância mais tarde e continuar do ponto em que parou.
+* **Draft Instance**: Draft instance captures the current state of the letter you are previewing. To save a draft instance, first ensure that the letter and all the assets the letter references are in Published state. For information on publishing a letter, see [Publish an asset](../../forms/using/publishing-unpublishing-forms.md#publishanasset). You need to Publish a letter before you could save it as a draft, because when you publish a letter, you create a version of the letter, its dependent assets, and data at that point. The published version of a letter cannot be edited by you or another user and can be restored later without any unexpected discrepancies from the published version. You can return to this instance later and continue from where you left.
 
-* **Enviar instância**: As instâncias de envio capturam o estado da carta conforme ela é enviada. A instância Enviar armazena o estado PDF da instância da carta depois que é processada, juntamente com os dados inseridos pelo usuário na interface do usuário Criar correspondência.
+* **Submit Instance**: Submit instances captures the state of letter as it is submitted. Submit instance stores the PDF state of the letter instance after it is post processed along with the data entered by user in the Create Correspondence user interface.
 
 Essas instâncias só podem ser salvas quando a carta estiver sendo visualizada na instância de publicação. Por padrão, salvar em instâncias é desativado. Para ativar a gravação de instâncias de carta, execute as seguintes etapas.
 
@@ -330,18 +330,19 @@ Veja a seguir os benefícios e a funcionalidade disponíveis na pré-visualizaç
 * **Toque em um valor de campo de dados para realçar o campo** de dados correspondente: Na interface do usuário Criar correspondência, é possível tocar em um valor de campo de dados na letra para realçar o campo de dados correspondente na guia Dados. Para obter mais informações, consulte [Inserir dados](#enterdata).
 
 * **Suporte** a navegador: O navegador retira o suporte para NPAPI gradualmente, o que afeta a pré-visualização de letras do PDF. A pré-visualização de letras de formulários HTML/móveis não é afetada por isso.
-* **Realce o conteúdo editável em uma carta**: Na interface do usuário Criar correspondência, você pode tocar em Realçar conteúdo editável para realçar todo o conteúdo editável na carta em cinza. Para obter mais informações, consulte [Gerenciar conteúdo](#managecontent).
+* **Highlight editable content in a letter**: In the Create Correspondence user interface, you can tap Highlight Editable Content to highlight all the editable content in the letter in gray. For more information, see [Manage content](#managecontent).
 
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>``<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>``<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>``<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Benefícios da pré-visualização de PDF**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Benefits of PDF preview**
 
-* **Quebra** de página: Na pré-visualização PDF, é possível visualização exatamente como as quebras de página na letra afetam sua saída.
+* **Page break**: In the PDF preview, you can view exactly how the page breaks in the letter affect its output.
 * **pré-visualização** final: Na pré-visualização do PDF, é possível visualização a formatação exata e a aparência da letra, à medida que ela aparecerá em sua saída.
 
 Para obter informações sobre suporte a scripts em formulários PDF, consulte Suporte [a](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)scripts.
 
-Para obter mais informações sobre o suporte a scripts em formulários HTML5, consulte Suporte a [scripts para formulários](/help/forms/using/scripting-support.md)HTML5.
+For more information on scripting support in HTML5 forms, see [Scripting support for HTML5 forms](/help/forms/using/scripting-support.md).
 
-### Alterar o modo de representação da letra {#changerenditionmode}
+### Change rendition mode of letter {#changerenditionmode}
 
 Por padrão, a interface de usuário Criar correspondência usa os formulários HTML ou móveis para renderizar a pré-visualização da carta. A pré-visualização de formulários móveis não tem problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. É possível alterar o modo de pré-visualização de letras para PDF. Entretanto, as restrições do navegador podem criar problemas para diferentes recursos da pré-visualização interativa de PDF da carta.
 
@@ -350,6 +351,6 @@ Para obter mais informações sobre a compatibilidade do navegador com a pré-vi
 Para alterar o modo de pré-visualização da letra, execute as seguintes etapas:
 
 1. Vá para `https://[system]:'port'/system/console/configMgr` e, se necessário, faça logon como Administrador.
-1. Vá para Configurações **[!UICONTROL de gerenciamento de]** correspondência > Tipo **** de representação e selecione Representação **** HTML (Padrão) ou Representação **de** PDF.
+1. Go to **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** and select **HTML Rendition** (Default) or **PDF Rendition**.
 1. Clique em **[!UICONTROL Salvar]**.
 
