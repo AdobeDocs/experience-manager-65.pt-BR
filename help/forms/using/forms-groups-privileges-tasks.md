@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -29,11 +29,11 @@ Depois de instalar o pacote [complementar do](../../forms/using/installing-confi
    <td>Tarefas</td> 
   </tr>
   <tr>
-   <td>usuário de formulários <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>usuário de formulários <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Criar, visualizar, publicar e enviar formulários adaptativos</li> 
-     <li>Criar, visualizar e publicar comunicações interativas e fragmentos de documento</li> 
+     <li>Criar, pré-visualização, publicar e enviar formulários adaptativos</li> 
+     <li>Criar, pré-visualização e publicar comunicações interativas e fragmentos de documento</li> 
      <li>Fazer upload de ativos para uma instância do AEM</li> 
      <li>Criar temas</li> 
     </ul> </td> 
@@ -42,8 +42,8 @@ Depois de instalar o pacote [complementar do](../../forms/using/installing-confi
    <td>usuário avançado de formulários</td> 
    <td>
     <ul> 
-     <li>Criar, visualizar, publicar e enviar formulários adaptativos</li> 
-     <li>Criar, visualizar e publicar comunicações interativas e fragmentos de documento</li> 
+     <li>Criar, pré-visualização, publicar e enviar formulários adaptativos</li> 
+     <li>Criar, pré-visualização e publicar comunicações interativas e fragmentos de documento</li> 
      <li>Criar scripts para formulários adaptáveis usando o editor de código</li> 
      <li>Fazer upload de ativos incluindo scripts</li> 
      <li>Criar temas</li> 
@@ -59,17 +59,17 @@ Depois de instalar o pacote [complementar do](../../forms/using/installing-confi
     </ul> </td> 
   </tr>
   <tr>
-   <td>autores-modelo <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>autores-modelo <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Criar e visualizar formulários adaptáveis ou modelos de comunicação interativa</li> 
+     <li>Criar e pré-visualização formulários adaptáveis ou modelos de comunicação interativa</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>usuário com poder de modelo</td> 
    <td>
     <ul> 
-     <li>Criar e visualizar formulários adaptáveis ou modelos de comunicação interativa</li> 
+     <li>Criar e pré-visualização formulários adaptáveis ou modelos de comunicação interativa</li> 
      <li>Criar scripts para formulários adaptáveis ou modelos de comunicação interativa usando o editor de código</li> 
     </ul> </td> 
   </tr>
