@@ -3,7 +3,7 @@ title: Use o Connected Assets para compartilhar ativos do DAM no fluxo de trabal
 description: Use os ativos disponíveis em uma implantação remota do Adobe Experience Manager Assets ao criar suas páginas da Web em outra implantação do Experience Manager Site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -37,7 +37,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
 Os autores podem pesquisar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao componente `Download` e as imagens podem ser adicionadas ao componente `Image`. Os autores também podem adicionar os ativos remotos em qualquer componente personalizado do AEM, que estende os componentes padrão `Download` ou `Image`. A lista de formatos suportados são:
 
-* **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagem são suportados pelos Ativos conectados. As imagens da mídia dinâmica não são compatíveis.
+* **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/image.html) Imagem são suportados pelos Ativos conectados. As imagens da mídia dinâmica não são compatíveis.
 * **Formatos de documento**: consulte [Formatos de documento compatíveis com os Connected Assets](assets-formats.md#supported-document-formats).
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
@@ -45,7 +45,7 @@ Os autores podem pesquisar imagens e os seguintes tipos de documentos no Localiz
 As várias funções envolvidas para configurar e usar o recurso e seus grupos de usuários correspondentes são descritas abaixo. O escopo local é usado para o caso de uso em que uma página da Web é criada por um autor. O escopo remoto é usado para a implantação do DAM que hospeda os ativos necessários. O autor do Sites busca esses ativos remotos.
 
 | Função | Escopo | Grupo de usuários | Nome do usuário na apresentação | Requisito |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|---|
 | Administrador do AEM Sites | Local | Administrador do AEM | `admin` | Configure o AEM, configure a integração com a implantação remota do Assets. |
 | Usuário do DAM | Local | Autor | `ksaner` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
 | Autor do AEM Sites | Local | Autor (com acesso de leitura no DAM remoto e acesso de autor no Sites local) | `ksaner` | Os usuários finais são autores do Sites que usam essa integração para melhorar sua velocidade de conteúdo. Os autores pesquisam e procuram ativos no DAM remoto usando o Localizador de conteúdo e usando as imagens necessárias nas páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
@@ -73,11 +73,9 @@ Para configurar a conectividade do Connected Assets e dos Sites local, siga esta
    1. O local do AEM Assets é `https://[assets_servername_ams]:[port]`.
    1. Credenciais de um distribuidor do DAM (usuário técnico).
    1. No campo **[!UICONTROL Ponto de montagem]**, insira o caminho do AEM local onde o AEM busca os ativos. Por exemplo, pasta `remoteassets`.
-
    1. Ajuste os valores do **[!UICONTROL Limite de otimização da transferência do binário original]**, dependendo da sua rede. Uma representação de ativos maior que esse limite é transferida de forma assíncrona.
    1. Selecione **[!UICONTROL Datastore compartilhado com o Connected Assets]**, se você usar um datastore para armazenar seus ativos e se o Datastore for o armazenamento comum entre as duas implantações do AEM. Nesse caso, o limite não importa, pois os binários de ativos reais residem no datastore e não são transferidos.
-   ![Uma configuração normal do Connected Assets](assets/connected-assets-typical-config.png)
-
+      ![Uma configuração normal do Connected Assets](assets/connected-assets-typical-config.png)
    *Figura: uma configuração normal do Connected Assets*
 
 1. Como os ativos já são processados e as representações são buscadas, desative os inicializadores do fluxo de trabalho. Ajuste as configurações do iniciador na implantação local (AEM Sites) para excluir a pasta `connectedassets`, em que os ativos remotos são buscados.
@@ -153,7 +151,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
-## Limitações      {#limitations}
+## Limitações       {#limitations}
 
 **Permissões e gerenciamento de ativos**
 
