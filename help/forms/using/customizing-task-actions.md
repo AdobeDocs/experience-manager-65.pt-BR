@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -135,7 +135,7 @@ Para mostrar apenas imagens para ações, personalize as imagens usadas em açõ
 
 ### Menu pop-up Ação da tarefa da Lista da Tarefa {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Você precisa de um pacote de desenvolvimento para personalizar itens do menu pop-up de ação tarefa de lista da área de trabalho do AEM Forms. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código de espaço de trabalho do AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. Você precisa de um pacote de desenvolvimento para personalizar itens do menu pop-up de ação tarefa de lista da área de trabalho do AEM Forms. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código de espaço de trabalho do AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copie /libs/ws/js/runtime/templates/task.html para `/apps/ws/js/runtime/templates/task.html`substituir o seguinte trecho de código:
 
