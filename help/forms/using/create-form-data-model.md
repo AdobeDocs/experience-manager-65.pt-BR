@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -18,18 +18,18 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Este tutorial é uma etapa da série [Criar seu primeiro formulário](../../forms/using/create-your-first-adaptive-form.md) adaptável. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso do tutorial completo.
+This tutorial is a step in the [Create Your First Adaptive Form](../../forms/using/create-your-first-adaptive-form.md) series. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso do tutorial completo.
 
-## Sobre o tutorial {#about-the-tutorial}
+## About the tutorial {#about-the-tutorial}
 
-O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de backend, como perfil de usuário do AEM, serviços Web RESTful, serviços da Web baseados em SOAP, serviços OData e bancos de dados relacionais. É possível configurar objetos e serviços de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Campos de formulário adaptáveis são vinculados às propriedades de objetos de modelo de dados. Os serviços permitem que você preencha previamente o formulário adaptável e grave os dados de formulário enviados de volta para o objeto de modelo de dados.
+AEM Forms data integration module allows you to create a form data model from disparate backend data sources such as AEM user profile, RESTful web services, SOAP-based web services, OData services, and relational databases. É possível configurar objetos e serviços de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Adaptive form fields are bound to data model object properties. The services enable you to prefill the adaptive form and write submitted form data back to the data model object.
 
-Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte Integração [de dados de formulários](../../forms/using/data-integration.md)AEM.
+For more information about form data integration and form data model, see [AEM Forms Data Integration](../../forms/using/data-integration.md).
 
-Este tutorial o orienta pelas etapas para preparar, criar, configurar e associar um modelo de dados de formulário a um formulário adaptável. No final deste tutorial, você poderá:
+This tutorial walks you through the steps to prepare, create, configure, and associate a form data model with an adaptive form. At the end of this tutorial, you will be able to:
 
 * [Configurar o banco de dados MySQL como fonte de dados](#config-database)
-* [Criar modelo de dados de formulário usando o banco de dados MySQL](#create-fdm)
+* [Create form data model using MySQL database](#create-fdm)
 * [Configurar modelo de dados de formulário](#config-fdm)
 * [Modelo de dados do formulário de ensaio](#test-fdm)
 
@@ -37,14 +37,14 @@ O modelo de dados de formulário será semelhante ao seguinte:
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**A.** Fontes de dados configuradas **B.** schemas de fonte de dados **C.** Serviços disponíveis **D.** Objetos de modelo de dados **E.** Serviços configurados
+**A.** Configured data sources **B.** Data source schemas **C.** Available services **D.** Data model objects **E.** Configured services
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de começar, verifique se você tem o seguinte:
+Before you begin, ensure that you have the following:
 
 * Banco de dados MySQL com dados de amostra conforme declarado na seção Pré-requisitos de [Criar seu primeiro formulário adaptável](../../forms/using/create-your-first-adaptive-form.md)
-* Pacote OSGi para o driver JDBC MySQL, conforme explicado em [Bundling the JDBC Database Driver](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
+* OSGi bundle for MySQL JDBC driver as explained in [Bundling the JDBC Database Driver](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
 * Formulário adaptável, conforme explicado no primeiro tutorial [Criar um formulário adaptável](/help/forms/using/create-adaptive-form.md)
 
 ## Etapa 1: Configurar o banco de dados MySQL como fonte de dados {#config-database}
@@ -68,52 +68,52 @@ Faça o seguinte para configurar seu banco de dados MySQL:
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
       * **Nome da fonte de dados:** Você pode especificar qualquer nome. Por exemplo, especifique **WeRetailMySQL**.
-      * **Nome** da propriedade do serviço DataSource: Especifique o nome da propriedade de serviço que contém o nome DataSource. É especificado ao registrar a instância da fonte de dados como serviço OSGi. Por exemplo, **datasource.name**.
-      * **Classe** de driver JDBC: Especifique o nome da classe Java do driver JDBC. Para o banco de dados MySQL, especifique **com.mysql.jdbc.Driver**.
-      * **URI** de conexão JDBC: Especifique o URL de conexão do banco de dados. Para o banco de dados MySQL em execução na porta 3306 e schema, o URL é: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **Nome de usuário:** Nome de usuário do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
-      * **Senha:** Senha do banco de dados. É necessário ativar o driver JDBC para estabelecer uma conexão com o banco de dados.
-      * **Teste de emprestado:** Ative a opção **Testar em empréstimo** .
+      * **DataSource service property name**: Specify name of the service property containing the DataSource name. It is specified while registering the data source instance as OSGi service. For example, **datasource.name**.
+      * **JDBC driver class**: Specify Java class name of the JDBC driver. For MySQL database, specify **com.mysql.jdbc.Driver**.
+      * **JDBC connection URI**: Specify connection URL of the database. For MySQL database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **Username:** Username of the database. It is required to enable JDBC driver to establish a connection with the database.
+      * **Password:** Password of the database. It is required to enable JDBC driver to establish a connection with the database.
+      * **Test on Borrow:** Enable the **Test on Borrow** option.
       * **Teste na devolução:** Ative a opção **Testar ao Retornar** .
-      * **Query de validação:** Especifique um query SQL SELECT para validar conexões do pool. O query deve retornar pelo menos uma linha. Por exemplo, **selecione * em detalhes** do cliente.
-      * **Isolamento** da transação: Defina o valor como **READ_COMPROMISTED**.
-      Deixe outras propriedades com [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) padrão e toque em **Salvar**.
-   É criada uma configuração semelhante à seguinte.
+      * **Validation Query:** Specify a SQL SELECT query to validate connections from the pool. The query must return at least one row. Por exemplo, **selecione * em detalhes** do cliente.
+      * **Transaction Isolation**: Set the value to **READ_COMMITTED**.
+      Leave other properties with default [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) and tap **Save**.
+   A configuration similar to the following is created.
 
    ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Step 2: Create form data model {#create-fdm}
 
-O AEM Forms fornece uma interface de usuário intuitiva para [criar um](../../forms/using/data-integration.md#main-pars-header-1524967585)modelo de dados de formulário a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Em nosso caso de uso, usaremos a fonte de dados MySQL configurada.
+AEM Forms provides an intuitive user interface to [create a form data model](data-integration.md) from configured data sources. You can use multiple data sources in a form data model. For our use case, we will use the configured MySQL data source.
 
-Faça o seguinte para criar um modelo de dados de formulário:
+Do the following to create form data model:
 
-1. Na instância do autor de AEM, navegue até **Formulários** > Integrações **** de dados.
+1. In AEM author instance, navigate to **Forms** > **Data Integrations**.
 1. Tap **Create** > **Form Data Model**.
-1. Na caixa de diálogo Criar modelo de dados de formulário, especifique um **nome** para o modelo de dados de formulário. Por exemplo, detalhes **de faturamento de entrega de** clientes. Toque em **Avançar**.
-1. A tela da fonte de dados selecionada lista todas as fontes de dados configuradas. Selecione a fonte de dados **WeRetailMySQL** e toque em **Criar**.
+1. In the Create Form Data Model dialog, specify a **name** for the form data model. For example, **customer-shipping-billing-details**. Toque em **Avançar**.
+1. The select datasource screen lists all configured data sources. Select **WeRetailMySQL** data source and tap **Create**.
 
-   ![seleção da fonte de dados](assets/data-source-selection.png)
+   ![data-source-selection](assets/data-source-selection.png)
 
-O modelo de dados do formulário de detalhes **de faturamento de remessa do** cliente é criado.
+The **customer-shipping-billing-details** form data model is created.
 
-## Etapa 3: Configurar modelo de dados de formulário {#config-fdm}
+## Step 3: Configure form data model {#config-fdm}
 
-A configuração do modelo de dados de formulário envolve:
+Configuring form data model involves:
 
-* adição de objetos e serviços de modelo de dados
-* configuração de serviços de leitura e gravação para objetos de modelo de dados
+* adding data model object and services
+* configuring read and write services for data model objects
 
-Faça o seguinte para configurar o modelo de dados de formulário:
+Do the following to configure the form data model:
 
-1. Na instância do autor de AEM, navegue até **Formulários** > Integrações **** de dados. O URL padrão é [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. O modelo de dados do formulário de detalhes **de faturamento de entrega do** cliente criado anteriormente está listado aqui. Abra-o no modo de edição.
+1. On AEM author instance, navigate to **Forms** > **Data Integrations**. The default URL is [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. The **customer-shipping-billing-details** form data model you created earlier is listed here. Open it in edit mode.
 
-   A fonte de dados selecionada **WeRetailMySQL** está configurada no modelo de dados de formulário.
+   The selected data source **WeRetailMySQL** is configured in the form data model.
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Expanda a árvore da fonte de dados WeRailMySQL. Selecione os seguintes objetos e serviços de modelo de dados em **weretail** > schema **customerdetails** para formar o modelo de dados:
+1. Expand the WeRailMySQL data source tree. Select the following data model objects and services from **weretail** > **customerdetails** schema to form data model:
 
    * **Objetos** do modelo de dados:
 
@@ -127,26 +127,26 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 
       * get
       * atualizar
-   Toque em **Adicionar selecionados** para adicionar objetos e serviços de modelo de dados selecionados ao modelo de dados do formulário.
+   Tap **Add Selected** to add selected data model objects and services to the form data model.
 
-   ![Schema WeRetail](assets/weretail_schema_new.png)
+   ![WeRetail Schema](assets/weretail_schema_new.png)
 
    >[!NOTE]
    >
-   >Os serviços padrão get, update e insert para fontes de dados JDBC são fornecidos prontamente com o modelo de dados de formulário.
+   >The default get, update, and insert services for JDBC datasources are provided out-of-the-box with form data model .
 
-1. Configure os serviços de leitura e gravação para o objeto de modelo de dados.
+1. Configure read and write services for the data model object.
 
-   1. Selecione o objeto de modelo de dados detalhado **do** cliente e toque em **Editar propriedades**.
-   1. Selecione **obter** no menu suspenso Read Service (Serviço de leitura). O argumento **id** , que é a chave primária no objeto de modelo de dados de detalhes do cliente, é adicionado automaticamente. Toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) e configure o argumento da seguinte maneira.
+   1. Select the **customerdetails** data model object and tap **Edit Properties**.
+   1. Select **get** from the Read Service drop-down. The **id** argument, which is the primary key in the customerdetails data model object is added automatically. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) and configure the argument as follows.
 
       ![read-default](assets/read-default.png)
 
-   1. Da mesma forma, selecione **atualizar** como o Serviço de gravação. O objeto **customerdetails** é adicionado automaticamente como argumento. O argumento é configurado da seguinte maneira.
+   1. Similarly, select **update** as the Write Service. The **customerdetails** object is added as an argument automatically. The argument is configured as follows.
 
       ![write-default](assets/write-default.png)
 
-      Adicione e configure o argumento **id** da seguinte maneira.
+      Add and configure the **id** argument as follows.
 
       ![id-arg](assets/id-arg.png)
 
@@ -159,58 +159,58 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 1. Vá para a guia **Serviços** e configure os serviços **get** e **update** .
 
    1. Selecione o serviço **get** e toque em **Editar propriedades**. A caixa de diálogo de propriedades é aberta.
-   1. Especifique o seguinte na caixa de diálogo Editar propriedades:
+   1. Specify the following in the Edit Properties dialog:
 
-      * **Título**: Especifique o título do serviço. Por exemplo: Recuperar Endereço de Entrega.
-      * **Descrição**: Especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:
+      * **Título**: Especifique o título do serviço. For example: Retrieve Shipping Address.
+      * **Description**: Specify description containing detailed functioning of the service. Por exemplo:
 
-         Este serviço recupera o endereço de entrega e outros detalhes do cliente do banco de dados MySQL
+         This service retrieves shipping address and other customer details from MySQL database
 
       * **Objeto** do Modelo de Saída: Selecione o schema que contém os dados do cliente. Por exemplo:
 
-         schema customerdetail
+         customerdetail schema
 
-      * **Matriz** de retorno: Desative a opção **Retornar matriz** .
-      * **Argumentos**: Selecione o argumento com o nome **ID**.
-      Toque em **Concluído**. O serviço para recuperar detalhes do cliente do banco de dados MySQL está configurado.
+      * **Return array**: Disable the **Return array** option.
+      * **Arguments**: Select argument named **ID**.
+      Toque em **Concluído**. Service to retrieve customer details from the MySQL database is configured.
 
       ![shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
 
-   1. Selecione o serviço de **atualização** e toque em **Editar propriedades**. A caixa de diálogo de propriedades é aberta.
+   1. Select the **update** service and tap **Edit Properties**. The properties dialog opens.
 
-   1. Especifique o seguinte na caixa de diálogo Editar propriedades:
+   1. Specify the following in the Edit Properties dialog:
 
-      * **Título**: Especifique o título do serviço. Por exemplo, Atualizar Endereço de Entrega.
-      * **Descrição**: Especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:
+      * **Title**: Specify title of the service. For example, Update Shipping Address.
+      * **Description**: Specify description containing detailed functioning of the service. Por exemplo:
 
-         Este serviço atualiza o endereço de envio e os campos relacionados no banco de dados MySQL
+         This service updates shipping address and related fields in MySQL database
 
-      * **Objeto** do Modelo de Entrada: Selecione o schema que contém os dados do cliente. Por exemplo:
+      * **Input Model Object**: Select schema containing customer data. Por exemplo:
 
-         schema customerdetail
+         customerdetail schema
 
-      * **Tipo** de saída: Selecione **BOOLEAN**.
+      * **Output type**: Select **BOOLEAN**.
 
-      * **Argumentos**: Selecione o argumento chamado **ID** e detalhes **do** cliente.
-      Toque em **Concluído**. O serviço de **atualização** para atualizar os detalhes do cliente no banco de dados MySQL está configurado.
+      * **Arguments**: Select argument named **ID** and **customerdetails**.
+      Toque em **Concluído**. The **update** service to update customer details in the MySQL database is configured.
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
 
 
 
-O objeto e os serviços do modelo de dados no modelo de dados de formulário são configurados. Agora é possível testar o modelo de dados de formulário.
+The data model object and services in the form data model are configured. You can now test the form data model.
 
 ## Step 4: Test form data model {#test-fdm}
 
-Você pode testar o objeto e os serviços do modelo de dados para verificar se o modelo de dados do formulário está configurado corretamente.
+You can test the data model object and services to verify that the form data model is configured properly.
 
-Execute o teste a seguir:
+Do the following to run the test:
 
-1. Vá até a guia **Modelo** , selecione o objeto de modelo de dados detalhado **do** cliente e toque em Objeto **de modelo de** teste.
-1. Na janela **Testar modelo/serviço** , selecione **Ler objeto** de modelo no menu suspenso **Selecionar modelo/serviço** .
-1. Na seção **customerdetails** , especifique um valor para o argumento **id** que existe no banco de dados MySQL configurado e toque em **Test**.
+1. Go to the **Model** tab, select the **customerdetails** data model object, and tap **Test Model Object**.
+1. In the **Test Model/Service** window, select **Read model object** from the **Select Model/Service** drop-down.
+1. In the **customerdetails** section, specify a value for the **id** argument that exists in the configured MySQL database and tap **Test**.
 
-   Os detalhes do cliente associados à ID especificada são buscados e exibidos na seção **Saída** , como mostrado abaixo.
+   The customer details associated with the specified id are fetched and displayed in the **Output** section as shown below.
 
    ![test-read-model](assets/test-read-model.png)
 
@@ -220,6 +220,6 @@ Execute o teste a seguir:
 
    ![test-write-model](assets/test-write-model.png)
 
-   Agora, se você testar o serviço de modelo de leitura novamente para o id 7107215, ele buscará e exibirá os detalhes atualizados do cliente, conforme mostrado abaixo.
+   Now, if you test the read model service again for the id 7107215, it will fetch and display the updated customer details as shown below.
 
-   ![atualizado por leitura](assets/read-updated.png)
+   ![read-updated](assets/read-updated.png)
