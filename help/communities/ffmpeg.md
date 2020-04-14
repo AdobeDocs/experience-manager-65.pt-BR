@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -42,20 +42,20 @@ FFmpeg deve ser instalado nos servidores que hospedam as instâncias de *autor* 
 
 ## Configurar o serviço de transcodificação FFmpeg {#configure-ffmpeg-transcoding-service}
 
-Por padrão, quando FFmpeg é instalado, várias renderizações são configuradas (transcodificações) de acordo com a definição do fluxo de trabalho do Ativo de atualização do DAM.
+Por padrão, quando FFmpeg é instalado, várias renderizações são configuradas (transcodificações) de acordo com a definição do fluxo de trabalho do Ativo  de atualização do DAM.
 
-Como as transcodificações exigem muita CPU, é recomendável modificar a lista de execuções de destino. Na maioria dos casos, a transcodificação não é necessária.
+Como as transcodificações exigem muito da CPU, é recomendável modificar a lista das execuções do público alvo. Na maioria dos casos, a transcodificação não é necessária.
 
-Para modificar o fluxo de trabalho Atualizar ativo DAM e, neste exemplo, desativar a transcodificação:
+Para modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM e, neste exemplo, desativar a transcodificação:
 
 * Entre na instância do autor com privilégios administrativos
 * Da navegação global: **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**
 * Localizar ativo de atualização **[!UICONTROL DAM]**
-* Clique duas vezes para abrir o fluxo de trabalho para edição na interface clássica
+* Clique com o Duplo para abrir o fluxo de trabalho para edição na interface clássica
 
    Local resultante: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Clique duas vezes na etapa de transcodificação **[!UICONTROL do]** FFmpeg para acessar a caixa de diálogo Propriedades da etapa
+* Clique com o Duplo na etapa de transcodificação **[!UICONTROL do]** FFmpeg para acessar a caixa de diálogo Propriedades da etapa
 * Na guia **[!UICONTROL Processo]** :
 
    * **[!UICONTROL Argumentos]**: Apagar todas as entradas para desativar a transcodificação Valores padrão: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
