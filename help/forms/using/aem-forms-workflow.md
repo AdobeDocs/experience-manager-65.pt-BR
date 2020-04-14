@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -107,7 +107,7 @@ O exemplo cria um modelo de fluxo de trabalho e um aplicativo de hipoteca para s
 
    ![OU Exemplo de divisão](assets/orsplit_branch1_active_new.png)
 
-   **expressão do Roteamento para a Ramificação 1**
+   **expressão do Roteamento da Ramificação 2**
 
    Quando um usuário toca em **Rejeitar** na Caixa de entrada do AEM, a Ramificação 2 é ativada.
 
@@ -121,7 +121,7 @@ O exemplo cria um modelo de fluxo de trabalho e um aplicativo de hipoteca para s
 
    Para obter o conjunto completo de valores de todos os campos das etapas de atribuição de tarefa, documento da etapa de registro e etapa de assinatura de documento configuradas como, por exemplo, aplicativo de hipoteca, importe o pacote de exemplo, disponível para download no início desta seção.
 
-   O modelo de fluxo de trabalho está pronto. Você pode iniciar o fluxo de trabalho por meio de vários métodos. Para obter detalhes, consulte [Iniciar um fluxo de trabalho centrado em formulários no OSGi](../../forms/using/aem-forms-workflow.md#main-pars-header).
+   O modelo de fluxo de trabalho está pronto. Você pode iniciar o fluxo de trabalho por meio de vários métodos. Para obter detalhes, consulte [Iniciar um fluxo de trabalho centrado em formulários no OSGi](#launch).
 
    ![editor-de-fluxo-de-trabalho-hipoteca](assets/workflow-editor-mortgage.png)
 
