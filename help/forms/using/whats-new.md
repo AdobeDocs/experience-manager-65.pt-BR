@@ -1,15 +1,15 @@
 ---
 title: Resumo dos novos recursos| Formulários AEM 6.5
 seo-title: Resumo dos novos recursos| Formulários AEM 6.5
-description: Recursos mais recentes e melhorias em formulários e documentos da solução de gerenciamento de experiências digitais mais avançada do mundo.
-seo-description: Recursos mais recentes e melhorias em formulários e documentos da solução de gerenciamento de experiências digitais mais avançada do mundo.
+description: Recursos e melhorias mais recentes em formulários e documentos da solução de gerenciamento de experiências digitais mais avançada do mundo.
+seo-description: Recursos e melhorias mais recentes em formulários e documentos da solução de gerenciamento de experiências digitais mais avançada do mundo.
 uuid: 179d372d-b7f6-4771-8349-fc6b7854efac
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
 
 Os relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e rebalancear os investimentos em hardware e software. Alguns exemplos de transações incluem:
 
-* Envio de um formulário adaptável, um formulário HTML5 ou um conjunto de formulários
+* Envio de um formulário adaptável, de um formulário HTML5 ou de um conjunto de formulários
 * Execução de uma versão impressa ou da Web de uma comunicação interativa
 * Conversão de um documento de um formato de arquivo para outro
 
@@ -32,7 +32,7 @@ Para obter informações sobre como configurar e usar relatórios de transação
 
 **Definir padrões de exibição de dados**
 
-Os autores do Interative Communication agora podem definir padrões [de exibição de](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146) dados para campos, variáveis e elementos de modelo de dados de formulário. Por exemplo, formatos de data, moeda ou telefone.
+Os autores do Interative Communication agora podem definir padrões [de exibição de](create-interactive-communication.md#datadisplaypatterns) dados para campos, variáveis e elementos de modelo de dados de formulário. Por exemplo, formatos de data, moeda ou telefone.
 
 **Usar novos tipos de gráficos**
 
@@ -44,7 +44,7 @@ Agora é possível [classificar colunas de uma tabela](../../forms/using/create-
 
 **Usar novos componentes em um canal da Web**
 
-Agora você pode adicionar componentes Botão e Separador ao canal da Web. Para obter mais informações, consulte o componente [Adicionar botão ao canal](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) da Web e ao componente [Separador no canal](../../forms/using/create-interactive-communication.md#separatorcomponent)da Web.
+Agora você pode adicionar componentes Botão e Separador ao canal da Web. Para obter mais informações, consulte [Adicionar componente de Botão ao canal](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) da Web e ao componente [Separador no canal](../../forms/using/create-interactive-communication.md#separatorcomponent)da Web.
 
 **Modo de layout para redimensionar componentes**
 
@@ -54,7 +54,7 @@ Agora você pode alternar para o modo [](../../forms/using/resize-using-layout-m
 
 Os autores do Interative Communication agora podem utilizar várias operações fáceis de usar ao criar correspondências. A lista de operações inclui:
 
-* [Executar ações de desfazer e refazer em canais impressos e da Web](../../forms/using/create-interactive-communication.md#undoredoactions)
+* [Realizar ações de desfazer e refazer em canais da Web e da impressão](../../forms/using/create-interactive-communication.md#undoredoactions)
 * [Adicionar variáveis em um fragmento de documento usando o símbolo @](../../forms/using/texts-interactive-communications.md#searchvariables)
 * [Adicionar elementos de modelo de dados em um fragmento de documento usando o símbolo @](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
 * [Excluir ou adicionar um canal da Web a uma comunicação interativa existente](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
@@ -64,7 +64,7 @@ Os autores do Interative Communication agora podem utilizar várias operações 
 
 **Melhorias no processo de sincronização**
 
-Há várias melhorias no layout de canal da Web gerado automaticamente usando o canal Imprimir.
+Há várias melhorias no layout do canal da Web gerado automaticamente usando o canal Imprimir.
 
 ![Gráficos de Comunicações Interativas](assets/interactive-communication-charts.png)
 
@@ -92,27 +92,27 @@ Agora, é possível definir regras para [adicionar caixas de seleção ao Formul
 
 ## Fluxos de trabalho do AEM {#aem-workflows}
 
-### Usar variáveis em fluxos de trabalho do AEM {#use-variables-in-aem-workflows}
+### Usar variáveis em Workflows AEM {#use-variables-in-aem-workflows}
 
 As variáveis permitem que as etapas do fluxo de trabalho mantenham e passem metadados pelas etapas do fluxo de trabalho no tempo de execução. Você pode criar diferentes tipos de variáveis para armazenar diferentes tipos de dados. Por exemplo, inteiros, sequências, documentos ou instâncias de modelo de dados de formulário. Geralmente, você usa uma variável ou uma coleção de variáveis quando precisa tomar uma decisão com base no valor que ela contém ou armazenar informações necessárias posteriormente em um processo.
 
-As variáveis são uma extensão da interface [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) disponível na versão anterior. Ajuda a economizar tempo gasto no desenvolvimento de código ECMAScript personalizado usado para recuperar e atualizar valores de metadados. Você continua usando a interface MetaDataMap e o código ECMAScript para manipular metadados. Alguns benefícios do uso de variáveis sobre MetaDataMap e ECMAScript são:
+As variáveis são uma extensão da interface [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) disponível na versão anterior. Ele ajuda a economizar tempo gasto no desenvolvimento de código ECMAScript personalizado usado para recuperar e atualizar valores de metadados. Você continua usando a interface MetaDataMap e o código ECMAScript para manipular metadados. Alguns benefícios do uso de variáveis sobre MetaDataMap e ECMAScript são:
 
 * Armazenar, atualizar e usar dinamicamente valores armazenados em uma variável no fluxo de trabalho sem depender do código personalizado
 * Recuperar e atualizar valores diretamente em um modelo de dados de formulário e em um arquivo de dados (XML/JSON ) de um formulário enviado
-* Armazenar documentos completos em uma variável para executar o processamento de documentos
+* Armazene documentos completos em uma variável para executar o processamento de documentos
 
-A etapa Ir para ou a etapa Dividir e todas as etapas do fluxo de trabalho do AEM Forms suportam variáveis. Você pode usar a interface MetaDataMap para acessar variáveis em etapas de fluxo de trabalho que não têm suporte nativo para variáveis. Para obter mais informações, consulte [Variáveis nos fluxos de trabalho](../../forms/using/variable-in-aem-workflows.md)do AEM.
+A etapa Ir para ou a etapa Dividir e todas as etapas do fluxo de trabalho do AEM Forms suportam variáveis. Você pode usar a interface do MetaDataMap para acessar variáveis em etapas de fluxo de trabalho que não têm suporte nativo para variáveis. Para obter mais informações, consulte [Variáveis em Workflows](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 ![Configuração de uma variável para em um fluxo de trabalho](assets/variable.png)
 
 #### Usar um fluxo de trabalho com diferentes Formulários adaptativos {#use-a-workflow-with-different-adaptive-forms}
 
-Você pode [especificar um Formulário adaptável para a tarefa](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) de atribuição e o documento da etapa de registro de fluxos de trabalho centrados em formulários no tempo de execução. Ele permite que um fluxo de trabalho funcione com diferentes Formulários adaptativos. Você pode decidir o método para selecionar um Formulário adaptável ao projetar o fluxo de trabalho. O Formulário adaptativo pode ser localizado em um caminho absoluto, enviado como carga para o fluxo de trabalho ou disponível em um caminho calculado usando uma variável.
+É possível [especificar um Formulário adaptável para atribuir tarefa](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) e documento da etapa de registro de workflows centrados em formulários no tempo de execução. Ele permite que um fluxo de trabalho funcione com diferentes Formulários adaptativos. Você pode decidir o método para selecionar um Formulário adaptável ao projetar o fluxo de trabalho. O Formulário adaptativo pode ser localizado em um caminho absoluto, enviado como carga para o fluxo de trabalho ou disponível em um caminho calculado usando uma variável.
 
 #### Usar recursos de registro aprimorados de etapas de fluxo de trabalho centradas em formulários {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
-Os recursos de registro das etapas do fluxo de trabalho centradas em formulários são padronizados. Agora, todas as etapas do fluxo de trabalho centradas em formulários produzem registros padronizados semelhantes. Ajuda a melhorar a velocidade de depuração.
+Os recursos de registro das etapas do fluxo de trabalho centradas em formulários são padronizados. Agora, todas as etapas do fluxo de trabalho centradas em formulários produzem registros padronizados semelhantes. Isso ajuda a melhorar a velocidade de depuração.
 
 ## Integração de dados {#data-integration}
 
@@ -204,7 +204,7 @@ O AEM Forms pode ser configurado usando qualquer combinação de sistemas operac
 
 #### Novas interfaces de usuário baseadas em HTML5 {#new-html-based-uis}
 
-Em consonância com o EOL planejado do Adobe Flash Player e a direção geral de migrar o conteúdo baseado em Flash para padrões abertos, o AEM 6.5 Forms substituiu a interface do usuário baseada em Flash do Health Monitor, do Process Management, do Reader Extension e da interface do usuário de gerenciamento de categorias do AEM Forms no JEE Administration Console pela interface do usuário baseada em HTML5.
+Em consonância com o EOL planejado do Adobe Flash Player e a direção geral de migrar o conteúdo baseado em Flash para padrões abertos, o AEM 6.5 Forms substituiu a interface do usuário baseada em Flash do Monitor de integridade, do Gerenciamento de processos, do Reader Extension e da interface de gerenciamento de Categorias do AEM Forms no JEE Administration Console por uma interface baseada em HTML5.
 
 #### Melhorias na segurança {#security-improvements}
 
