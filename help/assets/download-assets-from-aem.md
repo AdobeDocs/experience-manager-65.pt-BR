@@ -3,7 +3,7 @@ title: Baixar ativos no AEM
 description: Saiba como baixar ativos do AEM e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -14,7 +14,7 @@ Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Co
 
 >[!NOTE]
 >
->Os destinatários dos emails devem ser membros do `dam-users` grupo para acessar o link de download ZIP na mensagem de email. Para poder baixar os ativos, os membros devem ter permissões para iniciar fluxos de trabalho que acionam o download de ativos.
+>Recipient de e-mails devem ser membros do `dam-users` grupo para acessar o link de download ZIP na mensagem de e-mail. Para poder baixar os ativos, os membros devem ter permissões para iniciar workflows que acionam o download de ativos.
 
 Para baixar ativos, navegue até um ativo, selecione o ativo e toque em **[!UICONTROL Download]** na barra de ferramentas. Na caixa de diálogo resultante, especifique as opções de download.
 
@@ -30,7 +30,7 @@ Veja a seguir as opções de Exportação/Download. As renderizações dinâmica
 |---|---|
 | [!UICONTROL Ativos] | Selecione essa opção para baixar o ativo em seu formulário original sem execuções. |
 | [!UICONTROL Representações] | Uma representação é uma representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Podem ter qualquer número de representações. <br> Com essa opção, você pode selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
-| [!UICONTROL Representações dinâmicas] | Uma execução dinâmica gera outras execuções dinamicamente. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista Predefinição [de](image-presets.md) imagem. <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cor, a resolução e qualquer modificador de imagem (por exemplo, para inverter a imagem) |
+| [!UICONTROL Representações dinâmicas] | Uma execução dinâmica gera outras execuções dinamicamente. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista [Predefinição](image-presets.md) de imagem. <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cor, a resolução e qualquer modificador de imagem (por exemplo, para inverter a imagem) |
 | [!UICONTROL E-mail] | Uma notificação por email é enviada ao usuário. Os modelos padrão de e-mails estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> Os modelos que você personaliza durante a implantação devem estar presentes nesses locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>Você pode armazenar modelos personalizados específicos do locatário nesses locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
 | [!UICONTROL Criar uma pasta separada para cada ativo] | Selecione essa opção para preservar a hierarquia de pastas ao baixar ativos. Por padrão, a hierarquia de pastas é ignorada e todos os ativos são baixados em uma pasta no sistema local. |
 
@@ -44,7 +44,7 @@ O servlet padrão no AEM permite que os usuários autenticados emitam solicitaç
 
 Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Share Commons ou outra implementação semelhante ao portal, ative manualmente o servlet por meio de uma configuração OSGi. A Adobe recomenda definir o tamanho de download permitido o mais baixo possível sem afetar os requisitos diários de download. Um valor alto pode afetar o desempenho.
 
-1. Crie uma pasta com uma convenção de nomenclatura direcionada ao modo de execução de publicação, ou seja, `config.publish`:
+1. Crie uma pasta com uma convenção de nomenclatura que público alvo o modo de execução de publicação, ou seja, `config.publish`:
 
    `/apps/<your-app-name>/config.publish`
 
@@ -72,4 +72,5 @@ O `Asset Download Servlet` pode ser desativado em instâncias de publicação de
 >
 >* [Baixar ativos protegidos pelo DRM](drm.md)
 >* [Baixar ativos usando o aplicativo de desktop AEM no desktop Win ou Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [Baixar ativos usando o Adobe Assets Link dos aplicativos da Adobe Creative Cloud compatíveis](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Baixar ativos usando o Adobe Assets Link dos aplicativos da Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
+
