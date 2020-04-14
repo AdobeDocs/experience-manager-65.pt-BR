@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
 
 ---
 
@@ -52,9 +52,9 @@ Verifique os seguintes parâmetros:
  </tbody>
 </table>
 
-## Problema: Não é possível renderizar um formulário (uma mensagem de erro é exibida) {#problem-unable-to-render-a-form-an-error-message-is-displayed}
+## Problema: Não é possível renderizar um formulário (uma mensagem de erro é exibida) {#problem-unable-to-render-form}
 
-1. Verifique se os parâmetros especificados estão corretos. Para obter informações detalhadas sobre parâmetros, consulte [Renderizar parâmetros](/help/forms/using/debug.md#main-pars-table).
+1. Verifique se os parâmetros especificados estão corretos. Para obter informações detalhadas sobre parâmetros, consulte [Renderizar parâmetros](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
 1. Faça logon no CRX Package Manager (em https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) e verifique se os seguintes pacotes estão instalados corretamente:
 
    * adobe-lc-forms-content-pkg-&lt;versão>.zip
