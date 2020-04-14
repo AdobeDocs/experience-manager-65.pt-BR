@@ -3,7 +3,7 @@ title: Usar o rasterizador de PDF para gerar execuções
 description: Este artigo descreve como gerar miniaturas e execuções de alta qualidade usando a biblioteca do Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -18,7 +18,7 @@ A Adobe recomenda usar a biblioteca do PDF Rasterizer para o seguinte:
 * Arquivos AI/PDF com miniaturas não gerados na caixa
 * Arquivos AI com cores Pantone Matching System (PMS)
 
-As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qualidade em relação à saída predefinida e, portanto, proporcionam uma experiência de visualização consistente em todos os dispositivos. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Sempre resulta em RGB independentemente do espaço de cor do arquivo de origem.
+As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação com a saída predefinida e, portanto, proporcionam uma experiência de visualização consistente em todos os dispositivos. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Sempre resulta em RGB independentemente do espaço de cor do arquivo de origem.
 
 1. Instale o pacote PDF Rasterizer na instância do AEM a partir do Compartilhamento [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)pacotes.
 
@@ -26,19 +26,17 @@ As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qual
    >
    >A biblioteca do PDF Rasterizer está disponível somente para Windows e Linux.
 
-1. Acesse o console de fluxo de trabalho dos ativos AEM em `https://[server]:[port]/workflow`.
-
-   Abra a página de fluxo de trabalho Atualizar ativo do DAM.
+1. Acesse o console de fluxo de trabalho dos ativos AEM em `https://[server]:[port]/workflow`. Abra a página de fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM.
 
 1. Para impedir a geração de miniaturas e renderizações da Web para arquivos PDF e AI usando os métodos padrão, siga estas etapas:
 
    * Abra a etapa **[!UICONTROL Processar miniaturas]** e adicione `application/pdf` ou `application/postscript` no campo **[!UICONTROL Ignorar tipos]** MIME na guia **[!UICONTROL Miniaturas]** , conforme necessário.
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
-   * Na guia Imagem **[!UICONTROL habilitada para a]** Web, adicione `application/pdf` ou `application/postscript` em **[!UICONTROL Lista]** ignorada, dependendo de seus requisitos.
+   * Na guia Imagem **[!UICONTROL ativada pela]** Web, adicione `application/pdf` ou `application/postscript` em **[!UICONTROL Ignorar Lista]** , dependendo de seus requisitos.
    ![Configuração para ignorar o processamento de miniaturas para um formato de imagem](assets/web_enabled_imageskiplist.png)
 
-1. Abra a etapa **[!UICONTROL Rasterizar representação de visualização]** de imagem PDF/AI e remova o tipo MIME para o qual você deseja ignorar a geração padrão de representações de imagem de visualização. Por exemplo, remova o tipo MIME `application/pdf`, `application/postscript`ou `application/illustrator` da lista Tipos **** MIME.
+1. Abra a etapa **[!UICONTROL Rasterizar representação de Pré-visualização]** de imagem PDF/AI e remova o tipo MIME para o qual você deseja ignorar a geração padrão de representações de imagem de pré-visualização. Por exemplo, remova o tipo MIME `application/pdf`, `application/postscript`ou `application/illustrator` da lista **[!UICONTROL MIME Types]** .
 
    ![process_argumentos](assets/process_arguments.png)
 
@@ -65,7 +63,7 @@ As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qual
 
 
 1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir representação gerada]**.
-1. Para permitir que PDF Rasterize gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
+1. Para permitir que o PDF Rasterize gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
@@ -98,7 +96,7 @@ As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qual
 
 
 1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir representação gerada]**.
-1. Para permitir que PDF Rasterize gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
+1. Para permitir que o PDF Rasterize gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
@@ -107,4 +105,4 @@ As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qual
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Salve o fluxo de trabalho.
-1. Carregue um arquivo PDF ou AI para os ativos AEM. O PDF Rasterizer gera miniaturas e representações da Web para o arquivo.
+1. Faça upload de um arquivo PDF ou AI para os ativos AEM. O PDF Rasterizer gera miniaturas e representações da Web para o arquivo.
