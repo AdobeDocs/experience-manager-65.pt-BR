@@ -4,7 +4,7 @@ description: Sugestões e orientações sobre a configuração do AEM, alteraç�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -19,7 +19,7 @@ Além disso, identificar e seguir determinadas diretrizes de otimização de har
 
 O baixo desempenho nos ativos AEM pode afetar a experiência do usuário em relação ao desempenho interativo, processamento de ativos, velocidade de download e outras áreas.
 
-Na verdade, a otimização de desempenho é uma tarefa fundamental que você executa antes de estabelecer métricas de direcionamento para qualquer projeto.
+Na verdade, a otimização do desempenho é uma tarefa fundamental que você executa antes de estabelecer métricas de público alvo para qualquer projeto.
 
 Estas são algumas áreas de foco chave em torno das quais você descobre e corrige problemas de desempenho antes que eles afetem os usuários.
 
@@ -29,7 +29,7 @@ Embora o AEM seja suportado em várias plataformas, a Adobe encontrou o maior su
 
 ### Pasta temporária {#temp-folder}
 
-Para melhorar os tempos de carregamento dos ativos, use armazenamento de alto desempenho para o diretório temporário Java. No Linux e no Windows, uma unidade de RAM ou SSD pode ser usada. Em ambientes baseados em nuvem, pode ser usado um tipo de armazenamento de alta velocidade equivalente. Por exemplo, no Amazon EC2, uma unidade [&#39;ephemeral drive&#39;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) pode ser usada para a pasta temporária.
+Para melhorar os tempos de upload de ativos, use o armazenamento de alto desempenho para o diretório temporário Java. No Linux e no Windows, uma unidade de RAM ou SSD pode ser usada. Em ambientes baseados em nuvem, um tipo de armazenamento de alta velocidade equivalente pode ser usado. Por exemplo, no Amazon EC2, uma unidade [&#39;ephemeral drive&#39;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) pode ser usada para a pasta temporária.
 
 Supondo que o servidor tenha ampla memória, configure uma unidade RAM. No Linux, execute estes comandos para criar uma unidade de 8 GB de RAM:
 
@@ -40,7 +40,7 @@ mkfs -q /dev/ram1 800000
  df -H | grep aem-tmp
 ```
 
-No SO Windows, use um driver de terceiros para criar uma unidade RAM ou use apenas armazenamento de alto desempenho, como SSD.
+No SO Windows, use um driver de terceiros para criar uma unidade RAM ou use apenas um armazenamento de alto desempenho, como SSD.
 
 Quando o volume temporário de alto desempenho estiver pronto, defina o parâmetro JVM `-Djava.io.tmpdir`. Por exemplo, você pode adicionar o parâmetro JVM abaixo à `CQ_JVM_OPTS` variável no `bin/start` script do AEM:
 
@@ -74,7 +74,7 @@ Você deve definir os seguintes parâmetros JVM:
 
 ### Configurar o tamanho máximo do cache de imagem em buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Ao fazer upload de grandes quantidades de ativos para o Adobe Experience Manager, para permitir picos inesperados no consumo de memória e para evitar falhas de JVM com OutOfMemoryErrors, reduza o tamanho máximo configurado do cache de imagem em buffer. Considere um exemplo de que você tem um sistema com um heap máximo (- `Xmx`param) de 5 GB, um BlobCache Oak definido em 1 GB e um cache de documento definido em 2 GB. Nesse caso, o cache armazenado em buffer levaria no máximo 1,25 GB e memória, o que deixaria apenas 0,75 GB de memória para picos inesperados.
+Ao fazer upload de grandes quantidades de ativos para o Adobe Experience Manager, para permitir picos inesperados no consumo de memória e para evitar falhas de JVM com OutOfMemoryErrors, reduza o tamanho máximo configurado do cache de imagem em buffer. Considere um exemplo de que você tem um sistema com um heap ( `Xmx`param) máximo de 5 GB, um BlobCache Oak definido em 1 GB e um cache de documento definido em 2 GB. Nesse caso, o cache armazenado em buffer levaria no máximo 1,25 GB e memória, o que deixaria apenas 0,75 GB de memória para picos inesperados.
 
 Configure o tamanho do cache armazenado em buffer no console da Web OSGi. Em `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, defina a propriedade `cq.dam.image.cache.max.memory` em bytes. Por exemplo, 1073741824 é 1 GB (1024 x 1024 x 1024 = 1 GB).
 
@@ -82,7 +82,7 @@ No AEM 6.1 SP1, se você estiver usando um `sling:osgiConfig` nó para configura
 
 ### Armazenamentos de dados compartilhados {#shared-data-stores}
 
-A implementação de um armazenamento de dados de arquivos compartilhados ou S3 pode ajudar a economizar espaço em disco e aumentar o throughput da rede em implementações de larga escala. Para obter mais informações sobre os prós e contras de usar um armazenamento de dados compartilhado, consulte o Guia [de dimensionamento de](/help/assets/assets-sizing-guide.md)ativos.
+A implementação de um armazenamento de dados de arquivos compartilhados ou S3 pode ajudar a economizar espaço em disco e aumentar o throughput da rede em implementações de larga escala. Para obter mais informações sobre os prós e contras do uso de um armazenamento de dados compartilhado, consulte o Guia [de dimensionamento de](/help/assets/assets-sizing-guide.md)ativos.
 
 ### S3 data store {#s-data-store}
 
@@ -111,7 +111,7 @@ accessKey=<snip>
 
 ## Otimização da rede {#network-optimization}
 
-A Adobe recomenda ativar o HTTPS, pois muitas empresas têm firewalls que cheiram o tráfego HTTP, o que afeta negativamente os uploads e corrompe os arquivos. Para fazer uploads de arquivos grandes, verifique se os usuários têm conexões com fio à rede, pois uma rede WiFi fica rapidamente saturada. Para obter diretrizes sobre como identificar gargalos de rede, consulte Guia [de dimensionamento de](/help/assets/assets-sizing-guide.md)ativos. Para avaliar o desempenho da rede analisando a topologia da rede, consulte Considerações [de rede do](/help/assets/assets-network-considerations.md)Assets.
+A Adobe recomenda habilitar o HTTPS porque muitas empresas têm firewalls que cheiram o tráfego HTTP, o que afeta negativamente os uploads e corrompe os arquivos. Para fazer uploads de arquivos grandes, verifique se os usuários têm conexões com fio à rede, pois uma rede WiFi fica rapidamente saturada. Para obter diretrizes sobre como identificar gargalos de rede, consulte Guia [de dimensionamento de](/help/assets/assets-sizing-guide.md)ativos. Para avaliar o desempenho da rede analisando a topologia da rede, consulte Considerações [de rede do](/help/assets/assets-network-considerations.md)Assets.
 
 Principalmente, sua estratégia de otimização de rede depende da quantidade de largura de banda disponível e da carga da sua instância do AEM. Opções comuns de configuração, incluindo firewalls ou proxies, podem ajudar a melhorar o desempenho da rede. Estes são alguns pontos-chave que devem ser levados em conta:
 
@@ -122,54 +122,54 @@ Principalmente, sua estratégia de otimização de rede depende da quantidade de
 
 ## Fluxos de trabalhos {#workflows}
 
-### Fluxos de trabalho transitórios {#transient-workflows}
+### workflows transitórios {#transient-workflows}
 
-Sempre que possível, defina o fluxo de trabalho Atualizar ativo DAM como Transitório. A configuração reduz significativamente os custos indiretos necessários para processar fluxos de trabalho porque, nesse caso, os fluxos de trabalho não precisam passar pelos processos normais de rastreamento e arquivamento.
+Sempre que possível, defina o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM como Transitório. A configuração reduz significativamente os custos indiretos necessários para processar workflows porque, nesse caso, os workflows não precisam passar pelos processos normais de rastreamento e arquivamento.
 
 >[!NOTE]
 >
->Por padrão, o fluxo de trabalho do Ativo de atualização do DAM está definido como Transitório no AEM 6.3. Nesse caso, você pode ignorar o procedimento a seguir.
+>Por padrão, o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM está definido como Transitório no AEM 6.3. Nesse caso, você pode ignorar o procedimento a seguir.
 
 1. Navegue até `/miscadmin` a instância do AEM em `https://[aem_server]:[port]/miscadmin`.
 1. Expanda **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL dam]**.
 1. Abra Ativo **[!UICONTROL de atualização do]** DAM. No painel de ferramentas flutuante, alterne para a guia **[!UICONTROL Página]** e clique em Propriedades **** da página.
-1. Selecione Fluxo de trabalho **[!UICONTROL temporário e clique em]** OK ****.
+1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Alguns recursos não suportam fluxos de trabalho transitórios. Se sua implantação do AEM Assets exigir esses recursos, não configure fluxos de trabalho transitórios.
+   >Alguns recursos não suportam workflows transitórios. Se a implantação do AEM Assets exigir esses recursos, não configure workflows transitórios.
 
-Nos casos em que fluxos de trabalho transitórios não podem ser usados, execute a remoção de fluxo de trabalho regularmente para excluir fluxos de trabalho arquivados de Atualização de DAM Asset para garantir que o desempenho do sistema não diminua.
+Nos casos em que workflows transitórios não podem ser usados, execute a remoção regular do fluxo de trabalho para excluir workflows arquivados de ativos [!UICONTROL de atualização de] DAM para garantir que o desempenho do sistema não diminua.
 
-Geralmente, execute os fluxos de trabalho de expurgação semanalmente. No entanto, em cenários com uso intenso de recursos, como durante a assimilação de ativos em larga escala, você pode executá-los com mais frequência.
+Geralmente, execute os workflows de expurgação semanalmente. No entanto, em cenários com uso intenso de recursos, como durante a assimilação de ativos em larga escala, você pode executá-los com mais frequência.
 
-Para configurar a remoção do fluxo de trabalho, adicione uma nova configuração de Expurgação do fluxo de trabalho do Adobe Granite por meio do console OSGi. Em seguida, configure e agende o fluxo de trabalho como parte da janela de manutenção semanal.
+Para configurar a expurgação do fluxo de trabalho, adicione uma nova configuração de Expurgação do fluxo de trabalho do Adobe Granite por meio do console OSGi. Em seguida, configure e agende o fluxo de trabalho como parte da janela de manutenção semanal.
 
-Se a limpeza for longa demais, ela expira. Portanto, você deve garantir que suas tarefas de expurgação sejam concluídas para evitar situações em que a expurgação de fluxos de trabalho não seja concluída devido ao alto número de fluxos de trabalho.
+Se a limpeza for longa demais, ela expira. Portanto, você deve garantir que as tarefas de purga sejam concluídas para evitar situações em que workflows de expurgação não sejam concluídos devido ao alto número de workflows.
 
-Por exemplo, após executar vários fluxos de trabalho não transitórios (que criam nós de instância do fluxo de trabalho), você pode executar o [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) de forma ad hoc. Ele remove instâncias de fluxo de trabalho redundantes e concluídas imediatamente, em vez de aguardar a execução do programador de Expurgação do Fluxo de Trabalho do Adobe Granite.
+Por exemplo, após executar vários workflows não transitórios (que criam nós de instância do fluxo de trabalho), você pode executar o [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) de forma ad hoc. Ele remove instâncias de fluxo de trabalho redundantes e concluídas imediatamente, em vez de aguardar a execução do scheduler de Expurgação do Fluxo de Trabalho do Adobe Granite.
 
 ### Máximo de trabalhos paralelos {#maximum-parallel-jobs}
 
-Por padrão, o AEM executa um número máximo de trabalhos paralelos igual ao número de processadores no servidor. O problema com essa configuração é que, durante períodos de carga pesada, todos os processadores são ocupados pelos fluxos de trabalho do Ativo de atualização do DAM, retardando a capacidade de resposta da interface e impedindo que o AEM execute outros processos que salvaguardem o desempenho e a estabilidade do servidor. Como prática recomendada, defina esse valor para metade dos processadores disponíveis no servidor, executando as seguintes etapas:
+Por padrão, o AEM executa um número máximo de trabalhos paralelos igual ao número de processadores no servidor. O problema com essa configuração é que durante períodos de carga pesada, todos os processadores são ocupados por workflows de ativos [!UICONTROL de atualização do] DAM, retardando a capacidade de resposta da interface do usuário e impedindo que o AEM execute outros processos que salvaguardem o desempenho e a estabilidade do servidor. Como prática recomendada, defina esse valor para metade dos processadores disponíveis no servidor, executando as seguintes etapas:
 
 1. No AEM Author, vá para `https://[aem_server]:[port]/system/console/slingevent`.
 1. Clique em **[!UICONTROL Editar]** em cada fila de fluxo de trabalho relevante para sua implementação, por exemplo, Fila **[!UICONTROL de fluxo de trabalho temporário de]** granite.
 1. Atualize o valor de **[!UICONTROL Máximo de Trabalhos]** Paralelos e clique em **[!UICONTROL Salvar]**.
 
-Definir uma fila para metade dos processadores disponíveis é uma solução viável para começar. No entanto, talvez seja necessário aumentar ou diminuir esse número para atingir o throughput máximo e ajustá-lo pelo ambiente. Há filas separadas para fluxos de trabalho transitórios e não transitórios, bem como outros processos, como fluxos de trabalho externos. Se várias filas definidas como 50% dos processadores estiverem ativos simultaneamente, o sistema poderá ser sobrecarregado rapidamente. As filas muito usadas variam muito entre as implementações do usuário. Portanto, talvez seja necessário configurá-los cuidadosamente para obter a máxima eficiência sem sacrificar a estabilidade do servidor.
+Configurar uma fila para metade dos processadores disponíveis é uma solução viável para o start. No entanto, talvez seja necessário aumentar ou diminuir esse número para atingir o throughput máximo e ajustá-lo por ambiente. Há filas separadas para workflows transitórios e não transitórios, bem como outros processos, como workflows externos. Se várias filas definidas como 50% dos processadores estiverem ativos simultaneamente, o sistema poderá ser sobrecarregado rapidamente. As filas muito usadas variam muito entre as implementações do usuário. Portanto, talvez seja necessário configurá-los cuidadosamente para obter a máxima eficiência sem sacrificar a estabilidade do servidor.
 
 ### Configuração do ativo de atualização do DAM {#dam-update-asset-configuration}
 
-O fluxo de trabalho do Ativo de atualização do DAM contém um conjunto completo de etapas configuradas para tarefas, como geração do Scene7 PTIFF e integração do InDesign Server. Entretanto, a maioria dos usuários pode não exigir várias dessas etapas. A Adobe recomenda que você crie uma cópia personalizada do modelo de fluxo de trabalho Atualizar ativo DAM e remova quaisquer etapas desnecessárias. Nesse caso, atualize os iniciadores do Ativo de atualização do DAM para apontar para o novo modelo.
+O fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM contém um conjunto completo de etapas configuradas para o tarefa, como geração do Scene7 PTIFF e integração com o InDesign Server. No entanto, a maioria dos usuários pode não exigir várias dessas etapas. A Adobe recomenda que você crie uma cópia personalizada do modelo de fluxo de trabalho Atualizar ativo  DAM e remova quaisquer etapas desnecessárias. Nesse caso, atualize os iniciadores do Ativo [!UICONTROL de atualização do] DAM para apontar para o novo modelo.
 
-A execução intensiva do fluxo de trabalho do Ativo de atualização do DAM pode aumentar consideravelmente o tamanho do armazenamento de dados do arquivo. Os resultados de um experimento realizado pela Adobe mostraram que o tamanho do armazenamento de dados pode aumentar aproximadamente 400 GB se cerca de 5500 fluxos de trabalho forem executados em 8 horas.
+A execução intensiva do fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM pode aumentar consideravelmente o tamanho do armazenamento de dados do arquivo. Os resultados de um experimento realizado pela Adobe mostraram que o tamanho do armazenamento de dados pode aumentar aproximadamente 400 GB se cerca de 5500 workflows forem executados dentro de 8 horas.
 
 É um aumento temporário e o armazenamento de dados é restaurado para seu tamanho original depois que você executa a tarefa de coleta de lixo do armazenamento de dados.
 
-Normalmente, a tarefa de coleta de lixo do armazenamento de dados é executada semanalmente, juntamente com outras tarefas de manutenção programadas.
+Normalmente, a tarefa de coleta de lixo do armazenamento de dados é executada semanalmente junto com outras tarefas de manutenção programadas.
 
-Se você tiver um espaço em disco limitado e executar fluxos de trabalho de Atualização de ativos DAM intensivamente, considere programar a tarefa de coleta de lixo com mais frequência.
+Se você tiver um espaço em disco limitado e executar workflows de ativos [!UICONTROL de atualização de] DAM intensamente, considere programar a tarefa de coleta de lixo com mais frequência.
 
 #### Geração de execução em tempo de execução {#runtime-rendition-generation}
 
@@ -181,7 +181,7 @@ Uma abordagem alternativa é usar a tecnologia Scene7 para entregar totalmente a
 
 #### ImageMagick {#imagemagick}
 
-Se você personalizar o fluxo de trabalho Atualizar ativo DAM para gerar representações usando o ImageMagick, a Adobe recomenda que você modifique o `policy.xml` arquivo em `/etc/ImageMagick/`. Por padrão, o ImageMagick usa todo o espaço em disco disponível no volume do SO e na memória disponível. Faça as seguintes alterações de configuração na `policymap` seção de `policy.xml` para limitar esses recursos.
+Se você personalizar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM para gerar renderizações usando o ImageMagick, a Adobe recomenda que você modifique o `policy.xml` arquivo em `/etc/ImageMagick/`. Por padrão, o ImageMagick usa todo o espaço em disco disponível no volume do SO e na memória disponível. Faça as seguintes alterações de configuração na `policymap` seção de `policy.xml` para limitar esses recursos.
 
 ```xml
 <policymap>
@@ -220,15 +220,15 @@ O write-back XMP atualiza o ativo original sempre que os metadados são modifica
 
 * O próprio ativo é modificado
 * Uma versão do ativo é criada
-* O Ativo de atualização de DAM é executado no ativo
+* [!UICONTROL O Ativo] de atualização DAM é executado no ativo
 
-Os resultados referidos consomem recursos consideráveis. Portanto, a Adobe recomenda [desativar o Writeback](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)XMP, se não for necessário.
+Os resultados listados consomem recursos consideráveis. Portanto, a Adobe recomenda [desativar o Writeback](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)XMP, se não for necessário.
 
-Importar uma grande quantidade de metadados pode resultar em atividade de gravação XMP de uso intenso de recursos se o sinalizador de fluxos de trabalho de execução estiver marcado. Planeje tal importação durante o uso de servidor simplificado para que o desempenho para outros usuários não seja afetado.
+Importar uma grande quantidade de metadados pode resultar em atividade de write-back XMP de uso intenso de recursos se o sinalizador workflows de execução estiver marcado. Planeje tal importação durante o uso de servidor simplificado para que o desempenho para outros usuários não seja afetado.
 
 ## Replicação {#replication}
 
-Ao replicar ativos para um grande número de instâncias de publicação, por exemplo em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
+Ao replicar ativos para um grande número de instâncias de publicação, por exemplo, em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
 
 ### Configurar replicação em cadeia {#configure-chain-replication}
 
@@ -244,7 +244,7 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 Certifique-se de implementar os service packs mais recentes e os hotfixes relacionados ao desempenho, pois eles frequentemente incluem atualizações para índices do sistema. Consulte Dicas [de ajuste de](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) desempenho para obter algumas otimizações de índice.
 
-Crie índices personalizados para consultas que você executa com frequência. Para obter detalhes, consulte a [metodologia para analisar consultas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) lentas e [criar índices](/help/sites-deploying/queries-and-indexing.md)personalizados. Para obter informações adicionais sobre as práticas recomendadas de consulta e índice, consulte Práticas [recomendadas para consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Crie índices personalizados para query executados com frequência. Para obter detalhes, consulte a [metodologia para analisar query](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) lentos e [criar índices](/help/sites-deploying/queries-and-indexing.md)personalizados. Para obter informações adicionais sobre as práticas recomendadas de query e índice, consulte Práticas [recomendadas para Query e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Configurações do índice Lucene {#lucene-index-configurations}
 
@@ -286,7 +286,7 @@ Reindexação concluída para índices: [/carvalho:index/ntBaseLucene]
 
 1. Clique em &quot;Salvar tudo&quot;
 
-Desativar Extração de Texto de Lucene:
+Desativar Extração de texto de Lucene:
 
 Se os usuários não precisarem pesquisar o conteúdo de ativos, por exemplo, pesquisar o texto contido em documentos PDF, você poderá melhorar o desempenho do índice desabilitando esse recurso.
 
@@ -297,7 +297,7 @@ Se os usuários não precisarem pesquisar o conteúdo de ativos, por exemplo, pe
 
 ### Total de suposições {#guess-total}
 
-Ao criar consultas que geram grandes conjuntos de resultados, use o `guessTotal` parâmetro para evitar a utilização de memória pesada ao executá-las.
+Ao criar query que geram grandes conjuntos de resultados, use o `guessTotal` parâmetro para evitar a utilização de memória pesada ao executá-los.
 
 ## Problemas conhecidos {#known-issues}
 
@@ -309,14 +309,14 @@ Da mesma forma, quando os arquivos atingem 2 GB ao usar um armazenamento de dado
 
 ## Teste de desempenho {#performance-testing}
 
-Para cada implantação do AEM, estabeleça um regime de teste de desempenho que possa identificar e resolver gargalos rapidamente. Aqui estão algumas áreas-chave para se concentrar.
+Para cada implantação do AEM, estabeleça um regime de teste de desempenho que possa identificar e resolver gargalos rapidamente. Aqui estão algumas áreas-chave para se focar.
 
 ### Teste de rede {#network-testing}
 
 Para todas as preocupações de desempenho de rede do cliente, execute as seguintes tarefas:
 
 * Teste o desempenho da rede na rede do cliente
-* Teste o desempenho da rede na rede da Adobe. Para clientes do AMS, trabalhe com seu CSE para testar a partir da rede da Adobe.
+* Teste o desempenho da rede a partir da rede da Adobe. Para clientes do AMS, entre em contato com seu CSE para testar a partir da rede da Adobe.
 * Testar o desempenho da rede de outro ponto de acesso
 * Usando uma ferramenta de benchmark de rede
 * Teste contra o expedidor
@@ -335,11 +335,11 @@ Para minimizar a latência e alcançar alta throughput por meio da utilização 
 * Implantar no Java 8.
 * Definir parâmetros JVM ideais
 * Configurar um DataStore do sistema de arquivos ou um S3 DataStore
-* Ativar fluxos de trabalho transitórios
+* Ativar workflows transitórios
 * Ajustar as filas de fluxo de trabalho Granite para limitar trabalhos simultâneos
 * Configurar o ImageMagick para limitar o consumo de recursos
-* Remova etapas desnecessárias do fluxo de trabalho Atualizar ativo DAM
+* Remova etapas desnecessárias do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM
 * Configurar a depuração de fluxo de trabalho e versão
 * Otimize índices com os service packs e hotfixes mais recentes. Consulte o Suporte da Adobe para obter outras otimizações de índice que possam estar disponíveis.
-* Use a opção de estimativa total para otimizar o desempenho da consulta.
-* Se você configurar o AEM para detectar tipos de arquivos a partir do conteúdo dos arquivos (habilitando o **[!UICONTROL Day CQ DAM Mime Type Service]** no console **[!UICONTROL da Web do]** AEM), faça upload de muitos arquivos em massa durante horas que não sejam de pico, pois ele consome muitos recursos.
+* Use a opção supyTotal para otimizar o desempenho do query.
+* Se você configurar o AEM para detectar tipos de arquivos a partir do conteúdo dos arquivos (habilitando o **[!UICONTROL Day CQ DAM Mime Type Service]** no **[!UICONTROL Console da Web do AEM]**), faça upload de muitos arquivos em massa durante horas que não sejam de pico, pois ele consome muitos recursos.
