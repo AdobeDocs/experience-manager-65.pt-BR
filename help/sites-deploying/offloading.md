@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: 4ccaf401d561087f864c95e2be4c594cf34a7cb7
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 4ccaf401d561087f864c95e2be4c594cf34a7cb7
 
 ## Introdução {#introduction}
 
-A descarga distribui as tarefas de processamento, incluindo as instâncias do Experience Manager em uma topologia. Com a descarga, você pode usar instâncias específicas do Experience Manager para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
+A descarga distribui tarefas de processamento que somam instâncias do Experience Manager em uma topologia. Com o descarregamento, você pode usar instâncias específicas do Experience Manager para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
 
 A descarga é baseada nos recursos [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Para usar a descarga, adicione clusters do Experience Manager a uma topologia e identifique os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias do Experience Manager, de modo que uma única instância é considerada um cluster.
 
@@ -85,13 +85,13 @@ Para cada instância do cluster, é possível ver várias propriedades relaciona
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Clique em um cluster para ver uma lista das instâncias no cluster e sua ID, status atual e status de líder.
+1. Clique em um cluster para ver uma lista das instâncias no cluster e sua ID, status atual e status de pontilhado.
 1. Clique em uma ID de instância para ver as propriedades mais detalhadas.
 
-Você também pode usar o Console da Web para exibir informações de topologia. O console fornece mais informações sobre os clusters de topologia:
+Você também pode usar o Console da Web para obter informações sobre topologia de visualização. O console fornece mais informações sobre os clusters de topologia:
 
 * Qual instância é a instância local.
-* Os serviços do Topology Connector que esta instância usa para se conectar à topologia (de saída) e aos serviços que se conectam a esta instância (de entrada).
+* Os serviços do Conector de topologia que esta instância usa para se conectar à topologia (de saída) e aos serviços que se conectam a essa instância (de entrada).
 * Alterar histórico das propriedades de topologia e instância.
 
 Use o seguinte procedimento para abrir a página Gerenciamento de topologia do Console da Web:
@@ -133,7 +133,7 @@ Use o console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
    <td>15</td>
   </tr>
   <tr>
-   <td>Atraso mínimo de evento (segundos)</td>
+   <td>Atraso mínimo no Evento (segundos)</td>
    <td>minEventDelay</td>
    <td><p>Quando uma alteração ocorre na topologia, o tempo necessário para atrasar a alteração de estado de TOPOLOGY_CHANGING para TOPOLOGY_CHANGED. Cada alteração que ocorre quando o estado é TOPOLOGY_CHANGING aumenta o atraso nessa quantidade de tempo.</p> <p>Esse atraso impede que os ouvintes sejam inundados com eventos. </p> <p>Para não usar atraso, especifique 0 ou um número negativo.</p> </td>
    <td>3</td>
@@ -197,32 +197,32 @@ Os trabalhos são instâncias distribuídas de quantidade que têm o tópico ass
    * Ativado: Esta instância consome trabalhos deste tópico.
    * Desativado: Esta instância não consome trabalhos deste tópico.
    * Exclusivo: Essa instância consome trabalhos apenas deste tópico.
-   **** Observação: Quando você seleciona Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
+   **Observação:** Quando você seleciona Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
 
 ### Consumidores de trabalho instalados {#installed-job-consumers}
 
-Várias implementações do JobConsumer são instaladas com o Experience Manager. Os tópicos para os quais esses Consumidores de trabalho estão registrados aparecem no Navegador de descarga. Os tópicos adicionais que aparecem são aqueles que JobConsumers personalizados registraram. A tabela a seguir descreve o JobConsumers padrão.
+Várias implementações do JobConsumer são instaladas com o Experience Manager. Os tópicos para os quais esses Consumidores de trabalho estão registrados são exibidos no Navegador de descarga. Os tópicos adicionais que aparecem são aqueles que JobConsumers personalizados registraram. A tabela a seguir descreve o JobConsumers padrão.
 
 | Tópico do trabalho | PID do serviço | Descrição |
 |---|---|---|
-| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos que o administrador de eventos OSGi gera para compatibilidade com versões anteriores. |
+| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos que o administrador do evento OSGi gera para compatibilidade com versões anteriores. |
 | com/day/cq/Replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Um agente de replicação que replica cargas de trabalho. |
-| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Processa trabalhos que o fluxo de trabalho do DAM Update Asset Offloader gera. |
+| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Processa trabalhos que o fluxo de trabalho do [!UICONTROL DAM Update Asset Offloader] gera. |
 
 ### Desativar e ativar tópicos para uma instância {#disabling-and-enabling-topics-for-an-instance}
 
 O serviço Gerenciador de consumidor de trabalho do Apache Sling fornece propriedades de lista de permissões e de negação de tópicos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
 
-**** Observação: Se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar tópicos.
+**Observação:** Se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar tópicos.
 
 A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissões e, em seguida, remove tópicos que estão na lista negra.Por padrão, todos os tópicos estão ativados (o valor da lista de permissões é `*`) e nenhum tópico está desativado (a lista negra não tem valor).
 
-Use o Console da Web ou um `sling:OsgiConfig` nó para configurar as seguintes propriedades. Para `sling:OsgiConfig` nós, o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.event.impl.jobs.JobConsumerManager.
+Use o Console da Web ou um `sling:OsgiConfig` nó para configurar as seguintes propriedades. Para `sling:OsgiConfig` nós, o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.evento.impl.jobs.JobConsumerManager.
 
 | Nome da propriedade no console da Web | ID do OSGi | Descrição |
 |---|---|---|
 | Lista de permissões do tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço local do JobManager processa. O valor padrão do &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
-| Lista negra de tópicos | job.consumermanager.blacklist | Uma lista de tópicos que o serviço JobManager local não processa. |
+| Lista negra de tópicos | job.consumermanager.blacklist | Uma lista de tópicos que o serviço local do JobManager não processa. |
 
 ## Criação De Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}
 
@@ -230,7 +230,7 @@ A estrutura de descarga usa replicação para transportar recursos entre o autor
 
 >[!CAUTION]
 >
->Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação. Siga o procedimento em [Problemas usando os agentes](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) de replicação gerados automaticamente antes de criar os agentes para descarga.
+>Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação. Siga o procedimento em [Problemas ao usar os agentes](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) de replicação gerados automaticamente antes de criar os agentes para descarga.
 
 Crie os agentes de replicação que transportam cargas de trabalho entre instâncias para descarregamento. A ilustração a seguir mostra os agentes que devem ser descarregados do autor para uma instância de trabalho. O autor tem uma Sling ID de 1 e a instância do trabalhador tem uma Sling ID de 2:
 
@@ -277,8 +277,8 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Configurações > Tipo de serialização | Padrão |
    | Transporte >URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transporte > Usuário de transporte | Usuário de replicação na instância de destino |
-   | Transporte > Senha de transporte | Senha do usuário de replicação na instância de destino |
+   | Transporte > Usuário de transporte | Usuário de replicação na instância do público alvo |
+   | Transporte > Senha de transporte | Senha do usuário de replicação na instância do público alvo |
    | Estendido > Método HTTP | POSTAGEM |
    | Acionadores > Ignorar padrão | Verdadeiro |
 
@@ -291,8 +291,8 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Configurações > Tipo de serialização | Padrão |
    | Transporte >URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transporte > Usuário de transporte | Usuário de replicação na instância de destino |
-   | Transporte > Senha de transporte | Senha do usuário de replicação na instância de destino |
+   | Transporte > Usuário de transporte | Usuário de replicação na instância do público alvo |
+   | Transporte > Senha de transporte | Senha do usuário de replicação na instância do público alvo |
    | Estendido > Método HTTP | GET |
 
 ### Criação do agente da caixa de saída {#creating-the-outbox-agent}
@@ -317,11 +317,11 @@ Obtenha a Sling ID de uma instância do Experience Manager usando um dos seguint
 
 Configure as instâncias de uma topologia para que instâncias específicas executem o processamento em segundo plano de ativos adicionados ou atualizados no DAM.
 
-Por padrão, o Experience Manager executa o fluxo de trabalho Atualizar ativo DAM quando um ativo DAM é alterado ou um é adicionado ao DAM. Altere o comportamento padrão para que o Experience Manager execute o fluxo de trabalho do DAM Update Asset Offloader. Este fluxo de trabalho gera um trabalho do JobManager que tem um tópico de `com/adobe/granite/workflow/offloading`. Em seguida, configure a topologia para que o trabalho seja descarregado para um funcionário dedicado.
+Por padrão, o Experience Manager executa o fluxo de trabalho do Ativo [!UICONTROL de atualização de] DAM quando um ativo DAM é alterado ou um é adicionado ao DAM. Altere o comportamento padrão para que o Experience Manager execute o fluxo de trabalho do [!UICONTROL DAM Update Asset Offloader] . Este fluxo de trabalho gera um trabalho do JobManager que tem um tópico de `com/adobe/granite/workflow/offloading`. Em seguida, configure a topologia para que o trabalho seja descarregado para um funcionário dedicado.
 
 >[!CAUTION]
 >
->Nenhum fluxo de trabalho deve ser temporário quando usado com a descarga do fluxo de trabalho. Por exemplo, o fluxo de trabalho Atualizar ativo DAM não deve ser temporário quando usado para descarregamento de ativos. Para definir/desdefinir o sinalizador transitório em um fluxo de trabalho, consulte Fluxos de trabalho [transitórios](/help/assets/performance-tuning-guidelines.md#workflows).
+>Nenhum fluxo de trabalho deve ser temporário quando usado com a descarga do fluxo de trabalho. Por exemplo, o fluxo de trabalho Atualizar ativo  DAM não deve ser temporário quando usado para descarregamento de ativos. Para definir/desdefinir o sinalizador transitório em um fluxo de trabalho, consulte Workflows [](/help/assets/performance-tuning-guidelines.md#workflows)transitórios.
 
 O procedimento a seguir assume as seguintes características para a topologia de descarga:
 
@@ -334,14 +334,14 @@ O procedimento a seguir assume as seguintes características para a topologia de
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. Em cada instância com a qual os usuários interagem para carregar ou alterar ativos DAM, configure os iniciadores de fluxo de trabalho para usar o fluxo de trabalho de Descarregamento de ativos de atualização DAM:
+1. Em cada instância com a qual os usuários interagem para carregar ou alterar ativos DAM, configure os iniciadores de fluxo de trabalho para usar o fluxo de trabalho de Descarregamento [!UICONTROL de ativos de atualização de] DAM:
 
    1. Abra o console Fluxo de trabalho.
    1. Clique na guia Iniciador.
-   1. Localize as duas configurações do Iniciador que executam o fluxo de trabalho do Ativo de atualização do DAM. Um tipo de evento de configuração do iniciador é Nó Criado e o outro tipo é Nó Modificado.
-   1. Altere ambos os tipos de evento para que eles executem o fluxo de trabalho de Descarregamento de ativos de atualização de DAM. (Para obter informações sobre configurações de iniciador, consulte [Iniciando fluxos de trabalho quando nós mudarem](/help/sites-administering/workflows-starting.md).)
+   1. Localize as duas configurações do Iniciador que executam o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM. Um tipo de evento de configuração do iniciador é Nó criado e o outro tipo é Nó modificado.
+   1. Altere ambos os tipos de evento para que eles executem o fluxo de trabalho de Descarregamento [!UICONTROL de ativos de atualização do] DAM. (Para obter informações sobre configurações de iniciador, consulte [Iniciar Workflows quando os nós mudarem](/help/sites-administering/workflows-starting.md).)
 
-1. Nas instâncias que executam o processamento em segundo plano de ativos DAM, desative os iniciadores de fluxo de trabalho que executam o fluxo de trabalho do Ativo de atualização DAM.
+1. Nas instâncias que executam o processamento em segundo plano de ativos DAM, desative os iniciadores de fluxo de trabalho que executam o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM.
 
 ## Leitura adicional {#further-reading}
 
