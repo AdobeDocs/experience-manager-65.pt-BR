@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: ba4e4908c0564af6e7f0759c5119a5c02f274dbd
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ Permite criar aplicativos clientes de captura de dados interativos que validam, 
 
 Permite criar documentos em diferentes formatos, incluindo PDF, formatos de impressora laser e formatos de impressora de etiquetas. Os formatos de impressora a laser são PostScript e Printer Control Language (PCL). Para obter mais informações, consulte Serviço [de](/help/forms/using/output-service.md)saída.
 
-O serviço Gerador de PDF fornece APIs para converter formatos de arquivo nativos em PDF. Também converte PDF em outros formatos de arquivo e otimiza o tamanho dos documentos PDF. Para obter mais informações, consulte Serviço [do Gerador de](/help/forms/using/aem-document-services-programmatically.md#main-pars-header-27)PDF.
+O serviço Gerador de PDF fornece APIs para converter formatos de arquivo nativos em PDF. Também converte PDF em outros formatos de arquivo e otimiza o tamanho dos documentos PDF. Para obter mais informações, consulte Serviço [do Gerador de](aem-document-services-programmatically.md#pdfgeneratorservice)PDF.
 
 Permite que sua organização compartilhe facilmente documentos PDF interativos estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço ativa recursos que não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Para obter mais informações, consulte [Reader Extension Service](/help/forms/using/overview-aem-document-services.md#p-reader-extension-service-p).
 
@@ -299,7 +299,7 @@ Se você estiver executando o Microsoft Windows Server, configure o serviço de 
 
 Altere as configurações do centro de confiança do Microsoft Office para permitir que o serviço Gerador de PDF converta arquivos criados com versões mais antigas do Microsoft Office.
 
-1. Abra um aplicativo do Microsoft Office. Por exemplo, Microsoft Word. Navegue até **[!UICONTROL Arquivo]**> **[!UICONTROL Opções]**. A caixa de diálogo Opções é exibida.
+1. Abra um aplicativo do Microsoft Office. Por exemplo, Microsoft Word. Navegue até **[!UICONTROL Arquivo]**> **[!UICONTROL Opções]**. The options dialog box appears.
 
 1. Clique em Central de **[!UICONTROL confiança]** e clique em Configurações **[!UICONTROL da]** Central de confiança.
 1. Nas configurações **[!UICONTROL da Central de]** Confiança, clique em Configurações **[!UICONTROL de bloco de]** arquivos.
@@ -386,11 +386,11 @@ O pacote complementar AEM Forms é um aplicativo implantado no AEM. O pacote con
 
 1. No compartilhamento [de pacote do](http://localhost:4502/crx/packageshare/login.html)AEM, pesquise nos pacotes **[!UICONTROL complementares do]** AEM 6.4 Forms, clique no pacote aplicável ao seu sistema operacional e clique em **[!UICONTROL Download]**. Leia e aceite o contrato de licença e clique em **[!UICONTROL OK]**. Os start de download. Após o download, a palavra **[!UICONTROL Download]** é exibida ao lado do pacote.
 
-   Você também pode usar o número da versão para pesquisar um pacote de complementos. Para obter o número da versão do pacote mais recente, consulte o artigo de versões [](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) do AEM Forms.
+   Você também pode usar o número da versão para pesquisar um pacote de complementos. Para obter o número da versão do pacote mais recente, consulte o artigo de versões [](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) do AEM Forms.
 
 1. Depois que o download for concluído, clique em **[!UICONTROL Download]**. Você é redirecionado para o gerenciador de pacotes. No gerenciador de pacotes, pesquise o pacote baixado e clique em **[!UICONTROL Instalar]**.
 
-   Se você baixar manualmente o pacote por meio do link direto listado no artigo de versões [do](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms, faça logon no gerenciador de pacotes, clique em **[!UICONTROL Carregar pacote]**, selecione o pacote baixado e clique em Fazer upload. Depois que o pacote for carregado, clique no nome do pacote e clique em **[!UICONTROL Instalar]**.
+   Se você baixar manualmente o pacote por meio do link direto listado no artigo de versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms, faça logon no gerenciador de pacotes, clique em **[!UICONTROL Carregar pacote]**, selecione o pacote baixado e clique em Fazer upload. Depois que o pacote for carregado, clique no nome do pacote e clique em **[!UICONTROL Instalar]**.
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não interrompa imediatamente o servidor.** Antes de parar o servidor de formulários AEM, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log esteja estável.
 
@@ -398,7 +398,7 @@ O pacote complementar AEM Forms é um aplicativo implantado no AEM. O pacote con
 
 ### Configurar delegação de inicialização para bibliotecas RSA/BouncyCastle {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
-1. Pare a instância do AEM. Navegue até o diretório [\crx-quickstart\conf\ folder de instalação do]AEM. Abra o arquivo sling.properties para edição.
+1. Stop the AEM instance. Navegue até o diretório [\crx-quickstart\conf\ folder de instalação do]AEM. Abra o arquivo sling.properties para edição.
 
    Se você usar `[AEM installation directory]\crx-quickstart\bin\start.bat` para start de uma instância do AEM, edite sling.properties localizado em `[AEM_root]\crx-quickstart\`.
 
@@ -462,12 +462,12 @@ Uma conta de usuário local é necessária para executar o serviço Gerador de P
   <tr> 
    <td>Segundos para exploração de limpeza do PDFG</td> 
    <td>O número de segundos necessários para executar operações pós-conversão.<br /> </td> 
-   <td>3600 segundos</td> 
+   <td>3600 seconds</td> 
   </tr> 
   <tr> 
    <td>Segundos para expiração da tarefa</td> 
    <td>Duração para a qual o serviço Gerador de PDF tem permissão para executar uma conversão. Verifique se o valor de Segundos de expiração do trabalho é maior que o valor de Segundos de verificação da limpeza PDFG.</td> 
-   <td>7200 segundos</td> 
+   <td>7200 seconds</td> 
   </tr> 
  </tbody> 
 </table>
@@ -498,7 +498,7 @@ No Microsoft Windows, o serviço Gerador de PDF usa o Adobe Acrobat para convert
       >
       >Se a ferramenta System Readiness reportar que o arquivo pdfgen.api não está disponível na pasta plug-ins do acrobat, copie o arquivo pdfgen.api do `[extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32` diretório para o `[Acrobat_root]\Acrobat\plug_ins` diretório.
 
-   1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html. Verifique o relatório e corrija os problemas mencionados.
+   1. Vá até `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verifique o relatório e corrija os problemas mencionados.
 
 ### Configurar a rota primária para conversão de HTML em PDF (somente Windows) {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -531,7 +531,7 @@ Antes de configurar os certificados, verifique se você tem uma:
 * Alias da chave de privacidade. Você pode executar o comando keytool para visualização do Alias da chave privada:
    `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
-* Senha do arquivo de armazenamento de chaves. Se você estiver usando o certificado do Reader Extensions da Adobe, a senha do arquivo Keystore será sempre a mesma da chave privada.
+* Keystore file password. Se você estiver usando o certificado do Reader Extensions da Adobe, a senha do arquivo Keystore será sempre a mesma da chave privada.
 
 Execute as seguintes etapas para configurar os certificados:
 
