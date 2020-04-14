@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -41,7 +41,7 @@ Se você tiver criado um modelo de dados de formulário com fontes de dados, pod
 Para adicionar objetos e serviços de modelo de dados:
 
 1. Faça logon na instância do autor do AEM, navegue até **[!UICONTROL Formulários > Integrações]** de dados e abra o modelo de dados de formulário no qual deseja adicionar objetos de modelo de dados.
-1. No painel Fontes de dados, expanda as fontes de dados para exibir os serviços e objetos do modelo de dados disponíveis.
+1. No painel Fontes de dados, expanda as fontes de dados para visualização de objetos e serviços de modelo de dados disponíveis.
 1. Selecione os objetos e serviços do modelo de dados que deseja adicionar ao modelo de dados do formulário e toque em **[!UICONTROL Adicionar selecionados]**.
 
    ![objetos selecionados](assets/selected-objects.png)
@@ -58,7 +58,7 @@ Para adicionar objetos e serviços de modelo de dados:
    >
    >É possível manter e arrastar caixas de objetos de modelo de dados ao redor para organizá-las na área de conteúdo. Todos os objetos de modelo de dados adicionados no modelo de dados de formulário ficam acinzentados no painel Fontes de Dados.
 
-   A guia Serviços lista os serviços adicionados.
+   A guia Serviços lista serviços adicionados.
 
    ![guia Serviços](assets/services-tab.png)
 
@@ -98,10 +98,10 @@ Para criar uma propriedade filho:
 
 1. Em um modelo de dados de formulário, selecione um objeto de modelo de dados e toque em **[!UICONTROL Criar propriedade]** secundária.
 1. Na caixa de diálogo **[!UICONTROL Criar propriedade]** secundária, especifique um nome e um tipo de dados para a propriedade nos campos **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** , respectivamente. Como opção, você pode especificar um título e uma descrição para a propriedade.
-1. Ative Calculado se a propriedade for uma propriedade calculada. O valor de uma propriedade calculada é avaliado com base em uma regra ou uma expressão. Para obter mais informações, consulte [Editar propriedades](#edit-properties).
+1. Ative Calculado se a propriedade for uma propriedade calculada. O valor de uma propriedade calculada é avaliado com base em uma regra ou expressão. Para obter mais informações, consulte [Editar propriedades](#edit-properties).
 1. Se o objeto de modelo de dados estiver vinculado a uma fonte de dados, a propriedade filho adicionada será automaticamente vinculada à propriedade do objeto de modelo de dados pai com o mesmo nome e tipo de dados.
 
-   Para vincular manualmente uma propriedade filho a uma propriedade de objeto de modelo de dados, toque no ícone Procurar ao lado do campo **[!UICONTROL Vincular referência]** . A caixa de diálogo **[!UICONTROL Selecionar objeto]** lista todas as propriedades do objeto de modelo de dados pai. Selecione uma propriedade à qual vincular e toque no ícone de marca de verificação. Observe que você só pode selecionar uma propriedade do mesmo tipo de dados que a propriedade filho.
+   Para vincular manualmente uma propriedade filho a uma propriedade de objeto de modelo de dados, toque no ícone Procurar ao lado do campo **[!UICONTROL Vincular referência]** . A caixa de diálogo **[!UICONTROL Selecionar objeto]** lista todas as propriedades do objeto de modelo de dados pai. Selecione uma propriedade com a qual vincular e toque no ícone de marca de verificação. Observe que você só pode selecionar uma propriedade do mesmo tipo de dados que a propriedade filho.
 
 1. Toque em **[!UICONTROL Concluído]** para salvar a propriedade filho e toque em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário. A propriedade filho agora é adicionada ao objeto de modelo de dados.
 
@@ -149,18 +149,18 @@ Para ler e gravar dados de um objeto de modelo de dados, faça o seguinte para c
 
    Objetos de modelo de dados configurados em um modelo de dados de formulário estão disponíveis para uso na guia Objetos de modelo de dados no navegador Conteúdo de um formulário adaptável com base no modelo de dados de formulário. Quando você adiciona associação entre dois objetos de modelo de dados, o objeto de modelo de dados ao qual você está associado é aninhado sob o objeto de modelo de dados ao qual você está associando na guia Objetos de modelo de dados. Se o modelo de dados aninhado for um objeto de nível superior, ele também será exibido separadamente na guia Objetos do modelo de dados. Portanto, você verá duas entradas dela, uma dentro e outra fora da hierarquia aninhada, o que pode confundir os autores de formulários. Para fazer com que o objeto de modelo de dados associado apareça apenas na hierarquia aninhada, desative a propriedade Objeto de nível superior.
 
-1. Selecione Serviços de leitura e gravação para os objetos de modelo de dados selecionados. Os argumentos para os serviços aparecem.
+1. Selecione Serviços de leitura e gravação para os objetos de modelo de dados selecionados. Os argumentos para os serviços são exibidos.
 
    ![serviços de leitura/gravação](assets/read-write-services.png)
 
    Serviços de leitura e gravação configurados para a fonte de dados do funcionário
 
-1. Toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) para que o argumento do serviço de leitura [vincule o argumento a um Atributo de perfil do usuário, Atributo de solicitação ou valor](../../forms/using/work-with-form-data-model.md#main-pars-header-2140694395) literal e especifique o valor de vínculo.
+1. Toque em ![aem_6_3_edit](assets/aem_6_3_edit.png) para que o argumento do serviço de leitura [vincule o argumento a um Atributo de Perfil do usuário, Atributo de solicitação ou valor](#bindargument) literal e especifique o valor de vínculo.
 1. Toque em **[!UICONTROL Concluído]** para salvar o argumento, **[!UICONTROL Concluído]** para salvar as propriedades e, em seguida, em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 
 ### Argumentos do serviço de Leitura de Ligação {#bindargument}
 
-Vincule o argumento do serviço de Leitura a um Atributo de perfil do usuário, Atributo de solicitação ou valor Literal com base em um valor de vínculo. O valor é passado para o serviço como um argumento para buscar detalhes associados ao valor especificado na fonte de dados.
+Vincule o argumento do serviço de Leitura a um Atributo do Perfil do usuário, Atributo de solicitação ou valor Literal com base em um valor de vínculo. O valor é passado para o serviço como um argumento para buscar detalhes associados ao valor especificado na fonte de dados.
 
 #### Literal value {#literal-value}
 
@@ -172,7 +172,7 @@ Neste exemplo, os detalhes associados ao **4367655678**, como o valor do `mobile
 
 #### Atributo do perfil do usuário {#user-profile-attribute}
 
-Selecione Atributo **[!UICONTROL de perfil do]** usuário no menu suspenso **[!UICONTROL Vínculo]** e digite o nome do atributo no campo Valor **** vinculado. Os detalhes do usuário conectado à instância do AEM são recuperados da fonte de dados com base no nome do atributo.
+Selecione Atributo **[!UICONTROL de Perfil de]** usuário no menu suspenso **[!UICONTROL Vínculo]** e digite o nome do atributo no campo Valor **[!UICONTROL de]** vínculo. Os detalhes do usuário conectado à instância do AEM são recuperados da fonte de dados com base no nome do atributo.
 
 O nome do atributo especificado no campo Valor **[!UICONTROL de]** Vínculo deve incluir o caminho de vínculo completo até o nome do atributo do usuário. Abra o seguinte URL para acessar os detalhes do usuário no CRXDE:
 
@@ -184,13 +184,13 @@ Neste exemplo, especifique `profile.empid` o campo Valor **[!UICONTROL de]** ví
 
 ![Editar argumento](assets/edit_argument_user_profile_new.png)
 
-O `id` argumento pega o valor do `empid` atributo do perfil do usuário e o transmite como um argumento para o serviço de Leitura. Ele lê e retorna valores de propriedades associadas do objeto de modelo de dados do funcionário para o `empid` associado ao usuário conectado.
+O `id` argumento pega o valor do `empid` atributo do perfil do usuário e o envia como um argumento para o serviço de Leitura. Ele lê e retorna valores de propriedades associadas do objeto de modelo de dados do funcionário para o `empid` associado ao usuário conectado.
 
 #### Solicitar atributo {#request-attribute}
 
 Use o atributo request para recuperar as propriedades associadas da fonte de dados.
 
-1. Selecione Atributo **[!UICONTROL de]** solicitação no menu suspenso **[!UICONTROL Vínculo]** e digite o nome do atributo no campo Valor **[!UICONTROL de]** vínculo.
+1. Selecione Atributo **[!UICONTROL de]** solicitação no menu suspenso **[!UICONTROL Vínculo para]** e digite o nome do atributo no campo Valor **[!UICONTROL de]** vínculo.
 
 1. Abra head.jsp para definir os detalhes do atributo no CRXDE:\
    `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
@@ -253,7 +253,7 @@ Para adicionar uma associação:
 
    Toque em **[!UICONTROL Concluído]** para salvar o argumento.
 
-1. Toque em **[!UICONTROL Concluído]** para salvar a associação e em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
+1. Toque em **[!UICONTROL Concluído]** para salvar a associação e, em seguida, em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 1. Repita as etapas para criar mais associações, conforme necessário.
 
 >[!NOTE] {graybox=&quot;true&quot;}
@@ -284,12 +284,12 @@ Para editar propriedades:
 
 ### Criar propriedades calculadas {#computed}
 
-Uma propriedade calculada é aquela cujo valor é calculado com base em uma regra ou uma expressão. Usando uma regra, é possível definir o valor de uma propriedade calculada como uma string literal, um número, resultado de uma expressão matemática ou o valor de outra propriedade no modelo de dados de formulário.
+Uma propriedade calculada é aquela cujo valor é calculado com base em uma regra ou expressão. Usando uma regra, é possível definir o valor de uma propriedade calculada como uma string literal, um número, resultado de uma expressão matemática ou o valor de outra propriedade no modelo de dados de formulário.
 
 Por exemplo, você pode criar uma propriedade calculada **FullName** cujo valor é resultado da concatenação das propriedades **FirstName** e **LastName** existentes. Para isso:
 
 1. Crie uma nova propriedade com o nome `FullName` cujo tipo de dados é String.
-1. Ative **[!UICONTROL Calculado]** e toque **[!UICONTROL Concluído]** para criar a propriedade.
+1. Ative **[!UICONTROL Calculado]** e toque em **[!UICONTROL Concluído]** para criar a propriedade.
 
    ![calculado](assets/computed.png)
 
@@ -304,7 +304,7 @@ Por exemplo, você pode criar uma propriedade calculada **FullName** cujo valor 
 
 1. Na expressão matemática, selecione **[!UICONTROL FirstName]** e **[!UICONTROL LastName]** no primeiro e segundo objetos, respectivamente. Selecione **[!UICONTROL mais]** como operador.
 
-   Toque em **[!UICONTROL Concluído]** e em **[!UICONTROL Fechar]** para fechar a janela do editor de regras. A regra é semelhante ao seguinte.
+   Toque em **[!UICONTROL Concluído]** e, em seguida, toque em **[!UICONTROL Fechar]** para fechar a janela do editor de regras. A regra é semelhante ao seguinte.
 
    ![regra](assets/rule.png)
 
@@ -342,7 +342,7 @@ Para obter mais informações sobre propriedades de navegação, consulte a docu
 </EntityType>
 ```
 
-Quando você configura um serviço OData em um Modelo de dados de formulário, todas as propriedades de navegação em um contêiner de entidade são disponibilizadas por meio de um serviço no Modelo de dados de formulário. Neste exemplo do serviço OData do TripPin, as três propriedades de navegação no contêiner da `Person` entidade podem ser lidas usando um `GET LINK` serviço no Modelo de dados de formulário.
+Quando você configura um serviço OData em um Modelo de dados de formulário, todas as propriedades de navegação em um container de entidade são disponibilizadas por meio de um serviço no Modelo de dados de formulário. Neste exemplo do serviço OData do TripPin, as três propriedades de navegação no container da `Person` entidade podem ser lidas usando um `GET LINK` serviço no Modelo de dados de formulário.
 
 O seguinte destaca o `GET LINK of Person /People` serviço no Modelo de dados de formulário, que é um serviço combinado para as três propriedades de navegação na `Person` entidade do serviço OData do TripPin.
 
@@ -360,7 +360,7 @@ Neste exemplo, você também pode escolher o objeto de modelo de saída como Pes
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Da mesma forma, você pode escolher um `GET LINK` serviço e configurar suas propriedades de navegação ao adicionar associações no Modelo de dados de formulário. Entretanto, para poder selecionar uma propriedade de navegação, verifique se o campo **[!UICONTROL Vínculo a está definido como]** Literal ****.
+Da mesma forma, você pode escolher um `GET LINK` serviço e configurar suas propriedades de navegação ao adicionar associações no Modelo de dados de formulário. No entanto, para poder selecionar uma propriedade de navegação, verifique se o campo **[!UICONTROL Vínculo a está definido como]** Literal ****.
 
 ![add-Association-nav-prop](assets/add-association-nav-prop.png)
 
@@ -398,7 +398,7 @@ Da mesma forma, é possível testar outros objetos e serviços de modelo de dado
 
 ## Validação automatizada dos dados de entrada {#automated-validation-of-input-data}
 
-O modelo de dados de formulário valida os dados recebidos como entrada enquanto invoca a API do DermisBridge (com base nos critérios de validação disponíveis no modelo de dados de formulário). A validação se baseia no sinalizador `ValidationOptions` definido no objeto de consulta que é usado para chamar a API.
+O modelo de dados de formulário valida os dados recebidos como entrada enquanto invoca a API do DermisBridge (com base nos critérios de validação disponíveis no modelo de dados de formulário). A validação se baseia no sinalizador `ValidationOptions` definido no objeto de query usado para chamar a API.
 
 O sinalizador pode ser definido para qualquer um dos seguintes valores:
 
@@ -528,4 +528,4 @@ Uma exceção será exibida se os dados de entrada não atenderem aos critérios
 
 ## Próximos passos {#next-steps}
 
-Você tem um modelo de dados de formulário que agora está pronto para uso em formulários adaptáveis e fluxos de trabalho de comunicações interativas. Para obter mais informações, consulte [Usar modelo](/help/forms/using/using-form-data-model.md)de dados de formulário.
+Você tem um modelo de dados de formulário que agora está pronto para uso em formulários adaptáveis e workflows de comunicação interativos. Para obter mais informações, consulte [Usar modelo](/help/forms/using/using-form-data-model.md)de dados de formulário.
