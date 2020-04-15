@@ -1,35 +1,34 @@
 ---
-title: Amplie a funcionalidade de pesquisa dos ativos AEM
-description: Estenda os recursos de pesquisa dos ativos AEM além dos padrões.
+title: Amplie a funcionalidade de pesquisa dos ativos Adobe Experience Manager
+description: Estenda os recursos de pesquisa dos ativos Adobe Experience Manager para além dos padrões.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
 # Estender pesquisa de ativos {#extending-assets-search}
 
-Você pode estender os recursos de pesquisa dos ativos Adobe Experience Manager (AEM). Os ativos AEM pesquisam ativos por sequências de caracteres.
+Você pode estender os recursos [!DNL Adobe Experience Manager Assets] de pesquisa. A partir da caixa, [!DNL Experience Manager Assets] pesquisa ativos por strings.
 
 A pesquisa é feita pela interface do QueryBuilder para que a pesquisa possa ser personalizada com vários predicados. Você pode sobrepor o conjunto padrão de predicados no seguinte diretório: `/apps/dam/content/search/searchpanel/facets`.
 
-Você também pode adicionar outras guias ao painel de administração do AEM Assets.
+Você também pode adicionar outras guias ao painel [!DNL Assets] de administração.
 
 >[!CAUTION]
 >
->A partir do AEM 6.4, a interface clássica está obsoleta. Para o anúncio, consulte [Recursos](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)obsoletos e removidos. É recomendável usar a interface habilitada para toque. Para personalização, consulte [Pesquisar aspectos](/help/assets/search-facets.md).
+>A partir da versão [!DNL Experience Manager] 6.4, a interface clássica está obsoleta. Para o anúncio, consulte [Recursos](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)obsoletos e removidos. A Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte [Pesquisar aspectos](/help/assets/search-facets.md).
 
 ## Sobreposição {#overlaying}
 
-Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/dam/content/search/searchpanel` para `/apps/dam/content/search/searchpanel/` ou especifique outra `facetURL` propriedade na `searchpanel` configuração (o padrão é `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/dam/content/search/searchpanel` para `/apps/dam/content/search/searchpanel/` ou especifique outra `facetURL` propriedade na `searchpanel` configuração (o padrão é para `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
 >Por padrão, a estrutura de diretório em / `apps` não existe e precisa ser criada. Certifique-se de que os tipos de nó correspondem aos de / `libs`.
-
 
 ## Adicionar guias {#adding-tabs}
 
@@ -44,9 +43,9 @@ Você pode adicionar outras guias de pesquisa configurando-as no Admin do AEM As
 
 ## Criar predicados personalizados {#creating-custom-predicates}
 
-Os ativos AEM vêm com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
+[!DNL Assets] vem com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos dessa forma é abordado na [criação e configuração de uma página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
 
-Além de usar predicados pré-existentes, os desenvolvedores do AEM também podem criar seus próprios predicados usando a API [do](/help/sites-developing/querybuilder-api.md)Query Builder.
+Além de usar predicados pré-existentes, os desenvolvedores do AEM também podem criar seus próprios predicados usando a API [do Construtor de](/help/sites-developing/querybuilder-api.md)Query.
 
 A criação de predicados personalizados requer conhecimento básico sobre a estrutura [de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)Widgets.
 
@@ -136,10 +135,10 @@ Para criar um predicado de propriedade:
    </script>
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que você possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor de **DELETE**.
-1. Navegue até o navegador e, na página de amostra (por exemplo, **press.html**), alterne para o modo de design e ative o novo componente para o sistema de parágrafo de previsão (por exemplo, **esquerda**).
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor **DELETE**.
+1. Navegue até o navegador e, na sua página de amostra (por exemplo, **press.html**), alterne para o modo de design e ative seu novo componente para o sistema de parágrafo de previsão (por exemplo, **esquerda**).
 
-1. No modo **Editar** , o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar** ). Insira o componente na coluna **Predicados** e digite uma palavra de pesquisa, por exemplo, **Diamante** , e clique na lupa para iniciar a pesquisa.
+1. No modo **Editar** , o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar** ). Insira o componente na coluna **Predicados** e digite uma palavra de pesquisa, por exemplo, **Diamante** , e clique na lupa para start da pesquisa.
 
    >[!NOTE]
    >
@@ -240,8 +239,8 @@ Para criar um predicado de grupo:
        });
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que você possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor de **DELETE**.
-1. Navegue até o navegador e, na página de amostra (por exemplo, **press.html**), alterne para o modo de design e ative o novo componente para o sistema de parágrafo de previsão (por exemplo, **esquerda**).
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor **DELETE**.
+1. Navegue até o navegador e, na sua página de amostra (por exemplo, **press.html**), alterne para o modo de design e ative seu novo componente para o sistema de parágrafo de previsão (por exemplo, **esquerda**).
 1. No modo **Editar** , o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar** ). Insira o componente na coluna **Predicados** .
 
 ## Widgets preditivos instalados {#installed-predicate-widgets}
