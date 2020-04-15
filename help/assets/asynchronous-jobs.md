@@ -1,9 +1,9 @@
 ---
 title: Operações assíncronas
-description: O AEM Assets otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que exigem muitos recursos.
+description: O AEM Assets otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -21,7 +21,7 @@ Essas operações incluem:
 
 O processamento assíncrono envolve enfileiramento de várias tarefas e, eventualmente, sua execução em série, dependendo da disponibilidade dos recursos do sistema.
 
-Você pode exibir o status de trabalhos assíncronos na página Status **[!UICONTROL do trabalho]** assíncrono.
+Você pode visualização o status de trabalhos assíncronos na página Status **[!UICONTROL do trabalho]** assíncrono.
 
 >[!NOTE]
 >
@@ -31,9 +31,10 @@ Você pode exibir o status de trabalhos assíncronos na página Status **[!UICON
 
 Sempre que o AEM Assets processa uma operação de forma assíncrona, você recebe uma notificação na sua caixa de entrada e por email.
 
-Para exibir o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
+Para visualização o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
 
-1. Toque/clique no logotipo do AEM e vá **[!UICONTROL Operações]** > **[!UICONTROL Tarefas]**.
+1. Na interface do Experience Manager, clique em **[!UICONTROL Operações]** > **[!UICONTROL Tarefas]**.
+
 1. Na página Status **[!UICONTROL do trabalho]** assíncrono, reveja os detalhes das operações.
 
    ![Status e detalhes das operações assíncronas](assets/AsyncOperation-status.png)
@@ -44,15 +45,15 @@ Para exibir o status das operações assíncronas em detalhes, navegue até a p�
 
    * **[!UICONTROL Sucesso]**: A operação está concluída
 
-   * **[!UICONTROL Falha]** ou **[!UICONTROL erro]**: Não foi possível processar a operação
+   * **[!UICONTROL Falha]** ou **[!UICONTROL erro]**: não foi possível processar a operação
 
    * **[!UICONTROL Agendado]**: A operação está programada para processamento posterior
 
-1. Para interromper uma operação ativa, selecione-a na lista e toque em **[!UICONTROL Parar]** na barra de ferramentas.
+1. Para interromper uma operação ativa, selecione-a na lista e clique em **[!UICONTROL Parar]** na barra de ferramentas.
 
    ![stop_icon](assets/stop_icon.png)
 
-1. Para exibir detalhes adicionais, por exemplo, descrição e registros, selecione a operação e toque em **[!UICONTROL Abrir]** na barra de ferramentas.
+1. Para visualização de detalhes adicionais, por exemplo, descrição e registros, selecione a operação e clique em **[!UICONTROL Abrir]** na barra de ferramentas.
 
    ![open_icon](assets/open_icon.png)
 
@@ -60,7 +61,7 @@ Para exibir o status das operações assíncronas em detalhes, navegue até a p�
 
    ![job_details](assets/job_details.png)
 
-1. Para excluir a operação da lista, selecione **[!UICONTROL Excluir]** na barra de ferramentas. Para baixar os detalhes em um arquivo CSV, toque em **[!UICONTROL Download]**.
+1. Para excluir a operação da lista, selecione **[!UICONTROL Excluir]** na barra de ferramentas. Para baixar os detalhes em um arquivo CSV, clique em **[!UICONTROL Download]**.
 
    >[!NOTE]
    >
@@ -72,7 +73,7 @@ Os ativos AEM executam um trabalho de limpeza todos os dias às 13:00 da manhã 
 
 Você pode modificar a programação para a ordem de produção de expurgação e a duração para a qual os detalhes das ordens de produção concluídas são retidos antes de serem deletados. Você também pode configurar o número máximo de trabalhos concluídos para os quais os detalhes são retidos a qualquer momento.
 
-1. Toque/clique no logotipo do AEM e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
+1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
 1. Abra o trabalho **[!UICONTROL Adobe CQ DAM Async Jobs para Expurgar agendado]** .
 1. Especifique o número limite de dias após o qual as tarefas concluídas são excluídas e o número máximo de trabalhos para os quais os detalhes são mantidos no histórico.
 
@@ -88,7 +89,7 @@ Você pode configurar o número limite de ativos ou referências para que os ati
 
 Se o número de ativos ou pastas a serem excluídos exceder o número limite, a operação de exclusão será executada de forma assíncrona.
 
-1. Toque/clique no logotipo do AEM e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
+1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
 1. No console da Web, abra a configuração **[!UICONTROL Async Delete Operation Job Processing]** .
 1. Na caixa Número **[!UICONTROL limite de ativos]** , especifique o número limite de ativos/pastas para o processamento assíncrono de operações de exclusão.
 
@@ -100,7 +101,7 @@ Se o número de ativos ou pastas a serem excluídos exceder o número limite, a 
 
 Se o número de ativos/pastas ou referências a serem movidos exceder o número limite, a operação de movimentação será executada de forma assíncrona.
 
-1. Toque/clique no logotipo do AEM e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
+1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
 1. No console da Web, abra a configuração Processamento **[!UICONTROL de Trabalho da Operação de Movimentação]** Assíncrona.
 1. Na caixa Número **[!UICONTROL limite de ativos/referências]** , especifique o número limite de ativos/pastas ou referências para o processamento assíncrono de operações de movimentação.
 
