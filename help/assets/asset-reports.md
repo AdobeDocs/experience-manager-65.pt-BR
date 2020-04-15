@@ -3,7 +3,7 @@ title: Relatórios sobre seus ativos digitais
 description: Entenda os relatórios sobre seus ativos no AEM Assets que ajudam a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a839ec71e02ee5d92f054a686b7bb52142058ae9
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -36,12 +36,12 @@ O AEM Assets gera os seguintes relatórios padrão para você:
 
 Os administradores do AEM podem facilmente gerar e personalizar esses relatórios para sua implementação. Um administrador pode seguir estas etapas para gerar um relatório:
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
+1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 
 ![Página Ferramentas para navegar no relatório de ativos](assets/AssetsReportNavigation.png)
 
-1. Na página Relatórios de ativos, toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
-1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e toque/clique em **[!UICONTROL Avançar]**.
+1. Na página Relatórios [!UICONTROL de] ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas.
+1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
 
@@ -53,7 +53,7 @@ Os administradores do AEM podem facilmente gerar e personalizar esses relatório
    >
    >Por padrão, os Fragmentos de conteúdo e compartilhamentos de link são incluídos no relatório de Ativo baixado. Selecione a opção apropriada para criar um relatório de compartilhamentos de link ou para excluir Fragmentos de conteúdo do relatório de download.
 
-1. Configure detalhes do relatório, como título, descrição, miniatura e caminho da pasta no repositório CRX onde o relatório é armazenado. Por padrão, o caminho da pasta é */content/dam*. Você pode especificar um caminho diferente.
+1. Configure detalhes do relatório, como título, descrição, miniatura e caminho da pasta no repositório CRX onde o relatório é armazenado. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente.
 
    ![Página para adicionar detalhes do relatório](assets/report_configuration.png)
 
@@ -83,7 +83,7 @@ Os administradores do AEM podem facilmente gerar e personalizar esses relatório
 
    ![Página de detalhes do relatório Compartilhamento de links](assets/link_share.png)
 
-1. Toque/clique em **[!UICONTROL Avançar]** na barra de ferramentas.
+1. Clique em **[!UICONTROL Avançar]** na barra de ferramentas.
 
 1. Na página **[!UICONTROL Configurar colunas]** , algumas colunas são selecionadas para aparecerem no relatório por padrão. É possível selecionar mais colunas. Desmarque uma coluna selecionada para excluí-la no relatório.
 
@@ -91,14 +91,14 @@ Os administradores do AEM podem facilmente gerar e personalizar esses relatório
 
    Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades para o binário de ativo no nó jcr:content no CRX. Como alternativa, adicione-o através do seletor de caminho de propriedade.
 
-   ![Criar colunas personalizadas para relatório](assets/custom_columns.png)
+   ![Selecionar ou desmarcar colunas de relatório](assets/custom_columns.png)
 
-1. Tap/click **[!UICONTROL Create]** from the toolbar. Uma mensagem notifica que a geração de relatórios foi iniciada.
-1. Na página Relatórios de ativos, o status de geração de relatórios se baseia no estado atual do trabalho de relatório, por exemplo, Sucesso, Falha, Enfileirado ou Agendado. O mesmo status aparece na caixa de entrada de notificações.Para visualização na página de relatório, toque/clique no link do relatório. Como alternativa, selecione o relatório e toque em **[!UICONTROL Visualização]** na barra de ferramentas.
+1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
+1. Na página Relatórios de ativos, o status de geração de relatórios se baseia no estado atual do trabalho de relatório, por exemplo, Sucesso, Falha, Enfileirado ou Agendado. O mesmo status aparece na caixa de entrada de notificações.Para visualização na página de relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Visualização]** na barra de ferramentas.
 
    ![Um relatório gerado](assets/report_page.png)
 
-   Toque em **[!UICONTROL Download]** na barra de ferramentas para baixar o relatório no formato CSV.
+   Clique em **[!UICONTROL Download]** na barra de ferramentas para baixar o relatório no formato CSV.
 
 ## Adicionar colunas personalizadas {#add-custom-columns}
 
@@ -112,10 +112,10 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 * Publicação do Brand Portal
 * Arquivos
 
-1. Toque/clique no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
-1. Na página Relatórios de ativos, toque/clique em **[!UICONTROL Criar]** na barra de ferramentas.
+1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
+1. Na página Relatórios [!UICONTROL de] ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 
-1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e toque/clique em **[!UICONTROL Avançar]**.
+1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
 1. Configure detalhes do relatório, como título, descrição, miniatura, caminho da pasta e intervalo de datas, conforme aplicável.
 
 1. Para exibir uma coluna personalizada, especifique o nome da coluna em **[!UICONTROL Colunas personalizadas]**.
@@ -126,9 +126,9 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 
    ![Mapear o caminho de propriedade de caminhos em jcr:content](assets/property_picker.png)
 
-   Para adicionar mais colunas personalizadas, toque/clique em **[!UICONTROL Adicionar]** e repita as etapas 5 e 6.
+   Para adicionar mais colunas personalizadas, clique em **[!UICONTROL Adicionar]** e repita as etapas 5 e 6.
 
-1. Tap/click **[!UICONTROL Create]** from the toolbar. Uma mensagem notifica que a geração de relatórios foi iniciada.
+1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
 
 ## Configurar o serviço de remoção {#configure-purging-service}
 
