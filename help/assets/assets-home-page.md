@@ -1,58 +1,58 @@
 ---
-title: Experiência da página inicial do AEM Assets
-description: Personalize a página inicial dos ativos AEM para obter uma experiência avançada em tela de boas-vindas, incluindo um instantâneo das atividades recentes em torno dos ativos.
+title: Experiência de Home page do AEM Assets
+description: Personalize o Home page AEM Assets para obter uma experiência de tela de boas-vindas rica, incluindo um instantâneo de atividades recentes sobre ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-# Experiência da página inicial do AEM Assets {#aem-assets-home-page-experience}
+# Experiência de Home page do AEM Assets {#aem-assets-home-page-experience}
 
-Personalize a página inicial dos ativos Adobe Experience Manager (AEM) para obter uma excelente experiência de boas-vindas na tela, incluindo um instantâneo das atividades recentes em torno dos ativos.
+Personalize o home page de ativos Adobe Experience Manager (AEM) para obter uma experiência de tela de boas-vindas, incluindo um instantâneo de atividades recentes sobre ativos.
 
-A página inicial dos ativos AEM fornece uma experiência de tela de boas-vindas avançada e personalizada, que inclui um instantâneo de atividades recentes, como ativos que foram exibidos ou carregados recentemente.
+O home page AEM Assets fornece uma experiência de tela de boas-vindas avançada e personalizada, que inclui um instantâneo de atividades recentes, como ativos que foram exibidos ou carregados recentemente.
 
-A página inicial Ativos está desativada por padrão. Para ativá-lo, execute as seguintes etapas:
+O home page Ativos está desativado por padrão. Para ativá-lo, execute as seguintes etapas:
 
 1. Abra o AEM Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
-1. Abra o serviço Gravador **[!UICONTROL de Eventos CQ DAM do]** Dia.
-1. Selecione **[!UICONTROL Ativar este serviço]** para ativar a gravação de atividades.
+1. Abra o serviço Gravador **[!UICONTROL do Evento CQ DAM]** Day.
+1. Selecione **[!UICONTROL Ativar este serviço]** para ativar a gravação de atividade.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Na lista Tipos **[!UICONTROL de]** evento, selecione os eventos a serem gravados e salve as alterações.
+1. Na lista **[!UICONTROL Tipos de evento]** , selecione os eventos a serem gravados e salve as alterações.
 
    >[!CAUTION]
    >
-   >Ativar as opções visualizadas Ativo, Projetos visualizados e Coleções aumenta significativamente o número de eventos gravados.
+   >Ativar as opções visualizadas Ativo visualizado, Projetos visualizados e Coleções aumenta significativamente o número de eventos registrados.
 
-1. Abra o serviço Sinalizador **[!UICONTROL do recurso da página inicial do ativo]** DAM no Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
-1. Selecione a `isEnabled.name` opção para ativar o recurso Página inicial de ativos. Salve as alterações.
+1. Abra o serviço Sinalizador **[!UICONTROL do recurso Home page do ativo]** DAM no Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Selecione a `isEnabled.name` opção para ativar o recurso Home page Ativos. Salve as alterações.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Abra a caixa de diálogo Preferências **[!UICONTROL de]** usuário e selecione **[!UICONTROL Ativar a página]** inicial de ativos. Salve as alterações.
+1. Abra a caixa de diálogo Preferências **[!UICONTROL de]** usuário e selecione **[!UICONTROL Ativar Home page]** de ativos. Salve as alterações.
 
-   ![Ativar a página inicial de ativos na caixa de diálogo Preferências de usuário](assets/Annotation-color.png)
+   ![Habilitar home page de ativos na caixa de diálogo Preferências de usuário](assets/Annotation-color.png)
 
-Depois de ativar a página inicial de Ativos, navegue até a interface do usuário de Ativos na página Navegação ou acesse-a diretamente do URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
+Depois de ativar o Home page Ativos, navegue até a interface do usuário Ativos na página Navegação ou acesse-o diretamente do URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
 
 ![configurar o link de experiência na interface do usuário do Assets](assets/config-experience-link.png)
 
-Toque/clique no link **[!UICONTROL Clique aqui para configurar seu link]** de experiência para adicionar seu nome de usuário, imagem de plano de fundo e imagem de perfil.
+Clique aqui para **[!UICONTROL configurar o link]** de experiência para adicionar o nome de usuário, a imagem de plano de fundo e a imagem do perfil.
 
-A Página inicial de Ativos inclui as seguintes seções:
+O Home page Ativos inclui as seguintes seções:
 
 * Seção de boas-vindas
 * Seção do Widget
 
 **Seção de boas-vindas**
 
-Se o seu perfil existir, a seção Boas-vindas exibirá uma mensagem de boas-vindas endereçada a você. Além disso, exibe a imagem do seu perfil e uma imagem de boas-vindas (se já estiver configurado).
+Se o seu perfil existir, a seção Boas-vindas exibirá uma mensagem de boas-vindas endereçada a você. Além disso, exibe a imagem do perfil e uma imagem de boas-vindas (se já estiver configurada).
 
-Se o seu perfil estiver incompleto, a seção Boas-vindas exibirá uma mensagem genérica de boas-vindas e um espaço reservado para a imagem do seu perfil.
+Se o perfil estiver incompleto, a seção Bem-vindo exibirá uma mensagem genérica de boas-vindas e um espaço reservado para a imagem do perfil.
 
 **Seção do Widget**
 
@@ -62,24 +62,24 @@ Esta seção é exibida abaixo da seção Boas-vindas e exibe os widgets predefi
 * Recentes
 * Descobrir
 
-**Atividade**: Nesta seção, o widget **[!UICONTROL Minha atividade]** exibe atividades recentes executadas pelo usuário conectado com ativos (incluindo ativos sem representações), por exemplo, uploads de ativos, downloads, criação de ativos, edições, comentários, anotações e compartilhamentos.
+**Atividade**: Nesta seção, o widget **[!UICONTROL Minha Atividade]** exibe atividades recentes executadas pelo usuário conectado com ativos (incluindo ativos sem representações), como uploads de ativos, downloads, criação de ativos, edições, comentários, anotações e compartilhamentos.
 
 **Recente**: O widget **[!UICONTROL Visualizado]** recentemente nesta seção exibe entidades acessadas recentemente pelo usuário conectado, incluindo pastas, coleções e projetos.
 
 **Discover**: O widget **[!UICONTROL Novo]** nesta seção exibe os ativos e as execuções carregados recentemente na instância AEM Assets.
 
-Para ativar a remoção de dados de atividade do usuário, ative o Serviço **[!UICONTROL de Expurgação de Evento do]** DAM no Configuration Manager. Após habilitar esse serviço, as atividades do usuário conectado que excedem um número especificado são excluídas pelo sistema.
+Para ativar a remoção de dados de atividade do usuário, ative o Serviço **[!UICONTROL de Expurgação de Eventos]** DAM do Configuration Manager. Após habilitar esse serviço, as atividades do usuário conectado que excederem um número especificado serão excluídas pelo sistema.
 
 A tela de boas-vindas fornece ferramentas de navegação fáceis, por exemplo ícones na barra de ferramentas para acessar pastas, coleções e catálogos.
 
 >[!NOTE]
 >
->Habilitar os serviços de Gravação [!UICONTROL e Expurgação] de Evento do CQ  Day DAM aumenta as operações de gravação no JCR e a indexação de pesquisa, o que aumenta significativamente a carga no servidor AEM. A carga adicional no servidor AEM pode afetar seu desempenho.
+>Habilitar os serviços [!UICONTROL Day CQ DAM Evento Recorder] e [!UICONTROL DAM Evento Purge] aumenta as operações de gravação no JCR e a indexação de pesquisa, o que aumenta significativamente a carga no servidor AEM. A carga adicional no servidor AEM pode afetar seu desempenho.
 
 >[!CAUTION]
 >
->A captura, filtragem e expurgação das atividades do usuário necessárias para a página inicial dos Ativos impõem uma sobrecarga no desempenho. Portanto, os administradores devem configurar a Página inicial de forma eficiente para os usuários-alvo.
+>Capturar, filtrar e expurgar atividades de usuário necessárias para o home page Ativos impõem uma sobrecarga no desempenho. Portanto, os administradores devem configurar o Home page de forma eficiente para os usuários do público alvo.
 >
->A Adobe recomenda que os administradores e usuários que executam operações em massa evitem usar o recurso Página inicial do ativo para evitar o aumento das atividades do usuário. Além disso, os administradores podem excluir atividades de gravação para usuários específicos ao configurar o Gravador [!UICONTROL de eventos] Day CQ DAM do [!UICONTROL Configuration Manager].
+>A Adobe recomenda que os administradores e usuários que executam operações em massa evitem usar o recurso Home page de ativos para evitar o aumento das atividades do usuário. Além disso, os administradores podem excluir atividades de gravação para usuários específicos ao configurar o Gravador [!UICONTROL de Eventos] Day CQ DAM do [!UICONTROL Configuration Manager].
 >
 >Se você usar o recurso, a Adobe recomenda programar a frequência de expurgação com base na carga do servidor.
