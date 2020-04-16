@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -25,17 +25,23 @@ O serviço Gerar PDF usa aplicativos nativos para converter os seguintes formato
 
 * Microsoft Office 2003 e 2007 para converter DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS e PUB (somente Windows)
 
-   **Observação**: O Acrobat® 9.2 ou posterior é necessário para converter o formato Microsoft XPS em PDF.*
+>[!NOTE]
+>
+>O Acrobat® 9.2 ou posterior é necessário para converter o formato Microsoft XPS em PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 e 2009 para converter DWF, DWG e DXW (somente em inglês)
 * Corel WordPerfect 12 e X4 para converter WPD, QPW, SHW (somente em inglês)
 * OpenOffice 2.0, 2.4, 3.0.1 e 3.1 para converter ODT, ODS, ODP, ODG, ODF, SXW, SXI, SXC, SXD, DOC, DOC, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX e PUB
 
-   ***Observação **: O serviço Gerar PDF não suporta as versões de 64 bits do OpenOffice.*
+>[!NOTE]
+>
+>O serviço Gerar PDF não suporta as versões de 64 bits do OpenOffice.
 
 * Adobe Photoshop® CS2 para converter PSD (somente Windows)
 
-   ***Observação**: O Photoshop CS3 e CS4 não são suportados porque não são compatíveis com o Windows Server 2003 ou o Windows Server 2008. *
+>[!NOTE]
+>
+>O Photoshop CS3 e CS4 não são suportados porque não são compatíveis com o Windows Server 2003 ou o Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 e 8 para converter FM (somente Windows)
 * Adobe PageMaker® 7.0 para converter PMD, PM6, P65 e PM (somente Windows)
@@ -931,7 +937,7 @@ O AEM Forms inclui arquivos XML de amostra que fazem com que o serviço Gerar PD
 
 Este exemplo contém as caixas de diálogo adicionais para o aplicativo Bloco de notas. Essas caixas de diálogo podem ser adicionadas às especificadas pelo serviço Gerar PDF.
 
-**Caixas de diálogo do Bloco de notas(appmon.notpad.add.en_US.xml)**
+**Caixas de diálogo do Bloco de notas(appmon.notepad.add.en_US.xml)**
 
 ```as3
  <dialogs app="Notepad" locale="en_US" version="7.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dialogs.xsd">
