@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -19,18 +19,20 @@ source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
 
 **Sobre o serviço Converter PDF**
 
-O serviço Convert PDF converte documentos PDF em PostScript e em vários formatos de imagem (JPEG, JPEG 2000, PNG e TIFF). A conversão de um documento PDF em PostScript é útil para a impressão automática baseada em servidor em qualquer impressora PostScript. A conversão de um documento PDF em um arquivo TIFF de várias páginas é prática ao arquivar documentos em sistemas de gerenciamento de conteúdo que não oferecem suporte a documentos PDF.
+O serviço Convert PDF converte documentos PDF em PostScript e em vários formatos de imagem (JPEG, JPEG 2000, PNG e TIFF). A conversão de um documento PDF em PostScript é útil para a impressão automática baseada em servidor em qualquer impressora PostScript. A conversão de um documento PDF em um arquivo TIFF de várias páginas é prática ao arquivar documentos em sistemas de gestão de conteúdo que não suportam documentos PDF.
 
 É possível realizar essas tarefas usando o serviço Converter PDF:
 
 * Converta documentos PDF em PostScript.
 * Converta documentos PDF em formatos de imagem.
 
-   ***Observação **:Para obter mais informações sobre o serviço Converter PDF, consulte Referência de[serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.*
+>[!NOTE]
+>
+>Para obter mais informações sobre o serviço Converter PDF, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
-## Converter documentos PDF em PostScript {#converting-pdf-documents-to-postscript}
+## Converter Documentos PDF em PostScript {#converting-pdf-documents-to-postscript}
 
-Este tópico descreve como você pode usar a Converter PDF Service API (Java e serviço da Web) para converter documentos PDF de forma programática em arquivos PostScript. O documento PDF convertido em um arquivo PostScript deve ser um documento PDF não interativo. Ou seja, se você tentar converter um documento PDF interativo em um arquivo PostScript, uma exceção será lançada.
+Este tópico descreve como você pode usar a Converter API do serviço PDF (Java e serviço da Web) para converter programaticamente documentos PDF em arquivos PostScript. O documento PDF convertido em um arquivo PostScript deve ser um documento PDF não interativo. Ou seja, se você tentar converter um documento PDF interativo em um arquivo PostScript, uma exceção será lançada.
 
 >[!NOTE]
 >
@@ -41,7 +43,7 @@ Este tópico descreve como você pode usar a Converter PDF Service API (Java e s
 Para converter um documento PDF em um arquivo PostScript, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Criar um cliente de serviço Converter PDF.
+1. Crie um cliente de serviço Converter PDF.
 1. Faça referência ao documento PDF para converter em um arquivo PostScript.
 1. Defina as opções de tempo de execução de conversão.
 1. Converta o documento PDF em um arquivo PostScript.
@@ -59,7 +61,7 @@ Esta seção usa a funcionalidade de serviço da Web introduzida no AEM Forms. P
 
 **Referência ao documento PDF a ser convertido em um arquivo PostScript**
 
-Consulte o documento PDF que você deseja converter em um arquivo PostScript. Como mencionado anteriormente neste tópico, o documento PDF deve ser um documento PDF não interativo. Se você tentar converter um documento PDF interativo em um arquivo PostScript, uma exceção será lançada.
+Faça referência ao documento PDF que você deseja converter em um arquivo PostScript. Como mencionado anteriormente neste tópico, o documento PDF deve ser um documento PDF não interativo. Se você tentar converter um documento PDF interativo em um arquivo PostScript, uma exceção será lançada.
 
 **Definir opções de tempo de execução de conversão**
 
@@ -75,7 +77,7 @@ Da mesma forma, se você selecionar a `ExpandToFit` opção (que expande a saíd
 
 **Converter o documento PDF em um arquivo PostScript**
 
-Depois de criar o cliente de serviço e definir as opções de tempo de execução, você pode chamar a operação de conversão PostScript. Essa operação precisará de informações sobre o documento a ser convertido, incluindo o nível PostScript preferencial para o documento de destino.
+Depois de criar o cliente de serviço e definir as opções de tempo de execução, você pode chamar a operação de conversão PostScript. Essa operação precisará de informações sobre o documento a ser convertido, incluindo o nível PostScript preferencial para o documento do público alvo.
 
 **Salvar o arquivo PostScript**
 
@@ -91,7 +93,7 @@ Depois de converter o documento PDF em PostScript, é possível salvar a saída 
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da Converter API do serviço PDF](/help/forms/developing/convert-pdf-service-java-api.md#convert-pdf-service-java-api-quick-start-soap)
+[Converter Start rápidos da API do serviço PDF](/help/forms/developing/convert-pdf-service-java-api.md#convert-pdf-service-java-api-quick-start-soap)
 
 ### Converter um documento PDF em PS usando a API Java {#convert-a-pdf-document-to-ps-using-the-java-api}
 
@@ -114,7 +116,7 @@ Converta um documento PDF em PostScript usando a API Converter serviço PDF (Jav
 1. Defina as opções de tempo de execução de conversão.
 
    * Crie um `ToPSOptionsSpec` objeto chamando seu construtor.
-   * Defina as opções de tempo de execução chamando um método apropriado que pertence ao `ToPSOptionsSpec` objeto. Por exemplo, para definir o nível PostScript que é criado, chame o `ToPSOptionsSpec` método do objeto e transmita um valor de `setPsLevel` `PSLevel` enumeração que especifique o nível PostScript. Para obter informações sobre todos os valores de tempo de execução que podem ser definidos, consulte a referência de `ToPSOptionsSpec` classe em Referência [de API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Defina as opções de tempo de execução chamando um método apropriado que pertence ao `ToPSOptionsSpec` objeto. Por exemplo, para definir o nível PostScript que é criado, chame o método do `ToPSOptionsSpec` objeto `setPsLevel` e transmita um valor de `PSLevel` lista discriminada que especifique o nível PostScript. Para obter informações sobre todos os valores de tempo de execução que podem ser definidos, consulte a referência de `ToPSOptionsSpec` classe em Referência [de API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 1. Converta o documento PDF em um arquivo PostScript.
 
@@ -127,13 +129,13 @@ Converta um documento PDF em PostScript usando a API Converter serviço PDF (Jav
 1. Salve o arquivo PostScript.
 
    * Crie um `java.io.File` objeto e verifique se a extensão do nome do arquivo é .ps.
-   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto retornado pelo `toPS2` método).
+   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `toPS2` método).
 
 **Consulte também:**
 
 [Resumo das etapas](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Converter um documento PDF em PostScript usando a API Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Start rápido (modo SOAP): Converter um documento PDF em PostScript usando a API Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -175,7 +177,7 @@ Converta um documento PDF em PostScript usando a API Converter serviço PDF (ser
 1. Defina as opções de tempo de execução de conversão.
 
    * Crie um `ToPSOptionsSpec` objeto chamando seu construtor.
-   * Defina as opções de tempo de execução atribuindo um valor ao membro de dados do `ToPSOptionsSpec` objeto. Por exemplo, para definir o nível PostScript criado, atribua um valor de `PSLevel` enumeração ao membro de `ToPSOptionsSpec` `psLevel` dados do objeto.
+   * Defina as opções de tempo de execução atribuindo um valor ao membro de dados do `ToPSOptionsSpec` objeto. Por exemplo, para definir o nível PostScript criado, atribua um valor de `PSLevel` lista discriminada ao membro de `ToPSOptionsSpec` `psLevel` dados do objeto.
 
 1. Converta o documento PDF em um arquivo PostScript.
 
@@ -200,11 +202,11 @@ Converta um documento PDF em PostScript usando a API Converter serviço PDF (ser
 
 [Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Converter documentos PDF em formatos de imagem {#converting-pdf-documents-to-image-formats}
+## Converter Documentos PDF em formatos de imagem {#converting-pdf-documents-to-image-formats}
 
-Você pode usar o serviço Converter PDF para converter documentos PDF de forma programática em formatos de imagem, que incluem JPEG, JPEG 2000, TIFF e PNG. Ao converter um documento PDF em um arquivo de imagem, você pode usar o documento PDF como um arquivo de imagem. Por exemplo, você pode colocar a imagem em um sistema de gerenciamento de conteúdo corporativo para armazenamento.
+Você pode usar o serviço Converter PDF para converter documentos PDF programaticamente em formatos de imagem, que incluem JPEG, JPEG 2000, TIFF e PNG. Ao converter um documento PDF em um arquivo de imagem, você pode usar o documento PDF como um arquivo de imagem. Por exemplo, você pode colocar a imagem em um sistema de gestão de conteúdo corporativo para armazenamentos.
 
-Ao converter um documento PDF em uma imagem, o serviço Converter PDF cria uma imagem separada para cada página no documento. Ou seja, se o documento tiver 20 páginas, o serviço Converter PDF criará 20 arquivos de imagem. Ao converter um documento PDF em um formato de imagem, é possível criar imagens individuais para cada página no documento PDF ou em um único arquivo de imagem para o documento PDF inteiro.
+Ao converter um documento PDF em uma imagem, o serviço Converter PDF cria uma imagem separada para cada página no documento. Ou seja, se o documento tiver 20 páginas, o serviço Converter PDF criará 20 arquivos de imagem. Ao converter um documento PDF em um formato de imagem, é possível criar imagens individuais para cada página dentro do documento PDF ou um único arquivo de imagem para todo o documento PDF.
 
 >[!NOTE]
 >
@@ -215,8 +217,8 @@ Ao converter um documento PDF em uma imagem, o serviço Converter PDF cria uma i
 Para converter um documento PDF em qualquer um dos tipos suportados, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Criar um cliente de serviço Converter PDF.
-1. Recupere o documento PDF para converter.
+1. Crie um cliente de serviço Converter PDF.
+1. Recupere o documento PDF a ser convertido.
 1. Defina as opções de tempo de execução.
 1. Converta o PDF em uma imagem.
 1. Recupere os arquivos de imagem de uma coleção.
@@ -231,7 +233,7 @@ Antes de executar programaticamente uma operação de serviço Converter PDF, é
 
 **Recuperar o documento PDF a ser convertido**
 
-Você deve recuperar o documento PDF para converter em uma imagem. Não é possível converter um documento PDF interativo em uma imagem. Se você tentar fazer isso, uma exceção é lançada. Para converter um documento PDF interativo em um arquivo de imagem, é necessário nivelar o documento PDF antes de convertê-lo. (Consulte [Achatar documentos](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)PDF.)
+É necessário recuperar o documento PDF para convertê-lo em uma imagem. Não é possível converter um documento PDF interativo em uma imagem. Se você tentar fazer isso, uma exceção é lançada. Para converter um documento PDF interativo em um arquivo de imagem, é necessário nivelar o documento PDF antes de convertê-lo. (Consulte [Achatamento de Documentos](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)PDF.)
 
 **Definir opções de tempo de execução**
 
@@ -253,7 +255,7 @@ O formato do arquivo de imagem depende da opção de tempo de `ImageConvertForma
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da Converter API do serviço PDF](/help/forms/developing/convert-pdf-service-java-api.md#convert-pdf-service-java-api-quick-start-soap)
+[Converter Start rápidos da API do serviço PDF](/help/forms/developing/convert-pdf-service-java-api.md#convert-pdf-service-java-api-quick-start-soap)
 
 ### Converter um documento PDF em arquivos de imagem usando a API Java {#convert-a-pdf-document-to-image-files-using-the-java-api}
 
@@ -268,7 +270,7 @@ Converta um documento PDF em um formato de imagem usando a API de serviço Conve
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `ConvertPdfServiceClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
 
-1. Recupere o documento PDF para converter.
+1. Recupere o documento PDF a ser convertido.
 
    * Crie um `java.io.FileInputStream` objeto que represente o documento PDF a ser convertido usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
@@ -276,17 +278,17 @@ Converta um documento PDF em um formato de imagem usando a API de serviço Conve
 1. Defina as opções de tempo de execução.
 
    * Crie um `ToImageOptionsSpec` objeto usando seu construtor.
-   * Chame métodos que pertencem a esse objeto, conforme necessário. Por exemplo, defina o tipo de imagem chamando o `setImageConvertFormat` método e transmitindo um valor `ImageConvertFormat` enum que especifique o tipo de formato.
+   * Chame os métodos que pertencem a esse objeto, conforme necessário. Por exemplo, defina o tipo de imagem chamando o `setImageConvertFormat` método e transmitindo um valor `ImageConvertFormat` enum que especifique o tipo de formato.
    >[!NOTE]
    >
-   >A definição do valor de `ImageConvertFormat` enumeração é obrigatória.
+   >A definição do valor da `ImageConvertFormat` lista discriminada é obrigatória.
 
 1. Converta o PDF em uma imagem.
 
    Chame o método do `ConvertPdfServiceClient` objeto `toImage2` e passe os seguintes valores:
 
    * Um `com.adobe.idp.Document` objeto que representa o arquivo PDF a ser convertido.
-   * Um `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` objeto que contém as várias preferências sobre o formato de imagem de destino.
+   * Um `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` objeto que contém as várias preferências sobre o formato de imagem do público alvo.
    O `toImage2` método retorna um `java.util.List` objeto que contém imagens. Cada elemento na coleção é uma `com.adobe.idp.Document` instância.
 
 1. Recupere os arquivos de imagem de uma coleção.
@@ -295,7 +297,7 @@ Converta um documento PDF em um formato de imagem usando a API de serviço Conve
 
 **Consulte também:**
 
-[Início rápido (modo SOAP): Converter um documento PDF em arquivos JPEG usando a API Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[Start rápido (modo SOAP): Converter um documento PDF em arquivos JPEG usando a API Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 ### Converter um documento PDF em arquivos de imagem usando a API de serviço da Web {#convert-a-pdf-document-to-image-files-using-the-web-service-api}
 
@@ -322,7 +324,7 @@ Converta um documento PDF em um formato de imagem usando a API Converter serviç
       * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Recupere o documento PDF para converter.
+1. Recupere o documento PDF a ser convertido.
 
    * Crie um `BLOB` objeto usando seu construtor. Esse `BLOB` objeto é usado para armazenar o formulário PDF.
    * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que especifica o local do formulário PDF e o modo para abrir o arquivo.
@@ -333,18 +335,18 @@ Converta um documento PDF em um formato de imagem usando a API Converter serviç
 1. Defina as opções de tempo de execução.
 
    * Crie um `ToImageOptionsSpec` objeto usando seu construtor.
-   * Chame métodos que pertencem a esse objeto, conforme necessário. Por exemplo, defina o tipo de imagem chamando o `setImageConvertFormat` método e transmitindo um valor de `ImageConvertFormat` enumeração que especifique o tipo de formato.
+   * Chame os métodos que pertencem a esse objeto, conforme necessário. Por exemplo, defina o tipo de imagem chamando o `setImageConvertFormat` método e transmitindo um valor de `ImageConvertFormat` lista discriminada que especifique o tipo de formato.
    >[!NOTE]
    >
-   >A definição do valor de `ImageConvertFormat` enumeração é obrigatória.
+   >A definição do valor da `ImageConvertFormat` lista discriminada é obrigatória.
 
 1. Converta o PDF em uma imagem.
 
    Chame o método do `ConvertPDFServiceService` objeto `toImage2` e passe os seguintes valores:
 
    * Um `BLOB` objeto que representa o arquivo a ser convertido
-   * Um `ToImageOptionsSpec` objeto que contém as várias preferências sobre o formato de imagem de destino
-   O `toImage2` método retorna um `MyArrayOfBLOB` objeto que contém os arquivos de imagem criados recentemente.
+   * Um `ToImageOptionsSpec` objeto que contém as várias preferências sobre o formato de imagem do público alvo
+   O `toImage2` método retorna um `MyArrayOfBLOB` objeto que contém os arquivos de imagem recém-criados.
 
 1. Recupere os arquivos de imagem de uma coleção.
 
