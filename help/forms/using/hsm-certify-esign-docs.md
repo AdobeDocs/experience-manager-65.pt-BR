@@ -1,6 +1,6 @@
 ---
 title: Usar o HSM para assinar ou certificar documentos digitalmente
-seo-title: Usar HSM para certificar documentos assinados eletronicamente
+seo-title: Use o HSM para certificar documentos assinados eletronicamente
 description: Use dispositivos HSM ou token para certificar documentos assinados eletronicamente
 seo-description: Use dispositivos HSM ou token para certificar documentos assinados eletronicamente
 uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,7 +28,7 @@ O Adobe Experience Manager Forms pode usar credenciais armazenadas em um HSM ou 
 
 ## Antes de configurar os dispositivos HSM ou etoken com o AEM Forms {#configurehsmetoken}
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) package.
+* Install [AEM Forms add-on](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) package.
 * Instale e configure o software do cliente HSM ou token no mesmo computador que o servidor AEM. O software cliente é necessário para se comunicar com os dispositivos HSM e etoken.
 * (Somente Microsoft Windows) Defina a variável de ambiente JAVA_HOME_32 para apontar para o diretório onde a versão de 32 bits do Java 8 Development Kit (JDK 8) está instalada. O caminho padrão do diretório é C:\Program Files(x86)\Java\jdk&lt;versão>
 * (Formulários AEM somente no OSGi) Instale o certificado raiz no armazenamento confiável. É necessário verificar o PDF assinado
@@ -41,13 +41,13 @@ O Adobe Experience Manager Forms pode usar credenciais armazenadas em um HSM ou 
 
 Por padrão, o serviço DocAssurance não está ativado. Execute as seguintes etapas para habilitar o serviço:
 
-1. Pare a instância Autor do ambiente do AEM Forms.
+1. Pare a instância Autor do seu ambiente AEM Forms.
 
 1. Abra o arquivo [AEM_root]\crx-quickstart\conf\sling.properties para edição.
 
    >[!NOTE]
    >
-   >Se você tiver usado o arquivo [AEM_root]\crx-quickstart\bin\start.bat para iniciar a instância do AEM, abra o arquivo [AEM_root]\crx-quickstart\sling.properties para edição.
+   >Se você tiver usado o arquivo [AEM_root]\crx-quickstart\bin\start.bat para start da instância AEM, abra o arquivo [AEM_root]\crx-quickstart\sling.properties para edição.
 
 1. Adicione ou substitua as seguintes propriedades ao arquivo sling.properties:
 
@@ -91,7 +91,7 @@ Execute as seguintes etapas para configurar certificados:
 
 >[!NOTE]
 >
->Ao mudar para o ambiente de produção, substitua suas credenciais de avaliação por credenciais de produção. Certifique-se de excluir suas credenciais antigas do Reader Extensions antes de atualizar uma credencial expirada ou de avaliações.
+>Ao mover-se para o ambiente de produção, substitua suas credenciais de avaliação por credenciais de produção. Certifique-se de excluir suas credenciais antigas do Reader Extensions antes de atualizar uma credencial expirada ou de avaliações.
 
 ## Criar um alias para o dispositivo {#configuredeviceinaemconsole}
 
@@ -104,7 +104,9 @@ O alias contém todos os parâmetros exigidos por um HSM ou um token. Execute as
    * **Caminho** da DLL: Especifique o caminho totalmente qualificado de sua biblioteca de cliente HSM ou de token no servidor. Por exemplo, C:\Program Files\LunaSA\cryptoki.dll. Em um ambiente clusterizado, esse caminho deve ser idêntico para todos os servidores do cluster.
    * **Pino** HSM: Especifique a senha necessária para acessar a chave do dispositivo.
    * **Id** do slot HSM: Especifique um identificador de slot do tipo inteiro. A ID do slot é definida cliente a cliente. Se você registrar um segundo computador em uma partição diferente (por exemplo, HSMPART2 no mesmo dispositivo HSM), o slot 1 será associado à partição HSMPART2 do cliente.
-   **** Observação: *Ao configurar o Etoken, especifique um valor numérico para o campo ID do slot HSM. Um valor numérico é necessário para que as operações de Assinaturas funcionem.*
+   >[!NOTE]
+   >
+   >Ao configurar o Etoken, especifique um valor numérico para o campo ID do slot HSM. Um valor numérico é necessário para que as operações de Assinaturas funcionem.
 
    * **Certificado SHA1**: Especifique o valor SHA1 (impressão digital) do arquivo de chave pública (.cer) para a credencial que você está usando. Verifique se não há espaços usados no valor SHA1. Se você estiver usando um certificado físico, ele não é obrigatório.
    * **Tipo** de dispositivo HSM: Selecione o fabricante do HSM (Luna ou outro) ou do dispositivo eToken.
@@ -409,4 +411,4 @@ Se você atualizou do AEM 6.0 Form ou do AEM 6.1 Forms e estava usando o serviç
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Para obter informações detalhadas sobre APIs e código de amostra do serviço DocAssurance, consulte [Uso programático](/help/forms/using/aem-document-services-programmatically.md)de serviços de documento do AEM.
+Para obter informações detalhadas sobre as APIs e exemplos de código do serviço DocAssurance, consulte [Uso programático](/help/forms/using/aem-document-services-programmatically.md)de serviços de Documento do AEM.
