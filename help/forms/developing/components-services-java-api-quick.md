@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -35,8 +35,13 @@ O SOAP (Java API Quick Start) está disponível para componentes e serviços.
 
 As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-* ***Observação **: Não é possível manipular de forma programática componentes e serviços usando serviços da Web.*
-* ***Observação **: start rápidos localizados em Programação com formulários AEM são baseados no servidor Forms que está sendo implantado no JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte[Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)*
+>[!NOTE]
+>
+>Não é possível manipular de forma programática componentes e serviços usando serviços da Web.
+
+>[!NOTE]
+>
+>start rápidos localizados em Programação com formulários AEM são baseados no servidor Forms que está sendo implantado no JBoss e no sistema operacional Windows. Entretanto, se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 >[!NOTE]
 >
