@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Authoring User Guide
+user-guide-title: Guia do usuário de criação do AEM 6.5
 translation-type: tm+mt
-source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
+source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
 # AEM 6.5 Authoring User Guide {#authoring}
 
 + [Visão geral do Guia do usuário de criação](home.md)
-+ Tarefas essenciais, ferramentas e conceitos para a criação do AEM {#essentials}
++ tarefas, ferramentas e conceitos essenciais para a criação do AEM {#essentials}
    + [Primeiros passos para autores](first-steps.md)
    + [Criação de página](page-authoring.md)
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
@@ -85,7 +85,7 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
    + [Gerenciamento de públicos](managing-audiences.md)
    + [Criação e gerenciamento de ofertas](offerlib.md)
    + [Noções sobre segmentação](segmentation-overview.md)
-+ AEM e Adobe Campaign {aem-adobe-campaign}
++ AEM e Adobe Campaign {#aem-adobe-campaign}
    + [Trabalhar com o Adobe Campaign](adobe-campaign.md)
    + [Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard](campaign.md)
    + [Direcionar seu Adobe Campaign](target-adobe-campaign.md)
