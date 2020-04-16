@@ -10,20 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
 
 # Invocar o AEM Forms usando a API Java {#invoking-aem-forms-using-the-javaapi}
 
-O AEM Forms pode ser chamado usando a AEM Forms Java API. Ao usar a API Java do AEM Forms, você pode usar a API de chamada ou as bibliotecas do cliente Java. Java client libraries are available for services such as the Rights Management service. These strongly typed APIs let you develop Java applications that invoke AEM Forms.
+O AEM Forms pode ser chamado usando a AEM Forms Java API. Ao usar a API Java do AEM Forms, você pode usar a API de chamada ou as bibliotecas do cliente Java. As bibliotecas do cliente Java estão disponíveis para serviços como o serviço Rights Management. Essas APIs altamente digitadas permitem desenvolver aplicativos Java que chamam AEM Forms.
 
 A API de chamada são classes localizadas no `com.adobe.idp.dsc` pacote. Usando essas classes, você pode enviar uma solicitação de invocação diretamente para um serviço e manipular uma resposta de invocação que é retornada. Use a API de invocação para chamar processos de duração curta ou longa que foram criados usando o Workbench.
 
 A maneira recomendada para chamar programaticamente um serviço é usar uma biblioteca de cliente Java que corresponda ao serviço, em vez da API de chamada. Por exemplo, para chamar o serviço de criptografia, use a biblioteca do cliente do serviço de criptografia. Para executar uma operação do serviço de criptografia, chame um método que pertence ao objeto do cliente do serviço de criptografia. É possível criptografar um documento PDF com uma senha, invocando o `EncryptionServiceClient` método do `encryptPDFUsingPassword` objeto.
 
-The Java API supports the following features:
+A API Java suporta os seguintes recursos:
 
 * Protocolo de transporte RMI para invocação remota
 * Transporte de VM para invocação local
@@ -37,7 +37,7 @@ O site do Adobe Developer contém os seguintes artigos que discutem como chamar 
 
 [Usar servlets Java para chamar processos do AEM Forms](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
 
-[Invoking the AEM Forms Distiller API from Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
+[Invocar a API do AEM Forms Distiller do Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
 
 **Consulte também:**
 
@@ -55,7 +55,7 @@ O site do Adobe Developer contém os seguintes artigos que discutem como chamar 
 
 [Invocar um processo de duração curta usando a API de chamada](#invoking-a-short-lived-process-using-the-invocation-api)
 
-[Criação de um aplicativo da Web Java que chama um processo de vida longa centrado em humanos](/help/forms/developing/invoking-human-centric-long-lived.md)
+[Criação de um aplicativo da Web Java que chama um processo de vida longa centrado no ser humano](/help/forms/developing/invoking-human-centric-long-lived.md)
 
 ## Incluir arquivos da biblioteca Java do AEM Forms {#including-aem-forms-java-library-files}
 
@@ -66,7 +66,7 @@ Para chamar programaticamente um serviço AEM Forms usando a API Java, inclua os
 
 >[!NOTE]
 >
->(Turnkey Only) Start the AEM Forms server with command `standalone.bat -b <Server IP> -c lc_turnkey.xml` to specify a server IP for EJB
+>(Somente chave) Start o servidor AEM Forms com comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` para especificar um IP de servidor para EJB
 
 * O servidor de aplicativos J2EE no qual o AEM Forms é implantado.
 
@@ -444,7 +444,9 @@ Para chamar com êxito um serviço AEM Forms, defina as seguintes propriedades d
    * Se você definir essa propriedade de conexão como `WebLogic`, o `java.naming.factory.initial` valor será definido como `weblogic.jndi.WLInitialContextFactory`.
    * Da mesma forma, se você definir essa propriedade de conexão como `JBoss`, o `java.naming.factory.initial` valor será definido como `org.jnp.interfaces.NamingContextFactory`.
    * Você pode definir a `java.naming.factory.initial` propriedade como um valor que atenda aos seus requisitos se não quiser usar os valores padrão.
-   ***Observação**: Em vez de usar uma string para definir a propriedade de `DSC_SERVER_TYPE` conexão, você pode usar um membro estático da `ServiceClientFactoryProperties` classe. Os seguintes valores podem ser usados: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`ou `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+   >[!NOTE]
+   >
+   >Em vez de usar uma string para definir a propriedade de `DSC_SERVER_TYPE` conexão, você pode usar um membro estático da `ServiceClientFactoryProperties` classe. Os seguintes valores podem ser usados: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`ou `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Especifica o nome de usuário dos formulários AEM. Para que um usuário chame com êxito um serviço AEM Forms, ele precisa da função Usuário de serviços. Um usuário também pode ter outra função que inclui a permissão Chamada de serviço. Caso contrário, uma exceção será lançada quando eles tentarem invocar um serviço. Se a segurança do serviço estiver desativada, não é necessário especificar essa propriedade de conexão.
 * **DSC_CREDENTIAL_PASSWORD:** Especifica o valor da senha correspondente. Se a segurança do serviço estiver desativada, não é necessário especificar essa propriedade de conexão.
@@ -1045,7 +1047,7 @@ Chame o processo de duração `MyApplication/EncryptDocument` curta usando a API
 1. Crie um `InvocationRequest` objeto chamando o `ServiceClientFactory` método do `createInvocationRequest` objeto e transmitindo os seguintes valores:
 
    * Um valor de string que especifica o nome do processo de longa duração a ser chamado. Para invocar o `MyApplication/EncryptDocument` processo, especifique `MyApplication/EncryptDocument`.
-   * Um valor de string que representa o nome da operação do processo. Geralmente, o nome de uma operação de processo de duração curta é `invoke`.
+   * Um valor de string que representa o nome da operação do processo. Geralmente, o nome de uma operação de processo com duração curta é `invoke`.
    * O `java.util.HashMap` objeto que contém os valores de parâmetro exigidos pela operação de serviço.
    * Um valor booliano que especifica `true`, o que cria uma solicitação síncrona (esse valor é aplicável para chamar um processo de duração curta).
 
