@@ -1,6 +1,6 @@
 ---
-title: Criptografando e descriptografando documentos PDF
-seo-title: Criptografando e descriptografando documentos PDF
+title: Criptografando e descriptografando Documentos PDF
+seo-title: Criptografando e descriptografando Documentos PDF
 description: 'null'
 seo-description: 'null'
 uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
@@ -10,29 +10,31 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
 
-# Criptografando e descriptografando documentos PDF {#encrypting-and-decrypting-pdf-documents}
+# Criptografando e descriptografando Documentos PDF {#encrypting-and-decrypting-pdf-documents}
 
 **Sobre o serviço de criptografia**
 
-O serviço de criptografia permite criptografar e descriptografar documentos. Quando um documento é criptografado, seu conteúdo se torna ilegível. Um usuário autorizado pode descriptografar o documento para obter acesso ao conteúdo. Se um documento PDF for criptografado com uma senha, o usuário deverá especificá-la antes que o documento possa ser exibido no Adobe Reader ou no Adobe Acrobat. Da mesma forma, se um documento PDF for criptografado com um certificado, o usuário deverá descriptografar o documento PDF com a chave pública que corresponde ao certificado (chave privada) que foi usado para criptografar o documento PDF.
+O serviço de criptografia permite criptografar e descriptografar documentos. Quando um documento é criptografado, seu conteúdo se torna ilegível. Um usuário autorizado pode descriptografar o documento para obter acesso ao conteúdo. Se um documento PDF for criptografado com uma senha, o usuário deverá especificá-la antes que o documento possa ser visualizado no Adobe Reader ou Adobe Acrobat. Da mesma forma, se um documento PDF for criptografado com um certificado, o usuário deverá descriptografar o documento PDF com a chave pública que corresponde ao certificado (chave privada) que foi usado para criptografar o documento PDF.
 
-Você pode realizar essas tarefas usando o serviço de Criptografia:
+É possível realizar essas tarefas usando o serviço de Criptografia:
 
-* Criptografe um documento PDF com uma senha. (Consulte [Criptografar documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
-* Criptografe um documento PDF com um certificado. (Consulte [Criptografar documentos PDF com certificados](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
+* Criptografe um documento PDF com uma senha. (Consulte [Criptografar Documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+* Criptografe um documento PDF com um certificado. (Consulte [Criptografar Documentos PDF com certificados](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 * Remova a criptografia baseada em senha de um documento PDF. (Consulte [Remoção da criptografia](encrypting-decrypting-pdf-documents.md#removing-password-encryption)de senha.)
 * Remova a criptografia baseada em certificado de um documento PDF. (Consulte [Remoção da criptografia](encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption)baseada em certificados.)
-* Desbloqueie o documento PDF para que outras operações de serviço possam ser executadas. Por exemplo, depois que um documento PDF criptografado por senha é desbloqueado, você pode aplicar uma assinatura digital a ele. (Consulte [Desbloquear documentos](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)PDF criptografados.)
+* Desbloqueie o documento PDF para que outras operações de serviço possam ser executadas. Por exemplo, depois que um documento PDF criptografado por senha é desbloqueado, você pode aplicar uma assinatura digital a ele. (Consulte [Desbloquear Documentos](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)PDF criptografados.)
 * Determine o tipo de criptografia de um documento PDF protegido. (Consulte [Determinando o tipo](encrypting-decrypting-pdf-documents.md#determining-encryption-type)de criptografia.)
 
-   ***Observação **:Para obter mais informações sobre o serviço de criptografia, consulte Referência de[serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.*
+>[!NOTE]
+>
+>Para obter mais informações sobre o serviço de criptografia, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
-## Como criptografar documentos PDF com uma senha {#encrypting-pdf-documents-with-a-password}
+## Criptografar Documentos PDF com uma senha {#encrypting-pdf-documents-with-a-password}
 
 Ao criptografar um documento PDF com uma senha, o usuário deve especificar a senha para abrir o documento PDF no Adobe Reader ou Acrobat. Além disso, antes que outra operação do AEM Forms, como assinar digitalmente o documento PDF, possa ser executada no documento, um documento PDF criptografado por senha deve ser desbloqueado.
 
@@ -63,7 +65,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-encrypc-client.jar
+* adobe-encryption-client.jar
 * adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
 * jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
 
@@ -75,11 +77,11 @@ Para executar programaticamente uma operação do serviço de criptografia, é n
 
 É necessário obter um documento PDF não criptografado para criptografar o documento com uma senha. Se você tentar proteger um documento PDF que já está criptografado, ocorrerá uma exceção.
 
-**Definir opções de tempo de execução de criptografia**
+**Definir opções de tempo de execução da criptografia**
 
 Para criptografar um documento PDF com uma senha, especifique quatro valores, incluindo dois valores de senha. O primeiro valor de senha é usado para criptografar o documento PDF e deve ser especificado ao abrir o documento PDF. O segundo valor de senha, denominado valor de senha mestre, é usado para remover a criptografia do documento PDF. Os valores de senha fazem distinção entre maiúsculas e minúsculas e esses dois valores de senha não podem ser os mesmos.
 
-É necessário especificar os recursos do documento PDF a serem criptografados. É possível criptografar todo o documento PDF, tudo exceto os metadados do documento ou apenas os anexos do documento. Se você criptografar apenas os anexos do documento, um usuário será solicitado a fornecer uma senha quando tentar acessar os anexos do arquivo.
+É necessário especificar os recursos do documento PDF a serem criptografados. É possível criptografar todo o documento PDF, tudo exceto os metadados do documento ou apenas os anexos do documento. Se você criptografar apenas os anexos do documento, um usuário será solicitado a fornecer uma senha ao tentar acessar os anexos do arquivo.
 
 Ao criptografar um documento PDF, você pode especificar permissões associadas ao documento protegido. Ao especificar permissões, você pode controlar as ações que um usuário que abre um documento PDF criptografado por senha pode executar. Por exemplo, para extrair dados de formulário com êxito, é necessário definir as seguintes permissões:
 
@@ -88,7 +90,7 @@ Ao criptografar um documento PDF, você pode especificar permissões associadas 
 
 >[!NOTE]
 >
->As permissões são especificadas como valores `PasswordEncryptionPermission` de enumeração.
+>As permissões são especificadas como valores `PasswordEncryptionPermission` de lista discriminada.
 
 **Adicionar a senha**
 
@@ -108,9 +110,9 @@ Depois de recuperar um documento PDF não protegido e definir valores de tempo d
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[Start rápidos da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
-[Como criptografar documentos PDF com certificados](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)
+[Criptografar Documentos PDF com certificados](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)
 
 ### Criptografar um documento PDF usando a API Java {#encrypt-a-pdf-document-using-the-java-api}
 
@@ -127,17 +129,17 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (Java):
 
 1. Obtenha um documento PDF para criptografar.
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento PDF para criptografar usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF.
+   * Crie um `java.io.FileInputStream` objeto que represente o documento PDF a ser criptografado usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
 
 1. Defina as opções de tempo de execução da criptografia.
 
    * Crie um `PasswordEncryptionOptionSpec` objeto chamando seu construtor.
-   * Especifique os recursos do documento PDF a serem criptografados chamando o `PasswordEncryptionOptionSpec` método do objeto `setEncryptOption` e transmitindo um valor de `PasswordEncryptionOption` enumeração que especifica os recursos do documento a serem criptografados. Por exemplo, para criptografar todo o documento PDF, incluindo seus metadados e seus anexos, especifique `PasswordEncryptionOption.ALL`.
+   * Especifique os recursos do documento PDF a serem criptografados chamando o `PasswordEncryptionOptionSpec` método do objeto `setEncryptOption` e transmitindo um valor de `PasswordEncryptionOption` lista discriminada que especifica os recursos do documento a serem criptografados. Por exemplo, para criptografar todo o documento PDF, incluindo seus metadados e seus anexos, especifique `PasswordEncryptionOption.ALL`.
    * Crie um `java.util.List` objeto que armazene as permissões de criptografia usando o `ArrayList` construtor.
-   * Especifique uma permissão chamando o método do `java.util.List` objeto `add` e transmitindo um valor de enumeração que corresponda à permissão que você deseja definir. Por exemplo, para definir a permissão que permite que um usuário copie dados localizados no documento PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita esta etapa para cada permissão a ser definida).
-   * Especifique a opção de compatibilidade do Acrobat, chamando o `PasswordEncryptionOptionSpec` método do objeto `setCompatability` e transmitindo um valor de enumeração que especifica o nível de compatibilidade do Acrobat. Por exemplo, você pode especificar `PasswordEncryptionCompatability.ACRO_7`.
-   * Especifique o valor da senha que permite ao usuário abrir o documento PDF criptografado chamando o método do `PasswordEncryptionOptionSpec` `setDocumentOpenPassword` objeto e transmitindo um valor de string que representa a senha aberta.
+   * Especifique uma permissão chamando o método do `java.util.List` objeto `add` e transmitindo um valor de lista discriminada que corresponda à permissão que você deseja definir. Por exemplo, para definir a permissão que permite que um usuário copie dados localizados no documento PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita esta etapa para cada permissão a ser definida).
+   * Especifique a opção de compatibilidade do Acrobat, chamando o `PasswordEncryptionOptionSpec` método do objeto `setCompatability` e transmitindo um valor de lista discriminada que especifique o nível de compatibilidade do Acrobat. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
+   * Especifique o valor da senha que permite que um usuário abra o documento PDF criptografado chamando o método do `PasswordEncryptionOptionSpec` objeto `setDocumentOpenPassword` e transmitindo um valor de string que representa a senha aberta.
    * Especifique o valor da senha mestre que permite que um usuário remova a criptografia do documento PDF chamando o método do `PasswordEncryptionOptionSpec` objeto `setPermissionPassword` e transmitindo um valor de string que representa a senha mestre.
 
 1. Adicione a senha.
@@ -151,13 +153,13 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (Java):
 1. Salve o documento PDF criptografado como um arquivo PDF.
 
    * Crie um `java.io.File` objeto e verifique se a extensão do arquivo é .pdf.
-   * Chame o método do `com.adobe.idp.Document` objeto para copiar o conteúdo do `copyToFile` `com.adobe.idp.Document` objeto para o arquivo. Certifique-se de usar o `com.adobe.idp.Document` objeto retornado pelo `encryptPDFUsingPassword` método.
+   * Chame o método do `com.adobe.idp.Document` objeto para copiar o conteúdo do `copyToFile` `com.adobe.idp.Document` objeto para o arquivo. Certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `encryptPDFUsingPassword` método.
 
 **Consulte também:**
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Criptografar um documento PDF usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Criptografar um documento PDF usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -190,7 +192,7 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (serviç
 
 1. Obtenha um documento PDF para criptografar.
 
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar um documento PDF criptografado com uma senha.
+   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar um documento PDF que é criptografado com uma senha.
    * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF a ser criptografado e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
@@ -199,9 +201,9 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (serviç
 1. Defina as opções de tempo de execução da criptografia.
 
    * Crie um `PasswordEncryptionOptionSpec` objeto usando seu construtor.
-   * Especifique os recursos do documento PDF a serem criptografados atribuindo um valor de `PasswordEncryptionOption` enumeração ao membro de `PasswordEncryptionOptionSpec` dados do objeto `encryptOption` . Para criptografar o PDF inteiro, incluindo seus metadados e seus anexos, atribua `PasswordEncryptionOption.ALL` a esse membro de dados.
-   * Especifique a opção de compatibilidade do Acrobat atribuindo um valor de `PasswordEncryptionCompatability` enumeração ao membro de `PasswordEncryptionOptionSpec` dados do `compatability` objeto. Por exemplo, atribua `PasswordEncryptionCompatability.ACRO_7` a esse membro de dados.
-   * Especifique o valor da senha que permite ao usuário abrir o documento PDF criptografado atribuindo um valor de string que representa a senha de abertura ao membro de `PasswordEncryptionOptionSpec` dados do `documentOpenPassword` objeto.
+   * Especifique os recursos do documento PDF a serem criptografados atribuindo um valor de `PasswordEncryptionOption` lista discriminada ao membro de `PasswordEncryptionOptionSpec` dados do `encryptOption` objeto. Para criptografar o PDF inteiro, incluindo seus metadados e seus anexos, atribua `PasswordEncryptionOption.ALL` a esse membro de dados.
+   * Especifique a opção de compatibilidade do Acrobat atribuindo um valor de `PasswordEncryptionCompatability` lista discriminada ao membro de `PasswordEncryptionOptionSpec` dados do `compatability` objeto. Por exemplo, atribua `PasswordEncryptionCompatability.ACRO_7` a esse membro de dados.
+   * Especifique o valor da senha que permite que um usuário abra o documento PDF criptografado atribuindo um valor de string que representa a senha de abertura ao membro de `PasswordEncryptionOptionSpec` dados do `documentOpenPassword` objeto.
    * Especifique o valor da senha que permite que um usuário remova a criptografia do documento PDF atribuindo um valor de string que representa a senha mestre ao membro de `PasswordEncryptionOptionSpec` dados do `permissionPassword` objeto.
 
 1. Adicione a senha.
@@ -227,16 +229,16 @@ Criptografe um documento PDF com uma senha usando a API de criptografia (serviç
 
 [Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Como criptografar documentos PDF com certificados {#encrypting-pdf-documents-with-certificates}
+## Criptografar Documentos PDF com certificados {#encrypting-pdf-documents-with-certificates}
 
-A criptografia baseada em certificado permite criptografar um documento para destinatários específicos por meio da tecnologia de chave pública. Vários destinatários podem receber permissões diferentes para o documento. Muitos aspectos da encriptação são tornados possíveis pela tecnologia de chave pública. Um algoritmo é usado para gerar dois números grandes, conhecidos como *chaves*, que têm as seguintes propriedades:
+A criptografia baseada em certificado permite criptografar um documento para recipient específicos por meio da tecnologia de chave pública. Vários recipient podem receber permissões diferentes para o documento. Muitos aspectos da encriptação são tornados possíveis pela tecnologia de chave pública. Um algoritmo é usado para gerar dois números grandes, conhecidos como *chaves*, que têm as seguintes propriedades:
 
 * Uma chave é usada para criptografar um conjunto de dados. Subsequentemente, somente a outra chave pode ser usada para descriptografar os dados.
 * É impossível distinguir uma chave da outra.
 
 Uma das teclas atua como uma chave privada do usuário. É importante que somente o usuário tenha acesso a essa chave. A outra chave é a chave pública do usuário, que pode ser compartilhada com outras pessoas.
 
-Um certificado de chave pública contém uma chave pública do usuário e informações de identificação. O formato X.509 é usado para armazenar certificados. Os certificados são normalmente emitidos e assinados digitalmente por uma autoridade de certificação (CA), que é uma entidade reconhecida que fornece uma medida de confiança na validade do certificado. Os certificados têm uma data de expiração, após a qual não são mais válidos. Além disso, as listas de revogação de certificados (CRLs) fornecem informações sobre certificados que foram revogados antes da data de expiração. As LCRs são publicadas periodicamente pelas autoridades de certificação. O status de revogação de um certificado também pode ser recuperado por meio do Online Certificate Status Protocol (OCSP) pela rede.
+Um certificado de chave pública contém uma chave pública do usuário e informações de identificação. O formato X.509 é usado para armazenar certificados. Os certificados são normalmente emitidos e assinados digitalmente por uma autoridade de certificação (CA), que é uma entidade reconhecida que fornece uma medida de confiança na validade do certificado. Os certificados têm uma data de expiração, após a qual não são mais válidos. Além disso, listas de revogação de certificado (CRLs) fornecem informações sobre certificados que foram revogados antes da data de expiração. As LCRs são publicadas periodicamente pelas autoridades de certificação. O status de revogação de um certificado também pode ser recuperado por meio do Online Certificate Status Protocol (OCSP) pela rede.
 
 >[!NOTE]
 >
@@ -270,7 +272,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-encrypc-client.jar
+* adobe-encryption-client.jar
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 
@@ -288,7 +290,7 @@ Para criptografar um documento PDF com um certificado, consulte um certificado u
 
 Ao criptografar um documento PDF com um certificado, especifique as permissões associadas ao documento protegido. Ao especificar permissões, você pode controlar as ações que um usuário que abre um documento PDF criptografado por certificado pode executar.
 
-**Definir opções de tempo de execução de criptografia**
+**Definir opções de tempo de execução da criptografia**
 
 Especifique os recursos do documento PDF a serem criptografados. É possível criptografar todo o documento PDF, tudo exceto os metadados do documento ou apenas os anexos do documento.
 
@@ -310,9 +312,9 @@ Depois de recuperar um documento PDF não protegido, fazer referência ao certif
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[Start rápidos da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
-[Como criptografar documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
+[Criptografar Documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
 ### Criptografar um documento PDF com um certificado usando a API Java {#encrypt-a-pdf-document-with-a-certificate-using-the-java-api}
 
@@ -329,13 +331,13 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (Ja
 
 1. Obtenha um documento PDF para criptografar.
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento PDF para criptografar usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF.
+   * Crie um `java.io.FileInputStream` objeto que represente o documento PDF a ser criptografado usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
 
 1. Consulte o certificado.
 
    * Crie um `java.util.List` objeto que armazene informações de permissão usando seu construtor.
-   * Especifique a permissão associada ao documento criptografado chamando o método do `java.util.List` objeto `add` e transmitindo um valor de `CertificateEncryptionPermissions` enumeração que representa as permissões que são concedidas ao usuário que abre o documento PDF protegido. Por exemplo, para especificar todas as permissões, passe `CertificateEncryptionPermissions.PKI_ALL_PERM`.
+   * Especifique a permissão associada ao documento criptografado chamando o método do `java.util.List` objeto `add` e transmitindo um valor de `CertificateEncryptionPermissions` lista discriminada que representa as permissões que são concedidas ao usuário que abre o documento PDF protegido. Por exemplo, para especificar todas as permissões, passe `CertificateEncryptionPermissions.PKI_ALL_PERM`.
    * Crie um `Recipient` objeto usando seu construtor.
    * Crie um `java.io.FileInputStream` objeto que represente o certificado usado para criptografar o documento PDF usando seu construtor e transmitindo um valor de string que especifica o local do certificado.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto que representa o certificado.
@@ -349,8 +351,8 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (Ja
 1. Defina as opções de tempo de execução da criptografia.
 
    * Crie um `CertificateEncryptionOptionSpec` objeto chamando seu construtor.
-   * Especifique os recursos do documento PDF a serem criptografados chamando o `CertificateEncryptionOptionSpec` método do objeto `setOption` e transmitindo um valor de `CertificateEncryptionOption` enumeração que especifica os recursos do documento a serem criptografados. Por exemplo, para criptografar todo o documento PDF, incluindo seus metadados e seus anexos, especifique `CertificateEncryptionOption.ALL`.
-   * Especifique a opção de compatibilidade do Acrobat chamando o `CertificateEncryptionOptionSpec` método do objeto `setCompat` e transmitindo um valor de `CertificateEncryptionCompatibility` enumeração que especifica o nível de compatibilidade do Acrobat. Por exemplo, você pode especificar `CertificateEncryptionCompatibility.ACRO_7`.
+   * Especifique os recursos do documento PDF a serem criptografados chamando o `CertificateEncryptionOptionSpec` método do objeto `setOption` e transmitindo um valor de `CertificateEncryptionOption` lista discriminada que especifica os recursos do documento a serem criptografados. Por exemplo, para criptografar todo o documento PDF, incluindo seus metadados e seus anexos, especifique `CertificateEncryptionOption.ALL`.
+   * Especifique a opção de compatibilidade do Acrobat chamando o `CertificateEncryptionOptionSpec` método do objeto `setCompat` e transmitindo um valor de `CertificateEncryptionCompatibility` lista discriminada que especifique o nível de compatibilidade do Acrobat. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Crie um documento PDF criptografado por certificado.
 
@@ -364,13 +366,13 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (Ja
 1. Salve o documento PDF criptografado como um arquivo PDF.
 
    * Crie um `java.io.File` objeto e verifique se a extensão do nome do arquivo é .pdf.
-   * Chame o método do `com.adobe.idp.Document` objeto para copiar o conteúdo do `copyToFile` `com.adobe.idp.Document` objeto para o arquivo. Certifique-se de usar o `com.adobe.idp.Document` objeto retornado pelo `encryptPDFUsingCertificates` método.
+   * Chame o método do `com.adobe.idp.Document` objeto para copiar o conteúdo do `copyToFile` `com.adobe.idp.Document` objeto para o arquivo. Certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `encryptPDFUsingCertificates` método.
 
 **Consulte também:**
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Criptografar um documento PDF com um certificado usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Start rápido (modo SOAP): Criptografar um documento PDF com um certificado usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -419,14 +421,14 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (se
    * Preencha o `BLOB` objeto atribuindo o conteúdo da matriz de bytes ao membro de `BLOB` dados do `MTOM` objeto.
    * Atribua o `BLOB` objeto que armazena o certificado ao membro de `Recipient` dados do `x509Cert` objeto.
    * Crie um `CertificateEncryptionIdentity` objeto que armazene informações de certificado usando seu construtor.
-   * Atribua o `Recipient` objeto que armazena o certificado ao membro de dados do destinatário do `CertificateEncryptionIdentity`objeto.
+   * Atribua o `Recipient` objeto que armazena o certificado ao membro de dados do recipient do `CertificateEncryptionIdentity`objeto.
    * Crie uma `Object` matriz e atribua o `CertificateEncryptionIdentity` objeto ao primeiro elemento da `Object` matriz. Essa `Object` matriz é transmitida como parâmetro para o `encryptPDFUsingCertificates` método.
 
 1. Defina as opções de tempo de execução da criptografia.
 
    * Crie um `CertificateEncryptionOptionSpec` objeto usando seu construtor.
-   * Especifique os recursos do documento PDF a serem criptografados atribuindo um valor de `CertificateEncryptionOption` enumeração ao membro de `CertificateEncryptionOptionSpec` dados do objeto `option` . Para criptografar todo o documento PDF, incluindo seus metadados e seus anexos, atribua `CertificateEncryptionOption.ALL` a esse membro de dados.
-   * Especifique a opção de compatibilidade do Acrobat atribuindo um valor de `CertificateEncryptionCompatibility` enumeração ao membro de `CertificateEncryptionOptionSpec` dados do `compat` objeto. Por exemplo, atribua `CertificateEncryptionCompatibility.ACRO_7` a esse membro de dados.
+   * Especifique os recursos do documento PDF a serem criptografados atribuindo um valor de `CertificateEncryptionOption` lista discriminada ao membro de `CertificateEncryptionOptionSpec` dados do `option` objeto. Para criptografar todo o documento PDF, incluindo seus metadados e seus anexos, atribua `CertificateEncryptionOption.ALL` a esse membro de dados.
+   * Especifique a opção de compatibilidade do Acrobat atribuindo um valor de `CertificateEncryptionCompatibility` lista discriminada ao membro de `CertificateEncryptionOptionSpec` dados do `compat` objeto. Por exemplo, atribua `CertificateEncryptionCompatibility.ACRO_7` a esse membro de dados.
 
 1. Crie um documento PDF criptografado por certificado.
 
@@ -454,7 +456,7 @@ Criptografe um documento PDF com um certificado usando a API de criptografia (se
 
 ## Removendo criptografia baseada em certificado {#removing-certificate-based-encryption}
 
-A criptografia baseada em certificados pode ser removida de um documento PDF para que os usuários possam abrir o documento PDF no Adobe Reader ou Acrobat. Para remover a criptografia de um documento PDF criptografado com um certificado, uma chave pública deve ser referenciada. Depois que a criptografia é removida de um documento PDF, ela não é mais segura.
+A criptografia baseada em certificado pode ser removida de um documento PDF para que os usuários possam abrir o documento PDF no Adobe Reader ou Acrobat. Para remover a criptografia de um documento PDF criptografado com um certificado, uma chave pública deve ser referenciada. Depois que a criptografia é removida de um documento PDF, ela não é mais segura.
 
 >[!NOTE]
 >
@@ -478,7 +480,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-encrypc-client.jar
+* adobe-encryption-client.jar
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 
@@ -492,7 +494,7 @@ Para executar programaticamente uma operação do serviço de criptografia, é n
 
 **Remover criptografia**
 
-Para remover a criptografia baseada em certificado de um documento PDF criptografado, é necessário um documento PDF criptografado e a chave privada que corresponda à chave usada para criptografar o documento PDF. O valor alias da chave privada é especificado ao remover a criptografia baseada em certificado de um documento PDF criptografado. Para obter informações sobre a chave pública, consulte [Criptografar documentos PDF com certificados](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).
+Para remover a criptografia baseada em certificado de um documento PDF criptografado, é necessário um documento PDF criptografado e uma chave privada que corresponda à chave usada para criptografar o documento PDF. O valor alias da chave privada é especificado ao remover a criptografia baseada em certificado de um documento PDF criptografado. Para obter informações sobre a chave pública, consulte [Criptografar Documentos PDF com certificados](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).
 
 >[!NOTE]
 >
@@ -500,11 +502,11 @@ Para remover a criptografia baseada em certificado de um documento PDF criptogra
 
 **Salvar o documento PDF**
 
-Depois que a criptografia baseada em certificado for removida de um documento PDF criptografado, você poderá salvar o documento PDF como um arquivo PDF. Os usuários podem abrir o documento PDF no Adobe Reader ou Acrobat.
+Depois que a criptografia baseada em certificado for removida de um documento PDF criptografado, você poderá salvar o documento PDF como um arquivo PDF. Os usuários podem abrir o documento PDF no Adobe Reader ou no Acrobat.
 
 **Consulte também:**
 
-[Remover criptografia baseada em certificado usando a API Java](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-java-api)
+[Remova a criptografia baseada em certificado usando a API Java](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-java-api)
 
 [Remover criptografia baseada em certificado usando a API de serviço da Web](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-web-service-api)
 
@@ -512,9 +514,9 @@ Depois que a criptografia baseada em certificado for removida de um documento PD
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[Start rápidos da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
-### Remover criptografia baseada em certificado usando a API Java {#remove-certificate-based-encryption-using-the-java-api}
+### Remova a criptografia baseada em certificado usando a API Java {#remove-certificate-based-encryption-using-the-java-api}
 
 Remova a criptografia baseada em certificado de um documento PDF usando a API de criptografia (Java):
 
@@ -534,7 +536,7 @@ Remova a criptografia baseada em certificado de um documento PDF usando a API de
 
 1. Remova a criptografia.
 
-   Remova a criptografia baseada em certificado do documento PDF, chamando o método do `EncryptionServiceClient` objeto `removePDFCertificateSecurity` e transmitindo os seguintes valores:
+   Remova a criptografia baseada em certificado do documento PDF chamando o método do `EncryptionServiceClient` objeto `removePDFCertificateSecurity` e transmitindo os seguintes valores:
 
    * O `com.adobe.idp.Document` objeto que contém o documento PDF criptografado.
    * Um valor de string que especifica o nome do alias da chave privada que corresponde à chave usada para criptografar o documento PDf.
@@ -543,13 +545,13 @@ Remova a criptografia baseada em certificado de um documento PDF usando a API de
 1. Salve o documento PDF.
 
    * Crie um `java.io.File` objeto e verifique se a extensão do arquivo é .pdf.
-   * Chame o método do `com.adobe.idp.Document` objeto para copiar o conteúdo do `copyToFile` `Document` objeto para o arquivo. Certifique-se de usar o `com.adobe.idp.Document` objeto retornado pelo `removePDFCredentialSecurity` método.
+   * Chame o método do `com.adobe.idp.Document` objeto para copiar o conteúdo do `copyToFile` `Document` objeto para o arquivo. Certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `removePDFCredentialSecurity` método.
 
 **Consulte também:**
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Remoção da criptografia baseada em certificado usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[Start rápido (modo SOAP): Remoção da criptografia baseada em certificado usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -599,7 +601,7 @@ Remova a criptografia baseada em certificado usando a API de criptografia (servi
 1. Salve o documento PDF.
 
    * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF não protegido.
-   * Crie uma matriz de bytes que armazene o conteúdo do `BLOB` objeto retornado pelo `removePDFPasswordSecurity` método. Preencha a matriz de bytes obtendo o valor do membro de `BLOB` dados do `MTOM` objeto.
+   * Crie uma matriz de bytes que armazene o conteúdo do `BLOB` objeto que foi retornado pelo `removePDFPasswordSecurity` método. Preencha a matriz de bytes obtendo o valor do membro de `BLOB` dados do `MTOM` objeto.
    * Crie um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
    * Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método do `System.IO.BinaryWriter` objeto `Write` e transmitindo a matriz de bytes.
 
@@ -637,7 +639,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-encrypc-client.jar
+* adobe-encryption-client.jar
 * adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
 * jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
 
@@ -647,15 +649,15 @@ Para executar programaticamente uma operação do serviço de criptografia, é n
 
 **Obter o documento PDF criptografado**
 
-Você deve obter um documento PDF criptografado para remover a criptografia baseada em senha. Se você tentar remover a criptografia de um documento PDF que não está criptografado, uma exceção será lançada.
+É necessário obter um documento PDF criptografado para remover a criptografia baseada em senha. Se você tentar remover a criptografia de um documento PDF que não está criptografado, uma exceção será lançada.
 
 **Remover a senha**
 
-Para remover a criptografia com base em senha de um documento PDF criptografado, é necessário um documento PDF criptografado e um valor de senha mestre usado para remover a criptografia do documento PDF. A senha usada para abrir um documento PDF criptografado por senha não pode ser usada para remover a criptografia. Uma senha mestre é especificada quando o documento PDF é criptografado com uma senha. (Consulte [Criptografar documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Para remover a criptografia com base em senha de um documento PDF criptografado, é necessário um documento PDF criptografado e um valor de senha mestre usado para remover a criptografia do documento PDF. A senha usada para abrir um documento PDF criptografado por senha não pode ser usada para remover a criptografia. Uma senha mestre é especificada quando o documento PDF é criptografado com uma senha. (Consulte [Criptografar Documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 **Salvar o documento PDF**
 
-Depois que o serviço de criptografia remover a criptografia com base em senha de um documento PDF, é possível salvar o documento PDF como um arquivo PDF. Os usuários podem abrir o documento PDF no Adobe Reader ou Acrobat sem especificar uma senha.
+Depois que o serviço de criptografia remover a criptografia baseada em senha de um documento PDF, você poderá salvar o documento PDF como um arquivo PDF. Os usuários podem abrir o documento PDF no Adobe Reader ou Acrobat sem especificar uma senha.
 
 **Consulte também:**
 
@@ -663,9 +665,9 @@ Depois que o serviço de criptografia remover a criptografia com base em senha d
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[Start rápidos da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
-[Como criptografar documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
+[Criptografar Documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
 ### Remova a criptografia baseada em senha usando a API Java {#remove-password-based-encryption-using-the-java-api}
 
@@ -696,11 +698,11 @@ Remova a criptografia baseada em senha de um documento PDF usando a API de cript
 1. Salve o documento PDF.
 
    * Crie um `java.io.File` objeto e verifique se a extensão do nome do arquivo é .pdf.
-   * Chame o método do `com.adobe.idp.Document` objeto para copiar o conteúdo do `copyToFile` `Document` objeto para o arquivo. Certifique-se de usar o `Document` objeto retornado pelo `removePDFPasswordSecurity` método.
+   * Chame o método do `com.adobe.idp.Document` objeto para copiar o conteúdo do `copyToFile` `Document` objeto para o arquivo. Certifique-se de usar o `Document` objeto que foi retornado pelo `removePDFPasswordSecurity` método.
 
 **Consulte também:**
 
-[Início rápido (modo SOAP): Remoção da criptografia baseada em senha usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Start rápido (modo SOAP): Remoção da criptografia baseada em senha usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
 ### Remover criptografia baseada em senha usando a API de serviço da Web {#remove-password-based-encryption-using-the-web-service-api}
 
@@ -746,7 +748,7 @@ Remova a criptografia baseada em senha usando a API de criptografia (serviço da
 1. Salve o documento PDF.
 
    * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF não protegido.
-   * Crie uma matriz de bytes que armazene o conteúdo do `BLOB` objeto retornado pelo `removePDFPasswordSecurity` método. Preencha a matriz de bytes obtendo o valor do membro de `BLOB` dados do `MTOM` objeto.
+   * Crie uma matriz de bytes que armazene o conteúdo do `BLOB` objeto que foi retornado pelo `removePDFPasswordSecurity` método. Preencha a matriz de bytes obtendo o valor do membro de `BLOB` dados do `MTOM` objeto.
    * Crie um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
    * Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método do `System.IO.BinaryWriter` objeto `Write` e transmitindo a matriz de bytes.
 
@@ -756,7 +758,7 @@ Remova a criptografia baseada em senha usando a API de criptografia (serviço da
 
 [Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Desbloquear documentos PDF criptografados {#unlocking-encrypted-pdf-documents}
+## Desbloquear Documentos PDF criptografados {#unlocking-encrypted-pdf-documents}
 
 Um documento PDF criptografado por senha ou certificado deve ser desbloqueado antes que outra operação do AEM Forms possa ser executada nele. Se você tentar executar uma operação em um documento PDF criptografado, gerará uma exceção. Depois de desbloquear um documento PDF criptografado, é possível executar uma ou mais operações nele. Essas operações podem pertencer a outros serviços, como o Serviço de extensões do Acrobat Reader DC.
 
@@ -771,7 +773,7 @@ Para desbloquear um documento PDF criptografado, execute as seguintes etapas:
 1. Incluir arquivos de projeto.
 1. Crie um cliente de serviço de criptografia.
 1. Obtenha o documento PDF criptografado.
-1. Desbloqueie o documento.
+1. Destrave o documento.
 1. Execute uma operação do AEM Forms.
 
 **Incluir arquivos de projeto**
@@ -782,7 +784,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-encrypc-client.jar
+* adobe-encryption-client.jar
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 
@@ -792,11 +794,11 @@ Para executar programaticamente uma operação do serviço de criptografia, é n
 
 **Obter o documento PDF criptografado**
 
-É necessário obter um documento PDF criptografado para desbloqueá-lo. Se você tentar desbloquear um documento PDF que não esteja criptografado, uma exceção será lançada.
+É necessário obter um documento PDF criptografado para desbloqueá-lo. Se você tentar desbloquear um documento PDF que não está criptografado, uma exceção será lançada.
 
-**Desbloquear o documento**
+**Destrave o documento**
 
-Para desbloquear um documento PDF criptografado por senha, é necessário um documento PDF criptografado e um valor de senha usado para abrir um documento PDF criptografado por senha. Esse valor é especificado ao criptografar o documento PDF com uma senha. (Consulte [Criptografar documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Para desbloquear um documento PDF criptografado por senha, é necessário um documento PDF criptografado e um valor de senha usado para abrir um documento PDF criptografado por senha. Esse valor é especificado ao criptografar o documento PDF com uma senha. (Consulte [Criptografar Documentos PDF com uma senha](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 Para desbloquear um documento PDF criptografado por certificado, é necessário um documento PDF criptografado e o valor alias da chave pública que corresponde à chave privada usada para criptografar o documento PDF.
 
@@ -814,7 +816,7 @@ Depois que um documento PDF criptografado é desbloqueado, você pode executar o
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[Start rápidos da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 ### Desbloquear um documento PDF criptografado usando a API Java {#unlock-an-encrypted-pdf-document-using-the-java-api}
 
@@ -834,15 +836,15 @@ Desbloqueie um documento PDF criptografado usando a API de criptografia (Java):
    * Crie um `java.io.FileInputStream` objeto que represente o documento PDF criptografado usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF criptografado.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
 
-1. Desbloqueie o documento.
+1. Destrave o documento.
 
-   Desbloqueie um documento PDF criptografado chamando o `EncryptionServiceClient` objeto `unlockPDFUsingPassword` ou o `unlockPDFUsingCredential` método.
+   Desbloqueie um documento PDF criptografado chamando o método `EncryptionServiceClient` do objeto `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` .
 
    Para desbloquear um documento PDF criptografado com uma senha, chame o `unlockPDFUsingPassword` método e passe os seguintes valores:
 
    * Um `com.adobe.idp.Document` objeto que contém o documento PDF criptografado por senha.
    * Um valor de string que especifica o valor de senha usado para abrir um documento PDF criptografado por senha. Esse valor é especificado ao criptografar o documento PDF com uma senha.
-   Para desbloquear um documento PDF criptografado com um certificado, chame o `unlockPDFUsingCredential` método e passe os seguintes valores:
+   Para desbloquear um documento PDF criptografado com um certificado, chame o `unlockPDFUsingCredential` método e transmita os seguintes valores:
 
    * Um `com.adobe.idp.Document` objeto que contém o documento PDF criptografado por certificado.
    * Um valor de string que especifica o nome do alias da chave pública que corresponde à chave privada usada para criptografar o documento PDF.
@@ -850,15 +852,15 @@ Desbloqueie um documento PDF criptografado usando a API de criptografia (Java):
 
 1. Execute uma operação do AEM Forms.
 
-   Execute uma operação do AEM Forms no documento PDF desbloqueado para atender às suas necessidades comerciais. Por exemplo, supondo que você deseja aplicar direitos de uso a um documento PDF desbloqueado, passe o `com.adobe.idp.Document` objeto que foi retornado pelos métodos `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` para o método do `ReaderExtensionsServiceClient` objeto `applyUsageRights` .
+   Execute uma operação do AEM Forms no documento PDF desbloqueado para atender às suas necessidades comerciais. Por exemplo, assumindo que você deseja aplicar direitos de uso a um documento PDF desbloqueado, passe o `com.adobe.idp.Document` objeto que foi retornado pelos métodos `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` para o `ReaderExtensionsServiceClient` método do `applyUsageRights` objeto.
 
 **Consulte também:**
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Desbloquear um documento PDF criptografado usando a API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) Java (modo SOAP)
+[Start rápido (modo SOAP): Desbloquear um documento PDF criptografado usando a API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) Java (modo SOAP)
 
-[Aplicar direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
+[Aplicar direitos de uso a Documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -897,15 +899,15 @@ Desbloqueie um documento PDF criptografado usando a API de criptografia (serviç
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
    * Preencha o `BLOB` objeto atribuindo o conteúdo da matriz de bytes ao membro de `BLOB` dados do `MTOM` objeto.
 
-1. Desbloqueie o documento.
+1. Destrave o documento.
 
-   Desbloqueie um documento PDF criptografado chamando o `EncryptionServiceClient` objeto `unlockPDFUsingPassword` ou o `unlockPDFUsingCredential` método.
+   Desbloqueie um documento PDF criptografado chamando o método `EncryptionServiceClient` do objeto `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` .
 
    Para desbloquear um documento PDF criptografado com uma senha, chame o `unlockPDFUsingPassword` método e passe os seguintes valores:
 
    * Um `BLOB` objeto que contém o documento PDF criptografado por senha.
    * Um valor de string que especifica o valor de senha usado para abrir um documento PDF criptografado por senha. Esse valor é especificado ao criptografar o documento PDF com uma senha.
-   Para desbloquear um documento PDF criptografado com um certificado, chame o `unlockPDFUsingCredential` método e passe os seguintes valores:
+   Para desbloquear um documento PDF criptografado com um certificado, chame o `unlockPDFUsingCredential` método e transmita os seguintes valores:
 
    * Um `BLOB` objeto que contém o documento PDF criptografado por certificado.
    * Um valor de string que especifica o nome do alias da chave pública que corresponde à chave privada usada para criptografar o documento PDf.
@@ -913,7 +915,7 @@ Desbloqueie um documento PDF criptografado usando a API de criptografia (serviç
 
 1. Execute uma operação do AEM Forms.
 
-   Execute uma operação do AEM Forms no documento PDF desbloqueado para atender às suas necessidades comerciais. Por exemplo, supondo que você deseja aplicar direitos de uso ao documento PDF desbloqueado, passe o `BLOB` objeto que foi retornado pelos métodos `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` para o `ReaderExtensionsServiceClient` método do `applyUsageRights` objeto.
+   Execute uma operação do AEM Forms no documento PDF desbloqueado para atender às suas necessidades comerciais. Por exemplo, assumindo que você deseja aplicar direitos de uso ao documento PDF desbloqueado, passe o `BLOB` objeto que foi retornado pelos métodos `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` para o `ReaderExtensionsServiceClient` método do `applyUsageRights` objeto.
 
 **Consulte também:**
 
@@ -955,7 +957,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-encrypc-client.jar
+* adobe-encryption-client.jar
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 
@@ -965,7 +967,7 @@ Para executar programaticamente uma operação do serviço de criptografia, é n
 
 **Obter o documento PDF criptografado**
 
-É necessário obter um documento PDF para determinar o tipo de criptografia que está protegendo.
+É necessário obter um documento PDF para determinar o tipo de criptografia que o está protegendo.
 
 **Determine o tipo de criptografia**
 
@@ -981,9 +983,9 @@ Você pode determinar o tipo de criptografia que está protegendo um documento P
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[Start rápidos da API do serviço de criptografia](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
-[Protegendo documentos com políticas](/help/forms/developing/protecting-documents-policies.md#protecting-documents-with-policies)
+[Protegendo Documentos com políticas](/help/forms/developing/protecting-documents-policies.md#protecting-documents-with-policies)
 
 ### Determine o tipo de criptografia usando a API Java {#determine-the-encryption-type-using-the-java-api}
 
@@ -1012,7 +1014,7 @@ Determine o tipo de criptografia que está protegendo um documento PDF usando a 
 
 [Resumo das etapas](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Determinar o tipo de criptografia usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Start rápido (modo SOAP): Determinar o tipo de criptografia usando a API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 [Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1053,7 +1055,7 @@ Determine o tipo de criptografia que está protegendo um documento PDF usando a 
 
 1. Determine o tipo de criptografia.
 
-   * Chame o `EncryptionServiceClient` método do `getPDFEncryption` objeto e passe o `BLOB` objeto que contém o documento PDF. Esse método retorna um `EncryptionTypeResult` objeto.
+   * Chame o `EncryptionServiceClient` método do objeto `getPDFEncryption` e passe o `BLOB` objeto que contém o documento PDF. Esse método retorna um `EncryptionTypeResult` objeto.
    * Obtenha o valor do método de `EncryptionTypeResult` dados do `encryptionType` objeto. Por exemplo, se o documento PDF estiver protegido com criptografia baseada em senha, o valor desse membro de dados será `EncryptionType.PASSWORD`.
 
 **Consulte também:**
