@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -71,7 +71,9 @@ Além disso, se você selecionou um schema XML ou modelo de formulário XDP como
 1. Na caixa de diálogo Criação de fragmentos, especifique as seguintes informações:
 
    * **Nome**: Nome do fragmento. O valor padrão é o nome do elemento do painel. É um campo obrigatório.
-      ***Observação **: Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.*
+      >[!NOTE]
+      >
+      >Certifique-se de especificar um nome exclusivo para o fragmento. Se já existir outro fragmento com o mesmo nome, o fragmento não será criado.
 
    * **Título**: Título do fragmento. O valor padrão é o título do painel.
 
