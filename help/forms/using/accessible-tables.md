@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -33,7 +33,9 @@ Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para mar
 
 As tabelas marcadas como *complexasTable* seguem a execução HTML nativa e fornecem melhor suporte de acessibilidade para determinados leitores de tela.  Para criar uma extensão de linha, selecione células consecutivas de uma tabela na mesma coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Unir células]**.
 
-*****Observação: A criação de uma extensão de linha funciona somente para células na extremidade esquerda.*
+>[!NOTE]
+>
+>A criação de uma extensão de linha funciona somente para células na extremidade esquerda.
 
 Para marcar uma linha como cabeçalho de linha, selecione todas as células na linha, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Marcar cabeçalho]**.
 
