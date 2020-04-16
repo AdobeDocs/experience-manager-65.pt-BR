@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,15 +28,17 @@ O serviço Endpoint Registry fornece a capacidade de gerenciar programaticamente
 * (Obsoleto para formulários do AEM) Solução remota
 * Gerenciador de Tarefas
 
-   ***Observação **: SOAP, EJB e (obsoleto para formulários AEM no JEE) Os pontos finais remotos são criados automaticamente para cada serviço ativado. Os pontos de extremidade SOAP e EJB habilitam SOAP e EJB para todas as operações de serviço.*
+>[!NOTE]
+>
+>SOAP, EJB e (obsoleto para formulários AEM no JEE) Os pontos finais remotos são criados automaticamente para cada serviço ativado. Os pontos de extremidade SOAP e EJB habilitam SOAP e EJB para todas as operações de serviço.
 
-   Um terminal Remoting permite que clientes Flex chamem operações no serviço AEM Forms ao qual o terminal é adicionado. Um destino Flex com o mesmo nome do ponto de extremidade é criado e os clientes Flex podem criar RemoteObjects que apontam para esse destino para chamar operações no serviço relevante.
+Um terminal Remoting permite que clientes Flex chamem operações no serviço AEM Forms ao qual o terminal é adicionado. Um destino Flex com o mesmo nome do ponto de extremidade é criado e os clientes Flex podem criar RemoteObjects que apontam para esse destino para chamar operações no serviço relevante.
 
-   Os pontos de extremidade Email, Gerenciador de Tarefas e Pasta assistida expõem apenas uma operação específica do serviço. A adição desses pontos finais requer uma segunda etapa de configuração para selecionar um método para chamar, definir parâmetros de configuração e especificar mapeamentos de parâmetros de entrada e saída.
+Os pontos de extremidade Email, Gerenciador de Tarefas e Pasta assistida expõem apenas uma operação específica do serviço. A adição desses pontos finais requer uma segunda etapa de configuração para selecionar um método para chamar, definir parâmetros de configuração e especificar mapeamentos de parâmetros de entrada e saída.
 
-   Você pode organizar pontos de extremidade do TaskManager em grupos chamados *categoria*. Essas categorias são então expostas ao Workspace por meio do TaskManager, com os usuários finais visualizando os pontos finais do TaskManager à medida que são categorizados. No Workspace, os usuários finais visualizam essas categorias no painel de navegação. Os pontos de extremidade dentro de cada categoria são exibidos como cartões de processo na página Processos do Start no Workspace.
+Você pode organizar pontos de extremidade do TaskManager em grupos chamados *categoria*. Essas categorias são então expostas ao Workspace por meio do TaskManager, com os usuários finais visualizando os pontos finais do TaskManager à medida que são categorizados. No Workspace, os usuários finais visualizam essas categorias no painel de navegação. Os pontos de extremidade dentro de cada categoria são exibidos como cartões de processo na página Processos do Start no Workspace.
 
-   É possível realizar essas tarefas usando o serviço Endpoint Registry:
+É possível realizar essas tarefas usando o serviço Endpoint Registry:
 
 * Adicione pontos de extremidade EJB. (Consulte [Adicionando pontos finais](programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
 * Adicionar pontos de extremidade SOAP. (Consulte [Adicionando Pontos de Extremidade](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
@@ -186,7 +188,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 Esses arquivos JAR são necessários para criar um terminal SOAP. No entanto, é necessário adicionar arquivos JAR se você usar o terminal SOAP para chamar o serviço. Para obter informações sobre arquivos JAR do AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
 
-**Criar um objeto de Cliente EndpointRegistry**
+**Criar um objeto Cliente EndpointRegistry**
 
 Para adicionar programaticamente um terminal SOAP a um serviço, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -296,7 +298,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
 
-**Criar um objeto de Cliente EndpointRegistry**
+**Criar um objeto Cliente EndpointRegistry**
 
 Para adicionar programaticamente um ponto de extremidade de Pasta assistida, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -527,7 +529,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
 
-**Criar um objeto de Cliente EndpointRegistry**
+**Criar um objeto Cliente EndpointRegistry**
 
 Antes de poder adicionar programaticamente um terminal de E-mail, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -882,7 +884,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
 
-**Criar um objeto de Cliente EndpointRegistry**
+**Criar um objeto Cliente EndpointRegistry**
 
 Antes de poder adicionar programaticamente um terminal do TaskManager, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -1003,7 +1005,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
 
-**Criar um objeto de Cliente EndpointRegistry**
+**Criar um objeto Cliente EndpointRegistry**
 
 Para modificar programaticamente um terminal, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -1105,7 +1107,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
 
-**Criar um objeto Cliente EndpointRegistry**
+**Criar um objeto de Cliente EndpointRegistry**
 
 Para remover programaticamente um terminal, é necessário criar um `EndpointRegistryClient` objeto.
 
@@ -1145,7 +1147,7 @@ Remova um terminal usando a API Java:
    * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) tem acesso, invocando o `EndpointRegistryClient` método do `getEndpoints` objeto e transmitindo um `PagingFilter` objeto que atua como filtro. Você pode passar `(PagingFilter)null` para retornar todos os pontos de extremidade. Esse método retorna um `java.util.List` objeto no qual cada elemento é um `Endpoint` objeto.
    * Iterar pelo `java.util.List` objeto para determinar se ele tem pontos de extremidade. Se houver pontos de extremidade, cada elemento será uma `EndPoint` instância.
    * Determine o serviço que corresponde a um ponto final chamando o método do `EndPoint` objeto `getServiceId` . Esse método retorna um valor de string que especifica o nome do serviço.
-   * Determine o tipo de terminal chamando o `EndPoint` método do `getConnectorId` objeto. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o endpoint for um endpoint EJB, esse método retornará `EJB`.
+   * Determine o tipo de endpoint chamando o `EndPoint` método do `getConnectorId` objeto. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o endpoint for um endpoint EJB, esse método retornará `EJB`.
 
 1. Remova o terminal.
 
