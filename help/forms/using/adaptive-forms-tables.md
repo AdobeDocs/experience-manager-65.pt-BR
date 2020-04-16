@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12d35bf8355d3069071523427a7794b88c09b13
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -46,7 +46,7 @@ Por exemplo, a primeira linha de corpo na tabela a seguir inclui caixa de texto,
 
 ![tipos de célula de linha](assets/row-cell-types.png)
 
-É possível unir duas ou mais células de corpo selecionando as células que deseja unir, clicando com o botão direito do mouse e selecionando **Unir**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse nela e selecionando **Dividir células**.
+É possível unir duas ou mais células de corpo selecionando as células que deseja mesclar, clicando com o botão direito do mouse e selecionando **Mesclar**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse nela e selecionando **Dividir células**.
 
 ### Adicionar, excluir, mover linhas e colunas {#add-delete-move-rows-and-columns}
 
@@ -76,7 +76,7 @@ Você pode adicionar uma descrição da tabela para explicar como as informaçõ
 
 ### Classificar colunas em uma tabela {#sortcolumnstable}
 
-É possível classificar dados com base em qualquer coluna em uma tabela no formulário adaptável. Os valores na coluna podem ser classificados em ordem crescente ou decrescente.
+É possível classificar os dados com base em qualquer coluna em uma tabela no formulário adaptável. Os valores na coluna podem ser classificados em ordem crescente ou decrescente.
 
 A classificação pode ser aplicada às colunas da tabela que contêm:
 
@@ -94,7 +94,7 @@ Para ativar a classificação:
 
    ![Ativar classificação](assets/enable_sorting_new.png)
 
-1. Alterne para o modo de **Visualização** para exibir a saída. A tabela é classificada automaticamente com base na primeira coluna da tabela.
+1. Alterne para o modo de **Pré-visualização** para visualização da saída. A tabela é classificada automaticamente com base na primeira coluna da tabela.
 1. Clique no cabeçalho da coluna para classificar os valores com base na coluna.
 
    Um cabeçalho de coluna com uma seta para cima representa que a tabela é classificada com base nessa coluna. Além disso, os valores na coluna são exibidos na ordem crescente.
@@ -103,13 +103,13 @@ Para ativar a classificação:
 
    Da mesma forma, um cabeçalho de coluna com uma seta para baixo representa que os valores na coluna são exibidos na ordem decrescente.
 
-   Você também pode fazer alterações na tabela no modo **Visualização** e clicar no cabeçalho da coluna novamente para classificar os valores da coluna.
+   Você também pode fazer alterações na tabela no modo de **Pré-visualização** e clicar no cabeçalho da coluna novamente para classificar os valores da coluna.
 
 ## Configurar estilo de tabela {#configure}
 
 É possível definir o estilo de uma tabela usando o modo Estilo na barra de ferramentas da página. Execute as seguintes etapas para alternar para o modo de estilo e editar o estilo da tabela
 
-1. Na barra de ferramentas da página, antes de Visualizar, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra de ferramentas da página, antes da Pré-visualização, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
 
 1. Na barra lateral, selecione a tabela e toque no botão editar, botão ![editar, botão](assets/edit-button.png).
 É possível ver as propriedades de estilização na barra lateral.
@@ -138,29 +138,29 @@ No tempo de execução, você verá **+** e *-* botões para adicionar ou exclui
 
 ## Expressões em uma tabela {#expressions-in-a-table}
 
-Tabelas em formulários adaptativos permitem gravar expressões em JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou linha, adicionar todos os números e mostrar o total em uma célula, ativar ou desativar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
+Tabelas em formulários adaptativos permitem que você grave expressões no JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou linha, adicionar todos os números e mostrar o total em uma célula, ativar ou desativar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
 
-Embora tabelas e linhas suportem somente expressões de visibilidade para controlar sua visibilidade com base no valor retornado por uma expressão, as células suportam as seguintes expressões:
+Embora tabelas e linhas suportem apenas expressões de visibilidade para controlar sua visibilidade com base no valor retornado por uma expressão, as células suportam as seguintes expressões:
 
-* **** Script de inicialização: para executar uma ação na inicialização de um campo.
-* **** Script de confirmação de valor: para alterar os componentes de um formulário após a alteração do valor de um campo.
+* **Script de inicialização:** para executar uma ação na inicialização de um campo.
+* **Script de confirmação de valor:** para alterar os componentes de um formulário após a alteração do valor de um campo.
 
 >[!NOTE]
 >
 >Se o script XFA change/exit também for aplicado ao mesmo campo, o script XFA change/exit será executado antes do script Value Commit.
 
 * **Calcular expressões**: para calcular automaticamente o valor de um campo.
-* **Expressões** de validação: para validar um campo.
-* **Expressões** de acesso: para ativar/desativar um campo.
-* **Expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
+* **expressões** de validação: para validar um campo.
+* **expressões** de acesso: para ativar/desativar um campo.
+* **expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
 
-A expressão de visibilidade para uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente Editar. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
+A expressão de visibilidade de uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente Editar. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
 
 Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptáveis.
 
 ## Layouts móveis {#mobile-layouts}
 
-Tabelas em formulários adaptáveis oferecem experiência inigualável em dispositivos móveis devido aos layouts fluidos e responsivos. O AEM Forms oferece dois tipos de layouts móveis para tabelas - Cabeçalhos à esquerda e Colaboráveis.
+Tabelas em formulários adaptáveis oferecem experiência inigualável em dispositivos móveis devido aos layouts fluidos e responsivos. O AEM Forms oferta dois tipos de layouts móveis para tabelas - Cabeçalhos à esquerda e Colaboráveis.
 
 Você pode configurar um layout móvel para uma tabela na guia Estilo da caixa de diálogo Editar componente para uma tabela.
 
@@ -168,19 +168,21 @@ Você pode configurar um layout móvel para uma tabela na guia Estilo da caixa d
 
 No layout Cabeçalhos à esquerda, o cabeçalho na tabela é transposto à esquerda com apenas uma célula aparecendo em um cabeçalho. Cada linha neste layout aparece como uma seção distinta. As imagens a seguir comparam uma tabela em um desktop com a tabela em um dispositivo móvel.
 
-![vista de desktop](assets/desktopview_new.png)
+![visualização para desktop](assets/desktopview_new.png)
 
-Exibição de área de trabalho de uma tabela com cabeçalho no layout esquerdo
+visualização de desktop de uma tabela com cabeçalho no layout esquerdo
 
 ![Cabeçalhos à esquerda](assets/headersontheleft_new.png)
 
-Exibição móvel de uma tabela com cabeçalho no layout esquerdo
+visualização móvel de uma tabela com cabeçalho no layout esquerdo
 
 ### Layout de colunas flexível {#collapsible-columns-layout}
 
-No layout de coluna flexível, as colunas na tabela são recolhidas para mostrar uma ou duas colunas, dependendo do tamanho do dispositivo, enquanto outras colunas são recolhidas. Você pode clicar no ícone recolher/expandir para exibir outras colunas na tabela.
+No layout de coluna flexível, as colunas na tabela são recolhidas para mostrar uma ou duas colunas, dependendo do tamanho do dispositivo, enquanto outras colunas são recolhidas. Você pode clicar no ícone recolher/expandir para visualização de outras colunas na tabela.
 
-**Observação**: Embora o layout de coluna flexível seja otimizado para dispositivos móveis, ele também funcionará na área de trabalho, se a largura disponível não for suficiente para mostrar todas as colunas em uma tabela.
+>[!NOTE]
+>
+>Embora o layout de coluna flexível seja otimizado para dispositivos móveis, ele também funcionará na área de trabalho, se a largura disponível não for suficiente para mostrar todas as colunas em uma tabela.
 
 As imagens a seguir comparam a aparência de uma tabela em um dispositivo com colunas recolhidas e expandidas.
 
@@ -268,7 +270,7 @@ O arquivo XML que contém dados no seguinte formato:
 
 No XML de amostra, os dados de uma linha são definidos pelas `<Row1>` tags, que é o nome do elemento da linha na tabela. Na `<Row1>` tag , os dados de cada célula são definidos dentro da tag para seu nome de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
 
-Para unir esses dados à tabela no tempo de execução, é necessário apontar o formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *https://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados estiver salvo em *C:/myTransactions/bankSummary.xml*, você poderá exibir a tabela com dados no seguinte URL:
+Para unir esses dados à tabela no tempo de execução, é necessário apontar o formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *https://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados estiver salvo em *C:/myTransactions/bankSummary.xml*, você pode visualização a tabela com dados no seguinte URL:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
