@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -51,9 +51,11 @@ Os seguintes Start rápidos estão disponíveis para o serviço de Formulários:
 
 A lógica do aplicativo que usa a API de serviço do Forms é implementada como servlets Java. As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
 
-* **Observação**: Os start rápidos localizados em Programação com v são baseados no servidor de formulários que está sendo usado por outro sistema operacional, como o Unix, e substituem caminhos específicos de janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
+>[!NOTE]
+>
+>Os start rápidos localizados em Programação com v são baseados no servidor de formulários que está sendo usado por outro sistema operacional, como o Unix, e substituem caminhos específicos de janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
-   **Dica**: O site do Adobe Developer contém o seguinte artigo que discute como criar um aplicativo ASP.NET que chama o serviço Forms e renderiza formulários. Consulte [Criação de aplicativos](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET de renderização de formulário.
+**Dica**: O site do Adobe Developer contém o seguinte artigo que discute como criar um aplicativo ASP.NET que chama o serviço Forms e renderiza formulários. Consulte [Criação de aplicativos](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET de renderização de formulário.
 
 ## Start rápido (modo SOAP): Como renderizar um formulário PDF interativo usando a API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
