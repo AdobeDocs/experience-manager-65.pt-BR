@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
 
 ---
 
 
 # Recursos obsoletos e removidos {#deprecated-and-removed-features}
 
-A Adobe avalia constantemente os recursos do produto, para reinventar ou substituir os recursos mais antigos por alternativas mais modernas para melhorar o valor geral do cliente, sempre considerando cuidadosamente a compatibilidade com versões anteriores.
+A Adobe avalia as funcionalidades do produto constantemente, para reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor do cliente em geral, sempre sob considerações cuidadosas de compatibilidade com versões anteriores.
 
 As seguintes regras se aplicam para comunicar a remoção/substituição iminente das funcionalidades do AEM:
 
@@ -42,7 +42,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
    <td>Recomenda-se que os clientes alternem para os novos recursos de integração da Creative Cloud, incluindo o Adobe Asset Link ou o aplicativo de desktop do AEM. Revise as <a href="/help/assets/aem-cc-integration-best-practices.md">Práticas recomendadas de integração do AEM e Creative Cloud</a> para obter mais detalhes.</td>
   </tr>
   <tr>
-   <td>Assets</td>
+   <td>Ativos</td>
    <td>
     <ol>
      <li>O AssetDownloadServlet é desabilitado por padrão para as instâncias de publicação. Para obter mais detalhes, consulte <a href="/help/sites-administering/security-checklist.md">Lista de verificação de segurança do AEM</a>.</li>
@@ -134,7 +134,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
   <tr>
    <td>Desenvolvedores</td>
    <td><p>Biblioteca do cliente do Lawnchair</p> <p>A Adobe não planeja manter e atualizar a biblioteca do cliente do Lawnchair que é enviada como parte da distribuição (Quickstart)</p> </td>
-   <td>A Adobe recomenda que os clientes que ainda precisam do LawnPresident para seus códigos adicionem-no à base de códigos do projeto.</td>
+   <td>A Adobe recomenda que os clientes que ainda precisam do Lawndish para obter seu código adicionem-no à base de códigos do projeto.</td>
   </tr>
   <tr>
    <td>Desenvolvedores</td>
@@ -151,24 +151,30 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
    <td><p>Editor de caixa de diálogo da interface do usuário clássica no CRXDE lite</p> <p>A Adobe não planeja aprimorar o editor de caixa de diálogo da interface do usuário clássica que é enviado como parte da distribuição (Quickstart)</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Forms</td>
+   <td><p>A integração do AEM Forms com o AEM Mobile&lt; está obsoleta </p> </td>
+   <td>Nenhuma substituição </td>
+  </tr>
  </tbody>
 </table>
 
 ## Recursos removidos {#removed-features}
 
-Esta seção lista os recursos e recursos que foram removidos do AEM 6.5. As versões anteriores tinham esses recursos marcados como obsoletos.
+Esta seção lista recursos e recursos que foram removidos do AEM 6.5. As versões anteriores tinham esses recursos marcados como obsoletos.
 
 | Área | Recurso | Substituição |
 |--- |--- |--- |
-| Mapa de atividade do Analytics | A versão do Activity Map incluída no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o plug-in [Activity Map fornecido pelo Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Mapa de Atividades do Analytics | A versão do Mapa de Atividades incluída no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o plug-in [Activity Map fornecido pelo Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integrações | A integração do ExactTarget foi removida da distribuição padrão (Início rápido) e não está mais disponível. | Nenhuma substituição |
 | Integrações | A integração da API do Salesforce Force foi removida da distribuição padrão (Quickstart) e agora é um pacote adicional de instalação do PackageShare. | O recurso ainda está disponível. |
 | Forms | O suporte para o serviço Adobe Central Migration Bridge foi removido, uma vez que o produto Adobe Central não é mais compatível. | Nenhuma substituição |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nenhuma substituição |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nenhuma substituição |
+| Forms | A atualização de hop único do LiveCycle ES4 SP1 para o AEM 6.5 Forms no JEE não está disponível | Consulte os caminhos [de atualização](../forms/using/upgrade.md) disponíveis na documentação de atualização do AEM Forms. |
 | Desenvolvedores | Firebug Lite foi removido da distribuição padrão (Quickstart) | Use os consoles de desenvolvedor integrados do navegador |
 | Desenvolvedores | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Nenhuma substituição |
-| Assets | O recurso de descarregamento de Ativos foi removido do AEM 6.5 | Nenhuma substituição |
+| Ativos | O recurso de descarregamento de Ativos foi removido do AEM 6.5 | Nenhuma substituição |
 | Cache | `system/console/slingjsp` for removido não estiver mais disponível no AEM 6.5. | Classes e cache leve são armazenados no pacote Apache Sling Commons FileSystem ClassLoader. Você pode verificar o número do pacote no console da Web do AEM e remover a pasta de cache diretamente do sistema de arquivos (`crx-quickstart/launchpad/felix/bundle<ID>`). |
 
 ## Anúncio prévio da próxima versão {#pre-announcement-for-next-release}
