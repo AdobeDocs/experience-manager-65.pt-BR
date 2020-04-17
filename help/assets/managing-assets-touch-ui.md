@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
 
 ---
 
@@ -306,7 +306,7 @@ Selecione um arquivo ZIP de cada vez, clique em **[!UICONTROL Extrair arquivo]**
 
 Depois que a extração é concluída, o AEM notifica você na área de notificação. Enquanto o AEM extrai o ZIP, você pode voltar ao seu trabalho sem interromper a extração.
 
-![Notificação de extração ZIP](assets/Zip-extraction-notification.png)
+![Notificação de extração de arquivo ZIP](assets/Zip-extraction-notification.png)
 
 Algumas limitações do recurso são:
 
@@ -326,11 +326,9 @@ Para pré-visualização de um ativo, siga estas etapas.
 
    Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta de redefinição de zoom leva você de volta à visualização original.
 
-   ![uploadicon](assets/uploadicon.png)
-
    Toque em **[!UICONTROL Redefinir]** para redefinir a visualização para o tamanho original.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![Redefinir ícone para trazer o usuário de volta à visualização original](assets/chlimage_1-11.png)
 
 **Pré-visualizações usando apenas teclas de teclado**
 
@@ -353,11 +351,11 @@ Consulte também Ativos de mídia dinâmica da [Pré-visualização.](/help/asse
 
 ## Editar propriedades e metadados {#editing-properties}
 
-1. Navegue até o local do ativo cujos metadados você deseja editar.
+1. Navegue até o local do ativo para editar seus metadados.
 
 1. Selecione o ativo e toque/clique em **[!UICONTROL Propriedades]** na barra de ferramentas para visualização das propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![Ação rápida de propriedades na visualização do cartão de ativos](assets/properties_quickaction.png)
 
 1. Na página [!UICONTROL Propriedades] , edite as propriedades de metadados em várias guias. Por exemplo, na guia **[!UICONTROL Básico]** , edite o título, a descrição e assim por diante.
 
@@ -367,13 +365,13 @@ Consulte também Ativos de mídia dinâmica da [Pré-visualização.](/help/asse
 
 1. Para programar uma data/hora específica para a ativação do ativo, use o seletor de datas ao lado do campo **[!UICONTROL No horário]**.
 
-   ![use o seletor de data e hora ou as teclas do teclado no campo Hora ativa para adicionar data e hora para a ativação de ativos](assets/schedule-activation.png)
+   ![Seletor de data e hora ou use as teclas do teclado no campo Hora ativa para adicionar data e hora para a ativação do ativo](assets/schedule-activation.png)
 
    *Figura: Agendar ativação de ativos*
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo Tempo de **[!UICONTROL desativação]** . A data de desativação deve ser posterior à data de ativação de um ativo. Depois do tempo de [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web Ativos ou por meio da API HTTP.
 
-   ![use o seletor de data e hora ou as teclas do teclado no campo Hora de desligar para adicionar data e hora para a desativação do ativo](assets/schedule-deactivation.png)
+   ![Seletor de data e hora ou use teclas do teclado no campo Hora de desligar para adicionar data e hora para a desativação do ativo](assets/schedule-deactivation.png)
 
    *Figura: Agendar desativação de ativos*
 
@@ -385,7 +383,7 @@ Consulte também Ativos de mídia dinâmica da [Pré-visualização.](/help/asse
 
 1. Para fornecer uma classificação ao ativo, toque/clique na guia **[!UICONTROL Avançado]** e, em seguida, toque/clique na estrela na posição apropriada para atribuir a classificação desejada.
 
-   ![classificações](assets/ratings.png)
+   ![Guia Avançado em Propriedades do ativo para atribuir classificação](assets/ratings.png)
 
    A pontuação de classificação atribuída ao ativo é exibida em **[!UICONTROL Suas Classificações]**. A pontuação de classificação média recebida dos usuários que classificaram o ativo é exibida em **[!UICONTROL Classificação]**. Além disso, a análise das pontuações de classificação que contribuem para a pontuação de classificação média é exibida em **[!UICONTROL Análise]** de classificação. Você pode pesquisar ativos com base nas pontuações de classificação médias.
 
@@ -414,7 +412,7 @@ Alguns atributos exclusivos a uma cópia específica de um ativo não são trans
 As outras propriedades e informações de metadados são mantidas. Uma cópia parcial não é criada ao copiar um ativo.
 
 1. Na interface do usuário do Assets, selecione um ou mais ativos e, em seguida, toque/clique no ícone **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** no cartão de ativos.
-   ![copy_icon](assets/copy_icon.png)
+   ![Copiar ícone na barra de ferramentas da interface do usuário do ativo](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -428,7 +426,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
 1. Clique/ toque no ícone **[!UICONTROL Colar]** ativo na barra de ferramentas.
 
-   ![chlimage_1-219](assets/chlimage_1-14.png)Os ativos são copiados para este local.
+   ![Ícone colar em ativos da barra de ferramentas da interface do usuário](assets/chlimage_1-14.png)Os ativos são copiados para esse local.
 
    >[!NOTE]
    >
@@ -439,7 +437,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 1. Navegue até o local do ativo que deseja mover.
 
 1. Selecione o ativo e toque/clique no ícone **[!UICONTROL Mover]** na barra de ferramentas.
-   ![move_icon](assets/move_icon.png)
+   ![Ícone Mover na barra de ferramentas da interface do ativo](assets/move_icon.png)
 
 1. No assistente de Ativos de Movimentação, execute um dos procedimentos a seguir:
 
