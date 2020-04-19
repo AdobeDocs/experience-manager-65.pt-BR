@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -77,15 +77,18 @@ Você pode configurar as seguintes propriedades para uma Pasta assistida.
 
    * publicar, autor
 
-**Observação**: *Se o servidor que hospeda a Pasta monitorada não tiver um dos modos de execução especificados, a Pasta monitorada sempre será ativada independentemente dos modos de execução no servidor.*
+>[!NOTE]
+>
+>Se o servidor que hospeda a Pasta monitorada não tiver um dos modos de execução especificados, a Pasta monitorada sempre será ativada independentemente dos modos de execução no servidor.
 
 * **outputFilePattern (String)**: Padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão nomes como descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes como descrito no padrão de arquivo. [O padrão](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) de arquivo e pasta também pode especificar uma estrutura de diretório para os arquivos de saída. É uma propriedade obrigatória.
 
 * **stageFileExpirationDuration (Long, default -1)**: O número de segundos de espera antes de um arquivo/pasta de entrada que já foi selecionado para processamento deve ser tratado como tendo o tempo limite expirado e marcado como uma falha. Esse mecanismo de expiração só é ativado quando o valor dessa propriedade é um número positivo.
 
-   **Observação:** *Mesmo quando uma entrada é marcada como tendo expirado usando esse mecanismo, ainda pode estar sendo processada em segundo plano, mas apenas levando mais tempo do que o esperado. Se o conteúdo de entrada foi consumido antes do mecanismo de tempo limite ser iniciado, o processamento pode até mesmo continuar a ser concluído mais tarde e a saída ser despejada na pasta de resultados. Se o conteúdo não foi consumido antes do tempo limite, é muito provável que o processamento falhe mais tarde ao tentar consumir o conteúdo, e esse erro também será registrado na pasta de falha da mesma entrada. Por outro lado, se o processamento para a entrada nunca tiver sido ativado devido a um erro intermitente de trabalho/fluxo de trabalho (que é o cenário que o mecanismo de expiração pretende resolver), então, claro, nenhuma destas duas situações ocorrerá. Assim, para quaisquer entradas na pasta de falha que foram marcadas como falhas devido a um tempo limite (procure mensagens do formulário &quot;Arquivo não processado após um tempo significativo, marcando como falha!&quot; no registro de falhas), é aconselhável verificar a pasta de resultados (e também a própria pasta de falhas para outra entrada para a mesma entrada) para verificar se algum dos casos descritos anteriormente ocorreu de fato.*
+>[!NOTE]
+>
+>Mesmo quando uma entrada é marcada como tendo expirado usando esse mecanismo, ainda pode estar sendo processada em segundo plano, mas apenas levando mais tempo do que o esperado. Se o conteúdo de entrada foi consumido antes do mecanismo de tempo limite ser iniciado, o processamento pode até mesmo continuar a ser concluído mais tarde e a saída ser despejada na pasta de resultados. Se o conteúdo não foi consumido antes do tempo limite, é muito provável que o processamento falhe mais tarde ao tentar consumir o conteúdo, e esse erro também será registrado na pasta de falha da mesma entrada. Por outro lado, se o processamento para a entrada nunca tiver sido ativado devido a um erro intermitente de trabalho/fluxo de trabalho (que é o cenário que o mecanismo de expiração pretende resolver), então, claro, nenhuma destas duas situações ocorrerá. Assim, para quaisquer entradas na pasta de falha que foram marcadas como falhas devido a um tempo limite (procure mensagens do formulário &quot;Arquivo não processado após um tempo significativo, marcando como falha!&quot; no registro de falhas), é aconselhável verificar a pasta de resultados (e também a própria pasta de falhas para outra entrada para a mesma entrada) para verificar se algum dos casos descritos anteriormente ocorreu de fato.
 
-* 
 * **deleteExpiredStageFileOnlyWhenThrottled (Booliano, padrão true):** Se o mecanismo de expiração deve ser ativado somente quando a pasta monitorada for limitada. O mecanismo é mais relevante para as pastas monitoradas limitadas, já que um pequeno número de arquivos que permanecem em um estado não processado (devido a falhas intermitentes de trabalho/fluxo de trabalho) tem o potencial de reduzir o processamento para todo o lote quando a limitação está ativada. Se essa propriedade for mantida como true (o padrão), o mecanismo de expiração não será ativado para pastas monitoradas que não são limitadas. Se a propriedade for mantida como falsa, o mecanismo sempre será ativado, desde que a propriedade stageFileExpirationDuration seja um número positivo.
 
 * **pollInterval (Longo)**: O intervalo em segundos para verificar a entrada da Pasta assistida. A menos que a configuração de aceleração esteja ativada, o Intervalo de pesquisa deve ser maior que o tempo para processar um trabalho médio; caso contrário, o sistema poderá ficar sobrecarregado. O valor padrão é 5. Consulte a descrição do Tamanho do lote para obter mais informações. O valor do intervalo de polling deve ser maior ou igual a um.
@@ -177,7 +180,9 @@ Juntamente com as propriedades de configuração da Pasta assistida listadas aci
 1. Faça logon no CRXDE-Lite e navegue até o nó de configuração Pasta assistida.
 1. Adicione um parâmetro de propriedade.&lt;property_name> para o nó de configuração Pasta assistida. O tipo da propriedade só pode ser Booliano, Date, Decimal, Duplo, Long e String. É possível especificar propriedades de valor único e múltiplo.
 
-**Observação:** Se o tipo de dados da propriedade for Duplo, especifique um ponto decimal no valor dessas propriedades. Para todas as propriedades, onde o tipo de dados é Duplo e nenhum ponto decimal é especificado no valor, o tipo é convertido em Longo.
+>[!NOTE]
+>
+>Se o tipo de dados da propriedade for Duplo, especifique um ponto decimal no valor dessas propriedades. Para todas as propriedades, onde o tipo de dados é Duplo e nenhum ponto decimal é especificado no valor, o tipo é convertido em Longo.
 
 Essas propriedades são passadas como um mapa imutável do tipo Map&lt;String, Object> para o código de processamento. O código de processamento pode ser um ECMAScript, Fluxo de trabalho ou um Serviço. Os valores fornecidos para as propriedades estão disponíveis como pares de valores chave no mapa. Chave é o nome da propriedade e o valor é o valor da propriedade. Para obter mais informações sobre parâmetros de configuração personalizados, consulte a seguinte imagem:
 
