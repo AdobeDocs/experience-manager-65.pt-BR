@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -55,7 +55,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Observação**: As configurações recomendadas são para o JDK do Windows 2008 R2 8 Core e do Oracle HotSpot 1.7 (64 bits) e devem ser ampliadas para cima ou para baixo de acordo com a configuração do seu sistema.
+>[!NOTE]
+>
+>As configurações recomendadas são para o JDK do Windows 2008 R2 8 Core e do Oracle HotSpot 1.7 (64 bits) e devem ser ampliadas para cima ou para baixo de acordo com a configuração do seu sistema.
 
 ## Uso de um servidor da Web {#using-a-web-server}
 
@@ -63,7 +65,9 @@ Formulários adaptáveis e formulários HTML5 são renderizados no formato HTML5
 
 Por exemplo, execute as seguintes etapas para ativar a compactação no Apache Web Server 2.0 de 32 bits com JBoss:
 
-***Observação **: As instruções a seguir não se aplicam a nenhum servidor além do Apache Web Server 2.0 de 32 bits. Para obter as etapas específicas de qualquer outro servidor, consulte a documentação do produto correspondente.*
+>[!NOTE]
+>
+>As instruções a seguir não se aplicam a nenhum servidor além do Apache Web Server 2.0 de 32 bits. Para obter as etapas específicas de qualquer outro servidor, consulte a documentação do produto correspondente.
 
 As etapas a seguir demonstram as alterações necessárias para habilitar a compactação com o Apache Web Server
 
@@ -166,7 +170,7 @@ Para melhorar o desempenho, é possível direcionar o software antivírus para e
 >
 >* Se você estiver usando um local diferente para GDS e diretório temporário, abra AdminUI em `https://'[server]:[port]'/adminui`, navegue até **Início > Configurações > Configurações principais do sistema > Configurações** principais para confirmar o local em uso.
 
-* Se o servidor de formulários AEM for executado lentamente mesmo depois de excluir os diretórios sugeridos, exclua também o arquivo executável Java (java.exe).
+* Se o servidor do AEM Forms executar lentamente mesmo depois de excluir os diretórios sugeridos, exclua também o arquivo executável Java (java.exe).
 
 
 
