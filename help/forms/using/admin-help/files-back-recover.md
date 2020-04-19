@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -134,10 +134,11 @@ Consulte [Estratégias de](https://articles.techrepublic.com.com/5100-1035_61-10
 
 Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco de dados MySQL para execução no modo de log binário. (Consulte [Registro em log](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)binário MySQL.) Uma ferramenta de backup dinâmico para MySQL também está disponível no software InnoBase. (Consulte [Innobase Hot Backup](https://www.innodb.com/hot-backup/features.md).)
 
-**Observação**: *O modo de log binário padrão para MySQL é &quot;Instrução&quot;, que é incompatível com tabelas usadas pelo Content Services (obsoleto). O uso do logon binário nesse modo padrão faz com que o Content Services (obsoleto) falhe. Se o seu sistema incluir o Content Services (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao arquivo my.ini:*
-`binlog_format=mixed log-bin=logname`
+>[!NOTE]
+>
+>O modo de log binário padrão para MySQL é &quot;Instrução&quot;, o que é incompatível com tabelas usadas pelo Content Services (obsoleto). O uso do logon binário nesse modo padrão faz com que o Content Services (obsoleto) falhe. Se o seu sistema incluir o Content Services (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao file:* my.ini`binlog_format=mixed log-bin=logname`
 
-Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, verifique se você start o servidor com a opção - conforme descrito na seção anterior `log-bin` . Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. É possível forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` comando, que cria o próximo arquivo de log.
+Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, certifique-se de start do servidor com a opção - conforme descrito na seção anterior `log-bin` . Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. É possível forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` comando, que cria o próximo arquivo de log.
 
 Consulte Resumo [da estratégia de](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html)backup.
 
