@@ -1,6 +1,6 @@
 ---
-title: Document Security| Tratamento de dados de utilizadores
-seo-title: Document Security| Tratamento de dados de utilizadores
+title: Segurança do Documento| Tratamento de dados de utilizadores
+seo-title: Segurança do Documento| Tratamento de dados de utilizadores
 description: 'null'
 seo-description: 'null'
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
@@ -8,20 +8,20 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 66a3db6cd50ae25849dc173e0714df7c140c1774
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
 
-# Document Security| Tratamento de dados de utilizadores {#document-security-handling-user-data}
+# Segurança do Documento| Tratamento de dados de utilizadores {#document-security-handling-user-data}
 
-A segurança do documento do AEM Forms permite que você crie, armazene e aplique configurações de segurança predefinidas a seus documentos. Ela garante que somente usuários autorizados possam usar os documentos. É possível proteger documentos usando políticas. Uma política é uma coleção de informações que inclui configurações de segurança e uma lista de usuários autorizados. Você pode aplicar uma política a um ou mais documentos e autorizar usuários adicionados ao gerenciamento de usuários do AEM Forms JEE.
+A segurança do documento do AEM Forms permite que você crie, armazene e aplique configurações de segurança predefinidas a seus documentos. Ela garante que somente usuários autorizados possam usar os documentos. É possível proteger documentos usando políticas. Uma política é uma coleção de informações que inclui configurações de segurança e uma lista de usuários autorizados. Você pode aplicar uma política a um ou mais documentos e autorizar usuários adicionados ao gerenciamento de usuários JEE do AEM Forms.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
 ## Armazenamento de dados e dados do usuário {#user-data-and-data-stores}
 
-O Document Security armazena políticas e dados relacionados a documentos protegidos, incluindo dados do usuário em um banco de dados, como My Sql, Oracle, MS SQL Server e IBM DB2. Além disso, os dados para usuários autorizados em uma política armazenada no gerenciamento de usuários. Para obter informações sobre dados armazenados no gerenciamento de usuários, consulte Gerenciamento de usuários do [Forms: Manuseio de dados](/help/forms/using/user-management-handling-user-data.md)do usuário.
+A segurança do Documento armazena políticas e dados relacionados a documentos protegidos, incluindo dados do usuário em um banco de dados, como My Sql, Oracle, MS SQL Server e IBM DB2. Além disso, os dados para usuários autorizados em uma política armazenada no gerenciamento de usuários. Para obter informações sobre dados armazenados no gerenciamento de usuários, consulte Gerenciamento de usuários do [Forms: Manuseio de dados](/help/forms/using/user-management-handling-user-data.md)do usuário.
 
 A tabela a seguir mapeia como a segurança do documento organiza os dados nas tabelas do banco de dados.
 
@@ -33,15 +33,15 @@ A tabela a seguir mapeia como a segurança do documento organiza os dados nas ta
   </tr>
   <tr>
    <td><code>EdcPrincipalKeyEntity</code></td>
-   <td>Armazena informações sobre chaves principais para os usuários. As chaves são usadas em fluxos de trabalho de segurança de documento offline.</td>
+   <td>Armazena informações sobre chaves principais para os usuários. As chaves são usadas em workflows de segurança de documento offline.</td>
   </tr>
   <tr>
    <td><code>EdcAuditEntity</code></td>
-   <td>Armazena informações sobre eventos de auditoria como eventos de usuário, eventos de documento e eventos de política.</td>
+   <td>Armazena informações sobre auditoria de eventos como eventos de usuários, eventos de documentos e eventos de políticas.</td>
   </tr>
   <tr>
    <td><p><code>EdcLicenseEntity</code></p> </td>
-   <td>Armazena o registro de um documento protegido. Ele armazena os detalhes da licença para cada documento protegido.</td>
+   <td>Armazena o registro de um documento protegido. Ele armazena detalhes de licença para cada documento protegido.</td>
   </tr>
   <tr>
    <td><p><code>EdcDocumentEntity</code></p> </td>
@@ -49,7 +49,7 @@ A tabela a seguir mapeia como a segurança do documento organiza os dados nas ta
   </tr>
   <tr>
    <td><p><code>EdcRevokationEntity</code></p> </td>
-   <td>Armazena informações sobre a revogação e a reintrodução de documentos protegidos.</td>
+   <td>Armazena informações sobre a revogação e a reinstalação de documentos protegidos.</td>
   </tr>
   <tr>
    <td><code>EdcMyPolicyListEntity</code></td>
@@ -82,7 +82,7 @@ A tabela a seguir mapeia como a segurança do documento organiza os dados nas ta
 
 Você pode acessar e exportar dados de segurança do documento para usuários nos bancos de dados e, se necessário, excluí-los permanentemente.
 
-Para exportar ou excluir dados do usuário de um banco de dados, é necessário se conectar ao banco de dados usando um cliente de banco de dados e descobrir a ID principal com base em algumas informações pessoalmente identificáveis do usuário. Por exemplo, para recuperar a ID principal de um usuário usando uma ID de logon, execute o seguinte `select` comando no banco de dados.
+Para exportar ou excluir dados do usuário de um banco de dados, é necessário conectar-se ao banco de dados usando um cliente de banco de dados e descobrir a ID principal com base em algumas informações pessoalmente identificáveis do usuário. Por exemplo, para recuperar a ID principal de um usuário usando uma ID de logon, execute o seguinte `select` comando no banco de dados.
 
 No `select` comando, substitua o `<user_login_id>` pela ID de logon do usuário cuja ID principal você deseja recuperar da tabela do `EdcPrincipalUserEntity` banco de dados.
 
@@ -130,7 +130,7 @@ Para obter dados completos sobre um usuário no sistema, você deve acessar e ex
 
 ### Excluir dados do usuário {#delete-user-data}
 
-Faça o seguinte para excluir dados de segurança do documento para uma ID principal das tabelas de banco de dados.
+Faça o seguinte para excluir dados de segurança do documento de uma ID principal das tabelas do banco de dados.
 
 1. Desligue o servidor de formulários AEM.
 1. Execute os seguintes comandos de banco de dados para excluir dados da ID principal das tabelas de banco de dados para segurança do documento. No `Delete` comando, substitua `<principal_id>` pela ID principal do usuário cujos dados você deseja excluir.
@@ -192,17 +192,19 @@ Faça o seguinte para excluir dados de segurança do documento para uma ID princ
    **Uso do console de administração**
 
    1. Como administrador, faça logon no console de administração do Forms JEE em https://[*server*]:[*port*]/adminui.
-   1. Navegue até **[!UICONTROL Serviços > Document Security > Conjuntos]** de políticas.
+   1. Navegue até **[!UICONTROL Serviços > Segurança do Documento > Conjuntos]** de políticas.
    1. Abra um conjunto de políticas e exclua o usuário da política.
-   **Uso da página da Web de segurança do documento**
+   **Usando a página da Web de segurança do documento**
 
-   Os usuários do Document Security que têm permissões para criar políticas pessoais podem excluir dados de usuários de suas políticas. Para isso:
+   Os usuários de segurança do Documento que têm permissões para criar políticas pessoais podem excluir dados do usuário de suas políticas. Para isso:
 
    1. Os usuários que têm políticas pessoais fazem logon em sua página da Web de segurança do documento em https://[*server*]:[*port*]/edc.
-   1. Navegue até **[!UICONTROL Serviços > Document Security > Minhas políticas]**.
+   1. Navegue até **[!UICONTROL Serviços > Segurança do Documento > Minhas políticas]**.
    1. Abra uma política e exclua o usuário da política.
-   **Observação**: Os administradores podem pesquisar, acessar e excluir dados do usuário de políticas pessoais de outros usuários em **[!UICONTROL Serviços > Document Security > Minhas políticas]** usando o console de administração.
+   >[!NOTE]
+   >
+   >Os administradores podem pesquisar, acessar e excluir dados do usuário de políticas pessoais de outros usuários em **[!UICONTROL Serviços > Segurança do Documento > Minhas políticas]** usando o console de administração.
 
 1. Exclua os dados da ID principal do banco de dados de gerenciamento de usuários. Para obter etapas detalhadas, consulte Gerenciamento de usuários de [formulários| Tratamento de dados](/help/forms/using/user-management-handling-user-data.md)do utilizador.
-1. Inicie o servidor do AEM Forms.
+1. Start do servidor do AEM Forms.
 
