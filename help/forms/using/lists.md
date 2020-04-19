@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -65,7 +65,7 @@ A Solução de gerenciamento de correspondência oferece suporte a dois tipos pa
    * **Condição**: Toque em para inserir uma condição. Inserir texto com base na condição. Se a condição for verdadeira, o texto estará visível na letra, caso contrário não.
    * **Adicionar descrição**: Adicione uma anotação a um texto. Esses são metadados visíveis para o autor, mas não são parte da carta criada.
    * **Quebra** de página: Se você definir o atributo de quebra de página de um módulo de texto como falso, o módulo de texto não será quebrado nas páginas.
-   Um editor de texto é aberto. Enter the text. A barra de ferramentas muda dependendo do tipo de edições que você escolher fazer: Parágrafo, Alinhamento ou Listagem:
+   Um editor de texto é aberto. Insira o texto. A barra de ferramentas muda dependendo do tipo de edições que você escolher fazer: Parágrafo, Alinhamento ou Listagem:
 
    ![Selecionar tipo de barra de ferramentas](assets/toolbarselection.png)
 
@@ -170,7 +170,9 @@ O recurso Localizar e substituir permite que você procure (e substitua) qualque
 
 **Palavra inteira:** A pesquisa retorna somente palavras inteiras.
 
-**Observação:** Se você inserir caracteres especiais na caixa de texto Localizar, a opção Palavra inteira será desativada.
+>[!NOTE]
+>
+>Se você inserir caracteres especiais na caixa de texto Localizar, a opção Palavra inteira será desativada.
 
 **Reg ex:** Pesquise usando expressões regulares. Por exemplo, a expressão regular a seguir procura endereços de email em um módulo de texto:
 
