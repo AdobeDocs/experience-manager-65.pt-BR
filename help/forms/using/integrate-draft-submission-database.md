@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -25,7 +25,7 @@ A amostra, discutida neste documento, é uma implementação de referência de d
 >[!NOTE]
 >
 >* Os exemplos e configurações explicados neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los adequadamente para o seu sistema de banco de dados.
->* Verifique se você instalou a versão mais recente do pacote complementar AEM Forms. Para obter a lista dos pacotes disponíveis, consulte o artigo de versões [do](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+>* Verifique se você instalou a versão mais recente do pacote complementar AEM Forms. Para obter a lista dos pacotes disponíveis, consulte o artigo de versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 >
 
 
@@ -53,11 +53,11 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
    | **Propriedade** | **Descrição** | **Valor** |
    |---|---|---|
    | Serviço de Dados de Rascunho do Portal de Formulários | Identificador do serviço de dados de rascunho | formsportal.sampledataservice |
-   | Serviço de Metadados de Rascunho do Portal de Formulários | Identificador do serviço de metadados de rascunho | formsportal.samples emetadataservice |
+   | Serviço de Metadados de Rascunho do Portal de Formulários | Identificador do serviço de metadados de rascunho | formsportal.samplemetadataservice |
    | Serviço de Dados de Envio de Portal de Formulários | Identificador para enviar o serviço de dados | formsportal.sampledataservice |
-   | Serviço de Metadados de Envio do Portal de Formulários | Identificador para o serviço de metadados de envio | formsportal.samples emetadataservice |
+   | Serviço de Metadados de Envio do Portal de Formulários | Identificador para o serviço de metadados de envio | formsportal.samplemetadataservice |
    | Serviço de Dados de Assinatura Pendente do Portal de Formulários | Identificador do serviço de dados de assinatura pendente | formsportal.sampledataservice |
-   | Serviço de Metadados de Assinatura Pendente do Portal de Formulários | Identificador do serviço de metadados de assinatura pendente | formsportal.samples emetadataservice |
+   | Serviço de Metadados de Assinatura Pendente do Portal de Formulários | Identificador do serviço de metadados de assinatura pendente | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -78,7 +78,9 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
    Para fornecer um nome diferente para a tabela de dados:
 
    * Na Configuração do console da Web, localize e clique em Implementação de amostra do serviço de dados do Portal do Forms. É possível alterar os valores da fonte de dados e do nome da tabela de dados.
-   **Observação**: Se você alterar os nomes das tabelas, forneça-os na configuração do Portal de formulários.
+   >[!NOTE]
+   >
+   >Se você alterar os nomes das tabelas, forneça-os na configuração do Portal de formulários.
 
 1. Deixe outras configurações como estão e clique em **[!UICONTROL Salvar]**.
 
@@ -336,7 +338,7 @@ Execute as seguintes etapas para criar [uma biblioteca](/help/sites-developing/c
     util.js
    ```
 
-   No código acima, `util` é o nome da pasta e o `util.js` nome do arquivo na `util` pasta. A `util` pasta e `util.js` o arquivo são criados em etapas bem-sucedidas.
+   No código acima, `util` é o nome da pasta e o `util.js` nome do arquivo na `util` pasta. A `util` `util.js` pasta e o arquivo são criados em etapas bem-sucedidas.
 
 1. Clique com o botão direito do mouse no `cq:ClientLibraryFolder` nó criado na etapa 2, selecione Criar > Criar pasta. Crie uma pasta chamada `util`. Clique em **[!UICONTROL Salvar tudo]**. Clique com o botão direito do mouse na `util` pasta e selecione Criar > Criar arquivo. Crie um arquivo chamado `util.js`. Clique em **[!UICONTROL Salvar tudo]**.
 
