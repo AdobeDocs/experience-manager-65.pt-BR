@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,9 @@ As opções a seguir determinam como os arquivos de imagem são convertidos em P
 
 **Tente Conversor de fallback:** O Gerador de PDF pode usar o Java™ ou o Acrobat para converter arquivos de imagem em PDF. Quando essa opção é selecionada e uma conversão falha ou atinge o limite de tempo limite especificado, o Gerador de PDF tenta a conversão usando o método alternativo. Se um método alternativo falhar ou atingir o limite de tempo limite especificado, uma exceção será gravada no arquivo de log.
 
-***Observação **: Arquivos JPEG 2000 só podem ser convertidos usando o Acrobat.*
+>[!NOTE]
+>
+>Arquivos JPEG 2000 só podem ser convertidos usando o Acrobat.
 
 **Usar OCR:** Especifica se o OCR (reconhecimento óptico de caracteres) deve ser aplicado ao PDF. O software OCR permite que você pesquise, corrija e copie o texto no PDF.
 
