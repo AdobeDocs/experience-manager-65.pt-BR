@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -78,7 +78,9 @@ Por padrão, o modo [](../../forms/using/get-xdp-pdf-documents-aem.md) protegido
 
       * `/aem/forms` (Formulários AEM no OSGi)
       * `/lc/forms` (Formulários AEM em JEE)
-   **Observação:** Verifique se o servidor do AEM Forms está ativo e em execução. The HTML preview connects to the CRX server to *generate* a preview.
+   >[!NOTE]
+   >
+   >Verifique se o servidor do AEM Forms está ativo e em execução. The HTML preview connects to the CRX server to *generate* a preview.
 
    ![Opções do AEM Forms Designer ](assets/server_options.png)
 
