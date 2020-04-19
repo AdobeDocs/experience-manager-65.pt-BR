@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -347,7 +347,11 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 1. Use as teclas de seta para mover-se em torno da imagem ampliada.
 
-Consulte também Ativos de mídia dinâmica da [Pré-visualização.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [Pré-visualização de ativos](/help/assets/previewing-assets.md)de mídia dinâmica.
+>* [subativos](managing-linked-subassets.md#viewing-subassets)de Visualização.
+
 
 ## Editar propriedades e metadados {#editing-properties}
 
