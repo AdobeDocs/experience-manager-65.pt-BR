@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -43,7 +43,7 @@ Os sites de referência fornecem ativos reutilizáveis que você pode usar como 
 
 Antes de configurar o site de referência, verifique se você tem o seguinte:
 
-* **AEM essentials** AEM QuickStart, pacote complementar AEM Forms e pacotes de site de referência. Consulte Versões [](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) do AEM Forms para obter detalhes sobre pacotes de complementos e sites de referência.
+* **AEM essentials** AEM QuickStart, pacote complementar AEM Forms e pacotes de site de referência. Consulte Versões [](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) do AEM Forms para obter detalhes sobre pacotes de complementos e sites de referência.
 
 * **Um serviço** SMTP Você pode usar qualquer serviço SMTP.
 
@@ -263,7 +263,7 @@ Configure o serviço de nuvem OAuth no AEM Forms para permitir a comunicação e
 1. Na instância do autor do AEM, vá para **Ferramentas** > Serviços **** em nuvem > Fontes **** de dados > **global**. Toque no ícone **Refsite Dynamics Integration** e toque em Propriedades.
 1. Vá para a conta do Microsoft Azure Ative Diretory. Adicione o URL de configuração do serviço de nuvem copiado na configuração **Responder URL** para seu aplicativo registrado. Salve a configuração.
 1. Na guia Configurações de autenticação, especifique Raiz **do** serviço, Id **do** cliente, Segredo **do** cliente e URL **do** recurso para sua instância do Microsoft Dynamics. Clique em **Conectar-se ao OAuth** que redireciona para a página de logon do Microsoft Dynamics.
-1. Forneça suas credenciais de logon. Depois de conectado, você é redirecionado para a página de configuração do serviço em nuvem do AEM Forms. Clique em **Salvar e fechar**. A configuração do serviço de nuvem é salva.
+1. Forneça suas credenciais de logon. Depois de conectado, você é redirecionado para a página de configuração do serviço em nuvem do AEM Forms. Click **Save &amp; Close**. A configuração do serviço de nuvem é salva.
 1. Vá para **Formulários** > Integrações **** de dados > **We.Finance**. Selecione Seguro automático (Dinâmico) e clique em Editar. As entidades do Microsoft Dynamics estão listadas na guia Fontes de Dados. Aguarde até que todas as entidades sejam buscadas no Microsoft Dynamics e listadas na guia fontes de dados.
 1. Selecione a entidade **** AutoInsuranceRenewal e clique em **Testar objeto** de modelo. Na seção de solicitação de entrada, especifique o valor para a ID do cliente como &quot;900001&quot; e clique em **Testar**. A seção Saída exibe os registros obtidos do Microsoft Dynamics para a ID do cliente 900001.
 1. Na seção de solicitação de entrada, especifique o valor para a ID do cliente como &quot;900001&quot; e clique em **Testar**. A seção Saída exibe os registros obtidos do Microsoft Dynamics para a ID do cliente 900001.
@@ -355,7 +355,10 @@ O site de referência mostra a integração do AEM Forms com o Público alvo da 
 Para experimentar a integração no site de referência, faça o seguinte para configurar o Público alvo no AEM:
 
 1. Start o autor para iniciar rapidamente com o argumento jvm `-Dabtesting.enabled=true` para ativar o teste A/B no servidor.
-   **Observação**: Se a instância do AEM estiver em execução no JBoss, que é iniciado como um serviço da instalação do Turnkey, adicione o `-Dabtesting.enabled=true` parâmetro na seguinte entrada no `jboss\bin\standalone.conf.bat` arquivo:
+
+   >[!NOTE]
+   >
+   >Se a instância do AEM estiver em execução no JBoss, que é iniciado como um serviço da instalação do Turnkey, adicione o `-Dabtesting.enabled=true` parâmetro na seguinte entrada no `jboss\bin\standalone.conf.bat` arquivo:
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Acesso `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
