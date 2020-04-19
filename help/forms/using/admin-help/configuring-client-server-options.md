@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -26,7 +26,9 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Se você estiver usando o IPv6, insira o URL básico como o nome do computador ou o nome DNS. Se você usar um endereço IP numérico, o Acrobat não abrirá os arquivos protegidos por política. Além disso, use o URL protegido por HTTP (HTTPS) para seu servidor.
 
-***Observação **: O URL base é incorporado em arquivos protegidos por política. Os aplicativos cliente usam o URL básico para se conectar novamente ao servidor. Os arquivos protegidos continuarão a conter o URL base, mesmo se for alterado posteriormente. Se você alterar o URL base, as informações de configuração precisarão ser atualizadas para todos os clientes conectados.*
+>[!NOTE]
+>
+>O URL base é incorporado em arquivos protegidos por política. Os aplicativos cliente usam o URL básico para se conectar novamente ao servidor. Os arquivos protegidos continuarão a conter o URL base, mesmo se for alterado posteriormente. Se você alterar o URL base, as informações de configuração precisarão ser atualizadas para todos os clientes conectados.
 
 **Período Padrão de Concessão Offline:** O tempo padrão durante o qual um usuário pode usar um documento protegido offline. Essa configuração determina o valor inicial da configuração do período de empréstimo Offline Automática ao criar uma política. (Consulte Criar e editar políticas.) Quando o período de empréstimo expirar, o recipient deverá sincronizar o documento novamente para continuar a usá-lo.
 
@@ -685,7 +687,7 @@ Como administrador, especifique quais usuários e grupos podem criar políticas 
 
 1. No console de administração, clique em Serviços > Segurança do Documento > Configuração > Minhas políticas.
 1. Na página Minhas políticas, clique na guia Criar políticas e clique em Adicionar usuários e grupos.
-1. Na caixa Localizar, digite o nome de usuário ou endereço de email do usuário ou grupo que você está procurando. Se você não tiver essas informações, deixe a caixa vazia. Você também pode digitar um nome parcial ou um endereço de email, como quando souber apenas as duas primeiras letras de um nome de usuário.
+1. Na caixa Localizar, digite o nome de usuário ou endereço de email do usuário ou grupo que você está procurando. Se você não tiver essas informações, deixe a caixa vazia. Você também pode digitar um nome parcial ou um endereço de email, como quando sabe apenas as duas primeiras letras de um nome de usuário.
 1. Na lista Using, selecione seus parâmetros de pesquisa Name (Nome) ou Email.
 1. Na lista Tipo, selecione Grupo ou Usuário para restringir sua pesquisa.
 1. Na lista In, selecione o domínio a ser pesquisado. Se você não souber o domínio do usuário ou grupo, selecione Todos os domínios.
