@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -153,7 +153,7 @@ We.Finance recebe o pedido de cartão de crédito enviado pela Sarah. Uma tarefa
 
 #### Como funciona {#how-it-works-2}
 
-Quando Sarah preenche e envia o aplicativo de cartão de crédito, um Fluxo de trabalho do Forms é acionado e uma tarefa é criada na caixa de entrada do AEM de Gloria.
+Quando Sarah preenche e envia o aplicativo de cartão de crédito, um Fluxo de trabalho do Forms aciona e uma tarefa é criada na caixa de entrada do AEM de Gloria.
 
 O AEM Forms no OSGi fornece workflows centrados em formulários que permitem a criação de workflows adaptáveis baseados em formulários. Esses workflows podem ser usados para revisão e aprovações, fluxos de processos de negócios, para serviços de documentos de start, integração com o fluxo de trabalho de assinatura do Adobe Sign e assim por diante. Para obter mais informações, consulte Fluxo de trabalho centrado em [formulários no OSGi](../../forms/using/aem-forms-workflow.md).
 
@@ -306,7 +306,9 @@ Execute as seguintes etapas para experimentar a criação do teste A/B para o fo
 1. Abra o CRXDE Lite e faça um backup do seguinte arquivo: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Substitua a definição de função `onReportLoadSuccess` no arquivo mencionado acima pela definição de função no arquivo a seguir: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Observação: Essas mudanças são apenas para fins de demonstração. Certifique-se de restaurar o conteúdo do arquivo após concluir este procedimento.
+   >[!NOTE]
+   >
+   >Essas mudanças são apenas para fins de demonstração. Certifique-se de restaurar o conteúdo do arquivo após concluir este procedimento.
 
 1. Atualize o relatório gerado e você verá algo como o seguinte. Revise o painel do relatórios.
 
@@ -555,7 +557,9 @@ Execute as seguintes etapas na instância do autor para experimentar a criação
 1. Abra o CRXDE Lite e faça um backup do seguinte arquivo: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Substitua a definição da `onReportLoadSuccess` função no arquivo mencionado acima pela definição da função no arquivo a seguir: /apps/we-finance/demo-artifacts/targetreport.js
 
-   Observação: Essas mudanças são apenas para fins de demonstração. Certifique-se de restaurar o conteúdo do arquivo após concluir este procedimento.
+   >[!NOTE]
+   >
+   >Essas mudanças são apenas para fins de demonstração. Certifique-se de restaurar o conteúdo do arquivo após concluir este procedimento.
 
 1. Atualize o relatório gerado e você verá algo como o seguinte. Revise o painel do relatórios.
 
