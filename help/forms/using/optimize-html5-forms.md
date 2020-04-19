@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -20,7 +20,9 @@ Formulários HTML5 renderizam formulários no formato HTML5. A saída resultante
 
 Este artigo descreve as etapas necessárias para habilitar a compactação para o Apache Web Server 2.0 de 32 bits, com JBoss.
 
-*Observação: As instruções a seguir não se aplicam ao servidor que não seja o Apache Web Server 2.0 de 32 bits.*
+>[!NOTE]
+>
+>As instruções a seguir não se aplicam ao servidor que não seja o Apache Web Server 2.0 de 32 bits.
 
 Obtenha o software do servidor Web Apache aplicável ao seu sistema operacional:
 
