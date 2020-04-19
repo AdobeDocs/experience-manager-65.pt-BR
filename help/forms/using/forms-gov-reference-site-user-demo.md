@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,9 @@ Aya responde a algumas perguntas para confirmar sua qualificação preenchendo u
 
 1. Faça uma seleção em cada campo suspenso.
 
-   1. Observação: Se o usuário ganhar mais de US$ 200.000/ano, ele não será elegível.
+   >[!NOTE]
+   >
+   >Se o usuário ganhar mais de US$ 200.000/ano, ele não será elegível.
 
 1. Clique em &quot;**Sou elegível?**” botão.
 1. Clique no botão &quot;**Aplicar agora**&quot; para continuar.
