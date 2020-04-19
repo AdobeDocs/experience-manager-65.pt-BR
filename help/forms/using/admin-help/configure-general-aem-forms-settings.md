@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -35,14 +35,18 @@ Para obter informações sobre como ativar o modo de backup seguro, consulte [At
 
 **Localização do diretório** temporário O caminho do diretório onde os formulários AEM criarão arquivos temporários do produto. Se o valor dessa configuração estiver vazio, o local assumirá como padrão o diretório temporário do sistema. Verifique se o diretório temporário é uma pasta gravável.
 
-***observação **: Verifique se o diretório temporário está no sistema de arquivos local. Os formulários AEM não oferecem suporte a um diretório temporário em um local remoto.*
+>[!NOTE]
+>
+>Verifique se o diretório temporário está no sistema de arquivos local. Os formulários AEM não oferecem suporte a um diretório temporário em um local remoto.
 
 **Diretório** raiz do armazenamento global O diretório raiz do armazenamento global do documento (GDS) é usado para os seguintes fins:
 
 * Armazenando documentos de vida longa. Os documentos de longa duração não têm um tempo de expiração e persistem até serem removidos (por exemplo, os arquivos PDF usados em um processo de fluxo de trabalho). Os documentos de longa duração são uma parte crítica do estado geral do sistema. Se alguns ou todos esses documentos forem perdidos ou corrompidos, o servidor de formulários poderá ficar instável. Portanto, é importante que esse diretório seja armazenado em um dispositivo RAID.
 * Armazenamento de documentos temporários necessários durante o processamento.
 
-   ***Observação **: Você também pode ativar o armazenamento de documentos no banco de dados de formulários do AEM. No entanto, o desempenho do sistema é melhor quando você usa o GDS.*
+>[!NOTE]
+>
+>Você também pode ativar o armazenamento de documentos no banco de dados de formulários do AEM. No entanto, o desempenho do sistema é melhor quando você usa o GDS.
 
 * Transferência de documentos entre nós em um cluster. Se você estiver executando formulários AEM em um ambiente clusterizado, esse diretório deverá estar acessível de todos os nós dentro do cluster.
 * Recebendo parâmetros de entrada de chamadas de API remotas.
@@ -53,9 +57,13 @@ Se você não especificar um diretório raiz GDS, o diretório assumirá como pa
 * `[WEBSPHERE_HOME]/installedApps/adobe/'server'/DocumentStorage`
 * `[WEBLOGIC_HOME]/user_projects/<domain>/'server'/adobe/AEMformsserver/DocumentStorage`
 
-***Observação **: A alteração do valor da configuração do diretório raiz GDS deve ser feita com cuidado especial. O diretório GDS é usado para armazenar arquivos de longa duração usados em um processo, bem como componentes críticos do produto para formulários AEM. Alterar a localização do diretório GDS é uma alteração importante do sistema. Configurar incorretamente o local do diretório GDS tornará os formulários AEM inoperantes e pode exigir uma reinstalação completa dos formulários AEM. Se você especificar um novo local para o diretório GDS, o servidor de aplicativos precisará ser desligado e os dados migrados antes que o servidor possa ser reiniciado. O administrador do sistema deve mover todos os arquivos do local antigo para o novo local, mas manter a estrutura do diretório interno.*
+>[!NOTE]
+>
+>A alteração do valor da configuração do diretório raiz GDS deve ser feita com cuidado especial. O diretório GDS é usado para armazenar arquivos de longa duração usados em um processo, bem como componentes críticos do produto para formulários AEM. Alterar a localização do diretório GDS é uma alteração importante do sistema. Configurar incorretamente o local do diretório GDS tornará os formulários AEM inoperantes e pode exigir uma reinstalação completa dos formulários AEM. Se você especificar um novo local para o diretório GDS, o servidor de aplicativos precisará ser desligado e os dados migrados antes que o servidor possa ser reiniciado. O administrador do sistema deve mover todos os arquivos do local antigo para o novo local, mas manter a estrutura do diretório interno.
 
-***Observação **: Não especifique o mesmo diretório para o diretório temporário e o diretório GDS.*
+>[!NOTE]
+>
+>Não especifique o mesmo diretório para o diretório temporário e o diretório GDS.
 
 Para obter informações adicionais sobre o diretório GDS, consulte [Preparação para instalar formulários AEM (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
@@ -91,7 +99,9 @@ O modo FIPS não oferece suporte a algoritmos de criptografia usados em versões
 
 Em geral, quando o FIPS estiver ativado, o serviço Assembler não aplicará criptografia de senha a nenhum documento. Se isso for tentado, um FIPSModeException será lançado indicando que &quot;A criptografia de senha não é permitida no modo FIPS&quot;. Além disso, o elemento XML de descrição do Documento (DDX) PDFsFromBookmarks não é suportado no modo FIPS quando o documento base é criptografado por senha.
 
-***Observação **: O software de formulários AEM não valida o código para garantir a compatibilidade com FIPS. Ele fornece um modo de operação FIPS para que os algoritmos aprovados pelo FIPS sejam usados para serviços de criptografia das bibliotecas aprovadas pelo FIPS (RSA).*
+>[!NOTE]
+>
+>O software de formulários AEM não valida o código para garantir a compatibilidade com FIPS. Ele fornece um modo de operação FIPS para que os algoritmos aprovados pelo FIPS sejam usados para serviços de criptografia das bibliotecas aprovadas pelo FIPS (RSA).
 
 **Habilitar WSDL** Selecione essa opção para habilitar a geração WSDL (Web Service Definition Language) para todos os serviços que fazem parte dos formulários do AEM.
 
