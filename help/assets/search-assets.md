@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no AEM usando o painel 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -38,11 +38,11 @@ O recurso de pesquisa do AEM oferece suporte à pesquisa de coleções e à pesq
 
 Familiarize-se com a interface de pesquisa e as ações disponíveis.
 
-![Noções básicas da interface de resultados da pesquisa de Ativos](assets/aem_search_results.png)
+![Compreender a interface de resultados de pesquisa dos Ativos do Experience Manager](assets/aem_search_results.png)
 
-*Figura: Noções básicas da interface de resultados da pesquisa de Ativos*
+*Figura: Compreender a interface de resultados de pesquisa dos Ativos do Experience Manager*
 
-**A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros (predicados) para limitar os resultados da pesquisa. **C.** Exiba arquivos, pastas ou ambos nos resultados da pesquisa. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. **F.** Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G.** Marque a caixa para selecionar todos os resultados da pesquisa. **H.** Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. **Eu.** Feche a pesquisa **J.** Alterne entre a visualização da placa e a visualização da lista.
+**A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros ou previsões para restringir os resultados da pesquisa. **C.** Exibir arquivos, pastas ou ambos. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. **F.** Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G.** Selecione os resultados de pesquisa carregados. **H.** Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. **Eu.** Feche a pesquisa **J.** Alterne entre a visualização da placa e a visualização da lista.
 
 ### Aspectos de pesquisa dinâmica {#dynamicfacets}
 
@@ -246,7 +246,7 @@ Para acessar a interface do Seletor de ativos, acesse `https://[aem_server]:[por
 
 *Figura: Procurar e selecionar ativo no seletor de ativos*
 
-## Limitações       {#limitations}
+## Limitações        {#limitations}
 
 O recurso de pesquisa nos ativos AEM tem as seguintes limitações:
 
@@ -254,7 +254,7 @@ O recurso de pesquisa nos ativos AEM tem as seguintes limitações:
 * O AEM pode continuar a mostrar o termo de pesquisa depois que você seleciona as propriedades de um ativo dos resultados pesquisados e cancela a pesquisa. <!-- (CQ-4273540) -->
 * Ao procurar pastas ou arquivos e pastas, os resultados da pesquisa não podem ser classificados em nenhum parâmetro.
 * Se você pressionar return sem digitar nada na barra Omnisearch, o AEM retornará uma lista de somente arquivos e não pastas. Se você pesquisar especificamente por pastas sem usar uma palavra-chave, o AEM não retornará nenhum resultado.
-* Usando a caixa de seleção [!UICONTROL Selecionar tudo] , você só pode selecionar os primeiros 100 ativos pesquisados na visualização do cartão e os primeiros 200 ativos pesquisados na visualização da lista. Se você rolar e carregar mais ativos na interface do usuário, poderá selecionar mais usando a opção [!UICONTROL Selecionar tudo] .
+* Use a opção **[!UICONTROL Selecionar tudo]** no canto superior direito da página de pesquisa para selecionar os ativos pesquisados. O Experience Manager exibe inicialmente 100 ativos na visualização do cartão e 200 ativos na visualização da lista. Mais ativos são carregados à medida que você percorre os resultados da pesquisa. Você pode selecionar mais ativos do que os ativos carregados. A contagem dos ativos selecionados é exibida no canto superior direito da página de resultados da pesquisa. Você pode operar na seleção, por exemplo, baixar os ativos selecionados, atualizar as propriedades de metadados em massa para os ativos selecionados ou adicionar os ativos selecionados a uma Coleção. Quando mais ativos são selecionados do que exibidos, uma ação é aplicada em todos os ativos selecionados ou uma caixa de diálogo exibe o número de ativos nos quais ela é aplicada. Para aplicar uma ação aos ativos que não foram carregados, verifique se todos os ativos estão selecionados explicitamente.
 
 Pesquisa visual ou pesquisa de semelhança tem as seguintes limitações:
 
@@ -269,7 +269,7 @@ A funcionalidade de pesquisa pode ter limitações de desempenho nos seguintes c
 
 * Ao monitorar o status da revisão de ativos, use a opção apropriada para descobrir quais ativos estão aprovados ou quais ativos estão pendentes de aprovação.
 * Use o predicado Insights para pesquisar ativos suportados com base em suas estatísticas de uso obtidas de vários aplicativos Creative. Os dados de uso são agrupados em Pontuação de uso, Impressões, Cliques e canais de mídia nos quais os ativos aparecem categorias.
-* Use a caixa de seleção **[!UICONTROL Selecionar tudo]** para selecionar os ativos pesquisados. Seleciona os primeiros 100 ativos na visualização do cartão e os primeiros 200 ativos na visualização da lista. Você pode operar na seleção, por exemplo, baixar os ativos selecionados, atualizar as propriedades de metadados em massa para os ativos selecionados ou adicionar os ativos selecionados a uma Coleção.
+* Use a caixa de seleção **[!UICONTROL Selecionar tudo]** para selecionar os ativos pesquisados. O Experience Manager exibe inicialmente 100 ativos na visualização do cartão e 200 ativos na visualização da lista. Mais ativos são carregados à medida que você percorre os resultados da pesquisa. Você pode selecionar mais ativos do que os ativos carregados. A contagem dos ativos selecionados é exibida no canto superior direito da página de resultados da pesquisa. Você pode operar na seleção, por exemplo, baixar os ativos selecionados, atualizar as propriedades de metadados em massa para os ativos selecionados ou adicionar os ativos selecionados a uma Coleção. Quando mais ativos são selecionados do que exibidos, uma ação é aplicada em todos os ativos selecionados ou uma caixa de diálogo exibe o número de ativos nos quais ela é aplicada. Para aplicar uma ação aos ativos que não foram carregados, verifique se todos os ativos estão selecionados explicitamente.
 * Para pesquisar ativos que não contenham os metadados obrigatórios, consulte os metadados [](#mandatorymetadata)obrigatórios.
 * A pesquisa usa todos os campos de metadados. Uma pesquisa genérica, como a pesquisa por 12, geralmente retorna muitos resultados. Para obter melhores resultados, use aspas de duplo (não simples) ou certifique-se de que o número seja contíguo a uma palavra sem um caractere especial (por exemplo, *shoe12*).
 * A pesquisa de texto completo oferece suporte a operadores como -, ^ e assim por diante. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplos. Por exemplo, use &quot;Notebook - Beauty&quot; em vez de Notebook - Beauty.
