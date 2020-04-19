@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -315,7 +315,7 @@ Além disso, considere os seguintes pontos ao escolher o software para o Adobe A
 * As instalações baseadas em cluster não suportam persistência de TarMK. Para obter informações sobre a persistência com suporte, consulte [Escolhendo um tipo de persistência para uma instalação](/help/forms/using/choosing-persistence-type-for-aem-forms.md)do AEM Forms.
 * O AEM Forms no JEE é compatível com vários softwares de terceiros de acordo com nossa Política [de suporte de software de](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p)terceiros.
 * O AEM Forms no JEE suporta plataformas conforme o suporte fornecido por fornecedores terceirizados. Algumas combinações podem não ser permitidas por fornecedores terceirizados. Por exemplo, muitos fornecedores não certificaram seus servidores de aplicativos com a Oracle. Como resultado, o AEM Forms no JEE também não é compatível com essas combinações. Para garantir que você escolha as versões de software suportadas, verifique também a matriz de suporte dos fornecedores terceirizados.
-* O AEM Forms no JEE não oferece suporte ao TarMK Cold Standby.
+* O AEM Forms em JEE não oferece suporte ao TarMK Cold Standby.
 * O AEM Forms no JEE não oferece suporte a clustering vertical.
 * O AEM Forms em JEE não oferece suporte ao banco de dados MySQL em um ambiente clusterizado.
 * Para obter a lista de plataformas removidas ou atualizadas, consulte [documento Resumo](../../forms/using/whats-new.md) dos novos recursos do AEM 6.5 Forms.
@@ -528,7 +528,9 @@ Para obter requisitos adicionais, consulte:
 
 ### Designer {#designer}
 
-**Observação:** Para instalar o Designer no Windows, execute o instalador com privilégios administrativos.
+>[!NOTE]
+>
+>Para instalar o Designer no Windows, execute o instalador com privilégios administrativos.
 
 * Microsoft® Windows® 2016 Server, Microsoft Windows 10
 
