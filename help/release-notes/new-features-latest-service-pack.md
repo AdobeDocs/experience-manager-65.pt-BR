@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -35,7 +35,7 @@ Agora é possível selecionar estilos na caixa de diálogo do componente usando 
 
 ## Ativos AEM {#aem-assets}
 
-### Configurar ativos AEM com o Portal de marcas {#configure-assets-bp}
+### Configurar o AEM Assets com o Brand Portal {#configure-assets-bp}
 
 O canal de autorização entre os ativos AEM e o Portal de marcas foi alterado. Anteriormente, o Brand Portal estava configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização. Os ativos AEM agora estão configurados com o Portal de marcas por meio da E/S da Adobe, que obtém um token IMS para autorização do locatário do Portal de marcas.
 
@@ -123,7 +123,7 @@ Você tem a opção de especificar uma data e hora de start e uma data e hora de
 
 Você pode usar a API de lote para produzir várias comunicações interativas a partir de um modelo. O modelo é uma comunicação interativa sem dados. A API de lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, declarações de cartão de crédito para vários clientes. Consulte [Gerar várias comunicações interativas usando a API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)de lote.
 
-## Versões de chave desde o AEM 6.5 SP3 {#key-features-sice-sp3}
+## Versões de chave desde o AEM 6.5 SP3 {#key-features-since-sp3}
 
 Entre 12 de dezembro de 2019 e 5 de março de 2020, a Adobe lançou os seguintes recursos que estão fora do principal produto do AEM:
 
