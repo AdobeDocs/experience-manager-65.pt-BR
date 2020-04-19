@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -201,7 +201,9 @@ Por exemplo, se forem 20 horas em 17 de julho de 2009 e você especificar `C:/Te
 
 Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pasta assistida. O valor padrão é result/%Y/%M/%D/, que é a pasta Result dentro da pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões](configuring-watched-folder-endpoints.md#about-file-patterns)de arquivo.
 
-***Observação **: Quanto menor for o tamanho das pastas de resultados, melhor será o desempenho da Pasta assistida. Por exemplo, se a carga estimada para a pasta assistida for de 1.000 arquivos a cada hora, experimente um padrão como`result/%Y%M%D%H`para que uma nova subpasta seja criada a cada hora. Se a carga for menor (por exemplo, 1000 arquivos por dia), você poderá usar um padrão como`result/%Y%M%D`.*
+>[!NOTE]
+>
+>Quanto menor for o tamanho das pastas de resultados, melhor será o desempenho da Pasta assistida. Por exemplo, se a carga estimada para a pasta assistida for de 1.000 arquivos a cada hora, experimente um padrão como `result/%Y%M%D%H` para que uma nova subpasta seja criada a cada hora. Se a carga for menor (por exemplo, 1000 arquivos por dia), você poderá usar um padrão como `result/%Y%M%D`.
 
 **Preservar pasta:** O local onde os arquivos são armazenados após a verificação e coleta bem-sucedidas. O caminho pode ser absoluto, relativo ou nulo. Você pode usar padrões de arquivo, conforme descrito para a Pasta de resultados. O valor padrão é preserve/%Y/%M/%D/.
 
@@ -231,7 +233,9 @@ Um valor de -1 dias indica que a pasta de resultados nunca será excluída. O va
 
 A saída da Pasta assistida pode ser um único documento, uma lista de documentos ou um mapa de documentos. Esses documentos de saída são salvos na pasta de resultados, usando o padrão especificado no Mapeamento do parâmetro de saída.
 
-**Observação**: A *especificação de nomes que resultam em nomes de arquivo de saída exclusivos melhora o desempenho. Por exemplo, considere o caso em que o serviço retorna um documento de saída e o Mapeamento de parâmetro de saída o mapeia para`%F.%E`(o nome do arquivo e a extensão do arquivo de entrada). Nesse caso, se os usuários soltarem arquivos com o mesmo nome a cada minuto e a pasta resultante estiver configurada para`result/%Y/%M/%D`, e a configuração Substituir nome de arquivo do Duplicado estiver desativada, a Pasta assistida tentará resolver os nomes dos arquivos do duplicado. O processo de resolução de nomes de arquivos de duplicado pode afetar o desempenho. Nessa situação, alterar o Mapeamento do parâmetro de saída para adicionar horas, minutos, segundos e milissegundos`%F_%h_%m_%s_%l`ao nome ou garantir que os arquivos descartados tenham nomes exclusivos pode melhorar o desempenho.*
+>[!NOTE]
+>
+>A especificação de nomes que resultam em nomes de arquivos de saída exclusivos melhora o desempenho. Por exemplo, considere o caso em que o serviço retorna um documento de saída e o Mapeamento de parâmetro de saída o mapeia para `%F.%E` (o nome do arquivo e a extensão do arquivo de entrada). Nesse caso, se os usuários soltarem arquivos com o mesmo nome a cada minuto e a pasta resultante estiver configurada para `result/%Y/%M/%D`, e a configuração Substituir nome de arquivo do Duplicado estiver desativada, a Pasta assistida tentará resolver os nomes dos arquivos do duplicado. O processo de resolução de nomes de arquivos de duplicado pode afetar o desempenho. Nessa situação, alterar o Mapeamento do parâmetro de saída para adicionar horas, minutos, segundos e milissegundos `%F_%h_%m_%s_%l` ao nome ou garantir que os arquivos descartados tenham nomes exclusivos pode melhorar o desempenho.
 
 ## Sobre padrões de arquivos {#about-file-patterns}
 
