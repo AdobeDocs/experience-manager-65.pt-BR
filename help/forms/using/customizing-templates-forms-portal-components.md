@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -45,8 +45,12 @@ Execute as seguintes etapas para criar um modelo personalizado para vários comp
    * Componente do link: /libs/fd/fp/linkTemplate
    Adicione um título que você deseja que seja exibido ao selecionar modelos de layout.
 
-   *Observação: O título pode ser diferente do nome do nó sling:Folder criado.*
-   *A imagem a seguir descreve a configuração do componente de Pesquisa e Lister.* ![Criação de um sling:Folder](assets/1.png)
+   >[!NOTE]
+   >
+   >O título pode ser diferente do nome do nó sling:Folder criado.
+
+   A imagem a seguir descreve a configuração do componente de Pesquisa e Lister.
+   ![Criação de um sling:Folder](assets/1.png)
 
 1. Crie um arquivo template.html nesta pasta para servir como modelo personalizado.
 1. Grave o modelo personalizado e use metadados personalizados, conforme descrito abaixo.
@@ -81,19 +85,19 @@ O Portal de Formulários fornece uma sintaxe para que os usuários possam exibir
 
 Para incluir uma entrada repetível, configure o valor do atributo com **dados repetitivos** como **verdadeiro**.
 
-*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. A primeira, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de contêiner para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo de **dados repetíveis**presente no elemento Div tem o valor **true**.*
+*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. A primeira, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de container para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo de **dados repetíveis**presente no elemento Div tem o valor **true**.*
 
 Cada espaço reservado tem um conjunto exclusivo de metadados OTB. Para exibir metadados personalizados em um local específico no formulário, adicione a propriedade **** ${metadata_prop} no local.
 
 *No exemplo, a propriedade metadata é usada em várias instâncias. Por exemplo, ele é usado na **descrição**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**********, pdfStyle, e no caminho prescrito.*
 
-## Metadados prontos {#out-of-the-box-metadata}
+## Metadados prontos para uso {#out-of-the-box-metadata}
 
 Vários componentes do Portal de formulários fornecem conjuntos exclusivos de metadados OOTB que podem ser usados para listagem.
 
 ### Componente de pesquisa e lister {#search-amp-lister-component}
 
-* **** Título: Título do formulário
+* **Título:** Título do formulário
 * **name**: Nome do formulário (na maioria, é o mesmo que o título)
 * **descrição**: Descrição do formulário
 * **formUrl**: URL para renderizar o formulário como HTML
@@ -102,25 +106,27 @@ Vários componentes do Portal de formulários fornecem conjuntos exclusivos de m
 
 * **htmlStyle**&amp; **pdfStyle**: Estilo de exibição para ícones HTML e PDF usados respectivamente para renderização. Os valores válidos são &quot;**__FP_display_none**&quot; ou em branco.
 
-   **** Observação: Lembre-se de usar a classe __FP_display_none na sua folha de estilos personalizada
+>[!NOTE]
+>
+>Lembre-se de usar a classe __FP_display_none na sua folha de estilos personalizada.
 
 * **downloadUrl**: URL para baixar um ativo.
 
 Suporte para localização, classificação e uso das propriedades de configuração na interface do usuário (somente Search &amp; Lister):
 
-1. **Suporte** para localização: Para localizar qualquer texto estático, use o atributo `${localize-YOUR_TEXT}` e disponibilize o valor localizado, caso ainda não exista.
+1. **Suporte** a Localizações: Para localizar qualquer texto estático, use o atributo `${localize-YOUR_TEXT}` e disponibilize o valor localizado, caso ainda não exista.
    *No exemplo discutido, os atributos`${localize-Apply}`e`${localize-Download}`são usados para localizar o texto Aplicar e Baixar.*
 
 1. **Suporte para classificação**: Clique no elemento HTML para classificar os resultados da pesquisa. Para implementar a classificação em um layout tabulado, adicione o atributo &quot;data-sortKey&quot; no cabeçalho da tabela específica. Além disso, adicione seu valor como os metadados para os quais você deseja classificar.
-Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o valor do cabeçalho &quot;data-sortKey&quot; é &quot;título&quot;. Clique no cabeçalho para classificar os valores em uma coluna específica.
+Por exemplo, para o cabeçalho &quot;Título&quot; na visualização de grade, o valor do cabeçalho &quot;data-sortKey&quot; é &quot;título&quot;. Clique no cabeçalho para classificar os valores em uma coluna específica.
 
-1. **Uso das propriedades** de configuração: O componente de Pesquisa e Lister tem várias configurações que podem ser usadas na interface do usuário. Por exemplo, para exibir o texto da Dica de ferramenta HTML salvo pela caixa de diálogo de edição, use o `${config-htmlLinkText}` atributo. **Da mesma forma, para texto de dica de ferramenta PDF, use o** `${config-pdfLinkText}` atributo.
+1. **Uso das propriedades** de configuração: O componente de Pesquisa e Lister tem várias configurações que podem ser usadas na interface do usuário. Por exemplo, para exibir o texto da Dica de ferramenta HTML salvo pela caixa de diálogo de edição, use o `${config-htmlLinkText}` atributo. **Da mesma forma, para o texto da dica de ferramenta do PDF, use o** `${config-pdfLinkText}` atributo.
 
 ### Componente do link {#link-component}
 
-* **** Título: Título do formulário
+* **Título:** Título do formulário
 * **formUrl**: URL para renderizar o formulário como HTML
-* **meta**: Atributo de destino do link. Os valores válidos são &quot;_blank&quot; e &quot;_self.&quot;
+* **público alvo**: Atributo de Público alvo do link. Os valores válidos são &quot;_blank&quot; e &quot;_self.&quot;
 * **linkText**: Legenda do link
 
 ### Componente Rascunhos e envios {#drafts-amp-submissions-component}
@@ -133,7 +139,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 * **submitID**: ID para o envio que está listado (Use apenas no modelo para a seção Envio).
 * **status**: Status do formulário enviado. (Use apenas no modelo para a seção Envio).
 * **descrição**: Descrição do formulário adaptativo associado ao rascunho ou ao envio.
-* **diffTime**: Diferença entre a hora atual e a última ação de salvar do rascunho. Como alternativa, a diferença entre a hora atual e a última ação de envio para o envio.
+* **diffTime**: Diferença entre a hora atual e a última ação de salvar do rascunho. Como alternativa, a diferença entre a hora atual e a última ação de envio para a submissão.
 * **iconClass**: Classe CSS usada para exibir a primeira letra do rascunho/envio. O Portal de formulários inclui as seguintes classes, que fornecem vários planos de fundo coloridos.
 * **proprietário**: Usuário que criou o rascunho/envio.
 * **Hoje**: Data de criação do rascunho ou envio no formato DD:MM:AAAA.
@@ -147,17 +153,17 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 
 ![Nó Rascunhos e Envio](assets/raw-image-with-index.png)
 
-**A**. Elemento do contêiner
+**A**. elemento Container
 
-**** B. Metadados de &quot;caminho&quot; com uma hierarquia fixa para obter a miniatura armazenada para cada formulário.
+**B.** Metadados de &quot;caminho&quot; com uma hierarquia fixa para obter a miniatura armazenada para cada formulário.
 
 **C.** Atributo repetível de dados usado para a seção do modelo para cada formulário
 
-**** D. Para localizar a string &quot;Apply&quot;
+**D.** Para localizar a string &quot;Apply&quot;
 
-**** E. Uso da propriedade de configuração pdfLinkText
+**E.** Uso da propriedade de configuração pdfLinkText
 
-**** F. Uso dos metadados &quot;pdfUrl&quot;
+**F.** Uso dos metadados &quot;pdfUrl&quot;
 
 ## Dicas, truques e problemas conhecidos {#tips-tricks-and-known-issues}
 
@@ -170,7 +176,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o val
 
 * [Ativar componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
 * [Criar página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
-* [Listar formulários em uma página da Web usando APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
+* [Lista de formulários em uma página da Web usando APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Usar componente Rascunhos e envios](/help/forms/using/draft-submission-component.md)
 * [Personalizar o armazenamento de rascunhos e formulários enviados](/help/forms/using/draft-submission-component.md)
 * [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md)
