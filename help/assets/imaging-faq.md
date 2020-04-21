@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 3e37ee6da263bb12eb0efea85213987e8286bc60
+source-git-commit: 7daf89f7e69d3e2e938780ff98fd2df46723e708
 
 ---
 
@@ -23,12 +23,12 @@ O Smart Imaging também se beneficia do aumento de desempenho ao ser totalmente 
 
 Os exemplos de ativos de imagem a seguir mostram a otimização adicionada de Imagens inteligentes:
 
-| Image<br>(URL) | Miniatura   | Tamanho<br> (JPEG) | Tamanho (WebP)<br> (com Imagem inteligente) | % redução |
+| Image<br>(URL) | Miniatura    | Tamanho<br> (JPEG) | Tamanho (WebP)<br> (com Imagem inteligente) | % redução |
 |---|---|---|---|---|
-| [Imagem 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
-| [Imagem 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
-| [Imagem 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
-| [Imagem 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
+| [Imagem 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
+| [Imagem 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
+| [Imagem 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
+| [Imagem 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | Média = 51% |
 
 Semelhante ao acima, a Adobe também executou um teste com 7009 URLs de sites de clientes ao vivo, e conseguiu uma média de 38% de otimização de tamanho de arquivo adicional para JPEG e 31% de otimização de tamanho de arquivo adicional para PNG com formato WebP, devido à capacidade de criação de imagens inteligentes.
@@ -72,25 +72,24 @@ Os seguintes formatos de imagem são suportados para Imagens inteligentes:
 * JPEG
 * PNG
 
-Para qualquer outro formato mencionado em um URL, você deve desativar explicitamente a Imagem inteligente.  Anexar modificador `bfc=off` ao URL para formatos de arquivo diferentes de JPEG e PNG. Você pode fazer isso usando um dos seguintes métodos:
+<!-- For any other format mentioned in a URL, you should explicity turn off Smart Imaging.  Append modifier `bfc=off` to the URL for file formats other than JPEG and PNG. You can accomplish this by using either one of the following methods:
 
-* Use um conjunto de regras se o `fmt` modificador for mencionado no URL.
-* Anexar no campo modificadores de URL das predefinições em questão.
+* Use a ruleset if the `fmt` modifier is mentioned in the URL. 
+* Append in URL modifiers field of the presets concerned.
 
-A Adobe está trabalhando em uma correção permanente que não exige que você acrescente `bfc=off` para `fmt !=JPEG` ou `fmt !=PNG`. Este tópico será atualizado após a correção ser entregue.
-
+Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
 ## Como o Smart Imaging funciona com as predefinições de imagens existentes que já estão em uso? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
 O Smart Imaging funciona com as &quot;predefinições de imagens&quot; existentes e observa todas as suas configurações de imagem, com exceção da qualidade (qlt) e do formato (fmt), se o formato de arquivo solicitado for JPEG ou PNG. Para conversão de formato, mantemos a fidelidade visual completa, conforme definido pelas configurações predefinidas da imagem, mas em um tamanho de arquivo menor. Se o tamanho original da imagem for menor do que o que o Smart Imaging produz, então a imagem original será disponibilizada.
 
-Além disso, se as predefinições de imagem forem usadas para retornar `fmt !=JPEG` ou `fmt !=PNG`, anexe `bfc=off` o campo modificador predefinido para retornar o formato de arquivo solicitado.
+<!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## Será necessário alterar quaisquer URLs, predefinições de imagens ou implantar qualquer novo código no meu site para o Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
 Não. A Imagem inteligente funciona perfeitamente com os URLs de imagem e as predefinições de imagem existentes. Além disso, o Smart Imaging não exige que você adicione qualquer código ao seu site para detectar o navegador de um usuário. Tudo isso é feito automaticamente.
 
-Como mencionado anteriormente, o Smart Imaging suporta apenas formatos de imagem JPEG e PNG. Para outros formatos, é necessário anexar o `bfc=off` modificador ao URL, conforme descrito anteriormente.
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 Além disso, consulte [Estou qualificado para usar a Imagem inteligente?](#am-i-eligible-to-use-smart-imaging) para entender os pré-requisitos para o Smart Imaging.
 
