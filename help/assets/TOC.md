@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do usuário dos ativos AEM 6.5
 translation-type: tm+mt
-source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
+source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
 
 ---
 
@@ -34,6 +34,7 @@ source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
    + [Configuração do Dynamic Media - modo Scene7](config-dms7.md)
    + [Configuração do Dynamic Media - Modo híbrido](config-dynamic.md)
    + [Solução de problemas do Dynamic Media - modo Scene7](troubleshoot-dms7.md)
+   + [Migração do Dynamic Media - Modo híbrido para o Dynamic Media - Modo S7](migrate-from-hybrid-to-dms7.md)
    + [Gerenciamento de ativos da mídia dinâmica](managing-assets.md)
    + [Práticas recomendadas para otimização da qualidade de imagens](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gerenciamento de predefinições do visualizador de mídia dinâmica](managing-viewer-presets.md)
@@ -121,7 +122,7 @@ source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
    + [Esquema de metadados de pastas](folder-metadata-schema.md)
    + [Gerenciar tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configurar ativos AEM com o Portal de marcas](configure-aem-assets-with-brand-portal.md)
+   + [Configurar o AEM Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos no Brand Portal](brand-portal-publish-assets.md)
    + [Publicar pastas no Brand Portal](brand-portal-publish-folder.md)
    + [Publicar coleções no Brand Portal](brand-portal-publish-collection.md)
