@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7aba1f3b492a07fe502f95535a94c8054a044eb5
+source-git-commit: f466193a259d9e8869d7f79eafda1be20869e4af
 
 ---
 
@@ -23,7 +23,7 @@ As principais diferenças adicionais entre o Dynamic Media-Hybrid e o Dynamic Me
 * Criação e armazenamento de execuções de imagem.
 * Configuração e credenciais da nuvem (provisionamento).
 
-Duas opções estão disponíveis ao mover do Dynamic Media-Hybrid para o Dynamic Media-Scene7. A primeira opção é simplesmente provisionar uma nova instância do Dynamic Media-Scene7 no AEM. A segunda opção é migrar a instância existente do Dynamic Media-Hybrid para o Dynamic Media-Scene7. Esta opção descreve o formulário de tabela abaixo das etapas e considerações que você deve realizar durante a mudança.
+Duas opções estão disponíveis quando você muda do Dynamic Media-Hybrid para o Dynamic Media-Scene7. A primeira opção é simplesmente provisionar uma nova instância do Dynamic Media-Scene7 no AEM. A segunda opção é migrar a instância existente do Dynamic Media-Hybrid para o Dynamic Media-Scene7. Esta opção descreve o formulário de tabela abaixo das etapas e considerações que você deve realizar durante a mudança.
 
 >[!IMPORTANT]
 >
