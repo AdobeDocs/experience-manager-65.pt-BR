@@ -1,14 +1,9 @@
 ---
 title: Configurar os plug-ins do Editor de Rich Text
-description: Saiba como configurar os plug-ins do Editor de Rich Text do AEM para ativar funcionalidades individuais.
-uuid: 012552b7-5e32-4d74-be07-b441c3d4b47b
+description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
-mini-toc-levels: 1
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -21,7 +16,7 @@ Para obter detalhes sobre as outras configurações do RTE, consulte [Configurar
 
 >[!NOTE]
 >
->Ao trabalhar com o CRXDE Lite, é recomendável salvar as alterações regularmente usando Salvar tudo.
+>Ao trabalhar com o CRXDE Lite, é recomendável salvar as alterações regularmente usando a opção [!UICONTROL Salvar tudo] .
 
 ## Ativar um plug-in e configurar a propriedade features {#activateplugin}
 
@@ -315,7 +310,7 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
 
    * **Nome** `cssName`
    * **Tipo** `String`
-   * **Valor** O nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
+   * **Valor** O nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
 
 1. Adicione a propriedade `text` ao mesmo nó; isso define o texto mostrado na caixa de seleção:
 
@@ -600,20 +595,18 @@ Se você especificar o CSS e a string de estilo no código, a classe CSS terá p
 Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Estes são então selecionados de acordo com o idioma do site, tirando a propriedade de idioma da subárvore ou extraindo o idioma do URL; por exemplo. a `/en/` sucursal é verificada em inglês, a `/de/` sucursal em alemão.
 
 >[!NOTE]
-A mensagem &quot;Falha na verificação ortográfica&quot;. é exibido se uma verificação for feita para um idioma que não está instalado.
+A mensagem `Spell checking failed` é exibida se houver tentativa de verificação de um idioma que não esteja instalado. Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos readme apropriados. Não modifique os arquivos.
 
-Uma instalação padrão do AEM inclui os dicionários para:
-
-* Inglês Americano (pt_br)
-* Inglês britânico (en_gb)
-
->[!NOTE]
-Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos readme apropriados. Não modifique os arquivos.
-
-Para adicionar mais dicionários, se necessário, siga estas etapas.
+Uma instalação padrão do AEM inclui os dicionários para inglês americano (`en_us`) e inglês britânico (`en_gb`). Para adicionar mais dicionários, siga estas etapas.
 
 1. Navegue até a página [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Selecione o idioma necessário e baixe o arquivo ZIP com as definições de ortografia. Extraia o conteúdo do arquivo em seu sistema de arquivos.
+
+1. Execute um dos procedimentos a seguir para encontrar um dicionário de sua escolha de idioma:
+
+   * Procure o dicionário de sua escolha de idioma. Na página do dicionário, localize o link para a página da Web da fonte original ou do autor. Localize os arquivos de dicionário da v2.x nessa página.
+   * Procure arquivos de dicionário v2.x em [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+
+1. Baixe o arquivo com as definições de ortografia. Extraia o conteúdo do arquivo em seu sistema de arquivos.
 
    >[!CAUTION]
    Somente os dicionários no `MySpell` formato para OpenOffice.org v2.0.1 ou anterior são suportados. Como os dicionários agora são arquivos de arquivamento, recomenda-se verificar o arquivo após o download.
@@ -622,9 +615,8 @@ Para adicionar mais dicionários, se necessário, siga estas etapas.
 1. Carregue os arquivos .aff e .dic no repositório em `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você start digitar um texto.
-Para executar o verificador ortográfico, toque/clique no botão Verificador ortográfico da barra de ferramentas. O RTE verifica a ortografia de palavras e realça palavras com ortografia incorreta.
-Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto muda e as palavras com ortografia incorreta não são mais destacadas. Para executar o verificador ortográfico, toque/clique novamente no botão Verificador ortográfico.
+O verificador ortográfico do RTE está disponível sob demanda. Ele não é executado automaticamente à medida que você start digitar um texto. Para executar o verificador ortográfico, clique em Verificador [!UICONTROL ortográfico] na barra de ferramentas. O RTE verifica a ortografia das palavras e realça as palavras com erro ortográfico.
+Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto muda e as palavras com erros ortográficos não serão mais destacadas. Para executar o verificador ortográfico, toque/clique novamente no botão Verificador ortográfico.
 
 ## Configurar o tamanho do histórico para ações de desfazer e refazer {#undohistory}
 
@@ -720,12 +712,12 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
       * **Nome** `cssInternal`
       * **Tipo** `String`
-      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
+      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
    * Estilo CSS para links externos
 
       * **Nome** `cssExternal`
       * **Tipo** `String`
-      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; por exemplo, `cssClass` em vez de `.cssClass`)
+      * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
    * Matriz de **protocolos** válidos (incluindo https://, https:// file://, mailto:, entre outros)
 
       * **Nome** `protocols`
