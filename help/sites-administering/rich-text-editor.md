@@ -1,13 +1,9 @@
 ---
-title: 'Configure o Editor de Rich Text para criar conteúdo no AEM '
-description: Saiba como configurar o Editor de Rich Text do AEM para criar conteúdo no AEM.
-uuid: 4f87745e-586a-4cba-887b-391e37520ffc
+title: Configure o Editor de Rich Text para criar conteúdo no Adobe Experience Manager.
+description: Saiba como configurar o Editor de Rich Text do Adobe Experience Manager para criar conteúdo no Adobe Experience Manager.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
-docset: aem65
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -16,19 +12,17 @@ source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 O Editor de Rich Text (RTE) fornece aos autores uma ampla variedade de funcionalidades para editar seu conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto WYSIWYG.
 
-O RTE pode ser configurado para ativar, desativar e estender os recursos disponíveis nos componentes de criação. Para saber como usar os recursos do RTE para criação, consulte [Usar o Editor de Rich Text para criação](/help/sites-authoring/rich-text-editor.md).
+Para saber como usar os recursos do RTE para criação, consulte [Usar o Editor de Rich Text para criação](/help/sites-authoring/rich-text-editor.md). O RTE pode ser configurado para ativar, desativar e estender os recursos disponíveis nos componentes de criação. O fluxo de trabalho a seguir ilustra uma ordem recomendada de conclusão das tarefas de configuração do RTE no Experience Manager.
 
-O fluxo de trabalho a seguir ilustra uma ordem recomendada para a conclusão das tarefas de configuração do RTE.
-
-![Sequência de etapas para saber como configurar a taxa](assets/rte_workflow_v1.png)
+![Sequência de etapas para saber como configurar o RTE](assets/rte_workflow_v1.png)
 
 *Figura: Sequência de etapas para saber como configurar o RTE*
 
 ## Entenda a interface habilitada para toque e a interface clássica {#understand-touch-enabled-ui-and-classic-ui}
 
-A interface habilitada para toque é a interface de usuário padrão do AEM. A Adobe introduziu a interface do usuário para toque com design [](/help/sites-authoring/responsive-layout.md) responsivo para o ambiente de criação. A interface do usuário de toque foi projetada para dispositivos de toque e desktop. A interface do usuário é consideravelmente diferente da interface clássica original.
+A interface habilitada para toque é a interface de usuário padrão do Experience Manager. A Adobe introduziu a interface habilitada para toque com design [](/help/sites-authoring/responsive-layout.md) responsivo para o ambiente de criação. A interface habilitada para toque foi projetada para dispositivos de toque e desktop. A interface é consideravelmente diferente da interface clássica original.
 
-![Barra de ferramentas do Editor de Rich Text na interface habilitada para toque](assets/chlimage_1-35.png)
+![Barra de ferramentas do Editor de Rich Text na interface do usuário habilitada para toque](assets/chlimage_1-35.png)
 
 *Figura: Barra de ferramentas do Editor de Rich Text na interface habilitada para toque*
 
@@ -39,14 +33,14 @@ A interface habilitada para toque é a interface de usuário padrão do AEM. A A
 >[!MORELIKETHIS]
 >
 >* [Recomendações da interface do usuário](/help/sites-deploying/ui-recommendations.md)
->* Sobre a substituição da interface clássica, consulte Notas de versão do [AEM 6.5](/help/release-notes/deprecated-removed-features.md)
+>* Sobre a substituição da interface clássica, consulte Notas de versão do [Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
 >* Para obter a diferença entre as interfaces de usuário, consulte Interface de usuário [sensível ao toque e Interface clássica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Para entender a interface habilitada para toque em detalhes, consulte [Conceitos da interface do usuário de toque do AEM](/help/sites-developing/touch-ui-concepts.md)
+>* Para entender a interface habilitada para toque em detalhes, consulte [Conceitos da interface do usuário para toque do Experience Manager](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## Vários modos de edição {#editingmodes}
 
-Os autores podem criar e editar conteúdo textual no AEM usando os diferentes modos de componentes. As opções da barra de ferramentas para criação e formatação de conteúdo e a experiência do usuário dos componentes habilitados para RTE em diferentes modos de edição variam com base nas configurações do RTE.
+Os autores podem criar e editar conteúdo textual no Experience Manager usando os diferentes modos de componentes. As opções da barra de ferramentas para criação e formatação de conteúdo e a experiência do usuário dos componentes habilitados para RTE em diferentes modos de edição variam com base nas configurações do RTE.
 
 | Modo de edição | Área de edição | Recursos recomendados a serem ativados | Interface do usuário de toque | Interface do usuário clássica |
 |--- |--- |--- |--- |--- |
@@ -61,17 +55,17 @@ Os autores podem criar e editar conteúdo textual no AEM usando os diferentes mo
 
 ### Edição em linha {#inline-editing}
 
-Quando aberto (com um toque/clique duplo lento), o conteúdo pode ser editado dentro da página. Uma barra de ferramentas compacta com opções muito básicas é apresentada.
+Quando aberto (com um toque/clique lento em duplo), o conteúdo pode ser editado dentro da página. Uma barra de ferramentas compacta com opções muito básicas é apresentada.
 
 ![Edição em linha com barra de ferramentas básica na interface habilitada para toque](assets/chlimage_1-36.png)
 
 *Figura: Edição em linha com barra de ferramentas básica na interface habilitada para toque*
 
-Na interface clássica, um clique duplo lento no componente permite a edição em linha e um contorno laranja destaca o conteúdo. Se o Localizador de conteúdo estiver aberto, uma barra de ferramentas com as opções de formatação RTE disponíveis será exibida na parte superior da janela. Se o Localizador de conteúdo não estiver aberto, as opções de formatação não serão exibidas e você só poderá fazer edições de texto básicas.
+Na interface clássica, um clique lento em duplo no componente permite a edição em linha e um contorno laranja destaca o conteúdo. Se o Localizador de conteúdo estiver aberto, uma barra de ferramentas com as opções de formatação RTE disponíveis será exibida na parte superior da janela. Se o Localizador de conteúdo não estiver aberto, as opções de formatação não serão exibidas e você só poderá fazer edições de texto básicas.
 
 ### Full screen editing {#full-screen-editing}
 
-Os componentes do AEM podem ser abertos na exibição em tela cheia que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia de uma versão detalhada da edição em linha, já que ela oferece as opções de edição mais avançadas. Para abri-lo, clique em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
+Os componentes do Experience Manager podem ser abertos na visualização de tela cheia que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia de uma versão detalhada da edição em linha, já que ela oferta mais opções de edição. Para abri-lo, clique em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
 
 No modo de tela cheia da caixa de diálogo, juntamente com uma barra de ferramentas RTE detalhada, as opções e os componentes disponíveis em uma caixa de diálogo também estão disponíveis. É aplicável somente para uma caixa de diálogo que contém o RTE junto com outros componentes.
 
@@ -81,7 +75,7 @@ No modo de tela cheia da caixa de diálogo, juntamente com uma barra de ferramen
 
 ### Edição de diálogo {#dialog-editing}
 
-Quando um componente é clicado duas vezes, uma caixa de diálogo é aberta para edição do conteúdo. A caixa de diálogo é aberta na parte superior da página existente. Em alguns cenários específicos, a caixa de diálogo é aberta como uma janela pop-up. Por exemplo, quando um componente de Texto faz parte de uma coluna em um layout de página de várias colunas e a área disponível para a caixa de diálogo é menor.
+Quando um componente é clicado em duplo, uma caixa de diálogo é aberta para edição do conteúdo. A caixa de diálogo é aberta na parte superior da página existente. Em alguns cenários específicos, a caixa de diálogo é aberta como uma janela pop-up. Por exemplo, quando um componente de Texto faz parte de uma coluna em um layout de página de várias colunas e a área disponível para a caixa de diálogo é menor.
 
 ![Modo de edição de diálogo na interface habilitada para toque](assets/dialog_editing_modetouchui.png)
 
@@ -110,7 +104,6 @@ A tabela a seguir lista os plug-ins atuais, mostrando:
 * Valores permitidos para a `features` propriedade.
 * Uma descrição da funcionalidade fornecida pelo plug-in.
 
-
 | ID do plug-in | feições | Descrição |
 |--- |--- |--- |
 | editar | copiar colar - padrão colar - texto simples colar-pasta-pasta-wordhtml | [Corte, copie e, os três modos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)de colagem. |
@@ -120,8 +113,8 @@ A tabela a seguir lista os plug-ins atuais, mostrando:
 | [teclas](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Para definir esse valor, consulte o tamanho [da](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)guia. |
 | [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justificativa justificativa justificativa | Alinhamento de parágrafo. |
 | [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modiylink desvincular âncora | [Hiperlinks e âncoras](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | recuo não ordenado recuado pedido | Esse plug-in controla tanto o [recuo quanto as listas](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); incluindo listas aninhadas. |
-| [miscelânea](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | sourceedit de especialistas | Ferramentas diversas permitem que os autores digitem caracteres [](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) especiais ou editem a fonte HTML. Além disso, você pode adicionar um [intervalo completo de caracteres](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) especiais se desejar definir sua própria lista. |
+| [listas](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | recuo não ordenado recuado pedido | Este plug-in controla tanto o [recuo quanto o lista](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); incluindo listas aninhadas. |
+| [miscelânea](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | sourceedit de especialistas | Ferramentas diversas permitem que os autores digitem caracteres [](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) especiais ou editem a fonte HTML. Além disso, você pode adicionar uma [gama completa de caracteres](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) especiais se desejar definir sua própria lista. |
 | Paraformat | paraformat | Os formatos de parágrafo padrão são Parágrafo, Cabeçalho 1, Cabeçalho 2 e Cabeçalho 3 (`<p>`, `<h1>`, `<h2>`e `<h3>`). É possível [adicionar mais formatos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) de parágrafo ou estender a lista. |
 | verificação ortográfica | checktext | [Verificador ortográfico](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)com reconhecimento de idioma. |
 | estilos | estilos | Suporte para estilização usando uma classe CSS. [Adicione novos estilos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) de texto se desejar adicionar (ou estender) seu próprio intervalo de estilos para uso com texto. |
@@ -160,11 +153,11 @@ Configure as seguintes propriedades que se aplicam no modo de edição de Diálo
 
    Quando essa propriedade é verdadeira, a edição de Richtext é, por padrão, iniciada no evento &quot;base-contentloaded&quot;.
 
-   Para evitar isso, defina a propriedade `customStart` como `True`e dispare o evento &#39;início-da-taxa&#39; para iniciar a edição do RTE. Quando essa propriedade for &#39;true&#39;, o comportamento padrão, iniciar na hora do clique, não funcionará.
+   Para evitar isso, defina a propriedade `customStart` como `True`e dispare o evento &#39;start de taxa&#39; para a edição do RTE de start. Quando essa propriedade for &#39;true&#39;, o comportamento padrão, start de taxa ao clicar, não funcionará.
 
-* `customStart`: Defina essa propriedade Booliana definida no nó RTE como `True`, para controlar quando iniciar o RTE acionando o evento `rte-start`.
+* `customStart`: Defina essa propriedade Booliana definida no nó RTE como `True`, para controlar quando start o RTE acionando o evento `rte-start`.
 
-* `rte-start`: Acionar esse evento no RTE, quando iniciar a edição `contenteditable-div` do RTE. Isso funciona somente se `customStart` tiver sido definido como verdadeiro.
+* `rte-start`: Acionar esse evento no RTE, quando `contenteditable-div` a edição do ERT do start for ativada. Isso funciona somente se `customStart` tiver sido definido como verdadeiro.
 
 Quando o RTE é usado na caixa de diálogo habilitada para toque, a definição da propriedade `useFixedInlineToolbar` como true é obrigatória para evitar problemas.
 
@@ -180,7 +173,7 @@ Para obter configurações detalhadas dos plug-ins RTE, consulte [como ativar e 
 >
 >O componente [de texto Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) principais permite que os editores de modelo configurem muitos plug-ins RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com configurações de interface do usuário do RTE, conforme descrito neste documento.
 >
->Para obter mais informações, consulte a seção Configurações da interface do usuário do [RTE e políticas](/help/sites-administering/rich-text-editor.md) de conteúdo deste documento, bem como [Criar modelos](/help/sites-authoring/templates.md) de página e a documentação [do desenvolvedor dos Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)principais.
+>Para obter mais informações, consulte a seção Configurações da interface do usuário do [RTE e políticas](/help/sites-administering/rich-text-editor.md) de conteúdo deste documento, bem como [Criação de modelos](/help/sites-authoring/templates.md) de página e a documentação [do desenvolvedor dos Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)principais.
 
 >[!NOTE]
 >
@@ -245,7 +238,7 @@ Se o botão for um pop-up (contendo alguns recursos de um plug-in), ele será es
 
 Os separadores (`|`) entre um grupo de botões podem ser especificados com `-`.
 
-O nó pop-up no modo em linha ou em tela cheia contém uma lista das opções que estão sendo usadas. Cada nó filho sob o nó &#39;propovers&#39; é nomeado após o plug-in (por exemplo, format). Ela tem uma propriedade &quot;items&quot; que contém uma lista de recursos do plug-in (por exemplo, format#bold).
+O nó pop-up no modo em linha ou em tela cheia contém uma lista das opções que estão sendo usadas. Cada nó filho sob o nó &#39;propovers&#39; é nomeado após o plug-in (por exemplo, format). Ele tem uma propriedade &quot;items&quot; que contém uma lista de recursos do plug-in (por exemplo, format#bold).
 
 ## Configurações e políticas de conteúdo da interface do usuário do RTE {#rtecontentpolicies}
 
@@ -333,7 +326,7 @@ Em particular, para ver os plug-ins e as opções relacionadas disponíveis:
 
 * Mais informações sobre Regras HTML para links também estão disponíveis.
 
-Eles podem ser usados para estender e personalizar seu próprio RTE. Por exemplo, para listar as âncoras disponíveis na página ao criar um link, você pode fornecer sua própria implementação do `LinkPlugin`.
+Eles podem ser usados para estender e personalizar seu próprio RTE. Por exemplo, para lista das âncoras disponíveis na página ao criar um link, você pode fornecer sua própria implementação do `LinkPlugin`.
 
 ## Limitações conhecidas {#known-limitations}
 
@@ -377,7 +370,7 @@ Para verificar se o HTML colado está salvo, verifique o conteúdo salvo no CRXD
 
 Se não for salvo, o HTML deverá ter sido removido pelo RTE, pois não aderiu às regras do RTE.
 
-Se for salvo no CRXDE, mas não for renderizado na página (para verificar a renderização, consulte a [visualização](/help/sites-authoring/editing-content.md#preview-mode)da página, ela será removida pelas regras do AEM XSS.
+Se for salvo no CRXDE, mas não for renderizado na página (para verificar a renderização, consulte a [pré-visualização](/help/sites-authoring/editing-content.md#preview-mode)da página, ela será removida pelas regras do AEM XSS.
 
 **O componente de vários campos não está funcionando como esperado**
 
