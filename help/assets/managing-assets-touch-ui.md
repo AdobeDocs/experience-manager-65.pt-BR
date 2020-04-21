@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
 
 ---
 
@@ -478,15 +478,15 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
 1. Toque/clique no ativo para abrir sua página de ativos.
 
-   ![chlimage_1-220](assets/chlimage_1-15.png)
+   ![Página Detalhes de ativos para gerenciar execuções](assets/chlimage_1-15.png)
 
 1. Toque/clique no ícone GlobalNav e selecione **[!UICONTROL Representações]** na lista.
 
-   ![renditions_menu](assets/renditions_menu.png)
+   ![Painel esquerdo para abrir o menu e selecionar a opção Representações](assets/renditions_menu.png)
 
 1. No painel **[!UICONTROL Representações]** , visualização a lista de representações geradas para o ativo.
 
-   ![renditions_panel](assets/renditions_panel.png)
+   ![Painel Representações na página Detalhes de ativos](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    Navegue até a página de detalhes do ativo e toque/clique no ícone **[!UICONTROL Adicionar representação]** na barra de ferramentas para fazer upload de uma nova representação do ativo.
 
-   ![chlimage_1-221](assets/chlimage_1-16.png)
+   ![Adicionar ícone Representação para carregar nova representação](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -516,7 +516,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    Da mesma forma, é possível personalizar a imagem da página Anotar sobrepondo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-17.png)
+   ![Sobrepor nó do seletor de representação no CRXDE para personalizar a imagem da página de anotação](assets/chlimage_1-17.png)
 
    Para configurar dimensões de representação para um ativo de vídeo, navegue até o `videopicker` nó no repositório CRX no local, sobreponha o nó `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`e edite a propriedade apropriada.
 
@@ -536,7 +536,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 1. Selecione o ativo e toque/clique no ícone **[!UICONTROL Excluir]** na barra de ferramentas.
 
-   ![delete_icon](assets/delete_icon.png)
+   ![Ícone Excluir](assets/delete_icon.png)
 
 1. Na caixa de diálogo de confirmação, clique em:
 
@@ -584,11 +584,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Selecione o ativo/pasta para cancelar a publicação e toque/clique no ícone **[!UICONTROL Gerenciar publicação]** na barra de ferramentas.
 
-   ![manage_publication](assets/manage_publication.png)
+   ![Ícone Gerenciar publicação](assets/manage_publication.png)
 
 1. Selecione a ação **[!UICONTROL Cancelar publicação]** na lista.
 
-   ![unpublish_action](assets/unpublish_action.png)
+   ![Ação Cancelar publicação](assets/unpublish_action.png)
 
 1. Para cancelar a publicação do ativo mais tarde, selecione **[!UICONTROL Cancelar publicação mais tarde]** e selecione uma data para cancelar a publicação do ativo.
 1. Agende uma data para o ativo ficar indisponível a partir do ambiente de publicação.
@@ -610,11 +610,11 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
 1. Selecione uma pasta na interface do usuário do Assets e toque/clique no ícone Propriedades na barra de ferramentas para exibir a página de propriedades.
 1. Na guia **[!UICONTROL Permissões]** , adicione membros ou grupos em Grupo **[!UICONTROL de usuários]** fechado.
 
-   ![add_user](assets/add_user.png)
+   ![Adicionar usuário ao grupo de usuários fechado](assets/add_user.png)
 
 1. Para exibir uma tela de logon quando os usuários acessarem a pasta, selecione a opção **[!UICONTROL Ativar]** . Em seguida, selecione o caminho para uma página de logon no AEM e salve as alterações.
 
-   ![login_page](assets/login_page.png)
+   ![Ativar e selecionar a página de login a ser exibida quando o usuário acessar a pasta](assets/login_page.png)
 
    >[!NOTE]
    >
@@ -642,13 +642,13 @@ Você pode visualização, navegar e selecionar ativos com qualquer uma das visu
 
 Na visualização de lista e na visualização de coluna, a opção **[!UICONTROL Selecionar]** é exibida quando você passa o ponteiro do mouse sobre a miniatura do ativo.
 
-![select_quick_in_listview](assets/select_quick_in_listview.png)
+![Selecionar ativos na visualização de lista](assets/select_quick_in_listview.png)
 
-![select_quick_in_columnview](assets/select_quick_in_columnview.png)
+![Selecionar ativos na visualização de colunas](assets/select_quick_in_columnview.png)
 
 Na visualização do cartão, a opção **[!UICONTROL Selecionar]** é exibida como uma ação rápida.
 
-![select_quick_action](assets/select_quick_action.png)
+![Selecionar ação rápida na visualização do cartão](assets/select_quick_action.png)
 
 Ao navegar em uma pasta ou coleção na interface do usuário Ativos em um navegador, você pode selecionar todos os ativos exibidos ou carregados usando a opção [!UICONTROL Selecionar tudo] no canto superior direito. Inicialmente, apenas 100 ativos são carregados na visualização do cartão e 200 são carregados na visualização da lista. Mais ativos são carregados na visualização à medida que você percorre a página de resultados da pesquisa. A opção [!UICONTROL Selecionar tudo] seleciona somente os ativos carregados.
 
@@ -667,36 +667,36 @@ As ferramentas de edição na interface do AEM Assets permitem executar pequenos
    * Selecione o ativo e clique/toque no ícone **[!UICONTROL Editar]** na barra de ferramentas.
    * Toque/clique no ícone **[!UICONTROL Editar]** que aparece em um ativo na visualização Cartão.
    * Na página do ativo, toque/clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
-   ![edit_icon](assets/edit_icon.png)
+   ![Ícone Editar na barra de ferramentas](assets/edit_icon.png)
 
 1. Para recortar a imagem, toque/clique no ícone **Recortar** .
 
-   ![chlimage_1-226](assets/chlimage_1-22.png)
+   ![Ícone Cortar](assets/chlimage_1-22.png)
 
 1. Selecione a opção desejada na lista. A área de corte aparece na imagem com base na opção escolhida. A opção **Mão livre** permite cortar a imagem sem restrições de proporção.
 
-   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
+   ![Opções de corte](/help/assets/assets/chlimage_1-23.png)
 
 1. Selecione a área a ser cortada e redimensione ou reposicione-a na imagem.
 1. Use o ícone **Concluir** (canto superior direito) para cortar a imagem. Clicar no ícone **Concluir** também aciona a regeneração de execuções.
 
-   ![chlimage_1-228](assets/chlimage_1-24.png)
+   ![Ícone Concluir](assets/chlimage_1-24.png)
 
 1. Use os ícones **Desfazer** e **Refazer** na parte superior direita para reverter para a imagem não cortada ou manter a imagem cortada, respectivamente.
 
-   ![chlimage_1-229](assets/chlimage_1-25.png)
+   ![Ícones Desfazer e refazer](assets/chlimage_1-25.png)
 
 1. Toque/clique no ícone Girar apropriado para girar a imagem no sentido horário ou anti-horário.
 
-   ![chlimage_1-230](assets/chlimage_1-26.png)
+   ![Ícones de giro no sentido horário e anti-horário](assets/chlimage_1-26.png)
 
 1. Toque/clique no ícone Virar apropriado para virar a imagem na horizontal ou na vertical.
 
-   ![chlimage_1-231](assets/chlimage_1-27.png)
+   ![Ícones para virar a imagem na horizontal ou na vertical](assets/chlimage_1-27.png)
 
 1. Toque/clique no ícone **Concluir** para salvar as alterações.
 
-   ![chlimage_1-232](assets/chlimage_1-28.png)
+   ![Ícone Concluir](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -739,11 +739,11 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    * [Ações rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
-   ![chlimage_1-233](assets/chlimage_1-29.png)
+   ![Ícone Anotar](assets/chlimage_1-29.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
 
-   ![chlimage_1-234](assets/chlimage_1-30.png)
+   ![Caixa Comentário na caixa de diálogo Adicionar anotação](assets/chlimage_1-30.png)
 
 1. Para notificar um usuário sobre uma anotação, especifique o endereço de email do usuário e adicione o comentário. Por exemplo, para notificar Aaron MacDonald sobre uma anotação, digite @aa. As dicas para todos os usuários correspondentes são exibidas em uma lista. Selecione o endereço de email do Aaron na lista para marcá-la com o comentário. Da mesma forma, você pode marcar mais usuários em qualquer lugar dentro da anotação ou antes ou depois dela.
 
@@ -751,11 +751,11 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
    >
    >Para um usuário que não seja administrador, as sugestões serão exibidas somente se o usuário tiver permissões de Leitura em */home* no Crx-de.
 
-   ![chlimage_1-235](assets/chlimage_1-31.png)
+   ![Especifique o endereço de email do usuário e adicione comentários para notificar o usuário](assets/chlimage_1-31.png)
 
 1. Depois de adicionar a anotação, clique em **[!UICONTROL Adicionar]** para salvá-la. Uma notificação para a anotação é enviada para Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-32.png)
+   ![Botão Adicionar para salvar uma anotação](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -786,15 +786,15 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
 1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha]** do tempo na lista.
 
-   ![chlimage_1-239](assets/chlimage_1-35.png)
+   ![Opções disponíveis no ícone GlobalNav](assets/chlimage_1-35.png)
 
 1. Na lista **[!UICONTROL Exibir todos]** na linha do tempo, selecione **[!UICONTROL Comentários]** para filtrar os resultados com base em anotações.
 
-   ![chlimage_1-240](assets/chlimage_1-36.png)
+   ![Mostrar todas as listas na linha do tempo](assets/chlimage_1-36.png)
 
    Toque/clique em um comentário no painel **[!UICONTROL Linha]** do tempo para visualização a anotação correspondente na imagem.
 
-   ![chlimage_1-241](assets/chlimage_1-37.png)
+   ![Painel Linha do tempo para visualização de anotação na imagem](assets/chlimage_1-37.png)
 
    Toque/clique em **[!UICONTROL Excluir]** para excluir um comentário específico.
 
@@ -814,15 +814,15 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
 1. Para imprimir anotações específicas, selecione as anotações na linha do tempo.
 
-   ![chlimage_1-242](assets/chlimage_1-38.png)
+   ![Selecione uma anotação da Linha do tempo para imprimi-la](assets/chlimage_1-38.png)
 
    Para imprimir somente o status da revisão, selecione-o na linha do tempo.
 
-   ![chlimage_1-243](assets/chlimage_1-39.png)
+   ![Para imprimir somente o status de revisão da Anotação, selecione-a na Linha do tempo](assets/chlimage_1-39.png)
 
 1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
-   ![chlimage_1-244](assets/chlimage_1-40.png)
+   ![Ícone Imprimir na barra de ferramentas](assets/chlimage_1-40.png)
 
 1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se desejar que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Superior esquerda** . Está selecionado por padrão.
 
@@ -836,11 +836,11 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
 1. Toque/clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
 
-   ![chlimage_1-246](assets/chlimage_1-42.png)
+   ![Anotação e status de revisão no PDF gerado](assets/chlimage_1-42.png)
 
 1. Baixe ou imprima o PDF usando as opções na parte superior direita.
 
-   ![chlimage_1-247](assets/chlimage_1-43.png)
+   ![Opções de download e impressão em PDF](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -848,7 +848,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, a cor de plano de fundo dos comentários e status, abra a configuração **[!UICONTROL do PDF de]** anotação no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-44.png)
+   ![Configuração para imprimir anotação de ativo no documento PDF](assets/chlimage_1-44.png)
 
    Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
 
@@ -905,7 +905,7 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
    * Clique em **[!UICONTROL Salvar como versão]** para criar uma versão para o ativo. Como opção, adicione um rótulo e um comentário.
    * Clique em **[!UICONTROL Criar]** para criar uma versão.
 
-      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+      ![Criar versão de ativo da barra lateral](assets/create-new-version-from-timeline.png)
 
       *Figura: Crie uma versão de um ativo na barra lateral esquerda da[!UICONTROL Linha do tempo].*
 
@@ -914,7 +914,7 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
    * Clique em **[!UICONTROL Mostrar tudo]** na [!UICONTROL Linha do tempo].
    * Clique em **[!UICONTROL Versões]**. Todas as versões criadas para um ativo são listadas na barra lateral esquerda.
 
-      ![version_option](assets/versions_option.png)
+      ![ Selecione a opção Versões na Linha do tempo](assets/versions_option.png)
 
    * Selecione uma versão específica do ativo e clique em Versão **[!UICONTROL da]** Pré-visualização.
 
@@ -923,7 +923,7 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
    * Clique em uma versão do ativo. Como opção, adicione um rótulo e um comentário.
    * Click **[!UICONTROL Revert to this Version]**.
 
-      ![select_version](assets/select_version.png)
+      ![Selecione uma versão para reverter para ela](assets/select_version.png)
 
       *Figura: Selecione uma versão e reverta para ela. Ela se torna a versão atual que está disponível para os usuários do DAM.*
 
