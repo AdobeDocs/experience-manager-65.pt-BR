@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
 
 ---
 
@@ -26,8 +26,7 @@ A amostra, discutida neste documento, é uma implementação de referência de d
 >
 >* Os exemplos e configurações explicados neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los adequadamente para o seu sistema de banco de dados.
 >* Verifique se você instalou a versão mais recente do pacote complementar AEM Forms. Para obter a lista dos pacotes disponíveis, consulte o artigo de versões [do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
->
-
+> * O pacote de amostra funciona somente com ações de envio de formulários adaptativos.
 
 
 ## Configurar e configurar a amostra {#set-up-and-configure-the-sample}
