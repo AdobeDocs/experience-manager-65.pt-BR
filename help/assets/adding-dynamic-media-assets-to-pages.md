@@ -9,27 +9,27 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 202e4d5d0e3fa285b9973e4709a02ca77ccb6e71
 
 ---
 
 
 # Adição de ativos de Mídia dinâmica a páginas{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. Para fazer isso, entre no modo Layout e ative os componentes Mídia dinâmica. Em seguida, você pode adicionar esses componentes à página e adicionar ativos ao componente. Os componentes do Dynamic Media são inteligentes - eles sabem se você está adicionando uma imagem ou um vídeo e as opções de configuração disponíveis mudam de acordo.
+Para adicionar a funcionalidade Dynamic Media aos ativos que você usa nos sites, é possível adicionar o componente **Dynamic Media**, **Mídia interativa**, **Mídia panorâmica** ou **Mídia de vídeo 360** diretamente na página. Para fazer isso, entre no modo Layout e ative os componentes do Dynamic Media. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. Os componentes do Dynamic Media são inteligentes - eles sabem se você está adicionando uma imagem ou um vídeo e as opções de configuração disponíveis mudam de acordo.
 
-Você adiciona ativos de Mídia dinâmica diretamente à página se estiver usando o AEM como seu WCM. Se você estiver usando um dispositivo terceirizado para seu WCM, [vincule](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorpore](/help/assets/embed-code.md) seus ativos. Para obter um site responsivo de terceiros, consulte [fornecendo imagens otimizadas para um site](/help/assets/responsive-site.md)responsivo.
+Você adiciona ativos do Dynamic Media diretamente à página se estiver usando o AEM como o WCM. Se estiver usando um dispositivo de terceiros no WCM, [vincule](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorpore](/help/assets/embed-code.md) os ativos. Para obter um site responsivo de terceiros, consulte [Fornecer imagens otimizadas para um site responsivo](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->Você deve publicar ativos antes de adicioná-los às páginas no AEM. Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md)de mídia dinâmica.
+>Você deve publicar ativos antes de adicioná-los às páginas no AEM. See [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
 Adicionar um componente de Mídia dinâmica, Mídia interativa, Mídia panorâmica ou Mídia de vídeo 360 a uma página é o mesmo que adicionar um componente a qualquer página. Os componentes do Dynamic Media estão descritos nas seções a seguir.
 
 1. No AEM, abra a página à qual você deseja adicionar o componente Mídia dinâmica.
-1. No painel esquerdo, toque no ícone **[!UICONTROL Componentes]** e filtre para Dynamic Media.
+1. No painel esquerdo, toque no ícone **[!UICONTROL Componentes]** e, em seguida, filtre para Dynamic Media.
 
    Se nenhum componente do Dynamic Media estiver disponível, será necessário ativar ou ativar os componentes do Dynamic Media. Consulte [Edição de modelos](/help/sites-authoring/templates.md#editing-templates-template-authors) de página para obter mais informações.
 
@@ -59,7 +59,7 @@ Adicionar um componente de Mídia dinâmica, Mídia interativa, Mídia panorâmi
 
 Você pode localizar componentes do Dynamic Media de uma das duas maneiras:
 
-* Em uma página da Web em Sites, abra **[!UICONTROL Propriedades]** e selecione a guia **[!UICONTROL Avançado]** . Selecione o idioma desejado para localização.
+* Em uma página da Web no Sites, abra **[!UICONTROL Propriedades]** e selecione a guia **[!UICONTROL Avançado]**. Selecione o idioma desejado para localização.
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
@@ -75,7 +75,7 @@ Os componentes do Dynamic Media estão disponíveis quando você toca no ícone 
 
 Os componentes do Dynamic Media disponíveis incluem:
 
-* **[!UICONTROL Mídia]** dinâmica - use para ativos como imagens, vídeo, eCatalogs e conjuntos de rotação.
+* **[!UICONTROL Dynamic Media]** - use para ativos como imagens, vídeo, eCatalogs e conjuntos de rotação.
 * **[!UICONTROL Interative Media]** - Use para qualquer ativo interativo, como vídeo interativo, imagens interativas ou conjuntos de carrossel.
 * **[!UICONTROL Mídia]** panorâmica - Use para imagens panorâmicas ou ativos de imagem VR panorâmicos.
 * **[!UICONTROL Mídia]** de vídeo 360 - Use para ativos de vídeo 360 e 360 VR.
@@ -98,7 +98,7 @@ O componente Dynamic Media é inteligente. Dependendo de você adicionar uma ima
 >* Cada instância usa o mesmo tipo de ativo.
 >
 >
-Observe que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Dynamic Media nessa página.
+Esteja ciente de que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Dynamic Media nessa página.
 >
 >Entretanto, é possível usar a mesma predefinição do visualizador para todos os componentes do Dynamic Media que usam ativos do mesmo tipo, na página.
 
@@ -113,13 +113,13 @@ O componente Mídia dinâmica permite adicionar imagens dinâmicas, incluindo co
 
 Você também pode configurar a predefinição do visualizador, a predefinição da imagem ou o formato da imagem diretamente no componente. Para tornar uma imagem responsiva, você pode definir os pontos de interrupção ou aplicar uma predefinição de imagem responsiva.
 
-You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Por padrão, o componente de imagem Mídia dinâmica é adaptável. Se você quiser torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura]**.
+>Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura]**.
 
 * **[!UICONTROL Predefinição]** do visualizador: selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador. Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
@@ -162,7 +162,7 @@ Use o componente Mídia dinâmica para adicionar vídeo dinâmico às páginas d
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -192,11 +192,11 @@ Consulte também Perfis [de](/help/assets/image-profiles.md)imagem.
 
 ![dm-settings-smart-cut](assets/dm-settings-smart-crop.png)
 
-You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
->Por padrão, o componente de imagem Mídia dinâmica é adaptável. Se você quiser torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura]**.
+>Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura]**.
 
 * **[!UICONTROL Modificadores]** de imagem—Você pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Elas são descritas nas predefinições de imagem e na referência do Comando de disponibilização de imagem.
 
@@ -222,7 +222,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 O componente Mídia interativa é para ativos que possuem interatividade em pontos de acesso ou mapas de imagem. Se você tiver uma imagem interativa, um vídeo interativo ou um banner de carrossel, use o componente **[!UICONTROL Mídia interativa]**.
 
-O componente de mídia interativa é inteligente. Dependendo de você adicionar uma imagem ou um vídeo, você terá várias opções. Além disso, o visualizador responde: o tamanho da tela muda automaticamente com base no tamanho da tela. Todos são visualizadores HTML5.
+O componente de Mídia interativa é inteligente. Dependendo de você adicionar uma imagem ou um vídeo, você terá várias opções. Além disso, o visualizador responde: o tamanho da tela muda automaticamente com base no tamanho da tela. Todos são visualizadores HTML5.
 
 >[!NOTE]
 >
@@ -263,17 +263,17 @@ O componente de Mídia panorâmica é destinado aos ativos que são imagens pano
 * Uma proporção largura/altura de 2:1.
 * Marcado com as palavras-chave `equirectangular` ou (`spherical` + `panorama`) ou (`spherical` + `panoramic`). Consulte [Uso de tags](/help/sites-authoring/tags.md).
 
-Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos para a página de detalhes do ativo e o componente **[!UICONTROL Panorâmica Media]** WCM.
+Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos da página de detalhes do ativo e o componente **[!UICONTROL Panorâmica Media]** WCM.
 
 >[!NOTE]
 >
 >Se sua página da Web tiver o seguinte:
 >
->* Várias instâncias do componente Mídia **** panorâmica sendo usado na mesma página.
+>* Várias instâncias do componente de Mídia **** panorâmica sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
 >
 >
-Observe que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Mídia **** panorâmica nessa página.
+Observe que não há suporte para a atribuição de uma predefinição do visualizador diferente para cada componente de **[!UICONTROL Mídia panorâmica]** nessa página.
 >
 >Entretanto, é possível usar a mesma predefinição do visualizador para todos os componentes de Mídia panorâmica que usam ativos do mesmo tipo, na página.
 
@@ -291,21 +291,21 @@ Use o componente de mídia **** Vídeo 360 para renderizar vídeo retangular em 
 
 Durante a reprodução num visor plano, o utilizador controla o ângulo de visualização; a reprodução em dispositivos móveis normalmente aproveita seus controles giroscópicos incorporados.
 
-O visualizador inclui suporte nativo para a entrega de 360 ativos de vídeo. Por padrão, nenhuma configuração adicional é necessária para exibir ou reproduzir. Você fornece 360 vídeos usando extensões de vídeo padrão, como .mp4, .mkv e .mov. O codec mais comum é H.264.
+O visualizador inclui suporte nativo para o delivery de 360 ativos de vídeo. Por padrão, nenhuma configuração adicional é necessária para exibir ou reproduzir. Você fornece 360 vídeos usando extensões de vídeo padrão, como .mp4, .mkv e .mov. O codec mais comum é H.264.
 
 ![6_5_360video_wcmcomponent-1](assets/6_5_360video_wcmcomponent-1.png)
 
 Você pode editar a seguinte configuração tocando em **[!UICONTROL Configurar]** no componente.
 
-* **[!UICONTROL Predefinição]** do visualizador — selecione um visualizador existente no menu suspenso Predefinição do visualizador. Use o Video360VR para usuários finais que usam óculos de realidade virtual. Inclui controles básicos de reprodução de vídeo e recursos de mídia social. Use Video360_social, que inclui controles básicos de reprodução de vídeo. A renderização de vídeo é feita no modo estéreo. O controle manual do ponto de vista está desligado, mas o controle giroscópico está ligado. Não há recursos de mídia social.
+* **[!UICONTROL Predefinição]** do visualizador — selecione um visualizador existente no menu suspenso Predefinição do visualizador. Use o Video360VR para usuários finais que usam óculos de realidade virtual. Inclui controles básicos de reprodução de vídeo e recursos de mídia social. Use Video360_social, que inclui controles básicos de reprodução de vídeo. A renderização de vídeo é feita no modo estéreo. O controle manual de ponto de visualização está desligado, mas o controle giroscópico está ligado. Não há recursos de mídia social.
 
 Se a predefinição do visualizador que você está procurando não estiver visível, verifique se ela foi publicada. É necessário publicar as predefinições do visualizador antes de usá-las. Consulte [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
-### Usar HTTP/2 para fornecer ativos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
+### Usar HTTP/2 para delivery de ativos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. A entrega de ativos de Dynamic Media pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte Entrega [HTTP2 de conteúdo](/help/assets/http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte Delivery [HTTP2 de conteúdo](/help/assets/http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
 
 >[!MORELIKETHIS]
 >
