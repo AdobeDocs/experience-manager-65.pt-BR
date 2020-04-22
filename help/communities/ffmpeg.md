@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
 
 ---
 
@@ -27,10 +27,10 @@ FFmpeg é usado no ambiente do autor para obter metadados para recursos de ativa
 
 FFmpeg deve ser instalado nos servidores que hospedam as instâncias de *autor* do AEM.
 
-1. Ir para [https://www.ffmpeg.org](https://www.ffmpeg.org/)
-1. Baixe a versão mais recente do FFmpeg para seu ambiente específico (Macintosh, Windows ou Linux)
+1. Vá para [https://www.ffmpeg.org](https://www.ffmpeg.org/).
+1. Baixe a versão mais recente do FFmpeg para seu ambiente específico (Macintosh, Windows ou Linux).
 
-   * é importante manter o FFmpeg atualizado devido a vulnerabilidades de segurança em versões mais antigas
+   * É importante manter o FFmpeg atualizado devido a vulnerabilidades de segurança em versões mais antigas.
 
 1. Instale o FFmpeg seguindo as instruções para o SO.
 
@@ -38,7 +38,7 @@ FFmpeg deve ser instalado nos servidores que hospedam as instâncias de *autor* 
 
    Você deve ser capaz de executar FFmpeg a partir de qualquer diretório no seu sistema.
 
-   * for example, `ffmpeg -version`
+   * Por exemplo, `ffmpeg -version`.
 
 ## Configurar o serviço de transcodificação FFmpeg {#configure-ffmpeg-transcoding-service}
 
@@ -48,23 +48,23 @@ Como as transcodificações exigem muito da CPU, é recomendável modificar a li
 
 Para modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM e, neste exemplo, desativar a transcodificação:
 
-* Entre na instância do autor com privilégios administrativos
-* Da navegação global: **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**
-* Localizar ativo de atualização **[!UICONTROL DAM]**
-* Clique com o Duplo para abrir o fluxo de trabalho para edição na interface clássica
+* Entre na instância do autor com privilégios administrativos.
+* Na navegação global, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
+* Localize o ativo **[!UICONTROL de atualização do]** DAM.
+* Clique com o Duplo para abrir o fluxo de trabalho para edição na interface clássica.
 
    Local resultante: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Clique com o Duplo na etapa de transcodificação **[!UICONTROL do]** FFmpeg para acessar a caixa de diálogo Propriedades da etapa
+* Clique com o Duplo na etapa de transcodificação **[!UICONTROL do]** FFmpeg para acessar a caixa de diálogo Propriedades da etapa.
 * Na guia **[!UICONTROL Processo]** :
 
    * **[!UICONTROL Argumentos]**: Apagar todas as entradas para desativar a transcodificação Valores padrão: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
-* Selecione **[!UICONTROL OK]** para fechar a `Step Properties` caixa de diálogo
+* Selecione **[!UICONTROL OK]** para fechar a `Step Properties` caixa de diálogo.
 
-* Selecione **[!UICONTROL Salvar]** para salvar o `DAM Update Asset` fluxo de trabalho
+* Selecione **[!UICONTROL Salvar]** para salvar o `DAM Update Asset` fluxo de trabalho.
 
-   (canto superior esquerdo)
+
 
