@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -20,19 +20,19 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ## Introdução {#introduction}
 
-O recurso de fórum fornece uma área para visitantes do site conectados (membros da comunidade) no ambiente de publicação para:
+O recurso de fórum fornece uma área para visitantes de site conectados (membros da comunidade) no ambiente de publicação para:
 
-* criar novos tópicos
-* exibir e responder tópicos
-* seguir um tópico
-* pesquisar um fórum
-* ajudar a moderar o conteúdo do fórum
-* mover tópicos do fórum de uma página para outra
+* Criar novos tópicos
+* Visualização e resposta aos tópicos
+* Siga um tópico
+* Pesquisar em um fórum
+* Ajudar a moderar o conteúdo do fórum
+* Mover tópicos do fórum de uma página para outra
 
-Esta seção da documentação descreve
+Esta seção da documentação descreve:
 
-* adicionar o recurso do fórum a um site do AEM
-* configurações do `Forum`componente
+* Adicionar o recurso do fórum a um site do AEM.
+* Configurações do `Forum`componente.
 
 ### Adding a Forum to a Page {#adding-a-forum-to-a-page}
 
@@ -56,107 +56,191 @@ Selecione o componente inserido a ser acessado e selecione o `Forum` `Configure`
 
 #### Guia Configurações {#settings-tab}
 
-Na **guia **Configurações **, especifique as configurações para tópicos e respostas:
+Na guia **Configurações** , especifique as configurações para tópicos e respostas:
 
-* **Permitir miniatura de anexo**Se marcada, uma miniatura da imagem anexada é criada.
-* **Tamanho** máximo da miniatura de anexação (em pixels) da imagem em miniatura do anexo. O valor padrão é 800 x 800.
+* **Permitir miniatura de anexo**
+
+   Se marcada, uma miniatura da imagem anexada é criada.
+
+* **Tamanho máximo da miniatura do anexo**
+
+   Tamanho máximo (em pixels) da imagem em miniatura do anexo. O valor padrão é 800 x 800.
 
 * **Tamanho mínimo da imagem para miniatura**
-* **Tamanho** máximo da miniatura (em pixels) da imagem em miniatura para imagem em linha. O valor padrão é 800 x 800.
+* **Tamanho máximo da miniatura**
 
-* **Tópicos por página**Define o número de tópicos/postagens exibidos por página. O padrão é 10.
-* **Moderado** Se marcado, a publicação de tópicos e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
+   Tamanho máximo (em pixels) da imagem em miniatura para imagem em linha. O valor padrão é 800 x 800.
 
-* **Fechado** Se marcado, o fórum é fechado para novos tópicos e comentários. O padrão está desmarcado.
+* **Tópicos por página**
 
-* **Editor** de Rich Text Se marcado, os tópicos e os comentários podem ser inseridos com marcação. O padrão está desmarcado.
+   Define o número de tópicos/postagens exibidos por página. O padrão é 10.
 
-* **Permitir marcação** Se marcada, permita que os membros adicionem etiquetas à sua publicação (consulte a guia Campo **de** tag ). O padrão está desmarcado.
+* **Moderada**
 
-* **Permitir uploads** de arquivoSe marcada, permita que os anexos de arquivo sejam adicionados ao tópico ou ao comentário. O padrão está desmarcado.
+   Se marcada, a publicação de tópicos e comentários deve ser aprovada antes de serem exibidos em um site de publicação. O padrão está desmarcado.
 
-* **Permitir seguidores** Se marcada, inclua o seguinte recurso para postagens do fórum, que permite que os membros sejam [notificados](/help/communities/notifications.md) de novas postagens. O padrão está desmarcado.
+* **Fechado**
 
-* **Permitir fixação** Se marcada, os tópicos do fórum podem ser fixados na parte superior da lista de tópicos. O padrão está desmarcado.
+   Se marcada, o fórum é fechado a novos tópicos e comentários. O padrão está desmarcado.
 
-* **Permitir conteúdo** em destaque se marcado, a ideia pode ser identificada como conteúdo [em](/help/communities/featured.md)destaque. O padrão está desmarcado.
+* **Editor de Rich Text**
 
-* **Permitir assinaturas** por email Se marcada, permitir que os membros sejam notificados de novas publicações por email ([assinatura](/help/communities/subscriptions.md)). Requer `Allow Following` a verificação e configuração [de](/help/communities/email.md)email. O padrão está desmarcado.
+   Se marcada, os tópicos e os comentários podem ser inseridos com marcação. O padrão está desmarcado.
 
-* **Tamanho** de arquivo máximo relevante somente se `Allow File Uploads` estiver marcado. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+* **Permitir marcação**
 
-* **Tipos** de arquivo permitidosRelevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que** **todos os tipos de arquivos são permitidos.
+   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia Campo **de** tag). O padrão está desmarcado.
 
-* **Tamanho** de arquivo de imagem de anexo máximo relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152** **(2 Mb).
+* **Permitir carregamento de arquivos**
 
-* **Permitir respostas encadeadas** Se marcada, permita respostas a comentários postados no tópico. O padrão está desmarcado.
+   Se marcada, permita que os anexos do arquivo sejam adicionados ao tópico ou ao comentário. O padrão está desmarcado.
 
-* **Permitir votação** Se marcada, inclua o recurso Votação com um tópico. O padrão está desmarcado.
+* **Permitir monitoramento**
 
-* **Permitir que os usuários excluam comentários e tópicos** Se marcados, permita que os membros excluam os comentários e tópicos publicados. O padrão está desmarcado.
+   Se marcada, inclua o seguinte recurso para postagens do fórum, que permite que os membros sejam [notificados](/help/communities/notifications.md) sobre novas postagens. O padrão está desmarcado.
 
-* **Mostrar navegações estruturais** Se marcada, mostrar navegações estruturais nas páginas de tópicos. O padrão está marcado.
+* **Permitir fixação**
 
-* **Exibir emblemas** Se marcada, exibe [emblemas ganhados e atribuídos](/help/communities/implementing-scoring.md) com a entrada de blog de um membro. O padrão está desmarcado.
+   Se marcada, os tópicos do fórum podem ser fixados na parte superior da lista de tópicos. O padrão está desmarcado.
 
-* **Permitir membros** privilegiados Se marcada, somente membros privilegiados poderão criar conteúdo.
+* **Ativar conteúdo em destaque**
 
-* **Membros com privilégios permitidos**Adicione os membros com privilégios permitidos para criar conteúdo.
-* **Bloquear conteúdo gerado pelo usuário no modo** de edição do autor Se ativado, bloqueia o conteúdo gerado pelo usuário durante a edição no modo de autor.
+   Se marcada, a ideia pode ser identificada como conteúdo [em](/help/communities/featured.md)destaque. O padrão está desmarcado.
 
-* **Ativar menção** Se ativada, permite que usuários da comunidade registrados identifiquem outros membros registrados (usando o nome, sobrenome, nome de usuário) e os rotulem usando a sintaxe @user-name comum. Os usuários marcados recebem notificações sobre suas menções.
+* **Permitir assinaturas de email**
 
-* **Menções máximas** Restringe o número máximo de menções permitidas em uma publicação. O padrão é 10.
+   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](/help/communities/subscriptions.md)). Requer `Allow Following` a verificação e configuração [de](/help/communities/email.md)email. O padrão está desmarcado.
 
-* **Padrão** de menção da interface do usuárioEspecifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo `~{{familyName}}{{givenName}}`.
+* **Tamanho máximo do arquivo**
+
+   Relevante apenas se `Allow File Uploads` for verificada. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+
+* **Tipos de arquivos permitidos**
+
+   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+
+* **Tamanho** de arquivo de imagem de anexo máximo relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
+
+* **Permitir respostas encadeadas**
+
+   Se marcada, permita respostas para comentários postados no tópico. O padrão está desmarcado.
+
+* **Permitir votação**
+
+   Se marcada, inclua o recurso Voto com um tópico. O padrão está desmarcado.
+
+* **Permitir que usuários excluam comentários e tópicos**
+
+   Se marcada, permita que os membros excluam os comentários e tópicos publicados. O padrão está desmarcado.
+
+* **Mostrar navegações estruturais**
+
+   Se marcada, mostrar navegações estruturais em páginas de tópicos. O padrão está marcado.
+
+* **Exibir selos**
+
+   Se marcada, exiba [crachás](/help/communities/implementing-scoring.md) ganhados e atribuídos com a entrada de blog de um membro. O padrão está desmarcado.
+
+* **Permitir membros privilegiados**
+
+   Se marcada, somente membros privilegiados poderão criar conteúdo.
+
+* **Membros privilegiados permitidos**
+
+   Adicione os membros com privilégios permitidos para criar conteúdo.
+
+* **Bloquear conteúdo gerado pelo usuário no modo Edição do autor**
+
+   Se ativado, bloqueia o Conteúdo gerado pelo usuário durante a edição no Modo de autor.
+
+* **Ativar a menção**
+
+   Se ativada, permite que os usuários da comunidade registrados identifiquem outros membros registrados (usando o nome, sobrenome, nome de usuário) e os rotulem usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
+
+* **Quantidade máxima de menções**
+
+   Restrinja o número máximo de menções permitidas em uma publicação. O padrão é 10.
+
+* **Padrão de menção da interface do usuário**
+
+   Especifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >
 >Pode ser necessário verificar tanto `AllowThreaded Replies` quanto `Allow users to Delete Comments and Topics` para permitir comentários sobre um tópico.
 
+
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia **Moderação do usuário **, especifique como os tópicos e as respostas publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Na guia Moderação **do** usuário, especifique como os tópicos e as respostas publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
 
-* **Negar publicações** Se marcada, os moderadores de membros confiáveis poderão negar publicações e impedir que a publicação apareça no fórum público. O padrão está desmarcado.
+* **Negar postagens**
 
-* **Fechar / Reabrir tópicos** Se marcados, os moderadores de membros confiáveis podem fechar um tópico para outras edições e comentários, e também podem reabrir um tópico. O padrão está desmarcado.
+   Se marcada, os moderadores de membros confiáveis poderão negar publicações e impedir que a publicação apareça no fórum público. O padrão está desmarcado.
 
-* **Mover tópicos** Se marcada, permita que os moderadores do lado da publicação movam tópicos. O padrão está marcado.
+* **Fechar/Reabrir tópicos**
 
-* **Sinalizar publicações** Se marcada, permita que os membros sinalizem os tópicos ou comentários de outras pessoas como inadequados. O padrão está desmarcado.
+   Se marcada, os moderadores de membros confiáveis podem fechar um tópico para outras edições e comentários, e também podem reabrir um tópico. O padrão está desmarcado.
 
-* **Sinalizar lista** de motivos Se marcada, permita que os membros escolham, em uma lista suspensa, o motivo para sinalizar um tópico ou comentário como inapropriado. O padrão está desmarcado.
+* **Mover tópicos**
 
-* **Motivo** do sinalizador personalizado Se marcado, permita que os membros insiram seu próprio motivo para sinalizar um tópico ou comentário como inapropriado. O padrão está desmarcado.
+   Se marcada, permita que os moderadores do lado da publicação movam tópicos. O padrão está marcado.
 
-* **Limite** de moderaçãoInsira o número de vezes que um tópico ou comentário deve ser sinalizado pelos membros antes que os moderadores sejam notificados. O padrão é 1 (uma vez).
+* **Sinalizar postagens**
 
-* **Limite de sinalização** Digite o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da exibição pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
+   Se marcada, permita que os membros sinalizem os tópicos ou comentários de outras pessoas como inadequados. O padrão está desmarcado.
+
+* **Sinalizar lista de motivo**
+
+   Se marcada, permita que os membros escolham, em uma lista suspensa, seu motivo para marcar um tópico ou comentário como inapropriado. O padrão está desmarcado.
+
+* **Motivo personalizado de sinalização**
+
+   Se marcada, permita que os membros insiram seu próprio motivo para marcar um tópico ou comentário como inapropriado. O padrão está desmarcado.
+
+* **Limite de moderação**
+
+   Insira o número de vezes que um tópico ou comentário deve ser sinalizado pelos membros antes que os moderadores sejam notificados. O padrão é 1 (uma vez).
+
+* **Limite de sinalização**
+
+   Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da visualização pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da visualização pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na guia **Settings **, são limitadas de acordo com os namespaces escolhidos.
+Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na guia **Configurações** , são limitadas de acordo com as namespaces escolhidas.
 
-* **Namespaces permitidos** Relevante se `Allow Tagging` estiver marcado na guia **Settings **tab. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todos os namespaces são permitidos.
+* **Espaços de nomes permitidos**
 
-* **Limite de sugestão** Insira o número de tags a serem exibidas como uma sugestão para o membro postar no fórum. O padrão é **-**1 (sem limites).
+   Relevante se `Allow Tagging` estiver marcado na guia **Configurações** . As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+
+* **Limite sugerido**
+
+   Insira o número de tags a serem exibidas como uma sugestão para o membro postando no fórum. O padrão é **-**1 (sem limites).
 
 #### Guia Tradução {#translation-tab}
 
-Na guia **Tradução **s, se a tradução estiver ativada para o site da comunidade, a tradução pode ser definida para traduzir o tópico inteiro ou as publicações selecionadas.
+Na guia **Tradução** , se a tradução estiver ativada para o site da comunidade, a tradução pode ser definida para traduzir o tópico inteiro ou as publicações selecionadas.
 
-* **Traduzir tudo** Se marcado, o thread do fórum será traduzido para o idioma preferido do usuário. O padrão está desmarcado.
+* **Converter tudo**
+
+   Se marcada, o thread do fórum é traduzido para o idioma preferencial do usuário. O padrão está desmarcado.
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 
-Na guia **Configurações de classificação **s, especifique como os comentários publicados são classificados quando exibidos.
+Na guia **Classificar configurações** , especifique como os comentários publicados são classificados quando exibidos.
 
-* **Classificar por** Marque todas as seleções de classificação permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. O padrão é `Newest, Oldest, Last Updated`.
+* **Ordenar por**
 
-* **Defina como Padrão** Puxe para baixo para selecionar uma das opções de classificação marcadas para aparecer como padrão. O padrão é `Newest`.
+   Marque todas as seleções de classificação permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. O padrão é `Newest, Oldest, Last Updated`.
 
-* **Selecione Opções de tempo para** puxar para baixo a classificação do Analytics para selecionar uma das opções `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
+* **Definir como padrão**
+
+   Puxe para baixo para selecionar uma das opções de classificação marcadas para aparecer como padrão. O padrão é `Newest`.
+
+* **Selecionar as opções de tempo para a classificação do Analytics**
+
+   Puxe para baixo para selecionar um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 
 ### Informações adicionais {#additional-information}
 
