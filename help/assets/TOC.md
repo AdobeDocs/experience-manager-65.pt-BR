@@ -4,14 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do usuário dos ativos AEM 6.5
 translation-type: tm+mt
-source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
 
 # AEM 6.5 Assets User Guide {#assets}
 
-+ [Guia do usuário do Assets](home.md)
++ [Guia do usuário do [!DNL Assets]](home.md)
 + [Notas de versão do AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
@@ -19,7 +19,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Experiência de home page do AEM Assets](assets-home-page.md)
    + [Pesquisar ativos no AEM](search-assets.md)
    + [Ativos multilíngues](multilingual-assets.md)
-   + [Usar ativos do Adobe Stock nos ativos AEM](aem-assets-adobe-stock.md)
+   + [Usar ativos [!DNL Adobe Stock] nos ativos AEM](aem-assets-adobe-stock.md)
    + [Visualização de ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Atividade na linha do tempo](activity-stream.md)
@@ -74,7 +74,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Personalizar e estender ativos AEM](extending-assets.md)
    + [Processar ativos usando manipuladores de mídia e workflows](media-handlers.md)
    + [Ampliar funcionalidade de pesquisa](searchx.md)
-   + [Instalar e configurar o ImageMagick para trabalhar com os ativos AEM](best-practices-for-imagemagick.md)
+   + [Instalar e configurar o [!DNL ImageMagick] para trabalhar com os ativos AEM](best-practices-for-imagemagick.md)
    + [Integrar ativos ao fluxo de atividade](extending-activity-stream.md)
    + [Estender editor de ativos](asseteditorx.md)
    + [API HTTP de ativos](mac-api-assets.md)
@@ -153,7 +153,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Ativar insights de ativos por meio do DTM](touch-ui-using-dtm-for-asset-insights.md)
    + [Configurar insights de ativos](touch-ui-configuring-asset-insights.md)
    + [Fazer check-in e check-out de ativos](check-out-and-submit-assets.md)
-   + [Aplicar serviços da nuvem de tradução a pastas](transition-cloud-services.md)
+   + [Aplicar serviços de tradução em nuvem a pastas](transition-cloud-services.md)
    + [Usar o rastreador de página e incorporar código em páginas da Web](touch-ui-using-page-tracker.md)
    + [Gerenciar ativos compostos](managing-linked-subassets.md)
    + [Ativos relacionados](related-assets.md)
