@@ -1,9 +1,9 @@
 ---
-title: Gerenciar ativos do Adobe Stock nos ativos AEM
-description: Pesquise, busque, licencie e gerencie ativos do Adobe Stock no AEM. Use os ativos licenciados como qualquer outro ativo digital.
+title: Gerencie ativos [!DNL Adobe Stock] no [!DNL Adobe Experience Manager Assets].
+description: Pesquise, busque, licencie e gerencie ativos [!DNL Adobe Stock] no Adobe Experience Manager. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
