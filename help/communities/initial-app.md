@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,8 +19,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Nesta seção, você criará o seguinte:
 
-* O **[modelo](#createthepagetemplate)**que será usado para criar páginas de conteúdo no site de exemplo
-* O **[componente e o script](#create-the-template-s-rendering-component)**que serão usados para renderizar as páginas do site
+* O **[modelo](#createthepagetemplate)**que será usado para criar páginas de conteúdo no site de exemplo.
+* O **[componente e o script](#create-the-template-s-rendering-component)**que serão usados para renderizar as páginas do site.
 
 ## Criar o modelo de conteúdo {#create-the-content-template}
 
@@ -28,10 +28,10 @@ Um modelo define o conteúdo padrão de uma nova página. Sites complexos podem 
 
 Neste exercício, todas as páginas são baseadas em um modelo simples.
 
-1. No painel explorador do CRXDE Lite
+1. No painel explorador do CRXDE Lite:
 
-   * select `/apps/an-scf-sandbox/templates`
-   * **[!UICONTROL Criar > Criar modelo]**
+   * Selecionar `/apps/an-scf-sandbox/templates`
+   * **[!UICONTROL Criar]** > **[!UICONTROL Criar modelo]**
 
 1. Na caixa de diálogo Criar modelo, digite os seguintes valores e clique em **[!UICONTROL Avançar]**:
 
@@ -44,7 +44,7 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
    O Tipo de recurso é exibido no nó jcr:content `playpage`da propriedade `sling:resourceType`. Ela identifica o componente (recurso) que renderiza o conteúdo quando solicitado por um navegador.
 
-   Nesse caso, todas as páginas criadas usando o `playpage`modelo são renderizadas pelo `an-scf-sandbox/components/playpage` componente. Por convenção, o caminho para o componente é relativo, permitindo que Sling procure o recurso primeiro na `/apps` pasta e, se não for encontrado, na `/libs` pasta.
+   Nesse caso, todas as páginas criadas usando o `playpage` modelo são renderizadas pelo `an-scf-sandbox/components/playpage` componente. Por convenção, o caminho para o componente é relativo, permitindo que Sling procure o recurso primeiro na `/apps` pasta e, se não for encontrado, na `/libs` pasta.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -56,11 +56,11 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
    Para adicionar um caminho, clique no botão de adição `+` e digite `/content(/.&ast;)?` na caixa de texto exibida. Se estiver usando copiar/colar, verifique se não há espaços à esquerda ou à direita.
 
-   Observação:O valor da propriedade path permitida é uma expressão *regular.* As páginas de conteúdo com um caminho que corresponda à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as suas subpáginas.
+   Observação: O valor da propriedade path permitida é uma expressão *regular.* As páginas de conteúdo com um caminho que corresponda à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as suas subpáginas.
 
-   Quando um autor cria uma página abaixo `/content`, o `playpage`modelo &quot;Um modelo de página de caixa de proteção SCF&quot; aparece em uma lista de modelos disponíveis para uso.
+   Quando um autor cria uma página abaixo `/content`, o `playpage` modelo intitulado &quot;Um modelo de página de caixa de proteção SCF&quot; é exibido em uma lista de modelos disponíveis para uso.
 
-   Depois que a página raiz é criada a partir do modelo, o acesso ao modelo pode ser restrito a este site modificando a propriedade para incluir o caminho raiz na expressão regular, isto é,
+   Depois que a página raiz é criada a partir do modelo, o acesso ao modelo pode ser restrito a este site modificando a propriedade para incluir o caminho raiz na expressão normal, isto é,
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -74,7 +74,7 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
    Clique em **[!UICONTROL OK]**.
 
-1. Depois de clicar em OK e terminar de criar o modelo, você observará triângulos vermelhos mostrando nos cantos dos valores da guia Propriedades do novo `playpage`modelo. Esses triângulos vermelhos indicam edições que não foram salvas.
+1. Depois de clicar em OK e terminar de criar o modelo, você observará triângulos vermelhos mostrando nos cantos dos valores da guia Propriedades do novo `playpage` modelo. Esses triângulos vermelhos indicam edições que não foram salvas.
 
    Clique em **[!UICONTROL Salvar tudo]** para salvar o novo modelo no repositório.
 
@@ -82,7 +82,7 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
 ### Criar o componente de renderização do modelo {#create-the-template-s-rendering-component}
 
-Crie o *componente* que define o conteúdo e renderiza quaisquer páginas criadas com base no modelo [de](#createthepagetemplate)página de reprodução.
+Crie o *componente* que define o conteúdo e renderiza todas as páginas criadas com base no modelo [de](#createthepagetemplate)página de reprodução.
 
 1. No CRXDE Lite, clique com o botão direito do mouse **`/apps/an-scf-sandbox/components`** e clique em **[!UICONTROL Criar > Componente]**.
 1. Ao definir o nome do nó (Rótulo) para a *página* de reprodução, o caminho para o componente é
@@ -100,7 +100,7 @@ Crie o *componente* que define o conteúdo e renderiza quaisquer páginas criada
    * Grupo:
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Clique em **[!UICONTROL Avançar]** até que o painel Filhos **** permitidos da caixa de diálogo seja exibido
+1. Clique em **[!UICONTROL Avançar]** até que o painel Filhos **** permitidos da caixa de diálogo seja exibido:
 
    * Clique em **[!UICONTROL OK]**
    * Clique em **[!UICONTROL Salvar tudo]**
