@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -29,11 +29,11 @@ Visite a visão geral da moderação para obter uma descrição das ações [de]
 
 A interface do usuário apresentada ao moderador na instância de publicação está contida na caixa de diálogo para publicar e gerenciar conteúdo gerado pelo usuário (UGC). Os elementos da interface são determinados pelo status do visitante do site - se eles são...
 
-1. O membro que postou o conteúdo
-1. Um moderador de membro confiável
-1. Um administrador
-1. Conectado, mas nenhum administrador, moderador ou autor do conteúdo
-1. Não conectado
+1. O membro que postou o conteúdo.
+1. Um moderador de membro confiável.
+1. Um administrador.
+1. Conectado, mas nenhum administrador, moderador ou autor do conteúdo.
+1. Não conectado.
 
 ## Exemplo {#example}
 
@@ -57,7 +57,7 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
    * Insira o texto do corpo
 
-      Não tenho tido muito sucesso quando penduro um alimentador de beija-flores todos os anos. Parece que chegam um dia ou dois, então é isso. Eu mudo uma vez por semana é muito tempo? Preciso mudar isso mais cedo?
+      Não tenho tido muito sucesso quando penduro um alimentador de beija-flores todos os anos. Parece que chegam um dia ou dois, então é isso. Eu mudo uma vez por semana é muito tempo? Eu preciso mudar isso mais cedo?
    * Selecionar publicação
    * Selecione Desconectar
 
@@ -85,9 +85,9 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
 ### Visitante do site anônimo (#5) {#anonymous-site-visitor}
 
-Veja a seguir uma exibição do fórum visto por um visitante do site que não está conectado (5).
+Veja a seguir uma visualização do fórum visto por um visitante do site que não está conectado (5).
 
-Um visitante anônimo do site só pode exibir o fórum, mas não pode publicar nenhum conteúdo nem executar ações de moderação.
+Um visitante de site anônimo só pode visualização no fórum, mas não pode publicar nenhum conteúdo nem executar ações de moderação.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -97,11 +97,11 @@ No autor, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dod
 
 Ao publicar, faça logon como Boyd Larsen e acesse o thread selecionando `Forum`e, em seguida, `Read more` para a publicação de beija-flor.
 
-Aviso
+Aviso:
 
-* Boyd não participou no fórum
-* Boyd não pode excluir nada
-* O Boyd está conectado e pode responder ou sinalizar conteúdo
+* Boyd não participou do fórum.
+* Boyd não pode excluir nada.
+* Boyd está conectado e pode responder ou sinalizar conteúdo.
 
 Faça com que Boyd selecione Sinalizar para sinalizar o conteúdo publicado por Andrew.
 
@@ -113,10 +113,10 @@ Fazer logoff
 
 Faça logon como um administrador (admin) e acesse o thread selecionando Fórum e, em seguida, Leia mais para uma publicação.
 
-Aviso
+Aviso:
 
-* O administrador pode sinalizar, excluir, editar, negar, cortar, fechar, fixar, recurso
-* O administrador pode selecionar Administração para acessar o console de moderação
+* O administrador pode sinalizar, excluir, editar, negar, recortar, fechar, fixar, recurso.
+* O administrador pode selecionar Administração para acessar o console de moderação.
 
 ![communityadmin-forum](assets/communityadmin-forum.png)
 
@@ -134,12 +134,12 @@ Fazer logoff.
 
 Faça logon como Aaron McDonald (aaron.mcdonal@mailinator.com), um moderador da comunidade, e acesse o thread selecionando Fórum e, em seguida, Leia mais para obter a publicação do beija-flor.
 
-Aviso
+Aviso:
 
-* Aaron pode responder, excluir, editar ou negar sua própria postagem
-* Aaron também pode Sinalizar/Permitir, Responder, Excluir, Editar, Negar outro conteúdo
-* Aaron pode cortar o tópico do fórum para movê-lo para outro fórum para o qual ele modera
-* Aaron pode selecionar Administração para acessar o console de moderação
+* Aaron pode Responder, Excluir, Editar ou Negar sua própria publicação.
+* Aaron também pode Sinalizar/Permitir, Responder, Excluir, Editar, Negar outro conteúdo.
+* Aaron pode cortar o tópico do fórum para movê-lo para outro fórum para o qual ele modera.
+* Aaron pode selecionar Administração para acessar o console de moderação.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -157,11 +157,11 @@ Fazer logoff.
 
 Faça logon como Rebekah Larsen (rebekah.larsen@mailinator.com), um membro da comunidade que iniciou o processo, e acesse o thread selecionando Fórum e, em seguida, Leia mais para a publicação de beija-flor.
 
-Aviso
+Aviso:
 
-* Rebekah pode excluir ou editar sua própria publicação
-* Rebekah também pode responder ou sinalizar outro conteúdo
-* Rebekah não pode acessar o console de moderação
+* Rebekah pode excluir ou editar sua própria postagem.
+* Rebekah também pode responder ou sinalizar outro conteúdo.
+* Rebekah não pode acessar o console de moderação.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
