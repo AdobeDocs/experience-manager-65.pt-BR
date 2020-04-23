@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
@@ -29,28 +29,28 @@ Usando o console Membros, os limites de contribuição podem ser removidos de fo
 
 ## Configuração de limites de contribuição de conteúdo gerado pelo usuário do AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
-Esta configuração do OSGi
+Esta configuração OSGi:
 
-* Define as características dos limites de contribuição (número de vagas em um período)
-* Identifica quem o membro poderá enviar uma mensagem quando o limite for atingido
-* Identifica domínios que nunca precisam ser restringidos
+* Define as características dos limites de contribuição (número de postagens em um período).
+* Identifica quem o membro poderá enviar uma mensagem quando o limite for atingido.
+* Identifica domínios que nunca precisam ser restringidos.
 
 Para atingir essa configuração do OSGi:
 
-* No editor principal
-* Fazer logon com privilégios de administrador
-* Acesse o console [da Web](../../help/sites-deploying/configuring-osgi.md)
+* No editor principal:
+* Faça logon com privilégios de administrador.
+* Acesse o Console [da Web](../../help/sites-deploying/configuring-osgi.md).
 
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Localizar `AEM Communities User Generated Content Contribution Limits Configuration`
-* Selecionar o ícone de edição
+* Localize `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Selecione o ícone de edição.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
 * **[!UICONTROL Aplicar automaticamente limites de contribuição UGC]**
 
-   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso é refletido no perfil do membro da comunidade e pode ser ativado/desativado no console [de](members.md)membros. Os novos membros com um endereço de email de um domínio listado em branco nunca são restringidos.
+   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso se reflete no perfil do membro da comunidade e pode ser ativado/desativado no console [de](members.md)membros. Os novos membros com um endereço de email de um domínio listado em branco nunca são restringidos.
 
    O padrão está desmarcado.
 
@@ -58,7 +58,7 @@ Para atingir essa configuração do OSGi:
 
    Número máximo de contribuições.
 
-   O padrão é 10 publicações.
+   O padrão é 10 postagens.
 
 * **[!UICONTROL Frequência limite UGC]**
 
@@ -74,12 +74,12 @@ Para atingir essa configuração do OSGi:
 
    O padrão é uma lista branca vazia.
 
-* **[!UICONTROL Destinatários de mensagens]**
+* **[!UICONTROL Recipient de mensagens]**
 
-   Lista de uma ou mais IDs autorizadas de membros que podem modificar os limites de contribuição dos membros. Selecione o ícone + para fazer entradas adicionais.
+   Lista de uma ou mais IDs autorizadas de membros capazes de alterar os limites de contribuição dos membros. Selecione o ícone + para fazer entradas adicionais.
 
    Os membros só podem alcançar determinados membros quando o seu limite tiver sido atingido.
 
-   O padrão não é nenhum destinatário de mensagens.
+   O padrão não é nenhum recipient de mensagem.
 
 Observação: A configuração padrão resulta em um limite de 10 publicações dentro de um período de uma hora.
