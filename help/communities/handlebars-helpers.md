@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
 
 # Auxiliares de barras de mão SCF {#scf-handlebars-helpers}
 
-| **[⇐ Fundamentos de recursos](essentials.md)** | **[Personalização do servidor](server-customize.md)** |
+| **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Localização da personalização do cliente](client-customize.md)** |
 
@@ -27,11 +27,12 @@ A implementação inclui uma definição do lado do cliente e do lado do servido
 
 Os auxiliares SCF personalizados fornecidos com o AEM Communities estão definidos na biblioteca do [cliente](../../help/sites-developing/clientlibs.md):
 
-* /etc/clientlibs/social/commons/scf/helpers.js
+* `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
 >Instale o pacote de recursos [mais recente das Comunidades](deploy-communities.md#latestfeaturepack).
+
 
 ## Abreviar {#abbreviate}
 
@@ -47,19 +48,19 @@ Se safeString estiver definido como true, a string retornada será SafeString.
 
 * **contexto**: String
 
-   (opcional) O padrão é a string vazia
+   (Opcional) O padrão é a string vazia
 
 * **maxLength**: Número
 
-   (opcional) Padrão é o comprimento do contexto.
+   (Opcional) O padrão é o comprimento do contexto.
 
 * **maxWords**: Número
 
-   (opcional) Padrão é o número de palavras na string aparada.
+   (Opcional) Padrão é o número de palavras na string aparada.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
-   (opcional) Retorna um Handlebars.SafeString() se verdadeiro. O padrão é falso.
+   (Opcional) Retorna um Handlebars.SafeString() se verdadeiro. O padrão é falso.
 
 ### Exemplos {#examples}
 
@@ -95,23 +96,23 @@ Um auxiliar para adicionar duas extensões sob uma div, uma para o texto complet
 
 * **contexto**: String
 
-   (opcional) O padrão é a string vazia.
+   (Opcional) O padrão é a string vazia.
 
 * **numChars**: Número
 
-   (opcional) O número de caracteres a serem exibidos ao não exibir texto completo. O padrão é 100.
+   (Opcional) O número de caracteres a serem exibidos ao não exibir o texto completo. O padrão é 100.
 
 * **moreText**: String
 
-   (opcional) O texto a ser exibido indica que há mais texto a ser exibido. O padrão é &quot;mais&quot;.
+   (Opcional) O texto a ser exibido indica que há mais texto para exibir. O padrão é &quot;mais&quot;.
 
 * **elipsesText**: String
 
-   (opcional) O texto a ser exibido indicando que há texto oculto. O padrão é &quot;...&quot;.
+   (Opcional) O texto a ser exibido indicando que há texto oculto. O padrão é &quot;...&quot;.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
-   (opcional) Valor booliano que indica se deve ou não aplicar Handlebars.SafeString() antes de retornar o resultado. O padrão é falso.
+   (Opcional) Valor booliano que indica se deve ou não aplicar Handlebars.SafeString() antes de retornar o resultado. O padrão é falso.
 
 ### Exemplo {#example}
 
@@ -135,11 +136,11 @@ Um auxiliar para retornar uma string de data formatada.
 
 * **contexto**: Número
 
-   (opcional) um deslocamento de valor de milissegundo a partir de 1º de janeiro de 1970 (época). O padrão é a data atual.
+   (Opcional) um deslocamento de valor de milissegundo a partir de 1º de janeiro de 1970 (época). O padrão é a data atual.
 
 * **formato**: String
 
-   (opcional) O formato de data a ser aplicado. O padrão é &quot;AAAA-MM-DDTHH:mm:ss.sssZ&quot; e o resultado aparece como &quot;2015-03-18T18:17:13-07:00&quot;
+   (Opcional) O formato de data a ser aplicado. O padrão é &quot;AAAA-MM-DDTHH:mm:ss.sssZ&quot; e o resultado aparece como &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Exemplos {#examples-1}
 
@@ -163,11 +164,11 @@ Um auxiliar para retornar conteúdo dependendo de uma condição de igualdade.
 
 * **lvalue**: String
 
-   O valor à esquerda para comparar
+   O valor à esquerda para comparar.
 
 * **rvalue**: String
 
-   O valor à direita para comparar
+   O valor à direita para comparar.
 
 ### Exemplo {#example-1}
 
@@ -181,17 +182,17 @@ Um auxiliar para retornar conteúdo dependendo de uma condição de igualdade.
 
 ## Modo If-wcm {#if-wcm-mode}
 
-Um auxiliar de bloco que testa o valor atual do modo [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM em relação a uma lista de modos separada por strings.
+Um auxiliar de bloco que testa o valor atual do modo [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM em relação a uma lista de modos separada por sequências de caracteres.
 
 ### Parâmetros {#parameters-4}
 
 * **contexto**: String
 
-   (opcional) A string a ser traduzida. Obrigatório se nenhum padrão for fornecido.
+   (Opcional) A string a ser traduzida. Obrigatório se nenhum padrão for fornecido.
 
 * **modo**: String
 
-   (opcional) Uma lista separada por vírgulas de modos [de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM para testar se definido.
+   (Opcional) Uma lista separada por vírgulas dos modos [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM para testar se estão definidos.
 
 ### Exemplo {#example-2}
 
@@ -213,15 +214,15 @@ Consulte também [Internacionalização de strings no código](../../help/sites-
 
 * **contexto**: String
 
-   (opcional) A string a ser traduzida. Obrigatório se nenhum padrão for fornecido.
+   (Opcional) A string a ser traduzida. Obrigatório se nenhum padrão for fornecido.
 
 * **padrão**: String
 
-   (opcional) A string padrão a ser traduzida. Obrigatório se nenhum contexto tiver sido fornecido.
+   (Opcional) A string padrão a ser traduzida. Obrigatório se nenhum contexto tiver sido fornecido.
 
 * **comentário**: String
 
-   (opcional) Uma dica de tradução
+   (Opcional) Uma dica de tradução
 
 ### Exemplo {#example-3}
 
@@ -236,7 +237,7 @@ Um auxiliar para incluir um componente como um recurso não existente em um mode
 
 Isso permite que o recurso seja programaticamente personalizado mais facilmente do que é possível para um recurso adicionado como um nó JCR. Consulte [Adicionar ou incluir um componente](scf.md#add-or-include-a-communities-component)de Comunidades.
 
-Somente alguns componentes de Comunidades podem ser incluídos. Para o AEM 6.1, os que podem ser incluídos são [comentários](essentials-comments.md), [classificações](rating-basics.md), [revisões](reviews-basics.md)e [votação](essentials-voting.md).
+Somente alguns componentes selecionados de Comunidades podem ser incluídos. Para o AEM 6.1, os que podem ser incluídos são [comentários](essentials-comments.md), [classificações](rating-basics.md), [revisões](reviews-basics.md)e [votação](essentials-voting.md).
 
 Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade semelhante a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -244,27 +245,27 @@ Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade sem
 
 * **contexto**: String ou objeto
 
-   (opcional, a menos que forneça um caminho relativo)
+   (Opcional, a menos que forneça um caminho relativo)
 
-   usar `this`para passar no contexto atual
+   Use `this` para passar o contexto atual.
 
-   use `this.id` para obter o recurso em `id` para renderizar o resourceType solicitado
+   Use `this.id` para obter o recurso em `id` para renderizar o resourceType solicitado.
 
 * **resourceType**: String
 
-   (opcional) o tipo de recurso assumirá como padrão o tipo de recurso do contexto
+   (Opcional) o tipo de recurso assumirá como padrão o tipo de recurso do contexto.
 
 * **modelo**: String
 
-   caminho para script de componente
+   Caminho para o script de componente.
 
 * **caminho**: String
 
-   (obrigatório) O caminho para o recurso. Se o caminho for relativo, um contexto deverá ser fornecido, caso contrário, a string vazia será retornada.
+   (Obrigatório) O caminho para o recurso. Se o caminho for relativo, um contexto deverá ser fornecido, caso contrário, a string vazia será retornada.
 
-* **authoringDisabled**:Booleano
+* **authoringDisabled**: Booleano
 
-   (opcional) O padrão é falso. Apenas para uso interno.
+   (Opcional) O padrão é falso. Apenas para uso interno.
 
 ### Exemplo {#example-4}
 
@@ -272,7 +273,7 @@ Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade sem
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Isso incluirá um novo componente de comentários em `this.id` + /comments
+Isso incluirá um novo componente de comentários em `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -284,19 +285,19 @@ Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade sem
 
 * **categorias**: String
 
-   (opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias especificadas. O nome do tema é extraído da solicitação.
+   (Opcional) Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias em questão. O nome do tema é extraído da solicitação.
 
 * **tema**: String
 
-   (opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias especificadas. O nome do tema é extraído da solicitação.
+   (Opcional) Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias em questão. O nome do tema é extraído da solicitação.
 
 * **js**: String
 
-   (opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript para as categorias especificadas.
+   (Opcional) Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas do Javascript para as categorias em questão.
 
 * **css**: String
 
-   (opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas de CSS para as categorias especificadas.
+   (Opcional) Uma lista de categorias de link do cliente separadas por vírgulas. Isso incluirá todas as bibliotecas de CSS para as categorias em questão.
 
 ### Exemplos {#examples-2}
 
@@ -383,7 +384,7 @@ NOTA: isso não é um validador e não deve ser usado para gravar valores de atr
 
 * **contexto**: objeto
 
-   o HTML a ser codificado
+   O HTML a ser codificado.
 
 ### Exemplo {#example-6}
 
@@ -401,7 +402,7 @@ NOTA: isso não é um validador e não deve ser usado para gravar atributos acio
 
 * **contexto**: Objeto
 
-   O HTML a ser codificado
+   O HTML a ser codificado.
 
 ### Exemplo {#example-7}
 
@@ -419,7 +420,7 @@ NOTA: isso não é um validador e não deve ser usado para gravar em JavaScript 
 
 * **contexto**: Objeto
 
-   O HTML a ser codificado
+   O HTML a ser codificado.
 
 ### Exemplo {#example-8}
 
@@ -437,7 +438,7 @@ NOTA: isso pode retornar uma string vazia
 
 * **contexto**: Objeto
 
-   O URL para limpar
+   O URL para limpar.
 
 ### Exemplo {#example-9}
 
@@ -449,7 +450,7 @@ NOTA: isso pode retornar uma string vazia
 
 Uma rápida visão geral das funções de ajuda da documentação [](https://handlebarsjs.com/expressions.html)do Handlebars.js:
 
-* Uma chamada de ajuda Handlebars é um identificador simples (o *name *do auxiliar), seguido por zero ou mais parâmetros separados por espaço.
+* Uma chamada de ajuda Handlebars é um identificador simples (o *nome* do auxiliar), seguido por zero ou mais parâmetros separados por espaço.
 * Os parâmetros podem ser um simples objeto String, number, boolean ou JSON, bem como uma sequência opcional de pares de chave-valor (argumentos hash) como o(s) último(s) parâmetro(s).
 * As chaves nos argumentos hash devem ser identificadores simples.
 * Os valores nos argumentos hash são expressões Handlebars: identificadores simples, caminhos ou strings.
@@ -567,6 +568,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 >
 >O componente é renderizado novamente no lado do cliente para o usuário conectado e, se o auxiliar do lado do cliente não for encontrado, o componente desaparece.
 
+
 ### Ajuda personalizada do lado do cliente {#client-side-custom-helpers}
 
 Os auxiliares do cliente são scripts Handlebars registrados chamando `Handlebars.registerHelper()`.
@@ -590,13 +592,13 @@ function(Handlebars, SCF, $CQ) {
 Os auxiliares personalizados do cliente devem ser adicionados a uma biblioteca personalizada do cliente.
 A clientlib deve:
 
-* Incluir uma dependência em `cq.social.scf`
-* Carregar após o carregamento dos Handlebars
-* Ser [incluído](clientlibs.md)
+* Incluir uma dependência em `cq.social.scf`.
+* Carregar após o carregamento dos Handlebars.
+* Seja [incluído](clientlibs.md).
 
 Observação: os auxiliares do quadro SEPA estão definidos em `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| **[⇐ Fundamentos de recursos](essentials.md)** | **[Personalização do servidor](server-customize.md)** |
+| **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Localização da personalização do cliente](client-customize.md)** |
 
