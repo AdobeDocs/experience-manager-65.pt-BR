@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -27,7 +27,7 @@ Para começar a criar um novo site da comunidade:
 Uso da instância do [autor](https://localhost:4502/)
 
 * Fazer logon com privilégios de administrador
-* Navegue até Comunidades de controle **[UIC > Sites]**
+* Navegue até **[!UICONTROL Comunidades > Sites]**
 
 * Selecione **Criar**
 
@@ -80,12 +80,12 @@ Na etapa Configurações, antes de selecionar `Next`, observe que há sete seç�
 
 Recomenda-se que as comunidades [de](/help/communities/overview.md#enablement-community) ativação sejam privadas.
 
-Um site da comunidade é privado quando o acesso aos visitantes anônimos do site é negado, pode não se inscrever e pode não usar o login social.
+Um site da comunidade é privado quando visitantes anônimos do site têm acesso negado, podem não se inscrever e podem não usar o login social.
 
 Verifique se a maioria das caixas de seleção está desmarcada para Gerenciamento [](/help/communities/sites-console.md#user-management) do usuário:
 
 * NÃO permitir que os visitantes do site se registrem automaticamente
-* NÃO permitir que os visitantes anônimos do site vejam o site
+* NÃO permitir que visitantes anônimos do site visualizações
 * Opcional se permite ou não mensagens entre membros da comunidade
 * NÃO permitir logon com o Facebook
 * NÃO permitir logon com o Twitter
@@ -94,11 +94,11 @@ Verifique se a maioria das caixas de seleção está desmarcada para Gerenciamen
 
 #### TAGGING {#tagging}
 
-As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando namespaces do AEM previamente definidos pelo console [de](/help/sites-administering/tags.md#tagging-console) marcação (como o namespace [do](/help/communities/enablement-setup.md#create-tutorial-tags)Tutorial).
+As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando namespaces AEM definidas anteriormente pelo console [de](/help/sites-administering/tags.md#tagging-console) marcação (como a namespace [](/help/communities/enablement-setup.md#create-tutorial-tags)Tutorial).
 
-Além disso, selecionar os namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos de ativação. Consulte [Marcação de recursos](/help/communities/tag-resources.md) de ativação para obter informações importantes.
+Além disso, selecionar Namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos de ativação. Consulte [Marcação de recursos](/help/communities/tag-resources.md) de ativação para obter informações importantes.
 
-Encontrar namespaces é fácil usando a pesquisa de tipo avançado. Por exemplo,
+Encontrar namespaces é fácil usando a pesquisa antecipada por tipo. Por exemplo,
 
 * Tipo `tut`
 * Selecionar `Tutorial`
@@ -118,7 +118,7 @@ Por exemplo,
 
 >[!NOTE]
 >
->[O serviço](/help/communities/deploy-communities.md#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes somente no ambiente de publicação.
+>[O serviço](/help/communities/deploy-communities.md#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes apenas no ambiente publish.
 
 ![funções de ativação](assets/site-admin.png)
 
@@ -154,7 +154,7 @@ Para uma comunidade de ativação, é necessário identificar um ou mais Gerente
    * Tipo `s`
    * Selecionar `Sirius Nilson`
 
-* **ID** de organização da Marketing Cloud (opcional) A ID de uma conta do Adobe Analytics, necessária ao incluir a Análise [do](/help/communities/analytics.md#video-heartbeat-analytics) Video Heartbeat no relatório de ativação.
+* **ID** de organização da Marketing Cloud (opcional) A ID de uma conta do Adobe Analytics, necessária ao incluir o [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) no relatórios de ativação.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -260,9 +260,9 @@ Adicionar um `Login Page Mapping` como
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
-### (Opcional) Alterar a página inicial padrão {#optional-change-the-default-home-page}
+### (Opcional) Alterar o Home page padrão {#optional-change-the-default-home-page}
 
-Ao trabalhar com o site de publicação para fins de demonstração, pode ser útil alterar a página inicial padrão para o novo site.
+Ao trabalhar com o site de publicação para fins de demonstração, pode ser útil alterar o home page padrão para o novo site.
 
 Para fazer isso, é necessário usar o [CRX|DE](https://localhost:4503/crx/de) Lite para editar a tabela de mapeamento [de](/help/sites-deploying/resource-mapping.md) recursos na publicação.
 
@@ -331,7 +331,7 @@ Após qualquer modificação, lembre-se de **Salvar** e **publicar** o site nova
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
 
 ### Adicionar um catálogo {#add-a-catalog}
 
@@ -349,7 +349,7 @@ Selecione o painel ESTRUTURA para adicionar um catálogo ou modificar um catálo
 
 * **URL**: `catalog`
 
-* **Selecione Todos os namespaces**: deixe como padrão.
+* **Selecione Todas as Namespaces**: deixe como padrão.
 * select **Save**
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
