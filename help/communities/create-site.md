@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -47,7 +47,7 @@ Na etapa [Modelo de](/help/communities/sites-console.md#step2013asitetemplate)si
 
 * **Nome** do site da comunidade: engajamento
 
-   * Verifique novamente o nome, pois ele não é facilmente alterado depois que o site é criado
+   * Verifique o nome pelo Duplo, pois ele não é facilmente alterado depois que o site é criado
    * O URL inicial será exibido abaixo do Nome do site da comunidade
    * Para um URL válido, acrescente um código de idioma base + &quot;.html&quot;
    * *Por exemplo*, https://localhost:4502/content/sites/ `engage/en.html`
@@ -83,7 +83,7 @@ Visite o tutorial [Introdução ao AEM Communities para ativar](/help/communitie
 Marque todas as caixas de seleção para Gerenciamento de [usuários](/help/communities/sites-console.md#user-management)
 
 * Para permitir que os visitantes do site se registrem automaticamente
-* Para permitir que os visitantes do site vejam o site sem fazer logon
+* Para permitir que visitantes do site visualizações do site sem fazer logon
 * Para permitir que membros enviem e recebam mensagens de outros membros da comunidade
 * Para permitir o logon com o Facebook em vez de registrar e criar um perfil
 * Para permitir o logon no Twitter em vez de registrar e criar um perfil
@@ -96,9 +96,9 @@ Marque todas as caixas de seleção para Gerenciamento de [usuários](/help/comm
 
 #### TAGGING {#tagging}
 
-As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando namespaces do AEM previamente definidos pelo console [de](/help/sites-administering/tags.md#tagging-console) marcação (como o namespace [do](/help/communities/setup.md#create-tutorial-tags)Tutorial).
+As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando namespaces AEM definidas anteriormente pelo console [de](/help/sites-administering/tags.md#tagging-console) marcação (como a namespace [](/help/communities/setup.md#create-tutorial-tags)Tutorial).
 
-Encontrar namespaces é fácil usando a pesquisa de tipo avançado. Por exemplo,
+Encontrar namespaces é fácil usando a pesquisa antecipada por tipo. Por exemplo,
 
 * Tipo `tut`
 * Selecionar `Tutorial`
@@ -118,7 +118,7 @@ Por exemplo,
 
 >[!NOTE]
 >
->[O serviço](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes somente no ambiente de publicação.
+>[O serviço](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes apenas no ambiente publish.
 
 ![funções de usuário no novo site](assets/site-admin-1.png)
 
@@ -200,7 +200,7 @@ Observe que o UGC não está incluído no pacote do site.
 
 * **Excluir site**
 
-   Selecione o ícone de exclusão para excluir o site da comunidade de dentro do console **[Comunidades de controle]** UIC > Sites. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
+   Selecione o ícone Excluir para excluir o site da comunidade no console **[!UICONTROL Comunidades > Sites]**. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
 
 ![siteactions](assets/siteactions.png)
 
@@ -210,17 +210,17 @@ Observe que o UGC não está incluído no pacote do site.
 >
 >Na instância do autor, no menu principal:
 >
->1. Navegue até **[UIControl Tools > Operations > Replication]** menu.
->1. Selecione **[UIControl Agents no autor]**.
->1. Selecione Agente padrão **[UIControl (publicar)]**.
->1. Ao lado de Configurações **[de controle]** UIC, selecione Edição **[de controle]** UIControl.
->1. Na caixa de diálogo pop-up para Configurações do agente, selecione a guia Transporte **[]** UIControl.
+>1. Navegue até **[!UICONTROL Ferramentas > Operações > menu Replicação]** .
+>1. Selecione **[!UICONTROL Agentes no autor]**.
+>1. Selecione Agente **[!UICONTROL padrão (publicar)]**.
+>1. Ao lado de **[!UICONTROL Configurações]**, selecione **[!UICONTROL Editar]**.
+>1. Na caixa de diálogo pop-up para Configurações do agente, selecione a guia **[!UICONTROL Transporte]** .
 >1. No URI, altere o número da porta, 4503, para o número da porta desejado >
    >    * Por exemplo, para usar a porta 6103:
       >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
-1. Selecione **[UIControl OK]**.
-1. (Opcional) Selecione **[UIControl Limpar]** ou **[UIControl Forçar nova tentativa]** para redefinir a fila de replicação.
+1. Selecione **[!UICONTROL OK]**.
+1. (Opcional) Selecione **[!UICONTROL Limpar]** ou **[!UICONTROL Forçar nova tentativa]** para redefinir a fila de replicação.
 
 
 
@@ -270,9 +270,9 @@ Adicionar um `Login Page Mapping` como
 
 ## Etapas opcionais {#optional-steps}
 
-### Alterar a página inicial padrão {#change-the-default-home-page}
+### Alterar o Home page padrão {#change-the-default-home-page}
 
-Ao trabalhar com o site de publicação para fins de demonstração, pode ser útil alterar a página inicial padrão para o novo site.
+Ao trabalhar com o site de publicação para fins de demonstração, pode ser útil alterar o home page padrão para o novo site.
 
 Para fazer isso, é necessário usar o [CRXDE](https://localhost:4503/crx/de) Lite para editar a tabela de mapeamento [de](/help/sites-deploying/resource-mapping.md) recursos na publicação.
 
@@ -323,7 +323,7 @@ Se não for possível salvar as alterações, verifique se o nome do nó é `loc
 
 #### Solução de problemas: Falha ao redirecionar {#troubleshooting-fail-to-redirect}
 
-O valor &#39;**$**&#39; no final da `sling:match`string de expressão regular é crucial, de modo que apenas `https://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento é prefixado para qualquer caminho que possa existir após server:port no URL. Assim, quando o AEM tenta redirecionar para a página de logon, ele falha.
+O &quot;**$**&quot; no final da `sling:match`string de expressão regular é crucial, de modo que apenas `https://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento é prefixado para qualquer caminho que possa existir após server:port no URL. Assim, quando o AEM tenta redirecionar para a página de logon, ele falha.
 
 ### Modificar o Site {#modify-the-site}
 
@@ -335,5 +335,5 @@ Após qualquer modificação, lembre-se de **Salvar** e **publicar** o site nova
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
 
