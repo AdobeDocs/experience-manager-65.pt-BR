@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
+source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
 
 ---
 
@@ -79,12 +79,17 @@ Você pode usar a Caixa de entrada do AEM para executar e monitorar Workflows AE
   </tr>
   <tr>
    <td>Filas (fila pessoal compartilhada, tarefas de solicitação da fila)</td>
-   <td>Incompatível</td>
+   <td>Compatível</td>
    <td>Compatível</td>
   </tr>
   <tr>
    <td>Notificação fora do escritório</td>
-   <td>Incompatível</td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>
+    <tr>
+   <td>Personalização de elementos da interface do usuário</td>
+   <td>Compatível</td>
    <td>Compatível</td>
   </tr>
   <tr>
@@ -303,6 +308,11 @@ Os Workflows AEM centrados em forma no OSGi e nos Workflows AEM Forms JEE (AEM F
   </tr>
   <tr>
    <td>Gateways , SEM ESPERA </td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>
+   <tr>
+   <td>Variáveis para armazenar dados </td>
    <td>Compatível</td>
    <td>Compatível</td>
   </tr>
