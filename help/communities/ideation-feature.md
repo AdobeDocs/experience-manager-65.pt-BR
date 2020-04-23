@@ -11,26 +11,26 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# Recurso Ideação{#ideation-feature}
+# Recurso Ideação {#ideation-feature}
 
 ## Introdução {#introduction}
 
-O recurso de ideação fornece uma área para visitantes do site conectados (membros da comunidade) no ambiente de publicação para:
+O recurso de ideação fornece uma área para visitantes de site conectados (membros da comunidade) no ambiente de publicação para:
 
-* criar ideias para compartilhar com a comunidade
-* exibir e comentar ideias
-* seguir uma ideia
-* votação de uma ideia
+* Crie ideias para compartilhar com a comunidade.
+* Visualização e comentário sobre ideias.
+* Siga uma ideia.
+* Votem em uma ideia.
 
-Esta seção da documentação descreve
+Esta seção da documentação descreve:
 
-* adicionar o recurso de ideação a um site do AEM
-* configurações do componente Ideação
+* Adicionar o recurso de ideação a um site do AEM.
+* Configurações do componente Ideação.
 
 ### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
 
@@ -42,7 +42,7 @@ e arraste-a para o lugar em uma página onde a ideia deve aparecer.
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do cliente](/help/communities/ideation.md#essentials-for-client-side) necessárias forem incluídas, o `Ideation`componente aparecerá desta forma:
+Quando as bibliotecas [do lado do cliente](/help/communities/ideation.md#essentials-for-client-side) necessárias forem incluídas, o `Ideation` componente será exibido desta forma:
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -54,7 +54,7 @@ Selecione o componente inserido a ser acessado e selecione o `Ideation` `Configu
 
 #### Guia Configurações {#settings-tab}
 
-Em **Configurações **guia, especifique as configurações para ideias e comentários:
+Na guia **[!UICONTROL Configurações]** , especifique as configurações para ideias e comentários:
 
 * **Permitir miniatura de anexo**
 * **Tamanho máximo da miniatura do anexo**
@@ -88,7 +88,7 @@ Em **Configurações **guia, especifique as configurações para ideias e coment
 
 * **Permitir marcação**
 
-   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia Campo **de** tag). O padrão está desmarcado.
+   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia Campo **[!UICONTROL de]** tag). O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
@@ -100,11 +100,11 @@ Em **Configurações **guia, especifique as configurações para ideias e coment
 
 * **Tipos de arquivos permitidos**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que** **todos os tipos de arquivos são permitidos.
+   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **Tamanho máximo do arquivo de imagem a ser anexado**
 
-   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152** **(2 Mb).
+   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
 
 * **Permitir respostas**
 
@@ -116,7 +116,7 @@ Em **Configurações **guia, especifique as configurações para ideias e coment
 
 * **Permitir que usuários excluam comentários e tópicos**
 
-   Se marcada, permita que os membros excluam os comentários e ideias publicados. O padrão está desmarcado.
+   Se marcada, permita que os membros excluam os comentários e ideias que publicaram. O padrão está desmarcado.
 
 * **Permitir monitoramento**
 
@@ -124,7 +124,7 @@ Em **Configurações **guia, especifique as configurações para ideias e coment
 
 * **Permitir assinaturas de email**
 
-   Se marcada, permita que os membros sejam notificados de novas postagens por email ([assinatura](/help/communities/subscriptions.md)). Requer `Allow Following` a verificação e configuração [de](/help/communities/email.md)email. O padrão está desmarcado.
+   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](/help/communities/subscriptions.md)). Requer `Allow Following` a verificação e configuração [de](/help/communities/email.md)email. O padrão está desmarcado.
 
 * **Permitir votação**
 
@@ -146,7 +146,7 @@ Em **Configurações **guia, especifique as configurações para ideias e coment
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia **Moderação do usuário **, especifique como as ideias e os comentários publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Na guia Moderação **[!UICONTROL do]** usuário, especifique como as ideias e os comentários publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
 
 * **Negar postagens**
 
@@ -174,23 +174,23 @@ Na guia **Moderação do usuário **, especifique como as ideias e os comentári
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da exibição pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
+   Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da visualização pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da visualização pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na guia **Settings **, são limitadas de acordo com os namespaces escolhidos.
+Na guia Campo **[!UICONTROL de]** tag , as tags que podem ser aplicadas, se permitidas na guia **[!UICONTROL Configurações]** , são limitadas de acordo com as namespaces escolhidas.
 
 * **Espaços de nomes permitidos**
 
-   Relevante se `Allow Tagging` estiver marcado na guia **Configurações** . As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todos os namespaces são permitidos.
+   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Configurações]** . As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
 
 * **Limite sugerido**
 
-   Insira o número de tags a serem exibidas como uma sugestão para o membro postando no fórum. Um valor de **-**1 significa sem limite. O padrão é 0.
+   Insira o número de tags a serem exibidas como uma sugestão para o membro postando no fórum. Um valor de **-1** significa sem limite. O padrão é 0.
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 
-Na guia **Configurações de classificação **s, especifique como os comentários publicados são classificados quando exibidos.
+Na guia **[!UICONTROL Classificar configurações]** , especifique como os comentários publicados são classificados quando exibidos.
 
 * **Ordenar por**
 
@@ -204,11 +204,11 @@ Na guia **Configurações de classificação **s, especifique como os comentári
 
    Puxe para baixo para selecionar um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Criando ideia {#creating-idea}
 
-Como acontece com todos os recursos das Comunidades, se não estiverem conectados, um visitante do site só poderá ler ideias e exibir opiniões de outras pessoas (por meio de comentários e votação/curtir).
+Como acontece com todos os recursos das Comunidades, se não estiverem conectados, um visitante do site só poderá ler ideias e visualização opiniões de outras pessoas (através de comentários e votação/curtir).
 
 Depois de conectado, um membro pode criar uma nova ideia.
 
