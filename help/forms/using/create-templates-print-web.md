@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
@@ -26,7 +26,7 @@ Os modelos para o canal Imprimir são criados no Adobe Forms Designer e carregad
 
 Os modelos para o canal da Web são criados no AEM. Os autores e administradores de modelos podem criar, editar e ativar modelos da Web. Depois de criados e ativados, esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
 
-Este tutorial o orienta pelas etapas para criar modelos para canais de Impressão e Web para que eles estejam disponíveis para uso ao criar Comunicações Interativas. No final deste tutorial, você poderá:
+Este tutorial o orienta pelas etapas para criar modelos para canais de Impressão e da Web, de modo que eles estejam disponíveis para uso ao criar o Interative Communications. No final deste tutorial, você poderá:
 
 * Criar modelos XDP para canal de impressão usando o Adobe Forms Designer
 * Carregar os modelos XDP no AEM Forms Server
@@ -34,7 +34,7 @@ Este tutorial o orienta pelas etapas para criar modelos para canais de Impressã
 
 ## Criar modelo para canal de impressão {#create-template-for-print-channel}
 
-Crie e gerencie modelos para o canal Imprimir de Comunicação Interativa usando as seguintes tarefas:
+Crie e gerencie modelos para o canal Imprimir de comunicação interativa usando as seguintes tarefas:
 
 * [Criar modelo XDP usando o Forms Designer](../../forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
 * [Carregar modelo XDP no servidor de formulários AEM](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
@@ -111,7 +111,7 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Print:
 
 Depois de criar um modelo XDP usando o Designer de Formulários, você deve carregá-lo no servidor de Formulários AEM para que o modelo esteja disponível para uso ao criar a Comunicação Interativa.
 
-1. Selecione **Formulários** > **Formulários e Documentos**.
+1. Selecione **[!UICONTROL Formulários]** > **[!UICONTROL Formulários e Documentos]**.
 1. Toque em **Criar** > Upload **de arquivo**.
 
    Navegue e selecione o modelo **create_first_ic_print_template** (XDP) e toque em **Abrir** para importar o modelo XDP para o servidor de formulários AEM.
