@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -32,9 +32,9 @@ Atualmente, os emblemas que um membro da comunidade recebe ou está atribuído s
 * [Quadros de líderes](/help/communities/enabling-leaderboard.md)
 * [Ideação](/help/communities/ideation-feature.md)
 
-No ambiente do autor, para acessar o console Distintos
+No ambiente do autor, para acessar o console Badges
 
-* Na navegação global, navegue até **[UIControl Tools > Communities > Badges]**
+* Na navegação global, navegue até **[!UICONTROL Ferramentas > Comunidades > Crachás]**
 
 Esse console exibe os emblemas disponíveis no momento e a partir dos quais novos emblemas podem ser adicionados.
 
@@ -44,7 +44,7 @@ Esse console exibe os emblemas disponíveis no momento e a partir dos quais novo
 
 Um crachá é criado fazendo upload de uma imagem bem pequena (72 dpi com uma altura entre 26 e 32 pixels) e fornecendo um nome. A imagem do crachá é armazenada no repositório em `/etc/community/badging/images` e é replicada automaticamente para o ambiente de publicação.
 
-Se o ambiente de publicação for um farm de editores, será necessário configurar a sincronização [](/help/communities/sync.md)do usuário.
+Se o ambiente publish for um farm de editores, será necessário configurar a sincronização [](/help/communities/sync.md)do usuário.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
