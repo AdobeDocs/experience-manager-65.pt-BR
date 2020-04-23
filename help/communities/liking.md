@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
 # Como usar curtidas {#using-liking}
 
-O `Liking`componente é uma ferramenta útil que permite aos usuários expressar uma opinião sobre um conteúdo específico, como um comentário em um fórum. Com o `Liking`componente, os membros selecionam o ícone de coração para indicar uma opinião positiva.
+O `Liking` componente é uma ferramenta útil que permite aos usuários expressar uma opinião sobre um conteúdo específico, como um comentário em um fórum. Com o `Liking` componente, os membros selecionam o ícone do coração para indicar uma opinião positiva.
 
 ## Adicionar curtir a uma página {#adding-liking-to-a-page}
 
-Para adicionar um `Liking` componente a uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um `Liking` componente a uma página no modo de autor, use o navegador de componentes para localizar:
 
 * `Communities / Liking`
 
@@ -43,13 +43,19 @@ Na guia **[!UICONTROL Textos e etiquetas]** , especifique as propriedades usadas
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Rótulo]** de resposta positiva (*obrigatório*) O nome da propriedade para uma resposta positiva.
+* **[!UICONTROL Rótulo de resposta positiva]**
 
-* **[!UICONTROL Rótulo]** de resposta negativa (*obrigatório*) O nome da propriedade para uma resposta negativa.
+   (*Obrigatório*) O nome da propriedade para uma resposta positiva.
 
-* **[!UICONTROL Nome]** de contagem (*obrigatório*) O nome de propriedade interno e identificável para esta instância de um componente de votação.
+* **[!UICONTROL Etiqueta de resposta negativa]**
 
-## Experiência do visitante do site {#site-visitor-experience}
+   (*Obrigatório*) O nome da propriedade para uma resposta negativa.
+
+* **[!UICONTROL Nome Tally]**
+
+   (*Obrigatório*) O nome de propriedade interno e identificável para esta instância de um componente de votação.
+
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Membros {#members}
 
