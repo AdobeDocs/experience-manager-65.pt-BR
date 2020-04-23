@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Nesta seção, você cria as seguintes páginas que usam o modelo [de](initial-app.md#createthepagetemplate)página:
 
-* Site do SCF Sandbox, que redirecionará para a versão em inglês da página principal
+* Site do SCF Sandbox, que redirecionará para a versão em inglês da página principal.
 
-   * SCF Sandbox - A página principal da versão em inglês do site
+   * SCF Sandbox - a página principal da versão em inglês do site.
 
-      * SCF Play - Filho da página principal na qual reproduzir
+      * SCF Play - Filho da página principal que será reproduzida.
 
 Embora este tutorial não seja fornecido para cópias [de](../../help/sites-administering/tc-prep.md)idioma, ele foi projetado para que a página raiz possa implementar a detecção do idioma preferencial para o usuário por meio do cabeçalho HTML e redirecionar para a página principal apropriada para o idioma. A convenção é usar o código de país de duas letras para o nome do nó da página, por exemplo, &quot;en&quot; para inglês, &quot;fr&quot; para francês e assim por diante.
 
@@ -45,7 +45,7 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
 
    Como alternativa, acesse a interface clássica para sites diretamente navegando para [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. No painel explorador, selecione **[!UICONTROL Sites]** e, na barra de ferramentas, selecione **[!UICONTROL Novo > Nova página]**.
+1. No painel explorador, selecione **[!UICONTROL Sites]** e, na barra de ferramentas, selecione **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**.
 
    Na caixa de diálogo **[!UICONTROL Criar página]** , digite o seguinte:
 
@@ -55,14 +55,14 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
    * Clique em **[!UICONTROL Criar]**
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. No painel explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site`e clique em **[!UICONTROL Nova > Nova página]**:
+1. No painel explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site`e clique em **[!UICONTROL Nova]** > **[!UICONTROL Nova página]**:
 
    * Título: `SCF Sandbox`
    * Nome: `en`
    * Selecionar **um modelo de reprodução SCF Sandbox **
    * Clique em **Criar **
 
-1. No painel explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site/SCF Sandbox`e clique em **[!UICONTROL Nova > Nova página]**
+1. No painel do explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site/SCF Sandbox`e clique em **[!UICONTROL Nova]** > **[!UICONTROL Nova página]**
 
    * Título: `SCF Play`
    * Nome: `play`
@@ -73,7 +73,7 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
-   Esta é a exibição do repositório do que foi criado usando a ferramenta Site e o modelo:
+   Esta é a visualização do repositório do que foi criado usando a ferramenta Site e o modelo:
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
@@ -105,4 +105,5 @@ O repositório deve ser exibido da seguinte forma:
 >[!NOTE]
 >
 >O uso de cq:designPath é opcional e não está relacionado ao [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que são essencialmente necessários, já que os componentes do SCF usam [clientlibs](client-customize.md#clientlibs-for-scf) para gerenciar seus JS e CSS.
+
 
