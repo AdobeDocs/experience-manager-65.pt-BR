@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: a6b4a32b320d53c41ebf9615895dbf17ab722f19
 
 ---
 
@@ -151,7 +151,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
   </tr> 
    <tr>
    <td>Oracle Database 19c </td>
-   <td>Repositório</td>
+   <td>Microkernal do repositório </td>
    <td>Compatível</td>
   </tr>
   <tr>
@@ -313,9 +313,9 @@ Além disso, considere os seguintes pontos ao escolher o software para o Adobe A
 
 * O AEM Forms no JEE oferece suporte a atualizações, patches e conjuntos de correções sobre a versão principal e secundária especificada do software suportado. No entanto, a atualização para a próxima versão principal ou secundária não é suportada, a menos que especificado.
 * As instalações baseadas em cluster não suportam persistência de TarMK. Para obter informações sobre a persistência com suporte, consulte [Escolhendo um tipo de persistência para uma instalação](/help/forms/using/choosing-persistence-type-for-aem-forms.md)do AEM Forms.
-* O AEM Forms no JEE é compatível com vários softwares de terceiros de acordo com nossa Política [de suporte de software de](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p)terceiros.
+* O AEM Forms no JEE é compatível com vários softwares de terceiros de acordo com nossa Política [de suporte a software de](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p)terceiros.
 * O AEM Forms no JEE suporta plataformas conforme o suporte fornecido por fornecedores terceirizados. Algumas combinações podem não ser permitidas por fornecedores terceirizados. Por exemplo, muitos fornecedores não certificaram seus servidores de aplicativos com a Oracle. Como resultado, o AEM Forms no JEE também não é compatível com essas combinações. Para garantir que você escolha as versões de software suportadas, verifique também a matriz de suporte dos fornecedores terceirizados.
-* O AEM Forms em JEE não oferece suporte ao TarMK Cold Standby.
+* O AEM Forms no JEE não oferece suporte ao TarMK Cold Standby.
 * O AEM Forms no JEE não oferece suporte a clustering vertical.
 * O AEM Forms em JEE não oferece suporte ao banco de dados MySQL em um ambiente clusterizado.
 * Para obter a lista de plataformas removidas ou atualizadas, consulte [documento Resumo](../../forms/using/whats-new.md) dos novos recursos do AEM 6.5 Forms.
@@ -441,7 +441,7 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. Veja a seguir 
 >* O Gerador de PDF não é compatível com o Microsoft Office 365.
 >* As conversões do Gerador de PDF para OpenOffice são suportadas apenas no Windows e no Linux.
 >* Os recursos OCR PDF, Otimizar PDF e Exportar PDF são suportados apenas no Windows.
->* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do Gerador de PDF. A versão agrupada só deve ser acessada de forma programática com o AEM Forms, durante o período da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação (serviços[no local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou serviços [](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)gerenciados)&quot;
+>* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do Gerador de PDF. A versão agrupada só deve ser acessada de forma programática com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação (serviços[no local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou serviços [](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)gerenciados)&quot;
    >
    >
 * O serviço Gerador de PDF não é compatível com o Microsoft Windows 10.
