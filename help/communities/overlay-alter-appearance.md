@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -24,25 +24,25 @@ O script comment.hbs é responsável pela criação do HTML geral para cada come
 
 Para não exibir o avatar ao lado de cada comentário publicado:
 
-1. copiar `comment.hbs`de `libs`para `apps`
+1. Copiar `comment.hbs`de `libs`para `apps`
 
-   1. select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. selecionar **cópia**
-   1. select `/apps/social/commons/components/hbs/comments/comment`
-   1. selecione **Colar**
+   1. Selecionar `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Selecionar **cópia**
+   1. Selecionar `/apps/social/commons/components/hbs/comments/comment`
+   1. Selecionar **colar**
 
-1. abrir o sobreposto `comment.hbs`
+1. Abrir o sobreposto `comment.hbs`
 
-   * clique duas vezes no nó `comment.hbs`em `/apps/social/commons/components/hbs/comments/comment folder`
+   * Duplo- clique no nó `comment.hbs` em `/apps/social/commons/components/hbs/comments/comment folder`
 
-1. localize as seguintes linhas e exclua-as ou comente-as:
+1. Encontre as seguintes linhas e exclua-as ou comente-as:
 
 ```xml
   <aside class="scf-comment-author">
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Exclua as linhas ou rode-as com &#39;&lt;!—&#39; e &#39;—>&#39; para comentá-los. Além disso, os caracteres &#39;xxx&#39; estão sendo adicionados como um indicador visual de onde o avatar estaria.
+Exclua as linhas, ou rode-as com `<!--` e `-->` para comentá-las. Além disso, os caracteres &#39;xxx&#39; estão sendo adicionados como um indicador visual de onde o avatar estaria.
 
 ```xml
    xxx
@@ -59,13 +59,14 @@ Encaminhe o componente de comentários sobrepostos para a instância de publica�
 >
 >Uma forma mais robusta de replicação seria criar um pacote no Package Manager e [ativá](/help/sites-administering/package-manager.md#replicating-packages) -lo. Um pacote pode ser exportado e arquivado.
 
-Na navegação global, selecione **Ferramentas, Implantação, Replicação** e, em seguida, **Ativar árvore**.
 
-Para o Caminho de início, digite `/apps/social/commons`** **e selecione **Ativar**.
+Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]** e clique em **[!UICONTROL Ativar árvore]**.
+
+Para Caminho do Start, digite `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Exibir resultados {#view-results}
+### Resultados da Visualização {#view-results}
 
 Se você fizer logon na instância de publicação como administrador, por exemplo, https://localhost:4503/crx/de como administrador/administrador, poderá verificar se os componentes sobrepostos estão lá.
 
