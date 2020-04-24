@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Ao criar um local para uma classe Java, lembre-se de que o nome do pacote deve corresponder ao do local da pasta do repositório com qualquer hífen no caminho que tenha sido escapado corretamente.
 
-Embora usar hífens nos nomes de itens do repositório seja uma prática recomendada no desenvolvimento do AEM, os hífens são ilegais nos nomes dos pacotes Java.
+Embora o uso de hífens nos nomes de itens do repositório seja uma prática recomendada no desenvolvimento do AEM, os hífens são ilegais nos nomes dos pacotes Java.
 
-A plataforma CRX subjacente deve ser capaz de distinguir entre um sublinhado real &#39;_&#39; e um hífen &#39;-&#39;. Assim, no JCR, o hífen deve ser substituído pelo seu valor unicode (u002d) e escapado com um sublinhado &#39;_&#39;.
+A plataforma CRX subjacente deve ser capaz de distinguir entre um sublinhado real `_ `e um hífen `-`. Assim, no JCR, o hífen deve ser substituído pelo seu valor unicode (u002d) e escapado com um sublinhado `_`.
 
 Por exemplo, se o caminho do repositório for **/apps/my-example/component/info/Info.java**, o nome do pacote deverá ser `java package apps.my_002dexample.component.info;`
 
