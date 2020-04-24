@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: dee9f9c9d3dfb916d1feaa0d258c883686e1a1dc
 
 ---
 
@@ -38,7 +38,7 @@ Você não deve instalar ou configurar o AEM Forms no JEE usando um shell raiz. 
 
 **Instalação e configuração no Windows**
 
-Você deve executar a instalação no Windows como um administrador se estiver instalando o AEM Forms no JEE no JBoss usando o método chave na mão ou se estiver instalando o Gerador de PDF. Além disso, ao instalar o Gerador de PDF no Windows com suporte a aplicativo nativo, você deve executar a instalação como o mesmo usuário do Windows que instalou o Microsoft Office. Para obter mais informações sobre privilégios de instalação, consulte **Instalação e implantação de formulários AEM no documento JEE** para seu servidor de aplicativos.
+Você deve executar a instalação no Windows como um administrador se estiver instalando o AEM Forms no JEE no JBoss usando o método chave na mão ou se estiver instalando o Gerador de PDF. Além disso, ao instalar o Gerador de PDF no Windows com suporte a aplicativo nativo, você deve executar a instalação como o mesmo usuário do Windows que instalou o Microsoft Office. Para obter mais informações sobre privilégios de instalação, consulte o documento* Installing and Deploying AEM Forms on JEE* para seu servidor de aplicativos.
 
 ### Segurança da camada de rede {#network-layer-security}
 
@@ -162,7 +162,7 @@ Existe um risco aumentado de que um usuário não autorizado possa obter acesso 
 
 **Contas de serviço (chave de acesso JBoss somente no Windows)**
 
-O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem. A conta de usuário LocalSystem integrada tem um alto nível de acessibilidade; faz parte do grupo Administradores. Se uma identidade de processo de trabalho for executada como a conta de usuário LocalSystem, esse processo de trabalho terá acesso total ao sistema inteiro.
+O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem. A conta de usuário LocalSystem integrada tem um alto nível de acessibilidade; faz parte do grupo Administradores. Se uma identidade de processo de trabalho for executada como a conta de usuário LocalSystem, esse processo de trabalho terá total acesso ao sistema inteiro.
 
 Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado, usando uma conta específica não administrativa, siga estas instruções:
 
@@ -184,7 +184,7 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
    * Negar logon localmente
    * Fazer logon como Serviço (já deve estar definido)
 
-1. Atribua à nova conta de usuário as permissões de Leitura e Execução, Conteúdo da pasta de Lista e Leitura para o item de diretórios de conteúdo da Web do AEM Forms em JEE.
+1. Atribua à nova conta de usuário permissões de Leitura e Execução, Gravação, Modificação, Conteúdo da pasta de Lista e Leitura para concluir o diretório de instalação do AEM Forms no JEE e no diretório Global Documento Armazenamento (GDS). O local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em [JBoss root]/server/[type]/svcnative/DocumentStorage.
 1. Start o servidor de aplicativos.
 
 **Desativação do servlet de inicialização do Configuration Manager**
@@ -258,7 +258,7 @@ Quando o AEM Forms no JEE é instalado, uma única conta de usuário padrão é 
 1. Digite o seguinte URL em um navegador da Web:
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
    O número padrão da porta é um destes:
@@ -278,7 +278,7 @@ Quando o AEM Forms no JEE é instalado, uma única conta de usuário padrão é 
 
 Além disso, é recomendável alterar a senha padrão para o Administrador do CRX executando as seguintes etapas:
 
-1. Faça logon `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` usando o nome de usuário/senha padrão.
+1. Faça logon `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` usando o nome de usuário/senha padrão.
 1. Digite Administrador no campo de pesquisa e clique em **Ir**.
 1. Selecione **Administrador** no resultado da pesquisa e clique no ícone **Editar** na parte inferior direita da interface do usuário.
 1. Especifique a nova senha no campo **Nova senha** e a senha antiga no campo **Sua senha** .
@@ -291,7 +291,7 @@ A geração WSDL (Web Service Definition Language) deve ser ativada somente para
 1. Digite o seguinte URL em um navegador da Web:
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
 1. Clique em **Configurações > Configurações principais do sistema > Configurações**.
@@ -676,7 +676,7 @@ Quando você instala os Serviços de Documento pela primeira vez, a lista de Que
 
 **Gerenciando lista de Quem indicou permitida**
 
-Você pode gerenciar a lista de Quem indicou Permitida na Interface de Gerenciamento de Usuário do Console de Administração. A interface de gerenciamento de usuários oferece a funcionalidade de criar, editar ou excluir a lista. Consulte a seção *[Prevenção de ataques](/help/forms/using/admin-help/preventing-csrf-attacks.md)*CSRF da ajuda **administrativa para obter mais informações sobre como trabalhar com a lista de Quem indicou permitida.
+Você pode gerenciar a lista de Quem indicou Permitida na Interface de Gerenciamento de Usuário do Console de Administração. A interface de gerenciamento de usuários oferece a funcionalidade de criar, editar ou excluir a lista. Consulte a seção * [Impedindo ataques](/help/forms/using/admin-help/preventing-csrf-attacks.md)CSRF* da ajuda *da* administração para obter mais informações sobre como trabalhar com a lista de Quem indicou permitida.
 
 **Gerenciando exceções de Quem indicou permitidas e listas de URI permitidas**
 
@@ -691,7 +691,7 @@ O AEM Forms em JEE fornece APIs para gerenciar a lista de Exceção de Quem indi
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Consulte o *AEM Forms on JEE API Reference* para obter mais informações sobre as APIs.
+Consulte o* AEM Forms on JEE API Reference* para obter mais informações sobre as APIs.
 
 Use a lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para Exceções de Quem indicou Permitidas no nível global, isto é, para definir exceções aplicáveis a todos os aplicativos. Esta lista contém apenas URIs com um caminho absoluto (por exemplo, `/index.html`) ou um caminho relativo (por exemplo, `/sample/`). Também é possível anexar uma expressão regular ao final de um URI relativo, por exemplo, `/sample/(.)*`.
 
@@ -711,7 +711,7 @@ Inclua o argumento `-Dlc.um.csrffilter.disabled=true` JAVA no script de iniciali
 
 **Filtragem de Quem indicou para arquivos WAR personalizados**
 
-Você pode ter criado arquivos WAR personalizados para trabalhar com o AEM Forms no JEE a fim de atender às suas necessidades comerciais. Para ativar a Filtragem de Quem indicou para seus arquivos WAR personalizados, inclua ***adobe-usermanager-client.jar*** no caminho de classe para a WAR e inclua uma entrada de filtro no arquivo *web.xml* com os seguintes parâmetros:
+Você pode ter criado arquivos WAR personalizados para trabalhar com o AEM Forms no JEE a fim de atender às suas necessidades comerciais. Para ativar a Filtragem de Quem indicou para seus arquivos WAR personalizados, inclua ***adobe-usermanager-client.jar*** no caminho de classe para a WAR e inclua uma entrada de filtro no arquivo* web.xml* com os seguintes parâmetros:
 
 **CSRF_CHECK_GETS** controla a verificação de Quem indicou em solicitações GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua este parâmetro somente se desejar filtrar suas solicitações GET.
 
@@ -970,10 +970,11 @@ Por padrão, o AEM Forms on JEE turnkey installation configura uma conta de serv
 1. Na janela Configurações de segurança local, em Atribuição de direitos de usuário, atribua os seguintes direitos à conta de usuário na qual o servidor de formulários está sendo executado:
 
    * Negar logon por meio dos Serviços de Terminal
-   * Negar logon localmente
+   * Negar logon no local
    * Fazer logon como Serviço (já deve estar definido)
 
-1. Atribua à nova conta de usuário permissões de Leitura e Execução, Conteúdo da pasta de Lista e Leitura para o AEM Forms em diretórios de conteúdo da Web JEE.
+1. Atribua à nova conta de usuário permissões de Leitura e Execução, Gravação, Modificação, Conteúdo da pasta de Lista e Leitura para concluir o diretório de instalação do AEM Forms no JEE e no diretório Global Documento Armazenamento (GDS). O local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em [JBoss root]/server/[type]/svcnative/DocumentStorage.
+
 1. Start do serviço do servidor de aplicativos.
 
 ### Segurança do sistema de arquivos {#file-system-security}
@@ -1038,4 +1039,3 @@ Defina a `directoryBrowsingEnabled` propriedade no arquivo ibm-web-ext.xml como 
 1. Desmarque **Ativar segurança** do aplicativo e **Usar segurança** Java 2.
 1. Clique em **OK** ou em **Aplicar**.
 1. Na caixa **Mensagens** , clique em **Salvar diretamente na configuração** mestre.
-
