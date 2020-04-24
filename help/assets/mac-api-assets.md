@@ -1,14 +1,14 @@
 ---
-title: API HTTP Assets
-description: Saiba mais sobre a implementação, o modelo de dados e os recursos da API HTTP do Assets. Use a API HTTP Assets para executar várias tarefas em torno dos ativos.
+title: API HTTP de ativos
+description: Saiba mais sobre a implementação, o modelo de dados e os recursos da API HTTP do Assets. Use a API HTTP Assets para executar várias tarefas sobre ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# API HTTP Assets {#assets-http-api}
+# API HTTP de ativos {#assets-http-api}
 
 ## Visão geral {#overview}
 
@@ -16,7 +16,7 @@ A API HTTP Assets permite operações de criação-leitura-atualização-exclus�
 
 Para acessar a API:
 
-1. Abra o documento do serviço API em `https://[hostname]:[port]/api.json`.
+1. Abra o documento de serviço da API em `https://[hostname]:[port]/api.json`.
 1. Siga o link de serviço Ativos à esquerda para `https://[hostname]:[server]/api/assets.json`.
 
 A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
@@ -37,7 +37,7 @@ Além disso, expõe elementos mais detalhados para os modelos de dados personali
 
 ### Pastas {#folders}
 
-As pastas são como diretórios em sistemas de arquivos tradicionais. São contêineres para outras pastas ou asserções. As pastas têm os seguintes componentes:
+As pastas são como diretórios em sistemas de arquivos tradicionais. São container para outras pastas ou asserções. As pastas têm os seguintes componentes:
 
 **Entidades**: As entidades de uma pasta são seus elementos filho, que podem ser pastas e ativos.
 
@@ -54,7 +54,7 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São cont�
 * `parent`: Link para a pasta pai
 * `thumbnail`: (Opcional) link para uma imagem em miniatura de pasta
 
-### Assets {#assets}
+### Ativos {#assets}
 
 No AEM, um ativo contém os seguintes elementos:
 
@@ -72,7 +72,7 @@ No AEM, uma pasta tem os seguintes componentes:
 
 A API HTTP Assets inclui os seguintes recursos:
 
-* Recuperar uma lista de pastas
+* Recuperar uma listagem de pastas
 * Criar uma pasta
 * Criar um ativo
 * Atualizar binário de ativo
@@ -86,7 +86,7 @@ A API HTTP Assets inclui os seguintes recursos:
 
 >[!NOTE]
 >
->Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com [Resty](https://github.com/micha/resty) , que é um invólucro de scripts para `cURL`.
+>Para facilitar a leitura, os seguintes exemplos omitem a notação cURL completa. Na verdade, a notação correlaciona-se com o [Resty](https://github.com/micha/resty) , que é um invólucro de scripts para `cURL`.
 
 **Pré-requisitos**
 
@@ -94,7 +94,7 @@ A API HTTP Assets inclui os seguintes recursos:
 * Navegue até Filtro **CSRF do** Adobe Granite.
 * Verifique se a propriedade Métodos **de** filtro inclui: POSTAGEM, COLOCAR, EXCLUIR.
 
-## Recuperar uma lista de pastas {#retrieve-a-folder-listing}
+## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
 
 Recupera uma representação Siren de uma pasta existente e de suas entidades filhas (subpastas ou ativos).
 
@@ -118,9 +118,9 @@ A classe da entidade retornada é assets/folder.
 
 As propriedades de entidades contidas são um subconjunto do conjunto completo de propriedades de cada entidade. Para obter uma representação completa da entidade, os clientes devem recuperar o conteúdo do URL apontado pelo link com um `rel` de `self`.
 
-## Criar uma pasta {#create-a-folder}
+## Create a Folder {#create-a-folder}
 
-Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um * for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de consulta de URL.
+Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um * for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome de nó. Aceitos como dados de solicitação é uma representação SIREEN da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de query de URL.
 
 A operação falhará com um código de `500` resposta se o nó pai do caminho especificado não existir. Se a pasta já existir, um código de `409` resposta será retornado.
 
@@ -200,7 +200,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @
 
 ## Atualizar metadados do ativo {#update-asset-metadata}
 
-Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade no `dc:` namespace, a API atualizará a mesma propriedade no `jcr` namespace. A API não sincroniza as propriedades nos dois namespaces.
+Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer propriedade na `dc:` namespace, a API atualizará a mesma propriedade na `jcr` namespace. A API não sincroniza as propriedades nas duas namespaces.
 
 **Solicitar**
 
@@ -344,7 +344,7 @@ MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
 500 - INTERNAL SERVER ERROR - if something else goes wrong
 ```
 
-## Excluir uma pasta, ativo ou representação {#delete-a-folder-asset-or-rendition}
+## Excluir uma pasta, um ativo ou uma representação {#delete-a-folder-asset-or-rendition}
 
 Exclui um recurso (-tree) no caminho especificado.
 
