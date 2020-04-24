@@ -3,7 +3,7 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 O Gerenciamento dinâmico de tags da Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. É fornecido gratuitamente para clientes do Adobe Analytics.
 
-Embora você possa personalizar seu código de rastreamento para permitir que as soluções de CMS de terceiros usem o Asset Insights, a Adobe recomenda usar o DTM para inserir tags do Asset Insights.
+Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, a Adobe recomenda usar o DTM para inserir tags do Asset Insights.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Embora você possa personalizar seu código de rastreamento para permitir que as
 
 Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
-1. Toque/clique no logotipo do AEM e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Configuração **[!UICONTROL de]** insights.
+1. Tap/click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Configurar a instância do AEM com o serviço da DTM Cloud](/help/sites-administering/dtm.md)
 
    O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar Configurações **[!UICONTROL da]** conta no ícone Perfil. Essa etapa não é necessária do ponto de vista Asset Insights, pois a integração dos Sites AEM com Asset Insights ainda está em andamento.
@@ -41,7 +41,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Toque/clique no logotipo do AEM e vá para **[!UICONTROL Ferramentas > Ativos]**.
+1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
 1. Toque/clique em **[!UICONTROL Insights Page Tracker]**, copie o código do rastreador e cole-o na caixa de diálogo Script aberta na etapa 6. Salve as alterações.
 
    >[!NOTE]
@@ -104,9 +104,9 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
    })();
    ```
 
-   * A regra de carregamento de página no DTM inclui somente o código pagetracker.js. Quaisquer `assetAnalytics` campos são considerados substituições para valores padrão. Elas não são obrigatórias por padrão.
-   * O código chama `assetAnalytics.dispatcher.init`() depois de verificar se `_satellite.getToolsByType('sc')[0].getS`() está inicializado e `assetAnalytics,dispatcher.init` disponível. Portanto, você pode ignorar a adição na etapa 11.
-   * Conforme indicado nos comentários no código do Controlador de página do Insights (**[!UICONTROL Ferramentas > Ativos > Controlador]** de página do Insights), quando o Controlador de página não cria um `AppMeasurement` objeto, os três primeiros argumentos (RSID, Servidor de rastreamento e Namespace do visitante) são irrelevantes. Strings vazias são passadas para realçar isso.\
+   * A regra de carregamento de página no DTM inclui apenas o `pagetracker.js` código. Quaisquer `assetAnalytics` campos são considerados substituições para valores padrão. Elas não são obrigatórias por padrão.
+   * O código chama `assetAnalytics.dispatcher.init()` depois de verificar se `_satellite.getToolsByType('sc')[0].getS()` está inicializado e `assetAnalytics,dispatcher.init` está disponível. Portanto, você pode ignorar a adição na etapa 11.
+   * Conforme indicado nos comentários no código do Controlador de página do Insights (**[!UICONTROL Ferramentas > Ativos > Controlador]** de página do Insights), quando o Controlador de página não cria um `AppMeasurement` objeto, os três primeiros argumentos (RSID, Servidor de rastreamento e Namespace do Visitante) são irrelevantes. Strings vazias são passadas para realçar isso.\
       Os argumentos restantes correspondem ao que está configurado na página Configuração de Insights (**[!UICONTROL Ferramentas > Ativos > Configuração]** de Insights).
    * O objeto AppMeasurement é recuperado consultando-se `satelliteLib` para todos os mecanismos disponíveis do SiteCatalyst. Se várias tags estiverem configuradas, altere o índice do seletor de matriz adequadamente. As entradas no storage são ordenadas de acordo com as ferramentas do SiteCatalyst disponíveis na interface do DTM.
 
