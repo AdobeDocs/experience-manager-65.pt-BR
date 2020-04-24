@@ -1,16 +1,16 @@
 ---
-title: Baixar ativos no AEM
-description: Saiba como baixar ativos do AEM e ativar ou desativar a funcionalidade de download.
+title: Baixe ativos digitais do [!DNL Adobe Experience Manager].
+description: Saiba como baixar ativos do [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# Baixar ativos no AEM {#download-assets-from-aem}
+# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente dos ativos AEM. Os ativos baixados são agrupados em um arquivo ZIP. O arquivo ZIP compactado tem um tamanho máximo de 1 GB para o trabalho de exportação. É permitido um máximo de 500 ativos por tarefa de exportação.
+Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente de [!DNL Adobe Experience Manager Assets]. Os ativos baixados são agrupados em um arquivo ZIP. O arquivo ZIP compactado tem um tamanho máximo de 1 GB para o trabalho de exportação. É permitido um máximo de 500 ativos por tarefa de exportação.
 
 >[!NOTE]
 >
@@ -20,9 +20,9 @@ Para baixar ativos, navegue até um ativo, selecione o ativo e toque em **[!UICO
 
 Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de mídia mista e Conjuntos de carrossel não podem ser baixados.
 
-![Opções disponíveis ao baixar ativos do AEM Assets](assets/asset_download_dialog.png)
+![Opções disponíveis ao baixar ativos dos ativos do Experience Manager](assets/asset_download_dialog.png)
 
-*Figura: Opções disponíveis ao baixar ativos do AEM Assets*
+*Figura: Opções disponíveis ao baixar ativos de[!DNL Experience Manager Assets].*
 
 Veja a seguir as opções de Exportação/Download. As renderizações dinâmicas são exclusivas do Dynamic Media e permitem que você gere renderizações dinamicamente, além do ativo selecionado - essa opção só estará disponível se o Dynamic Media estiver ativado.
 
@@ -40,7 +40,7 @@ Quando você seleciona uma pasta para download, a hierarquia completa de ativos 
 
 ## Ativar servlet de download de ativos {#enable-asset-download-servlet}
 
-O servlet padrão no AEM permite que os usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos visíveis a eles que podem sobrecarregar o servidor e a rede. Para atenuar os possíveis riscos de DoS causados por esse recurso, o componente `AssetDownloadServlet` OSGi é desabilitado por padrão para instâncias de publicação.
+O servlet padrão [!DNL Experience Manager] permite que os usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos visíveis a eles que podem sobrecarregar o servidor e a rede. Para atenuar os possíveis riscos de DoS causados por esse recurso, o componente `AssetDownloadServlet` OSGi é desabilitado por padrão para instâncias de publicação.
 
 Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Share Commons ou outra implementação semelhante ao portal, ative manualmente o servlet por meio de uma configuração OSGi. A Adobe recomenda definir o tamanho de download permitido o mais baixo possível sem afetar os requisitos diários de download. Um valor alto pode afetar o desempenho.
 
@@ -53,14 +53,14 @@ Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Sha
 1. Na pasta de configuração, crie um novo arquivo do tipo `nt:file` chamado `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Preencha `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` com o seguinte. Define um tamanho máximo (em bytes) para o download como valor de `asset.download.prezip.maxcontentsize`. A amostra abaixo configura o tamanho máximo do download ZIP para não exceder 100 kB.
 
-   ```
+   ```conf
    enabled=B"true"
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
 ## Desativar o servlet de download de ativos {#disable-asset-download-servlet}
 
-O `Asset Download Servlet` pode ser desativado em instâncias de publicação de AEM atualizando a configuração do dispatcher para bloquear quaisquer solicitações de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
+O `Asset Download Servlet` pode ser desativado em instâncias de [!DNL Experience Manager] Publicação atualizando a configuração do dispatcher para bloquear quaisquer solicitações de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
 
 1. Para bloquear solicitações de download de ativos por meio de uma configuração do dispatcher, edite a `dispatcher.any` configuração e adicione uma nova regra à seção [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro.
 
@@ -71,6 +71,6 @@ O `Asset Download Servlet` pode ser desativado em instâncias de publicação de
 >[!MORELIKETHIS]
 >
 >* [Baixar ativos protegidos pelo DRM](drm.md)
->* [Baixar ativos usando o aplicativo de desktop AEM no desktop Win ou Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+>* [Baixar ativos usando o aplicativo de desktop Experience Manager no desktop Win ou Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
 >* [Baixar ativos usando o Adobe Assets Link dos aplicativos da Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
