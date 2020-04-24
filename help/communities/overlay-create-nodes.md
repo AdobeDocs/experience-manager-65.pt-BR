@@ -10,22 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
 
 # Criar nós {#create-nodes}
 
-Sobreponha o sistema de comentários com uma versão personalizada copiando o número mínimo de arquivos necessários de /libs para /apps e modificando-os em /apps.
+Sobreponha o sistema de comentários com uma versão personalizada copiando o número mínimo de arquivos necessários `/libs` para dentro `/apps` e modificando-os no `/apps`.
 
 >[!CAUTION]
 >
 >O conteúdo da pasta /libs nunca é editado porque qualquer reinstalação ou atualização pode excluir ou substituir a pasta /libs enquanto o conteúdo da pasta /apps é deixado inalterado.
 
+
 Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor, comece criando um caminho na pasta /apps que é idêntico ao caminho para os componentes sobrepostos na pasta /libs.
 
-O caminho que está sendo duplicado é
+O caminho que está sendo duplicado é:
 
 * `/libs/social/commons/components/hbs/comments/comment`
 
@@ -37,7 +38,7 @@ Alguns nós no caminho são pastas e alguns são componentes.
    * **[!UICONTROL Criar > Pasta ...]**
       * Digite o nome: `social`
 1. Selecionar `social` nó
-   * **[!UICONTROL Criar > Pasta...]**
+   * **[!UICONTROL Criar]** > **[!UICONTROL Pasta...]**
       * Digite o nome: `commons`
 1. Selecionar `commons` nó
    * **[!UICONTROL Criar > Pasta...]**
@@ -46,7 +47,7 @@ Alguns nós no caminho são pastas e alguns são componentes.
    * **[!UICONTROL Criar > Pasta..]**.
       * Digite o nome: `hbs`
 1. Selecionar `hbs` nó
-   * **[!UICONTROL Criar > Criar componente...]**
+   * **[!UICONTROL Criar]** > **[!UICONTROL Criar componente...]**
       * Digite o rótulo: `comments`
       * Enter Title: `Comments`
       * Enter Description: `List of comments without showing avatars`
@@ -74,7 +75,7 @@ Alguns nós no caminho são pastas e alguns são componentes.
 
 >[!NOTE]
 >
->Para preservar a cadeia de herança, os componentes `Super Type` (propriedade `sling:resourceSuperType`) da sobreposição são definidos com o mesmo valor `Super Type` dos componentes que estão sendo sobrepostos, nesse caso
+>Para preservar a cadeia de herança, os componentes `Super Type` (propriedade `sling:resourceSuperType`) da sobreposição são definidos com o mesmo valor `Super Type` dos componentes que estão sendo sobrepostos, neste caso:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
