@@ -3,7 +3,7 @@ title: Processar ativos usando manipuladores de mídia e workflows
 description: Saiba mais sobre os manipuladores de mídia e como usar workflows para executar tarefas em seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -496,7 +496,7 @@ Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalh
 
 Para testar o fluxo de trabalho modificado, adicione um ativo ao `/content/dam`.
 
-1. No sistema de arquivos, obtenha uma imagem .tiff de sua escolha. Renomeie-o para `myImage.tiff` e copie-o para `/content/dam`, por exemplo, usando WebDAV.
+1. No sistema de arquivos, obtenha uma imagem TIFF de sua escolha. Renomeie-o para `myImage.tiff` e copie-o para `/content/dam`, por exemplo, usando WebDAV.
 1. Vá para o console **[!UICONTROL CQ5 DAM]** , por exemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abra o ativo **[!UICONTROL myImage.tiff]** e verifique se a imagem invertida e as três miniaturas foram criadas.
 
@@ -516,7 +516,7 @@ Por exemplo, se ImageMagick estiver instalado no disco que hospeda o servidor AE
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-então, quando o fluxo de trabalho é executado, a etapa se aplica somente aos ativos que têm image/gif ou mime:image/tiff como mime-types, cria uma imagem invertida do original, a converte em .jpg e cria três miniaturas que têm as dimensões: 140 x 100, 48 x 48 e 10 x 250.
+então, quando o fluxo de trabalho é executado, a etapa se aplica somente aos ativos que têm `image/gif` ou `mime:image/tiff` como `mime-types`, cria uma imagem invertida do original, converte-a em JPG e cria três miniaturas que têm as dimensões: 140 x 100, 48 x 48 e 10 x 250.
 
 Use os seguintes Argumentos [!UICONTROL de] Processo para criar as três miniaturas padrão usando o ImageMagick:
 
