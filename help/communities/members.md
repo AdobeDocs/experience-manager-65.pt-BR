@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -19,32 +19,34 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Visão geral {#overview}
 
-Os recursos do AEM Communities geralmente exigem que os visitantes do site sejam registrados e conectados antes de participarem de uma comunidade no ambiente de publicação. O registro do usuário só precisa existir no ambiente de publicação e eles são comumente chamados de *membros* para diferenciá-los dos *usuários* registrados no ambiente do autor.
+Os recursos do AEM Communities geralmente exigem que os visitantes do site sejam registrados e conectados antes de participar de uma comunidade no ambiente de publicação. O registro do usuário só precisa existir no ambiente publish e eles são comumente chamados de *membros* para diferenciá-los dos *usuários* registrados no ambiente author.
 
 ### Membros (usuários) na publicação {#members-users-on-publish}
 
-Usando os consoles Membros e Grupos das Comunidades, os membros e grupos de membros registrados no ambiente de *publicação* podem ser criados e gerenciados a partir do ambiente do *autor* . Isso só é possível quando o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel está ativado.
+Usando os consoles Membros e Grupos das Comunidades, os membros e grupos de membros registrados no ambiente *publish* podem ser criados e gerenciados a partir do ambiente do *autor* . Isso só é possível quando o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel está ativado.
 
 ### Usuários no autor {#users-on-author}
 
 Para gerenciar usuários e grupos registrados no ambiente do *autor* , é necessário usar o console de segurança da plataforma:
 
-* Na navegação global selecione `Tools, Security, Users`
-* Na navegação global selecione `Tools, Security, Groups`
+* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
+* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Grupos]**.
 
 >[!NOTE]
 >
 >Com conteúdo de amostra implantado e ativado, muitos usuários de amostra existem nos ambientes de autor e publicação. Esses usuários não estarão presentes ao executar com [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
 
+
 ## Console de membros {#members-console}
 
-No ambiente do autor, para acessar o console Membros para gerenciar membros registrados no ambiente de publicação:
+No ambiente author, para acessar o console Membros para gerenciar membros registrados no ambiente publish:
 
-* Da navegação global: **[!UICONTROL Navigation > Comunidades > Membros]**
+* Na navegação global, selecione **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Membros]**
 
 >[!CAUTION]
 >
 >Não será possível usar o console Membros se o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel não estiver ativado.
+
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -56,9 +58,9 @@ Selecione o ícone do painel lateral no lado esquerdo do cabeçalho para `Member
 
 Selecione o ícone de pesquisa no lado esquerdo do cabeçalho para `Members` alternar o painel lateral de pesquisa fechado.
 
-### Estatísticas dos membros {#member-statistics}
+### Estatísticas dos Estados-Membros {#member-statistics}
 
-As colunas que exibem `Views`, `Posts`e `Follows`são atualizadas quando o usuário é membro de um ou mais sites da comunidade com o Adobe Analytics `Likes` ativado [](sites-console.md#analytics).
+As colunas que exibem `Views`, `Posts`e `Follows` são atualizadas quando o usuário é membro de um ou mais sites da comunidade com o Adobe Analytics `Likes` ativado [](sites-console.md#analytics).
 
 ### Exportar CSV {#export-csv}
 
@@ -76,40 +78,56 @@ Selecione `Create Member` para criar um usuário no ambiente de publicação.
 
 ### GERAL - Detalhes dos membros {#general-member-details}
 
-A maioria dos campos são opcionais, que podem ser preenchidos posteriormente no perfil.
+A maioria dos campos são opcionais, os membros podem preencher posteriormente seus perfis.
 
-* **[!UICONTROL ID]**(*obrigatório*) A ID de autorização é a ID de logon do membro.
+* **[!UICONTROL ID]**
+
+(*Obrigatório*) A ID de autorização é a ID de logon do membro.
 Por padrão, a ID é definida como o valor do endereço de email necessário.
-   *Depois de criada, a ID não pode ser modificada.*
+*Depois de criada, a ID não pode ser modificada*.
 
-* **[!UICONTROL Endereço]** de email (*obrigatório*) O endereço de email do membro.
+* **[!UICONTROL Endereço de email]**
+
+(*Obrigatório*) O endereço de email do membro.
 O membro pode alterar seu endereço de email ao atualizar seu perfil.Se o padrão da ID for o endereço de email, a ID *não* será alterada quando o endereço de email for alterado.
 
-* **[!UICONTROL Senha]**(*obrigatório*) A senha de logon.
+* **[!UICONTROL Senha]**
 
-* **[!UICONTROL Digite novamente a senha]**(*obrigatório*) e digite novamente a senha para verificação.
+   (*Obrigatório*) A senha de logon.
 
-* **[!UICONTROL Adicionar membro aos sites]**(*opcional*) Selecione dentre os sites da comunidade existente para adicionar o membro ao grupo de membros do site da comunidade.
+* **[!UICONTROL Digite a senha novamente]**
 
-* **[!UICONTROL Adicionar membro a grupos]**(*opcional*) Selecione dentre os grupos de membros existentes para adicionar o membro a esse grupo.
+   (*Obrigatório*) Digite novamente a senha para verificação.
+
+* **[!UICONTROL Adicionar membro aos Sites]**
+
+   (*Opcional*) Selecione entre os sites da comunidade existente para adicionar o membro ao grupo de membros do site da comunidade.
+
+* **[!UICONTROL Adicionar membro aos grupos]**
+
+   (*Opcional*) Selecione dentre os grupos de membros existentes para adicionar o membro a esse grupo.
 
 * Selecione **[!UICONTROL Salvar]**
 
 ### GERAL - Configurações de conta {#general-account-settings}
 
-Em Configurações de conta, é possível que um administrador da comunidade
+Em Configurações de conta, um administrador da comunidade pode:
 
 * **[!UICONTROL Status]**
    * BanidoUm membro não pode fazer logon, impedindo que ele visualize páginas ou participe de atividades que exigem o logon. Eles ainda podem visitar anonimamente um site aberto da comunidade.
 
-   * Não proibidoUm membro tem acesso total ao site da comunidade.
+   * Não banidoUm membro tem acesso total ao site da comunidade.
    O padrão é `Not Banned`.
 
-* **[!UICONTROL Limites]**de contribuição Se marcada, a capacidade do membro de publicar conteúdo é limitada.
+* **[!UICONTROL Limites de contribuição]**
+
+   Se marcada, a capacidade do membro de publicar conteúdo é limitada.
 O padrão depende da configuração dos limites de contribuição.
 Consulte Limites [de contribuição do](limits.md)membro.
 
-* **[!UICONTROL Alterar senha]** Um link que está presente ao modificar um membro existente. Fornece a capacidade de um administrador da comunidade redefinir uma senha para um membro.
+* **[!UICONTROL Alterar senha]**
+
+   Um link que está presente ao modificar um membro existente. Fornece a capacidade de um administrador da comunidade redefinir uma senha para um membro.
 
 ### GERAL - Foto {#general-photo}
 
@@ -135,7 +153,7 @@ Consulte também [Pontuação e Distinções](implementing-scoring.md).
    * Comece digitando para selecionar entre os símbolos [](badges.md)disponíveis. Quando um crachá for selecionado, escolha cada site ou todos os sites nos quais o crachá deve ser exibido junto com o avatar do membro.
    * Vários símbolos e sites podem ser escolhidos.
 * **[!UICONTROL Remover emblemas]**
-   * Selecione o ícone da lixeira ao lado do crachá para removê-lo
+   * Selecione o ícone da lixeira ao lado do crachá para removê-lo.
 
 ## Console de grupos {#groups-console}
 
@@ -144,11 +162,12 @@ O console Grupos, disponível no ambiente do autor, permite a criação e o gere
 * Atribuição dos recursos de [ativação baseada em grupos](resources.md)
 
 Para acessar o console Grupos:
-* Da navegação global: **[!UICONTROL Navegação > Comunidades > Grupos]**
+* Na navegação global, selecione **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Grupos]**.
 
 >[!CAUTION]
 >
 >Não será possível usar o console Grupos se o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel não estiver ativado.
+
 
 ### Criar novo grupo {#create-new-group}
 
@@ -158,16 +177,25 @@ Selecione `Add Group` para criar um grupo no ambiente de publicação.
 
 Os campos necessários para criar um novo grupo de membros do lado da publicação são:
 
-* **[!UICONTROL ID]**(*obrigatório*) A ID exclusiva do grupo.
+* **[!UICONTROL ID]**
+
+   (*Obrigatório*) A ID exclusiva do grupo.
+
    *Depois de criada, a ID não pode ser modificada.*
 
-* **[!UICONTROL Nome]**(*opcional*) O nome de exibição do grupo.
+* **[!UICONTROL Nome]**
+
+   (*Opcional*) O nome de exibição do grupo.
 
    O valor padrão é a ID.
 
-* **[!UICONTROL Descrição]**(*opcional*) Uma descrição do objetivo e das permissões do grupo.
+* **[!UICONTROL Descrição]**
 
-* **[!UICONTROL Adicionar membros ao grupo]**(*opcional*) Selecione os membros do lado da publicação a serem incluídos como membros iniciais do grupo.
+   (*Opcional*) Uma descrição do objetivo e das permissões do grupo.
+
+* **[!UICONTROL Adicionar membros ao grupo]**
+
+   (*Opcional*) Selecione os membros do lado da publicação a serem incluídos como membros iniciais do grupo.
 
 * Selecione **[!UICONTROL Salvar]**
 
