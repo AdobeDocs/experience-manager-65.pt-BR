@@ -3,7 +3,7 @@ title: Organize seus ativos digitais
 description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -36,7 +36,7 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
-Usando tags, como metadados, você pode pesquisar facilmente ativos, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e aproveitar os algoritmos AI do Adobe Sensei para a descoberta de ativos.
+Usando tags, como metadados, você pode pesquisar facilmente ativos, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e aproveitar os algoritmos AI do Adobe Sensei para descobrir ativos.
 
 Os ativos Adobe Experience Manager usam um algoritmo de autoaprendizado para criar tags altamente descritivas que permitem encontrar o ativo certo em apenas alguns cliques. A marcação inteligente usa o Adobe Sensei, nossa inteligência artificial e estrutura de aprendizado de máquina, que pode ser treinada para reconhecer e aplicar tags padrão e específicas de negócios à imagem. Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas a ativos
 
