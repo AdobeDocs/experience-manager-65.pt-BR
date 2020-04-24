@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# Configurar mensagens{#configure-messaging}
+# Configurar mensagens {#configure-messaging}
 
 ## Visão geral {#overview}
 
-O recurso de mensagens do AEM Communities fornece a capacidade de os visitantes do site que fizeram logon (membros) enviarem mensagens para os outros que podem ser acessadas quando conectados ao site.
+O recurso de mensagens do AEM Communities fornece a capacidade de visitantes (membros) de sites conectados enviarem mensagens para outros que sejam acessíveis quando conectados ao site.
 
 As mensagens são ativadas para um site da comunidade marcando uma caixa durante a criação [do site da](/help/communities/sites-console.md)comunidade.
 
@@ -44,60 +44,101 @@ Como mostrado abaixo, existe uma configuração do serviço para sites criados c
 
 Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+**&quot; ao lado do nome do serviço:
 
-* **Lista de permissões dos campos de mensagem** Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: *assunto* e *conteúdo*.
+* **Lista de permissões dos campos de mensagem**
 
-* **Limite** de tamanho da caixa de mensagem O número máximo de bytes na caixa de mensagem de cada usuário. O padrão é *1073741824 *(1 GB).
+   Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: *assunto* e *conteúdo*.
 
-* **Limite** de contagem de mensagens O número total de mensagens permitidas por usuário. Um valor de -1 indica que um número ilimitado de mensagens é permitido, sujeito ao limite de tamanho da caixa de mensagem. O padrão é *10000* (10 mil).
+* **Limite de tamanho da caixa de mensagem**
 
-* **Notificar falha** de entrega Se marcada, notifique o remetente se a entrega da mensagem falhar para alguns destinatários. O padrão está *marcado*.
+   O número máximo de bytes na caixa de mensagem de cada usuário. O padrão é *1073741824* (1 GB).
 
-* **Falha ao entregar ID** do remetente Nome do remetente que aparece na mensagem de falha de entrega. O padrão é *failureNotifier*.
+* **Limite de contagem de mensagens**
 
-* **Caminho do modelo de mensagem de falha Caminho** absoluto para a raiz do modelo de mensagem de falha de entrega. O padrão é */etc/notification/messaging/default*.
+   O número total de mensagens permitidas por usuário. Um valor de -1 indica que um número ilimitado de mensagens é permitido, sujeito ao limite de tamanho da caixa de mensagem. O padrão é *10000* (10 mil).
 
-* **Número de tentativas** Número de vezes para tentar reenviar a mensagem que não foi entregue. O padrão é *3*.
+* **Notificar falha do delivery**
 
-* **Aguardar entre as tentativas** Número de segundos para aguardar entre as tentativas de reenviar a mensagem em caso de falha no envio. O padrão é *100 *(segundos).
+   Se marcada, notifique o remetente se o delivery da mensagem falhar para alguns recipient. O padrão está *marcado*.
 
-* **Contagem do tamanho** do pool de atualizações Número de threads simultâneos usados para atualização de contagem. O padrão é *10*.
+* **Id do remetente do delivery com falha**
 
-* **Caminho** da caixa de entrada (*obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`inbox`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/caixa de entrada.*
+   Nome do remetente que aparece na mensagem de falha do delivery. O padrão é *failureNotifier*.
 
-* **Caminho** dos itens enviados (*obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`send items`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/sentitems* .
+* **Caminho do modelo de mensagem de falha**
 
-* **Anexos** de suporte Se marcados, os usuários poderão adicionar anexos às suas mensagens. O padrão está *marcado*.
+   Caminho absoluto para a raiz do modelo de mensagem com falha do delivery. O padrão é */etc/notification/messaging/default*.
 
-* **Ativar mensagens** de grupoSe selecionada, os usuários registrados podem enviar mensagens em massa para um grupo de membros. O padrão está *desmarcado*.
+* **Número de tentativas**
 
-* **Nº máximo do total de destinatários** Se a mensagem de grupo estiver ativada, especifique o número máximo de destinatários para os quais a mensagem de grupo pode ser enviada por vez. O padrão é *100*.
+   Número de vezes para tentar reenviar a mensagem que não foi entregue. O padrão é *3*.
 
-* **Tamanho** do lote Número de mensagens a serem agrupadas em lote para um envio ao enviar para um grande grupo de destinatários. O padrão é *100*.
+* **Aguardar entre tentativas**
 
-* **Tamanho** total do anexo Se supportAttachments estiver marcado, esse valor especifica o tamanho total máximo permitido (em bytes) de todos os anexos. O padrão é *104857600* (100 MB).
+   Número de segundos de espera entre as tentativas de reenviar a mensagem após falha no envio. O padrão é *100* (segundos).
 
-* **Lista** preta do tipo de anexo Uma lista negra de extensões de nome de arquivo, prefixada com &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não estiver na lista negra, a extensão é permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;.
+* **Contagem do tamanho do pool de atualizações**
+
+   Número de threads simultâneos usados para atualização de contagem. O padrão é *10*.
+
+* **Caminho da caixa de entrada**
+
+   (*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`inbox`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/caixa de entrada*.
+
+* **Caminho dos itens enviados**
+
+   (*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`send items`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/sentitems* .
+
+* **Anexos de suporte**
+
+   Se marcada, os usuários poderão adicionar anexos às suas mensagens. O padrão está *marcado*.
+
+* **Ativar mensagens de grupo**
+
+   Se selecionado, os usuários registrados podem enviar mensagens em massa para um grupo de membros. O padrão está *desmarcado*.
+
+* **Nº máximo do total de recipient**
+
+   Se as mensagens de grupo estiverem ativadas, especifique o número máximo de recipient para os quais as mensagens de grupo podem ser enviadas por vez. O padrão é *100*.
+
+* **Tamanho do lote**
+
+   Número de mensagens a serem agrupadas em lote para um envio ao enviar para um grande grupo de recipient. O padrão é *100*.
+
+* **Tamanho total do anexo**
+
+   Se supportAttachments estiver marcado, esse valor especificará o tamanho total máximo permitido (em bytes) de todos os anexos. O padrão é *104857600* (100 MB).
+
+* **Tipo de anexo lista preta**
+
+   Uma lista negra de extensões de nome de arquivo, prefixada com &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não for incluído na blacklist, a extensão será permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;.
 
 * **Tipos de anexos permitidos**
-   **(*Ação necessária*)** Uma lista branca de extensões de nomes de arquivo, o oposto da lista negra. Para permitir todas as extensões de nome de arquivo, exceto aquelas proibidas, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
 
-* **Seletor** de serviço (*obrigatório*) Um caminho absoluto (ponto final) pelo qual o serviço é chamado (um recurso virtual). A raiz do caminho escolhido deve ser uma incluída na configuração Caminhos *de execução* da configuração do OSGi [ , como `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`e `/apps/``/services/`. Para selecionar essa configuração para o recurso de mensagens de um site, esse terminal é fornecido como o **`Service selector`** valor para o `Message List and Compose Message components` (consulte Recurso [](/help/communities/configure-messaging.md)de mensagem).
-O padrão é */bin/messaging* .
+   **(*Ação necessária*)** Uma lista branca de extensões de nomes de arquivo, o oposto da lista negra. Para permitir todas as extensões de nome de arquivo, exceto aquelas incluído na blacklist, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
 
-* **Lista de permissões do campo** Usar lista de permissões dos campos **de mensagem**.
+* **Seletor de serviços**
+
+   (*Obrigatório*) Um caminho absoluto (ponto final) pelo qual o serviço é chamado (um recurso virtual). A raiz do caminho escolhido deve ser uma incluída na configuração Caminhos *de execução* da configuração do OSGi [ , como `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`e `/apps/``/services/`. Para selecionar essa configuração para o recurso de mensagens de um site, esse terminal é fornecido como o **`Service selector`** valor para o `Message List and Compose Message components` (consulte Recurso [](/help/communities/configure-messaging.md)de mensagem).
+
+   O padrão é */bin/messaging* .
+
+* **Lista de permissões do campo**
+
+   Usar Lista de permissões dos campos **de mensagem**.
 
 >[!CAUTION]
 >
 >Sempre que uma `Messaging Operations Service` configuração é aberta para edição, se `allowedAttachmentTypes.name` foi removida, uma entrada vazia é adicionada novamente para tornar a propriedade configurável. Uma única entrada vazia efetivamente desativa anexos de arquivo.
 >
->Para permitir todas as extensões de nome de arquivo, exceto aquelas proibidas, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
+>Para permitir todas as extensões de nome de arquivo, exceto aquelas incluído na blacklist, use o ícone &#39;**-**&#39; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
+
 
 ## Group Messaging {#group-messaging}
 
-Para permitir que usuários registrados enviem mensagens diretas em massa para grupos de usuários, certifique-se de **Ativar mensagens de grupo **nas duas instâncias da configuração dos Serviços **de Operação de** Mensagens a seguir:
+Para permitir que usuários registrados enviem mensagens diretas em massa para grupos de usuários, certifique-se de **Ativar mensagens** de grupo nas duas instâncias de configuração dos Serviços **de Operação de** Mensagens a seguir:
 
-* com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console
-* com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging
+* `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
+* `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
 
 **Serviço de Operações de Mensagens: console social**
 
