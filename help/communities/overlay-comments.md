@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -24,7 +24,7 @@ A intenção de [sobrepor](/help/communities/client-customize.md#overlays) um co
 
 **Componente de comentários de sobreposição**
 
-Suponha que você queira modificar o recurso de comentário para que ele corresponda ao design do seu site, alterando o cabeçalho do comentário para que ele não exiba mais o avatar para qualquer comentário. As soluções para ocultar o avatar estão usando o CSS ou, conforme descrito aqui, sobrepondo o header.jsp na pasta de aplicativos para que o HTML que contém o avatar nunca seja enviado ao cliente.
+Suponha que você queira modificar o recurso de comentário para que ele corresponda ao design do seu site, alterando o cabeçalho do comentário para que ele não exiba mais o avatar para qualquer comentário. As soluções para ocultar o avatar estão usando o CSS ou, conforme descrito aqui, sobrepondo o header.jsp na pasta de aplicativos para que o HTML que contém o avatar nunca seja enviado para o cliente.
 
 Para sobrepor comentários, você precisará:
 
@@ -34,9 +34,9 @@ Para sobrepor comentários, você precisará:
 
 **E-mails de notificações de sobreposição**
 
-Suponha que você queira personalizar a mensagem das notificações por email, [sobreponha](/help/communities/client-customize.md#overlays) os modelos em **/libs/settings/community/models/email/html**.
+Suponha que você queira personalizar a mensagem das notificações por email, você pode fazer isso [sobrepondo](/help/communities/client-customize.md#overlays) os modelos em **/libs/settings/community/models/email/html**.
 
-Por exemplo, para modificar as notificações de menções por e-mail (para um componente de comunidades específicas onde o ugc é criado) adicione um ** se **condição para **menção de verbo** nos modelos dos componentes para os quais você habilitou o suporte a @menções **** .
+Por exemplo, para modificar as notificações por e-mail de menções (para um componente de comunidades específicas onde o ugc é criado), adicione uma condição **if** para a **menção** verbo nos modelos dos componentes para os quais você habilitou o suporte a **@menções** .
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -44,4 +44,4 @@ Por exemplo, para modificar as notificações de menções por e-mail (para um c
 {{/equals}}\
 ```
 
-Para modificar o modelo de notificações por e-mail para @menção nos comentários do blog, coloque-o fora da caixa em: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
+Para modificar o modelo de notificações por e-mail para @menção nos comentários do blog, coloque-o fora da caixa em: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
