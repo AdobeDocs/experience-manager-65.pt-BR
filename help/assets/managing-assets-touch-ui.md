@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
+source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
 
 ---
 
@@ -31,6 +31,8 @@ Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
 * Um nome de arquivo de ativo não pode conter nenhum destes caracteres: `* / : [ \\ ] | # % { } ? &`
 * O nome da pasta de ativos não pode conter nenhum destes caracteres: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+Não inclua caracteres especiais nas extensões dos nomes de arquivos do ativo.
 
 ## Upload assets {#uploading-assets}
 
@@ -112,6 +114,8 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * o nome do arquivo de ativo não deve conter `* / : [ \\ ] | # % { } ? &`
    * o nome da pasta de ativos não deve conter `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+   Não inclua caracteres especiais nas extensões dos nomes de arquivos do ativo.
+
    ![A caixa de diálogo de andamento do upload mostra o status dos arquivos carregados com êxito e dos arquivos que não foram carregados](assets/chlimage_1-10.png)
 
    Além disso, a interface do usuário Ativos exibe o ativo mais recente que você carregou ou a pasta que criou primeiro.
