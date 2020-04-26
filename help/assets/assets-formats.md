@@ -3,7 +3,7 @@ title: Formatos compatíveis de ativos
 description: Lista de formatos de arquivo suportados pelo AEM Assets e pelo Dynamic Media e recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6ac091d413690bd44b171ed11415c154aa8f437c
+source-git-commit: 1d16716d5fcf5b05a741b2d06d333e5f80e0d290
 
 ---
 
@@ -24,7 +24,7 @@ Use a legenda para entender o nível de suporte.
 
 ## Formatos de imagem de rasterização suportados nos ativos AEM {#supported-raster-image-formats}
 
-| Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Edição interativa | Writeback de metadados | Insights |
+| Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Edição | Writeback de metadados | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
@@ -283,7 +283,7 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/glo
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PFM | application/x-font-type1 |  |  |
+| PGM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
