@@ -4,7 +4,7 @@ description: Sugestões e orientações sobre a configuração do AEM, alteraç�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -203,17 +203,13 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no arquivo `co
 
 >[!CAUTION]
 >
->Uma configuração incorreta pode tornar o servidor instável se o ImageMagick usar todo o espaço em disco disponível.
->
->As alterações de política necessárias para processar arquivos grandes usando o ImageMagick podem afetar o desempenho do AEM. Para obter mais informações, consulte [instalar e configurar o ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Uma configuração incorreta pode tornar o servidor instável se o ImageMagick usar todo o espaço em disco disponível. As alterações de política necessárias para processar arquivos grandes usando o ImageMagick podem afetar o desempenho do AEM. Para obter mais informações, consulte [instalar e configurar o ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
 >Os arquivos ImageMagick `policy.xml` e `configure.xml` ImageMagick estão disponíveis em `/usr/lib64/ImageMagick-&#42;/config/` vez de `/etc/ImageMagick/`.Consulte a documentação [do](https://www.imagemagick.org/script/resources.php) ImageMagick para obter o local dos arquivos de configuração.
 
->[!TIP]
->
->Se você estiver usando o Experience Manager nos Adobe Managed Services (AMS), entre em contato com o Suporte da Adobe se planeja processar muitos arquivos PSD ou PSB grandes. Entre em contato com o representante do Atendimento ao cliente da Adobe para implementar essas práticas recomendadas para sua implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários da Adobe.
+Se você estiver usando o Experience Manager no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe se planeja processar muitos arquivos grandes PSD ou PSB. Entre em contato com o representante do Atendimento ao cliente da Adobe para implementar essas práticas recomendadas para sua implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários da Adobe. O Experience Manager talvez não processe arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 ### XMP writeback {#xmp-writeback}
 
@@ -229,7 +225,7 @@ Importar uma grande quantidade de metadados pode resultar em atividade de write-
 
 ## Replicação {#replication}
 
-Ao replicar ativos para um grande número de instâncias de publicação, por exemplo, em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
+Ao replicar ativos para um grande número de instâncias de publicação, por exemplo em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
 
 ### Configurar replicação em cadeia {#configure-chain-replication}
 
