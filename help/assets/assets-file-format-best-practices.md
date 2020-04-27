@@ -3,7 +3,7 @@ title: Práticas recomendadas para processar os vários formatos de arquivo supo
 description: Práticas recomendadas para processar os vários tipos de arquivos suportados usando os ativos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -16,7 +16,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 >[!TIP]
 >
->Se você estiver usando o Experience Manager nos Adobe Managed Services (AMS), entre em contato com o Suporte da Adobe se planeja processar muitos arquivos PSD ou PSB grandes. Entre em contato com o representante do Atendimento ao cliente da Adobe para implementar essas práticas recomendadas para sua implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários da Adobe.
+>Se você estiver usando o Experience Manager nos Adobe Managed Services (AMS), entre em contato com o Suporte da Adobe se planeja processar muitos arquivos PSD ou PSB grandes. Entre em contato com o representante do Atendimento ao cliente da Adobe para implementar essas práticas recomendadas para sua implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários da Adobe. O Experience Manager talvez não processe arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 ## Biblioteca do Adobe Camera Raw {#adobe-camera-raw-library}
 
@@ -34,7 +34,7 @@ Para obter melhores resultados, a Adobe recomenda usar a biblioteca do Adobe PDF
 * Arquivos AI com miniaturas não gerados na caixa
 * Para arquivos AI com cores SPOT (PMS)
 
-As miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação à saída rasterizada predefinida. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cores. Independentemente do espaço de cores do arquivo PDF de origem, o Adobe PDF Rasterizer gera apenas saída RGB.
+As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação à saída rasterizada predefinida. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cores. Independentemente do espaço de cores do arquivo PDF de origem, o Adobe PDF Rasterizer gera apenas saída RGB.
 
 ## Adobe InDesign Server {#adobe-indesign-server}
 
@@ -42,7 +42,7 @@ A Adobe recomenda usar o Adobe InDesign Server para extrair execuções específ
 
 ## Dynamic Media  {#dynamic-media}
 
-O Dynamic Media gera e oferece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho. Ele proporciona experiências de visualização interativas e simplifica o processo de gerenciamento de campanha digital. Para obter detalhes sobre como ativar o Dynamic Media, consulte [Configuração do Dynamic Media](/help/assets/config-dynamic.md).
+O Dynamic Media gera e oferece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho. Ele proporciona experiências de visualização interativas e simplifica o processo de gestão de campanha digital. Para obter detalhes sobre como ativar o Dynamic Media, consulte [Configuração do Dynamic Media](/help/assets/config-dynamic.md).
 
 Atualmente, o Dynamic Media pode oferecer suporte a vídeos com até 20 GB de conteúdo por arquivo.
 
