@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
 # Uso de classificações {#using-ratings}
 
-O `Rating`componente é usado separadamente ou em conjunto com outros recursos das Comunidades. Este componente permite que membros da comunidade com logon expressem suas opiniões por meio da classificação do conteúdo.
+O `Rating` componente é usado separadamente ou em conjunto com outros recursos das Comunidades. Este componente permite que membros da comunidade com logon expressem suas opiniões por meio da classificação do conteúdo.
 
 ## Adding a Rating to a Page {#adding-a-rating-to-a-page}
 
-Para adicionar um `Rating`componente a uma página no modo de autor, localize o componente `Communities / Rating` e arraste-o para o lugar em uma página, como uma posição relativa ao recurso que os membros devem classificar.
+Para adicionar um `Rating` componente a uma página no modo de autor, localize o componente `Communities / Rating` e arraste-o para o lugar em uma página, como uma posição relativa ao recurso para os membros classificarem.
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
 
@@ -41,7 +41,7 @@ Na guia **[!UICONTROL Textos e etiquetas]** , especifique o identificador intern
 
 **[!UICONTROL Nome]** Tally (*Obrigatório*) Um nome simples para o `Rating`que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Membros {#members}
 
