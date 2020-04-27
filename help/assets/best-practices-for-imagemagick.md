@@ -3,7 +3,7 @@ title: Instalar e configurar o ImageMagick para trabalhar com os ativos AEM
 description: Saiba mais sobre o software ImageMagick, como instalá-lo, configurar a etapa do processo da linha de comando e usá-lo para editar, compor e gerar miniaturas de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -18,7 +18,7 @@ Para processar arquivos grandes usando o ImageMagick, considere requisitos de me
 
 >[!NOTE]
 >
->Se você estiver usando o AEM no Adobe Managed Services (AMS), entre em contato com o suporte da Adobe se planeja processar vários arquivos grandes PSD ou PSB.
+>Se você estiver usando o AEM no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe se planeja processar muitos arquivos PSD ou PSB de alta resolução. O Experience Manager talvez não processe arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 ## Instalação do ImageMagick {#installing-imagemagick}
 
