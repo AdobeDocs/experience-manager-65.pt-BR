@@ -3,7 +3,7 @@ title: Write-back de XMP a execuções
 description: Saiba como o recurso de gravação XMP propaga as alterações de metadados de um ativo para todas as execuções ou representações específicas do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 33ab9845f7800c80a6beb5db06f3fadf582122d0
 
 ---
 
@@ -46,16 +46,16 @@ Para o recurso de Writeback XMP propagar metadados para as miniaturas de execuç
 
 1. Toque/clique no logotipo do AEM e navegue até **Ferramentas** > **Fluxo de trabalho** > **Modelos**.
 1. Na página Modelos, abra o modelo de fluxo de trabalho Writeback **de metadados** DAM.
-1. Na página de propriedades Writeback **de metadados** DAM, abra a etapa Processo **de Writeback de** XMP.
-1. Na caixa de diálogo Propriedades da etapa, toque/clique na guia **Processo** .
+1. Na página de propriedades **DAM Metadata Writeback**, abra a etapa **Processo de Writeback XMP**.
+1. Na caixa de diálogo Propriedades da etapa, toque/clique na guia **Processo**.
 1. Na caixa **Argumentos** , adicione `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`e toque/clique em **OK**.
 
    ![step_properties](assets/step_properties.png)
 
 1. Salve as alterações.
-1. Para gerar novamente as execuções de TIF de pirâmide para imagens de Mídia dinâmica com os novos atributos, adicione a etapa Ativos **de imagem do processo de Mídia** dinâmica ao fluxo de trabalho de Writeback de metadados de DAM.
+1. To regenerate the pyramid TIF renditions for Dynamic Media images with the new attributes, add the **Dynamic Media Process Image Assets** step to the DAM Metadata Writeback workflow.
 
-   As execuções PTIFF são criadas e armazenadas apenas localmente em uma implementação do Dynamic Media Hybrid.
+   As representações PTIFF são criadas e armazenadas apenas localmente em uma implementação híbrida do Dynamic Media.
 
 1. Salve o fluxo de trabalho.
 
@@ -77,15 +77,15 @@ A filtragem da lista de permissões dos metadados XMP resolve esse problema ao p
 
 >[!NOTE]
 >
->A filtragem funciona somente para as propriedades derivadas de fontes XMP em binários de ativos. Para as propriedades derivadas de fontes não XMP, como formatos EXIF e IPTC, a filtragem não funciona. Por exemplo, a data de criação do ativo é armazenada em uma propriedade chamada `CreateDate` em EXIF TIFF. O AEM relata esse valor no campo de metadados chamado `exif:DateTimeOriginal`. Como a fonte é uma fonte não XMP, a filtragem não funciona nessa propriedade.
+>A filtragem funciona somente para as propriedades derivadas de fontes XMP em binários de ativos. Para as propriedades derivadas de fontes não XMP, como formatos EXIF e IPTC, a filtragem não funciona. Por exemplo, a data de criação do ativo é armazenada em uma propriedade chamada `CreateDate` em EXIF TIFF. O AEM armazena esse valor em um campo de metadados chamado `exif:DateTimeOriginal`. Como a fonte é uma fonte não XMP, a filtragem não funciona nessa propriedade.
 
 1. Para abrir o Configuration Manager, acesse `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração **Adobe CQ DAM XmpFilter** .
-1. Para aplicar a filtragem de lista de permissões, selecione **Aplicar lista de permissões às propriedades** XMP e especifique as propriedades a serem importadas na caixa de filtragem **** XML da lista de permissões para XMP.
+1. Para aplicar a filtragem de lista de permissões, selecione **Aplicar lista de permissões às propriedades XMP** e especifique as propriedades que serão importadas na caixa **Nomes XML na lista de permissões para filtragem XMP**.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Para filtrar as propriedades XMP proibidas após a aplicação da filtragem de lista branca, especifique-as na caixa de filtragem **** XML da lista negra Nomes XML para XMP.
+1. Para filtrar as propriedades XMP proibidas após aplicar a filtragem de lista de permissões, especifique-as na caixa **Nomes XML não permitidos para filtragem XMP**.
 
    >[!NOTE]
    >
