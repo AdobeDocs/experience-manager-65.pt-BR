@@ -10,41 +10,42 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
 
 # Configuração inicial {#initial-setup}
 
-## Iniciar instâncias de autor e publicação {#start-author-and-publish-instances}
+## Instâncias de autor e publicação do Start {#start-author-and-publish-instances}
 
 Para fins de desenvolvimento e demonstração, será necessário executar um autor e uma instância de publicação.
 
-Para fazer isso, siga as instruções básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) ao AEM, que resultarão em
+Para fazer isso, siga as instruções básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) ao AEM, que resultarão em:
 
-* Ambiente do autor em [localhost:4502](http://localhost:4502/)
-* Ambiente de publicação no [localhost:4503](http://localhost:4503/)
+* ambiente do autor em [localhost:4502](http://localhost:4502/)
+* Publicar ambiente no [localhost:4503](http://localhost:4503/)
 
 Para o AEM Communities,
 
-* O ambiente do autor é para
+* O ambiente do autor é para:
 
-   * Desenvolvimento de sites, modelos e componentes
-   * Tarefas administrativas e de configuração
+   * Desenvolvimento de sites, modelos e componentes.
+   * tarefas administrativas e de configuração.
 
-* O ambiente de publicação é para
+* O ambiente publish é para:
 
-   * A experiência da comunidade de publicar e moderar conteúdo
-   * Criação de grupos de comunidade, membros e grupos de membros
+   * A experiência da comunidade de publicar e moderar conteúdo.
+   * Criação de grupos de comunidade, membros e grupos de membros.
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
-Este tutorial cria um site [de comunidade de](overview.md#engagement-community) envolvimento e é baseado no pacote de recursos AEM Communities 6.2 versão 1.10.
+Este tutorial cria um site [de comunidade de](overview.md#engagement-community) envolvimento e é baseado no pacote de recursos do AEM Communities 6.2 versão 1.10.
 
 Para garantir que o pacote de recursos mais recente esteja instalado, visite:
 
@@ -54,7 +55,7 @@ Para obter um tutorial que cria um site [de comunidade de](overview.md#enablemen
 
 ## Configurar Analytics {#configure-analytics}
 
-Quando o [Adobe Analytics é configurado para o site](analytics.md)da comunidade, há informações disponíveis sobre a atividade da comunidade que aprimoram a experiência do membro da comunidade e fornecem feedback aos administradores do site.
+Quando o [Adobe Analytics é configurado para o site](analytics.md)da comunidade, há informações disponíveis sobre a atividade da comunidade que aprimoram a experiência do membro da comunidade, além de fornecer feedback aos administradores do site.
 
 A integração com o Adobe Analytics é opcional.
 
@@ -70,9 +71,9 @@ See [Configuring Email](email.md).
 
 Ao criar um site da comunidade no ambiente do autor, o serviço de túnel possibilita a atribuição de funções a membros da comunidade confiáveis registrados no ambiente de publicação. O serviço de túnel também permite acesso aos membros da comunidade dos consoles [Membros e Grupos](members.md) no ambiente do autor.
 
-A convenção faz com que membros e grupos de membros criados no ambiente de publicação *não* sejam recriados no ambiente do autor. Para obter mais informações, consulte [Gerenciamento de usuários e grupos](users.md)de usuários.
+A convenção faz com que membros e grupos de membros criados no ambiente publish *não* sejam recriados no ambiente do autor. Para obter mais informações, consulte [Gerenciamento de usuários e grupos](users.md)de usuários.
 
-Para obter instruções simples para habilitar o serviço de túnel em uma instância do **autor** , consulte Serviço [de](deploy-communities.md#tunnel-service-on-author)túnel.
+Para obter instruções simples para habilitar o serviço de túnel em uma instância do **autor** , consulte Serviço [de](deploy-communities.md#tunnel-service-on-author)Túnel.
 
 ## Função de administrador da comunidade {#community-administrator-role}
 
@@ -90,17 +91,17 @@ Crie um usuário no *autor*, ao qual seja atribuída a função de Administrador
 
    * Por exemplo, nome de usuário &#39;admin&#39; / senha &#39;admin&#39;
 
-* No console principal, navegue até **[!UICONTROL Ferramentas > Operações > Segurança > Usuários]**
+* No console principal, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
 * No menu **Editar **, selecione**[!UICONTROL Adicionar usuário ]**
 
-* Na `Create New User` caixa de diálogo, digite
+* Na `Create New User` caixa de diálogo insira:
 
-   * **[!UICONTROL ID&amp;ast;]**: sírio
+   * **[!UICONTROL ID]**: sírio
    * **[!UICONTROL Endereço]** Emai: sirius.nilson@mailinator.com
-   * **[!UICONTROL Senha&amp;passado;]**:password
-   * **[!UICONTROL Confirmar Senha&amp;passado;]**:password
+   * **[!UICONTROL Senha]**: password
+   * **[!UICONTROL Confirmar Senha&amp;passado;]**: password
    * **[!UICONTROL Nome]**: Sirius
-   * **[!UICONTROL Sobrenome&amp;ast;]**: Nilson
+   * **[!UICONTROL Sobrenome]**: Nilson
 
 ### Atribuir Sirius ao grupo de administradores da comunidade {#assign-sirius-to-community-administrators-group}
 
@@ -111,7 +112,7 @@ Role para baixo até `Add User to Groups`:
    * Selecionar `Community Administrators`
    * Selecionar `Community Enablement Managers`
 
-* Selecione **[!UICONTROL Salvar]**
+* Selecione **[!UICONTROL Salvar]**.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -119,8 +120,8 @@ Role para baixo até `Add User to Groups`:
 
 Antes que as versões de demonstração de login social com Facebook e Twitter possam ser usadas, é necessário
 
-1. Instale um pacote de correções ou o pacote de recursos [mais recente](deploy-communities.md#latestfeaturepack) (para alterações na API do Facebook em março de 2017)
-1. [Ativar o provedor](social-login.md#adobe-granite-oauth-authentication-handler) OAuth no ambiente de publicação
+1. Instale um pacote de correções ou o pacote de recursos [mais recente](deploy-communities.md#latestfeaturepack) (para alterações na API do Facebook em março de 2017).
+1. [Ative o provedor](social-login.md#adobe-granite-oauth-authentication-handler) OAuth no ambiente publish.
 
 Para servidores de produção, é necessário criar os serviços em nuvem necessários para fornecer o logon social.
 
@@ -128,7 +129,7 @@ Consulte Logon [social com Facebook e Twitter](social-login.md).
 
 ## Criar tags do tutorial {#create-tutorial-tags}
 
-Crie tags para usar nos tutoriais de envolvimento e ativação, usando o namespace da tag `Tutorial`.
+Crie tags para usar nos tutoriais de envolvimento e ativação, usando a namespace de tags de `Tutorial`.
 
 Use o console [](../../help/sites-administering/tags.md#tagging-console) Marcação para criar as seguintes tags:
 
@@ -141,10 +142,10 @@ Use o console [](../../help/sites-administering/tags.md#tagging-console) Marcaç
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
-Em seguida, siga as instruções para
+Em seguida, siga as instruções para:
 
-1. [Definir as permissões da tag](../../help/sites-administering/tags.md#setting-tag-permissions)
-1. [Publicar as tags](../../help/sites-administering/tags.md#publishing-tags)
+1. [Defina as permissões](../../help/sites-administering/tags.md#setting-tag-permissions)da tag.
+1. [Publique as tags](../../help/sites-administering/tags.md#publishing-tags).
 
 Amostra do pacote de tags criado para os tutoriais de introdução ao AEM Communities
 
@@ -152,8 +153,8 @@ Amostra do pacote de tags criado para os tutoriais de introdução ao AEM Commun
 
 ## MongoDB para UGC Common Store {#mongodb-for-ugc-common-store}
 
-É recomendável, mas opcional, definir o [MSRP](msrp.md) (MongoDB) como a loja [](working-with-srp.md) comum para experimentar a flexibilidade de moderar todo o UGC dos ambientes de publicação e/ou autor.
+É recomendável, mas opcional, definir o [MSRP](msrp.md) (MongoDB) como o repositório [](working-with-srp.md) comum para experimentar a flexibilidade de moderar todo o UGC dos ambientes de publicação e/ou autor.
 
 Para obter instruções, consulte [Como configurar o MongoDB para demonstração](demo-mongo.md).
 
-Por padrão, a instalação das instâncias do autor e publicação do AEM resulta no armazenamento do conteúdo gerado pelo usuário (UGC) no armazenamento [em barra](../../help/sites-deploying/platform.md) JCR acessado usando o [JSRP](jsrp.md). O JSRP não é uma loja comum, o que significa que o UGC está visível somente na instância em que foi inserido. Normalmente, o UGC é inserido em uma instância de publicação e não fica visível no ambiente do autor, resultando em todas as tarefas de moderação que precisam usar a instância de publicação.
+Por padrão, a instalação das instâncias do autor e publicação do AEM resulta em conteúdo gerado pelo usuário (UGC) armazenado no armazenamento [de barra](../../help/sites-deploying/platform.md) JCR acessado usando o [JSRP](jsrp.md). O JSRP não é uma loja comum, o que significa que o UGC está visível somente na instância em que foi inserido. Normalmente, o UGC é inserido em uma instância de publicação e não fica visível no ambiente do autor, resultando em todas as tarefas de moderação que precisam usar a instância de publicação.
