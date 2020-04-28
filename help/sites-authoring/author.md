@@ -1,6 +1,6 @@
 ---
-title: Criação
-seo-title: Criação
+title: 'Criação  '
+seo-title: 'Criação  '
 description: Conceitos de criação no AEM
 seo-description: Conceitos de criação no AEM
 uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 
 ---
 
@@ -38,13 +38,11 @@ No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de
 
 >[!NOTE]
 >
->O próprio AEM é usado para criar a documentação do AEM.
->
->Junto com o Dispatcher, ele também é usado para publicação.
+>O AEM e o Dispatcher são usados para publicar essa documentação do AEM.
 
 ### Ambiente de criação {#author-environment}
 
-The author works in what is known as the **author environment**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+O autor trabalha no que é conhecido como **ambiente do autor**. Isso oferece uma interface fácil de usar (interface gráfica do usuário (GUI ou UI)) para criar o conteúdo. Em geral, ele está localizado atrás do firewall de uma empresa que oferece proteção total e exige que o autor faça login, usando uma conta que recebeu os direitos de acesso apropriados.
 
 >[!NOTE]
 >
@@ -72,7 +70,7 @@ Além disso, há tarefas administrativas que o ajudam a gerenciar seu conteúdo:
 
 #### Ambiente de publicação {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. Aqui, as páginas do site são disponibilizadas ao público-alvo pretendido de acordo com a aparência da interface projetada.
+When ready, the AEM site&#39;s content is published to the **publish environment**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
 
 Normalmente, o ambiente de publicação está localizado dentro da zona desmilitarizada; em outras palavras, disponível para a Internet, mas não mais sob a proteção total da rede interna.
 
@@ -82,12 +80,12 @@ Quando o site do AEM é um [site da comunidade](/help/communities/overview.md), 
 >
 >Infelizmente, há uma sobreposição na terminologia usada. Isso pode acontecer ao:
 >
->* **Publicar / Não publicar**
-   >  Esses são os termos principais das ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
+>* **Publicar/Desfazer a publicação**
+   >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
    >
    >
 * **Ativar / Desativar**
-   >  Esses termos são sinônimos de publicar/desfazer a publicação.
+   >  Estes termos são sinônimos de publicar/desfazer a publicação.
    >
    >
 * **Replicar / Replicação**
@@ -98,4 +96,4 @@ Quando o site do AEM é um [site da comunidade](/help/communities/overview.md), 
 
 #### Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+Para otimizar o desempenho para os visitantes do seu site, o **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)implementa o balanceamento de carga e o cache.**
