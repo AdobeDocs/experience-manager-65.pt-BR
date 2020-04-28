@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 68cd1c13fff94ac485865e50bc955548cd285b14
 
 ---
 
@@ -61,11 +61,22 @@ Se o arquivo ZIP contiver mais de um arquivo HTML no nível mais baixo de sua hi
 
 >[!NOTE]
 >
->O recurso HTML para PDF requer determinadas fontes no diretório de fontes do sistema. Nos sistemas Linux, Solaris e AIX, o diretório de fontes do sistema deve conter a fonte Courier. Nos sistemas Windows, o diretório de fontes do sistema deve conter Times New Roman.
+>* O recurso HTML para PDF requer determinadas fontes no diretório de fontes do sistema. Nos sistemas Linux, Solaris e AIX, o diretório de fontes do sistema deve conter a fonte Courier. Nos sistemas Windows, o diretório de fontes do sistema deve conter Times New Roman.
+   >
+   > 
+* As seguintes fontes são japonesas padrão no AEM Forms no Linux. Pelo menos >uma dessas fontes deve estar disponível para converter fontes japonesas no sistema >.
+   >
+   >   
+   * &quot;Sazanami Gothic&quot;
+   >   * &quot;Kozuka Gothic Pro-VI&quot;
+   >   * &quot;Kozuka Mincho Pro-VI&quot;
+   >   * &quot;Sazanami Gothic&quot;
+   >   * &quot;Kozuka Mincho Pr6N&quot;
+   >   * &quot;Sazanami Mincho&quot;
+   >   * &quot;Adobe Heiti Std&quot;
+   >   * &quot;Adobe Song Std&quot;
+>* Para carregar um arquivo do sistema de arquivos local, use a opção Carregar arquivo na página HTML para PDF.
 
->[!NOTE]
->
->Para carregar um arquivo do sistema de arquivos local, use a opção Carregar arquivo na página HTML para PDF.
 
 1. No console de administração, clique em Serviços > Gerador de PDF > HTML para PDF.
 1. Especifique o arquivo a ser convertido executando uma das seguintes tarefas:
