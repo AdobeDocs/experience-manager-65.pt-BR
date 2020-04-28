@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
 
 ---
 
@@ -65,7 +65,7 @@ O exemplo cria um modelo de fluxo de trabalho e um aplicativo de hipoteca para s
 
 [Obter arquivo](assets/example-mortgage-loan-application.zip)
 
-1. Abra o console Modelos de fluxo de trabalho. O URL padrão é https://&#39;[server]:[port]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
+1. Abra o console Modelos de fluxo de trabalho. O URL padrão é `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Select **Create**, then **Create Model**. A caixa de diálogo Adicionar modelo de fluxo de trabalho é exibida.
 1. Insira o **Título** e o **Nome** (opcional). Por exemplo, um aplicativo de hipoteca. Toque em **Concluído**.
 1. Selecione o modelo de fluxo de trabalho recém-criado e toque em **Editar**. Agora, você pode adicionar etapas de fluxo de trabalho para criar lógica de negócios. Quando você cria um modelo de fluxo de trabalho pela primeira vez, ele contém:
@@ -75,7 +75,7 @@ O exemplo cria um modelo de fluxo de trabalho e um aplicativo de hipoteca para s
 
 1. Habilitar notificações por email. Você pode configurar o fluxo de trabalho centrado no Forms no OSGi para enviar notificações por email aos usuários ou destinatários. Execute as seguintes configurações para ativar notificações por email:
 
-   1. Vá para o gerenciador de configuração do AEM em https://&#39;[server]:[port]&#39;/system/console/configMgr.
+   1. Vá para o gerenciador de configuração do AEM em `https://[server]:[port]/system/console/configMgr`.
    1. Abra a configuração do **[!UICONTROL Day CQ Mail Service]** . Especifique um valor para o nome **[!UICONTROL do host do servidor]** SMTP, **[!UICONTROL a porta do servidor]** SMTP e os campos de endereço **** &quot;De&quot;. Clique em **[!UICONTROL Salvar]**.
    1. Abra a configuração do **[!UICONTROL Externalizador]** de links do Day CQ. No campo **[!UICONTROL Domínios]** , especifique o nome do host/endereço IP real e o número da porta para instâncias locais, de autor e de publicação. Clique em **[!UICONTROL Salvar]**.
 
@@ -107,7 +107,7 @@ O exemplo cria um modelo de fluxo de trabalho e um aplicativo de hipoteca para s
 
    ![OU Exemplo de divisão](assets/orsplit_branch1_active_new.png)
 
-   **expressão do Roteamento da Ramificação 2**
+   **expressão do Roteamento para a Ramificação 1**
 
    Quando um usuário toca em **Rejeitar** na Caixa de entrada do AEM, a Ramificação 2 é ativada.
 
@@ -265,10 +265,10 @@ Você pode associar e executar um fluxo de trabalho centrado no Forms no OSGi me
 
 Você pode usar as etapas Atribuir Tarefa e Enviar e-mail de Workflows do AEM para enviar um e-mail. Execute as seguintes etapas para especificar os servidores de e-mail e outras configurações necessárias para enviar e-mail:
 
-1. Vá para o gerenciador de configuração do AEM em https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Vá para o gerenciador de configuração do AEM em `https://[server]:[port]/system/console/configMgr`.
 1. Abra a configuração do **[!UICONTROL Day CQ Mail Service]** . Especifique um valor para o nome **[!UICONTROL do host do servidor]** SMTP, **[!UICONTROL a porta do servidor]** SMTP e os campos de endereço **** &quot;De&quot;. Clique em **[!UICONTROL Salvar]**.
 1. Abra a configuração do **[!UICONTROL Externalizador]** de links do Day CQ. No campo **[!UICONTROL Domínios]** , especifique o nome do host/endereço IP real e o número da porta para instâncias locais, de autor e de publicação. Clique em **[!UICONTROL Salvar]**.
 
 ### Expurgar instâncias de fluxo de trabalho {#purge-workflow-instances}
 
-Minimizar o número de instâncias do fluxo de trabalho aumenta o desempenho do motor de workflow, para que você possa expurgar regularmente as instâncias do fluxo de trabalho concluídas ou em execução do repositório. Para obter informações detalhadas, consulte Expurgação [Regular de Instâncias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de Fluxo de Trabalho.
+Minimizar o número de instâncias do fluxo de trabalho aumenta o desempenho do motor de workflow, para que você possa expurgar regularmente as instâncias do fluxo de trabalho concluídas ou em execução do repositório. Para obter informações detalhadas, consulte Expurgação [Regular de Instâncias](/help/sites-administering/workflows-administering.md#regular) de Fluxo de Trabalho expurgação de instâncias de fluxo de trabalho
