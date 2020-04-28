@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -21,15 +21,15 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 O recurso de pesquisa é um recurso essencial do AEM Communities. Além dos recursos de pesquisa [da plataforma](../../help/sites-deploying/queries-and-indexing.md) AEM, o AEM Communities fornece a API [de pesquisa](#ugc-search-api) UGC para fins de pesquisa de conteúdo gerado pelo usuário (UGC). O UGC tem propriedades exclusivas à medida que é inserido e armazenado separadamente de outro conteúdo do AEM e dados do usuário.
 
-Para Comunidades, as duas coisas geralmente procuradas são:
+Para Comunidades, as duas coisas geralmente pesquisadas são:
 
-* Conteúdo publicado pelos membros da comunidade
+* Conteúdo postado por membros da comunidade
 
-   * Usa a API de pesquisa UGC do AEM Communities
+   * Usa a API de pesquisa UGC do AEM Communities.
 
 * Usuários e grupos de usuários (dados do usuário)
 
-   * Usa os recursos de pesquisa da plataforma AEM
+   * Usa os recursos de pesquisa da plataforma AEM.
 
 Esta seção da documentação é de interesse para desenvolvedores que estão criando componentes personalizados que criam ou gerenciam o UGC.
 
@@ -43,7 +43,7 @@ Consulte [SRP e UGC Essentials](srp-and-ugc.md) para obter informações sobre o
 
 ## API de pesquisa UGC {#ugc-search-api}
 
-O armazenamento [comum](working-with-srp.md) UGC é fornecido por um dos provedores de recursos de armazenamento (SRPs), cada um com uma linguagem de consulta nativa diferente. Portanto, independentemente do SRP escolhido, o código personalizado deve usar métodos do pacote [de API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) UGC (*com.adobe.cq.social.ugc.api*) que chamarão a linguagem de consulta apropriada para o SRP escolhido.
+A loja [comum do](working-with-srp.md) UGC é fornecida por um dos provedores de recursos do armazenamento (SRPs), cada um com possivelmente uma linguagem diferente de query nativa. Portanto, independentemente do SRP escolhido, o código personalizado deve usar métodos do pacote [da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) UGC (*com.adobe.cq.social.ugc.api*) que chamarão a linguagem do query apropriada para o SRP escolhido.
 
 ### Pesquisas ASRP {#asrp-searches}
 
@@ -51,7 +51,7 @@ Para [ASRP](asrp.md), o UGC é armazenado na nuvem da Adobe. Embora o UGC não e
 
 Atualmente, não existem ferramentas para gerenciar pesquisas ASRP.
 
-Ao criar propriedades personalizadas pesquisáveis, é necessário seguir os requisitos [de](#naming-of-custom-properties)nomeação.
+Ao criar propriedades personalizadas que podem ser pesquisadas, é necessário seguir os requisitos [de](#naming-of-custom-properties)nomeação.
 
 ### Pesquisas do MSRP {#msrp-searches}
 
@@ -59,14 +59,14 @@ Para o [MSRP](msrp.md), o UGC é armazenado no MongoDB configurado para usar o S
 
 Relativamente ao MSRP e ao Solr:
 
-* A Solr integrada para a plataforma AEM não é usada para MSRP
-* Se você estiver usando um console remoto para a plataforma AEM, ele poderá ser compartilhado com o MSRP, mas deverá usar coleções diferentes
-* O Solr pode ser configurado para pesquisa padrão ou para pesquisa multilíngue (MLS)
-* Para obter detalhes sobre a configuração, consulte Configuração [](msrp.md#solr-configuration) Solr para MSRP
+* A Solr integrada para a plataforma AEM não é usada para MSRP.
+* Se estiver usando um console remoto para a plataforma AEM, ele poderá ser compartilhado com o MSRP, mas deverá usar coleções diferentes.
+* O Solr pode ser configurado para pesquisa padrão ou para pesquisa multilíngue (MLS).
+* Para obter detalhes sobre a configuração, consulte Configuração [](msrp.md#solr-configuration) solar para MSRP.
 
 Os recursos de pesquisa personalizados devem usar a API [de pesquisa](#ugc-search-api)UGC.
 
-Ao criar propriedades personalizadas pesquisáveis, é necessário seguir os requisitos [de](#naming-of-custom-properties)nomeação.
+Ao criar propriedades personalizadas que podem ser pesquisadas, é necessário seguir os requisitos [de](#naming-of-custom-properties)nomeação.
 
 ### Pesquisas do JSRP {#jsrp-searches}
 
@@ -80,18 +80,18 @@ Os recursos de pesquisa personalizados devem usar a API [de pesquisa](#ugc-searc
 
 #### Indexação de Oak {#oak-indexing}
 
-Embora os índices Oak não sejam criados automaticamente para a pesquisa da plataforma AEM, a partir do AEM 6.2 eles foram adicionados para o AEM Communities para melhorar o desempenho e fornecer suporte para paginação ao apresentar resultados de pesquisa UGC.
+Embora os índices Oak não sejam criados automaticamente para a pesquisa da plataforma AEM, a partir do AEM 6.2 eles foram adicionados para o AEM Communities para melhorar o desempenho e fornecer suporte para paginação ao apresentar os resultados da pesquisa UGC.
 
 Se as propriedades personalizadas estiverem em uso e as pesquisas estiverem lentas, será necessário criar índices adicionais para que as propriedades personalizadas sejam mais eficientes. Para manter a portabilidade, siga os requisitos [de](#naming-of-custom-properties) nomeação ao criar propriedades personalizadas que podem ser pesquisadas.
 
-Para modificar índices existentes ou criar índices personalizados, consulte Consultas [Oak e Indexação](../../help/sites-deploying/queries-and-indexing.md).
+Para modificar índices existentes ou criar índices personalizados, consulte [Oak Query e Indexação](../../help/sites-deploying/queries-and-indexing.md).
 
 O [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) está disponível no AEM Commons ACS. Ele fornece:
 
-* Uma visão dos índices existentes
-* A capacidade de iniciar a reindexação
+* Uma visualização de índices existentes.
+* A capacidade de iniciar a reindexação.
 
-Para exibir os índices Oak existentes no [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), o local é:
+Para visualização dos índices Oak existentes no [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), o local é:
 
 * `/oak:index/socialLucene`
 
@@ -135,14 +135,14 @@ Veja a seguir algumas das propriedades pesquisáveis usadas para vários recurso
 
 ### Nomeação de propriedades personalizadas {#naming-of-custom-properties}
 
-Ao adicionar propriedades personalizadas, para que essas propriedades fiquem visíveis para as classificações e pesquisas criadas com a API [de pesquisa](#ugc-search-api)UGC, é *obrigatório *adicionar um sufixo ao nome da propriedade.
+Ao adicionar propriedades personalizadas, para que essas propriedades fiquem visíveis para as classificações e pesquisas criadas com a API [de pesquisa](#ugc-search-api)UGC, é *necessário* adicionar um sufixo ao nome da propriedade.
 
-O sufixo é para idiomas de consulta que usam um esquema:
+O sufixo é para idiomas de query que usam um schema:
 
-* Ela identifica a propriedade como pesquisável
-* Identifica o tipo de dados
+* Ela identifica a propriedade como pesquisável.
+* Ela identifica o tipo de dados.
 
-Solr é um exemplo de uma linguagem de consulta que usa um esquema.
+Solr é um exemplo de uma linguagem de query que usa um schema.
 
 | **Sufixo** | **Tipo de dados** |
 |---|---|
@@ -160,7 +160,7 @@ Solr é um exemplo de uma linguagem de consulta que usa um esquema.
 * Para tipos de valores múltiplos, adicione &quot;s&quot; ao sufixo, por exemplo:
 
    * `viewDate_dt`: propriedade de data única
-   * `viewDates_dts`: propriedade list of date
+   * `viewDates_dts`: propriedade lista de datas
 
 ## Filtros {#filters}
 
@@ -214,23 +214,23 @@ curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/use
 
 ## Resolução de Problemas{#troubleshooting}
 
-### Consulta Solr {#solr-query}
+### Query Solr {#solr-query}
 
-Para ajudar a solucionar problemas com uma consulta Solr, ative o registro DEBUG para
+Para ajudar a solucionar problemas com um query Solr, ative o registro DEBUG para
 
 `com.adobe.cq.social.srp.impl.SocialSolrConnector`.
 
-A consulta Solr real será exibida com o URL codificado no log de depuração:
+O query Solr real será exibido no URL codificado no log de depuração:
 
-A consulta para solr é: `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
+O Query a ser resolvido é: `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
 
-O valor do `q` parâmetro é a consulta. Depois que a codificação do URL é decodificada, a consulta pode ser transmitida para a ferramenta de consulta de administrador solar para depuração adicional.
+O valor do `q` parâmetro é o query. Depois que a codificação do URL é decodificada, o query pode ser passado para a ferramenta Solr Admin Query para depuração adicional.
 
 ## Recursos relacionados {#related-resources}
 
-* [Armazenamento](working-with-srp.md) de conteúdo da comunidade - discute as opções de SRP disponíveis para uma loja comum UGC
-* [Visão geral](srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação
-* [Refatoração](socialutils.md) SocialUtils - Métodos de utilitário para SRP que substituem o SocialUtils
-* [Componentes](search.md) de Pesquisa e Resultados de Pesquisa - Adicionar recurso de pesquisa UGC a um modelo
+* [Armazenamento](working-with-srp.md) de conteúdo da comunidade - discute as opções de SRP disponíveis para uma loja comum UGC.
+* [Visão geral](srp.md) do provedor de recursos do Armazenamento - Introdução e visão geral de uso do repositório.
+* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
+* [Refatoração](socialutils.md) SocialUtils - Métodos de utilitário para SRP que substituem SocialUtils.
+* [Componentes](search.md) de Resultados de pesquisa e pesquisa - Adicionar recurso de pesquisa UGC a um modelo.
 
