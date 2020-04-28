@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -19,19 +19,19 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 O recurso de pesquisa funciona com vários outros recursos, como fóruns, para fornecer a capacidade de pesquisar conteúdo.
 
-Ao adicionar a capacidade de pesquisar postagens inseridas por membros da comunidade, chamado de conteúdo gerado pelo usuário (UGC), há dois componentes: [ e `Search`](#search)[ `Search Results`](#search-results).
+Ao adicionar a capacidade de pesquisar postagens inseridas por membros da comunidade, chamado de conteúdo gerado pelo usuário (UGC), há dois componentes: Resultados [de pesquisa](#search) e [pesquisa](#search-results).
 
 A página que inclui o `Search Results` componente oferece suporte à pesquisa e à exibição de resultados.
 
-A página que inclui o `Search`componente fornece um local para iniciar uma pesquisa com os resultados que aparecem na `Search Results` página.
+A página que inclui o `Search` componente fornece um local para iniciar uma pesquisa com os resultados que aparecem na `Search Results` página.
 
-O recurso de pesquisa pode ser usado com qualquer outro recurso que permita aos visitantes e membros do site exibir o conteúdo.
+O recurso de pesquisa pode ser usado com qualquer outro recurso que permita aos visitantes e membros do site visualizações conteúdo.
 
 ## Pesquisar {#search-features}
 
 ### Adicionar pesquisa a uma página {#add-search-to-a-page}
 
-Para adicionar um `Search` componente a uma página no modo de autor, use o navegador de componentes para localizá-lo `Communities / Search` e arrastá-lo para um local em uma página. O uso de `Search` requer uma segunda página para o `Search Results.`
+Para adicionar um `Search` componente a uma página no modo de autor, use o navegador de componentes para localizá-lo `Communities / Search` e arrastá-lo para um local em uma página. O uso de `Search` requer uma segunda página para a variável `Search Results.`
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
 
@@ -45,7 +45,7 @@ Selecione o componente inserido a ser acessado e selecione o `Search` `Configure
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
-Na guia Configurações **[!UICONTROL de]** pesquisa, especifique como os caminhos são pesquisa quando uma consulta é inserida por um visitante.
+Na guia Configurações **[!UICONTROL de]** pesquisa, especifique como os caminhos são pesquisa quando um query é inserido por um visitante.
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -79,13 +79,17 @@ Selecione o componente inserido a ser acessado e selecione o `Search Results` `C
 
 ![chlimage_1-377](assets/chlimage_1-377.png)
 
-Na guia Configurações **[!UICONTROL de resultado da]** pesquisa, é possível especificar quais caminhos são incluídos na pesquisa quando uma consulta é inserida por um visitante.
+Na guia Configurações **[!UICONTROL de resultado da]** pesquisa, é possível especificar quais caminhos são incluídos na pesquisa quando um query é inserido por um visitante.
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL Resultados da pesquisa por página]** Define o número de tópicos/postagens exibidos por página. O padrão é 10.
+* **[!UICONTROL Resultados de busca por página]**
 
-* **[!UICONTROL Caminhos de pesquisa]** Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada.
+   Defina o número de tópicos/postagens exibidos por página. O padrão é 10.
+
+* **[!UICONTROL Caminhos de pesquisa]**
+
+   Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada.
 
 ## Informações adicionais {#additional-information}
 
