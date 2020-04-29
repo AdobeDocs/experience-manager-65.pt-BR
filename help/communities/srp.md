@@ -1,8 +1,8 @@
 ---
-title: Visão geral do provedor de recursos de armazenamento
-seo-title: Visão geral do provedor de recursos de armazenamento
-description: Armazenamento comum para comunidades
-seo-description: Armazenamento comum para comunidades
+title: Visão geral do provedor de recursos do Armazenamento
+seo-title: Visão geral do provedor de recursos do Armazenamento
+description: armazenamento comum das Comunidades
+seo-description: armazenamento comum das Comunidades
 uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,16 +10,16 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
 
-# Visão geral do provedor de recursos de armazenamento {#storage-resource-provider-overview}
+# Visão geral do provedor de recursos do Armazenamento {#storage-resource-provider-overview}
 
 ## Introdução {#introduction}
 
-A partir do AEM Communities 6.1, o conteúdo da comunidade, geralmente conhecido como conteúdo gerado pelo usuário (UGC), é armazenado em uma única loja comum fornecida por um provedor [de recursos de](working-with-srp.md) armazenamento (SRP).
+A partir do AEM Communities 6.1, o conteúdo da comunidade, geralmente conhecido como conteúdo gerado pelo usuário (UGC), é armazenado em uma única loja comum fornecida por um provedor [de recursos do](working-with-srp.md) armazenamento (SRP).
 
 Existem várias opções de SRP, todas elas acessando o UGC por meio de uma nova interface do AEM Communities, a API [do](srp-and-ugc.md) SocialResourceProvider (SRP API), que inclui todas as operações de criação, leitura, atualização e exclusão (CRUD).
 
@@ -33,9 +33,9 @@ Todos os componentes do SCF são implementados usando a API SRP, permitindo que 
 
 Consulte também:
 
-* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação
-* [Refatoração](socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
+* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
+* [Refatoração](socialutils.md) SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
 
 ## Sobre o repositório {#about-the-repository}
 
@@ -49,15 +49,15 @@ Uma implementação do JCR é o repositório do AEM, OAK.
 
 O JCR e o OAK normalmente são usados para fazer referência ao repositório do AEM.
 
-Depois de desenvolver o conteúdo do site no ambiente de criação privado, ele deve ser copiado para o ambiente de publicação público. Isso geralmente é feito por meio de uma operação chamada *[replicação](deploy-communities.md#replication-agents-on-author)*. Isso acontece sob o controle do autor/desenvolvedor/administrador.
+Depois de desenvolver o conteúdo do site no ambiente do autor privado, ele deve ser copiado para o ambiente de publicação público. Isso geralmente é feito por meio de uma operação chamada *[replicação](deploy-communities.md#replication-agents-on-author)*. Isso acontece sob o controle do autor/desenvolvedor/administrador.
 
 Para o UGC, o conteúdo é inserido por visitantes do site registrados (membros da comunidade) no ambiente de publicação pública. Isto acontece aleatoriamente.
 
-Para fins de gerenciamento e geração de relatórios, é útil ter acesso ao UGC a partir do ambiente de criação privado. Com o SRP, o acesso ao UGC do autor é mais consistente e eficiente, já que a replicação reversa da publicação para o autor não é necessária.
+Para fins de gerenciamento e relatórios, é útil ter acesso ao UGC do ambiente do autor privado. Com o SRP, o acesso ao UGC do autor é mais consistente e eficiente, já que a replicação reversa da publicação para o autor não é necessária.
 
 ## Sobre o SRP {#about-srp}
 
-Quando o UGC é salvo no armazenamento compartilhado, há uma única instância do conteúdo membro que pode, na maioria das implantações, ser acessado dos ambientes de autor e publicação. Independentemente da escolha do SRP (MSRP, ASRP, JSRP), todos devem ser acessados de forma programática com a API do SRP.
+Quando o UGC é salvo no armazenamento compartilhado, há uma única instância do conteúdo do membro que pode, na maioria das implantações, ser acessado do autor e dos ambientes de publicação. Independentemente da escolha do SRP (MSRP, ASRP, JSRP), todos devem ser acessados de forma programática com a API do SRP.
 
 >[!NOTE]
 >
@@ -65,54 +65,55 @@ Quando o UGC é salvo no armazenamento compartilhado, há uma única instância 
 >
 >Consulte [Acessar o UGC com SRP](accessing-ugc-with-srp.md) para obter as práticas recomendadas na codificação.
 
+
 ### ASRP {#asrp}
 
 No caso de ASRP, o UGC não é armazenado no JCR, ele é armazenado em um serviço de nuvem hospedado e gerenciado pela Adobe. O UGC armazenado no ASRP não pode ser exibido com o CRXDE Lite nem acessado usando a API do JCR.
 
-Consulte [ASRP - Provedor](asrp.md)de recursos de armazenamento da Adobe.
+Consulte [ASRP - Provedor](asrp.md)de Recursos de Armazenamentos da Adobe.
 
 Não é possível aos desenvolvedores acessar o UGC diretamente.
 
-O ASRP usa a nuvem da Adobe para consultas.
+O ASRP usa a nuvem da Adobe para query.
 
 ### MSRP {#msrp}
 
 No caso do MSRP, o UGC não é armazenado no JCR, ele é armazenado no MongoDB. O UGC armazenado no MSRP pode não ser exibido com o CRXDE Lite nem acessado usando a API do JCR.
 
-Consulte [MSRP - Provedor](msrp.md)de recursos de armazenamento MongoDB.
+Consulte [MSRP - Provedor](msrp.md)de recursos do Armazenamento MongoDB.
 
 Embora o MSRP seja comparável ao ASRP, como todas as instâncias do servidor AEM estão acessando o mesmo UGC, é possível usar ferramentas comuns para acessar diretamente o UGC armazenado no MongoDB.
 
-O MSRP usa o Solr para consultas.
+O MSRP usa o Solr para query.
 
 ### JSRP {#jsrp}
 
 O JSRP é o provedor padrão para acessar todo o UGC em uma única instância do AEM. Ele oferece a capacidade de experimentar rapidamente o AEM Communities 6.1 sem a necessidade de configurar o MSRP ou o ASRP.
 
-Consulte [JSRP - Provedor](jsrp.md)de recursos de armazenamento JCR.
+Consulte [JSRP - Provedor](jsrp.md)de recursos do Armazenamento JCR.
 
-No caso do JSRP, embora o UGC seja armazenado no JCR e acessível por meio da CRXDE Lite e da JCR API, é altamente recomendável que a JCR API nunca seja usada para isso, caso contrário, alterações futuras podem afetar o código personalizado.
+No caso do JSRP, embora o UGC seja armazenado no JCR e acessível por meio da CRXDE Lite e da JCR API, é altamente recomendável que a JCR API nunca seja usada para fazer isso, caso contrário, alterações futuras podem afetar o código personalizado.
 
-Além disso, o repositório dos ambientes de autor e publicação não é compartilhado. Embora um cluster de instâncias de publicação resulte em um repositório de publicação compartilhado, o UGC inserido na publicação não estará visível no autor, portanto, não será possível gerenciar o UGC do autor. O UGC só é persistente no repositório do AEM (JCR) da instância em que foi inserido.
+Além disso, o repositório dos ambientes do autor e publicação não é compartilhado. Embora um cluster de instâncias de publicação resulte em um repositório de publicação compartilhado, o UGC inserido na publicação não estará visível no autor, portanto, não será possível gerenciar o UGC do autor. O UGC só é persistente no repositório do AEM (JCR) da instância em que foi inserido.
 
-O JSRP usa os índices Oak para consultas.
+O JSRP usa os índices Oak para query.
 
 ## Sobre nós de sombra no JCR {#about-shadow-nodes-in-jcr}
 
 Os nós de sombra, que imitam o caminho para o UGC, existem no repositório local para atender a duas finalidades:
 
-1. [Controle de acesso (ACLs](#for-access-control-acls))
+1. [Controle de acesso (ACLs)](#for-access-control-acls)
 1. [Recursos não existentes (NERs)](#for-non-existing-resources-ners)
 
 Independentemente da implementação do SRP, o UGC real *não será *visível no mesmo local que o nó de sombra.
 
-### Para controle de acesso (ACLs) {#for-access-control-acls}
+### Para Controle de acesso (ACLs) {#for-access-control-acls}
 
 Algumas implementações SRP, como ASRP e MSRP, armazenam conteúdo da comunidade em bancos de dados que não fornecem verificação de ACL. Os nós de sombra fornecem um local no repositório local ao qual as ACLs podem ser aplicadas.
 
 Usando a API SRP, todas as opções SRP executam a mesma verificação do local da sombra antes de todas as operações CRUD.
 
-A verificação ACL usa um método de utilitário que retorna um caminho adequado para verificar as permissões aplicadas ao UGC do recurso.
+A verificação de ACL usa um método de utilitário que retorna um caminho adequado para verificar as permissões aplicadas ao UGC do recurso.
 
 Consulte [SRP e UGC Essentials](srp-and-ugc.md) para obter exemplos de código.
 
@@ -126,17 +127,18 @@ Os nós de sombra fornecem um local endereçável Sling no repositório.
 >
 >Como o nó de sombra tem vários usos, a presença de um nó de sombra *não* implica que o componente seja um NER.
 
-### Local de armazenamento {#storage-location}
+
+### Localização do Armazenamento {#storage-location}
 
 Veja a seguir um exemplo de um nó de sombra, usando o componente [](http://localhost:4502/content/community-components/en/comments.html) Comentários no Guia [de componentes da](components-guide.md)comunidade:
 
 * O componente existe no repositório local em:
 
-   /content/community-components/en/comments/jcr:content/content/includable/comments
+   `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 * O nó de sombra correspondente existe no repositório local em:
 
-   /content/usergenerate/content/community-components/en/comments/jcr:content/content/includable/comments
+   `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 Nenhum UGC será encontrado sob o nó de sombra.
 
