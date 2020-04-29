@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -21,36 +21,42 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Um modelo de site personalizado pode ser especificado separadamente para cada cópia de idioma de um site da comunidade.
 
-Para isso,
+Para isso:
 
-* Criar um modelo personalizado
-* Sobrepor o caminho padrão do modelo do site
-* Adicionar o modelo personalizado ao caminho de sobreposição
-* Especifique o modelo personalizado adicionando uma `page-template` propriedade ao `configuration` nó
+* Crie um modelo personalizado.
+* Sobrepor o caminho padrão do modelo do site.
+* Adicione o modelo personalizado ao caminho de sobreposição.
+* Especifique o modelo personalizado adicionando uma `page-template` propriedade ao `configuration` nó.
 
 **Modelo** padrão:
 
-/**libs**/social/console/components/hbs/sitepage/**sitepage**.hbs
+`/libs/social/console/components/hbs/sitepage/sitepage.hbs`
 
 **Modelo personalizado no caminho** de sobreposição:
 
-/**apps**/social/console/components/hbs/sitepage/**&lt;nome *do*modelo>**.hbs
+`/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**Propriedade**: tipo **de modelo** de página: String **Value**: &lt;*template-name*> (sem extensão)
+**Propriedade**: page-template
+
+**Tipo**: String
+
+**Valor**: `template-name` (sem extensão)
 
 **Nó** de configuração:
 
-/content/&lt;caminho *do site* da comunidade>/&lt;*lang*>/configuration
+`/content/community site path/lang/configuration`
 
-Por exemplo: /content/sites/contact/en/configuration
+Por exemplo: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
 >Todos os nós no caminho sobreposto precisam apenas ser do tipo `Folder`.
 
+
 >[!CAUTION]
 >
->Se o modelo personalizado receber o nome *sitepage.hbs,* todos os sites da comunidade serão personalizados.
+>Se o modelo personalizado receber o nome *sitepage.hbs*, todos os sites da comunidade serão personalizados.
+
 
 ### Exemplo de modelo de site personalizado {#custom-site-template-example}
 
@@ -58,11 +64,11 @@ Por exemplo, `vertical-sitepage.hbs` é um modelo de site que resulta na coloca�
 
 [Obter arquivo](assets/vertical-sitepage.hbs)Coloque o modelo de site personalizado na pasta de sobreposição:
 
-/**apps**/social/console/components/hbs/sitepage/**vertical-sitepage**.hbs
+`/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
 Identifique o modelo personalizado adicionando uma `page-template` propriedade ao nó de configuração:
 
-/content/sites/sample/en/configuration
+`/content/sites/sample/en/configuration`
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -82,22 +88,24 @@ Para exportar o UGC, use a Ferramenta [de migração UGC do](https://github.com/
 
 ## Excluindo um site da comunidade {#deleting-a-community-site}
 
-A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do console Comunidades > Sites. Durante o desenvolvimento, se desejar excluir um site da comunidade e começar a ser iniciado, você pode usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
+A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do console **[!UICONTROL Communities]** > **[!UICONTROL Sites]** . Durante o desenvolvimento, se desejar excluir um site da comunidade e atualizar o start, você poderá usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
 
 * [UGC](#user-generated-content)
 * [Grupos de usuários](#community-user-groups)
-* [Assets](#enablement-assets)
+* [Ativos](#enablement-assets)
 * [Registros do banco de dados](#database-records)
 
 ### ID exclusiva do site da comunidade {#community-unique-site-id}
 
 Para identificar a ID de site exclusiva associada ao site da comunidade, use o CRXDE:
 
-* Navegue até a raiz do idioma do site, como `/content/sites/*<site name>*/en/rep:policy`
+* Navegue até a raiz do idioma do site, como `/content/sites/*<site name>*/en/rep:policy`.
 
-* Localizar o `allow<#>` nó com um `rep:principalName` neste formato `rep:principalName = *community-enable-nrh9h-members*`
+* Encontre o `allow<#>` nó com um `rep:principalName` neste formato `rep:principalName = *community-enable-nrh9h-members*`.
 
-* A ID do site é o terceiro componente de `rep:principalName`Por exemplo, se `rep:principalName = community-enable-nrh9h-members`
+* A ID do site é o terceiro componente de `rep:principalName`
+
+   Por exemplo, se `rep:principalName = community-enable-nrh9h-members`
 
    * **nome** do site = *ativar*
    * **ID** do site = *nrh9h*
@@ -113,7 +121,7 @@ Ele contém um servlet para excluir todo o UGC de qualquer SRP.
 
 Todo o UGC pode ser removido ou para um site específico, por exemplo:
 
-* path=/content/usergenerate/asi/mongo/content/sites/contact
+* `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
 Isso só remove o conteúdo gerado pelo usuário (inserido na publicação) e não o conteúdo criado (inserido no autor). Portanto, nós [de](srp.md#shadownodes) sombra não são afetados.
 
@@ -130,10 +138,10 @@ Por exemplo, `community-engage-x0e11-members`.
 
 No console principal:
 
-* Select **[!UICONTROL Assets]**
-* Entrar no modo **[!UICONTROL Selecionar]**
-* Selecione a pasta nomeada com a ID do site [exclusiva](#community-unique-site-id)
-* Selecione **[!UICONTROL Excluir]** (pode ser necessário selecionar de **[!UICONTROL Mais...]**)
+* Select **[!UICONTROL Assets]**.
+* Entre no modo **[!UICONTROL Selecionar]** .
+* Selecione a pasta nomeada com a ID [de site](#community-unique-site-id)exclusiva.
+* Selecione **[!UICONTROL Excluir]** (pode ser necessário selecionar de **[!UICONTROL Mais...]**).
 
 ### Registros do banco de dados {#database-records}
 
