@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -23,9 +23,10 @@ O console Modelos de site é muito semelhante ao console Modelos [de](tools-grou
 >
 >Os consoles para a criação de sites [da](sites-console.md)comunidade, modelos [de site da](sites.md)comunidade, modelos [de grupos da](tools-groups.md) comunidade e funções [da](functions.md) comunidade são para uso somente no ambiente do autor.
 
+
 ## Console de modelos de site {#site-templates-console}
 
-No ambiente do autor, para acessar o console de sites da comunidade
+No ambiente do autor, para acessar o console de sites da comunidade:
 
 * Da navegação global: **[!UICONTROL Ferramentas > Comunidades > Modelos de site]**
 
@@ -37,7 +38,7 @@ Este console exibe os modelos a partir dos quais um site [da](sites-console.md) 
 
 Para começar a criar um novo modelo de site, selecione `Create`.
 
-Isso exibirá o painel Editor de sites, que contém três subpainéis:
+Isso exibirá o painel do Editor de sites, que contém três subpainéis:
 
 ### Basic info {#basic-info}
 
@@ -45,13 +46,19 @@ Isso exibirá o painel Editor de sites, que contém três subpainéis:
 
 No painel Informações básicas, um nome, uma descrição e se o modelo está ativado ou desativado são configurados:
 
-* **[!UICONTROL Nome]** do modelo do site da comunidade O nome do modelo
+* **[!UICONTROL Nome do modelo do site da comunidade]**
 
-* **[!UICONTROL Descrição]** do modelo do site da comunidade A descrição do modelo
+   A ID do nome do modelo.
 
-* **[!UICONTROL Desativado/Ativado]** Uma alternância que controla se o modelo é referenciável
+* **[!UICONTROL Descrição do modelo do site da comunidade]**
 
-### Miniatura {#thumbnail}
+   A descrição do modelo.
+
+* **[!UICONTROL Desativado/Ativado]**
+
+   Um switch de alternância que controla se o modelo é referenciável.
+
+### Miniatura     {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -63,7 +70,7 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
 Para adicionar funções de comunidade, arraste do lado direito para a esquerda na ordem em que os links de menu do site devem aparecer. Os estilos serão aplicados ao modelo durante a criação do site.
 
-Por exemplo, se você quiser uma página inicial, arraste a função Página da biblioteca e solte sob o construtor de modelos. Isso resultará na abertura da caixa de diálogo de configuração da página. Consulte o console [de](functions.md) funções para obter informações sobre as caixas de diálogo de configuração.
+Por exemplo, se desejar um home page, arraste a função Página da biblioteca e solte sob o construtor de modelos. Isso resultará na abertura da caixa de diálogo de configuração da página. Consulte o console [de](functions.md) funções para obter informações sobre as caixas de diálogo de configuração.
 
 Continue arrastando e soltando quaisquer outras funções da comunidade desejadas para um site da comunidade com base neste modelo.
 
@@ -75,15 +82,17 @@ A função page fornece uma página vazia. A função groups fornece a capacidad
 >
 >Qualquer outra função, como a função [de](functions.md#page-function)página, deve ser incluída e listada primeiro.
 
+
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
 ### Função Modelos de grupo para grupos {#group-templates-for-groups-function}
 
-Ao incluir uma função de grupos no modelo de site, a configuração exige a especificação das opções de modelo de grupo permitidas quando um novo grupo é criado no ambiente de publicação.
+Ao incluir uma função de grupos no modelo do site, a configuração exige a especificação das opções de modelo de grupo permitidas quando um novo grupo é criado no ambiente de publicação.
 
 >[!CAUTION]
 >
 >A função Grupos *não* deve ser a *primeira nem a única* função na estrutura do site.
+
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
