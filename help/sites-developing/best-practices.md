@@ -1,6 +1,6 @@
 ---
-title: Práticas recomendadas
-seo-title: Práticas recomendadas
+title: 'Práticas recomendadas  '
+seo-title: 'Práticas recomendadas  '
 description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
 seo-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
 uuid: f962c31f-8140-482f-b189-16376e23bfed
@@ -10,18 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
 
 ---
 
 
-# Práticas recomendadas{#best-practices}
+# Práticas recomendadas  {#best-practices}
 
 ## Práticas recomendadas para desenvolvedores - Introdução {#best-practices-for-developers-getting-started}
 
 As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM. Os desenvolvedores da Adobe seguem essas práticas recomendadas ao desenvolver atualizações de produtos AEM e código do cliente para implementações de clientes.
 
-Antes de iniciar o projeto de desenvolvimento do AEM, analise primeiro essas práticas recomendadas:
+Antes de start de seu projeto de desenvolvimento do AEM, analise primeiro essas práticas recomendadas:
 
 * [Práticas de desenvolvimento](/help/sites-developing/development-practices.md)
 * [Arquitetura de conteúdo](/help/sites-developing/content-architecture.md)
@@ -30,6 +30,7 @@ Antes de iniciar o projeto de desenvolvimento do AEM, analise primeiro essas pr�
 * [Opções de código](/help/sites-developing/code-pitfalls.md)
 * [Interação JCR](/help/sites-developing/jcr-integration.md)
 * [Pacotes OSGi](/help/sites-developing/osgi-bundles.md)
+* [Práticas recomendadas da API Java](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Informações adicionais sobre práticas recomendadas {#additional-best-practices-information}
 
@@ -70,8 +71,8 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
   </tr>
   <tr>
    <td>Fluxos de trabalhos</td>
-   <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de fluxos de trabalho</a></td>
-   <td><p>Os fluxos de trabalho permitem que você automatize as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de fluxos de trabalho com cuidado.</p> </td>
+   <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de Workflows</a></td>
+   <td><p>Os Workflows permitem que você automatize as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de workflows com cuidado.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -93,11 +94,11 @@ A Linguagem de modelo HTML (HTL) é um novo sistema de modelo HTML, introduzido 
 
 |  |  |  |
 |---|---|---|
-| Visão geral do HTL | [Visão geral e sintaxe HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) | Este documento descreve o que é HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e declarações |
+| Visão geral do HTL | [Visão geral e sintaxe HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html) | Este documento descreve o que é HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e declarações |
 | Uso da API no java | [API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | A HTL Java Use-API permite que um arquivo HTL acesse métodos auxiliares em uma classe Java personalizada. |
 
 >[!NOTE]
 >
 >O tutorial de várias partes a seguir pode ser de interesse para a prática recomendada de configurar um novo projeto AEM, detalhando os componentes principais, modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes:
->[Introdução ao AEM Sites - Tutorial de WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
