@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do usuário dos ativos AEM 6.5
 translation-type: tm+mt
-source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -103,7 +103,7 @@ source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
    + [Usar o rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configurar restrições de upload](configuring-asset-upload-restrictions.md)
    + [Práticas recomendadas de integração do AEM e da Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integrar ao servidor do InDesign](indesign.md)
+   + [Integrar ao InDesign Server](indesign.md)
    + [Perfis de metadados](metadata-profiles.md)
    + [Gerenciamento de direitos digitais em ativos](drm.md)
    + [Usar o pacote de demonstração para insights de ativos](touch-ui-using-demo-package-for-asset-insights.md)
