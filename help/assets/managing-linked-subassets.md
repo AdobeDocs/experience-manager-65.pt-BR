@@ -1,18 +1,18 @@
 ---
-title: Gerencie ativos compostos com referências e ativos de várias páginas no Adobe Experience Manager.
-description: Saiba como criar referências a ativos digitais no Adobe InDesign, no Adobe Illustrator e no Adobe Photoshop. Use o recurso Visualizador de página para visualização de páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
+title: Gerencie ativos compostos com referências e ativos de várias páginas no [!DNL Adobe Experience Manager].
+description: Saiba como criar referências a ativos digitais em [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para visualização de páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Gerenciar ativos compostos e de várias páginas {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] pode identificar se um arquivo carregado contém referências a ativos que já existem no repositório. Este recurso está disponível somente para formatos de arquivo suportados. Se o ativo carregado contiver qualquer referência aos ativos do Experience Manager, um link bidirecional será criado entre os ativos carregados e referenciados.
+[!DNL Adobe Experience Manager Assets] pode identificar se um arquivo carregado contém referências a ativos que já existem no repositório. Este recurso está disponível somente para formatos de arquivo suportados. Se o ativo carregado contiver referências a [!DNL Experience Manager] ativos, um link bidirecional será criado entre os ativos carregados e referenciados.
 
-Além de eliminar a redundância, a referência aos ativos nos aplicativos da Adobe Creative Cloud melhora a colaboração e aumenta a eficiência e a produtividade dos usuários.
+Além de eliminar a redundância, a referência aos ativos nos [!DNL Adobe Creative Cloud] aplicativos aumenta a colaboração e a eficiência e produtividade dos usuários.
 
 [!DNL Experience Manager Assets] suporta referenciação bidirecional. Você pode encontrar ativos referenciados na página de detalhes do ativo do arquivo carregado. Além disso, você pode visualização os arquivos de referência na página de detalhes do ativo referenciado.
 
@@ -25,7 +25,7 @@ Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illu
 1. Usando o aplicativo [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager para desktop, busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
 1. Arraste o ativo da pasta local para o [!DNL Illustrator] arquivo.
 
-1. Salve o [!DNL Illustrator] arquivo na unidade montada ou [carregue](/help/assets/managing-assets-touch-ui.md#uploading-assets) no repositório do Experience Manager.
+1. Salve o [!DNL Illustrator] arquivo na unidade montada ou [carregue](/help/assets/managing-assets-touch-ui.md#uploading-assets) no [!DNL Experience Manager] repositório.
 
 1. Após a conclusão do fluxo de trabalho, vá para a página de detalhes do ativo do ativo. As referências a ativos digitais existentes são listadas em **[!UICONTROL Dependências]** na coluna **[!UICONTROL Referências]** .
 
@@ -39,7 +39,7 @@ Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illu
 
    ![visualização das referências dos ativos do Experience Manager na coluna Referências nos detalhes do ativo](assets/asset-references.png)
 
-   *Figura: Referências de ativos em detalhes de ativos*
+   *Figura: Referências de ativos em detalhes de ativos.*
 
 ## Adicionar ativos digitais como referências em [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -86,7 +86,7 @@ Para os ativos suportados com formatos de várias páginas — arquivos PDF, arq
 
 Por padrão, a geração de conjunto de subconjuntos é desativada. Para ativar a geração de subativos, siga estas etapas:
 
-1. Faça logon no Experience Manager como administrador. Acesse **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Faça logon [!DNL Experience Manager] como administrador. Acesse **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
 1. Selecione Fluxo de trabalho **[!UICONTROL Atualizar ativo]** DAM e clique em **[!UICONTROL Editar]**.
 1. Clique em **[!UICONTROL Alternar painel]** lateral e localize a etapa **[!UICONTROL Criar subativo]** . Adicione a etapa ao fluxo de trabalho. Clique em **[!UICONTROL Sincronizar]**.
 
