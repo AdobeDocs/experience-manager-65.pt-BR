@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -81,7 +81,7 @@ O administrador que aplica as tags para ativar os recursos deve estar ciente das
 
 Por exemplo, se uma `ski-catalog` namespace foi criada e definida em um catálogo chamado `Ski Catalog`, ela pode ter duas tags-filho: `lesson-1` e `lesson-2`.
 
-Assim, qualquer recurso de ativação marcado com um dos
+Assim, qualquer recurso de ativação marcado com um dos seguintes:
 
 * catálogo de esqui:lição-1
 * catálogo de esqui:lição-2
