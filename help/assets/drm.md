@@ -3,7 +3,7 @@ title: Gerenciamento de direitos digitais em ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados no AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -20,7 +20,7 @@ Você pode visualização o status de expiração de um ativo no console Ativos 
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figura: Na visualização do cartão, um sinalizador no cartão indica o ativo expirado*
+*Figura: Na visualização do cartão, um sinalizador no cartão indica o ativo expirado.*
 
 **Exibição de lista**
 
@@ -123,7 +123,7 @@ O console Ativos dos ativos Adobe Experience Manager (AEM) pode exibir vários e
    ![definir data e hora de expiração do ativo no campo Expira](assets/asset-properties-advanced-tab.png)
 
 
-   *Figura: Guia Avançado nas propriedades do ativo para definir a expiração do ativo*
+   *Figura: guia[!UICONTROL Avançado]na página[!UICONTROL Propriedades]do ativo para definir a expiração do ativo.*
 
 1. Clique em **[!UICONTROL Salvar]** e em **[!UICONTROL Fechar]** para exibir o console Ativos.
 1. O status de publicação do ativo indica um status expirado na parte inferior da miniatura do ativo na visualização do cartão. Na visualização da lista, o status do ativo é exibido como **[!UICONTROL Expirado]**.
