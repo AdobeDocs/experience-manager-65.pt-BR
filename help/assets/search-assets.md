@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários no Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -40,7 +40,7 @@ Familiarize-se com a interface de pesquisa e as ações disponíveis.
 
 ![Compreender a interface de resultados de pesquisa dos Ativos do Experience Manager](assets/aem_search_results.png)
 
-*Figura: Compreender a interface de resultados de pesquisa dos Ativos do Experience Manager*
+*Figura: Entenda a interface de resultados de pesquisa dos Ativos do Experience Manager.*
 
 **A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros ou previsões para restringir os resultados da pesquisa. **C.** Exibir arquivos, pastas ou ambos. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. **F.** Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G.** Selecione os resultados de pesquisa carregados. **H.** Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. **Eu.** Feche a pesquisa **J.** Alterne entre a visualização da placa e a visualização da lista.
 
@@ -50,7 +50,7 @@ Você pode descobrir os ativos desejados mais rapidamente a partir da página de
 
 ![Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.](assets/asset_search_results_in_facets_filters.png)
 
-*Figura: Veja o número aproximado de ativos sem filtrar os resultados da pesquisa nas facetas de pesquisa*
+*Figura: Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.*
 
 ## Compreender os resultados e o comportamento da pesquisa {#searchbehavior}
 
@@ -72,7 +72,7 @@ O Experience Manager pode pesquisar vários formatos de arquivo e os filtros de 
 
 ### Resultados com e sem Tags inteligentes aprimoradas {#withsmarttags}
 
-Por padrão, a pesquisa do Experience Manager combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. Os seguintes query de pesquisa retornam os mesmos resultados:
+Por padrão, a pesquisa do Experience Manager combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. The following search queries return the same results:
 
 * `woman running`
 * `woman.running`
@@ -87,7 +87,7 @@ O uso de tags inteligentes adiciona uma `OR` cláusula extra para localizar qual
 
 ### Search suggestions as you type {#searchsuggestions}
 
-Ao digitar palavras-chave com start, o Experience Manager sugere as possíveis palavras-chave ou frases de pesquisa. As sugestões são baseadas nos metadados dos ativos existentes. O Experience Manager indexa todos os campos de metadados para ajudar na pesquisa. Para fornecer sugestões de pesquisa, o sistema usa os valores dos seguintes poucos campos de metadados. Para fornecer sugestões de pesquisa, considere preencher os seguintes campos com as palavras-chave apropriadas:
+Ao digitar palavras-chave com start, o Experience Manager sugere as possíveis palavras-chave ou frases de pesquisa. The suggestions are based on the metadata of the existing assets. O Experience Manager indexa todos os campos de metadados para ajudar na pesquisa. Para fornecer sugestões de pesquisa, o sistema usa os valores dos seguintes poucos campos de metadados. Para fornecer sugestões de pesquisa, considere preencher os seguintes campos com as palavras-chave apropriadas:
 
 * Tags de ativos. (mapeia para `jcr:content/metadata/cq:tags`)
 * Título do ativo. (mapeia para `jcr:content/metadata/dc:title`)
@@ -95,11 +95,11 @@ Ao digitar palavras-chave com start, o Experience Manager sugere as possíveis p
 * Título no repositório JCR. O valor pode ser mapeado para o título do ativo. (mapeia para `jcr:content/jcr:title`)
 * Descrição no repositório JCR. O valor pode ser mapeado para a descrição do ativo. (mapeia para `jcr:content/jcr:description`)
 
-Para receber sugestões para mais de uma palavra-chave de pesquisa, continue digitando todas as palavras-chave sem selecionar qualquer sugestão para uma única palavra-chave.
+To receive suggestions for more than one search keywords, continue to type all keywords without selecting any suggestion for a single keyword.
 
 ![Digite várias palavras-chave em sugestões visualizações que se ajustem a todas](assets/search_suggestionsmanykeywords.gif)
 
-*Figura: Digite várias palavras-chave em sugestões visualizações que se ajustem a todas*
+*Figure: Type multiple keywords to view suggestions that fit them all.*
 
 ### Classificação de pesquisa e aumento {#searchrank}
 
@@ -123,7 +123,7 @@ Você pode usar isso em sua vantagem ao aumentar a classificação de alguns ati
 
 ## Advanced search {#scope}
 
-O Experience Manager fornece vários métodos, como filtros que se aplicam aos ativos pesquisados, para ajudá-lo a localizar os ativos desejados mais rapidamente. Alguns métodos comumente usados estão descritos abaixo. Alguns exemplos [](#samples) ilustrados são compartilhados abaixo.
+O Experience Manager fornece vários métodos, como filtros que se aplicam aos ativos pesquisados, para ajudá-lo a localizar os ativos desejados mais rapidamente. Alguns métodos comumente usados estão descritos abaixo. Some [illustrated examples](#samples) are shared below.
 
 **Procurar ficheiros ou pastas**: Nos resultados da pesquisa, consulte arquivos, pastas ou ambos. No painel **[!UICONTROL Filtros]** , é possível selecionar a opção apropriada. Consulte interface [de](#searchui)pesquisa.
 
@@ -131,7 +131,7 @@ O Experience Manager fornece vários métodos, como filtros que se aplicam aos a
 
 ![Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros](assets/search_folder_select.gif)
 
-*Figura: Limitar os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros*
+*Figura: Limite os resultados da pesquisa a uma pasta adicionando um caminho de pasta no painel Filtros.*
 
 ### Localizar imagens semelhantes {#visualsearch}
 
@@ -139,7 +139,7 @@ Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usu
 
 ![Encontre imagens semelhantes usando a opção na visualização do cartão](assets/search_find_similar.png)
 
-*Figura: Encontre imagens semelhantes usando a opção na visualização do cartão*
+*Figura: Encontre imagens semelhantes usando a opção na visualização do cartão.*
 
 ### Imagens do Adobe Stock {#adobestock}
 
@@ -174,7 +174,7 @@ Você pode pesquisar ativos com base nos valores exatos de campos de metadados e
 | Tags | tags:&quot;Localização E Viagem&quot; |
 | Tipo | type:&quot;image\png&quot; |
 | Largura da imagem | largura:limite inferior..upperbound |
-| Altura da imagem | height:limite inferior..upperbound |
+| Altura da imagem | height:lowerbound..upperbound |
 | Person | pessoa:John |
 
 O caminho, limite, tamanho e ordem das propriedades não podem ser OUed com nenhuma outra propriedade.
@@ -189,15 +189,15 @@ Estes são alguns exemplos de formatos de pesquisa para query complexos:
 * Para exibir ativos com valores de propriedade começando com uma string específica (por exemplo: o título é Scott Reynolds): `title:Scott*`
 * Para exibir ativos com valores de propriedade que terminam com uma string específica (por exemplo: o título é Scott Reynolds): `title:*Reynolds`
 * Para exibir ativos com um valor de propriedade que contenha uma string específica (por exemplo: título = Sala de reuniões de Basileia): `title:*Meeting*`
-* Para exibir ativos que contêm uma determinada string e têm um valor de propriedade específico (por exemplo: procure a string Adobe em ativos com título=João da Silva): `*Adobe* title:"John Doe"`
+* To display assets that contain a particular string and have a specific property value (for example: search for string Adobe in assets having title=John Doe): `*Adobe* title:"John Doe"`
 
-## Pesquisar ativos de outras ofertas ou interfaces do Experience Manager {#beyondomnisearch}
+## Search assets from other Experience Manager offerings or interfaces {#beyondomnisearch}
 
-O Adobe Experience Manager conecta o repositório DAM a várias outras soluções do Experience Manager para fornecer acesso mais rápido aos ativos digitais e simplificar os workflows criativos. Qualquer start de descoberta de ativos com navegação ou pesquisa. O comportamento de pesquisa permanece basicamente o mesmo em várias superfícies e soluções. Alguns métodos de pesquisa mudam à medida que a audiência do público alvo, os casos de uso e a interface do usuário variam nas soluções do Experience Manager. Os métodos específicos estão documentados para as soluções individuais nos links abaixo. As dicas e comportamentos universalmente aplicáveis estão documentados neste artigo.
+O Adobe Experience Manager conecta o repositório DAM a várias outras soluções do Experience Manager para fornecer acesso mais rápido aos ativos digitais e simplificar os workflows criativos. Any asset discovery starts with browse or search. The search behavior largely remains the same across the various surfaces and solutions. Some search methods change as the target audience, the use cases, and the user interface vary across the Experience Manager solutions. The specific methods are documented for the individual solutions at the links below. The universally applicable tips and behaviors are documented in this article.
 
-### Pesquisar ativos no painel Adobe Asset Link {#aal}
+### Search assets from Adobe Asset Link panel {#aal}
 
-Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado nos ativos Experience Manager, sem sair dos aplicativos compatíveis da Adobe Creative Cloud. Os profissionais de criação podem navegar, pesquisar, fazer check-out e fazer check-in de ativos sem problemas usando o painel no aplicativo nos aplicativos da Creative Cloud: Photoshop, Illustrator e InDesign. O Link de ativo também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição da pesquisa visual são capacitados pelos algoritmos de aprendizado de máquina do Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
+Using Adobe Asset Link, the creative professionals can now access content stored in Experience Manager Assets, without leaving the supported Adobe Creative Cloud apps. Os profissionais de criação podem navegar, pesquisar, fazer check-out e fazer check-in de ativos sem problemas usando o painel no aplicativo nos aplicativos da Creative Cloud: Photoshop, Illustrator e InDesign. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei&#39;s machine learning algorithms and help users find aesthetically similar images. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
 
 ### Pesquisar ativos no aplicativo de desktop do Experience Manager {#desktopapp}
 
@@ -207,46 +207,46 @@ Os profissionais de criação usam o aplicativo de desktop para tornar os ativos
 
 Usuários e comerciantes de linha de negócios usam o Brand Portal para compartilhar de forma eficiente e segura os ativos digitais aprovados com suas equipes internas, parceiros e revendedores estendidos. See [search assets on Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### Pesquisar imagens do Adobe Stock {#adobestock-1}
+### Search Adobe Stock images {#adobestock-1}
 
-Na interface do usuário do Experience Manager, os usuários podem pesquisar ativos do Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch. Você também pode usar o painel **[!UICONTROL Filtros]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock. Consulte [gerenciar imagens do Adobe Stock no Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+From within the Experience Manager user interface, users can search Adobe Stock assets and license the required assets. Adicione `Location: Adobe Stock` no campo Omnisearch. You can also use **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage Adobe Stock images in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Pesquisar ativos do Dynamic Media {#dynamicmedia}
+### Search Dynamic Media assets {#dynamicmedia}
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação. Ao criar páginas da Web, os autores podem pesquisar por conjuntos no Localizador de conteúdo. Há um filtro para conjuntos disponível em um menu pop-up.
 
-### Pesquisar ativos no Localizador de conteúdo ao criar páginas da Web {#contentfinder}
+### Search assets in Content Finder when authoring web pages {#contentfinder}
 
-Os autores podem usar o Localizador de conteúdo para pesquisar no repositório do DAM os ativos relevantes e usar os ativos nas páginas da Web que eles criam. Os autores também podem usar a funcionalidade Ativos conectados para pesquisar ativos que estão disponíveis em uma implantação remota do Experience Manager. Os autores podem usar esses ativos em páginas da Web em uma implantação local do Experience Manager. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
+Authors can use Content Finder to search the DAM repository for the relevant assets and use the assets in the web pages they create. Authors can also use the Connected Assets functionality to search for assets that are available on a remote Experience Manager deployment. Authors can then use these assets in web pages on a local Experience Manager deployment. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
-### Pesquisar coleções {#collections}
+### Search collections {#collections}
 
-O recurso de pesquisa do Experience Manager oferece suporte à pesquisa de coleções e à pesquisa de ativos em uma coleção. Consulte Coleções [de pesquisa](/help/assets/managing-collections-touch-ui.md).
+Experience Manager search capability supports searching for collections and searching for assets within a collection. Consulte Coleções [de pesquisa](/help/assets/managing-collections-touch-ui.md).
 
 ## Seletor de ativos {#assetselector}
 
-O Seletor de ativos permite que você pesquise, filtre e navegue pelos ativos DAM de uma maneira especial. O Seletor de ativos está disponível em `https://[aem-server]:[port]/aem/assetpicker.html`. Você pode buscar os metadados dos ativos selecionados usando essa funcionalidade. Você pode iniciá-lo com parâmetros de solicitação suportados, como tipo de ativo (imagem, vídeo, texto) e modo de seleção (seleções únicas ou múltiplas). Esses parâmetros definem o contexto do Seletor de ativos para uma instância de pesquisa específica e permanecem intactos durante toda a seleção.
+O Seletor de ativos permite que você pesquise, filtre e navegue pelos ativos DAM de uma maneira especial. Asset Picker is available at `https://[aem-server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using this functionality. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). These parameters set the context of the asset Picker for a particular search instance and remains intact throughout the selection.
 
-O Seletor de ativos usa a mensagem HTML5 `Window.postMessage` para enviar dados do ativo selecionado para o recipient. O Seletor de ativos funciona somente no modo de navegação e funciona somente com a página de resultados do Omnisearch.
+The asset Picker uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. Asset Picker works only in the browse mode and works only with the Omnisearch result page.
 
-Você pode passar os seguintes parâmetros de solicitação em um URL para iniciar o Seletor de ativos em um contexto específico:
+You can pass the following request parameters in a URL to launch the asset Picker in a particular context:
 
 | Nome | Valores | Exemplo | Propósito |
 |---|---|---|---|
-| sufixo do recurso (B) | Caminho da pasta como o sufixo do recurso no URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Para iniciar o Seletor de ativos com uma pasta específica selecionada, por exemplo, com a pasta `/content/dam/we-retail/en/activities` selecionada, o URL deve ter o formato: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Se você precisar que uma pasta específica seja selecionada quando o seletor de ativos for iniciado, passe-o como um sufixo de recurso. |
-| modo | único, múltiplo | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | No modo múltiplo, você pode selecionar vários ativos simultaneamente usando o seletor de ativos. |
-| mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) de um ativo (curinga também compatível) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png)</li></ul> | Use-o para filtrar ativos com base em tipos MIME |
-| caixa de diálogo | verdadeiro, falso | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use esses parâmetros para abrir o seletor de ativos como Caixa de diálogo Granite. Essa opção só é aplicável quando você inicia o seletor de ativos por meio do campo Caminho de Granite e o configura como URL pickerSrc. |
-| tipo de ativo (S) | imagens, documentos, multimídia, arquivos | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Use essa opção para filtrar os tipos de ativos com base no valor passado. |
+| resource suffix (B) | Caminho da pasta como o sufixo do recurso no URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | To launch the asset Picker with a particular folder selected, for example with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Se você precisar que uma pasta específica seja selecionada quando o seletor de ativos for iniciado, passe-o como um sufixo de recurso. |
+| modo | single, multiple | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In multiple mode, you can select several assets simultaneously using the asset selector. |
+| mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png)</li></ul> | Use-o para filtrar ativos com base em tipos MIME |
+| caixa de diálogo | verdadeiro, falso | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use these parameters to open the asset selector as Granite Dialog. This option is only applicable when you launch the asset selector through Granite Path Field, and configure it as pickerSrc URL. |
+| assettype (S) | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Use essa opção para filtrar os tipos de ativos com base no valor passado. |
 | root | &lt;caminho_da_pasta> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite que você selecione apenas ativos secundários (diretos/indiretos) na pasta raiz. |
 
 Para acessar a interface do Seletor de ativos, acesse `https://[aem_server]:[port]/aem/assetpicker`. Navegue até a pasta desejada e selecione um ou mais ativos. Como alternativa, procure o ativo desejado na caixa Omnisearch, aplique o filtro conforme necessário e selecione-o.
 
 ![Procurar e selecionar ativo no seletor de ativos](assets/assetpicker.png)
 
-*Figura: Procurar e selecionar ativo no seletor de ativos*
+*Figura: Procure e selecione o ativo no seletor de ativos.*
 
-## Limitações        {#limitations}
+## Limitações         {#limitations}
 
 O recurso de pesquisa nos ativos Experience Manager tem as seguintes limitações:
 
@@ -256,23 +256,23 @@ O recurso de pesquisa nos ativos Experience Manager tem as seguintes limitaçõe
 * Se você pressionar return sem digitar nada na barra Omnisearch, o Experience Manager retornará uma lista de apenas arquivos e não pastas. Se você pesquisar especificamente por pastas sem usar uma palavra-chave, o Experience Manager não retornará nenhum resultado.
 * Use a opção **[!UICONTROL Selecionar tudo]** no canto superior direito da página de pesquisa para selecionar os ativos pesquisados. O Experience Manager exibe inicialmente 100 ativos na visualização do cartão e 200 ativos na visualização da lista. Mais ativos são carregados à medida que você percorre os resultados da pesquisa. Você pode selecionar mais ativos do que os ativos carregados. A contagem dos ativos selecionados é exibida no canto superior direito da página de resultados da pesquisa. Você pode operar na seleção, por exemplo, baixar os ativos selecionados, atualizar as propriedades de metadados em massa para os ativos selecionados ou adicionar os ativos selecionados a uma Coleção. Quando mais ativos são selecionados do que exibidos, uma ação é aplicada em todos os ativos selecionados ou uma caixa de diálogo exibe o número de ativos nos quais ela é aplicada. Para aplicar uma ação aos ativos que não foram carregados, verifique se todos os ativos estão selecionados explicitamente.
 
-Pesquisa visual ou pesquisa de semelhança tem as seguintes limitações:
+Visual search or similarity search has the following limitations:
 
-* A pesquisa visual funciona melhor com repositórios maiores. Embora não haja um número mínimo de imagens necessário para bons resultados, a qualidade das correspondências com algumas imagens pode não ser tão boa quanto as correspondências de um repositório grande.
-* Não é possível alterar o modelo ou treinar o Experience Manager para encontrar imagens semelhantes. Por exemplo, adicionar ou remover tags inteligentes a alguns ativos não altera o modelo. Os ativos são excluídos dos resultados de pesquisa visualmente semelhantes.
+* Visual search works best with larger repositories. While there is no minimum number of images required for good results, the quality of matches with a few images may not be as good as the matches from a large repository.
+* You cannot change the model or train Experience Manager to find similar images. Por exemplo, adicionar ou remover tags inteligentes a alguns ativos não altera o modelo. The assets do get excluded from the visually similar search results.
 
-A funcionalidade de pesquisa pode ter limitações de desempenho nos seguintes cenários:
+Search functionality may have performance limitations in the following scenarios:
 
 * A visualização de cartão tem um tempo de carregamento mais rápido do que a visualização de lista para exibir os resultados da pesquisa.
 
-## Dicas de pesquisa {#tips}
+## Search tips {#tips}
 
 * Ao monitorar o status da revisão de ativos, use a opção apropriada para descobrir quais ativos estão aprovados ou quais ativos estão pendentes de aprovação.
-* Use o predicado Insights para pesquisar ativos suportados com base em suas estatísticas de uso obtidas de vários aplicativos Creative. Os dados de uso são agrupados em Pontuação de uso, Impressões, Cliques e canais de mídia nos quais os ativos aparecem categorias.
+* Use the Insights predicate to search for supported assets based on their usage statistics obtained from various Creative apps. Os dados de uso são agrupados em Pontuação de uso, Impressões, Cliques e canais de mídia nos quais os ativos aparecem categorias.
 * Use a caixa de seleção **[!UICONTROL Selecionar tudo]** para selecionar os ativos pesquisados. O Experience Manager exibe inicialmente 100 ativos na visualização do cartão e 200 ativos na visualização da lista. Mais ativos são carregados à medida que você percorre os resultados da pesquisa. Você pode selecionar mais ativos do que os ativos carregados. A contagem dos ativos selecionados é exibida no canto superior direito da página de resultados da pesquisa. Você pode operar na seleção, por exemplo, baixar os ativos selecionados, atualizar as propriedades de metadados em massa para os ativos selecionados ou adicionar os ativos selecionados a uma Coleção. Quando mais ativos são selecionados do que exibidos, uma ação é aplicada em todos os ativos selecionados ou uma caixa de diálogo exibe o número de ativos nos quais ela é aplicada. Para aplicar uma ação aos ativos que não foram carregados, verifique se todos os ativos estão selecionados explicitamente.
 * Para pesquisar ativos que não contenham os metadados obrigatórios, consulte os metadados [](#mandatorymetadata)obrigatórios.
-* A pesquisa usa todos os campos de metadados. Uma pesquisa genérica, como a pesquisa por 12, geralmente retorna muitos resultados. Para obter melhores resultados, use aspas de duplo (não simples) ou certifique-se de que o número seja contíguo a uma palavra sem um caractere especial (por exemplo, *shoe12*).
-* A pesquisa de texto completo oferece suporte a operadores como -, ^ e assim por diante. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplos. Por exemplo, use &quot;Notebook - Beauty&quot; em vez de Notebook - Beauty.
+* Search uses all metadata fields. A generic search, such as searching for 12, usually returns many results. Para obter melhores resultados, use aspas de duplo (não simples) ou certifique-se de que o número seja contíguo a uma palavra sem um caractere especial (por exemplo, *shoe12*).
+* A pesquisa de texto completo oferece suporte a operadores como -, ^ e assim por diante. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplos. For example, use &quot;Notebook - Beauty&quot; instead of Notebook - Beauty.
 * Se os resultados da pesquisa forem demais, limite o [escopo da pesquisa](#scope) para zero nos ativos desejados. Funciona melhor quando você tem alguma ideia de como procurar melhor os ativos desejados, por exemplo, tipo de arquivo específico, local específico, metadados específicos e assim por diante.
 
 * **Marcação**: As tags ajudam a categorizar ativos que podem ser pesquisados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. O Experience Manager oferta métodos para marcar automaticamente ativos usando os serviços inteligentes e artificiais do Adobe Sensei que continuam melhorando a identificação dos ativos com o uso e o treinamento. Quando você pesquisa ativos, as tags inteligentes são fatoradas se o recurso estiver ativado em sua conta. Funciona juntamente com a funcionalidade de pesquisa incorporada. Consulte Comportamento [da](#searchbehavior)pesquisa. Para otimizar a ordem na qual os resultados da pesquisa são exibidos, é possível [aumentar a classificação](#searchrank) de pesquisa de alguns ativos selecionados.
@@ -285,7 +285,7 @@ Use aspas de duplo em torno de palavras-chave para localizar ativos que contenha
 
 ![Comportamento de pesquisa com e sem aspas](assets/search_with_quotes.gif)
 
-*Figura: Comportamento de pesquisa com e sem aspas*
+*Figura: Comportamento de pesquisa com e sem aspas.*
 
 **Pesquisar com o curinga** de asterisco: Para ampliar a pesquisa, use um asterisco antes ou depois da palavra de pesquisa para corresponder a qualquer número de caracteres. Por exemplo, a pesquisa por executar sem um asterisco não retorna ativos que contenham qualquer variação da palavra (incluindo nos metadados). Um asterisco substitui qualquer número de caracteres. Por exemplo,
 
@@ -296,7 +296,7 @@ Use aspas de duplo em torno de palavras-chave para localizar ativos que contenha
 
 ![Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo](assets/search_with_asterisk_run.gif)
 
-*Figura: Ilustrando o uso do curinga de asterisco na pesquisa de Ativos usando um exemplo*
+*Figura: Ilustrando o uso de um asterisco curinga na pesquisa Ativos usando um exemplo.*
 
 **Pesquisa com curinga de ponto de interrogação**: Para ampliar a pesquisa, use um ou mais &#39;?&#39; caracteres para corresponder ao número exato de caracteres. Por exemplo, na ilustração a seguir,
 
@@ -308,13 +308,13 @@ Use aspas de duplo em torno de palavras-chave para localizar ativos que contenha
 
 ![Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo](assets/search_with_questionmark_run.gif)
 
-*Figura: Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo*
+*Figura: Ilustrando o uso do caractere curinga de ponto de interrogação na pesquisa de Ativos usando um exemplo.*
 
 **Excluir uma palavra-chave**: Use o traço para procurar ativos que não contêm uma palavra-chave. Por exemplo, `running -shoe` o query retorna ativos que contêm `running`, mas não `shoe`. Da mesma forma, `camp -night` o query retorna ativos que contêm `camp` , mas não `night`. Observe que `camp-night` o query retorna ativos que contêm `camp` e `night`.
 
 ![Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída](assets/search_dash_exclude_keyword.gif)
 
-*Figura: Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída*
+*Figura: Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída.*
 
 ## tarefas de configuração e administração relacionadas à funcionalidade de pesquisa {#configadmin}
 
@@ -415,7 +415,7 @@ Para verificar os comentários em um ativo ou histórico de versão de um ativo,
 
 ![Classificar entradas de linha do tempo para um ativo de pesquisa](assets/sort_timeline_search_results.gif)
 
-*Figura: Classificar entradas de linha do tempo para um ativo de pesquisa*
+*Figura: Classificar entradas de linha do tempo para um ativo de pesquisa.*
 
 ### Baixar ativos pesquisados {#download}
 
