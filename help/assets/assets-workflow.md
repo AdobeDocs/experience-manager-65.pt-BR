@@ -3,7 +3,7 @@ title: Processar ativos para realizar processos de negócios, realizar auditoria
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -24,7 +24,7 @@ Para ver os vários modelos de fluxo de trabalho disponíveis por padrão, consu
 
 ![Alguns dos fluxos de trabalho padrão](assets/aem-default-workflows.png)
 
-*Figura: Alguns dos fluxos de trabalho padrão disponíveis em[!DNL Experience Manager]*
+*Figura: Alguns dos workflows padrão disponíveis em[!DNL Experience Manager].*
 
 ## Aplicar workflows para processar ativos {#applying-workflows-to-assets}
 
