@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -375,13 +375,13 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
    ![Seletor de data e hora ou use as teclas do teclado no campo Hora ativa para adicionar data e hora para a ativação do ativo](assets/schedule-activation.png)
 
-   *Figura: Agendar ativação de ativos*
+   *Figura: Agende a ativação de ativos.*
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo Tempo de **[!UICONTROL desativação]** . A data de desativação deve ser posterior à data de ativação de um ativo. Depois do tempo de [!UICONTROL desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web Ativos ou por meio da API HTTP.
 
    ![Seletor de data e hora ou use teclas do teclado no campo Hora de desligar para adicionar data e hora para a desativação do ativo](assets/schedule-deactivation.png)
 
-   *Figura: Agendar desativação de ativos*
+   *Figura: Programe a desativação de ativos.*
 
 1. No campo **[!UICONTROL Tags]** , selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione Enter. A nova tag é salva no AEM. O YouTube requer tags para publicação. Consulte [publicar vídeos no YouTube](video.md#publishing-videos-to-youtube).
 
@@ -718,7 +718,7 @@ A linha do tempo permite que você visualização vários eventos para um item s
 
 ![Classificar entradas de linha do tempo de um ativo](assets/sort_timeline.gif)
 
-*Figura: Classificar entradas de linha do tempo de um ativo*
+*Figura: Classificar entradas de linha do tempo de um ativo.*
 
 >[!NOTE]
 >
