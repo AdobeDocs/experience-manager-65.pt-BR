@@ -10,18 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
 # Tutoriais {#tutorials}
 
-Estes são exemplos para ajudar a aprender e trabalhar com o AEM 6.1 Communities [social component framework (SCF)](scf.md).
+Estes são exemplos para ajudar a aprender e trabalhar com a estrutura de componentes [sociais (SCF)](scf.md)do AEM 6.1 Communities.
 
 ## Personalização do lado do cliente {#client-side-customization}
 
-Consulte também personalização [do cliente](client-customize.md)SCF.
+Consulte também:
+
+* [Personalização do cliente SCF](client-customize.md)
 
 * [Guia de componentes da comunidade](components-guide.md)
 
@@ -45,7 +47,7 @@ O código de amostra está disponível no repositório GitHub da [Adobe Marketin
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-   O ToDo MVC demonstra como desenvolver um componente SCF+SRP do zero
+   O ToDo MVC demonstra como desenvolver um componente SCF+SRP do zero.
 
 * [Introdução ao AEM Communities](getting-started.md)
 
@@ -57,13 +59,13 @@ O código de amostra está disponível no repositório GitHub da [Adobe Marketin
 
 ## Usuários de demonstração {#demo-users}
 
-O pacote de amostras do Geometrixx inclui usuários de demonstração. Geralmente há uma diferença na experiência entre ser um visitante (não conectado) ou um membro (conectado) e, desde que os pacotes de amostras do Geometrixx permaneçam instalados, você pode usar esses usuários para simular um estado conectado ao explorar o guia [Componentes da](components-guide.md)comunidade.
+O pacote de amostras do Geometrixx inclui usuários de demonstração. Muitas vezes há uma diferença na experiência entre ser um visitante (não conectado) ou um membro (conectado) e, desde que os pacotes de amostras do Geometrixx permaneçam instalados, você pode usar esses usuários para simular um estado conectado ao explorar o guia [Componentes da](components-guide.md)comunidade.
 
-Para obter uma lista completa dos usuários da demonstração, navegue usando o Painel para **[!UICONTROL Ferramentas > Operações > Segurança > Usuários]**. Ou use o console [de](http://localhost:4502/useradmin) segurança da interface clássica para gerenciar usuários e grupos.
+Para obter uma lista completa dos usuários da demonstração, navegue usando o painel para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança > Usuários]**. Ou use o console [de](http://localhost:4502/useradmin) segurança da interface clássica para gerenciar usuários e grupos.
 
 Se um site da [comunidade tiver sido criado](getting-started.md), será possível atribuir usuários de demonstração aos grupos [de usuários da](users.md)comunidade.
 
-***id *do usuário /*senha:***
+***id *do usuário /*senha***:
 
 * aaron.mcdonald@mailinator.com / senha
 * emily.andrews@mailinator.com / senha
