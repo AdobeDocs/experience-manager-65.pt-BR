@@ -1,16 +1,16 @@
 ---
-title: Migrar ativos para os ativos Adobe Experience Manager em massa
-description: Descreve como trazer ativos para o AEM, aplicar metadados, gerar representações e ativá-los para publicar instâncias.
+title: Migre ativos para [!DNL Adobe Experience Manager Assets] em massa.
+description: Descreve como trazer ativos para o [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Como migrar ativos em massa {#assets-migration-guide}
 
-Ao migrar ativos para o AEM, há várias etapas a serem consideradas. A extração de ativos e metadados para fora de sua casa atual está fora do escopo deste documento, pois varia muito entre implementações, mas este documento descreve como trazer esses ativos para o AEM, aplicar seus metadados, gerar representações e ativá-los para publicar instâncias.
+Ao migrar ativos para [!DNL Adobe Experience Manager], há várias etapas a serem consideradas. A extração de ativos e metadados para fora de sua casa atual está fora do escopo deste documento, pois varia muito entre implementações, mas este documento descreve como trazer esses ativos para dentro, aplicar seus metadados, gerar representações e ativá-los para publicar instâncias. [!DNL Experience Manager]
 
 ## Pré-requisitos {#prerequisites}
 
@@ -18,7 +18,7 @@ Antes de executar qualquer uma das etapas desta metodologia, reveja e implemente
 
 >[!NOTE]
 >
->As seguintes ferramentas de migração de ativos não fazem parte do AEM e não são suportadas pela Adobe:
+>As seguintes ferramentas de migração de ativos não fazem parte da Adobe e não são suportadas por ela [!DNL Experience Manager] :
 >
 >* Criador de tags de ferramentas AEM ACS
 >* Importador de ativos CSV das ferramentas AEM ACS
@@ -29,9 +29,9 @@ Antes de executar qualquer uma das etapas desta metodologia, reveja e implemente
 >
 Este software é de código aberto e é coberto pela [Licença Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Para fazer uma pergunta ou relatar um problema, visite os respectivos [Problemas do GitHub para as ferramentas do ACS AEM](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e os [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migrar para o AEM {#migrating-to-aem}
+## Migrar para [!DNL Experience Manager]{#migrating-to-aem}
 
-A migração de ativos para o AEM requer várias etapas e deve ser exibida como um processo em fases. As fases da migração são as seguintes:
+A migração de ativos para [!DNL Experience Manager] requer várias etapas e deve ser exibida como um processo em fases. As fases da migração são as seguintes:
 
 1. Desative workflows.
 1. Carregar tags.
@@ -48,7 +48,7 @@ Antes de iniciar a migração, desative seus iniciadores para o fluxo de trabalh
 
 ### Carregar tags {#loading-tags}
 
-Talvez você já tenha uma taxonomia de tag aplicada às suas imagens. Embora ferramentas como o Importador de ativos CSV e o suporte do Experience Manager para perfis de metadados possam automatizar o processo de aplicação de tags a ativos, as tags precisam ser carregadas no sistema. O recurso [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite preencher tags usando uma planilha do Microsoft Excel carregada no sistema.
+Talvez você já tenha uma taxonomia de tag aplicada às suas imagens. Embora ferramentas como o Importador de ativos CSV e [!DNL Experience Manager] suporte para perfis de metadados possam automatizar o processo de aplicação de tags a ativos, as tags precisam ser carregadas no sistema. O recurso [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite preencher tags usando uma planilha do Microsoft Excel carregada no sistema.
 
 ### Ativos de assimilação {#ingesting-assets}
 
@@ -58,7 +58,7 @@ Há duas abordagens para carregar os ativos no sistema: uma abordagem baseada em
 
 #### Enviar por HTTP {#pushing-through-http}
 
-A equipe de Serviços gerenciados da Adobe usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro em uma instância do AEM. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
+A equipe de Serviços gerenciados da Adobe usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro em uma [!DNL Experience Manager] instância. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
 
 Há duas desvantagens principais ao usar a abordagem de passar por https:
 
@@ -75,12 +75,12 @@ Como os ativos não precisam ser transmitidos através de uma rede, o desempenho
 
 ### Processar execuções {#processing-renditions}
 
-Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM para extrair metadados e gerar representações. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM para atender às suas necessidades. O fluxo de trabalho predefinido contém várias etapas que podem não ser necessárias para você, como a geração Scene7 PTIFF ou a integração do servidor InDesign.
+Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM para extrair metadados e gerar representações. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM para atender às suas necessidades. O fluxo de trabalho predefinido contém várias etapas que podem não ser necessárias para você, como geração ou integração do Scene7 PTIFF [!DNL InDesign Server] .
 
 Depois de configurar o fluxo de trabalho de acordo com suas necessidades, você tem duas opções para executá-lo:
 
 1. A abordagem mais simples é o Gerenciador [de Fluxo de Trabalho em Massa da](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html)ACS Commons. Essa ferramenta permite que você execute um query e processe os resultados do query por meio de um fluxo de trabalho. Há opções para definir tamanhos de lote também.
-1. Use o [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) em conjunto com [Fluxos de trabalho sintéticos](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Embora essa abordagem seja muito mais abrangente, ela permite remover a sobrecarga do mecanismo de fluxo de trabalho do AEM e, ao mesmo tempo, otimizar o uso dos recursos do servidor. Além disso, o Fast Action Manager aumenta ainda mais o desempenho, monitorando dinamicamente os recursos do servidor e diminuindo a carga colocada no sistema. Os exemplos de scripts foram fornecidos na página de recursos ACS Commons.
+1. Use o [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) em conjunto com [Fluxos de trabalho sintéticos](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). While this approach is much more involved, it lets you remove the overhead of the [!DNL Experience Manager] workflow engine while optimizing the use of server resources. Além disso, o Fast Action Manager aumenta ainda mais o desempenho, monitorando dinamicamente os recursos do servidor e diminuindo a carga colocada no sistema. Os exemplos de scripts foram fornecidos na página de recursos ACS Commons.
 
 ### Ativar ativos {#activating-assets}
 
@@ -88,7 +88,7 @@ Para implantações com uma camada de publicação, é necessário ativar os ati
 
 Para contornar esse problema, você pode usar o [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) para gerenciar a replicação de ativos. Isso funciona sem usar as filas Sling, diminuindo a sobrecarga e, ao mesmo tempo, limitando a carga de trabalho para impedir que o servidor fique sobrecarregado. Um exemplo de uso do FAM para gerenciar a replicação é mostrado na página de documentação do recurso.
 
-Outras opções para obter ativos para o farm de publicação incluem o uso de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), que são fornecidos como ferramentas, como parte do Jackrabbit. Outra opção é usar uma ferramenta de software livre para a infraestrutura do AEM chamada [Grabbit](https://github.com/TWCable/grabbit), que alega ter desempenho mais rápido do que o vlt.
+Outras opções para obter ativos para o farm de publicação incluem o uso de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), que são fornecidos como ferramentas, como parte do Jackrabbit. Another option is to use an open-sourced tool for your [!DNL Experience Manager] infrastructure called [Grabbit](https://github.com/TWCable/grabbit), which claims to have faster performance than vlt.
 
 Para qualquer uma dessas abordagens, a advertência é que os ativos na instância do autor não mostram que foram ativados. Para manipular o sinalizador desses ativos com o status de ativação correto, também é necessário executar um script para marcar os ativos como ativados.
 
@@ -112,22 +112,22 @@ Depois que os ativos tiverem sido ativados, você poderá clonar sua instância 
 
 Após a conclusão da migração, os iniciadores dos workflows de ativos [!UICONTROL de atualização do] DAM devem ser reativados para suportar a geração de execução e a extração de metadados para uso diário contínuo do sistema.
 
-## Migrar entre implantações do AEM {#migrating-between-aem-instances}
+## Migrar entre [!DNL Experience Manager] implantações {#migrating-between-aem-instances}
 
-Embora não seja tão comum, às vezes é necessário migrar grandes quantidades de dados de uma instância do AEM para outra; por exemplo, ao executar uma atualização do AEM, atualize seu hardware ou migre para um novo datacenter, como com uma migração do AMS.
+Embora não seja tão comum, às vezes é necessário migrar grandes quantidades de dados de uma [!DNL Experience Manager] instância para outra; por exemplo, ao executar uma [!DNL Experience Manager] atualização, atualize seu hardware ou migre para um novo datacenter, como com uma migração do AMS.
 
-Nesse caso, seus ativos já estão preenchidos com metadados e as execuções já são geradas. Você pode simplesmente se concentrar em mover ativos de uma instância para outra. Ao migrar entre instâncias do AEM, execute as seguintes etapas:
+Nesse caso, seus ativos já estão preenchidos com metadados e as execuções já são geradas. Você pode simplesmente se concentrar em mover ativos de uma instância para outra. Ao migrar entre [!DNL Experience Manager] instâncias, execute as seguintes etapas:
 
 1. Desativar workflows: Como você está migrando renderizações juntamente com nossos ativos, deseja desativar os iniciadores de fluxo de trabalho para o fluxo de trabalho de Atualização de ativos [!UICONTROL do] DAM.
 
-1. Migrar tags: Como as tags já foram carregadas na instância do AEM de origem, é possível criá-las em um pacote de conteúdo e instalá-las na instância do público alvo.
+1. Migrar tags: Como as tags já foram carregadas na [!DNL Experience Manager] instância de origem, é possível criá-las em um pacote de conteúdo e instalá-las na instância do público alvo.
 
-1. Migrar ativos: Há duas ferramentas recomendadas para mover ativos de uma instância do AEM para outra:
+1. Migrar ativos: Há duas ferramentas recomendadas para mover ativos de uma [!DNL Experience Manager] instância para outra:
 
    * **Cofre Remote Copy** ou vlt rcp, permite que você use vlt em uma rede. Você pode especificar um diretório de origem e destino e vlt baixa todos os dados do repositório de uma instância e os carrega na outra. O Vlt rcp está documentado em [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **O Grabbit** é uma ferramenta de sincronização de conteúdo de código aberto desenvolvida pelo Time Warner Cable para sua implementação do AEM. Como ele usa fluxos contínuos de dados, em comparação ao vlt rcp, ele tem uma latência mais baixa e exige uma melhoria de velocidade de duas a dez vezes mais rápida que o vlt rcp. O Grabbit também oferece suporte apenas à sincronização do conteúdo delta, o que permite sincronizar as alterações após a conclusão de uma passagem de migração inicial.
+   * **O Grabbit** é uma ferramenta de sincronização de conteúdo de código aberto desenvolvida pela Time Warner Cable para sua [!DNL Experience Manager] implementação. Como ele usa fluxos contínuos de dados, em comparação ao vlt rcp, ele tem uma latência mais baixa e exige uma melhoria de velocidade de duas a dez vezes mais rápida que o vlt rcp. O Grabbit também oferece suporte apenas à sincronização do conteúdo delta, o que permite sincronizar as alterações após a conclusão de uma passagem de migração inicial.
 
-1. Ativar ativos: Siga as instruções para [ativar ativos](#activating-assets) documentados para a migração inicial para o AEM.
+1. Ativar ativos: Siga as instruções para [ativar ativos](#activating-assets) documentados para a migração inicial para [!DNL Experience Manager].
 
 1. Publicação de clone: Como ocorre com uma nova migração, carregar uma única instância de publicação e clonar é mais eficiente do que ativar o conteúdo em ambos os nós. Consulte [Clonando publicação.](#cloning-publish)
 
