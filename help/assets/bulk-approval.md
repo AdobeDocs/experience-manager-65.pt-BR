@@ -3,7 +3,7 @@ title: Revisar ativos e coleções de pastas
 description: Configure workflows de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para obter feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -103,8 +103,8 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figura: visualização da placa*
+   *Figura: visualização da placa.*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figura: visualização Lista*
+   *Figura: visualização da Lista.*
