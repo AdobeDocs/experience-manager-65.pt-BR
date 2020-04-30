@@ -3,7 +3,7 @@ title: Esquemas de metadados
 description: O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -26,7 +26,7 @@ Você pode usar o editor de Formulários de Schemas de Metadados para modificar 
 
    ![Guia Básica de Propriedades do ativo, na qual o tipo de ativo não pode ser alterado](assets/asset-properties-basic-tab.png)
 
-   *Figura: Guia Básico em Propriedades do ativo*
+   *Figura: Guia Básico em Propriedades do ativo.*
 
    Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Editar formulários](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de Schema de metadados para obter mais informações. Se você modificar o schema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um schema jpeg em `default/image` modifica somente o layout de metadados (propriedades do ativo) para ativos com tipo MIME `image/jpeg`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
 
@@ -86,9 +86,9 @@ Você pode mapear/configurar esses itens de formulário em um campo dentro de um
 
    ![Editor de Schemas de metadados para personalizar a página Propriedades do ativo](assets/metadata-schema-editor.png)
 
-   *Figura: Guia Básica do editor de schemas de metadados*
+   *Figura: Guia[!UICONTROL Básico]do editor de Schemas[!UICONTROL de]Metadados.*
 
-1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **Configurações** .
+1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Configurações]** .
 
 ### Componentes na guia Criar formulário {#components-within-the-build-form-tab}
 
@@ -127,29 +127,21 @@ Estes são os valores válidos para esta propriedade:
 
 Para garantir que o componente seja exibido corretamente no formulário de schema de metadados, o caminho da propriedade não deve incluir espaços.
 
-**Espaço reservado**: Use essa propriedade para especificar o texto relevante do espaço reservado para a propriedade metadata.
-
-**Obrigatório**: Use essa propriedade para marcar uma propriedade de metadados como obrigatória na página de propriedades.
-
-**Desabilitar edição**: Use essa propriedade para tornar uma propriedade de metadados não editável na página de propriedades.
-
-**Mostrar campo vazio em somente** leitura: Marque essa propriedade para exibir uma propriedade de metadados na página de propriedades, mesmo que ela não tenha valor. Por padrão, quando uma propriedade de metadados não tem valor, ela não é listada na página de propriedades.
-
-**Mostrar lista ordenada**: Use essa propriedade para exibir uma lista ordenada de opções
-
-**Opções**: Use essa propriedade para especificar opções em uma lista
-
-**Descrição** : Use essa propriedade para adicionar uma breve descrição para o componente de metadados.
-
-**Classe**: Classe de objeto à qual a propriedade está associada.
-
-**Excluir**: Clique nesse ícone para excluir um componente do formulário de schema.
+* **Espaço reservado**: Use essa propriedade para especificar o texto relevante do espaço reservado para a propriedade metadata.
+* **Obrigatório**: Use essa propriedade para marcar uma propriedade de metadados como obrigatória na página de propriedades.
+* **Desabilitar edição**: Use essa propriedade para tornar uma propriedade de metadados não editável na página de propriedades.
+* **Mostrar campo vazio em somente** leitura: Marque essa propriedade para exibir uma propriedade de metadados na página de propriedades, mesmo que ela não tenha valor. Por padrão, quando uma propriedade de metadados não tem valor, ela não é listada na página de propriedades.
+* **Mostrar lista ordenada**: Use essa propriedade para exibir uma lista ordenada de opções
+* **Opções**: Use essa propriedade para especificar opções em uma lista
+* **Descrição** : Use essa propriedade para adicionar uma breve descrição para o componente de metadados.
+* **Classe**: Classe de objeto à qual a propriedade está associada.
+* **Excluir**: Clique nesse ícone para excluir um componente do formulário de schema.
 
 ![Excluir ícone no formulário de Schema de metadados](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
->O componente Campo oculto não inclui esses atributos. Em vez disso, inclui propriedades, como Nome dos atributos, Valor, Rótulo do campo e Descrição. Os valores do componente Campo oculto são enviados como um parâmetro POST sempre que o ativo é salvo. Ele não é salvo como metadados para o ativo.
+>O componente Campo  oculto não inclui esses atributos. Em vez disso, inclui propriedades, como Nome dos atributos, Valor, Rótulo do campo e Descrição. Os valores do componente Campo oculto são enviados como um parâmetro POST sempre que o ativo é salvo. Ele não é salvo como metadados para o ativo.
 
 Se você selecionar a opção **[!UICONTROL Obrigatório]**, poderá pesquisar por ativos sem metadados obrigatórios. No painel **[!UICONTROL Filtros]**, expanda o predicado **[!UICONTROL Validação de metadados]** e selecione a opção **[!UICONTROL Inválido]**. Os resultados de pesquisa exibem ativos que não têm metadados obrigatórios configurados por meio do formulário de esquema.
 
@@ -163,7 +155,7 @@ Para exibir qualquer guia na página de propriedades, além da guia na qual o co
 
 ![A guia selecionada na lista de Metadados contextuais é exibida na página de propriedades do ativo](assets/contextual-metadata-asset-properties.png)
 
-*Figura: Metadados contextuais na página de propriedades do ativo*
+*Figura: Metadados contextuais na página de propriedades do ativo.*
 
 ### Especificar propriedades no arquivo JSON {#specify-properties-in-json-file}
 
@@ -263,7 +255,7 @@ Se a pasta tiver uma subpasta, os ativos dentro da subpasta herdarão os metadad
 
    ![Campo de texto adicionado ao Editor de formulário de Schema de metadados](assets/text-field-metadata-schema-editor.png)
 
-   *Figura: Campo de texto adicionado ao editor de formulário de schema de metadados*
+   *Figura: Campo de texto adicionado ao editor de formulário de schema de metadados.*
 
 1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Formulários **[!UICONTROL de Schema de]** metadados.
 1. Clique/toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
@@ -295,7 +287,7 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 
    ![Adicionar campo obrigatório ao formulário de metadados selecionando Obrigatório na guia Regras no Editor de formulário de Schema de metadados](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Figura: Campo obrigatório no editor de formulário de schema de metadados*
+   *Figura: Campo obrigatório no editor de formulário de schema de metadados.*
 
 1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Formulários **[!UICONTROL de Schema de]** metadados. Selecione o formulário e clique ou toque em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 
