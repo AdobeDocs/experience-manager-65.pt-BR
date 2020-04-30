@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
 A instalação do pacote de recursos 18912 é *opcional*.
 
-O pacote de recursos 18912 permite que você ingira ativos em massa diretamente no Dynamic Media - modo Scene7 no AEM por meio de FTP ou migre ativos do Dynamic Media Classic para Dynamic Media - modo Scene7 no AEM. O pacote de recursos está disponível no [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+O pacote de recursos 18912 permite que você ingira ativos em massa diretamente no Dynamic Media - modo Scene7 no AEM por meio de FTP, ou migre ativos do Dynamic Media Classic para Dynamic Media - modo Scene7 no AEM. O pacote de recursos está disponível no [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
 
 >[!NOTE]
 >
@@ -34,13 +34,12 @@ Consulte também [Configuração do Dynamic Media - Modo](/help/assets/config-dm
 
 1. Em sua instância do AEM, navegue até **[!UICONTROL Ferramentas > Segurança > Usuários]** e selecione **[!UICONTROL Criar usuário]**. Este usuário do serviço deve ter permissões de *leitura/gravação* para `/content/dam.`
 1. Nos campos **[!UICONTROL ID]** e **[!UICONTROL senha]** , digite um nome de usuário e uma senha; por exemplo, Usuário **** FTP. Esse nome aparece na linha do tempo como o usuário que criou o ativo. Quando um ativo é carregado do FTP, um ativo é considerado criado quando é carregado no servidor FTP e enviado para o AEM.
-1. Entre em contato com o suporte [Adobe Enterprise para o Experience Manager](https://helpx.adobe.com/contact/enterprise-support.ec.html) para solicitar acesso ao pacote de recursos 18912 para download. Você pode precisar das seguintes informações ao entrar em contato com o suporte:
+1. Entre em contato com o Atendimento ao cliente [Adobe Enterprise para obter o Experience Manager](https://helpx.adobe.com/br/contact/enterprise-support.ec.html) para solicitar acesso ao pacote de recursos 18912 para download. Você pode precisar das seguintes informações ao entrar em contato com o suporte:
 
    * Endereço IP do servidor para a instância do autor, incluindo o número da porta (por padrão, o número da porta é 4502).
    * Nome de usuário e senha do serviço AEM da etapa anterior.
 
-1. O suporte empresarial da Adobe para o AEM fornece as credenciais FTP e o acesso ao pacote de recursos 18912.
+1. O Atendimento ao cliente do Adobe Enterprise para AEM fornece as credenciais FTP e o acesso ao pacote de recursos 18912.
 1. Quando receber o pacote de recursos 18912, instale-o.
 
    Consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md) para obter mais informações sobre como usar o Compartilhamento de pacotes e pacotes no AEM.
-
