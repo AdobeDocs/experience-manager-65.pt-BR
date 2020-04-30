@@ -3,7 +3,7 @@ title: Comparar ativos AEM e oferta da biblioteca de mídia AEM
 description: Compare as ofertas dos ativos AEM e da biblioteca de mídia do AEM e conheça as diferenças.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -70,35 +70,34 @@ Para esse caso de uso, não é necessário comprar ativos AEM, nem mesmo o uso d
 * Adobe Asset Link (conectar-se à Creative Cloud para empresas)
 * Aplicativo de desktop do AEM
 * Processamento de perfis
-* Integração do servidor InDesign
+* Integração do InDesign Server
 * Modelos de ativos e estrutura de produtores de catálogos
-* Ativos vinculados do Adobe Photoshop, Illustrator e InDesign
+* Integração entre Adobe Photoshop, Adobe Illustrator e Adobe InDesign
 * Gerenciamento de ativos multilíngues
 * Integração de PIM
 * Gerenciamento de direitos
 * Suporte a Camera RAW
 * Gerenciamento e configuração de aspectos de pesquisa
 * workflows DAM pré-criados (por exemplo, fotografar)
-* Relatórios de ativos e Analytics: Insights de ativos
+* relatórios e análise de ativos chamados Insights
 * Gerenciamento de ativos 3D
 * Connected Assets
 * Brand Portal
 * Acesso a autoatendimento
-* Procurar, Pesquisar e Baixar
-* Coleções e compartilhamento de pasta
-* Ferramentas administrativas
-* Tags inteligentes
+* Procurar, pesquisar e baixar
+* Coleções e compartilhamento de pastas
+* Ferramentas administrativas e interface
+* Marcação inteligente
 * Pesquisa visual
-* Interface do usuário do administrador de ativos
 
 **Biblioteca de mídia**
 
 * Propriedades básicas de metadados
 * Gerenciamento de tags
-* Controle da versão
+* Controle de versão
 * Representações estáticas
-* Projetos, Tarefas, Criação de fluxo de trabalho
-* Fluxo de Atividade (linha do tempo)
+* Projetos, tarefas, criação de fluxo de trabalho
+* Atividade (linha do tempo)
 * Construtor de Query (API)
 * Integração da Marketing Cloud
 * Personalização e extensão da interface do usuário
