@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -24,7 +24,7 @@ O recurso de fórum QnA (perguntas e respostas) fornece uma área para que os me
 
 * Criar novas perguntas
 * Adicionar imagens em linha (com suporte para arrastar e soltar)
-* Exibir e responder perguntas
+* Visualização e perguntas de resposta
 * Procurar uma pergunta
 * Ajuda a moderar o conteúdo QnA
 * Identificar as melhores respostas
@@ -32,8 +32,8 @@ O recurso de fórum QnA (perguntas e respostas) fornece uma área para que os me
 
 A documentação descreve:
 
-* adicionar o recurso do fórum QnA a um site do AEM.
-* configurações do `QnA`componente.
+* Adicionar o recurso do fórum QnA a um site do AEM.
+* Configurações do `QnA`componente.
 
 ## Adicionar um fórum de P&amp;R a uma página {#adding-a-q-a-forum-to-a-page}
 
@@ -105,7 +105,7 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
 
 * **Permitir assinaturas de email**
 
-   Se marcada, permita que os membros sejam notificados de novas postagens por email ([assinatura](/help/communities/subscriptions.md)). Requer que Permitir seguidores seja marcado e o [email seja configurado](/help/communities/email.md). O padrão está desmarcado.
+   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](/help/communities/subscriptions.md)). Requer que Permitir seguidores seja marcado e o [email seja configurado](/help/communities/email.md). O padrão está desmarcado.
 
 * **Tamanho máximo do arquivo**
 
@@ -117,18 +117,19 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
 
 * **Tamanho máximo do arquivo de imagem a ser anexado**
 
-   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. O número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152** **(2 Mb).
+   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. O número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
 
 * **Permitir respostas**
 
    Se marcada, permita respostas a comentários postados na pergunta. O padrão está desmarcado.
+
 * **Permitir votação**
 
    Se marcada, inclua o recurso Voto com uma pergunta. O padrão está desmarcado.
 
 * **Permitir que usuários excluam comentários e tópicos**
 
-   Se marcada, permita que os membros excluam os comentários e as perguntas que publicaram. O padrão é *** **desmarcado.
+   Se marcada, permita que os membros excluam os comentários e as perguntas que publicaram. O padrão está desmarcado.
 
 * **Permitir membros privilegiados**
 
@@ -138,7 +139,9 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
 
    Se ativado, bloqueia o Conteúdo gerado pelo usuário durante a edição no Modo de autor.
 
-* **Mover a resposta selecionada para o início**Se marcada, a primeira resposta mostrada é uma resposta selecionada. O padrão está desmarcado.
+* **Mover a resposta selecionada para cima**
+
+   Se marcada, a primeira resposta mostrada é uma resposta selecionada. O padrão está desmarcado.
 * **Exibir selos**
 
    Se marcada, exiba [crachás](/help/communities/implementing-scoring.md) ganhados e atribuídos com a entrada de blog de um membro. O padrão está desmarcado.
@@ -157,7 +160,7 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
 
 * **Padrão de menção da interface do usuário**
 
-   Especifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo, ~{{familyName}}{{specifiedName}}.
+   Especifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo, `~{{familyName}}{{givenName}}`.
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
@@ -179,11 +182,11 @@ Na guia Moderação **do** usuário, especifique como os tópicos publicados (pe
 
 * **Sinalizar lista de motivo**
 
-   Se marcada, permita que os membros escolham, em uma lista suspensa, seu motivo para marcar uma pergunta ou resposta como inadequada. O padrão está desmarcado.
+   Se marcada, permita que os membros escolham, em uma lista suspensa, seu motivo para sinalizar uma pergunta ou resposta como inadequada. O padrão está desmarcado.
 
 * **Motivo personalizado de sinalização**
 
-   Se marcada, permita que os membros digitem seu próprio motivo para marcar uma pergunta ou resposta como inadequada. O padrão está desmarcado.
+   Se marcada, permita que os membros digitem seu próprio motivo para sinalizar uma pergunta ou resposta como inadequada. O padrão está desmarcado.
 
 * **Limite de moderação**
 
@@ -191,15 +194,19 @@ Na guia Moderação **do** usuário, especifique como os tópicos publicados (pe
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que uma pergunta ou resposta deve ser sinalizada antes de ser ocultada da exibição pública. Se definido como -1, a pergunta ou resposta sinalizada nunca será ocultada da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
+   Insira o número de vezes que uma pergunta ou resposta deve ser sinalizada antes de ser ocultada da visualização pública. Se definido como -1, a pergunta ou resposta sinalizada nunca será ocultada da visualização pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia Campo **de** tag, as tags que podem ser aplicadas, se permitidas na guia **Settings **, são limitadas de acordo com os namespaces escolhidos.
+Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na guia **Configurações** , são limitadas de acordo com as namespaces escolhidas.
 
-* **Namespaces permitidos** Relevante se `Allow Tagging` estiver marcado na guia **Settings **tab. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todos os namespaces são permitidos.
+* **Espaços de nomes permitidos**
 
-* **Limite de sugestão** Insira o número de tags a serem exibidas como uma sugestão para o membro postar no fórum. Um valor de **-**1 significa sem limites. O padrão é 0.
+   Relevante se `Allow Tagging` estiver marcado na guia **Configurações** . As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+
+* **Limite sugerido**
+
+   Insira o número de tags a serem exibidas como uma sugestão para o membro postando no fórum. Um valor de **-**1 significa sem limites. O padrão é 0.
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 
@@ -217,15 +224,15 @@ Na guia **Classificar configurações** , especifique como os comentários publi
 
    Solte para selecionar um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 
-## Experiência do visitante do site {#site-visitor-experience}
+## Experiência com o Visitante do site {#site-visitor-experience}
 
 ### Como identificar respostas {#identifying-answers}
 
-Uma resposta pode ser marcada como uma resposta correta ou útil usando o `Select Answer` botão. Quando uma pergunta é marcada como Respondida, outra resposta não pode ser selecionada até que a primeira seja desmarcada usando o `Unmark Chosen Answer`botão.
+Uma resposta pode ser marcada como uma resposta correta ou útil usando o `Select Answer` botão. Quando uma pergunta é marcada como Respondida, outra resposta não pode ser selecionada até que a primeira seja desmarcada usando o `Unmark Chosen Answer` botão.
 
 Depois de selecionada como uma resposta viável, ela pode ser desmarcada usando o `Unmark Chosen Answer` botão.
 
-Depois que uma resposta é selecionada como resposta viável, uma indicação de que a pergunta foi `Answered`é exibida ao lado do tópico da pergunta na página principal de QnA.
+Depois que uma resposta é selecionada como resposta viável, uma indicação de que a pergunta foi `Answered` exibida ao lado do tópico da pergunta na página principal de QnA.
 
 #### Moderadores e administradores {#moderators-and-administrators}
 
@@ -237,10 +244,10 @@ Eles também podem identificar respostas.
 
 Quando os visitantes do site estiverem conectados, dependendo da configuração, eles poderão:
 
-* poste uma nova pergunta.
-* editar ou excluir perguntas que eles criaram.
-* sinalizar perguntas ou respostas de outros membros.
-* identifique as respostas para perguntas que eles criaram.
+* Publique uma nova pergunta.
+* Edite ou exclua perguntas que eles criaram.
+* Sinalizar perguntas ou respostas de outros membros.
+* Identifique as respostas para as perguntas que eles criaram.
 
 #### Anônimo {#anonymous}
 
