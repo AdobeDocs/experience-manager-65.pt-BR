@@ -1,23 +1,23 @@
 ---
-title: Guia de ajuste de desempenho de ativos
-description: Sugestões e orientações sobre a configuração do AEM, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho dos ativos AEM.
+title: Ajuste de desempenho para [!DNL Adobe Experience Manager Assets].
+description: Sugestões e orientações sobre a configuração do [!DNL Experience Manager], alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho dos [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 <!-- TBD: Get reviewed by engineering. -->
 
-# Guia de ajuste de desempenho de ativos {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] guia de ajuste de desempenho {#assets-performance-tuning-guide}
 
-Uma configuração do Adobe Experience Manager (AEM) Assets contém vários componentes de hardware, software e rede. Dependendo do cenário de implantação, talvez você precise de alterações específicas na configuração de hardware, software e componentes de rede para remover gargalos de desempenho.
+Uma [!DNL Experience Manager Assets] configuração contém vários componentes de hardware, software e rede. Dependendo do cenário de implantação, talvez você precise de alterações específicas na configuração de hardware, software e componentes de rede para remover gargalos de desempenho.
 
-Além disso, identificar e seguir determinadas diretrizes de otimização de hardware e software ajuda a criar uma base sólida que permite que a implantação dos ativos AEM atenda às expectativas de desempenho, escalabilidade e confiabilidade.
+Além disso, identificar e seguir determinadas diretrizes de otimização de hardware e software ajuda a criar uma base sólida que permite que sua [!DNL Experience Manager Assets] implantação atenda às expectativas de desempenho, escalabilidade e confiabilidade.
 
-O baixo desempenho nos ativos AEM pode afetar a experiência do usuário em relação ao desempenho interativo, processamento de ativos, velocidade de download e outras áreas.
+O baixo desempenho no pode [!DNL Experience Manager Assets] afetar a experiência do usuário em relação ao desempenho interativo, processamento de ativos, velocidade de download e outras áreas.
 
 Na verdade, a otimização do desempenho é uma tarefa fundamental que você executa antes de estabelecer métricas de público alvo para qualquer projeto.
 
@@ -25,7 +25,7 @@ Estas são algumas áreas de foco chave em torno das quais você descobre e corr
 
 ## Plataforma {#platform}
 
-Embora o AEM seja suportado em várias plataformas, a Adobe encontrou o maior suporte para ferramentas nativas no Linux e no Windows, o que contribui para o desempenho ideal e a facilidade de implementação. O ideal é que você implante um sistema operacional de 64 bits para atender aos altos requisitos de memória de uma implantação do AEM Assets. Assim como com qualquer implantação do AEM, você deve implementar o TarMK sempre que possível. Embora o TarMK não possa ser dimensionado além de uma única instância do autor, ele tem um desempenho melhor do que o MongoMK. Você pode adicionar instâncias de descarregamento TarMK para aumentar o poder de processamento do fluxo de trabalho de sua implantação do AEM Assets.
+Embora o Experience Manager seja compatível com várias plataformas, a Adobe encontrou o maior suporte para ferramentas nativas no Linux e no Windows, o que contribui para o desempenho ideal e a facilidade de implementação. Idealmente, você deve implantar um sistema operacional de 64 bits para atender aos altos requisitos de memória de uma [!DNL Experience Manager Assets] implantação. Assim como com qualquer implantação do Experience Manager, você deve implementar o TarMK sempre que possível. Embora o TarMK não possa ser dimensionado além de uma única instância do autor, ele tem um desempenho melhor do que o MongoMK. Você pode adicionar instâncias de descarregamento TarMK para aumentar o poder de processamento do fluxo de trabalho de sua [!DNL Experience Manager Assets] implantação.
 
 ### Pasta temporária {#temp-folder}
 
@@ -42,7 +42,7 @@ mkfs -q /dev/ram1 800000
 
 No SO Windows, use um driver de terceiros para criar uma unidade RAM ou use apenas um armazenamento de alto desempenho, como SSD.
 
-Quando o volume temporário de alto desempenho estiver pronto, defina o parâmetro JVM `-Djava.io.tmpdir`. Por exemplo, você pode adicionar o parâmetro JVM abaixo à `CQ_JVM_OPTS` variável no `bin/start` script do AEM:
+Quando o volume temporário de alto desempenho estiver pronto, defina o parâmetro JVM `-Djava.io.tmpdir`. Por exemplo, você pode adicionar o parâmetro JVM abaixo à `CQ_JVM_OPTS` variável no `bin/start` script do Experience [!DNLEManager]:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -50,7 +50,7 @@ Quando o volume temporário de alto desempenho estiver pronto, defina o parâmet
 
 ### Versão do Java {#java-version}
 
-A Adobe recomenda implantar os ativos AEM no Java 8 para obter desempenho ótimo.
+A Adobe recomenda implantar [!DNL Experience Manager Assets] no Java 8 para obter desempenho ideal.
 
 >[!NOTE]
 >
@@ -70,19 +70,19 @@ Defina os seguintes parâmetros JVM:
 
 ### Configuração do armazenamento de dados de arquivo {#file-data-store-configuration}
 
-É recomendável separar o armazenamento de dados do armazenamento de segmentos para todos os usuários do AEM Assets. Além disso, configurar os parâmetros `maxCachedBinarySize` e `cacheSizeInMB` pode ajudar a maximizar o desempenho. Defina `maxCachedBinarySize` para o menor tamanho de arquivo que pode ser mantido no cache. Especifique o tamanho do cache na memória a ser usado para o armazenamento de dados no `cacheSizeInMB`. A Adobe recomenda que você defina esse valor entre 2 a 10% do tamanho total do heap. No entanto, o teste de carga/desempenho pode ajudar a determinar a configuração ideal.
+É recomendável separar o armazenamento de dados do armazenamento de segmentos para todos os [!DNL Experience Manager Assets] usuários. Além disso, configurar os parâmetros `maxCachedBinarySize` e `cacheSizeInMB` pode ajudar a maximizar o desempenho. Defina `maxCachedBinarySize` para o menor tamanho de arquivo que pode ser mantido no cache. Especifique o tamanho do cache na memória a ser usado para o armazenamento de dados no `cacheSizeInMB`. A Adobe recomenda que você defina esse valor entre 2 a 10% do tamanho total do heap. No entanto, o teste de carga/desempenho pode ajudar a determinar a configuração ideal.
 
 ### Configurar o tamanho máximo do cache de imagem em buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Ao fazer upload de grandes quantidades de ativos para o Adobe Experience Manager, para permitir picos inesperados no consumo de memória e para evitar falhas de JVM com OutOfMemoryErrors, reduza o tamanho máximo configurado do cache de imagem em buffer. Considere um exemplo de que você tem um sistema com um heap ( `Xmx`param) máximo de 5 GB, um BlobCache Oak definido em 1 GB e um cache de documento definido em 2 GB. Nesse caso, o cache armazenado em buffer levaria no máximo 1,25 GB e memória, o que deixaria apenas 0,75 GB de memória para picos inesperados.
+Ao fazer upload de grandes quantidades de ativos para o [!DNLAAdobe Experience Manager], para permitir picos inesperados no consumo de memória e para evitar falhas de JVM com OutOfMemoryErrors, reduza o tamanho máximo configurado do cache de imagem em buffer. Considere um exemplo de que você tem um sistema com um heap ( `Xmx`param) máximo de 5 GB, um BlobCache Oak definido em 1 GB e um cache de documento definido em 2 GB. Nesse caso, o cache armazenado em buffer levaria no máximo 1,25 GB e memória, o que deixaria apenas 0,75 GB de memória para picos inesperados.
 
 Configure o tamanho do cache armazenado em buffer no console da Web OSGi. Em `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, defina a propriedade `cq.dam.image.cache.max.memory` em bytes. Por exemplo, 1073741824 é 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-No AEM 6.1 SP1, se você estiver usando um `sling:osgiConfig` nó para configurar essa propriedade, certifique-se de definir o tipo de dados como Longo. Para obter mais detalhes, consulte [CQBufferedImageCache consome heap durante os uploads](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)do ativo.
+No Experience Manager 6.1 SP1, se você estiver usando um `sling:osgiConfig` nó para configurar essa propriedade, certifique-se de definir o tipo de dados como Longo. Para obter mais detalhes, consulte [CQBufferedImageCache consome heap durante os uploads](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)do ativo.
 
 ### Armazenamentos de dados compartilhados {#shared-data-stores}
 
-A implementação de um armazenamento de dados de arquivos compartilhados ou S3 pode ajudar a economizar espaço em disco e aumentar o throughput da rede em implementações de larga escala. Para obter mais informações sobre os prós e contras do uso de um armazenamento de dados compartilhado, consulte o Guia [de dimensionamento de](/help/assets/assets-sizing-guide.md)ativos.
+A implementação de um armazenamento de dados de arquivos compartilhados ou S3 pode ajudar a economizar espaço em disco e aumentar o throughput da rede em implementações de larga escala. Para obter mais informações sobre os prós e contras de usar um armazenamento de dados compartilhado, consulte o guia [de dimensionamento de](/help/assets/assets-sizing-guide.md)ativos.
 
 ### S3 data store {#s-data-store}
 
@@ -111,12 +111,12 @@ accessKey=<snip>
 
 ## Otimização da rede {#network-optimization}
 
-A Adobe recomenda habilitar o HTTPS porque muitas empresas têm firewalls que cheiram o tráfego HTTP, o que afeta negativamente os uploads e corrompe os arquivos. Para fazer uploads de arquivos grandes, verifique se os usuários têm conexões com fio à rede, pois uma rede WiFi fica rapidamente saturada. Para obter diretrizes sobre como identificar gargalos de rede, consulte Guia [de dimensionamento de](/help/assets/assets-sizing-guide.md)ativos. Para avaliar o desempenho da rede analisando a topologia da rede, consulte Considerações [de rede do](/help/assets/assets-network-considerations.md)Assets.
+A Adobe recomenda habilitar o HTTPS porque muitas empresas têm firewalls que cheiram o tráfego HTTP, o que afeta negativamente os uploads e corrompe os arquivos. Para fazer uploads de arquivos grandes, verifique se os usuários têm conexões com fio à rede, pois uma rede WiFi fica rapidamente saturada. Para obter diretrizes sobre como identificar gargalos de rede, consulte o guia [de dimensionamento de](/help/assets/assets-sizing-guide.md)ativos. Para avaliar o desempenho da rede analisando a topologia da rede, consulte Considerações [de rede do](/help/assets/assets-network-considerations.md)Assets.
 
-Principalmente, sua estratégia de otimização de rede depende da quantidade de largura de banda disponível e da carga da sua instância do AEM. Opções comuns de configuração, incluindo firewalls ou proxies, podem ajudar a melhorar o desempenho da rede. Estes são alguns pontos-chave que devem ser levados em conta:
+A sua estratégia de otimização de rede depende principalmente da quantidade de largura de banda disponível e da carga da sua instância do Experience Manager [!DNLE] . Opções comuns de configuração, incluindo firewalls ou proxies, podem ajudar a melhorar o desempenho da rede. Estes são alguns pontos-chave que devem ser levados em conta:
 
-* Dependendo do tipo de instância (pequena, moderada, grande), verifique se você tem largura de banda de rede suficiente para a instância do AEM. A alocação de largura de banda adequada é especialmente importante se o AEM estiver hospedado no AWS.
-* Se sua instância do AEM estiver hospedada no AWS, você poderá se beneficiar se tiver uma política de dimensionamento versátil. Atualize a instância se os usuários esperarem carga alta. Baixe-o para uma carga moderada/baixa.
+* Dependendo do tipo de instância (pequena, moderada, grande), verifique se você tem largura de banda de rede suficiente para a instância do Experience Manager. A alocação de largura de banda adequada é especialmente importante se o [!DNLEExperience Manager] estiver hospedado no AWS.
+* Se sua instância do [!DNLEExperience Manager] estiver hospedada no AWS, você poderá se beneficiar com uma política de dimensionamento versátil. Atualize a instância se os usuários esperarem carga alta. Baixe-o para uma carga moderada/baixa.
 * HTTPS: A maioria dos usuários tem firewalls que cheiram o tráfego HTTP, o que pode afetar negativamente o carregamento de arquivos ou até mesmo arquivos corrompidos durante a operação de upload.
 * Carregamentos de arquivos grandes: Verifique se os usuários têm conexões com fio à rede (as conexões WiFi se saturam rapidamente).
 
@@ -126,7 +126,7 @@ Principalmente, sua estratégia de otimização de rede depende da quantidade de
 
 Sempre que possível, defina o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM como Transitório. A configuração reduz significativamente os custos indiretos necessários para processar workflows porque, nesse caso, os workflows não precisam passar pelos processos normais de rastreamento e arquivamento.
 
-1. Navegue até `/miscadmin` a instância do AEM em `https://[aem_server]:[port]/miscadmin`.
+1. Navegue até `/miscadmin` a instância do [!DNLEExperience Manager] em `https://[aem_server]:[port]/miscadmin`.
 
 1. Expanda **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL dam]**.
 
@@ -150,9 +150,9 @@ Por exemplo, após executar vários workflows não transitórios (que criam nós
 
 ### Máximo de trabalhos paralelos {#maximum-parallel-jobs}
 
-Por padrão, o AEM executa um número máximo de trabalhos paralelos igual ao número de processadores no servidor. O problema com essa configuração é que durante períodos de carga pesada, todos os processadores são ocupados por workflows de ativos [!UICONTROL de atualização do] DAM, retardando a capacidade de resposta da interface do usuário e impedindo que o AEM execute outros processos que salvaguardem o desempenho e a estabilidade do servidor. Como prática recomendada, defina esse valor para metade dos processadores disponíveis no servidor, executando as seguintes etapas:
+Por padrão, o [!DNLEExperience Manager] executa um número máximo de trabalhos paralelos igual ao número de processadores no servidor. O problema com essa configuração é que durante períodos de carga pesada, todos os processadores são ocupados por workflows de ativos [!UICONTROL de atualização do] DAM, retardando a capacidade de resposta da interface do usuário e impedindo que o [!DNLEExperience Manager] execute outros processos que salvaguardem o desempenho e a estabilidade do servidor. Como prática recomendada, defina esse valor para metade dos processadores disponíveis no servidor, executando as seguintes etapas:
 
-1. Em Autor do Experience Manager, vá para `https://[aem_server]:[port]/system/console/slingevent`.
+1. No [!DNLEExperience Manager] Author, acesse `https://[aem_server]:[port]/system/console/slingevent`.
 
 1. Clique em **[!UICONTROL Editar]** em cada fila de fluxo de trabalho relevante para sua implementação, por exemplo, Fila **[!UICONTROL de fluxo de trabalho temporário de]** granite.
 
@@ -178,7 +178,7 @@ Os clientes usam imagens de vários tamanhos e formatos em seu site ou para dist
 
 Muitos clientes do Sites implementam um servlet de imagem que redimensiona e corta imagens no momento em que são solicitadas, o que impõe carga adicional na instância de publicação. Entretanto, enquanto essas imagens puderem ser armazenadas em cache, o desafio poderá ser atenuado.
 
-Uma abordagem alternativa é usar a tecnologia Scene7 para entregar totalmente a manipulação de imagens. Além disso, você pode implantar o Brand Portal que não somente assume as responsabilidades de geração de execução da infraestrutura do AEM, mas também toda a camada de publicação.
+Uma abordagem alternativa é usar a tecnologia Scene7 para entregar totalmente a manipulação de imagens. Além disso, você pode implantar o Brand Portal que não somente assume as responsabilidades de geração de execução da infraestrutura do [!DNLEExperience Manager] , mas também toda a camada de publicação.
 
 #### ImageMagick {#imagemagick}
 
@@ -203,17 +203,17 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no arquivo `co
 
 >[!CAUTION]
 >
->Uma configuração incorreta pode tornar o servidor instável se o ImageMagick usar todo o espaço em disco disponível. As alterações de política necessárias para processar arquivos grandes usando o ImageMagick podem afetar o desempenho do AEM. Para obter mais informações, consulte [instalar e configurar o ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Uma configuração incorreta pode tornar o servidor instável se o ImageMagick usar todo o espaço em disco disponível. As alterações de política necessárias para processar arquivos grandes usando o ImageMagick podem afetar o desempenho do Experience Manager [!DNLE] . Para obter mais informações, consulte [instalar e configurar o ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
 >Os arquivos ImageMagick `policy.xml` e `configure.xml` ImageMagick estão disponíveis em `/usr/lib64/ImageMagick-&#42;/config/` vez de `/etc/ImageMagick/`.Consulte a documentação [do](https://www.imagemagick.org/script/resources.php) ImageMagick para obter o local dos arquivos de configuração.
 
-Se você estiver usando o Experience Manager no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe se planeja processar muitos arquivos grandes PSD ou PSB. Entre em contato com o representante do Atendimento ao cliente da Adobe para implementar essas práticas recomendadas para sua implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários da Adobe. O Experience Manager talvez não processe arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
+Se você estiver usando [!DNL Experience Manager] o Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe se planeja processar muitos arquivos grandes PSD ou PSB. Entre em contato com o representante do Atendimento ao cliente da Adobe para implementar essas práticas recomendadas para sua implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários da Adobe. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 ### XMP writeback {#xmp-writeback}
 
-O write-back XMP atualiza o ativo original sempre que os metadados são modificados no AEM, o que resulta no seguinte:
+O write-back XMP atualiza o ativo original sempre que os metadados são modificados em [!DNL Experience Manager], o que resulta no seguinte:
 
 * O próprio ativo é modificado
 * Uma versão do ativo é criada
@@ -225,7 +225,7 @@ Importar uma grande quantidade de metadados pode resultar em atividade de write-
 
 ## Replicação {#replication}
 
-Ao replicar ativos para um grande número de instâncias de publicação, por exemplo em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
+Ao replicar ativos para um grande número de instâncias de publicação, por exemplo, em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
 
 ### Configurar replicação em cadeia {#configure-chain-replication}
 
@@ -245,54 +245,16 @@ Crie índices personalizados para query executados com frequência. Para obter d
 
 ### Configurações do índice Lucene {#lucene-index-configurations}
 
-Algumas otimizações podem ser feitas nas configurações de índice Oak que podem ajudar a melhorar o desempenho dos ativos AEM. Atualize as configurações de índice para melhorar o tempo de reindexação:
+Algumas otimizações podem ser feitas nas configurações de índice Oak que podem ajudar a melhorar o [!DNL Experience Manager Assets] desempenho. Atualize as configurações de índice para melhorar o tempo de reindexação:
 
-1. Abra o CRXDe `/crx/de/index.jsp` faça logon como um usuário administrativo
-1. Navegue até `/oak:index/lucene`
-1. Adicione uma propriedade String[] `excludedPaths` com valores `/var`, `/etc/workflow/instances`e `/etc/replication`.
-1. Navegue até `/oak:index/damAssetLucene`. Adicione uma `String[]` propriedade `includedPaths` com valor `/content/dam`.
-1. Salvar.
+1. Abra o CRXDe `/crx/de/index.jsp` faça logon como um usuário administrativo.
+1. Navegue até `/oak:index/lucene`.
+1. Adicione uma `String[]` propriedade `excludedPaths` com valores `/var`, `/etc/workflow/instances`e `/etc/replication`.
+1. Navegue até `/oak:index/damAssetLucene`. Adicione uma `String[]` propriedade `includedPaths` com valor `/content/dam`. Salve as alterações.
 
-<!-- TBD: Review by engineering if required in 6.5 docs or not.
+Se os usuários não precisarem fazer uma pesquisa de texto completo de ativos, por exemplo, pesquisar texto em documentos PDF e desativá-lo. Você aprimora o desempenho do índice ao desativar a indexação de texto completo. Para desativar a extração [!DNL Apache Lucene] de texto, siga estas etapas:
 
-(AEM6.1 and 6.2 only) Update the `ntBaseLucene` index to improve asset delete and move performance:
-
-1. Browse to `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-
-1. Add two nt:unstructured nodes `slingResource` and `damResolvedPath` under `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-
-1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
-
-   ```conf
-   slingResource
-   name="sling:resource"
-   ordered=false
-   propertyIndex= true
-   type="String"
-   damResolvedPath
-   name="dam:resolvedPath"
-   ordered=false
-   propertyIndex=true
-   type="String"
-   ```
-
-1. On the `/oak:index/ntBaseLucene` node, set the property `reindex=true`. Click **[!UICONTROL Save All]**.
-1. Monitor the error.log to see when indexing is completed:
-   Reindexing completed for indexes: [/oak:index/ntBaseLucene]
-1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
-1. Once indexing is completed then go back to CRXDe and set the "type" property to disabled on these two indexes
-
-    * */oak:index/slingResource*
-    * */oak:index/damResolvedPath*
-
-1. Click "Save All"
--->
-
-Desativar Extração de texto de Lucene:
-
-Se os usuários não precisarem fazer uma pesquisa de texto completo de ativos, por exemplo, pesquisar texto em documentos PDF e desativá-lo. Você aprimora o desempenho do índice ao desativar a indexação de texto completo.
-
-1. Vá para o gerenciador de pacote do AEM `/crx/packmgr/index.jsp`.
+1. Na [!DNL Experience Manager] interface, acesse [!UICONTROL Gerenciador]de pacotes.
 1. Carregue e instale o pacote disponível em [disable_indexingbinarytextextract-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Total de suposições {#guess-total}
@@ -303,13 +265,13 @@ Ao criar query que geram grandes conjuntos de resultados, use o `guessTotal` par
 
 ### Arquivos grandes {#large-files}
 
-Há dois problemas conhecidos principais relacionados a arquivos grandes no AEM. Quando os arquivos atingem tamanhos superiores a 2 GB, a sincronização em espera fria pode ocorrer em uma situação de falta de memória. Em alguns casos, impede que a sincronização em espera seja executada. Em outros casos, isso faz com que a instância primária falhe. Esse cenário se aplica a qualquer arquivo no AEM que tenha mais de 2 GB, incluindo pacotes de conteúdo.
+Há dois problemas conhecidos principais relacionados a arquivos grandes em [!DNL Experience Manager]. Quando os arquivos atingem tamanhos superiores a 2 GB, a sincronização em espera fria pode ocorrer em uma situação de falta de memória. Em alguns casos, impede que a sincronização em espera seja executada. Em outros casos, isso faz com que a instância primária falhe. Esse cenário se aplica a qualquer arquivo com [!DNL Experience Manager] mais de 2 GB, incluindo pacotes de conteúdo.
 
 Da mesma forma, quando os arquivos atingem 2 GB ao usar um armazenamento de dados S3 compartilhado, pode levar algum tempo para que o arquivo seja totalmente persistente do cache para o sistema de arquivos. Como resultado, ao usar replicação sem binários, é possível que os dados binários não tenham sido persistentes antes da conclusão da replicação. Essa situação pode levar a problemas, especialmente se a disponibilidade de dados for importante.
 
 ## Teste de desempenho {#performance-testing}
 
-Para cada implantação do AEM, estabeleça um regime de teste de desempenho que possa identificar e resolver gargalos rapidamente. Aqui estão algumas áreas-chave para se focar.
+Para cada [!DNL Experience Manager] implantação, estabeleça um regime de teste de desempenho que possa identificar e resolver gargalos rapidamente. Aqui estão algumas áreas-chave para se focar.
 
 ### Teste de rede {#network-testing}
 
@@ -321,25 +283,25 @@ Para todas as preocupações de desempenho de rede do cliente, execute as seguin
 * Usando uma ferramenta de benchmark de rede
 * Teste contra o expedidor
 
-### Teste de instância do AEM {#aem-instance-testing}
+### [!DNL Experience Manager] teste de instância {#aem-instance-testing}
 
-Para minimizar a latência e alcançar alta throughput por meio da utilização eficiente da CPU e do compartilhamento de carga, monitore regularmente o desempenho da sua instância do AEM. Nomeadamente:
+Para minimizar a latência e alcançar alta throughput através da utilização eficiente da CPU e do compartilhamento de carga, monitore regularmente o desempenho da sua [!DNL Experience Manager] instância. Nomeadamente:
 
-* Executar testes de carga na instância do AEM
-* Monitore o desempenho de upload e a capacidade de resposta da interface do usuário
+* Execute testes de carga na [!DNL Experience Manager] instância.
+* Monitore o desempenho de upload e a capacidade de resposta da interface do usuário.
 
-## Lista de verificação de desempenho do AEM Assets e impacto das tarefas de gerenciamento de ativos {#checklist}
+## [!DNL Experience Manager Assets] lista de verificação de desempenho e impacto das tarefas de gerenciamento de ativos {#checklist}
 
-* Ative o HTTPS para contornar qualquer sniffers de tráfego HTTP corporativo
-* Usar uma conexão com fio para fazer upload de ativos pesados
+* Ative o HTTPS para contornar qualquer farejador de tráfego HTTP corporativo.
+* Use uma conexão com fio para fazer upload de ativos pesados.
 * Implantar no Java 8.
-* Definir parâmetros JVM ideais
-* Configurar um DataStore do sistema de arquivos ou um S3 DataStore
-* Ativar workflows transitórios
-* Ajustar as filas de fluxo de trabalho Granite para limitar trabalhos simultâneos
-* Configurar o ImageMagick para limitar o consumo de recursos
-* Remova etapas desnecessárias do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM
-* Configurar a depuração de fluxo de trabalho e versão
-* Otimize índices com os service packs e hotfixes mais recentes. Consulte o Suporte da Adobe para obter outras otimizações de índice que possam estar disponíveis.
+* Defina os parâmetros JVM ideais.
+* Configure um DataStore do sistema de arquivos ou um armazenamento de dados S3.
+* Ative workflows transitórios.
+* Ajuste as filas de fluxo de trabalho Granite para limitar as tarefas simultâneas.
+* Configure [!DNL ImageMagick] para limitar o consumo de recursos.
+* Remova etapas desnecessárias do fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM.
+* Configure o fluxo de trabalho e a remoção de versão.
+* Otimize índices com os service packs e hotfixes mais recentes. Consulte o Atendimento ao cliente da Adobe para obter outras otimizações de índice que possam estar disponíveis.
 * Use a opção supyTotal para otimizar o desempenho do query.
-* Se você configurar o AEM para detectar tipos de arquivos a partir do conteúdo dos arquivos (habilitando o **[!UICONTROL Day CQ DAM Mime Type Service]** no **[!UICONTROL Console da Web do AEM]**), faça upload de muitos arquivos em massa durante horas que não sejam de pico, pois ele consome muitos recursos.
+* If you configure [!DNL Experience Manager] to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.
