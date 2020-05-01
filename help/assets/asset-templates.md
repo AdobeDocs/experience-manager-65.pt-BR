@@ -1,18 +1,16 @@
 ---
-title: Modelos de ativos
+title: Modelos de ativos em [!DNL Adobe Experience Manager Assets].
 description: Saiba mais sobre os modelos de ativos no [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais de suporte de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
 
 ---
 
 
 # Asset templates {#asset-templates}
 
-Os modelos de ativos são uma classe especial de ativos que facilitam a rápida redefinição de objetivos de conteúdo visualmente rico para mídia digital e impressa. Um modelo de ativo inclui duas partes, a seção de mensagens fixas e a seção editável.
-
-A seção de mensagens fixas pode conter conteúdo proprietário, como o logotipo da marca e as informações de direitos autorais que estão desativados para edição. A seção editável pode conter conteúdo visual e textual em campos que podem ser editados para personalizar as mensagens.
+Os modelos de ativos são uma classe especial de ativos que facilitam a rápida redefinição de objetivos de conteúdo visualmente rico para mídia digital e impressa. Um modelo de ativo inclui duas partes, a seção de mensagens fixas e a seção editável. A seção de mensagens fixas pode conter conteúdo proprietário, como o logotipo da marca e as informações de direitos autorais que estão desativados para edição. A seção editável pode conter conteúdo visual e textual em campos que podem ser editados para personalizar as mensagens.
 
 A flexibilidade para fazer edições limitadas e, ao mesmo tempo, proteger a sinalização global torna os modelos de ativos os elementos básicos ideais para a adaptação e distribuição rápidas de conteúdo como artefatos de conteúdo para várias funções. A redefinição de metas de conteúdo ajuda a reduzir o custo de gerenciamento de canais digitais e impressos, além de oferecer experiências holísticas e consistentes nesses canais.
 
@@ -20,25 +18,19 @@ Como comerciante, você pode armazenar e gerenciar modelos dentro de um único m
 
 Embora os modelos de ativos sejam principalmente [!DNL Adobe InDesign] arquivos, a proficiência em não [!DNL Adobe InDesign] é uma barreira para a criação de artefatos estelares. Não é necessário mapear os campos do seu [!DNL Adobe InDesign] modelo com os campos do produto que você precisaria para criar catálogos. Você pode editar os modelos no modo WYSIWYG diretamente na interface da Web. No entanto, para [!DNL Adobe InDesign] processar suas alterações de edição, é necessário primeiro configurar [!DNL Experience Manager Assets] para integrar com [!DNL Adobe InDesign Server].
 
-A capacidade de editar [!DNL Adobe InDesign] modelos na interface da Web ajuda a promover maior colaboração entre a equipe da Creative e da Marketing, além de reduzir o tempo de comercialização para iniciativas promocionais locais.
+A capacidade de editar [!DNL Adobe InDesign] modelos na interface da Web ajuda a promover maior colaboração entre a equipe de criação e marketing. O aumento da velocidade do conteúdo reduz o tempo de entrada no mercado para os colaterais de marketing.
 
-Você pode fazer o seguinte com modelos de ativos:
+Você pode obter o seguinte com modelos de ativos:
 
-* Modificar campos de modelo editáveis da interface da Web
-* Controle o estilo básico do texto, por exemplo, tamanho da fonte, estilo e tipo no nível da tag
-* Alterar imagens no modelo usando o Seletor de conteúdo
-* Edições de modelo de Pré-visualização
-* Mesclar vários arquivos de modelo para criar um artefato de várias páginas
+* Modifique campos de modelo editáveis da interface da Web.
+* Controle o estilo básico do texto, por exemplo, tamanho da fonte, estilo e tipo no nível da tag.
+* Altere as imagens no modelo usando o Seletor de conteúdo.
+* Edições de modelo de Pré-visualização.
+* Mesclar vários arquivos de modelo para criar um artefato de várias páginas.
 
 Quando você escolhe um modelo para seu material de apoio, [!DNL Experience Manager Assets] cria uma cópia do modelo que você pode editar. O modelo original é preservado, garantindo que sua assinatura global permaneça intacta e possa ser reutilizada para reforçar a consistência da marca.
 
-Você pode exportar o arquivo atualizado dentro da pasta pai nos seguintes formatos:
-
-* INDD
-* PDF
-* JPG
-
-Também é possível baixar a saída nesses formatos para o sistema local.
+É possível exportar o arquivo atualizado dentro da pasta pai nos formatos INDD, PDF ou JPG. Também é possível baixar a saída nesses formatos para o sistema de arquivos local.
 
 ## Criar uma garantia {#creating-a-collateral}
 
@@ -70,13 +62,13 @@ Considere um cenário em que você deseja criar materiais de suporte para impres
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   Como alternativa, feche a caixa de diálogo e navegue até a pasta na página Modelos que você começou para visualização o folheto que você criou. O tipo de garantia aparece na sua miniatura na visualização do cartão. Por exemplo, neste caso, Brochure é exibido na miniatura.
+   Como alternativa, feche a caixa de diálogo e navegue até a pasta na página Modelos que você começou para visualização o folheto que você criou. O tipo de garantia aparece na sua miniatura na visualização do cartão. Por exemplo, neste caso, a palavra [!UICONTROL Brochure] é exibida na miniatura.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
 ## Editar um material de apoio {#editing-a-collateral}
 
-Você pode editar um material de apoio imediatamente após criá-lo. Como alternativa, abra-o na página Modelos ou na página do ativo.
+Você pode editar um material de apoio imediatamente após criá-lo. Como alternativa, abra-o na página [!UICONTROL Modelos] ou na página de ativos.
 
 1. Para abrir o material promocional para edição, execute um dos procedimentos a seguir:
 
@@ -100,13 +92,13 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    >[!NOTE]
    >
-   >Certifique-se de que sua [!DNL Experience Manager] instância esteja integrada a um [!DNL InDesign Server] dispositivo que permita [!DNL Experience Manager Assets] a extração de dados do modelo do InDesign e disponibilize-o para edição. Para obter detalhes, consulte [Integração de ativos do Experience Manager com o InDesign Server](/help/assets/indesign.md).
+   >Certifique-se de que sua [!DNL Experience Manager] instância esteja integrada com um [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] a extração de dados do [!DNL InDesign] modelo e disponibilizá-lo para edição. Para obter detalhes, consulte [integrar os ativos do Experience Manager ao InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar o texto em um campo editável, clique no campo de texto da lista de campos editáveis e edite o texto no campo.
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   É possível editar as propriedades do texto, por exemplo, estilo da fonte, cor e tamanho usando as opções fornecidas.
+   É possível editar as propriedades do texto, por exemplo, estilo de fonte, cor e tamanho usando as opções fornecidas.
 
 1. Clique em **[!UICONTROL Pré-visualização]** para pré-visualização das alterações de texto.
 
@@ -201,3 +193,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    >[!NOTE]
    >
    >Não é possível editar um colateral mesclado posteriormente ou usá-lo para criar outro colateral.
+
+## Práticas recomendadas e limitações {#best-practices-limitations-tips}
+
+* O editor do AEM InDesign funciona em um nível de tag e todo o texto sob uma única tag é considerado uma única entidade. Para preservar a formatação e os estilos do texto durante a edição, insira separadamente tags em cada parágrafo (ou texto com estilos diferentes).
