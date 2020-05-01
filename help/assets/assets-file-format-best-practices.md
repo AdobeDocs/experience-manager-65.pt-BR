@@ -3,7 +3,7 @@ title: Práticas recomendadas para processar os vários formatos de arquivo supo
 description: Práticas recomendadas para processar os vários tipos de arquivos suportados usando o [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
 
 ---
 
@@ -44,7 +44,7 @@ A Adobe recomenda usar [!DNL Adobe InDesign Server] para extrair execuções [!D
 
 [!DNL Dynamic Media] gera e oferece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho. Ele proporciona experiências de visualização interativas e simplifica o processo de gestão de campanha digital. Para obter detalhes sobre a ativação, consulte [!DNL Dynamic Media]Configuração do Dynamic Media [](/help/assets/config-dynamic.md).
 
-Atualmente, [!DNL Dynamic Media] é possível oferecer suporte a vídeos de até 20 GB de conteúdo por arquivo.
+Atualmente, [!DNL Dynamic Media] é possível oferecer suporte a vídeos com até 15 GB de conteúdo por arquivo.
 
 ## Biblioteca ImageMagick {#imagemagick-library}
 
