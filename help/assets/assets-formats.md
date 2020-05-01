@@ -3,7 +3,7 @@ title: Formatos compatíveis de ativos
 description: Lista de formatos de arquivo suportados pelo AEM Assets e pelo Dynamic Media e recursos compatíveis com cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1d16716d5fcf5b05a741b2d06d333e5f80e0d290
+source-git-commit: 134530e6e4cabc31342fc3136ec3218ba5acea4a
 
 ---
 
@@ -66,6 +66,17 @@ Além das informações acima, considere o seguinte:
 * Para usar o Dynamic Media para pré-visualização e gerar renderizações dinâmicas para arquivos EPS, consulte os formatos de arquivo [Adobe Illustrator (AI), Postscript (EPS) e PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de estruturação de Documentos PostScript (PS-Adobe).
+
+## Formatos de imagem rasterizada não suportados no Dynamic Media (#unsupported-image-format-dynamic-media)
+
+A lista a seguir descreve os subtipos de formatos de arquivo de imagem rasterizada que *não* são suportados no Dynamic Media.
+
+* Arquivos PNG com um tamanho de bloco IDAT maior que 100 MB.
+* Arquivos PSB.
+* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Escala de cinza ou Bitmap não são suportados. Espaços de cores Indexadas, Lab e DuoTone não são suportados.
+* Arquivos PSD com uma profundidade de bits superior a 16.
+* Arquivos TIFF com dados de ponto flutuante.
+* Arquivos TIFF com espaço de cor Lab.
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
@@ -283,7 +294,7 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/glo
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
