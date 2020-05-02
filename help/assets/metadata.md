@@ -3,7 +3,7 @@ title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Mana
 description: Saiba mais sobre os tipos de metadados e como o [!DNL Adobe Experience Manager Assets] ajuda a gerenciar metadados de ativos para facilitar a categorização e a organização de ativos. O [!DNL Experience Manager] permite organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: f21e9dbb81f18e07a691b2470c1c5b1569876b17
 
 ---
 
@@ -112,9 +112,9 @@ Você também pode projetar seus próprios esquemas de metadados se não houver 
 
 Os esquemas de metadados suportados estão listados abaixo.
 
-### Metadados padrão {#standard-metadata}
+### Metadados padronizados {#standard-metadata}
 
-* dc - [!DNL Dublin Core] é o conjunto de metadados mais importante e amplamente utilizado.
+* DC - [!DNL Dublin Core] é um conjunto importante e amplamente utilizado de metadados.
 * DICOM - Digital Imaging and Communications in Medicine (Imagem digital e comunicações em medicina).
 * Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard contém muitos metadados específicos para cada assunto.
 * rdf - Estrutura de Descrição do Recurso - para metadados semânticos genéricos da Web.
@@ -126,45 +126,45 @@ Os esquemas de metadados suportados estão listados abaixo.
 Os metadados específicos do aplicativo incluem metadados técnicos e descritivos. Se você os usar, outros aplicativos talvez não consigam usar os metadados. Por exemplo, se você tiver um ativo com [!DNL Adobe Photoshop] metadados e outro aplicativo de renderização de imagem tentar acessar os metadados, talvez ele não consiga acessar os metadados. Se você descobrir que tem muitos metadados específicos do aplicativo em seus ativos, poderá criar uma etapa de fluxo de trabalho que altera uma propriedade específica do aplicativo para uma propriedade padrão.
 
 * ACDSee - Metadados gerenciados pelo [!DNL ACDSee] programa. Consulte [www.acdsee.com/](https://www.acdsee.com/).
-* álbum - [!DNL Adobe Photoshop Album].
-* cq - Usado por [!DNL Experience Manager Assets].
-* dam - Usado por [!DNL Experience Manager Assets].
-* dex - Optima SC Description Explorer.
-* crs - Adobe Photoshop Camera Raw.
-* - [!DNL Adobe Lightroom].
-* mediapro - IView MediaPro.
+* Álbum - [!DNL Adobe Photoshop Album].
+* CQ - Usado por [!DNL Experience Manager Assets].
+* DAM - Usado por [!DNL Experience Manager Assets].
+* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) é uma coleção de ferramentas para gerenciamento de metadados e arquivos para sistemas operacionais Windows.
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto &amp; MP - Microsoft Photo.
-* pdf &amp; pdfx.
-* photoshop &amp; psAux - [!DNL Adobe Photoshop].
+* PDF e PDF/X.
+* Photoshop e psAux - [!DNL Adobe Photoshop].
 
 ### Metadados do Gerenciamento de direitos digitais {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* mais - Sistema [Universal de Licenciamento de](https://www.useplus.com)Imagens.
-* prismo - https://www.idealliance.org/prism-metadata de publicação do iOS para metadados padrão do setor.
+* PLUS - Sistema [Universal de Licenciamento de](https://www.useplus.com)Imagens.
+* PRISM - Requisitos de [publicação para metadados](https://www.idealliance.org/prism-metadata)padrão do setor.
 * PRL - Idioma dos Direitos do PRISM.
 * PUR - Direitos de uso do PRISM.
-* xmpPlus - Integração de PLUS com XMP.
+* `xmpPlus` - Integração da PLUS com a XMP.
 
 ### Metadados específicos da fotografia {#photography-specific-metadata}
 
 * Exif - Informações técnicas da câmera, incluindo a posição GPS.
 * CRS - [!DNL Camera Raw] schema.
-* Iptc4xmpCore e iptc4xmpExt.
+* `iptc4xmpCore` e `iptc4xmpExt`.
 * TIFF - metadados de imagem (não apenas para imagens TIFF).
 
 ### Metadados específicos para impressão {#print-specific-metadata}
 
-* pdf e pdfx - Adobe PDF e aplicativos de terceiros.
-* prismo - [www.prismstandard.org](https://www.prismstandard.org) de publicação da DPS para metadados padrão do setor.
-* xmp.
-* xmpPG - Metadados XMP para texto paginado.
+* PDF e PDF/X - Adobe PDF e aplicativos de terceiros.
+* PRISM - [www.prismstandard.org](https://www.prismstandard.org) de publicação da DPS para metadados padrão do setor.
+* XMP.
+* `xmpPG` - Metadados XMP para texto paginado.
 
 ### Metadados específicos de multimídia {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media].
-* xmpMM - Gerenciamento de mídia.
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` - Gerenciamento de mídia.
 
 ## workflows orientados por metadados {#metadata-driven-workflows}
 
