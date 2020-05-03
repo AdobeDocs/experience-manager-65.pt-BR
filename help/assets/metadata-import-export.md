@@ -3,7 +3,7 @@ title: Importe e exporte metadados de ativos em massa.
 description: Importação e exportação em massa de metadados de ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 2fd9a32396152eaf46e69c3141cbe1b6a69a3891
 
 ---
 
@@ -34,6 +34,12 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | [!UICONTROL Nome de coluna do caminho do ativo] | Define o nome da coluna para o arquivo CSV com ativos. |
 
 1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é enviada para sua caixa de entrada de [!UICONTROL Notificação] . Navegue até a página de propriedades do ativo e verifique se os valores de metadados foram importados corretamente para ativos.
+
+Para adicionar data e carimbo de data e hora ao importar metadados, use o `YYYY-MM-DDThh:mm:ss.fff-00:00` formato para data e hora. A data e a hora são separadas por `T`, `hh` é horas no formato de 24 horas, `fff` é nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 da hora PST.
+
+>[!CAUTION]
+>
+>Se o formato de data não corresponder `YYYY-MM-DDThh:mm:ss.fff-00:00`, os valores de data não serão definidos. Os formatos de data do arquivo CSV de metadados exportados estão no formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desejar importá-lo, converta-o no formato aceitável adicionando o valor de nanossegundos indicado por `fff`.
 
 ## Exportar metadados {#export-metadata}
 
