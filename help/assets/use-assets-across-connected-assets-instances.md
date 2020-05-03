@@ -3,7 +3,7 @@ title: Use os ativos conectados para compartilhar ativos DAM no fluxo de trabalh
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] ao criar suas páginas da Web em outra implantação do Site do Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 2cdcea028814b40fb178e63f583939df27a46cad
 
 ---
 
@@ -37,7 +37,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
 Os autores podem pesquisar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao componente `Download` e as imagens podem ser adicionadas ao componente `Image`. Authors can also add the remote assets in any custom Experience Manager component that extends the default `Download` or `Image` components. A lista de formatos suportados são:
 
-* **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/image.html) Imagem são suportados pelos Ativos conectados. [!DNL Dynamic Media] as imagens não são compatíveis.
+* **Formatos** de imagem: Os formatos de imagem suportados pelo componente [](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) Imagem são suportados pelos Ativos conectados. [!DNL Dynamic Media] as imagens não são compatíveis.
 * **Formatos de documento**: consulte [Formatos de documento compatíveis com os Connected Assets](assets-formats.md#supported-document-formats).
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
@@ -46,12 +46,12 @@ As várias funções envolvidas para configurar e usar o recurso e seus grupos d
 
 | Função | Escopo | Grupo de usuários | Nome do usuário na apresentação | Requisito |
 |---|---|---|---|---|
-| [!DNL Sites] administrador | Local | Administrador do Experience Manager | `admin` | Set up Experience Manager, configure integration with the remote [!DNL Assets] deployment. |
-| Usuário do DAM | Local | Autor | `ksaner` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Local | Author (with read access on the remote DAM and author access on local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Os autores pesquisam e procuram ativos no DAM remoto usando o Localizador de conteúdo e usando as imagens necessárias nas páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
-| [!DNL Assets] administrador | Remoto | Administrador do Experience Manager | `admin` sobre o Experience Manager remoto | Configure o CORS (Cross-Origin Resource Sharing). |
-| Usuário do DAM | Remoto | Autor | `ksaner` sobre o Experience Manager remoto | Função de autor na implantação remota do Experience Manager. Pesquise e procure ativos no Connected Assets usando o Localizador de conteúdo. |
-| Distribuidor do DAM (usuário técnico) | Remoto | construtores de pacotes e autores de sites | `ksaner` sobre o Experience Manager remoto | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Essa função não é igual às duas funções `ksaner` acima e pertence a um grupo de usuários diferente. |
+| [!DNL Sites] administrador | Local | Experience Manager `administrators` | `admin` | Set up Experience Manager, configure integration with the remote [!DNL Assets] deployment. |
+| Usuário do DAM | Local | `Authors` | `ksaner` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
+| [!DNL Sites] author | Local | `Authors` (com acesso de leitura no DAM remoto e acesso de autor no local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Os autores pesquisam e procuram ativos no DAM remoto usando o Localizador de conteúdo e usando as imagens necessárias nas páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
+| [!DNL Assets] administrador | Remoto | Experience Manager `administrators` | `admin` sobre o Experience Manager remoto | Configure o CORS (Cross-Origin Resource Sharing). |
+| Usuário do DAM | Remoto | `Authors` | `ksaner` sobre o Experience Manager remoto | Função de autor na implantação remota do Experience Manager. Pesquise e procure ativos no Connected Assets usando o Localizador de conteúdo. |
+| Distribuidor do DAM (usuário técnico) | Remoto | `Authors` | `ksaner` sobre o Experience Manager remoto | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Essa função não é igual às duas funções `ksaner` acima e pertence a um grupo de usuários diferente. |
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -151,7 +151,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
-## Limitações        {#limitations}
+## Limitações         {#limitations}
 
 **Permissões e gerenciamento de ativos**
 
