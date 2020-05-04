@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
 
 # Introdução aos SPAs no AEM - Reagir{#getting-started-with-spas-in-aem-react}
 
-Os aplicativos de página única (SPAs) podem oferecer experiências interessantes para os usuários do site. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo no AEM sem problemas para um site criado usando estruturas SPA.
+Os aplicativos de página única (SPAs) podem oferta experiências interessantes para os usuários do site. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo no AEM sem problemas para um site criado usando estruturas SPA.
 
-O recurso de criação do SPA oferece uma solução abrangente para suportar SPAs no AEM. Este artigo apresenta um aplicativo SPA simplificado na estrutura React, explica como ele é montado, permitindo que você se familiarize com seu próprio SPA rapidamente.
+O recurso de criação do SPA oferta uma solução abrangente para suportar SPAs no AEM. Este artigo apresenta um aplicativo SPA simplificado na estrutura React, explica como ele é montado, permitindo que você se familiarize com seu próprio SPA rapidamente.
 
 >[!NOTE]
 >
@@ -42,11 +42,11 @@ Para obter mais detalhes sobre como os SPAs funcionam no AEM, consulte os seguin
 
 >[!NOTE]
 >
->Para poder criar conteúdo dentro de um SPA, o conteúdo deve ser armazenado no AEM e exposto pelo modelo de conteúdo.
+>Para poder criar conteúdo em um SPA, o conteúdo deve ser armazenado no AEM e exposto pelo modelo de conteúdo.
 >
 >Um SPA desenvolvido fora do AEM não será autorável se não respeitar o contrato do modelo de conteúdo.
 
-Este documento abordará a estrutura de um SPA simplificado criado usando a estrutura React e ilustrará como ele funciona para que você possa aplicar esse entendimento ao seu próprio SPA.
+Este documento percorrerá a estrutura de um SPA simplificado criado usando a estrutura React e ilustrará como ele funciona para que você possa aplicar esse entendimento ao seu próprio SPA.
 
 ## Dependências, configuração e criação {#dependencies-configuration-and-building}
 
@@ -118,15 +118,15 @@ Na verdade, a criação do aplicativo aproveita o [Webpack](https://webpack.js.o
 
 Depois de criado, o pacote pode ser carregado para uma instância do AEM.
 
-### Maven Archetype para o kit de início SPA {#maven-archetype-for-spa-starter-kit}
+### AEM Project Archetype {#aem-project-archetype}
 
-A Adobe recomenda aproveitar o [Maven Archetype para SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) para ajudá-lo a iniciar seu próprio projeto SPA para o AEM.
+Qualquer projeto do AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA.
 
 ## Estrutura do aplicativo {#application-structure}
 
 Incluir as dependências e criar seu aplicativo conforme descrito anteriormente deixará você com um pacote SPA em funcionamento que pode ser carregado para a instância do AEM.
 
-A próxima seção deste documento abordará como um SPA no AEM é estruturado, os arquivos importantes que acionam o aplicativo e como eles trabalham juntos.
+A próxima seção deste documento o orientará sobre como um SPA no AEM é estruturado, os arquivos importantes que acionam o aplicativo e como eles trabalham juntos.
 
 Um componente de imagem simplificado é usado como exemplo, mas todos os componentes do aplicativo são baseados no mesmo conceito.
 
@@ -193,7 +193,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 Neste exemplo, a `AppPage` classe se estende `Page`, que contém os métodos de conteúdo interno que podem ser usados.
 
-O `Page` assimila a representação JSON do modelo de página e processa o conteúdo para envolver/decorar cada elemento da página. Para obter mais detalhes sobre o documento, `Page` consulte [SPA Blueprint (Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501)SPA).
+O `Page` assimila a representação JSON do modelo de página e processa o conteúdo para envolver/decorar cada elemento da página. Para obter mais detalhes sobre o `Page` documento, consulte [SPA Blueprint (Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501)do SPA do adaptador SPA).
 
 ### Image.js {#image-js}
 
@@ -224,7 +224,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-A ideia central dos SPAs no AEM é mapear componentes do SPA para componentes do AEM e atualizar o componente quando o conteúdo é modificado (e vice-versa). Consulte o documento Visão geral [do editor](/help/sites-developing/spa-overview.md) SPA para obter um resumo desse modelo de comunicação.
+A ideia central dos SPAs no AEM é mapear componentes do SPA para componentes do AEM e atualizar o componente quando o conteúdo é modificado (e vice-versa). Consulte Visão geral [do editor](/help/sites-developing/spa-overview.md) SPA do documento para obter um resumo desse modelo de comunicação.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -267,13 +267,13 @@ Para obter mais informações, consulte o documento [](/help/sites-developing/sp
 >
 >Por padrão, você recebe o modelo inteiro do componente ao usar a `withModel` função.
 
-## Compartilhamento de informações entre componentes SPA {#sharing-information-between-spa-components}
+## Compartilhamento de informações entre componentes do SPA {#sharing-information-between-spa-components}
 
 É necessário que os componentes de um aplicativo de página única compartilhem informações regularmente. Há várias maneiras recomendadas de fazer isso, listadas a seguir, para aumentar a ordem de complexidade.
 
-* **** Opção 1: Centralize a lógica e transmita para os componentes necessários, por exemplo, usando Reagir contexto.
-* **** Opção 2: Compartilhe estados de componentes usando uma biblioteca de estados como Redux.
-* **** Opção 3: Aproveite a hierarquia de objetos personalizando e estendendo o componente de contêiner.
+* **Opção 1:** Centralize a lógica e transmita para os componentes necessários, por exemplo, usando Reagir contexto.
+* **Opção 2:** Compartilhe estados de componentes usando uma biblioteca de estados como Redux.
+* **Opção 3:** Aproveite a hierarquia de objetos personalizando e estendendo o componente de container.
 
 ## Próximas etapas {#next-steps}
 
