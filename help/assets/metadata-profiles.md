@@ -3,7 +3,7 @@ title: perfis de metadados para personalizar os requisitos de metadados dos ativ
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos da pasta.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 ---
 
@@ -54,7 +54,6 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
 1. Toque/ clique em **[!UICONTROL Concluído]**. O Perfil Metadados é adicionado à lista de perfis na página Perfis **** Metadados.<br>
 
-
    ![perfil de metadados adicionado à página Perfis de metadados](assets/MetadataProfiles-page.png)
 
 ## Copiar um perfil de metadados {#copying-a-metadata-profile}
@@ -73,7 +72,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
 1. Na página Perfis **[!UICONTROL de]** metadados, selecione um perfil a ser excluído.
 
-   ![chlimage_1-206](assets/chlimage_1-488.png)
+   ![chlimage_1-205](assets/chlimage_1-488.png)
 
 1. Para[] **[!UICONTROL Excluir Perfis]** de metadados na barra de ferramentas.
 1. Na caixa de diálogo, clique em **[!UICONTROL Excluir]** para confirmar a operação de exclusão. O perfil de metadados é excluído da lista.
@@ -128,13 +127,13 @@ Além de aplicar um perfil a uma pasta, também é possível aplicar um globalme
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de metadados existente que você tenha alterado posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
 
-**Para aplicar um perfil de metadados globalmente, execute um dos procedimentos a seguir**
+Para aplicar um perfil de metadados globalmente, siga estas etapas:
 
 * Navegue até `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` e aplique o perfil apropriado e toque em **[!UICONTROL Salvar]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
-* Navegue até CRXDE Lite até o seguinte nó: `/content/dam/jcr:content`. Adicione a propriedade `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` e toque em **Salvar tudo**.
+* No CRXDE Lite, navegue até o seguinte nó: `/content/dam/jcr:content`. Adicione a propriedade `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` e clique em **[!UICONTROL Salvar tudo]**.
 
    ![chlimage_1-210](assets/chlimage_1-493.png)
 
@@ -157,6 +156,10 @@ Remova um perfil de metadados a uma pasta do menu **[!UICONTROL Ferramentas]** o
 1. Toque no logotipo do AEM e navegue **[!UICONTROL pelos Ativos]** e, em seguida, até a pasta da qual você deseja remover um perfil de metadados.
 1. Na pasta, toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+
+## Limitações e práticas recomendadas {#limitations-best-practices-tips}
+
+* Você pode ter perfis de metadados pré-existentes desde antes de atualizar para a versão [!DNL Experience Manager] 6.5. Após a atualização, se esse perfil for aplicado nas [!UICONTROL Propriedades] da pasta na guia Perfis [!UICONTROL de] metadados, os campos do formulário de metadados não serão exibidos. No entanto, se um perfil de metadados recém-criado for aplicado, os campos do formulário serão exibidos, mas não estarão disponíveis conforme esperado. Não há perda de funcionalidade, mas se você quiser ver os campos de formulário (indisponíveis), edite e salve os perfis de metadados existentes.
 
 >[!MORELIKETHIS]
 >
