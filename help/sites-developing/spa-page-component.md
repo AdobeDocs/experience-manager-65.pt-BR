@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
 
 ---
 
@@ -85,7 +85,13 @@ As propriedades dos recursos meta que descrevem o conteúdo do SPA:
 
 * `cq:pagemodel_router`: Ativar ou desativar a ` [ModelRouter](/help/sites-developing/spa-routing.md)` biblioteca `PageModelManager`
 
-* `cq:pagemodel_route_filters`: Lista separada por vírgulas ou expressões regulares para fornecer rotas que ` [ModelRouter](/help/sites-developing/spa-routing.md)` devem ser ignoradas.
+* `cq:pagemodel_route_filters`: lista separada por vírgulas ou expressões regulares para fornecer rotas que ` [ModelRouter](/help/sites-developing/spa-routing.md)` devem ser ignoradas.
+
+>[!CAUTION]
+>
+>Este documento usa o aplicativo do Journal We.Retail apenas para fins de demonstração. Não deve ser utilizado para qualquer trabalho de projeto.
+>
+>Qualquer projeto do AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA. Todos os projetos SPA no AEM devem ter por base o Maven Archetype for SPA Starter Kit.
 
 ## Sincronização de sobreposição do editor de páginas {#page-editor-overlay-synchronization}
 
@@ -93,9 +99,9 @@ A sincronização das sobreposições é garantida pelo mesmo Observador de Muta
 
 ## Configuração da Estrutura Exportada JSON do Modelo Sling {#sling-model-json-exported-structure-configuration}
 
-Quando os recursos de roteamento estiverem ativados, presume-se que a exportação JSON do SPA contenha as diferentes rotas do aplicativo graças à exportação JSON do componente de navegação do AEM. A saída JSON do componente de navegação do AEM pode ser configurada na política de conteúdo da página raiz do SPA por meio das duas propriedades a seguir:
+Quando os recursos do roteamento estiverem ativados, a suposição é que a exportação JSON do SPA contenha as diferentes rotas do aplicativo graças à exportação JSON do componente de navegação do AEM. A saída JSON do componente de navegação do AEM pode ser configurada na política de conteúdo da página raiz do SPA por meio das duas propriedades a seguir:
 
 * `structureDepth`: Número correspondente à profundidade da árvore exportada
-* `structurePatterns`: Regex de matriz de regex correspondente à página a exportar
+* `structurePatterns`: Regex de matriz de regex correspondente à página a ser exportada
 
 Isso pode ser mostrado no conteúdo de amostra do SPA em `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.
