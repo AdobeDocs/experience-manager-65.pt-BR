@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
 
 ---
 
@@ -36,13 +36,9 @@ Isso ajuda um desenvolvedor a:
 >
 >* Está disponível somente na interface habilitada para toque (ao editar páginas).
 >* Não está disponível em dispositivos móveis ou janelas pequenas na área de trabalho (devido a restrições de espaço).
->
->    * Isso ocorre quando a largura é inferior a 1024px.
->
->* Exige as permissões/privilégios apropriados:
->
->    * O acesso ao modo Desenvolvedor é concedido aos usuários que têm acesso de gravação `/apps`.
->
+   >   * Isso ocorre quando a largura é inferior a 1024px.
+>* Está disponível somente para usuários que são membros do `administrators` grupo.
+
 
 >[!CAUTION]
 >
@@ -103,7 +99,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-* **Exibir detalhes**: um link para uma lista que mostra:
+* **Detalhes** da Visualização: um link para uma lista que mostra:
 
    * todos os scripts de componente usados para renderizar o componente.
    * o caminho do conteúdo do repositório para esse componente específico.
@@ -115,7 +111,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
 * A expansão de uma entrada de componente (ponta de seta) também pode mostrar:
 
-   * A hierarquia no componente selecionado.
+   * A hierarquia dentro do componente selecionado.
    * Tempos de renderização do componente selecionado isoladamente, todos os componentes individuais aninhados dentro dele e o total combinado.
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
