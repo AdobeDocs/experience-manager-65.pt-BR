@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
@@ -21,14 +21,22 @@ As Classificações da Adobe exportam dados de classificações para o [Adobe An
 
 Para configurar isso:
 
-1. Navegue pelas **Ferramentas, Serviços** da nuvem até a seção **Adobe Analytics** .
-1. Adicione uma nova configuração. Você verá que o modelo Configuração de classificações **do** Adobe Analytics é exibido abaixo da configuração da Estrutura **do** Adobe Analytics. Forneça um **Título** e um **Nome** , conforme necessário:
+1. Usando a **Navegação**, selecione **Ferramentas**, Serviços **** em nuvem e Serviços **** herdados em nuvem.
+1. Role até **Adobe Analytics** e selecione **Mostrar configurações**.
+1. Clique no link **[+]** ao lado da configuração do Adobe Analytics.
 
-   ![aa-25](assets/aa-25.png)
+1. Na caixa de diálogo **Criar estrutura** :
 
-1. Clique em **Criar** para definir as configurações.
+   * Especifique um **Título**.
+   * Opcionalmente, você pode especificar o **Nome**, para o nó que armazena os detalhes da estrutura no repositório.
+   * Selecionar classificações **do Adobe Analytics**
+   E clique em **Criar**.
 
-   ![chlimage_1](assets/chlimage_1a.png)
+   ![Caixa de diálogo Criar estrutura](assets/aa-25.png)
+
+1. A caixa de diálogo Configurações **de** classificações é aberta para edição.
+
+   ![Caixa de diálogo Configurações de classificações](assets/aa-classifications-settings.png)
 
    As propriedades incluem:
 
@@ -42,7 +50,7 @@ Para configurar isso:
    | Conjunto de relatórios | Informe o Conjunto de relatórios para o qual executar a tarefa de importação. |
    | Conjunto de Dados | Informe a ID de relação do conjunto de dados para executar o trabalho de importação. |
    | Transformador | No menu suspenso, selecione uma implementação de transformador. |
-   | Fonte de Dados | Navegue até o caminho do contêiner de dados. |
+   | Fonte de Dados | Navegue até o caminho para o container de dados. |
    | Exportar programação | Selecione o agendamento para a exportação. O padrão é a cada 30 minutos. |
 
 1. Click **OK** to save your settings.
@@ -122,7 +130,7 @@ As propriedades incluem:
    <td>Sinalizador para substituir colisões de dados. O padrão é <strong>falso</strong>.</td>
   </tr>
   <tr>
-   <td>divisões</td>
+   <td>divisões de verificação</td>
    <td>Sinalize para verificar a compatibilidade dos conjuntos de relatórios. Default is <strong>true</strong>.</td>
   </tr>
   <tr>
