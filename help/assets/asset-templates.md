@@ -1,9 +1,12 @@
 ---
 title: Modelos de ativos em [!DNL Adobe Experience Manager Assets].
-description: Saiba mais sobre os modelos de ativos no [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais de suporte de marketing.
+description: Saiba mais sobre os modelos de ativos [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais promocionais de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1553'
+ht-degree: 0%
 
 ---
 
@@ -196,4 +199,4 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
 ## Práticas recomendadas e limitações {#best-practices-limitations-tips}
 
-* O editor do AEM InDesign funciona em um nível de tag e todo o texto sob uma única tag é considerado uma única entidade. Para preservar a formatação e os estilos do texto durante a edição, insira separadamente tags em cada parágrafo (ou texto com estilos diferentes).
+* O editor [!DNL InDesign] [!DNL Experience Manager] funciona em um nível de tag e todo o texto sob uma única tag é considerado uma única entidade. Para preservar a formatação e os estilos do texto durante a edição, insira separadamente tags em cada parágrafo (ou texto com estilos diferentes).
