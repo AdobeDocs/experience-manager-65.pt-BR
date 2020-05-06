@@ -1,9 +1,12 @@
 ---
-title: Práticas recomendadas para monitorar a implantação do [!DNL Adobe Experience Manager Assets].
-description: Práticas recomendadas para monitorar o ambiente e o desempenho de sua implantação do [!DNL Adobe Experience Manager] após sua implantação.
+title: Práticas recomendadas para [!DNL Adobe Experience Manager Assets] monitorar a implantação.
+description: Práticas recomendadas para monitorar o ambiente e o desempenho de [!DNL Adobe Experience Manager] sua implantação após sua implantação.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1673'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +149,7 @@ Estas são algumas verificações de integridade prontas que são úteis para mo
 
 * Fila de replicação
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * Instâncias: Um autor, todos os servidores de publicação
    * Limiar de alarme: Quando o status não estiver OK
@@ -184,7 +187,7 @@ Estas são algumas verificações de integridade prontas que são úteis para mo
    * Limiar de alarme: Quando o status não estiver OK
    * Definição do alarme: Há erros nos arquivos de registro. Verifique o atributo log para obter mais informações sobre a causa do problema.
 
-## Questões comuns e resoluções {#common-issues-and-resolutions}
+## Questões comuns e resoluções  {#common-issues-and-resolutions}
 
 No processo de monitoramento, se você encontrar problemas, veja algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com [!DNL Experience Manager] implantações:
 
