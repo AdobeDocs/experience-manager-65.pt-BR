@@ -3,7 +3,10 @@ title: Processar ativos usando manipuladores de mídia e workflows
 description: Saiba mais sobre os manipuladores de mídia e como usar workflows para executar tarefas em seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 4%
 
 ---
 
@@ -448,7 +451,7 @@ As seguintes conversões podem ser executadas e armazenadas automaticamente nos 
 
 >[!NOTE]
 >
->Em sistemas que não sejam Windows, a ferramenta FFMpeg retorna um erro ao gerar execuções para um ativo de vídeo que tem uma única citação (&#39;) no nome do arquivo. Se o nome do arquivo de vídeo incluir uma única citação, remova-a antes de carregá-la para o AEM.
+>Em sistemas que não sejam Windows, a ferramenta FFmpeg retorna um erro ao gerar execuções para um ativo de vídeo que tem uma única citação (&#39;) em seu nome de arquivo. Se o nome do arquivo de vídeo incluir uma única citação, remova-a antes de carregá-la para o AEM.
 
 O `CommandLineProcess` processo executa as seguintes operações na ordem em que são listadas:
 
