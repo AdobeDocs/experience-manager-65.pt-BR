@@ -4,7 +4,10 @@ description: Saiba mais sobre tarefas para gerenciar coleções de ativos, como 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '2229'
+ht-degree: 13%
 
 ---
 
@@ -202,8 +205,6 @@ Você pode editar configurações da coleção, como título e descrição, ou a
 ## Excluir uma coleção {#deleting-a-collection}
 
 1. No console Coleções, selecione uma ou mais coleções e clique no ícone excluir na barra de ferramentas.
-
-   ![chlimage_1-11](assets/chlimage_1-177.png)
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Excluir]** para confirmar a ação de exclusão.
 
