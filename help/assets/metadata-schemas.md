@@ -3,9 +3,9 @@ title: 'schemas de metadados para definir o layout da página de propriedades de
 description: O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6151c1afe3006e8d4b93648fc9eb779c73df4181
+source-git-commit: 739f1c6fcc910ed134849c27a44a6feccd1684c9
 workflow-type: tm+mt
-source-wordcount: '2741'
+source-wordcount: '2738'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ As organizações vêm com um modelo de metadados que aprimora a descoberta de a
 
 Em [!DNL Adobe Experience Manager Assets], os schemas contêm campos específicos para informações específicas a serem preenchidas. Ele também contém informações de layout para exibir campos de metadados de uma forma fácil de usar. As propriedades de metadados incluem título, descrição, tipos MIME, tags e muito mais. Você pode usar o editor de Formulários [!UICONTROL de Schemas de] Metadados para modificar os schemas existentes ou adicionar schemas de metadados personalizados.
 
-Para visualização da página de propriedades de um ativo, siga estas etapas:
+Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
 
 1. Clique ou toque no ícone Propriedades **[!UICONTROL da]** Visualização em Ações rápidas no bloco de ativo em visualização de cartão.
 
@@ -35,36 +35,22 @@ Para visualização da página de propriedades de um ativo, siga estas etapas:
 
 Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Editar formulários](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) de Schema de metadados para obter mais informações. Se você modificar o schema de metadados de um determinado tipo MIME, o layout da página de propriedades para ativos com o tipo MIME atual e todos os subtipos de ativos serão modificados. Por exemplo, modificar um schema jpeg em `default/image` modifica somente o layout de metadados (propriedades do ativo) para ativos com tipo MIME `image/jpeg`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
 
-1. Para visualização de uma lista de formulários/modelos, na [!DNL Experience Manager] interface, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **** de metadados.
+## Formulários de esquema de metadados {#default-metadata-schema-forms}
 
-## Formulários de Schema de metadados disponíveis por padrão {#available-metadata-schema-templates}
+Para visualização de uma lista de formulários/modelos, na [!DNL Experience Manager] interface, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **** de metadados.
 
-[!DNL Experience Manager] fornece os seguintes modelos:
+[!DNL Experience Manager] fornece os seguintes modelos de formulário de Schema de metadados:
 
-### default {#default-template}
-
-O [!UICONTROL padrão] é o formulário de schema de metadados base para ativos. Os seguintes formulários filho herdam as propriedades do formulário padrão:
-
-**image** é o formulário de schema para ativos com o tipo MIME &quot;image&quot;. Por exemplo, `image/jpeg`, `image/png`e assim por diante. O formulário &quot;image&quot; tem os seguintes modelos de formulário filho:
-* **jpeg** é o formulário de schema para ativos com subtipo `jpeg`.
-
-* **tiff** é o formulário de schema para os ativos com subtipo `tiff`.
-
-**application** é o formulário de schema para ativos com tipo MIME `application`. Por exemplo, `application/pdf`, `application/zip`e assim por diante. **pdf** é o formulário de schema para ativos com subtipo `pdf`.
-
-**video** é o formulário de schema para ativos com tipo MIME `video`, como `video/avi`, `video/mp4`etc.
-
-### collection {#collection-template}
-
-A [!UICONTROL coleção] é o formulário de schema para coleções.
-
-### contentfragment {#contentfragment-template}
-
-O fragmento de [!UICONTROL conteúdo] é o formulário de schema para Fragmentos de conteúdo.
-
-### forms {#forms-template}
-
-O formulário de schema de [!UICONTROL formulários] está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md).
+| Modelos |  | Descrição |
+|---|---|---|
+| [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
+|  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Formulário de Schema para ativos com o tipo MIME &quot;image&quot;, por exemplo, image/jpeg, image/png e assim por diante. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com [!UICONTROL tiff]de subtipo.</li></ul> |
+|  | <ul><li> [!UICONTROL aplicativo]</li></ul> | Formulário de Schema para ativos com tipo MIME &quot;application&quot; (aplicativo), por exemplo application/ pdf, application/ zip e assim por diante. <br>[!UICONTROL pdf]: Formulário de Schema para ativos com pdf de subtipo. |
+|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de Schema para ativos com MIME tipo &quot;vídeo&quot;, como vídeo/avi, vídeo/mp4 e assim por diante. |
+| [!UICONTROL collection] |  | Formulário de Schema para coleções. |
+| [!UICONTROL contentfragment] |  | Formulário de Schema para fragmentos de conteúdo. |
+| [!UICONTROL formulários] |  | Este formulário de schema está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
