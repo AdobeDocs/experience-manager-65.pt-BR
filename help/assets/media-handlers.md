@@ -1,11 +1,11 @@
 ---
-title: Processar ativos usando manipuladores de mídia e workflows
+title: Processar ativos usando manipuladores de mídia e workflows em [!DNL Adobe Experience Manager].
 description: Saiba mais sobre os manipuladores de mídia e como usar workflows para executar tarefas em seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2119'
 ht-degree: 4%
 
 ---
@@ -13,25 +13,27 @@ ht-degree: 4%
 
 # Processar ativos usando manipuladores de mídia e workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Os ativos Adobe Experience Manager (AEM) vêm com um conjunto de workflows padrão e manipuladores de mídia para processar ativos. Um fluxo de trabalho define as tarefas a serem executadas nos ativos e, em seguida, delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
+[!DNL Adobe Experience Manager Assets] vem com um conjunto de workflows padrão e manipuladores de mídia para processar ativos. Um fluxo de trabalho define as tarefas a serem executadas nos ativos e, em seguida, delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
 
-Um fluxo de trabalho pode ser configurado para ser executado automaticamente quando um ativo de um tipo MIME específico é carregado. As etapas de processamento são definidas em termos de uma série de manipuladores de mídia do AEM Assets. O AEM fornece alguns manipuladores [integrados,](#default-media-handlers) e outros podem ser desenvolvidos [](#creating-a-new-media-handler) personalizados ou definidos delegando o processo a uma ferramenta [de linha de](#command-line-based-media-handler)comando.
+Um fluxo de trabalho pode ser configurado para ser executado automaticamente quando um ativo de um tipo MIME específico é carregado. As etapas de processamento são definidas em termos de uma série de manipuladores de [!DNL Assets] mídia. [!DNL Experience Manager] fornece alguns manipuladores [integrados,](#default-media-handlers) e outros podem ser desenvolvidos [](#creating-a-new-media-handler) personalizados ou definidos delegando o processo a uma ferramenta [de linha de](#command-line-based-media-handler)comando.
 
-Os manipuladores de mídia são serviços dentro dos ativos AEM que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado no AEM, um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com workflows. Os tipos MIME mais comuns são suportados no AEM. tarefas específicas podem ser executadas em ativos estendendo/criando workflows, estendendo/criando manipuladores de mídia ou desabilitando/habilitando manipuladores de mídia.
+Os manipuladores de mídia são serviços em [!DNL Assets] que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado [!DNL Experience Manager], um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com workflows. Os tipos MIME mais comuns são suportados dentro [!DNL Experience Manager]. tarefas específicas podem ser executadas em ativos estendendo/criando workflows, estendendo/criando manipuladores de mídia ou desabilitando/habilitando manipuladores de mídia.
 
 >[!NOTE]
 >
->Consulte a página de formatos [suportados pelos](assets-formats.md) ativos para obter uma descrição de todos os formatos suportados pelos ativos AEM, bem como dos recursos suportados para cada formato.
+>Consulte a página de formatos [suportados pelos](assets-formats.md) Ativos para obter uma descrição de todos os formatos suportados por [!DNL Assets] eles, bem como dos recursos suportados para cada formato.
 
 ## Manipuladores de mídia padrão {#default-media-handlers}
 
-Os seguintes manipuladores de mídia estão disponíveis nos ativos AEM e lidam com os tipos MIME mais comuns:
+Os seguintes manipuladores de mídia estão disponíveis em [!DNL Assets] e lidam com os tipos MIME mais comuns:
 
-<!-- TBD: Apply correct formatting once table is moved to MD.
+<!-- TBD: 
+* Apply correct formatting once table is moved to MD.
+* Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
-| Nome do manipulador | Nome do serviço (no Console do sistema) | Tipos MIME suportados |
-|---|---|---|
+| Nome do manipulador | Nome do serviço (no console do sistema) | Tipos MIME suportados |
+|--------------|--------------------------------------|----------------------|
 | [!UICONTROL TextHandler] | `com.day.cq.dam.core.impl.handler.TextHandler` | text/plain |
 | [!UICONTROL PdfHandler] | `com.day.cq.dam.handler.standard.pdf.PdfHandler` | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | `com.day.cq.dam.core.impl.handler.JpegHandler` | image/jpeg |
@@ -62,7 +64,7 @@ Para visualização dos manipuladores de mídia ativos:
 
 Os manipuladores de mídia são serviços normalmente usados em combinação com workflows.
 
-O AEM tem alguns workflows padrão para processar ativos. Para visualização, abra o console Fluxo de trabalho e clique na guia **[!UICONTROL Modelos]** : os títulos de fluxo de trabalho que são start com os ativos AEM são os ativos específicos.
+[!DNL Experience Manager] tem alguns workflows padrão para processar ativos. Para visualização, abra o console Fluxo de trabalho e clique na guia **[!UICONTROL Modelos]** : os títulos de fluxo de trabalho que são start [!DNL Assets] são os ativos específicos.
 
 workflows existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
 
@@ -103,7 +105,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 A interface e as classes incluem:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo mime requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
 * `com.day.cq.dam.core.AbstractAssetHandler` classe: Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum.
 * classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
    * Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum usada, além da funcionalidade comum usada para extração de subativos.
@@ -114,7 +116,7 @@ A interface e as classes incluem:
 
 * `extractMetadata()`: este método extrai todos os metadados disponíveis.
 * `getThumbnailImage()`: esse método cria uma imagem em miniatura do ativo passado.
-* `getMimeTypes()`: esse método retorna o(s) tipo(s) mime(s) do ativo.
+* `getMimeTypes()`: este método retorna o(s) tipo(s) MIME do ativo.
 
 Este é um modelo de exemplo:
 
@@ -122,7 +124,7 @@ empacotar my.own.stuff /&amp;ast;&amp;ast; &amp;ast; @scr.component hereit=&quot
 
 A interface e as classes incluem:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo mime requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
+* `com.day.cq.dam.api.handler.AssetHandler` interface: Esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um novo tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
 * `com.day.cq.dam.core.AbstractAssetHandler` classe: Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` classe: Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece funcionalidade comum usada, além da funcionalidade usada comum para a extração de subativos.
 
@@ -132,28 +134,28 @@ Nesta seção, você criará um manipulador de texto específico que gera miniat
 
 Proceda do seguinte modo:
 
-Consulte Ferramentas [de](../sites-developing/dev-tools.md) desenvolvimento para instalar e configurar o Eclipse com um plug-in Maven e para configurar as dependências necessárias para o projeto Maven.
+Consulte Ferramentas [de](../sites-developing/dev-tools.md) desenvolvimento para instalar e configurar o Eclipse com um [!DNL Maven] plug-in e para configurar as dependências necessárias para o [!DNL Maven] projeto.
 
-Depois de executar o procedimento a seguir, ao carregar um arquivo de texto no AEM, os metadados do arquivo são extraídos e duas miniaturas com uma marca d&#39;água são geradas.
+Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT para [!DNL Experience Manager], os metadados do arquivo são extraídos e duas miniaturas com uma marca d&#39;água são geradas.
 
-1. No Eclipse, crie um projeto `myBundle` Maven:
+1. No Eclipse, crie `myBundle` [!DNL Maven] o projeto:
 
    1. Na barra de menus, clique em **[!UICONTROL Arquivo > Novo > Outro]**.
-   1. Na caixa de diálogo, expanda a pasta Maven, selecione Projeto Maven e clique em **[!UICONTROL Avançar]**.
+   1. Na caixa de diálogo, expanda a [!DNL Maven] pasta, selecione [!DNL Maven] projeto e clique em **[!UICONTROL Avançar]**.
    1. Marque a caixa Criar um projeto simples e a caixa Usar locais padrão da Workspace e clique em **[!UICONTROL Avançar]**.
-   1. Defina o projeto Maven:
+   1. Defina um [!DNL Maven] projeto:
 
-      * ID do grupo: com.day.cq5.myhandler
-      * Id do artefato: myBundle
-      * Nome: Meu pacote do AEM
-      * Descrição: Este é meu pacote do AEM
+      * ID do grupo: `com.day.cq5.myhandler`.
+      * Id do artefato: myBundle.
+      * Nome: Meu [!DNL Experience Manager] pacote.
+      * Descrição: Este é o meu [!DNL Experience Manager] pacote.
    1. Click **[!UICONTROL Finish]**.
 
 
-1. Defina o compilador Java para a versão 1.5:
+1. Defina o [!DNL Java] compilador para a versão 1.5:
 
-   1. Clique com o botão direito do mouse no `myBundle` projeto e selecione Propriedades.
-   1. Selecione Java Compiler e defina as seguintes propriedades como 1.5:
+   1. Clique com o botão direito do mouse no `myBundle` projeto e selecione [!UICONTROL Propriedades].
+   1. Selecione [!UICONTROL Java Compiler] e defina as seguintes propriedades como 1.5:
 
       * Nível de conformidade do compilador
       * Compatibilidade de arquivos .class gerada
@@ -278,15 +280,15 @@ Depois de executar o procedimento a seguir, ao carregar um arquivo de texto no A
     </dependencies>
    ```
 
-1. Crie o pacote `com.day.cq5.myhandler` que contém as classes Java em `myBundle/src/main/java`:
+1. Crie o pacote `com.day.cq5.myhandler` que contém as [!DNL Java] classes em `myBundle/src/main/java`:
 
    1. Em myBundle, clique com o botão direito do mouse `src/main/java`, selecione New (Novo) e Package (Pacote).
    1. Nomeie-o `com.day.cq5.myhandler` e clique em Concluir.
 
-1. Crie a classe Java `MyHandler`:
+1. Crie a [!DNL Java] classe `MyHandler`:
 
-   1. No Eclipse, em `myBundle/src/main/java`, clique com o botão direito do mouse no `com.day.cq5.myhandler` pacote, selecione Novo e, em seguida, Classe.
-   1. Na janela de diálogo, nomeie a classe Java MyHandler e clique em Concluir. O Eclipse cria e abre o arquivo MyHandler.java.
+   1. Em [!DNL Eclipse], em `myBundle/src/main/java`, clique com o botão direito do mouse no `com.day.cq5.myhandler` pacote. Selecione [!UICONTROL Novo]e, em seguida, [!UICONTROL Classe].
+   1. Na janela de diálogo, nomeie a [!DNL Java] classe `MyHandler` e clique em [!UICONTROL Concluir]. [!DNL Eclipse] cria e abre o arquivo `MyHandler.java`.
    1. Em `MyHandler.java` substituição do código existente pelo seguinte e salve as alterações:
 
    ```java
@@ -429,20 +431,20 @@ Depois de executar o procedimento a seguir, ao carregar um arquivo de texto no A
    }
    ```
 
-1. Compile a classe Java e crie o pacote:
+1. Compile a [!DNL Java] classe e crie o pacote:
 
    1. Clique com o botão direito do mouse no `myBundle` projeto, selecione **[!UICONTROL Executar como]** e, em seguida, **[!UICONTROL Maven Install (Instalação]** do Maven).
    1. O pacote `myBundle-0.0.1-SNAPSHOT.jar` (que contém a classe compilada) é criado em `myBundle/target`.
 
-1. No CRX Explorer, crie um novo nó em `/apps/myApp`. Nome = `install`, Tipo = `nt:folder`.
-1. Copie o pacote `myBundle-0.0.1-SNAPSHOT.jar` e armazene-o em `/apps/myApp/install` (por exemplo, com WebDAV). O novo manipulador de texto agora está ativo no AEM.
+1. No CRX explorer, crie um novo nó em `/apps/myApp`. Nome = `install`, Tipo = `nt:folder`.
+1. Copie o pacote `myBundle-0.0.1-SNAPSHOT.jar` e armazene-o em `/apps/myApp/install` (por exemplo, com WebDAV). O novo manipulador de texto agora está ativo em [!DNL Experience Manager].
 1. No navegador, abra o Console [!UICONTROL de gerenciamento da Web do]Apache Felix. Selecione a guia [!UICONTROL Componentes] e desative o manipulador de texto padrão `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Manipulador de mídia baseado na Linha de Comando {#command-line-based-media-handler}
 
-O AEM permite que você execute qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como ImageMagick) e adicionar a nova representação ao ativo. Você só precisa instalar a ferramenta de linha de comando no disco que hospeda o servidor AEM e adicionar e configurar uma etapa do processo ao fluxo de trabalho. O processo chamado `CommandLineProcess`, também permite filtrar de acordo com tipos MIME específicos e criar várias miniaturas com base na nova execução.
+[!DNL Experience Manager] permite que você execute qualquer ferramenta de linha de comando em um fluxo de trabalho para converter ativos (como [!DNL ImageMagick]) e adicionar a nova representação ao ativo. Você só precisa instalar a ferramenta de linha de comando no disco que hospeda o [!DNL Experience Manager] servidor e adicionar e configurar uma etapa do processo ao fluxo de trabalho. O processo chamado `CommandLineProcess`, também permite filtrar de acordo com tipos MIME específicos e criar várias miniaturas com base na nova execução.
 
-As seguintes conversões podem ser executadas e armazenadas automaticamente nos ativos AEM:
+As conversões a seguir podem ser executadas e armazenadas automaticamente em [!DNL Assets]:
 
 * Transformação de EPS e AI usando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/).
 * Transcodificação de vídeo FLV usando [FFmpeg](https://ffmpeg.org/).
@@ -451,27 +453,27 @@ As seguintes conversões podem ser executadas e armazenadas automaticamente nos 
 
 >[!NOTE]
 >
->Em sistemas que não sejam Windows, a ferramenta FFmpeg retorna um erro ao gerar execuções para um ativo de vídeo que tem uma única citação (&#39;) em seu nome de arquivo. Se o nome do arquivo de vídeo incluir uma única citação, remova-a antes de carregá-la para o AEM.
+>Em sistemas que não sejam Windows, a ferramenta FFmpeg retorna um erro ao gerar execuções para um ativo de vídeo que tem uma única citação (&#39;) em seu nome de arquivo. Se o nome do arquivo de vídeo incluir uma única citação, remova-a antes de fazer upload para [!DNL Experience Manager].
 
 O `CommandLineProcess` processo executa as seguintes operações na ordem em que são listadas:
 
 * Filtros o arquivo de acordo com tipos MIME específicos, se especificado.
-* Cria um diretório temporário no disco que hospeda o servidor AEM.
+* Cria um diretório temporário no disco que hospeda o [!DNL Experience Manager] servidor.
 * Transmite o arquivo original para o diretório temporário.
-* Executa o comando definido pelos argumentos da etapa. O comando está sendo executado no diretório temporário com as permissões do usuário que está executando o AEM.
-* Transmite o resultado de volta para a pasta de execução do servidor AEM.
+* Executa o comando definido pelos argumentos da etapa. O comando está sendo executado dentro do diretório temporário com as permissões do usuário em execução [!DNL Experience Manager].
+* Transmite o resultado de volta para a pasta de renderização do [!DNL Experience Manager] servidor.
 * Exclui o diretório temporário.
 * Cria miniaturas com base nessas execuções, se especificado. O número e as dimensões das miniaturas são definidos pelos argumentos da etapa.
 
-### Um exemplo usando ImageMagick {#an-example-using-imagemagick}
+### Um exemplo usando [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-O exemplo a seguir mostra como configurar a etapa do processo da linha de comando para que cada vez que um ativo com o tipo mime gif ou tiff for adicionado a /content/dam no servidor AEM, uma imagem invertida do original seja criada junto com três miniaturas adicionais (140x100, 48x48 e 10x250).
+O exemplo a seguir mostra como configurar a etapa do processo da linha de comando para que cada vez que um ativo com o eMIME GIF ou TIFF é adicionado `/content/dam` no [!DNL Experience Manager] servidor, uma imagem invertida do original seja criada junto com três miniaturas adicionais (140x100, 48x48 e 10x250).
 
-Para fazer isso, você usará o ImageMagick. O ImageMagick é um conjunto de software gratuito para criar, editar e compor imagens de bitmap e geralmente é usado da linha de comando.
+Para fazer isso, use [!DNL ImageMagick]. [!DNL ImageMagick] é um software gratuito de linha de comando usado para criar, editar e compor imagens de bitmap.
 
-Primeiro instale o ImageMagick no disco que hospeda o servidor AEM:
+Instale [!DNL ImageMagick] no disco que hospeda o [!DNL Experience Manager] servidor:
 
-1. Instale o ImageMagick: consulte a documentação [do](https://www.imagemagick.org/script/download.php)ImageMagick.
+1. Instalar [!DNL ImageMagick]: Consulte a documentação [do](https://www.imagemagick.org/script/download.php)ImageMagick.
 1. Configure a ferramenta para que você possa executar a conversão na linha de comando.
 1. Para ver se a ferramenta está instalada corretamente, execute o seguinte comando `convert -h` na linha de comando.
 
@@ -479,22 +481,12 @@ Primeiro instale o ImageMagick no disco que hospeda o servidor AEM:
 
    >[!NOTE]
    >
-   >Em algumas versões do Windows (por exemplo, Windows SE), o comando de conversão pode falhar ao ser executado porque está em conflito com o utilitário de conversão nativo que faz parte da instalação do Windows. Nesse caso, mencione o caminho completo do utilitário ImageMagick usado para converter arquivos de imagem em miniaturas. Por exemplo, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >Em algumas versões do Windows, o comando de conversão pode falhar ao ser executado porque está em conflito com o utilitário de conversão nativo que faz parte da [!DNL Windows] instalação. Nesse caso, mencione o caminho completo do [!DNL ImageMagick] software usado para converter arquivos de imagem em miniaturas. Por exemplo, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Para ver se a ferramenta é executada corretamente, adicione uma imagem .jpg ao diretório de trabalho e execute o comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` na linha de comando.
-
-   Uma imagem virada é adicionada ao diretório.
-
-Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalho **[!UICONTROL Atualizar ativo do DAM]**:
-
+1. Para ver se a ferramenta é executada corretamente, adicione uma imagem JPG ao diretório de trabalho e execute a conversão do comando `<image-name>.jpg -flip <image-name>-flipped.jpg` na linha de comando. Uma imagem virada é adicionada ao diretório. Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalho **[!UICONTROL Atualizar ativo do DAM.]**
 1. Vá para o console **[!UICONTROL Fluxo de trabalho]** .
 1. Na guia **[!UICONTROL Modelos]** , edite o modelo **[!UICONTROL DAM Update Asset (Atualizar ativo]** DAM).
-1. Altere as configurações da etapa de execução **[!UICONTROL ativada pela]** Web da seguinte maneira:
-
-   **Argumentos**:
-
-   `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
-
+1. Altere os [!UICONTROL Argumentos] da etapa de representação **[!UICONTROL ativada pela]** Web para: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
 1. Salve o fluxo de trabalho.
 
 Para testar o fluxo de trabalho modificado, adicione um ativo ao `/content/dam`.
@@ -511,27 +503,27 @@ Separe os valores dos Argumentos [!UICONTROL de] processamento usando vírgula e
 
 | Formato do argumento | Descrição |
 |---|---|
-| mime:&lt;mime-type> | Argumento opcional. O processo é aplicado se o ativo tiver o mesmo tipo MIME que o argumento. <br>Vários tipos MIME podem ser definidos. |
+| mime:&lt;mime-type> | Argumento opcional. O processo é aplicado se o ativo tiver o mesmo tipo MIME do argumento. <br>Vários tipos MIME podem ser definidos. |
 | tn:&lt;largura>:&lt;altura> | Argumento opcional. O processo cria uma miniatura com as dimensões definidas no argumento. <br>Várias miniaturas podem ser definidas. |
-| cmd: &lt;comando> | Define o comando que será executado. A sintaxe depende da ferramenta de linha de comando. Somente um comando pode ser definido. <br>As seguintes variáveis podem ser usadas para criar o comando:<br>`${filename}`: nome do arquivo de entrada, por exemplo original.jpg <br> `${file}`: nome completo do caminho do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: diretório do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp <br>`${basename}`: nome do arquivo de entrada sem sua extensão, por exemplo original <br>`${extension}`: extensão do arquivo de entrada, por exemplo jpg |
+| cmd: &lt;comando> | Define o comando que será executado. A sintaxe depende da ferramenta de linha de comando. Somente um comando pode ser definido. <br>As seguintes variáveis podem ser usadas para criar o comando:<br>`${filename}`: nome do arquivo de entrada, por exemplo original.jpg <br> `${file}`: nome completo do caminho do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: diretório do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp <br>`${basename}`: nome do arquivo de entrada sem sua extensão, por exemplo original <br>`${extension}`: extensão do arquivo de entrada, por exemplo, JPG. |
 
-Por exemplo, se ImageMagick estiver instalado no disco que hospeda o servidor AEM e se você criar uma etapa do processo usando [!UICONTROL CommandLineProcess] como Implementação e os seguintes valores como Argumentos [!UICONTROL de]Processo:
+Por exemplo, se [!DNL ImageMagick] estiver instalado no disco que hospeda o [!DNL Experience Manager] servidor e se você criar uma etapa do processo usando [!UICONTROL CommandLineProcess] como Implementação e os seguintes valores como Argumentos [!UICONTROL de]Processo:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
 então, quando o fluxo de trabalho é executado, a etapa se aplica somente aos ativos que têm `image/gif` ou `mime:image/tiff` como `mime-types`, cria uma imagem invertida do original, converte-a em JPG e cria três miniaturas que têm as dimensões: 140 x 100, 48 x 48 e 10 x 250.
 
-Use os seguintes Argumentos [!UICONTROL de] Processo para criar as três miniaturas padrão usando o ImageMagick:
+Use os seguintes Argumentos [!UICONTROL de] Processo para criar as três miniaturas padrão usando [!DNL ImageMagick]:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Use os seguintes Argumentos [!UICONTROL de] Processo para criar a execução ativada pela Web usando o ImageMagick:
+Use os seguintes Argumentos [!UICONTROL de] Processo para criar a execução ativada pela Web usando [!DNL ImageMagick]:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->A etapa [!UICONTROL CommandLineProcess] se aplica somente aos Ativos (nós do tipo `dam:Asset`) ou descendentes de um Ativo.
+>A etapa [!UICONTROL CommandLineProcess] se aplica somente a ativos (nós do tipo `dam:Asset`) ou descendentes de um ativo.
 
 >[!MORELIKETHIS]
 >
