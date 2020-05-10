@@ -3,9 +3,9 @@ title: Formatos de arquivo suportados para processamento no [!DNL Adobe Experien
 description: Formatos de arquivo e tipos MIME suportados [!DNL Assets] and [!DNL Dynamic Media] por e os recursos suportados para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 93731c44ae6b2d8617fedea87bce10495384fc52
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1765'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,9 @@ Use a legenda para entender o nível de suporte.
 | * | Suportado com recursos complementares |
 | − | Não aplicável |
 
-## Formatos de imagem rasterizada suportados em [!DNL Assets] {#supported-raster-image-formats}
+## Formatos de imagem rasterizada suportados em [!DNL Experience Manager] {#supported-raster-image-formats}
+
+Os formatos de imagem rasterizada suportados em [!DNL Assets] são:
 
 | Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Edição | Writeback de metadados | Insights |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
@@ -43,7 +45,7 @@ Use a legenda para entender o nível de suporte.
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
-## Formatos de imagem rasterizada suportados em [!DNL Dynamic Media] {#supported-raster-image-formats-dynamic-media}
+Os formatos de imagem rasterizada suportados em [!DNL Dynamic Media] são:
 
 | Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de Pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -52,11 +54,11 @@ Use a legenda para entender o nível de suporte.
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD **‡** | ✓ |  |  |  |  |
+| PSD ‡ | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-**‡** A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Além das informações acima, considere o seguinte:
 
@@ -122,31 +124,6 @@ A biblioteca do Adobe Camera Raw permite que os ativos AEM assimilem imagens bru
 ## Formatos de documento de ativos suportados {#supported-document-formats}
 
 Os formatos de Documento suportados para recursos de gerenciamento de ativos são os seguintes:
-
-<!--
-DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
-
-| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
-| DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| DOCX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| ODT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
-| HTML | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| RTF | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| TXT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| XLS | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| XLSX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| ODS | &#10003; | &#10003; | &#10003; | | | | | |
-| PPT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| PPTX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| ODP | &#10003; | &#10003; | &#10003; | | | | | |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
-| PS | &#10003; | &#10003; | | | | | | |
-| QXP | &#10003; | &#10003; | | | | | | |
-| EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | | |
--->
 
 | Formato | Armazenamento | [Gerenciamento de metadados](metadata.md) | extração de texto<br> completo | [Extração de metadados](metadata.md) | Geração de miniaturas<br> | [extração de Subasset](managing-linked-subassets.md) | [Writeback de metadados](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
