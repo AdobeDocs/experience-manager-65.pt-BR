@@ -1,14 +1,17 @@
 ---
-title: Integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server]
-description: Saiba como integrar o [!DNL Adobe Experience Manager Assets] com o [!DNL Adobe InDesign Server].
+title: ' [!DNL Adobe Experience Manager Assets] Integrar com [!DNL Adobe InDesign Server]'
+description: Saiba como [!DNL Adobe Experience Manager Assets] se integrar [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 4%
 
 ---
 
 
-# Integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server]{#integrating-aem-assets-with-indesign-server}
+# Integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] Usa o:
 
@@ -64,7 +67,7 @@ Para integrar o [!DNL InDesign Server] para uso com [!DNL Experience Manager Ass
 Isso só é necessário se os valores padrão não forem apropriados para sua instância.
 1. Configure um funcionário [proxy para o InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Instale o [!DNL InDesign Server]{#installing-the-indesign-server}
+### Instale o [!DNL InDesign Server] {#installing-the-indesign-server}
 
 Para instalar e start o para uso [!DNL InDesign Server] com [!DNL Experience Manager]:
 
@@ -116,7 +119,7 @@ Para obter informações sobre scripts do Indesign, consulte a documentação do
 
 O `ThumbnailExport.jsx` script executado pela etapa de fluxo de trabalho da Extração de mídia gera uma execução em miniatura no formato JPG. Essa execução é usada pela etapa de fluxo de trabalho Processar miniaturas para gerar as representações estáticas exigidas por [!DNL Experience Manager].
 
-Você pode configurar a etapa de fluxo de trabalho Processar miniaturas para gerar representações estáticas em tamanhos diferentes. Certifique-se de não remover os padrões, pois eles são exigidos pela [!DNL Experience Manager Assets] interface. Por fim, a etapa do fluxo de trabalho Excluir representação de Pré-visualização de imagem remove a execução de miniatura .jpg, pois ela não é mais necessária.
+Você pode configurar a etapa de fluxo de trabalho Processar miniaturas para gerar representações estáticas em tamanhos diferentes. Certifique-se de não remover os padrões, pois eles são exigidos pela [!DNL Experience Manager Assets] interface. Por fim, a etapa do fluxo de trabalho Excluir representação de Pré-visualização de imagem remove a execução de miniatura JPG, pois ela não é mais necessária.
 
 #### Page extraction {#page-extraction}
 
@@ -139,7 +142,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 
 * **Design** da página: O design da página a ser usado ao gerar a página resultante.
 
-### Configurar o trabalho proxy para [!DNL InDesign Server]{#configuring-the-proxy-worker-for-indesign-server}
+### Configure o trabalho proxy para [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -167,12 +170,12 @@ Se o [!DNL InDesign Server] e [!DNL Experience Manager] forem executados em host
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
-### Habilitar processamento de trabalho paralelo para [!DNL InDesign Server]{#enabling-parallel-job-processing-for-indesign-server-s}
+### Habilitar processamento de trabalho paralelo para [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
 
 Agora você pode ativar o processamento paralelo de tarefas para IDS. Determine o número máximo de trabalhos paralelos (`x`) que um [!DNL InDesign Server] processo pode processar:
 
 * Em uma única máquina de multiprocessador, o número máximo de trabalhos paralelos (`x`) que um usuário [!DNL InDesign Server] pode processar é um menor que o número de processadores executando IDS.
-* Ao executar IDS em várias máquinas, é necessário contar o número total de processadores disponíveis (ou seja, em todas as máquinas) e, em seguida, subtrair o número total de máquinas.
+* Ao executar IDS em várias máquinas, é necessário contar o número total de processadores disponíveis (ou seja, em todas as máquinas) e subtrair o número total de máquinas.
 
 Para configurar o número de trabalhos de IDS paralelos:
 
