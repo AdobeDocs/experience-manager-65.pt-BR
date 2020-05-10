@@ -3,7 +3,10 @@ title: Criar e configurar páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '2147'
+ht-degree: 1%
 
 ---
 
@@ -13,10 +16,10 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
 Este documento descreve o seguinte:
 
 * Por que você criaria páginas personalizadas do Editor de ativos.
-* Como criar e personalizar páginas do Editor de ativos, que são páginas do WCM que permitem exibir e editar metadados, bem como executar ações no ativo.
+* Como criar e personalizar páginas do Editor de ativos, que são páginas do WCM que permitem que você visualização e edite metadados, bem como executar ações no ativo.
 * Como editar vários ativos simultaneamente.
 
-<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 OOTB samples. -->
+<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
 
 >[!NOTE]
 >
@@ -24,175 +27,175 @@ Este documento descreve o seguinte:
 
 ## Por que criar e configurar as páginas do Editor de ativos? {#why-create-and-configure-asset-editor-pages}
 
-O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao mudar de uma solução em pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários comerciais, autores de WCM, jornalistas e assim por diante - a poderosa interface de usuário dos ativos Adobe Experience Manager (AEM) para usuários profissionais pode fornecer informações demais e as partes interessadas começam a solicitar interfaces de usuário ou aplicativos específicos para acessar os ativos digitais que são relevantes.
+O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao mudar de uma solução em pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários comerciais, autores de WCM, jornalistas e assim por diante - a poderosa interface de usuário do Adobe Experience Manager (AEM) Assets para usuários profissionais pode fornecer informações demais e start de participantes para solicitar interfaces de usuário ou aplicativos específicos para acessar os ativos digitais relevantes.
 
-Esses aplicativos centrados em ativos podem ser simples galerias de fotos em uma intranet onde os funcionários podem fazer upload de fotos de visitas comerciais ou de um centro de imprensa em um site público, como o exemplo fornecido com o Geometrixx. Aplicativos centrados em ativos também podem ser estendidos para soluções completas, incluindo carrinhos de compras, processos de checkout e verificação.
+Esses aplicativos centrados em ativos podem ser simples galerias de fotos em uma intranet onde os funcionários podem carregar fotos de visitas comerciais ou de um centro de imprensa em um site voltado ao público. Aplicativos centrados em ativos também podem ser estendidos para soluções completas, incluindo carrinhos de compras, processos de checkout e verificação.
 
 A criação de um aplicativo centrado em ativos torna-se, em grande medida, um processo de configuração que não exige codificação, apenas conhecimento dos grupos de usuários e suas necessidades, bem como conhecimento dos metadados usados. Os aplicativos centrados em ativos criados com os ativos AEM são extensíveis: com o esforço de codificação moderado, é possível criar componentes reutilizáveis para pesquisa, visualização e modificação de ativos.
 
-Um aplicativo centrado em ativos no AEM consiste em uma página do Editor de ativos, que pode ser usada para obter uma exibição detalhada de um ativo específico. Uma página do Editor de ativos também permite a edição de metadados, desde que o usuário que acessa o ativo tenha as permissões necessárias.
+Um aplicativo centrado em ativos no AEM consiste em uma página do Editor de ativos, que pode ser usada para obter uma visualização detalhada de um ativo específico. Uma página do Editor de ativos também permite a edição de metadados, desde que o usuário que acessa o ativo tenha as permissões necessárias.
 
-## Criar e configurar uma página de compartilhamento de ativos {#creating-and-configuring-an-asset-share-page}
+<!--
+## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
 
-Personalize a funcionalidade do DAM Finder e crie páginas com todas as funcionalidades necessárias, chamadas páginas de compartilhamento de ativos. Para criar uma nova página Compartilhamento de ativos, adicione a página usando o modelo Compartilhamento de ativos do Geometrixx e personalize as ações que os usuários podem executar nessa página, determine como os visualizadores podem ver os ativos e decidir como os usuários podem criar suas consultas.
+You customize the DAM Finder functionality and create pages that have all the functionality you require, which are called Asset Share pages. To create a new Asset Share page, you add the page using the Geometrixx Asset Share template and then you customize the actions users can perform on that page, determine how viewers see the assets, and decide how users can build their queries.
 
-Estes são alguns casos de uso para criar uma página personalizada de compartilhamento de ativos:
+Here are some use cases for creating a customized Asset Share page:
 
-* Centro de Imprensa para Jornalistas
-* Mecanismo de pesquisa de imagem para usuários empresariais internos
-* Banco de dados de imagem para usuários do site
-* Interface de marcação de mídia para editores de metadados
+* Press Center for Journalists.
+* Image Search Engine for internal business users.
+* Image Database for website users.
+* Media Tagging Interface for metadata editors.
 
-### Criar uma página de compartilhamento de ativos {#creating-an-asset-share-page}
+### Create an Asset Share page {#creating-an-asset-share-page}
 
-Para criar uma nova página Compartilhamento de ativos, você pode criá-la quando estiver trabalhando em sites ou no gerenciador de ativos digitais.
+To create a new Asset Share page, you can either create it when you are working on web sites or from the digital asset manager.
 
 >[!NOTE]
 >
->Por padrão, ao criar uma página Compartilhamento de ativos a partir de **Novo** no gerenciador de ativos digitais, um visualizador de ativos e um editor de ativos são criados automaticamente para você.
+>By default, when you create an Asset Share page from **New** in the digital asset manager, an Asset viewer and Asset editor are automatically created for you.
 
-Para criar uma nova página de compartilhamento de ativos no console **Sites** :
+To create an new Asset Share page in the **Websites** console:
 
-1. Na guia **Sites** , navegue até o local onde deseja criar uma página de compartilhamento de ativos e clique em **Novo**.
+1. In the **Websites** tab, navigate to the place where you want to create an asset share page and click **New**.
 
-1. Selecione a página Compartilhamento **de** ativos e clique em **Criar**. A nova página é criada e a página de compartilhamento de ativos é listada na guia **Sites** .
+1. Select the **Asset Share** page and click **Create**. The new page is created and the asset share page is listed in the **Websites** tab.
 
 ![dam8](assets/dam8.png)
 
-A página básica criada usando o modelo de Compartilhamento de ativos do Geometrixx DAM é exibida da seguinte maneira:
+The basic page created using the Geometrixx DAM Asset Share template looks as follows:
 
 ![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
-Para personalizar a página Compartilhamento de ativos, use elementos do sidekick e edite também as propriedades do construtor de consultas. A página **Geometrixx Press Center** é uma versão personalizada de uma página baseada neste modelo:
+To customize your Asset Share page, you use elements from the sidekick and you also edit query builder properties. The page **Geometrixx Press Center** is a customized version of a page based on this template:
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
-Para criar uma nova página de compartilhamento de ativos por meio do gerenciador de ativos digitais:
+To create a new asset share page via the digital asset manager:
 
-1. No gerenciador de ativos digitais, em **Novo**, selecione **Novo compartilhamento** de ativos.
-1. No **Título**, informe o nome da página de compartilhamento de ativos. Se desejar, insira um nome para o URL.
+1. In the digital asset manager, in **New**, select **New Asset Share**.
+1. In the **Title**, enter the name of the asset share page. If desired, enter a name for the URL.
 
    ![screen_shot_2012-04-19at23626pm](assets/screen_shot_2012-04-19at23626pm.png)
 
-1. Clique duas vezes na página de compartilhamento de ativos para abri-la e configurar a página.
+1. Double-click the asset share page to open it and configure the page.
 
    ![screen_shot_2012-04-19at24114pm](assets/screen_shot_2012-04-19at24114pm.png)
 
-   Por padrão, ao criar uma página Compartilhamento de ativos em **Novo**, um visualizador de ativos e um editor de ativos são criados automaticamente para você.
+   By default, when you create an Asset Share page from **New**, an Asset viewer and Asset editor are automatically created for you.
 
-#### Personalizar ações {#customizing-actions}
+#### Customize actions {#customizing-actions}
 
-Você pode determinar quais ações os usuários podem executar em ativos digitais selecionados a partir de uma seleção de ações predefinidas.
+You can determine what actions users can perform on selected digital assets from a selection of predefined actions.
 
-Para adicionar ações à página Compartilhamento de ativos:
+To add actions to the Asset Share page:
 
-1. Na página Compartilhamento de ativos que você deseja personalizar, clique em **Ações** no sidekick.
+1. In the Asset Share page that you want to customize, click **Actions** in the sidekick.
 
-As seguintes ações estão disponíveis:
+The following actions are available:
 
-![assetshare2](assets/assetshare2.bmp)
+ | Action | Description |
+ |---|---|
+ | [!UICONTROL Delete Action] | Users can delete the selected assets. |
+ | [!UICONTROL Download Action] | Lets users download selected assets to their computers. |
+ | [!UICONTROL Lightbox Action] | Saves assets to a "lightbox"   where you can perform other actions on them. This comes in handy when working   with assets across multiple pages. The lightbox can also be used as a   shopping cart for assets. |
+ | [!UICONTROL Move Action] | Users can move the asset to another   location |
+ | [!UICONTROL Tags Action] | Lets users add tags to selected assets |
+ | [!UICONTROL View Asset Action] | Opens the asset in the Asset editor for   user manipulation. |
 
-| Ação | Descrição |
-|---|---|
-| [!UICONTROL Ação de exclusão] | Os usuários podem excluir os ativos selecionados. |
-| [!UICONTROL Ação de download] | Permite que os usuários baixem ativos selecionados em seus computadores. |
-| [!UICONTROL Ação do Lightbox] | Salva os ativos em um &quot;lightbox&quot; onde você pode executar outras ações. Isso é útil ao trabalhar com ativos em várias páginas. O lightbox também pode ser usado como um carrinho de compras para ativos. |
-| [!UICONTROL Ação de mover] | Os usuários podem mover o ativo para outro local |
-| [!UICONTROL Ação de tags] | Permite que os usuários adicionem tags aos ativos selecionados |
-| [!UICONTROL Exibir ação de ativo] | Abre o ativo no Editor de ativos para manipulação do usuário. |
-
-1. Arraste a ação apropriada para a área **Ações** na página. Isso cria um botão que é usado para executar essa ação.
+1. Drag the appropriate action to the **Actions** area on the page. Doing so creates a button that is used to execute that action.
 
 ![chlimage_1-159](assets/chlimage_1-387.png)
 
-#### Determinar como os resultados da pesquisa são apresentados {#determining-how-search-results-are-presented}
+#### Determine how search results are presented {#determining-how-search-results-are-presented}
 
-Você determina como os resultados são exibidos em uma lista predefinida de lentes.
+You determine how results are displayed from a predefined list of lenses.
 
-Para alterar como os resultados da pesquisa são exibidos:
+To change how search results are viewed:
 
-1. Na página Compartilhamento de ativos que você deseja personalizar, clique em Pesquisar.
+1. In the Asset Share page that you want to customize, click Search.
 
 ![chlimage_1](assets/assetshare3.png)
 
-1. Arraste a lente apropriada para o centro superior da página. No Press Center, as lentes já estão disponíveis. Os usuários pressionam o ícone de lente apropriado para exibir os resultados da pesquisa conforme desejado.
+1. Drag the appropriate lens to the top center of the page. In the Press Center, the lenses are already available. Users press the appropriate lens icon to display search results as desired.
 
-Estão disponíveis as seguintes lentes:
+The following lenses are available:
 
-| Lente | Descrição |
+| Lens | Description |
 |---|---|
-| **[!UICONTROL Listas lentes]** | Apresenta os ativos em uma lista com detalhes. |
-| **[!UICONTROL Lentes mosaico]** | Apresenta ativos de forma mosaica. |
+| **[!UICONTROL List Lens]** |Presents the assets in a list fashion with details. |
+| **[!UICONTROL Mosaic Lens]** |Presents assets in a mosaic fashion. |
 
-#### Lentes mosaico {#mosaic-lens}
+#### Mosaic Lens {#mosaic-lens}
 
 ![chlimage_1-160](assets/chlimage_1-388.png)
 
-#### Listas lentes {#list-lens}
+#### List Lens {#list-lens}
 
 ![chlimage_1-161](assets/chlimage_1-389.png)
 
-#### Personalizar o Query Builder {#customizing-the-query-builder}
+#### Customize the Query Builder {#customizing-the-query-builder}
 
-O construtor de consultas permite que você insira termos de pesquisa e crie conteúdo para a página Compartilhamento de ativos. Ao editar o construtor de consultas, você também pode determinar quantos resultados de pesquisa são exibidos por página, qual editor de ativos é aberto quando você clica duas vezes em um ativo, o caminho que a consulta pesquisa e personaliza tipos de nó.
+The query builder lets you enter search terms and create content for the Asset Share page. When you edit the query builder, you also get to determine how many search results are displayed per page, which asset editor opens when you double-click an asset, the path the query searches, and customizes nodetypes.
 
-Para personalizar o construtor de consultas:
+To customize the query builder:
 
-1. Na página Compartilhamento de ativos que você deseja personalizar, clique em **Editar** no Query Builder. Por padrão, a guia **Geral** é aberta.
-1. Selecione o número de resultados por página, o caminho do editor de ativos (se você tiver um editor de ativos personalizado) e o título Ações.
+1. In the Asset Share page that you want to customize, click **Edit** in the Query Builder. By default, the **General** tab opens.
+1. Select the number of results per page, the path of the asset editor (if you have a customized asset editor) and the Actions title.
 
 ![screen_shot_2012-04-23at15055pm](assets/screen_shot_2012-04-23at15055pm.png)
 
-1. Click the **Paths** tab. Insira um caminho ou vários caminhos que a pesquisa executará. Esses caminhos serão substituídos se o usuário usar o predicado Caminhos.
+1. Click the **Paths** tab. Enter a path or multiple paths that the search will run. These paths are overwritten if the user uses the Paths predicate.
 
 ![screen_shot_2012-04-23at15150pm](assets/screen_shot_2012-04-23at15150pm.png)
 
-1. Digite outro tipo de nó, se desejar.
+1. Enter another node type, if desired.
 
-1. No campo URL **do Construtor de** consultas, você pode substituir ou vincular o construtor de consultas e inserir os novos URLs de servlet com o componente existente do construtor de consultas. No campo URL **do** feed, também é possível substituir o URL do feed.
+1. In the **Query Builder URL** field, you can override or wrap the query builder and enter the new servlet URLs with the existing query builder component. In the **Feed URL** field, you can override the Feed URL as well.
 
 ![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
-1. No campo **Texto** , insira o texto que deseja exibir para os resultados e números de página dos resultados. Clique em **OK** ao terminar de fazer as alterações.
+1. In the **Text** field, enter the text you want to appear for results and page numbers of results. Click **OK** when finished making changes.
 
 ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
-#### Adicionar predicados {#adding-predicates}
+#### Add predicates {#adding-predicates}
 
-Os ativos AEM incluem vários predicados que você pode adicionar à página Compartilhamento de ativos. Isso permite que seus usuários restrinjam ainda mais as pesquisas. Em alguns casos, eles podem substituir um parâmetro do construtor de consultas (por exemplo, o parâmetro Caminho).
+AEM Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
-Para adicionar predicados:
+To add predicates:
 
-1. Na página Compartilhamento de ativos que você deseja personalizar, clique em **Pesquisar**.
+1. In the Asset Share page that you want to customize, click **Search**.
 
 ![assetshare3](assets/assetshare3.png)
 
-1. Arraste os predicados apropriados para a página Compartilhamento de ativos abaixo do construtor de consultas. Isso cria os campos apropriados.
+1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
 ![assetshare4](assets/assetshare4.bmp)
 
-Os seguintes predicados estão disponíveis:
+The following predicates are available:
 
-| Predicado | Descrição |
+| Predicate | Description |
 |---|---|
-| **[!UICONTROL Predicado de data]** | Permite que os usuários pesquisem ativos que foram modificados antes e depois de determinadas datas. |
-| **[!UICONTROL Predicado de opções]** | O proprietário do site pode especificar uma propriedade para pesquisa (como no predicado de propriedade, por exemplo cq:tags) e uma árvore de conteúdo a partir da qual as opções serão preenchidas (por exemplo, a árvore de tags). Isso gera uma lista de opções em que os usuários podem selecionar os valores (tags) que a propriedade selecionada (propriedade tag) deve ter. Esse predicado permite que você crie controles de lista como a lista de tags, tipos de arquivos, orientações de imagem e assim por diante. É ótimo para um conjunto fixo de opções. |
-| **[!UICONTROL Predicados de caminho]** | Permite que os usuários definam o caminho e as subpastas, se desejado. |
-| **[!UICONTROL Predicado da propriedade]** | O proprietário do site especifica uma propriedade a ser pesquisada, por exemplo, tiff:ImageLength e o usuário pode então inserir um valor, por exemplo, 800. Isso retorna todas as imagens com 800 pixels de altura. Preveja se sua propriedade pode ter valores arbitrários. |
+| **[!UICONTROL Date Predicate]** |Lets users search for assets that were modified before and after certain dates. |
+| **[!UICONTROL Options Predicate]** |The site owner can specify a property to search for (as in the property predicate, for example cq:tags) and a content tree to populate the options from (for example the tag tree). Doing so generates a list of options where the users can select the values (tags) that the selected property (tag property) should have. This predicate lets you build list controls like the list of tags, file types, image orientations, and so on. It is great for a fixed set of options. |
+| **[!UICONTROL Path Predicate]** |Lets users define the path and subfolders, if desired. |
+| **[!UICONTROL Property Predicate]** |The site owner specifies a property to search for, e.g. tiff:ImageLength and the user can then enter a value, e.g. 800. This returns all images that are 800 pixels high. Useful predicate if your property can have arbitrary values. |
 
-Para obter mais informações, consulte o [predicado Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+For more information, see the [predicate Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
-1. Para configurar mais o predicado, clique duas vezes nele. Por exemplo, ao abrir o Predicado de caminho, é necessário atribuir o caminho raiz.
+1. To configure the predicate further, double-click it. For example, when you open the Path Predicate, you need to assign the root path.
 
 ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
+-->
 
 ## Criar e configurar uma página do Editor de ativos {#creating-and-configuring-an-asset-editor-page}
 
-Personalize o editor de ativos para determinar como os usuários podem visualizar e editar os ativos digitais. Para fazer isso, crie uma nova página do Editor de ativos e personalize as exibições e as ações que os usuários podem executar nessa página.
+Personalize o editor de ativos para determinar como os usuários podem visualização e editar os ativos digitais. Para fazer isso, crie uma nova página do Editor de ativos e personalize as visualizações e as ações que os usuários podem executar nessa página.
 
 >[!NOTE]
 >
->Se desejar adicionar campos personalizados ao editor de ativos DAM, adicione novos nós cq:Widget a `/apps/dam/content/asseteditors.`
+>Se desejar adicionar campos personalizados ao editor de ativos DAM, adicione novos `cq:Widget` nós a `/apps/dam/content/asseteditors.`
 
 ### Criar uma página do Editor de ativos {#creating-the-asset-editor-page}
 
@@ -215,11 +218,11 @@ Para personalizar a página do Editor de ativos, use elementos do sidekick. A p�
 
 #### Definir um editor de ativos para abrir a partir de uma página de compartilhamento de ativos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
-Depois de criar a página personalizada do Editor de ativos, é necessário garantir que, ao clicar duas vezes nos ativos, o Compartilhamento personalizado de ativos que você criou abra os ativos na página personalizada do Editor.
+Depois de criar a página personalizada do Editor de ativos, é necessário garantir que, ao clicar no duplo em ativos, o Compartilhamento personalizado de ativos que você criou abra os ativos na página personalizada do Editor.
 
-Para definir a página Editor de ativos:
+Para definir a página do Editor de ativos:
 
-1. Na página Compartilhamento de ativos, clique em **Editar** ao lado do Query Builder.
+1. Na página Compartilhamento de ativos, clique em **Editar** ao lado do Construtor de Query.
 
 ![screen_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
 
@@ -257,11 +260,11 @@ Para adicionar componentes do editor de ativos:
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
-#### Formulário de metadados e campo de texto - Configuração do componente Exibir metadados {#metadata-form-and-text-field-configuring-the-view-metadata-component}
+#### Formulário de metadados e campo de texto - Configuração do componente Metadados de Visualização {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-O Formulário de metadados é um formulário que inclui uma ação de início e fim. No meio, você insere campos **de Texto** . Consulte [Formulários](/help/sites-authoring/default-components-foundation.md#form-component) para obter mais informações sobre como trabalhar com formulários.
+O Formulário de metadados é um formulário que inclui um start e uma ação final. No meio, você insere campos **de Texto** . Consulte [Formulários](/help/sites-authoring/default-components-foundation.md#form-component) para obter mais informações sobre como trabalhar com formulários.
 
-1. Crie uma ação de início clicando em **Editar** na área Iniciar do formulário. Você pode inserir um título de Caixa, se desejar. Por padrão, o título Caixa é **Metadados**. Marque a caixa de seleção Validação do cliente se desejar que o código do cliente Java-script para validação seja gerado.
+1. Crie uma ação de start clicando em **Editar** na área Start do formulário. Você pode inserir um título de Caixa, se desejar. Por padrão, o título Caixa é **Metadados**. Marque a caixa de seleção Validação do cliente se desejar que o código do cliente Java-script para validação seja gerado.
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
@@ -269,13 +272,13 @@ O Formulário de metadados é um formulário que inclui uma ação de início e 
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
-1. Entre o Início **do** formulário e o Fim **do** formulário, arraste os Campos de texto de metadados para o formulário. Os usuários preenchem metadados nesses campos de texto, que podem enviar ou concluir outra ação.
+1. Entre o Start **de** formulário e o Fim **do** formulário, arraste os Campos de texto de metadados para o formulário. Os usuários preenchem metadados nesses campos de texto, que podem enviar ou concluir outra ação.
 
-1. Clique duas vezes no nome do campo, por exemplo, **Título** para abrir o campo de metadados e fazer alterações. Na guia **Geral** da janela **Editar componente** , defina o namespace e o rótulo do campo, bem como o tipo, por exemplo, `dc:title`.
+1. Clique com o Duplo do mouse no nome do campo, por exemplo, **Título** para abrir o campo de metadados e fazer alterações. Na guia **Geral** da janela **Editar componente** , defina a namespace e o rótulo do campo, bem como o tipo, por exemplo, `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-Consulte [Personalização e extensão de ativos](/help/assets/extending-assets.md) AEM para obter informações sobre como modificar os namespaces disponíveis no formulário de metadados.
+Consulte [Personalização e extensão de ativos](/help/assets/extending-assets.md) AEM para obter informações sobre como modificar as namespaces disponíveis no formulário de metadados.
 
 1. Click the **Constraints** tab. Aqui, você pode selecionar se um campo é obrigatório e, se necessário, adicionar quaisquer restrições.
 
@@ -293,11 +296,11 @@ Na página Editor de ativos, os usuários podem inserir valores nos campos de me
 
 #### Subativos {#sub-assets}
 
-O componente Sub-ativos é onde você pode exibir e selecionar subativos. Você pode determinar quais nomes aparecem no ativo [e subativos](/help/assets/assets.md#what-are-digital-assets) principais.
+O componente Sub-ativos é onde você pode visualização e selecionar subativos. Você pode determinar quais nomes aparecem no ativo [e subativos](/help/assets/assets.md#what-are-digital-assets) principais.
 
 ![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
 
-Clique duas vezes no componente Sub Assets para abrir a caixa de diálogo Sub-ativos, onde você pode alterar os títulos do ativo principal e de quaisquer subativos. Os valores padrão são exibidos abaixo do campo correspondente.
+Clique com o Duplo no componente Sub Assets para abrir a caixa de diálogo Sub-ativos, onde é possível alterar os títulos do ativo principal e de qualquer subativo. Os valores padrão são exibidos abaixo do campo correspondente.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
 
@@ -311,11 +314,11 @@ Por exemplo, se você selecionar um subativo, observe como o componente exibe a 
 
 #### Tags {#tags}
 
-O componente Tags é um componente no qual os usuários podem atribuir tags existentes a um ativo, o que ajuda posteriormente na organização e recuperação. Você pode tornar esse componente somente leitura, de modo que os usuários não possam adicionar tags, mas apenas visualizá-las.
+O componente Tags é um componente no qual os usuários podem atribuir tags existentes a um ativo, o que ajuda posteriormente na organização e recuperação. Você pode tornar esse componente somente leitura, de modo que os usuários não possam adicionar tags, mas apenas visualizações.
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Clique duas vezes no componente Tags para abrir a caixa de diálogo de tags, onde você pode alterar o título de Tags, se desejar, e onde você pode selecionar os namespaces alocados. Para tornar esse campo editável, desmarque a caixa de seleção **[!UICONTROL Ocultar edição]** . Por padrão, as tags são editáveis.
+Clique no componente Tags com o Duplo para abrir a caixa de diálogo Tags, onde você pode alterar o título de Tags, se desejar, e selecionar as namespaces alocadas. Para tornar esse campo editável, desmarque a caixa de seleção **[!UICONTROL Ocultar edição]** . Por padrão, as tags são editáveis.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -327,13 +330,13 @@ A seguir está um componente de Tags preenchido:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura {#thumbnail}
+#### Miniatura     {#thumbnail}
 
-O componente Miniatura é o local em que o ativo exibe a miniatura selecionada (para muitos dos formatos, a miniatura é extraída automaticamente). Além disso, o componente exibe o nome do arquivo e [as ações que você pode modificar](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
+O componente de Miniatura é o local em que o ativo exibe a miniatura selecionada (para muitos dos formatos, a miniatura é extraída automaticamente). Além disso, o componente exibe o nome do arquivo e [as ações que você pode modificar](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Clique duas vezes no componente de miniatura para abrir a caixa de diálogo em miniatura, onde é possível alterar o texto alternativo. Por padrão, o texto alternativo em miniatura assume **Click para baixar** o ativo como padrão.
+Clique com o Duplo no componente de miniatura para abrir a caixa de diálogo em miniatura, onde é possível alterar o texto alternativo. Por padrão, o texto alternativo em miniatura assume **Click para baixar** o ativo como padrão.
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -347,7 +350,7 @@ O componente Título exibe o título do ativo e uma descrição.
 
 ![chlimage_1-163](assets/chlimage_1-391.png)
 
-Por padrão, ele está no modo somente leitura, portanto os usuários não podem editá-lo. Para torná-lo editável, clique duas vezes no componente e desmarque a caixa de seleção **Ocultar botão** de edição. Além disso, insira um título para vários ativos.
+Por padrão, ele está no modo somente leitura, portanto os usuários não podem editá-lo. Para torná-lo editável, clique com o duplo no componente e desmarque a caixa de seleção **Ocultar botão** de edição. Além disso, insira um título para vários ativos.
 
 ![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
@@ -423,7 +426,7 @@ Para fazer várias edições de ativos com a página Editor de ativos:
    * Clique na **seta** e selecione uma tag para adicionar uma nova tag a todos os ativos.
    Clique em **OK** para gravar as alterações no formulário. A caixa ao lado do campo **Tags** é automaticamente marcada.
 
-1. Edite o campo Descrição. Por exemplo, defina como:
+1. Edite o campo Descrição. Por exemplo, defina-o como:
 
    `This is a common description`
 
