@@ -4,7 +4,10 @@ seo-title: Guia do usuário dos ativos AEM 6.5
 description: Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
 seo-description: Abrange todas as tarefas do AEM Assets, como criar, gerenciar, fornecer e otimizar ativos digitais.
 translation-type: tm+mt
-source-git-commit: e6c0ee967d1b01da18b538960520c206937599f6
+source-git-commit: db5996bd25c6c35854f8b7164558b41a477b4cd6
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 14%
 
 ---
 
@@ -25,7 +28,7 @@ Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer 
 | Guia do usuário | Descrição |
 |--- |---|
 | [Notas de versão](/help/release-notes/home.md) | Fornece informações importantes sobre a versão mais recente do AEM, incluindo novas plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos |
-| [Guia do usuário do[Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
+| [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
 | [Guia do usuário das Comunidades](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
 | [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
@@ -44,6 +47,6 @@ Este guia cobre todas as tarefas do AEM Assets, como criar, gerenciar, fornecer 
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Fórum da comunidade do AEM Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [Guia do usuário HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guia do usuário HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
+* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
