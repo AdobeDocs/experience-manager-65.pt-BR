@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d2f9bf9f8e83a088769507da8a46f1c9ef4e74e
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 53%
+source-wordcount: '2081'
+ht-degree: 51%
 
 ---
 
@@ -41,7 +41,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 Os autores podem pesquisar imagens e os seguintes tipos de documentos no Localizador de conteúdo e usar os ativos pesquisados no Editor de páginas. Os documentos podem ser adicionados ao componente `Download` e as imagens podem ser adicionadas ao componente `Image`. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Os formatos suportados são:
 
 * **Formatos** de imagem: Os formatos suportados pelo componente [](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) de Imagem. [!DNL Dynamic Media] as imagens não são compatíveis.
-* **Formatos de documento**: consulte [Formatos de documento compatíveis com os Connected Assets](assets-formats.md#supported-document-formats).
+* **Formatos** de Documento: Consulte [os formatos de documento suportados pelos ativos](assets-formats.md#supported-document-formats)conectados.
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
 
@@ -185,5 +185,5 @@ Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se o
 
 Siga estas etapas para solucionar problemas de cenários de erro comuns:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* Um ativo buscado em um DAM remoto pode não ser publicado em uma página da Web pelos motivos a seguir: ele não existe no local remoto, falta de permissões adequadas para buscá-lo e falha de rede. Verifique se o ativo não foi removido do DAM remoto ou se as permissões não foram alteradas. Verifique se os pré-requisitos apropriados foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/assets/asynchronous-jobs.md) quanto a erros na busca de ativos.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
+* Um ativo obtido da barragem remota pode não ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, falta de permissões apropriadas para buscá-lo ou falha na rede pode ser o motivo. Verifique se o ativo não foi removido do DAM remoto. Verifique se as permissões apropriadas estão no lugar e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/assets/asynchronous-jobs.md) quanto a erros na busca de ativos.
