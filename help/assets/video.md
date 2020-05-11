@@ -1,5 +1,5 @@
 ---
-title: Vídeo
+title: Vídeo no Dynamic Media
 description: Saiba como trabalhar com vídeo no Dynamic Media
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
@@ -9,12 +9,15 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+workflow-type: tm+mt
+source-wordcount: '11868'
+ht-degree: 8%
 
 ---
 
 
-# Vídeo {#video}
+# Vídeo no Dynamic Media {#video}
 
 Esta seção descreve como trabalhar com vídeo no Dynamic Media.
 
