@@ -3,9 +3,9 @@ title: Gerenciamento de direitos digitais em [!DNL Adobe Experience Manager Asse
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 18862ca1ce80682a28293ca4ba6741dbdd6b12f2
+source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1428'
 ht-degree: 6%
 
 ---
@@ -40,7 +40,7 @@ Você pode visualização o status de expiração de um ativo na [!UICONTROL Lin
 Você também pode visualização o status de expiração dos ativos no painel **[!UICONTROL Referências]** . Ele gerencia os status e as relações de expiração de ativos entre ativos compostos e subativos, coleções e projetos referenciados.
 
 1. Navegue até o ativo para o qual você deseja visualização as páginas da Web e os ativos compostos.
-1. Selecione o ativo e o [!DNL Experience Manager] logotipo.
+1. Selecione o ativo e clique no [!DNL Experience Manager] logotipo.
 
 1. Escolha **[!UICONTROL Referências]** no menu.
 
@@ -60,7 +60,7 @@ Você pode pesquisar ativos expirados, incluindo subativos expirados no painel P
 
 1. No [!DNL Assets] console, clique em **[!UICONTROL Pesquisar]** na barra de ferramentas para exibir a caixa Omnisearch.
 
-1. Com o cursor na caixa Omnisearch, pressione a tecla Return para exibir a página Resultados da pesquisa.
+1. Com o cursor na caixa Omnisearch, pressione a tecla Enter para exibir a página de resultados da pesquisa.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -72,17 +72,17 @@ Você pode pesquisar ativos expirados, incluindo subativos expirados no painel P
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Selecione **[!UICONTROL Expirado]**. Os ativos expirados são exibidos nos resultados da pesquisa.
+1. Escolha **[!UICONTROL Expirado]**. Os ativos expirados são exibidos nos resultados da pesquisa.
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
-Quando você seleciona a opção **[!UICONTROL Expirado]** , o [!DNL Assets] console exibe apenas os ativos e subativos expirados que são referenciados pelos ativos compostos. Os ativos compostos que fazem referência a subativos expirados não são exibidos imediatamente após a expiração dos subativos. Em vez disso, eles são exibidos após [!DNL Experience Manager] detectar que fazem referência a subativos expirados na próxima vez que o scheduler for executado.
+Quando você escolhe a opção **[!UICONTROL Expirado]** , o [!DNL Assets] console exibe apenas os ativos e subativos expirados que são referenciados pelos ativos compostos. Os ativos compostos que fazem referência a subativos expirados não são exibidos imediatamente após a expiração dos subativos. Em vez disso, eles são exibidos após [!DNL Experience Manager] detectar que fazem referência a subativos expirados na próxima vez que o scheduler for executado.
 
 Se você modificar a data de expiração de um ativo publicado para uma data anterior ao ciclo de scheduleres atual, a programação ainda detectará esse ativo como um ativo expirado na próxima vez que ele for executado e refletirá seu status de acordo.
 
 Além disso, se uma falha ou erro impedir que o scheduler detecte ativos expirados no ciclo atual, o scheduler examinará novamente esses ativos no ciclo seguinte e detectará seu status expirado.
 
-To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in [!DNL Experience Manager] Configuration Manager.
+To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Abra o [!DNL Experience Manager] Configuration Manager.
 1. Escolha **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Por padrão, o Scheduler **[!UICONTROL com base em]** tempo é selecionado, o que agenda uma tarefa para verificar em um horário específico se um ativo expirou subativos. Após a conclusão da tarefa, os ativos que têm subativos expirados e ativos referenciados são exibidos como expirados nos resultados da pesquisa.
@@ -94,7 +94,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
    >[!NOTE]
    >
-   >Somente o criador do ativo (a pessoa para a qual o upload de um ativo específico é feito) recebe um email quando o ativo expira. [!DNL Assets] Consulte [Configuração da notificação](/help/sites-administering/notification.md) por email para obter mais detalhes sobre como configurar notificações por email no [!DNL Experience Manager] nível geral.
+   >Somente o criador do ativo (a pessoa para a qual o upload de um ativo específico é feito) recebe um email quando o ativo expira. [!DNL Assets] Consulte [como configurar a notificação](/help/sites-administering/notification.md) por email para obter mais detalhes sobre como configurar notificações por email no [!DNL Experience Manager] nível geral.
 
 1. No campo Notificação **[!UICONTROL anterior em segundos]** , especifique o tempo em segundos antes do momento em que um ativo expira quando você deseja receber uma notificação sobre a expiração. Se você for um administrador ou o criador do ativo, você receberá uma mensagem antes da expiração do ativo notificando que o ativo está prestes a expirar após o tempo especificado.
 
@@ -119,7 +119,7 @@ O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do e
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Na [!DNL Assets] interface, selecione um ativo e clique em **[!UICONTROL Propriedades]** para exibir sua página de detalhes do ativo.
+1. Para exibir a página de detalhes do ativo, na [!DNL Assets] interface, selecione um ativo e clique em **[!UICONTROL Propriedades]**.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -144,7 +144,7 @@ O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do e
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Pressione return (Retornar) e clique em **[!UICONTROL GlobalNav]** para exibir o painel de pesquisa.
+1. Pressione return (Retornar) e clique [!DNL Experience Manager] para exibir o painel de pesquisa.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
