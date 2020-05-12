@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d948ea6e6f6983ba0ecfe05710ffa7dedb772075
+source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
 workflow-type: tm+mt
-source-wordcount: '5759'
+source-wordcount: '5763'
 ht-degree: 7%
 
 ---
@@ -502,11 +502,11 @@ Para manter o modo Dynamic Media - Scene7 em execução sem problemas, a Adobe r
 * Atualize os processos de trabalho de fila de trabalho temporário de Granite predefinidos (imagens e ativos que não sejam de vídeo).
 * Atualize o máximo de conexões de upload para o servidor do Dynamic Media Classic.
 
-#### Atualizando a fila Fluxo de Trabalho Transitório do Granite {#updating-the-granite-transient-workflow-queue}
+#### Atualização da fila de fluxo de trabalho temporário do Granite {#updating-the-granite-transient-workflow-queue}
 
 A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho de Atualização de ativo **[!UICONTROL do]** DAM. No Dynamic Media, é usado para assimilação e processamento de imagens.
 
-**Para atualizar a fila Fluxo de Trabalho Transitório do Granite**
+**Para atualizar a fila de fluxo de trabalho temporário do Granite**
 
 1. Navegue até [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) e pesquise por **Fila: Fila** de Fluxo de Trabalho Transitório Granite.
 
@@ -524,11 +524,11 @@ A fila Fluxo de trabalho de trânsito Granite é usada para o fluxo de trabalho 
 
 1. Toque em **[!UICONTROL Salvar]**.
 
-#### Atualizando a fila Fluxo de Trabalho do Granite {#updating-the-granite-workflow-queue}
+#### Atualização da fila de fluxo de trabalho do Granite {#updating-the-granite-workflow-queue}
 
 A fila Fluxo de trabalho Granite é usada para workflows não transitórios. No Dynamic Media, costumava processar vídeos com o fluxo de trabalho **[!UICONTROL Dynamic Media Encode Video]** .
 
-**Para atualizar a fila Fluxo de Trabalho de Granite**
+**Para atualizar a fila de fluxo de trabalho do Granite**
 
 1. Navegue até `https://<server>/system/console/configMgr` e pesquise por **Fila: Fila** de Fluxo de Trabalho Granite.
 
@@ -546,11 +546,11 @@ A fila Fluxo de trabalho Granite é usada para workflows não transitórios. No 
 
 1. Toque em **[!UICONTROL Salvar]**.
 
-#### Atualização da conexão de upload do Scene7 {#updating-the-scene-upload-connection}
+#### Atualização da conexão de upload do Dynamic Media Classic {#updating-the-scene-upload-connection}
 
 A configuração Scene7 Upload Connection sincroniza os ativos AEM aos servidores do Dynamic Media Classic.
 
-**Para atualizar a conexão de upload do Scene7**
+**Para atualizar a conexão de upload do Dynamic Media Classic**
 
 1. Vá até `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. No campo **[!UICONTROL Número de conexões]** e/ou no campo Tempo limite **[!UICONTROL do trabalho]** Ativo, altere o número conforme desejado.
