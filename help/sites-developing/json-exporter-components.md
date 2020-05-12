@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
@@ -56,9 +59,19 @@ Além disso, isso especifica que a classe Sling Model pode ser adaptada à `Comp
 >
 >As `ExporterConstants` e `ComponentExporter` as aulas vêm do `com.adobe.cq.export.json` pacote.
 
+### Uso de vários seletores {#multiple-selectors}
+
+Embora não seja um caso de uso padrão, é possível configurar vários seletores além do `model` seletor.
+
+```
+https://<server>:<port>/content/page.model.selector1.selector2.json
+```
+
+Entretanto, nesse caso, o `model` seletor deve ser o primeiro seletor e a extensão deve ser `.json`.
+
 ## Anotar na interface do modelo Sling {#annotate-the-sling-model-interface}
 
-A fim de ser tido em conta pelo quadro do exportador JSON, a interface Model deve implementar a `ComponentExporter` interface (ou `ContainerExporter`, no caso de um componente contentor).
+A fim de ser tido em conta pelo quadro do exportador JSON, a interface modelo deve implementar a `ComponentExporter` interface (ou `ContainerExporter`, no caso de um componente container).
 
 A interface do Sling Model correspondente ( `MyComponent`) seria anotada usando anotações [](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) Jackson para definir como deve ser exportada (serializada).
 
@@ -66,7 +79,7 @@ A interface Modelo precisa ser anotada corretamente para definir quais métodos 
 
 ## Exemplo {#example}
 
-Os Componentes principais têm suporte para exportação JSON desde a versão [1.1.0 dos componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principais e podem ser usados como referência.
+Os Componentes principais têm suporte para exportação JSON desde a versão [1.1.0 dos componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais e podem ser usados como referência.
 
 Para ver um exemplo, consulte a implementação do Modelo Sling do Componente principal de imagem e sua interface anotada.
 
@@ -86,5 +99,5 @@ Para mais informações, consulte:
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para serviços de conteúdo](/help/sites-developing/json-exporter.md)
-* [Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principais e o componente Fragmento [do conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais e o componente Fragmento [do conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
