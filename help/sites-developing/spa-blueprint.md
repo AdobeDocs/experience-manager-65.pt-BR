@@ -1,8 +1,8 @@
 ---
 title: Blueprint do SPA
 seo-title: Blueprint do SPA
-description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura SPA deve cumprir para implementar componentes SPA editáveis no AEM.
-seo-description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura SPA deve cumprir para implementar componentes SPA editáveis no AEM.
+description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura do SPA deve cumprir para implementar componentes editáveis do SPA no AEM.
+seo-description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura do SPA deve cumprir para implementar componentes editáveis do SPA no AEM.
 uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,10 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '2112'
+ht-degree: 0%
 
 ---
 
@@ -37,11 +40,11 @@ Este documento descreve o contrato geral que qualquer estrutura SPA deve cumprir
 >
 >Embora os recursos de SPA do AEM sejam independentes de estrutura, atualmente, somente os frameworks React e Angular são suportados.
 
-Para permitir que o autor use o editor de página do AEM para editar os dados expostos por uma estrutura de aplicativo de página única, um projeto deve ser capaz de interpretar a estrutura do modelo que representa a semântica dos dados armazenados para um aplicativo no repositório do AEM. Para atingir esse objetivo, são fornecidas duas bibliotecas programadas: o `PageModelManager` e o `ComponentMapping`.
+Para permitir que o autor use o editor de página do AEM para editar os dados expostos por uma estrutura de aplicativo de página única, um projeto deve ser capaz de interpretar a estrutura do modelo que representa a semântica dos dados armazenados para um aplicativo no repositório do AEM. Para atingir esse objetivo, são fornecidas duas bibliotecas agnósticas de estrutura: o `PageModelManager` e o `ComponentMapping`.
 
 ### PageModelManager {#pagemodelmanager}
 
-A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por um projeto SPA. Ele acompanha o SPA e atua como um gerenciador de modelo de dados.
+A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por um projeto SPA. Ele acompanha o SPA e serve como um gerenciador de modelo de dados.
 
 Em nome da ZPE, abstrai a recuperação e a gestão da estrutura JSON que representa a estrutura real do conteúdo. Também é responsável por sincronizar com o SPA para informá-lo quando ele precisa renderizar novamente seus componentes.
 
@@ -83,8 +86,8 @@ O modelo de página aproveita o Exportador do Modelo JSON, que é baseado na API
 * `:children`: Filhos hierárquicos do recurso atual. Os filhos não fazem parte do conteúdo interno do recurso atual (pode ser encontrado em itens que representam uma página)
 * `:hierarchyType`: Tipo hierárquico de um recurso. O `PageModelManager` atualmente suporta o tipo de página
 
-* `:items`: Recursos de conteúdo filho do recurso atual (estrutura aninhada, presente somente em contêineres)
-* `:itemsOrder`: Lista ordenada das crianças. O objeto de mapa JSON não garante a ordem de seus campos. Com o mapa e o array atual, o consumidor da API tem os benefícios de ambas as estruturas
+* `:items`: Recursos de conteúdo filho do recurso atual (estrutura aninhada, presente apenas em container)
+* `:itemsOrder`: lista ordenada das crianças. O objeto de mapa JSON não garante a ordem de seus campos. Com o mapa e o array atual, o consumidor da API tem os benefícios de ambas as estruturas
 * `:path`: Caminho do conteúdo de um item (presente em itens que representam uma página)
 
 Consulte também [Introdução aos serviços de conteúdo do AEM.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
@@ -130,7 +133,7 @@ Os metadados a seguir devem ser adicionados ao elemento HTML externo produzido p
 
 #### Declaração de capacidade de edição e espaço reservado {#editing-capability-declaration-and-placeholder}
 
-Os metadados e nomes de classe a seguir devem ser adicionados ao elemento HTML externo produzido pelo componente do projeto. Eles permitem que o Editor de páginas ofereça funcionalidades relacionadas.
+Os metadados e nomes de classe a seguir devem ser adicionados ao elemento HTML externo produzido pelo componente do projeto. Eles permitem que o Editor de páginas oferta funcionalidades relacionadas.
 
 * `cq-placeholder`: Nome da classe que identifica o espaço reservado para um componente vazio
 * `data-emptytext`: Rótulo a ser exibido pela sobreposição quando uma instância do componente estiver vazia
@@ -146,17 +149,17 @@ Cada componente deve ser estendido com uma funcionalidade que decorará o elemen
 
 ### Container {#container}
 
-Um contêiner é um componente destinado a conter e renderizar componentes filhos. Para isso, o contêiner repete as propriedades `:itemsOrder`, `:items` e `:children` propriedades de seu modelo.
+Um container é um componente destinado a conter e renderizar componentes filhos. Para isso, o container repete as `:itemsOrder`propriedades, `:items` e `:children` propriedades de seu modelo.
 
-O contêiner obtém dinamicamente os componentes filho da loja da ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` biblioteca. O contêiner estende o componente filho com os recursos do Provedor de modelos e, por fim, instanciá-lo.
+O container obtém dinamicamente os componentes filho da loja da ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` biblioteca. O container estende o componente filho com os recursos do Provedor de modelos e, por fim, instanciá-lo.
 
 ### Página {#page}
 
-O `Page` componente estende o `Container` componente. Um contêiner é um componente destinado a conter e renderizar componentes filhos, incluindo páginas secundárias. Para fazer isso, o contêiner repete as propriedades `:itemsOrder`, `:items`e `:children` do modelo. O `Page` componente obtém dinamicamente os componentes filho da loja da biblioteca [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) . O `Page` é responsável pela instanciação de componentes filhos.
+O `Page` componente estende o `Container` componente. Um container é um componente destinado a conter e renderizar componentes filhos, incluindo páginas secundárias. Para fazer isso, o container repete as propriedades `:itemsOrder`, `:items`e `:children` propriedades de seu modelo. O `Page` componente obtém dinamicamente os componentes filho da loja da biblioteca [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) . O `Page` é responsável pela instanciação de componentes filhos.
 
 ### Grade responsiva {#responsive-grid}
 
-O componente Grade responsiva é um contêiner. Ele contém uma variante específica do Provedor de modelos que representa suas colunas. A Grade responsiva e suas colunas são responsáveis por decorar o elemento HTML externo do componente do projeto com os nomes de classe específicos contidos no modelo.
+O componente Grade responsiva é um container. Ele contém uma variante específica do Provedor de modelos que representa suas colunas. A Grade responsiva e suas colunas são responsáveis por decorar o elemento HTML externo do componente do projeto com os nomes de classe específicos contidos no modelo.
 
 O componente de Grade responsiva deve vir pré-mapeado para sua contraparte do AEM, pois esse componente é complexo e raramente personalizado.
 
@@ -169,7 +172,7 @@ Consulte também o recurso npm [@adobe/cq-response-editable-components#srccompon
 
 #### Espaço reservado da grade responsiva {#placeholder-of-the-reponsive-grid}
 
-O componente SPA é mapeado para um contêiner gráfico, como a Grade responsiva, e deve adicionar um espaço reservado para filho virtual quando o conteúdo está sendo criado. Quando o conteúdo do SPA está sendo criado pelo Editor de páginas, esse conteúdo é incorporado ao editor usando um iframe e o `data-cq-editor` atributo é adicionado ao nó do documento desse conteúdo. Quando o `data-cq-editor` atributo está presente, o contêiner deve incluir um HTMLElement para representar a área com a qual o autor interage ao inserir um novo componente na página.
+O componente SPA é mapeado para um container gráfico, como a Grade responsiva, e deve adicionar um espaço reservado para filho virtual quando o conteúdo está sendo criado. Quando o conteúdo do SPA está sendo criado pelo Editor de páginas, esse conteúdo é incorporado ao editor usando um iframe e o `data-cq-editor` atributo é adicionado ao nó do documento desse conteúdo. Quando o `data-cq-editor` atributo está presente, o container deve incluir um HTMLElement para representar a área com a qual o autor interage ao inserir um novo componente na página.
 
 Por exemplo:
 
@@ -181,7 +184,7 @@ Por exemplo:
 >
 >Os nomes de classe usados no exemplo são exigidos atualmente pelo editor de página.
 >
->* `"new section"`: Indica que o elemento atual é o espaço reservado do contêiner
+>* `"new section"`: Indica que o elemento atual é o espaço reservado do container
 >* `"aem-Grid-newComponent"`: Normaliza o componente para a criação de layout
 >
 
@@ -189,7 +192,7 @@ Por exemplo:
 
 #### Component Mapping {#component-mapping}
 
-A biblioteca subjacente Mapeamento [de](/help/sites-developing/spa-blueprint.md#componentmapping) componentes e sua `MapTo` função podem ser encapsuladas e estendidas para fornecer as funcionalidades relativas à configuração de edição fornecida ao lado da classe de componente atual.
+A [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca subjacente e sua `MapTo` função podem ser encapsuladas e estendidas para fornecer as funcionalidades relativas à configuração de edição fornecida ao lado da classe de componente atual.
 
 ```
 const EditConfig = {
@@ -211,7 +214,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-Na implementação acima, o componente do projeto é estendido com a funcionalidade vazia antes de ser realmente registrado na loja Mapeamento [de](/help/sites-developing/spa-blueprint.md#componentmapping) componentes. Isso é feito encapsulando e estendendo a ` [ComponentMapping](/content.md#main-pars_header_906602219)` biblioteca para introduzir o suporte do objeto de `EditConfig` configuração:
+Na implementação acima, o componente do projeto é estendido com a funcionalidade vazia antes de ser realmente registrado na loja Mapeamento [de](/help/sites-developing/spa-blueprint.md#componentmapping) componentes. Isso é feito encapsulando e estendendo a [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca para introduzir o suporte do objeto de `EditConfig` configuração:
 
 ```
 /**
@@ -234,7 +237,7 @@ Na implementação acima, o componente do projeto é estendido com a funcionalid
 ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 ```
 
-## Contrato com o editor de página {#contract-wtih-the-page-editor}
+## Contrato com o editor de página {#contract-with-the-page-editor}
 
 Os componentes do projeto devem gerar no mínimo os seguintes atributos de dados para permitir que o editor interaja com eles.
 
@@ -242,7 +245,7 @@ Os componentes do projeto devem gerar no mínimo os seguintes atributos de dados
 
 Em resumo, para ser interpretado pelo editor de página como editável, um componente de projeto deve respeitar o seguinte contrato:
 
-* Forneça os atributos esperados para associar uma instância de componente front-end a um recurso AEM.
+* Forneça os atributos esperados para associar uma instância de componente front-end a um recurso do AEM.
 * Forneça a série esperada de atributos e nomes de classe que permitem a criação de espaços reservados vazios.
 * Forneça os nomes de classe esperados, permitindo a ação de arrastar e soltar ativos.
 
@@ -269,15 +272,15 @@ O fragmento a seguir ilustra a representação HTML típica de uma estrutura de 
 </div>
 ```
 
-## Navegação e roteamento {#navigation-and-routing}
+## Navegação e Roteamento {#navigation-and-routing}
 
-O aplicativo possui o roteamento. O desenvolvedor front-end precisa primeiro implementar um componente de Navegação (mapeado para um componente de navegação do AEM). Esse componente renderizaria links de URL a serem usados em conjunto com uma série de rotas que exibirão ou ocultarão fragmentos de conteúdo.
+O aplicativo é o proprietário do roteamento. Primeiro, o desenvolvedor front-end precisa implementar um componente de Navegação (mapeado para um componente de navegação do AEM). Esse componente renderizaria links de URL a serem usados em conjunto com uma série de rotas que exibirão ou ocultarão fragmentos de conteúdo.
 
 A [ biblioteca subjacente `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) e seu ` [ModelRouter](/help/sites-developing/spa-routing.md)` módulo (ativado por padrão) são responsáveis pela busca prévia e pelo acesso ao modelo associado a um determinado caminho de recurso.
 
-As duas entidades se relacionam à noção de roteamento, mas o usuário só ` [ModelRouter](/help/sites-developing/spa-routing.md)` é responsável por ter o ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` carregado com um modelo de dados estruturado em sincronia com o estado atual do aplicativo.
+As duas entidades se relacionam à noção de roteamento, mas o ` [ModelRouter](/help/sites-developing/spa-routing.md)` é responsável apenas por ter o ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` carregado com um modelo de dados estruturado em sincronia com o estado atual do aplicativo.
 
-Consulte o artigo [SPA Model Routing](/help/sites-developing/spa-routing.md) para obter mais informações.
+Consulte o artigo [SPA Model Roteamento](/help/sites-developing/spa-routing.md) para obter mais informações.
 
 ## SPA em ação {#spa-in-action}
 
