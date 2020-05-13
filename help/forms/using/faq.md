@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+workflow-type: tm+mt
+source-wordcount: '1970'
+ht-degree: 0%
 
 ---
 
@@ -150,7 +153,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    Resposta: Os formulários HTML5 ignoram as propriedades de aparência personalizadas de botões de opção e caixas de seleção. Os botões de opção e as caixas de seleção são exibidos de acordo com as especificações do navegador subjacente.
 
-1. Quando um formulário HTML5 é aberto em um navegador compatível, a borda dos campos colocados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Quando o mesmo formulário HTML5 é visualizado no Designer de Formulários, os campos e o layout não aparecem desalinhados e os subformulários aparecem na posição correta. Como corrigir o problema?
+1. Quando um formulário HTML5 é aberto em um navegador compatível, a borda dos campos posicionados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Quando o mesmo formulário HTML5 é visualizado no Designer de Formulários, os campos e o layout não aparecem desalinhados e os subformulários aparecem na posição correta. Como corrigir o problema?
 
    Quando um subformulário é definido para continuar o conteúdo e ele tem um elemento de borda oculto, a borda dos campos posicionados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Para resolver o problema, você pode remover ou comentar os elementos ocultos &lt;border> do XDP correspondente. Por exemplo, o seguinte elemento &lt;border> é marcado como um comentário:
 
@@ -164,6 +167,10 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 1. Por que os leitores de tela não funcionam corretamente com o objeto de campo Data/hora?
 
    Os leitores de tela não suportam campos de data/hora. Entretanto, é possível inserir manualmente a data/hora no campo para que o leitor de tela o leia. Use o texto de dica de ferramenta ou leitor de tela para instruir o usuário a selecionar manualmente a data/hora do campo.
+
+1. Os formulários HTML5 são compatíveis com padrões de exibição para campos flutuantes?
+
+   Resposta: Formulários HTML5 não suportam padrões de exibição para campos flutuantes.
 
 ### Scripts {#scripting}
 
