@@ -3,9 +3,9 @@ title: 'schemas de metadados para definir o layout da página de propriedades de
 description: O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 739f1c6fcc910ed134849c27a44a6feccd1684c9
+source-git-commit: 530a720a5fbad906e7015aa41a650b31f09fe2c4
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2708'
 ht-degree: 10%
 
 ---
@@ -22,10 +22,6 @@ Para visualização e edição da página de propriedades de um ativo, siga esta
 1. Clique ou toque no ícone Propriedades **[!UICONTROL da]** Visualização em Ações rápidas no bloco de ativo em visualização de cartão.
 
    ![Ações rápidas no bloco de ativos](assets/chlimage_1-170.png)
-
-1. Edite várias propriedades de metadados nas várias guias. No entanto, não é possível modificar o tipo de ativo na página [!UICONTROL Propriedades] .
-
-   ![Guia Básica de Propriedades do ativo, na qual o tipo de ativo não pode ser alterado](assets/asset-properties-basic-tab.png)
 
 1. É possível editar várias propriedades de metadados nas guias disponíveis. No entanto, não é possível modificar o [!UICONTROL Tipo] de ativo na guia [!UICONTROL Básico] da página de propriedades.
 
