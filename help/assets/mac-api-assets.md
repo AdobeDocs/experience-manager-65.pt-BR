@@ -3,7 +3,7 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 1%
@@ -95,9 +95,9 @@ A API HTTP Assets inclui os seguintes recursos:
 
 **Pré-requisitos**
 
-* Ir para `https://[aem_server]:[port]/system/console/configMgr`.
-* Navegue até Filtro **CSRF do** Adobe Granite.
-* Verifique se a propriedade Métodos **de** filtro inclui: POSTAGEM, COLOCAR, EXCLUIR.
+1. Ir para `https://[aem_server]:[port]/system/console/configMgr`.
+1. Navegue até Filtro **CSRF do** Adobe Granite.
+1. Verifique se a propriedade Métodos **de** filtro inclui: POSTAGEM, COLOCAR, EXCLUIR.
 
 ## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
 
