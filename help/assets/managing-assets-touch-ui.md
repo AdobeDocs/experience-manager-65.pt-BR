@@ -1,10 +1,13 @@
 ---
-title: Gerencie seus ativos digitais no [!DNL Adobe Experience Manager Assets].
+title: Gerencie seus ativos digitais [!DNL Adobe Experience Manager Assets].
 description: Saiba mais sobre as tarefas de gerenciamento de ativos como carregar, baixar, editar, pesquisar, excluir, anotar e editar seus ativos digitais.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1321aa3421455d78fd4562d6cb524aa232ee2ce1
+source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+workflow-type: tm+mt
+source-wordcount: '9347'
+ht-degree: 5%
 
 ---
 
@@ -503,7 +506,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    **Excluir uma representação**
 
-   Selecione uma representação no painel **[!UICONTROL Representações]** e toque/clique no ícone **[!UICONTROL Excluir representação]** da barra de ferramentas.
+   Selecione uma representação no painel **[!UICONTROL Representações]** e toque/clique no ícone **[!UICONTROL Excluir representação]** da barra de ferramentas. As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload dos ativos excluídos novamente.
 
    ![Opção para excluir uma representação](assets/delete_renditionicon.png)
 
