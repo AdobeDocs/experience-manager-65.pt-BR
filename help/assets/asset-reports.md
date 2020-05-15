@@ -3,7 +3,10 @@ title: Relatórios sobre seus ativos digitais
 description: Entenda os relatórios sobre seus ativos no AEM Assets que ajudam a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 15%
 
 ---
 
@@ -37,8 +40,7 @@ O AEM Assets gera os seguintes relatórios padrão para você:
 Os administradores do AEM podem facilmente gerar e personalizar esses relatórios para sua implementação. Um administrador pode seguir estas etapas para gerar um relatório:
 
 1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
-
-![](assets/AssetsReportNavigation.png)
+   ![](assets/AssetsReportNavigation.png)
 
 1. Na página Relatórios [!UICONTROL de] ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
@@ -111,6 +113,8 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 * Publicação
 * Publicação do Brand Portal
 * Arquivos
+
+Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
 
 1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 1. Na página Relatórios [!UICONTROL de] ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas.
