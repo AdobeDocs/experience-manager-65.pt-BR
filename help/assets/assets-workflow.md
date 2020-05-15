@@ -3,7 +3,10 @@ title: Processar ativos para realizar processos de negócios, realizar auditoria
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Para processamento de ativos, [!DNL Experience Manager] usa workflows. Os Workflows ajudam a automatizar a lógica comercial ou as atividades. As etapas granulares para realizar tarefas específicas são fornecidas por padrão e os desenvolvedores podem criar suas próprias etapas personalizadas. Essas etapas podem ser combinadas em uma ordem lógica para criar workflows. Por exemplo, um fluxo de trabalho pode aplicar uma marca d&#39;água em imagens carregadas com base em critérios específicos, como pasta para a qual é carregado, resolução da imagem e assim por diante. Outro exemplo é um fluxo de trabalho configurado para marca d&#39;água e, simultaneamente, adicionar metadados, criar execuções, adicionar tags inteligentes e publicar em um armazenamento de dados.
 
-## workflows padrão disponíveis em [!DNL Experience Manager]{#default-workflows}
+## workflows padrão disponíveis em [!DNL Experience Manager] {#default-workflows}
 
 Por padrão, todos os ativos carregados são processados usando o fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM. O fluxo de trabalho é executado para cada ativo carregado e realiza tarefas básicas de gerenciamento de ativos, como geração de representação, gravação de metadados, extração da página, extração de mídia e transcodificação.
 
@@ -96,6 +99,10 @@ Para um modelo de fluxo de trabalho, os usuários podem criar um inicializador d
 
 * Faça uma cópia do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM e modifique-o para ser executado em uma hierarquia de pastas específica. Essa abordagem é útil para algumas pastas.
 * As etapas de processamento adicionais podem ser adicionadas usando uma divisão [OU](/help/sites-developing/workflows-step-ref.md#or-split) , como aplicável condicionalmente a quantas pastas forem necessárias.
+
+## Práticas recomendadas e limitações {#best-practices-limitations-tips}
+
+* Considere suas necessidades para todos os tipos de execuções ao projetar workflows. Se você não prever a necessidade de uma representação no futuro, remova a etapa de criação do fluxo de trabalho. As execuções não podem ser excluídas em massa depois. As representações indesejadas podem ocupar muito espaço no armazenamento após uso prolongado de [!DNL Experience Manager]. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar [!DNL Experience Manager] para excluir representações específicas ou excluir os ativos e carregá-los novamente.
 
 >[!MORELIKETHIS]
 >
