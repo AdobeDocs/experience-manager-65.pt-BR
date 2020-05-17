@@ -1,40 +1,43 @@
 ---
-title: Instalar e configurar o ImageMagick para trabalhar com os ativos AEM
+title: Instale e configure o ImageMagick para trabalhar [!DNL Adobe Experience Manager Assets].
 description: Saiba mais sobre o software ImageMagick, como instalá-lo, configurar a etapa do processo da linha de comando e usá-lo para editar, compor e gerar miniaturas de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 1%
 
 ---
 
 
-# Instalar e configurar o ImageMagick para trabalhar com os ativos AEM{#install-and-configure-imagemagick-to-work-with-aem-assets}
+# Instale e configure o ImageMagick para trabalhar com [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick é um plug-in de software para criar, editar, compor ou converter imagens de bitmap. Ele pode ler e gravar imagens em vários formatos (mais de 200), incluindo PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF e SVG. Use o ImageMagick para redimensionar, virar, espelhar, girar, distorcer, distorcer e transformar imagens. Você também pode ajustar as cores da imagem, aplicar vários efeitos especiais ou desenhar texto, linhas, polígonos, elipses e curvas usando o ImageMagick.
 
-Use o manipulador de mídia do Adobe Experience Manager (AEM) na linha de comando para processar imagens por meio do ImageMagick. Para trabalhar com vários formatos de arquivo usando o ImageMagick, consulte Práticas [recomendadas para formatos de arquivo de](/help/assets/assets-file-format-best-practices.md)Ativos. Para saber mais sobre todos os formatos de arquivo suportados, consulte Formatos [compatíveis com o](/help/assets/assets-formats.md)Assets.
+Use o manipulador de [!DNL Adobe Experience Manager] mídia da linha de comando para processar imagens por meio do ImageMagick. Para trabalhar com vários formatos de arquivo usando o ImageMagick, consulte Práticas [recomendadas para formatos de arquivo de](/help/assets/assets-file-format-best-practices.md)Ativos. Para saber mais sobre todos os formatos de arquivo suportados, consulte Formatos [compatíveis com o](/help/assets/assets-formats.md)Assets.
 
-Para processar arquivos grandes usando o ImageMagick, considere requisitos de memória mais altos do que o normal, possíveis alterações necessárias às políticas de IM e o impacto geral no desempenho. Os requisitos de memória dependem de vários fatores, como resolução, profundidade de bits, perfil de cores e formato de arquivo. Se você pretende processar arquivos muito grandes usando o ImageMagick, faça o benchmark adequado do servidor AEM. Alguns recursos úteis são fornecidos no final.
+Para processar arquivos grandes usando o ImageMagick, considere requisitos de memória mais altos do que o normal, possíveis alterações necessárias às políticas de IM e o impacto geral no desempenho. Os requisitos de memória dependem de vários fatores, como resolução, profundidade de bits, perfil de cores e formato de arquivo. Se você pretende processar arquivos muito grandes usando o ImageMagick, faça o benchmark adequado do [!DNL Experience Manager] servidor. Alguns recursos úteis são fornecidos no final.
 
 >[!NOTE]
 >
->Se você estiver usando o AEM no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente da Adobe se planeja processar muitos arquivos PSD ou PSB de alta resolução. O Experience Manager talvez não processe arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
+>Se você estiver usando [!DNL Experience Manager] o AMS ( [!DNL Adobe Managed Services] ), entre em contato com o Atendimento ao cliente da Adobe se planeja processar vários arquivos PSD ou PSB de alta resolução. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
-## Instalação do ImageMagick {#installing-imagemagick}
+## Instalar ImageMagick {#installing-imagemagick}
 
 Várias versões dos arquivos de instalação do ImageMagic estão disponíveis para vários sistemas operacionais. Use a versão apropriada para seu sistema operacional.
 
 1. Baixe os arquivos [de instalação apropriados do](https://www.imagemagick.org/script/download.php) ImageMagick para seu sistema operacional.
-1. Para instalar o ImageMagick no disco que hospeda o servidor AEM, inicie o arquivo de instalação.
+1. Para instalar o ImageMagick no disco que hospeda o [!DNL Experience Manager] servidor, inicie o arquivo de instalação.
 
 1. Defina a variável path Ambiente para o diretório de instalação ImageMagic.
 1. Para verificar se a instalação foi bem-sucedida, execute o `identify -version` comando.
 
 ## Configurar a etapa do processo da linha de comando {#set-up-the-command-line-process-step}
 
-Você pode configurar a etapa do processo da linha de comando para seu caso de uso específico. Execute estas etapas para gerar uma imagem invertida e miniaturas (140x100, 48x48, 319x319 e 1280x1280) cada vez que você adicionar um arquivo de imagem JPEG `/content/dam` no servidor AEM:
+Você pode configurar a etapa do processo da linha de comando para seu caso de uso específico. Execute estas etapas para gerar uma imagem invertida e miniaturas (140x100, 48x48, 319x319 e 1280x1280) cada vez que você adicionar um arquivo de imagem JPEG `/content/dam` no [!DNL Experience Manager] servidor:
 
-1. No servidor AEM, vá para o console Fluxo de trabalho (`https://[aem_server]:[port]/workflow`) e abra o modelo de fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM.
+1. No [!DNL Experience Manager] servidor, vá para o console Fluxo de trabalho (`https://[aem_server]:[port]/workflow`) e abra o modelo de fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM.
 1. No modelo de fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM, abra a etapa de miniaturas **[!UICONTROL EPS (acionada pelo ImageMagick)]** .
 1. Na guia **** Argumentos, adicione `image/jpeg` à lista **[!UICONTROL Mime Types]** .
 
@@ -70,7 +73,8 @@ Você pode configurar a etapa do processo da linha de comando para seu caso de u
    ![web_enabled](assets/web_enabled.png)
 
 1. Salve o fluxo de trabalho.
-1. Para verificar se o ImageMagic consegue processar imagens corretamente, carregue uma imagem JPG para os ativos AEM. Verifique se uma imagem invertida e as execuções são geradas para ela.
+
+1. Para verificar o processamento correto, carregue uma imagem JPG para [!DNL Assets]. Após a conclusão do processamento, verifique se uma imagem virada e as representações são geradas ou não.
 
 ## Reduzindo vulnerabilidades de segurança {#mitigating-security-vulnerabilities}
 
