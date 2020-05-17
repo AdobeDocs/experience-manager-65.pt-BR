@@ -3,7 +3,10 @@ title: Guia de dimensionamento de ativos
 description: Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar os ativos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 0%
 
 ---
 
@@ -28,21 +31,21 @@ Considerando esses fatores, você precisa de uma metodologia para calcular um es
 1. Obtenha uma amostra representativa dos ativos a serem carregados no AEM. Por exemplo, se você planeja carregar arquivos PSD, JPG, AI e PDF no sistema, é necessário várias imagens de amostra de cada formato de arquivo. Além disso, essas amostras devem ser representativas dos diferentes tamanhos de arquivo e complexidades das imagens.
 1. Defina as representações a serem usadas.
 1. Crie as execuções no AEM usando os aplicativos ImageMagick ou Creative Cloud da Adobe. Além das representações que os usuários especificam, crie execuções prontas para uso. Para usuários que implementam o Scene7, você pode usar o binário IC para gerar as execuções PTIFF a serem armazenadas no AEM.
-1. Se você planeja usar subativos, gere-os para os tipos de arquivo apropriados. Consulte a documentação on-line sobre como gerar páginas de subativos de arquivos do InDesign ou arquivos PNG/PDF de camadas do Illustrator.
+1. Se você planeja usar subativos, gere-os para os tipos de arquivo apropriados.
 1. Compare o tamanho das imagens de saída, representações e subativos com as imagens originais. Ele permite gerar um fator de crescimento esperado quando o sistema é carregado. Por exemplo, se você gerar representações e subativos com um tamanho combinado de 3 GB após o processamento de 1 GB de ativos, o fator de crescimento da representação será 3.
 1. Determine o tempo máximo durante o qual as versões de ativos devem ser mantidas no sistema.
 1. Determine com que frequência os ativos existentes são modificados no sistema. Se o AEM for usado como um hub de colaboração em workflows criativos, a quantidade de alterações será alta. Se apenas os ativos finalizados forem carregados no sistema, esse número será muito menor.
 1. Determine quantos ativos são carregados no sistema a cada mês. Se não tiver certeza, verifique o número de ativos que estão disponíveis no momento e divida o número pela idade do ativo mais antigo para calcular um número aproximado.
 
-A execução das etapas 1 a 9 ajuda a determinar o seguinte:
+A execução das etapas acima ajuda a determinar o seguinte:
 
-* Tamanho bruto dos ativos a carregar
-* Número de ativos a serem carregados
-* Fator de crescimento da renderização
-* Número de modificações de ativos feitas por mês
-* Número de meses para manter versões de ativos
-* Número de novos ativos carregados mensalmente
-* Anos de crescimento para alocar espaço para
+* Tamanho bruto dos ativos a serem carregados.
+* Número de ativos a serem carregados.
+* Fator de crescimento da representação.
+* Número de modificações de ativos feitas por mês.
+* Número de meses para manter versões de ativos.
+* Número de novos ativos carregados mensalmente.
+* Anos de crescimento para alocação de espaço no armazenamento.
 
 Você pode especificar esses números na planilha Dimensionamento de rede para determinar o espaço total necessário para o armazenamento de dados. Também é uma ferramenta útil para determinar o impacto da manutenção de versões de ativos ou da modificação de ativos no AEM no crescimento do disco.
 
@@ -52,7 +55,7 @@ O exemplo de dados preenchido na ferramenta demonstra a importância de executar
 
 ### Repositórios de dados compartilhados {#shared-datastores}
 
-Para grandes armazenamentos de dados, você pode implementar um armazenamento de dados compartilhado por meio de um armazenamento de dados de arquivo compartilhado em uma unidade conectada à rede ou por meio de um armazenamento de dados S3. Nesse caso, as instâncias individuais não precisam manter uma cópia dos binários. Além disso, um armazenamento de dados compartilhado facilita a replicação sem binários e ajuda a reduzir a largura de banda usada para replicar ativos para publicar ambientes.
+Para grandes armazenamentos de dados, é possível implementar um armazenamento de dados compartilhado por meio de um armazenamento de dados de arquivo compartilhado em uma unidade conectada à rede ou por meio de um armazenamento de dados Amazon S3. Nesse caso, as instâncias individuais não precisam manter uma cópia dos binários. Além disso, um armazenamento de dados compartilhado facilita a replicação sem binários e ajuda a reduzir a largura de banda usada para replicar ativos para publicar ambientes.
 
 #### Casos de uso {#use-cases}
 
@@ -72,7 +75,7 @@ Com um armazenamento de dados compartilhado, apresenta um único ponto de falha 
 
 Os armazenamentos de dados compartilhados também aumentam a complexidade das operações, como a coleta de lixo. Normalmente, a coleta de lixo para um armazenamento de dados independente pode ser iniciada com um único clique. No entanto, os armazenamentos de dados compartilhados exigem operações de varredura de marca em cada membro que usa o armazenamento de dados, além de executar a coleção real em um único nó.
 
-Para operações AWS, a implementação de um único local central (via S3), em vez de construir uma matriz RAID de volumes EBS, pode compensar significativamente a complexidade e os riscos operacionais no sistema.
+Para operações AWS, a implementação de um único local central (via Amazon S3), em vez de construir uma matriz RAID de volumes EBS, pode compensar significativamente a complexidade e os riscos operacionais no sistema.
 
 #### Problemas de desempenho {#performance-concerns}
 
@@ -101,7 +104,7 @@ Para o repositório, use SSDs ou discos com um nível IOPS superior a 3000. Para
 
 O AEM Assets tem vários casos de uso que tornam o desempenho da rede mais importante do que em muitos de nossos projetos do AEM. Um cliente pode ter um servidor rápido, mas se a conexão de rede não for grande o suficiente para suportar a carga dos usuários que estão carregando e baixando ativos do sistema, ele ainda parecerá estar lento. Há uma boa metodologia para determinar o ponto de estrangulamento na conexão de rede de um usuário ao AEM em considerações de ativos [AEM para experiência do usuário, dimensionamento de instância, avaliação de fluxo de trabalho e topologia](/help/assets/assets-network-considerations.md)de rede.
 
-## Limitações       {#limitations}
+## Limitações         {#limitations}
 
 Ao dimensionar uma implementação, é importante ter em mente as limitações do sistema. Se a implementação proposta exceder essas limitações, empregue estratégias criativas, como a divisão dos ativos em várias implementações de Ativos.
 
