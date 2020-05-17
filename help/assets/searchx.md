@@ -3,7 +3,10 @@ title: Amplie a funcionalidade de pesquisa dos ativos Adobe Experience Manager
 description: Estenda os recursos de pesquisa dos ativos Adobe Experience Manager para além dos padrões.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 19%
 
 ---
 
@@ -18,7 +21,7 @@ Você também pode adicionar outras guias ao painel [!DNL Assets] de administra�
 
 >[!CAUTION]
 >
->A partir da versão [!DNL Experience Manager] 6.4, a interface clássica está obsoleta. Para o anúncio, consulte [Recursos](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)obsoletos e removidos. A Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte [Pesquisar aspectos](/help/assets/search-facets.md).
+>A partir da versão [!DNL Experience Manager] 6.4, a interface clássica está obsoleta. Para o anúncio, consulte os recursos [](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)desaprovados e removidos. A Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte aspectos [de pesquisa](/help/assets/search-facets.md).
 
 ## Sobreposição {#overlaying}
 
@@ -70,7 +73,7 @@ Para criar um predicado de propriedade:
 
 1. Adicionar `titlepredicate.jsp`.
 
-   ```xml
+   ```java
    <%--
    
      Sample title predicate component
@@ -163,7 +166,7 @@ Para criar um predicado de grupo:
 
 1. Adicione **titlepredicate.jsp**:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
@@ -247,7 +250,7 @@ Para criar um predicado de grupo:
 
 Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados.
 
-### PredicadoTexto completo {#fulltextpredicate}
+### PredicadoTextoCompleto {#fulltextpredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
