@@ -3,7 +3,10 @@ title: Desenvolvimento proxy de ativos
 description: Um proxy é uma instância do AEM que usa trabalhadores proxy para processar trabalhos. Saiba mais sobre como configurar um proxy AEM, operações suportadas, componentes proxy e como desenvolver um trabalho proxy personalizado.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +83,7 @@ Um trabalhador proxy é um processador responsável por manipular um trabalho e 
 
 Este é um exemplo de uso da API:
 
-```xml
+```java
 @Reference
  JobService proxyJobService;
 
@@ -114,7 +117,7 @@ As configurações de proxy e de trabalho proxy estão disponíveis por meio de 
 
 Este é um exemplo de uso da API:
 
-```xml
+```java
 @Reference(policy = ReferencePolicy.STATIC)
  ProxyConfig proxyConfig;
 
@@ -169,7 +172,7 @@ O diagrama e as etapas a seguir detalham como proceder:
 
    Como exemplo, consulte `IDSJobProcessor.java` para obter o representante do IDS.
 
-1. Use `ProxyUtil.java` em dam-commons. Isso permite que você despache trabalhos para trabalhadores usando o proxy dam.
+1. Aproveite o `ProxyUtil.java` dialeto comum. Isso permite que você despache trabalhos para trabalhadores usando o proxy dam.
 
 >[!NOTE]
 >
