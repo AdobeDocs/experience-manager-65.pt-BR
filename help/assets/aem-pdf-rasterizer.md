@@ -3,7 +3,7 @@ title: Use o rasterizador de PDF para gerar execuções de arquivos PDF.
 description: Gere miniaturas e execuções de alta qualidade usando a biblioteca do Adobe PDF Rasterizer no [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -63,6 +63,7 @@ As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor
 
 
 1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir representação gerada]**.
+
 1. Para permitir que o PDF Rasterizer gere renderizações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -72,8 +73,11 @@ As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Salve o fluxo de trabalho.
-1. Para permitir que o PDF Rasterizer processe páginas PDF com bibliotecas de PDF, abra o modelo **[!UICONTROL DAM Process Subasset]** no console Fluxo de trabalho.
+
+1. Para permitir que o PDF Rasterizer processe páginas PDF com bibliotecas de PDF, abra o modelo **[!UICONTROL DAM Process Subasset]** no console [!UICONTROL Fluxo de trabalho] .
+
 1. No painel lateral, arraste a etapa Manipulador do rasterizador de PDF na etapa **[!UICONTROL Criar representação de imagem]** habilitada para a Web.
+
 1. Configure os seguintes argumentos para a etapa do **[!UICONTROL PDF Rasterizer Handler]** :
 
    * Tipos MIME: `application/pdf` ou `application/postscript`
