@@ -3,9 +3,9 @@ title: Como editar ou adicionar metadados
 description: Saiba mais sobre os metadados do ativo [!DNL Adobe Experience Manager Assets] de várias maneiras pelas quais você pode editar os metadados do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é extraído automaticamente quando você carrega uma imagem. Você pode editar os metadados existentes ou adicionar novas propriedades de metadados a campos existentes (por exemplo, quando um campo de metadados estiver em branco).
 
-Como as organizações precisam de vocabulários de metadados controlados e confiáveis, [!DNL Experience Manager Assets] não permite a adição ad-hoc de novas propriedades de metadados. Embora os autores não possam adicionar novos campos de metadados para ativos, os desenvolvedores podem. Consulte [criar nova propriedade de metadados para ativos](meta-edit.md#editing-metadata-schema).
+Como as organizações precisam de vocabulários de metadados controlados e confiáveis, [!DNL Experience Manager Assets] não permite a adição sob demanda de novas propriedades de metadados. Embora os autores não possam adicionar novos campos de metadados para ativos, os desenvolvedores podem. Consulte [criar propriedade de metadados para ativos](meta-edit.md#editing-metadata-schema).
 
 ## Editar metadados para um ativo {#editing-metadata-for-an-asset}
 
-Para editar metadados:
+Para editar metadados, siga estas etapas:
 
 1. Faça uma das seguintes opções:
 
@@ -32,13 +32,13 @@ Para editar metadados:
 
    *Figura: Edite ou adicione metadados na página[!UICONTROL Propriedades]do ativo.*
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the Assets web interface.
+1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
    >[!NOTE]
    >
    >Se um campo de texto estiver vazio, não há metadados definidos. Você pode inserir um valor no campo e salvá-lo para adicionar essa propriedade de metadados.
 
-Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados XMP. Isso é feito por meio do fluxo de trabalho de gravação de [!DNL Experience Manager] metadados. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e as propriedades recém-criadas (incluindo propriedades personalizadas como `cq:tags`) são adicionadas ao schema.
+Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados XMP. O fluxo de trabalho de gravação de metadados adiciona os metadados ao binário original. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e novas propriedades (incluindo propriedades personalizadas como `cq:tags`) são adicionadas ao schema.
 
 A gravação XMP é suportada e ativada para as plataformas e formatos de arquivo descritos nos requisitos [técnicos.](/help/sites-deploying/technical-requirements.md)
 
