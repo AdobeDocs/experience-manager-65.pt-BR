@@ -3,9 +3,9 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1570'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,8 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São conta
 
 **Propriedades**:
 
-* `name`  — Nome da pasta. É o mesmo que o último segmento no caminho do URL sem a extensão
-* `title` — Título opcional da pasta que pode ser exibida em vez de seu nome
+* `name` é o nome da pasta. É o mesmo que o último segmento no caminho do URL sem a extensão.
+* `title` é um título opcional da pasta que pode ser exibido em vez de seu nome.
 
 >[!NOTE]
 >
@@ -55,39 +55,39 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São conta
 
 **As Pastas de links** expõem três links:
 
-* `self`: Vincular a si mesmo
-* `parent`: Link para a pasta pai
-* `thumbnail`: (Opcional) link para uma imagem em miniatura de pasta
+* `self`: Vincule-se a si mesmo.
+* `parent`: Link para a pasta pai.
+* `thumbnail`: (Opcional) link para uma imagem em miniatura da pasta.
 
 ### Ativos {#assets}
 
 No Experience Manager, um ativo contém os seguintes elementos:
 
-* As propriedades e os metadados do ativo
-* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As execuções adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas do PDF ou do InDesign.
-* Comentários opcionais
+* As propriedades e os metadados do ativo.
+* Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As execuções adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou Adobe InDesign.
+* Comentários opcionais.
 
 Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP dos ativos do Experience Manager.
 
 No Experience Manager, uma pasta tem os seguintes componentes:
 
 * Entidades: Os filhos dos ativos são suas representações.
-* Propriedades
-* Links
+* Propriedades.
+* Links.
 
 A API HTTP Assets inclui os seguintes recursos:
 
-* Recuperar uma listagem de pastas
-* Criar uma pasta
-* Criar um ativo
-* Atualizar binário de ativo
-* Atualizar metadados do ativo
-* Criar uma representação de ativo
-* Atualizar uma representação de ativo
-* Criar um comentário de ativo
-* Copiar uma pasta ou um ativo
-* Mover uma pasta ou um ativo
-* Excluir uma pasta, ativo ou representação
+* Recuperar uma lista de pastas.
+* Criar uma pasta.
+* Criar um ativo.
+* Atualize o binário do ativo.
+* Atualize os metadados do ativo.
+* Crie uma representação de ativo.
+* Atualizar uma representação de ativo.
+* Crie um comentário de ativo.
+* Copie uma pasta ou um ativo.
+* Mova uma pasta ou um ativo.
+* Exclua uma pasta, ativo ou representação.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Cria um novo `sling`: `OrderedFolder` no caminho determinado. Se um nome `*` for
 
 Uma chamada de API falhará com um código de `500` resposta se o nó pai do caminho fornecido não existir. Uma chamada retornará um código de resposta `409` se a pasta já existir.
 
-**Parâmetros**: `name` - Nome da pasta
+**Parâmetros**: `name` é o nome da pasta.
 
 **Solicitar**
 
