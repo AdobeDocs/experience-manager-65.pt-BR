@@ -3,7 +3,10 @@ title: Importe e exporte metadados de ativos em massa.
 description: Importação e exportação em massa de metadados de ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2fd9a32396152eaf46e69c3141cbe1b6a69a3891
+source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +26,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
 1. Navegue até a interface do [!DNL Assets] usuário e clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. No menu, selecione **[!UICONTROL Metadados]**.
 1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Selecione o arquivo CSV com os metadados.
-1. Especifique os seguintes parâmetros:
+1. Especifique os seguintes parâmetros. Consulte um arquivo CSV de amostra em [metadata-import-sample-file.csv](assets/metadata-import-sample-file.csv).
 
    | Parâmetros de importação de metadados | Descrição |
    |:---|:---|
@@ -33,7 +36,9 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definidas como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho WriteBack [!UICONTROL de metadados] DAM (que grava metadados nos dados binários XMP). Habilitar workflows de inicialização retarda o sistema. |
    | [!UICONTROL Nome de coluna do caminho do ativo] | Define o nome da coluna para o arquivo CSV com ativos. |
 
-1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é enviada para sua caixa de entrada de [!UICONTROL Notificação] . Navegue até a página de propriedades do ativo e verifique se os valores de metadados foram importados corretamente para ativos.
+1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é exibida na caixa de entrada [!UICONTROL Notificação] .
+
+1. Para verificar a importação correta, navegue até a página [!UICONTROL Propriedades] de um ativo e verifique os valores nos campos.
 
 Para adicionar data e carimbo de data e hora ao importar metadados, use o `YYYY-MM-DDThh:mm:ss.fff-00:00` formato para data e hora. A data e a hora são separadas por `T`, `hh` é horas no formato de 24 horas, `fff` é nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 da hora PST.
 
@@ -41,7 +46,7 @@ Para adicionar data e carimbo de data e hora ao importar metadados, use o `YYYY-
 >
 >Se o formato de data não corresponder `YYYY-MM-DDThh:mm:ss.fff-00:00`, os valores de data não serão definidos. Os formatos de data do arquivo CSV de metadados exportados estão no formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desejar importá-lo, converta-o no formato aceitável adicionando o valor de nanossegundos indicado por `fff`.
 
-## Exportar metadados {#export-metadata}
+## Export metadata {#export-metadata}
 
 É possível exportar metadados para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, [!DNL Experience Manager] percorre as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
 
@@ -50,7 +55,7 @@ Alguns casos de uso para exportar metadados em massa são:
 * Importe os metadados em um sistema de terceiros ao migrar ativos.
 * Compartilhe metadados de ativos com uma equipe de projeto mais ampla.
 * Teste ou audite os metadados para verificar a conformidade.
-* Externalize os metadados para localização separada.
+* Externalize os metadados para localizá-los separadamente.
 
 1. Selecione a pasta de ativos que contém os ativos para os quais deseja exportar metadados. Na barra de ferramentas, selecione **[!UICONTROL Exportar metadados]**.
 
@@ -69,6 +74,12 @@ Alguns casos de uso para exportar metadados em massa são:
    ![Caixa de diálogo para baixar o arquivo CSV que contém os metadados exportados em massa](assets/csv_download.png)
 
    *Figura: Caixa de diálogo para baixar o arquivo CSV que contém os metadados exportados em massa.*
+
+## Práticas recomendadas, limitações e dicas {#best-practices-limitations-tips}
+
+* O arquivo CSV para importar metadados de ativos está em um formato muito específico. Para economizar esforço e tempo e evitar erros não intencionais, você pode start na criação do CSV usando o formato de um arquivo CSV exportado.
+* Ao importar metadados usando um arquivo CSV, o formato de data necessário é `YYYY-MM-DDThh:mm:ss.fff-00:00`. Se qualquer outro formato for usado, os valores de data não serão definidos. Os formatos de data do arquivo CSV de metadados exportados estão no formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desejar importá-lo, converta-o no formato aceitável adicionando o valor de nanossegundos indicado por `fff`.
+* Para importar metadados em namespaces personalizadas, registre primeiro as namespaces.
 
 >[!MORELIKETHIS]
 >
