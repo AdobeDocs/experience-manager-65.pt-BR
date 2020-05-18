@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
+source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
 workflow-type: tm+mt
-source-wordcount: '5763'
+source-wordcount: '5782'
 ht-degree: 7%
 
 ---
@@ -480,11 +480,20 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
 ### (Opcional) Ajuste do desempenho do Dynamic Media - modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-**Otimizando parâmetros de trabalho**
+**Dicas de ajuste de desempenho/escalabilidade de sincronização**
+
+Para manter o modo Dynamic Media - Scene7 em execução sem problemas, a Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
+
+* Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo.
+* Atualizando os threads de trabalho de fila do fluxo de trabalho Granite (ativos de vídeo) predefinidos.
+* Atualizando os threads de trabalho de fila de trabalho temporário Granite predefinidos (imagens e ativos que não sejam de vídeo).
+* Atualização das conexões máximas de upload para o servidor do Dynamic Media Classic.
+
+#### Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo
 
 Você pode ajustar os parâmetros de trabalho para processamento mais rápido ao carregar arquivos. Por exemplo, se você estiver carregando arquivos PSD, mas não quiser processá-los como modelos, poderá definir a extração de camada como false (desligado). Nesse caso, o parâmetro de trabalho ajustado apareceria como `process=None&createTemplate=false`.
 
-A Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot; para arquivos PSD, PDF e Postscript:
+A Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot; para arquivos PDF, Postscript e PSD:
 
 | Tipo de arquivo | Parâmetros de tarefa recomendados |
 | ---| ---|
@@ -493,14 +502,6 @@ A Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 Para atualizar qualquer um desses parâmetros, siga as etapas em [Habilitar o suporte](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)ao parâmetro de trabalho de upload do Assets/Dynamic Media Classic baseado no tipo MIME.
-
-**Dicas de ajuste de desempenho/escalabilidade de sincronização**
-
-Para manter o modo Dynamic Media - Scene7 em execução sem problemas, a Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
-
-* Atualize os processos de trabalho da fila do fluxo de trabalho Granite (ativos de vídeo) predefinidos.
-* Atualize os processos de trabalho de fila de trabalho temporário de Granite predefinidos (imagens e ativos que não sejam de vídeo).
-* Atualize o máximo de conexões de upload para o servidor do Dynamic Media Classic.
 
 #### Atualização da fila de fluxo de trabalho temporário do Granite {#updating-the-granite-transient-workflow-queue}
 
@@ -557,7 +558,7 @@ A configuração Scene7 Upload Connection sincroniza os ativos AEM aos servidore
 
    A configuração **[!UICONTROL Número de conexões]** controla o número máximo de conexões HTTP permitidas para o upload do AEM para o Dynamic Media; normalmente, o valor predefinido de 10 conexões é suficiente.
 
-   A configuração de tempo limite **[!UICONTROL do trabalho]** ativo determina o tempo de espera para que os ativos do Dynamic Media carregados sejam publicados no servidor do delivery. Esse valor é de 2100 segundos ou 35 minutos por padrão.
+   A configuração de tempo limite **[!UICONTROL do trabalho]** Ativo determina o tempo de espera para que os ativos do Dynamic Media carregados sejam publicados no servidor de delivery. Esse valor é de 2100 segundos ou 35 minutos por padrão.
 
    Para a maioria dos casos de uso, a configuração de 2100 é suficiente.
 
