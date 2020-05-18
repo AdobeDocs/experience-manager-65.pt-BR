@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 202e4d5d0e3fa285b9973e4709a02ca77ccb6e71
+source-git-commit: 876589d26f17dc088531c3f34deea0fab4c7726a
+workflow-type: tm+mt
+source-wordcount: '3137'
+ht-degree: 32%
 
 ---
 
@@ -29,13 +32,14 @@ Você adiciona ativos do Dynamic Media diretamente à página se estiver usando 
 Adicionar um componente de Mídia dinâmica, Mídia interativa, Mídia panorâmica ou Mídia de vídeo 360 a uma página é o mesmo que adicionar um componente a qualquer página. Os componentes do Dynamic Media estão descritos nas seções a seguir.
 
 1. No AEM, abra a página à qual você deseja adicionar o componente Mídia dinâmica.
-1. No painel esquerdo, toque no ícone **[!UICONTROL Componentes]** e, em seguida, filtre para Dynamic Media.
+1. No painel do lado esquerdo da página (talvez seja necessário alternar a exibição do painel lateral), clique no ícone **[!UICONTROL Componentes]** .
+1. No cabeçalho **[!UICONTROL Components (Componentes]** ), na lista suspensa, selecione **[!UICONTROL Dynamic Media (Mídia]** dinâmica).
 
-   Se nenhum componente do Dynamic Media estiver disponível, será necessário ativar ou ativar os componentes do Dynamic Media. Consulte [Edição de modelos](/help/sites-authoring/templates.md#editing-templates-template-authors) de página para obter mais informações.
+   Se nenhuma lista de componentes do Dynamic Media estiver disponível, é necessário ativar os componentes do Dynamic Media que você deseja usar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
-1. Arraste um componente de Mídia **** dinâmica e solte-o no local desejado na página.
+1. Arraste um componente de Mídia **** dinâmica que deseja usar e solte-o no local desejado na página.
 
    No exemplo abaixo, o componente de mídia **** Video 360 está sendo usado.
 
@@ -54,6 +58,33 @@ Adicionar um componente de Mídia dinâmica, Mídia interativa, Mídia panorâmi
    O componente Dynamic Media Video 360 Media.
 
 1. Quando terminar, próximo ao canto superior direito da caixa de diálogo, toque na marca de seleção para salvar as alterações.
+
+### Ativação de componentes do Dynamic Media {#enabling-dynamic-media-components}
+
+Se nenhum componente do Dynamic Media estiver disponível para adicionar a uma página, isso provavelmente significa que você precisa primeiro ativar os componentes que deseja usar.
+
+1. No AEM, abra a página à qual você deseja adicionar o componente Mídia dinâmica.
+1. No lado esquerdo da barra de ferramentas próximo à parte superior da página, toque no ícone Informações da página e, em seguida, toque em **[!UICONTROL Editar modelo]** na lista suspensa.
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. No lado direito da barra de ferramentas, perto da parte superior da página, na lista suspensa, toque em **[!UICONTROL Estrutura]**.
+
+   ![Política](/help/assets/assets-dm/structure-mode.png)
+
+1. Próximo à parte inferior da página, toque em Container **[!UICONTROL de]** layout para abrir sua barra de ferramentas e, em seguida, toque no ícone Política.
+1. Na página Container **[!UICONTROL de]** layout, sob o cabeçalho **[!UICONTROL Propriedades]** , verifique se a guia Componentes **** permitidos está selecionada.
+
+   ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
+
+1. Role até ver **[!UICONTROL Dynamic Media]**.
+1. Toque no ícone > à esquerda de **[!UICONTROL Dynamic Media]** para expandir a lista e selecione os componentes de Dynamic Media que deseja ativar.
+
+   ![lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+
+1. Perto do canto superior direito da página Container **[!UICONTROL de]** layout, toque no ícone Concluído (marca de seleção).
+
+1. No lado direito da barra de ferramentas próximo à parte superior da página, na lista suspensa, toque em Conteúdo **** inicial e, em seguida, [adicione um componente de Mídia dinâmica a uma página](#adding-a-dynamic-media-component-to-a-page) , como de costume.
 
 ## Localização de componentes do Dynamic Media {#localizing-dynamic-media-components}
 
