@@ -3,9 +3,9 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ No Experience Manager, um ativo contém os seguintes elementos:
 
 Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP dos ativos do Experience Manager.
 
-No Experience Manager, uma pasta tem os seguintes componentes:
+Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 
 * Entidades: Os filhos dos ativos são suas representações.
 * Propriedades.
@@ -95,9 +95,9 @@ A API HTTP Assets inclui os seguintes recursos:
 
 **Pré-requisitos**
 
-1. Ir para `https://[aem_server]:[port]/system/console/configMgr`.
-1. Navegue até Filtro **CSRF do** Adobe Granite.
-1. Verifique se a propriedade Métodos **de** filtro inclui: POSTAGEM, COLOCAR, EXCLUIR.
+* Acesso `https://[aem_server]:[port]/system/console/configMgr`.
+* Navegue até Filtro **[!UICONTROL CSRF do]** Adobe Granite.
+* Verifique se a propriedade Métodos **[!UICONTROL de]** filtro inclui: `POST`, `PUT`, `DELETE`.
 
 ## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
 
@@ -181,14 +181,14 @@ Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer prop
 
 Crie uma nova representação de ativo para um ativo. Se o nome do parâmetro de solicitação não for fornecido, o nome do arquivo será usado como nome de execução.
 
-**Parâmetros** Os parâmetros são `name` para o nome da representação e `file` como uma referência de arquivo.
+**Parâmetros**: Os parâmetros são `name` para o nome da representação e `file` como uma referência de arquivo.
 
 **Solicitar**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**Códigos de resposta**
+**Códigos** de resposta: Os códigos de resposta são:
 
 * 201 - CREATED - se a Renderização tiver sido criada com êxito.
 * 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
@@ -201,7 +201,7 @@ As atualizações substituem respectivamente uma representação de ativo pelos 
 
 **Solicitação**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Códigos** de resposta Os códigos de resposta são:
+**Códigos** de resposta: Os códigos de resposta são:
 
 * 200 - OK - se Renderização tiver sido atualizada com êxito.
 * 404 - NÃO ENCONTRADO - se o Ativo não puder ser encontrado ou acessado no URI fornecido.
