@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
+source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
 workflow-type: tm+mt
-source-wordcount: '5782'
+source-wordcount: '5777'
 ht-degree: 7%
 
 ---
@@ -480,8 +480,6 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
 ### (Opcional) Ajuste do desempenho do Dynamic Media - modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-**Dicas de ajuste de desempenho/escalabilidade de sincronização**
-
 Para manter o modo Dynamic Media - Scene7 em execução sem problemas, a Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
 
 * Atualização dos parâmetros de trabalho predefinidos para processamento de diferentes formatos de arquivo.
@@ -558,7 +556,7 @@ A configuração Scene7 Upload Connection sincroniza os ativos AEM aos servidore
 
    A configuração **[!UICONTROL Número de conexões]** controla o número máximo de conexões HTTP permitidas para o upload do AEM para o Dynamic Media; normalmente, o valor predefinido de 10 conexões é suficiente.
 
-   A configuração de tempo limite **[!UICONTROL do trabalho]** Ativo determina o tempo de espera para que os ativos do Dynamic Media carregados sejam publicados no servidor de delivery. Esse valor é de 2100 segundos ou 35 minutos por padrão.
+   A configuração de tempo limite **[!UICONTROL do trabalho]** ativo determina o tempo de espera para que os ativos do Dynamic Media carregados sejam publicados no servidor do delivery. Esse valor é de 2100 segundos ou 35 minutos por padrão.
 
    Para a maioria dos casos de uso, a configuração de 2100 é suficiente.
 
