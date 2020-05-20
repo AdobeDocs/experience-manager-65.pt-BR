@@ -3,7 +3,7 @@ title: Baixe ativos digitais [!DNL Adobe Experience Manager].
 description: Saiba como baixar ativos [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Co
 >
 >Recipient de e-mails devem ser membros do `dam-users` grupo para acessar o link de download ZIP na mensagem de e-mail. Para poder baixar os ativos, os membros devem ter permissões para iniciar workflows que acionam o download de ativos.
 
-Para baixar ativos, navegue até um ativo, selecione o ativo e toque em **[!UICONTROL Download]** na barra de ferramentas. Na caixa de diálogo resultante, especifique as opções de download.
+Para baixar ativos, navegue até um ativo, selecione o ativo e clique em **[!UICONTROL Download]** na barra de ferramentas. Na caixa de diálogo resultante, especifique as opções de download.
 
 Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de mídia mista e Conjuntos de carrossel não podem ser baixados.
 
