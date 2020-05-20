@@ -3,7 +3,10 @@ title: Preparar ativos para tradução
 description: Crie pastas raiz de idioma para preparar ativos para tradução para suportar ativos multilíngues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Nos ativos Adobe Experience Manager (AEM), ativos multilíngues são incluídos 
 
 Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, */content/dam/it* é a raiz do idioma italiano para a cópia em italiano. As cópias de idioma devem usar uma raiz [de idioma configurada](preparing-assets-for-translation.md#creating-a-language-root) corretamente para que o idioma correto seja direcionado quando as traduções dos ativos de origem forem executadas.
 
-A cópia de idioma para a qual você adicionou ativos originalmente é o idioma mestre. O mestre de idioma é a fonte traduzida para outros idiomas. Uma hierarquia de pastas de amostra inclui várias raízes de idioma:
+A cópia de idioma para a qual você adicionou ativos originalmente é o idioma mestre. O mestre de idioma é a fonte que é traduzida para outros idiomas. Uma hierarquia de pastas de amostra inclui várias raízes de idioma:
 
 ```
  /content
@@ -35,7 +38,7 @@ Execute as seguintes etapas para preparar seus ativos para tradução:
 1. Crie a raiz do idioma do seu mestre de idiomas. Por exemplo, a raiz do idioma da cópia em inglês na hierarquia da pasta de amostra é `/content/dam/en`. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criar uma raiz](preparing-assets-for-translation.md#creating-a-language-root)do idioma.
 
 1. Adicione ativos ao seu mestre de idiomas.
-1. Crie a raiz de cada idioma de destino para o qual você precisa de uma cópia de idioma.
+1. Crie a raiz do idioma de cada idioma do público alvo para o qual você precisa de uma cópia do idioma.
 
 ## Criar uma raiz de idioma {#creating-a-language-root}
 
@@ -43,7 +46,7 @@ Para criar a raiz do idioma, crie uma pasta e use um código de idioma ISO como 
 
 Por exemplo, a página raiz da cópia em idioma italiano da hierarquia de amostra tem `it` a propriedade Name. A propriedade Name é usada como o nome do nó do ativo no repositório e, portanto, determina o caminho dos ativos. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
-1. No console Ativos, clique/toque em **[!UICONTROL Criar]** e escolha **[!UICONTROL Pasta]** no menu.
+1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Criar pasta](assets/Create-folder.png)
 
@@ -51,17 +54,17 @@ Por exemplo, a página raiz da cópia em idioma italiano da hierarquia de amostr
 
    ![Adicionar código de idioma na pasta](assets/Add-language-code-in-folder.png)
 
-1. Clique ou toque em **[!UICONTROL Criar]**. A raiz do idioma é criada no console Ativos.
+1. Clique em **[!UICONTROL Criar]**. A raiz do idioma é criada no console Ativos.
 
-## Exibir raízes de idioma {#viewing-language-roots}
+## raízes da língua Visualização {#viewing-language-roots}
 
 A interface do AEM fornece um painel **[!UICONTROL Referências]** que exibe uma lista de raízes de idioma que foram criadas nos ativos AEM.
 
 1. No console Ativos, selecione o idioma mestre para o qual deseja criar cópias de idioma.
-1. Clique ou toque no ícone GlobalNav e escolha **[!UICONTROL Referências]** para abrir o painel [!UICONTROL Referência] .
+1. Clique no ícone GlobalNav e escolha **[!UICONTROL Referências]** para abrir o painel [!UICONTROL Referência] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
-1. No painel Referências, clique ou toque em Cópias **[!UICONTROL de idioma]**. O painel Cópias [!UICONTROL de] idioma mostra as cópias de idioma dos ativos.
+1. No painel Referências, clique em Cópias **[!UICONTROL de idioma]**. O painel Cópias [!UICONTROL de] idioma mostra as cópias de idioma dos ativos.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
