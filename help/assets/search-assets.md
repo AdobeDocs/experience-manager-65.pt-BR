@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '5872'
+source-wordcount: '5869'
 ht-degree: 6%
 
 ---
@@ -75,7 +75,7 @@ Quando os resultados forem muitos ativos, [!DNL Experience Manager] exibirá os 
 
 ### Resultados com e sem tags inteligentes aprimoradas {#withsmarttags}
 
-Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave mulheres em execução. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. Os seguintes query de pesquisa retornam os mesmos resultados:
+Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. Os seguintes query de pesquisa retornam os mesmos resultados:
 
 * `woman running`
 * `woman.running`
@@ -114,9 +114,9 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos cam
 
 Você pode melhorar a relevância das palavras-chave de ativos específicos para ajudar a aumentar as pesquisas com base nas palavras-chave. Em outras palavras, as imagens para as quais você promove palavras-chave específicas aparecem na parte superior dos resultados da pesquisa quando você pesquisa com base nessas palavras-chave.
 
-1. From the [!DNL Assets] user interface, open the properties page for the asset. Clique em **[!UICONTROL Avançado]** e clique/toque em **[!UICONTROL Adicionar]**, em **[!UICONTROL Elevar para palavras-chave de pesquisa]**.
-1. Na caixa **[!UICONTROL Pesquisar promoção]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique/toque em **[!UICONTROL Adicionar]**. É possível especificar várias palavras-chave da mesma maneira.
-1. Clique/toque em **[!UICONTROL Salvar e fechar]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
+1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
+1. Na caixa **[!UICONTROL Pesquisar promoção]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique em **[!UICONTROL Adicionar]**. É possível especificar várias palavras-chave da mesma maneira.
+1. Click **[!UICONTROL Save &amp; Close]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
 Você pode usar isso em sua vantagem ao aumentar a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o exemplo de vídeo abaixo. Para obter informações detalhadas, consulte [pesquisar no Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
