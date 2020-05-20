@@ -3,9 +3,9 @@ title: 'schemas de metadados para definir o layout da página de propriedades de
 description: O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 265fc8fa6b4d835241b1213d95beaa17db5798ac
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2661'
 ht-degree: 8%
 
 ---
@@ -19,11 +19,11 @@ Em [!DNL Adobe Experience Manager Assets], os schemas contêm campos específico
 
 Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
 
-1. Clique ou toque no ícone Propriedades **[!UICONTROL da]** Visualização em Ações rápidas no bloco de ativo em visualização de cartão.
+1. Clique no ícone Propriedades **[!UICONTROL da]** Visualização em Ações rápidas no bloco de ativo em visualização de cartão.
 
    ![Ações rápidas no bloco de ativos](assets/chlimage_1-170.png)
 
-   Como alternativa, selecione um ativo e clique ou toque no ícone [!UICONTROL Propriedades] na barra de ferramentas.
+   Como alternativa, selecione um ativo e clique no ícone [!UICONTROL Propriedades] na barra de ferramentas.
 
 1. É possível editar as várias propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o [!UICONTROL Tipo] de ativo na guia [!UICONTROL Básico] da página de propriedades.
 
