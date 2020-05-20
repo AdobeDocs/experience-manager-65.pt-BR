@@ -3,7 +3,10 @@ title: Gerar um URL para ativos compartilhados
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro dos ativos AEM como um URL para terceiros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '1221'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +28,7 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
 >Antes de compartilhar um link com os usuários, verifique se o Day CQ Mail Service está configurado. Ocorre um erro se você tentar compartilhar um link sem primeiro [configurar o Serviço](/help/assets/link-sharing.md#configmailservice)de e-mail Day CQ.
 
 1. Na interface do usuário Ativos, selecione o ativo a ser compartilhado como um link.
-1. Na barra de ferramentas, clique/toque em **[!UICONTROL Compartilhar link]** ![assets_share](assets/assets_share.png).
+1. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]** ![assets_share](assets/assets_share.png).
 
    Um link de ativo é criado automaticamente no campo **[!UICONTROL Compartilhar link]** . Copie este link e compartilhe-o com os usuários. A hora de expiração padrão do link é um dia.
 
@@ -78,32 +81,32 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
    Por padrão, os usuários podem baixar somente as representações do ativo que você compartilha como um link.
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários por meio de um email.
-1. Para visualização do ativo compartilhado, clique/toque no link no email enviado ao usuário. O ativo compartilhado é exibido na página da **[!UICONTROL Adobe Marketing Cloud]** .
+1. Para visualização do ativo compartilhado, clique no link no email enviado ao usuário. O ativo compartilhado é exibido na página da **[!UICONTROL Adobe Marketing Cloud]** .
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
-   Para alternar para a visualização da lista, clique/toque na opção de layout na barra de ferramentas.
+   Para alternar para a visualização da lista, clique na opção de layout na barra de ferramentas.
 
-1. Para gerar uma visualização do ativo, clique/toque no ativo compartilhado. Para fechar a visualização e retornar à página da **[!UICONTROL Experience Cloud]**, clique/toque em **[!UICONTROL Voltar]** na barra de ferramentas. Se tiver compartilhado uma pasta, clique/toque em **[!UICONTROL Pasta pai]** para retornar à pasta principal.
+1. Para gerar uma pré-visualização do ativo, clique no ativo compartilhado. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
    O AEM oferece suporte à geração de pré-visualização de ativos desses tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Você só pode baixar os ativos dos outros tipos MIME.
 
-1. Para baixar o ativo compartilhado, toque em **[!UICONTROL Selecionar]** na barra de ferramentas, clique/toque no ativo e, em seguida, clique/toque em **[!UICONTROL Download]** na barra de ferramentas.
+1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e, em seguida, clique em **[!UICONTROL Download]** na barra de ferramentas.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Para visualização dos ativos compartilhados como links, vá para a interface do usuário do Assets e toque no logotipo do Experience Manager. Escolha **[!UICONTROL Navegação]** na lista para exibir o painel de Navegação.
+1. Para visualização dos ativos compartilhados como links, vá para a interface do usuário do Assets e clique no logotipo do Experience Manager. Escolha **[!UICONTROL Navegação]** na lista para exibir o painel de Navegação.
 1. No painel Navegação, escolha **[!UICONTROL Links compartilhados]** para exibir uma lista de ativos compartilhados.
-1. Para descompartilhar um ativo, selecione-o e toque/clique em **[!UICONTROL Descompartilhar]** na barra de ferramentas. Uma mensagem de confirmação é exibida. A entrada do ativo é removida da lista.
+1. Para descompartilhar um ativo, selecione-o e clique em **[!UICONTROL Descompartilhar]** na barra de ferramentas. Uma mensagem de confirmação é exibida. A entrada do ativo é removida da lista.
 
 ## Configurar o serviço de e-mail Day CQ {#configmailservice}
 
 1. No home page do Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
 1. Na lista de serviços, localize o **[!UICONTROL Dia CQ Mail Service]**.
-1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
+1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
    * Nome do host do servidor SMTP: nome do host do servidor de email
    * Porta do servidor SMTP: porta do servidor de email
@@ -111,13 +114,13 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
    * Senha SMTP: senha do servidor de email
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
-1. Click/tap **[!UICONTROL Save]**.
+1. Clique em **[!UICONTROL Salvar]**.
 
 ## Configurar tamanho máximo de dados {#maxdatasize}
 
 Quando você baixa ativos do link compartilhado usando o recurso Compartilhamento de link, o AEM compacta a hierarquia de ativos do repositório e retorna o ativo em um arquivo ZIP. No entanto, na ausência de limites para a quantidade de dados que pode ser compactada em um arquivo ZIP, grandes quantidades de dados são submetidas à compactação, o que causa erros de memória esgotada no JVM. Para proteger o sistema de um possível ataque de negação de serviço devido a essa situação, configure o tamanho máximo usando o parâmetro **[!UICONTROL Máximo de tamanho de conteúdo (descompactado)]** para o Servlet [!UICONTROL Proxy de compartilhamento de ativos ad hoc do] Day CQ DAM no Configuration Manager. Se o tamanho descompactado do ativo exceder o valor configurado, as solicitações de download do ativo serão rejeitadas. O valor padrão é 100 MB.
 
-1. Clique/toque no logotipo do AEM e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
+1. Click the AEM logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. No Console da Web, localize a configuração do Servlet **[!UICONTROL Adhoc de Compartilhamento de Ativo do]** Dia CQ DAM.
 1. Abra a configuração do **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** no modo de edição e modifique o valor do parâmetro **[!UICONTROL Tamanho máximo de conteúdo (descompactado)]**.
 
