@@ -3,7 +3,10 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos digitais que compartilham alguns atributos comuns. Crie também relacionamentos derivados de origem entre ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '640'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
    ![abrir a página Propriedades de um ativo para relacionar o ativo](assets/asset-properties-relate-assets.png)
 
-   *Figura: página[!DNL Assets]Propriedadespara relacionar ativos.*
+   *Figura:[!DNL Assets][!UICONTROL Página Propriedades]para relacionar ativos.*
 
    Como alternativa, selecione o ativo na visualização da lista.
 
@@ -33,7 +36,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Para relacionar outro ativo com o ativo selecionado, clique/toque no ícone **[!UICONTROL Relacionar]** na barra de ferramentas.
+1. Para relacionar outro ativo com o ativo selecionado, clique no ícone **[!UICONTROL Relacionar]** na barra de ferramentas.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -48,20 +51,20 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Clique/toque no ícone **[!UICONTROL Confirmar]** .
-1. Clique/toque em **[!UICONTROL OK]** para fechar a caixa de diálogo. Dependendo da sua escolha de relacionamento na etapa 3, o ativo relacionado é listado sob uma categoria apropriada na seção **[!UICONTROL Relacionado]** . Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Origem]**.
+1. Clique no ícone **[!UICONTROL Confirmar]** .
+1. Click **[!UICONTROL OK]** to close the dialog. Dependendo da sua escolha de relacionamento na etapa 3, o ativo relacionado é listado sob uma categoria apropriada na seção **[!UICONTROL Relacionado]** . Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Origem]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Para cancelar a relação de um ativo, clique/toque em **[!UICONTROL Desrelacionar]** na barra de ferramentas.
+1. Para cancelar a relação de um ativo, clique em **[!UICONTROL Desrelacionar]** na barra de ferramentas.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Selecione o(s) ativo(s) que deseja desrelacionar na caixa de diálogo **[!UICONTROL Remover relações]** e clique/toque em **[!UICONTROL Desrelacionar]**.
+1. Selecione o(s) ativo(s) que deseja desrelacionar na caixa de diálogo **[!UICONTROL Remover relações]** e clique em **[!UICONTROL Desrelacionar]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Clique/toque em **[!UICONTROL OK]** para fechar a caixa de diálogo. Os ativos para os quais você removeu relações são excluídos da lista de ativos relacionados na seção **[!UICONTROL Relacionado]** .
+1. Click **[!UICONTROL OK]** to close the dialog. Os ativos para os quais você removeu relações são excluídos da lista de ativos relacionados na seção **[!UICONTROL Relacionado]** .
 
 ## Traduzindo ativos relacionados {#translating-related-assets}
 
@@ -81,22 +84,22 @@ Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manag
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Clique/toque no bloco do projeto para abrir a página de detalhes.
+1. Clique no bloco do projeto para abrir a página de detalhes.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Clique/toque nas elipses abaixo do cartão de trabalho de tradução para visualização do status de tradução.
+1. Clique nas elipses abaixo do cartão de trabalho de tradução para visualização do status de tradução.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Selecione o ativo e clique/toque em **[!UICONTROL Revelar nos ativos]** na barra de ferramentas para visualização do status de conversão do ativo.
+1. Selecione o ativo e clique em **[!UICONTROL Revelar nos ativos]** na barra de ferramentas para visualização do status de conversão do ativo.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-1. Para verificar se os ativos relacionados à origem foram convertidos, clique/toque no ativo de origem.
+1. Para verificar se os ativos relacionados à origem foram convertidos, clique no ativo de origem.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Selecione o ativo relacionado à origem e clique/toque em **[!UICONTROL Revelar nos Ativos]**. O ativo relacionado convertido é exibido.
+1. Selecione o ativo relacionado à origem e clique em **[!UICONTROL Revelar nos Ativos]**. O ativo relacionado convertido é exibido.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
