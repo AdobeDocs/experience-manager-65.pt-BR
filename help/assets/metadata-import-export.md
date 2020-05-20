@@ -3,9 +3,9 @@ title: Importe e exporte metadados de ativos em massa.
 description: Importação e exportação em massa de metadados de ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '785'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definidas como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho WriteBack [!UICONTROL de metadados] DAM (que grava metadados nos dados binários XMP). Habilitar workflows de inicialização retarda o sistema. |
    | [!UICONTROL Nome de coluna do caminho do ativo] | Define o nome da coluna para o arquivo CSV com ativos. |
 
-1. Toque/clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é exibida na caixa de entrada [!UICONTROL Notificação] .
+1. Clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é exibida na caixa de entrada [!UICONTROL Notificação] .
 
 1. Para verificar a importação correta, navegue até a página [!UICONTROL Propriedades] de um ativo e verifique os valores nos campos.
 
