@@ -3,10 +3,10 @@ title: Criar e compartilhar uma pasta privada no AEM
 description: Saiba como criar uma pasta privada nos ativos Adobe Experience Manager (AEM) e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 5%
+source-wordcount: '508'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Exp
 > A pasta privada tem pelo menos um membro com a função Proprietário.
 
 
-1. No console Ativos, toque/clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
+1. No console Ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
 
    ![Criar pasta de ativos](assets/Create-folder.png)
 
@@ -28,11 +28,11 @@ Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Exp
 
    ![Marque a caixa de seleção Privado para tornar a pasta privada](assets/private-folder.png)
 
-1. Toque/clique em **[!UICONTROL Criar]**. Uma pasta particular é criada na interface do usuário.
+1. Clique em **[!UICONTROL Criar]**. Uma pasta particular é criada na interface do usuário.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. Para compartilhar a pasta com outros usuários e atribuir privilégios a eles, selecione a pasta e clique/toque no ícone **[!UICONTROL Propriedades]** na barra de ferramentas.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,11 +58,11 @@ Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Exp
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Toque/clique no ícone Notificação para abrir a lista de notificações.
+1. Clique no ícone Notificação para abrir a lista de notificações.
 
    ![Lista das notificações](assets/Assets-Notification.png)
 
-1. Clique/toque na entrada da pasta privada compartilhada pelo administrador para abrir a pasta.
+1. Clique na entrada da pasta privada compartilhada pelo administrador para abrir a pasta.
 
 >[!NOTE]
 >
