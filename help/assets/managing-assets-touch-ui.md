@@ -4,10 +4,10 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '9347'
-ht-degree: 5%
+source-wordcount: '9298'
+ht-degree: 4%
 
 ---
 
@@ -61,13 +61,13 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 1. Na interface do [!DNL Assets] usuário, navegue até o local onde deseja adicionar ativos digitais.
 1. Para fazer upload dos ativos, execute um dos procedimentos a seguir:
 
-   * Na barra de ferramentas, toque no ícone **[!UICONTROL Criar]** . Em seguida, no menu, toque em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
+   * Na barra de ferramentas, clique no ícone **[!UICONTROL Criar]** . Em seguida, no menu, clique em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do [!DNL Assets] usuário. A caixa de diálogo para renomear o arquivo não é exibida.
    ![Criar opção para carregar ativos](assets/create-options.png)
 
    Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
 
-   Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Toque no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um start é carregado.
+   Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Clique no ícone **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um upload é start.
 
    ![Barra de progresso Carregar ativos](assets/chlimage_1-5.png)
 
@@ -109,7 +109,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    ![Caixa de diálogo Ativo do Duplicado detectado](assets/chlimage_1-8.png)
 
-   Para reter o ativo do duplicado em [!DNL Assets], toque/clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, toque/clique em **[!UICONTROL Excluir]**.
+   Para reter o ativo do duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, clique em **[!UICONTROL Excluir]**.
 
    [!DNL Experience Manager Assets] impede que você carregue ativos com os caracteres proibidos em seus nomes de arquivo. Se você tentar carregar um ativo com um nome de arquivo contendo um caractere não permitido ou mais, [!DNL Assets] exibirá uma mensagem de aviso e interromperá o upload até que você remova esses caracteres ou faça upload com um nome permitido.
 
@@ -154,9 +154,9 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 **Para fazer upload de ativos usando FTP**
 
 1. Usando sua escolha de cliente FTP, faça logon no servidor FTP usando o nome de usuário e a senha FTP recebidos do email de provisionamento. No cliente FTP, carregue arquivos ou pastas no servidor FTP.
-1. [Faça logon no Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) usando as credenciais recebidas do email de provisionamento. Na barra de navegação global, toque em **[!UICONTROL Carregar]**.
+1. [Faça logon no Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) usando as credenciais recebidas do email de provisionamento. Na barra de navegação global, clique em **[!UICONTROL Carregar]**.
 
-1. Na página Carregar, perto do canto superior esquerdo, toque na guia **[!UICONTROL Via FTP]** .
+1. Na página Carregar, perto do canto superior esquerdo, clique na guia **[!UICONTROL Via FTP]** .
 1. No lado esquerdo da página, escolha uma pasta FTP da qual fazer upload de arquivos; no lado direito da página, escolha uma pasta de destino.
 1. Perto do canto inferior direito da página, clique em Opções **[!UICONTROL de]** trabalho e defina as opções desejadas com base nos ativos na pasta selecionada.
 
@@ -166,11 +166,11 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
    >
    >Ao carregar ativos via FTP, as opções de trabalho de upload definidas no Dynamic Media Classic (S7) têm prioridade sobre os parâmetros de processamento de ativos definidos em [!DNL Experience Manager].
 
-1. No canto inferior direito da caixa de diálogo Carregar opções de trabalho, toque em **[!UICONTROL Salvar]**.
-1. No canto inferior direito da página Carregar, toque em **[!UICONTROL Enviar upload]**.
+1. No canto inferior direito da caixa de diálogo Carregar opções de trabalho, clique em **[!UICONTROL Salvar]**.
+1. No canto inferior direito da página Carregar, clique em **[!UICONTROL Enviar upload]**.
 
-   Para visualização do progresso do upload, na barra de navegação global, toque em **[!UICONTROL Tarefas]**. A página Tarefas exibe o progresso do upload. Você pode continuar trabalhando [!DNL Experience Manager] e retornar à página de Tarefas no Dynamic Media Classic a qualquer momento para revisar um trabalho em andamento.
-Para cancelar um trabalho de upload em andamento, toque em **[!UICONTROL Cancelar]** ao lado do Tempo de duração.
+   Para visualização do progresso do upload, na barra de navegação global, clique em **[!UICONTROL Tarefas]**. A página Tarefas exibe o progresso do upload. Você pode continuar trabalhando [!DNL Experience Manager] e retornar à página de Tarefas no Dynamic Media Classic a qualquer momento para revisar um trabalho em andamento.
+Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancelar]** ao lado da Duração.
 
 #### Carregar opções de trabalho {#upload-job-options}
 
@@ -180,7 +180,7 @@ Para cancelar um trabalho de upload em andamento, toque em **[!UICONTROL Cancela
 | Publicar após carregar |  | Publica automaticamente os ativos que você carrega. |
 | Substituir em qualquer pasta, o mesmo nome do ativo base, independentemente da extensão |  | Selecione essa opção se desejar que os arquivos carregados substituam os arquivos existentes pelos mesmos nomes. O nome dessa opção pode ser diferente, dependendo das configurações em Configuração **[!UICONTROL do]** aplicativo > Configurações **** gerais > **[!UICONTROL Carregar no aplicativo]** > **[!UICONTROL Substituir imagens]**. |
 | Descompacte arquivos Zip ou Tar no upload |  |  |
-| Opções de trabalho |  | Toque/ clique em Opções **[!UICONTROL de]** trabalho para abrir a caixa de diálogo Opções [!UICONTROL de trabalho de] upload e escolha as opções que afetam todo o trabalho de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher as opções padrão para fazer upload de arquivos a partir da página Configurações gerais do aplicativo. Para abrir esta página, escolha **[!UICONTROL Configuração]** > Configuração **** do aplicativo. Toque no botão Opções **[!UICONTROL de upload]** padrão para abrir a caixa de diálogo Opções [!UICONTROL de] upload de trabalho. |
+| Opções de trabalho |  | Clique em Opções **[!UICONTROL de]** trabalho para abrir a caixa de diálogo [!UICONTROL Carregar opções] de trabalho e escolher opções que afetam todo o trabalho de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher as opções padrão para fazer upload de arquivos a partir da página Configurações gerais do aplicativo. Para abrir esta página, escolha **[!UICONTROL Configuração]** > Configuração **** do aplicativo. Clique no botão Opções **[!UICONTROL de upload]** padrão para abrir a caixa de diálogo Opções [!UICONTROL de] upload de trabalho. |
 |  | Quando | Selecione Uma vez ou Recorrente. Para definir um trabalho recorrente, escolha uma opção Repetir (Diário, Semanal, Mensal ou Personalizado) para especificar quando você deseja que o trabalho de upload do FTP seja repetido. Em seguida, especifique as opções de agendamento conforme necessário. |
 |  | Incluir subpastas | Carregue todas as subpastas dentro da pasta que você deseja carregar. Os nomes da pasta e suas subpastas carregadas são inseridos automaticamente em [!DNL Experience Manager Assets]. |
 |  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. A quantidade de imagens cortadas depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você digitar 75 nas caixas de texto Superior, Direita, Inferior e Esquerda, meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direita, Inferior e Esquerda para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar com base em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para aparar com base na cor, especifique 0 para recortar os pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferenças de cor.<br>Para aparar com base na transparência, especifique 0 para cortar pixels somente se eles forem transparentes. Números mais próximos a 1 permitem mais transparência.</li></ul><br>Observe que essas opções de corte não são destrutivas. |
@@ -329,13 +329,13 @@ Algumas limitações do recurso são:
 Para pré-visualização de um ativo, siga estas etapas.
 
 1. Na interface do [!DNL Assets] usuário, navegue até o local do ativo que deseja pré-visualização.
-1. Toque no ativo desejado para abri-lo.
+1. Clique no ativo desejado para abri-lo.
 
 1. No modo de pré-visualização, as opções de zoom estão disponíveis para os tipos [de imagem](/help/assets/assets-formats.md#supported-raster-image-formats) suportados (com edição interativa).
 
-   Para aplicar zoom em um ativo, toque/clique `+` (ou toque/clique na lupa do ativo). Para diminuir o zoom, toque/clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta de redefinição de zoom leva você de volta à visualização original.
+   Para aplicar zoom em um ativo, clique `+` (ou clique na lupa do ativo). Para diminuir o zoom, clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta de redefinição de zoom leva você de volta à visualização original.
 
-   Toque em **[!UICONTROL Redefinir]** para redefinir a visualização para o tamanho original.
+   Clique em **[!UICONTROL Redefinir]** para redefinir a visualização para o tamanho original.
 
    ![Redefinir ícone para trazer o usuário de volta à visualização original](assets/chlimage_1-11.png)
 
@@ -366,7 +366,7 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 1. Navegue até o local do ativo para editar seus metadados.
 
-1. Selecione o ativo e toque/clique em **[!UICONTROL Propriedades]** na barra de ferramentas para visualização das propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
+1. Selecione o ativo e clique em **[!UICONTROL Propriedades]** na barra de ferramentas para visualização das propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
 
    ![Ação rápida de propriedades na visualização do cartão de ativos](assets/properties_quickaction.png)
 
@@ -394,13 +394,13 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
    >
    >Para criar tags, você precisa de permissão de gravação `/content/cq:tags/default` no repositório CRX.
 
-1. Para fornecer uma classificação ao ativo, toque/clique na guia **[!UICONTROL Avançado]** e, em seguida, toque/clique na estrela na posição apropriada para atribuir a classificação desejada.
+1. To provide a rating to the asset, click the **[!UICONTROL Advanced]** tab and then click the star at the appropriate position to assign the desired rating.
 
    ![Guia Avançado em Propriedades do ativo para atribuir classificação](assets/ratings.png)
 
    A pontuação de classificação atribuída ao ativo é exibida em **[!UICONTROL Suas Classificações]**. A pontuação de classificação média recebida dos usuários que classificaram o ativo é exibida em **[!UICONTROL Classificação]**. Além disso, a análise das pontuações de classificação que contribuem para a pontuação de classificação média é exibida em **[!UICONTROL Análise]** de classificação. Você pode pesquisar ativos com base nas pontuações de classificação médias.
 
-1. Para obter estatísticas de uso de visualização para o ativo, clique/toque na guia **[!UICONTROL Insights]** .
+1. Para obter estatísticas de uso de visualização para o ativo, clique na guia **[!UICONTROL Insights]** .
 
    As estatísticas de uso incluem o seguinte:
 
@@ -424,7 +424,7 @@ Alguns atributos exclusivos a uma cópia específica de um ativo não são trans
 
 As outras propriedades e informações de metadados são mantidas. Uma cópia parcial não é criada ao copiar um ativo.
 
-1. Na [!DNL Assets] interface, selecione um ou mais ativos e toque/clique no ícone **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** no cartão de ativos.
+1. Na [!DNL Assets] interface, selecione um ou mais ativos e clique no ícone **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** no cartão de ativos.
    ![Copiar ícone na barra de ferramentas da interface do usuário do ativo](assets/copy_icon.png)
 
    >[!NOTE]
@@ -437,7 +437,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >
    >Se você copiar um ativo no mesmo local, [!DNL Experience Manager] gera automaticamente uma variação do nome. Por exemplo, se você copiar um ativo intitulado `Square`, [!DNL Experience Manager] gera automaticamente o título para sua cópia como `Square1`.
 
-1. Clique/ toque no ícone **[!UICONTROL Colar]** ativo na barra de ferramentas.
+1. Clique no ícone **[!UICONTROL Colar]** ativo na barra de ferramentas.
 
    ![Colar ícone na barra de ferramentas da interface do usuário do ativo](assets/chlimage_1-14.png)
    [!DNL Assets] são copiados para este local.
@@ -450,14 +450,14 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
 1. Navegue até o local do ativo que deseja mover.
 
-1. Selecione o ativo e toque/clique no ícone **[!UICONTROL Mover]** na barra de ferramentas.
+1. Selecione o ativo e clique no ícone **[!UICONTROL Mover]** na barra de ferramentas.
    ![Ícone Mover na barra de ferramentas da interface do ativo](assets/move_icon.png)
 
 1. No assistente [!UICONTROL Mover ativos] , execute um dos procedimentos a seguir:
 
-   * Especifique o nome do ativo depois de movê-lo. Em seguida, toque/clique em **[!UICONTROL Avançar]** para continuar.
+   * Especifique o nome do ativo depois de movê-lo. Em seguida, clique em **[!UICONTROL Avançar]** para continuar.
 
-   * Toque/clique em **[!UICONTROL Cancelar]** para interromper o processo.
+   * Clique em **[!UICONTROL Cancelar]** para interromper o processo.
    >[!NOTE]
    >
    >* Você pode especificar o mesmo nome para o ativo se não houver um ativo com esse nome no novo local. No entanto, você deve usar um nome diferente se mover o ativo para um local onde um ativo com o mesmo nome exista. Se você usar o mesmo nome, o sistema gera automaticamente uma variação do nome. Por exemplo, se seu ativo tiver o nome Quadrado, o sistema gera o nome Quadrado1 para sua cópia.
@@ -466,31 +466,31 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
 1. Na caixa de diálogo **[!UICONTROL Selecionar destino]** , execute um dos procedimentos a seguir:
 
-   * Navegue até o novo local dos ativos e toque/clique em **[!UICONTROL Avançar]** para continuar.
+   * Navegue até o novo local dos ativos e clique em **[!UICONTROL Avançar]** para continuar.
 
-   * Toque/clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Renomear]** .
+   * Clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Renomear]** .
 
 1. Se os ativos que estão sendo movidos tiverem páginas, ativos ou coleções de referência, a guia **[!UICONTROL Ajustar referências]** aparecerá ao lado da guia **[!UICONTROL Selecionar destino]** .
 
    Execute um dos procedimentos a seguir na tela **[!UICONTROL Ajustar referências]** :
 
-   * Especifique as referências a serem ajustadas com base nos novos detalhes e toque/clique em **[!UICONTROL Mover]** para continuar.
+   * Especifique as referências a serem ajustadas com base nos novos detalhes e clique em **[!UICONTROL Mover]** para continuar.
 
    * Na coluna **[!UICONTROL Ajustar]** , selecione/desmarque referências aos ativos.
-   * Toque/clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Selecionar destino]** .
+   * Clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Selecionar destino]** .
 
-   * Toque/clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
+   * Clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
    Se você não atualizar referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
 
 ## Gerenciar execuções {#managing-renditions}
 
 1. Você pode adicionar ou remover representações de um ativo, exceto o original. Navegue até o local do ativo para o qual você deseja adicionar ou remover representações.
 
-1. Toque/clique no ativo para abrir sua página de ativos.
+1. Clique no ativo para abrir sua página de ativos.
 
    ![Página Detalhes de ativos para gerenciar execuções](assets/chlimage_1-15.png)
 
-1. Toque/clique no ícone GlobalNav e selecione **[!UICONTROL Representações]** na lista.
+1. Clique no ícone GlobalNav e selecione **[!UICONTROL Representações]** na lista.
 
    ![Painel esquerdo para abrir o menu e selecionar a opção Representações](assets/renditions_menu.png)
 
@@ -506,13 +506,13 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    **Excluir uma representação**
 
-   Selecione uma representação no painel **[!UICONTROL Representações]** e toque/clique no ícone **[!UICONTROL Excluir representação]** da barra de ferramentas. As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload dos ativos excluídos novamente.
+   Selecione uma representação no painel **[!UICONTROL Representações]** e clique no ícone **[!UICONTROL Excluir representação]** da barra de ferramentas. As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload dos ativos excluídos novamente.
 
    ![Opção para excluir uma representação](assets/delete_renditionicon.png)
 
    **Carregar uma nova execução**
 
-   Navegue até a página de detalhes do ativo e toque/clique no ícone **[!UICONTROL Adicionar representação]** na barra de ferramentas para fazer upload de uma nova representação do ativo.
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![Adicionar ícone Representação para carregar nova representação](assets/chlimage_1-16.png)
 
@@ -544,7 +544,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 1. Vá ao local do(s) ativo(s) que deseja excluir.
 
-1. Selecione o ativo e toque/clique no ícone **[!UICONTROL Excluir]** na barra de ferramentas.
+1. Selecione o ativo e clique no ícone **[!UICONTROL Excluir]** na barra de ferramentas.
 
    ![Ícone Excluir](assets/delete_icon.png)
 
@@ -575,14 +575,14 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
 1. Navegue até o local do(s) ativo(s)/pasta que deseja publicar
 
-1. Selecione a ação rápida **[!UICONTROL Publicar]** no cartão de ativos ou selecione o ativo e toque/clique no ícone **[!UICONTROL Publicação rápida]** na barra de ferramentas.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas/não foram publicadas são exibidas. Escolha as referências que deseja publicar.
 
    >[!NOTE]
    >
    >Pastas vazias, que fazem parte de uma pasta publicada, não são publicadas.
 
-1. Toque/clique em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
+1. Clique em **[!UICONTROL Publicar]** para confirmar a ativação dos ativos.
 
 >[!CAUTION]
 >
@@ -592,7 +592,7 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
 1. Navegue até o local da pasta de ativos/ativos que deseja remover do ambiente de publicação (cancelar publicação).
 
-1. Selecione o ativo/pasta para cancelar a publicação e toque/clique no ícone **[!UICONTROL Gerenciar publicação]** na barra de ferramentas.
+1. Selecione o ativo/pasta para cancelar a publicação e clique no ícone **[!UICONTROL Gerenciar publicação]** na barra de ferramentas.
 
    ![Ícone Gerenciar publicação](assets/manage_publication.png)
 
@@ -602,8 +602,8 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
 1. Para cancelar a publicação do ativo mais tarde, selecione **[!UICONTROL Cancelar publicação mais tarde]** e selecione uma data para cancelar a publicação do ativo.
 1. Agende uma data para o ativo ficar indisponível a partir do ambiente de publicação.
-1. Se o ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Toque/clique em **[!UICONTROL Cancelar publicação]**.
-1. Na caixa de diálogo de confirmação, toque/clique em:
+1. Se o ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Clique em **[!UICONTROL Cancelar publicação]**.
+1. Na caixa de diálogo de confirmação, clique em:
 
    * **[!UICONTROL Cancelar]** para parar a ação
    * **[!UICONTROL Cancele a publicação]** para confirmar que os ativos não foram publicados (não estão mais disponíveis no ambiente de publicação) na data especificada.
@@ -617,7 +617,7 @@ Um grupo de usuários fechado (CUG) é usado para limitar o acesso a pastas de a
 
 Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você também pode configurar uma página de logon para a pasta.
 
-1. Selecione uma pasta na [!DNL Assets] interface e toque/clique no ícone [!UICONTROL Propriedades] na barra de ferramentas para exibir a página de propriedades.
+1. Selecione uma pasta na [!DNL Assets] interface e clique no ícone [!UICONTROL Propriedades] na barra de ferramentas para exibir a página de propriedades.
 1. Na guia **[!UICONTROL Permissões]** , adicione membros ou grupos em Grupo **[!UICONTROL de usuários]** fechado.
 
    ![Adicionar usuário ao grupo de usuários fechado](assets/add_user.png)
@@ -674,12 +674,12 @@ As ferramentas de edição na [!DNL Assets] interface permitem executar pequenos
 
 1. Execute um dos procedimentos a seguir para abrir um ativo no modo de edição:
 
-   * Selecione o ativo e clique/toque no ícone **[!UICONTROL Editar]** na barra de ferramentas.
-   * Toque/clique no ícone **[!UICONTROL Editar]** que aparece em um ativo na visualização Cartão.
-   * Na página do ativo, toque/clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
+   * Selecione o ativo e clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
+   * Clique no ícone **[!UICONTROL Editar]** que aparece em um ativo na visualização Cartão.
+   * Na página do ativo, clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
    ![Ícone Editar na barra de ferramentas](assets/edit_icon.png)
 
-1. Para recortar a imagem, toque/clique no ícone **Recortar** .
+1. Para recortar a imagem, clique no ícone **Recortar** .
 
    ![Ícone Cortar](assets/chlimage_1-22.png)
 
@@ -696,15 +696,15 @@ As ferramentas de edição na [!DNL Assets] interface permitem executar pequenos
 
    ![Ícones Desfazer e refazer](assets/chlimage_1-25.png)
 
-1. Toque/clique no ícone Girar apropriado para girar a imagem no sentido horário ou anti-horário.
+1. Clique no ícone Girar apropriado para girar a imagem no sentido horário ou anti-horário.
 
    ![Ícones de giro no sentido horário e anti-horário](assets/chlimage_1-26.png)
 
-1. Toque/clique no ícone Virar apropriado para virar a imagem na horizontal ou na vertical.
+1. Clique no ícone Virar apropriado para virar a imagem na horizontal ou na vertical.
 
    ![Ícones para virar a imagem na horizontal ou na vertical](assets/chlimage_1-27.png)
 
-1. Toque/clique no ícone **Concluir** para salvar as alterações.
+1. Click the **Finish** icon to save the changes.
 
    ![Ícone Concluir](assets/chlimage_1-28.png)
 
@@ -745,7 +745,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 >Para Fragmentos de conteúdo, [as anotações são criadas no editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)de fragmentos.
 
 1. Navegue até o local do ativo ao qual você deseja adicionar anotações.
-1. Toque/clique no ícone **[!UICONTROL Anotar]** de um dos seguintes:
+1. Clique no ícone **[!UICONTROL Anotar]** de um dos seguintes:
 
    * [Ações rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
@@ -771,18 +771,18 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
    >
    >É possível adicionar várias anotações antes de salvá-las.
 
-1. Toque/clique em **[!UICONTROL Fechar]** para sair do modo Anotar.
+1. Clique em **[!UICONTROL Fechar]** para sair do modo Anotar.
 1. Para visualização da notificação, faça logon [!DNL Assets] com as credenciais do Aaron MacDonald e clique no ícone **[!UICONTROL Notificações]** para visualização da notificação.
 
    >[!NOTE]
    >
    >As anotações também podem ser adicionadas aos ativos de vídeo. Ao anotar vídeos, o player pausa para permitir que você anote em um quadro. Para obter detalhes, consulte [Gerenciamento de ativos](/help/assets/managing-video-assets.md)de vídeo.
 
-1. Para escolher uma cor diferente para diferenciar os usuários, clique/toque no ícone de Perfil e clique/toque em **[!UICONTROL Minhas preferências]**.
+1. Para escolher uma cor diferente para diferenciar os usuários, clique no ícone Perfil e clique em **[!UICONTROL Minhas preferências]**.
 
    ![Selecione o ícone de perfil do usuário e, em seguida, Minhas preferências para abrir Preferências do usuário](assets/User-profile-preferences.png)
 
-   Especifique a cor desejada na caixa **[!UICONTROL Cor da anotação]** e clique/toque em **[!UICONTROL Aceitar]**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click **[!UICONTROL Accept]**.
 
    ![Selecione a cor da anotação em Preferências de usuário para definir a cor Personalizar usuário](assets/Annotation-color.png)
 
@@ -794,7 +794,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
 1. Para visualização de anotações salvas para um ativo, navegue até o local do ativo e abra a página do ativo para o ativo.
 
-1. Toque/clique no ícone GlobalNav e escolha **[!UICONTROL Linha]** do tempo na lista.
+1. Clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** na lista.
 
    ![Opções disponíveis no ícone GlobalNav](assets/chlimage_1-35.png)
 
@@ -802,11 +802,11 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    ![Mostrar todas as listas na linha do tempo](assets/chlimage_1-36.png)
 
-   Toque/clique em um comentário no painel **[!UICONTROL Linha]** do tempo para visualização a anotação correspondente na imagem.
+   Clique em um comentário no painel **[!UICONTROL Linha]** do tempo para visualização da anotação correspondente na imagem.
 
    ![Painel Linha do tempo para visualização de anotação na imagem](assets/chlimage_1-37.png)
 
-   Toque/clique em **[!UICONTROL Excluir]** para excluir um comentário específico.
+   Clique em **[!UICONTROL Excluir]** para excluir um comentário específico.
 
 ### Imprimir anotações {#printing-annotations}
 
@@ -814,7 +814,7 @@ Se um ativo tiver anotações ou tiver sido submetido a um fluxo de trabalho de 
 
 Você também pode imprimir somente as anotações ou o status da revisão.
 
-Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICONTROL Imprimir]** e siga as instruções do assistente. O ícone **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos uma anotação ou status de revisão atribuídos a ele.
+Para imprimir as anotações e revisar o status, clique no ícone **[!UICONTROL Imprimir]** e siga as instruções do assistente. O ícone **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos uma anotação ou status de revisão atribuídos a ele.
 
 1. Na [!DNL Assets] interface, abra a página pré-visualização de um ativo.
 1. Faça uma das seguintes opções:
@@ -830,7 +830,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
 
    ![Para imprimir somente o status de revisão da Anotação, selecione-a na Linha do tempo](assets/chlimage_1-39.png)
 
-1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
+1. Click the **[!UICONTROL Print]** icon from the toolbar.
 
    ![Ícone Imprimir na barra de ferramentas](assets/chlimage_1-40.png)
 
@@ -844,7 +844,7 @@ Para imprimir as anotações e revisar o status, toque/clique no ícone **[!UICO
    >
    >Anotações extensas podem não ser renderizadas corretamente no arquivo PDF. Para uma renderização ideal, a Adobe recomenda que você limite as anotações a 50 palavras.
 
-1. Toque/clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
+1. Clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
 
    ![Anotação e status de revisão no PDF gerado](assets/chlimage_1-42.png)
 
