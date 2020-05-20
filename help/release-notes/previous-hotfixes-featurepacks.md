@@ -1,20 +1,18 @@
 ---
 title: Notas de versão anteriores do AEM 6.5 Service Pack
 description: Notas de versão específicas do Adobe Experience Manager 6.5 Service Pack 3 e anterior.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+workflow-type: tm+mt
+source-wordcount: '6277'
+ht-degree: 47%
 
 ---
 
 
 # Correções e Feature Packs incluídos em Pacotes de serviço anteriores {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0
+## Adobe Experience Manager 6.5.3.0 {#aem-6530}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 é uma versão importante que inclui correções e melhorias de desempenho, estabilidade, segurança e essenciais para o cliente lançadas desde a disponibilização geral da versão 6.5 em **abril de 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
@@ -24,9 +22,9 @@ Alguns destaques principais desta versão do Service pack:
 
 * [!DNL Experience Manager Assets] agora suporta arquivos ZIP criados com o algoritmo Deflate64.
 
-* A nova coluna para a data criada, que é classificável, foi adicionada na visualização de lista DAM e nos resultados da pesquisa de ativos na visualização de listas.
+* Uma nova coluna que exibe a data de criação do ativo está disponível ao exibir ativos no DAM e nos resultados da pesquisa na visualização da lista. Classifique a coluna para organizar ativos em ordem cronológica ou reversa cronológica de criação.
 
-* A classificação de ativos com base na coluna Nome foi ativada na visualização de Lista.
+* Agora é possível classificar ativos com base na `Name` coluna na visualização de lista.
 
 * [!DNL Dynamic Media] agora é compatível com ativos de vídeo de Recorte inteligente. O Smart Crop é um recurso orientado por aprendizado de máquina que recorta um vídeo enquanto move o quadro para seguir o ponto focal da cena.
 
@@ -46,9 +44,9 @@ Alguns destaques principais desta versão do Service pack:
 
 * [!DNL Experience Manager Assets] agora suporta arquivos ZIP criados com o algoritmo Deflate64 (NPR-27573).
 
-* A nova coluna para a data criada, que é classificável, foi adicionada na visualização de lista DAM e nos resultados da pesquisa de ativos na visualização de lista (NPR-31312).
+* Uma nova coluna que exibe a data de criação do ativo está disponível ao exibir ativos no DAM e nos resultados da pesquisa na visualização da lista. Classifique a coluna para organizar ativos em ordem cronológica ou reversa cronológica de criação (NPR-31312).
 
-* A classificação de ativos com base na coluna Nome foi permitida na visualização da Lista (NPR-31299).
+* Agora é possível classificar ativos com base na `Name` coluna na visualização da lista (NPR-31299).
 
 * Os arquivos de ativos GLB, GLTF, OBJ e STL suportam a pré-visualização de ativos na página Detalhes do ativo no DAM (CQ-4282277).
 
@@ -61,6 +59,8 @@ Alguns destaques principais desta versão do Service pack:
 * A visualização de pesquisa/navegação foi definida como visualização padrão no seletor do Foundation se os parâmetros de query forem transmitidos na solicitação (NPR-31601).
 
 **Correções**
+
+* O provedor OAuth IMS não pode se conectar por meio de um servidor proxy ao usar o Adobe Asset Link (NPR-30949).
 
 * Os metadados de alguns documentos PDF não são atualizados e salvos no PDF ao modificar seu título (NPR-31629).
 
@@ -82,19 +82,19 @@ Alguns destaques principais desta versão do Service pack:
 
 * Os ativos com o símbolo &quot;+&quot; no nome do arquivo não podem ser excluídos (NPR-31162).
 
-* O menu suspenso Criar, que está visível no menu superior ao selecionar uma pasta, não mostra a opção &quot;Pasta&quot; como uma opção de criação (NPR-30877).
+* Uma opção para criar novos ativos ou pastas está disponível como um menu pop-up na interface do usuário do Assets. Quando uma pasta é selecionada, o Experience Manager não exibe a [!UICONTROL Pasta] como uma das opções no menu pop-up (NPR-30877).
 
-* A seleção de pasta Criar > item de ação FileUpload está ausente quando a ACL para Negar jcr:removeChildNodes e jcr:removeNode no caminho é aplicada para um usuário (NPR-30840).
+* A seleção de pasta Criar > item de ação FileUpload está ausente quando a ACL para Negar `jcr:removeChildNodes` e `jcr:removeNode` no caminho é aplicada para um usuário (NPR-30840).
 
-* workflows DAM entram em estado obsoleto quando determinados ativos mp4 são carregados, fazendo com que todos os workflows restantes entrem em estado obsoleto (NPR-30662).
+* workflows DAM entram em estado obsoleto quando determinados ativos MP4 são carregados, fazendo com que todos os workflows restantes entrem em estado obsoleto (NPR-30662).
 
-* Erro de falta de memória é observado quando um grande arquivo PDF (de vários Gigabytes) é carregado no DAM e seus subativos são processados (NPR-30614).
+* Um erro de falta de memória é observado quando um grande arquivo PDF de vários Gigabytes é carregado no DAM e seus subativos são processados (NPR-30614).
 
-* A movimentação em massa de ativos está falhando e exibindo a mensagem de aviso (NPR-30610).
+* A movimentação em massa de ativos falha e exibe uma mensagem de aviso (NPR-30610).
 
-* Os nomes dos ativos são alterados para letras minúsculas ao mover ativos de uma pasta para outra em [!DNL Experience Manager] execução no modo [!DNL Dynamic Media]-Scene7 (NPR-31630).
+* Os nomes dos ativos são alterados para letras minúsculas ao mover ativos de uma pasta para outra ao trabalhar no modo [!DNL Dynamic Media]-Scene7 (NPR-31630).
 
-* Ocorreu um erro ao editar um conjunto de imagens remoto, para a imagem que reside na pasta com o mesmo nome de empresa do Scene 7 (NPR-31340).
+* Ocorreu um erro ao editar um conjunto de imagens remoto, para a imagem que reside na pasta com o mesmo nome de empresa do Scene7 (NPR-31340).
 
 * [!DNL Dynamic Media] ativos que contêm referências não estão sendo publicados (NPR-31180).
 
