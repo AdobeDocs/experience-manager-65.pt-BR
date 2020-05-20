@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrar com [!DNL Adobe InDesig
 description: Saiba como [!DNL Adobe Experience Manager Assets] se integrar [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 4%
@@ -165,7 +165,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 Se o [!DNL InDesign Server] e [!DNL Experience Manager] forem executados em hosts diferentes ou em ambos os aplicativos não forem executados em portas padrão, configure o [!UICONTROL Day CQ Link Externalizer] para definir o nome do host, a porta e o caminho do conteúdo para o [!DNL InDesign Server].
 
 1. Acesse o Console da Web em `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and tap **[!UICONTROL Edit]** to open it.
+1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
 1. Especifique o nome do host e o caminho de contexto do host [!DNL Indesign Server] e clique em **Salvar**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
@@ -175,7 +175,7 @@ Se o [!DNL InDesign Server] e [!DNL Experience Manager] forem executados em host
 Agora você pode ativar o processamento paralelo de tarefas para IDS. Determine o número máximo de trabalhos paralelos (`x`) que um [!DNL InDesign Server] processo pode processar:
 
 * Em uma única máquina de multiprocessador, o número máximo de trabalhos paralelos (`x`) que um usuário [!DNL InDesign Server] pode processar é um menor que o número de processadores executando IDS.
-* Ao executar IDS em várias máquinas, é necessário contar o número total de processadores disponíveis (ou seja, em todas as máquinas) e subtrair o número total de máquinas.
+* Ao executar IDS em várias máquinas, é necessário contar o número total de processadores disponíveis (ou seja, em todas as máquinas) e, em seguida, subtrair o número total de máquinas.
 
 Para configurar o número de trabalhos de IDS paralelos:
 
