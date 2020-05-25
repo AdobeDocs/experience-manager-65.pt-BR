@@ -4,7 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do usuário de criação do AEM 6.5
 translation-type: tm+mt
-source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
+source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
    + [Fragmentos de experiência](experience-fragments.md)
    + [Exportar para CSV](csv-export.md)
    + [Componentes](default-components.md)
-   + [Criação de uma página para dispositivos móveis  ](mobile.md)
+   + [Criação de uma página para dispositivos móveis   ](mobile.md)
    + [Solucionar problemas do AEM durante a criação  ](troubleshooting.md)
    + [Atalhos de teclado ao editar as páginas](page-authoring-keyboard-shortcuts.md)
    + [Práticas recomendadas  ](best-practices.md)
@@ -48,7 +51,7 @@ source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
    + [Console de componentes](default-components-console.md)
    + [Layout responsivo](responsive-layout.md)
    + [Content Insight](content-insights.md)
-   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)  ](creating-accessible-content.md)
+   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.1)](creating-accessible-content.md)
    + [Andaime](scaffolding.md)
    + [Configuração dos componentes no Modo de design](default-components-designmode.md)
    + [Componentes fundamentais](default-components-foundation.md)
