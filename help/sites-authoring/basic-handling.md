@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 69e9b7499c1babcf7a6da62b8728bba7f127b4f9
+source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+workflow-type: tm+mt
+source-wordcount: '3010'
+ht-degree: 92%
 
 ---
 
@@ -45,17 +48,17 @@ Logo após o logon, você acessa o [painel de Navegação](#navigation-panel). S
 
 >[!NOTE]
 >
->Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites**.
+>Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.**
 >
 >Clique ou toque em **Sites** para começar.
 
-### Navegação do produto {#product-navigation}
+### Navegação do produto   {#product-navigation}
 
 Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação do produto é iniciado. Reserve alguns momentos para clicar ou tocar no conteúdo a fim de obter uma boa visão geral sobre a manipulação básica do AEM.
 
 ![bh-02](assets/bh-02.png)
 
-Clique ou toque em **Avançar** para avançar para a próxima página da visão geral. Click or tap **Close** or click or tap outside of the overview dialog to close.
+Clique ou toque em **Avançar** para avançar para a próxima página da visão geral. Clique ou toque em **Fechar** ou fora da caixa de diálogo de visão geral para fechar.
 
 A visão geral será reiniciada na próxima vez que você acessar um console, a menos que visualize todos os slides ou marque a opção **Não mostrar esta mensagem novamente**.
 
@@ -63,7 +66,7 @@ A visão geral será reiniciada na próxima vez que você acessar um console, a 
 
 É possível navegar entre os consoles usando o painel de navegação global. Ele é acionado como uma lista suspensa em tela cheia ao clicar ou tocar no link do Adobe Experience Manager na parte superior esquerda da tela.
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+Você pode fechar o painel de navegação global clicando ou tocando em **Fechar** para retornar ao seu local anterior.
 
 ![bh-03](assets/bh-03.png)
 
@@ -78,11 +81,17 @@ A navegação global possui dois painéis, representados por ícones na margem e
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
-### Painel Navegação {#navigation-panel}
+### Painel Navegação   {#navigation-panel}
 
-O painel de Navegação:
+O painel Navegação fornece acesso aos consoles do AEM:
 
 ![bh-01](assets/bh-01.png)
+
+O título da guia do navegador será atualizado para refletir sua localização à medida que você navega pelos consoles e conteúdo.
+
+>[!NOTE]
+>
+>O título da guia reflete o local a partir do [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 Em Navegação, os consoles disponíveis são:
 
@@ -93,7 +102,7 @@ Em Navegação, os consoles disponíveis são:
    <td><strong>Propósito</strong></td>
   </tr>
   <tr>
-   <td>Assets<br /> </td>
+   <td>Ativos<br /> </td>
    <td>Esse consoles permitem importar e <a href="/help/assets/home.md">gerenciar ativos digitais</a> como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM. </td>
   </tr>
   <tr>
@@ -145,7 +154,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * [Navegação global](#navigatingconsolesandtools)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   Selecione o link do **Adobe Experience Manager** para navegar entre consoles.
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
@@ -153,9 +162,9 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
-   You can also use the [shortcut key](/help/sites-authoring/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   Você também pode usar a [tecla de atalho](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
-* [Soluções](https://www.adobe.com/experience-cloud.html)
+* [Soluções](https://www.adobe.com/br/experience-cloud.html)
 
    ![](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -189,7 +198,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![bh-05](assets/bh-05.png)
 
-   Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, é possível navegar pelos níveis do site.
+   Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, você pode navegar pelos níveis do seu site.
 
    Basta clicar no texto da navegação estrutural para exibir uma lista suspensa dos níveis da hierarquia do item atualmente selecionado. Clique em uma entrada para acessar esse local.
 
@@ -201,7 +210,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    Isso está disponível somente na exibição de lista. See [list view](#list-view) for more information.
 
-* **Botão Criar**
+* Botão **Criar**
 
    ![screen_shot_2018-03-23at104301](assets/screen_shot_2018-03-23at104301.png)
 
@@ -209,13 +218,25 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * [Exibições](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-   O ícone de exibição está na extrema direita da barra de ferramentas do AEM. Como também indica a exibição atual, ele muda. Por exemplo, no modo de exibição padrão, e **Exibição em coluna** ele aparece da seguinte forma:
+   O ícone de exibição está na extrema direita da barra de ferramentas do AEM. Como também indica a exibição atual, ele muda. Por exemplo, no modo de exibição padrão, e **Exibição de coluna** ele aparece da seguinte forma:
 
    ![bh-07](assets/bh-07.png)
 
    É possível alternar entre o modo de exibição de coluna, exibição de cartão e exibição de lista; no modo de exibição de lista também mostra as configurações de exibição.
 
    ![bh-09](assets/bh-09.png)
+
+* Navegação no teclado
+
+   Você pode navegar em um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da chave **TAB** (ou **OPT+TAB**) para movê-lo entre elementos na página que são *focalizáveis*.
+
+   No console **Sites** há a opção adicionada para **Ignorar para o conteúdo** principal. Isso fica visível à medida que você *guia* pelas opções de cabeçalho e acelera a navegação, permitindo que você pule os elementos padrão na barra de ferramentas (produto) e leve você diretamente para o conteúdo principal.
+
+   ![bh-30](assets/bh-30.png)
+
+   >[!NOTE]
+   >
+   >O **Skip to main content** está disponível a partir do [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 ## Acessar ajuda {#accessing-help}
 
@@ -252,7 +273,7 @@ Exibir a documentação do Adobe® Experience Manager
 Recursos e downloads do desenvolvedor
    >[!NOTE]
    >
-   >Você pode acessar uma visão geral das teclas de atalho disponíveis a qualquer momento usando a tecla de atalho `?` (ponto de interrogação) em um console.
+   >É possível acessar uma visão geral das teclas de atalho disponíveis a qualquer momento, usando a tecla de atalho `?` (ponto de interrogação) em um console.
    >
    >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
    >
@@ -272,7 +293,7 @@ A ação disponível na barra de ferramentas muda para refletir as ações que v
 
 A forma como você [seleciona um recurso](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depende da exibição.
 
-Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer,  opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso que contém todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
+Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso que contém todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
 
 ![bh-12](assets/bh-12.png)
 
@@ -280,7 +301,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas {#quick-actions}
+## Ações rápidas   {#quick-actions}
 
 Na [Exibição de cartão](#cardviewquickactions), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -294,16 +315,16 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 
 É possível visualizar, navegar e selecionar (para novas ações) os recursos com qualquer uma das exibições disponíveis, que podem ser selecionadas por meio do ícone no canto superior direito:
 
-* [Visualização de coluna](#column-view)
+* [Exibição de coluna](#column-view)
 * [Exibição de cartão](#card-view)
 
-* [Exibição de lista](#list-view)
+* [Exibição de lista  ](#list-view)
 
 >[!NOTE]
 >
 >Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
-### Seleção de recursos {#selecting-resources}
+### Seleção de recursos   {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -315,7 +336,7 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>Cancelar seleção</td>
   </tr>
   <tr>
-   <td>Exibição de coluna <br /> </td>
+   <td>Exibição de coluna<br /> </td>
    <td>
     <ul>
      <li>Desktop: <br /> Clique na miniatura</li>
@@ -331,17 +352,17 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>Exibição de cartão<br /> </td>
    <td>
     <ul>
-     <li><br /> Área de trabalho: Passe o mouse sobre o mouse e use a ação rápida de marca de seleção</li>
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
      <li>Dispositivo móvel:<br /> Tocar e segurar o cartão</li>
     </ul> </td>
    <td>
     <ul>
-     <li><br /> Área de trabalho:Clique no cartão</li>
-     <li><br /> Dispositivo móvel:Toque no cartão</li>
+     <li>Desktop:<br /> Click the card</li>
+     <li>Mobile device:<br /> Tap the card</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Exibição de lista</td>
+   <td>Exibição de lista  </td>
    <td>
     <ul>
      <li>Desktop: <br /> Clique na miniatura</li>
@@ -388,13 +409,13 @@ Em todas as visualizações, todos os itens podem ser desmarcados. Para isso, pr
 
 1. Após selecionar um recurso, o cabeçalho superior é coberto pela [barra de ferramentas das ações](#actionstoolbar), que fornece acesso às ações atualmente aplicáveis ao recurso selecionado.
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   Para sair do modo de seleção, selecione o **X** no canto superior direito, ou use a tecla **escape**.
 
 ### Exibição de coluna {#column-view}
 
 ![bh-16](assets/bh-16.png)
 
-A visualização de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa exibição permite visualizar e navegar pela estrutura em árvore do site.
+A exibição de coluna permite uma navegação visual de uma árvore de conteúdo por uma série de colunas em cascata. Essa exibição permite visualizar e navegar pela estrutura em árvore do site.
 
 A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho em uma coluna à direita. A seleção de um recurso na coluna direita mostrará então os recursos filhos em outra coluna à direita e assim por diante.
 
@@ -414,7 +435,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * A barra de ferramentas de ação ficará disponível.
    ![bh-18](assets/bh-18.png)
 
-   Quando uma página é selecionada na visualização de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
+   Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
 
    * Título da página
    * Nome da página (parte do URL da página)
@@ -433,7 +454,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * Uma representação visual do conteúdo da página.
    * O título da página.
    * Datas importantes (como a última edição/publicação).
-   * Se a página estiver bloqueada, oculta ou fizer parte de uma cópia dinâmica.
+   * Se a página estiver bloqueada, oculta ou fizer parte de uma live copy.
    * Se for o caso, quando for necessário tomar medidas como parte de um fluxo de trabalho.
 
       * Marcadores que indicam ações necessárias podem estar relacionados a entradas na sua [Caixa de entrada](/help/sites-authoring/inbox.md).
@@ -444,7 +465,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](/help/sites-authoring/basic-handling.md#the-header).
 
-### Exibição de lista {#list-view}
+### Exibição de lista   {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
@@ -477,13 +498,13 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * **Tempo na página**
    ![bh-21](assets/bh-21.png)
 
-   By default the **Name** column is shown, which makes up part of the URL for the page. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente, e ver o nome da página (que normalmente é imutável) pode ser de grande ajuda quando ele não conhece o idioma.
+   Por padrão, é exibida a coluna **Nome**, que faz parte do URL da página. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente, e ver o nome da página (que normalmente é imutável) pode ser de grande ajuda quando ele não conhece o idioma.
 
 * Altere a ordem dos itens usando a barra vertical pontilhada na extremidade direita de cada item da lista.
 
    >[!NOTE]
    >
-   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+   >Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -499,7 +520,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 ## Seletor de painéis {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+O **Seletor de painéis** está disponível no canto superior esquerdo da janela e exibe opções dependendo dos seus consoles atuais.
 
 ![bh-25](assets/bh-25.png)
 
@@ -546,14 +567,14 @@ A coluna de linha do tempo permite:
       * e Exibir todos
 
 
-* [Adicionar/exibir comentários](#timelineaddingandviewingcomments) sobre o item selecionado. A caixa **Comentário** é exibida na parte inferior da lista de eventos. Inserir um comentário seguido por Retornar registrará esse comentário. Ele será mostrado quando a opção **Comentários** ou **Exibir todos** estiver selecionada.
+* [Adicionar/exibir comentários sobre o item selecionado. ](#timelineaddingandviewingcomments) A caixa **Comentário** é exibida na parte inferior da lista de eventos. Inserir um comentário seguido por Retornar registrará esse comentário. Ele será mostrado quando a opção **Comentários** ou **Exibir todos** estiver selecionada.
 
 * Os consoles específicos têm funcionalidade adicional. Por exemplo, no console Sites é possível:
 
    * [Salvar uma versão](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [Iniciar um fluxo de trabalho](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-These options accessible via the chevron next to the **Comment** field.
+Essas opções podem ser acessadas por meio da divisa ao lado do campo **Comentário**.
 
 ![bh-27](assets/bh-27.png)
 
@@ -562,7 +583,7 @@ These options accessible via the chevron next to the **Comment** field.
 A opção **Referências** mostra conexões com o recurso selecionado. Por exemplo, no console de **Sites**, as [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) de páginas mostram o seguinte:
 
 * [Lançamentos](/help/sites-authoring/launches.md#launches-in-references-sites-console)
-* [Cópias dinâmicas](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
+* [Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Cópias de idioma](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Referência de conteúdo:
 
