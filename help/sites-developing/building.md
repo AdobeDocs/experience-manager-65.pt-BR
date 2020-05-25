@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 1493b301ecf4c25f785495e11ead352de600ddb7
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Para a implementação baseada em JCR, que mapeia `Tags` para JCR `Nodes`, você pode usar diretamente o `adaptTo` mecanismo do Sling se tiver o recurso (por exemplo, `/etc/tags/default/my/tag`):
+Para a implementação baseada em JCR, que mapeia `Tags` para JCR `Nodes`, você pode usar diretamente o `adaptTo` mecanismo do Sling se tiver o recurso (por exemplo, `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -92,7 +95,7 @@ Tag[] tags = tagManager.getTags(resource);
 tagManager.setTags(resource, tags);
 ```
 
-### Pesquisando tags {#searching-for-tags}
+### Pesquisando por tags {#searching-for-tags}
 
 ```java
 // Searching for the Resource objects that are tagged with the tag object:
@@ -129,9 +132,9 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 `CQ.tagging.TagInputField` é um widget de formulário para inserir tags. Ele tem um menu pop-up para seleção de tags existentes, inclui o preenchimento automático e muitos outros recursos. Seu xtype é `tags`.
 
-## O Coletor de lixo de tags {#the-tag-garbage-collector}
+## O Coletor de Lixo da Etiqueta {#the-tag-garbage-collector}
 
-O coletor de lixo de tags é um serviço em segundo plano que limpa as tags que estão ocultas e não são usadas. As tags ocultas e não usadas são tags abaixo `/etc/tags` que têm uma `cq:movedTo` propriedade e não são usadas em um nó de conteúdo - elas têm uma contagem zero. Ao usar esse processo de exclusão lento, o nó de conteúdo (ou seja, a `cq:tags` propriedade) não precisa ser atualizado como parte da operação de movimentação ou união. As referências na `cq:tags` propriedade são automaticamente atualizadas quando a `cq:tags` propriedade é atualizada, por exemplo, por meio da caixa de diálogo de propriedades da página.
+O coletor de lixo de tags é um serviço em segundo plano que limpa as tags que estão ocultas e não são usadas. As tags ocultas e não usadas são tags abaixo `/content/cq:tags` que têm uma `cq:movedTo` propriedade e não são usadas em um nó de conteúdo - elas têm uma contagem zero. Ao usar esse processo de exclusão lento, o nó de conteúdo (ou seja, a `cq:tags` propriedade) não precisa ser atualizado como parte da operação de movimentação ou mesclagem. As referências na `cq:tags` propriedade são automaticamente atualizadas quando a `cq:tags` propriedade é atualizada, por exemplo, por meio da caixa de diálogo de propriedades da página.
 
 O coletor de lixo da tag é executado por padrão uma vez por dia. Isso pode ser configurado em:
 
@@ -149,9 +152,9 @@ A pesquisa por tags e a listagem de tags funcionam da seguinte maneira:
 
 ## Tags em diferentes idiomas {#tags-in-different-languages}
 
-Conforme descrito na documentação para administração de tags, na seção [Gerenciamento de tags em diferentes idiomas](/help/sites-administering/tags.md#managing-tags-in-different-languages), uma tag `title`pode ser definida em idiomas diferentes. Uma propriedade sensível ao idioma é então adicionada ao nó da tag. Esta propriedade tem o formato `jcr:title.<locale>`, por exemplo, `jcr:title.fr` para a tradução em francês. `<locale>` deve ser uma string de localidade ISO em minúsculas e usar &quot;_&quot; em vez de &quot;-&quot;, por exemplo: `de_ch`.
+Conforme descrito na documentação para administração de tags, na seção [Gerenciamento de tags em diferentes idiomas](/help/sites-administering/tags.md#managing-tags-in-different-languages), uma tag `title`pode ser definida em idiomas diferentes. Uma propriedade sensível ao idioma é então adicionada ao nó da tag. Esta propriedade tem o formato `jcr:title.<locale>`, por exemplo, `jcr:title.fr` para a tradução em francês. `<locale>` deve ser uma sequência de caracteres de localidade ISO em minúsculas e usar &quot;_&quot; em vez de &quot;-&quot;, por exemplo: `de_ch`.
 
-Quando a tag **Animais** é adicionada à página **Produtos** , o valor `stockphotography:animals` é adicionado à propriedade `cq:tags` do nó /content/geometrixx/en/products/jcr:content. A tradução é referenciada do nó da tag.
+Quando a tag **Animais** é adicionada à página **Produtos** , o valor `stockphotography:animals` é adicionado à propriedade `cq:tags` do nó /content/geometrixx/en/products/jcr:content. A tradução é referenciada a partir do nó da tag.
 
 A API do lado do servidor tem métodos localizados `title`relacionados:
 
@@ -187,7 +190,7 @@ Para marcação, a localização depende do contexto, já que a tag `titles`pode
 
 O procedimento a seguir descreve como adicionar um novo idioma (finlandês) à caixa de diálogo Editar **** tag:
 
-1. No **CRXDE**, edite a propriedade de vários valores `languages` do nó `/etc/tags`.
+1. No **CRXDE**, edite a propriedade de vários valores `languages` do nó `/content/cq:tags`.
 
 1. Adicione `fi_fi` - que representa a localidade finlandesa - e salve as alterações.
 
