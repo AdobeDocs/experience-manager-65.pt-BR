@@ -1,8 +1,8 @@
 ---
 title: Usando bibliotecas do lado do cliente
 seo-title: Usando bibliotecas do lado do cliente
-description: O AEM fornece pastas de biblioteca do lado do cliente, que permitem que você armazene o código do lado do cliente no repositório, organize-o em categorias e defina quando e como cada categoria de código deve ser fornecida ao cliente
-seo-description: O AEM fornece pastas de biblioteca do lado do cliente, que permitem que você armazene o código do lado do cliente no repositório, organize-o em categorias e defina quando e como cada categoria de código deve ser fornecida ao cliente
+description: O AEM fornece pastas de biblioteca do lado do cliente, que permitem que você armazene o código do lado do cliente no repositório, organize-o no categoria e defina quando e como cada categoria de código deve ser fornecida ao cliente
+seo-description: O AEM fornece pastas de biblioteca do lado do cliente, que permitem que você armazene o código do lado do cliente no repositório, organize-o no categoria e defina quando e como cada categoria de código deve ser fornecida ao cliente
 uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: da233b2d58e13bf86c88115a78f2fecf1be12ba9
+workflow-type: tm+mt
+source-wordcount: '2889'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 Sites modernos dependem muito do processamento no cliente, conduzido por códigos complexos de JavaScript e CSS. Organizar e otimizar a entrega desse código pode ser um problema complicado.
 
-Para ajudar a lidar com esse problema, o AEM fornece Pastas **de biblioteca do lado do** cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página final para carregar o código correto.
+Para ajudar a lidar com esse problema, o AEM fornece Pastas **de biblioteca do lado do** cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página final para carregar o código correto.
 
-## Como as bibliotecas do cliente funcionam no AEM {#how-client-side-libraries-work-in-aem}
+## Como as bibliotecas do lado do cliente funcionam no AEM {#how-client-side-libraries-work-in-aem}
 
 A maneira padrão de incluir uma biblioteca do lado do cliente (ou seja, um arquivo JS ou CSS) no HTML de uma página é simplesmente incluir uma `<script>` ou `<link>` tag no JSP para essa página, contendo o caminho para o arquivo em questão. Por exemplo,
 
@@ -36,7 +39,7 @@ A maneira padrão de incluir uma biblioteca do lado do cliente (ou seja, um arqu
 ...
 ```
 
-Embora essa abordagem funcione no AEM, pode causar problemas quando as páginas e seus componentes se tornam complexos. Nesses casos, há o perigo de várias cópias da mesma biblioteca JS serem incluídas na saída HTML final. Para evitar isso e permitir a organização lógica de bibliotecas do lado do cliente, o AEM usa pastas **de biblioteca do lado do** cliente.
+Embora essa abordagem funcione no AEM, pode causar problemas quando as páginas e seus componentes se tornam complexos. Nesses casos, há o perigo de várias cópias da mesma biblioteca JS poderem ser incluídas na saída HTML final. Para evitar isso e permitir a organização lógica de bibliotecas do lado do cliente, o AEM usa pastas **de biblioteca do lado do** cliente.
 
 Uma pasta de biblioteca do lado do cliente é um nó de repositório do tipo `cq:ClientLibraryFolder`. A definição na notação [](https://jackrabbit.apache.org/node-type-notation.html) CND é
 
@@ -52,9 +55,9 @@ Por padrão, `cq:ClientLibraryFolder` os nós podem ser colocados em qualquer lu
 
 Cada um `cq:ClientLibraryFolder` é preenchido com um conjunto de arquivos JS e/ou CSS, juntamente com alguns arquivos de suporte (veja abaixo). As propriedades do `cq:ClientLibraryFolder` são configuradas da seguinte maneira:
 
-* `categories`: Identifica as categorias nas quais o conjunto de arquivos JS e/ou CSS nesse `cq:ClientLibraryFolder` intervalo. A `categories` propriedade, sendo de vários valores, permite que uma pasta de biblioteca faça parte de mais de uma categoria (veja abaixo como isso pode ser útil).
+* `categories`: Identifica as categorias nas quais o conjunto de arquivos JS e/ou CSS nesse `cq:ClientLibraryFolder` intervalo. A `categories` propriedade, sendo de vários valores, permite que uma pasta da biblioteca faça parte de mais de uma categoria (veja abaixo como isso pode ser útil).
 
-* `dependencies`: Esta é uma lista de outras categorias da biblioteca do cliente das quais essa pasta da biblioteca depende. Por exemplo, dados dois `cq:ClientLibraryFolder` nós `F` e `G`, se um arquivo em `F` requer outro arquivo `G` para funcionar corretamente, então pelo menos um dos `categories` nós `G` deve estar entre os `dependencies` de `F`.
+* `dependencies`: Esta é uma lista de outras categorias da biblioteca do cliente das quais esta pasta da biblioteca depende. Por exemplo, dados dois `cq:ClientLibraryFolder` nós `F` e `G`, se um arquivo em `F` requer outro arquivo `G` para funcionar corretamente, então pelo menos um dos `categories` nós `G` deve estar entre os `dependencies` de `F`.
 
 * `embed`: Usado para incorporar código de outras bibliotecas. Se o nó F incorporar os nós G e H, o HTML resultante será uma concentração de conteúdo dos nós G e H.
 * `allowProxy`: Se uma biblioteca do cliente estiver localizada em `/apps`, essa propriedade permitirá o acesso a ela por meio do servlet proxy. Consulte [Localizando uma pasta da biblioteca do cliente e Usando o Servlet](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) de bibliotecas do cliente proxy abaixo.
@@ -65,7 +68,7 @@ Como o HTL é a tecnologia preferencial para o desenvolvimento de sites do AEM, 
 
 ### Uso de HTL {#using-htl}
 
-Em HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pelo AEM, que pode ser acessado por meio [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis neste arquivo, que pode ser chamado por meio [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+Em HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pelo AEM, que pode ser acessado por meio [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis neste arquivo, que pode ser chamado por meio [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)de:
 
 * **css** - carrega somente os arquivos CSS das bibliotecas de clientes referenciadas.
 * **js** - carrega somente os arquivos JavaScript das bibliotecas de clientes referenciadas.
@@ -73,18 +76,18 @@ Em HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar
 
 Cada modelo de ajuda espera uma `categories` opção para fazer referência às bibliotecas de clientes desejadas. Essa opção pode ser uma matriz de valores de string ou uma string contendo uma lista de valores separados por vírgula.
 
-Para obter mais detalhes e exemplos de uso, consulte o documento [Introdução à linguagem](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries)de modelo HTML.
+Para obter mais detalhes e exemplos de uso, consulte a [Introdução do documento à Linguagem](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries)de modelo HTML.
 
 ### Uso do JSP {#using-jsp}
 
-Adicione uma `ui:includeClientLib` tag ao código JSP para adicionar um link às bibliotecas do cliente na página HTML gerada. Para fazer referência às bibliotecas, use o valor da `categories` propriedade do `ui:includeClientLib` nó.
+Adicione uma `ui:includeClientLib` tag ao código JSP para adicionar um link às bibliotecas do cliente na página HTML gerada. Para referenciar as bibliotecas, use o valor da `categories` propriedade do `ui:includeClientLib` nó.
 
 ```
 <%@taglib prefix="ui" uri="https://www.adobe.com/taglibs/granite/ui/1.0" %>
 <ui:includeClientLib categories="<%= categories %>" />
 ```
 
-Por exemplo, o `/etc/clientlibs/foundation/jquery` nó é do tipo `cq:ClientLibraryFolder` com uma propriedade de valor de categorias `cq.jquery`. O código a seguir em um arquivo JSP faz referência às bibliotecas:
+Por exemplo, o `/etc/clientlibs/foundation/jquery` nó é do tipo `cq:ClientLibraryFolder` com uma propriedade de valor do categoria `cq.jquery`. O código a seguir em um arquivo JSP faz referência às bibliotecas:
 
 ```xml
 <ui:includeClientLib categories="cq.jquery"/>
@@ -100,7 +103,7 @@ Para obter informações completas, incluindo atributos para filtrar JS, CSS ou 
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, que no passado costumava ser usada para incluir bibliotecas de clientes, foi substituída desde o AEM 5.6. Em vez disso, [ deve utilizar- `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) se o método descrito acima.
+>`<cq:includeClientLib>`, que no passado costumava ser usada para incluir bibliotecas de clientes, foi substituída desde o AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) em vez disso, conforme detalhado acima.
 
 ## Criando Pastas de Biblioteca de Clientes {#creating-client-library-folders}
 
@@ -111,9 +114,9 @@ O nó contém um ou mais arquivos de origem que, em tempo de execução, são me
 As pastas da biblioteca do cliente contêm os seguintes itens:
 
 * Os arquivos de origem JS e/ou CSS a serem mesclados.
-* Recursos compatíveis com estilos CSS, como arquivos de imagem.
+* Recursos que suportam estilos CSS, como arquivos de imagem.
 
-   **** Observação: Você pode usar subpastas para organizar arquivos de origem.
+   **Observação:** Você pode usar subpastas para organizar arquivos de origem.
 * Um `js.txt` arquivo e/ou um `css.txt` arquivo que identifica os arquivos de origem a serem mesclados nos arquivos JS e/ou CSS gerados.
 
 ![clientlibarch](assets/clientlibarch.png)
@@ -140,7 +143,7 @@ Em versões anteriores, as pastas da biblioteca do cliente estavam localizadas a
 
 Para que as bibliotecas do cliente possam `/apps` ser acessadas, um servidor proxy é usado. As ACLs ainda são aplicadas na pasta da biblioteca do cliente, mas o servlet permite que o conteúdo seja lido via `/etc.clientlibs/` se a `allowProxy` propriedade estiver definida como `true`.
 
-Um recurso estático só pode ser acessado por meio do proxy se ele residir abaixo de um recurso abaixo da pasta da biblioteca do cliente.
+Um recurso estático só pode ser acessado por meio do proxy, se ele residir abaixo de um recurso abaixo da pasta da biblioteca do cliente.
 
 Como exemplo:
 
@@ -164,8 +167,8 @@ Em seguida, você define a `allowProxy` propriedade como true `foo` .
 
 1. Abra o CRXDE Lite em um navegador da Web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Selecione a pasta na qual deseja localizar a pasta da biblioteca do cliente e clique em **Criar > Criar nó**.
-1. Digite um nome para o arquivo da biblioteca e, na lista Tipo, selecione `cq:ClientLibraryFolder`. Clique em **OK** e em **Salvar tudo**.
-1. Para especificar a categoria ou categorias à qual a biblioteca pertence, selecione o `cq:ClientLibraryFolder` nó, adicione a seguinte propriedade e clique em **Salvar tudo**:
+1. Digite um nome para o arquivo da biblioteca e, na opção lista Tipo, selecione `cq:ClientLibraryFolder`. Clique em **OK** e em **Salvar tudo**.
+1. Para especificar a categoria ou as categorias às quais a biblioteca pertence, selecione o `cq:ClientLibraryFolder` nó, adicione a seguinte propriedade e clique em **Salvar tudo**:
 
    * Nome: categorias
    * Tipo: String
@@ -174,13 +177,13 @@ Em seguida, você define a `allowProxy` propriedade como true `foo` .
 
 1. Adicione os arquivos de origem à pasta da biblioteca por qualquer meio. Por exemplo, use um cliente WebDav para copiar arquivos ou crie um arquivo e crie o conteúdo manualmente.
 
-   **** Observação: Se desejar, você pode organizar os arquivos de origem em subpastas.
+   **Observação:** Se desejar, você pode organizar os arquivos de origem em subpastas.
 
 1. Selecione a pasta da biblioteca do cliente e clique em **Criar > Criar arquivo**.
 1. Na caixa Nome do arquivo, digite um dos seguintes nomes de arquivo e clique em OK:
 
-   * **`js.txt`**: Use esse nome de arquivo para gerar um arquivo JavaScript.
-   * **`css.txt`**: Use esse nome de arquivo para gerar uma folha de estilos em cascata.
+   * **`js.txt`:**Use esse nome de arquivo para gerar um arquivo JavaScript.
+   * **`css.txt`:**Use esse nome de arquivo para gerar uma folha de estilos em cascata.
 
 1. Abra o arquivo e digite o seguinte texto para identificar a raiz do caminho dos arquivos de origem:
 
@@ -203,9 +206,9 @@ Quando o código na pasta da biblioteca do cliente fizer referência a outras bi
 
 As dependências devem ser outras `cq:ClientLibraryFolder`. Para identificar dependências, adicione uma propriedade ao seu `cq:ClientLibraryFolder` nó com os seguintes atributos:
 
-* **** Nome:dependências
-* **** Tipo: String[]
-* **** Valores: O valor da propriedade category do nó cq:ClientLibraryFolder do qual a pasta da biblioteca atual depende.
+* **Nome:** dependências
+* **Tipo:** String[]
+* **Valores:** O valor da propriedade categoria do nó cq:ClientLibraryFolder do qual a pasta da biblioteca atual depende.
 
 Por exemplo, o / `etc/clientlibs/myclientlibs/publicmain` tem uma dependência na `cq.jquery` biblioteca. O JSP que faz referência à biblioteca principal do cliente gera HTML que inclui o seguinte código:
 
@@ -214,7 +217,7 @@ Por exemplo, o / `etc/clientlibs/myclientlibs/publicmain` tem uma dependência n
 <script src="/etc/clientlibs/mylibs/publicmain.js" type="text/javascript">
 ```
 
-### Incorporando código de outras bibliotecas {#embedding-code-from-other-libraries}
+### Incorporação de código de outras bibliotecas {#embedding-code-from-other-libraries}
 
 Você pode incorporar código de uma biblioteca de cliente em outra biblioteca de cliente. No tempo de execução, os arquivos JS e CSS gerados da biblioteca de incorporação incluem o código da biblioteca incorporada.
 
@@ -222,13 +225,13 @@ A incorporação do código é útil para fornecer acesso às bibliotecas que s�
 
 #### Pastas da biblioteca de clientes específicas do aplicativo {#app-specific-client-library-folders}
 
-É uma prática recomendada manter todos os arquivos relacionados ao aplicativo na pasta do aplicativo abaixo `/app`. Também é uma prática recomendada negar o acesso dos visitantes do site à `/app` pasta. Para satisfazer ambas as práticas recomendadas, crie uma pasta da biblioteca do cliente abaixo da `/etc` pasta que incorpora a biblioteca do cliente abaixo `/app`.
+É uma prática recomendada manter todos os arquivos relacionados ao aplicativo em sua pasta de aplicativos abaixo `/app`. Também é uma prática recomendada negar o acesso de visitantes do site à `/app` pasta. Para satisfazer ambas as práticas recomendadas, crie uma pasta da biblioteca do cliente abaixo da `/etc` pasta que incorpora a biblioteca do cliente abaixo `/app`.
 
-Use a propriedade category para identificar a pasta da biblioteca do cliente a ser incorporada. Para incorporar a biblioteca, adicione uma propriedade ao `cq:ClientLibraryFolder` nó de incorporação, usando os seguintes atributos de propriedade:
+Use a propriedade categoria para identificar a pasta da biblioteca do cliente a ser incorporada. Para incorporar a biblioteca, adicione uma propriedade ao `cq:ClientLibraryFolder` nó de incorporação, usando os seguintes atributos de propriedade:
 
-* **** Nome: embed
-* **** Tipo: String[]
-* **** Valor: O valor da propriedade category do `cq:ClientLibraryFolder` nó a ser incorporado.
+* **Nome:** embed
+* **Tipo:** String[]
+* **Valor:** O valor da propriedade categoria do `cq:ClientLibraryFolder` nó a ser incorporado.
 
 #### Uso da incorporação para minimizar solicitações {#using-embedding-to-minimize-requests}
 
@@ -244,9 +247,9 @@ Em alguns casos, você pode descobrir que o HTML final gerado para a página tí
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
-Nesses casos, pode ser útil combinar todos os códigos da biblioteca do cliente necessários em um único arquivo para reduzir o número de solicitações de ida e volta no carregamento da página. Para fazer isso, você pode inserir `embed` as bibliotecas necessárias na biblioteca de cliente específica do aplicativo usando a propriedade embed do `cq:ClientLibraryFolder` nó.
+Nesses casos, pode ser útil combinar todo o código da biblioteca do cliente necessário em um único arquivo para que o número de solicitações de ida e volta no carregamento da página seja reduzido. Para fazer isso, você pode inserir `embed` as bibliotecas necessárias na biblioteca de cliente específica do aplicativo usando a propriedade embed do `cq:ClientLibraryFolder` nó.
 
-As seguintes categorias de biblioteca de cliente estão incluídas no AEM. Você deve incorporar somente aqueles que são necessários para o funcionamento de seu site específico. No entanto, **você deve manter a ordem listada aqui**:
+As seguintes categorias de biblioteca de cliente são incluídas no AEM. Você deve incorporar somente aqueles que são necessários para o funcionamento de seu site específico. No entanto, **você deve manter a ordem listada aqui**:
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -295,19 +298,19 @@ body {
 }
 ```
 
-### Usando uma biblioteca para grupos móveis específicos {#using-a-library-for-specific-mobile-groups}
+### Uso de uma biblioteca para grupos móveis específicos {#using-a-library-for-specific-mobile-groups}
 
 Use a `channels` propriedade de uma pasta da biblioteca do cliente para identificar o grupo móvel que usa a biblioteca. A `channels` propriedade é útil quando bibliotecas da mesma categoria são projetadas para diferentes recursos do dispositivo.
 
 Para associar uma pasta da biblioteca do cliente a um grupo de dispositivos, adicione uma propriedade ao seu `cq:ClientLibraryFolder` nó com os seguintes atributos:
 
-* **** Nome: canais
-* **** Tipo: String[]
-* **** Valores: O nome do grupo móvel. Para excluir a pasta da biblioteca de um grupo, prefixe o nome com um ponto de exclamação (&quot;!&quot;).
+* **Nome:** canais
+* **Tipo:** String[]
+* **Valores:** O nome do grupo móvel. Para excluir a pasta da biblioteca de um grupo, prefixe o nome com um ponto de exclamação (&quot;!&quot;).
 
 Por exemplo, a tabela a seguir lista o valor da `channels` propriedade para cada pasta da biblioteca do cliente da `cq.widgets` categoria:
 
-| Pasta da biblioteca do cliente | Valor da propriedade de canais |
+| Pasta da biblioteca do cliente | Valor da propriedade canais |
 |---|---|
 | `/libs/cq/analytics/widgets` | `!touch` |
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
@@ -326,7 +329,7 @@ O AEM permite pré-processadores conectáveis e é fornecido com suporte para o 
 Os pré-processadores conectáveis permitem uma utilização flexível, incluindo:
 
 * Definindo ScriptProcessors que podem processar fontes de script
-* Os processadores são configuráveis com opções
+* Os processadores podem ser configurados com opções
 * Os processadores podem ser usados para a miniificação, mas também para casos não-reduzidos
 * A clientlib pode definir qual processador usar
 
@@ -340,7 +343,7 @@ Os pré-processadores conectáveis permitem uma utilização flexível, incluind
 
 ### Uso {#usage}
 
-Você pode optar por configurar a configuração dos pré-processadores por biblioteca do cliente ou pelo sistema inteiro.
+Você pode optar por configurar a configuração dos pré-processadores por biblioteca do cliente ou por todo o sistema.
 
 * Adicionar as propriedades multivalue `cssProcessor` e `jsProcessor` no nó clientlibrary
 
@@ -424,14 +427,14 @@ A abertura do `publicmain.css` arquivo revela o seguinte código:
 1. Na caixa de endereço do navegador da Web, anexe o seguinte texto ao URL do seu HTML:
 
    `?debugClientLibs=true`
-1. Quando a página for carregada, exiba a fonte da página.
-1. Clique no link fornecido como href para o elemento de link para abrir o arquivo e exibir o código fonte.
+1. Quando a página for carregada, visualização a fonte da página.
+1. Clique no link fornecido como href para o elemento de link para abrir o arquivo e visualização o código fonte.
 
 ### Bibliotecas do Discover Client {#discover-client-libraries}
 
-O `/libs/cq/ui/components/dumplibs/dumplibs` componente gera uma página de informações sobre todas as pastas da biblioteca do cliente no sistema. O `/libs/cq/ui/content/dumplibs` nó tem o componente como um tipo de recurso. Para abrir a página, use o seguinte URL (use um host e uma porta diferentes, conforme necessário):
+O `/libs/cq/granite/components/dumplibs/dumplibs` componente gera uma página de informações sobre todas as pastas da biblioteca do cliente no sistema. O `/libs/granite/ui/content/dumplibs` nó tem o componente como um tipo de recurso. Para abrir a página, use o seguinte URL (alterando o host e a porta, conforme necessário):
 
-[https://localhost:4502/libs/cq/ui/content/dumplibs.test.html](https://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
+`https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
 As informações incluem o caminho e o tipo da biblioteca (CSS ou JS) e os valores dos atributos da biblioteca, como categorias e dependências. As tabelas subsequentes na página mostram as bibliotecas em cada categoria e canal.
 
@@ -445,10 +448,10 @@ O `dumplibs` componente inclui um seletor de teste que exibe o código-fonte ger
 
    * Abra o seguinte URL no navegador da Web (use um host e uma porta diferentes, conforme necessário):
 
-      [https://localhost:4502/libs/cq/ui/content/dumplibs.html](https://localhost:4502/libs/cq/ui/content/dumplibs.html)
-   A página padrão mostra a saída de tags sem valor para o atributo de categorias.
+      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+   A página padrão mostra a saída de tags sem valor para o atributo categoria.
 
-1. Para ver a saída de uma categoria, digite o valor da `categories` propriedade da biblioteca do cliente e clique em **Enviar consulta**.
+1. Para ver a saída de uma categoria, digite o valor da propriedade da biblioteca do cliente `categories` e clique em **Enviar Query**.
 
 ## Configuração do manuseio de biblioteca para desenvolvimento e produção {#configuring-library-handling-for-development-and-production}
 
