@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 83%
 
 ---
 
@@ -153,6 +156,11 @@ A opção Controle de administrador está visível somente para os membros do gr
 * **Salvar:** Toque/clique nesta opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
+
+>[!NOTE]
+>
+>Embora seja possível selecionar mais de um item, as ações só podem ser executadas em um item por vez.
+
 
 1. Para executar uma ação em um item, selecione a miniatura do item apropriado. Os ícones de ações aplicáveis a esse item serão mostrados na barra de ferramentas:
 
