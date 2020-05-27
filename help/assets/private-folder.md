@@ -1,11 +1,11 @@
 ---
-title: Criar e compartilhar uma pasta privada no AEM
-description: Saiba como criar uma pasta privada nos ativos Adobe Experience Manager (AEM) e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
+title: Crie e compartilhe uma pasta privada no Adobe Experience Manager.
+description: Saiba como criar uma pasta privada nos ativos Adobe Experience Manager e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Compartilhamento de pasta particular {#private-folder-sharing}
 
-Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Experience Manager (AEM) que está disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
+Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Experience Manager que esteja disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
 
 >[!NOTE]
 >
@@ -46,15 +46,15 @@ Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Exp
 
    >[!NOTE]
    >
-   >Você pode atribuir várias funções, como Editor, Proprietário ou Visualizador ao usuário com quem você compartilha a pasta. Se você atribuir uma função Proprietário ao usuário, este terá privilégios de Editores na pasta. Além disso, o usuário pode compartilhar a pasta com outras pessoas. Se você atribuir uma função de Editor, o usuário poderá editar os ativos em sua pasta particular. Se você atribuir uma função de Visualizador, o usuário poderá apenas visualização os ativos em sua pasta particular.
+   >Você pode atribuir várias funções, como Editor, Proprietário ou Visualizador ao usuário com quem você compartilha a pasta. Se você atribuir uma função Proprietário ao usuário, este terá privilégios de Editores na pasta. Além disso, o usuário pode compartilhar a pasta com outras pessoas. Se você atribuir uma função de Editor, o usuário poderá editar os ativos em sua pasta particular. Se você atribuir uma função de visualizador, o usuário poderá apenas visualização os ativos em sua pasta particular.
 
    >[!NOTE]
    >
    > A pasta privada tem pelo menos um membro com a função Proprietário. Portanto, o administrador não pode remover todos os membros proprietários de uma pasta privada. No entanto, para remover proprietários existentes (e o próprio administrador) da pasta privada, o administrador deve adicionar outro usuário como proprietário.
 
-1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando o usuário faz logon nos ativos AEM.
+1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando o usuário faz logon em Ativos.
 1. Clique em **[!UICONTROL Ok]** para fechar a mensagem de confirmação.
-1. O usuário com quem você compartilha a pasta recebe uma notificação de compartilhamento. Faça logon nos ativos AEM com as credenciais do usuário para visualização a notificação.
+1. O usuário com quem você compartilha a pasta recebe uma notificação de compartilhamento. Faça logon no Assets com as credenciais do usuário para visualização da notificação.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
