@@ -3,9 +3,9 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Embora você possa personalizar seu código de rastreamento para permitir que so
 
 Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
-1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Configurar a instância do AEM com o serviço da DTM Cloud](/help/sites-administering/dtm.md)
+1. Clique no logotipo do Experience Manager e vá até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Configuração **[!UICONTROL de]** insights.
+1. [Configurar a instância do Experience Manager com o serviço da DTM Cloud](/help/sites-administering/dtm.md)
 
-   O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar Configurações **[!UICONTROL da]** conta no ícone Perfil. Essa etapa não é necessária do ponto de vista Asset Insights, pois a integração dos Sites AEM com Asset Insights ainda está em andamento.
+   O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar Configurações **[!UICONTROL da]** conta no ícone Perfil. Essa etapa não é necessária do ponto de vista Asset Insights, pois a integração dos Sites do Experience Manager com Asset Insights ainda está em andamento.
 
 1. Faça logon em [https://dtm.adobe.com](https://dtm.adobe.com/)e selecione uma Empresa, conforme apropriado.
 1. Criar/abrir uma propriedade da Web existente
@@ -44,15 +44,15 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
+1. Clique no logotipo do Experience Manager e vá até **[!UICONTROL Ferramentas > Ativos]**.
 1. Clique em **[!UICONTROL Insights Page Tracker]**, copie o código do rastreador e cole-o na caixa de diálogo Script aberta na etapa 6. Salve as alterações.
 
    >[!NOTE]
    >
    > * `AppMeasurement.js` for removido. Ela deve estar disponível por meio da ferramenta Adobe Analytics do DTM.
    > * A chamada para `assetAnalytics.dispatcher.init`() é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar de carregar.
-   > * Dependendo de onde o Controlador de página do Asset Insights estiver hospedado (por exemplo, AEM, CDN e assim por diante), a origem da fonte do script pode exigir alterações.
-   > * Para o AEM-hosted Page Tracker, a fonte deve apontar para uma instância de publicação usando o nome de host da instância do dispatcher.
+   > * Dependendo de onde o Asset Insights Page Tracker estiver hospedado (por exemplo, Experience Manager, CDN e assim por diante), a origem da fonte do script pode exigir alterações.
+   > * Para o Controlador de página hospedado no Experience Manager, a origem deve apontar para uma instância de publicação usando o nome de host da instância do dispatcher.
 
 
 1. Acesso `https://dtm.adobe.com`. Clique em **[!UICONTROL Visão geral]** na propriedade da Web e clique em **[!UICONTROL Adicionar ferramenta]** ou abra uma ferramenta Adobe Analytics existente. Ao criar a ferramenta, você pode definir Método **** de configuração como **[!UICONTROL Automático]**.
