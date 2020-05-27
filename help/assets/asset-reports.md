@@ -1,11 +1,11 @@
 ---
 title: Relatórios sobre seus ativos digitais
-description: Entenda os relatórios sobre seus ativos no AEM Assets que ajudam a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
+description: Entenda os relatórios sobre seus ativos nos ativos Adobe Experience Manager que ajudam a entender o uso, a atividade e o compartilhamento dos ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '976'
 ht-degree: 15%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 15%
 
 # Relatórios dos ativos {#asset-reports}
 
-O relatórios de ativos é uma ferramenta essencial para avaliar a utilidade da implantação dos ativos Adobe Experience Manager (AEM). Com os ativos AEM, você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
+O relatórios de ativos é uma ferramenta essencial para avaliar a utilidade da implantação dos ativos Adobe Experience Manager. Com os Ativos, você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
 
-Use as informações nos relatórios para obter as principais métricas de sucesso para medir a adoção dos ativos AEM na sua empresa e pelos clientes.
+Use as informações nos relatórios para derivar métricas principais de sucesso para medir a adoção dos Ativos na sua empresa e pelos clientes.
 
-A estrutura de relatórios do AEM Assets usa trabalhos Sling para processar de forma assíncrona solicitações de relatório de maneira ordenada. É escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
+A estrutura do relatórios Ativos usa trabalhos Sling para processar de forma assíncrona solicitações de relatório de maneira ordenada. É escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
 
 A interface de gerenciamento de relatórios é intuitiva e inclui opções e controles refinados para acessar relatórios arquivados e status de execução de relatórios de visualização (sucesso, falha e enfileirados).
 
@@ -25,7 +25,7 @@ Quando um relatório é gerado, você é notificado por meio de um email (opcion
 
 ## Gerar relatórios {#generate-reports}
 
-O AEM Assets gera os seguintes relatórios padrão para você:
+Os ativos do Experience Manager geram os seguintes relatórios padrão para você:
 
 * Imagem
 * Download
@@ -37,7 +37,7 @@ O AEM Assets gera os seguintes relatórios padrão para você:
 * Arquivos
 * Compartilhamento de link
 
-Os administradores do AEM podem facilmente gerar e personalizar esses relatórios para sua implementação. Um administrador pode seguir estas etapas para gerar um relatório:
+Os administradores do Experience Manager podem facilmente gerar e personalizar esses relatórios para sua implementação. Um administrador pode seguir estas etapas para gerar um relatório:
 
 1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
    ![](assets/AssetsReportNavigation.png)
@@ -79,7 +79,7 @@ Os administradores do AEM podem facilmente gerar e personalizar esses relatório
 
    ![](assets/files_report.png)
 
-   O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do AEM Assets. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
+   O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do Assets. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
