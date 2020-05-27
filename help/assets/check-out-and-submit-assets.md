@@ -3,14 +3,17 @@ title: Faça check-in e check-out de seus ativos digitais para edição
 description: Saiba como fazer check-out dos ativos para edição e check-in deles novamente após a conclusão das alterações.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
 
-# Arquivos de check-in e check-out no AEM DAM {#check-in-and-check-out-files-in-assets}
+# Arquivos de check-in e check-out no Experience Manager DAM {#check-in-and-check-out-files-in-assets}
 
-Os ativos Adobe Experience Manager (AEM) permitem que você faça check-out dos ativos para edição e check-in deles novamente após concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você faça check-in do ativo novamente nos ativos AEM. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
+Os ativos Adobe Experience Manager permitem que você faça check-out dos ativos para edição e check-in deles novamente depois de concluir as alterações. Depois de fazer check-out de um ativo, somente você pode editar, anotar, publicar, mover ou excluir o ativo. Fazer check-out de um ativo bloqueia o ativo. Outros usuários não podem executar nenhuma dessas operações no ativo até que você faça check-in do ativo de volta para Ativos. No entanto, eles ainda podem alterar os metadados do ativo bloqueado.
 
 Para poder fazer check-out/check-in de ativos, você precisa ter acesso de gravação neles.
 
@@ -41,13 +44,13 @@ Para verificar se outros usuários podem editar o ativo que você fez check-out,
 
    Você também pode optar por anotar ou publicar o ativo.
 
-1. Selecione o ativo editado na [!DNL Assets] interface e clique em **[!UICONTROL Check-in]** na barra de ferramentas. O ativo modificado é feito check-in nos ativos AEM e está disponível para outros usuários para edição.
+1. Selecione o ativo editado na [!DNL Assets] interface e clique em **[!UICONTROL Check-in]** na barra de ferramentas. O ativo modificado é feito check-in em Ativos e está disponível para outros usuários para edição.
 
 ## Check-in forçado {#forced-check-in}
 
 Os administradores podem fazer check-in de ativos cujo check-out foi feito por outros usuários.
 
-1. Faça logon nos ativos AEM como administrador.
+1. Faça logon nos Ativos como administrador.
 1. Na interface do usuário do Assets, selecione um ou mais ativos cujo check-out foi feito por outros usuários.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
@@ -56,6 +59,6 @@ Os administradores podem fazer check-in de ativos cujo check-out foi feito por o
 
 >[!MORELIKETHIS]
 >
->* [Entenda o check-in e o check-out no aplicativo de desktop do AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Tutorial em vídeo para entender o check-in e o check-out nos ativos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Entenda o check-in e o check-out no aplicativo de desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Tutorial em vídeo para entender o check-in e o check-out nos ativos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 
