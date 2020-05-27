@@ -3,9 +3,9 @@ title: Biblioteca de transcodificação de imagens
 description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens da Adobe, uma solução de processamento de imagens que pode executar funções essenciais de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -55,10 +55,10 @@ Os argumentos da linha de comando para a Biblioteca de transcodificação de ima
 
 Você pode configurar as seguintes opções para o `-resize` parâmetro:
 
-* `X`: `Works similar to AEM. For example -resize 319.`
-* `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
-* `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
-* `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
+* `X`: Funciona de forma semelhante ao Experience Manager. Por exemplo - resize 319.
+* `WxH`: A proporção não é mantida, por exemplo `-resize 319x319`.
+* `Wx`: Corrige a largura e calcula a altura mantendo a proporção. Por exemplo `-resize 319x`.
+* `xH`: Corrige a altura e calcula a largura que mantém a proporção. Por exemplo `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)
@@ -74,7 +74,7 @@ Para configurar o processamento ITL, crie um arquivo de configuração e atualiz
 
 Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas usando as etapas a seguir. Você precisa de permissões de administrador ou raiz.
 
-1. Baixe o pacote [da Biblioteca de transcodificação de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) imagens e instale-o usando o Gerenciador de pacotes. O pacote é compatível com o AEM 6.5.
+1. Baixe o pacote [da Biblioteca de transcodificação de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) imagens e instale-o usando o Gerenciador de pacotes. O pacote é compatível com o Experience Manager 6.5.
 
 1. Para saber uma ID de pacote para `com.day.cq.dam.cq-dam-switchengine`, faça logon no Console da Web e clique em **[!UICONTROL OSGi > Pacotes]**. Como alternativa, para abrir o console de pacotes, acesse o `https://[aem_server:[port]/system/console/bundles/` URL. Localize o `com.day.cq.dam.cq-dam-switchengine` pacote e sua ID.
 
@@ -92,7 +92,7 @@ Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas 
 
 1. Execute `ldconfig` o comando para criar os links e o cache necessários.
 
-1. Na conta usada para start do AEM, edite o arquivo `.bash_profile` . Adicione `LD_LIBRARY_PATH` adicionando o seguinte.
+1. Na conta usada para o start Experience Manager, edite o arquivo `.bash_profile` . Adicione `LD_LIBRARY_PATH` adicionando o seguinte.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -136,8 +136,9 @@ Por exemplo, se você quiser criar miniaturas para uma imagem TIFF usando a Bibl
 
 1. Sincronize o modelo de fluxo de trabalho atualizado do Ativo [!UICONTROL de atualização do] DAM. Salve o fluxo de trabalho.
 
-Verifique a configuração, carregue uma imagem TIFF e monitore o arquivo error.log. Você notará `INFO` mensagens com menções de `SwitchEngineHandlingProcess execute: executing command line`. Os registros mencionam as execuções geradas. Quando o fluxo de trabalho for concluído, você poderá visualização as novas execuções no AEM.
+Verifique a configuração, carregue uma imagem TIFF e monitore o arquivo error.log. Você notará `INFO` mensagens com menções de `SwitchEngineHandlingProcess execute: executing command line`. Os registros mencionam as execuções geradas. Quando o fluxo de trabalho for concluído, você poderá visualização as novas execuções no Experience Manager.
 
 >[!MORELIKETHIS]
 >
 >* [Artigo de tipos MIME suportados](assets-formats.md#supported-image-transcoding-library)
+
