@@ -1,9 +1,12 @@
 ---
 title: Suporte a [!DNL Adobe Camera Raw].
-description: Saiba como habilitar o suporte do [!DNL Adobe Camera Raw] no [!DNL Adobe Experience Manager Assets].
+description: Saiba como [!DNL Adobe Camera Raw] ativar o suporte [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ Para ativar o [!DNL Camera Raw] suporte no, [!DNL Experience Manager Assets]siga
 
 1. Na guia Imagem **[!UICONTROL ativada pela]** Web, no campo **[!UICONTROL Ignorar Lista]** , especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
-   ![chlimage_1-129](assets/chlimage_1-335.png)
+   ![chlimage_1-127](assets/chlimage_1-335.png)
 
 1. No painel lateral, adicione a etapa **[!UICONTROL Camera Raw/DNG Handler]** abaixo da etapa de criação **[!UICONTROL de]** Miniaturas.
 1. Na etapa **[!UICONTROL Camera Raw/DNG Handler]** , adicione a seguinte configuração na guia **[!UICONTROL Argumentos]** :
@@ -49,9 +52,9 @@ Para ativar o [!DNL Camera Raw] suporte no, [!DNL Experience Manager Assets]siga
 >
 >Certifique-se de que a configuração acima seja a mesma do Ativo de atualização de DAM de **[!UICONTROL amostra com a Camera RAW e a configuração da Etapa]** de manuseio de DNG.
 
-Agora você pode importar arquivos do Camera Raw para o AEM Assets. Depois de instalar o pacote Camera RAW e configurar o fluxo de trabalho necessário, a opção **[!UICONTROL Ajuste]** de imagem é exibida na lista dos painéis laterais.
+Agora você pode importar arquivos do Camera Raw para o Assets. Depois de instalar o pacote Camera RAW e configurar o fluxo de trabalho necessário, a opção **[!UICONTROL Ajuste]** de imagem é exibida na lista dos painéis laterais.
 
-![chlimage_1-135](assets/chlimage_1-337.png)
+![chlimage_1-131](assets/chlimage_1-337.png)
 
 *Figura: Opções no painel lateral.*
 
