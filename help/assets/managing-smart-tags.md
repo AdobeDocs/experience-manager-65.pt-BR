@@ -3,7 +3,10 @@ title: Gerenciar tags inteligentes e pesquisas
 description: Atualizar ou remover as tags inteligentes imprecisas para melhorar a relevância das tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ Também é possível atribuir uma classificação mais alta a uma tag para aumen
 1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Navegue até a página de propriedades da imagem. Observe que a tag promovida tem uma relevância alta e, portanto, aparece mais alta nos resultados da pesquisa.
 
-## Compreender os resultados da pesquisa do AEM com tags inteligentes {#understandsearch}
+## Compreender os resultados da pesquisa do Experience Manager com tags inteligentes {#understandsearch}
 
-Por padrão, a pesquisa do AEM combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
+Por padrão, a pesquisa do Experience Manager combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
 
 * ativos com `woman` e `running` palavras-chave nos metadados.
 
