@@ -3,7 +3,10 @@ title: Organize seus ativos digitais
 description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 1%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Office e PDF são extraídos e tornados pesquisáveis. A pesquisa permite a filtragem sofisticada de ativos e respeita totalmente as permissões adequadas. Os metadados são abordados detalhadamente em metadados no Gerenciamento de ativos digitais.
 
-O AEM Assets oferece suporte a várias formas de organização de conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de forma não ordenada e ad-hoc, usando, por exemplo, tags. Os usuários podem editar tags no DAM Asset Editor, onde subativos, representações e metadados são exibidos.
+Os ativos Experience Manager oferecem suporte a várias maneiras de organizar o conteúdo. Você pode organizá-las de maneira hierárquica usando pastas ou pode organizá-las de forma não ordenada e ad-hoc, usando, por exemplo, tags. Os usuários podem editar tags no DAM Asset Editor, onde subativos, representações e metadados são exibidos.
 
 ## Organizar ativos em pastas {#organize-using-folders}
 
@@ -32,7 +35,7 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
    * **Pastas** baseadas em data: contém ativos digitais com base em uma data de criação ou em uma data de última modificação.
 
 * Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer personalização ou automação continue funcionando. Por exemplo, os perfis de processamento atribuídos continuam funcionando.
-* Se um ativo já tiver sido publicado, você usará o AEM para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é *perdido* para o AEM e não pode ser despublicado. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois mova-o para uma pasta diferente.
+* Se um ativo já estiver publicado, você usará o Experience Manager para movê-lo para outra pasta e republicar a partir de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é *perdido* para o Experience Manager e não pode ser despublicado. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois mova-o para uma pasta diferente.
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
@@ -42,7 +45,7 @@ Os ativos Adobe Experience Manager usam um algoritmo de autoaprendizado para cri
 
 Para obter mais informações, consulte os seguintes artigos:
 
-* [Sobre tags no AEM](/help/sites-authoring/tags.md)
+* [Sobre tags no Experience Manager](/help/sites-authoring/tags.md)
 * [Editar metadados de ativos](meta-edit.md)
 * [Tags inteligentes aprimoradas em ativos](enhanced-smart-tags.md)
 
