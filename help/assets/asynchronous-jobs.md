@@ -1,23 +1,26 @@
 ---
 title: Operações assíncronas
-description: O AEM Assets otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos.
+description: Os ativos Experience Manager otimizam o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 2%
 
 ---
 
 
 # Operações assíncronas {#asynchronous-operations}
 
-Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager (AEM) Assets processa de modo assíncrono determinadas operações de ativos de longa duração e com uso intenso de recursos.
+Para reduzir o impacto adverso no desempenho, os ativos Adobe Experience Manager processam de forma assíncrona certas operações de longa duração e de ativos com uso intenso de recursos.
 
 Essas operações incluem:
 
 * Excluindo muitos ativos
 * Movimentação de muitos ativos ou ativos com muitas referências
 * Exportar/importar metadados de ativos em massa.
-* Buscando ativos, que estão acima do limite definido, de uma implantação remota do AEM.
+* Buscando ativos, que estão acima do limite definido, de uma implantação remota do Experience Manager.
 
 O processamento assíncrono envolve enfileiramento de várias tarefas e, eventualmente, sua execução em série, dependendo da disponibilidade dos recursos do sistema.
 
@@ -25,11 +28,11 @@ Você pode visualização o status de trabalhos assíncronos na página Status *
 
 >[!NOTE]
 >
->Por padrão, os trabalhos no AEM Assets são executados em paralelo. Se N for o número de núcleos da CPU, os trabalhos N/2 poderão ser executados em paralelo, por padrão. Para usar configurações personalizadas para a fila de trabalhos, modifique a configuração da Fila **[!UICONTROL padrão de operação]** assíncrona do console da Web. Para obter mais informações, consulte configurações [de](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)fila.
+>Por padrão, as tarefas no Assets são executadas em paralelo. Se N for o número de núcleos da CPU, os trabalhos N/2 poderão ser executados em paralelo, por padrão. Para usar configurações personalizadas para a fila de trabalhos, modifique a configuração da Fila **[!UICONTROL padrão de operação]** assíncrona do console da Web. Para obter mais informações, consulte configurações [de](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)fila.
 
 ## Monitore o status das operações assíncronas {#monitoring-the-status-of-asynchronous-operations}
 
-Sempre que o AEM Assets processa uma operação de forma assíncrona, você recebe uma notificação na sua caixa de entrada e por email.
+Sempre que o Assets processar uma operação de forma assíncrona, você receberá uma notificação na sua caixa de entrada e por email.
 
 Para visualização o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
 
@@ -69,7 +72,7 @@ Para visualização o status das operações assíncronas em detalhes, navegue a
 
 ## Expurgar trabalhos concluídos {#purging-completed-jobs}
 
-Os ativos AEM executam um trabalho de limpeza todos os dias às 13:00 da manhã para excluir trabalhos assíncronos concluídos que têm mais de um dia.
+O Experience Manager Assets executa uma tarefa de limpeza todos os dias às 13:00 da manhã para excluir trabalhos assíncronos concluídos com mais de um dia de idade.
 
 Você pode modificar a programação para a ordem de produção de expurgação e a duração para a qual os detalhes das ordens de produção concluídas são retidos antes de serem deletados. Você também pode configurar o número máximo de trabalhos concluídos para os quais os detalhes são retidos a qualquer momento.
 
@@ -83,7 +86,7 @@ Você pode modificar a programação para a ordem de produção de expurgação 
 
 ## Configurar limites para processamento assíncrono {#configuring-thresholds-for-asynchronous-processing}
 
-Você pode configurar o número limite de ativos ou referências para que os ativos AEM processem uma determinada operação de forma assíncrona.
+Você pode configurar o número limite de ativos ou referências para que os Ativos processem uma determinada operação de forma assíncrona.
 
 ### Configurar limites para operações de exclusão assíncronas {#configuring-thresholds-for-asynchronous-delete-operations}
 
