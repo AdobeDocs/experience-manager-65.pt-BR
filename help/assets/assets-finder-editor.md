@@ -3,9 +3,9 @@ title: Criar e configurar páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2146'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ Este documento descreve o seguinte:
 
 ## Por que criar e configurar as páginas do Editor de ativos? {#why-create-and-configure-asset-editor-pages}
 
-O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao mudar de uma solução em pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários comerciais, autores de WCM, jornalistas e assim por diante - a poderosa interface de usuário do Adobe Experience Manager (AEM) Assets para usuários profissionais pode fornecer informações demais e start de participantes para solicitar interfaces de usuário ou aplicativos específicos para acessar os ativos digitais relevantes.
+O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao mudar de uma solução em pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários comerciais, autores de WCM, jornalistas e assim por diante - a poderosa interface de usuário dos Ativos Adobe Experience Manager para usuários profissionais pode fornecer informações demais e start de participantes para solicitar interfaces de usuário ou aplicativos específicos para acessar os ativos digitais que são relevantes para eles.
 
 Esses aplicativos centrados em ativos podem ser simples galerias de fotos em uma intranet onde os funcionários podem carregar fotos de visitas comerciais ou de um centro de imprensa em um site voltado ao público. Aplicativos centrados em ativos também podem ser estendidos para soluções completas, incluindo carrinhos de compras, processos de checkout e verificação.
 
-A criação de um aplicativo centrado em ativos torna-se, em grande medida, um processo de configuração que não exige codificação, apenas conhecimento dos grupos de usuários e suas necessidades, bem como conhecimento dos metadados usados. Os aplicativos centrados em ativos criados com os ativos AEM são extensíveis: com o esforço de codificação moderado, é possível criar componentes reutilizáveis para pesquisa, visualização e modificação de ativos.
+A criação de um aplicativo centrado em ativos torna-se, em grande medida, um processo de configuração que não exige codificação, apenas conhecimento dos grupos de usuários e suas necessidades, bem como conhecimento dos metadados usados. Os aplicativos centrados em ativos criados com os Ativos são extensíveis: com o esforço de codificação moderado, é possível criar componentes reutilizáveis para pesquisa, visualização e modificação de ativos.
 
-Um aplicativo centrado em ativos no AEM consiste em uma página do Editor de ativos, que pode ser usada para obter uma visualização detalhada de um ativo específico. Uma página do Editor de ativos também permite a edição de metadados, desde que o usuário que acessa o ativo tenha as permissões necessárias.
+Um aplicativo centrado em ativos no Experience Manager consiste em uma página do Editor de ativos, que pode ser usada para obter uma visualização detalhada de um ativo específico. Uma página do Editor de ativos também permite a edição de metadados, desde que o usuário que acessa o ativo tenha as permissões necessárias.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -161,7 +161,7 @@ To customize the query builder:
 
 #### Add predicates {#adding-predicates}
 
-AEM Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
+Experience Manager Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
 To add predicates:
 
@@ -278,7 +278,7 @@ O Formulário de metadados é um formulário que inclui um start e uma ação fi
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-Consulte [Personalização e extensão de ativos](/help/assets/extending-assets.md) AEM para obter informações sobre como modificar as namespaces disponíveis no formulário de metadados.
+Consulte [Personalização e extensão de ativos](/help/assets/extending-assets.md) para obter informações sobre como modificar as namespaces disponíveis no formulário de metadados.
 
 1. Click the **Constraints** tab. Aqui, você pode selecionar se um campo é obrigatório e, se necessário, adicionar quaisquer restrições.
 
@@ -391,7 +391,7 @@ As seguintes ações estão disponíveis:
 
 ## Vários ativos de edição com a página Editor de ativos {#multi-editing-assets-with-the-asset-editor-page}
 
-Com os ativos AEM, é possível fazer alterações em vários ativos ao mesmo tempo. Depois de ter selecionado os ativos, é possível alterar simultaneamente os seguintes itens:
+Com os ativos Experience Manager, é possível fazer alterações em vários ativos ao mesmo tempo. Depois de ter selecionado os ativos, é possível alterar simultaneamente os seguintes itens:
 
 * Tags
 * Metadados
