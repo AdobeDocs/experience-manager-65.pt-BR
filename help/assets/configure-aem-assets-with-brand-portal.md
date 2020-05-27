@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e5e918c0b971159bc99bdcf604c89439c2b08244
+source-git-commit: fb59bd52be86894e93063f4b7c32aef0ed23250b
+workflow-type: tm+mt
+source-wordcount: '1748'
+ht-degree: 46%
 
 ---
 
@@ -75,7 +78,7 @@ Para obter instruções detalhadas, consulte
 
 * [Notas de versão do AEM 6.5 Service Pack ](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)
 
-**Entre em contato com o suporte** se não conseguir encontrar o pacote AEM ou o Service Pack mais recente.
+**Entre em contato com o Atendimento** ao cliente se não conseguir encontrar o pacote AEM ou o Service Pack mais recente.
 
 ## Criar configuração {#configure-new-integration-65}
 
@@ -206,7 +209,7 @@ Verifique se você executou as seguintes etapas:
 >
 >Você deve ter apenas uma configuração IMS. Não crie várias configurações IMS.
 >
->Certifique-se de que a configuração do IMS passe na verificação de integridade. Se a configuração não for aprovada na verificação de integridade, ela será inválida. Você deve excluí-la e criar uma configuração nova e válida.
+>A configuração IMS deve ser aprovada na verificação de integridade. Se a configuração não for aprovada na verificação de integridade, ela será inválida. Você deve excluí-la e criar uma configuração nova e válida.
 
 
 ### Configurar o serviço em nuvem {#configure-the-cloud-service}
