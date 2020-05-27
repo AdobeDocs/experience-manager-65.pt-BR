@@ -2,17 +2,17 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guia do usuário dos ativos AEM 6.5
+user-guide-title: Guia do usuário dos ativos Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '636'
 ht-degree: 40%
 
 ---
 
 
-# AEM 6.5 Assets User Guide {#assets}
+# Guia do usuário dos ativos Experience Manager 6.5 {#assets}
 
 + [[!DNL Assets] guia do usuário](home.md)
 + [Notas de versão do AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
@@ -153,7 +153,7 @@ ht-degree: 40%
    + [Operações assíncronas](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Insights de ativos](touch-ui-asset-insights.md)
-   + [Ativar insights de ativos por meio do DTM](touch-ui-using-dtm-for-asset-insights.md)
+   + [Ativar insights de ativos por meio do Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
    + [Configurar insights de ativos](touch-ui-configuring-asset-insights.md)
    + [Fazer check-in e check-out de ativos](check-out-and-submit-assets.md)
    + [Aplicar serviços de tradução em nuvem a pastas](transition-cloud-services.md)
