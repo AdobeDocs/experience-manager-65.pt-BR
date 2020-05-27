@@ -1,22 +1,25 @@
 ---
-title: Experiência de Home page do AEM Assets
-description: Personalize o Home page AEM Assets para obter uma experiência de tela de boas-vindas rica, incluindo um instantâneo de atividades recentes sobre ativos.
+title: Experiência de Home page dos ativos Adobe Experience Manager
+description: Personalize o Home page Ativos do Experience Manager para obter uma experiência avançada em tela de boas-vindas, incluindo um instantâneo de atividades recentes sobre ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
 
-# Experiência de Home page do AEM Assets {#aem-assets-home-page-experience}
+# Experiência de Home page dos ativos Adobe Experience Manager {#aem-assets-home-page-experience}
 
-Personalize o home page de ativos Adobe Experience Manager (AEM) para obter uma experiência de tela de boas-vindas, incluindo um instantâneo de atividades recentes sobre ativos.
+Personalize o home page de ativos do Adobe Experience Manager para obter uma experiência de tela de boas-vindas, incluindo um instantâneo de atividades recentes sobre ativos.
 
-O home page AEM Assets fornece uma experiência de tela de boas-vindas avançada e personalizada, que inclui um instantâneo de atividades recentes, como ativos que foram exibidos ou carregados recentemente.
+O home page Assets fornece uma experiência de tela de boas-vindas rica e personalizada, que inclui um instantâneo de atividades recentes, como ativos que foram visualizados ou carregados recentemente.
 
 O home page Ativos está desativado por padrão. Para ativá-lo, execute as seguintes etapas:
 
-1. Abra o AEM Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Abra o Experience Manager Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra o serviço Gravador **[!UICONTROL do Evento CQ DAM]** Day.
 1. Selecione **[!UICONTROL Ativar este serviço]** para ativar a gravação de atividade.
 
@@ -66,7 +69,7 @@ Esta seção é exibida abaixo da seção Boas-vindas e exibe os widgets predefi
 
 **Recente**: O widget **[!UICONTROL Visualizado]** recentemente nesta seção exibe entidades acessadas recentemente pelo usuário conectado, incluindo pastas, coleções e projetos.
 
-**Discover**: O widget **[!UICONTROL Novo]** nesta seção exibe os ativos e as execuções carregados recentemente na instância AEM Assets.
+**Discover**: O widget **[!UICONTROL Novo]** nesta seção exibe os ativos e as execuções carregados recentemente na instância Ativos.
 
 Para ativar a remoção de dados de atividade do usuário, ative o Serviço **[!UICONTROL de Expurgação de Eventos]** DAM do Configuration Manager. Após habilitar esse serviço, as atividades do usuário conectado que excederem um número especificado serão excluídas pelo sistema.
 
@@ -74,7 +77,7 @@ A tela de boas-vindas fornece ferramentas de navegação fáceis, por exemplo í
 
 >[!NOTE]
 >
->Habilitar os serviços [!UICONTROL Day CQ DAM Evento Recorder] e [!UICONTROL DAM Evento Purge] aumenta as operações de gravação no JCR e a indexação de pesquisa, o que aumenta significativamente a carga no servidor AEM. A carga adicional no servidor AEM pode afetar seu desempenho.
+>Habilitar os serviços Recorder [!UICONTROL do Evento CQ DAM] Day e Expurgação [!UICONTROL do Evento] DAM aumenta as operações de gravação no JCR e a indexação de pesquisa, o que aumenta significativamente a carga no servidor Experience Manager. A carga adicional no servidor Experience Manager pode afetar seu desempenho.
 
 >[!CAUTION]
 >
