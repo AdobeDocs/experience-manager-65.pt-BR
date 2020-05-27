@@ -1,10 +1,13 @@
 ---
 title: Ajuste de desempenho para [!DNL Adobe Experience Manager Assets].
-description: Sugestões e orientações sobre a configuração do [!DNL Experience Manager], alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho dos [!DNL Experience Manager Assets].
+description: Sugestões e orientações [!DNL Experience Manager] sobre configuração, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '2723'
+ht-degree: 0%
 
 ---
 
@@ -162,7 +165,7 @@ Configurar uma fila para metade dos processadores disponíveis é uma solução 
 
 ### Configuração do ativo de atualização do DAM {#dam-update-asset-configuration}
 
-O fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM contém um conjunto completo de etapas configuradas para o tarefa, como geração do Scene7 PTIFF e integração com o InDesign Server. No entanto, a maioria dos usuários pode não exigir várias dessas etapas. A Adobe recomenda que você crie uma cópia personalizada do modelo de fluxo de trabalho Atualizar ativo  DAM e remova quaisquer etapas desnecessárias. Nesse caso, atualize os iniciadores do Ativo [!UICONTROL de atualização do] DAM para apontar para o novo modelo.
+O fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM contém um conjunto completo de etapas configuradas para tarefa, como geração e integração do Scene7 PTIFF [!DNL Adobe InDesign Server] . No entanto, a maioria dos usuários pode não exigir várias dessas etapas. A Adobe recomenda que você crie uma cópia personalizada do modelo de fluxo de trabalho Atualizar ativo  DAM e remova quaisquer etapas desnecessárias. Nesse caso, atualize os iniciadores do Ativo [!UICONTROL de atualização do] DAM para apontar para o novo modelo.
 
 A execução intensiva do fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM pode aumentar consideravelmente o tamanho do armazenamento de dados do arquivo. Os resultados de um experimento realizado pela Adobe mostraram que o tamanho do armazenamento de dados pode aumentar aproximadamente 400 GB se cerca de 5500 workflows forem executados dentro de 8 horas.
 
