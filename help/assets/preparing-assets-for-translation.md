@@ -3,9 +3,9 @@ title: Preparar ativos para tradução
 description: Crie pastas raiz de idioma para preparar ativos para tradução para suportar ativos multilíngues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues.
 
-Nos ativos Adobe Experience Manager (AEM), ativos multilíngues são incluídos em pastas, onde cada pasta contém os ativos em um idioma diferente.
+Nos ativos Adobe Experience Manager, os ativos multilíngues são incluídos nas pastas, onde cada pasta contém os ativos em um idioma diferente.
 
 Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, */content/dam/it* é a raiz do idioma italiano para a cópia em italiano. As cópias de idioma devem usar uma raiz [de idioma configurada](preparing-assets-for-translation.md#creating-a-language-root) corretamente para que o idioma correto seja direcionado quando as traduções dos ativos de origem forem executadas.
 
@@ -58,7 +58,7 @@ Por exemplo, a página raiz da cópia em idioma italiano da hierarquia de amostr
 
 ## raízes da língua Visualização {#viewing-language-roots}
 
-A interface do AEM fornece um painel **[!UICONTROL Referências]** que exibe uma lista de raízes de idioma que foram criadas nos ativos AEM.
+A interface do Experience Manager fornece um painel **[!UICONTROL Referências]** que exibe uma lista de raízes de idioma que foram criadas nos Ativos.
 
 1. No console Ativos, selecione o idioma mestre para o qual deseja criar cópias de idioma.
 1. Clique no ícone GlobalNav e escolha **[!UICONTROL Referências]** para abrir o painel [!UICONTROL Referência] .
