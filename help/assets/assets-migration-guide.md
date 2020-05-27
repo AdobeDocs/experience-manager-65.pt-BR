@@ -1,9 +1,12 @@
 ---
-title: Migre ativos para [!DNL Adobe Experience Manager Assets] em massa.
-description: Descreve como trazer ativos para o [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
+title: Migre ativos [!DNL Adobe Experience Manager Assets] em massa.
+description: Descreve como inserir ativos [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '1800'
+ht-degree: 8%
 
 ---
 
@@ -29,7 +32,7 @@ Antes de executar qualquer uma das etapas desta metodologia, reveja e implemente
 >
 Este software é de código aberto e é coberto pela [Licença Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Para fazer uma pergunta ou relatar um problema, visite os respectivos [Problemas do GitHub para as ferramentas do ACS AEM](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e os [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migrar para [!DNL Experience Manager]{#migrating-to-aem}
+## Migrar para [!DNL Experience Manager] {#migrating-to-aem}
 
 A migração de ativos para [!DNL Experience Manager] requer várias etapas e deve ser exibida como um processo em fases. As fases da migração são as seguintes:
 
@@ -69,13 +72,13 @@ A outra abordagem para assimilar ativos é extrair ativos do sistema de arquivos
 
 #### Buscar no sistema de arquivos local {#pulling-from-the-local-filesystem}
 
-O Importador [de ativos CSV das ferramentas AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do AEM Asset Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivos de rede ou por meio de uma unidade externa.
+O Importador [de ativos CSV das ferramentas AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do Experience Manager Asset Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivos de rede ou por meio de uma unidade externa.
 
 Como os ativos não precisam ser transmitidos através de uma rede, o desempenho geral melhora drasticamente e esse método é geralmente considerado a maneira mais eficiente de carregar ativos no repositório. Além disso, como a ferramenta oferece suporte à ingestão de metadados, você pode importar todos os ativos e metadados em uma única etapa, em vez de criar uma segunda etapa para aplicar os metadados por meio de uma ferramenta separada.
 
 ### Processar execuções {#processing-renditions}
 
-Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM para extrair metadados e gerar representações. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM para atender às suas necessidades. O fluxo de trabalho predefinido contém várias etapas que podem não ser necessárias para você, como geração ou integração do Scene7 PTIFF [!DNL InDesign Server] .
+Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM para extrair metadados e gerar execuções. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM para atender às suas necessidades. O fluxo de trabalho predefinido contém várias etapas que podem não ser necessárias para você, como geração ou integração do Scene7 PTIFF [!DNL InDesign Server] .
 
 Depois de configurar o fluxo de trabalho de acordo com suas necessidades, você tem duas opções para executá-lo:
 
