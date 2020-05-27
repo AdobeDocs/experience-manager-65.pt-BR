@@ -3,9 +3,9 @@ title: Criar projetos de tradução
 description: Saiba como criar projetos de tradução [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1897'
 ht-degree: 16%
 
 ---
@@ -25,7 +25,7 @@ Para criar uma cópia de idioma, dispare um dos seguintes workflows de cópia de
 
 >[!NOTE]
 >
->Se você iniciar um fluxo de trabalho de tradução para ativos complexos, como arquivos PDF e InDesign, seus subativos ou representações (se houver) não serão submetidos para conversão.
+>Se você iniciar um fluxo de trabalho de tradução para ativos complexos, como arquivos PDF e [!DNL Adobe InDesign] arquivos, seus subativos ou representações (se houver) não serão submetidos para conversão.
 
 ## Criar e traduzir fluxo de trabalho {#create-and-translate-workflow}
 
