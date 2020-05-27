@@ -4,9 +4,9 @@ description: Saiba mais sobre tarefas para gerenciar coleções de ativos, como 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2215'
 ht-degree: 13%
 
 ---
@@ -183,7 +183,7 @@ Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo ad
 
 ## Pesquisar coleções {#searching-collections}
 
-Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, o AEM Assets pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
+Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, o Assets pesquisa por nomes de coleção, metadados e as tags adicionadas às coleções.
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas dentro das coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pastas), todos os ativos, pastas e coleções relevantes são retornados.
 
@@ -191,7 +191,7 @@ Se você pesquisar por coleções do nível superior, somente coleções individ
 
 No console Coleções, clique em uma coleção para abri-la.
 
-Em uma coleção, a pesquisa do AEM Asset está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
+Em uma coleção, a pesquisa do Experience Manager é restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
 
 ## Editar configurações de coleção {#editing-collection-settings}
 
