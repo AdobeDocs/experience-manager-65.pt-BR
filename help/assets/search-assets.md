@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '5869'
+source-wordcount: '5863'
 ht-degree: 6%
 
 ---
@@ -162,7 +162,7 @@ Você pode pesquisar ativos com base nos valores exatos de campos de metadados e
 | Criador | criador:John |
 | Local | local:NA |
 | Descrição | descrição:&quot;Imagem de amostra&quot; |
-| Ferramenta Criador | criatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Ferramenta Criador | criatortool:&quot;Adobe Photoshop CC 2020&quot; |
 | Proprietário de direitos autorais | copyrights towner:&quot;Adobe Systems&quot; |
 | Contribuinte | colaborador:John |
 | Termos de Uso  | usageterms:&quot;CopyRights Reserved&quot; |
@@ -200,7 +200,7 @@ Estes são alguns exemplos de formatos de pesquisa para query complexos:
 
 ### Pesquisar ativos no painel Adobe Asset Link {#aal}
 
-Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado em [!DNL Experience Manager Assets], sem sair dos aplicativos compatíveis da Adobe Creative Cloud. Os profissionais de criação podem navegar, pesquisar, fazer check-out e fazer check-in de ativos sem problemas usando o painel no aplicativo nos aplicativos da Creative Cloud: Photoshop, Illustrator e InDesign. O Link de ativo também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição da pesquisa visual são capacitados pelos algoritmos de aprendizado de máquina do Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
+Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado em [!DNL Experience Manager Assets], sem sair dos aplicativos compatíveis da Adobe Creative Cloud. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. O Link de ativo também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição da pesquisa visual são capacitados pelos algoritmos de aprendizado de máquina do Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
 
 ### Pesquisar ativos no aplicativo [!DNL Experience Manager] de desktop {#desktopapp}
 
