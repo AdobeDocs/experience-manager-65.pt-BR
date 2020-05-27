@@ -3,9 +3,9 @@ title: Práticas recomendadas de integração [!DNL Adobe Experience Manager] e 
 description: Práticas recomendadas para [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integrar-se para dinamizar os workflows de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3247'
 ht-degree: 16%
 
 ---
@@ -35,7 +35,7 @@ Leia para saber quais integrações escolher entre desktop e DAM de nível corpo
 
 | Proposta de valor para as pessoas envolvidas | Oferta da Adobe | Superfícies envolvidas |
 |---|---|---|
-| Os usuários da Creative Cloud descobrem ativos de [!DNL Experience Manager], abrem e usam, editam e carregam alterações para [!DNL Experience Manager]e também carregam novos arquivos [!DNL Experience Manager], sem sair dos [!DNL Creative Cloud] aplicativos. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator e InDesign |
+| Os usuários da Creative Cloud descobrem ativos de [!DNL Experience Manager], abrem e usam, editam e carregam alterações para [!DNL Experience Manager]e também carregam novos arquivos [!DNL Experience Manager], sem sair dos [!DNL Creative Cloud] aplicativos. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign]. |
 | Os usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações para [!DNL Experience Manager]e o upload de novos arquivos para o ambiente [!DNL Experience Manager] de desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo de desktop nativo, incluindo os que não são da Adobe. | [Aplicativo de desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] aplicativo desktop no desktop Win e Mac |
 | Os profissionais de marketing e os usuários empresariais descobrem, pré-visualizações, licenciam e salvam e gerenciam os [!DNL Adobe Stock] ativos de dentro [!DNL Experience Manager]. Os ativos licenciados e salvos fornecem metadados selecionados [!DNL Adobe Stock] para melhor governança. | [Integração do Experience Manager e do Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface da Web |
 
@@ -45,7 +45,7 @@ Este artigo foca principalmente nos dois primeiros aspectos das necessidades de 
 
 ### Mapeamento de casos de uso e soluções da Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
-| Caso de uso   | [!DNL Adobe Asset Link] | [!DNL Experience Manager] aplicativo para desktop | Observações / Outras soluções |
+| Caso de uso    | [!DNL Adobe Asset Link] | [!DNL Experience Manager] aplicativo para desktop | Observações / Outras soluções |
 |---|---|---|---|
 | Discover - procurar pastas DAM | Sim | [!DNL Experience Manager] Interface da Web e ações da área de trabalho |  |
 | Discover - acessar coleções de DAM | Sim | [!DNL Experience Manager] Interface da Web e ações da área de trabalho |  |
@@ -177,11 +177,11 @@ Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 
 #### Trabalhos em andamento em ativos de [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
-Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas [!DNL Experience Manager] como alterações. Isso acelera o trabalho de um usuário do desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
+Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas [!DNL Experience Manager] como alterações. Isso acelera o trabalho de um usuário de desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
 
 O Adobe Asset Link oferta um bom suporte para este caso de uso:
 
-* Quando os usuários do Photoshop, InDesign ou Illustrator pretendem editar um arquivo, eles executam uma operação de Check-out no ativo em questão
+* Quando os usuários entram, [!DNL Photoshop]ou [!DNL InDesign][!DNL Illustrator] pretendem editar um arquivo, eles executam uma operação de Check-out no ativo em questão
 * O ativo é baixado em segundo plano, colocado em uma conta da Creative Cloud de usuários sincronizada ao disco pelo aplicativo de desktop da Creative Cloud e o sinalizador de check-out é alternado [!DNL Experience Manager] no ativo para minimizar conflitos de edição
 * A partir daí, o usuário trabalha em um arquivo armazenado localmente no local sincronizado e pode continuar trabalhando e salvando as alterações necessárias a qualquer frequência necessária
 * Além disso, como o ativo está na conta da Creative Cloud, ele também está disponível em outros dispositivos que o usuário pode ter (por exemplo, pode ser aberto ou editado em um aplicativo dedicado da Creative Cloud para dispositivos móveis) e pode ser compartilhado com outros usuários da Creative Cloud para fins de colaboração.
