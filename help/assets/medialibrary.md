@@ -1,78 +1,81 @@
 ---
-title: Comparar ativos AEM e oferta da biblioteca de mídia AEM
-description: Compare as ofertas dos ativos AEM e da biblioteca de mídia do AEM e conheça as diferenças.
+title: Compare os ativos Adobe Experience Manager e a oferta de Biblioteca de mídia.
+description: Compare os ativos Experience Manager e as ofertas da Biblioteca de mídia e conheça as diferenças.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 2%
 
 ---
 
 
-# AEM Assets versus AEM Media Library {#aem-assets-vs-aem-medialibrary}
+# Ativos do Experience Manager versus biblioteca de mídia do Experience Manager {#aem-assets-vs-aem-medialibrary}
 
-Os ativos Adobe Experience Manager (AEM) são parte integrante da plataforma AEM. Essa integração suave é considerada uma grande vantagem do AEM e garante consistência na gestão de conteúdo e alta produtividade para os autores de conteúdo.
+Os ativos Adobe Experience Manager são parte integrante da plataforma Experience Manager. Essa integração suave é considerada uma grande vantagem do Experience Manager e garante consistência na gestão de conteúdo e alta produtividade para os autores de conteúdo.
 
 ## Perguntas frequentes {#frequently-asked-questions}
 
-### O que é o AEM Assets? {#what-is-aem-assets}
+### O que é o Assets? {#what-is-aem-assets}
 
-Os ativos AEM são um aplicativo da plataforma AEM que permite que nossos clientes gerenciem seus ativos digitais (imagens, vídeos, documentos e clipes de áudio) em um repositório baseado na Web. Os ativos AEM incluem suporte a metadados, execuções, o Localizador de gerenciamento de ativos digitais e a interface de usuário de administração do AEM Assets.
+O Assets é um recurso do Experience Manager que permite que os usuários gerenciem seus ativos digitais (imagens, vídeos, documentos e clipes de áudio) em um repositório baseado na Web. Os ativos incluem suporte a metadados, execuções, o localizador e a interface de administração.
 
-### O que é a biblioteca de mídia do AEM? {#what-is-the-aem-media-library}
+### O que é a biblioteca de mídia do Experience Manager? {#what-is-the-aem-media-library}
 
-A Biblioteca de mídia do AEM é uma parte designada do repositório de conteúdo do WCM do AEM, onde as imagens e outros recursos compartilhados são armazenados. A Biblioteca de mídia usa os recursos de Gerenciamento de ativos digitais do WCM AEM.
+A biblioteca de mídia do Experience Manager é uma parte designada do repositório de conteúdo WCM do Experience Manager, onde as imagens e outros recursos compartilhados são armazenados. A Biblioteca de mídia fornece recursos básicos de gerenciamento de ativos digitais ao WCM.
 
-### O que obtenho dos ativos AEM que não fazem parte do WCM AEM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+### O que obtenho dos Ativos que não fazem parte do WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
 
-Os recursos exclusivos que estão disponíveis somente para clientes do AEM Assets são:
+Os recursos exclusivos que estão disponíveis somente para clientes do Assets são:
 
 * a capacidade de extrair e editar metadados diferentes de título, tags e descrição.
-* o Admin do AEM Assets, disponível na tela de boas-vindas, selecionando o segundo botão ao lado do siteadmin.
-* todas as etapas do fluxo de trabalho relacionadas ao Gerenciamento de ativos digitais, a ingestão de ativos AEM, exclusão de ativos AEM, tratamento de subativos do AEM Assets, extração de metadados do AEM Assets.
-* bibliotecas incluindo o espaço do pacote &quot;dam&quot; im.
+* o Administrador de ativos, disponível na tela de boas-vindas.
+* todas as etapas do fluxo de trabalho relacionadas ao Gerenciamento de ativos digitais, como ingestão, exclusão de ativos, manipulação de subativos, extração de metadados.
+* bibliotecas incluindo `dam` no espaço do pacote.
 
-O uso desses recursos requer uma licença válida dos ativos AEM.
+O uso desses recursos requer uma licença válida do Assets.
 
-### Os ativos AEM estão disponíveis como um pacote separado? {#is-aem-assets-available-as-a-separate-package}
+### Os ativos estão disponíveis como um pacote separado? {#is-aem-assets-available-as-a-separate-package}
 
-Não. Para facilitar a instalação e a implantação, todos os aplicativos e complementos AEM são fornecidos em um único pacote com todas as funcionalidades incluídas. Isso não implica que você tenha permissão para usar todos os recursos do pacote.
+Não. Para facilitar a instalação e a implantação, todos os aplicativos e complementos do Experience Manager são fornecidos em um único pacote com todas as funcionalidades incluídas. Isso não implica que você tenha permissão para usar todos os recursos do pacote.
 
-### Quero editar metadados de ativos digitais. Preciso dos ativos AEM? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+### Quero editar metadados de ativos digitais. Preciso de ativos? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
-Se você estiver planejando editar metadados diferentes de título, descrição e tags, é necessário licenciar os ativos AEM.
+Se você estiver planejando editar metadados diferentes de título, descrição e tags, é necessário licenciar Ativos.
 
-### Quero usar o predicado de categoria no meu site. Preciso dos ativos AEM? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
+### Quero usar o predicado de categoria no meu site. Preciso de ativos? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Sim, o predicado de categoria faz parte dos ativos AEM e requer uma licença dos ativos AEM.
+Sim, o predicado de categoria é parte do Assets e requer uma licença do Assets.
 
-### Desejo redimensionar automaticamente as imagens após a importação. Preciso dos ativos AEM? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+### Desejo redimensionar automaticamente as imagens após a importação. Preciso de ativos? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Não. A redimensionamento e a transformação automática de imagens estáticas por fluxo de trabalho, bem como a capacidade de gerenciar execuções, fazem parte da Biblioteca de mídia do AEM. Esses recursos não exigem uma licença do AEM Assets.
+Não. A redimensionamento e a transformação automática, orientada por fluxo de trabalho, de imagens estáticas, bem como a capacidade de gerenciar execuções fazem parte da Biblioteca de mídia do Experience Manager. Esses recursos não exigem uma licença do Assets.
 
-### Desejo redimensionar imagens usando um componente de imagem personalizado. Preciso dos ativos AEM? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+### Desejo redimensionar imagens usando um componente de imagem personalizado. Preciso de ativos? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 
-O componente de imagem faz parte do AEM WCM. A biblioteca de gráficos que está sendo usada pelo componente de imagem (mas também pelos ativos AEM) faz parte da plataforma AEM e não exige uma licença dos ativos AEM.
+O componente de imagem faz parte do WCM. A biblioteca de gráficos que está sendo usada pelo componente de imagem (mas também pelos Ativos) faz parte da plataforma Experience Manager e não exige uma licença dos Ativos.
 
-### Como impedir que meus usuários usem ativos AEM se eu não licenciei ativos AEM? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+### Como posso impedir que meus usuários usem os Ativos se eu não tiver licenciado os Ativos? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Você pode remover do AEM todos os workflows, componentes, taxonomias, opções e o administrador do AEM Assets específicos. Isso impede que os usuários usem acidentalmente os recursos do AEM Assets que você não licenciou.
+Você pode remover todos os workflows, componentes, taxonomias, opções e o administrador de Ativos específicos do Experience Manager. Isso evita que os usuários usem acidentalmente os recursos do Assets que você não licenciou.
 
-### Quero adicionar imagens a uma página e cortar e redimensionar essas imagens. Preciso dos ativos AEM? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+### Quero adicionar imagens a uma página e cortar e redimensionar essas imagens. Preciso de ativos? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
-Para esse caso de uso, não é necessário comprar ativos AEM, nem mesmo o uso da Biblioteca de mídia é necessário para usar imagens em um site, já que o componente de imagem inteligente permite o upload de imagens diretamente na página.
+Nesse caso de uso, não é necessário comprar Ativos, nem mesmo o uso da Biblioteca de mídia é necessário para usar imagens em um site, já que o componente de imagem inteligente permite o upload de imagens diretamente na página.
 
-### Uma lista detalhada dos recursos disponíveis nos ativos AEM vs Biblioteca de mídia {#listoffeatures}
+### Uma lista detalhada dos recursos disponíveis em Ativos vs Biblioteca de mídia {#listoffeatures}
 
-**Ativos AEM**
+**Experience Manager Assets**
 
 * Coleções e lightbox
 * Propriedades e gerenciamento de metadados avançados
 * Adobe Asset Link (conectar-se à Creative Cloud para empresas)
-* Aplicativo de desktop do AEM
+* Aplicativo de desktop do Experience Manager
 * Processamento de perfis
-* Integração do InDesign Server
+* [!DNL Adobe InDesign Server] integração
 * Modelos de ativos e estrutura de produtores de catálogos
-* Integração entre Adobe Photoshop, Adobe Illustrator e Adobe InDesign
+* [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign] integração
 * Gerenciamento de ativos multilíngues
 * Integração de PIM
 * Gerenciamento de direitos
