@@ -3,7 +3,7 @@ title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Mana
 description: Saiba mais sobre os tipos de metadados e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] como tornar possível organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Understand metadata handling in Experience Manager {#metadata-possibilities-with-aem}
 
-Describe the journey of an assets' metadata. What all happens to metadata when an asset is added to AEM.
+Describe the journey of an assets' metadata. What all happens to metadata when an asset is added to Experience Manager.
 
 ## Add metadata to your digital assets {#add-metadata}
 
@@ -140,7 +140,7 @@ Há várias maneiras de incorporar metadados em arquivos. Há suporte para uma s
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por todos [!DNL Experience Manager Assets] o gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e do [!DNL Experience Manager Assets] têm uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por todos [!DNL Experience Manager Assets] o gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e do [!DNL Experience Manager Assets] têm uma plataforma poderosa para desenvolver. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
