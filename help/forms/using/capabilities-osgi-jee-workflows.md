@@ -9,9 +9,9 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+source-git-commit: 7cc206dc95e6975f61ea9343dea67fa2681a9ae1
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '868'
 ht-degree: 20%
 
 ---
@@ -125,7 +125,7 @@ Os Workflows AEM centrados em forma no OSGi e nos Workflows AEM Forms JEE (AEM F
    <td>Compatível</td>
   </tr>
   <tr>
-   <td>(Obsoleto) Assinatura de script</td>
+   <td>Rabiscar a assinatura</td>
    <td>Compatível</td>
    <td>Compatível<br /> </td>
   </tr>
