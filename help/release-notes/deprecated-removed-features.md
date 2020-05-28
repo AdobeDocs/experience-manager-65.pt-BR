@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
+source-git-commit: 49209cb64c829fde396e87ca4b2e326ecf1dd941
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 58%
 
 ---
 
@@ -90,23 +93,6 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
    <td>A Adobe planeja fornecer uma implementação de backup alternativa do caso de uso em versões futuras.</td>
   </tr>
   <tr>
-   <td>Componentes (AEM Forms)</td>
-   <td><p>A etapa de assinatura permite que os usuários verifiquem e assinem um formulário adaptável. Em versões anteriores, a etapa de assinatura podia usar os componentes Assinatura do Adobe Sign e da Assinatura de script como campos de assinatura. No AEM 6.5 Forms, a experiência de assinatura baseada em Assinatura de script da Etapa de assinatura está obsoleta.</p> </td>
-   <td>
-    <ul>
-     <li>Se você tiver realizado uma instalação nova:
-      <ul>
-       <li>Use a experiência de assinatura baseada no Adobe Sign em uma etapa de assinatura em um formulário adaptável.</li>
-       <li>Use o componente de Assinatura de script independente em um formulário adaptável, comunicação interativa e formulários HTML5.</li>
-      </ul> </li>
-     <li>Se você tiver atualizado de uma versão anterior para o AEM 6.5 Forms:<br />
-      <ul>
-       <li>Continue usando a experiência de assinatura baseada em assinatura de script da Etapa de assinatura com formulários que já usam o recurso.<br /> </li>
-       <li>Use o componente de Assinatura de script independente ou a experiência de assinatura baseada no Adobe Sign em uma etapa de assinatura ao criar um formulário. </li>
-      </ul> </li>
-    </ul> <p> </p> <p> </p> </td>
-  </tr>
-  <tr>
    <td>Foundation</td>
    <td><p>Estrutura de descarregamento do Granite</p> <p>A Adobe não planeja fazer aprimoramentos adicionais à estrutura de descarregamento introduzida na versão 5.6.1 para externalizar processamento do ativo. </p> </td>
    <td>A Adobe está trabalhando em uma estrutura de descarregamento nativa de nuvem de última geração.</td>
@@ -165,7 +151,7 @@ Esta seção lista recursos e recursos que foram removidos do AEM 6.5. As versõ
 
 | Área | Recurso | Substituição |
 |--- |--- |--- |
-| Mapa de Atividades do Analytics | A versão do Mapa de Atividades incluída no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o plug-in [Activity Map fornecido pelo Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Analytics Activity Map | A versão do Activity Map está inclusa no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o plug-in [Activity Map fornecido pelo Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integrações | A integração do ExactTarget foi removida da distribuição padrão (Início rápido) e não está mais disponível. | Nenhuma substituição |
 | Integrações | A integração da API do Salesforce Force foi removida da distribuição padrão (Quickstart) e agora é um pacote adicional de instalação do PackageShare. | O recurso ainda está disponível. |
 | Forms | O suporte para o serviço Adobe Central Migration Bridge foi removido, uma vez que o produto Adobe Central não é mais compatível. | Nenhuma substituição |
