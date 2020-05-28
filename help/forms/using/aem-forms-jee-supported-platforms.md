@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6b4a32b320d53c41ebf9615895dbf17ab722f19
+source-git-commit: 18345e6519169cfceb01ab56821b596e284f3303
+workflow-type: tm+mt
+source-wordcount: '3202'
+ht-degree: 0%
 
 ---
 
@@ -114,10 +117,8 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 
 >[!NOTE]
 >
->* O AEM Forms em JEE suporta apenas JVMs de 64 bits em ambientes de produção.
 >* É recomendável rastrear os Boletins de segurança do fornecedor Java para garantir a segurança dos ambientes de produção e instalar as atualizações mais recentes do Java.
->
-
+>* O AEM Forms em JEE suporta apenas JVMs de 64 bits em ambientes de produção.
 
 
 ### Bancos de dados e persistência de CRX {#databases-and-crx-persistence}
@@ -315,7 +316,7 @@ Além disso, considere os seguintes pontos ao escolher o software para o Adobe A
 * As instalações baseadas em cluster não suportam persistência de TarMK. Para obter informações sobre a persistência com suporte, consulte [Escolhendo um tipo de persistência para uma instalação](/help/forms/using/choosing-persistence-type-for-aem-forms.md)do AEM Forms.
 * O AEM Forms no JEE é compatível com vários softwares de terceiros de acordo com nossa Política [de suporte a software de](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p)terceiros.
 * O AEM Forms no JEE suporta plataformas conforme o suporte fornecido por fornecedores terceirizados. Algumas combinações podem não ser permitidas por fornecedores terceirizados. Por exemplo, muitos fornecedores não certificaram seus servidores de aplicativos com a Oracle. Como resultado, o AEM Forms no JEE também não é compatível com essas combinações. Para garantir que você escolha as versões de software suportadas, verifique também a matriz de suporte dos fornecedores terceirizados.
-* O AEM Forms no JEE não oferece suporte ao TarMK Cold Standby.
+* O AEM Forms em JEE não oferece suporte ao TarMK Cold Standby.
 * O AEM Forms no JEE não oferece suporte a clustering vertical.
 * O AEM Forms em JEE não oferece suporte ao banco de dados MySQL em um ambiente clusterizado.
 * Para obter a lista de plataformas removidas ou atualizadas, consulte [documento Resumo](../../forms/using/whats-new.md) dos novos recursos do AEM 6.5 Forms.
@@ -441,7 +442,7 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. Veja a seguir 
 >* O Gerador de PDF não é compatível com o Microsoft Office 365.
 >* As conversões do Gerador de PDF para OpenOffice são suportadas apenas no Windows e no Linux.
 >* Os recursos OCR PDF, Otimizar PDF e Exportar PDF são suportados apenas no Windows.
->* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do Gerador de PDF. A versão agrupada só deve ser acessada de forma programática com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação (serviços[no local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou serviços [](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)gerenciados)&quot;
+>* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do Gerador de PDF. A versão agrupada só deve ser acessada de forma programática com o AEM Forms, durante o período da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação (serviços[no local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou serviços [](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)gerenciados)&quot;
    >
    >
 * O serviço Gerador de PDF não é compatível com o Microsoft Windows 10.
@@ -598,7 +599,7 @@ Para obter requisitos adicionais, consulte:
   </tr>
   <tr>
    <td>Google Chrome e Firefox no MAC OS X</td>
-   <td>A: Suportado<br /><br /> </td>
+   <td>A: Suportado<br /> <br /> </td>
    <td>Todas as atualizações</td>
   </tr>
   <tr>
@@ -607,7 +608,7 @@ Para obter requisitos adicionais, consulte:
    <td>Todas as atualizações</td>
   </tr>
   <tr>
-   <td>Apple Safari 12.x<br /><br /> </td>
+   <td>Apple Safari 12.x<br /> <br /> </td>
    <td>A: Suportado</td>
    <td>Todas as atualizações</td>
   </tr>
