@@ -10,27 +10,30 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '3587'
+ht-degree: 1%
 
 ---
 
 
 # Ampliação da funcionalidade do fluxo de trabalho{#extending-workflow-functionality}
 
-Este tópico descreve como desenvolver componentes de etapa personalizados para seus fluxos de trabalho e, em seguida, como interagir programaticamente com fluxos de trabalho.
+Este tópico descreve como desenvolver componentes de etapa personalizados para seus workflows e, em seguida, como interagir programaticamente com workflows.
 
 A criação de uma etapa de fluxo de trabalho personalizado envolve as seguintes atividades:
 
 * Desenvolva o componente de etapa do fluxo de trabalho.
 * Implemente a funcionalidade Step como um serviço OSGi ou um script ECMA.
 
-Você também pode [interagir com os fluxos de trabalho de seus programas e scripts](/help/sites-developing/workflows-program-interaction.md).
+Você também pode [interagir com seus workflows de seus programas e scripts](/help/sites-developing/workflows-program-interaction.md).
 
 ## Componentes da Etapa do Fluxo de Trabalho - Noções básicas {#workflow-step-components-the-basics}
 
 Um componente de etapa de fluxo de trabalho define a aparência e o comportamento da etapa ao criar modelos de fluxo de trabalho:
 
-* A categoria e o nome da etapa no sidekick do fluxo de trabalho.
+* O nome da categoria e da etapa no sidekick do fluxo de trabalho.
 * A aparência da etapa em modelos de fluxo de trabalho.
 * A caixa de diálogo de edição para configurar as propriedades do componente.
 * O serviço ou script executado em tempo de execução.
@@ -234,7 +237,7 @@ Execute o seguinte procedimento em seu novo componente (consulte [Criação de c
 
 ### Configuração do comportamento de tempo de execução da etapa do fluxo de trabalho {#configuring-the-workflow-step-runtime-behavior}
 
-Abaixo do `cq:Component` nó, adicione um `cq:EditConfig` nó. Abaixo, você pode adicionar um `nt:unstructured` nó (deve ser nomeado `cq:formParameters`) e adicionar as seguintes propriedades a esse nó:
+Abaixo do `cq:Component` nó, adicione um `cq:EditConfig` nó. Abaixo, você pode adicionar um `nt:unstructured` nó (deve ser nomeado `cq:formParameters`) e, nesse nó, adicionar as seguintes propriedades:
 
 * Nome: `PROCESS_AUTO_ADVANCE`
 
@@ -259,7 +262,7 @@ Os metadados do fluxo de trabalho são armazenados em um [`MetaDataMap`](#metada
 
 #### Java {#java}
 
-O método execute da `WorkflowProcess` implementação é transmitido ao `WorkItem` objeto. Use esse objeto para obter o `WorkflowData` objeto para a instância de fluxo de trabalho atual. O exemplo a seguir adiciona um item ao `MetaDataMap` objeto de fluxo de trabalho e registra cada item. O item (&quot;mykey&quot;, &quot;My Step Value&quot;) está disponível para as etapas subsequentes no fluxo de trabalho.
+O método execute da `WorkflowProcess` implementação é transmitido ao `WorkItem` objeto. Use esse objeto para obter o `WorkflowData` objeto para a instância de fluxo de trabalho atual. O exemplo a seguir adiciona um item ao `MetaDataMap` objeto de fluxo de trabalho e, em seguida, registra cada item. O item (&quot;mykey&quot;, &quot;My Step Value&quot;) está disponível para as etapas subsequentes no fluxo de trabalho.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -315,7 +318,7 @@ O fluxo de trabalho `MetaDataMap` está disponível para implementações de pro
 
 ### Exemplo: Recuperando os Argumentos do Componente Etapa do Processo {#example-retrieving-the-arguments-of-the-process-step-component}
 
-A caixa de diálogo de edição do componente Etapa **do** processo inclui a propriedade **Argumentos** . O valor da propriedade **Arguments** é armazenado nos metadados de fluxo de trabalho e está associado à `PROCESS_ARGS` chave.
+A caixa de diálogo de edição do componente Etapa **do** processo inclui a propriedade **Argumentos** . O valor da propriedade **Arguments** é armazenado nos metadados do fluxo de trabalho e está associado à `PROCESS_ARGS` chave.
 
 No diagrama a seguir, o valor da propriedade **Arguments** é `argument1, argument2`:
 
@@ -378,7 +381,7 @@ Quando as etapas do processo são iniciadas durante o processo de um fluxo de tr
 
 Para definir uma etapa do processo como um componente de serviço OSGI (pacote Java):
 
-1. Crie o pacote e implante-o no contêiner OSGI. Consulte a documentação sobre como criar um pacote com o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou o [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
+1. Crie o pacote e implante-o no container OSGI. Consulte a documentação sobre como criar um pacote com o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou o [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
@@ -556,7 +559,7 @@ Para definir uma etapa do participante como um componente de serviço OSGI (clas
 
 1. O componente OSGI precisa implementar a `ParticipantStepChooser` interface com seu `getParticipant()` método. Consulte o código de exemplo abaixo.
 
-   Crie o pacote e implante-o no contêiner OSGI.
+   Crie o pacote e implante-o no container OSGI.
 
 1. Adicione a propriedade SCR `chooser.label` e defina o valor conforme necessário. Esse será o nome como o selecionador de participantes será listado, usando o componente Etapa **** dinâmica do participante. Consulte o exemplo:
 
@@ -778,7 +781,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
 ## Exemplo: Criando uma etapa personalizada {#example-creating-a-custom-step}
 
-Uma maneira fácil de começar a criar sua própria etapa personalizada é copiar uma etapa existente de:
+Uma maneira fácil de start para criar sua própria etapa personalizada é copiar uma etapa existente de:
 
 `/libs/cq/workflow/components/model`
 
