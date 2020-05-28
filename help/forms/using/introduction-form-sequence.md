@@ -10,7 +10,10 @@ topic-tags: author
 discoiquuid: 0f335ea0-504f-4cc0-b97b-c3fc715bcc2e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 0%
 
 ---
 
@@ -37,8 +40,8 @@ Caso seja necessário criar uma sequência para preencher, verificar, assinar e 
 
    * **Assinar** eletronicamente: Ele contém o componente **Sign** que pode ser usado em um formulário adaptável baseado em XFA. ele fornece os seguintes serviços de assinatura:
 
-      * Serviços eSign da Adobe Document Cloud
-      * (Obsoleto) Assinatura do rabisco
+      * Serviços eSign da Adobe Documento Cloud
+      * Assinatura
    * **Confirmação**: Ele contém o componente **Resumo** que exibe uma mensagem confirmando o envio do formulário depois que um usuário assina o formulário e atinge a etapa Confirmação (Resumo) na sequência. Os autores podem configurar o texto do componente Resumo, mostrar uma mensagem de agradecimento, mostrar um link para o PDF gerado e assim por diante.
 
 
