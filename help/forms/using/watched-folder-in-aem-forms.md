@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '7153'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,8 @@ Um administrador pode configurar uma pasta de rede, conhecida como Pasta assisti
 
 Você pode usar um dos seguintes métodos para criar uma Pasta assistida no sistema de arquivos:
 
-* Ao configurar as propriedades de um nó de configuração de Pasta assistida, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta assistida a ser criada, como mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`A `MyWatchedFolder`pasta não existe, o AEM Forms tenta criar a pasta no caminho especificado.
+* Ao configurar as propriedades de um nó de configuração de Pasta assistida, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta assistida a ser criada, como mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`
+A `MyWatchedFolder`pasta não existe, o AEM Forms tenta criar a pasta no caminho especificado.
 
 * Crie uma pasta no sistema de arquivos antes de configurar um ponto final de Pasta assistida e forneça o caminho completo na propriedade folderPath. Para obter informações detalhadas sobre a propriedade folderPath, consulte Propriedades [da pasta](#watchedfolderproperties)assistida.
 
@@ -214,7 +218,7 @@ Um exemplo de nó de configuração de pasta de observação com propriedades ob
 
 Você pode start um fluxo de trabalho, serviço ou script para processar os documentos colocados em uma pasta monitorada.
 
-### Uso de um serviço para processar arquivos de uma pasta assistida {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Uso de um serviço para processar arquivos de uma pasta assistida   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Um Serviço é uma implementação personalizada da `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interface. Está registrado no OSGi junto com algumas propriedades personalizadas. As propriedades personalizadas da implementação tornam-na única e ajudam a identificar a implementação.
 
@@ -633,7 +637,7 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
 ### Criar um fluxo de trabalho {#create-a-workflow}
 
 1. Abra a interface do usuário do fluxo de trabalho do AEM em uma janela do navegador.
-https://[do servidor]:&#39;porta&#39;/worklow
+https://[server]:&#39;port&#39;/workflow
 
 1. Na visualização Modelos, clique em **Novo**. Na caixa de diálogo Novo fluxo de trabalho, especifique **Título** e clique em **OK**.
 
