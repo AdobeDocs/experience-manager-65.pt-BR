@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 44dbabeeea4e4e8d17cc69a2d8ea791c98be2bd2
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 7%
 
 ---
 
@@ -63,8 +66,12 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 **Para configurar o AEM**:
 
+>[!NOTE]
+>
+>Essas etapas só são necessárias se for necessária uma personalização adicional dos codecs.
+
 1. Open [!UICONTROL CRXDE Lite] in your web browser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Selecione o `/libs/settings/dam/video/format_aac/jcr:content` nó e verifique se as propriedades do nó são as seguintes:
+2. Selecione o `/libs/settings/dam/video/format_aac/jcr:content` nó e verifique se as propriedades do nó são as seguintes:
 
    * audioCodec:
 
@@ -78,13 +85,13 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
        -flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8
       ```
 
-1. Para personalizar a configuração, crie uma sobreposição no `/apps/settings/` nó e mova a mesma estrutura sob o `/conf/global/settings/` nó. Não pode ser editado no `/libs` nó. Por exemplo, para sobrepor o caminho `/libs/settings/dam/video/fullhd-bp`, crie-o em `/conf/global/settings/dam/video/fullhd-bp`.
+3. Para personalizar a configuração, crie uma sobreposição no `/apps/settings/` nó e mova a mesma estrutura sob o `/conf/global/settings/` nó. Não pode ser editado no `/libs` nó. Por exemplo, para sobrepor o caminho `/libs/settings/dam/video/fullhd-bp`, crie-o em `/conf/global/settings/dam/video/fullhd-bp`.
 
    >[!NOTE]
    >
    >Sobreponha e edite todo o nó do perfil e não apenas a propriedade que precisa de modificação. Tais recursos não são resolvidos através da SlingResourceFusão.
 
-1. If you changed either of the properties, click **[!UICONTROL Save All]**.
+4. If you changed either of the properties, click **[!UICONTROL Save All]**.
 
 >[!NOTE]
 >
