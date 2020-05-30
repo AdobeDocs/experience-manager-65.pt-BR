@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
 workflow-type: tm+mt
-source-wordcount: '9298'
+source-wordcount: '9304'
 ht-degree: 4%
 
 ---
@@ -301,11 +301,11 @@ Consulte [Configuração de predefinições de conjuntos de lotes para gerar aut
 
 ### Carregamentos em fluxo {#streamed-uploads}
 
-Se você fizer upload de muitos ativos para [!DNL Experience Manager], as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até fazer com que algumas tarefas de upload fiquem esgotadas. [!DNL Experience Manager Assets] oferece suporte ao carregamento simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado em [!DNL Assets].
+Se você fizer upload de muitos ativos para o Adobe Experience Manager, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode fazer com que algumas tarefas de upload fiquem esgotadas. [!DNL Experience Manager Assets] oferece suporte ao carregamento simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado em [!DNL Assets].
 
 >[!NOTE]
 >
->O carregamento de fluxo é desabilitado para [!DNL Experience Manager] execução no servidor JEE com a versão servlet-api inferior a 3.1.
+>O carregamento de fluxo é desativado para o Adobe Experience Manager em execução no servidor JEE com a versão servlet-api inferior a 3.1.
 
 ### Extrair arquivo ZIP contendo ativos {#extractzip}
 
@@ -573,7 +573,7 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 >
 >Para obter mais informações específicas do Dynamic Media, consulte [Publicação de ativos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
-1. Navegue até o local do(s) ativo(s)/pasta que deseja publicar
+1. Navegue até o local do(s) ativo(s)/pasta que deseja publicar.
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Se o ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências que não foram publicadas ou modificadas desde a última vez que foram publicadas/não foram publicadas são exibidas. Escolha as referências que deseja publicar.
