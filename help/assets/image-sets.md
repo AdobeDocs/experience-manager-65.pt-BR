@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 45de0f9d9570d64cacf7009d64072858012869a0
+source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+workflow-type: tm+mt
+source-wordcount: '2078'
+ht-degree: 19%
 
 ---
 
@@ -48,7 +51,7 @@ Para começar a trabalhar rapidamente:
 
    Para criar um Conjunto de imagens em Ativos, toque ou clique em **[!UICONTROL Criar > Conjuntos]** de imagens. Em seguida, adicione imagens e clique em **[!UICONTROL Salvar]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
    >Os conjuntos de lotes são criados pelo IPS (Image Production System) como parte da ingestão de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.
@@ -70,7 +73,7 @@ Para começar a trabalhar rapidamente:
 
 1. [Publicar conjuntos de imagens.](/help/assets/publishing-dynamicmedia-assets.md)
 
-   A publicação de um conjunto de imagens ativa o URL e a string Incorporada. Além disso, você deve [publicar qualquer predefinição](/help/assets/managing-viewer-presets.md) do visualizador personalizado que tenha criado. As predefinições do visualizador predefinidas já estão publicadas.
+   A publicação de um conjunto de imagens ativa o URL e o código incorporado. Além disso, você deve [publicar qualquer predefinição](/help/assets/managing-viewer-presets.md) do visualizador personalizado que tenha criado. As predefinições do visualizador predefinidas já estão publicadas.
 
 1. [Vincule URLs à sua Aplicação web](/help/assets/linking-urls-to-yourwebapplication.md) ou [Incorpore o visualizador](/help/assets/embed-code.md)de vídeo ou imagem.
 
