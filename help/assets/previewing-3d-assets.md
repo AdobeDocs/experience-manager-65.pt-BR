@@ -4,9 +4,9 @@ description: Saiba como pré-visualização ativos 3D
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '564'
 ht-degree: 15%
 
 ---
@@ -18,7 +18,7 @@ O Adobe Experience Manager oferece suporte ao carregamento, delivery e pré-visu
 
  O visualizador 3D interativo está disponível na página de detalhes do ativo no AEM. O visualizador inclui, entre outras coisas, uma coleção de controles de câmera interativos que permitem girar, aplicar zoom e deslocar o ativo 3D.
 
-Consulte também [Trabalhar com ativos 3D no Dynamic Media](/help/assets/assets-3d.md).
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
 ## Formatos suportados para pré-visualização 3D no AEM {#supported-3d-previewing-assets}
 
