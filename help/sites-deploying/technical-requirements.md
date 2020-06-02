@@ -11,7 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+workflow-type: tm+mt
+source-wordcount: '3118'
+ht-degree: 1%
 
 ---
 
@@ -100,7 +103,7 @@ O Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
    <td>Nível de suporte<br /> </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 12 JDK '\[1]'</td>
+   <td>JDK do Oracle Java SE 12 [1]</td>
    <td>Z: Não suportado </td>
   </tr>
   <tr>
@@ -108,23 +111,23 @@ O Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
    <td>A: Suportado</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 10 JDK '\[1]'</td>
+   <td>JDK do Oracle Java SE 10 [1]</td>
    <td>Z: Não suportado </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 9 JDK '\[1]'</td>
+   <td>JDK do Oracle Java SE 9 [1]</td>
    <td>Z: Não suportado</td>
   </tr>
   <tr>
    <td>Oracle Java SE 8 JDK - 64 bits</td>
-   <td>A: Suportado '\[3]'<br /> </td>
+   <td>A: Suportado [3]</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - build 2.9, JRE 1.8.0 '\[2]'</td>
+   <td>IBM J9 VM - compilação 2.9, JRE 1.8.0 [2]</td>
    <td>A: Suportado</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - build 2.8, JRE 1.8.0 '\[2]'</td>
+   <td>IBM J9 VM - compilação 2.8, JRE 1.8.0 [2]</td>
    <td>A: Suportado</td>
   </tr>
  </tbody>
@@ -141,15 +144,15 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 
 | **Plataforma** | **Descrição** | **Nível de suporte** |
 |---|---|---|
-| **Sistema de arquivos com arquivos TAR`\[1]`** | Repositório | A: Suportado |
-| **Sistema de arquivos com o Datastore`\[1]`** | Binários | A: Suportado |
-| Armazenar binários em arquivos TAR no sistema de arquivos `\[1]` | Binários | Z: Não suportado para produção |
+| **Sistema de arquivos com arquivos TAR[1 ]** | Repositório | A: Suportado |
+| **Sistema de arquivos com o Datastore[1 ]** | Binários | A: Suportado |
+| Armazenar binários em arquivos TAR no sistema de arquivos [1] | Binários | Z: Não suportado para produção |
 | Amazon S3 | Binários | A: Suportado |
 | Armazenamento Blob do Microsoft Azure | Binários | A: Suportado |
 | MongoDB Enterprise 4.0 | Repositório | A: Suportado para [2, 3] |
 | MongoDB Enterprise 3.6 | Repositório | Z: Não suportado |
 | MongoDB Enterprise 3.4 | Repositório | Z: Não suportado |
-| IBM DB2 10.5 | Banco de dados do Repositório e Formulários | R: Suporte restrito `\[4]` |
+| IBM DB2 10.5 | Banco de dados do Repositório e Formulários | R: Suporte Restrito [4] |
 | Oracle Database 12c (12.1.x) | Banco de dados do Repositório e Formulários | R: Suporte restrito |
 | Microsoft SQL Server 2016 | Banco de dados de formulários | A: Suportado |
 | **Apache Lucene (Quickstart integrado)** | Serviço de pesquisa | A: Suportado |
@@ -196,11 +199,11 @@ A versão mínima necessária da API do servlet é o Servlet 3.1
 |---|---|
 | **Mecanismo Servlet integrado Quickstart (Jetty 9.4)** | A: Suportado |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Não suportado |
-| Delivery contínuo IBM WebSphere Application Server (LibertyProfile) com Perfil Web 7.0 e IBM JRE 1.8 | R: Apoio restrito a novos contratos `\[2]` |
-| IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Apoio restrito a novos contratos `\[1]``\[2]` |
-| Apache Tomcat 8.5.x | R: Apoio restrito a novos contratos `\[2]` |
+| Delivery contínuo IBM WebSphere Application Server (LibertyProfile) com Perfil Web 7.0 e IBM JRE 1.8 | R: Apoio limitado aos novos contratos [2] |
+| IBM WebSphere Application Server 9.0 e IBM JRE 1.8 | R: Apoio limitado aos novos contratos [1] [2] |
+| Apache Tomcat 8.5.x | R: Apoio limitado aos novos contratos [2] |
 | JBoss EAP 7.2.x com JBoss Application Server | Z: Não suportado |
-| JBoss EAP 7.1.4 com JBoss Application Server | R: Apoio restrito a novos contratos `\[1]``\[2]` |
+| JBoss EAP 7.1.4 com JBoss Application Server | R: Apoio limitado aos novos contratos [1] [2] |
 | JBoss EAP 7.0.x com JBoss Application Server | Z: Não suportado |
 
 1. Recomendado para implantações com o AEM Forms.
@@ -212,11 +215,11 @@ O Adobe Experience Manager trabalha com as seguintes plataformas de servidor par
 
 | **Plataforma** | **Nível de suporte** |
 |---|---|
-| **Linux, baseado na distribuição Red Hat** | A: Suportado `\[1]``\[3]` |
-| Linux, baseado na distribuição Debian incl. Ubuntu | A: Suportado `\[2]` |
+| **Linux, baseado na distribuição Red Hat** | A: Suportado [1] [3] |
+| Linux, baseado na distribuição Debian incl. Ubuntu | A: Suportado [2] |
 | Linux, baseado na distribuição SUSE | A: Suportado |
-| Microsoft Windows Server 2019 `\[4]` | R: Apoio restrito a novos contratos |
-| Microsoft Windows Server 2016 `\[4]` | R: Apoio restrito a novos contratos `\[5]` |
+| Microsoft Windows Server 2019 [4] | R: Apoio restrito a novos contratos |
+| Microsoft Windows Server 2016 [4] | R: Apoio limitado aos novos contratos [5] |
 | Microsoft Windows Server 2012 R2 | Z: Não suportado |
 | Oracle Solaris 11 | Z: Não suportado |
 | IBM AIX 7.2 | Z: Não suportado |
@@ -298,7 +301,7 @@ A interface do usuário do AEM é otimizada para telas maiores (geralmente noteb
    <td>A: Suportado</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox last ESR '\[1]'</td>
+   <td>Mozilla Firefox last ESR [1]</td>
    <td>A: Suportado</td>
    <td>A: Suportado</td>
   </tr>
@@ -314,7 +317,7 @@ A interface do usuário do AEM é otimizada para telas maiores (geralmente noteb
   </tr>
   <tr>
    <td>Apple Safari no iOS 12.x</td>
-   <td>A: Suportado '\[2]'</td>
+   <td>A: Suportado [2]</td>
    <td>Z: Não suportado</td>
   </tr>
   <tr>
