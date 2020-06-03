@@ -3,10 +3,10 @@ title: Relatórios sobre seus ativos digitais
 description: Entenda os relatórios sobre seus ativos nos ativos Adobe Experience Manager que ajudam a entender o uso, a atividade e o compartilhamento dos ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
+source-git-commit: 2faf210d4177d6b2e29795b5668f8199816097eb
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 15%
+source-wordcount: '1034'
+ht-degree: 14%
 
 ---
 
@@ -41,12 +41,12 @@ Os ativos do Experience Manager geram os seguintes relatórios padrão para voc�
 
 1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 
-![](assets/AssetsReportNavigation.png)
+![Página Ferramentas para navegar no relatório de ativos](assets/AssetsReportNavigation.png)
 
 1. Na página Relatórios [!UICONTROL de] ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
 
-   ![](assets/choose_report.png)
+   ![Selecionar tipo de relatório](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ Os ativos do Experience Manager geram os seguintes relatórios padrão para voc�
 
 1. Configure detalhes do relatório, como título, descrição, miniatura e caminho da pasta no repositório CRX onde o relatório é armazenado. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente.
 
-   ![](assets/report_configuration.png)
+   ![Página para adicionar detalhes do relatório](assets/report_configuration.png)
 
    Escolha o intervalo de datas para seu relatório.
 
@@ -74,32 +74,32 @@ Os ativos do Experience Manager geram os seguintes relatórios padrão para voc�
    >
    >O relatório **[!UICONTROL Uso de disco]** não inclui campos de intervalo de datas porque indica apenas o uso atual do espaço em disco.
 
-   ![](assets/disk_usage_configuration.png)
+   ![Página Detalhes do relatório Uso de Disco](assets/disk_usage_configuration.png)
 
    Ao criar o relatório **[!UICONTROL Arquivos]** , você pode incluir/excluir subpastas. No entanto, não é possível incluir representações de ativos para este relatório.
 
-   ![](assets/files_report.png)
+   ![Página de detalhes do relatório Arquivos](assets/files_report.png)
 
    O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do Assets. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![](assets/link_share.png)
+   ![Página de detalhes do relatório Compartilhamento de links](assets/link_share.png)
 
 1. Clique em **[!UICONTROL Avançar]** na barra de ferramentas.
 
 1. Na página **[!UICONTROL Configurar colunas]** , algumas colunas são selecionadas para aparecerem no relatório por padrão. É possível selecionar mais colunas. Desmarque uma coluna selecionada para excluí-la no relatório.
 
-   ![](assets/configure_columns.png)
+   ![Selecionar ou desmarcar colunas de relatório](assets/configure_columns.png)
 
    Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades para o binário de ativo no nó jcr:content no CRX. Como alternativa, adicione-o através do seletor de caminho de propriedade.
 
-   ![](assets/custom_columns.png)
+   ![Selecionar ou desmarcar colunas de relatório](assets/custom_columns.png)
 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
 1. Na página Relatórios de ativos, o status de geração de relatórios se baseia no estado atual do trabalho de relatório, por exemplo, Sucesso, Falha, Enfileirado ou Agendado. O mesmo status aparece na caixa de entrada de notificações.Para visualização na página de relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Visualização]** na barra de ferramentas.
 
-   ![](assets/report_page.png)
+   ![Um relatório gerado](assets/report_page.png)
 
    Clique em **[!UICONTROL Download]** na barra de ferramentas para baixar o relatório no formato CSV.
 
@@ -125,11 +125,11 @@ Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
 
 1. Para exibir uma coluna personalizada, especifique o nome da coluna em **[!UICONTROL Colunas personalizadas]**.
 
-   ![](assets/custom_columns-1.png)
+   ![Especificar o nome da coluna personalizada do relatório](assets/custom_columns-1.png)
 
 1. Adicione o caminho da propriedade sob o `jcr:content` nó no CRXDE usando o seletor de caminho da propriedade. Como alternativa, digite o caminho no campo de caminho da propriedade.
 
-   ![](assets/property_picker.png)
+   ![Mapear o caminho de propriedade de caminhos em jcr:content](assets/property_picker.png)
 
    Para adicionar mais colunas personalizadas, clique em **[!UICONTROL Adicionar]** e repita as etapas 5 e 6.
 
