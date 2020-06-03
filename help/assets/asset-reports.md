@@ -3,9 +3,9 @@ title: Relatórios sobre seus ativos digitais
 description: Entenda os relatórios sobre seus ativos nos ativos Adobe Experience Manager que ajudam a entender o uso, a atividade e o compartilhamento dos ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '974'
 ht-degree: 15%
 
 ---
@@ -37,10 +37,11 @@ Os ativos do Experience Manager geram os seguintes relatórios padrão para voc�
 * Arquivos
 * Compartilhamento de link
 
-Os administradores do Experience Manager podem facilmente gerar e personalizar esses relatórios para sua implementação. Um administrador pode seguir estas etapas para gerar um relatório:
+[!DNL Adobe Experience Manager] os administradores podem facilmente gerar e personalizar esses relatórios para sua implementação. Um administrador pode seguir estas etapas para gerar um relatório:
 
 1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
-   ![](assets/AssetsReportNavigation.png)
+
+![](assets/AssetsReportNavigation.png)
 
 1. Na página Relatórios [!UICONTROL de] ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
