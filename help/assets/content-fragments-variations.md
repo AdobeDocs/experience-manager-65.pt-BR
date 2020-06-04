@@ -1,6 +1,6 @@
 ---
-title: Variações - Criação de conteúdo do fragmento
-seo-title: Variações - Criação de conteúdo do fragmento
+title: Variações - Criação dos fragmentos de conteúdo
+seo-title: Variações - Criação dos fragmentos de conteúdo
 description: As variações permitem que você crie conteúdo para o fragmento e, em seguida, crie variações desse conteúdo de acordo com a finalidade (se necessário).
 seo-description: As variações permitem que você crie conteúdo para o fragmento e, em seguida, crie variações desse conteúdo de acordo com a finalidade (se necessário).
 uuid: 0844f271-79bc-4f76-8031-d388b81d6feb
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d5fa8b85f6724097e34edd66745e0daf95d66cc
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 18%
 
 ---
 
 
-# Variações - Criação de conteúdo do fragmento{#variations-authoring-fragment-content}
+# Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
 [As variações](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso significativo de fragmentos de conteúdo, pois permitem criar e editar cópias do conteúdo mestre para uso em canais específicos e/ou cenários.
 
@@ -32,14 +35,14 @@ Executar várias outras ações, dependendo do tipo de dados que está sendo edi
 
 * [Fazer upload de conteúdo](#uploading-content)
 
-* [Exibir estatísticas](#viewing-key-statistics) principais (sobre texto de várias linhas)
+* [Estatísticas](#viewing-key-statistics) de chave de Visualização (sobre texto de várias linhas)
 * [Resumir texto](#summarizing-text)
 
 * [Sincronizar variações com conteúdo mestre](#synchronizing-with-master)
 
 >[!CAUTION]
 >
->Após a publicação e/ou referência de um fragmento, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+>Depois que um fragmento é publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Criação de seu conteúdo {#authoring-your-content}
 
@@ -55,7 +58,7 @@ Quando você abre seu fragmento de conteúdo para edição, a guia **Variações
 
 Por exemplo:
 
-* Editar um fragmento simples
+* Edição de um fragmento simples
 
    Um fragmento simples consiste em um campo de texto de várias linhas (ativos visuais podem ser adicionados pelo editor de tela cheia).
 
@@ -111,17 +114,17 @@ A edição de rich text permite formatar:
 * Itálico
 * Sublinhado
 * Alinhamento: esquerda, centro, direita
-* Lista com marcadores
-* Lista numerada
+* lista com marcadores
+* lista numerada
 * Recuo: aumento, diminuição
-* Criar/quebrar hiperlinks
+* Criar/Quebrar hiperlinks
 * Abra o editor de tela cheia, onde as seguintes opções de formatação estão disponíveis:
 
    * Colar texto/do Word
    * Inserir uma tabela
    * Estilo do parágrafo: Parágrafo, Título 1/2/3
    * [Inserir ativos visuais](#inserting-assets-into-your-fragment)
-   * Pesquisar
+   * Pesquisar  
    * Localizar/substituir
    * Verificador ortográfico
    * [Anotações](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)
@@ -134,7 +137,7 @@ Texto simples permite a entrada rápida de conteúdo sem formatação ou informa
 
 >[!CAUTION]
 >
->Se você selecionar Texto **** simples, poderá perder qualquer formatação, marcação e/ou ativos inseridos em **Rich Text** ou **Markdown**.
+>Se selecionar **Texto simples**, poderá perder qualquer formatação, marcação e/ou ativos inseridos no **Rich Text** ou na **Marcação**.
 
 ### Markdown {#markdown}
 
@@ -158,11 +161,11 @@ Você também pode abrir o editor de tela cheia para obter mais [ações](#actio
 
 >[!CAUTION]
 >
->Se você alternar entre **Rich Text** e **Markdown** , você poderá sentir efeitos inesperados com Cotas em Bloco e Blocos de Código, já que esses dois formatos podem ter diferenças na maneira como são tratados.
+>Se você alternar entre **Rich Text** e **Marcação**, poderá ver efeitos inesperados com Cotas de bloqueio e Bloqueios de código, já que esses dois formatos podem ter diferenças na maneira como são tratados.
 
 ### Exibindo Estatísticas-Chave {#viewing-key-statistics}
 
-Quando o editor de tela cheia estiver aberto, a ação Estatísticas **de** texto exibirá uma variedade de informações sobre o texto. Por exemplo:
+Quando o editor de tela cheia estiver aberto, a ação **Estatísticas de texto** exibirá uma variedade de informações sobre o texto. Por exemplo:
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
@@ -172,7 +175,7 @@ Para facilitar o processo de criação de fragmentos de conteúdo, é possível 
 
 ### Resumo de texto {#summarizing-text}
 
-O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento do texto para um número predefinido de palavras, mantendo os pontos principais e o significado geral.
+O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento do texto para um número predefinido de palavras, mantendo os pontos-chave e o significado geral.
 
 >[!NOTE]
 >
@@ -190,12 +193,12 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 >
 >O inglês está disponível prontamente.
 >
->Outros idiomas estão disponíveis como Pacotes de modelo de idioma no Compartilhamento de pacotes:
+>Outros idiomas estão disponíveis como Pacotes de modelo de idioma do Compartilhamento de pacotes ou Distribuição de software:
 >
->* [Francês (França)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemão (Alemanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (Itália)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espanhol (Espanha)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francês (fr) do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) de pacotes ou [Francês (fr) da Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemão (de) de Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) de pacotes ou [Alemão (de) de Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it) de Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) de pacotes ou [Italiano (it) de Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espanhol (es) do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) de pacotes ou [Espanhol (es) da Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -207,7 +210,7 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 
    ![cf-17](assets/cf-17.png)
 
-1. Especifique o número alvo de palavras e selecione **Iniciar**:
+1. Especifique o número de palavras do público alvo e selecione o **Start**:
 1. O texto original é exibido lado a lado com a sumariação proposta:
 
    * Todas as frases a serem eliminadas são destacadas em vermelho, com greve.
@@ -259,7 +262,7 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 >
 >Esses ativos não podem ser movidos ou excluídos em uma página de referência, isso deve ser feito no editor de fragmentos.
 >
->No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita no editor [de](/help/sites-authoring/content-fragments.md)páginas. A representação do ativo no editor de fragmentos é meramente para criação do fluxo de conteúdo.
+>No entanto, a formatação do ativo (por exemplo, tamanho) deve ser feita no editor [de](/help/sites-authoring/content-fragments.md)páginas. A representação do ativo no editor de fragmentos é apenas para a criação do fluxo de conteúdo.
 
 >[!NOTE]
 >
@@ -282,8 +285,8 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
    >
    >Se, após adicionar um ativo, você alterar o formato para:
    >
-   >* **Texto** simples: o ativo será completamente perdido do fragmento.
-   >* **Marcação**: o ativo não estará visível, mas ainda estará lá quando você retornar para Texto **rico**.
+   >* **Texto simples:** o ativo será completamente perdido do fragmento.
+   >* **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
 
 
 ## Gerenciamento de variações {#managing-variations}
@@ -297,7 +300,7 @@ Para criar uma nova variação:
 1. Abra o fragmento e verifique se o painel lateral está visível.
 1. Selecione **Variações** na barra de ícones no painel lateral.
 1. Selecione **Criar variação**.
-1. Uma caixa de diálogo será aberta, especifique o **Título** e a **Descrição** para a nova variação.
+1. Uma caixa de diálogo será aberta, especifique o **Título** e a **Descrição** da nova variação.
 1. Selecione **Adicionar**; o fragmento **Mestre** será copiado para a nova variação, que agora está aberta para [edição](#editing-a-variation).
 
    >[!NOTE]
@@ -317,7 +320,7 @@ Para criar uma nova variação:
 
 Para renomear uma variação existente:
 
-1. Abra o fragmento e selecione **Variações** no painel lateral.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selecione a variação necessária.
 1. Selecione **Renomear** no menu suspenso **Ações** .
 
@@ -333,7 +336,7 @@ Para renomear uma variação existente:
 
 Para excluir uma variação existente:
 
-1. Abra o fragmento e selecione **Variações** no painel lateral.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selecione a variação necessária.
 1. Selecione **Excluir** no menu suspenso **Ações** .
 
@@ -355,9 +358,9 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 >
 >Somente o elemento atual da variação será sincronizado.
 >
->A sincronização só funciona no tipo de dados de texto **** de várias linhas.
+>A sincronização só funciona no tipo de dados **Texto de várias linhas**.
 >
->A transferência *de alterações de uma variação para **Mestre ***não está disponível como uma opção.
+>A transferência de alterações *de uma variação para **Mestre ***não está disponível como uma opção.
 
 1. Abra o fragmento do conteúdo no editor de fragmentos. Certifique-se de que o **Mestre** foi editado.
 1. Selecione uma variação específica e, em seguida, a ação de sincronização apropriada de:
