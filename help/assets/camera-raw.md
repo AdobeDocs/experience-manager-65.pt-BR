@@ -3,9 +3,9 @@ title: Suporte a [!DNL Adobe Camera Raw].
 description: Saiba como [!DNL Adobe Camera Raw] ativar o suporte [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '392'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Você pode ativar o [!DNL Adobe Camera Raw] suporte para processar formatos de a
 
 Para ativar o [!DNL Camera Raw] suporte no, [!DNL Experience Manager Assets]siga estas etapas:
 
-1. Baixe o pacote [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw do Compartilhamento de pacotes.
+1. Baixe o pacote [Camera Raw do Compartilhamento de pacotes ou da Distribuição](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg)software.
 1. Acesso `https://[aem_server]:[port]/workflow`. Abra o fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM.
 1. Abra a etapa **[!UICONTROL Processar miniaturas]** .
 1. Forneça a seguinte configuração na guia **[!UICONTROL Miniaturas]** :
@@ -32,7 +32,7 @@ Para ativar o [!DNL Camera Raw] suporte no, [!DNL Experience Manager Assets]siga
 
 1. Na guia Imagem **[!UICONTROL ativada pela]** Web, no campo **[!UICONTROL Ignorar Lista]** , especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
-   ![chlimage_1-127](assets/chlimage_1-335.png)
+   ![chlimage_1-129](assets/chlimage_1-335.png)
 
 1. No painel lateral, adicione a etapa **[!UICONTROL Camera Raw/DNG Handler]** abaixo da etapa de criação **[!UICONTROL de]** Miniaturas.
 1. Na etapa **[!UICONTROL Camera Raw/DNG Handler]** , adicione a seguinte configuração na guia **[!UICONTROL Argumentos]** :
