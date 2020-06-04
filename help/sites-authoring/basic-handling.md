@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '3010'
-ht-degree: 92%
+source-wordcount: '2979'
+ht-degree: 95%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 92%
    >
 * Algumas funcionalidades não estão disponíveis em todos os consoles, e funcionalidades adicionais podem estar disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e o recurso relacionado serão abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-authoring/keyboard-shortcuts.md) e [edição](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+
 >
 
 
@@ -88,10 +89,6 @@ O painel Navegação fornece acesso aos consoles do AEM:
 ![bh-01](assets/bh-01.png)
 
 O título da guia do navegador será atualizado para refletir sua localização à medida que você navega pelos consoles e conteúdo.
-
->[!NOTE]
->
->O título da guia reflete o local a partir do [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 Em Navegação, os consoles disponíveis são:
 
@@ -226,17 +223,13 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![bh-09](assets/bh-09.png)
 
-* Navegação no teclado
+* Navegação pelo teclado
 
-   Você pode navegar em um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da chave **TAB** (ou **OPT+TAB**) para movê-lo entre elementos na página que são *focalizáveis*.
+   Você pode navegar por um site usando apenas o teclado. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*.
 
-   No console **Sites** há a opção adicionada para **Ignorar para o conteúdo** principal. Isso fica visível à medida que você *guia* pelas opções de cabeçalho e acelera a navegação, permitindo que você pule os elementos padrão na barra de ferramentas (produto) e leve você diretamente para o conteúdo principal.
+   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
 
    ![bh-30](assets/bh-30.png)
-
-   >[!NOTE]
-   >
-   >O **Skip to main content** está disponível a partir do [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 ## Acessar ajuda {#accessing-help}
 
@@ -301,7 +294,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas   {#quick-actions}
+## Ações rápidas {#quick-actions}
 
 Na [Exibição de cartão](#cardviewquickactions), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -422,6 +415,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 * É possível navegar para cima e para baixo na árvore, tocando ou clicando no nome do recurso ou na divisa à direita do nome do recurso.
 
    * O nome do recurso e a divisa serão destacados quando forem tocados ou clicados.
+
    ![bh-17](assets/bh-17.png)
 
    * Os filhos do recurso clicado/tocado aparecerão na coluna à direita do pai.
@@ -433,6 +427,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * Quando essa opção for selecionada, uma marca de seleção será sobreposta à miniatura, e o nome do recurso também será destacado.
    * Os detalhes do recurso selecionado serão mostrados na coluna final.
    * A barra de ferramentas de ação ficará disponível.
+
    ![bh-18](assets/bh-18.png)
 
    Quando uma página é selecionada na exibição de coluna, a página selecionada é exibida na coluna final junto com os seguintes detalhes:
@@ -496,6 +491,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
    * **Análise de páginas**
    * **Visitantes únicos**
    * **Tempo na página**
+
    ![bh-21](assets/bh-21.png)
 
    Por padrão, é exibida a coluna **Nome**, que faz parte do URL da página. Em alguns casos, o autor pode precisar acessar páginas que estão em um idioma diferente, e ver o nome da página (que normalmente é imutável) pode ser de grande ajuda quando ele não conhece o idioma.
