@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 93%
+source-wordcount: '2334'
+ht-degree: 94%
 
 ---
 
@@ -197,6 +197,7 @@ A menos que todas as páginas tenham sido criadas para você com antecedência, 
    * Selecionar o modelo que deseja usar para criar a nova página, em seguida, clicar/tocar em **Próximo** para prosseguir.
 
    * **Cancelar** para suspender o processo.
+
    ![caop-04](assets/caop-04.png)
 
 1. A partir do último estágio do assistente, você pode:
@@ -204,6 +205,7 @@ A menos que todas as páginas tenham sido criadas para você com antecedência, 
    * Usar as três guias para inserir as [propriedades de página](/help/sites-authoring/editing-page-properties.md) que deseja atribuir à nova página, em seguida, clicar/tocar em **Criar** para realmente criar a página.
 
    * Usar **Voltar** para voltar à seleção do modelo.
+
    Os campos principais são:
 
    * **Título**:
@@ -246,6 +248,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e a barra de ferramentas
+
    E, em seguida, selecione o ícone **Editar**:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -264,6 +267,7 @@ Navegar para outras páginas do editor de páginas só é possível no modo de v
 
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e a barra de ferramentas
+
    E, em seguida, o ícone **Copiar** página:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -279,8 +283,6 @@ Navegar para outras páginas do editor de páginas só é possível no modo de v
    Você pode:
    * Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página secundária serão criadas neste local.
    * Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
-   >[!NOTE]
-   A opção **Colar sem filhos** está disponível a partir do [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
    >[!NOTE]
    Se você copiar a página para um local onde uma página com o mesmo nome que a original já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
@@ -306,6 +308,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
    * [Ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) e a barra de ferramentas
+
    E, em seguida, selecione o ícone **Mover** página:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -317,6 +320,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
    * Especifique o nome que deseja para a página após movê-la, em seguida, clique/toque em **Próximo** para prosseguir.
 
    * **Cancelar** para suspender o processo.
+
    ![caop-07](assets/caop-07.png)
 
    O nome da página pode permanecer o mesmo se você estiver somente movendo a página.
@@ -331,6 +335,7 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
       * Para selecionar o destino, clique em sua miniatura.
       * Clique em **Avançar** para continuar.
    * Use **Voltar** para voltar às especificações do nome de página.
+
    >[!NOTE]
    Por padrão, o pai da página que você está movendo/renomeando será selecionado como o destino.
 
