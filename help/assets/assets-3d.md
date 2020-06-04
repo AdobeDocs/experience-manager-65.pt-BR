@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 2f0e626aa16a62203755e29800a5935b350ffe79
+source-git-commit: d17500ea7b95c90069d9c51fac5d4f3706ee4c71
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2144'
 ht-degree: 4%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 4%
 
 O Dynamic Media permite carregar, gerenciar, visualização e fornecer ativos 3D como experiências imersivas.
 
-* Publicação com um clique (usando a Publicação **** rápida na barra de ferramentas) de imagens 3D para gerar seu URL.
-* Suporte otimizado para exibir ativos 3D com a predefinição do visualizador Dimensional interativo de alta qualidade, capacitado pelo Adobe Dimension. A predefinição do visualizador inclui, entre outras coisas, uma coleção de controles interativos de câmera que permitem a órbita, o zoom e o deslocamento.
+* Publicação com um clique (usando a Publicação **** rápida na barra de ferramentas) de ativos 3D para gerar um URL.
+* Suporte otimizado para exibir ativos 3D com a predefinição do visualizador Dimensional interativo de alta qualidade, capacitado pelo Adobe Dimension.
 * O componente WCM de mídia 3D permite que você adicione facilmente ativos 3D às páginas do AEM Sites.
 
-Não há instalação ou configuração de nenhum tipo para usar ativos 3D no Dynamic Media.
+Não há necessidade de configuração adicional para usar ativos 3D no Dynamic Media.
 
 ![sapato em 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -36,10 +36,10 @@ O Dynamic Media suporta os seguintes formatos de arquivo 3D:
 
 | extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
-| GLB | Transmissão binária do GL | model/gltf-binary | Inclui as texturas com o ativo em vez de referenciá-las como imagens externas. |
+| GLB | Transmissão binária do GL | model/gltf-binary | Inclui os materiais e as texturas como um único ativo. |
 | OBJ | Arquivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Arquivo Zip de descrição do Universal Scene | model/vnd.usdz+zip | *Apoio unicamente à ingestão; nenhuma visualização ou interação está disponível.* O USDZ é o formato 3D proprietário da Apple que só pode ser visualização pelo Safari ou iOS. |
+| USDZ | Arquivo Zip de descrição do Universal Scene | model/vnd.usdz+zip | *Apoio unicamente à ingestão; nenhuma visualização ou interação está disponível.* USDZ é um formato 3D proprietário que pode ser visualizado nativamente por dispositivos Safari e iOS. |
 
 ## Start rápido: Ativos 3D no Dynamic Media {#quick-start-three-d}
 
@@ -149,7 +149,8 @@ Consulte também [Visualizar ativos usando a interface](/help/assets/previewing-
 
    * Perto do canto superior direito da página, clique em **[!UICONTROL Pré-visualização]** para entrar no modo **[!UICONTROL Pré-visualização]** .
    * Exclua `/editor.html` do URL da página no navegador.
-   ![Ativo 3D exibido dentro do componente](/help/assets/assets-dm/3d-asset-in-3d-media.png)Mídia 3D Um ativo 3D totalmente interativo como exibido no modo de **[!UICONTROL Pré-visualização]** .
+
+Um ativo 3D totalmente interativo, conforme exibido em    ![Ativo 3D exibido dentro do componente](/help/assets/assets-dm/3d-asset-in-3d-media.png)Mídia 3D Um ativo 3D totalmente interativo como exibido no modo de **[!UICONTROL Pré-visualização]** .
 
 1. No modo de **[!UICONTROL Pré-visualização]** , execute um dos procedimentos a seguir:
 
@@ -280,6 +281,7 @@ Consulte também [Publicar páginas](/help/sites-authoring/publishing-pages.md).
    * O ativo 3D é um formato compatível (GLB, OBJ, STL e USDZ).
    * O ativo 3D foi assimilado ao Dynamic Media Image Production System (IPS).
    * O ativo 3D é publicado.
+
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
 1. Toque em **[!UICONTROL URL]** para exibir o URL de produção do ativo 3D.
