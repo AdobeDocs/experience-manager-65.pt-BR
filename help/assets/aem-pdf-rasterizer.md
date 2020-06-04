@@ -3,7 +3,7 @@ title: Use o rasterizador de PDF para gerar execuções de arquivos PDF.
 description: Gere miniaturas e execuções de alta qualidade usando a biblioteca do Adobe PDF Rasterizer no [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: 21f30cf67b73d26afc3f0413ca997a0b6e46e3d3
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Ao fazer upload de arquivos PDF ou AI grandes e com grande quantidade de conteú
 
 As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação com a saída predefinida e, portanto, proporcionam uma experiência de visualização consistente em todos os dispositivos. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Sempre resulta em RGB independentemente do espaço de cor do arquivo de origem.
 
-1. Instale o pacote PDF Rasterizer na sua [!DNL Experience Manager] implantação a partir do [Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) de pacotes ou Distribuição de [software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)
+1. Instale o pacote PDF Rasterizer na sua [!DNL Experience Manager] implantação a partir de [Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) de pacotes ou Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
 
    >[!NOTE]
    >
