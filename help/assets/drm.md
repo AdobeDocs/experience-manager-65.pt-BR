@@ -3,9 +3,9 @@ title: Gerenciamento de direitos digitais em [!DNL Adobe Experience Manager Asse
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
+source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1420'
 ht-degree: 6%
 
 ---
@@ -96,9 +96,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
    >
    >Somente o criador do ativo (a pessoa para a qual o upload de um ativo específico é feito) recebe um email quando o ativo expira. [!DNL Assets] Consulte [como configurar a notificação](/help/sites-administering/notification.md) por email para obter mais detalhes sobre como configurar notificações por email no [!DNL Experience Manager] nível geral.
 
-1. No campo Notificação **[!UICONTROL anterior em segundos]** , especifique o tempo em segundos antes do momento em que um ativo expira quando você deseja receber uma notificação sobre a expiração. Se você for um administrador ou o criador do ativo, você receberá uma mensagem antes da expiração do ativo notificando que o ativo está prestes a expirar após o tempo especificado.
-
-   Depois que o ativo expirar, você receberá outra notificação que confirmará a expiração. Além disso, os ativos expirados são desativados.
+1. No campo Notificação **[!UICONTROL anterior em segundos]** , especifique o tempo em segundos antes do momento em que um ativo expira quando você deseja receber uma notificação sobre a expiração. Os criadores de ativos recebem uma mensagem antes da expiração do ativo notificando que o ativo está prestes a expirar após o tempo especificado. Depois que o ativo expirar, você receberá outra notificação que confirmará a expiração. Além disso, os ativos expirados são desativados.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
