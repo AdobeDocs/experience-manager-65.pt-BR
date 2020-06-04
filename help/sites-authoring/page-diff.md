@@ -1,6 +1,6 @@
 ---
-title: Diferencial de páginas
-seo-title: Diferencial de páginas
+title: 'Diferencial de páginas  '
+seo-title: 'Diferencial de páginas  '
 description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 seo-description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
@@ -11,12 +11,15 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 99%
 
 ---
 
 
-# Diferencial de páginas{#page-diff}
+# Diferencial de páginas  {#page-diff}
 
 ## Introdução {#introduction}
 
@@ -24,24 +27,22 @@ A criação de conteúdo é um processo iterativo. Criar com eficiência exige p
 
 O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
 
->[!CAUTION]
->
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>[!TIP]
 >
 >Consulte [Desenvolvimento e diff de página](/help/sites-developing/pagediff.md#operation-details) para obter mais detalhes técnicos sobre este recurso.
 
-## Use {#use}
+## Uso {#use}
 
 O diferencial lado a lado pode comparar o seguinte:
 
-* [Versões](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Versão anterior de uma página com seu estado atual
-* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy com seu Blueprint
-* [Inicializações](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Iniciar com sua origem
-* [Cópias](/help/sites-administering/tc-manage.md#comparing-language-copies) de idioma - uma página antes e depois (re)tradução
+* [Versões](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - versão anterior de uma página com seu estado atual
+* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies - Live Copy com blueprint
+* [Lançamentos](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - lançamento com sua origem
+* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Cópias de idioma - uma página antes e depois da (nova) tradução
 
 Consulte os respectivos tópicos sobre como iniciar o diferencial nesses contextos.
 
-### Apresentação das diferenças {#presentation-of-differences}
+### Apresentação das diferenças   {#presentation-of-differences}
 
 Independentemente do conteúdo que está sendo comparado, a apresentação das diferenças permanece a mesma.
 
@@ -74,7 +75,7 @@ Observe que as cores alteradas e movidas são as mesmas.
 >
 >Ao comparar cópias de idiomas, o realce é desativado, pois, em uma tradução, tudo muda, e não seria benéfico realçar.
 
-### Tela cheia e ao sair {#fullscreen-and-exiting}
+### Tela cheia e ao sair   {#fullscreen-and-exiting}
 
 Para se concentrar em um conteúdo específico, você pode clicar no ícone de tela inteira para qualquer &quot;lado&quot; da comparação lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
 
@@ -90,13 +91,13 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 Você pode sair do diferencial lado a lado a qualquer momento clicando no botão Fechar do cabeçalho.
 
-## Limitações {#limitations}
+## Limitações   {#limitations}
 
 Existem algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme o esperado.
 
 * Ao diferenciar versões e lançamentos, o recurso de diferencial não leva em consideração os componentes dinâmicos, como navegação estrutural, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
-* Para versões, o recurso de diferencial não recria a política de controle de acesso e as relações de cópias em tempo real.
-* Se qualquer alteração for feita em uma imagem, como modificar os atributos alt, title ou src, ela será realçada em azul como alterada. No entanto, em alguns casos, a imagem tem uma representação em Base64 do atributo src e, mesmo que ambas as imagens tenham a mesma aparência, serão marcadas pelo diff como diferentes devido aos diferentes atributos src.
+* Para versões, o diferencial não recria a política de controle de acesso e as relações de live copy.
+* Se for feita alguma alteração em uma imagem, como modificar os atributos alt, title ou src, ela será destacada em azul como alterada. No entanto, em alguns casos, a imagem tem uma representação Base64 do atributo src e, mesmo que as duas imagens tenham a mesma aparência, elas serão marcadas pelo recurso de diferencial como diferentes por causa dos diferentes atributos src.
 * O recurso de diferencial é incapaz de detectar a rotação da imagem.
 * Se uma página for movida, você não poderá mais executar um diff com versões feitas antes do movimento.
 
