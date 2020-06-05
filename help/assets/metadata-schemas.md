@@ -3,10 +3,10 @@ title: 'schemas de metadados para definir o layout da página de propriedades de
 description: O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8490b81242ee284208d0f7fd90797f411e2b99b2
+source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 7%
+source-wordcount: '2648'
+ht-degree: 8%
 
 ---
 
@@ -119,7 +119,7 @@ Estes são os valores válidos para esta propriedade:
 
 * `./jcr:content/metadata/dc:title`: armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
 
-* `./jcr:created`: Exibe a propriedade JCR no nó do ativo. Se você configurar essas propriedades, a Adobe recomenda marcá-las como Desativar edição e não vincular nenhum campo de data a `./jcr:created`. É uma propriedade protegida. Quando os usuários do DAM tentam atualizar ativos, isso resulta no erro [!UICONTROL Ativo(s) que falhou ao modificar]. Caso decida mapear um campo de data para essa propriedade JCR, use o schema padrão. Copie o schema de metadados padrão fornecido pela Adobe e modifique-o, à medida que o campo de data no schema padrão é mapeado para `./jcr:created`.
+* `./jcr:created`: Armazena a data e a hora de criação de um ativo. É uma propriedade protegida. Se você configurar essas propriedades, a Adobe recomenda marcá-las como Desativar edição.
 
 Para garantir que o componente seja exibido corretamente no formulário de schema de metadados, o caminho da propriedade não deve incluir espaços.
 
