@@ -4,9 +4,9 @@ description: Notas de versão específicas do Adobe Experience Manager 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d51577195e969ff8af31be49159ff575e3654cc9
+source-git-commit: 46f28926af6cbf3999a4c81cb1f1297b09c07f9f
 workflow-type: tm+mt
-source-wordcount: '4476'
+source-wordcount: '4486'
 ht-degree: 11%
 
 ---
@@ -215,7 +215,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * As predefinições de imagem não publicam, se o modo [!UICONTROL de sincronização de Mídia] dinâmica estiver desativado por padrão no AEM com o modo de execução Dynamic Media Scene7 (CQ-4294200).
 
-* O processamento de ativos enquanto o carregamento em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
+* O processamento de ativos enquanto o upload em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
 
 * Criar uma configuração de Dynamic Media no AEM funciona, mas na interface do usuário nada acontece ao selecionar Salvar (CQ-4292442).
 
@@ -423,7 +423,7 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 
 * Se uma pasta na hierarquia for renomeada [!DNL Experience Manager Assets] e a pasta aninhada que contém um ativo for publicada, o título da pasta não será atualizado [!DNL Brand Portal][!DNL Brand Portal] até que a pasta raiz seja publicada novamente.
 
-* A atualização da [!DNL chrome] versão 83 está causando um problema na criação de pacotes. Use outros navegadores disponíveis, como [!DNL Internet Explorer] e [!DNL Firefox], ou outras opções de instalação de pacote padrão do AEM para resolver o problema.
+* Ao instalar o AEM 6.5.5.0, a atualização da [!DNL Chrome] versão 83 está causando um problema na criação de pacotes. Use outros navegadores disponíveis, como [!DNL Internet Explorer] e [!DNL Firefox], ou outras opções de instalação de pacote padrão do AEM para resolver o problema. O problema é resolvido após a instalação do AEM 6.5.5.0.
 
 * Não é possível enviar um email para o servidor SMTP remoto usando o remetente de email padrão do AEM, pois ele permite apenas a comunicação usando TLS v1.2. Remova o pacote `javax.mail:mail:1.5.0-b01` de `system/console` e atualize os pacotes para resolver o problema.
 
