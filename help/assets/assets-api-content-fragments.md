@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18dc05876337629b7561320ff6f0945e3e785ea3
+source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 3%
@@ -41,7 +41,7 @@ Por exemplo, aplicativos de página única (SPA), baseados em estrutura ou perso
 
 Embora os componentes principais do AEM ofereçam uma API abrangente, flexível e personalizável que possa atender às operações de Leitura necessárias para essa finalidade, e cuja saída JSON possa ser personalizada, eles exigem o know-how WCM do AEM (Gestão de conteúdo da Web) para implementação, pois devem ser hospedados em páginas (API) baseadas em modelos dedicados do AEM. Nem todas as organizações de desenvolvimento da ZPE têm acesso a esses recursos.
 
-É quando a API REST de ativos pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem precisar primeiro incorporá-los em uma página e entregar seu conteúdo em formato JSON serializado. (Observe que não é possível personalizar a saída JSON da API REST de ativos). A API REST de ativos também permite que os desenvolvedores modifiquem o conteúdo - criando novos ativos, atualizando ou excluindo ativos, fragmentos de conteúdo e pastas existentes.
+É quando a API REST de ativos pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem precisar primeiro incorporá-los em uma página e entregar seu conteúdo em formato JSON serializado. (Observe que não é possível personalizar a saída JSON da API REST de ativos). A API REST de ativos também permite que os desenvolvedores modifiquem o conteúdo, criando novos ativos, atualizando ou excluindo ativos, fragmentos de conteúdo e pastas existentes.
 
 A API REST de ativos:
 
@@ -292,7 +292,7 @@ Há algumas limitações:
 
 Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
-* **202 (OK)**
+* **200 (OK)**
 
    Retornado quando:
 
