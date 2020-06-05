@@ -11,7 +11,10 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 1%
 
 ---
 
@@ -66,14 +69,6 @@ Depois de instalar o pacote [complementar do](../../forms/using/installing-confi
     </ul> </td> 
   </tr>
   <tr>
-   <td>usuário com poder de modelo</td> 
-   <td>
-    <ul> 
-     <li>Criar e pré-visualização formulários adaptáveis ou modelos de comunicação interativa</li> 
-     <li>Criar scripts para formulários adaptáveis ou modelos de comunicação interativa usando o editor de código</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
    <td><p>fdm-autores</p> </td> 
    <td>
     <ul> 
@@ -99,7 +94,7 @@ Depois de instalar o pacote [complementar do](../../forms/using/installing-confi
    <td>usuários do fluxo de trabalho</td> 
    <td>
     <ul> 
-     <li>Usar aplicativos<br /> da caixa de entrada do AEM <strong>Observação: </strong>Você deve ter atribuições de grupo de usuários-agente-cm e usuários-fluxo de trabalho para acessar a interface do usuário do agente do Interative Communications Agent na caixa de entrada do AEM.</li> 
+     <li>Usar aplicativos<br /> da caixa de entrada do AEM <strong>Observação: </strong>É necessário ter usuários com agente de cm e atribuições de grupo de usuários de fluxo de trabalho para acessar a interface do usuário do agente do Interative Communications na caixa de entrada do AEM.</li> 
      <li>Gerenciar instâncias de fluxo de trabalho</li> 
     </ul> </td> 
   </tr>
