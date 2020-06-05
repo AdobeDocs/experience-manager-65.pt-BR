@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Release Notes
+user-guide-title: Notas de versão do AEM 6.5
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 46f28926af6cbf3999a4c81cb1f1297b09c07f9f
+workflow-type: tm+mt
+source-wordcount: '52'
+ht-degree: 50%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 + [Visão geral do AEM 6.5](home.md)
 + [Notas de versão gerais](release-notes.md)
 + Service Pack Release Notes {#service-pack}
-   + [Novos recursos - o service pack mais recente](new-features-latest-service-pack.md)
-   + [Hotfixes e pacotes de recursos incluídos no service pack mais recente](sp-release-notes.md)
-   + [Hotfixes e pacotes de recursos incluídos em service packs anteriores](previous-hotfixes-featurepacks.md)
+   + [Novidades](new-features-latest-service-pack.md)
+   + [Notas de versão do Service Pack 5](sp-release-notes.md)
+   + [Notas de versão anteriores do Service Pack](previous-hotfixes-featurepacks.md)
 + [Notas de versão do AEM Sites](sites.md)
 + [Notas de versão do AEM Assets](assets.md)
 + [Notas de versão do AEM Communities](communities-release-notes.md)
