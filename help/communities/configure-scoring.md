@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 0%
 
 ---
 
@@ -119,13 +122,13 @@ Para ver as entradas de log:
 
 ## UGC para Pontuação e Crachá {#ugc-for-scoring-and-badging}
 
-É possível visualizar o UGC relacionado à pontuação e à identificação quando o SRP escolhido é JSRP ou MSRP, mas não ASRP. (Se não estiver familiarizado com esses termos, consulte [Community Content Storage](/help/communities/working-with-srp.md) and [Storage Resource Provider Overview](/help/communities/srp.md).)
+É possível visualização do UGC relacionado à pontuação e à identificação quando o SRP escolhido for JSRP ou MSRP, mas não ASRP. (Se não estiver familiarizado com esses termos, consulte Armazenamento [de conteúdo da](/help/communities/working-with-srp.md) comunidade e Visão geral [do provedor de recursos do](/help/communities/srp.md)Armazenamento.)
 
 As descrições para acessar dados de pontuação e marcação usam o JSRP, já que o UGC é facilmente acessível usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP no autor**: experimentar no ambiente do autor resulta em UGC que é visível apenas do ambiente do autor.
+**JSRP no autor**: experimentar no ambiente do autor resulta em UGC que só é visível do ambiente do autor.
 
-**JSRP ao publicar**: da mesma forma, se estiver testando no ambiente de publicação, será necessário acessar o CRXDE Lite com privilégios administrativos em uma instância de publicação. Se a instância de publicação estiver sendo executada no modo [de](/help/sites-administering/production-ready.md) produção (nosamplecontent runmode), será necessário [ativar o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP ao publicar**: da mesma forma, se estiver testando o ambiente publish, será necessário acessar o CRXDE Lite com privilégios administrativos em uma instância de publicação. Se a instância de publicação estiver sendo executada no modo [de](/help/sites-administering/production-ready.md) produção (nosamplecontent runmode), será necessário [ativar o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 A localização básica do UGC no JSRP é `/content/usergenerated/asi/jcr/`.
 
@@ -185,13 +188,13 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
    * Adicionar propriedades de pontuação e marcação
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
    /etc/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-badging,
+   /libs/settings/community/badging/rules/forums-badging]
    ```
 
    * Localize o nó do componente do fórum
@@ -227,6 +230,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
    >
    >
 * Criar imagens de crachá exclusivas para sites do AEM diferentes
+
 >
 
 
