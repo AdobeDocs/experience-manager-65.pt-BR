@@ -29,6 +29,7 @@ ht-degree: 3%
 >
 >* API REST de ativos
 >* incluindo suporte para fragmentos de conteúdo
+
 >
 >
 A implementação atual da API HTTP do AEM Assets é REST.
@@ -129,6 +130,7 @@ Se a API REST de ativos for usada dentro de um ambiente sem requisitos específi
 >
 >* [Explicação do CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo - Desenvolvimento para CORS com AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -345,6 +347,7 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    As mensagens de erro detalhadas normalmente são retornadas da seguinte maneira:
 
    ```xml
