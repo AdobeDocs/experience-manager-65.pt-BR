@@ -10,14 +10,17 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
+source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 3%
 
 ---
 
 
 # Definições do veículo de lançamento do AEM Update{#update-release-vehicle-definitions}
 
-Este documento inclui detalhes sobre os vários tipos de versões do Adobe Experience Manager (AEM), incluindo versões completas, pacotes de recursos e pacotes de serviços que a Adobe fornece aos clientes.
+Este documento inclui detalhes sobre os vários tipos de versões do Adobe Experience Manager (AEM), incluindo versões completas, pacotes de recursos e pacotes de serviços que a Adobe fornece aos seus clientes.
 
 >[!Nnota]
 >
@@ -151,7 +154,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td><strong>Definição</strong></td>
    <td>
     <ul>
-     <li>Modelo único de entrega de correções de liberação</li>
+     <li>Modelo de delivery único para liberação de correções</li>
      <li>Pacote de conteúdo do agregador contendo o pacote de conteúdo de componentes individuais</li>
      <li>Os CFPs são sobrepostos de hot fixes e nenhum aprimoramento faz parte dele.</li>
     </ul> </td>
@@ -185,94 +188,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
   </tr>
   <tr>
    <td><strong>Nível de teste</strong></td>
-   <td>QA validado no nível de integração e teste de regressão</td>
-  </tr>
- </tbody>
-</table>
-
-## Pacote de correção cumulativo Oak {#oak-cumulative-fix-pack}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definição</strong></td>
-   <td>
-    <ul>
-     <li>Semelhante a um CFP padrão, mas contém somente correções relacionadas ao Oak</li>
-     <li>O COFP é autodependente (sem dependências). Os clientes não precisam se preocupar em encontrar/resolver dependências. [1]</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Nomeação</strong></td>
-   <td>oak &lt;versão&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Inclusões</strong></td>
-   <td>O COFP é um pacote de correções cumulativo que contém correções de todos os componentes Oak para uma versão 1.x específica. Por exemplo, se o cliente aplicar COHF 1.x.3, então COHF 1.x.3. = COHF 1.x.1 + COHF 1.x.2.</td>
-  </tr>
-  <tr>
-   <td><strong>Documentação</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Cadência</strong></td>
-   <td><p>Se necessário</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Disponibilidade e instalação</strong></td>
-   <td>
-    <ul>
-     <li>O processo de instalação do COFP foi simplificado para melhorar a experiência do cliente. (Os clientes podem simplesmente instalar um único pacote para todos os componentes).</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Nível de teste</strong></td>
-   <td><p>Avaliações de qualidade</p> </td>
-  </tr>
- </tbody>
-</table>
-
-## Correção {#hot-fix}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definição</strong></td>
-   <td><p>Pacote que inclui um ou mais arquivos criados para resolver um defeito de produto que degrada significativamente os serviços essenciais ou afeta significativamente as operações comerciais. </p> </td>
-  </tr>
-  <tr>
-   <td><strong>Nomeação</strong></td>
-   <td>cq-&lt;Versão da versão&gt;-hotfix-&lt;ID do hotfix&gt;-&lt;versão do hotfix&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Inclusões</strong></td>
-   <td>Inclui correções para um problema específico</td>
-  </tr>
-  <tr>
-   <td><strong>Documentação</strong></td>
-   <td>As notas de versão dos hotfixes públicos estão disponíveis somente com base na solicitação do cliente por meio do portal de suporte do AEM.</td>
-  </tr>
-  <tr>
-   <td><strong>Cadência</strong></td>
-   <td>Se necessário</td>
-  </tr>
-  <tr>
-   <td><strong>Disponibilidade e instalação</strong></td>
-   <td>
-    <ul>
-     <li>Entregue como um pacote</li>
-     <li>Disponível no Compartilhamento de pacotes</li>
-     <li>Dependendo do service pack mais recente lançado</li>
-     <li>A maioria dos hot fixes são independentes, a menos que especificado. Pode ser instalado em qualquer ordem. Pode ser verificado na guia Detalhes do compartilhamento de pacotes do elemento Dependências.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Nível de teste</strong></td>
-   <td>
-    <ul>
-     <li>Validado pelo Atendimento ao cliente</li>
-     <li>Os hot fixes do AEM não se beneficiam do mesmo nível de garantia de qualidade que os service packs ou as versões de produtos. Portanto, eles devem ser validados primeiro em um ambiente de preparo como parte dos processos de implantação de qualidade.</li>
-    </ul> </td>
+   <td>Garantia de qualidade validada no nível de integração e teste de regressão</td>
   </tr>
  </tbody>
 </table>
@@ -287,7 +203,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
   </tr>
   <tr>
    <td><strong>Nomeação</strong></td>
-   <td>overlay-&lt;ID do ticket&gt;</td>
+   <td>overlay-&lt;ID do tíquete&gt;</td>
   </tr>
   <tr>
    <td><strong>Inclusões</strong></td>
