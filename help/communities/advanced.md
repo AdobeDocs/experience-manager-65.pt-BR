@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ A pontuação avançada permite a atribuição de emblemas para identificar memb
 
 Essa diferença se deve ao mecanismo de pontuação usado para calcular as pontuações. O mecanismo básico de pontuação aplica matemática simples. O mecanismo avançado de pontuação é um algoritmo adaptável que recompensa os membros ativos que contribuem com conteúdo valioso e relevante, deduzido pelo processamento de linguagem natural (NLP) de um tópico.
 
-Além da relevância do conteúdo, os algoritmos de pontuação levam em conta as atividades dos membros, como votação e porcentagem de respostas. Embora a pontuação básica os inclua quantitativamente, a pontuação avançada os usa algoricamente.
+Além da relevância do conteúdo, os algoritmos de pontuação levam em conta atividades de membros, como votação e porcentagem de respostas. Embora a pontuação básica os inclua quantitativamente, a pontuação avançada os usa algoricamente.
 
 Portanto, o mecanismo de pontuação avançado requer dados suficientes para tornar a análise significativa. O limite de conquista para se tornar um especialista é constantemente reavaliado à medida que o algoritmo se ajusta continuamente ao volume e à qualidade do conteúdo criado. Há também um conceito de *decaimento* das postagens mais antigas de um membro. Se um membro especialista deixar de participar no assunto em que adquiriu o estatuto de perito, em determinado ponto (ver configuração [do mecanismo de](#configurable-scoring-engine)pontuação) poderá perder o seu estatuto de perito.
 
@@ -60,7 +63,7 @@ O mecanismo de pontuação avançado fornece uma configuração OSGi com parâme
 
 ![chlimage_1-139](assets/chlimage_1-139.png)
 
-* **Pontuação de pesos**
+* **pesos de pontuação**
 
    Para um tópico, especifique o verbo que deve receber a prioridade mais alta ao calcular a pontuação. Um ou mais tópicos podem ser inseridos, mas limitados a **um verbo por tópico**. Consulte [Tópicos e Verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
 Digitado como `topic,verb` com a vírgula que escapou. Por exemplo:
@@ -71,7 +74,7 @@ O padrão é definido para o verbo ADD para QnA e componentes do fórum.
 
    O intervalo para pontuações avançadas é definido por esse valor (pontuação máxima possível) e 0 (pontuação mais baixa possível).
 
-   O valor padrão é 100 para que o intervalo de pontuação seja de 0 a 100.
+   O valor padrão é 100, de modo que o intervalo de pontuação seja de 0 a 100.
 
 * **Intervalo de tempo de decadência de entidade**
 
@@ -105,9 +108,9 @@ Consulte Sub-regras [de](/help/communities/implementing-scoring.md#scoring-sub-r
 
 O pacote de pontuação avançado instala uma pasta de configuração que contém um arquivo de palavras de interrupção:
 
-* `/etc/community/scoring/configuration/stopwords`
+* `/libs/settings/community/scoring/configuration/stopwords`
 
-O algoritmo avançado de pontuação usa a lista de palavras contidas no arquivo de palavras de interrupção para identificar palavras comuns em inglês que são ignoradas durante o processamento do conteúdo.
+O algoritmo avançado de pontuação usa a lista de palavras contida no arquivo de palavras de interrupção para identificar palavras comuns em inglês que são ignoradas durante o processamento do conteúdo.
 
 Não há expectativa de que esse arquivo seja modificado.
 
@@ -131,7 +134,7 @@ Em vez de associar pontos a uma imagem emblema, basta identificar o número de e
   <tr>
    <td>badgingPath</td>
    <td>Sequência de caracteres[]</td>
-   <td><em>(Obrigatório)</em> Uma string de vários valores de imagens de emblema até o número de badgingLevels. Os caminhos de imagem do crachá devem ser ordenados para que o primeiro seja concedido ao especialista mais alto. Se houver menos emblemas do que o indicado por badgingLevels, o último emblema no storage preencherá o restante do storage. Exemplo de entrada:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Obrigatório)</em> Uma string de vários valores de imagens de emblema até o número de badgingLevels. Os caminhos de imagem do crachá devem ser ordenados para que o primeiro seja concedido ao especialista mais alto. Se houver menos emblemas do que o indicado por badgingLevels, o último emblema no storage preencherá o restante do storage. Exemplo de entrada:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -146,7 +149,7 @@ Em vez de associar pontos a uma imagem emblema, basta identificar o número de e
   <tr>
    <td>regras de pontuação</td>
    <td>Sequência de caracteres[]</td>
-   <td><em>(Opcional)</em> Uma string de vários valores para restringir a regra de identificação aos eventos de pontuação identificados pelas regras de pontuação listadas.<br /> Exemplo de entrada:<br /> <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> O padrão não é restrição.</td>
+   <td><em>(Opcional)</em> Uma string de vários valores para restringir a regra de identificação aos eventos de pontuação identificados pelas regras de pontuação listadas.<br /> Exemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> O padrão não é restrição.</td>
   </tr>
  </tbody>
 </table>
@@ -159,11 +162,11 @@ Incluído nesta versão beta, há um selo de especialista baseado em recompensa:
 
 * `expert`
 
-   `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
+   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
-Para que o selo de especialista apareça como recompensa pela atividade, verifique se:
+Para que o selo do especialista apareça como recompensa pela atividades, verifique se:
 
 * `Badges` são ativados para o recurso, como um fórum ou componente QnA.
 
@@ -178,19 +181,19 @@ Consulte as informações básicas para:
 
 Na versão beta estão incluídas duas regras de pontuação avançadas para a função [do](/help/communities/functions.md#forum-function) fórum (uma para cada componente do fórum e comentários do recurso do fórum):
 
-1. `/etc/community/scoring/rules/adv-comments-scoring`
+1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/etc/community/scoring/rules/sub-rules/adv-voting-rule`
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
 
-1. `/etc/community/scoring/rules/adv-forums-scoring`
+1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-forums-rule
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
 
 **Notas:**
 
@@ -208,8 +211,8 @@ Na versão beta estão incluídas duas regras de pontuação avançadas para a f
 
 Estão incluídas na versão duas regras avançadas de identificação que correspondem aos fóruns [avançados e às regras](#included-scoring-rules-and-sub-rules)de pontuação de comentários.
 
-* `/etc/community/badging/rules/adv-comments-badging`
-* `/etc/community/badging/rules/adv-forums-badging`
+* `/libs/settings/community/badging/rules/adv-comments-badging`
+* `/libs/settings/community/badging/rules/adv-forums-badging`
 
 **Notas:**
 
