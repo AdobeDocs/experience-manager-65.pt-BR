@@ -12,7 +12,10 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '2896'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +46,7 @@ Os símbolos são colocados sob o nome de um membro para indicar sua função ou
 
 Por padrão, os emblemas estão localizados no repositório em
 
-* `/etc/community/badging/images`
+* `/libs/settings/community/badging/images`
 
 Se armazenados em um local diferente, eles devem ser lidos e acessíveis a todos.
 
@@ -62,13 +65,13 @@ Os símbolos atribuídos (e avisados) são armazenados no [SRP](/help/communitie
 Na versão estão incluídos três emblemas baseados em funções:
 
 * **moderador**
-   `/etc/community/badging/images/moderator/jcr:content/moderator.png`
+   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **gestor de grupo**
-   `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
+   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **membro privilegiado**
-   `/etc/community/badging/images/privileged-member/jcr:content/privileged-member.png`
+   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -84,13 +87,13 @@ Para que os crachás apareçam como recompensa pela atividades, há duas coisas 
 Na versão estão incluídos três cartões baseados em recompensa:
 
 * **ouro**
-   `/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **prata**
-   `/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **bronze**
-   `/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -182,8 +185,8 @@ As pontuações são armazenadas no SRP.
 >Os nomes das regras de pontuação devem ser globalmente exclusivos; não devem terminar com o mesmo nome.
 >
 >Um exemplo do que *não* fazer:
->/etc/community/scoring/rules/site1/forums-scoring
->/etc/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 
 ### Sub-regras de Pontuação {#scoring-sub-rules}
@@ -274,13 +277,13 @@ Subregras são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó q
 
 Na versão estão incluídas duas regras de pontuação para a Função [do](/help/communities/functions.md#forum-function) Fórum (uma para os componentes Fórum e Comentários do recurso Fórum):
 
-1. /etc/community/scoring/rules/comments-scoring
+1. /libs/settings/community/scoring/rules/comments-scoring
 
-   * subRules[] =/etc/community/scoring/rules/sub-rules/Member-comment-create/etc/community/scoring/rules/sub-rules/Member-receive-vote/etc/community/scoring/rules/sub-rules/Member-Dê-vote/etc/community/scoring/rules/sub-rules/Member-is-moderated
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/Member-comment-create/libs/settings/community/scoring/rules/sub-rules/Member-receive-vote/libs/settings/community/scoring/rules/sub-rules/Member-Dê-voto/libs/settings/community/scoring/rules/sub-rules/Member-is-moderado
 
-1. /etc/community/scoring/rules/forums-scoring
+1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRules[] =/etc/community/scoring/rules/sub-rules/Member-forum-create/etc/community/scoring/rules/sub-rules/Member-receive-vote/etc/community/scoring/rules/sub-rules/Member-Dê-vote/etc/community/scoring/rules/sub-rules/Member-is-moderated
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/Member-forum-create/libs/settings/community/scoring/rules/sub-rules/Member-receive-vote/libs/settings/community/scoring/rules/sub-rules/Member-Dê-voto/libs/settings/community/scoring/rules/sub-rules/Member-is-moderado
 
 **Notas:**
 
@@ -308,15 +311,15 @@ As regras de marcação são nós do tipo `cq:Page` com propriedades em seu `jcr
 
 As regras para identificação consistem em uma propriedade obrigatória que é uma lista ordenada de pontuações mapeadas para símbolos. `thresholds` As pontuações devem ser ordenadas em valor crescente. Por exemplo:
 
-* `1|/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+* `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
    * Um crachá de bronze é avisado por ganhar 1 ponto.
 
-* `60|/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+* `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
    * Um selo de prata é concedido quando se acumulam 60 pontos.
 
-* `80|/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+* `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
    * Um selo de ouro é emitido quando se acumulam 80 pontos.
 
@@ -346,7 +349,7 @@ A `scoringRules` propriedade em uma regra de identificação simplesmente restri
      <li>número = pontuação</li>
      <li>| = barra vertical (U+007C)</li>
      <li>caminho = caminho completo para o recurso de imagem de emblema</li>
-    </ul> As strings devem ser ordenadas para que os números aumentem em valor e nenhum espaço em branco deve aparecer entre o número e o caminho.<br /> Exemplo de entrada :<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> As strings devem ser ordenadas para que os números aumentem em valor e nenhum espaço em branco deve aparecer entre o número e o caminho.<br /> Exemplo de entrada :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -365,8 +368,9 @@ A `scoringRules` propriedade em uma regra de identificação simplesmente restri
 
 Na versão estão incluídas duas Regras de marcação que correspondem às Regras [de pontuação de](#includedscoringrules)Fóruns e Comentários.
 
-* /etc/community/badging/rules/comments-badging
-* /etc/community/badging/rules/forums-badging
+* /libs/settings/community/badging/rules/comments-badging
+
+* /libs/settings/community/badging/rules/forums-badging
 
 **Notas:**
 
@@ -395,7 +399,7 @@ cURL -i -X POST -H *header* -u *login* -F *operação* -F *emblema* *membro-perf
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = o local do arquivo de imagem de emblema no repositório, por exemplo: /etc/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = o local do arquivo de imagem de emblema no repositório, por exemplo: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
 *membro-perfil-url* = o ponto final do perfil do membro em publisher, por exemplo: https://&lt;servidor>:&lt;porta>/home/users/community/riley/profile.social.json
 
@@ -414,13 +418,13 @@ cURL -i -X POST -H *header* -u *login* -F *operação* -F *emblema* *membro-perf
 #### Atribuir um selo de moderador {#assign-a-moderator-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 #### Revogar um crachá prateado atribuído {#revoke-an-assigned-silver-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/etc/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 >[!NOTE]
@@ -574,9 +578,9 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
    * **Tipo**: `String`
    * Selecionar **vários**
    * Selecionar **Adicionar**
-   * Enter `/etc/community/badging/rules/forums-badging`
+   * Enter `/libs/settings/community/badging/rules/forums-badging`
    * Selecionar **+**
-   * Enter `/etc/community/badging/rules/comments-badging`
+   * Enter `/libs/settings/community/badging/rules/comments-badging`
    * Selecionar **OK**
 
 * Adicione a propriedade scoringRules:
@@ -585,9 +589,9 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
    * **Tipo**: `String`
    * Selecionar **vários**
    * Selecionar **Adicionar**
-   * Enter `/etc/community/scoring/rules/forums-scoring`
+   * Enter `/libs/settings/community/scoring/rules/forums-scoring`
    * Selecionar **+**
-   * Enter `/etc/community/scoring/rules/comments-scoring`
+   * Enter `/libs/settings/community/scoring/rules/comments-scoring`
    * Selecionar **OK**
 
 * Selecione **Salvar tudo**.
