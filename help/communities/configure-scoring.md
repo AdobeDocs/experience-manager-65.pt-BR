@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -157,13 +157,13 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
    * Adicionar propriedades de pontuação e marcação
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-scoring,
+   /libs/settings/community/badging/rules/forums-scoring]
    ```
 
    * Localize o nó do componente do fórum
@@ -189,7 +189,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
@@ -212,7 +212,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 1. Um usuário recebe um crachá de moderador usando cURL:
 
    ```shell
-   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
    Como um usuário ganhou dois crachás de bronze e recebeu um crachá de moderador, é assim que o usuário aparece com sua entrada no fórum.
@@ -225,12 +225,11 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 >
 >* Os nomes das regras de pontuação devem ser globalmente exclusivos; não devem terminar com o mesmo nome.
    >  Um exemplo do que *não* fazer:
-   >  /etc/community/scoring/rules/site1/forums-scoring
-   >  /etc/community/scoring/rules/site2/forums-scoring
+   >  /libs/settings/community/scoring/rules/site1/forums-scoring
+   >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
 * Criar imagens de crachá exclusivas para sites do AEM diferentes
-
 >
 
 
