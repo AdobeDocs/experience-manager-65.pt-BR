@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '2765'
+ht-degree: 3%
 
 ---
 
@@ -240,7 +243,7 @@ Para salvar as configurações:
 
 * Selecionar **OK**
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 ### Criar estrutura {#create-framework}
 
@@ -278,7 +281,7 @@ A finalidade da estrutura é mapear variáveis AEM para variáveis do Analytics 
 Selecione o conjunto de relatórios que foi configurado para o relatórios de vídeo.
 
 Se um conjunto de relatórios ainda não foi criado ou não foi configurado corretamente, consulte a seção anterior:
-Conjunto de relatórios do[Adobe Analytics para Relatórios de vídeo](#adobe-analytics-report-suite-for-video-reporting)
+[Conjunto de relatórios do Adobe Analytics para Relatórios de vídeo](#adobe-analytics-report-suite-for-video-reporting)
 
 O Sidekick não é necessário e pode ser minimizado para que não obstrua o acesso às configurações dos Report Suites.
 
@@ -305,7 +308,7 @@ O Sidekick não é necessário e pode ser minimizado para que não obstrua o ace
 
 1. Selecione **Publicar**
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-186](assets/chlimage_1-185.png)
 
 O serviço e a estrutura da nuvem do Analytics estão concluídos. Os Mapeamentos serão definidos assim que um site da comunidade for criado com esse serviço do Analytics ativado.
 
@@ -519,13 +522,15 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o tutorial [de](/he
 * *[título](/help/communities/sites-console.md#step13asitetemplate)*do site da comunidade: Comunidades Geometrixx
 * *[nome](/help/communities/functions.md)*da função da comunidade: Fórum
 * *[nome](/help/communities/creating-groups.md#creating-a-new-group)*do grupo da comunidade: Caminho
-* *caminho para o conteúdo* do grupo da comunidade: `/content/sites/communities/en/groups/hiking`
+* *caminho para o conteúdo* do grupo da comunidade: `/content/sites/<site name>/en/groups/hiking`
 * *[ResourceType](/help/communities/essentials.md)*do componente UGC:`social/forum/components/hbs/topic`
 * *Título* do componente UGC: Tópicos de rastreamento
 * *login (authorizedId)*: `aaron.mcdonald@mailinator.com`
-* *Caminho SRP para UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`ou o *caminho do componente a ser seguido*: `/content/sites/communities/en/jcr:content/content/primary/forum`
+* *Caminho SRP para UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
+ou 
+*caminho do componente a ser seguido*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
-* *caminho para o conteúdo* do site da comunidade: `/content/sites/community/en`
+* *caminho para o conteúdo* do site da comunidade: `/content/sites/<site name>/en`
 
 ### Modificação do mapeamento de variáveis do Analytics {#modifying-analytics-variable-mapping}
 
@@ -657,7 +662,7 @@ O Adobe Analytics fornece APIs que permitem acessar, exportar e excluir dados do
 
 ## Recursos {#resources}
 
-* Adobe Marketing Cloud: Ajuda e referência do [Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Ajuda e referência do Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
 * AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics com provedores externos](/help/sites-administering/external-providers.md)
 
