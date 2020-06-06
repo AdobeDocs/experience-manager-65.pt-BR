@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +45,7 @@ Esse console exibe os emblemas disponíveis no momento e a partir dos quais novo
 
 ## Criar selo {#create-badge}
 
-Um crachá é criado fazendo upload de uma imagem bem pequena (72 dpi com uma altura entre 26 e 32 pixels) e fornecendo um nome. A imagem do crachá é armazenada no repositório em `/etc/community/badging/images` e é replicada automaticamente para o ambiente de publicação.
+Um crachá é criado fazendo upload de uma imagem bem pequena (72 dpi com uma altura entre 26 e 32 pixels) e fornecendo um nome. A imagem do crachá é armazenada no repositório em `/libs/settings/community/badging/images` e é replicada automaticamente para o ambiente de publicação.
 
 Se o ambiente publish for um farm de editores, será necessário configurar a sincronização [](/help/communities/sync.md)do usuário.
 
