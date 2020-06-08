@@ -308,7 +308,7 @@ O Sidekick não é necessário e pode ser minimizado para que não obstrua o ace
 
 1. Selecione **Publicar**
 
-![chlimage_1-186](assets/chlimage_1-185.png)
+![chlimage_1-185](assets/chlimage_1-185.png)
 
 O serviço e a estrutura da nuvem do Analytics estão concluídos. Os Mapeamentos serão definidos assim que um site da comunidade for criado com esse serviço do Analytics ativado.
 
