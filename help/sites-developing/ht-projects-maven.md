@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d42526ff4c7b7d8a31690ebfb8b45d0e951ebac
+source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+workflow-type: tm+mt
+source-wordcount: '2424'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +27,9 @@ Este documento descreve como configurar um projeto do AEM com base no [Apache Ma
 
 O Apache Maven é uma ferramenta de código aberto para gerenciar projetos de software, automatizando construções e fornecendo informações de qualidade sobre projetos. É a ferramenta de gerenciamento de compilação recomendada para projetos do AEM.
 
-A criação do projeto AEM com base no Maven oferece vários benefícios:
+Ao criar seu projeto AEM com base nas ofertas Maven, você terá vários benefícios:
 
-* Um ambiente de desenvolvimento agnóstico IDE
+* Um ambiente de desenvolvimento IDE-agnostic
 * Uso de arquétipos e artefatos Maven fornecidos pela Adobe
 * Uso de conjuntos de ferramentas Apache Sling e Apache Felix para configurações de desenvolvimento baseadas em Maven
 * Facilidade de importação para um IDE; por exemplo, Eclipse e/ou IntelliJ
@@ -51,18 +54,18 @@ No passado, os desenvolvedores tinham que gerenciar um número relativamente gra
 
 A partir do AEM 6.5, a Adobe fornece dois UberJars: uma que inclui interfaces obsoletas e outra que remove essas interfaces obsoletas. Ao referenciar um explicitamente no momento da criação, os clientes certamente entenderão se eles têm uma dependência do código obsoleto.
 
-O segundo Uber Jar elimina quaisquer classes, métodos e propriedades obsoletos, de modo que os clientes possam compilar e compreender se o código personalizado é uma prova futura.
+O segundo Uber Jar elimina quaisquer classes, métodos e propriedades obsoletos, de modo que os clientes possam compilar e compreender se o código personalizado é prova futura.
 
 ### Qual UberJar usar? {#which-uberjar-to-use}
 
 O AEM 6.5 tem dois sabores do Uber Jar:
 
-1. Uber Jar - Inclui apenas as interfaces públicas que não estão marcadas para desaprovação. Esse é o **recomendado** UberJar para usar, pois ajuda a que a base de códigos seja atualizada e não confie em APIs obsoletas.
+1. Uber Jar - Inclui apenas as interfaces públicas que não estão marcadas para desaprovação. Esse é o **recomendado** UberJar para usar, pois ajuda a prova futura da base de código a não depender de APIs obsoletas.
 1. Uber Jar com APIs obsoletas: inclui todas as interfaces públicas, incluindo as marcadas para desaprovação em uma versão futura do AEM.
 
-### Como usar o UberJars? {#how-to-i-use-the-uberjars}
+### Como usar o UberJars? {#how-do-i-use-the-uberjars}
 
-Se você estiver usando o Apache Maven como um sistema de compilação (que é o caso da maioria dos projetos Java AEM), precisará adicionar um ou dois elementos ao arquivo *pom.xml* . O primeiro é um elemento de *dependência* que adiciona a dependência real ao seu projeto:
+Se você estiver usando o Apache Maven como um sistema de compilação (o que é o caso da maioria dos projetos Java AEM), precisará adicionar um ou dois elementos ao arquivo *pom.xml* . O primeiro é um elemento de *dependência* que adiciona a dependência real ao seu projeto:
 
 **Dependência Uber Jar *(sem APIs obsoletas)***
 
@@ -123,7 +126,7 @@ Com o UberJar, é possível compilar o código do projeto que depende das APIs d
 
 ### O que não posso fazer com o UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Como o UberJar contém **somente** APIs, ele não é executável e não pode ser usado para **executar** o Adobe Experience Manager. Para executar o AEM, você precisa do formulário Início rápido do AEM, independente ou Arquivo de aplicativos da Web (WAR).
+Como o UberJar contém **somente** APIs, ele não é executável e não pode ser usado para **executar** o Adobe Experience Manager. Para executar o AEM, você precisa do formulário Início rápido do AEM, independente ou Arquivo de Aplicação web (WAR).
 
 ### O senhor mencionou limitações nos testes de unidade. Por favor, explique mais. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -348,7 +351,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 
 Assim como com a geração SCR, se o código estende uma classe base (abstrato ou concreto) da API AEM, você **deve** usar o UberJar para testá-lo.
 
-## Tarefas Comuns de Desenvolvimento com Maven {#common-development-tasks-with-maven}
+## Tarefas de Desenvolvimento Comum com Maven {#common-development-tasks-with-maven}
 
 ### Como adicionar caminhos ao módulo de conteúdo {#how-to-add-paths-to-the-content-module}
 
@@ -393,7 +396,7 @@ Para adicionar aos caminhos, adicione mais `<filter>` elementos:
 
 #### Adicionar caminhos ao pacote sem sincronizá-los {#adding-paths-to-the-package-without-syncing-them}
 
-Se você tiver arquivos que devem ser adicionados ao pacote criado pelo plug-in content-package-maven-maven, mas que não devem ser sincronizados entre o sistema de arquivos e o repositório, poderá usar `.vltignore` arquivos. Esses arquivos têm a mesma sintaxe dos arquivos [.gitignore](https://www.kernel.org/pub/software/scm/git/docs/gitignore.html) .
+Se você tiver arquivos que devem ser adicionados ao pacote criado pelo plug-in content-package-maven-maven, mas que não devem ser sincronizados entre o sistema de arquivos e o repositório, você poderá usar `.vltignore` arquivos. Esses arquivos têm a mesma sintaxe dos arquivos [.gitignore](https://www.kernel.org/pub/software/scm/git/docs/gitignore.html) .
 
 Por exemplo, o arquétipo usa um `.vltignore` arquivo para impedir que o arquivo JAR instalado como parte do conjunto seja sincronizado de volta ao sistema de arquivos:
 
@@ -487,7 +490,7 @@ Para compilar JSPs na fase de Maven, `compile` usamos o plug-in [Maven JspC do A
 * configuramos uma execução para a `jspc` meta (que por padrão se vincula à `compile` fase, de modo que não precisamos especificar a fase explicitamente)
 
 * mandamos compilar quaisquer JSPs em `${project.build.directory}/jsps-to-compile`
-* e exibir o resultado para `${project.build.directory}/ignoredjspc` (o que significa `myproject/content/target/ignoredjspc`)
+* e exibir o resultado para `${project.build.directory}/ignoredjspc` (o que se traduz para `myproject/content/target/ignoredjspc`)
 
 * configuramos maven-resources-plugin para copiar os JSPs para `${project.build.directory}/jsps-to-compile` na fase de geração-fontes e configurá-lo para não copiar a `libs/` pasta (pois esse é o código do produto AEM e não queremos incorrer nas dependências para compilação do nosso projeto, nem precisamos validar a compilação.
 
@@ -576,7 +579,8 @@ Para obter a exclusão das classes compiladas dos JSPs, configuramos o plug-in M
 >
 >Por exemplo, se você incluir `/libs/foundation/global.jsp`, poderá usar a seguinte configuração para a configuração `maven-resources-plugin` em vez da configuração acima, que ignora completamente `/libs`.
 >
->```
+>
+```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -585,7 +589,6 @@ Para obter a exclusão das classes compiladas dos JSPs, configuramos o plug-in M
 >       </includes>  
 >   </resource>  
 >```
->
 
 ### Como trabalhar com sistemas SCM {#how-to-work-with-scm-systems}
 
@@ -600,7 +603,7 @@ Ao trabalhar com o Gerenciamento de configuração de origem (SCM), verifique se
 
 #### Padrões para excluir do SCM {#patterns-to-exclude-from-scm}
 
-A seguir está uma lista típica de padrões a serem incluídos no SCM. Por exemplo, se você estiver usando git, poderá adicioná-los ao arquivo do seu projeto `.gitignore` .
+A seguir está uma lista típica de padrões para incluir do SCM. Por exemplo, se você estiver usando git, poderá adicioná-los ao arquivo do seu projeto `.gitignore` .
 
 #### exemplo .gitignore {#sample-gitignore}
 
@@ -661,11 +664,11 @@ Como o . `gitignore` o arquivo também não deve entrar no repositório, o . `vl
 .gitignore
 ```
 
-### Como trabalhar com perfis de implantação {#how-to-work-with-deployment-profiles}
+### Como trabalhar com Perfis de implantação {#how-to-work-with-deployment-profiles}
 
 Se o processo de criação fizer parte de uma configuração maior de gerenciamento do ciclo de vida do desenvolvimento, como um processo de integração contínuo, você geralmente precisará implantar em outros computadores, além da instância local do desenvolvedor.
 
-Para esses cenários, você pode adicionar facilmente novos Perfis [de construção de](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) Maven ao POM do projeto.
+Para esses cenários, você pode adicionar facilmente novos Perfis [](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) Maven Build ao POM do projeto.
 
 O exemplo abaixo adiciona um perfil `integrationServer`, que redefine os nomes de host e as portas das instâncias de autor e publicação. Você pode implantar nesses servidores executando o maven da raiz do projeto, como mostrado abaixo.
 
