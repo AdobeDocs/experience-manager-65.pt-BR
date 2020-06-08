@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 translation-type: tm+mt
-source-git-commit: a44d655871308dac34671f0af2c4a0017eba5793
+source-git-commit: d559a15e3c1c65c39e38935691835146f54a356e
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +27,13 @@ Ele suporta:
 * assinatura e criptografia de mensagens
 * criação automática de usuários
 * sincronização de grupos com os existentes no AEM
-* Autenticação iniciada pelo Provedor de serviços e pelo Provedor de identidade
+* Autenticação iniciada pelo Provedor de serviço e provedor de identidade
 
-Esse manipulador armazena a mensagem de resposta SAML criptografada no nó do usuário ( `usernode/samlResponse`) para facilitar a comunicação com um Provedor de serviços de terceiros.
+Esse manipulador armazena a mensagem de resposta SAML criptografada no nó do usuário ( `usernode/samlResponse`) para facilitar a comunicação com um Provedor de serviço de terceiros.
 
 >[!NOTE]
 >
->Veja [uma demonstração da integração](https://helpx.adobe.com/cq/kb/saml-demo.html)do AEM e SAML.
+>Veja [uma demonstração da integração](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)do AEM e do SAML.
 >
 >Para ler um artigo da comunidade de fim a fim, clique em: [Integração do SAML com o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
@@ -43,18 +46,19 @@ O console [da](/help/sites-deploying/configuring-osgi.md) Web fornece acesso à 
 >O SAML 2.0 Authentication Handler está desativado por padrão. É necessário definir pelo menos uma das seguintes propriedades para habilitar o manipulador:
 >
 >* O URL POST do provedor de identidade.
->* A ID de entidade do provedor de serviços.
+>* A ID de entidade do Provedor de serviço.
+
 >
 
 
 
 >[!NOTE]
 >
->As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. Para que isso funcione, é necessário fornecer pelo menos o certificado público do Provedor de identidade no TrustStore. Consulte [Adicionar o certificado IdP à seção TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) para obter mais informações.
+>As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. Para que isso funcione, é necessário fornecer pelo menos o certificado público do Provedor de Identidade no TrustStore. Consulte [Adicionar o certificado IdP à seção TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) para obter mais informações.
 
 **Caminho** do repositório para o qual esse manipulador de autenticação deve ser usado pelo Sling. Se estiver vazio, o manipulador de autenticação será desativado.
 
-**Valor de classificação** do serviço OSGi Framework para indicar a ordem na qual chamar esse serviço. Esse é um valor inteiro onde valores mais altos designam precedência mais alta.
+**Valor de classificação** do serviço OSGi Framework para indicar a ordem na qual chamar esse serviço. Esse é um valor inteiro em que valores mais altos designam precedência mais alta.
 
 **Alias** do certificado IDP O alias do certificado do IdP na Truststore global. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado. Consulte o capítulo &quot;Adicionar o certificado IdP ao AEM TrustStore&quot; abaixo sobre como configurá-lo.
 
@@ -62,9 +66,9 @@ O console [da](/help/sites-deploying/configuring-osgi.md) Web fornece acesso à 
 
 >[!CAUTION]
 >
->O nome do host do provedor de identidade deve ser adicionado à configuração OSGi do Filtro **de referência do** Apache Sling. Consulte a seção console [da](/help/sites-deploying/configuring-osgi.md) Web para obter mais informações.
+>O nome do host do provedor de identidade deve ser adicionado à configuração OSGi do Filtro **de Quem indicou Sling do** Apache. Consulte a seção do console [da](/help/sites-deploying/configuring-osgi.md) Web para obter mais informações.
 
-**ID** de entidade do provedor de serviços que identifica exclusivamente esse provedor de serviços com o provedor de identidade. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado.
+**ID** de entidade do Provedor de serviço que identifica exclusivamente esse provedor de serviço com o provedor de identidade. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado.
 
 **Redirecionamento** padrão O local padrão para redirecionar após a autenticação bem-sucedida.
 
@@ -81,7 +85,7 @@ O console [da](/help/sites-deploying/configuring-osgi.md) Web fornece acesso à 
 
 **Usar criptografia** Se esse manipulador de autenticação espera ou não asserções SAML criptografadas.
 
-**Criar usuários** CRX automaticamentePara criar automaticamente usuários não existentes no repositório após a autenticação bem-sucedida.
+**Criar usuários** CRX automaticamentePara criar ou não automaticamente usuários não existentes no repositório após a autenticação bem-sucedida.
 
 >[!CAUTION]
 >
@@ -104,7 +108,7 @@ As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. P
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Adicione a chave do Provedor de serviços e a cadeia de certificados ao armazenamento de chaves do AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Adicione a chave do Provedor de serviço e a cadeia de certificados ao armazenamento de chaves do AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
@@ -132,7 +136,7 @@ Você pode configurar um Logger para depurar quaisquer problemas que possam surg
 1. Procure e clique na entrada chamada Configuração do **Apache Sling Logging Logger**
 1. Crie um agente de log com a seguinte configuração:
 
-   * **** Nível de registro: Depuração
-   * **** Arquivo de log: logs/saml.log
-   * **** Logger: com.adobe.granite.auth.saml
+   * **Nível de registro:** Depuração
+   * **Arquivo de log:** logs/saml.log
+   * **Logger:** com.adobe.granite.auth.saml
 
