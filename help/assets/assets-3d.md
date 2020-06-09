@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d17500ea7b95c90069d9c51fac5d4f3706ee4c71
+source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 4%
+source-wordcount: '2295'
+ht-degree: 5%
 
 ---
 
@@ -248,22 +248,19 @@ Consulte [Adicionar o componente de mídia 3D a uma página](#adding-the-three-d
 >
 >Enquanto uma página da Web está no modo **[!UICONTROL Editar]** do AEM Sites, o componente de Mídia 3D exibe o ativo 3D, mas nenhuma interação com o ativo é possível. Para tornar o ativo interativo, você pode usar o recurso de **[!UICONTROL Pré-visualização]** para visualização da página da Web no editor de páginas com total acesso à funcionalidade do componente de mídia 3D.
 
-## Publishing Dynamic Media 3D assets {#publishing-three-d-assets}
+## Publicar ativos estáticos do Dynamic Media 3D {#publishing-three-d-assets}
 
 O Dynamic Media aceita uma variedade de formatos de arquivo 3D suportados como conteúdo ** estático no Dynamic Media. O conteúdo estático significa que você pode fazer upload e publicar ativos 3D, mas não há suporte para geração de imagens *dinâmicas* ou para redefinição de imagens que esteja associada ao ativo 3D. O motivo é que o Dynamic Media Imaging Server não reconhece formatos 3D. Assim, depois de publicar um ativo 3D no Dynamic Media, você tem um URL instantâneo que pode ser copiado. O URL do ativo 3D segue a estrutura normal de URL do Dynamic Media. No entanto, não é possível editar nenhum parâmetro no URL do ativo, ao contrário dos ativos de imagem tradicionais no Dynamic Media.
 
+Consulte também [Obter um URL para um ativo](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)estático.
+
 Na Visualização **[!UICONTROL de]** cartão, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda da data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
+
+Se você estiver usando o AEM como seu WCM, use este método de publicação para adicionar os ativos 3D do Dynamic Media diretamente na sua página da Web.
 
 Consulte também [Publicação de ativos](publishing-dynamicmedia-assets.md)de Mídia Dinâmica.
 
 Consulte também [Publicar páginas](/help/sites-authoring/publishing-pages.md).
-
->[!MORELIKETHIS]
->
->Se você estiver usando um sistema de gestão de conteúdo da Web de terceiros, poderá vincular ou incorporar ativos 3D às suas páginas da Web.
->
->See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
-
 
 **Publicar ativos 3D do Dynamic Media**
 
@@ -277,11 +274,23 @@ Consulte também [Publicar páginas](/help/sites-authoring/publishing-pages.md).
 
    ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
 
-1. Toque em **[!UICONTROL original]**. Quando um ativo 3D é publicado (ou &quot;ativado&quot;), o botão URL é exibido próximo ao canto inferior esquerdo da página se todas as seguintes condições de ativo 3D forem atendidas:
+1. Toque em **[!UICONTROL original]**. Quando um ativo 3D é publicado (ou &quot;ativado&quot;), o botão **[!UICONTROL URL]** aparece próximo ao canto inferior esquerdo da página se todas as seguintes condições de ativo 3D forem atendidas:
    * O ativo 3D é um formato compatível (GLB, OBJ, STL e USDZ).
    * O ativo 3D foi assimilado ao Dynamic Media Image Production System (IPS).
    * O ativo 3D é publicado.
 
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
-1. Toque em **[!UICONTROL URL]** para exibir o URL de produção do ativo 3D.
+1. Toque em **[!UICONTROL URL]** para exibir o URL de produção direta do ativo 3D que você pode copiar e usar em páginas da Web.
+
+### Métodos alternativos para publicar ativos em Dynamic Media 3D usando o visualizador Dimensional {#alternate-publish-methods}
+
+Use os dois métodos a seguir para publicar ativos do Dynamic Media 3D se *não* estiver usando o AEM como seu WCM.
+
+* **[!UICONTROL URL]** - Use o **[!UICONTROL URL]** se estiver usando um sistema de gestão de conteúdo da Web de terceiros e quiser vincular ativos 3D do Dynamic Media a suas páginas da Web usando o Visualizador Dimensional.
+
+   See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+
+* **[!UICONTROL Incorporar]** - Use **[!UICONTROL Incorporar]** quando quiser visualização de um ativo 3D do Dynamic Media incorporado em uma página da Web usando o Visualizador Dimensional. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
+
+   Consulte [Incorporação do vídeo de Dynamic Media, do visualizador de imagens ou do visualizador de dimensões em uma página](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)da Web.
