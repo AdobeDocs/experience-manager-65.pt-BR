@@ -8,20 +8,23 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 21%
 
 ---
 
 
-# Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incorporar o vídeo de Dynamic Media, o visualizador de imagens ou o visualizador de dimensões em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Você copia o código incorporado para a área de transferência para poder colá-lo em suas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]** .
+Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
 
 Você incorpora URLs somente se _não_ estiver usando o AEM como seu WCM. Se você estiver usando o AEM como seu WCM, [adicione os ativos diretamente na sua página.](adding-dynamic-media-assets-to-pages.md)
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
-Consulte [Fornecer imagens otimizadas para um site responsivo.](responsive-site.md)
+See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 >[!NOTE]
 >
@@ -37,7 +40,7 @@ Consulte [Fornecer imagens otimizadas para um site responsivo.](responsive-site.
 
 1. Navegue até o vídeo *publicado* ou ativo de imagem cujo código incorporado você deseja copiar.
 
-   Lembre-se de que o código incorporado só está disponível para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou a predefinição da imagem também devem ser publicadas.
+   Lembre-se de que o código incorporado só está disponível para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
 
    Consulte [Publicação de ativos.](publishing-dynamicmedia-assets.md)
 
@@ -53,6 +56,6 @@ Consulte [Fornecer imagens otimizadas para um site responsivo.](responsive-site.
 
 ## Usar HTTP/2 para fornecer seus ativos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. A entrega de ativos de Dynamic Media pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte Entrega [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte Delivery [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
