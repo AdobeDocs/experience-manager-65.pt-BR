@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 3954178cc660368a2b374bbb4d05d93d7309d4eb
+workflow-type: tm+mt
+source-wordcount: '3210'
+ht-degree: 8%
 
 ---
 
@@ -43,7 +46,7 @@ Este documento:
 * Descreve as tarefas de administrador/desenvolvedor necessárias para criar modelos editáveis
 * Descreve os fundamentos técnicos dos modelos editáveis
 
-Este documento presume que você já está familiarizado com a criação e edição de modelos. Consulte o documento de criação [Criação de modelos](/help/sites-authoring/templates.md)de página, que detalha os recursos de modelos editáveis como expostos ao autor do modelo.
+Este documento supõe que você já esteja familiarizado com a criação e edição de modelos. Consulte o documento de criação [Criando modelos](/help/sites-authoring/templates.md)de página, que detalha os recursos de modelos editáveis como expostos ao autor do modelo.
 
 >[!NOTE]
 >
@@ -75,6 +78,7 @@ Ao criar um novo modelo editável:
       * Se você estiver criando um modelo em uma pasta personalizada fora do conteúdo de amostra We.Retail, poderá escolher Componentes básicos ou usar Componentes [](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)principais.
    * Se desejar que os autores da página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
+
    Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)de página.
 
    Para obter detalhes técnicos da estrutura, consulte [Estrutura](/help/sites-developing/page-templates-editable.md#structure) neste documento.
@@ -85,14 +89,16 @@ Ao criar um novo modelo editável:
 
       * Por exemplo, os componentes disponíveis ou as dimensões mínimas/máximas.
    * Eles são aplicáveis ao modelo (e às páginas criadas com o modelo).
+
    Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criação de modelos](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)de página.
 
-   Para obter detalhes técnicos sobre políticas, consulte Políticas [de](/help/sites-developing/page-templates-editable.md#content-policies) conteúdo neste documento.
+   Para obter detalhes técnicos das políticas, consulte Políticas [de](/help/sites-developing/page-templates-editable.md#content-policies) conteúdo neste documento.
 
    **Conteúdo inicial**
 
    * O Conteúdo inicial define o conteúdo que será exibido quando uma página for criada pela primeira vez com base no modelo.
    * O conteúdo inicial pode ser editado pelos autores da página.
+
    Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criação de modelos](/help/sites-authoring/templates.md#editing-a-template-initial-content-author)de página.
 
    Para obter detalhes técnicos sobre o conteúdo inicial, consulte Conteúdo [](/help/sites-developing/page-templates-editable.md#initial-content) inicial neste documento.
@@ -100,7 +106,8 @@ Ao criar um novo modelo editável:
    **Layout**
 
    * É possível definir o layout do modelo para um intervalo de dispositivos.
-   * O layout responsivo para modelos opera da mesma forma que para a criação de páginas.
+   * O Layout responsivo para modelos funciona como na criação de página.
+
    Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criação de modelos](/help/sites-authoring/templates.md#editing-a-template-layout-template-author)de página.
 
    Para obter detalhes técnicos sobre o layout do modelo, consulte [Layout](/help/sites-developing/page-templates-editable.md#layout) neste documento.
@@ -109,6 +116,7 @@ Ao criar um novo modelo editável:
 
    * Um modelo pode ser ativado ou desativado para torná-lo disponível ou indisponível para autores de página.
    * Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramificações de página.
+
    Para obter detalhes sobre como um autor de modelo ativa um modelo, consulte [Criação de modelos](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author)de página.
 
    Para obter detalhes técnicos sobre como habilitar um modelo, consulte [Habilitar e permitir um modelo para](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)uso neste documento
@@ -117,15 +125,16 @@ Ao criar um novo modelo editável:
 
    * Ao usar um modelo para criar uma nova página, não há diferenças visíveis e nenhuma indicação entre os modelos estáticos e editáveis.
    * Para o autor da página, o processo é transparente.
+
    Para obter detalhes sobre como um autor de página usa modelos para criar uma página, consulte [Criação e organização de páginas](/help/sites-authoring/managing-pages.md#templates).
 
-   Para obter detalhes técnicos sobre como criar páginas com modelos editáveis, consulte Páginas [de conteúdo](/help/sites-developing/page-templates-editable.md#resultant-content-pages) resultantes neste documento.
+   Para obter detalhes técnicos sobre como criar páginas com modelos editáveis, consulte Páginas [de conteúdo](/help/sites-developing/page-templates-editable.md#resultant-content-pages) resultante neste documento.
 
 >[!NOTE]
 >
->A biblioteca do cliente do editor assume a presença do `cq.shared` namespace nas páginas de conteúdo e, se ele não estiver presente, o erro do JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
+>A biblioteca do cliente do editor assume a presença da `cq.shared` namespace nas páginas de conteúdo e, se ela não estiver presente, o erro do JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultará.
 >
->Todas as páginas de conteúdo de amostra contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de amostra, deverá incluir o `cq.shared` namespace.
+>Todas as páginas de conteúdo de amostra contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de amostra, deverá incluir a `cq.shared` namespace.
 >
 >Consulte [Uso de bibliotecas](/help/sites-developing/clientlibs.md) do lado do cliente para obter mais informações.
 
@@ -142,9 +151,9 @@ Para organizar seus modelos, você pode usar as seguintes pastas:
 
 >[!NOTE]
 >
->Mesmo que você possa aninhar suas pastas, quando o usuário as visualiza no console **Modelos** , elas são apresentadas como uma estrutura simples.
+>Mesmo que você possa aninhar suas pastas, quando o usuário as visualização no console **Modelos** , elas são apresentadas como uma estrutura simples.
 
-In a standard AEM instance the **global** folder already exists in the template console. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for localizado na pasta atual. Você pode adicionar seus modelos padrão a esta pasta ou criar uma nova pasta (recomendado).
+Em uma instância padrão do AEM, a pasta **global** já existe no console modelo. Isso mantém modelos padrão e atua como um fallback se nenhuma política e/ou tipo de modelo for localizado na pasta atual. Você pode adicionar seus modelos padrão a esta pasta ou criar uma nova pasta (recomendado).
 
 >[!NOTE]
 >
@@ -194,7 +203,7 @@ Para criar uma nova pasta, você pode:
 
    * Valor: O título (para a pasta) que você deseja exibir no console **Modelos** .
 
-1. Além ** das permissões e privilégios de criação padrão (por exemplo, `content-authors`) agora é necessário atribuir grupos e definir os direitos de acesso (ACLs) necessários para que seus autores possam criar modelos na nova pasta.
+1. Além ** das permissões e privilégios de criação padrão (por exemplo, `content-authors`), agora é necessário atribuir grupos e definir os direitos de acesso (ACLs) necessários para que seus autores possam criar modelos na nova pasta.
 
    O `template-authors` grupo é o grupo padrão que precisa ser atribuído. Consulte a seção [ACLs e grupos](/help/sites-developing/page-templates-editable.md#acls-and-groups) a seguir para obter detalhes.
 
@@ -241,7 +250,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelos
   <tr>
    <th>Caminho</th>
    <th>Função / Grupo</th>
-   <th>Permissões<br /> </th>
+   <th>Permissões    <br /> </th>
    <th>Descrição</th>
   </tr>
   <tr>
@@ -301,7 +310,7 @@ Os modelos não devem mais ser armazenados em `/conf/global`, no entanto, para a
   <tr>
    <th>Caminho</th>
    <th>Função / Grupo</th>
-   <th>Permissões<br /> </th>
+   <th>Permissões    <br /> </th>
    <th>Descrição</th>
   </tr>
   <tr>
@@ -359,7 +368,7 @@ Ao criar um novo modelo, é necessário especificar um tipo de modelo:
    * O tipo de modelo é copiado para criar o modelo.
    * Após a cópia, a única conexão entre o modelo e o tipo de modelo é uma referência estática para fins de informação.
 
-* Os tipos de modelo permitem definir:
+* Os tipos de modelo permitem que você defina:
 
    * O tipo de recurso do componente de página.
    * A política do nó raiz, que define os componentes permitidos no editor de modelo.
@@ -498,7 +507,7 @@ Define a estrutura da página resultante:
 
 * É unido ao conteúdo inicial ( `/initial`) ao criar uma nova página.
 * As alterações feitas na estrutura serão refletidas em qualquer página criada com o modelo.
-* O nó `root` ( `structure/jcr:content/root`) define a lista de componentes que estarão disponíveis na página resultante.
+* O nó `root` ( `structure/jcr:content/root`) define a lista dos componentes que estarão disponíveis na página resultante.
 
    * Os componentes definidos na estrutura do modelo não podem ser movidos para nenhuma página resultante ou excluídos dela.
    * Quando um componente é desbloqueado, a `editable` propriedade é definida como `true`.
@@ -540,7 +549,7 @@ Fornece uma referência relativa à política de conteúdo para o sistema de par
 
 >[!NOTE]
 >
->As páginas criadas a partir de modelos editáveis não oferecem um modo de Design no editor de páginas.
+>As páginas criadas a partir de modelos editáveis não ofertas um modo de Design no editor de páginas.
 >
 >A `policies` árvore de um modelo editável tem a mesma hierarquia que a configuração do modo de design de um modelo estático em:
 >
@@ -567,7 +576,7 @@ As políticas de página permitem que você defina a política [de](#content-pol
 
       * Defina a propriedade:
 
-         * Nome:status
+         * Nome: status
          * Tipo: String
          * Valor: `enabled`
 
@@ -576,7 +585,8 @@ As políticas de página permitem que você defina a política [de](#content-pol
    * [Defina os caminhos de modelo permitidos nas Propriedades **da **](/help/sites-authoring/templates.md#allowing-a-template-author)página da página ou da página raiz apropriada de uma subramificação.
    * Defina a propriedade:
       `cq:allowedTemplates`
-No `jcr:content` nó da ramificação necessária.
+Na 
+`jcr:content` nó da ramificação necessária.
    Por exemplo, com um valor de:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -597,7 +607,7 @@ Fornece uma referência ao tipo de modelo.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
-O diagrama acima mostra como modelos, conteúdo e componentes se interrelacionam:
+O diagrama acima mostra como os modelos, o conteúdo e os componentes se interrelacionam:
 
 * Controller - `/content/<my-site>/<my-page>`a página resultante que faz referência ao modelo. O conteúdo controla todo o processo. De acordo com as definições, acessa o modelo e os componentes apropriados.
 
@@ -605,7 +615,7 @@ O diagrama acima mostra como modelos, conteúdo e componentes se interrelacionam
 
 * Modelo - pacotes OSGiOs pacotes [OSGI](/help/sites-deploying/osgi-configuration-settings.md) implementam a funcionalidade.
 
-* Exibir - `/apps/<my-site>/components`nos ambientes de autor e publicação, o conteúdo é renderizado pelos [componentes](/help/sites-developing/components.md).
+* Visualização - `/apps/<my-site>/components`nos ambientes de autor e publicação, o conteúdo é renderizado pelos [componentes](/help/sites-developing/components.md).
 
 Ao renderizar uma página:
 
