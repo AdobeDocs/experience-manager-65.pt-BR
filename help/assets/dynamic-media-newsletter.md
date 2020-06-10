@@ -5,7 +5,10 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: d43f845a1ba9ed9e9eb5bfcff735eaa42da53566
+source-git-commit: 9e8ff9bf5c9ddd4675e887fc734bf3b616526b36
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 0%
 
 ---
 
@@ -22,6 +25,21 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
 
 ## Ocorreu um problema com a newsletter do Dynamic Media?
 
+* **[Maio de 2020, edição 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   Nesta edição:
+
+   * O que a continuidade de negócios significa em tempos incertos.
+   * Os principais recursos do primeiro Adobe Summit totalmente digital.
+   * Sessões de sessão de grupo do Experience Manager devem ser monitoradas.
+   * Destaque do cliente Summit: Sob Armor.
+   * Nunca perca um webinar do Experience Insider.
+   * Destaque do setor público: A necessidade urgente de inscrição digital.
+   * Veja as novidades da inovação do Experience Manager.
+   * Crie suas habilidades do Experience Manager ao *vivo* com os profissionais da Adobe.
+   * Conecte-se com a Comunidade do Adobe Experience Manager.
+   * Acompanhe rapidamente sua experiência da Adobe com a Adobe Experience League.
+
 * **[Abril de 2020, Edição 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
    Nesta edição:
@@ -32,6 +50,7 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
    * Visualização as sessões de Dynamic Media do Adobe Summit 2020 online.
    * Saiba mais sobre nossas auditorias gratuitas do Dynamic Media Classic.
    * Conheça John Monroe, gerente sênior de Programas para os serviços de sucesso do cliente.
+
    >[!IMPORTANT]
    >
    >Queremos ter certeza de que estamos enviando apenas o boletim informativo do Dynamic Media para aqueles que desejam recebê-lo. Para continuar recebendo o boletim informativo após este problema, inscreva-se para ele [aqui](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
