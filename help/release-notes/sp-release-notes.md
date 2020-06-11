@@ -1,13 +1,13 @@
 ---
-title: 'Notas de versão do AEM 6.5 Service Pack '
+title: Notas de versão do Adobe Experience Manager 6.5 Service Pack
 description: Notas de versão específicas do Adobe Experience Manager 6.5 Service Pack 5.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 46f28926af6cbf3999a4c81cb1f1297b09c07f9f
+source-git-commit: cb48bba01b78a0724f3a07875f601367520b2a8e
 workflow-type: tm+mt
-source-wordcount: '4486'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,70 +16,70 @@ ht-degree: 11%
 
 ## Informações da versão {#release-information}
 
-| Produtos | **Adobe Experience Manager 6.5** |
-|---|---|
+| Produtos | Adobe Experience Manager 6.5 |
+| -------- | ---------------------------- |
 | Versão | 6.5.5.0 |
 | Tipo | Lançamento do Service Pack |
 | Data | 04 de junho de 2020 |
-| URL de download | [Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0)de pacotes, distribuição de [software ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
+| URL de download | [Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0)de pacotes, distribuição de [software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
 ## O que está incluído no Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
-O Adobe Experience Manager 6.5.5.0 é uma atualização importante que inclui novos recursos, melhorias importantes solicitadas pelo cliente e desempenho, estabilidade, melhorias de segurança, lançadas desde a disponibilização geral da versão 6.5 em **abril de 2019**. Ele pode ser instalado na parte superior do Adobe Experience Manager (AEM) 6.5.
+O Adobe Experience Manager 6.5.5.0 é uma atualização importante que inclui novos recursos, melhorias essenciais solicitadas pelo cliente e melhorias de desempenho, estabilidade e segurança, lançadas desde a disponibilização geral da versão 6.5 em **abril de 2019**. Ele pode ser instalado na parte superior do Adobe Experience Manager 6.5.
 
-Alguns recursos e aprimoramentos principais introduzidos no AEM 6.5.5.0 incluem:
+Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Manager 6.5.5.0 incluem:
 
-* Personalizar os nomes das colunas exibidas na Caixa de entrada do AEM.
+* Personalize os nomes das colunas exibidas na Caixa de entrada do Adobe Experience Manager.
 
-* Melhorando a acessibilidade em várias áreas na Gestão de conteúdo da Web do AEM (WCM), como o Editor de páginas, Componentes principais, RTE e a interface de usuário do Administrador.
+* Aprimoramento da acessibilidade em várias áreas na Gestão de conteúdo da Web do Experience Manager (WCM), como o Editor de páginas, Componentes principais, RTE e a interface de usuário do Admin.
 
-* Salvar uma comunicação interativa como rascunho.
+* Salve um [!DNL Interactive Communication] como rascunho.
 
-* Suporte para [!DNL Oracle WebLogic 12] o AEM Forms em JEE.
+* Suporte para formulários do Experience Manager [!DNL Oracle WebLogic 12] em JEE.
 
-* A manipulação de exceções agora é aprimorada no fluxo da interface do usuário [!DNL Adobe Experience Manager] do Assets.
+* Aprimoramento da manipulação de exceções no fluxo da interface [!DNL Adobe Experience Manager Assets] do usuário.
 
-* Um novo método `getRemoteAssetPublishURL` `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` é adicionado à interface para obter o URL de publicação do Dynamic Media Scene7.
+* Para obter o URL de publicação do Dynamic Media Scene7, um novo método `getRemoteAssetPublishURL` é adicionado à `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` interface.
 
-* [Aprimoramentos](#assets-6550-changes) de acessibilidade em [!DNL Adobe Experience Manager] Ativos, em conformidade com as Diretrizes de acessibilidade de conteúdo da Web (WCAG).
+* [Aprimoramentos](#assets-6550) de acessibilidade em conformidade [!DNL Adobe Experience Manager Assets] com as Diretrizes de acessibilidade do conteúdo da Web (WCAG).
 
-* Remoção da integração do Compartilhamento de pacotes com o Adobe Experience Manager.
+* Remoção da integração do Compartilhamento de pacotes no Adobe Experience Manager.
 
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.22.3.
 
-Para obter uma lista completa dos recursos, dos principais destaques, dos principais recursos introduzidos no Service Pack 5 do AEM 6.5, consulte [Novidades do Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
+Para obter uma lista completa dos recursos, destaques principais, recursos principais introduzidos no Service Pack 5 do Experience Manager 6.5, consulte [Novidades do Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
 
 A seguir está a lista de correções fornecidas na versão [!DNL Experience Manager] 6.5.5.0.
 
-### Sites {#sites-6550}
+### [!DNL Sites] {#sites-6550}
 
-* O AEM Sites fornece uma opção para publicar ou cancelar a publicação de uma página de seu alias. A opção não funciona (NPR-33415).
+* Os Sites do Experience Manager fornecem uma opção para publicar ou cancelar a publicação de uma página de seu alias. A opção não funciona (NPR-33415).
 * Quando um container de layout é excluído de um modelo que contém vários modelos, o modelo não é renderizado corretamente (NPR-33347).
-* Quando uma página do AEM Sites faz parte de um grande conjunto de conteúdo com várias cópias online, a pré-visualização do histórico de versão da página não é carregada (NPR-33311).
-* Quando você usa o comando Mover para renomear uma página do AEM Sites, o título da página não é atualizado (NPR-33264).
+* Quando uma página Sites do Experience Manager faz parte de um grande conjunto de conteúdo com várias cópias online, a pré-visualização do histórico de versão da página falha ao carregar (NPR-33311).
+* Quando você usa o comando Mover para renomear uma página Sites do Experience Manager, o título da página não é atualizado (NPR-33264).
 * Quando você move as páginas pela visualização da coluna, as colunas desaparecem (NPR-33216).
-* Quando o nome de um componente local em uma cópia de idioma é idêntico ao nome de um componente no blueprint e o componente é lançado do blueprint, o termo _msm_move não é adicionado ao nome do componente local (NPR-33208).
-* O servlet Redirecionamento de página anexa .html a um URL do AEM Sites onde ResourceType não é cq:Page (NPR-33176).
+* Quando o nome de um componente local em uma cópia de idioma é idêntico ao nome de um componente no blueprint e o componente é lançado do blueprint, o termo não `_msm_moved` é adicionado ao nome do componente local (NPR-33208).
+* O servlet Redirecionamento de página anexa .html a um URL de sites do Experience Manager onde o ResourceType não está `cq:Page` (NPR-33176).
 * Ao colar uma subárvore, não há opção para decidir se as subpáginas correspondentes devem ser coladas ou não (NPR-33149).
 * O número de resultados em usos ativos de um componente é limitado ao número 49 (NPR-33058).
 * Quando você baseia um Fragmento de conteúdo em um schema e ele contém uma área de texto obrigatória ou um campo de caminho, o Fragmento de conteúdo não é salvo (NPR-33007).
-* Ao criar um componente personalizado usando o componente de fragmento de experiência pronto para uso e usá-lo nas páginas do AEM Sites, o AEM não exibe referências (uso) para o componente personalizado (NPR-32852).
+* Ao criar um componente personalizado usando o componente padrão do Fragmento de experiência e usá-lo nas páginas do Experience Manager Sites, o Experience Manager não exibe referências (uso) para o componente personalizado (NPR-32852).
 * Ao renomear uma pasta com um grande número de referências, muitas referências à pasta não são atualizadas (NPR-32765).
 * Quando você ativa a opção de edição de origem, ela fica disponível para opções de tela cheia em linha, mas permanece ausente na caixa de diálogo de edição e nas opções de tela cheia do editor de rich text (NPR-32763).
-* Se você tiver um campo múltiplo e ele contiver um campo obrigatório (como um menu suspenso ou um campo de caminho) nas propriedades da página de um blueprint, quando uma página que contém esse campo múltiplo for distribuída, as propriedades da página da live copy não serão salvas. (NPR-32751)
+* Se você tiver um campo múltiplo e ele contiver um campo obrigatório (como um menu suspenso ou um campo de caminho) nas propriedades da página de um blueprint, quando uma página que contém esse campo múltiplo for distribuída, as propriedades da página da live copy não serão salvas (NPR-32751).
 * Os leitores de tela não podem usar a estrutura de cabeçalho para navegar em uma página. Além disso, a guia Componentes tem o rótulo errado (NPR-32648).
 * Quando start de paginação, o Seletor de fragmentos de experiência não carrega todos os itens (NPR-32605).
 * As permissões do autor para ler, modificar, criar e excluir cópias online são revogadas. Cada autor tinha que fornecer permissões de leitura e modificação explícitas para mover páginas em um Blueprint (NPR-32550).
 * Os autores de conteúdo não conseguem criar o Launch para uma página que tenha uma integração com o Adobe Analytics (NPR-32548).
 * Quando um usuário retoma a herança com a sincronização, a cópia online da página pai não é sincronizada com o blueprint e exibe um status incorreto (NPR-32500).
-* A página do editor do AEM Sites leva mais de 15 segundos para ser carregada (NPR-32413).
+* A página do editor do Experience Manager Sites demora mais de 15 segundos para ser carregada (NPR-32413).
 * Determinados campos não exibem a opção Cancelar herança (NPR-32362).
 * Quando você seleciona um caminho para um componente de Fragmento de experiência e seleciona a caixa de seleção Abrir caixa de diálogo de seleção, você não navega até o caminho selecionado no Navegador de caminhos (NPR-32308).
-* Ao atualizar do AEM 6.2 para o AEM 6.5, o componente Parsys dos modelos estáticos não é exibido corretamente. A altura do componente Parsys é definida como 0 e os componentes dentro dele não são visíveis. (NPR-33663).
+* Ao atualizar do Experience Manager 6.2 para o Experience Manager 6.5, o componente Parsys dos modelos estáticos não é exibido corretamente. A altura do componente Parsys está definida como 0 e os componentes dentro dele não estão visíveis (NPR-33663).
 * Quando um usuário copia e cola um Container de layout na mesma página, os componentes em um Container de layout não são exibidos (NPR-33648).
 * A verificação de integridade do Dispatcher exibe uma mensagem de `Invalid cookie header` aviso nos arquivos de registro (NPR-33629).
 
-### Ativos {#assets-6550-changes}
+### [!DNL Assets] {#assets-6550}
 
 **Aprimoramentos de acessibilidade nos ativos Experience Manager**
 
@@ -87,11 +87,11 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas de teclado (NPR-33420).
 
-* A caixa de lista suspensa da caixa de combinação (em vários campos em páginas diferentes) agora mostra as entradas como uma lista de opções que podem ser anunciadas pelos leitores de tela (NPR-33516).
+* O pop-up da caixa de lista da caixa de combinação (em vários campos em páginas diferentes) agora mostra as entradas como uma lista de opções que podem ser anunciadas pelos leitores de tela (NPR-33516).
 
 * A funcionalidade de classificação dos cabeçalhos classificáveis (na visualização da lista, na visualização da [!UICONTROL Linha] do tempo e na página [!UICONTROL Gerenciar publicação] ) agora é anunciada pelos leitores de tela e os controles de classificação nos cabeçalhos das colunas são acessíveis usando o teclado (NPR-32979).
 
-* Os elementos clicáveis (como cartões de comentário, atualizações de versão, caixas de combinação e ícones de divisa de menus) agora são focalizáveis e acionáveis usando o teclado (NPR-33514).
+* Os elementos clicáveis, como cartões de comentário, atualizações de versão, caixas de combinação e ícones de divisa de menus, agora podem ser focados e interagir com o uso de um teclado (NPR-33514).
 
 * A funcionalidade (ou finalidade de ação) dos ícones de insights (para uso, impressões e cliques) na Visualização [!UICONTROL do] Insights agora são anunciados corretamente pelos leitores de tela (NPR-33513).
 
@@ -113,7 +113,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Os títulos de todas as páginas navegadas em [!DNL Adobe Experience Manager] Ativos agora são exclusivos (NPR-33343).
 
-* Ao navegar pela estrutura da árvore, vários elementos do controle de visualização da árvore agora são anunciados corretamente pelos leitores de tela (NPR-33304).
+* Ao navegar pela estrutura de árvore, vários elementos do controle de visualização de árvore são anunciados corretamente pelos leitores de tela (NPR-33304).
 
 * Diferentes versões de ativos na visualização da [!UICONTROL Linha] do tempo na página de detalhes de ativos agora estão acessíveis usando teclas de teclado (NPR-33283).
 
@@ -135,7 +135,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * O menu no painel esquerdo agora está acessível. A funcionalidade e o propósito de expandir o menu são anunciados adequadamente pelos leitores de tela (NPR-33068).
 
-* A caixa de Lista e muitos outros elementos da interface do usuário agora estão acessíveis para usuários que não visualizam a tela, e as seguintes informações sobre eles são anunciadas pelos leitores de tela (NPR-33040):
+* A caixa de Lista e muitos outros elementos da interface do usuário agora estão acessíveis para usuários que não visualizam o leitor de tela, e as seguintes informações sobre eles são anunciadas pelos leitores de tela (NPR-33040):
 
    * se a entrada do usuário é necessária em um elemento antes do envio do formulário.
    * se um elemento não é editável.
@@ -173,9 +173,9 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * [!UICONTROL A página do Editor] de Schemas de metadados e seus elementos agora estão acessíveis usando o teclado e são compatíveis com o leitor de tela (CQ-4290962, CQ-4272953).
 
-* A finalidade do ícone [!UICONTROL x] na opção de remover as tags atualmente selecionadas também é anunciada juntamente com o número de tags selecionadas (CQ-4273017).
+* O `X` símbolo para remover as tags selecionadas agora é anunciado pelos leitores de tela, juntamente com o número de tags selecionadas (CQ-4273017).
 
-* Os ícones e imagens decorativos agora são ignorados pelos leitores de tela para evitar confusão para usuários sem visão usando leitores de tela (CQ-4272944).
+* Para evitar confusão para usuários sem visão usando leitores de tela, ícones decorativos e imagens agora são ignorados pelos leitores de tela (CQ-4272944).
 
 **Problemas corrigidos nos ativos do Experience Manager**
 
@@ -183,7 +183,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * [!UICONTROL A opção Start] na caixa de diálogo [!UICONTROL Criar fluxo de trabalho] para ativos em uma coleção está desativada, impedindo assim que o fluxo de trabalho seja acionado (NPR-32471).
 
-* Ao usar o menu suspenso em cascata em schemas de metadados, ao selecionar e salvar uma opção suspensa contendo um apóstrofo (do menu suspenso filho), a opção de apóstrofo selecionada desaparece após reabrir [!UICONTROL Propriedades] do ativo (NPR-32649).
+* Ao usar o pop-up em cascata em schemas de metadados, ao selecionar e salvar uma opção suspensa que contém um apóstrofo (do menu suspenso filho), a opção de apóstrofo selecionada desaparece após reabrir [!UICONTROL Propriedades] do ativo (NPR-32649).
 
 * [!UICONTROL A tarefa] de sincronização do Asset Insights será interrompida e falhará se encontrar entradas inválidas (no lado do Analytics) em vez de mover-se para a próxima entrada (NPR-32674).
 
@@ -207,19 +207,19 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * [!UICONTROL A opção Próxima] não está ativada na seleção do nó pai (onde a pasta filho único está visível) e na seleção da pasta filho (NPR-33275).
 
-* As permissões de check-in e check-out são desativadas no Adobe Asset Link (AAL) para usuários com permissão de exclusão, mesmo se outras permissões, como ler, criar ou modificar, forem permitidas para eles (NPR-33272).
+* As permissões de check-in e check-out são desativadas no Adobe Asset Link (AAL) para usuários com permissão de exclusão, mesmo se outras permissões, como ler, criar ou modificar, forem concedidas (NPR-33272).
 
 * As execuções de Recorte inteligente não estão disponíveis na caixa de diálogo de download de ativos (NPR-33167).
 
 * Exceção observada em registros ao abrir o painel de execuções para um PDF em uma pasta com perfil de recorte inteligente (CQ-4294201).
 
-* As predefinições de imagem não publicam, se o modo [!UICONTROL de sincronização de Mídia] dinâmica estiver desativado por padrão no AEM com o modo de execução Dynamic Media Scene7 (CQ-4294200).
+* As predefinições de imagem não publicam, se o modo [!UICONTROL de sincronização de Mídia] dinâmica estiver desativado por padrão no Experience Manager com o modo de execução Dynamic Media Scene7 (CQ-4294200).
 
-* O processamento de ativos enquanto o upload em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
+* O processamento de ativos enquanto o carregamento em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
 
-* Criar uma configuração de Dynamic Media no AEM funciona, mas na interface do usuário nada acontece ao selecionar Salvar (CQ-4292442).
+* A criação de uma configuração de Dynamic Media no Experience Manager funciona, mas na interface do usuário nada acontece ao selecionar Salvar (CQ-4292442).
 
-* A Pré-visualização de ativos de vídeo f4v não está funcionando na reprodução progressiva no Safari/Mac (CQ-4289844).
+* A Pré-visualização de ativos de vídeo F4V não está funcionando na reprodução progressiva no Safari/Mac (CQ-4289844).
 
 * A pasta extra é criada ao recortar inteligente um ativo que está dentro de uma pasta pai com `.` caractere de ponto em seu nome (CQ-4289337).
 
@@ -231,22 +231,22 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
    * O carregamento de binários grandes leva muito tempo para os servidores de processamento de imagem de Dynamic Media.
 
-   * O tempo de geração de miniaturas no AEM aumenta devido à arquitetura do Dynamic Media Scene7.
+   * O tempo de geração de miniaturas no Experience Manager aumenta devido à arquitetura do Dynamic Media Scene7.
 
 * Problemas de migração do Dynamic Media Scene7 falham para clientes com um grande número de ativos (CQ-4279206).
 
 * O layout do visualizador do vídeo 360 será quebrado se `setVideo` for usado e o vídeo será mudado para baixo ao usar `video= modifier` (CQ-4263201).
 
-* Uma mensagem de erro é exibida durante a instalação do pacote SDL AEM (NPR-33175).
+* Uma mensagem de erro é exibida durante a instalação do pacote SDL do Experience Manager (NPR-33175).
 
 ### Plataforma {#platform-6550}
 
 * O [!DNL Sling] filtro não será chamado se a entrada do `sling:match` mapa for criada em `/etc/maps` (NPR-33362).
-* O AEM trava devido a falha de segmentação com [!DNL Apache Lucene] (NPR-32988).
-* [!DNL Jackson] pacote principal ausente do arquivo jar uber do AEM (NPR-32848).
-* O CRXDE Lite não carrega conteúdo para usuários sem permissão de LEITURA na `jcr:primaryType` propriedade de um nó (NPR-32611).
-* [!DNL Granite] o scheduler da tarefa de manutenção é reinicializado com muita frequência durante as implantações do AEM (CQ-4294627).
-* Quando um query SQL é executado por um tempo maior, por exemplo, 7 horas, o AEM deixa de responder (NPR-33044).
+* O Experience Manager falha devido a falha de segmentação com [!DNL Apache Lucene] (NPR-32988).
+* [!DNL Jackson] pacote principal ausente do arquivo uberjar do Experience Manager (NPR-32848).
+* O CRXDE Lite não carrega conteúdo para usuários sem permissão de leitura na `jcr:primaryType` propriedade de um nó (NPR-32611).
+* [!DNL Granite] o scheduler da tarefa de manutenção é reinicializado com muita frequência durante as implantações do Experience Manager (CQ-4294627).
+* Quando um query SQL é executado por um longo tempo, por exemplo, 7 horas, o Experience Manager para de responder (NPR-33044).
 
 ### Interface do usuário {#ui-6550}
 
@@ -260,14 +260,14 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 * O cache interno é apagado quando uma página com um componente de Público alvo da Adobe é publicada (NPR-33162).
 * A integração com o Público alvo da Adobe não funciona no [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Ao configurar o Adobe Público alvo, os campos [!UICONTROL Empresa] e Conjunto [!UICONTROL de] relatórios não aparecem ao selecionar uma fonte de relatórios (NPR-32502).
-* Ao exportar fragmentos de experiência usando a E/S da Adobe, metadados como Produto de origem não são exportados para o Adobe Público alvo (NPR-32159).
-* Os usuários autorizados do IMS no grupo de administração local do AEM não podem criar ou modificar configurações do IMS (NPR-33045).
+* Ao exportar [!DNL Experience Fragments] usando a E/S da Adobe, metadados como Produto de origem não são exportados para o Adobe Público alvo (NPR-32159).
+* Os usuários autorizados do IMS no grupo administrativo local do Experience Manager não podem criar ou modificar configurações do IMS (NPR-33045).
 * A página de configurações do Adobe Launch não exibe todos os registros (NPR-33011).
 * Os usuários do grupo de autores de conteúdo não podem editar as propriedades de um componente de Público alvo da Adobe devido ao erro de JavaScript (NPR-32996).
 
 ### Projetos de tradução {#translation-6550}
 
-* As tags traduzidas não são importadas para o AEM a partir de serviços de tradução de terceiros (NPR-33154).
+* As tags traduzidas não são importadas para o Experience Manager a partir de serviços de tradução de terceiros (NPR-33154).
 * A página de configuração de tradução exibe um provedor de tradução incorreto que o usado para a tradução (NPR-32971).
 * Adicionar uma pasta de fragmento de experiência a um projeto de tradução existente cria um novo projeto (NPR-32843).
 * Um `NullPointerException` erro é visto nos registros ao executar um trabalho de tradução (NPR-32628).
@@ -278,19 +278,19 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 * Editor de páginas - Os painéis que usam o componente Bem e incluem dados salvos não são exibidos devido a atualizações em [!DNL Chrome] e [!DNL Firefox] versões (CQ-4292995).
 * MSM - A exclusão de um componente da página não exclui o componente da versão publicada da página (CQ-4292360).
 
-### Brand Portal {#assets-brand-portal-6550}
+### [!DNL Brand Portal] {#assets-brand-portal-6550}
 
 * Remover um schema de metadados publicado [!DNL Brand Portal] resulta em um erro (CQ-4292063).
-* Se um administrador configurar [!DNL Experience Manager Assets] 6.5.4 com o Brand Portal via Adobe Developer Console, o [!DNL Brand Portal] usuário não poderá publicar o ativo de uma pasta de contribuição de [!DNL Brand Portal] para [!DNL Experience Manager]. (NPR-33046).
+* Se um administrador configurar [!DNL Experience Manager Assets] 6.5.4 com o Brand Portal via Adobe Developer Console, o [!DNL Brand Portal] usuário não poderá publicar o ativo de uma pasta de contribuição de [!DNL Brand Portal] para [!DNL Experience Manager] (NPR-33046).
 * Replicação de Duplicado das pastas pai que causam conflitos (NPR-33001).
 
-### Communities {#communities-6550}
+### [!DNL Communities] {#communities-6550}
 
 * Não é possível excluir um cartão no console de moderação usando a opção de menu de edição rápida (NPR-33117).
 * Ocorre um erro ao acessar a página [!UICONTROL Atividade Stream] (NPR-33146).
 * Grupos excluídos na instância do autor não são removidos de todas as instâncias de publicação (NPR-33199).
 * Após a criação de um novo grupo, os autores não são redirecionados para a seção Grupo [!UICONTROL da] Comunidade no [!DNL Internet Explorer] 11 (NPR-33205).
-* O acesso a uma mensagem na Caixa de entrada do AEM não altera o status da mensagem para Lido (NPR-32764).
+* O acesso a uma mensagem na Caixa de entrada do Experience Manager não altera o status da mensagem para Lido (NPR-32764).
 * Editar um [!DNL Communities] grupo e alterar a imagem em miniatura não atualiza a imagem em miniatura do grupo (NPR-32599).
 * Um usuário não pode enviar um email para outro usuário em uma comunidade (NPR-32598).
 * Um blog enviado não é exibido até que o usuário atualize a página (NPR-32391).
@@ -299,13 +299,13 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 ### Fluxo de trabalho {#workflow-6550}
 
 * A opção [!UICONTROL Linha] do tempo no painel esquerdo leva mais tempo para carregar do que o esperado (NPR-32851).
-* Após reiniciar uma instância do AEM, o email para a tarefa de revisão de uma coleção inclui um link de carga incorreto (NPR-32774).
+* Após reiniciar uma instância do Experience Manager, o email para a tarefa de revisão de uma coleção inclui um link de carga incorreto (NPR-32774).
 
-### Forms {#forms-6550}
+### [!DNL Forms] {#forms-6550}
 
 >[!NOTE]
 >
->O AEM Service Pack não inclui correções para o AEM Forms. Eles são entregues usando um pacote complementar separado do Forms. Além disso, é lançado um instalador cumulativo que inclui correções para o AEM Forms no JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+>O Experience Manager Service Pack não inclui correções para [!DNL Forms]. Eles são entregues usando um pacote complementar separado do Forms. Além disso, é lançado um instalador cumulativo que inclui correções para o AEM Forms no JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
 * Gerenciamento de correspondência: A ordem dos ativos em uma área do público alvo é embaralhada após a submissão de uma carta (NPR-33359, NPR-33153).
 * Formulários adaptativos: Quando um usuário edita um formulário adaptável, a opção Fluxo de trabalho [!UICONTROL do] Start disponível no menu Informações [!UICONTROL da] página não funciona (NPR-33004).
@@ -326,76 +326,75 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 **Requisitos de configuração**
 
-* AEM 6.5.5.0 requires AEM 6.5. Check [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
-* O download do Service Pack está disponível no Compartilhamento de pacotes da Adobe, que pode ser acessado diretamente da instância do AEM 6.5.
+* AEM 6.5.5.0 requires AEM 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
+* O download do service pack está disponível na Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software da Adobe.
 * Em uma implantação com MongoDB e várias instâncias, instale o AEM 6.5.5.0 em uma das instâncias do autor usando o Gerenciador de pacotes.
 * Antes de instalar, faça um instantâneo ou um backup atualizado da sua instância do AEM.
 * Reinicie a instância antes da instalação. Embora isso seja necessário apenas quando a instância ainda está no modo de atualização (e esse é o caso quando a instância foi atualizada de uma versão anterior), é recomendável se a instância estava em execução por um período mais longo.
 
 >[!NOTE]
 >
->A Adobe não recomenda remover ou desinstalar o pacote AEM 6.5.5.0.
+>A Adobe não recomenda remover ou desinstalar o pacote Adobe Experience Manager 6.5.5.0.
 
 ### Instale o Service Pack {#install-service-pack}
 
-Execute as seguintes etapas para instalar o Service Pack em uma instância do AEM 6.5 existente:
+Execute as seguintes etapas para instalar o Service Pack em uma instância do Adobe Experience Manager 6.5 existente:
 
-1. Clique no link Compartilhamento [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) pacotes ou Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) software para baixar o pacote.
+1. Baixe o service pack do [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) ou [Software Distribution (Distribuição](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip)de software).
 
-1. Abra o Gerenciador [de](http://localhost:4502/crx/packmgr/index.jsp) pacotes e clique em **Carregar pacote** para fazer upload do pacote.
+1. Abra o Gerenciador de pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote. Para saber como usá-lo, consulte [Gerenciador](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)de pacotes.
 
-1. Selecione o nome do pacote e clique em **Instalar**.
+1. Select the package and click **[!UICONTROL Install]**.
 
 >[!NOTE]
 >
->**A caixa de diálogo na interface do usuário do Gerenciador de pacotes às vezes sai imediatamente durante a instalação da versão 6.5.5.0**
->
->Portanto, é recomendável aguardar a estabilização dos registros de erros antes de acessar a instância. O usuário deve aguardar os registros específicos relacionados à desinstalação do pacote do atualizador antes de ter certeza de que as instalações foram bem-sucedidas. Geralmente isso acontece no Safari, mas pode acontecer intermitentemente em qualquer navegador.
+>Às vezes, a caixa de diálogo na interface do usuário do Package Manager sai durante a instalação do service pack. A Adobe recomenda que você aguarde a estabilização dos registros de erros antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de ter certeza de que as instalações foram bem-sucedidas. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
 
 **Instalação automática**
 
-Há duas maneiras de instalar automaticamente o AEM 6.5.5.0 em uma instância em execução:
+Há duas maneiras de instalar automaticamente o Adobe Experience Manager 6.5.5.0 em uma instância em funcionamento:
 
-A. Coloque o pacote na `../crx-quickstart/install ` pasta enquanto o servidor estiver disponível on-line. O pacote é instalado automaticamente.
+A. Coloque o pacote na `../crx-quickstart/install` pasta quando o servidor estiver disponível on-line. O pacote é instalado automaticamente.
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/pt/crx/2-3/how_to/package_manager.html) - make sure that you use `cmd=install&recursive=true` - so the nested packages  are  installed.
+B. Use a API [HTTP do Gerenciador](https://docs.adobe.com/content/docs/pt/crx/2-3/how_to/package_manager.html)de pacotes. Use `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
 >[!NOTE]
 >
->O AEM 6.5.5.0 não oferece suporte à instalação do Bootstrap.
+>O Adobe Experience Manager 6.5.5.0 não oferece suporte à instalação do Bootstrap.
 
 **Validar instalação**
 
-1. A página Informações do produto (/system/console/ productinfo) exibe a string da versão atualizada `Adobe Experience Manager, Version 6.5.5.0` em Produtos instalados.
+1. A página de informações do produto (`/system/console/productinfo`) exibe a string da versão atualizada `Adobe Experience Manager (6.5.5.0)` em Produtos instalados.
 
-1. All  OSGi  bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: /system/console/bundles).
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is on version 1.10.6 or higher (Use Web Console: `/system/console/bundles`).
+1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-In order to see what platforms are certified to run with this release, please refer to the [Technical Requirements](/help/sites-deploying/technical-requirements.md).
+1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.10.6 or higher (Use Web Console: `/system/console/bundles`).
 
-### Install AEM Forms add-on package {#install-aem-forms-add-on-package}
+Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte os requisitos [](/help/sites-deploying/technical-requirements.md)técnicos.
+
+### Instalar o pacote de complementos do Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Pule se você não estiver usando o AEM Forms. As correções do AEM Forms são entregues por meio de um pacote complementar separado.
+>Pule se você não estiver usando o AEM Forms. Correções no Adobe Experience Manager Forms são fornecidas por meio de um pacote complementar separado.
 
-1. Verifique se você instalou o AEM Service Pack.
+1. Verifique se você instalou o Adobe Experience Manager Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
-### Install AEM Forms on JEE {#install-aem-forms-jee-installer}
+### Instalar o Adobe Experience Manager Forms no JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Pule se você não estiver usando o AEM Forms no JEE. Correções no AEM Forms em JEE são entregues por meio de um instalador separado.
+>Pule se você não estiver usando o AEM Forms no JEE. Correções no Adobe Experience Manager Forms em JEE são entregues por meio de um instalador separado.
 
-For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0014](https://helpx.adobe.com/br/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
+For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes for patch 0014](https://helpx.adobe.com/br/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
 
 ### UberJar {#uber-jar}
 
-The UberJar for AEM 6.5.5.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
+O UberJar para Experience Manager 6.5.5.0 está disponível no repositório [do](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/)Adobe Public Maven.
 
-To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
+Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/sites-developing/ht-projects-maven.md) e incluir a seguinte dependência no POM do projeto:
 
 ```shell
 <dependency>
@@ -415,7 +414,7 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | The **[!UICONTROL AEM Cloud Services Opt-In]** screen has been deprecated. Com a integração do AEM e do Público alvo atualizada no AEM 6.5 para suportar a API do Público alvo Standard, que usa autenticação por meio do Adobe IMS e E/S, e a função crescente do Adobe Launch para instrumentar páginas do AEM para análise e personalização, o assistente de opção de participação se tornou funcionalmente irrelevante. | Configurar conexões do sistema, autenticação do Adobe IMS e integrações de E/S da Adobe por meio dos respectivos serviços em nuvem do AEM |
+| Integrações | A tela Aceitação **[!UICONTROL dos serviços da]** AEM Cloud está obsoleta. Com a integração do AEM e do Público alvo atualizada no AEM 6.5 para suportar a API do Público alvo Standard, que usa autenticação por meio do Adobe IMS e E/S, e a função crescente do Adobe Launch para instrumentar páginas do AEM para análise e personalização, o assistente de opção de participação se tornou funcionalmente irrelevante. | Configure as conexões do sistema, a autenticação do Adobe IMS e as integrações de E/S da Adobe por meio dos respectivos serviços em nuvem do AEM. |
 
 ## Problemas conhecidos {#known-issues}
 
@@ -436,7 +435,7 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Nenhuma janela de manutenção encontrada em granito/operações/manutenção.
    * A validação do lado do servidor do Formulário adaptável falha quando funções de agregação, como SUM, MAX e MIN são usadas. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Não foram encontradas janelas de manutenção em granito/operações/manutenção.
-   * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner de compra.
+   * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner que pode ser comprado.
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
