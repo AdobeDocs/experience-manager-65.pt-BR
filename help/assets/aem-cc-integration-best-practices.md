@@ -3,9 +3,9 @@ title: Práticas recomendadas de integração [!DNL Adobe Experience Manager] e 
 description: Práticas recomendadas para [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integrar-se para dinamizar os workflows de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3249'
 ht-degree: 16%
 
 ---
@@ -160,7 +160,7 @@ A seguir estão exemplos de atualizações que normalmente não são relevantes:
 
 #### Usuários criativos com acesso direto ao DAM {#creative-users-with-direct-access-to-dam}
 
-Geralmente, equipes de criação interna ou agências/profissionais de criação integrados à rede interna têm acesso à instância do DAM, incluindo [!DNL Experience Manager] logon. [!DNL Experience Manager] e a infraestrutura de rede pode ser configurada para permitir o acesso direto a partes externas - normalmente organizações confiáveis, como agências que trabalham para um cliente - para ter acesso à rede, por exemplo via VPN ou IP whitelisting. [!DNL Experience Manager]
+Geralmente, equipes de criação interna ou agências/profissionais de criação integrados à rede interna têm acesso à instância do DAM, incluindo [!DNL Experience Manager] logon. [!DNL Experience Manager] e a infraestrutura de rede pode ser configurada para permitir o acesso direto a partes externas - normalmente organizações confiáveis, como agências que trabalham para um cliente - para ter acesso à rede, por exemplo, via VPN ou lista IP permitida. [!DNL Experience Manager]
 
 Nesses casos, o Adobe Asset Link ou o aplicativo de desktop ajuda a fornecer acesso fácil aos ativos finais/aprovados e permite salvar ativos prontos para criação no DAM. [!DNL Experience Manager]
 
@@ -173,11 +173,11 @@ Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 * Use o aplicativo desktop se o Link de ativo não funcionar.
 * Use o Portal [de marcas de ativos do](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html) Experience Manager para distribuir ativos com segurança a parceiros externos
 * Usar uma implementação personalizada de um portal de distribuição e seleção de fornecedor com base no [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Use a configuração de Controles de acesso em uma infraestrutura de rede [!DNL Experience Manager] necessária (por exemplo, VPN e listagem de IP) para dar a terceiros acesso a uma área dedicada de conteúdo no seu DAM. Eles podem usar a interface do usuário [!DNL Experience Manager] da Web para obter ativos e carregar novo conteúdo no DAM.
+* Use a configuração de Controles de acesso em uma infraestrutura de rede [!DNL Experience Manager] necessária (por exemplo, VPN e IP permitidos) para dar a terceiros acesso a uma área de conteúdo dedicada no seu DAM. Eles podem usar a interface do usuário [!DNL Experience Manager] da Web para obter ativos e carregar novo conteúdo no DAM.
 
 #### Trabalhos em andamento em ativos de [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
-Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas [!DNL Experience Manager] como alterações. Isso acelera o trabalho de um usuário de desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
+Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas [!DNL Experience Manager] como alterações. Isso acelera o trabalho de um usuário do desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
 
 O Adobe Asset Link oferta um bom suporte para este caso de uso:
 
