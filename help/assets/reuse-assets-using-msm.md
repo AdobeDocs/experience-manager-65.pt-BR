@@ -1,20 +1,23 @@
 ---
 title: Reutilize ativos usando MSM para [!DNL Adobe Experience Manager Assets].
-description: Use ativos em várias páginas/pastas que são derivadas e vinculadas a ativos pai. Os ativos permanecem sincronizados com uma cópia mestre e, com alguns cliques, recebem as atualizações dos ativos principais.
+description: Use ativos em várias páginas/pastas que são derivadas e vinculadas a ativos pai. Os ativos permanecem sincronizados com uma cópia principal e, com alguns cliques, recebem as atualizações dos ativos principais.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+workflow-type: tm+mt
+source-wordcount: '3367'
+ht-degree: 11%
 
 ---
 
 
-# Reutilizar ativos usando MSM para [!DNL Assets]{#reuse-assets-using-msm-for-assets}
+# Reutilizar ativos usando MSM para [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 A funcionalidade do Multi Site Manager (MSM) em [!DNL Adobe Experience Manager] permite que os usuários reutilizem o conteúdo criado uma vez e reutilizado em vários locais da Web. O mesmo está disponível para ativos digitais que o MSM para [!DNL Assets] funcionalidade. Usando o MSM para [!DNL Assets], você pode:
 
 * Crie ativos uma vez e faça cópias desses ativos para reutilizá-los em outras áreas do site.
-* Mantenha várias cópias sincronizadas e atualize a cópia mestre original uma vez para encaminhar as alterações para as cópias secundárias.
+* Mantenha várias cópias sincronizadas e atualize a cópia primária original uma vez para enviar as alterações para as cópias secundárias.
 * Faça alterações locais suspendendo temporária ou permanentemente a vinculação entre ativos pai e filho.
 
 ## Pré-requisitos {#configprereq}
@@ -25,7 +28,7 @@ Para usar o MSM para [!DNL Assets], instale pelo menos o Service Pack 1. Para ob
 
 ### Como funciona e benefícios {#how-it-works-and-the-benefits}
 
-Para entender os cenários de uso para reutilizar o mesmo conteúdo (texto e ativos) em vários locais da Web, consulte [possíveis cenários](/help/sites-administering/msm.md)MSM. [!DNL Experience Manager] mantém um link entre o ativo original e suas cópias vinculadas, chamadas de cópias ativas (LCs). A vinculação mantida permite que alterações centralizadas sejam enviadas para muitas cópias online. Isso permite atualizações mais rápidas, além de eliminar as limitações do gerenciamento de cópias de duplicados. A propagação das alterações é livre de erros e centralizada. A funcionalidade permite espaço para atualizações limitadas a cópias online selecionadas. Os usuários podem desanexar a vinculação, ou seja, interromper a herança, e fazer edições locais que não serão substituídas quando a próxima vez que a cópia mestre for atualizada e as alterações forem distribuídas. A desanexação pode ser feita para alguns campos de metadados selecionados ou para um ativo inteiro. Ele permite flexibilidade para atualizar localmente ativos que são originalmente herdados de uma cópia mestre.
+Para entender os cenários de uso para reutilizar o mesmo conteúdo (texto e ativos) em vários locais da Web, consulte [possíveis cenários](/help/sites-administering/msm.md)MSM. [!DNL Experience Manager] mantém um link entre o ativo original e suas cópias vinculadas, chamadas de cópias ativas (LCs). A vinculação mantida permite que alterações centralizadas sejam enviadas para muitas cópias online. Isso permite atualizações mais rápidas, além de eliminar as limitações do gerenciamento de cópias de duplicados. A propagação das alterações é livre de erros e centralizada. A funcionalidade permite espaço para atualizações limitadas a cópias online selecionadas. Os usuários podem desanexar a vinculação, ou seja, interromper a herança, e fazer edições locais que não são substituídas quando a próxima vez que a cópia principal for atualizada e as alterações forem distribuídas. A desanexação pode ser feita para alguns campos de metadados selecionados ou para um ativo inteiro. Ele permite flexibilidade para atualizar localmente ativos que são originalmente herdados de uma cópia primária.
 
 O MSM mantém uma relação ao vivo entre o ativo de origem e suas cópias ao vivo para que:
 
@@ -34,7 +37,7 @@ O MSM mantém uma relação ao vivo entre o ativo de origem e suas cópias ao vi
 
 ### Glossário de MSM para [!DNL Assets] termos {#glossary}
 
-**Fonte:** Os ativos ou pastas originais. Cópia principal da qual são derivadas cópias online.
+**Fonte:** Os ativos ou pastas originais. Cópia principal da qual as cópias online são derivadas.
 
 **Live copy:** A cópia dos ativos/pastas de origem que está em sincronização com a origem. As cópias online podem ser uma fonte de outras cópias online. Veja como criar LCs.
 
@@ -257,7 +260,7 @@ Você pode remover completamente a relação entre uma fonte e uma cópia ao viv
 
    ![A ação de desanexação remove completamente a relação entre a origem e a cópia ativa](assets/livecopy_detach.png)
 
-   *Figure: Detach action completely removes the relationship between source and live copy.*
+   *Figura: A ação de desanexar remove completamente a relação entre a fonte e a cópia ativa.*
 
    >[!CAUTION]
    >
@@ -267,7 +270,7 @@ Alternatively, you can quickly detach multiple assets in a live copy folder from
 
 ## Execute ações em muitos ativos em uma pasta live copy {#bulkactions}
 
-Se você tiver vários ativos em uma pasta live copy, iniciar ações em cada ativo pode ser tedioso. Você pode iniciar rapidamente as ações básicas em muitos ativos a partir do [!UICONTROL Live Copy Console]. Os métodos acima continuam a funcionar para ativos individuais.
+Se você tiver vários ativos em uma pasta live copy, iniciar ações em cada ativo pode ser tedioso. Você pode iniciar rapidamente as ações básicas em muitos ativos do [!UICONTROL Live Copy Console]. Os métodos acima continuam a funcionar para ativos individuais.
 
 1. Selecione uma pasta de origem. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**.
@@ -277,34 +280,34 @@ Se você tiver vários ativos em uma pasta live copy, iniciar ações em cada at
 
    *Figura: Atualize facilmente muitos ativos em pastas de live copy do console Visão geral[!UICONTROL do]Live Copy.*
 
-## Estender MSM para [!DNL Assets]{#extendapi}
+## Estender MSM para [!DNL Assets] {#extendapi}
 
 [!DNL Experience Manager] permite estender a funcionalidade usando as APIs Java MSM. Por exemplo, [!DNL Assets]a extensão funciona exatamente como funciona com a MSM para [!DNL Sites]. Para obter detalhes, consulte [Extensão do MSM](/help/sites-developing/extending-msm.md) e as seguintes informações sobre tarefas específicas:
 
 * [Visão geral das APIs](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Criar uma nova ação de sincronização](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Create a new rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
+* [Criar uma nova configuração de implantação](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
 * [Criar e usar uma classe simples do LiveActionFactory](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
 >[!NOTE]
 >
->* Blueprint in MSM for [!DNL Sites] is called Live Copy source in MSM for [!DNL Assets].
+>* O Blueprint no MSM for [!DNL Sites] é chamado de fonte de Live Copy no MSM para [!DNL Assets].
 >* A remoção da etapa de capítulos no assistente para criação de site não é compatível com o MSM para [!DNL Assets].
->* Configuring MSM locks, on the page properties (Touch-enabled UI), is not supported in MSM for [!DNL Assets].
+>* A configuração de bloqueios MSM, nas propriedades da página (interface habilitada para toque), não é suportada no MSM para [!DNL Assets].
 
 
-## Impact of asset management tasks on live copies {#manageassets}
+## Impacto das tarefas de gerenciamento de ativos em cópias online {#manageassets}
 
-Live copies and sources are assets or folders that can be managed, to a certain extent, as digital assets. Some asset management tasks in [!DNL Experience Manager] have a specific impact on the live copies.
+As cópias online e as fontes são ativos ou pastas que podem ser gerenciados, até certo ponto, como ativos digitais. Algumas tarefas de gerenciamento de ativos em [!DNL Experience Manager] têm um impacto específico nas cópias online.
 
-* Copying a live copy, creates a live copy asset with the same source as the first live copy.
-* When you move either a source or its live copy, the live relationship is retained.
-* Edit action does not work for live copy assets. Se a origem de uma live copy for uma live copy em si mesma, a ação de edição não funcionará para ela.
-* Check-out action is not available for live copy assets.
-* For source folder, the option to create review tasks is available.
-* When viewing the asset listing in list view and column view, a live copy asset or folder displays &#39;live copy&#39; against it. This helps you easily identify live copies in a folder.
+* A cópia de uma live copy cria um ativo live copy com a mesma fonte da primeira live copy.
+* Quando você move uma fonte ou sua cópia ao vivo, a relação ao vivo é mantida.
+* A ação Editar não funciona para ativos de cópia ativa. Se a origem de uma live copy for uma live copy em si mesma, a ação de edição não funcionará para ela.
+* A ação de check-out não está disponível para ativos de live copy.
+* Para a pasta de origem, a opção para criar tarefas de revisão está disponível.
+* Ao exibir a listagem de ativos na visualização de listas e na visualização de colunas, um ativo ou pasta de live copy exibirá &#39;live copy&#39; em relação a ele. Isso ajuda você a identificar facilmente cópias online em uma pasta.
 
-## Compare MSM for [!DNL Assets] and [!DNL Sites] {#comparison}
+## Comparar MSM para [!DNL Assets] e [!DNL Sites] {#comparison}
 
 Em mais cenários, o MSM para [!DNL Assets] corresponde ao comportamento da funcionalidade MSM para sites. Algumas diferenças principais são:
 
@@ -322,7 +325,7 @@ Algumas práticas recomendadas para MSM são:
 
 * Planeje os relacionamentos pai-filho dos ativos e fluxos de conteúdo antes de iniciar a implementação.
 
-## Limitations and known issues of MSM for [!DNL Assets] {#limitations}
+## Limitações e problemas conhecidos da MSM para [!DNL Assets] {#limitations}
 
 A seguir há uma limitação da MSM para [!DNL Assets].
 
