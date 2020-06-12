@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '9304'
+source-wordcount: '9303'
 ht-degree: 4%
 
 ---
@@ -63,6 +63,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * Na barra de ferramentas, clique no ícone **[!UICONTROL Criar]** . Em seguida, no menu, clique em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do [!DNL Assets] usuário. A caixa de diálogo para renomear o arquivo não é exibida.
+
    ![Criar opção para carregar ativos](assets/create-options.png)
 
    Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
@@ -119,6 +120,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * o nome do arquivo de ativo não deve conter `* / : [ \\ ] | # % { } ? &`
    * o nome da pasta de ativos não deve conter `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    Não inclua caracteres especiais nas extensões dos nomes de arquivos do ativo.
 
    ![A caixa de diálogo de andamento do upload mostra o status dos arquivos carregados com êxito e dos arquivos que não foram carregados](assets/chlimage_1-10.png)
@@ -350,6 +352,7 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 1. Para aplicar zoom no ativo:
    1. Use a `Tab` tecla para mover o foco para o ícone de zoom.
    1. Use a `Enter` tecla para aplicar zoom na imagem.
+
    Para diminuir o zoom, use a `Tab` tecla para mover o foco para o ícone de afastar o zoom e pressione `Enter`.
 
 1. Use as teclas `Shift` + `Tab` para mover o foco de volta para a imagem.
@@ -407,6 +410,7 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
    * Número de vezes que o ativo foi exibido ou baixado
    * Canais/dispositivos através dos quais o ativo foi usado
    * Soluções criativas onde o ativo foi usado recentemente
+
    Para obter mais detalhes, consulte [Asset Insights](/help/assets/touch-ui-asset-insights.md).
 
 1. Click **[!UICONTROL Save &amp; Close]**.
@@ -480,6 +484,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    * Clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Selecionar destino]** .
 
    * Clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
+
    Se você não atualizar referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
 
 ## Gerenciar execuções {#managing-renditions}
@@ -555,6 +560,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
       * Se o ativo não tiver referências, ele será excluído.
       * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
+
    >[!NOTE]
    >
    >Para excluir ativos, um usuário requer permissões de exclusão em `dam/asset`. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
@@ -607,6 +613,7 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
    * **[!UICONTROL Cancelar]** para parar a ação
    * **[!UICONTROL Cancele a publicação]** para confirmar que os ativos não foram publicados (não estão mais disponíveis no ambiente de publicação) na data especificada.
+
    >[!NOTE]
    >
    >Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite cancelar a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
@@ -677,6 +684,7 @@ As ferramentas de edição na [!DNL Assets] interface permitem executar pequenos
    * Selecione o ativo e clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
    * Clique no ícone **[!UICONTROL Editar]** que aparece em um ativo na visualização Cartão.
    * Na página do ativo, clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
+
    ![Ícone Editar na barra de ferramentas](assets/edit_icon.png)
 
 1. Para recortar a imagem, clique no ícone **Recortar** .
@@ -749,6 +757,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    * [Ações rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
+
    ![Ícone Anotar](assets/chlimage_1-29.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
@@ -940,6 +949,7 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
 1. Para comparar duas versões de uma imagem, siga estas etapas:
    * Clique na versão a ser comparada com a versão atual.
    * Arraste o controle deslizante para a esquerda para sobrepor esta versão sobre a versão atual e compare.
+
    ![Use o controle deslizante para comparar as versões selecionadas de um ativo com a versão atual](assets/version-slider.gif)
 
    *Figura: Use o controle deslizante para comparar facilmente as versões selecionadas de um ativo com a versão atual.*
