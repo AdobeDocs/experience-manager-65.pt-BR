@@ -3,7 +3,7 @@ title: Organize seus ativos digitais
 description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 1%
@@ -26,7 +26,7 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
 
    * **Pastas** de desenvolvimento: contém ativos digitais em que você está trabalhando no momento.
    * **Pastas** do cliente: contém ativos digitais com base em clientes ou nomes de projetos.
-   * **Pastas** principais: contém ativos digitais originais de origem.
+   * **Pastas** primárias: contém ativos digitais originais de origem.
    * **Pastas** de representação: contém renderizações e cópias dos ativos digitais originais de origem.
    * **Pastas** de tamanho de arquivo: contém ativos digitais baseados em arquivos de tamanho pequeno, médio ou grande.
    * **Pastas** de preparo: contém ativos digitais que estão prontos para publicação ao vivo em seu site.
