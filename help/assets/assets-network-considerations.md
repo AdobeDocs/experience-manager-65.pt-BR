@@ -3,9 +3,9 @@ title: Considerações e requisitos de rede dos ativos
 description: Discute considerações de rede ao projetar uma implantação dos ativos Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ O computador exibido à direita tem um valor upstream limitado para a rede corpo
 
 ## Topologia da rede corporativa {#topology-of-the-corporate-network}
 
-![chlimage_1-354](assets/chlimage_1-354.png)
+![chlimage_1-356](assets/chlimage_1-354.png)
 
 O diagrama exibe velocidades de uplink mais altas dentro da rede corporativa do que o geralmente é usado. Esses tubos são recursos compartilhados. Se for esperado que o switch compartilhado trate de 50 clientes, ele poderá ser um ponto de bloqueio. No diagrama inicial, apenas dois computadores compartilham a conexão específica.
 
@@ -58,7 +58,7 @@ firewalls e proxies corporativos também podem moldar a largura de banda de vár
 
 Neste exemplo, a empresa tem um uplink de 10 Gbps. Deve ser grande o suficiente para vários clientes. Além disso, o firewall impõe um limite de taxa de host de 10 Mbps. Essa limitação pode, potencialmente, limitar o tráfego para um único host a 10 Mbps, mesmo que o uplink para a Internet seja de 10 Gbps.
 
-Este é o menor ponto de estrangulamento orientado para o cliente. No entanto, você pode avaliar uma alteração ou uma lista de permissões com o grupo de operações de rede responsável por esse firewall.
+Este é o menor ponto de estrangulamento orientado para o cliente. No entanto, você pode avaliar se há uma alteração ou configuração de uma lista permitida com o grupo de operações de rede responsável por esse firewall.
 
 A partir de exemplos de diagramas, você pode concluir que seis dispositivos compartilham um canal conceitual de 10 Mbps. Dependendo do tamanho dos ativos alavancados, isso pode ser inadequado para atender às expectativas do usuário.
 
