@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrar com [!DNL Adobe InDesig
 description: Saiba como [!DNL Adobe Experience Manager Assets] se integrar [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 4%
 
 ---
@@ -194,18 +194,19 @@ Para configurar o número de trabalhos de IDS paralelos:
 
    Se houver várias máquinas em execução [!DNL InDesign Server], adicione pontos de extremidade SOAP (número de processadores por máquina -1) para cada máquina.
 
-   >[!NOTE]
-   >
-   >Você pode optar por ativar a Lista negra de trabalhadores IDS ao trabalhar com um pool de trabalhadores.
-   >
-   >
-   >Para fazer isso, ative a caixa de seleção **[!UICONTROL enable.retry.name]** , na `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuração, que ativa as tentativas de trabalho do IDS.
-   >
-   >
-   >Além disso, na `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuração, defina um valor positivo para o `max.errors.to.blacklist` parâmetro que determina o número de tentativas da tarefa antes de excluir uma IDS da lista de manipuladores de tarefas.
-   >
-   >
-   >Por padrão, após o tempo configurável (retry.interval.to.whitelist.name) em minutos, o IDS worker é revalidado. Se o trabalhador for encontrado online, ele será removido da lista negra.
+<!-- 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
+>[!NOTE]
+>
+>Ao trabalhar com um pool de trabalhadores, você pode ativar a lista bloqueada de funcionários do IDS.
+>
+>Para fazer isso, ative a caixa de seleção **[!UICONTROL enable.retry.name]** , na `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuração, que ativa as tentativas de trabalho do IDS.
+>
+>Além disso, na `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuração, defina um valor positivo para o `max.errors.to.blacklist` parâmetro que determina o número de tentativas da tarefa antes de excluir uma IDS da lista de manipuladores de tarefas.
+>
+>Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o IDS worker é revalidado. Se o trabalhador estiver online, ele será removido da lista bloqueada.
 
 ## Habilitar suporte para [!DNL InDesign Server] 10.0 ou posterior {#enabling-support-for-indesign-server-or-later}
 
