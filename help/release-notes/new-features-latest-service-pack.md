@@ -4,10 +4,10 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1849'
+ht-degree: 2%
 
 ---
 
@@ -56,9 +56,9 @@ Este artigo destaca os recursos incluídos no Service Pack 6.5 mais recente, os 
 
 * Muitos elementos da interface do usuário, controles e campos de formulário de entrada podem ser acessados usando o teclado.
 
-* A taxa de cores e contraste de alguns elementos da interface do usuário são atualizadas para que os usuários com visão limitada ou usuários sem percepção de cor possam distinguir esses elementos da interface do usuário. Por exemplo, a cor dos ícones de classificação de estrelas (como na seção [!UICONTROL Classificação] da guia [!UICONTROL Avançado] em [!UICONTROL Propriedades] do ativo ou na visualização do cartão) é alterada para contraste adequado.
+* A cor e o contraste de alguns elementos da interface do usuário são atualizados para que os usuários com visão limitada ou usuários sem percepção de cor possam distinguir esses elementos da interface do usuário. Por exemplo, a cor dos ícones de classificação de estrelas (como na seção [!UICONTROL Classificação] da guia [!UICONTROL Avançado] em [!UICONTROL Propriedades] do ativo ou na visualização do cartão) é alterada para contraste adequado.
 
-   ![Ícones de classificação com melhor taxa de contraste](assets/star-rating-icons.png)
+   ![Ícones de classificação com melhor contraste](assets/star-rating-icons.png)
 
 ### Funcionamento de exceção aprimorado {#exception-handling}
 
@@ -146,9 +146,10 @@ As etapas para configurar [!DNL Experience Manager Assets] com [!DNL Brand Porta
 
 * As caixas de seleção de estado misto (nas quais, a menos que você marque todos os predicados aninhados, as caixas de seleção de primeiro nível não serão selecionadas e passarão por elas) no painel Filtros poderão ser lidas pelos leitores de tela.
 
-* As restrições de formato de data e hora são fornecidas nos rótulos de campo dos campos de data, para permitir que os usuários digitem a data no formato correto usando o teclado. Por exemplo, `On Time (MM-DD-YYYY HH:mm)`. Aqui MM é mês em formato de dois dígitos, AAAA é ano, DD é dia em formato de dois dígitos, HH é hora em formato militar de 24 horas e mm é minuto.
+* As restrições de formato de data e hora são fornecidas nos rótulos de campo dos campos de data, para permitir que os usuários digitem a data no formato correto usando o teclado.
+Por exemplo, `On Time (MM-DD-YYYY HH:mm)`. Aqui MM é mês em formato de dois dígitos, AAAA é ano, DD é dia em formato de dois dígitos, HH é hora em formato militar de 24 horas e mm é minuto.
 
-* Os leitores de tela anunciam o `X` símbolo para remover as tags selecionadas e o número das tags selecionadas.
+* Os leitores de tela agora anunciam o `X` símbolo para remover as tags selecionadas junto com o número de tags selecionadas.
 
 #### Pesquisa visual por [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
@@ -206,7 +207,7 @@ Você pode compartilhar seus itens da Caixa de entrada com outro usuário. Quand
 
 #### Defina as configurações de disponibilidade para itens da Caixa de entrada de um usuário do AEM Forms (6.5.3.0) {#configure-out-of-office}
 
-Se planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
+Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
 Você tem a opção de especificar uma data e hora de start e uma data e hora de término para que suas configurações de fora do escritório entrem em vigor. Você pode definir uma pessoa padrão para a qual todos os itens serão enviados. Consulte [Configurar configurações](../forms/using/configure-out-of-office-settings.md)fora do escritório.
 
 #### Gerar várias comunicações interativas usando a API de lote para AEM Forms (6.5.3.0) {#generate-multiple-ic}
