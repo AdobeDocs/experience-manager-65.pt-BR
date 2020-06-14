@@ -4,10 +4,10 @@ description: Notas de versão específicas do Adobe Experience Manager 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb48bba01b78a0724f3a07875f601367520b2a8e
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4510'
+ht-degree: 7%
 
 ---
 
@@ -135,7 +135,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * O menu no painel esquerdo agora está acessível. A funcionalidade e o propósito de expandir o menu são anunciados adequadamente pelos leitores de tela (NPR-33068).
 
-* A caixa de Lista e muitos outros elementos da interface do usuário agora estão acessíveis para usuários que não visualizam o leitor de tela, e as seguintes informações sobre eles são anunciadas pelos leitores de tela (NPR-33040):
+* A caixa de Lista e muitos outros elementos da interface do usuário agora estão acessíveis para usuários que não visualizam a tela, e as seguintes informações sobre eles são anunciadas pelos leitores de tela (NPR-33040):
 
    * se a entrada do usuário é necessária em um elemento antes do envio do formulário.
    * se um elemento não é editável.
@@ -173,7 +173,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * [!UICONTROL A página do Editor] de Schemas de metadados e seus elementos agora estão acessíveis usando o teclado e são compatíveis com o leitor de tela (CQ-4290962, CQ-4272953).
 
-* O `X` símbolo para remover as tags selecionadas agora é anunciado pelos leitores de tela, juntamente com o número de tags selecionadas (CQ-4273017).
+* A finalidade do `X` símbolo para remover as tags selecionadas agora é anunciada pelos leitores de tela, juntamente com o número de tags selecionadas (CQ-4273017).
 
 * Para evitar confusão para usuários sem visão usando leitores de tela, ícones decorativos e imagens agora são ignorados pelos leitores de tela (CQ-4272944).
 
@@ -257,13 +257,13 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 ### Integrações {#integrations-6550}
 
-* O cache interno é apagado quando uma página com um componente de Público alvo da Adobe é publicada (NPR-33162).
-* A integração com o Público alvo da Adobe não funciona no [!DNL Windows Internet Explorer] 11 (NPR-33111).
-* Ao configurar o Adobe Público alvo, os campos [!UICONTROL Empresa] e Conjunto [!UICONTROL de] relatórios não aparecem ao selecionar uma fonte de relatórios (NPR-32502).
-* Ao exportar [!DNL Experience Fragments] usando a E/S da Adobe, metadados como Produto de origem não são exportados para o Adobe Público alvo (NPR-32159).
+* O cache interno é apagado quando uma página com um componente do Adobe Target é publicada (NPR-33162).
+* A integração com o Adobe Target não funciona no [!DNL Windows Internet Explorer] 11 (NPR-33111).
+* Ao configurar o Adobe Target, os campos [!UICONTROL Empresa] e Conjunto [!UICONTROL de] relatórios não aparecem ao selecionar uma fonte de relatórios (NPR-32502).
+* Ao exportar [!DNL Experience Fragments] usando a E/S da Adobe, metadados como Produto de origem não são exportados para o Adobe Target (NPR-32159).
 * Os usuários autorizados do IMS no grupo administrativo local do Experience Manager não podem criar ou modificar configurações do IMS (NPR-33045).
 * A página de configurações do Adobe Launch não exibe todos os registros (NPR-33011).
-* Os usuários do grupo de autores de conteúdo não podem editar as propriedades de um componente de Público alvo da Adobe devido ao erro de JavaScript (NPR-32996).
+* Os usuários do grupo de autores de conteúdo não podem editar as propriedades de um componente do Adobe Target devido ao erro de JavaScript (NPR-32996).
 
 ### Projetos de tradução {#translation-6550}
 
@@ -414,7 +414,7 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | A tela Aceitação **[!UICONTROL dos serviços da]** AEM Cloud está obsoleta. Com a integração do AEM e do Público alvo atualizada no AEM 6.5 para suportar a API do Público alvo Standard, que usa autenticação por meio do Adobe IMS e E/S, e a função crescente do Adobe Launch para instrumentar páginas do AEM para análise e personalização, o assistente de opção de participação se tornou funcionalmente irrelevante. | Configure as conexões do sistema, a autenticação do Adobe IMS e as integrações de E/S da Adobe por meio dos respectivos serviços em nuvem do AEM. |
+| Integrações | A tela Aceitação **[!UICONTROL dos serviços da]** AEM Cloud está obsoleta. Com a integração do AEM e do Público alvo atualizada no AEM 6.5 para suportar a API do Target Standard, que usa autenticação por meio do Adobe IMS e E/S, e a função crescente do Adobe Launch para instrumentar páginas do AEM para análise e personalização, o assistente de opção de participação se tornou funcionalmente irrelevante. | Configure as conexões do sistema, a autenticação do Adobe IMS e as integrações de E/S da Adobe por meio dos respectivos serviços em nuvem do AEM. |
 
 ## Problemas conhecidos {#known-issues}
 
