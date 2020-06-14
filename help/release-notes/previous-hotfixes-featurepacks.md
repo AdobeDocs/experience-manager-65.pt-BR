@@ -3,9 +3,9 @@ title: Notas de versão do Service Pack anterior do Adobe Experience Manager 6.5
 description: Notas de versão específicas do Adobe Experience Manager 6.5 Service Pack 3 e anterior.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '8094'
+source-wordcount: '8093'
 ht-degree: 37%
 
 ---
@@ -93,7 +93,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * Falha na geração da execução de ativos com ${extension} (NPR-32294).
 
-* Os URLs do histórico de versões são exibidos no campo Referenciado por na página de Propriedades de ativos (NPR-31889).
+* Os URLs do histórico de versões são exibidos no campo Referenciado por na página Propriedade dos ativos (NPR-31889).
 
 * O arquivo ZIP baixado do DAM não pode ser aberto usando o WinZip (NPR-32293).
 
@@ -295,10 +295,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * O compartilhamento de ativos não funciona para um ativo que tem um caractere de adição (`+`) no nome do arquivo (NPR-31547).
 
-* As edições no formulário de pesquisa padrão Assets Admin * Search Rail não funcionam como esperado (NPR-31502).
-
-<!-- Review: Check if this seemingly stray asterisk is needed there or not.
--->
+* As edições no formulário de pesquisa padrão Assets Admin Search Rail não funcionam como esperado (NPR-31502).
 
 * As sugestões não são exibidas ao usar o Omnisearch em ativos visualização para pesquisar ativos (NPR-31496).
 
@@ -312,7 +309,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Não é possível remover todos os membros (utilizadores/grupos) da seção Membros de uma pasta; ao tentar remover todos os usuários, o usuário conectado é adicionado à lista (NPR-31171).
 
-* Os ativos com um símbolo de adição (`+`) no nome do arquivo não podem ser excluídos (NPR-31162).
+* Os ativos com o símbolo de adição (`+`) no nome do arquivo não podem ser excluídos (NPR-31162).
 
 * O menu suspenso Criar, que está visível no menu superior ao selecionar uma pasta, não mostra a opção &quot;Pasta&quot; como uma opção de criação (NPR-30877).
 
