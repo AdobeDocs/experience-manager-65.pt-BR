@@ -4,9 +4,9 @@ description: Sugestões e orientações [!DNL Experience Manager] sobre configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: da2e435f33e8527793e009700c30e60868d196be
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2776'
 ht-degree: 0%
 
 ---
@@ -300,6 +300,7 @@ Para minimizar a latência e alcançar alta throughput através da utilização 
 * Implantar no Java 8.
 * Defina os parâmetros JVM ideais.
 * Configure um DataStore do sistema de arquivos ou um armazenamento de dados S3.
+* Desabilitar a geração de subativos. Se estiver ativado, o fluxo de trabalho do AEM cria um ativo separado para cada página em um ativo de várias páginas. Cada uma dessas páginas é um ativo individual que consome mais espaço em disco, requer controle de versão e processamento de fluxo de trabalho adicional. Se você não precisar de páginas separadas, desabilite a geração de subativos e atividades de extração de página.
 * Ative workflows transitórios.
 * Ajuste as filas de fluxo de trabalho Granite para limitar as tarefas simultâneas.
 * Configure [!DNL ImageMagick] para limitar o consumo de recursos.
