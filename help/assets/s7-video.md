@@ -1,6 +1,6 @@
 ---
 title: Vídeo
-description: Saiba mais sobre os ativos AEM do gerenciamento centralizado de ativos de vídeo, onde você pode fazer upload de vídeos para autocodificação no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente dos ativos AEM. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
+description: Saiba mais sobre os AEM Assets centralizados de gerenciamento de ativos de vídeo nos quais você pode fazer upload de vídeos para autocodificação no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente dos AEM Assets. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,7 +8,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 54%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 Os ativos fornecem gerenciamento centralizado de ativos de vídeo, onde você pode fazer upload de vídeos diretamente para os Ativos para autocodificação para o Dynamic Media Classic (Scene7) e acessar vídeos do Dynamic Media Classic diretamente dos Ativos para criação de página.
 
-A integração de vídeo do Dynamic Media Classic amplia o alcance do vídeo otimizado para todas as telas (detecção automática de dispositivos e largura de banda).
+A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas (detecção automática de dispositivo e largura de banda).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
 * Assets: é possível incluir conjuntos de vídeos adaptáveis, em vez de somente ativos de vídeo individuais. Um conjunto de vídeos adaptáveis é um contêiner para todas as representações de vídeo necessárias para reproduzir o vídeo de forma contínua em várias telas. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo que são codificadas em diferentes taxas de bits e formatos, como 400 kbps, 800 kbps e 1000 kbps. Você usa um conjunto de vídeos adaptáveis, juntamente com o componente de vídeo do S7, para transmitir vídeo adaptável em vários tipos de telas, incluindo telas de computadores, e dispositivos móveis com iOS, Android, Blackberry e Windows. Consulte a [documentação do Scene7 sobre conjuntos de vídeos adaptáveis](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html) para obter mais informações.
@@ -29,7 +32,7 @@ O processo de codificação de vídeo padrão se baseia no uso da integração e
 * Miniaturas de FFMPEG
 * Codificação FFMPEG
 
-Lembre-se de que ativar e configurar a integração do Dynamic Media Classic não remove nem desativa automaticamente essas duas etapas do fluxo de trabalho do fluxo de trabalho de ingestão DAM predefinido. Se você já usa a codificação de vídeo baseada em FFMPEG no AEM, é provável que tenha o FFMPEG instalado em seus ambientes de criação. Nesse caso, um novo vídeo assimilado usando DAM seria codificado duas vezes: uma vez do codificador FFMPEG e uma vez da integração do Dynamic Media Classic.
+Lembre-se de que ativar e configurar a integração do Dynamic Media Classic não remove nem desativa automaticamente essas duas etapas do fluxo de trabalho do fluxo de trabalho de ingestão DAM predefinido. Se você já usa a codificação de vídeo baseada em FFMPEG no AEM, é provável que tenha o FFMPEG instalado em seus ambientes de criação. Nesse caso, um novo vídeo assimilado usando DAM seria codificado duas vezes: uma vez do codificador FFMPEG e uma vez da integração com o Dynamic Media Classic.
 
 Se você tiver a codificação de vídeo baseada em FFMPEG configurada no AEM e o FFMPEG instalado, a Adobe recomenda remover os dois workflows FFMPEG dos workflows de ingestão do DAM.
 
@@ -94,16 +97,16 @@ Se você precisar atualizar as predefinições de codificação de vídeo e do v
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
+## Fazer upload do vídeo de origem primária para o Scene7 a partir do Adobe DAM {#uploading-your-master-video}
 
 1. Navegue até a pasta de destino DAM CQ onde você definiu as configurações de nuvem com os perfis de codificação do Scene7.
-1. Clique em **[!UICONTROL Fazer upload]** para fazer upload do vídeo mestre. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Clique em **[!UICONTROL Carregar]** para carregar o vídeo de origem primária. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
    >Pode levar algum tempo para gerar as miniaturas de vídeo.
 
-   Arrastar o vídeo mestre do DAM para o componente de vídeo permite acessar *todas* as execuções de proxy codificadas do Scene7 para entrega.
+   Dragging the DAM primary source video on to the video component accesses *all* of the Scene7 encoded proxy renditions for delivery.
 
 ## Comparação do componente de vídeo de base com o componente de vídeo do Scene7 {#foundation-video-component-versus-scene-video-component}
 
