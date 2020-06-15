@@ -3,9 +3,9 @@ title: Importe e exporte metadados de ativos em massa.
 description: Importação e exportação em massa de metadados de ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 9d6f9b8f8d49ae3322a6f5f677292afbd48beeda
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '808'
 ht-degree: 5%
 
 ---
@@ -80,6 +80,7 @@ Alguns casos de uso para exportar metadados em massa são:
 * O arquivo CSV para importar metadados de ativos está em um formato muito específico. Para economizar esforço e tempo e evitar erros não intencionais, você pode start na criação do CSV usando o formato de um arquivo CSV exportado.
 * Ao importar metadados usando um arquivo CSV, o formato de data necessário é `YYYY-MM-DDThh:mm:ss.fff-00:00`. Se qualquer outro formato for usado, os valores de data não serão definidos. Os formatos de data do arquivo CSV de metadados exportados estão no formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desejar importá-lo, converta-o no formato aceitável adicionando o valor de nanossegundos indicado por `fff`.
 * Para importar metadados em namespaces personalizadas, registre primeiro as namespaces.
+* O Seletor de propriedades exibe as propriedades usadas em editores de schemas e formulários de pesquisa. O Seletor de propriedades não seleciona propriedades de metadados de um ativo.
 
 >[!MORELIKETHIS]
 >
