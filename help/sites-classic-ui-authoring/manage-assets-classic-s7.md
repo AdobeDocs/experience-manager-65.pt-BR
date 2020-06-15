@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '3221'
+ht-degree: 75%
 
 ---
 
@@ -151,7 +154,7 @@ Depois que são disponibilizados no modo Design, você pode adicioná-los à sua
 
 Em 31 de janeiro de 2017, o Adobe Scene7 descontinuará oficialmente o suporte de fim de vida para a plataforma do visualizador Flash.
 
-Para obter mais informações sobre essa alteração importante, consulte [Perguntas frequentes sobre o fim de vida útil do visualizador Flash](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+Para obter mais informações sobre essa alteração importante, consulte [Perguntas frequentes sobre o fim de vida útil do visualizador Flash](https://docs.adobe.com/content/docs/pt/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
 
 ### Adicionar um componente do Scene7 a uma página {#adding-a-scene-component-to-a-page}
 
@@ -218,7 +221,7 @@ No componente do Flyout HTML5, o ativo é exibido como tela dividida; na parte �
 >
 >Se o seu componente do Flyout usa um tamanho personalizado, tal tamanho é usado e a configuração de componente é desabilitada.
 >
->Se o componente de Flyout usar o tamanho padrão, conforme definido na Exibição de projeto, o tamanho padrão será usado e o componente será estendido para acomodar o tamanho do layout da página com a configuração responsiva do componente ativada. Esteja ciente, no entanto, de que há uma limitação na configuração responsiva do componente. Ao usar o componente do Flyout com a configuração responsiva, você não deve usá-lo com a ampliação de página inteira. Caso contrário, o Flyout poderá se estender além da borda direita da página.
+>Se o componente de Flyout usar o tamanho padrão, conforme definido na visualização de design, o tamanho padrão será usado e o componente será estendido para acomodar o tamanho do layout da página com a configuração responsiva do componente ativada. Esteja ciente, no entanto, de que há uma limitação na configuração responsiva do componente. Ao usar o componente do Flyout com a configuração responsiva, você não deve usá-lo com a ampliação de página inteira. Caso contrário, o Flyout poderá se estender além da borda direita da página.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -315,7 +318,7 @@ Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-vide
 
 ### Restrições conhecidas do componente de vídeo {#known-limitations-for-the-video-component}
 
-O Adobe DAM e o WCM mostram se um vídeo principal é carregado por upload. Eles não mostram os ativos de proxy a seguir:
+O Adobe DAM e o WCM mostram se um vídeo de origem primária foi carregado. Eles não mostram os ativos de proxy a seguir:
 
 * Representações codificadas do Scene7
 * Conjuntos de vídeos adaptáveis do Scene7
@@ -333,12 +336,14 @@ Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração
 >* Os ativos localizados na pasta ad-hoc não aparecerão no navegador de conteúdo do Scene7.
 >* Quando a [Exibição segura estiver habilitada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), tanto os ativos publicados quanto os não publicados no Scene7 aparecerão no navegador de conteúdo do Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+
    >
    >
 * Para vídeo, o navegador de conteúdo do Scene7 é compatível com: >
    >    * Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
    >    * Vídeo MP4 único
    >    * Vídeo F4V único
+
 >
 
 
@@ -362,6 +367,7 @@ Por padrão, os ativos são exibidos por nome de arquivo. Além disso, é possí
 >* Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
 >* Vídeo MP4 único
 >* Vídeo F4V único
+
 >
 
 
@@ -390,7 +396,7 @@ Por padrão, o AEM procura na pasta selecionada e em todas as subpastas.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuração** Se você tiver mais de uma configuração do Scene7 definida nos Serviços em nuvem, poderá selecioná-la aqui. Como resultado, a pasta será alterada com base na configuração escolhida.
+**Configuração** Se você tiver mais de uma configuração Scene7 definida em Cloud Service, poderá selecioná-la aqui. Como resultado, a pasta será alterada com base na configuração escolhida.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
