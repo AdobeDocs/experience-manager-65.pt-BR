@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Visão geral {#overview}
 
-O recurso de mensagens do AEM Communities fornece a capacidade de visitantes (membros) de sites conectados enviarem mensagens para outros que sejam acessíveis quando conectados ao site.
+O recurso de mensagens para AEM Communities fornece a capacidade de visitantes (membros) de sites conectados enviarem mensagens para outros que sejam acessíveis quando conectados ao site.
 
 As mensagens são ativadas para um site da comunidade marcando uma caixa durante a criação [do site da](/help/communities/sites-console.md)comunidade.
 
@@ -30,7 +33,7 @@ Para obter informações adicionais para desenvolvedores, consulte [Messaging Es
 
 ## Serviço de Operações de Mensagens {#messaging-operations-service}
 
-O Serviço [de Configuração de Operações de Mensagens do](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities identifica o ponto de extremidade que lida com solicitações relacionadas a mensagens, as pastas que o serviço deve usar para armazenar mensagens e, se as mensagens podem incluir anexos de arquivo, quais tipos de arquivos são permitidos.
+O Serviço [de Operações de Mensagens do](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities de configuração identifica o ponto de extremidade que lida com solicitações relacionadas a mensagens, as pastas que o serviço deve usar para armazenar mensagens e, se as mensagens podem incluir anexos de arquivo, quais tipos de arquivos são permitidos.
 
 Para sites da comunidade criados usando o `Communities Sites console`, já existe uma instância do serviço, com a caixa de entrada definida como `/mail/inbox`.
 
@@ -44,7 +47,7 @@ Como mostrado abaixo, existe uma configuração do serviço para sites criados c
 
 Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+**&quot; ao lado do nome do serviço:
 
-* **Lista de permissões dos campos de mensagem**
+* **Lista de permissão de campos de mensagem**
 
    Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: *assunto* e *conteúdo*.
 
@@ -108,13 +111,13 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
    Se supportAttachments estiver marcado, esse valor especificará o tamanho total máximo permitido (em bytes) de todos os anexos. O padrão é *104857600* (100 MB).
 
-* **Tipo de anexo lista preta**
+* **Lista de bloqueios de tipo de anexo**
 
-   Uma lista negra de extensões de nome de arquivo, prefixada com &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não for incluído na blacklist, a extensão será permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;.
+   Uma lista de bloqueios de extensões de nomes de arquivos, com prefixo &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não estiver bloqueada, a extensão é permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;.
 
 * **Tipos de anexos permitidos**
 
-   **(*Ação necessária*)** Uma lista branca de extensões de nomes de arquivo, o oposto da lista negra. Para permitir todas as extensões de nome de arquivo, exceto aquelas incluído na blacklist, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
+   **(*Ação necessária*)** Uma lista permitida de extensões de nome de arquivo, o oposto da lista de bloqueio. Para permitir todas as extensões de nome de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
 
 * **Seletor de serviços**
 
@@ -122,15 +125,15 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
    O padrão é */bin/messaging* .
 
-* **Lista de permissões do campo**
+* **Lista de permissão de campo**
 
-   Usar Lista de permissões dos campos **de mensagem**.
+   Usar Lista de Permissões de Campos de **Mensagem**.
 
 >[!CAUTION]
 >
 >Sempre que uma `Messaging Operations Service` configuração é aberta para edição, se `allowedAttachmentTypes.name` foi removida, uma entrada vazia é adicionada novamente para tornar a propriedade configurável. Uma única entrada vazia efetivamente desativa anexos de arquivo.
 >
->Para permitir todas as extensões de nome de arquivo, exceto aquelas incluído na blacklist, use o ícone &#39;**-**&#39; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
+>Para permitir todas as extensões de nome de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
 
 
 ## Group Messaging {#group-messaging}
