@@ -1,27 +1,16 @@
 ---
 title: Tag de decoração
-seo-title: Tag de decoração
-description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro dele mesmo. Para desenvolvedores, o AEM oferece lógica clara e simples controlando as tags de decoração que envolvem componentes incluídos.
-seo-description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro dele mesmo. Para desenvolvedores, o AEM oferece lógica clara e simples controlando as tags de decoração que envolvem componentes incluídos.
-uuid: db796a22-b053-48dd-a50c-354dead7e8ec
-contentOwner: user
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: 8cb9fd6e-5e1f-43cd-8121-b490dee8c2be
+description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro dele mesmo. Para desenvolvedores, a lógica clara e simples do AEM oferta controla as marcas de decoração que envolvem os componentes incluídos.
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
 
 # Tag de decoração{#decoration-tag}
-
->[!NOTE]
->
->O comportamento e as opções da tag de decoração descritas neste artigo são baseadas no [AEM 6.3 CFP1](https://helpx.adobe.com/experience-manager/release-notes--aem-6-3-cumulative-fix-pack.html).
->
->O comportamento da tag decoration na versão 6.3 anterior ao CFP1 é semelhante ao do AEM 6.2.
 
 Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro dele mesmo. Isto serve principalmente dois objetivos:
 
@@ -31,7 +20,7 @@ Quando um componente em uma página da Web é renderizado, um elemento HTML pode
    * informações de layout
    * informações de estilo
 
-Para desenvolvedores, o AEM oferece lógica clara e simples controlando as tags de decoração que envolvem componentes incluídos. Se e como a tag de decoração é renderizada é definida pela combinação de dois fatores, que esta página dividirá em:
+Para desenvolvedores, a lógica clara e simples do AEM oferta controla as marcas de decoração que envolvem os componentes incluídos. Se e como a tag de decoração é renderizada é definida pela combinação de dois fatores, que esta página dividirá em:
 
 * O próprio componente pode configurar sua tag de decoração com um conjunto de propriedades.
 * Os scripts que incluem componentes (HTL, JSP, dispatcher etc.) podem definir os aspectos da tag de decoração com parâmetros de inclusão.
@@ -40,7 +29,7 @@ Para desenvolvedores, o AEM oferece lógica clara e simples controlando as tags 
 
 Estas são algumas recomendações gerais de quando incluir o elemento wrapper que deve ajudar a evitar problemas inesperados:
 
-* A presença do elemento wrapper não deve diferir entre WCMModes (modo de edição ou visualização), instâncias (autor ou publicação) ou ambiente (armazenamento temporário ou produção), de modo que o CSS e o JavaScripts da página funcionem de forma idêntica em todos os casos.
+* A presença do elemento wrapper não deve diferir entre WCMModes (modo de edição ou pré-visualização), instâncias (autor ou publicação) ou ambientes (armazenamento temporário ou produção), de modo que o CSS e o JavaScripts da página funcionem de forma idêntica em todos os casos.
 * O elemento wrapper deve ser adicionado a todos os componentes editáveis, para que o editor de páginas possa inicializá-los e atualizá-los corretamente.
 * Para componentes não editáveis, o elemento wrapper pode ser evitado se não servir a função específica, de modo que a marcação resultante não fique inchada desnecessariamente.
 
@@ -48,12 +37,12 @@ Estas são algumas recomendações gerais de quando incluir o elemento wrapper q
 
 As seguintes propriedades e nós podem ser aplicados aos componentes para controlar o comportamento de sua tag de decoração:
 
-* **`cq:noDecoration {boolean}`**: Essa propriedade pode ser adicionada a um componente e um valor real faz com que o AEM não gere elementos de invólucro sobre o componente.
+* **`cq:noDecoration {boolean}`:**Essa propriedade pode ser adicionada a um componente e um valor real faz com que o AEM não gere elementos de invólucro sobre o componente.
 
-* **`cq:htmlTag`**nó : Esse nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
+* **`cq:htmlTag`nó :**Esse nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
 
-   * **`cq:tagName {String}`**: Isso pode ser usado para especificar uma tag HTML personalizada a ser usada para vincular os componentes em vez do elemento DIV padrão.
-   * **`class {String}`**: Isso pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
+   * **`cq:tagName {String}`:**Isso pode ser usado para especificar uma tag HTML personalizada a ser usada para vincular os componentes em vez do elemento DIV padrão.
+   * **`class {String}`:**Isso pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
    * Outros nomes de propriedade serão adicionados como atributos HTML com o mesmo valor String fornecido.
 
 ## Controles de script {#script-controls}
@@ -65,7 +54,7 @@ O comportamento do invólucro difere, no entanto, dependendo se [HTL](/help/site
 Em geral, o comportamento do invólucro em HTL pode ser resumido da seguinte forma:
 
 * Nenhum DIV de invólucro é renderizado por padrão (apenas ao fazer `data-sly-resource="foo"`).
-* Todos os modos de wcm (desativados, visualizam, editam no autor e publicam) são renderizados de forma idêntica.
+* Todos os modos de wcm (desativados, pré-visualizações, editar no autor e publicar) são renderizados de forma idêntica.
 
 O comportamento do invólucro também pode ser totalmente controlado.
 
@@ -74,7 +63,7 @@ O comportamento do invólucro também pode ser totalmente controlado.
 
 É possível controlar totalmente o comportamento das tags de wrapper dos scripts HTL e sua lógica associada.
 
-Para obter mais informações sobre o desenvolvimento em HTL, consulte a documentação [](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)HTL.
+Para obter mais informações sobre o desenvolvimento em HTL, consulte a documentação [](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)HTL.
 
 #### Árvore de decisão {#decision-tree}
 
@@ -122,7 +111,7 @@ Um exemplo seria um componente que inclui um componente de imagem principal para
 
 #### Caso de uso 2: Incluir um componente editável {#use-case-include-an-editable-component}
 
-Outro caso de uso comum é quando os componentes do contêiner incluem componentes filhos editáveis, como um Contêiner de layout. Nesse caso, cada filho incluído precisa imperativamente de um invólucro para que o editor funcione (a menos que explicitamente desabilitado com a `cq:noDecoration` propriedade).
+Outro caso de uso comum é quando os componentes do container incluem componentes filhos editáveis, como um Container de layout. Nesse caso, cada filho incluído precisa imperativamente de um invólucro para que o editor funcione (a menos que explicitamente desabilitado com a `cq:noDecoration` propriedade).
 
 Como o componente incluído é, nesse caso, um componente independente, ele precisa de um elemento de invólucro para que o editor funcione e defina seu layout e estilo para aplicar. Para acionar esse comportamento, há a `decoration=true` opção.
 
