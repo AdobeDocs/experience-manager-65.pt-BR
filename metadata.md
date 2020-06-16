@@ -11,10 +11,10 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 index: y
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: f483581a80faf0e6160d3b9cbc3fcdb8e8171dec
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 9%
+source-wordcount: '155'
+ht-degree: 12%
 
 ---
 
@@ -26,16 +26,16 @@ O arquivo metadata.md inclui metadados de nível de acordo de recompra que passa
 | metadata | o que ele faz |
 |--- |--- |
 | título da solução | Usado no cabeçalho do artigo como link. |
-| solution-hub-url | Abre a página helpx hub. |
+| solution-hub-url | Abre a página de hub de Aprendizagem e suporte. |
 | ícone da solução | Exibe o ícone da solução ao lado do título da solução. Ainda não implementado. |
-| getting-started-url | Link para a página de introdução do helpx. |
-| tutoriais-url | Link para tutoriais em vídeo — tutoriais do helpx ou tutoriais do KT. |
-| níveis minitoctoc | Determina o número de níveis de cabeçalho exibidos no painel direito. o padrão é 2. |
-| repo git | Especifica o local do acordo de recompra primário para uso interno. |
+| getting-started-url | Link para a página de introdução. |
+| tutoriais-url | Link para tutoriais em vídeo. |
+| níveis minitoctoc | Determina o número de níveis de cabeçalho exibidos no painel direito. O valor padrão é 2. |
+| repo git | Especifica o local do acordo principal para uso interno. |
 
 No arquivo TOC.md
 
 | metadata | o que ele faz |
 |--- |--- |
-| user-guide-title | Usado no cabeçalho do artigo como link |
-| user-guide-url | Abre a página do hub helpx |
+| user-guide-title | Usado no cabeçalho do artigo como link. |
+| user-guide-url | Abre a página de hub de Aprendizagem e suporte. |
