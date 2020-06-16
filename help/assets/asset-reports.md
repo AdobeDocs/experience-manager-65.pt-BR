@@ -1,45 +1,54 @@
 ---
-title: Relatórios sobre seus ativos digitais
-description: Entenda os relatórios sobre seus ativos nos ativos Adobe Experience Manager que ajudam a entender o uso, a atividade e o compartilhamento dos ativos digitais.
+title: Relatórios sobre o uso e compartilhamento de seus ativos digitais.
+description: Relatórios sobre seus ativos [!DNL Adobe Experience Manager Assets] que ajudam você a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2faf210d4177d6b2e29795b5668f8199816097eb
+source-git-commit: bc08b0039f8be92a7638245b1770c2ad21503f63
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 14%
+source-wordcount: '1013'
+ht-degree: 10%
 
 ---
 
 
 # Relatórios dos ativos {#asset-reports}
 
-O relatórios de ativos é uma ferramenta essencial para avaliar a utilidade da implantação dos ativos Adobe Experience Manager. Com os Ativos, você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
+O relatórios de ativos permite que você avalie a utilidade da sua [!DNL Adobe Experience Manager Assets] implantação. Com [!DNL Assets], você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
 
-Use as informações nos relatórios para derivar métricas principais de sucesso para medir a adoção dos Ativos na sua empresa e pelos clientes.
+Use as informações nos relatórios para obter as métricas principais de sucesso para medir a adoção de [!DNL Assets] dentro da empresa e pelos clientes.
 
-A estrutura do relatórios Ativos usa trabalhos Sling para processar de forma assíncrona solicitações de relatório de maneira ordenada. É escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
+A estrutura do [!DNL Assets] relatórios usa [!DNL Sling] trabalhos para processar de forma assíncrona solicitações de relatório de maneira ordenada. É escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
 
 A interface de gerenciamento de relatórios é intuitiva e inclui opções e controles refinados para acessar relatórios arquivados e status de execução de relatórios de visualização (sucesso, falha e enfileirados).
 
 Quando um relatório é gerado, você é notificado por meio de um email (opcional) e de uma notificação de caixa de entrada. Você pode visualização, baixar ou excluir um relatório da página de listagem do relatório, onde todos os relatórios gerados anteriormente são exibidos.
 
+## Pré-requisitos {#prerequisite-for-reporting}
+
+Para gerar relatórios, verifique se:
+
+* Ative o serviço Gravador [!UICONTROL de Eventos] Day CQ DAM em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
+* Selecione as atividades ou eventos em que deseja relatórios. Por exemplo, para gerar um relatório sobre ativos baixados, selecione [!UICONTROL Ativo baixado (BAIXADO)].
+
+![Ativar relatórios de ativos no Console da Web](assets/reports-config-day-cq-dam-event-recorder.png)
+
 ## Gerar relatórios {#generate-reports}
 
-Os ativos do Experience Manager geram os seguintes relatórios padrão para você:
+[!DNL Experience Manager Assets] gera os seguintes relatórios padrão para você:
 
 * Imagem
 * Download
 * Expiração
 * Modificação
 * Publicação
-* Publicação do Brand Portal
+* [!DNL Brand Portal] Publicar
 * Uso do disco
 * Arquivos
 * Compartilhamento de link
 
 [!DNL Adobe Experience Manager] os administradores podem facilmente gerar e personalizar esses relatórios para sua implementação. Um administrador pode seguir estas etapas para gerar um relatório:
 
-1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
+1. Na [!DNL Experience Manager] interface, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 
 ![Página Ferramentas para navegar no relatório de ativos](assets/AssetsReportNavigation.png)
 
@@ -47,10 +56,6 @@ Os ativos do Experience Manager geram os seguintes relatórios padrão para voc�
 1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
-
-   >[!NOTE]
-   >
-   >Antes de gerar um relatório **[!UICONTROL Ativo baixado]**, verifique se o serviço de Download de ativos está ativado. No console da Web (`https://[aem_server]:[port]/system/console/configMgr`), abra a configuração **[!UICONTROL Day CQ DAM Event Recorder]** e selecione a opção **[!UICONTROL Ativo baixado (BAIXADO)]** em Tipos de evento, se ainda não estiver selecionada.
 
    >[!NOTE]
    >
@@ -80,7 +85,7 @@ Os ativos do Experience Manager geram os seguintes relatórios padrão para voc�
 
    ![Página de detalhes do relatório Arquivos](assets/files_report.png)
 
-   O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do Assets. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
+   O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do [!DNL Assets]. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
@@ -92,12 +97,12 @@ Os ativos do Experience Manager geram os seguintes relatórios padrão para voc�
 
    ![Selecionar ou desmarcar colunas de relatório](assets/configure_columns.png)
 
-   Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades para o binário de ativo no nó jcr:content no CRX. Como alternativa, adicione-o através do seletor de caminho de propriedade.
+   Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades para o binário de ativo no `jcr:content` nó no CRX. Como alternativa, adicione-o através do seletor de caminho de propriedade.
 
    ![Selecionar ou desmarcar colunas de relatório](assets/custom_columns.png)
 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
-1. Na página Relatórios de ativos, o status de geração de relatórios se baseia no estado atual do trabalho de relatório, por exemplo, Sucesso, Falha, Enfileirado ou Agendado. O mesmo status aparece na caixa de entrada de notificações.Para visualização na página de relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Visualização]** na barra de ferramentas.
+1. Na página Relatórios [!UICONTROL de] ativos, o status de geração de relatórios se baseia no estado atual do trabalho de relatório, por exemplo, [!UICONTROL Sucesso], [!UICONTROL Falha], [!UICONTROL Enfileirado]ou [!UICONTROL Programado]. O mesmo status aparece na caixa de entrada de notificações.Para visualização na página de relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Visualização]** na barra de ferramentas.
 
    ![Um relatório gerado](assets/report_page.png)
 
@@ -112,12 +117,12 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 * Expiração
 * Modificação
 * Publicação
-* Publicação do Brand Portal
+* [!DNL Brand Portal] Publicar
 * Arquivos
 
 Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
 
-1. Na interface do Experience Manager, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
+1. No [!DNL Manager interface], clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 1. Na página Relatórios [!UICONTROL de] ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 
 1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
