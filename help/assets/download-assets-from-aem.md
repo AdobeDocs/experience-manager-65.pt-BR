@@ -3,9 +3,9 @@ title: Baixe ativos digitais [!DNL Adobe Experience Manager].
 description: Saiba como baixar ativos [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 527b2f50efac606a0a696c8f56b0d725f79cd692
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '796'
 ht-degree: 3%
 
 ---
@@ -19,27 +19,32 @@ Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Co
 >
 >Recipient de e-mails devem ser membros do `dam-users` grupo para acessar o link de download ZIP na mensagem de e-mail. Para poder baixar os ativos, os membros devem ter permissões para iniciar workflows que acionam o download de ativos.
 
-Para baixar ativos, navegue até um ativo, selecione o ativo e clique em **[!UICONTROL Download]** na barra de ferramentas. Na caixa de diálogo resultante, especifique as opções de download.
-
 Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de mídia mista e Conjuntos de carrossel não podem ser baixados.
 
-![Opções disponíveis ao baixar ativos dos ativos do Experience Manager](assets/asset_download_dialog.png)
+**Para baixar ativos,**
 
-*Figura: Opções disponíveis ao baixar ativos de[!DNL Experience Manager Assets].*
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
+1. Na página Navegação, toque em **[!UICONTROL Ativos > Arquivos]**.
+1. Navegue até uma pasta que contenha ativos que você deseja baixar.
+1. Selecione a pasta ou selecione um ou mais ativos na pasta.
+1. Na barra de ferramentas, toque em **[!UICONTROL Download]**.
 
-Veja a seguir as opções de exportação ou download disponíveis. As representações dinâmicas são exclusivas da [!DNL Dynamic Media] oferta. A opção permite que você gere novas representações em tempo real, além do ativo selecionado. A opção só estará disponível se você tiver [!DNL Dynamic Media] ativado.
+   ![Opções disponíveis ao baixar ativos dos ativos Experience Manager](/help/assets/assets/asset-download.png)
 
-| Opções de exportação ou download | Descrições |
-|---|---|
-| [!UICONTROL Ativos] | Selecione a opção para baixar o ativo em seu formulário original sem execuções. |
-| [!UICONTROL Representações] | Uma representação é uma representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Podem ter qualquer número de representações. <br> Com essa opção, você pode selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
-| [!UICONTROL Representações dinâmicas] | Uma execução dinâmica gera outras execuções em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista [Predefinição](image-presets.md) de imagem. <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cor, a resolução e qualquer modificador de imagem (por exemplo, para inverter a imagem) |
-| [!UICONTROL E-mail] | Uma notificação por email é enviada ao usuário. Os modelos padrão de e-mails estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos que você personaliza durante a implantação devem estar presentes nesses locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nesses locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-| [!UICONTROL Criar uma pasta separada para cada ativo] | Selecione a opção para preservar a hierarquia de pastas ao baixar ativos. Por padrão, a hierarquia de pastas é ignorada e todos os ativos são baixados em uma pasta no sistema de arquivos local. |
+   *Opções da caixa de diálogo de download.*
 
-A opção de representações estará disponível se o ativo tiver representações. A opção de subativos estará disponível se o ativo original tiver subativos.
+1. Na caixa de diálogo Download, selecione as opções de download desejadas.
 
-Quando você seleciona uma pasta para download, a hierarquia completa de ativos na pasta é baixada. Para incluir cada ativo baixado (incluindo ativos em pastas filhas aninhadas sob a pasta pai) em uma pasta individual, selecione **[!UICONTROL Criar pasta separada para cada ativo]**.
+   | Opção de download | Descrição |
+   |---|---|
+   | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para incluir cada ativo que você baixar, incluindo ativos em pastas filhas aninhadas sob a pasta pai do ativo, em uma pasta no computador local. Quando essa opção *não* é selecionada, por padrão, a hierarquia de pastas é ignorada e todos os ativos são baixados em uma pasta no computador local. |
+   | **[!UICONTROL E-mail]** | Selecione essa opção para que uma notificação por email seja enviada ao recipient. Os modelos padrão de e-mails estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos que você personaliza durante a implantação estão disponíveis nos seguintes locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nos seguintes locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em seu formulário original sem execuções.<br>A opção de subativos estará disponível se o ativo original tiver subativos. |
+   | **[!UICONTROL Representações]** | Uma representação é uma representação binária de um ativo. Os ativos têm uma representação principal - a do arquivo carregado. Podem ter qualquer número de representações. <br> Com essa opção, você pode selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
+   | **[!UICONTROL Cortes inteligentes]** | Selecione essa opção para baixar todas as representações de recorte inteligente do ativo selecionado no AEM. Um arquivo zip com as execuções de Recorte inteligente é criado e baixado no computador local. |
+   | **[!UICONTROL Execução(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista [Predefinição](image-presets.md) de imagem. <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cor, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você tiver [!DNL Dynamic Media] ativado. |
+
+1. Na caixa de diálogo, toque em **[!UICONTROL Download]**.
 
 ## Ativar servlet de download de ativos {#enable-asset-download-servlet}
 
