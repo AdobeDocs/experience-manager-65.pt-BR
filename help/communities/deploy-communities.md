@@ -1,8 +1,8 @@
 ---
 title: Implantação de comunidades
 seo-title: Implantação de comunidades
-description: Como implantar o AEM Communities
-seo-description: Como implantar o AEM Communities
+description: Como implantar AEM Communities
+seo-description: Como implantar AEM Communities
 uuid: 18d9b424-004d-43b2-968a-318e27a93759
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1890'
+ht-degree: 2%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ## Pré-requisitos {#prerequisites}
 
-* [Plataforma AEM 6.5](/help/sites-deploying/deploy.md)
+* [Platform AEM 6.5](/help/sites-deploying/deploy.md)
 
-* Licença do AEM Communities
+* licença AEM Communities
 
 * Licenças opcionais para:
 
-   * [Recursos do Adobe Analytics para comunidades](/help/communities/analytics.md)
+   * [Recursos do Adobe Analytics para Comunidades](/help/communities/analytics.md)
    * [MongoDB para MSRP](/help/communities/msrp.md)
    * [Adobe Cloud para ASRP](/help/communities/asrp.md)
 
@@ -72,6 +75,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
          * O UGC nunca é replicado
          * UGC visível somente na instância AEM ou cluster no qual foi inserido
       * O padrão é JSRP
+
    Para o recurso de **[ativação](/help/communities/overview.md#enablement-community)**
 
    * [Instalar e configurar o FFmpeg](/help/communities/ffmpeg.md)
@@ -92,11 +96,11 @@ Pacote do AEM 6.5 Communities GA com Communities. Para saber mais sobre atualiza
 
 A partir do AEM 6.4, as atualizações nas Comunidades são fornecidas como parte dos pacotes de correções cumulativos e dos pacotes de serviços do AEM.
 
-Para obter as atualizações mais recentes do AEM 6.5, consulte Pacotes de correção cumulativos e Service Packs [do](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)Adobe Experience Manager 6.4.
+Para obter as atualizações mais recentes do AEM 6.5, consulte [Adobe Experience Manager 6.4 Cumulative Fix Packs and Service Packs (Pacotes de correções cumulativos e pacotes de serviços](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)).
 
 ### Histórico da versão {#version-history}
 
-Como no AEM 6.4 e mais, os recursos e hotfixes do AEM Communities fazem parte dos pacotes de correções cumulativos e service packs do AEM Communities. Por conseguinte, não existem pacotes de elementos separados.
+Assim como no AEM 6.4 e mais, os recursos e os hotfixes do AEM Communities fazem parte dos pacotes de correções cumulativos e dos service packs do AEM Communities. Por conseguinte, não existem pacotes de elementos separados.
 
 ### Driver JDBC para MySQL {#jdbc-driver-for-mysql}
 
@@ -140,7 +144,7 @@ Mais informações sobre a instalação de pacotes estão disponíveis na págin
 
 O Shareable Content Object Reference Model (SCORM) é uma coleção de padrões e especificações para e-learning. O SCORM também define como o conteúdo pode ser empacotado em um arquivo ZIP transferível.
 
-O mecanismo SCORM do AEM Communities é necessário para o recurso de [ativação](/help/communities/overview.md#enablement-community) . Pacotes de pontuação compatíveis com o AEM 6.5 Communities:
+O mecanismo SCORM AEM Communities é necessário para o recurso de [ativação](/help/communities/overview.md#enablement-community) . Pacotes de pontuação compatíveis com o AEM 6.5 Communities:
 
 * [cq-social-scorm-package, versão 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) que inclui o mecanismo [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) .
 
@@ -195,7 +199,7 @@ Para obter mais informações, consulte [Como trabalhar com pacotes](/help/sites
 
 ## Implantações recomendadas {#recommended-deployments}
 
-No AEM Communities, uma loja comum é usada para armazenar o conteúdo gerado pelo usuário (UGC) e geralmente é chamada de SRP ( [armazenamento Resource Provider, provedor de recursos do )](/help/communities/working-with-srp.md). A implantação recomendada centra-se na escolha de uma opção SRP para a loja comum.
+Em AEM Communities, uma loja comum é usada para armazenar conteúdo gerado pelo usuário (UGC) e geralmente é chamada de provedor de recursos do [armazenamento (SRP)](/help/communities/working-with-srp.md). A implantação recomendada centra-se na escolha de uma opção SRP para a loja comum.
 
 A loja comum oferece suporte à moderação e análise do UGC no ambiente de publicação, eliminando a necessidade de [replicação](/help/communities/sync.md) do UGC.
 
@@ -213,7 +217,7 @@ Além de atualizar a plataforma, leia [Atualização para o AEM Communities 6.5]
 
 ### Editor principal {#primary-publisher}
 
-Quando a implantação escolhida é um farm [de](/help/communities/topologies.md#tarmk-publish-farm)publicação, uma instância de publicação do AEM deve ser identificada como a **`primary publisher`** de atividades que não deve ocorrer em todas as instâncias, como recursos que dependem de **notificações** ou do **Adobe Analytics**.
+Quando a implantação escolhida é um farm [de](/help/communities/topologies.md#tarmk-publish-farm)publicação, uma instância de publicação do AEM deve ser identificada como a **`primary publisher`** para atividades que não deve ocorrer em todas as instâncias, como recursos que dependem de **notificações** ou do **Adobe Analytics**.
 
 Por padrão, a configuração do `AEM Communities Publisher Configuration` OSGi é configurada com a **`Primary Publisher`** caixa de seleção marcada, de modo que todas as instâncias de publicação em um farm de publicação se autoidentificariam como a principal.
 
@@ -294,7 +298,7 @@ Para ativar o serviço de túnel:
 
 ### Replicar a chave de criptografia {#replicate-the-crypto-key}
 
-Há dois recursos do AEM Communities que exigem que todas as instâncias do servidor AEM usem as mesmas chaves de criptografia. Esses são [Analytics](/help/communities/analytics.md) e [ASRP](/help/communities/asrp.md).
+Há dois recursos de AEM Communities que exigem que todas as instâncias do servidor AEM usem as mesmas chaves de criptografia. Estes são [Analytics](/help/communities/analytics.md) e [ASRP](/help/communities/asrp.md).
 
 A partir do AEM 6.3, o material principal é armazenado no sistema de arquivos e não mais no repositório.
 
@@ -309,7 +313,7 @@ Para copiar o material principal do autor para todas as outras instâncias, é n
    * Navegue até a pasta de dados, por exemplo,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Copiar os arquivos hmac e master
+   * Copiar os arquivos hmac e do nó primário
 
 
 
@@ -392,7 +396,7 @@ Se estiver usando um Dispatcher, consulte:
 
 * Documentação do [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) do AEM
 * [Instalação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
-* [Configuração do Dispatcher para Comunidades](/help/communities/dispatcher.md)
+* [Configuração do Dispatcher for Communities](/help/communities/dispatcher.md)
 * [Problemas conhecidos](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
 ## Documentação das Comunidades relacionadas {#related-communities-documentation}
