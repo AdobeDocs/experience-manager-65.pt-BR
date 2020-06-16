@@ -1,8 +1,8 @@
 ---
 title: ASRP - Provedor de Recursos de Armazenamento da Adobe
 seo-title: ASRP - Provedor de Recursos de Armazenamento da Adobe
-description: Configurar o AEM Communities para usar um banco de dados relacional como sua loja comum
-seo-description: Configurar o AEM Communities para usar um banco de dados relacional como sua loja comum
+description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
+seo-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
 uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Consulte também [Características das opções](/help/communities/working-with-
 
 É necessária uma licença adicional para o uso do ASRP.
 
-Para configurar seu site do AEM Communities para usar o ASRP para UGC, entre em contato com seu representante de conta para:
+Para configurar seu site de AEM Communities para usar o ASRP para UGC, entre em contato com seu representante de conta para:
 
 * URL do centro de dados (endereço do ponto final ASRP)
 * Chave do consumidor
@@ -43,7 +46,7 @@ O consumidor e as chaves secretas são compartilhados em todos os conjuntos de r
 
 O console [Configuração do](/help/communities/srp-config.md) Armazenamento permite a seleção da configuração padrão do armazenamento, que identifica qual implementação do SRP usar.
 
-**Na instância do autor de AEM:**
+**Na instância AEM Author:**
 
 * Na navegação global, navegue até **[!UICONTROL Ferramentas > Comunidades > Configuração]** do Armazenamento e selecione **[!UICONTROL Adobe Armazenamento Resource Provider (ASRP)]**.
 
@@ -72,7 +75,7 @@ Após enviar a configuração, teste a conexão:
 
 ### Replicar a chave de criptografia {#replicate-the-crypto-key}
 
-O Consumer key e a chave secreta estão criptografados. Para que as chaves sejam criptografadas/descriptografadas corretamente, a chave mestre de criptografia Granite deve ser a mesma em todas as instâncias do AEM.
+O Consumer key e a chave secreta estão criptografados. Para que as chaves sejam criptografadas/descriptografadas corretamente, a chave principal Criptografia Granite deve ser a mesma em todas as instâncias do AEM.
 
 Siga as instruções em [Replicate the Crypto Key (Replicar a chave](/help/communities/deploy-communities.md#replicate-the-crypto-key)de criptografia).
 
@@ -84,7 +87,7 @@ Certifique-se de definir os domínios como URLs roteáveis a partir do URL do da
 
 ### Sincronização de tempo {#time-synchronization}
 
-Para que a autenticação com o ponto de extremidade ASRP tenha êxito, os computadores que executam o AEM Communities hospedado devem ser sincronizados no tempo, como com o NTP ( [Network Time Protocol)](https://www.ntp.org/).
+Para que a autenticação com o ponto de extremidade ASRP tenha êxito, os computadores que executam seus AEM Communities hospedados devem ser sincronizados no tempo, como com o Protocolo de Tempo de [Rede (NTP)](https://www.ntp.org/).
 
 ### Publicar a configuração {#publishing-the-configuration}
 
@@ -92,7 +95,7 @@ O ASRP deve ser identificado como o repositório comum em todas as instâncias d
 
 Para disponibilizar a configuração idêntica no ambiente publish:
 
-Na instância do autor de AEM:
+Na instância AEM Author:
 
 * Navegue do menu principal até **[!UICONTROL Ferramentas > Operações > Replicação]**.
 * Selecionar **Ativar árvore**
