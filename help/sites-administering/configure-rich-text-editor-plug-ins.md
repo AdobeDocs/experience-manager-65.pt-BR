@@ -1,9 +1,12 @@
 ---
 title: Configurar os plug-ins do Editor de Rich Text
-description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
+description: Saiba como configurar os plug-ins do Editor de Rich Text Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '4400'
+ht-degree: 3%
 
 ---
 
@@ -36,12 +39,12 @@ Por padrão, `format`, `link`, `list`, `justify`, e `control` plug-ins e todos o
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * um nó de configuração alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
-   * São do tipo: **jcr:PrimaryType**`cq:Widget`
+   * São do tipo: **jcr:PrimaryType** `cq:Widget`
    * Ambas têm a seguinte propriedade:
 
       * **Nome** `name`
       * **Tipo** `String`
-      * **Valor**`./text`
+      * **Valor** `./text`
 
 
 1. Dependendo da interface para a qual você está configurando, crie um nó `<rtePlugins-node>`, se ele não existir:
@@ -80,7 +83,7 @@ Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir
 
 * **Modo** MS Word: Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida.
 
-### Configure as opções de Colagem disponíveis na barra de ferramentas do RTE {#configure-paste-options-available-on-the-rte-toolbar}
+### Configure as opções de Colagem disponíveis na barra de ferramentas do RTE  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Você pode fornecer alguns, todos ou nenhum desses três ícones aos seus autores na barra de ferramentas do RTE:
 
@@ -146,6 +149,7 @@ Para configurar quais formatos são permitidos ao colar texto no AEM a partir de
    * **Nome** `underline`
    * **Nome** `anchor` (para links e âncoras nomeadas)
    * **Nome** `image`
+
    Todas as propriedades são do **Tipo** , portanto, no `Boolean`Valor **** apropriado, você pode selecionar ou remover a marca de seleção para ativar ou desativar a funcionalidade.
 
    >[!NOTE]
@@ -267,6 +271,7 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
    * **Nome** `externalStyleSheets`
    * **Tipo** `String[]` (multistring; clique em **Vários** no CRXDE)
    * **Valor(es)** O caminho e o nome de arquivo de cada folha de estilos que você deseja incluir. Use caminhos do repositório.
+
    >[!NOTE]
    >
    >É possível adicionar referências a folhas de estilos adicionais a qualquer momento.
@@ -339,10 +344,12 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
 1. Adicione a propriedade `cssName` ao nó para referenciar a classe CSS. Este nome de classe é um nome reservado para o recurso de quebra automática de texto em japonês.
    * Nome: `cssName`
    * Tipo: `String`
-   * Valor: `jpn-word-wrap` (sem um anterior `.`)
+   * Valor: `jpn-word-wrap` (sem precedentes `.`)
 
 1. Adicione o texto da propriedade ao mesmo nó. O valor é o nome do estilo que os autores veem ao selecionar o estilo.
-   * Nome: `text`*Tipo: `String`
+   * Nome: `text`
+*Tipo: 
+`String`
    * Valor: `Japanese word-wrap`
 
 1. Crie uma folha de estilos e especifique seu caminho. Consulte [especificar o local da folha de estilos](#locationofstylesheet). Adicione o seguinte conteúdo à folha de estilos. Altere a cor do plano de fundo conforme desejado.
@@ -452,7 +459,7 @@ Adicionar seus próprios caracteres especiais substitui a seleção padrão. Se 
 
    * **Nome** `features`
    * **Tipo** `String[]`
-   * **Valor**`specialchars`
+   * **Valor** `specialchars`
 
           (ou `String / *` se estiver aplicando todos os recursos para este plug-in)
 
@@ -485,7 +492,7 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 
 ### Definir um intervalo de caracteres {#definerangechar}
 
-1. Use as etapas de 1 a 3 de [Definição de um caractere](#definingasinglecharacter)único.
+1. Use as etapas de 1 a 3 de [Definição de um caractere](#definesinglechar)único.
 1. Em `chars` Adicionar um novo nó para manter a definição do intervalo de caracteres:
 
    * **Nome** que você pode especificar, mas deve refletir o intervalo de caracteres; por exemplo, lápis.
@@ -494,10 +501,12 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 1. Neste nó (nomeado de acordo com seu intervalo de caracteres especial), adicione as duas propriedades a seguir:
 
    * **Nome** `rangeStart`
+
       **Tipo** `Long`
       **Valor** da representação [Unicode](https://unicode.org/) (decimal) do primeiro caractere no intervalo
 
    * **Nome** `rangeEnd`
+
       **Tipo** `Long`
       **Valor** da representação [Unicode](https://unicode.org/) (decimal) do último caractere no intervalo
 
@@ -526,7 +535,8 @@ A cópia e colagem de tabelas no componente RTE ou a partir dele depende do nave
 
    * **Nome** `features`
    * **Tipo** `String`
-   * **Valor**`*`
+   * **Valor** `*`
+
    >[!NOTE]
    Se você não quiser ativar todos os recursos da tabela, poderá criar a `features` propriedade como:
    * **Tipo** `String[]`
@@ -583,7 +593,7 @@ Para melhorar a acessibilidade em tais cenários, o RTE suporta células de cabe
 
 Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
 
-Para ajudar os autores a aplicar o CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
+Para ajudar os autores a aplicar CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
 
 * `hiddenHeaderClassName`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta no modo de pré-visualização.
 * `hiddenHeaderStyle`: Especifica uma string de estilo que é aplicada na célula de cabeçalho oculto no modo de pré-visualização.
@@ -672,6 +682,7 @@ Você pode definir a altura do espaço editável mostrado na caixa de diálogo d
    * **Nome** `height`
    * **Tipo** `Long`
    * **Valor** da altura da tela de edição em pixels.
+
    >[!NOTE]
    Isso não altera a altura da janela de diálogo.
 
@@ -691,11 +702,13 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
    * **Nome** `htmlRules`
    * **Tipo** `nt:unstructured`
+
    >[!NOTE]
    O `../items/text` nó tem a propriedade:
    * **Nome** `xtype`
    * **Tipo** `String`
-   * **Valor**`richtext`
+   * **Valor** `richtext`
+
    O local do `../items/text` nó pode variar, dependendo da estrutura da caixa de diálogo; dois exemplos incluem:
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
@@ -732,6 +745,7 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
       * **Nome** `targetConfig`
       * **Tipo** `nt:unstructured`
+
       No nó `targetConfig`: defina as propriedades necessárias:
 
       * Especifique o modo de público alvo:
