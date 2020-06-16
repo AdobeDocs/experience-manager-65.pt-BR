@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '4989'
+ht-degree: 1%
 
 ---
 
 
 # Monitorando Recursos do Servidor Usando o Console JMX{#monitoring-server-resources-using-the-jmx-console}
 
-O Console JMX permite monitorar e gerenciar serviços no servidor CRX. As seções a seguir resumem os atributos e operações expostos por meio da estrutura JMX.
+O Console JMX permite que você monitore e gerencie serviços no servidor CRX. As seções a seguir resumem os atributos e operações expostos por meio da estrutura JMX.
 
 Para obter informações sobre como usar os controles do console, consulte [Uso do console](#using-the-jmx-console)JMX. Para obter informações sobre JMX, consulte a página da tecnologia [](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) Java Management Extensions (JMX) no site da Oracle.
 
@@ -37,7 +40,7 @@ Operações para administrar instâncias de fluxo de trabalho em execução, con
 
 ### Operações {#operations}
 
-**listRunningWorkflowsPerModel** Lista o número de instâncias de fluxo de trabalho em execução para cada modelo de fluxo de trabalho.
+**listRunningWorkflowsPerModel** Lista o número de instâncias de fluxo de trabalho que estão sendo executadas para cada modelo de fluxo de trabalho.
 
 * Argumentos: none
 * Valor retornado: Dados tabulares contendo as colunas Count e ModelId.
@@ -63,7 +66,7 @@ Operações para administrar instâncias de fluxo de trabalho em execução, con
    * Trabalhos processados
    * Tarefas em Fila
 
-**returnWorkflowJobTopicInfo** Lista informações de processamento para trabalhos de fluxo de trabalho, organizados por tópico.
+**Listas returnWorkflowJobTopicInfo** processam informações para trabalhos de fluxo de trabalho, organizadas por tópico.
 
 * Argumentos: none
 * Valor retornado: Dados tabulares contendo as seguintes colunas:
@@ -76,11 +79,11 @@ Operações para administrar instâncias de fluxo de trabalho em execução, con
    * Trabalhos concluídos
    * Trabalhos processados
 
-**returnFailedWorkflowCount** Mostra o número de instâncias de fluxo de trabalho que falharam. Você pode especificar um modelo de fluxo de trabalho para consultar ou recuperar informações para todos os modelos de fluxo de trabalho.
+**returnFailedWorkflowCount** Mostra o número de instâncias de fluxo de trabalho que falharam. Você pode especificar um modelo de fluxo de trabalho para query ou recuperar informações para todos os modelos de fluxo de trabalho.
 
 * Argumentos:
 
-   * modelo: A ID do modelo a ser consultado. Para ver uma contagem de instâncias de fluxo de trabalho com falha para todos os modelos de fluxo de trabalho, não especifique nenhum valor. A ID é o caminho para o nó modelo, por exemplo:
+   * modelo: A ID do modelo para o query. Para ver uma contagem de instâncias de fluxo de trabalho com falha para todos os modelos de fluxo de trabalho, não especifique nenhum valor. A ID é o caminho para o nó modelo, por exemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
@@ -135,7 +138,7 @@ Operações para administrar instâncias de fluxo de trabalho em execução, con
    * Modelo: (Opcional) A ID do modelo ao qual a operação é aplicada. Não especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó modelo, por exemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Número de dias desde que o fluxo de trabalho foi iniciado:A idade das instâncias do fluxo de trabalho a serem expurgadas, em dias.
+   * Número de dias desde que o fluxo de trabalho foi iniciado: A idade das instâncias do fluxo de trabalho a serem expurgadas, em dias.
    * Corrida seca: (Opcional) Especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
 
 * Valor retornado: Dados tabulares sobre as instâncias de fluxo de trabalho ativas que são expurgadas, incluindo as seguintes colunas:
@@ -193,7 +196,7 @@ Operações para administrar instâncias de fluxo de trabalho em execução, con
 
 * Valor retornado: O número de instâncias de fluxo de trabalho concluídas.
 
-**purgeCompletedRemove registros de fluxos de trabalho concluídos de uma página específica do repositório.** Use essa operação periodicamente para minimizar o tamanho do repositório quando você fizer uso intenso de fluxos de trabalho. Você pode expurgar instâncias concluídas para todos os modelos ou apenas as instâncias para um modelo específico. Como opção, você pode testar a operação para ver os resultados sem realmente executar a operação.
+**purgeCompletedRemove registros de workflows concluídos de uma página específica do repositório.** Use essa operação periodicamente para minimizar o tamanho do repositório quando você fizer uso intenso de workflows. Você pode expurgar instâncias concluídas para todos os modelos ou apenas as instâncias para um modelo específico. Como opção, você pode testar a operação para ver os resultados sem realmente executar a operação.
 
 * Argumentos:
 
@@ -261,7 +264,7 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>query.xpath.pos.index</td>
-   <td>Indica se o idioma de consulta JCR 1.0 XPath é suportado. true indica suporte e false indica que não há suporte.</td>
+   <td>Indica se o idioma do query JCR 1.0 XPath é suportado. true indica suporte e false indica que não há suporte.</td>
   </tr>
   <tr>
    <td>crx.repository.systemid</td>
@@ -269,14 +272,14 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>option.query.sql.supported</td>
-   <td>Indica se o idioma de consulta JCR 1.0 XPath é suportado. true indica suporte e false indica que não há suporte.</td>
+   <td>Indica se o idioma do query JCR 1.0 XPath é suportado. true indica suporte e false indica que não há suporte.</td>
   </tr>
   <tr>
    <td>jcr.repository.version</td>
    <td>A versão da implementação do repositório.</td>
   </tr>
   <tr>
-   <td>option.update.Primary.node.type.supported</td>
+   <td>option.update.primary.node.type.supported</td>
    <td>Indica se o tipo de nó primário de um nó pode ser alterado. true indica que você pode alterar o tipo de nó primário e false indica que a alteração não é suportada.</td>
   </tr>
   <tr>
@@ -288,12 +291,12 @@ Informações sobre o repositório CRX
    <td>Indica se você pode substituir a propriedade herdada ou a definição de nó filho de um tipo de nó. true indica que as substituições são suportadas e false indica que não há substituições.</td>
   </tr>
   <tr>
-   <td>option.observação.supported</td>
+   <td>option.observation.supported</td>
    <td>true indica que há suporte para a observação assíncrona de alterações no repositório. O suporte à observação assíncrona permite que os aplicativos recebam e respondam a notificações sobre cada alteração à medida que elas ocorrem.</td>
   </tr>
   <tr>
    <td>query.jcrscore</td>
-   <td><p>true indica que a pseudo-propriedade jcr:score está disponível em consultas XPath e SQL que incluem uma função jcrfn:contains (in XPath) ou CONTAINS (in SQL) para executar uma pesquisa de texto completo.</p> </td>
+   <td><p>true indica que a pseudo-propriedade jcr:score está disponível em query XPath e SQL que incluem uma função jcrfn:contains (in XPath) ou CONTAINS (in SQL) para executar uma pesquisa de texto completo.</p> </td>
   </tr>
   <tr>
    <td>option.simple.versioning.supported</td>
@@ -308,7 +311,7 @@ Informações sobre o repositório CRX
    <td>true indica que o repositório oferece suporte à adição e remoção de tipos de nós de mixin de um nó existente.</td>
   </tr>
   <tr>
-   <td>node.type.management.Primary.item.name.supported</td>
+   <td>node.type.management.primary.item.name.supported</td>
    <td>true indica que o repositório permite que as definições de nó contenham um item principal como filho. Um item principal é acessível usando a API sem saber o nome do item.</td>
   </tr>
   <tr>
@@ -324,16 +327,16 @@ Informações sobre o repositório CRX
    <td>true indica que você pode alterar as definições de nó que estão em uso pelos nós existentes.</td>
   </tr>
   <tr>
-   <td>jcr.spec.version</td>
+   <td>jcr.specification.version</td>
    <td>A versão da especificação JCR que o repositório implementa.</td>
   </tr>
   <tr>
-   <td>option.lanchado.observação.supported</td>
+   <td>option.journaled.observation.supported</td>
    <td>true indica que os aplicativos podem executar observação em log do repositório. com observação em diário, pode ser obtido um conjunto de notificações de variações por um período de tempo específico. </td>
   </tr>
   <tr>
    <td>query.languages</td>
-   <td>Os idiomas de consulta compatíveis com o repositório. Nenhum valor indica que não há suporte à consulta.</td>
+   <td>Os idiomas de query suportados pelo repositório. Nenhum valor indica que não há suporte para query.</td>
   </tr>
   <tr>
    <td>option.xml.export.supported</td>
@@ -352,7 +355,7 @@ Informações sobre o repositório CRX
    <td>true indica que o repositório suporta configurações e linhas de base.</td>
   </tr>
   <tr>
-   <td>option.sharing.nodes.supported</td>
+   <td>option.shareable.nodes.supported</td>
    <td>true indica que o repositório suporta a criação de nós compartilháveis.</td>
   </tr>
   <tr>
@@ -360,19 +363,19 @@ Informações sobre o repositório CRX
    <td>O identificador do cluster do repositório.</td>
   </tr>
   <tr>
-   <td>query.store.queries.supported</td>
-   <td>true indica que o repositório suporta consultas armazenadas.</td>
+   <td>query.stored.queries.supported</td>
+   <td>true indica que o repositório suporta query armazenados.</td>
   </tr>
   <tr>
    <td>query.full.text.search.supported</td>
    <td>true indica que o repositório oferece suporte à pesquisa de texto completo.</td>
   </tr>
   <tr>
-   <td>node.type.management.herança</td>
+   <td>node.type.management.inheritance</td>
    <td><p>Indica o nível de suporte do repositório para a herança do tipo de nó. Os seguintes valores são possíveis:</p> <p>node.type.management.hereitance.Minimum: O registro dos tipos de nó primário é limitado àqueles que têm apenas nt:base como um supertipo. O registro de tipos de nó de mistura é limitado àqueles sem supertipo.</p> <p>node.type.management.hereitance.single: O registro dos tipos de nó primário é limitado àqueles com um supertipo. O registro de tipos de nó de mistura é limitado àqueles com no máximo um supertipo.</p> <p><br /> node.type.management.hereitance.multiple: Os tipos de nós primários podem ser registrados com um ou mais supertipos. Os tipos de nós de mistura podem ser registrados com zero ou mais supertipos.</p> </td>
   </tr>
   <tr>
-   <td>crx.cluster.preferencialMaster</td>
+   <td>crx.cluster.preferredMaster</td>
    <td>true indica que esse nó de cluster é o mestre preferencial do cluster.</td>
   </tr>
   <tr>
@@ -384,16 +387,16 @@ Informações sobre o repositório CRX
    <td>O URL do fornecedor do repositório.</td>
   </tr>
   <tr>
-   <td>node.type.management.value.restrictions.supported</td>
+   <td>node.type.management.value.constraints.supported</td>
    <td>true indica que o repositório suporta restrições de valor para propriedades de nó.</td>
   </tr>
   <tr>
    <td>node.type.management.property.types</td>
-   <td>uma matriz de constantes javax.jcr.PropertyType que representam os tipos de propriedade que um tipo de nó registrado pode especificar. Uma matriz de comprimento zero indica que os tipos de nó registrados não podem especificar definições de propriedade. Os tipos de propriedade são STRING, URI, BOOLEAN, LONG, DOUBLE, DECIMAL, BINARY, DATE, NAME, PATH, WEAKREFERENCE, REFERENCE e UNDEFINED (se suportado)</td>
+   <td>uma matriz de constantes javax.jcr.PropertyType que representam os tipos de propriedade que um tipo de nó registrado pode especificar. Uma matriz de comprimento zero indica que os tipos de nó registrados não podem especificar definições de propriedade. Os tipos de propriedade são STRING, URI, BOOLEAN, LONG, DUPLO, DECIMAL, BINARY, DATE, NAME, PATH, WEAKREFERENCE, REFERENCE e UNDEFINED (se suportado)</td>
   </tr>
   <tr>
    <td>node.type.management.orderable.child.nodes.supported</td>
-   <td>true indica que o repositório suporta a preservação da ordem dos nós secundários.</td>
+   <td>true indica que o repositório oferece suporte à preservação da ordem dos nós secundários.</td>
   </tr>
   <tr>
    <td>jcr.repository.vendor</td>
@@ -401,20 +404,20 @@ Informações sobre o repositório CRX
   </tr>
   <tr>
    <td>query.joins</td>
-   <td><p>O nível de suporte para joins em consultas. Os seguintes valores são possíveis:</p>
+   <td><p>O nível de suporte para joins em query. Os seguintes valores são possíveis:</p>
     <ul>
-     <li>query.joins.none: Sem suporte para joins. As consultas podem usar um seletor.</li>
+     <li>query.joins.none: Não há suporte para joins. Query podem usar um seletor.</li>
      <li>query.joins.inner: Suporte para entradas internas.</li>
      <li>query.joins.inner.external: Suporte para entradas internas e externas.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>org.apache.Jackrabbit.spi.commons.AdditionalEventInfo</td>
+   <td>org.apache.jackrabbit.spi.commons.AdditionalEventInfo</td>
    <td> </td>
   </tr>
   <tr>
    <td>query.xpath.doc.order</td>
-   <td>true indica que o repositório suporta a linguagem de consulta XPath 1.0.</td>
+   <td>true indica que o repositório suporta a linguagem do query XPath 1.0.</td>
   </tr>
   <tr>
    <td>query.jcrpath</td>
@@ -429,11 +432,11 @@ Informações sobre o repositório CRX
    <td>true indica que o repositório suporta nós irmãos (nós com o mesmo pai) com os mesmos nomes.</td>
   </tr>
   <tr>
-   <td>node.type.management.residual.settings.supported</td>
+   <td>node.type.management.residual.definitions.supported</td>
    <td>true indica que o repositório suporta propriedades de nome com definições residuais. Quando suportado, o atributo name de uma definição de item pode ser um asterisco ("*").</td>
   </tr>
   <tr>
-   <td>node.type.management.autocreated.settings.supported</td>
+   <td>node.type.management.autocreated.definitions.supported</td>
    <td>true indica que o repositório suporta a criação automática de itens filhos (nós ou propriedades) de um nó quando o nó é criado.</td>
   </tr>
   <tr>
@@ -445,11 +448,11 @@ Informações sobre o repositório CRX
    <td>true indica que option.xml.export.support é true e query.languages tem comprimento diferente de zero.</td>
   </tr>
   <tr>
-   <td>option.unfield.content.supported</td>
+   <td>option.unfiled.content.supported</td>
    <td>true indica que o repositório suporta conteúdo não arquivado. Os nós não arquivados não fazem parte da hierarquia do repositório.</td>
   </tr>
   <tr>
-   <td>jcr.spec.name</td>
+   <td>jcr.specification.name</td>
    <td>O nome da especificação JCR que o repositório implementa.</td>
   </tr>
   <tr>
@@ -469,15 +472,15 @@ Informações sobre o repositório CRX
    <td> </td>
   </tr>
   <tr>
-   <td>option.activity.supported</td>
-   <td>true indica que o repositório suporta atividades. As atividades são um conjunto de alterações executadas em um espaço de trabalho que são mescladas em outro espaço de trabalho.</td>
+   <td>option.activities.supported</td>
+   <td>true indica que o repositório suporta atividade. O Atividade é um conjunto de alterações executadas em um espaço de trabalho que são mescladas em outro espaço de trabalho.</td>
   </tr>
   <tr>
    <td>node.type.management.multivalued.properties.supported</td>
    <td>true indica que o repositório suporta propriedades de nó que podem ter zero ou mais valores.</td>
   </tr>
   <tr>
-   <td>option.ention.supported</td>
+   <td>option.retention.supported</td>
    <td>true indica que o repositório suporta o uso de aplicativos externos de gerenciamento de retenção para aplicar políticas de retenção ao conteúdo e oferece suporte para retenção e liberação.</td>
   </tr>
   <tr>
@@ -558,7 +561,7 @@ Somente leitura.
 
       Você pode especificar um caminho absoluto ou relativo. Os caminhos relativos são relativos ao pai do diretório crx-quickstart.
 
-      Quando nenhum valor é especificado, o valor padrão de `backup-currentdate.zip` é usado, onde `currentdate` está no formato `yyyyMMdd-HHmm`.
+      Quando você não especifica nenhum valor, o valor padrão de `backup-currentdate.zip` é usado, onde `currentdate` está no formato `yyyyMMdd-HHmm`.
 
 * Valor retornado: none
 
@@ -577,7 +580,7 @@ Somente leitura.
 * Argumentos: none
 * Valor retornado: none
 
-**startTarOtimization** Inicia o processo de otimização de arquivo TAR usando o valor padrão para tarOtimizationDelay.
+**startTarOtimization** Start o processo de otimização de arquivos TAR usando o valor padrão para tarOtimizationDelay.
 
 * Argumentos: none
 * Valor retornado: none
@@ -595,12 +598,12 @@ Somente leitura.
 
 * Valor retornado: none
 
-**tornarClusterMaster** Define este nó de repositório como o nó mestre do cluster. Se ainda não for mestre, esse comando interrompe o ouvinte da instância mestre atual e inicia um ouvinte mestre no nó atual. Esse nó é definido como o nó mestre e reiniciado, fazendo com que todos os nós escravos se conectem a essa instância.
+**tornarClusterMaster** Define este nó de repositório como o nó mestre do cluster. Se ainda não for mestre, esse comando interrompe o ouvinte da instância mestre atual e start um ouvinte mestre no nó atual. Esse nó é definido como o nó mestre e reiniciado, fazendo com que todos os outros nós do cluster (ou seja, aqueles controlados pelo mestre) se conectem a essa instância.
 
 * Argumentos: none
 * Valor retornado: none
 
-**joinCluster** Adiciona este repositório a um cluster como um nó escravo. Você deve fornecer um nome de usuário e senha para fins de autenticação. A conexão usa autenticação básica. As credenciais de segurança são codificadas em base 64 antes de serem enviadas para o servidor.
+**joinCluster** Adiciona este repositório a um cluster como um nó controlado pelo mestre de cluster. Você deve fornecer um nome de usuário e senha para fins de autenticação. A conexão usa autenticação básica. As credenciais de segurança são codificadas em base 64 antes de serem enviadas para o servidor.
 
 * Argumentos:
 
@@ -650,35 +653,35 @@ O valor do campo TimeSeries para cada tipo de estatística que `org.apache.jackr
 Os seguintes atributos são fornecidos para cada tipo de estatística reportado:
 
 * ValuePerSecond: O valor medido por segundo no último minuto. Somente leitura.
-* Valor por minuto: O valor medido por minuto durante a última hora. Somente leitura.
+* ValorPorMinuto: O valor medido por minuto durante a última hora. Somente leitura.
 * ValorPorHora: O valor medido por hora na última semana. Somente leitura.
-* ValorPorSemana: O valor medido por semana nos últimos três anos. Somente leitura.
+* ValorPorSemana: O valor medido por semana durante os últimos três anos. Somente leitura.
 
-## Estatísticas de consulta do repositório {#repository-query-stats}
+## Estatísticas do Query do repositório {#repository-query-stats}
 
-Informações estatísticas sobre consultas de repositório.
+Informações estatísticas sobre query de repositório.
 
 * Domínio: com.adobe.granite
 * Tipo: QueryStat
 
 ### Atributos {#attributes-2}
 
-**SlowQueries** Informações sobre as consultas do repositório que demoraram mais tempo para serem concluídas. Somente leitura.
+**SlowQueries** Informações sobre os query do repositório que demoraram mais tempo para serem concluídos. Somente leitura.
 
-**SlowQueriesQueueSize** O número máximo de consultas a serem incluídas na lista SlowQueries. Leitura-gravação.
+**SlowQueriesQueueSize** O número máximo de query a serem incluídos na lista SlowQueries. Leitura-gravação.
 
-**Consultas** popularesInformações sobre as consultas do repositório que mais ocorreram. Somente leitura.
+**PopularQueries** Informações sobre os query do repositório que mais ocorreram. Somente leitura.
 
-**PopularQueriesQueueSize** O número máximo de consultas na lista PopularQueries. Leitura-gravação.
+**PopularQueriesQueueSize** O número máximo de query na lista PopularQueries. Leitura-gravação.
 
 ### Operações {#operations-2}
 
-**clearSlowQueriesQueue** Remove todas as consultas da lista SlowQueries.
+**clearSlowQueriesQueue** Remove todos os query da lista SlowQueries.
 
 * Argumentos: none
 * Valor retornado: none
 
-**clearPopularQueriesQueue** Remove todas as consultas da lista PopularQueries.
+**clearPopularQueriesQueue** Remove todos os query da lista PopularQueries.
 
 * Argumentos: none
 * Valor retornado: none
@@ -687,10 +690,10 @@ Informações estatísticas sobre consultas de repositório.
 
 Monitore os serviços de cada agente de replicação. Quando você cria um agente de replicação, o serviço aparece automaticamente no console JMX.
 
-* **** Domínio: com.adobe.granite.Replication
-* **** Tipo: agente
-* **** Nome: sem valor
-* **** Propriedades: {id=&quot;*Name*&quot;}, onde *Name* é o valor da propriedade agent Name.
+* **Domínio:** com.adobe.granite.Replication
+* **Tipo:** agente
+* **Nome:** sem valor
+* **Propriedades:** {id=&quot;*Name*&quot;}, onde *Name* é o valor da propriedade agent Name.
 
 ### Atributos {#attributes-3}
 
@@ -734,7 +737,7 @@ Leitura-gravação.
 
 ### Operações {#operations-3}
 
-**queueForceRetry** Para filas bloqueadas, emite o comando retry para a fila.
+**queueForceRetry** Para filas bloqueadas, emite o comando tentar novamente para a fila.
 
 * Argumentos: none
 * Valor retornado: none
@@ -766,7 +769,7 @@ Fornece estatísticas sobre solicitações HTTP para que você possa monitorar o
 
 ### Operações {#operations-4}
 
-**resetStatistics** Define todas as estatísticas como zero. Redefina as estatísticas quando precisar analisar o desempenho do processamento da solicitação durante um período específico.
+**resetStatistics** Define todas as estatísticas como zero. Redefina as estatísticas quando precisar analisar o desempenho do processamento da solicitação durante um período de tempo específico.
 
 * Argumentos: none
 * Valor retornado: none
@@ -895,11 +898,11 @@ A página principal do console JMX inclui uma tabela de serviços. Cada linha na
 1. Abra o Console da Web e clique na guia JMX. ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
 2. Clique em um valor de célula para um serviço para ver os atributos e as operações do serviço.
 3. Para alterar um valor de atributo, clique no valor, especifique o valor na caixa de diálogo exibida e clique em Salvar.
-4. Para invocar uma operação de serviço, clique no nome da operação, especifique os valores do argumento na caixa de diálogo que aparece e clique em Chamar.
+4. Para invocar uma operação de serviço, clique no nome da operação, especifique os valores do argumento na caixa de diálogo que é exibida e clique em Chamar.
 
 ## Uso de aplicativos JMX externos para monitoramento {#using-external-jmx-applications-for-monitoring}
 
-O CRX permite que aplicativos externos interajam com o Managed Beans (MBeans) via JMX ( [Java Management Extensions)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). O uso de consoles genéricos, como o [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou aplicativos de monitoramento específicos do domínio, permite obter e definir configurações e propriedades do CRX, bem como monitorar o desempenho e o uso de recursos.
+O CRX permite que aplicativos externos interajam com o Managed Beans (MBeans) via JMX ( [Java Management Extensions)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). O uso de consoles genéricos, como o [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou aplicativos de monitoramento específicos do domínio, permite obter e definir configurações e propriedades do CRX, bem como o monitoramento do desempenho e do uso de recursos.
 
 ### Usando o JConsole para se conectar ao CRX {#using-jconsole-to-connect-to-crx}
 
@@ -910,7 +913,7 @@ Para se conectar ao CRX usando o JConsole, siga estas etapas:
 
    `jconsole`
 
-O JConsole será iniciado e a janela JConsole será exibida.
+O JConsole será start e a janela JConsole será exibida.
 
 ### Conexão com um processo CRX local {#connecting-to-a-local-crx-process}
 
