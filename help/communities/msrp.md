@@ -1,8 +1,8 @@
 ---
 title: MSRP - Provedor de recursos do Armazenamento MongoDB
 seo-title: MSRP - Provedor de recursos do Armazenamento MongoDB
-description: Configurar o AEM Communities para usar um banco de dados relacional como sua loja comum
-seo-description: Configurar o AEM Communities para usar um banco de dados relacional como sua loja comum
+description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
+seo-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Sobre o MSRP {#about-msrp}
 
-Quando o AEM Communities está configurado para usar o MSRP como sua loja comum, o conteúdo gerado pelo usuário (UGC) pode ser acessado de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
+Quando o AEM Communities está configurado para usar o MSRP como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
 
 Consulte também [Características das opções](working-with-srp.md#characteristics-of-srp-options) de SRP e das topologias [](topologies.md)recomendadas.
 
@@ -102,13 +105,13 @@ Deixe em branco se estiver sendo executado no modo SolrCloud.
 
 ### Conjunto de Réplicas MongoDB {#mongodb-replica-set}
 
-Para o ambiente de produção, é altamente recomendável configurar um conjunto de réplicas, um cluster de servidores MongoDB que implementa a replicação mestre-escravo e o failover automatizado.
+Para o ambiente de produção, é altamente recomendável configurar um conjunto de réplicas, um cluster de servidores MongoDB que implementa a replicação primária-secundária e o failover automatizado.
 
 Para saber mais sobre conjuntos de réplicas, visite a documentação de [Replicação](https://docs.mongodb.org/manual/replication/) do MongoDB.
 
 Para trabalhar com conjuntos de réplicas e aprender a definir conexões entre aplicativos e instâncias MongoDB, visite a documentação do Formato [URI da String de](https://docs.mongodb.org/manual/reference/connection-string/) Conexão do MongoDB.
 
-#### URL de exemplo para conexão com um conjunto de réplicas {#example-url-for-connecting-to-a-replica-set}
+#### URL de exemplo para conexão com um conjunto de réplicas  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -132,7 +135,7 @@ Para obter detalhes sobre a configuração, consulte Configuração [Solr para S
 
 Se a atualização de uma versão anterior configurada com MSRP for feita, será necessário:
 
-1. Faça a [atualização para o AEM Communities](upgrade.md)
+1. Execute a [atualização para AEM Communities](upgrade.md)
 1. Instalar novos arquivos de configuração do Solr
    * Para MLS [padrão](solr.md#installing-standard-mls)
    * Para MLS [avançado](solr.md#installing-advanced-mls)
@@ -186,7 +189,8 @@ cURL -u *logon* -d *data* *reindex-url*
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
-*size* = quantas entradas UGC devem ser reindexadas por operação`/content/usergenerated/asi/mongo/`
+*size* = quantas entradas UGC devem ser reindexadas por operação
+`/content/usergenerated/asi/mongo/`
 
 *caminho* = o local raiz da árvore do UGC a ser reindexada
 
@@ -194,7 +198,8 @@ cURL -u *logon* -d *data* *reindex-url*
    `/etc/socialconfig/srpc/defaultconfiguration`
 * Para limitar o índice a algum UGC, especifique uma subárvore de `asipath`
 
-*reindex-url* = o endpoint para reindexação de SRP`http://localhost:4503/services/social/datastore/mongo/reindex`
+*reindex-url* = o endpoint para reindexação de SRP
+`http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
 >
@@ -226,7 +231,7 @@ Em todas as instâncias do autor e publicação de AEM, reveja o console [Config
 
 ### O UGC desaparece após a atualização {#ugc-disappears-after-upgrade}
 
-Se você estiver atualizando de um site do AEM Communities 6.0 existente, qualquer UGC pré-existente deve ser convertido em conformidade com a estrutura necessária para a API [SRP](srp.md) após a atualização para o AEM Communities 6.3.
+Se você estiver atualizando de um site existente do AEM Communities 6.0, qualquer UGC pré-existente deve ser convertido para estar em conformidade com a estrutura necessária para a API [SRP](srp.md) após a atualização para o AEM Communities 6.3.
 
 Há uma ferramenta de código aberto disponível no GitHub para esse fim:
 
