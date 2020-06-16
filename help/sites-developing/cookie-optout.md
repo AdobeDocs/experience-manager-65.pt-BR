@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +37,7 @@ Para configurar o serviço, você pode usar o Console [da](/help/sites-deploying
 |---|---|---|
 | Cookies de não participação | optout.cookies | Os nomes dos cookies que indicam, quando presentes no dispositivo do usuário, que o usuário não consentiu em usar cookies. |
 | Cabeçalhos HTTP de opção | optout.headers | Os nomes dos cabeçalhos HTTP que indicam, quando presentes, que o usuário não consentiu em usar cookies. |
-| Cookies da lista branca | optout.whitelist.cookies | Uma lista de cookies essenciais para o funcionamento do site e que podem ser usados sem o consentimento do usuário. |
+| Cookies de Lista branca | optout.whitelist.cookies | Uma lista de cookies essenciais para o funcionamento do site e que podem ser usados sem o consentimento do usuário. |
 
 ## Validação do uso de cookies {#validating-cookie-usage}
 
@@ -92,7 +95,7 @@ Uma matriz de nomes de cookies.
 
 #### função isOptedOut() {#isoptedout-function}
 
-Determina se o navegador do usuário contém algum cookie que indica que o consentimento não foi dado para usar cookies.
+Determina se o navegador do usuário contém algum cookie que indica que o consentimento não foi dado para o uso de cookies.
 
 **Parâmetros**
 
@@ -100,11 +103,11 @@ Nenhum.
 
 **Retorna**
 
-Um valor booliano de `true` se um cookie for encontrado que indica que não há consentimento e um valor de `false` se nenhum cookie indicar não-consentimento.
+Um valor booliano de `true` se um cookie for encontrado que indica que não há consentimento, e um valor de `false` se nenhum cookie indicar não-consentimento.
 
 ### função maySetCookie(cookieName) {#maysetcookie-cookiename-function}
 
-Determina se um cookie específico pode ser usado no navegador do usuário. Essa função equivale a usar a `isOptedOut` função em conjunto com a determinação de se o cookie especificado está incluído na lista que a `getWhitelsitCookieNames` função retorna.
+Determina se um cookie específico pode ser usado no navegador do usuário. Essa função equivale a usar a `isOptedOut` função em conjunto com a determinação de se o cookie especificado está incluído na lista que a `getWhitelistCookieNames` função retorna.
 
 **Parâmetros**
 
