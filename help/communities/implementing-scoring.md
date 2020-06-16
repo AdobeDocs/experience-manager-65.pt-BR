@@ -1,8 +1,8 @@
 ---
 title: Pontuação das comunidades e emblemas
 seo-title: Pontuação das comunidades e emblemas
-description: A pontuação e os emblemas do AEM Communities permitem que você identifique e recompense os membros da comunidade
-seo-description: A pontuação e os emblemas do AEM Communities permitem que você identifique e recompense os membros da comunidade
+description: A pontuação de AEM Communities e os emblemas permitem identificar e recompensar os membros da comunidade
+seo-description: A pontuação de AEM Communities e os emblemas permitem identificar e recompensar os membros da comunidade
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2897'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## Visão geral {#overview}
 
-O recurso de pontuação e selo do AEM Communities fornece a capacidade de identificar e recompensar membros da comunidade.
+O recurso de pontuação de AEM Communities e emblemas fornece a capacidade de identificar e recompensar membros da comunidade.
 
 Os principais aspectos da pontuação e dos emblemas são:
 
@@ -65,12 +65,15 @@ Os símbolos atribuídos (e avisados) são armazenados no [SRP](/help/communitie
 Na versão estão incluídos três emblemas baseados em funções:
 
 * **moderador**
+
    `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **gestor de grupo**
+
    `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **membro privilegiado**
+
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
@@ -87,12 +90,15 @@ Para que os crachás apareçam como recompensa pela atividades, há duas coisas 
 Na versão estão incluídos três cartões baseados em recompensa:
 
 * **ouro**
+
    `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **prata**
+
    `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **bronze**
+
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
@@ -349,7 +355,7 @@ A `scoringRules` propriedade em uma regra de identificação simplesmente restri
      <li>número = pontuação</li>
      <li>| = barra vertical (U+007C)</li>
      <li>caminho = caminho completo para o recurso de imagem de emblema</li>
-    </ul> As strings devem ser ordenadas para que os números aumentem em valor e nenhum espaço em branco deve aparecer entre o número e o caminho.<br /> Exemplo de entrada :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> As sequências de caracteres devem ser ordenadas de modo que os números aumentem em valor e nenhum espaço em branco deve aparecer entre o número e o caminho.<br /> Exemplo de entrada :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -409,6 +415,7 @@ cURL -i -X POST -H *header* -u *login* -F *operação* -F *emblema* *membro-perf
 >
 >* Pode consultar uma instância do autor se o Serviço [de](/help/communities/users.md#tunnel-service) Túnel estiver ativado.
 >* Pode ser um nome obscuro e aleatório - consulte Lista de verificação [de](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) segurança com relação à ID autorizada.
+
 >
 
 
