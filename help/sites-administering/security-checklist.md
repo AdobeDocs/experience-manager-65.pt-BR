@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+workflow-type: tm+mt
+source-wordcount: '2841'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Esta seção trata de várias etapas que devem ser tomadas para garantir que sua
 
 >[!NOTE]
 >
->Outras informações também [estão disponíveis sobre as ameaças de segurança mais perigosas, conforme publicado pelo Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+>Outras informações [estão também disponíveis sobre as ameaças de segurança mais perigosas, conforme publicado pelo Open Aplicação web Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
 
 >[!NOTE]
 >
@@ -36,7 +39,7 @@ Para obter mais informações, consulte [Execução do AEM no modo](/help/sites-
 
 ### Habilitar HTTPS para segurança de camada de transporte {#enable-https-for-transport-layer-security}
 
-A ativação da camada de transporte HTTPS nas instâncias de autor e publicação é obrigatória para ter uma instância segura.
+Habilitar a camada de transporte HTTPS nas instâncias de autor e publicação é obrigatório para ter uma instância segura.
 
 >[!NOTE]
 >
@@ -44,7 +47,7 @@ A ativação da camada de transporte HTTPS nas instâncias de autor e publicaç�
 
 ### Instalar Hotfixes de Segurança {#install-security-hotfixes}
 
-Verifique se você instalou os Hotfixes [de segurança mais recentes fornecidos pela Adobe](https://helpx.adobe.com/experience-manager/kb/aem63-available-hotfixes.html).
+Verifique se você instalou os Hotfixes [de segurança mais recentes fornecidos pela Adobe](https://helpx.adobe.com/br/experience-manager/kb/aem63-available-hotfixes.html).
 
 ### Alterar senhas padrão para contas de administração do console do AEM e OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -77,7 +80,7 @@ Aqui você pode editar a `admin` conta e [alterar a senha](/help/sites-administe
 Além da conta do AEM `admin` , a falha ao alterar a senha padrão do console da Web do OSGi pode levar a:
 
 * Exposição do servidor com uma senha padrão durante a inicialização e o encerramento (que pode levar minutos para grandes servidores);
-* Exposição do servidor quando o repositório está inativo/reiniciando o pacote - e OSGI está em execução.
+* Exposição do servidor quando o repositório está inativo/reiniciando o pacote - e o OSGI está em execução.
 
 Para obter mais informações sobre como alterar a senha do console da Web, consulte [Alteração da senha](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) de administrador do console da Web OSGi abaixo.
 
@@ -105,7 +108,7 @@ A Adobe recomenda definir páginas personalizadas do manipulador de erros, espec
 >
 >Consulte [Como criar scripts personalizados ou artigos da base de conhecimento para manipuladores](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) de erros para obter mais detalhes.
 
-### Lista de verificação completa de segurança do Dispatcher {#complete-dispatcher-security-checklist}
+### Lista de verificação de segurança completa da Dispatcher {#complete-dispatcher-security-checklist}
 
 O AEM Dispatcher é uma peça essencial de sua infraestrutura. A Adobe recomenda enfaticamente que você conclua a lista [de verificação de segurança do](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)dispatcher.
 
@@ -123,15 +126,15 @@ Por razões de segurança, ambas devem ser alteradas de modo a refletir o caso d
 
 * O usuário **de** transporte não deve ser o usuário administrador. Em vez disso, configure um usuário no sistema de publicação que tenha somente direitos de acesso às partes relevantes do sistema de publicação e use as credenciais desse usuário para o transporte.
 
-   Você pode começar pelo usuário receptor de replicação empacotado e configurar os direitos de acesso desse usuário para corresponder à sua situação
+   Você pode start do usuário receptor de replicação agrupado e configurar os direitos de acesso desse usuário para corresponder à sua situação
 
 * O usuário **de** replicação ou a ID **de usuário do** agente também não devem ser o usuário administrador, mas um usuário que só pode ver o conteúdo que deve ser replicado. O usuário de replicação é usado para coletar o conteúdo a ser replicado no sistema do autor antes de ser enviado ao editor.
 
-### Verifique as verificações de integridade da segurança do painel de operações {#check-the-operations-dashboard-security-health-checks}
+### Verifique as verificações de integridade da segurança do Painel de operações {#check-the-operations-dashboard-security-health-checks}
 
-O AEM 6 apresenta o novo Painel de operações, com o objetivo de ajudar os operadores do sistema a solucionar problemas e monitorar a integridade de uma instância.
+O AEM 6 apresenta o novo Painel Operações, que tem como objetivo ajudar os operadores do sistema a solucionar problemas e monitorar a integridade de uma instância.
 
-O painel também vem com uma coleção de verificações de integridade de segurança. É recomendável verificar o status de todas as verificações de integridade de segurança antes de entrar em operação com a instância de produção. Para obter mais informações, consulte a documentação [do Painel de](/help/sites-administering/operations-dashboard.md)operações.
+O painel também vem com uma coleção de verificações de segurança de saúde. É recomendável verificar o status de todas as verificações de integridade de segurança antes de entrar em operação com a instância de produção. Para obter mais informações, consulte a documentação [do Painel de](/help/sites-administering/operations-dashboard.md)Operações.
 
 ### Verifique se o conteúdo de exemplo está presente {#check-if-example-content-is-present}
 
@@ -161,19 +164,19 @@ Esse pacote OSGi deve ser desinstalado no autor e publicar sistemas produtivos a
 
 O AEM 6.1 é fornecido com um mecanismo que ajuda a proteger contra ataques de falsificação de solicitações entre sites, chamado de Estrutura **de proteção do** CSRF. Para obter mais informações sobre como usá-lo, consulte a [documentação](/help/sites-developing/csrf-protection.md).
 
-#### O Filtro De Referência Sling {#the-sling-referrer-filter}
+#### O filtro de Quem indicou Sling {#the-sling-referrer-filter}
 
-Para resolver problemas de segurança conhecidos com o CSRF (Cross-Site Request Forgery) no CRX WebDAV e no Apache Sling, é necessário adicionar configurações para o filtro Referenciador para usá-lo.
+Para resolver problemas de segurança conhecidos com o CSRF (Cross-Site Request Forgery) no CRX WebDAV e no Apache Sling, é necessário adicionar configurações para o filtro de Quem indicou para usá-lo.
 
-O serviço de filtro do referenciador é um serviço OSGi que permite configurar:
+O serviço de filtro de quem indicou é um serviço OSGi que permite configurar:
 
 * quais métodos http devem ser filtrados
-* se um cabeçalho de referenciador vazio é permitido
-* e uma lista branca de servidores a serem permitidos além do host do servidor.
+* se um cabeçalho de quem indicou vazio é permitido
+* e uma lista de servidores a ser permitida além do host do servidor.
 
-Por padrão, todas as variações de localhost e os nomes de host atuais aos quais o servidor está vinculado estão na lista branca.
+   Por padrão, todas as variações de localhost e os nomes de host atuais aos quais o servidor está vinculado estão na lista.
 
-Para configurar o serviço de filtro do referenciador:
+Para configurar o serviço de filtro de quem indicou:
 
 1. Abra o console Apache Felix (**Configurações**) em:
 
@@ -184,7 +187,7 @@ Para configurar o serviço de filtro do referenciador:
 
    `Apache Sling Referrer Filter`
 
-1. No `Allow Hosts` campo, informe todos os hosts permitidos como referenciador. Cada entrada precisa ser do formulário
+1. No `Allow Hosts` campo, informe todos os hosts que são permitidos como uma quem indicou. Cada entrada precisa ser do formulário
 
    &lt;protocolo>://&lt;servidor>:&lt;porta>
 
@@ -194,11 +197,11 @@ Para configurar o serviço de filtro do referenciador:
    * Se você também quiser permitir solicitações https, é necessário inserir uma segunda linha.
    * Se você permitir todas as portas desse servidor, poderá usar `0` como o número da porta.
 
-1. Marque o `Allow Empty` campo se desejar permitir cabeçalhos de referenciador vazios/ausentes.
+1. Marque o `Allow Empty` campo se desejar permitir cabeçalhos de quem indicou vazios/ausentes.
 
    >[!CAUTION]
    >
-   >É recomendável fornecer um referenciador ao usar ferramentas de linha de comando, como `cURL` em vez de permitir um valor vazio, pois ele pode expor seu sistema a ataques de CSRF.
+   >É recomendável fornecer uma quem indicou ao usar ferramentas de linha de comando, como `cURL` em vez de permitir um valor vazio, pois isso pode expor seu sistema a ataques de CSRF.
 
 1. Edite os métodos que este filtro deve usar para verificações com o `Filter Methods` campo.
 
@@ -206,7 +209,7 @@ Para configurar o serviço de filtro do referenciador:
 
 ### Configurações de OSGI {#osgi-settings}
 
-Algumas configurações OSGI são definidas por padrão para permitir uma depuração mais fácil do aplicativo. Eles precisam ser alterados em suas instâncias produtivas de publicação e criação para evitar que informações internas vazem para o público.
+Algumas configurações de OSGI são definidas por padrão para permitir uma depuração mais fácil do aplicativo. Eles precisam ser alterados em suas instâncias produtivas de publicação e criação para evitar que informações internas vazem para o público.
 
 >[!NOTE]
 >
@@ -244,7 +247,7 @@ When working with AEM there are several methods of managing the configuration se
 
 ## Outras leituras {#further-readings}
 
-### Reduzir ataques de negação de serviço (DoS) {#mitigate-denial-of-service-dos-attacks}
+### Atenuar ataques de negação de serviço (DoS) {#mitigate-denial-of-service-dos-attacks}
 
 Um ataque de negação de serviço (DoS) é uma tentativa de tornar um recurso de computador indisponível para os usuários pretendidos. Isso é feito com frequência sobrecarregando o recurso; por exemplo:
 
@@ -260,6 +263,7 @@ Um ataque de negação de serviço (DoS) é uma tentativa de tornar um recurso d
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
+
    Todas as variações válidas (por exemplo, retornar uma `200` resposta e serem configuradas para serem armazenadas em cache) serão armazenadas em cache pelo dispatcher, resultando em um sistema de arquivos completo e nenhum serviço para solicitações adicionais.
 
 Há muitos pontos de configuração para evitar tais ataques, aqui apenas discutimos os diretamente relacionados ao AEM.
@@ -268,7 +272,7 @@ Há muitos pontos de configuração para evitar tais ataques, aqui apenas discut
 
 O Sling é centrado no *conteúdo*. Isso significa que o processamento está focado no conteúdo, já que cada solicitação (HTTP) está mapeada para o conteúdo na forma de um recurso JCR (um nó de repositório):
 
-* O primeiro destino é o recurso (nó JCR) que contém o conteúdo.
+* O primeiro público alvo é o recurso (nó JCR) que contém o conteúdo.
 * Em segundo lugar, o renderizador, ou script, está localizado nas propriedades do recurso em combinação com determinadas partes da solicitação (por exemplo, seletores e/ou extensão).
 
 >[!NOTE]
@@ -283,7 +287,7 @@ Para ajudar a impedir o uso indevido de DoS, você pode:
 
    Em seu aplicativo, você deve:
 
-   * Controle os seletores em seu aplicativo, para que você *só* sirva os seletores explícitos necessários e volte `404` para todos os outros.
+   * Controle os seletores em seu aplicativo, para que você *só* sirva os seletores explícitos necessários e retorne `404` para todos os outros.
    * Impedir a saída de um número ilimitado de nós de conteúdo.
 
 1. Verifique a configuração dos renderizadores padrão, que podem ser uma área problemática.
@@ -294,7 +298,7 @@ Para ajudar a impedir o uso indevido de DoS, você pode:
 
       `http://localhost:4502/.json`
 
-      poderia descarregar todo o repositório em uma representação JSON. Isso causaria problemas significativos no servidor. Por isso, o Sling define um limite para o número máximo de resultados. Para limitar a profundidade da renderização JSON, é possível definir o valor para:
+      poderia descarregar todo o repositório em uma representação JSON. Isso causaria problemas significativos no servidor. Por esse motivo, o Sling define um limite para o número máximo de resultados. Para limitar a profundidade da renderização JSON, é possível definir o valor para:
 
       **Resultados** máx. JSON ( `json.maximumresults`)
 
@@ -313,9 +317,9 @@ Para ajudar a impedir o uso indevido de DoS, você pode:
 
 >[!NOTE]
 >
->Essa mitigação deve ser realizada somente em ambientes AEM que não estejam usando o Forms.
+>Essa mitigação deve ser executada somente em ambientes AEM que não estejam usando o Forms.
 
-Como o AEM não fornece índices prontos para o `FormChooserServlet`, o uso de seletores de formulário em consultas acionará uma dispendiosa travessia do repositório, geralmente paralisando a instância do AEM. Os seletores de formulário podem ser detectados pela presença do **&amp;ast;.form.** &amp;ast; sequência de caracteres em consultas.
+Como o AEM não fornece índices prontos para o `FormChooserServlet`, o uso de seletores de formulário em query acionará uma dispendiosa travessia do repositório, geralmente paralisando a instância do AEM. Os seletores de formulário podem ser detectados pela presença do **&amp;ast;.form.&amp;ast;** string em query.
 
 Para atenuar isso, siga as etapas abaixo:
 
@@ -330,7 +334,7 @@ Para atenuar isso, siga as etapas abaixo:
 
 O Servlet de download de ativos padrão no AEM permite que os usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos visíveis a eles que podem sobrecarregar o servidor e/ou a rede.
 
-Para atenuar os possíveis riscos de DoS causados por esse recurso, o componente `AssetDownloadServlet` OSGi é desativado por padrão para instâncias de publicação nas versões mais recentes do AEM.
+Para atenuar os possíveis riscos de DoS causados por esse recurso, o componente `AssetDownloadServlet` OSGi é desabilitado por padrão para instâncias de publicação nas versões mais recentes do AEM.
 
 Se a configuração exigir que o Servidor de download de ativos esteja ativado, consulte [este artigo](/help/assets/download-assets-from-aem.md) para obter mais informações.
 
@@ -344,13 +348,13 @@ O WebDAV deve ser desativado nos ambientes de autor e publicação. Isso pode se
 
    Por exemplo `http://localhost:4503/system/console/bundles`.
 
-1. Na lista de pacotes, localize o conjunto chamado:
+1. Na lista dos pacotes, localize o conjunto chamado:
 
    `Apache Sling Simple WebDAV Access to repositories (org.apache.sling.jcr.webdav)`
 
 1. Clique no botão Parar (na coluna Ações) para parar este pacote.
 
-1. Novamente na lista de pacotes, localize o conjunto chamado:
+1. Novamente na lista de pacotes, encontre o pacote chamado:
 
    `Apache Sling DavEx Access to repositories (org.apache.sling.jcr.davex)`
 
@@ -366,7 +370,7 @@ O WebDAV deve ser desativado nos ambientes de autor e publicação. Isso pode se
 
 Como o AEM 6.1, o modo como os nomes dos nós de ID de usuário (também conhecidos como autorizados) são armazenados é alterado com uma nova implementação da `AuthorizableNodeName` interface. A nova interface não exporá mais a ID do usuário no nome do nó, mas gerará um nome aleatório.
 
-Nenhuma configuração precisa ser executada para habilitá-la, pois essa é a forma padrão de gerar IDs autorizados no AEM.
+Nenhuma configuração precisa ser executada para habilitá-la, já que essa é a forma padrão de gerar IDs autorizados no AEM.
 
 Embora não seja recomendado, você pode desativá-lo caso precise da implementação antiga para ter compatibilidade com seus aplicativos existentes. Para fazer isso, é necessário:
 
@@ -388,7 +392,7 @@ Para evitar o clickjacking, recomendamos que você configure o servidor Web para
 
 Para obter mais [informações sobre clickjacking, consulte o site](https://www.owasp.org/index.php/Clickjacking)da OWASP.
 
-### Certifique-se de replicar corretamente as chaves de criptografia quando necessário {#make-sure-you-properly-replicate-encryption-keys-when-needed}
+### Certifique-Se De Replicar Adequadamente As Chaves De Criptografia Quando Necessário {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
 Determinados recursos do AEM e esquemas de autenticação exigem que você replique suas chaves de criptografia em todas as instâncias do AEM.
 
@@ -398,9 +402,9 @@ Consulte abaixo para obter mais informações.
 
 #### Replicação de chaves para o AEM 6.3 {#replicating-keys-for-aem}
 
-Enquanto em versões mais antigas as chaves de replicação eram armazenadas no repositório, a partir do AEM 6.3 elas são armazenadas no sistema de arquivos.
+Enquanto em versões mais antigas as chaves de replicação eram armazenadas no repositório, a partir do AEM 6.3, elas são armazenadas no sistema de arquivos.
 
-Portanto, para replicar suas chaves em instâncias, é necessário copiá-las da instância de origem para o local das instâncias de destino no sistema de arquivos.
+Portanto, para replicar suas chaves em instâncias, é necessário copiá-las da instância de origem para o local das instâncias de público alvo no sistema de arquivos.
 
 Mais especificamente, você precisa:
 
@@ -408,6 +412,7 @@ Mais especificamente, você precisa:
 1. Localize o pacote com.adobe.granite.crypto.file no sistema de arquivos local. Por exemplo, neste caminho:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+
    O `bundle.info` arquivo dentro de cada pasta identificará o nome do pacote.
 
 1. Navegue até a pasta de dados. Por exemplo:
@@ -415,12 +420,12 @@ Mais especificamente, você precisa:
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Copie os arquivos HMAC e master.
-1. Em seguida, vá para a instância de destino para a qual deseja duplicar a chave HMAC e navegue até a pasta de dados. Por exemplo:
+1. Em seguida, vá para a instância do público alvo para a qual deseja duplicado a chave HMAC e navegue até a pasta de dados. Por exemplo:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Cole os dois arquivos copiados anteriormente.
-1. [Atualize o Conjunto](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) de criptografia se a instância de destino já estiver em execução.
+1. [Atualize o pacote](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) Crypto se a instância do público alvo já estiver em execução.
 1. Repita as etapas acima para todas as instâncias às quais deseja replicar a chave.
 
 >[!NOTE]
