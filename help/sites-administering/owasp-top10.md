@@ -10,26 +10,29 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: cd7331f5f57ec90ea72d41d467891dc832347a3c
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
 
 # OWASP Top 10{#owasp-top}
 
-O [Open Web Application Security Project](https://www.owasp.org) (OWASP) mantém uma lista dos 10 Riscos [de Segurança da Aplicação Web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project)Principais.
+O Open [Aplicação web Security Project](https://www.owasp.org) (OWASP) mantém uma lista do que consideram como os 10 [maiores riscos](https://www.owasp.org/index.php/OWASP_Top_Ten_Project)de segurança da Aplicação web.
 
 Estes estão listados abaixo, juntamente com uma explicação de como o CRX lida com eles.
 
 ## 1. Injeção {#injection}
 
-* SQL - Impedido pelo design: A configuração padrão do repositório não inclui nem exige um banco de dados tradicional, todos os dados são armazenados no repositório de conteúdo. Todo o acesso é limitado a usuários autenticados e só pode ser executado por meio da API JCR. O SQL é suportado apenas para consultas de pesquisa (SELECT). Além disso, o SQL oferece suporte para vínculo de valor.
-* LDAP - A injeção LDAP não é possível, pois o módulo de autenticação filtra a entrada e executa a importação do usuário usando o método de vínculo.
-* SO - Não há execução de shell executada no aplicativo.
+* SQL - Impedido pelo design: A configuração padrão do repositório não inclui nem exige um banco de dados tradicional, todos os dados são armazenados no repositório de conteúdo. Todo o acesso é limitado a usuários autenticados e só pode ser executado por meio da API JCR. O SQL é suportado apenas para query de pesquisa (SELECT). Mais suporte ao vínculo de valor do SQL oferta.
+* LDAP - A injeção LDAP não é possível, pois o módulo de autenticação filtros a entrada e executa a importação do usuário usando o método bind.
+* SO - Não há execução de shell executada dentro do aplicativo.
 
 ## 2. Scripts entre sites (XSS) {#cross-site-scripting-xss}
 
-A prática geral de mitigação é codificar toda a saída de conteúdo gerado pelo usuário usando uma biblioteca de proteção XSS do lado do servidor com base no [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+A prática geral de mitigação é codificar toda a saída de conteúdo gerado pelo usuário usando uma biblioteca de proteção XSS do lado do servidor com base no [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e no [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
 O XSS é uma prioridade máxima durante testes e desenvolvimento, e todos os problemas encontrados são (normalmente) resolvidos imediatamente.
 
@@ -39,13 +42,13 @@ O AEM usa técnicas de autenticação seguras e comprovadas, confiando no [Apach
 
 ## 4. Referências de objeto direto inseguras {#insecure-direct-object-references}
 
-Todo o acesso a objetos de dados é mediado pelo repositório e, portanto, restringido pelo controle de acesso baseado em função.
+Todo o acesso a objetos de dados é mediado pelo repositório e, portanto, restringido pelo controle de acesso baseado em funções.
 
 ## 5. CSRF (Cross-Site Request Forgery) {#cross-site-request-forgery-csrf}
 
 O CSRF (Cross-Site Request Forgery) é mitigado injetando automaticamente um token criptográfico em todos os formulários e solicitações AJAX e verificando esse token no servidor para cada POST.
 
-Além disso, o AEM é enviado com um filtro baseado no cabeçalho do referenciador, que pode ser configurado para permitir somente solicitações POST de hosts especificamente autorizados.
+Além disso, o AEM é enviado com um filtro baseado no cabeçalho da quem indicou, que pode ser configurado para *somente* permitir solicitações POST de hosts específicos (definidos em uma lista).
 
 ## 6. Configuração incorreta de segurança {#security-misconfiguration}
 
@@ -55,9 +58,9 @@ Consulte a Lista [de verificação de](/help/sites-administering/security-checkl
 
 ## 7. Armazenamento criptográfico inseguro {#insecure-cryptographic-storage}
 
-As senhas são armazenadas como hashes criptográficos no nó do usuário; por padrão, esses nós só são legíveis pelo administrador e pelo próprio usuário.
+As senhas são armazenadas como hashes criptográficos no nó do usuário; por padrão, esses nós só podem ser lidos pelo administrador e pelo próprio usuário.
 
-Dados confidenciais, como credenciais de terceiros, são armazenados em forma criptografada usando uma biblioteca criptográfica certificada FIPS 140-2.
+Dados confidenciais, como credenciais de terceiros, são armazenados em forma criptografada usando uma biblioteca criptográfica certificada pelo FIPS 140-2.
 
 ## 8. Falha ao restringir o acesso ao URL {#failure-to-restrict-url-access}
 
