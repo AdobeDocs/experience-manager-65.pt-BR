@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 9%
 
 ---
 
@@ -108,7 +111,7 @@ Define o tipo de nó de um nó de conteúdo de comentário
 
 Uma mistura que define uma localização geográfica em graus decimais (DD)
 
-* `@prop latitude` - latitude codificada como duplo utilizando graus decimais
+* `@prop latitude` - latitude codificada como duplo, utilizando graus decimais
 * `@prop longitude` - longitude codificada como duplo, utilizando graus decimais
 
 **Definição**
@@ -199,13 +202,13 @@ Define um modelo de CQ.
 * `@node jcr:content` - Conteúdo padrão para novas páginas.
 * `@node icon.png` - Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
-* `@node workflows` - Atribuição automática da configuração do fluxo de trabalho. A configuração seguirá a estrutura abaixo:
+* `@node workflows` - Atribuir automaticamente a configuração do fluxo de trabalho. A configuração seguirá a estrutura abaixo:
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos para modelos permitidos como modelos pai.
-* `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos para modelos permitidos como modelos secundários.
+* `@prop allowedParents` - Padrões de expressão regulares para determinar os caminhos para modelos permitidos como modelos pai.
+* `@prop allowedChildren` - Padrões de expressão regulares para determinar os caminhos para modelos permitidos como modelos secundários.
 * `@prop ranking` - Posição na lista de modelos na caixa de diálogo Criar página.
 
 **Definição**
@@ -234,15 +237,15 @@ Define um componente CQ.
 * `@prop dialogPath` - Caminho da caixa de diálogo primária (alternativo à caixa de diálogo).
 * `@node design_dialog` - Caixa de diálogo Design.
 * `@prop cq:cellName` - Nome da célula de projeto.
-* `@prop cq:isContainer` - Indica se este é um componente de contêiner. Isso faz com que os nomes das células dos componentes filhos sejam usados em vez de nomes de caminho. Por exemplo, `parsys` é um componente de contêiner. Se esse valor não for definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
+* `@prop cq:isContainer` - Indica se este é um componente de container. Isso faz com que os nomes das células dos componentes filhos sejam usados em vez de nomes de caminho. Por exemplo, o componente `parsys` é um container. Se esse valor não for definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Se verdadeiro, nenhuma `div` tag de decoração será desenhada ao incluir esse componente.
 * `@node cq:editConfig` - A configuração que define os parâmetros da barra de edição.
 * `@node cq:childEditConfig` - A configuração de edição herdada pelos componentes filhos.
-* `@node cq:htmlTag` - Define outros atributos de tag adicionados à `div` tag &quot;adjacente&quot; quando o componente é incluído.
+* `@node cq:htmlTag` - Define atributos de tag adicionais que são adicionados à `div` tag &quot;adjacente&quot; quando o componente é incluído.
 * `@node icon.png`- Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
-* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes pai.
-* `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes filhos.
+* `@prop allowedParents` - Padrões de expressão regulares para determinar os caminhos dos componentes que são permitidos como componentes principais.
+* `@prop allowedChildren` - Padrões de expressão regulares para determinar os caminhos dos componentes permitidos como componentes filhos.
 * `@node virtual` - Contém subnós que refletem componentes virtuais usados para o componente arrastar e soltar.
 * `@prop componentGroup` - Nome do grupo de componentes, usado para o componente arrastar e soltar.
 * `@node cq:infoProviders` - Contém subnós, cada um com uma propriedade `className` que se refere a um `PageInfoProvider`.
@@ -290,7 +293,7 @@ Define a configuração para a &quot;barra de edição&quot;.
    * `floating` - para uma caixa de diálogo flutuante normal
    * `inline` - edição em linha
    * `auto` - detecção automática (dependendo do espaço disponível)
-* `@node cq:inplaceEditing` - Configuração de edição local para este componente.
+* `@node cq:inplaceEditing` - Inserir configuração de edição para este componente.
 * `@prop cq:layout`- Layout da barra de edição:
    * `editbar` - barra de edição
    * `rollover` - rolar sobre o quadro
@@ -316,9 +319,9 @@ Define a configuração para a &quot;barra de edição&quot;.
 
 **Descrição**
 
-Configura um destino de queda de um componente. O nome desse nó será usado como uma ID para arrastar e soltar.
+Configura um público alvo de queda de um componente. O nome desse nó será usado como uma ID para arrastar e soltar.
 
-* `@prop accept` - Lista de tipos MIME aceites por este objetivo final;por exemplo `["image/*"]`
+* `@prop accept` - Lista de tipos MIME aceites por este público alvo; por exemplo, `["image/*"]`
 * `@prop groups` - Lista de grupos de arrastar e soltar que aceitam uma fonte.
 * `@prop propertyName` - Nome da propriedade usada para armazenar a referência.
 
@@ -342,8 +345,8 @@ Define um componente CQ virtual. Atualmente, eles são usados apenas para o novo
 * `@node cq:childEditConfig`- Edite a configuração herdada pelos componentes filhos.
 * `@node icon.png` - Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
-* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes pai.
-* `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes filhos.
+* `@prop allowedParents` - Padrões de expressão regulares para determinar os caminhos dos componentes que são permitidos como componentes principais.
+* `@prop allowedChildren` - Padrões de expressão regulares para determinar os caminhos dos componentes que são permitidos como componentes filhos.
 * `@prop componentGroup` - Nome do grupo de componentes para o componente arrastar e soltar.
 
 **Definição**
@@ -372,9 +375,9 @@ Define os ouvintes (do lado do cliente) a serem executados em um evento de ediç
 * `@prop aftercreate` - Acionado após a criação de um componente.
 * `@prop afteredit` - Acionado depois que um componente é editado (modificado).
 * `@prop afterdelete` - Acionado após a exclusão de um componente.
-* `@prop afterinsert` - Acionado após a adição de um componente a esse contêiner.
-* `@prop afterremove` - Acionado após a remoção de um componente deste contêiner.
-* `@prop aftermove` - Acionado após a movimentação dos componentes neste contêiner.
+* `@prop afterinsert` - Acionado após a adição de um componente ao container.
+* `@prop afterremove` - Acionado após a remoção de um componente deste container.
+* `@prop aftermove` - Acionado após a mudança dos componentes neste container.
 
 **Definição**
 
@@ -427,20 +430,20 @@ Miniatura para representar um ativo DAM.
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Lista de contêineres de entrega {#delivery-container-list}
+## Lista Container Delivery {#delivery-container-list}
 
 ### cq:containerList {#cq-containerlist}
 
 **Descrição**
 
-Lista de contêineres.
+Lista do Container.
 
 **Definição**
 
 * `[cq:containerList]`
    * `mixin`
 
-## Página de entrega {#delivery-page}
+## Página do Delivery {#delivery-page}
 
 ### cq:Cq4PageAttributes {#cq-cq-pageattributes}
 
@@ -471,7 +474,7 @@ Os itens em um `cq:Cq4ContentPage` são:
 
 * `@prop cq:csd` - A CVM ContentBus da página.
 * `@node cq:content` - O conteúdo da página. Esse nó filho não existe se o nó de página estiver no estado &quot;Existente sem conteúdo&quot; ou &quot;Excluído&quot;.
-* `@node cq:attributes` - A lista de atributos da página, anteriormente conhecida como tags de versão. Esse nó é obrigatório para o tipo cq:contentPage. O nó de atributos tem controle de versão quando a página é um nó com controle de versão.
+* `@node cq:attributes` - A lista de atributos de página, anteriormente conhecidos como tags de versão. Esse nó é obrigatório para o tipo cq:contentPage. O nó de atributos tem controle de versão quando a página é um nó com controle de versão.
 
 **Definição**
 
@@ -488,7 +491,7 @@ Os itens em um `cq:Cq4ContentPage` são:
 Configuração da pesquisa.
 
 * `@prop source (String) mandatory` - URI da fonte de dados, obrigatório e não vazio
-* `@prop target (String)` - O local de destino onde os dados recuperados da fonte de dados são armazenados. Isso é opcional e o padrão é o nó cq:PollConfig.
+* `@prop target (String)` - O local do público alvo onde os dados recuperados da fonte de dados são armazenados. Isso é opcional e o padrão é o nó cq:PollConfig.
 * `@prop interval (Long)` - O intervalo em segundos no qual pesquisar dados novos ou atualizados da fonte de dados. Isso é opcional e o padrão é 30 minutos (1800 segundos).
 * [Criação de serviços personalizados do Importador de dados para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
@@ -519,7 +522,7 @@ O tipo de nó primário de conveniência para criar facilmente nós de configura
 Uma mistura que define uma localização geográfica em graus decimais (DD).
 
 * `@prop latitude` - Latitude codificado como duplo usando graus decimais.
-* `@prop longitude` - Longitude codificada em dois graus decimais.
+* `@prop longitude` - Longitude codificada como duplo usando graus decimais.
 
 **Definição**
 
@@ -550,7 +553,7 @@ Nódulos MailerService. O remetente usa nós que têm essa mistura como nós rai
 
 **Descrição**
 
-Define uma combinação do LiveRelationship. Um nó mestre e um nó escravo podem ser virtualmente vinculados por meio de um LiveRelationship.
+Define uma combinação do LiveRelationship. Um nó de origem primária (controle) e um nó de cópia ativa (controlado) podem ser virtualmente vinculados por meio de um LiveRelationship.
 
 **Definição**
 
@@ -563,9 +566,9 @@ Define uma combinação do LiveRelationship. Um nó mestre e um nó escravo pode
 
 **Descrição**
 
-Define uma combinação do LiveSync. Se um nó estiver envolvido em um LiveRelationship com um nó mestre como escravo, ele será marcado como LiveSync.
+Define uma combinação do LiveSync. Se um nó estiver envolvido em um LiveRelationship com um nó de origem primária (controle) e um nó de cópia ativa (controlado), ele será marcado como um LiveSync.
 
-* `@prop cq:master` - Caminho do nó mestre do LiveRelationship.
+* `@prop cq:master` - Caminho da fonte primária (controle) do LiveRelationship.
 * `@prop cq:isDeep` - Define se a relação está disponível para filhos.
 * `@prop cq:syncTrigger` - Define quando a sincronização é acionada.
 * `@node * LiveSyncAction` - Ações a serem executadas na sincronização
@@ -580,7 +583,7 @@ Define uma combinação do LiveSync. Se um nó estiver envolvido em um LiveRelat
 
 **Descrição**
 
-Define uma combinação LiveSyncCanceling. Cancele o comportamento do LiveSync de um nó escravo que pode estar envolvido em um LiveRelationship devido a um de seus pais.
+Define uma combinação LiveSyncCanceling. Cancele o comportamento do LiveSync de um nó de live copy (controlado) que pode estar envolvido em um LiveRelationship devido a um de seus pais.
 
 * `@prop cq:isCancelledForChildren` - Define se um LiveSync é cancelado; também para crianças.
 
@@ -1109,7 +1112,7 @@ Nó de fluxo de trabalho
 
 **Descrição**
 
-Transição do fluxo de trabalho
+transição do fluxo de trabalho
 
 **Definição**
 
