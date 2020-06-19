@@ -3,7 +3,7 @@ title: Write-back de XMP a execuções
 description: Saiba como o recurso de gravação XMP propaga as alterações de metadados de um ativo para todas as execuções ou representações específicas do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 711cd438cc8962d310bb2bfbb14f079161aacce0
+source-git-commit: c1c845a479fcf04db1b2da8bcb9cf765fedd58b6
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 5%
@@ -77,16 +77,6 @@ A filtragem de metadados XMP por meio da lista permitida resolve esse problema a
 >[!NOTE]
 >
 >A filtragem funciona somente para as propriedades derivadas de fontes XMP em binários de ativos. Para as propriedades derivadas de fontes não XMP, como formatos EXIF e IPTC, a filtragem não funciona. Por exemplo, a data de criação do ativo é armazenada em uma propriedade chamada `CreateDate` em EXIF TIFF. O Experience Manager armazena esse valor em um campo de metadados chamado `exif:DateTimeOriginal`. Como a fonte é uma fonte não XMP, a filtragem não funciona nessa propriedade.
-
-<!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
-in Config Manager. And the settings are,
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_whitelist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.whitelist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_blacklist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.blacklist.name
- 
-TBD: Make updates to configurations for allow and block list after product updates are done.
--->
 
 1. Para abrir o Configuration Manager, acesse `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração **[!UICONTROL Adobe CQ DAM XmpFilter]** .
