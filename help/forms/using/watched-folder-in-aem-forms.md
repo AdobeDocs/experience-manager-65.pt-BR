@@ -1,6 +1,6 @@
 ---
-title: Pasta assistida no AEM Forms
-seo-title: Pasta assistida no AEM Forms
+title: Pasta assistida em AEM Forms
+seo-title: Pasta assistida em AEM Forms
 description: Um administrador pode colocar uma pasta em observação e start de uma operação de fluxo de trabalho, serviço ou script quando um arquivo é colocado na pasta que está sendo observada.
 seo-description: Um administrador pode colocar uma pasta em observação e start de uma operação de fluxo de trabalho, serviço ou script quando um arquivo é colocado na pasta que está sendo observada.
 uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
 workflow-type: tm+mt
 source-wordcount: '7153'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Pasta assistida no AEM Forms{#watched-folder-in-aem-forms}
+# Pasta assistida em AEM Forms{#watched-folder-in-aem-forms}
 
 Um administrador pode configurar uma pasta de rede, conhecida como Pasta assistida, para que quando um usuário coloca um arquivo (como um arquivo PDF) na Pasta assistida, uma operação de fluxo de trabalho, serviço ou script pré-configurado seja iniciada para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script, consulte [Vários métodos de processamento de arquivos](#variousmethodsforprocessingfiles).
 
@@ -27,7 +27,8 @@ Um administrador pode configurar uma pasta de rede, conhecida como Pasta assisti
 Você pode usar um dos seguintes métodos para criar uma Pasta assistida no sistema de arquivos:
 
 * Ao configurar as propriedades de um nó de configuração de Pasta assistida, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta assistida a ser criada, como mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`
-A `MyWatchedFolder`pasta não existe, o AEM Forms tenta criar a pasta no caminho especificado.
+A variável 
+`MyWatchedFolder`não existe, o AEM Forms tenta criar a pasta no caminho especificado.
 
 * Crie uma pasta no sistema de arquivos antes de configurar um ponto final de Pasta assistida e forneça o caminho completo na propriedade folderPath. Para obter informações detalhadas sobre a propriedade folderPath, consulte Propriedades [da pasta](#watchedfolderproperties)assistida.
 
@@ -53,6 +54,7 @@ Para configurar uma Pasta assistida, crie um nó de configuração de Pasta assi
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
+
    Para obter a lista completa das propriedades compatíveis, consulte Propriedades [da pasta](#watchedfolderproperties)assistida.
 
 1. Clique em **Salvar tudo**. Depois que o nó é criado e as propriedades são salvas. As `input`pastas, `result`, `failure`e `preserve`são criadas no caminho especificado na `stage``folderPath` propriedade.
@@ -141,6 +143,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
    * %l = milissegundos
    * %R = número aleatório (entre 0 e 9)
    * %P = id de processo ou tarefa
+
    Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta de resultados será C:/Test/WF0/failure/2009/07/17/20
 
    Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da Pasta assistida. O valor padrão é result/%Y/%M/%D/, que é a pasta Result dentro da Pasta Monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)de arquivo.
@@ -159,11 +162,11 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 
    Quando os arquivos são soltos na Pasta assistida, ele lista os arquivos na entrada, o que pode reduzir o desempenho se a varredura estiver acontecendo a cada segundo. O aumento do intervalo de varredura pode melhorar o desempenho. Se o volume de arquivos que está sendo descartado for pequeno, ajuste o Tamanho do lote e o Intervalo de pesquisa de acordo. Por exemplo, se 10 arquivos forem descartados a cada segundo, tente definir pollInterval como 1 segundo e o Tamanho do lote como 10
 
-* **throttleOn (Booleano)**: Quando essa opção é selecionada, ela limita o número de trabalhos de Pasta assistida processados pelo AEM Forms em um determinado momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. O valor padrão é verdadeiro. (Consulte [Sobre limitação](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Booleano)**: Quando essa opção é selecionada, ela limita o número de trabalhos da Pasta assistida que AEM Forms os processos em um determinado momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. O valor padrão é verdadeiro. (Consulte [Sobre limitação](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Booleano)**: Quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como Falso, arquivos e pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
 * **preserveOnFailure (Booliano)**: Preservar arquivos de entrada em caso de falha ao executar a operação em um serviço. O valor padrão é true.
-* **inputFilePattern (String)**: Especifica o padrão dos arquivos de entrada para uma Pasta assistida. Cria uma lista de permissões dos arquivos.
+* **inputFilePattern (String)**: Especifica o padrão dos arquivos de entrada para uma Pasta assistida. Cria uma lista permitida dos arquivos.
 * **asynch (Booleano)**: Identifica o tipo de invocação como assíncrono ou síncrono. O valor padrão é true (assíncrono). O processamento de arquivos é uma tarefa que consome recursos, mantenha o valor do sinalizador asynch como verdadeiro para evitar que o thread principal do trabalho de varredura seja bloqueado. Em um ambiente clusterizado, é importante manter o sinalizador true para permitir o balanceamento de carga dos arquivos processados nos servidores disponíveis. Se o sinalizador for falso, o trabalho de varredura tentará executar o processamento para cada arquivo/pasta de nível superior sequencialmente em seu próprio thread. Não defina o sinalizador como falso sem um motivo específico, como processamento baseado em fluxo de trabalho em uma configuração de servidor único.
 
 >[!NOTE]
@@ -300,7 +303,7 @@ Agora, você pode usar o local personalizado configurado para salvar os scripts.
 
 ### Usando um fluxo de trabalho para processar arquivos de uma pasta assistida {#using-a-workflow-to-process-files-of-a-watched-folder}
 
-Os Workflows permitem que você automatize as atividades do Experience Manager. Os Workflows consistem em uma série de etapas executadas em uma ordem específica. Cada etapa executa uma atividade distinta, como ativar uma página ou enviar uma mensagem de email. Os Workflows podem interagir com ativos no repositório, contas de usuário e serviços do Experience Manager. Portanto, workflows podem coordenar coisas complicadas.
+Os Workflows permitem que você automatize atividades Experience Manager. Os Workflows consistem em uma série de etapas executadas em uma ordem específica. Cada etapa executa uma atividade distinta, como ativar uma página ou enviar uma mensagem de email. Os Workflows podem interagir com ativos no repositório, contas de usuário e serviços de Experience Manager. Portanto, workflows podem coordenar coisas complicadas.
 
 * Antes de criar um fluxo de trabalho, considere os seguintes pontos:
 * A saída de uma etapa deve estar disponível para todas as etapas subsequentes.
@@ -395,7 +398,7 @@ log.info("Exiting workflow script!")
 
 Quando você cria uma pasta assistida, ela cria uma estrutura de pasta dentro da pasta que está sendo assistida. A estrutura de pastas tem pastas stage, result, preserve, input e failure. A estrutura de pastas pode servir como carga de entrada para o fluxo de trabalho e aceitar saída de um fluxo de trabalho. Ele também pode lista pontos de falha, se houver.
 
-Se a estrutura de uma carga for diferente da estrutura da pasta assistida, você poderá gravar scripts personalizados para mapear a estrutura da pasta assistida para a carga. Esse script é chamado de filtro de mapeador de carga. O AEM Forms fornece um filtro mapeador de carga para mapear a estrutura da pasta assistida para uma carga.
+Se a estrutura de uma carga for diferente da estrutura da pasta assistida, você poderá gravar scripts personalizados para mapear a estrutura da pasta assistida para a carga. Esse script é chamado de filtro de mapeador de carga. A partir da caixa, o AEM Forms fornece um filtro de mapeador de carga para mapear a estrutura da pasta assistida para uma carga.
 
 #### Criação de um filtro personalizado de mapeador de carga {#creating-a-custom-payload-mapper-filter}
 
@@ -512,8 +515,8 @@ A Pasta assistida verifica a pasta de entrada em cada pollInterval, seleciona o 
 A limitação impede que a Pasta assistida chame novas tarefas quando as tarefas anteriores não estiverem concluídas. A Pasta assistida detecta trabalhos em andamento e processa novos trabalhos com base no tamanho do lote menos trabalhos em andamento. Por exemplo, na segunda invocação, se o número de trabalhos concluídos for apenas três e uma tarefa ainda estiver em andamento, a Pasta monitorada chamará apenas mais três trabalhos.
 
 * A Pasta assistida depende do número de arquivos presentes na pasta stage para descobrir quantas tarefas estão em andamento. Se os arquivos permanecerem não processados na pasta stage, a Pasta assistida não chamará mais trabalhos. Por exemplo, se o tamanho do lote for quatro e três trabalhos estiverem parados, a Pasta assistida chamará apenas um trabalho em invocações subsequentes. Há vários cenários que podem fazer com que os arquivos permaneçam não processados na pasta stage. Quando os trabalhos estão parados, o administrador pode encerrar o processo na página de administração do Process Management para que a Pasta monitorada mova os arquivos para fora da pasta de estágio.
-* Se o servidor do AEM Forms falhar antes de a Pasta assistida chamar os trabalhos, o administrador poderá mover os arquivos para fora da pasta stage. Para obter informações, consulte Pontos de [falha e recuperação](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Se o servidor de Formulários AEM estiver em execução, mas a Pasta monitorada não estiver em execução quando o serviço Gerenciador de trabalhos retornar, o que ocorre quando os serviços não são start na sequência ordenada, o administrador pode mover os arquivos para fora da pasta do palco. Para obter informações, consulte Pontos de [falha e recuperação](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se o servidor AEM Forms parar antes de a Pasta assistida chamar os trabalhos, o administrador poderá mover os arquivos para fora da pasta de palco. Para obter informações, consulte Pontos de [falha e recuperação](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se o servidor AEM Forms estiver em execução, mas a Pasta monitorada não estiver em execução quando o serviço Gerenciador de tarefas retornar, o que ocorre quando os serviços não são start na sequência ordenada, o administrador pode mover os arquivos para fora da pasta stage. Para obter informações, consulte Pontos de [falha e recuperação](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
 ### Pontos de falha e recuperaçãoPontos de falha e recuperação {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -538,6 +541,7 @@ Quando a Pasta assistida não puder processar os arquivos de origem na pasta sta
 
    * Altere a propriedade includeFilePattern da Pasta assistida para algo que não corresponda a nenhum dos novos arquivos de entrada (por exemplo, insira NOMATCH).
    * Suspenda o processo que está criando novos arquivos de entrada.
+
    Aguarde até que o AEM Forms recupere e processe todos os arquivos. A maioria dos arquivos deve ser recuperada e todos os novos arquivos de entrada processados corretamente. O tempo que você espera que a Pasta assistida recupere e processe os arquivos dependerá da duração da operação a ser chamada e do número de arquivos a serem recuperados.
 
 1. Determine quais arquivos não podem ser processados. Se você esperou um tempo adequado e concluiu a etapa anterior, e ainda houver arquivos não processados restantes na pasta stage, vá para a próxima etapa.
