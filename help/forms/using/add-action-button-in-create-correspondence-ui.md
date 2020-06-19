@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1910'
+ht-degree: 1%
 
 ---
 
@@ -346,6 +349,7 @@ O processo LCA é executado no servidor do LiveCycle e requer o endereço do ser
    * **URL** do servidor: URL do servidor LC cujo serviço Enviar para revisão o código do manipulador de ação usa.
    * **Nome de usuário**: Nome de usuário administrador do servidor LC
    * **Senha**: Senha do nome de usuário administrador
+
    ![Configuração do Adobe LiveCycle Client SDK](assets/3_clientsdkconfiguration.png)
 
 #### Instalar o LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
@@ -376,7 +380,7 @@ O processo necessário do LiveCycle que ativa o processo do serviço de email.
 
 1. Clique em **Importar**.
 
-#### Adicionando ServiceName à lista WhiteListed Service {#adding-servicename-to-the-whitelisted-service-list}
+#### Adicionando ServiceName à lista do Serviço de Lista de Permissões {#adding-servicename-to-the-allowlist-service-list}
 
 Mencione no servidor de AEM os serviços do LiveCycle que você deseja acessar no servidor de AEM.
 
@@ -405,7 +409,7 @@ Nesse cenário, para que o Gerenciamento de correspondência possa enviar um ema
 
 Para usar a API do Correspondence Management, baixe o DSCSampliar.jar (anexado neste documento como parte de components.zip) e carregue-o no servidor do LiveCycle. Depois que o arquivo DSCSamplie.jar é carregado no servidor do LiveCycle, o servidor do AEM usa o arquivo DSCSamplie.jar para acessar a API renderLetter.
 
-Para obter mais informações, consulte [Conexão de formulários AEM com o Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+Para obter mais informações, consulte [Conectar AEM Forms ao Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Atualize o URL do servidor AEM em cmsa.properties em DSCSampliar.jar, que está no seguinte local:
 
@@ -417,6 +421,7 @@ Para obter mais informações, consulte [Conexão de formulários AEM com o Adob
    * **crx.username**= nome de usuário do AEM
    * **crx.password**= senha do AEM
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
    >Sempre que você fizer alterações no lado do servidor, reinicie o LiveCycle Server. Para obter informações sobre como criar seu próprio componente do LiveCycle ES, consulte [Extensão do software LiveCycle ES por meio do desenvolvimento](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)personalizado do DSC.
