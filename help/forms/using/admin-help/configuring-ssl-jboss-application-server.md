@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Neste procedimento:
 
 1. Em um prompt de comando, navegue até *[JAVA HOME]*/bin e digite o seguinte comando para criar a credencial e o keystore:
 
-   `keytool -genkey -dname "CN=`*Nome *do host Nome`, OU=`*do* grupo Nome `, O=`*da *Empresa Nome`,L=`*da* cidade Nome `, S=`*do *Estado`, C=`do`-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`**país&quot; key_passwordkeystorename`.keystore`
+   `keytool -genkey -dname "CN=`*Nome *do host Nome`, OU=`*do* grupo Nome `, O=`*da *Empresa Nome`,L=`*da* cidade Nome `, S=`*do *estado`, C=`Código do`-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`*país&quot;key_passwordkeystorename *`.keystore`
 
    >[!NOTE]
    >
@@ -44,7 +47,7 @@ Neste procedimento:
 
 1. Copie o *keystorename*.keystore para o `[appserver root]/server/[type]/conf` diretório digitando um dos seguintes comandos:
 
-   * (Windows Single Server) `copy``keystorename.keystore[appserver root]\standalone\configuration`
+   * (Windows Single Server) `copy` `keystorename.keystore[appserver root]\standalone\configuration`
    * Cópia (Cluster do Windows Server) `keystorename.keystore[appserver root]\domain\configuration`
    * (Servidor único Linux) `cp keystorename.keystore [appserver root]/standalone/configuration`
    * (Cluster do servidor Linux) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
@@ -75,7 +78,7 @@ Neste procedimento:
 
 1. Importe o certificado digitando o seguinte comando:
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME*`\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Digite `changeit` como a senha. Esta senha é a senha padrão para uma instalação Java e pode ter sido alterada pelo administrador do sistema.
 1. Quando solicitado para `Trust this certificate? [no]`:, digite `yes`. A confirmação &quot;Certificado adicionado ao keystore&quot; é exibida.
@@ -123,7 +126,7 @@ Neste procedimento:
    </security-realm>
    ```
 
-   No nó mestre do Cluster do Servidor, na raiz [\domain\configuration\domain_&lt;dbname>.xml do]appserver, localize a seção &lt;server> presente após o seguinte código:
+   No nó primário do Cluster do Servidor, na raiz [\domain\configuration\domain_&lt;dbname>.xml do]appserver, localize a seção &lt;server> presente após o seguinte código:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
@@ -139,7 +142,7 @@ Neste procedimento:
    * Para instalações chave na mão:
 
       * No Painel de controle do Windows, clique em Ferramentas administrativas e em Serviços.
-      * Selecione JBoss para formulários do Adobe Experience Manager.
+      * Selecione JBoss para formulários Adobe Experience Manager.
       * Selecione Ação > Parar.
       * Aguarde até que o status do serviço seja exibido como interrompido.
       * Selecione Ação > Start.
@@ -166,7 +169,7 @@ Neste procedimento:
 
 1. Em um prompt de comando, navegue até *[JAVA HOME]*/bin e digite o seguinte comando para criar o keystore e a tecla:
 
-   `keytool -genkey -dname "CN=`*Nome *do Host Nome`, OU=`*do* Grupo Nome `, O=`*da *Empresa Nome`, L=`*da* Cidade Nome `, S=`**Estado`, C=`*do País*&quot; Código do `-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`**País&quot; -chave senhakeystorename`.keystore`
+   `keytool -genkey -dname "CN=`*Nome *do host Nome`, OU=`*do* grupo Nome `, O=`*da *Empresa Nome`, L=`*da* cidade Nome `, S=`*do *estado`, C=`*do host Código* do `-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`*país&quot; -País_chave senhakeystorename *`.keystore`
 
    >[!NOTE]
    >
@@ -192,7 +195,7 @@ Neste procedimento:
 
 1. Em um prompt de comando, navegue até *`[JAVA HOME]`*/bin e digite o seguinte comando para importar a credencial para o keystore:
 
-   `keytool -import -trustcacerts -file`*CACertificateName *`.crt -keystore`*keystorename*`.keystore`
+   `keytool -import -trustcacerts -file`*CACertificateName *`.crt -keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
