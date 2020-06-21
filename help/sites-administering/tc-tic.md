@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: d01b36770ea1cc7f8d780c49bf8c2af70915c553
+source-git-commit: 49b18b780c87501dcb2d9a00930da8eb5e51cff2
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 2%
 
 ---
 
@@ -27,21 +30,21 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 ## Conexão a um Provedor de serviço de tradução {#connecting-to-a-translation-service-provider}
 
-Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviço de tradução. O AEM inclui a capacidade de se conectar ao Microsoft Translator por padrão. Para outros provedores de tradução, baixe o pacote do conector do Compartilhamento de [pacotes](/help/sites-administering/package-manager.md#package-share).
-Os seguintes fornecedores de tradução fornecem uma implementação da nova API para os Projetos de tradução. Links para saber mais sobre a integração e como fazer download do Compartilhamento de pacotes:
+Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviço de tradução. O AEM inclui a capacidade de se conectar ao Microsoft Translator por padrão.
+Os seguintes fornecedores de tradução fornecem uma implementação da nova API para os Projetos de tradução. Links para saber mais sobre a integração:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
-* [Clay Tablet Technologies](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) (não em PackageShare, entre em contato diretamente com o fornecedor)
-* [Lionbridge](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lionbridge-for-adobe-experience-manager.html)
-* [Palavras-nuvem](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/cloudwords-for-adobe-translations-connector.html)
-* [CrossLang NV](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/crosslang-xtm-for-adobe-experience-manager.html)
-* [Lingotek](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lingotek-for-adobe-experience-manager.html)
+* [Tecnologias Clay Tablet](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
+* [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
+* [Memória](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
+* [Palavras-nuvem](https://exchange.adobe.com/experiencecloud.details.90019.html)
+* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [Inteligência](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
+* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
+* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
+* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (o Microsoft Translator está pré-instalado no AEM)
-* [Inteligência](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/smartling-connector-for-adobe-experience-manager.html)
-* [SDL WorldServer](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdlworldserver-connector.html)
-* [TMS SDL](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdl-tms-translation-connector-for-adobe-experience-manager.html)
-* [Systran](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/systran-for-adobe-experience-manager.html)
-* [Altlang](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/Altlang.html)
 
 >[!NOTE]
 >
@@ -182,7 +185,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
  </tbody>
 </table>
 
-1. Na barra lateral, clique ou toque em Ferramentas > Operações > Nuvem > Serviços em nuvem.
+1. Na barra lateral, clique ou toque em Ferramentas > Operações > Nuvem > Cloud Service.
 1. Na área Integração de tradução, se alguma configuração foi criada, determina qual link será exibido:
 
    * Se nenhuma configuração tiver sido criada, clique ou toque em Configurar agora.
@@ -211,7 +214,7 @@ Além disso, para quaisquer componentes [](/help/communities/scf.md) SCF de comu
 Associe uma página ao provedor de tradução que você está usando para traduzir a página e as páginas descendentes.
 
 1. No console Sites, selecione a página a ser configurada e clique ou toque em Propriedades da Visualização.
-1. Clique ou toque em Editar e, em seguida, clique ou toque na guia Serviços em nuvem.
+1. Clique ou toque em Editar e, em seguida, clique ou toque na guia Cloud Service.
 1. Clique ou toque em Adicionar configuração > Integração de tradução.
 1. Selecione o provedor de tradução a ser usado e clique ou toque em Concluído.
 
@@ -220,7 +223,7 @@ Associe uma página ao provedor de tradução que você está usando para traduz
 Associe uma página à Estrutura de integração de tradução que define como você deseja executar a tradução da página e das páginas descendentes.
 
 1. No console Sites, selecione a página a ser configurada e clique ou toque em Propriedades da Visualização.
-1. Clique ou toque em Editar e, em seguida, clique ou toque na guia Serviços em nuvem.
+1. Clique ou toque em Editar e, em seguida, clique ou toque na guia Cloud Service.
 1. Clique ou toque em Adicionar configuração > Integração de tradução.
 1. Selecione a estrutura de integração de tradução a ser usada e clique ou toque em Concluído.
 
