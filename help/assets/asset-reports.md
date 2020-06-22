@@ -3,9 +3,9 @@ title: Relatórios sobre o uso e compartilhamento de seus ativos digitais.
 description: Relatórios sobre seus ativos [!DNL Adobe Experience Manager Assets] que ajudam você a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bc08b0039f8be92a7638245b1770c2ad21503f63
+source-git-commit: 0c41666353a8ee8d39285c99327680ab12377d61
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1044'
 ht-degree: 10%
 
 ---
@@ -59,8 +59,11 @@ Para gerar relatórios, verifique se:
 
    >[!NOTE]
    >
-   >Por padrão, os Fragmentos de conteúdo e compartilhamentos de link são incluídos no relatório de Ativo baixado. Selecione a opção apropriada para criar um relatório de compartilhamentos de link ou para excluir Fragmentos de conteúdo do relatório de download.
+   >Por padrão, os Fragmentos de conteúdo e compartilhamentos de link são incluídos no relatório de [!UICONTROL Download] de ativos. Selecione a opção apropriada para criar um relatório de compartilhamentos de link ou para excluir Fragmentos de conteúdo do relatório de download.
 
+   >[!NOTE]
+   >
+   >O relatório [!UICONTROL Download] exibe detalhes somente dos ativos que foram selecionados individualmente e baixados. No entanto, não inclui os detalhes dos ativos que estavam dentro de uma pasta baixada.
 1. Configure detalhes do relatório, como título, descrição, miniatura e caminho da pasta no repositório CRX onde o relatório é armazenado. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente.
 
    ![Página para adicionar detalhes do relatório](assets/report_configuration.png)
