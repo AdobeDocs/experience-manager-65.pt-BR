@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Essenciais de pontuação e emblemas {#scoring-and-badges-essentials}
 
-O recurso de pontuação e selo do AEM Communities fornece a capacidade de identificar e recompensar membros da comunidade.
+O recurso de pontuação de AEM Communities e emblemas fornece a capacidade de identificar e recompensar membros da comunidade.
 
 Os detalhes da configuração do recurso estão descritos em
 
@@ -102,7 +102,7 @@ Para configurar rapidamente um arquivo de registro de slides:
 
 
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 Para ver as entradas de log:
 
@@ -118,7 +118,7 @@ Para ver as entradas de log:
 
    * Por exemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC para Pontuação e Crachá {#ugc-for-scoring-and-badging}
 
@@ -217,7 +217,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 
    Como um usuário ganhou dois crachás de bronze e recebeu um crachá de moderador, é assim que o usuário aparece com sua entrada no fórum.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![chlimage_1-250](assets/chlimage_1-250.png)
 
 >[!NOTE]
 >
@@ -230,6 +230,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
    >
    >
 * Criar imagens de crachá exclusivas para sites do AEM diferentes
+
 >
 
 
@@ -254,7 +255,7 @@ Para o site de guia Componentes da comunidade, o usuário e sua pontuação est�
 
 A pontuação é armazenada na propriedade `scoreValue_tl` que pode conter apenas um valor ou indiretamente se referir a um atomicCounter.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### UGC da marca de acesso {#access-badging-ugc}
 
@@ -270,11 +271,11 @@ Seguido pelo caminho para o perfil do usuário, terminando em uma pasta de crach
 
 #### Crachá concedido {#awarded-badge}
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### Crachá atribuído {#assigned-badge}
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## Informações adicionais {#additional-information}
 
