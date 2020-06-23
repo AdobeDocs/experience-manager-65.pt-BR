@@ -8,7 +8,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 54%
@@ -72,7 +72,7 @@ Se você não precisar de um fluxo de trabalho ou controle de versão para os at
 
 Para configurar predefinições universais:
 
-1. Em **[!UICONTROL Serviços em nuvem]**, navegue até a configuração do **[!UICONTROL Scene7]** e clique em **[!UICONTROL Editar]**.
+1. Em **[!UICONTROL Serviços em nuvem]**, navegue até a configuração do **[!UICONTROL Scene7]** e clique em **[!UICONTROL Editar.]**
 1. Selecione a guia **[!UICONTROL Vídeo]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -93,7 +93,7 @@ Para configurar predefinições universais:
 
 ## Atualizar as predefinições de codificação e do visualizador {#updating-viewer-and-encoding-presets}
 
-Se você precisar atualizar as predefinições de codificação de vídeo e do visualizador no AEM porque elas foram atualizadas no Scene7, navegue até a configuração do Scene7 na configuração de nuvem e clique em **[!UICONTROL Atualizar as predefinições de codificação e do visualizador]**.
+Se você precisar atualizar as predefinições de codificação de vídeo e do visualizador no AEM porque elas foram atualizadas no Scene7, navegue até a configuração do Scene7 na configuração de nuvem e clique em **[!UICONTROL Atualizar as predefinições de codificação e do visualizador.]**
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -150,7 +150,7 @@ As diferentes codificações de vídeo são criadas de acordo com as predefiniç
 
 1. No AEM, toque em **[!UICONTROL Tools > Configuration Console**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Crie um novo perfil de vídeo do S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar]**.
+1. Crie um novo perfil de vídeo do S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar.]**
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
