@@ -9,27 +9,30 @@ content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
 
 # Solução de problemas do Dynamic Media - modo Scene7{#troubleshooting-dynamic-media-scene-mode}
 
-O documento a seguir descreve a solução de problemas para o Dynamic Media executando o modo de execução **dynamicmedia_sceno7** .
+O documento a seguir descreve a solução de problemas para o Dynamic Media que está executando o modo de execução **dynamicmedia_sceno7** .
 
-##  Configuração e configuração {#setup-and-configuration}
+## Configuração e configuração {#setup-and-configuration}
 
-Certifique-se de que o Dynamic Media tenha sido configurado corretamente executando o seguinte procedimento:
+Certifique-se de que a Dynamic Media tenha sido configurada corretamente, fazendo o seguinte:
 
 * O comando Start up contém o argumento `-r dynamicmedia_scene7` runmode.
-* Todos os CFPs (Pacotes de correção cumulativos) do AEM 6.4 foram instalados primeiro *antes* de qualquer Pacote de recursos do Dynamic Media disponível.
+* Todos os CFPs (Pacotes de correção cumulativos) AEM 6.4 foram instalados primeiro *antes* de qualquer Pacote de recursos Dynamic Media disponível.
 * O Feature Pack 18912 opcional está instalado.
 
-   Este pacote de recursos opcional é para suporte a FTP ou se você estiver migrando ativos para o Dynamic Media do Dynamic Media Classic (Scene7).
+   Este pacote de recursos opcional é para suporte a FTP ou se você estiver migrando ativos do Dynamic Media Classic (Scene7) para o Dynamic Media.
 
-* Navegue até a interface do usuário do Cloud Services e confirme se a conta provisionada aparece em Configurações **[!UICONTROL disponíveis]**.
-* Verifique se o agente de `Dynamic Media Asset Activation (scene7)` replicação está ativado.
+* Navegue até a interface do usuário do Cloud Service e confirme se a conta provisionada aparece em Configurações **[!UICONTROL disponíveis.]**
+* Certifique-se de que o agente de `Dynamic Media Asset Activation (scene7)` replicação esteja ativado.
 
    Esse agente de replicação é encontrado em Agentes no Autor.
 
@@ -39,13 +42,13 @@ Veja a seguir algumas dicas gerais e truques para todos os ativos.
 
 ### Propriedades do status da sincronização de ativos {#asset-synchronization-status-properties}
 
-As seguintes propriedades de ativos podem ser analisadas no CRXDE Lite para confirmar a sincronização bem-sucedida do ativo do AEM para o Dynamic Media:
+As seguintes propriedades de ativos podem ser revisadas no CRXDE Lite para confirmar a sincronização bem-sucedida do ativo do AEM para a Dynamic Media:
 
 | **Propriedade** | **Exemplo** | **Descrição** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicador geral de que o nó está vinculado ao Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublicarConcluído** ou texto de erro | Status do upload do ativo para o Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Deve ser preenchido para gerar URLs para o ativo remoto do Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublicarConcluído** ou texto de erro | Status do upload do ativo para a Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Deve ser preenchido para gerar URLs para um ativo remoto do Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **sucesso** ou **falha:`<error text>`** | Status de sincronização de conjuntos (conjuntos de rotação, conjuntos de imagens etc.), predefinições de imagens, predefinições do visualizador, atualizações do mapa de imagens para um ativo ou imagens que foram editadas. |
 
 ### Registro de sincronização {#synchronization-logging}
@@ -62,11 +65,11 @@ Antes de executar uma operação Mover, Copiar ou Excluir, faça o seguinte:
 
 ### Controle da versão {#version-control}
 
-Ao substituir um ativo existente do Dynamic Media (mesmo nome e local), você tem a opção de manter ambos os ativos ou substituir/criar uma versão:
+Ao substituir um ativo Dynamic Media existente (mesmo nome e local), você tem a opção de manter ambos os ativos ou substituir/criar uma versão:
 
 * Manter ambos criará um novo ativo com um nome exclusivo para o URL do ativo publicado. Por exemplo, `image.jpg` é o ativo original e `image1.jpg` é o ativo carregado recentemente.
 
-* Não há suporte para a criação de uma versão no Dynamic Media - entrega do modo Scene7. A nova versão substituirá o ativo existente na entrega.
+* Não há suporte para a criação de uma versão no Dynamic Media - delivery de modo Scene7. A nova versão substituirá o ativo existente no delivery.
 
 ## Imagens e conjuntos {#images-and-sets}
 
@@ -80,12 +83,12 @@ Se tiver problemas com imagens e conjuntos, consulte as seguintes orientações 
    <td><strong>Solução</strong></td>
   </tr>
   <tr>
-   <td>Não é possível acessar o URL de cópia/botão Incorporar na exibição de detalhes do ativo</td>
+   <td>Não é possível acessar o URL de cópia/botão Incorporar na visualização de detalhes do ativo</td>
    <td>
     <ol>
      <li><p>Ir para CRX/DE:</p>
       <ul>
-       <li>Verifique se a predefinição no JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> está definida. Observe que esse local se aplica se você tiver feito upgrade do AEM 6.x para o 6.4 e optado por não fazer a migração. Caso contrário, a localização é <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Verifique se a predefinição no JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> está definida. Observe que esse local se aplica se você tiver atualizado do AEM 6.x para o 6.4 e opt out da migração. Caso contrário, a localização é <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Verifique se o ativo no JCR tem <code>dam:scene7FileStatus</code><strong> em Metadados </strong>exibido como <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
@@ -101,7 +104,7 @@ Se tiver problemas com imagens e conjuntos, consulte as seguintes orientações 
    <td><p>Feche o seletor e abra-o novamente.</p> </td>
   </tr>
   <tr>
-   <td><strong>O botão Selecionar</strong> não está ativo após selecionar um ativo como parte da edição de um conjunto</td>
+   <td><strong>O botão Selecionar</strong> não está ativo depois de selecionar um ativo como parte da edição de um conjunto</td>
    <td><p> </p> <p>Problema conhecido a ser corrigido na seção 6.4</p> <p> </p> </td>
    <td><p>Clique em outra pasta no Seletor de ativos primeiro e volte para selecionar o ativo.</p> </td>
   </tr>
@@ -111,7 +114,7 @@ Se tiver problemas com imagens e conjuntos, consulte as seguintes orientações 
    <td><p>Use apenas imagens com o mesmo tamanho para o carrossel.</p> </td>
   </tr>
   <tr>
-   <td>A imagem não é visualizada com o visualizador de Dynamic Media</td>
+   <td>A imagem não é pré-visualização com o visualizador do Dynamic Media</td>
    <td><p>Verifique se o ativo contém <code>dam:scene7File</code> as propriedades de Metadados (CRXDE Lite)</p> </td>
    <td><p>Verifique se todos os ativos concluíram o processamento.</p> </td>
   </tr>
@@ -121,7 +124,7 @@ Se tiver problemas com imagens e conjuntos, consulte as seguintes orientações 
    <td><p>Verifique se todos os ativos concluíram o processamento.</p> </td>
   </tr>
   <tr>
-   <td>O banner na exibição de cartão mostra <strong>Novo</strong> quando o ativo não começou a processar</td>
+   <td>Banner na visualização do cartão mostra <strong>Novo</strong> quando o ativo não começou a processar</td>
    <td>Marque o ativo <code>jcr:content</code> &gt; <code>dam:assetState</code> = se <code>unprocessed</code> ele não foi selecionado pelo fluxo de trabalho.</td>
    <td>Aguarde até que o ativo seja selecionado pelo fluxo de trabalho.</td>
   </tr>
@@ -133,7 +136,7 @@ Se tiver problemas com imagens e conjuntos, consulte as seguintes orientações 
  </tbody>
 </table>
 
-## O vídeo {#video}
+## Vídeo {#video}
 
 Se tiver problemas com o vídeo, consulte a seguinte orientação para solução de problemas.
 
@@ -150,14 +153,14 @@ Se tiver problemas com o vídeo, consulte a seguinte orientação para solução
     <ul>
      <li>Verifique se a pasta tem um perfil de vídeo atribuído a ela (se não houver suporte para o formato de arquivo). Se não houver suporte, somente uma imagem será exibida.</li>
      <li>O perfil de vídeo deve conter mais de uma predefinição de codificação para gerar um conjunto AVS (as codificações únicas são tratadas como conteúdo de vídeo para arquivos MP4; para arquivos não suportados, tratados da mesma forma que os não processados).</li>
-     <li>Verifique se o processamento do vídeo foi concluído, confirmando <code>dam:scene7FileAvs</code> o conteúdo <code>dam:scene7File</code> nos metadados.</li>
+     <li>Verifique se o processamento do vídeo foi concluído, confirmando <code>dam:scene7FileAvs</code> a presença <code>dam:scene7File</code> nos metadados.</li>
     </ul> </td>
    <td>
     <ol>
      <li>Atribua um perfil de vídeo à pasta.</li>
      <li>Edite o perfil de vídeo para incluir mais de uma predefinição de codificação.</li>
      <li>Aguarde o vídeo terminar de processar.</li>
-     <li>Se você recarregar o vídeo, verifique se o fluxo de trabalho de Codificação de vídeo do Dynamic Media não está em execução.<br /> </li>
+     <li>Se você recarregar o vídeo, verifique se o fluxo de trabalho Codificar vídeo da Dynamic Media não está em execução.<br /> </li>
      <li>Carregue novamente o vídeo.</li>
     </ol> </td>
   </tr>
@@ -166,18 +169,18 @@ Se tiver problemas com o vídeo, consulte a seguinte orientação para solução
    <td>
     <ul>
      <li>Verifique se o modo de execução está <code>dynamicmedia_scene7</code>.</li>
-     <li>Verifique se o serviço de nuvem do Dynamic Media está configurado.</li>
+     <li>Verifique se o serviço de nuvem da Dynamic Media está configurado.</li>
      <li>Verifique se um perfil de vídeo está associado à pasta de upload.</li>
     </ul> </td>
    <td>
     <ol>
      <li>Verifique sua instância do AEM com <code>-r dynamicmedia_scene7</code></li>
-     <li>Verifique se a Configuração de Dynamic Media em Serviços em Nuvem está configurada corretamente.</li>
+     <li>Verifique se a Configuração Dynamic Media em Cloud Service está configurada corretamente.</li>
      <li>Verifique se a pasta tem um perfil de vídeo. Verifique também o perfil de vídeo.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>O processamento de vídeo demora muito</td>
+   <td>O processamento de vídeo leva muito tempo</td>
    <td><p>Para determinar se a codificação de vídeo ainda está em andamento ou se entrou em um estado de falha:</p>
     <ul>
      <li>Verifique o status do vídeo <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
@@ -215,7 +218,7 @@ Se tiver problemas com os visualizadores, consulte as seguintes orientações pa
   <tr>
    <td>As predefinições do visualizador não são publicadas</td>
    <td><p>Vá para a página de diagnóstico do gerenciador de amostras: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe os valores calculados. Ao operar corretamente, você deve ver:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Observação</strong>: Pode levar cerca de 10 minutos após a configuração das configurações da nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.</p> <p>Se os ativos não ativados permanecerem, clique em um dos botões <strong>Listar todos os ativos</strong> não ativados para ver os detalhes.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Observação</strong>: Pode levar cerca de 10 minutos após a configuração das configurações de nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.</p> <p>Se os ativos não ativados permanecerem, clique em um dos botões <strong>Lista de todos os ativos</strong> não ativados para ver os detalhes.</p> </td>
    <td>
     <ol>
      <li>Navegue até a lista predefinida do visualizador nas ferramentas administrativas: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
@@ -224,13 +227,13 @@ Se tiver problemas com os visualizadores, consulte as seguintes orientações pa
     </ol> </td>
   </tr>
   <tr>
-   <td>A arte-final predefinida do visualizador retorna 404 da visualização em detalhes do ativo ou copia o URL/código incorporado</td>
+   <td>A arte-final predefinida do visualizador retorna 404 da pré-visualização nos detalhes do ativo ou copia o URL/código incorporado</td>
    <td><p>No CRXDE Lite, faça o seguinte:</p>
     <ol>
      <li>Navegue até a <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> pasta dentro da pasta de sincronização do Dynamic Media (por exemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Encontre o nó de metadados do ativo problemático (por exemplo, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
      <li>Verifique a presença das <code>dam:scene7*</code> propriedades. Se o ativo foi sincronizado e publicado com êxito, você verá que o <code>dam:scene7FileStatus</code> conjunto é <strong>PublicarConcluído</strong>.</li>
-     <li>Tente solicitar a arte-final diretamente do Dynamic Media concatenando os valores das seguintes propriedades e literais de string
+     <li>Tente solicitar a arte-final diretamente da Dynamic Media concatenando os valores das seguintes propriedades e literais de string
       <ul>
        <li><code>dam:scene7Domain</code></li>
        <li><code>"is/content"</code></li>
@@ -243,14 +246,14 @@ Se tiver problemas com os visualizadores, consulte as seguintes orientações pa
     <ol>
      <li>Navegue até CRXDE Lite.
       <ul>
-       <li>Excluir <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
+       <li>Exclua <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
       </ul> </li>
      <li>Navegue até o gerenciador de pacote CRX: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
       <ol>
-       <li>Procurar o pacote do visualizador na lista (começa com <code>cq-dam-scene7-viewers-content</code>)</li>
+       <li>Pesquisar o pacote do visualizador na lista (ele start com <code>cq-dam-scene7-viewers-content</code>)</li>
        <li>Clique em <strong>Reinstalar</strong>.</li>
       </ol> </li>
-     <li>Em Serviços em nuvem, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração para a configuração do Dynamic Media - S7.
+     <li>Em Cloud Service, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração para sua configuração Dynamic Media - S7.
       <ul>
        <li>Não faça alterações, clique em <strong>Salvar</strong>. Isso aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS predefinido do visualizador e a arte-final.<br />  </li>
       </ul> </li>
