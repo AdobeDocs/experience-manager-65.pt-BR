@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '11877'
 ht-degree: 8%
@@ -454,12 +454,12 @@ Para definir as configurações do Google Cloud:
    Se você já tiver uma conta do Google, vá para a próxima etapa.
 
 1. Vá para [https://cloud.google.com/](https://cloud.google.com/).
-1. Na página do Google Cloud, próximo ao canto superior direito, clique em **[!UICONTROL Console]**.
+1. Na página do Google Cloud, próximo ao canto superior direito, clique em **[!UICONTROL Console.]**
 
    Se necessário, talvez seja necessário fazer **[!UICONTROL logon]** usando suas credenciais de conta do Google para ver a opção **[!UICONTROL Console]** .
 
 1. Na página Painel, à direita do **[!UICONTROL Google Cloud Platform]**, clique na lista suspensa Projeto para abrir a caixa de diálogo Selecionar um projeto.
-1. Na caixa de diálogo Selecionar um projeto, toque em **[!UICONTROL Novo projeto]**.
+1. Na caixa de diálogo Selecionar um projeto, toque em **[!UICONTROL Novo projeto.]**
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
@@ -467,32 +467,32 @@ Para definir as configurações do Google Cloud:
 
    Observe que a ID do projeto se baseia no nome do projeto. Como tal, escolha cuidadosamente o nome do projeto; ele não pode ser alterado após ser criado. Além disso, você precisará digitar a mesma ID de projeto novamente quando configurar o YouTube no AEM posteriormente; talvez você queira anotar.
 
-1. Clique em **[!UICONTROL Criar]**.
+1. Clique em **[!UICONTROL Criar.]**
 
 1. Execute um dos procedimentos a seguir:
 
-   * No Painel do seu projeto, no cartão Introdução, toque em **[!UICONTROL Explorar e habilitar as APIs]**.
-   * No Painel do seu projeto, no cartão de APIs, toque em **[!UICONTROL Ir para a visão geral]** das APIs.
+   * No Painel do seu projeto, no cartão de Introdução, toque em **[!UICONTROL Explorar e ativar as APIs.]**
+   * No Painel do seu projeto, no cartão de APIs, toque em **[!UICONTROL Ir para a visão geral das APIs.]**
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. Próximo à parte superior da página APIs e serviços, toque em **[!UICONTROL Ativar APIs e serviços]**.
-1. Na página Biblioteca de API, no lado esquerdo, em **[!UICONTROL Categoria]**, toque em **[!UICONTROL YouTube]**. No lado direito da página, toque em API **[!UICONTROL de dados do]** YouTube.
-1. Na página da API de dados do YouTube v3, toque em **[!UICONTROL Ativar]**.
+1. Próximo à parte superior da página APIs e serviços, toque em **[!UICONTROL Ativar APIs e serviços.]**
+1. Na página Biblioteca de API, no lado esquerdo, em **[!UICONTROL Categoria]**, toque em **[!UICONTROL YouTube.]** No lado direito da página, toque em API de dados do **[!UICONTROL YouTube.]**
+1. Na página da API de dados do YouTube v3, toque em **[!UICONTROL Ativar.]**
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. Para usar a API, talvez você precise de credenciais. Se necessário, clique em **[!UICONTROL Criar credenciais]**.
+1. Para usar a API, talvez você precise de credenciais. Se necessário, clique em **[!UICONTROL Criar credenciais.]**
 
    ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
 1. Na etapa 1, na etapa **[!UICONTROL Adicionar credenciais à página do projeto]** , faça o seguinte:
 
-   * Na API **[!UICONTROL Qual você está usando?]** lista suspensa, selecione **[!UICONTROL YouTube Data API v3]**.
+   * Na API **[!UICONTROL Qual você está usando?]** lista suspensa, selecione **[!UICONTROL YouTube Data API v3.]**
 
    * Em **[!UICONTROL Onde você irá chamar a API?]** lista suspensa, selecione Servidor **[!UICONTROL Web (por exemplo, node.js, Tomcat)]**
 
-   * From the **[!UICONTROL What data will you be accessing?]** lista suspensa, toque em Dados **** do usuário.
+   * From the **[!UICONTROL What data will you be accessing?]** lista suspensa, toque em Dados **[!UICONTROL do usuário.]**
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -516,7 +516,7 @@ Para definir as configurações do Google Cloud:
 
    **Observação**: O exemplo de caminho acima destina-se apenas a fins de ilustração.
 
-1. Clique em **[!UICONTROL Criar ID]** de cliente OAuth.
+1. Clique em **[!UICONTROL Criar ID de cliente OAuth.]**
 1. Na página **[!UICONTROL Adicionar credenciais ao projeto]**, etapa 3, no cabeçalho **[!UICONTROL Configurar a tela de consentimento do OAuth 2.0]**, selecione o endereço de email do Gmail que você está usando no momento.
 
    ![6_5_googleaccount-apis-createcredentials-tela de consentimento](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
@@ -525,8 +525,8 @@ Para definir as configurações do Google Cloud:
 
    A tela de consentimento é exibida para o administrador do AEM quando eles são autenticados no YouTube; O AEM entrará em contato com o YouTube para obter permissão.
 
-1. Clique em **[!UICONTROL Continuar]**.
-1. Na página Adicionar credenciais ao projeto, etapa 4, no cabeçalho **[!UICONTROL Baixar credenciais]**, toque em **[!UICONTROL Download]**.
+1. Clique em **[!UICONTROL Continuar.]**
+1. Na página Adicionar credenciais ao projeto, etapa 4, no cabeçalho **[!UICONTROL Baixar credenciais]**, toque em **[!UICONTROL Download.]**
 
    ![6_5_googleaccount-apis-createcredentials-downloadentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
@@ -534,7 +534,7 @@ Para definir as configurações do Google Cloud:
 
    Você precisará desse arquivo json baixado ao configurar o YouTube no Adobe Experience Manager posteriormente.
 
-1. Clique em **[!UICONTROL Concluído]**.
+1. Clique em **[!UICONTROL Concluído.]**
 
    Desconecte-se da sua conta do Google. Agora você criará um canal no YouTube.
 
@@ -550,9 +550,9 @@ Para criar um canal do YouTube:
 
 1. Acesse [https://www.youtube.com](https://www.youtube.com/) e faça logon usando suas credenciais de conta do Google.
 1. No canto superior direito da página do YouTube, clique na imagem do seu perfil (também pode aparecer como uma letra dentro de um círculo colorido sólido) e clique nas configurações **[!UICONTROL do]** YouTube (ícone de engrenagem redonda).
-1. Na página Visão geral, no cabeçalho Recursos adicionais, clique em **[!UICONTROL Ver todos os meus canais ou crie um novo canal]**.
-1. Na página Canais, clique em **[!UICONTROL Criar um novo canal]**.
-1. Na página Conta de marca, no campo Nome da conta de marca, digite um nome comercial ou qualquer outro nome de canal que você escolher onde deseja publicar seus ativos de vídeo e clique em **[!UICONTROL Criar]**.
+1. Na página Visão geral, no cabeçalho Recursos adicionais, clique em **[!UICONTROL Ver todos os meus canais ou crie um novo canal.]**
+1. Na página Canais, clique em **[!UICONTROL Criar um novo canal.]**
+1. Na página Conta de marca, no campo Nome da conta de marca, digite um nome comercial ou qualquer outro nome de canal que você escolher onde deseja publicar seus ativos de vídeo e clique em **[!UICONTROL Criar.]**
 
    Lembre-se do nome inserido aqui, pois será necessário inseri-lo novamente ao configurar o YouTube no AEM.
 
@@ -568,13 +568,13 @@ Ou, se você pretende usar as tags padrão no AEM, ignore essa tarefa e acesse [
 
 ### Ativar o agente de replicação de publicação do YouTube {#enabling-the-youtube-publish-replication-agent}
 
-Depois de ativar o agente de replicação de publicação do YouTube, se você quiser testar a conexão com a conta do Google Cloud, toque em **[!UICONTROL Testar conexão]**. Uma guia do navegador exibe os resultados da conexão. Se você tiver adicionado Canais do YouTube, uma lista desses será exibida como parte do teste.
+Depois de ativar o agente de replicação de publicação do YouTube, se você quiser testar a conexão com a conta do Google Cloud, toque em **[!UICONTROL Testar conexão.]** Uma guia do navegador exibe os resultados da conexão. Se você tiver adicionado Canais do YouTube, uma lista desses será exibida como parte do teste.
 
-1. No canto superior esquerdo do AEM, clique no logotipo do AEM e, no painel à esquerda, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]** > **[!UICONTROL Agentes no autor]**.
-1. Na página Agentes do autor, clique em Publicar no **[!UICONTROL YouTube (YouTube)]**.
-1. Na barra de ferramentas, à direita de Configurações, clique em **[!UICONTROL Editar]**.
+1. No canto superior esquerdo do AEM, clique no logotipo do AEM e, no painel à esquerda, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]** > **[!UICONTROL Agentes no autor.]**
+1. Na página Agentes do autor, clique em Publicar no **[!UICONTROL YouTube (YouTube).]**
+1. Na barra de ferramentas, à direita de Configurações, clique em **[!UICONTROL Editar.]**
 1. Marque a caixa de seleção **[!UICONTROL Ativado]** para ativar o agente de replicação.
-1. Clique em **[!UICONTROL OK]**.
+1. Clique em **[!UICONTROL OK.]**
 
    Agora você configurará o YouTube no AEM.
 
@@ -588,10 +588,10 @@ A partir do AEM 6.4, um novo método de interface do usuário de toque foi intro
 #### Configuração do YouTube no AEM 6.4 e posterior {#setting-up-youtube-in-aem-and-later}
 
 1. Certifique-se de fazer logon na sua instância do Dynamic Media como um Administrador.
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]**(ícone de martelo) > **[!UICONTROL Serviços da nuvem]** > **[!UICONTROL Configuração de publicação no YouTube]**.
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]**(ícone de martelo) > **[!UICONTROL Serviços da nuvem]** > **[!UICONTROL Configuração de publicação no YouTube.]**
 1. Toque em **[!UICONTROL global]** (não o selecione).
 
-1. Near the upper-right corner of the global page, tap **[!UICONTROL Create]**.
+1. Near the upper-right corner of the global page, tap **[!UICONTROL Create.]**
 1. Na página Criar configuração do YouTube, em Configurações da Google Cloud Platform, no campo **[!UICONTROL Nome do aplicativo]**, digite a ID do projeto do Google.
 
    Você especificou a ID do projeto quando configurou as configurações do Google Cloud anteriormente.
@@ -602,23 +602,23 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a isso em
 1. Usando um editor de texto simples, abra o arquivo JSON que você baixou e salvou anteriormente na tarefa [Definição das configurações](/help/assets/video.md#configuring-google-cloud-settings)do Google Cloud.
 1. Selecione e copie o texto JSON inteiro.
 1. Retorne à caixa de diálogo Configurações da conta do YouTube. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
+1. Near the upper-right corner of the page, tap **[!UICONTROL Save.]**
 
    Agora você configurará canais do YouTube no AEM.
 
-1. Toque em **[!UICONTROL Adicionar Canal]**.
+1. Toque em **[!UICONTROL Adicionar Canal.]**
 1. In the Channel Name field, enter the name of the channel that you created in the task **[!UICONTROL Adding one or more channels to YouTube]** earlier.
 
    Como opção, você pode adicionar uma descrição, se desejar.
 
-1. Toque em **[!UICONTROL Adicionar]**.
+1. Toque em **[!UICONTROL Adicionar.]**
 1. A autenticação do YouTube/Google é exibida. Se você ainda não estiver conectado à conta do Google Cloud, ignore esta etapa.
 
    * Digite o nome de usuário e a senha do Google associados à ID do projeto do Google e o texto JSON acima.
    * Dependendo de quantos canais sua conta tiver exibido dois ou mais itens. Selecione um canal. Não selecione o endereço de correio eletrônico; não é um canal.
    * Na próxima página, toque em **[!UICONTROL Aceitar]** para permitir o acesso a este canal.
 
-1. Toque em **[!UICONTROL Permitir]**.
+1. Toque em **[!UICONTROL Permitir.]**
 
    Agora, você configurará tags para publicação.
 
@@ -626,9 +626,9 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a isso em
 1. Toque no ícone de lista suspensa (sinal invertido) para exibir a lista de tags disponíveis no AEM.
 1. Toque em uma ou mais tags para adicioná-las.
 
-   Para excluir uma tag adicionada, selecione-a e toque em **[!UICONTROL X]**.
+   Para excluir uma tag adicionada, selecione-a e toque em **[!UICONTROL X.]**
 
-1. Quando terminar de adicionar as tags desejadas, toque em **[!UICONTROL Salvar]**.
+1. Quando terminar de adicionar as tags desejadas, toque em **[!UICONTROL Salvar.]**
 
    Agora você publica vídeos no seu canal do YouTube.
 
@@ -636,10 +636,10 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a isso em
 
 1. Certifique-se de fazer logon na sua instância do Dynamic Media como um Administrador.
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Implantação]** > **[!UICONTROL Serviços da nuvem]**.
-1. No cabeçalho Third Party Services (Serviços de terceiros), em YouTube, toque em **[!UICONTROL Configure now (Configurar agora]**).
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Implantação]** > **[!UICONTROL Serviços da nuvem.]**
+1. No cabeçalho Third Party Services (Serviços de terceiros), em YouTube, toque em **[!UICONTROL Configure now (Configurar agora).]**
 1. Na caixa de diálogo Criar configuração, digite um título (obrigatório) e um nome (opcional) nos respectivos campos.
-1. Toque em **[!UICONTROL Criar]**.
+1. Toque em **[!UICONTROL Criar.]**
 1. Na caixa de diálogo Configurações da conta do YouTube, no campo **[!UICONTROL Nome do aplicativo]**, digite a ID do projeto do Google.
 
    Você especificou a ID do projeto quando [configurou as configurações](/help/assets/video.md#configuring-google-cloud-settings) do Google Cloud anteriormente.
@@ -648,7 +648,7 @@ Deixe a caixa de diálogo Configuração de conta do YouTube aberta; você volta
 1. Usando um editor de texto simples, abra o arquivo JSON que você baixou e salvou anteriormente na tarefa Configuração das configurações do Google Cloud.
 1. Selecione e copie o texto JSON inteiro.
 1. Retorne à caixa de diálogo Configurações da conta do YouTube. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
-1. Toque em **[!UICONTROL OK]**.
+1. Toque em **[!UICONTROL OK.]**
 
    Agora você configurará canais do YouTube no AEM.
 
@@ -657,14 +657,14 @@ Deixe a caixa de diálogo Configuração de conta do YouTube aberta; você volta
 
    Como opção, você pode adicionar uma descrição, se desejar.
 
-1. Toque em **[!UICONTROL OK]**.
+1. Toque em **[!UICONTROL OK.]**
 1. A autenticação do YouTube/Google é exibida. Se você ainda não estiver conectado à conta do Google Cloud, ignore esta etapa.
 
    * Digite o nome de usuário e a senha do Google associados à ID do projeto do Google e o texto JSON acima.
    * Dependendo de quantos canais sua conta tiver exibido dois ou mais itens. Selecione um canal. Não selecione o endereço de correio eletrônico; não é um canal.
    * Na próxima página, toque em **[!UICONTROL Aceitar]** para permitir o acesso a este canal.
 
-1. Toque em **[!UICONTROL Permitir]**.
+1. Toque em **[!UICONTROL Permitir.]**
 
    Agora, você configurará tags para publicação.
 
@@ -674,7 +674,7 @@ Deixe a caixa de diálogo Configuração de conta do YouTube aberta; você volta
 
    Para excluir uma tag adicionada, selecione-a e toque em **X**.
 
-1. Quando terminar de adicionar as tags desejadas, toque em **[!UICONTROL OK]**.
+1. Quando terminar de adicionar as tags desejadas, toque em **[!UICONTROL OK.]**
 
    Agora você publica vídeos no seu canal do YouTube.
 
@@ -686,11 +686,11 @@ Para criar o perfil de processamento de metadados, você primeiro copiará valor
 
 Para automatizar a configuração das propriedades padrão do YouTube para os vídeos carregados:
 
-1. No canto superior esquerdo do AEM, clique no logotipo do AEM e, no painel à esquerda, clique em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**.
-1. Click **[!UICONTROL default]**. (Não adicione uma marca de seleção à caixa de seleção à esquerda de &quot;padrão&quot;.)
-1. Na página **[!UICONTROL padrão]**, marque a caixa à esquerda do **[!UICONTROL vídeo]** e clique em **Editar]**.
+1. No canto superior esquerdo do AEM, clique no logotipo do AEM e, no painel à esquerda, clique em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados.]**
+1. Click **[!UICONTROL default.]** (Não adicione uma marca de seleção à caixa de seleção à esquerda de &quot;padrão&quot;.)
+1. Na página **[!UICONTROL padrão]**, marque a caixa à esquerda do **[!UICONTROL vídeo]** e clique em **Editar.]**
 1. Na página Editor de Schemas de metadados, clique na guia **[!UICONTROL Avançado]** .
-1. No cabeçalho Publicação no YouTube, clique em **[!UICONTROL Categoria do YouTube]**.
+1. No cabeçalho Publicação no YouTube, clique em **[!UICONTROL Categoria do YouTube.]**
 1. No lado direito da página, na guia **[!UICONTROL Configurações]** , faça o seguinte:
 
    * No campo de texto **[!UICONTROL Mapear para propriedade]** , selecione e copie o valor.
@@ -699,7 +699,7 @@ Cole o valor copiado no editor de texto aberto. Você precisará desse valor pos
    * Em **[!UICONTROL Opções]**, selecione e copie o valor padrão que deseja usar (como Pessoas e blogs ou Ciência e Tecnologia).
 Cole o valor copiado no editor de texto aberto. Você precisará desse valor posteriormente ao criar seu perfil de processamento de metadados. Deixe o editor de texto aberto.
 
-1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Privacy]**.
+1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Privacy.]**
 1. No lado direito da página, na guia **[!UICONTROL Configurações]** , faça o seguinte:
 
    * No campo de texto **[!UICONTROL Mapear para propriedade]** , selecione e copie o valor.
@@ -708,11 +708,11 @@ Cole o valor copiado no editor de texto aberto. Você precisará desse valor pos
    * Em **[!UICONTROL Opções]**, selecione e copie o valor padrão que deseja usar. Observe que as Opções estão agrupadas em pares de dois. O campo inferior do par é o valor padrão que você deseja copiar, como público, não listado ou privado.
 Cole o valor copiado no editor de texto aberto. Você precisará desse valor posteriormente ao criar seu perfil de processamento de metadados. Deixe o editor de texto aberto.
 
-1. Perto do canto superior direito da página do Editor de Schemas de Metadados, clique em **[!UICONTROL Cancelar]**.
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel à esquerda, clique em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de metadados]**.
+1. Ao lado do canto superior direito da página do Editor de Schemas de Metadados, clique em **[!UICONTROL Cancelar.]**
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel à esquerda, clique em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de metadados.]**
 
-1. Na página Perfis de metadados, próximo ao canto superior direito da página, clique em **[!UICONTROL Criar]**.
-1. Na caixa de diálogo Adicionar perfil de metadados, no campo de texto **[!UICONTROL Título do perfil]**, digite o nome `YouTube Video` e clique em **[!UICONTROL Criar]**.
+1. Na página Perfis de metadados, próximo ao canto superior direito da página, clique em **[!UICONTROL Criar.]**
+1. Na caixa de diálogo Adicionar perfil de metadados, no campo de texto **[!UICONTROL Título do perfil]**, digite o nome `YouTube Video` e clique em **[!UICONTROL Criar.]**
 1. Na página Editor de Perfis de Metadados, clique na guia **[!UICONTROL Avançado]** .
 1. Adicione os valores de Publicação do YouTube copiados ao perfil, fazendo o seguinte:
 
@@ -736,7 +736,7 @@ Cole o valor copiado no editor de texto aberto. Você precisará desse valor pos
    * Click **[!UICONTROL Field Label]** to select the component.
    * No lado direito da página, na guia Configurações, cole os valores de Publicação do YouTube (valor de Rótulo de campo e Mapa para valor de propriedade) que você copiou anteriormente, em seus respectivos campos no formulário. Cole o valor Opções no campo Valor padrão.
 
-1. Ao lado do canto superior direito da página, clique em **[!UICONTROL Salvar]**.
+1. Ao lado do canto superior direito da página, clique em **[!UICONTROL Salvar.]**
 1. Aplique o perfil de metadados de publicação do YouTube às pastas onde você carregará vídeos. Você precisará ter o Perfil Metadados e o Perfil Vídeo definidos.
 
    Consulte [Perfis de metadados](/help/assets/metadata-profiles.md) e [Perfis de vídeo](/help/assets/video-profiles.md).
@@ -747,7 +747,7 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 
 >[!NOTE]
 >
->Ao executar no Dynamic Media - modo Scene7, observe que a publicação imediatamente não é publicada automaticamente no YouTube. When Dynamic Media - Scene7 mode is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation]**.
+>Ao executar no Dynamic Media - modo Scene7, observe que a publicação imediatamente não é publicada automaticamente no YouTube. When Dynamic Media - Scene7 mode is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation.]**
 >
 >**[!UICONTROL Publicar imediatamente]** significa que o ativo carregado — após ser sincronizado com o IPS — é publicado automaticamente no sistema do delivery. Embora isso seja verdade para o Dynamic Media, não é verdade para o YouTube. Para publicar no YouTube, você deve publicar por meio de AEM Author.
 
@@ -763,15 +763,15 @@ Para publicar vídeos no seu canal do YouTube:
 
 1. No AEM, navegue até um ativo de vídeo que você deseja publicar no seu canal do YouTube.
 1. Selecione o ativo de vídeo (o conjunto de vídeos adaptáveis).
-1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]**.
+1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades.]**
 1. Na guia Básico, no cabeçalho Metadados, clique em **[!UICONTROL Abrir caixa de diálogo]** de seleção à direita do campo Tags.
 1. Na página Selecionar tags, navegue até as tags que deseja usar e selecione uma ou mais tags.
 
    Lembre-se de que as tags devem ser associadas ao canal do YouTube.
 
-1. In the upper-right corner of the page, click **[!UICONTROL Select]**.
-1. No canto superior direito da página de propriedades do vídeo, clique em **[!UICONTROL Salvar e fechar]**.
-1. Na barra de ferramentas, clique em Publicação **[!UICONTROL rápida]**.
+1. In the upper-right corner of the page, click **[!UICONTROL Select.]**
+1. No canto superior direito da página de propriedades do vídeo, clique em **[!UICONTROL Salvar e fechar.]**
+1. Na barra de ferramentas, clique em Publicação **[!UICONTROL rápida.]**
 
    Consulte também [Uso do Gerenciamento de publicação com AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
 
@@ -801,7 +801,7 @@ Para vincular URLs do YouTube ao seu aplicativo da Web:
 
    Remember that YouTube URLs are only available to copy *after* you have first *published* the video assets to YouTube.
 
-1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]**.
+1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades.]**
 1. Click the **[!UICONTROL Advanced]** tab.
 1. Sob o cabeçalho Publicação no YouTube, na Lista de URL do YouTube, selecione e copie o texto do URL para o navegador da Web para pré-visualização do ativo ou para adicionar à página de conteúdo da Web.
 
@@ -823,10 +823,10 @@ Para cancelar a publicação de vídeos para removê-los do YouTube:
 
 1. Navegue até os ativos de vídeo que você deseja cancelar a publicação do seu canal do YouTube.
 1. Em um modo de seleção de ativo, selecione um ou mais ativos de vídeo publicados.
-1. Na barra de ferramentas, clique em **[!UICONTROL Gerenciar publicação]**. Talvez seja necessário tocar no ícone de três pontos (. . .) na barra de ferramentas para consultar **[!UICONTROL Gerenciar publicação]**.
-1. Na página Gerenciar publicação, toque em **[!UICONTROL Cancelar publicação]**.
-1. In the upper-right corner of the page, tap **[!UICONTROL Next]**.
-1. In the upper-right corner of the page, tap **[!UICONTROL Unpublish]**.
+1. Na barra de ferramentas, clique em **[!UICONTROL Gerenciar publicação.]** Talvez seja necessário tocar no ícone de três pontos (. . .) na barra de ferramentas para consultar **[!UICONTROL Gerenciar publicação.]**
+1. Na página Gerenciar publicação, toque em **[!UICONTROL Cancelar publicação.]**
+1. In the upper-right corner of the page, tap **[!UICONTROL Next.]**
+1. In the upper-right corner of the page, tap **[!UICONTROL Unpublish.]**
 
 ## Monitoring video encoding and YouTube publishing progress {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -846,11 +846,11 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   Essa coluna não é exibida por padrão. Para ativar a coluna, selecione **[!UICONTROL Configurações de exibição]** no menu suspenso de exibições e adicione a coluna **[!UICONTROL Status de processamento]** e toque ou clique em **[!UICONTROL Atualizar]**.
+   Essa coluna não é exibida por padrão. Para ativar a coluna, selecione **[!UICONTROL Configurações de exibição]** no menu suspenso de exibições e adicione a coluna **[!UICONTROL Status de processamento]** e toque ou clique em **[!UICONTROL Atualizar.]**
 
    ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. Progresso da Visualização nos detalhes do ativo. Ao tocar ou clicar em um ativo, abra o menu suspenso e selecione **[!UICONTROL Linha do tempo]**. Para limitar a atividades de fluxo de trabalho, como codificação ou publicação no YouTube, selecione **[!UICONTROL Workflows]**.
+1. Progresso da Visualização nos detalhes do ativo. Ao tocar ou clicar em um ativo, abra o menu suspenso e selecione **[!UICONTROL Linha do tempo.]** Para limitar a atividades de fluxo de trabalho, como codificação ou publicação no YouTube, selecione **[!UICONTROL Workflows.]**
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -867,7 +867,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
    >
    >Você pode ajustar as **[!UICONTROL tentativas]**, o **[!UICONTROL atraso de repetição]** e as propriedades de **[!UICONTROL tempo limite]** nessas configurações.
 
-1. Nos fluxos de trabalho em andamento, consulte Instâncias de fluxo de trabalho disponíveis em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Instâncias]**.
+1. Nos fluxos de trabalho em andamento, consulte Instâncias de fluxo de trabalho disponíveis em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Instâncias.]**
 
    >[!NOTE]
    >
@@ -875,13 +875,13 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
-   Selecione a instância e toque ou clique em **[!UICONTROL Abrir histórico]**.
+   Selecione a instância e toque ou clique em **[!UICONTROL Abrir histórico.]**
 
    ![chlimage_1-434](assets/chlimage_1-434.png)
 
    Na área Instâncias do fluxo de trabalho, também é possível suspender, encerrar ou renomear workflows. Consulte [Administração de workflows](/help/sites-administering/workflows-administering.md) para obter mais informações.
 
-1. Em tarefas com falha, consulte Falhas de fluxo de trabalho, disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Falhas]**. A **[!UICONTROL Falha do fluxo de trabalho]** lista todas as atividades do fluxo de trabalho com falha.
+1. Em tarefas com falha, consulte Falhas de fluxo de trabalho, disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Falhas.]** A **[!UICONTROL Falha do fluxo de trabalho]** lista todas as atividades do fluxo de trabalho com falha.
 
    >[!NOTE]
    >
@@ -903,7 +903,7 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
    >
    >Você pode ajustar as **[!UICONTROL tentativas]**, o **[!UICONTROL atraso de repetição]** e as propriedades de **[!UICONTROL tempo limite]** nessas configurações.
 
-1. Em fluxos de trabalho concluídos, consulte Arquivo de fluxo de trabalho disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Arquivar]**. O **[!UICONTROL Arquivo de fluxo de trabalho]** lista todas as atividades de fluxo de trabalho concluídas.
+1. Em fluxos de trabalho concluídos, consulte Arquivo de fluxo de trabalho disponível em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Arquivar.]** O **[!UICONTROL Arquivo de fluxo de trabalho]** lista todas as atividades de fluxo de trabalho concluídas.
 
    >[!NOTE]
    >
@@ -921,13 +921,13 @@ Para monitorar o progresso (incluindo a codificação com falha/publicação do 
 
 A forma como você configura a notificação depende se deseja notificações para trabalhos de codificação ou trabalhos de publicação do YouTube:
 
-* Para os trabalhos de codificação, você pode acessar a página de configuração de todas as notificações por email do fluxo de trabalho do AEM em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web e pesquisando o Serviço **[!UICONTROL de notificação por email do Fluxo de trabalho do]** Day CQ. Consulte [Configurar notificação por email no AEM](/help/sites-administering/notification.md). Você pode marcar ou desmarcar as caixas de seleção para **[!UICONTROL Notificar ao cancelar]** ou **[!UICONTROL Notificar ao concluir]** de acordo.
+* Para os trabalhos de codificação, você pode acessar a página de configuração de todas as notificações por email do fluxo de trabalho do AEM em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web e pesquisando o Serviço de notificação por email do Fluxo de trabalho do **[!UICONTROL Day CQ.]** Consulte [Configurar notificação por email no AEM](/help/sites-administering/notification.md). Você pode marcar ou desmarcar as caixas de seleção para **[!UICONTROL Notificar ao cancelar]** ou **[!UICONTROL Notificar ao concluir]** de acordo.
 
 * Para trabalhos de publicação do YouTube, faça o seguinte:
 
-1. No AEM, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
+1. No AEM, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos.]**
 1. Na página Modelos de fluxo de trabalho, selecione **[!UICONTROL Publicar no YouTube]** e, em seguida, toque em **[!UICONTROL Editar]** na barra de ferramentas.
-1. Próximo ao canto superior direito da página de fluxo de trabalho Publicar no YouTube, toque em **[!UICONTROL Editar]**.
+1. Próximo ao canto superior direito da página de fluxo de trabalho Publicar no YouTube, toque em **[!UICONTROL Editar.]**
 1. Passe o ponteiro do mouse sobre o componente de Upload do YouTube e toque uma vez para exibir a barra de ferramentas embutida.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
@@ -953,7 +953,7 @@ A forma como você configura a notificação depende se deseja notificações pa
    >Esses e-mails são específicos do YouTube e são além das notificações por e-mail de fluxo de trabalho genérico. Como resultado, você pode receber dois conjuntos de notificações por email - a notificação genérica disponível no **[!UICONTROL Day CQ Workflow Email Notification Service]** e uma específica do YouTube, dependendo das configurações.
 
 1. Quando terminar, próximo ao canto superior direito da caixa de diálogo, toque no ícone **[!UICONTROL Concluído]** (marca de seleção).
-1. Na página de fluxo de trabalho Publicar no YouTube, próximo ao canto superior direito, toque em **[!UICONTROL Sincronizar]**.
+1. Na página de fluxo de trabalho Publicar no YouTube, próximo ao canto superior direito, toque em **[!UICONTROL Sincronizar.]**
 
 ## Exibição de relatórios de vídeo {#viewing-video-reports}
 
@@ -983,18 +983,18 @@ Consulte também [Configuração de Cloud Service](/help/assets/config-dynamic.m
 
 Por padrão, na primeira vez que você digita Relatórios de vídeo, o relatório exibe os dados de vídeo que começam no primeiro dia do mês atual e terminam com a data do mês atual. No entanto, você pode substituir o intervalo de datas padrão especificando seu próprio intervalo de datas. Na próxima vez que você inserir os Relatórios de vídeo, o intervalo de datas especificado será usado.
 
-Para que os relatórios de vídeo funcionem corretamente, uma ID de conjunto de relatórios é criada automaticamente quando os Cloud Service Dynamic Media são configurados. Ao mesmo tempo, a ID do conjunto de relatórios é encaminhada para o servidor de publicação para que esteja disponível para o recurso Copiar URL quando você pré-visualização ativos. No entanto, isso requer que o servidor de publicação já esteja configurado. Se o servidor de publicação não estiver configurado, você ainda poderá publicar para ver o relatório de vídeo, no entanto, será necessário retornar à Configuração da Dynamic Media Cloud e tocar em **[!UICONTROL OK]**.
+Para que os relatórios de vídeo funcionem corretamente, uma ID de conjunto de relatórios é criada automaticamente quando os Cloud Service Dynamic Media são configurados. Ao mesmo tempo, a ID do conjunto de relatórios é encaminhada para o servidor de publicação para que esteja disponível para o recurso Copiar URL quando você pré-visualização ativos. No entanto, isso requer que o servidor de publicação já esteja configurado. Se o servidor de publicação não estiver configurado, você ainda poderá publicar para ver o relatório de vídeo, no entanto, será necessário retornar à Configuração da Dynamic Media Cloud e tocar em **[!UICONTROL OK.]**
 
 Para visualização de relatórios de vídeo:
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios de vídeo]**.
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios de vídeo.]**
 1. Na página Relatórios de vídeo, execute um dos procedimentos a seguir:
 
    * Próximo ao canto superior direito, toque no **ícone Atualizar relatório de vídeo **I.
 Você só precisará usar Atualizar se a data final do relatório for o dia atual. Isso garante que você visualize o rastreamento de vídeo que ocorreu desde a última vez que você executou o relatório.
 
    * Próximo ao canto superior direito, toque no **ícone Seletor de datas **I.
-Especifique o intervalo de datas de início e término para o qual deseja obter dados de vídeo e toque em **[!UICONTROL Executar relatório]**.
+Especifique o intervalo de datas de início e término para o qual deseja obter dados de vídeo e toque em **[!UICONTROL Executar relatório.]**
 
    A caixa de grupo Principais métricas identifica várias medidas de agregação para todos os *vídeos *publicados em seu site.
 
@@ -1015,7 +1015,7 @@ Consulte [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/
 Para visualização de relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador HTML5 Scene7:
 
 1. Navegue até qualquer ativo de vídeo publicado.
-1. Próximo ao canto superior esquerdo da página do ativo, na lista suspensa, selecione **[!UICONTROL Visualizadores]**.
+1. Próximo ao canto superior esquerdo da página do ativo, na lista suspensa, selecione **[!UICONTROL Visualizadores.]**
 1. Selecione qualquer predefinição do visualizador de vídeo e copie o código incorporado.
 1. No código incorporado, localize a linha com o seguinte:
 
@@ -1089,7 +1089,7 @@ Para adicionar legendas ou legendas ao vídeo:
 
    Para obter melhores resultados, use a ferramenta no Internet Explorer 9 ou superior, Google Chrome ou Safari.
 
-   Na ferramenta, no campo **[!UICONTROL Inserir URL do arquivo de vídeo]**, cole o URL copiado do arquivo de vídeo e clique em **[!UICONTROL Carregar**. Consulte [Obter um URL de um ativo](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obter o URL para o próprio arquivo de vídeo, o qual você pode colar no campo **[!UICONTROL Inserir URL]** do arquivo de vídeo. O Internet Explorer, o Chrome ou o Safari podem reproduzir nativamente o vídeo.
+   Na ferramenta, no campo **[!UICONTROL Inserir URL do arquivo de vídeo]**, cole o URL copiado do arquivo de vídeo e clique em **[!UICONTROL Carregar**. Consulte [Obter um URL de um ativo](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obter o URL para o próprio arquivo de vídeo, o qual você pode colar no campo **[!UICONTROL Inserir URL do arquivo de vídeo.]** O Internet Explorer, o Chrome ou o Safari podem reproduzir nativamente o vídeo.
 
    Siga as instruções na tela do site para criar e salvar seu arquivo WebVTT. Quando terminar, copie o conteúdo do arquivo de legenda e cole-o em um editor de texto simples e salve-o com uma extensão de nome de arquivo .vtt.
 
@@ -1108,13 +1108,13 @@ Para adicionar legendas ou legendas ao vídeo:
 
 1. Faça uma das seguintes opções:
 
-   * Para obter uma experiência com o visualizador de vídeo pop-up, toque em **[!UICONTROL URL]**. Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e depois passe o URL para um editor de texto simples. Anexar o URL copiado do vídeo com a seguinte sintaxe:
+   * Para obter uma experiência com o visualizador de vídeo pop-up, toque em **[!UICONTROL URL.]** Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e depois passe o URL para um editor de texto simples. Anexar o URL copiado do vídeo com a seguinte sintaxe:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
       Observe o `,1` no final do caminho da legenda. Imediatamente após a extensão de nome de arquivo .vtt no caminho, você tem a opção de ativar (ativar) ou desativar (desativar) o botão de legenda na barra do player de vídeo, definindo para `,1` ou `,0`, respectivamente.
 
-   * Para obter uma experiência com o visualizador de vídeo incorporado, toque em **[!UICONTROL Incorporar código]**. Na caixa de diálogo Incorporar código, selecione e copie o código incorporado para a Área de transferência e cole o código em um editor de texto simples. Anexar o código incorporado copiado com a seguinte sintaxe:
+   * Para obter uma experiência com o visualizador de vídeo incorporado, toque em **[!UICONTROL Incorporar código.]** Na caixa de diálogo Incorporar código, selecione e copie o código incorporado para a Área de transferência e cole o código em um editor de texto simples. Anexar o código incorporado copiado com a seguinte sintaxe:
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -1228,23 +1228,23 @@ Para **adicionar uma miniatura** de vídeo personalizada,
 1. Navegue até um ativo de vídeo carregado cuja imagem em miniatura você deseja alterar.
 1. No modo de seleção de ativos, na Visualização **[!UICONTROL da]** Lista ou na Visualização **[!UICONTROL do]** cartão, toque no ativo de vídeo.
 1. Na barra de ferramentas, toque no ícone **[!UICONTROL Properties** (um círculo com um &quot;i&quot;).
-1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura]**.
+1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura.]**
 1. Na página Alterar miniatura, execute um dos procedimentos a seguir:
 
    * Para usar um quadro do vídeo como a nova miniatura:
 
-      * Na barra de ferramentas, toque em **[!UICONTROL Selecionar quadro do vídeo]**.
+      * Na barra de ferramentas, toque em **[!UICONTROL Selecionar quadro do vídeo.]**
       * Toque no botão Reproduzir e, em seguida, toque no botão Pausar no quadro que deseja capturar como a nova miniatura do vídeo.
    * Para usar um ativo de imagem como a nova miniatura:
 
-      * Na barra de ferramentas, toque em **[!UICONTROL Selecionar miniatura dos ativos]**.
-      * Toque em **[!UICONTROL Selecionar miniatura]**.
+      * Na barra de ferramentas, toque em **[!UICONTROL Selecionar miniatura dos ativos.]**
+      * Toque em **[!UICONTROL Selecionar miniatura.]**
       * Navegue até um ativo de imagem carregado e publicado anteriormente que você deseja usar. Observe que o ativo será redimensionado automaticamente para servir como uma imagem em miniatura do vídeo.
-      * Selecione o ativo de imagem e toque em **[!UICONTROL Selecionar]**.
+      * Selecione o ativo de imagem e toque em **[!UICONTROL Selecionar.]**
 
 
-1. Na página Alterar miniatura, toque em **[!UICONTROL Salvar alteração]**.
-1. Na página Propriedades do vídeo, no canto superior direito, toque em **[!UICONTROL Salvar e fechar]**.
+1. Na página Alterar miniatura, toque em **[!UICONTROL Salvar alteração.]**
+1. Na página Propriedades do vídeo, no canto superior direito, toque em **[!UICONTROL Salvar e fechar.]**
 
 ## Sobre miniaturas de vídeo no Dynamic Media - Modo híbrido {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
@@ -1267,13 +1267,13 @@ Para **adicionar uma miniatura** de vídeo,
 1. Navegue até um ativo de vídeo carregado que você deseja adicionar uma miniatura de vídeo.
 1. No modo de seleção de ativos, na Visualização da Lista ou na Visualização do cartão, toque no ativo de vídeo.
 1. Na barra de ferramentas, toque no ícone Propriedades **[!UICONTROL da]** Visualização (um círculo com um &quot;i&quot; nela).
-1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura]**.
-1. Na página Alterar miniatura, na barra de ferramentas, toque em **[!UICONTROL Selecionar quadro]**.
+1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura.]**
+1. Na página Alterar miniatura, na barra de ferramentas, toque em **[!UICONTROL Selecionar quadro.]**
 
    O Dynamic Media gera uma série de imagens em miniatura do seu vídeo, com base no intervalo de tempo padrão ou no intervalo de tempo personalizado.
 
 1. Pré-visualização as imagens em miniatura geradas e selecione a que deseja adicionar ao vídeo.
-1. Toque em **[!UICONTROL Salvar alteração]**.
+1. Toque em **[!UICONTROL Salvar alteração.]**
 
    A imagem em miniatura do vídeo é atualizada para usar a miniatura selecionada. Se posteriormente você decidir alterar a imagem em miniatura, poderá voltar para a página **[!UICONTROL Alterar miniatura]** e selecionar uma nova.
 
@@ -1289,7 +1289,7 @@ Consulte [Adicionar uma miniatura](#adding-a-video-thumbnail)de vídeo.
 
 **Para configurar o intervalo de tempo padrão em que as miniaturas de vídeo são geradas,**
 
-1. No AEM, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
+1. No AEM, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite.]**
 
 1. Na página CRXDE Lite, no painel de diretório à esquerda, navegue até `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
@@ -1316,10 +1316,10 @@ Para **adicionar uma miniatura** de vídeo personalizada,
 1. Navegue até um ativo de vídeo carregado que você deseja adicionar uma miniatura de vídeo personalizada.
 1. No modo de seleção de ativos, na Visualização da Lista ou na Visualização do cartão, toque no ativo de vídeo.
 1. Na barra de ferramentas, toque no ícone Propriedades **[!UICONTROL da]** Visualização (um círculo com um &quot;i&quot; nela).
-1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura]**.
-1. Na página Alterar miniatura, na barra de ferramentas, toque em **[!UICONTROL Carregar nova miniatura]**.
+1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura.]**
+1. Na página Alterar miniatura, na barra de ferramentas, toque em **[!UICONTROL Carregar nova miniatura.]**
 1. Navegue até uma imagem em miniatura que deseja usar, selecione-a e toque em **[!UICONTROL Abrir]** para começar a carregar a imagem no AEM. Após o upload, certifique-se de publicar a imagem.
-1. Depois de fazer upload e publicar a imagem com êxito, na página Alterar miniatura, toque em **[!UICONTROL Salvar alterações]**.
+1. Depois de fazer upload e publicar a imagem com êxito, na página Alterar miniatura, toque em **[!UICONTROL Salvar alterações.]**
 
    A miniatura personalizada é adicionada ao seu vídeo.
 
