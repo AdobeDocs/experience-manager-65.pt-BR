@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 translation-type: tm+mt
-source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 21%
@@ -16,7 +16,7 @@ ht-degree: 21%
 ---
 
 
-# Incorporar o vídeo de Dynamic Media, o visualizador de imagens ou o visualizador de dimensões em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Como incorporar o Dynamic Media Video, o Visualizador de imagens ou o Visualizador de dimensões em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
 
@@ -48,14 +48,14 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
    See [Publishing Image Presets](managing-image-presets.md#publishing-image-presets).
 
-1. No painel esquerdo, selecione o menu suspenso e toque em **[!UICONTROL Visualizadores]**.
+1. No painel esquerdo, selecione o menu suspenso e toque em **[!UICONTROL Visualizadores.]**
 1. No painel esquerdo, toque no nome predefinido do visualizador. A predefinição do visualizador é aplicada ao ativo.
-1. Toque em **[!UICONTROL Incorporar]**.
-1. Na caixa de diálogo **[!UICONTROL Incorporar código]** , copie o código inteiro para a área de transferência e toque em **[!UICONTROL Fechar]**.
+1. Toque em **[!UICONTROL Incorporar.]**
+1. Na caixa de diálogo **[!UICONTROL Incorporar código]** , copie o código inteiro para a área de transferência e toque em **[!UICONTROL Fechar.]**
 1. Cole o código incorporado em suas páginas da Web.
 
-## Usar HTTP/2 para fornecer seus ativos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Usar HTTP/2 para fornecer seus ativos Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery dos ativos Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte Delivery [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
+Consulte Delivery [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta Dynamic Media.
