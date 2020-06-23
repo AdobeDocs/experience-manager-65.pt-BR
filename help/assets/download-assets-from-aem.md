@@ -3,7 +3,7 @@ title: Baixe ativos digitais [!DNL Adobe Experience Manager].
 description: Saiba como baixar ativos [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 3%
@@ -24,10 +24,10 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 **Para baixar ativos,**
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. Na página Navegação, toque em **[!UICONTROL Ativos > Arquivos]**.
+1. Na página Navegação, toque em **[!UICONTROL Ativos > Arquivos.]**
 1. Navegue até uma pasta que contenha ativos que você deseja baixar.
 1. Selecione a pasta ou selecione um ou mais ativos na pasta.
-1. Na barra de ferramentas, toque em **[!UICONTROL Download]**.
+1. Na barra de ferramentas, toque em **[!UICONTROL Download.]**
 
    ![Opções disponíveis ao baixar ativos dos ativos Experience Manager](/help/assets/assets/asset-download1.png)
 
@@ -44,7 +44,7 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
    | **[!UICONTROL Cortes inteligentes]** | Selecione essa opção para baixar todas as representações de recorte inteligente do ativo selecionado no AEM. Um arquivo zip com as execuções de Recorte inteligente é criado e baixado no computador local. |
    | **[!UICONTROL Execução(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista [Predefinição](image-presets.md) de imagem. <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cor, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você tiver [!DNL Dynamic Media] ativado. |
 
-1. Na caixa de diálogo, toque em **[!UICONTROL Download]**.
+1. Na caixa de diálogo, toque em **[!UICONTROL Download.]**.
 
 ## Ativar servlet de download de ativos {#enable-asset-download-servlet}
 
