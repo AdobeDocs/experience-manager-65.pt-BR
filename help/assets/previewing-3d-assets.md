@@ -4,7 +4,7 @@ description: Saiba como pré-visualização ativos 3D
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 15%
@@ -14,7 +14,7 @@ ht-degree: 15%
 
 # Visualização de ativos 3D no AEM{#previewing-3d-assets-aem}
 
-O Adobe Experience Manager oferece suporte ao carregamento, delivery e pré-visualização interativa de ativos 3D como parte do processo de criação.
+O Adobe Experience Manager oferece suporte para upload, delivery e pré-visualização interativa de ativos 3D como parte do processo de criação.
 
  O visualizador 3D interativo está disponível na página de detalhes do ativo no AEM. O visualizador inclui, entre outras coisas, uma coleção de controles de câmera interativos que permitem girar, aplicar zoom e deslocar o ativo 3D.
 
@@ -52,7 +52,7 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
 
 1. Verifique se você fez upload dos ativos 3D no AEM.
 See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-1. No AEM, na página **[!UICONTROL Navegação]** , toque em **[!UICONTROL Ativos > Arquivos]**.
+1. No AEM, na página **[!UICONTROL Navegação]** , toque em **[!UICONTROL Ativos > Arquivos.]**
 
    ![Página de navegação](/help/assets/assets-dm/navigation-assets.png)
 
@@ -81,4 +81,4 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
    * **Redefinir**— próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de público alvo da visualização para o centro do ativo 3D. A redefinição também aproxima a câmera ou afasta-a para mostrar o ativo na totalidade e em um tamanho de visualização razoável.
    * **Modo** de tela cheia — Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia.
 
-1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.
+1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close.]**
