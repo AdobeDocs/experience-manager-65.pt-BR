@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Você deve ter direitos de Administrador para criar, editar e excluir metadados,
 
 Depois de criar seus metadados, imagem ou perfil de vídeo, atribua-o a uma ou mais pastas que você usa como destino para os ativos carregados recentemente.
 
-Um conceito importante sobre o uso de perfis nos ativos AEM é que eles estão atribuídos a pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
+Um conceito importante em relação ao uso de perfis em AEM Assets é que eles são atribuídos a pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
 Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil certo.
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropria
 
 >[!NOTE]
 >
->Aplica-se ao modo *Mídia* dinâmica - Scene7 somente no AEM 6.4.6.0 ou posterior.
+>Aplica-se ao *Dynamic Media - modo* Scene7 somente no AEM 6.4.6.0 ou posterior.
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de processamento existente que você tenha alterado posteriormente.
 
@@ -52,14 +52,14 @@ Por exemplo, suponha que você tenha criado um perfil de imagem e o atribuiu a u
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou na primeira vez. Assim, mesmo se você não tiver editado um perfil de processamento ou aplicado um perfil de processamento, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Como opção, você pode ajustar o tamanho do lote do fluxo de trabalho de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Reprocessar o fluxo de trabalho dos Ativos_ em uma pasta, os ativos são agrupados em lotes e enviados para o servidor de Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados no AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta ao servidor de Dynamic Media.
+Como opção, você pode ajustar o tamanho do lote do fluxo de trabalho de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Processar novamente o fluxo de trabalho dos Ativos_ em uma pasta, os ativos são agrupados em lotes e enviados ao servidor Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados no AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta ao servidor Dynamic Media.
 
 Consulte [Ajustar o tamanho do lote do fluxo de trabalho](#adjusting-load)de reprocessamento.
 
 >[!NOTE]
 >
->Se você estiver realizando uma migração em massa de ativos do Dynamic Media Classic para o AEM, deverá habilitar o agente de replicação de Migração no servidor de Dynamic Media. Quando a migração estiver concluída, desative o agente.
-O agente de publicação de Migração deve estar desabilitado no servidor de Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione como esperado.
+>Se você estiver realizando uma migração em massa de ativos do Dynamic Media Classic para o AEM, deverá ativar o agente de replicação de Migração no servidor Dynamic Media. Quando a migração estiver concluída, desative o agente.
+O agente de publicação de Migração deve estar desabilitado no servidor Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione como esperado.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
@@ -74,20 +74,20 @@ O agente de publicação de Migração deve estar desabilitado no servidor de Dy
    * Se houver uma ou mais subpastas com ativos na pasta selecionada principal, o fluxo de trabalho reprocessará cada ativo na hierarquia de pastas.
    * Como prática recomendada, você deve evitar executar esse fluxo de trabalho em uma hierarquia de pastas que tenha mais de 1000 ativos.
 
-1. Próximo ao canto superior esquerdo da página, na lista suspensa, clique em **[!UICONTROL Linha do tempo]**.
+1. Próximo ao canto superior esquerdo da página, na lista suspensa, clique em **[!UICONTROL Linha do tempo.]**
 1. Perto do canto inferior esquerdo da página, à direita do campo Comentário, clique no ícone de carrinho ( **^** ) .
 
    ![Reprocessar fluxo de trabalho de ativos 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Clique em Fluxo de trabalho do **[!UICONTROL Start]**.
-1. Na lista suspensa Fluxo de trabalho **[!UICONTROL do]** Start, escolha **[!UICONTROL Scene7: Reprocessar ativos]**.
+1. Clique em Fluxo de trabalho do **[!UICONTROL Start.]**
+1. Na lista suspensa Fluxo de trabalho **[!UICONTROL do]** Start, escolha **[!UICONTROL Scene7: Reprocessar ativos.]**
 1. (Opcional) No campo **Inserir título do campo de texto do fluxo de trabalho** , insira um nome para o fluxo de trabalho. Você pode usar o nome para fazer referência à instância do fluxo de trabalho, se necessário.
 
    ![Reprocessar ativos 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Clique em **[!UICONTROL Start]** e, em seguida, clique em **[!UICONTROL Confirmar]**.
+1. Clique em **[!UICONTROL Start]** e, em seguida, clique em **[!UICONTROL Confirmar.]**
 
-   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página principal do console do AEM, clique em **[!UICONTROL Ferramentas > Fluxo de trabalho]**. Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir histórico]**. Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho.
+   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página principal do console do AEM, clique em **[!UICONTROL Ferramentas > Fluxo de trabalho.]** Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir histórico.]** Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho.
 
 ### Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento {#adjusting-load}
 
@@ -95,12 +95,12 @@ O agente de publicação de Migração deve estar desabilitado no servidor de Dy
 
 **Como opção, ajuste o tamanho do lote do fluxo de trabalho de reprocessamento**
 
-1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
-1. Na página Modelos de fluxo de trabalho, em Visualização de cartão ou Visualização de Lista, selecione **[!UICONTROL Scene7: Reprocessar ativos]**.
+1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
+1. Na página Modelos de fluxo de trabalho, em Visualização de cartão ou Visualização de Lista, selecione **[!UICONTROL Scene7: Reprocessar ativos.]**
 
    ![Página Modelos de fluxo de trabalho com o Scene7: Reprocessar fluxo de trabalho de Ativos selecionado na Visualização de Cartão](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Na barra de ferramentas, clique em **[!UICONTROL Editar]**. Uma nova guia do navegador abre o Scene7: Reprocessar página de modelo de fluxo de trabalho dos Ativos.
+1. Na barra de ferramentas, clique em **[!UICONTROL Editar.]** Uma nova guia do navegador abre o Scene7: Reprocessar página de modelo de fluxo de trabalho dos Ativos.
 1. No Scene7: Reprocessar a página do fluxo de trabalho dos Ativos, próximo ao canto superior direito, clique em **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
 1. No fluxo de trabalho, selecione o componente de Upload em lote do Scene7 para abrir a barra de ferramentas e clique em **[!UICONTROL Configurar]** na barra de ferramentas.
 
@@ -113,18 +113,19 @@ O agente de publicação de Migração deve estar desabilitado no servidor de Dy
    * No campo **[!UICONTROL Período]** , informe um intervalo de polling (segundos) para testar a conclusão do processo externo.
    * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
    * Selecione **[!UICONTROL Avançar no tempo limite]** se desejar avançar quando o tempo limite for atingido. Desmarque se deseja continuar com a caixa de entrada quando o tempo limite for atingido.
+
    ![Caixa de diálogo Propriedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. No canto superior direito da caixa de diálogo Carregamento em **[!UICONTROL lote para o Scene7 - Propriedades]** da etapa, clique em **[!UICONTROL Concluído]**.
+1. No canto superior direito da caixa de diálogo Carregamento em **[!UICONTROL lote para o Scene7 - Propriedades]** da etapa, clique em **[!UICONTROL Concluído.]**
 
-1. No canto superior direito do Scene7: Reprocessar a página de modelo de fluxo de trabalho dos Ativos, clique em **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do fluxo de trabalho é sincronizado e pronto para reprocessar ativos em uma pasta.
+1. No canto superior direito do Scene7: Reprocessar a página de modelo de fluxo de trabalho dos Ativos, clique em **[!UICONTROL Sincronizar.]** Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do fluxo de trabalho é sincronizado e pronto para reprocessar ativos em uma pasta.
 
    ![Sincronizar o modelo de fluxo de trabalho](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Feche a guia do navegador que mostra o Scene7: Reprocessar modelo de fluxo de trabalho de Ativos.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite.]**
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -135,10 +136,10 @@ O agente de publicação de Migração deve estar desabilitado no servidor de Dy
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add.]** The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
 1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
