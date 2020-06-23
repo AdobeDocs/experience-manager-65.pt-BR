@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 42%
@@ -74,7 +74,7 @@ Se você não precisar de um fluxo de trabalho ou controle de versão para seus 
 
 **Para configurar predefinições universais**:
 
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit.]**
 1. Selecione a guia **[!UICONTROL Vídeo]**.
 
    >[!NOTE]
@@ -151,8 +151,8 @@ As várias codificações de vídeo são criadas de acordo com as predefiniçõe
 >
 >Os novos perfis de vídeo e as alterações a eles devem ser ativados para publicação.
 
-1. No AEM, acesse as **[!UICONTROL Ferramentas]** e selecione o **[!UICONTROL Console de configuração]**. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Crie um novo Perfil Dynamic Media Classic Video. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar]**.
+1. No AEM, acesse as **[!UICONTROL Ferramentas]** e selecione o **[!UICONTROL Console de configuração.]** No console de configuração, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Perfis **[!UICONTROL de]** vídeo na árvore de navegação.
+1. Crie um novo Perfil Dynamic Media Classic Video. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar.]**
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
