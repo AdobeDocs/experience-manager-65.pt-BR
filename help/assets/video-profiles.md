@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 20%
@@ -157,11 +157,11 @@ Para definir parâmetros de processamento avançados para outros tipos de ativos
 
 **Para criar um perfil de vídeo para streaming** adaptável,
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo.]**
 1. Clique ou toque em **[!UICONTROL Criar]** para adicionar um novo perfil de vídeo.
 
 1. Insira um nome e uma descrição para o perfil.
-1. Na página Criar/editar predefinições de codificação de vídeo, toque em **[!UICONTROL Adicionar predefinição]** de codificação de vídeo.
+1. Na página Criar/editar predefinições de codificação de vídeo, toque em **[!UICONTROL Adicionar predefinição de codificação de vídeo.]**
 1. Na guia **[!UICONTROL Básico]** , defina as opções de vídeo e áudio.
 Toque no ícone de informações ao lado de cada opção para obter descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
 1. No cabeçalho Tamanho do vídeo, verifique se a proporção **** Manter está marcada.
@@ -169,7 +169,7 @@ Toque no ícone de informações ao lado de cada opção para obter descrições
 
 1. Faça uma das seguintes opções:
 
-   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**. In the **[!UICONTROL Height]** field, enter a value in pixels.
+   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto.]** No campo **[!UICONTROL Altura]** , insira um valor em pixels.
 
    * Para ajudar a visualizar o tamanho do vídeo, toque no ícone Informações (i) à direita de **[!UICONTROL Altura]** para abrir a página Calculadora de tamanho. Use a Calculadora **[!UICONTROL de]** tamanho para definir as dimensões do vídeo (representada pela caixa azul) desejada. Toque em **[!UICONTROL X]** no canto superior direito quando terminar.
 
@@ -180,7 +180,7 @@ Toque no ícone de informações ao lado de cada opção para obter descrições
    * Continue com a próxima etapa.
 
 1. (Opcional) Para adicionar o recorte inteligente de vídeo aos vídeos aos quais este perfil será aplicado, faça o seguinte:
-   * Na página Editar Perfil de Vídeo, à direita do cabeçalho Proporção de Recorte Inteligente, toque em **[!UICONTROL Adicionar Novo]**.
+   * Na página Editar Perfil de Vídeo, à direita do cabeçalho Proporção de Recorte Inteligente, toque em **[!UICONTROL Adicionar Novo.]**
    * No campo Nome, digite um nome para a proporção de corte que o ajudará a identificá-la facilmente.
    * Na lista suspensa Taxa de **[!UICONTROL corte]** , selecione a proporção que deseja usar.
 
@@ -210,17 +210,17 @@ Para definir parâmetros de processamento avançados para outros tipos de ativos
 
 **Para criar um perfil de vídeo para streaming progressivo:**
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo.]**
 1. Toque em **[!UICONTROL Criar]** para adicionar um novo perfil de vídeo.
 1. Insira um nome e uma descrição para o perfil.
-1. Na página Criar/editar predefinições de codificação de vídeo, toque em **[!UICONTROL Adicionar predefinição]** de codificação de vídeo.
+1. Na página Criar/editar predefinições de codificação de vídeo, toque em **[!UICONTROL Adicionar predefinição de codificação de vídeo.]**
 1. Na guia **[!UICONTROL Básico]** , defina as opções de vídeo e áudio.
 Toque no ícone de informações ao lado de cada opção para obter descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
-1. (Opcional) No cabeçalho Tamanho do vídeo, desmarque **[!UICONTROL Manter proporção]**.
+1. (Opcional) No cabeçalho Tamanho do vídeo, desmarque **[!UICONTROL Manter proporção.]**
 1. Faça o seguinte:
-   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**.
+   * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto.]**
    * In the **[!UICONTROL Height]** field, enter a value in pixels.
-To help you visualize the size of the video, tap the Height&#39;s information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X]**.
+To help you visualize the size of the video, tap the Height&#39;s information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X.]**
 1. (Opcional) Execute um dos procedimentos a seguir:
 
    * Toque na guia **[!UICONTROL Avançado]** e verifique se a caixa de seleção **[!UICONTROL Usar valores]** padrão está marcada (recomendável).
@@ -236,7 +236,7 @@ Toque no ícone de informações ao lado de cada opção para obter descrições
 
 1. (Opcional) Para adicionar o recorte inteligente de vídeo aos vídeos aos quais este perfil será aplicado, faça o seguinte:
 
-   * Na página Editar Perfil de Vídeo, à direita do cabeçalho Proporção de Recorte Inteligente, toque em **[!UICONTROL Adicionar Novo]**.
+   * Na página Editar Perfil de Vídeo, à direita do cabeçalho Proporção de Recorte Inteligente, toque em **[!UICONTROL Adicionar Novo.]**
    * No campo Nome, digite um nome para a proporção de corte que o ajudará a identificá-la facilmente.
    * Na lista suspensa Taxa de **[!UICONTROL corte]** , selecione a proporção que deseja usar.
 
@@ -255,7 +255,7 @@ Você pode editar um perfil de codificação de vídeo existente para aproveitar
 
 **Para usar parâmetros** de codificação de vídeo adicionados personalizados:
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite.]**
 1. Na página CRXDE Lite, no painel Explorer à esquerda, navegue até o seguinte:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -307,11 +307,11 @@ Você pode editar um perfil de codificação de vídeo existente para aproveitar
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Próximo ao canto inferior direito da página, toque em **[!UICONTROL Adicionar]**.
+1. Próximo ao canto inferior direito da página, toque em **[!UICONTROL Adicionar.]**
 1. Faça uma das seguintes opções:
 
    * Repita as etapas 3 e 4 para adicionar outro parâmetro ao seu perfil de codificação de vídeo.
-   * Perto do canto superior esquerdo da página, toque em **[!UICONTROL Salvar tudo]**.
+   * Perto do canto superior esquerdo da página, toque em **[!UICONTROL Salvar tudo.]**
 
 1. No canto superior esquerdo da página CRXDE Lite, toque no ícone Início **[!UICONTROL traseiro]** para retornar ao AEM.
 
@@ -327,9 +327,9 @@ Para definir parâmetros de processamento avançados para outros tipos de ativos
 
 **Para editar um perfil** de vídeo:
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo.]**
 1. Na página Perfis de vídeo, verifique o nome de um perfil de vídeo.
-1. Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
+1. Na barra de ferramentas, toque em **[!UICONTROL Editar.]**
 1. Na página Perfil de codificação de vídeo, edite o nome e a descrição, conforme desejado.
 1. Como prática recomendada, verifique se a caixa de seleção **[!UICONTROL Codificar para transmissão adaptável]** está selecionada.
 Toque no ícone de informações para obter uma descrição da transmissão adaptável. (Se você estiver editando um perfil de vídeo progressivo, não marque essa caixa de seleção.)
@@ -337,13 +337,13 @@ Toque no ícone de informações para obter uma descrição da transmissão adap
 
    Toque no ícone de informações ao lado de cada opção nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]** para obter descrições adicionais ou configurações recomendadas com base no codec de formato de vídeo selecionado.
 
-1. No canto superior direito da página, toque em **[!UICONTROL Salvar]**.
+1. No canto superior direito da página, toque em **[!UICONTROL Salvar.]**
 
 ### Copiar um perfil de vídeo {#copying-a-video-encoding-profile}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo.]**
 1. Na página Perfis de vídeo, verifique o nome de um perfil de vídeo.
-1. Na barra de ferramentas, toque em **[!UICONTROL Copiar]**.
+1. Na barra de ferramentas, toque em **[!UICONTROL Copiar.]**
 1. Na página Perfil de codificação de vídeo, digite um novo nome para o perfil.
 1. Como prática recomendada, verifique se a caixa de seleção **[!UICONTROL Codificar para transmissão adaptável]** está selecionada. Toque no ícone de informações para obter uma descrição da transmissão adaptável. (Se você estiver copiando um perfil de vídeo progressivo, não marque a caixa de seleção.)
 
@@ -352,14 +352,14 @@ Toque no ícone de informações para obter uma descrição da transmissão adap
 
    Toque no ícone de informações ao lado de cada opção nas guias Básico e Avançado para obter as configurações e descrições recomendadas.
 
-1. No canto superior direito da página, toque em **[!UICONTROL Salvar]**.
+1. No canto superior direito da página, toque em **[!UICONTROL Salvar.]**
 
 ### Excluindo um perfil de vídeo {#deleting-a-video-encoding-profile}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo.]**
 1. Na página Perfis de vídeo, verifique um ou mais nomes de perfis de vídeo.
-1. Na barra de ferramentas, toque em **[!UICONTROL Excluir]**.
-1. Toque em **[!UICONTROL OK]**.
+1. Na barra de ferramentas, toque em **[!UICONTROL Excluir.]**
+1. Toque em **[!UICONTROL OK.]**
 
 ## Aplicar um perfil de vídeo a pastas {#applying-a-video-profile-to-folders}
 
@@ -377,7 +377,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 ### Aplicar um perfil de vídeo a pastas específicas {#applying-video-profiles-to-specific-folders}
 
-Aplique um perfil de vídeo a uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**. Esta seção descreve como aplicar perfis de vídeo a pastas de ambas as maneiras.
+Aplique um perfil de vídeo a uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades.]** Esta seção descreve como aplicar perfis de vídeo a pastas de ambas as maneiras.
 
 As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
@@ -385,16 +385,16 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 #### Aplicação de um perfil de vídeo a pastas por meio da interface do usuário dos Perfis {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo.]**
 1. Selecione o perfil de vídeo que deseja aplicar a uma pasta ou várias pastas.
-1. Toque em **[!UICONTROL Aplicar perfil às pastas]** e selecione uma ou várias pastas que deseja usar para receber os ativos carregados recentemente e toque em **[!UICONTROL Aplicar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta enquanto estão na **[!UICONTROL Exibição de cartão]**.
+1. Toque em **[!UICONTROL Aplicar perfil às pastas]** e selecione uma ou várias pastas que deseja usar para receber os ativos carregados recentemente e toque em **[!UICONTROL Aplicar.]** As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta enquanto estão na **[!UICONTROL Exibição de cartão.]**
 Você pode [monitorar o progresso de um trabalho](#monitoring-the-progress-of-an-encoding-job)de processamento de perfis de vídeo.
 
 #### Aplicar um perfil de vídeo a pastas a partir de Propriedades {#applying-video-profiles-to-folders-from-properties}
 
 1. Toque ou clique no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, para a pasta à qual deseja aplicar um perfil de vídeo.
-1. Na pasta, toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades]**.
-1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione o perfil no menu suspenso e clique em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Na pasta, toque na marca de seleção para selecioná-la e, em seguida, toque em **[!UICONTROL Propriedades.]**
+1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione o perfil no menu suspenso e clique em **[!UICONTROL Salvar e fechar.]** As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)Você pode [monitorar o progresso de um trabalho](#monitoring-the-progress-of-an-encoding-job)de processamento de perfil de vídeo.
 
@@ -406,7 +406,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 **Para aplicar um perfil de vídeo globalmente**,
 
-* Navegue até CRXDE Lite até o seguinte nó: `/content/dam/jcr:content`. Adicione a propriedade `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e toque em **[!UICONTROL Salvar tudo]**.
+* Navegue até CRXDE Lite até o seguinte nó: `/content/dam/jcr:content`. Adicione a propriedade `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e toque em **[!UICONTROL Salvar tudo.]**
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Você pode [monitorar o progresso de um trabalho](#monitoring-the-progress-of-an-encoding-job)de processamento de perfis de vídeo.
@@ -421,19 +421,19 @@ Você também pode visualização o `error.log` arquivo para monitorar o progres
 
 Quando você remove um perfil de vídeo de uma pasta, qualquer subpasta herda automaticamente a remoção do perfil da pasta pai. No entanto, qualquer processamento de arquivos que tenha ocorrido dentro das pastas permanece intacto.
 
-Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, nas **[!UICONTROL Configurações da pasta]**. Esta seção descreve como remover perfis de vídeo de pastas de ambas as maneiras.
+Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, nas **[!UICONTROL Configurações da pasta.]** Esta seção descreve como remover perfis de vídeo de pastas de ambas as maneiras.
 
 ### Remoção de um perfil de vídeo de pastas por meio da interface do usuário de Perfis {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo.]**
 1. Selecione o perfil de vídeo que deseja remover de uma pasta ou de várias pastas.
-1. Toque em **[!UICONTROL Remover perfil das pastas]** e selecione uma ou várias pastas que deseja usar para remover o perfil e toque em **[!UICONTROL Remover]**.
+1. Toque em **[!UICONTROL Remover perfil das pastas]** e selecione uma ou várias pastas que deseja usar para remover o perfil e toque em **[!UICONTROL Remover.]**
 
    Você pode confirmar que o perfil de vídeo não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
 ### Remoção de um perfil de vídeo de pastas por meio de Propriedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toque ou clique no logotipo do AEM e navegue até **[!UICONTROL Assets]** e, em seguida, para a pasta da qual deseja remover um perfil de vídeo.
-1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque ou clique em **Propriedades]**.
-1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Na pasta, toque ou clique na marca de seleção para selecioná-la e, em seguida, toque ou clique em **Propriedades.]**
+1. Selecione a guia **[!UICONTROL Perfis de vídeo]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar e fechar.]** As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
