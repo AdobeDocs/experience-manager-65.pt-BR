@@ -66,6 +66,7 @@ O componente Dynamic Media é inteligente — dependendo se você adicionar uma 
 >
 >* Você [ativou a Mídia dinâmica](/help/assets/config-dynamic.md). As mídias dinâmicas são desativadas por padrão.
 >* A imagem tem um arquivo tiff de pirâmide. As imagens importadas antes de a mídia dinâmica ser ativada não possuem um arquivo tiff de pirâmide.
+
 >
 
 
