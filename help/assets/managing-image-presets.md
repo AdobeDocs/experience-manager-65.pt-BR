@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3845'
 ht-degree: 10%
 
 ---
@@ -195,6 +195,7 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
    >
    >
 * O tamanho da miniatura de vídeos é configurado na etapa de **[!UICONTROL Miniaturas do FFmpeg]**, na guia **[!UICONTROL Processo]**, em **[!UICONTROL Argumentos.]**
+
 >
 
 
@@ -411,7 +412,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
   </tr>
   <tr>
    <td><strong>Modificador de imagem</strong></td>
-   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, a Dynamic Media oferece suporte a inúmeras modificações avançadas de imagem que você pode especificar no campo Modificadores de <strong>imagem</strong> . Esses parâmetros são definidos na referência <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">de comando do protocolo do servidor de</a>imagens.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
+   <td><p>Além das configurações comuns de imagem disponíveis na interface do usuário, a Dynamic Media oferece suporte a inúmeras modificações avançadas de imagem que você pode especificar no campo Modificadores de <strong>imagem</strong> . Esses parâmetros são definidos na referência <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">de comando do protocolo do servidor de</a>imagens.</p> <p>Importante: A seguinte funcionalidade listada na API não é suportada:</p>
     <ul>
      <li>Comandos básicos de formatação e renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandos de Localização: <code>locale=</code> e <code>req=xlate</code></li>
