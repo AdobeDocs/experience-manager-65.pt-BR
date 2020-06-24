@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
-source-wordcount: '3129'
-ht-degree: 32%
+source-wordcount: '3095'
+ht-degree: 33%
 
 ---
 
@@ -202,8 +202,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    Com modificadores do visualizador, você pode, por exemplo, fazer o seguinte:
 
-   * Associe um arquivo de legenda a um vídeo: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
-   * Associe um arquivo de navegação a um vídeo: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
+   * Associe um arquivo de legenda a um vídeo: [legenda](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associe um arquivo de navegação a um vídeo: [navegação](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
