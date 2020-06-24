@@ -3,7 +3,7 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -28,9 +28,9 @@ Após o Tempo [!UICONTROL desligado], um ativo e suas representações não est�
 
 ## Fragmentos de conteúdo {#content-fragments}
 
-Um fragmento [de](/help/assets/content-fragments.md) conteúdo é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças nos `standard` ativos (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de fragmentos de conteúdo.
+Um fragmento [de](/help/assets/content-fragments/content-fragments.md) conteúdo é um tipo especial de ativo. Pode ser usado para acessar dados estruturados, como textos, números, datas, entre outros. Como há várias diferenças nos `standard` ativos (como imagens ou documentos), algumas regras adicionais se aplicam ao manuseio de fragmentos de conteúdo.
 
-Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](/help/assets/assets-api-content-fragments.md)HTTP dos ativos do Experience Manager.
+Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na API](/help/assets/assets-api-content-fragments.md)HTTP dos ativos Experience Manager.
 
 ## Modelo de dados {#data-model}
 
@@ -67,7 +67,7 @@ No Experience Manager, um ativo contém os seguintes elementos:
 * Várias representações, como a representação original (que é o ativo carregado originalmente), uma miniatura e várias outras representações. As representações adicionais podem ser imagens de tamanhos diferentes, codificações de vídeo diferentes ou páginas extraídas de arquivos PDF ou [!DNL Adobe InDesign] PDF.
 * Comentários opcionais.
 
-Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP dos ativos do Experience Manager.
+Para obter informações sobre elementos em Fragmentos de conteúdo, consulte Suporte a fragmentos de [conteúdo na API](/help/assets/assets-api-content-fragments.md#content-fragments)HTTP dos ativos de Experience Manager.
 
 Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 
