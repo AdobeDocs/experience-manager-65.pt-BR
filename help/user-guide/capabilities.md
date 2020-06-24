@@ -4,7 +4,10 @@ seo-title: Guia do usuário dos recursos do AEM 6.5
 description: Uma visão geral dos recursos essenciais do AEM 6.5
 seo-description: Uma visão geral dos recursos essenciais do AEM 6.5
 translation-type: tm+mt
-source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 9%
 
 ---
 
@@ -13,13 +16,13 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## AEM Foundation {#aem-foundation}
 
-[Saiba mais sobre a instalação, a implantação e a arquitetura do Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluindo nossa implantação em nuvem dos Serviços gerenciados da Adobe.
+[Saiba mais sobre como instalar, implantar e a arquitetura do Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluindo nossa implantação em nuvem do Adobe Managed Services.
 
 [Saiba como gerenciar um projeto](/help/managing/home.md)do AEM.
 
 ## AEM Sites {#aem-sites}
 
-[Saiba mais sobre os principais conceitos para criar conteúdo e criar no AEM](/help/sites-authoring/home.md).
+[Saiba mais sobre os principais conceitos para criação de conteúdo e criação no AEM](/help/sites-authoring/home.md).
 
 [Saiba mais sobre como administrar o AEM](/help/sites-administering/home.md).
 
@@ -41,7 +44,7 @@ source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Compartilhe conteúdo gerado pelo usuário com o AEM Livefyre.](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html)
+[Compartilhe conteúdo gerado pelo usuário com o AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 
