@@ -9,10 +9,10 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
 workflow-type: tm+mt
-source-wordcount: '7445'
-ht-degree: 1%
+source-wordcount: '7603'
+ht-degree: 0%
 
 ---
 
@@ -188,7 +188,26 @@ Para executar o servidor de aplicativos no qual os AEM Forms no JEE são implant
    * Negar logon localmente
    * Fazer logon como Serviço (já deve estar definido)
 
-1. Atribua à nova conta de usuário permissões de Leitura e Execução, Gravação, Modificação, Conteúdo da pasta de Lista e Leitura para concluir AEM Forms no diretório de instalação JEE e no diretório Global Documento Armazenamento (GDS). O local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em [JBoss root]/server/[type]/svcnative/DocumentStorage.
+1. Atribua à nova conta de usuário permissões de modificação nos seguintes diretórios:
+   * **Diretório** GDS: O local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de localização permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **Diretório** CRX-Repository: O local padrão é `[AEM-Forms-installation-location]\crx-repository`
+   * **AEM Forms de diretórios** temporários:
+      * (Windows) Caminho TMP ou TEMP conforme definido nas variáveis do ambiente
+      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectadoEm sistemas baseados em UNIX, um usuário não raiz pode usar o seguinte diretório como diretório temporário:
+      * (Linux) /var/tmp ou /usr/tmp
+      * (AIX) /tmp ou /usr/tmp
+      * (Solaris) /var/tmp ou /usr/tmp
+1. Atribua à nova conta de usuário permissões de gravação nos seguintes diretórios:
+   * [JBoss-diretory]\standalone\deployment
+   * [JBoss-diretory]\standalone\
+   * [JBoss-diretory]\bin\
+
+   >[!NOTE]
+   >
+   > O local de instalação padrão do JBoss Application Server:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jpatrão/
+
 1. Start o servidor de aplicativos.
 
 **Desativação do servlet de inicialização do Configuration Manager**
@@ -977,7 +996,26 @@ Por padrão, os AEM Forms na instalação chave na JEE configuram uma conta de s
    * Negar logon no local
    * Fazer logon como Serviço (já deve estar definido)
 
-1. Atribua à nova conta de usuário permissões de Leitura e Execução, Gravação, Modificação, Conteúdo da pasta de Lista e Leitura para concluir AEM Forms no diretório de instalação JEE e no diretório Global Documento Armazenamento (GDS). O local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em [JBoss root]/server/[type]/svcnative/DocumentStorage.
+1. Atribua à nova conta de usuário permissões de modificação nos seguintes diretórios:
+   * **Diretório** GDS: O local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de localização permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **Diretório** CRX-Repository: O local padrão é `[AEM-Forms-installation-location]\crx-repository`
+   * **AEM Forms de diretórios** temporários:
+      * (Windows) Caminho TMP ou TEMP conforme definido nas variáveis do ambiente
+      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectadoEm sistemas baseados em UNIX, um usuário não raiz pode usar o seguinte diretório como diretório temporário:
+      * (Linux) /var/tmp ou /usr/tmp
+      * (AIX) /tmp ou /usr/tmp
+      * (Solaris) /var/tmp ou /usr/tmp
+1. Atribua à nova conta de usuário permissões de gravação nos seguintes diretórios:
+   * [JBoss-diretory]\standalone\deployment
+   * [JBoss-diretory]\standalone\
+   * [JBoss-diretory]\bin\
+
+   >[!NOTE]
+   >
+   > O local de instalação padrão do JBoss Application Server:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jpatrão/.
+
 
 1. Start do serviço do servidor de aplicativos.
 
