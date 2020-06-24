@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
+source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
 workflow-type: tm+mt
-source-wordcount: '4345'
+source-wordcount: '4334'
 ht-degree: 2%
 
 ---
@@ -73,6 +73,7 @@ Se você estiver usando um WCM de terceiros (Web Content Manager), é necessári
 >
 >* Você deseja adicionar interatividade à sua imagem, acionando para o Quickviews.
 >* Sua implementação do AEM *não* usa uma estrutura de integração de comércio eletrônico para extrair dados de produtos para o AEM de qualquer solução de comércio eletrônico como IBM Webphere Commerce, Elastic Path, hybris ou Intershop. Consulte Conceitos de [eCommerce em AEM Assets](/help/sites-administering/concepts.md).
+
 >
 >
 Se sua implementação do AEM usar o eCommerce, você poderá ignorar essa tarefa e ir para a próxima tarefa.
@@ -288,6 +289,7 @@ Consulte [(Opcional) Visualização de imagens](#optional-previewing-interactive
 
       * Se você for um cliente do AEM Sites, toque ou clique no ícone Seletor de site (pasta) para navegar até um URL. Observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas de AEM Sites.
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.
+
    Certifique-se de especificar se deseja abrir o link em uma nova guia do navegador (padrão recomendado) ou na mesma guia.
 
    Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
@@ -374,9 +376,9 @@ A integração é tão simples quanto remover a `IMG` tag e substituí-la pelo c
 
 Para aplicar um &quot;recorte&quot; a uma imagem interativa que pode ser comprada para um ambiente responsivo, você pode incluir o atributo de configuração Imagem interativa `ZoomView.iscommand` ao caminho — onde `ZoomView` é o componente a ser chamado e `iscommand` é o comando de serviço de imagem &quot;recortar&quot; aplicado.
 
-Consulte Atributo de configuração [ZoomView.iscommand](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_interactive_image_config_attrib_zoomview_iscommand.html) .
+Consulte Atributo de configuração [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) .
 
-Consulte comando [Recortar](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_crop.html) serviço de imagem.
+Consulte comando [Recortar](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) serviço de imagem.
 
 Agora você está pronto para integrar a imagem interativa com uma exibição rápida existente em seu site.
 
