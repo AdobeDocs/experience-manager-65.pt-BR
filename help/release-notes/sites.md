@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 71%
 
 ---
 
@@ -33,7 +36,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
    * Declarações de variáveis com dados definidos automaticamente:
       `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Parâmetros de controle de lista e repetição: begin, step, end:
+   * Parâmetros de controlo de Lista e repetição: begin, step, end:
       `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identificadores para desvinculação automática de dados:
@@ -73,10 +76,10 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
 ## Fragmentos de conteúdo e editor {#content-fragments-amp-editor}
 
-* Novo painel de [Anotações](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) no Editor de fragmentos de conteúdo para fazer comentários gerais e ver os comentários que fazem no texto (também mostrar no trilho da Linha do tempo)
-* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
-* Adicione [comentários/anotações](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) selecionando o texto na RTE (exibição em tela inteira)
-* [Compare versões](/help/assets/content-fragments-managing.md#comparing-fragment-versions) de um fragmento de conteúdo lado a lado por meio do painel de Referências
+* Novo painel de [Anotações](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) no Editor de fragmentos de conteúdo para fazer comentários gerais e ver os comentários que fazem no texto (também mostrar no trilho da Linha do tempo)
+* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments/content-fragments-models.md) to simple text, rich text or markdown
+* Adicione [comentários/anotações](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) selecionando o texto na RTE (exibição em tela inteira)
+* [Compare versões](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) de um fragmento de conteúdo lado a lado por meio do painel de Referências
 * O Relatório de download de ativos agora mostra fragmentos de conteúdo corretamente
 * Adicione o [suporte de fragmento de conteúdo à API HTTP do Assets](/help/assets/assets-api-content-fragments.md) por meio do /api.json. Há APIs para criar, atualizar, ler e excluir os fragmentos de conteúdo.
 
@@ -114,7 +117,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 >
 >at.js 2.x não é compatível com o AEM no ponto de versão do AEM 6.5. Utilize a versão mais recente do at.js 1.x
 
-* A integração do Adobe Target agora pode usar a API padrão do Target. As versões anteriores do AEM usam a API HTTP do Target Classic, que agora está obsoleta.
+* A integração do Adobe Target agora pode usar a API padrão do Target. As versões anteriores do AEM usam a API HTTP Público alvo Classic, que agora está obsoleta.
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
 * `at.js` a versão 1.5.0 agora está incluída. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
