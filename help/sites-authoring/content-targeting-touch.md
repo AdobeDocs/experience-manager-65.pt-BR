@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6853306d217809e05dbef4968c75bfef9d048f1c
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '5374'
+ht-degree: 79%
 
 ---
 
@@ -40,7 +43,7 @@ As atividades e experiências que você vê no modo de Direcionamento refletem o
 
 >[!NOTE]
 >
->Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, o thirdPartyId não é excluído. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, atribua um nome exclusivo a cada campanha; os nomes de campanha não podem, portanto, ser reutilizados em tipos de campanha diferentes.
+>Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId` a cada campanha. Quando você exclui a campanha no Adobe Target, o thirdPartyId não é excluído. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, nomeie cada campanha como um nome exclusivo; Assim, os nomes de campanhas não podem ser reutilizados em tipos de campanha diferentes.
 >
 >Se você usar o mesmo nome no mesmo tipo de campanha, a campanha existente será substituída.
 >
@@ -118,7 +121,7 @@ Use o procedimento a seguir para iniciar o processo de direcionamento de conteú
 
 >[!NOTE]
 >
->Para usar o processo de definição de metas, você deve ser um membro do grupo de usuários Autores da atividade do Target.
+>Para usar o processo de definição de metas, você deve ser um membro do grupo de usuários Autores da Atividade do Público alvo.
 
 Para adicionar uma atividade:
 
@@ -142,13 +145,13 @@ Depois de [iniciar o processo de direcionamento](/help/sites-authoring/content-t
 
 >[!CAUTION]
 >
->Tenha cuidado ao desabilitar o direcionamento de um componente que já esteja direcionado na instância do autor. A atividade respectiva também será excluída automaticamente da instância de publicação.
+>Tenha cuidado ao desabilitar o direcionamento de um componente que já esteja direcionado na instância do autor. A atividade respectiva também será automaticamente excluída da instância de publicação.
 
 >[!NOTE]
 >
 >Uma oferta é o conteúdo de um componente direcionado.
 
-As experiências são exibidas no painel Públicos. In the following example, experiences include **Default**, **Female**, **Female over 30**, and **Female under 30**. Este exemplo mostra a oferta padrão de um componente de **imagem** direcionado.
+As experiências são exibidas no painel Públicos-alvo. No exemplo a seguir, as experiências incluem **Padrão**, **Feminino**, **Feminino acima de 30** e **Feminino abaixo de 30**. Este exemplo mostra a oferta Padrão de um componente de **Imagem** direcionado.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -156,7 +159,7 @@ Quando uma experiência diferente é selecionada, o componente de imagem mostra 
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-Quando uma experiência é selecionada e o componente direcionado não inclui uma oferta para ela, o componente exibe **Adicionar oferta** sobreposto à oferta padrão semitransparente. Quando nenhuma oferta foi criada para uma experiência, a oferta **Padrão** é exibida para o segmento mapeado à experiência.
+Quando uma experiência é selecionada e o componente de destino não inclui uma oferta para essa experiência, o componente exibe **Adicionar oferta** sobreposta à oferta padrão semitransparente. Quando nenhuma oferta é criada para uma experiência, a oferta **Padrão** é exibida no segmento que está mapeado para a experiência.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
@@ -299,7 +302,7 @@ Se estiver editando o conteúdo direcionado, clique ou toque em **Iniciar o dire
 1. Selecione a experiência para a qual deseja criar a oferta.
 1. Crie a oferta:
 
-   * Para a experiência Padrão, arraste os componentes para a área de destino e edite as propriedades do componente como de costume para criar o conteúdo da oferta.
+   * Para a experiência Padrão, arraste os componentes para a área de destino e edite as propriedades dos componentes como de costume para criar o conteúdo da oferta.
    * Para experiências diferentes do padrão,[ adicione uma oferta personalizada](#adding-a-custom-offer) ou[ uma oferta da biblioteca](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Adicionar uma oferta personalizada {#adding-a-custom-offer}
@@ -345,12 +348,15 @@ Não é possível adicionar ofertas da biblioteca à experiência padrão.
    O seletor de oferta permite procurar ou filtrar as ofertas. Ao navegar ou filtrar, também é possível classificar as ofertas e alterar como você as vê. O número na parte superior direita indica quantas ofertas estão disponíveis na biblioteca atual.
 
    * Click or tap **Browse** to navigate to another folder. O painel de navegação é aberto e você clica na seta para mostrar o detalhamento das pastas. Click or tap **Browse** again to close the navigation pane.
+
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
    * Clique ou toque em **Filtro** para filtrar as ofertas com relação a palavras-chave ou tags. Você digita as palavras-chave e seleciona as tags no menu suspenso. Clique ou toque novamente em **Filtro** para fechar o painel de filtragem.
+
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
    * Altere a forma como você classifica as ofertas clicando ou tocando na seta ao lado de **Do mais novo ao mais antigo**. As ofertas podem ser ordenadas da mais recente para a mais antiga ou da mais antiga para a mais recente.
+
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
    Clique ou toque no ícone ao lado de **Exibir como** para exibir as ofertas como mosaicos ou como uma lista.
@@ -447,7 +453,7 @@ Se estiver usando o Adobe Target como mecanismo de direcionamento:
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-Se estiver usando o Adobe Target como o mecanismo de direcionamento e tiver o A4T do Analytics configurado para a conta, você terá o menu suspenso adicional **Fonte dos relatórios**:
+Se estiver usando o Adobe Target como mecanismo de direcionamento e tiver o A4T Analytics configurado para a conta, terá um menu suspenso **Fonte de relatórios** adicional:
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
@@ -459,15 +465,15 @@ As seguintes métricas de sucesso estão disponíveis (usadas somente para publi
    <td><strong>Conversão</strong></td>
    <td><p>A porcentagem de visitantes que clicaram em qualquer parte da experiência que está sendo testada. Uma conversão pode ser contada uma vez por visitante ou cada vez que um visitante conclui uma conversão. A métrica de conversão é definida como uma das seguintes opções:</p>
     <ul>
-     <li><strong>Exibida uma página</strong> - você pode definir que página o público-alvo visualizou selecionando o <strong>URL e, em seguida, definindo o URL ou vários URLs, ou selecionando o</strong> URL contém <strong></strong> e, em seguida, adicionando um caminho ou uma palavra-chave.</li>
-     <li><strong>Exibida uma mbox</strong> - você pode definir qual mbox seu público-alvo visualizou digitando o nome da mbox. You can enter multiple mboxes by clicking <strong>Add an Mbox</strong>.</li>
+     <li><strong>Exibida uma página</strong> - você pode definir que página a audiência visualizada selecionando o <strong>URL e, em seguida, definindo o URL ou vários URLs, ou selecionando</strong> URL contém <strong></strong> e, em seguida, adicionando um caminho ou uma palavra-chave.</li>
+     <li><strong>Exibida uma mbox</strong> - você pode definir qual mbox sua audiência exibiu digitando o nome da mbox. You can enter multiple mboxes by clicking <strong>Add an Mbox</strong>.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Receita</strong></td>
    <td><p>Receita gerada pela visita. Você pode escolher entre as seguintes métricas de receita:</p>
     <ul>
-     <li>Receita por visitante (RPV)</li>
+     <li>Receita por Visitante (RPV)</li>
      <li>Valor médio de pedido (AOV)</li>
      <li>Total de vendas </li>
      <li>Pedidos</li>
@@ -524,7 +530,7 @@ Use as configurações avançadas para determinar o que acontece **depois** que 
  </tbody>
 </table>
 
-Consulte a [documentação do Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) para obter mais informações sobre a métrica de sucesso.
+Consulte a [documentação do Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) para obter mais informações sobre a métrica de sucesso.
 
 ### Definição das configurações (direcionamento do AEM) {#configuring-settings-aem-targeting}
 
@@ -533,7 +539,7 @@ Para definir se o direcionamento do AEM deve ser usado:
 1. Para especificar quando a atividade começa, use o menu suspenso **Início** para selecionar um dos seguintes valores:
 
    * **Quando ativado**: a atividade começa quando a página que contém o conteúdo direcionado é ativada.
-   * **Data e hora especificada**: um momento específico. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para começar a atividade.
+   * **Data e hora especificada**: um momento específico. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para iniciar a atividade.
 
 1. Para especificar quando a atividade termina, use o menu suspenso **Fim** para selecionar um dos seguintes valores:
 
@@ -549,7 +555,7 @@ Para definir metas e configurações usando o Adobe Target:
 1. Para especificar quando a atividade começa, use o menu suspenso **Início** para selecionar um dos seguintes valores:
 
    * **Quando ativado**: a atividade começa quando a página que contém o conteúdo direcionado é ativada.
-   * **Data e hora especificada**: um momento específico. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para começar a atividade.
+   * **Data e hora especificada**: um momento específico. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para iniciar a atividade.
 
 1. Para especificar quando a atividade termina, use o menu suspenso **Fim** para selecionar um dos seguintes valores:
 
@@ -557,19 +563,19 @@ Para definir metas e configurações usando o Adobe Target:
    * **Data e hora especificada**: um horário específico. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para concluir a atividade.
 
 1. Para especificar uma prioridade para a atividade, use o controle deslizante e selecione **Baixa**, **Normal** ou **Alta**.
-1. Se tiver configurado o Adobe Anaytics com sua conta do Adobe Target, você verá o menu suspenso **Fonte dos relatórios**. Selecione **Adobe Target** ou **Adobe Analytics** como origem.
+1. Se tiver configurado o Adobe Anaytics com sua conta do Adobe Target, você verá o menu suspenso **Fonte dos relatórios**. Selecione **Adobe Target** ou **Adobe Analytics** como a fonte.
 
    Se você selecionar **Adobe Analytics**, selecione a empresa e o conjunto de relatórios. Se você selecionar **Adobe Target**, nenhuma ação será necessária.
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. Na área **Métrica de meta**, em **Minha meta principal**, selecione a métrica de sucesso que deseja rastrear (Conversão, Receita, Envolvimento) e informe como essa métrica é medida (ou qual ação o público toma para indicar que a meta foi atingida). Consulte a definição das métricas de meta na tabela anterior, bem como a [documentação do Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) sobre métricas de sucesso.
+1. Na área **Métrica de meta**, em **Meu objetivo principal**, selecione a métrica de sucesso que deseja rastrear - Conversão, Receita, Participação - e insira como essa métrica é medida (ou que ação o público-alvo executa para indicar que um objetivo foi atingido). Consulte a definição das métricas de objetivo na tabela anterior e consulte a [documentação do Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sobre métricas de sucesso.
 
-   É possível renomear a meta clicando nas reticências no canto superior direito e selecionando **Renomear**.
+   Você pode renomear a meta ao clicar nos três pontos no canto superior direito e selecionar **Renomear**.
 
-   Se precisar substituir todos os campos, clique nas reticências no canto superior direito e selecione **Limpar todos os campos**.
+   Se precisar limpar todos os campos, clique nos três pontos no canto superior direito e selecione **Limpar todos os campos**.
 
-   Todas as métricas também possuem configurações avançadas que você pode definir. Selecione **Configurações avançadas** para acessá-las. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html).
+   Todas as métricas também possuem configurações avançadas que você pode definir. Selecione **Configurações avançadas** para acessá-las. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    Você deve ter, pelo menos, uma meta definida.
@@ -656,11 +662,11 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
   </tr>
   <tr>
    <td><strong>Local</strong></td>
-   <td><p>O local é uma string que dá um nome ao local do conteúdo direcionado e conecta ofertas a locais (ou locais ou componentes) na página onde essas ofertas devem ser colocadas.</p> <p>Este campo é um valor genérico.</p> <p>Se você adicionar uma oferta a um componente, ela se lembrará da ID de localização. Quando a página é executada, o mecanismo avalia os segmentos do usuário e, com base nisso, resolve as experiências a partir das campanhas ativas que devem ser exibidas. Em seguida, verifica as IDs de localização na página e tenta corresponder ofertas com essas IDs de localização.</p> </td>
+   <td><p>O local é uma string que dá um nome ao local do conteúdo direcionado e conecta as ofertas a locais (ou locais ou componentes) na página onde essas ofertas devem ser colocadas.</p> <p>Este campo é um valor genérico.</p> <p>Se você adicionar uma oferta a um componente, ela se lembrará da ID de localização. Quando a página é executada, o mecanismo avalia os segmentos do usuário e, com base nisso, resolve as experiências a partir das campanhas ativas que devem ser exibidas. Em seguida, verifica as IDs de localização na página e tenta corresponder ofertas com essas IDs de localização.</p> </td>
   </tr>
   <tr>
    <td><strong>Mecanismo</strong></td>
-   <td>Selecione entre Regras do lado do <strong>cliente (sem rastreamento), Adobe Target, ContextHub </strong>e<strong> Adobe Campaign </strong>dependendo do mecanismo que você deseja usar.</td>
+   <td>Selecione entre Regras do lado do <strong>cliente (sem rastreamento), Adobe Target, ContextHub </strong>e<strong> Adobe Campaign, </strong>dependendo do mecanismo que você deseja usar.</td>
   </tr>
  </tbody>
 </table>
@@ -677,7 +683,7 @@ Se você selecionar Adobe Target como mecanismo:
   </tr>
   <tr>
    <td><strong>Destinação exata</strong></td>
-   <td><p>Habilitar a definição de metas precisa indica ao componente que aguarde até que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong></strong> Observação: A ativação ou desativação de direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente.</p> </td>
+   <td><p>Habilitar a definição de metas precisa indica ao componente que aguarde até que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Observação:</strong> A ativação ou desativação de direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente.</p> </td>
   </tr>
   <tr>
    <td><strong>Incluir segmentos resolvidos</strong></td>
@@ -685,15 +691,15 @@ Se você selecionar Adobe Target como mecanismo:
   </tr>
   <tr>
    <td><strong>Parâmetros herdados de contexto</strong></td>
-   <td>Lista os parâmetros de contexto herdados da estrutura do Adobe Target, se houver, associados à página selecionada.</td>
+   <td>Parâmetros de contexto do Lista herdados da estrutura Adobe Target, se houver, associados à página selecionada.</td>
   </tr>
   <tr>
    <td><strong>Parâmetros de contexto</strong></td>
-   <td>Clique ou toque em <strong>Adicionar campo</strong> para configurar parâmetros de contexto adicionais (o mesmo que está disponível na estrutura do Target). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
+   <td>Clique ou toque em <strong>Adicionar campo</strong> para configurar parâmetros de contexto adicionais (o mesmo que está disponível na estrutura do Público alvo). Context parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added context parameters directly to the framework.</td>
   </tr>
   <tr>
    <td><strong>Params estáticos</strong></td>
-   <td>Clique ou toque em <strong>Adicionar campo</strong> para configurar parâmetros estáticos adicionais (o mesmo que está disponível na estrutura do Target). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. Os parâmetros estáticos não provêm do contexto (contexto do cliente do content hub).</td>
+   <td>Clique ou toque em <strong>Adicionar campo</strong> para configurar parâmetros estáticos adicionais (o mesmo que está disponível na estrutura do Público alvo). Static parameters added to the component apply <i>only</i> to the component and not to other component as would be the case if you added static parameters directly to the framework. Os parâmetros estáticos não provêm do contexto (contexto do cliente do content hub).</td>
   </tr>
  </tbody>
 </table>
@@ -715,7 +721,7 @@ Se você selecionar Client Context (lado do cliente) como mecanismo:
    <td><strong>Opções do lado do cliente - Estratégia</strong></td>
    <td><p>Selecione uma das seguintes opções:</p>
     <ul>
-     <li><strong>Primeiro</strong>: A experiência mais alta da lista, conforme ordenada na campanha.</li>
+     <li><strong>Primeiro</strong>: A experiência mais alta na lista, conforme ordenado na campanha.</li>
      <li><strong>Aleatório</strong>: Qualquer experiência é usada.</li>
      <li><strong>Pontuação</strong>da sequência de cliques: As tags e as ocorrências de tags relacionadas que são rastreadas no contexto do cliente são usadas. As taxas de ocorrência de tags definidas na página de teaser são comparadas.</li>
     </ul> </td>
