@@ -1,8 +1,8 @@
 ---
 title: Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets
 seo-title: Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets
-description: Saiba mais sobre o suporte a fragmentos de conteúdo na API HTTP dos ativos AEM.
-seo-description: Saiba mais sobre o suporte a fragmentos de conteúdo na API HTTP dos ativos AEM.
+description: Saiba mais sobre o suporte a fragmentos de conteúdo na API HTTP do AEM Assets.
+seo-description: Saiba mais sobre o suporte a fragmentos de conteúdo na API HTTP do AEM Assets.
 uuid: c500d71e-ceee-493a-9e4d-7016745c544c
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 3%
@@ -42,7 +42,7 @@ Por exemplo, aplicativos de página única (SPA), baseados em estrutura ou perso
 
 Embora os componentes principais do AEM ofereçam uma API abrangente, flexível e personalizável que possa atender às operações de Leitura necessárias para essa finalidade, e cuja saída JSON possa ser personalizada, eles exigem o know-how WCM do AEM (Gestão de conteúdo da Web) para implementação, pois devem ser hospedados em páginas (API) baseadas em modelos dedicados do AEM. Nem todas as organizações de desenvolvimento da ZPE têm acesso a esses recursos.
 
-É quando a API REST de ativos pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem precisar primeiro incorporá-los em uma página e entregar seu conteúdo em formato JSON serializado. (Observe que não é possível personalizar a saída JSON da API REST de ativos). A API REST de ativos também permite que os desenvolvedores modifiquem o conteúdo, criando novos ativos, atualizando ou excluindo ativos, fragmentos de conteúdo e pastas existentes.
+É quando a API REST de ativos pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem precisar primeiro incorporá-los em uma página e entregar seu conteúdo em formato JSON serializado. (Observe que não é possível personalizar a saída JSON da API REST de ativos). A API REST de ativos também permite que os desenvolvedores modifiquem o conteúdo - criando novos ativos, atualizando ou excluindo ativos, fragmentos de conteúdo e pastas existentes.
 
 A API REST de ativos:
 
@@ -63,7 +63,7 @@ O método HTTP determina a operação a ser executada:
 * **GET** - para recuperar uma representação JSON de um ativo ou pasta
 * **POST** - para criar novos ativos ou pastas
 * **PUT** - para atualizar as propriedades de um ativo ou pasta
-* **EXCLUIR** - para excluir um ativo ou pasta
+* **DELETE** - para excluir um ativo ou pasta
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Em ambientes com requisitos de autenticação específicos, o OAuth é recomenda
 
 ## Recursos disponíveis {#available-features}
 
-Fragmentos de conteúdo são um tipo específico de Ativo, consulte [Trabalhar com fragmentos](/help/assets/content-fragments.md)de conteúdo.
+Fragmentos de conteúdo são um tipo específico de Ativo, consulte [Trabalhar com fragmentos](/help/assets/content-fragments/content-fragments.md)de conteúdo.
 
 Para obter mais informações sobre os recursos disponíveis por meio da API, consulte:
 
@@ -199,7 +199,7 @@ Os ativos podem ter várias representações. Normalmente, são expostos como en
 
 ### Fragmentos de conteúdo {#content-fragments}
 
-Um fragmento [de](/help/assets/content-fragments.md) conteúdo é um tipo especial de ativo. Eles podem ser usados para acessar dados estruturados, como textos, números, datas, entre outros.
+Um fragmento [de](/help/assets/content-fragments/content-fragments.md) conteúdo é um tipo especial de ativo. Eles podem ser usados para acessar dados estruturados, como textos, números, datas, entre outros.
 
 Como há várias diferenças nos ativos *padrão* (como imagens ou áudio), algumas regras adicionais se aplicam ao seu manuseio.
 
@@ -238,7 +238,7 @@ O uso pode ser diferente se você estiver usando um autor ou ambiente de publica
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte a Referência [da](/help/assets/assets-api-content-fragments.md#api-reference)API. Especificamente, [Adobe Experience Manager Assets API - Fragmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)de conteúdo.
+>Para obter mais detalhes, consulte a Referência [da](/help/assets/assets-api-content-fragments.md#api-reference)API. Especificamente, a API [Adobe Experience Manager Assets - Fragmentos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)de conteúdo.
 
 ### Leitura/Delivery {#read-delivery}
 
@@ -281,7 +281,7 @@ O uso é feito via:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitações         {#limitations}
+## Limitações          {#limitations}
 
 Há algumas limitações:
 
@@ -367,7 +367,7 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
 Consulte aqui para obter referências detalhadas da API:
 
-* [API de ativos do Adobe Experience Manager - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 
    * [Recursos disponíveis](/help/assets/mac-api-assets.md#available-features)
