@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '5474'
+source-wordcount: '5473'
 ht-degree: 1%
 
 ---
@@ -571,7 +571,7 @@ Especificamente, você configura o formato de arquivo aceito por tipo MIME na á
 
    Por exemplo, `psprocess="rasterize"&psresolution=120` .
 
-   Consulte a API [do Sistema de Produção de Imagem Clássica da](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/) Adobe Dynamic Media para obter parâmetros adicionais de trabalho de upload que você pode usar.
+   Consulte a API [do Sistema de Produção de Imagem Clássica da](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html) Adobe Dynamic Media para obter parâmetros adicionais de trabalho de upload que você pode usar.
 
    >[!NOTE]
    >
