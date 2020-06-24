@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
-source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
+source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
 
 Fragmentos de conteúdo permitem criar conteúdo neutro ao canal, juntamente com variações (possivelmente específicas ao canal). **We.Retail** (conforme disponível em uma instância predefinida do AEM) fornece o fragmento Surfing no **Ártico em Lofoten** como uma amostra básica. Isto ilustra que:
 
-* Os fragmentos do conteúdo do Adobe Experience Manager (AEM) [são criados e gerenciados como ativos independentes da página](/help/assets/content-fragments.md). Eles permitem criar um conteúdo neutro ao canal, juntamente com variações (possivelmente, específicas do canal).
+* Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments/content-fragments.md). Eles permitem criar um conteúdo neutro ao canal, juntamente com variações (possivelmente, específicas do canal).
 
    * Consulte [Onde localizar ativos de fragmento de conteúdo no We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -37,6 +40,7 @@ Para obter a documentação completa sobre como criar, gerenciar, usar e desenvo
 >
 >* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
+
 >
 >
 Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
@@ -57,13 +61,13 @@ Você pode selecionar e editar o fragmento Surfing no **Ártico no Lofoten** :
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Aqui, você pode [editar e gerenciar](/help/assets/content-fragments.md) o fragmento usando as guias (painel do lado esquerdo):
+Aqui, você pode [editar e gerenciar](/help/assets/content-fragments/content-fragments.md) o fragmento usando as guias (painel do lado esquerdo):
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variações](/help/assets/content-fragments-variations.md)**incluindo[marcação](/help/assets/content-fragments-markdown.md)
-* **[Conteúdo associado](/help/assets/content-fragments-assoc-content.md)**
-* **[Metadados](/help/assets/content-fragments-metadata.md)**
+* **[Variações](/help/assets/content-fragments/content-fragments-variations.md)**incluindo[marcação](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md)**
+* **[Metadados](/help/assets/content-fragments/content-fragments-metadata.md)**
 
 ![cf-46](assets/cf-46.png)
 
@@ -85,7 +89,7 @@ Por exemplo, o fragmento de conteúdo Navegação **Ártico no Lofoten** é refe
 
 Para obter mais detalhes, consulte:
 
-* [Trabalhar com fragmentos de conteúdo](/help/assets/content-fragments.md)
+* [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 
    * Saiba como criar, editar e gerenciar seus ativos de Fragmento de conteúdo.
 
