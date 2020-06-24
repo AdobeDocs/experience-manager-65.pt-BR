@@ -10,7 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1706'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +26,7 @@ Saiba como integrar os recursos de curadoria líderes do setor do Livefyre à su
 
 ### Instalar o pacote Livefyre para o AEM {#install-livefyre-package-for-aem}
 
-O AEM 6.5 vem com o pacote de recursos 1.2.6 do Livefyre pré-instalado. Este pacote inclui apenas uma integração limitada do Livefyre com o AEM Sites e deve ser desinstalado antes da instalação de um pacote atualizado. Com o pacote mais recente, você pode experimentar a integração total do Livefyre com o AEM, incluindo sites, ativos e comércio.
+O AEM 6.5 vem com o pacote de recursos 1.2.6 do Livefyre pré-instalado. Este pacote inclui apenas uma integração limitada do Livefyre com AEM Sites e deve ser desinstalado antes da instalação de um pacote atualizado. Com o pacote mais recente, você pode experimentar a integração total do Livefyre com o AEM, incluindo sites, ativos e comércio.
 
 >[!NOTE]
 >
@@ -44,12 +47,12 @@ O AEM 6.5 vem com o pacote de recursos 1.2.6 do Livefyre pré-instalado. Este pa
 
    ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
 
-1. Na página de informações do pacote de recursos, clique em **Download**, leia o Contrato de licença do pacote e clique em **Aceitar**.
+1. Na página de informações do pacote de recursos, clique em **Download**, depois leia o Contrato de licença do pacote e clique em **Aceitar**.
 1. Retorne ao Gerenciador de pacotes, localize o pacote recém-baixado e clique em **Instalar**.
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
-   Seu pacote Livefyre-AEM está instalado agora. Antes de começar a usar os recursos de integração, configure o AEM para usar o Livefyre.
+   Seu pacote Livefyre-AEM está instalado agora. Antes de começar a usar os recursos de integração, você deve configurar o AEM para usar o Livefyre.
 
    Para obter mais informações sobre pacotes, consulte [Como trabalhar com pacotes](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html).
 
@@ -94,7 +97,7 @@ Configure o AEM para usar as credenciais de licença do Livefyre de sua organiza
 
 ### Personalizar a integração de logon único {#customize-single-sign-on-integration}
 
-O pacote Livefyre para AEM inclui uma integração predefinida entre os perfis do AEM Communities e o serviço SSO do Livefyre.
+O pacote Livefyre para AEM inclui uma integração predefinida entre perfis AEM Communities e o serviço SSO da Livefyre.
 
 Quando os usuários fazem logon em seu site do AEM, eles também são conectados aos componentes sociais do Livefyre. Quando um usuário desconectado tenta usar um recurso do componente Livefyre que requer autenticação (como fazer upload de uma foto), o componente Livefyre inicia a autenticação do usuário.
 
@@ -107,13 +110,13 @@ A integração de autenticação padrão pode não ser perfeita para todos os si
 
    Para obter mais informações sobre os Clientlibs do AEM, consulte [Uso de bibliotecas](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html)do lado do cliente.
 
-## Usar o Livefyre com o AEM Sites {#use-livefyre-with-aem-sites}
+## Utilize Livefyre com AEM Sites {#use-livefyre-with-aem-sites}
 
 ### Adicionar componentes do Livefyre a uma página {#add-livefyre-components-to-a-page}
 
 Antes de adicionar componentes do Livefyre a uma página no Sites, é necessário ativar o Livefyre para a página ao herdar uma configuração da nuvem do Livefyre de uma página principal ou ao adicionar a configuração diretamente à página. Consulte sua implementação para saber como incluir serviços em nuvem no site.
 
-Assim que o Livefyre for ativado para a página, os contêineres deverão ser configurados para permitir componentes do Livefyre. Consulte [Configuração de componentes no Modo](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/default-components-designmode.html) de design para obter instruções sobre como ativar diferentes componentes.
+Assim que o Livefyre for ativado para a página, os container deverão ser configurados para permitir componentes do Livefyre. Consulte [Configuração de componentes no Modo](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/default-components-designmode.html) de design para obter instruções sobre como ativar diferentes componentes.
 
 >[!NOTE]
 >
@@ -139,17 +142,17 @@ Você só pode configurar e editar um componente Livefyre no Livefyre Studio. Do
 1. Click **To edit this component, go to Livefyre Studio**.
 1. Edite o aplicativo no Livefyre Studio.
 
-## Usar o Livefyre com ativos AEM {#use-livefyre-with-aem-assets}
+## Utilize Livefyre com AEM Assets {#use-livefyre-with-aem-assets}
 
-### Solicitar direitos e importar UGC para os ativos AEM {#request-rights-and-import-ugc-into-aem-assets}
+### Direitos de solicitação e importar UGC para AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
 
-Você pode importar conteúdo gerado pelo usuário (UGC) do Twitter e do Instagram do Livefyre Studio para os ativos AEM usando o Importador UGC. Depois de selecionar o conteúdo a ser importado, você deve solicitar direitos para o conteúdo antes que a importação possa ser concluída.
+Você pode importar conteúdo gerado pelo usuário (UGC) do Twitter e do Instagram do Livefyre Studio para AEM Assets usando o Importador UGC. Depois de selecionar o conteúdo a ser importado, você deve solicitar direitos para o conteúdo antes que a importação possa ser concluída.
 
 >[!NOTE]
 >
->Antes de usar os Ativos para importar o UGC, você deve configurar contas de Contas sociais e Solicitações de direitos no Livefyre Studio. Consulte [Configuração: Solicitações](https://marketing.adobe.com/resources/help/en_US/livefyre/c_how_requesting_rights_works.html) de direitos para obter mais informações.
+>Antes de usar os Ativos para importar o UGC, você deve configurar contas de Contas sociais e Solicitações de direitos no Livefyre Studio. Consulte [Configuração: Solicitações](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) de direitos para obter mais informações.
 
-Para importar o UGC para os ativos AEM:
+Para importar UGC para AEM Assets:
 
 1. Na página inicial do AEM, navegue até **Ativos > Arquivos**.
 1. Clique em **Criar** e em **Importar UGC.**
@@ -158,7 +161,7 @@ Para importar o UGC para os ativos AEM:
 
 1. Localizar conteúdo:
 
-   * No Livefyre, clique na guia Biblioteca UGC. Use os filtros e pesquise para localizar conteúdo da Biblioteca UGC.
+   * No Livefyre, clique na guia Biblioteca UGC. Use os filtros e pesquise para encontrar conteúdo da Biblioteca UGC.
    * No Twitter e no Instagram, clicando na guia Twitter ou Instagram. Use a pesquisa ou os filtros para localizar conteúdo.
 
 1. Selecione os ativos que deseja importar. Os ativos selecionados são contados e salvos automaticamente na guia **Selecionados** .
@@ -173,6 +176,7 @@ Para importar o UGC para os ativos AEM:
 
    * **Solicite manualmente direitos** para obter uma mensagem que possa ser copiada, colada e enviada manualmente para os proprietários de conteúdo por meio do Instagram.
    * **Atribua manualmente direitos** de conteúdo para substituir os direitos de ativos individuais.
+
    >[!NOTE]
    >
    >Devido a atualizações que afetam a agregação de conteúdo de contas de usuários não comerciais, não podemos mais postar comentários em seu nome ou verificar automaticamente as respostas do autor. [Clique aqui para saber mais](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
@@ -197,7 +201,7 @@ Para importar o UGC para os ativos AEM:
 
 1. Clique em **Concluído** no canto superior direito para concluir o fluxo de trabalho da Solicitação de direitos.
 
-   Você pode ver o status de uma Solicitação de direitos pendente para um ativo no Livefyre Studio. Se o conteúdo estiver pendente de uma solicitação de direitos, o ativo não será exibido nos ativos AEM até que os direitos sejam concedidos. O ativo aparece automaticamente nos ativos AEM quando uma solicitação de direitos é concedida.
+   Você pode ver o status de uma Solicitação de direitos pendente para um ativo no Livefyre Studio. Se o conteúdo estiver pendente de uma solicitação de direitos, o ativo não será exibido em AEM Assets até que os direitos sejam concedidos. O ativo aparece automaticamente no AEM Assets quando uma Solicitação de direitos é concedida.
 
    Para o Instagram, você deve rastrear a resposta do proprietário do conteúdo e conceder direitos manualmente se receber direitos sobre o conteúdo.
 
@@ -213,10 +217,10 @@ Depois de importar o catálogo de produtos, os produtos são exibidos em tempo r
 1. Na página inicial do AEM, navegue até **AEM Commerce**.
 1. Crie uma nova coleção ou use uma coleção existente.
 1. Passe o mouse sobre a coleção e clique em Propriedades **da** coleção (ícone de lápis).
-1. Marque **Sincronizar com Livefyre**.
+1. Marque **Sync (Sincronizar) para Livefyre**.
 1. Preencha o prefixo **da página do** Livefyre para vincular essa coleção a uma página específica do AEM.
 
-   O prefixo da página define o caminho raiz no ambiente onde a pesquisa por páginas de produtos começa. O Livefyre escolhe a primeira página que tem um produto correspondente associado ao mesmo. Para obter páginas diferentes para produtos diferentes, são necessárias várias coleções.
+   O prefixo da página define o caminho raiz no seu ambiente onde a pesquisa por páginas de produtos começa. O Livefyre escolhe a primeira página que tem um produto correspondente associado ao mesmo. Para obter páginas diferentes para produtos diferentes, são necessárias várias coleções.
 
 ## Matriz de suporte do AEM para aplicativos do Livefyre {#aem-support-matrix-for-livefyre-apps}
 
