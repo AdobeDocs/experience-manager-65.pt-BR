@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
 source-wordcount: '4345'
 ht-degree: 2%
@@ -56,9 +56,10 @@ Consulte [(Opcional) Criação de uma predefinição](/help/assets/managing-view
 Consulte [Carregar um banner](#uploading-an-image-banner)de imagem.
 
 1. **Adicionar pontos de acesso a um banner** de imagem - Adicione um ou mais pontos de acesso a um banner de imagem e associe cada um a uma ação, como um hiperlink, uma visualização rápida ou um fragmento de experiência. Depois de adicionar pontos de acesso, você concluirá essa tarefa publicando a imagem interativa.
-Consulte [Adicionar pontos de acesso a um banner](#adding-hotspots-to-an-image-banner)de imagem.
-Consulte [Visualizar imagens](#optional-previewing-interactive-images) interativas - Opcional. Se desejar, você pode visualização uma representação do banner que pode ser comprado e testar sua interatividade.
-Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de imagem interativos.
+
+   * Consulte [Adicionar pontos de acesso a um banner](#adding-hotspots-to-an-image-banner)de imagem.
+   * Consulte [Visualizar imagens](#optional-previewing-interactive-images) interativas - Opcional. Se desejar, você pode visualização uma representação do banner que pode ser comprado e testar sua interatividade.
+   * Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de imagem interativos.
 
 1. **Adicionando uma imagem interativa ao seu site ou ao seu site no AEM** Se você usar o AEM Sites, o eCommerce do AEM ou ambos, poderá adicionar a imagem interativa diretamente a uma página da Web no AEM arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Se você usar o AEM Assets e o Dynamic Media de forma independente, é necessário copiar o código incorporado em seu site e, em seguida, integrá-lo ao seu Quickview existente. Consulte [Integrar uma imagem interativa ao seu site](#integrating-an-interactive-image-with-your-website).
@@ -82,7 +83,7 @@ Quando você adiciona pontos de acesso a uma imagem de banner no AEM Assets, é 
 
 É importante identificar corretamente o número e o tipo de variáveis a serem associadas aos dados dos pontos de conexão. Cada ponto de conexão adicionado a uma imagem de banner deve ter informações suficientes para identificar inequivocamente o produto no sistema de backend existente.
 
-Existem diferentes maneiras de identificar um conjunto de variáveis a serem usadas para dados de pontos de conexão.
+Há diferentes maneiras de identificar um conjunto de variáveis a serem usadas para dados de pontos de conexão.
 
 Às vezes, pode ser suficiente consultar especialistas de TI responsáveis pela implementação atual do Quickview, já que eles provavelmente saberão qual é o conjunto mínimo de dados necessário para identificar o Quickview no sistema. No entanto, na maioria dos casos, é possível simplesmente analisar o comportamento existente do código front-end.
 
