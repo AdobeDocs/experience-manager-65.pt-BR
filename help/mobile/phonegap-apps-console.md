@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '2638'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ O processo de desenvolvimento de aplicativos móveis do AEM reconhece que usuár
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
-As informações sobre como executar as tarefas do Marketer são exibidas nesta página. Para obter informações sobre as tarefas do desenvolvedor, consulte Criação de aplicativos PhoneGap.
+As informações sobre como executar as tarefas do profissional de marketing são exibidas nessa página. Para obter informações sobre as tarefas de desenvolvedor, consulte Criação de aplicativos PhoneGap.
 
 ## A estrutura dos aplicativos móveis {#the-structure-of-mobile-applications}
 
@@ -33,7 +36,7 @@ O AEM Mobile fornece o plano do aplicativo Phonegap para criar aplicativos móve
 
 * A página raiz.
 * As variações de idioma do aplicativo.
-* A página inicial da variação de idioma.
+* O home page da variação de idioma.
 
 ### A raiz de um aplicativo Phonegap {#the-root-of-a-phonegap-app}
 
@@ -47,38 +50,38 @@ A página raiz é armazenada abaixo da propriedade Caminho de destino do aplicat
 
 As primeiras páginas secundárias da página raiz são as variações de idioma do aplicativo. O nome de cada página é o idioma para o qual o aplicativo é criado. Por exemplo, inglês é o nome da variação em inglês do aplicativo.
 
-**** Observação: O modelo padrão do PhoneGap cria somente um aplicativo em inglês. Seu desenvolvedor pode modificar o blueprint para que possa criar mais variações de idioma.
+**Observação:** O modelo padrão do PhoneGap cria somente um aplicativo em inglês. Seu desenvolvedor pode modificar o blueprint para que possa criar mais variações de idioma.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
 A página de idioma tem dois objetivos:
 
-* O conteúdo da página é a página de falhas da variação de idioma do aplicativo.
-* As propriedades da página controlam vários aspectos de design do aplicativo, como o URL a ser usado para solicitar atualizações de conteúdo, e informações sobre a conexão com a criação da nuvem e a integração dos Serviços do Adobe Analytics.
+* O conteúdo da página é a página de falhas para a variação de idioma do aplicativo.
+* As propriedades da página controlam vários aspectos de design do aplicativo, como o URL a ser usado para solicitar atualizações de conteúdo, e informações sobre a conexão com a criação da nuvem e a integração dos Serviços Analytics da Adobe.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### A Página Inicial {#the-home-page}
+### O Home page {#the-home-page}
 
-A página inicial ou a página index.html de uma variação de idioma de um aplicativo é exibida quando o aplicativo é aberto.A página inicial fornece aos usuários um menu de links para várias páginas no aplicativo. O sistema de parágrafo permite que você adicione componentes à página para criar conteúdo.
+A página Home page ou index.html de uma variação de idioma de um aplicativo é exibida quando o aplicativo é aberto. O home page fornece aos usuários um menu de links para várias páginas no aplicativo. O sistema de parágrafo permite que você adicione componentes à página para criar conteúdo.
 
 ## Criação de um aplicativo móvel {#creating-a-mobile-application}
 
-Os aplicativos móveis são baseados em um plano que define uma estrutura de página e propriedades. Você pode configurar as seguintes propriedades do aplicativo:
+Os aplicativos móveis são baseados em um plano que define a estrutura e as propriedades da página. Você pode configurar as seguintes propriedades do aplicativo:
 
-* **** Título: O título do aplicativo.
-* **** Caminho de destino: O local no repositório onde o aplicativo é armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
+* **Título:** O título do aplicativo.
+* **Caminho de destino:** O local no repositório onde o aplicativo é armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
 
-* **** Nome: O valor padrão é o valor da propriedade Title com caracteres de espaço removidos. O nome é usado no CQ para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
-* **** Descrição: Uma descrição do aplicativo.
-* **** URL do servidor: O URL que fornece atualizações de conteúdo OTA (Over-the-Air) ao aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço externalizador). Observe que essa deve ser uma instância do servidor de publicação em vez de um autor, o que requer autenticação.
+* **Nome:** O valor padrão é o valor da propriedade Title com caracteres de espaço removidos. O nome é usado no CQ para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
+* **Descrição:** Uma descrição do aplicativo.
+* **URL do servidor:** O URL que fornece atualizações de conteúdo OTA (Over-the-Air) ao aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço externalizador). Observe que essa deve ser uma instância do servidor de publicação em vez de um autor, o que requer autenticação.
 
 Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração do PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem é usada apenas como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
 
-Existem guias adicionais (e opcionais) para criar o serviço em nuvem e integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
+Existem guias adicionais (e opcionais) para criar o serviço em nuvem e integrar o plug-in do SDK do Adobe Mobile Services ao seu aplicativo.
 
-* Criar: Clique em gerenciar configurações e configure seu serviço de compilação.phonegap.com aqui. Em seguida, na lista suspensa, você poderá selecionar o serviço de nuvem de construção PhoneGap recém-criado.
-* Analytics: Clique em gerenciar configurações e configure o serviço em nuvem SDK [do](https://marketing.adobe.com/developer/en_US/get-started/mobile/c-measuring-mobile-applications) Adobe Mobile Services. Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
+* Compilação: Clique em gerenciar configurações e configure seu serviço de compilação.phonegap.com aqui. Em seguida, na lista suspensa, você poderá selecionar o serviço de nuvem de construção PhoneGap recém-criado.
+* Analytics: Clique em gerenciar configurações e configure o serviço em nuvem SDK [do](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) Adobe Mobile Services. Em seguida, na lista suspensa, você poderá selecionar o Mobile Service recém-criado para integrar ao seu aplicativo móvel.
 
 >[!NOTE]
 >
@@ -110,7 +113,7 @@ Depois de criar um aplicativo móvel, você pode alterar as propriedades.
 #### Alterar o título, a descrição e o ícone {#change-the-title-description-and-icon}
 
 1. No painel, clique ou toque em Aplicativos.
-1. Selecione o aplicativo a ser configurado e clique no ícone Exibir propriedades da página.
+1. Selecione o aplicativo a ser configurado e clique no ícone Propriedades da página de Visualização.
 
    ![](do-not-localize/chlimage_1-8.png)
 
@@ -125,7 +128,7 @@ Depois de criar um aplicativo móvel, você pode alterar as propriedades.
 #### Configurar uma variação de idioma do aplicativo {#configure-a-language-variation-of-the-application}
 
 1. No painel, clique ou toque em Aplicativos.
-1. Clique para detalhar o aplicativo móvel que deseja editar no console de administração de aplicativos. Selecione a versão do idioma do aplicativo a ser configurado e clique no ícone Exibir propriedades do aplicativo.
+1. Clique para detalhar o aplicativo móvel que deseja editar no console de administração de aplicativos. Selecione a versão do idioma do aplicativo a ser configurado e clique no ícone Propriedades do aplicativo de Visualização.
 
    ![](do-not-localize/chlimage_1-11.png)
 
@@ -142,8 +145,8 @@ Depois de criar um aplicativo móvel, você pode alterar as propriedades.
 Depois de criar o aplicativo móvel, adicione o conteúdo que é usado como a interface do usuário do aplicativo.
 
 1. No painel, clique ou toque em Aplicativos.
-1. Clique ou toque no aplicativo e em inglês.
-1. Edite a página inicial ou adicione páginas secundárias conforme necessário.
+1. Clique ou toque no aplicativo e, em seguida, clique ou toque em inglês.
+1. Edite o Home page ou adicione páginas secundárias conforme necessário.
 
 ### Mover conteúdo para aplicativos móveis {#moving-content-to-mobile-applications}
 
@@ -186,7 +189,7 @@ Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 1. Clique no botão + Criar na parte superior e selecione Criar aplicativo.
-1. Depois de receber a lista de Modelos de aplicativo, selecione um:
+1. Depois de receber a lista de Modelos de aplicativos, selecione um:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -198,7 +201,7 @@ Etapas para criar um novo aplicativo com base em um modelo de aplicativo:
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-1. Clique no botão criar e você receberá 2 opções, Concluído (retorne à exibição do catálogo de aplicativos) ou Gerenciar aplicativo (abre o painel do aplicativo).
+1. Clique no botão criar e você receberá 2 opções, Concluído (retornar à visualização do catálogo de aplicativos) ou Gerenciar aplicativo (abre o painel do aplicativo).
 1. Depois de criado, você deverá ver o novo aplicativo listado no catálogo do aplicativo:
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
@@ -219,8 +222,8 @@ Para abrir o aplicativo, no painel, clique em Aplicativos móveis e selecione Ap
 
 Cada página do aplicativo móvel inclui os seguintes recursos:
 
-* Um botão Voltar para retornar à página pai. Observe que o botão Voltar não aparece na página inicial.
-* Um painel expansível que oferece um menu de comandos e links:
+* Um botão Voltar para retornar à página pai. Observe que o botão Voltar não aparece no Home page.
+* Um painel expansível que oferta um menu de comandos e links:
 
    * Abra a página Locais.
    * Abra o carrinho.
@@ -229,23 +232,23 @@ Cada página do aplicativo móvel inclui os seguintes recursos:
 
 * O sistema de parágrafo, para adicionar componentes e criar conteúdo.
 
-### Página inicial - Aplicativo móvel Geometrixx {#the-home-page-geometrixx-mobile-app}
+### O Home page - Aplicativo Geometrixx Mobile {#the-home-page-geometrixx-mobile-app}
 
-O conteúdo da Página inicial é composto pelas seguintes ferramentas de navegação:
+O conteúdo do Home page é composto pelas seguintes ferramentas de navegação:
 
-* Um componente de Lista de menus que fornece links para as páginas secundárias Engrenagem, Revisões, Notícias e Sobre nós.
+* Um componente de Lista de menu que fornece links para as páginas secundárias Arte, Revisões, Notícias e Sobre nós.
 * Um componente do carrossel de troca que exibe as páginas secundárias.
 
 ### Página de engrenagens - Aplicativo Geometrixx para dispositivos móveis {#the-gear-page-geometrixx-mobile-app}
 
-A página de engrenagens fornece aos usuários acesso às páginas de produtos. Um componente de lista de menus fornece acesso às páginas secundárias da página de engrenagens. As páginas secundárias são categorias de produtos que o site possui.
+A página de engrenagens fornece aos usuários acesso às páginas de produtos. Um componente de lista de menu fornece acesso às páginas secundárias da página de engrenagens. As páginas secundárias são categorias de produtos que o site possui.
 
 * Temporada
 * Vestuário
 * Sexo
 * Atividade
 
-Cada página de categoria usa a mesma estrutura de conteúdo que a página de engrenagens. O carrossel fornece acesso a páginas secundárias que são subcategorias de produtos. As páginas de subcategoria contêm listas de produtos que fornecem links para páginas de produtos.
+Cada página de categoria usa a mesma estrutura de conteúdo que a página de engrenagens. O carrossel fornece acesso a páginas filhas que são subcategorias de produtos. As páginas de subcategoria contêm listas de produtos que fornecem links para páginas de produtos.
 
 ### Página Produtos - Aplicativo móvel Geometrixx {#the-products-page-geometrixx-mobile-app}
 
@@ -275,7 +278,7 @@ Ao usar o aplicativo, a página Sobre nós está disponível no carrossel da pá
 
 A página Locais contém um componente Locais.
 
-Ao usar o aplicativo, a página Locais está disponível na lista de menus da página em inglês.
+Ao usar o aplicativo, a página Locais está disponível na lista de menu na página em inglês.
 
 ## Exemplo de componentes móveis {#sample-mobile-components}
 
@@ -294,24 +297,24 @@ Observe que as imagens aparecem no carrossel para páginas que estão associadas
 Configure o comportamento do carrossel:
 
 * Velocidade de reprodução: O tempo, em milissegundos, em que cada imagem é exibida antes de mostrar a próxima imagem.
-* Tempo de transição: A duração em milissegundos da animação para transições de imagem.
+* Tempo de Transição: A duração em milissegundos da animação para transições de imagem.
 * Estilo dos controles: O tipo de controles fornecidos para movimentação entre imagens.
 
-**Guia Propriedades de lista**
+**guia Propriedades da Lista**
 
-Especifique como a lista de páginas é gerada:
+Especifique como a lista de página é gerada:
 
-* Criar lista usando: O método a ser usado para especificar as páginas a serem incluídas no carrossel. Consulte Criação da lista de páginas.
-* Ordenar por: Selecione uma propriedade de página a ser usada para classificar a lista de páginas. Por exemplo, selecione jcr:title para classificar páginas alfabeticamente por título.
-* Limite: O número máximo de páginas a serem incluídas. Essa propriedade é apropriada para métodos de pesquisa de criação da lista de páginas.
+* Criar Lista usando: O método a ser usado para especificar as páginas a serem incluídas no carrossel. Consulte Construção da Lista de página.
+* Ordenar por: Selecione uma propriedade de página a ser usada para classificar a lista de página. Por exemplo, selecione jcr:title para classificar páginas alfabeticamente por título.
+* Limite: O número máximo de páginas a serem incluídas. Essa propriedade é apropriada para métodos de pesquisa de criação da lista de página.
 
-#### Criação da lista de páginas {#building-the-page-list}
+#### Construção da Lista da página {#building-the-page-list}
 
-O componente do Carrossel de troca fornece os seguintes valores para a propriedade Criar lista usando. A caixa de diálogo de edição muda de acordo com o valor selecionado:
+O componente do Carrossel de troca fornece os seguintes valores para a propriedade Criar Lista usando. A caixa de diálogo de edição muda de acordo com o valor selecionado:
 
 **Páginas filhas**
 
-O componente lista todas as páginas secundárias de uma página específica. Depois de selecionar esse valor, selecione a página na guia Páginas secundárias ou não especifique nenhum valor para listar os filhos da página atual.
+O componente lista todas as páginas secundárias de uma página específica. Depois de selecionar esse valor, selecione a página na guia Páginas secundárias ou não especifique nenhum valor para lista os filhos da página atual.
 
 **Lista fixa**
 
@@ -327,12 +330,12 @@ A propriedade Order By não afeta a ordem das listas fixas.
 
 Preencha a lista usando os resultados de uma pesquisa de palavra-chave. A pesquisa é realizada nos filhos de uma página especificada:
 
-1. Para especificar a página raiz da pesquisa, use a propriedade Iniciar em para selecionar o caminho da página. Não especifique nenhum caminho para pesquisar abaixo da página atual.
-1. Na propriedade Pesquisar consulta, digite as palavras-chave de pesquisa.
+1. Para especificar a página raiz da pesquisa, use a propriedade Start Em para selecionar o caminho da página. Não especifique nenhum caminho para pesquisar abaixo da página atual.
+1. Na propriedade Query de pesquisa, digite as palavras-chave de pesquisa.
 
 **Pesquisa avançada**
 
-Preencha a lista usando uma consulta do [Querybuilder](/help/sites-developing/querybuilder-api.md) .
+Preencha a lista usando um query do [Querybuilder](/help/sites-developing/querybuilder-api.md) .
 
 ### Imagem {#image}
 
@@ -346,8 +349,8 @@ Adicione rich text ao conteúdo do aplicativo.
 
 O componente Locais de loja fornece aos usuários ferramentas para encontrar pontos de venda:
 
-* Pesquisar
-* Lista de locais próximos ou distantes das coordenadas GPS do dispositivo.
+* Pesquisar  
+* Listas de locais próximos ou distantes das coordenadas GPS do dispositivo.
 
 O componente exige que o repositório contenha informações de localização para cada loja. Os locais de amostra são instalados no nó /etc/commerce/localizações/adobe. ![chlimage_1-152](assets/chlimage_1-152.png)
 
