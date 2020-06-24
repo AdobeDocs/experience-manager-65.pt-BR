@@ -1,8 +1,8 @@
 ---
-title: AEM Sites - Prontidão do RGPD
-seo-title: AEM Sites - Prontidão do RGPD
-description: Saiba mais sobre os detalhes de Prontidão do RGPD para os sites AEM.
-seo-description: Saiba mais sobre os detalhes de Prontidão do RGPD para os sites AEM.
+title: AEM Sites - Preparação para o RGPD
+seo-title: AEM Sites - Preparação para o RGPD
+description: Saiba mais sobre os detalhes de Prontidão para o RGPD para AEM Sites.
+seo-description: Saiba mais sobre os detalhes de Prontidão para o RGPD para AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,22 +10,25 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 translation-type: tm+mt
-source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '850'
+ht-degree: 0%
 
 ---
 
 
-# AEM Sites - Prontidão do RGPD{#aem-sites-gdpr-readiness}
+# AEM Sites - Preparação para o RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
 >O RGPD é utilizado como exemplo nas seções abaixo, mas os detalhes abrangidos são aplicáveis a todas as normas de proteção de dados e privacidade; como o RGPD, o CCPA, etc.
 
-O Regulamento Geral da União Europeia sobre a Proteção de Dados relativo aos direitos de privacidade dos dados entra em vigor em maio de 2018.
+O Regulamento Geral da Proteção de Dados da União sobre os direitos de privacidade dos dados entra em vigor em maio de 2018.
 
-O AEM Sites está pronto para ajudar os clientes com suas obrigações de conformidade com o RGPD. Esta página orienta os clientes pelos procedimentos para lidar com solicitações do RGPD no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
+A AEM Sites está pronta para ajudar os clientes com suas obrigações de conformidade com o RGPD. Esta página orienta os clientes pelos procedimentos para lidar com solicitações do RGPD no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
 
-Para obter mais informações, consulte a página do [RGPD no Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Para obter mais informações, consulte a página do [RGPD no Centro](https://www.adobe.com/privacy/general-data-protection-regulation.html)de privacidade da Adobe.
 
 >[!NOTE]
 >
@@ -39,23 +42,23 @@ As contas de usuário e o conteúdo UGC no servidor autor são abordados na docu
 
 As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na documentação [do](/help/managing/data-protection-and-privacy.md)Platform GDPR.
 
-Por padrão, os componentes do AEM Sites não armazenam dados de formulário inseridos pelos visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros ou para o Adobe Campaign para processamento adicional.
+Por padrão, os componentes do AEM Sites não armazenam dados de formulário inseridos por visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros ou Adobe Campaign para processamento adicional.
 
 ## Inclusão/recusa {#opt-in-opt-out}
 
 O AEM tem um serviço [de opção de não participação de](/help/sites-developing/cookie-optout.md) cookie que pode ser usado para gerenciar a opção de participação/não participação dos usuários.
 
-## Insights aprimorados pelo Analytics {#enhanced-insights-by-analytics}
+## Insights avançados da Analytics {#enhanced-insights-by-analytics}
 
-O AEM Sites inclui uma integração opcional com o Enhanced Insights pelo Analytics que usa a funcionalidade no serviço sob demanda do Adobe Analytics.
+O AEM Sites inclui uma integração opcional com o Enhanced Insights by Analytics que usa funcionalidade no Adobe Analytics On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de sujeitos de dados do RGPD relacionadas ao Adobe Analytics, consulte [Adobe Analytics e RGPD](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/).
+Para obter mais informações sobre como gerenciar solicitações de assunto de dados do RGPD relacionadas ao Adobe Analytics, consulte [Adobe Analytics e RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Personalização aprimorada pelo Target {#enhanced-personalization-by-target}
+## Personalização aprimorada por Público alvo {#enhanced-personalization-by-target}
 
-O AEM Sites inclui uma integração opcional com a Personalização aprimorada pelo Target que usa a funcionalidade no serviço sob demanda do Adobe Target.
+O AEM Sites inclui uma integração opcional com a Personalização aprimorada por Público alvo que usa funcionalidade no Adobe Target On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de pessoas com dados do RGPD relacionadas ao Adobe Target, consulte [Adobe Target - Privacidade e Regulamento](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)geral de proteção de dados.
+Para obter mais informações sobre o gerenciamento de pedidos de informações do RGPD relacionados ao Adobe Target, consulte o Regulamento [sobre Privacidade e Proteção Geral de Dados do](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)Adobe Target.
 
 ## ContextHub {#contexthub}
 
@@ -76,7 +79,7 @@ O proprietário do site precisa implementar um componente de opção de não par
 Essas diretrizes implementam o opt-in como padrão. Assim, um visitante do site deve concordar claramente, antes que qualquer dado pessoal seja armazenado na persistência do navegador (do lado do cliente).
 
 * O componente de opção de não participação deve ser incluído toda vez que o componente ContextHub for incluído.
-* Os termos e condições relacionados com o RGPD para o sítio web devem ser apresentados ao visitante do sítio, permitindo-lhe:
+* Os termos e condições relacionados com o RGPD para o website devem ser exibidos no visitante do website, permitindo-lhes:
 
    * accept
    * rejeição
@@ -103,7 +106,7 @@ Essas diretrizes implementam o opt-in como padrão. Assim, um visitante do site 
 
 ### Visualização da persistência do ContextHub {#previewing-persistence-of-contexthub}
 
-Para visualizar a persistência usada pelo ContextHub, o usuário pode:
+Para que a persistência da pré-visualização seja usada pelo ContextHub, o usuário pode:
 
 * Use o console do navegador; por exemplo:
 
@@ -131,7 +134,7 @@ Para visualizar a persistência usada pelo ContextHub, o usuário pode:
          * Console > Armazenamento > Cookies > (site) > ContextHubPersistence
    * Internet Explorer:
 
-      * Abra Ferramentas do desenvolvedor > Console
+      * Abrir Ferramentas do Desenvolvedor > Console
 
          * localStorage.getItem(&#39;ContextHubPersistence&#39;)
          * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
@@ -148,12 +151,13 @@ Para visualizar a persistência usada pelo ContextHub, o usuário pode:
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
-      O repositório do ContextHub define qual camada de persistência será usada, portanto, para exibir o estado atual da persistência, todas as camadas devem ser verificadas.
+
+      O repositório do ContextHub define qual camada de persistência será usada, portanto, para visualização do estado atual da persistência, todas as camadas devem ser verificadas.
 
 
-Por exemplo, para exibir dados armazenados em localStorage:
+Por exemplo, para visualização de dados armazenados em localStorage:
 
-Para visualizar a persistência usada pelo ContextHub, o usuário pode:
+Para que a persistência da pré-visualização seja usada pelo ContextHub, o usuário pode:
 
 * Use o console do navegador:
 
@@ -177,10 +181,11 @@ Para visualizar a persistência usada pelo ContextHub, o usuário pode:
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
-      O repositório do ContextHub define qual camada de persistência será usada, portanto, para exibir o estado atual da persistência, todas as camadas devem ser verificadas.
+
+      O repositório do ContextHub define qual camada de persistência será usada, portanto, para visualização do estado atual da persistência, todas as camadas devem ser verificadas.
 
 
-Por exemplo, para exibir dados armazenados em localStorage:
+Por exemplo, para visualização de dados armazenados em localStorage:
 
 ```
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
