@@ -365,7 +365,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     <ul>
      <li>Selecione <strong>Perceptual</strong> para compactar a gama total de um espaço de cor para outro quando uma ou mais cores na imagem original estiverem fora do gamut do espaço de cor de destino.</li>
      <li>Selecione Colorimétrico <strong>relativo</strong> quando uma cor no espaço de cores atual estiver fora do gamut no espaço de cores do público alvo e você quiser mapeá-la para a cor mais próxima possível dentro do gama do espaço de cores do público alvo sem afetar outras cores. </li>
-     <li>Selecione <strong>Saturação</strong> para reproduzir a saturação de cor da imagem original ao converter para o espaço de cor do público alvo. </li>
+     <li>Selecione <strong>Saturação</strong> para reproduzir a saturação de cor da imagem original ao converter no espaço de cor do público alvo. </li>
      <li>Selecione Colorimétrico <strong>absoluto</strong> para corresponder as cores exatamente sem nenhum ajuste para ponto branco ou preto que alteraria o brilho da imagem.</li>
     </ul> </td>
   </tr>
