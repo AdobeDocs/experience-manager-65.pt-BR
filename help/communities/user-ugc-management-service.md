@@ -1,6 +1,6 @@
 ---
-title: Serviço de gerenciamento de usuário e UGC em AEM Communities
-seo-title: Serviço de gerenciamento de usuário e UGC em AEM Communities
+title: Serviço de Gerenciamento de Usuário e UGC em AEM Communities
+seo-title: Serviço de Gerenciamento de Usuário e UGC em AEM Communities
 description: Use as APIs para excluir e exportar em massa o conteúdo gerado pelo usuário e desativar a conta do usuário.
 seo-description: Use as APIs para excluir e exportar em massa o conteúdo gerado pelo usuário e desativar a conta do usuário.
 uuid: 91180659-617d-4f6c-9a07-e680770d0d8f
@@ -11,12 +11,15 @@ topic-tags: administering
 discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
 
 
-# Serviço de gerenciamento de usuário e UGC em AEM Communities {#user-and-ugc-management-service-in-aem-communities}
+# Serviço de Gerenciamento de Usuário e UGC em AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
 >
@@ -29,7 +32,7 @@ Para obter mais informações, consulte a página do [RGPD no Centro](https://ww
 
 >[!NOTE]
 >
->Se você tiver configurado o [Adobe Analytics no site do AEM Communities](/help/communities/analytics.md) , os dados capturados do usuário serão enviados para o servidor do Adobe Analytics. O Adobe Analytics fornece APIs que permitem acessar, exportar e excluir dados do usuário e estão em conformidade com o RGPD. Para obter mais informações, consulte [Enviar acesso e excluir solicitações](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html).
+>Se você configurou o [Adobe Analytics no site do AEM Communities](/help/communities/analytics.md) , os dados do usuário capturados serão enviados para o servidor da Adobe Analytics. A Adobe Analytics fornece APIs que permitem acessar, exportar e excluir dados do usuário e estão em conformidade com o RGPD. Para obter mais informações, consulte [Enviar acesso e excluir solicitações](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 
 Para colocar essas APIs em uso, é necessário ativar o `/services/social/ugcmanagement` endpoint ativando o serviço UserUgcManagement. Para ativar este serviço, instale o servlet [de](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) amostra disponível em [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). Em seguida, pressione o endpoint na instância de publicação do site de suas comunidades com os parâmetros apropriados usando uma solicitação http, semelhante a:
@@ -62,11 +65,11 @@ Por exemplo, para excluir o UGC de um usuário que tenha uma ID autorizável wes
 
 ### Excluir UGC do Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Para excluir os dados do usuário do Adobe Analytics, siga o fluxo de trabalho [do](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/an_gdpr_workflow.html)RGPD Analytics; como a API não exclui dados do usuário do Adobe Analytics.
+Para excluir dados do usuário do Adobe Analytics, siga o fluxo de trabalho [do](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)RGPD Analytics; como a API não exclui dados do usuário do Adobe Analytics.
 
-Para os mapeamentos de variáveis do Adobe Analytics usados pelo AEM Communities, consulte a seguinte imagem:
+Para mapeamentos de variáveis do Adobe Analytics usados por AEM Communities, consulte a seguinte imagem:
 
-![Mapeamento variável de comunidades AEM para o Adobe Analytics](assets/analytics-communities-mapping.png)
+![Mapeamento variável de comunidades AEM para Adobe Analytics](assets/analytics-communities-mapping.png)
 
 ## Desativar uma conta de usuário {#disable-a-user-account}
 
