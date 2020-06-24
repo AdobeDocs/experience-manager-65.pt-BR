@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '9303'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Em [!DNL Adobe Experience Manager Assets] você pode fazer mais do que apenas armazenar e administrar seus ativos. [!DNL Experience Manager] oferta recursos de gerenciamento de ativos de nível corporativo. Você pode editar e compartilhar ativos, executar pesquisas avançadas, criar várias execuções de dezenas de formatos de arquivos suportados, gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e administrar metadados, colaborar usando anotações e muito mais.
 
-Este artigo descreve as tarefas básicas de gerenciamento de ativos, como criar ou carregar; atualizações de metadados; copiar, mover e excluir; publicar, cancelar a publicação e pesquisar ativos. Para entender a interface do usuário, consulte [Introdução à interface](/help/sites-authoring/basic-handling.md)do usuário dos ativos. Para gerenciar fragmentos de conteúdo, consulte [gerenciar ativos de fragmentos](content-fragments-managing.md) de conteúdo.
+Este artigo descreve as tarefas básicas de gerenciamento de ativos, como criar ou carregar; atualizações de metadados; copiar, mover e excluir; publicar, cancelar a publicação e pesquisar ativos. Para entender a interface do usuário, consulte [Introdução à interface](/help/sites-authoring/basic-handling.md)do usuário dos ativos. Para gerenciar fragmentos de conteúdo, consulte [gerenciar ativos de fragmentos](/help/assets/content-fragments/content-fragments-managing.md) de conteúdo.
 
 ## Criar pastas {#creating-folders}
 
@@ -50,7 +50,7 @@ Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos 
 
 >[!NOTE]
 >
->No modo Mídia dinâmica - Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
+>No Dynamic Media - modo Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
 
 Você pode optar por carregar ativos para pastas com ou sem um perfil de processamento atribuído a eles.
 
@@ -63,7 +63,6 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * Na barra de ferramentas, clique no ícone **[!UICONTROL Criar]** . Em seguida, no menu, clique em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do [!DNL Assets] usuário. A caixa de diálogo para renomear o arquivo não é exibida.
-
    ![Criar opção para carregar ativos](assets/create-options.png)
 
    Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
@@ -120,7 +119,6 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * o nome do arquivo de ativo não deve conter `* / : [ \\ ] | # % { } ? &`
    * o nome da pasta de ativos não deve conter `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-
    Não inclua caracteres especiais nas extensões dos nomes de arquivos do ativo.
 
    ![A caixa de diálogo de andamento do upload mostra o status dos arquivos carregados com êxito e dos arquivos que não foram carregados](assets/chlimage_1-10.png)
@@ -141,11 +139,11 @@ Por padrão, o carregamento em série de ativos é ativado. Para desativar o rec
 
 ### Fazer upload de ativos usando FTP {#uploading-assets-using-ftp}
 
-O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FTP. Se você pretende carregar ativos grandes (> 1 GB) ou pastas e subpastas inteiras, deve usar o FTP. Você pode até mesmo configurar o upload do FTP para que ocorra de forma recorrente e programada.
+A Dynamic Media permite o carregamento em lote de ativos por meio do servidor FTP. Se você pretende carregar ativos grandes (> 1 GB) ou pastas e subpastas inteiras, deve usar o FTP. Você pode até mesmo configurar o upload do FTP para que ocorra de forma recorrente e programada.
 
 >[!NOTE]
 >
->No modo Mídia dinâmica - Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
+>No Dynamic Media - modo Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
 
 >[!NOTE]
 >
@@ -166,7 +164,7 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 
    >[!NOTE]
    >
-   >Ao carregar ativos via FTP, as opções de trabalho de upload definidas no Dynamic Media Classic (S7) têm prioridade sobre os parâmetros de processamento de ativos definidos em [!DNL Experience Manager].
+   >Ao carregar ativos via FTP, as opções de trabalho de upload definidas no Dynamic Media Classic (S7) têm prioridade sobre os parâmetros de processamento de ativos definidos no [!DNL Experience Manager].
 
 1. No canto inferior direito da caixa de diálogo Carregar opções de trabalho, clique em **[!UICONTROL Salvar]**.
 1. No canto inferior direito da página Carregar, clique em **[!UICONTROL Enviar upload]**.
@@ -193,7 +191,7 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 |  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cor.<br> Observe que não há suporte para eCatalogs em [!DNL Experience Manager]. <br> Consulte [Configuração de opções](#setting-pdf-upload-options)de upload de PDF. |
 |  | Opções do Illustrator | Você pode rasterizar arquivos do Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload do PostScript e do Illustrator. |
 |  | Opções de vídeo | Você pode transcodificar um arquivo de vídeo escolhendo uma predefinição de vídeo.<br> Consulte [Configuração de opções](#setting-evideo-upload-options)de upload de eVideo. |
-|  | Predefinições de Conjunto de Lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Predefinições de Configuração de aplicativo/Conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
+|  | Predefinições de Conjunto de Lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Configuração de aplicativo/Predefinições de conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
 
 #### Definir opções de edição de imagem no upload {#setting-image-editing-options-at-upload}
 
@@ -240,7 +238,7 @@ Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode 
 
 Os arquivos do Documento do Photoshop (PSD) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela Carregar).
 
-O Dynamic Media cria várias imagens a partir de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
+O Dynamic Media cria várias imagens de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
 
 Use as Opções [!UICONTROL de] corte e as Opções [!UICONTROL de Perfil]colorido, descritas acima, com as opções de upload do Photoshop.
 
@@ -303,11 +301,11 @@ Consulte [Configuração de predefinições de conjuntos de lotes para gerar aut
 
 ### Carregamentos em fluxo {#streamed-uploads}
 
-Se você fizer upload de muitos ativos para o Adobe Experience Manager, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode fazer com que algumas tarefas de upload fiquem esgotadas. [!DNL Experience Manager Assets] oferece suporte ao carregamento simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado em [!DNL Assets].
+Se você fizer upload de muitos ativos para o Adobe Experience Manager, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até mesmo fazer com que algumas tarefas de upload fiquem esgotadas. [!DNL Experience Manager Assets] oferece suporte ao carregamento simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado em [!DNL Assets].
 
 >[!NOTE]
 >
->O carregamento de fluxo é desativado para o Adobe Experience Manager em execução no servidor JEE com a versão servlet-api inferior a 3.1.
+>O carregamento de fluxo é desabilitado para Adobe Experience Manager em execução no servidor JEE com a versão servlet-api inferior a 3.1.
 
 ### Extrair arquivo ZIP contendo ativos {#extractzip}
 
@@ -352,7 +350,6 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 1. Para aplicar zoom no ativo:
    1. Use a `Tab` tecla para mover o foco para o ícone de zoom.
    1. Use a `Enter` tecla para aplicar zoom na imagem.
-
    Para diminuir o zoom, use a `Tab` tecla para mover o foco para o ícone de afastar o zoom e pressione `Enter`.
 
 1. Use as teclas `Shift` + `Tab` para mover o foco de volta para a imagem.
@@ -361,7 +358,7 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 >[!MORELIKETHIS]
 >
->* [Pré-visualização de ativos](/help/assets/previewing-assets.md)de mídia dinâmica.
+>* [Pré-visualização do Dynamic Media Assets](/help/assets/previewing-assets.md).
 >* [subativos](managing-linked-subassets.md#viewing-subassets)de Visualização.
 
 
@@ -410,7 +407,6 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
    * Número de vezes que o ativo foi exibido ou baixado
    * Canais/dispositivos através dos quais o ativo foi usado
    * Soluções criativas onde o ativo foi usado recentemente
-
    Para obter mais detalhes, consulte [Asset Insights](/help/assets/touch-ui-asset-insights.md).
 
 1. Click **[!UICONTROL Save &amp; Close]**.
@@ -484,7 +480,6 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    * Clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Selecionar destino]** .
 
    * Clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
-
    Se você não atualizar referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
 
 ## Gerenciar execuções {#managing-renditions}
@@ -511,7 +506,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    **Excluir uma representação**
 
-   Selecione uma representação no painel **[!UICONTROL Representações]** e clique no ícone **[!UICONTROL Excluir representação]** da barra de ferramentas. As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload dos ativos excluídos novamente.
+   Selecione uma representação no painel **[!UICONTROL Representações]** e clique no ícone **[!UICONTROL Excluir representação]** da barra de ferramentas. As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload novamente dos ativos excluídos.
 
    ![Opção para excluir uma representação](assets/delete_renditionicon.png)
 
@@ -560,7 +555,6 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
       * Se o ativo não tiver referências, ele será excluído.
       * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
-
    >[!NOTE]
    >
    >Para excluir ativos, um usuário requer permissões de exclusão em `dam/asset`. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
@@ -577,7 +571,7 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
 >[!NOTE]
 >
->Para obter mais informações específicas do Dynamic Media, consulte [Publicação de ativos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
+>Para obter mais informações específicas ao Dynamic Media, consulte [Publicação dos ativos Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Navegue até o local do(s) ativo(s)/pasta que deseja publicar.
 
@@ -613,7 +607,6 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
    * **[!UICONTROL Cancelar]** para parar a ação
    * **[!UICONTROL Cancele a publicação]** para confirmar que os ativos não foram publicados (não estão mais disponíveis no ambiente de publicação) na data especificada.
-
    >[!NOTE]
    >
    >Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite cancelar a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
@@ -684,7 +677,6 @@ As ferramentas de edição na [!DNL Assets] interface permitem executar pequenos
    * Selecione o ativo e clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
    * Clique no ícone **[!UICONTROL Editar]** que aparece em um ativo na visualização Cartão.
    * Na página do ativo, clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
-
    ![Ícone Editar na barra de ferramentas](assets/edit_icon.png)
 
 1. Para recortar a imagem, clique no ícone **Recortar** .
@@ -740,7 +732,7 @@ A linha do tempo permite que você visualização vários eventos para um item s
 
 >[!NOTE]
 >
->A linha do tempo contém várias [opções específicas para fragmentos](/help/assets/content-fragments-managing.md#timeline-for-content-fragments)de conteúdo.
+>A linha do tempo contém várias [opções específicas para fragmentos](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)de conteúdo.
 
 ## Anotar ativos {#annotating}
 
@@ -750,14 +742,13 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
 >[!NOTE]
 >
->Para Fragmentos de conteúdo, [as anotações são criadas no editor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)de fragmentos.
+>Para Fragmentos de conteúdo, [as anotações são criadas no editor](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)de fragmentos.
 
 1. Navegue até o local do ativo ao qual você deseja adicionar anotações.
 1. Clique no ícone **[!UICONTROL Anotar]** de um dos seguintes:
 
    * [Ações rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
-
    ![Ícone Anotar](assets/chlimage_1-29.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
@@ -949,7 +940,6 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
 1. Para comparar duas versões de uma imagem, siga estas etapas:
    * Clique na versão a ser comparada com a versão atual.
    * Arraste o controle deslizante para a esquerda para sobrepor esta versão sobre a versão atual e compare.
-
    ![Use o controle deslizante para comparar as versões selecionadas de um ativo com a versão atual](assets/version-slider.gif)
 
    *Figura: Use o controle deslizante para comparar facilmente as versões selecionadas de um ativo com a versão atual.*
