@@ -1,6 +1,6 @@
 ---
-title: Configuração do rastreamento de vídeo para o Adobe Analytics
-seo-title: Configuração do rastreamento de vídeo para o Adobe Analytics
+title: Configuração do rastreamento de vídeo para Adobe Analytics
+seo-title: Configuração do rastreamento de vídeo para Adobe Analytics
 description: Saiba mais sobre como configurar o rastreamento de vídeo para o SiteCatalyst.
 seo-description: Saiba mais sobre como configurar o rastreamento de vídeo para o SiteCatalyst.
 uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1766'
+ht-degree: 1%
 
 ---
 
 
-# Configuração do rastreamento de vídeo para o Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
+# Configuração do rastreamento de vídeo para Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Há vários métodos disponíveis para rastrear eventos de vídeo, sendo 2 opções herdadas para versões mais antigas do Adobe Analytics. Essas opções herdadas são: Marcos herdados e segundos herdados.
 
@@ -34,14 +37,14 @@ Use o procedimento a seguir para configurar uma estrutura para rastreamento de v
 
 ## Etapas comuns {#common-steps}
 
-1. Configure uma página da Web arrastando um componente **de** vídeo do sidekick e adicionando um **vídeo reproduzível como ativo** para o componente
+1. Configure uma página da Web arrastando um componente **de** vídeo do sidekick e adicionando um **vídeo reproduzível como um ativo** para o componente
 
 1. [Crie uma configuração e uma estrutura](/help/sites-administering/adobeanalytics.md)do Adobe Analytics.
 
    * Os exemplos nas seções a seguir usam o nome **my-sc-configuration** para a configuração e o **videofw** da estrutura.
 
 1. Na página da estrutura, selecione um RSID e defina o uso como todos. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. Na categoria de componente Geral do Sidekick, arraste o componente Vídeo até a estrutura.
+1. A partir da categoria de componente Geral no Sidekick, arraste o componente Vídeo até a estrutura.
 1. Selecione um método de rastreamento:
 
    * [Marcos](/help/sites-administering/adobeanalytics.md)
@@ -49,19 +52,19 @@ Use o procedimento a seguir para configurar uma estrutura para rastreamento de v
    * [Marcos herdados](/help/sites-administering/adobeanalytics.md)
    * [Segundos herdados](/help/sites-administering/adobeanalytics.md)
 
-1. Quando você seleciona um método de rastreamento, a lista de variáveis do CQ muda de acordo. Use as seções a seguir para obter informações sobre como configurar ainda mais o componente e mapear as variáveis do CQ com as propriedades do Adobe Analytics.
+1. Quando você seleciona um método de rastreamento, a lista das variáveis do CQ muda de acordo. Use as seções a seguir para obter informações sobre como configurar ainda mais o componente e mapear as variáveis do CQ com as propriedades do Adobe Analytics.
 
 ## Milestones {#milestones}
 
 O método Marcos rastreia a maioria das informações sobre o vídeo, é altamente personalizável e fácil de configurar.
 
-Para usar o método Marcos, especifique os deslocamentos de rastreamento baseados em tempo para definir os marcos. Quando uma reprodução de vídeo passar por um marco, a página chamará o Adobe Analytics para rastrear o evento. Para cada marco definido, o componente cria uma variável CQ que pode ser mapeada para uma propriedade do Adobe Analytics. O nome dessas variáveis CQ usa o seguinte formato:
+Para usar o método Marcos, especifique os deslocamentos de rastreamento baseados em tempo para definir os marcos. Quando uma reprodução de vídeo ultrapassar um marco, a página chamará o Adobe Analytics para rastrear o evento. Para cada marco definido, o componente cria uma variável CQ que pode ser mapeada para uma propriedade do Adobe Analytics. O nome dessas variáveis CQ usa o seguinte formato:
 
 ```shell
 eventdata.events.milestoneXX
 ```
 
-O sufixo XX é o deslocamento de rastreamento que define o marco. Por exemplo, especificar deslocamentos de rastreamento de 4, 8, 16, 20 e 28 segundos gera as seguintes variáveis de CQ:
+O sufixo XX é o deslocamento de rastreamento que define o marco. Por exemplo, a especificação de deslocamentos de rastreamento de 4, 8, 16, 20 e 28 segundos gera as seguintes variáveis de CQ:
 
 * `eventdata.events.milestone4`
 * `eventdata.events.milestone8`
@@ -83,11 +86,11 @@ A tabela a seguir descreve as variáveis CQ padrão fornecidas para o método Ma
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>As variáveis mapeadas para isso conterão o nome do arquivo. Enviados somente com eventdata.events.a.media.view </td>
+   <td>As variáveis mapeadas para isso conterão o nome do arquivo. Enviados somente com eventdata.eventos.a.media.visualização </td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>As variáveis mapeadas para isso conterão o caminho do arquivo no servidor. Enviados somente com eventdata.events.a.media.view </td>
+   <td>As variáveis mapeadas para isso conterão o caminho do arquivo no servidor. Enviados somente com eventdata.eventos.a.media.visualização </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.segmentView </td>
@@ -103,7 +106,7 @@ A tabela a seguir descreve as variáveis CQ padrão fornecidas para o método Ma
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>Enviado quando o vídeo terminar<br /> </td>
+   <td>Enviado quando a reprodução do vídeo é concluída<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestoneX </td>
@@ -128,7 +131,7 @@ A tabela a seguir descreve as variáveis CQ padrão fornecidas para o método Ma
 >
 >É possível definir o nome amigável **para o** usuário de um vídeo abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** como o nome desejado.
 
-1. Depois de selecionar Marcos como o método de rastreamento, na caixa Deslocamento da faixa, digite uma lista separada por vírgulas de deslocamentos de rastreamento em segundos. Por exemplo, o valor a seguir define marcos em 4, 8, 16, 20 e 28 segundos após o início do vídeo:
+1. Depois de selecionar Marcos como o método de rastreamento, na caixa Deslocamento da faixa, digite uma lista separada por vírgulas de deslocamentos de rastreamento em segundos. Por exemplo, o valor a seguir define marcos em 4, 8, 16, 20 e 28 segundos após o start do vídeo:
 
    ```xml
    4,8,16,20,24
@@ -136,12 +139,12 @@ A tabela a seguir descreve as variáveis CQ padrão fornecidas para o método Ma
 
    Os valores de deslocamento devem ser inteiros com mais de 0. O valor padrão é `10,25,50,75`.
 
-1. Para mapear as variáveis CQ para as propriedades do Adobe Analytics, arraste as propriedades do Adobe Analytics do ContentFinder ao lado da variável CQ no componente.
+1. Para mapear as variáveis do CQ para as propriedades do Adobe Analytics, arraste as propriedades do Adobe Analytics do ContentFinder ao lado da variável do CQ no componente.
 
-   Para obter informações sobre como otimizar os mapeamentos, consulte o guia [Medição de vídeo no Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html) .
+   Para obter informações sobre como otimizar os mapeamentos, consulte o guia [Medição de vídeo no Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .
 
 1. [Adicione a estrutura](/help/sites-administering/adobeanalytics.md) à página.
-1. Para testar a configuração no modo **** Visualização, reproduza o vídeo para acionar as chamadas do Adobe Analytics.
+1. Para testar a configuração no modo **de** Pré-visualização, reproduza o vídeo para acionar as chamadas do Adobe Analytics.
 
 Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao rastreamento de marcos usando deslocamentos de rastreamento de 4,8,16,20 e 24, e os seguintes mapeamentos para as variáveis do CQ:
 
@@ -149,7 +152,7 @@ Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao r
  <tbody>
   <tr>
    <th>Variável CQ</th>
-   <th>Propriedade do Adobe Analytics</th>
+   <th>Propriedade da Adobe Analytics</th>
   </tr>
   <tr>
    <td>eventdata.videoName </td>
@@ -222,32 +225,32 @@ Neste exemplo, o componente Vídeo é exibido da seguinte forma na página de es
 >
 >Para ver as chamadas feitas para o Adobe Analytics, use uma ferramenta apropriada, como o Depurador DigitalPulse ou o Fiddler.
 
-As chamadas para o Adobe Analytics usando o exemplo fornecido devem ser semelhantes quando visualizadas com o DigitalPulse Debugger:
+As chamadas para a Adobe Analytics usando o exemplo fornecido devem ser semelhantes quando visualizadas com o DigitalPulse Debugger:
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Esta é a **primeira chamada**feita para o Adobe Analytics que contém os seguintes valores:*
+*Esta é a **primeira chamada**feita para a Adobe Analytics que contém os seguintes valores:*
 
 * *prop1 e eVar1 para eventdata.a.media.name,*
 * *props2-4, junto com eVar2 e eVar3 contendo contentType (vídeo) e segmento (1:O:1-4)*
-* *event3 que foi mapeado para eventdata.events.a.media.view.*
+* *evento3 que foi mapeado para eventdata.eventos.a.media.visualização.*
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+![chlimage_1-127](assets/chlimage_1-129.png)
 
-*Esta é a **terceira chamada**feita para o Adobe Analytics:*
+*Esta é a **terceira chamada**feita para a Adobe Analytics:*
 
 * *prop1 e eVar1 contêm a.media.name;*
-* *event1 porque um segmento foi visualizado*
-* *event2 enviado com tempo reproduzido = 4*
-* *event11 enviado porque eventdata.events.milestone8 foi atingido*
-* *prop2 para 4 não são enviados (já que eventdata.events.a.media.view não foi acionado)*
+* *evento 1 porque um segmento foi visualizado*
+* *evento2 enviado com tempo reproduzido = 4*
+* *evento11 enviado porque eventdata.eventos.milestone8 foi atingido*
+* *prop2 para 4 não são enviados (já que eventdata.eventos.a.media.visualização não foi acionado)*
 
 ## Marcos não herdados {#non-legacy-milestones}
 
 O método Marcos não herdados é semelhante ao método Marcos, exceto que os marcos são definidos usando porcentagens da duração da faixa. Os pontos comuns são os seguintes:
 
-* Quando uma reprodução de vídeo passar por um marco, a página chamará o Adobe Analytics para rastrear o evento.
-* O conjunto [estático de variáveis](#cqvars) CQ que são definidas para mapeamento com propriedades do Adobe Analytics.
+* Quando uma reprodução de vídeo ultrapassar um marco, a página chamará o Adobe Analytics para rastrear o evento.
+* O conjunto [estático de variáveis](#cqvars) CQ definidas para mapeamento com propriedades do Adobe Analytics.
 * Para cada marco definido, o componente cria uma variável CQ que pode ser mapeada para uma propriedade do Adobe Analytics.
 
 O nome dessas variáveis CQ usa o seguinte formato:
@@ -263,7 +266,7 @@ O sufixo XX é a porcentagem da duração da faixa que define o marco. Por exemp
 eventdata.events.milestoneXX
 ```
 
-1. Depois de selecionar Etapas não herdadas como método de rastreamento, na caixa Deslocamento da faixa, digite uma lista separada por vírgulas de porcentagens da duração da faixa. Por exemplo, o seguinte valor padrão define marcos em 10, 25, 50 e 75 por cento do comprimento da faixa:
+1. Depois de selecionar Etapas não herdadas como método de rastreamento, na caixa Deslocamento da faixa, digite uma lista separada por vírgulas com porcentagens da duração da faixa. Por exemplo, o seguinte valor padrão define marcos em 10, 25, 50 e 75 por cento do comprimento da faixa:
 
    ```xml
    10,25,50,75
@@ -271,12 +274,12 @@ eventdata.events.milestoneXX
 
    Os valores de deslocamento devem ser inteiros com mais de 0.
 
-1. Para mapear as variáveis CQ para as propriedades do Adobe Analytics, arraste as propriedades do Adobe Analytics do ContentFinder ao lado da variável CQ no componente.
+1. Para mapear as variáveis do CQ para as propriedades do Adobe Analytics, arraste as propriedades do Adobe Analytics do ContentFinder ao lado da variável do CQ no componente.
 
-   Para obter informações sobre como otimizar os mapeamentos, consulte o guia [Medição de vídeo no Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html) .
+   Para obter informações sobre como otimizar os mapeamentos, consulte o guia [Medição de vídeo no Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) .
 
 1. [Adicione a estrutura](/help/sites-administering/adobeanalytics.md) à página.
-1. Para testar a configuração no modo **** Visualização, reproduza o vídeo para acionar as chamadas do Adobe Analytics.
+1. Para testar a configuração no modo **de** Pré-visualização, reproduza o vídeo para acionar as chamadas do Adobe Analytics.
 
 ## Marcos herdados {#legacy-milestones}
 
@@ -288,8 +291,9 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
 
 1. Defina o deslocamento da faixa.
 
-   * Por exemplo, 10,50,75,100
-   Além disso, as informações enviadas ao Adobe Analytics são menos personalizáveis; há apenas 3 variáveis disponíveis para mapeamento:
+   * e.g.10,50,75,100
+
+   Além disso, as informações enviadas para a Adobe Analytics são menos personalizáveis; há apenas 3 variáveis disponíveis para mapeamento:
 
 <table>
  <tbody>
@@ -330,7 +334,7 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
 
    * *Total de segundos reproduzidos* - o número total de segundos em que o vídeo foi reproduzido (*25*)
 
-   * *Carimbo de data e hora* de início - Carimbo de data e hora que identifica quando a reprodução do vídeo começou (*1331035567*)
+   * *Carimbo de data e hora* do Start - Carimbo de data e hora que identifica quando a reprodução do vídeo começou (*1331035567*)
 
    * *Sessão* Play - Os detalhes da sessão Play. Este campo indica como o usuário interagiu com o vídeo. Isso pode incluir dados como o local em que começaram a reproduzir o vídeo, se eles usaram o controle deslizante para avançar o vídeo e onde pararam de reproduzir o vídeo (*L10E24S58L58 - o vídeo foi interrompido em segundos. 25 da seção L10, depois pulado para s. 48*)
 
@@ -340,12 +344,12 @@ Ao usar o método** de segundos herdados**, as chamadas do Adobe Analytics são 
 
 1. Defina o deslocamento da faixa para qualquer número de segundos,
 
-   * por exemplo 6
+   * por exemplo, 6
    >[!NOTE]
    >
    >O campo de deslocamento de rastreamento aceita apenas números inteiros que sejam superiores a 0
 
-   As informações enviadas ao Adobe Analytics são menos personalizáveis. Há apenas 3 variáveis disponíveis para mapeamento:
+   As informações enviadas para a Adobe Analytics são menos personalizáveis. Há apenas 3 variáveis disponíveis para mapeamento:
 
 <table>
  <tbody>
@@ -372,7 +376,7 @@ Ao usar o método** de segundos herdados**, as chamadas do Adobe Analytics são 
 
    O **restante das informações** relevantes na chamada serão enviadas concatenadas para **uma** variável chamada **pev3**.
 
-   As chamadas para o Adobe Analytics usando o exemplo fornecido devem ser semelhantes quando visualizadas com o DigitalPulse Debugger:
+   As chamadas para a Adobe Analytics usando o exemplo fornecido devem ser semelhantes quando visualizadas com o DigitalPulse Debugger:
 
    ![segundos](assets/lseconds.png)
 
@@ -380,4 +384,4 @@ Ao usar o método** de segundos herdados**, as chamadas do Adobe Analytics são 
 
 **Referências usadas neste tutorial:**
 
-[0] [https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_overview.html)
+[0] [https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
