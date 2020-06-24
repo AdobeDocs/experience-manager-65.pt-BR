@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
 
 >[!CAUTION]
 >
->[Modelos](/help/assets/content-fragments-models.md) de fragmento de conteúdo agora são recomendados para a criação de todos os fragmentos.
+>[Modelos](/help/assets/content-fragments/content-fragments-models.md) de fragmento de conteúdo agora são recomendados para a criação de todos os fragmentos.
 >
 >Os modelos de fragmento de conteúdo são usados para todos os exemplos em We.Retail.
 
@@ -33,7 +36,7 @@ Os modelos predefinidos são mantidos em:
 Você pode criar modelos específicos do site para fragmentos de conteúdo em:
 
 * `/apps/settings/dam/cfm/templates`
-O local para sobreposição de modelos predefinidos ou para fornecer modelos específicos do cliente, em todo o aplicativo, que não devem ser estendidos/alterados no tempo de execução.
+O local para sobrepor modelos predefinidos ou fornecer modelos específicos do cliente e de todo o aplicativo que não se destinam a ser estendidos/alterados no tempo de execução.
 
 * `/conf/global/settings/dam/cfm/templates`
 O local para modelos específicos do cliente em toda a instância que precisam ser alterados em tempo de execução.
@@ -52,6 +55,7 @@ A ordem de precedência é (em ordem decrescente) `/conf`, `/apps`, `/libs`.
    >
    >
 1. Faça quaisquer alterações em `/apps`
+
 >
 
 
@@ -132,7 +136,7 @@ Mais detalhes sobre os nós e suas propriedades são:
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>required</p> </td>
-     <td><p><code>true</code>, se os subativos que representam os elementos (exceto o elemento mestre) do fragmento de conteúdo devem ser criados quando o fragmento de conteúdo é criado; <em>falso</em> se devem ser criados "imediatamente".</p> <p><strong>Observação</strong>: atualmente, esse parâmetro deve ser definido como <code>true</code>.</p> </td>
+     <td><p><code>true</code>, se os subativos que representam os elementos (exceto o elemento mestre) do fragmento de conteúdo devem ser criados quando o fragmento de conteúdo é criado; <em>falso</em> se deveriam ser criados "imediatamente".</p> <p><strong>Observação</strong>: atualmente, esse parâmetro deve ser definido como <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
