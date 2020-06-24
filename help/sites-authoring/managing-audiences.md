@@ -1,6 +1,6 @@
 ---
-title: Gerenciamento de públicos-alvo
-seo-title: Gerenciamento de públicos-alvo
+title: Gerenciamento de públicos
+seo-title: Gerenciamento de públicos
 description: O console Públicos-alvo permite criar, organizar e gerenciar públicos-alvo da sua conta do Adobe Target ou gerenciar segmentos do ContextHub ou ClientContext
 seo-description: O console Públicos-alvo permite criar, organizar e gerenciar públicos-alvo da sua conta do Adobe Target ou gerenciar segmentos do ContextHub ou ClientContext
 uuid: 76408a8c-25db-4e9f-8a69-27e820a2a7cf
@@ -11,12 +11,15 @@ topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 68%
 
 ---
 
 
-# Gerenciamento de públicos-alvo{#managing-audiences}
+# Gerenciamento de públicos{#managing-audiences}
 
 O console Públicos-alvo permite criar, organizar e gerenciar públicos-alvo da sua conta do Adobe Target ou gerenciar segmentos do ContextHub ou ClientContext:
 
@@ -50,7 +53,7 @@ Para criar um segmento do ContextHub no console Públicos-alvo:
 
    >[!NOTE]
    >
-   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly created audiences.
+   >Classifique a lista modificada ao tocar ou clicar em **Modificado** para classificar por ordem decrescente para ver qualquer público recém-criado.
 
 Para obter mais detalhes sobre como criar segmentos usando o ContextHub, consulte a documentação [Configuração da segmentação com o ContextHub](/help/sites-administering/segmentation.md).
 
@@ -64,7 +67,7 @@ Quando você usa mais de uma regra, elas são combinadas pelo operador booleano 
 
 >[!NOTE]
 >
->If you do not see **Create Target Audience **in the **Create** menu, you do not have the necessary permissions to create an audience. You need write permissions under **/etc/segmentation** to be able to create audiences. O grupo autores de conteúdo tem permissões de gravação por padrão.
+>If you do not see **Create Target Audience **in the **Create** menu, you do not have the necessary permissions to create an audience. You need write permissions under **/etc/segmentation** to be able to create audiences. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
 
 Para criar um público-alvo do Adobe Target:
 
@@ -78,7 +81,7 @@ Para criar um público-alvo do Adobe Target:
 
 1. Na caixa de diálogo **Configurações do Adobe Target**, selecione a configuração de direcionamento e toque ou clique em **OK**.
 1. Na área Regra 1, toque ou clique no tipo de atributo e insira qualquer informação de atributo nos campos disponíveis. Quando terminar, ative a marca de seleção à direita do atributo para salvá-lo. Consulte [Atributos e suas opções](#attributes-and-their-options) para obter informações sobre todos os atributos.
-1. Clique em **Adicionar regra** para adicionar outra regra. Insira quantas regras forem necessárias. As regras são combinadas com o operador booleano AND, o que significa que o público-alvo deve atender a todos os requisitos de cada regra para se qualificar para uma atividade.
+1. Clique em **Adicionar regra** para adicionar outra regra. Insira quantas regras forem necessárias. As regras são combinadas com o operador booleano AND, o que significa que o público-alvo deve atender a todos os requisitos de cada regra para ser elegível para uma atividade.
 1. Toque ou clique em **Próximo**.
 1. Insira um nome para o público-alvo e toque ou clique em **Salvar**.
 1. Tap or click **Save**. Seu público-alvo é listado na lista Público-alvo.
@@ -89,13 +92,13 @@ Você pode criar regras de direcionamento para cada um dos seguintes atributos:
 
 | **Atributo** | **Descrição** | **Para obter mais informações** |
 |---|---|---|
-| **Móvel** | Direcione dispositivos móveis com base em parâmetros como dispositivo móvel, tipo de dispositivo, fornecedor de dispositivo, dimensões de tela (por pixels) e muito mais. | Consulte a documentação [do](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) Mobile no Adobe Target. |
-| **Personalizado** | Parâmetros personalizados são parâmetros de mbox. Se você passar algum parâmetro de mbox para mboxes, ou usar a função targetPageParams, esses parâmetros aparecerão aqui para uso em públicos-alvo. | Consulte a documentação [Parâmetros](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) personalizados no Adobe Target. |
-| **OS** | Você pode direcionar os visitantes que usam um determinado sistema operacional. | Direcionado a usuários que estejam usando Linux, Macintosh ou Windows. |
-| **Páginas do site** | Direcione visitantes que estão em uma página específica ou têm um parâmetro de mbox específico. | Consulte a documentação [de Páginas](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) do site no Adobe Target. |
-| **Navegador** | Você pode direcionar usuários que usam um navegador específico ou opções específicas de navegador quando visitam sua página. | Consulte a documentação de opções [do navegador](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)no Adobe Target. |
-| **Perfil do visitante** | Visitantes do Target que atendem a parâmetros de perfil específicos. | Consulte a documentação [Perfil do](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) visitante no Adobe Target. |
-| **Fontes de tráfego** | Direcione os visitantes com base no mecanismo de pesquisa ou na página de aterrissagem que os faz referência ao site. | Consulte a documentação [Fontes de](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) tráfego no Adobe Target. |
+| **Móvel** | Dispositivos móveis de Público alvo com base em parâmetros como dispositivo móvel, tipo de dispositivo, fornecedor do dispositivo, dimensões de tela (por pixels) e muito mais. | Consulte a documentação [do](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) Mobile em Adobe Target. |
+| **Personalizado** | Parâmetros personalizados são parâmetros de mbox. Se você passar algum parâmetro de mbox para mboxes, ou usar a função targetPageParams, esses parâmetros aparecerão aqui para uso em públicos-alvo. | Consulte a documentação [Parâmetros](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) personalizados em Adobe Target. |
+| **OS** | Você pode público alvo visitantes que usam um determinado sistema operacional. | Direcionado a usuários que estejam usando Linux, Macintosh ou Windows. |
+| **Páginas do site** | visitantes de Público alvo que estão em uma página específica ou têm um parâmetro de mbox específico. | Consulte a documentação [de Páginas](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) do site na Adobe Target. |
+| **Navegador** | Você pode público alvo usuários que usam um navegador específico ou opções específicas de navegador quando visitam sua página. | Consulte [Documentação de opções de](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)navegador no Adobe Target. |
+| **Perfil do visitante** | visitantes de Público alvo que atendem a parâmetros de perfil específicos. | Consulte a documentação [do Perfil do](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) Visitante. |
+| **Fontes de tráfego** | visitantes de Público alvo com base no mecanismo de pesquisa ou na landing page que os referenciam ao site. | Consulte a documentação [Fontes](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) de tráfego no Adobe Target. |
 
 ## Modificação de um público-alvo no console Públicos-alvo {#modifying-an-audience-in-the-audiences-console}
 
