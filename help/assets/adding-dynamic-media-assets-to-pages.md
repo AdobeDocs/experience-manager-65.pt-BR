@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
+source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
 workflow-type: tm+mt
 source-wordcount: '3095'
 ht-degree: 33%
@@ -37,13 +37,13 @@ Adicionar um componente de mídia 3D, Dynamic Media, Interative Media, Panorâmi
 
    Se nenhuma lista de componentes do Dynamic Media estiver disponível, você provavelmente precisará ativar os componentes do Dynamic Media que deseja usar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
-   ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
+   ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
 1. Arraste um componente do **[!UICONTROL Dynamic Media]** que deseja usar e solte-o no local desejado na página.
 
 1. Passe o ponteiro do mouse diretamente no componente. Quando o componente estiver rodeado por uma caixa azul, toque uma vez para exibir a barra de ferramentas do componente. Toque no ícone **[!UICONTROL Configuração (chave)]** .
 
-   ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
+   ![6_5_360video_wcmcomponentconfigure](/help/assets/assets/6_5_360video_wcmcomponentconfigure.png)
 
 1. Dependendo do componente Dynamic Media que você soltou na página, uma caixa de diálogo de configuração é aberta. [Defina as opções](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) do componente conforme necessário.
 
@@ -123,7 +123,6 @@ O componente Dynamic Media é inteligente. Dependendo de você adicionar uma ima
 >
 >* Várias instâncias do componente Dynamic Media sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
-
 >
 >
 Esteja ciente de que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente do Dynamic Media nessa página.
@@ -202,9 +201,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    Com modificadores do visualizador, você pode, por exemplo, fazer o seguinte:
 
-   * Associe um arquivo de legenda a um vídeo: [legenda](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Associe um arquivo de navegação a um vídeo: [navegação](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
-
+   * Associe um arquivo de legenda a um vídeo: [legenda][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Associe um arquivo de navegação a um vídeo: [navigation][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Title**—Altere o título do vídeo.
@@ -259,7 +257,6 @@ O componente de Mídia interativa é inteligente. Dependendo de você adicionar 
 >
 >* Várias instâncias do componente de Mídia interativa sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
-
 >
 >
 Observe que não há suporte para a atribuição de uma predefinição de visualizador diferente para cada componente de Mídia interativa nessa página.
@@ -301,7 +298,6 @@ Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos 
 >
 >* Várias instâncias do componente de Mídia **** panorâmica sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
-
 >
 >
 Observe que não há suporte para a atribuição de uma predefinição do visualizador diferente para cada componente de **[!UICONTROL Mídia panorâmica]** nessa página.
