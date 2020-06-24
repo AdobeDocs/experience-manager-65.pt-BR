@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '11877'
+source-wordcount: '11829'
 ht-degree: 8%
 
 ---
@@ -145,7 +145,7 @@ Para gerenciar um único vídeo e Conjuntos de vídeos adaptáveis, há suporte 
 * Organize, navegue e pesquise vídeos com suporte total a metadados para o gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeo adaptáveis para a Web, desktops e dispositivos móveis, incluindo iPhone, iPad, Android, Blackberry e telefone Windows.
 
-O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte Guia [de referência do](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html)Scene7 Viewers.
+O streaming de vídeo adaptativo é suportado em várias plataformas iOS. Consulte Guia [de referência do](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)Scene7 Viewers.
 
 A Dynamic Media oferece suporte à reprodução de vídeo móvel para vídeo MP4 H.264. Você pode encontrar dispositivos Blackberry compatíveis com este formato de vídeo no seguinte endereço: [Formatos de vídeo suportados no Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -161,7 +161,7 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 Consulte Exemplo de reprodução [](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) de vídeo dinâmica.
 
-Consulte também [Visualizadores do AEM e Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) e [Visualizadores para ativos AEM somente](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) no Guia de referência do Adobe Scene7 Viewers.
+Consulte também [Visualizadores para AEM Assets e Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizadores para ativos AEM somente](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de referência do Adobe Scene7 Viewers.
 
 ## Melhores práticas: Uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -173,7 +173,7 @@ No lado da reprodução do visualizador, ele detecta automaticamente a capacidad
 
 Ao combinar em um único player a capacidade de projetar os componentes de reprodução usando HTML5 e CSS, ter reprodução integrada e usar streaming adaptável e progressivo dependendo da capacidade do navegador, você estende o alcance do conteúdo de mídia avançada para usuários de desktop e móveis e garante uma experiência de vídeo otimizada.
 
-Consulte também [Sobre visualizadores](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) HTML5 no Guia de referência do Adobe Scene7 Viewers.
+Consulte também [Sobre visualizadores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 no Guia de referência do Adobe Scene7 Viewers.
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -1006,11 +1006,11 @@ Se você estiver usando um visualizador de vídeo predefinido fornecido pela Dyn
 
 Use a Referência dos visualizadores do Scene7 e o Scene7 HTML5 Viewers SDK para criar seus próprios visualizadores de vídeo.
 
-Consulte Guia [de referência do](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html)Scene7 Viewers.
+Consulte Guia [de referência do](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)Scene7 Viewers.
 
-Baixe o SDK do visualizador HTML Scene7 do Adobe Developer Connection.
+<!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
-Consulte [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Para visualização de relatórios de vídeo com base em um visualizador de vídeo criado usando o SDK do visualizador HTML5 Scene7:
 
@@ -1073,7 +1073,7 @@ A legendagem também permite maior acessibilidade ao usar legendagem para pessoa
 
 A Dynamic Media tem a capacidade de converter arquivos de legenda em formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear e indexar o conteúdo para tornar os vídeos mais facilmente detectáveis e fornecer aos clientes detalhes adicionais sobre o conteúdo do vídeo.
 
-Consulte [Servindo conteúdo](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) estático (não imagem) na Ajuda *da API de disponibilização de imagem do* Scene7 para obter mais informações sobre como usar a função JSON em um URL.
+Consulte [Servindo conteúdo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) estático (não imagem) na Ajuda *da API de disponibilização de imagem do* Scene7 para obter mais informações sobre como usar a função JSON em um URL.
 
 Para adicionar legendas ou legendas ao vídeo:
 
