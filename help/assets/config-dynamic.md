@@ -40,7 +40,6 @@ Saiba mais sobre como trabalhar com [vídeo](/help/assets/video.md) no Dynamic M
 >
 >* `s7access.log`
 >* `ImageServing.log`
-
 >
 >
 Eles estão documentados em [Monitoramento e manutenção da sua instância](/help/sites-deploying/monitoring-and-maintaining.md)do AEM.
@@ -177,10 +176,8 @@ Para habilitar a mídia dinâmica, você deve habilitar o modo de execução de 
    >Para solucionar problemas com o Dynamic Media, consulte os seguintes registros no `crx-quickstart/logs/` diretório:
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - O log do ImageServer fornece estatísticas e informações analíticas usadas para analisar o comportamento do processo interno do ImageServer.
-
    Exemplo de um nome de arquivo de log do Servidor de Imagens: `ImageServer-57346-2020-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - o registro s7access registra cada solicitação feita à Dynamic Media por meio `/is/image` e `/is/content`.
-
    Esses registros só são usados quando o Dynamic Media está ativado. Eles não estão incluídos no pacote **Download completo** gerado a partir da `system/console/status-Bundlelist` página; ao entrar em contato com o Suporte ao cliente se tiver um problema com a Dynamic Media, anexe ambos os registros ao problema.
 
 ### Se você instalou o AEM em uma porta ou um caminho de contexto diferente... {#if-you-installed-aem-to-a-different-port-or-context-path}
@@ -193,7 +190,7 @@ Quando o Dynamic Media está ativado, as renderizações de miniatura estáticas
 
 No AEM:
 
-* O domínio **próprio** no [externalizador](/help/sites-developing/externalizer.md) é usado para recuperar o número da porta e o caminho do contexto.
+* O domínio **self** no [externalizador](/help/sites-developing/externalizer.md) é usado para recuperar o número da porta e o caminho do contexto.
 * Se nenhum domínio **próprio** estiver configurado, o número da porta e o caminho do contexto serão recuperados do serviço HTTP Jetty.
 
 Em uma implantação WAR do QuickStart do AEM, o número da porta e o caminho do contexto não podem ser derivados; portanto, você deve configurar um domínio **próprio** . Consulte a documentação [do](/help/sites-developing/externalizer.md) externalizador sobre como configurar o domínio **próprio** .
@@ -286,7 +283,6 @@ Para alterar o limite de memória para a criação do PTIFF, navegue até **[!UI
    * No campo Senha **[!UICONTROL do arquivo]** KeyStore, digite a senha do arquivo KeyStore. Esta **não** é a senha do KeyStore que você criou na Etapa 5, mas é a senha do Arquivo KeyStore que a Adobe fornece no email de boas-vindas enviado a você durante o provisionamento. Entre em contato com o Atendimento ao cliente da Adobe se você não recebeu uma senha do Arquivo KeyStore.
    * No campo Senha **[!UICONTROL da chave]** privada, digite a senha da chave privada (pode ser a mesma senha da chave privada fornecida na etapa anterior). A Adobe fornece a senha da chave privada no email de boas-vindas enviado a você durante o provisionamento. Entre em contato com o Atendimento ao cliente da Adobe se você não recebeu uma senha de chave privada.
    * No campo Alias **[!UICONTROL da chave]** privada, informe o alias da chave privada. Por exemplo, `*companyname*-alias`. A Adobe fornece o alias da chave privada no email de boas-vindas enviado a você durante o provisionamento. Entre em contato com o Atendimento ao cliente da Adobe se você não recebeu um alias de chave privada.
-
    ![edit_settings_fordynamic-media-Replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. Toque em **[!UICONTROL Salvar e fechar]** para salvar suas alterações neste usuário.
@@ -305,7 +301,6 @@ Para alterar o limite de memória para a criação do PTIFF, navegue até **[!UI
    * **[!UICONTROL ID]** do inquilino - esse valor é o nome da sua empresa/inquilino que está publicando no Serviço de Replicação. Esse valor é a ID do locatário fornecida pela Adobe no email de boas-vindas enviado a você durante o provisionamento. Entre em contato com o Atendimento ao cliente da Adobe se você não recebeu essa notificação.
    * **[!UICONTROL Alias]** do armazenamento de chave - Esse valor é o mesmo que o valor** New Alias*** definido ao gerar a chave na [Configuração da autenticação](#setting-up-authentication); por exemplo, `replication`. (Consulte a etapa 7 na [configuração da autenticação](#setting-up-authentication).)
    * **[!UICONTROL Senha]** do armazenamento de chaves - esta é a senha do KeyStore criada quando você tocou em **[!UICONTROL Criar armazenamento de chaves.]** A Adobe não fornece esta senha. Consulte a etapa 5 de [Configuração da autenticação](#setting-up-authentication).
-
    A imagem a seguir mostra o agente de replicação com dados de amostra:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
