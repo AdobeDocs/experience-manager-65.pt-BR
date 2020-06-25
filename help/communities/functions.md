@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+workflow-type: tm+mt
+source-wordcount: '2458'
+ht-degree: 6%
 
 ---
 
@@ -29,27 +32,27 @@ Depois que um site da comunidade é criado, o conteúdo pode ser adicionado às 
 
 ## Console de funções da comunidade {#community-functions-console}
 
-No ambiente author, para acessar o console de funções da comunidade:
+Para acessar o console de funções da comunidade no ambiente do autor:
 
-* Da navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > Funções **[!UICONTROL da comunidade]**.
+* Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > Funções **[!UICONTROL da]** comunidade.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-379](assets/chlimage_1-379.png)
 
 ## Funções pré-criadas {#pre-built-functions}
 
-Veja a seguir uma breve descrição das funções fornecidas com o AEM Communities. Cada função inclui uma ou mais páginas AEM que contêm componentes Comunidades conectados em conjunto em um recurso que é facilmente incorporado a um modelo [de site da](/help/communities/sites.md)comunidade.
+Veja a seguir uma breve descrição das funções fornecidas com os AEM Communities. Cada função inclui uma ou mais páginas AEM que contêm componentes Comunidades conectados em conjunto em um recurso que é facilmente incorporado a um modelo [de site da](/help/communities/sites.md)comunidade.
 
 Um modelo de site da comunidade fornece a estrutura para um site da comunidade, incluindo logon, perfis do usuário, notificações, mensagens, menu do site, pesquisa, tema e recursos de marca.
 
 ### Configurações de título e URL {#title-and-url-settings}
 
-**Título **e **URL **são propriedades comuns a todas as funções da comunidade.
+**Título** e **URL** são propriedades comuns a todas as funções da comunidade.
 
 Quando uma função da comunidade é adicionada a um modelo de site da comunidade ou adicionada ao [modificar](/help/communities/sites-console.md#modifying-site-properties) a estrutura de um site da comunidade, a caixa de diálogo da função é aberta para que o Título e o URL possam ser configurados.
 
 #### Detalhes da função de configuração {#configuration-function-details}
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+![chlimage_1-380](assets/chlimage_1-380.png)
 
 * **Título**
 
@@ -68,7 +71,7 @@ Em seguida, o URL da página é https://localhost:4503/content/sites/engage/en/p
 
 e o link de menu da página é exibido como:
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![chlimage_1-381](assets/chlimage_1-381.png)
 
 ### Função de fluxo de atividades {#activity-stream-function}
 
@@ -78,7 +81,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 #### Detalhes da função de configuração {#configuration-function-details-1}
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-302](assets/chlimage_1-382.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -108,7 +111,7 @@ A função de blog é uma página com um componente [de](/help/communities/blog-
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![chlimage_1-383](assets/chlimage_1-383.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -134,7 +137,7 @@ A função de calendário é uma página com um componente [de](/help/communitie
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -199,7 +202,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 #### Detalhes da função de configuração {#configuration-function-details-2}
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -227,7 +230,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 >[!CAUTION]
 >
->A função groups não deve *ser a *primeira nem a única* função na estrutura de um site ou em um modelo de site da comunidade.
+>A função de grupos *não* deve ser a *primeira nem a única* função na estrutura de um site ou em um modelo de site da comunidade.
 >
 >Qualquer outra função, como a função [de](#page-function)página, deve ser incluída e listada primeiro.
 
@@ -242,7 +245,7 @@ No pacote de [recursos Comunidades 1](/help/communities/deploy-communities.md#la
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![chlimage_1-386](assets/chlimage_1-386.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -265,7 +268,7 @@ A função de ideação é uma página com um componente [de](/help/communities/
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, que especifica os nomes padrão de Título e URL, bem como as configurações de exibição padrão do modelo:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-387](assets/chlimage_1-387.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -293,7 +296,7 @@ A função de quadro de líderes é uma página com um componente [de](/help/com
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, que especifica os nomes padrão de Título e URL, bem como as configurações de exibição padrão do modelo:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-388](assets/chlimage_1-388.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -324,7 +327,7 @@ A função QnA é uma página com um componente [](/help/communities/working-wit
 
 Quando adicionada a um modelo, a configuração permite a restrição para membros privilegiados:
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -352,11 +355,11 @@ Quando adicionada a um modelo, a configuração permite a restrição para membr
 
 A capacidade de criar uma função da comunidade é alcançada selecionando o `Create Community Function` ícone localizado na parte superior do console Funções da comunidade. Várias funções baseadas no mesmo Blueprint do AEM podem ser criadas e personalizadas exclusivamente ao abrir no modo de edição do autor.
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![chlimage_1-390](assets/chlimage_1-390.png)
 
 ### Nome da função da comunidade {#community-function-name}
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![chlimage_1-391](assets/chlimage_1-391.png)
 
 No painel Nome da função da comunidade, um nome, uma descrição e se a função está ativada ou desativada são configurados:
 
@@ -374,7 +377,7 @@ No painel Nome da função da comunidade, um nome, uma descrição e se a funç�
 
 ### Blueprint AEM {#aem-blueprint}
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![chlimage_1-392](assets/chlimage_1-392.png)
 
 No `AEM Blueprint` painel, é possível selecionar o blueprint que é a implementação subjacente da função da comunidade.
 
@@ -384,15 +387,15 @@ Como a função da comunidade é implementada como uma cópia [](/help/sites-adm
 
 Consulte também [Gerenciador](/help/sites-administering/msm.md)de vários sites.
 
-### Miniatura    {#thumbnail}
+### Miniatura     {#thumbnail}
 
-![chlimage_1-120](assets/chlimage_1-120.png)
+![chlimage_1-393](assets/chlimage_1-393.png)
 
 No painel Miniaturas, uma imagem pode ser carregada para ser exibida no console [Funções da](#community-functions-console)comunidade.
 
 ## Abrir função da comunidade {#open-community-function}
 
-![chlimage_1-121](assets/chlimage_1-121.png)
+![chlimage_1-394](assets/chlimage_1-394.png)
 
 Selecione o `Open Community Function` ícone para entrar no modo de edição do autor para criar o conteúdo da página e modificar a configuração dos componentes do recurso.
 
@@ -408,6 +411,6 @@ Para obter detalhes sobre a configuração, visite Componentes [de](/help/commun
 
 ## Editar função da comunidade {#edit-community-function}
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![chlimage_1-395](assets/chlimage_1-395.png)
 
 Selecione o `Edit Community Function` ícone para editar as propriedades da função usando os mesmos painéis que [criar uma função](#create-community-function)da comunidade, incluindo ativar ou desativar a função.
