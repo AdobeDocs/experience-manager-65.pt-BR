@@ -3,7 +3,7 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -77,17 +77,17 @@ Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 
 A API HTTP Assets inclui os seguintes recursos:
 
-* Recuperar uma lista de pastas.
-* Criar uma pasta.
-* Criar um ativo.
-* Atualize o binário do ativo.
-* Atualize os metadados do ativo.
-* Crie uma representação de ativo.
-* Atualizar uma representação de ativo.
-* Crie um comentário de ativo.
-* Copie uma pasta ou um ativo.
-* Mova uma pasta ou um ativo.
-* Exclua uma pasta, ativo ou representação.
+* [Recuperar uma lista](#retrieve-a-folder-listing)de pastas.
+* [Criar uma pasta](#create-a-folder).
+* [Criar um ativo](#create-an-asset).
+* [Atualize o binário](#update-asset-binary)do ativo.
+* [Atualize os metadados](#update-asset-metadata)do ativo.
+* [Crie uma representação](#create-an-asset-rendition)de ativo.
+* [Atualizar uma representação](#update-an-asset-rendition)de ativo.
+* [Crie um comentário](#create-an-asset-comment)de ativo.
+* [Copie uma pasta ou um ativo](#copy-a-folder-or-asset).
+* [Mova uma pasta ou um ativo](#move-a-folder-or-asset).
+* [Exclua uma pasta, ativo ou representação](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
