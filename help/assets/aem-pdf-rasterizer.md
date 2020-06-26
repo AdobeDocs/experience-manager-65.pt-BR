@@ -3,9 +3,9 @@ title: Use o rasterizador de PDF para gerar execuções de arquivos PDF.
 description: Gere miniaturas e execuções de alta qualidade usando a biblioteca do Adobe PDF Rasterizer no [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 21f30cf67b73d26afc3f0413ca997a0b6e46e3d3
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Ao fazer upload de arquivos PDF ou AI grandes e com grande quantidade de conteú
 
 As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor qualidade em comparação com a saída predefinida e, portanto, proporcionam uma experiência de visualização consistente em todos os dispositivos. A biblioteca do Adobe PDF Rasterizer não suporta nenhuma conversão de espaço de cor. Sempre resulta em RGB independentemente do espaço de cor do arquivo de origem.
 
-1. Instale o pacote PDF Rasterizer na sua [!DNL Experience Manager] implantação a partir de [Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) de pacotes ou Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
+1. Instale o pacote PDF Rasterizer na sua [!DNL Adobe Experience Manager] implantação a partir da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)software.
 
    >[!NOTE]
    >
@@ -32,9 +32,11 @@ As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor
 1. Para impedir a geração de miniaturas e execuções da Web para arquivos PDF e arquivos AI usando os métodos padrão, siga estas etapas:
 
    * Abra a etapa **[!UICONTROL Processar miniaturas]** e adicione `application/pdf` ou `application/postscript` no campo **[!UICONTROL Ignorar tipos]** MIME na guia **[!UICONTROL Miniaturas]** , conforme necessário.
+
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * Na guia Imagem **[!UICONTROL ativada pela]** Web, adicione `application/pdf` ou `application/postscript` em **[!UICONTROL Ignorar Lista]** , dependendo de seus requisitos.
+
    ![Configuração para ignorar o processamento de miniaturas para um formato de imagem](assets/web_enabled_imageskiplist.png)
 
 1. Abra a etapa **[!UICONTROL Rasterizar representação de Pré-visualização]** de imagem PDF/AI e remova o tipo MIME para o qual você deseja ignorar a geração padrão de representações de imagem de pré-visualização. Por exemplo, remova o tipo MIME `application/pdf`, `application/postscript`ou `application/illustrator` da lista **[!UICONTROL MIME Types]** .
@@ -47,6 +49,7 @@ As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor
    * Tipos MIME: `application/pdf` ou `application/postscript`
    * Comandos: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Adicionar tamanhos de miniaturas: 319:319, 140:100, 48:48. Adicione uma configuração de miniatura personalizada, se necessário.
+
    Os argumentos da linha de comando para o `PDFRasterizer` comando podem incluir o seguinte:
 
    * `-d`: Sinalizador para ativar a renderização suave de texto, arte vetorial e imagens. Cria imagens de melhor qualidade. No entanto, a inclusão desse parâmetro faz com que o comando seja executado lentamente e aumente o tamanho das imagens.
@@ -84,6 +87,7 @@ As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor
 
    * Comandos: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Adicionar tamanhos de miniaturas: `319:319`, `140:100`, `48:48`. Adicione uma configuração de miniatura personalizada, conforme necessário.
+
    Os argumentos da linha de comando para o `PDFRasterizer` comando podem incluir o seguinte:
 
    * `-d`: Sinalizador para ativar a renderização suave de texto, arte vetorial e imagens. Cria imagens de melhor qualidade. No entanto, a inclusão desse parâmetro faz com que o comando seja executado lentamente e aumente o tamanho das imagens.
