@@ -3,9 +3,9 @@ title: Biblioteca de transcodificação de imagens
 description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens da Adobe, uma solução de processamento de imagens que pode executar funções essenciais de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Os argumentos da linha de comando para a Biblioteca de transcodificação de ima
 
 Você pode configurar as seguintes opções para o `-resize` parâmetro:
 
-* `X`: Funciona de forma semelhante ao Experience Manager. Por exemplo - resize 319.
+* `X`: Funciona como o Experience Manager. Por exemplo - resize 319.
 * `WxH`: A proporção não é mantida, por exemplo `-resize 319x319`.
 * `Wx`: Corrige a largura e calcula a altura mantendo a proporção. Por exemplo `-resize 319x`.
 * `xH`: Corrige a altura e calcula a largura que mantém a proporção. Por exemplo `-resize x319`.
@@ -74,7 +74,7 @@ Para configurar o processamento ITL, crie um arquivo de configuração e atualiz
 
 Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas usando as etapas a seguir. Você precisa de permissões de administrador ou raiz.
 
-1. Baixe o pacote da Biblioteca de transcodificação de [imagens do Compartilhamento](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de pacotes ou da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) software e instale-o usando o Gerenciador de pacotes. O pacote é compatível com o Experience Manager 6.5.
+1. Baixe o pacote da Biblioteca de transcodificação de [imagens da Distribuição](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de software e instale-o usando o Gerenciador de pacotes. O pacote é compatível com a Experience Manager 6.5.
 
 1. Para saber uma ID de pacote para `com.day.cq.dam.cq-dam-switchengine`, faça logon no Console da Web e clique em **[!UICONTROL OSGi > Pacotes]**. Como alternativa, para abrir o console de pacotes, acesse o `https://[aem_server:[port]/system/console/bundles/` URL. Localize o `com.day.cq.dam.cq-dam-switchengine` pacote e sua ID.
 
@@ -92,7 +92,7 @@ Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas 
 
 1. Execute `ldconfig` o comando para criar os links e o cache necessários.
 
-1. Na conta usada para o start Experience Manager, edite o arquivo `.bash_profile` . Adicione `LD_LIBRARY_PATH` adicionando o seguinte.
+1. Na conta usada para start, edite o arquivo `.bash_profile` . Adicione `LD_LIBRARY_PATH` adicionando o seguinte.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -126,6 +126,7 @@ Por exemplo, se você quiser criar miniaturas para uma imagem TIFF usando a Bibl
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![calúnia](assets/chlimage_1-199.png)
 
 1. (Opcional) Gere miniaturas de uma execução intermediária usando um único comando. A execução intermediária atua como fonte para gerar representações estáticas e da Web. Este método é mais rápido do que o método anterior. No entanto, não é possível aplicar parâmetros personalizados a miniaturas usando esse método.
