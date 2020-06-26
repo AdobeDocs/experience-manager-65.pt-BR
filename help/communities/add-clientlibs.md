@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 2%
 
 ---
 
@@ -33,9 +36,9 @@ O valor de `categories`propriedade fornecido para essa biblioteca de cliente é 
 
 1. Clique em **OK**
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![chlimage_1-220](assets/chlimage_1-220.png)
 
-Na guia **Propriedades** do novo `clientlibs` nó, digite a propriedade **category** :
+Na guia **Propriedades** do novo `clientlibs` nó, digite a propriedade **categoria** :
 
 * Nome : **categorias**
 * Tipo: **String**
@@ -43,7 +46,7 @@ Na guia **Propriedades** do novo `clientlibs` nó, digite a propriedade **catego
 * Clique em **Adicionar**
 * Clique em **Salvar tudo**
 
-Observação: como pré-visualizar o valor das categorias com &quot;aplicativos&quot;. é uma convenção para identificar o &quot;aplicativo proprietário&quot; como estando na pasta /apps, não /libs.  IMPORTANTE: Adicione espaço reservado `js.tx`a e **`css.txt`** arquivos. (Não é oficialmente uma cq:ClientLibraryFolder sem eles.)
+Observação: como visualizar o valor do categoria com &quot;aplicativos&quot;. é uma convenção para identificar o &quot;aplicativo proprietário&quot; como estando na pasta /apps, não /libs.  IMPORTANTE: Adicione espaço reservado `js.tx`a e **`css.txt`** arquivos. (Não é oficialmente uma cq:ClientLibraryFolder sem eles.)
 
 1. Clique com o botão direito do mouse em **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Selecione **Criar Arquivo...**
@@ -52,7 +55,7 @@ Observação: como pré-visualizar o valor das categorias com &quot;aplicativos&
 1. Enter **Name:** `js.txt`
 1. Clique em **Salvar tudo**
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![chlimage_1-221](assets/chlimage_1-221.png)
 
 A primeira linha do css.txt e do js.txt identifica o local base a partir do qual as seguintes listas de arquivos são encontradas.
 
@@ -96,27 +99,27 @@ Nesse caso, incluindo todos e, portanto, os clientlibs SCF mais básicos que sã
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * click **OK**
+      * Clique em **OK**
 
 * Clique em **Salvar tudo**
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![chlimage_1-222](assets/chlimage_1-222.png)
 
 É assim que agora `/etc/designs/an-scf-sandbox/clientlibs` deve aparecer no repositório:
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 ### Incluir Clientlibs no modelo PlayPage {#include-clientlibs-in-playpage-template}
 
-Sem incluir a categoria `apps.an-scf-sandbox` ClientLibraryFolder na página, os componentes do SCF não serão funcionais nem estilizados, pois os Javascript e os estilos necessários não estarão disponíveis.
+Sem incluir a categoria `apps.an-scf-sandbox` ClientLibraryFolder na página, os componentes do SCF não estarão funcionais nem com estilo, pois os Javascript e o(s) estilo(s) necessários não estarão disponíveis.
 
 Por exemplo, sem incluir clientlibs, o componente de comentários SCF aparece sem estilo:
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![chlimage_1-224](assets/chlimage_1-224.png)
 
 Depois que apps.an-scf-sandbox clientlibs é incluído, o componente de comentários SCF aparece no estilo :
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![chlimage_1-225](assets/chlimage_1-225.png)
 
 A instrução include pertence à seção `head` do `html` script. O padrão **`foundation head.jsp`** inclui um script que pode ser sobreposto: **`headlibs.jsp`**.
 
@@ -127,7 +130,7 @@ A instrução include pertence à seção `head` do `html` script. O padrão **`
 1. Clique com o botão direito do mouse e selecione **Copiar** (ou selecione Copiar na barra de ferramentas)
 1. Selecionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Clique com o botão direito do mouse e selecione **Colar** (ou selecione Colar na barra de ferramentas)
-1. Clique duas vezes **`headlibs.jsp`** para abri-lo
+1. Clique no Duplo para **`headlibs.jsp`** abri-lo
 1. Anexar a seguinte linha ao final do arquivo
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
@@ -147,13 +150,13 @@ Carregue seu site no navegador e veja se o plano de fundo não é uma sombra de 
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-53](assets/chlimage_1-53.png)
+![chlimage_1-226](assets/chlimage_1-226.png)
 
 ### Salvando Seu Trabalho Até Agora {#saving-your-work-so-far}
 
-Nesse ponto, existe uma caixa de proteção minimalista e pode valer a pena salvar como um pacote para que, durante a reprodução, se o repositório ficar corrompido e você desejar iniciar novamente, você possa desligar, renomear ou excluir a pasta crx-quickstart/, ligar o servidor, carregar e instalar esse pacote salvo e não precisar repetir essas etapas mais básicas.
+Nesse ponto, existe uma caixa de proteção minimalista e pode valer a pena salvar como um pacote para que, durante a reprodução, se o repositório ficar corrompido e você desejar start, desative, renomeie ou exclua a pasta crx-quickstart/, ligue o servidor, carregue e instale esse pacote salvo e não precise repetir essas etapas mais básicas.
 
-Este pacote existe no tutorial [Criar uma página](/help/communities/create-sample-page.md) de amostra para aqueles que não podem esperar para pular e começar a reproduzir!...
+Este pacote existe no tutorial [Criar uma página](/help/communities/create-sample-page.md) de amostra para aqueles que não podem esperar para pular e reproduzir start!...
 
 Para criar um pacote:
 
@@ -167,7 +170,7 @@ Para criar um pacote:
 
 * Clique em **Editar**
 
-   * Guia Selecionar **filtros**
+   * Guia Selecionar **Filtros**
 
       * Clique em **Adicionar filtro**
       * Caminho raiz: navegar até `/apps/an-scf-sandbox`
