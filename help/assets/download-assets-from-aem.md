@@ -3,9 +3,9 @@ title: Baixe ativos digitais [!DNL Adobe Experience Manager].
 description: Saiba como baixar ativos [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '794'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 
 **Para baixar ativos,**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel esquerdo, toque em **[!UICONTROL Navegação]**.
 1. Na página Navegação, toque em **[!UICONTROL Ativos > Arquivos.]**
 1. Navegue até uma pasta que contenha ativos que você deseja baixar.
 1. Selecione a pasta ou selecione um ou mais ativos na pasta.
