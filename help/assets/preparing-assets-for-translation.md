@@ -3,7 +3,7 @@ title: Preparar ativos para tradução
 description: Crie pastas raiz de idioma para preparar ativos para tradução para suportar ativos multilíngues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues.
 
-Nos ativos Adobe Experience Manager, os ativos multilíngues são incluídos nas pastas, onde cada pasta contém os ativos em um idioma diferente.
+Nos ativos Adobe Experience Manager, ativos multilíngues são incluídos em pastas, onde cada pasta contém os ativos em um idioma diferente.
 
 Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, */content/dam/it* é a raiz do idioma italiano para a cópia em italiano. As cópias de idioma devem usar uma raiz [de idioma configurada](preparing-assets-for-translation.md#creating-a-language-root) corretamente para que o idioma correto seja direcionado quando as traduções dos ativos de origem forem executadas.
 
@@ -58,10 +58,10 @@ Por exemplo, a página raiz da cópia em idioma italiano da hierarquia de amostr
 
 ## raízes da língua Visualização {#viewing-language-roots}
 
-A interface do Experience Manager fornece um painel **[!UICONTROL Referências]** que exibe uma lista de raízes de idioma que foram criadas nos Ativos.
+A interface do Experience Manager fornece um painel **[!UICONTROL Referências]** que exibe uma lista de raízes de idioma que foram criadas em Ativos.
 
 1. No console Ativos, selecione o idioma principal para o qual deseja criar cópias de idioma.
-1. Clique no ícone GlobalNav e escolha **[!UICONTROL Referências]** para abrir o painel [!UICONTROL Referência] .
+1. No painel esquerdo, selecione a opção **[!UICONTROL Referências]** para abrir o painel [!UICONTROL Referência] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
