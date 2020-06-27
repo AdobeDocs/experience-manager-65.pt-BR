@@ -3,9 +3,9 @@ title: Gerencie metadados de muitos ativos e coleções no Adobe Enterprise Mana
 description: Edite os metadados de vários ativos e coleções simultaneamente para propagar rapidamente alterações comuns de metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,7 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
 
 1. Na interface do usuário Ativos, navegue até o local dos ativos que deseja editar.
 1. Selecione os ativos para os quais deseja editar propriedades comuns.
-1. Na barra de ferramentas, clique no ícone **[!UICONTROL Propriedades]** para abrir a página de propriedades dos ativos selecionados.
+1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]** para abrir a página de propriedades dos ativos selecionados.
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
    >* Na parte superior da lista de ativos, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre a seleção dos ativos e a limpeza da lista.
 
 
-1. Para selecionar um schema de metadados diferente para os ativos, clique no ícone **[!UICONTROL Configurações]** na barra de ferramentas e selecione o schema desejado.
+1. Para selecionar um schema de metadados diferente para os ativos, clique em **[!UICONTROL Configurações]** na barra de ferramentas e selecione o schema desejado.
 1. Salve as alterações.
 1. Para anexar os novos metadados aos existentes em campos que contêm vários valores, selecione o **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Clique em **[!UICONTROL Enviar]**.
 
