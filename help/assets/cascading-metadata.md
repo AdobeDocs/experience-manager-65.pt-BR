@@ -1,9 +1,12 @@
 ---
-title: Metadados em cascata em [!DNL Adobe Experience Manager Assets].
+title: Metadados em cascata [!DNL Adobe Experience Manager Assets].
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +26,7 @@ Estes são alguns casos de uso para os quais você pode definir metadados em cas
 * Opções de alteração exibidas para um campo específico com base no valor especificado em outro campo.
 * Defina o valor de metadados padrão em um campo específico com base no valor especificado em outro campo.
 
-## Configurar metadados em cascata em [!DNL Experience Manager]{#configure-cascading-metadata-in-aem}
+## Configurar metadados em cascata em [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Considere um cenário em que você deseja exibir metadados em cascata com base no tipo de ativo selecionado. Alguns exemplos
 
@@ -62,7 +65,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    >[!NOTE]
    >
-   >Ao adicionar opções, se você clicar no campo Suspenso, a interface fica distorcida e o ícone Excluir das opções para de funcionar. Não clique na lista suspensa até salvar as alterações. Se você enfrentar esse problema, salve o schema e abra-o novamente para continuar a edição.
+   >Ao adicionar opções, se você clicar no campo Suspenso, a interface fica distorcida e a opção Excluir das opções para de funcionar. Não clique na lista suspensa até salvar as alterações. Se você enfrentar esse problema, salve o schema e abra-o novamente para continuar a edição.
 
 1. (Opcional) Adicione os outros campos obrigatórios. Por exemplo, formato, codec e duração do tipo de ativo de vídeo.
 
