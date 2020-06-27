@@ -3,7 +3,7 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Ativar insights de ativos por meio do DTM {#enable-asset-insights-through-dtm}
 
-O Gerenciamento dinâmico de tags da Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. É fornecido gratuitamente para clientes do Adobe Analytics.
+O Gerenciamento dinâmico de tags da Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. É fornecido gratuitamente para clientes da Adobe Analytics.
 
 Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, a Adobe recomenda usar o DTM para inserir tags do Asset Insights.
 
@@ -24,23 +24,24 @@ Embora você possa personalizar seu código de rastreamento para permitir que so
 Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
 1. Clique no logotipo do Experience Manager e vá até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Configuração **[!UICONTROL de]** insights.
-1. [Configurar a instância do Experience Manager com o serviço da DTM Cloud](/help/sites-administering/dtm.md)
+1. [Configurar instância Experience Manager com Cloud Service DTM](/help/sites-administering/dtm.md)
 
-   O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar Configurações **[!UICONTROL da]** conta no ícone Perfil. Essa etapa não é necessária do ponto de vista Asset Insights, pois a integração dos Sites do Experience Manager com Asset Insights ainda está em andamento.
+   O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar Configurações **[!UICONTROL da]** conta no Perfil do usuário. Essa etapa não é necessária do ponto de vista Asset Insights, pois a integração dos Experience Manager Sites com Asset Insights ainda está em andamento.
 
-1. Faça logon em [https://dtm.adobe.com](https://dtm.adobe.com/)e selecione uma Empresa, conforme apropriado.
-1. Criar/abrir uma propriedade da Web existente
+1. Faça logon em [https://dtm.adobe.com](https://dtm.adobe.com/)e selecione uma empresa, conforme apropriado.
+1. Criar ou abrir uma propriedade da Web existente
 
    * Selecione a guia Propriedades **[!UICONTROL da]** Web e clique em **[!UICONTROL Adicionar propriedade]**.
 
    * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://helpx.adobe.com/experience-manager/using/dtm.html).
+
    ![Criar propriedade da Web de edição](assets/Create-edit-web-property.png)
 
 1. Na guia **[!UICONTROL Regras]** , selecione Regras **[!UICONTROL de carregamento de]** página no painel de navegação e clique em **[!UICONTROL Criar nova regra]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Expanda **[!UICONTROL Javascript /Tags]** de terceiros. Em seguida, clique em **[!UICONTROL Adicionar novo script]** na guia HTML **** sequencial para abrir a caixa de diálogo Script.
+1. Expanda **[!UICONTROL JavaScript /Tags]** de terceiros. Em seguida, clique em **[!UICONTROL Adicionar novo script]** na guia HTML **** sequencial para abrir a caixa de diálogo Script.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
@@ -57,7 +58,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
 1. Acesso `https://dtm.adobe.com`. Clique em **[!UICONTROL Visão geral]** na propriedade da Web e clique em **[!UICONTROL Adicionar ferramenta]** ou abra uma ferramenta Adobe Analytics existente. Ao criar a ferramenta, você pode definir Método **** de configuração como **[!UICONTROL Automático]**.
 
-   ![Adicionar a ferramenta Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
+   ![Adicionar ferramenta Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
    Selecione Conjuntos de relatórios de armazenamento temporário/produção, conforme apropriado.
 
