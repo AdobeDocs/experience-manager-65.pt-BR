@@ -1,11 +1,11 @@
 ---
 title: Sobre os ativos Adobe Experience Manager
-description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e a oferta de ativos do Experience Manager da Adobe
+description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e a oferta de ativos de Experience Manager da Adobe
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '879'
 ht-degree: 55%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 55%
 
 # Administrar ativos {#administering-assets}
 
-O Assets é uma ferramenta de Gerenciamento de ativos digitais (DAM) totalmente integrada à plataforma Experience Manager e permite que sua empresa compartilhe e distribua ativos digitais. Os usuários em uma organização podem armazenar, gerenciar e acessar imagens, vídeos, documentos, clipes de áudio e mídias avançadas como arquivos Flash para uso na Web, em impressões e para distribuição digital.
+O Assets é uma ferramenta de Gerenciamento de ativos digitais (DAM) que é totalmente integrada à plataforma do Experience Manager e permite que sua empresa compartilhe e distribua ativos digitais. Os usuários em uma organização podem armazenar, gerenciar e acessar imagens, vídeos, documentos, clipes de áudio e mídias avançadas como arquivos Flash para uso na Web, em impressões e para distribuição digital.
 
 ## O que é o Gerenciamento de ativos digitais? {#what-is-digital-asset-management}
 
@@ -28,9 +28,9 @@ Bem integrado ao Experience Manager, o recurso Ativos permite fazer o seguinte:
 * Executar funções de edição de imagens como redimensionamento e adição de filtros de imagem. Importar e exportar vários ativos digitais simultaneamente usando uma pasta WebDAV ou CIFS.
 * Usar fluxos de trabalho e notificações para habilitar o processamento conjunto e o download de qualquer conjunto de ativos e gerenciar direitos de acesso a ativos.
 
-### Os ativos do Experience Manager são integrados aos Sites do Experience Manager {#aem-assets-fully-integrated-in-cq-wcm}
+### O Experience Manager Assets é integrado ao Experience Manager Sites {#aem-assets-fully-integrated-in-cq-wcm}
 
-Os ativos são totalmente integrados aos Sites e a funcionalidade está disponível usando o ícone DAM. Os ativos digitais gerenciados no repositório do Assets podem ser acessados pelo localizador de conteúdo ao criar páginas da Web.
+Os ativos são totalmente integrados ao Sites e todos os recursos estão disponíveis sem problemas. Os ativos digitais gerenciados no repositório do Assets podem ser acessados pelo localizador de conteúdo ao criar páginas da Web.
 
 A interface básica do usuário é a mesma do Sites. Consulte [Visão geral dos sites](/help/sites-authoring/page-authoring.md) para obter detalhes completos.
 
@@ -49,9 +49,9 @@ Um ativo é essencialmente um binário com metadados, além de representações 
 
 >[!CAUTION]
 >
->Fazer upload e/ou editar um grande volume de ativos (especialmente imagens) pode afetar o desempenho da sua instância do Experience Manager.
+>Fazer upload e/ou editar um grande volume de ativos (especialmente imagens) pode afetar o desempenho da instância do Experience Manager.
 
-### Terminologia do Experience Manager Assets {#aem-assets-terminology}
+### terminologia do Experience Manager Assets {#aem-assets-terminology}
 
 Ao trabalhar com ativos digitais no Experience Manager, é necessário compreender a seguinte terminologia:
 
@@ -84,6 +84,6 @@ As tarefas que você pode executar com esses workflows pré-configurados:
 
 E claro, é possível aplicar fluxos de trabalho manualmente. Consulte [Manipuladores de mídia do Assets](/help/assets/media-handlers.md) para obter uma lista de fluxos de trabalho padrão.
 
-## Ativos do Experience Manager e MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## Experience Manager Assets e MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
 Consulte [Ativos e MediaLibrary](/help/assets/medialibrary.md) para obter informações sobre as diferenças.
