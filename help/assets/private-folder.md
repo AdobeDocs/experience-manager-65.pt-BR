@@ -1,11 +1,11 @@
 ---
 title: Crie e compartilhe uma pasta privada no Adobe Experience Manager.
-description: Saiba como criar uma pasta privada nos ativos Adobe Experience Manager e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
+description: Saiba como criar uma pasta privada nos Ativos do Adobe Experience Manager e compartilhá-los com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -13,12 +13,11 @@ ht-degree: 0%
 
 # Compartilhamento de pasta particular {#private-folder-sharing}
 
-Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Experience Manager que esteja disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
+Você pode criar uma pasta privada na interface do usuário dos Ativos do Adobe Experience Manager que esteja disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
 
 >[!NOTE]
 >
 > A pasta privada tem pelo menos um membro com a função Proprietário.
-
 
 1. No console Ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
 
@@ -32,7 +31,7 @@ Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Exp
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,7 +57,7 @@ Você pode criar uma pasta privada na interface do usuário dos ativos Adobe Exp
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Clique no ícone Notificação para abrir a lista de notificações.
+1. Clique em Notificações para abrir a lista de notificações.
 
    ![Lista das notificações](assets/Assets-Notification.png)
 
