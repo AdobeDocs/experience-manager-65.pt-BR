@@ -3,9 +3,9 @@ title: Gerencie ativos compostos com referências e ativos de várias páginas n
 description: Saiba como criar referências a ativos digitais de dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para visualização de páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1363'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ As referências são resolvidas com base no caminho, na ID do documento e na ID 
 
 Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illustrator] arquivo.
 
-1. Usando o aplicativo [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager para desktop, busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
+1. Usando o aplicativo [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager desktop, busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
 1. Arraste o ativo da pasta local para o [!DNL Illustrator] arquivo.
 
 1. Salve o [!DNL Illustrator] arquivo na unidade montada ou [carregue](/help/assets/managing-assets-touch-ui.md#uploading-assets) no [!DNL Experience Manager] repositório.
@@ -40,7 +40,7 @@ Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illu
 
 1. Clique em Propriedades **[!UICONTROL da]** Visualização na barra de ferramentas. Na página [!UICONTROL Propriedades] , a lista de arquivos que fazem referência ao ativo atual é exibida na coluna **[!UICONTROL Referências]** da guia **[!UICONTROL Básico]** .
 
-   ![visualização das referências dos ativos do Experience Manager na coluna Referências nos detalhes do ativo](assets/asset-references.png)
+   ![visualização das referências de Ativos Experience Manager na coluna Referências nos detalhes do ativo](assets/asset-references.png)
 
    *Figura: Referências de ativos em detalhes de ativos.*
 
@@ -105,7 +105,7 @@ Especificamente para documentos do Microsoft Word, execute o fluxo de trabalho d
 
 ## View subassets {#viewing-subassets}
 
-Os subativos são exibidos somente se os subativos forem gerados e estiverem disponíveis para o ativo multipáginas selecionado. Para visualização dos subativos gerados, abra o ativo de várias páginas. Na área superior esquerda da página, clique no ícone ![Painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo e clique em **[!UICONTROL Subativos]** na lista. Quando você seleciona **[!UICONTROL Subativos]** na lista. Como alternativa, use o atalho do teclado `alt + 5`.
+Os subativos são exibidos somente se os subativos forem gerados e estiverem disponíveis para o ativo multipáginas selecionado. Para visualização dos subativos gerados, abra o ativo de várias páginas. Na área superior esquerda da página, clique em ![Opção para abrir o painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo e clique em **[!UICONTROL Subativos]** na lista. Quando você seleciona **[!UICONTROL Subativos]** na lista. Como alternativa, use o atalho do teclado `alt + 5`.
 
 ![Visualização de subativos para um ativo de várias páginas](assets/view_subassets_simulation.gif)
 
@@ -127,15 +127,16 @@ As seguintes opções estão disponíveis na barra de ferramentas, no painel esq
 
 * **[!UICONTROL A opção Visão geral]** da página exibe todos os subativos simultaneamente.
 
-* **[!UICONTROL A opção Linha do tempo]** do painel esquerdo depois de clicar no ícone ![do painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo exibe o fluxo de atividade do arquivo.
+* **[!UICONTROL A opção Linha]** do tempo no painel esquerdo depois de clicar em ![Opção para abrir o painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo exibe o fluxo de atividade do arquivo.
 
 ## Práticas recomendadas e limitação {#best-practice-limitation-tips}
 
-* A geração de subconjuntos pode consumir muitos recursos em qualquer implantação do Experience Manager. Se você estiver gerando subativos quando os ativos complexos forem carregados, adicione a etapa no fluxo de trabalho Atualizar ativo do DAM. Se você estiver gerando subativos sob demanda, crie um fluxo de trabalho separado para gerar subativos. Um fluxo de trabalho dedicado permite que você pule as outras etapas no fluxo de trabalho do DAM Update Asset e salve os recursos tecnológicos.
+* A geração de subconjuntos pode consumir muitos recursos em qualquer implantação de Experience Manager. Se você estiver gerando subativos quando os ativos complexos forem carregados, adicione a etapa no fluxo de trabalho Atualizar ativo do DAM. Se você estiver gerando subativos sob demanda, crie um fluxo de trabalho separado para gerar subativos. Um fluxo de trabalho dedicado permite que você pule as outras etapas no fluxo de trabalho do DAM Update Asset e salve os recursos tecnológicos.
 
 >[!MORELIKETHIS]
 >
->* [Usar o aplicativo de desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Usar aplicativo de desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
 >* [Configurar ações da área de trabalho no Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Criar objetos inteligentes vinculados no Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Inserir gráficos no Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+
