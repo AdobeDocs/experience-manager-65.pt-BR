@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '5863'
+source-wordcount: '5862'
 ht-degree: 6%
 
 ---
@@ -26,12 +26,12 @@ ht-degree: 6%
 | [Compreender os resultados e o comportamento da pesquisa](#searchbehavior) | [Modificar aspectos de pesquisa](#searchfacets) | [Atualizações de metadados em massa](#metadataupdates) |
 | [Classificação de pesquisa e aumento](#searchrank) | [extração de texto](#extracttextupload) | [Coleções inteligentes](#collections) |
 | [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Previsões personalizadas](#custompredicates) | [Entenda os resultados inesperados e solucione problemas](#troubleshoot-unexpected-search-results-and-issues) |
-| [Pesquise de outras soluções e aplicativos](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicativo de desktop Experience Manager](#desktopapp)</li><li>[Imagens do Adobe Stock](#adobestock)</li><li>[Ativos do Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Pesquise de outras soluções e aplicativos](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[aplicativo de desktop Experience Manager](#desktopapp)</li><li>[Imagens do Adobe Stock](#adobestock)</li><li>[Ativos Dynamic Media](#dynamicmedia)</li></ul> |  |  |
 | [Seletor de ativos](#assetselector) |  |  |
 | [Limitações](#limitations) e [dicas](#tips) |  |  |
 | [Exemplos ilustrados](#samples) |  |  |
 
-Procure ativos usando o campo Omnisearch na parte superior da interface da [!DNL Experience Manager] Web. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** em [!DNL Experience Manager], clique no ícone de pesquisa na barra superior, digite a palavra-chave de pesquisa e pressione return. Como alternativa, use o atalho de palavra-chave / (barra) para abrir o campo Omnisearch. `Location:Assets` é pré-selecionada para limitar as pesquisas aos ativos DAM. [!DNL Experience Manager] fornece sugestões enquanto seu start digita uma palavra-chave de pesquisa.
+Procure ativos usando o campo Omnisearch na parte superior da interface da [!DNL Experience Manager] Web. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** em [!DNL Experience Manager], clique em pesquisar na barra superior, digite a palavra-chave de pesquisa e pressione return. Como alternativa, use o atalho de palavra-chave / (barra) para abrir o campo Omnisearch. `Location:Assets` é pré-selecionada para limitar as pesquisas aos ativos DAM. [!DNL Experience Manager] fornece sugestões enquanto seu start digita uma palavra-chave de pesquisa.
 
 Use o painel **[!UICONTROL Filtros]** para restringir sua pesquisa filtrando os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento do Adobe Stock. Seus administradores podem personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando aspectos de pesquisa. O filtro Tipo [!UICONTROL de] arquivo no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível estarão parcialmente marcadas.
 
@@ -41,7 +41,7 @@ Use o painel **[!UICONTROL Filtros]** para restringir sua pesquisa filtrando os 
 
 Familiarize-se com a interface de pesquisa e as ações disponíveis.
 
-![Compreender a interface de resultados de pesquisa dos Ativos do Experience Manager](assets/aem_search_results.png)
+![Compreender a interface de resultados de pesquisa do Experience Manager Assets](assets/aem_search_results.png)
 
 *Figura: Entenda a interface dos resultados da[!DNL Experience Manager Assets]pesquisa.*
 
@@ -49,7 +49,7 @@ Familiarize-se com a interface de pesquisa e as ações disponíveis.
 
 ### Aspectos de pesquisa dinâmica {#dynamicfacets}
 
-Você pode descobrir os ativos desejados mais rapidamente a partir da página de resultados da pesquisa usando o número atualizado dinamicamente dos resultados de pesquisa esperados nas facetas de pesquisa. O número esperado de ativos é atualizado mesmo antes de aplicar o filtro de pesquisa. Ver a contagem esperada em relação ao filtro ajuda a navegar pelos resultados da pesquisa de forma rápida e eficiente. Para obter mais informações, consulte Ativos [de pesquisa no Experience Manager](search-assets.md).
+Você pode descobrir os ativos desejados mais rapidamente a partir da página de resultados da pesquisa usando o número atualizado dinamicamente dos resultados de pesquisa esperados nas facetas de pesquisa. O número esperado de ativos é atualizado mesmo antes de aplicar o filtro de pesquisa. Ver a contagem esperada em relação ao filtro ajuda a navegar pelos resultados da pesquisa de forma rápida e eficiente. Para obter mais informações, consulte [Pesquisar ativos no Experience Manager](search-assets.md).
 
 ![Consulte o número aproximado de ativos sem filtrar os resultados da pesquisa em aspectos de pesquisa.](assets/asset_search_results_in_facets_filters.png)
 
@@ -118,7 +118,7 @@ Você pode melhorar a relevância das palavras-chave de ativos específicos para
 1. Na caixa **[!UICONTROL Pesquisar promoção]** , especifique uma palavra-chave para a qual deseja aumentar a pesquisa da imagem e clique em **[!UICONTROL Adicionar]**. É possível especificar várias palavras-chave da mesma maneira.
 1. Click **[!UICONTROL Save &amp; Close]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
-Você pode usar isso em sua vantagem ao aumentar a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o exemplo de vídeo abaixo. Para obter informações detalhadas, consulte [pesquisar no Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
+Você pode usar isso em sua vantagem ao aumentar a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o exemplo de vídeo abaixo. Para obter informações detalhadas, consulte [pesquisa no Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -148,7 +148,7 @@ Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usu
 
 Na interface do [!DNL Experience Manager] usuário, os usuários podem pesquisar ativos [do](/help/assets/aem-assets-adobe-stock.md) Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` na barra Omnisearch. Você também pode usar o painel Filtros para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock.
 
-### Ativos do Dynamic Media {#dmassets}
+### Ativos Dynamic Media {#dmassets}
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
 
@@ -212,9 +212,9 @@ Usuários e comerciantes de linha de negócios usam o Brand Portal para comparti
 
 ### Pesquisar [!DNL Adobe Stock] imagens {#adobestock-1}
 
-Na interface do [!DNL Experience Manager] usuário, os usuários podem pesquisar ativos do Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch. Você também pode usar o painel **[!UICONTROL Filtros]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock. Consulte [gerenciar imagens do Adobe Stock no Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Na interface do [!DNL Experience Manager] usuário, os usuários podem pesquisar ativos do Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch. Você também pode usar o painel **[!UICONTROL Filtros]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock. Consulte [Gerenciar imagens do Adobe Stock no Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Pesquisar ativos do Dynamic Media {#dynamicmedia}
+### Pesquisar ativos da Dynamic Media {#dynamicmedia}
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação. Ao criar páginas da Web, os autores podem pesquisar por conjuntos no Localizador de conteúdo. Há um filtro para conjuntos disponível em um menu pop-up.
 
@@ -249,7 +249,7 @@ Para acessar a interface do Seletor de ativos, acesse `https://[aem_server]:[por
 
 *Figura: Procure e selecione o ativo no seletor de ativos.*
 
-## Limitações         {#limitations}
+## Limitações          {#limitations}
 
 O recurso de pesquisa no tem [!DNL Experience Manager Assets] as seguintes limitações:
 
@@ -354,7 +354,7 @@ A pesquisa visual usa marcação inteligente e requer [!DNL Experience Manager] 
 1. No CRXDE, no `/oak-index/damAssetLucene` nó, defina a `reindex` propriedade como `true`. Salve as alterações.
 1. (Opcional) Se você tiver um formulário de pesquisa personalizado, copie o `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nó para `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salve todas as alterações.
 
-Para obter informações relacionadas, consulte [compreender tags inteligentes no Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) e [como gerenciar tags](/help/assets/managing-smart-tags.md)inteligentes.
+Para obter informações relacionadas, consulte [entender tags inteligentes no Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) e [como gerenciar tags](/help/assets/managing-smart-tags.md)inteligentes.
 
 ### Metadados obrigatórios {#mandatorymetadata}
 
@@ -455,7 +455,7 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 
 >[!MORELIKETHIS]
 >
->* [Guia de implementação de pesquisa do Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Guia de implementação de pesquisa de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuração avançada de predições de pesquisa de tags e valores múltiplos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
 >* [Configurar pesquisa de tradução inteligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
