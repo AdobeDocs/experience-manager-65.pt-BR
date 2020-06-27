@@ -1,9 +1,12 @@
 ---
 title: Esquema de metadados de pastas
-description: Saiba como criar schemas de metadados para pastas de ativos nos ativos do Adobe Experience Manager
+description: Saiba mais sobre como criar schemas de metadados para pastas de ativos em Ativos da Adobe Experience Manager
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +32,7 @@ Use o editor de Formulários de Schema de Metadados da Pasta para criar e editar
 
 Você pode mapear/configurar esses itens de formulário em um campo dentro de um nó de metadados no repositório CRX. É possível adicionar novas guias ou itens de formulário ao formulário de schema de metadados.
 
-1. Na página Formulários de Schema, selecione o formulário criado e clique no ícone **[!UICONTROL Editar]** na barra de ferramentas.
+1. Na página Formulários de Schema, selecione o formulário criado e selecione a opção **[!UICONTROL Editar]** na barra de ferramentas.
 1. Na página Editor de Schemas de Metadados de Pastas, clique em `+` para adicionar uma guia ao formulário. Para renomear a guia, clique no nome padrão e especifique o novo nome em **[!UICONTROL Configurações]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -93,7 +96,7 @@ Para garantir que o componente seja exibido corretamente no formulário de schem
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-É possível excluir formulários de schema de metadados de pasta da página Formulários de Schema de Metadados de Pasta. Para excluir um formulário, selecione-o e clique no ícone Excluir na barra de ferramentas.
+Você pode excluir formulários de schema de metadados de pasta da página Formulários de Schema de Metadados de Pasta. Para excluir um formulário, selecione-o e clique na opção Excluir da barra de ferramentas.
 
 ![delete_form](assets/delete_form.png)
 
