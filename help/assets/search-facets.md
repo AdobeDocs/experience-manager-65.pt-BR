@@ -3,10 +3,10 @@ title: Pesquisar aspectos
 description: Este artigo descreve como criar, modificar e usar aspectos de pesquisa no Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2517'
-ht-degree: 19%
+source-wordcount: '2523'
+ht-degree: 18%
 
 ---
 
@@ -115,7 +115,7 @@ Se desejar usar um nó existente, especifique-o usando a caixa de diálogo de se
 >O predicado Opções é um invólucro personalizado que inclui predicados de propriedade para demonstrar o comportamento descrito. Atualmente, não há um terminal REST disponível para suportar a funcionalidade nativamente.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
-1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click the Edit icon.
+1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. Na página **[!UICONTROL Editar formulário de pesquisa]**, arraste o **[!UICONTROL Predicado de opções]** da guia **[!UICONTROL Selecionar predicado]** até o painel principal.
 1. Na guia **[!UICONTROL Configurações]**, digite um rótulo e um nome para a propriedade. Por exemplo, para pesquisar ativos com base no formato, especifique um nome amigável para o rótulo, por exemplo, **[!UICONTROL Tipo de arquivo]**. Especifique a propriedade com base na qual a pesquisa deve ser realizada no campo de propriedade, por exemplo `jcr:content/metadata/dc:format.`
 1. Faça uma das seguintes opções:
@@ -193,20 +193,17 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
 
 ## Redefinir aspectos de pesquisa padrão {#restoring-default-search-facets}
 
-Por padrão, um ícone Bloquear é exibido antes do Painel **[!UICONTROL de pesquisa do administrador de]** ativos na página Formulários **[!UICONTROL de]** pesquisa. O ícone Bloquear desaparece se você adicionar aspectos de pesquisa ao formulário, indicando que o formulário padrão foi modificado.
+Por padrão, um ícone de cadeado ícone de ![cadeado ícone](assets/do-not-localize/lock_closed_icon.svg) fechado é exibido antes do Painel **[!UICONTROL de pesquisa do administrador do]** Assets na página **[!UICONTROL Pesquisar formulários]** . O ícone de bloqueio em relação a uma opção na página Pesquisar formulários indica que as configurações padrão estão intactas e não são personalizadas. O ícone ![Bloquear ícone](assets/do-not-localize/lock_closed_icon.svg) fechado desaparece se você adicionar aspectos de pesquisa ao formulário indicando que o formulário padrão foi modificado.
 
 ![O ícone de bloqueio em relação a uma opção na página Pesquisar formulários indica que as configurações padrão estão intactas e não são personalizadas.](assets/locked_admin_rail.png)
-
-O ícone de bloqueio em relação a uma opção na página Pesquisar formulários indica que as configurações padrão estão intactas e não são personalizadas.
 
 Para restaurar o aspecto de pesquisa padrão, execute estas etapas:
 
 1. Selecione **[!UICONTROL Assets Admin Search Rail]** na página **[!UICONTROL Pesquisar formulários]** .
-1. Clique em **[!UICONTROL Excluir]** na barra de ferramentas.
-   ![deletoutline](assets/deleteoutline.png)
+1. Clique em **[!UICONTROL Excluir]** contorno ![excluído](assets/deleteoutline.png) na barra de ferramentas.
 1. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Excluir]** para remover as alterações personalizadas.
 
-   Após excluir as alterações personalizadas nos aspectos de pesquisa, o ícone Bloquear será exibido novamente antes do **[!UICONTROL Painel de pesquisa do administrador de ativos]** na página **[!UICONTROL Formulários de pesquisa]**.
+   After you delete the custom changes to search facets, the lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
 
 ## User permissions {#user-permissions}
 
