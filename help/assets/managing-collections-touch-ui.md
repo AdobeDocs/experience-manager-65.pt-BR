@@ -4,17 +4,17 @@ description: Saiba mais sobre tarefas para gerenciar coleções de ativos, como 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 13%
+source-wordcount: '2177'
+ht-degree: 14%
 
 ---
 
 
 # Gerenciar coleções {#managing-collections}
 
-Uma coleção é um conjunto de ativos nos ativos Adobe Experience Manager. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
+Uma coleção é um conjunto de ativos nos Ativos do Adobe Experience Manager. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
 
 Diferentemente das pastas, uma coleção pode incluir ativos de diferentes locais. Você pode compartilhar coleções com vários usuários aos quais são atribuídos diferentes níveis de privilégios, incluindo exibição, edição e assim por diante.
 
@@ -28,7 +28,7 @@ As coleções são dos seguintes tipos, com base na maneira como elas coletam at
 
 ## Acesse o console de coleções {#navigating-the-collections-console}
 
-Para abrir as **[!UICONTROL Coleções]**, na interface do Experience Manager, vá até **[!UICONTROL Ativos]** > **[!UICONTROL Coleções]**.
+Para abrir as **[!UICONTROL Coleções]**, na interface do Experience Manager, vá para **[!UICONTROL Ativos]** > **[!UICONTROL Coleções]**.
 
 ## Criar uma coleção {#creating-a-collection}
 
@@ -52,7 +52,7 @@ Você pode criar uma coleção com referências estáticas, por exemplo, uma col
 
    >[!NOTE]
    >
-   >Os Ativos do Experience Manager permitem que você crie tarefas de revisão para uma coleção semelhantes à maneira como você cria tarefas de revisão para uma pasta de ativos.
+   >Os ativos Experience Manager permitem que você crie tarefas de revisão para uma coleção de maneira semelhante à forma como você cria tarefas de revisão para uma pasta de ativos.
 
    Para adicionar ativos à coleção, navegue até a interface do usuário Ativos. Para obter detalhes, consulte [Adicionar ativos a uma coleção](#adding-assets-to-a-collection).
 
@@ -61,11 +61,11 @@ Você pode criar uma coleção com referências estáticas, por exemplo, uma col
 Você pode arrastar ativos da interface do usuário Ativos para uma coleção. Você também pode criar uma cópia de uma coleção e arrastar os ativos para lá.
 
 1. Na interface do usuário Ativos, selecione os ativos que deseja adicionar a uma coleção.
-1. Arraste os ativos até a zona **[!UICONTROL Soltar na coleção]** . Como alternativa, clique no ícone **[!UICONTROL Para coleção]** na barra de ferramentas.
+1. Arraste os ativos até a zona **[!UICONTROL Soltar na coleção]** . Como alternativa, clique em **[!UICONTROL Para coleção]** na barra de ferramentas.
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-1. In the **[!UICONTROL Add To Collection]** page, click the **[!UICONTROL Create Collection]** icon from the toolbar.
+1. In the **[!UICONTROL Add To Collection]** page, click **[!UICONTROL Create Collection]** from the toolbar.
 
    If you want to add the assets to an existing collection, select it from the page, and click **[!UICONTROL Add]**. Por padrão, a coleção atualizada mais recentemente é selecionada.
 
@@ -110,7 +110,7 @@ Para criar uma coleção inteligente, siga as etapas:
 
 Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou pastas referenciados. Coleções inteligentes usam um query de pesquisa para preencher ativos. Portanto, referências estáticas a ativos e pastas não se aplicam a eles.
 
-1. Na interface do usuário Ativos, selecione o ativo e clique no ícone **[!UICONTROL Para coleção]** na barra de ferramentas.
+1. Na interface do usuário Ativos, selecione o ativo e clique em **[!UICONTROL Para coleção]** na barra de ferramentas.
 
    ![chlimage_1-8](assets/chlimage_1-113.png)
 
@@ -124,12 +124,12 @@ Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou 
 
 As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa da pesquisa [](#saved-searches)salva.
 
-1. Na interface do usuário do Assets, clique no ícone de pesquisa na barra de ferramentas.
+1. Na interface do usuário do Assets, clique na opção de pesquisa na barra de ferramentas.
 
    ![chlimage_1-9](assets/chlimage_1-110.png)
 
 1. Com o cursor na caixa Omnisearch, pressione a tecla Return.
-1. Clique no ícone GlobalNav para exibir o painel Filtros.
+1. Na interface do Experience Manager, abra o painel Filtros.
 1. Na lista **[!UICONTROL Pesquisas salvas]**, selecione a coleção inteligente que deseja modificar. O painel Pesquisar exibe os filtros configurados para a pesquisa salva.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -158,7 +158,7 @@ Os metadados da coleção incluem dados sobre a coleção, incluindo quaisquer t
 Você pode editar os metadados de várias coleções simultaneamente. Essa funcionalidade ajuda a replicar rapidamente metadados comuns em várias coleções.
 
 1. No console Coleções, selecione duas ou mais coleções.
-1. Na barra de ferramentas, clique no ícone **[!UICONTROL Propriedades]** .
+1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]**.
 1. Na página **[!UICONTROL Metadados da coleção]**, edite os metadados nas guias **[!UICONTROL Básico]** e **[!UICONTROL Avançado]**, conforme necessário.
 1. Para visualização das propriedades de metadados de uma coleção específica, desmarque as coleções restantes na lista de coleções. Os campos do editor de metadados são preenchidos com os metadados da coleção específica.
 
@@ -191,20 +191,20 @@ Se você pesquisar por coleções do nível superior, somente coleções individ
 
 No console Coleções, clique em uma coleção para abri-la.
 
-Em uma coleção, a pesquisa do Experience Manager é restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
+Em uma coleção, a pesquisa por Experience Manager está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
 
 ## Editar configurações de coleção {#editing-collection-settings}
 
 Você pode editar configurações da coleção, como título e descrição, ou adicionar membros a uma coleção.
 
-1. Selecione uma coleção e clique no ícone **[!UICONTROL Configurações]** na barra de ferramentas. Como alternativa, use a ação rápida **[!UICONTROL Configurações]** na miniatura da coleção.
+1. Selecione uma coleção e clique em **[!UICONTROL Configurações]** na barra de ferramentas. Como alternativa, use a ação rápida **[!UICONTROL Configurações]** na miniatura da coleção.
 1. Modifique as configurações da coleção na página **[!UICONTROL Configurações da coleção]**. For example, modify the collection title, descriptions, members, and permissions as discussed in [Adding Collections](#creating-a-collection).
 
 1. Para salvar as alterações, clique em **[!UICONTROL Salvar]**.
 
 ## Excluir uma coleção {#deleting-a-collection}
 
-1. No console Coleções, selecione uma ou mais coleções e clique no ícone excluir na barra de ferramentas.
+1. No console Coleções, selecione uma ou mais coleções e clique em excluir da barra de ferramentas.
 
 1. Na caixa de diálogo, clique em **[!UICONTROL Excluir]** para confirmar a ação de exclusão.
 
@@ -217,7 +217,7 @@ Você pode editar configurações da coleção, como título e descrição, ou a
 Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é baixada, incluindo pastas e coleções-filho.
 
 1. No console Coleções, selecione uma ou mais coleções para baixar.
-1. Na barra de ferramentas, clique no ícone de download.
+1. Na barra de ferramentas, clique em **[!UICONTROL Download]**.
 1. Na caixa de diálogo **[!UICONTROL Download]** , clique em **[!UICONTROL Download]**. Se desejar baixar as representações dos ativos dentro da coleção, selecione **[!UICONTROL Representações]**. Selecione a opção **[!UICONTROL Email]** para enviar uma notificação por email ao proprietário da coleção.
 
    Quando você seleciona uma coleção para download, a hierarquia completa da pasta sob a coleção é baixada. Para incluir cada coleção que você baixa (incluindo ativos em coleções secundárias aninhadas sob a coleção pai) em uma pasta individual, selecione **[!UICONTROL Criar pasta separada para cada ativo]**.
@@ -256,13 +256,11 @@ Editar pesquisas salvas é o mesmo que editar coleções inteligentes. Para obte
 
 Para excluir pesquisas salvas, siga estas etapas:
 
-1. Na interface do usuário do Assets, clique no ícone de pesquisa na barra de ferramentas.
-
-   ![chlimage_1-13](assets/chlimage_1-114.png)
+1. Na interface do usuário do Assets, clique em search ![chlimage_1-13](assets/chlimage_1-114.png).
 
 1. Com o cursor no campo Omnisearch, pressione a tecla Enter.
 
-1. Clique no ícone GlobalNav para exibir o painel Filtros.
+1. Na interface do Experience Manager, abra o painel Filtros.
 
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
@@ -274,18 +272,14 @@ Para excluir pesquisas salvas, siga estas etapas:
 
 Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a coleção contiver coleções aninhadas, o fluxo de trabalho também será executado nos ativos dentro das coleções aninhadas. No entanto, se a coleção e a coleção aninhada contiverem ativos de duplicado, o fluxo de trabalho só será executado uma vez para esses ativos.
 
-1. No console Coleções, selecione uma coleção na qual deseja executar um fluxo de trabalho.
-1. Clique no ícone GlobalNav e escolha **[!UICONTROL Linha do tempo]** na lista.
-1. From the timeline, click the Caret icon at the bottom, and then click **[!UICONTROL Start Workflow]**.
-
-   ![chlimage_1-14](assets/chlimage_1-137.png)
-
+1. Abra **[!UICONTROL Ativos]** > **[!UICONTROL Coleções]**. Para executar um fluxo de trabalho em uma coleção específica, selecione-a.
+1. Open **[!UICONTROL Timeline]** rail. Clique em ![chlimage_1-14](assets/chlimage_1-137.png) e clique em Fluxo de trabalho do **[!UICONTROL Start]**.
 1. Na seção **[!UICONTROL Iniciar fluxo de trabalho]**, selecione um modelo de fluxo de trabalho da lista. Por exemplo, selecione o modelo **[!UICONTROL Atualizar ativo DAM]**.
 1. Insira um título para o fluxo de trabalho e clique em **[!UICONTROL Start]**.
-1. In the dialog, click **[!UICONTROL Proceed]**. O fluxo de trabalho é executado em todos os ativos na coleção.
+1. In the dialog, click **[!UICONTROL Proceed]**. O fluxo de trabalho processa todos os ativos na coleção selecionada.
 
 >[!MORELIKETHIS]
 >
->* [Configurar notificações por email dos ativos do Experience Manager](/help/sites-administering/notification.md#assetsconfig)
+>* [Configurar notificações por email do Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
 >* [Criar uma tarefa de revisão para coleções](bulk-approval.md)
 
