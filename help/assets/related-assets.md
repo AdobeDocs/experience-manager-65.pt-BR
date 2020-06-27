@@ -3,9 +3,9 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos digitais que compartilham alguns atributos comuns. Crie também relacionamentos derivados de origem entre ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Para relacionar outro ativo com o ativo selecionado, clique no ícone **[!UICONTROL Relacionar]** na barra de ferramentas.
+1. Para relacionar outro ativo com o ativo selecionado, clique em **[!UICONTROL Relacionar]** na barra de ferramentas.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -45,13 +45,14 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
    * Para relacionar o arquivo de origem do ativo, selecione **[!UICONTROL Origem]** na lista.
    * Para relacionar um arquivo derivado, selecione **[!UICONTROL Derivado]** da lista.
    * Para criar uma relação bidirecional entre os ativos, selecione **[!UICONTROL Outros]** na lista.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Na tela **[!UICONTROL Selecionar ativo]** , navegue até o local do ativo que deseja relacionar e selecione-o.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Clique no ícone **[!UICONTROL Confirmar]** .
+1. Clique em **[!UICONTROL Confirmar]**.
 1. Click **[!UICONTROL OK]** to close the dialog. Dependendo da sua escolha de relacionamento na etapa 3, o ativo relacionado é listado sob uma categoria apropriada na seção **[!UICONTROL Relacionado]** . Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Origem]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
