@@ -3,9 +3,9 @@ title: Criar projetos de tradução
 description: Saiba como criar projetos de tradução [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1895'
 ht-degree: 16%
 
 ---
@@ -99,7 +99,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
 1. Navegue até o console Projetos. A pasta de tradução é copiada para o console Projetos.
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-78](assets/chlimage_1-70.png)
 
 1. Abra a pasta para visualização do projeto de tradução.
 
@@ -151,7 +151,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 
 1. Na lista do projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Clique em **[!UICONTROL Criar]**. Os ativos que serão traduzidos são adicionados à pasta de destino. A pasta atualizada está listada na seção **[!UICONTROL Cópias de idioma]**.
 
@@ -286,12 +286,12 @@ Quando você executa um fluxo de trabalho de tradução para atualizar uma cópi
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. Na [!DNL Assets] interface, selecione um ativo que já tenha sido convertido e clique no ícone **[!UICONTROL Editar]** na barra de ferramentas para abrir o ativo no modo de edição.
+1. Na [!DNL Assets] interface, selecione um ativo que já tenha sido convertido e clique em **[!UICONTROL Editar]** na barra de ferramentas para abrir o ativo no modo de edição.
 1. Edite o ativo e salve as alterações.
 1. Execute as etapas 2 a 14 do procedimento [Adicionar ao projeto](#add-to-existing-translation-project) de tradução existente para atualizar a cópia de idioma.
 1. Clique nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução. Na lista de ativos na página Trabalho **[!UICONTROL de]** tradução, é possível visualização claramente o local temporário onde a versão traduzida do ativo é armazenada.
 
-   ![chlimage_1-181](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Marque a caixa de seleção ao lado de **[!UICONTROL Título]**.
 1. From the toolbar, click **[!UICONTROL Accept Translation]** and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
