@@ -3,9 +3,9 @@ title: Criar e configurar páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2135'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Este documento descreve o seguinte:
 
 ## Por que criar e configurar as páginas do Editor de ativos? {#why-create-and-configure-asset-editor-pages}
 
-O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao mudar de uma solução em pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários comerciais, autores de WCM, jornalistas e assim por diante - a poderosa interface de usuário dos Ativos Adobe Experience Manager para usuários profissionais pode fornecer informações demais e start de participantes para solicitar interfaces de usuário ou aplicativos específicos para acessar os ativos digitais que são relevantes para eles.
+O Gerenciamento de ativos digitais está sendo usado em mais e mais cenários. Ao mudar de uma solução em pequena escala para um pequeno grupo de usuários treinados profissionalmente - por exemplo, fotógrafos ou taxonomistas - para grupos de usuários maiores e mais diversos - por exemplo, usuários de negócios, autores de WCM, jornalistas e assim por diante - a poderosa interface de usuário do Adobe Experience Manager Assets para usuários profissionais pode fornecer muita informação e start das partes interessadas para solicitar interfaces de usuário ou aplicativos específicos para acessar os ativos digitais que são relevantes para eles.
 
 Esses aplicativos centrados em ativos podem ser simples galerias de fotos em uma intranet onde os funcionários podem carregar fotos de visitas comerciais ou de um centro de imprensa em um site voltado ao público. Aplicativos centrados em ativos também podem ser estendidos para soluções completas, incluindo carrinhos de compras, processos de checkout e verificação.
 
@@ -203,7 +203,7 @@ Ao criar a página Editor de ativos, uma boa prática é criar a página logo ab
 
 Para criar uma página do Editor de ativos:
 
-1. Na guia **Sites** , navegue até o local onde deseja criar uma página do editor de ativos e clique em **Novo**.
+1. Na guia **[!UICONTROL Sites]** , navegue até o local onde deseja criar uma página do editor de ativos e clique em **Novo**.
 1. Selecione **Editor** de ativos Geometrixx e clique em **Criar**. A nova página é criada e listada na guia **Sites** .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -356,7 +356,7 @@ Por padrão, ele está no modo somente leitura, portanto os usuários não podem
 
 Se o Título puder ser editado, você poderá adicionar um título e uma descrição clicando em Lápis para abrir a janela Propriedades **do** ativo. Além disso, você pode ativar e desativar o ativo selecionando a data e a hora.
 
-Quando os usuários editam o Título clicando no ícone Lápis, eles podem alterar o **Título**, a **Descrição** e digitar os Tempos **Ativado** e **Desativado** para ativar e desativar o ativo.
+Ao editar o [!UICONTROL Título], os usuários podem alterar o **Título**, a **Descrição** e informar os Tempos **Ligado** e **Desativado** para ativar e desativar o ativo.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -405,6 +405,7 @@ Para fazer várias edições de ativos com a página Editor de ativos:
 
    * no Windows: `Ctrl + click` cada ativo.
    * no Mac: `Cmd + click` cada ativo.
+
    Para selecionar uma faixa de ativos: clique no primeiro ativo e depois `Shift + click` no último ativo.
 
 1. Clique em **Editar metadados** no campo **Ações** (parte esquerda da página).
@@ -414,16 +415,18 @@ Para fazer várias edições de ativos com a página Editor de ativos:
    * Uma tag que se aplica a todos os ativos é exibida com uma fonte normal.
    * Metadados diferentes de tags: o valor do campo só será exibido se for o mesmo para todos os ativos selecionados.
 
-1. Clique em **Download** para baixar um arquivo zip que contém as representações originais dos ativos.
-1. Clique no ícone de lápis ao lado do campo **Tags** para editar as tags:
+1. Clique em **Download** para baixar um arquivo ZIP que contém as representações originais dos ativos.
+1. Clique em editar a opção de tags próxima ao campo **Tags** .
 
    * Uma tag que não se aplica a todos os ativos, mas somente a alguns tem um fundo cinza.
    * Uma tag que se aplica a todos os ativos tem um fundo branco.
+
    É possível:
 
-   * Clique no ícone **x** para remover a tag de todos os ativos.
-   * Clique no ícone **+** para adicionar a tag a todos os ativos.
+   * Clique em `x` para remover a tag de todos os ativos.
+   * Clique em `+` para adicionar a tag a todos os ativos.
    * Clique na **seta** e selecione uma tag para adicionar uma nova tag a todos os ativos.
+
    Clique em **OK** para gravar as alterações no formulário. A caixa ao lado do campo **Tags** é automaticamente marcada.
 
 1. Edite o campo Descrição. Por exemplo, defina-o como:
