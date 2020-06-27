@@ -3,9 +3,9 @@ title: 'schemas de metadados para definir o layout da página de propriedades de
 description: O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '2644'
 ht-degree: 8%
 
 ---
@@ -19,11 +19,11 @@ Em [!DNL Adobe Experience Manager Assets], os schemas contêm campos específico
 
 Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
 
-1. Clique no ícone Propriedades **[!UICONTROL da]** Visualização em Ações rápidas no bloco de ativo em visualização de cartão.
+1. Clique na opção Propriedades **[!UICONTROL da]** Visualização nas ações rápidas no mosaico do ativo na visualização do cartão.
 
    ![Ações rápidas no bloco de ativos](assets/chlimage_1-170.png)
 
-   Como alternativa, selecione um ativo e clique no ícone [!UICONTROL Propriedades] na barra de ferramentas.
+   Como alternativa, selecione um ativo e clique em **[!UICONTROL Propriedades]** na barra de ferramentas.
 
 1. É possível editar as várias propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o [!UICONTROL Tipo] de ativo na guia [!UICONTROL Básico] da página de propriedades.
 
@@ -43,7 +43,7 @@ Para visualização de uma lista de formulários ou modelos, na [!DNL Experience
 |---|---|---|
 | [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
 |  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
-|  | [!UICONTROL image] | Formulário de Schema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com subtipo TIFF.</li></ul> |
+|  | [!UICONTROL imagem] | Formulário de Schema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com subtipo TIFF.</li></ul> |
 |  | [!UICONTROL aplicativo] | Formulário de Schema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Formulário de Schema para ativos com subtipo PDF. |
 |  | [!UICONTROL vídeo] | Formulário de Schema para ativos de vídeo com tipo MIME, como `video/avi` e `video/mp4`. |
 | [!UICONTROL collection] |  | Formulário de Schema para coleções. |
@@ -68,7 +68,7 @@ Para adicionar um formulário de schema de metadados, siga estas etapas:
 
    >[!NOTE]
    >
-   >Um ícone de cadeado é exibido com os modelos não editados. Se você personalizar um modelo, o ícone de cadeado não será exibido.
+   >Um símbolo de cadeado é exibido com os modelos não editados. Se você personalizar um modelo, ele não será bloqueado ![bloqueado](assets/do-not-localize/lock_closed_icon.svg).
 
 1. Na caixa de diálogo, forneça o título do formulário de schema e clique em **[!UICONTROL Criar]** para concluir o processo de criação do formulário.
 
@@ -175,7 +175,7 @@ Para excluir um formulário, selecione-o e clique em Excluir.
 
 >[!NOTE]
 >
->* Após excluir as alterações personalizadas em um formulário padrão, o ícone de cadeado será exibido novamente antes dele na interface do Schema de metadados. Indica que o formulário é revertido para seu estado padrão.
+>* Depois que você excluir alterações personalizadas em um formulário padrão, o bloqueio ![fechado](assets/do-not-localize/lock_closed_icon.svg) reaparecerá antes do formulário. Indica que o formulário é revertido para seu estado padrão.
 >* Não é possível excluir os formulários de schema de metadados padrão em [!DNL Assets].
 
 
