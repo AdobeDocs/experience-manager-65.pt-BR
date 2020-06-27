@@ -3,9 +3,9 @@ title: Gerenciar [!DNL Adobe Stock] ativos [!DNL Adobe Experience Manager Assets
 description: Pesquise, busque, licencie e [!DNL Adobe Stock] gerencie ativos de dentro [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c1c845a479fcf04db1b2da8bcb9cf765fedd58b6
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1046'
 ht-degree: 16%
 
 ---
@@ -70,7 +70,7 @@ Seus [!DNL Experience Manager] usuários podem pesquisar ativos em ambos [!DNL E
 
 * Para pesquisar por [!DNL Adobe Stock] ativos, clique em **[!UICONTROL Navegação]** > **[!UICONTROL Ativos]** > **[!UICONTROL Pesquisar no Adobe Stock]**.
 
-* Para pesquisar ativos [!DNL Adobe Stock] e [!DNL Experience Manager Assets], clique no ícone de pesquisa ![search_icon](assets/search_icon.png).
+* Para pesquisar por ativos [!DNL Adobe Stock] e [!DNL Experience Manager Assets], clique em pesquisar ![search_icon](assets/search_icon.png).
 
 Como alternativa, digite um start `Location: Adobe Stock` na barra de pesquisa para selecionar [!DNL Adobe Stock] ativos. [!DNL Experience Manager] oferta os recursos de filtragem avançada nos ativos pesquisados, permitindo que os usuários façam rapidamente o logon zero nos ativos necessários usando filtros, como tipos de ativos suportados, orientação de imagem e estado licenciado.
 
