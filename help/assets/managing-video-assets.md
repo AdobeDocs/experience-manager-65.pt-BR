@@ -3,9 +3,9 @@ title: Gerencie ativos de vídeo no [!DNL Adobe Experience Manager].
 description: Faça upload, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46568322e75669532734dddda91a781f45a398d4
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ Saiba como gerenciar e editar os ativos de vídeo em [!DNL Adobe Experience Mana
 
    Você pode pausar ou reproduzir vídeo apenas na visualização do cartão. Os botões [!UICONTROL Reproduzir] e [!UICONTROL Pausar] não estão disponíveis na visualização da lista.
 
-1. Para pré-visualização do vídeo na página de detalhes do ativo, clique no ícone **[!UICONTROL Editar]** no cartão.
+1. Para pré-visualização do vídeo na página de detalhes do ativo, clique em **[!UICONTROL Editar]** no cartão.
 
    O vídeo é reproduzido no player de vídeo nativo do navegador. Você pode reproduzir, pausar, controlar o volume e aplicar zoom no vídeo em tela cheia.
 
