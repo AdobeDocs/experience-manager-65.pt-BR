@@ -3,9 +3,9 @@ title: 'Informações de ativos '
 description: Saiba como o recurso Asset Insights permite rastrear as classificações de usuários e as estatísticas de uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas da Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '735'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ O Assets Insights captura detalhes da atividade do usuário, como o número de v
 
 Para que o Assets Insights capture as estatísticas de uso de imagens de um site, você deve incluir o código incorporado da imagem no código do site.
 
-Para permitir que o Asset Insights exiba estatísticas de uso de ativos, configure primeiro o recurso para buscar dados de relatórios do Adobe Analytics. Para obter detalhes, consulte [Configurar insights](/help/assets/touch-ui-configuring-asset-insights.md)de ativos.
+Para permitir que o Asset Insights exiba estatísticas de uso de ativos, configure primeiro o recurso para buscar dados de relatórios da Adobe Analytics. Para obter detalhes, consulte [Configurar insights](/help/assets/touch-ui-configuring-asset-insights.md)de ativos.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Você pode visualização as pontuações do Asset Insights na página de metada
 
    >[!NOTE]
    >
-   >Como o recurso Asset Insights normalmente obtém os dados de Soluções do Adobe Analytics de forma periódica, a seção Soluções pode não exibir os dados mais recentes. O período de tempo para o qual os dados são exibidos depende da programação da operação de busca executada pelo Asset Insights para recuperar os dados do Analytics.
+   >Como o recurso Asset Insights normalmente obtém os dados de Soluções da Adobe Analytics de forma periódica, a seção Soluções pode não exibir os dados mais recentes. O período de tempo para o qual os dados são exibidos depende da programação da operação de busca executada pelo Asset Insights para recuperar dados da Analytics.
 
 1. Para exibir estatísticas de desempenho do ativo graficamente durante um período de tempo, selecione o período na seção **[!UICONTROL Estatísticas de desempenho]**. Detalhes, incluindo cliques e impressões, são exibidos como linhas de tendência de um gráfico.
 
@@ -66,12 +66,12 @@ Você pode visualização as pontuações do Asset Insights na página de metada
 Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!UICONTROL Exibição do Insights]**.
 
 1. Na interface do usuário dos Ativos, navegue até a pasta que contém os ativos para os quais você deseja visualização insights.
-1. Clique no ícone Layout na barra de ferramentas e escolha **[!UICONTROL Visualização]** Insights.
+1. Clique em Layout na barra de ferramentas e escolha **[!UICONTROL Visualização]** Insights.
 1. A página exibe as pontuações de uso dos ativos. Compare as classificações dos vários ativos e obtenha insights.
 
 ## Agendar tarefa em segundo plano {#scheduling-background-job}
 
-O Asset Insights busca os dados de uso de ativos dos conjuntos de relatórios do Adobe Analytics de forma periódica. Por padrão, o Asset Insights executa uma tarefa em segundo plano a cada 24 horas às 2 horas da manhã para obter dados. No entanto, você pode modificar a frequência e a hora configurando o serviço Trabalho **[!UICONTROL de sincronização de relatório de desempenho de ativos do]** Adobe CQ DAM no console da Web.
+O Asset Insights busca os dados de uso de ativos dos conjuntos de relatórios da Adobe Analytics de forma periódica. Por padrão, o Asset Insights executa uma tarefa em segundo plano a cada 24 horas às 2 horas da manhã para obter dados. No entanto, você pode modificar a frequência e a hora configurando o serviço Trabalho **[!UICONTROL de sincronização de relatório de desempenho de ativos do]** Adobe CQ DAM no console da Web.
 
 1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Abra a configuração do serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** .
