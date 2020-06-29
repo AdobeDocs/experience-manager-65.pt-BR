@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 44%
 
 ---
 
@@ -22,15 +25,16 @@ source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 Quando o AEM Communities está licenciado, além de criar sites de comunidade, é possível adicionar recursos do Communities a qualquer site do AEM usando ferramentas de criação padrão do AEM.
 
-Para saber mais sobre como criar uma visita ao site da comunidade:
+Para saber mais sobre como criar um site da comunidade, visite:
 
-* [Visão geral do AEM Communities](/help/communities/overview.md)
+* [Visão geral dos AEM Communities](/help/communities/overview.md)
 * [Introdução ao AEM Communities](/help/communities/getting-started.md)
-* [Introdução ao AEM Communities para ativação](/help/communities/getting-started-enablement.md)
+* [Introdução a AEM Communities para ativação](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o ambiente de criação, consulte a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o ambiente de criação, visualização a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
+
 
 ## Componentes de comunidades disponíveis {#available-communities-components}
 
@@ -49,7 +53,7 @@ Consulte também o guia [interativo Componentes da](/help/communities/components
 | Barra lateral do blog | [Blog](/help/communities/blog-feature.md) |
 | Calendário | [Calendário](/help/communities/calendar.md) |
 | Comentários | [Comentários](/help/communities/comments.md) |
-| Lista de atividades da comunidade | [Tendências da atividade](/help/communities/trends.md) |
+| Lista de atividades da comunidade | [Tendências de Atividade](/help/communities/trends.md) |
 | Lista de membros do grupo da comunidade | [Grupos de comunidades](/help/communities/creating-groups.md) |
 | Escrever mensagem | [Mensagens](/help/communities/configure-messaging.md) |
 | Atribuições da ativação | [Atribuições](/help/communities/assignments.md) |
@@ -77,7 +81,8 @@ Consulte também o guia [interativo Componentes da](/help/communities/components
 
 >[!NOTE]
 >
->O componente de pesquisa não está mais disponível e é compatível com o Experience Manager Communities.
+>O componente de pesquisa não está mais disponível e é suportado no Experience Manager Communities.
+
 
 ## Documentação das Comunidades relacionadas {#related-communities-documentation}
 
