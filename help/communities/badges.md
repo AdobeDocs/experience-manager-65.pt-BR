@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 4%
 
 ---
@@ -35,9 +35,9 @@ Atualmente, os emblemas que um membro da comunidade recebe ou está atribuído s
 * [Quadros de líderes](/help/communities/enabling-leaderboard.md)
 * [Ideação](/help/communities/ideation-feature.md)
 
-No ambiente do autor, para acessar o console Badges
+No ambiente author, navegue até o console Badges:
 
-* Na navegação global, navegue até **[!UICONTROL Ferramentas > Comunidades > Crachás]**
+* Da navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Distinções]**
 
 Esse console exibe os emblemas disponíveis no momento e a partir dos quais novos emblemas podem ser adicionados.
 
