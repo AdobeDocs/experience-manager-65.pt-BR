@@ -10,13 +10,16 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
 
 
-# Criar uma caixa de proteção SCF {#create-an-scf-sandbox}
+# Criar uma caixa de proteção SCF  {#create-an-scf-sandbox}
 
 
 A partir das comunidades do AEM 6.1, a maneira mais fácil de criar rapidamente uma caixa de proteção é criar um site da comunidade. See [Getting Started with AEM Communities](getting-started.md).
@@ -50,14 +53,14 @@ Este tutorial presume que você tenha um autor de AEM e uma instância de public
 
 A seguir estão alguns links úteis para desenvolvedores novos na plataforma AEM:
 
-* [Introdução](../../help/sites-deploying/deploy.md#getting-started): para implantar instâncias do AEM
+* [Introdução](../../help/sites-deploying/deploy.md#getting-started): para implantar instâncias do AEM.
 
-   * [Noções básicas](../../help/sites-developing/the-basics.md): para desenvolvedores de sites e recursos
-   * [Primeiros passos para autores](../../help/sites-authoring/first-steps.md): para criar conteúdo de página
+   * [Noções básicas](../../help/sites-developing/the-basics.md): para desenvolvedores de sites e recursos.
+   * [Primeiros passos para autores](../../help/sites-authoring/first-steps.md): para criar conteúdo de página.
 
-## Uso do ambiente de desenvolvimento CRXDE Lite {#using-crxde-lite-development-environment}
+## Usando o Ambiente de desenvolvimento CRXDE Lite {#using-crxde-lite-development-environment}
 
-Os desenvolvedores do AEM passam boa parte do tempo no ambiente de desenvolvimento do [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor. O CRXDE Lite fornece um acesso menos restrito ao repositório CRX. As ferramentas de interface clássica e os consoles de interface habilitada para toque fornecem acesso mais estruturado a partes específicas do repositório CRX.
+Os desenvolvedores do AEM passam boa parte do seu tempo no ambiente de desenvolvimento [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor. O CRXDE Lite fornece um acesso menos restrito ao repositório CRX. As ferramentas de interface clássica e os consoles de interface habilitada para toque fornecem acesso mais estruturado a partes específicas do repositório CRX.
 
 Depois de fazer logon com privilégios administrativos, há várias maneiras de acessar o CRXDE Lite:
 
