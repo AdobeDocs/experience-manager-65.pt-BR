@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Portanto, o mecanismo de pontuação avançado requer dados suficientes para tor
 
 Configurar a pontuação avançada é praticamente o mesmo que a pontuação básica:
 
-* As regras básicas e avançadas de pontuação e marcação são [aplicadas ao conteúdo](/help/communities/implementing-scoring.md#apply-rules-to-content) da mesma maneira
+* As regras básicas e avançadas de pontuação e marcação são [aplicadas ao conteúdo](/help/communities/implementing-scoring.md#apply-rules-to-content) da mesma maneira.
 
-   * Regras básicas e avançadas de pontuação e marcação podem ser aplicadas ao mesmo conteúdo
+   * Regras básicas e avançadas de pontuação e marcação podem ser aplicadas ao mesmo conteúdo.
 
-* [A ativação de emblemas para componentes](/help/communities/implementing-scoring.md#enable-badges-for-component) é genérica
+* [Habilitar emblemas para componentes](/help/communities/implementing-scoring.md#enable-badges-for-component) é genérico.
 
 As diferenças na configuração das regras de pontuação e marcação são:
 
@@ -45,23 +45,24 @@ As diferenças na configuração das regras de pontuação e marcação são:
 * Regras avançadas de pontuação:
 
    * `scoringType` definir para `advanced`
-   * requires `stopwords`
+   * Exige `stopwords`
 
 * Regras avançadas de identificação:
 
    * `badgingType` definir para `advanced`
    * `badgingLevels` definido para **número de especialistas a serem atribuídos**
-   * requer uma `badgingPaths` matriz de emblemas em vez de pontos de mapeamento de matriz de limites para emblemas
+   * Requer `badgingPaths` uma matriz de emblemas em vez de limitar os pontos de mapeamento da matriz para emblemas.
 
 >[!NOTE]
 >
 >Para usar recursos avançados de pontuação e marcação, instale o pacote [de identificação de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)especialistas.
 
+
 ## Mecanismo de Pontuação Configurável {#configurable-scoring-engine}
 
 O mecanismo de pontuação avançado fornece uma configuração OSGi com parâmetros que afetam o algoritmo de pontuação avançado.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **pesos de pontuação**
 
@@ -74,7 +75,7 @@ O padrão é definido para o verbo ADD para QnA e componentes do fórum.
 
    O intervalo para pontuações avançadas é definido por esse valor (pontuação máxima possível) e 0 (pontuação mais baixa possível).
 
-   O valor padrão é 100, de modo que o intervalo de pontuação seja de 0 a 100.
+   O valor padrão é 100 para que o intervalo de pontuação seja de 0 a 100.
 
 * **Intervalo de tempo de decadência de entidade**
 
@@ -102,7 +103,7 @@ Para chamar o mecanismo de pontuação avançado, o `scoringType`deve ser defini
 
 Consulte Sub-regras [de](/help/communities/implementing-scoring.md#scoring-sub-rules)Pontuação.
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![chlimage_1-261](assets/chlimage_1-261.png)
 
 ### Palavras de interrupção {#stopwords}
 
@@ -122,7 +123,7 @@ As propriedades avançadas da regra de identificação diferem das propriedades 
 
 Em vez de associar pontos a uma imagem emblema, basta identificar o número de especialistas permitidos e a imagem do crachá a ser premiada.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![chlimage_1-262](assets/chlimage_1-262.png)
 
 <table>
  <tbody>
@@ -164,7 +165,7 @@ Incluído nesta versão beta, há um selo de especialista baseado em recompensa:
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 Para que o selo do especialista apareça como recompensa pela atividades, verifique se:
 
@@ -197,15 +198,15 @@ Na versão beta estão incluídas duas regras de pontuação avançadas para a f
 
 **Notas:**
 
-* Ambos `rules`e `sub-rules` nós são do tipo `cq:Page`
+* Ambos `rules` e `sub-rules` nós são do tipo `cq:Page`.
 
-* `subRules`é um atributo do tipo String[] no `jcr:content` nó da regra
+* `subRules` é um atributo do tipo String[] no nó da regra `jcr:content` .
 
-* `sub-rules` pode ser compartilhado entre várias regras de pontuação
+* `sub-rules` pode ser compartilhado entre várias regras de pontuação.
 
-* `rules`deve estar localizado em um local de repositório com permissão de leitura para todos
+* `rules` deve estar localizado em um local de repositório com permissão de leitura para todos.
 
-   * Os nomes de regras devem ser exclusivos independentemente da localização
+* Os nomes de regras devem ser exclusivos, independentemente da localização.
 
 ### Regras de marcação incluídas {#included-badging-rules}
 
@@ -216,8 +217,7 @@ Estão incluídas na versão duas regras avançadas de identificação que corre
 
 **Notas:**
 
-* `rules` os nós são do tipo cq:Page
-* `rules` deve estar localizado em um local de repositório com permissão de leitura para todos
-
-   * Os nomes de regras devem ser exclusivos independentemente da localização
+* `rules` nós são do tipo cq:Page.
+* `rules` deve estar localizado em um local de repositório com permissão de leitura para todos.
+* Os nomes de regras devem ser exclusivos, independentemente da localização.
 
