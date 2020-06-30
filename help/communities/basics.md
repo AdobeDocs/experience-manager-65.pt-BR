@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Visão geral {#overview}
 
-A seção de criação da documentação descreve como adicionar recursos das Comunidades aos sites do AEM no modo de edição do autor, bem como descrever configurações de componentes.
+A seção de criação da documentação descreve como adicionar recursos das Comunidades aos sites do AEM no modo de edição do autor, bem como descrever as configurações de componentes.
 
 Os componentes podem ser explorados usando uma instância do AEM e o guia [interativo Componentes](components-guide.md)da comunidade.
 
@@ -31,11 +34,12 @@ Os componentes disponíveis das Comunidades estão listados [aqui](author-commun
 
 >[!NOTE]
 >
->Para obter informações gerais sobre criação, consulte o guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Para obter informações gerais sobre criação, visualização no guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
+>Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
 
-### Entrando no Modo Design {#entering-design-mode}
+
+### Entrando no Modo de Design {#entering-design-mode}
 
 Se um componente **Comunidades** não for encontrado no navegador de componentes (sidekick), será necessário inserir `Design Mode` para adicionar outros componentes das Comunidades. [As bibliotecas](#required-clientlibs) obrigatórias do cliente (clientlibs) também podem precisar ser adicionadas.
 
@@ -67,7 +71,7 @@ Ao adicionar um componente Comunidades a uma página, se o resultado for um erro
 
 Vários recursos das Comunidades podem ser configurados para permitir que os membros marquem o conteúdo inserido (publicado) no ambiente de publicação.
 
-Se a marcação for permitida, a configuração do site da comunidade pode ser definida para limitar os namespaces apresentados aos membros no ambiente de publicação. Consulte o console [Sites da](sites-console.md#tagging)comunidade.
+Se a marcação for permitida, a configuração do site da comunidade pode ser definida para limitar as namespaces apresentadas aos membros no ambiente de publicação. Consulte o console [Sites da](sites-console.md#tagging)comunidade.
 
 Recursos que permitem marcação: [blog](blog-feature.md), [calendário](calendar.md), biblioteca [de](file-library.md)arquivos, [fórum](forum.md)
 
@@ -79,7 +83,7 @@ Para obter informações de criação:
 
 Para informações administrativas:
 
-* Criação de namespaces de tags (taxonomia): [Administração de tags](../../help/sites-administering/tags.md)
+* Criando namespaces de tags (taxonomia): [Administração de tags](../../help/sites-administering/tags.md)
 * Configuração do site da comunidade: consulte [MARCAÇÃO](sites-console.md#tagging)
 * [Marcação de conteúdo gerado pelo usuário](../../help/sites-authoring/tags.md)
 * [Marcação de recursos de ativação](tag-resources.md)
