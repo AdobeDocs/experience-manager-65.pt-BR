@@ -1,12 +1,12 @@
 ---
 title: Configure a marcação de ativos usando o Serviço de conteúdo inteligente.
-description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no Adobe Experience Manager, usando o Serviço de conteúdo inteligente.
+description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3d699f35c7b1ef832a0857fa2fa41aed1fe5a4e
+source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 46%
+source-wordcount: '1118'
+ht-degree: 42%
 
 ---
 
@@ -17,10 +17,11 @@ Você pode fazer a integração [!DNL Adobe Experience Manager] com o Smart Cont
 
 O artigo detalha as seguintes tarefas principais que são necessárias para configurar o Serviço de conteúdo inteligente. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
 
-* Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. Obtenha um certificado público para a integração com o OAuth.
-* Crie uma integração no Console do desenvolvedor e faça upload da chave pública gerada.
-* Configure sua instância do [!DNL Experience Manager] usando a chave da API e outras credenciais do Console do desenvolvedor.
-* Ative a marcação automática no upload de ativos (opcional).
+1. Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. [Obtenha um certificado público para a integração com o OAuth.](#obtain-public-certificate)
+1. [Crie uma integração no Console do desenvolvedor e faça upload da chave pública gerada.](#create-adobe-i-o-integration)
+1. [Configure sua implantação](#configure-smart-content-service) usando a chave da API e outras credenciais do Adobe Developer Console.
+1. [Teste a configuração](#validate-the-configuration).
+1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -29,11 +30,13 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para cri
 * Existência de uma Adobe ID com privilégios de administrador para a organização.
 * O serviço Smart Content Service está habilitado para sua organização.
 
+Para habilitar Tags inteligentes aprimoradas, além do acima, instale também o service pack [mais recente do](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)AEM.
+
 ## Obter certificado público {#obtain-public-certificate}
 
 Um certificado público permite autenticar seu perfil no Console do desenvolvedor.
 
-1. Na interface do [!DNL Experience Manager] usuário, acesse **[!UICONTROL Ferramentas > Cloud Service]**> Cloud Service **** herdados.
+1. Na interface do [!DNL Experience Manager] usuário, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service]** herdados.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 1. Na caixa de diálogo **[!UICONTROL Criar configuração]** , especifique um título e um nome para a configuração de Tags inteligentes. Clique em **[!UICONTROL Criar]**.
@@ -46,6 +49,10 @@ Um certificado público permite autenticar seu perfil no Console do desenvolvedo
    Deixe os outros campos em branco por enquanto (a ser fornecido posteriormente). Clique em **[!UICONTROL OK]**.
 
    ![caixa de diálogo Serviço de conteúdo inteligente do Experience Manager para fornecer o URL do serviço de conteúdo](assets/aem_scs.png)
+
+   >[!NOTE]
+   >
+   >O URL fornecido como URL  de serviço não pode ser acessado pelo navegador e gera um erro 404. A configuração funciona bem com o mesmo valor do parâmetro de URL [!UICONTROL do] serviço. Para obter o status geral do serviço e a programação de manutenção, consulte [https://status.adobe.com](https://status.adobe.com).
 
 1. Clique em **[!UICONTROL Baixar certificado público para integração]** OAuth e baixe o arquivo de certificado público `AEM-SmartTags.crt`.
 
@@ -84,7 +91,7 @@ Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no
 
 ## Configurar o Serviço de conteúdo inteligente {#configure-smart-content-service}
 
-Para configurar a integração, use os valores dos campos ID da conta técnica, ID da organização, segredo do cliente, servidor de autorização e chave da API da integração do Adobe Developer Console. A criação de uma configuração em nuvem de Tags inteligentes permite a autenticação de solicitações de API da [!DNL Experience Manager] instância.
+Para configurar a integração, use os valores dos campos ID da conta técnica, ID da organização, segredo do cliente, servidor de autorização e chave da API da integração do Adobe Developer Console. A criação de uma configuração em nuvem de Tags inteligentes permite a autenticação de solicitações de API da [!DNL Experience Manager] implantação.
 
 1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas > Cloud Service > Cloud Service]** herdados para abrir o console [!UICONTROL Cloud Service] .
 1. Em Tags **[!UICONTROL inteligentes de]** ativos, abra a configuração criada acima. Na página de configurações do serviço, clique em **[!UICONTROL Editar]**.
@@ -96,7 +103,6 @@ Para configurar a integração, use os valores dos campos ID da conta técnica, 
 Depois de concluir a configuração, você pode usar um MBean JMX para validar a configuração. Para validar, siga estas etapas.
 
 1. Acesse seu [!DNL Experience Manager] servidor em `https://[aem_server]:[port]`.
-
 1. Vá até **[!UICONTROL Ferramentas > Operações > Console]** da Web para abrir o console do OSGi. Clique em **[!UICONTROL Principal > JMX]**.
 1. Clique em **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Ele abre **[!UICONTROL SemelhançaPesquise Tarefas]** diversas.
 1. Clique em **[!UICONTROL validateConfigs()]**. Na caixa de diálogo **[!UICONTROL Validar configurações]** , clique em **[!UICONTROL Chamar]**.
