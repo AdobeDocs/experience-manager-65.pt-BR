@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 4%
@@ -41,7 +41,7 @@ No ambiente author, navegue até o console Badges:
 
 Esse console exibe os emblemas disponíveis no momento e a partir dos quais novos emblemas podem ser adicionados.
 
-![badges-homepage](assets/badges-homepage.png)
+![chlimage_1-242](assets/chlimage_1-242.png)
 
 ## Criar selo {#create-badge}
 
@@ -49,7 +49,7 @@ Um crachá é criado fazendo upload de uma imagem bem pequena (72 dpi com uma al
 
 Se o ambiente publish for um farm de editores, será necessário configurar a sincronização [](/help/communities/sync.md)do usuário.
 
-![badges-1](assets/badges-1.png)
+![chlimage_1-243](assets/chlimage_1-243.png)
 
 * **Carregar imagem**
 
