@@ -3,9 +3,9 @@ title: Gerenciar [!DNL Adobe Stock] ativos [!DNL Adobe Experience Manager Assets
 description: Pesquise, busque, licencie e [!DNL Adobe Stock] gerencie ativos de dentro [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
+source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1109'
 ht-degree: 13%
 
 ---
@@ -31,7 +31,7 @@ Para permitir a comunicação entre [!DNL Experience Manager] e [!DNL Adobe Stoc
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. Click on [!DNL Experience Manager] logo. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**. Clique em **[!UICONTROL Criar]** e selecione **[!UICONTROL Solução da nuvem]** > **[!UICONTROL Adobe Stock]**.
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Clique em **[!UICONTROL Criar]** e selecione **[!UICONTROL Solução da nuvem]** > **[!UICONTROL Adobe Stock]**.
 1. Reutilize um certificado existente ou selecione **[!UICONTROL Criar novo certificado]**.
 1. Clique em **[!UICONTROL Criar certificado]**. Depois de criada, baixe a chave pública. Clique em **[!UICONTROL Avançar]**.
 1. Adicione a chave pública baixada à sua conta [!DNL Adobe Developer Console] de serviço. Clique em **[!UICONTROL Avançar]**. Deixe a tela Configuração [!UICONTROL da conta técnica] Adobe IMS aberta para fornecer os valores em breve.
@@ -52,7 +52,7 @@ Para permitir a comunicação entre [!DNL Experience Manager] e [!DNL Adobe Stoc
 
 >[!NOTE]
 >
->Se houver várias [!DNL Adobe Stock] configurações, selecione a configuração desejada no painel Preferências  do usuário. Clique no logotipo *do usuário* no canto superior direito da interface do [!DNL Experience Manager] usuário.
+>Se houver várias [!DNL Adobe Stock] configurações, selecione a configuração desejada no painel Preferências do usuário (**[!UICONTROL AEM]** > Ícone **** do usuário > Preferências **** do usuário > Configuração **[!UICONTROL do]** estoque).
 
 ## Usar e gerenciar [!DNL Adobe Stock] ativos em [!DNL Experience Manager] {#usemanage}
 
