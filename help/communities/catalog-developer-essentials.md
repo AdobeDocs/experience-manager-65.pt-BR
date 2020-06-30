@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
@@ -62,9 +65,9 @@ Consulte [Marcação de recursos](tag-resources.md)de ativação.
 
 Uma estrutura de site da comunidade que inclui a função [](functions.md#catalog-function)Catalog, inclui um `enablement catalog` componente configurado.
 
-### Pré-filtros {#pre-filters}
+### Pré-Filtros {#pre-filters}
 
-Quando uma função de Catálogo é adicionada a um site da comunidade, é possível restringir os recursos de ativação e os caminhos de aprendizado exibidos no catálogo especificando um pré-filtro. Isso é feito configurando propriedades na instância do recurso de catálogo do site.
+Quando uma função de Catálogo é adicionada a um site da comunidade, é possível restringir os recursos de ativação e os caminhos de aprendizado que aparecem no catálogo especificando um pré-filtro. Isso é feito configurando propriedades na instância do recurso de catálogo do site.
 
 Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
 
@@ -77,15 +80,14 @@ Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
 
    * Por exemplo, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Adicionar um nó de filtros filho
+* Adicionar um nó filtros filho
 
    * Selecionar o `catalog`nó
    * Selecionar nó **[!UICONTROL Criar]**
 
       * Nome: `filters`
       * Tipo: `nt:unstructured`
-   * Selecione **[!UICONTROL Salvar tudo]**
-
+      * Selecione **[!UICONTROL Salvar tudo]**
 
 * Adicionar `se_resource-tags` propriedade ao `filters` nó
 
@@ -95,10 +97,10 @@ Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
       * Nome: `se_resource-tags`
       * Tipo: String
       * Valor: *&lt;insira uma[TagID](#pre-filter-tagids)>*
-      * Selecionar **[!UICONTROL vários]**
-      * Selecionar **[!UICONTROL Adicionar]**
+         * Selecionar **[!UICONTROL vários]**
+         * Selecionar **[!UICONTROL Adicionar]**
 
-         * Na caixa de diálogo pop-up, selecione `+` para adicionar TagIDs de pré-filtro adicionais
+            * Na caixa de diálogo pop-up, selecione `+` para adicionar TagIDs de pré-filtro adicionais
 
 * Publicar novamente o site da comunidade
 
@@ -114,7 +116,7 @@ As [TagIDs](../../help/sites-developing/framework.md#tagid) pré-filtradas devem
 
 * [API de ativação](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [API de relatórios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [API do Relatórios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [API do Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [API do Relatórios Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
