@@ -1,8 +1,8 @@
 ---
 title: Personalização do cliente
 seo-title: Personalização do cliente
-description: Personalizar comportamento ou aparência do lado do cliente no AEM Communities
-seo-description: Personalizar comportamento ou aparência do lado do cliente no AEM Communities
+description: Personalizar o comportamento ou aparência do lado do cliente em AEM Communities
+seo-description: Personalizar o comportamento ou aparência do lado do cliente em AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,18 +10,21 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 0%
 
 ---
 
 
-# Personalização do cliente {#client-side-customization}
+# Personalização do cliente  {#client-side-customization}
 
 | **[⇐ Fundamentos de recursos](essentials.md)** | **[Utilitário de personalização do servidor](server-customize.md)** |
 |---|---|
 |  | **[Auxiliares da proteção contra a fraude SCF](handlebars-helpers.md)** |
 
-Para personalizar a aparência e/ou o comportamento de um componente do AEM Communities no lado do cliente, há várias abordagens.
+Para personalizar a aparência e/ou o comportamento de um componente AEM Communities no lado do cliente, há várias abordagens.
 
 Duas abordagens principais são sobrepor ou estender um componente.
 
@@ -53,7 +56,7 @@ Para obter um exemplo rápido de como estender o componente de comentários, exp
 
 ## Vínculo Javascript {#javascript-binding}
 
-O script HBS do componente deve estar vinculado aos objetos, modelos e exibições JavaScript, que implementam esse recurso.
+O script HBS do componente deve estar vinculado aos objetos, modelos e visualizações JavaScript, que implementam esse recurso.
 
 O valor do `data-scf-component` atributo pode ser o padrão, como **`social/tally/components/hbs/rating`**, ou um componente estendido (personalizado) para funcionalidade personalizada, como **weretail/components/hbs/rating**.
 
@@ -106,17 +109,18 @@ Os estilos personalizados substituirão os estilos de estrutura padrão e o comp
 >
 >Embora as `scf-js` classes não afetem estilos, os nomes das classes podem ser usados em folhas de estilo com a ressalva de que, como controlam os estados dos elementos, podem haver efeitos colaterais.
 
+
 ## Extensão do Javascript {#extending-javascript}
 
-Para estender uma implementação do Javascript de componentes, é necessário apenas
+Para estender uma implementação do Javascript de componentes, é necessário:
 
-1. Crie um componente para seu aplicativo com um conjunto jcr:resourceSuperType definido com o valor de jcr:resourceType do componente estendido, por exemplo, social/forum/components/hbs/forum
-1. Examine o Javascript do componente SCF padrão para determinar que métodos devem ser registrados usando SCF.registerComponent()
-1. Copie o Javascript do componente estendido ou inicie do zero
-1. Estender o método
-1. Use SCF.registerComponent() para registrar todos os métodos com os padrões ou os objetos e exibições personalizados.
+1. Crie um componente para seu aplicativo com um conjunto jcr:resourceSuperType definido com o valor de jcr:resourceType do componente estendido, por exemplo, social/forum/components/hbs/forum.
+1. Examine o Javascript do componente SCF padrão para determinar que métodos devem ser registrados usando SCF.registerComponent().
+1. Copie o Javascript ou o start do componente estendido do zero.
+1. Estende o método.
+1. Use SCF.registerComponent() para registrar todos os métodos com os padrões ou os objetos e visualizações personalizados.
 
-### forum.js: Exemplo de extensão do fórum - HBS {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Exemplo de extensão do fórum - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -153,7 +157,7 @@ O uso de bibliotecas [do lado do](../../help/sites-developing/clientlibs.md) cli
 
 As clientlibs para SCF seguem um padrão de nomenclatura muito específico para duas variantes, que variam apenas pela presença de &#39;autor&#39; no nome da categoria:
 
-| Variante Clientlib | Padrão para a propriedade Categorias |
+| Variante Clientlib | Padrão para a propriedade Categoria |
 |--- |--- |
 | clientlib completo | cq.social.hbs.&lt;nome do componente> |
 | clientlib do autor | cq.social.author.hbs.&lt;nome do componente> |
@@ -169,7 +173,7 @@ Essas versões são encontradas em:
 Por exemplo:
 
 * Nó de pasta do cliente: `/etc/clientlibs/social/hbs/forum`
-* Propriedade Categorias: `cq.social.hbs.forum`
+* propriedade Categoria: `cq.social.hbs.forum`
 
 O guia [Componentes da](components-guide.md) comunidade lista as clientlibs completas necessárias para cada componente do SCF.
 
@@ -188,9 +192,9 @@ Essas versões são encontradas na pasta libs SCF:
 Por exemplo:
 
 * Nó de pasta do cliente: `/libs/social/forum/hbs/forum/clientlibs`
-* Propriedade Categorias: `cq.social.author.hbs.forum`
+* propriedade Categoria: `cq.social.author.hbs.forum`
 
-Observação: embora os clientlibs do autor nunca incorporem outras bibliotecas, eles listam suas dependências. Quando incorporadas em outras bibliotecas, as dependências não são automaticamente extraídas e também devem ser incorporadas.
+Observação: enquanto os clientlibs do autor nunca incorporam outras bibliotecas, eles fazem lista de suas dependências. Quando incorporadas em outras bibliotecas, as dependências não são automaticamente extraídas e também devem ser incorporadas.
 
 Os clientlibs do autor necessários podem ser identificados inserindo &quot;autor&quot; nos clientlibs listados para cada componente do SCF no guia [Componentes da](components-guide.md)comunidade.
 
