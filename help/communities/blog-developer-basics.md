@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
 
 # Blog Essentials {#blog-essentials}
 
-A partir do AEM 6.1 Communities, um blog é uma atividade comunitária. Os artigos de blog agora são publicados a partir do ambiente de publicação, onde antes os artigos de blog só podiam ser criados no ambiente do autor e publicados.
+A partir do AEM 6.1 Communities, um blog é uma atividade da comunidade. Os artigos de blog agora são publicados a partir do ambiente de publicação, onde anteriormente os artigos de blog só podiam ser criados no ambiente do autor e publicados.
 
 Os artigos de blog agora podem ser criados por qualquer membro da comunidade, a menos que restritos a membros privilegiados.
 
@@ -26,7 +29,8 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 >[!NOTE]
 >
->A infraestrutura subjacente do recurso de blog é o recurso de diário.
+>A infraestrutura subjacente do recurso de blog é o recurso do journal.
+
 
 ## Essenciais para o lado do cliente {#essentials-for-client-side}
 
@@ -38,7 +42,7 @@ O recurso de blog é composto de dois componentes principais que estão disponí
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/diário/componentes/hbs/diário</td>
+   <td>social/journal/components/hbs/journal</td>
   </tr>
   <tr>
    <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclusivo</strong></a></td>
@@ -65,7 +69,7 @@ O recurso de blog é composto de dois componentes principais que estão disponí
 
 ### Barra lateral do blog {#blog-sidebar}
 
-| **resourceType** | social/diário/componentes/hbs/barra lateral |
+| **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
 | [**inclusivo **](/help/communities/scf.md#add-or-include-a-communities-component) | Não |
 | [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
@@ -92,16 +96,16 @@ Uma estrutura de site da comunidade que inclui a função [](/help/communities/f
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
 Consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
 
-Desde as comunidades do AEM 6.1, o uso de uma loja [](/help/communities/working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir das comunidades do AEM 6.1, o uso de uma loja [](/help/communities/working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte :
 
-* [Visão geral](/help/communities/srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
-* [SRP e UGC Essentials](/help/communities/srp-and-ugc.md) - métodos e exemplos de utilitários SRP
-* [Acesso ao UGC com SRP](/help/communities/accessing-ugc-with-srp.md) - diretrizes de codificação
-* [Refatoração](/help/communities/socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
+* [Visão geral](/help/communities/srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](/help/communities/srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com SRP](/help/communities/accessing-ugc-with-srp.md) - diretrizes de codificação.
+* [Refatoração](/help/communities/socialutils.md) de utilitários sociais - mapeamento de métodos de utilitários obsoletos para métodos atuais de utilitários SRP.
 
 ## Editor principal {#primary-publisher}
 
@@ -119,5 +123,5 @@ A partir do AEM 6.2, as modificações anteriormente necessárias para serem fei
 
 A mídia avançada é incorporada em um artigo de blog selecionando o `Embed Media from External Sites` ícone :
 
-![chlimage_1-199](assets/chlimage_1-199.png)
+![chlimage_1-471](assets/chlimage_1-471.png)
 
