@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 7%
@@ -160,7 +160,7 @@ Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na gui
 
 * **Espaços de nomes permitidos**
 
-   Relevante se `Allow Tagging` estiver marcada na guia **Settings **tab. As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+   Relevante se `Allow Tagging` estiver marcado na guia **Configurações** . As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
 
 * **Limite sugerido**
 
