@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +28,7 @@ Outra opção para explorar componentes de amostra é usar os recursos apresenta
 
 ## Criar um site da comunidade {#create-a-community-site}
 
-Isso é muito semelhante à criação de um novo site descrito em [Introdução ao AEM Communities](getting-started.md).
+Isso é muito semelhante à criação de um novo site descrito em [Introdução aos AEM Communities](getting-started.md).
 
 A principal diferença é que este tutorial criará um novo modelo de site da comunidade que contém apenas a função [](functions.md#page-function) Página para criar um site simples da comunidade sem outros recursos (que não os recursos pré-conectados básicos para todos os sites da comunidade).
 
@@ -33,7 +36,7 @@ A principal diferença é que este tutorial criará um novo modelo de site da co
 
 Para começar, crie um modelo [de site simples da](sites.md)comunidade.
 
-Na navegação global em uma instância do autor, selecione **[!UICONTROL Ferramentas > Comunidades > Modelos]** do site.
+Na navegação global em uma instância do autor, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > Modelos **[!UICONTROL de]** site.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -78,10 +81,10 @@ Depois de criar o modelo de site, na navegação global selecione **[!UICONTROL 
    * `Name`: amostra
 
       * url = http://localhost:4502/content/sites/sample
-   * `Template`: choice `Single Page Template`
 
+      * `Template`: choice `Single Page Template`
+      ![chlimage_1-86](assets/chlimage_1-86.png)
 
-![chlimage_1-86](assets/chlimage_1-86.png)
 
 * Selecionar `Next`
 * Etapa `2 - Design`
@@ -95,7 +98,7 @@ Depois de criar o modelo de site, na navegação global selecione **[!UICONTROL 
 
 * Selecionar `Create`
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+   ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ## Publicar o site {#publish-the-site}
 
@@ -107,14 +110,14 @@ No console [de sites da](sites-console.md)comunidade, selecione o ícone de publ
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
-Selecione o ícone de abrir site para exibir o site no modo de edição.
+Selecione o ícone de abrir site para visualização do site no modo de edição.
 
 O URL será [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
-Na página inicial simples, é possível ver o que está pré-conectado por meio das funções e modelos da comunidade e brincar com a adição e configuração de componentes da comunidade.
+No home page simples é possível ver o que está pré-conectado através das funções e modelos da comunidade, e brincar com a adição e configuração de componentes da comunidade.
 
-## Exibir site na publicação {#view-site-on-publish}
+## Site de Visualização na publicação {#view-site-on-publish}
 
-Depois de publicar a página, abra a página na instância [de](http://localhost:4503/content/sites/sample/en.html) publicação para experimentar os recursos como um visitante anônimo do site, membro conectado ou administrador. O link Administração visível no ambiente do autor não aparecerá no ambiente de publicação, a menos que um administrador faça logon.
+Depois de publicar a página, abra a página na instância [de](http://localhost:4503/content/sites/sample/en.html) publicação para experimentar os recursos como um visitante de site anônimo, membro conectado ou administrador. O link Administração visível no ambiente do autor não aparecerá no ambiente de publicação, a menos que um administrador faça logon.
