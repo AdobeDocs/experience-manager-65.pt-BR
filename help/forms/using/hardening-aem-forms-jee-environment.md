@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
+source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7665'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ Existe um risco aumentado de que um usuário não autorizado possa obter acesso 
 
 **Contas de serviço (chave de acesso JBoss somente no Windows)**
 
-O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem. A conta de usuário LocalSystem integrada tem um alto nível de acessibilidade; faz parte do grupo Administradores. Se uma identidade de processo de trabalho for executada como a conta de usuário LocalSystem, esse processo de trabalho terá acesso total ao sistema inteiro.
+O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem. A conta de usuário LocalSystem integrada tem um alto nível de acessibilidade; faz parte do grupo Administradores. Se uma identidade de processo de trabalho for executada como a conta de usuário LocalSystem, esse processo de trabalho terá total acesso ao sistema inteiro.
 
 Para executar o servidor de aplicativos no qual os AEM Forms no JEE são implantados, usando uma conta específica não administrativa, siga estas instruções:
 
@@ -458,6 +458,16 @@ Esta tabela descreve as técnicas de auditoria e registro que podem ser usadas p
  </tbody> 
 </table>
 
+### Habilitar um usuário não administrador para executar o Gerador de PDF
+
+Você pode habilitar um usuário que não seja administrador a usar o Gerador de PDF. Normalmente, somente os usuários com privilégios administrativos podem usar o Gerador de PDF. Execute as seguintes etapas para permitir que um usuário não administrador execute o Gerador de PDF:
+
+1. Crie um nome de variável de ambiente PDFG_NON_ADMIN_ENABLED.
+
+1. Defina o valor da variável como TRUE.
+
+1. Reinicie a instância de formulários do AEM.
+
 ## Configurando AEM Forms no JEE para acesso além da empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
 Depois de instalar o AEM Forms com êxito no JEE, é importante manter periodicamente a segurança do seu ambiente. Esta seção descreve as tarefas recomendadas para manter a segurança de seus AEM Forms no servidor de produção JEE.
@@ -676,10 +686,10 @@ O processo de Filtragem de Quem indicou pode ser descrito da seguinte maneira:
    1. Se for POST, o servidor de formulários executará a verificação do cabeçalho da Quem indicou.
    1. Se for GET, o servidor de formulários ignorará a verificação de Quem indicou, a menos que *CSRF_CHECK_GETS* esteja definido como true, caso em que executa a verificação do cabeçalho da Quem indicou. *CSRF_CHECK_GETS* está especificado no arquivo *web.xml* do seu aplicativo.
 
-1. O servidor de formulários verifica se o URI solicitado existe na lista permitida:
+1. O servidor de formulários verifica se o URI solicitado existe lista de permissões:
 
-   1. Se o URI for permitido na lista, o servidor aceitará a solicitação.
-   1. Se o URI solicitado não estiver listado, o servidor recuperará a Quem indicou da solicitação.
+   1. Se o URI for incluído na lista de permissões, o servidor aceitará a solicitação.
+   1. Se o URI solicitado não for incluído na lista de permissões, o servidor recuperará a Quem indicou da solicitação.
 
 1. Se houver uma Quem indicou na solicitação, o servidor verificará se é uma Quem indicou permitida. Se for permitido, o servidor verifica se há uma Exceção de Quem indicou:
 
@@ -695,7 +705,7 @@ O processo de Filtragem de Quem indicou pode ser descrito da seguinte maneira:
 
 AEM Forms no JEE fornecem um Filtro de Quem indicou para especificar Quens indicou que podem acessar os recursos do servidor. Por padrão, o filtro de Quem indicou não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* esteja definido como true. Se o número da porta para uma entrada de Quem indicou permitida for definido como 0, os AEM Forms no JEE permitirão todas as solicitações com Quem indicou desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou da porta 443 (HTTPS) serão permitidas. A Filtragem de Quem indicou é desativada se todas as entradas na lista de Quem indicou Permitida forem excluídas.
 
-Quando você instala os Serviços de Documento pela primeira vez, a lista de Quem indicou permitida é atualizada com o endereço do servidor no qual os Serviços de Documento estão instalados. As entradas para o servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6 se IPv6 estiver ativado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista de Quem indicou Permitida são retornados pelo sistema operacional Host. Por exemplo, um servidor com um endereço IP de 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), a lista permitida não é atualizada. Modifique a lista de Quem indicou permitida para adequá-la ao seu ambiente comercial. Não implante o servidor de formulários no ambiente de produção com a lista de Quem indicou permitida padrão. Depois de modificar qualquer Quem indicou, Exceções de Quem indicou ou URIs Permitidas, certifique-se de reiniciar o servidor para que as alterações entrem em vigor.
+Quando você instala os Serviços de Documento pela primeira vez, a lista de Quem indicou permitida é atualizada com o endereço do servidor no qual os Serviços de Documento estão instalados. As entradas para o servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6 se IPv6 estiver ativado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista de Quem indicou Permitida são retornados pelo sistema operacional Host. Por exemplo, um servidor com um endereço IP de 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado) lista de permissões não é atualizada. Modifique a lista de Quem indicou permitida para adequá-la ao seu ambiente comercial. Não implante o servidor de formulários no ambiente de produção com a lista de Quem indicou permitida padrão. Depois de modificar qualquer Quem indicou, Exceções de Quem indicou ou URIs Permitidas, certifique-se de reiniciar o servidor para que as alterações entrem em vigor.
 
 **Gerenciando lista de Quem indicou permitida**
 
@@ -1080,4 +1090,4 @@ Defina a `directoryBrowsingEnabled` propriedade no arquivo ibm-web-ext.xml como 
 1. Selecione **Ativar segurança** administrativa.
 1. Desmarque **Ativar segurança** do aplicativo e **Usar segurança** Java 2.
 1. Clique em **OK** ou em **Aplicar**.
-1. Na caixa **Mensagens** , clique em **Salvar diretamente na configuração** mestre.
+1. Na caixa **Mensagens** , clique em **Salvar diretamente na configuração** principal.
