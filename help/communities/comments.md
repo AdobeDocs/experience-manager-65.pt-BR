@@ -1,8 +1,8 @@
 ---
 title: Uso de comentários
 seo-title: Uso de comentários
-description: O recurso Comentários permite que os visitantes do site conectados compartilhem suas opiniões e conhecimentos
-seo-description: O recurso Comentários permite que os visitantes do site conectados compartilhem suas opiniões e conhecimentos
+description: Os recursos de comentários permitem que visitantes do site conectados compartilhem suas opiniões e conhecimentos
+seo-description: Os recursos de comentários permitem que visitantes do site conectados compartilhem suas opiniões e conhecimentos
 uuid: 40acd962-846c-483c-b789-aab3a7d2b31b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+workflow-type: tm+mt
+source-wordcount: '994'
+ht-degree: 6%
 
 ---
 
@@ -20,20 +23,21 @@ source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ## Introdução {#introduction}
 
-O recurso comments é usado para permitir que os visitantes do site conectados (membros) compartilhem suas opiniões e conhecimentos sobre o conteúdo do site. Esse recurso geralmente já está presente em outros recursos, mas pode ser adicionado a qualquer site.
+O recurso comments é usado para permitir que visitantes do site conectados (membros) compartilhem suas opiniões e conhecimentos sobre o conteúdo do site. Esse recurso geralmente já está presente em outros recursos, mas pode ser adicionado a qualquer site.
 
 O documento descreve:
 
-* Adicionando `Comments`a uma página.
-* Configurações do `Comments`componente.
+* Adicionando `Comments` a uma página.
+* Configurações do `Comments` componente.
 
 >[!NOTE]
 >
 >Não há suporte para a publicação anônima de um comentário. Os visitantes do site devem se registrar (tornar-se um membro) e fazer logon para participar.
 
+
 ### Adicionar comentários a uma página {#adding-comments-to-a-page}
 
-Para adicionar um `Comments`componente a uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um `Comments` componente a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Comments`
 
@@ -41,19 +45,22 @@ e arraste-o para o lugar em uma página, como uma posição relativa ao recurso 
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do cliente](/help/communities/essentials-comments.md#essentials-for-client-side) necessárias são incluídas, é assim que o `Comments`componente aparece.
+Quando as bibliotecas [do cliente](/help/communities/essentials-comments.md#essentials-for-client-side) necessárias são incluídas, é assim que o `Comments` componente aparece.
 
-![chlimage_1-143](assets/chlimage_1-143.png)
+![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Somente um `Comments`componente pode existir em uma página. Esteja ciente de que vários recursos das Comunidades já incluem comentários, como um blog, calendário, fórum, QnA e revisões.
+>Somente um `Comments` componente pode existir em uma página. Esteja ciente de que vários recursos das Comunidades já incluem comentários, como um blog, calendário, fórum, QnA e revisões.
+
 
 ### Configuração de comentários {#configuring-comments}
 
 Selecione o componente inserido a ser acessado e selecione o `Comments` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![configurar](assets/configure.png) comentários do ícone ![](assets/commentssettings.png)
+![ícone configurar](assets/configure.png)
+
+![commentssettings](assets/commentssettings.png)
 
 #### Guia Comentários {#comments-tab}
 
@@ -137,7 +144,7 @@ Na guia Moderação **do** usuário, especifique como os comentários publicados
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da exibição pública. Esse número deve ser maior ou igual ao Limite de **moderação**. O padrão é 5.
+   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao Limite de **moderação**. O padrão é 5.
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 
@@ -155,21 +162,21 @@ Na guia **Classificar configurações** , especifique como os comentários publi
 
 Ao alterar o Tipo de recurso de comentário, o sistema de comentários não gera mais uma instância de um comentário usando o padrão, mas uma que foi personalizada (estendida) pelos desenvolvedores.
 
-Depois que os tipos de recursos personalizados forem conhecidos, entre no Modo [de](/help/sites-authoring/default-components-designmode.md) design e clique duas vezes no componente inserido `Comments` para abrir uma caixa de diálogo com uma guia extra.
+Depois que os tipos de recursos personalizados forem conhecidos, entre no Modo [de](/help/sites-authoring/default-components-designmode.md) design e clique no duplo no componente inserido `Comments` para abrir uma caixa de diálogo com uma guia extra.
 
-Na guia Tipos **de** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting`componentes:
+Na guia Tipos **de** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting` componentes:
 
-![chlimage_1-144](assets/chlimage_1-144.png)
+![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **Tipo de recursos de comentários**
 
-   Navegue até resourceType de um `comment`componente estendido (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`
+   Navegue até resourceType de um `comment` componente estendido (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`
 
    Esse recurso identifica o resourceType do UGC criado quando um visitante postou um comentário.
 
 * **Tipo de recursos para pesquisa**
 
-   Navegue até resourceType de um `voting`componente estendido em /apps. Por exemplo, `/apps/social/components/hbs/voting`
+   Navegue até resourceType de um componente estendido em /apps. `voting` Por exemplo, `/apps/social/components/hbs/voting`
 
    Esse recurso identifica o tipo de recurso do UGC criado quando um visitante posta um voto.
 
@@ -177,7 +184,7 @@ Na guia Tipos **de** recursos, especifique o resourceType personalizado para nov
 
    Navegue até resourceType de um `comments`componente estendido (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página inclua [](/help/communities/scf.md#add-or-include-a-communities-component) dinamicamente o Sistema de comentários no script subjacente em vez de ser adicionado à página como um recurso (nó de comentários). Saiba mais lendo sobre o auxiliar [](/help/communities/handlebars-helpers.md#include){{include}}.
 
-### Experiência do visitante do site {#site-visitor-experience}
+### Experiência com o Visitante do site {#site-visitor-experience}
 
 #### Moderadores e administradores {#moderators-and-administrators}
 
@@ -185,7 +192,7 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 #### Membros {#members}
 
-Quando o visitante do site está conectado, dependendo da configuração, ele pode
+Quando o visitante do site estiver conectado, dependendo da configuração, eles poderão
 
 * Publicar um novo comentário
 * Editar seus próprios comentários
