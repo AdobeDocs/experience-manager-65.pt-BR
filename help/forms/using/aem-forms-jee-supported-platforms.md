@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5e932c127c74d13f6f46003b20a3ba5f68606c29
+source-git-commit: d1584bc5034e7d4a549a5f824a89e8cf0c06ac3c
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3217'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,11 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
   </tr>
   <tr>
    <td><p>Oracle Database 12c Release 1</p> </td>
+   <td><p>Microkernel do repositório</p> </td>
+   <td><p>Compatível</p> </td>
+  </tr>
+   <tr>
+   <td><p>Oracle Database 12c Release 2 (12.2.0.1.0)</p> </td>
    <td><p>Microkernel do repositório</p> </td>
    <td><p>Compatível</p> </td>
   </tr>
