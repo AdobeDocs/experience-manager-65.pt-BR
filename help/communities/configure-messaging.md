@@ -11,20 +11,35 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 4%
 
 ---
 
 
 # Recurso de mensagens {#messaging-feature}
 
-Além das interações publicamente visíveis que ocorrem em fóruns e comentários, o recurso de mensagens do AEM Communities permite que os membros da comunidade interajam mais privadamente.
+Além das interações publicamente visíveis que ocorrem em fóruns e comentários, o recurso de mensagens dos AEM Communities permite que os membros da comunidade interajam mais privadamente.
 
 Este recurso pode ser incluído quando um site [da](/help/communities/overview.md#communitiessites) comunidade é criado.
 
 O recurso de mensagens oferece a capacidade de:
 
-**A** - enviar uma mensagem para um ou mais membros **B** da comunidade - enviar mensagens diretas em [massa para os grupos](/help/communities/messaging.md#group-messaging)**C** membros da comunidade - enviar uma mensagem com anexos **D** - encaminhar uma mensagem ************ E - responder a uma mensagemF - excluir uma mensagemG - restaurar uma mensagem excluída
+**A** - enviar uma mensagem para um ou mais membros da comunidade
+
+**B** - enviar mensagens diretas em [massa para grupos de membros da comunidade](/help/communities/messaging.md#group-messaging)
+
+**C** - enviar uma mensagem com anexos
+
+**D** - encaminhar uma mensagem
+
+**E** - responder a uma mensagem
+
+**F** - excluir uma mensagem
+
+**G** - restaurar uma mensagem excluída
 
 ![mensagem de](assets/messaging-section.png) restauração de seção ![de mensagens](assets/restore-message.png)
 
@@ -37,23 +52,24 @@ Para ativar e modificar o recurso de mensagens, consulte:
 >
 >Não há suporte para adicionar `Compose Message, Message, or Message List` componentes (encontrados no grupo de `Communities`componentes) a uma página no modo de edição do autor.
 
+
 ## Configurar componentes de mensagens {#configure-messaging-components}
 
 Quando as mensagens são ativadas para um site da comunidade, elas são configuradas sem necessidade de outras configurações. As informações são fornecidas se houver necessidade de alterar a configuração padrão.
 
-### Configurar lista de mensagens (caixa de mensagem) {#configure-message-list-message-box}
+### Configurar Lista de mensagem (caixa de mensagem) {#configure-message-list-message-box}
 
 Para modificar a configuração da lista de mensagens para as páginas **Caixa de entrada**, Itens **** enviados e **Lixeira** do recurso de mensagem, abra o site no modo [de edição do](/help/communities/sites-console.md#authoring-site-content)autor.
 
-1. No `Preview`modo, selecione o link **Mensagens** para abrir a página principal de mensagens. Em seguida, selecione **Caixa de entrada**, Itens **** enviados ou **Lixeira** para configurar o componente para a lista de mensagens.
+1. No `Preview` modo, selecione o link **Mensagens** para abrir a página principal de mensagens. Em seguida, selecione **Caixa de entrada**, Itens **** enviados ou **Lixeira** para configurar o componente para essa lista de mensagem.
 
 1. No `Edit` modo, selecione o componente na página.
-1. Para acessar a caixa de diálogo de configuração, cancele a herança selecionando o `link`ícone.
+1. Para acessar a caixa de diálogo de configuração, cancele a herança selecionando o `link` ícone.
 Após a herança ser cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
 1. Quando a configuração for concluída, será necessário restaurar a herança selecionando o `broken link` ícone.
 
-![configure-message-list](assets/configure-message-list.png)
+![configure-message-lista](assets/configure-message-list.png)
 
 #### Basic tab {#basic-tab}
 
@@ -61,23 +77,23 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 * **Seletor de serviços**
 
-   (*Obrigatório*) Defina esse valor como o valor da propriedade **`serviceSelector.name`** do serviço [de operações de mensagens do](/help/communities/messaging.md#messaging-operations-service)AEM Communities Messaging.
+   (*Obrigatório*) Defina esse valor para o valor da propriedade **`serviceSelector.name`** do Serviço [de Operações de Mensagens do](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
 
 * **Compor página**
 
-   (*Obrigatório*) A página a ser aberta quando um membro clicar no **`Reply`** botão. A página de destino deve conter o formulário **Compor mensagem** .
+   (*Obrigatório*) A página a ser aberta quando um membro clicar no **`Reply`** botão. A página público alvo deve conter o formulário **Compor mensagem** .
 
-* **Responder/Exibir como Recurso**
+* **Responder/Visualização como Recurso**
 
-   Se marcada, o URL de resposta e o URL de exibição farão referência a um recurso, caso contrário, os dados serão passados como parâmetros de consulta no URL.
+   Se marcada, o URL de resposta e o URL de Visualização farão referência a um recurso, caso contrário, os dados serão transmitidos como parâmetros de query no URL.
 
-* **Formulário de exibição de perfil**
+* **Formulário de exibição de Perfil**
 
-   O formulário de perfil a ser usado para exibir o perfil dos remetentes.
+   O formulário de perfil a ser usado para exibir o perfil de remetentes.
 
 * **Pasta de lixeira**
 
-   Se marcado, esse componente de Lista de mensagens exibirá apenas as mensagens sinalizadas como excluídas (lixeira).
+   Se marcado, esse componente de Lista de mensagem exibirá apenas as mensagens sinalizadas como excluídas (lixeira).
 
 * **Caminhos da pasta**
 
@@ -85,7 +101,7 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 #### Guia Exibir {#display-tab}
 
-![display-tab-message-list](assets/display-tab-message-list.png)
+![display-tab-message-lista](assets/display-tab-message-list.png)
 
 * **Botão Marcar leitura**
 
@@ -97,11 +113,11 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 * **Botão Excluir**
 
-   Se marcada, exibe um `Delete`botão que permite que uma mensagem seja marcada como lida. Duplicará a funcionalidade de exclusão se também **`Message Options`** estiver marcada.
+   Se marcada, exibe um `Delete` botão que permite que uma mensagem seja marcada como lida. A funcionalidade de exclusão será duplicado se **`Message Options`** também estiver marcada.
 
 * **Opções de mensagem**
 
-   Se marcada, exibe **`Reply`**, **`Reply All`** e **`Forward`** **`Delete`** botões permitindo que uma mensagem seja reenviada ou excluída. Duplicará a funcionalidade de exclusão se também **`Delete Button`** estiver marcada.
+   Se marcada, exibe **`Reply`**, **`Reply All`** e **`Forward`** **`Delete`** botões permitindo que uma mensagem seja reenviada ou excluída. A funcionalidade de exclusão será duplicado se **`Delete Button`** também estiver marcada.
 
 * **Mensagens por página**
 
@@ -113,7 +129,7 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 * **Exibir o usuário**
 
-   Escolha **`Sender`** ou **`Recipients`** para determinar se deseja exibir o Remetente ou os Destinatários.
+   Escolha **`Sender`** ou **`Recipients`** para determinar se deseja exibir o Remetente ou os Recipient.
 
 ### Configurar mensagem de composição {#configure-compose-message}
 
@@ -151,7 +167,7 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 * **Seletor de serviços**
 
-   (*Obrigatório*) Defina esse valor como o valor da propriedade **`serviceSelector.name`** do serviço [de operações de mensagens do](/help/communities/messaging.md#messaging-operations-service)AEM Communities Messaging.
+   (*Obrigatório*) Defina esse valor para o valor da propriedade **`serviceSelector.name`** do Serviço [de Operações de Mensagens do](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
 
 #### Guia Exibir {#display-tab-1}
 
