@@ -10,28 +10,32 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 6%
 
 ---
 
 
-# Comunidades em desenvolvimento {#developing-communities}
+# Comunidades em desenvolvimento  {#developing-communities}
 
 ## Visão geral {#overview}
 
-O AEM Communities simplifica a criação e personalização de recursos da comunidade, como fóruns, grupos de usuários, blogs, perguntas e respostas, calendários, comentários, revisões, votação, classificações e atribuições. Esses recursos fazem com que o conteúdo gerado pelo usuário (UGC) seja inserido no ambiente de publicação.
+O AEM Communities simplifica a criação e personalização de recursos da comunidade, como fóruns, grupos de usuários, blogs, P&amp;R, calendários, comentários, revisões, votação, classificações e atribuições. Esses recursos fazem com que o conteúdo gerado pelo usuário (UGC) seja inserido no ambiente de publicação.
 
 A base de um site [da](overview.md#communitiessites) comunidade é a estrutura [de componentes](scf.md) sociais (SCF). A criação de um site da comunidade começa com a seleção de um modelo [de site da](sites-console.md) comunidade composto por funções [da](functions.md)comunidade.
 
 Para obter uma visão geral e tutoriais de introdução, visite:
 
-* [Visão geral do AEM Communities](overview.md)
+* [Visão geral dos AEM Communities](overview.md)
 * [Introdução ao AEM Communities](getting-started.md)
-* [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
+* [Introdução a AEM Communities para ativação](getting-started-enablement.md)
 
 >[!NOTE]
->
+> 
 >É altamente recomendável manter-se atualizado com as versões [mais recentes](deploy-communities.md#latest-releases).
+
 
 ## Implantações recomendadas {#recommended-deployments}
 
@@ -40,13 +44,13 @@ Para obter uma visão geral e tutoriais de introdução, visite:
 
 ## Estrutura do componente social {#social-component-framework}
 
-* [Estrutura](scf.md)do componente social: visão geral da estrutura e das APIs
-* [Auxiliares](handlebars-helpers.md)de barras de mão SCF: ajuda padrão e como escrever os auxiliares personalizados
-* [Personalização](client-customize.md)do cliente: personalização do código executado no navegador
-* [Personalização](server-customize.md)do servidor: personalização do código executado no servidor
-* [SRP (Storage Resource Provider, Provedor de recursos de armazenamento)](srp.md): visão geral do armazenamento de conteúdo da comunidade
-* [Diretrizes](code-guide.md)de codificação: orientações, dicas e truques
-* [Guia](components-guide.md)dos componentes da comunidade: ferramenta de desenvolvimento interativo
+* [Estrutura](scf.md)do componente social: visão geral da estrutura e das APIs.
+* [Auxiliares](handlebars-helpers.md)de barras de mão SCF: os auxiliares padrão e como escrever os auxiliares personalizados.
+* [Personalização](client-customize.md)do cliente: personalização do código executado no navegador.
+* [Personalização](server-customize.md)do servidor: personalização do código executado no servidor.
+* [Provedor de recursos do Armazenamento (SRP)](srp.md): visão geral do armazenamento de conteúdo da comunidade.
+* [Diretrizes](code-guide.md)de codificação: orientações, dicas e truques.
+* [Guia](components-guide.md)dos componentes da comunidade: ferramenta de desenvolvimento interativo.
 
 ## Componentes, funções e recursos básicos {#component-function-and-feature-essentials}
 
@@ -65,7 +69,7 @@ Os componentes, as funções e os recursos do AEM Communities fornecem os elemen
 
 ## Grupos de comunidades {#community-groups}
 
-[Grupos](overview.md#communitygroups) da comunidade é o conceito de permitir que membros da comunidade formem subcomunidades dentro do site da comunidade. A criação de um grupo da comunidade pode ocorrer no ambiente de publicação ou criação.
+[Grupos](overview.md#communitygroups) da comunidade é o conceito de permitir que membros da comunidade formem subcomunidades dentro do site da comunidade. A criação de um grupo da comunidade pode ocorrer no ambiente de publicação ou autor.
 
 * [Essenciais do grupo comunitário](essentials-groups.md)
 * [Função Grupos](functions.md#groups-function)
