@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 4ee3b99a3f0a5d37441eee76c3ec747afcf2e32e
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Os relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e rebalancear os investimentos em hardware e software. Para obter mais informações, consulte Visão geral [dos relatórios de transação do](../../forms/using/transaction-reports-overview.md)AEM Forms.
 
-## Configuração de relatórios de transação {#setting-up-transaction-reports}
+## Configuração de relatórios de transação  {#setting-up-transaction-reports}
 
 O recurso Relatórios de transação está disponível como parte do pacote complementar de formulários AEM. Para obter informações sobre como instalar o pacote complementar em todas as instâncias de autor e publicação, consulte [Instalação e configuração de formulários](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM. Depois de instalar o pacote complementar de formulários AEM, faça o seguinte:
 
@@ -29,9 +32,10 @@ O recurso Relatórios de transação está disponível como parte do pacote comp
 
 >[!NOTE]
 >
->* Os relatórios de transação do AEM Forms não oferecem suporte a topologias que contêm apenas instâncias de publicação.
+>* Os relatórios de transação de AEM Forms não suportam topologias que contêm apenas instâncias de publicação.
 >* Antes de usar o relatórios de transação, verifique se a replicação reversa está ativada para todas as instâncias de publicação.
 >* Os dados de transação são replicados revertidas de uma instância de publicação para somente a instância correspondente do autor ou do processamento. A instância de autor ou processamento não pode replicar mais os dados para outra instância.
+
 >
 
 
@@ -42,7 +46,7 @@ Os relatórios de transação usam replicação reversa para consolidar a contag
 
 ### Ativar relatórios de transação {#enable-transaction-reports}
 
-Os relatórios de transação estão desativados por padrão. Você pode ativar os relatórios no console da Web do AEM. para ativar os relatórios de transação em um ambiente do AEM Forms, execute as seguintes etapas em todas as instâncias de autor e publicação:
+Os relatórios de transação estão desativados por padrão. Você pode ativar os relatórios no console da Web do AEM. para ativar os relatórios de transação em um ambiente AEM Forms, execute as seguintes etapas em todas as instâncias de autor e publicação:
 
 1. Faça logon em uma instância do AEM como administrador. Vá até **Ferramentas** > **Operações** > Console **da Web**.
 1. Localize e abra o serviço de Relatórios **de transações do** Forms.
@@ -72,22 +76,22 @@ A replicação reversa copia dados de transação para a caixa de saída padrão
 
 Você pode visualização relatórios de transação em instâncias de autor ou publicação. O relatório de transação na instância do autor fornece uma soma agregada de todas as transações que ocorrem nas instâncias configuradas de autor e publicação. O relatório de transação na instância de publicação fornece uma contagem de transações que ocorrem somente na instância de publicação subjacente. Execute as seguintes etapas para visualização do relatório:
 
-1. Faça logon no servidor do AEM Forms em `https://[hostname]:'port'`.
+1. Faça logon no servidor AEM Forms em `https://[hostname]:'port'`.
 1. Navegue até **Ferramentas** > **Formulários**>**Relatório** de Transação de Visualização.
 
 ## Compreensão do relatório {#understanding-the-report}
 
-O AEM Forms exibe relatórios de transação desde a data configurada, como mostrado em um relatório resumido abaixo:
+Os AEM Forms exibem relatórios de transação desde a data configurada, como mostrado em um relatório resumido abaixo:
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
 * Use as opções **Redefinir a data para hoje** para redefinir os registros de transação. Quando você redefine a data para hoje, todos os registros de transação anteriores são perdidos. Quando você redefine a data em uma instância do autor, a alteração não afeta os relatórios de transação nas instâncias Publicar e, inversamente.
 * Use a opção **Mostrar transações de apenas instâncias** de publicação para visualização de todas as transações que ocorreram somente na instância de publicação configurada ou no farm de publicação.
-* Use as categorias: Processados **por** Documento, **Documentos renderizados** e **Formulários enviados** para visualização das transações correspondentes. Para o tipo de transações contabilizadas nessas categorias, consulte APIs [de Relatórios de Transação](../../forms/using/transaction-reports-billable-apis.md)Faturável.
+* Use as categorias: **Documento Processado**, **Documentos Renderizados** e **Formulários Enviados** para visualização das transações correspondentes. Para o tipo de transações contabilizadas nessas categorias, consulte APIs [de Relatórios de Transação](../../forms/using/transaction-reports-billable-apis.md)Faturável.
 
 ## Registros de relatórios de transações de Visualização {#view-transaction-reporting-logs}
 
-O relatórios de transação coloca todas as informações exibidas no relatório e algumas informações adicionais nos registros. As informações fornecidas nos registros são úteis para os usuários avançados. Por exemplo, os registros dividem transações em várias categorias granulares em comparação a três categorias consolidadas exibidas no relatório. Os registros estão em /crx-quickstart/logs/aem-forms-transaction.log.
+O relatórios de transação coloca todas as informações exibidas no relatório e algumas informações adicionais nos registros. As informações fornecidas nos registros são úteis para os usuários avançados. Por exemplo, os registros dividem transações em várias categorias granulares em comparação a três categorias consolidadas exibidas no relatório. Os registros estão disponíveis no `error.log` arquivo no `/crx-repository/logs/` diretório. Os registros estão disponíveis mesmo se você não ativar os relatórios de transação no console da Web do AEM.
 
 ## Artigos relacionados {#related-articles}
 
