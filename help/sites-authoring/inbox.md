@@ -1,6 +1,6 @@
 ---
-title: 'Sua Caixa de entrada  '
-seo-title: 'Sua Caixa de entrada  '
+title: Sua caixa de entrada
+seo-title: Sua caixa de entrada
 description: Gerenciar suas tarefas com a caixa de entrada
 seo-description: Gerenciar suas tarefas com a caixa de entrada
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,15 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 83%
+source-wordcount: '1148'
+ht-degree: 76%
 
 ---
 
 
-# Sua Caixa de entrada  {#your-inbox}
+# Sua caixa de entrada{#your-inbox}
 
 Você pode receber notificações de diversas áreas do AEM, incluindo fluxos de trabalho e projetos; por exemplo, sobre:
 
@@ -49,6 +49,7 @@ Você recebe essas notificações em sua própria caixa de entrada, onde você p
 >* [Projetos - trabalhar com tarefas](/help/sites-authoring/task-content.md)
 >* [Fluxos de trabalhos](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
+
 >
 
 
@@ -123,6 +124,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
    * **Tamanho do cartão**
+
    ![wf-92](assets/wf-92.png)
 
 * **Exibição de lista**
@@ -131,23 +133,32 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
    * **Classificar campo**
    * **Ordem de classificação**
+
    ![wf-83](assets/inbox-settings.png)
 
 ### Caixa de entrada - Controle de administrador {#inbox-admin-control}
 
 A opção Controle de administrador permite que os administradores:
 
+* Personalizar as colunas da Caixa de entrada do AEM
+
 * Personalizar o texto e o logotipo do cabeçalho
 
 * Controlar a exibição de links de navegação disponíveis no cabeçalho
 
-A opção Controle de administrador está visível somente para os membros do grupo de administradores ou administradores de fluxo de trabalho.
+A opção Controle de administrador está visível somente para os membros do `administrators` grupo ou do `workflow-administrators` grupo.
 
-![controle admin](assets/admin-control.png)
+* **Personalização** da coluna: Personalize uma Caixa de entrada do AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
+   * **Adicionar Coluna**: Selecione uma coluna para adicionar na Caixa de entrada do AEM.
+   * **Editar coluna**: Passe o mouse sobre o título da coluna e toque no ícone de ![edição](assets/edit.svg) para inserir o nome de exibição da coluna.
+   * **Excluir coluna**: Toque no ícone ![Excluir](assets/delete_updated.svg) para excluir a coluna da Caixa de entrada do AEM.
+   * **Mover coluna**: Arraste o ícone ![mover](assets/move_updated.svg) para mover uma coluna para uma nova posição na Caixa de entrada do AEM.
+
+   ![controle admin](assets/admin-control-column-customize.png)
 
 * **Personalização da marca**
 
-   * **Personalizar o texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto padrão do **Adobe Experience Manager** .
+   * **Personalizar o texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto de **Adobe Experience Manager** padrão.
 
    * **Personalizar logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a no campo.
 
@@ -159,7 +170,7 @@ A opção Controle de administrador está visível somente para os membros do gr
 
 >[!NOTE]
 >
->Embora seja possível selecionar mais de um item, as ações só podem ser executadas em um item por vez.
+>Embora seja possível selecionar mais de um item, ações só podem ser executadas em um item de cada vez.
 
 
 1. Para executar uma ação em um item, selecione a miniatura do item apropriado. Os ícones de ações aplicáveis a esse item serão mostrados na barra de ferramentas:
@@ -178,6 +189,7 @@ A opção Controle de administrador está visível somente para os membros do gr
    * **Recuar** para uma etapa anterior.
    * Visualizar a carga de um fluxo de trabalho.
    * Criar um projeto a partir do item.
+
    >[!NOTE]
    >
    >Para obter mais informações, consulte:
@@ -190,6 +202,7 @@ A opção Controle de administrador está visível somente para os membros do gr
    * uma caixa de diálogo apropriada para a ação será aberta.
    * um assistente de ação será iniciado.
    * uma página de documentação será aberta.
+
    Por exemplo, **Atribuir novamente** abrirá uma caixa de diálogo:
 
    ![wf-85](assets/wf-85.png)
@@ -218,11 +231,13 @@ Na caixa de entrada, você pode criar tarefas:
       * **Prioridade da tarefa**
       * **Data inicial**
       * **Data de vencimento**
+
    ![wf-86](assets/wf-86.png)
 
    * **Avançado**
 
-      * **Nome:** isso será usado para formar o URL; se estiver vazio, será baseado no **Título**.
+      * **Nome**: this will be used to form the URL; if blank it will be based on the **Title**.
+
    ![wf-87](assets/wf-87.png)
 
 1. Selecione **Enviar**.
