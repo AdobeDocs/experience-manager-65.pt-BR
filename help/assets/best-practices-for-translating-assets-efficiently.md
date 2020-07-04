@@ -3,9 +3,9 @@ title: Práticas recomendadas para traduzir ativos
 description: Práticas recomendadas para o gerenciamento eficiente de ativos para sincronizar várias versões traduzidas e simplificar os workflows de tradução.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Práticas recomendadas para traduzir ativos {#best-practices-for-translating-assets-efficiently}
 
-Os ativos Adobe Experience Manager oferecem suporte a workflows multilíngues para traduzir binários, metadados e tags de ativos digitais em várias localidades e gerenciar os ativos traduzidos. Para obter detalhes, consulte Ativos [multilíngues](multilingual-assets.md).
+O Adobe Experience Manager Assets suporta workflows multilíngues para traduzir binários, metadados e tags para ativos digitais em várias localidades e gerenciar os ativos traduzidos. Para obter detalhes, consulte Ativos [multilíngues](multilingual-assets.md).
 
 Para o gerenciamento eficiente de ativos, a fim de garantir que diferentes versões traduzidas permaneçam sincronizadas, crie cópias [de](preparing-assets-for-translation.md) idioma de ativos antes de executar workflows de tradução.
 
@@ -32,13 +32,15 @@ Você também pode fazer algumas alterações de configuração em alguns workfl
    * [Configurar Arquivo Data Store](/help/sites-deploying/data-store-config.md)
    * [Configurar o Amazon S3 Data Store](/help/sites-deploying/data-store-config.md)
 
-1. Desative o fluxo de trabalho de Write-back [de Metadados do](/help/sites-administering/workflow-offloader.md#disable-offloading) DAM.
+<!--
+1. Disable the [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow.
 
-   Como o nome sugere, o fluxo de trabalho de Writeback [!UICONTROL de Metadados] DAM regrava os metadados no arquivo binário. Como os metadados mudam após a tradução, gravá-los de volta no arquivo binário gera um binário diferente para uma cópia de idioma.
+   As the name suggests, the [!UICONTROL DAM Metadata Writeback] workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
 
    >[!NOTE]
    >
-   >A desativação do fluxo de trabalho de Writeback [!UICONTROL de Metadados] DAM desativa o write-back de metadados XMP em binários de ativos. Consequentemente, alterações futuras nos metadados não serão mais salvas nos ativos. Avalie as consequências antes de desativar esse fluxo de trabalho.
+   >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
+-->
 
 1. Ative o fluxo de trabalho [!UICONTROL Definir última data] modificada.
 
