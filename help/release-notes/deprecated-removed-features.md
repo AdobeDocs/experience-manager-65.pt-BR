@@ -1,16 +1,11 @@
 ---
-title: Recursos obsoletos e removidos
+title: Recursos obsoletos e removidos na versão Adobe Experience Manager 6.5.
 description: Notas de versão específicas de recursos obsoletos e removidos do Adobe Experience Manager 6.5.
-uuid: 81d9a064-e712-4eff-bd3b-6e15513a5435
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 49209cb64c829fde396e87ca4b2e326ecf1dd941
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '1634'
-ht-degree: 58%
+source-wordcount: '1642'
+ht-degree: 45%
 
 ---
 
@@ -19,10 +14,10 @@ ht-degree: 58%
 
 A Adobe avalia as funcionalidades do produto constantemente, para reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor do cliente em geral, sempre sob considerações cuidadosas de compatibilidade com versões anteriores.
 
-As seguintes regras se aplicam para comunicar a remoção/substituição iminente das funcionalidades do AEM:
+Para comunicar a remoção ou substituição iminente de recursos do AEM, as seguintes regras se aplicam:
 
-1. O anúncio sobre a descontinuidade é oferecido primeiro. Embora obsoletos, os recursos ainda estão disponíveis, mas não serão aprimorados.
-1. A remoção de funcionalidades obsoletas ocorrerá assim que possível na versão principal seguinte. A data definida para a remoção será anunciada.
+1. O anúncio sobre a descontinuidade é oferecido primeiro. Embora obsoletos, os recursos ainda estão disponíveis, mas não são aprimorados.
+1. A remoção de recursos obsoletos ocorre na versão principal a seguir, o mais tardar. A data definida para a remoção será anunciada.
 
 Esse processo oferece ao usuário ao menos um ciclo de versão para adaptar sua implementação a uma nova versão ou sucessor de uma funcionalidade descontinuada, antes da remoção.
 
@@ -32,118 +27,28 @@ Esta seção lista os recursos e funcionalidades que foram marcados como obsolet
 
 Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua implementação no momento, bem como a planejar a alteração de sua implementação para usar a alternativa fornecida.
 
-<table>
- <tbody>
-  <tr>
-   <td><b>Área</b></td>
-   <td><b>Recurso</b></td>
-   <td><b>Substituição</b></td>
-  </tr>
-  <tr>
-   <td>Integração da Creative Cloud</td>
-   <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">O AEM para o compartilhamento</a> de pastas da Creative Cloud foi introduzido no AEM 6.2 como uma forma de fornecer aos usuários criativos acesso aos ativos do AEM, para que possam abri-los em aplicativos CC e carregar novos arquivos ou salvar alterações no AEM. Uma nova funcionalidade lançada no aplicativo da Creative Cloud, o Adobe Asset Link, fornece uma experiência de usuário melhor e acesso avançado a ativos do AEM diretamente do Photoshop, InDesign e Illustrator.</p> <p>A Adobe não planeja fazer aprimoramentos adicionais ao AEM para a integração do Compartilhamento de pastas da Creative Cloud. Embora o recurso esteja incluído no AEM, os clientes são recomendados a suar soluções de substituição.</p> </td>
-   <td>Recomenda-se que os clientes alternem para os novos recursos de integração da Creative Cloud, incluindo o Adobe Asset Link ou o aplicativo de desktop do AEM. Review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
-  </tr>
-  <tr>
-   <td>Ativos</td>
-   <td>
-    <ol>
-     <li>O AssetDownloadServlet é desabilitado por padrão para as instâncias de publicação. Para obter mais detalhes, consulte <a href="/help/sites-administering/security-checklist.md">Lista de verificação de segurança do AEM</a>.</li>
-     <li>Se um usuário não tiver permissões suficientes (leitura e gravação) em /content/dam/collections, não poderá criar uma Coleção.</li>
-    </ol> </td>
-   <td>
-    <ol>
-     <li>Configuração descrita na <a href="/help/sites-administering/security-checklist.md">Lista de verificação de segurança do AEM</a>.</li>
-     <li>Respeita a configuração do controle de acesso de usuário e garante as permissões apropriadas.<br /> </li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>Adobe Search&amp;Promote</td>
-   <td><p>A integração com o Adobe Search &amp; Promote está obsoleta.</p> <p>A Adobe não planeja fazer melhorias à integração do Search &amp; Promote. Observe que a integração do Search &amp; Promote permanece compatível ainda que obsoleta.</p> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Gerente de marcas DTM</td>
-   <td>A integração com o DTM (Dynamic Tag Manager) está obsoleta.</td>
-   <td>Alterne para usar o Adobe Experience Platform Launch como um gerenciador de marcas</td>
-  </tr>
-  <tr>
-   <td>Adobe Target</td>
-   <td>Com a adição da capacidade do·AEM se conectar ao serviço do Adobe Target usando a API do Adobe Target Standard (Rest API) baseada en Adobe I/O no AEM 6.5, a API (XML) do Target Classic será descontinuada.</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html">Reconfigure a integração para usar a nova API</a></td>
-  </tr>
-  <tr>
-   <td>Adobe Target</td>
-   <td>Usar a integração baseada em mbox.js com o Adobe Target no AEM está obsoleto.</td>
-   <td>Alternar para usar at.js 1.x</td>
-  </tr>
-  <tr>
-   <td>Comércio</td>
-   <td><p><a href="https://github.com/adobe/commerce-cif-api" target="_blank">CIF REST</a> foi fornecido em 2018 como um conjunto de microserviços para permitir a integração entre o AEM e os mecanismos de comércio.</p> <p>Depois que a Adobe adquiriu a Magento em meados de 2018, a Adobe decidiu alterar sua abordagem por dois motivos: </p> <p><strong>1.</strong> A Magento tem seu próprio conjunto de APIs de comércio (REST e GraphQL) e não é uma boa prática manter dois conjuntos de APIs </p> <p><strong>2.</strong> As tendências de mercado indicaram que os clientes estavam se movendo para o GraphQL, porque é uma forma mais eficiente de consultar dados. Em 2019, a Adobe lançou a nova Commerce Integration Framework usando as APIs GraphQL da Magento como fonte de verdade.</p> <p>A Adobe não planeja fazer nenhum investimento adicional em CIF REST. Os clientes são altamente aconselhados a usar a solução de substituição.</p> </td>
-   <td><p>Para integrações AEM-Magento, mude para <a href="https://github.com/adobe/aem-cif-project-archetype" target="_blank">AEM CIF Archetype</a>e <a href="https://github.com/adobe/aem-core-cif-components" target="_blank">AEM CIF Componentes principais</a></p> <p>Consulte Integração do <a href="https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md" target="_blank">AEM e do Magento usando a Commerce Integration Framework</a> para obter mais informações.</p> <p>O apoio à integração de terceiros (que não o Magento) com a nova abordagem está no nosso roteiro.</p> </td>
-  </tr>
-  <tr>
-   <td>Componentes (AEM Sites)</td>
-   <td><p>A Adobe não planeja fazer aprimoramentos adicionais à maioria dos componentes de base armazenados em /libs/foundation/components.</p> <p>Procure pela propriedade <strong>cq:deprecated</strong> e <strong>cq:deprecatedReason</strong> na pasta de componente.</p> <p>O AEM 6.5 inclui os componentes básicos, e os clientes que atualizam de versões anteriores podem continuar usando-os como estão. Além disso, os componentes básicos permanecem totalmente compatíveis enquanto estão sendo descontinuados. </p> </td>
-   <td>Recomenda-se que os clientes usem os componentes principais para projetos futuros. Existing sites can remain as is or use the <a href="https://github.com/adobe/aem-modernize-tools">AEM Modernize Tools Suite</a> to refactor the site to use Core Components.</td>
-  </tr>
-  <tr>
-   <td>Componentes (AEM Sites)</td>
-   <td>Os componentes do Importador de design /libs/wcm/designimporter/components foram marcados como obsoletos a partir da versão 6.5. A Adobe não planeja fazer aprimoramentos adicionais a essa implementação do importador de design.</td>
-   <td>A Adobe planeja fornecer uma implementação de backup alternativa do caso de uso em versões futuras.</td>
-  </tr>
-  <tr>
-   <td>Foundation</td>
-   <td><p>Estrutura de descarregamento do Granite</p> <p>A Adobe não planeja fazer aprimoramentos adicionais à estrutura de descarregamento introduzida na versão 5.6.1 para externalizar processamento do ativo. </p> </td>
-   <td>A Adobe está trabalhando em uma estrutura de descarregamento nativa de nuvem de última geração.</td>
-  </tr>
-  <tr>
-   <td>Desenvolvedores</td>
-   <td><p>Hobbes.js</p> <p>A Adobe não planeja fazer mais aprimoramentos na estrutura de teste da interface do usuário do hobbes.js.</p> </td>
-   <td>A Adobe recomenda que os clientes usem a automação Selenium.</td>
-  </tr>
-  <tr>
-   <td>Desenvolvedores</td>
-   <td><p>biblioteca do cliente da interface do usuário do jQuery</p> <p>A Adobe não planeja manter e atualizar a biblioteca do cliente da interface do usuário do jQuery que é enviada como parte da distribuição (Quickstart)</p> </td>
-   <td>A Adobe recomenda que os clientes que ainda precisam da interface do usuário do jQuery para obter o código a fim de adicioná-lo à base de códigos do projeto.</td>
-  </tr>
-  <tr>
-   <td>Desenvolvedores</td>
-   <td><p>Biblioteca do cliente jQuery Animation (granite.jquery.animation)</p> <p>A Adobe não planeja manter e atualizar a biblioteca do cliente de animação do jQuery que é enviada como parte da distribuição (Quickstart)</p> </td>
-   <td>A Adobe recomenda que os clientes que ainda precisam de jQuery Animations para seus códigos adicionem-na à base de códigos do projeto.</td>
-  </tr>
-  <tr>
-   <td>Desenvolvedores</td>
-   <td><p>Biblioteca do cliente do Handlebars</p> <p>A Adobe não planeja manter e atualizar a biblioteca do cliente do Handlebars que é enviada como parte da distribuição (Quickstart)</p> </td>
-   <td>A Adobe recomenda que os clientes que ainda precisam de handlebars para seus códigos adicionem-nos à base de códigos do projeto.</td>
-  </tr>
-  <tr>
-   <td>Desenvolvedores</td>
-   <td><p>Biblioteca do cliente do Lawnchair</p> <p>A Adobe não planeja manter e atualizar a biblioteca do cliente do Lawnchair que é enviada como parte da distribuição (Quickstart)</p> </td>
-   <td>A Adobe recomenda que os clientes que ainda precisam do Lawndish para obter seu código adicionem-no à base de códigos do projeto.</td>
-  </tr>
-  <tr>
-   <td>Desenvolvedores</td>
-   <td><p>Biblioteca do cliente do Granite.Sling.js</p> <p>A Adobe não planeja aprimorar a biblioteca do cliente do Granite.Sling.js que é enviada como parte da distribuição (Quickstart)</p> </td>
-   <td>A Adobe recomenda que os clientes que confiam na capacidade da biblioteca reformem seu código para não mais usá-lo.</td>
-  </tr>
-  <tr>
-   <td>Desenvolvedores</td>
-   <td>Usar a YUI para compactar/diminuir as bibliotecas do cliente do Javascript. A Adobe não planeja atualizar a biblioteca YUI. Até o AEM 6.4, o padrão do YUI era minimizar o JavaScript com a opção de alternar para o Google Closure Compiler (GCC). Ao iniciar o AEM 6.5, o GCC é o padrão.</td>
-   <td>A Adobe recomenda que os clientes que atualizam para o AEM 6.5 mudem para o GCC para sua implementação</td>
-  </tr>
-  <tr>
-   <td>Desenvolvedores</td>
-   <td><p>Editor de caixa de diálogo da interface do usuário clássica no CRXDE lite</p> <p>A Adobe não planeja aprimorar o editor de caixa de diálogo da interface do usuário clássica que é enviado como parte da distribuição (Quickstart)</p> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Forms</td>
-   <td><p>A integração do AEM Forms com o AEM Mobile&lt; está obsoleta </p> </td>
-   <td>Nenhuma substituição </td>
-  </tr>
- </tbody>
-</table>
+| Área | Recurso | Substituição |
+|---|---|---|
+| Integração da Creative Cloud | O AEM para o compartilhamento de pastas da Creative Cloud foi introduzido no AEM 6.2 como uma forma de fornecer aos usuários criativos acesso aos ativos do AEM, para que possam abri-los em aplicativos CC e carregar novos arquivos ou salvar alterações no AEM. Uma nova funcionalidade lançada no aplicativo da Creative Cloud, o Adobe Asset Link, fornece uma experiência de usuário melhor e acesso avançado a ativos do AEM diretamente do Photoshop, InDesign e Illustrator. A Adobe não planeja fazer aprimoramentos adicionais ao AEM para a integração do Compartilhamento de pastas da Creative Cloud. Embora o recurso esteja incluído no AEM, os clientes são recomendados a suar soluções de substituição. | Recomenda-se que os clientes alternem para os novos recursos de integração da Creative Cloud, incluindo o Adobe Asset Link ou o aplicativo de desktop do AEM. Consulte Práticas recomendadas de integração do AEM e da Creative Cloud para obter mais detalhes. |
+| Ativos | `AssetDownloadServlet`O é desabilitado por padrão para as instâncias de publicação. Para obter mais detalhes, consulte [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md). | Configuração descrita na [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md). |
+| Ativos | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Respeita a configuração do controle de acesso de usuário e garante as permissões apropriadas. |
+| Adobe Search&amp;Promote | A integração com o Adobe Search &amp; Promote está obsoleta. A Adobe não planeja fazer melhorias à integração do Search &amp; Promote. Observe que a integração do Search &amp; Promote permanece compatível ainda que obsoleta. |  |
+| Gerente de marcas DTM | A integração com o DTM (Dynamic Tag Manager) está obsoleta. | Alterne para usar o Adobe Experience Platform Launch como um gerenciador de marcas. |
+| Adobe Target | Com a adição da capacidade do·AEM se conectar ao serviço do Adobe Target usando a API do Adobe Target Standard (Rest API) baseada en Adobe I/O no AEM 6.5, a API (XML) do Target Classic será descontinuada. | Reconfigure the integration to [use the new API](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
+| Adobe Target | Using the `mbox.js` based integration with Adobe Target in AEM is deprecated. | Switch to use `at.js` 1.x. |
+| Comércio | [CIF REST](https://github.com/adobe/commerce-cif-api) foi fornecido em 2018 como um conjunto de microserviços para permitir a integração entre o AEM e os mecanismos de comércio. Depois que a Adobe adquiriu a Magento em meados de 2018, a Adobe decidiu alterar sua abordagem por dois motivos. A Magento tem seu próprio conjunto de APIs de comércio (REST e GraphQL) e não é uma boa prática manter dois conjuntos de APIs. As tendências de mercado indicaram que os clientes estavam se movendo para o GraphQL, porque é uma forma mais eficiente de consultar dados. Em 2019, a Adobe lançou a nova Commerce Integration Framework usando as APIs GraphQL da Magento como fonte de verdade. A Adobe não planeja fazer nenhum investimento adicional em CIF REST. Os clientes são altamente aconselhados a usar a solução de substituição. | Para integrações AEM-Magento, mude para [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) e [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). See AEM and Magento integration [using Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md). O apoio à integração de terceiros (que não o Magento) com a nova abordagem está no nosso roteiro. |
+| Componentes (AEM Sites) | A Adobe não planeja fazer aprimoramentos adicionais à maioria dos componentes de base armazenados em `/libs/foundation/components`. Look for the `cq:deprecated` and `cq:deprecatedReason` property in the component folder. O AEM 6.5 inclui os componentes básicos, e os clientes que atualizam de versões anteriores podem continuar usando-os como estão. Além disso, os Componentes básicos são completamente suportados mesmo se estiverem obsoletos. | A Adobe recomenda usar os Componentes principais para projetos futuros. Existing sites can remain as is or use the [AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools) to refactor the site to use Core Components. |
+| Componentes (AEM Sites) | Design Importer Components `/libs/wcm/designimporter/components` have been marked as deprecated starting 6.5. Adobe does not plan to make further enhancements to that implementation of the design importer. | A Adobe pretende fornecer uma implementação alternativa do caso de uso em versões futuras. |
+| Foundation | Estrutura de descarregamento do Granite. A Adobe não planeja fazer mais aprimoramentos na estrutura de descarga que foi introduzida no CQ 5.6.1 para externalizar o processamento de ativos. | A Adobe está trabalhando em uma estrutura de descarregamento nativa de nuvem de última geração. |
+| Desenvolvedores | `Hobbes.js`. Adobe does not plan to make further enhancements to the `hobbes.js` user interface testing framework. | A Adobe recomenda que os clientes usem a automação Selenium. |
+| Desenvolvedores | biblioteca do cliente da interface do usuário do jQuery. A Adobe não planeja manter e atualizar a biblioteca do cliente da interface do usuário do jQuery que é enviada como parte da distribuição (Quickstart) | A Adobe recomenda que os clientes que ainda precisam da interface do usuário do jQuery para obter o código a fim de adicioná-lo à base de códigos do projeto. |
+| Desenvolvedores | Biblioteca do cliente jQuery Animation (`granite.jquery.animation`). A Adobe não planeja manter e atualizar a biblioteca do cliente de animação do jQuery que é enviada como parte da distribuição (Quickstart) | A Adobe recomenda que os clientes que ainda precisam de jQuery Animations para seus códigos adicionem-na à base de códigos do projeto. |
+| Desenvolvedores | Biblioteca do cliente do Handlebars. A Adobe não planeja manter e atualizar a biblioteca do cliente do Handlebars que é enviada como parte da distribuição (Quickstart) | A Adobe recomenda que os clientes que ainda precisam de handlebars para seus códigos adicionem-nos à base de códigos do projeto. |
+| Desenvolvedores | Biblioteca do cliente do Lawnchair. A Adobe não planeja manter e atualizar a biblioteca do cliente do Lawnchair que é enviada como parte da distribuição (Quickstart) | A Adobe recomenda que os clientes que ainda precisam do Lawndish para obter seu código adicionem-no à base de códigos do projeto. |
+| Desenvolvedores | `Granite.Sling.js` biblioteca cliente. A Adobe não planeja aprimorar a biblioteca do cliente do Granite.Sling.js que é enviada como parte da distribuição (Quickstart) | A Adobe recomenda que os clientes que confiam na capacidade da biblioteca reformem seu código para não mais usá-lo. |
+| Desenvolvedores | Usar a YUI para compactar/diminuir as bibliotecas do cliente do Javascript. A Adobe não planeja atualizar a biblioteca YUI. Até o AEM 6.4, o padrão do YUI era minimizar o JavaScript com a opção de alternar para o Google Closure Compiler (GCC). Ao iniciar o AEM 6.5, o GCC é o padrão. | A Adobe recomenda que os clientes que atualizam para o AEM 6.5 mudem para o GCC para sua implementação |
+| Desenvolvedores | Editor de caixa de diálogo da interface do usuário clássica no CRXDE lite. A Adobe não planeja aprimorar o editor de caixa de diálogo da interface do usuário clássica que é enviado como parte da distribuição (Quickstart) | Não há substituição disponível. |
+| Forms | A integração do AEM Forms com o AEM Mobile está obsoleta. | Nenhuma substituição está disponível. |
 
 ## Recursos removidos {#removed-features}
 
@@ -151,22 +56,22 @@ Esta seção lista recursos e recursos que foram removidos do AEM 6.5. As versõ
 
 | Área | Recurso | Substituição |
 |--- |--- |--- |
-| Analytics Activity Map | A versão do Activity Map está inclusa no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o plug-in [Activity Map fornecido pelo Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
-| Integrações | A integração do ExactTarget foi removida da distribuição padrão (Início rápido) e não está mais disponível. | Nenhuma substituição |
-| Integrações | A integração da API do Salesforce Force foi removida da distribuição padrão (Quickstart) e agora é um pacote adicional de instalação do PackageShare. | O recurso ainda está disponível. |
-| Forms | O suporte para o serviço Adobe Central Migration Bridge foi removido, uma vez que o produto Adobe Central não é mais compatível. | Nenhuma substituição |
-| Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nenhuma substituição |
+| Analytics Activity Map | A versão do Activity Map está inclusa no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o plug-in [Activity Map fornecido pela Adobe Analytics](https://docs.adobe.com/content/help/br/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Integrações | A integração do ExactTarget foi removida da distribuição padrão (Início rápido) e não está mais disponível. | Nenhuma substituição. |
+| Integrações | Salesforce Force API integration has been removed from the default distribution (Quickstart) and is now an extra package to install from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | O recurso ainda está disponível. |
+| Forms | O suporte para o serviço Adobe Central Migration Bridge foi removido, uma vez que o produto Adobe Central não é mais compatível. | Nenhuma substituição. |
+| Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Nenhuma substituição. |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Nenhuma substituição |
 | Forms | A atualização de hop único do LiveCycle ES4 SP1 para o AEM 6.5 Forms no JEE não está disponível | Consulte os caminhos [de atualização](../forms/using/upgrade.md) disponíveis na documentação de atualização do AEM Forms. |
-| Forms | Remoção do suporte a cluster baseado em UPD do AEM Forms no JEE | Você pode usar somente clustering baseado em TCP no AEM Forms no JEE. Se você atualizar um servidor de multicast UDP de uma versão anterior para o AEM 5.5 Forms no JEE, execute configurações manuais para alternar para o clustering de gemfire baseado em TCP. Para obter instruções detalhadas, consulte [Atualizar para formulários do AEM 6.5 no JEE](../forms/using/upgrade-forms-jee.md) |
+| Forms | Remoção do suporte de cluster baseado em UPD de AEM Forms no JEE | Você pode usar somente clustering baseado em TCP em AEM Forms no JEE. Se você atualizar um servidor de multicast UDP de uma versão anterior para o AEM 5.5 Forms no JEE, execute configurações manuais para alternar para o clustering de gemfire baseado em TCP. Para obter instruções detalhadas, consulte [Atualizar para formulários do AEM 6.5 no JEE](../forms/using/upgrade-forms-jee.md) |
 | Desenvolvedores | Firebug Lite foi removido da distribuição padrão (Quickstart) | Use os consoles de desenvolvedor integrados do navegador |
 | Desenvolvedores | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Nenhuma substituição |
-| Ativos | O recurso de descarregamento de Ativos foi removido do AEM 6.5 | Nenhuma substituição |
+| [!DNL Assets] | O recurso de descarregamento de ativos é removido em [!DNL Adobe Experience Manager] 6.5. | Não há substituição disponível. |
 | Cache | `system/console/slingjsp` for removido não estiver mais disponível no AEM 6.5. | Classes e cache leve são armazenados no pacote Apache Sling Commons FileSystem ClassLoader. Você pode verificar o número do pacote no console da Web do AEM e remover a pasta de cache diretamente do sistema de arquivos (`crx-quickstart/launchpad/felix/bundle<ID>`). |
 
 ## Anúncio prévio da próxima versão {#pre-announcement-for-next-release}
 
-Esta seção é usada para anunciar previamente as alterações na versão futura, que não estão obsoletas, mas afetará os clientes. Elas são fornecidas para propósito de planejamento.
+Esta seção é usada para anunciar previamente as alterações futuras nas versões futuras. As mudanças anunciadas ainda não são eficazes, mas afetarão os clientes. Por exemplo, os recursos ainda não estão obsoletos, mas afetam os usuários após a desaprovação. Essas atualizações são fornecidas para fins de planejamento.
 
 | Área | Recurso | Anúncio |
 |--- |--- |--- |
