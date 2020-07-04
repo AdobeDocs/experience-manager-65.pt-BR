@@ -10,9 +10,9 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: c3e4b68c10496cac8f75d009fdd9ebd777826850
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '2771'
+source-wordcount: '2403'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Para cada cluster, você verá uma lista de membros do cluster que indica a orde
 
 Para cada instância do cluster, é possível ver várias propriedades relacionadas à topologia:
 
-* Uma lista de permissão de tópicos para o consumidor de trabalho da instância.
+* Uma lista de permissões de tópicos para o consumidor de trabalho do exemplo.
 * Os pontos finais expostos para conexão com a topologia.
 * Os tópicos da tarefa para os quais a instância está registrada para descarregamento.
 * Os tópicos da tarefa que a instância processa.
@@ -111,7 +111,7 @@ O serviço de descoberta baseado em recursos do Apache Sling é executado em cad
 O serviço Discovery envia solicitações POST periódicas (pulsações) aos serviços do Topology Connector para estabelecer e manter conexões com a topologia. O serviço Topology Connector mantém uma lista de permissões de endereços IP ou nomes de host que podem participar da topologia:
 
 * Para unir uma instância a uma topologia, especifique o URL do serviço Conector de topologia do membro raiz.
-* Para permitir que uma instância participe de uma topologia, adicione a instância à lista de permissões do serviço do Conector de Topologia do membro raiz.
+* Para permitir que uma instância participe de uma topologia, adicione a instância à lista de permissões do serviço Conector de topologia do membro raiz.
 
 Use o console da Web ou um nó sling:OsgiConfig para configurar as seguintes propriedades do serviço org.apache.sling.detection.impt.Config:
 
@@ -148,7 +148,7 @@ Use o console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>Lista de permissões do Conector de topologia</td>
+   <td>lista de permissões do conector de topologia</td>
    <td>topologyConnectorWhitelist</td>
    <td>A lista de endereços IP ou nomes de host que o serviço local do Topology Connector permite na topologia. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
@@ -174,7 +174,7 @@ Execute o seguinte procedimento no membro raiz da topologia. O procedimento adic
 1. Abra o Console da Web em seu navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Clique em Principal > Gerenciamento de topologia.
 1. Clique em Configurar serviço de descoberta.
-1. Para cada membro da topologia, adicione um item à propriedade de lista de permissão do Conector de topologia e especifique o nome do host ou endereço IP do membro da topologia.
+1. Para cada membro da topologia, adicione um item à propriedade de lista de permissões do Conector de topologia e especifique o nome do host ou endereço IP do membro da topologia.
 
 ## Configuração do consumo de tópicos {#configuring-topic-consumption}
 
@@ -208,24 +208,27 @@ Várias implementações do JobConsumer são instaladas com o Experience Manager
 
 | Tópico do trabalho | PID do serviço | Descrição |
 |---|---|---|
-| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos que o administrador do evento OSGi gera para compatibilidade com versões anteriores. |
+| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos que o administrador do evento OSGi gera, para compatibilidade com versões anteriores. |
 | com/day/cq/Replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Um agente de replicação que replica cargas de trabalho. |
-| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Processa trabalhos que o fluxo de trabalho do DAM Update Asset Offloader gera. |
+
+<!--
+| com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
+-->
 
 ### Desativar e ativar tópicos para uma instância {#disabling-and-enabling-topics-for-an-instance}
 
-O serviço Apache Sling Job Consumer Manager fornece propriedades de lista de tópicos e lista de blocos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
+O serviço Apache Sling Job Consumer Manager fornece propriedades de lista de permissões e lista de bloqueios de tópicos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
 
 **Observação:** Se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar tópicos.
 
-A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissão e, em seguida, remove os tópicos que estão na lista de blocos. Por padrão, todos os tópicos estão ativados (o valor da lista de permissão é `*`) e nenhum tópico está desativado (a lista de blocos não tem valor).
+A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissões e, em seguida, remove os tópicos que estão na lista de bloqueios. Por padrão, todos os tópicos estão ativados (o valor da lista de permissões é `*`) e nenhum tópico está desativado (a lista de bloqueios não tem valor).
 
 Use o Console da Web ou um `sling:OsgiConfig` nó para configurar as seguintes propriedades. Para `sling:OsgiConfig` nós, o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.evento.impl.jobs.JobConsumerManager.
 
 | Nome da propriedade no console da Web | ID do OSGi | Descrição |
 |---|---|---|
-| Lista de permissões do tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço local do JobManager processa. O valor padrão do &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
-| Lista de blocos de tópicos | job.consumermanager.blacklist | Uma lista de tópicos que o serviço local do JobManager não processa. |
+| lista de permissões do tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço local do JobManager processa. O valor padrão do &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
+| lista de bloqueios do tópico | job.consumermanager.blacklist | Uma lista de tópicos que o serviço local do JobManager não processa. |
 
 ## Criação De Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}
 
@@ -316,35 +319,37 @@ Obtenha a Sling ID de uma instância Experience Manager usando um dos seguintes 
 * Abra o Console da Web e, nas Configurações Sling, localize o valor da propriedade Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Esse método é útil se a instância ainda não fizer parte da topologia.
 * Use o navegador Topologia se a instância já fizer parte da topologia.
 
-## Descarregamento do processamento de ativos DAM {#offloading-the-processing-of-dam-assets}
+<!--
+## Offloading the Processing of DAM Assets {#offloading-the-processing-of-dam-assets}
 
-Configure as instâncias de uma topologia para que instâncias específicas executem o processamento em segundo plano de ativos adicionados ou atualizados no DAM.
+Configure the instances of a topology so that specific instances perform the background processing of assets that are added or updated in DAM.
 
-Por padrão, o Experience Manager executa o fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM quando um ativo do DAM é alterado ou um é adicionado ao DAM. Altere o comportamento padrão para que o Experience Manager execute o fluxo de trabalho do [!UICONTROL DAM Update Asset Offloader] . Este fluxo de trabalho gera um trabalho do JobManager que tem um tópico de `com/adobe/granite/workflow/offloading`. Em seguida, configure a topologia para que o trabalho seja descarregado para um funcionário dedicado.
+By default, Experience Manager executes the [!UICONTROL DAM Update Asset] workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the [!UICONTROL DAM Update Asset Offloader] workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Then, configure the topology so that the job is offloaded to a dedicated worker.
 
 >[!CAUTION]
 >
->Nenhum fluxo de trabalho deve ser temporário quando usado com a descarga do fluxo de trabalho. Por exemplo, o fluxo de trabalho Atualizar ativo  DAM não deve ser temporário quando usado para descarregamento de ativos. Para definir/desdefinir o sinalizador transitório em um fluxo de trabalho, consulte Workflows [](/help/assets/performance-tuning-guidelines.md#workflows)transitórios.
+>No workflow should be transient when used with workflow offloading. For example, the [!UICONTROL DAM Update Asset] workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
 
-O procedimento a seguir assume as seguintes características para a topologia de descarga:
+The following procedure assumes the following characteristics for the offloading topology:
 
-* Uma ou mais instâncias de Experience Manager estão criando instâncias com as quais os usuários interagem para adicionar ou atualizar ativos DAM.
-* Os usuários não devem interagir diretamente com uma ou mais instâncias de Experience Manager que processam os ativos DAM. Essas instâncias são dedicadas ao processamento em segundo plano de ativos DAM.
+* One or more Experience Manager instance are authoring instances that users interact with for adding or updating DAM assets.
+* Users to do not directly interact with one or more Experience Manager instances that process the DAM assets. These instances are dedicated to the background processing of DAM assets.
 
-1. Em cada instância de Experience Manager, configure o serviço Discovery para que aponte para o conector Topografia raiz. (Consulte [Configuração da associação](#title4)de topologia.)
-1. Configure o Conector de Topografia raiz para que as instâncias de conexão estejam na lista de permissões.
-1. Abra o navegador de descarga e desative o `com/adobe/granite/workflow/offloading` tópico nas instâncias com que os usuários interagem para carregar ou alterar ativos do DAM.
+1. On each Experience Manager instance, configure the Discovery Service so that it points to the root Topography Connector. (See [Configuring Topology Membership](#title4).)
+1. Configure the root Topography Connector so that the connecting instances are on the allow list.
+1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. Em cada instância com a qual os usuários interagem para carregar ou alterar ativos DAM, configure os iniciadores de fluxo de trabalho para usar o fluxo de trabalho de Descarregamento [!UICONTROL de ativos de atualização de] DAM:
+1. On each instance that users interact with to upload or change DAM assets, configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow:
 
-   1. Abra o console Fluxo de trabalho.
-   1. Clique na guia Iniciador.
-   1. Localize as duas configurações do Iniciador que executam o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM. Um tipo de evento de configuração do iniciador é Nó criado e o outro tipo é Nó modificado.
-   1. Altere ambos os tipos de evento para que eles executem o fluxo de trabalho de Descarregamento [!UICONTROL de ativos de atualização do] DAM. (Para obter informações sobre configurações de iniciador, consulte [Iniciar Workflows quando os nós mudarem](/help/sites-administering/workflows-starting.md).)
+    1. Open the Workflow console.
+    1. Click the Launcher tab.
+    1. Locate the two Launcher configurations that execute the [!UICONTROL DAM Update Asset] workflow. One launcher configuration event type is Node Created, and the other type is Node Modified.
+    1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (For information about launcher configurations, see [Starting Workflows When Nodes Change](/help/sites-administering/workflows-starting.md).)
 
-1. Nas instâncias que executam o processamento em segundo plano de ativos DAM, desative os iniciadores de fluxo de trabalho que executam o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM.
+1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
+-->
 
 ## Leitura adicional {#further-reading}
 
