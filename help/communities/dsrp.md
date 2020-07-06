@@ -1,8 +1,8 @@
 ---
 title: DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional
 seo-title: DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional
-description: Configurar o AEM Communities para usar um banco de dados relacional como sua loja comum
-seo-description: Configurar o AEM Communities para usar um banco de dados relacional como sua loja comum
+description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
+seo-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: b7c790681034e9950aa43738310f7af8b1dd0085
+source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 3%
 
 ---
 
@@ -19,25 +22,25 @@ source-git-commit: b7c790681034e9950aa43738310f7af8b1dd0085
 
 ## Sobre o DSRP {#about-dsrp}
 
-Quando o AEM Communities está configurado para usar um banco de dados relacional como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
+Quando o AEM Communities é configurado para usar um banco de dados relacional como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
 
-Consulte também [Características das Opções](working-with-srp.md#characteristics-of-srp-options) de SRP e [Topologias](topologies.md)recomendadas.
+Consulte também [Características das opções](working-with-srp.md#characteristics-of-srp-options) de SRP e das topologias [](topologies.md)recomendadas.
 
 ## Requisitos {#requirements}
 
-* [MySQL](#mysql-configuration), um banco de dados relacional
-* [Apache Solr](#solr-configuration), uma plataforma de pesquisa
+* [MySQL](#mysql-configuration), um banco de dados relacional.
+* [Apache Solr](#solr-configuration), uma plataforma de pesquisa.
 
 >[!NOTE]
 >
->A configuração de armazenamento padrão agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de etc. path (`/etc/socialconfig/srpc/defaultconfiguration`). É aconselhável seguir as etapas [de](#zerodt-migration-steps) migração para fazer com que os padrões funcionem conforme esperado.
+>A configuração padrão do armazenamento agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). É aconselhável seguir as etapas [de](#zerodt-migration-steps) migração para fazer com que os padrões funcionem conforme esperado.
 
 
 ## Configuração de Banco de Dados Relacional {#relational-database-configuration}
 
 ### Configuração do MySQL {#mysql-configuration}
 
-Uma instalação do MySQL pode ser compartilhada entre recursos de ativação e um repositório comum (DSRP) no mesmo pool de conexões usando nomes de banco de dados diferentes (esquema) e também conexões diferentes (servidor:porta).
+Uma instalação do MySQL pode ser compartilhada entre os recursos de ativação e o armazenamento comum (DSRP) no mesmo pool de conexões usando nomes de banco de dados diferentes (schema) e também conexões diferentes (servidor:porta).
 
 Para obter detalhes sobre instalação e configuração, consulte Configuração [MySQL para DSRP](dsrp-mysql.md).
 
@@ -47,29 +50,28 @@ Uma instalação Solr pode ser compartilhada entre a loja de nós (Oak) e a loja
 
 Se as coleções Oak e SRP forem usadas intensamente, uma segunda Solr poderá ser instalada por motivos de desempenho.
 
-Para ambientes de produção, o modo SolrCloud oferece desempenho aprimorado em relação ao modo independente (uma configuração única local de Solr).
+Para ambientes de produção, o modo SolrCloud fornece desempenho aprimorado em relação ao modo independente (uma configuração única e local de Solr).
 
 Para obter detalhes sobre instalação e configuração, consulte Configuração [Solr para SRP](solr.md).
 
 ### Selecione DSRP {#select-dsrp}
 
-O console [Configuração de](srp-config.md) armazenamento permite a seleção da configuração de armazenamento padrão, que identifica qual implementação do SRP usar.
+O console [Configuração do](srp-config.md) Armazenamento permite a seleção da configuração padrão do armazenamento, que identifica qual implementação do SRP usar.
 
-Em autor, para acessar o console Configuração de armazenamento
+Em autor, para acessar o console Configuração do Armazenamento
 
 * Fazer logon com privilégios de administrador
 * No menu **principal**
 
    * Selecione **[!UICONTROL Ferramentas]** (no painel esquerdo)
    * Selecionar **[!UICONTROL comunidades]**
-   * Selecionar configuração **[!UICONTROL de armazenamento]**
+   * Selecionar configuração do **[!UICONTROL Armazenamento]**
 
       * Como exemplo, o local resultante é: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
       >[!NOTE]
       >
-      >A configuração de armazenamento padrão agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de etc. path (`/etc/socialconfig/srpc/defaultconfiguration`). É aconselhável seguir as etapas [de](#zerodt-migration-steps) migração para fazer com que os padrões funcionem conforme esperado.
-
-![chlimage_1-128](assets/chlimage_1-128.png)
+      >A configuração padrão do armazenamento agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). É aconselhável seguir as etapas [de](#zerodt-migration-steps) migração para fazer com que os padrões funcionem conforme esperado.
+   ![chlimage_1-128](assets/chlimage_1-128.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Configuração do banco de dados**
@@ -82,7 +84,7 @@ Em autor, para acessar o console Configuração de armazenamento
 
    * **[!UICONTROL Nome do banco de dados]**
 
-      Nome dado ao esquema no script [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
+      Nome dado ao schema no script [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
 
       *padrão*: comunidades
 
@@ -118,22 +120,22 @@ Siga estas etapas para garantir que a página padrão [http://localhost:4502/com
 
 O DSRP deve ser identificado como o repositório comum em todas as instâncias de autor e publicação.
 
-Para disponibilizar a configuração idêntica no ambiente de publicação:
+Para disponibilizar a configuração idêntica no ambiente publish:
 
 * Autor:
 
-   * Navegue do menu principal até **[!UICONTROL Ferramentas > Operações > Replicação]**
-   * Dê um clique duplo para **Ativar a árvore **
-   * **Caminho de início:**
+   * Navegue do menu principal até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**
+   * Dê um clique duplo para **[!UICONTROL Ativar a árvore]**
+   * **Caminho de início**:
 
       * Navegue até `/etc/socialconfig/srpc/`
    * Verifique se não `Only Modified` está selecionado.
-   * Selecionar **[!UICONTROL Ativar]**
+   * Selecione **[!UICONTROL Ativar]**.
 
 
 ## Gerenciamento de dados do usuário {#managing-user-data}
 
-Para obter informações sobre *usuários*, perfis *de* usuários e grupos *de* usuários, geralmente inseridos no ambiente de publicação, visite
+Para obter informações sobre *usuários*, perfis *de* usuários e grupos *de* usuários, normalmente inseridos no ambiente de publicação, visite:
 
 * [Sincronização do usuário](sync.md)
 * [Gerenciamento de usuários e grupos de usuários](users.md)
