@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 85d4cdf0e2cfcb8b5e70387ce2dc556df9033257
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1899'
 ht-degree: 2%
 
 ---
@@ -74,15 +74,14 @@ ht-degree: 2%
 
          * O UGC nunca é replicado
          * UGC visível somente na instância AEM ou cluster no qual foi inserido
-      * O padrão é JSRP
 
+         * O padrão é JSRP
    Para o recurso de **[ativação](/help/communities/overview.md#enablement-community)**
 
    * [Instalar e configurar o FFmpeg](/help/communities/ffmpeg.md)
    * [Instale o driver JDBC para MySQL](#jdbc-driver-for-mysql)
    * [Instale o AEM Communities SCORM-Engine](#scorm-package)
    * [Instalar e configurar o MySQL para ativação](/help/communities/mysql.md)
-
 
 
 
@@ -106,8 +105,8 @@ Assim como no AEM 6.4 e mais, os recursos e os hotfixes do AEM Communities fazem
 
 Dois recursos das Comunidades usam um banco de dados MySQL:
 
-* Para [ativação](/help/communities/enablement.md) : gravando atividades e alunos SCORM
-* Para [DSRP](/help/communities/dsrp.md) : armazenamento de conteúdo gerado pelo usuário (UGC)
+* Para [ativação](/help/communities/enablement.md): gravando atividades e alunos SCORM
+* Para [DSRP](/help/communities/dsrp.md): armazenamento de conteúdo gerado pelo usuário (UGC)
 
 O conector MySQL deve ser obtido e instalado separadamente.
 
@@ -126,7 +125,6 @@ As etapas necessárias são:
    * Verifique se o Driver JDBC da *Oracle Corporation para MySQLcom.mysql.jdbc* está ativo e start-o se não estiver (ou verifique os logs)
 
 1. Se a instalação for feita em uma implantação existente depois que o JDBC tiver sido configurado, reative o JDBC para o novo conector, salvando a configuração do JDBC do console da Web:
-
    * Por exemplo, https://localhost:4502/system/console/configMgr
    * Localizar `Day Commons JDBC Connections Pool` configuração
    * Selecione para abrir
@@ -138,7 +136,7 @@ Mais informações sobre a instalação de pacotes estão disponíveis na págin
 
 #### Exemplo: Pacote do Conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![maços de produtos químicos](assets/chlimage-bundles.png)
 
 ### Pacote SCORM {#scorm-package}
 
@@ -223,7 +221,7 @@ Por padrão, a configuração do `AEM Communities Publisher Configuration` OSGi 
 
 Portanto, é necessário **editar a configuração em todas as instâncias** de publicação secundárias para desmarcar a caixa de seleção **`Primary Publisher`** .
 
-![](/help/communities/assets/chlimage_1-126.png)
+![chlimage_1-411](assets/chlimage_1-411.png)
 
 Para todas as outras instâncias de publicação (secundárias) em um farm de publicação:
 
@@ -249,7 +247,7 @@ Há dois agentes de replicação no ambiente autor que precisam que a configura�
 
 * Acesse o console Replicação no autor
 
-   * Na navegação global, navegue até **[!UICONTROL Ferramentas > Implantação > Replicação > Agentes do autor]**
+   * Na navegação global, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]** > **[!UICONTROL Agentes no autor]**
 
 * Siga o mesmo procedimento para ambos os agentes:
 
@@ -267,11 +265,11 @@ As imagens a seguir mostram os resultados da alteração da porta de 4503 para 6
 
 #### Agente padrão (publicar) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![chlimage_1-412](assets/chlimage_1-412.png)
 
 #### Agente de Replicação Reversa (publicar reverso) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![chlimage_1-413](assets/chlimage_1-413.png)
 
 ### Serviço de túnel no autor {#tunnel-service-on-author}
 
@@ -281,8 +279,7 @@ O serviço de túnel fornece esse acesso usando o agente de replicação do auto
 
 Para ativar o serviço de túnel:
 
-* Sobre o **autor**
-* Fazer logon com privilégios administrativos
+* Faça logon com privilégios administrativos na sua instância do autor.
 * Se o editor não for localhost:4503 ou o usuário de transporte não for `admin`, [configure o agente de replicação](#replication-agents-on-author)
 
 * Acesse o console [da Web](/help/sites-deploying/configuring-osgi.md)
@@ -294,7 +291,7 @@ Para ativar o serviço de túnel:
 * Marque a caixa **ativar**
 * Selecione **Salvar**
 
-![](/help/communities/assets/chlimage_1-129.png)
+   ![chlimage_1-414](assets/chlimage_1-414.png)
 
 ### Replicar a chave de criptografia {#replicate-the-crypto-key}
 
@@ -313,8 +310,8 @@ Para copiar o material principal do autor para todas as outras instâncias, é n
    * Navegue até a pasta de dados, por exemplo,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Copiar os arquivos hmac e do nó primário
 
+      * Copiar os arquivos hmac e do nó primário
 
 
 * Para cada instância do AEM de público alvo
@@ -330,6 +327,7 @@ Para copiar o material principal do autor para todas as outras instâncias, é n
 >
 >Se outro recurso de segurança já tiver sido configurado com base nas chaves criptografadas, a replicação das chaves criptografadas poderá danificar a configuração. Para obter ajuda, [entre em contato com o Atendimento](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)ao cliente.
 
+
 #### Replicação do repositório {#repository-replication}
 
 Ter o material principal armazenado no repositório, como era o caso do AEM 6.2 e anterior, pode ser preservado especificando a seguinte propriedade do sistema na primeira inicialização de cada instância do AEM (que cria o repositório inicial):
@@ -340,9 +338,10 @@ Ter o material principal armazenado no repositório, como era o caso do AEM 6.2 
 >
 >É importante verificar se o agente de [replicação do autor](#replication-agents-on-author) está configurado corretamente.
 
+
 Com o material principal armazenado no repositório, a maneira de replicar a chave de criptografia do autor para outras instâncias é a seguinte:
 
-Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navegue até [https://&lt;servidor>:&lt;porta>/crx/de](https://localhost:4502/crx/de)
 * Selecionar `/etc/key`
@@ -351,7 +350,7 @@ Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [Atualizar o pacote Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+   ![chlimage_1-415](assets/chlimage_1-415.png)
 
 #### Atualizar o pacote Cripto Granite {#refresh-the-granite-crypto-bundle}
 
@@ -362,7 +361,7 @@ Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Localizar `Adobe Granite Crypto Support` pacote (com.adobe.granite.crypto)
 * Selecionar **Atualizar**
 
-![](/help/communities/assets/chlimage_1-131.png)
+   ![chlimage_1-416](assets/chlimage_1-416.png)
 
 * Depois de um momento, uma caixa de diálogo **Êxito** deve ser exibida:
    `Operation completed successfully.`
