@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 2b04724138f28cd7f357d155b88daf964632f3bc
+workflow-type: tm+mt
+source-wordcount: '608'
+ht-degree: 3%
 
 ---
 
 
-# Desenvolver aplicativo Sandbox {#develop-sandbox-application}
+# Desenvolver aplicativo Sandbox  {#develop-sandbox-application}
 
 Nesta seção, agora que o modelo foi configurado na seção do aplicativo [](initial-app.md) inicial e as páginas iniciais estabelecidas na seção de conteúdo [](initial-content.md) inicial, o aplicativo pode ser desenvolvido usando scripts de base, incluindo a capacidade de habilitar a criação com componentes do Communities. No final desta seção, o site estará funcional.
 
@@ -37,50 +40,50 @@ Usando o CRXDE Lite:
 1. Clique em verde **[!UICONTROL [+]Adicionar]**
 1. Clique em **[!UICONTROL Salvar tudo]**
 
-![chlimage_1-231](assets/chlimage_1-231.png)
+   ![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Scripts de cabeça e corpo {#head-and-body-scripts}
 
-1. No painel do **CRXDE Lite** Explorer, navegue até `/apps/an-scf-sandbox/components/playpage` o arquivo e clique nele duas vezes `playpage.jsp` para abri-lo no painel de edição.
+1. No painel do **CRXDE Lite** Explorer, navegue até `/apps/an-scf-sandbox/components/playpage` e clique com o duplo no arquivo `playpage.jsp` para abri-lo no painel de edição.
 
-#### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
+   `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
-```xml
-<%--
-
-  An SCF Sandbox Play Component component.
-
-  This is the component which renders content for An SCF Sandbox page.
-
---%><%
-%><%@include file="/libs/foundation/global.jsp"%><%
-%><%@page session="false" %><%
-%><%
- // TODO add your code here
-%>
-```
+   ```xml
+   <%--
+   
+     An SCF Sandbox Play Component component.
+   
+     This is the component which renders content for An SCF Sandbox page.
+   
+   --%><%
+   %><%@include file="/libs/foundation/global.jsp"%><%
+   %><%@page session="false" %><%
+   %><%
+    // TODO add your code here
+   %>
+   ```
 
 1. Tendo em conta as tags de script open/close, substitua &quot; // TODO ...&quot; com inclui scripts para partes do cabeçalho e do corpo de &lt;html>.
 
    Com um supertipo de `foundation/components/page`, qualquer script não definido nessa mesma pasta será resolvido para um script na `/apps/foundation/components/page` pasta (se existir), caso contrário, para um script na `/libs/foundation/components/page` pasta.
 
-#### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp-1}
+   `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
-```xml
-<%--
-
-    An SCF Sandbox Play Component component: playpage.jsp
-
-  This is the component which renders content for An SCF Sandbox page.
-
---%><%
-%><%@include file="/libs/foundation/global.jsp"%><%
-%><%@page session="false" %>
-<html>
-  <cq:include script="head.jsp"/>
-  <cq:include script="body.jsp"/>
-</html>
-```
+   ```xml
+   <%--
+   
+       An SCF Sandbox Play Component component: playpage.jsp
+   
+     This is the component which renders content for An SCF Sandbox page.
+   
+   --%><%
+   %><%@include file="/libs/foundation/global.jsp"%><%
+   %><%@page session="false" %>
+   <html>
+     <cq:include script="head.jsp"/>
+     <cq:include script="body.jsp"/>
+   </html>
+   ```
 
 1. O script de base não `head.jsp` precisa ser sobreposto, mas o script de base `body.jsp` está vazio.
 
@@ -112,7 +115,7 @@ Usando o CRXDE Lite:
 
 1. Clique em **[!UICONTROL Salvar tudo]**
 
-**Visualize a página em um navegador no modo de edição:**
+**Visualização a página em um navegador no modo de edição:**
 
 * Interface padrão: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
@@ -130,11 +133,11 @@ Veja como a página de reprodução aparece na interface clássica, incluindo o 
 
 ## Componentes do Communities {#communities-components}
 
-Para ativar os componentes Comunidades para criação, comece seguindo estas instruções:
+Para ativar os componentes Comunidades para criação, start seguindo estas instruções:
 
 * [Acessar componentes das comunidades](basics.md#accessing-communities-components)
 
-Para os fins desta caixa de proteção, comece com esses componentes **Comunidades** (ative marcando a caixa):
+Para os fins desta caixa de proteção, start com estes componentes **Comunidades** (ativar marcando a caixa):
 
 * Comentários
 * Fórum
@@ -155,11 +158,12 @@ Além disso, escolha os componentes **[!UICONTROL Gerais]** , como
 >Os componentes ativados para o par de páginas são armazenados no repositório como o valor da `components` propriedade da variável
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
+
 ## Página de aterrissagem {#landing-page}
 
 Em um ambiente de vários idiomas, a página raiz incluiria um script que analisaria a solicitação do cliente para determinar o idioma preferencial.
 
-Neste exemplo simples, a página raiz está sendo configurada estaticamente para redirecionar para a página em inglês, que pode ser desenvolvida no futuro para ser a página inicial principal com um link para a página de reprodução.
+Neste exemplo simples, a página raiz está sendo configurada estaticamente para redirecionar para a página em inglês, que pode ser desenvolvida no futuro para ser a landing page principal com um link para a página de reprodução.
 
 Altere o URL do navegador para a página raiz: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
@@ -167,7 +171,7 @@ Altere o URL do navegador para a página raiz: [http://localhost:4502/editor.htm
 * Selecionar propriedades **[!UICONTROL abertas]**
 * Na guia AVANÇADO
 
-   * Para a entrada Redirecionar, navegue até **[!UICONTROL Sites > Sites > Sites do SCF Sandbox > Caixa de proteção do SCF]**
+   * Para a entrada Redirecionar, navegue até **[!UICONTROL Sites]** > Site **[!UICONTROL da caixa de proteção]** SCF > Caixa de proteção **[!UICONTROL SCF]**
    * Clique em **[!UICONTROL OK]**
 
 * Clique em **[!UICONTROL OK]**
