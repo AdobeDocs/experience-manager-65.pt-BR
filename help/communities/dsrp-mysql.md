@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Essas instruções descrevem como se conectar ao servidor MySQL e estabelecer o 
 
 ## Requisitos {#requirements}
 
-* [pacote de recursos das Comunidades mais recentes](deploy-communities.md#latestfeaturepack)
+* [Pacote de recursos das Comunidades mais recentes](deploy-communities.md#latestfeaturepack)
 * [Driver JDBC para MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * Um banco de dados relacional:
 
@@ -35,7 +38,7 @@ Essas instruções descrevem como se conectar ao servidor MySQL e estabelecer o 
 
 ## Instalando o MySQL {#installing-mysql}
 
-[O MySQL](https://dev.mysql.com/downloads/mysql/) deve ser baixado e instalado seguindo as instruções para o SO de destino.
+[O MySQL](https://dev.mysql.com/downloads/mysql/) deve ser baixado e instalado de acordo com as instruções para o SO do público alvo.
 
 ### Nomes de tabela em minúsculas {#lower-case-table-names}
 
@@ -54,7 +57,7 @@ Para fornecer um suporte multilíngue melhor, é necessário usar o conjunto de 
 
 Altere MySQL para ter UTF8 como seu conjunto de caracteres:
 
-* mysql> DEFINIR NOMES &#39;utf8&#39;;
+* mysql > DEFINIR NOMES &#39;utf8&#39;;
 
 Altere o banco de dados MySQL para o padrão UTF8:
 
@@ -69,9 +72,9 @@ Altere o banco de dados MySQL para o padrão UTF8:
 
 ## Instalando o MySQL Workbench {#installing-mysql-workbench}
 
-O MySQL Workbench fornece uma interface para executar scripts SQL que instalam o esquema e os dados iniciais.
+O MySQL Workbench fornece uma interface para executar scripts SQL que instalam o schema e os dados iniciais.
 
-O MySQL Workbench deve ser baixado e instalado de acordo com as instruções para o SO de destino.
+O MySQL Workbench deve ser baixado e instalado de acordo com as instruções para o SO do público alvo.
 
 ## Conexão de comunidades {#communities-connection}
 
@@ -91,7 +94,7 @@ Quando o MySQL Workbench é iniciado pela primeira vez, a menos que já esteja e
    * Hostname: `127.0.0.1`
    * Nome de usuário: `root`
    * Senha: `no password by default`
-   * Esquema padrão: `leave blank`
+   * Schema padrão: `leave blank`
 
 1. Selecione `Test Connection` para verificar a conexão com o serviço MySQL em execução
 
@@ -121,14 +124,14 @@ O script SQL é obtido do repositório do AEM:
 1. Selecione a pasta /libs/social/config/datastore/dsrp/schema
 1. Download `init-schema.sql`
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+   ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Um método para baixar o esquema é para
+Um método para baixar o schema é:
 
 * Selecione o `jcr:content` nó para o arquivo sql
-* Observe que o valor da `jcr:data` propriedade é um link de exibição
+* Observe que o valor da `jcr:data` propriedade é um link de visualização
 
-* Selecione o link de exibição para salvar os dados em um arquivo local
+* Selecione o link visualização para salvar os dados em um arquivo local
 
 ### Criar o banco de dados DSRP {#create-the-dsrp-database}
 
@@ -155,7 +158,7 @@ Na imagem a seguir, o `init_schema.sql` arquivo está pronto para ser executado:
 
 #### Atualizar {#refresh}
 
-Depois que o script é executado, é necessário atualizar a `SCHEMAS` seção do `Navigator` para visualizar o novo banco de dados. Use o ícone de atualização à direita de &#39;SCHEMAS&#39;:
+Depois que o script é executado, é necessário atualizar a `SCHEMAS` seção do `Navigator` para visualizar o novo banco de dados. Use o ícone de atualização à direita de &#39;SCHEMAS:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -167,36 +170,35 @@ Todas as instâncias de AEM de publicação e autor devem apontar para o mesmo s
 
 Quando MySQL é executado em um servidor diferente do AEM, o nome do host do servidor deve ser especificado no lugar de &#39;localhost&#39; no conector JDBC.
 
-* Em cada autor e publique a instância do AEM
-* Conectado com privilégios de administrador
-* Acesse o console [da Web](../../help/sites-deploying/configuring-osgi.md)
+* Em cada autor e publique a instância do AEM.
+* Conectado com privilégios de administrador.
+* Acesse o console [da](../../help/sites-deploying/configuring-osgi.md)Web.
 
    * Por exemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Localize a variável `Day Commons JDBC Connections Pool`
-* Selecione o `+` ícone para criar uma nova configuração de conexão
+* Selecione o `+` ícone para criar uma nova configuração de conexão.
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
 * Insira os seguintes valores:
 
    * **[!UICONTROL Classe]** de driver JDBC: `com.mysql.jdbc.Driver`
    * **[!UICONTROL URI]** de conexão JDBC: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Especifique o servidor no lugar de localhost se o servidor MySQL não for o mesmo que o servidor AEM &#39;this&#39;
-
-      *Communities* é o nome padrão do banco de dados (esquema)
+      Especifique o servidor no lugar de localhost se o servidor MySQL não for o mesmo que &#39;this&#39; *comunidades* de servidor AEM é o nome padrão do banco de dados (schema).
 
    * **[!UICONTROL Nome de usuário]**: `root`
 
-      Ou insira o nome de usuário configurado para o servidor MySQL, se não for &#39;root&#39;
+      Ou insira o nome de usuário configurado para o servidor MySQL, se não for &#39;root&#39;.
 
    * **[!UICONTROL Senha]**:
 
       Limpar este campo se nenhuma senha estiver definida para MySQL,
 
-      caso contrário, insira a senha configurada para o nome de usuário MySQL
-   * **[!UICONTROL Nome]** da fonte de dados: nome inserido para a conexão [](#new-connection-settings)MySQL, por exemplo, &quot;Communities&quot;
+      caso contrário, insira a senha configurada para o nome de usuário MySQL.
+
+   * **[!UICONTROL Nome]** da fonte de dados: nome inserido para a conexão [](#new-connection-settings)MySQL, por exemplo, &quot;Communities&quot;.
 
 * Selecione **[!UICONTROL Salvar]**
 
