@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 0%
@@ -165,7 +165,7 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 
    Observação: embora existam nós JCR sob o *asipath* no autor, eles são para a estrutura SCF. O UGC real não está no JCR, está no MongoDB.
 
-1. Visualização do UGC em **[!UICONTROL comunidades mondeus > Coleções > Conteúdo]**
+1. Visualização do UGC em **[!UICONTROL comunidades]** mondeus > **[!UICONTROL Coleções]** > **[!UICONTROL Conteúdo]**
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
