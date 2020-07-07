@@ -3,7 +3,7 @@ title: Biblioteca de transcodificação de imagens
 description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens da Adobe, uma solução de processamento de imagens que pode executar funções essenciais de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas 
 
 1. Baixe o pacote da Biblioteca de transcodificação de [imagens da Distribuição](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de software e instale-o usando o Gerenciador de pacotes. O pacote é compatível com a Experience Manager 6.5.
 
-1. Para saber uma ID de pacote para `com.day.cq.dam.cq-dam-switchengine`, faça logon no Console da Web e clique em **[!UICONTROL OSGi > Pacotes]**. Como alternativa, para abrir o console de pacotes, acesse o `https://[aem_server:[port]/system/console/bundles/` URL. Localize o `com.day.cq.dam.cq-dam-switchengine` pacote e sua ID.
+1. Para saber uma ID de pacote para `com.day.cq.dam.cq-dam-switchengine`, faça logon no Console da Web e clique em **[!UICONTROL OSGi]** > **[!UICONTROL Pacotes]**. Como alternativa, para abrir o console de pacotes, acesse o `https://[aem_server:[port]/system/console/bundles/` URL. Localize o `com.day.cq.dam.cq-dam-switchengine` pacote e sua ID.
 
 1. Certifique-se de que todas as bibliotecas necessárias sejam extraídas, verificando a pasta usando o comando `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, onde o nome da pasta é construído usando a ID do pacote. Por exemplo, o comando é `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` se a ID do pacote for `588`.
 
@@ -105,7 +105,7 @@ Para configurar a biblioteca, crie um arquivo .conf para indicar as bibliotecas 
 
 Atualize o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM para usar a biblioteca para processar imagens.
 
-1. Na interface do usuário do Experience Manager, selecione **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Na interface do usuário do Experience Manager, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 
 1. Na página Modelos **[!UICONTROL de]** fluxo de trabalho, abra o modelo de fluxo de trabalho Atualizar ativo **[!UICONTROL do]** DAM no modo de edição.
 
