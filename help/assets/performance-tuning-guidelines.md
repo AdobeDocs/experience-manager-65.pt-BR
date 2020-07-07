@@ -4,9 +4,9 @@ description: Sugestões e orientações [!DNL Experience Manager] sobre configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da2e435f33e8527793e009700c30e60868d196be
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2767'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Estas são algumas áreas de foco chave em torno das quais você descobre e corr
 
 ## Plataforma {#platform}
 
-Embora o Experience Manager seja compatível com várias plataformas, a Adobe encontrou o maior suporte para ferramentas nativas no Linux e no Windows, o que contribui para o desempenho ideal e a facilidade de implementação. Idealmente, você deve implantar um sistema operacional de 64 bits para atender aos altos requisitos de memória de uma [!DNL Experience Manager Assets] implantação. Assim como com qualquer implantação do Experience Manager, você deve implementar o TarMK sempre que possível. Embora o TarMK não possa ser dimensionado além de uma única instância do autor, ele tem um desempenho melhor do que o MongoMK. Você pode adicionar instâncias de descarregamento TarMK para aumentar o poder de processamento do fluxo de trabalho de sua [!DNL Experience Manager Assets] implantação.
+Embora o Experience Manager seja suportado em várias plataformas, a Adobe encontrou o maior suporte para ferramentas nativas no Linux e no Windows, o que contribui para o desempenho otimizado e a facilidade de implementação. Idealmente, você deve implantar um sistema operacional de 64 bits para atender aos altos requisitos de memória de uma [!DNL Experience Manager Assets] implantação. Assim como com qualquer implantação de Experience Manager, você deve implementar o TarMK sempre que possível. Embora o TarMK não possa ser dimensionado além de uma única instância do autor, ele tem um desempenho melhor do que o MongoMK. Você pode adicionar instâncias de descarregamento TarMK para aumentar o poder de processamento do fluxo de trabalho de sua [!DNL Experience Manager Assets] implantação.
 
 ### Pasta temporária {#temp-folder}
 
@@ -55,9 +55,8 @@ Quando o volume temporário de alto desempenho estiver pronto, defina o parâmet
 
 A Adobe recomenda implantar [!DNL Experience Manager Assets] no Java 8 para obter desempenho ideal.
 
->[!NOTE]
->
->A Oracle parou de lançar atualizações para o Java 7 a partir de abril de 2015.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### Parâmetros JVM {#jvm-parameters}
 
@@ -77,7 +76,7 @@ Defina os seguintes parâmetros JVM:
 
 ### Configurar o tamanho máximo do cache de imagem em buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Ao fazer upload de grandes quantidades de ativos para o [!DNLAAdobe Experience Manager], para permitir picos inesperados no consumo de memória e para evitar falhas de JVM com OutOfMemoryErrors, reduza o tamanho máximo configurado do cache de imagem em buffer. Considere um exemplo de que você tem um sistema com um heap ( `Xmx`param) máximo de 5 GB, um BlobCache Oak definido em 1 GB e um cache de documento definido em 2 GB. Nesse caso, o cache armazenado em buffer levaria no máximo 1,25 GB e memória, o que deixaria apenas 0,75 GB de memória para picos inesperados.
+Ao fazer upload de grandes quantidades de ativos para o [!DNLAAdobe Experience Manager], para permitir picos inesperados no consumo de memória e para evitar que o JVM falhe com OutOfMemoryErrors, reduza o tamanho máximo configurado do cache de imagem em buffer. Considere um exemplo de que você tem um sistema com um heap ( `Xmx`param) máximo de 5 GB, um BlobCache Oak definido em 1 GB e um cache de documento definido em 2 GB. Nesse caso, o cache armazenado em buffer levaria no máximo 1,25 GB e memória, o que deixaria apenas 0,75 GB de memória para picos inesperados.
 
 Configure o tamanho do cache armazenado em buffer no console da Web OSGi. Em `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, defina a propriedade `cq.dam.image.cache.max.memory` em bytes. Por exemplo, 1073741824 é 1 GB (1024 x 1024 x 1024 = 1 GB).
 
