@@ -1,11 +1,11 @@
 ---
 title: Amplie a funcionalidade de pesquisa dos ativos Adobe Experience Manager
-description: Estenda os recursos de pesquisa dos ativos Adobe Experience Manager para além dos padrões.
+description: Estenda os recursos de pesquisa dos Ativos do Adobe Experience Manager além dos padrões.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,7 @@ Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/da
 
 >[!NOTE]
 >
->Por padrão, a estrutura de diretório em / `apps` não existe e precisa ser criada. Certifique-se de que os tipos de nó correspondem aos de / `libs`.
+>Por padrão, a estrutura de diretório em `/apps` não existe, portanto, crie-a. Certifique-se de que os tipos de nó correspondam aos em `/libs`.
 
 ## Adicionar guias {#adding-tabs}
 
@@ -48,7 +48,7 @@ Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/da
 
 [!DNL Assets] vem com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos dessa forma é abordado na [criação e configuração de uma página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
 
-Além de usar predicados pré-existentes, os desenvolvedores do Experience Manager também podem criar seus próprios predicados usando a API [do Construtor de](/help/sites-developing/querybuilder-api.md)Query.
+Além de usar predicados preexistentes, os desenvolvedores do Experience Manager também podem criar seus próprios predicados usando a API [do Construtor de](/help/sites-developing/querybuilder-api.md)Query.
 
 A criação de predicados personalizados requer conhecimento básico sobre a estrutura [de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)Widgets.
 
@@ -296,6 +296,6 @@ Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados
 
 ## Personalizar os resultados da pesquisa {#customizing-search-results}
 
-A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. Os ativos do Experience Manager vêm com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
+A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. O Experience Manager Assets vem com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
 
-Além de usar lentes pré-existentes, os desenvolvedores do Experience Manager também podem criar suas próprias lentes.
+Além de usar lentes pré-existentes, os desenvolvedores de Experience Manager também podem criar suas próprias lentes.
