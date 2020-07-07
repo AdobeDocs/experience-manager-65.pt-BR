@@ -9,7 +9,10 @@ topic-tags: integration
 discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 0%
 
 ---
 
@@ -18,18 +21,18 @@ source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
 
 ![](do-not-localize/data-integeration.png)
 
-A integração de dados do AEM Forms permite usar diferentes fontes de dados de backend para criar um modelo de dados de formulário que pode ser usado como esquema em vários formulários adaptáveis e fluxos de trabalho de comunicações interativas. Ela exige a configuração de fontes de dados e a criação de um modelo de dados de formulário com base em objetos de modelo de dados e serviços disponíveis em fontes de dados. Para obter mais informações, consulte:
+A integração de dados do AEM Forms permite usar diferentes fontes de dados de backend para criar um modelo de dados de formulário que você pode usar como schema em vários formulários adaptáveis e workflows de comunicação interativos. Ela exige a configuração de fontes de dados e a criação de um modelo de dados de formulário com base em objetos de modelo de dados e serviços disponíveis em fontes de dados. Para obter mais informações, consulte:
 
 * [Integração de dados do AEM Forms](../../forms/using/data-integration.md)
 * [Configurar fontes de dados](../../forms/using/configure-data-sources.md)
 * [Criar modelo de dados de formulário](../../forms/using/create-form-data-models.md)
 * [Trabalhar com modelo de dados de formulário](../../forms/using/work-with-form-data-model.md)
 
-Um modelo de dados de formulário é uma extensão do esquema JSON que você pode usar para:
+Um modelo de dados de formulário é uma extensão do schema JSON que você pode usar para:
 
 * [Criar formulários e fragmentos adaptáveis](#create-af)
 * [Criar comunicações interativas e blocos de construção como fragmentos de texto, lista e condição](#create-ic)
-* [Visualizar comunicações interativas com dados de amostra](#preview-ic)
+* [Pré-visualização de comunicações interativas com dados de amostra](#preview-ic)
 * [Preencher previamente formulários adaptáveis e comunicações interativas](#prefill)
 * [Gravar dados de formulário adaptativo enviados em fontes de dados](#write-af)
 * [Invocar serviços usando regras de formulário adaptáveis](#invoke-services)
@@ -48,13 +51,13 @@ Um modelo de dados de formulário é uma extensão do esquema JSON que você pod
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-1. (Somente **fragmentos de formulário** adaptáveis) É possível criar um fragmento de formulário adaptável com base em apenas um objeto de modelo de dados em um modelo de dados de formulário. Expanda o menu suspenso Definições **[!UICONTROL do modelo de dados de]** formulário. Ela lista todos os objetos de modelo de dados no modelo de dados de formulário especificado. Selecione um objeto de modelo de dados na lista.
+1. (Somente **fragmentos de formulário** adaptáveis) É possível criar um fragmento de formulário adaptável com base em apenas um objeto de modelo de dados em um modelo de dados de formulário. Expanda o menu suspenso Definições **[!UICONTROL do modelo de dados de]** formulário. Ele lista todos os objetos de modelo de dados no modelo de dados de formulário especificado. Selecione um objeto de modelo de dados na lista.
 
    ![create-af-3](assets/create-af-3.png)
 
 Depois que o formulário adaptável ou o fragmento de formulário adaptável com base em um modelo de dados de formulário é criado, os objetos de modelo de dados de formulário aparecem na guia Objetos **[!UICONTROL do Modelo de]** dados do navegador Conteúdo no editor de formulário adaptável.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Para um fragmento de formulário adaptável, somente o objeto de modelo de dados selecionado no momento da criação e seus objetos de modelo de dados associados são exibidos na guia Objetos de modelo de dados.
 
@@ -64,7 +67,7 @@ Depois que o formulário adaptável ou o fragmento de formulário adaptável com
 
 ## Criar comunicações interativas {#create-ic}
 
-Você pode criar uma comunicação interativa com base em um modelo de dados de formulário que pode ser usado para pré-preencher a comunicação interativa com dados de fontes de dados configuradas. Além disso, os blocos de construção de uma comunicação interativa, como fragmentos de documento de texto, lista e condição, podem se basear em um modelo de dados de formulário.
+Você pode criar uma comunicação interativa com base em um modelo de dados de formulário que pode ser usado para pré-preencher a comunicação interativa com dados de fontes de dados configuradas. Além disso, os elementos básicos de uma comunicação interativa, como fragmentos de texto, lista e documento de condição, podem ser baseados em um modelo de dados de formulário.
 
 É possível escolher um modelo de dados de formulário ao criar uma comunicação interativa ou um fragmento de documento. A imagem a seguir mostra a guia Geral da caixa de diálogo Criar comunicação interativa.
 
@@ -80,29 +83,29 @@ Para obter mais informações, consulte:
 
 [Condições em comunicações interativas](/help/forms/using/conditions-interactive-communications.md)
 
-[Listar fragmentos](/help/forms/using/lists.md)
+[Fragmentos de Lista](/help/forms/using/lists.md)
 
-## Visualizar com dados de amostra {#preview-ic}
+## Pré-visualização com dados de amostra {#preview-ic}
 
-O editor de modelo de dados de formulário permite gerar e editar dados de amostra para objetos de modelo de dados no modelo de dados de formulário. Você pode usar esses dados para visualizar e testar comunicações interativas e formulários adaptativos. Você deve gerar os dados de amostra antes de visualizar conforme descrito em [Trabalhar com modelo](../../forms/using/work-with-form-data-model.md#sample)de dados de formulário.
+O editor de modelo de dados de formulário permite gerar e editar dados de amostra para objetos de modelo de dados no modelo de dados de formulário. Você pode usar esses dados para pré-visualização e teste comunicações interativas e formulários adaptativos. Você deve gerar os dados de amostra antes de visualizar conforme descrito em [Trabalhar com modelo](../../forms/using/work-with-form-data-model.md#sample)de dados de formulário.
 
-Para visualizar uma comunicação interativa com dados de exemplo do modelo de dados do formulário:
+Para pré-visualização de uma comunicação interativa com dados de exemplo do modelo de dados do formulário:
 
-1. Na instância do autor do AEM, navegue até **[!UICONTROL Formulários > Formulários e documentos]**.
-1. Selecione uma comunicação interativa e toque em **[!UICONTROL Visualizar]** na barra de ferramentas para selecionar Canal **** da Web, Canal **[!UICONTROL de]** impressão ou **[!UICONTROL Ambos os canais]** para visualizar a comunicação interativa.
-1. Na caixa de diálogo Visualizar [*canal*] , verifique se **[!UICONTROL Testar dados do modelo]** de dados do formulário está selecionado e toque em **[!UICONTROL Visualizar]**.
+1. Na instância do autor de AEM, navegue até **[!UICONTROL Formulários > Formulários e Documentos]**.
+1. Selecione uma comunicação interativa e toque em **[!UICONTROL Pré-visualização]** na barra de ferramentas para selecionar Canal **[!UICONTROL da]** Web, Canal **** Imprimir ou **[!UICONTROL Ambos os Canais]** para pré-visualização da comunicação interativa.
+1. Na caixa de diálogo Pré-visualização [*canal*] , verifique se **[!UICONTROL Testar dados do modelo]** de dados do formulário está selecionado e toque em **[!UICONTROL Pré-visualização]**.
 
 A comunicação interativa é aberta com dados de amostra pré-preenchidos.
 
-![visualização na Web](assets/web-preview.png)
+![pré-visualização na web](assets/web-preview.png)
 
-Da mesma forma, para visualizar um formulário adaptável com dados de amostra, abra o formulário adaptável no modo de autor e toque em **[!UICONTROL Visualizar]**.
+Da mesma forma, para pré-visualização um formulário adaptável com dados de amostra, abra o formulário adaptável no modo de autor e toque em **[!UICONTROL Pré-visualização]**.
 
 ## Preencher previamente usando o serviço de modelo de dados de formulário {#prefill}
 
-O AEM Forms fornece um serviço de pré-preenchimento de modelo de dados de formulário pronto para uso que pode ser habilitado para formulários adaptáveis e comunicações interativas com base no modelo de dados de formulário. O serviço de preenchimento prévio consulta fontes de dados para objetos de modelo de dados no formulário adaptável e comunicação interativa e, portanto, preenche os dados antecipadamente ao renderizar o formulário ou a comunicação.
+O AEM Forms fornece o serviço de preenchimento prévio do modelo de dados de formulário pronto para uso que você pode ativar para formulários adaptáveis e comunicações interativas com base no modelo de dados de formulário. O serviço de preenchimento prévio query fontes de dados para objetos de modelo de dados no formulário adaptável e comunicação interativa e, portanto, preenche os dados antecipadamente ao renderizar o formulário ou a comunicação.
 
-Para ativar o serviço de preenchimento prévio do modelo de dados de formulário para um formulário adaptável, abra as propriedades do contêiner de formulário adaptável e selecione o serviço **[!UICONTROL Preenchimento prévio do modelo de dados de]** formulário no menu suspenso Serviço **[!UICONTROL de]** preenchimento prévio na tabela Básico. Em seguida, salve as propriedades.
+Para habilitar o serviço de preenchimento prévio do modelo de dados de formulário para um formulário adaptável, abra as propriedades do Container de formulário adaptável e selecione o serviço **[!UICONTROL Preenchimento prévio do modelo de dados de]** formulário no menu suspenso Serviço **[!UICONTROL de]** preenchimento prévio na opção Básico. Em seguida, salve as propriedades.
 
 ![serviço de preenchimento prévio](assets/prefill-service.png)
 
@@ -114,9 +117,9 @@ Caixa de diálogo Editar propriedades para uma comunicação interativa
 
 ## Gravar dados de formulário adaptativo enviados em fontes de dados {#write-af}
 
-Quando um usuário envia um formulário com base em um modelo de dados de formulário, é possível configurar o formulário para gravar dados enviados de um objeto de modelo de dados em suas fontes de dados. Para obter esse caso de uso, o AEM Forms fornece uma ação [de envio do Modelo de dados de](../../forms/using/configuring-submit-actions.md)formulário, disponível prontamente apenas para formulários adaptáveis com base em um modelo de dados de formulário. Ele grava dados enviados para um objeto de modelo de dados em sua fonte de dados.
+Quando um usuário envia um formulário com base em um modelo de dados de formulário, é possível configurar o formulário para gravar dados enviados de um objeto de modelo de dados em suas fontes de dados. Para obter esse caso de uso, os AEM Forms fornecem uma ação [de envio do Modelo de dados de](../../forms/using/configuring-submit-actions.md)formulário, disponível prontamente apenas para formulários adaptáveis baseados em um modelo de dados de formulário. Ele grava dados enviados para um objeto de modelo de dados em sua fonte de dados.
 
-Para configurar a ação de envio do Modelo de dados de formulário, abra as propriedades do Contêiner de formulário adaptável e selecione **[!UICONTROL Enviar usando o Modelo]** de dados de formulário no menu suspenso Enviar ação na opção Enviar. Em seguida, procure e selecione um objeto de modelo de dados no **[!UICONTROL Nome do objeto de modelo de dados a ser submetido]** . Salve as propriedades.
+Para configurar a ação de envio do Modelo de dados de formulário, abra as propriedades do Container de formulário adaptável e selecione **[!UICONTROL Enviar usando o Modelo]** de dados de formulário no menu suspenso Enviar ação na opção Enviar. Em seguida, procure e selecione um objeto de modelo de dados no **[!UICONTROL Nome do objeto de modelo de dados a ser submetido]** . Salve as propriedades.
 
 No envio do formulário, os dados do objeto de modelo de dados configurado são gravados na respectiva fonte de dados.
 
@@ -131,7 +134,7 @@ Também é possível enviar anexos de formulário para uma fonte de dados usando
 
    Toque em ![check-button](assets/check-button.png) para salvar as propriedades. O campo de anexo agora está vinculado à propriedade binária do modelo de dados de formulário.
 
-1. Na seção Enviar das propriedades do Contêiner de formulário adaptável, ative **[!UICONTROL Enviar anexos]** de formulário. Ele envia o anexo no campo de propriedade binária para a fonte de dados no envio do formulário.
+1. Na seção Enviar das propriedades do Container de formulário adaptável, ative **[!UICONTROL Enviar anexos]** de formulário. Ele envia o anexo no campo de propriedade binária para a fonte de dados no envio do formulário.
 
 ## Invocar serviços em formulários adaptáveis usando regras {#invoke-services}
 
