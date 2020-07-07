@@ -4,7 +4,7 @@ description: Use ativos em várias páginas/pastas que são derivadas e vinculad
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '3368'
 ht-degree: 10%
@@ -61,14 +61,14 @@ O MSM mantém uma relação ao vivo entre o ativo de origem e suas cópias ao vi
 
 Para criar uma live copy de um ou mais ativos ou pastas de origem, siga um destes procedimentos:
 
-* Método 1: Selecione os ativos de origem e clique em **[!UICONTROL Criar > Live Copy]** na barra de ferramentas na parte superior.
-* Método 2: Na interface [!DNL Experience Manager] do usuário, clique em **[!UICONTROL Criar > Live Copy]** no canto superior direito da interface.
+* Método 1: Selecione os ativos de origem e clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]** na barra de ferramentas na parte superior.
+* Método 2: Na interface do [!DNL Experience Manager] usuário, clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]** no canto superior direito da interface.
 
 Você pode criar cópias ao vivo de um ativo ou de uma pasta, uma de cada vez. Você pode criar cópias ao vivo que são derivadas de um ativo ou de uma pasta que seja uma cópia ao vivo. Fragmentos de conteúdo (CFs) não são suportados no caso de uso. Ao tentar criar suas cópias online, os CFs são copiados como estão sem nenhum relacionamento. Os CFs copiados são um instantâneo no tempo e não são atualizados quando os CFs originais são atualizados.
 
 Para criar cópias ao vivo usando o primeiro método, siga estas etapas:
 
-1. Selecione os ativos ou pastas de origem. Na barra de ferramentas, clique em **[!UICONTROL Criar > Live Copy]**.
+1. Selecione os ativos ou pastas de origem. Na barra de ferramentas, clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]**.
 
    ![Criar live copy a partir da interface do Experience Manager](assets/create_lc1.png)
 
@@ -80,7 +80,7 @@ Para criar cópias ao vivo usando o primeiro método, siga estas etapas:
 
 Para criar cópias ao vivo usando o segundo método, siga estas etapas:
 
-1. Na [!DNL Experience Manager] interface, no canto superior direito, clique em **[!UICONTROL Criar > Live Copy]**.
+1. Na [!DNL Experience Manager] interface, no canto superior direito, clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]**.
 
    ![Criar live copy a partir da interface do Experience Manager](assets/create_lc2.png)
 
@@ -270,7 +270,7 @@ Alternatively, you can quickly detach multiple assets in a live copy folder from
 
 ## Execute ações em muitos ativos em uma pasta live copy {#bulkactions}
 
-Se você tiver vários ativos em uma pasta live copy, iniciar ações em cada ativo pode ser tedioso. Você pode iniciar rapidamente as ações básicas em muitos ativos do [!UICONTROL Live Copy Console]. Os métodos acima continuam a funcionar para ativos individuais.
+Se você tiver vários ativos em uma pasta live copy, iniciar ações em cada ativo pode ser tedioso. Você pode iniciar rapidamente as ações básicas em muitos ativos a partir do [!UICONTROL Live Copy Console]. Os métodos acima continuam a funcionar para ativos individuais.
 
 1. Selecione uma pasta de origem. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**.
