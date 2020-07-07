@@ -4,7 +4,10 @@ seo-title: Definir configurações de Fora do Escritório
 description: Configurar configurações de Ausência Temporária
 seo-description: Definir configurações de Fora do Escritório
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 0%
 
 ---
 
@@ -23,10 +26,10 @@ Você tem a opção de especificar uma data e hora de start e uma data e hora de
 
 >[!NOTE]
 >
-> * Quando você ativa a configuração Fora do escritório, todos os itens disponíveis na Caixa de entrada, antes de habilitar a configuração, permanecem na sua caixa de entrada. Somente os itens recebidos após a ativação da configuração são delegados.
-> * Quando você desativa a configuração Fora do escritório, os itens delegados não são automaticamente atribuídos a você. Você pode usar a funcionalidade de solicitação para atribuir itens a você.
-> * Quando o Usuário A delega itens para o Usuário B e o Usuário B delega ainda mais para o Usuário C, então os itens são atribuídos somente ao Usuário C e não ao Usuário B.
-> * Quando há um loop na atribuição, as tarefas permanecem com o usuário original. Por exemplo, quando o Usuário A delega itens ao Usuário B O Usuário B delega ao Usuário C, o Usuário C delega ao Usuário D e o Usuário D delega ao Usuário B, um loop é criado. Nessa situação, o item permanece com o Usuário original. O usuário A é o usuário original no exemplo acima.
+>* Quando você ativa a configuração Fora do escritório, todos os itens disponíveis na Caixa de entrada, antes de habilitar a configuração, permanecem na sua caixa de entrada. Somente os itens recebidos após a ativação da configuração são delegados.
+>* Quando você desativa a configuração Fora do escritório, os itens delegados não são automaticamente atribuídos a você. Você pode usar a funcionalidade de solicitação para atribuir itens a você.
+>* Quando o Usuário A delega itens para o Usuário B e o Usuário B delega ainda mais para o Usuário C, então os itens são atribuídos somente ao Usuário C e não ao Usuário B.
+>* Quando há um loop na atribuição, as tarefas permanecem com o usuário original. Por exemplo, quando o Usuário A delega itens ao Usuário B O Usuário B delega ao Usuário C, o Usuário C delega ao Usuário D e o Usuário D delega ao Usuário B, um loop é criado. Nessa situação, o item permanece com o Usuário original. O usuário A é o usuário original no exemplo acima.
 
 
 ## Ativar a configuração Fora do escritório para sua conta {#enable-out-of-office}
@@ -61,7 +64,7 @@ Agora, os itens atribuídos a você durante o período Fora do escritório são 
 >
 >(Somente para itens de fluxo de trabalho centrados no Forms) Ative **Permitir que o destinatário delegue usando a opção de configurações** &#39;Fora do Office&#39; da etapa **Atribuir tarefa** no fluxo de trabalho. Somente os itens com a opção mencionada acima ativada são delegados a outros usuários.
 
-## Limitações       {#limitations}
+## Limitações           {#limitations}
 
 * Não há suporte para a atribuição de itens a um grupo.
 * Atualmente, não há suporte para a ativação de Fora do Escritório para tarefas de projeto.
