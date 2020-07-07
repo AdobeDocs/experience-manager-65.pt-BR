@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -172,7 +172,6 @@ Os dados do produto que são mantidos em híbridos precisam estar disponíveis n
 * A extensão hybris fornece um importador de pesquisas (esquema &quot;hybris&quot;), que pode ser configurado para importar alterações para o AEM em um intervalo especificado (por exemplo, a cada 24 horas, onde o intervalo é especificado em segundos):
 
    * 
-
       ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
@@ -227,11 +226,9 @@ Embora os produtos (em geral) possam ter vários eixos variantes, o componente d
    >
    >
 1. mais um
-   >   Esta variante adicional é selecionada através da `variationAxis` propriedade da referência do produto (geralmente `color` para Geometrixx Outdoors).
-
 >
-
-
+>   
+Esta variante adicional é selecionada através da `variationAxis` propriedade da referência do produto (geralmente `color` para Geometrixx Outdoors).
 
 #### Referências do produto e dados do produto {#product-references-and-product-data}
 
@@ -562,7 +559,7 @@ A integração é fornecida entre o AEM e vários sistemas de eCommerce. Isso re
 
 * Contas em Hybris
 
-   O AEM cria uma conta correspondente (subordinada) em híbridos para cada comprador. O nome de usuário desta conta é igual ao nome de usuário do AEM. Uma senha criptograficamente aleatória é gerada automaticamente e armazenada (criptografada) no AEM.
+   O AEM cria uma conta correspondente (secundária) em híbridos para cada comprador. O nome de usuário desta conta é igual ao nome de usuário do AEM. Uma senha criptograficamente aleatória é gerada automaticamente e armazenada (criptografada) no AEM.
 
 #### Usuários pré-existentes {#pre-existing-users}
 
