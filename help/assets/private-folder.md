@@ -3,9 +3,9 @@ title: Crie e compartilhe uma pasta privada no Adobe Experience Manager.
 description: Saiba como criar uma pasta privada nos Ativos do Adobe Experience Manager e compartilhá-los com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Você pode criar uma pasta privada na interface do usuário dos Ativos do Adobe 
 
    >[!NOTE]
    >
-   > A pasta privada tem pelo menos um membro com a função Proprietário. Portanto, o administrador não pode remover todos os membros proprietários de uma pasta privada. No entanto, para remover proprietários existentes (e o próprio administrador) da pasta privada, o administrador deve adicionar outro usuário como proprietário.
+   >A pasta privada tem pelo menos um membro com a função Proprietário. Portanto, o administrador não pode remover todos os membros proprietários de uma pasta privada. No entanto, para remover proprietários existentes (e o próprio administrador) da pasta privada, o administrador deve adicionar outro usuário como proprietário.
 
 1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando o usuário faz logon em Ativos.
 1. Clique em **[!UICONTROL Ok]** para fechar a mensagem de confirmação.
