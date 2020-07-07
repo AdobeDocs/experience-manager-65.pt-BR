@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -49,7 +49,7 @@ documentos PDF criados pelo Gerador de PDF no Acrobat 5.0 ou posterior contêm m
 
 Os metadados do documento contêm (mas não se limitam a) informações que também aparecem na guia Descrição da caixa de diálogo Propriedades do Documento no Acrobat. As alterações feitas na guia Descrição são refletidas nos metadados do documento. Os metadados do Documento podem ser estendidos e modificados usando produtos de terceiros.
 
-A Adobe Extensible Metadata Platform (XMP) fornece aos aplicativos Adobe uma estrutura XML comum que padroniza a criação, o processamento e o intercâmbio de metadados de documentos em workflows de publicação. É possível salvar e importar o código de origem XML de metadados do documento no formato XMP, facilitando o compartilhamento de metadados entre vários documentos. Para obter mais informações sobre arquivos XMP, consulte Plataforma de metadados [extensível (XMP)](https://www.adobe.com/products/xmp/) e Centro [de desenvolvedores](https://www.adobe.com/devnet/xmp.html)Adobe XMP.
+O Adobe Extensible Metadata Platform (XMP) fornece aos aplicativos Adobe uma estrutura XML comum que padroniza a criação, o processamento e o intercâmbio de metadados de documentos em workflows de publicação. É possível salvar e importar o código de origem XML de metadados do documento no formato XMP, facilitando o compartilhamento de metadados entre vários documentos. Para obter mais informações sobre arquivos XMP, consulte [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) e [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
 
 Você pode criar arquivos XMP no Acrobat.
 
@@ -66,19 +66,21 @@ Se o arquivo ZIP contiver mais de um arquivo HTML no nível mais baixo de sua hi
 >
 >* O recurso HTML para PDF requer determinadas fontes no diretório de fontes do sistema. Nos sistemas Linux, Solaris e AIX, o diretório de fontes do sistema deve conter a fonte Courier. Nos sistemas Windows, o diretório de fontes do sistema deve conter Times New Roman.
    >
-   > 
-* (Somente no sistema baseado em UNIX) Uma das seguintes fontes japonesas deve estar disponível no servidor do AEM Forms para converter uma página da Web com fonte japonesa em um documento PDF.
    >
-   >   
-   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Gothic Pro-VI&quot;
-   >   * &quot;Kozuka Mincho Pro-VI&quot;
-   >   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Mincho Pr6N&quot;
-   >   * &quot;Sazanami Mincho&quot;
-   >   * &quot;Adobe Heiti Std&quot;
-   >   * &quot;Adobe Song Std&quot;
->* Para carregar um arquivo do sistema de arquivos local, use a opção Carregar arquivo na página HTML para PDF.
+* (Somente no sistema baseado em UNIX) Uma das seguintes fontes japonesas deve estar disponível no servidor AEM Forms para converter uma página da Web com fonte japonesa em um documento PDF.
+   >
+   >  
+* &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Gothic Pro-VI&quot;
+>  * &quot;Kozuka Mincho Pro-VI&quot;
+>  * &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Mincho Pr6N&quot;
+>  * &quot;Sazanami Mincho&quot;
+>  * &quot;Adobe Heiti Std&quot;
+>  * &quot;Adobe Song Std&quot;
+   >
+   >
+* Para carregar um arquivo do sistema de arquivos local, use a opção Carregar arquivo na página HTML para PDF.
 
 
 1. No console de administração, clique em Serviços > Gerador de PDF > HTML para PDF.
