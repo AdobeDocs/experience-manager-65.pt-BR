@@ -3,7 +3,7 @@ title: Configure operações assíncronas [!DNL Adobe Experience Manager].
 description: Conclua de forma assíncrona algumas tarefas que consomem muitos recursos para otimizar o desempenho [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 18b81ba3fcf15838ac9bebd451f4ad8b0b6e3bbb
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 2%
