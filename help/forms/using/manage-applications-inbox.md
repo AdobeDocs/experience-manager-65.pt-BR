@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ A interface do usuário Caixa de entrada fornece visualizações de calendário 
 
 Em resumo, a Caixa de entrada permite que você crie um novo aplicativo e gerencie tarefas atribuídas.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Você deve ser um membro do grupo de usuários do fluxo de trabalho para poder usar a Caixa de entrada do AEM.
 
@@ -50,9 +53,11 @@ As Tarefas atribuídas a um grupo são exibidas na Caixa de entrada de todos os 
 1. Faça uma das seguintes opções:
 
    * Para delegar a tarefa, toque em **[!UICONTROL Delegar]**. A caixa de diálogo Delegar item é aberta. Selecione um usuário, adicione um comentário e toque em **[!UICONTROL OK]**.
+
    ![delegate](assets/delegate.png)
 
    * Para reivindicar a tarefa, toque em **[!UICONTROL Abrir]**. A caixa de diálogo Atribuir a si mesmo é aberta. Toque em **[!UICONTROL Prosseguir]** para reclamar a tarefa. A tarefa reivindicada é exibida com você como o destinatário em sua Caixa de entrada.
+
    ![reclamação](assets/claim.png)
 
 ### Detalhes da Visualização e executar ações no tarefa {#view-details-and-perform-actions-on-tasks}
