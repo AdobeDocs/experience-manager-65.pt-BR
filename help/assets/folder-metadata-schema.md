@@ -3,7 +3,7 @@ title: Esquema de metadados de pastas
 description: Saiba mais sobre como criar schemas de metadados para pastas de ativos em Ativos da Adobe Experience Manager
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 4%
@@ -108,7 +108,7 @@ Se você configurar um schema de metadados para uma pasta, o caminho para o form
 
 ### Atribuir a um schema da página Schema Metadados da pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Na interface do Experience Manager, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**> Schemas **[!UICONTROL de metadados da]** pasta.
+1. Na interface do Experience Manager, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **[!UICONTROL de metadados da]** pasta.
 1. Na página Formulários de Schema de Metadados de Pastas, selecione o formulário de schema que deseja aplicar a uma pasta.
 1. Na barra de ferramentas, clique em **[!UICONTROL Aplicar às pastas]**.
 
