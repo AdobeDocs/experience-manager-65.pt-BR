@@ -3,7 +3,7 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -34,7 +34,6 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
    * Selecione a guia Propriedades **[!UICONTROL da]** Web e clique em **[!UICONTROL Adicionar propriedade]**.
 
    * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://helpx.adobe.com/experience-manager/using/dtm.html).
-
    ![Criar propriedade da Web de edição](assets/Create-edit-web-property.png)
 
 1. Na guia **[!UICONTROL Regras]** , selecione Regras **[!UICONTROL de carregamento de]** página no painel de navegação e clique em **[!UICONTROL Criar nova regra]**.
@@ -45,15 +44,15 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Clique no logotipo do Experience Manager e vá até **[!UICONTROL Ferramentas > Ativos]**.
+1. Clique no logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]**.
 1. Clique em **[!UICONTROL Insights Page Tracker]**, copie o código do rastreador e cole-o na caixa de diálogo Script aberta na etapa 6. Salve as alterações.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` for removido. Ela deve estar disponível por meio da ferramenta Adobe Analytics do DTM.
-   > * A chamada para `assetAnalytics.dispatcher.init`() é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar de carregar.
-   > * Dependendo de onde o Asset Insights Page Tracker estiver hospedado (por exemplo, Experience Manager, CDN e assim por diante), a origem da fonte do script pode exigir alterações.
-   > * Para o Controlador de página hospedado no Experience Manager, a origem deve apontar para uma instância de publicação usando o nome de host da instância do dispatcher.
+   >* `AppMeasurement.js` for removido. Ela deve estar disponível por meio da ferramenta Adobe Analytics do DTM.
+   >* A chamada para `assetAnalytics.dispatcher.init()` é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar de carregar.
+   >* Dependendo de onde o Asset Insights Page Tracker estiver hospedado (por exemplo, Experience Manager, CDN e assim por diante), a origem da fonte do script pode exigir alterações.
+   >* Para o Controlador de página hospedado no Experience Manager, a origem deve apontar para uma instância de publicação usando o nome de host da instância do dispatcher.
 
 
 1. Acesso `https://dtm.adobe.com`. Clique em **[!UICONTROL Visão geral]** na propriedade da Web e clique em **[!UICONTROL Adicionar ferramenta]** ou abra uma ferramenta Adobe Analytics existente. Ao criar a ferramenta, você pode definir Método **** de configuração como **[!UICONTROL Automático]**.
