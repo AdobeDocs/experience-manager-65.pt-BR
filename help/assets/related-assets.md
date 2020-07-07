@@ -3,7 +3,7 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos digitais que compartilham alguns atributos comuns. Crie também relacionamentos derivados de origem entre ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -17,8 +17,9 @@ ht-degree: 0%
 
 Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou JPG de baixa resolução com fornecedores ou agências e disponibilizar o arquivo INDD de alta resolução somente mediante solicitação.
 
->[!NOTE] Somente os usuários com permissões de edição em ativos podem relacionar e desrelacionar os ativos.
+>[!NOTE]
 >
+>Somente os usuários com permissões de edição em ativos podem relacionar e desrelacionar os ativos.
 
 ## Relate assets {#relating-assets}
 
