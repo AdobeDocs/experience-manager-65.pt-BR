@@ -1,16 +1,19 @@
 ---
 title: Configure o Asset Insights para obter análises de uso de ativos digitais.
-description: Configurar insights de ativos em [!DNL Adobe Experience Manager Assets].
+description: Configure o Asset Insights no [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 7%
 
 ---
 
 
 # Configurar insights de ativos {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] busca dados de uso em ativos digitais usados por sites de terceiros [!DNL Adobe Analytics]. Para permitir que o Asset Insights recupere esses dados e gere insights, configure primeiro o recurso para integrar-se ao Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] busca dados de uso em ativos digitais usados por sites de terceiros [!DNL Adobe Analytics]. Para permitir que o Asset Insights recupere esses dados e gere insights, configure primeiro o recurso para integrar-se à Adobe Analytics.
 
 >[!NOTE]
 >
