@@ -11,20 +11,23 @@ content-type: reference
 discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4d47310ebf9d450de52c925642978ba92ef9c1d4
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
 
 # Personalização do console Sites (Interface clássica){#customizing-the-websites-console-classic-ui}
 
-## Adicionar uma coluna personalizada ao console Sites (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
+## Adicionando uma coluna personalizada ao console Sites (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
 O console Administração de sites pode ser estendido para exibir colunas personalizadas. O console é criado com base em um objeto JSON que pode ser estendido pela criação de um serviço OSGI que implementa a `ListInfoProvider` interface. Esse serviço modifica o objeto JSON enviado para o cliente para criar o console.
 
 Este tutorial passo a passo explica como exibir uma nova coluna no console Administração de sites implementando a `ListInfoProvider` interface. Ele consiste nas seguintes etapas:
 
-1. [Criação do serviço](#creating-the-osgi-service) OSGI e implantação do pacote que o contém no servidor AEM.
+1. [Criar o serviço](#creating-the-osgi-service) OSGI e implantar o pacote que o contém no servidor AEM.
 1. (opcional) [Testando o novo serviço](#testing-the-new-service) emitindo uma chamada JSON para solicitar o objeto JSON usado para criar o console.
 1. [Exibindo a nova coluna](#displaying-the-new-column) estendendo a estrutura de nós do console no repositório.
 
@@ -34,6 +37,7 @@ Este tutorial passo a passo explica como exibir uma nova coluna no console Admin
 >
 >* o console Ativos digitais
 >* o console Comunidade
+
 >
 
 
@@ -48,14 +52,14 @@ A `ListInfoProvider` interface define dois métodos:
 Os argumentos para ambos os métodos são:
 
 * `request`, o objeto de solicitação Sling HTTP associado,
-* `info`, o objeto JSON a ser atualizado, que é, respectivamente, a lista global ou o item da lista atual,
+* `info`, o objeto JSON a ser atualizado, que é respectivamente a lista global ou o item de lista atual,
 * `resource`, um recurso Sling.
 
 A implementação de amostra abaixo:
 
-* Adiciona uma propriedade *estrelada* para cada item, que é `true` se o nome da página começar com um *e*, e `false` assim por diante.
+* Adiciona uma propriedade *estrelada* para cada item, que é `true` se o nome da página for start com um *e*, e `false` assim por diante.
 
-* Adiciona uma propriedade *starredCount* , que é global para a lista e contém o número de itens de lista exibidos.
+* Adiciona uma propriedade *starredCount* , que é global para a lista e contém o número de itens de lista estrelados.
 
 Para criar o serviço OSGI:
 
@@ -107,23 +111,23 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 >[!CAUTION]
 >
->* Sua implementação deve decidir, com base na solicitação e/ou recurso fornecido, se deve ou não adicionar as informações ao objeto JSON.
+>* Sua implementação deve decidir, com base na solicitação e/ou no recurso fornecido, se deve ou não adicionar as informações ao objeto JSON.
 >* Se sua `ListInfoProvider` implementação definir uma propriedade que já existe no objeto response, seu valor será substituído pelo valor fornecido.
-   >  Você pode usar a classificação [de](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) serviço para gerenciar a ordem de execução de várias `ListInfoProvider` implementações.
+
 >
-
-
+>  
+Você pode usar a classificação [de](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) serviço para gerenciar a ordem de execução de várias `ListInfoProvider` implementações.
 
 ### Testando o novo serviço {#testing-the-new-service}
 
-Quando você abre o console Administração de sites e navega pelo site, o navegador emite uma chamada ajax para obter o objeto JSON usado para criar o console. Por exemplo, quando você navega para a `/content/geometrixx` pasta, a seguinte solicitação é enviada ao servidor AEM para criar o console:
+Quando você abre o console Administração de sites e navega pelo site, o navegador emite uma chamada ajax para obter o objeto JSON usado para criar o console. Por exemplo, quando você navega para a `/content/geometrixx` pasta, a seguinte solicitação é enviada para o servidor AEM para criar o console:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Para verificar se o novo serviço está em execução após ter implantado o pacote que o contém:
 
 1. Aponte seu navegador para o seguinte URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. A resposta deve exibir as novas propriedades da seguinte maneira:
 
@@ -161,7 +165,7 @@ A última etapa consiste em adaptar a estrutura de nós do console Administraç�
 
    * **xtype**: `gridcolumn` do tipo String
 
-1. (opcional) Solte as colunas que não deseja exibir em `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (opcional) Solte as colunas nas quais você não deseja exibir `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` é um caminho vaidoso que, como padrão, aponta para `/libs/wcm/core/content/siteadmin`.
 Para redirecionar isso para sua versão do siteadmin, `/apps/wcm/core/content/siteadmin` defina a propriedade `sling:vanityOrder` para ter um valor superior ao definido em `/libs/wcm/core/content/siteadmin`. O valor padrão é 300, portanto qualquer valor maior é adequado.
