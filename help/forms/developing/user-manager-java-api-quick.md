@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
 
@@ -33,15 +36,15 @@ O SOAP (Java API Quick Start) está disponível para a API do Gerenciador de usu
 
 [Start rápido (modo SOAP): Gerenciamento programático dos nós de preferências usando a API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
-> O start rápido localizado em Programação com formulários AEM é baseado no Documento se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>O start rápido localizado em Programação com formulários AEM é baseado no Documento se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Adicionar usuários usando a API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-O exemplo de código a seguir adiciona um usuário chamado Wendy Blue ao AEM Forms. (Consulte [Adicionar usuários](/help/forms/developing/users.md#adding-users).)
+O exemplo de código a seguir adiciona um usuário chamado Wendy Blue aos AEM Forms. (Consulte [Adicionar usuários](/help/forms/developing/users.md#adding-users).)
 
 ```as3
  /*
@@ -159,7 +162,7 @@ O exemplo de código a seguir adiciona um usuário chamado Wendy Blue ao AEM For
 
 ## Start rápido (modo SOAP): Excluir usuários usando a API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-O exemplo de código a seguir exclui um usuário chamado Wendy Blue do AEM Forms. (Consulte [Excluindo Usuários](/help/forms/developing/users.md#deleting-users).)
+O exemplo de código a seguir exclui um usuário chamado Wendy Blue de AEM Forms. (Consulte [Excluindo Usuários](/help/forms/developing/users.md#deleting-users).)
 
 ```as3
  /*
@@ -631,7 +634,7 @@ O exemplo de código Java a seguir sincroniza os usuários usando as APIs de ger
 
 ## Start rápido (modo SOAP): Adicionar usuários usando a API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-O exemplo de código a seguir adiciona um usuário chamado Wendy Blue ao AEM Forms. (Consulte [Adicionar usuários](/help/forms/developing/users.md#adding-users).)
+O exemplo de código a seguir adiciona um usuário chamado Wendy Blue aos AEM Forms. (Consulte [Adicionar usuários](/help/forms/developing/users.md#adding-users).)
 
 ```as3
  /*
