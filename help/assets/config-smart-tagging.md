@@ -3,9 +3,9 @@ title: Configure a marcação de ativos usando o Serviço de conteúdo inteligen
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1116'
 ht-degree: 42%
 
 ---
@@ -93,7 +93,7 @@ Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no
 
 Para configurar a integração, use os valores dos campos ID da conta técnica, ID da organização, segredo do cliente, servidor de autorização e chave da API da integração do Adobe Developer Console. A criação de uma configuração em nuvem de Tags inteligentes permite a autenticação de solicitações de API da [!DNL Experience Manager] implantação.
 
-1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas > Cloud Service > Cloud Service]** herdados para abrir o console [!UICONTROL Cloud Service] .
+1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > Cloud Service **** herdados para abrir o console [!UICONTROL Cloud Service] .
 1. Em Tags **[!UICONTROL inteligentes de]** ativos, abra a configuração criada acima. Na página de configurações do serviço, clique em **[!UICONTROL Editar]**.
 1. Na caixa de diálogo **[!UICONTROL Serviço de conteúdo inteligente do AEM]**, use os valores pré-preenchidos nos campos **[!UICONTROL URL do serviço]** e **[!UICONTROL Servidor de autorização]**.
 1. Nos campos **[!UICONTROL Chave da API]**, **[!UICONTROL ID da conta técnica]**, **[!UICONTROL ID da organização]** e **[!UICONTROL Segredo do cliente]**, use os valores gerados acima.
@@ -103,15 +103,13 @@ Para configurar a integração, use os valores dos campos ID da conta técnica, 
 Depois de concluir a configuração, você pode usar um MBean JMX para validar a configuração. Para validar, siga estas etapas.
 
 1. Acesse seu [!DNL Experience Manager] servidor em `https://[aem_server]:[port]`.
-1. Vá até **[!UICONTROL Ferramentas > Operações > Console]** da Web para abrir o console do OSGi. Clique em **[!UICONTROL Principal > JMX]**.
-1. Clique em **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Ele abre **[!UICONTROL SemelhançaPesquise Tarefas]** diversas.
-1. Clique em **[!UICONTROL validateConfigs()]**. Na caixa de diálogo **[!UICONTROL Validar configurações]** , clique em **[!UICONTROL Chamar]**.
+1. Vá até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web para abrir o console do OSGi. Clique em **[!UICONTROL Principal]>[!UICONTROL JMX]**.
+1. Clique em `com.day.cq.dam.similaritysearch.internal.impl`. Ele abre **[!UICONTROL SemelhançaPesquise Tarefas]** diversas.
+1. Clique em `validateConfigs()`. Na caixa de diálogo **[!UICONTROL Validar configurações]** , clique em **[!UICONTROL Chamar]**. Os resultados da validação são exibidos na mesma caixa de diálogo.
 
-   O resultado da validação é exibido na mesma caixa de diálogo.
+## Habilitar marcação inteligente no fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM (Opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-## Habilitar marcação inteligente no fluxo de trabalho do Ativo de atualização do DAM (Opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
-
-1. No [!DNL Experience Manager], clique em **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. In [!DNL Experience Manager], go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização DAM]**.
 1. Clique em **[!UICONTROL Editar]** na barra de ferramentas.
 1. Expanda o painel lateral para exibir as etapas. Arraste a etapa **[!UICONTROL Ativo de tag inteligente]** disponível na seção Fluxo de trabalho do DAM e coloque-a após a etapa **[!UICONTROL Processar miniaturas]**.
