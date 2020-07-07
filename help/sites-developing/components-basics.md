@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 00c98c4c1178f88844f6bec8a214d096205c58cd
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4719'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +50,7 @@ Antes de começar a configurar ou codificar seu componente, você deve perguntar
 Antes de qualquer start sério de discussão sobre o desenvolvimento de componentes, você precisa saber qual interface seus autores usarão:
 
 * **Interface do usuário habilitada para toque**
-   [A interface](/help/sites-developing/touch-ui-concepts.md) padrão do usuário é baseada na experiência unificada do usuário para a Adobe Marketing Cloud, usando as tecnologias subjacentes da interface do usuário [do](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e da interface do usuário do [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [A interface](/help/sites-developing/touch-ui-concepts.md) de usuário padrão é baseada na experiência de usuário unificada para o Adobe Marketing Cloud, usando as tecnologias subjacentes da interface de usuário [do](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral e da interface de usuário do [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Interface clássica do** usuário com base na tecnologia ExtJS que foi substituída pelo AEM 6.4.
 
 Consulte Recomendações da interface de [usuário para clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
@@ -57,19 +60,20 @@ Os componentes podem ser implementados para suportar a interface habilitada para
 Por isso cobriremos as noções básicas de ambos, e como reconhecê-los, nesta página.
 
 >[!NOTE]
-> A Adobe recomenda aproveitar a interface habilitada para toque para se beneficiar da tecnologia mais recente. [Ferramentas e ferramentas de moderação do AEM (moderniatzion-tools.md) podem facilitar a migração.
+>
+>A Adobe recomenda aproveitar a interface habilitada para toque para se beneficiar da tecnologia mais recente. [Ferramentas e ferramentas de moderação do AEM (moderniatzion-tools.md) podem facilitar a migração.
 
-### Lógica de conteúdo e marcação de renderização {#content-logic-and-rendering-markup}
+### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
 É recomendável manter o código responsável pela marcação e renderização separado do código que controla a lógica usada para selecionar o conteúdo do componente.
 
-Essa filosofia é apoiada pelo [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), uma linguagem de modelo que é propositadamente limitada para garantir que uma linguagem de programação real seja usada para definir a lógica comercial subjacente. Essa lógica (opcional) é chamada de HTL com um comando específico. Esse mecanismo realça o código chamado para uma determinada visualização e, se necessário, permite uma lógica específica para visualizações diferentes do mesmo componente.
+Essa filosofia é apoiada pelo [HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html), uma linguagem de modelo que é propositadamente limitada para garantir que uma linguagem de programação real seja usada para definir a lógica comercial subjacente. Essa lógica (opcional) é chamada de HTL com um comando específico. Esse mecanismo realça o código chamado para uma determinada visualização e, se necessário, permite uma lógica específica para visualizações diferentes do mesmo componente.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTL é uma linguagem de modelo HTML introduzida com o AEM 6.0.
 
-A discussão sobre usar [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) ou JSP (Java Server Pages) ao desenvolver seus próprios componentes deve ser simples, já que o HTL agora é a linguagem de script recomendada para o AEM.
+A discussão sobre usar [HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html) ou JSP (Java Server Pages) ao desenvolver seus próprios componentes deve ser simples, já que o HTL agora é a linguagem de script recomendada para o AEM.
 
 HTL e JSP podem ser usados para desenvolver componentes para a interface clássica e habilitada para toque. Embora possa haver uma tendência de supor que o HTL seja apenas para a interface habilitada para toque e o JSP para a interface clássica, isso é um equívoco e mais devido à temporização. A interface do usuário habilitada para toque e o HTL foram incorporados ao AEM durante aproximadamente o mesmo período. Como o HTL agora é o idioma recomendado, ele está sendo usado para novos componentes, que tendem a ser para a interface habilitada para toque.
 
@@ -164,6 +168,7 @@ A definição de um componente pode ser dividida da seguinte forma:
       Eles definem elementos estáticos usados pelo componente.
 
    * Scripts:
+
    São usados para implementar o comportamento da instância resultante do componente.
 
 * **Nó raiz**:
@@ -426,6 +431,7 @@ As definições de caixa de diálogo são específicas para a interface do usuá
 >
 >* Para fins de compatibilidade, a interface do usuário habilitada para toque pode usar a definição de uma caixa de diálogo clássica, quando nenhuma caixa de diálogo tiver sido definida para a interface habilitada para toque.
 >* A Ferramenta [de conversão de](/help/sites-developing/dialog-conversion.md) caixa de diálogo também é fornecida para ajudar a estender/converter componentes que tenham apenas diálogos definidos para a interface clássica.
+
 >
 
 
@@ -439,6 +445,7 @@ As definições de caixa de diálogo são específicas para a interface do usuá
       * pode ter uma propriedade `helpPath` para definir o recurso de ajuda sensível ao contexto (caminho absoluto ou relativo) que é acessado quando o ícone Ajuda (o ? ícone) está selecionado.
          * Para componentes prontos para uso, isso geralmente faz referência a uma página na documentação.
          * Se nenhum `helpPath` for especificado, o URL padrão (página de visão geral da documentação) será exibido.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
    Na caixa de diálogo, os campos individuais são definidos:
@@ -454,6 +461,7 @@ As definições de caixa de diálogo são específicas para a interface do usuá
       * pode ter uma propriedade `helpPath` para definir o recurso de ajuda sensível ao contexto (caminho absoluto ou relativo) que é acessado quando o botão **Ajuda** é selecionado.
          * Para componentes prontos para uso, isso geralmente faz referência a uma página na documentação.
          * Se nenhum `helpPath` for especificado, o URL padrão (página de visão geral da documentação) será exibido.
+
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
    Na caixa de diálogo, os campos individuais são definidos:
@@ -550,7 +558,7 @@ A configuração é comum à interface habilitada para toque e clássica, embora
 
 O comportamento de edição de um componente é configurado adicionando um `cq:editConfig` nó do tipo `cq:EditConfig` abaixo do nó do componente (do tipo `cq:Component`) e adicionando propriedades e nós filhos específicos. As seguintes propriedades e nós secundários estão disponíveis:
 
-* [ Propriedades `cq:editConfig`](#configuring-with-cq-editconfig-properties)do nó:
+* [ `cq:editConfig` propriedades](#configuring-with-cq-editconfig-properties)do nó:
 
    * `cq:actions` ( `String array`): define as ações que podem ser executadas no componente.
    * `cq:layout` ( `String`): : define como o componente é editado na interface clássica.
@@ -988,10 +996,10 @@ O `cq:listeners` nó (tipo de nó `cq:EditListenersConfig`) define o que acontec
 >[!NOTE]
 >
 >No caso de componentes aninhados, há certas restrições em ações definidas como propriedades no `cq:listeners` nó:
-
+>
 >* Para componentes aninhados, os valores das seguintes propriedades *devem* ser `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>  * `aftermove`
+>  * `aftercopy`
 
 
 O manipulador de eventos pode ser implementado com uma implementação personalizada. Por exemplo (onde `project.customerAction` é um método estático):
@@ -1003,7 +1011,8 @@ O exemplo a seguir equivale à `REFRESH_INSERTED` configuração:
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-Para a interface clássica, para ver quais parâmetros podem ser usados nos manipuladores, consulte a seção `before<action>` e `after<action>` eventos da documentação do [ widget `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e do [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget.
+>
+>Para a interface clássica, para ver quais parâmetros podem ser usados nos manipuladores, consulte a seção `before<action>` e `after<action>` eventos da documentação do [ widget `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e do [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget.
 
 Com a seguinte configuração, a página é atualizada depois que o componente é excluído, editado, inserido ou movido:
 
