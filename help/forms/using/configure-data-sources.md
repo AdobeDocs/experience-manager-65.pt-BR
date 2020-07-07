@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9df949b0069dad7fc1627977097cec5546cd845f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1554'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Você pode configurar bancos de dados relacionais usando a Configuração do con
    * URI de conexão JDBC
    * Nome de usuário e senha para estabelecer conexão com o driver JDBC
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Certifique-se de criptografar informações confidenciais, como senhas, antes de configurar a fonte de dados. Para criptografar:
    >
@@ -82,7 +82,7 @@ Você pode configurar o perfil do usuário do AEM usando a configuração do Con
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >O ***** no exemplo acima indica todos os nós sob o `profile/empLocation/` nó no perfil de usuário do AEM na estrutura CRXDE. Isso significa que o modelo de dados de formulário pode acessar a `city` propriedade do tipo `string` presente em qualquer nó sob o `profile/empLocation/` nó. No entanto, os nós que contêm a propriedade especificada devem seguir uma estrutura consistente.
 
