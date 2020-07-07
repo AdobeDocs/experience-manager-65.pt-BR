@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '1729'
+ht-degree: 3%
 
 ---
 
@@ -26,10 +29,9 @@ Para começar a criar um novo site da comunidade:
 
 Uso da instância do [autor](https://localhost:4502/)
 
-* Fazer logon com privilégios de administrador
-* Navegue até **[!UICONTROL Comunidades > Sites]**
+* Faça logon com privilégios de administrador e navegue até **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
-* Selecione **Criar**
+* Selecione **Criar**.
 
 ### Etapa 1: Modelo de site {#step-site-template}
 
@@ -37,7 +39,7 @@ Uso da instância do [autor](https://localhost:4502/)
 
 Na etapa Modelo **de** site, insira um título, descrição, o nome do URL e selecione um modelo de site da comunidade, por exemplo:
 
-* **Título do site da comunidade**: `Enablement Tutorial`
+* **Título do site da comunidade**: `Enablement Tutorial`.
 
 * **Descrição do site da comunidade**: `A site for enabling the community to learn.`
 
@@ -54,7 +56,7 @@ Na etapa Modelo **de** site, insira um título, descrição, o nome do URL e sel
 
 * **Modelo** de site de referência: menu suspenso para escolher `Reference Structured Learning Site Template`
 
-Selecione **Próximo**
+Selecione **Próximo**.
 
 ### Etapa 2: Design {#step-design}
 
@@ -66,9 +68,11 @@ Selecione o estilo desejado a ser aplicado ao modelo. Quando selecionado, o tema
 
 #### COMMUNITY SITE BRANDING {#community-site-branding}
 
-(opcional) Faça upload de uma imagem de banner para ser exibida nas páginas do site. O banner é fixado na borda esquerda do navegador, entre o cabeçalho e o menu do site da comunidade (links de navegação). A altura do banner é cortada em 120 pixels. Não há redimensionamento do banner para ajustar à largura do navegador e à altura de 120 pixels.
+(Opcional) Faça upload de uma imagem de banner para ser exibida nas páginas do site. O banner é fixado na borda esquerda do navegador, entre o cabeçalho e o menu do site da comunidade (links de navegação). A altura do banner é cortada em 120 pixels. Não há redimensionamento do banner para ajustar à largura do navegador e à altura de 120 pixels.
 
-![chlimage_1-2](assets/chlimage_1-2.png) ![chlimage_1](assets/chlimage_1.jpeg)
+![chlimage_1-449](assets/chlimage_1-449.png)
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 Selecione **Próximo**.
 
@@ -84,13 +88,13 @@ Um site da comunidade é privado quando visitantes anônimos do site têm acesso
 
 Verifique se a maioria das caixas de seleção está desmarcada para Gerenciamento [](/help/communities/sites-console.md#user-management) do usuário:
 
-* NÃO permitir que os visitantes do site se registrem automaticamente
-* NÃO permitir que visitantes anônimos do site visualizações
-* Opcional se permite ou não mensagens entre membros da comunidade
-* NÃO permitir logon com o Facebook
-* NÃO permitir logon com o Twitter
+* NÃO permita que os visitantes do site se registrem automaticamente.
+* NÃO permita que visitantes anônimos do site visualizações do site.
+* Opcional se permite ou não mensagens entre membros da comunidade.
+* NÃO permita logon com o Facebook.
+* NÃO permita o logon com o Twitter.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![user-mgmt](assets/user-mgmt.png)
 
 #### TAGGING {#tagging}
 
@@ -103,7 +107,7 @@ Encontrar namespaces é fácil usando a pesquisa antecipada por tipo. Por exempl
 * Tipo `tut`
 * Selecionar `Tutorial`
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![marcação de ativação](assets/enablement-tagging.png)
 
 ### ROLES {#roles}
 
@@ -120,13 +124,14 @@ Por exemplo,
 >
 >[O serviço](/help/communities/deploy-communities.md#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes apenas no ambiente publish.
 
+
 ![funções de ativação](assets/site-admin.png)
 
 #### MODERATION {#moderation}
 
 Aceite as configurações globais padrão para [moderar](/help/communities/sites-console.md#moderation) o conteúdo gerado pelo usuário (UGC).
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![chlimage_1-452](assets/chlimage_1-452.png)
 
 #### ANALYTICS {#analytics}
 
@@ -134,7 +139,7 @@ Na lista suspensa, selecione a estrutura de serviço em nuvem do Analytics confi
 
 A seleção vista na captura de tela `Communities`é o exemplo de estrutura da documentação de [configuração.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![chlimage_1-454](assets/chlimage_1-454.png)
 
 #### TRANSLATION {#translation}
 
@@ -143,20 +148,21 @@ As configurações [de](/help/communities/sites-console.md#translation) Traduç�
 * Verifique **Permitir tradução automática**
 * Usar as configurações padrão
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![chlimage_1-456](assets/chlimage_1-456.png)
 
 #### ENABLEMENT {#enablement}
 
 Para uma comunidade de ativação, é necessário identificar um ou mais Gerentes de habilitação da comunidade.
 
-* **Gerentes** de ativação (obrigatório) Os membros do `Community Enablement Managers` grupo estão disponíveis para serem selecionados para gerenciar este site da comunidade.
+* **Gerentes** de ativação (obrigatório) Membros do 
+`Community Enablement Managers` estão disponíveis para serem selecionados para gerenciar este site da comunidade.
 
    * Tipo `s`
    * Selecionar `Sirius Nilson`
 
-* **ID** de organização da Marketing Cloud (opcional) A ID de uma conta do Adobe Analytics, necessária ao incluir o [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) no relatórios de ativação.
+* **ID** de organização da Marketing Cloud (opcional) A ID de uma conta da Adobe Analytics que é necessária ao incluir o Analytics [do](/help/communities/analytics.md#video-heartbeat-analytics) Video Heartbeat no relatórios de ativação.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-457](assets/chlimage_1-457.png)
 
 Selecione **Próximo**.
 
@@ -164,7 +170,7 @@ Selecione **Próximo**.
 
 Selecione **Criar.**
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![chlimage_1-458](assets/chlimage_1-458.png)
 
 Quando o processo for concluído, a pasta do novo site será exibida no console Comunidades > Sites.
 
@@ -174,7 +180,7 @@ Quando o processo for concluído, a pasta do novo site será exibida no console 
 
 O site criado deve ser gerenciado a partir do console Comunidades - Sites, o mesmo console de onde os novos sites podem ser criados.
 
-Depois de selecionar a pasta do site da comunidade, passe o mouse sobre o ícone do site para que quatro ícones de ação apareçam:
+Depois de selecionar a pasta do site da comunidade, passe o mouse sobre o ícone do site para que quatro ícones de ação sejam exibidos:
 
 ![siteactionicons](assets/siteactionicons.png)
 
@@ -186,15 +192,15 @@ Da esquerda para a direita estão:
 
 * **Abrir site**
 
-   Selecione o ícone de lápis para abrir o site da comunidade no modo de edição do autor, para adicionar e/ou configurar componentes da página
+   Selecione o ícone de lápis para abrir o site da comunidade no modo de edição do autor, para adicionar e/ou configurar componentes da página.
 
 * **Editar site**
 
-   Selecione o ícone de propriedades para abrir o site da comunidade para modificação de propriedades, como o título ou para alterar o tema
+   Selecione o ícone de propriedades para abrir o site da comunidade para modificação de propriedades, como o título ou para alterar o tema.
 
 * **Publicar site**
 
-   Selecione o ícone do mundo para publicar o site da comunidade (para localhost:4503 por padrão)
+   Selecione o ícone do mundo para publicar o site da comunidade (para localhost:4503 por padrão).
 
 * **Exportar site**
 
@@ -205,17 +211,17 @@ Observe que o UGC não está incluído no pacote do site.
 
    Para excluir o site da comunidade, selecione o ícone Excluir site que aparece ao passar o mouse sobre o site no console do site Comunidades. Esta ação remove todos os itens associados ao site, como UGC, grupos de usuários, ativos e registros de banco de dados.
 
-![ativesiteactions](assets/enablesiteactions.png)
+   ![ativesiteactions](assets/enablesiteactions.png)
 
 #### Selecione Publicar {#select-publish}
 
 Selecione o ícone do mundo para publicar o site da comunidade.
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![chlimage_1-465](assets/chlimage_1-465.png)
 
 Haverá uma indicação de que o site foi publicado.
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-466](assets/chlimage_1-466.png)
 
 ## Usuários da comunidade e grupos de usuários {#community-users-user-groups}
 
@@ -223,9 +229,9 @@ Haverá uma indicação de que o site foi publicado.
 
 Juntamente com o novo site da comunidade, novos grupos de usuários são criados, que têm as permissões apropriadas definidas para várias funções administrativas. Para obter detalhes, visite Grupos de [usuários para sites](/help/communities/users.md#usergroupsforcommunitysites)da comunidade.
 
-Para este novo site da comunidade, dado o nome do site &quot;enable&quot; na Etapa 1, os novos grupos de usuários que existem no ambiente de publicação podem ser vistos no console [Membros e grupos da](/help/communities/members.md#groups-console) comunidade:
+Para este novo site da comunidade, dado o nome do site &quot;enable&quot; na Etapa 1, os novos grupos de usuários existentes no ambiente de publicação podem ser vistos no console [Membros e grupos da](/help/communities/members.md#groups-console)comunidade:
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![community_usergroup](assets/community_usergroup.png)
 
 ### Atribuir membros ao grupo Habilitar membros da comunidade {#assign-members-to-community-enable-members-group}
 
@@ -244,19 +250,19 @@ Neste exemplo, o grupo `Community Ski Class` é adicionado como membro do grupo 
 
 * Selecione **Salvar**
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![chlimage_1-418](assets/chlimage_1-418.png)
 
 ## Configurações na publicação {#configurations-on-publish}
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![chlimage_1-433](assets/chlimage_1-433.png)
 
 ### Erro ao configurar para autenticação {#configure-for-authentication-error}
 
 Depois que um site é configurado e enviado para publicação, [configure o mapeamento](/help/communities/sites-console.md#configure-for-authentication-error) de logon ( `Adobe Granite Login Selector Authentication Handler`) na instância de publicação. O benefício é que, quando as credenciais de logon não forem inseridas corretamente, o erro de autenticação exibirá novamente a página de logon do site da comunidade com uma mensagem de erro.
 
-Adicionar um `Login Page Mapping` como
+Adicione um `Login Page Mapping` como:
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
@@ -266,7 +272,7 @@ Ao trabalhar com o site de publicação para fins de demonstração, pode ser ú
 
 Para fazer isso, é necessário usar o [CRX|DE](https://localhost:4503/crx/de) Lite para editar a tabela de mapeamento [de](/help/sites-deploying/resource-mapping.md) recursos na publicação.
 
-Para começar
+Para começar:
 
 1. Ao publicar, acesse o CRXDE e faça logon com privilégios de administrador
 
@@ -290,6 +296,7 @@ Para começar
       * **Seleção de nome** :correspondência
       * **String de tipo**
       * **Valor** localhost.4503/$
+
    (deve terminar com o caractere &#39;$&#39;)
 
    * Adicionar propriedade
@@ -309,17 +316,18 @@ Para começar
 >
 >Para desativar, basta anexar o valor da `sling:match` propriedade com um &quot;x&quot; - `xlocalhost.4503/$` - e **Salvar tudo**.
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+
+![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Solução de problemas: Erro ao salvar mapa {#troubleshooting-error-saving-map}
 
 Se não for possível salvar as alterações, verifique se o nome do nó é `localhost.4503`, com um separador &quot;ponto&quot; e não `localhost:4503` com um separador &quot;dois pontos&quot;, pois não `localhost` é um prefixo de namespace válido.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![chlimage_1-365](assets/chlimage_1-365.png)
 
 #### Solução de problemas: Falha ao redirecionar {#troubleshooting-fail-to-redirect}
 
-O valor &#39;**$**&#39; no final da `sling:match`string de expressão regular é crucial, de modo que apenas `https://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento será anexado a qualquer caminho que possa existir após server:port no URL. Assim, quando o AEM tenta redirecionar para a página de logon, ele falha.
+O valor &#39;**$**&#39; no final da string de expressão regular é crucial, de modo que apenas `sling:match` `https://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento será anexado a qualquer caminho que possa existir após server:port no URL. Assim, quando o AEM tenta redirecionar para a página de logon, ele falha.
 
 ## Modificando o site da comunidade {#modifying-the-community-site}
 
@@ -332,6 +340,7 @@ Após qualquer modificação, lembre-se de **Salvar** e **publicar** o site nova
 >[!NOTE]
 >
 >Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
+
 
 ### Adicionar um catálogo {#add-a-catalog}
 
@@ -350,13 +359,14 @@ Selecione o painel ESTRUTURA para adicionar um catálogo ou modificar um catálo
 * **URL**: `catalog`
 
 * **Selecione Todas as Namespaces**: deixe como padrão.
-* select **Save**
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+* Selecione **Salvar**.
+
+![chlimage_1-299](assets/chlimage_1-299.png)
 
 Use o ícone Posição para mover a função Catálogo para a segunda posição, após Atribuições.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-300](assets/chlimage_1-300.png)
 
 Selecione **Salvar** no canto superior direito para salvar as alterações no site da comunidade.
 
