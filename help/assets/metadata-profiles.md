@@ -3,7 +3,7 @@ title: perfis de metadados para personalizar os requisitos de metadados dos ativ
 description: Saiba mais sobre perfis de metadados para ativos. Saiba como criar um perfil de metadados e aplicá-lo aos ativos da pasta.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 20%
@@ -17,7 +17,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
 ## Adicionar um perfil de metadados {#adding-a-metadata-profile}
 
-1. Navegue até **[!UICONTROL Ferramentas > Ativos > Perfis]** de metadados e clique em **[!UICONTROL Criar]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Perfis **** de metadados e clique em **[!UICONTROL Criar]**.
 1. Digite um título para o Perfil Metadados, por exemplo Metadados de amostra, e clique em **[!UICONTROL Criar]**. O formulário [!UICONTROL Editar formulário] para o perfil de metadados é exibido.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
@@ -31,11 +31,13 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
    * **[!UICONTROL Rótulo]** do campo: O nome de exibição da propriedade de metadados. É apenas para a referência do usuário.
 
    * **[!UICONTROL Mapear para propriedade]**: O valor dessa propriedade fornece o caminho/nome relativo para o nó do ativo no qual ele é salvo no repositório. O valor deve sempre ser start `./` porque indica que o caminho está sob o nó do ativo.
+
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
    The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por exemplo, se você especificar . `/jcr:content/metadata/dc:desc` como o nome do **[!UICONTROL Mapa para a propriedade]**, o Assets armazena o valor `dc:desc` no nó de metadados do ativo.
 
    * **[!UICONTROL Valor]** padrão: Use essa propriedade para adicionar um valor padrão para o componente de metadados. Por exemplo, se você especificar &quot;Minha descrição&quot;, esse valor será atribuído à propriedade `dc:desc` no nó de metadados do ativo.
+
    ![chlimage_1-200](assets/chlimage_1-483.png)
 
    >[!NOTE]
@@ -65,7 +67,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
    ![chlimage_1-203](assets/chlimage_1-486.png)
 
-1. Clique em **[!UICONTROL Copiar]** na barra de ferramentas.
+1. Click **[!UICONTROL Copy]** from the toolbar.
 1. Na caixa de diálogo **[!UICONTROL Copiar Perfil]** de Metadados, digite um título para a nova cópia do Perfil de Metadados.
 1. Clique em **[!UICONTROL Copiar]**. A cópia do Perfil de metadados aparece na lista de perfis na página **[!UICONTROL Perfis de metadados]**.
 
@@ -106,7 +108,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 Siga as etapas para aplicar o perfil de metadados:
 
-1. Clique no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis]** de metadados.
+1. Clique no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Perfis **[!UICONTROL de]** metadados.
 1. Selecione o perfil de metadados que deseja aplicar a uma pasta ou várias pastas.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -126,7 +128,7 @@ Siga as etapas para aplicar o perfil de metadados:
 
 ### Aplicar um perfil de metadados globalmente {#applying-a-metadata-profile-globally}
 
-Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado nos ativos do Experience Manager em qualquer pasta tenha o perfil selecionado aplicado.
+Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado em ativos do Experience Manager em qualquer pasta tenha o perfil selecionado aplicado.
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de metadados existente que você tenha alterado posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
 
@@ -148,7 +150,7 @@ Remova um perfil de metadados a uma pasta do menu **[!UICONTROL Ferramentas]** o
 
 ### Remover perfis de metadados de pastas por meio da interface do usuário de Perfis {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Clique no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas > Ativos > Perfis]** de metadados.
+1. Clique no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Perfis **[!UICONTROL de]** metadados.
 1. Selecione o perfil de metadados que deseja remover de uma pasta ou de várias pastas.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -156,11 +158,11 @@ Remova um perfil de metadados a uma pasta do menu **[!UICONTROL Ferramentas]** o
 
 ### Remover perfis de metadados de pastas por Propriedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Clique no logotipo do Experience Manager, navegue pelos **[!UICONTROL Ativos]** e, em seguida, até a pasta da qual deseja remover um perfil de metadados.
+1. Clique no logotipo do Experience Manager, navegue **[!UICONTROL pelos Ativos]** e, em seguida, até a pasta da qual deseja remover um perfil de metadados.
 1. Na pasta, clique na marca de seleção para selecioná-la e clique em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-## Limitações e práticas recomendadas {#limitations-best-practices-tips}
+## Limitations and best practices {#limitations-best-practices-tips}
 
 * Você pode ter perfis de metadados pré-existentes desde antes de atualizar para a versão [!DNL Experience Manager] 6.5. Após a atualização, se esse perfil for aplicado nas [!UICONTROL Propriedades] da pasta na guia Perfis [!UICONTROL de] metadados, os campos do formulário de metadados não serão exibidos. No entanto, se um perfil de metadados recém-criado for aplicado, os campos do formulário serão exibidos, mas não estarão disponíveis conforme esperado. Não há perda de funcionalidade, mas se você quiser ver os campos de formulário (indisponíveis), edite e salve os perfis de metadados existentes.
 
