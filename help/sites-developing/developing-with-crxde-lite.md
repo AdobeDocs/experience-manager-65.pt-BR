@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 78133b41e1c99f8f86f4c0d51961287735423fe2
+source-git-commit: cb141914428f42a9755b5479ab1652c8ca51f640
+workflow-type: tm+mt
+source-wordcount: '2155'
+ht-degree: 5%
 
 ---
 
@@ -22,14 +25,14 @@ Esta seção descreve como desenvolver seu aplicativo AEM usando o CRXDE Lite.
 
 Consulte a documentação de visão geral para obter mais informações sobre os diferentes ambientes de desenvolvimento disponíveis.
 
-O CRXDE Lite está incorporado ao AEM e permite que você execute tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, você pode criar um projeto, criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes enquanto faz logon e integração com o SVN.
+O CRXDE Lite está incorporado ao AEM e permite que você execute tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, é possível criar um projeto, criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes durante o registro.
 O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor AEM, quando desenvolve um aplicativo, estendendo ou modificando os componentes predefinidos e os pacotes Java ou quando não precisa de um depurador dedicado, finalização de código e realce de sintaxe.
 
 >[!NOTE]
 >
->Por padrão, todos os usuários do AEM podem acessar o CRXDE Lite. Se desejar, [configure ACLs](/help/sites-administering/security.md#permissions-and-acls) para o seguinte nó, de modo que somente os desenvolvedores possam acessar o CRX DE Lite:
->
->`/libs/granite/crxde`
+>A partir do AEM 6.5.5.0, o acesso anônimo do CRXDE Lite não é mais possível.
+>Os usuários são redirecionados para a tela de logon.
+
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ Para começar a usar o CRXDE Lite, proceda da seguinte forma:
 
 A interface do usuário CRXDE Lite é exibida da seguinte forma em seu navegador:
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-18](assets/crx-interface.jpg)
 
 Agora você pode usar o CRXDE Lite para desenvolver seu aplicativo.
 
@@ -71,7 +74,7 @@ O CRXDE Lite oferta a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Painel Editar</td>
-   <td><p><strong>Guia Início</strong> : permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de conhecimento) e suporte (página inicial e centro de suporte da Adobe).<br /> </p> <p>Duplo clique em um arquivo no painel <strong>do Explorer</strong> para exibir seu conteúdo; como, por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-la e salvar as alterações.</p> <p>Depois que um arquivo é editado no painel <strong>Editar</strong> , as seguintes ferramentas ficam disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: mostra </strong>o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir ...</strong>: faça pesquisa ou substitua.<br /> O clique com o <br /> Duplo na linha de status do painel <strong>Editar</strong> abre a caixa de diálogo <strong>Ir para linha</strong> para que você possa digitar um número de linha específico para acessar.<br /> </td>
+   <td><p><strong>Guia Início</strong> : permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de conhecimento) e suporte (página inicial e centro de suporte da Adobe).<br /> </p> <p>Duplo clique em um arquivo no painel <strong>do Explorer</strong> para exibir seu conteúdo; como, por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-la e salvar as alterações.</p> <p>Depois que um arquivo é editado no painel <strong>Editar</strong> , as seguintes ferramentas ficam disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir ...</strong>: faça pesquisa ou substitua.<br /> <br /> Clique com o Duplo na linha de status do painel <strong>Editar</strong> para abrir a caixa de diálogo <strong>Ir para linha</strong> para que você possa digitar um número de linha específico para acessar.<br /> </td>
   </tr>
   <tr>
    <td>Guia Propriedades<br /> </td>
@@ -130,10 +133,6 @@ O CRXDE Lite oferta a seguinte funcionalidade:
    <td>Permite adicionar tipos de mixagem ao tipo de nó. Os tipos de mixin são usados para adicionar recursos avançados, como controle de versão, controle de acesso, referência e bloqueio ao nó.</td>
   </tr>
   <tr>
-   <td>Equipe<br /> </td>
-   <td><p>Menu suspenso para executar tarefas de controle de versão padrão:</p> <p>- <strong>Atualizar</strong> repositório do servidor SVN</p> <p>- <strong>Confirmar</strong> alterações locais no servidor SVN</p> <p>- <strong>Status</strong> da Visualização do nó atual</p> <p>- Status <strong>Recursivo</strong> da Visualização da subárvore do nó atual</p> <p>- <strong>Fazer check-out</strong> de uma cópia funcionando do servidor SVN</p> <p>- <strong>Exportar</strong> um projeto do servidor SVN (sem criar uma cópia funcional)</p> <p>- <strong>Importar</strong> um projeto do repositório para o servidor SVN<br /> </p> <p>Observe que você precisa estar conectado como usuário com permissões suficientes para poder executar algumas das tarefas (especialmente aquelas que gravam no repositório local).<br /> </p> </td>
-  </tr>
-  <tr>
    <td>Ferramentas<br /> </td>
    <td><p>Menu suspenso com as seguintes ferramentas:</p> <p>- Configuração <strong>do servidor ...</strong>: para acessar o Console do Felix.</p> <p>- <strong>Query ...</strong>: para query do repositório.</p> <p>- <strong>Privilégios ...</strong>: para abrir o gerenciamento de privilégios, onde você pode visualização e adicionar privilégios.</p> <p>- Controle de acesso de <strong>ensaio ...</strong>: um local onde você pode testar a permissão para determinado caminho e/ou principal.</p> <p>- Tipo <strong>de nó de</strong>exportação: para exportar os tipos de nó no sistema como notação cnd.</p> <p>- Tipo de nó de <strong>importação ...</strong>: para importar tipos de nó usando a notação cnd.</p> <p>- <strong>Instalar o SiteCatalyst Debugger ...</strong>: instruções sobre como instalar o Analytics Debugger.</p> </td>
   </tr>
@@ -143,48 +142,6 @@ O CRXDE Lite oferta a seguinte funcionalidade:
   </tr>
  </tbody>
 </table>
-
-## Criação de um projeto   {#creating-a-project}
-
-Com o CRXDE Lite, você pode criar um projeto em funcionamento com três cliques. O assistente de projeto cria um novo projeto em `/apps`, algum conteúdo sob `/conten`ele e um pacote que envolve todo o projeto no qual o conteúdo está `/etc/packages`. O projeto pode ser usado imediatamente para renderizar uma página de amostra exibindo **Hello World**, com base em um script jsp que renderiza uma propriedade do repositório e chama uma classe Java para renderizar algum texto.
-
-Para criar um projeto com o CRXDE Lite:
-
-1. Abra o CRXDE Lite no seu navegador da 
-1. No painel de Navegação, clique com o botão direito do mouse em um nó, selecione **Criar ...**, em seguida, **Criar projeto ...**.
-Observação: você pode clicar com o botão direito do mouse em qualquer nó na navegação em árvore, como os novos nós do projeto são, por padrão, criados abaixo `/apps,` e `/content` `/etc/packages`.
-
-1. Definir:
-
-   * **Nome** do projeto - o nome do projeto é usado para criar os novos nós e o pacote, por exemplo, `myproject`.
-
-   * **Pacote** Java - o prefixo do nome do pacote Java, por exemplo, `com.mycompany`.
-
-1. Clique em **Criar**.
-1. Clique em **Salvar tudo** para salvar as alterações no servidor.
-
-Para acessar a página de amostra exibindo **Hello World**, aponte o navegador para:
-
-`https://localhost:4502/content/<project-name>.html`
-
-A página **Hello World** é baseada em um nó de conteúdo, que chama um script jsp pela `sling:resourceType` propriedade. O script lê a `jcr:title` propriedade do repositório e obtém o conteúdo do corpo chamando um método da classe SampleUtil, que está disponível no conjunto de projetos.
-
-Os seguintes nós são criados:
-
-* `/apps/<project-name>`: o container do aplicativo.
-* `/apps/<project-name>/components`: o container components, que contém o arquivo html.jsp de amostra, usado para renderizar uma página.
-
-* `/apps/<project-name>/src`: o container bundles, que contém um pacote de projeto de amostra.
-
-* `/apps/<project-name>/install`: o container de pacotes compilados, que contém o conjunto de projetos de amostra compilado.
-* `/content/<project-name>`: o container de conteúdo.
-* /etc/packages/&lt;java-suffix>/&lt;project-name>.zip, um pacote que envolve todo o aplicativo e o conteúdo do projeto. Você pode usá-lo para recriar o projeto para implantação adicional (por exemplo, para outros ambientes) ou para compartilhamento por meio do Compartilhamento de pacotes.
-
-A estrutura tem a seguinte aparência no CRXDE Lite com um projeto chamado **myproject** e um sufixo de pacote java chamado **mycompany**:
-
-![chlimage_1-19](assets/chlimage_1-19.png)
-
-![chlimage_1-20](assets/chlimage_1-20.png)
 
 ## Creating a Folder {#creating-a-folder}
 
@@ -271,7 +228,7 @@ Você também pode usar o Editor de diálogo para editar uma caixa de diálogo. 
 Para criar um nó com CRXDE Lite:
 
 1. Abra o CRXDE Lite no seu navegador da 
-1. No painel de Navegação, clique com o botão direito do mouse no nó em que deseja criar o novo nó, selecione **Criar ...** e, em seguida, **Criar nó ...**.
+1. No painel Navegação, clique com o botão direito do mouse no nó onde deseja criar o novo nó, selecione **Criar ...** e, em seguida, **Criar nó ...**.
 1. Insira o **Nome** e o **Tipo**. Clique em **OK**.
 1. Clique em **Salvar tudo** para salvar as alterações no servidor.
 
@@ -305,176 +262,6 @@ Para criar um novo script:
 1. O novo arquivo é aberto como uma guia no painel Editar.
 1. Edite o arquivo.
 1. Click **Save All** to save the changes.
-
-## Gerenciar um pacote {#managing-a-bundle}
-
-Com o CRXDE Lite, é fácil criar um pacote OSGI, adicionar classes Java e criá-lo. O pacote é então instalado automaticamente e iniciado no container OSGI.
-
-Esta seção descreve como criar um `Test` pacote com uma classe `HelloWorld` Java que exibe **Hello World!** no seu navegador quando o recurso for solicitado.
-
-### Criação de um pacote {#creating-a-bundle}
-
-Para criar o conjunto de testes com o CRXDE Lite:
-
-1. No CRXDE Lite, crie um `myapp` projeto com o assistente [de](#creating-a-project)projeto. Entre outros, os seguintes nós são criados:
-
-   * `/apps/myapp/src`
-   * `/apps/myapp/install`
-
-1. Clique com o botão direito do mouse na pasta `/apps/myapp/src` que conterá o `Test` pacote, selecione **Criar ...** e, em seguida, **Criar pacote ...**.
-
-1. Defina as propriedades do pacote da seguinte maneira:
-
-   * Nome do pacote simbólico: `com.mycompany.test.TestBundle`
-
-   * Nome do pacote: `Test Bundle`
-   * Descrição do pacote:
-
-      ```
-      This is my Test Bundle
-      ```
-
-   * Pacote:
-
-      ```
-      com.mycompany.test
-      ```
-   Clique em **OK**.
-
-1. Clique em **Salvar tudo** para salvar as alterações no servidor.
-
-O assistente cria os seguintes elementos:
-
-* O nó `com.mycompany.test.TestBundle` do tipo `nt:folder.` É o nó do container de conjunto.
-
-* O arquivo `com.mycompany.test.TestBundle.bnd`. Ele atua como descritor de deployment para seu pacote e consiste em um conjunto de cabeçalhos.
-
-* As estruturas de pastas:
-
-   * `src/main/java/com/mycompany/test`. Ele conterá os pacotes e as classes Java.
-
-   * `src/main/resources`. Ele conterá os recursos usados dentro do pacote.
-
-* O `Activator.java` arquivo. É a classe de ouvinte opcional que deve ser notificada dos eventos de start e parada.
-
-A tabela a seguir lista todas as propriedades do arquivo .bnd, seus valores e descrições:
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriedade</strong></td>
-   <td><strong>Valor (na criação do pacote)<br /> </strong></td>
-   <td><strong>Descrição</strong></td>
-  </tr>
-  <tr>
-   <td>Pacote de exportação:</td>
-   <td><p>*</p> <p>Observação: este valor deve ser adaptado para refletir a especificidade do pacote.</p> </td>
-   <td>O cabeçalho Export-Package define os pacotes exportados do pacote (lista de pacotes separada por vírgulas). Os pacotes exportados constituem a visualização pública<br /> do pacote.<br /> </td>
-  </tr>
-  <tr>
-   <td>Pacote de importação:</td>
-   <td><p>*</p> <p>Observação: este valor deve ser adaptado para refletir a especificidade do pacote.</p> </td>
-   <td>O cabeçalho Import-Package define os pacotes importados para o pacote (lista de pacotes separada por vírgulas)</td>
-  </tr>
-  <tr>
-   <td>Pacote privado:</td>
-   <td><p>*</p> <p>Observação: este valor deve ser adaptado para refletir a especificidade do pacote.</p> </td>
-   <td>O cabeçalho Private-Package define pacotes privados para o pacote (lista de pacotes separada por vírgulas). Os pacotes privados constituem a execução interna.<br /> </td>
-  </tr>
-  <tr>
-   <td>Nome do pacote:</td>
-   <td>Testar conjunto</td>
-   <td>Define um nome curto e legível para o grupo</td>
-  </tr>
-  <tr>
-   <td>Descrição do pacote:</td>
-   <td>Este é o meu pacote de testes</td>
-   <td>Define uma descrição curta e legível para o grupo</td>
-  </tr>
-  <tr>
-   <td>Bundle-SymbaticName:</td>
-   <td>com.mycompany.test.TestBundle</td>
-   <td>Especifica um nome exclusivo e não localizável para o conjunto</td>
-  </tr>
-  <tr>
-   <td>Versão do pacote:</td>
-   <td>1.0.0-SNAPSHOT</td>
-   <td>Especifica a versão do pacote</td>
-  </tr>
-  <tr>
-   <td>Bundle-Ativator:</td>
-   <td>com.mycompany.test.Activator</td>
-   <td>Especifica o nome da classe listener opcional a ser notificado sobre o start de conjunto e eventos stop</td>
-  </tr>
- </tbody>
-</table>
-
-Para obter mais informações sobre o formato de lance, consulte o utilitário [de](https://bndtools.org/) lance usado pelo CRXDE para criar pacotes OSGI.
-
-### Criação de uma classe Java {#creating-a-java-class}
-
-Para criar a classe `HelloWorld` Java no conjunto de testes:
-
-1. Abra o CRXDE Lite no seu navegador da 
-1. No painel Navegação, clique com o botão direito do mouse no nó que contém o `Activator.java` arquivo ( `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java`), selecione **Criar ...** e, em seguida, **Criar arquivo ...**.
-
-1. Nomeie o arquivo `HelloWorld.java`. Clique em **OK**.
-
-1. O `HelloWorld.java` arquivo é aberto no painel Editar.
-1. Adicione as seguintes linhas em `HelloWorld.java`:
-
-   ```
-     package com.mycompany.test;
-   
-     public class HelloWorld {
-     public String getString(){
-     return "Hello World!";
-     }
-     }
-   ```
-
-1. Clique em **Salvar tudo** para salvar as alterações no servidor.
-
-### Construção de um pacote {#building-a-bundle}
-
-Para criar o conjunto de testes:
-
-1. Abra o CRXDE Lite no seu navegador da 
-1. No painel Navegação, clique com o botão direito do mouse no arquivo .bnd, selecione **Ferramentas** e, em seguida **, Pacote**.
-
-O assistente de compilação de pacote:
-
-* Compila as classes Java.
-* Cria o arquivo .jar contendo as classes Java compiladas e os recursos e o coloca na `myapp/install` pasta.
-* Instala e start o pacote no container OSGI.
-
-Para ver o efeito do conjunto de testes, crie um componente que use o método Java HelloWorld.getString() e um recurso que é renderizado por esse componente:
-
-1. Crie o componente `mycomp` em `myapp/components`.
-
-1. Edite `mycomp.jsp` e substitua o código pelas seguintes linhas:
-
-   ```
-     <%@ page import="com.mycompany.test.HelloWorld"%><%
-     %><%@ include file="/libs/foundation/global.jsp"%><%
-     %><% HelloWorld hello = new HelloWorld();%><%
-     %>
-     <html>
-     <body>
-     <b><%= hello.getString() %></b><br>
-     </body>
-     </html>
-   ```
-
-1. Crie o recurso `test_node` do tipo `nt:unstructured` em `/content`.
-
-1. Para `test_node`, crie a seguinte propriedade: Nome = `sling:resourceType`, Tipo = `String`, Valor = `myapp/components/mycomp`.
-
-1. Clique em **Salvar tudo** para salvar as alterações no servidor.
-
-1. Em seu navegador, solicite `test_node`: `https://<hostname>:<port>/content/test_node.html`.
-
-1. Uma página é exibida com o **Hello World!** message.
 
 ## Exportação e importação de tipos de nó {#exporting-and-importing-node-types}
 
