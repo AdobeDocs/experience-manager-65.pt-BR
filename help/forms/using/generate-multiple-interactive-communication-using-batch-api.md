@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Você combina um registro com um modelo de comunicação interativa para produzi
 
 ### Uso da API de lote com pastas monitoradas {#using-the-batch-api-watched-folders}
 
-Para facilitar a experiência da API, o AEM Forms fornece um serviço de Pasta assistida configurado para usar a API em lote, pronto para uso. Você pode acessar o serviço por meio da interface do usuário do AEM Forms para gerar várias comunicações interativas. Você também pode criar serviços personalizados de acordo com suas necessidades. Você pode usar os métodos listados abaixo para usar a API de lote com a pasta Monitorada:
+Para facilitar a experiência da API, o AEM Forms fornece um serviço de Pasta monitorada configurado para usar a API em lote, pronto para uso. Você pode acessar o serviço por meio da interface do usuário do AEM Forms para gerar várias comunicações interativas. Você também pode criar serviços personalizados de acordo com suas necessidades. Você pode usar os métodos listados abaixo para usar a API de lote com a pasta Monitorada:
 
 * Especificar dados de entrada (registros) no formato de arquivo JSON para produzir uma comunicação interativa
 * Usar dados de entrada (registros) salvos em uma fonte externa de dados e acessados por meio de um modelo de dados de formulário para produzir uma comunicação interativa
@@ -177,7 +177,7 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
 
 1. Faça logon na instância do AEM e crie uma Comunicação interativa. Para usar a comunicação interativa mencionada no código de amostra fornecido abaixo, [clique aqui](assets/SimpleMediumIC.zip).
 1. [Crie e implante um projeto AEM usando o Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) na sua instância do AEM.
-1. Adicione o SDK do cliente do [AEM Forms versão 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou posterior na lista de dependências do arquivo POM de seu projeto do AEM. Por exemplo,
+1. Adicione o [AEM Forms Client SDK versão 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou posterior na lista de dependências do arquivo POM do seu projeto AEM. Por exemplo,
 
    ```XML
        <dependency>
@@ -361,4 +361,5 @@ Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> Somente o protocolo CRX é ativado por padrão. Para ativar outros protocolos suportados, consulte [Configuração do serviço de preenchimento prévio usando o Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>
+>Somente o protocolo CRX é ativado por padrão. Para ativar outros protocolos suportados, consulte [Configuração do serviço de preenchimento prévio usando o Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
