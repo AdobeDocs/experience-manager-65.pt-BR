@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,10 @@ Isso ajuda um desenvolvedor a:
 >
 >* Está disponível somente na interface habilitada para toque (ao editar páginas).
 >* Não está disponível em dispositivos móveis ou janelas pequenas na área de trabalho (devido a restrições de espaço).
-   >   * Isso ocorre quando a largura é inferior a 1024px.
+
+   >
+   >   
+   * Isso ocorre quando a largura é inferior a 1024px.
 >* Está disponível somente para usuários que são membros do `administrators` grupo.
 
 
@@ -48,6 +54,7 @@ Isso ajuda um desenvolvedor a:
 >
 >* em uma instância do autor usando o modo de execução nosamplecontent
 >* uma instância de publicação
+
 >
 >
 Deve ser desativado novamente após a utilização.
@@ -58,6 +65,7 @@ Deve ser desativado novamente após a utilização.
 >
 >* Artigo da Base de conhecimento, [Solução de problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)do AEM TouchUI, para obter mais dicas e ferramentas.
 >* Sessão do AEM Gems sobre o Modo [de desenvolvedor do](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)AEM 6.0.
+
 >
 
 
@@ -103,6 +111,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
    * todos os scripts de componente usados para renderizar o componente.
    * o caminho do conteúdo do repositório para esse componente específico.
+
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Editar script**: um link que:
@@ -113,6 +122,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
    * A hierarquia dentro do componente selecionado.
    * Tempos de renderização do componente selecionado isoladamente, todos os componentes individuais aninhados dentro dele e o total combinado.
+
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
