@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Dependendo do tipo de aplicativo cliente, é possível gravar o formulário em u
 
 >[!NOTE]
 >
-> Para obter informações sobre como criar um aplicativo da Web que usa servlets java para chamar o serviço de Formulários, consulte [Criar Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md).
+>Para obter informações sobre como criar um aplicativo da Web que usa servlets java para chamar o serviço de Formulários, consulte [Criar Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md).
 
 É possível passar um design de formulário (um arquivo XDP) ou um documento PDF para o serviço Forms usando uma das duas maneiras:
 
@@ -41,7 +44,7 @@ Dependendo do tipo de aplicativo cliente, é possível gravar o formulário em u
 
 É possível realizar essas tarefas usando o serviço de Formulários:
 
-* Renderize formulários PDF interativos. (Consulte [Renderização de formulários](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interativos.)
+* Renderizar PDF forms interativos. (Consulte [Renderização de PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interativos.)
 * Renderize formulários no cliente. (Consulte [Renderização de formulários no cliente](/help/forms/developing/rendering-forms-client.md).)
 * Renderize formulários com base em fragmentos. (Consulte [Renderização de formulários com base em fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
 * Renderizar formulários habilitados por direitos. (Consulte [Renderizando Formulários](/help/forms/developing/rendering-rights-enabled-forms.md)Ativados Por Direitos.)
