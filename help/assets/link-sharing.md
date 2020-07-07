@@ -1,9 +1,9 @@
 ---
 title: Gerar um URL para ativos compartilhados
-description: Este artigo descreve como compartilhar ativos, pastas e coleções nos ativos do Experience Manager como um URL para terceiros.
+description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro do Experience Manager Assets como um URL para terceiros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 6%
@@ -40,19 +40,20 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
 
    >[!NOTE]
    >
-   >Se você quiser compartilhar links da instância do autor do Experience Manager com entidades externas, certifique-se de apenas expor os seguintes URLs (que são usados para compartilhamento de links) para `GET` solicitações. Bloqueie outros URLs para garantir a segurança do autor do Experience Manager.
+   >Se você quiser compartilhar links da sua instância de autor de Experience Manager para entidades externas, certifique-se de apenas expor os seguintes URLs (que são usados para compartilhamento de links) para `GET` solicitações. Bloqueie outros URLs para garantir a segurança do autor do Experience Manager.
    >
-   >* http://&lt;aem_server>:&lt;porta>/linkshare.html
-   * http://&lt;aem_server>:&lt;porta>/linksharepreview.html
-   * http://&lt;aem_server>:&lt;porta>/linkexpired.html
+   >* http://[aem_server]:[porta]/linkshare.html
+   >* http://[aem_server]:[porta]/linksharepreview.html
+   >* http://[aem_server]:[porta]/linkexpired.html
 
 
    >[!NOTE]
-   Se um ativo compartilhado for movido para um local diferente, seu link para de funcionar. Recrie o link e compartilhe-o novamente com os usuários.
+   >
+   >Se um ativo compartilhado for movido para um local diferente, seu link para de funcionar. Recrie o link e compartilhe-o novamente com os usuários.
 
-1. Na interface do Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
+1. Na interface do Experience Manager, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da Web]**.
 
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. Para as propriedades `local` e `author` , forneça o URL para as instâncias local e autor, respectivamente. As propriedades `local` e `author` têm o mesmo valor se você executar uma única instância do autor do Experience Manager. Por exemplo, `publish`forneça o URL da instância de publicação do Experience Manager.
+1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. Para as propriedades `local` e `author` , forneça o URL para as instâncias local e autor, respectivamente. As propriedades `local` e `author` têm o mesmo valor se você executar uma única instância de autor de Experience Manager. Por exemplo, `publish`forneça o URL para a instância Experience Manager publish.
 
 1. Na caixa de endereço de email da caixa de diálogo **[!UICONTROL Compartilhamento de links]**, digite a ID de email do usuário com o qual deseja compartilhar o link. Além disso, é possível compartilhar o link com vários usuários.
 
@@ -65,7 +66,8 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
    *Figura: Compartilhe links para ativos diretamente da caixa de diálogo Compartilhamento[!UICONTROL de]links.*
 
    >[!NOTE]
-   Se você inserir uma ID de email de um usuário que não seja membro de sua organização, as palavras Usuário  externo receberão o prefixo ID de email do usuário.
+   >
+   >Se você inserir uma ID de email de um usuário que não seja membro de sua organização, as palavras Usuário  externo receberão o prefixo ID de email do usuário.
 
 1. No campo **[!UICONTROL Assunto]** , informe um assunto para o ativo que deseja compartilhar.
 
@@ -78,10 +80,11 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
 1. Para permitir que os usuários baixem a imagem original junto com as execuções, selecione **[!UICONTROL Permitir download do arquivo]** original.
 
    >[!NOTE]
-   Por padrão, os usuários podem baixar somente as representações do ativo que você compartilha como um link.
+   >
+   >Por padrão, os usuários podem baixar somente as representações do ativo que você compartilha como um link.
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários por meio de um email.
-1. Para visualização do ativo compartilhado, clique no link no email enviado ao usuário. O ativo compartilhado é exibido na página da **[!UICONTROL Adobe Marketing Cloud]** .
+1. Para visualização do ativo compartilhado, clique no link no email enviado ao usuário. O ativo compartilhado é exibido na página **[!UICONTROL Adobe Marketing Cloud]** .
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
@@ -92,19 +95,20 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   O Experience Manager oferece suporte à geração da pré-visualização de ativos desses tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Você só pode baixar os ativos dos outros tipos MIME.
+   >
+   >O Experience Manager suporta a geração da pré-visualização de ativos desses tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Você só pode baixar os ativos dos outros tipos MIME.
 
-1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e em **[!UICONTROL Download]** na barra de ferramentas.
+1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e, em seguida, clique em **[!UICONTROL Download]** na barra de ferramentas.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Para visualização dos ativos compartilhados como links, vá para a interface do usuário do Assets e clique no logotipo do Experience Manager. Escolha **[!UICONTROL Navegação]** na lista para exibir o painel de Navegação.
+1. Para visualização dos ativos que você compartilhou como links, vá para a interface do usuário do Assets e clique no logotipo do Experience Manager. Escolha **[!UICONTROL Navegação]** na lista para exibir o painel de Navegação.
 1. No painel Navegação, escolha **[!UICONTROL Links compartilhados]** para exibir uma lista de ativos compartilhados.
 1. Para descompartilhar um ativo, selecione-o e clique em **[!UICONTROL Descompartilhar]** na barra de ferramentas. Uma mensagem de confirmação é exibida. A entrada do ativo é removida da lista.
 
 ## Configurar o serviço de e-mail Day CQ {#configmailservice}
 
-1. No home page do Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
+1. No home page Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
 1. Na lista de serviços, localize o **[!UICONTROL Dia CQ Mail Service]**.
 1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -112,6 +116,7 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
    * Porta do servidor SMTP: porta do servidor de email
    * Usuário SMTP: nome de usuário do servidor de email
    * Senha SMTP: senha do servidor de email
+
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
 1. Clique em **[!UICONTROL Salvar]**.
