@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 2%
@@ -104,7 +104,7 @@ As tabelas a seguir listas cada item junto com:
   <tr>
    <td>hidrelétricas</td>
    <td>Grupo</td>
-   <td>Grupo de referência predefinido para um usuário típico do AEM Assets. Os membros deste grupo têm privilégios apropriados para permitir o upload/compartilhamento de ativos e coleções.</td>
+   <td>Grupo de referência predefinido para um usuário AEM Assets típico. Os membros deste grupo têm privilégios apropriados para permitir o upload/compartilhamento de ativos e coleções.</td>
    <td> </td>
   </tr>
   <tr>
@@ -364,7 +364,7 @@ Isso permite que as contas do representador completem as tarefas como se estives
 >
 >Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
 
-### Práticas recomendadas   {#best-practices}
+### Práticas recomendadas    {#best-practices}
 
 A seguir, é apresentada uma descrição das práticas recomendadas ao trabalhar com permissões e privilégios:
 
@@ -457,9 +457,11 @@ Para criar um novo usuário ou grupo:
 1. Insira os detalhes necessários, de acordo com a criação de um usuário ou de um grupo.
 
    * Se você selecionar **Criar usuário,** digite a ID de login, o nome e o sobrenome, o endereço de email e a senha. Por padrão, o AEM cria um caminho com base na primeira letra do sobrenome, mas você pode selecionar outro caminho.
+
    ![createuserdialog](assets/createuserdialog.png)
 
    * Se você selecionar **Criar grupo**, insira uma ID de grupo e uma descrição opcional.
+
    ![creategroupdialog](assets/creategroupdialog.png)
 
 1. Clique em **Criar**. O usuário ou grupo criado é exibido na lista em árvore.
@@ -493,11 +495,11 @@ Use o procedimento a seguir para modificar a senha de um usuário.
 >[!NOTE]
 >
 >Não é possível usar o console Segurança para alterar a senha do administrador. Para alterar a senha da conta de administrador, use o console [](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) Usuários fornecido pelo Granite Operations.
-> Se você estiver usando o AEM Forms no JEE, não use as instruções abaixo para alterar a senha, em vez de usar o AEM Forms no console de administração do JEE (/adminui) para alterar a senha.
+>
+>Se você estiver usando AEM Forms no JEE, não use as instruções abaixo para alterar a senha, em vez de usar AEM Forms no console de administração do JEE (/adminui) para alterar a senha.
 
 1. No console **Segurança** , clique com o duplo no nome de usuário para o qual deseja alterar a senha.
 1. Clique na guia **Propriedades** (se ainda não estiver ativa).
-
 1. Clique em **Definir senha**. A janela Definir senha é aberta onde você pode alterar sua senha.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
@@ -638,6 +640,7 @@ O privilégio de replicação é o direito de publicar conteúdo e pode ser defi
 >* Todos os direitos de replicação aplicados a um grupo se aplicam a todos os usuários nesse grupo.
 >* Os privilégios de replicação de um usuário substituem os privilégios de replicação de um grupo.
 >* Os direitos de replicação de Permitir têm uma precedência superior aos direitos de replicação de Negar. Consulte [Permissões no AEM](#permissions-in-aem) para obter mais informações.
+
 >
 
 
