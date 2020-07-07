@@ -3,9 +3,9 @@ title: Processar ativos usando manipuladores de mídia e workflows em [!DNL Adob
 description: Saiba mais sobre os manipuladores de mídia e como usar workflows para executar tarefas em seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2109'
 ht-degree: 4%
 
 ---
@@ -21,15 +21,13 @@ Os manipuladores de mídia são serviços em [!DNL Assets] que executam ações 
 
 >[!NOTE]
 >
->Consulte a página de formatos [suportados pelos](assets-formats.md) Ativos para obter uma descrição de todos os formatos suportados por [!DNL Assets] eles, bem como dos recursos suportados para cada formato.
+>Consulte a página Formatos [suportados do](assets-formats.md) Assets para obter uma descrição de todos os formatos suportados por [!DNL Assets] ele, bem como dos recursos suportados para cada formato.
 
 ## Manipuladores de mídia padrão {#default-media-handlers}
 
 Os seguintes manipuladores de mídia estão disponíveis em [!DNL Assets] e lidam com os tipos MIME mais comuns:
 
-<!-- TBD: 
-* Apply correct formatting once table is moved to MD.
-* Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
 | Nome do manipulador | Nome do serviço (no console do sistema) | Tipos MIME suportados |
@@ -140,7 +138,7 @@ Depois de executar o procedimento a seguir, ao fazer upload de um arquivo TXT pa
 
 1. No Eclipse, crie `myBundle` [!DNL Maven] o projeto:
 
-   1. Na barra de menus, clique em **[!UICONTROL Arquivo > Novo > Outro]**.
+   1. Na barra de menus, clique em **[!UICONTROL Arquivo]** > **[!UICONTROL Novo]** > **[!UICONTROL Outro]**.
    1. Na caixa de diálogo, expanda a [!DNL Maven] pasta, selecione [!DNL Maven] projeto e clique em **[!UICONTROL Avançar]**.
    1. Marque a caixa Criar um projeto simples e a caixa Usar locais padrão da Workspace e clique em **[!UICONTROL Avançar]**.
    1. Defina um [!DNL Maven] projeto:
@@ -505,7 +503,7 @@ Separe os valores dos Argumentos [!UICONTROL de] processamento usando vírgula e
 |---|---|
 | mime:&lt;mime-type> | Argumento opcional. O processo é aplicado se o ativo tiver o mesmo tipo MIME do argumento. <br>Vários tipos MIME podem ser definidos. |
 | tn:&lt;largura>:&lt;altura> | Argumento opcional. O processo cria uma miniatura com as dimensões definidas no argumento. <br>Várias miniaturas podem ser definidas. |
-| cmd: &lt;comando> | Define o comando que será executado. A sintaxe depende da ferramenta de linha de comando. Somente um comando pode ser definido. <br>As seguintes variáveis podem ser usadas para criar o comando:<br>`${filename}`: nome do arquivo de entrada, por exemplo original.jpg <br> `${file}`: nome completo do caminho do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: diretório do arquivo de entrada, por exemplo /tmp/cqdam0816.tmp <br>`${basename}`: nome do arquivo de entrada sem sua extensão, por exemplo original <br>`${extension}`: extensão do arquivo de entrada, por exemplo, JPG. |
+| cmd: &lt;comando> | Define o comando que é executado. A sintaxe depende da ferramenta de linha de comando. Somente um comando pode ser definido. <br>As seguintes variáveis podem ser usadas para criar o comando:<br>`${filename}`: nome do arquivo de entrada, por exemplo original.jpg <br> `${file}`: nome completo do caminho do arquivo de entrada, por exemplo `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: diretório do arquivo de entrada, por exemplo `/tmp/cqdam0816.tmp` <br>`${basename}`: nome do arquivo de entrada sem sua extensão, por exemplo original <br>`${extension}`: extensão do arquivo de entrada, por exemplo, JPG. |
 
 Por exemplo, se [!DNL ImageMagick] estiver instalado no disco que hospeda o [!DNL Experience Manager] servidor e se você criar uma etapa do processo usando [!UICONTROL CommandLineProcess] como Implementação e os seguintes valores como Argumentos [!UICONTROL de]Processo:
 
