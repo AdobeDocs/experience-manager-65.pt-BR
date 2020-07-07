@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6723b12bebba2f239c0886e5f378f1dc70e5e247
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,9 @@ source-git-commit: 6723b12bebba2f239c0886e5f378f1dc70e5e247
 6.5.2.0:
 >
 >* Fragmentos de experiência podem ser exportados para:
-   >   * a área de trabalho padrão.
+   >
+   >   
+   * a área de trabalho padrão.
    >   * um espaço de trabalho nomeado, especificado na Configuração da nuvem.
 >* O AEM deve ser [integrado ao Adobe Target usando a E/S](/help/sites-administering/integration-ims-adobe-io.md)da Adobe.
 >
@@ -41,29 +46,29 @@ AEM 6.5.0.0 e 6.5.1.0:
 >* O AEM deve ser integrado ao Adobe Target de acordo com as instruções em [Integração com o Adobe Target](/help/sites-administering/target.md).
 
 
-Você pode exportar Fragmentos [de](/help/sites-authoring/experience-fragments.md)experiência criados no Adobe Experience Manager (AEM) para o Adobe Target. Eles podem ser usados como ofertas em atividades do Target, para testar e personalizar experiências em escala.
+Você pode exportar Fragmentos [de](/help/sites-authoring/experience-fragments.md)experiência criados no Adobe Experience Manager (AEM) para Adobe Target (Público alvo). Eles podem ser usados como ofertas em atividades Públicos alvos, para testar e personalizar experiências em escala.
 
-Há três opções de formato disponíveis para exportar um Fragmento de experiência para o Adobe Target:
+Há três opções de formato disponíveis para exportar um Fragmento de experiência para Adobe Target:
 
-* HTML (padrão): Suporte para entrega de conteúdo da Web e híbrido
-* JSON: Suporte para entrega de conteúdo sem cabeçalho
+* HTML (padrão): Suporte para delivery de conteúdo da Web e híbrido
+* JSON: Suporte para delivery de conteúdo sem cabeçalho
 * HTML e JSON
 
-Os Fragmentos de experiência do AEM podem ser exportados para a área de trabalho padrão no Adobe Target ou para espaços de trabalho definidos pelo usuário para o Adobe Target. Isso é feito via E/S da Adobe, para a qual o AEM deve ser [integrado ao Adobe Target usando E/S](/help/sites-administering/integration-ims-adobe-io.md)da Adobe.
+Os Fragmentos de experiência do AEM podem ser exportados para o espaço de trabalho padrão no Adobe Target ou para espaços de trabalho definidos pelo usuário para o Adobe Target. Isso é feito por meio da E/S da Adobe, para a qual o AEM deve ser [integrado ao Adobe Target usando a E/S](/help/sites-administering/integration-ims-adobe-io.md)da Adobe.
 
 >[!NOTE]
 >
->Os espaços de trabalho do Adobe Target não existem no próprio Adobe Target. Eles são definidos e gerenciados no Adobe IMS (Identity Management System) e, em seguida, selecionados para uso em soluções que usam integrações de E/S da Adobe.
+>Os espaços de trabalho Adobe Target não existem no Adobe Target. Eles são definidos e gerenciados no Adobe IMS (Identity Management System) e, em seguida, selecionados para uso em soluções que usam integrações de E/S da Adobe.
 
 >[!NOTE]
 >
->Os espaços de trabalho do Adobe Target podem ser usados para permitir que membros de uma organização (grupo) criem e gerenciem ofertas e atividades somente para essa organização; sem dar acesso a outros usuários. Por exemplo, organizações específicas a cada país dentro de uma preocupação global.
+>Os espaços de trabalho de Adobe Target podem ser usados para permitir que membros de uma organização (grupo) criem e gerenciem ofertas e atividades apenas para essa organização; sem dar acesso a outros usuários. Por exemplo, organizações específicas a cada país dentro de uma preocupação global.
 
 >[!NOTE]
 >
 >Para obter mais informações, consulte também:
 >
->* [Desenvolvimento do Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
+>* [Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Componentes principais - Fragmentos de experiência](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 >
 
@@ -78,7 +83,7 @@ Os Fragmentos de experiência do AEM podem ser exportados para a área de trabal
 Várias ações são obrigatórias:
 
 1. É necessário [integrar o AEM ao Adobe Target usando a E/S](/help/sites-administering/integration-ims-adobe-io.md)da Adobe.
-2. Os Fragmentos de experiência são exportados da instância do autor de AEM, portanto, é necessário [Configurar o Externalizador](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) de link de AEM na instância do autor para garantir que qualquer referência no Fragmento de experiência seja externalizada para entrega na Web.
+2. Os Fragmentos de experiência são exportados da instância do autor de AEM, portanto, é necessário [Configurar o Externalizador](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) de link de AEM na instância do autor para garantir que qualquer referência no Fragmento de experiência seja externalizada para o delivery da Web.
 
    >[!NOTE]
    >
@@ -86,15 +91,15 @@ Várias ações são obrigatórias:
 
 ## Adicionar a configuração da nuvem {#add-the-cloud-configuration}
 
-Antes de exportar um fragmento, é necessário adicionar a Configuração **da** nuvem para o **Adobe Target** ao fragmento ou pasta. Isso também permite:
+Antes de exportar um fragmento, é necessário adicionar a Configuração **da** nuvem para **Adobe Target** ao fragmento ou pasta. Isso também permite que você:
 
 * especificar as opções de formato a serem usadas para a exportação
-* selecionar um espaço de trabalho do Target como destino
+* selecionar um espaço de trabalho de Público alvo como destino
 * selecione um domínio do externalizador para regravar referências no Fragmento de experiência (opcional)
 
 As opções necessárias podem ser selecionadas em Propriedades **da** página da pasta e/ou fragmento necessários; a especificação será herdada conforme necessário.
 
-1. Navegue até o console **Fragmentos** de experiência.
+1. Navigate to the **Experience Fragments** console.
 
 1. Abra Propriedades **da** página para a pasta ou fragmento apropriado.
 
@@ -105,32 +110,32 @@ As opções necessárias podem ser selecionadas em Propriedades **da** página d
    >
    >Se você adicionar a configuração de nuvem ao próprio Fragmento de experiência, a configuração será herdada por todas as variações.
 
-1. Selecione a guia Serviços **em** nuvem.
+1. Selecione a guia **Cloud Service** .
 
-1. Em Configuração **do serviço** em nuvem, selecione **Adobe Target** na lista suspensa.
+1. Em Configuração **do** Cloud Service, selecione **Adobe Target** na lista suspensa.
 
 1. 
    >[!NOTE]
    >
-   >O formato JSON de uma oferta de Fragmento de experiência pode ser personalizado. Para fazer isso, defina um componente de Fragmento de experiência do cliente e anote como exportar suas propriedades no componente Sling Model.
+   >O formato JSON de uma oferta de fragmento de experiência pode ser personalizado. Para fazer isso, defina um componente de Fragmento de experiência do cliente e anote como exportar suas propriedades no componente Sling Model.
    >
    >Consulte o componente principal:
    >
    >[Componentes principais - Fragmentos de experiência](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 
-   Em **Adobe Target** , selecione:
+   Em **Adobe Target** selecione:
 
    * a configuração apropriada
    * a opção de formato necessária
-   * uma área de trabalho do Adobe Target
+   * um espaço de trabalho Adobe Target
    * se necessário - o domínio do externalizador
    >[!CAUTION]
    >
-   >O domínio do externalizador é opcional. Um externalizador AEM é configurado quando você deseja que o conteúdo exportado aponte para um domínio de *publicação* específico. Para obter mais detalhes, consulte [Configuração do Externalizador](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)de links AEM.
+   >O domínio do externalizador é opcional. Um externalizador do AEM é configurado quando você deseja que o conteúdo exportado aponte para um domínio de *publicação* específico. Para obter mais detalhes, consulte [Configuração do Externalizador](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)de links AEM.
 
    Por exemplo, para uma pasta:
 
-   ![Pasta - Cloud](assets/xf-target-integration-01.png "ServicesFolder - Serviços em nuvem")
+   ![Pasta - Cloud](assets/xf-target-integration-01.png "ServicesFolder - Cloud Service")
 
 1. **Salvar e fechar**.
 
@@ -138,20 +143,20 @@ As opções necessárias podem ser selecionadas em Propriedades **da** página d
 
 >[!CAUTION]
 >
->Para ativos de mídia, como imagens, apenas uma referência é exportada para o Target. O próprio ativo permanece armazenado nos ativos AEM e é entregue da instância de publicação do AEM.
+>Para ativos de mídia, como imagens, apenas uma referência é exportada para o Público alvo. O ativo em si permanece armazenado em AEM Assets e é entregue da instância de publicação do AEM.
 >
->Devido a isso, o Fragmento de experiência, com todos os ativos relacionados, precisa ser publicado antes de exportar para o Target.
+>Devido a isso, o Fragmento de experiência, com todos os ativos relacionados, precisa ser publicado antes de exportar para o Público alvo.
 
-Para exportar um fragmento de experiência do AEM para o Target (após especificar a Configuração da nuvem):
+Para exportar um fragmento de experiência do AEM para o Público alvo (depois de especificar a Configuração da nuvem):
 
 1. Navegue até o console Fragmento de experiência.
-1. Selecione o Fragmento de experiência que deseja exportar para o destino.
+1. Selecione o Fragmento de experiência que deseja exportar para o público alvo.
 
    >[!NOTE]
    >
    >Deve ser uma variação da Web do Fragmento de experiência.
 
-1. Toque/clique em **Exportar para o Adobe Target**.
+1. Toque/clique em **Exportar para Adobe Target**.
 
    >[!NOTE]
    >
@@ -161,45 +166,45 @@ Para exportar um fragmento de experiência do AEM para o Target (após especific
 
    >[!NOTE]
    >
-   >Selecionar **Publicar** publicará o fragmento de experiência imediatamente e o enviará para o Target.
+   >Selecionar **Publicar** publicará o fragmento da experiência imediatamente e o enviará para o Público alvo.
 
 1. Toque/clique em **OK** na caixa de diálogo de confirmação.
 
-   Seu fragmento de experiência agora deve estar no Target.
+   Seu fragmento de experiência agora deve estar no Público alvo.
 
    >[!NOTE]
    >
-   >[Vários detalhes](/help/sites-authoring/experience-fragments.md#details-of-your-experience-fragment) da exportação podem ser vistos na **Exibição** de lista do console e **Propriedades**.
+   >[Vários detalhes](/help/sites-authoring/experience-fragments.md#details-of-your-experience-fragment) da exportação podem ser vistos na Visualização **de** Lista do console e **Propriedades**.
 
    >[!NOTE]
    >
-   >Ao exibir um fragmento de experiência no Adobe Target, a *última data modificada* que é vista é a data em que o fragmento foi modificado pela última vez no AEM, não a data em que o fragmento foi exportado pela última vez para o Adobe Target.
+   >Ao exibir um Fragmento de experiência no Adobe Target, a *última data modificada* que é vista é a data em que o fragmento foi modificado pela última vez no AEM, não a data em que o fragmento foi exportado pela última vez para Adobe Target.
 
 >[!NOTE]
 >
 >Como alternativa, você pode executar a exportação do editor de páginas, usando comandos comparáveis no menu Informações [da](/help/sites-authoring/author-environment-tools.md#page-information) página.
 
-## Uso de fragmentos de experiência no Adobe Target {#using-your-experience-fragments-in-adobe-target}
+## Uso dos fragmentos de experiência no Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Após executar as tarefas anteriores, o fragmento da experiência é exibido na página Ofertas no Target. Consulte a documentação [](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) específica do Target para saber mais sobre o que você pode alcançar.
+Depois de executar as tarefas anteriores, o fragmento de experiência é exibido na página Ofertas no Target. Consulte a documentação [](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) específica do Público alvo para saber mais sobre o que você pode alcançar.
 
 >[!NOTE]
 >
->Ao exibir um fragmento de experiência no Adobe Target, a *última data modificada* que é vista é a data em que o fragmento foi modificado pela última vez no AEM, não a data em que o fragmento foi exportado pela última vez para o Adobe Target.
+>Ao exibir um Fragmento de experiência no Adobe Target, a *última data modificada* que é vista é a data em que o fragmento foi modificado pela última vez no AEM, não a data em que o fragmento foi exportado pela última vez para Adobe Target.
 
 ## Excluir um fragmento de experiência já exportado para o Adobe Target {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-A exclusão de um fragmento de experiência que já foi exportado para o Target pode causar problemas se o fragmento já estiver sendo usado em uma oferta no Target. A exclusão do fragmento tornaria a oferta inutilizável, pois o conteúdo do fragmento está sendo entregue pelo AEM.
+A exclusão de um fragmento de experiência que já foi exportado para o Público alvo pode causar problemas se o fragmento já estiver sendo usado em uma oferta no Público alvo. A exclusão do fragmento tornaria a oferta inutilizável, pois o conteúdo do fragmento estava sendo entregue pelo AEM.
 
 Para evitar tais situações:
 
 * Se o Fragmento de experiência não estiver sendo usado em uma atividade, o AEM permitirá que o usuário exclua o fragmento sem uma mensagem de aviso.
-* Se o Fragmento de experiência estiver sendo usado por uma atividade no Target, uma mensagem de erro avisará o usuário do AEM sobre possíveis consequências que a exclusão do fragmento terá na atividade.
+* Se o Fragmento de experiência estiver sendo usado por uma atividade no Público alvo, uma mensagem de erro avisará o usuário do AEM sobre possíveis consequências que a exclusão do fragmento terá na atividade.
 
    A mensagem de erro no AEM não proíbe que o usuário (force-)exclua o Fragmento de experiência. Se o Fragmento de experiência for excluído:
 
-   * A oferta do Target com o Fragmento de experiência do AEM pode mostrar um comportamento indesejado
+   * A oferta do Público alvo com o Fragmento de experiência do AEM pode mostrar um comportamento indesejado
 
-      * A oferta ainda será renderizada, pois o HTML do fragmento de experiência foi enviado para o Target
+      * A oferta provavelmente ainda será renderizada, pois o HTML do fragmento de experiência foi enviado para o Público alvo
       * Qualquer referência no Fragmento de experiência pode não funcionar corretamente se os ativos referenciados também forem excluídos no AEM.
-   * É claro que qualquer modificação adicional no Fragmento de experiência é impossível, pois o Fragmento de experiência não existe mais no AEM.
+   * É claro que quaisquer modificações adicionais no Fragmento de experiência são impossíveis, pois o Fragmento de experiência não existe mais no AEM.
