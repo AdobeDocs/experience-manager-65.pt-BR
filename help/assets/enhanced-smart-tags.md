@@ -3,7 +3,10 @@ title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 8%
 
 ---
 
@@ -24,7 +27,7 @@ Depois que uma tag é treinada e pronta, o serviço pode aplicar essas tags em a
 
 Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura do Adobe Sensei AI para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em E/S da Adobe. Para usá-la no Adobe Experience Manager, o administrador do sistema deve integrar sua instância do Experience Manager à E/S da Adobe.
+O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em E/S da Adobe. Para usá-la no Adobe Experience Manager, o administrador do sistema deve integrar a instância do Experience Manager com a E/S da Adobe.
 
 Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligente:
 
@@ -39,16 +42,16 @@ Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligen
 
 Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração em E/S da Adobe:
 
-* Uma conta da Adobe ID que tem privilégios de administrador para a organização.
+* Existência de uma Adobe ID com privilégios de administrador para a organização.
 * O serviço Smart Content Service está habilitado para sua organização.
 
 ## Integração {#onboarding}
 
-O Serviço de conteúdo inteligente está disponível para compra como um complemento do Experience Manager. Após a compra, um email é enviado ao administrador da sua organização com um link para a E/S da Adobe.
+O Serviço de conteúdo inteligente está disponível para compra como um suplemento do Experience Manager. Após a compra, um email é enviado ao administrador da sua organização com um link para a E/S da Adobe.
 
-O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente ao Experience Manager. Para integrar o serviço aos ativos do Experience Manager, consulte [Configurar tags](config-smart-tagging.md)inteligentes.
+O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente ao Experience Manager. Para integrar o serviço aos ativos Experience Manager, consulte [Configurar tags](config-smart-tagging.md)inteligentes.
 
-O processo de integração é concluído quando o administrador configura o serviço e adiciona usuários ao Experience Manager.
+O processo de onboard é concluído quando o administrador configura o serviço e adiciona usuários ao Experience Manager.
 
 >[!NOTE]
 >
@@ -87,13 +90,13 @@ Você pode ativar o Serviço de conteúdo inteligente para treinar periodicament
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Quando essa opção é selecionada para uma pasta, o Experience Manager executa um fluxo de trabalho de treinamento automaticamente para treinar o Serviço de conteúdo inteligente nos ativos da pasta e em suas tags. Por padrão, o fluxo de trabalho de treinamento é executado semanalmente às 12h30 do sábado.
+Depois que essa opção é selecionada para uma pasta, o Experience Manager executa um fluxo de trabalho de treinamento automaticamente para treinar o Serviço de conteúdo inteligente nos ativos da pasta e em suas tags. Por padrão, o fluxo de trabalho de treinamento é executado semanalmente às 12h30 do sábado.
 
 ### Treinamento sob demanda {#on-demand-training}
 
 Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no console Fluxo de trabalho.
 
-1. Na interface do Experience Manager, vá até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Na interface do Experience Manager, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. Na caixa de diálogo **[!UICONTROL Executar fluxo de trabalho]** , navegue até a pasta de carga que inclui os ativos marcados para treinar o serviço.
 1. Especifique um título para o fluxo de trabalho e adicione um comentário. Em seguida, clique em **[!UICONTROL Executar]**. Os ativos e as tags são enviados para treinamento.
@@ -108,7 +111,7 @@ Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no
 
 Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags no conjunto de ativos de treinamento, reveja o relatório de fluxo de trabalho de treinamento no console Relatórios.
 
-1. Na interface do Experience Manager, vá até **[!UICONTROL Ferramentas > Ativos > Relatórios]**.
+1. Na interface do Experience Manager, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
 1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
 1. Especifique um título e uma descrição para o relatório. Em **[!UICONTROL Agendar relatório]**, deixe a opção **[!UICONTROL Agora]** selecionada. Se desejar agendar o relatório para posteriormente, selecione **[!UICONTROL Posteriormente]** e especifique uma data e hora. Then, click **[!UICONTROL Create]** from the toolbar.
@@ -150,7 +153,7 @@ Você pode acionar o fluxo de trabalho de marcação do seguinte para marcar ins
 
 #### Marcar ativos do console de fluxo de trabalho {#tagging-assets-from-the-workflow-console}
 
-1. Na interface do Experience Manager, vá até **[!UICONTROL Ferramentas > Fluxo de trabalho > Modelos]**.
+1. Na interface do Experience Manager, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
