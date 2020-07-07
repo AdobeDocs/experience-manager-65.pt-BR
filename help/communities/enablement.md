@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
 
@@ -63,9 +66,14 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 1. **[Instale o driver JDBC para MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
 
-   Usar o Console da Web (pacotes): *http://localhost:4502/system/console/bundles* instalar *antes* de instalar o pacote SCORM
+   Usar o Console da Web (pacotes): *http://localhost:4502/system/console/bundles*
 
-1. **[Instale o pacote](deploy-communities.md#scorm-package)**SCORM Use o Gerenciador de pacotes:*http://localhost:4502/crx/packmgr/*
+   Instale *antes* de instalar o pacote SCORM
+
+1. **[Instalar pacote SCORM](deploy-communities.md#scorm-package)**
+
+
+   Use o Gerenciador de pacotes: *http://localhost:4502/crx/packmgr/*
 
 **Em qualquer servidor:**
 
@@ -73,7 +81,9 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 1. **[Instalar bancos de dados MySQL](mysql.md#database-setup)**
 
-   Executar scripts SQL baixados da instância do autorUsar o MySQL Workbench
+   Executar scripts SQL baixados da instância do autor
+
+   Usar o MySQL Workbench
 
 **Na mesma instância do autor de hospedagem do servidor:**
 
@@ -95,9 +105,9 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 **Na instância do autor:**
 
-1. (*Opcional*) **[Configurar o serviço do Analytics](analytics.md)**
+1. (*Opcional*) **[Configurar o serviço Analytics](analytics.md)**
 
-   Use o console Ferramentas, Implantação e Serviços em nuvem: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Use Ferramentas, Implantação, console Cloud Service: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[Configurar FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -109,7 +119,9 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 1. **[Criar administradores da comunidade](users.md#creating-community-members)**
 
-   Para o ambiente do autor, use o console de segurança da interface clássica: *http://localhost:4502/useradmin* criar usuário(s) com caminho = /home/users/community
+   Para o ambiente do autor, use o console de segurança da interface clássica: *http://localhost:4502/useradmin*
+
+   Criar usuário(s) com caminho = /home/users/community
 
    * Adicione membros aos seguintes grupos:
 
@@ -118,4 +130,4 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 ## Dispatcher {#dispatcher}
 
-Quando a implantação inclui o Dispatcher [do](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, para que os recursos de ativação funcionem corretamente, as seções `clientheader` e `filter` as seções precisam ser modificadas. Consulte [Configuração do Dispatcher para Comunidades](dispatcher.md#enablement).
+Quando a implantação inclui o Dispatcher [do](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, para que os recursos de ativação funcionem corretamente, as seções `clientheader` e `filter` as seções precisam ser modificadas. Consulte [Configuração do Dispatcher para comunidades](dispatcher.md#enablement).
