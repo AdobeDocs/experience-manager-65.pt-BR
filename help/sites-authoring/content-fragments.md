@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 99%
@@ -175,7 +175,9 @@ Para conteúdo intermediário, você pode:
 >Quando isso ocorre, o conteúdo intermediário é mantido como está:
 >
 >* Os componentes intermediários têm uma posição absoluta na sequência de componentes do fluxo de fragmentos. Essa posição não muda, mesmo quando o conteúdo dos parágrafos no fragmento sofre alteração.
-   >  Isso causa a impressão de que o posicionamento relativo mudou, pois os parágrafos intermediários não têm relacionamento contextual com os parágrafos (fragmento) ao lado dos quais estão posicionados.
+>
+>  
+Isso causa a impressão de que o posicionamento relativo mudou, pois os parágrafos intermediários não têm relacionamento contextual com os parágrafos (fragmento) ao lado dos quais estão posicionados.
 >* A menos que as duas estruturas de parágrafo entrem em conflito; nesse caso, o conteúdo intermediário não é exibido (embora ainda esteja presente internamente).
 
 >
