@@ -3,7 +3,7 @@ title: Modelos de ativos em [!DNL Adobe Experience Manager Assets].
 description: Saiba mais sobre os modelos de ativos [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais promocionais de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -95,7 +95,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    >[!NOTE]
    >
-   >Certifique-se de que sua [!DNL Experience Manager] instância esteja integrada com um [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] a extração de dados do [!DNL InDesign] modelo e disponibilizá-lo para edição. Para obter detalhes, consulte [integrar os ativos do Experience Manager ao InDesign Server](/help/assets/indesign.md).
+   >Certifique-se de que sua [!DNL Experience Manager] instância esteja integrada com um [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] a extração de dados do [!DNL InDesign] modelo e disponibilizá-lo para edição. Para obter detalhes, consulte [integrar os ativos Experience Manager com o InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar o texto em um campo editável, clique no campo de texto da lista de campos editáveis e edite o texto no campo.
 
@@ -131,17 +131,17 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    >[!NOTE]
    >
-   >Os ícones Pré-visualização e Concluído são ativados somente quando os campos de imagem editáveis no material de apoio não têm ícones ausentes. Se houver ícones ausentes em seu material de apoio, isso ocorre porque não [!DNL Experience Manager] é possível resolver as imagens no [!DNL InDesign] modelo. Normalmente, não [!DNL Experience Manager] é possível resolver imagens nos seguintes casos:
+   >As opções Pré-visualização e Concluído são ativadas somente quando os campos de imagem editáveis no material de apoio não têm ícones ausentes. Se houver ícones ausentes em seu material de apoio, isso ocorre porque não [!DNL Experience Manager] é possível resolver as imagens no [!DNL InDesign] modelo. Normalmente, não [!DNL Experience Manager] é possível resolver imagens nos seguintes casos:
    >
-   >    * As imagens não são incorporadas no [!DNL InDesign] modelo subjacente.
-   >    * As imagens são vinculadas do sistema de arquivos local.
+   >* As imagens não são incorporadas no [!DNL InDesign] modelo subjacente.
+   >* As imagens são vinculadas do sistema de arquivos local.
    >
    >Para permitir [!DNL Experience Manager] a resolução de imagens, faça o seguinte:
    >
-   >    * Incorporar imagens ao criar [!DNL InDesign] modelos (Consulte [Sobre links e gráficos](https://helpx.adobe.com/indesign/using/graphics-links.html)incorporados).
-   >    * Monte [!DNL Experience Manager] no seu sistema de arquivos local e mapeie ícones ausentes com ativos existentes no [!DNL Experience Manager].
+   >* Incorporar imagens ao criar [!DNL InDesign] modelos (Consulte [Sobre links e gráficos](https://helpx.adobe.com/indesign/using/graphics-links.html)incorporados).
+   >* Monte [!DNL Experience Manager] no seu sistema de arquivos local e mapeie ícones ausentes com ativos existentes no [!DNL Experience Manager].
    >
-   >Para obter mais informações sobre como trabalhar com [!DNL InDesign] documentos, consulte Práticas [recomendadas para trabalhar com Documentos do InDesign no Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Para obter mais informações sobre como trabalhar com [!DNL InDesign] documentos, consulte as práticas [recomendadas para trabalhar com documentos do InDesign no Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Para gerar uma execução em PDF para o folheto, selecione a opção Acrobat na caixa de diálogo e clique em **[!UICONTROL Continuar]**.
 1. O material de apoio é criado na pasta com a qual você começou. Para visualização das representações, abra o material de apoio e escolha **[!UICONTROL Representações]** na lista GlobalNav.
@@ -182,7 +182,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
-1. Clique em **[!UICONTROL Avançar]** na barra de ferramentas.
+1. Click **[!UICONTROL Next]** from the toolbar.
 1. Na tela **[!UICONTROL Pré-visualização e reorganização]** , reorganize os modelos, se necessário, e pré-visualização a seleção de modelos para mesclar. Em seguida, clique em **[!UICONTROL Avançar]** na barra de ferramentas.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
