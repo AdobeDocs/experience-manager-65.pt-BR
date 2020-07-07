@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '6229'
 ht-degree: 2%
@@ -574,7 +574,7 @@ Embora a tarefa de manutenção tenha sido desenvolvida para reduzir o lixo de r
 * A execução semanal da tarefa de coleta de lixo do armazenamento de dados será concluída mais rapidamente
 * Também pode melhorar ligeiramente o desempenho geral do AEM
 
-Você pode acessar a tarefa Limpeza de binários de Lucene a partir de: **AEM > Ferramentas > Operações > Manutenção > Janela de manutenção diária > Limpeza** de binários Lucene.
+Você pode acessar a tarefa de Limpeza de binários de Lucene a partir de: **AEM > Ferramentas > Operações > Manutenção > Janela de manutenção diária > Limpeza** de binários Lucene.
 
 ### Coleta de lixo do armazenamento de dados {#data-store-garbage-collection}
 
@@ -589,7 +589,7 @@ Workflows também podem ser removidos do Painel Maintenance. Para executar a tar
 
 >[!NOTE]
 >
-> Para obter informações mais detalhadas sobre a Manutenção do fluxo de trabalho, consulte [esta página](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Para obter informações mais detalhadas sobre a Manutenção do fluxo de trabalho, consulte [esta página](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Manutenção do Log de Auditoria {#audit-log-maintenance}
 
@@ -666,7 +666,7 @@ tarefas de manutenção personalizadas podem ser implementadas como serviços OS
  </tbody>
 </table>
 
-Além das propriedades de serviço acima, o `process()` método da `JobConsumer` interface precisa ser implementado adicionando o código que deve ser executado para a tarefa de manutenção. O formulário fornecido `JobExecutionContext` pode ser usado para exibir informações de status, verificar se o trabalho foi interrompido pelo usuário e criar um resultado (sucesso ou falha).
+Além das propriedades de serviço acima, o `process()` método da `JobConsumer` interface precisa ser implementado adicionando o código que deve ser executado para a tarefa de manutenção. O formulário fornecido `JobExecutionContext` pode ser usado para exibir informações de status, verificar se o trabalho foi interrompido pelo usuário e criar um resultado (bem-sucedido ou com falha).
 
 Para situações em que uma tarefa de manutenção não deve ser executada em todas as instalações (por exemplo, executada apenas na instância de publicação), é possível fazer com que o serviço exija uma configuração para ficar ativo ao adicionar `@Component(policy=ConfigurationPolicy.REQUIRE)`. Você pode marcar a configuração de acordo como sendo o modo de execução dependente no repositório. Para obter mais informações, consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
