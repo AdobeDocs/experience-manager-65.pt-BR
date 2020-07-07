@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4102'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,7 @@ Para adicionar objetos e serviços de modelo de dados:
 
    A guia Modelo exibe objetos de modelo de dados adicionados
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >É possível manter e arrastar caixas de objetos de modelo de dados ao redor para organizá-las na área de conteúdo. Todos os objetos de modelo de dados adicionados no modelo de dados de formulário ficam acinzentados no painel Fontes de Dados.
 
@@ -70,7 +73,7 @@ Para adicionar objetos e serviços de modelo de dados:
 
 1. Toque em **[!UICONTROL Salvar]** para salvar o objeto de modelo de formulário.
 
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Você pode chamar os serviços configurados na guia Serviços de um modelo de dados de formulário usando as regras de formulário adaptáveis. Os serviços configurados estão disponíveis na ação Invocar serviços do editor de regras. Para obter mais informações sobre como usar esses serviços em regras de formulário adaptáveis, consulte Invocar serviços e Definir valor de regras no editor [de](/help/forms/using/rule-editor.md)regras.
 
@@ -213,7 +216,7 @@ Normalmente, há associações criadas entre objetos de modelo de dados em uma f
 
 Quando objetos de modelo de dados associados são adicionados em uma fonte de dados a um modelo de dados de formulário, suas associações são mantidas e exibidas como conectadas por linhas de seta. É possível adicionar associações entre objetos de modelo de dados em diferentes fontes de dados em um modelo de dados de formulário.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >As associações predefinidas em uma fonte de dados JDBC não são retidas no modelo de dados de formulário. Você deve criá-los manualmente.
 
@@ -239,6 +242,7 @@ Para adicionar uma associação:
    * Selecione o tipo de associação — Um para um ou um para muitos.
    * Selecione o objeto de modelo de dados ao qual associar.
    * Selecione o serviço de leitura para ler dados do objeto de modelo selecionado. O argumento read service é exibido. Edite para alterar o argumento, se necessário, e vincule-o à propriedade do objeto de modelo de dados a ser associado.
+
    No exemplo a seguir, o argumento padrão para o serviço de leitura do objeto de modelo de dados Dependents é `dependentid`.
 
    ![add-Association-example](assets/add-association-example.png)
@@ -256,7 +260,7 @@ Para adicionar uma associação:
 1. Toque em **[!UICONTROL Concluído]** para salvar a associação e, em seguida, em **[!UICONTROL Salvar]** para salvar o modelo de dados do formulário.
 1. Repita as etapas para criar mais associações, conforme necessário.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >A associação adicionada é exibida na caixa de objetos de modelo de dados com o título especificado e uma linha que conecta os objetos de modelo de dados associados.
 >
@@ -276,6 +280,7 @@ Para editar propriedades:
    * **Objeto** de modelo de dados: Especifique os serviços de leitura e gravação e edite argumentos.
    * **Propriedade**: Especifique o tipo, o subtipo e o formato da propriedade. Você também pode especificar se a propriedade selecionada é a chave primária para o objeto de modelo de dados.
    * **Serviço**: Especifique o objeto do modelo de entrada, o tipo de saída e os argumentos para o serviço. Para um serviço Get, você pode especificar se é esperado que ele retorne uma matriz.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Caixa de diálogo Editar propriedades para um serviço get
@@ -491,12 +496,12 @@ A tabela a seguir lista as restrições para dados de entrada com base na fonte 
    <td>Swagger</td> 
   </tr> 
   <tr> 
-   <td>enum (string)<br /><br /> </td> 
+   <td>enum (string)<br /> <br /> </td> 
    <td>Restringe o valor de um parâmetro nos dados de entrada a um conjunto fixo de valores de string. Deve ser um storage com pelo menos um elemento, em que cada elemento é único.</td> 
    <td>Swagger, WSDL e Odata</td> 
   </tr> 
   <tr> 
-   <td>enum (número)<br /><br /> </td> 
+   <td>enum (número)<br /> <br /> </td> 
    <td>Restringe o valor de um parâmetro nos dados de entrada a um conjunto fixo de valores numéricos. Deve ser um storage com pelo menos um elemento, em que cada elemento é único.</td> 
    <td>WSDL</td> 
   </tr> 
