@@ -3,7 +3,7 @@ title: Introdução à [!DNL Adobe Experience Manager Assets].
 description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e [!DNL Adobe Experience Manager Asset] ofertas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5b3a442756e95c15cb01c4117a83b761dc8367
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 41%
@@ -49,7 +49,7 @@ Um ativo é essencialmente um binário com metadados, além de representações 
 
 >[!CAUTION]
 >
->Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] instance.
+>Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] deployment.
 
 ### [!DNL Experience Manager Assets] terminologia {#aem-assets-terminology}
 
