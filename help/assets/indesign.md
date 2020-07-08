@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] Integrar com [!DNL Adobe InDesig
 description: Saiba como [!DNL Adobe Experience Manager Assets] se integrar [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1559'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 * Um funcionário proxy para definir e gerenciar uma tarefa específica.
 Podem abranger uma grande variedade de tarefas; por exemplo, o uso de um para processar arquivos [!DNL InDesign Server] .
 
-Para fazer upload completo de arquivos para os quais você criou [!DNL Experience Manager Assets] [!DNL Adobe InDesign] um proxy, é usado. Isso usa um funcionário proxy para se comunicar com o [!DNL Adobe InDesign Server], onde [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) são executados para extrair metadados e gerar várias execuções para [!DNL Experience Manager Assets]. O trabalhador proxy permite a comunicação bidirecional entre a [!DNL InDesign Server] e a(s) [!DNL Experience Manager] instância(s) em uma configuração em nuvem.
+Para fazer upload completo de arquivos para os quais você criou [!DNL Experience Manager Assets] [!DNL Adobe InDesign] um proxy, é usado. Isso usa um funcionário proxy para se comunicar com o [!DNL Adobe InDesign Server], onde [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) são executados para extrair metadados e gerar várias execuções para [!DNL Experience Manager Assets]. O trabalhador proxy permite a comunicação bidirecional entre as instâncias [!DNL InDesign Server] e as [!DNL Experience Manager] em uma configuração em nuvem.
 
 >[!NOTE]
 >
@@ -44,6 +44,7 @@ Esse script de comando:
       * Execuções de PDF e JPG são geradas.
       * Execuções HTML e IDML são geradas.
    * Poste os arquivos resultantes de volta para [!DNL Experience Manager Assets].
+
    >[!NOTE]
    >
    >IDML é um formato baseado em XML que renderiza todo o conteúdo do [!DNL InDesign] arquivo. Ele é armazenado como um pacote compactado usando a compactação [ZIP](https://www.techterms.com/definition/zip) . Para obter mais informações, consulte [InDesign Interchange Formats INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
@@ -58,7 +59,7 @@ Esse script de comando:
    * O texto e os arquivos extraídos são armazenados em [!DNL Experience Manager Assets].
    * Todas as representações são armazenadas em, no próprio ativo [!DNL Experience Manager Assets].
 
-## Integrar o [!DNL InDesign Server] com o Experience Manager {#integrating-the-indesign-server-with-aem}
+## Integre o [!DNL InDesign Server] com o Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Para integrar o [!DNL InDesign Server] para uso com [!DNL Experience Manager Assets] e depois de configurar seu proxy, é necessário:
 
@@ -148,7 +149,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 >
 >O trabalhador reside na instância do proxy.
 
-1. No console Ferramentas, expanda Configurações **[!UICONTROL de serviços em]** nuvem no painel esquerdo. Em seguida, expanda Configuração **[!UICONTROL de proxy da]** Cloud.
+1. No console Ferramentas, expanda Configurações **[!UICONTROL de]** Cloud Service no painel esquerdo. Em seguida, expanda Configuração **[!UICONTROL de proxy da]** Cloud.
 
 1. Clique duas vezes no **[!UICONTROL trabalhador IDS]** para abrir a configuração.
 
@@ -200,13 +201,13 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->Ao trabalhar com um pool de trabalhadores, você pode ativar a lista bloqueada de funcionários do IDS.
+>Ao trabalhar com um pool de trabalhadores, você pode habilitar a lista de bloqueios de trabalhadores IDS.
 >
 >Para fazer isso, ative a caixa de seleção **[!UICONTROL enable.retry.name]** , na `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuração, que ativa as tentativas de trabalho do IDS.
 >
 >Além disso, na `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuração, defina um valor positivo para o `max.errors.to.blacklist` parâmetro que determina o número de tentativas da tarefa antes de excluir uma IDS da lista de manipuladores de tarefas.
 >
->Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o IDS worker é revalidado. Se o trabalhador estiver online, ele será removido da lista bloqueada.
+>Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o IDS worker é revalidado. Se o trabalhador for encontrado on-line, ele será removido da lista de bloqueios.
 
 ## Habilitar suporte para [!DNL InDesign Server] 10.0 ou posterior {#enabling-support-for-indesign-server-or-later}
 
@@ -222,7 +223,7 @@ Para [!DNL InDesign Server] 10.0 ou superior, execute as seguintes etapas para h
 
 ## Configurar [!DNL Experience Manager] credenciais {#configure-aem-credentials}
 
-Você pode alterar as credenciais padrão do administrador (nome de usuário e senha) para acessar o da sua [!DNL InDesign Server] instância sem interromper a integração com o [!DNL Experience Manager] [!DNL InDesign Server].
+Você pode alterar as credenciais padrão do administrador (nome de usuário e senha) para acessar o [!DNL InDesign Server] da sua [!DNL Experience Manager] implantação sem interromper a integração com o [!DNL InDesign Server].
 
 1. Ir para `/etc/cloudservices/proxy.html`.
 1. Na caixa de diálogo, especifique o novo nome de usuário e senha.
