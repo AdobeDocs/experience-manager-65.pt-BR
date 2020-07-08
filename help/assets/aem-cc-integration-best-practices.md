@@ -3,9 +3,9 @@ title: Práticas recomendadas de integração [!DNL Adobe Experience Manager] e 
 description: Práticas recomendadas para [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integrar-se para dinamizar os workflows de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '3250'
+source-wordcount: '3251'
 ht-degree: 16%
 
 ---
@@ -45,6 +45,9 @@ Este artigo foca principalmente nos dois primeiros aspectos das necessidades de 
 
 ### Mapeamento de casos de uso e soluções da Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
+<!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
+-->
+
 | Caso de uso    | [!DNL Adobe Asset Link] | [!DNL Experience Manager] aplicativo para desktop | Observações / Outras soluções |
 |---|---|---|---|
 | Discover - procurar pastas DAM | Sim | [!DNL Experience Manager] Interface da Web e ações da área de trabalho |  |
@@ -73,7 +76,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 ### Glossário de termos comuns {#glossary-of-common-terms}
 
 * **Trabalho em andamento ou trabalho criativo em andamento (WIP)**: uma fase no ciclo de vida do ativo em que um ativo sofre várias alterações e normalmente ainda não está pronto para ser compartilhado com equipes maiores.
-* **Ativos prontos para criação:** [!DNL Assets] que estejam prontos para serem compartilhados com uma equipe mais ampla ou que tenham sido selecionados/aprovados pela equipe criativa para compartilhamento com equipes de marketing ou LOB.
+* **Ativos prontos para criação:** [!DNL Assets] que estejam prontos para serem compartilhados com uma equipe mais ampla ou que tenham sido selecionados ou aprovados pela equipe criativa para compartilhamento com equipes de marketing ou LOB.
 * **Aprovações de ativos**: o processo de aprovação que executa ativos já carregados no DAM, que normalmente inclui aprovações de marca, legais e assim por diante.
 * **Ativo final**: um ativo que passou por todas as aprovações/marcações de metadados e está pronto para ser usado pela equipe maior. Esse ativo é armazenado no DAM e disponibilizado a todos os usuários (ou a todos os interessados). Ele pode ser usado em canais de marketing ou por equipes criativas para criar designs.
 * **Atualização/alteração de ativos secundários:** uma pequena e rápida mudança em um ativo digital. Geralmente é feito em resposta a uma solicitação de retoque ou edição secundária, revisão de ativos ou aprovação (por exemplo, reposição, alteração do tamanho do texto, ajuste da saturação/brilho, cor e assim em diante).
@@ -160,20 +163,20 @@ A seguir estão exemplos de atualizações que normalmente não são relevantes:
 
 #### Usuários criativos com acesso direto ao DAM {#creative-users-with-direct-access-to-dam}
 
-Geralmente, equipes de criação interna ou agências/profissionais de criação integrados à rede interna têm acesso à instância do DAM, incluindo [!DNL Experience Manager] logon. [!DNL Experience Manager] e a infraestrutura de rede pode ser configurada para permitir o acesso direto a partes externas - normalmente organizações confiáveis, como agências que trabalham para um cliente - para ter acesso à rede, por exemplo via VPN ou lista permitida por IP. [!DNL Experience Manager]
+Geralmente, equipes de criação interna ou agências/profissionais de criação integrados à rede interna têm acesso à implantação do DAM, incluindo [!DNL Experience Manager] logon. [!DNL Experience Manager] e a infraestrutura de rede pode ser configurada para permitir o acesso direto a partes externas - normalmente organizações confiáveis, como agências que trabalham para um cliente - para ter acesso à rede, por exemplo via VPN ou lista de permissões IP. [!DNL Experience Manager]
 
 Nesses casos, o Adobe Asset Link ou o aplicativo de desktop ajuda a fornecer acesso fácil aos ativos finais/aprovados e permite salvar ativos prontos para criação no DAM. [!DNL Experience Manager]
 
 #### Usuários criativos sem acesso ao DAM {#creative-users-without-access-to-dam}
 
-Agências externas e freelancers sem acesso direto à instância do DAM podem exigir acesso a ativos aprovados ou podem adicionar seus novos designs ao DAM.
+Agências externas e freelancers sem acesso direto à implantação do DAM podem exigir acesso a ativos aprovados ou podem adicionar seus novos designs ao DAM.
 
 Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 
 * Use o aplicativo desktop se o Link de ativo não funcionar.
 * Use o Portal [de marcas dos ativos](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html) Experience Manager para distribuir ativos com segurança a parceiros externos
 * Usar uma implementação personalizada de um portal de distribuição e seleção de fornecedor com base no [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Use a configuração de Controles de acesso em uma infraestrutura de rede [!DNL Experience Manager] necessária (por exemplo, a lista de VPN e IP permitidos) para dar a terceiros acesso a uma área de conteúdo dedicada no seu DAM. Eles podem usar a interface do usuário [!DNL Experience Manager] da Web para obter ativos e carregar novo conteúdo no DAM.
+* Use a configuração de Controles de acesso em uma infraestrutura de rede [!DNL Experience Manager] necessária (por exemplo, VPN e lista de permissões IP) para dar a terceiros acesso a uma área de conteúdo dedicada no seu DAM. Eles podem usar a interface do usuário [!DNL Experience Manager] da Web para obter ativos e carregar novo conteúdo no DAM.
 
 #### Trabalhos em andamento em ativos de [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
