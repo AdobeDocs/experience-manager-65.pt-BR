@@ -3,7 +3,7 @@ title: Modelos de ativos em [!DNL Adobe Experience Manager Assets].
 description: Saiba mais sobre os modelos de ativos [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais promocionais de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -79,6 +79,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    * Na página Modelos, navegue até uma pasta na qual você criou o material de apoio e clique na ação rápida [!UICONTROL Editar] na miniatura de um material de apoio.
    * Na página de ativos do material de apoio, clique em **[!UICONTROL Editar]** na barra de ferramentas.
    * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
+
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    O localizador de ativos e o editor de texto são exibidos à esquerda da página. O editor de texto é aberto por padrão.
@@ -95,7 +96,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    >[!NOTE]
    >
-   >Certifique-se de que sua [!DNL Experience Manager] instância esteja integrada com um [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] a extração de dados do [!DNL InDesign] modelo e disponibilizá-lo para edição. Para obter detalhes, consulte [integrar os ativos Experience Manager com o InDesign Server](/help/assets/indesign.md).
+   >Certifique-se de que sua [!DNL Experience Manager] implantação esteja integrada com um [!DNL InDesign Server] para permitir [!DNL Experience Manager Assets] a extração de dados do [!DNL InDesign] modelo e disponibilizá-los para edição. Para obter detalhes, consulte [integrar os ativos Experience Manager com o InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar o texto em um campo editável, clique no campo de texto da lista de campos editáveis e edite o texto no campo.
 
@@ -135,11 +136,13 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    >
    >* As imagens não são incorporadas no [!DNL InDesign] modelo subjacente.
    >* As imagens são vinculadas do sistema de arquivos local.
+
    >
    >Para permitir [!DNL Experience Manager] a resolução de imagens, faça o seguinte:
    >
    >* Incorporar imagens ao criar [!DNL InDesign] modelos (Consulte [Sobre links e gráficos](https://helpx.adobe.com/indesign/using/graphics-links.html)incorporados).
    >* Monte [!DNL Experience Manager] no seu sistema de arquivos local e mapeie ícones ausentes com ativos existentes no [!DNL Experience Manager].
+
    >
    >Para obter mais informações sobre como trabalhar com [!DNL InDesign] documentos, consulte as práticas [recomendadas para trabalhar com documentos do InDesign no Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
