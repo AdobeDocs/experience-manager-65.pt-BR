@@ -4,7 +4,7 @@ seo-title: Guia do usuário dos ativos Adobe Experience Manager 6.5
 description: Este guia cobre todas as tarefas de ativos de Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
 seo-description: Abrange todas as tarefas de ativos Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 12%
@@ -35,7 +35,7 @@ Este guia cobre todas as tarefas de ativos de Experience Manager, como criar, ge
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no Experience Manager na interface clássica do usuário. |
 | [Guia do usuário do Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Implantação do Guia do Usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas de Experience Manager. |
-| [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de Experience Manager. |
+| [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua implantação de Experience Manager. |
 | [Gerenciamento do Guia do Usuário](/help/managing/home.md) | Este guia descreve como gerenciar um projeto Experience Manager com êxito. |
 | [Guia do usuário móvel](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com [!DNL Livefyre]. |
