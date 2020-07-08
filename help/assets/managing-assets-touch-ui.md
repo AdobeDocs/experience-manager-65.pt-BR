@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '9250'
 ht-degree: 4%
@@ -63,6 +63,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * Na barra de ferramentas, clique em **[!UICONTROL Criar]**. Em seguida, no menu, clique em **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
    * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do [!DNL Assets] usuário. A caixa de diálogo para renomear o arquivo não é exibida.
+
    ![Criar opção para carregar ativos](assets/create-options.png)
 
    Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
@@ -119,6 +120,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    * o nome do arquivo de ativo não deve conter `* / : [ \\ ] | # % { } ? &`
    * o nome da pasta de ativos não deve conter `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    Não inclua caracteres especiais nas extensões dos nomes de arquivos do ativo.
 
    ![A caixa de diálogo de andamento do upload mostra o status dos arquivos carregados com êxito e dos arquivos que não foram carregados](assets/chlimage_1-10.png)
@@ -131,7 +133,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
 ### Carregamentos em série {#serialuploads}
 
-Fazer upload de diversos ativos em massa consome recursos significativos de E/S, o que pode afetar negativamente o desempenho da sua [!DNL Assets] instância. Em particular, se você tiver uma conexão lenta com a Internet, o tempo de carregamento aumenta drasticamente devido a um pico na E/S do disco. Além disso, seu navegador da Web pode introduzir restrições adicionais ao número de solicitações POST que [!DNL Assets] podem lidar com uploads de ativos simultâneos. Como resultado, a operação de upload falha ou termina prematuramente. Em outras palavras, [!DNL Experience Manager Assets] pode falhar alguns arquivos ao ingerir vários arquivos ou não assimilar nenhum arquivo.
+O upload de diversos ativos em massa consome recursos significativos de E/S, o que pode afetar negativamente o desempenho da sua [!DNL Assets] implantação. Em particular, se você tiver uma conexão lenta com a Internet, o tempo de carregamento aumenta drasticamente devido a um pico na E/S do disco. Além disso, seu navegador da Web pode introduzir restrições adicionais ao número de solicitações POST que [!DNL Assets] podem lidar com uploads de ativos simultâneos. Como resultado, a operação de upload falha ou termina prematuramente. Em outras palavras, [!DNL Experience Manager Assets] pode falhar alguns arquivos ao ingerir vários arquivos ou não assimilar nenhum arquivo.
 
 Para superar essa situação, [!DNL Assets] ingere um ativo por vez (upload em série) durante uma operação de upload em massa, em vez de ingressar simultaneamente todos os ativos.
 
@@ -350,6 +352,7 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 1. Para aplicar zoom no ativo:
    1. Use a `Tab` tecla para mover o foco para a opção de ampliar.
    1. Use a `Enter` tecla para aplicar zoom na imagem.
+
    Para diminuir o zoom, use a tecla `Tab` para mover o foco para a opção de afastar o zoom e pressione `Enter`.
 
 1. Use as teclas `Shift` + `Tab` para mover o foco de volta para a imagem.
@@ -407,6 +410,7 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
    * Número de vezes que o ativo foi exibido ou baixado
    * Canais/dispositivos através dos quais o ativo foi usado
    * Soluções criativas onde o ativo foi usado recentemente
+
    Para obter mais detalhes, consulte [Asset Insights](/help/assets/touch-ui-asset-insights.md).
 
 1. Clique em **[!UICONTROL Salvar e fechar]**.
@@ -480,6 +484,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    * Clique em **[!UICONTROL Voltar]** para retornar à tela **[!UICONTROL Selecionar destino]** .
 
    * Clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
+
    Se você não atualizar referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
 
 ## Gerenciar execuções {#managing-renditions}
@@ -555,6 +560,7 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
       * Se o ativo não tiver referências, ele será excluído.
       * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
+
    >[!NOTE]
    >
    >Para excluir ativos, um usuário requer permissões de exclusão em `dam/asset`. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
@@ -607,6 +613,7 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
    * **[!UICONTROL Cancelar]** para parar a ação
    * **[!UICONTROL Cancele a publicação]** para confirmar que os ativos não foram publicados (não estão mais disponíveis no ambiente de publicação) na data especificada.
+
    >[!NOTE]
    >
    >Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite cancelar a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
@@ -677,6 +684,7 @@ As ferramentas de edição na [!DNL Assets] interface permitem executar pequenos
    * Selecione o ativo e clique em **[!UICONTROL Editar]** na barra de ferramentas.
    * Clique na opção **[!UICONTROL Editar]** que é exibida em um ativo na visualização do cartão.
    * Clique em **[!UICONTROL Editar]** na barra de ferramentas.
+
    ![Opção Editar na barra de ferramentas](assets/edit_icon.png)
 
 1. Para recortar a imagem, clique em **[!UICONTROL Opção de recorte]** ![para recortar uma imagem](assets/chlimage_1-22.png).
@@ -742,6 +750,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    * [Ações rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
+
    ![opção Anotar](assets/chlimage_1-29.png)
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
@@ -870,7 +879,7 @@ Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas n
 
    * Inclua a string `<font_family_name_of_custom_font, sans-serif>` na opção font-family. Por exemplo, se você quiser imprimir anotações em CJK (chinês, japonês e coreano), inclua a string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` na opção família de fontes. Se quiser imprimir anotações em Hindi, baixe a fonte apropriada e configure a família de fontes como Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Reinicie a [!DNL Experience Manager] instância.
+1. Reinicie a [!DNL Experience Manager] implantação.
 
 Este é um exemplo de como você pode configurar [!DNL Experience Manager] para imprimir anotações em CJK (chinês, japonês e coreano):
 
@@ -933,6 +942,7 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
 1. Para comparar duas versões de uma imagem, siga estas etapas:
    * Clique na versão a ser comparada com a versão atual.
    * Arraste o controle deslizante para a esquerda para sobrepor esta versão sobre a versão atual e compare.
+
    ![Use o controle deslizante para comparar as versões selecionadas de um ativo com a versão atual](assets/version-slider.gif)
 
    *Figura: Use o controle deslizante para comparar facilmente as versões selecionadas de um ativo com a versão atual.*
