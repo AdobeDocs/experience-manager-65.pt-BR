@@ -3,7 +3,7 @@ title: Adobe Experience Manager para as práticas recomendadas de compartilhamen
 description: Configure o Adobe Experience Manager para permitir que os usuários do Experience Manager Assets troquem pastas com usuários da Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >O recurso Experience Manager para compartilhamento de pastas da Creative Cloud está obsoleto. A Adobe recomenda usar recursos mais recentes, como o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou o aplicativo [de desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Saiba mais sobre as práticas [recomendadas de integração da](/help/assets/aem-cc-integration-best-practices.md)Experience Manager e da Creative Cloud.
 
-O Adobe Experience Manager pode ser configurado para permitir que os usuários do Assets compartilhem pastas com os usuários dos aplicativos da Adobe Creative Cloud, de modo que eles estejam disponíveis como pastas compartilhadas no serviço Adobe Creative Cloud Assets. O recurso pode ser usado para trocar arquivos entre equipes de criação e usuários do Assets, especialmente quando os usuários criativos não têm acesso à instância do Assets (eles não estão na rede corporativa).
+O Adobe Experience Manager pode ser configurado para permitir que os usuários do Assets compartilhem pastas com os usuários dos aplicativos da Adobe Creative Cloud, de modo que eles estejam disponíveis como pastas compartilhadas no serviço Adobe Creative Cloud Assets. O recurso pode ser usado para trocar arquivos entre equipes de criação e usuários do Assets, especialmente quando os usuários criativos não têm acesso à implantação do Assets (eles não estão na rede corporativa).
 
 Esse tipo de integração pode ser usado nos seguintes casos de uso, especialmente ao trabalhar com usuários que não têm acesso direto aos Ativos:
 
@@ -39,7 +39,7 @@ O diagrama a seguir fornece uma visão geral da integração.
 A integração inclui os seguintes elementos:
 
 * **Servidor** do Experience Manager Assets implantado na rede corporativa (serviços gerenciados ou no local): O compartilhamento de pastas é iniciado aqui.
-* **Serviço** principal do Adobe Marketing Cloud Assets: Atua como intermediário entre os serviços de armazenamento da Experience Manager e da Creative Cloud. O administrador da empresa que usa a integração precisa estabelecer uma relação de confiança entre a organização da Marketing Cloud e a instância Ativos. Eles também [definem uma lista de colaboradores](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)aprovados da Creative Cloud, que os usuários do Assets também podem compartilhar pastas para segurança adicional.
+* **Serviço** principal do Adobe Marketing Cloud Assets: Atua como intermediário entre os serviços de armazenamento da Experience Manager e da Creative Cloud. O administrador da empresa que usa a integração precisa estabelecer uma relação de confiança entre a organização da Marketing Cloud e a implantação dos Ativos. Eles também [definem uma lista de colaboradores](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)aprovados da Creative Cloud, que os usuários do Assets também podem compartilhar pastas para segurança adicional.
 
 * **Serviços** da Web do Creative Cloud Assets (interface do usuário da Web de arquivos do armazenamento e da Creative Cloud): É aqui que usuários específicos do aplicativo da Creative Cloud, com quem uma pasta Ativos foi compartilhada, poderão aceitar o convite e ver a pasta em seu armazenamento de conta da Creative Cloud.
 * **Aplicativo** de desktop da Creative Cloud: (Opcional) Permite acesso direto a pastas/arquivos compartilhados da área de trabalho do usuário criativo por meio da sincronização com o armazenamento Creative Cloud Assets.
