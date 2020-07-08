@@ -3,7 +3,7 @@ title: Migre ativos [!DNL Adobe Experience Manager Assets] em massa.
 description: Descreve como inserir ativos [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 8%
@@ -28,6 +28,7 @@ Antes de executar qualquer uma das etapas desta metodologia, reveja e implemente
 >* Gerenciador de fluxo de trabalho em massa do ACS
 >* Gerenciador de ações rápidas do ACS Commons
 >* Fluxo de trabalho sintético
+
 >
 >
 Este software é de código aberto e é coberto pela [Licença Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Para fazer uma pergunta ou relatar um problema, visite os respectivos [Problemas do GitHub para as ferramentas do ACS AEM](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) e os [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
@@ -61,7 +62,7 @@ Há duas abordagens para carregar os ativos no sistema: uma abordagem baseada em
 
 #### Enviar por HTTP {#pushing-through-http}
 
-A equipe de Serviços gerenciados da Adobe usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro em uma [!DNL Experience Manager] instância. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
+A equipe de Serviços gerenciados da Adobe usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro em uma [!DNL Experience Manager] implantação. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
 
 Há duas desvantagens principais ao usar a abordagem de passar por https:
 
@@ -72,7 +73,7 @@ A outra abordagem para assimilar ativos é extrair ativos do sistema de arquivos
 
 #### Buscar no sistema de arquivos local {#pulling-from-the-local-filesystem}
 
-O Importador [de ativos CSV das ferramentas AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do Experience Manager Asset Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivos de rede ou por meio de uma unidade externa.
+O Importador [de ativos CSV das ferramentas AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do Gerenciador de ativos do Experience Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivos de rede ou por meio de uma unidade externa.
 
 Como os ativos não precisam ser transmitidos através de uma rede, o desempenho geral melhora drasticamente e esse método é geralmente considerado a maneira mais eficiente de carregar ativos no repositório. Além disso, como a ferramenta oferece suporte à ingestão de metadados, você pode importar todos os ativos e metadados em uma única etapa, em vez de criar uma segunda etapa para aplicar os metadados por meio de uma ferramenta separada.
 
@@ -117,15 +118,15 @@ Após a conclusão da migração, os iniciadores dos workflows de ativos [!UICON
 
 ## Migrar entre [!DNL Experience Manager] implantações {#migrating-between-aem-instances}
 
-Embora não seja tão comum, às vezes é necessário migrar grandes quantidades de dados de uma [!DNL Experience Manager] instância para outra; por exemplo, ao executar uma [!DNL Experience Manager] atualização, atualize seu hardware ou migre para um novo datacenter, como com uma migração do AMS.
+Embora não seja tão comum, às vezes é necessário migrar grandes quantidades de dados de uma [!DNL Experience Manager] implantação para outra; por exemplo, ao executar uma [!DNL Experience Manager] atualização, atualize seu hardware ou migre para um novo datacenter, como com uma migração do AMS.
 
-Nesse caso, seus ativos já estão preenchidos com metadados e as execuções já são geradas. Você pode simplesmente se concentrar em mover ativos de uma instância para outra. Ao migrar entre [!DNL Experience Manager] instâncias, execute as seguintes etapas:
+Nesse caso, seus ativos já estão preenchidos com metadados e as execuções já são geradas. Você pode simplesmente se concentrar em mover ativos de uma instância para outra. Ao migrar entre [!DNL Experience Manager] a implantação, execute as seguintes etapas:
 
 1. Desativar workflows: Como você está migrando renderizações juntamente com nossos ativos, deseja desativar os iniciadores de fluxo de trabalho para o fluxo de trabalho de Atualização de ativos [!UICONTROL do] DAM.
 
-1. Migrar tags: Como as tags já foram carregadas na [!DNL Experience Manager] instância de origem, é possível criá-las em um pacote de conteúdo e instalá-las na instância do público alvo.
+1. Migrar tags: Como as tags já foram carregadas na [!DNL Experience Manager] implantação de origem, é possível criá-las em um pacote de conteúdo e instalá-las na instância do público alvo.
 
-1. Migrar ativos: Há duas ferramentas recomendadas para mover ativos de uma [!DNL Experience Manager] instância para outra:
+1. Migrar ativos: Há duas ferramentas recomendadas para mover ativos de uma [!DNL Experience Manager] implantação para outra:
 
    * **Cofre Remote Copy** ou vlt rcp, permite que você use vlt em uma rede. Você pode especificar um diretório de origem e destino e vlt baixa todos os dados do repositório de uma instância e os carrega na outra. O Vlt rcp está documentado em [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **O Grabbit** é uma ferramenta de sincronização de conteúdo de código aberto desenvolvida pela Time Warner Cable para sua [!DNL Experience Manager] implementação. Como ele usa fluxos contínuos de dados, em comparação ao vlt rcp, ele tem uma latência mais baixa e exige uma melhoria de velocidade de duas a dez vezes mais rápida que o vlt rcp. O Grabbit também oferece suporte apenas à sincronização do conteúdo delta, o que permite sincronizar as alterações após a conclusão de uma passagem de migração inicial.
