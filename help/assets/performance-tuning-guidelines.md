@@ -4,7 +4,7 @@ description: Sugestões e orientações [!DNL Experience Manager] sobre configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '2767'
 ht-degree: 0%
@@ -128,7 +128,7 @@ A sua estratégia de otimização de rede depende principalmente da quantidade d
 
 Sempre que possível, defina o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM como Transitório. A configuração reduz significativamente os custos indiretos necessários para processar workflows porque, nesse caso, os workflows não precisam passar pelos processos normais de rastreamento e arquivamento.
 
-1. Navegue até `/miscadmin` a instância do [!DNLEExperience Manager] em `https://[aem_server]:[port]/miscadmin`.
+1. Navegue até `/miscadmin` na implantação do [!DNLEExperience Manager] em `https://[aem_server]:[port]/miscadmin`.
 
 1. Expanda **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL dam]**.
 
@@ -227,7 +227,7 @@ Importar uma grande quantidade de metadados pode resultar em atividade de write-
 
 ## Replicação {#replication}
 
-Ao replicar ativos para um grande número de instâncias de publicação, por exemplo, em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
+Ao replicar ativos para um grande número de instâncias de publicação, por exemplo em uma implementação de Sites, a Adobe recomenda o uso da replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para outras instâncias de publicação, liberando a instância do autor.
 
 ### Configurar replicação em cadeia {#configure-chain-replication}
 
@@ -285,11 +285,11 @@ Para todas as preocupações de desempenho de rede do cliente, execute as seguin
 * Usando uma ferramenta de benchmark de rede
 * Teste contra o expedidor
 
-### [!DNL Experience Manager] teste de instância {#aem-instance-testing}
+### [!DNL Experience Manager] teste implantação {#aem-deployment-testing}
 
-Para minimizar a latência e alcançar alta throughput através da utilização eficiente da CPU e do compartilhamento de carga, monitore regularmente o desempenho da sua [!DNL Experience Manager] instância. Nomeadamente:
+Para minimizar a latência e alcançar alta throughput através da utilização eficiente da CPU e do compartilhamento de carga, monitore o desempenho da sua [!DNL Experience Manager] implantação regularmente. Nomeadamente:
 
-* Execute testes de carga na [!DNL Experience Manager] instância.
+* Execute testes de carga na [!DNL Experience Manager] implantação.
 * Monitore o desempenho de upload e a capacidade de resposta da interface do usuário.
 
 ## [!DNL Experience Manager Assets] lista de verificação de desempenho e impacto das tarefas de gerenciamento de ativos {#checklist}
