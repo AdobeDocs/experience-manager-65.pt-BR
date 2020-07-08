@@ -1,9 +1,12 @@
 ---
-title: Práticas recomendadas para processar os vários formatos de arquivo suportados usando o [!DNL Adobe Experience Manager Assets].
-description: Práticas recomendadas para processar os vários tipos de arquivos suportados usando o [!DNL Experience Manager Assets].
+title: Práticas recomendadas para processar os vários formatos de arquivo suportados usando [!DNL Adobe Experience Manager Assets].
+description: Práticas recomendadas para processar os vários tipos de arquivos suportados usando [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
@@ -38,11 +41,11 @@ As miniaturas e pré-visualizações geradas usando o PDF Rasterizer têm melhor
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-A Adobe recomenda usar [!DNL Adobe InDesign Server] para extrair execuções [!DNL Adobe InDesign]específicas, como IDML e HTML. Para obter mais informações, consulte [Adicionar ativos do Experience Manager como referências no Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+A Adobe recomenda usar [!DNL Adobe InDesign Server] para extrair execuções [!DNL Adobe InDesign]específicas, como IDML e HTML. Para obter mais informações, consulte [Adicionar ativos Experience Manager como referências no Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
-## [!DNL Dynamic Media]  {#dynamic-media}
+## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] gera e oferece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho. Ele proporciona experiências de visualização interativas e simplifica o processo de gestão de campanha digital. Para obter detalhes sobre a ativação, consulte [!DNL Dynamic Media]Configuração do Dynamic Media [](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] gera e oferece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho. Ele proporciona experiências de visualização interativas e simplifica o processo de gestão de campanha digital. Para obter detalhes sobre como ativar [!DNL Dynamic Media], consulte [Configuração do Dynamic Media](/help/assets/config-dynamic.md).
 
 Atualmente, [!DNL Dynamic Media] é possível oferecer suporte a vídeos com até 15 GB de conteúdo por arquivo.
 
