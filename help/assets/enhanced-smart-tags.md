@@ -3,7 +3,7 @@ title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 8%
@@ -27,7 +27,7 @@ Depois que uma tag é treinada e pronta, o serviço pode aplicar essas tags em a
 
 Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura do Adobe Sensei AI para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em E/S da Adobe. Para usá-la no Adobe Experience Manager, o administrador do sistema deve integrar a instância do Experience Manager com a E/S da Adobe.
+O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em E/S da Adobe. Para usá-lo no Adobe Experience Manager, o administrador do sistema deve integrar a implantação do Experience Manager com a E/S da Adobe.
 
 Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligente:
 
