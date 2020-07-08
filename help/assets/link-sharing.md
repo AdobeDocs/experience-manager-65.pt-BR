@@ -3,7 +3,7 @@ title: Gerar um URL para ativos compartilhados
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro do Experience Manager Assets como um URL para terceiros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 6%
@@ -40,7 +40,7 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
 
    >[!NOTE]
    >
-   >Se você quiser compartilhar links da sua instância de autor de Experience Manager para entidades externas, certifique-se de apenas expor os seguintes URLs (que são usados para compartilhamento de links) para `GET` solicitações. Bloqueie outros URLs para garantir a segurança do autor do Experience Manager.
+   >Se você quiser compartilhar links da implantação do Autor do Experience Manager para entidades externas, certifique-se de apenas expor os seguintes URLs (que são usados para compartilhamento de links) para `GET` solicitações. Bloqueie outros URLs para garantir a segurança do autor do Experience Manager.
    >
    >* http://[aem_server]:[porta]/linkshare.html
    >* http://[aem_server]:[porta]/linksharepreview.html
@@ -98,7 +98,7 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
    >
    >O Experience Manager suporta a geração da pré-visualização de ativos desses tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Você só pode baixar os ativos dos outros tipos MIME.
 
-1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e, em seguida, clique em **[!UICONTROL Download]** na barra de ferramentas.
+1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e em **[!UICONTROL Download]** na barra de ferramentas.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
