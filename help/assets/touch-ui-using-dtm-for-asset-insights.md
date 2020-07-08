@@ -3,7 +3,7 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Embora você possa personalizar seu código de rastreamento para permitir que so
 Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
 1. Clique no logotipo do Experience Manager e vá até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Configuração **[!UICONTROL de]** insights.
-1. [Configurar instância Experience Manager com Cloud Service DTM](/help/sites-administering/dtm.md)
+1. [Configurar a implantação do Experience Manager com o Cloud Service DTM](/help/sites-administering/dtm.md)
 
    O token da API deve estar disponível assim que você fizer logon em [https://dtm.adobe.com](https://dtm.adobe.com/) e visitar Configurações **[!UICONTROL da]** conta no Perfil do usuário. Essa etapa não é necessária do ponto de vista Asset Insights, pois a integração dos Experience Manager Sites com Asset Insights ainda está em andamento.
 
@@ -34,6 +34,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
    * Selecione a guia Propriedades **[!UICONTROL da]** Web e clique em **[!UICONTROL Adicionar propriedade]**.
 
    * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://helpx.adobe.com/experience-manager/using/dtm.html).
+
    ![Criar propriedade da Web de edição](assets/Create-edit-web-property.png)
 
 1. Na guia **[!UICONTROL Regras]** , selecione Regras **[!UICONTROL de carregamento de]** página no painel de navegação e clique em **[!UICONTROL Criar nova regra]**.
