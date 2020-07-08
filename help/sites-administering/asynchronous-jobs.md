@@ -1,18 +1,18 @@
 ---
-title: Operações assíncronas
+title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de forma assíncrona algumas tarefas que consomem muitos recursos.
 translation-type: tm+mt
-source-git-commit: 69b90432ac6028a64f36300819e1bead1ae8d671
+source-git-commit: 198593fa456780816216a63790fea8cca469f8c7
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 2%
+source-wordcount: '892'
+ht-degree: 3%
 
 ---
 
 
 # Operações assíncronas {#asynchronous-operations}
 
-Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager processa de modo assíncrono determinadas operações de longa duração e de uso intensivo de recursos.
+Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager processa de modo assíncrono determinadas operações de longa duração e de uso intensivo de recursos. O processamento assíncrono envolve enfileiramento de várias tarefas e sua execução em série, dependendo da disponibilidade dos recursos do sistema.
 
 Essas operações incluem:
 
@@ -22,8 +22,6 @@ Essas operações incluem:
 * Buscando ativos, que estão acima do limite definido, de uma implantação remota de Experience Manager
 * Mover páginas
 * Implantação de cópias online
-
-O processamento assíncrono envolve enfileiramento de várias tarefas e sua execução em série, dependendo da disponibilidade dos recursos do sistema.
 
 Você pode visualização o status de trabalhos assíncronos do painel Status **[!UICONTROL do Trabalho]** Assíncrono na Navegação **** Global -> **Ferramentas** -> **Operações** -> **Tarefas**.
 
@@ -35,7 +33,7 @@ Você pode visualização o status de trabalhos assíncronos do painel Status **
 
 ## Monitore o status das operações assíncronas {#monitor-the-status-of-asynchronous-operations}
 
-Sempre que o AEM processa uma operação de forma assíncrona, você recebe uma notificação na sua caixa de entrada e por email (se ativado).
+Sempre que o AEM processar uma operação de forma assíncrona, você receberá uma notificação na sua [caixa de entrada](/help/sites-authoring/inbox.md) e por email (se ativada).
 
 Para visualização o status das operações assíncronas em detalhes, navegue até a página Status **[!UICONTROL do trabalho]** assíncrono.
 
@@ -142,3 +140,12 @@ Se o número de referências às páginas a serem movidas exceder o número limi
    ![Configuração MSM](assets/async-msm.png)
 
 1. Salve as alterações.
+
+>[!MORELIKETHIS]
+>
+>* [Criar e organizar páginas](/help/sites-authoring/managing-pages.md)
+>* [Criando e Sincronizando Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [Configure e-mail no Experience Manager](/help/sites-administering/notification.md).
+>* [Importe e exporte metadados de ativos em massa](/help/assets/metadata-import-export.md).
+>* [Use Ativos conectados para compartilhar ativos DAM de implantações](/help/assets/use-assets-across-connected-assets-instances.md)remotas.
+
