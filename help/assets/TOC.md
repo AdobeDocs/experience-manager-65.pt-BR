@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guia do usuário dos ativos Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
+source-git-commit: 9f1548785283ffba119d8404e328f513012a082c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 41%
@@ -151,7 +151,7 @@ ht-degree: 41%
    + [Criar projetos de tradução](translation-projects.md)
    + [Preparar ativos para tradução](preparing-assets-for-translation.md)
    + [Baixar ativos no AEM](download-assets-from-aem.md)
-   + [Operações assíncronas](/help/sites-administering/asynchronous-jobs.md)
+   + [Trabalhos assíncronos](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Insights de ativos](touch-ui-asset-insights.md)
    + [Ativar insights de ativos por meio do Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
