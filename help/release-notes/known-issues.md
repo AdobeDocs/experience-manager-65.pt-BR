@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6943eb3d0b73a348fc7bb5a713813bf73f8e7e79
+source-git-commit: 0a55ed44cb7fe3320b2196df38fe8492ee03912d
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 60%
+source-wordcount: '586'
+ht-degree: 57%
 
 ---
 
@@ -52,7 +52,7 @@ Para resolver esse erro:
 
 3. Salve o arquivo e reinicie a instância do AEM.
 
-## Ativos {#assets}
+## Assets {#assets}
 
 * **Pesquisar:** A pesquisa não resultará em nenhum retorno se a string de pesquisa contiver espaços à esquerda ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Esquema de metadados de pasta**: depois de adicionar um botão de escolha, os campos ID e Valor não são renderizados como esperado e a funcionalidade de exclusão não funciona. (CQ-4261144)
@@ -69,6 +69,8 @@ Para resolver esse erro:
 * (Somente para JBoss 7) Quando você atualiza de uma versão anterior para o AEM 6.5 Forms e a versão anterior tinha processos (.lca) que criavam e usavam uma cópia do processo padrão de envio ou renderização, o HTML5 Forms usando tais processos (.lca) não executa as ações necessárias. (CQ-4243928)
 * Em um formulário adaptável, quando um serviço de modelo de dados do formulário é chamado a partir do editor de regras para atualizar valores dinamicamente do componente de escolha de imagem, os valores do componente de escolha de imagem não são atualizados. (CQ-4254754)
 * AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/pt-br/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/pt-br/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Certifique-se de que os pacotes de tempo de execução redistribuíveis mencionados acima estão instalados antes de iniciar a instalação. (CQ-4265668)
+
+* O Gerador de PDF não suporta autenticação baseada em smart card.  Quando um administrador ativa a Política de grupo `Interactive Logon: Require Smart card` em um servidor Windows, todos os usuários existentes do Gerador de PDF são invalidados.
 
 * Quando um formulário adaptável é configurado para atualizar dinamicamente valores de um componente e a instância de publicação que hospeda o formulário é acessada por meio do distribuidor, a funcionalidade para atualizar dinamicamente os valores de um campo para de funcionar. Para solucionar o problema, na instância de publicação, abra o CRXDE, navegue até /libs/fd/af/runtime/clientlibs/guideChartReducer e crie a propriedade listada abaixo. 
 
