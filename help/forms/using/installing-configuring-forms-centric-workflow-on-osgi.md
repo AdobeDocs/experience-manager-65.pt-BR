@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
 workflow-type: tm+mt
 source-wordcount: '1700'
 ht-degree: 2%
@@ -26,11 +26,11 @@ Você pode usar o fluxo de trabalho centrado em [formulários no OSGi](../../for
 
 Depois de configurados, esses workflows podem ser acionados manualmente para concluir um processo definido ou executados de forma programática quando os usuários enviam um formulário ou uma comunicação interativa. O recurso está incluído no pacote suplementar de AEM Forms.
 
-O AEM Forms é uma plataforma poderosa de classe empresarial. O fluxo de trabalho centrado em formulários no OSGi é apenas um dos recursos dos AEM Forms. Para obter a lista completa dos recursos, consulte [Introdução aos AEM Forms](../../forms/using/introduction-aem-forms.md).
+O AEM Forms é uma plataforma poderosa de classe empresarial. O fluxo de trabalho centrado em formulários no OSGi é apenas um dos recursos dos AEM Forms. Para obter a lista completa dos recursos, consulte [Introdução aos AEM Forms](introduction-aem-forms.md).
 
 >[!NOTE]
 >
->Com o fluxo de trabalho centrado no Forms no OSGi, você pode criar e implantar rapidamente workflows para várias tarefas na pilha OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha JEE. Veja uma [comparação](../../forms/using/capabilities-osgi-jee-workflows.md) dos Workflows AEM centrados no Forms no OSGi e no Process Management no JEE para saber mais sobre as diferenças e similaridades nos recursos.
+>Com o fluxo de trabalho centrado no Forms no OSGi, você pode criar e implantar rapidamente workflows para várias tarefas na pilha OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha JEE. Veja uma [comparação](capabilities-osgi-jee-workflows.md) dos Workflows AEM centrados no Forms no OSGi e no Process Management no JEE para saber mais sobre as diferenças e similaridades nos recursos.
 >
 >Após a comparação, se você optar por instalar o recurso Process Management na pilha JEE, consulte [Instalar ou atualizar AEM Forms no JEE](/help/forms/home.md) para obter informações detalhadas sobre a instalação e configuração da pilha JEE e os recursos do Process Management.
 
@@ -141,11 +141,11 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
-Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote à lista permitida:
+Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote à lista de permissões:
 
 1. Abra o AEM Configuration Manager em uma janela do navegador. O URL padrão é https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Pesquise e abra a Configuração **do firewall de** desserialização.
-1. Adicione o pacote **sun.util.calendário** ao campo **permitido** . Clique em Salvar.
+1. Adicione o pacote **sun.util.calendário** ao campo de **lista de permissões** . Clique em Salvar.
 1. Repita as etapas de 1 a 3 em todas as instâncias de Autor e Publicação.
 
 ### Configurações opcionais pós-instalação {#optional-post-installation-configurations}
@@ -164,7 +164,7 @@ A Dispatcher está armazenando em cache e balanceamento de carga em ferramenta p
 
 1. Configure o serviço de filtro de quem indicou:
 
-   Faça logon no gerenciador de configuração Apache Felix como administrador. O URL padrão do gerenciador de configuração é https://&#39;server&#39;:[port_number]/system/console/configMgr. No menu **Configurações** , selecione a opção Filtro **** de Quem indicou Apache Sling. No campo Permitir hosts, digite o nome de host do dispatcher para permitir como uma quem indicou e clique em **Salvar**. O formato da entrada é `https://'[server]:[port]'`.
+   Faça logon no gerenciador de configuração Apache Felix como administrador. O URL padrão do gerenciador de configuração é https://&#39;server&#39;:[port_number]/system/console/configMgr. No menu **Configurações** , selecione a opção Filtro **** de Quem indicou Apache Sling. No campo Permitir hosts, digite o nome de host do dispatcher para permitir como uma quem indicou e clique em **Salvar**. The format of the entry is `https://'[server]:[port]'`.
 
 #### Configurar cache {#configure-cache}
 
