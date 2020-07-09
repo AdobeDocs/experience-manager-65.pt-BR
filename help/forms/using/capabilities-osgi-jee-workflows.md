@@ -1,27 +1,21 @@
 ---
-title: Ações e recursos de Workflows AEM centrados em formulários em workflows JEEi e AEM Forms
-seo-title: Ações e recursos de Workflows AEM centrados em formulários em workflows JEEi e AEM Forms
-description: 'null'
-seo-description: 'null'
-uuid: 8af9527d-fa5e-4fcb-88e1-49571528fca6
+title: Ações e recursos de Workflows AEM centrados em forma em workflows OSGi e AEM Forms JEE
+description: Ações e recursos de Workflows AEM centrados em forma em workflows OSGi e AEM Forms JEE
 contentOwner: khsingh
-topic-tags: publish
-discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 7cc206dc95e6975f61ea9343dea67fa2681a9ae1
+source-git-commit: d5d30e16d2561c020a82cdda847a9dd9b48acd3b
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 20%
+source-wordcount: '914'
+ht-degree: 21%
 
 ---
 
 
-# Ações e recursos de Workflows AEM centrados em formulários em workflows JEEi e AEM Forms {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+# Ações e recursos de Workflows AEM centrados em forma em workflows OSGi e AEM Forms JEE {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## Caixa de entrada do AEM e área de trabalho HTML {#aem-inbox-and-html-workspace}
 
-Você pode usar a Caixa de entrada do AEM para executar e monitorar Workflows AEM centrados em formulários no OSGi. Enquanto isso, o HTML Workspace permite que você execute e monitore Workflows JEE do AEM Forms. A tabela a seguir ajuda você a entender várias ações importantes disponíveis na Caixa de entrada do AEM para Workflows AEM centrados em formulários no OSGi e na Área de trabalho HTML para Workflows JEE de formulários AEM.
+Você pode usar a Caixa de entrada do AEM para executar e monitorar Workflows AEM centrados em formulários no OSGi. Enquanto isso, o HTML Workspace permite que você execute e monitore Workflows JEE do AEM Forms. A tabela a seguir ajuda você a entender várias ações importantes disponíveis na Caixa de entrada do AEM para Workflows AEM centrados em formulários no OSGi e na Área de trabalho HTML para Workflows JEE AEM Forms.
 
 <table>
  <tbody>
@@ -103,16 +97,16 @@ Você pode usar a Caixa de entrada do AEM para executar e monitorar Workflows AE
  </tbody>
 </table>
 
-## Workflows AEM centrados em formulários em Workflows JEEi e AEM Forms {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+## Workflows AEM centrados em formulários em Workflows OSGi e AEM Forms JEE {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-Os Workflows AEM centrados em forma no OSGi e nos Workflows AEM Forms JEE (AEM Forms on JEE Process Management) têm um conjunto diferente de recursos. A tabela a seguir o ajuda a entender recursos importantes disponíveis em Workflows AEM centrados em forma no OSGi e AEM Forms em Workflows JEE:
+Workflows AEM centrados em forma no OSGi e Workflows JEE (AEM Forms no JEE Process Management) têm um conjunto diferente de recursos. A tabela a seguir ajuda você a entender os recursos importantes disponíveis em Workflows AEM centrados em forma no OSGi e AEM Forms em Workflows JEE:
 
 <table>
  <tbody>
   <tr>
    <td>Recursos</td>
    <td>Workflows AEM centrados em forma no OSGi<br /> </td>
-   <td>Workflows JEE do AEM Forms</td>
+   <td>Workflows JEE AEM Forms</td>
   </tr>
   <tr>
    <td>Formulários adaptáveis</td>
@@ -210,19 +204,64 @@ Os Workflows AEM centrados em forma no OSGi e nos Workflows AEM Forms JEE (AEM F
    <td>Incompatível</td>
   </tr>
   <tr>
-   <td>Formulários HTML5, Formulários PDF interativos, Conjunto de formulários<br /> </td>
-   <td>Incompatível<br /> </td>
+   <td>Serviço de pesquisa/agendamento</td>
+   <td>Disponível para utilização imediata</td>
+   <td>Implementação personalizada necessária</td>
+  </tr>
+  <tr>
+   <td>Aplicativo de formulários adaptativos</td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>
+  <tr>
+   <td>Serviço de Assembler</td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>
+  <tr>
+   <td>Serviço do Gerador de PDF</td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>
+  <tr>
+   <td>Serviço do Forms</td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>
+  <tr>
+   <td>Serviço de saída</td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>
+  <tr>
+   <td>Garantia de Documento</td>
+   <td>Compatível</td>
+   <td>Compatível </td>
+  </tr>
+  <tr>
+   <td>Executar script</td>
+   <td>Suporta ECMAScript</td>
+   <td>Suporta códigos Java</td>
+  </tr>
+  <tr>
+   <td>Assembler</td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>  
+  <tr>
+   <td>Formulários HTML5, PDF forms interativos, Conjunto de formulários</td>
+   <td>Incompatível</td>
    <td>Compatível</td>
   </tr>
   <tr>
    <td>Relatório de processo</td>
-   <td>Incompatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Incompatível</td>
+   <td>Compatível</td>
   </tr>
   <tr>
    <td>Assinatura digital</td>
-   <td>Compatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Compatível</td>
+   <td>Compatível</td>
   </tr>
   <tr>
    <td>categorias de ponto de partida</td>
@@ -334,16 +373,16 @@ Os Workflows AEM centrados em forma no OSGi e nos Workflows AEM Forms JEE (AEM F
 
 1. Você pode usar Workflows AEM centrados em forma no OSGi para assinar um formulário adaptativo preenchido. Workflows AEM centrados em forma no OSGi são compatíveis com a assinatura de formulário. Não há suporte para a experiência de assinatura [](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) no formulário.
 
-1. É necessário acessar a Caixa de entrada do AEM para executar e monitorar workflows centrados em formulários no OSGi do AEM Forms e na Área de trabalho HTML para executar e monitorar Workflows JEE do AEM Forms.
-1. Os serviços de Documento do AEM Forms nativos estão disponíveis para Workflows AEM centrados em formulários em OSGi e AEM Forms em Workflows JEE. O AEM Workflow usa serviços de documento nativos para Workflows AEM centrados em forma em Workflows OSGi e AEM Forms JEE (Process Management).
-1. Os Workflows JEE do AEM Forms só podem renderizar um formulário adaptável. Ele não suporta a renderização de um formulário adaptável como um documento PDF.
+1. É necessário acessar a Caixa de entrada do AEM para executar e monitorar workflows centrados em forma nos AEM Forms OSGi e HTML Workspace para executar e monitorar AEM Forms JEE.
+1. Os Serviços de Documento de AEM Forms nativos estão disponíveis para Workflows AEM centrados em forma no OSGi e AEM Forms em Workflows JEE. O AEM Workflow usa serviços de documento nativos para Workflows AEM centrados em forma em Workflows OSGi e AEM Forms JEE (Process Management).
+1. Workflows JEE AEM Forms só podem renderizar um formulário adaptável. Ele não suporta a renderização de um formulário adaptável como um documento PDF.
 1. Os Workflows JEE de formulários AEM não têm uma etapa separada para o Adobe Sign. Você precisa de um formulário adaptável habilitado para o Adobe Sign para Workflows JEE de formulários AEM. Para obter mais detalhes, consulte a documentação [do](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)Adobe Sign.
 1. Você pode usar a etapa [Invocar serviço](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) de modelo de dados de formulário para chamar um serviço da Web e postar ou recuperar dados de um aplicativo de terceiros.
 1. Você pode usar a etapa [Enviar email](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) para enviar emails.
 
 ## Diferenças entre os recursos da Caixa de entrada do AEM e do aplicativo AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar os aplicativos [AEM Inbox](../../forms/using/manage-applications-inbox.md) e AEM Forms. No entanto, os recursos da Caixa de entrada do AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada do AEM funciona somente com workflows [centrados em](../../forms/using/aem-forms-workflow.md) formulários, enquanto o aplicativo AEM Forms funciona com workflows centrados em formulários e gerenciamento de processos.
+Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar o aplicativo [AEM Inbox](../../forms/using/manage-applications-inbox.md) e o aplicativo AEM Forms. Os recursos da Caixa de entrada do AEM e do aplicativo AEM Forms, no entanto, são diferentes. A Caixa de entrada do AEM funciona somente com workflows [centrados no](../../forms/using/aem-forms-workflow.md) Forms, enquanto o aplicativo AEM Forms funciona com workflows centrados no Forms e também com gerenciamento de processos.
 
 A tabela a seguir lista os recursos da Caixa de entrada do AEM e do aplicativo AEM Forms:
 
