@@ -1,15 +1,18 @@
 ---
 title: Fluxo de trabalho centrado em formulários no OSGi
 seo-title: Crie rapidamente processos baseados em formulários adaptáveis, automatize operações de serviços de documento e use o Adobe Sign com workflows AEM
-description: Usar o fluxo de trabalho do AEM Forms para automatizar e criar rapidamente revisões e aprovações para serviços de documento de start
-seo-description: Use o fluxo de trabalho do AEM Forms para automatizar e criar rapidamente revisões e aprovações, para serviços de documentos de start (por exemplo, para converter um documento PDF em outro formato), integrar-se ao fluxo de trabalho de assinatura do Adobe Sign e muito mais.
+description: Use o Fluxo de trabalho do AEM Forms para automatizar e criar rapidamente revisões e aprovações para os serviços de documentos do start
+seo-description: Use o Fluxo de trabalho do AEM Forms para automatizar e criar rapidamente revisões e aprovações, para serviços de documentos de start (por exemplo, para converter um documento PDF em outro formato), integrar-se ao fluxo de trabalho de assinatura do Adobe Sign e muito mais.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+workflow-type: tm+mt
+source-wordcount: '3065'
+ht-degree: 1%
 
 ---
 
@@ -28,9 +31,9 @@ Você pode usar Workflows AEM para criar rapidamente workflows baseados em formu
 
 Com o fluxo de trabalho centrado no Forms no OSGi, você pode criar e implantar rapidamente workflows para várias tarefas na pilha OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha JEE. O desenvolvimento e o gerenciamento de workflows usam os recursos familiares de Fluxo de trabalho do AEM e Caixa de entrada do AEM. Os Workflows são a base para automatizar os processos de negócios reais que abrangem vários sistemas de software, redes, departamentos e até mesmo organizações.
 
-Depois de configurados, esses workflows podem ser acionados manualmente para concluir um processo definido ou executados de forma programática quando os usuários enviam um formulário ou uma carta de gerenciamento [de](/help/forms/using/cm-overview.md) correspondência. Com esses recursos aprimorados do AEM Workflow, o AEM Forms oferta dois recursos distintos, mas semelhantes. Como parte de sua estratégia de implantação, você precisa decidir qual funciona para você. Veja uma [comparação](../../forms/using/capabilities-osgi-jee-workflows.md) dos Workflows AEM centrados em formulários no OSGi e no Process Management no JEE. Além disso, para a topologia de implantação, consulte [Arquitetura e topologias de implantação para o AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Depois de configurados, esses workflows podem ser acionados manualmente para concluir um processo definido ou executados de forma programática quando os usuários enviam um formulário ou uma carta de gerenciamento [de](/help/forms/using/cm-overview.md) correspondência. Com esses recursos aprimorados do AEM Workflow, o AEM Forms oferta dois recursos distintos, mas semelhantes. Como parte de sua estratégia de implantação, você precisa decidir qual funciona para você. Veja uma [comparação](capabilities-osgi-jee-workflows.md) dos Workflows AEM centrados em formulários no OSGi e no Process Management no JEE. Além disso, para a topologia de implantação, consulte [Arquitetura e topologias de implantação para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-O fluxo de trabalho centrado em formulários no OSGi estende a Caixa de entrada [do](/help/sites-authoring/inbox.md) AEM e fornece componentes adicionais (etapas) para o editor de fluxo de trabalho do AEM adicionar suporte para workflows centrados em formulários do AEM. A Caixa de entrada estendida do AEM tem funcionalidades semelhantes ao [AEM Forms Workspace](../../forms/using/introduction-html-workspace.md). Juntamente com o gerenciamento de workflows centrados em humanos (Aprovação, Revisão e assim por diante), você pode usar workflows AEM para automatizar operações relacionadas aos serviços [de](/help/sites-developing/workflows-step-ref.md)documentos (por exemplo, Gerar PDF) e documentos de assinatura eletrônica (Adobe Sign).
+O fluxo de trabalho centrado em formulários no OSGi estende a Caixa de entrada [do](/help/sites-authoring/inbox.md) AEM e fornece componentes adicionais (etapas) para o editor de fluxo de trabalho do AEM adicionar suporte para workflows centrados em AEM Forms. A Caixa de entrada estendida do AEM tem funcionalidades semelhantes ao [AEM Forms Workspace](introduction-html-workspace.md). Juntamente com o gerenciamento de workflows centrados em humanos (Aprovação, Revisão e assim por diante), você pode usar workflows AEM para automatizar operações relacionadas aos serviços [de](/help/sites-developing/workflows-step-ref.md)documentos (por exemplo, Gerar PDF) e documentos de assinatura eletrônica (Adobe Sign).
 
 Todas as etapas do fluxo de trabalho do AEM Forms oferecem suporte ao uso de variáveis. As variáveis permitem que as etapas do fluxo de trabalho mantenham e passem os metadados pelas etapas no tempo de execução. Você pode criar diferentes tipos de variáveis para armazenar diferentes tipos de dados. Você também pode criar coleções de variáveis (array) para armazenar várias instâncias de dados relacionados com o mesmo tipo. Geralmente, você usa uma variável ou uma coleção de variáveis quando precisa tomar uma decisão com base no valor que ela contém ou armazenar informações necessárias posteriormente em um processo. Para obter mais informações sobre como usar variáveis nesses componentes de fluxo de trabalho centrados no Forms (etapas), consulte Fluxo de trabalho centrado no [Forms em OSGi - Referência](../../forms/using/aem-forms-workflow-step-reference.md)de etapas. Para obter informações sobre como criar e gerenciar variáveis, consulte [Variáveis em workflows](../../forms/using/variable-in-aem-workflows.md)AEM.
 
@@ -43,7 +46,7 @@ O diagrama a seguir descreve o procedimento completo para criar, executar e moni
 * Um fluxo de trabalho é uma representação de um processo de negócios do mundo real. Mantenha o seu processo de negócios real e a lista dos participantes do processo de negócios prontos. Além disso, mantenha o material promocional (formulários adaptáveis, Documentos PDF e muito mais) pronto antes que o start crie um fluxo de trabalho.
 * Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM e o relatório de progresso do fluxo de trabalho da ajuda. Divida seu processo de negócios em estágios lógicos.
 * Você pode configurar a etapa de atribuição de tarefa de Workflows AEM para enviar notificações por email aos usuários ou destinatários. Portanto, [ative as notificações](#configure-email-service)por email.
-* Um fluxo de trabalho também pode usar o Adobe sign para assinaturas digitais. Se você planeja usar o Adobe Sign em um fluxo de trabalho, [configure o Adobe Sign para o AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) antes de usá-lo em um fluxo de trabalho.
+* Um fluxo de trabalho também pode usar o Adobe sign para assinaturas digitais. Se você planeja usar o Adobe Sign em um fluxo de trabalho, [configure o Adobe Sign para AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) antes de usá-lo em um fluxo de trabalho.
 
 ## Create a workflow model {#create-a-workflow-model}
 
@@ -107,13 +110,13 @@ O exemplo cria um modelo de fluxo de trabalho e um aplicativo de hipoteca para s
 
    ![OU Exemplo de divisão](assets/orsplit_branch1_active_new.png)
 
-   **expressão do Roteamento para a Ramificação 1**
+   **expressão do Roteamento da Ramificação 2**
 
    Quando um usuário toca em **Rejeitar** na Caixa de entrada do AEM, a Ramificação 2 é ativada.
 
    ![OU Exemplo de divisão](assets/orsplit_branch2_active_new.png)
 
-   Para obter informações sobre como criar expressões de roteamentos usando variáveis, consulte [Variáveis em workflows](../../forms/using/variable-in-aem-workflows.md)de formulários AEM.
+   Para obter informações sobre como criar expressões de roteamentos usando variáveis, consulte [Variáveis em workflows](../../forms/using/variable-in-aem-workflows.md)de AEM Forms.
 
 1. Adicione outras etapas do fluxo de trabalho para criar a lógica comercial.
 
@@ -203,7 +206,7 @@ O aplicativo de fluxo de trabalho criado está disponível como um aplicativo na
 
 ### Enviar um aplicativo do aplicativo AEM Forms {#afa}
 
-O aplicativo AEM Forms sincroniza com um servidor AEM Forms e permite fazer alterações nos dados do formulário, tarefas, aplicativos de fluxo de trabalho e informações salvas (rascunhos/modelos) na sua conta. Para obter mais informações, consulte Aplicativo [](/help/forms/using/aem-forms-app.md) AEM Forms e artigos relacionados.
+O aplicativo AEM Forms sincroniza com um servidor AEM Forms e permite fazer alterações nos dados do formulário, tarefa, aplicativos de fluxo de trabalho e informações salvas (rascunhos/modelos) na sua conta. Para obter mais informações, consulte o aplicativo [AEM Forms](/help/forms/using/aem-forms-app.md) e artigos relacionados.
 
 ### Enviar um formulário adaptável {#af}
 
