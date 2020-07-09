@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
+source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -466,7 +466,7 @@ Você pode habilitar um usuário que não seja administrador a usar o Gerador de
 
 1. Defina o valor da variável como TRUE.
 
-1. Reinicie a instância de formulários do AEM.
+1. Reinicie a instância do AEM Forms.
 
 ## Configurando AEM Forms no JEE para acesso além da empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
