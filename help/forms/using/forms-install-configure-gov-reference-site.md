@@ -8,23 +8,27 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 38f40badf8a850de363fa3f28232d3037fbf209b
+workflow-type: tm+mt
+source-wordcount: '5037'
+ht-degree: 1%
 
 ---
 
 
-# Configurar e configurar o site de referência We.Gov{#set-up-and-configure-we-gov-reference-site}
+# Configurar e configurar o site de referência We.Gov {#set-up-and-configure-we-gov-reference-site}
 
 ## Detalhes do pacote de demonstração {#demo-package-details}
 
 ### Pré-requisitos de instalação {#installation-prerequisites}
 
-Este pacote foi criado para o autor **OSGI do** AEM Forms 6.4, foi testado e, portanto, é suportado nas seguintes versões da plataforma:
+Este pacote foi criado para o Autor **OSGI do** AEM Forms 6.4, foi testado e, portanto, é suportado nas seguintes versões da plataforma:
 
 | VERSÃO DO AEM | VERSÃO DO PACOTE DO AEM FORMS | STATUS |
 |---|---|---|
 | 6.4 | 5.0.86 | **Compatível** |
 | 6,5 | 6.0.80 | **Compatível** |
+| 6.5.3 | 6.0.122 | **Compatível** |
 
 Este pacote contém a configuração em nuvem que suporta as seguintes versões de plataforma:
 
@@ -32,7 +36,7 @@ Este pacote contém a configuração em nuvem que suporta as seguintes versões 
 |---|---|---|
 | Adobe Sign | API v5 | **Compatível** |
 | Microsoft Dynamics 365 | 1710 (9.1.0.3020) | **Compatível** |
-
+| Adobe Analytics | v1.4 Rest API | **Compatível** |
 **Considerações sobre a instalação do pacote:**
 
 * Espera-se que o pacote seja instalado em um servidor limpo, livre de outros pacotes de demonstração ou versões mais antigas do pacote de demonstração
@@ -48,10 +52,14 @@ O pacote de demonstração We.Gov do AEM Forms (**we-gov-forms.pkg.all-&lt;versi
 
       * **we-gov-forms.core-&lt;version>.jar** - *Contém todos os serviços OSGI, implementação de etapa de fluxo de trabalho personalizada etc.*
 
+      * **we-gov-forms.derby&lt;version>.jar** - *Contém todos os serviços OSGI, schema de banco de dados etc.*
+
       * **core.wcm.components.all-2.0.4.zip** - *Coleção de componentes WCM de amostra*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - pacote de layout Grade de sites *AEM para controle de coluna da página Sites*
+      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - pacote de layout Grade de *AEM Sites para controle de coluna da página Sites*
    * **we-gov-forms.ui.content-&lt;versão>.zip** - *Contém todo o conteúdo, páginas, imagens, formulários, ativos de comunicação interativos etc.*
+
+   * **we-gov-forms.ui.analytics-&lt;versão>.zip** - *Contém todos os dados do Web.Gov Forms Analytics a serem armazenados no repositório.*
 
    * **we-gov-forms.config.public-&lt;version>.zip** - *Contém todos os nós de configuração padrão, incluindo configurações de nuvem de espaço reservado para ajudar a evitar problemas de modelo de dados de formulários e de vínculo de serviço.*
 
@@ -59,17 +67,40 @@ O pacote de demonstração We.Gov do AEM Forms (**we-gov-forms.pkg.all-&lt;versi
 Os ativos incluídos neste pacote incluem:
 
 * Páginas do site do AEM com modelos editáveis
-* Formulários AEM Adaptive
-* Comunicações interativas do AEM Forms (Imprimir e Canal da Web)
-* Documento de registro XDP do AEM Forms
-* Modelo de dados do AEM Forms MS Dynamics
+* Formulários adaptativos AEM Forms
+* AEM Forms Interative Communications (Canal da Web e Impressão)
+* Documento de Registro XDP AEM Forms
+* Modelo de dados do AEM Forms Dynamics Forms
 * Integração do Adobe Sign
 * Modelo de fluxo de trabalho AEM
-* Imagens de amostra do AEM Assets
+* Imagens de amostra de AEM Assets
+* Amostra (em memória) Apache Derby Database
+* Fonte de Dados Derby Apache (para uso com o Modelo de Dados de Formulário)
 
 ## Opções de configuração {#configuration-options}
 
-Esta seção inclui detalhes sobre as opções de configuração. Neste momento, esta seção está intencionalmente vazia.
+Os usuários podem configurar várias opções de serviço de fluxo de trabalho que incluem:
+
+1. Entrada do Microsoft Dynamics
+1. Adobe Sign
+1. Gerenciamento de comunicações personalizadas do AEM
+1. Adobe Analytics
+
+Para configurá-los para serem ativados no Fluxo de trabalho, os usuários precisam executar as seguintes tarefas.
+
+1. Navegue até https://&#39;[server]:[port]&#39;/system/console/configMgr.
+
+1. Localize as Configurações *WeGov*.
+
+1. Abra a definição do serviço e permita que os serviços selecionados sejam chamados dentro do fluxo de trabalho.
+
+>[!NOTE]
+>
+>Como um usuário ativa o serviço na página do Configuration Manager, os usuários ainda precisam configurar uma configuração de serviço para se comunicar com os serviços externos solicitados.
+
+![nós governamos o pacote de formulários](assets/aftia-configuration-options.jpg)
+
+1. Depois de concluído, clique no botão Salvar para salvar as configurações.
 
 ## Instalação do pacote de demonstração {#demo-package-installation}
 
@@ -83,7 +114,7 @@ Esta seção contém informações sobre como instalar o pacote de demonstraçã
 
    ![Ícone Compartilhamento de pacotes](assets/package_share_icon.jpg)
 
-1. Faça logon usando sua Adobe ID.
+1. Faça logon usando seu Adobe ID.
 1. Pesquise e localize o pacote **we-gov-forms.pkg.all-&lt;versão>** .
 1. Selecione a opção &quot;Download&quot; e aceite os Termos e Condições.
 1. Depois de baixado, selecione a opção &quot;Baixado&quot; para localizar o pacote no Gerenciador de pacotes.
@@ -131,6 +162,7 @@ Esta seção contém detalhes e instruções sobre a configuração pós-implant
 ### Configuração fictícia do usuário {#fictional-user-configuration}
 
 1. Navegue até *https://&lt;aemserver>:&lt;porta>/libs/granite/security/content/groupadmin.html*
+1. Faça logon como administrador para executar as tarefas abaixo.
 1. Procure por &quot;**fluxo de trabalho**&quot;.
 1. Selecione o grupo &quot;**workflow-users**&quot; e clique em &quot;Propriedades&quot;.
 1. Navegue até a guia &quot;Membros&quot;.
@@ -140,14 +172,14 @@ Esta seção contém detalhes e instruções sobre a configuração pós-implant
    ![Editar configurações de grupo para usuários de fluxo de trabalho](assets/edit_group_settings.jpg)
 
 1. Clique em &quot;Salvar e fechar&quot; na barra de menus.
-1. Repita as etapas de 2 a 7 pesquisando por &quot;**analytics**&quot;, selecionando o grupo &quot;Administradores **do** Analytics&quot; e adicionando o grupo &quot;Usuários **de formulário** We.Gov&quot; como membro.
+1. Repita as etapas de 2 a 7 pesquisando por &quot;**analytics**&quot;, selecionando o grupo &quot;Administradores **** Analytics&quot; e adicionando o grupo &quot;Usuários **de formulário** We.Gov&quot; como membro.
 1. Repita as etapas de 2 a 7 pesquisando &quot;usuários **de** formulários&quot;, selecionando o grupo &quot;**formulários-usuários** avançados&quot; e adicionando o grupo &quot;Usuários **de formulário** We.Gov&quot; como membro.
 1. Repita as etapas de 2 a 7 pesquisando &quot;usuários **de** formulários&quot;, selecionando o grupo &quot;**usuários** de formulários&quot; e, desta vez, adicionando o grupo &quot;Usuários **do** We.Gov&quot; como membro.
 
 ### Configuração do servidor de email {#email-server-configuration}
 
 1. Revisar a documentação de configuração [Configurando notificação por email](/help/sites-administering/notification.md)
-
+1. Faça logon como administrador para executar esta tarefa.
 1. Navegue até *https://&lt;aemserver>:&lt;porta>/system/console/configMgr*
 1. Localize e clique no serviço **Day CQ Mail Service** para configurar.
 
@@ -159,11 +191,12 @@ Esta seção contém detalhes e instruções sobre a configuração pós-implant
    1. **Porta** do servidor: por exemplo (465) para o gmail que usa SSL
    1. **Usuário SMTP:** demo@ &lt;nome da empresa> .com
    1. **Endereço**&quot;De&quot;: aemformsdemo@adobe.com
+
    ![Configurar SMTP](assets/configure_smtp.jpg)
 
 1. Clique em &quot;Salvar&quot; para salvar a configuração.
 
-### Configuração SSL do AEM {#aemsslconfig}
+### (Opcional) Configuração SSL do AEM {#aemsslconfig}
 
 Esta seção contém detalhes sobre como configurar o SSL na instância do AEM para poder configurar a configuração da Adobe Sign Cloud.
 
@@ -174,25 +207,30 @@ Esta seção contém detalhes sobre como configurar o SSL na instância do AEM p
 **Notas:**
 
 1. Navegue até https://&lt;aemserver>:&lt;port>/aem/inbox onde você poderá concluir o processo explicado no link de documentação de referência acima.
-1. O pacote **we-gov-forms.pkg.all-&lt;versão>.zip** inclui uma chave SSL de amostra e um certificado que podem ser acessados extraindo a pasta **we-gov-forms.pkg.all-&lt;versão>.zip/ssl** que faz parte do pacote.
+1. O `we-gov-forms.pkg.all-[version].zip` pacote inclui uma chave SSL de amostra e um certificado que podem ser acessados extraindo a `we-gov-forms.pkg.all-[version].zip/ssl` pasta que faz parte do pacote.
 
 1. Certificado SSL e detalhes da chave:
 
    1. emitido para &quot;CN=localhost&quot;
    1. Validade de 10 anos
    1. valor da senha de &quot;password&quot;
+1. A chave privada é *localhostprivate.der*.
+1. O certificado é o *localhost.crt*.
+1. Clique em Avançar.
+1. O nome do host HTTPS deve ser definido como *localhost*.
+1. A porta deve ser definida como uma porta exposta pelo sistema.
 
-### Adobe Sign cloud configuration {#adobe-sign-cloud-configuration}
+### (Optional) Adobe Sign cloud configuration {#adobe-sign-cloud-configuration}
 
 Esta seção contém detalhes e instruções sobre a Configuração da Adobe Sign Cloud.
 
 **Referências:**
 
-1. [Integrar o Adobe Sign ao AEM Forms](adobe-sign-integration-adaptive-forms.md)
+1. [Integrar o Adobe Sign a AEM Forms](adobe-sign-integration-adaptive-forms.md)
 
 #### Cloud configuration {#cloud-configuration}
 
-1. **Revise os pré-requisitos. Consulte Configuração[SSL do](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig)AEM para obter a configuração SSL necessária.**
+1. Revise os pré-requisitos. Consulte Configuração [SSL do](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) AEM para obter a configuração SSL necessária.
 1. Vá até:
 
    *https://&lt;aemserver>:&lt;porta>/libs/adobesign/cloudservices/adobesign.html/conf/we-gov*
@@ -209,7 +247,7 @@ Esta seção contém detalhes e instruções sobre a Configuração da Adobe Sig
 1. Clique em &quot;Conectar-se ao Adobe Sign&quot;.
 1. Após a conexão bem-sucedida, clique em &quot;Salvar e fechar&quot; para concluir a integração.
 
-### Configuração da nuvem do MS Dynamics {#ms-dynamics-cloud-configuration}
+### (Opcional) Configuração da nuvem do MS Dynamics {#ms-dynamics-cloud-configuration}
 
 Esta seção contém detalhes e instruções sobre a Configuração do MS Dynamics Cloud.
 
@@ -226,10 +264,10 @@ Esta seção contém detalhes e instruções sobre a Configuração do MS Dynami
 
    1. Verifique se você está acessando o servidor usando o mesmo URL de redirecionamento configurado no registro do aplicativo do MS Dynamics.
 
-1. Selecione a configuração &quot;Serviço Microsoft Dynamics OData Cloud&quot;.
+1. Selecione a configuração &quot;Cloud Service OData do Microsoft Dynamics&quot;.
 1. Clique em &quot;Propriedades&quot;.
 
-   ![Propriedades do serviço da Microsoft OData Cloud](assets/properties_odata_cloud_service.jpg)
+   ![Propriedades do Cloud Service OData da Microsoft](assets/properties_odata_cloud_service.jpg)
 
 1. Navegue até a guia &quot;Configurações de autenticação&quot;.
 1. Digite os seguintes detalhes:
@@ -279,7 +317,7 @@ As etapas detalhadas nesta seção são incluídas para ajudá-lo a localizar a 
 
    *[https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
 
-#### Teste do modelo de dados de formulário {#testing-the-form-data-model}
+#### Teste do modelo de dados de formulários (dinâmico) {#testing-the-form-data-model}
 
 Quando a configuração em nuvem estiver concluída, talvez você queira testar o modelo de dados do formulário.
 
@@ -298,15 +336,37 @@ Quando a configuração em nuvem estiver concluída, talvez você queira testar 
 
 1. Edite o Modelo de dados de formulário.
 
-   >[!NOTE]
-   Certifique-se de clicar em **Cancelar** em vez de **Salvar e fechar** para evitar problemas que exijam reinstalação.
-
 1. Teste os serviços para garantir que eles se conectem com êxito à Fonte de Dados configurada.
+
+   >[!NOTE]
+   Depois de testar os serviços, clique em **Cancelar** para garantir que as alterações involuntárias não sejam propagadas para o Modelo de dados de formulário.
 
    >[!NOTE]
    Foi relatado que uma reinicialização do servidor AEM era necessária para que a fonte de dados se vinculasse com êxito ao FDM.
 
-### Adobe Analytics configuration {#adobe-analytics-configuration}
+#### Teste do Modelo de dados de formulários (Derby) {#test-fdm-derby}
+
+Quando a configuração em nuvem estiver concluída, talvez você queira testar o modelo de dados de formulários.
+
+1. Navegue até *https://&lt;aemserver>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
+
+1. Selecione o FDM **de inscrição** We.gov e selecione **Propriedades**.
+
+   ![Propriedades do Dynamics CRM FDM](assets/aftia-enrollment-fdm.jpg)
+
+1. Navegue até a guia **Atualizar origem** .
+
+1. Verifique se a Configuração **sensível ao** contexto está definida como `/conf/we-gov` e se a fonte de dados configurada é **We.Gov Derby DS**.
+
+   ![Propriedades do Dynamics CRM FDM](assets/aftia-update-data-source.jpg)
+
+1. Click on **Save and Close**.
+
+1. Teste os serviços para garantir que eles se conectem com êxito à Fonte de Dados configurada
+
+   * Para testar a conexão, selecione a conta **HOMEMORTGAGEACCOUNT** e forneça um serviço get. Teste o serviço e os administradores do sistema podem ver os dados sendo recuperados.
+
+### Configuração do Adobe Analytics (opcional) {#adobe-analytics-configuration}
 
 Esta seção contém detalhes e instruções sobre a Configuração da Adobe Analytics Cloud.
 
@@ -314,15 +374,15 @@ Esta seção contém detalhes e instruções sobre a Configuração da Adobe Ana
 
 * [Integração ao Adobe Analytics](../../sites-administering/adobeanalytics.md)
 
-* [Conexão com o Adobe Analytics e criação de estruturas](../../sites-administering/adobeanalytics-connect.md)
+* [Conectando-se ao Adobe Analytics e criando estruturas](../../sites-administering/adobeanalytics-connect.md)
 
 * [Visualizar dados de análise de página](../../sites-authoring/pa-using.md)
 
 * [Configuração de análises e relatórios](configure-analytics-forms-documents.md)
 
-* [Visualização e compreensão dos relatórios de análise do AEM Forms](view-understand-aem-forms-analytics-reports.md)
+* [Visualização e compreensão dos relatórios de análise de AEM Forms](view-understand-aem-forms-analytics-reports.md)
 
-### Configuração do serviço em nuvem do Adobe Analytics {#adobe-analytics-cloud-service-configuration}
+### Configuração do serviço em nuvem da Adobe Analytics {#adobe-analytics-cloud-service-configuration}
 
 Este pacote vem pré-configurado para se conectar ao Adobe Analytics. As etapas abaixo são fornecidas para permitir que essa configuração seja atualizada.
 
@@ -330,7 +390,7 @@ Este pacote vem pré-configurado para se conectar ao Adobe Analytics. As etapas 
 1. Localize a seção Adobe Analytics e selecione o link &quot;Mostrar configurações&quot;.
 1. Selecione a configuração &quot;We.Gov Adobe Analytics (Analytics Configuration)&quot;.
 
-   ![Configuração do serviço em nuvem do Analytics](assets/analytics_config.jpg)
+   ![Configuração do serviço em nuvem da Analytics](assets/analytics_config.jpg)
 
 1. Clique no botão &quot;Editar&quot; para atualizar a configuração do Adobe Analytics (será necessário fornecer o Segredo compartilhado). Clique em &quot;Conectar-se ao Analytics&quot; para se conectar e em &quot;OK&quot; para concluir.
 
@@ -338,19 +398,65 @@ Este pacote vem pré-configurado para se conectar ao Adobe Analytics. As etapas 
 
 1. Na mesma página, clique em &quot;We.Gov Adobe Analytics Framework (Analytics Framework)&quot; se desejar atualizar as configurações da estrutura (consulte [Ativar a criação](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) do AEM para ativar a criação).
 
-### relatórios do Adobe Analytics {#adobe-analytics-reporting}
+#### Credenciais do usuário para localização do Analytics {#analytics-locating-user-credentials}
 
-#### Visualização do relatórios de sites do Adobe Analytics {#view-adobe-analytics-sites-reporting}
+Para localizar as credenciais de usuário para uma conta Adobe Analytics, o administrador da conta deve executar as seguintes tarefas.
+
+1. Navegue até o portal da Adobe Experience Cloud.
+   * Faça logon com suas credenciais de administrador
+1. Selecione o ícone do Adobe Analytics no painel principal.
+   ![Acesso rápido](assets/aftia-quick-access.jpg)
+1. Navegue até a guia Administrador e selecione o item Gerenciamento de usuários (Herdado)
+   ![Relatórios](assets/aftia-reports.jpg)
+1. Select the **Users** tab.
+   ![Gerenciamento de usuários](assets/aftia-user-management.jpg)
+1. Selecione o usuário desejado na lista de usuários.
+1. Role até a parte inferior da página e as informações de autenticação dos usuários aparecerão na parte inferior da página.
+   ![Gerenciar acesso](assets/aftia-admin-user-access.jpg)
+1. O nome de usuário e as informações de segredo compartilhado serão exibidos no lado direito da caixa de permissões.
+1. Observe que o nome de usuário terá dois pontos dentro do nome e todas as informações à esquerda do dois pontos serão o nome de usuário, e todas as informações à direita do dois pontos serão o nome da empresa.
+   * Veja um exemplo disso: *nome de usuário: Nome da empresa*
+
+#### Configurar autenticação de usuário no Adobe Analytics {#setup-user-authentication}
+
+Os administradores podem fornecer aos usuários permissões de análise do AEM executando as seguintes ações.
+
+1. Navegue até o Adobe Admin Console.
+
+1. Clique na instância do Analytics exposta ao Admin Console.
+
+   * Isso está localizado na página principal da página do administrador.
+
+1. Selecione Analytics full admin access.
+
+1. Adicione um usuário ao Perfil.
+
+   ![Acesso completo ao administrador do Analytics](assets/aftia-full-admin-access.jpg)
+
+1. Clique na guia Permissões depois que a ID do usuário tiver sido mapeada para o perfil.
+
+1. Verifique se todas as permissões estão mapeadas para o perfil.
+
+   ![Editar permissões](assets/aftia-admin-access-edit.jpg)
+
+1. Observe que, uma vez que as permissões tenham sido mapeadas sobre a capacidade de um usuário fazer logon, isso pode levar algumas horas.
+
+### relatórios Adobe Analytics {#adobe-analytics-reporting}
+
+#### relatórios de sites da Visualização Analytics {#view-adobe-analytics-sites-reporting}
+
+>[!NOTE]
+Os dados do AEM Forms Analytics estão disponíveis offline ou sem uma configuração de nuvem do Adobe Analytics se o `we-gov-forms.ui.analytics-<version>.zip` pacote estiver instalado, mas os dados do AEM Sites exigem uma configuração de nuvem ativa.
 
 1. Navegue até *https://&lt;aemserver>:&lt;porta>/sites.html/content*
-1. Selecione &quot;Site do AEM Forms We.Gov&quot; para visualização nas páginas do site.
+1. Selecione &quot;Site We.Gov do AEM Forms&quot; para visualização das páginas do site.
 1. Selecione uma da página do site (por exemplo, Início) e escolha &quot;Analytics &amp; Recommendations&quot;.
 
    ![Análise e recomendações](assets/analytics_recommendations.jpg)
 
-1. Nesta página, você verá informações obtidas do Adobe Analytics que pertencem à página Sites do AEM (observação: por padrão, essas informações são atualizadas periodicamente do Adobe Analytics e não são exibidas em tempo real).
+1. Nesta página, você verá informações obtidas do Adobe Analytics que pertencem à página AEM Sites (observação: por padrão, essas informações são atualizadas periodicamente da Adobe Analytics e não são exibidas em tempo real).
 
-   ![análise do AEM Sites](assets/sites_analysis.jpg)
+   ![análise AEM Sites](assets/sites_analysis.jpg)
 
 1. De volta à página de visualização da página (acessada na etapa 3.), você também pode visualização as informações de visualização da página alterando a configuração de exibição para itens de visualização na &quot;Visualização de Lista&quot;.
 1. Localize o menu suspenso &quot;Visualização&quot; e selecione &quot;Visualização da Lista&quot;.
@@ -367,26 +473,29 @@ Este pacote vem pré-configurado para se conectar ao Adobe Analytics. As etapas 
 
 #### Visualização do relatórios de formulários do Adobe Analytics {#view-adobe-analytics-forms-reporting}
 
+>[!NOTE]
+Os dados do AEM Forms Analytics estão disponíveis offline ou sem uma configuração de nuvem do Adobe Analytics se o `we-gov-forms.ui.analytics-<version>.zip` pacote estiver instalado, mas os dados do AEM Sites exigem uma configuração de nuvem ativa.
+
 1. Vá até
 
    *https://&lt;aemserver>:&lt;porta>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Selecione o formulário adaptativo &quot;Aplicativo de inscrição para benefícios de saúde&quot; e selecione a opção &quot;Relatório do Analytics&quot;.
+1. Selecione o formulário adaptativo &quot;Aplicativo de inscrição para benefícios de saúde&quot; e selecione a opção &quot;Relatório Analytics&quot;.
 
-   ![Relatório de análise](assets/analytics_report.jpg)
+   ![Relatório Analytics](assets/analytics_report.jpg)
 
-1. Aguarde a página ser carregada e visualização nos dados do Analytics Report.
+1. Aguarde a página ser carregada e visualização os dados do Analytics Report.
 
-   ![Dados de relatório do Analytics de Visualização](assets/analytics_report_data.jpg)
+   ![Visualização de dados de relatório da Analytics](assets/analytics_report_data.jpg)
 
-#### Visualização do relatórios do Adobe Analytics {#view-adobe-analytics-reporting}
+#### Visualização do relatórios Adobe Analytics {#view-adobe-analytics-reporting}
 
-Como opção, você pode navegar para o Adobe Analytics diretamente para ver os dados de análise.
+Como opção, você pode navegar diretamente para o Adobe Analytics para ver os dados de análise.
 
 1. Navegue até [https://my.omniture.com/login/](https://my.omniture.com/login/)
 1. Faça logon usando suas credenciais:
 
-   1. **Empresa:** Demonstração do AEM Forms
+   1. **Empresa:** Demonstração de AEM Forms
    1. **Usuário:** &lt;disponível mediante solicitação>
    1. **Senha:** &lt;disponível mediante solicitação>
 
@@ -396,23 +505,248 @@ Como opção, você pode navegar para o Adobe Analytics diretamente para ver os 
 
 1. Selecione um dos relatórios disponíveis para exibir os dados de análise desse relatório.
 
-   ![Dados do Analytics de um relatório](assets/analytics_data.jpg)
+   ![Dados Analytics de um relatório](assets/analytics_data.jpg)
+
+### Ativação da configuração de formulários automatizados da Adobe {#automated-forms-enablement}
+
+Para instalar e configurar AEM Forms com o Adobe Forms, os usuários da ferramenta de conversão devem ter o seguinte:
+
+1. Acesso ao E/S da Adobe.
+
+1. Permissão para criar uma integração com o serviço Adobe Forms Conversion.
+
+1. O pacote de serviços mais recente do Adobe AEM 6.5 em execução como um autor.
+
+Leia o seguinte antes de ler mais instruções:
+
+* [Configurar o serviço de conversão automática de formulários](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html)
+
+#### Criando uma configuração IMS Parte 1 {#creating-ims-config}
+
+Para configurar o serviço para se comunicar corretamente com a ferramenta de conversão de formulários, os usuários devem configurar o serviço Identity Management System (IMS) para se registrarem com a E/S da Adobe.
+
+1. Navegue até https://&lt;aemserver>:&lt;porta> > Clique em Adobe Experience Manager na parte superior esquerda > Ferramentas > Segurança > Configuração do Adobe IMS.
+
+1. Clique em Criar.
+
+1. Execute as ações na imagem abaixo.
+
+   ![Configuração da conta técnica IMS](assets/aftia-technical-account-configuration.jpg)
+
+1. Certifique-se de baixar o certificado.
+
+1. Não continue com o restante da seção de configuração - revisão (TBD)
+
+>[!NOTE]
+O certificado criado nesta seção será usado para criar o serviço de integração na E/S da Adobe. Depois que os usuários criarem no serviço de integração, os usuários poderão usar essas informações da E/S da Adobe para concluir a configuração.
+
+#### Criação de integração em E/S da Adobe {#create-integration-adobeio}
+
+Verifique se você tem a capacidade de criar uma integração dentro do seu domínio da Adobe se não entrar em contato com o administrador do sistema para fazer isso.
+
+1. Navegue até o Console [de E/S da](https://console.adobe.io/)Adobe.
+
+1. Clique em Criar integração.
+
+1. Selecione Acessar uma API.
+
+1. Verifique se você está no grupo correto (lista suspensa superior direito).
+
+1. Na seção Experience Cloud, selecione a Ferramenta de conversão de formulários.
+
+1. Clique em Continuar.
+
+1. Insira o nome e a descrição da sua integração.
+
+1. Usar a chave pública na Seção 2.1 coloca-a dentro da integração da chave.
+
+1. Selecione um perfil para a conversão automática de formulários.
+
+   ![Criar nova integração](assets/aftia-create-new-integration.jpg)
+
+#### Criando Configuração IMS Parte 2 {#create-ims-config-part-next}
+
+Agora que você criou uma integração, conclua a instalação da configuração do IMS.
+
+1. Clique em sua integração dentro da E/S da Adobe para expor os detalhes da conexão.
+
+1. Navegue até a configuração do IMS no AEM (Ferramentas > Segurança > IMS)
+
+1. Clique em Next (Avançar) na tela IMS Configuration (Configuração IMS).
+
+1. Digite o servidor de autorização (valor exibido na captura de tela).
+
+1. Insira a chave da API.
+
+1. Digite o segredo do cliente (é necessário clicar em expor na integração em E/S da Adobe para que ela seja revelada).
+
+1. Clique na guia JWT em Adobe I/O para obter a carga JWT e colá-la na carga da configuração IMS.
+
+   ![Configuração de IMS de carga](assets/aftia-payload-ims-config.jpg)
+
+1. Depois de criados, clique em Configuração IMS e selecione Verificação de integridade, os usuários devem ver o seguinte resultado.
+
+   ![Confirmação de integridade](assets/aftia-health-confirmation.jpg)
+
+#### Configuração da Configuração da Nuvem (Produção AFC We.Gov) {#configure-cloud-configuration}
+
+Quando a configuração do IMS estiver concluída, poderemos continuar a criar a configuração de nuvem no AEM.
+
+1. Abra o navegador e navegue até o URL do sistema https://&lt;nome_do_domínio>:&lt;porta_do_sistema>
+
+1. Clique em Adobe Experience Manager no canto superior esquerdo da tela > Ferramentas > Cloud Service > Configuração de conversa de formulários automatizados.
+
+1. Selecione a pasta de configuração na qual deseja colocar a configuração.
+
+1. Clique em Criar.
+
+1. Digite as informações na captura de tela abaixo.
+
+   ![Produção de AFC](assets/aftia-afc-production.jpg)
+
+1. Forneça à configuração um Título e um Nome.
+
+1. O URL de serviço do sistema está definido como https://aemformsconversion.adobe.io/.
+
+1. URL do modelo */conf/we-gov/settings/wcm/models/we-gov-flamingo-template*.
+
+1. URL do tema: */content/dam/formsanddocuments-temas/adobe-gov-forms-temas/we-gov-topics*
+
+1. Clique em Avançar.
+
+1. Para essa configuração, deixamos os dois valores de caixa de seleção vazios.
+
+   * Para saber mais sobre essas opções, consulte [Configurar o serviço](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)em nuvem.
+
+#### Configuração da Configuração da Nuvem (Produção AFC We.Finance) {#configure-cloud-configuration-wefinance}
+
+Quando a configuração do IMS estiver concluída, poderemos continuar a criar a configuração de nuvem no AEM.
+
+1. Abra o navegador e navegue até o URL do sistema https://&lt;nome_do_domínio>:&lt;porta_do_sistema>
+
+1. Clique em Adobe Experience Manager no canto superior esquerdo da tela > Ferramentas > Cloud Service > Configuração de conversa de formulários automatizados.
+
+1. Selecione a pasta de configuração na qual deseja colocar a configuração.
+
+1. Clique em Criar.
+
+1. Digite as informações na captura de tela abaixo.
+
+   ![Produção AFC We.Finance](assets/aftia-wefinance-afc-prod.jpg)
+
+1. Forneça à configuração um Título e um Nome.
+
+1. O URL de serviço do sistema está definido como https://aemformsconversion.adobe.io/
+
+1. URL do modelo: */conf/we-finance/settings/wcm/models/we-finance-adaptive-form*
+
+1. URL do tema: */content/dam/formsanddocuments-temas/adobe-finance-forms-temas/we-finance-theme*
+
+1. Clique em Avançar.
+
+1. Para essa configuração, deixamos os dois valores de caixa de seleção vazios.
+
+   * Para saber mais sobre essas opções, consulte [Configurar o serviço](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)em nuvem.
+
+#### Testando a conversão de formulários (Aplicativo de inscrição We.Gov) {#test-forms-conversion}
+
+Depois que a configuração for configurada, os usuários poderão testá-la fazendo upload de um documento PDF.
+
+1. Navegue até o sistema AEM https://&lt;nome_do_domínio>:&lt;porta_do_sistema>
+
+1. Clique em Formulários > Formulários e Documentos > AEM Forms Formulários We.gov > AFC.
+
+1. Selecione o PDF Aplicativo de inscrição We.Gov.
+
+1. Clique no botão Conversão **automatizada do** Start no canto superior direito.
+
+1. Os usuários devem poder ver a opção como mostrado abaixo.
+
+   ![Formulário adaptável convertido](assets/aftia-converted-adaptive-form.jpg)
+
+1. Depois que o botão for selecionado, os usuários receberão as seguintes opções
+
+   * Certifique-se de que os usuários selecionem a configuração de produção *AFC* We.Gov
+
+   ![Configurações de conversão](assets/aftia-conversion-settings.jpg)
+
+   ![Configurações avançadas de conversão](assets/aftia-conversion-settings-2.jpg)
+
+1. Selecione a conversão do start depois de configurar todas as opções que você gostaria de usar
+
+   >[!NOTE]
+   *Especifique uma seção Tema* de formulário adaptável para que os usuários possam especificar o tema Tema acessível - Ultramarine.
+
+   >[!NOTE]
+   Se você quiser vincular o formulário gerado a um FDM, ou qualquer outra coisa, marque a caixa de seleção que diz *Gerar formulários adaptáveis sem vínculos* de dados.
+
+1. À medida que o processo de conversão é iniciado, os usuários devem ver a seguinte tela:
+
+   ![Configurações de conversão](assets/aftia-conversion-in-progress.jpg)
+
+1. Quando a conversão for concluída, os usuários verão a seguinte tela:
+
+   ![Formulário adaptável convertido](assets/aftia-converted-adaptive-form-2.jpg)
+
+#### Teste da conversão de formulários (Aplicativo de cartão de crédito We.Finance) {#testing-forms-conversion-wefinance}
+
+Depois que a configuração for configurada, os usuários poderão testá-la fazendo upload de um documento PDF.
+
+1. Navegue até o sistema AEM https://&lt;nome_do_domínio>:&lt;porta_do_sistema>
+
+1. Clique em Formulários > Formulários e Documentos > AEM Forms We.finance Forms > PDF forms.
+
+1. Selecione o Aplicativo de Cartão de Crédito We.Finance.
+
+1. Clique no botão Conversão **automatizada do** Start no canto superior direito.
+
+1. Os usuários devem poder ver a opção como mostrado abaixo.
+
+   ![PDF forms](assets/aftia-pdf-forms.jpg)
+
+1. Depois que o botão for selecionado, as opções a seguir serão apresentadas aos usuários.
+
+   * Certifique-se de que os usuários selecionem a configuração de produção *AFC* We.Finance
+
+   ![Selecione We.Finance AFC Production](assets/aftia-select-production-configuration.jpg)
+
+   ![Configurações avançadas de conversão](assets/aftia-advanced-conversion-settings-wefinance.jpg)
+
+1. Selecione a conversão do start depois de configurar todas as opções que você gostaria de usar
+
+   >[!NOTE]
+   *Especifique uma seção Tema* de formulário adaptável para que os usuários possam especificar o tema Tema acessível - Ultramarine.
+
+   >[!NOTE]
+   Se você quiser vincular o formulário gerado a um FDM, ou qualquer outra coisa, marque a caixa de seleção que diz *Gerar formulários adaptáveis sem vínculos* de dados.
+
+   >[!NOTE]
+   Os usuários devem definir o local da pasta de saída como */content/dam/formsanddocuments/adobe-finance-forms/afc-converted-forms* para que o formulário renderizado apareça no portal de formulários no site We.Gov.
+
+1. À medida que o processo de conversão é iniciado, os usuários devem ver a seguinte tela:
+
+   ![Conversão em andamento](assets/aftia-conversion-progress.jpg)
+
+   >[!NOTE]
+   Há um erro reportado no qual, mesmo que você selecione uma pasta separada da fornecida na configuração da nuvem, ela ainda criará uma pasta de saída localmente e, em seguida, colocará o formulário gerado no local correto.
+
+1. Quando a conversão for concluída, os usuários verão a seguinte tela:
+
+   ![Conversão em andamento](assets/aftia-conversion-complete.jpg)
+
+1. Os usuários também podem revisar o processo de conversão e editar o resultado para fornecer ao sistema melhores capacidades de conversão.
+
+#### Problemas conhecidos e notas {#known-issues-notes}
+
+O processo de conversão de formulários tem algumas limitações e pode ser visualizado no site da Adobe. Consulte Problemas [conhecidos](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html) para verificar se os formulários são compatíveis com esse processo.
+
+1. Gerar o formulário com Gerar formulários adaptativos sem vínculos de dados ativados se você deseja vincular o formulário a um FDM após a conversão.
+
+1. Certifique-se de que a pasta de modelo tenha a permissão jcr:read para todos ativada ou de que o usuário do serviço não consiga ler o modelo a partir do repositório e a conversão falhará.
 
 ## Personalizações do pacote de demonstração {#demo-package-customizations}
 
 Esta seção inclui instruções sobre a personalização da demonstração.
-
-### Ativar a criação do AEM {#enableauthoring}
-
-Este pacote de demonstração inclui um arquivo de configuração de serviço OSGI que controla o comportamento do serviço de Filtro WCM no servidor do Autor do público alvo. Essa configuração faz com que o servidor funcione em um modo de autor desativado (equivalente a ?wcmmode=disabled) para permitir a demonstração. Para atualizar essa configuração e ativar a criação, execute as seguintes etapas:
-
-1. Navegue até *https://&lt;aemserver>:&lt;porta>/system/console/configMgr*
-1. Localize e clique no serviço de filtro **WCM CQ** Day CQ para configurar.
-
-   ![Filtro CQ WCM de Dia](assets/day_cq_wcm_filter.jpg)
-
-1. Defina o valor de &quot;Modo **** WCM&quot; para &quot;**Editar**&quot;.
-1. Clique em &quot;**Salvar**&quot; para aplicar a configuração.
 
 ### Personalização de modelos {#templates-customization}
 
@@ -503,12 +837,37 @@ Esta seção contém informações sobre recursos de demonstração e decisões 
 
 * Conforme o AGRS-159, verifique se o nome (primeiro, meio e último) do contato usado no Formulário adaptável de inscrição é único.
 * O formulário adaptável de inscrição enviará o email do Adobe Sign para o email especificado no campo de email do formulário. Esse endereço de email não pode ser o mesmo endereço de email usado para configurar a configuração da nuvem do Adobe Sign.
-* Por padrão, o pacote de demonstração inclui várias configurações de serviço OSGI para controlar o comportamento geral do servidor do público alvo que hospeda a demonstração. Essas configurações incluem uma configuração de serviço de Filtro WCM que, por padrão, faz com que o servidor opere em um modo de autor **** desativado (equivalente a ?wcmmode=disabled). Consulte [Ativar a criação](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) do AEM para permitir a criação de páginas.
 
 ### Problemas conhecidos {#known-issues}
 
 * (AGRS-120) No momento, o componente de Navegação do site não suporta páginas secundárias aninhadas com mais de 2 níveis de profundidade.
 * (AGRS-159) O FDM atual do MS Dynamics precisa executar duas operações para, primeiro, executar o POST dos dados do Formulário adaptável de inscrição no Dynamics e, em seguida, buscar o registro do usuário para recuperar a ID de contato. No estado atual, a busca da ID de contato falhará se mais de dois usuários com o mesmo nome estiverem presentes no Dynamics, o que não permitirá o envio do Formulário adaptável de inscrição.
+
+## Configuração do teste de acessibilidade {#configure-accessibility-testing}
+
+### Ativando o Acessibilidade Testando o Chrome Add On {#enable-chrome-add-on}
+
+Para executar o teste de acessibilidade primeiro, é necessário instalar o plug-in do Chrome, isso pode ser encontrado [aqui](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
+
+Depois de instalada, carregue a página que deseja testar no Chrome Browser (Observação: Ter várias guias abertas pode afetar sua pontuação, é preferível ter apenas uma guia aberta). Quando a página for carregada **, clique** com o botão direito do mouse na página e selecione a guia **Auditorias** . Lá os desenvolvedores podem selecionar o tipo de auditoria a ser realizada pelo plug-in Acessibilidade. Depois que todas as opções desejadas forem selecionadas, o usuário poderá selecionar o botão Gerar relatório. Isso gerará um documento PDF que mostra a classificação geral de acessibilidade e o que pode ser usado para aumentar a classificação geral de acessibilidade.
+
+Após a execução do relatório, os usuários podem esperar o seguinte:
+
+![Relatório de acessibilidade](assets/aftia-accessibility.jpg)
+
+O número exibido na frente dos usuários é a classificação geral de acessibilidade que eles adquiriram. Há também uma descrição de como isso foi calculado após a pontuação.
+
+Se os usuários desejarem exportar isso, poderão clicar nos três botões à direita da tela e selecionar entre as outras opções que o plug-in oferta.
+
+![Relatório de acessibilidade](assets/aftia-accessibility-report.jpg)
+
+### Tema Ultramarino {#ultramarine-theme}
+
+O tema do Ultramarine publicamente disponível mantido pela Adobe é incorporado ao`we-gov-forms.pkg.all-<version>.zip` arquivo ZIP instalável. Depois que este pacote for instalado usando o CRX.
+
+Gerenciador de pacotes, os usuários podem acessar o tema do Ultramarine em AEM Forms navegando até **Formulários** > **Temas** > Temas **de** referência > **Ultramarine-Accessible**.
+
+![Tema ultramarino](assets/aftia-ultramarine-theme.jpg)
 
 ## Próximas etapas {#next-steps}
 
