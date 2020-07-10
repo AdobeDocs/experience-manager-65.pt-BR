@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 1%
@@ -74,7 +74,7 @@ O conector suporta o seguinte:
 
 * Versões do AEM:
 
-   * AEM 6.5, 6.4, 6.3
+   * AEM 6.4, 6.3
 
 * Versões do Microsoft SharePoint:
 
@@ -131,9 +131,9 @@ Por padrão, o conector expõe uma única área de trabalho JCR. O servidor Shar
 O conector também pode ser configurado para vários espaços de trabalho. Nesse caso, cada espaço de trabalho é associado ao URL do respectivo servidor SharePoint exposto pela área de trabalho. Para adicionar um espaço de trabalho, adicione uma definição de espaço de trabalho ao parâmetro Espaços de trabalho. Uma definição de espaço de trabalho tem o seguinte formato:
 `<name>`= `<url>` onde`<name>` é o nome do espaço de trabalho JCR e`<url>` é o URL do servidor SharePoint para esse espaço de trabalho.
 
-No AEM, execute mais uma etapa além das etapas de configuração acima. Permita a lista do pacote &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
+No AEM, execute mais uma etapa além das etapas de configuração acima. Lista de permissões o pacote &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
 
-Para permitir pacotes de lista no AEM, execute as seguintes etapas:
+Para lista de permissões de pacotes no AEM, execute as seguintes etapas:
 
 1. Navegue até o Console de Gerenciamento OSGi: http://localhost:4502/system/console/configMgr.
 1. Procure o serviço &quot;Apache Sling Login Admin Whitelist&quot;.
