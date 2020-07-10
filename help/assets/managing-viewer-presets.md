@@ -10,7 +10,7 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
 source-wordcount: '4361'
 ht-degree: 16%
@@ -154,7 +154,7 @@ Os administradores podem adicionar e personalizar os seguintes tipos de mídia a
 
 A tabela a seguir identifica todas as predefinições de visualizador predefinidas e predefinidas que vêm com o Dynamic Media.
 
-Consulte também:<!-- KEEP THIS REFERENCE FOR NOW [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) --> [Demonstrações](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)ao vivo.
+Consulte também Demos [ao](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)vivo.
 
 Para obter informações sobre o navegador da Web e as versões do sistema operacional compatíveis para visualizadores, consulte as Notas de versão dos visualizadores.
 
