@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -115,34 +115,6 @@ Isso permitirá que você rastreie estados e ações, como para onde os usuário
 Para referência, você pode observar o código no aplicativo Geometrixx Outdoors. No aplicativo Geometrixx Outdoors, todas as navegações de página são rastreadas usando o método ADB.trackState(). Para obter mais detalhes, consulte o código fonte para /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 Ao instrumentar seu código fonte com essas chamadas de método, você pode coletar métricas completas em relação ao seu aplicativo.
-
-### Teste do rastreamento do Analytics com o Bloodhound  {#testing-analytics-tracking-with-bloodhound}
-
-![](do-not-localize/chlimage_1.jpeg)
-
-<!--NOTE TO WRITER: Bloodhound is no longer available.-->
-
-Opcionalmente, antes de implantar na produção, você pode usar a ferramenta Adobe [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) para testar a configuração do Analytics. Para testar a configuração do Analytics, é necessário editar o arquivo ADBMobileConfig.json para apontar para o servidor onde o Bloodhound está sendo executado em vez do servidor Analytics real. Para fazer essa alteração, a partir de ADBMobileConfig.json altere a seguinte entrada.
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "YOUR_TRACKING_SERVER:YOUR_TRACKING_PORT",
-...
-```
-
-Alteração para corresponder a esta entrada:
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "localhost:50000",
-...
-```
-
-Isso redirecionará todos os dados coletados pelo plug-in do AMS para o Bloodhound para que você possa visualização nos resultados.
 
 #### Propriedades para conexão com o AMS {#properties-for-connecting-to-ams}
 
