@@ -4,9 +4,9 @@ description: Notas de versão específicas do Adobe Experience Manager 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
-source-wordcount: '4512'
+source-wordcount: '4529'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Mana
 
 * Personalize os nomes das colunas exibidas na Caixa de entrada do Adobe Experience Manager.
 
-* Aprimoramento da acessibilidade em várias áreas da Gestão de conteúdo da Web para Experience Manager (WCM), como o Editor de páginas, Componentes principais, RTE e a interface do usuário de administração.
+* Aprimoramento da acessibilidade em várias áreas da Gestão de conteúdo da Web para Experience Manager (WCM), como o Editor de páginas, Componentes principais, RTE e a interface de usuário do Administrador.
 
 * Salve um [!DNL Interactive Communication] como rascunho.
 
@@ -85,7 +85,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Agora é possível colocar o foco do teclado na lista [!UICONTROL Comentários] e na opção clicável para [!UICONTROL Criar] comentários da versão em [!UICONTROL Criar nova versão] no painel Ativos da [!UICONTROL Linha] do tempo (NPR-33424).
 
-* Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas de teclado (NPR-33420).
+* Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas do teclado (NPR-33420).
 
 * O pop-up da caixa de lista da caixa de combinação (em vários campos em páginas diferentes) agora mostra as entradas como uma lista de opções que podem ser anunciadas pelos leitores de tela (NPR-33516).
 
@@ -111,7 +111,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Os estados expandidos e recolhidos da caixa de diálogo [!UICONTROL Tags] em [!UICONTROL Propriedades] do ativo e navegação do painel esquerdo (na interface do usuário do ativo) agora são anunciados corretamente pelos leitores de tela (NPR-33396).
 
-* Os títulos de todas as páginas navegadas em [!DNL Adobe Experience Manager] Ativos agora são exclusivos (NPR-33343).
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique (NPR-33343).
 
 * Ao navegar pela estrutura de árvore, vários elementos do controle de visualização de árvore são anunciados corretamente pelos leitores de tela (NPR-33304).
 
@@ -215,7 +215,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * As predefinições de imagem não publicam, se o modo [!UICONTROL de sincronização] Dynamic Media estiver desativado por padrão no Experience Manager com o modo de execução Dynamic Media Scene7 (CQ-4294200).
 
-* O processamento de ativos enquanto o upload em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
+* O processamento de ativos enquanto o carregamento em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
 
 * A criação de uma configuração Dynamic Media no Experience Manager funciona, mas na interface do usuário nada acontece ao selecionar Salvar (CQ-4292442).
 
@@ -415,6 +415,7 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 | Área | Recurso | Substituição |
 |---|---|---|
 | Integrações | A tela Aceitação **[!UICONTROL de]** AEM cloud services está obsoleta. Com a integração do AEM e do Público alvo atualizada no AEM 6.5 para suportar a API do Target Standard, que usa autenticação por meio do Adobe IMS e E/S, e a função crescente do Adobe Launch para instrumentar páginas do AEM para análise e personalização, o assistente de opção de participação se tornou funcionalmente irrelevante. | Configure as conexões do sistema, a autenticação do Adobe IMS e as integrações de E/S da Adobe por meio dos respectivos AEM cloud services. |
+| Conectores | O Adobe JCR Connector para Microsoft SharePoint 2010 e Microsoft SharePoint 2013 foi descontinuado para o AEM 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
 
