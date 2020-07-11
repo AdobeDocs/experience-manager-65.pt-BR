@@ -10,18 +10,21 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43fe9540a3a29ae86f48756c77001c0a4b8ea3e4
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
 
 # Atualizar para o AEM 6.5 Forms{#upgrade-to-aem-forms}
 
-O AEM 6.5 Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e melhorias do AEM 6.5 Forms, consulte o documento [de resumo dos](../../forms/using/whats-new.md)novos recursos.
+O AEM 6.5 Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e melhorias do AEM 6.5 Forms, consulte [Novo documento](../../forms/using/whats-new.md)de resumo de recursos.
 
-Você pode atualizar a instalação existente do LiveCycle ou AEM Forms para obter novos recursos e melhorias oferecidos no AEM 6.5 Forms, além de manter intactos os dados, processos e ativos existentes. Durante a atualização, os metadados e o estado dos processos também são preservados. Você pode escolher um caminho de atualização para começar a atualização.
+Você pode atualizar a instalação existente do LiveCycle ou do AEM Forms para obter novos recursos e melhorias oferecidos no AEM 6.5 Forms, além de manter intactos os dados, processos e ativos existentes. Durante a atualização, os metadados e o estado dos processos também são preservados. Você pode escolher um caminho de atualização para começar a atualização.
 
-O diagrama a seguir exibe os caminhos de atualização disponíveis para o AEM Forms no OSGi:
+O diagrama a seguir exibe os caminhos de atualização disponíveis para AEM Forms no OSGi:
 
 ![](do-not-localize/osgi-upgrade-path.png)
 
@@ -36,14 +39,14 @@ Você também pode fazer uma atualização de multi-hop de
 * Formulários AEM 6.1 no OSGi
 * Formulários AEM 6.2 no OSGi
 
-O diagrama a seguir exibe os caminhos de atualização disponíveis para o AEM Forms no JEE:
+O diagrama a seguir exibe os caminhos de atualização disponíveis para AEM Forms no JEE:
 
 ![](do-not-localize/jee-upgrade-6-5.png)
 
 Você pode fazer uma atualização direta de:
 
 * AEM 6.3 Forms em JEE
-* AEM 6.3 Forms em JEE
+* AEM 6.4 Forms em JEE
 
 Você também pode fazer uma atualização de multi-hop de
 
@@ -70,7 +73,7 @@ Migration involves moving only assets (PDF, XDP, images, adaptive forms, corresp
 
     * **Run Migration Utility**
 
-      The migration utility makes the adaptive forms and correspondence management assets of earlier versions compatible with AEM 6.3 forms. You can download the utility from AEM package share. For step-by-step information to configure and use the migration utility, see [migration utility](../../forms/using/migration-utility.md) documentation.
+      The migration utility makes the adaptive forms and correspondence management assets of earlier versions compatible with AEM 6.3 forms. You can download the utility from AEM Software Distribution. For step-by-step information to configure and use the migration utility, see [migration utility](../../forms/using/migration-utility.md) documentation.
 
     * **Reconfigure Adobe Sign**
 
