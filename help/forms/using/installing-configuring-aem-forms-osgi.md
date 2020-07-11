@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 2%
+source-wordcount: '1817'
+ht-degree: 1%
 
 ---
 
@@ -111,15 +111,16 @@ Antes de começar a instalar e configurar o recurso de captura de dados do AEM F
 
 O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote contém a captura de dados de AEM Forms e outros recursos. Execute as seguintes etapas para instalar o pacote complementar:
 
-1. Faça logon no servidor [](https://localhost:4502) AEM como administrador e abra o compartilhamento [](https://localhost:4502/crx/packageshare)de pacote. Você precisa de um Adobe ID para fazer logon no compartilhamento de pacote.
-1. No compartilhamento [de pacote do](https://localhost:4502/crx/packageshare/login.html)AEM, pesquise nos pacotes **complementares do** AEM 6.5 Forms, clique no pacote aplicável ao seu sistema operacional e clique em **Download**. Leia e aceite o contrato de licença e clique em **OK**. Os start de download. Após o download, a palavra **Download** é exibida ao lado do pacote.
+1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Na seção **[!UICONTROL Filtros]** :
+   1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+   2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
+1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
+1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
+1. Select the package and click **[!UICONTROL Install]**.
 
-   Você também pode usar o número da versão para pesquisar um pacote de complementos. Para obter o número da versão do pacote mais recente, consulte o artigo sobre as versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
-
-1. Depois que o download for concluído, clique em **Download**. Você é redirecionado para o gerenciador de pacotes. No gerenciador de pacotes, pesquise o pacote baixado e clique em **Instalar**.
-
-   Se você baixar manualmente o pacote por meio do link direto listado no artigo de versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms, faça logon no gerenciador de pacotes, clique em **Carregar pacote**, selecione o pacote baixado e clique em Fazer upload. Depois que o pacote for carregado, clique no nome do pacote e clique em **Instalar.**
-
+   Você também pode baixar o pacote por meio do link direto listado no artigo de versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie imediatamente o servidor.** Antes de parar o servidor de AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` arquivo e o log esteja estável.
 1. Repita as etapas de 1 a 4 em todas as instâncias de Autor e Publicação.
 
@@ -150,11 +151,11 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
-Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote à lista permitida:
+Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote à lista de permissões:
 
 1. Abra o AEM Configuration Manager em uma janela do navegador. O URL padrão é `https://'[server]:[port]'/system/console/configMgr`.
 1. Procure **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** e abra a configuração.
-1. Adicione o pacote **sun.util.calendário** ao campo **permitido** . Clique em **Salvar**.
+1. Adicione o pacote **sun.util.calendário** ao campo de **lista de permissões** . Clique em **Salvar**.
 1. Repita as etapas de 1 a 3 em todas as instâncias de Autor e Publicação.
 
 ### Configurações opcionais pós-instalação {#optional-post-installation-configurations}
