@@ -4,10 +4,10 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 2%
+source-wordcount: '1873'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Os service packs do Adobe Experience Manager 6.5 oferecem novos recursos, melhorias solicitadas pelo cliente e melhorias de desempenho, estabilidade e segurança em intervalos trimestrais. A disponibilidade trimestral facilita o acesso e a adoção de novos recursos e inovações.
 
-Este artigo destaca os recursos incluídos no Service Pack 6.5 mais recente, os recursos [principais incluídos nos Service Packs](#key-features-previous-service-packs)6.5 anteriores e algumas das versões [principais desde a versão 6.5.4.0](#key-releases-since-last-sp) do Experience Manager.
+Este artigo destaca os recursos incluídos no Service Pack 6.5 mais recente, os recursos [principais incluídos nos Service Packs](#key-features-previous-service-packs)6.5 anteriores e algumas das versões [principais desde a versão de Experience Manager 6.5.4.0](#key-releases-since-last-sp) .
 
 ## Adobe Experience Manager Sites {#aem-sites}
 
@@ -56,7 +56,7 @@ Este artigo destaca os recursos incluídos no Service Pack 6.5 mais recente, os 
 
 * Muitos elementos da interface do usuário, controles e campos de formulário de entrada podem ser acessados usando o teclado.
 
-* A cor e o contraste de alguns elementos da interface do usuário são atualizados para que os usuários com visão limitada ou usuários sem percepção de cor possam distinguir esses elementos da interface do usuário. Por exemplo, a cor dos ícones de classificação de estrelas (como na seção [!UICONTROL Classificação] da guia [!UICONTROL Avançado] em [!UICONTROL Propriedades] do ativo ou na visualização do cartão) é alterada para contraste adequado.
+* A cor e o contraste de alguns elementos da interface do usuário são atualizados para que os usuários com visão limitada ou usuários sem percepção de cor possam distinguir esses elementos da interface do usuário. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
 
    ![Ícones de classificação com melhor contraste](assets/star-rating-icons.png)
 
@@ -78,19 +78,19 @@ O suporte para imagens 3D em [!DNL Dynamic Media] permite que os clientes publiq
 
 ### Personalizar as colunas da Caixa de entrada do Adobe Experience Manager {#customize-aem-inbox-columns}
 
-Você pode personalizar uma [!DNL Experience Manager] Caixa de entrada para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho. Os membros do `administrators` ou do `workflow-administrators` grupo podem personalizar as colunas.
+Você pode personalizar uma [!DNL Experience Manager] Caixa de entrada para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho. Os membros do `administrators` ou do `workflow-administrators` grupo podem personalizar as colunas. Para obter mais informações, consulte Controle [de](../sites-authoring/inbox.md#inbox-admin-control)administração.
 
 ![Personalizar colunas da Caixa de entrada do Experience Manager](assets/customize-columns.gif)
 
 ### Salvar comunicações interativas como rascunho {#save-as-draft}
 
-Você pode usar a interface do agente para salvar um ou mais rascunhos para cada Comunicação interativa e recuperar o rascunho posteriormente para continuar trabalhando nele. Você pode especificar um nome diferente para cada rascunho para identificá-lo.
+Você pode usar a interface do agente para salvar um ou mais rascunhos para cada Comunicação interativa e recuperar o rascunho posteriormente para continuar trabalhando nele. Você pode especificar um nome diferente para cada rascunho para identificá-lo. Para obter mais informações, consulte [Salvar comunicações interativas como rascunho](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Salvar como rascunho](assets/save-as-draft.gif)
 
 ### [!DNL Oracle WebLogic] suporte ao servidor de aplicativos {#weblogic-support}
 
-O Adobe Experience Manager Forms adicionou suporte para [!DNL Oracle WebLogic 12] o Adobe Experience Manager Forms em JEE. Você pode atualizar de uma versão anterior ou configurar um novo Experience Manager 6.5 Forms no servidor JEE em [!DNL Oracle WebLogic] 12.2.1.4 e posterior. Mais tarde corresponde às alterações de versão secundária, em que x em 12.2.1.x é substituído por um número de versão.
+O Adobe Experience Manager Forms adicionou suporte para [!DNL Oracle WebLogic 12] o Adobe Experience Manager Forms no JEE. Você pode atualizar de uma versão anterior ou configurar um novo Experience Manager 6.5 Forms no servidor JEE em [!DNL Oracle WebLogic] 12.2.1.4 e posterior. Mais tarde corresponde às alterações de versão secundária, em que x em 12.2.1.x é substituído por um número de versão.
 
 ### Aprimoramentos de acessibilidade {#accessibility-improvements}
 
@@ -104,11 +104,11 @@ O Adobe Experience Manager Forms inclui os seguintes aprimoramentos de acessibil
 
 ### Autenticação baseada em certificado X-509 para serviços Web baseados em SOAP no modelo de dados de formulário {#x509-based-authentication-soap}
 
-O modelo de dados de formulário agora oferece suporte à autenticação baseada em certificado X-509 ao usar serviços Web SOAP como fonte de dados.
+O modelo de dados de formulário agora oferece suporte à autenticação baseada em certificado X-509 ao usar serviços Web SOAP como fonte de dados. Para obter mais informações, consulte [Configurar serviços](../forms/using/configure-data-sources.md#configure-soap-web-services)da Web SOAP.
 
 ### Outras melhorias importantes {#other-improvements}
 
-* O Experience Manager 6.5 Forms on JEE Documento Security agora é baseado em [!DNL Apache Struts 2].
+* O Experience Manager 6.5 Forms no JEE Documento Security agora é baseado em [!DNL Apache Struts 2].
 
 * Adicionado suporte para [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
@@ -136,7 +136,7 @@ Agora é possível selecionar estilos na caixa de diálogo do componente usando 
 
 O canal de autorização entre [!DNL Experience Manager Assets] e [!DNL Brand Portal] é alterado. Anteriormente, [!DNL Brand Portal] era configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização. [!DNL Experience Manager Assets] agora está configurado com [!DNL Brand Portal] a Adobe I/O, que obtém um token IMS para autorização do seu [!DNL Brand Portal] locatário.
 
-As etapas para configurar [!DNL Experience Manager Assets] com [!DNL Brand Portal] são diferentes dependendo da sua [!DNL Experience Manager] versão e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos do Experience Manager com o Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) de marcas para obter detalhes.
+As etapas para configurar [!DNL Experience Manager Assets] com [!DNL Brand Portal] são diferentes dependendo da sua [!DNL Experience Manager] versão e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos de Experience Manager com o Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) de marcas para obter detalhes.
 
 #### Accessibility enhancements (6.5.4.0) {#accessibility-enhancements}
 
@@ -157,7 +157,7 @@ Por exemplo, `On Time (MM-DD-YYYY HH:mm)`. Aqui MM é mês em formato de dois d�
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
-#### Imagem inteligente para o Dynamic Media {#smart-imaging}
+#### Imagem inteligente para Dynamic Media {#smart-imaging}
 
 A geração de imagens inteligentes usa as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento. A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagem [inteligente](../assets/imaging-faq.md).
 
@@ -205,26 +205,26 @@ O Experience Manager Forms inclui os seguintes aprimoramentos de acessibilidade:
 
 Você pode compartilhar seus itens da Caixa de entrada com outro usuário. Quando outro usuário tiver acesso aos itens da Caixa de entrada, ele poderá solicitar e tomar as medidas apropriadas nos itens compartilhados. Da mesma forma, você pode solicitar acesso a itens da Caixa de entrada de outros usuários. Consulte [Compartilhar e solicitar acesso aos itens da Caixa de entrada de um usuário](../forms/using/configure-shared-queues-osgi.md).
 
-#### Defina as configurações de disponibilidade para itens da Caixa de entrada de um usuário do AEM Forms (6.5.3.0) {#configure-out-of-office}
+#### Definir as configurações de saída do escritório para itens da Caixa de entrada de um usuário do AEM Forms (6.5.3.0) {#configure-out-of-office}
 
-Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
+Se planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
 Você tem a opção de especificar uma data e hora de start e uma data e hora de término para que suas configurações de fora do escritório entrem em vigor. Você pode definir uma pessoa padrão para a qual todos os itens serão enviados. Consulte [Configurar configurações](../forms/using/configure-out-of-office-settings.md)fora do escritório.
 
 #### Gerar várias comunicações interativas usando a API de lote para AEM Forms (6.5.3.0) {#generate-multiple-ic}
 
 Você pode usar a API de lote para produzir várias comunicações interativas a partir de um modelo. O modelo é uma comunicação interativa sem dados. A API de lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, declarações de cartão de crédito para vários clientes. Consulte [Gerar várias comunicações interativas usando a API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)de lote.
 
-## Versões principais desde o Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
+## Versões de chave desde o Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
 
 Entre 05 de março de 2020 e 04 de junho de 2020, a Adobe lançou o seguinte, além dos service packs e dos pacotes de correção cumulativos:
 
-* [O portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de distribuição de software está disponível para download de service packs do Experience Manager, pacotes cumulativos de correções, hot fixes e pacotes de recursos.
+* [O portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de distribuição de software está disponível para download de service packs de Experience Manager, pacotes cumulativos de correções, hot fixes e pacotes de recursos.
 
 * [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)e [2020.5.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
 
-* [Aplicativo de desktop do Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/pt-BR/experience-manager-desktop-app/using/release-notes.html).
+* [aplicativo para desktop Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/pt-BR/experience-manager-desktop-app/using/release-notes.html).
 
-* [Telas do Experience Manager: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Telas de Experience Manager: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >
