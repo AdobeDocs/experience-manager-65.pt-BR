@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '2418'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 O aplicativo AEM Forms permite a sincronização de formulários adaptáveis, formulários móveis e conjuntos de formulários em dispositivos móveis, com base no seu servidor. É possível definir workflows que são workflows centrados no [Forms em OSGi](/help/forms/using/aem-forms-workflow.md) ou workflows [do Forms em JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application). Por exemplo, você gerencia uma empresa bancária e usa AEM Forms para gerenciar aplicativos e comunicações de clientes. Seus clientes preenchem um formulário e o enviam para verificação. Se você ativar o formulário em dispositivos móveis, seus clientes poderão preenchê-lo no aplicativo AEM Forms. Você também pode gerenciar o fluxo de trabalho de verificação ativando o formulário de verificação em dispositivos móveis. O funcionário de campo pode levar um dispositivo móvel ao cliente, verificar os detalhes e enviar o formulário. O aplicativo AEM Forms sincroniza com o servidor AEM Forms e obtém os formulários ativados para dispositivos móveis. Se o aplicativo estiver offline, ele armazenará dados localmente.
 
-O código-fonte do aplicativo AEM Forms está disponível para clientes por meio do compartilhamento de pacotes. O pacote de código-fonte no compartilhamento de pacote está disponível como: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+O código-fonte do aplicativo AEM Forms está disponível para os clientes por meio da Distribuição de software. O pacote de código-fonte na Distribuição de software está disponível como: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 O aplicativo AEM Forms é compatível com dispositivos iOS, Android e Windows. Você pode instalar o aplicativo AEM Forms para Android do Google Play, iOS da App Store e Windows da Windows Store do Windows.
 
@@ -179,20 +179,18 @@ Para obter mais informações sobre como configurar um projeto de aplicativo AEM
 
 ### Criar e distribuir {#build-and-distribute}
 
-O código fonte do aplicativo AEM Forms pode ser extraído do adobe-lc-mobileworkspace-src.zip que está disponível como parte do pacote de origem do aplicativo AEM Forms no compartilhamento de pacote.
+O código fonte do aplicativo AEM Forms pode ser extraído do `adobe-lc-mobileworkspace-src.zip` que está disponível como parte do pacote de origem do aplicativo AEM Forms na Distribuição de software.
 
 Para obter a fonte do aplicativo AEM Forms, execute as seguintes etapas:
 
-1. Navegar para compartilhamento de pacote
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Baixe o pacote de origem. Quando você baixa o pacote, ele é adicionado ao gerenciador de pacote do AEM Forms.
-1. Após o download, navegue até: `https://<server>:<port>/crx/packmgr/index.jsp`e instale `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. Para baixar o pacote, abra `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` no navegador.
-
-   O pacote de origem é baixado em seu dispositivo.
+1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Na seção **[!UICONTROL Filtros]** :
+   1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+   2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
+1. Toque no nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos]** do EULA e toque em **[!UICONTROL Download]**.
+1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
+1. Select the package and click **[!UICONTROL Install]**.
 
 **Para iOS**:
 
