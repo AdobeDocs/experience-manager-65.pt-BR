@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: a18a018181a779b9f48ef3e39c26410a1bc4919b
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 2%
@@ -114,7 +114,7 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    Você também pode baixar o pacote por meio do link direto listado no artigo de versões [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie imediatamente o servidor.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log esteja estável.
-1. Repita as etapas de 1 a 4 em todas as instâncias de Autor e Publicação.
+1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
