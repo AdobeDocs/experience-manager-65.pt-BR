@@ -1,12 +1,12 @@
 ---
-title: Notas de versão do Service Pack anterior do Adobe Experience Manager 6.5
+title: Notas de versão anteriores do Service Pack do Adobe Experience Manager 6.5
 description: Notas de versão específicas do Adobe Experience Manager 6.5 Service Pack 3 e anterior.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
 workflow-type: tm+mt
-source-wordcount: '8093'
-ht-degree: 37%
+source-wordcount: '8102'
+ht-degree: 36%
 
 ---
 
@@ -19,9 +19,9 @@ O Adobe Experience Manager 6.5.4.0 é uma atualização importante que inclui no
 
 Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Manager 6.5.4.0 incluem:
 
-* Os ativos Adobe Experience Manager agora estão configurados com o Portal de marcas por meio do Console de E/S da Adobe.
+* Os ativos Adobe Experience Manager agora estão configurados com o Brand Portal por meio do console de E/S da Adobe.
 
-* Uma nova etapa [Gerar saída](../forms/using/aem-forms-workflow-step-reference.md) imprimível está disponível para workflows do Adobe Experience Manager Forms.
+* Uma nova etapa [Gerar saída](../forms/using/aem-forms-workflow-step-reference.md) imprimível agora está disponível para workflows de Adobe Experience Manager Forms.
 
 * [Suporte](../forms/using/resize-using-layout-mode.md) para várias colunas no modo de layout para formulários adaptáveis e Comunicações interativas.
 
@@ -37,13 +37,13 @@ Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Mana
 
 * A entrada ou saída SOAP e estruturas de dados complexas agora suportam Substituição de Grupo Dinâmico.
 
-Para obter uma lista completa dos recursos e dos principais destaques introduzidos nos service packs mais recentes, consulte [Novidades nos service packs](new-features-latest-service-pack.md)do Adobe Experience Manager 6.5.
+Para obter uma lista completa dos recursos e dos principais destaques introduzidos nos service packs mais recentes, consulte [Novidades dos service packs](new-features-latest-service-pack.md)do Adobe Experience Manager 6.5.
 
 ### Sites {#sites-fixes}
 
-* Quando um URL de uma página do Adobe Experience Manager Sites contém dois pontos (`:`) ou símbolo de porcentagem (`%`), o navegador para de responder e picos de uso da CPU (NPR-32369, NPR-31918).
+* Quando um URL de uma página Sites de Adobe Experience Manager contém dois pontos (`:`) ou símbolo de porcentagem (`%`), o navegador para de responder e picos de uso da CPU (NPR-32369, NPR-31918).
 
-* Quando uma página Sites do Experience Manager é aberta para edição e um componente é copiado, a ação de colar permanece indisponível para alguns espaços reservados (NPR-32317).
+* Quando uma página Sites de Experience Manager é aberta para edição e um componente é copiado, a ação de colar permanece indisponível para alguns espaços reservados (NPR-32317).
 
 * Quando o assistente Gerenciar publicação é aberto, um Fragmento de experiência vinculado a um Componente principal não é exibido nas listas de referências publicadas (NPR-32233).
 
@@ -51,7 +51,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * Quando a hora do servidor e a hora da máquina estiverem em fusos horários diferentes, a hora de publicação programada exibe a hora do servidor na interface do usuário de toque, enquanto na interface clássica, a hora da máquina é exibida (NPR-32077).
 
-* O Experience Manager Sites não abre uma página com um sufixo no URL (NPR-32072).
+* Falha do Sites Experience Manager ao abrir uma página com um sufixo no URL (NPR-32072).
 
 * Quando um usuário edita um Fragmento de conteúdo, uma variação excluída do Fragmento de conteúdo é restaurada (NPR-32062).
 
@@ -83,7 +83,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * Uma mensagem de erro é exibida ao exibir informações do fluxo de trabalho usando a Caixa de entrada (CQ-4282168).
 
-### Ativos {#assets-6540-enhancements}
+### Assets {#assets-6540-enhancements}
 
 * O botão para acionar o fluxo de trabalho na página de coleta de ativos está desativado (NPR-32471).
 
@@ -119,31 +119,31 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * A página de resultados da pesquisa de interface de toque (feita pelo Omnisearch) rola automaticamente para cima e perde a posição de rolagem do usuário (NPR-31307).
 
-* A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução do Dynamic Media Scene7 (CQ-4286705).
+* A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução Dynamic Media Scene7 (CQ-4286705).
 
 * Os ativos demoram muito para serem processados pelo processo de upload em lote do Scene7 (CQ-4286445).
 
-* O botão Salvar não importa o Conjunto Remoto quando o usuário não tiver feito nenhuma alteração no Editor de Conjunto no Cliente de Mídia Dinâmica (CQ-4285690).
+* O botão Salvar não importa o Conjunto Remoto quando o usuário não tiver feito nenhuma alteração no Editor definido no Dynamic Media Client (CQ-4285690).
 
-* A miniatura de ativos 3D não é informativa quando um modelo 3D suportado é assimilado no Experience Manager (CQ-4283701).
+* A miniatura de ativos 3D não é informativa quando um modelo 3D suportado é assimilado ao Experience Manager (CQ-4283701).
 
 * O status não processado da predefinição do visualizador de vídeo de recorte inteligente aparece duas vezes no texto do banner ao lado do nome predefinido (CQ-4283517).
 
 * Altura incorreta do container de um modelo 3D carregado visualizado no visualizador 3D é observada na página de detalhes do ativo (CQ-4283309).
 
-* O Editor de carrossel não abre no IE 11 no modo Híbrido de mídia dinâmica do Experience Manager (CQ-4255590).
+* O Editor de carrossel não abre no IE 11 no modo Experience Manager Dynamic Media Hybrid (CQ-4255590).
 
 * O foco do teclado fica travado no menu suspenso Email na caixa de diálogo Download, nos navegadores Chrome e Safari (NPR-32067).
 
-* A caixa de seleção Sincronizar todo o conteúdo não está ativada por padrão ao tentar adicionar a configuração de nuvem DM no Experience Manager (CQ-4288533).
+* A caixa de seleção Sincronizar todo o conteúdo não está ativada por padrão ao tentar adicionar a configuração da nuvem DM no Experience Manager (CQ-4288533).
 
 ### Interface do usuário do Foundation {#foundation-ui-6540}
 
 * O controle do mouse muda para o campo de filtro anterior em vez de permanecer no campo de filtro existente enquanto pesquisa ativos usando o painel Filtro (NPR-32538).
 
-* Marcação de plataforma: Pesquise por tags digitando nos campos de tag mostra tags fora dos limites raiz e não respeita a propriedade `rootPath` dos campos de tag (NPR-31895).
+* Marcação Platform: Pesquise por tags digitando nos campos de tag mostra tags fora dos limites raiz e não respeita a propriedade `rootPath` dos campos de tag (NPR-31895).
 
-* Interface do usuário da plataforma: O navegador de caminho quebra se um caminho inválido for adicionado no campo de texto (NPR-31884).
+* Interface do usuário do Platform: O navegador de caminho quebra se um caminho inválido for adicionado no campo de texto (NPR-31884).
 
 * A notificação fica oculta atrás de um menu fixo na seleção da página (NPR-31628).
 
@@ -183,7 +183,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Os usuários do Brand Portal não podem publicar ativos de pasta de contribuição [!DNL Assets] na atualização para a E/S da Adobe no Experience Manager 6.5.4 (CQDOC-15655). Para obter uma correção imediata no Experience Manager 6.5.4, é recomendável [baixar a correção](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalá-la na sua instância do autor.
+* Os usuários do Brand Portal não conseguem publicar os ativos da pasta de contribuição [!DNL Assets] na atualização para a E/S da Adobe no Experience Manager 6.5.4 (CQDOC-15655). Para uma correção imediata no Experience Manager 6.5.4, é recomendável [baixar a correção](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalá-la na instância do autor.
 
 * Os valores de pop-up de schema de metadados não estão visíveis nas propriedades do ativo (CQ-4283287).
 
@@ -203,7 +203,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * O formulário Criar membro é exibido como uma página em branco (NPR-31997).
 
-* O usuário não pode visualização o relatório do Analytics na instância do autor (NPR-30913).
+* O usuário não pode visualização o relatório da Analytics na instância do autor (NPR-30913).
 
 ### Oak - Indexação e Query {#oak-indexing-6540}
 
@@ -213,7 +213,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 >[!NOTE]
 >
->O Experience Manager Service Pack não inclui correções para o Experience Manager Forms. Eles são entregues usando um pacote complementar separado do Forms. Além disso, é lançado um instalador cumulativo que inclui correções para o Adobe Experience Manager Forms no JEE. Para obter mais informações, consulte [Instalar o complemento](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms e [Instalar formulários Experience Manager no JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>O Experience Manager Service Pack não inclui correções para formulários Experience Manager. Eles são entregues usando um pacote complementar separado do Forms. Além disso, é lançado um instalador cumulativo que inclui correções para formulários Adobe Experience Manager no JEE. Para obter mais informações, consulte [Instalar o complemento](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms e [Instalar formulários Experience Manager no JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Gerenciamento de correspondência: As letras exibem caracteres extras após o envio aos workflows do processo de publicação (NPR-32626).
 
@@ -231,7 +231,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * Formulários adaptativos: A ferramenta de acessibilidade do navegador Chrome informa uma falha de prática recomendada (NPR-32310).
 
-* Formulários adaptativos: Problemas de tradução ao configurar um formulário adaptável incorporado em uma página do Experience Manager Sites (NPR-32168).
+* Formulários adaptativos: Problemas de tradução ao configurar um formulário adaptável incorporado em uma página Sites de Experience Manager (NPR-32168).
 
 * Bancada: Uma mensagem de erro é exibida ao usar a operação Obter propriedades do PDF para o serviço Utilitários do PDF (NPR-32150).
 
@@ -241,7 +241,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * Designer: Se houver células unidas em uma tabela, o teste de acessibilidade falhará para o arquivo PDF de saída convertido de um formulário XDP usando o serviço de saída (CQ-4285372).
 
-* JEE de base: Se um servidor do Experience Manager Forms for desconectado de um cluster, problemas de armazenamento em cache impedirão que ele se reconecte ao servidor (NPR-32412).
+* JEE de base: Se um servidor Experience Manager Forms for desconectado de um cluster, problemas de armazenamento em cache impedirão que ele se reconecte ao servidor (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -269,7 +269,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Versão atualizada do jQuery fornecido no ContextHub para 3.4.1.
 
-### Ativos {#assets-6530-enhancements}
+### Assets {#assets-6530-enhancements}
 
 **Aprimoramentos do produto**
 
@@ -506,6 +506,8 @@ Remove one mention of this fix.
 
 * O serviço Web SOAP que usa MTOM em um projeto .NET exibe exceções para a chamada AssemblerServiceClient e métodos HtmlToPDF2 (NPR-4281771).
 
+* As versões 1.4 e 1.4.1 do Axis jar incluem uma vulnerabilidade de segurança (NPR-31015).
+
 **Foundation JEE**
 
 * A configuração de ação não carrega os nomes de processo para Chamar uma ação de envio do Forms Workflow (NPR-31478).
@@ -540,7 +542,7 @@ Alguns destaques principais desta versão do Service pack:
 * Correção para garantir que a exibição da coluna da interface do usuário do ativo mostre somente conteúdo específico do locatário.
 * Correção para permitir que as alterações de acordeão de estilo reflitam nos resultados de pesquisa.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 **Aprimoramentos do produto**
 
