@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 4%
 
 ---
 
 
-# Eventos OSGi para componentes de comunidades {#osgi-events-for-communities-components}
+# Eventos OSGi para componentes de comunidades  {#osgi-events-for-communities-components}
 
 ## Visão geral {#overview}
 
@@ -31,90 +34,90 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um evento de calendário |
-| ADICIONAR | comentários do membro em um evento de calendário |
-| ATUALIZAR | o evento do calendário ou comentário do membro é editado |
-| EXCLUIR | o evento ou comentário do calendário do membro é excluído |
+| POSTAGEM | Membro cria um evento de calendário |
+| ADICIONAR | Comentários do membro sobre um evento de calendário |
+| ATUALIZAR | O evento do calendário ou comentário do membro é editado |
+| EXCLUIR | O evento do calendário ou comentário do membro é excluído |
 
 [Componente Comentários](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um comentário |
-| ADICIONAR | membro responde ao comentário |
-| ATUALIZAR | o comentário do membro é editado |
-| EXCLUIR | o comentário do membro é excluído |
+| POSTAGEM | Membro cria um comentário |
+| ADICIONAR | Membro responde às observações |
+| ATUALIZAR | O comentário do membro é editado |
+| EXCLUIR | O comentário do deputado é suprimido |
 
 [Componente](essentials-file-library.md)da biblioteca de arquivosSocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria uma pasta |
-| ANEXAR | membro carrega um arquivo |
-| ATUALIZAR | membro atualiza uma pasta ou arquivo |
-| EXCLUIR | membro exclui uma pasta ou arquivo |
+| POSTAGEM | Membro cria uma pasta |
+| ANEXAR | O membro carrega um arquivo |
+| ATUALIZAR | O membro atualiza uma pasta ou um arquivo |
+| EXCLUIR | O membro exclui uma pasta ou arquivo |
 
 [Componente](essentials-forum.md)de fórumSocialEvent `topic`= com/adobe/cq/social/fórum
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria tópico do fórum |
-| ADICIONAR | respostas do membro ao tópico do fórum |
-| ATUALIZAR | o tópico do fórum do membro ou a resposta é editada |
-| EXCLUIR | o tópico do fórum do membro ou a resposta é excluída |
+| POSTAGEM | Membro cria tópico do fórum |
+| ADICIONAR | Respostas dos membros ao tópico do fórum |
+| ATUALIZAR | O tópico do fórum do membro ou a resposta é editada |
+| EXCLUIR | O tópico ou a resposta do membro do fórum é excluído |
 
 [Componente](blog-developer-basics.md)de JournalSocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um artigo de blog |
-| ADICIONAR | membro comenta em um artigo de blog |
-| ATUALIZAR | artigo ou comentário do membro do blog é editado |
-| EXCLUIR | artigo ou comentário do membro do blog é excluído |
+| POSTAGEM | Membro cria um artigo de blog |
+| ADICIONAR | Membro comenta em um artigo de blog |
+| ATUALIZAR | O artigo ou comentário do membro do blog é editado |
+| EXCLUIR | O artigo ou comentário do membro do blog é excluído |
 
 [Componente QnA](qna-essentials.md)SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria uma pergunta QnA |
-| ADICIONAR | membro cria uma resposta QnA |
-| ATUALIZAR | pergunta ou resposta QnA do membro é editada |
-| SELECIONAR | a resposta do membro é selecionada |
-| CANCELAR SELEÇÃO | a resposta do membro é desmarcada |
-| EXCLUIR | pergunta ou resposta do membro é excluída |
+| POSTAGEM | Membro cria uma pergunta QnA |
+| ADICIONAR | Membro cria uma resposta QnA |
+| ATUALIZAR | A pergunta ou resposta do membro é editada |
+| SELECIONAR | A resposta do membro é selecionada |
+| CANCELAR SELEÇÃO | A resposta do membro é desmarcada |
+| EXCLUIR | A pergunta ou resposta do membro é eliminada |
 
 [Revisa o componente](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria revisão |
-| ATUALIZAR | a revisão do membro é editada |
-| EXCLUIR | a revisão do membro é excluída |
+| POSTAGEM | Membro cria revisão |
+| ATUALIZAR | A revisão do membro é editada |
+| EXCLUIR | A revisão do membro é suprimida |
 
 [Componente de classificação](rating-basics.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrição** |
 |---|---|
-| ADICIONAR CLASSIFICAÇÃO | o conteúdo do membro foi avaliado |
-| REMOVER CLASSIFICAÇÃO | o conteúdo do membro foi reduzido |
+| ADICIONAR CLASSIFICAÇÃO | O conteúdo do membro foi avaliado |
+| REMOVER CLASSIFICAÇÃO | O conteúdo do membro foi reduzido |
 
 [Componente de votação](essentials-voting.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrição** |
 |---|---|
-| ADICIONAR VOTAÇÃO | o conteúdo do membro foi votado |
-| REMOVER VOTAÇÃO | o conteúdo do membro foi rejeitado |
+| ADICIONAR VOTAÇÃO | O conteúdo do deputado foi votado |
+| REMOVER VOTAÇÃO | O conteúdo do deputado foi rejeitado |
 
 **Componentes** SocialEvent habilitados para moderação `topic`= com/adobe/cq/social/moderação
 
 | **Verbo** | **Descrição** |
 |---|---|
-| NEGAR | conteúdo do membro negado |
-| SINALIZADOR COMO INAPROPRIADO | o conteúdo do membro está sinalizado |
-| IMPRUDENTE COMO INAPROPRIADO | o conteúdo do membro não está sinalizado |
-| ACEITAR | o conteúdo do membro é aprovado pelo moderador |
-| FECHAR | membro fecha comentário a edições e respostas |
-| ABRIR | membro reabre comentário |
+| NEGAR | O conteúdo do membro é negado |
+| SINALIZADOR COMO INAPROPRIADO | O conteúdo do membro está sinalizado |
+| IMPRUDENTE COMO INAPROPRIADO | O conteúdo do membro não está sinalizado |
+| ACEITAR | O conteúdo do membro é aprovado pelo moderador |
+| FECHAR | O membro fecha os comentários às edições e respostas |
+| ABRIR | Comentário reaberto pelo membro |
 
 ## Eventos para componentes personalizados {#events-for-custom-components}
 
@@ -125,6 +128,7 @@ O evento personalizado substituiria o método para `getVerb()` que um apropriado
 >[!NOTE]
 >
 >Certifique-se de que uma extensão personalizada esteja registrada com uma classificação inferior a qualquer implementação existente no produto.
+
 
 ### Pseudo-código para o Evento de componente personalizado {#pseudo-code-for-custom-component-event}
 
@@ -231,7 +235,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 É possível ouvir eventos com o objetivo de modificar o que aparece no fluxo de atividades.
 
-A amostra de pseudocódigo a seguir removerá o componente EXCLUIR eventos para comentários do fluxo de atividades.
+A amostra de pseudo código a seguir removerá DELETE eventos para o componente Comentários do fluxo de atividades.
 
 ### Pseudo-código para EventListener {#pseudo-code-for-eventlistener}
 
