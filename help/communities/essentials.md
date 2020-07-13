@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 17%
 
 ---
 
 
-# Componentes, funções e recursos básicos {#component-function-and-feature-essentials}
+# Componentes, funções e recursos básicos  {#component-function-and-feature-essentials}
 
 Os recursos do AEM Communities exigem que os visitantes do site se tornem membros e façam logon no site [da](overview.md#communitiessites) comunidade antes de poderem publicar conteúdo. Assim, os modelos [de site da](sites.md)comunidade, a partir dos quais um site da comunidade é [criado](sites-console.md), são projetados para incluir um recurso de logon, bem como perfis do usuário, mensagens, pesquisa, moderação e tradução.
 
@@ -61,7 +64,7 @@ A seguir estão links para informações essenciais para componentes, funções 
 * [Pontuação e emblemas](configure-scoring.md)
 * [Pesquisar](search-implementation.md)
 * [Gráfico social](essentials-socialgraph.md)
-* [Provedor](srp-and-ugc.md) de recursos do Armazenamento `(SRP)`
+* [Provedor de recursos do Armazenamento](srp-and-ugc.md) `(SRP)`
 
 * [Marcação com tags](tag.md)
 
