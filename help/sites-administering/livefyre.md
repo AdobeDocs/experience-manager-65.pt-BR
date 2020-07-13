@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1653'
 ht-degree: 4%
 
 ---
@@ -39,22 +39,13 @@ O AEM 6.5 vem com o pacote de recursos 1.2.6 do Livefyre pré-instalado. Este pa
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Retorne à página inicial do AEM, clique em Ferramentas e navegue até **Implantação > Compartilhamento** de pacotes.
+1. Baixe o pacote Livefyre da Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software.
 
-   Uma lista de pacotes de recursos e hotfixes disponíveis para download é exibida.
-
-1. Na pesquisa por palavra-chave, procure &quot;Livefyre&quot; e selecione o Livefyre feature pack correspondente à sua versão do AEM.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. Na página de informações do pacote de recursos, clique em **Download**, depois leia o Contrato de licença do pacote e clique em **Aceitar**.
-1. Retorne ao Gerenciador de pacotes, localize o pacote recém-baixado e clique em **Instalar**.
+1. No Gerenciador de pacotes, instale o pacote baixado. Consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md) para obter mais informações sobre como usar a Distribuição de software e os pacotes no AEM
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Seu pacote Livefyre-AEM está instalado agora. Antes de começar a usar os recursos de integração, você deve configurar o AEM para usar o Livefyre.
-
-   Para obter mais informações sobre pacotes, consulte [Como trabalhar com pacotes](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    Para obter mais informações e notas de versão sobre pacotes de recursos, consulte Pacotes de [recursos](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
