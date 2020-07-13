@@ -10,48 +10,52 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
 
-# Configuração inicial para ativação {#initial-setup-for-enablement}
+# Configuração inicial para ativação  {#initial-setup-for-enablement}
 
-## Iniciar instâncias de autor e publicação {#start-author-and-publish-instances}
+## Instâncias de autor e publicação do Start {#start-author-and-publish-instances}
 
 Para fins de desenvolvimento e demonstração, será necessário executar uma instância de autor e uma instância de publicação.
 
 Siga as instruções básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) ao AEM que resultarão em
 
-* Ambiente do autor em [localhost:4502](http://localhost:4502/)
-* Ambiente de publicação no [localhost:4503](http://localhost:4503/)
+* ambiente do autor em [localhost:4502](http://localhost:4502/)
+* Publicar ambiente no [localhost:4503](http://localhost:4503/)
 
-Para o AEM Communities,
+Para AEM Communities,
 
-* O ambiente do autor é para
+* O ambiente do autor é para:
 
-   * Desenvolvimento de sites, modelos, componentes, recursos de ativação e caminhos de aprendizagem
-   * Atribuição de membros e grupos de membros para habilitar recursos e caminhos de aprendizado
-   * Geração de relatórios em atribuições, exibições e postagens
-   * Tarefas administrativas e de configuração
+   * Desenvolvimento de sites, modelos, componentes, recursos de ativação e caminhos de aprendizado.
+   * Atribuição de membros e grupos de membros para ativar recursos e caminhos de aprendizado.
+   * Geração de relatórios em atribuições, visualizações e postagens.
+   * tarefas administrativas e de configuração.
 
-* O ambiente de publicação é para
+* O ambiente publish é para:
 
-   * Aprendizagem/treinamento com base em tópicos gerenciados pelo Gerenciador de ativação
-   * Recursos de ativação de comentários e classificações e caminhos de aprendizado
-   * Entrar em contato com os contatos dos recursos
+   * Aprendizagem/treinamento com base em tópicos gerenciados pelo Gerenciador de ativação.
+   * Recursos de ativação de comentários e classificações e caminhos de aprendizado.
+   * Entrar em contato com os contatos de recursos.
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, consulte a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
-Este tutorial cria um site [de comunidade de](overview.md#enablement-community)ativação. Para verificar se o pacote de recursos mais recente está instalado, visite:
+Este tutorial cria um site [de comunidade de](overview.md#enablement-community)ativação. Para garantir que o pacote de recursos mais recente esteja instalado, visite:
 
 * [Versões mais recentes](deploy-communities.md#latest-releases)
 
-Para obter um tutorial que cria um site [de comunidade de](overview.md#engagement-community)envolvimento, visite [Introdução ao AEM Communities](getting-started.md).
+Para obter um tutorial que cria um site [de comunidade de](overview.md#engagement-community)envolvimento, visite [Introdução aos AEM Communities](getting-started.md).
 
 ## Configurar recursos de ativação {#configure-enablement-features}
 
@@ -79,7 +83,7 @@ Para obter instruções simples para habilitar o serviço de túnel, consulte Se
 
 ## Criar tags do tutorial {#create-tutorial-tags}
 
-Crie tags para usar nos tutoriais de envolvimento e ativação, usando o namespace da tag `Tutorial`.
+Crie tags para usar nos tutoriais de envolvimento e ativação, usando a namespace de tags de `Tutorial`.
 
 Use o console [](../../help/sites-administering/tags.md#tagging-console) Marcação para criar as seguintes tags:
 
@@ -92,12 +96,12 @@ Use o console [](../../help/sites-administering/tags.md#tagging-console) Marcaç
 
 ![chlimage_1-417](assets/chlimage_1-417.png)
 
-Em seguida, siga as instruções para
+Em seguida, siga as instruções para:
 
 1. [Definir as permissões da tag](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publicar as tags](../../help/sites-administering/tags.md#publishing-tags)
 
-Amostra do pacote de tags criado para os tutoriais de introdução ao AEM Communities
+Amostra do pacote de tags criado para os tutoriais de introdução aos AEM Communities
 
 [Obter arquivo](assets/communities_tutorialtags-10.zip)
 
@@ -118,6 +122,7 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 >Se forem criados depois, eles poderão ser adicionados como membros do grupo *de membros do Tutorial de* ativação durante a criação do membro.
 >
 >Em vez disso, mais tarde, eles serão [atribuídos ao grupo](enablement-create-site.md#assignuserstocommunityenablemembersgroup)de membros.
+
 
 ### Riley Taylor - Inscrito {#riley-taylor-enrollee}
 
@@ -174,6 +179,7 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 >
 >Durante a criação do site da comunidade, os membros e grupos existentes podem ser adicionados ao grupo de membros do site da comunidade.
 
+
 ## Função de administrador da comunidade {#community-administrator-role}
 
 Os membros do grupo Administradores da comunidade podem criar sites da comunidade, gerenciar sites, gerenciar membros (eles podem proibir membros da comunidade) e moderar conteúdo.
@@ -190,10 +196,10 @@ Crie um usuário no *autor*, ao qual seja atribuída a função de Administrador
 
    * Por exemplo, nome de usuário &#39;admin&#39; / senha &#39;admin&#39;
 
-* No console principal, navegue até **[!UICONTROL Ferramentas, Operações > Segurança > Usuários]**
-* No menu **[!UICONTROL Editar]** , selecione **[!UICONTROL Adicionar usuário]**
+* No console principal, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
+* No menu **[!UICONTROL Editar]** , selecione **[!UICONTROL Adicionar usuário]**.
 
-* Na `Create New User` caixa de diálogo, digite
+* Na `Create New User` caixa de diálogo insira:
 
    * **ID&amp;ast;**: sírio
    * **Endereço** Emai: sirius.nilson@mailinator.com
