@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Uma limitação conhecida expõe o conteúdo do site da comunidade a visitantes 
 
 Para proteger o conteúdo do site da sua comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json , siga estas etapas:
 
-1. Na instância do AEM Author, vá para https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;sitename>.html.
+1. Na instância do autor de AEM, vá para https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;sitename>.html.
 
    >[!NOTE]
    >
@@ -124,7 +124,7 @@ As interações com o recurso de ativação serão anotadas na seção Relatóri
 
 A página Catálogo de esqui é o catálogo de recursos de ativação marcados com tags da `Tutorial` namespace. Os dois recursos de Lição *de* esqui são marcados com a `Skiing` tag , de modo que se nenhuma tag diferente `All` ou `Tutorial: Sports / Skiing` estiver selecionada, nada será exibido.
 
-Quando os recursos de ativação não foram atribuídos a um membro, diretamente ou por meio de um caminho de aprendizado, é possível interagir com os recursos de ativação localizados em um catálogo e fornecer feedback por meio de comentários e classificações.
+When a member has not been assigned enablement resources, either directly or through a learning path, it is possible to interact with enablement resources located within a catalog and provide feedback through comments and ratings.
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -167,28 +167,28 @@ O home page é identificado pelo primeiro item de menu, Atribuições. Quinn é 
 
 O que há é atividade pelos dois alunos, `Riley Taylor` e `Sidney Croft`. Ao selecionar o `Administration` link para acessar o Console de moderação, o Quinn é capaz de usar o console [de moderação em](moderation.md) massa para moderar suas publicações.
 
-Selecionar o ícone do painel lateral alterna para abrir os filtros usados para pesquisar o conteúdo da comunidade.
+Selecting the side-panel icon toggles open the filters used to search community content.
 
-Passar o mouse sobre um cartão de comentários exibe ações de moderação.
+Hovering over a comment card displays moderation actions.
 
 ![chlimage_1-442](assets/chlimage_1-442.png)
 
 ## Relatórios sobre o autor {#reports-on-author}
 
-Há duas maneiras de acessar o relatórios nos alunos e os recursos de ativação.
+There are two ways to access reporting on learners and enablement resources.
 
 No autor, navegue até **Communities (Comunidades),[Resources console](resources.md)**(Recursos), onde os recursos de ativação são gerenciados e, após selecionar um site da comunidade, é possível gerar relatórios para
 
-* Todos os recursos de ativação e caminhos de aprendizado
-* Um recurso de ativação ou caminho de aprendizado específico
+* All enablement resources and learning paths
+* One specific enablement resource or learning path
 
-Navegue até **Comunidades, console[](reports.md)**Relatórios e gere relatórios de acordo com
+Navigate to the **Communities,[Reports console](reports.md)**, and generate reports according to:
 
 * Atribuições para ativar recursos e caminhos de aprendizado
 * Postagens em um site da comunidade durante um período específico
-* Visualizações (visitas ao site) de um site da comunidade durante um período específico
+* Views (site visits) of a community site over a specific period
 
-* As postagens e visualizações podem ser para todo o conteúdo ou para conteúdo específico:
+* Posts and views may be to all content, or to specific content:
 
    * Fórum
    * Tópico do fórum
@@ -199,16 +199,15 @@ Navegue até **Comunidades, console[](reports.md)**Relatórios e gere relatório
    * Calendário
    * Evento do calendário
 
-### Console de recursos {#resources-console}
+### Resources Console {#resources-console}
 
 Com uma certa atividade e interação com os Recursos na publicação, a exibição dos relatórios do autor vale a pena.
 
-* Sobre o autor
-* Fazer logon com privilégios administrativos
-* Navegue do menu principal até **[!UICONTROL Comunidades > Recursos]**
-* Selecionar o `Enablement Tutorial` site
-* Selecione o `Report` ícone para obter um resumo de todos os Recursos
-* Selecione um Recurso e, em seguida, o `Report` ícone para um relatório sobre esse Recurso
+* Em autor, faça logon com privilégios administrativos.
+* Navegue do menu principal para **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**.
+* Selecione o `Enablement Tutorial` site.
+* Selecione o `Report` ícone para obter um resumo de todos os Recursos.
+* Selecione um Recurso e, em seguida, o `Report` ícone para um relatório sobre esse Recurso.
 
 Observe que provavelmente é muito cedo para mostrar dados do Adobe Analytics, que podem levar de 1 a 12 horas para serem exibidos. No entanto, o relatórios SCORM básico já está disponível.
 
@@ -236,30 +235,29 @@ O console Relatórios permite a geração de relatórios em
 
 Para relatórios em atribuições:
 
-* Sobre o autor
-* Fazer logon com privilégios administrativos
-* Navegue até **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]** > Relatório **[!UICONTROL de atribuições]**
-* Selecione um **[!UICONTROL Site]** no menu suspenso (selecione `Enablement Tutorial`)
+* Em autor, faça logon com privilégios administrativos.
+* Navegue até **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]** > Relatório **[!UICONTROL de]** atribuições.
+* Selecione um **[!UICONTROL Site]** no menu suspenso (selecione `Enablement Tutorial`).
 
 * Selecionar **[!UICONTROL grupo]** (selecione `Community Ski Class`)
 
 * Selecionar uma **[!UICONTROL atribuição]** (selecione `Ski Lessons`)
 
-* Selecionar **[!UICONTROL Gerar]**
+* Select **[!UICONTROL Generate]**
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
-Para relatórios sobre visualizações:
+For reports on views:
 
-* No autor, faça logon com privilégios administrativos
-* Navegue até **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]** > Relatório de **[!UICONTROL Visualizações]**
-* Selecione um **Site **no menu suspenso (selecione`Enablement Tutorial`)
+* Em autor, faça logon com privilégios administrativos.
+* Navegue até **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]** > Relatório **[!UICONTROL de]** Visualizações.
+* Selecione um **Site **no menu suspenso (selecione`Enablement Tutorial`).
 
-* Selecionar tipo **[!UICONTROL de]** conteúdo (selecione `all`)
+* Selecione Tipo **[!UICONTROL de]** conteúdo (selecione `all`).
 
-* Selecionar um intervalo **[!UICONTROL de]** datas (selecione `Last 7 days`)
+* Selecione um intervalo **[!UICONTROL de]** datas (selecione `Last 7 days`).
 
-* Selecionar **[!UICONTROL Gerar]**
+* Selecione **[!UICONTROL Gerar]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 
