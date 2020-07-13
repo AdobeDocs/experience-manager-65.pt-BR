@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 9%
@@ -27,10 +27,10 @@ O `Leaderboard` componente fornece a capacidade de obter uma noção de como os 
 
 Antes de incluir o componente de quadro de líderes em uma página, é necessário configurar a Pontuação e os Distintos [de](/help/communities/implementing-scoring.md)comunidades.
 
-Esta seção da documentação descreve
+Esta seção da documentação descreve:
 
-* Adicionar o `Leaderboard` componente a um site da [comunidade](/help/communities/overview.md#community-sites)
-* Configurações para o `Leaderboard` componente
+* Adicionar o `Leaderboard` componente a um site [da](/help/communities/overview.md#community-sites)comunidade.
+* Configurações do `Leaderboard` componente.
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -44,17 +44,19 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando colocado pela primeira vez em uma página de um site da comunidade, é assim que o componente aparece:
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### Configuração do Quadro de líderes {#configuring-leaderboard}
 
 Selecione o componente inserido a ser acessado e selecione o `Leaderboard` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-20](assets/chlimage_1-20.png) ![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
+
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **Configurações** , especifique quais informações relacionadas ao membro serão exibidas:
+Na guia **[!UICONTROL Configurações]** , especifique quais informações relacionadas ao membro serão exibidas:
 
 * **Nome para exibição**
 
@@ -118,7 +120,7 @@ Configuração do componente de quadro de líderes:
    * Regra para insígnias = `/libs/settings/community/badging/rules//reference-badging`
    * Limite de exibição = `10`
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### Exemplo: Painel de líderes de especialistas {#example-experts-leaderboard}
 
@@ -141,7 +143,7 @@ Configuração do componente de quadro de líderes:
    * Regra para insígnias = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite de exibição = `10`
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Informações adicionais {#additional-information}
 
