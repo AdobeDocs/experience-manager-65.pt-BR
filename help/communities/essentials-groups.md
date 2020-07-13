@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 1%
 
 ---
 
 
-# Essenciais do grupo comunitário {#community-group-essentials}
+# Essenciais do grupo comunitário  {#community-group-essentials}
 
 O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criada dinamicamente em um site da comunidade por usuários autorizados dos ambientes de publicação e autor.
 
@@ -95,10 +98,11 @@ A inclusão de vários modelos de grupos da comunidade resulta na apresentação
 
 A partir do [FP1](deploy-communities.md#latestfeaturepack)das Comunidades, é possível que uma função Grupos seja incluída em um modelo de grupo, permitindo assim grupos aninhados (subcomunidades).
 
-Quando um site da comunidade ou modelo de grupo inclui a função Grupos, é possível
+Quando um site da comunidade ou modelo de grupo inclui a função Grupos, é possível:
 
-* Criar uma subcomunidade no ambiente do autor
-* Criar um grupo no ambiente de publicação, quando configurado para permitir
+* Crie uma subcomunidade no ambiente do autor.
+
+* Crie um grupo no ambiente de publicação, quando configurado para permitir.
 
 Ao criar um grupo no ambiente do autor, é necessário primeiro publicar o site da comunidade e depois publicar o grupo. A publicação do site da comunidade publicará as páginas do grupo, sem criar os grupos de membros da subcomunidade aos quais as ACLs estão definidas. Assim, um grupo restrito (secreto) pode ser visível até que o grupo seja explicitamente publicado.
 
