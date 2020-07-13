@@ -1,8 +1,8 @@
 ---
 title: Noções básicas sobre curtir
 seo-title: Noções básicas sobre curtir
-description: Visão geral do componente Curtir
-seo-description: Visão geral do componente Curtir
+description: Visão geral do componente de curtir
+seo-description: Visão geral do componente de curtir
 uuid: 89f16859-c901-4090-8e16-363b95c508de
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 1%
 
 ---
 
@@ -70,14 +73,14 @@ Não há suporte para a publicação anônima de um curtir. Os visitantes do sit
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
 Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
 
-Desde as comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir das comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
-* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
-* [Refatoração](socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
+* [Visão geral](srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
+* [Refatoração](socialutils.md) de utilitários sociais - mapeamento de métodos de utilitários obsoletos para métodos atuais de utilitários SRP.
 
