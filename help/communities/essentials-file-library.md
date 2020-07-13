@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 2%
 
 ---
 
@@ -69,14 +72,14 @@ Uma estrutura de site da comunidade que inclui a função [Biblioteca de](functi
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
 Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
 
-Desde as comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir das comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos de armazenamento - introdução e visão geral do uso do repositório
-* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
-* [Refatoração](socialutils.md) do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP
+* [Visão geral](srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
+* [Refatoração](socialutils.md) de utilitários sociais - mapeamento de métodos de utilitários obsoletos para métodos atuais de utilitários SRP.
 
