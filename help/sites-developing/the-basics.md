@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+source-git-commit: d621a612556f0bea032444c2e07be101868b1905
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3371'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Antes de acessar os conceitos principais do AEM, a Adobe recomenda concluir o tutorial da WKND no documento [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md) para obter uma visão geral do processo de desenvolvimento do AEM e introdução aos conceitos principais.
+>Antes de acessar os conceitos principais do AEM, a Adobe recomenda concluir o tutorial da WKND no documento [Introdução ao desenvolvimento de AEM Sites](/help/sites-developing/getting-started.md) para obter uma visão geral do processo de desenvolvimento do AEM e introdução aos conceitos principais.
 
 ## Pré-requisitos para o desenvolvimento no AEM {#prerequisites-for-developing-on-aem}
 
@@ -68,11 +68,11 @@ Consulte [Discover Sling em 15 minutos](https://sling.apache.org/documentation/g
 
 O diagrama a seguir explica a resolução do script Sling: ele mostra como obter da solicitação HTTP para o nó de conteúdo, do nó de conteúdo para o tipo de recurso, do tipo de recurso para o script e quais variáveis de script estão disponíveis.
 
-![chlimage_1-84](assets/chlimage_1-97.png)
+![Noções básicas sobre a resolução de scripts do Apache Sling](assets/sling-cheatsheet-01.png)
 
 O diagrama a seguir explica todos os parâmetros de solicitação ocultos, mas poderosos, que você pode usar ao lidar com o SlingPostServlet, o manipulador padrão para todas as solicitações POST que oferece opções intermináveis para criar, modificar, excluir, copiar e mover nós no repositório.
 
-![chlimage_1-85](assets/chlimage_1-98.png)
+![Uso do SlingPostServlet](assets/sling-cheatsheet-02.png)
 
 ### Sling é centrado no conteúdo {#sling-is-content-centric}
 
@@ -315,7 +315,7 @@ Em seguida, uma estrutura OSGi oferta o carregamento/descarregamento dinâmico, 
 >
 >Em particular, a página de Educação Básica contém uma coleção de apresentações e tutoriais.
 
-Essa arquitetura permite estender o Sling com módulos específicos do aplicativo. A Sling e, portanto, o CQ5, usa a implementação do [Apache Felix](https://felix.apache.org/) do OSGI (Open Services Gateway) e se baseia nas Especificações da OSGi Service Platform Release 4.2. Ambos são coleções de pacotes OSGi executados em uma estrutura OSGi.
+Essa arquitetura permite estender o Sling com módulos específicos do aplicativo. A Sling e, portanto, o CQ5, usa a implementação do [Apache Felix](https://felix.apache.org/) do OSGI (Open Services Gateway) e se baseia nas Especificações do OSGi Service Platform versão 4.2. Ambos são coleções de pacotes OSGi executados em uma estrutura OSGi.
 
 Isso permite executar as seguintes ações em qualquer um dos pacotes da sua instalação:
 
@@ -446,7 +446,7 @@ Com o AEM, um ambiente de produção geralmente consiste em dois tipos diferente
 
 ## O Dispatcher {#the-dispatcher}
 
-O Dispatcher é a ferramenta da Adobe para armazenamento em cache e/ou balanceamento de carga. Informações adicionais podem ser encontradas sob [o Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
+A Dispatcher é a ferramenta da Adobe para armazenamento em cache e/ou balanceamento de carga. Para mais informações, consulte [o Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
 ## FileVault (sistema de revisão da fonte) {#filevault-source-revision-system}
 
