@@ -3,10 +3,10 @@ title: Notas de versão anteriores do Service Pack do Adobe Experience Manager 6
 description: Notas de versão específicas do Adobe Experience Manager 6.5 Service Pack 3 e anterior.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
+source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
 workflow-type: tm+mt
-source-wordcount: '8102'
-ht-degree: 36%
+source-wordcount: '8108'
+ht-degree: 37%
 
 ---
 
@@ -113,7 +113,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * O realce de campo para seleção obrigatória de campo no editor de metadados não é removido mesmo depois de selecionar o campo obrigatório, quando as regras de dependência são definidas no formulário de schema de metadados correspondente (NPR-31834).
 
-* Os nomes completos das tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
+* Nomes completos de tags de nível de folha (da hierarquia de tags) não são exibidos na página Propriedades do ativo (NPR-31820).
 
 * O uso do comando back da página Propriedades do ativo no navegador Safari dá um erro (NPR-31753).
 
@@ -506,7 +506,7 @@ Remove one mention of this fix.
 
 * O serviço Web SOAP que usa MTOM em um projeto .NET exibe exceções para a chamada AssemblerServiceClient e métodos HtmlToPDF2 (NPR-4281771).
 
-* As versões 1.4 e 1.4.1 do Axis jar incluem uma vulnerabilidade de segurança (NPR-31015).
+* [As versões 1.4 e 1.4.1](https://helpx.adobe.com/br/aem-forms/quick-fixes/6-5/jee-patch-0014.html) do Axis jar incluem uma vulnerabilidade de segurança (NPR-31015).
 
 **Foundation JEE**
 
