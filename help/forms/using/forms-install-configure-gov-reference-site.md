@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 38f40badf8a850de363fa3f28232d3037fbf209b
+source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
 workflow-type: tm+mt
-source-wordcount: '5037'
+source-wordcount: '4685'
 ht-degree: 1%
 
 ---
@@ -77,31 +77,6 @@ Os ativos incluídos neste pacote incluem:
 * Amostra (em memória) Apache Derby Database
 * Fonte de Dados Derby Apache (para uso com o Modelo de Dados de Formulário)
 
-## Opções de configuração {#configuration-options}
-
-Os usuários podem configurar várias opções de serviço de fluxo de trabalho que incluem:
-
-1. Entrada do Microsoft Dynamics
-1. Adobe Sign
-1. Gerenciamento de comunicações personalizadas do AEM
-1. Adobe Analytics
-
-Para configurá-los para serem ativados no Fluxo de trabalho, os usuários precisam executar as seguintes tarefas.
-
-1. Navegue até https://&#39;[server]:[port]&#39;/system/console/configMgr.
-
-1. Localize as Configurações *WeGov*.
-
-1. Abra a definição do serviço e permita que os serviços selecionados sejam chamados dentro do fluxo de trabalho.
-
->[!NOTE]
->
->Como um usuário ativa o serviço na página do Configuration Manager, os usuários ainda precisam configurar uma configuração de serviço para se comunicar com os serviços externos solicitados.
-
-![nós governamos o pacote de formulários](assets/aftia-configuration-options.jpg)
-
-1. Depois de concluído, clique no botão Salvar para salvar as configurações.
-
 ## Instalação do pacote de demonstração {#demo-package-installation}
 
 Esta seção contém informações sobre como instalar o pacote de demonstração.
@@ -163,18 +138,19 @@ Esta seção contém detalhes e instruções sobre a configuração pós-implant
 
 1. Navegue até *https://&lt;aemserver>:&lt;porta>/libs/granite/security/content/groupadmin.html*
 1. Faça logon como administrador para executar as tarefas abaixo.
+1. Role até o final da página para carregar todos os grupos de usuários.
 1. Procure por &quot;**fluxo de trabalho**&quot;.
 1. Selecione o grupo &quot;**workflow-users**&quot; e clique em &quot;Propriedades&quot;.
 1. Navegue até a guia &quot;Membros&quot;.
 1. Digite **wegov** no campo &quot;Selecionar usuário ou grupo&quot;.
-1. Selecione na lista suspensa &quot;Usuários **de formulário** We.Gov&quot;.
+1. Selecione na lista suspensa &quot;Usuários **do Forms** We.Gov&quot;.
 
    ![Editar configurações de grupo para usuários de fluxo de trabalho](assets/edit_group_settings.jpg)
 
 1. Clique em &quot;Salvar e fechar&quot; na barra de menus.
-1. Repita as etapas de 2 a 7 pesquisando por &quot;**analytics**&quot;, selecionando o grupo &quot;Administradores **** Analytics&quot; e adicionando o grupo &quot;Usuários **de formulário** We.Gov&quot; como membro.
-1. Repita as etapas de 2 a 7 pesquisando &quot;usuários **de** formulários&quot;, selecionando o grupo &quot;**formulários-usuários** avançados&quot; e adicionando o grupo &quot;Usuários **de formulário** We.Gov&quot; como membro.
-1. Repita as etapas de 2 a 7 pesquisando &quot;usuários **de** formulários&quot;, selecionando o grupo &quot;**usuários** de formulários&quot; e, desta vez, adicionando o grupo &quot;Usuários **do** We.Gov&quot; como membro.
+1. Repita as etapas de 2 a 7 pesquisando por &quot;**analytics**&quot;, selecionando o grupo &quot;Administradores **** Analytics&quot; e adicionando o grupo &quot;Usuários **do Forms** We.Gov&quot; como membro.
+1. Repita as etapas de 2 a 7 pesquisando &quot;usuários **de** formulários&quot;, selecionando o grupo &quot;**formulários-usuários** avançados&quot; e adicionando o grupo &quot;Usuários **do Forms** We.Gov&quot; como membro.
+1. Repita as etapas de 2 a 7 pesquisando &quot;**formulários-usuários**&quot;, selecionando o grupo &quot;**formulários-usuários**&quot; e, desta vez, adicionando o grupo &quot;Usuários **** We.Gov&quot; como membro.
 
 ### Configuração do servidor de email {#email-server-configuration}
 
@@ -362,7 +338,7 @@ Quando a configuração em nuvem estiver concluída, talvez você queira testar 
 
 1. Click on **Save and Close**.
 
-1. Teste os serviços para garantir que eles se conectem com êxito à Fonte de Dados configurada
+1. [Teste os serviços](work-with-form-data-model.md#test-data-model-objects-and-services) para garantir que eles se conectem com êxito à Fonte de Dados configurada
 
    * Para testar a conexão, selecione a conta **HOMEMORTGAGEACCOUNT** e forneça um serviço get. Teste o serviço e os administradores do sistema podem ver os dados sendo recuperados.
 
@@ -488,25 +464,6 @@ Os dados do AEM Forms Analytics estão disponíveis offline ou sem uma configura
 
    ![Visualização de dados de relatório da Analytics](assets/analytics_report_data.jpg)
 
-#### Visualização do relatórios Adobe Analytics {#view-adobe-analytics-reporting}
-
-Como opção, você pode navegar diretamente para o Adobe Analytics para ver os dados de análise.
-
-1. Navegue até [https://my.omniture.com/login/](https://my.omniture.com/login/)
-1. Faça logon usando suas credenciais:
-
-   1. **Empresa:** Demonstração de AEM Forms
-   1. **Usuário:** &lt;disponível mediante solicitação>
-   1. **Senha:** &lt;disponível mediante solicitação>
-
-1. Selecione &quot;Site de referência We.Gov&quot; nos Report Suites.
-
-   ![Report Suites](assets/report_suites.jpg)
-
-1. Selecione um dos relatórios disponíveis para exibir os dados de análise desse relatório.
-
-   ![Dados Analytics de um relatório](assets/analytics_data.jpg)
-
 ### Ativação da configuração de formulários automatizados da Adobe {#automated-forms-enablement}
 
 Para instalar e configurar AEM Forms com o Adobe Forms, os usuários da ferramenta de conversão devem ter o seguinte:
@@ -535,7 +492,7 @@ Para configurar o serviço para se comunicar corretamente com a ferramenta de co
 
 1. Certifique-se de baixar o certificado.
 
-1. Não continue com o restante da seção de configuração - revisão (TBD)
+1. Não continue com o restante da configuração - consulte a seção [Criação de integração na E/S da Adobe](#create-integration-adobeio)
 
 >[!NOTE]
 O certificado criado nesta seção será usado para criar o serviço de integração na E/S da Adobe. Depois que os usuários criarem no serviço de integração, os usuários poderão usar essas informações da E/S da Adobe para concluir a configuração.
@@ -590,7 +547,7 @@ Agora que você criou uma integração, conclua a instalação da configuração
 
 #### Configuração da Configuração da Nuvem (Produção AFC We.Gov) {#configure-cloud-configuration}
 
-Quando a configuração do IMS estiver concluída, poderemos continuar a criar a configuração de nuvem no AEM.
+Quando a configuração do IMS estiver concluída, poderemos continuar a revisar a configuração da nuvem no AEM. Se a configuração não existir, use as seguintes etapas para criar a configuração de nuvem no AEM:
 
 1. Abra o navegador e navegue até o URL do sistema https://&lt;nome_do_domínio>:&lt;porta_do_sistema>
 
@@ -672,13 +629,7 @@ Depois que a configuração for configurada, os usuários poderão testá-la faz
 
    ![Configurações avançadas de conversão](assets/aftia-conversion-settings-2.jpg)
 
-1. Selecione a conversão do start depois de configurar todas as opções que você gostaria de usar
-
-   >[!NOTE]
-   *Especifique uma seção Tema* de formulário adaptável para que os usuários possam especificar o tema Tema acessível - Ultramarine.
-
-   >[!NOTE]
-   Se você quiser vincular o formulário gerado a um FDM, ou qualquer outra coisa, marque a caixa de seleção que diz *Gerar formulários adaptáveis sem vínculos* de dados.
+1. Selecione a conversão de start depois de configurar todas as opções que você gostaria de usar.
 
 1. À medida que o processo de conversão é iniciado, os usuários devem ver a seguinte tela:
 
@@ -688,57 +639,11 @@ Depois que a configuração for configurada, os usuários poderão testá-la faz
 
    ![Formulário adaptável convertido](assets/aftia-converted-adaptive-form-2.jpg)
 
-#### Teste da conversão de formulários (Aplicativo de cartão de crédito We.Finance) {#testing-forms-conversion-wefinance}
-
-Depois que a configuração for configurada, os usuários poderão testá-la fazendo upload de um documento PDF.
-
-1. Navegue até o sistema AEM https://&lt;nome_do_domínio>:&lt;porta_do_sistema>
-
-1. Clique em Formulários > Formulários e Documentos > AEM Forms We.finance Forms > PDF forms.
-
-1. Selecione o Aplicativo de Cartão de Crédito We.Finance.
-
-1. Clique no botão Conversão **automatizada do** Start no canto superior direito.
-
-1. Os usuários devem poder ver a opção como mostrado abaixo.
-
-   ![PDF forms](assets/aftia-pdf-forms.jpg)
-
-1. Depois que o botão for selecionado, as opções a seguir serão apresentadas aos usuários.
-
-   * Certifique-se de que os usuários selecionem a configuração de produção *AFC* We.Finance
-
-   ![Selecione We.Finance AFC Production](assets/aftia-select-production-configuration.jpg)
-
-   ![Configurações avançadas de conversão](assets/aftia-advanced-conversion-settings-wefinance.jpg)
-
-1. Selecione a conversão do start depois de configurar todas as opções que você gostaria de usar
-
-   >[!NOTE]
-   *Especifique uma seção Tema* de formulário adaptável para que os usuários possam especificar o tema Tema acessível - Ultramarine.
-
-   >[!NOTE]
-   Se você quiser vincular o formulário gerado a um FDM, ou qualquer outra coisa, marque a caixa de seleção que diz *Gerar formulários adaptáveis sem vínculos* de dados.
-
-   >[!NOTE]
-   Os usuários devem definir o local da pasta de saída como */content/dam/formsanddocuments/adobe-finance-forms/afc-converted-forms* para que o formulário renderizado apareça no portal de formulários no site We.Gov.
-
-1. À medida que o processo de conversão é iniciado, os usuários devem ver a seguinte tela:
-
-   ![Conversão em andamento](assets/aftia-conversion-progress.jpg)
-
-   >[!NOTE]
-   Há um erro reportado no qual, mesmo que você selecione uma pasta separada da fornecida na configuração da nuvem, ela ainda criará uma pasta de saída localmente e, em seguida, colocará o formulário gerado no local correto.
-
-1. Quando a conversão for concluída, os usuários verão a seguinte tela:
-
-   ![Conversão em andamento](assets/aftia-conversion-complete.jpg)
-
-1. Os usuários também podem revisar o processo de conversão e editar o resultado para fornecer ao sistema melhores capacidades de conversão.
+   Clique na pasta **Saída** para visualização do formulário adaptativo gerado.
 
 #### Problemas conhecidos e notas {#known-issues-notes}
 
-O processo de conversão de formulários tem algumas limitações e pode ser visualizado no site da Adobe. Consulte Problemas [conhecidos](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html) para verificar se os formulários são compatíveis com esse processo.
+O serviço de Conversão de formulários automatizados inclui certas práticas [recomendadas, padrões](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)complexos conhecidos e problemas [](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html)conhecidos. Revise-os antes de começar a usar o serviço de conversão de formulários automatizados do AEM Forms.
 
 1. Gerar o formulário com Gerar formulários adaptativos sem vínculos de dados ativados se você deseja vincular o formulário a um FDM após a conversão.
 
@@ -869,6 +774,30 @@ Gerenciador de pacotes, os usuários podem acessar o tema do Ultramarine em AEM 
 
 ![Tema ultramarino](assets/aftia-ultramarine-theme.jpg)
 
+## Opções de configuração {#configuration-options}
+
+Os usuários podem configurar várias opções de serviço de fluxo de trabalho que incluem:
+
+1. Entrada do Microsoft Dynamics
+1. Adobe Sign
+1. Gerenciamento de comunicações personalizadas do AEM
+1. Adobe Analytics
+
+Para configurá-los para serem ativados no Fluxo de trabalho, os usuários precisam executar as seguintes tarefas.
+
+1. Navegue até https://&#39;[server]:[port]&#39;/system/console/configMgr.
+
+1. Localize as Configurações *WeGov*.
+
+1. Abra a definição do serviço e permita que os serviços selecionados sejam chamados dentro do fluxo de trabalho.
+
+>[!NOTE]
+Como um usuário ativa o serviço na página do Configuration Manager, os usuários ainda precisam configurar uma configuração de serviço para se comunicar com os serviços externos solicitados.
+
+![nós governamos o pacote de formulários](assets/aftia-configuration-options.jpg)
+
+1. Depois de concluído, clique no botão Salvar para salvar as configurações.
+
 ## Próximas etapas {#next-steps}
 
-Agora todos estão prontos para explorar o site de referência We.Gov. Para obter mais informações sobre o fluxo de trabalho e as etapas do site de referência We.Gov, consulte Passo a passo do site de referência [We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).
+Agora todos estão prontos para explorar o site de referência We.Gov. Para obter mais informações sobre o fluxo de trabalho e as etapas do site de referência We.Gov, consulte Passo-a-passo do site de referência [We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).
