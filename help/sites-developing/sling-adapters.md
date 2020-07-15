@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 4949eeb190f26850f80e1ad107f2057c661ed23d
+source-git-commit: bac56cb8e172d826114e1e607dc24b0a17821f8c
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Há os seguintes casos de uso:
 
 * Obtenha objetos específicos da implementação.
 
-   Por exemplo, uma implementação baseada em JCR da interface genérica fornece acesso ao JCR subjacente [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&quot;
+   Por exemplo, uma implementação baseada em JCR da interface genérica fornece acesso ao JCR subjacente [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Criação de atalhos de objetos que exigem a transmissão de objetos de contexto internos.
 
@@ -70,7 +70,7 @@ No entanto, não há regra geral - o objeto pode ser uma nova instância ou uma 
 Há várias maneiras de `Adaptable.adaptTo()` serem implementadas:
 
 * Pelo próprio objeto; implementação do próprio método e mapeamento para certos objetos.
-* Por um [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&quot;, que pode mapear objetos arbitrários.
+* Por um [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), que pode mapear objetos arbitrários.
 
    Os objetos ainda devem implementar a `Adaptable` interface e ser estendidos [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (o que passa a `adaptTo` chamada para um gerenciador central do adaptador).
 
