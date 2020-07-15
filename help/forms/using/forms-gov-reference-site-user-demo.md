@@ -8,10 +8,10 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29b1a151a6c284fcb0bf01de425dfba79f5943c2
+source-git-commit: f4dcf58d70ea5a17617ef1e80942de7db3233031
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2464'
+ht-degree: 1%
 
 ---
 
@@ -102,7 +102,7 @@ Os seguintes grupos também estão incluídos:
 
 ## Conversão de formulários automatizada (Camila) {#automated-forms-conversion}
 
-**Esta seção**: Camila o cliente potencial CX tem um formulário baseado em PDF mais antigo que foi usado como parte de um processo baseado em papel. Como parte de um esforço de modernização, ela deseja usar este formulário PDF para criar automaticamente um novo formulário Adaptive Forms moderno.
+**Esta seção**: Camila o cliente potencial CX possui um formulário com base em PDF existente que foi usado como parte de um processo com base em papel. Como parte de um esforço de modernização, ela deseja usar este formulário PDF para criar automaticamente um novo formulário Adaptive Forms moderno.
 
 ### Conversão de formulários automatizada - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -116,7 +116,7 @@ Os seguintes grupos também estão incluídos:
 
    ![Carregar formulário](assets/aftia-upload-form.jpg)
 
-1. Em seguida, o Camilla seleciona uma tarefa de conversão de formulários automatizada
+1. Em seguida, Camilla seleciona o formulário PDF e clica em **Start de conversão** automatizada para start do processo de conversão. Talvez seja necessário clicar em **Substituir conversão** se você tiver convertido o formulário.
 
    >[!NOTE]
    >
@@ -124,9 +124,11 @@ Os seguintes grupos também estão incluídos:
 
    * **Opcional**: Se você quiser usar o tema Ultramarine Acessível, basta clicar no tema Especificar um formulário adaptável e selecionar o tema Accessible-Ultramarine exibido na lista de opções.
 
+   ![conversão de Start](assets/aftia-start-conversion.jpg)
+
    ![Tema ultramarino](assets/aftia-upload-conversion-settings.jpg)
 
-   ![conversão de Start](assets/aftia-start-conversion.jpg)
+   O status de porcentagem concluída é exibido durante a conversão. Quando o status exibir **Convertido**, clique na pasta de **saída** , selecione o formulário adaptável e clique em **Editar** para abrir o formulário convertido.
 
 1. Camilla então revisa o formulário e garante que todos os campos estejam presentes
 
@@ -156,7 +158,7 @@ Os seguintes grupos também estão incluídos:
 
 Camila também valida que o conteúdo criado é criado correta e totalmente acessível de acordo com os padrões corporativos.
 
-1. Camila abre o formulário We.Gov preenchido.
+1. Camila clica na pasta de **saída** , seleciona o formulário adaptável e clica em **Pré-visualização** para abrir o formulário We.Gov concluído.
 
 1. Abre a guia Auditoria na ferramenta para desenvolvedores do Chrome.
 
@@ -214,24 +216,9 @@ Qualquer pessoa precisa revisar alguns documentos em casa antes de poder conclui
    1. Informações básicas
 
       1. Nome
-      1. Nome do meio
       1. Sobrenome
-      1. Nome preferencial
       1. DOB
-      1. Sexo
-   1. Informações de contato
-
-      1. Rua Endereço
-      1. Cidade
-      1. Número de telefone
-      1. CEP
       1. E-mail
-      1. Estado
-   1. Status marcial
-
-      1. Status da família
-
-
 
 1. Use a seguinte lógica **** dinâmica para demonstrar o recurso dinâmico usando a lista suspensa Status **da** família:
 
