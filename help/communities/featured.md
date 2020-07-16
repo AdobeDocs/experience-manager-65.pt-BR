@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ## Introdução {#introduction}
 
-O recurso de conteúdo em destaque fornece uma área para visitantes de site conectados (membros da comunidade) no ambiente de publicação para destacar o conteúdo para
+O recurso de conteúdo em destaque fornece uma área para visitantes de site conectados (membros da comunidade) no ambiente de publicação para destacar o conteúdo de:
 
 * [Blogs](blog-feature.md)
 * [Calendários](calendar.md)
@@ -33,8 +36,8 @@ A capacidade de incluir conteúdo pode ser permitida ou não permitida por compo
 
 Esta seção da documentação descreve:
 
-* Adicionar conteúdo em destaque a um site da comunidade
-* Configurações para o `Featured Content` componente
+* Adicionar conteúdo em destaque a um site da comunidade.
+* Configurações do `Featured Content` componente.
 
 ## Adicionar conteúdo em destaque a uma página {#adding-featured-content-to-a-page}
 
@@ -54,18 +57,25 @@ Quando as bibliotecas [do lado do cliente](essentials-featured.md#essentials-for
 
 Selecione o componente inserido a ser acessado e selecione o `Featured Content` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-14](assets/chlimage_1-14.png) ![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
+
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 ### Guia Configurações {#settings-tab}
 
 Na guia **[!UICONTROL Configurações]** , identifique o conteúdo a ser exibido:
 
-* **[!UICONTROL Nome]** de exibiçãoO título da lista do conteúdo em destaque. For example `Featured Questions` or `Featured Ideas`. O padrão é `Featured Content` se deixado em branco.
+* **[!UICONTROL Nome para exibição]**
+
+   O título para a lista do conteúdo em destaque. For example `Featured Questions` or `Featured Ideas`. O padrão é `Featured Content` se deixado em branco.
 
 * **[!UICONTROL Local do conteúdo em destaque]**
-   *(Obrigatório)* Navegue até a página que contém o conteúdo que pode ser um recurso (os componentes dessa página devem ser configurados para Permitir conteúdo em destaque). Por exemplo, `/content/sites/engage/en/forum`
 
-* **[!UICONTROL Limite de exibição]** O número máximo de conteúdo em destaque a ser exibido. O padrão é 5.
+   *(Obrigatório)* Navegue até a página que contém o conteúdo que pode ser um recurso (os componentes dessa página devem ser configurados para Permitir conteúdo em destaque). Por exemplo, `/content/sites/engage/en/forum`.
+
+* **[!UICONTROL Limite de exibição]**
+
+   O número máximo de conteúdos em destaque a serem exibidos. O padrão é 5.
 
 ## Experiência com o Visitante do site {#site-visitor-experience}
 
