@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
 
 ## Visão geral {#overview}
 
-FFmpeg é uma solução para conversão e streaming de áudio e vídeo e, quando instalada, é usada para transcodificação adequada de ativos [de](../../help/sites-authoring/default-components-foundation.md#video) vídeo, bem como para o recurso de ativação do AEM Communities.
+FFmpeg é uma solução para conversão e streaming de áudio e vídeo e, quando instalada, é usada para transcodificação adequada de ativos de [vídeo, bem como para o recurso de ativação do AEM Communities](../../help/sites-authoring/default-components-foundation.md#video) .
 
 FFmpeg é usado no ambiente do autor para obter metadados para recursos de ativação carregados, bem como para gerar uma miniatura para exibição ao listar o recurso de ativação.
 
@@ -60,7 +63,7 @@ Para modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM
 
    * **[!UICONTROL Argumentos]**: Apagar todas as entradas para desativar a transcodificação Valores padrão: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
-![chlimage_1-372](assets/chlimage_1-372.png)
+   ![chlimage_1-372](assets/chlimage_1-372.png)
 
 * Selecione **[!UICONTROL OK]** para fechar a `Step Properties` caixa de diálogo.
 
