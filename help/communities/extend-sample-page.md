@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 0%
 
 ---
 
 
-# Adicionar comentário à página de amostra {#add-comment-to-sample-page}
+# Adicionar comentário à página de amostra  {#add-comment-to-sample-page}
 
 Agora que os componentes do sistema de comentários personalizado estão no diretório do aplicativo (/apps), é possível usar o componente estendido. A instância do sistema de comentários em um site a ser afetado deve definir resourceType como o sistema de comentários personalizado e incluir todas as bibliotecas de clientes necessárias.
 
@@ -30,7 +33,7 @@ O Guia [de componentes da](/help/communities/components-guide.md) comunidade ide
 
 Observe as três bibliotecas de cliente necessárias para que os Comentários renderizem e funcionem corretamente. Eles precisarão ser incluídos onde os Comentários estendidos forem referenciados e a biblioteca [do cliente dos Comentários](/help/communities/extend-create-components.md#create-a-client-library-folder) estendidos ( `apps.custom.comments`).
 
-![chlimage_1-79](assets/chlimage_1-79.png)
+![chlimage_1-47](assets/chlimage_1-47.png)
 
 ### Adicionar comentários personalizados a uma página {#add-custom-comments-to-a-page}
 
@@ -42,17 +45,17 @@ Para que o Comentário seja exibido e funcione corretamente, as bibliotecas do c
 
 #### Comentários Clientlibs na página de amostra {#comments-clientlibs-on-sample-page}
 
-![Comentários Clientlibs na página de amostra](assets/chlimage_1-80.png)
+![chlimage_1-48](assets/chlimage_1-48.png)
 
 #### Autor: Comentário alternativo na página de amostra {#author-alt-comment-on-sample-page}
 
-![Comentário alternativo na página de amostra](assets/chlimage_1-81.png)
+![chlimage_1-49](assets/chlimage_1-49.png)
 
 #### Autor: Exemplo de Nó de Comentários da Página {#author-sample-page-comments-node}
 
 Você pode verificar o resourceType no CRXDE exibindo as propriedades do nó comments da página de amostra em `/content/sites/sample/en/jcr:content/content/primary/comments`.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![chlimage_1-50](assets/chlimage_1-50.png)
 
 #### Página Publicar amostra {#publish-sample-page}
 
@@ -64,6 +67,8 @@ Depois de publicar o aplicativo personalizado e a página de amostra, é possív
 
 Aqui está aaron.mcdonald@mailinator.com postando um comentário:
 
-![chlimage_1-83](assets/chlimage_1-83.png) ![chlimage_1-84](assets/chlimage_1-84.png)
+![chlimage_1-51](assets/chlimage_1-51.png)
+
+![chlimage_1-52](assets/chlimage_1-52.png)
 
 Agora que parece que o componente estendido está funcionando corretamente com a aparência padrão, é hora de modificar a aparência.
