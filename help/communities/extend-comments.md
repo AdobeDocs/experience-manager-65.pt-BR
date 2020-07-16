@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
 
-# Componente Estender comentários {#extend-comments-component}
+# Componente Estender comentários  {#extend-comments-component}
 
 A intenção de [estender](client-customize.md#extensions) um componente padrão é alterar a aparência ou o comportamento de um componente para usos específicos.
 
@@ -24,6 +27,7 @@ O caminho para o componente é exclusivo e faz referência ao componente padrão
 >[!NOTE]
 >
 >Não há suporte para a extensão de um componente [sobreposto](client-customize.md#overlays) .
+
 
 ## Exemplo {#example}
 
