@@ -1,14 +1,17 @@
 ---
 title: Práticas recomendadas para trabalhar com formulários adaptáveis
 seo-title: Práticas recomendadas para trabalhar com formulários adaptáveis
-description: Explica as práticas recomendadas para configurar um projeto do AEM Forms, desenvolver formulários adaptáveis e otimizar o desempenho do sistema do AEM Forms.
-seo-description: Explica as práticas recomendadas para configurar um projeto do AEM Forms, desenvolver formulários adaptáveis e otimizar o desempenho do sistema do AEM Forms.
+description: Explica as práticas recomendadas para configurar um projeto de AEM Forms, desenvolver formulários adaptáveis e otimizar o desempenho do sistema de AEM Forms.
+seo-description: Explica as práticas recomendadas para configurar um projeto de AEM Forms, desenvolver formulários adaptáveis e otimizar o desempenho do sistema de AEM Forms.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: d5efcec4a0397d99c899643ff13a883a0ed02c81
+workflow-type: tm+mt
+source-wordcount: '4249'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ## Visão geral {#overview}
 
-Os formulários do Adobe Experience Manager (AEM) podem ajudá-lo a transformar transações complexas em experiências digitais simples e deliciosas. No entanto, requer um esforço concertado para implementar, criar, executar e manter um ecossistema AEM Forms eficiente e produtivo.
+Os formulários Adobe Experience Manager (AEM) podem ajudá-lo a transformar transações complexas em experiências digitais simples e deliciosas. No entanto, requer um esforço concertado para implementar, construir, executar e manter um ecossistema AEM Forms eficiente e produtivo.
 
-Este documento fornece orientações e recomendações que podem ser beneficiadas pelo administrador, autores e desenvolvedores de formulários ao trabalhar com o AEM Forms, especialmente componentes de formulários adaptáveis. Ele discute as práticas recomendadas desde a configuração de um projeto de desenvolvimento de formulários até a configuração, personalização, criação e otimização de formulários AEM. Essas práticas recomendadas contribuem coletivamente para o desempenho geral do ecossistema do AEM Forms.
+Este documento fornece orientações e recomendações que podem ser beneficiadas pelo administrador, autores e desenvolvedores de formulários ao trabalhar com AEM Forms, especialmente componentes de formulários adaptáveis. Ele discute as práticas recomendadas desde a configuração de um projeto de desenvolvimento de formulários até a configuração, personalização, criação e otimização de AEM Forms. Essas práticas recomendadas contribuem coletivamente para o desempenho geral do ecossistema AEM Forms.
 
 Além disso, veja algumas leituras recomendadas para as práticas recomendadas gerais do AEM:
 
@@ -28,7 +31,7 @@ Além disso, veja algumas leituras recomendadas para as práticas recomendadas g
 * [Práticas recomendadas: Administração do AEM](/help/sites-administering/administer-best-practices.md)
 * [Práticas recomendadas: Desenvolver soluções](/help/sites-developing/best-practices.md)
 
-## Configurar e configurar o AEM Forms {#set-up-and-configure-aem-forms}
+## Configurar e configurar AEM Forms {#set-up-and-configure-aem-forms}
 
 ### Configurar o projeto de desenvolvimento de formulários {#setting-up-forms-development-project}
 
@@ -45,6 +48,16 @@ Para obter mais informações, consulte [Como criar projetos do AEM usando o Apa
 
 * Se você usar o ambiente de desenvolvimento integrado do Eclipse, poderá usar as ferramentas do desenvolvedor do AEM para a integração perfeita do Eclipse IDE com instâncias do AEM para criar aplicativos do AEM. Para obter detalhes, consulte Ferramentas de desenvolvedor do [AEM para o Eclipse](/help/sites-developing/aem-eclipse.md).
 
+* Não armazene conteúdo nem faça modificações na pasta /libs. Crie sobreposições em pastas /app para estender ou substituir funcionalidades padrão.
+
+* Ao criar pacotes para mover o conteúdo, verifique se os caminhos do filtro de pacote estão corretos e se apenas os caminhos necessários estão mencionados.
+
+* Não armazene conteúdo nem faça modificações na pasta /libs. Crie sobreposições em pastas /app para estender ou substituir funcionalidades padrão.
+
+* Defina as dependências corretas para os pacotes para forçar uma ordem/sequência de instalação predeterminada.
+
+* Não crie nenhum nó referenciável em /libs ou /apps.
+
 ### Planejamento para criação de ambientes {#planning-for-authoring-environment}
 
 Depois de configurar seu projeto do AEM, defina a estratégia para criar e personalizar os modelos e componentes de formulários adaptáveis.
@@ -55,7 +68,7 @@ Depois de configurar seu projeto do AEM, defina a estratégia para criar e perso
    * **Nenhum**: Os formulários adaptáveis criados com essa opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
    * **schema** XML ou JSON: Os schemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema back-end em sua organização. É possível associar um schema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do schema estão disponíveis na guia Objeto de modelo de dados do navegador de conteúdo para a criação de formulários adaptáveis. É possível arrastar e soltar os elementos do schema para criar o formulário.
    * **Modelo** de formulário XFA: É um modelo de formulário ideal se você tiver investimentos em formulários HTML5 baseados em XFA. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptativos associados. Os formulários adaptativos resultantes suportam construções XFA, como validações, eventos, propriedades e padrões.
-   * **Modelo** de dados de formulário: É o modelo de formulário preferido se você deseja integrar seus sistemas de backend, como bancos de dados, serviços da Web e perfil de usuário do AEM, para preencher previamente formulários adaptáveis e gravar dados de formulário enviados de volta nos sistemas de backend. Um editor de Modelo de dados de formulário permite que você defina e configure entidades e serviços em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Para obter mais informações, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+   * **Modelo** de dados de formulário: É o modelo de formulário preferido se você deseja integrar seus sistemas de backend, como bancos de dados, serviços da Web e perfil de usuário do AEM, para preencher previamente formulários adaptáveis e gravar dados de formulário enviados de volta nos sistemas de backend. Um editor de Modelo de dados de formulário permite que você defina e configure entidades e serviços em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Para obter mais informações, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
 
 É importante escolher cuidadosamente o modelo de dados que atende não apenas às suas necessidades, mas amplia seus investimentos existentes em ativos XFA e XSD, se houver. É recomendável usar o Modelo XSD para criar modelos de formulário, pois o XML gerado contém dados conforme o XPATH definido pelo schema. O uso do Modelo XSD como uma opção padrão para o Modelo de dados de formulário também ajuda porque ele dissocia o design de formulário do sistema back-end que processa e consome dados e melhora o desempenho do formulário devido a um mapeamento de um para um campo de formulário. Além disso, BindRef do campo pode tornar-se o XPATH de seu valor de dados em XML.
 
@@ -89,7 +102,7 @@ Para obter mais informações, consulte [Criar um formulário](/help/forms/using
 
 * Use o navegador Objetos na barra lateral para acessar rapidamente os campos na hierarquia do formulário. Você pode usar a caixa de pesquisa para procurar objetos no formulário ou na árvore de objetos para navegar de um objeto para outro.
 * Para visualização e edição das propriedades de um componente no navegador de componentes na barra lateral, selecione o componente e clique em ![cmppr-1](assets/cmppr-1.png). Você também pode clicar com o duplo em um componente para visualização de suas propriedades no navegador de propriedades.
-* Use atalhos do teclado para executar ações rápidas em seus formulários. Consulte Atalhos de teclado [](/help/forms/using/keyboard-shortcuts.md)do AEM Forms.
+* Use atalhos do teclado para executar ações rápidas em seus formulários. Consulte Atalhos de teclado do [AEM Forms](/help/forms/using/keyboard-shortcuts.md).
 
 * Os componentes de formulário adaptáveis são recomendados para uso somente em páginas de formulário adaptáveis. Os componentes dependem de sua hierarquia pai. Portanto, não os use em uma página do AEM.
 
@@ -168,7 +181,7 @@ Considere as seguintes práticas recomendadas para solucionar problemas de desem
 * O XML de dados de preenchimento prévio deve ser compatível com o schema do modelo de formulário associado ao formulário adaptável.
 * Inclua `afBoundedData` e `afUnBoundedData` seções no XML de preenchimento prévio para preencher previamente os campos vinculados e não vinculados em um formulário adaptável.
 
-* Para formulários adaptáveis com base no modelo de dados de formulário, o AEM Forms fornece serviço de preenchimento rápido do modelo de dados de formulário. O serviço de preenchimento prévio query fontes de dados para objetos de modelo de dados no formulário adaptável e preenche previamente os valores de campo ao renderizar o formulário.
+* Para formulários adaptáveis baseados no modelo de dados de formulário, o AEM Forms fornece o serviço de preenchimento prévio do modelo de dados de formulário pronto. O serviço de preenchimento prévio query fontes de dados para objetos de modelo de dados no formulário adaptável e preenche previamente os valores de campo ao renderizar o formulário.
 * Você também pode usar os protocolos de arquivo, crx, service ou http para preencher formulários adaptáveis.
 * O AEM Forms oferece suporte a serviços de preenchimento prévio personalizados que podem ser conectados como um serviço OSGi para preencher previamente formulários adaptáveis.
 
@@ -263,8 +276,9 @@ Geralmente, você precisa mover seus projetos do AEM de um ambiente para outro. 
 * Faça backup das bibliotecas de clientes, código personalizado e configurações existentes.
 * Implante pacotes de produtos e patches manualmente e na ordem especificada no novo ambiente.
 * Implante pacotes de código específicos do projeto e pacotes manualmente e como um pacote ou pacote separado no novo servidor AEM.
-* (Somente *para formulários* AEM em JEE) Implante LCAs e DSCs manualmente no servidor de fluxo de trabalho do Forms.
+* (*AEM Forms somente* em JEE) Implante LCAs e DSCs manualmente no servidor de fluxo de trabalho do Forms.
 * Use a funcionalidade [Exportar-Importar](/help/forms/using/import-export-forms-templates.md) para mover ativos para o novo ambiente. Você também pode configurar o agente de replicação e publicar os ativos.
+* Ao atualizar, substitua todas as APIs e recursos obsoletos por novas APIs e recursos.
 
 ### Configuração do AEM {#configuring-aem}
 
@@ -275,14 +289,14 @@ Algumas práticas recomendadas para configurar o AEM para melhorar o desempenho 
 
 * Não armazene em cache `/content/forms/af/` e `/content/dam/formsanddocuments/*` caminhos. para obter informações detalhadas sobre como configurar o cache de formulários adaptáveis, consulte [Armazenamento em cache de formulários](/help/forms/using/configure-adaptive-forms-cache.md)adaptáveis.
 
-* Habilitar HTML por meio do módulo de compactação do servidor da Web. Para obter mais informações, consulte Ajuste [de desempenho do servidor](/help/forms/using/performance-tuning-aem-forms.md)de formulários AEM.
+* Habilitar HTML por meio do módulo de compactação do servidor da Web. Para obter mais informações, consulte Ajuste de [desempenho do servidor](/help/forms/using/performance-tuning-aem-forms.md)AEM Forms.
 * Aumente a configuração de chamadas por solicitação para formulários grandes. Consulte [Otimizar o desempenho de formulários](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms)grandes e complexos.
 * Crie páginas de erro [personalizadas exibidas pelo manipulador](https://helpx.adobe.com/experience-manager/6-2/sites-developing/customizing-errorhandler-pages.html)de erros.
-* Servidor seguro do AEM Forms.
+* Servidor AEM Forms seguro.
 
    * Use o modo de `nosamplecontent` execução para garantir que não haja nenhum conteúdo de amostra e usuários de amostra implantados no servidor de produção. Consulte [Execução do AEM no modo](/help/sites-administering/production-ready.md)de produção pronto.
 
-* Mantenha o tamanho do heap com no mínimo 8 GB. Para outras configurações, consulte Ajuste [de desempenho do servidor](/help/forms/using/performance-tuning-aem-forms.md)do AEM Forms.
+* Mantenha o tamanho do heap com no mínimo 8 GB. Para outras configurações, consulte Ajuste [de desempenho do servidor](/help/forms/using/performance-tuning-aem-forms.md)AEM Forms.
 * Use sessões de usuário de serviço em vez de sessões administrativas para executar tarefas de nível de serviço. Para obter mais informações, consulte Autenticação [](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)de serviço.
 
 >[!VIDEO](https://vimeo.com/)
