@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 10%
 
 ---
 
@@ -32,7 +35,7 @@ O recurso de fórum fornece uma área para visitantes de site conectados (membro
 Esta seção da documentação descreve:
 
 * Adicionar o recurso do fórum a um site do AEM.
-* Configurações do `Forum`componente.
+* Configurações do `Forum` componente.
 
 ### Adding a Forum to a Page {#adding-a-forum-to-a-page}
 
@@ -44,15 +47,17 @@ e arraste-o para o lugar em uma página onde o fórum deve aparecer.
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do cliente](/help/communities/essentials-forum.md#essentials-for-client-side) necessárias forem incluídas, o `Forum`componente aparecerá desta forma:
+Quando as bibliotecas [do lado do cliente](/help/communities/essentials-forum.md#essentials-for-client-side) necessárias forem incluídas, o `Forum` componente será exibido desta forma:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Configuração de um fórum {#configuring-a-forum}
 
 Selecione o componente inserido a ser acessado e selecione o `Forum` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-105](assets/chlimage_1-105.png) ![forum-config](assets/forum-config.png)
+![chlimage_1-61](assets/chlimage_1-61.png)
+
+![forum-config](assets/forum-config.png)
 
 #### Guia Configurações {#settings-tab}
 
@@ -240,7 +245,9 @@ Na guia **Classificar configurações** , especifique como os comentários publi
 
 * **Selecionar as opções de tempo para a classificação do Analytics**
 
-   Puxe para baixo para selecionar um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
+   Puxe para baixo para selecionar uma das seguintes opções: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+
+   O padrão é `All`.
 
 ### Informações adicionais {#additional-information}
 
