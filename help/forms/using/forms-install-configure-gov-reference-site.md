@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
 workflow-type: tm+mt
-source-wordcount: '4685'
+source-wordcount: '5004'
 ht-degree: 1%
 
 ---
@@ -182,7 +182,7 @@ Esta seção contém detalhes sobre como configurar o SSL na instância do AEM p
 
 **Notas:**
 
-1. Navegue até https://&lt;aemserver>:&lt;port>/aem/inbox onde você poderá concluir o processo explicado no link de documentação de referência acima.
+1. Navegue até https://&lt;aemserver>:&lt;porta>/aem/inbox onde você poderá concluir o processo explicado no link de documentação de referência acima.
 1. O `we-gov-forms.pkg.all-[version].zip` pacote inclui uma chave SSL de amostra e um certificado que podem ser acessados extraindo a `we-gov-forms.pkg.all-[version].zip/ssl` pasta que faz parte do pacote.
 
 1. Certificado SSL e detalhes da chave:
@@ -222,6 +222,48 @@ Esta seção contém detalhes e instruções sobre a Configuração da Adobe Sig
 1. Forneça a ID do cliente e o segredo do cliente configurados a partir da instância configurada do Adobe Sign.
 1. Clique em &quot;Conectar-se ao Adobe Sign&quot;.
 1. Após a conexão bem-sucedida, clique em &quot;Salvar e fechar&quot; para concluir a integração.
+
+### Preencher e assinar vários formulários {#fill-sign-multiple-forms}
+
+Este documento explica as etapas necessárias para configurar a capacidade de preencher e assinar vários formulários. Você também pode experimentar a [mesma capacidade aqui](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Essa amostra armazena os dados necessários para essa amostra no repositório do AME. Isso é feito para garantir uma experiência sem atrito para implantar ativos de demonstração no servidor local. Na vida real armazenaremos as mesmas informações no RDMS de sua escolha.
+
+#### Pré-requisitos {#pre-requisites-fill-sign-multiple-forms}
+
+* [Configurar o serviço de e-mail Day CQ](https://docs.adobe.com/content/help/en/experience-manager-65/communities/administer/email.html)
+
+* [Configurar AEM Forms Com O Adobe Sign](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html)
+
+#### Configurar a amostra no servidor local {#setup-sample-local-server}
+
+Execute as seguintes etapas para configurar a amostra no servidor local:
+
+1. Instale o pacote. Este pacote contém o seguinte:
+   * Formulários adaptáveis. Os formulários estão na pasta **formsandsigndemo**
+   * Pacotes OSGI personalizados
+   * Fluxos de trabalhos
+1. Configure o formulário [de](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/consentform.html) consentimento para usar a Configuração do Adobe Sign.
+1. Configure o formulário de bloqueio [](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/multistateinterestratelock.html) de interesse de vários estados para usar a Configuração do Adobe Sign.
+1. Abra o modelo de fluxo de trabalho [Formsandsigningdemo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/formsandsigningdemo.html) :
+   1. Abra a etapa Salvar formulários no CRX.
+   1. Altere o host local para o endereço IP do servidor AEM.
+   1. Salve as alterações.
+   1. Sincronize o fluxo de trabalho para gerar o modelo de tempo de execução.
+
+      ![Assinar vários formulários](assets/sign-multiple-forms.jpg)
+
+   1. Abra o formulário [de refinanciamento](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+   1. Preencha os campos obrigatórios. Certifique-se de fornecer um endereço de email válido e selecione um ou mais formulários para assinar e enviar o formulário.
+Você recebe um email com um link para preencher e assinar os formulários.
+
+#### Resolução de Problemas{#troubleshoot-sign-multiple-forms}
+
+* Os registros de depuração são gravados no `signingmultipleforms.log` arquivo na pasta de log do servidor.
+
+* Os formulários a serem assinados são armazenados em `/content/formsforsigning`.
+
+* Verifique se você tem todos os pacotes no estado ativo.
+
+* Verifique a configuração do servidor de e-mail.
 
 ### (Opcional) Configuração da nuvem do MS Dynamics {#ms-dynamics-cloud-configuration}
 
@@ -800,4 +842,4 @@ Como um usuário ativa o serviço na página do Configuration Manager, os usuár
 
 ## Próximas etapas {#next-steps}
 
-Agora todos estão prontos para explorar o site de referência We.Gov. Para obter mais informações sobre o fluxo de trabalho e as etapas do site de referência We.Gov, consulte Passo-a-passo do site de referência [We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).
+Agora todos estão prontos para explorar o site de referência We.Gov. Para obter mais informações sobre o fluxo de trabalho e as etapas do site de referência We.Gov, consulte Passo a passo do site de referência [We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).
