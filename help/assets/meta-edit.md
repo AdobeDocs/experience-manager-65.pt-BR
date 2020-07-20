@@ -3,19 +3,19 @@ title: Como editar ou adicionar metadados
 description: Saiba mais sobre os metadados do ativo [!DNL Adobe Experience Manager Assets] de várias maneiras pelas quais você pode editar os metadados do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 1%
+source-wordcount: '436'
+ht-degree: 2%
 
 ---
 
 
 # Como editar ou adicionar metadados {#how-to-edit-or-add-metadata}
 
-Metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é extraído automaticamente quando você carrega uma imagem. Você pode editar os metadados existentes ou adicionar novas propriedades de metadados a campos existentes (por exemplo, quando um campo de metadados estiver em branco).
+Metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é extraído automaticamente quando você carrega uma imagem. Você pode editar os metadados existentes ou adicionar novas propriedades de metadados ao campo existente, por exemplo, quando um campo de metadados estiver em branco.
 
-Como as organizações precisam de vocabulários de metadados controlados e confiáveis, [!DNL Experience Manager Assets] não permite a adição sob demanda de novas propriedades de metadados. Embora os autores não possam adicionar novos campos de metadados para ativos, os desenvolvedores podem. Consulte [criar propriedade de metadados para ativos](meta-edit.md#editing-metadata-schema).
+As organizações precisam de vocabulários de metadados controlados e confiáveis. Portanto, não [!DNL Experience Manager Assets] permite a adição sob demanda de novas propriedades de metadados. Os desenvolvedores e não os autores podem adicionar novos campos de metadados para ativos. Consulte [criar propriedade de metadados para ativos](meta-edit.md#editing-metadata-schema).
 
 ## Editar metadados para um ativo {#editing-metadata-for-an-asset}
 
@@ -25,10 +25,11 @@ Para editar metadados, siga estas etapas:
 
    * Na [!DNL Assets] interface, selecione o ativo e clique em Propriedades **[!UICONTROL da]** Visualização na barra de ferramentas.
    * Na miniatura do ativo, selecione a ação rápida Propriedades **[!UICONTROL da]** Visualização.
-   * Na página de ativos, clique em Propriedades **[!UICONTROL da]** Visualização ![chlimage_1-168](assets/chlimage_1-168.png) na barra de ferramentas.
+   * Na página do ativo, clique no ícone **[!UICONTROL de informações Propriedades]** da ![Visualização](assets/do-not-localize/info-circle-icon.png) Ativos na barra de ferramentas.
+
    A página do ativo exibe todos os metadados do ativo. Os metadados são extraídos quando o ativo é carregado (assimilado) no [!DNL Experience Manager].
 
-   ![selecione Propriedades do ativo para visualização de metadados](assets/asset-metadata.png)
+   ![Selecione Propriedades de um ativo para visualização de seus metadados](assets/asset-metadata.png)
 
    *Figura: Edite ou adicione metadados na página[!UICONTROL Propriedades]do ativo.*
 
@@ -50,8 +51,14 @@ Para obter detalhes, consulte [editar formulários](metadata-schemas.md#edit-met
 
 Você pode adicionar suas próprias namespaces dentro [!DNL Experience Manager]. Assim como há namespaces predefinidas, como `cq`, `jcr`e `sling`, você pode ter uma namespace para os metadados do repositório e o processamento XML.
 
-1. Vá para a página de administração do tipo de nó `https:[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
-1. Clique em **[!UICONTROL Namespace]** na parte superior da página. A página de administração da namespace é exibida em uma janela.
-
-1. Para adicionar uma namespace, clique em **[!UICONTROL Novo]** na parte inferior.
+1. Acesse a página de administração do tipo de nó `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
+1. Para acessar a página de administração de namespaces, clique em **[!UICONTROL Namespaces]** na parte superior da página.
+1. Para adicionar uma namespace, clique em **[!UICONTROL Novo]** na parte inferior da página.
 1. Especifique uma namespace personalizada na convenção de namespace XML. Especifique a ID na forma de um URI e um prefixo associado para a ID. Clique em **[!UICONTROL Salvar]**.
+
+>[!MORELIKETHIS]
+>
+>* [Sobre metadados e suas necessidades em ativos](metadata.md)
+>* [Metadados XMP](xmp.md)
+>* [Referência dos esquemas de metadados](meta-ref.md)
+
