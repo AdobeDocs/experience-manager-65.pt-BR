@@ -16,13 +16,13 @@ ht-degree: 5%
 ---
 
 
-# Trabalhar com ativos 3D na Dynamic Media {#working-with-three-d-assets-dm}
+# Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
 
 A Dynamic Media permite que você carregue, gerencie, visualização e entregue ativos 3D como experiências imersivas.
 
 * Publicação com um clique (usando a Publicação **** rápida na barra de ferramentas) de ativos 3D para gerar um URL.
 * Suporte otimizado para exibir ativos 3D com a predefinição do visualizador Dimensional interativo de alta qualidade, capacitado pelo Adobe Dimension.
-* O componente WCM de mídia 3D permite que você adicione facilmente ativos 3D às suas páginas de AEM Sites.
+* O componente WCM de mídia 3D permite adicionar facilmente ativos 3D às páginas de AEM Sites.
 
 Não há necessidade de configuração adicional para usar ativos 3D no Dynamic Media.
 
