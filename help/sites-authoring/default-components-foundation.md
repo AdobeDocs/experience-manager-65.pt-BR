@@ -185,7 +185,8 @@ Estão disponíveis em duas guias:
          * **Página principal** Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usar a página atual como principal.
       * **Opções para a lista fixa**
 
-         * **Páginas** Selecione uma lista de páginas. Use `+` para adicionar mais entradas e os botões para cima/para baixo para ajustar a ordem.
+         * **Páginas** Selecione uma lista de páginas. Use 
+`+` para adicionar mais entradas e os botões Para cima/Para baixo para ajustar a ordem.
       * **Opções de pesquisa**
 
          * **Começa em** Especifique um caminho manualmente ou usando o seletor.
@@ -194,7 +195,8 @@ Estão disponíveis em duas guias:
       * **Opções de pesquisa avançada**
 
          * **Notação do predicativo do Querybuilder** Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com “Marketing” em seu conteúdo exibidas no carrossel. Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
-   * **Ordenar por** Selecione `jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` no menu suspenso.
+   * **Ordenar por** seleção 
+`jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` do menu suspenso.
 
    * **Limite** O número máximo de itens que você gostaria de usar no carrossel; esse item é opcional.
 
@@ -236,7 +238,7 @@ O exemplo a seguir mostra um gráfico de dados seguido pelo gráfico de barras r
 >
 >Você pode criar um controle gráfico AEM personalizado que exibe os dados localizados no JCR AEM. Para obter informações, consulte [Exibição dos dados do Adobe Experience Manager em um gráfico](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
 
-### Fragmento do conteúdo {#content-fragment}
+### Fragmento de conteúdo {#content-fragment}
 
 >[!CAUTION]
 >
