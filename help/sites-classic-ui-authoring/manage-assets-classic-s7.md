@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 75%
@@ -291,7 +291,7 @@ To link a field to a client context value, click **Select** to open the client-c
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-O texto reflete o nome do cliente conectado no momento. Você pode redefinir o texto de volta ao valor original clicando em **Redefinir **ao lado do campo.
+O texto reflete o nome do cliente conectado no momento. É possível redefinir o texto de volta para o valor original ao clicar em **Redefinir** próximo ao campo.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -341,10 +341,10 @@ Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração
    >
 * Para vídeo, o navegador de conteúdo do Scene7 é compatível com:
    >
-   >  
-* Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
->  * Vídeo MP4 único
->  * Vídeo F4V único
+   >   
+   * Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
+   >   * Vídeo MP4 único
+   >   * Vídeo F4V único
 
 
 ### Procurar conteúdo {#browsing-content-in-the-classic-ui}
