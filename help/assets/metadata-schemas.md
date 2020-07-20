@@ -3,7 +3,7 @@ title: 'schemas de metadados para definir o layout da página de propriedades de
 description: O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0496d2d541be052e1201ada2bff99a2ed6fef4f3
+source-git-commit: 04babc1ec79a0816e1cb9f97e2711fe212f51387
 workflow-type: tm+mt
 source-wordcount: '2670'
 ht-degree: 8%
@@ -43,19 +43,14 @@ Para visualização de uma lista de formulários ou modelos, na [!DNL Experience
 |---|---|---|
 | [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
 |  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
-|  | [!UICONTROL dm_video] | Formulário de Schema para vídeos do Dynamic Media. |
-|  | [!UICONTROL imagem] | Formulário de Schema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com subtipo TIFF.</li></ul> |
-|  | [!UICONTROL aplicativo] | Formulário de Schema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Formulário de Schema para ativos com subtipo PDF. |
-|  | [!UICONTROL vídeo] | Formulário de Schema para ativos de vídeo com tipo MIME, como `video/avi` e `video/mp4`. |
+|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulário de Schema para vídeos do Dynamic Media. |
+|  | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de Schema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de Schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de Schema para os ativos com subtipo TIFF.</li></ul> |
+|  | <ul><li>[!UICONTROL aplicativo]</li></ul> | Formulário de Schema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Formulário de Schema para ativos com subtipo PDF. |
+|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de Schema para ativos de vídeo com tipo MIME, como `video/avi` e `video/mp4`. |
 | [!UICONTROL collection] |  | Formulário de Schema para coleções. |
 | [!UICONTROL contentfragment] |  | [Formulário de Schema para fragmentos](/help/sites-developing/customizing-content-fragments.md)de conteúdo. |
 | [!UICONTROL formulários] |  | Este formulário de schema está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md). |
 | [!UICONTROL ugc_contentfragment] |  | Formulário de Schema para itens de conteúdo e ativos gerados pelo usuário integrados ao Experience Manager a partir de redes sociais. |
-
-<!-- 
-TBD: video doesn't contain any sub types as listed above OOTB.
-application doesn't contain the sub type zip OOTB.
--->
 
 >[!NOTE]
 >
