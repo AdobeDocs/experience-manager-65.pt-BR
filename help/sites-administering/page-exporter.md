@@ -1,25 +1,26 @@
 ---
 title: O Exportador de Página
-seo-title: O Exportador de Página
 description: Saiba como usar o Exportador de página do AEM.
-seo-description: Saiba como usar o Exportador de página do AEM.
-uuid: 2ca2b8f1-c723-4e6b-8c3d-f5886cd0d3f1
-contentOwner: Chiradeep Majumdar
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: content
-content-type: reference
-discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 000666e0c3f05635a9469d3571a10c67b3b21613
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
 
 # O Exportador de Página{#the-page-exporter}
 
-O AEM permite exportar uma página como uma página da Web completa, incluindo imagens, arquivos .js e .css.
+O AEM permite exportar uma página como uma página da Web completa, incluindo imagens `.js` e `.css` arquivos.
 
-Depois que a exportação for configurada, basta solicitar uma página no navegador, substituindo-a `html` por `export.zip` no URL e você obterá um download de arquivo zip contendo a página renderizada no formato html e os ativos referenciados. Todos os caminhos na página, por exemplo, caminhos para imagens, são reescritos para apontar para os arquivos incluídos no arquivo zip ou para os recursos no servidor.
+Depois de configurada, você solicita uma exportação de página do navegador, substituindo `html` por `export.zip` no URL. Isso gera um arquivo de arquivamento (zip), que contém a página renderizada no formato html, juntamente com os ativos referenciados. Todos os caminhos na página (por exemplo, caminhos para imagens) são reescritos para apontar para os arquivos incluídos no arquivo ou para os recursos no servidor. O arquivo de arquivamento (zip) pode ser baixado do seu navegador.
+
+>!![NOTE]
+Dependendo do seu navegador e das configurações, o download será:
+* um arquivo de arquivamento (`<page-name>.export.zip`)
+* uma pasta (`<page-name>`); com eficácia, o arquivo de arquivamento já foi expandido
+
 
 ## Exportar uma página {#exporting-a-page}
 
@@ -27,110 +28,156 @@ As etapas a seguir descrevem como exportar uma página e presumem que existe um 
 
 Para exportar uma página:
 
-1. No seu navegador, abra a página. Por exemplo:
-1. `http://localhost:4502/content/geometrixx/en/products/triangle.html`
-1. Abra a caixa de diálogo de propriedades da página, selecione a guia **Avançado** e expanda o conjunto de campos **Exportar** .
+1. Navegue até a página desejada, selecione a página e abra a caixa de diálogo **Propriedades** .
 
-1. Clique no ícone de lente de aumento e selecione um modelo de configuração. Selecione o modelo **geometrixx** , pois é o padrão para o site Geometrixx. Clique em **OK**.
+1. Select the **Advanced** tab.
 
-1. Clique em **OK** para fechar a caixa de diálogo de propriedades da página.
-1. Solicite a página substituindo `html` por `export.zip` no URL.
+1. Expanda o campo **Exportar** para selecionar um modelo de configuração.
+Selecione o modelo necessário para o site e confirme com **OK**.
 
-1. Baixe o `<page-name>.export.zip` arquivo no seu sistema de arquivos.
+1. Selecione **Salvar e fechar** para fechar a caixa de diálogo de propriedades da página.
 
-1. No sistema de arquivos, descompacte o arquivo:
+1. Solicite a exportação da página, substituindo o sufixo `html` por `export.zip` no URL.
 
-   * o arquivo html da página ( `<page-name>.html`) está disponível abaixo `<unzip-dir>/<page-path>`
-   * outros recursos (arquivos .js, arquivos .css, imagens, etc.) estão localizados de acordo com as configurações no modelo de exportação. Neste exemplo, alguns recursos estão abaixo `<unzip-dir>/etc`, alguns abaixo `<unzip-dir>/<page-path>`.
+   Por exemplo:
+   * localhost:4502/content/we-retail/language-masters/en.html
 
-1. Abra o arquivo html da página ( `<unzip-dir>/<page-path>.html`) no navegador para verificar a renderização.
+   É acessado via:
+   * localhost:4502/content/we-retail/language-masters/en.export.zip
+
+
+1. Baixe o arquivo para o seu sistema de arquivos.
+
+1. No sistema de arquivos, descompacte o arquivo, se necessário. Depois de expandida, haverá uma pasta com o mesmo nome da página selecionada. Esta pasta contém:
+
+   * a subpasta `content`, que é a raiz de uma série de subpastas que refletem o caminho para a página no repositório
+
+   * nesta estrutura, há o arquivo html para a página selecionada (`<page-name>.html`)
+
+   * outros recursos (`.js` arquivos, `.css` arquivos, imagens etc.) estão localizados de acordo com as configurações no modelo de exportação
+
+1. Abra o arquivo html da página (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) no navegador para verificar a renderização.
 
 ## Criando uma Configuração de Exportador de Página para seu Site {#creating-a-page-exporter-configuration-for-your-site}
 
-O exportador de página é baseado na estrutura de Sincronização de conteúdo. As configurações disponíveis na caixa de diálogo de propriedades da página são modelos de configuração. Eles definem todas as dependências necessárias para uma página. Quando uma exportação de página é acionada, o modelo de configuração é usado e o caminho da página e o caminho do design são aplicados dinamicamente à configuração. O arquivo zip é criado usando a funcionalidade padrão de Sincronização de conteúdo.
+O exportador de página é baseado na estrutura de Sincronização de conteúdo. As configurações disponíveis na caixa de diálogo Propriedades **da** página são modelos de exportação que definem as dependências necessárias para uma página.
 
-O AEM incorpora alguns modelos, incluindo:
+Quando uma exportação de página é acionada, o modelo de exportação é referenciado e o caminho da página e o caminho do design são aplicados dinamicamente. O arquivo zip é criado usando a funcionalidade padrão de Sincronização de conteúdo.
 
-* Um padrão em `/etc/contentsync/templates/default`. Este modelo:
+O AEM incorpora um modelo padrão em `/etc/contentsync/templates/default`.
 
-   * É o modelo de fallback quando nenhum modelo de configuração é encontrado no repositório.
-   * Pode servir como base para um novo modelo de configuração.
+* Este modelo é o modelo de fallback quando nenhum modelo de configuração é encontrado no repositório.
 
-* Uma que é dedicada ao site **Geometrixx** , em `/etc/contentsync/templates/geometrixx`. Este modelo pode ser usado como exemplo para criar um novo.
+* O `default` modelo mostra como uma exportação de página pode ser configurada, de modo que possa servir como base para um novo modelo de configuração.
 
-Para criar um modelo de configuração de exportador de página:
+* Para visualização a estrutura de nó do modelo no seu navegador como formato JSON, solicite o seguinte URL:
+   `http://localhost:4502/etc/contentsync/templates/default.json`
+
+O método mais fácil para criar um novo modelo de exportador de página é:
+
+* copiar o `default` modelo,
+
+* atribuir um novo nome, apropriado ao seu site,
+
+* faça as atualizações necessárias.
+
+Para criar um modelo completamente novo:
 
 1. No **CRXDE Lite**, crie um nó abaixo `/etc/contentsync/templates`:
 
-   * Nome:por exemplo `mysite`. O nome aparece na caixa de diálogo de propriedades da página ao escolher o modelo de exportador de página.
-   * Tipo: `nt:unstructured`
+   * `Name`: um nome adequado ao seu site; por exemplo, `<mysite>`. O nome aparece na caixa de diálogo de propriedades da página ao escolher o modelo de exportador de página.
+
+   * `Type`: `nt:unstructured`
 
 1. Abaixo do nó do modelo, chamado aqui `mysite`, crie uma estrutura de nó usando os nós de configuração descritos abaixo.
 
+## Ativando um modelo de exportador de página para suas páginas {#activating-a-page-exporter-configuration-for-your-pages}
+
+Depois que o modelo tiver sido configurado, é necessário disponibilizá-lo:
+
+1. No CRXDE, navegue até a página desejada.
+
+1. No `jcr:content` nó, crie a propriedade:
+   * `Name`: `cq:exportTemplate`
+   * `Type`: `String`
+   * `Value`: caminho para o modelo; por exemplo: `/etc/contentsync/templates/mysite`
+
 ### Nós de configuração do exportador de páginas {#page-exporter-configuration-nodes}
 
-O modelo de configuração consiste em uma estrutura de nó. Cada nó tem uma `type` propriedade que define uma ação específica no processo de criação do arquivo zip. Para obter mais detalhes sobre a propriedade type, consulte a seção Visão geral dos tipos de configuração na página da estrutura de Sincronização de conteúdo.
+O modelo consiste em uma estrutura de nó. Cada nó tem uma `type` propriedade que define uma ação específica no processo de criação do arquivo zip. Para obter mais detalhes sobre a propriedade type, consulte a seção Visão geral dos tipos de configuração na página da estrutura de Sincronização de conteúdo.
 
 Os nós a seguir podem ser usados para criar um modelo de configuração de exportação:
 
-**nó** de página O nó de página é usado para copiar a página html para o arquivo zip. Tem as seguintes características:
+* `page`
+O nó da página é usado para copiar o html da página para o arquivo zip. Tem as seguintes características:
 
-* É um nó obrigatório.
-* Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
-* Seu nome é `page`.
-* Seu tipo de nó é `nt:unstructured`
+   * É um nó obrigatório.
+   * Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
+   * Seu nome é `page`.
+   * Seu tipo de nó é `nt:unstructured`
 
-O `page` nó tem as seguintes propriedades:
+   O `page` nó tem as seguintes propriedades:
 
-* Uma `type` propriedade definida com o valor `pages`.
+   * Uma `type` propriedade definida com o valor `pages`.
 
-* Ela não tem uma `path` propriedade, pois o caminho da página atual é copiado dinamicamente para a configuração.
+   * Ela não tem uma `path` propriedade, pois o caminho da página atual é copiado dinamicamente para a configuração.
 
-* As outras propriedades são descritas na seção Visão geral dos tipos de configuração da estrutura de sincronização de conteúdo.
+   * As outras propriedades são descritas na seção Visão geral dos tipos de configuração da estrutura de Sincronização de conteúdo.
 
-**nó** de regravação O nó de regravação define como os links são regravados na página exportada. Os links regravados podem apontar para os arquivos incluídos no arquivo zip ou para os recursos no servidor.
 
-Consulte a página Sincronização de conteúdo para obter uma descrição completa do `rewrite` nó.
+* `rewrite`
+O nó regravar define como os links são regravados na página exportada. Os links regravados podem apontar para os arquivos incluídos no arquivo zip ou para os recursos no servidor.
 
-**nó** de design O nó de design é usado para copiar o design usado para a página exportada. Tem as seguintes características:
+   Consulte a página Sincronização de conteúdo para obter uma descrição completa do `rewrite` nó.
 
-* É opcional.
-* Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
-* Seu nome é `design`.
-* Seu tipo de nó é `nt:unstructured`.
+* `design`
+O nó de design é usado para copiar o design usado para a página exportada. Tem as seguintes características:
 
-O `design` nó tem as seguintes propriedades:
+   * É opcional.
+   * Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
+   * Seu nome é `design`.
+   * Seu tipo de nó é `nt:unstructured`.
 
-* Uma `type` propriedade definida como o valor `copy`.
+   O `design` nó tem as seguintes propriedades:
 
-* Ela não tem uma `path` propriedade, pois o caminho da página atual é copiado dinamicamente para a configuração.
+   * Uma `type` propriedade definida como o valor `copy`.
 
-**nó** genérico Um nó genérico é usado para copiar recursos como arquivos clientlibs .js ou .css para o arquivo zip. Tem as seguintes características:
+   * Ela não tem uma `path` propriedade, pois o caminho da página atual é copiado dinamicamente para a configuração.
 
-* É opcional.
-* Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
-* Não tem um nome específico.
-* Seu tipo de nó é `nt:unstructured`.
-* Tem uma `type` propriedade e quaisquer propriedades `type` relacionadas, conforme definido na seção Visão geral dos tipos de configuração da estrutura de Sincronização de conteúdo.
 
-Por exemplo, o nó de configuração a seguir copia os arquivos geometrixx clientlibs .js para o arquivo zip:
+* `generic`
+Um nó genérico é usado para copiar recursos como arquivos clientlibs .js ou .css para o arquivo zip. Tem as seguintes características:
 
-```xml
-"geometrixx.clientlibs.js": {
-    "extension": "js",
-    "type": "clientlib",
-    "path": "/etc/designs/geometrixx/clientlibs",
-    "jcr:primaryType": "nt:unstructured"
-}
-```
+   * É opcional.
 
-O modelo de configuração de exportação de página do **Geometrixx** mostra como uma exportação de página pode ser configurada. Para exibir a estrutura de nó do modelo no seu navegador como formato json, solicite o seguinte URL:
+   * Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
 
-`http://localhost:4502/etc/contentsync/templates/geometrixx.-1.json`
+   * Não tem um nome específico.
+
+   * Seu tipo de nó é `nt:unstructured`.
+
+   * Tem uma `type` propriedade e quaisquer propriedades `type` relacionadas, conforme definido na seção Visão geral dos tipos de configuração da estrutura de Sincronização de conteúdo.
+
+   Por exemplo, o nó de configuração a seguir copia os `mysite.clientlibs.js` arquivos para o arquivo zip:
+
+   ```xml
+   "mysite.clientlibs.js": {
+       "extension": "js",
+       "type": "clientlib",
+       "path": "/etc/designs/mysite/clientlibs",
+       "jcr:primaryType": "nt:unstructured"
+   }
+   ```
 
 **Implementação de uma configuração personalizada**
 
-Como você pode ter notado na estrutura do nó, o modelo de configuração de exportação de página do **Geometrixx** tem um `logo` nó com uma `type` propriedade definida como `image`. Este é um tipo de configuração especial que foi criado para copiar o logotipo da imagem para o arquivo zip. Para atender a alguns requisitos específicos, talvez seja necessário implementar uma `type` propriedade personalizada: para fazer isso, consulte a seção Implementação de um manipulador de atualização personalizado na página Sincronização de conteúdo.
+Configurações personalizadas também são possíveis.
+
+<!--
+As you may have noticed in the node structure, the **Geometrixx** page export configuration template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
+-->
+
+Para atender a alguns requisitos específicos, talvez seja necessário implementar uma `type` propriedade personalizada: para fazer isso, consulte a seção Implementação de um manipulador de atualização personalizado na página Sincronização de conteúdo.
 
 ## Exportar uma página de forma programática {#programmatically-exporting-a-page}
 
