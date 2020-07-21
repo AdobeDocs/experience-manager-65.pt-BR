@@ -3,9 +3,9 @@ title: Gerenciar [!DNL Adobe Stock] ativos [!DNL Adobe Experience Manager Assets
 description: Pesquise, busque, licencie e [!DNL Adobe Stock] gerencie ativos de dentro [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
+source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1098'
 ht-degree: 13%
 
 ---
@@ -19,7 +19,7 @@ As organizações podem integrar seus planos [!DNL Adobe Stock] corporativos [!D
 
 ## Pré-requisitos {#prerequisites}
 
-A integração exige um plano [corporativo do Adobe Stock](https://stockenterprise.adobe.com/) [!DNL Experience Manager] 6.5 ou posterior. Para obter detalhes sobre o service pack [!DNL Experience Manager] 6.5, consulte estas notas [de](/help/release-notes/sp-release-notes.md)versão.
+A integração exige um plano [corporativo do Adobe Stock](https://stockenterprise.adobe.com/).
 
 ## Integrar [!DNL Experience Manager] e [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
