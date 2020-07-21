@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9bd71115dac8109c9a47155ab60ac7573d88014c
+source-git-commit: 81707b4d57f7f15106459b91f95b1bc6ec333bf4
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 75%
@@ -336,10 +336,7 @@ Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração
 >* Os ativos localizados na pasta ad-hoc não aparecerão no navegador de conteúdo do Scene7.
 >* Quando a [Exibição segura estiver habilitada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), tanto os ativos publicados quanto os não publicados no Scene7 aparecerão no navegador de conteúdo do Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
-
-   >
-   >
-* Para vídeo, o navegador de conteúdo do Scene7 é compatível com:
+>* Para vídeo, o navegador de conteúdo do Scene7 é compatível com:
    >   * Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
    >   * Vídeo MP4 único
    >   * Vídeo F4V único
