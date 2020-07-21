@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
+source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '5035'
 ht-degree: 1%
 
 ---
@@ -81,19 +81,16 @@ Os ativos incluídos neste pacote incluem:
 
 Esta seção contém informações sobre como instalar o pacote de demonstração.
 
-### Do compartilhamento de pacotes {#from-package-share}
+### Da distribuição de software {#from-software-distribution}
 
-1. Navegue até *https://&lt;aemserver>:&lt;porta>/crx/packageshare/*
-
-   Ou no AEM, clique em Implantação e navegue até o ícone Compartilhamento de pacotes.
-
-   ![Ícone Compartilhamento de pacotes](assets/package_share_icon.jpg)
-
-1. Faça logon usando seu Adobe ID.
-1. Pesquise e localize o pacote **we-gov-forms.pkg.all-&lt;versão>** .
-1. Selecione a opção &quot;Download&quot; e aceite os Termos e Condições.
-1. Depois de baixado, selecione a opção &quot;Baixado&quot; para localizar o pacote no Gerenciador de pacotes.
-1. Selecione a opção &quot;Install&quot; (Instalar) para instalar o pacote.
+1. Distribuição [de](https://experience.adobe.com/downloads)software aberta. Você precisa de um Adobe ID para fazer login na Software Distribution (Distribuição de software).
+1. Toque em **[!UICONTROL Adobe Experience Manager]** disponível no menu de cabeçalho.
+1. Na seção **[!UICONTROL Filtros]** :
+   1. Selecione **[!UICONTROL Formulários]** na lista suspensa **[!UICONTROL Solução]** .
+   2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
+1. Toque no nome do pacote **we-gov-forms.pkg.all-&lt;versão>.zip** , selecione **[!UICONTROL Aceitar termos]** EULA e toque em **[!UICONTROL Download]**.
+1. Abra o Gerenciador [de](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote.
+1. Select the package and click **[!UICONTROL Install]**.
 
    ![nós governamos o pacote de formulários](assets/wegov_forms_package.jpg)
 
@@ -842,4 +839,4 @@ Como um usuário ativa o serviço na página do Configuration Manager, os usuár
 
 ## Próximas etapas {#next-steps}
 
-Agora todos estão prontos para explorar o site de referência We.Gov. Para obter mais informações sobre o fluxo de trabalho e as etapas do site de referência We.Gov, consulte Passo a passo do site de referência [We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).
+Agora todos estão prontos para explorar o site de referência We.Gov. Para obter mais informações sobre o fluxo de trabalho e as etapas do site de referência We.Gov, consulte Passo-a-passo do site de referência [We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).
