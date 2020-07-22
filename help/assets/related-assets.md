@@ -3,9 +3,9 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos digitais que compartilham alguns atributos comuns. Crie também relacionamentos derivados de origem entre ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Para relacionar outro ativo com o ativo selecionado, clique em **[!UICONTROL Relacionar]** na barra de ferramentas.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. Para relacionar outro ativo com o ativo selecionado, clique em **[!UICONTROL Relacionar]** ativos ![](assets/do-not-localize/link-relate.png) relacionados na barra de ferramentas.
 1. Faça uma das seguintes opções:
 
    * Para relacionar o arquivo de origem do ativo, selecione **[!UICONTROL Origem]** na lista.
@@ -60,7 +57,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
 1. Para cancelar a relação de um ativo, clique em **[!UICONTROL Desrelacionar]** na barra de ferramentas.
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![ativos não relacionados](assets/do-not-localize/link-unrelate-icon.png)
 
 1. Selecione o(s) ativo(s) que deseja desrelacionar na caixa de diálogo **[!UICONTROL Remover relações]** e clique em **[!UICONTROL Desrelacionar]**.
 
