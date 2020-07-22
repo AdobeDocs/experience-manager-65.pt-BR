@@ -3,9 +3,9 @@ title: Processar ativos para realizar processos de negócios, realizar auditoria
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '979'
 ht-degree: 3%
 
 ---
@@ -72,10 +72,7 @@ Para aplicar um fluxo de trabalho a um ativo, siga estas etapas:
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Clique em **[!UICONTROL Ações]** na parte inferior.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Clique em **[!UICONTROL Ações]** ![difundir](assets/do-not-localize/chevron-up-icon.png) na parte inferior.
 1. Clique em Fluxo de trabalho do **[!UICONTROL Start]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
