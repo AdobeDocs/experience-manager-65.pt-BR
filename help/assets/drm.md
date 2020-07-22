@@ -3,9 +3,9 @@ title: Gerenciamento de direitos digitais em [!DNL Adobe Experience Manager Asse
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1422'
 ht-degree: 6%
 
 ---
@@ -108,10 +108,7 @@ O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do e
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Clique em **[!UICONTROL Publicar]** na barra de ferramentas. Se você não vir **Publicar** na barra de ferramentas, clique em **[!UICONTROL Mais]** na barra de ferramentas e localize a opção **[!UICONTROL Publicar]** .
-
-   ![chlimage_1-156](assets/chlimage_1-156.png)
-
+1. Click **[!UICONTROL Publish]** from the toolbar. Se você não vir **Publicar** na barra de ferramentas, clique em **[!UICONTROL Mais]** na barra de ferramentas e localize a opção **[!UICONTROL Publicar]** ![publicação](assets/do-not-localize/publish-globe.png) .
 1. Escolha **[!UICONTROL Publicar]** no menu e feche a caixa de diálogo de confirmação.
 1. Saia do modo de seleção. O status de publicação do ativo aparece na parte inferior da miniatura do ativo na visualização do cartão. Na visualização da lista, a coluna Publicado exibe a hora em que o ativo foi publicado.
 
@@ -138,10 +135,7 @@ O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do e
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Para pesquisar ativos com base em seu status, clique em **[!UICONTROL Pesquisar]** para exibir a barra do Omnisearch.
-
-   ![chlimage_1-162](assets/chlimage_1-162.png)
-
+1. Para pesquisar ativos com base em seu status, clique na opção **** Pesquisar ![](assets/do-not-localize/search_icon.png) pesquisa para exibir a barra Omnisearch.
 1. Pressione return (Retornar) e clique [!DNL Experience Manager] para exibir o painel de pesquisa.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
