@@ -4,9 +4,9 @@ description: Saiba mais sobre tarefas para gerenciar coleções de ativos, como 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 983f281b77a122c757bb508bee570c6c8490a2b9
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2200'
 ht-degree: 13%
 
 ---
@@ -124,10 +124,7 @@ Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou 
 
 As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa da pesquisa [](#saved-searches)salva.
 
-1. Na interface do usuário do Assets, clique na opção de pesquisa na barra de ferramentas.
-
-   ![chlimage_1-9](assets/chlimage_1-110.png)
-
+1. Na interface do usuário do Assets, clique na opção de ![pesquisa opção](assets/do-not-localize/search_icon.png) na barra de ferramentas.
 1. Com o cursor na caixa Omnisearch, pressione a tecla Return.
 1. Na interface do Experience Manager, abra o painel Filtros.
 1. Na lista **[!UICONTROL Pesquisas salvas]**, selecione a coleção inteligente que deseja modificar. O painel Pesquisar exibe os filtros configurados para a pesquisa salva.
@@ -256,12 +253,9 @@ Editar pesquisas salvas é o mesmo que editar coleções inteligentes. Para obte
 
 Para excluir pesquisas salvas, siga estas etapas:
 
-1. Na interface do usuário do Assets, clique em search ![chlimage_1-13](assets/chlimage_1-114.png).
-
-1. Com o cursor no campo Omnisearch, pressione a tecla Enter.
-
+1. Na interface do usuário do Assets, clique na opção ![de](assets/do-not-localize/search_icon.png)pesquisa.
+1. Com o cursor no campo Omnisearch, pressione a tecla Return.
 1. Na interface do Experience Manager, abra o painel Filtros.
-
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -273,7 +267,7 @@ Para excluir pesquisas salvas, siga estas etapas:
 Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a coleção contiver coleções aninhadas, o fluxo de trabalho também será executado nos ativos dentro das coleções aninhadas. No entanto, se a coleção e a coleção aninhada contiverem ativos de duplicado, o fluxo de trabalho só será executado uma vez para esses ativos.
 
 1. Abra **[!UICONTROL Ativos]** > **[!UICONTROL Coleções]**. Para executar um fluxo de trabalho em uma coleção específica, selecione-a.
-1. Open **[!UICONTROL Timeline]** rail. Clique em ![chlimage_1-14](assets/chlimage_1-137.png) e clique em Fluxo de trabalho do **[!UICONTROL Start]**.
+1. Open **[!UICONTROL Timeline]** rail. Clique em ![divisas para cima](assets/do-not-localize/chevron-up-icon.png) e clique em Fluxo de trabalho do **[!UICONTROL Start]**.
 1. Na seção **[!UICONTROL Iniciar fluxo de trabalho]**, selecione um modelo de fluxo de trabalho da lista. Por exemplo, selecione o modelo **[!UICONTROL Atualizar ativo DAM]**.
 1. Insira um título para o fluxo de trabalho e clique em **[!UICONTROL Start]**.
 1. In the dialog, click **[!UICONTROL Proceed]**. O fluxo de trabalho processa todos os ativos na coleção selecionada.
