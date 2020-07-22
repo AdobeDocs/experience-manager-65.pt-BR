@@ -2,7 +2,7 @@
 title: O Exportador de Página
 description: Saiba como usar o Exportador de página do AEM.
 translation-type: tm+mt
-source-git-commit: b0126894dec33648a24c0308972aa5b47d7e4b84
+source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -16,10 +16,11 @@ O AEM permite exportar uma página como uma página da Web completa, incluindo i
 
 Depois de configurada, você solicita uma exportação de página do navegador, substituindo `html` por `export.zip` no URL. Isso gera um arquivo de arquivamento (zip), que contém a página renderizada no formato html, juntamente com os ativos referenciados. Todos os caminhos na página (por exemplo, caminhos para imagens) são reescritos para apontar para os arquivos incluídos no arquivo ou para os recursos no servidor. O arquivo de arquivamento (zip) pode ser baixado do seu navegador.
 
->!![NOTE]
-Dependendo do seu navegador e das configurações, o download será:
-* um arquivo de arquivamento (`<page-name>.export.zip`)
-* uma pasta (`<page-name>`); com eficácia, o arquivo de arquivamento já foi expandido
+>[!NOTE]
+>
+>Dependendo do seu navegador e das configurações, o download será:
+>* um arquivo de arquivamento (`<page-name>.export.zip`)
+>* uma pasta (`<page-name>`); com eficácia, o arquivo de arquivamento já foi expandido
 
 
 ## Exportar uma página {#exporting-a-page}
