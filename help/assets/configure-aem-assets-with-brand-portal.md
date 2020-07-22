@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d7e2d33b81847b15d1e33b3aa406e5e91d44a5f8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 15%
@@ -129,7 +129,7 @@ O certificado público permite autenticar seu perfil no Adobe Developer Console.
 
 1. Faça logon na instância do autor do AEM Assets. O URL padrão é
    `http:// localhost:4502/aem/start.html`
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Interface do usuário de configuração de conta do Adobe IMS](assets/ims-config1.png)
 
@@ -302,7 +302,7 @@ Execute as seguintes etapas para criar o serviço em nuvem do Brand Portal:
 
 1. Faça logon na instância do autor do AEM Assets.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Na página Configurações do Brand Portal, clique em **[!UICONTROL Criar]**.
 
@@ -322,7 +322,7 @@ Execute as seguintes etapas para validar a configuração:
 
 1. Faça logon na instância da nuvem do AEM Assets.
 
-1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
+1. From the **Tools** ![Tools](assets/do-not-localize/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
 
    ![](assets/test-integration1.png)
 
@@ -379,7 +379,7 @@ Certifique-se de que nenhum trabalho de publicação esteja em execução na ins
 
 1. Faça logon na instância do autor do AEM Assets.
 
-1. No painel **Ferramentas** ![Ferramentas](assets/tools.png) , navegue até **[!UICONTROL Implantação]** > Replicação **[!UICONTROL de]** implantação.
+1. No painel **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png) , navegue até **[!UICONTROL Implantação]** > Replicação **[!UICONTROL de]** implantação.
 
 1. Na página Replicação, clique em **[!UICONTROL Agentes no autor]**.
 
