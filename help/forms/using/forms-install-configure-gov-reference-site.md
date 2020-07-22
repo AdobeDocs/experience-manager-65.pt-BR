@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
+source-git-commit: 5412d788ccebe00707f2d94dfb1e40da6cb0471c
 workflow-type: tm+mt
 source-wordcount: '5035'
 ht-degree: 1%
@@ -179,7 +179,7 @@ Esta seção contém detalhes sobre como configurar o SSL na instância do AEM p
 
 **Notas:**
 
-1. Navegue até https://&lt;aemserver>:&lt;porta>/aem/inbox onde você poderá concluir o processo explicado no link de documentação de referência acima.
+1. Navegue até https://&lt;aemserver>:&lt;port>/aem/inbox onde você poderá concluir o processo explicado no link de documentação de referência acima.
 1. O `we-gov-forms.pkg.all-[version].zip` pacote inclui uma chave SSL de amostra e um certificado que podem ser acessados extraindo a `we-gov-forms.pkg.all-[version].zip/ssl` pasta que faz parte do pacote.
 
 1. Certificado SSL e detalhes da chave:
@@ -222,7 +222,7 @@ Esta seção contém detalhes e instruções sobre a Configuração da Adobe Sig
 
 ### Preencher e assinar vários formulários {#fill-sign-multiple-forms}
 
-Este documento explica as etapas necessárias para configurar a capacidade de preencher e assinar vários formulários. Você também pode experimentar a [mesma capacidade aqui](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Essa amostra armazena os dados necessários para essa amostra no repositório do AME. Isso é feito para garantir uma experiência sem atrito para implantar ativos de demonstração no servidor local. Na vida real armazenaremos as mesmas informações no RDMS de sua escolha.
+Este documento explica as etapas necessárias para configurar a capacidade de preencher e assinar vários formulários. Você também pode experimentar a [mesma capacidade aqui](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Essa amostra armazena os dados necessários para essa amostra no repositório do AEM. Isso é feito para garantir uma experiência sem atrito para implantar ativos de demonstração no servidor local. Na vida real armazenaremos as mesmas informações no RDMS de sua escolha.
 
 #### Pré-requisitos {#pre-requisites-fill-sign-multiple-forms}
 
@@ -839,4 +839,4 @@ Como um usuário ativa o serviço na página do Configuration Manager, os usuár
 
 ## Próximas etapas {#next-steps}
 
-Agora todos estão prontos para explorar o site de referência We.Gov. Para obter mais informações sobre o fluxo de trabalho e as etapas do site de referência We.Gov, consulte Passo-a-passo do site de referência [We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).
+Agora todos estão prontos para explorar o site de referência We.Gov. Para obter mais informações sobre o fluxo de trabalho e as etapas do site de referência We.Gov, consulte Passo a passo do site de referência [We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).
