@@ -2,9 +2,9 @@
 title: O Exportador de Página
 description: Saiba como usar o Exportador de página do AEM.
 translation-type: tm+mt
-source-git-commit: 000666e0c3f05635a9469d3571a10c67b3b21613
+source-git-commit: b0126894dec33648a24c0308972aa5b47d7e4b84
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,17 @@ Dependendo do seu navegador e das configurações, o download será:
 
 ## Exportar uma página {#exporting-a-page}
 
-As etapas a seguir descrevem como exportar uma página e presumem que existe um modelo de configuração de exportação para o site. Um modelo de configuração define a forma como uma página é exportada e é específica para seu site. Para criar um modelo de configuração, consulte a seção [Criando uma Configuração de Exportador de Página para seu Site](#creating-a-page-exporter-configuration-for-your-site) .
+As etapas a seguir descrevem como exportar uma página e presumem que existe um modelo de exportação para o site. Um modelo de exportação define a forma como uma página é exportada e é específica para seu site. Para criar um modelo de exportação, consulte a seção [Criando uma Configuração de Exportador de Página para seu Site](#creating-a-page-exporter-configuration-for-your-site) .
 
 Para exportar uma página:
 
-1. Navegue até a página desejada, selecione a página e abra a caixa de diálogo **Propriedades** .
+1. Navegue até a página desejada no console **Sites** .
+
+1. Selecione a página e abra a caixa de diálogo **Propriedades** .
 
 1. Select the **Advanced** tab.
 
-1. Expanda o campo **Exportar** para selecionar um modelo de configuração.
+1. Expanda o campo **Exportar** para selecionar um modelo de exportação.
 Selecione o modelo necessário para o site e confirme com **OK**.
 
 1. Selecione **Salvar e fechar** para fechar a caixa de diálogo de propriedades da página.
@@ -52,23 +54,23 @@ Selecione o modelo necessário para o site e confirme com **OK**.
 
    * a subpasta `content`, que é a raiz de uma série de subpastas que refletem o caminho para a página no repositório
 
-   * nesta estrutura, há o arquivo html para a página selecionada (`<page-name>.html`)
-
+      * nesta estrutura, há o arquivo html para a página selecionada (`<page-name>.html`)
    * outros recursos (`.js` arquivos, `.css` arquivos, imagens etc.) estão localizados de acordo com as configurações no modelo de exportação
+
 
 1. Abra o arquivo html da página (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) no navegador para verificar a renderização.
 
 ## Criando uma Configuração de Exportador de Página para seu Site {#creating-a-page-exporter-configuration-for-your-site}
 
-O exportador de página é baseado na estrutura de Sincronização de conteúdo. As configurações disponíveis na caixa de diálogo Propriedades **da** página são modelos de exportação que definem as dependências necessárias para uma página.
+O exportador de página é baseado na estrutura [de sincronização de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html)conteúdo. As configurações disponíveis na caixa de diálogo Propriedades **da** página são modelos de exportação que definem as dependências necessárias para uma página.
 
 Quando uma exportação de página é acionada, o modelo de exportação é referenciado e o caminho da página e o caminho do design são aplicados dinamicamente. O arquivo zip é criado usando a funcionalidade padrão de Sincronização de conteúdo.
 
-O AEM incorpora um modelo padrão em `/etc/contentsync/templates/default`.
+Uma instalação predefinida do AEM inclui um modelo predefinido em `/etc/contentsync/templates/default`.
 
-* Este modelo é o modelo de fallback quando nenhum modelo de configuração é encontrado no repositório.
+* Este modelo é o modelo de fallback quando nenhum modelo de exportação é encontrado no repositório.
 
-* O `default` modelo mostra como uma exportação de página pode ser configurada, de modo que possa servir como base para um novo modelo de configuração.
+* O `default` modelo mostra como uma exportação de página pode ser configurada, de modo que possa servir como base para um novo modelo de exportação.
 
 * Para visualização a estrutura de nó do modelo no seu navegador como formato JSON, solicite o seguinte URL:
    `http://localhost:4502/etc/contentsync/templates/default.json`
@@ -89,32 +91,35 @@ Para criar um modelo completamente novo:
 
    * `Type`: `nt:unstructured`
 
-1. Abaixo do nó do modelo, chamado aqui `mysite`, crie uma estrutura de nó usando os nós de configuração descritos abaixo.
+2. Abaixo do nó do modelo, chamado aqui `mysite`, crie uma estrutura de nó usando os nós de configuração descritos abaixo.
 
 ## Ativando um modelo de exportador de página para suas páginas {#activating-a-page-exporter-configuration-for-your-pages}
 
 Depois que o modelo tiver sido configurado, é necessário disponibilizá-lo:
 
-1. No CRXDE, navegue até a página desejada.
+1. No CRXDE, navegue até a página desejada na `/content` ramificação.
 
-1. No `jcr:content` nó, crie a propriedade:
+1. No `jcr:content` nó da página, crie a propriedade:
    * `Name`: `cq:exportTemplate`
    * `Type`: `String`
    * `Value`: caminho para o modelo; por exemplo: `/etc/contentsync/templates/mysite`
 
 ### Nós de configuração do exportador de páginas {#page-exporter-configuration-nodes}
 
-O modelo consiste em uma estrutura de nó. Cada nó tem uma `type` propriedade que define uma ação específica no processo de criação do arquivo zip. Para obter mais detalhes sobre a propriedade type, consulte a seção Visão geral dos tipos de configuração na página da estrutura de Sincronização de conteúdo.
+O modelo consiste em uma estrutura de nó, pois usa a estrutura [de sincronização de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html)conteúdo.  Cada nó tem uma `type` propriedade que define uma ação específica no processo de criação do arquivo zip.
 
-Os nós a seguir podem ser usados para criar um modelo de configuração de exportação:
+<!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
+-->
+
+Os nós a seguir podem ser usados para criar um modelo de exportação:
 
 * `page`
 O nó da página é usado para copiar o html da página para o arquivo zip. Tem as seguintes características:
 
    * É um nó obrigatório.
-   * Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
-   * Seu nome é `page`.
-   * Seu tipo de nó é `nt:unstructured`
+   * Está localizado abaixo `/etc/contentsync/templates/<mysite>`.
+   * É definido com a propriedade `Name`definida como `page`.
+   * O tipo de nó é `nt:unstructured`
 
    O `page` nó tem as seguintes propriedades:
 
@@ -122,41 +127,38 @@ O nó da página é usado para copiar o html da página para o arquivo zip. Tem 
 
    * Ela não tem uma `path` propriedade, pois o caminho da página atual é copiado dinamicamente para a configuração.
 
-   * As outras propriedades são descritas na seção Visão geral dos tipos de configuração da estrutura de Sincronização de conteúdo.
-
+   <!--
+  * The other properties are described in the Overview of configuration types section of the Content Sync framework.
+  -->
 
 * `rewrite`
 O nó regravar define como os links são regravados na página exportada. Os links regravados podem apontar para os arquivos incluídos no arquivo zip ou para os recursos no servidor.
-
-   Consulte a página Sincronização de conteúdo para obter uma descrição completa do `rewrite` nó.
+   <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 O nó de design é usado para copiar o design usado para a página exportada. Tem as seguintes características:
 
    * É opcional.
-   * Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
-   * Seu nome é `design`.
-   * Seu tipo de nó é `nt:unstructured`.
+   * Está localizado abaixo `/etc/contentsync/templates/<mysite>`.
+   * É definido com a propriedade `Name` definida como `design`.
+   * O tipo de nó é `nt:unstructured`.
 
    O `design` nó tem as seguintes propriedades:
 
    * Uma `type` propriedade definida como o valor `copy`.
 
-   * Ela não tem uma `path` propriedade, pois o caminho da página atual é copiado dinamicamente para a configuração.
+   * Ele não tem uma `path` propriedade, pois o caminho da página atual é copiado dinamicamente para a configuração.
 
 
 * `generic`
-Um nó genérico é usado para copiar recursos como arquivos clientlibs .js ou .css para o arquivo zip. Tem as seguintes características:
+Um nó genérico é usado para copiar recursos como clientlibs 
+`.js` ou `.css` arquivos no arquivo zip. Tem as seguintes características:
 
    * É opcional.
-
-   * Está localizado abaixo `/etc/contentsync/templates/<sitename>`.
-
+   * Está localizado abaixo `/etc/contentsync/templates/<mysite>`.
    * Não tem um nome específico.
-
-   * Seu tipo de nó é `nt:unstructured`.
-
-   * Tem uma `type` propriedade e quaisquer propriedades `type` relacionadas, conforme definido na seção Visão geral dos tipos de configuração da estrutura de Sincronização de conteúdo.
+   * O tipo de nó é `nt:unstructured`.
+   * Tem uma `type` propriedade e propriedades `type` relacionadas. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
    Por exemplo, o nó de configuração a seguir copia os `mysite.clientlibs.js` arquivos para o arquivo zip:
 
@@ -174,10 +176,13 @@ Um nó genérico é usado para copiar recursos como arquivos clientlibs .js ou .
 Configurações personalizadas também são possíveis.
 
 <!--
-As you may have noticed in the node structure, the **Geometrixx** page export configuration template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
+As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Para atender a alguns requisitos específicos, talvez seja necessário implementar uma `type` propriedade personalizada: para fazer isso, consulte a seção Implementação de um manipulador de atualização personalizado na página Sincronização de conteúdo.
+Para atender a alguns requisitos específicos, talvez seja necessário implementar um manipulador [de atualizações](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/handler/package-summary.html)personalizado.
+
+<!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
+-->
 
 ## Exportar uma página de forma programática {#programmatically-exporting-a-page}
 
@@ -191,4 +196,3 @@ O servlet vinculado ao `export` seletor e a `zip` extensão usa o serviço PageE
 ## Resolução de Problemas{#troubleshooting}
 
 Se houver um problema com o download do arquivo zip, você poderá excluir o `/var/contentsync` nó no repositório e enviar a solicitação de exportação novamente.
-
