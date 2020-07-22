@@ -3,9 +3,9 @@ title: Modelos de ativos em [!DNL Adobe Experience Manager Assets].
 description: Saiba mais sobre os modelos de ativos [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais promocionais de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1554'
 ht-degree: 0%
 
 ---
@@ -165,9 +165,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Na página [!UICONTROL Mesclagem] de modelos, clique em **[!UICONTROL Mesclar]**.
-
-   ![chlimage_1-121](assets/chlimage_1-326.png)
+1. Na página Mesclagem [!UICONTROL de] modelos, clique em **[!UICONTROL Mesclar]** para ![adicionar ativos](assets/do-not-localize/assets_add_icon.png).
 
 1. Navegue até o local do material de apoio que deseja mesclar e clique nas miniaturas do material de apoio que deseja mesclar para selecioná-los.
 
