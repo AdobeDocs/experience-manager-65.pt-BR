@@ -2,14 +2,17 @@
 title: Notas de versão do Adobe Experience Manager Assets
 description: Novos recursos e melhorias do Adobe Experience Manager 6.5 Assets.
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 40%
 
 ---
 
 
 # Notas de versão do Adobe Experience Manager Assets {#aem-assets-release-notes}
 
-Estes são os principais recursos e destaques da versão do Adobe Experience Manager 6.5 Assets.
+Estes são os principais recursos e destaques da versão dos ativos Adobe Experience Manager 6.5.
 
 ## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -31,9 +34,9 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 [!DNL Adobe Stock]O serviço do fornece aos designers e empresas acesso a milhões de fotos, vetores, ilustrações, vídeos, modelos e ativos em 3D de alta qualidade e isentos de royalties.
 
-For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Pré-visualização da imagem e da licença do Adobe Stock nos ativos do Experience Manager](assets/stock_image_preview_license_options.png)
+![Pré-visualização da imagem e da licença do Adobe Stock nos Ativos da Experience Manager](assets/stock_image_preview_license_options.png)
 
 *Figura: imagem de Pré-visualização[!DNL Adobe Stock]e licença de dentro[!DNL Experience Manager Assets].*
 
@@ -63,7 +66,7 @@ Em grandes empresa, a infraestrutura necessária para criar sites pode ser distr
 
 ## Dynamic Media {#dynamic-media}
 
-[!DNL Dynamic Media] fornece criação aprimorada de rich media e delivery [!DNL Experience Manager Assets] para impulsionar experiências de ponta que são imersivas e personalizadas. Ao fazer upload de um único ativo mestre de alta qualidade e usar nossos visualizadores e renderização em nuvem avançada, você pode fornecer qualquer combinação de execuções dinamicamente para suportar a estratégia de mídia de sua organização.
+[!DNL Dynamic Media] fornece criação aprimorada de rich media e delivery [!DNL Experience Manager Assets] para impulsionar experiências de ponta que são imersivas e personalizadas. Ao fazer upload de um único ativo principal de alta qualidade e usar nossos visualizadores e renderização em nuvem avançada, você pode fornecer qualquer combinação de execuções dinamicamente para suportar a estratégia de mídia de sua organização.
 
 For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
