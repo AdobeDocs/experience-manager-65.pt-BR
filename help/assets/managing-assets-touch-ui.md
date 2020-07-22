@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '9250'
+source-wordcount: '9245'
 ht-degree: 4%
 
 ---
@@ -335,11 +335,7 @@ Para pré-visualização de um ativo, siga estas etapas.
 
 1. No modo de pré-visualização, as opções de zoom estão disponíveis para os tipos [de imagem](/help/assets/assets-formats.md#supported-raster-image-formats) suportados (com edição interativa).
 
-   Para aplicar zoom em um ativo, clique `+` (ou clique na lupa do ativo). Para diminuir o zoom, clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta de redefinição de zoom leva você de volta à visualização original.
-
-   Clique em **[!UICONTROL Redefinir]** para redefinir a visualização para o tamanho original.
-
-   ![Redefinir para trazer o usuário de volta à visualização original](assets/chlimage_1-11.png)
+   Para aplicar zoom em um ativo, clique `+` (ou clique na lupa do ativo). Para diminuir o zoom, clique em `-`. Ao ampliar, você pode observar cuidadosamente qualquer área da imagem ao deslocar o panorama. A seta de redefinição de zoom leva você de volta à visualização original. Para redefinir a visualização para o tamanho original, clique em **[!UICONTROL Redefinir]** a visualização ![de](assets/do-not-localize/revert.png)redefinição.
 
 **Pré-visualizações usando apenas teclas de teclado**
 
@@ -428,8 +424,7 @@ Alguns atributos exclusivos a uma cópia específica de um ativo não são trans
 
 As outras propriedades e informações de metadados são mantidas. Uma cópia parcial não é criada ao copiar um ativo.
 
-1. Na [!DNL Assets] interface, selecione um ou mais ativos e clique em **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a ação rápida **[!UICONTROL Copiar]** no cartão de ativos.
-   ![Opção Copiar na barra de ferramentas na interface Ativos](assets/copy_icon.png)
+1. Na [!DNL Assets] interface, selecione um ou mais ativos e clique em **[!UICONTROL Copiar]** na barra de ferramentas. Como alternativa, selecione a opção **[!UICONTROL Copiar]** ![cópia na barra de ferramentas na ação rápida da interface](assets/do-not-localize/copy_icon.png) Ativos do cartão de ativos.
 
    >[!NOTE]
    >
@@ -441,10 +436,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >
    >Se você copiar um ativo no mesmo local, [!DNL Experience Manager] gera automaticamente uma variação do nome. Por exemplo, se você copiar um ativo intitulado `Square`, [!DNL Experience Manager] gera automaticamente o título para sua cópia como `Square1`.
 
-1. Clique na opção **[!UICONTROL Colar]** ativo na barra de ferramentas.
-
-   ![Opção Colar na barra de ferramentas Ativos](assets/chlimage_1-14.png)
-   [!DNL Assets] são copiados para este local.
+1. Clique na opção **[!UICONTROL Colar]** na opção ![Colar no ativo da barra de ferramentas](assets/do-not-localize/paste.png) Ativos na barra de ferramentas. Os ativos são copiados para esse local.
 
    >[!NOTE]
    >
@@ -455,7 +447,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 1. Navegue até o local do ativo que deseja mover.
 
 1. Selecione o ativo e clique na opção **[!UICONTROL Mover]** na barra de ferramentas.
-   ![Opção Mover na barra de ferramentas Ativos](assets/move_icon.png)
+   ![Opção Mover na barra de ferramentas Ativos](assets/do-not-localize/move.png)
 
 1. No assistente [!UICONTROL Mover ativos] , execute um dos procedimentos a seguir:
 
@@ -685,9 +677,9 @@ As ferramentas de edição na [!DNL Assets] interface permitem executar pequenos
    * Clique na opção **[!UICONTROL Editar]** que é exibida em um ativo na visualização do cartão.
    * Clique em **[!UICONTROL Editar]** na barra de ferramentas.
 
-   ![Opção Editar na barra de ferramentas](assets/edit_icon.png)
+   ![Opção Editar na barra de ferramentas](assets/do-not-localize/edit_icon.png)
 
-1. Para recortar a imagem, clique em **[!UICONTROL Opção de recorte]** ![para recortar uma imagem](assets/chlimage_1-22.png).
+1. Para recortar a imagem, clique em **[!UICONTROL Opção de recorte]** ![para recortar uma imagem](assets/do-not-localize/crop.png).
 
 1. Selecione a opção desejada na lista. A área de corte aparece na imagem com base na opção escolhida. A opção **Mão livre** permite cortar a imagem sem restrições de proporção.
 
@@ -695,19 +687,19 @@ As ferramentas de edição na [!DNL Assets] interface permitem executar pequenos
 
 1. Selecione a área a ser cortada e redimensione ou reposicione-a na imagem.
 
-1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
+1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
 
    ![Opções de desfazer e refazer](assets/chlimage_1-25.png)
 
-1. Clique na opção **Girar** apropriada para girar a imagem no sentido horário ou anti-horário.
+1. Clique na opção **[!UICONTROL Girar]** apropriada para girar a imagem no sentido horário ou anti-horário.
 
    ![Opções de rotação no sentido horário e anti-horário](assets/chlimage_1-26.png)
 
-1. Clique na opção **Virar** apropriada para virar a imagem na horizontal ou na vertical.
+1. Clique na opção **[!UICONTROL Virar]** apropriada para virar a imagem na horizontal ou na vertical.
 
    ![opções para virar uma imagem na horizontal ou na vertical](assets/chlimage_1-27.png)
 
-1. Clique na opção **Concluir** ![finalizar](assets/chlimage_1-24.png) para concluir a edição da imagem. Clicar em **Concluir** também start a regeneração de renderizações.
+1. Para concluir a edição da imagem, clique na opção **[!UICONTROL Concluir]** ![Concluir](assets/do-not-localize/check-ok-done-icon.png). Clicar em **Concluir** também start a regeneração de renderizações.
 
 >[!NOTE]
 >
@@ -834,7 +826,7 @@ Para imprimir as anotações e revisar o status, clique em **[!UICONTROL Imprimi
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
-   ![Opção Imprimir na barra de ferramentas](assets/chlimage_1-40.png)
+   ![Opção Imprimir na barra de ferramentas](assets/do-not-localize/print.png)
 
 1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se desejar que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Superior esquerda** . Está selecionado por padrão.
 
