@@ -12,7 +12,10 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: ee0d4aa07db6f00409cace8664d02c545e7d6550
+workflow-type: tm+mt
+source-wordcount: '1678'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 O console Grupos fornece acesso à criação de grupos da comunidade quando a estrutura [de](/help/communities/sites-console.md#step1) modelo de um site da comunidade inclui a função [de](/help/communities/functions.md#groups-function)grupos.
 
-* O AEM Communities suporta o aninhamento de grupos em outros grupos. O aninhamento de grupo é possível quando a [estrutura do novo grupo](/help/communities/tools-groups.md) contém a função de grupos.
+* AEM Communities suportam o aninhamento de grupos em outros grupos. O aninhamento de grupo é possível quando a [estrutura do novo grupo](/help/communities/tools-groups.md) contém a função de grupos.
 * Somente para o ambiente do autor, há um assistente de criação de grupo semelhante ao assistente de criação de site.
 * Se os membros podem ou não criar grupos no ambiente de publicação, é possível configurá-los ao adicionar uma função Grupos a uma estrutura de site da comunidade ou de grupo da comunidade.
 
@@ -57,13 +60,15 @@ Para acessar o console Grupos:
    * A estrutura do site da comunidade deve incluir uma função de grupos.
    * Essas capturas de tela são do tutorial Introdução depois de [criar grupos na publicação](/help/communities/published-site.md).
 
+   ![create-group](assets/create-group.png)
+
 * Selecione a pasta **** Grupos para abri-la.
 
    Quando abertos, todos os grupos existentes, sejam criados em autor ou publicação, serão exibidos.
 
    Desse console Grupos, é possível criar novos grupos.
 
-   ![chlimage_1-200](assets/chlimage_1-200.png)
+   ![create-new-group](assets/create-new-group.png)
 
 * Selecione o botão **Criar grupo** .
 
@@ -106,7 +111,9 @@ A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local den
 
 ### COMMUNITY GROUP THEME {#community-group-theme}
 
-A estrutura usa o [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível ao site. Um dos muitos temas Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado, ou um tema Bootstrap pode ser carregado.
+![communitygrouptheme](assets/communitygrouptheme.png)
+
+A estrutura usa o Bootstrap [do](https://twitterbootstrap.org/) Twitter para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de seleção azul opaca.
 
@@ -116,7 +123,7 @@ Depois que o site da comunidade é publicado, é possível [editar as propriedad
 
 ### COMMUNITY GROUP BRANDING {#community-group-branding}
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![marca de grupo comunitário](assets/community-group-branding.png)
 
 A marca do site da comunidade é uma imagem exibida como um cabeçalho na parte superior de cada página. É possível exibir um banner para o grupo que difere das outras páginas do site.
 
@@ -155,7 +162,7 @@ Um usuário U1, portanto, pode ser um administrador em um grupo G1 e um usuário
 
 A configuração de associação permite a seleção de uma das três maneiras de proteger um grupo da comunidade.
 
-![chlimage_1-202](assets/chlimage_1-202.png)
+![associação de grupo-comunidade](assets/community-group-membership.png)
 
 * **Associação opcional**
 
@@ -171,7 +178,7 @@ A configuração de associação permite a seleção de uma das três maneiras d
 
 **MINIATURA**
 
-![chlimage_1-203](assets/chlimage_1-203.png)
+![community-group-thumbnail](assets/community-group-thumbnail.png)
 
 A miniatura é uma imagem a ser exibida para o grupo no autor e na publicação.
 
@@ -179,13 +186,13 @@ O tamanho ideal para uma imagem de grupo é de 170 x 90 pixels em um formato de 
 
 Se nenhuma imagem for adicionada, uma imagem padrão será exibida.
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![miniatura-imagem](assets/thumbnail-image.png)
 
 ### Etapa 4: Criar grupo {#step-create-group}
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![community-create-group](assets/community-create-group.png)
 
-Se algum ajuste for necessário, use o botão **Voltar **para fazer isso.
+Se algum ajuste for necessário, use o botão **Voltar** para fazer isso.
 
 Quando **Criar** é selecionado e iniciado, o processo de criação do grupo não pode ser interrompido.
 
@@ -200,7 +207,7 @@ Quando o processo é concluído, o cartão do novo site da subcomunidade (grupo)
 
 ## Conteúdo do grupo de autores {#author-group-content}
 
-![chlimage_1-206](assets/chlimage_1-206.png)
+![site aberto](assets/open-site.png)
 
 O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas de qualquer outra página do AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
 
@@ -208,11 +215,11 @@ O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas de 
 
 As propriedades de um site da subcomunidade existente, especificadas durante o processo de criação do grupo da comunidade, podem ser modificadas selecionando o ícone Editar site que aparece ao passar o mouse sobre o cartão do grupo:
 
-![chlimage_1-207](assets/chlimage_1-207.png)
+![editar site](assets/edit-site.png)
 
 Os detalhes das seguintes propriedades correspondem às descrições fornecidas na seção Criação de [grupo](#group-creation) . Qualquer grupo aninhado pode ser modificado, independentemente de ser criado no ambiente de publicação ou no ambiente do autor.
 
-![chlimage_1-208](assets/chlimage_1-208.png)
+![community-group-basic](assets/community-group-basic.png)
 
 ### Modificar básico {#modify-basic}
 
@@ -235,7 +242,7 @@ O painel ESTRUTURA permite a modificação da estrutura criada inicialmente a pa
 * Em uma instância de uma função da comunidade na estrutura do site:
 
    * **`Gear icon`**
-Edite as configurações, incluindo o título de exibição e o nome do URL*e os grupos [de membros](/help/communities/users.md#privilegedmembersgroups)privilegiados.
+Edite as configurações, incluindo o título de exibição, o URL e os grupos [de membros](/help/communities/users.md#privilegedmembersgroups)privilegiados.
 
    * **`Trashcan icon`**
 Remover (excluir) funções da estrutura do site.
@@ -259,7 +266,7 @@ Modifique a ordem das funções, conforme exibido na barra de navegação de ní
 
 **Exemplo: Adicionando uma função de calendário a uma estrutura subcomunitária (grupo)**
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![community-group-add-calendário](assets/community-group-add-calendar.png)
 
 ### Modificar design {#modify-design}
 
@@ -284,13 +291,13 @@ O painel [MINIATURA](#thumbnail) permite que uma imagem seja carregada para repr
 
 ## Publicar o grupo {#publish-the-group}
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![site de publicação](assets/publish-site.png)
 
 Depois que um grupo da comunidade é recém-criado ou modificado, é possível publicar (ativar) o grupo selecionando o `Publish Site` ícone.
 
 Depois que o grupo for publicado com êxito, uma mensagem será exibida:
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![publicado em grupo](assets/group-published.png)
 
 >[!CAUTION]
 >
@@ -301,7 +308,7 @@ Depois que o grupo for publicado com êxito, uma mensagem será exibida:
 
 ## Excluir o grupo {#delete-the-group}
 
-![ícone excluir]()
+![ícone excluir](assets/deleteicon.png)
 
 Exclua um grupo do console Grupos da comunidade selecionando o ícone Excluir grupo, que aparece ao passar o mouse sobre o grupo.
 
