@@ -3,9 +3,9 @@ title: Adicionar mapas de imagem com hiperlinks para imagens digitais
 description: Saiba como adicionar um mapa de imagem com hiperlinks a uma imagem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,9 @@ Os mapas de imagem permitem adicionar uma ou mais áreas hipervinculadas que fun
    * Na **[!UICONTROL caixa Cartão]** ou visualização de **[!UICONTROL Lista]** , selecione o ativo e clique em **[!UICONTROL Editar]** na barra de ferramentas.
    * Clique em **[!UICONTROL Editar]** na página do ativo.
 
-      ![chlimage_1-420](assets/chlimage_1-420.png)
+      ![opção de edição](assets/do-not-localize/edit_icon.png)
 
-1. Para inserir um mapa de imagem, clique em **[!UICONTROL Iniciar mapa]** na barra de ferramentas.
-
-   ![chlimage_1-421](assets/chlimage_1-421.png)
-
+1. Para inserir um mapa de imagem, clique em **[!UICONTROL Iniciar mapa]** de ![imagem da barra de ferramentas](assets/do-not-localize/image-map-icon.png) .
 1. Selecione a forma do mapa de imagem. O ponto de acesso da forma selecionada é colocado na imagem.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
@@ -40,13 +37,9 @@ Os mapas de imagem permitem adicionar uma ou mais áreas hipervinculadas que fun
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Clique em **[!UICONTROL Confirmar]** e em **[!UICONTROL Concluir]** na barra de ferramentas para salvar as alterações.
+1. Clique em **[!UICONTROL Confirmar]** e, em seguida, clique em **[!UICONTROL Concluir]** ![selecione a seleção concluída](assets/do-not-localize/check-ok-done-icon.png) na barra de ferramentas para salvar as alterações.
 
-   ![chlimage_1-424](assets/chlimage_1-424.png)
-
-   Para excluir o mapa de imagem, clique no ponto de acesso e em **[!UICONTROL Excluir]**.
-
-   ![chlimage_1-425](assets/chlimage_1-425.png)
+   Para excluir o mapa de imagem, clique no ponto de acesso e em **[!UICONTROL Excluir]** ![excluir](assets/do-not-localize/delete-solid-line.png).
 
 1. Para visualização do mapa de imagem, navegue até a página de detalhes do ativo e passe o cursor sobre a imagem.
 
