@@ -3,9 +3,9 @@ title: Gerar um URL para ativos compartilhados
 description: Este artigo descreve como compartilhar ativos, pastas e coleções dentro do Experience Manager Assets como um URL para terceiros externos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1229'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,7 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
 >Antes de compartilhar um link com os usuários, verifique se o Day CQ Mail Service está configurado. Ocorre um erro se você tentar compartilhar um link sem primeiro [configurar o Serviço](/help/assets/link-sharing.md#configmailservice)de e-mail Day CQ.
 
 1. Na interface do usuário Ativos, selecione o ativo a ser compartilhado como um link.
-1. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]** ![assets_share](assets/assets_share.png).
+1. Na barra de ferramentas, clique no ícone **[!UICONTROL Compartilhar ativos do Link]** ![](assets/do-not-localize/assets_share.png)Compartilhar.
 
    Um link de ativo é criado automaticamente no campo **[!UICONTROL Compartilhar link]** . Copie este link e compartilhe-o com os usuários. A hora de expiração padrão do link é um dia.
 
@@ -98,7 +98,7 @@ Para gerar o URL dos ativos que deseja compartilhar com os usuários, use a caix
    >
    >O Experience Manager suporta a geração da pré-visualização de ativos desses tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF e PPT. Você só pode baixar os ativos dos outros tipos MIME.
 
-1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e em **[!UICONTROL Download]** na barra de ferramentas.
+1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e, em seguida, clique em **[!UICONTROL Download]** na barra de ferramentas.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
