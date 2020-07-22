@@ -3,7 +3,7 @@ title: Criar e configurar páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 1%
@@ -290,7 +290,7 @@ Consulte [Personalização e extensão de ativos](/help/assets/extending-assets.
 
 A seguir está um exemplo de um formulário Metadados com vários campos:
 
-![chlimage_1-162](assets/chlimage_1-390.png)
+![metadata](assets/chlimage_1-390.png)
 
 Na página Editor de ativos, os usuários podem inserir valores nos campos de metadados (se eles forem editáveis) e executar a ação final (por exemplo, enviar as alterações).
 
@@ -330,7 +330,7 @@ A seguir está um componente de Tags preenchido:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura     {#thumbnail}
+#### Miniatura  {#thumbnail}
 
 O componente de Miniatura é o local em que o ativo exibe a miniatura selecionada (para muitos dos formatos, a miniatura é extraída automaticamente). Além disso, o componente exibe o nome do arquivo e [as ações que você pode modificar](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
