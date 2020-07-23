@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '2897'
 ht-degree: 2%
@@ -62,7 +62,7 @@ Os emblemas baseados em funções são atribuídos por um administrador aos memb
 
 Os símbolos atribuídos (e avisados) são armazenados no [SRP](/help/communities/srp.md) selecionado e não são diretamente acessíveis. Até que uma GUI esteja disponível, o único meio de atribuir emblemas baseados em funções é fazer isso com código ou cURL. Para obter instruções sobre cURL, consulte a seção [Atribuir e Revogar emblemas](#assign-and-revoke-badges).
 
-Na versão estão incluídos três emblemas baseados em funções:
+Na versão estão incluídos três emblemas baseados em função:
 
 * **moderador**
 
@@ -308,7 +308,7 @@ Quaisquer alterações ou adições feitas às regras ou sub-regras de pontuaç�
 
 ## Regras de marcação {#badging-rules}
 
-Regras de marcação vinculam regras de pontuação a crachás especificando:
+As regras de marcação vinculam as regras de pontuação aos símbolos especificando:
 
 * Regra de pontuação.
 * A pontuação necessária para receber um crachá específico.
