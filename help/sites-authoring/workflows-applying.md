@@ -11,26 +11,29 @@ topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 611743cc4144f99968845093b3903fe7df8bf9d9
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 84%
 
 ---
 
 
 # Aplicação de fluxos de trabalho a páginas{#applying-workflows-to-pages}
 
-Ao criar, você pode chamar fluxos de trabalho para executar ações em suas páginas; também é possível aplicar mais de um fluxo de trabalho.
+Ao criar, você pode chamar workflows para executar ações em suas páginas; também é possível aplicar mais de um fluxo de trabalho.
 
 Ao aplicar o fluxo de trabalho, você especifica as seguintes informações:
 
-* O fluxo de trabalho que será aplicado.
+* O fluxo de trabalho a ser aplicado.
 É possível aplicar qualquer fluxo de trabalho (ao qual você tenha acesso, conforme atribuído pelo administrador do AEM).
 * Opcionalmente, um título que ajude a identificar a instância de fluxo de trabalho na Caixa de entrada de um usuário..
 * A carga útil do fluxo de trabalho. Pode ser uma ou mais páginas.
 
 Fluxos de trabalho podem ser iniciados a partir de:
 
-* [o console **Sites**.](#starting-a-workflow-from-the-sites-console)
-* [ao editar uma página, em **Informações da página **](#starting-a-workflow-from-the-page-editor).
+* [o console Sites.](#starting-a-workflow-from-the-sites-console)
+* [ao editar uma página, em Informações da página](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -38,6 +41,7 @@ Fluxos de trabalho podem ser iniciados a partir de:
 >
 >* [Como aplicar fluxos de trabalho a ativos do DAM](/help/assets/assets-workflow.md).
 >* [Trabalhar com fluxos de trabalho de projeto](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -50,8 +54,8 @@ Fluxos de trabalho podem ser iniciados a partir de:
 
 Você pode iniciar um fluxo de trabalho com:
 
-* [a opção **Criar** da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
-* [o painel **Linha do tempo** do console Sites](#starting-a-workflow-from-the-timeline).
+* [a opção Criar da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
+* [o painel Linha do tempo do console Sites](#starting-a-workflow-from-the-timeline).
 
 Em ambos os casos, é necessário:
 
@@ -86,8 +90,8 @@ O assistente **Criar fluxo de trabalho** ajudará você a selecionar o fluxo de 
 
 Depois de abrir o assistente **Criar fluxo de trabalho** em um destes locais:
 
-* [a opção **Criar** da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
-* [o painel **Linha do tempo** do console Sites](#starting-a-workflow-from-the-timeline).
+* [a opção Criar da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
+* [o painel Linha do tempo do console Sites](#starting-a-workflow-from-the-timeline).
 
 Você pode especificar os detalhes:
 
@@ -97,6 +101,7 @@ Você pode especificar os detalhes:
    * **Título do fluxo de trabalho**
 
       * Você pode especificar um título para essa instância, para que ele possa ser identificado em um estágio posterior.
+
    Dependendo do modelo de fluxo de trabalho, as seguintes opções também estão disponíveis. Isso permite que o pacote criado como carga seja mantido após a conclusão do fluxo de trabalho.
 
    * **Manter o pacote do fluxo de trabalho**
@@ -105,7 +110,7 @@ Você pode especificar os detalhes:
       * Você pode especificar um título para o pacote, para ajudar na identificação.
    >[!NOTE]
    >
-   >A opção **Manter o pacote do fluxo de trabalho** está disponível quando o fluxo de trabalho foi configurado para [Suporte a vários recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) e vários recursos foram selecionados.
+   >A opção **Manter pacote de fluxo de trabalho** estará disponível quando o fluxo de trabalho for configurado para Suporte a vários recursos e vários recursos foram selecionados.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
 
    Quando terminar, use **Próximo** para prosseguir.
 
@@ -123,14 +128,16 @@ Uma caixa de diálogo será aberta, permitindo que você refine a seleção de a
          * Incluir somente filhos imediatos.
          * Incluir somente as páginas modificadas.
          * Incluir somente páginas já publicadas.
+
          Qualquer filho especificado é adicionado à lista de recursos aos quais o fluxo de trabalho será aplicado.
 
       * **Remover seleção** para remover esse recurso do fluxo de trabalho.
+
    ![wf-53](assets/wf-53.png)
 
    >[!NOTE]
    >
-   >Se você adicionar outros recursos, poderá usar **Voltar** para ajustar a configuração para **Manter o pacote do fluxo de trabalho** na etapa **Propriedades**.
+   >Se você adicionar recursos extras, poderá usar **Voltar** para ajustar a configuração **Manter fluxo de trabalho do pacote** na etapa **Propriedades**.
 
 1. Use **Create** to close the wizard and create the workflow instance. Uma notificação é exibida no console Sites.
 
