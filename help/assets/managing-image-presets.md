@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '3845'
+source-wordcount: '3843'
 ht-degree: 10%
 
 ---
@@ -142,7 +142,7 @@ O componente de `Rasterize PDF/AI Image Preview Rendition` processo tem um máxi
 
 ### Formato de arquivo do InDesign (INDD) {#indesign-indd-file-format}
 
-Se você pretende oferecer suporte à ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, reveja as seguintes informações antes de criar predefinições de imagem.
+Se você pretende suportar a ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, é recomendável revisar as seguintes informações antes de criar predefinições de imagem.
 
 Para arquivos do InDesign, os subativos são extraídos somente se o servidor do Adobe InDesign estiver integrado ao AEM. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no AEM antes que os arquivos do InDesign sejam processados para que os links sejam criados entre os arquivos do InDesign e os ativos referenciados.
 
@@ -245,7 +245,7 @@ Criar uma predefinição de imagem do Dynamic Media permite aplicar essas config
 Se você pretende oferecer suporte à inclusão de arquivos AI, PDF e EPS para que possa gerar a representação dinâmica desses formatos de arquivo, é recomendável revisar as seguintes informações antes de criar predefinições de imagem.
 Consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)de arquivo PDF.
 
-Se você pretende oferecer suporte à ingestão de arquivos INDD para que possa gerar a representação dinâmica desse formato de arquivo, reveja as seguintes informações antes de criar predefinições de imagem.
+Se você pretende oferecer suporte à ingestão de arquivos INDD para que possa gerar a renderização dinâmica desse formato de arquivo, é recomendável revisar as seguintes informações antes de criar predefinições de imagem.
 Consulte Formato [de arquivo do](#indesign-indd-file-format)InDesign (INDD).
 
 >[!NOTE]
@@ -291,7 +291,7 @@ Deixar em branco informa ao AEM que essa predefinição de imagem é responsiva.
 
 Ao criar ou editar predefinições de imagens, você tem as opções descritas nesta seção. Além disso, a Adobe recomenda estas opções de &quot;prática recomendada&quot; para o start:
 
-* **[!UICONTROL Formatar** (guia **[!UICONTROL Básico]**) - Selecione **[!UICONTROL JPEG]** ou outro formato que atenda aos requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
+* **[!UICONTROL Formatar]** (guia **[!UICONTROL Básico]**) - Selecione **[!UICONTROL JPEG]** ou outro formato que atenda aos requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
 
 * **[!UICONTROL Ativar nitidez simples]** - Não selecione **[!UICONTROL Ativar nitidez simples]** (este filtro de nitidez oferece menos controle do que as configurações Tirar nitidez da máscara).
 
@@ -365,7 +365,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     <ul>
      <li>Selecione <strong>Perceptual</strong> para compactar a gama total de um espaço de cor para outro quando uma ou mais cores na imagem original estiverem fora do gamut do espaço de cor de destino.</li>
      <li>Selecione Colorimétrico <strong>relativo</strong> quando uma cor no espaço de cores atual estiver fora do gamut no espaço de cores do público alvo e você quiser mapeá-la para a cor mais próxima possível dentro do gama do espaço de cores do público alvo sem afetar outras cores. </li>
-     <li>Selecione <strong>Saturação</strong> para reproduzir a saturação de cor da imagem original ao converter no espaço de cor do público alvo. </li>
+     <li>Selecione <strong>Saturação</strong> para reproduzir a saturação de cor da imagem original ao converter para o espaço de cor do público alvo. </li>
      <li>Selecione Colorimétrico <strong>absoluto</strong> para corresponder as cores exatamente sem nenhum ajuste para ponto branco ou preto que alteraria o brilho da imagem.</li>
     </ul> </td>
   </tr>
@@ -445,7 +445,7 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html) - Aplica um filtro de desfoque à imagem.
+* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html) - Applies a blur filter to the image.
 
    ```xml
    &op_blur=7
@@ -453,7 +453,7 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
 
    ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
-* Comandos combinados - op_blur e op-invert
+* Combined commands - op_blur and op-invert
 
    ```xml
    &op_invert=1&op_blur=7
@@ -461,7 +461,7 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - Diminui ou aumenta o brilho.
+* [op_brightness](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - Decreases or increases the brightness.
 
    ```xml
    &op_brightness=58
@@ -469,7 +469,7 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
+* [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html) - Adjusts image opacity. Lets you decrease the foreground opacity.
 
    ```xml
    opac=29
@@ -477,32 +477,32 @@ Estes são alguns exemplos básicos do que você pode fazer com modificadores de
 
    ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-## Edição de predefinições de imagens {#modifying-image-presets}
+## Editing Image Presets {#modifying-image-presets}
 
 1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets.]**
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. Selecione uma predefinição e clique em **[!UICONTROL Editar.]** A janela **[!UICONTROL Editar predefinição]** de imagem é aberta.
-1. Faça alterações e clique em **[!UICONTROL Salvar]** para salvar suas alterações ou em **[!UICONTROL Cancelar]** para cancelar suas alterações.
+1. Selecione uma predefinição e clique em **[!UICONTROL Editar.]** The **[!UICONTROL Edit Image Preset]** window opens.
+1. Make changes and click **[!UICONTROL Save]** to save your changes or **[!UICONTROL Cancel]** to cancel your changes.
 
 ## Publishing Dynamic Media image presets {#publishing-image-presets}
 
-Se você estiver executando o Dynamic Media - modo Híbrido, será necessário publicar manualmente as predefinições de imagens.
+If you are running Dynamic Media - Hybrid mode, you must manually publish image presets.
 
-(Se você estiver executando o Dynamic Media - modo Scene7, as predefinições de imagens serão publicadas automaticamente para você; não é necessário concluir essas etapas.)
+(If you are running Dynamic Media - Scene7 mode, image presets are automatically published for you; you do not need to complete these steps.)
 
-**Para publicar predefinições de imagens no Dynamic Media - Modo** híbrido:
+**To publish image presets in Dynamic Media - Hybrid mode**:
 
-1. No AEM, toque ou clique no logotipo do AEM para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos > Predefinições de imagem.]**
-1. Selecione a predefinição de imagem ou várias predefinições de imagem na lista de predefinições de imagem e clique ou toque em **[!UICONTROL Publicar.]**
+1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets.]**
+1. Select the image preset or multiple image presets from the list of image presets and click or tap **[!UICONTROL Publish.]**
 1. Depois que a predefinição de imagem é publicada, o status muda de não publicado para publicado.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Deleting Dynamic Media image presets {#deleting-image-presets}
 
-1. No AEM, toque ou clique no logotipo do AEM para acessar o console de navegação global.
-1. Toque no ícone **[!UICONTROL Ferramentas]** e navegue até **[!UICONTROL Ativos > Predefinições de imagem.]**
-1. Selecione uma predefinição e clique em **[!UICONTROL Excluir**. A Dynamic Media confirma que você deseja excluí-lo. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
+1. In AEM, tap or click the AEM logo to access the global navigation console.
+1. Tap the **[!UICONTROL Tools]** icon, then navigate to **[!UICONTROL Assets > Image Presets.]**
+1. Select a preset, and then click **[!UICONTROL Delete]**. A Dynamic Media confirma que você deseja excluí-lo. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.
 
