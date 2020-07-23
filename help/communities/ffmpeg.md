@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: 299c4cb377c65e49b94383704a906fdd0bb38d06
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Para modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM
 * Clique com o Duplo na etapa de transcodificação **[!UICONTROL do]** FFmpeg para acessar a caixa de diálogo Propriedades da etapa.
 * Na guia **[!UICONTROL Processo]** :
 
-   * **[!UICONTROL Argumentos]**: Apagar todas as entradas para desativar a transcodificação Valores padrão: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL Argumentos]**: Apagar todas as entradas para desativar a transcodificação Valores padrão: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
