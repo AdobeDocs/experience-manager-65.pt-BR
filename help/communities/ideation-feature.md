@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 10%
 
 ---
 
@@ -44,13 +47,15 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando as bibliotecas [do lado do cliente](/help/communities/ideation.md#essentials-for-client-side) necessárias forem incluídas, o `Ideation` componente será exibido desta forma:
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![ideação](assets/ideation.png)
 
 ### Configuração de uma ideia {#configuring-an-ideation}
 
 Selecione o componente inserido a ser acessado e selecione o `Ideation` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-72](assets/chlimage_1-72.png) ![ideation-settings](assets/ideation-settings.png)
+![configure-new](assets/configure-new.png)
+
+![ideation-settings](assets/ideation-settings.png)
 
 #### Guia Configurações {#settings-tab}
 
@@ -212,23 +217,23 @@ Como acontece com todos os recursos das Comunidades, se não estiverem conectado
 
 Depois de conectado, um membro pode criar uma nova ideia.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![create-new-idea](assets/create-new-idea.png)
 
 Antes de enviar a ideia, é possível que o membro salve um rascunho.
 
 Ao selecionar o `Save as Draft` botão, um rascunho é salvo.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![ideia salvadora](assets/save-idea.png)
 
 Ao exibir rascunhos salvos na `My Drafts` guia, selecione `Read More` para entrar novamente no modo de edição:
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![ideia de edição](assets/edit-idea.png)
 
 #### Fornecer feedback {#providing-feedback}
 
 Uma vez publicada a ideia, outros membros podem fazer logon, abrir a ideia ( `Read More`) e gostar da ideia, adicionando ao número de votos e fazendo comentários.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![feedback](assets/feedback-idea.png)
 
 ### Informações adicionais {#additional-information}
 
