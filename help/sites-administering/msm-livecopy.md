@@ -2,9 +2,9 @@
 title: Criando e Sincronizando Live Copies
 description: Saiba como criar e sincronizar Live Copies.
 translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
 workflow-type: tm+mt
-source-wordcount: '4116'
+source-wordcount: '4115'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ Você pode criar uma cópia ao vivo de qualquer página ou ramificação. Ao cri
 
 Você pode criar uma cópia ao vivo de qualquer página:
 
-* As páginas são referenciadas por uma configuração [](#creating-a-blueprint-configuration)blueprint,
+* Páginas referenciadas por uma configuração [](#creating-a-blueprint-configuration)blueprint.
 * E páginas que não têm conexão com uma configuração.
 * O AEM também oferece suporte à criação de uma live copy dentro das páginas de outra live copy.
 
@@ -233,7 +233,7 @@ Implantar uma página de blueprint para enviar as alterações de conteúdo para
 
    ![Projeto de implantação](assets/rollout-blueprint.png)
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no painel [**Status **de Tarefas](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)Assíncronas na Navegação****Global ->** Ferramentas **->** Operações **->** Tarefas **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
 1. Depois de confirmar esses detalhes, selecione **Rollout** para executar a ação.
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no painel [**Status **de Tarefas](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)Assíncronas na Navegação****Global ->** Ferramentas **->** Operações **->** Tarefas **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ A ação [Implantação também está disponível na Visão geral](/help/sites-a
 
    ![Projeto de implantação](assets/rollout-blueprint.png)
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no painel [**Status **de Tarefas](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)Assíncronas na Navegação****Global ->** Ferramentas **->** Operações **->** Tarefas **
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status **dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)at** Global Navigation **->** Tools **->** Operations **->** Jobs **
 
 >[!NOTE]
 >
