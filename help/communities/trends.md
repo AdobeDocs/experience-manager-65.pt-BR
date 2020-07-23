@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +35,7 @@ O documento descreve:
 
 Os dados para o `Community Activity List` estão disponíveis somente quando o Adobe Analytics está licenciado e configurado para o site da comunidade.
 
-Consulte Configuração [do Analytics para recursos](/help/communities/analytics.md)de comunidades.
+Consulte Configuração [Analytics para recursos](/help/communities/analytics.md)de comunidades.
 
 ### Adicionar uma Lista de Atividade da comunidade a uma página {#adding-a-community-activity-list-to-a-page}
 
@@ -46,9 +49,9 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando colocado pela primeira vez em uma página de um site da comunidade, é assim que o componente aparece:
 
-![chlimage_1-54](assets/chlimage_1-54.png)
+![atividade comunitária](assets/community-activity.png)
 
-### Configuração da Lista da Atividade da comunidade {#configuring-community-activity-list}
+### Configuração da Lista da Atividade da comunidade  {#configuring-community-activity-list}
 
 Selecione o componente inserido a ser acessado e selecione o `Community Activity List` `Configure` ícone que abre a caixa de diálogo de edição.
 
@@ -66,6 +69,7 @@ Na guia **Comentários** , especifique se e como os comentários dos arquivos ca
 
    * `Members`
    * `Content`
+
    O padrão é `Members`.
 
 * **Título de exibição**
@@ -86,6 +90,7 @@ O padrão é 10.
    * `Posts`(criação de UGC)
    * `Follows`
    * `Likes`
+
    O padrão é Visualização.
 
 * **Período de tempo**
@@ -98,6 +103,7 @@ O padrão é 10.
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    O padrão é `Total`.
 
 * **Caminho do contexto**
