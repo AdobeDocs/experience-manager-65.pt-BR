@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
+source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Ao chegar ao site publicado pela primeira vez, o visitante do site normalmente n
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![enable-login](assets/enablement-login.png)
 
 ## Visitante Anônimo do Site {#anonymous-site-visitor}
 
@@ -72,7 +72,7 @@ Para proteger o conteúdo do site da sua comunidade do acesso de usuários anôn
 1. Vá para a guia **[!UICONTROL Avançado]** .
 1. Enable **[!UICONTROL Authentication Requirement]**.
 
-   ![site-authentication-1](assets/site-authentication-1.png)
+   ![autenticação de site](assets/site-authentication.png)
 
 1. Adicione o caminho da página de logon. Por exemplo, `/content/......./GetStarted`.
 1. Publique a página.
@@ -124,7 +124,7 @@ As interações com o recurso de ativação serão anotadas na seção Relatóri
 
 A página Catálogo de esqui é o catálogo de recursos de ativação marcados com tags da `Tutorial` namespace. Os dois recursos de Lição *de* esqui são marcados com a `Skiing` tag , de modo que se nenhuma tag diferente `All` ou `Tutorial: Sports / Skiing` estiver selecionada, nada será exibido.
 
-When a member has not been assigned enablement resources, either directly or through a learning path, it is possible to interact with enablement resources located within a catalog and provide feedback through comments and ratings.
+Quando os recursos de ativação não foram atribuídos a um membro, diretamente ou por meio de um caminho de aprendizado, é possível interagir com os recursos de ativação localizados em um catálogo e fornecer feedback por meio de comentários e classificações.
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -167,28 +167,28 @@ O home page é identificado pelo primeiro item de menu, Atribuições. Quinn é 
 
 O que há é atividade pelos dois alunos, `Riley Taylor` e `Sidney Croft`. Ao selecionar o `Administration` link para acessar o Console de moderação, o Quinn é capaz de usar o console [de moderação em](moderation.md) massa para moderar suas publicações.
 
-Selecting the side-panel icon toggles open the filters used to search community content.
+Selecionar o ícone do painel lateral alterna para abrir os filtros usados para pesquisar o conteúdo da comunidade.
 
-Hovering over a comment card displays moderation actions.
+Passar o mouse sobre um cartão de comentários exibe ações de moderação.
 
 ![chlimage_1-442](assets/chlimage_1-442.png)
 
 ## Relatórios sobre o autor {#reports-on-author}
 
-There are two ways to access reporting on learners and enablement resources.
+Há duas maneiras de acessar o relatórios nos alunos e os recursos de ativação.
 
 No autor, navegue até **Communities (Comunidades),[Resources console](resources.md)**(Recursos), onde os recursos de ativação são gerenciados e, após selecionar um site da comunidade, é possível gerar relatórios para
 
-* All enablement resources and learning paths
-* One specific enablement resource or learning path
+* Todos os recursos de ativação e caminhos de aprendizado
+* Um recurso de ativação ou caminho de aprendizado específico
 
-Navigate to the **Communities,[Reports console](reports.md)**, and generate reports according to:
+Navegue até **Comunidades, console[](reports.md)**Relatórios e gere relatórios de acordo com:
 
 * Atribuições para ativar recursos e caminhos de aprendizado
 * Postagens em um site da comunidade durante um período específico
-* Views (site visits) of a community site over a specific period
+* Visualizações (visitas ao site) de um site da comunidade durante um período específico
 
-* Posts and views may be to all content, or to specific content:
+* As postagens e visualizações podem ser para todo o conteúdo ou para conteúdo específico:
 
    * Fórum
    * Tópico do fórum
@@ -199,7 +199,7 @@ Navigate to the **Communities,[Reports console](reports.md)**, and generate repo
    * Calendário
    * Evento do calendário
 
-### Resources Console {#resources-console}
+### Console de recursos {#resources-console}
 
 Com uma certa atividade e interação com os Recursos na publicação, a exibição dos relatórios do autor vale a pena.
 
@@ -243,11 +243,11 @@ Para relatórios em atribuições:
 
 * Selecionar uma **[!UICONTROL atribuição]** (selecione `Ski Lessons`)
 
-* Select **[!UICONTROL Generate]**
+* Selecionar **[!UICONTROL Gerar]**
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
-For reports on views:
+Para relatórios sobre visualizações:
 
 * Em autor, faça logon com privilégios administrativos.
 * Navegue até **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]** > Relatório **[!UICONTROL de]** Visualizações.
