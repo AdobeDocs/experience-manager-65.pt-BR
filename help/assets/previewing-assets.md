@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 4%
+source-wordcount: '1344'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
 
 **Para pré-visualização de ativos usando a interface de software**
 
-1. No **[!UICONTROL Adobe Experience Manager**, na página **[!UICONTROL Navegação**, toque em **[!UICONTROL Ativos]** e em **[!UICONTROL Arquivos]** para acessar os ativos.
+1. From **[!UICONTROL Adobe Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (Opcional) Use a coluna **[!UICONTROL Tipo]** para classificar os ativos pelo tipo que deseja pré-visualização.
 1. Na coluna **[!UICONTROL Título]** , clique no nome do título (não na imagem em miniatura) do ativo que deseja pré-visualização.
