@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
+source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7698'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ Existe um risco aumentado de que um usuário não autorizado possa obter acesso 
 
 **Contas de serviço (chave de acesso JBoss somente no Windows)**
 
-O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem. A conta de usuário LocalSystem integrada tem um alto nível de acessibilidade; faz parte do grupo Administradores. Se uma identidade de processo de trabalho for executada como a conta de usuário LocalSystem, esse processo de trabalho terá total acesso ao sistema inteiro.
+O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem. A conta de usuário LocalSystem integrada tem um alto nível de acessibilidade; faz parte do grupo Administradores. Se uma identidade de processo de trabalho for executada como a conta de usuário LocalSystem, esse processo de trabalho terá acesso total ao sistema inteiro.
 
 Para executar o servidor de aplicativos no qual os AEM Forms no JEE são implantados, usando uma conta específica não administrativa, siga estas instruções:
 
@@ -393,7 +393,7 @@ No WebSphere, você pode configurar a segurança integrada somente quando usa um
 1. No painel direito, em Propriedades adicionais, clique em Propriedades **** personalizadas e, em seguida, clique em **Novo**.
 1. Na caixa **Nome** , digite `integratedSecurity` e, na caixa **Valor** , digite `true`.
 1. No computador em que o WebSphere está instalado, adicione o arquivo sqljdbc_auth.dll ao caminho dos sistemas Windows (C:\Windows). O arquivo sqljdbc_auth.dll está no mesmo local que a instalação do driver JDBC 1.2 do Microsoft SQL (o padrão é *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. Selecione **Start** > Painel **de controle >** Serviços **, clique com o botão direito do mouse no serviço Windows para WebSphere (IBM WebSphere Application Server &lt;version> - &lt;node>) e selecione** Propriedades ****.
+1. Selecione **Start** > **Painel de controle do Campaign** > **Serviços**, clique com o botão direito do mouse no serviço Windows para WebSphere (IBM WebSphere Application Server &lt;version> - &lt;node>) e selecione **Propriedades**.
 1. Na caixa de diálogo Propriedades, clique na guia **Logon** .
 1. Selecione **Esta conta** e forneça as informações necessárias para definir a conta de logon que deseja usar.
 1. Defina Segurança no SQL Server do modo **Misto** para Autenticação **do Windows somente**.
@@ -955,6 +955,8 @@ Para obter informações sobre portas WebSphere exigidas pelo AEM Forms no JEE, 
 Referindo-se à arquitetura física descrita nos [AEM Forms de seção sobre a arquitetura](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)física JEE, configure o SSL para todas as conexões que você planeja usar. Especificamente, todas as conexões SOAP devem ser conduzidas por SSL para evitar a exposição das credenciais do usuário em uma rede.
 
 Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuração do SSL&quot; na ajuda [](https://www.adobe.com/go/learn_aemforms_admin_64)administrativa.
+
+Para obter instruções sobre como importar certificados para JVM (Java Virtual Machine) configurado para um servidor AEM Forms, consulte a seção Autenticação mútua na Ajuda [do](http://www.adobe.com/go/learn_aemforms_workbench_65)AEM Forms Workbench.
 
 ### Configuração do redirecionamento SSL {#configuring-ssl-redirect}
 
