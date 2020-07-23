@@ -2,9 +2,9 @@
 title: O Exportador de Página
 description: Saiba como usar o Exportador de página do AEM.
 translation-type: tm+mt
-source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
+source-git-commit: 6aee1506b54a932bae8f2521fce4488de7d2a52a
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Para criar um modelo completamente novo:
 
 Depois que o modelo tiver sido configurado, é necessário disponibilizá-lo:
 
-1. No CRXDE, navegue até a página desejada na `/content` ramificação.
+1. No CRXDE, navegue até a página desejada na `/content` ramificação. Pode ser uma página individual ou a página raiz de uma subárvore.
 
 1. No `jcr:content` nó da página, crie a propriedade:
    * `Name`: `cq:exportTemplate`
