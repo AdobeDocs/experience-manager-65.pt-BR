@@ -10,9 +10,9 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 371ecbdaad97b7111353f40d1ddfb686e99d46c5
 workflow-type: tm+mt
-source-wordcount: '2864'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ A configuração SSL é necessária para se comunicar com os servidores Adobe Si
 
 ## Configurar a configuração do Externalizador de links do Day CQ {#externalizer}
 
-No AEM, o **Externalizer** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, /path/to/my/page) em um URL externo e absoluto (por exemplo, https://www.mycompany.com/path/to/my/page) ao prefixar o caminho com um DNS pré-configurado. Consulte [Externalização de URLs](/help/sites-developing/externalizer.md).
+No AEM, o **Externalizador** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, /path/to/my/page) em um URL externo e absoluto (por exemplo, https://www.mycompany.com/path/to/my/page) ao prefixar o caminho com um DNS pré-configurado. Consulte [Externalização de URLs](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -216,8 +216,8 @@ Para sites de referência de AEM Forms, no Serviço de configurações do AEM DS
 
 Instale os pacotes de sites de referência usando a Distribuição [de](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)software.
 
-* [Pacote do site de referência FSI do AEM Forms](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-FSI-REF-SITE)
-* [Pacote do site de referência do AEM Forms Gov](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-GOV-REF-SITE)
+* [Pacote do site de referência FSI do AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-FSI-REF-SITE)
+* [Pacote do site de referência do AEM Forms Gov](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-GOV-REF-SITE)
 
 Para saber mais sobre como usar pacotes, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
