@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 3%
@@ -256,7 +256,7 @@ Neste exemplo, o grupo `Community Ski Class` é adicionado como membro do grupo 
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![enable-login](assets/enablement-login.png)
 
 ### Erro ao configurar para autenticação {#configure-for-authentication-error}
 
