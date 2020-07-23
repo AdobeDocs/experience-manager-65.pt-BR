@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 3%
 
 ---
 
@@ -33,9 +36,9 @@ No momento em que uma ação é executada para criar um novo grupo da comunidade
 
 ## Console de modelos de grupo {#group-templates-console}
 
-Para acessar o console de modelos de grupos no ambiente de autor de AEM:
+Para acessar o console de modelos de grupos no ambiente AEM Author:
 
-* Selecionar **ferramentas| Comunidades| Modelos de grupo,** da navegação global.
+* Selecionar **ferramentas | Comunidades | Modelos de grupo,** da navegação global.
 
 Este console exibe os modelos a partir dos quais um site [da](/help/communities/sites-console.md) comunidade pode ser criado e permite a criação de novos modelos de grupo.
 
@@ -49,7 +52,7 @@ Isso exibirá o painel do Editor de sites, que contém três subpainéis:
 
 ### Informações básicas {#basic-info}
 
-![chlimage_1-137](assets/chlimage_1-137.png)
+![site-basic-info](assets/site-basic-info.png)
 
 No painel Informações básicas, um nome, uma descrição e se o modelo está ativado ou desativado são configurados:
 
@@ -65,9 +68,9 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
    Um switch de alternância que controla se o modelo é referenciável.
 
-#### Miniatura     {#thumbnail}
+#### Miniatura  {#thumbnail}
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![miniatura do site](assets/site-thumbnail.png)
 
 (Opcional) Selecione o ícone Carregar imagem para exibir uma miniatura junto com o Nome e a Descrição para os criadores dos sites da comunidade.
 
