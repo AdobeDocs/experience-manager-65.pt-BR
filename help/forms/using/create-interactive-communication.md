@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+workflow-type: tm+mt
+source-wordcount: '6107'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ## Visão geral {#overview}
 
-As Comunicações interativas centralizam e gerenciam a criação, a montagem e o delivery personalizado e as correspondências interativas. Utilize a impressão como canal mestre para a Web, você pode minimizar a duplicação de esforços ao criar a saída da Web da Interative Communication.
+As Comunicações interativas centralizam e gerenciam a criação, a montagem e o delivery personalizado e as correspondências interativas. Utilize a impressão como canal principal para a Web, você pode minimizar a duplicação de esforços ao criar a saída da Web da Interative Communication.
 
 ### Pré-requisitos {#prerequisites}
 
@@ -41,7 +44,7 @@ Estes são os pré-requisitos para a criação de uma comunicação interativa:
    * **[!UICONTROL Título]**: Insira o título da Comunicação interativa.
    * **[!UICONTROL Nome]**: O nome da Comunicação interativa é derivado do título inserido. Edite-o, se necessário.
    * **[!UICONTROL Descrição]**: Insira uma descrição sobre a Comunicação interativa.
-   * **[!UICONTROL Modelo]** de dados de formulário: Procure e selecione o modelo de dados do formulário. Para obter mais informações sobre o Modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+   * **[!UICONTROL Modelo]** de dados de formulário: Procure e selecione o modelo de dados do formulário. Para obter mais informações sobre o Modelo de dados de formulário, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
 
    * **[!UICONTROL Serviço]** de preenchimento prévio: Selecione o serviço de pré-preenchimento para recuperar os dados e pré-preencher a Comunicação interativa.
    * **[!UICONTROL Tipo]** de pós-processo: Você pode selecionar o fluxo de trabalho do AEM ou do Forms a ser acionado quando a Comunicação interativa for enviada. Selecione o tipo de fluxo de trabalho a ser acionado.
@@ -59,13 +62,14 @@ Estes são os pré-requisitos para a criação de uma comunicação interativa:
    * **[!UICONTROL Modelo]** de impressão: Procure e selecione um XDP como modelo de impressão.
    * **[!UICONTROL Web]**: Selecione essa opção para gerar o canal da Web ou a saída responsiva do Interative Communication.
    * **[!UICONTROL Modelo]** Web de Comunicação Interativa: Procure e selecione o modelo da Web.
-   * **[!UICONTROL Tema]** e **[!UICONTROL selecione o tema]**: Navegue e selecione o tema para criar o estilo do canal da Web da Comunicação interativa. Para obter mais informações, consulte [Temas no AEM Forms](/help/forms/using/themes.md).
+   * **[!UICONTROL Tema]** e **[!UICONTROL selecione o tema]**: Navegue e selecione o tema para criar o estilo do canal da Web da Comunicação interativa. Para obter mais informações, consulte [Temas em AEM Forms](/help/forms/using/themes.md).
 
-   * **[!UICONTROL Use Imprimir como Mestre para Canal]** da Web: Selecione essa opção para criar o canal da Web em sincronia com o canal de impressão. O uso do canal de impressão como mestre para o canal da Web garante que o conteúdo e o vínculo de dados do canal da Web sejam derivados do canal de impressão e as alterações feitas no canal de impressão sejam refletidas no canal da Web quando você toca em Sincronizar. No entanto, os autores podem interromper a herança de componentes específicos no canal da Web, conforme necessário. Para obter mais informações, consulte [Sincronizar o canal da Web com o canal](../../forms/using/create-interactive-communication.md#synchronize)de impressão.
-Se você selecionar a opção **[!UICONTROL Usar impressão como mestre para Canal]** da Web, poderá selecionar qualquer um dos seguintes modos para gerar canais da Web:
+   * **[!UICONTROL Use Imprimir como Principal para o Canal]** da Web: Selecione essa opção para criar o canal da Web em sincronia com o canal de impressão. Usar o canal de impressão como principal para o canal da Web garante que o conteúdo e o vínculo de dados do canal da Web sejam derivados do canal de impressão e as alterações feitas no canal de impressão sejam refletidas no canal da Web quando você toca em Sincronizar. No entanto, os autores podem interromper a herança de componentes específicos no canal da Web, conforme necessário. Para obter mais informações, consulte [Sincronizar o canal da Web com o canal](../../forms/using/create-interactive-communication.md#synchronize)de impressão.
+Se você selecionar a opção **[!UICONTROL Usar Imprimir como Principal para o Canal]** da Web, poderá selecionar qualquer um dos seguintes modos para gerar o canal da Web:
 
       * **[!UICONTROL Layout]** automático: Selecione esse modo para gerar automaticamente espaços reservados, conteúdo e vínculo de dados para o canal da Web a partir do canal de impressão.
-      * **[!UICONTROL organiza** manualmente: Selecione esse modo para selecionar e adicionar manualmente os elementos Imprimir canal ao canal da Web usando o conteúdo mestre disponível na guia Fontes **[!UICONTROL de]** dados. Para obter mais informações, consulte [Selecionar elementos do canal de impressão para criar conteúdo](#selectprintchannelelements)do canal da Web.
+      * **[!UICONTROL Organizar]** manualmente: Selecione esse modo para selecionar e adicionar manualmente os elementos Imprimir canal ao canal da Web usando o conteúdo principal disponível na guia Fontes **** de Dados. Para obter mais informações, consulte [Selecionar elementos do canal de impressão para criar conteúdo](#selectprintchannelelements)do canal da Web.
+
    Para obter mais informações sobre o canal impresso e o canal da Web, consulte canal [Imprimir e canal](/help/forms/using/web-channel-print-channel.md)da Web.
 
 1. Toque em **[!UICONTROL Criar]**. A comunicação interativa é criada e uma caixa de alerta é exibida. Toque em **[!UICONTROL Editar]** para criar o conteúdo da Comunicação interativa, conforme explicado em [Adicionar conteúdo usando a interface](#step2)do usuário de criação de Comunicações interativas. Como alternativa, você pode tocar em **[!UICONTROL Concluído]** e optar por editar a Comunicação interativa posteriormente.
@@ -150,6 +154,7 @@ Toque no fragmento do documento, toque em ![configure_icon](assets/configure_ico
    * **Objeto** de Modelo de Dados: Selecione uma propriedade de modelo de dados de formulário cujo valor é preenchido no campo.
    * **Valor padrão:** É possível definir um valor padrão para a variável usando esse campo. O valor é exibido quando você pré-visualização o Interative Communication ou na interface do usuário do agente.
    * **Padrão de exibição:** Também é possível definir um formato de exibição para uma variável. Selecione qualquer uma das opções predefinidas na lista suspensa **Tipo** para aplicar um formato de exibição a uma variável. Selecione **Personalizado** para definir um padrão de exibição que não esteja disponível na lista. Para obter mais informações, consulte Padrões [de exibição de](../../forms/using/create-interactive-communication.md#datadisplaypatterns)dados.
+
    Navegue até [Variáveis e Objetos](../../forms/using/create-interactive-communication.md#hiddenvariables) de Modelo de Dados para configurar o vínculo de variáveis ocultas no fragmento do documento.
 
    Também é possível arrastar e soltar elementos de fonte de dados ou fragmentos de documento de texto para configurar o vínculo de variáveis.  Para criar um vínculo com qualquer um dos elementos da fonte de dados, selecione a guia Fontes **** de dados e arraste e solte o elemento no nome da variável. O elemento e a variável da fonte de dados devem ser do mesmo tipo para configurar o vínculo com êxito. Se você arrastar e soltar um elemento de fonte de dados em uma variável já vinculada, o novo elemento substituirá o anterior para criar um novo vínculo com a variável. Da mesma forma, selecione a guia **Ativos** e arraste e solte o fragmento do documento de texto para o nome da variável para configurar o vínculo entre eles. O fragmento do documento de texto não deve conter variáveis.
@@ -178,7 +183,7 @@ Toque no fragmento do documento, toque em ![configure_icon](assets/configure_ico
 
 1. Mude para o Canal **[!UICONTROL da Web]**. O canal da Web é exibido no editor de Comunicação interativa. Quando você alterna do canal Imprimir para o canal da Web pela primeira vez, a sincronização automática ocorre. Para obter mais informações, consulte [Sincronização do canal da Web do canal](../../forms/using/create-interactive-communication.md#synchronize)de impressão.
 
-   Como estamos usando a opção Imprimir como mestre para a Web neste exemplo, os espaços reservados para canais de impressão, o conteúdo e o vínculo de dados são sincronizados com o canal da Web. No entanto, você pode alterar e personalizar o conteúdo específico no canal da Web. [Cancele a herança](#cancelinheritance) das áreas de público alvo e variáveis que foram geradas usando o canal de impressão para personalizar o conteúdo.
+   Como estamos usando a opção Imprimir como principal para a Web neste exemplo, os espaços reservados para canais de impressão, o conteúdo e o vínculo de dados são sincronizados com o canal da Web. No entanto, você pode alterar e personalizar o conteúdo específico no canal da Web. [Cancele a herança](#cancelinheritance) das áreas de público alvo e variáveis que foram geradas usando o canal de impressão para personalizar o conteúdo.
 
    ![webcanelassets](assets/webchannelassets.png)
 
@@ -218,7 +223,7 @@ Você pode usar a opção **** Pré-visualização para avaliar a aparência da 
 
 Além disso, você pode [Preparar e enviar comunicação interativa usando a interface do usuário](/help/forms/using/prepare-send-interactive-communication.md)do agente.
 
-## Configurar propriedades no Interative Communication {#configure-properties-in-interactive-communication}
+## Configurar propriedades no Interative Communication  {#configure-properties-in-interactive-communication}
 
 ### Anexos e acesso à biblioteca {#attachmentslibrary}
 
@@ -241,6 +246,7 @@ No canal Imprimir, você pode configurar os anexos e o acesso à biblioteca para
 
       * **[!UICONTROL Anexar Este Arquivo Ao Documento Por Padrão]**: É possível alterar essa opção se apenas o anexo não for Obrigatório.
       * **[!UICONTROL Obrigatória:]** O agente não poderá remover o anexo na interface do agente.
+
    ![arquivos anexos](assets/attachfiles.png)
 
 1. Toque em **[!UICONTROL Concluído]**.
@@ -433,6 +439,7 @@ Para ativar a classificação:
 
    * é classificada com base nessa coluna.
    * na coluna são exibidos na ordem crescente.
+
    ![Classificação crescente](assets/sorting_ascending_new-1.png)
 
    Da mesma forma, um cabeçalho de coluna com uma seta para baixo representa que os valores na coluna são exibidos na ordem decrescente.
@@ -460,7 +467,7 @@ Execute as seguintes etapas para adicionar o canal da Web a uma comunicação in
 
 1. Na página **Propriedades** , selecione a guia **Canais** .
 1. Marque a caixa de seleção **Web** e selecione um modelo para o canal da Web.
-1. Selecione **Usar Imprimir como Mestre para Canal** da Web para ativar a sincronização entre o canal da Web e o canal Imprimir.
+1. Selecione **Usar Imprimir como Principal para o Canal** da Web para ativar a sincronização entre o canal da Web e o canal Imprimir.
 1. Tap **Save &amp; Close** to save the changes.
 
    Da mesma forma, você pode tocar na caixa de seleção **Web** na guia **Canais** para excluir o canal da Web da Interative Communication.
@@ -481,6 +488,7 @@ Para adicionar um botão e definir regras sobre ele:
    1. Especifique o URL da Comunicação interativa, formulário adaptável, um ativo ou uma página da Web. Por exemplo, especifique o URL no seguinte formato para navegar até outra Comunicação interativa: https://&lt;nome-do-servidor>:&lt;porta>/editor.html/content/forms/af/&lt;Nome da comunicação interativa>/canais/&lt;nome do canal - imprimir ou Web>.html
    1. Especifique a opção para abrir o ativo na mesma guia, nova guia ou nova janela.
    1. Toque em **Concluído** e, em seguida, toque em **Fechar** para salvar a regra.
+
    Da mesma forma, você pode selecionar outras opções disponíveis na lista suspensa do tipo de ação, como Chamar serviço e Enviar formulário. Para obter mais informações, consulte o editor [de](../../forms/using/rule-editor.md)regras.
 
 1. Pré-visualização a Comunicação interativa e toque no botão para visualização da Comunicação interativa, do formulário adaptável, de um ativo ou de uma página da Web especificada na etapa 4(b).
@@ -505,18 +513,18 @@ Execute as seguintes etapas para adicionar um componente Painel ao canal da Web:
 
 ## Sincronização do canal da Web com o canal de impressão {#synchronize}
 
-Quando você seleciona Imprimir como mestre para Canal da Web ao criar uma comunicação interativa, o canal da Web é criado em sincronia com o canal Imprimir e o conteúdo e o vínculo de dados do canal da Web são derivados do canal de impressão e as alterações feitas no canal de impressão podem ser refletidas no canal da Web quando você toca em Sincronizar.
+Quando você seleciona Imprimir como Principal para o Canal da Web ao criar uma comunicação interativa, o canal da Web é criado em sincronia com o canal Imprimir e o conteúdo e o vínculo de dados do canal da Web são derivados do canal de impressão e as alterações feitas no canal de impressão podem ser refletidas no canal da Web quando você toca em Sincronizar.
 
 No entanto, os autores podem interromper a herança de componentes no canal da Web, conforme necessário.
 
-![Criar Impressão Mestra](assets/create_ic_print_master_new-1.png) de ![Impressão Mestra na Web](assets/create_ic_print_master_web_new-1.png)
+![Criar Impressão Principal](assets/create_ic_print_master_new-1.png) ![Imprimir Web Principal](assets/create_ic_print_master_web_new-1.png)
 
 ### Sincronização automática {#autosync}
 
-Se você selecionar a opção **[!UICONTROL Usar impressão como mestre para Canal]** da Web, poderá selecionar qualquer um dos seguintes modos para gerar canais da Web:
+Se você selecionar a opção **[!UICONTROL Usar Imprimir como Principal para o Canal]** da Web, poderá selecionar qualquer um dos seguintes modos para gerar o canal da Web:
 
 * **[!UICONTROL Layout]** automático: Selecione esse modo para gerar automaticamente espaços reservados, conteúdo e vínculo de dados para o canal da Web a partir do canal de impressão.
-* **[!UICONTROL Organizar]** manualmente: Selecione esse modo para selecionar e adicionar manualmente os elementos Imprimir canal ao canal da Web usando o conteúdo mestre disponível na guia Fontes de dados. Para obter mais informações, consulte [Selecionar elementos do canal de impressão para criar conteúdo](#selectprintchannelelements)do canal da Web.
+* **[!UICONTROL Organizar]** manualmente: Selecione esse modo para selecionar e adicionar manualmente os elementos Imprimir canal ao canal da Web usando o conteúdo principal disponível na guia Fontes de Dados. Para obter mais informações, consulte [Selecionar elementos do canal de impressão para criar conteúdo](#selectprintchannelelements)do canal da Web.
 
 ![Criar opções IC](assets/create_ic_options_updated_new.png)
 
@@ -526,11 +534,11 @@ Se você selecionar a opção **[!UICONTROL Usar impressão como mestre para Can
 
 ### Selecione Imprimir elementos de canal para criar conteúdo de canal da Web {#selectprintchannelelements}
 
-Se você selecionar Imprimir como mestre ao criar a Comunicação interativa e não selecionar a opção de sincronização automática, também poderá arrastar e soltar elementos do canal de impressão na interface de criação do canal da Web.
+Se você selecionar Imprimir como principal ao criar a Comunicação interativa e não selecionar a opção de sincronização automática, também poderá arrastar e soltar os elementos do canal Imprimir na interface de criação do canal da Web.
 
-Navegue até Fontes **de** dados > Conteúdo **** mestre para visualização nos elementos Imprimir canal. Arraste e solte as áreas, campos ou tabelas do público alvo na interface de criação do canal da Web. Um ícone de círculo azul ao lado do nome do elemento indica que o elemento Imprimir canal já foi incluído no canal da Web.
+Navegue até Fontes **de** dados > Conteúdo **** Principal para visualização dos elementos Imprimir canal. Arraste e solte as áreas, campos ou tabelas do público alvo na interface de criação do canal da Web. Um ícone de círculo azul ao lado do nome do elemento indica que o elemento Imprimir canal já foi incluído no canal da Web.
 
-![Conteúdo mestre](assets/master_content.png)
+![conteúdo Principal](assets/master_content.png)
 
 ### Cancelar herança {#cancelinheritance}
 
@@ -554,7 +562,7 @@ Toque em **[!UICONTROL Sim]**.
 
 ### Sincronizar {#synchronize-1}
 
-Se estiver usando Imprimir como Mestre para Canal da Web e fizer alterações no canal Imprimir, você poderá sincronizar o conteúdo para trazer as alterações feitas recentemente ao canal da Web.
+Se estiver usando a opção Imprimir como Principal para o Canal da Web e fizer alterações no canal Imprimir, você poderá sincronizar o conteúdo para trazer as alterações feitas recentemente para o canal da Web.
 
 1. Para sincronizar o canal da Web com o canal Imprimir, alterne para o canal da Web e toque no ícone Mais opções.
 
