@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -44,20 +44,18 @@ No ambiente do autor, para acessar o console Configuração do Armazenamento
 
 * Selecione **[!UICONTROL Enviar]**
 
-![chlimage_1-234](assets/chlimage_1-234.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 ### Publicar a configuração {#publishing-the-configuration}
 
 Embora o JSRP seja a configuração padrão, para garantir que a configuração idêntica seja definida no ambiente publish:
 
-* Autor:
+* Da navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]**
+* Selecione **[!UICONTROL Ativar árvore]** > Caminho **[!UICONTROL do]** Start:
 
-   * Da navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]**
-   * Selecione **[!UICONTROL Ativar árvore]** > Caminho **[!UICONTROL do]** Start:
+   * Navegue até `/conf/global/settings/community/srpc/`
 
-      * Navegue até `/conf/global/settings/community/srpc/`
-   * Selecionar **[!UICONTROL Ativar]**
-
+* Selecionar **[!UICONTROL Ativar]**
 
 ## Gerenciamento de dados do usuário {#managing-user-data}
 
