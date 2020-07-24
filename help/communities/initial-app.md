@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 2%
 
 ---
 
@@ -40,13 +43,14 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
    * Descrição: `An SCF Sandbox template for play pages`
    * Tipo de recurso: `an-scf-sandbox/components/playpage`
    * Classificação: &lt;deixar como padrão>
+
    O Rótulo é usado para o nome do nó.
 
    O Tipo de recurso é exibido no nó jcr:content `playpage`da propriedade `sling:resourceType`. Ela identifica o componente (recurso) que renderiza o conteúdo quando solicitado por um navegador.
 
    Nesse caso, todas as páginas criadas usando o `playpage` modelo são renderizadas pelo `an-scf-sandbox/components/playpage` componente. Por convenção, o caminho para o componente é relativo, permitindo que Sling procure o recurso primeiro na `/apps` pasta e, se não for encontrado, na `/libs` pasta.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
+   ![create-content-template](assets/create-content-template-1.png)
 
 1. Se estiver usando copiar/colar, verifique se o valor Tipo de recurso não tem espaços à esquerda ou à direita.
 
@@ -56,7 +60,7 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
    Para adicionar um caminho, clique no botão de adição `+` e digite `/content(/.&ast;)?` na caixa de texto exibida. Se estiver usando copiar/colar, verifique se não há espaços à esquerda ou à direita.
 
-   Observação: O valor da propriedade path permitida é uma expressão *regular.* As páginas de conteúdo com um caminho que corresponda à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as suas subpáginas.
+   Observação: O valor da propriedade path permitida é uma expressão ** regular. As páginas de conteúdo com um caminho que corresponda à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as suas subpáginas.
 
    Quando um autor cria uma página abaixo `/content`, o `playpage` modelo intitulado &quot;Um modelo de página de caixa de proteção SCF&quot; é exibido em uma lista de modelos disponíveis para uso.
 
@@ -64,7 +68,7 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![configure-template-path](assets/configure-template-path.png)
 
 1. Clique em **[!UICONTROL Avançar]**.
 
@@ -78,7 +82,7 @@ Neste exercício, todas as páginas são baseadas em um modelo simples.
 
    Clique em **[!UICONTROL Salvar tudo]** para salvar o novo modelo no repositório.
 
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+   ![verify-content-template](assets/verify-content-template.png)
 
 ### Criar o componente de renderização do modelo {#create-the-template-s-rendering-component}
 
@@ -93,17 +97,18 @@ Crie o *componente* que define o conteúdo e renderiza todas as páginas criadas
 
    Na caixa de diálogo **[!UICONTROL Criar componente]** , digite os seguintes valores de propriedade:
 
-   * Rótulo: página **de reprodução**
-   * Título: Componente **de reprodução de caixa de proteção SCF**
+   * Rótulo: **playpage**
+   * Título: **Um componente de reprodução de caixa de proteção SCF**
    * Descrição: **Este é o componente que renderiza conteúdo para a página de Caixa de proteção de SCF.**
    * Supertipo: *&lt;deixar em branco>*
-   * Grupo:
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   * Grupo: *&lt;deixar em branco>*
+
+   ![create-template-component](assets/create-template-component.png)
 
 1. Clique em **[!UICONTROL Avançar]** até que o painel Filhos **** permitidos da caixa de diálogo seja exibido:
 
-   * Clique em **[!UICONTROL OK]**
-   * Clique em **[!UICONTROL Salvar tudo]**
+   * Clique em **[!UICONTROL OK]**.
+   * Clique em **[!UICONTROL Salvar tudo]**.
 
 1. Verifique se o caminho para o componente e o resourceType para o modelo correspondem.
 
@@ -111,4 +116,4 @@ Crie o *componente* que define o conteúdo e renderiza todas as páginas criadas
    >
    >A correspondência entre o caminho para o componente de página de reprodução e a propriedade sling:resourceType do modelo de página de reprodução é crucial para o funcionamento correto do site.
 
-   ![chlimage_1-79](assets/chlimage_1-79.png)
+   ![verify-template-component](assets/verify-template-component.png)
