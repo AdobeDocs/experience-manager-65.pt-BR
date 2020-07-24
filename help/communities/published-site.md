@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ca15258a5dc7ca99b6c9d6ae85e42c77a3802c87
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,7 @@ Uma limitação conhecida expõe o conteúdo do site da comunidade a visitantes 
 
 Para proteger o conteúdo do site da sua comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json , siga estas etapas:
 
-1. Na instância do autor de AEM, vá para https:// nome do host:port/editor.html/content/site/sitename.html.
+1. Na instância do AEM Author, vá para https:// nome do host:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -89,7 +92,7 @@ Depois de fazer logon como membro da comunidade registrado, observe os seguintes
    1. Componha novas mensagens diretas para enviar a indivíduos e grupos.
 
 * [A opção Notificações](/help/communities/notifications.md) direciona você para a seção Notificações, onde você pode visualização seus eventos de interesse e editar configurações de notificação.
-* [A administração](/help/communities/published-site.md#moderationlink) direciona você para a página de moderação do AEM Communities, se você tiver privilégios de moderação.
+* [A administração](/help/communities/published-site.md#moderationlink) o direciona para a Página de moderação de AEM Communities, se você tiver privilégios de moderação.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -103,6 +106,7 @@ Observe que a página Calendário é o home page porque o Modelo de site de refe
 >
 >* [Componentes](/help/communities/author-communities.md) das comunidades (para autores)
 >* [Componentes, funções e recursos básicos](/help/communities/essentials.md) (para desenvolvedores)
+
 >
 
 
@@ -125,7 +129,7 @@ Este é um exemplo onde um grupo é criado no ambiente publish.
 
 Grupos também podem ser criados no ambiente do autor e gerenciados no site da comunidade no ambiente do autor (console[Grupos da](/help/communities/groups.md)comunidade). A experiência de [criação de grupos no autor](/help/communities/nested-groups.md) é a seguinte neste tutorial.
 
-![chlimage_1-36](assets/chlimage_1-36.png)
+![classic-ui](assets/classic-ui.png)
 
 Criar um grupo de referência:
 
@@ -143,11 +147,11 @@ Criar um grupo de referência:
 
 1. Selecionar **Criar grupo**
 
-![chlimage_1-37](assets/chlimage_1-37.png)
+![classic-ui-website](assets/classic-ui-website.png)
 
 Após a criação do novo grupo, **selecione o novo grupo** Esportes para criar dois grupos (aninhados) dentro dele. Como uma estrutura de site não pode começar com a função de grupos, após abrir o grupo Esportes, é necessário selecionar o link Grupos:
 
-![chlimage_1-38](assets/chlimage_1-38.png)
+![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 O segundo conjunto de links, começando com `Blog`, pertence ao grupo atualmente selecionado, o `Sports` grupo. Ao selecionar o link Esportes, é possível aninhar dois grupos dentro do grupo Esportes `Groups` .
 
@@ -175,7 +179,7 @@ Depois que ambos os grupos forem criados, selecione o grupo Beisebol, um grupo a
 
 Os links do grupo são exibidos abaixo dos links do site principal e os resultados são exibidos na seguinte exibição:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+![classic-ui-website-page](assets/classic-ui-website-page.png)
 
 Autor - com privilégios administrativos, navegue até o console [Grupos de](/help/communities/members.md) comunidades e adicione Weston McCall ao `Community Engage Gymnastics <uid> Members` grupo.
 
@@ -190,7 +194,7 @@ Somente o grupo Beisebol estará visível.
 
 Faça logon como Weston McCall (weston.mccall@dodgit.com / senha) e navegue até o mesmo local. Note que a Weston é capaz de `Join` abrir o `Baseball` grupo e ou `enter or Leave` o `Gymnastics` grupo privado.
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+![classic-ui-repository-visualização](assets/classic-ui-repository-view.png)
 
 ### Link da página da Web {#web-page-link}
 
@@ -198,7 +202,7 @@ Visualização a página da Web básica incluída no site selecionando o link P�
 
 Por exemplo, vá para a instância do **autor** , abra a `engage` pasta no console [Sites](/help/communities/sites-console.md)das Comunidades e selecione o ícone **Abrir site** para entrar no modo de edição do autor. Em seguida, selecione o modo de pré-visualização para selecionar o `Web Page` link e, em seguida, selecione o modo de edição para adicionar componentes de Título e Texto. Por último, publique novamente apenas a página ou o site inteiro.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 ### Link de moderação {#moderationlink}
 
