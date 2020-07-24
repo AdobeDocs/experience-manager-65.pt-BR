@@ -3,10 +3,10 @@ title: Configure a marcação de ativos usando o Serviço de conteúdo inteligen
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 42%
+source-wordcount: '1102'
+ht-degree: 43%
 
 ---
 
@@ -17,8 +17,8 @@ Você pode fazer a integração [!DNL Adobe Experience Manager] com o Smart Cont
 
 O artigo detalha as seguintes tarefas principais que são necessárias para configurar o Serviço de conteúdo inteligente. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
 
-1. Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. [Obtenha um certificado público para a integração com o OAuth.](#obtain-public-certificate)
-1. [Crie uma integração no Console do desenvolvedor e faça upload da chave pública gerada.](#create-adobe-i-o-integration)
+1. Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. [Obtenha um certificado público](#obtain-public-certificate) para a integração OAuth.
+1. [Crie uma integração no Console do desenvolvedor](#create-adobe-i-o-integration) e faça upload da chave pública gerada.
 1. [Configure sua implantação](#configure-smart-content-service) usando a chave da API e outras credenciais do Adobe Developer Console.
 1. [Teste a configuração](#validate-the-configuration).
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
@@ -124,11 +124,9 @@ Depois de concluir a configuração, você pode usar um MBean JMX para validar a
 
 1. Na guia **[!UICONTROL Argumentos]**, selecione **[!UICONTROL Ignorar erros]** se desejar que o fluxo de trabalho seja concluído mesmo se a etapa de marcação automática falhar.
 
-   ![Configurar o fluxo de trabalho do Ativo de atualização do DAM para adicionar a etapa da tag inteligente e selecionar avanço do manipulador](assets/smart-tag-step-properties-workflow2.png)
-
    Para marcar os ativos quando eles forem carregados independentemente de a marcação inteligente estar ativada nas pastas, selecione **[!UICONTROL Ignorar sinalizador de tag inteligente]**.
 
-   ![Configurar o fluxo de trabalho do Ativo de atualização do DAM para adicionar a etapa da tag inteligente e selecionar ignorar sinalizador da tag inteligente](assets/smart-tag-step-properties-workflow3.png)
+   ![Configurar o fluxo de trabalho do Ativo de atualização do DAM para adicionar a etapa da tag inteligente e selecionar ignorar sinalizador da tag inteligente](assets/smart-tag-step-properties-workflow2.png)
 
 1. Clique em **[!UICONTROL OK]** para fechar a etapa do processo e salve o fluxo de trabalho.
 
