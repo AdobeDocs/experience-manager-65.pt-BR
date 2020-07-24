@@ -3,9 +3,9 @@ title: Criar e configurar páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2130'
 ht-degree: 1%
 
 ---
@@ -298,8 +298,6 @@ Na página Editor de ativos, os usuários podem inserir valores nos campos de me
 
 O componente Sub-ativos é onde você pode visualização e selecionar subativos. Você pode determinar quais nomes aparecem no ativo [e subativos](/help/assets/assets.md#what-are-digital-assets) principais.
 
-![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
-
 Clique com o Duplo no componente Sub Assets para abrir a caixa de diálogo Sub-ativos, onde é possível alterar os títulos do ativo principal e de qualquer subativo. Os valores padrão são exibidos abaixo do campo correspondente.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
@@ -347,8 +345,6 @@ A seguir está um exemplo de um componente Miniatura preenchido:
 #### Título {#title}
 
 O componente Título exibe o título do ativo e uma descrição.
-
-![chlimage_1-163](assets/chlimage_1-391.png)
 
 Por padrão, ele está no modo somente leitura, portanto os usuários não podem editá-lo. Para torná-lo editável, clique com o duplo no componente e desmarque a caixa de seleção **Ocultar botão** de edição. Além disso, insira um título para vários ativos.
 
