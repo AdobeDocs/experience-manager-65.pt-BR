@@ -3,10 +3,10 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
    * Selecione a guia Propriedades **[!UICONTROL da]** Web e clique em **[!UICONTROL Adicionar propriedade]**.
 
-   * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://helpx.adobe.com/experience-manager/using/dtm.html).
+   * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://docs.adobe.com/content/help/br/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Criar propriedade da Web de edição](assets/Create-edit-web-property.png)
 
