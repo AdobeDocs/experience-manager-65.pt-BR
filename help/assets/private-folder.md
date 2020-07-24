@@ -3,9 +3,9 @@ title: Crie e compartilhe uma pasta privada no Adobe Experience Manager.
 description: Saiba como criar uma pasta privada nos Ativos do Adobe Experience Manager e compartilhá-los com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,9 @@ Você pode criar uma pasta privada na interface do usuário dos Ativos do Adobe 
 
    ![Criar pasta de ativos](assets/Create-folder.png)
 
-1. Na caixa de diálogo **[!UICONTROL Criar pasta]** , digite um título e nome (opcional) para a pasta e selecione **[!UICONTROL Privado]**.
+1. Na caixa de diálogo **[!UICONTROL Criar pasta]** , digite um título e um nome (opcional) para a pasta e selecione a opção **[!UICONTROL Privado]** .
 
-   ![Marque a caixa de seleção Privado para tornar a pasta privada](assets/private-folder.png)
-
-1. Clique em **[!UICONTROL Criar]**. Uma pasta particular é criada na interface do usuário.
+1. Clique em **[!UICONTROL Criar]**. Uma pasta particular é criada.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
