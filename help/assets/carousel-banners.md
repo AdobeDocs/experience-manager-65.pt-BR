@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '4811'
+source-wordcount: '4814'
 ht-degree: 5%
 
 ---
@@ -94,7 +94,7 @@ Para começar a trabalhar rapidamente:
       ](/help/assets/adding-dynamic-media-assets-to-pages.md)Se você for um cliente do AEM Sites, poderá adicionar o conjunto de carrossel diretamente à página no AEM, usando o componente de Mídia interativa.
 
 
-Se precisar editar Conjuntos de carrossel, consulte [edição de Conjuntos de carrossel.](#editing-carousel-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.md#editingproperties)carrossel.
+Se precisar editar Conjuntos de carrossel, consulte [edição de Conjuntos de carrossel.](#editing-carousel-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)carrossel.
 
 ## Como identificar as variáveis de hotspot e mapa de imagem {#identifying-hotspot-and-image-map-variables}
 
@@ -200,6 +200,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    * Perto do canto superior esquerdo da página, toque no ícone **[!UICONTROL Adicionar slide]** .
 
    * Próximo ao meio da página, toque em **[!UICONTROL Tocar para abrir o Seletor de ativos.]**
+
    Toque para selecionar os ativos que deseja incluir ao Conjunto de carrossel. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Selecionar**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar ou clicar em **[!UICONTROL Retornar.]** Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista.]**
@@ -226,6 +227,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    >    * Estilo dos botões. Os usuários podem girar pelos banners tocando em cada ponto ou número. Você pode alterar o local em que os botões de indicador definidos aparecem (e se eles são numéricos ou de estilo pontilhado) e o tamanho deles.
    >    * Altere o estilo de realce de um mapa de imagem ou o ícone usado para pontos de acesso.
    >    * Antes de editar uma predefinição do visualizador, escolha o estilo do qual deseja basear a predefinição. Se você não fizer isso, ao start de editar a predefinição do visualizador, perderá todas as alterações se decidir mudar para uma predefinição diferente
+
    >
    >
    >Consulte Considerações [especiais para banners](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) de carrossel para obter instruções detalhadas e mais informações sobre o editor do visualizador.
@@ -274,6 +276,7 @@ Consulte também [Adição de mapas de imagem](/help/assets/image-maps.md).
 
    * Para pontos de conexão: Na imagem, toque em um local onde deseja que o ponto de acesso apareça.
    * Para mapas de imagem: Na imagem, clique em e arraste da parte superior esquerda para a parte inferior direita para criar a área do mapa de imagem. É possível ajustar o tamanho do mapa de imagem arrastando os cantos.
+
    Se necessário, arraste o ponto de acesso ou o mapa de imagem para um novo local. Adicione outros pontos de acesso ou mapas de imagem, conforme necessário.
 
    Para excluir um ponto de acesso ou mapa de imagem, toque na guia **[!UICONTROL Ações]**. No cabeçalho **[!UICONTROL Mapas e pontos de acesso]**, no menu suspenso **[!UICONTROL Tipo selecionado]**, selecione o nome do ponto de acesso ou mapa de imagem que deseja remover. Toque no ícone **[!UICONTROL Lixeira]**, ao lado do menu, e toque em **[!UICONTROL Excluir.]**
@@ -298,6 +301,7 @@ Consulte também [Adição de mapas de imagem](/help/assets/image-maps.md).
          O método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas de AEM Sites.
 
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.
+
    Certifique-se de especificar se deseja abrir o link em uma nova guia do navegador (padrão recomendado) ou na mesma guia.
 
    Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
@@ -356,6 +360,7 @@ Usuários não administrativos devem ser adicionados ao grupo de usuários **[!U
    * Para excluir um slide, selecione-o e toque em **[!UICONTROL Excluir slide]** na barra de ferramentas.
    * To apply a preset, near the upper-right corner of the page, tap the **[!UICONTROL Preset]** drop-down list, then select a viewer preset.
    * Para excluir um conjunto de carrossel inteiro, navegue até o conjunto de carrossel, selecione-o e toque em **[!UICONTROL Excluir.]**
+
    >[!NOTE]
    Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, seus pontos de acesso serão removidos.
 
