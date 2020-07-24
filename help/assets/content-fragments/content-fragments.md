@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1973'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ Esta e as seguintes páginas cobrem as tarefas para criar, configurar e manter s
 
 * [Gerenciamento de fragmentos](/help/assets/content-fragments/content-fragments-managing.md) de conteúdo - crie seus fragmentos de conteúdo; em seguida, edite, publique e faça referência
 * [Modelos](/help/assets/content-fragments/content-fragments-models.md) de fragmento de conteúdo - ativar, criar e definir seus modelos
-* [Variações - Criação de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) do fragmento - cria o conteúdo do fragmento e as variações do mestre
+* [Variações - Criação de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) do fragmento - cria o conteúdo do fragmento e as variações do Principal
 * [Marcação](/help/assets/content-fragments/content-fragments-markdown.md) - uso da sintaxe de marcação para o fragmento
 * [Usar conteúdo](/help/assets/content-fragments/content-fragments-assoc-content.md) associado - adicionar conteúdo associado
 * [Metadados - Propriedades](/help/assets/content-fragments/content-fragments-metadata.md) do fragmento - exibir e editar as propriedades do fragmento
@@ -84,7 +84,7 @@ Junto com os recursos de exportação JSON dos componentes principais do AEM, es
 >
 Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte também [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
+>Para obter mais informações, consulte também [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html).
 
 >[!CAUTION]
 >
@@ -230,19 +230,19 @@ Os ativos do fragmento de conteúdo são compostos pelas seguintes partes (diret
 
    * Parte integrante do fragmento
 
-      * Cada fragmento de conteúdo tem uma instância do Master.
-      * Não é possível excluir o mestre.
-   * O mestre pode ser acessado no editor de fragmentos em **[Variações](/help/assets/content-fragments/content-fragments-variations.md)**.
-   * O mestre não é uma variação como tal, mas a base de todas as variações.
+      * Cada fragmento de conteúdo tem uma instância de Principal.
+      * Principal não pode ser excluído.
+   * Principal pode ser acessado no editor de fragmentos em **[Variações](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * Principal não é uma variação enquanto tal, mas a base de todas as variações.
 
 
 * **Variações**
 
    * Representações de texto de fragmento específicas para fins editoriais; pode estar relacionado com o canal, mas não é obrigatório, pode também ser feito para modificações locais ad hoc.
-   * São criados como cópias do **Master**, mas podem ser editados conforme necessário; normalmente há sobreposição de conteúdo entre as próprias variações.
+   * São criados como cópias de **Principais**, mas podem ser editados conforme necessário; normalmente há sobreposição de conteúdo entre as próprias variações.
    * Pode ser definido durante a criação de fragmentos ou predefinido em modelos de fragmentos.
    * Armazenado no fragmento, para ajudar a evitar a dispersão de cópias de conteúdo.
-   * As variações podem ser [sincronizadas](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) com o Master se o conteúdo mestre tiver sido atualizado.
+   * As variações podem ser [sincronizadas](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) com o Principal se o conteúdo Principal tiver sido atualizado.
    * Pode ser [resumido](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) para truncar rapidamente o texto em um comprimento predefinido.
    * Disponível na guia [Variações](/help/assets/content-fragments/content-fragments-variations.md) do editor de fragmentos.
 
