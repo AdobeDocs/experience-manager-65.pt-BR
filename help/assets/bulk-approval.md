@@ -3,9 +3,9 @@ title: Revisar ativos e coleções de pastas
 description: Configure workflows de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para obter feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '794'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Configure workflows de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para obter feedback.
 
-Os ativos Adobe Experience Manager permitem que você configure um fluxo de trabalho de revisão ad hoc para ativos em uma pasta ou coleção e compartilhe-o com revisores ou parceiros criativos para obter feedback.
+Os ativos Adobe Experience Manager permitem que você configure um fluxo de trabalho de revisão ad hoc para ativos em uma pasta ou coleção e o compartilhe com revisores ou parceiros criativos para obter feedback.
 
 Você pode associar o fluxo de trabalho de revisão a um projeto ou criar uma tarefa de revisão independente.
 
@@ -26,9 +26,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 ## Criar uma tarefa de revisão para pastas {#creating-a-review-task-for-folders}
 
 1. Na interface do usuário Ativos, selecione a pasta para a qual deseja criar uma tarefa de revisão.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-403](assets/chlimage_1-403.png)
+1. Na barra de ferramentas, clique em **[!UICONTROL Criar Tarefa]** de revisão para ![criar a tarefa](assets/do-not-localize/create-review-task.png) de revisão para abrir a página **[!UICONTROL Revisar Tarefa]** . If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Opcional) Na lista **[!UICONTROL Projeto]** , selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL Nenhum]** está selecionada. Se você não quiser associar qualquer projeto à tarefa de revisão, mantenha essa seleção.
 
@@ -74,9 +72,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 ## Criar uma tarefa de revisão para coleções {#creating-a-review-task-for-collections}
 
 1. Na página Coleções, selecione a coleção para a qual deseja criar uma tarefa de revisão.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-405](assets/chlimage_1-405.png)
+1. Na barra de ferramentas, clique em **[!UICONTROL Criar Tarefa]** de revisão para ![criar a tarefa](assets/do-not-localize/create-review-task.png) de revisão para abrir a página **[!UICONTROL Revisar Tarefa]** . If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Opcional) Na lista **[!UICONTROL Projeto]** , selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL Nenhum]** está selecionada. Se você não quiser associar qualquer projeto à tarefa de revisão, mantenha essa seleção.
 
