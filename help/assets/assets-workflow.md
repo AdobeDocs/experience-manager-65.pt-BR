@@ -3,9 +3,9 @@ title: Processar ativos para realizar processos de negócios, realizar auditoria
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '986'
 ht-degree: 3%
 
 ---
@@ -56,11 +56,9 @@ Para aplicar um fluxo de trabalho a um ativo, siga estas etapas:
 
 1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
 1. (Opcional) Especifique um título para o fluxo de trabalho que pode ser usado para fazer referência à instância do fluxo de trabalho.
 
-   ![chlimage_1-255](assets/chlimage_1-51.png)
+   ![selecione o fluxo de trabalho, forneça um título e clique em start](assets/start-workflow.png)
 
 1. Clique em **[!UICONTROL Start]** e em **[!UICONTROL Prosseguir]**. Cada etapa do fluxo de trabalho é exibida na linha do tempo como um evento.
 
@@ -75,7 +73,7 @@ Para aplicar um fluxo de trabalho a um ativo, siga estas etapas:
 1. Clique em **[!UICONTROL Ações]** ![difundir](assets/do-not-localize/chevron-up-icon.png) na parte inferior.
 1. Clique em Fluxo de trabalho do **[!UICONTROL Start]**. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
-   ![chlimage_1-31](assets/chlimage_1-138.png)
+   ![Fluxo de trabalho do start](assets/start-workflow.png)
 
 1. (Opcional) Especifique um título para o fluxo de trabalho, que pode ser usado para fazer referência à instância do fluxo de trabalho.
 1. Clique em **[!UICONTROL Iniciar]** e em **[!UICONTROL Confirmar]** na caixa de diálogo. O fluxo de trabalho é executado em todos os ativos selecionados.
