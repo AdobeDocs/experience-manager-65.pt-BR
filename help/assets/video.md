@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '11828'
+source-wordcount: '11830'
 ht-degree: 8%
 
 ---
@@ -101,7 +101,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi projetada para aju
 
    * Se você estiver usando o Adobe Experience Manager como seu sistema de gestão de conteúdo da Web, poderá adicionar vídeos diretamente às suas páginas da Web.
 
-      * [Adding videos to your web pages](adding-dynamic-media-assets-to-pages.md).
+      * [Adicionar vídeos às suas páginas](adding-dynamic-media-assets-to-pages.md)da Web.
    * Se você estiver usando um sistema de gestão de conteúdo da Web de terceiros, poderá vincular ou incorporar vídeos às suas páginas da Web.
 
       * Integrar vídeo usando URL:
@@ -141,7 +141,7 @@ Para gerenciar um único vídeo e Conjuntos de vídeos adaptáveis, há suporte 
    * Quando um conjunto de vídeo adaptável é gerado, ele inclui vídeos MP4.
    * **Observação**: Vídeos Principais/de origem não são adicionados a um Conjunto de vídeos adaptáveis.
 
-* Video captioning in all HTML5 video viewers.
+* Legendagem de vídeo em todos os visualizadores de vídeo HTML5.
 * Organize, navegue e pesquise vídeos com suporte total a metadados para o gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeo adaptáveis para a Web, desktops e dispositivos móveis, incluindo iPhone, iPad, Android, Blackberry e telefone Windows.
 
@@ -161,11 +161,11 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 Consulte Exemplo de reprodução [](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) de vídeo dinâmica.
 
-See also [Viewers for AEM Assets and Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) and [Viewers for AEM assets only](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
+Consulte também [Visualizadores para AEM Assets e Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) e [Visualizadores para ativos AEM somente](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) no Guia de referência do Adobe Scene7 Viewers.
 
 ## Melhores práticas: Uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
-The Dynamic Media HTML5 Video viewer presets are robust video players. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo HTML5 e problemas associados a dispositivos móveis, como falta de delivery de transmissão adaptável e alcance limitado do navegador do desktop.
+As predefinições do visualizador de vídeo HTML5 da Dynamic Media são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo HTML5 e problemas associados a dispositivos móveis, como falta de delivery de transmissão adaptável e alcance limitado do navegador do desktop.
 
 No lado do design do player, é possível projetar toda a funcionalidade do player de vídeo usando ferramentas padrão de desenvolvimento da Web. Por exemplo, você pode projetar botões, controles e imagens de fundo de pôster personalizadas usando HTML5 e CSS para ajudá-lo a alcançar seus clientes com uma aparência personalizada.
 
@@ -179,7 +179,7 @@ Consulte também [Sobre visualizadores](https://docs.adobe.com/content/help/en/d
 
 Para streaming de vídeo adaptável para desktop e dispositivos móveis, os vídeos usados para switching de taxa de bits são baseados em todos os vídeos MP4 no Conjunto de vídeos adaptáveis.
 
-Video playback occurs using either HLS or progressive video download. Em versões anteriores do AEM, como 6.0, 6.1 e 6.2, os vídeos eram transmitidos via HTTP.
+A reprodução do vídeo ocorre usando HLS ou download progressivo de vídeo. Em versões anteriores do AEM, como 6.0, 6.1 e 6.2, os vídeos eram transmitidos via HTTP.
 
 No entanto, no AEM 6.3 e em diante, os vídeos agora são transmitidos por HTTPS (ou seja, HLS), pois o URL do serviço de gateway DM sempre usa HTTPS também. Observe que não há impacto do cliente neste comportamento padrão. Ou seja, o streaming de vídeo sempre ocorrerá em HTTPS, a menos que não seja suportado pelo navegador. (consulte a tabela a seguir). Portanto,
 
@@ -188,7 +188,7 @@ No entanto, no AEM 6.3 e em diante, os vídeos agora são transmitidos por HTTPS
 
 HLS é um padrão da Apple para streaming de vídeo adaptável que ajusta automaticamente a reprodução com base na capacidade de largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; qualquer ponto do vídeo, sem precisar aguardar o download do restante do vídeo.
 
-Progressive video is delivered by downloading and storing the video locally on a user’s desktop system or mobile device.
+O vídeo progressivo é fornecido por meio do download e armazenamento local do vídeo no sistema de desktop ou dispositivo móvel de um usuário.
 
 A tabela a seguir descreve o dispositivo, o navegador e o método de reprodução de vídeos em computadores desktop e dispositivos móveis usando o Scene7 Video Viewer.
 
@@ -293,7 +293,7 @@ A tabela a seguir descreve o tamanho recomendado, a proporção e a taxa mínima
 |--- |--- |--- |
 | 1024 X 768 | 4:3 | 4500 kbps para a maioria dos vídeos. |
 | 1280 X 720 | 16:9 | 3000 - 6000 kbps, dependendo da quantidade de movimento no vídeo. |
-| 1920 X 1080 | 16:9 | 6000 - 8000 kbps, depending on the amount of motion in the video. |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps, dependendo da quantidade de movimento no vídeo. |
 
 ### Obtenção dos metadados de um arquivo {#obtaining-a-file-s-metadata}
 
@@ -309,7 +309,7 @@ Ao escolher ou criar uma predefinição de codificação de vídeo para o arquiv
 
 Para determinar a proporção de um arquivo de vídeo, obtenha os metadados do arquivo e observe a largura e a altura do arquivo (consulte Obter os metadados do arquivo acima). Em seguida, use essa fórmula para determinar a proporção:
 
-width/height = aspect ratio
+largura/altura = proporção
 
 A tabela a seguir descreve como os resultados da fórmula se traduzem em opções de proporção comuns:
 
@@ -320,26 +320,26 @@ A tabela a seguir descreve como os resultados da fórmula se traduzem em opçõe
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-For example, a video that is 1440 width x 1080 height has an aspect ratio of 1440/1080, or 1.33. In this case you choose a video encoding preset with a 4:3 aspect ratio to encode the video file.
+Por exemplo, um vídeo com largura de 1440 x altura de 1080 tem uma proporção largura/altura de 1440/1080 ou 1,33. Nesse caso, escolha uma predefinição de codificação de vídeo com uma proporção de 4:3 para codificar o arquivo de vídeo.
 
 ### Taxa de bits {#bitrate}
 
-Bitrate is the amount of data that is encoded to make up a single second of video playback. The bitrate is measured in kilobits per second (Kbps).
+A taxa de bits é a quantidade de dados que é codificada para formar um único segundo de reprodução de vídeo. A taxa de bits é medida em kilobits por segundo (Kbps).
 
 >[!NOTE]
 >
->Because all codecs use lossy compression, bitrate is the most important factor in video quality. With lossy compression, the more you compress a video file, the more the quality is degraded. For this reason, all other characteristics being equal (the resolution, frame rate, and codec), the lower the bitrate, the lower the quality of the compressed file.
+>Como todos os codecs usam compactação com perdas, a taxa de bits é o fator mais importante na qualidade do vídeo. Com a compactação com perdas, quanto mais você compacta um arquivo de vídeo, mais a qualidade é degradada. Por isso, todas as outras características são iguais (resolução, taxa de quadros e codec), quanto menor a taxa de bits, menor a qualidade do arquivo compactado.
 
-When selecting a bitrate encoding, there are two types you can choose:
+Ao selecionar uma codificação de taxa de bits, você pode escolher dois tipos:
 
-* **[!UICONTROL Constant Bitrate Encoding]** (CBR) - During CBR encoding, the bitrate or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
-Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Using custom-added video encoding parameters](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
+* **[!UICONTROL Codificação]** de taxa de bits constante (CBR) - Durante a codificação de CBR, a taxa de bits ou o número de bits por segundo é mantido a mesma durante todo o processo de codificação. A codificação CBR persiste na taxa de dados definida para sua configuração durante todo o vídeo. Além disso, a codificação CBR não otimiza arquivos de mídia para qualidade, mas economiza espaço no armazenamento.
+Use o CBR se o vídeo contiver um nível de movimento semelhante em todo o vídeo. O CBR é usado com mais frequência para o conteúdo de vídeo de fluxo contínuo. Consulte também [Uso de parâmetros](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters)de codificação de vídeo personalizados.
 
-* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit you set, based on the data required by the compressor. This means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
-VBR takes longer to encode but produces the most favorable results; the quality of the media file is superior. VBR is most commonly used for http progressive delivery of video content.
+* **[!UICONTROL Codificação]** de taxa de bits variável (VBR) - A codificação VBR ajusta a taxa de dados para baixo e para o limite máximo definido, com base nos dados exigidos pelo compressor. Isso significa que, durante um processo de codificação VBR, a taxa de bits do arquivo de mídia aumenta ou diminui dinamicamente, dependendo das necessidades de taxa de bits dos arquivos de mídia.
+O VBR demora mais para codificar, mas produz os resultados mais favoráveis; a qualidade do arquivo de mídia é superior. O VBR é usado com mais frequência para o delivery progressivo http do conteúdo de vídeo.
 
-When should you use VBR versus CRB?
-When it comes to selecting VBR versus CBR, it is almost always recommended that you use VBR for your media files. VBR provides higher quality files at competitive bitrates. Ao usar o VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima como 1,5x a taxa de bits de vídeo do público alvo.
+Quando você deve usar VBR versus CRB?
+Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar o VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima como 1,5x a taxa de bits de vídeo do público alvo.
 
 Ao escolher uma predefinição de codificação de vídeo, considere a velocidade de conexão do usuário final do público alvo. Escolha uma predefinição com uma taxa de dados que seja 80% dessa velocidade. Por exemplo, se a velocidade de conexão do usuário final do público alvo for de 1000 Kbps, a melhor predefinição será aquela com uma taxa de dados de vídeo de 800 Kbps.
 
@@ -356,31 +356,31 @@ Esta tabela descreve a taxa de dados de velocidades de conexão típicas.
 
 **Resolução **descreve a altura e a largura de um arquivo de vídeo em pixels. A maioria dos vídeos de origem é armazenada em alta resolução (por exemplo, 1920 x 1080). Para fins de streaming, o vídeo de origem é compactado em uma resolução menor (640 x 480 ou menor).
 
-A resolução e a taxa de dados são dois fatores totalmente ligados que determinam a qualidade do vídeo. Para manter a mesma qualidade de vídeo, quanto maior o número de pixels em um arquivo de vídeo (quanto maior a resolução), maior deve ser a taxa de dados. For example, consider the number of pixels per frame in a 320 x 240 resolution and a 640 x 480 resolution video file:
+A resolução e a taxa de dados são dois fatores totalmente ligados que determinam a qualidade do vídeo. Para manter a mesma qualidade de vídeo, quanto maior o número de pixels em um arquivo de vídeo (quanto maior a resolução), maior deve ser a taxa de dados. Por exemplo, considere o número de pixels por quadro em uma resolução 320 x 240 e um arquivo de vídeo de resolução 640 x 480:
 
 | Resolução | Pixels por quadro |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
 
-O arquivo 640 x 480 tem quatro vezes mais pixels por quadro. To achieve the same data rate for these two example resolutions, you apply four times the compression to the 640 x 480 file, which can reduce the quality of the video. Therefore, a video data rate of 250 Kbps produces high-quality viewing at a 320 x 240 resolution, but not at a 640 x 480 resolution.
+O arquivo 640 x 480 tem quatro vezes mais pixels por quadro. Para obter a mesma taxa de dados para essas duas resoluções de exemplo, aplique quatro vezes a compactação ao arquivo 640 x 480, o que pode reduzir a qualidade do vídeo. Portanto, uma taxa de dados de vídeo de 250 Kbps produz uma visualização de alta qualidade em uma resolução de 320 x 240, mas não em uma resolução de 640 x 480.
 
-In general, the higher data rate you use, the better your video looks, and the higher resolution you use, the higher data rate you need to maintain viewing quality (compared to lower resolutions).
+Em geral, quanto maior for a taxa de dados, melhor será a aparência do vídeo e maior será a resolução usada, maior será a taxa de dados necessária para manter a qualidade de exibição (em comparação com resoluções mais baixas).
 
 Como a resolução e a taxa de dados estão vinculadas, você tem duas opções ao codificar o vídeo:
 
-* Choose a data rate and then encode at the highest resolution that looks good at the data rate you chose.
-* Choose a resolution and then encode at the data rate necessary to achieve high-quality video at the resolution you chose.
+* Escolha uma taxa de dados e, em seguida, codifique na resolução mais alta que tenha boa aparência na taxa de dados escolhida.
+* Escolha uma resolução e, em seguida, codifique na taxa de dados necessária para obter vídeo de alta qualidade na resolução escolhida.
 
 Ao escolher (ou criar) uma predefinição de codificação de vídeo para o arquivo de vídeo de origem primária, use esta tabela para público alvo da resolução correta:
 
-| Resolução | Altura (pixels) | Screen size |
+| Resolução | Altura (pixels) | Tamanho da tela |
 |--- |--- |--- |
-| 240p | 240 | Tiny screen |
-| 300p | 300 | Small screen typically for mobile devices |
-| 360p | 360 | Small screen |
+| 240p | 240 | Tela pequena |
+| 300p | 300 | Tela pequena geralmente para dispositivos móveis |
+| 360p | 360 | Tela pequena |
 | 480p | 480 | Tela média |
-| 720p | 720 | Large screen |
+| 720p | 720 | Tela grande |
 | 1080p | 1080 | Tela grande de alta definição |
 
 ### Fps (Quadros por segundo) {#fps-frames-per-second}
@@ -391,15 +391,15 @@ Escolha uma predefinição de codificação de vídeo que corresponda à taxa fp
 
 ### Dimensões de codificação de vídeo {#video-encoding-dimensions}
 
-For optimal results, select encoding dimensions such that the source video is a whole multiple of all your encoded videos.
+Para obter resultados ideais, selecione dimensões de codificação de modo que o vídeo de origem seja um múltiplo completo de todos os vídeos codificados.
 
 Para calcular essa proporção, divida a largura de origem por largura codificada para obter a proporção de largura. Em seguida, divida a altura de origem por altura codificada para obter a proporção de altura.
 
-If the resulting ratio is a whole integer, it means that the video is optimally scaled. If the resulting ratio is not a whole integer, it impacts video quality by leaving leftover pixel artifacts on the display. This effect is most noticeable when the video has text.
+Se a proporção resultante for um inteiro inteiro, isso significa que o vídeo é dimensionado de forma ideal. Se a proporção resultante não for um inteiro, isso afeta a qualidade do vídeo, deixando artefatos de pixel restantes na tela. Esse efeito é mais visível quando o vídeo tem texto.
 
-Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. In the following table, the three encoded videos provide the optimal encoding settings to use.
+Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. Na tabela a seguir, os três vídeos codificados fornecem as configurações de codificação ideais a serem usadas.
 
-| Video Type | Largura x altura | Proporção de largura | Height Ratio |
+| Tipo de vídeo | Largura x altura | Proporção de largura | Taxa de altura |
 |--- |--- |--- |--- |
 | Origem | 1920x1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
@@ -408,64 +408,64 @@ Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. In the following t
 
 ### Formato de arquivo de vídeo codificado {#encoded-video-file-format}
 
-Dynamic Media recommends using MP4 H.264 video encoding presets. Como os arquivos MP4 usam o codec de vídeo H.264, ele fornece vídeo de alta qualidade, mas em um tamanho de arquivo compactado.
+A Dynamic Media recomenda usar predefinições de codificação de vídeo MP4 H.264. Como os arquivos MP4 usam o codec de vídeo H.264, ele fornece vídeo de alta qualidade, mas em um tamanho de arquivo compactado.
 
-## Publishing videos to YouTube {#publishing-videos-to-youtube}
+## Publicar vídeos no YouTube {#publishing-videos-to-youtube}
 
 Você pode publicar ativos de vídeo do AEM local diretamente em um canal do YouTube que você criou anteriormente.
 
-To publish video assets to YouTube, you set up AEM Assets with tags. You associate these tags with a YouTube channel. If a video asset&#39;s tag matches the tag of a YouTube channel, then the video is published to YouTube. Publish to YouTube occurs along with a normal publish of the video as long as an associated tag is used.
+Para publicar ativos de vídeo no YouTube, configure AEM Assets com tags. Você associa essas tags a um canal do YouTube. Se a tag de um ativo de vídeo corresponder à tag de um canal do YouTube, o vídeo será publicado no YouTube. A publicação no YouTube ocorre junto com uma publicação normal do vídeo, desde que uma tag associada seja usada.
 
-YouTube does its own encoding. As such, the original video file that was uploaded into AEM is published to YouTube instead of any video rendition that Dynamic Media’s encoding has created. While it is not required to process videos using Dynamic Media, it is expected that they will do so in case a viewer preset is needed for playback.
+O YouTube faz sua própria codificação. Dessa forma, o arquivo de vídeo original que foi carregado no AEM é publicado no YouTube em vez de qualquer execução de vídeo que a codificação do Dynamic Media tenha criado. Embora não seja necessário processar vídeos usando o Dynamic Media, espera-se que eles o façam caso uma predefinição do visualizador seja necessária para a reprodução.
 
-When you bypass the video processing profile and publish directly to YouTube, it simply means that your video asset in AEM Asset may not get a viewable thumbnail. It also means that if you run in dynamicmedia or dynamicmedia_scene7 run modes, videos that are not encoded will not work with any of the Dynamic Media asset types.
+Quando você ignora o perfil de processamento de vídeo e publica diretamente no YouTube, isso significa apenas que seu ativo de vídeo no AEM Asset pode não obter uma miniatura visível. Isso também significa que se você executar nos modos de execução dynamicmedia ou dynamicmedia_sceno7, os vídeos que não estão codificados não funcionarão com nenhum dos tipos de ativos do Dynamic Media.
 
-Publishing video assets to YouTube servers involves completing the following tasks to ensure safe and secure server-to-server authentication with YouTube:
+A publicação de ativos de vídeo em servidores do YouTube envolve a conclusão das seguintes tarefas para garantir a autenticação segura e segura de servidor para servidor com o YouTube:
 
-1. [Configuring Google Cloud settings](#configuring-google-cloud-settings)
+1. [Definição das configurações do Google Cloud](#configuring-google-cloud-settings)
 1. [Criação de um canal do YouTube](#creating-a-youtube-channel)
-1. [Adding tags for publishing](#adding-tags-for-publishing)
-1. [Enabling the YouTube Publish Replication agent](#enabling-the-youtube-publish-replication-agent)
+1. [Adicionar tags para publicação](#adding-tags-for-publishing)
+1. [Ativando o agente de Replicação de Publicação do YouTube](#enabling-the-youtube-publish-replication-agent)
 1. [Configuração do YouTube no AEM](#setting-up-youtube-in-aem)
 1. [(Opcional) Automatizando a configuração das propriedades padrão do YouTube para os vídeos carregados](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publishing videos to your YouTube channel](#publishing-videos-to-your-youtube-channel)
-1. [(Optional) Verifying the published video on YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
+1. [Publicar vídeos no canal do YouTube](#publishing-videos-to-your-youtube-channel)
+1. [(Opcional) Verificação do vídeo publicado no YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
 1. [Vincular URLs do YouTube à sua Aplicação web](#linking-youtube-urls-to-your-web-application)
 
-You can also [unpublish videos to remove them from YouTube](#unpublishing-videos-to-remove-them-from-youtube).
+Você também pode [cancelar a publicação de vídeos para removê-los do YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Configuring Google Cloud settings {#configuring-google-cloud-settings}
+### Definição das configurações do Google Cloud {#configuring-google-cloud-settings}
 
-To publish to YouTube, you need a Google account. If you have a GMAIL account then you already have a Google account; if you do not have a Google account, you can easily create one. Você precisa da conta porque precisa de credenciais para publicar ativos de vídeo no YouTube. Se você já tiver uma conta criada, ignore essa tarefa e prossiga diretamente para [Criar um canal](#creating-a-youtube-channel)do YouTube.
+Para publicar no YouTube, você precisa de uma conta do Google. Se tiver uma conta GMAIL, você já tem uma conta Google; se você não tiver uma conta do Google, poderá criar uma facilmente. Você precisa da conta porque precisa de credenciais para publicar ativos de vídeo no YouTube. Se você já tiver uma conta criada, ignore essa tarefa e prossiga diretamente para [Criar um canal](#creating-a-youtube-channel)do YouTube.
 
 A conta usada com a Google Cloud e a conta do Google usada para o YouTube não precisa ser a mesma.
 
-Be aware that Google periodically makes changes to their user interface. Dessa forma, as etapas para publicar vídeos no YouTube podem variar um pouco do que está documentado abaixo. Esta advertência também se aplica ao YouTube quando você tenta verificar se os vídeos foram carregados nele.
+Esteja ciente de que o Google altera periodicamente a interface do usuário. Dessa forma, as etapas para publicar vídeos no YouTube podem variar um pouco do que está documentado abaixo. Esta advertência também se aplica ao YouTube quando você tenta verificar se os vídeos foram carregados nele.
 
 >[!NOTE]
 >
->Os passos a seguir foram precisos no momento desta escrita. However, Google periodically updates their websites without notice. As such, these steps may be slightly different.
+>Os passos a seguir foram precisos no momento desta escrita. No entanto, o Google atualiza periodicamente seus sites sem aviso prévio. Como tal, essas etapas podem ser um pouco diferentes.
 
-To configure Google Cloud settings:
+Para definir as configurações do Google Cloud:
 
-1. Create a new Google account.
+1. Crie uma nova conta do Google.
    [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
 
-   If you already have a Google account, skip to the next step.
+   Se você já tiver uma conta do Google, vá para a próxima etapa.
 
-1. Go to [https://cloud.google.com/](https://cloud.google.com/).
+1. Vá para [https://cloud.google.com/](https://cloud.google.com/).
 1. Na página do Google Cloud, próximo ao canto superior direito, clique em **[!UICONTROL Console.]**
 
-   If necessary, you may need to **[!UICONTROL Sign in]** using your Google account credentials to see the **[!UICONTROL Console]** option.
+   Se necessário, talvez seja necessário fazer **[!UICONTROL logon]** usando suas credenciais de conta do Google para ver a opção **[!UICONTROL Console]** .
 
-1. On the Dashboard page, to the right of **[!UICONTROL Google Cloud Platform]**, click the Project drop-down list to open the Select a Project dialog box.
-1. In the Select a project dialog box, tap **[!UICONTROL New Project.]**
+1. Na página Painel, à direita do **[!UICONTROL Google Cloud Platform]**, clique na lista suspensa Projeto para abrir a caixa de diálogo Selecionar um projeto.
+1. Na caixa de diálogo Selecionar um projeto, toque em **[!UICONTROL Novo projeto.]**
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
-1. In the New Project dialog box, in the Project Name field, type the name of your new project.
+1. Na caixa de diálogo Novo projeto, no campo Nome do projeto, digite o nome do novo projeto.
 
-   Note that your Project ID is based on your project name. Como tal, escolha cuidadosamente o nome do projeto; ele não pode ser alterado após ser criado. Além disso, você precisará digitar a mesma ID de projeto novamente quando configurar o YouTube no AEM posteriormente; talvez você queira anotar.
+   Observe que a ID do projeto se baseia no nome do projeto. Como tal, escolha cuidadosamente o nome do projeto; ele não pode ser alterado após ser criado. Além disso, você precisará digitar a mesma ID de projeto novamente quando configurar o YouTube no AEM posteriormente; talvez você queira anotar.
 
 1. Clique em **[!UICONTROL Criar.]**
 
@@ -476,45 +476,45 @@ To configure Google Cloud settings:
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. Near the top of the APIs &amp; Services page, tap **[!UICONTROL Enable APIs and Services.]**
-1. Na página Biblioteca de API, no lado esquerdo, em **[!UICONTROL Categoria]**, toque em **[!UICONTROL YouTube.]** On the right side of the page, tap **[!UICONTROL YouTube Data API.]**
+1. Próximo à parte superior da página APIs e serviços, toque em **[!UICONTROL Ativar APIs e serviços.]**
+1. Na página Biblioteca de API, no lado esquerdo, em **[!UICONTROL Categoria]**, toque em **[!UICONTROL YouTube.]** No lado direito da página, toque em API de dados do **[!UICONTROL YouTube.]**
 1. Na página da API de dados do YouTube v3, toque em **[!UICONTROL Ativar.]**
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. To use the API, you may need credentials. If necessary, click **[!UICONTROL Create Credentials.]**
+1. Para usar a API, talvez você precise de credenciais. Se necessário, clique em **[!UICONTROL Criar credenciais.]**
 
    ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
-1. On the **[!UICONTROL Add credentials to your project]** page, step 1, do the following:
+1. Na etapa 1, na etapa **[!UICONTROL Adicionar credenciais à página do projeto]** , faça o seguinte:
 
-   * Na API **[!UICONTROL Qual você está usando?]** drop-down list, select **[!UICONTROL YouTube Data API v3.]**
+   * Na API **[!UICONTROL Qual você está usando?]** lista suspensa, selecione **[!UICONTROL YouTube Data API v3.]**
 
-   * From the **[!UICONTROL Where will you be calling the API from?]** drop-down list, select **[!UICONTROL Web Server (e.g. node.js, Tomcat)]**
+   * Em **[!UICONTROL Onde você irá chamar a API?]** lista suspensa, selecione Servidor **[!UICONTROL Web (por exemplo, node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** lista suspensa, toque em Dados **[!UICONTROL do usuário.]**
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
-1. Tap **[!UICONTROL What credentials do I need?]**
+1. Toque em **[!UICONTROL Quais credenciais eu preciso?]**
 1. Na página **[!UICONTROL Adicionar credenciais ao projeto]**, etapa 2, no cabeçalho **[!UICONTROL Criar uma ID de cliente do OAuth 2.0]**, no campo Nome, digite um nome exclusivo, se desejar. Ou você pode usar o nome padrão especificado pelo Google.
-1. Under the **[!UICONTROL Authorized Javascript origins]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
+1. No cabeçalho origens **[!UICONTROL Javascript]** Autorizado, no campo de texto, digite o seguinte caminho, substituindo seu próprio domínio e número de porta no caminho, em seguida, pressione **[!UICONTROL Enter]** para adicionar o caminho à lista:
 
    `https://<servername.domain>:<port_number>`
 
    Por exemplo, `https://1a2b3c.mycompany.com:4321`
 
-   **Note**: The path example above is intended for illustration purposes only.
+   **Observação**: O exemplo de caminho acima destina-se apenas a fins de ilustração.
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
-1. Under the **[!UICONTROL Authorized redirect URIs]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
+1. No cabeçalho URIs **[!UICONTROL de redirecionamento]** autorizados, no campo de texto, digite o seguinte caminho, substituindo seu próprio domínio e número de porta no caminho, em seguida, pressione **[!UICONTROL Enter]** para adicionar o caminho à lista:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    Por exemplo, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **Note**: The path example above is intended for illustration purposes only.
+   **Observação**: O exemplo de caminho acima destina-se apenas a fins de ilustração.
 
 1. Clique em **[!UICONTROL Criar ID de cliente OAuth.]**
 1. Na página **[!UICONTROL Adicionar credenciais ao projeto]**, etapa 3, no cabeçalho **[!UICONTROL Configurar a tela de consentimento do OAuth 2.0]**, selecione o endereço de email do Gmail que você está usando no momento.
@@ -536,7 +536,7 @@ To configure Google Cloud settings:
 
 1. Clique em **[!UICONTROL Concluído.]**
 
-   Log out of your Google account. Agora você criará um canal no YouTube.
+   Desconecte-se da sua conta do Google. Agora você criará um canal no YouTube.
 
 ### Criação de um canal do YouTube {#creating-a-youtube-channel}
 
@@ -773,7 +773,7 @@ Para publicar vídeos no seu canal do YouTube:
 1. No canto superior direito da página de propriedades do vídeo, clique em **[!UICONTROL Salvar e fechar.]**
 1. Na barra de ferramentas, clique em Publicação **[!UICONTROL rápida.]**
 
-   Consulte também [Uso do Gerenciamento de publicação com AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   Consulte também [Uso do Gerenciamento de publicação com AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    Como opção, você pode verificar o vídeo publicado no seu canal do YouTube.
 
