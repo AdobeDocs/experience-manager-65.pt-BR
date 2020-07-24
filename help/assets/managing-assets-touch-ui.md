@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '9245'
+source-wordcount: '9234'
 ht-degree: 4%
 
 ---
@@ -377,15 +377,11 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 1. Para programar uma data/hora específica para a ativação do ativo, use o seletor de datas ao lado do campo **[!UICONTROL No horário]**.
 
-   ![Seletor de data e hora ou use as teclas do teclado no campo Hora ativa para adicionar data e hora para a ativação do ativo](assets/schedule-activation.png)
+   ![Seletor de data e hora ou use as teclas do teclado no campo Hora ativa para adicionar data e hora para a ativação do ativo](assets/datepicker.png)
 
-   *Figura: Agende a ativação de ativos.*
+   *Figura: Use o seletor de datas para agendar a ativação de ativos.*
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo Tempo de **[!UICONTROL desativação]** . A data de desativação deve ser posterior à data de ativação de um ativo. Após o Tempo [!UICONTROL desligado], um ativo e suas representações não estarão disponíveis por meio da interface da [!DNL Assets] Web ou da API HTTP.
-
-   ![Seletor de data e hora ou use teclas do teclado no campo Hora de desligar para adicionar data e hora para a desativação do ativo](assets/schedule-deactivation.png)
-
-   *Figura: Programe a desativação de ativos.*
 
 1. No campo **[!UICONTROL Tags]** , selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione Enter. A nova tag é salva em [!DNL Experience Manager]. [!DNL YouTube] requer tags para publicação. Consulte [publicar vídeos no YouTube](video.md#publishing-videos-to-youtube).
 
@@ -503,15 +499,11 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 
    **Excluir uma representação**
 
-   Selecione uma representação no painel **[!UICONTROL Representações]** e clique na opção **[!UICONTROL Excluir representação]** da barra de ferramentas. As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload novamente dos ativos excluídos.
-
-   ![Opção para excluir uma representação](assets/delete_renditionicon.png)
+   Selecione uma representação no painel **[!UICONTROL Representações]** e clique na opção **[!UICONTROL Excluir]** opção de representação ![para excluir uma opção de representação](assets/do-not-localize/deleteoutline.png) da barra de ferramentas. As execuções não podem ser excluídas em massa após a conclusão do processamento do ativo. Para ativos individuais, você pode remover execuções manualmente da interface do usuário. Para vários ativos, você pode personalizar o Experience Manager para excluir execuções específicas ou excluir os ativos e fazer upload novamente dos ativos excluídos.
 
    **Carregar uma nova execução**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
-
-   ![Adicionar opção Representação para carregar nova representação](assets/chlimage_1-16.png)
+   Navegue até a página de detalhes do ativo e clique na opção **[!UICONTROL Adicionar representação]** ![Adicionar representação para fazer upload da nova opção de representação](assets/do-not-localize/add.png) na barra de ferramentas para fazer upload de uma nova representação do ativo.
 
    >[!NOTE]
    >
@@ -541,11 +533,9 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
 1. Vá ao local do(s) ativo(s) que deseja excluir.
 
-1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
+1. Selecione o ativo e clique em **[!UICONTROL Excluir]** opção ![](assets/do-not-localize/deleteoutline.png) Excluir na barra de ferramentas.
 
-   ![Opção Excluir](assets/delete_icon.png)
-
-1. Na caixa de diálogo de confirmação, clique em:
+1. Na caixa de diálogo de confirmação, selecione uma das seguintes opções:
 
    * **[!UICONTROL Cancelar]** para parar a ação
    * **[!UICONTROL Excluir]** para confirmar a ação:
@@ -590,9 +580,7 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
 1. Navegue até o local da pasta de ativos/ativos que deseja remover do ambiente de publicação (cancelar publicação).
 
-1. Selecione o ativo/pasta para cancelar a publicação e clique na opção **[!UICONTROL Gerenciar publicação]** na barra de ferramentas.
-
-   ![Opção Gerenciar publicação](assets/manage_publication.png)
+1. Selecione o ativo/pasta para cancelar a publicação e clique na opção **[!UICONTROL Gerenciar publicação]** ![gerenciar publicação](assets/do-not-localize/globe-publication.png) na barra de ferramentas.
 
 1. Selecione a ação **[!UICONTROL Cancelar publicação]** na lista.
 
@@ -842,9 +830,7 @@ Para imprimir as anotações e revisar o status, clique em **[!UICONTROL Imprimi
 
    ![Anotação e status de revisão no PDF gerado](assets/chlimage_1-42.png)
 
-1. Baixe ou imprima o PDF usando as opções na parte superior direita.
-
-   ![Opções de download e impressão em PDF](assets/chlimage_1-43.png)
+1. Opção ![Download para PDF](assets/do-not-localize/download.png) ou opções de ![impressão em PDF](assets/do-not-localize/print.png) usando as opções no canto superior direito.
 
    >[!NOTE]
    >
