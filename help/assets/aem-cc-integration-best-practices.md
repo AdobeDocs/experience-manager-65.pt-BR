@@ -3,10 +3,10 @@ title: Práticas recomendadas de integração [!DNL Adobe Experience Manager] e 
 description: Práticas recomendadas para [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integrar-se para dinamizar os workflows de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 16%
+source-wordcount: '3262'
+ht-degree: 17%
 
 ---
 
@@ -39,7 +39,7 @@ Leia para saber quais integrações escolher entre desktop e DAM de nível corpo
 | Os usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações para [!DNL Experience Manager]e o upload de novos arquivos para o ambiente [!DNL Experience Manager] de desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo de desktop nativo, incluindo os que não são da Adobe. | [aplicativo de desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] aplicativo desktop no desktop Win e Mac |
 | Os profissionais de marketing e os usuários empresariais descobrem, pré-visualizações, licenciam e salvam e gerenciam os [!DNL Adobe Stock] ativos de dentro [!DNL Experience Manager]. Os ativos licenciados e salvos fornecem metadados selecionados [!DNL Adobe Stock] para melhor governança. | [Integração com o Experience Manager e o Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface da Web |
 
-Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Alternate solutions such as [Brand Portal](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
+Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Alternate solutions such as [Brand Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/home.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
 
 ![Conexões da Creative Cloud para Experience Manager, decida qual recurso usar](assets/creative-connections-aem.png)
 
@@ -48,7 +48,7 @@ Este artigo foca principalmente nos dois primeiros aspectos das necessidades de 
 <!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
 -->
 
-| Caso de uso    | [!DNL Adobe Asset Link] | [!DNL Experience Manager] aplicativo para desktop | Observações / Outras soluções |
+| Caso de uso  | [!DNL Adobe Asset Link] | [!DNL Experience Manager] aplicativo para desktop | Observações / Outras soluções |
 |---|---|---|---|
 | Discover - procurar pastas DAM | Sim | [!DNL Experience Manager] Interface da Web e ações da área de trabalho |  |
 | Discover - acessar coleções de DAM | Sim | [!DNL Experience Manager] Interface da Web e ações da área de trabalho |  |
@@ -66,7 +66,7 @@ Este artigo foca principalmente nos dois primeiros aspectos das necessidades de 
 
 Para suportar casos de uso de distribuição de ativos, outras soluções devem ser consideradas:
 
-* [Portal](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html) da marca para um complemento SaaS configurável para [!DNL Experience Manager Assets] publicar ativos.
+* [Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/home.html) da marca para um complemento SaaS configurável para [!DNL Experience Manager Assets] publicar ativos.
 * As soluções personalizadas são criadas com base na base de código [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) .
 * [!DNL Experience Manager] [compartilhamento](/help/assets/link-sharing.md) de link para compartilhar ativos ad hoc usando links.
 * [interface](/help/assets/managing-assets-touch-ui.md) da Web do Experience Manager Assets com áreas para terceiros externos protegidas pela configuração do [!DNL Experience Manager] controle de acesso e com os ajustes necessários de configuração de TI/rede, dando a esses usuários externos acesso [!DNL Experience Manager].
@@ -174,7 +174,7 @@ Agências externas e freelancers sem acesso direto à implantação do DAM podem
 Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 
 * Use o aplicativo desktop se o Link de ativo não funcionar.
-* Use o Portal [de marcas dos ativos](https://helpx.adobe.com/br/experience-manager/brand-portal/user-guide.html) Experience Manager para distribuir ativos com segurança a parceiros externos
+* Use o Portal [de marcas dos ativos](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/home.html) Experience Manager para distribuir ativos com segurança a parceiros externos
 * Usar uma implementação personalizada de um portal de distribuição e seleção de fornecedor com base no [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Use a configuração de Controles de acesso em uma infraestrutura de rede [!DNL Experience Manager] necessária (por exemplo, VPN e lista de permissões IP) para dar a terceiros acesso a uma área de conteúdo dedicada no seu DAM. Eles podem usar a interface do usuário [!DNL Experience Manager] da Web para obter ativos e carregar novo conteúdo no DAM.
 
@@ -206,7 +206,7 @@ A descrição refere-se ao upload de arquivos operacionalmente (por exemplo, tod
 
 Você pode aproveitar os seguintes recursos de upload:
 
-* Para fazer upload de pastas grandes/hierárquicas em massa, use o aplicativo de área de trabalho [!DNL Experience Manager] que oferece a funcionalidade de upload [de](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload) pastas. Você também pode carregar estruturas hierárquicas de pastas. [!DNL Assets] são carregados em segundo plano e, portanto, não estão vinculados a uma sessão do navegador da Web
+* Para fazer upload de pastas grandes/hierárquicas em massa, use o aplicativo de área de trabalho [!DNL Experience Manager] que oferece a funcionalidade de upload [de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#bulk-upload-assets) pastas. Você também pode carregar estruturas hierárquicas de pastas. [!DNL Assets] são carregados em segundo plano e, portanto, não estão vinculados a uma sessão do navegador da Web
 * Para carregar alguns arquivos de uma única pasta, arraste os arquivos diretamente para a interface da Web ou use a opção Criar na interface da [!DNL Assets] Web.
 * Dependendo dos requisitos de sua empresa, você também pode usar o carregador personalizado.
 
@@ -222,7 +222,7 @@ Para planejar e executar migrações de ativos do sistema existente para um novo
 
 >[!MORELIKETHIS]
 >
->* [Adobe Asset Link](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
+>* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* [Práticas recomendadas de aplicativos para desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [Portal da marca Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integração com o Experience Manager e o Adobe Stock](aem-assets-adobe-stock.md)
