@@ -1,6 +1,6 @@
 ---
-title: Initial Sandbox Content
-seo-title: Initial Sandbox Content
+title: Conteúdo inicial do sandbox
+seo-title: Conteúdo inicial do sandbox
 description: Criar conteúdo
 seo-description: Criar conteúdo
 uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 5%
@@ -18,9 +18,9 @@ ht-degree: 5%
 ---
 
 
-# Initial Sandbox Content {#initial-sandbox-content}
+# Conteúdo inicial do sandbox {#initial-sandbox-content}
 
-In this section, you create the following pages which all use the [page template](initial-app.md#createthepagetemplate):
+Nesta seção, você cria as seguintes páginas que usam o modelo [de](initial-app.md#createthepagetemplate)página:
 
 * Site do SCF Sandbox, que redirecionará para a versão em inglês da página principal.
 
@@ -38,13 +38,13 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
 
    Para alternar para a interface clássica, selecione navegação global e passe o mouse sobre o lado direito do ícone Projetos. Selecione o ícone *Alternar para a interface de usuário* clássica que é exibido:
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![classic-ui](assets/classic-ui.png)
 
    A capacidade de alternar para a interface clássica deve ser [ativada por um administrador](../../help/sites-administering/enable-classic-ui.md).
 
 1. Na página [de boas-vindas da interface de usuário](http://localhost:4502/welcome.html)clássica, selecione **[!UICONTROL Sites]**.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![classic-ui-website](assets/classic-ui-website.png)
 
    Como alternativa, acesse a interface clássica para sites diretamente navegando para [/siteadmin.](http://localhost:4502/siteadmin)
 
@@ -57,7 +57,7 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
    * Selecionar **[!UICONTROL um modelo de reprodução SCF Sandbox]**
    * Clique em **[!UICONTROL Criar]**
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. No painel explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site`e clique em **[!UICONTROL Nova]** > **[!UICONTROL Nova página]**:
 
@@ -75,11 +75,11 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
 
 1. É assim que o site agora aparece no console Sites. Observe que as páginas secundárias do item selecionado no painel explorador são exibidas no painel direito, onde podem ser gerenciadas.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
    Esta é a visualização do repositório do que foi criado usando a ferramenta Site e o modelo:
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-visualização](assets/classic-ui-repository-view.png)
 
 ## Adicionar o caminho de design {#add-the-design-path}
 
@@ -100,7 +100,7 @@ foi definido, que fornece a capacidade opcional de fazer referência a ativos de
 
 O repositório deve ser exibido da seguinte forma:
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Clique em **[!UICONTROL Salvar tudo]**
 
