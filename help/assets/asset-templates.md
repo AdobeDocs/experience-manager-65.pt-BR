@@ -3,9 +3,9 @@ title: Modelos de ativos em [!DNL Adobe Experience Manager Assets].
 description: Saiba mais sobre os modelos de ativos [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais promocionais de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
 1. Clique em **[!UICONTROL Pré-visualização]** para pré-visualização das alterações de texto.
 
-   ![chlimage_1-112](assets/chlimage_1-317.png)
+   ![Alterações na visualização](assets/view-changes.png)
 
 1. Para trocar uma imagem, clique no Localizador **[!UICONTROL de ativos]**.
 
@@ -122,11 +122,11 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
 1. Clique em **[!UICONTROL Pré-visualização]** para pré-visualização da imagem.
 
-   ![chlimage_1-116](assets/chlimage_1-321.png)
+   ![Alterações na visualização](assets/view-changes.png)
 
 1. Para editar uma página específica em um material promocional de várias páginas, use o navegador da página na parte inferior.
 
-   ![chlimage_1-117](assets/chlimage_1-322.png)
+   ![navegador de página](assets/page-navigator.png)
 
 1. Clique em **[!UICONTROL Pré-visualização]** na barra de ferramentas para pré-visualização de todas as alterações. Clique em **[!UICONTROL Concluído]** para salvar as alterações de edição no material de apoio.
 
@@ -173,8 +173,6 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    Você também pode pesquisar por modelos na caixa Omnisearch.
 
-   ![chlimage_1-123](assets/chlimage_1-328.png)
-
    Você pode navegar pelo [!DNL Experience Manager Assets] repositório ou coleções, navegar até o local dos modelos desejados e selecioná-los para mesclar.
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
@@ -190,7 +188,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
 1. Na tela [!UICONTROL Configurar modelo] , especifique um nome para o material de apoio. Opcionalmente, especifique quaisquer tags que você considerar apropriadas. Se desejar exportar a saída no formato PDF, selecione **[!UICONTROL Acrobat (.PDF)]**. Por padrão, o material de apoio é exportado em JPG e [!DNL InDesign] formato. Para alterar a miniatura de exibição do material de suporte de várias páginas, clique em **[!UICONTROL Alterar miniatura]**.
 
-   ![chlimage_1-127](assets/chlimage_1-332.png)
+   ![chlimage_1-129](assets/chlimage_1-332.png)
 
 1. Clique em **[!UICONTROL Salvar]** e em **[!UICONTROL OK]** na caixa de diálogo para fechar a caixa de diálogo. O material de apoio de várias páginas é criado na pasta com a qual você começou.
 
