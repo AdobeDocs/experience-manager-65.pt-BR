@@ -1,10 +1,10 @@
 ---
-title: Guia do usuário dos ativos Adobe Experience Manager 6.5
+title: Adobe Experience Manager 6.5 Assets User Guide
 seo-title: Guia do usuário dos ativos Adobe Experience Manager 6.5
 description: Este guia cobre todas as tarefas de ativos de Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
 seo-description: Abrange todas as tarefas de ativos Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 12%
@@ -17,6 +17,9 @@ ht-degree: 12%
 Este guia cobre todas as tarefas de ativos de Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
 
 ## Artigos principais sobre Experience Manager
+
+<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
+-->
 
 * [Introdução ao Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Notas de versão do Experience Manager 6.5](/help/release-notes/home.md)
