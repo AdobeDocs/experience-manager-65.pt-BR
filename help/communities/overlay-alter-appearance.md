@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Im
 
 Para Caminho do Start, digite `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
+![verify-content-template](assets/verify-content-template.png)
 
 ### Resultados da Visualização {#view-results}
 
@@ -72,5 +75,5 @@ Se você fizer logon na instância de publicação como administrador, por exemp
 
 Se você efetuar logout e login novamente como `aaron.mcdonald@mailinator.com/password` e atualizar a página, você observará que o comentário publicado não é mais exibido com um avatar, em vez disso, um simples &#39;xxx&#39; é exibido.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![create-template-component](assets/create-template-component.png)
 
