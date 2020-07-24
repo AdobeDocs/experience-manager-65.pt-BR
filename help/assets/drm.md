@@ -3,7 +3,7 @@ title: Gerenciamento de direitos digitais em [!DNL Adobe Experience Manager Asse
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 6%
@@ -65,9 +65,6 @@ Você pode pesquisar ativos expirados, incluindo subativos expirados no painel P
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. Clique no [!DNL Experience Manager] logotipo para exibir o painel de pesquisa.
-
-   ![chlimage_1-151](assets/chlimage_1-151.png)
-
 1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -114,11 +111,9 @@ O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do e
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Para exibir a página de detalhes do ativo, na [!DNL Assets] interface, selecione um ativo e clique em **[!UICONTROL Propriedades]**.
+1. Para exibir a página de detalhes do ativo, na [!DNL Assets] interface, selecione um ativo e clique em Propriedades **[!UICONTROL das propriedades]** de ![](assets/do-not-localize/info-circle-icon.png)visualização.
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
-
-1. Na guia Avançado, defina uma data de expiração para o ativo a partir do campo **[!UICONTROL Expira]** .
+1. Na guia [!UICONTROL Avançado] , defina uma data de expiração para o ativo no campo **[!UICONTROL Expira]** .
 
    ![definir data e hora de expiração do ativo no campo Expira](assets/asset-properties-advanced-tab.png)
 
