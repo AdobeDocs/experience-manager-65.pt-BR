@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+source-git-commit: 81249e13db9bd173d4251683ccaacbb7f71b3209
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 4%
@@ -27,9 +27,15 @@ Você pode modificar a tela de login de todos os módulos de AEM Forms que usam 
 1. Faça logon com permissões `/lc/crx/de` de administrador.
 1. Execute as seguintes ações:
 
-   1. Replicar a estrutura hierárquica: de `/libs/livecycle/core/content` na `/apps/livecycle/core/content`. Mantenha as mesmas propriedades (nó/pasta) e controle de acesso.
+   1. Replicar a estrutura hierárquica: de `/libs/livecycle/core/content` na `/apps/livecycle/core/content`.
 
-   1. Copie a pasta de conteúdo: de `/libs/livecycle/core` a `/apps/livecycle/core`.
+      Mantenha as mesmas propriedades (nó/pasta) e controle de acesso.
+
+   1. Copie a pasta de conteúdo:
+
+      de: `/libs/livecycle/core`
+
+      para: `/apps/livecycle/core`.
 
    1. Exclua o conteúdo da `/apps/livecycle/core` pasta.
 
@@ -226,7 +232,7 @@ String browserLocale = "en";
                        <% if (loginFailed) {%>
 ```
 
-### Adicionar novo estilo ou modificar um estilo existente {#adding-new-style-or-modifying-existing-style}
+### Adicionar novo estilo ou modificar o estilo existente {#adding-new-style-or-modifying-existing-style}
 
 1. Copy `login` node:
 
@@ -244,6 +250,7 @@ String browserLocale = "en";
 
       * para `/apps/livecycle/core/components/login`
    1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar os estilos recém-adicionados.
+
 
 
 Por exemplo:
