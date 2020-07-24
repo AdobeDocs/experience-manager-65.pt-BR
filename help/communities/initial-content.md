@@ -1,6 +1,6 @@
 ---
-title: Conteúdo inicial do sandbox
-seo-title: Conteúdo inicial do sandbox
+title: Initial Sandbox Content
+seo-title: Initial Sandbox Content
 description: Criar conteúdo
 seo-description: Criar conteúdo
 uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
@@ -10,20 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 5%
 
 ---
 
 
-# Conteúdo inicial do sandbox {#initial-sandbox-content}
+# Initial Sandbox Content {#initial-sandbox-content}
 
-Nesta seção, você cria as seguintes páginas que usam o modelo [de](initial-app.md#createthepagetemplate)página:
+In this section, you create the following pages which all use the [page template](initial-app.md#createthepagetemplate):
 
 * Site do SCF Sandbox, que redirecionará para a versão em inglês da página principal.
 
    * SCF Sandbox - a página principal da versão em inglês do site.
 
-      * SCF Play - Filho da página principal que será reproduzida.
+   * SCF Play - Filho da página principal que será reproduzida.
 
 Embora este tutorial não seja fornecido para cópias [de](../../help/sites-administering/tc-prep.md)idioma, ele foi projetado para que a página raiz possa implementar a detecção do idioma preferencial para o usuário por meio do cabeçalho HTML e redirecionar para a página principal apropriada para o idioma. A convenção é usar o código de país de duas letras para o nome do nó da página, por exemplo, &quot;en&quot; para inglês, &quot;fr&quot; para francês e assim por diante.
 
@@ -53,14 +56,15 @@ Agora que há um modelo [de](initial-app.md#createthepagetemplate)página, podem
    * Nome: `an-scf-sandbox`
    * Selecionar **[!UICONTROL um modelo de reprodução SCF Sandbox]**
    * Clique em **[!UICONTROL Criar]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
 1. No painel explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site`e clique em **[!UICONTROL Nova]** > **[!UICONTROL Nova página]**:
 
    * Título: `SCF Sandbox`
    * Nome: `en`
-   * Selecionar **um modelo de reprodução SCF Sandbox **
-   * Clique em **Criar **
+   * Selecionar **[!UICONTROL um modelo de reprodução SCF Sandbox]**
+   * Clique em **[!UICONTROL Criar]**
 
 1. No painel do explorador, selecione a página que você acabou de criar `/Websites/SCF Sandbox Site/SCF Sandbox`e clique em **[!UICONTROL Nova]** > **[!UICONTROL Nova página]**
 
@@ -85,7 +89,7 @@ Quando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
 
 foi definido, que fornece a capacidade opcional de fazer referência a ativos de design em um script usando `currentDesign.getPath()`. Por exemplo
 
-* &lt;% String favoriteIcon = currentDesign.getPath() + &quot;/favicon.ico&quot;; %>
+* `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
    * Nome: `cq:designPath`
@@ -100,10 +104,10 @@ O repositório deve ser exibido da seguinte forma:
 
 * Clique em **[!UICONTROL Salvar tudo]**
 
-[ Problemas para salvar? Faça login novamente! ]
+Em caso de problemas ao salvar a configuração, faça logon novamente e configure novamente.
 
 >[!NOTE]
 >
->O uso de cq:designPath é opcional e não está relacionado ao [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que são essencialmente necessários, já que os componentes do SCF usam [clientlibs](client-customize.md#clientlibs-for-scf) para gerenciar seus JS e CSS.
+>A utilização de `cq:designPath` é opcional e não está relacionada com a [utilização de clientlibs](develop-app.md#includeclientlibsintemplate), que são essencialmente necessários, uma vez que os componentes do Quadro SEPA utilizam [clientlibs](client-customize.md#clientlibs-for-scf) para gerir o seu JS e CSS.
 
 
