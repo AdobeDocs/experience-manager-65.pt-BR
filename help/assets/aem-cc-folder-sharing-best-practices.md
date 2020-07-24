@@ -3,9 +3,9 @@ title: Adobe Experience Manager para as práticas recomendadas de compartilhamen
 description: Configure o Adobe Experience Manager para permitir que os usuários do Experience Manager Assets troquem pastas com usuários da Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->O recurso Experience Manager para compartilhamento de pastas da Creative Cloud está obsoleto. A Adobe recomenda usar recursos mais recentes, como o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou o aplicativo [de desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Saiba mais sobre as práticas [recomendadas de integração da](/help/assets/aem-cc-integration-best-practices.md)Experience Manager e da Creative Cloud.
+>O recurso Experience Manager para compartilhamento de pastas da Creative Cloud está obsoleto. A Adobe recomenda usar recursos mais recentes, como o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou o aplicativo [de desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager. Saiba mais sobre as práticas [recomendadas de integração da](/help/assets/aem-cc-integration-best-practices.md)Experience Manager e da Creative Cloud.
 
 O Adobe Experience Manager pode ser configurado para permitir que os usuários do Assets compartilhem pastas com os usuários dos aplicativos da Adobe Creative Cloud, de modo que eles estejam disponíveis como pastas compartilhadas no serviço Adobe Creative Cloud Assets. O recurso pode ser usado para trocar arquivos entre equipes de criação e usuários do Assets, especialmente quando os usuários criativos não têm acesso à implantação do Assets (eles não estão na rede corporativa).
 
