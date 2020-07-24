@@ -4,10 +4,10 @@ description: Saiba mais sobre tarefas para gerenciar coleções de ativos, como 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2200'
-ht-degree: 13%
+source-wordcount: '2203'
+ht-degree: 12%
 
 ---
 
@@ -102,19 +102,14 @@ Para criar uma coleção inteligente, siga as etapas:
 
    ![collection_list](assets/collection_listing.png)
 
-   O rótulo do botão **[!UICONTROL Criar seleção inteligente]** muda para **[!UICONTROL Editar seleção inteligente]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Then, Click the **[!UICONTROL Edit Smart Selection]** button.
-
-   ![chlimage_1-7](assets/chlimage_1-112.png)
+   The label of the **[!UICONTROL Create Smart Selection]** option changes to **[!UICONTROL Edit Smart Selection]**. Para editar as configurações da coleção inteligente, selecione **[!UICONTROL Arquivos]** na lista **[!UICONTROL Arquivos e pastas]**. Clique na opção **[!UICONTROL Editar seleção]** inteligente ![editar coleção](assets/do-not-localize/edit-smart-collection.png) inteligente.
 
 ## Adicionar ativos a uma coleção {#adding-assets-to-a-collection}
 
 Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou pastas referenciados. Coleções inteligentes usam um query de pesquisa para preencher ativos. Portanto, referências estáticas a ativos e pastas não se aplicam a eles.
 
-1. Na interface do usuário Ativos, selecione o ativo e clique em **[!UICONTROL Para coleção]** na barra de ferramentas.
-
-   ![chlimage_1-8](assets/chlimage_1-113.png)
-
-   Como alternativa, você pode arrastar o ativo para a área **[!UICONTROL Soltar na coleção]** na interface. Adicione os ativos quando o rótulo da região mudar para **[!UICONTROL Soltar para Adicionar]**.
+1. Na interface do usuário Ativos, selecione o ativo e clique em **[!UICONTROL Para coleção]** ![adicionar à coleção](assets/do-not-localize/add-to-collection.png) na barra de ferramentas.
+Como alternativa, você pode arrastar o ativo para a área **[!UICONTROL Soltar na coleção]** na interface. Adicione os ativos quando o rótulo da região mudar para **[!UICONTROL Soltar para Adicionar]**.
 
 1. Na página **[!UICONTROL Adicionar à coleção]** , selecione a coleção à qual deseja adicionar o ativo.
 
