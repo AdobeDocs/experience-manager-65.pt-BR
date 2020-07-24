@@ -1,6 +1,6 @@
 ---
-title: Console de moderação
-seo-title: Console de moderação
+title: Moderation Console
+seo-title: Moderation Console
 description: Como acessar o console Moderação
 seo-description: Como acessar o console Moderação
 uuid: d3b8a160-85b2-43f4-9891-5fafa8c48c5f
@@ -11,16 +11,19 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '2110'
+ht-degree: 4%
 
 ---
 
 
 # Console de moderação {#moderation-console}
 
-No AEM Communities, a [moderação em massa do conteúdo](/help/communities/moderate-ugc.md) da comunidade é possível tanto do autor quanto dos ambientes de publicação por administradores e moderadores da comunidade (membros confiáveis da comunidade atribuídos como moderadores).
+In AEM Communities, bulk [moderation of community content](/help/communities/moderate-ugc.md) is possible from both the author and publish environments by administrators and community moderators (trusted community members assigned as moderators).
 
-Os administradores e os moderadores da comunidade também podem executar moderação [](/help/communities/in-context.md) no contexto no ambiente de publicação.
+Administrators and community moderators may also perform [in-context moderation](/help/communities/in-context.md) in the publish environment.
 
 Um recurso de todos os sites [da](/help/communities/sites-console.md) comunidade é um item de `Administration` menu disponível para usuários que fazem logon com privilégios administrativos. O `Administration` link fornece acesso ao console Moderação.
 
@@ -45,7 +48,7 @@ O acesso ao console de Moderação de um site da comunidade publicado é feito p
 
 Ao selecionar o link Administração, o console Moderação é exibido:
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ## Acesso ao Ambiente do autor {#author-environment-access}
 
@@ -243,11 +246,11 @@ O projeto [de](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensio
 
 Para instalar a amostra do filtro Tags:
 
-1. Abra o gerenciador de pacotes na instância do autor de AEM ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) e na instância de publicação de AEM ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Abra o gerenciador de pacotes na instância AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) e na instância AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
 1. Crie o pacote a partir `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` do código Github e instale e ative o mesmo.
-1. Abra o console de pacotes na instância do autor de AEM ( `https://[aem-author]:4502/system/console/bundles`) e na instância de publicação de AEM ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Abra o console de pacotes na instância AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Crie o pacote ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` do Github e instale e ative o mesmo.
-1. Acesse o nó **/apps/social/moderação/facetas** no AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) e a instância do AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
+1. Vá para o nó **/apps/social/moderação/facetas** no AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) e AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
 1. Adicione um leitor **de utilitários-comunidades de usuários técnicos com** `jcr:read` permissões.
 
 Para expor os filtros personalizados em sites existentes da Comunidade:
