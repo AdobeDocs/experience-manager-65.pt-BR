@@ -3,10 +3,10 @@ title: Preparar ativos para tradução
 description: Crie pastas raiz de idioma para preparar ativos para tradução para suportar ativos multilíngues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 0%
+source-wordcount: '450'
+ht-degree: 1%
 
 ---
 
@@ -67,4 +67,4 @@ A interface do Experience Manager fornece um painel **[!UICONTROL Referências]*
 
 1. No painel Referências, clique em Cópias **[!UICONTROL de idioma]**. O painel Cópias [!UICONTROL de] idioma mostra as cópias de idioma dos ativos.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![cópias de idioma](assets/lang-copy2.png)
