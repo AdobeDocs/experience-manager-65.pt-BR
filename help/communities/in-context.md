@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: 917fceffb58883df83e96f60da4769046a18f3c0
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
 
 # Moderação no contexto {#in-context-moderation}
 
-Para o AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
+Para AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
 
 Ao usar um console [de](moderation.md)moderação, as informações exibidas para o conteúdo incluem um link para a página publicada para permitir o acesso a ações de moderação adicionais disponíveis ao moderar no contexto.
 
@@ -58,6 +61,7 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
    * Insira o texto do corpo
 
       Não tenho tido muito sucesso quando penduro um alimentador de beija-flores todos os anos. Parece que chegam um dia ou dois, então é isso. Eu mudo uma vez por semana é muito tempo? Eu preciso mudar isso mais cedo?
+
    * Selecionar publicação
    * Selecione Desconectar
 
@@ -89,7 +93,7 @@ Veja a seguir uma visualização do fórum visto por um visitante do site que n�
 
 Um visitante de site anônimo só pode visualização no fórum, mas não pode publicar nenhum conteúdo nem executar ações de moderação.
 
-![chlimage_1](assets/chlimage_1.png)
+![community-forum-visitante](assets/community-forum-visitor.png)
 
 ### Novo Membro ( nº 4) {#new-member}
 
@@ -107,7 +111,7 @@ Faça com que Boyd selecione Sinalizar para sinalizar o conteúdo publicado por 
 
 Fazer logoff
 
-![chlimage_1-1](assets/chlimage_1-1.png)
+![membro do fórum comunitário](assets/community-forum-member.png)
 
 ### Administrator (#3) {#administrator}
 
@@ -118,7 +122,7 @@ Aviso:
 * O administrador pode sinalizar, excluir, editar, negar, recortar, fechar, fixar, recurso.
 * O administrador pode selecionar Administração para acessar o console de moderação.
 
-![communityadmin-forum](assets/communityadmin-forum.png)
+![community-admin-forum](assets/community-admin-forum.png)
 
 Selecione o item de menu Administração para acessar o console [de](moderation.md) moderação do ambiente de publicação.
 
@@ -128,7 +132,7 @@ O filtro de pesquisa é um painel lateral que alterna entre aberto e fechado.
 
 Fazer logoff.
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderation-console-publish](assets/moderation-console-publish.png)
 
 ### Moderador da comunidade (#2) {#community-moderator}
 
@@ -141,7 +145,7 @@ Aviso:
 * Aaron pode cortar o tópico do fórum para movê-lo para outro fórum para o qual ele modera.
 * Aaron pode selecionar Administração para acessar o console de moderação.
 
-![chlimage_1-2](assets/chlimage_1-2.png)
+![community-forum-moderator](assets/community-forum-moderator.png)
 
 Selecione o item de menu Administração para acessar o console [de](moderation.md) moderação do ambiente de publicação.
 
@@ -151,7 +155,7 @@ Observe que o moderador da comunidade tem as mesmas opções que o administrador
 
 Fazer logoff.
 
-![moderatoraccess](assets/moderatoraccess.png)
+![acesso de moderador](assets/moderator-access.png)
 
 ### Autor de conteúdo (#1) {#content-author}
 
@@ -163,5 +167,5 @@ Aviso:
 * Rebekah também pode responder ou sinalizar outro conteúdo.
 * Rebekah não pode acessar o console de moderação.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![community-forum-author](assets/community-forum-author.png)
 
