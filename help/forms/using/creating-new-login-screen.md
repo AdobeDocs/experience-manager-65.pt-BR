@@ -10,14 +10,17 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 4%
 
 ---
 
 
 # Criar uma nova tela de login{#creating-a-new-login-screen}
 
-Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a tela de logon AEM Forms. Por exemplo, as modificações afetam a tela de logon da área de trabalho do Forms Manager e do AEM Forms.
+Você pode modificar a tela de login de todos os módulos de AEM Forms que usam a tela de login de AEM Forms. Por exemplo, as modificações afetam a tela de logon da área de trabalho do Forms Manager e do AEM Forms.
 
 ## Pré-requisitos {#prerequisite}
 
@@ -42,13 +45,15 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 
 1. Copie a `i18n` pasta:
 
-   * from `/libs/livecycle/core/components/login`
+   * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
 1. Exclua todas as pastas dentro `i18n` exceto uma, digamos `en`.
+
 1. Na pasta `en`, execute estas ações:
 
    1. Renomeie a pasta para o nome da localidade que deseja suportar. Por exemplo, `ar`.
+
    1. Altere o `jcr:language` valor da propriedade para `ar`(para a `ar` pasta).
    >[!NOTE]
    >
@@ -56,15 +61,15 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 
 1. Copiar `login.jsp`:
 
-   * from `/libs/livecycle/core/components/login`
+   * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
 1. Modifique o seguinte trecho de código para `/apps/livecycle/core/components/login/login.jsp`:
 
-   ***Localidade é código de idioma***
+***Localidade é código de idioma***
 
-   ```
-   String browserLocale = "en";
+```
+String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
            String prioperty = locales[i];
@@ -85,9 +90,9 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -113,12 +118,13 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
                break;
            }
        }
-   ```
+```
 
-   ***A localidade é o código do país do idioma***
 
-   ```
-   String browserLocale = "en";
+***A localidade é o código do país do idioma***
+
+```
+String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
            String prioperty = locales[i];
@@ -139,9 +145,9 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
                break;
            }
        }
-   
+
    To
-   
+
    String browserLocale = "en";
        for(int i=0; i<locales.length; i++)
        {
@@ -167,61 +173,64 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
                break;
            }
        }
-   ```
+```
 
-   ***Para alterar a localidade padrão***
+***Para alterar a localidade padrão***
 
-   ```
-   String browserLocale = "en";
+```
+String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
-   
+
    To
-   
+
    String browserLocale = "ar";
    for(int i=0; i<locales.length; i++)
-   ```
+```
 
 ### Adicionar novo texto ou modificar um texto existente {#adding-new-text-or-modifying-existing-text}
 
 1. Copiar `i18n` pasta:
 
-   * from `/libs/livecycle/core/components/login`
+   * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
 1. Agora, modifique o valor da propriedade `sling:message` do nó (sob a pasta de código de localidade desejada) para o qual você deseja alterar o texto. A tradução é feita por meio da chave mencionada no valor da `sling:key` propriedade do nó.
+
 1. Para adicionar um novo par de valores chave, execute as seguintes ações. Verifique um exemplo na captura de tela a seguir.
 
    1. Crie um nó do tipo `sling:MessageEntry`, ou copie um nó existente e renomeie-o em todas as pastas de localidade.
    1. Copiar `login.jsp` :
 
-      * from `/libs/livecycle/core/components/login`
+      * de `/libs/livecycle/core/components/login`
 
       * para `/apps/livecycle/core/components/login`
    1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar o texto recém-adicionado.
+
    ![Adicionar novo par de valores chave](assets/capture_new.png)
 
-   ```
-   div class="loginContent">
+
+```
+<div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-   
+
    To
-   
-   div class="loginContent">
+
+   <div class="loginContent">
                        <span class="loginFlow"></code>
                        <span class="loginVersion"><%= i18n.get("My Welcome Message") %></code>
                        <span class="loginVersion"><%= i18n.get("Version: 11.0.0") %></code>
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
-   ```
+```
 
-### Adicionar novo estilo ou modificar o estilo existente {#adding-new-style-or-modifying-existing-style}
+### Adicionar novo estilo ou modificar um estilo existente {#adding-new-style-or-modifying-existing-style}
 
 1. Copy `login` node:
 
-   * from `/libs/livecycle/core/content`
+   * de `/libs/livecycle/core/content`
    * para `/apps/livecycle/core/content`
 
 1. Excluir arquivos `login.js` e `jquery-1.8.0.min.js`, do nó `/apps/livecycle/core/content/login.`
@@ -231,36 +240,37 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
    1. Adicionar novos estilos a `/apps/livecycle/core/content/login/login.css`
    1. Copiar `login.jsp`
 
-      * from `/libs/livecycle/core/components/login`
+      * de `/libs/livecycle/core/components/login`
 
       * para `/apps/livecycle/core/components/login`
    1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar os estilos recém-adicionados.
 
 
-1. Por exemplo:
+Por exemplo:
 
-   * Adicione o seguinte a `/apps/livecycle/core/content/login/login.css`.
+* Adicione o seguinte a `/apps/livecycle/core/content/login/login.css`.
 
-   ```css
-   .newLoginContentArea {
+```
+css.newLoginContentArea {
     width: 700px;
     padding: 100px 0px 0px 100px;
    }
-   ```
+```
 
-   * Modifique o seguinte em /apps/livecycle/core/components/login.jsp.
+* Modifique o seguinte em `/apps/livecycle/core/components/login.jsp`.
 
-   ```
-   <div class="loginContentArea">
-   
+```
+<div class="loginContentArea">
+
    To
-   
+
    <div class="newLoginContentArea">
-   ```
+```
 
 >[!NOTE]
 >
 >Se as imagens existentes em `/apps/livecycle/core/content/login` (copiadas de `/libs/livecycle/core/content/login`) forem removidas, remova as referências correspondentes em CSS.
+
 
 ### Adicionar novas imagens {#add-new-images}
 
@@ -274,25 +284,27 @@ Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a t
 
 1. Adicione novos estilos `/apps/livecycle/core/content/login/login.css,` correspondentes a novas imagens adicionadas em `/apps/livecycle/core/content/login`.
 1. Use os novos estilos em `login.jsp` em `/apps/livecycle/core/components`.
-1. Por exemplo:
 
-   * Adicione o seguinte a `/apps/livecycle/core/content/login/login.css`
+Por exemplo:
 
-   ```css
-   .newLoginContainerBkg {
+* Adicione o seguinte a `/apps/livecycle/core/content/login/login.css`
+
+```
+css.newLoginContainerBkg {
     background-image: url(my_Bg.gif);
     background-repeat: no-repeat;
     background-position: left top;
     width: 727px;
    }
-   ```
+```
 
-   * Modifique o seguinte em /apps/livecycle/core/components/login.jsp.
+* Modifique o seguinte em `/apps/livecycle/core/components/login.jsp`.
 
-   ```
-   <div class="loginContainerBkg">
-   
+```
+<div class="loginContainerBkg">
+
    To
-   
+
    <div class="newLginContainerBkg">
-   ```
+```
+
