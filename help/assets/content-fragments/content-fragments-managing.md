@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 11%
 
 ---
@@ -120,7 +120,7 @@ Selecione o fragmento para revelar a barra de ferramentas com as ações aplicá
 
 >[!NOTE]
 >
->Muitas dessas ações são [padrão para os Ativos](/help/assets/managing-assets-touch-ui.md) e/ou o aplicativo [de desktop do](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)AEM.
+>Muitas dessas ações são [padrão para os Ativos](/help/assets/managing-assets-touch-ui.md) e/ou o aplicativo [de desktop do](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
 
 ## Abrir o Editor de fragmentos {#opening-the-fragment-editor}
 
@@ -225,7 +225,7 @@ Após abrir o fragmento, use a guia [Variações](/help/assets/content-fragments
 
 ## Criação e gerenciamento de variações no fragmento {#creating-and-managing-variations-within-your-fragment}
 
-Depois de criar o conteúdo mestre, você pode criar e gerenciar [variações](/help/assets/content-fragments/content-fragments-variations.md) desse conteúdo.
+Depois de criar o conteúdo Principal, você pode criar e gerenciar [variações](/help/assets/content-fragments/content-fragments-variations.md) desse conteúdo.
 
 ## Associar conteúdo ao fragmento {#associating-content-with-your-fragment}
 
