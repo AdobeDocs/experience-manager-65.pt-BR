@@ -3,11 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guia de gerenciamento do usuário do AEM 6.5
+user-guide-description: Learn how to manage an AEM project.
 translation-type: tm+mt
-source-git-commit: cb7df7301364eb1ce3a1ca376256d2cd5afcb2c8
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 41%
+ht-degree: 44%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 41%
    + [Lista de verificação - Referência adicional](best-practices-further-reference.md)
 + Gerenciamento - Mais referência {#managing-further-reference}
    + [Diretrizes de dimensionamento do hardware](hardware-sizing-guidelines.md) 
-   + [Enterprise DevOps](enterprise-devops.md)
+   + [DevOps empresarial](enterprise-devops.md)
    + [Práticas recomendadas de gerenciamento de SEO e URL](seo-and-url-management.md)
 + Acessibilidade {#accessibility}
    + [AEM e as diretrizes de acessibilidade da Web](web-accessibility.md)
