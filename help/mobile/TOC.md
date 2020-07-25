@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Mobile User Guide
+user-guide-title: Guia do usuário do AEM 6.5 Mobile
+user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
@@ -17,13 +21,13 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
    + [Aplicativos móveis](mobile-apps.md)
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
-   + [AEM Mobile - Preparação do GDPR](aem-mobile-gdpr-compliance.md)
+   + [AEM Mobile - Prontidão para o GDPR](aem-mobile-gdpr-compliance.md)
    + [Desenvolver aplicativos móveis](develop-mobile-apps.md)
 + Criação de aplicativos de serviços sob demanda {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gerenciamento de conteúdo](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Publicar conteúdo não publicado](mobile-on-demand-publishing-unpublishing.md)
-   + [Painel do aplicativo AEM Mobile](mobile-apps-ondemand-application-dashboard.md)
+   + [Painel de aplicativos do AEM Mobile](mobile-apps-ondemand-application-dashboard.md)
    + [Ações de criação e configuração do aplicativo](mobile-apps-ondemand-application-create-configure-action.md)
    + [Gerenciamento de artigos](mobile-on-demand-managing-articles.md)
    + [Upload de recursos compartilhados](mobile-on-demand-shared-resources.md)
@@ -35,14 +39,14 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Propriedades e nós do conteúdo](content-properties.md)
    + [Criando Configuração de Exportação de Recursos Compartilhados](creating-shared-resources-export-configuration.md)
    + [Criação e adição de modelos e componentes](mobile-ondemand-app-templates.md)
-   + [Melhores práticas](best-practices-aem-mobile.md)
+   + [Práticas recomendadas   ](best-practices-aem-mobile.md)
    + [Criando Configuração de Exportação de Artigo](creating-article-export-configuration.md)
    + [Mobile com sincronização de conteúdo](mobile-ondemand-contentsync.md)
    + [Modelos de página para aplicativos móveis](apps-architecture.md)
    + [Uso das propriedades do conteúdo para exportar conteúdo](on-demand-content-properties-exporting.md)
-   + [Renderização e entrega](rendering-and-delivery.md)
+   + [Renderização e Delivery](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
-   + [Entrega de conteúdo](develop-content-as-a-service.md)
+   + [Delivery de conteúdo](develop-content-as-a-service.md)
 + Administração do aplicativo de serviços sob demanda {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
    + [Configuração do AEM Mobile](aem-mobile-setup.md)
@@ -81,11 +85,11 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Iniciar o AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Testar aplicativos móveis](develop-mobile-apps-testing.md)
    + [Estruturar um aplicativo](phonegap-structure-an-app.md)
-   + [Acompanhar o desempenho do aplicativo com o Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
+   + [Acompanhe o desempenho do aplicativo com o Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
 + Administração do Adobe PhoneGap Enterprise {#administering-phonegap}
    + [Início rápido móvel](phonegap-mobile-quickstart.md)
    + [Administração de conteúdo para Adobe PhoneGap Enterprise com AEM](administer-phonegap.md)
-   + [Configurar o serviço Adobe PhoneGap Build Cloud](configure-phonegap-build-cloud.md)
-   + [Configuração do filtro do referenciador para permitir vazio](setting-referrer-filter-empty.md)
-   + [Configurar o serviço Adobe Mobile Services Cloud](configure-adobe-mobile-cloud-service.md)
+   + [Configure seu Cloud Service do Adobe PhoneGap Build](configure-phonegap-build-cloud.md)
+   + [Configuração do filtro de Quem indicou para permitir vazio](setting-referrer-filter-empty.md)
+   + [Configure seu Cloud Service do Adobe Mobile Services](configure-adobe-mobile-cloud-service.md)
    + [Configurar usuários e grupos de usuários](configure-users-groups.md)
