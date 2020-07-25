@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring User Guide
+user-guide-title: Guia do usuário de criação da interface de usuário clássica do AEM 6.5
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 89%
 
 ---
 
@@ -32,8 +36,8 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Editar as propriedades da página](classic-page-author-edit-page-properties.md)
    + [Anotações ao editar uma página](classic-page-author-annotations.md)
    + [Solucionar problemas do AEM durante a criação  ](classic-page-author-troubleshooting.md)
-   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)  ](classic-page-author-accessible-content.md)
-   + [Criação de uma página para dispositivos móveis  ](classic-feature-mobile.md)
+   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)](classic-page-author-accessible-content.md)
+   + [Criação de uma página para dispositivos móveis   ](classic-feature-mobile.md)
    + [Componentes da autoria de página](classic-page-author-edit-mode.md)
    + [Atalhos de teclado ao editar as páginas](classic-page-author-keyboard-shortcuts.md)
 + Recursos de site e página {#siteandpage}
