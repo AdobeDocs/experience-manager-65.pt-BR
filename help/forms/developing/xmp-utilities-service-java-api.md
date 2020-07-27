@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Utilitários XMP.
 
 [Start rápido (modo SOAP): Importação de metadados XMP usando a API Java](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente t
 
 O exemplo de código a seguir recupera, inspeciona e salva metadados XMP. (Consulte [Exportação de metadados de Documentos](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar
@@ -138,7 +141,7 @@ O exemplo de código a seguir recupera, inspeciona e salva metadados XMP. (Consu
 
 O exemplo de código a seguir importa metadados XMP e salva o novo arquivo PDF em disco. O documento PDF é baseado em um arquivo PDF chamado Loan.pdf. O documento XML que contém os metadados a serem importados para o documento PDF é baseado em um arquivo XML chamado *LoanMetaData.xml*. Para obter informações sobre esse arquivo XML, consulte [Importação de metadados para Documentos](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents)PDF.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar
