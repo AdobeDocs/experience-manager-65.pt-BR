@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Neste procedimento:
 1. 
    * **Para um único servidor,** no arquivo lc_&lt;dbaname/tunkey>.xml, adicione o seguinte após a seção &lt;security-realms>:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -110,13 +110,13 @@ Neste procedimento:
 
    Adicione o seguinte à seção &lt;server> presente depois do código acima:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
    * **Para o cluster de servidores,** na raiz [\domain\configuration\host.xml do]appserver em todos os nós, adicione o seguinte após a seção &lt;security-realms>:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -132,7 +132,7 @@ Neste procedimento:
 
    Adicione o seguinte à seção &lt;server> presente depois do código acima:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
@@ -141,7 +141,7 @@ Neste procedimento:
 
    * Para instalações chave na mão:
 
-      * No Painel de controle do Windows, clique em Ferramentas administrativas e em Serviços.
+      * No Painel de controle do Campaign do Windows, clique em Ferramentas administrativas e em Serviços.
       * Selecione JBoss para formulários Adobe Experience Manager.
       * Selecione Ação > Parar.
       * Aguarde até que o status do serviço seja exibido como interrompido.
