@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
 
 # Personalização do tema {#theme-customization}
 
-Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência específica da organização ao aplicativo AEM Forms. Por exemplo, é possível alterar a cor e a altura do plano de fundo de tarefas ou Pontos de partida. O exemplo a seguir fornece instruções para alterar:
+Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência distinta e específica da organização ao aplicativo AEM Forms. Por exemplo, é possível alterar a cor e a altura do plano de fundo de tarefas ou Pontos de partida. O exemplo a seguir fornece instruções para alterar:
 
 * instruções de exibição no lugar da descrição
 * número de rotas de exibição
@@ -40,7 +43,7 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 1. Open the `template.html` file for editing.
 1. Localize a seguinte string:
 
-   ```
+   ```jsp
    <%if ( (task.description !== "") && (task.description !== null) && (typeof task.description !== null) && (typeof task.description !== 'undefined') ) {%>
                   <div class="description_details">
                     <%= task.description %>
@@ -52,7 +55,7 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 
 1. Localize o seguinte código no `template.html` arquivo:
 
-   ```
+   ```jsp
    <ul id="task_menu_list">
                                    <li class="approve" title="<%= task.availableCommands.directCommands[0]%>" data-routename="<%= task.availableCommands.directCommands[0]%>">
                                        <%= task.availableCommands.directCommands[0]%>
@@ -64,7 +67,7 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 
 1. Comente a linha a seguir e salve o arquivo.
 
-   ```
+   ```jsp
    task.availableCommands.directCommands[1]%>">
    <%= task.availableCommands.directCommands[1]%>
    </li>
