@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -46,7 +46,7 @@ As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos
 
 O exemplo de código a seguir adiciona um usuário chamado Wendy Blue aos AEM Forms. (Consulte [Adicionar usuários](/help/forms/developing/users.md#adding-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -164,7 +164,7 @@ O exemplo de código a seguir adiciona um usuário chamado Wendy Blue aos AEM Fo
 
 O exemplo de código a seguir exclui um usuário chamado Wendy Blue de AEM Forms. (Consulte [Excluindo Usuários](/help/forms/developing/users.md#deleting-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -260,7 +260,7 @@ O exemplo de código a seguir exclui um usuário chamado Wendy Blue de AEM Forms
 
 O exemplo de código a seguir localiza um usuário local e o grupo local ao qual o usuário pertence. (See [Managing Users and Groups](/help/forms/developing/users.md#managing-users-and-groups).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -384,7 +384,7 @@ O exemplo de código a seguir localiza um usuário local e o grupo local ao qual
 
 O exemplo de código a seguir atribui a função Usuário de serviços a um principal, imprime as funções que o principal tem e, subsequentemente, remove a função do principal. Dois serviços são chamados para este start rápido: o serviço DiretoryManager e o serviço AuthorizationManager.(Consulte [Gerenciamento de funções e permissões](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -527,7 +527,7 @@ O exemplo de código a seguir atribui a função Usuário de serviços a um prin
 
 O exemplo de código Java a seguir sincroniza os usuários usando as APIs de gerenciamento de usuários. (Consulte Sincronização [Programática de Usuários](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -636,7 +636,7 @@ O exemplo de código Java a seguir sincroniza os usuários usando as APIs de ger
 
 O exemplo de código a seguir adiciona um usuário chamado Wendy Blue aos AEM Forms. (Consulte [Adicionar usuários](/help/forms/developing/users.md#adding-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -754,7 +754,7 @@ O exemplo de código a seguir adiciona um usuário chamado Wendy Blue aos AEM Fo
 
 O exemplo de código a seguir cria um grupo chamado AdobeGroup para AEM Forms. (Consulte [Criação de grupos](/help/forms/developing/users.md#creating-groups).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -906,7 +906,7 @@ O exemplo de código a seguir cria um grupo chamado AdobeGroup para AEM Forms. (
 
 Os seguintes modelos de código Java gerenciando nós de preferências usando as APIs de gerenciamento de usuários. (Consulte Gerenciamento [programático dos nós](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)de preferências)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1009,7 +1009,7 @@ public class ManagePreferences {
 
 Os seguintes modelos de código Java gerenciando nós de preferências usando as APIs de gerenciamento de usuários ( Consulte Gerenciamento [programático dos nós](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)de preferências)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
