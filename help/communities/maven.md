@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Agora existem dois artefatos &quot;uber&quot; que substituem artefatos individua
 
 ## Artefato de molar da API das Comunidades {#communities-api-jar-artifact}
 
-Veja a seguir um exemplo de um GAV para o pod de API do AEM Communities:
+Veja a seguir um exemplo de um GAV para o jar de API do AEM Communities:
 
 ```xml
 <dependency>
@@ -41,12 +44,12 @@ Veja a seguir um exemplo de um GAV para o pod de API do AEM Communities:
 </dependency>
 ```
 
-Verifique se a versão especificada corresponde à versão do pacote Communities instalada para o AEM Communities. Para verificar o número da versão instalada:
+Verifique se a versão especificada corresponde à versão do pacote Communities instalada para AEM Communities. Para verificar o número da versão instalada:
 
 1. Faça logon com privilégios administrativos.
 1. Navegue até [Package Manager](../../help/sites-administering/package-manager.md). Por exemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-1. Localize o pacote *cq-socialCommunities-pkg-1.x.xxx*
+1. Localize o pacote: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extraia a versão do nome do pacote:
    * A primeira versão do AEM 6.3 é a versão 1.11.170.
    * Os pacotes de recursos serão as versões 1.12.xxx.
