@@ -10,7 +10,10 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '6067'
+ht-degree: 1%
 
 ---
 
@@ -25,18 +28,18 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 * Criar um tema
 * Editar e copiar um tema existente
-* Baixar e carregar um tema existente no servidor de formulários AEM
+* Baixar e carregar um tema existente no servidor AEM Forms
 * Gerenciar dependências para um tema
 
 ## Criação, download ou upload de um tema {#creating-downloading-or-uploading-a-theme}
 
-Com o AEM Forms, você pode criar, baixar ou carregar temas. Um tema é criado como outros ativos, como formulários, documentos e letras. O tema é salvo como uma entidade separada, completa com meta-propriedades como formulários. Temas sendo uma entidade separada permitem a reutilização em vários formulários adaptáveis e comunicações interativas. Você também pode mover um tema para uma instância diferente do AEM Forms e reutilizá-lo.
+Com o AEM Forms, você pode criar, baixar ou carregar temas. Um tema é criado como outros ativos, como formulários, documentos e letras. O tema é salvo como uma entidade separada, completa com meta-propriedades como formulários. Temas sendo uma entidade separada permitem a reutilização em vários formulários adaptáveis e comunicações interativas. Você também pode mover um tema para uma instância diferente de AEM Forms e reutilizá-lo.
 
 ### Criação de um tema {#creating-a-theme}
 
 Execute as seguintes etapas para criar um tema:
 
-1. Clique em **Adobe Experience Manager**, **Forms** e clique em **Temas**.
+1. Clique em **Adobe Experience Manager**, clique em **Formulários** e, em seguida, clique em **Temas**.
 
 1. Na página Temas, clique em **Criar > Tema**.
 Um assistente para criar um tema é iniciado.
@@ -55,7 +58,7 @@ Um assistente para criar um tema é iniciado.
 
 Você pode exportar temas como um arquivo zip e usá-los em outros projetos ou instâncias do AEM. Para baixar um tema:
 
-1. Clique em **Adobe Experience Manager**, **Forms** e clique em **Temas**.
+1. Clique em **Adobe Experience Manager**, clique em **Formulários** e, em seguida, clique em **Temas**.
 
 1. Na página Temas, **selecione** um tema e clique em **Download**. Será exibida uma caixa de diálogo com os detalhes do tema.
 
@@ -63,7 +66,7 @@ Você pode exportar temas como um arquivo zip e usá-los em outros projetos ou i
 
 >[!NOTE]
 >
->Se você fizer download de um tema que tenha um formulário adaptável associado e o formulário adaptativo associado for baseado em um modelo personalizado, faça o download do modelo personalizado. Ao carregar o tema e o formulário adaptável baixados em um servidor de formulários AEM, faça upload do modelo personalizado relacionado também.
+>Se você fizer download de um tema que tenha um formulário adaptável associado e o formulário adaptativo associado for baseado em um modelo personalizado, faça o download do modelo personalizado. Ao carregar o tema e o formulário adaptativo baixados em um servidor AEM Forms, faça upload do modelo personalizado relacionado também.
 
 ### Fazer upload de um tema {#uploading-a-theme}
 
@@ -71,7 +74,7 @@ Você pode usar temas criados com predefinições de estilização em seu projet
 
 Para carregar um tema:
 
-1. Clique em **Adobe Experience Manager**, **Forms** e clique em **Temas**.
+1. Clique em **Adobe Experience Manager**, clique em **Formulários** e, em seguida, clique em **Temas**.
 
 1. Na página Temas, clique em **Criar > Upload** de arquivo.
 1. No prompt Upload de arquivo, navegue e selecione um pacote de tema no computador e clique em **Carregar**.
@@ -223,7 +226,7 @@ Um componente específico afeta objetos da categoria específica. Quando você e
    * **CSS** de Visualização: Permite que você visualização o CSS do componente selecionado
    Além disso, na barra lateral, na parte inferior há uma seta. Ao clicar na seta, você obtém mais duas opções: **Simule o sucesso** e **simule o erro.** Essas opções, juntamente com as opções descritas acima, são discutidas detalhadamente [abaixo](../../forms/using/themes.md#using-rail).
 
-[ Editor de ![temas com Painel e Tela realçada.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Tela
+[ ![Editor de temas com Painel e Tela realçada.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Tela
 
 ### Componentes de estilo {#styling-components}
 
@@ -241,7 +244,7 @@ Clique em **EXPANDIR TUDO** na barra lateral para visualização, selecionar e e
 
 ### Layouts de painel de estilo {#styling-panel-layouts-br}
 
-Temas no AEM Forms suportam estilos de elementos no layout de painéis em seus formulários e comunicações interativas. O estilo de elementos em layouts predefinidos e layouts personalizados é compatível.
+Temas em AEM Forms suportam estilos de elementos no layout de painéis em seus formulários e comunicações interativas. O estilo de elementos em layouts predefinidos e layouts personalizados é compatível.
 
 Os painéis predefinidos incluem:
 
@@ -296,7 +299,7 @@ O botão mais na biblioteca de ativos permite salvar permanentemente o estilo co
 
 Quando você fornece um nome personalizado para um estilo, o estilo é vinculado a um tema e não está mais disponível para outros temas. Para excluir um estilo salvo:
 
-1. Na barra de ferramentas CANVAS, clique em Opções **de** tema ![](assets/theme-options.png) > **Gerenciar estilos**.
+1. Na barra de ferramentas CANVAS, clique em Opções **de** tema Opções ![de](assets/theme-options.png) tema > Opções **de** gerenciamento de estilos.
 1. Na caixa de diálogo Gerenciar estilos, selecione um estilo salvo e clique em **Excluir**.
 
    ![Excluir o estilo salvo](assets/manage-styles.png)
@@ -415,7 +418,7 @@ As opções para personalizar estilos de estado variam para componentes diferent
    <td><p>Permite adicionar efeitos especiais aos componentes, como opacidade, modo de mesclagem e sombras. </p> </td>
   </tr>
   <tr>
-   <td><p>Avançado   </p> </td>
+   <td><p>Avançado </p> </td>
    <td><p>Permite adicionar:</p>
     <ul>
      <li>Propriedades para <code>::before</code> e <code>::after</code> pseudo-elementos para adicionar conteúdo depois ou antes do conteúdo padrão no seletor, e estilizá-lo.<br /> Consulte Pseudo-elementos <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">do</a>CSS.</li>
@@ -490,8 +493,8 @@ Agora é possível usar fontes disponíveis em um serviço da Web em um formulá
 
 Execute as seguintes etapas para configurar o Typekit no AEM:
 
-1. Na instância do autor, clique em ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martelo](assets/hammer.png) de ferramentas > Implantação > Serviços em nuvem.
-1. Na página Serviços **da** Cloud, navegue até Serviços **de** terceiros > **Typekit** e clique em **Configurar agora** em Typekit. Se uma configuração já estiver disponível, clique no botão **+** para criar uma nova instância.
+1. Na instância do autor, clique em ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martelo](assets/hammer.png) de ferramentas > Implantação > Cloud Service.
+1. Na página **Cloud Service** , navegue até Serviços **de** terceiros > **Typekit** e clique em **Configurar agora** em Typekit. Se uma configuração já estiver disponível, clique no botão **+** para criar uma nova instância.
 1. Na caixa de diálogo **Criar configuração** , especifique um título para a configuração e clique em **Criar**.
 
    Você é redirecionado para a página de configuração.
@@ -580,7 +583,7 @@ A `themeOverride` opção permite fornecer um caminho para um tema. Altera o tem
 
 ## Obter aparência específica usando Temas {#specific-af-appearance}
 
-Com o AEM Forms, juntamente com o tema de tela predefinido, há muitos outros temas. Se quiser projetar seu formulário ou comunicação interativa usando outros temas, juntamente com alterações adicionais, copie o tema da pasta Biblioteca de Temas. Cole os temas copiados fora da pasta Biblioteca de Temas e edite o tema copiado de acordo com as alterações desejadas.
+Com AEM Forms, juntamente com o tema predefinido da tela, há muitos outros temas. Se quiser projetar seu formulário ou comunicação interativa usando outros temas, juntamente com alterações adicionais, copie o tema da pasta Biblioteca de Temas. Cole os temas copiados fora da pasta Biblioteca de Temas e edite o tema copiado de acordo com as alterações desejadas.
 
 Para copiar um tema, execute as seguintes etapas:
 
@@ -594,7 +597,7 @@ Depois de personalizar o tema, aplique-o ao formulário ou à comunicação inte
 
 >[!NOTE]
 >
->Não modifique os temas disponíveis na pasta Biblioteca de Temas. Esta pasta contém temas do sistema. Todas as alterações feitas nesses temas são substituídas pela instalação de uma versão mais recente ou correção de AEM Forms.
+>Não modifique os temas disponíveis na pasta Biblioteca de Temas. Esta pasta contém temas do sistema. Qualquer alteração que você tenha feito nesses temas será substituída na instalação de uma versão mais recente ou de uma correção de AEM Forms.
 
 ## Impacto em outros casos de uso de formulários adaptáveis {#impact-on-other-adaptive-form-use-cases}
 
@@ -641,6 +644,7 @@ Você pode ver o CSS gerado usando as seguintes opções:
       1. Na página Propriedades que é aberta, clique em **Avançado**.
       1. Na guia Avançado, no campo Local do Clientlib, procure e selecione a biblioteca de cliente que deseja usar.
       1. Clique em **Salvar**.
+
       O estilo especificado na biblioteca do cliente é importado no tema que o utiliza. Por exemplo, você especifica o estilo para caixa de texto, caixa numérica e alternar na biblioteca do cliente. Quando você importa a biblioteca do cliente no tema, o estilo da caixa de texto, da caixa numérica e do switch é importado. Em seguida, é possível estilizar outros componentes usando o editor de temas.
 Você também pode criar um tema, criar cópias dele e modificar o estilo fornecido nos temas copiados para casos de uso semelhantes.
 Consulte [Obtendo aparência específica usando Temas](#specific-af-appearance)
