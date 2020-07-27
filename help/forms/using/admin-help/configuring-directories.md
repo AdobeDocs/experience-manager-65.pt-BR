@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3246'
+ht-degree: 0%
 
 ---
 
@@ -240,7 +243,7 @@ A criação de um VLV requer um par de entradas que incluem as classes `vlvSearc
 
 Este é um exemplo de script LDIF para entrada VLV para usuários:
 
-```as3
+```text
  dn: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
  objectclass: top
  objectclass: vlvSearch
@@ -290,11 +293,11 @@ Depois de configurar as configurações de diretório e criar as entradas VLV LD
 1. Depois de criar entradas de objeto, pare o servidor Sun ONE.
 1. Usando a ferramenta vlvindex, gere o índice digitando o seguinte texto:
 
-   *instância* do servidor de diretório `\vlvindex.bat -n userRoot -T lcuser`
+   *instância do servidor de diretório* `\vlvindex.bat -n userRoot -T lcuser`
 
    A seguinte saída é gerada:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>..\..\slapd-chetanmeh-xp3\vlvindex.bat -n userRoot -T livecycle
     [21/Nov/2007:16:47:26 +051800] - userRoot: Indexing VLV: livecycle
     [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 1000 entries (5%).
@@ -309,11 +312,11 @@ Depois de configurar as configurações de diretório e criar as entradas VLV LD
 
 1. Se o VLV também estiver ativado para grupos, crie o índice correspondente para os grupos. Verifique se os índices foram criados executando o seguinte comando:
 
-   *sun one server diretory* `\shared\bin>ldapsearch -h`*hostname *hostname`-p`*port no*`-s base -b "" objectclass=*`
+   *sun one server diretory* `\shared\bin>ldapsearch -h`*hostname *hostname`-p`*port no* `-s base -b "" objectclass=*`
 
    A saída, como os seguintes dados de amostra, é gerada:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*
     ldapsearch.exe: started Tue Nov 27 16:34:20 2007
     version: 1
