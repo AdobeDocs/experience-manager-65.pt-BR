@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ O SOAP (Java API Quick Start) está disponível para o Endpoint Registry.
 
 [Início rápido: Recuperando informações do conector do ponto de extremidade usando a API Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente t
 
 O exemplo de código Java a seguir adiciona um ponto de extremidade EJB a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos finais](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -150,7 +153,7 @@ O exemplo de código Java a seguir adiciona um ponto de extremidade EJB a um ser
 
 O exemplo de código Java a seguir adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -254,7 +257,7 @@ O exemplo de código Java a seguir adiciona um terminal de Pasta assistida a um 
 >
 >Você deve incluir o arquivo WatchedFolderEndpointConfigConstants.java no seu projeto para compilar e executar o seguinte start rápido. (Consulte [Valores de configuração de pasta monitorados no arquivo](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)constante.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -389,7 +392,7 @@ O exemplo de código Java a seguir adiciona um ponto de extremidade Email a um s
 >
 >Você deve incluir o arquivo EmailEndpointConfigConstants.java no seu projeto para compilar e executar o seguinte start rápido. (Consulte o arquivo [constante de valores de configuração de](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)email.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -528,7 +531,7 @@ O exemplo de código Java a seguir adiciona um ponto de extremidade Email a um s
 
 O exemplo de código Java a seguir adiciona um terminal Remoting a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos Finais](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)Remotos.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -633,7 +636,7 @@ O exemplo de código Java a seguir adiciona um terminal Remoting a um serviço c
 
 O exemplo de código Java a seguir adiciona um terminal do TaskManager a um serviço chamado *MyApplication/EncryptDocument*. Observe que o nome da categoria é *EncryptProcess*. (Consulte [Adicionando Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)do TaskManager.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -742,7 +745,7 @@ O exemplo de código Java a seguir adiciona um terminal do TaskManager a um serv
 
 O exemplo de código Java a seguir modifica um endpoint de Pasta assistida.O endpoint é para o processo *MyApplication/EncryptDocument* . A pasta assistida é alterada para `C:\NewWatchedFolder`. (Consulte [Modificando Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -892,7 +895,7 @@ O exemplo de código Java a seguir modifica um endpoint de Pasta assistida.O end
 
 O código Java a seguir remove um terminal EJB de um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Remoção de pontos de extremidade](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -1011,7 +1014,7 @@ O código Java a seguir remove um terminal EJB de um serviço chamado *MyApplica
 
 O código Java a seguir recupera informações sobre um endpoint de Pasta assistida. As informações sobre cada valor de configuração são recuperadas e exibidas. Esta lista de código especifica se cada valor de configuração é obrigatório ou opcional. Além disso, o nome e o valor de cada valor de configuração são exibidos. (Consulte [Recuperando Informações](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)do Conector do Ponto Final.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
