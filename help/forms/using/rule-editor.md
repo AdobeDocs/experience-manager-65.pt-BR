@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '6822'
+ht-degree: 0%
 
 ---
 
@@ -134,11 +137,11 @@ Ao escrever uma regra Quando, você pode acionar a ação Limpar valor de. A aç
 
 Além do serviço de modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço da Web. No entanto, um serviço de modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para chamar um serviço.
 
-Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
 
 **Defina o valor de** Calcula e define o valor do objeto especificado. Você pode definir o valor do objeto como uma string, o valor de outro objeto, o valor calculado usando a expressão ou função matemática, o valor de uma propriedade de um objeto ou o valor de saída de um serviço de modelo de dados de formulário configurado. Quando você escolhe a opção de serviço da Web, ela exibe todos os serviços configurados em todos os modelos de dados de formulário na instância do AEM. Ao escolher um serviço de modelo de dados de formulário, são exibidos campos adicionais nos quais é possível mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado.
 
-Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
 
 O tipo de regra **Definir propriedade** permite definir o valor de uma propriedade do objeto especificado com base em uma ação de condição.
 
@@ -343,7 +346,7 @@ Exibe o título do objeto de formulário adaptável pelo qual você iniciou o ed
 
 ### B. Form objects and functions {#b-form-objects-and-functions-br}
 
-O painel à esquerda na interface do usuário do editor de regras inclui duas guias: Objetos **[!UICONTROL e]** funções do **[!UICONTROL Forms]**.
+O painel à esquerda na interface do usuário do editor de regras inclui duas guias: **[!UICONTROL Objetos]** e **[!UICONTROL funções]** do Forms.
 
 A guia Objetos de formulário mostra uma visualização hierárquica de todos os objetos contidos no formulário adaptável. Ele exibe o título e o tipo dos objetos. Ao gravar uma regra, é possível arrastar e soltar objetos de formulário no editor de regras. Ao criar ou editar uma regra quando você arrasta e solta um objeto ou função em um espaço reservado, o espaço reservado automaticamente usa o tipo de valor apropriado.
 
@@ -473,6 +476,7 @@ Execute as seguintes etapas para gravar regras:
    * Selecione **Mais** no campo **Selecionar operador** .
 
    * Selecione ou arraste e solte na guia Objeto de formulários o campo Salário **do** Cônjuge no outro objeto **Soltar ou selecione aqui** .
+
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
 1. Em seguida, toque na área realçada ao redor do campo de expressão e toque em **Estender Expressão**.
@@ -500,6 +504,7 @@ Execute as seguintes etapas para gravar regras:
    * Selecione **é igual** ao campo **Selecionar operador** .
 
    * Selecione String no outro objeto **Drop ou selecione aqui** campo e especifique **Casado** no campo **Inserir uma string** .
+
    A regra finalmente aparece da seguinte forma no editor de regras.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Toque em **Concluído** para salvar a regra.
@@ -546,30 +551,40 @@ For more information, see [usejsdoc.org](https://usejsdoc.org/).
 
 Tags `jsdoc` suportadas:
 
-* **Sintaxe privada**: `@private`Uma função particular não é incluída como uma função personalizada.
+* **Sintaxe privada**: 
+Uma função privada não é incluída como uma função personalizada.`@private`
+Uma função privada não é incluída como uma função personalizada.
 
-* **Sintaxe de nome**: `@name funcName <Function Name>`Como alternativa, `,` você pode usar: `@function funcName <Function Name>` ou **** `@func` `funcName <Function Name>`.
+* **Sintaxe de nome**: 
+Como `@name funcName <Function Name>`alternativa, `,` você pode usar: `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
    `funcName` é o nome da função (sem espaços permitidos).
    `<Function Name>` é o nome de exibição da função.
 
-* **Sintaxe do membro**: `@memberof namespace`Anexa uma namespace à função.
+* **Sintaxe do membro**: 
+Anexa uma namespace à função.`@memberof namespace`
+Anexa uma namespace à função.
 
-* **Sintaxe do parâmetro**: `@param {type} name <Parameter Description>`Como alternativa, você pode usar: `@argument``{type} name <Parameter Description>` ou ****`@arg` `{type}` `name <Parameter Description>`.
+* **Sintaxe do parâmetro**: 
+Como alternativa, você pode usar: `@param {type} name <Parameter Description>`
+Como alternativa, você pode usar: `@argument` `{type} name <Parameter Description>` **ou** `@arg` `{type}``name <Parameter Description>`.
 Mostra os parâmetros usados pela função. Uma função pode ter várias tags de parâmetro, uma tag para cada parâmetro na ordem de ocorrência.
    `{type}` representa o tipo de parâmetro. Os tipos de parâmetro permitidos são:
 
    1. string
    1. número
    1. boolean
+
    Todos os outros tipos de parâmetros são classificados em um dos tipos anteriores. Nenhum é suportado. Certifique-se de selecionar um dos tipos acima. Os tipos não distinguem maiúsculas de minúsculas. Os espaços não são permitidos no parâmetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Sintaxe do tipo** de retorno: `@return {type}`Como alternativa, você pode usar `@returns {type}`.
+* **Sintaxe do tipo**de retorno: 
+Como alternativa, você pode usar `@return {type}`como alternativa `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
 {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
    1. string
    1. número
    1. boolean
+
    Todos os outros tipos de retorno são classificados em um dos tipos acima. Nenhum é suportado. Certifique-se de selecionar um dos tipos acima. Os tipos de retorno não distinguem maiúsculas de minúsculas.
 
 >[!NOTE]
@@ -606,7 +621,7 @@ Para abrir um formulário no modo de edição, selecione-o e toque em **Abrir**.
 
 **Instrução de função**
 
-```
+```javascript
 function area(len) {
     return len*len;
 }
@@ -616,7 +631,7 @@ Essa função é incluída sem `jsdoc` comentários.
 
 **Expressão da função**
 
-```
+```javascript
 var area;
 //Some codes later
 /** */
@@ -750,7 +765,7 @@ Quando o usuário indicar que está morando no seu endereço residencial atual h
 
 ## Impacto do editor de regras em scripts existentes {#impact-of-rule-editor-on-existing-scripts}
 
-No AEM Forms versões anteriores ao AEM 6.1 Forms feature pack 1, autores e desenvolvedores de formulários usavam para gravar expressões na guia Scripts da caixa de diálogo Editar componente para adicionar comportamento dinâmico aos formulários adaptativos. A guia Scripts agora é substituída pelo editor de regras.
+Em versões do AEM Forms anteriores ao AEM 6.1 Forms feature pack 1, autores e desenvolvedores de formulários usavam para escrever expressões na guia Scripts da caixa de diálogo Editar componente para adicionar comportamento dinâmico aos formulários adaptativos. A guia Scripts agora é substituída pelo editor de regras.
 
 Quaisquer scripts ou expressões que precisem ter gravado na guia Scripts estão disponíveis no editor de regras. Embora não seja possível visualização ou edição no editor visual, se você fizer parte do grupo de usuários avançados dos formulários, poderá editar scripts no editor de código.
 
