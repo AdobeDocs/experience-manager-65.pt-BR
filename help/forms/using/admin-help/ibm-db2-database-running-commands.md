@@ -1,8 +1,8 @@
 ---
 title: '"Banco de dados IBM DB2: Executar comandos para manutenção regular"'
 seo-title: '"Banco de dados IBM DB2: Executar comandos para manutenção regular"'
-description: Este documento lista os comandos do IBM DB2 recomendados para a manutenção regular do banco de dados de formulários do AEM.
-seo-description: Este documento lista os comandos do IBM DB2 recomendados para a manutenção regular do banco de dados de formulários do AEM.
+description: Este documento lista comandos IBM DB2 recomendados para manutenção regular do banco de dados de formulários do AEM.
+seo-description: Este documento lista comandos IBM DB2 recomendados para manutenção regular do banco de dados de formulários do AEM.
 uuid: 235d59df-b9b9-4770-8b7d-00713701c3c2
 contentOwner: admin
 content-type: reference
@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Os seguintes comandos do IBM DB2 são recomendados para a manutenção regular do banco de dados de formulários do AEM. Para obter informações detalhadas sobre manutenção e ajuste de desempenho para seu banco de dados DB2, consulte *IBM DB2 Administration Guide*.
 
-* **** runstats: Esse comando atualiza estatísticas que descrevem as características físicas de uma tabela de banco de dados, juntamente com seus índices associados. Instruções SQL dinâmicas geradas por formulários AEM usam automaticamente essas estatísticas atualizadas, mas instruções SQL estáticas criadas dentro de um banco de dados exigem que o `db2rbind` comando também seja executado.
-* **** db2rbind: Esse comando reassocia todos os pacotes no banco de dados. Use esse comando depois de executar o `runstats` utilitário para revalidar todos os pacotes no banco de dados.
-* **** tabela de reorganização ou índice: Este comando verifica se é necessária uma reorganização de algumas tabelas e índices.
+* **runstats:** Esse comando atualiza estatísticas que descrevem as características físicas de uma tabela de banco de dados, juntamente com seus índices associados. Instruções SQL dinâmicas geradas por formulários AEM usam automaticamente essas estatísticas atualizadas, mas instruções SQL estáticas criadas dentro de um banco de dados exigem que o `db2rbind` comando também seja executado.
+* **db2rbind:** Esse comando reassocia todos os pacotes no banco de dados. Use esse comando depois de executar o `runstats` utilitário para revalidar todos os pacotes no banco de dados.
+* **tabela de reorganização ou índice:** Este comando verifica se é necessária uma reorganização de algumas tabelas e índices.
 
    À medida que seus bancos de dados crescem e mudam, recalcular as estatísticas da tabela é essencial para melhorar o desempenho do banco de dados e deve ser feito regularmente. Esses comandos podem ser executados manualmente usando scripts ou usando um trabalho cron.
 
@@ -39,11 +42,11 @@ Execute o `runstats` comando nos seguintes índices e tabelas de banco de dados 
 
 >[!NOTE]
 >
->O `runstats` comando precisa ser executado somente durante a primeira sincronização do banco de dados. No entanto, deve ser executado duas vezes durante esse processo: uma vez durante a sincronização de Usuários e Grupos e, em seguida, durante a sincronização de Membros do Grupo. Certifique-se de que o script seja executado completamente sempre que você o executar.
+>O `runstats` comando precisa ser executado somente durante a primeira sincronização do banco de dados. No entanto, ele deve ser executado duas vezes durante esse processo: uma vez durante a sincronização de Usuários e Grupos e, em seguida, durante a sincronização de Membros do Grupo. Certifique-se de que o script seja executado completamente sempre que você o executar.
 
-Para obter a sintaxe e o uso corretos, consulte a documentação do fabricante do banco de dados. Abaixo, `<schema>` é usado para indicar o esquema associado ao nome de usuário do DB2. Se você tiver uma instalação padrão simples do DB2, este é o nome do esquema do banco de dados.
+Para obter a sintaxe e o uso corretos, consulte a documentação do fabricante do banco de dados. Abaixo, `<schema>` é usado para indicar o schema associado ao nome de usuário do DB2. Se você tiver uma instalação padrão simples do DB2, este é o nome do schema do banco de dados.
 
-```as3
+```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
  
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
@@ -69,7 +72,7 @@ Para obter a sintaxe e o uso corretos, consulte a documentação do fabricante d
 
 Execute o `reorg` comando nos seguintes índices e tabelas de banco de dados de formulários AEM. Para obter a sintaxe e o uso corretos, consulte a documentação do fabricante do banco de dados.
 
-```as3
+```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
  
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
