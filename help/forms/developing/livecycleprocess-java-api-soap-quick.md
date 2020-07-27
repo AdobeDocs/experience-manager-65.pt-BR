@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
@@ -31,17 +34,17 @@ O Start rápido da API Java (SOAP) está disponível para processos. Uma instân
 
 [Start rápido (Modo SOAP): Recuperar o status de um trabalho usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->start rápidos localizados em Programação com formulários AEM são baseados no Forms se você estiver usando outro sistema operacional, como o Unix, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
+>Os start rápidos localizados em Programação com AEM Forms são baseados no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
 
 ## Start rápido (modo SOAP): Procurando instâncias de processo usando a API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
 O exemplo de código Java a seguir pesquisa instâncias de processo que são baseadas no processo *MortgageLoan - Prebuild* .
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -159,7 +162,7 @@ O exemplo de código Java a seguir pesquisa instâncias de processo que são bas
 
 O exemplo de código Java a seguir suspende uma instância do processo. Para suspender com êxito uma instância do processo, é necessário o identificador de invocação do processo que pode ser obtido ao invocar um processo de longa duração usando a API de Chamada.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -251,7 +254,7 @@ O exemplo de código Java a seguir suspende uma instância do processo. Para sus
 
 O exemplo de código Java a seguir start uma instância de processo suspensa.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -339,7 +342,7 @@ O exemplo de código Java a seguir start uma instância de processo suspensa.
 
 O exemplo de código Java a seguir conclui uma instância do processo com o valor identificador 756c22860a242fb101ec7a5bc0977fd6.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -430,7 +433,7 @@ O exemplo de código Java a seguir conclui uma instância do processo com o valo
 
 O seguinte código Java remove dados de um processo chamado *SecureDocument*. É usado um filtro que especifica a expurgação de dados para as instâncias de processo em que a variável de processo chamada *inValue* é maior que 200.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -535,9 +538,9 @@ O seguinte código Java remove dados de um processo chamado *SecureDocument*. É
 
 ## Start rápido (Modo SOAP): Recuperar o status de um trabalho usando a API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-O exemplo de código a seguir recupera o status de 10 trabalhos do AEM Forms.
+O exemplo de código a seguir recupera o status de 10 AEM Forms de trabalhos.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
