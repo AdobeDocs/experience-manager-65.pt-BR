@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1831'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ onde &lt;diretório ** de instalação> é o caminho de instalação. Para os fi
 
 Para acessar o design de formulário Purchase Order Dynamic.xdp, especifique `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` como o nome do formulário (o primeiro parâmetro passado para o `renderPDFForm` método) e `repository:///` como o valor do URI raiz do conteúdo.
 
-Os arquivos de dados XML usados pelo aplicativo da Web foram movidos da pasta Dados para `C:\Adobe`(o sistema de arquivos que pertence ao servidor de aplicativos J2EE que hospeda o AEM Forms). Os nomes dos arquivos são Purchase Order *Canada.xml* e Purchase Order *US.xml*.
+Os arquivos de dados XML usados pelo aplicativo da Web foram movidos da pasta Dados para `C:\Adobe`(o sistema de arquivos que pertence aos AEM Forms de hospedagem do servidor de aplicativos J2EE). Os nomes dos arquivos são Purchase Order *Canada.xml* e Purchase Order *US.xml*.
 
 >[!NOTE]
 >
@@ -75,7 +78,7 @@ Para criar aplicativos baseados na Web que renderizam formulários com base em f
 
 >[!NOTE]
 >
->Algumas dessas etapas dependem do aplicativo J2EE no qual o AEM Forms é implantado. Por exemplo, o método usado para implantar um arquivo WAR depende do servidor de aplicativos J2EE que você está usando. Esta seção supõe que o AEM Forms seja implantado no JBoss®.
+>Algumas dessas etapas dependem do aplicativo J2EE no qual os AEM Forms são implantados. Por exemplo, o método usado para implantar um arquivo WAR depende do servidor de aplicativos J2EE que você está usando. Esta seção supõe que os AEM Forms sejam implantados no JBoss®.
 
 ### Criação de um projeto da Web {#creating-a-web-project}
 
@@ -122,7 +125,7 @@ Para obter a localização desses arquivos JAR, consulte [Inclusão de arquivos]
 
 Você cria uma lógica de aplicativo Java que chama o serviço Forms de dentro do servlet Java. O código a seguir mostra a sintaxe do `RenderFormFragment` Java Servlet:
 
-```as3
+```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -145,15 +148,16 @@ Para renderizar um formulário com base em fragmentos usando a API de serviço d
 1. Crie um `FormsServiceClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
 1. Crie um `URLSpec` objeto que armazene valores de URI usando seu construtor.
 1. Chame o método do `URLSpec` objeto `setApplicationWebRoot` e passe um valor de string que representa a raiz da Web do aplicativo.
-1. Chame o método do `URLSpec` objeto `setContentRootURI` e transmita um valor de string que especifica o valor do URI raiz do conteúdo. Verifique se o design de formulário e os fragmentos estão localizados no URI raiz do conteúdo. Caso contrário, o serviço Forms lança uma exceção. Para fazer referência ao repositório do AEM Forms, especifique `repository://`.
+1. Chame o método do `URLSpec` objeto `setContentRootURI` e transmita um valor de string que especifica o valor do URI raiz do conteúdo. Verifique se o design de formulário e os fragmentos estão localizados no URI raiz do conteúdo. Caso contrário, o serviço Forms lança uma exceção. Para fazer referência ao repositório de AEM Forms, especifique `repository://`.
 1. Chame o método do `URLSpec` objeto `setTargetURL` e passe um valor de string que especifique o valor do URL do público alvo para onde os dados do formulário são postados. Se você definir o URL do público alvo no design de formulário, poderá passar uma string vazia. Também é possível especificar o URL para o qual um formulário é enviado para executar cálculos.
 1. Chame o método do `FormsServiceClient` objeto `renderPDFForm` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo.
    * Um `com.adobe.idp.Document` objeto que contém dados para unir ao formulário (criado na etapa 2).
-   * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução. Para obter mais informações, consulte Referência [da API de formulários](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+   * Um `PDFFormRenderSpec` objeto que armazena opções de tempo de execução. Para obter mais informações, consulte Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Um `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms para renderizar um formulário com base em fragmentos.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
+
    O `renderPDFForm` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
 1. Crie um `com.adobe.idp.Document` objeto chamando o `FormsResult` método do objeto `getOutputContent` .
@@ -162,11 +166,11 @@ Para renderizar um formulário com base em fragmentos usando a API de serviço d
 1. Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
 1. Crie um `java.io.InputStream` objeto chamando o `com.adobe.idp.Document` método do `getInputStream` objeto.
 1. Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o `InputStream` método do `read`objeto e transmitindo a matriz de bytes como um argumento.
-1. Chame o método `javax.servlet.ServletOutputStream` `write` do objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
+1. Chame o método do `javax.servlet.ServletOutputStream` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
 
 O exemplo de código a seguir representa o servlet Java que chama o serviço Forms e renderiza um formulário com base em fragmentos.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -307,7 +311,7 @@ A página da Web index.html fornece um ponto de entrada para o servlet Java e ch
 
 O servlet Java captura os dados publicados da página HTML usando o seguinte código Java:
 
-```as3
+```java
              Document oInputData = null;
  
              //Get the value of selected radio button
@@ -327,7 +331,7 @@ O servlet Java captura os dados publicados da página HTML usando o seguinte có
 
 O código HTML a seguir está localizado no arquivo index.html que foi criado durante a configuração do ambiente de desenvolvimento. (Consulte [Criação de um projeto](/help/forms/developing/rendering-forms.md#creating-a-web-project)da Web.)
 
-```as3
+```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="https://www.w3.org/1999/xhtml">
  <head>
@@ -379,7 +383,7 @@ Para implantar o servlet Java que chama o serviço Forms, empacote seu aplicativ
 
 ### Implantação do arquivo WAR no servidor de aplicativos J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 
-Você pode implantar o arquivo WAR no servidor de aplicativos J2EE no qual o AEM Forms é implantado. Depois que o arquivo WAR for implantado, você poderá acessar a página da Web HTML usando um navegador da Web.
+Você pode implantar o arquivo WAR no servidor de aplicativos J2EE no qual os AEM Forms são implantados. Depois que o arquivo WAR for implantado, você poderá acessar a página da Web HTML usando um navegador da Web.
 
 **Para implantar o arquivo WAR no servidor de aplicativos J2EE:**
 
@@ -387,7 +391,7 @@ Você pode implantar o arquivo WAR no servidor de aplicativos J2EE no qual o AEM
 
 ### Testar seu aplicativo da Web {#testing-your-web-application}
 
-Depois de implantar o aplicativo da Web, você pode testá-lo usando um navegador da Web. Supondo que você esteja usando o mesmo computador que está hospedando o AEM Forms, você pode especificar o seguinte URL:
+Depois de implantar o aplicativo da Web, você pode testá-lo usando um navegador da Web. Supondo que você esteja usando o mesmo computador que está hospedando AEM Forms, você pode especificar o seguinte URL:
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
