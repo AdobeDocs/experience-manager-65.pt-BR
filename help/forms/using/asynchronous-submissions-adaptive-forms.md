@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -27,28 +30,28 @@ Leia para obter detalhes sobre o envio assíncrono em formulários adaptáveis.
 
 Para configurar o envio assíncrono para um formulário adaptável:
 
-1. No modo de criação de formulário adaptável, selecione o objeto Contêiner de formulário e toque em ![cmppr1](assets/cmppr1.png) para abrir suas propriedades.
+1. No modo de criação de formulário adaptável, selecione o objeto Container de formulário e toque em ![cmppr1](assets/cmppr1.png) para abrir suas propriedades.
 1. Na seção Propriedades de **[!UICONTROL envio]** , ative **[!UICONTROL Usar envio]** assíncrono.
 1. Na seção **[!UICONTROL Ao enviar]** , selecione uma das opções a seguir para executar no envio bem-sucedido do formulário.
 
-   * **[!UICONTROL Redirecionar para URL]**: Redireciona para o URL ou página especificada no envio do formulário. Você pode especificar um URL ou navegar para escolher o caminho para uma página no campo URL/caminho **[!UICONTROL de]** redirecionamento.
+   * **[!UICONTROL Redirecionar para URL]**: Redireciona para o URL ou página especificada no envio do formulário. Você pode especificar um URL ou navegar para escolher o caminho para uma página no campo URL/Caminho **[!UICONTROL de]** redirecionamento.
    * **[!UICONTROL Mostrar mensagem]**: Exibe uma mensagem no envio do formulário. Você pode gravar uma mensagem no campo de texto abaixo da opção Mostrar mensagem. O campo de texto oferece suporte à formatação Rich Text.
 
 1. Toque em ![check-button1](assets/check-button1.png) para salvar as propriedades.
 
 ## Como o envio assíncrono funciona {#how-asynchronous-submission-works}
 
-O AEM Forms fornece manipuladores de erros e sucesso prontos para uso para envios de formulário. Os manipuladores são funções do lado do cliente que são executadas com base na resposta do servidor. Quando um formulário é submetido, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o sucesso ou o evento de erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função.
+O AEM Forms fornece controladores de erros e sucesso prontos para uso para envios de formulário. Os manipuladores são funções do lado do cliente que são executadas com base na resposta do servidor. Quando um formulário é submetido, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função.
 
 Além disso, autores e desenvolvedores de formulários podem gravar regras no nível de formulário para substituir manipuladores padrão. Para obter mais informações, consulte [Substituir manipuladores padrão usando regras](#custom).
 
-Primeiro, analisemos a resposta do servidor para eventos bem-sucedidos e de erro.
+Analisemos primeiro a resposta do servidor para eventos bem-sucedidos e com erros.
 
-### Resposta do servidor para evento de sucesso de envio {#server-response-for-submission-success-event}
+### Resposta do servidor para o evento bem-sucedido de envio {#server-response-for-submission-success-event}
 
 A estrutura para a resposta do servidor para o evento bem-sucedido de envio é a seguinte:
 
-```
+```json
 {
   contentType : "<xmlschema or jsonschema>",
   data : "<dataXML or dataJson>" ,
@@ -66,11 +69,11 @@ A resposta do servidor em caso de envio de formulário bem-sucedido inclui:
 
 O manipulador de sucesso lê a resposta do servidor e, consequentemente, redireciona para o URL da página configurada ou exibe uma mensagem.
 
-### Resposta do servidor para evento de erro de envio {#server-response-for-submission-error-event}
+### Resposta do servidor para o evento de erro de envio {#server-response-for-submission-error-event}
 
 A estrutura para a resposta do servidor para o evento de erro de envio é a seguinte:
 
-```
+```json
 {
    errorCausedBy : "<CAPTCHA_VALIDATION or SERVER_SIDE_VALIDATION>",
 
@@ -92,9 +95,9 @@ O manipulador de erros lê a resposta do servidor e, consequentemente, exibe a m
 
 ## Substituir manipuladores padrão usando regras {#custom}
 
-Os desenvolvedores e autores de formulários podem gravar regras, no nível de formulário, no editor de código para substituir manipuladores padrão. A resposta do servidor para eventos bem-sucedidos e de erro é exposta no nível do formulário, que os desenvolvedores podem acessar usando `$event.data` as regras.
+Os desenvolvedores e autores de formulários podem gravar regras, no nível de formulário, no editor de código para substituir manipuladores padrão. A resposta do servidor para eventos de erro e sucesso é exposta no nível do formulário, que os desenvolvedores podem acessar usando `$event.data` as regras.
 
-Execute as seguintes etapas para gravar regras no editor de código para lidar com eventos de erro e sucesso.
+Execute as seguintes etapas para gravar regras no editor de código para lidar com eventos bem-sucedidos e de erro.
 
 1. Abra o formulário adaptável no modo de criação, selecione qualquer objeto de formulário e toque em ![edit-rules1](assets/edit-rules1.png) para abrir o editor de regras.
 1. Selecione **[!UICONTROL Formulário]** na árvore Objetos de formulário e toque em **[!UICONTROL Criar]**.
