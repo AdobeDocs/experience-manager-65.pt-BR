@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ O serviço Convert PDF converte documentos PDF em PostScript ou arquivos de imag
 * Converta documentos PDF em PostScript. Ao converter para PostScript, você pode usar a operação de conversão para especificar o documento de origem e se deve ser convertida para PostScript nível 2 ou 3. O documento PDF convertido em um arquivo PostScript deve ser não interativo.
 * Converta documentos PDF em formatos de imagem JPEG, JPEG 2000, PNG e TIFF. Ao converter para qualquer um desses formatos de imagem, você pode usar a operação de conversão para especificar o documento de origem e uma especificação de opções de imagem. A especificação contém várias preferências, como formato de conversão de imagem, resolução de imagem e conversão de cores.
 
-## Configurar propriedades do serviço {#properties}
+## Configurar propriedades do serviço   {#properties}
 
 Você pode usar o serviço **** AEMFD ConvertPDF no console AEM para configurar as propriedades desse serviço. O URL padrão do console do AEM é `https://[host]:'port'/system/console/configMgr`.
 
@@ -39,7 +42,7 @@ O serviço ConvertPDF fornece as duas APIs a seguir:
 
 ### Usar a API toPS com JSP ou Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -83,7 +86,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 ### Usar a API toImage com um JSP ou Servlets {#using-toimage-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -136,7 +139,7 @@ A única diferença é que ao executar o serviço a partir do JSP/Servlet o obje
 
 A amostra de processo de fluxo de trabalho a seguir converte o documento de entrada em um documento PostScript. O código é gravado no ECMAScript e o documento é transmitido como carga do fluxo de trabalho:
 
-```
+```javascript
 /*
  * Imports
  */
