@@ -8,7 +8,10 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Você pode usar metadados em um modelo de email para preencher dinamicamente as 
 
 Os metadados são armazenados em pares de valores chave. Você pode especificar a chave no modelo de email e ela é substituída por um valor no tempo de execução (quando uma notificação por email é gerada). Por exemplo, na amostra de código abaixo, &quot;$ {workitem_title} &quot; é uma chave. É substituído pelo valor &quot;Loan-Request&quot; no tempo de execução.
 
-```xml
+```html
 subject=Task Assigned - ${workitem_title}
 
 message=<html><body>\n\
@@ -151,7 +154,7 @@ Um aplicativo AEM Forms fornece várias variáveis de metadados (pares de valore
 
 Você também pode usar metadados personalizados em uma notificação por email. Os metadados personalizados contêm informações além dos metadados gerados pelo sistema. Por exemplo, detalhes de política recuperados de um banco de dados. Você pode usar um pacote ECMAScript ou OSGi para adicionar metadados personalizados no repositório crx:
 
-### Usar o ECMAScript para adicionar metadados personalizados {#use-ecmascript-to-add-custom-metadata}
+### Usar o ECMAScript para adicionar metadados personalizados  {#use-ecmascript-to-add-custom-metadata}
 
 [O ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) é uma linguagem de script. É usado para aplicativos de servidor e scripts do cliente. Execute as seguintes etapas para usar o ECMAScript para adicionar metadados personalizados para um modelo de email:
 
@@ -163,7 +166,7 @@ Você também pode usar metadados personalizados em uma notificação por email.
 
 1. Adicione o código ao arquivo .ecma que tem a lógica de gerar metadados personalizados em pares de valores chave. Por exemplo, o código ECMAScript a seguir gera metadados personalizados para uma política de seguro:
 
-   ```
+   ```javascript
    function getUserMetaData()  {
        //Commented lines below provide an overview on how to set user metadata in map and return it.
        var HashMap = Packages.java.util.HashMap;
@@ -194,9 +197,9 @@ Você também pode usar metadados personalizados em uma notificação por email.
 
 ### Usar um pacote OSGi e uma interface Java para adicionar metadados personalizados {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-Você pode usar a interface Java WorkitemUserMetadataService para adicionar metadados personalizados para modelos de email. Você pode criar um pacote OSGi que usa a interface Java WorkitemUserMetadataService e implantá-lo no servidor de formulários AEM. Disponibiliza os metadados para seleção na etapa Atribuir Tarefa.
+Você pode usar a interface Java WorkitemUserMetadataService para adicionar metadados personalizados para modelos de email. Você pode criar um pacote OSGi que usa a interface Java WorkitemUserMetadataService e implantá-lo no servidor AEM Forms. Disponibiliza os metadados para seleção na etapa Atribuir Tarefa.
 
-Para criar um pacote OSGi com interface Java, adicione arquivos jar do SDK [do cliente do](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms e jar jar [granite](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) como dependências externas ao projeto do pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
+Para criar um pacote OSGi com interface Java, adicione arquivos jar e jar jar [granite do SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) do cliente [](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) AEM Forms como dependências externas ao projeto de pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
 
 1. Abra o Eclipse IDE. Navegue até Arquivo > Novo projeto.
 
@@ -205,10 +208,6 @@ Para criar um pacote OSGi com interface Java, adicione arquivos jar do SDK [do c
 1. No projeto New Maven, mantenha os padrões e clique em Next (Avançar). Selecione um arquétipo e clique em Avançar. Por exemplo, maven-archetype-quickstart. Especifique Id de grupo, Id de artefato, versão e pacote para o projeto e clique em Concluir. O projeto é criado.
 
 1. Abra o arquivo pom.xml para edição e substitua todo o conteúdo do arquivo pelo seguinte:
-
-   ```
-   
-   ```
 
 1. Adicione o código fonte que usa a interface Java WorkitemUserMetadataService para adicionar metadados personalizados para modelos de email. Um código de exemplo está listado abaixo:
 
@@ -250,6 +249,6 @@ Para criar um pacote OSGi com interface Java, adicione arquivos jar do SDK [do c
 
    `mvn clean install`
 
-1. Carregue o pacote em um servidor de formulários AEM. Você pode usar o Gerenciador de pacotes de AEM para importar o pacote para o servidor de formulários de AEM.
+1. Carregue o pacote em um servidor AEM Forms. Você pode usar o Gerenciador de pacotes de AEM para importar o pacote para o servidor AEM Forms.
 
 Depois que o pacote é importado, você pode selecionar os metadados na etapa Atribuir Tarefa e usá-los como modelo de email.
