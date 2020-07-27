@@ -1,15 +1,18 @@
 ---
 title: APIs para trabalhar com formulários enviados no portal de formulários
 seo-title: APIs para trabalhar com formulários enviados no portal de formulários
-description: O AEM Forms fornece APIs que podem ser usadas para query e execução de ações em dados de formulários enviados no portal de formulários.
-seo-description: O AEM Forms fornece APIs que podem ser usadas para query e execução de ações em dados de formulários enviados no portal de formulários.
+description: O AEM Forms fornece APIs que você pode usar para query e executar ações em dados de formulários enviados no portal de formulários.
+seo-description: O AEM Forms fornece APIs que você pode usar para query e executar ações em dados de formulários enviados no portal de formulários.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 7%
 
 ---
 
@@ -34,7 +37,7 @@ Essa API não requer parâmetros adicionais.
 
 O objeto response contém uma matriz JSON que inclui nomes de formulários e seu caminho de repositório. A estrutura da resposta é a seguinte:
 
-```
+```json
 [
  {formName: "<form name>",
  formPath: "<path to the form>" },
@@ -46,13 +49,13 @@ O objeto response contém uma matriz JSON que inclui nomes de formulários e seu
 
 **URL de solicitação**
 
-```
+```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview
 ```
 
 **Resposta**
 
-```java
+```json
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
@@ -105,7 +108,7 @@ Especifique os seguintes parâmetros no URL da solicitação:
 
 O objeto response contém uma matriz JSON que inclui detalhes dos formulários especificados. A estrutura da resposta é a seguinte:
 
-```
+```json
 {
  total: "<total number of submissions>",
  items: [{ formName: "<name of the form>", formPath: "<path to the form>", owner: "<owner of the form>"},
@@ -116,13 +119,13 @@ O objeto response contém uma matriz JSON que inclui detalhes dos formulários e
 
 **URL de solicitação**
 
-```
+```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSubmissions&formPath=/content/dam/formsanddocuments/forms-review/form2
 ```
 
 **Resposta**
 
-```java
+```json
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
@@ -147,7 +150,7 @@ Retorna uma ID de comentário sobre a postagem bem-sucedida de um comentário.
 
 **URL de solicitação**
 
-```
+```http
 https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
@@ -157,7 +160,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## OBTENHA /content/forms/portal/submission.review.json?func=getComments {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## OBTENHA /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Retorna todos os comentários postados na instância de envio especificada.
 
@@ -173,7 +176,7 @@ Especifique o seguinte parâmetro no URL da solicitação:
 
 O objeto response contém uma matriz JSON que inclui todos os comentários associados à ID de envio especificada. A estrutura da resposta é a seguinte:
 
-```
+```json
 [{
  owner: "<name of the commenter>",
  comment: "<comment text>",
@@ -185,7 +188,7 @@ O objeto response contém uma matriz JSON que inclui todos os comentários assoc
 
 **URL de solicitação**
 
-```
+```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
@@ -217,13 +220,13 @@ Retorna um objeto JSON com informações sobre a atualização publicada.
 
 **URL de solicitação**
 
-```
+```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 ```
 
 **Resposta**
 
-```java
+```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
 
