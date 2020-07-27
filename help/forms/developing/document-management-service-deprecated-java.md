@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Gerenciamento de 
 
 >[!NOTE]
 >
->A partir de 5 de agosto de 2011, a Adobe está migrando clientes do Content Services ES para o Adobe Digital Enterprise Platform Experience Services. O roteiro do produto para clientes que usam o Content Services é migrar para o novo ADEP Experience Services - Core, que inclui um Repositório de Conteúdo nativo baseado na arquitetura CRX moderna e modular, adquirida durante a aquisição do Day Software pela Adobe.
+>A partir de 5 de agosto de 2011, a Adobe está migrando clientes Content Services ES para o Adobe Digital Enterprise Platform Experience Services. O roteiro do produto para clientes que usam o Content Services é migrar para o novo ADEP Experience Services - Core, que inclui um Repositório de Conteúdo nativo baseado na arquitetura CRX moderna e modular, adquirida durante a aquisição do Day Software pela Adobe.
 
 [Start rápido (modo SOAP): Criar espaços do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -39,7 +42,7 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Gerenciamento de 
 
 [Start rápido (modo SOAP): Configuração de permissões de serviços de conteúdo usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 
@@ -49,7 +52,7 @@ start rápidos localizados em Programação com formulários AEM são baseados n
 
 O exemplo de código Java a seguir cria um novo espaço chamado Diretório *de* teste localizado em Início da Empresa. O valor de identificação do novo espaço é gravado no console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -145,7 +148,7 @@ O exemplo de código Java a seguir cria um novo espaço chamado Diretório *de* 
 
 O exemplo de código Java a seguir exclui um espaço chamado /Empresa Home/Test Diretory.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -245,7 +248,7 @@ O exemplo de código Java a seguir exclui um espaço chamado /Empresa Home/Test 
 
 O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgageForm.pdf* a uma pasta chamada /Empresa Home/Test Diretory. Os atributos de criador e descrição são definidos. O valor de identificação do novo conteúdo é gravado no console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -368,7 +371,7 @@ O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgageForm
 
 O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm.pdf* de /Empresa Home. O arquivo PDF é salvo no sistema de arquivos local e é nomeado como *UpdatesMortgageForm.pdf*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -474,7 +477,7 @@ O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm
 
 O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf* de /Empresa Home/Test Diretory para /Empresa Home. O valor de identificação do conteúdo movido é gravado no console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -575,7 +578,7 @@ O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf
 
 O exemplo de código Java a seguir lista o conteúdo localizado em /Empresa Home. Cada tipo de nó e nome do nó é exibido.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -688,7 +691,7 @@ O exemplo de código Java a seguir lista o conteúdo localizado em /Empresa Home
 
 O código Java a seguir pesquisa /Empresa Home em busca de um documento que contenha o texto MortgageForm. As subpastas também são pesquisadas.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -798,7 +801,7 @@ O código Java a seguir pesquisa /Empresa Home em busca de um documento que cont
 
 O exemplo de código Java a seguir define uma permissão para um usuário chamado tony blue. O domínio especificado é o domínio padrão. A permissão Consumidor é especificada e o nó é `/Company Home/Test Directory`.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -908,7 +911,7 @@ O exemplo de código Java a seguir define uma permissão para um usuário chamad
 
 O código Java a seguir cria uma associação com um arquivo de dados XML e um formulário PDF. Esse tipo de associação é chamado de LinkedBy.O documento PDF deve ter o aspecto vinculável aplicado a ele.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
