@@ -11,14 +11,17 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 1%
 
 ---
 
 
 # Alteração da fonte na interface{#changing-the-font-on-the-interface}
 
-Você pode alterar a fonte exibida na área de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário de forma seletiva.
+É possível alterar a fonte exibida na área de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário de forma seletiva.
 
 Siga as etapas [genéricas para personalização](../../forms/using/generic-steps-html-workspace-customization.md) do espaço de trabalho do AEM Forms e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
 
@@ -43,7 +46,7 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
 
       Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 
-      ```
+      ```jsp
       <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
       <li class="todo"><a href="#/todo" title="<%= $.t('index.header.topnav.todo.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.todo.name')%></a></li>
       <li class="track"><a href="#/tracking" title="<%= $.t('index.header.topnav.tracking.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.tracking.name')%></a></li>
@@ -62,7 +65,7 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
 
       Para adicionar a família de fontes em linha para o elemento HTML, adicione o seguinte no arquivo appnavigation.html em /apps/ws/js/runtime/models.
 
-      ```css
+      ```jsp
       <div id="topnav" class="myNewFontStyle">
           <ul>
               <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
