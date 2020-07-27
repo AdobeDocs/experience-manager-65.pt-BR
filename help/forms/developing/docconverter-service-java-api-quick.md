@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -36,7 +36,7 @@ As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos
 
 O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* em um documento PDF/A que é salvo como um arquivo PDF chamado *LoanArchive.pdf*. (Consulte [Converter Documentos em Documentos](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)PDF/A.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -139,7 +139,7 @@ O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* 
 
 O exemplo de código Java a seguir determina se o documento PDF de entrada é compatível com PDF/A. O documento PDF de entrada passado para o serviço DocConverter é denominado *LoanArchive.pdf*. Os resultados da validação são gravados em um arquivo XML chamado *ValidationResults.xml*. (Consulte Determinando [Programaticamente a conformidade](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)do PDF/A.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
