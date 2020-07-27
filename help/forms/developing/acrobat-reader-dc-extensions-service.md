@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -24,18 +27,18 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Extensões do Acr
 
 [Start rápido (modo SOAP): Recuperando informações de credenciais usando a API Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Start rápidos localizados em Programação com AEM Forms são baseados no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>Os Start rápidos localizados em Programação com AEM Forms são baseados no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP):Aplicar direitos de uso usando a API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
 O exemplo de código Java a seguir aplica direitos de uso a um documento PDF chamado *Loan.pdf*. O documento PDF habilitado para direitos é salvo como um arquivo PDF chamado *LoanUsageRights.pdf*. Os seguintes direitos de uso são aplicados a este documento PDF: `enabledComments`, `enabledFormFillIn`e `enabledDigitalSignatures`. (Consulte [Aplicar direitos de uso a Documentos](/help/forms/developing/assigning-usage-rights.md)PDF.)
 
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -147,7 +150,7 @@ O exemplo de código Java a seguir aplica direitos de uso a um documento PDF cha
 
 O exemplo de código Java a seguir remove os direitos de uso de um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Remoção de direitos de uso de Documentos](/help/forms/developing/assigning-usage-rights.md)PDF.)
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -247,7 +250,7 @@ O exemplo de código Java a seguir remove os direitos de uso de um documento PDF
 
 O exemplo de código Java a seguir recupera informações sobre a credencial usada para aplicar direitos de uso a um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Recuperando Informações](/help/forms/developing/assigning-usage-rights.md)de Credenciais.)
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
