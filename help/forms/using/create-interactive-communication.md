@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6120'
 ht-degree: 1%
 
 ---
@@ -131,7 +131,7 @@ Para obter mais informações sobre a interface de criação de Comunicação in
  </tbody>
 </table>
 
-Também é possível substituir o vínculo entre uma área de público alvo e um fragmento de documento soltando o novo fragmento na área do público alvo usando a guia **[!UICONTROL Ativos]** . O sombreamento da cor azul da área do público alvo ao arrastar o fragmento indica que o fragmento do documento pode ser solto na área do público alvo.
+Você também pode substituir o vínculo entre uma área de público alvo e um fragmento de documento soltando o novo fragmento na área do público alvo usando a guia **[!UICONTROL Ativos]** . O sombreamento da cor azul da área do público alvo ao arrastar o fragmento indica que o fragmento do documento pode ser solto na área do público alvo.
 
 Para obter mais informações sobre fragmentos de documento, consulte Fragmentos [de](/help/forms/using/document-fragments.md)Documento.
 
@@ -187,7 +187,7 @@ Toque no fragmento do documento, toque em ![configure_icon](assets/configure_ico
 
    ![webcanelassets](assets/webchannelassets.png)
 
-   Toque no fragmento do documento, toque em ![configure_icon](assets/configure_icon.png) (Configurar) e, em seguida, toque em **[!UICONTROL Propriedades]** no sidekick da Comunicação interativa. A seção **[!UICONTROL Variáveis e objetos]** de modelo de dados lista as variáveis, incluindo as variáveis ocultas, e os objetos de modelo de dados usados nos fragmentos do documento. Use o ícone ![editar](assets/edit.svg) (Editar) ao lado de cada objeto ou variável do modelo de dados para editar as propriedades. Além disso, para fragmentos de documento que foram gerados [](#synchronize) automaticamente no canal da Web usando o canal Imprimir, use o ícone ![](assets/cancelinheritance.png) (Cancelar herança) ao lado de cada objeto de modelo de dados e variável para [cancelar a herança](#cancelinheritance) e editá-los.
+   Toque no fragmento do documento, toque em ![configure_icon](assets/configure_icon.png) (Configurar) e, em seguida, toque em **[!UICONTROL Propriedades]** no sidekick da Comunicação interativa. A seção **[!UICONTROL Variáveis e objetos]** de modelo de dados lista as variáveis, incluindo as variáveis ocultas, e os objetos de modelo de dados usados nos fragmentos do documento. Use o ícone ![editar](assets/edit.svg) (Editar) ao lado de cada objeto ou variável do modelo de dados para editar as propriedades. Além disso, para fragmentos de documento que foram gerados [](#synchronize) automaticamente no canal da Web usando o canal Imprimir, use o ícone de herança ![de](assets/cancelinheritance.png) cancelamento (Cancelar herança) ao lado de cada objeto de modelo de dados e variável para [cancelar a herança](#cancelinheritance) e editá-los.
 
 1. Para adicionar outros componentes ao canal da Web, com o canal da Web selecionado, toque em **[!UICONTROL Componentes]**. Arraste e solte componentes no canal da Web de sua Comunicação interativa, conforme necessário, e continue a configurá-los.
 
@@ -386,12 +386,12 @@ Toque no painel raiz no modelo da Web e toque em **+** para adicionar um compone
 
 #### Adicionar ou editar texto em células de tabela {#addedittexttable}
 
-1. Selecione a caixa de texto padrão na célula da tabela e toque ![](assets/edit.png) (Editar).
-1. Digite o texto na célula da tabela e toque ![](assets/done_icon.png) para salvá-la.
+1. Selecione a caixa de texto padrão na célula da tabela e toque em ![editar](assets/edit.png) (Editar).
+1. Digite o texto na célula da tabela e toque em ![done_icon](assets/done_icon.png) para salvá-lo.
 
 #### Criar vínculo entre células de tabela e elementos de objeto de modelo de dados {#createbindingtablecells}
 
-1. Selecione a caixa de texto padrão na linha de tabela e toque ![](assets/edit.png) (Editar).
+1. Selecione a caixa de texto padrão na linha de tabela e toque em ![editar](assets/edit.png) (Editar).
 1. Toque na lista suspensa de objetos do Modelo de dados e selecione a propriedade.
 1. Toque em para salvar e criar um vínculo entre a célula da tabela e a propriedade do objeto de modelo de dados.
 
@@ -399,10 +399,10 @@ Toque no painel raiz no modelo da Web e toque em **+** para adicionar um compone
 
 #### Criar um hiperlink para texto na célula da tabela {#createhyperlinktable}
 
-1. Selecione a caixa de texto padrão na célula da tabela e toque ![](assets/edit.svg) (Editar).
+1. Selecione a caixa de texto padrão na célula da tabela e toque em ![editar](assets/edit.svg) (Editar).
 1. Selecione o texto na célula da tabela e toque no ícone Hiperlink.
 1. Especifique o URL no campo **Caminho** .
-1. Toque em ![](assets/done_icon.png) para salvar as propriedades do hiperlink.
+1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades do hiperlink.
 
 ![Criar hiperlink](assets/create_hyperlink_table_new.png)
 
@@ -426,9 +426,9 @@ A classificação pode ser aplicada às colunas de tabelas que contêm:
 
 Para ativar a classificação:
 
-1. Selecione a tabela e toque ![](assets/configure_icon.png) (Configurar). Você também pode selecionar a tabela usando o navegador **Conteúdo** no sidekick da Comunicação Interativa.
+1. Selecione a tabela e toque em ![configure_icon](assets/configure_icon.png) (Configurar). Você também pode selecionar a tabela usando o navegador **Conteúdo** no sidekick da Comunicação Interativa.
 1. Selecione **Ativar classificação.**
-1. Toque em ![](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, em cabeçalhos de colunas representam que a classificação foi ativada.
+1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, em cabeçalhos de colunas representam que a classificação foi ativada.
 
    ![Ativar classificação](assets/enable_sorting_new-1.png)
 
@@ -479,7 +479,7 @@ Você pode adicionar um botão como um componente ao canal da Web da Comunicaç�
 Para adicionar um botão e definir regras sobre ele:
 
 1. Toque no painel raiz no modelo da Web e toque em **+** para adicionar o componente **Botão** à Comunicação interativa.
-1. Toque no componente de botão e toque ![](assets/edit-rules.png) para definir regras no toque do botão.
+1. Toque no componente de botão e toque em ![editar regras](assets/edit-rules.png) para definir regras no toque do botão.
 1. Na seção **Quando** , selecione **clicado** no estado da lista suspensa do botão.
 1. Na seção **Então** :
 
