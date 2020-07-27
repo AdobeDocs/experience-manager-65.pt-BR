@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Você combina um registro com um modelo de comunicação interativa para produzi
 
 **Um único registro em um arquivo JSON**
 
-```JSON
+```json
 {
    "employee": {
        "name": "Sara",
@@ -41,7 +41,7 @@ Você combina um registro com um modelo de comunicação interativa para produzi
 
 **Vários registros em um arquivo JSON**
 
-```JSON
+```json
 [{
    "employee": {
        "name": "John",
@@ -179,7 +179,7 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
 1. [Crie e implante um projeto AEM usando o Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) na sua instância do AEM.
 1. Adicione o [AEM Forms Client SDK versão 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou posterior na lista de dependências do arquivo POM do seu projeto AEM. Por exemplo,
 
-   ```XML
+   ```xml
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
@@ -345,12 +345,15 @@ Em seguida, o seguinte URL no nó de publicação exibe o Canal da Web da comuni
 Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no repositório CRX, no sistema de arquivos, no servidor da Web ou pode acessar os dados por meio do serviço de preenchimento prévio OSGI. Sintaxe para unir dados usando vários protocolos são:
 
 * **Protocolo CRX**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocolo de arquivo**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **Protocolo de Serviço de Pré-preenchimento**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
    SERVICE_NAME refere-se ao nome do serviço de pré-preenchimento OSGI. Consulte Criar e executar um serviço de preenchimento prévio.
@@ -358,6 +361,7 @@ Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no
    IDENTIFIER refere-se a quaisquer metadados exigidos pelo serviço de preenchimento prévio OSGI para buscar os dados de preenchimento prévio. Um identificador do usuário conectado é um exemplo de metadados que podem ser usados.
 
 * **Protocolo HTTP**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
