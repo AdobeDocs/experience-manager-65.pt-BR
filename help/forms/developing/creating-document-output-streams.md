@@ -10,12 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '18972'
+ht-degree: 0%
 
 ---
 
 
-# Criando fluxos de saída de Documento {#creating-document-output-streams}
+# Criando fluxos de saída de Documento  {#creating-document-output-streams}
 
 **Sobre o Serviço de Saída**
 
@@ -44,7 +47,7 @@ As seções a seguir mostram como passar um design de formulário em uma `com.ad
 * [Transmissão de Documentos localizados no Content Services (obsoleto) para o Serviço de Saída](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [Criação de Documentos PDF usando fragmentos](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-Uma consideração ao decidir qual técnica usar é se você estiver obtendo o design de formulário de outro serviço AEM Forms e, em seguida, passá-lo em uma `com.adobe.idp.Document` instância. As seções *Transmissão de Documentos para o Serviço* de saída e *Criação de Documentos PDF usando Fragmentos* mostram como obter um design de formulário de outro serviço AEM Forms. A primeira seção recupera o design de formulário do Content Services (obsoleto). A segunda seção recupera o design de formulário do serviço Assembler.
+Uma consideração ao decidir qual técnica usar é se você estiver obtendo o design de formulário de outro serviço de AEM Forms, passe-o para uma `com.adobe.idp.Document` instância. As seções *Transmissão de Documentos para o Serviço* de saída e *Criação de Documentos PDF usando Fragmentos* mostram como obter um design de formulário de outro serviço de AEM Forms. A primeira seção recupera o design de formulário do Content Services (obsoleto). A segunda seção recupera o design de formulário do serviço Assembler.
 
 Se você estiver obtendo o design de formulário de um local fixo, como o sistema de arquivos, poderá usar qualquer técnica. Ou seja, você pode especificar o valor de URI para um arquivo XDP ou usar uma `com.adobe.idp.Document` instância.
 
@@ -66,7 +69,7 @@ Ao enviar um fluxo de saída para uma impressora de rede, você também pode usa
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Criação de Documentos PDF {#creating-pdf-documents}
 
@@ -74,11 +77,11 @@ Ao enviar um fluxo de saída para uma impressora de rede, você também pode usa
 
 Se você quiser criar um documento PDF para armazenamentos de longo prazo, é recomendável criar um documento PDF/A. (Consulte [Criação de Documentos](creating-document-output-streams.md#creating-pdf-a-documents)PDF/A.)
 
-Para criar um formulário PDF interativo que permita ao usuário inserir dados, use o serviço de Formulários. (Consulte [Renderização de formulários](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)PDF interativos.)
+Para criar um formulário PDF interativo que permita ao usuário inserir dados, use o serviço de Formulários. (Consulte [Renderização de PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)interativos.)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -101,10 +104,10 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (obrigatório se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (Obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (obrigatório se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se AEM Forms forem implantados em JBoss)
 
-se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms é implantado.
+se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado.
 
 **Criar um objeto de cliente de saída**
 
@@ -120,7 +123,7 @@ Considere o exemplo de formulário de solicitação de empréstimo a seguir.
 
 Para unir dados neste design de formulário, é necessário criar uma fonte de dados XML que corresponda ao formulário. O XML a seguir representa uma fonte de dados XML XDP que corresponde ao formulário de aplicativo hipotecário de exemplo.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8" ?>
  - <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
  - <xfa:data>
@@ -199,7 +202,7 @@ Depois que o serviço de Saída executa uma operação, ele retorna vários iten
 
 [Criar um documento PDF usando a API de serviço da Web](creating-document-output-streams.md#create-a-pdf-document-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -226,12 +229,13 @@ Crie um documento PDF usando a API de saída (Java):
 1. Defina as opções de tempo de execução do PDF.
 
    * Crie um `PDFOutputOptionsSpec` objeto usando seu construtor.
-   * Defina a opção Arquivo URI chamando o `PDFOutputOptionsSpec` método do `setFileURI` objeto. Passe um valor de string que especifica o local do arquivo PDF gerado pelo serviço de Saída. A opção Arquivo URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção Arquivo URI chamando o `PDFOutputOptionsSpec` método do `setFileURI` objeto. Passe um valor de string que especifica o local do arquivo PDF gerado pelo serviço de Saída. A opção Arquivo URI é relativa às AEM Forms de hospedagem do servidor de aplicativos J2EE, não ao computador cliente.
 
 1. Defina as opções de tempo de execução de renderização.
 
    * Crie um `RenderOptionsSpec` objeto usando seu construtor.
    * Armazene o design de formulário em cache para melhorar o desempenho do serviço de Saída, chamando o objeto `RenderOptionsSpec` e transmitindo `setCacheEnabled` `true`.
+
    >[!NOTE]
    >
    >Não é possível definir a versão do documento PDF usando o método do `RenderOptionsSpec` objeto `setPdfVersion` se o documento de entrada for um formulário Acrobat (um formulário criado no Acrobat) ou um documento XFA assinado ou certificado. O documento PDF de saída retém a versão original do PDF. Da mesma forma, não é possível definir a opção Adobe PDF marcada chamando o método do `RenderOptionsSpec` objeto `setTaggedPDF` se o documento de entrada for um formulário Acrobat ou um documento XFA assinado ou certificado.
@@ -250,6 +254,7 @@ Crie um documento PDF usando a API de saída (Java):
    * Um `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
    * Um `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
    * O `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem unidos ao design de formulário.
+
    O `generatePDFOutput` método retorna um `OutputResult` objeto que contém os resultados da operação.
 
    >[!NOTE]
@@ -269,6 +274,7 @@ Crie um documento PDF usando a API de saída (Java):
    * Recupere um `com.adobe.idp.Document` objeto que representa o status da operação `generatePDFOutput` chamando o `OutputResult` método do `getStatusDoc` objeto. Este método retorna dados XML de status que especificam se a operação foi bem-sucedida.
    * Crie um `java.io.File` objeto que contenha os resultados da operação. Verifique se a extensão do nome do arquivo é .xml.
    * Chame o `com.adobe.idp.Document` método do `copyToFile` objeto para copiar o conteúdo do `com.adobe.idp.Document` objeto para o arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `getStatusDoc` método).
+
    Embora o serviço de Saída grave o documento PDF no local especificado pelo argumento passado para o `PDFOutputOptionsSpec` método do `setFileURI` objeto, é possível recuperar programaticamente o documento PDF/A chamando o `OutputResult` método do `getGeneratedDoc` objeto.
 
 **Consulte também:**
@@ -279,7 +285,7 @@ Crie um documento PDF usando a API de saída (Java):
 
 [Start rápido (modo SOAP): Criação de um documento PDF usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -293,7 +299,7 @@ Crie um documento PDF usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto de cliente de saída.
 
@@ -319,12 +325,13 @@ Crie um documento PDF usando a API de saída (serviço da Web):
 1. Definir opções de tempo de execução de PDF
 
    * Crie um `PDFOutputOptionsSpec` objeto usando seu construtor.
-   * Defina a opção URI do arquivo atribuindo um valor de string que especifica o local do arquivo PDF que o serviço de saída gera para o membro de `PDFOutputOptionsSpec` dados do `fileURI` objeto. A opção Arquivo URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção URI do arquivo atribuindo um valor de string que especifica o local do arquivo PDF que o serviço de saída gera para o membro de `PDFOutputOptionsSpec` dados do `fileURI` objeto. A opção Arquivo URI é relativa às AEM Forms de hospedagem do servidor de aplicativos J2EE, não ao computador cliente.
 
 1. Defina as opções de tempo de execução de renderização.
 
    * Crie um `RenderOptionsSpec` objeto usando seu construtor.
    * Armazene o design de formulário em cache para melhorar o desempenho do serviço de Saída atribuindo o valor `true` ao membro de `RenderOptionsSpec` `cacheEnabled` dados do objeto.
+
    >[!NOTE]
    >
    >Não é possível definir a versão do documento PDF usando o método do `RenderOptionsSpec` objeto `setPdfVersion` se o documento de entrada for um formulário Acrobat (um formulário criado no Acrobat) ou um documento XFA assinado ou certificado. O documento PDF de saída retém a versão original do PDF. Da mesma forma, não é possível definir a opção Adobe PDF marcada chamando o método `RenderOptionsSpec` * do `setTaggedPDF`objeto se o documento de entrada for um formulário Acrobat ou um documento XFA assinado ou certificado.*
@@ -346,6 +353,7 @@ Crie um documento PDF usando a API de saída (serviço da Web):
    * Um `BLOB` objeto preenchido pelo `generatePDFOutput` método. O `generatePDFOutput` método preenche esse objeto com metadados gerados que descrevem o documento. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
    * Um `BLOB` objeto preenchido pelo `generatePDFOutput` método. O `generatePDFOutput` método preenche esse objeto com dados de resultado. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
    * Um `OutputResult` objeto que contém os resultados da operação. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
+
    >[!NOTE]
    >
    >Ao gerar um documento PDF chamando o `generatePDFOutput` método, lembre-se de que não é possível unir dados a um formulário PDF XFA assinado ou certificado. (Consulte Assinando e certificando Documentos [](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*digitalmente.)*
@@ -360,13 +368,14 @@ Crie um documento PDF usando a API de saída (serviço da Web):
    * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi preenchido com dados de resultado pelo `OutputServiceService` método do `generatePDFOutput` objeto (o oitavo parâmetro). Preencha a matriz de bytes obtendo o valor do `BLOB` objeto `MTOM``field`.
    * Crie um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
    * Grave o conteúdo da matriz de bytes no arquivo XML, chamando o método do `System.IO.BinaryWriter` objeto `Write` e transmitindo a matriz de bytes.
+
    Consulte também:
 
    [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-   [Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-   [Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -394,7 +403,7 @@ Quando um documento PDF/A é aberto no Acrobat, uma mensagem é exibida confirma
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -417,10 +426,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (obrigatório se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (Obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (obrigatório se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se AEM Forms forem implantados em JBoss)
 
-se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms é implantado.
+se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado.
 
 **Criar um objeto de cliente de saída**
 
@@ -432,7 +441,7 @@ Para unir dados ao design de formulário, é necessário referenciar uma fonte d
 
 **Definir opções de tempo de execução de PDF/A**
 
-É possível definir a opção URI do arquivo ao criar um documento PDF/A. O URI é relativo ao servidor de aplicativos J2EE que hospeda o AEM Forms. Ou seja, se você definir C:\Adobe, o arquivo será gravado na pasta no servidor, não no computador cliente. O URI especifica o nome e o local do arquivo PDF/A gerado pelo serviço de saída.
+É possível definir a opção URI do arquivo ao criar um documento PDF/A. O URI é relativo às AEM Forms de hospedagem do servidor de aplicativos J2EE. Ou seja, se você definir C:\Adobe, o arquivo será gravado na pasta no servidor, não no computador cliente. O URI especifica o nome e o local do arquivo PDF/A gerado pelo serviço de saída.
 
 **Definir opções de tempo de execução de renderização**
 
@@ -458,7 +467,7 @@ Depois que o serviço de Saída executa uma operação, ele retorna vários iten
 
 [Criar um documento PDF/A usando a API de serviço da Web](creating-document-output-streams.md#create-a-pdf-a-document-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -485,13 +494,14 @@ Crie um documento PDF/A usando a API de saída (Java):
 1. Defina as opções de tempo de execução do PDF/A.
 
    * Crie um `PDFOutputOptionsSpec` objeto usando seu construtor.
-   * Defina a opção Arquivo URI chamando o `PDFOutputOptionsSpec` método do `setFileURI` objeto. Passe um valor de string que especifica o local do arquivo PDF gerado pelo serviço de Saída. A opção Arquivo URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção Arquivo URI chamando o `PDFOutputOptionsSpec` método do `setFileURI` objeto. Passe um valor de string que especifica o local do arquivo PDF gerado pelo serviço de Saída. A opção Arquivo URI é relativa às AEM Forms de hospedagem do servidor de aplicativos J2EE, não ao computador cliente.
 
 1. Defina as opções de tempo de execução de renderização.
 
    * Crie um `RenderOptionsSpec` objeto usando seu construtor.
    * Defina o `PDFAConformance` valor chamando o `RenderOptionsSpec` método do objeto e transmitindo um valor `setPDFAConformance` `PDFAConformance` enum que especifique o nível de conformidade. Por exemplo, para especificar o nível de conformidade A, passe `PDFAConformance.A`.
    * Defina o `PDFARevisionNumber` valor chamando o `RenderOptionsSpec` método do `setPDFARevisionNumber` objeto e transmitindo `PDFARevisionNumber.Revision_1`.
+
    >[!NOTE]
    >
    >A versão PDF de um documento PDF/A é 1.4, independentemente do valor especificado para o `RenderOptionsSpec` método do `setPdfVersion`*objeto.*
@@ -506,6 +516,7 @@ Crie um documento PDF/A usando a API de saída (Java):
    * Um `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
    * Um `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
    * O `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem unidos ao design de formulário.
+
    O `generatePDFOutput` método retorna um `OutputResult` objeto que contém os resultados da operação.
 
    >[!NOTE]
@@ -521,6 +532,7 @@ Crie um documento PDF/A usando a API de saída (Java):
    * Crie um `com.adobe.idp.Document` objeto que represente o status do `generatePDFOutput` método chamando o `OutputResult` método do `getStatusDoc` objeto.
    * Crie um `java.io.File` objeto que conterá os resultados da operação. Verifique se a extensão do nome do arquivo é .xml.
    * Chame o `com.adobe.idp.Document` método do `copyToFile` objeto para copiar o conteúdo do `com.adobe.idp.Document` objeto para o arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `getStatusDoc` método).
+
    >[!NOTE]
    >
    >Embora o serviço de Saída grave o documento PDF/A no local especificado pelo argumento que é transmitido ao `PDFOutputOptionsSpec` método do `setFileURI` objeto, é possível recuperar programaticamente o documento PDF/A chamando o `OutputResult` `getGeneratedDoc` método do objeto.
@@ -531,7 +543,7 @@ Crie um documento PDF/A usando a API de saída (Java):
 
 [Start rápido (modo SOAP): Criação de um documento PDF/A usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Definindo propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
@@ -545,7 +557,7 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto de cliente de saída.
 
@@ -571,13 +583,14 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 1. Defina as opções de tempo de execução do PDF/A.
 
    * Crie um `PDFOutputOptionsSpec` objeto usando seu construtor.
-   * Defina a opção URI do arquivo atribuindo um valor de string que especifica o local do arquivo PDF que o serviço de saída gera para o membro de `PDFOutputOptionsSpec` dados do `fileURI` objeto. A opção Arquivo URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente
+   * Defina a opção URI do arquivo atribuindo um valor de string que especifica o local do arquivo PDF que o serviço de saída gera para o membro de `PDFOutputOptionsSpec` dados do `fileURI` objeto. A opção Arquivo URI é relativa às AEM Forms de hospedagem do servidor de aplicativos J2EE, não ao computador cliente
 
 1. Defina as opções de tempo de execução de renderização.
 
    * Crie um `RenderOptionsSpec` objeto usando seu construtor.
    * Defina o `PDFAConformance` valor atribuindo um valor `PDFAConformance` enum ao membro de `RenderOptionsSpec` dados do `PDFAConformance` objeto. Por exemplo, para especificar o nível de conformidade A, atribua `PDFAConformance.A` a esse membro de dados.
    * Defina o `PDFARevisionNumber` valor atribuindo um valor `PDFARevisionNumber` enum ao membro de `RenderOptionsSpec` dados do `PDFARevisionNumber` objeto. Atribuir `PDFARevisionNumber.Revision_1` a este membro de dados.
+
    >[!NOTE]
    >
    >A versão PDF de um documento PDF/A é 1.4, independentemente do valor especificado.
@@ -595,6 +608,7 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
    * Um `BLOB` objeto preenchido pelo `generatePDFOutput` método. O `generatePDFOutput` método preenche esse objeto com metadados gerados que descrevem o documento. (Esse valor de parâmetro é necessário somente para invocação de serviço da Web.)
    * Um `BLOB` objeto preenchido pelo `generatePDFOutput` método. O `generatePDFOutput` método preenche esse objeto com dados de resultado. (Esse valor de parâmetro é necessário somente para invocação de serviço da Web.)
    * Um `OutputResult` objeto que contém os resultados da operação. (Esse valor de parâmetro é necessário somente para invocação de serviço da Web.)
+
    >[!NOTE]
    >
    >Também é possível criar um documento PDF/A chamando o método `OutputClient` objeto `generatePDFOutput`2. (Consulte [Transmissão de Documentos localizados no Content Services (obsoleto) para o Serviço](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)de saída.)
@@ -610,21 +624,21 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Transmissão de Documentos localizados no Content Services (obsoleto) para o Serviço de Saída {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
 O serviço de Saída renderiza um formulário PDF não interativo que se baseia em um design de formulário que geralmente é salvo como um arquivo XDP e criado no Designer. É possível enviar um `com.adobe.idp.Document` objeto que contenha o design de formulário para o serviço de Saída. O serviço de Saída renderiza o design de formulário localizado no `com.adobe.idp.Document` objeto.
 
-Uma vantagem de passar um `com.adobe.idp.Document` objeto para o serviço de Saída é que outras operações do serviço AEM Forms retornam uma `com.adobe.idp.Document` instância. Ou seja, você pode obter uma `com.adobe.idp.Document` instância de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP seja armazenado em um nó do Content Services (obsoleto) nomeado `/Company Home/Form Designs`, como mostrado na ilustração a seguir.
+Uma vantagem de passar um `com.adobe.idp.Document` objeto para o serviço de Saída é que outras operações de serviço do AEM Forms retornam uma `com.adobe.idp.Document` instância. Ou seja, você pode obter uma `com.adobe.idp.Document` instância de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP seja armazenado em um nó do Content Services (obsoleto) nomeado `/Company Home/Form Designs`, como mostrado na ilustração a seguir.
 
 Você pode recuperar de forma programática o Loan.xdp do Content Services (obsoleto) e passar o arquivo XDP para o serviço de Saída dentro de um `com.adobe.idp.Document` objeto.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
@@ -666,7 +680,7 @@ Para renderizar um formulário não interativo, passe a `com.adobe.idp.Document`
 
 [Enviar documentos para o Serviço de Saída usando a API de serviço da Web](creating-document-output-streams.md#pass-documents-to-the-output-service-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -695,6 +709,7 @@ Passe um documento recuperado dos Serviços de conteúdo (obsoleto) usando o ser
    * Um valor de string que especifica o armazenamento no qual o conteúdo é adicionado. A loja padrão é `SpacesStore`. Esse valor é um parâmetro obrigatório.
    * Um valor de string que especifica o caminho totalmente qualificado do conteúdo a ser recuperado (por exemplo, `/Company Home/Form Designs/Loan.xdp`). Esse valor é um parâmetro obrigatório.
    * Um valor de string que especifica a versão. Esse valor é um parâmetro opcional e você pode passar uma string vazia. Nessa situação, a versão mais recente é recuperada.
+
    O `retrieveContent` método retorna um `CRCResult` objeto que contém o arquivo XDP. Recupere uma `com.adobe.idp.Document` instância chamando o `CRCResult` método do `getDocument` objeto.
 
 1. Renderize o formulário PDF não interativo.
@@ -707,6 +722,7 @@ Passe um documento recuperado dos Serviços de conteúdo (obsoleto) usando o ser
    * Um `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
    * Um `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
    * O `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem unidos ao design de formulário.
+
    O `generatePDFOutput2` método retorna um `OutputResult` objeto que contém os resultados da operação.
 
 1. Execute uma ação com o fluxo de dados do formulário.
@@ -723,7 +739,7 @@ Passe um documento recuperado dos Serviços de conteúdo (obsoleto) usando o ser
 
 [Start rápido (modo SOAP): Transmissão de documentos ao serviço de saída usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -733,7 +749,7 @@ Transmita um documento recuperado dos Serviços de conteúdo (obsoleto) usando o
 
 1. Incluir arquivos de projeto.
 
-   Crie um projeto do Microsoft .NET que use MTOM. Como esse aplicativo cliente chama dois serviços AEM Forms, crie duas referências de serviço. Use a seguinte definição WSDL para a referência de serviço associada ao serviço de Saída: `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`.
+   Crie um projeto do Microsoft .NET que use MTOM. Como este aplicativo cliente chama dois serviços AEM Forms, crie duas referências de serviço. Use a seguinte definição WSDL para a referência de serviço associada ao serviço de Saída: `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`.
 
    Use a seguinte definição WSDL para a referência de serviço associada ao serviço de Gerenciamento de Documentos: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
@@ -741,7 +757,7 @@ Transmita um documento recuperado dos Serviços de conteúdo (obsoleto) usando o
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto de API do Output e do cliente de gerenciamento de Documentos.
 
@@ -755,6 +771,7 @@ Transmita um documento recuperado dos Serviços de conteúdo (obsoleto) usando o
       * Atribua o valor da senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+
    >[!NOTE]
    >
    >Repita essas etapas para o cliente `DocumentManagementServiceClient`de serviço.
@@ -783,6 +800,7 @@ Transmita um documento recuperado dos Serviços de conteúdo (obsoleto) usando o
    * O `BLOB` objeto que contém a fonte de dados XML que contém os dados a serem unidos ao design de formulário.
    * Um `BLOB` objeto de saída que é preenchido pelo `generatePDFOutput2` método. O `generatePDFOutput2` método preenche esse objeto com metadados gerados que descrevem o documento. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
    * Um `OutputResult` objeto de saída que contém os resultados da operação. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
+
    O `generatePDFOutput2` método retorna um `BLOB` objeto que contém o formulário PDF não interativo.
 
 1. Execute uma ação com o fluxo de dados do formulário.
@@ -796,17 +814,17 @@ Transmita um documento recuperado dos Serviços de conteúdo (obsoleto) usando o
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Transmissão de Documentos localizados no Repositório para o Serviço de Saída {#passing-documents-located-in-the-repository-to-the-output-service}
 
 O serviço de Saída renderiza um formulário PDF não interativo que se baseia em um design de formulário que geralmente é salvo como um arquivo XDP e criado no Designer. É possível enviar um `com.adobe.idp.Document` objeto que contenha o design de formulário para o serviço de Saída. O serviço de Saída renderiza o design de formulário localizado no `com.adobe.idp.Document` objeto.
 
-Uma vantagem de passar um `com.adobe.idp.Document` objeto para o serviço de Saída é que outras operações do serviço AEM Forms retornam uma `com.adobe.idp.Document` instância. Ou seja, você pode obter uma `com.adobe.idp.Document` instância de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP esteja armazenado no repositório do AEM Forms, como mostrado na ilustração a seguir.
+Uma vantagem de passar um `com.adobe.idp.Document` objeto para o serviço de Saída é que outras operações de serviço do AEM Forms retornam uma `com.adobe.idp.Document` instância. Ou seja, você pode obter uma `com.adobe.idp.Document` instância de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP esteja armazenado no repositório de AEM Forms, como mostrado na ilustração a seguir.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
-A pasta *FormsFolder* é um local definido pelo usuário no repositório AEM Forms (esse local é um exemplo e não existe por padrão). Neste exemplo, um design de formulário chamado Loan.xdp está localizado nesta pasta. Além do design de formulário, outros materiais de suporte como imagens podem ser armazenados nesse local. O caminho para um recurso localizado no repositório do AEM Forms é:
+A pasta *FormsFolder* é um local definido pelo usuário no repositório AEM Forms (esse local é um exemplo e não existe por padrão). Neste exemplo, um design de formulário chamado Loan.xdp está localizado nesta pasta. Além do design de formulário, outros materiais de suporte como imagens podem ser armazenados nesse local. O caminho para um recurso localizado no repositório AEM Forms é:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -816,19 +834,19 @@ Você pode criar um PDF com base em um arquivo XDP localizado no repositório, u
 
 [Start rápido (modo EJB): Criar um documento PDF com base em um arquivo XDP do aplicativo usando a API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) Java (mostra como passar o local do arquivo XDP por referência).
 
-[Start rápido (modo EJB): Enviar um documento localizado no Repositório de formulários do AEM para o serviço de Saída usando a API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) Java (mostra como recuperar programaticamente o arquivo XDP do Repositório de formulários do AEM e passá-lo para o serviço de Saída em uma `com.adobe.idp.Document` instância). (Esta seção discute como executar esta tarefa)
+[Start rápido (modo EJB): Passar um documento localizado no Repositório de AEM Forms para o serviço de Saída usando a API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) Java (mostra como recuperar programaticamente o arquivo XDP do Repositório de AEM Forms e passá-lo para o serviço de Saída em uma `com.adobe.idp.Document` instância). (Esta seção discute como executar esta tarefa)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-3}
 
-Para passar um documento obtido do repositório do AEM Forms para o serviço de Saída, execute as seguintes tarefas:
+Para passar um documento obtido do repositório AEM Forms para o serviço de Saída, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
 1. Crie um objeto de API do Output e um objeto da API do Documento Management Client.
-1. Recupere o design de formulário do repositório do AEM Forms.
+1. Recupere o design de formulário do repositório de AEM Forms.
 1. Renderize o formulário PDF não interativo.
 1. Execute uma ação com o fluxo de dados.
 
@@ -840,15 +858,15 @@ Inclua os arquivos necessários ao seu projeto de desenvolvimento. Se você esti
 
 Antes de executar programaticamente uma operação de API de serviço de Saída, crie um objeto de API de Cliente de Saída. Além disso, como esse fluxo de trabalho recupera um arquivo XDP do Content Services (obsoleto), crie um objeto da API de Gerenciamento de Documentos.
 
-**Recuperar o design de formulário do AEM Forms Repository**
+**Recuperar o design de formulário do Repositório de AEM Forms**
 
-Recupere o arquivo XDP do repositório de formulários do AEM usando a API do repositório. (Consulte [Lendo Recursos](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+Recupere o arquivo XDP do Repositório de AEM Forms usando a API do Repositório. (Consulte [Lendo Recursos](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 O arquivo XDP é retornado em uma `com.adobe.idp.Document` instância (ou em uma `BLOB` instância se você estiver usando serviços da Web). Em seguida, é possível passar a `com.adobe.idp.Document` instância para o serviço de Saída.
 
 **Renderizar o formulário PDF não interativo**
 
-Para renderizar um formulário não interativo, passe a `com.adobe.idp.Document` instância que foi retornada usando a API do repositório de formulários do AEM.
+Para renderizar um formulário não interativo, passe a `com.adobe.idp.Document` instância que foi retornada usando a API do repositório do AEM Forms.
 
 >[!NOTE]
 >
@@ -862,7 +880,7 @@ Para renderizar um formulário não interativo, passe a `com.adobe.idp.Document`
 
 [Transmita documentos localizados no Repositório para o Serviço de saída usando a API Java](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -884,7 +902,7 @@ Passe um documento recuperado do Repositório usando o serviço de Saída e a AP
    * Crie um `OutputClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
    * Crie um `DocumentManagementServiceClientImpl` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
 
-1. Recupere o design de formulário do AEM Forms Repository.
+1. Recupere o design de formulário do Repositório de AEM Forms.
 
    Chame o método do `ResourceRepositoryClient` objeto `readResourceContent` e passe um valor de string que especifique o local do URI para o arquivo XDP. Por exemplo, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Este valor é obrigatório. Este método retorna uma `com.adobe.idp.Document` instância que representa o arquivo XDP.
 
@@ -898,6 +916,7 @@ Passe um documento recuperado do Repositório usando o serviço de Saída e a AP
    * Um `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
    * Um `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
    * O `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem unidos ao design de formulário.
+
    O `generatePDFOutput2` método retorna um `OutputResult` objeto que contém os resultados da operação.
 
 1. Execute uma ação com o fluxo de dados do formulário.
@@ -910,9 +929,9 @@ Passe um documento recuperado do Repositório usando o serviço de Saída e a AP
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Start rápido (modo EJB): Transmissão de um documento localizado no repositório de formulários do AEM para o serviço de Saída usando a API do Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Start rápido (modo EJB): Transmissão de um documento localizado no Repositório de AEM Forms para o serviço de Saída usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -932,7 +951,7 @@ Antes de ler *Criar Documentos PDF usando Fragmentos*, é recomendável que voc�
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-4}
 
@@ -970,7 +989,7 @@ Depois que o serviço de Saída gera um documento PDF, é possível salvá-lo co
 
 [Criar um documento PDF com base em fragmentos usando a API de serviço da Web](creating-document-output-streams.md#create-a-pdf-document-based-on-fragments-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1001,6 +1020,7 @@ Crie um documento PDF com base em fragmentos usando a API do Serviço de Saída 
    * Um `com.adobe.idp.Document` objeto que representa o documento DX a ser usado.
    * Um `java.util.Map` objeto que contém os arquivos XDP de entrada.
    * Um `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log do trabalho.
+
    O `invokeDDX` método retorna um `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contém o documento XDP montado. Para recuperar o documento XDP montado, execute as seguintes ações:
 
    * Chame o `AssemblerResult` método do `getDocuments` objeto. Esse método retorna um `java.util.Map` objeto.
@@ -1018,6 +1038,7 @@ Crie um documento PDF com base em fragmentos usando a API do Serviço de Saída 
    * Um `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF
    * Um `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização
    * O `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem unidos ao design de formulário
+
    O `generatePDFOutput2` método retorna um `OutputResult` objeto que contém os resultados da operação
 
 1. Salve o documento PDF como um arquivo PDF.
@@ -1034,7 +1055,7 @@ Crie um documento PDF com base em fragmentos usando a API do Serviço de Saída 
 
 [Start rápido (modo SOAP): Criação de um documento PDF com base em fragmentos usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Definindo propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
@@ -1046,13 +1067,13 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
 
    Crie um projeto do Microsoft .NET que use MTOM. Use a seguinte definição WSDL para a referência de serviço associada ao serviço de Saída:
 
-   ```as3
+   ```java
     http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1.
    ```
 
    Use a seguinte definição WSDL para a referência de serviço associada ao serviço Assembler:
 
-   ```as3
+   ```java
     http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
@@ -1060,7 +1081,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto Cliente de Saída e Montador.
 
@@ -1074,6 +1095,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
       * Atribua o valor da senha correspondente ao `OutputServiceClient.ClientCredentials.UserName.Password`campo.
       * Atribua o valor constante `HttpClientCredentialType.Basic` ao `BasicHttpBindingSecurity.Transport.ClientCredentialType`campo.
    * Atribua o valor `BasicHttpSecurityMode.TransportCredentialOnly` constante ao `BasicHttpBindingSecurity.Security.Mode`campo.
+
    >[!NOTE]
    >
    >Repita essas etapas para o `AssemblerServiceClient`objeto.
@@ -1085,6 +1107,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
    * Um `BLOB` objeto que representa o documento DDX
    * O `MyMapOf_xsd_string_To_xsd_anyType` objeto que contém os arquivos necessários
    * Um `AssemblerOptionSpec` objeto que especifica opções de tempo de execução
+
    O `invokeDDX` método retorna um `AssemblerResult` objeto que contém os resultados da tarefa e quaisquer exceções que ocorreram. Para obter o documento XDP recém-criado, execute as seguintes ações:
 
    * Acesse o `AssemblerResult` campo do `documents` objeto, que é um `Map` objeto que contém os documentos PDF resultantes.
@@ -1103,6 +1126,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
    * O `BLOB` objeto que contém a fonte de dados XML que contém os dados a serem unidos ao design de formulário.
    * Um objeto de saída `BLOB` que o `generatePDFOutput2` método preenche. O `generatePDFOutput2` método preenche esse objeto com metadados gerados que descrevem o documento. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
    * Um `OutputResult` objeto de saída que contém os resultados da operação. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
+
    O `generatePDFOutput2` método retorna um `BLOB` objeto que contém o formulário PDF não interativo.
 
 1. Salve o documento PDF como um arquivo PDF.
@@ -1116,7 +1140,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Imprimindo em Arquivos {#printing-to-files}
 
@@ -1135,7 +1159,7 @@ Usando o serviço de Saída, é possível unir dados XML a um design de formulá
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-5}
 
@@ -1157,10 +1181,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se os AEM Forms forem implantados em JBoss)
 
-se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms é implantado. (Consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.)
+se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado. (Consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.)
 
 **Criar um objeto de cliente de saída**
 
@@ -1192,7 +1216,7 @@ Depois que o serviço de Saída executa uma operação, ele retorna vários iten
 
 [Imprimir em arquivos usando a API de serviço da Web](creating-document-output-streams.md#print-to-files-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1232,6 +1256,7 @@ Imprima em um arquivo usando a API de saída (Java):
    * Um valor de string que especifica o local do arquivo XDC a ser usado (você pode passar `null` se tiver especificado o arquivo XDC a ser usado usando o `PrintedOutputOptionsSpec` objeto).
    * O `PrintedOutputOptionsSpec` objeto que contém as opções de tempo de execução necessárias para imprimir em um arquivo.
    * O `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados do formulário.
+
    O `generatePrintedOutput` método retorna um `OutputResult` objeto que contém os resultados da operação.
 
    >[!NOTE]
@@ -1250,7 +1275,7 @@ Imprima em um arquivo usando a API de saída (Java):
 
 [Start rápido (modo SOAP): Imprimir em um arquivo usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Definindo propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
@@ -1264,7 +1289,7 @@ Imprima para um arquivo usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto de cliente de saída.
 
@@ -1318,9 +1343,9 @@ Imprima para um arquivo usando a API de saída (serviço da Web):
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Envio de fluxos de impressão para impressoras {#sending-print-streams-to-printers}
 
@@ -1339,7 +1364,7 @@ Usando o serviço de Saída, é possível unir dados XML a um design de formulá
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-6}
 
@@ -1361,10 +1386,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (obrigatório se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (Obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (obrigatório se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se AEM Forms forem implantados em JBoss)
 
-se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms é implantado.
+se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado.
 
 **Criar um objeto de cliente de saída**
 
@@ -1522,6 +1547,7 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
       * Um valor de string que especifica o local do arquivo XDC a ser usado.
       * O `PrintedOutputOptionsSpec` objeto que contém opções de tempo de execução necessárias para imprimir em um arquivo.
       * O `com.adobe.idp.Document` objeto que representa a fonte de dados XML que contém os dados do formulário a serem unidos ao design de formulário.
+
       Esse método retorna um `OutputResult` objeto que contém os resultados da operação.
 
    * Crie um `com.adobe.idp.Document` objeto para enviar à impressora, chamando o `OutputResult` método do objeto `getGeneratedDoc` . Esse método retorna um `com.adobe.idp.Document` objeto.
@@ -1535,9 +1561,10 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
    * Um valor de `PrinterProtocol` lista discriminada que especifica o protocolo da impressora a ser usado. Por exemplo, para especificar o protocolo SharedPrinter, passe `PrinterProtocol.SharedPrinter`.
    * Um valor de string que especifica o nome do servidor de impressão. Por exemplo, supondo que o nome do servidor de impressão seja PrintServer1, passe `\\\PrintSever1`.
    * Um valor de string que especifica o nome da impressora. Por exemplo, supondo que o nome da impressora seja Printer1, passe `\\\PrintSever1\Printer1`.
+
    >[!NOTE]
    >
-   >O `sendToPrinter` método foi adicionado à AEM Forms API na versão 8.2.1.
+   >O `sendToPrinter` método foi adicionado à API do AEM Forms na versão 8.2.1.
 
 ### Enviar um fluxo de impressão para uma impressora usando a API de serviço da Web {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
@@ -1549,7 +1576,7 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto de cliente de saída.
 
@@ -1605,9 +1632,10 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
    * Um `bool` valor que especifica se o valor do parâmetro anterior deve ser usado. Passe o valor `true`. (Esse valor de parâmetro é necessário somente para invocação de serviço da Web.)
    * Um valor de string que especifica o nome do servidor de impressão. Por exemplo, supondo que o nome do servidor de impressão seja PrintServer1, passe `\\\PrintSever1`.
    * Um valor de string que especifica o nome da impressora. Por exemplo, supondo que o nome da impressora seja Printer1, passe `\\\PrintSever1\Printer1`.
+
    >[!NOTE]
    >
-   >O `sendToPrinter` método foi adicionado à AEM Forms API na versão 8.2.1.
+   >O `sendToPrinter` método foi adicionado à API do AEM Forms na versão 8.2.1.
 
 ## Criação de vários arquivos de saída {#creating-multiple-output-files}
 
@@ -1621,7 +1649,7 @@ A ilustração a seguir mostra o serviço de Saída processando um arquivo de da
 
 Os dados XML a seguir mostram um exemplo de um arquivo de dados que contém três registros de dados.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <batch>
  <LoanRecord>
@@ -1676,7 +1704,7 @@ Observe que o elemento XML que start e encerra cada registro de dados é `LoanRe
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-7}
 
@@ -1699,10 +1727,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se os AEM Forms forem implantados em JBoss)
 
-se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms é implantado.
+se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado.
 
 **Criar um objeto de cliente de saída**
 
@@ -1738,7 +1766,7 @@ Depois de referenciar uma fonte de dados XML válida que contenha vários regist
 
 Depois que o serviço de Saída executa uma operação, ele retorna dados XML que especificam se a operação foi bem-sucedida. O XML a seguir é retornado pelo serviço de Saída. Nessa situação, o serviço de Saída gerou 42 documentos.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <printResult>
  <status>0</status>
@@ -1769,7 +1797,7 @@ Depois que o serviço de Saída executa uma operação, ele retorna dados XML qu
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1797,7 +1825,7 @@ Crie vários arquivos PDF usando a API de saída (Java):
 
    * Crie um `PDFOutputOptionsSpec` objeto usando seu construtor.
    * Configure a opção Muitos arquivos chamando o `PDFOutputOptionsSpec` método do `setGenerateManyFiles` objeto. Por exemplo, passe o valor `true` para instruir o serviço de Saída a criar um arquivo PDF separado para cada registro na fonte de dados XML. (Se você for aprovado `false`, o serviço de Saída gerará um único documento PDF que contém todos os registros).
-   * Defina a opção Arquivo URI chamando o método do `PDFOutputOptionsSpec` `setFileUri` objeto e transmitindo um valor de string que especifica o local dos arquivos gerados pelo serviço de Saída. A opção Arquivo URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção Arquivo URI chamando o método do `PDFOutputOptionsSpec` `setFileUri` objeto e transmitindo um valor de string que especifica o local dos arquivos gerados pelo serviço de Saída. A opção Arquivo URI é relativa às AEM Forms de hospedagem do servidor de aplicativos J2EE, não ao computador cliente.
    * Defina a opção Nome do registro chamando o `OutputOptionsSpec` método do `setRecordName` objeto e transmitindo um valor de string que especifica o nome do elemento XML na fonte de dados que separa os registros de dados. (Por exemplo, considere a fonte de dados XML mostrada anteriormente nesta seção. O nome do elemento XML que separa os registros de dados é LoanRecord).
 
 1. Definir opções de tempo de execução de renderização
@@ -1815,6 +1843,7 @@ Crie vários arquivos PDF usando a API de saída (Java):
    * Um `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
    * Um `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
    * O `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem unidos ao design de formulário.
+
    O `generatePDFOutput` método retorna um `OutputResult` objeto que contém os resultados da operação.
 
 1. Recuperar os resultados da operação
@@ -1828,7 +1857,7 @@ Crie vários arquivos PDF usando a API de saída (Java):
 
 [Start rápido (modo EJB): Criação de vários arquivos PDF usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1842,7 +1871,7 @@ Crie vários arquivos PDF usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto de cliente de saída.
 
@@ -1869,7 +1898,7 @@ Crie vários arquivos PDF usando a API de saída (serviço da Web):
 
    * Crie um `PDFOutputOptionsSpec` objeto usando seu construtor.
    * Defina a opção Muitos arquivos atribuindo um valor booliano ao membro de `OutputOptionsSpec` dados do `generateManyFiles` objeto. Por exemplo, atribua o valor `true` a esse membro de dados para instruir o serviço de Saída a criar um arquivo PDF separado para cada registro na fonte de dados XML. (Se você atribuir `false` a esse membro de dados, o serviço de Saída gera um único PDF que contém todos os registros).
-   * Defina a opção URI do arquivo atribuindo um valor de string que especifica o local dos arquivos gerados pelo serviço de Saída para o membro de `OutputOptionsSpec` dados do `fileURI` objeto. A opção Arquivo URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção URI do arquivo atribuindo um valor de string que especifica o local dos arquivos gerados pelo serviço de Saída para o membro de `OutputOptionsSpec` dados do `fileURI` objeto. A opção Arquivo URI é relativa às AEM Forms de hospedagem do servidor de aplicativos J2EE, não ao computador cliente.
    * Defina a opção de nome de registro atribuindo um valor de string que especifica o nome do elemento XML na fonte de dados que separa os registros de dados para o membro de `OutputOptionsSpec` dados do `recordName` objeto.
    * Defina a opção de cópias atribuindo um valor inteiro que especifica o número de cópias geradas pelo serviço de Saída para o membro de `OutputOptionsSpec` dados do `copies` objeto.
 
@@ -1903,9 +1932,9 @@ Crie vários arquivos PDF usando a API de saída (serviço da Web):
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Criando Regras de Pesquisa {#creating-search-rules}
 
@@ -1917,7 +1946,7 @@ Além disso, o serviço de Saída é capaz de gerar pacotes de documentos, onde 
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-8}
 
@@ -1941,10 +1970,10 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (obrigatório se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (Obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (obrigatório se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se AEM Forms forem implantados em JBoss)
 
-se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms é implantado.
+se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado.
 
 **Criar um objeto de cliente de saída**
 
@@ -1984,7 +2013,7 @@ Depois que o serviço de Saída executa uma operação, ele retorna dados XML qu
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -2013,6 +2042,7 @@ Crie regras de pesquisa usando a API de saída (Java):
    * Crie um `Rule` objeto usando seu construtor.
    * Defina um padrão de texto chamando o método do `Rule` objeto `setPattern` e transmitindo um valor de string que especifica um padrão de texto.
    * Defina o design de formulário correspondente chamando o `Rule` método do `setForm` objeto . Passe um valor de string que especifica o nome do design de formulário.
+
    >[!NOTE]
    >
    >Para cada padrão de texto que você deseja definir, repita as três subetapas anteriores.
@@ -2024,7 +2054,7 @@ Crie regras de pesquisa usando a API de saída (Java):
 1. Defina as opções de tempo de execução do PDF.
 
    * Crie um `PDFOutputOptionsSpec` objeto usando seu construtor.
-   * Especifique o nome e o local do arquivo PDF gerado pelo serviço de Saída chamando o `PDFOutputOptionsSpec` método do `setFileURI` objeto. Passe um valor de string que especifica o local do arquivo PDF. A opção Arquivo URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Especifique o nome e o local do arquivo PDF gerado pelo serviço de Saída chamando o `PDFOutputOptionsSpec` método do `setFileURI` objeto. Passe um valor de string que especifica o local do arquivo PDF. A opção Arquivo URI é relativa às AEM Forms de hospedagem do servidor de aplicativos J2EE, não ao computador cliente.
    * Defina as regras que você definiu chamando o `PDFOutputOptionsSpec` método do `setRules` objeto. Passe o `java.util.List` objeto que contém os `Rule` objetos.
    * Defina o número de bytes a serem verificados para os padrões de texto definidos chamando o método do `PDFOutputOptionsSpec` objeto `setLookAhead` . Passe um valor inteiro que representa os números de bytes.
 
@@ -2043,6 +2073,7 @@ Crie regras de pesquisa usando a API de saída (Java):
    * Um `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
    * Um `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
    * O `com.adobe.idp.Document` objeto que contém os dados de formulário pesquisados pelo serviço de Saída para os padrões de texto definidos.
+
    O `generatePDFOutput` método retorna um `OutputResult` objeto que contém os resultados da operação.
 
 1. Recupere os resultados da operação.
@@ -2059,7 +2090,7 @@ Crie regras de pesquisa usando a API de saída (Java):
 
 [Start rápido (modo SOAP): Criação de regras de pesquisa usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -2073,7 +2104,7 @@ Crie regras de pesquisa usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto de cliente de saída.
 
@@ -2101,6 +2132,7 @@ Crie regras de pesquisa usando a API de saída (serviço da Web):
    * Crie um `Rule` objeto usando seu construtor.
    * Defina um padrão de texto atribuindo um valor de string que especifica um padrão de texto ao membro de `Rule` dados do `pattern` objeto.
    * Defina o design de formulário correspondente atribuindo um valor de string que especifica o design de formulário ao membro de `Rule` dados do `form` objeto.
+
    >[!NOTE]
    >
    >Para cada padrão de texto que você deseja definir, repita as três subetapas anteriores.
@@ -2112,7 +2144,7 @@ Crie regras de pesquisa usando a API de saída (serviço da Web):
 1. Definir opções de tempo de execução de PDF
 
    * Crie um `PDFOutputOptionsSpec` objeto usando seu construtor.
-   * Defina a opção URI do arquivo atribuindo um valor de string que especifica o local do arquivo PDF gerado pelo serviço de Saída para o membro de `PDFOutputOptionsSpec` dados do `fileURI` objeto. A opção Arquivo URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção URI do arquivo atribuindo um valor de string que especifica o local do arquivo PDF gerado pelo serviço de Saída para o membro de `PDFOutputOptionsSpec` dados do `fileURI` objeto. A opção Arquivo URI é relativa às AEM Forms de hospedagem do servidor de aplicativos J2EE, não ao computador cliente.
    * Defina a opção de cópias atribuindo um valor inteiro que especifica o número de cópias geradas pelo serviço de Saída para o membro de `PDFOutputOptionsSpec` dados do `copies` objeto.
    * Defina as regras que você definiu atribuindo o `MyArrayOf_xsd_anyType` objeto que armazena as regras ao membro de `PDFOutputOptionsSpec` dados do `rules` objeto.
    * Defina o número de bytes a serem verificados para os padrões de texto definidos atribuindo um valor inteiro que representa os números de bytes a serem verificados no método de `PDFOutputOptionsSpec` dados do `lookAhead` objeto.
@@ -2121,6 +2153,7 @@ Crie regras de pesquisa usando a API de saída (serviço da Web):
 
    * Crie um `RenderOptionsSpec` objeto usando seu construtor.
    * Armazene o design de formulário em cache para melhorar o desempenho do serviço de Saída atribuindo o valor `true` ao membro de `RenderOptionsSpec` dados do objeto `cacheEnabled` .
+
    >[!NOTE]
    >
    >Não é possível definir a versão do documento PDF usando o membro do `RenderOptionsSpec` objeto `pdfVersion` se o documento de entrada for um formulário do Acrobat. O documento PDF de saída retém a versão PDF do formulário Acrobat. Da mesma forma, não é possível definir a opção PDF marcado usando o método do `RenderOptionsSpec` objeto `taggedPDF` se o documento de entrada for um formulário Acrobat.
@@ -2142,6 +2175,7 @@ Crie regras de pesquisa usando a API de saída (serviço da Web):
    * Um `BLOB` objeto preenchido pelo `generatePDFOutput` método. O `generatePDFOutput` método preenche esse objeto com metadados gerados que descrevem o documento. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
    * Um `BLOB` objeto preenchido pelo `generatePDFOutput` método. O `generatePDFOutput` método preenche esse objeto com dados de resultado. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
    * Um `OutputResult` objeto que contém os resultados da operação. (Esse valor de parâmetro é necessário somente para a invocação do serviço da Web).
+
    >[!NOTE]
    >
    >Ao gerar um documento PDF chamando o `generatePDFOutput` método, lembre-se de que não é possível unir dados a um formulário PDF XFA assinado, certificado ou contendo direitos de uso. Para obter informações sobre direitos de uso, consulte [Aplicar direitos de uso a Documentos](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)PDF.
@@ -2157,9 +2191,9 @@ Crie regras de pesquisa usando a API de saída (serviço da Web):
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Nivelamento de Documentos PDF {#flattening-pdf-documents}
 
@@ -2174,7 +2208,7 @@ A tentativa de achatar um PDF que seja um documento PDF não interativo causa um
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Saída, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-9}
 
@@ -2195,10 +2229,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se os AEM Forms forem implantados em JBoss)
 
-se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms é implantado. Para obter informações sobre a localização de todos os arquivos JAR do AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, será necessário substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado. Para obter informações sobre a localização de todos os arquivos JAR de AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java de AEM Forms.
 
 **Criar um objeto de cliente de saída**
 
@@ -2222,7 +2256,7 @@ Depois de recuperar um documento PDF interativo, é possível transformá-lo em 
 
 [Nivelar um documento PDF usando a API de serviço da Web](creating-document-output-streams.md#flatten-a-pdf-document-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -2255,6 +2289,7 @@ Nivele um documento PDF interativo em um documento PDF não interativo usando a 
    * Um valor `PDFARevisionNumber` enum que especifica o número da revisão. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
    * Um valor de string que representa o número e o ano da emenda, separados por dois pontos. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
    * Um valor `PDFAConformance` enum que representa o nível de conformidade do PDF/A. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
+
    O `transformPDF` método retorna um `com.adobe.idp.Document` objeto que contém um documento PDF não interativo.
 
 1. Salve o documento PDF não interativo como um arquivo PDF.
@@ -2270,7 +2305,7 @@ Nivele um documento PDF interativo em um documento PDF não interativo usando a 
 
 [Start rápido (modo SOAP): Transformando um documento PDF usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -2284,7 +2319,7 @@ Nivele um documento PDF interativo em um documento PDF não interativo usando a 
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um objeto de cliente de saída.
 
@@ -2318,6 +2353,7 @@ Nivele um documento PDF interativo em um documento PDF não interativo usando a 
    * Um valor de string que representa o número e o ano da emenda, separados por dois pontos. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
    * Um valor `PDFAConformance` enum que representa o nível de conformidade do PDF/A.
    * Valor booliano que especifica se o valor `PDFAConformance` enum é usado. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `false`.
+
    O `transformPDF` método retorna um `BLOB` objeto que contém um documento PDF não interativo.
 
 1. Salve o documento PDF não interativo como um arquivo PDF.
@@ -2331,6 +2367,6 @@ Nivele um documento PDF interativo em um documento PDF não interativo usando a 
 
 [Resumo das etapas](creating-document-output-streams.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
