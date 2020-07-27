@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '7153'
 ht-degree: 0%
@@ -360,7 +360,7 @@ O nome da pasta de saída é uma combinação do número da etapa atual, do nome
 
 O ECMAScript recebe uma referência do serviço de contexto do fluxo de trabalho e cria uma implementação da interface WorkflowContextProcessor. A implementação WorkflowContextProcessor aceita arquivos de entrada, copia o arquivo para um local temporário e retorna um documento representando o arquivo copiado. Com base no valor da variável Booliana purgePrevious, a etapa atual exclui a saída gerada pela última vez pela mesma etapa quando a etapa foi iniciada na instância de fluxo de trabalho atual. No final, o método wfSvc.execute é chamado para executar a implementação WorkflowContextProcessor. O conteúdo do documento de saída é salvo na pasta de resultados no caminho físico mencionado no nó de configuração Pasta assistida.
 
-```java
+```javascript
 log.error("Watch-folder workflow script called for step: " + graniteWorkItem.getNode().getTitle());
 var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
 // Custom WorkflowContextProcessor implementation which defines the processWorkflowContext() method purely in JS
@@ -613,7 +613,7 @@ O ECMAScript usaria a API createPDF do Gerador de PDF para converter documentos 
 
 1. Na pasta PDFG, crie um arquivo chamado pdfg-openOffice-sample.ecma e adicione o seguinte código ao arquivo:
 
-   ```java
+   ```javascript
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
    // Custom ContentProcessor implementation which defines the processInputs() method purely in JS
    var impl = { processWorkflowContext: function (wrkfContext) {
