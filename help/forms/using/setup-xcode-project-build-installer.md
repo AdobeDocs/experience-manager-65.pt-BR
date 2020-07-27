@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Para obter informações detalhadas sobre a assinatura de código e a adição d
 1. Certifique-se de que a mesma assinatura esteja selecionada para **Depurar**, **Liberar** e **Qualquer SDK** do iOS.
 1. Substitua o seguinte código no `AEM Forms-info.plist` arquivo:
 
-   ```java
+   ```xml
    <key>NSAppTransportSecurity</key>
    <dict>
    <key>NSAllowsArbitraryLoads</key>
@@ -100,7 +100,7 @@ Para obter informações detalhadas sobre a assinatura de código e a adição d
 
    com o seguinte, ao substituir `yourserver.com` por um nome de host apropriado para seu servidor.
 
-   ```java
+   ```xml
    <key>NSAppTransportSecurity</key>
    <dict>
    <key>NSExceptionDomains</key>
