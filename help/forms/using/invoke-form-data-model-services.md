@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -28,13 +28,13 @@ Esse documento se concentra em escrever um JavaScript usando a `guidelib.dataInt
 
 A `guidelib.dataIntegrationUtils.executeOperation` API chama um serviço de dentro de um campo de formulário adaptável. A sintaxe da API é a seguinte:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
 A estrutura da `guidelib.dataIntegrationUtils.executeOperation` API especifica detalhes sobre a operação do serviço. A sintaxe da estrutura é a seguinte.
 
-```
+```javascript
 var operationInfo = {
 formDataModelId,
 operationTitle,
@@ -95,7 +95,7 @@ O script de amostra a seguir usa a `guidelib.dataIntegrationUtils.executeOperati
 
 A `getAccountById` operação usa o valor no campo de `employeeID` formulário como entrada para o `empId` argumento e retorna o nome do funcionário, o número da conta e o saldo da conta do funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor no `name` argumento é preenchido no elemento de `fullName` formulário e no valor do `accountNumber` argumento no elemento de `account` formulário.
 
-```
+```javascript
 var operationInfo = {
 "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeAccount",
 "operationName": "getAccountDetails"
@@ -115,7 +115,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 Também é possível chamar o serviço de modelo de dados de formulário usando a `guidelib.dataIntegrationUtils.executeOperation` API com uma função de retorno de chamada. A sintaxe da API é a seguinte:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
@@ -131,7 +131,7 @@ A `GETOrder` operação usa o valor no campo de `Order ID` formulário como entr
 >
 > Se você usar a função `success` callback, os valores de saída não serão preenchidos nos campos de formulário especificados.
 
-```
+```javascript
 var operationInfo = {
     "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
     "operationTitle": "GETOrder",
