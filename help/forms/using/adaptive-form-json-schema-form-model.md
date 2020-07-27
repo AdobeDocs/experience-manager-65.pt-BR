@@ -1,43 +1,46 @@
 ---
-title: Criação de formulários adaptáveis usando o Esquema JSON
-seo-title: Criação de formulários adaptáveis usando o Esquema JSON
-description: Formulários adaptáveis podem usar o esquema JSON como modelo de formulário, permitindo que você aproveite esquemas JSON existentes para criar formulários adaptáveis.
-seo-description: Formulários adaptáveis podem usar o esquema JSON como modelo de formulário, permitindo que você aproveite esquemas JSON existentes para criar formulários adaptáveis.
+title: Criação de formulários adaptáveis usando o Schema JSON
+seo-title: Criação de formulários adaptáveis usando o Schema JSON
+description: Formulários adaptáveis podem usar o schema JSON como modelo de formulário, permitindo que você aproveite schemas JSON existentes para criar formulários adaptáveis.
+seo-description: Formulários adaptáveis podem usar o schema JSON como modelo de formulário, permitindo que você aproveite schemas JSON existentes para criar formulários adaptáveis.
 uuid: bdeaeae8-65a3-4c46-b27d-fe68481e31f1
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1469'
+ht-degree: 5%
 
 ---
 
 
-# Criação de formulários adaptáveis usando o Esquema JSON{#creating-adaptive-forms-using-json-schema}
+# Criação de formulários adaptáveis usando o Schema JSON{#creating-adaptive-forms-using-json-schema}
 
 ## Pré-requisitos {#prerequisites}
 
-A criação de um formulário adaptável usando um Esquema JSON como seu modelo de formulário requer o entendimento básico do Esquema JSON. É recomendável ler o seguinte conteúdo antes deste artigo.
+A criação de um formulário adaptável usando um Schema JSON como seu modelo de formulário requer uma compreensão básica do Schema JSON. É recomendável ler o seguinte conteúdo antes deste artigo.
 
 * [Criação de um formulário adaptável](../../forms/using/creating-adaptive-form.md)
-* [Esquema JSON](https://json-schema.org/)
+* [Schema JSON](https://json-schema.org/)
 
-## Uso de um Esquema JSON como modelo de formulário {#using-a-json-schema-as-form-model}
+## Uso de um Schema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
 
-O AEM Forms suporta a criação de um formulário adaptável usando um Esquema JSON existente como modelo de formulário. Este Esquema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O Esquema JSON que você usa deve estar em conformidade com as especificações [](https://json-schema.org/draft-04/schema)v4.
+O AEM Forms suporta a criação de um formulário adaptável usando um Schema JSON existente como modelo de formulário. Este Schema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O Schema JSON que você usa deve estar em conformidade com as especificações [](https://json-schema.org/draft-04/schema)v4.
 
-Os principais recursos do uso de um Esquema JSON são:
+Os principais recursos do uso de um Schema JSON são:
 
 * A estrutura do JSON é exibida como uma árvore na guia Localizador de conteúdo no modo de criação de um formulário adaptável. Você pode arrastar e adicionar elementos da hierarquia JSON ao formulário adaptável.
-* É possível pré-preencher o formulário usando JSON compatível com o esquema associado.
-* No envio, os dados inseridos pelo usuário são enviados como JSON que se alinha ao esquema associado.
+* É possível pré-preencher o formulário usando JSON compatível com o schema associado.
+* No envio, os dados inseridos pelo usuário são enviados como JSON que se alinha ao schema associado.
 
-Um Esquema JSON consiste em tipos de elementos simples e complexos. Os elementos têm atributos que adicionam regras ao elemento. Quando esses elementos e atributos são arrastados para um formulário adaptável, eles são mapeados automaticamente para o componente de formulário adaptável correspondente.
+Um Schema JSON consiste em tipos de elementos simples e complexos. Os elementos têm atributos que adicionam regras ao elemento. Quando esses elementos e atributos são arrastados para um formulário adaptável, eles são mapeados automaticamente para o componente de formulário adaptável correspondente.
 
 Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é o seguinte:
 
-```
+```json
 "birthDate": {
               "type": "string",
               "format": "date",
@@ -100,32 +103,32 @@ Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é 
   </tr>
   <tr>
    <td>propriedade array</td>
-   <td>Painel repetível com min e max iguais a minItems e maxItems respectivamente. Somente arrays homogêneos são suportados. Portanto, a restrição de itens deve ser um objeto e não uma matriz.<br /> </td>
+   <td>Painel repetível com min e max iguais a minItems e maxItems respectivamente. Somente matrizes homogêneas são suportadas. Portanto, a restrição de itens deve ser um objeto e não uma matriz.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Propriedades de esquema comuns {#common-schema-properties}
+### Propriedades de schemas comuns {#common-schema-properties}
 
-O Formulário adaptável usa as informações disponíveis no Esquema JSON para mapear cada campo gerado. Nomeadamente:
+O Formulário adaptável usa as informações disponíveis no Schema JSON para mapear cada campo gerado. Nomeadamente:
 
 * A propriedade title serve como rótulo para os componentes de formulário adaptáveis.
 * A propriedade description é definida como descrição longa para um componente de formulário adaptável.
 * A propriedade padrão serve como valor inicial de um campo de formulário adaptável.
 * A propriedade maxLength é definida como atributo maxlength do componente de campo de texto.
 * As propriedades mínima, máxima, exclusivaMinimum e exclusivaMaximum são usadas para o componente de caixa Numérico.
-* Para suportar o intervalo do componente DatePicker, são fornecidas propriedades adicionais do Esquema JSON minDate e maxDate.
+* Para suportar o intervalo do componente DatePicker, são fornecidas propriedades adicionais do Schema JSON minDate e maxDate.
 * As propriedades minItems e maxItems são usadas para restringir o número de itens/campos que podem ser adicionados ou removidos de um componente de painel.
 * A propriedade readOnly define o atributo readonly de um componente de formulário adaptável.
 * A propriedade necessária marca o campo de formulário adaptável como obrigatório, enquanto no caso de panel (onde type é object), os dados JSON enviados finais têm campos com valor vazio correspondente a esse objeto.
-* A propriedade pattern é definida como o padrão de validação (expressão regular) na forma adaptável.
-* A extensão do arquivo JSON Schema deve ser mantida .schema.json. Por exemplo, &lt;filename>.schema.json.
+* A propriedade pattern é definida como o padrão de validação (expressão normal) na forma adaptável.
+* A extensão do arquivo de Schema JSON deve ser mantida .schema.json. Por exemplo, &lt;nome_do_arquivo>.schema.json.
 
-## Exemplo de esquema JSON {#sample-json-schema}
+## Schema JSON de exemplo {#sample-json-schema}
 
-Aqui está um exemplo de um Esquema JSON.
+Aqui está um exemplo de um Schema JSON.
 
-```
+```json
 {
  "$schema": "https://json-schema.org/draft-04/schema#",
  "definitions": {
@@ -303,11 +306,11 @@ Aqui está um exemplo de um Esquema JSON.
 }
 ```
 
-### Definições de esquema reutilizáveis {#reusable-schema-definitions}
+### Definições de schemas reutilizáveis {#reusable-schema-definitions}
 
-As chaves de definição são usadas para identificar esquemas reutilizáveis. As definições de esquema reutilizáveis são usadas para criar fragmentos. É semelhante a identificar tipos complexos no XSD. Uma amostra de Esquema JSON com definições é apresentada abaixo:
+As chaves de definição são usadas para identificar schemas reutilizáveis. As definições de schema reutilizáveis são usadas para criar fragmentos. É semelhante a identificar tipos complexos no XSD. Um exemplo de Schema JSON com definições é fornecido abaixo:
 
-```
+```json
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
 
@@ -332,13 +335,13 @@ As chaves de definição são usadas para identificar esquemas reutilizáveis. A
 }
 ```
 
-O exemplo acima define um registro de cliente, no qual cada cliente tem um endereço de entrega e de cobrança. A estrutura de ambos os endereços é a mesma - os endereços têm endereço, cidade e estado - então é uma boa ideia não duplicar os endereços. Além disso, facilita a adição e exclusão de campos para qualquer alteração futura.
+O exemplo acima define um registro de cliente, no qual cada cliente tem um endereço de entrega e de cobrança. A estrutura de ambos os endereços é a mesma - os endereços têm endereço, cidade e estado - então é uma boa ideia não duplicado os endereços. Além disso, facilita a adição e exclusão de campos para qualquer alteração futura.
 
-## Pré-configuração de campos na Definição de Esquema JSON {#pre-configuring-fields-in-json-schema-definition}
+## Pré-configuração de campos na definição de Schema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo Esquema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo está listado abaixo:
+Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo de Schema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo está listado abaixo:
 
-```
+```json
 {
     "properties": {
         "sizeInMB": {
@@ -356,13 +359,13 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
 }
 ```
 
-## Configurar scripts ou expressões para objetos de formulário {#configure-scripts-or-expressions-for-form-objects}
+## Configurar scripts ou expressões para objetos de formulário  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. É possível pré-configurar objetos de formulário para [avaliar uma expressão](../../forms/using/adaptive-form-expressions.md) em um evento de formulário.
+JavaScript é a linguagem expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. É possível pré-configurar objetos de formulário para [avaliar uma expressão](../../forms/using/adaptive-form-expressions.md) em um evento de formulário.
 
 Use a propriedade aem:afproperties para pré-configurar expressões de formulário adaptáveis ou scripts para componentes de formulário adaptáveis. Por exemplo, quando o evento initialize é acionado, o código abaixo define o valor do campo phone e imprime um valor no log:
 
-```
+```json
 "telephone": {
   "type": "string",
   "pattern": "/\\d{10}/",
@@ -583,13 +586,13 @@ Você deve ser um membro do grupo [de usuários avançados dos](/help/forms/usin
  </tbody>
 </table>
 
-Alguns exemplos de uso de eventos em um JSON estão ocultando um campo no evento initialize e configurando o valor de outro campo no evento de confirmação de valor. Para obter informações detalhadas sobre como criar expressões para os eventos de script, consulte Expressões [](../../forms/using/adaptive-form-expressions.md)de formulário adaptáveis.
+Alguns exemplos de uso de eventos em um JSON estão ocultando um campo no evento initialize e configurando o valor de outro campo no evento commit value. Para obter informações detalhadas sobre como criar expressões para eventos de script, consulte Expressões [de formulário](../../forms/using/adaptive-form-expressions.md)adaptáveis.
 
 Este é o exemplo de código JSON para exemplos mencionados acima.
 
 ### Ocultar um campo no evento initialize {#hiding-a-field-on-initialize-event}
 
-```
+```json
 "name": {
     "type": "string",
     "aem:afProperties": {
@@ -602,7 +605,7 @@ Este é o exemplo de código JSON para exemplos mencionados acima.
 
 #### Configurar o valor de outro campo no evento de confirmação de valor {#configure-value-of-another-field-on-value-commit-event}
 
-```
+```json
 "Income": {
     "type": "object",
     "properties": {
@@ -624,14 +627,14 @@ Este é o exemplo de código JSON para exemplos mencionados acima.
 }
 ```
 
-## Valores limite aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limitar valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
-É possível adicionar as seguintes restrições aos elementos do Esquema JSON para limitar os valores aceitáveis para um componente de formulário adaptável:
+É possível adicionar as seguintes restrições aos elementos do Schema JSON para limitar os valores aceitáveis para um componente de formulário adaptável:
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Propriedade do esquema</strong></p> </td>
+   <td><p><strong> propriedade Schema</strong></p> </td>
    <td><p><strong>Tipo de dados</strong></p> </td>
    <td><p><strong>Descrição</strong></p> </td>
    <td><p><strong>Componente</strong></p> </td>
@@ -704,7 +707,7 @@ Este é o exemplo de código JSON para exemplos mencionados acima.
    <td><p>Especifica a sequência dos caracteres. Um componente aceita os caracteres se eles estiverem em conformidade com o padrão especificado.</p> <p>A propriedade pattern mapeia para o padrão de validação do componente de formulário adaptável correspondente.</p> </td>
    <td>
     <ul>
-     <li>Todos os componentes de formulários adaptáveis que estão mapeados para um esquema XSD </li>
+     <li>Todos os componentes de formulários adaptáveis que estão mapeados para um schema XSD </li>
     </ul> </td>
   </tr>
   <tr>
@@ -722,20 +725,20 @@ Este é o exemplo de código JSON para exemplos mencionados acima.
  </tbody>
 </table>
 
-## Construção sem suporte {#non-supported-constructs}
+## Construção sem suporte  {#non-supported-constructs}
 
-Os formulários adaptáveis não suportam as seguintes construções do Esquema JSON:
+Os formulários adaptativos não suportam as seguintes construções de Schema JSON:
 
 * Tipo nulo
-* Tipos de União, tais como quaisquer, e
+* tipos de Uniões, como qualquer, e
 * OneOf, AnyOf, AllOf e NOT
-* Somente arrays homogêneos são suportados. Portanto, a restrição de itens deve ser um objeto e não uma matriz.
+* Somente matrizes homogêneas são suportadas. Portanto, a restrição de itens deve ser um objeto e não uma matriz.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Perguntas frequentes {#frequently-asked-questions}
 
 **Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada a partir de qualquer tipo complexo) para subformulários repetitivos (os valores minOccours ou maxOccurs são maiores que 1)?**
 
-Em um subformulário repetível, é necessário usar o subformulário completo. Se desejar apenas campos seletivos, use a estrutura inteira e exclua os não desejados.
+Em um subformulário repetível, é necessário usar o subformulário completo. Se você quiser apenas campos seletivos, use a estrutura inteira e exclua os não desejados.
 
 **Tenho uma estrutura longa e complexa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
 
@@ -744,6 +747,6 @@ Você tem duas opções:
 * Percorrer a estrutura em árvore
 * Use a caixa Pesquisar para localizar um elemento
 
-**Qual deve ser a extensão do arquivo de esquema JSON?**
+**Qual deve ser a extensão do arquivo de schema JSON?**
 
-A extensão do arquivo JSON Schema deve ser .schema.json. Por exemplo, &lt;filename>.schema.json.
+A extensão do arquivo de Schema JSON deve ser .schema.json. Por exemplo, &lt;nome_do_arquivo>.schema.json.
