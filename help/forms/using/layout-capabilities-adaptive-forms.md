@@ -9,20 +9,23 @@ topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1158'
+ht-degree: 1%
 
 ---
 
 
 # Recursos de layout de formulários adaptáveis{#layout-capabilities-of-adaptive-forms}
 
-O Adobe Experience Manager (AEM) permite que você crie formulários adaptativos fáceis de usar que oferecem experiências dinâmicas para usuários finais. O layout do formulário controla como os itens ou componentes são exibidos em um formulário adaptável.
+O Adobe Experience Manager (AEM) permite que você crie formulários adaptativos fáceis de usar que oferta experiências dinâmicas para os usuários finais. O layout do formulário controla como os itens ou componentes são exibidos em um formulário adaptável.
 
 ## Conhecimento pré-requisito {#prerequisite-knowledge}
 
 Antes de saber mais sobre os diferentes recursos de layout de formulários adaptáveis, leia os artigos a seguir para saber mais sobre formulários adaptáveis.
 
-[Introdução ao AEM Forms](../../forms/using/introduction-aem-forms.md)
+[Introdução aos AEM Forms](../../forms/using/introduction-aem-forms.md)
 
 [Introdução à criação de formulários](../../forms/using/introduction-forms-authoring.md)
 
@@ -76,13 +79,13 @@ Use esse layout de painel para fornecer navegação guiada dentro de um formulá
 
 Use o `Panel adaptive form` componente para fornecer navegação passo a passo dentro de um painel. Quando você usa esse layout, um usuário move para a próxima etapa somente após a conclusão da etapa atual
 
-```
+```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
-![Expressão de conclusão de etapa no layout Assistente para um formulário em várias etapas](assets/layout-sidebar.png)
+![expressão de conclusão de etapas no layout Assistente para um formulário em várias etapas](assets/layout-sidebar.png)
 
-Expressão de conclusão de etapa no layout Assistente para um formulário em várias etapas
+expressão de conclusão de etapas no layout Assistente para um formulário em várias etapas
 
 ![Um formulário usando o layout do assistente](assets/wizard-layout.png)
 
@@ -90,9 +93,9 @@ Um formulário usando o Assistente
 
 ### Layout para design acordeão {#layout-for-accordion-design}
 
-Usando esse layout, você pode colocar o `Panel adaptive form` componente em um painel com navegação no estilo acordeão. Usando esse layout, também é possível criar painéis repetíveis. Painéis repetidos permitem adicionar ou remover dinamicamente painéis, conforme necessário. É possível definir o número mínimo e máximo de vezes que um painel se repete. Além disso, o título do painel pode ser determinado dinamicamente, com base nas informações fornecidas nos itens do painel.
+Usando esse layout, você pode colocar o `Panel adaptive form` componente em um painel com a navegação no estilo acordeão. Usando esse layout, também é possível criar painéis repetíveis. Painéis repetidos permitem adicionar ou remover dinamicamente painéis, conforme necessário. É possível definir o número mínimo e máximo de vezes que um painel se repete. Além disso, o título do painel pode ser determinado dinamicamente, com base nas informações fornecidas nos itens do painel.
 
-A expressão Resumo pode ser usada para mostrar os valores fornecidos pelo usuário final no título do painel minimizado.
+A expressão de resumo pode ser usada para mostrar os valores fornecidos pelo usuário final no título do painel minimizado.
 
 ![Painéis repetidos usando o layout Acordeão em formulários adaptáveis](assets/repeatable_panels_using_accordion_layout.png)
 
@@ -120,7 +123,7 @@ Os layouts móveis permitem uma navegação fácil de usar nos dispositivos móv
 
 Esse layout controla a navegação usando uma barra de navegação e um menu de navegação. A barra de navegação mostra o ícone **&lt;** e **>** para indicar as etapas de navegação **seguintes** e **anteriores** no formulário.
 
-Os Layouts móveis estão disponíveis no `/libs/fd/af/layouts/mobile/` local. Por padrão, os seguintes layouts móveis estão disponíveis em formulários adaptáveis.
+Os Layouts móveis estão disponíveis no `/libs/fd/af/layouts/mobile/` local. Os seguintes layouts para dispositivos móveis estão disponíveis em formulários adaptáveis, por padrão.
 
 ![Lista de layouts móveis em formulários adaptáveis](assets/mobile-navigation.png)
 
@@ -148,9 +151,9 @@ Layouts móveis sem títulos de painel nos cabeçalhos do formulário
 
 O Layout da barra de ferramentas controla o posicionamento e a exibição de todos os botões de ação adicionados aos formulários adaptáveis. O layout pode ser adicionado no nível do formulário ou no nível do painel.
 
-![Uma lista de Layouts da barra de ferramentas em formulários adaptáveis para controlar o layout dos botões](assets/toolbar-layouts.png)
+![Uma lista de layouts da barra de ferramentas em formulários adaptáveis para controlar o layout dos botões](assets/toolbar-layouts.png)
 
-Uma lista de Layouts da barra de ferramentas em formulários adaptáveis
+Uma lista de layouts da barra de ferramentas em formulários adaptáveis
 
 Os layouts da barra de ferramentas estão disponíveis no `/libs/fd/af/layouts/toolbar` local. por padrão, os formulários adaptáveis fornecem os seguintes Layouts da barra de ferramentas.
 
@@ -160,9 +163,9 @@ Esse layout é selecionado como o layout padrão quando você adiciona qualquer 
 
 Além disso, você pode adicionar várias barras de ferramentas que contêm botões de ação configurados com esse layout. Um botão de ação está associado a um controle de formulário. É possível configurar as barras de ferramentas para serem anteriores ou posteriores a um painel.
 
-![Exibição padrão da barra de ferramentas](assets/toolbar_layout_default.png)
+![visualização padrão da barra de ferramentas](assets/toolbar_layout_default.png)
 
-Exibição padrão da barra de ferramentas
+visualização padrão da barra de ferramentas
 
 ### Layout móvel fixo para a barra de ferramentas {#mobile-fixed-layout-for-toolbar}
 
