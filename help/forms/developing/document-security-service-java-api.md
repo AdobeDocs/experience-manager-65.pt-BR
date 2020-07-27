@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -43,17 +46,17 @@ O SOAP (Java API Quick Start) está disponível para o serviço Rights Managemen
 
 [Start rápido (modo SOAP): Remoção de uma política de um documento do Word usando a API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O Start rápido localizado em Programação com AEM Forms baseia-se no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>O Start rápido localizado em Programação com AEM Forms é baseado no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Criação de uma política usando a API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
 O exemplo de código Java a seguir cria uma nova política chamada *Permitir cópia*. O conjunto de políticas ao qual a política é adicionada é nomeado Conjunto *de Políticas* Globais. Esse conjunto de políticas existe por padrão. (Consulte [Criando Políticas](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -182,7 +185,7 @@ O exemplo de código Java a seguir cria uma nova política chamada *Permitir có
 
 O exemplo de código Java a seguir modifica uma política chamada *Permitir cópia* definindo o período de empréstimo offline como 40 dias. (Consulte [Modificando Políticas](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -283,7 +286,7 @@ O exemplo de código Java a seguir modifica uma política chamada *Permitir cóp
 
 O exemplo de código Java a seguir exclui uma política chamada *Permitir cópia*. (Consulte [Excluindo Políticas](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -375,7 +378,7 @@ O exemplo de código Java a seguir exclui uma política chamada *Permitir cópia
 
 O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia* a um documento PDF chamado *Loan.pdf*. O conjunto de políticas ao qual a política é adicionada é nomeado Conjunto *de Políticas* Globais. O documento protegido por política é salvo como um arquivo PDF chamado *PolicyProtectedLoanDoc.pdf. *(Consulte [Aplicar políticas a Documentos](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -481,7 +484,7 @@ O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia
 
 O exemplo de código a seguir remove uma política de um documento PDF chamado *PolicyProtectedLoanDoc.pdf*. O documento PDF não protegido é salvo como *unProtectedLoan.pdf*. (Consulte [Remoção de políticas de Documentos](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -588,7 +591,7 @@ O exemplo de código a seguir remove uma política de um documento PDF chamado *
 
 O exemplo de código Java a seguir revoga um documento protegido por política chamado *PolicyProtectedLoanDoc.pdf*. Um documento PDF revisado está localizado no seguinte local do URL `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Consulte [Revogação do acesso a Documentos](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -702,7 +705,7 @@ O exemplo de código Java a seguir revoga um documento protegido por política c
 
 O exemplo de código Java a seguir inspeciona um documento PDF protegido por política chamado *PolicyProtectedLoanDoc.* pdf. (Consulte [Inspeção de Documentos](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protegidos por política.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -820,7 +823,7 @@ O exemplo de código Java a seguir inspeciona um documento PDF protegido por pol
 
 O exemplo de código Java a seguir restabelece o acesso a um documento PDF revogado chamado *PolicyProtectedLoanDoc.pdf*. (Consulte [Reinstalando o acesso a Documentos](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)Revogados.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -926,7 +929,7 @@ O exemplo de código Java a seguir restabelece o acesso a um documento PDF revog
 
 O exemplo de código Java a seguir cria uma nova marca d&#39;água do PDF chamada &#39;Amostra de marca d&#39;água do PDF&#39;. Essa marca d&#39;água contém um único elemento (Consulte [Criação de Marcas d&#39;água](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1059,7 +1062,7 @@ public class PDFWatermarksSOAPMode {
 
 O exemplo de código Java a seguir cria uma nova marca d&#39;água de texto chamada *Amostra de marca d&#39;água*. Esta marca d&#39;água contém um único elemento.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1208,7 +1211,7 @@ public class TextWatermarks {
 
 O exemplo de código Java a seguir modifica uma marca d&#39;água chamada &#39;Amostra de marca d&#39;água do texto&#39; e define a opacidade do primeiro elemento como 100.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1320,7 +1323,7 @@ public class ModifyWatermarks {
 
 O exemplo de código Java a seguir modifica uma marca d&#39;água chamada *Confidencial* modificando o valor do `opacity` atributo para 80.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1418,7 +1421,7 @@ O exemplo de código Java a seguir modifica uma marca d&#39;água chamada *Confi
 
 O exemplo de código Java a seguir pesquisa pelo evento de criação de política.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1531,7 +1534,7 @@ O exemplo de código Java a seguir pesquisa pelo evento de criação de polític
 
 O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia* a um documento do Word chamado *Loan.doc*. O conjunto de políticas ao qual a política é adicionada é nomeado Conjunto *de Políticas* Globais. O documento protegido por política é salvo como um arquivo DOC chamado *PolicyProtectedLoanDoc.doc. *(Consulte [Aplicar políticas a Documentos](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1646,7 +1649,7 @@ O exemplo de código Java a seguir aplica uma política chamada *Permitir cópia
 
 O exemplo de código a seguir remove uma política de um documento do Word chamado *PolicyProtectedLoanDoc.doc*. O documento do Word não protegido é salvo como *unProtectedLoan.doc*. (Consulte [Remoção de políticas de Documentos](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)do Word.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1754,7 +1757,7 @@ O exemplo de código a seguir remove uma política de um documento do Word chama
 
 O exemplo de código Java a seguir cria uma nova política abstrata chamada AllowCopy. O conjunto de políticas ao qual a política é adicionada é chamado de Conjunto de Políticas Global. Esse conjunto de políticas existe por padrão. (Consulte Criação de políticas.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1871,7 +1874,7 @@ public class CreateAbstractPolicySoap {
 
 O exemplo de código Java a seguir modifica uma política abstrata chamada AllowCopy. O conjunto de políticas no qual a política é modificada é chamado de Conjunto de Políticas Global. Esse conjunto de políticas existe por padrão. (Consulte Criação de políticas.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1970,7 +1973,7 @@ public class ModifyingAbstractPolicySoap {
 
 O exemplo de código Java a seguir exclui uma política abstrata chamada AllowCopy. O conjunto de políticas do qual a política é excluída é chamado de Conjunto de Políticas Global. Esse conjunto de políticas existe por padrão. (Consulte Criação de políticas.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2057,7 +2060,7 @@ public class DeleteAbstractPolicySoap {
 
 O exemplo de código Java a seguir demonstra o método para proteger um Documento no Fluxo de trabalho do demonstrativo, para um usuário existente.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2168,7 +2171,7 @@ O exemplo de código Java a seguir demonstra como você pode proteger um documen
 * Um novo Usuário, Licença e Política são criados.
 * O usuário está associado à Licença e à Política e o documento está protegido.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
