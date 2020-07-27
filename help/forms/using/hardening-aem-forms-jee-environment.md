@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '7698'
 ht-degree: 0%
@@ -165,7 +165,7 @@ Existe um risco aumentado de que um usuário não autorizado possa obter acesso 
 
 **Contas de serviço (chave de acesso JBoss somente no Windows)**
 
-O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem. A conta de usuário LocalSystem integrada tem um alto nível de acessibilidade; faz parte do grupo Administradores. Se uma identidade de processo de trabalho for executada como a conta de usuário LocalSystem, esse processo de trabalho terá acesso total ao sistema inteiro.
+O AEM Forms no JEE instala um serviço, por padrão, usando a conta LocalSystem. A conta de usuário LocalSystem integrada tem um alto nível de acessibilidade; faz parte do grupo Administradores. Se uma identidade de processo de trabalho for executada como a conta de usuário LocalSystem, esse processo de trabalho terá total acesso ao sistema inteiro.
 
 Para executar o servidor de aplicativos no qual os AEM Forms no JEE são implantados, usando uma conta específica não administrativa, siga estas instruções:
 
@@ -218,7 +218,7 @@ O Configuration Manager utilizou um servlet implantado no servidor de aplicativo
 1. Abra o arquivo META-INF/application.xml.
 1. Procure a seção adobe-bootstrapper.war:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <module id="WebApp_adobe_bootstrapper"> 
        <web> 
@@ -238,7 +238,7 @@ O Configuration Manager utilizou um servlet implantado no servidor de aplicativo
 1. Pare o servidor AEM Forms.
 1. Comente o adobe-bootstrapper.war e o adobe-lcm-bootstrapper-rediretory. módulos de guerra como se segue:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <!-- 
    <module id="WebApp_adobe_bootstrapper"> 
@@ -280,7 +280,7 @@ Quando o AEM Forms no JEE é instalado, uma única conta de usuário padrão é 
 
 1. Digite o seguinte URL em um navegador da Web:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -313,7 +313,7 @@ A geração WSDL (Web Service Definition Language) deve ser ativada somente para
 
 1. Digite o seguinte URL em um navegador da Web:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -357,7 +357,7 @@ No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNE
 
 1. Modifique [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} para adicionar `integratedSecurity=true` ao URL de conexão, como mostrado neste exemplo:
 
-   ```as3
+   ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
@@ -369,7 +369,7 @@ No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNE
 
 1. Start o Console de administração do WebLogic Server digitando o seguinte URL na linha de URL de um navegador da Web:
 
-   ```as3
+   ```java
    https://[host name]:7001/console
    ```
 
@@ -730,7 +730,7 @@ Use a lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para Exceções de Quem in
 
 A ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** é definida como uma constante na `UMConstants` classe da `com.adobe.idp.um.api` namespace, encontrada em `adobe-usermanager-client.jar`. Você pode usar as APIs do AEM Forms para criar, modificar ou editar essa lista. Por exemplo, para criar a lista Exceções de Quem indicou Permitidas Globais, use:
 
-```as3
+```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
 ```
 
@@ -758,7 +758,7 @@ Você pode ter criado arquivos WAR personalizados para trabalhar com AEM Forms n
 
 Veja a seguir um exemplo da entrada de filtro no arquivo *web.xml* para um arquivo ***SAMPLE*** WAR:
 
-```as3
+```java
 <filter> 
        <filter-name> filter-name </filter-name> 
        <filter-class> com.adobe.idp.um.auth.filter.RemoteCSRFFilter </filter-class> 
@@ -976,7 +976,7 @@ Para configurar o redirecionamento SSL para WebSphere ou WebLogic, consulte a do
 
 1. Adicione o seguinte código no elemento do conector https:
 
-   ```
+   ```xml
    <connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true" enabled="true"> 
     <ssl name="jboss7_ssl" key-alias="jboss71" password="Tibco321" certificate-key-file="../standalone/configuration/server.keystore" protocol="TLSv1"/> 
     </connector>
@@ -1053,7 +1053,7 @@ O acesso ao console de gerenciamento JBoss e ao console JMX já está configurad
 
 Depois de fazer logon no Console de administração, é possível navegar na lista de diretórios do console modificando o URL. Por exemplo, se você alterar o URL para um dos seguintes URLs, uma listagem de diretório poderá ser exibida:
 
-```as3
+```java
 https://<servername>:8080/adminui/secured/ 
 https://<servername>:8080/um/
 ```
@@ -1066,7 +1066,7 @@ Esta seção contém recomendações de configuração do servidor de aplicativo
 
 Defina as propriedades de diretórios de índice no arquivo weblogic.xml como `false`, como mostra este exemplo:
 
-```as3
+```xml
 <container-descriptor> 
     <index-directory-enabled>false 
     </index-directory-enabled> 
