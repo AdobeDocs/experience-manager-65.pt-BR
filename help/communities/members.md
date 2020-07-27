@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 4%
 
 ---
 
@@ -48,13 +51,16 @@ No ambiente author, para acessar o console Membros para gerenciar membros regist
 >Não será possível usar o console Membros se o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel não estiver ativado.
 
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![member-console1](assets/member-console1.png)
 
 ### Pesquisar {#search-features}
 
 Selecione o ícone do painel lateral no lado esquerdo do cabeçalho para `Members` alternar entre abrir o painel lateral de pesquisa.
 
-![chlimage_1-120](assets/chlimage_1-120.png) ![chlimage_1-121](assets/chlimage_1-121.png)
+![](assets/leftpanel-icon.png)
+
+
+![member-console2](assets/member-console2.png)
 
 Selecione o ícone de pesquisa no lado esquerdo do cabeçalho para `Members` alternar o painel lateral de pesquisa fechado.
 
@@ -74,7 +80,7 @@ Os cabeçalhos de coluna são
 
 Selecione `Create Member` para criar um usuário no ambiente de publicação.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![create-member1](assets/create-member1.png)
 
 ### GERAL - Detalhes dos membros {#general-member-details}
 
@@ -117,6 +123,7 @@ Em Configurações de conta, um administrador da comunidade pode:
    * BanidoUm membro não pode fazer logon, impedindo que ele visualize páginas ou participe de atividades que exigem o logon. Eles ainda podem visitar anonimamente um site aberto da comunidade.
 
    * Não banidoUm membro tem acesso total ao site da comunidade.
+
    O padrão é `Not Banned`.
 
 * **[!UICONTROL Limites de contribuição]**
@@ -147,7 +154,7 @@ O `BADGES` painel fornece a capacidade de atribuir manualmente os emblemas e de 
 
 Consulte também [Pontuação e Distinções](implementing-scoring.md).
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![create-member2](assets/create-member2.png)
 
 * **[!UICONTROL Adicionar emblemas]**
    * Comece digitando para selecionar entre os símbolos [](badges.md)disponíveis. Quando um crachá for selecionado, escolha cada site ou todos os sites nos quais o crachá deve ser exibido junto com o avatar do membro.
@@ -173,7 +180,7 @@ Para acessar o console Grupos:
 
 Selecione `Add Group` para criar um grupo no ambiente de publicação.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![group-console1](assets/group-console1.png)
 
 Os campos necessários para criar um novo grupo de membros do lado da publicação são:
 
