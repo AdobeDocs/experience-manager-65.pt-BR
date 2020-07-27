@@ -1,8 +1,8 @@
 ---
 title: Etapas genéricas para personalização da área de trabalho do AEM Forms
 seo-title: Etapas genéricas para personalização da área de trabalho do AEM Forms
-description: Como começar a personalizar a interface do usuário da área de trabalho do AEM Forms.
-seo-description: Como começar a personalizar a interface do usuário da área de trabalho do AEM Forms.
+description: Como começar a personalizar a interface do usuário do espaço de trabalho do AEM Forms.
+seo-description: Como começar a personalizar a interface do usuário do espaço de trabalho do AEM Forms.
 uuid: da6310b4-1c58-468d-85c6-975fd2c141f9
 contentOwner: robhagat
 content-type: reference
@@ -11,7 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ As etapas genéricas para executar qualquer personalização são:
 1. Copie a `/libs/ws/locales` pasta na `/apps/ws` pasta. Clique em **[!UICONTROL Salvar tudo]**.
 1. Atualize as referências e os caminhos relativos no `GET.jsp` arquivo, como mostrado abaixo, e clique em **[!UICONTROL Salvar tudo]**.
 
-   ```
+   ```jsp
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
    ```
 
@@ -95,6 +98,6 @@ As etapas genéricas para executar qualquer personalização são:
 
    1. Copie /libs/ws/js/registry.js para `/apps/ws/js/registry.js`.
 
-1. Clique em **[!UICONTROL Salvar tudo]**, limpar o cache e atualizar a área de trabalho do AEM Forms.
+1. Clique em **[!UICONTROL Salvar tudo]**, limpar o cache e atualizar o espaço de trabalho do AEM Forms.
 
    Acesse o URL `https://'[server]:[port]'/lc/ws` e faça logon com as credenciais de administrador/senha. O navegador é redirecionado para `https://'[server]:[port]'/lc/apps/ws/index.html`.
