@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ A API **connect** aceita um manipulador como argumento. Depois que uma conexão 
 
 Você pode usar o código de amostra a seguir para criar a conexão.
 
-```
+```javascript
 // Example showing how to connect to FormBridge
 window.addEventListener("FormBridgeInitialized",
                                 function(event) {
@@ -37,7 +40,7 @@ window.addEventListener("FormBridgeInitialized",
 >
 >Certifique-se de criar uma conexão antes de incluir o arquivo formRuntime.jsp.
 
-## API do Form Bridge disponível {#available-form-bridge-api-nbsp}
+## API do Form Bridge disponível  {#available-form-bridge-api-nbsp}
 
 **getBridgeVersion()**
 
@@ -91,11 +94,11 @@ Retorna o número da versão da biblioteca de scripts
 
       * **pagingConfig:** Permite que o usuário substitua o comportamento padrão de renderização somente da primeira página. A configuração é substituída da seguinte maneira:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true| false>, saninkPageDisabled: &lt;true| false> }).*
+         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, saninkPageDisabled: &lt;true | false> }).*
 
       * **LoggingConfig:** Permite que o usuário substitua o nível de registro, desative o registro para uma categoria ou exiba o console de registros ou envie para o servidor. A configuração pode ser substituída da seguinte maneira:
 
-      ```JavaScript
+      ```javascript
       formBridge.registerConfig{
         "LoggerConfig" : {
       {
@@ -109,7 +112,7 @@ Retorna o número da versão da biblioteca de scripts
 
       * **SubmitServiceProxyConfig:** Permitir que os usuários registrem os serviços de envio e proxy de agente de log.
 
-         ```JavaScript
+         ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
          {
          "submitServiceProxy" : "`<submitServiceProxy>`",
