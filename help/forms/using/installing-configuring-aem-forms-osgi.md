@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a18a018181a779b9f48ef3e39c26410a1bc4919b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 1%
@@ -141,7 +141,7 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 
 1. Adicione as seguintes propriedades ao arquivo sling.properties:
 
-   ```
+   ```shell
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
