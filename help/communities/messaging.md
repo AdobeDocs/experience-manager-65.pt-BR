@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Como mostrado abaixo, existe uma configuração do serviço para sites criados c
 
 Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+**&quot; ao lado do nome do serviço:
 
-* **Lista de permissão de campos de mensagem**
+* **Campos de mensagem Lista de permissões**
 
    Especifica as propriedades do componente Compor mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão são duas entradas: *assunto* e *conteúdo*.
 
@@ -85,11 +85,11 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
 * **Caminho da caixa de entrada**
 
-   (*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`inbox`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/caixa de entrada*.
+   (*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a `inbox` pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/caixa de entrada*.
 
 * **Caminho dos itens enviados**
 
-   (*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a **`send items`** pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/sentitems* .
+   (*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*username*), a ser usado para a `sent items` pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/sentitems* .
 
 * **Anexos de suporte**
 
@@ -111,13 +111,13 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
    Se supportAttachments estiver marcado, esse valor especificará o tamanho total máximo permitido (em bytes) de todos os anexos. O padrão é *104857600* (100 MB).
 
-* **Lista de bloqueios de tipo de anexo**
+* **Tipo de anexo lista de bloqueios**
 
-   Uma lista de bloqueios de extensões de nomes de arquivos, com prefixo &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não estiver bloqueada, a extensão é permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;.
+   Uma lista de bloqueios de extensões de nome de arquivo, com prefixo &#39;**.**&quot;, isso será rejeitado pelo sistema. Se não for incluir na lista de bloqueios, a extensão será permitida. As extensões podem ser adicionadas ou removidas usando os ícones &quot;**+**&quot; e &quot;**-**&quot;.
 
 * **Tipos de anexos permitidos**
 
-   **(*Ação necessária*)** Uma lista permitida de extensões de nome de arquivo, o oposto da lista de bloqueio. Para permitir todas as extensões de nome de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
+   **(*Ação necessária*)** Uma lista de permissões de extensões de nome de arquivo, o oposto da  lista de bloqueios. Para permitir todas as extensões de nome de arquivo, exceto aquelas incluir na lista de bloqueios, use o ícone &quot;**-**&quot; para remover a única entrada vazia.
 
 * **Seletor de serviços**
 
@@ -125,15 +125,15 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 
    O padrão é */bin/messaging* .
 
-* **Lista de permissão de campo**
+* **de campo Lista de permissões**
 
-   Usar Lista de Permissões de Campos de **Mensagem**.
+   Usar campos **de mensagem Lista de permissões**.
 
 >[!CAUTION]
 >
 >Sempre que uma `Messaging Operations Service` configuração é aberta para edição, se `allowedAttachmentTypes.name` foi removida, uma entrada vazia é adicionada novamente para tornar a propriedade configurável. Uma única entrada vazia efetivamente desativa anexos de arquivo.
 >
->Para permitir todas as extensões de nome de arquivo, exceto aquelas listadas em bloco, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
+>Para permitir todas as extensões de nome de arquivo, exceto aquelas incluir na lista de bloqueios, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
 
 
 ## Group Messaging {#group-messaging}
