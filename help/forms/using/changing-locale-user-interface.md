@@ -1,8 +1,8 @@
 ---
-title: Alteração da localidade da interface do usuário da área de trabalho do AEM Forms
-seo-title: Alteração da localidade da interface do usuário da área de trabalho do AEM Forms
-description: Como modificar a área de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
-seo-description: Como modificar a área de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
+title: Alteração da localidade da interface de usuário do espaço de trabalho do AEM Forms
+seo-title: Alteração da localidade da interface de usuário do espaço de trabalho do AEM Forms
+description: Como modificar o espaço de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
+seo-description: Como modificar o espaço de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
 uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
@@ -11,18 +11,21 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 0%
 
 ---
 
 
-# Alteração da localidade da interface do usuário da área de trabalho do AEM Forms{#changing-the-locale-of-aem-forms-workspace-user-interface}
+# Alteração da localidade da interface de usuário do espaço de trabalho do AEM Forms{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-A área de trabalho do AEM Forms fornece suporte imediato para idiomas inglês, francês, alemão e japonês. Ele também oferece a capacidade de localizar a interface de usuário do espaço de trabalho do AEM Forms para qualquer outro idioma.
+A área de trabalho do AEM Forms oferece suporte imediato para os idiomas inglês, francês, alemão e japonês. Também oferece a capacidade de localizar a interface do usuário do espaço de trabalho do AEM Forms para qualquer outro idioma.
 
-Para localizar a interface de usuário do espaço de trabalho do AEM Forms para o idioma de sua escolha:
+Para localizar a interface do usuário do espaço de trabalho do AEM Forms para o idioma de sua escolha:
 
-* Localize o texto da área de trabalho do AEM Forms.
+* Localize o texto da área de trabalho AEM Forms.
 * Localize categorias recolhidas, filas e processos.
 * Localizar o seletor de datas
 
@@ -30,7 +33,7 @@ Antes de executar as etapas acima, siga as etapas listadas em Etapas [genéricas
 
 >[!NOTE]
 >
->Para alterar o idioma da tela de logon da área de trabalho do AEM Forms, consulte [Criar uma nova tela](../../forms/using/creating-new-login-screen.md)de logon.
+>Para alterar o idioma da tela de logon do espaço de trabalho do AEM Forms, consulte [Criar uma nova tela](../../forms/using/creating-new-login-screen.md)de logon.
 
 ## Localização de texto {#localizing-text}
 
@@ -48,7 +51,7 @@ O URL padrão do CRXDE Lite é `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 
 ## Localização de categorias, filas e processos recolhidos {#localizing-collapsed-categories-queues-and-processes}
 
-A área de trabalho do AEM Forms usa imagens para exibir cabeçalhos de categorias, filas e processos. Você precisa de um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código de espaço de trabalho do AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+A área de trabalho do AEM Forms usa imagens para exibir cabeçalhos de categorias, filas e processos. Você precisa de um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre como criar o pacote de desenvolvimento, consulte [Criar código de espaço de trabalho de AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categoria_nw.png*, *Queue_nw.png* e *Processes_nw.png*. A largura recomendada das imagens é de 19x.
 
@@ -63,7 +66,7 @@ Execute as seguintes etapas para localizar as imagens:
 1. Usando um cliente WebDAV, coloque os arquivos de imagem na pasta */apps/ws/images* .
 1. Navegue até */apps/ws/css*. Abra *newStyle.css* para editar e adicione as seguintes entradas:
 
-   ```
+   ```css
    #categoryListBar .content.nw {
         background: #3e3e3e url(../images/Categories_nw.png) no-repeat 10px 10px;
     }
@@ -81,7 +84,7 @@ Execute as seguintes etapas para localizar as imagens:
 1. Navegue até a pasta *js/runtime/utility* e abra o arquivo *usersession.js* para edição.
 1. Localize o código listado no bloco de código original e adicione a condição *lang !== &#39;new&#39;* para a declaração if:
 
-   ```
+   ```javascript
    // Orignal code
    setLocale = function () {
            var lang = $.trim(i18n.lng());
@@ -93,7 +96,7 @@ Execute as seguintes etapas para localizar as imagens:
        }
    ```
 
-   ```
+   ```javascript
    //new code
     setLocale = function () {
            var lang = $.trim(i18n.lng());
@@ -107,14 +110,14 @@ Execute as seguintes etapas para localizar as imagens:
 
 ## Localizando o seletor de datas {#localizing-date-picker}
 
-Você precisa de um pacote de desenvolvimento para localizar a API *datepicker* . Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)de área de trabalho do AEM Forms.
+Você precisa de um pacote de desenvolvimento para localizar a API *datepicker* . Para obter informações detalhadas sobre como criar o pacote de desenvolvimento, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)de espaço de trabalho de AEM Forms.
 
 1. Baixe e extraia o Pacote [da interface do usuário do](https://jqueryui.com/download/all/)jQuery, navegue até *&lt;pacote da interface do usuário jquery extraída>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copie o arquivo jquery.ui.datepicker-nw.js para código de localidade agora em apps/ws/js/libs/jqueryui e faça alterações específicas de localidade no arquivo.
 1. Navegue até `apps/ws/js` `jquery.ui.datepicker-nw.js` o arquivo e abra-o para edição.
 1. No arquivo main.js, crie um alias para `jquery.ui.datepicker-nw.js.` O código para criar um alias para o `jquery.ui.datepicker-nw.js` arquivo é:
 
-   ```
+   ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
@@ -122,9 +125,10 @@ Você precisa de um pacote de desenvolvimento para localizar a API *datepicker* 
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
+
    O código de amostra abaixo mostra como adicionar a entrada de jquery.ui.datepicker-nw.js:
 
-   ```
+   ```json
    //Original Code
    define([
        'jquery',
@@ -141,7 +145,7 @@ Você precisa de um pacote de desenvolvimento para localizar a API *datepicker* 
    ], function ($, _, Backbone, jQueryUI, jQueryUIDatePickerJA, jQueryUIDatePickerDE, jQueryUIDatePickerFR, slimScroll, UserSearch, LogManager, Logger) {
    ```
 
-   ```
+   ```json
    // Code with Date Picker alias for new language
    define([
        'jquery',
@@ -163,9 +167,10 @@ Você precisa de um pacote de desenvolvimento para localizar a API *datepicker* 
 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js
+
    Altere o seguinte código para adicionar a nova localidade:
 
-   ```
+   ```javascript
    if (locale === 'ja-JP') {
       $.datepicker.setDefaults($.datepicker.regional.ja);
    } else if (locale === 'de-DE') {
@@ -177,7 +182,7 @@ Você precisa de um pacote de desenvolvimento para localizar a API *datepicker* 
    }
    ```
 
-   ```
+   ```javascript
    if (locale === 'ja-JP') {
        $.datepicker.setDefaults($.datepicker.regional.ja);
    } else if (locale === 'de-DE') {
