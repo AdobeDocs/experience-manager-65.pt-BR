@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1842'
+ht-degree: 0%
 
 ---
 
@@ -77,7 +80,7 @@ Para ilustrar o uso de um script de design de formulário, esta seção examina 
 
 A sintaxe do script localizado neste design de formulário é a seguinte:
 
-```as3
+```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
@@ -89,7 +92,7 @@ Nesse design de formulário, o botão Calcular é um botão de comando e o scrip
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumo das etapas {#summary-of-steps}
 
@@ -120,7 +123,7 @@ Depois de verificar se o estado de processamento associado a um formulário envi
 
 **Consulte também:**
 
-[Incluindo arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms[Calcule os dados do formulário usando a API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)Java[Calcule os dados do formulário usando a API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)do serviço da Web[Configurando propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão API do serviço[Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Rápido Renderizando formulários PDF interativosComo criar Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Incluindo AEM Forms arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java[Calcule os dados do formulário usando a API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)Java[Calcule os dados do formulário usando a API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)do serviço Web[Configurando propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão API do serviço[Forms Start](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[Rápidos da API do serviço Forms](/help/forms/developing/rendering-interactive-pdf-forms.md)[Renderizando PDF forms interativosRenderizando Aplicações web que os formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular dados de formulário usando a API Java {#calculate-form-data-using-the-java-api}
 
@@ -144,6 +147,7 @@ Calcule os dados do formulário usando a API de formulários (Java):
       * Um valor de string que especifica variáveis de ambiente, incluindo todos os cabeçalhos HTTP relevantes. É necessário especificar o tipo de conteúdo a ser tratado especificando um ou mais valores para a variável de `CONTENT_TYPE` ambiente. Por exemplo, para manipular dados XML e PDF, especifique o seguinte valor de string para esse parâmetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Um valor de string que especifica o valor do `HTTP_USER_AGENT` cabeçalho; por exemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Um `RenderOptionsSpec` objeto que armazena opções de tempo de execução.
+
       O `processFormSubmission` método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
 
    * Verifique se o estado de processamento associado a um formulário enviado é `1` chamando o `FormsResult` método do `getAction` objeto. Se esse método retornar o valor `1`, o cálculo será executado e os dados poderão ser gravados de volta no navegador da Web do cliente.
@@ -160,7 +164,7 @@ Calcule os dados do formulário usando a API de formulários (Java):
 **Consulte também:**
 
 
-[Incluindo arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms[Configuração de propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Incluindo AEM Forms arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java[Configuração de propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Calcular dados de formulário usando a API de serviço da Web {#calculate-form-data-using-the-web-service-api}
 
@@ -197,6 +201,7 @@ Calcule os dados do formulário usando a API de formulários (serviço da Web):
       * Um `javax.xml.rpc.holders.ShortHolder` objeto vazio que é preenchido pelo método.
       * Um `MyArrayOf_xsd_anyTypeHolder` objeto vazio que é preenchido pelo método. Esse parâmetro é usado para armazenar anexos de arquivo enviados junto com o formulário.
       * Um `FormsResultHolder` objeto vazio que é preenchido pelo método com o formulário enviado.
+
       O `processFormSubmission` método preenche o `FormsResultHolder` parâmetro com os resultados do envio do formulário. O `processFormSubmission` método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
 
    * Verifique se o estado de processamento associado a um formulário enviado é `1` chamando o `FormsResult` método do `getAction` objeto. Se esse método retornar o valor `1`, o cálculo será executado e os dados poderão ser gravados de volta no navegador da Web do cliente.
@@ -209,4 +214,4 @@ Calcule os dados do formulário usando a API de formulários (serviço da Web):
    * Crie uma matriz de bytes e preencha-a chamando o método do `BLOB` objeto `getBinaryData` . Essa tarefa atribui o conteúdo do `FormsResult` objeto à matriz de bytes.
    * Chame o método do `javax.servlet.http.HttpServletResponse` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
 
-**Consulte também**[Invocar formulários AEM usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+**Consulte também**[Invocação de AEM Forms usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
