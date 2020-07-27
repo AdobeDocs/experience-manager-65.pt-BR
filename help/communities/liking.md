@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 5%
@@ -34,17 +34,17 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando as bibliotecas [do lado do cliente](essentials-liking.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Liking` componente será exibido.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![componente de ligação](assets/liking-component.png)
 
 ## Configuração de curtir {#configuring-liking}
 
 Selecione o componente inserido a ser acessado e selecione o `Liking` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![configure-new](assets/configure-new.png)
 
 Na guia **[!UICONTROL Textos e etiquetas]** , especifique as propriedades usadas para registrar curtidas.
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![gosto de configuração](assets/configure-liking.png)
 
 * **[!UICONTROL Rótulo de resposta positiva]**
 
