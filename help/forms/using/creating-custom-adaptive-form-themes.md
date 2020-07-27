@@ -9,7 +9,10 @@ topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!CAUTION]
 >
->O AEM Forms fornece o recurso Editor [de](/help/forms/using/themes.md) Temas para criar e modificar [temas](/help/forms/using/themes.md)de formulários adaptáveis. Execute as etapas listadas neste artigo somente se você tiver atualizado de uma versão que não tem o Editor [de](/help/forms/using/themes.md) Temas e tiver um investimento existente em temas criados usando arquivos Menos/CSS (método editor pré-temático).
+>Os AEM Forms fornecem o recurso do Editor [de](/help/forms/using/themes.md) Temas para criar e modificar [temas](/help/forms/using/themes.md)de formulários adaptáveis. Execute as etapas listadas neste artigo somente se você tiver atualizado de uma versão que não tem o Editor [de](/help/forms/using/themes.md) Temas e tiver um investimento existente em temas criados usando arquivos Menos/CSS (método editor pré-temático).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -42,7 +45,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 >
 >Se você seguir essas etapas usando os nomes, o modelo resultante deverá aparecer de forma semelhante ao seguinte instantâneo:
 
-![](assets/thumbnail.png) Instantâneo **do formulário adaptável com tema de floresta** Figura: Amostra de tema *da floresta*
+![Instantâneo](assets/thumbnail.png)do formulário adaptável com tema de floresta **Figura:** *Exemplo de tema da floresta*
 
 1. Crie um nó do tipo `cq:ClientLibraryFolder` abaixo do `/apps`nó.
 
@@ -60,15 +63,17 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 
    * `less` pasta: Contém os arquivos de `less` variável nos quais você define as `less` variáveis e `less mixins` que são usados para gerenciar os estilos .css.
 
-      Essa pasta consiste em arquivos `less` variáveis, arquivos `less` de combinação, `less` arquivos que definem estilos usando misturas e variáveis. E todos esses arquivos a menos são importados em styles.less.
+      Essa pasta consiste em arquivos `less` variáveis, arquivos `less` de mixagem, `less` arquivos que definem estilos usando misturas e variáveis. E todos esses arquivos a menos são importados em styles.less.
 
    * `css`pasta: Contém os arquivos .css nos quais você define os estilos estáticos a serem usados no tema.
-   **Menos arquivos** de variáveis: Esses são os arquivos, onde você define ou substitui as variáveis usadas na definição de estilos CSS.
+
+   **Menos arquivos** de variáveis: Esses são os arquivos, nos quais você define ou substitui as variáveis usadas na definição de estilos CSS.
 
    Os formulários adaptáveis fornecem variáveis OOTB definidas nos seguintes arquivos .less:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
+
    Os formulários adaptáveis também fornecem variáveis de terceiros definidas em:
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
@@ -81,7 +86,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 
    Exemplo de variáveis de substituição:
 
-   ```
+   ```css
    @button-background-color: rgb(19, 102, 44);
    @button-border-color: rgb(19, 102, 44);
    @button-border-size: 0px;
@@ -96,24 +101,27 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
    1. Em seguida, importe o arquivo less que inclui variáveis substituídas.
+
    Amostra de novas definições de variáveis:
 
-   ```
+   ```css
    @button-focus-bg-color: rgb(40, 208, 90);
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **** Menos arquivos de mixagem: É possível definir as funções que aceitam variáveis como argumentos. A saída dessas funções são os estilos resultantes. Use essas combinações em estilos diferentes para evitar a repetição de estilos CSS.
+   **Menos arquivos de mixagem:** É possível definir as funções que aceitam variáveis como argumentos. A saída dessas funções são os estilos resultantes. Use essas combinações em estilos diferentes para evitar a repetição de estilos CSS.
 
    Os formulários adaptáveis fornecem misturas OOTB definidas em:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
+
    Formulários adaptáveis também fornecem combinações de terceiros definidas em:
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
+
    Definição da mistura de amostra:
 
-   ```
+   ```css
    .rounded-corners (@radius) {
      -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
@@ -127,7 +135,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
    }
    ```
 
-   **** Arquivo Styles.less: Use esse arquivo para incluir todos os arquivos menores (variáveis, mixins, estilos) que você precisa usar na biblioteca do cliente.
+   **Arquivo Styles.less:** Use esse arquivo para incluir todos os arquivos menores (variáveis, mixins, estilos) que você precisa usar na biblioteca do cliente.
 
    No arquivo de amostra a seguir, a declaração de importação pode ser colocada em qualquer ordem. `styles.less`
 
@@ -138,7 +146,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
    * `components.less`
    * `layouts.less`
 
-   ```
+   ```css
    @import "../../../clientlibs/fd/af/guidetheme/common/less/globalvariables.less";
    @import "../../../clientlibs/fd/af/guidetheme/common/less/layoutvariables.less";
    @import "forestTheme-variables";
@@ -170,7 +178,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 
    Por exemplo:
 
-   ```
+   ```javascript
    #base=/apps/clientlibs/fd/af/third-party/css
    bootstrap.css
    
@@ -214,7 +222,7 @@ Depois de criar um tema de formulário adaptável, execute as seguintes etapas p
 
       O trecho de código de amostra a seguir importa o `af.theme.forest` tema.
 
-      ```
+      ```jsp
       <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
       <cq:includeClientLib categories="af.theme.forest"/>
       ```
