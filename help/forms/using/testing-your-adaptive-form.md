@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '969'
 ht-degree: 2%
 
 ---
@@ -213,8 +213,8 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
 
 Um conjunto de testes pode ter vários casos de teste. Você pode executar todos os casos de teste em um conjunto de testes de uma vez ou individualmente. Quando você executa um teste, os ícones indicam os resultados:
 
-* Um ícone de marca de seleção indica um teste aprovado: ![](assets/save_icon.svg)
-* Um ícone &quot;X&quot; indica uma falha no teste: ![](assets/close-icon.svg)
+* Um ícone de marca de seleção indica um teste aprovado: ![save_icon](assets/save_icon.svg)
+* Um ícone &quot;X&quot; indica uma falha no teste: ![ícone de fechamento](assets/close-icon.svg)
 
 1. Navegue até o ícone AEM > **[!UICONTROL Ferramentas]**> **[!UICONTROL Operações]**> **[!UICONTROL Testes]**
 1. Para executar todos os testes do Test Suite:
