@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '1804'
+ht-degree: 0%
 
 ---
 
@@ -34,10 +37,10 @@ Este tutorial o orienta pelas etapas para criar modelos para canais de Impressã
 
 ## Criar modelo para canal de impressão {#create-template-for-print-channel}
 
-Crie e gerencie modelos para o canal Imprimir de comunicação interativa usando as seguintes tarefas:
+Crie e gerencie modelos para o canal Imprimir de Comunicação Interativa usando as seguintes tarefas:
 
 * [Criar modelo XDP usando o Forms Designer](../../forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
-* [Carregar modelo XDP no servidor de formulários AEM](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
+* [Carregar modelo XDP no servidor AEM Forms](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
 * [Criar modelo XDP para fragmentos de layout](../../forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
 
 ### Criar modelo XDP usando o Forms Designer {#create-xdp-template-using-forms-designer}
@@ -70,6 +73,7 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Print:
    1. Especifique **BillDetails** no campo **Nome** .
 
    1. Selecione **Nenhum vínculo** de dados na lista suspensa Vínculo **de** dados.
+
    ![Subformulário Designer](assets/forms_designer_subform_new.png)
 
 1. Da mesma forma, selecione o subformulário raiz, selecione a guia **Subformulário** e selecione **Fluxo** na lista suspensa **Conteúdo** . Na guia **Vínculos** :
@@ -77,6 +81,7 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Print:
    1. Especifique **TelecaBill** no campo **Nome** .
 
    1. Selecione **Nenhum vínculo** de dados na lista suspensa Vínculo **de** dados.
+
    ![Subformulário para modelo de impressão](assets/root_subform_print_template_new.png)
 
 1. Repita as etapas de 2 a 5 para criar os seguintes subformulários:
@@ -91,6 +96,7 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Print:
    * ConsultasDetalhadas
    * PayNow
    * ValueAddedServices
+
    Para economizar tempo, também é possível copiar e colar subformulários existentes para criar novos subformulários.
 
    Para deslocar o subformulário **Gráficos** para a direita do subformulário Encargos, selecione o subformulário **Gráficos** no painel esquerdo, selecione a guia **Layout** e especifique um valor para o campo **ÂncoraX** . O valor deve ser maior que o valor do campo **Largura** para o subformulário **Encargos** . Selecione o subformulário **Encargos** e selecione a guia **Layout** para visualização do valor do campo **Largura** .
@@ -107,18 +113,18 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Print:
 
    1. Toque em **Salvar**.
 
-### Carregar modelo XDP no servidor de formulários AEM {#upload-xdp-template-to-the-aem-forms-server}
+### Carregar modelo XDP no servidor AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
 
-Depois de criar um modelo XDP usando o Designer de Formulários, você deve carregá-lo no servidor de Formulários AEM para que o modelo esteja disponível para uso ao criar a Comunicação Interativa.
+Depois de criar um modelo XDP usando o Designer de Formulários, você deve carregá-lo no servidor de AEM Forms para que o modelo esteja disponível para uso ao criar a Comunicação Interativa.
 
 1. Selecione **[!UICONTROL Formulários]** > **[!UICONTROL Formulários e Documentos]**.
 1. Toque em **Criar** > Upload **de arquivo**.
 
-   Navegue e selecione o modelo **create_first_ic_print_template** (XDP) e toque em **Abrir** para importar o modelo XDP para o servidor de formulários AEM.
+   Navegue e selecione o modelo **create_first_ic_print_template** (XDP) e toque em **Abrir** para importar o modelo XDP para o servidor AEM Forms.
 
 ### Criar modelo XDP para fragmentos de layout {#create-xdp-template-for-layout-fragments}
 
-Para criar um fragmento de layout para o canal Imprimir da comunicação interativa, crie um XDP usando o Forms Designer e carregue-o no servidor de formulários AEM.
+Para criar um fragmento de layout para o canal Imprimir da comunicação interativa, crie um XDP usando o Forms Designer e carregue-o no servidor AEM Forms.
 
 1. Abra o Designer de Formulários, selecione **Arquivo** > **Novo** > **Usar um formulário em branco,** toque em **Avançar** e em **Concluir** para abrir o formulário para a criação do modelo.
 
@@ -156,7 +162,7 @@ Para criar um fragmento de layout para o canal Imprimir da comunicação interat
    1. Selecione **.xdp** na lista suspensa **Salvar como tipo** .
 
    1. Toque em **Salvar**.
-   Depois de criar um modelo XDP para fragmento de layout usando o Designer de Formulários, você deve [carregá](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) -lo no servidor de Formulários AEM para que o modelo esteja disponível para uso ao criar fragmentos de layout.
+   Depois de criar um modelo XDP para fragmento de layout usando o Forms Designer, você deve [carregá](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) -lo no servidor AEM Forms para que o modelo esteja disponível para uso ao criar fragmentos de layout.
 
 ## Criar modelo para o canal da Web {#create-template-for-web-channel}
 
@@ -173,7 +179,7 @@ Para criar um modelo de canal da Web, defina uma pasta onde você possa salvar o
 
 Execute as seguintes etapas para criar uma pasta para os modelos editáveis:
 
-1. Toque em **Ferramentas** ![](assets/hammer-icon.svg) > Navegador **de configuração**.
+1. Toque em **Ferramentas** ![ícone](assets/hammer-icon.svg) de martelo > Navegador **de** configuração.
 1. Na página Navegador de configuração, toque em **Criar**.
 1. Na caixa de diálogo **Criar configuração** , especifique **Create_First_IC_models** como o título da pasta, marque Modelos **** editáveis e toque em **Criar**.
 
@@ -217,7 +223,7 @@ Execute as seguintes etapas para criar um modelo para o canal da Web na pasta **
 
    ![Árvore de conteúdo](assets/content_tree_root_panel_new.png)
 
-1. Selecione o painel e toque em ![](assets/configure_icon.png) (Configurar).
+1. Selecione o painel e toque em ![configure_icon](assets/configure_icon.png) (Configurar).
 1. No painel Propriedades:
 
    1. Especifique **detalhes de faturamento** no campo Nome.
@@ -225,6 +231,7 @@ Execute as seguintes etapas para criar um modelo para o canal da Web na pasta **
    1. Selecione **1** na lista suspensa **Número de colunas** .
 
    1. Toque em ![](/help/forms/using/assets/done_icon.png) para salvar as propriedades.
+
    O nome do painel é atualizado para Detalhes **da** Lista na árvore de conteúdo.
 
 1. Repita as etapas 7 a 11 para adicionar painéis com as seguintes propriedades ao modelo:
@@ -248,7 +255,7 @@ Depois de criar o modelo da Web, você deve ativá-lo para usar o modelo ao cria
 
 Execute as seguintes etapas para ativar o modelo da Web:
 
-1. Toque em **Ferramentas** > ![](assets/hammer-icon.svg) Modelos ****.
+1. Toque em **Ferramentas** ![ícone](assets/hammer-icon.svg) de martelo > **Modelos**.
 1. Navegue até o modelo **Create_First_IC_Web_Template** , selecione-o e toque em **Ativar**.
 1. Guia **Ativar** novamente para confirmar.
 
@@ -267,4 +274,4 @@ Com base no caso de uso, você deve incluir os botões **Pagar agora** e **Assin
 
    ![Componentes permitidos](assets/allowed_components_af_new.png)
 
-1. Toque em ![](assets/done_icon.png) para salvar as propriedades.
+1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades.
