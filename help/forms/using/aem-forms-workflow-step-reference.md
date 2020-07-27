@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '7077'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ## Etapas do fluxo de trabalho do Forms {#forms-workflow-steps}
 
-As etapas do fluxo de trabalho do Forms executam operações específicas do AEM Forms em um fluxo de trabalho do AEM. Essas etapas permitem que você crie rapidamente fluxos de trabalho adaptáveis baseados em formulários centrados em formulários no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos de negócios internos e entre firewall. Você também pode usar as etapas do Fluxo de trabalho do Forms para serviços de documento de start, integrar-se ao fluxo de trabalho de assinatura do Adobe Sign e executar outras operações do AEM Forms. Você precisa do complemento [](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms para usar essas etapas em um fluxo de trabalho.
+As etapas do fluxo de trabalho do Forms executam operações específicas a AEM Forms em um fluxo de trabalho do AEM. Essas etapas permitem que você crie rapidamente fluxos de trabalho adaptáveis baseados em formulários centrados em formulários no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos de negócios internos e entre firewall. Você também pode usar as etapas do Fluxo de trabalho do Forms para serviços de documento de start, integrar-se ao fluxo de trabalho de assinatura do Adobe Sign e executar outras operações de AEM Forms. Você precisa do complemento [](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms para usar essas etapas em um fluxo de trabalho.
 
 ## Assign task step {#assign-task-step}
 
@@ -68,14 +71,14 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
    * **Salve o arquivo de dados de saída usando:** Salve o arquivo de dados (.json,. xml, .doc ou modelo de dados de formulário). O arquivo de dados contém informações enviadas por meio do formulário associado. É possível salvar o arquivo de dados de saída usando um caminho relativo à carga ou armazená-lo em uma variável do tipo de dados Documento, XML ou JSON. Por exemplo, [Payload_Diretory]/Workflow/data, onde os dados são um arquivo.
    * **Salvar anexos usando:** Salve os anexos de formulário fornecidos em uma tarefa. É possível salvar os anexos usando um caminho relativo à carga ou armazená-lo em uma variável do tipo de dados do Documento.
-   * **Salvar Documento de Registro usando:** Caminho para salvar um Documento do arquivo de registro. Por exemplo, [Payload_Diretory]/DocumentofRecord/credit-card.pdf. É possível salvar o Documento de Registro usando um caminho relativo à carga ou armazená-lo em uma variável do tipo de dados do Documento. Se você selecionar a opção **Em relação à carga útil** , o Documento do registro não será gerado se o campo de caminho ficar vazio. Essa opção estará disponível somente se você selecionar Formulário adaptável na lista suspensa Tipo.
+   * **Salvar Documento de Registro usando:** Caminho para salvar um Documento do arquivo de registro. Por exemplo, [Payload_Diretory]/DocumentofRecord/credit-card.pdf. Você pode salvar o Documento de Registro usando um caminho relativo à carga ou armazená-lo em uma variável do tipo de dados do Documento. Se você selecionar a opção **Em relação à carga útil** , o Documento do registro não será gerado se o campo de caminho ficar vazio. Essa opção estará disponível somente se você selecionar Formulário adaptável na lista suspensa Tipo.
 
    * **Salvar dados de Canal da Web usando:** Salve o arquivo de dados do Canal da Web usando um caminho relativo à carga ou armazene-o em uma variável do tipo de dados Documento, JSON ou Form Data Model. Essa opção estará disponível somente se você selecionar a interface do usuário do Agente de comunicação interativa na lista suspensa Tipo.
    * **Salve o documento PDF usando:** Salve o documento PDF usando um caminho relativo à carga ou armazene-o em uma variável do tipo de dados do Documento. Essa opção estará disponível somente se você selecionar a interface do usuário do Agente de comunicação interativa na lista suspensa Tipo.
    * **Salve o modelo de layout usando:** Salve o modelo de layout usando um caminho relativo à carga ou armazene-o em uma variável do tipo de dados do Documento. O modelo [de](../../forms/using/layout-design-details.md) layout refere-se a um arquivo XDP que você cria usando o Forms Designer. Essa opção estará disponível somente se você selecionar a interface do usuário do Agente de comunicação interativa na lista suspensa Tipo.
 
 * **Destinatário > Atribuir opções:** Especifique o método para atribuir a tarefa a um usuário. Você pode atribuir dinamicamente a tarefa a um usuário ou grupo usando o script do Seletor de participantes ou atribuir a tarefa a um usuário ou grupo específico do AEM.
-* **Seletor de participantes:** A opção está disponível quando a opção **Dinamicamente para um usuário ou grupo** está selecionada no campo Atribuir opções. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte Atribuir [dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criar uma etapa personalizada do Adobe Experience Manager Dynamic Participant.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **Seletor de participantes:** A opção está disponível quando a opção **Dinamicamente para um usuário ou grupo** está selecionada no campo Atribuir opções. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte Atribuir [dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criar uma etapa personalizada do Participante dinâmico do Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 * **Participantes:** O campo está disponível quando a opção **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** está selecionada no campo Seletor de **participantes** . O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 
@@ -173,7 +176,7 @@ Se você especificar o caminho de uma pasta, por exemplo, anexos, todos os arqui
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
-Você pode usar a Integração [de dados do](../../forms/using/data-integration.md) AEM Forms para configurar e se conectar a fontes de dados diferentes. Essas fontes de dados podem ser uma solução de banco de dados, serviço da Web, serviço REST, serviço OData e CRM. A integração de dados de formulários AEM permite criar um modelo de dados de formulário abrangendo vários serviços para executar operações de recuperação de dados, adição e atualização no banco de dados configurado. Você pode usar a etapa **** Chamar serviço de modelo de dados para selecionar um modelo de dados de formulário (FDM) e usar os serviços do FDM para recuperar, atualizar ou adicionar dados a fontes de dados diferentes.
+Você pode usar a Integração [de dados do](../../forms/using/data-integration.md) AEM Forms para configurar e se conectar a fontes de dados diferentes. Essas fontes de dados podem ser uma solução de banco de dados, serviço da Web, serviço REST, serviço OData e CRM. A Integração de dados do AEM Forms permite criar um modelo de dados de formulário abrangendo vários serviços para executar operações de recuperação de dados, adição e atualização no banco de dados configurado. Você pode usar a etapa **** Chamar serviço de modelo de dados para selecionar um modelo de dados de formulário (FDM) e usar os serviços do FDM para recuperar, atualizar ou adicionar dados a fontes de dados diferentes.
 
 Para explicar entradas para campos da etapa, a tabela do banco de dados a seguir e o arquivo JSON são usados como exemplo:
 
@@ -206,26 +209,26 @@ Para explicar entradas para campos da etapa, a tabela do banco de dados a seguir
 
 **Exemplo de arquivo JSON**
 
-```
-{ 
-  customer: { 
-   firstName: "Sarah", 
-   lastName:"Rose", 
-   customerId: "1", 
-   emailAddress:"srose@we.info" 
- }, 
-  insurance: {
-   customerId: "1", 
-  policyType: "Premium,
-  policyNumber: "Premium-521499",
-  customerDetails: { 
-   firstName: "Sarah",
-   lastName: "Rose",
-   customerId: "1",
-   emailAddress: "srose@we.info" 
-  }
- }
-}
+```json
+  { 
+    customer: { 
+     firstName: "Sarah", 
+     lastName:"Rose", 
+     customerId: "1", 
+     emailAddress:"srose@we.info" 
+   }, 
+    insurance: {
+     customerId: "1", 
+    policyType: "Premium,
+    policyNumber: "Premium-521499",
+    customerDetails: { 
+     firstName: "Sarah",
+     lastName: "Rose",
+     customerId: "1",
+     emailAddress: "srose@we.info" 
+    }
+   }
+  }
 ```
 
 A etapa Invocar serviço de modelo de dados de formulário tem os campos listados abaixo para facilitar as operações do modelo de dados de formulário:
@@ -260,7 +263,7 @@ A etapa Assinar Documento permite que você use o Adobe Sign para assinar docume
 
 * **Local:** Especifique o idioma para as opções de email e verificação. Você pode armazenar a localidade em uma variável do tipo de dados String ou selecionar **Literal** para escolher a localidade na lista de opções disponíveis. Você deve definir o código de localidade ao armazenar o valor da localidade em uma variável. Por exemplo, especifique **en_US** para inglês e **fr_FR** para francês.
 
-* **Configuração** da Adobe Sign Cloud: Escolha uma configuração da Adobe Sign Cloud. Se você não tiver configurado o Adobe Sign para formulários AEM, consulte [Integrar o Adobe Sign a formulários](../../forms/using/adobe-sign-integration-adaptive-forms.md)AEM.
+* **Configuração** da Adobe Sign Cloud: Escolha uma configuração da Adobe Sign Cloud. Se você não tiver configurado o Adobe Sign para AEM Forms, consulte [Integrar o Adobe Sign ao AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Selecione o Documento a ser assinado usando:** Você pode escolher um documento de um local relativo à carga, usar a carga como o documento, especificar um caminho absoluto do documento ou recuperar o documento armazenado em uma variável do tipo de dados do Documento.
 * **Dias até o prazo:** Um documento é marcado como vencido (prazo vencido) depois que não há atividade na tarefa pelo número de dias especificado no campo **Dias até o término** . O número de dias é contado depois que o documento é atribuído a um usuário para assinatura.
@@ -309,7 +312,7 @@ Gera um documento PDF a partir do URL fornecido, do HTML e do arquivo ZIP.
 
 ### Etapa Exportar dados {#export-data-step}
 
-Exporta dados de um formulário PDF ou arquivo XDP. É necessário inserir o caminho de arquivo do Documento de entrada e o Formato de dados de exportação. As opções para Formato de dados de exportação são Auto, XDP e XmlData.
+Exporta dados de um arquivo PDF forms ou XDP. É necessário inserir o caminho de arquivo do Documento de entrada e o Formato de dados de exportação. As opções para Formato de dados de exportação são Auto, XDP e XmlData.
 
 ### Export PDF to specified type step {#export-pdf-to-specified-type-step}
 
@@ -359,7 +362,7 @@ Renderiza um formulário criado no Form Designer (XDP) em um formulário PDF.
 
 ### Etapa do Documento seguro {#secure-document-step}
 
-Criptografe, assine e certifique um documento. O AEM Forms é compatível com criptografia baseada em senha e baseada em certificado. Você também pode escolher entre vários algoritmos para assinar documentos. Por exemplo, SHA-256 e SH-512. Também é possível usar a etapa de fluxo de trabalho para o leitor estender documentos PDF. A etapa do fluxo de trabalho fornece opções para ativar a decodificação de códigos de barras, assinaturas digitais, importação e exportação de dados PDF e outras opções.
+Criptografe, assine e certifique um documento. O AEM Forms oferece suporte à criptografia baseada em senha e na base de certificados. Você também pode escolher entre vários algoritmos para assinar documentos. Por exemplo, SHA-256 e SH-512. Também é possível usar a etapa de fluxo de trabalho para o leitor estender documentos PDF. A etapa do fluxo de trabalho fornece opções para ativar a decodificação de códigos de barras, assinaturas digitais, importação e exportação de dados PDF e outras opções.
 
 ### Etapa Enviar para impressora {#send-to-printer-step}
 
