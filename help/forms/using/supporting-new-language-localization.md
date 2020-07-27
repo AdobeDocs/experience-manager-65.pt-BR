@@ -10,7 +10,10 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,8 @@ A localização de formulários adaptáveis depende de dois tipos de dicionário
 
 Quando um formulário adaptável é renderizado, ele identifica a localidade solicitada, observando os seguintes parâmetros na ordem especificada:
 
-* Parâmetro de solicitação `afAcceptLang`Para substituir a localidade do navegador de usuários, é possível passar o parâmetro de `afAcceptLang` solicitação para forçar a localidade. Por exemplo, o URL a seguir forçará a renderização do formulário na localidade japonesa:
+* Parâmetro de solicitação `afAcceptLang`Para substituir a localidade do navegador de usuários, é possível passar a variável 
+`afAcceptLang` parâmetro request para forçar a localidade. Por exemplo, o URL a seguir forçará a renderização do formulário na localidade japonesa:
    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
@@ -70,7 +74,7 @@ Crie um nó do tipo `cq:ClientLibraryFolder` em `etc/<folderHierarchy>`, com cat
 
 * **js.txt** contendo o seguinte:
 
-```
+```text
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
@@ -86,7 +90,7 @@ Adicione os seguintes arquivos à biblioteca do cliente:
 * **LogMessages.js** definindo `guidelib.i18n.strings` e `guidelib.i18n.LogMessages` para o `<locale>` conforme definido em `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * **js.txt** contendo o seguinte:
 
-```
+```text
 i18n.js
 LogMessages.js
 ```
