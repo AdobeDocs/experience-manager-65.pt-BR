@@ -1,8 +1,8 @@
 ---
 title: Serviço de formulários com códigos de barras
 seo-title: Uso do AEM Forms Barcoded Forms Service
-description: 'Use o serviço Formulários com códigos de barras do AEM Forms para extrair dados de imagens eletrônicas de códigos de barras. '
-seo-description: 'Use o serviço Formulários com códigos de barras do AEM Forms para extrair dados de imagens eletrônicas de códigos de barras. '
+description: 'Use o serviço AEM Forms Barcoded Forms para extrair dados de imagens eletrônicas de códigos de barras. '
+seo-description: 'Use o serviço AEM Forms Barcoded Forms para extrair dados de imagens eletrônicas de códigos de barras. '
 uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 1%
 
 ---
 
@@ -117,7 +120,7 @@ Ao usar as APIs BCF, considere as seguintes limitações:
 
 * Formulários dinâmicos não são suportados.
 * Os formulários interativos não são decodificados corretamente, a menos que sejam nivelados.
-* Os códigos de barras 1-D devem conter apenas valores alfanuméricos (se houver suporte). Códigos de barras 1-D contendo símbolos especiais não são decodificados.
+* Códigos de barras 1-D devem conter apenas valores alfanuméricos (se houver suporte). Códigos de barras 1-D contendo símbolos especiais não são decodificados.
 
 ### Outras limitações {#other-limitations}
 
@@ -128,7 +131,7 @@ Além disso, considere as seguintes limitações ao usar o serviço de Formulár
 
 Além disso, o serviço pode decodificar qualquer código de barras que use a simbologia suportada se as limitações acima forem observadas. Para obter mais informações sobre como criar formulários com códigos de barras interativos, consulte a Ajuda [do](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.
 
-## Configurar propriedades do serviço {#configureproperties}
+## Configurar propriedades do serviço   {#configureproperties}
 
 Você pode usar o serviço **de formulários com códigos de barras** AEMFD no console AEM para configurar as propriedades desse serviço. O URL padrão do console do AEM é `https://[host]:'port'/system/console/configMgr`.
 
@@ -144,7 +147,7 @@ O Serviço de formulários com códigos de barras fornece as duas APIs a seguir:
 
 O código de amostra a seguir decodifica um código de barras em um documento e salva o XML de saída no disco.
 
-```java
+```jsp
 <%@ page import="java.util.List,
                 com.adobe.fd.bcf.api.BarcodedFormsService,
                 com.adobe.fd.bcf.api.CharSet,
