@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
@@ -135,11 +138,11 @@ Para mostrar apenas imagens para ações, personalize as imagens usadas em açõ
 
 ### Menu pop-up Ação da tarefa da Lista da Tarefa {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Você precisa de um pacote de desenvolvimento para personalizar itens do menu pop-up de ação tarefa de lista da área de trabalho do AEM Forms. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criar código de espaço de trabalho do AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Você precisa de um pacote de desenvolvimento para personalizar os itens do menu pop-up de ação tarefa de Tarefa da área de trabalho do AEM Forms. Para obter informações detalhadas sobre como criar o pacote de desenvolvimento, consulte [Criar código de espaço de trabalho de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copie /libs/ws/js/runtime/templates/task.html para `/apps/ws/js/runtime/templates/task.html`substituir o seguinte trecho de código:
 
-   ```
+   ```html
    // Orignal code
    <div class="taskActionsPopUp">
            <!--START_TASKACTIONS-->
@@ -174,7 +177,7 @@ Para mostrar apenas imagens para ações, personalize as imagens usadas em açõ
        </div>
    ```
 
-   ```
+   ```html
    //New code
    
    <div class="taskActionsPopUp">
@@ -267,7 +270,7 @@ Execute as seguintes etapas para personalizar o menu pop-up de ações de tarefa
 * Copie o arquivo /libs/ws/js/runtime/templates/taskdetails.html para a `/apps/ws/js/runtime/templates/` pasta:
 * Encapsule a tag do ícone dentro da tag de âncora em vez de texto. Por exemplo, o *novo código* listado abaixo encapsula a tag de ícone dentro da tag de âncora:
 
-```
+```html
 // Original code
 <div class="taskActionsPopUp">
         <!--START_ACTIONBUTTONGROUP-->
@@ -310,7 +313,7 @@ Execute as seguintes etapas para personalizar o menu pop-up de ações de tarefa
     </div>
 ```
 
-```
+```html
 //New code
 
 <div class="taskActionsPopUp">
