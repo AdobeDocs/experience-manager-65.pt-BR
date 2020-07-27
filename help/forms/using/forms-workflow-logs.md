@@ -1,6 +1,6 @@
 ---
-title: Logon em workflows do AEM Forms
-seo-title: Logon em workflows do AEM Forms
+title: Logon em workflows de AEM Forms
+seo-title: Logon em workflows de AEM Forms
 description: Use logs para depurar problemas de fluxo de trabalho do AEM Forms.
 seo-description: Use logs para depurar problemas de fluxo de trabalho do AEM Forms.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
@@ -10,14 +10,17 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 5%
 
 ---
 
 
-# Logon em workflows do AEM Forms{#logging-in-aem-forms-workflows}
+# Logon em workflows de AEM Forms{#logging-in-aem-forms-workflows}
 
-As etapas do fluxo de trabalho do Forms fornecem registros detalhados para depurar problemas relacionados ao fluxo de trabalho de forma conveniente. Ative o registro de depuração para workflows do AEM Forms para visualização dos registros.
+As etapas do fluxo de trabalho do Forms fornecem registros detalhados para depurar problemas relacionados ao fluxo de trabalho de forma conveniente. Ative o registro de depuração para workflows AEM Forms para visualização dos registros.
 
 Por padrão, todas as informações de registro estão disponíveis no arquivo **error.log** no diretório */crx-repository/logs/* .
 
@@ -40,7 +43,7 @@ Os registros de depuração para workflows de formulários incluem:
 
 * Variáveis gravadas no repositório JCR. Por exemplo:
 
-   ```
+   ```verilog
       [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
    ```
 
@@ -49,14 +52,14 @@ Os registros de depuração para workflows de formulários incluem:
 
 * Parâmetros de metadados de etapa dinâmica. Por exemplo:
 
-   ```
+   ```verilog
    [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
     [DEBUG] Locale to be used for Document of Record is <locale>
    ```
 
 O exemplo a seguir ilustra os registros da etapa do Documento Sign:
 
-```xml
+```verilog
 [DEBUG] Executing sign document step.
 [DEBUG] Using adobe sign configuration: <path of adobe sign configuration>
 [DEBUG] Invoking Adobe Sign Service for creating agreement
@@ -74,9 +77,9 @@ Use os registros para avaliar que:
 
 Se houver uma exceção, você poderá visualização o rastreamento completo da pilha para avaliar a causa do erro.
 
-## Ativar o registro de depuração para workflows do AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
+## Ativar o registro de depuração para workflows AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Execute as seguintes etapas para ativar o registro de depuração para workflows do AEM Forms:
+Execute as seguintes etapas para ativar o registro de depuração para workflows AEM Forms:
 
 1. Vá para o gerenciador de configuração do console da Web do AEM em:
 
