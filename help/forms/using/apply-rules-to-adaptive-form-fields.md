@@ -8,7 +8,10 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ A cada cliente é atribuído um número exclusivo de ID do cliente, que ajuda a 
 
    Toque em **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, toque em **[!UICONTROL Fechar]**.
 
-1. Visualize o formulário adaptável. Insira uma ID no campo ID **[!UICONTROL do]** cliente. O formulário agora pode recuperar detalhes do cliente do banco de dados.
+1. Pré-visualização o formulário adaptável. Insira uma ID no campo ID **[!UICONTROL do]** cliente. O formulário agora pode recuperar detalhes do cliente do banco de dados.
 
    ![retrieve-information](assets/retrieve-information.gif)
 
@@ -92,11 +95,11 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
 
    >[!NOTE]
    >
-   >Não arraste e solte os campos **[!UICONTROL Nome]** e ID **[!UICONTROL do]** cliente para a propriedade tablename.property correspondente (por exemplo, customerdetails.name). Isso ajuda a evitar a atualização do nome e ID do cliente por engano.
+   >Não arraste e solte os campos **[!UICONTROL Nome]** e ID **[!UICONTROL do]** cliente para a propriedade tablename.property correspondente (por exemplo, customerdetails.name). Isso ajuda a evitar a atualização do nome e da ID do cliente por engano.
 
 1. Arraste e solte o campo ID **[!UICONTROL do]** cliente da guia Objetos de formulário para o campo id na caixa **[!UICONTROL ENTRADA]** . Os campos sem um nome de tablet prefixo (por exemplo, detalhes do cliente neste caso de uso) servem como parâmetro de pesquisa para o serviço de atualização. O campo **[!UICONTROL id]** nesse caso de uso identifica exclusivamente um registro na tabela de detalhes do cliente.
 1. Toque em **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, toque em **[!UICONTROL Fechar]**.
-1. Visualize o formulário adaptável. Recupere detalhes de um cliente, atualize o endereço de envio e envie o formulário. Quando você recupera os detalhes do mesmo cliente novamente, o endereço de entrega atualizado é exibido.
+1. Pré-visualização o formulário adaptável. Recupere os detalhes de um cliente, atualize o endereço de envio e envie o formulário. Quando você recupera os detalhes do mesmo cliente novamente, o endereço de entrega atualizado é exibido.
 
 ## Etapa 3: (seção Bônus) Use o editor de código para executar validações e exibir mensagens de erro {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
@@ -104,7 +107,7 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
 
 Os formulários adaptáveis fornecem vários componentes com validações incorporadas, por exemplo, e-mail e campos numéricos que podem ser usados para casos de uso comuns. Use o editor de regras para casos de uso avançado, por exemplo, para exibir uma mensagem de erro quando o banco de dados retornar zero (0) registros (nenhum registro).
 
-O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de erro se a ID do cliente inserida no formulário não existir no banco de dados. A regra também traz o foco e redefine o campo ID do cliente. A regra usa [a API dataIntegrationUtils do serviço](/help/forms/using/invoke-form-data-model-services.md) de modelo de dados de formulário para verificar se a ID do cliente existe no banco de dados.
+O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de erro se a ID do cliente inserida no formulário não existir no banco de dados. A regra também traz o foco para o campo ID do cliente e o redefine. A regra usa [a API dataIntegrationUtils do serviço](/help/forms/using/invoke-form-data-model-services.md) de modelo de dados de formulário para verificar se a ID do cliente existe no banco de dados.
 
 1. Toque no campo ID **[!UICONTROL do]** cliente e toque no `Edit Rules` ícone. A janela Editor de regras é aberta.
 1. Toque no ícone **[!UICONTROL + Criar]** para adicionar uma regra. Ele abre o Editor visual.
@@ -123,7 +126,7 @@ O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de 
 
 1. Substitua a seção da variável de entrada pelo seguinte código:
 
-   ```
+   ```javascript
    var inputs = {
        "id" : this
    };
@@ -131,7 +134,7 @@ O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de 
 
 1. Substitua a seção guidelib.dataIntegrationUtils.executeOperation (operationInfo, entradas, saídas) pelo seguinte código:
 
-   ```
+   ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
      if (result) {
          result = JSON.parse(result);
@@ -146,7 +149,7 @@ O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de 
    });
    ```
 
-1. Visualize o formulário adaptável. Insira uma ID de cliente incorreta. Uma mensagem de erro é exibida.
+1. Pré-visualização o formulário adaptável. Insira uma ID de cliente incorreta. Uma mensagem de erro é exibida.
 
    ![display-validation-error](assets/display-validation-error.gif)
 
