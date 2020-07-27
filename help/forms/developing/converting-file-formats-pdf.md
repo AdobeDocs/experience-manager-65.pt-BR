@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '7842'
+ht-degree: 0%
 
 ---
 
@@ -67,8 +70,8 @@ O serviço Gerar PDF converte PDF nos seguintes formatos de arquivo (somente Win
 
 O serviço Gerar PDF exige que você execute estas tarefas administrativas:
 
-* Instale os aplicativos nativos necessários no computador que hospeda o AEM Forms
-* Instale o Adobe Acrobat Professional ou o Acrobat Pro Extended 9.2 no computador que hospeda o AEM Forms
+* Instale os aplicativos nativos necessários nos AEM Forms de hospedagem do computador
+* Instale o Adobe Acrobat Professional ou o Acrobat Pro Extended 9.2 no computador que estiver hospedando AEM Forms
 * Execute tarefas de configuração pós-instalação
 
 Essas tarefas são descritas em Instalar e implantar formulários do AEM usando o recurso JavaScript Turnkey.
@@ -81,7 +84,7 @@ Essas tarefas são descritas em Instalar e implantar formulários do AEM usando 
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Gerar PDF, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Gerar PDF, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Converter Documentos do Word em Documentos PDF {#converting-word-documents-to-pdf-documents}
 
@@ -93,7 +96,7 @@ Esta seção descreve como você pode usar a API Gerar PDF para converter progra
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Gerar PDF, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Gerar PDF, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -131,7 +134,7 @@ Depois que o arquivo for convertido em um documento PDF, você poderá recuperar
 
 [Converter documentos do Word em documentos PDF usando a API de serviço da Web](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -166,6 +169,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
    * Um `java.lang.String` objeto que contém o nome das configurações de segurança a serem usadas.
    * Um `com.adobe.idp.Document` objeto opcional que contém configurações a serem aplicadas ao gerar o documento PDF.
    * Um `com.adobe.idp.Document` objeto opcional que contém informações de metadados a serem aplicadas ao documento PDF.
+
    O `createPDF2` método retorna um `CreatePDFResult` objeto que contém o novo documento PDF e as informações de um registro. O arquivo de log geralmente contém mensagens de erro ou aviso geradas pela solicitação de conversão.
 
 1. Recupere os resultados.
@@ -174,6 +178,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
 
    * Chame o `CreatePDFResult` método do `getCreatedDocument` objeto, que retorna um `com.adobe.idp.Document` objeto.
    * Chame o método do `com.adobe.idp.Document` `copyToFile` objeto para extrair o documento PDF do objeto criado na etapa anterior.
+
    Se você usou o `createPDF2` método para obter o documento de log (não aplicável às conversões HTML), execute as seguintes ações:
 
    * Chame o `CreatePDFResult` método do `getLogDocument` objeto. Isso retorna um `com.adobe.idp.Document` objeto.
@@ -186,7 +191,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
 
 [Start rápido (modo SOAP): Converter um documento do Microsoft Word em um documento PDF usando a API Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -200,7 +205,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um cliente Gerar PDF.
 
@@ -248,9 +253,9 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
 
 [Resumo das etapas](converting-file-formats-pdf.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Converter Documentos HTML em Documentos PDF {#converting-html-documents-to-pdf-documents}
 
@@ -258,7 +263,7 @@ Esta seção descreve como você pode usar a API Gerar PDF para converter progra
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Gerar PDF, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Gerar PDF, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -296,7 +301,7 @@ Depois que o conteúdo HTML é convertido em um documento PDF, você pode recupe
 
 [Converter conteúdo HTML em um documento PDF usando a API de serviço da Web](converting-file-formats-pdf.md#convert-html-content-to-a-pdf-document-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -343,7 +348,7 @@ Converta um documento HTML em um documento PDF usando a API Gerar PDF (Java):
 
 [Start rápido (modo SOAP): Converter conteúdo HTML em um documento PDF usando a API Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -357,7 +362,7 @@ Converta o conteúdo HTML em um documento PDF usando a API Gerar PDF (serviço d
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um cliente Gerar PDF.
 
@@ -398,9 +403,9 @@ Converta o conteúdo HTML em um documento PDF usando a API Gerar PDF (serviço d
 
 [Converter Documentos HTML em Documentos PDF](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Converter Documentos PDF em formatos que não sejam de imagem {#converting-pdf-documents-to-non-image-formats}
 
@@ -408,7 +413,7 @@ Esta seção descreve como você pode usar a API Gerar PDF Java e a API de servi
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Gerar PDF, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Gerar PDF, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
@@ -446,7 +451,7 @@ Salve o arquivo convertido. Por exemplo, se você converter um documento PDF em 
 
 [Converter um documento PDF em um arquivo RTF usando a API de serviço da Web](converting-file-formats-pdf.md#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -478,6 +483,7 @@ Converta um documento PDF em um arquivo RTF usando a API Gerar PDF (Java):
    * Um `java.lang.String` objeto que contém o nome das configurações do Adobe PDF.
    * Um `ConvertPDFFormatType` objeto que especifica o tipo de arquivo de público alvo para a conversão.
    * Um `com.adobe.idp.Document` objeto opcional que contém configurações a serem aplicadas ao gerar o documento PDF.
+
    O `exportPDF2` método retorna um `ExportPDFResult` objeto que contém o arquivo convertido.
 
 1. Converta o documento PDF.
@@ -493,7 +499,7 @@ Converta um documento PDF em um arquivo RTF usando a API Gerar PDF (Java):
 
 [Start rápido (modo SOAP): Converter conteúdo HTML em um documento PDF usando a API Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -507,7 +513,7 @@ Converta um documento PDF em um arquivo RTF usando a API Gerar PDF (serviço da 
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um cliente Generate PDf.
 
@@ -552,9 +558,9 @@ Converta um documento PDF em um arquivo RTF usando a API Gerar PDF (serviço da 
 
 [Resumo das etapas](converting-file-formats-pdf.md#summary-of-steps)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Adicionar suporte para formatos de arquivo nativos adicionais {#adding-support-for-additional-native-file-formats}
 
@@ -769,7 +775,7 @@ Use o Microsoft Spy++ para obter as identidades das propriedades de elementos de
 
 **expressão regular que acomoda o nome do arquivo prefixado ao Bloco de notas no banner Bloco de notas**
 
-```as3
+```xml
  <!-- The regular expression ".*Notepad" means any number of non-terminating characters followed by Notepad. -->
  <step>
      <expectedWindow>
@@ -780,7 +786,7 @@ Use o Microsoft Spy++ para obter as identidades das propriedades de elementos de
 
 **expressão regular diferenciando Impressão da configuração de impressão**
 
-```as3
+```xml
  <!-- This regular expression differentiates the Print dialog box from the Print Setup dialog box. The "^" specifies the beginning of the line, and the "$" specifies the end of the line. -->
  <windowList>
      <window controlID="0x01" caption="^Print$" action="press"/>
@@ -796,7 +802,7 @@ Você deve ordenar `window` e `windowList` os elementos da seguinte maneira:
 
 **Ordenar elementos da janela em um arquivo de diálogo**
 
-```as3
+```xml
  <!-- The caption attribute in the following window element is 40 characters long. It is the longest caption in this example, so its parent window element appears before the others. -->
  <window caption="Unexpected Failure in DebugActiveProcess">
      <…>
@@ -820,7 +826,7 @@ Você deve ordenar `window` e `windowList` os elementos da seguinte maneira:
 
 **Ordenação de elementos de janela em um elemento windowList**
 
-```as3
+```xml
  <!-- The caption attribute in the following indexes element is 56 characters long. It is the longest caption in this example, so its parent window element appears before the others. -->
  <windowList>
      <window caption="Can&apos;t exit design mode because.* cannot be created"/>
@@ -881,7 +887,7 @@ Neste exemplo, os dados de configuração padrão fornecidos com o serviço Gera
 
 **Modificações para direcionar arquivos de texto para o Bloco de notas (native2pdfconfig.xml)**
 
-```as3
+```xml
  <filetype-settings>
 
  <!-- Some native app file types were omitted for brevity. -->
@@ -910,7 +916,7 @@ Depois de criar a nova variável de ambiente, você deve reiniciar o servidor no
 
 **Criar uma variável do sistema no ambiente do Windows XP**
 
-1. Selecione **Painel de controle > Sistema**.
+1. Selecione **Painel de controle do Campaign > Sistema**.
 1. Na caixa de diálogo Propriedades do sistema, clique na guia **Avançado** e, em seguida, clique em Variáveis **de** Ambiente.
 1. Em Variáveis do sistema na caixa de diálogo Variáveis de Ambiente, clique em **Novo**.
 1. Na caixa de diálogo Nova variável do sistema, na caixa Nome **da** variável, digite um nome que use o formato `[applicationname]_PATH`.
@@ -921,7 +927,7 @@ Depois de criar a nova variável de ambiente, você deve reiniciar o servidor no
 
 1. Em uma janela de linha de comando, digite a definição da variável, usando este formato:
 
-   ```as3
+   ```shell
             [applicationname]_PATH=[Full path name]
    ```
 
@@ -937,9 +943,9 @@ O AEM Forms inclui arquivos XML de amostra que fazem com que o serviço Gerar PD
 
 Este exemplo contém as caixas de diálogo adicionais para o aplicativo Bloco de notas. Essas caixas de diálogo podem ser adicionadas às especificadas pelo serviço Gerar PDF.
 
-**Caixas de diálogo do Bloco de notas(appmon.notepad.add.en_US.xml)**
+**Caixas de diálogo do Bloco de notas(appmon.notpad.add.en_US.xml)**
 
-```as3
+```xml
  <dialogs app="Notepad" locale="en_US" version="7.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dialogs.xsd">
      <window caption="Caption Title">
          <windowList>
@@ -955,7 +961,7 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
 
 **Arquivo XML de script do Bloco de notas (appmon.notepad.script.en_US.xml)**
 
-```as3
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
 *
