@@ -1,20 +1,23 @@
 ---
-title: Armazenamento personalizado para componentes de rascunhos e envios
-seo-title: Armazenamento personalizado para componentes de rascunhos e envios
-description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
-seo-description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
+title: armazenamento personalizado para componentes de rascunhos e envios
+seo-title: armazenamento personalizado para componentes de rascunhos e envios
+description: Veja como personalizar o armazenamento de dados do usuário para rascunhos e envios.
+seo-description: Veja como personalizar o armazenamento de dados do usuário para rascunhos e envios.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
 
-# Armazenamento personalizado para componentes de rascunhos e envios {#custom-storage-for-drafts-and-submissions-component}
+# armazenamento personalizado para componentes de rascunhos e envios {#custom-storage-for-drafts-and-submissions-component}
 
 ## Visão geral {#overview}
 
@@ -202,8 +205,8 @@ Você pode usar a anotação abaixo para aumentar a classificação do serviço 
 
 Para usar a anotação acima, importa o seguinte para o seu projeto:
 
-```
+```java
 import org.apache.felix.scr.annotations.Properties;
- import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Property;
 ```
 
