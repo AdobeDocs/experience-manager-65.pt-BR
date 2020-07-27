@@ -1,6 +1,6 @@
 ---
-title: Adaptive Form Expressions
-seo-title: Adaptive Form Expressions
+title: Expressões de formulário adaptáveis
+seo-title: Expressões de formulário adaptáveis
 description: Use expressões de formulários adaptáveis para adicionar validação automática, cálculo e ativar ou desativar a visibilidade de uma seção.
 seo-description: Use expressões de formulários adaptáveis para adicionar validação automática, cálculo e ativar ou desativar a visibilidade de uma seção.
 uuid: c274dce5-8b87-472f-bff5-53b246fa6584
@@ -9,20 +9,23 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2766'
+ht-degree: 0%
 
 ---
 
 
-# Adaptive Form Expressions{#adaptive-form-expressions}
+# Expressões de formulário adaptáveis{#adaptive-form-expressions}
 
-Adaptive forms provide optimized and simplified form filling experience for end users with dynamic scripting capabilities. Ele permite que você escreva expressões para adicionar vários comportamentos, como mostrar/ocultar dinâmicos campos e painéis. It also lets you add calculated fields, make fields read-only, add validation logic, and many more. The dynamic behavior is based on the user input or prefilled data.
+Formulários adaptáveis fornecem experiência de preenchimento de formulário otimizada e simplificada para usuários finais com recursos de script dinâmico. Ele permite que você escreva expressões para adicionar vários comportamentos, como mostrar/ocultar dinâmicos campos e painéis. Ela também permite que você adicione campos calculados, torne os campos somente leitura, adicione lógica de validação e muito mais. O comportamento dinâmico é baseado na entrada do usuário ou nos dados pré-preenchidos.
 
-JavaScript is the expression language of adaptive forms. All the expressions are valid JavaScript expressions and use adaptive forms scripting model APIs. Essas expressões retornam valores de certos tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptáveis.
+JavaScript é a linguagem expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de certos tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptáveis.
 
-## Best practices for writing expressions {#best-practices-for-writing-expressions}
+## Práticas recomendadas para gravar expressões {#best-practices-for-writing-expressions}
 
-* While writing expressions, to access fields and panels, you can use name of field or panel. Para acessar o valor de um campo, use a propriedade value. Por exemplo, `field1.value`
+* Ao gravar expressões, para acessar campos e painéis, é possível usar o nome do campo ou painel. Para acessar o valor de um campo, use a propriedade value. Por exemplo, `field1.value`
 * Use nomes exclusivos para campos e painéis no formulário. Ele ajuda a evitar possíveis conflitos com nomes de campo usados ao gravar expressões.
 * Enquanto escreve expressões de várias linhas, use ponto e vírgula para encerrar uma instrução.
 
@@ -68,30 +71,30 @@ Você pode usar a expressão de acesso para ativar ou desativar um campo. Se a e
 
 ### Calcular Expressão {#calculate-expression}
 
-A expressão calculate é usada para calcular automaticamente o valor de um campo usando uma expressão. Typically, such expression use value property of another fields. Por exemplo, `field2.value + field3.value`. Whenever value of the `field2`or `field3`changes, the expression is retriggered and the value is recomputed.
+A expressão calculate é usada para calcular automaticamente o valor de um campo usando uma expressão. Normalmente, essa expressão usa a propriedade value de outros campos. Por exemplo, `field2.value + field3.value`. Sempre que o valor do `field2`ou `field3`muda, a expressão é acionada novamente e o valor é recomposto.
 
-**Applies to**: fields
+**Aplica-se a**: campos
 
-**Return Type**: The expression returns a value that is compatible to the field where the expression result is displayed (for example, decimal).
+**Tipo** de retorno: A expressão retorna um valor compatível com o campo onde o resultado da expressão é exibido (por exemplo, decimal).
 
 **Exemplo**: A expressão calculate para mostrar a soma de dois campos no **campo1** é:
 `field2.value + field3.value`
 
-### Click Expression {#click-expression}
+### Clique em Expressão {#click-expression}
 
-The click expression handles the actions performed on the click event of a button. O GuideBridge fornece APIs para executar várias funções, como enviar, validar, usadas junto com a expressão de cliques. For complete list of the APIs, see [GuideBridge APIs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+A expressão click manipula as ações executadas no evento click de um botão. O GuideBridge fornece APIs para executar várias funções, como enviar, validar, usadas junto com a expressão de cliques. Para obter a lista completa das APIs, consulte [GuideBridge APIs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Aplica-se a**: Campos de botão
 
-**Return Type**: The click expression does not return any value. If any expression returns a value, the value is ignored.
+**Tipo** de retorno: A expressão click não retorna nenhum valor. Se qualquer expressão retornar um valor, ele será ignorado.
 
-**Example**: To populate a text box **textbox1** on the click action of a button with value **AEM Forms**, the click expression of the button is `textbox1.value="AEM Forms"`
+**Exemplo**: Para preencher uma caixa de texto **caixa1** na ação de clique de um botão com **AEM Forms** de valor, a expressão de clique do botão é `textbox1.value="AEM Forms"`
 
 ### Script de inicialização {#initialization-script}
 
-The initialization script is triggered when an adaptive form is initialized. Depending on scenarios, the initialization script behaves in the following manner:
+O script de inicialização é acionado quando um formulário adaptável é inicializado. Dependendo dos cenários, o script de inicialização se comporta da seguinte maneira:
 
-* When an adaptive form is rendered without a data prefill, the initialization script runs after the form is initialized.
+* Quando um formulário adaptável é renderizado sem um preenchimento prévio de dados, o script de inicialização é executado após a inicialização do formulário.
 * Quando um formulário adaptável é renderizado com um pré-preenchimento de dados, o script é executado após a conclusão da operação de pré-preenchimento.
 * Quando a revalidação de um formulário adaptável pelo lado do servidor é acionada, o script de inicialização é executado.
 
@@ -156,12 +159,12 @@ O script de Confirmação de Valor é acionado quando:
 
 **Tipo de retorno:** A expressão de script commit de valor não retorna nenhum valor. Se qualquer expressão retornar um valor, ele será ignorado.
 
-**Example:** To convert the case of alphabets entered in the field to uppercase on commit, the value commit expression is:
+**Exemplo:** Para converter as letras maiúsculas e minúsculas digitadas no campo em maiúsculas na confirmação, a expressão de confirmação de valor é:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
 >
->Você pode desativar a execução do Script de confirmação de valor quando o valor de um campo é alterado de forma programática. Para fazer isso, vá para https://&#39;[server]:[port]&#39;/system/console/configMgr e altere Versão de formulários **adaptáveis para Compatibilidade** com o **AEM Forms 6.1**. Em seguida, o script de confirmação de valor é executado somente quando o usuário altera o valor do campo da interface do usuário.
+>Você pode desativar a execução do Script de confirmação de valor quando o valor de um campo é alterado de forma programática. Para fazer isso, acesse https://&#39;[server]:[port]&#39;/system/console/configMgr e altere Versão dos formulários **adaptáveis para Compatibilidade** no **AEM Forms 6.1**. Em seguida, o script de confirmação de valor é executado somente quando o usuário altera o valor do campo da interface do usuário.
 
 ### Expressão de visibilidade {#visibility-expression}
 
@@ -196,41 +199,41 @@ Para tornar um componente obrigatório, na caixa de diálogo **Editar** do compo
 
 ### Padrões de validação {#validation-patterns}
 
-There are multiple out of the box validation patterns available for a field. Para selecionar um padrão de validação, na caixa de diálogo **Editar** do componente, localize a seção **Padrões** e selecione **padrões**. You can create your own custom validation pattern in a **Pattern** text box. The validation status is returned **True** only if the data filled is compliant to the validation pattern, else **False** is returned. To write your own custom validation pattern, see [Picture clause support for HTML5 forms](/help/forms/using/picture-clause-support.md).
+Há vários padrões de validação prontos para uso disponíveis para um campo. Para selecionar um padrão de validação, na caixa de diálogo **Editar** do componente, localize a seção **Padrões** e selecione **padrões**. Você pode criar seu próprio padrão de validação personalizado em uma caixa de texto **Padrão** . O status de validação será retornado **Verdadeiro** somente se os dados preenchidos forem compatíveis com o padrão de validação, caso contrário, será retornado **Falso** . Para gravar seu próprio padrão de validação personalizado, consulte Suporte a cláusula [de imagem para formulários](/help/forms/using/picture-clause-support.md)HTML5.
 
-### Validation Expressions {#validation-expressions}
+### Expressões de validação {#validation-expressions}
 
-The validation of a field can also be computed using expressions on different fields. These expressions are written inside **Validation Script** field of the **Script** tab of **Edit** dialog of the component. The validation status of a field depends upon the value that the expression returns. For information on how to write such expressions, see [Validate Expression](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+A validação de um campo também pode ser calculada usando expressões em campos diferentes. Essas expressões são gravadas no campo Script **de** validação da guia **Script** da caixa de diálogo **Editar** do componente. O status de validação de um campo depende do valor retornado pela expressão. Para obter informações sobre como gravar tais expressões, consulte [Validar Expressão](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
 
 ## Informações adicionais {#additional-information}
 
-### Using Field Display Format {#using-field-display-format}
+### Uso do formato de exibição de campo {#using-field-display-format}
 
-Formato de exibição pode ser usado para exibir os dados em diferentes formatos. For example, you can use the display format to display a telephone number with hyphens, format ZIP code, or date picker. These display patterns can be selected from the **Patterns** section of the Edit dialog of a component. You can write custom display patterns similar to the validation patterns mentioned above.
+Formato de exibição pode ser usado para exibir os dados em diferentes formatos. Por exemplo, você pode usar o formato de exibição para exibir um número de telefone com hífens, formatar código ZIP ou seletor de data. Esses padrões de exibição podem ser selecionados na seção **Padrões** da caixa de diálogo Editar de um componente. Você pode gravar padrões de exibição personalizados semelhantes aos padrões de validação mencionados acima.
 
-### GuideBridge - APIs and Events {#guidebridge-apis-and-events}
+### GuideBridge - APIs e Eventos {#guidebridge-apis-and-events}
 
-GuideBridge is collection of APIs’ that can be used to interact with adaptive forms in memory model in a browser. For detailed introduction to Guide Bridge API, class methods, events exposed, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+O GuideBridge é uma coleção de APIs que podem ser usadas para interagir com formulários adaptáveis no modelo de memória em um navegador. Para obter uma introdução detalhada à API do Guide Bridge, métodos de classe, eventos expostos, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/)adaptáveis.
 
 >[!NOTE]
 >
->It is recommended not to use the GuideBridge event listeners in expressions.
+>É recomendável não usar os ouvintes do evento GuideBridge no expressão.
 
-#### GuideBridge usage in various expressions {#guidebridge-usage-in-various-expressions}
+#### Uso do GuideBridge em várias expressões {#guidebridge-usage-in-various-expressions}
 
-* To reset form fields, you can trigger `guideBridge.reset()` API on the click expression of a button. Similarly there is a submit API which can be called as a click expression `guideBridge.submit()`**.**
+* Para redefinir campos de formulário, é possível acionar a `guideBridge.reset()` API na expressão de clique de um botão. Da mesma forma, há uma API de envio que pode ser chamada como uma expressão de clique `guideBridge.submit()`**.**
 
-* You can use the `setFocus()` API to set focus across various fields or panels (for panel focus is set to the first field automatically). `setFocus()`provides a wide range of options to navigate such as navigation across panels, previous/next traversal, setting focus to a particular field, and many more. For example, to move to the next panel, you can use: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* Você pode usar a `setFocus()` API para definir o foco em vários campos ou painéis (para que o foco do painel seja definido automaticamente para o primeiro campo). `setFocus()`fornece uma grande variedade de opções para navegar, como navegação em painéis, travessia anterior/seguinte, definição de foco para um campo específico e muito mais. Por exemplo, para ir para o próximo painel, você pode usar: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
-* To validate an adaptive form or its specific panels, use `guideBridge.validate(errorList, somExpression).`
+* Para validar um formulário adaptável ou seus painéis específicos, use `guideBridge.validate(errorList, somExpression).`
 
-#### Using GuideBridge outside Expressions  {#using-guidebridge-outside-expressions-nbsp}
+#### Uso do GuideBridge fora do Expressão  {#using-guidebridge-outside-expressions-nbsp}
 
-Você também pode usar as APIs do GuideBridge fora do expressão. For example, you can use the GuideBridge API to set communication between page HTML hosting the adaptive form and the Form Model. Além disso, é possível definir o valor que vem do pai do Iframe que hospeda o formulário.
+Você também pode usar as APIs do GuideBridge fora do expressão. Por exemplo, você pode usar a API GuideBridge para definir a comunicação entre a página HTML que hospeda o formulário adaptável e o Modelo de formulário. Além disso, é possível definir o valor que vem do pai do Iframe que hospeda o formulário.
 
 Para usar a API GuideBridge para o exemplo acima mencionado, capture uma instância do GuideBridge. Para capturar a instância, ouça o `bridgeInitializeStart`evento de um `window`objeto:
 
-```
+```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      // get hold of the guideBridge object
@@ -256,11 +259,11 @@ Para usar o GuideBridge após a inicialização do formulário (o `bridgeInitial
 
 #### Eventos GuideBridge {#guidebridge-events}
 
-GuideBridge also provides certain events for external scripts on the hosting page. External scripts can listen to these events and perform various operations. For example, whenever the user name in a form change, the name shown in the header of the page also changes. For more details about such events, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+O GuideBridge também fornece determinados eventos para scripts externos na página de hospedagem. Scripts externos podem ouvir esses eventos e executar várias operações. Por exemplo, sempre que o nome de usuário em um formulário é alterado, o nome mostrado no cabeçalho da página também é alterado. Para obter mais detalhes sobre esses eventos, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)adaptáveis.
 
-Use the following code to register handlers:
+Use o seguinte código para registrar manipuladores:
 
-```
+```javascript
 guideBridge.on("elementValueChanged", function (event, data)  {
 
       // execute some logic when value of a field is changed
@@ -268,21 +271,21 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 });
 ```
 
-### Creating custom patterns for a field {#creating-custom-patterns-for-a-field}
+### Criação de padrões personalizados para um campo {#creating-custom-patterns-for-a-field}
 
-As mentioned above, adaptive forms allows author to provide patterns for validation or display formats. In addition to using out of the box patterns, you can define reusable custom pattern for an adaptive form component. For example, you can define a text field or a numeric field. Once defined, you can use these patterns in all the forms for specified type of component. For example, you can create a custom pattern for a text field and use it in the text fields in their adaptive forms. You can select the custom pattern by accessing the pattern section in the edit dialog of a component. For details about Pattern definition or format, see [Picture clause support for HTML5 forms](/help/forms/using/picture-clause-support.md).
+Como mencionado acima, formulários adaptáveis permitem que o autor forneça padrões para formatos de validação ou exibição. Além de usar padrões fora da caixa, você pode definir padrões personalizados reutilizáveis para um componente de formulário adaptável. Por exemplo, é possível definir um campo de texto ou um campo numérico. Depois de definidos, você pode usar esses padrões em todos os formulários para o tipo de componente especificado. Por exemplo, você pode criar um padrão personalizado para um campo de texto e usá-lo nos campos de texto em seus formulários adaptáveis. Você pode selecionar o padrão personalizado acessando a seção padrão na caixa de diálogo de edição de um componente. Para obter detalhes sobre a definição ou o formato de padrão, consulte Suporte a cláusula [de imagem para formulários](/help/forms/using/picture-clause-support.md)HTML5.
 
-Perform the following steps to create a custom pattern for a specific field type and reuse it for other fields of the same type:
+Execute as seguintes etapas para criar um padrão personalizado para um tipo de campo específico e reutilize-o para outros campos do mesmo tipo:
 
-1. Navigate to CRXDE Lite on your authoring instance.
-1. Create a folder to maintain your custom patterns. Under the /apps directory, create a node of type sling:folder. For example, create a node with the name `customPatterns`. Under this node, create another node of type `nt:unstructed` and name it `textboxpatterns`. This node contains the various custom patterns that you want to add.
-1. Open the Properties tab of the node created. For example, open the Properties tab of `textboxpatterns`. Add the `guideComponentType` property to this node and set its value to *fd/af/components/formatter/guideTextBox*.
+1. Navegue até CRXDE Lite na sua instância de criação.
+1. Crie uma pasta para manter seus padrões personalizados. No diretório /apps, crie um nó do tipo sling:folder. Por exemplo, crie um nó com o nome `customPatterns`. Neste nó, crie outro nó do tipo `nt:unstructed` e nomeie-o `textboxpatterns`. Este nó contém os vários padrões personalizados que você deseja adicionar.
+1. Abra a guia Propriedades do nó criado. Por exemplo, abra a guia Propriedades de `textboxpatterns`. Adicione a `guideComponentType` propriedade a esse nó e defina seu valor como *fd/af/components/formatter/guideTextBox*.
 
-1. The value of this property varies depending on the field for which you want to define the patterns. Para o campo numérico, o valor da `guideComponentType` propriedade é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*.
+1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para o campo numérico, o valor da `guideComponentType` propriedade é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*.
 &quot;
-1. You can add a custom pattern by assigning a property to the `textboxpatterns` node. Adicione uma propriedade com um nome (por exemplo `pattern1`) e defina seu valor para o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as Caixas de texto usadas em Formulários adaptáveis.
+1. É possível adicionar um padrão personalizado atribuindo uma propriedade ao `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo `pattern1`) e defina seu valor para o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as Caixas de texto usadas em Formulários adaptáveis.
 
    ![Criação de padrões personalizados para campos no CrxDe](assets/creating-custom-patterns.png)
 
-   Creating custom patterns
+   Criação de padrões personalizados
 
