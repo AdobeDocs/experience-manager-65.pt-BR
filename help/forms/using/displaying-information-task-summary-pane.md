@@ -1,8 +1,8 @@
 ---
 title: Exibição de informações no painel Resumo da Tarefa
 seo-title: Exibição de informações no painel Resumo da Tarefa
-description: Na área de trabalho do AEM Forms, um painel Resumo da Tarefa pode ser configurado para resumir a tarefa ou exibir qualquer outra página da Web.
-seo-description: Na área de trabalho do AEM Forms, um painel Resumo da Tarefa pode ser configurado para resumir a tarefa ou exibir qualquer outra página da Web.
+description: Na área de trabalho AEM Forms, um painel Resumo da Tarefa pode ser configurado para resumir a tarefa ou exibir qualquer outra página da Web.
+seo-description: Na área de trabalho AEM Forms, um painel Resumo da Tarefa pode ser configurado para resumir a tarefa ou exibir qualquer outra página da Web.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ A área de trabalho do AEM Forms permite exibir uma página da Web de sua escolh
    * `Create a folder`**SampleSummary **em`/apps`. Na Lista de Controle de acesso de`/apps/SampleSummary`, adicione uma entrada para`PERM_WORKSPACE_USER`permitir`jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
 
-   ```
+   ```html
    <html>
        <body>
            <h1>Sample Summary</h1>
@@ -49,4 +52,4 @@ A área de trabalho do AEM Forms permite exibir uma página da Web de sua escolh
    ```
 
    * Defina o valor do url de resumo da tarefa como `/lc/content/SampleSummary.html` na etapa Atribuir Tarefa.
-   * Quando a tarefa associada à etapa Atribuir Tarefa é aberta na área de trabalho do AEM Forms, a  `html.esp` `/apps/SampleSummary` é renderizada no painel de resumo da tarefa.
+   * Quando a tarefa associada à etapa Atribuir Tarefa é aberta na área de trabalho de AEM Forms, a  `html.esp` em `/apps/SampleSummary` é renderizada no painel de resumo da tarefa.
