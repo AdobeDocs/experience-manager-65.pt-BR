@@ -1,15 +1,18 @@
 ---
 title: Tabelas em formulários adaptáveis
 seo-title: Tabelas em formulários adaptáveis
-description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que respondem a layouts móveis, além de permitir o uso de componentes de tabela XDP.
-seo-description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que respondem a layouts móveis, além de permitir o uso de componentes de tabela XDP.
+description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que respondem a layouts móveis e também permite o uso de componentes de tabela XDP.
+seo-description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que respondem a layouts móveis e também permite o uso de componentes de tabela XDP.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2301'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 O uso de tabelas é uma forma eficiente, simplificada e organizada de apresentar dados complexos. Ajuda os usuários a identificar informações facilmente e a fornecer entradas em uma organização ordenada de linhas e colunas. A maioria dos formulários de serviços financeiros e organizações governamentais exigem grandes tabelas de dados para colocar números e realizar cálculos.
 
-O AEM Forms fornece um componente de Tabela no navegador de componentes na barra lateral que permite criar tabelas em formulários adaptáveis. Alguns dos principais recursos que ele oferece são:
+O AEM Forms fornece um componente Tabela no navegador de componentes na barra lateral que permite criar tabelas em formulários adaptáveis. Alguns dos principais recursos que ele oferece são:
 
 * Layout responsivo em dispositivos móveis
 * Linhas e colunas configuráveis
@@ -88,9 +91,9 @@ Para aplicar a classificação nas colunas da tabela, as células da coluna da t
 
 Para ativar a classificação:
 
-1. Selecione a tabela e toque ![](assets/configure_icon.png) (Configurar). Você também pode selecionar a tabela usando o navegador **Conteúdo** no sidekick da Comunicação Interativa.
+1. Selecione a tabela e toque em ![configure_icon](assets/configure_icon.png) (Configurar). Você também pode selecionar a tabela usando o navegador **Conteúdo** no sidekick da Comunicação Interativa.
 1. Selecione **Ativar classificação**.
-1. Toque em ![](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, em cabeçalhos de colunas representam que a classificação foi ativada.
+1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, em cabeçalhos de colunas representam que a classificação foi ativada.
 
    ![Ativar classificação](assets/enable_sorting_new.png)
 
@@ -118,7 +121,7 @@ Para ativar a classificação:
 
 >[!NOTE]
 >
->Você pode alterar o tema de cores para linhas de cabeçalho e corpo alterando os valores das variáveis MENOS. Para obter mais informações, consulte [Temas no AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>Você pode alterar o tema de cores para linhas de cabeçalho e corpo alterando os valores das variáveis MENOS. Para obter mais informações, consulte [Temas em AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
 ## Adicionar ou excluir uma linha dinamicamente {#add-or-delete-a-row-dynamically}
 
@@ -196,7 +199,7 @@ Coluna expandida de uma tabela em um dispositivo móvel
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
-Tabelas em formulários adaptáveis permitem preencher a tabela em tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor do AEM Forms está sendo executado ou no repositório do CRX.
+Tabelas em formulários adaptáveis permitem preencher a tabela em tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor AEM Forms está sendo executado ou no repositório CRX.
 
 Vejamos a seguinte tabela de resumo de transações bancárias que queremos preencher com dados de um arquivo XML.
 
