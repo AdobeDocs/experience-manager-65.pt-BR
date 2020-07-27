@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 0%
 
 ---
 
@@ -41,17 +44,17 @@ O SOAP (Java API Quick Start) está disponível para o serviço Assembler
 
 [Start rápido (modo SOAP): Montagem de vários fragmentos XDP usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O Start rápido localizado em Programação com AEM Forms baseia-se no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>O Start rápido localizado em Programação com AEM Forms tem por base o Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Start rápido (modo SOAP): Montagem de um documento PDF usando a API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
 O exemplo de código Java a seguir mescla dois documentos de origem de PDF chamados *map.pdf* e *direcçõa.pdf* em um único documento PDF. O nome do único documento PDF é *AssemblerResultPDF.pdf*. O nome do documento DDX é *shell.xml*. (Consulte Montagem [Programática De Documentos](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -195,7 +198,7 @@ O exemplo de código Java a seguir mescla dois documentos de origem de PDF chama
 
 O exemplo de código Java a seguir desmonta um documento PDF chamado *AssemblerResultPDF.pdf*. Observe que o nome do documento DDX é *shell_disassemble.xml*. Cada documento PDF desmontado é nomeado `ResultPDF[Number].pdf`. Ou seja, o primeiro documento PDF desmontado é chamado *ResultPDF1.pdf.* Para obter informações sobre o documento DDX *shell_disassemble.xml* usado neste exemplo de código, consulte Desmontagem [Programática de Documentos](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -334,7 +337,7 @@ O exemplo de código Java a seguir desmonta um documento PDF chamado *AssemblerR
 
 O exemplo de código Java a seguir monta um documento PDF criptografado por senha. O documento PDF não protegido é nomeado *Loan.pdf*. Observe que o nome do documento DDX é *shell_Encrypt.xml*. O documento PDF criptografado é nomeado *AssemblerEncryptedPDF.pdf*. (Consulte [Montagem de Documentos](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents)PDF criptografados.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -457,7 +460,7 @@ O exemplo de código Java a seguir monta um documento PDF criptografado por senh
 
 O exemplo de código Java a seguir monta um documento PDF com identificadores de página exclusivos (numeração de bates). Observe que o nome do documento DDX é *shell_Bates.xml*. O documento PDF que é retornado do serviço Assembler é salvo como um arquivo PDF chamado *AssemblerResultBatesPDF.pdf*. (Consulte [Montagem De Documentos Usando Numeração](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering)De Bates.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -615,7 +618,7 @@ O exemplo de código Java a seguir monta um documento PDF com identificadores de
 
 O exemplo de código Java a seguir monta um documento PDF não interativo. O documento PDF interativo passado para o serviço Assembler é chamado *Loan.pdf*. Observe que o nome do documento DDX é *shell_XFA.xml*. O documento PDF não interativo é salvo como um arquivo PDF chamado *AssembleNonInterativePDF.pdf*. (Consulte [Montagem de Documentos](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents)PDF não interativos.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -739,7 +742,7 @@ O exemplo de código Java a seguir monta um documento PDF não interativo. O doc
 
 O exemplo de código Java a seguir determina se o documento PDF de entrada é compatível com PDF/A. O documento PDF de entrada passado para o serviço Assembler é chamado *Loan.pdf*. O nome do documento DDX é shell_PDFA.xml. O documento XML retornado pelo serviço Assembler e especifica se o documento PDF de entrada é compatível com PDF/A é salvo como um arquivo XML chamado result.xml. Para obter informações sobre o documento DDX *shell_PDFA.xml* usado neste exemplo de código, consulte [Determinando se os Documentos são compatíveis com](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant)PDF/A.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -885,7 +888,7 @@ O exemplo de código Java a seguir determina se o documento PDF de entrada é co
 
 O exemplo de código Java a seguir valida um documento DDX com base em um arquivo chamado *bookmarkDDX.xml*. (Consulte [Validação de Documentos](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents)DDX.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1016,7 +1019,7 @@ O exemplo de código Java a seguir valida um documento DDX com base em um arquiv
 
 O exemplo de código Java a seguir monta um documento PDF que contém marcadores. O nome do documento DDX é *bookmarkDX.xml*. O nome do documento XML de marcador que descreve os marcadores a serem adicionados ao documento PDF é bookmarks.xml. O documento PDF resultante é salvo como um arquivo PDF chamado AssemblerResultBookmarks.pdf. (Consulte [Montagem de Documentos PDF com marcadores](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1382,7 +1385,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
 
 O exemplo de código Java a seguir cria um portfólio PDF. O portfólio PDF é salvo como um arquivo PDF chamado *AssemblerResultPortfolio.pdf*. (Consulte [Montagem de portfólios](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1533,7 +1536,7 @@ O exemplo de código Java a seguir cria um portfólio PDF. O portfólio PDF é s
 
 O exemplo de código Java a seguir monta fragmentos XDP baseados nos seguintes arquivos XDP: *tuc018_template_flow.xdp*, *tuc018_contact.xdp* e* tuc018_customer.xdp*. O documento XDP montado que contém todos os fragmentos é salvo como um arquivo XDP chamado *AssemblerResultXDP.xdp*. (Consulte [Montagem de vários fragmentos](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)XDP.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1690,7 +1693,7 @@ O exemplo de código a seguir reproduz um documento PDF usando `PDFUtility`.
 >
 >`PDFUtility` pode redigir somente os PDFs marcados para redação usando o Acrobat.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
