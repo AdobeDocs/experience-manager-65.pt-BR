@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2657'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +66,7 @@ Por padrão, os e-mails enviados pelos formulários AEM contêm links para (obso
 1. Abra o modelo de atribuição de tarefa.
 1. Defina o modelo nas notificações de tarefa para o seguinte: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
-   ```as3
+   ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
    ```
 
@@ -124,9 +127,9 @@ Você pode enviar notificações de prazo para usuários e grupos quando o prazo
 1. Na lista Codificação de email, selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
 
-### Ocultar a tag NÃO EXCLUIR para todos os emails {#hide-the-do-not-delete-tag-for-all-emails}
+### Ocultar a tag NÃO DELETE para todos os emails {#hide-the-do-not-delete-tag-for-all-emails}
 
-Você pode configurar e-mail para ocultar o tag de rastreamento NÃO EXCLUIR em todos os e-mails enviados em um processo centralizado no ser humano. Para obter detalhes, consulte [Como ocultar a tag &#39;DO-NOT-DELETE&#39; com CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+Você pode configurar o e-mail para ocultar o tag de rastreamento NÃO DELETE em todos os e-mails enviados em um processo centrado no ser humano. Para obter detalhes, consulte [Como ocultar a tag &#39;DO-NOT-DELETE&#39; com CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
 
 ## Configurar notificações para administradores {#configuring-notifications-for-administrators}
 
