@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Embora as propriedades sejam autoexplicativas, as importantes são as seguintes:
 
 * **URL** do servidor - Especifica o URL para o servidor do LiveCycle. Se você quiser que o LiveCycle e o AEM se comuniquem por https, start o AEM com a seguinte JVM
 
-   ```
+   ```java
    argument
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
@@ -118,7 +118,7 @@ Para start de um serviço exposto no AEM, execute as seguintes etapas:
 
    O trecho de código acima start a API createPDF de GeneratePdfServiceClient para converter um documento em PDF. Você pode executar invocação semelhante em um JSP usando o seguinte código. A principal diferença é que o código a seguir usa o Sling ScriptHelper para acessar o GeneratePdfServiceClient.
 
-   ```java
+   ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
    <%@ page import="com.adobe.livecycle.generatepdf.client.CreatePDFResult" %>
    <%@ page import="com.adobe.idp.Document" %>
@@ -156,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Quase todos os serviços de Documento no LiveCycle exigem autenticação. Você pode usar qualquer uma das seguintes opções para start desses serviços sem fornecer credenciais explícitas no código:
 
-### Configuração da lista permitida {#allowlist-configuration}
+### Lista de permissões configuração {#allowlist-configuration}
 
 A configuração do SDK do LiveCycle Client contém uma configuração sobre nomes de serviço. Essa configuração é uma lista de serviços para a qual a lógica de invocação usa credencial de administrador na caixa. Por exemplo, se você adicionar serviços DiretoryManager (parte da API de Gerenciamento de Usuário) a essa lista, qualquer código de cliente poderá usar diretamente o serviço e a camada de invocação automaticamente transmitirá as credenciais configuradas como parte da solicitação enviada ao servidor do LiveCycle
 
