@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
@@ -91,7 +94,7 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
        <li>ENDSWITH - A termina com B se B for a parte final de A</li>
        <li>LIKE - Implementa o operador LIKE</li>
        <li>AND - Combine várias declarações</li>
-      </ul> <p><strong>Observação:</strong> Os operadores <em>GT, LT, GTEQ e LTEQ são aplicáveis para propriedades de tipo linear como LONG, DUPLO e DATE.</em></p> </li>
+      </ul> <p><strong>Observação:</strong> <em>Os operadores GT, LT, GTEQ e LTEQ são aplicáveis para propriedades de tipo linear, como LONG, DUPLO e DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -124,7 +127,7 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
 
 ## Solicitação de amostra {#sample-request}
 
-```
+```json
 func : searchForms
 appPath : /content/dam/formsanddocuments/MyApplication23
 cutPoints : title|description|author|status|creationDate|lastModifiedDate|activationDate|expiryDate|tags|allowedRenderFormat|formmodel
@@ -144,7 +147,7 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 ## Amostra de resposta {#sample-response}
 
-```
+```json
 [
 {"resultCount":2},
     {"assetType":"FORM","name":"ExpenseClaim.xdp","id":"509fa2d5-e3c9-407b-b8dc-fa0ba08eb0ce",
