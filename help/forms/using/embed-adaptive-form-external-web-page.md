@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -120,14 +120,14 @@ Vamos ver um exemplo de como você pode configurar um servidor proxy reverso Apa
 
 1. Abra o arquivo de `httpd.conf` configuração e exclua as barras de comentário das seguintes linhas de código. Como alternativa, você pode adicionar essas linhas de código no arquivo.
 
-   ```
+   ```text
    LoadModule proxy_html_module modules/mod_proxy_html.so
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
 1. Configure as regras de proxy adicionando as seguintes linhas de código no arquivo de `httpd-proxy.conf` configuração.
 
-   ```
+   ```text
    ProxyPass /forms https://[AEM_Instance]/forms
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
@@ -136,7 +136,7 @@ Vamos ver um exemplo de como você pode configurar um servidor proxy reverso Apa
 
 Se você não montar o servidor AEM em um caminho de contexto, as regras de proxy na camada Apache serão as seguintes:
 
-```java
+```text
 ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
@@ -151,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Se você configurar qualquer outra topologia, adicione os URLs de envio, preenchimento prévio e outros à lista permitida na camada do despachante.
+>Se você configurar qualquer outra topologia, certifique-se de adicionar os URLs de envio, preenchimento prévio e outros URLs à lista de permissões na camada do dispatcher.
 
 ## Best practices {#best-practices}
 
