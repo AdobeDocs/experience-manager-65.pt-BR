@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ## Criação de grupos no autor {#creating-groups-on-author}
 
-Na instância do autor de AEM, na navegação global:
+Na instância AEM Author, na navegação global:
 
 * Selecione **[!UICONTROL Comunidades] > **[!UICONTROL Sites]**.
 * Selecione **[!UICONTROL engajar pasta]** para abri-la.
@@ -91,7 +94,7 @@ A `groups` pasta agora contém dois grupos (atualize a página).
 
 Antes de criar grupos aninhados dentro do `arts` grupo, passe o mouse sobre o `arts` cartão e selecione o ícone de publicação para publicá-lo.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![componente de ligação](assets/liking-component.png)
 
 Aguarde a confirmação de que o grupo foi publicado.
 
@@ -130,7 +133,7 @@ Para navegar até os grupos aninhados no console Sites das Comunidades:
 * Selecionar cartão **[!UICONTROL artístico]**
 * Selecionar pasta **[!UICONTROL Grupos]**
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![gosto de configuração](assets/configure-liking.png)
 
 ## Grupos de publicação {#publishing-groups}
 
