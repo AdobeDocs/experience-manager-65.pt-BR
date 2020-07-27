@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +61,7 @@ Um formulário adaptável pode ter vários campos vinculados e não vinculados. 
 
 ### Exemplo de estrutura JSON de pré-preenchimento {#sample-prefill-json-structure}
 
-```
+```javascript
 {
    "afBoundData": {
       "employeeData": { }
@@ -86,7 +89,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 [Obter](assets/prefill-submit-data-contentpackage.zip)amostra de arquivo contendo dados de preenchimento prévio e dados enviados
 
-### Formulários adaptativos baseados em schemas XML {#xml-schema-af}
+### Formulários adaptativos baseados em schemas XML  {#xml-schema-af}
 
 A estrutura do XML de preenchimento prévio e do XML enviado para formulários adaptáveis com base no schema XML é a seguinte:
 
@@ -146,7 +149,7 @@ Para formulários adaptáveis baseados no schema JSON, a estrutura de JSON pré-
 * **Preencher estrutura** JSON: O JSON de preenchimento prévio deve ser compatível com o Schema JSON associado. Como opção, ele pode ser vinculado ao objeto /afData/afBoundData se você também quiser preencher previamente campos não vinculados.
 * **Estrutura** JSON enviada: se nenhum JSON de preenchimento prévio for usado, o JSON enviado conterá dados para os campos vinculados e não vinculados na tag afData wrapper. Se o JSON de pré-preenchimento for usado, o JSON enviado terá a mesma estrutura do JSON de pré-preenchimento. Se o start JSON de pré-preenchimento com o objeto raiz afData, o JSON de saída terá o mesmo formato. Se o JSON de pré-preenchimento não tiver o invólucro afData/afBoundData e, em vez disso, start diretamente do objeto raiz do schema, como usuário, o JSON enviado também será start com o objeto do usuário.
 
-```
+```json
 {
     "id": "https://some.site.somewhere/entry-schema#",
     "$schema": "https://json-schema.org/draft-04/schema#",
@@ -165,7 +168,7 @@ Para formulários adaptáveis baseados no schema JSON, a estrutura de JSON pré-
 
 Para campos que usam o modelo de schema JSON, os dados são preenchidos previamente no objeto afBoundData, como mostrado na amostra JSON abaixo. Ele pode ser usado para preencher previamente um formulário adaptável com um ou mais campos de texto não vinculados. Abaixo está um exemplo de dados com `afData/afBoundData` invólucro:
 
-```
+```json
 {
   "afData": {
     "afUnboundData": {
@@ -182,7 +185,7 @@ Para campos que usam o modelo de schema JSON, os dados são preenchidos previame
 
 Abaixo está um exemplo sem `afData/afBoundData` invólucro:
 
-```
+```json
 {
  "user": {
   "address": {
@@ -230,7 +233,7 @@ Para ativar o serviço de preenchimento prévio, especifique a Configuração do
 >
 >A Configuração do serviço de preenchimento prévio é aplicável a formulários adaptáveis, formulários HTML5 e conjuntos de formulários HTML5.
 
-1. Abra a Configuração **[!UICONTROL do console da Web do]** Adobe Experience Manager usando o URL:\
+1. Abra a Configuração **[!UICONTROL do Console Web do]** Adobe Experience Manager usando o URL:\
    https://&lt;servidor>:&lt;porta>/system/console/configMgr
 1. Pesquise e abra Configuração **** do serviço de preenchimento padrão.
 
@@ -240,6 +243,7 @@ Para ativar o serviço de preenchimento prévio, especifique a Configuração do
 
    * file:///C:/Users/public/Document/Prefill/.*
    * https://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
    >Por padrão, o preenchimento prévio é permitido por meio de arquivos crx para todos os tipos de Formulários adaptáveis (XSD, XDP, JSON, FDM e sem base em Modelo de formulário). O preenchimento prévio é permitido somente com arquivos JSON e XML.
@@ -267,15 +271,15 @@ Os formulários adaptativos podem ser pré-preenchidos com dados do usuário no 
 
 ### O protocolo crx:// {#the-crx-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
 O nó especificado deve ter uma propriedade chamada `jcr:data` e manter os dados.
 
-### O protocolo file:// {#the-file-protocol-nbsp}
+### O protocolo file://  {#the-file-protocol-nbsp}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
 ```
 
@@ -283,13 +287,13 @@ O arquivo referenciado deve estar no mesmo servidor.
 
 ### O protocolo https:// {#the-http-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
 ### O protocolo service:// {#the-service-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
@@ -304,7 +308,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 Você também pode definir o `data` atributo em `slingRequest`, onde o `data` atributo é uma string contendo XML ou JSON, como mostrado no código de amostra abaixo (Exemplo é para XML):
 
-```java
+```javascript
 <%
            String dataXML="<afData>" +
                             "<afUnboundData>" +
@@ -330,15 +334,15 @@ prefill-page component.zip
 
 [Obter o arquivo](assets/prefill-page-component.zip)Amostra prefill.jsp no componente de página
 
-## Serviço de pré-preenchimento personalizado do AEM Forms {#aem-forms-custom-prefill-service}
+## Serviço de preenchimento predefinido personalizado do AEM Forms {#aem-forms-custom-prefill-service}
 
 Você pode usar o serviço de preenchimento prévio personalizado para os cenários, onde você lê constantemente os dados de uma fonte predefinida. O serviço de preenchimento prévio lê dados de fontes de dados definidas e preenche previamente os campos do formulário adaptável com o conteúdo do arquivo de dados de preenchimento prévio. Também ajuda a associar permanentemente os dados pré-preenchidos a um formulário adaptável.
 
 ### Criar e executar um serviço de preenchimento prévio {#create-and-run-a-prefill-service}
 
-O serviço de pré-preenchimento é um serviço OSGi e é empacotado por meio do pacote OSGi. Crie o pacote OSGi, carregue e instale-o em pacotes do AEM Forms. Antes de começar a criar o pacote:
+O serviço de pré-preenchimento é um serviço OSGi e é empacotado por meio do pacote OSGi. Crie o pacote OSGi, carregue e instale-o em pacotes de AEM Forms. Antes de começar a criar o pacote:
 
-* [Baixar o AEM Forms Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
+* [Baixar o SDK do cliente AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
 * Download do pacote estereotipado
 
 * Coloque o arquivo de dados (dados de preenchimento prévio) no repositório crx. Você pode colocar o arquivo em qualquer local na pasta \content do crx-repository.
@@ -347,7 +351,7 @@ O serviço de pré-preenchimento é um serviço OSGi e é empacotado por meio do
 
 #### Criar um serviço de preenchimento prévio {#create-a-prefill-service}
 
-O pacote estereotipado (pacote de serviço de preenchimento prévio de amostra) contém uma implementação de amostra do serviço de preenchimento prévio do AEM Forms. Abra o pacote estereotipado em um editor de código. Por exemplo, abra o projeto estereotipado no Eclipse para edição. Depois de abrir o pacote estereotipado em um editor de código, execute as seguintes etapas para criar o serviço.
+O pacote estereotipado (pacote de serviço de preenchimento prévio de amostra) contém a implementação de amostra do serviço de preenchimento prévio de AEM Forms. Abra o pacote estereotipado em um editor de código. Por exemplo, abra o projeto estereotipado no Eclipse para edição. Depois de abrir o pacote estereotipado em um editor de código, execute as seguintes etapas para criar o serviço.
 
 1. Abra o arquivo src\main\java\com\adobe\test\Prefill.java para edição.
 1. No código, defina o valor de:
@@ -364,6 +368,6 @@ O pacote estereotipado (pacote de serviço de preenchimento prévio de amostra) 
 Para start do serviço de preenchimento prévio, carregue o arquivo JAR no console da Web do AEM Forms e ative o serviço. Agora, os start de serviço aparecem no editor de formulários adaptáveis. Para associar um serviço de preenchimento prévio a um formulário adaptável:
 
 1. Abra o formulário adaptável no Editor de formulários e abra o painel Propriedades do Container de formulário.
-1. No console Propriedades, navegue até container de formulários AEM > Básico > Serviço de comprovação.
+1. No console Propriedades, navegue até AEM Forms container > Básico > Serviço de preenchimento prévio.
 1. Selecione o Serviço de preenchimento padrão e clique em **[!UICONTROL Salvar]**. O serviço está associado ao formulário.
 
