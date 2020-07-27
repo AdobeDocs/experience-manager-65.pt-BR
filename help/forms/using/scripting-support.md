@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '3909'
+ht-degree: 36%
 
 ---
 
@@ -104,7 +107,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   <tr>
    <td><code>numPages</code></td>
    <td>Retorna o número de páginas no documento.</td>
-   <td>A política de paginação de formulários HTML5 não é idêntica à política de paginação de formulários PDF. Portanto, a API numPages pode retornar valores diferentes em ambos os casos.</td>
+   <td>A política de paginação de formulários HTML5 não é idêntica à política de paginação de PDF forms. Portanto, a API numPages pode retornar valores diferentes em ambos os casos.</td>
   </tr>
   <tr>
    <td><code>platform</code></td>
@@ -114,7 +117,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   <tr>
    <td><code>title</code></td>
    <td>Especifica o título do documento. Apenas está disponível para aplicativos clientes.</td>
-   <td>Ele retorna o título do documento HTML no formulário, em vez do título dos metadados do formulário, como no caso dos Formulários PDF.</td>
+   <td>Ele retorna o título do documento HTML no formulário, em vez do título dos metadados do formulário, como no caso de PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
@@ -1254,12 +1257,12 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
   </tr>
   <tr>
    <td>console.println()</td>
-   <td>Essa API acrobat descarta a saída para o console javascript.</td>
+   <td>Essa API acrobat descarta a saída para o console JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>Essa API acrobat envia uma mensagem de alerta por meio de pop-up javascript.</td>
+   <td>Essa API acrobat envia uma mensagem de alerta por meio do pop-up JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
