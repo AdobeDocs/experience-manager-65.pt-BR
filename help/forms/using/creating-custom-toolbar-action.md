@@ -1,8 +1,8 @@
 ---
 title: Criação de uma ação personalizada da barra de ferramentas
 seo-title: Criação de uma ação personalizada da barra de ferramentas
-description: Os desenvolvedores de formulários podem criar ações personalizadas da barra de ferramentas para formulários adaptáveis no AEM Forms. O uso de ações personalizadas por autores de formulários pode fornecer mais fluxos de trabalho e opções para seus usuários finais.
-seo-description: Os desenvolvedores de formulários podem criar ações personalizadas da barra de ferramentas para formulários adaptáveis no AEM Forms. O uso de ações personalizadas por autores de formulários pode fornecer mais fluxos de trabalho e opções para seus usuários finais.
+description: Os desenvolvedores de formulários podem criar ações personalizadas da barra de ferramentas para formulários adaptáveis no AEM Forms. O uso de ações personalizadas por autores de formulários pode fornecer mais workflows e opções aos usuários finais.
+seo-description: Os desenvolvedores de formulários podem criar ações personalizadas da barra de ferramentas para formulários adaptáveis no AEM Forms. O uso de ações personalizadas por autores de formulários pode fornecer mais workflows e opções aos usuários finais.
 uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
 translation-type: tm+mt
-source-git-commit: befbdfd574949a7f7449b70a15480e7c105418fe
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
 1. Selecione `cq:template` nó no `reviewbeforesubmit` nó. Verifique se o valor da `guideNodeClass` propriedade é `guideButton` e altere a `jcr:title` propriedade de acordo.
 1. Altere a propriedade type no `cq:Template` nó. No exemplo atual, altere a propriedade type para button.
 
-   O valor de tipo é adicionado como uma classe CSS no HTML gerado para o componente. Os usuários podem usar essa Classe CSS para criar um estilo para suas ações. O estilo padrão para dispositivos móveis e desktop é fornecido para os valores de tipo de botão, botão, enviar, redefinir e salvar.
+   O valor de tipo é adicionado como uma classe CSS no HTML gerado para o componente. Os usuários podem usar essa Classe CSS para criar um estilo para suas ações. O estilo padrão para dispositivos móveis e de desktop é fornecido para os valores de tipo de botão, botão, enviar, redefinir e salvar.
 
 1. Selecione a ação personalizada na caixa de diálogo da barra de ferramentas de edição de formulário adaptável. Um botão Revisar é exibido na barra de ferramentas do painel.
 
@@ -54,7 +57,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
 
    Adicione o seguinte código em `init.jsp`.
 
-   ```
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <guide:initializeBean name="guideField" className="com.adobe.aemds.guide.common.GuideButton"/>
    
@@ -112,7 +115,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
 
    Adicione o seguinte código no `ReviewBeforeSubmit.js` arquivo.
 
-   ```
+   ```javascript
    /*anonymous function to handle show of review before submit view */
    $(function () {
        if($("div.reviewbeforesubmit button[id*=reviewbeforesubmit]").length > 0) {
@@ -174,7 +177,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
    }
    ```
 
-1. Para verificar a funcionalidade da ação personalizada, abra o formulário adaptável no modo de Visualização e clique em Revisar na barra de ferramentas.
+1. Para verificar a funcionalidade da ação personalizada, abra o formulário adaptável no modo de Pré-visualização e clique em Revisar na barra de ferramentas.
 
    >[!NOTE]
    >
