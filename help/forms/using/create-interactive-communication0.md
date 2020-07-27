@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2020'
+ht-degree: 0%
 
 ---
 
@@ -22,13 +25,13 @@ Este tutorial é uma etapa da série [Criar sua primeira comunicação](/help/fo
 
 Depois de criar todos os blocos de construção, como modelo de dados de formulário, fragmentos de documento, modelos e temas para a versão da Web, você poderá start criando uma Comunicação Interativa.
 
-As Comunicações interativas podem ser fornecidas por meio de dois canais: Imprimir e Web. Você também pode criar um canal de comunicação interativa com impressão como mestre. A opção Imprimir como principal para o canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir. Ela também garante que as alterações feitas no canal Imprimir sejam sincronizadas no canal da Web. No entanto, os autores de Comunicações interativas podem interromper a herança de componentes específicos no canal da Web.
+As Comunicações interativas podem ser fornecidas por meio de dois canais: Imprimir e Web. Você também pode criar um canal de comunicação interativa com impressão como o principal. A opção Imprimir como principal para o canal da Web garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir. Ela também garante que as alterações feitas no canal Imprimir sejam sincronizadas no canal da Web. No entanto, os autores de Comunicações interativas podem interromper a herança de componentes específicos no canal da Web.
 
 Este tutorial o orienta pelas etapas para criar comunicações interativas para canais de impressão e da Web. No final deste tutorial, você poderá:
 
 * Criar comunicação interativa para o canal de impressão
 * Criar comunicação interativa para o canal da Web
-* Criar Comunicações Interativas Impressas e da Web com Imprimir como Mestre
+* Crie Comunicações interativas da Web e da impressão com a opção Imprimir como Principal
 
 ## Criar Comunicações Interativas para Impressão e Web sem sincronização {#create-interactive-communications-for-print-and-web-with-no-synchronization}
 
@@ -51,11 +54,12 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
 1. Especifique **create_first_ic** no **Título** e no campo **Nome** . Selecione **FDM_Create_First_IC** como o Modelo de dados de formulário e toque em **Próximo**.
 1. No assistente de **Canais** :
 
-   1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**. Verifique se a caixa de seleção **Usar impressão como mestre para Canal** da Web não está marcada.
+   1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**. Verifique se a caixa de seleção **Usar impressão como Principal para Canal** da Web não está marcada.
 
    1. Especifique a pasta **Create_First_IC_models** > **Create_First_IC_Web_Template** como o modelo da Web e toque em **Selecionar**.
 
    1. Toque em **Criar**.
+
    Uma mensagem de confirmação é exibida informando que a Comunicação interativa foi criada com êxito.
 
 1. Toque em **Editar** para abrir a Comunicação interativa no painel direito.
@@ -72,27 +76,27 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
    ![Fragmentos de Documento para o Interative Communications](assets/create_first_ic_doc_fragments_new.png)
 
 1. Toque na área de público alvo **Gráficos** e toque em **+** para adicionar um componente **Gráfico** .
-1. Toque no componente Gráfico e selecione ![](assets/configure_icon.png) (Configurar). As propriedades do gráfico são exibidas no painel esquerdo:
+1. Toque no componente Gráfico e selecione ![configure_icon](assets/configure_icon.png) (Configurar). As propriedades do gráfico são exibidas no painel esquerdo:
 
    1. Especifique um nome para o gráfico.
    1. Selecione **Pizza** na lista suspensa Tipo **de** gráfico.
-   1. Selecione a propriedade **calltype** no tipo de objeto de modelo de dados de **chamadas** na seção do eixo **** X. Tocar ![](assets/done_icon.png).
+   1. Selecione a propriedade **calltype** no tipo de objeto de modelo de dados de **chamadas** na seção do eixo **** X. Toque em ![done_icon](assets/done_icon.png).
    1. Selecione **Frequency** na lista suspensa **Function** .
-   1. Selecione a propriedade **calltype** no tipo de objeto de modelo de dados de **chamadas** na seção do eixo **** Y. Tocar ![](assets/done_icon.png).
-   1. Toque em ![](assets/done_icon.png) para salvar as propriedades do gráfico.
+   1. Selecione a propriedade **calltype** no tipo de objeto de modelo de dados de **chamadas** na seção do eixo **** Y. Toque em ![done_icon](assets/done_icon.png).
+   1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades do gráfico.
 
 1. Vá para a guia **Ativos** e aplique o filtro para exibir somente os fragmentos de layout no painel esquerdo. Arraste e solte o fragmento do layout **table_lf** na área de público alvo Chamadas **** discriminadas.
-1. Selecione o campo de texto na coluna **Data** e toque ![](assets/configure_icon.png) (Configurar).
-1. Selecione Objeto **de Modelo de** Dados na lista suspensa Tipo **de** Vínculo e selecione **chamadas** > **calldate**. Toque ![](assets/done_icon.png) duas vezes para salvar as propriedades.
+1. Selecione o Campo de texto na coluna **Data** e toque em ![configure_icon](assets/configure_icon.png) (Configurar).
+1. Selecione Objeto **de Modelo de** Dados na lista suspensa Tipo **de** Vínculo e selecione **chamadas** > **calldate**. Toque duas vezes em ![done_icon](assets/done_icon.png) para salvar as propriedades.
 
    Da mesma forma, crie vínculos com o **tempo** de chamada, o **número** de chamada, a **duração** e os encargos **de** chamada para os campos de texto nas colunas **Tempo************** , Número, Duraçãoe Encargos, respectivamente.
 
 1. Toque na área de público alvo **PayNow** e toque **+** para adicionar um componente **de imagem** .
-1. Toque no componente de Imagem e selecione ![](assets/configure_icon.png) (Configurar). As propriedades da imagem são exibidas no painel esquerdo:
+1. Toque no componente de Imagem e selecione ![configure_icon](assets/configure_icon.png) (Configurar). As propriedades da imagem são exibidas no painel esquerdo:
 
    1. Especifique **PayNow** como o nome da imagem no campo **Nome** .
    1. Toque em **Carregar**, selecione a imagem salva no sistema de arquivos local e toque em **Abrir**.
-   1. Toque em ![](assets/done_icon.png) para salvar as propriedades da imagem.
+   1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades da imagem.
 
 1. Repita as etapas 13 e 14 para adicionar a imagem **ValueAddedServices** à área de público alvo **ValueAddedServices** .
 
@@ -113,11 +117,12 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
 1. Especifique **create_first_ic** no **Título** e no campo **Nome** . Selecione **FDM_Create_First_IC** como o Modelo de dados de formulário e toque em **Próximo**.
 1. No assistente de **Canais** :
 
-   1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**. Verifique se a caixa de seleção **Usar impressão como mestre para Canal** da Web não está marcada.
+   1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**. Verifique se a caixa de seleção **Usar impressão como Principal para Canal** da Web não está marcada.
 
    1. Especifique a pasta **Create_First_IC_models** > **Create_First_IC_Web_Template** como o modelo da Web e toque em **Selecionar**.
 
    1. Toque em **Criar**.
+
    Uma mensagem de confirmação é exibida informando que a Comunicação interativa foi criada com êxito.
 
 1. Toque em **Editar** para abrir a Comunicação interativa no painel direito.
@@ -133,18 +138,18 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
    | summary_charge_first_interative_Communication | Encargos |
 
 1. Toque em **Resumo da área de público alvo Encargos** e toque em **+** para adicionar um componente **Gráfico** .
-1. Toque no componente Gráfico e selecione ![](assets/configure_icon.png) (Configurar). As propriedades do gráfico são exibidas no painel esquerdo:
+1. Toque no componente Gráfico e selecione ![configure_icon](assets/configure_icon.png) (Configurar). As propriedades do gráfico são exibidas no painel esquerdo:
 
    1. Especifique um nome para o gráfico.
    1. Selecione **Pizza** na lista suspensa Tipo **de** gráfico.
 
-   1. Selecione a propriedade **calltype** no tipo de objeto de modelo de dados de **chamadas** na seção do eixo **** X. Tocar ![](assets/done_icon.png).
+   1. Selecione a propriedade **calltype** no tipo de objeto de modelo de dados de **chamadas** na seção do eixo **** X. Toque em ![done_icon](assets/done_icon.png).
 
    1. Selecione **Frequency** na lista suspensa **Function** .
 
-   1. Selecione a propriedade **calltype** no tipo de objeto de modelo de dados de **chamadas** na seção do eixo **** Y. Tocar ![](assets/done_icon.png).
+   1. Selecione a propriedade **calltype** no tipo de objeto de modelo de dados de **chamadas** na seção do eixo **** Y. Toque em ![done_icon](assets/done_icon.png).
 
-   1. Toque em ![](assets/done_icon.png) para salvar as propriedades do gráfico.
+   1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades do gráfico.
 
 1. Selecione a guia Fontes **de** dados no painel esquerdo e arraste e solte o objeto de modelo de dados de **chamadas** para a área de público alvo Chamadas **** detalhadas. Todas as propriedades no objeto de modelo de dados de **chamadas** são exibidas como colunas de tabela na área de público alvo Chamadas **** detalhadas no painel direito.
 
@@ -164,7 +169,7 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
    1. Especifique o URL de pagamento no campo **Caminho** .
    1. Selecione **Nova guia** na lista suspensa **Público alvo** .
 
-   1. Toque em ![](assets/done_icon.png) para salvar as propriedades do hiperlink.
+   1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades do hiperlink.
 
 1. Selecione **Estilo** na lista suspensa ao lado da opção **Pré-visualização** .
 
@@ -177,16 +182,17 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
 
    1. Selecione Vermelho como a cor de plano de fundo do botão na seção **Plano de fundo** .
    1. No campo **Margem** para a seção **Dimensões e posição** , toque no ícone **Editar simultaneamente** e defina a margem **Direita** como **450px**. Os campos Superior, Inferior e Esquerdo são definidos como vazios.
+
    ![Inserir hiperlink no Interative Communication](assets/ic_web_hyperlink_new.png)
 
 1. Toque na área de público alvo **Pagar agora** e toque **+** para adicionar um componente **de Imagem** .
-1. Toque no componente de Imagem e selecione ![](assets/configure_icon.png) (Configurar). As propriedades da imagem são exibidas no painel esquerdo:
+1. Toque no componente de Imagem e selecione ![configure_icon](assets/configure_icon.png) (Configurar). As propriedades da imagem são exibidas no painel esquerdo:
 
    1. Especifique **PayNow** como o nome da imagem no campo **Nome** .
 
    1. Toque em **Carregar**, selecione a imagem **PayNowWeb** salva no sistema de arquivos local e toque em **Abrir**.
 
-   1. Toque em ![](assets/done_icon.png) para salvar as propriedades da imagem.
+   1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades da imagem.
 
 1. Com base no caso de uso, insira um botão **Assinar** na Interative Communication que fornece ao usuário uma opção para assinar os serviços de valor agregado clicando no botão.
 
@@ -194,7 +200,7 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
 
 ## Criar Comunicações Interativas para Impressão e Web com sincronização automática {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
-Você também pode criar uma Comunicação interativa ao ativar a sincronização automática entre canais Impressos e da Web. Para ativar a sincronização automática, selecione a opção Imprimir como mestre ao criar a Comunicação interativa. Selecionar a opção Imprimir como mestre garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir. Ela também garante que as alterações feitas no canal Imprimir sejam refletidas no canal da Web.
+Você também pode criar uma Comunicação interativa ao ativar a sincronização automática entre canais Impressos e da Web. Para ativar a sincronização automática, selecione a opção Imprimir como principal ao criar a Comunicação interativa. Selecionar a opção Imprimir como principal garante que o conteúdo, a herança e o vínculo de dados do canal da Web sejam derivados do canal Imprimir. Ela também garante que as alterações feitas no canal Imprimir sejam refletidas no canal da Web.
 
 Execute as seguintes etapas para derivar o conteúdo do canal da Web usando o canal de impressão:
 
@@ -205,16 +211,17 @@ Execute as seguintes etapas para derivar o conteúdo do canal da Web usando o ca
 
    1. Especifique **create_first_ic_print_template** como o modelo de impressão e toque em **Selecionar**.
 
-   1. Marque a caixa de seleção **Usar impressão como mestre para Canal** da Web.
+   1. Marque a caixa de seleção **Usar impressão como Principal para o Canal** da Web.
    1. Especifique a pasta **Create_First_IC_models** > **Create_First_IC_Web_Template** como o modelo da Web e toque em **Selecionar**.
 
    1. Toque em **Criar**.
+
    Uma mensagem de confirmação é exibida informando que a Comunicação interativa foi criada com êxito.
 
 1. Toque em **Editar** para abrir a Comunicação interativa no painel direito.
 1. Execute as etapas 6 - 15 da seção [Criar comunicação interativa para canal](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-print-channel) de impressão.
 1. Toque na guia **Canais** no painel esquerdo e toque em **Web** para gerar automaticamente conteúdo para o canal da Web a partir do canal Imprimir.
-1. Como a caixa de seleção **Usar impressão como mestre para Canal** da Web está selecionada na etapa 4, o conteúdo e os vínculos são gerados automaticamente para o canal da Web a partir do canal Imprimir.
+1. Como a caixa de seleção **Usar impressão como Principal para o Canal** da Web está selecionada na etapa 4, o conteúdo e os vínculos são gerados automaticamente para o canal da Web a partir do canal Imprimir.
 
    O conteúdo do canal de impressão é inserido abaixo do conteúdo do modelo do canal da Web. Para modificar o conteúdo do canal da Web que foi gerado automaticamente a partir do canal Imprimir, você pode cancelar a herança para qualquer área do público alvo.
 
@@ -232,6 +239,7 @@ Execute as seguintes etapas para derivar o conteúdo do canal da Web usando o ca
    * Componente Resumo da Lista para o painel Resumo da Lista
    * Resumo do componente Encargos para o painel Resumo de Encargos
    * Fragmento de layout (tabela) para o painel Chamadas discriminadas
+
    ![Árvore de conteúdo da Web](assets/ic_web_content_tree_new.png)
 
 1. Repita as etapas 13 - 18 de [Criar comunicação interativa para o canal](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) da Web para inserir os hiperlinks **Pagar agora** e **Assinar** no canal da Web da Comunicação interativa.
