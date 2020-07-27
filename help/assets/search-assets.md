@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 8f8134d6c4fcc0ef54f9cc8298936c5c7d746c09
 workflow-type: tm+mt
-source-wordcount: '5830'
+source-wordcount: '5860'
 ht-degree: 5%
 
 ---
@@ -325,6 +325,8 @@ Use aspas de duplo em torno de palavras-chave para localizar ativos que contenha
 
 A descoberta de ativos depende da indexação do conteúdo do DAM, incluindo os metadados. A descoberta mais rápida e precisa de ativos depende da indexação otimizada e das configurações apropriadas. Consulte índice [de](/help/assets/performance-tuning-guidelines.md#search-indexes)pesquisa, query de [carvalho e indexação](/help/sites-deploying/queries-and-indexing.md)e práticas [](/help/sites-deploying/best-practices-for-queries-and-indexing.md)recomendadas.
 
+Para excluir ativos específicos dos resultados da pesquisa, use a `excludedPath` propriedade no índice Lucene.
+
 ### Pesquisa visual ou de semelhança {#configvisualsearch}
 
 A pesquisa visual usa marcação inteligente e requer [!DNL Experience Manager] 6.5.2.0 ou posterior. Após configurar a funcionalidade de marcação inteligente, siga estas etapas:
@@ -364,6 +366,8 @@ Para melhorar a velocidade da descoberta, o [!DNL Experience Manager Assets] ofe
 ### Extrair texto ao carregar ativos {#extracttextupload}
 
 Você pode configurar [!DNL Experience Manager] para extrair o texto dos ativos quando os usuários carregam ativos, como arquivos PSD ou PDF. [!DNL Experience Manager] indexa o texto extraído e ajuda os usuários a pesquisar nesses ativos com base no texto extraído. Consulte [fazer upload de ativos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+
+Se a extração de texto se tornar muito intensiva em recursos para sua implantação, considere [desativar a extração](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)de texto.
 
 ### Previsões personalizadas para filtrar os resultados da pesquisa {#custompredicates}
 
