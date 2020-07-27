@@ -1,8 +1,8 @@
 ---
 title: Minificação dos arquivos JavaScript
 seo-title: Minificação dos arquivos JavaScript
-description: Instruções para gerar código minified após as personalizações da área de trabalho do AEM Forms para otimizar os arquivos JS para a Web.
-seo-description: Instruções para gerar código minified após as personalizações da área de trabalho do AEM Forms para otimizar os arquivos JS para a Web.
+description: Instruções para gerar código minified após personalizações de espaço de trabalho do AEM Forms para otimizar os arquivos JS para a Web.
+seo-description: Instruções para gerar código minified após personalizações de espaço de trabalho do AEM Forms para otimizar os arquivos JS para a Web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
@@ -25,17 +28,19 @@ Para gerar um código minified para alterações semânticas, siga estas etapas.
 
    >[!NOTE]
    >
-   >Consulte [Introdução à área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) Personalizar formulários AEM para obter mais detalhes sobre os pacotes.
+   >Consulte [Introdução à área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) Personalizar AEM Forms para obter mais detalhes sobre os pacotes.
 
 1. Atualize os caminhos em `main.js` client-html/src/main/webapp/js para modelos/visualizações adicionados/atualizados.
 
    Por exemplo, adição de um novo modelo do Sharequeue, digamos mySharequeue, alterar:
 
-   ```
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
-   
-   To
-   
+   ```
+
+   Para
+
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
@@ -48,9 +53,11 @@ Para gerar um código minified para alterações semânticas, siga estas etapas.
                name="sharequeue"
                path="runtime/models/sharequeue.js"
                service="service"/>
-   
-   To
-   
+   ```
+
+   Para
+
+   ```xml
    <sharequeue
                name="sharequeue"
                path="runtime/myModels/mySharequeue.js"
