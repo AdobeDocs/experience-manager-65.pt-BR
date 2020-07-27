@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: e103640784f9d5b00a2a78cead6e904017ad7a53
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Os Start rápidos a seguir estão disponíveis para a API de serviço Converter 
 
 [Start rápido (modo SOAP): Converter um documento PDF em arquivos JPEG usando a API Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente t
 
 O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um documento PostScript chamado *Loan.ps*. (Consulte [Converter Documentos PDF em PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -148,7 +151,7 @@ O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um
 
 O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* em um conjunto de arquivos JPEG e os armazena no diretório C:\Adobe directory. Cada arquivo é nomeado `tempFile[index].jpg`, onde o primeiro arquivo de imagem é chamado de *tempFile0.jpg*. (Consulte [Converter Documentos PDF em formatos](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)de imagem.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
