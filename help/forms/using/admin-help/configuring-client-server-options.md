@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '10273'
+ht-degree: 0%
 
 ---
 
@@ -116,7 +119,7 @@ Com a autenticação estendida ativada, os usuários que abrem um documento prot
 1. Abra o arquivo em um editor e localize o nó AllowedUrls.
 1. No `AllowedUrls` nó, adicione as seguintes linhas: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
-   ```as3
+   ```xml
    <entry key="sso-l" value="/ssoexample/login.jsp"/>
    <entry key="sso-s" value="/ssoexample"/>
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
@@ -160,7 +163,7 @@ No exemplo a seguir, Key1 é a mais antiga das duas chaves principais, e Key2 é
 
 **Alterar a frequência de sobreposição da chave**
 
-Para fins de confidencialidade, quando você estiver usando documentos offline, a segurança do documento fornece uma opção automática de sobreposição de chave com um período de frequência padrão de 20 dias. Você pode alterar a frequência de sobreposição; no entanto, evite definir o valor abaixo de 14 dias, pois as pessoas podem ser impedidas de visualizar documentos offline e o desempenho do sistema pode ser afetado.
+Para fins de confidencialidade, quando você estiver usando documentos offline, a segurança do documento fornece uma opção automática de sobreposição de chave com um período de frequência padrão de 20 dias. Você pode alterar a frequência de sobreposição; no entanto, evite definir o valor em menos de 14 dias, pois as pessoas podem ser impedidas de visualizar documentos offline e o desempenho do sistema pode ser afetado.
 
 1. Na página Segurança do documento, clique em Configuração > Gerenciamento de chaves.
 1. Na caixa Frequência de sobreposição de chave, digite o número de dias para o período de sobreposição.
@@ -178,7 +181,7 @@ As chaves principais devem ser revertidas duas vezes antes de as chaves existent
 
 1. Na página Segurança do documento, clique em Configuração > Gerenciamento de chaves.
 1. Clique em Chaves de rolagem agora e em OK.
-1. Aguarde aproximadamente 10 minutos. A seguinte mensagem de registro é exibida no log do servidor: `Done RightsManagement key rollover for`*Não *`principals`. Onde* N *é o número de usuários no sistema de segurança do documento.
+1. Aguarde aproximadamente 10 minutos. A seguinte mensagem de registro é exibida no log do servidor: `Done RightsManagement key rollover for`*N *`principals`. Onde* N *é o número de usuários no sistema de segurança do documento.
 1. Clique em Chaves de rolagem agora e em OK.
 1. Aguarde aproximadamente 10 minutos.
 
@@ -450,7 +453,7 @@ Lembre-se do seguinte ao configurar marcas d&#39;água:
 * Somente a primeira página do PDF selecionado é usada como marca d&#39;água. Certifique-se de que as informações que você deseja que sejam exibidas como marca d&#39;água estejam disponíveis na primeira página.
 * Mesmo que você possa especificar o dimensionamento do documento PDF, considere o tamanho e o layout da página do PDF se planeja usá-lo como uma marca d&#39;água no cabeçalho, no rodapé ou nas margens.
 * Ao especificar o nome da fonte, insira o nome corretamente. Os formulários AEM substituem a fonte especificada se não estiver presente no computador cliente em que o documento é aberto.
-* Se você selecionou o texto como o conteúdo da marca d&#39;água, especificar a opção de dimensionamento como Ajustar à página não funcionará para páginas que têm largura diferente.
+* Se você selecionou o texto como o conteúdo da marca d&#39;água, especificar a opção de dimensionamento como Ajustar à página não funciona para páginas com largura diferente.
 * Ao especificar o posicionamento dos elementos de marca d&#39;água, certifique-se de que não haja mais de um elemento com o mesmo posicionamento. Se dois elementos de marca d&#39;água tiverem o mesmo posicionamento, como centro, eles aparecerão sobrepostos no documento e na ordem em que foram adicionados à marca d&#39;água.
 * Ao especificar o tamanho e o tipo da fonte, verifique se o comprimento do texto está completamente visível na página. O conteúdo do texto é revertido para novas linhas, de modo que o conteúdo da marca d&#39;água que você deseja que esteja presente nas margens pode se sobrepor nas áreas de conteúdo das páginas. Entretanto, se o documento for aberto no Acrobat 9, o texto além da linha única será truncado.
 
@@ -819,7 +822,7 @@ O Acrobat Reader DC Extension for Microsoft Office é um plug-in usado com os pr
 1. Exporte o arquivo de configuração de segurança do documento. (Consulte Editar [manualmente o arquivo](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)de configuração de segurança do documento.)
 1. Abra o arquivo de configuração em um editor e localize o `PolicyServer` nó. Adicione um `ClientVersionRules` nó como um filho imediato do `PolicyServer` nó, se ele não existir:
 
-   ```as3
+   ```java
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -855,6 +858,7 @@ O Acrobat Reader DC Extension for Microsoft Office é um plug-in usado com os pr
    * Apple OS X
    * Sun Solaris
    * HP-UX
+
    `SDKVersions` especifica a versão da API do cliente C++ de segurança do documento usada pelo aplicativo cliente. Por exemplo, `"8.2"`.
 
    `APPFamilies` é definida pela API do cliente.
@@ -875,7 +879,7 @@ O Acrobat Reader DC Extension for Microsoft Office é um plug-in usado com os pr
 
 Neste exemplo, o acesso a todos os clientes Windows é negado.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -893,7 +897,7 @@ Neste exemplo, o acesso a todos os clientes Windows é negado.
 
 Neste exemplo, acesso negado a My Application versão 3.0 e My Other Application versão 2.0. O mesmo URL de informações de negação é usado independentemente do motivo da negação.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -918,7 +922,7 @@ Neste exemplo, acesso negado a My Application versão 3.0 e My Other Application
 
 Neste exemplo, todas as solicitações de uma instalação do Microsoft PowerPoint 2007 ou Microsoft PowerPoint 2010 de extensões do Acrobat Reader DC para Microsoft Office são negadas.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -951,7 +955,7 @@ Por padrão, você pode especificar um máximo de cinco elementos em uma marca d
 
    A segunda entrada, *max elements* é o número máximo de elementos permitidos em uma marca d&#39;água. O padrão é 5.
 
-   ```as3
+   ```java
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -971,7 +975,7 @@ As seguintes alterações no config.xml desabilitam todos os links externos das 
 1. Abra o arquivo de configuração em um editor e localize o `DisplaySettings` nó.
 1. Para desativar todos os links externos, no `DisplaySettings` nó, adicione a seguinte entrada e salve o arquivo: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```as3
+   ```java
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -985,7 +989,7 @@ As seguintes alterações no config.xml habilitam o suporte TLS para o recurso d
 1. Abra o arquivo de configuração em um editor e localize o `DisplaySettings` nó.
 1. Localize o seguinte nó: `<node name="ExternalUser">`
 
-   ```as3
+   ```java
    <node name="ExternalUser">
    ```
 
@@ -1001,7 +1005,7 @@ As seguintes alterações no config.xml para desativar os pontos de extremidade 
 1. Exporte o arquivo de configuração de segurança do documento. (Consulte Editar [manualmente o arquivo](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)de configuração de segurança do documento.)
 1. Abra o arquivo de configuração em um editor e localize o seguinte nó: `<node name="DRM">`
 
-   ```as3
+   ```java
    <node name="DRM">
    ```
 
@@ -1011,7 +1015,7 @@ As seguintes alterações no config.xml para desativar os pontos de extremidade 
 
 1. Para desativar pontos de extremidade SOAP para documentos de segurança de documento, defina o atributo value como **false**.
 
-   ```as3
+   ```java
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
