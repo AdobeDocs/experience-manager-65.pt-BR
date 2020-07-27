@@ -1,6 +1,6 @@
 ---
-title: Protegendo documentos com políticas
-seo-title: Protegendo documentos com políticas
+title: Protegendo Documentos com políticas
+seo-title: Protegendo Documentos com políticas
 description: 'null'
 seo-description: 'null'
 uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
@@ -10,20 +10,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '15466'
+ht-degree: 0%
 
 ---
 
 
-# Protegendo documentos com políticas {#protecting-documents-with-policies}
+# Protegendo Documentos com políticas {#protecting-documents-with-policies}
 
-**Sobre o Document Security Service**
+**Sobre o Serviço de Segurança do Documento**
 
-O serviço do Document Security permite que os usuários apliquem dinamicamente configurações de confidencialidade a documentos Adobe PDF e mantenham o controle sobre os documentos, independentemente do tamanho da distribuição.
+O serviço de Segurança do Documento permite que os usuários apliquem dinamicamente configurações de confidencialidade a documentos Adobe PDF e mantenham o controle dos documentos, independentemente da sua distribuição.
 
-O serviço Document Security impede que as informações se espalhem além do alcance do usuário, permitindo que os usuários mantenham o controle sobre como os destinatários usam o documento PDF protegido por política. Um usuário pode especificar quem pode abrir um documento, limitar como ele pode usá-lo e monitorar o documento após sua distribuição. Um usuário também pode controlar dinamicamente o acesso a um documento protegido por política e pode até mesmo revogar dinamicamente o acesso ao documento.
+O serviço de Segurança do Documento impede que as informações se espalhem além do alcance do usuário, permitindo que os usuários mantenham o controle sobre como os recipient usam o documento PDF protegido por política. Um usuário pode especificar quem pode abrir um documento, limitar como ele pode usá-lo e monitorar o documento depois que ele é distribuído. Um usuário também pode controlar dinamicamente o acesso a um documento protegido por política e pode até mesmo revogar dinamicamente o acesso ao documento.
 
-O serviço Document Security também protege outros tipos de arquivos, como arquivos do Microsoft Word (arquivos DOC). Você pode usar a API do Document Security Client para trabalhar com esses tipos de arquivos. As seguintes versões são suportadas:
+O serviço de Segurança do Documento também protege outros tipos de arquivos, como arquivos do Microsoft Word (arquivos DOC). Você pode usar a API do cliente de segurança do Documento para trabalhar com esses tipos de arquivos. As seguintes versões são suportadas:
 
 * Arquivos do Microsoft Office 2003 (DOC, XLS, arquivos PPT)
 * Arquivos do Microsoft Office 2007 (arquivos DOCX, XLSX, PPTX)
@@ -31,42 +34,42 @@ O serviço Document Security também protege outros tipos de arquivos, como arqu
 
 Para maior clareza, as duas seções a seguir discutem como trabalhar com documentos do Word:
 
-* [Aplicar Políticas a Documentos do Word](protecting-documents-policies.md#applying-policies-to-word-documents)
-* [Removendo Políticas de Documentos do Word](protecting-documents-policies.md#removing-policies-from-word-documents)
+* [Aplicar políticas a Documentos do Word](protecting-documents-policies.md#applying-policies-to-word-documents)
+* [Remover Políticas de Documentos do Word](protecting-documents-policies.md#removing-policies-from-word-documents)
 
-É possível realizar essas tarefas usando o serviço Document Security:
+É possível realizar essas tarefas usando o serviço de Segurança do Documento:
 
 * Criar políticas. Para obter informações, consulte [Criação de políticas](protecting-documents-policies.md#creating-policies).
 * Modificar políticas. Para obter informações, consulte [Modificando Políticas](protecting-documents-policies.md#modifying-policies).
 * Excluir políticas. Para obter informações, consulte [Excluindo Políticas](protecting-documents-policies.md#deleting-policies).
-* Aplicar políticas a documentos PDF. Para obter informações, consulte [Aplicar políticas a documentos](protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.
-* Remova políticas de documentos PDF. Para obter informações, consulte [Remoção de políticas de documentos](protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.
-* Inspecione documentos protegidos por política. Para obter informações, consulte [Inspeção de documentos](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protegidos por política.
-* Revogar o acesso a documentos PDF. Para obter informações, consulte [Revogação do acesso a documentos](protecting-documents-policies.md#revoking-access-to-documents).
-* Reinstale o acesso aos documentos revogados. Para obter informações, consulte [Reposição do acesso a documentos](protecting-documents-policies.md#reinstating-access-to-revoked-documents)Revogados.
+* Aplicar políticas a documentos PDF. Para obter informações, consulte [Aplicar políticas a Documentos](protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.
+* Remova políticas de documentos PDF. Para obter informações, consulte [Remoção de políticas de Documentos](protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.
+* Inspecione documentos protegidos por política. Para obter informações, consulte [Inspeção de Documentos](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protegidos por política.
+* Revogar o acesso a documentos PDF. Para obter informações, consulte [Revogação do acesso a Documentos](protecting-documents-policies.md#revoking-access-to-documents).
+* Reinstale o acesso aos documentos revogados. Para obter informações, consulte [Reposição do acesso a Documentos](protecting-documents-policies.md#reinstating-access-to-revoked-documents)Revogados.
 * Criar marcas d&#39;água. Para obter informações, consulte [Criação de marcas d&#39;água](protecting-documents-policies.md#creating-watermarks).
-* Procure eventos. Para obter informações, consulte [Pesquisando eventos](protecting-documents-policies.md#searching-for-events).
+* Procure eventos. Para obter informações, consulte [Procurando Eventos](protecting-documents-policies.md#searching-for-events).
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Criando Políticas {#creating-policies}
 
-Você pode criar políticas de forma programática usando a API Java do Document Security ou a API de serviço da Web. Uma *política* é uma coleção de informações que inclui configurações de segurança do documento, usuários autorizados e direitos de uso. Você pode criar e salvar qualquer número de políticas, usando as configurações de segurança apropriadas para diferentes situações e usuários.
+Você pode criar políticas programaticamente usando a API Java de segurança do Documento ou a API de serviço da Web. Uma *política* é uma coleção de informações que inclui configurações de segurança do documento, usuários autorizados e direitos de uso. Você pode criar e salvar qualquer número de políticas, usando as configurações de segurança apropriadas para diferentes situações e usuários.
 
 As políticas permitem executar estas tarefas:
 
-* Especifique os indivíduos que podem abrir o documento. Os destinatários podem pertencer à sua organização ou ser externos a ela.
-* Especifique como os destinatários podem usar o documento. Você pode restringir o acesso a diferentes recursos do Acrobat e do Adobe Reader. Esses recursos incluem a capacidade de imprimir e copiar texto, adicionar assinaturas e adicionar comentários a um documento.
+* Especifique os indivíduos que podem abrir o documento. Os Recipient podem pertencer ou ser externos à sua organização.
+* Especifique como os recipient podem usar o documento. Você pode restringir o acesso a diferentes recursos do Acrobat e do Adobe Reader. Esses recursos incluem a capacidade de imprimir e copiar texto, adicionar assinaturas e adicionar comentários a um documento.
 * Altere as configurações de acesso e segurança a qualquer momento, mesmo depois de distribuir o documento protegido por política.
-* Monitore o uso do documento após distribuí-lo. Você pode ver como o documento está sendo usado e quem o está usando. Por exemplo, você pode descobrir quando alguém abriu o documento.
+* Monitore o uso do documento depois de distribuí-lo. Você pode ver como o documento está sendo usado e quem o está usando. Por exemplo, você pode descobrir quando alguém abriu o documento.
 
-### Criar uma política usando serviços da Web {#creating-a-policy-using-web-services}
+### Criação de uma política usando serviços da Web {#creating-a-policy-using-web-services}
 
-Ao criar uma política usando a API de serviço da Web, consulte um arquivo XML PDF (Portable Document Rights Language) que descreve a política. As permissões de política e o principal são definidos no documento PDRL. O documento XML a seguir é um exemplo de um documento PDRL.
+Ao criar uma política usando a API de serviço da Web, consulte um arquivo XML da Linguagem de Direitos do Documento do Portátil (PDRL) que descreve a política. As permissões de política e o principal são definidos no documento PDRL. O documento XML a seguir é um exemplo de um documento PDRL.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  <Policy PolicyInstanceVersion="1" PolicyID="5DA3F847-DE76-F9CC-63EA-49A8D59154DE" PolicyCreationTime="2004-08-30T00:02:28.294+00:00" PolicyType="1" PolicySchemaVersion="1.0" PolicyName="SDK Test Policy -4344050357301573237" PolicyDescription="An SDK Test policy" xmlns="https://www.adobe.com/schema/1.0/pdrl">
        <PolicyEntry>
@@ -130,14 +133,14 @@ Ao criar uma política usando a API de serviço da Web, consulte um arquivo XML 
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
 Para criar uma política, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Defina os atributos da política.
 1. Criar uma entrada de política.
 1. Registre a política.
@@ -148,30 +151,30 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 
-* adobe-rights-management-client.jar
-* namespace.jar (se o AEM Forms estiver implantado em JBoss)
-* jaxb-api.jar (se o AEM Forms for implantado em JBoss)
-* jaxb-impl.jar (se o AEM Forms for implantado em JBoss)
-* jaxb-libs.jar (se o AEM Forms for implantado em JBoss)
-* jaxb-xjc.jar (se o AEM Forms for implantado em JBoss)
-* relaxngDatatype.jar (se o AEM Forms for implantado em JBoss)
-* xsdlib.jar (se o AEM Forms estiver implantado em JBoss)
+* adobe-rightsmanagement-client.jar
+* namespace.jar (se AEM Forms forem implantados em JBoss)
+* jaxb-api.jar (se os AEM Forms forem implantados em JBoss)
+* jaxb-impl.jar (se os AEM Forms forem implantados em JBoss)
+* jaxb-libs.jar (se os AEM Forms forem implantados em JBoss)
+* jaxb-xjc.jar (se os AEM Forms forem implantados em JBoss)
+* relaxngDatatype.jar (se os AEM Forms forem implantados em JBoss)
+* xsdlib.jar (se os AEM Forms forem implantados em JBoss)
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
-* jbossall-client.jar (use um arquivo JAR diferente se o AEM Forms não estiver implantado em JBoss)
+* jbossall-client.jar (use um arquivo JAR diferente se os AEM Forms não estiverem implantados em JBoss)
 
 Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação de serviço do Document Security, crie um objeto cliente do serviço do Document Security.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, crie um objeto cliente de serviço de Segurança do Documento.
 
 **Definir os atributos da política**
 
 Para criar uma política, defina os atributos da política. Um atributo obrigatório é o nome da política. Os nomes de políticas devem ser exclusivos para cada conjunto de políticas. Um conjunto de políticas é simplesmente uma coleção de políticas. Pode haver duas políticas com o mesmo nome se as políticas pertencerem a conjuntos de políticas separados. No entanto, duas políticas em um único conjunto de políticas não podem ter o mesmo nome de política.
 
-Outro atributo útil a ser definido é o período de validade. Um período de validade é o período durante o qual um documento protegido por política é acessível aos destinatários autorizados. Se você não definir esse atributo, a política sempre será válida.
+Outro atributo útil a ser definido é o período de validade. Um período de validade é o período durante o qual um documento protegido por política é acessível aos recipient autorizados. Se você não definir esse atributo, a política sempre será válida.
 
 Um período de validade pode ser definido como uma destas opções:
 
@@ -180,13 +183,13 @@ Um período de validade pode ser definido como uma destas opções:
 * Um intervalo de datas específico para o qual o documento está acessível
 * Sempre válido
 
-Você pode especificar apenas uma data de início, o que resulta na política válida após a data de início. Se você especificar apenas uma data final, a política será válida até a data final. No entanto, uma exceção é lançada se uma data inicial e uma data final não estiverem definidas.
+Você pode especificar apenas uma data de start, o que resulta na política válida após a data de start. Se você especificar apenas uma data de término, a política será válida até a data de término. No entanto, uma exceção é lançada se uma data de start e uma data de término não estiverem definidas.
 
 Ao definir atributos que pertencem a uma política, também é possível definir configurações de criptografia. Essas configurações de criptografia ocorrem quando a política é aplicada a um documento. Você pode especificar os seguintes valores de criptografia:
 
 * **AES256**: Representa o algoritmo de criptografia AES com uma chave de 256 bits.
 * **AES128**: Representa o algoritmo de criptografia AES com uma chave de 128 bits.
-* **** NoEncryption: Não representa criptografia.
+* **NoEncryption:** Não representa criptografia.
 
 Ao especificar a `NoEncryption` opção, não é possível definir a `PlaintextMetadata` opção como `false`. Se você tentar fazer isso, uma exceção é lançada.
 
@@ -198,11 +201,11 @@ Ao especificar a `NoEncryption` opção, não é possível definir a `PlaintextM
 
 Uma entrada de política anexa os principais, que são grupos e usuários, e permissões a uma política. Uma política deve ter pelo menos uma entrada na política. Considere, por exemplo, que você executa estas tarefas:
 
-* Crie e registre uma entrada de política que permita que um grupo exiba apenas um documento quando estiver online e proíba que os destinatários o copiem.
+* Crie e registre uma entrada de política que permita que um grupo apenas visualização um documento enquanto estiver on-line e proíba que recipient o copiem.
 * Anexe a entrada de política à política.
 * Proteja um documento com a política usando o Acrobat.
 
-Essas ações fazem com que os destinatários só possam exibir o documento online e não possam copiá-lo. O documento permanece protegido até que a segurança seja removida dele.
+Essas ações resultam em recipient que só podem visualização o documento on-line e não podem copiá-lo. O documento permanece protegido até que a segurança seja removida dele.
 
 **Registrar a política**
 
@@ -210,13 +213,13 @@ Uma nova política deve ser registrada antes de poder ser usada. Depois de regis
 
 ### Criar uma política usando a API Java {#create-a-policy-using-the-java-api}
 
-Crie uma política usando a API do Document Security (Java):
+Crie uma política usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `DocumentSecurityClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -247,21 +250,22 @@ Crie uma política usando a API do Document Security (Java):
 
       * O `Policy` objeto que representa a política a ser registrada.
    * Um valor de string que representa o conjunto de políticas ao qual a política pertence.
+
    Se você usar uma conta de administrador de formulários AEM nas configurações de conexão para criar o `DocumentSecurityClient` objeto, especifique o nome do conjunto de políticas ao chamar o `registerPolicy` método. Se você passar um `null` valor para o conjunto de políticas, a política será criada no conjunto de políticas de administradores *Minhas políticas* .
 
-   Se você usar um usuário do Document Security nas configurações de conexão, poderá invocar o `registerPolicy` método sobrecarregado que aceita somente a política. Ou seja, você não precisa especificar o nome do conjunto de políticas. No entanto, a política é adicionada ao conjunto de políticas chamado *Minhas políticas*. Se você não quiser adicionar a nova política a esse conjunto de políticas, especifique um nome de conjunto de políticas ao chamar o `registerPolicy` método.
+   Se você usar um usuário do Documento Security nas configurações de conexão, poderá invocar o `registerPolicy` método sobrecarregado que aceita apenas a política. Ou seja, você não precisa especificar o nome do conjunto de políticas. No entanto, a política é adicionada ao conjunto de políticas chamado *Minhas políticas*. Se você não quiser adicionar a nova política a esse conjunto de políticas, especifique um nome para o conjunto de políticas ao chamar o `registerPolicy` método.
 
    >[!NOTE]
    >
    >Ao criar uma política, consulte um conjunto de políticas existente. Se você especificar um conjunto de políticas que não existe, uma exceção será lançada.
 
-Para obter exemplos de código usando o serviço Document Security, consulte:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte:
 
-* &quot;Início rápido (modo SOAP): Criar uma política usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Criar uma política usando a API Java&quot;
 
 ### Criar uma política usando a API de serviço da Web {#create-a-policy-using-the-web-service-api}
 
-Crie uma política usando a API do Document Security (serviço da Web):
+Crie uma política usando a API de segurança do Documento (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -269,9 +273,9 @@ Crie uma política usando a API do Document Security (serviço da Web):
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `DocumentSecurityServiceClient` objeto usando seu construtor padrão.
    * Crie um `DocumentSecurityServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -292,11 +296,11 @@ Crie uma política usando a API do Document Security (serviço da Web):
    * Defina a descrição da política atribuindo um valor de string ao membro de `PolicySpec` dados do `description` objeto.
    * Defina o conjunto de políticas ao qual a política pertencerá atribuindo um valor de string ao membro de `PolicySpec` dados do `policySetName` objeto. É necessário especificar um nome de conjunto de políticas existente. (Você pode especificar `null` para esse valor de parâmetro que resulta na adição da política às *Minhas políticas*.)
    * Defina o período de empréstimo offline da política atribuindo um valor inteiro ao membro de `PolicySpec` dados do `offlineLeasePeriod` objeto.
-   * Defina o membro de `PolicySpec` dados do `policyXml` objeto com um valor de string que representa dados XML PDF. Para executar esta tarefa, crie um objeto .NET `StreamReader` usando seu construtor. Passe o local de um arquivo XML PDF que representa a política para o `StreamReader` construtor. Em seguida, chame o método do `StreamReader` objeto `ReadLine` e atribua o valor de retorno a uma variável de string. Iterar pelo `StreamReader` objeto até que o `ReadLine` método retorne nulo. Atribua a variável de string ao membro de `PolicySpec` dados do `policyXml` objeto.
+   * Defina o membro de `PolicySpec` dados do `policyXml` objeto com um valor de string que representa dados XML PDF. Para executar essa tarefa, crie um objeto .NET `StreamReader` usando seu construtor. Passe o local de um arquivo XML PDRL que representa a política para o `StreamReader` construtor. Em seguida, chame o método do `StreamReader` objeto `ReadLine` e atribua o valor de retorno a uma variável de string. Iterar pelo `StreamReader` objeto até que o `ReadLine` método retorne nulo. Atribua a variável de string ao membro de `PolicySpec` dados do `policyXml` objeto.
 
 1. Criar uma entrada de política.
 
-   Não é necessário criar uma entrada de política ao criar uma política usando a API de serviço da Web do Document Security. A entrada de política é definida no documento PDRL.
+   Não é necessário criar uma entrada de política ao criar uma política usando a API de serviço da Web do Documento Security. A entrada de política é definida no documento PDRL.
 
 1. Registre a política.
 
@@ -304,37 +308,38 @@ Crie uma política usando a API do Document Security (serviço da Web):
 
    * O `PolicySpec` objeto que representa a política a ser registrada.
    * Um valor de string que representa o conjunto de políticas ao qual a política pertence. Você pode especificar um `null` valor que resulta na adição da política ao conjunto de políticas *MyPolicy* .
+
    Se você usar uma conta de administrador de formulários AEM nas configurações de conexão para criar o `DocumentSecurityClient` objeto, especifique o nome do conjunto de políticas ao chamar o `registerPolicy` método.
 
-   Se você usar um usuário do Document Security nas configurações de conexão, poderá invocar o `registerPolicy` método sobrecarregado que aceita somente a política. Ou seja, você não precisa especificar o nome do conjunto de políticas. No entanto, a política é adicionada ao conjunto de políticas chamado *Minhas políticas*. Se você não quiser adicionar a nova política a esse conjunto de políticas, especifique um nome de conjunto de políticas ao chamar o `registerPolicy` método.
+   Se você usar um usuário do Documento SecurityDocument Security nas configurações de conexão, poderá invocar o `registerPolicy` método sobrecarregado que aceita somente a política. Ou seja, você não precisa especificar o nome do conjunto de políticas. No entanto, a política é adicionada ao conjunto de políticas chamado *Minhas políticas*. Se você não quiser adicionar a nova política a esse conjunto de políticas, especifique um nome para o conjunto de políticas ao chamar o `registerPolicy` método.
 
    >[!NOTE]
    >
    >Ao criar uma política e especificar um conjunto de políticas, especifique um conjunto de políticas existente. Se você especificar um conjunto de políticas que não existe, uma exceção será lançada.
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Criar uma política usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Criar uma política usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Criar uma política usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Criar uma política usando a API de serviço da Web&quot;
 
 ## Modificando Políticas {#modifying-policies}
 
-É possível modificar uma política existente usando a API Java do Document Security ou a API de serviço da Web. Para fazer alterações em uma política existente, recupere-a, modifique-a e atualize a política no servidor. Por exemplo, suponha que você recupere uma política existente e estenda seu período de validade. Antes que a alteração entre em vigor, é necessário atualizar a política.
+É possível modificar uma política existente usando a API Java de segurança do Documento ou a API de serviço da Web. Para fazer alterações em uma política existente, recupere-a, modifique-a e atualize a política no servidor. Por exemplo, suponha que você recupere uma política existente e estenda seu período de validade. Antes que a alteração entre em vigor, é necessário atualizar a política.
 
 Você pode modificar uma política quando os requisitos de negócios mudam e a política não reflete mais esses requisitos. Em vez de criar uma nova política, basta atualizar uma política existente.
 
-Para modificar atributos de política usando um serviço da Web (por exemplo, usando classes proxy Java criadas com JAX-WS), é necessário garantir que a política seja registrada no serviço do Document Security. Em seguida, é possível fazer referência à política existente usando o `PolicySpec.getPolicyXml` método e modificar os atributos da política usando os métodos aplicáveis. Por exemplo, você pode modificar o período de empréstimo offline chamando o `PolicySpec.setOfflineLeasePeriod` método.
+Para modificar atributos de política usando um serviço da Web (por exemplo, usando classes proxy Java que foram criadas com JAX-WS), é necessário garantir que a política seja registrada com o serviço de Segurança do Documento. Em seguida, é possível fazer referência à política existente usando o `PolicySpec.getPolicyXml` método e modificar os atributos da política usando os métodos aplicáveis. Por exemplo, você pode modificar o período de empréstimo offline chamando o `PolicySpec.setOfflineLeasePeriod` método.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
 Para modificar uma política existente, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Recuperar uma política existente.
 1. Alterar atributos de políticas.
 1. Atualize a política.
@@ -343,9 +348,9 @@ Para modificar uma política existente, execute as seguintes etapas:
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação do serviço Document Security, é necessário criar um objeto cliente do serviço Document Security. Se você estiver usando a API Java, crie um `RightsManagementClient` objeto. Se você estiver usando a API de serviço da Web do Document Security, crie um `RightsManagementServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, você deve criar um objeto cliente de serviço de Segurança do Documento. Se você estiver usando a API Java, crie um `RightsManagementClient` objeto. Se você estiver usando a API de serviço da Web do Documento Security, crie um `RightsManagementServiceService` objeto.
 
 **Recuperar uma política existente**
 
@@ -355,7 +360,7 @@ Antes de executar programaticamente uma operação do serviço Document Security
 
 Para modificar uma política, modifique o valor dos atributos de política. O único atributo de política que não pode ser alterado é o atributo name. Por exemplo, para alterar o período de empréstimo offline da política, é possível modificar o valor do atributo do período de empréstimo offline da política.
 
-Ao modificar o período de empréstimo offline de uma política usando um serviço da Web, o `offlineLeasePeriod` campo na `PolicySpec` interface é ignorado. Para atualizar o período de empréstimo offline, modifique o `OfflineLeasePeriod` elemento no documento XML PDF. Em seguida, consulte o documento XML PDF atualizado usando o membro de `PolicySpec` dados da `policyXML` interface.
+Ao modificar o período de empréstimo offline de uma política usando um serviço da Web, o `offlineLeasePeriod` campo na `PolicySpec` interface é ignorado. Para atualizar o período de empréstimo offline, modifique o `OfflineLeasePeriod` elemento no documento XML PDRL. Em seguida, consulte o documento XML PDF atualizado usando o membro de `PolicySpec` dados da `policyXML` interface.
 
 >[!NOTE]
 >
@@ -363,17 +368,17 @@ Ao modificar o período de empréstimo offline de uma política usando um servi�
 
 **Atualizar a política**
 
-Antes que as alterações feitas em uma política entrem em vigor, é necessário atualizar a política com o serviço do Document Security. As alterações nas políticas que protegem documentos serão atualizadas na próxima vez que o documento protegido por política for sincronizado com o serviço Document Security.
+Antes que as alterações feitas em uma política entrem em vigor, é necessário atualizar a política com o serviço de Segurança do Documento. As alterações nas políticas que protegem documentos serão atualizadas na próxima vez que o documento protegido por política for sincronizado com o serviço de Segurança do Documento.
 
 ### Modificar políticas existentes usando a API Java {#modify-existing-policies-using-the-java-api}
 
-Modifique uma política existente usando a API do Document Security (Java):
+Modifique uma política existente usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `RightsManagementClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -388,7 +393,7 @@ Modifique uma política existente usando a API do Document Security (Java):
 
 1. Defina os atributos da política.
 
-   Altere os atributos da política para atender às suas necessidades comerciais. Por exemplo, para alterar o período de empréstimo offline da política, chame o método do `Policy` objeto `setOfflineLeasePeriod` .
+   Altere os atributos da política para atender às suas necessidades de negócios. Por exemplo, para alterar o período de empréstimo offline da política, chame o método do `Policy` objeto `setOfflineLeasePeriod` .
 
 1. Atualize a política.
 
@@ -396,11 +401,11 @@ Modifique uma política existente usando a API do Document Security (Java):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte Início rápido (modo SOAP): Modificação de uma política usando a seção da API Java.
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte o Start rápido (modo SOAP): Modificação de uma política usando a seção da API Java.
 
 ### Modificar políticas existentes usando a API de serviço da Web {#modify-existing-policies-using-the-web-service-api}
 
-Modifique uma política existente usando a API do Document Security (serviço da Web):
+Modifique uma política existente usando a API de segurança do Documento (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -408,9 +413,9 @@ Modifique uma política existente usando a API do Document Security (serviço da
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `RightsManagementServiceClient` objeto usando seu construtor padrão.
    * Crie um `RightsManagementServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -433,7 +438,7 @@ Modifique uma política existente usando a API do Document Security (serviço da
 
 1. Defina os atributos da política.
 
-   Altere os atributos da política para atender às suas necessidades comerciais.
+   Altere os atributos da política para atender às suas necessidades de negócios.
 
 1. Atualize a política.
 
@@ -441,48 +446,48 @@ Modifique uma política existente usando a API do Document Security (serviço da
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Modificando uma política usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Modificando uma política usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Modificando uma política usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Modificando uma política usando a API de serviço da Web&quot;
 
 ## Excluindo Políticas {#deleting-policies}
 
-É possível excluir uma política existente usando a API Java do Document Security ou a API de serviço da Web. Depois que uma política é excluída, ela não pode mais ser usada para proteger documentos. No entanto, os documentos protegidos por política que estão usando a política ainda são protegidos. Você pode excluir uma política quando uma nova estiver disponível.
+Você pode excluir uma política existente usando a API Java de segurança do Documento ou a API de serviço da Web. Depois que uma política é excluída, ela não pode mais ser usada para proteger documentos. No entanto, documentos protegidos por política que estão usando a política ainda são protegidos. Você pode excluir uma política quando uma nova estiver disponível.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
 Para excluir uma política existente, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Exclua a política.
 
 **Incluir arquivos de projeto**
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação do serviço Document Security, é necessário criar um objeto cliente do serviço Document Security. Se você estiver usando a API Java, crie um `RightsManagementClient` objeto. Se você estiver usando a API de serviço da Web do Document Security, crie um `RightsManagementServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, você deve criar um objeto cliente de serviço de Segurança do Documento. Se você estiver usando a API Java, crie um `RightsManagementClient` objeto. Se você estiver usando a API de serviço da Web do Documento Security, crie um `RightsManagementServiceService` objeto.
 
 **Excluir a política**
 
-Para excluir uma política, especifique a política a ser excluída e o conjunto de políticas ao qual a política pertence. O usuário cujas configurações são usadas para chamar o AEM Forms deve ter permissão para excluir a política; caso contrário, ocorrerá uma exceção. Da mesma forma, se você tentar excluir uma política que não existe, ocorrerá uma exceção.
+Para excluir uma política, especifique a política a ser excluída e o conjunto de políticas ao qual a política pertence. O usuário cujas configurações são usadas para chamar AEM Forms deve ter permissão para excluir a política; caso contrário, ocorrerá uma exceção. Da mesma forma, se você tentar excluir uma política que não existe, ocorrerá uma exceção.
 
 ### Excluir políticas usando a API Java {#delete-policies-using-the-java-api}
 
-Exclua uma política usando a API do Document Security (Java):
+Exclua uma política usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `RightsManagementClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -497,13 +502,13 @@ Exclua uma política usando a API do Document Security (Java):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (modo SOAP): Excluir uma política usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Excluindo uma política usando a API Java&quot;
 
 ### Excluir políticas usando a API de serviço da Web {#delete-policies-using-the-web-service-api}
 
-Exclua uma política usando a API do Document Security (serviço da Web):
+Exclua uma política usando a API de segurança do Documento (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -511,9 +516,9 @@ Exclua uma política usando a API do Document Security (serviço da Web):
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `RightsManagementServiceClient` objeto usando seu construtor padrão.
    * Crie um `RightsManagementServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -536,44 +541,44 @@ Exclua uma política usando a API do Document Security (serviço da Web):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Excluindo uma política usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Excluindo uma política usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Excluindo uma política usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Excluindo uma política usando a API de serviço da Web&quot;
 
-## Aplicar políticas a documentos PDF {#applying-policies-to-pdf-documents}
+## Aplicar políticas a Documentos PDF {#applying-policies-to-pdf-documents}
 
-É possível aplicar uma política a um documento PDF para proteger o documento. Ao aplicar uma política a um documento PDF, você restringe o acesso ao documento. Não é possível aplicar uma política a um documento se ele já estiver protegido por uma política.
+É possível aplicar uma política a um documento PDF para proteger o documento. Ao aplicar uma política a um documento PDF, você restringe o acesso ao documento. Não é possível aplicar uma política a um documento se o documento já estiver protegido por uma política.
 
 Enquanto o documento estiver aberto, você também pode restringir o acesso aos recursos do Acrobat e do Adobe Reader, incluindo a capacidade de imprimir e copiar texto, fazer alterações e adicionar assinaturas e comentários a um documento. Além disso, você pode revogar um documento PDF protegido por política quando não quiser mais que os usuários acessem o documento.
 
-Você pode monitorar o uso de um documento protegido por política depois de distribuí-lo. Ou seja, você pode ver como o documento está sendo usado e quem o está usando. Por exemplo, você pode descobrir quando alguém abriu o documento.
+Você pode monitorar o uso de um documento protegido por política depois de distribuí-lo. Ou seja, vocês podem ver como o documento está sendo usado e quem está usando. Por exemplo, você pode descobrir quando alguém abriu o documento.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-3}
 
 Para aplicar uma política a um documento PDF, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
-1. Recuperar um documento PDF ao qual uma política é aplicada.
-1. Aplicar uma política existente ao documento PDF.
+1. Crie um objeto da API do Documento Security Client.
+1. Recupere um documento PDF ao qual uma política é aplicada.
+1. Aplique uma política existente ao documento PDF.
 1. Salve o documento PDF protegido por política.
 
 **Incluir arquivos de projeto**
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto da API do Document Security Client**
+**Criar um objeto da API do Cliente do Documento Security**
 
-Antes de executar programaticamente uma operação de serviço do Document Security, crie um objeto cliente do serviço do Document Security. Se você estiver usando a API Java, crie um `DocumentSecurityClient` objeto. Se você estiver usando a API de serviço da Web do Document Security, crie um `DocumentSecurityServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, crie um objeto cliente de serviço de Segurança do Documento. Se você estiver usando a API Java, crie um `DocumentSecurityClient` objeto. Se você estiver usando a API de serviço da Web do Documento Security, crie um `DocumentSecurityServiceService` objeto.
 
 **Recuperar um documento PDF**
 
-Você pode recuperar um documento PDF para aplicar uma política. Depois de aplicar uma política ao documento PDF, os usuários são restritos ao usar o documento. Por exemplo, se a política não permitir que o documento seja aberto offline, os usuários deverão estar online para abrir o documento.
+É possível recuperar um documento PDF para aplicar uma política. Depois de aplicar uma política ao documento PDF, os usuários são restringidos ao usar o documento. Por exemplo, se a política não permitir que o documento seja aberto offline, os usuários devem estar online para abrir o documento.
 
 **Aplicar uma política existente ao documento PDF**
 
@@ -581,35 +586,35 @@ Para aplicar uma política a um documento PDF, consulte uma política existente 
 
 **Salvar o documento PDF**
 
-Depois que o serviço Document Security aplicar uma política a um documento PDF, você poderá salvar o documento PDF protegido por política como um arquivo PDF.
+Depois que o serviço de Segurança do Documento aplicar uma política a um documento PDF, é possível salvar o documento PDF protegido por política como um arquivo PDF.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Revogando o acesso aos documentos](protecting-documents-policies.md#revoking-access-to-documents)
+[Revogação do acesso a Documentos](protecting-documents-policies.md#revoking-access-to-documents)
 
 ### Aplicar uma política a um documento PDF usando a API Java {#apply-a-policy-to-a-pdf-document-using-the-java-api}
 
-Aplique uma política a um documento PDF usando a API do Document Security (Java):
+Aplique uma política a um documento PDF usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `RightsManagementClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
 
-1. Recuperar um documento PDF.
+1. Recupere um documento PDF.
 
    * Crie um `java.io.FileInputStream` objeto que represente o documento PDF usando seu construtor. Passe um valor de string que especifica o local do documento PDF.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
 
-1. Aplicar uma política existente ao documento PDF.
+1. Aplique uma política existente ao documento PDF.
 
    * Crie um `DocumentManager` objeto chamando o `RightsManagementClient` método do `getDocumentManager` objeto.
    * Aplique uma política ao documento PDF chamando o método do `DocumentManager` objeto `protectDocument` e transmitindo os seguintes valores:
@@ -621,6 +626,7 @@ Aplique uma política a um documento PDF usando a API do Document Security (Java
       * Um valor de string que representa o nome do domínio do gerenciador de usuários do usuário que é o editor do documento. Esse valor de parâmetro é opcional e pode ser nulo (se esse parâmetro for nulo, o próximo valor de parâmetro deverá ser nulo).
       * Um valor de string que representa o nome canônico do usuário do gerenciador de usuários que é o editor do documento. Esse valor de parâmetro é opcional e pode ser `null` (se esse parâmetro for nulo, o valor de parâmetro anterior deve ser `null`).
       * Uma `com.adobe.livecycle.rightsmanagement.Locale` que representa a localidade usada para selecionar o modelo do MS Office. Esse valor de parâmetro é opcional e não é usado para documentos PDF. Para proteger um documento PDF, especifique `null`.
+
       O `protectDocument` método retorna um `RMSecureDocumentResult` objeto que contém o documento PDF protegido por política.
 
 
@@ -628,24 +634,24 @@ Aplique uma política a um documento PDF usando a API do Document Security (Java
 
    * Chame o `RMSecureDocumentResult` `getProtectedDoc` método do objeto para obter o documento PDF protegido por política. Esse método retorna um `com.adobe.idp.Document` objeto.
    * Crie um `java.io.File` objeto e verifique se a extensão do arquivo é PDF.
-   * Chame o `com.adobe.idp.Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto retornado pelo `getProtectedDoc` método).
+   * Chame o `com.adobe.idp.Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `getProtectedDoc` método).
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (modo EJB): Aplicar uma política a um documento PDF usando a API Java&quot;
-* &quot;Início rápido (modo SOAP): Aplicar uma política a um documento PDF usando a API Java&quot;
+* &quot;Start rápido (modo EJB): Aplicar uma política a um documento PDF usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Aplicar uma política a um documento PDF usando a API Java&quot;
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Aplicar uma política a um documento PDF usando a API de serviço da Web {#apply-a-policy-to-a-pdf-document-using-the-web-service-api}
 
-Aplique uma política a um documento PDF usando a API do Document Security (serviço da Web):
+Aplique uma política a um documento PDF usando a Documento Security API (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -653,9 +659,9 @@ Aplique uma política a um documento PDF usando a API do Document Security (serv
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `RightsManagementServiceClient` objeto usando seu construtor padrão.
    * Crie um `RightsManagementServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de Formulários (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -669,15 +675,15 @@ Aplique uma política a um documento PDF usando a API do Document Security (serv
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 
-1. Recuperar um documento PDF.
+1. Recupere um documento PDF.
 
    * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar um documento PDF ao qual uma política é aplicada.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
+   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo deve ser aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. Determine o tamanho da matriz de bytes obtendo a propriedade `System.IO.FileStream` do `Length` objeto.
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` objeto `Read` . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
    * Preencha o `BLOB` objeto atribuindo seu `MTOM` campo ao conteúdo da matriz de bytes.
 
-1. Aplicar uma política existente ao documento PDF.
+1. Aplique uma política existente ao documento PDF.
 
    Aplique uma política ao documento PDF chamando o método do `RightsManagementServiceClient` objeto `protectDocument` e transmitindo os seguintes valores:
 
@@ -691,6 +697,7 @@ Aplique uma política a um documento PDF usando a API do Document Security (serv
    * Um parâmetro de saída de string usado para armazenar o valor do identificador de política.
    * Um parâmetro de saída de string usado para armazenar o valor do identificador protegido por política.
    * Um parâmetro de saída de string usado para armazenar o tipo mime (por exemplo, `application/pdf`).
+
    O `protectDocument` método retorna um `BLOB` objeto que contém o documento PDF protegido por política.
 
 1. Salve o documento PDF.
@@ -702,26 +709,26 @@ Aplique uma política a um documento PDF usando a API do Document Security (serv
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Aplicar uma política a um documento PDF usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Aplicar uma política a um documento PDF usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Aplicar uma política a um documento PDF usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Aplicar uma política a um documento PDF usando a API de serviço da Web&quot;
 
-## Remoção de políticas de documentos PDF {#removing-policies-from-pdf-documents}
+## Remoção de políticas de Documentos PDF {#removing-policies-from-pdf-documents}
 
 Você pode remover uma política de um documento protegido por política para remover a segurança do documento. Ou seja, se você não quiser mais que o documento seja protegido por uma política. Se quiser atualizar um documento protegido por política com uma política mais recente, em vez de remover a política e adicionar a política atualizada, é mais eficiente trocar a política.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-4}
 
 Para remover uma política de um documento PDF protegido por política, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto
-1. Crie um objeto da API do Document Security Client.
-1. Recuperar um documento PDF protegido por política.
+1. Crie um objeto da API do Documento Security Client.
+1. Recupere um documento PDF protegido por política.
 1. Remova a política do documento PDF.
 1. Salve o documento PDF não protegido.
 
@@ -729,13 +736,13 @@ Para remover uma política de um documento PDF protegido por política, execute 
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação de serviço do Document Security, crie um objeto cliente do serviço do Document Security.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, crie um objeto cliente de serviço de Segurança do Documento.
 
 **Recuperar um documento PDF protegido por política**
 
-Você pode recuperar um documento PDF protegido por política para remover uma política. Se você tentar remover uma política de um documento PDF que não esteja protegido por uma política, causará uma exceção.
+É possível recuperar um documento PDF protegido por política para remover uma política. Se você tentar remover uma política de um documento PDF que não esteja protegido por uma política, causará uma exceção.
 
 **Remover a política do documento PDF**
 
@@ -743,30 +750,30 @@ Você pode recuperar um documento PDF protegido por política para remover uma p
 
 **Salvar o documento PDF não protegido**
 
-Depois que o serviço Document Security remover uma política de um documento PDF, é possível salvar o documento PDF não protegido como um arquivo PDF.
+Depois que o serviço de Segurança do Documento remover uma política de um documento PDF, é possível salvar o documento PDF não protegido como um arquivo PDF.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicar políticas a documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
+[Aplicar políticas a Documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
 ### Remover uma política de um documento PDF usando a API Java {#remove-a-policy-from-a-pdf-document-using-the-java-api}
 
-Remova uma política de um documento PDF protegido por política usando a API do Document Security (Java):
+Remova uma política de um documento PDF protegido por política usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `DocumentSecurityClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
 
-1. Recuperar um documento PDF protegido por política.
+1. Recupere um documento PDF protegido por política.
 
    * Crie um `java.io.FileInputStream` objeto que represente o documento PDF protegido por política usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
@@ -774,22 +781,22 @@ Remova uma política de um documento PDF protegido por política usando a API do
 1. Remova a política do documento PDF.
 
    * Crie um `DocumentManager` objeto chamando o `DocumentSecurityClient` método do `getDocumentManager` objeto.
-   * Remova uma política do documento PDF invocando o `DocumentManager` método do objeto `removeSecurity` e transmitindo o `com.adobe.idp.Document` objeto que contém o documento PDF protegido por política. Esse método retorna um `com.adobe.idp.Document` objeto que contém um documento PDF não protegido.
+   * Remova uma política do documento PDF chamando o método do `DocumentManager` objeto `removeSecurity` e transmitindo o `com.adobe.idp.Document` objeto que contém o documento PDF protegido por política. Esse método retorna um `com.adobe.idp.Document` objeto que contém um documento PDF não protegido.
 
 1. Salve o documento PDF não protegido.
 
    * Crie um `java.io.File` objeto e verifique se a extensão do arquivo é PDF.
-   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto retornado pelo `removeSecurity` método).
+   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `removeSecurity` método).
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (modo SOAP): Remover uma política de um documento PDF usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Remover uma política de um documento PDF usando a API Java&quot;
 
 ### Remover uma política usando a API de serviço da Web {#remove-a-policy-using-the-web-service-api}
 
-Remova uma política de um documento PDF protegido por política usando a API do Document Security (serviço da Web):
+Remova uma política de um documento PDF protegido por política usando a Documento Security API (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -797,9 +804,9 @@ Remova uma política de um documento PDF protegido por política usando a API do
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `DocumentSecurityServiceClient` objeto usando seu construtor padrão.
    * Crie um `DocumentSecurityServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -813,17 +820,17 @@ Remova uma política de um documento PDF protegido por política usando a API do
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 
-1. Recuperar um documento PDF protegido por política.
+1. Recupere um documento PDF protegido por política.
 
    * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento PDF protegido por política do qual a política é removida.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
+   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo deve ser aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
    * Preencha o `BLOB` objeto atribuindo seu `MTOM` campo ao conteúdo da matriz de bytes.
 
 1. Remova a política do documento PDF.
 
-   Remova a política do documento PDF chamando o `DocumentSecurityServiceClient` método do objeto `removePolicySecurity` e transmitindo o `BLOB` objeto que contém o documento PDF protegido por política. Esse método retorna um `BLOB` objeto que contém um documento PDF não protegido.
+   Remova a política do documento PDF chamando o método do `DocumentSecurityServiceClient` objeto `removePolicySecurity` e transmitindo o `BLOB` objeto que contém o documento PDF protegido por política. Esse método retorna um `BLOB` objeto que contém um documento PDF não protegido.
 
 1. Salve o documento PDF não protegido.
 
@@ -833,53 +840,53 @@ Remova uma política de um documento PDF protegido por política usando a API do
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Remover uma política de um documento PDF usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Remover uma política de um documento PDF usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Remover uma política de um documento PDF usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Remover uma política de um documento PDF usando a API de serviço da Web&quot;
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Revogando o acesso aos documentos {#revoking-access-to-documents}
+## Revogação do acesso a Documentos {#revoking-access-to-documents}
 
-É possível revogar o acesso a um documento PDF protegido por política, resultando em todas as cópias do documento inacessíveis aos usuários. Quando um usuário tenta abrir um documento PDF revogado, ele é redirecionado para um URL especificado onde um documento revisado pode ser exibido. O URL para o qual o usuário é redirecionado deve ser especificado de forma programática. Quando você revoga o acesso a um documento, a alteração entrará em vigor na próxima vez que o usuário sincronizar com o serviço do Document Security ao abrir o documento protegido por política online.
+É possível revogar o acesso a um documento PDF protegido por política, resultando em todas as cópias do documento inacessíveis aos usuários. Quando um usuário tenta abrir um documento PDF revogado, ele é redirecionado para um URL especificado onde um documento revisado pode ser visualizado. O URL para o qual o usuário é redirecionado deve ser especificado de forma programática. Quando você revoga o acesso a um documento, a alteração entrará em vigor na próxima vez que o usuário sincronizar com o serviço de Segurança do Documento, abrindo o documento protegido por política on-line.
 
-A capacidade de revogar o acesso a um documento fornece segurança adicional. Por exemplo, suponha que uma versão mais recente de um documento esteja disponível e você não quer mais que ninguém visualize a versão desatualizada. Nessa situação, o acesso ao documento mais antigo pode ser revogado e ninguém pode visualizá-lo a menos que o acesso seja restabelecido.
+A capacidade de revogar o acesso a um documento oferece segurança adicional. Por exemplo, suponha que uma versão mais recente de um documento esteja disponível e você não quer mais que ninguém visualize a versão desatualizada. Nessa situação, o acesso ao documento mais antigo pode ser revogado, e ninguém pode visualização o documento a menos que o acesso seja restabelecido.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-5}
 
 Para revogar um documento protegido por política, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
-1. Recuperar um documento PDF protegido por política.
+1. Crie um objeto da API do Documento Security Client.
+1. Recupere um documento PDF protegido por política.
 1. Revogar o documento protegido por política.
 
 **Incluir arquivos de projeto**
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação do serviço Document Security, é necessário criar um objeto cliente do serviço Document Security.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, você deve criar um objeto cliente de serviço de Segurança do Documento.
 
 **Recuperar um documento PDF protegido por política**
 
-É necessário recuperar um documento PDF protegido por política para revogá-lo. Não é possível revogar um documento que já foi revogado ou que não é um documento protegido por política.
+É necessário recuperar um documento PDF protegido por política para revogá-lo. Não é possível revogar um documento que já tenha sido revogado ou que não seja um documento protegido por política.
 
 Se você souber o valor do identificador de licença do documento protegido por política, não será necessário recuperar o documento PDF protegido por política. No entanto, na maioria dos casos, será necessário recuperar o documento PDF para obter o valor do identificador de licença.
 
 **Revogar o documento protegido por política**
 
-Para revogar um documento protegido por política, especifique o identificador de licença do documento protegido por política. Além disso, você pode especificar o URL de um documento que o usuário pode exibir ao tentar abrir o documento revogado. Ou seja, suponha que um documento desatualizado seja revogado. Quando um usuário tentar abrir o documento revogado, ele verá um documento atualizado em vez do documento revogado.
+Para revogar um documento protegido por política, especifique o identificador de licença do documento protegido por política. Além disso, você pode especificar o URL de um documento que o usuário pode visualização ao tentar abrir o documento revogado. Ou seja, suponha que um documento desatualizado seja revogado. Quando um usuário tentar abrir o documento revogado, ele verá um documento atualizado em vez do documento revogado.
 
 >[!NOTE]
 >
@@ -887,23 +894,23 @@ Para revogar um documento protegido por política, especifique o identificador d
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicar políticas a documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
+[Aplicar políticas a Documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
-[Reinstalando o acesso a documentos revisados](protecting-documents-policies.md#reinstating-access-to-revoked-documents)
+[Reinstalando o acesso a Documentos Revogados](protecting-documents-policies.md#reinstating-access-to-revoked-documents)
 
-### Revogar acesso a documentos usando a API Java {#revoke-access-to-documents-using-the-java-api}
+### Revogar o acesso a documentos usando a API Java {#revoke-access-to-documents-using-the-java-api}
 
-Revogar o acesso a um documento PDF protegido por política usando a API do Document Security (Java):
+Revogar o acesso a um documento PDF protegido por política usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Criar um objeto de API do Document Security Client
+1. Criar um objeto de API do Documento Security Client
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `DocumentSecurityClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -921,18 +928,18 @@ Revogar o acesso a um documento PDF protegido por política usando a API do Docu
    * Revogue o documento protegido por política chamando o método do `LicenseManager` objeto `revokeLicense` e transmitindo os seguintes valores:
 
       * Um valor de string que especifica o valor do identificador de licença do documento protegido por política (especifique o valor de retorno do método do `DocumentManager` `getLicenseId` objeto).
-      * Um membro de dados estáticos da `License` interface que especifica o motivo para revogar o documento. Por exemplo, você pode especificar `License.DOCUMENT_REVISED`.
-      * Um `java.net.URL` valor que especifica o local onde um documento revisado está localizado. Se você não quiser redirecionar um usuário para outro URL, você poderá enviar `null`.
+      * Um membro de dados estáticos da `License` interface que especifica o motivo para revogar o documento. For example, you can specify `License.DOCUMENT_REVISED`.
+      * Um `java.net.URL` valor que especifica o local onde um documento revisado está localizado. Se você não quiser redirecionar um usuário para outro URL, é possível passá-lo `null`.
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (modo SOAP): Revogar um documento usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Revogar um documento usando a API Java&quot;
 
-### Revogar acesso a documentos usando a API de serviço da Web {#revoke-access-to-documents-using-the-web-service-api}
+### Revogar o acesso a documentos usando a API de serviço da Web {#revoke-access-to-documents-using-the-web-service-api}
 
-Revogar o acesso a um documento PDF protegido por política usando a API do Document Security (serviço da Web):
+Revogar o acesso a um documento PDF protegido por política usando a Documento Security API (serviço da Web):
 
 1. Incluir arquivos de projeto
 
@@ -940,9 +947,9 @@ Revogar o acesso a um documento PDF protegido por política usando a API do Docu
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Criar um objeto de API do Document Security Client
+1. Criar um objeto de API do Documento Security Client
 
    * Crie um `DocumentSecurityServiceClient` objeto usando seu construtor padrão.
    * Crie um `DocumentSecurityServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -966,42 +973,42 @@ Revogar o acesso a um documento PDF protegido por política usando a API do Docu
 
 1. Revogar o documento protegido por política
 
-   * Recupere o valor do identificador de licença do documento protegido por política, chamando o método do `DocumentSecurityServiceClient` objeto e transmitindo o `getLicenseID` `BLOB` objeto que representa o documento protegido por política. Esse método retorna um valor de string que representa o identificador de licença.
+   * Recupere o valor do identificador de licença do documento protegido por política chamando o método do `DocumentSecurityServiceClient` objeto `getLicenseID` e transmitindo o `BLOB` objeto que representa o documento protegido por política. Esse método retorna um valor de string que representa o identificador de licença.
    * Revogue o documento protegido por política chamando o método do `DocumentSecurityServiceClient` objeto `revokeLicense` e transmitindo os seguintes valores:
 
       * Um valor de string que especifica o valor do identificador de licença do documento protegido por política (especifique o valor de retorno do método do `DocumentSecurityServiceService` `getLicenseId` objeto).
-      * Um membro de dados estáticos da `Reason` enumeração que especifica o motivo para revogar o documento. Por exemplo, você pode especificar `Reason.DOCUMENT_REVISED`.
-      * Um `string` valor que especifica o local do URL para onde um documento revisado está localizado. Se você não quiser redirecionar um usuário para outro URL, você poderá enviar `null`.
+      * Um membro de dados estáticos da `Reason` enumeração que especifica o motivo para revogar o documento. For example, you can specify `Reason.DOCUMENT_REVISED`.
+      * Um `string` valor que especifica o local do URL para onde um documento revisado está localizado. Se você não quiser redirecionar um usuário para outro URL, é possível passá-lo `null`.
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Revogar um documento usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Revogar um documento usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Revogar um documento usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Revogar um documento usando a API de serviço da Web&quot;
 
 **Consulte também:**
 
-[Removendo Políticas de Documentos do Word](protecting-documents-policies.md#removing-policies-from-word-documents)
+[Remover Políticas de Documentos do Word](protecting-documents-policies.md#removing-policies-from-word-documents)
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Reinstalando o acesso a documentos revisados {#reinstating-access-to-revoked-documents}
+## Reinstalando o acesso a Documentos Revogados {#reinstating-access-to-revoked-documents}
 
-É possível reinstalar o acesso a um documento PDF revogado, resultando em todas as cópias do documento revogado serem acessíveis aos usuários. Quando um usuário abre um documento reintegrado que foi revogado, ele pode exibir o documento.
+Você pode reinstalar o acesso a um documento PDF revogado, resultando em todas as cópias do documento revogado serem acessíveis aos usuários. Quando um usuário abre um documento reinstalado que foi revogado, ele pode visualização o documento.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-6}
 
 Para reinstalar o acesso a um documento PDF revogado, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Recupere o identificador de licença do documento PDF revogado.
 1. Reinstale o acesso ao documento PDF revogado.
 
@@ -1009,37 +1016,37 @@ Para reinstalar o acesso a um documento PDF revogado, execute as seguintes etapa
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação do serviço Document Security, é necessário criar um objeto cliente do serviço Document Security. Se você estiver usando a API Java, crie um `DocumentSecurityClient` objeto. Se você estiver usando a API de serviço da Web do Document Security, crie um `DocumentSecurityServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, você deve criar um objeto cliente de serviço de Segurança do Documento. Se você estiver usando a API Java, crie um `DocumentSecurityClient` objeto. Se você estiver usando a API de serviço da Web do Documento Security, crie um `DocumentSecurityServiceService` objeto.
 
 **Recuperar o identificador de licença do documento PDF revogado**
 
 É necessário recuperar o identificador de licença do documento PDF revogado para reinstalar um documento PDF revogado. Depois de obter o valor do identificador de licença, você pode reinstalar um documento revogado. Se tentar reinstalar um documento que não seja revogado, ocorrerá uma exceção.
 
-**Reinstalar o acesso ao documento PDF revogado**
+**Reinstale o acesso ao documento PDF revogado**
 
 Para restabelecer o acesso a um documento PDF revogado, você deve especificar o identificador de licença do documento revogado. Se você tentar restabelecer o acesso a um documento PDF que não seja revogado, causará uma exceção.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicar políticas a documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
+[Aplicar políticas a Documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
-[Revogando o acesso aos documentos](protecting-documents-policies.md#revoking-access-to-documents)
+[Revogação do acesso a Documentos](protecting-documents-policies.md#revoking-access-to-documents)
 
 ### Reinstale o acesso a documentos revogados usando a API Java {#reinstate-access-to-revoked-documents-using-the-java-api}
 
-Reinstale o acesso a um documento revogado usando a API do Document Security (Java):
+Instale novamente o acesso a um documento revogado usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `DocumentSecurityClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -1058,13 +1065,13 @@ Reinstale o acesso a um documento revogado usando a API do Document Security (Ja
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (modo SOAP): Reinstalando o acesso a um documento revogado usando a API de serviço da Web&quot;
+* &quot;Start rápido (modo SOAP): Reinstalando o acesso a um documento revogado usando a API de serviço da Web&quot;
 
 ### Reinstale o acesso a documentos revogados usando a API de serviço da Web {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
-Instale novamente o acesso a um documento revogado usando a API do Document Security (serviço da Web):
+Instale novamente o acesso a um documento revogado usando a API de segurança do Documento (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -1072,9 +1079,9 @@ Instale novamente o acesso a um documento revogado usando a API do Document Secu
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `DocumentSecurityServiceClient` objeto usando seu construtor padrão.
    * Crie um `DocumentSecurityServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -1103,33 +1110,33 @@ Instale novamente o acesso a um documento revogado usando a API do Document Secu
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Reinstalando o acesso a um documento revogado usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Reinstalando o acesso a um documento revogado usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Reinstalando o acesso a um documento revogado usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Reinstalando o acesso a um documento revogado usando a API de serviço da Web&quot;
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Como inspecionar documentos PDF protegidos por política {#inspecting-policy-protected-pdf-documents}
+## Como inspecionar Documentos PDF protegidos por política {#inspecting-policy-protected-pdf-documents}
 
-Você pode usar a API do Document Security Service (Java e serviço da Web) para inspecionar documentos PDF protegidos por política. A inspeção de documentos PDF protegidos por política retorna informações sobre o documento PDF protegido por política. Por exemplo, é possível determinar a política usada para proteger o documento e a data em que o documento foi protegido.
+Você pode usar a API do serviço de segurança do Documento (Java e serviço da Web) para inspecionar documentos PDF protegidos por política. Inspecionar documentos PDF protegidos por política retorna informações sobre o documento PDF protegido por política. Você pode, por exemplo, determinar a política usada para proteger o documento e a data em que o documento foi protegido.
 
-Não é possível executar essa tarefa se sua versão do LiveCycle for 8.x ou uma versão anterior. O suporte para inspecionar documentos protegidos por política é adicionado no AEM Forms. Se você tentar inspecionar um documento protegido por política usando o LiveCycle 8.x (ou anterior), uma exceção será lançada.
+Não é possível executar essa tarefa se sua versão do LiveCycle for 8.x ou uma versão anterior. O suporte para inspecionar documentos protegidos por política é adicionado em AEM Forms. Se você tentar inspecionar um documento protegido por política usando o LiveCycle 8.x (ou anterior), uma exceção será lançada.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-7}
 
 Para inspecionar um documento PDF protegido por política, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Recupere um documento protegido por política para inspecionar.
 1. Obtenha informações sobre o documento protegido por política.
 
@@ -1137,13 +1144,13 @@ Para inspecionar um documento PDF protegido por política, execute as seguintes 
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação de serviço do Document Security, crie um objeto cliente do serviço do Document Security. Se você estiver usando a API Java, crie um `RightsManagementClient` objeto. Se você estiver usando a API de serviço da Web do Document Security, crie um `RightsManagementServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, crie um objeto cliente de serviço de Segurança do Documento. Se você estiver usando a API Java, crie um `RightsManagementClient` objeto. Se você estiver usando a API de serviço da Web do Documento Security, crie um `RightsManagementServiceService` objeto.
 
 **Recuperar um documento protegido por política para inspecionar**
 
-Para inspecionar um documento protegido por política, recupere-o. Se você tentar inspecionar um documento que não esteja protegido com uma política ou que seja revogado, uma exceção será lançada.
+Para inspecionar um documento protegido por política, recupere-o. Se você tentar inspecionar um documento que não esteja protegido por uma política ou que seja revogado, uma exceção será lançada.
 
 **Inspecione o documento**
 
@@ -1153,25 +1160,25 @@ Depois de recuperar um documento protegido por política, você pode inspecioná
 
 Depois de inspecionar um documento PDF protegido por política, você pode obter informações sobre ele. Por exemplo, você pode determinar a política usada para proteger o documento.
 
-Se você proteger um documento com uma política pertencente a Minhas políticas e, em seguida, chamar `RMInspectResult.getPolicysetName` ou `RMInspectResult.getPolicysetId`, nulo será retornado.
+Se você proteger um documento com uma política que pertence a Minhas políticas e, em seguida, chamar `RMInspectResult.getPolicysetName` ou `RMInspectResult.getPolicysetId`, nulo será retornado.
 
 Se o documento estiver protegido usando uma política contida em um conjunto de políticas (diferente de Minhas políticas), `RMInspectResult.getPolicysetName` `RMInspectResult.getPolicysetId` retorne strings válidas.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Inspecione documentos PDF protegidos por política usando a API Java {#inspect-policy-protected-pdf-documents-using-the-java-api}
+### Inspecione Documentos PDF protegidos por política usando a API Java {#inspect-policy-protected-pdf-documents-using-the-java-api}
 
-Inspecione um documento PDF protegido por política usando a API do Document Security Service (Java):
+Inspecione um documento PDF protegido por política usando a API do Documento Security Service (Java):
 
 1. Incluir arquivos de projeto.
 
-   Inclua arquivos JAR do cliente, como o adobe-rights management-client.jar, no caminho de classe do seu projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+   Inclua os arquivos JAR do cliente, como o adobe-rights management-client.jar, no caminho de classe do seu projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
    * Crie um `RightsManagementClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -1184,7 +1191,7 @@ Inspecione um documento PDF protegido por política usando a API do Document Sec
 1. Inspecione o documento.
 
    * Crie um `DocumentManager` objeto chamando o `RightsManagementClient` método do `getDocumentManager` objeto.
-   * Inspecione o documento protegido por política chamando o `LicenseManager` método do `inspectDocument` objeto. Passe o `com.adobe.idp.Document` objeto que contém o documento PDF protegido por política. Esse método retorna um `RMInspectResult` objeto que contém informações sobre o documento protegido por política.
+   * Inspecione o documento protegido por política chamando o método do `LicenseManager` objeto `inspectDocument` . Passe o `com.adobe.idp.Document` objeto que contém o documento PDF protegido por política. Esse método retorna um `RMInspectResult` objeto que contém informações sobre o documento protegido por política.
 
 1. Obtenha informações sobre o documento protegido por política.
 
@@ -1192,13 +1199,13 @@ Inspecione um documento PDF protegido por política usando a API do Document Sec
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (modo SOAP): Como inspecionar documentos PDF protegidos por política usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Inspecionar documentos PDF protegidos por política usando a API Java&quot;
 
-### Inspecione documentos PDF protegidos por política usando a API de serviço da Web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
+### Inspecione Documentos PDF protegidos por política usando a API de serviço da Web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
-Inspecione um documento PDF protegido por política usando a API do Document Security Service (serviço da Web):
+Inspecione um documento PDF protegido por política usando a Documento Security Service API (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -1206,9 +1213,9 @@ Inspecione um documento PDF protegido por política usando a API do Document Sec
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `RightsManagementServiceClient` objeto usando seu construtor padrão.
    * Crie um `RightsManagementServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -1232,7 +1239,7 @@ Inspecione um documento PDF protegido por política usando a API do Document Sec
 
 1. Inspecione o documento.
 
-   Inspecione o documento protegido por política chamando o `RightsManagementServiceClient` método do `inspectDocument` objeto. Passe o `BLOB` objeto que contém o documento PDF protegido por política. Esse método retorna um `RMInspectResult` objeto que contém informações sobre o documento protegido por política.
+   Inspecione o documento protegido por política chamando o método do `RightsManagementServiceClient` objeto `inspectDocument` . Passe o `BLOB` objeto que contém o documento PDF protegido por política. Esse método retorna um `RMInspectResult` objeto que contém informações sobre o documento protegido por política.
 
 1. Obtenha informações sobre o documento protegido por política.
 
@@ -1240,45 +1247,45 @@ Inspecione um documento PDF protegido por política usando a API do Document Sec
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Inspecionar documentos PDF protegidos por política usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Inspecionar documentos PDF protegidos por política usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Inspecionar documentos PDF protegidos por política usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Inspecionar documentos PDF protegidos por política usando a API de serviço da Web&quot;
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Criação de marcas d&#39;água {#creating-watermarks}
 
-As marcas d&#39;água ajudam a garantir a segurança de um documento, identificando de forma única o documento e controlando a violação dos direitos autorais. Por exemplo, você pode criar e colocar uma marca d&#39;água que informe Confidencial em todas as páginas de um documento. Após a criação de uma marca d&#39;água, é possível incluí-la como parte de uma política. Ou seja, você pode definir o atributo de marca d&#39;água da política com a marca d&#39;água recém-criada. Depois que uma política que contém uma marca d&#39;água é aplicada a um documento, a marca d&#39;água aparece no documento protegido por política.
+As marcas d&#39;água ajudam a garantir a segurança de um documento, identificando exclusivamente o documento e controlando a violação dos direitos autorais. Por exemplo, você pode criar e colocar uma marca d&#39;água que informe Confidencial em todas as páginas de um documento. Após a criação de uma marca d&#39;água, é possível incluí-la como parte de uma política. Ou seja, você pode definir o atributo de marca d&#39;água da política com a marca d&#39;água recém-criada. Depois que uma política que contém uma marca d&#39;água é aplicada a um documento, a marca d&#39;água aparece no documento protegido por política.
 
 >[!NOTE]
 >
->Somente os usuários com privilégios administrativos do Document Security podem criar marcas d&#39;água. Ou seja, você deve especificar esse usuário ao definir as configurações de conexão necessárias para criar um objeto cliente do serviço Document Security.
+>Somente os usuários com privilégios administrativos do Documento Security podem criar marcas d&#39;água. Ou seja, você deve especificar esse usuário ao definir as configurações de conexão necessárias para criar um objeto cliente do serviço de Segurança do Documento.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-8}
 
 Para criar uma marca d&#39;água, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Defina os atributos de marcas d&#39;água.
-1. Registre a marca d&#39;água no serviço Document Security.
+1. Registre a marca d&#39;água no serviço de Segurança do Documento.
 
 **Incluir arquivos de projeto**
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação do serviço Document Security, é necessário criar um objeto cliente do serviço Document Security. Se você estiver usando a API Java, crie um `RightsManagementClient` objeto. Se você estiver usando a API de serviço da Web do Document Security, crie um `RightsManagementServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, você deve criar um objeto cliente de serviço de Segurança do Documento. Se você estiver usando a API Java, crie um `RightsManagementClient` objeto. Se você estiver usando a API de serviço da Web do Documento Security, crie um `RightsManagementServiceService` objeto.
 
 **Definir os atributos de marcas d&#39;água**
 
@@ -1374,25 +1381,25 @@ Todos os outros atributos são opcionais.
 
 **Registrar a marca d&#39;água**
 
-Uma nova marca d&#39;água deve ser registrada no serviço Document Security antes de poder ser usada. Depois de registrar uma marca d&#39;água, você pode usá-la nas políticas.
+Uma nova marca d&#39;água deve ser registrada no serviço de segurança do Documento antes de poder ser usada. Depois de registrar uma marca d&#39;água, você pode usá-la nas políticas.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicar políticas a documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
+[Aplicar políticas a Documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
 ### Criar marcas d&#39;água usando a API Java {#create-watermarks-using-the-java-api}
 
-Crie uma marca d&#39;água usando a API do Document Security (Java):
+Crie uma marca d&#39;água usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
-   Inclua arquivos JAR do cliente, como o `adobe-rightsmanagement-client.jar`, no caminho de classe do seu projeto Java.
+   Inclua os arquivos JAR do cliente, como o `adobe-rightsmanagement-client.jar`, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `RightsManagementClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -1402,7 +1409,7 @@ Crie uma marca d&#39;água usando a API do Document Security (Java):
    * Crie um `Watermark` objeto chamando o `InfomodelObjectFactory` método estático do `createWatermark` objeto. Esse método retorna um `Watermark` objeto.
    * Defina o atributo name da marca d&#39;água chamando o método do `Watermark` `setName` objeto e transmitindo um valor de string que especifica o nome da política.
    * Defina o atributo de plano de fundo da marca d&#39;água chamando o `Watermark` método do `setBackground` objeto e transmitindo `true`. Ao definir esse atributo, a marca d&#39;água aparece no plano de fundo do documento.
-   * Defina o atributo de texto personalizado da marca d&#39;água chamando o método do `Watermark` `setCustomText` objeto e transmitindo um valor de string que representa o texto da marca d&#39;água.
+   * Defina o atributo de texto personalizado da marca d&#39;água chamando o método do `Watermark` objeto `setCustomText` e transmitindo um valor de string que representa o texto da marca d&#39;água.
    * Defina o atributo de opacidade da marca d&#39;água chamando o método do `Watermark` objeto `setOpacity` e transmitindo um valor inteiro que especifica o nível de opacidade. Um valor de 100 indica que a marca d&#39;água é completamente opaca e um valor de 0 indica que a marca d&#39;água é completamente transparente.
 
 1. Registre a marca d&#39;água.
@@ -1412,23 +1419,23 @@ Crie uma marca d&#39;água usando a API do Document Security (Java):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (modo SOAP): Criação de uma marca d&#39;água usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Criação de uma marca d&#39;água usando a API Java&quot;
 
 ### Criar marcas d&#39;água usando a API de serviço da Web {#create-watermarks-using-the-web-service-api}
 
-Crie uma marca d&#39;água usando a API do Document Security (serviço da Web):
+Crie uma marca d&#39;água usando a API de segurança do Documento (serviço da Web):
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    Crie um projeto do Microsoft .NET que use MTOM. Certifique-se de usar a seguinte definição WSDL: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `RightsManagementServiceClient` objeto usando seu construtor padrão.
    * Crie um `RightsManagementServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -1459,37 +1466,37 @@ Crie uma marca d&#39;água usando a API do Document Security (serviço da Web):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte os seguintes Iniciais Rápidos:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Criar uma marca d&#39;água usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Criar uma marca d&#39;água usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Criar uma marca d&#39;água usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Criar uma marca d&#39;água usando a API de serviço da Web&quot;
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Modificação de Marcas D&#39;Água {#modifying-watermarks}
 
-É possível modificar uma marca d&#39;água existente usando a API Java do Document Security ou a API de serviço da Web. Para fazer alterações em uma marca d&#39;água existente, você a recupera, modifica seus atributos e a atualiza no servidor. Por exemplo, suponha que você recupere uma marca d&#39;água e modifique seu atributo de opacidade. Antes que a alteração entre em vigor, é necessário atualizar a marca d&#39;água.
+É possível modificar uma marca d&#39;água existente usando a API Java de segurança do Documento ou a API de serviço da Web. Para fazer alterações em uma marca d&#39;água existente, você a recupera, modifica seus atributos e a atualiza no servidor. Por exemplo, suponha que você recupere uma marca d&#39;água e modifique seu atributo de opacidade. Antes que a alteração entre em vigor, é necessário atualizar a marca d&#39;água.
 
-Quando você modifica uma marca d&#39;água, a alteração afeta documentos futuros que tenham a marca d&#39;água aplicada a eles. Ou seja, os documentos PDF existentes que contêm a marca d&#39;água não são afetados.
-
->[!NOTE]
->
->Somente usuários com privilégios administrativos do Document Security podem modificar marcas d&#39;água. Ou seja, você deve especificar esse usuário ao definir as configurações de conexão necessárias para criar um objeto cliente do serviço Document Security.
+Quando você modifica uma marca d&#39;água, a alteração afeta documentos futuros que têm a marca d&#39;água aplicada a eles. Ou seja, documentos PDF existentes que contêm a marca d&#39;água não são afetados.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Somente os usuários com privilégios administrativos do Documento Security podem modificar marcas d&#39;água. Ou seja, você deve especificar esse usuário ao definir as configurações de conexão necessárias para criar um objeto cliente do serviço de Segurança do Documento.
+
+>[!NOTE]
+>
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-9}
 
 Para modificar uma marca d&#39;água, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Recupere a marca d&#39;água para modificá-la.
 1. Defina os atributos de marcas d&#39;água.
 1. Atualize a marca d&#39;água.
@@ -1498,9 +1505,9 @@ Para modificar uma marca d&#39;água, execute as seguintes etapas:
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação do serviço Document Security, é necessário criar um objeto cliente do serviço Document Security. Se você estiver usando a API Java, crie um `DocumentSecurityClient` objeto. Se você estiver usando a API de serviço da Web do Document Security, crie um `DocumentSecurityServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, você deve criar um objeto cliente de serviço de Segurança do Documento. Se você estiver usando a API Java, crie um `DocumentSecurityClient` objeto. Se você estiver usando a API de serviço da Web do Documento Security, crie um `DocumentSecurityServiceService` objeto.
 
 **Recuperar a marca d&#39;água para modificar**
 
@@ -1524,7 +1531,7 @@ Depois de modificar os atributos de uma marca d&#39;água, é necessário atuali
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1532,13 +1539,13 @@ Depois de modificar os atributos de uma marca d&#39;água, é necessário atuali
 
 ### Modificar marcas d&#39;água usando a API Java {#modify-watermarks-using-the-java-api}
 
-Modifique uma marca d&#39;água usando a API do Document Security (Java):
+Modifique uma marca d&#39;água usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
-   Inclua arquivos JAR do cliente, como o adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
+   Inclua os arquivos JAR do cliente, como o adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `DocumentSecurityClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -1561,11 +1568,11 @@ Modifique uma marca d&#39;água usando a API do Document Security (Java):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte Início rápido (modo SOAP): Modificação de uma marca d&#39;água usando a seção da API Java.
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte o Start rápido (modo SOAP): Modificação de uma marca d&#39;água usando a seção da API Java.
 
 ### Modificar marcas d&#39;água usando a API de serviço da Web {#modify-watermarks-using-the-web-service-api}
 
-Modifique uma marca d&#39;água usando a API do Document Security (serviço da Web):
+Modifique uma marca d&#39;água usando a API de segurança do Documento (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -1573,9 +1580,9 @@ Modifique uma marca d&#39;água usando a API do Document Security (serviço da W
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `DocumentSecurityServiceClient` objeto usando seu construtor padrão.
    * Crie um `RightsManagementServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -1607,30 +1614,30 @@ Modifique uma marca d&#39;água usando a API do Document Security (serviço da W
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte o seguinte Início rápido:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte o seguinte Start rápido:
 
-* &quot;Início rápido (MTOM): Modificação de uma marca d&#39;água usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Modificação de uma marca d&#39;água usando a API de serviço da Web&quot;
 
-## Procurando por eventos {#searching-for-events}
+## Procurando Eventos {#searching-for-events}
 
-O serviço Rights Management rastreia ações específicas à medida que ocorrem, como aplicar uma política a um documento, abrir um documento protegido por política e revogar o acesso a documentos. A auditoria de eventos deve estar ativada para o serviço Rights Management ou os eventos não são rastreados.
+O serviço Rights Management rastreia ações específicas à medida que ocorrem, como aplicar uma política a um documento, abrir um documento protegido por política e revogar o acesso a documentos. A auditoria de Eventos deve estar ativada para o serviço Rights Management ou os eventos não são rastreados.
 
-Os eventos se encaixam em uma das seguintes categorias:
+Os Eventos se encaixam em uma das seguintes categorias:
 
-* Os eventos de administrador são ações relacionadas a um administrador, como a criação de uma nova conta de administrador.
-* Eventos de documento são ações relacionadas a um documento, como fechar um documento protegido por política.
-* Eventos de política são ações relacionadas a uma política, como a criação de uma nova política.
+* eventos de administrador são ações relacionadas a um administrador, como a criação de uma nova conta de administrador.
+* eventos de Documento são ações relacionadas a um documento, como fechar um documento protegido por política.
+* eventos de política são ações relacionadas a uma política, como a criação de uma nova política.
 * Os eventos de serviço são ações relacionadas ao serviço Rights Management, como sincronizar com o diretório do usuário.
 
-Você pode pesquisar por eventos específicos usando a API Java do Rights Management ou a API de serviço da Web. Ao procurar eventos, você pode executar tarefas, como criar um arquivo de log de determinados eventos.
+Você pode procurar eventos específicos usando a API Java do Rights Management ou a API de serviço da Web. Ao procurar eventos, você pode executar tarefas, como criar um arquivo de log de determinados eventos.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Rights Management, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Rights Management, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-10}
 
-Para pesquisar por um evento Rights Management, execute as seguintes etapas:
+Para procurar um evento do Rights Management, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
 1. Crie um objeto da API do cliente Rights Management.
@@ -1643,11 +1650,11 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar um objeto de API do cliente Rights Management**
 
-Antes de executar programaticamente uma operação de serviço de Gerenciamento de Direitos, é necessário criar um objeto cliente de serviço de Gerenciamento de Direitos. Se você estiver usando a API Java, crie um `DocumentSecurityClient` objeto. Se você estiver usando a API de serviço da Web Rights Management, crie um `DocumentSecurityServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de Gerenciamento de Direitos, é necessário criar um objeto cliente de serviço de Gerenciamento de Direitos. Se você estiver usando a API Java, crie um `DocumentSecurityClient` objeto. Se você estiver usando a API de serviço da Web do Rights Management, crie um `DocumentSecurityServiceService` objeto.
 
 **Especificar os eventos a serem pesquisados**
 
-Você deve especificar o evento a ser pesquisado. Por exemplo, você pode pesquisar o evento de criação de política, que ocorre quando uma nova política é criada.
+Você deve especificar o evento a ser pesquisado. Por exemplo, você pode procurar o evento de criação de política, que ocorre quando uma nova política é criada.
 
 **Procurar o evento**
 
@@ -1655,7 +1662,7 @@ Depois de especificar o evento a ser pesquisado, você pode usar a API Java do R
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1676,6 +1683,7 @@ Procure eventos usando a API de gerenciamento de direitos (Java):
    * Crie um `EventManager` objeto chamando o `DocumentSecurityClient` método do `getEventManager` objeto. Esse método retorna um `EventManager` objeto.
    * Crie um `EventSearchFilter` objeto chamando seu construtor.
    * Especifique o evento para o qual pesquisar chamando o método do `EventSearchFilter` objeto `setEventCode` e passando um membro de dados estáticos que pertence à `EventManager` classe que representa o evento para o qual pesquisar. Por exemplo, para pesquisar o evento de criação de política, passe `EventManager.POLICY_CREATE_EVENT`.
+
    >[!NOTE]
    >
    >Você pode definir critérios de pesquisa adicionais chamando métodos de `EventSearchFilter` objeto. Por exemplo, chame o `setUserName` método para especificar um usuário associado ao evento.
@@ -1686,11 +1694,11 @@ Procure eventos usando a API de gerenciamento de direitos (Java):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Rights Management, consulte os seguintes Início rápido:
+Para obter exemplos de código usando o serviço Rights Management, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (SOAP): Procurando eventos usando a API Java&quot;
+* &quot;Start rápido (SOAP): Procurando eventos usando a API Java&quot;
 
-### Pesquisar eventos usando a API de serviço da Web {#search-for-events-using-the-web-service-api}
+### Procurar eventos usando a API de serviço da Web {#search-for-events-using-the-web-service-api}
 
 Procure eventos usando a API de Gerenciamento de Direitos (serviço da Web):
 
@@ -1700,7 +1708,7 @@ Procure eventos usando a API de Gerenciamento de Direitos (serviço da Web):
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Criar um objeto de API do cliente Rights Management
 
@@ -1719,11 +1727,12 @@ Procure eventos usando a API de Gerenciamento de Direitos (serviço da Web):
 1. Especificar os eventos a serem pesquisados
 
    * Crie um `EventSpec` objeto usando seu construtor.
-   * Especifique o início do período de tempo durante o qual o evento ocorreu definindo o membro de `EventSpec` dados do `firstTime.date` objeto com a `DataTime` instância que representa o início do intervalo de datas quando o evento ocorreu.
+   * Especifique o start do período de tempo durante o qual o evento ocorreu definindo o membro de `EventSpec` dados do `firstTime.date` objeto com a `DataTime` instância que representa o start do intervalo de datas quando o evento ocorreu.
    * Atribua o valor `true` ao membro `EventSpec` `firstTime.dateSpecified` de dados do objeto.
    * Especifique o fim do período de tempo durante o qual o evento ocorreu definindo o membro de `EventSpec` dados do `lastTime.date` objeto com a `DataTime` instância que representa o fim do intervalo de datas quando o evento ocorreu.
    * Atribua o valor `true` ao membro `EventSpec` `lastTime.dateSpecified` de dados do objeto.
-   * Defina o evento para pesquisar atribuindo um valor de string ao membro de `EventSpec` dados do `eventCode` objeto. A tabela a seguir lista os valores numéricos que você pode atribuir a essa propriedade:
+   * Defina o evento a ser pesquisado atribuindo um valor de string ao membro de `EventSpec` dados do `eventCode` objeto. A tabela a seguir lista os valores numéricos que você pode atribuir a essa propriedade:
+
    <table>
     <thead>
     <tr>
@@ -1929,33 +1938,33 @@ Procure eventos usando a API de Gerenciamento de Direitos (serviço da Web):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Rights Management, consulte os seguintes Início rápido:
+Para obter exemplos de código usando o serviço Rights Management, consulte os seguintes Start rápidos:
 
-* &quot;Início rápido (MTOM): Procurando eventos usando a API de serviço da Web&quot;
-* &quot;Início rápido (SwaRef): Procurando eventos usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Procurando eventos usando a API de serviço da Web&quot;
+* &quot;Start rápido (SwaRef): Procurando eventos usando a API de serviço da Web&quot;
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Aplicar Políticas a Documentos do Word {#applying-policies-to-word-documents}
+## Aplicar políticas a Documentos do Word {#applying-policies-to-word-documents}
 
-Além de documentos PDF, o serviço Rights Management suporta formatos de documento adicionais, como um documento do Microsoft Word (arquivo DOC) e outros formatos de arquivo do Microsoft Office. Por exemplo, você pode aplicar uma política a um documento do Word para protegê-lo. Ao aplicar uma política a um documento do Word, você restringe o acesso ao documento. Não é possível aplicar uma política a um documento se ele já estiver protegido por uma política.
+Além de documentos PDF, o serviço Rights Management suporta formatos de documento adicionais, como um documento do Microsoft Word (arquivo DOC) e outros formatos de arquivo do Microsoft Office. Por exemplo, você pode aplicar uma política a um documento do Word para protegê-lo. Ao aplicar uma política a um documento do Word, você restringe o acesso ao documento. Não é possível aplicar uma política a um documento se o documento já estiver protegido por uma política.
 
-Você pode monitorar o uso de um documento do Word protegido por política depois de distribuí-lo. Ou seja, você pode ver como o documento está sendo usado e quem o está usando. Por exemplo, você pode descobrir quando alguém abriu o documento.
+Você pode monitorar o uso de um documento do Word protegido por política depois de distribuí-lo. Ou seja, vocês podem ver como o documento está sendo usado e quem está usando. Por exemplo, você pode descobrir quando alguém abriu o documento.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-11}
 
 Para aplicar uma política a um documento do Word, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Recuperar um documento do Word ao qual uma política é aplicada.
 1. Aplicar uma política existente ao documento do Word.
 1. Salve o documento do Word protegido por política.
@@ -1964,13 +1973,13 @@ Para aplicar uma política a um documento do Word, execute as seguintes etapas:
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto da API do Document Security Client**
+**Criar um objeto da API do Cliente do Documento Security**
 
-Antes de executar programaticamente uma operação do serviço Document Security, é necessário criar um objeto cliente do serviço Document Security.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, você deve criar um objeto cliente de serviço de Segurança do Documento.
 
 **Recuperar um documento do Word**
 
-Você deve recuperar um documento do Word para aplicar uma política. Depois de aplicar uma política ao documento do Word, os usuários são restritos ao usar o documento. Por exemplo, se a política não permitir que o documento seja aberto offline, os usuários deverão estar online para abrir o documento.
+Você deve recuperar um documento do Word para aplicar uma política. Depois de aplicar uma política ao documento do Word, os usuários são restritos ao usar o documento. Por exemplo, se a política não permitir que o documento seja aberto offline, os usuários devem estar online para abrir o documento.
 
 **Aplicar uma política existente ao documento do Word**
 
@@ -1978,25 +1987,25 @@ Para aplicar uma política a um documento do Word, é necessário referenciar um
 
 **Salvar o documento do Word**
 
-Depois que o serviço Document Security aplicar uma política a um documento do Word, você poderá salvar o documento do Word protegido por política como um arquivo DOC.
+Depois que o serviço de Segurança do Documento aplicar uma política a um documento do Word, é possível salvar o documento do Word protegido por política como um arquivo DOC.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Revogando o acesso aos documentos](protecting-documents-policies.md#revoking-access-to-documents)
+[Revogação do acesso a Documentos](protecting-documents-policies.md#revoking-access-to-documents)
 
 ### Aplicar uma política a um documento do Word usando a API Java {#apply-a-policy-to-a-word-document-using-the-java-api}
 
-Aplique uma política a um documento do Word usando a API do Document Security (Java):
+Aplique uma política a um documento do Word usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto.
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `DocumentSecurityClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -2018,24 +2027,25 @@ Aplique uma política a um documento do Word usando a API do Document Security (
       * Um valor de string que representa o nome do domínio do gerenciador de usuários do usuário que é o editor do documento. Esse valor de parâmetro é opcional e pode ser nulo (se esse parâmetro for nulo, o próximo valor de parâmetro deverá ser nulo).
       * Um valor de string que representa o nome canônico do usuário do gerenciador de usuários que é o editor do documento. Esse valor de parâmetro é opcional e pode ser `null` (se esse parâmetro for `null`, o valor de parâmetro anterior deve ser `null`).
       * Uma `com.adobe.livecycle.rightsmanagement.Locale` que representa a localidade usada para selecionar o modelo do MS Office. Esse valor de parâmetro é opcional e você pode especificar `null`.
+
       O `protectDocument` método retorna um `RMSecureDocumentResult` objeto que contém o documento do Word protegido por política.
 
 
 1. Salve o documento do Word.
 
-   * Chame o método do `RMSecureDocumentResult` `getProtectedDoc` objeto para obter o documento do Word protegido por política. Esse método retorna um `com.adobe.idp.Document` objeto.
+   * Chame o `RMSecureDocumentResult` `getProtectedDoc` método do objeto para obter o documento do Word protegido por política. Esse método retorna um `com.adobe.idp.Document` objeto.
    * Crie um `java.io.File` objeto e verifique se a extensão do arquivo é DOC.
-   * Chame o `com.adobe.idp.Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto retornado pelo `getProtectedDoc` método).
+   * Chame o `com.adobe.idp.Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `getProtectedDoc` método).
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte o seguinte Início rápido:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte o seguinte Start rápido:
 
-* &quot;Início rápido (modo SOAP): Aplicar uma política a um documento do Word usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Aplicar uma política a um documento do Word usando a API do Java&quot;
 
 ### Aplicar uma política a um documento do Word usando a API de serviço da Web {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
-Aplique uma política a um documento do Word usando a API do Document Security (serviço da Web):
+Aplique uma política a um documento do Word usando a API de segurança do Documento (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -2043,9 +2053,9 @@ Aplique uma política a um documento do Word usando a API do Document Security (
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 
    * Crie um `DocumentSecurityServiceClient` objeto usando seu construtor padrão.
    * Crie um `DocumentSecurityServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -2081,6 +2091,7 @@ Aplique uma política a um documento do Word usando a API do Document Security (
    * Um parâmetro de saída de string usado para armazenar o valor do identificador de política.
    * Um parâmetro de saída de string usado para armazenar o valor do identificador protegido por política.
    * Um parâmetro de saída de string usado para armazenar o tipo mime (por exemplo, `application/doc`).
+
    O `protectDocument` método retorna um `BLOB` objeto que contém o documento do Word protegido por política.
 
 1. Salve o documento do Word.
@@ -2092,39 +2103,39 @@ Aplique uma política a um documento do Word usando a API do Document Security (
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte o seguinte Início rápido:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte o seguinte Start rápido:
 
-* &quot;Início rápido (MTOM): Aplicar uma política a um documento do Word usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Aplicar uma política a um documento do Word usando a API de serviço da Web&quot;
 
-## Removendo Políticas de Documentos do Word {#removing-policies-from-word-documents}
+## Remover Políticas de Documentos do Word {#removing-policies-from-word-documents}
 
 Você pode remover uma política de um documento do Word protegido por política para remover a segurança do documento. Ou seja, se você não quiser mais que o documento seja protegido por uma política. Se quiser atualizar um documento do Word protegido por política com uma política mais recente, em vez de remover a política e adicionar a política atualizada, é mais eficiente trocar a política.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Document Security, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço de Segurança do Documento, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-12}
 
 Para remover uma política de um documento do Word protegido por política, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto
-1. Crie um objeto da API do Document Security Client.
+1. Crie um objeto da API do Documento Security Client.
 1. Recuperar um documento do Word protegido por política.
 1. Remova a política do documento do Word.
-1. Salvar documento do Word não protegido.s
+1. Salve o documento do Word não protegido.s
 
 **Incluir arquivos de projeto**
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando um aplicativo cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Document Security Client**
+**Criar um objeto de API do Documento Security Client**
 
-Antes de executar programaticamente uma operação de serviço do Document Security, crie um objeto cliente do serviço do Document Security.
+Antes de executar programaticamente uma operação de serviço de Segurança do Documento, crie um objeto cliente de serviço de Segurança do Documento.
 
 **Recuperar um documento do Word protegido por política**
 
-Você deve recuperar um documento do Word protegido por política para remover uma política. Se tentar remover uma política de um documento do Word que não esteja protegido por uma política, você causará uma exceção.
+Você deve recuperar um documento do Word protegido por política para remover uma política. Se você tentar remover uma política de um documento do Word que não está protegido por uma política, causará uma exceção.
 
 **Remover a política do documento do Word**
 
@@ -2132,25 +2143,25 @@ Você pode remover uma política de um documento do Word protegido por política
 
 **Salvar o documento do Word não protegido**
 
-Depois que o serviço Document Security remover uma política de um documento do Word, você poderá salvar o documento do Word não protegido como um arquivo DOC.
+Depois que o serviço de Segurança do Documento remover uma política de um documento do Word, é possível salvar o documento do Word não protegido como um arquivo DOC.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicar Políticas a Documentos do Word](protecting-documents-policies.md#applying-policies-to-word-documents)
+[Aplicar políticas a Documentos do Word](protecting-documents-policies.md#applying-policies-to-word-documents)
 
 ### Remover uma política de um documento do Word usando a API Java {#remove-a-policy-from-a-word-document-using-the-java-api}
 
-Remova uma política de um documento do Word protegido por política usando a API do Document Security (Java):
+Remova uma política de um documento do Word protegido por política usando a API de segurança do Documento (Java):
 
 1. Incluir arquivos de projeto
 
    Inclua os arquivos JAR do cliente, como adobe-rights management-client.jar, no caminho de classe do seu projeto Java.
 
-1. Criar um objeto de API do Document Security Client
+1. Criar um objeto de API do Documento Security Client
 
    * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
    * Crie um `RightsManagementClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
@@ -2168,17 +2179,17 @@ Remova uma política de um documento do Word protegido por política usando a AP
 1. Salvar o documento do Word não protegido
 
    * Crie um `java.io.File` objeto e verifique se a extensão do arquivo é DOC.
-   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto retornado pelo `removeSecurity` método).
+   * Chame o `Document` método do `copyToFile` objeto para copiar o conteúdo do `Document` objeto para o arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `removeSecurity` método).
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte o seguinte Início rápido:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte o seguinte Start rápido:
 
-* &quot;Início rápido (modo SOAP): Remover uma política de um documento do Word usando a API Java&quot;
+* &quot;Start rápido (modo SOAP): Remover uma política de um documento do Word usando a API Java&quot;
 
 ### Remover uma política de um documento do Word usando a API de serviço da Web {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
-Remova uma política de um documento do Word protegido por política usando a API do Document Security (serviço da Web):
+Remova uma política de um documento do Word protegido por política usando a API de segurança do Documento (serviço da Web):
 
 1. Incluir arquivos de projeto
 
@@ -2186,9 +2197,9 @@ Remova uma política de um documento do Word protegido por política usando a AP
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
-1. Criar um objeto de API do Document Security Client
+1. Criar um objeto de API do Documento Security Client
 
    * Crie um `RightsManagementServiceClient` objeto usando seu construtor padrão.
    * Crie um `RightsManagementServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Não é necessário usar o `lc_version` atributo. Este atributo é usado ao criar uma referência de serviço.)
@@ -2222,10 +2233,10 @@ Remova uma política de um documento do Word protegido por política usando a AP
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Document Security, consulte o seguinte Início rápido:
+Para obter exemplos de código usando o serviço de Segurança do Documento, consulte o seguinte Start rápido:
 
-* &quot;Início rápido (MTOM): Remover uma política de um documento do Word usando a API de serviço da Web&quot;
+* &quot;Start rápido (MTOM): Remover uma política de um documento do Word usando a API de serviço da Web&quot;
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
