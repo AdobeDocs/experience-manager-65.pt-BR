@@ -10,14 +10,17 @@ topic-tags: customization
 discoiquuid: c34dd4c2-5fff-4355-b86d-cc8a956dd8af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
 
 # Adicionar ação personalizada em itens do lister de formulários{#adding-custom-action-on-form-lister-items}
 
-No AEM Forms, é possível criar uma página de portal listando os formulários disponíveis. Por padrão, você pode pesquisar e listar formulários em uma página do portal. Você pode abrir formulários para preencher e enviar suas informações. Somente as ações de renderização são fornecidas prontamente para formulários listados em uma página do portal. Para saber mais sobre as ações disponíveis em uma página de portal, consulte [Criar uma página](../../forms/using/creating-form-portal-page.md)de portal de formulários.
+No AEM Forms, é possível criar uma página de portal que lista os formulários disponíveis. Por padrão, você pode pesquisar e lista formulários em uma página do portal. Você pode abrir formulários para preencher e enviar suas informações. Somente as ações de renderização são fornecidas prontamente para formulários listados em uma página do portal. Para saber mais sobre as ações disponíveis em uma página de portal, consulte [Criar uma página](../../forms/using/creating-form-portal-page.md)de portal de formulários.
 
 É possível adicionar outras opções à página do portal. Essas opções ou ações podem ser personalizadas personalizando o modelo do portal de formulários.
 
@@ -25,7 +28,7 @@ Este artigo mostra como criar um botão para enviar o link de um formulário, di
 
 O código necessário para adicionar a ação ao modelo está disponível abaixo. O `onclick` atributo no trecho de código tem um script para enviar um link de um formulário por email.
 
-```mxml
+```html
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
   <div class="__FP_boxes-thumbnail">
