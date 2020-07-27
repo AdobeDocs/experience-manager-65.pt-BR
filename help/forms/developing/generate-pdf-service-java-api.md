@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a7c0c4cf-7476-41e7-8d4e-564e6a21458d
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 0%
 
 ---
 
@@ -25,17 +28,17 @@ O SOAP (Java API Quick Start) está disponível para o serviço Gerar PDF.
 
 [Start rápido (modo SOAP): Converter um documento PDF em um arquivo RTF usando a API Java (modo SOAP)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O Start rápido localizado em Programação com AEM Forms baseia-se no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>O Start rápido localizado em Programação com AEM Forms tem por base o Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Converter um documento do Microsoft Word em um documento PDF usando a API Java {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
 O exemplo de código a seguir converte um arquivo do Word chamado *Loan.doc* em um documento PDF chamado *Loan.pdf*. (Consulte [Converter Documentos do Word em Documentos](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -149,7 +152,7 @@ O exemplo de código a seguir converte um arquivo do Word chamado *Loan.doc* em 
 
 O exemplo de código Java a seguir converte o conteúdo HTML localizado em https://www.adobe.com para um documento PDF chamado *AdobeHTML.pdf*. (Consulte [Converter Documentos HTML em Documentos](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)PDF.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -255,7 +258,7 @@ O exemplo de código Java a seguir converte o conteúdo HTML localizado em https
 
 O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um documento RTF chamado *Loan.rtf*. (Consulte [Converter Documentos PDF em formatos](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats)que não sejam de imagem.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
