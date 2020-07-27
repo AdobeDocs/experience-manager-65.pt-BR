@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Os Start rápidos a seguir estão disponíveis para o serviço Tarefa Manager.
 
 [Start rápido (modo SOAP): Recuperando informações de tarefa usando a API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -41,13 +44,13 @@ As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente t
 
 >[!NOTE]
 >
->O Start rápido localizado em Programação com AEM Forms baseia-se no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>O Start rápido localizado em Programação com AEM Forms é baseado no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Atribuindo tarefas usando a API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 O exemplo de código Java a seguir atribui uma tarefa a um usuário chamado Tony Blue.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -180,7 +183,7 @@ O exemplo de código Java a seguir atribui uma tarefa a um usuário chamado Tony
 
 O exemplo de código Java a seguir bloqueia uma tarefa que corresponde ao valor do identificador de tarefa de 2.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -269,7 +272,7 @@ O exemplo de código Java a seguir bloqueia uma tarefa que corresponde ao valor 
 
 O exemplo de código Java a seguir recupera todas as tarefas atribuídas a um usuário chamado *tony blue*. Observe que esse usuário é especificado nas propriedades de conexão. São exibidas informações sobre tarefas retornadas, como seu valor identificador e sua descrição.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -395,7 +398,7 @@ O exemplo de código Java a seguir recupera todas as tarefas atribuídas a um us
 
 O exemplo de código Java a seguir recupera dados de formulário de uma tarefa com o valor identificador 304. Os dados do formulário são gravados em um arquivo XML chamado *FormData.xml* localizado em C:\Adobe.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -501,7 +504,7 @@ O exemplo de código Java a seguir recupera dados de formulário de uma tarefa c
 
 O exemplo de código Java a seguir atualiza um formulário com dados localizados no arquivo *FormData.xml* .
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -611,7 +614,7 @@ O exemplo de código Java a seguir atualiza um formulário com dados localizados
 
 O exemplo de código Java a seguir recupera anexos de arquivo. Cada anexo de arquivo é salvo como um arquivo TXT.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -715,7 +718,7 @@ O exemplo de código Java a seguir recupera anexos de arquivo. Cada anexo de arq
 
 O exemplo de código Java a seguir recupera todas as tarefas baseadas em um processo chamado *MortgageLoan - Prebuild*. O status de cada tarefa retornada é verificado para garantir que seja uma tarefa concluída. Informações como o nome do usuário que concluiu a tarefa e a data em que a tarefa foi concluída são recuperadas e exibidas.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
