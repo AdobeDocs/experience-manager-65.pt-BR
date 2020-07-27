@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Conhecimento prático de HTML e CSS
 
 ## Visão geral {#overview}
 
-A interface do usuário do AEM Forms permite adicionar metadados a qualquer formulário. Os metadados personalizados podem melhorar a experiência do usuário ao listar e pesquisar formulários de sua organização.
+A interface do usuário do AEM Forms permite que você adicione metadados a qualquer formulário. Os metadados personalizados podem melhorar a experiência do usuário ao listar e pesquisar formulários de sua organização.
 
 O Portal de formulários permite que você use metadados personalizados em listagens de formulários. Ao criar modelos personalizados para ativos, você pode modificar seu layout e usar metadados personalizados com seu conjunto de estilos CSS.
 
@@ -43,6 +46,7 @@ Execute as seguintes etapas para criar um modelo personalizado para vários comp
       * Seção de rascunhos: /libs/fd/fp/rascunhosModelo
       * Seção de submissões: /libs/fd/fp/submitTemplate
    * Componente do link: /libs/fd/fp/linkTemplate
+
    Adicione um título que você deseja que seja exibido ao selecionar modelos de layout.
 
    >[!NOTE]
@@ -59,7 +63,7 @@ Execute as seguintes etapas para criar um modelo personalizado para vários comp
 
 A seguir está uma amostra da implementação de um modelo personalizado em que o Portal do Forms adquire um layout personalizado de cartão Gov Geometrixx para o componente de Pesquisa e Lister.
 
-```mxml
+```xml
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">
