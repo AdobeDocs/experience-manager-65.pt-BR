@@ -9,18 +9,21 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '650'
+ht-degree: 0%
 
 ---
 
 
 # Integração de aplicativos de terceiros na área de trabalho do AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
-A área de trabalho do AEM Forms oferece suporte ao gerenciamento de atividades de conclusão e atribuição de tarefas para formulários e documentos. Esses formulários e documentos podem ser formulários XDP, formulários Flex® ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
+A área de trabalho do AEM Forms suporta o gerenciamento de atividades de conclusão e atribuição de tarefas para formulários e documentos. Esses formulários e documentos podem ser formulários XDP, formulários Flex® ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
 
-Esses recursos são aprimorados ainda mais. O AEM Forms agora oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes à área de trabalho do AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho da atribuição e aprovação subsequente de uma tarefa. O AEM Forms fornece uma única experiência unificada para usuários corporativos do AEM Forms para que todas as atribuições ou aprovações de tarefa para os aplicativos suportados possam ser tratadas por meio da área de trabalho do AEM Forms.
+Esses recursos são aprimorados ainda mais. Agora, o AEM Forms oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes à área de trabalho dos AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho da atribuição e aprovação subsequente de uma tarefa. O AEM Forms fornece uma única experiência unificada para usuários corporativos do AEM Forms, para que todas as atribuições ou aprovações de tarefa para os aplicativos suportados possam ser tratadas por meio da área de trabalho do AEM Forms.
 
-Por exemplo, considere o Gerenciamento de correspondência como o candidato de amostra para integração com a área de trabalho do AEM Forms. O Gerenciamento de correspondência tem o conceito de &quot;Carta&quot;, que pode ser renderizada e permite ações.
+Como exemplo, consideremos o Gerenciamento de correspondência como o candidato de amostra para integração com o espaço de trabalho do AEM Forms. O Gerenciamento de correspondência tem o conceito de &quot;Carta&quot;, que pode ser renderizada e permite ações.
 
 ## Criar ativos do Gerenciamento de correspondência {#create-correspondence-management-assets}
 
@@ -64,7 +67,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
 
    Uma amostra de invólucro personalizado está conforme listado abaixo:
 
-   ```java
+   ```javascript
    public LetterInstanceInfo getLetterInstanceInfo(Document dataXML) throws Exception {
    try {
    if(dataXML == null)
