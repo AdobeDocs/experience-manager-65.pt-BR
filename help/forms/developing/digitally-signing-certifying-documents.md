@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '16977'
 ht-degree: 0%
@@ -589,8 +589,8 @@ Ao usar uma credencial nShield HSM da Central para assinar ou certificar um docu
 
 Você pode adicionar o seguinte valor de configuração no arquivo cknfastrc, localizado em /opt/nfast/cknfastrc (ou c:\nfast\cknfastrc):
 
-```as3
- CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Após adicionar esse valor de configuração ao arquivo cknfastrc, a nova credencial poderá ser usada sem reiniciar o servidor de aplicativos J2EE.
@@ -1077,8 +1077,8 @@ Você pode certificar documentos PDF de forma programática usando a API Java do
 
 Você pode adicionar o seguinte valor de configuração no arquivo cknfastrc, localizado em /opt/nfast/cknfastrc (ou c:\nfast\cknfastrc):
 
-```as3
-             CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Após adicionar esse valor de configuração ao arquivo cknfastrc, a nova credencial poderá ser usada sem reiniciar o servidor de aplicativos J2EE.
