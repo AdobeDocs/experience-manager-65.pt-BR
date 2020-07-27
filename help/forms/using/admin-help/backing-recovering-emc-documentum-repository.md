@@ -1,8 +1,8 @@
 ---
 title: Backup e recuperação do repositório EMC Documentum
 seo-title: Backup e recuperação do repositório EMC Documentum
-description: Este documento descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para seu ambiente de formulários AEM.
-seo-description: Este documento descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para seu ambiente de formulários AEM.
+description: Este documento descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para o ambiente de formulários do AEM.
+seo-description: Este documento descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para o ambiente de formulários do AEM.
 uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Para os processos de backup e restauração, há duas tarefas principais:
 
 >[!NOTE]
 >
->Faça backup dos dados dos formulários do AEM antes de fazer backup do sistema EMC Documentum e, subsequentemente, restaurar o sistema EMC Documentum antes de restaurar o ambiente dos formulários do AEM.
+>Faça backup dos dados dos formulários do AEM antes de fazer backup do sistema EMC Documentum e, subsequentemente, restaurar o sistema EMC Documentum antes de restaurar o ambiente de formulários do AEM.
 
 ## Requisitos de software {#software-requirements}
 
@@ -44,7 +47,7 @@ Você precisa dos seguintes módulos do EMC NetWorker:
 * NetWorker Module for the database type used by your Content Server
 * NetWorker Module for Documentum
 
-## Preparação do EMC Document Content Server para backup e recuperação {#preparing-the-emc-document-content-server-for-backup-and-recovery}
+## Preparação do EMC Documento Content Server para backup e recuperação {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
 Esta seção descreve como instalar e configurar o software EMC NetWorker no Content Server.
 
@@ -56,9 +59,9 @@ Esta seção descreve como instalar e configurar o software EMC NetWorker no Con
 
 1. Usando o conteúdo de amostra abaixo, crie um arquivo de configuração chamado *nsrnmd_win.cfg* e salve-o em um local acessível no Servidor de conteúdo. Esse arquivo será chamado pelos comandos de backup e restauração.
 
-   O texto a seguir contém caracteres de formatação para quebras de linha. Se você copiar este texto para um local fora deste documento, copie uma parte de cada vez e remova os caracteres de formatação ao colá-lo no novo local.
+   O texto a seguir contém caracteres de formatação para quebras de linha. Se você copiar esse texto para um local fora desse documento, copie uma parte de cada vez e remova os caracteres de formatação ao colá-lo no novo local.
 
-   ```as3
+   ```shell
     ################################################
     # NetWorker Module for Documentum v1.2 nsrnmd_win.cfg D5.3+ example with
     # typical set of working parameters.  THIS FILE MUST BE SITE-CUSTOMISED.
@@ -219,13 +222,13 @@ Esta seção descreve como instalar e configurar o software EMC NetWorker no Con
 **Criar um dispositivo de backup**
 
 1. Crie um novo diretório no servidor EMC Documentum e compartilhe a pasta dando direitos totais a todos os usuários.
-1. Inicie o EMC NetWorker Administrator e clique em Gerenciamento de mídia > Dispositivos.
+1. Start do EMC NetWorker Administrator e clique em Gerenciamento de mídia > Dispositivos.
 1. Clique com o botão direito do mouse em Dispositivos e selecione Criar.
 1. Digite os seguintes valores e clique em OK:
 
-   **** Nome: O caminho completo do diretório compartilhado
+   **Nome:** O caminho completo do diretório compartilhado
 
-   **** Tipo de mídia: `File`
+   **Tipo de mídia:** `File`
 
 1. Clique com o botão direito do mouse no novo dispositivo e selecione Operações.
 1. Clique em Rótulo, insira um nome, clique em OK e em Montar.
@@ -238,31 +241,31 @@ Execute as seguintes tarefas depois de concluir um backup completo dos dados dos
 
 >[!NOTE]
 >
->Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg criado em [Preparação do EMC Document Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg que você criou ao [Preparar o EMC Documento Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Abra um prompt de comando e altere para `[NetWorker_root]\Legato\nsr\bin`.
 1. Execute o seguinte comando:
 
-   ```as3
+   ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
 ## Restaurar o EMC Documentum Content Server {#restore-the-emc-documentum-content-server}
 
-Execute as seguintes tarefas antes de restaurar os dados dos formulários do AEM. (Consulte [Recuperar os dados](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)dos formulários do AEM.)
+Execute as tarefas a seguir antes de restaurar os dados dos formulários do AEM. (Consulte [Recuperar os dados](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)dos formulários do AEM.)
 
 >[!NOTE]
 >
->Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg criado em [Preparação do EMC Document Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg que você criou ao [Preparar o EMC Documento Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Pare o serviço Docbase que você está restaurando.
-1. Inicie o utilitário Usuário do NetWorker para seu módulo de banco de dados (por exemplo, Usuário do *NetWorker para SQL Server*).
+1. Start do utilitário Usuário do NetWorker para seu módulo de banco de dados (por exemplo, Usuário do *NetWorker para SQL Server*).
 1. Clique na ferramenta Restaurar e selecione Normal.
-1. No lado esquerdo da tela, selecione o banco de dados para sua Docbase e clique no botão Iniciar na barra de ferramentas.
+1. No lado esquerdo da tela, selecione o banco de dados para sua Docbase e clique no botão Start na barra de ferramentas.
 1. Quando o banco de dados for restaurado, reinicie o serviço Docbase.
 1. Abra um prompt de comando e altere para *[NetWorker_root]*\Legato\nsr\bin
 1. Execute o seguinte comando:
 
-   ```as3
+   ```shell
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
