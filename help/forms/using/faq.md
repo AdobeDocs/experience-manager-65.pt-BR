@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
 workflow-type: tm+mt
 source-wordcount: '1970'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que os códigos de barras e o campo de assinatura não aparecem no meu formulário?
 
-   Resposta: Os campos de códigos de barras e assinaturas não são relevantes em cenários HTML ou móveis. Esses campos aparecem como uma área não interativa. Entretanto, o AEM Forms Designer fornece um novo campo de script de assinatura que pode ser usado em vez do campo de assinatura. Também é possível adicionar um widget [](../../forms/using/custom-widgets.md) personalizado para códigos de barras e integrá-lo.
+   Resposta: Os campos de códigos de barras e assinaturas não são relevantes em cenários HTML ou móveis. Esses campos aparecem como uma área não interativa. No entanto, o AEM Forms Designer fornece um novo campo de script de assinatura que pode ser usado em vez do campo de assinatura. Também é possível adicionar um widget [](../../forms/using/custom-widgets.md) personalizado para códigos de barras e integrá-lo.
 
 1. O Rich Text é compatível com o Campo de texto XFA?
 
@@ -43,7 +43,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    1. Use o evento initialize do formulário para ocultar a instância primária do Subformulário. Por exemplo, o código abaixo oculta a instância principal do Subformulário na inicialização do formulário. Ele também verifica o tipo de aplicativo para garantir que o script seja executado somente no cliente:
 
-      ```
+      ```javascript
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
       RepeatSubform.presence = "hidden";
       }
@@ -53,7 +53,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
       O código abaixo verifica a instância oculta do Subformulário. Se a instância oculta do Subformulário for encontrada, exclua a instância oculta do subformulário e insira uma nova instância do Subformulário. Se a instância oculta do Subformulário não for encontrada, basta inserir uma nova instância do Subformulário.
 
-      ```
+      ```javascript
       if (RepeatSubform.presence == "hidden")
       {
       RepeatSubform.instanceManager.insertInstance(0);
@@ -69,7 +69,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
       O código verifica a contagem dos Subformulários. Se a contagem do Subformulário atingir 1, o código oculta o subformulário em vez de excluir o Subformulário.
 
-      ```
+      ```javascript
       if (RepeatSubform.instanceManager.count == 1) {
       RepeatSubform.presence = "hidden";
       } else {
@@ -79,7 +79,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    1. Abra o evento de formulário de pré-envio para edição. Adicione o script a seguir ao evento para remover a instância oculta do script antes de editar. Impede o envio de dados do Subformulário oculto no envio.
 
-      ```
+      ```javascript
       if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
       RepeatSubform.instanceManager.removeInstance(0);
       }
@@ -91,15 +91,15 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que alguns textos estão truncados ou são exibidos incorretamente em HTML5?
 
-   Resposta: Quando um elemento de texto Desenhar ou Legenda não tem espaço suficiente para exibir o conteúdo, o texto aparece truncado na execução do formulário móvel. Essa truncagem também está visível na visualização Design do AEM Forms Designer. Embora esse truncamento possa ser manipulado nos PDFs, ele não pode ser manipulado nos formulários HTML5. Para evitar o problema, forneça espaço suficiente para Desenhar ou Legendar texto, de modo que ele não trunque no modo de design do AEM Forms Designer.
+   Resposta: Quando um elemento de texto Desenhar ou Legenda não tem espaço suficiente para exibir o conteúdo, o texto aparece truncado na execução do formulário móvel. Esse truncamento também é visível na visualização Design do AEM Forms Designer. Embora esse truncamento possa ser manipulado nos PDFs, ele não pode ser manipulado nos formulários HTML5. Para evitar o problema, forneça espaço suficiente para Desenhar ou Legenda de texto, de modo que ele não trunque no modo de design do AEM Forms Designer.
 
 1. Estou observando problemas de layout relacionados a conteúdo ausente ou sobreposto. Qual é a razão?
 
-   Resposta: Se houver um elemento Desenhar texto ou Desenhar imagem junto com outro elemento sobreposto na mesma posição (digamos um retângulo), o conteúdo Desenhar texto não estará visível se for exibido posteriormente na ordem de documento (na visualização Hierarquia do AEM Forms Designer). O PDF oferece suporte a camadas transparentes, mas o HTML/navegador não oferece suporte a camadas transparentes.
+   Resposta: Se houver um elemento Desenhar texto ou Desenhar imagem junto com outro elemento sobreposto na mesma posição (digamos um retângulo), o conteúdo Desenhar texto não estará visível se for exibido posteriormente na ordem do documento (na visualização Hierarquia do AEM Forms Designer). O PDF oferece suporte a camadas transparentes, mas o HTML/navegador não oferece suporte a camadas transparentes.
 
 1. Por que algumas fontes são exibidas no formulário HTML diferentes daquelas usadas ao projetar o formulário?
 
-   Resposta: Os formulários HTML5 não incorporam fontes (ao contrário dos formulários PDF nos quais as fontes são incorporadas dentro do formulário). Para que a versão HTML do formulário seja renderizada como esperado, verifique se as fontes especificadas no XDP estão disponíveis no servidor e no computador cliente. Se as fontes necessárias não estiverem disponíveis no servidor, serão usadas as fontes fallback. Além disso, se você usar fontes no Modelo de formulário que não estão disponíveis no dispositivo cliente, as fontes padrão do navegador serão usadas para renderizar o texto.
+   Resposta: Os formulários HTML5 não incorporam fontes (em contraste com PDF forms nos quais as fontes são incorporadas dentro do formulário). Para que a versão HTML do formulário seja renderizada como esperado, verifique se as fontes especificadas no XDP estão disponíveis no servidor e no computador cliente. Se as fontes necessárias não estiverem disponíveis no servidor, serão usadas as fontes fallback. Além disso, se você usar fontes no Modelo de formulário que não estão disponíveis no dispositivo cliente, as fontes padrão do navegador serão usadas para renderizar o texto.
 
 1. Os atributos vAlign e hAlign são suportados em formulários HTML?
 
@@ -113,13 +113,13 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    Resposta: Sim, os formulários HTML5 têm algumas limitações. Se o número de dígitos for maior que a contagem especificada na cláusula de imagem, os números não serão localizados e serão exibidos na localidade em inglês.
 
-1. Por que formulários HTML têm tamanho maior que formulários PDF?
+1. Por que os formulários HTML são maiores do que os PDF forms?
 
    Muitas estruturas de dados intermediárias e objetos, como dom de formulário, dom de dados e dom de layout, são necessários para renderizar um XDP em um formulário HTML.
 
-   Para formulários PDF, o Adobe Acrobat tem um mecanismo XTG integrado para criar estruturas de dados intermediárias e objetos. O Acrobat também cuida do layout e dos scripts.
+   Para PDF forms, o Adobe Acrobat tem um mecanismo XTG integrado para criar estruturas de dados intermediárias e objetos. O Acrobat também cuida do layout e dos scripts.
 
-   Para formulários HTML5, os navegadores não têm um mecanismo XTG incorporado para criar estruturas de dados intermediárias e objetos de bytes XDP brutos. Assim, para formulários HTML5, estruturas intermediárias são geradas no servidor e enviadas ao cliente. No cliente, o script baseado em javascript e o mecanismo de layout usam essas estruturas intermediárias.
+   Para formulários HTML5, os navegadores não têm um mecanismo XTG incorporado para criar estruturas de dados intermediárias e objetos de bytes XDP brutos. Assim, para formulários HTML5, estruturas intermediárias são geradas no servidor e enviadas ao cliente. No cliente, o mecanismo de layout e o script baseados em JavaScript usam essas estruturas intermediárias.
 
    O tamanho da estrutura intermediária depende do tamanho do XDP original e dos dados unidos ao XDP.
 
@@ -153,7 +153,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
    Resposta: Os formulários HTML5 ignoram as propriedades de aparência personalizadas de botões de opção e caixas de seleção. Os botões de opção e as caixas de seleção são exibidos de acordo com as especificações do navegador subjacente.
 
-1. Quando um formulário HTML5 é aberto em um navegador compatível, a borda dos campos posicionados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Quando o mesmo formulário HTML5 é visualizado no Designer de Formulários, os campos e o layout não aparecem desalinhados e os subformulários aparecem na posição correta. Como corrigir o problema?
+1. Quando um formulário HTML5 é aberto em um navegador compatível, a borda dos campos colocados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Quando o mesmo formulário HTML5 é visualizado no Designer de Formulários, os campos e o layout não aparecem desalinhados e os subformulários aparecem na posição correta. Como corrigir o problema?
 
    Quando um subformulário é definido para continuar o conteúdo e ele tem um elemento de borda oculto, a borda dos campos posicionados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Para resolver o problema, você pode remover ou comentar os elementos ocultos &lt;border> do XDP correspondente. Por exemplo, o seguinte elemento &lt;border> é marcado como um comentário:
 
