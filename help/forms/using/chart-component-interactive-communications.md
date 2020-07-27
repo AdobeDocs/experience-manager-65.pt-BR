@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2646'
+ht-degree: 2%
 
 ---
 
@@ -163,15 +166,15 @@ Configure as seguintes propriedades ao criar gráficos para canais impressos e d
      <li><strong>Cor</strong>da linha: Disponível para gráficos de Linha, Linha e Ponto e Área para especificar a cor da linha no gráfico.</li>
      <li><strong>Cor</strong>do ponto: Disponível para gráficos Ponto e Linha e Ponto para especificar a cor dos pontos no gráfico.<br /> </li>
      <li><strong>Cor</strong>da área: Disponível para gráficos de Área para especificar a cor da área sob a linha no gráfico.</li>
-     <li><strong>Ponto de referência &gt; Tipo de vínculo: </strong>Disponível para gráficos do Quadrante para<strong> </strong>especificar o tipo de vínculo para o ponto de referência. Use texto estático ou propriedade de objeto de modelo de dados para definir o valor do ponto de referência.</li>
+     <li><strong>Ponto de referência &gt; Tipo de vínculo: </strong>Disponível para gráficos Quadrantes para<strong> </strong>especificar o tipo de vínculo para o ponto de referência. Use texto estático ou propriedade de objeto de modelo de dados para definir o valor do ponto de referência.</li>
      <li><strong>Ponto de referência &gt; Eixo dos X: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de Vínculo para especificar o valor do eixo X para o ponto de referência.</code></li>
      <li><strong>Ponto de referência &gt; Eixo Y: </strong>Disponível para gráficos de Quadrante se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de Vínculo para especificar o valor do eixo Y para o ponto de referência.</code></li>
-     <li><strong>Ponto de referência &gt; Objeto de modelo de dados para séries: </strong>Disponível para gráficos Quadrantes de várias séries se você selecionar Objeto <span class="uicontrol">de Modelo de</code> Dados na lista suspensa Tipo de Vínculo. Defina a propriedade do objeto de modelo de dados de formulário para identificar o conjunto do ponto de referência. </code></li>
-     <li><strong>Ponto de referência &gt; Valor do objeto do modelo de dados para séries: </strong>Disponível para gráficos Quadrantes de várias séries se você selecionar Objeto <span class="uicontrol">de Modelo de</code> Dados na lista suspensa Tipo de Vínculo. Use a propriedade de objeto de modelo de dados de formulário para séries e o valor definido neste campo para identificar a série para o ponto de referência.</code></li>
-     <li><strong>Ponto de referência &gt; Objeto de modelo de dados para ponto de referência: </strong>Disponível para gráficos de Quadrante se você selecionar Objeto <span class="uicontrol">de Modelo de</code> Dados na lista suspensa Tipo de Vínculo. Defina uma propriedade de objeto de modelo de dados de formulário que seja um irmão das propriedades plotadas nos eixos X e Y. Além disso, para várias séries, defina uma propriedade de objeto de modelo de dados que seja uma entidade secundária da propriedade de objeto de modelo de dados definida para a série.</code></li>
-     <li><strong>Ponto de referência &gt; Valor do objeto do modelo de dados para o ponto de referência: </strong>Disponível para gráficos de Quadrante se você selecionar Objeto <span class="uicontrol">de Modelo de</code> Dados na lista suspensa Tipo de Vínculo. Use a propriedade de objeto de modelo de dados de formulário para o ponto de referência e o valor definido nesse campo para identificar o ponto de referência do gráfico.<br /> Rótulos <strong>do quadrante &gt; Superior esquerdo:</strong> Disponível para gráficos do Quadrante para especificar o nome do quadrante Superior Esquerdo.</code></li>
+     <li><strong>Ponto de referência &gt; Objeto de modelo de dados para séries: </strong>Disponível para gráficos quadripartidos de várias séries se você selecionar Objeto <span class="uicontrol">de modelo de</code> dados na lista suspensa Tipo de vínculo. Defina a propriedade do objeto de modelo de dados de formulário para identificar o conjunto do ponto de referência. </code></li>
+     <li><strong>Ponto de referência &gt; Valor do objeto do modelo de dados para séries: </strong>Disponível para gráficos quadripartidos de várias séries se você selecionar Objeto <span class="uicontrol">de modelo de</code> dados na lista suspensa Tipo de vínculo. Use a propriedade de objeto de modelo de dados de formulário para séries e o valor definido neste campo para identificar a série para o ponto de referência.</code></li>
+     <li><strong>Ponto de referência &gt; Objeto de modelo de dados para ponto de referência: </strong>Disponível para gráficos do Quadrante se você selecionar Objeto <span class="uicontrol">de Modelo de</code> Dados na lista suspensa Tipo de Vínculo. Defina uma propriedade de objeto de modelo de dados de formulário que seja um irmão das propriedades plotadas nos eixos X e Y. Além disso, para várias séries, defina uma propriedade de objeto de modelo de dados que seja uma entidade secundária da propriedade de objeto de modelo de dados definida para a série.</code></li>
+     <li><strong>Ponto de referência &gt; Valor do objeto do modelo de dados para o ponto de referência: </strong>Disponível para gráficos do Quadrante se você selecionar Objeto <span class="uicontrol">de Modelo de</code> Dados na lista suspensa Tipo de Vínculo. Use a propriedade de objeto de modelo de dados de formulário para o ponto de referência e o valor definido nesse campo para identificar o ponto de referência do gráfico.<br /> <strong>Rótulos do quadrante &gt; Superior esquerdo:</strong> Disponível para gráficos do Quadrante para especificar o nome do quadrante Superior Esquerdo.</code></li>
      <li><strong>Rótulos do quadrante &gt; Parte superior direita:</strong> Disponível para gráficos de Quadrante para especificar o nome do quadrante Superior direito.</li>
-     <li><strong>Rótulos do quadrante &gt; Inferior direito: </strong>Disponível para gráficos do Quadrante para especificar o nome do quadrante inferior direito.</li>
+     <li><strong>Rótulos do quadrante &gt; Inferior direito: </strong>Disponível para gráficos quadripartidos para especificar o nome do quadrante inferior direito.</li>
      <li><strong>Rótulos do quadrante &gt; Inferior esquerdo: </strong>Disponível para gráficos do Quadrante para especificar o nome do quadrante inferior esquerdo.</li>
     </ul> </td>
    <td>Imprimir e Web</td>
@@ -213,7 +216,7 @@ Além de usar as funções padrão em gráficos, você pode gravar funções per
 
 Uma função usa uma matriz ou valores e um nome de categoria como entradas e retorna um valor. Por exemplo:
 
-```
+```javascript
 Multiply(valueArray, category) {
  var val = 1;
  _.each(valueArray, function(value) {
