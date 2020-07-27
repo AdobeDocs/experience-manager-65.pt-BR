@@ -1,15 +1,18 @@
 ---
 title: Personalização da lista de instâncias de processo
 seo-title: Personalização da lista de instâncias de processo
-description: Como personalizar as propriedades exibidas na instância do processo na área de trabalho do AEM Forms.
-seo-description: Como personalizar as propriedades exibidas na instância do processo na área de trabalho do AEM Forms.
+description: Como personalizar as propriedades exibidas na instância do processo no espaço de trabalho do AEM Forms.
+seo-description: Como personalizar as propriedades exibidas na instância do processo no espaço de trabalho do AEM Forms.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 3%
 
 ---
 
@@ -69,13 +72,13 @@ Na lista da instância do processo, para cada instância do processo, a área de
 
 Para exibir a `description` propriedade da instância do processo no cartão de instância do processo, execute as seguintes etapas.
 
-1. Siga as etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
+1. Siga as etapas [Genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
 1. Faça o seguinte:
 
    1. Copie /libs/ws/js/runtime/templates/processinstance.html para/apps/ws/js/runtime/models/, se ele não existir. Clique em **Salvar tudo**.
    1. Adicione div de descrição do processo com class = &#39;processDescription&#39; inprocessinstance.html.
 
-   ```
+   ```jsp
    <div class="processDescription" title="<%= description%>"><%= description%></div>
    ```
 
