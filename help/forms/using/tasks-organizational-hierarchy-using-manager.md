@@ -11,14 +11,17 @@ topic-tags: forms-workspace
 discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
 
 
 # Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerente{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia - relatórios diretos ou indiretos - e executar várias ações neles. As tarefas estão disponíveis na guia Fazer na área de trabalho do AEM Forms. As ações suportadas nas tarefas dos relatórios diretos são:
+Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia — relatórios diretos ou indiretos — e executar várias ações neles. As tarefas estão disponíveis na guia Fazer na área de trabalho dos AEM Forms. As ações suportadas nas tarefas dos relatórios diretos são:
 
 **Encaminhar** uma tarefa do relatório direto para qualquer usuário.
 
@@ -30,10 +33,10 @@ Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas at
 
 O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que o usuário possa buscar somente as tarefas nas quais o usuário tenha permissões de acesso. Usando serviços e implementações da Web de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerentes e relatórios diretos de acordo com suas necessidades.
 
-1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para formulários AEM&quot; no guia [Programação com formulários](https://www.adobe.com/go/learn_aemforms_programming_63) AEM.
+1. Crie um DSC. Para obter mais informações, consulte o tópico Desenvolvimento de componentes para o AEM Forms no Guia de AEM Forms [de programação](https://www.adobe.com/go/learn_aemforms_programming_63) .
 1. No DSC, defina um novo SPI para o gerenciamento de hierarquia para definir relatórios diretos e hierarquia dentro dos usuários do AEM Forms. A seguir, há um exemplo de trecho de código Java™.
 
-   ```as3
+   ```java
    public class MyHierarchyMgmtService
    {
         /*
@@ -68,7 +71,7 @@ O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais 
 
 1. Crie um arquivo component.xml. Certifique-se de que spec-id seja o mesmo que mostrado no trecho de código abaixo. Veja a seguir um trecho de código de amostra que pode ser redefinido.
 
-   ```as3
+   ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">
        <component-id>com.adobe.sample.SampleDSC</component-id>
        <version>1.1</version>
