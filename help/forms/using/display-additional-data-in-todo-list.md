@@ -10,14 +10,17 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
 
 # Exibição de dados adicionais na lista do ToDo{#displaying-additional-data-in-todo-list}
 
-Por padrão, a lista A fazer do espaço de trabalho do AEM Forms exibe o nome e a descrição de exibição da tarefa. No entanto, você pode adicionar outras informações, como data de criação e data de término. Você também pode adicionar ícones e alterar o estilo da exibição.
+Por padrão, a lista AEM Forms do espaço de trabalho A fazer exibe o nome de exibição e a descrição da tarefa. No entanto, você pode adicionar outras informações, como data de criação e data de término. Você também pode adicionar ícones e alterar o estilo da exibição.
 
 ![Uma amostra da guia HTML Workspace To-do mostrando a configuração padrão](assets/html-todo-list.png)
 
@@ -31,12 +34,12 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [este
 
 ## Exibição de informações em uma tarefa {#displaying-information-on-a-task}
 
-1. Siga as etapas [genéricas para personalização](../../forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
+1. Siga as etapas [Genéricas para personalização](../../forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
 1. Para exibir informações adicionais de uma tarefa, os pares de valores chave correspondentes devem ser adicionados dentro do bloco de tarefa de `translation.json`.
 
    Por exemplo, alteração `/apps/ws/locales/en-US/translation.json` para inglês:
 
-   ```
+   ```json
    "task" : {
            "reminder" : {
                "value" : "Reminder",
@@ -112,7 +115,7 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [este
 
 1. Por exemplo, adicione informações dentro do bloco de tarefa:
 
-   ```
+   ```json
    "stepname" : {
                "value" : "Step Name",
                "tooltip" : "This task belongs to __stepName__ step"
@@ -135,17 +138,17 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [este
 
 ## Adicionar entrada no modelo HTML {#adding-entry-in-the-html-template}
 
-Por fim, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar uma, consulte Criar código de área de trabalho do AEM Forms.
+Por fim, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar uma, consulte Código da área de trabalho Criar AEM Forms.
 
 1. Copiar `task.html`:
 
-   * from: `/libs/ws/js/runtime/templates/`
+   * de: `/libs/ws/js/runtime/templates/`
    * para: `/apps/ws/js/runtime/templates/`
 
 1. Adicione as novas informações ao `/apps/ws/js/runtime/templates/task.html`.
 
    Por exemplo, adicione em `div class="taskProperties"`:
 
-   ```
+   ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
