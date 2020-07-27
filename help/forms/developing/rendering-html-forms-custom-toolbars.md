@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2304'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ Você pode obter os arquivos JS e CSS abrindo o arquivo adobe-forms-&lt;appserve
 
 A sintaxe XML a seguir mostra um exemplo de arquivo fscmenu.xml.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -109,7 +112,7 @@ Como parte da personalização de uma barra de ferramentas, é possível alterar
 
 Para alterar o valor de localidade de uma barra de ferramentas, verifique se o arquivo fscmenu.xml contém o idioma que você deseja exibir. A sintaxe XML a seguir mostra o arquivo fscmenu.xml usado para exibir uma barra de ferramentas em francês.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -144,15 +147,15 @@ Para alterar o valor de localidade de uma barra de ferramentas, verifique se o a
 
 >[!NOTE]
 >
->Os Início rápido associados a esta seção usam este arquivo XML para exibir uma barra de ferramentas personalizada francesa, como mostra a ilustração anterior.
+>Os Start rápidos associados a esta seção usam esse arquivo XML para exibir uma barra de ferramentas personalizada francesa, como mostrado na ilustração anterior.
 
-Além disso, especifique um valor de localidade válido chamando o método do `HTMLRenderSpec` objeto `setLocale` e transmitindo um valor de string que especifica o valor de localidade. Por exemplo, passe `fr_FR` para especificar francês. O serviço Forms é fornecido com barras de ferramentas localizadas.
+Além disso, especifique um valor de localidade válido chamando o método do `HTMLRenderSpec` objeto `setLocale` e transmitindo um valor de string que especifica o valor de localidade. Por exemplo, passe `fr_FR` para especificar francês. O serviço de Formulários é fornecido com barras de ferramentas localizadas.
 
 >[!NOTE]
 >
 >Antes de renderizar um formulário HTML que usa uma barra de ferramentas personalizada, é necessário saber como os formulários HTML são renderizados. (Consulte [Renderizar formulários como HTML](/help/forms/developing/rendering-forms-html.md).)
 
-Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+Para obter mais informações sobre o serviço de Formulários, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -192,17 +195,17 @@ Quando o serviço Forms renderiza um formulário HTML, ele retorna um fluxo de d
 
 [Como renderizar um formulário HTML com uma barra de ferramentas personalizada usando a API de serviço da Web](#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Início rápido da API do serviço de formulários](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Start rápidos da API do Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Como renderizar formulários PDF interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Renderizar formulários como HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Criação de aplicativos da Web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Criação de Aplicações web que renderizam formulários](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Renderizar um formulário HTML com uma barra de ferramentas personalizada usando a API Java {#render-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
@@ -222,10 +225,11 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
    * Crie um `HTMLRenderSpec` objeto usando seu construtor.
    * Para renderizar um formulário HTML com uma barra de ferramentas, chame o método do `HTMLRenderSpec` objeto `setHTMLToolbar` e passe um valor `HTMLToolbar` enum. Por exemplo, para exibir uma barra de ferramentas HTML vertical, passe `HTMLToolbar.Vertical`.
    * Especifique o local do arquivo XML fscmenu chamando o método do `HTMLRenderSpec` `setToolbarURI` objeto e transmitindo um valor de string que especifica o local do URI do arquivo XML.
-   * Se aplicável, defina o valor da localidade chamando o método do `HTMLRenderSpec` `setLocale` objeto e transmitindo um valor de string que especifica o valor da localidade. O valor padrão é inglês.
+   * Se aplicável, defina o valor da localidade chamando o método do `HTMLRenderSpec` objeto `setLocale` e transmitindo um valor de string que especifica o valor da localidade. O valor padrão é inglês.
+
    >[!NOTE]
    >
-   >O Início rápido associado a esta seção define este valor como `fr_FR`*.*
+   >Os Start Rápidos associados a esta seção definem esse valor como `fr_FR`*.*
 
 1. Renderizar um formulário HTML
 
@@ -233,11 +237,12 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Um valor `TransformTo` enum que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário HTML compatível com HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * Um `com.adobe.idp.Document` objeto que contém dados a serem unidos ao formulário. Se você não quiser unir dados, passe um `com.adobe.idp.Document` objeto vazio.
-   * O `HTMLRenderSpec` objeto que armazena opções de tempo de execução HTML.
+   * Um `com.adobe.idp.Document` objeto que contém dados para mesclar com o formulário. Se você não quiser unir dados, passe um `com.adobe.idp.Document` objeto vazio.
+   * O `HTMLRenderSpec` objeto que armazena as opções de tempo de execução HTML.
    * Um valor de string que especifica o valor do `HTTP_USER_AGENT` cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Um `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse é um parâmetro opcional e você pode especificar `null` se não deseja anexar arquivos ao formulário.
+
    O `renderHTMLForm` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador da Web do cliente
@@ -245,16 +250,16 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
    * Crie um `com.adobe.idp.Document` objeto chamando o `FormsResult` método do objeto `getOutputContent` .
    * Obtenha o tipo de conteúdo do `com.adobe.idp.Document` objeto chamando seu `getContentType` método.
    * Defina o tipo de conteúdo do `javax.servlet.http.HttpServletResponse` objeto chamando seu `setContentType` método e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
-   * Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
+   * Crie um `javax.servlet.ServletOutputStream` objeto que seja usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
    * Crie um `java.io.InputStream` objeto chamando o `com.adobe.idp.Document` método do `getInputStream` objeto.
    * Crie uma matriz de bytes e preencha-a com o fluxo de dados do formulário, invocando o método do `InputStream` objeto `read` e transmitindo a matriz de bytes como um argumento.
-   * Chame o método do `javax.servlet.ServletOutputStream` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
+   * Chame o método `javax.servlet.ServletOutputStream` `write` do objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
 
 **Consulte também:**
 
-[Início rápido (modo SOAP): Como renderizar um formulário HTML com uma barra de ferramentas personalizada usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Start rápido (modo SOAP): Como renderizar um formulário HTML com uma barra de ferramentas personalizada usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -265,7 +270,7 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
 1. Incluir arquivos de projeto
 
    * Crie classes proxy Java que consomem o serviço Forms WSDL.
-   * Inclua as classes proxy Java no caminho da classe.
+   * Inclua as classes proxy Java no seu caminho de classe.
 
 1. Criar um objeto da API Java do Forms
 
@@ -276,10 +281,11 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
    * Crie um `HTMLRenderSpec` objeto usando seu construtor.
    * Para renderizar um formulário HTML com uma barra de ferramentas, chame o método do `HTMLRenderSpec` objeto `setHTMLToolbar` e passe um valor `HTMLToolbar` enum. Por exemplo, para exibir uma barra de ferramentas HTML vertical, passe `HTMLToolbar.Vertical`.
    * Especifique o local do arquivo XML fscmenu chamando o método do `HTMLRenderSpec` `setToolbarURI` objeto e transmitindo um valor de string que especifica o local do URI do arquivo XML.
-   * Se aplicável, defina o valor da localidade chamando o método do `HTMLRenderSpec` `setLocale` objeto e transmitindo um valor de string que especifica o valor da localidade. O valor padrão é inglês.
+   * Se aplicável, defina o valor da localidade chamando o método do `HTMLRenderSpec` objeto `setLocale` e transmitindo um valor de string que especifica o valor da localidade. O valor padrão é inglês.
+
    >[!NOTE]
    >
-   >O Início rápido associado a esta seção define este valor como `fr_FR`*.*
+   >Os Start Rápidos associados a esta seção definem esse valor como `fr_FR`*.*
 
 1. Renderizar um formulário HTML
 
@@ -287,8 +293,8 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão do nome do arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Um valor `TransformTo` enum que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário HTML compatível com HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * Um `BLOB` objeto que contém dados a serem unidos ao formulário. Se você não deseja unir dados, passe `null`.
-   * O `HTMLRenderSpec` objeto que armazena opções de tempo de execução HTML.
+   * Um `BLOB` objeto que contém dados para mesclar com o formulário. Se você não deseja unir dados, passe `null`.
+   * O `HTMLRenderSpec` objeto que armazena as opções de tempo de execução HTML.
    * Um valor de string que especifica o valor do `HTTP_USER_AGENT` cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Você pode passar uma string vazia se não quiser definir esse valor.
    * Um `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML.
    * Um `java.util.HashMap` objeto que armazena anexos de arquivo. Esse parâmetro é opcional e você pode especificar `null` se não pretende anexar arquivos ao formulário.
@@ -298,6 +304,7 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
    * Um `javax.xml.rpc.holders.StringHolder` objeto vazio que é preenchido pelo `renderHTMLForm` método. Este argumento armazena o valor de localidade.
    * Um `javax.xml.rpc.holders.StringHolder` objeto vazio que é preenchido pelo `renderHTMLForm` método. Esse argumento armazena o valor de renderização HTML usado.
    * Um `com.adobe.idp.services.holders.FormsResultHolder` objeto vazio que conterá os resultados dessa operação.
+
    O `renderHTMLForm` método preenche o `com.adobe.idp.services.holders.FormsResultHolder` objeto passado como o último valor do argumento com um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador da Web do cliente
@@ -306,10 +313,10 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
    * Crie um `BLOB` objeto que contenha dados de formulário chamando o `FormsResult` método do `getOutputContent` objeto.
    * Obtenha o tipo de conteúdo do `BLOB` objeto chamando seu `getContentType` método.
    * Defina o tipo de conteúdo do `javax.servlet.http.HttpServletResponse` objeto chamando seu `setContentType` método e transmitindo o tipo de conteúdo do `BLOB` objeto.
-   * Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
+   * Crie um `javax.servlet.ServletOutputStream` objeto que seja usado para gravar o fluxo de dados do formulário no navegador da Web do cliente, chamando o `javax.servlet.http.HttpServletResponse` `getOutputStream` método do objeto.
    * Crie uma matriz de bytes e preencha-a chamando o método do `BLOB` objeto `getBinaryData` . Essa tarefa atribui o conteúdo do `FormsResult` objeto à matriz de bytes.
    * Chame o método do `javax.servlet.http.HttpServletResponse` `write` objeto para enviar o fluxo de dados do formulário para o navegador da Web do cliente. Passe a matriz de bytes para o `write` método.
 
 **Consulte também:**
 
-[Invocar formulários AEM usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocar AEM Forms usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
