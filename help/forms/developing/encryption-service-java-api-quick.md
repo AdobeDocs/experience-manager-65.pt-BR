@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 [Start rápido (modo SOAP): Determinar o tipo de criptografia usando a API Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente t
 
 O exemplo de código Java a seguir criptografa um documento PDF chamado *Loan.pdf* com um valor de senha de `OpenPassword`. A senha principal é `PermissionPassword`. O documento PDF protegido é salvo como um arquivo PDF chamado *EncryptLoan.pdf*. (Consulte [Criptografar Documentos PDF com uma senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -157,9 +160,9 @@ O exemplo de código Java a seguir criptografa um documento PDF chamado *Loan.pd
 
 ## Start rápido (modo SOAP): Remoção da criptografia baseada em senha usando a API Java {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-O exemplo de código Java a seguir remove a criptografia baseada em senha de um documento PDF chamado *EncryptLoan.pdf*. O valor da senha mestre usado para remover a criptografia baseada em senha é *PermissionPassword*. O documento PDF não protegido é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Remoção da criptografia](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)de senha.)
+O exemplo de código Java a seguir remove a criptografia baseada em senha de um documento PDF chamado *EncryptLoan.pdf*. O valor da senha principal usado para remover a criptografia baseada em senha é *PermissionPassword*. O documento PDF não protegido é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Remoção da criptografia](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)de senha.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -256,7 +259,7 @@ O exemplo de código Java a seguir remove a criptografia baseada em senha de um 
 
 O exemplo de código Java a seguir criptografa um documento PDF chamado *Loan.pdf* com um certificado chamado *Encryption.cer*. O documento PDF criptografado é salvo como um arquivo PDF chamado *EncryptLoanCert.pdf*. (Consulte [Criptografar Documentos PDF com certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -385,7 +388,7 @@ O exemplo de código Java a seguir criptografa um documento PDF chamado *Loan.pd
 
 O exemplo de código Java a seguir remove a criptografia baseada em certificado de um documento PDF chamado *EncryptLoanCert.pdf*. O alias da chave pública usado para remover a criptografia é `Encryption`. O documento PDF não protegido é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Remoção da criptografia](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption)baseada em certificados.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -482,7 +485,7 @@ O exemplo de código Java a seguir remove a criptografia baseada em certificado 
 
 O exemplo de código Java a seguir desbloqueia um documento PDF criptografado por senha chamado *EncryptLoan.pdf*. (Consulte [Desbloquear Documentos](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)PDF criptografados.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -578,7 +581,7 @@ O exemplo de código Java a seguir desbloqueia um documento PDF criptografado po
 
 O exemplo de código Java a seguir determina o tipo de criptografia que está protegendo um documento PDF chamado *EncryptLoan.pdf*. (Consulte [Determinando o tipo](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type)de criptografia.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
