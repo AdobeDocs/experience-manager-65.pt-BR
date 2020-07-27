@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
 
 ---
 
@@ -28,6 +31,7 @@ Nessa orquestração de amostra, um funcionário envia um formulário de solicit
    * empid
    * reason
    * duration
+
    >[!NOTE]
    >
    >Esse renderizador é o modelo de página de resumo.
@@ -36,7 +40,7 @@ Nessa orquestração de amostra, um funcionário envia um formulário de solicit
 
    `apps/Employees/PtoApplication/html.esp`
 
-   ```
+   ```html
    <html>
      <body>
        <table>
@@ -82,6 +86,6 @@ Nessa orquestração de amostra, um funcionário envia um formulário de solicit
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Na área de trabalho do AEM Forms, quando você abre uma tarefa, o URL de resumo acessa o nó CRX e o renderizador HTML exibe o resumo.
+Na área de trabalho AEM Forms, quando você abre uma tarefa, o URL de resumo acessa o nó CRX e o renderizador HTML exibe o resumo.
 
 O layout de resumo pode ser alterado sem modificar o processo. O renderizador HTML exibe o resumo adequadamente.
