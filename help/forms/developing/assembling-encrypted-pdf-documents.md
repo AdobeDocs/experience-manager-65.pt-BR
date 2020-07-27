@@ -1,6 +1,6 @@
 ---
-title: Montagem de documentos PDF criptografados
-seo-title: Montagem de documentos PDF criptografados
+title: Montagem de Documentos PDF criptografados
+seo-title: Montagem de Documentos PDF criptografados
 description: 'null'
 seo-description: 'null'
 uuid: d0948ec9-ab67-4fe4-9062-1c4938460b43
@@ -11,18 +11,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1639'
+ht-degree: 0%
 
 ---
 
 
-# Montagem de documentos PDF criptografados {#assembling-encrypted-pdf-documents}
+# Montagem de Documentos PDF criptografados {#assembling-encrypted-pdf-documents}
 
-É possível criptografar um documento PDF com uma senha usando o serviço Assembler. Depois que um documento PDF é criptografado com uma senha, o usuário deve especificar a senha para exibir o documento PDF no Adobe Reader ou Acrobat. Para criptografar um documento PDF com uma senha, o documento DX deve conter valores de elemento de criptografia necessários para criptografar um documento PDF.
+É possível criptografar um documento PDF com uma senha usando o serviço Assembler. Depois que um documento PDF é criptografado com uma senha, o usuário deve especificar a senha para visualização do documento PDF no Adobe Reader ou Acrobat. Para criptografar um documento PDF com uma senha, o documento DDX deve conter valores de elementos de criptografia necessários para criptografar um documento PDF.
 
 Para a finalidade desta discussão, suponha que o seguinte documento DX seja usado.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
         <PDF result="EncryptLoan.pdf" encryption="userProtect">
@@ -34,19 +37,19 @@ Para a finalidade desta discussão, suponha que o seguinte documento DX seja usa
  </DDX>
 ```
 
-Neste documento DDX, observe que o valor é atribuído ao atributo de origem `inDoc`. Nas situações em que apenas um documento PDF de entrada é passado para o serviço Assembler e um documento PDF é retornado e você chama a `invokeOneDocument` operação, atribua o valor `inDoc` ao atributo de origem PDF. Ao chamar a `invokeOneDocument` operação, o `inDoc` valor é uma chave predefinida que deve ser especificada no documento DX.
+Nesse documento DDX, observe que o valor é atribuído ao atributo de origem `inDoc`. Nas situações em que apenas um documento PDF de entrada é passado para o serviço Assembler e um documento PDF é retornado e você chama a operação, atribua o valor `invokeOneDocument` `inDoc` ao atributo de origem PDF. Ao chamar a `invokeOneDocument` operação, o `inDoc` valor é uma chave predefinida que deve ser especificada no documento DDX.
 
-Por outro lado, ao passar dois ou mais documentos PDF de entrada para o serviço Assembler, é possível chamar a `invokeDDX` operação. Nessa situação, atribua o nome do arquivo do documento PDF de entrada ao `source` atributo.
+Por outro lado, ao passar dois ou mais documentos PDF de entrada para o serviço Assembler, você pode chamar a operação. `invokeDDX` Nessa situação, atribua o nome do arquivo do documento PDF de entrada ao `source` atributo.
 
-O serviço de criptografia não precisa fazer parte da instalação de formulários do AEM para criptografar um documento PDF com uma senha. Consulte [Criptografando e descriptografando documentos](/help/forms/developing/encrypting-decrypting-pdf-documents.md)PDF.
-
->[!NOTE]
->
->Para obter mais informações sobre o serviço Assembler, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+O serviço de criptografia não precisa fazer parte da instalação de formulários do AEM para criptografar um documento PDF com uma senha. Consulte [Criptografando e descriptografando Documentos](/help/forms/developing/encrypting-decrypting-pdf-documents.md)PDF.
 
 >[!NOTE]
 >
->Para obter mais informações sobre um documento DX, consulte Serviço de [Montagem e Referência](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX.
+>Para obter mais informações sobre o serviço Assembler, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+
+>[!NOTE]
+>
+>Para obter mais informações sobre um documento DDX, consulte [Assembler Service e DDX Reference](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Resumo das etapas {#summary-of-steps}
 
@@ -69,10 +72,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se os AEM Forms forem implantados em JBoss)
 
-se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms está implantado. Para obter informações sobre a localização de todos os arquivos JAR do AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms está implantado. Para obter informações sobre a localização de todos os arquivos JAR de AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java de AEM Forms.
 
 **Criar um cliente Assembler**
 
@@ -92,19 +95,19 @@ Você pode definir opções de tempo de execução que controlam o comportamento
 
 **Criptografar o documento**
 
-Depois de criar o cliente do serviço Assembler, consulte o documento DX que contém informações de criptografia, consulte um documento PDF não protegido e defina as opções de tempo de execução, e você poderá chamar a `invokeOneDocument` operação. Como apenas um documento PDF de entrada está sendo transmitido ao serviço Assembler (e um documento está sendo retornado), você pode usar a `invokeOneDocument` operação em vez da `invokeDDX` .
+Depois de criar o cliente do serviço Assembler, consulte o documento DDX que contém informações de criptografia, consulte um documento PDF não protegido e defina opções de tempo de execução, você pode chamar a `invokeOneDocument` operação. Como apenas um documento PDF de entrada está sendo transmitido ao serviço Assembler (e um documento está sendo retornado), você pode usar a operação em vez da `invokeOneDocument` operação `invokeDDX` .
 
 **Salvar o documento PDF criptografado**
 
-Se apenas um único documento PDF estiver sendo passado para o serviço Assembler, o serviço Assembler retornará um único documento em vez de um objeto de coleção. Ou seja, ao invocar a `invokeOneDocument` operação, um único documento é retornado. Como o documento DX mencionado nesta seção contém informações de criptografia, o serviço Assembler retorna um documento PDF criptografado com uma senha.
+Se apenas um único documento PDF estiver sendo transmitido ao serviço Assembler, o serviço Assembler retornará um único documento em vez de um objeto de coleção. Ou seja, ao chamar a `invokeOneDocument` operação, um único documento é retornado. Como o documento DX mencionado nesta seção contém informações de criptografia, o serviço Assembler retorna um documento PDF criptografado com uma senha.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Montagem Programática de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[Montagem programática de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
 ## Montagem de um documento PDF criptografado usando a API Java {#assemble-an-encrypted-pdf-document-using-the-java-api}
 
@@ -119,7 +122,7 @@ Se apenas um único documento PDF estiver sendo passado para o serviço Assemble
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento DX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DX.
+   * Crie um `java.io.FileInputStream` objeto que represente o documento DDX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DX.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
 
 1. Referência a um documento PDF não protegido.
@@ -136,9 +139,10 @@ Se apenas um único documento PDF estiver sendo passado para o serviço Assemble
 
    Chame o método do `AssemblerServiceClient` objeto `invokeOneDocument` e passe os seguintes valores:
 
-   * Um `com.adobe.idp.Document` objeto que representa o documento DX. Certifique-se de que esse documento DDX contenha o valor `inDoc` do elemento de origem do PDF.
+   * Um `com.adobe.idp.Document` objeto que representa o documento DDX. Certifique-se de que esse documento DDX contenha o valor `inDoc` do elemento de origem do PDF.
    * Um `com.adobe.idp.Document` objeto que contém o documento PDF não protegido.
    * Um `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log de trabalhos.
+
    O `invokeOneDocument` método retorna um `com.adobe.idp.Document` objeto que contém um documento PDF criptografado por senha.
 
 1. Salve o documento PDF criptografado.
@@ -148,7 +152,7 @@ Se apenas um único documento PDF estiver sendo passado para o serviço Assemble
 
 **Consulte também:**
 
-[Início rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[Start rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
 ## Montagem de um documento PDF criptografado usando a API de serviço da Web {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
 
@@ -158,12 +162,12 @@ Se apenas um único documento PDF estiver sendo passado para o serviço Assemble
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Criar um cliente Assembler.
 
    * Crie um `AssemblerServiceClient` objeto usando seu construtor padrão.
-   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
+   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `AssemblerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -175,7 +179,7 @@ Se apenas um único documento PDF estiver sendo passado para o serviço Assemble
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DX.
+   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DDX.
    * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento DX e o modo para abrir o arquivo.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` `Read` objeto e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
@@ -201,6 +205,7 @@ Se apenas um único documento PDF estiver sendo passado para o serviço Assemble
    * Um `BLOB` objeto que representa o documento DDX
    * Um `BLOB` objeto que representa o documento PDF não protegido
    * Um `AssemblerOptionSpec` objeto que especifica opções de tempo de execução
+
    O `invokeOneDocument` método retorna um `BLOB` objeto que contém um documento PDF criptografado.
 
 1. Salve o documento PDF criptografado.
@@ -212,4 +217,4 @@ Se apenas um único documento PDF estiver sendo passado para o serviço Assemble
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
