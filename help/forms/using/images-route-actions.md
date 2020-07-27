@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -44,13 +47,13 @@ Para personalizar as imagens usadas em ações de rota, execute as etapas descri
 
 ## pop-up de ação da tarefa da Lista da Tarefa {#task-list-task-action-popup}
 
-1. Crie um pop-up de ação de lista de tarefa, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)de área de trabalho do AEM Forms. É necessário usar o pacote dev.
+1. Crie um pop-up de ação de lista de tarefa, consulte [Criar código](introduction-customizing-html-workspace.md#building-html-workspace-code)de espaço de trabalho de AEM Forms. É necessário usar o pacote dev.
 
 1. Copie `/libs/ws/js/runtime/templates/task.html` para `/apps/ws/js/runtime/templates/task.html`.
 
 1. Se o nome do estilo CSS for igual ao nome da ação de rota proveniente do servidor, modifique o seguinte código em `/apps/ws/js/runtime/templates/task.html`:
 
-   ```
+   ```jsp
    <%if(routeList == null){%>
                <li>
                    <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -80,7 +83,7 @@ Para personalizar as imagens usadas em ações de rota, execute as etapas descri
 
 1. Se o nome do estilo CSS for diferente do nome da ação de rota proveniente do servidor, modifique o seguinte código em `/apps/ws/js/runtime/templates/task.html`. Ele adiciona uma pilha das condições do `if-else` servlet para mapear o estilo com o nome da ação da rota.
 
-```
+```jsp
 <%if(routeList == null){%>
             <li>
                 <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -120,7 +123,7 @@ To
 
 1. Se o nome do estilo CSS for igual ao nome da ação de rota proveniente do servidor, modifique o seguinte código em `/apps/ws/js/runtime/templates/taskdetails.html`:
 
-   ```
+   ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                            <li class="routeAction">
                                <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route"><%= availableCommands.directCommands[i]%></a>
@@ -140,7 +143,7 @@ To
 
 1. Se o nome do estilo CSS for diferente do nome da ação de rota proveniente do servidor, modifique o seguinte código em `/apps/ws/js/runtime/templates/taskdetails.html`. Ele adiciona uma pilha de condições de `if-else` servlet para mapear o estilo com o nome da ação de rota.
 
-   ```
+   ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                            <li class="routeAction">
                                <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route"><%= availableCommands.directCommands[i]%></a>
