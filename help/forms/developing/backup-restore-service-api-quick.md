@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ O SOAP (Java API Quick Start) está disponível para a API de serviço de backup
 
 [Start rápido: Sair do modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente t
 
 O exemplo de código Java a seguir entra no modo de backup com uma etiqueta exclusiva por duas horas. Depois que o tempo de backup expira ou se o modo de backup for explicitamente encerrado, o servidor de formulários retornará à remoção de arquivos do Armazenamento Global Documento. (Consulte [Entrando no modo de backup no servidor](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)de formulários.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -148,7 +151,7 @@ O exemplo de código Java a seguir entra no modo de backup com uma etiqueta excl
 
 O exemplo de código Java a seguir faz com que o Forms Server saia do modo de backup e volte para a remoção de arquivos do Armazenamento do Documento Global. (Consulte [Saindo do Modo de backup no servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formulários.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
