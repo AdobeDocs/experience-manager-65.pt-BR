@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -149,13 +152,13 @@ Considere um cenário em que você deseja preencher a lista suspensa **Estado** 
    ![Criar um nó suspenso](assets/dropdown-node.png)
 
 1. Compacte o nó de conteúdo e incorpore o arquivo .jar em um local específico (por exemplo, /apps/myfolder/demo/install/). Implante o mesmo arquivo no servidor.
-1. Crie um formulário adaptável e adicione duas listas suspensas, País e Estado. A lista de países pode incluir os nomes dos países. A lista Estado pode preencher dinamicamente os nomes de estados para o país selecionado na primeira lista.
+1. Crie um formulário adaptável e adicione duas listas suspensas, País e Estado. A lista País pode incluir os nomes dos países. A lista State pode preencher dinamicamente os nomes dos estados para o país selecionado na primeira lista.
 
-   Adicione os nomes dos países a serem exibidos na lista de países. Na lista Estado, adicione um script para preenchê-lo com base no nome do país na lista País.
+   Adicione os nomes dos países a serem exibidos na lista do país. Na lista State (Estado), adicione um script para preenchê-lo com base no nome do país na lista Country (País).
 
-   ![Adicionando nomes](assets/country-dropdown.png) de países ![Adicionando script para preencher nomes](assets/state-dropdown.png) de estado Listas suspensas ![País e Estado para reunir](assets/2dropdowns.png)
+   ![Adicionando nomes](assets/country-dropdown.png) de países ![Adicionando script para preencher nomes](assets/state-dropdown.png) de estado ![País e Estado listas suspensas para reunir](assets/2dropdowns.png)
 
-   ```
+   ```javascript
    JSON.parse(
        $.ajax({
            url: "/apps/myfolder/demo/dropdown",
