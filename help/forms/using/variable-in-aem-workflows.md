@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2113'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Execute as seguintes etapas para criar uma variável:
    * Modelo de dados de formulário - especifique um caminho para o Modelo de dados de formulário.
    * ArrayList - especifique um subtipo para a coleção.
 
-1. Especifique uma descrição opcional para a variável e toque em ![](assets/done_icon.png) para salvar as alterações. A variável é exibida na lista disponível no painel esquerdo.
+1. Especifique uma descrição opcional para a variável e toque em ![done_icon](assets/done_icon.png) para salvar as alterações. A variável é exibida na lista disponível no painel esquerdo.
 
 Ao criar variáveis, considere as seguintes práticas:
 
@@ -97,10 +97,10 @@ Você também pode atualizar elementos específicos de uma variável de tipo JSO
 Execute as seguintes etapas para adicionar o mapeamento entre as variáveis:
 
 1. Na página de edição do fluxo de trabalho, toque no ícone Etapas disponível no sidekick do modelo do fluxo de trabalho.
-1. Arraste e solte a etapa **Definir variável** no editor de fluxo de trabalho, toque na etapa e selecione ![](assets/configure_icon.png) (Configurar).
+1. Arraste e solte a etapa **Definir variável** no editor de fluxo de trabalho, toque na etapa e selecione ![configure_icon](assets/configure_icon.png) (Configurar).
 1. Na caixa de diálogo Definir variável, selecione **[!UICONTROL Mapeamento]** > **[!UICONTROL Adicionar mapeamento]**.
 1. Na seção Variável **de** mapa, selecione a variável para armazenar dados, selecione o modo de mapeamento e especifique um valor para armazenar na variável. Os modos de mapeamento variam com base no tipo de variável.
-1. Mapeie mais variáveis para fazer uma expressão significativa. Toque em ![](assets/done_icon.png) para salvar as alterações.
+1. Mapeie mais variáveis para fazer uma expressão significativa. Tap ![done_icon](assets/done_icon.png) to save the changes.
 
 ### Exemplo 1: Query de uma variável XML para definir o valor de uma variável de string {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -273,8 +273,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Editar uma variável {#edit-a-variable}
 
 1. Na página editar fluxo de trabalho, toque no ícone Variáveis disponível no sidekick do modelo de fluxo de trabalho. A seção Variáveis no painel esquerdo exibe todas as variáveis existentes.
-1. Toque no ícone ![](assets/edit.png) (Editar) ao lado do nome da variável que você deseja editar.
-1. Edite as informações da variável e toque ![](assets/done_icon.png) para salvar as alterações. Não é possível editar os campos **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
+1. Toque no ícone ![editar](assets/edit.png) (Editar) ao lado do nome da variável que você deseja editar.
+1. Edite as informações da variável e toque em ![done_icon](assets/done_icon.png) para salvar as alterações. Não é possível editar os campos **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
 
 ## Excluir uma variável {#delete-a-variable}
 
@@ -284,7 +284,7 @@ Execute as seguintes etapas para excluir uma variável:
 
 1. Na página editar fluxo de trabalho, toque no ícone Variáveis disponível no sidekick do modelo de fluxo de trabalho. A seção Variáveis no painel esquerdo exibe todas as variáveis existentes.
 1. Toque no ícone Excluir ao lado do nome da variável que deseja excluir.
-1. Toque em ![](assets/done_icon.png) para confirmar e excluir a variável.
+1. Toque em ![done_icon](assets/done_icon.png) para confirmar e excluir a variável.
 
 ## Referências {#references}
 
