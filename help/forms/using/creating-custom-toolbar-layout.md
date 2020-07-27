@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 
 Ao criar um formulário adaptável, é possível especificar um layout da barra de ferramentas para o formulário. O layout da barra de ferramentas define os comandos e o layout da barra de ferramentas no formulário.
 
-O layout da barra de ferramentas usa muito o processamento no cliente, orientado por códigos complexos de JavaScript e CSS. Organizar e otimizar a entrega desse código pode ser um problema complicado. Para ajudar a lidar com esse problema, o AEM fornece Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página final para carregar o código correto. Para obter informações detalhadas, consulte [Como as bibliotecas do lado do cliente funcionam no AEM.](/help/sites-developing/clientlibs.md)
+O layout da barra de ferramentas usa muito o processamento no cliente, orientado por códigos complexos de JavaScript e CSS. Organizar e otimizar a entrega desse código pode ser um problema complicado. Para ajudar a lidar com esse problema, o AEM fornece Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página final para carregar o código correto. Para obter informações detalhadas, consulte [Como as bibliotecas do lado do cliente funcionam no AEM.](/help/sites-developing/clientlibs.md)
 
 ![Layout de amostra da barra de ferramentas](assets/default_toolbar_layout.png)
 
@@ -37,7 +40,7 @@ Além disso, é possível criar um layout personalizado da barra de ferramentas.
 
 O procedimento a seguir detalha as etapas para criar uma barra de ferramentas personalizada que exibe três ações na barra de ferramentas e as outras ações em uma lista suspensa na barra de ferramentas.
 
-O pacote de conteúdo anexado contém todo o código descrito abaixo. Após instalar o pacote de conteúdo, abra `/content/forms/af/CustomLayoutDemo.html` para exibir a demonstração de layout personalizada da barra de ferramentas.
+O pacote de conteúdo anexado contém todo o código descrito abaixo. Depois de instalar o pacote de conteúdo, abra `/content/forms/af/CustomLayoutDemo.html` a visualização da demonstração de layout personalizada da barra de ferramentas.
 
 CustomToolbarLayoutDemo.zip
 
@@ -73,9 +76,9 @@ CustomToolbarLayoutDemo.zip
 
    O novo layout personalizado da barra de ferramentas é exibido na configuração da caixa de diálogo Barra de ferramentas **adaptável** .
 
-   ![Lista de layouts disponíveis da barra de ferramentas](assets/toolbar4.png)
+   ![Lista dos layouts disponíveis da barra de ferramentas](assets/toolbar4.png)
 
-   Lista de layouts disponíveis da barra de ferramentas
+   Lista dos layouts disponíveis da barra de ferramentas
 
    >[!NOTE]
    >
@@ -91,7 +94,7 @@ CustomToolbarLayoutDemo.zip
 
    Amostra `customToolbarLayout.jsp`:
 
-   ```php
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <cq:includeClientLib categories="customtoolbarlayout" />
    <c:if test="${isEditMode}">
@@ -109,7 +112,7 @@ CustomToolbarLayoutDemo.zip
 
    Amostra `toolBarCommon.jsp`:
 
-   ```php
+   ```jsp
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
    <%--------------------
    This code iterates over all the tool bar items using the guideToolbar bean.
@@ -228,7 +231,7 @@ CustomToolbarLayoutDemo.zip
 >
 >A descrição atualizada na etapa anterior é exibida na lista suspensa Layout.
 
-![Exibição de área de trabalho da barra de ferramentas de layout personalizado](assets/toolbar_1.png)
+![visualização da área de trabalho da barra de ferramentas de layout personalizado](assets/toolbar_1.png)
 
-Exibição de área de trabalho da barra de ferramentas de layout personalizado
+visualização da área de trabalho da barra de ferramentas de layout personalizado
 
