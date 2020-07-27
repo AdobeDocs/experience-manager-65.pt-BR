@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '4460'
+ht-degree: 4%
 
 ---
 
@@ -677,13 +680,13 @@ Complete as etapas a seguir para exibir a propriedade personalizada na interface
 
    1. Adicione o seguinte à linha 19 do arquivo (após a declaração de direitos autorais).
 
-      ```
+      ```jsp
       <%@page import="java.util.Map"%>
       ```
 
    1. Adicione o seguinte código de uma função que obtém valor para cada propriedade personalizada ao final do arquivo:
 
-      ```
+      ```jsp
       <%!
           private String getCustomPropertyValue(Map<String, Object> extendedProperties, String propertyName) {
       
@@ -699,7 +702,7 @@ Complete as etapas a seguir para exibir a propriedade personalizada na interface
 
    1. Adicione o seguinte antes de iniciar a tag &lt;tr> (&lt;tr &lt;%= atrs.build() %>>):
 
-      ```
+      ```jsp
       <%
           String GeoLocation = "";
           if (asset != null) {
@@ -715,7 +718,7 @@ Complete as etapas a seguir para exibir a propriedade personalizada na interface
 
    1. Para exibir a nova propriedade na interface do usuário, adicione uma tag TD como segue antes da tag de fechamento tr (&lt;/tr>):
 
-      ```
+      ```jsp
       <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
       ```
 
@@ -878,7 +881,7 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
    </tbody>
    </table>
 
-1. A personalização mostra os resultados da pesquisa na visualização de Lista para todos os consoles, incluindo Formulários e Documentos, Ativos e Sites.
+1. A personalização mostra os resultados da pesquisa na visualização da Lista para todos os consoles, incluindo Formulários e Documentos, Ativos e Sites.
 
 ## Alterar a visualização padrão da página de ativos {#change-default-view-of-the-assets-page}
 
