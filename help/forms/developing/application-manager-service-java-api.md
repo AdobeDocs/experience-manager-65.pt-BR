@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +28,9 @@ O SOAP (Java API Quick Start) está disponível para o serviço Application Mana
 
 >[!NOTE]
 >
->As APIs do gerenciador de aplicativos suportam somente arquivos LCA do AEM Forms. Ele não suporta arquivos LCA do LiveCycle ES2 e ES4.
+>As APIs do gerenciador de aplicativos suportam apenas arquivos LCA AEM Forms. Ele não suporta arquivos LCA do LiveCycle ES2 e ES4.
 
-As operações do AEM Forms podem ser executadas usando a API fortemente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API fortemente tipada dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -37,7 +40,7 @@ As operações do AEM Forms podem ser executadas usando a API fortemente digitad
 
 O exemplo de código Java a seguir importa um aplicativo com base em um arquivo LCA existente chamado *EncryptDocument.lca*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -139,7 +142,7 @@ O exemplo de código Java a seguir importa um aplicativo com base em um arquivo 
 
 O exemplo de código Java a seguir remove um aplicativo chamado *EncryptDocument*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
