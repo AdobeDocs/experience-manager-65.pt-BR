@@ -1,15 +1,18 @@
 ---
 title: Personalização da página de detalhes da tarefa
 seo-title: Personalização da página de detalhes da tarefa
-description: Como personalizar a página de detalhes da tarefa na área de trabalho do AEM Forms para modificar as informações padrão exibidas sobre uma tarefa.
-seo-description: Como personalizar a página de detalhes da tarefa na área de trabalho do AEM Forms para modificar as informações padrão exibidas sobre uma tarefa.
+description: Como personalizar a página de detalhes da tarefa na área de trabalho de AEM Forms para modificar as informações padrão exibidas sobre uma tarefa.
+seo-description: Como personalizar a página de detalhes da tarefa na área de trabalho de AEM Forms para modificar as informações padrão exibidas sobre uma tarefa.
 uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +23,8 @@ A página de detalhes da tarefa contém informações sobre uma tarefa e seus pr
 
 Você pode adicionar as seguintes informações à página de detalhes da tarefa:
 
-* Informações disponíveis no objeto JSON de uma tarefa (seção Tarefa na área de trabalho do [AEM Forms Descrição](/help/forms/using/html-workspace-json-object-description.md)do objeto JSON)
-* Informações disponíveis no objeto JSON de uma instância de processo (seção de instância de processo na área de trabalho do [AEM Forms Descrição](/help/forms/using/html-workspace-json-object-description.md)de objeto JSON)
+* Informações disponíveis no objeto JSON de uma tarefa (seção Tarefa na área de trabalho [AEM Forms Descrição](/help/forms/using/html-workspace-json-object-description.md)do objeto JSON)
+* Informações disponíveis no objeto JSON de uma instância do processo (seção da instância do processo na área de trabalho do [AEM Forms Descrição](/help/forms/using/html-workspace-json-object-description.md)do objeto JSON)
 
 Para personalizar a página de detalhes da tarefa:
 
@@ -32,7 +35,7 @@ Para personalizar a página de detalhes da tarefa:
 
    Por exemplo, para adicionar informações sobre a Seleção de rota obrigatória na página de detalhes da tarefa, adicione o seguinte par de valores chave no bloco de tarefa:
 
-   ```
+   ```json
    "todo" : {
        .
        .
@@ -82,6 +85,6 @@ Para personalizar a página de detalhes da tarefa:
 
 >[!NOTE]
 >
->Para personalizar a página de detalhes da tarefa com tarefas criadas na guia Processo **do** Start da área de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Para personalizar a página de detalhes da tarefa com tarefas criadas na guia Processo **do** Start da área de trabalho AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >Para adicionar novos estilos para as informações adicionadas na página de detalhes, modifique o arquivo CSS usando a seção de alterações *da interface do* usuário em Personalização [da](changing-locale-user-interface.md)Workspace.
