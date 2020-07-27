@@ -1,6 +1,6 @@
 ---
-title: Invocar formulários AEM usando solicitações REST
-seo-title: Invocar formulários AEM usando solicitações REST
+title: Chamada de AEM Forms usando solicitações REST
+seo-title: Chamada de AEM Forms usando solicitações REST
 description: 'null'
 seo-description: 'null'
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
@@ -10,12 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2492'
+ht-degree: 0%
 
 ---
 
 
-# Invocar formulários AEM usando solicitações REST {#invoking-aem-forms-using-rest-requests}
+# Chamada de AEM Forms usando solicitações REST {#invoking-aem-forms-using-rest-requests}
 
 Os processos criados no Workbench podem ser configurados para que você possa invocá-los por meio de solicitações de transferência de estado de representação (REST). As solicitações REST são enviadas de páginas HTML. Ou seja, você pode invocar um processo do Forms diretamente de uma página da Web usando uma solicitação REST. Por exemplo, você pode abrir uma nova instância de uma página da Web. Em seguida, você pode invocar um processo do Forms e carregar um documento PDF renderizado com dados que foram enviados em uma solicitação HTTP POST.
 
@@ -29,7 +32,7 @@ Para chamar um serviço de Forms (um processo se torna um serviço quando o proc
 
 Depois que um terminal REST é configurado, você pode chamar um serviço de Formulários usando um método GET HTTP ou um método POST.
 
-```as3
+```java
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
@@ -37,7 +40,7 @@ O `ServiceName` valor obrigatório é o nome do serviço de Formulários a ser c
 
 ## Tipos de dados suportados {#supported-data-types}
 
-Os seguintes tipos de dados são suportados ao chamar serviços de Formulários AEM usando solicitações REST:
+Os seguintes tipos de dados são suportados ao chamar serviços AEM Forms usando solicitações REST:
 
 * Tipos de dados primitivos Java, como Strings e inteiros
 * `com.adobe.idp.Document` tipo de dados
@@ -57,9 +60,9 @@ Os seguintes tipos de dados são suportados ao chamar serviços de Formulários 
 
    Se um serviço do Forms exigir um `com.adobe.idp.Document` parâmetro, o serviço só poderá ser chamado usando o método HTTP POST. Se o serviço exigir um `com.adobe.idp.Document` parâmetro, o corpo da solicitação HTTP se tornará o conteúdo do objeto de Documento de entrada.
 
-   Se um serviço do AEM Forms exigir vários parâmetros de entrada, o corpo da solicitação HTTP deve ser uma mensagem MIME multiparte, conforme definido pela RFC 1867. (RFC 1867 é um padrão usado por navegadores da Web para fazer upload de arquivos para sites.) Cada parâmetro de entrada deve ser enviado como uma parte separada da mensagem multiparte e codificado no `multipart/form-data` formato. O nome de cada parte deve corresponder ao nome do parâmetro.
+   Se um serviço AEM Forms exigir vários parâmetros de entrada, o corpo da solicitação HTTP deverá ser uma mensagem MIME multiparte, conforme definido pela RFC 1867. (RFC 1867 é um padrão usado por navegadores da Web para fazer upload de arquivos para sites.) Cada parâmetro de entrada deve ser enviado como uma parte separada da mensagem multiparte e codificado no `multipart/form-data` formato. O nome de cada parte deve corresponder ao nome do parâmetro.
 
-   Listas e mapas também são usados como valores de entrada para processos do AEM Forms criados no Workbench. Como resultado, você pode usar esses tipos de dados ao usar uma solicitação REST. As matrizes Java não são suportadas porque não são usadas como um valor de entrada para um processo de formulários AEM.
+   Listas e mapas também são usados como valores de entrada para processos AEM Forms criados no Workbench. Como resultado, você pode usar esses tipos de dados ao usar uma solicitação REST. As matrizes Java não são suportadas porque não são usadas como um valor de entrada para um processo AEM Forms.
 
    Se um parâmetro de entrada for uma lista, um cliente REST poderá enviá-lo especificando o parâmetro várias vezes (uma vez para cada item na lista). Por exemplo, se A for uma lista de documentos, a entrada deverá ser uma mensagem multiparte que consiste em várias partes chamadas A. Nesse caso, cada parte chamada A se torna um item na lista de entrada. Se B for uma lista de strings, a entrada pode ser uma `application/x-www-form-urlencoded` mensagem que consiste em vários campos chamados B. Nesse caso, cada campo de formulário chamado B se torna um item na lista de entrada.
 
@@ -86,11 +89,11 @@ Os seguintes tipos de dados são suportados ao chamar serviços de Formulários 
 
 ## Chamadas assíncronas {#asynchronous-invocations}
 
-Alguns serviços do AEM Forms, como processos de longa duração centrados em humanos, exigem muito tempo para serem concluídos. Esses serviços podem ser chamados de forma assíncrona de maneira não bloqueada. (Consulte [Invocando Processos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)De Vida Longa Centrados Em Pessoas.)
+Alguns serviços AEM Forms, como processos de longa duração centrados no ser humano, exigem muito tempo para serem concluídos. Esses serviços podem ser chamados de forma assíncrona de maneira não bloqueada. (Consulte [Invocando Processos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)De Vida Longa Centrados Em Pessoas.)
 
-Um serviço de formulários AEM pode ser chamado de forma assíncrona, substituindo-o `services` pelo URL `async_invoke` de invocação, como mostrado no exemplo a seguir.
+Um serviço AEM Forms pode ser chamado de forma assíncrona, substituindo `services` por `async_invoke` no URL de invocação, como mostrado no exemplo a seguir.
 
-```as3
+```java
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
@@ -98,7 +101,7 @@ Esse URL retorna o valor identificador (no formato &quot;texto/simples&quot;) do
 
 O status da invocação assíncrona pode ser recuperado usando um URL de invocação com `services` substituto `async_status`. O URL deve conter um `job_id` parâmetro que especifique o valor identificador do trabalho associado a essa invocação. Por exemplo:
 
-```as3
+```java
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
@@ -108,7 +111,7 @@ Se o trabalho for concluído, o URL retornará o mesmo resultado que se o servi�
 
 Depois que o trabalho é concluído e o resultado é recuperado, o trabalho pode ser descartado usando um URL de invocação com `services` o `async_dispose`. O URL também deve conter um `job_id` parâmetro que especifica o valor identificador do trabalho. Por exemplo:
 
-```as3
+```java
  http://localhost:8080/rest/async_dispose/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
@@ -120,7 +123,7 @@ Se não for possível concluir uma solicitação de invocação síncrona ou ass
 
 Se o URL de invocação (ou o `async_result` URL no caso de uma invocação assíncrona) tiver um sufixo .xml, o Provedor REST retornará o código HTTP `200 OK`seguido por um documento XML descrevendo a exceção no formato a seguir.
 
-```as3
+```xml
  <exception>
        <exception_class_name>[
        <DSCError>
@@ -142,15 +145,15 @@ O `DSCError` elemento é opcional e está presente somente se a exceção for um
 
 ## Segurança e autenticação {#security-and-authentication}
 
-Para fornecer invocações REST com um transporte seguro, um administrador de formulários AEM pode habilitar o protocolo HTTPS no servidor de aplicativos J2EE que hospeda formulários AEM. Esta configuração é específica do servidor de aplicações J2EE; ela não faz parte da configuração do servidor de formulários.
+Para fornecer invocações REST com um transporte seguro, um administrador de formulários AEM pode habilitar o protocolo HTTPS nos AEM Forms de hospedagem do servidor de aplicativos J2EE. Esta configuração é específica do servidor de aplicações J2EE; ela não faz parte da configuração do servidor de formulários.
 
 >[!NOTE]
 >
 >Como um desenvolvedor do Workbench que deseja expor seus processos por meio de um terminal REST, lembre-se do problema de vulnerabilidade XSS. As vulnerabilidades XSS podem ser usadas para roubar ou manipular cookies, modificar a apresentação do conteúdo e comprometer as informações confidenciais. É recomendável estender a lógica do processo com as regras adicionais de validação de dados de entrada e saída se a vulnerabilidade XSS for um problema.
 
-## Serviços de formulários AEM que oferecem suporte para invocação REST {#aem-forms-services-that-support-rest-invocation}
+## AEM Forms de serviços que suportam invocação REST {#aem-forms-services-that-support-rest-invocation}
 
-Embora seja recomendável que você chame processos criados usando o Workbench em vez de serviços diretamente, há alguns serviços do AEM Forms que suportam invocação REST. O motivo pelo qual é recomendado que você chame um processo em vez de um serviço diretamente é porque é mais eficiente invocar um processo. Considere o seguinte cenário. Suponha que você deseja criar uma política a partir de um cliente REST. Ou seja, você deseja que o cliente REST defina valores como o nome da política, o período de empréstimo offline.
+Embora seja recomendável que você chame processos criados usando o Workbench em vez de serviços diretamente, há alguns serviços de AEM Forms que oferecem suporte para a invocação REST. O motivo pelo qual é recomendado que você chame um processo em vez de um serviço diretamente é porque é mais eficiente invocar um processo. Considere o seguinte cenário. Suponha que você deseja criar uma política a partir de um cliente REST. Ou seja, você deseja que o cliente REST defina valores como o nome da política, o período de empréstimo offline.
 
 Para criar uma política, é necessário definir tipos de dados complexos, como um `PolicyEntry` objeto. Um `PolicyEntry` objeto define atributos como permissões associadas à política. (Consulte [Criando Políticas](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
@@ -158,7 +161,7 @@ Em vez de enviar uma solicitação REST para criar uma política (que incluiria 
 
 Dessa forma, não é necessário criar uma solicitação de invocação REST que inclua tipos de dados complexos exigidos pela operação. O processo define os tipos de dados complexos e tudo o que você faz do cliente REST é chamar o processo e passar por tipos de dados primitivos. Para obter informações sobre como invocar um processo usando REST, consulte [Invocando o processo MyApplication/EncryptDocument usando REST](#rest-invocation-examples).
 
-As listas a seguir especificam os serviços do AEM Forms que oferecem suporte à invocação REST direta.
+As listas a seguir especificam os serviços de AEM Forms que oferecem suporte à invocação REST direta.
 
 * Serviço Distiller
 * Serviço de gerenciamento de direitos
@@ -170,21 +173,21 @@ As listas a seguir especificam os serviços do AEM Forms que oferecem suporte à
 
 Os seguintes exemplos de invocação REST são fornecidos:
 
-* Transmissão de valores booleanos para um processo do AEM Forms
-* Transmissão de valores de data para um processo do AEM Forms
-* Transmissão de documentos para um processo do AEM Forms
-* Transmissão de valores de documento e texto para um processo do AEM Forms
-* Transmissão de valores de lista discriminada para um processo do AEM Forms
+* Transmissão de valores booleanos para um processo AEM Forms
+* Transmissão de valores de data para um processo AEM Forms
+* Transmissão de documentos para um processo AEM Forms
+* Transmissão de valores de documento e texto para um processo AEM Forms
+* Transmissão de valores de lista discriminada para um processo de AEM Forms
 * Chamada do processo MyApplication/EncryptDocument usando REST
 * Chamada do processo MyApplication/EncryptDocument do Acrobat
 
-   Cada exemplo demonstra como passar tipos de dados diferentes para um processo do AEM Forms
+   Cada exemplo demonstra como passar tipos de dados diferentes para um processo AEM Forms
 
 **Transmissão de valores booleanos para um processo**
 
 O exemplo HTML a seguir transmite dois `Boolean` valores para um processo AEM Forms chamado `RestTest2`. O nome do método de invocação é 1.0 `invoke` e a versão é 1.0. Observe que o método HTML Post é usado.
 
-```as3
+```html
  <html>
  <body>
  
@@ -204,7 +207,7 @@ O exemplo HTML a seguir transmite dois `Boolean` valores para um processo AEM Fo
 
 O exemplo HTML a seguir transmite um valor de data para um processo AEM Forms chamado `SOAPEchoService`. O nome do método de invocação é `echoCalendar`. Observe que o `Post` método HTML é usado.
 
-```as3
+```html
  <html>
  <body>
  
@@ -221,9 +224,9 @@ O exemplo HTML a seguir transmite um valor de data para um processo AEM Forms ch
 
 **Transmissão de documentos para um processo**
 
-O exemplo HTML a seguir chama um processo AEM Forms chamado `MyApplication/EncryptDocument` que requer um documento PDF. Para obter informações sobre esse processo, consulte [Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+O exemplo HTML a seguir chama um processo AEM Forms chamado `MyApplication/EncryptDocument` que requer um documento PDF. Para obter informações sobre esse processo, consulte [Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
-```as3
+```html
  <html>
  <body>
  
@@ -243,7 +246,7 @@ O exemplo HTML a seguir chama um processo AEM Forms chamado `MyApplication/Encry
 
 O exemplo HTML a seguir chama um processo AEM Forms chamado `RestTest3` que requer um documento e dois valores de texto. Observe que o método HTML Post é usado.
 
-```as3
+```html
  <html>
  <body>
  
@@ -265,7 +268,7 @@ O exemplo HTML a seguir chama um processo AEM Forms chamado `RestTest3` que requ
 
 O exemplo HTML a seguir chama um processo AEM Forms chamado `SOAPEchoService` que requer um valor de lista discriminada. Observe que o método HTML Post é usado.
 
-```as3
+```html
  <html>
  <body>
  
@@ -282,11 +285,11 @@ O exemplo HTML a seguir chama um processo AEM Forms chamado `SOAPEchoService` qu
 
 **Chamada do processo MyApplication/EncryptDocument usando REST**
 
-Você pode chamar um processo de duração curta do AEM Forms chamado *MyApplication/EncryptDocument* usando REST.
+Você pode invocar um processo de vida curta AEM Forms chamado *MyApplication/EncryptDocument* usando REST.
 
 >[!NOTE]
 >
->Esse processo não se baseia em um processo de formulários AEM existente. Para acompanhar o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o workbench. (Consulte [Usando o Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Esse processo não se baseia em um processo de AEM Forms existente. Para acompanhar o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o workbench. (Consulte [Usando o Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Quando esse processo é chamado, ele executa as seguintes ações:
 
@@ -295,7 +298,7 @@ Quando esse processo é chamado, ele executa as seguintes ações:
 
    Quando esse processo é chamado usando uma solicitação REST, o documento PDF criptografado é exibido no navegador da Web. Antes de visualização o documento PDF, especifique a senha (a menos que a segurança esteja desativada). O código HTML a seguir representa uma solicitação de invocação REST para o `MyApplication/EncryptDocument` processo.
 
-   ```as3
+   ```html
     <html>
     <body>
     <form action="https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument" method="post" enctype="multipart/form-data">
@@ -310,7 +313,7 @@ Quando esse processo é chamado, ele executa as seguintes ações:
     </body>
    ```
 
-**Chamada do processo MyApplication/EncryptDocument do Acrobat**{#invoke-process-acrobat}
+**Chamada do processo MyApplication/EncryptDocument do Acrobat** {#invoke-process-acrobat}
 
 É possível invocar um processo de Formulários a partir do Acrobat usando uma solicitação REST. Por exemplo, você pode chamar o processo *MyApplication/EncryptDocument* . Para chamar um processo de formulários do Acrobat, coloque um botão Enviar em um arquivo XDP no Designer. (Consulte Ajuda [do](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.)
 
