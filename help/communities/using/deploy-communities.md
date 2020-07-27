@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '1893'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
    * [instalar e configurar FFmpeg](/help/communities/ffmpeg.md)
    * [instale o driver JDBC para MySQL](#jdbc-driver-for-mysql)
-   * [instalar o AEM Communities SCORM-Engine](#scorm-package)
+   * [instale o AEM Communities SCORM-Engine](#scorm-package)
    * [instalar e configurar o MySQL para ativação](/help/communities/mysql.md)
 
 
@@ -138,7 +138,7 @@ Mais informações sobre a instalação de pacotes estão disponíveis na págin
 
 #### Exemplo: Pacote do Conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![](../assets/chlimage_1-125.png)
 
 ### Pacote SCORM {#scorm-package}
 
@@ -222,7 +222,7 @@ Por padrão, a configuração do `AEM Communities Publisher Configuration` OSGi 
 
 Portanto, é necessário **editar a configuração em todas as instâncias** de publicação secundárias para desmarcar a caixa de seleção **`Primary Publisher`** .
 
-![](/help/communities/assets/chlimage_1-126.png)
+![](../assets/chlimage_1-126.png)
 
 Para todas as outras instâncias de publicação (secundárias) em um farm de publicação:
 
@@ -266,11 +266,11 @@ As imagens a seguir mostram os resultados da alteração da porta de 4503 para 6
 
 #### Agente padrão (publicar) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![configurar limites](../assets/configure-limits.png)
 
 #### Agente de Replicação Reversa (publicar reverso) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![](../assets/chlimage_1-128.png)
 
 ### Serviço de túnel no autor {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ Para ativar o serviço de túnel:
 * marque a **caixa ativar **caixa
 * select **Save**
 
-![](/help/communities/assets/chlimage_1-129.png)
+![](../assets/chlimage_1-129.png)
 
 ### Replicar a chave de criptografia {#replicate-the-crypto-key}
 
@@ -350,7 +350,7 @@ Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [atualizar o pacote Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+![](../assets/chlimage_1-130.png)
 
 #### Atualizar o pacote Cripto Granite {#refresh-the-granite-crypto-bundle}
 
@@ -361,7 +361,7 @@ Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * localizar `Adobe Granite Crypto Support` pacote (com.adobe.granite.crypto)
 * selecionar **Atualizar**
 
-![](/help/communities/assets/chlimage_1-131.png)
+![](../assets/chlimage_1-131.png)
 
 * após um momento, uma **caixa de diálogo **Êxito **deve aparecer :
    `Operation completed successfully.`
