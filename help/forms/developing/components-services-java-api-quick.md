@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ O SOAP (Java API Quick Start) está disponível para componentes e serviços.
 [Start rápido (modo SOAP): Remoção de componentes usando a API Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
-As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente tipada API e o modo de conexão deve ser definido como SOAP.
+As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ As operações do AEM Forms podem ser executadas usando a AEM Forms fortemente t
 
 O exemplo Java a seguir implanta um componente que se baseia em um arquivo JAR chamado *adobe-emailSample-dsc.jar*.
 
-```as3
+```java
  /* 
         * This Java Quick Start uses the following JAR files 
         * 1. adobe-taskmanager-client.jar 
@@ -153,7 +156,7 @@ O exemplo Java a seguir implanta um componente que se baseia em um arquivo JAR c
 
 O exemplo de código Java a seguir define o contexto de execução Run-As Invoker como um serviço de exemplo chamado *EncryptDocument*.
 
-```as3
+```java
  /* 
         * This Java Quick Start uses the following JAR files 
         * 1. adobe-taskmanager-client.jar 
@@ -245,7 +248,7 @@ O exemplo de código Java a seguir define o contexto de execução Run-As Invoke
 
 O exemplo de código Java a seguir desativa a segurança do exemplo do serviço EncryptDocument e dos serviços que são chamados dentro desse serviço (os serviços Definir valor e criptografia).
 
-```as3
+```java
  /* 
         * This Java Quick Start uses the following JAR files 
         * 1. adobe-taskmanager-client.jar 
@@ -358,7 +361,7 @@ O exemplo de código Java a seguir desativa a segurança do exemplo do serviço 
 
 O exemplo de código Java a seguir start um serviço chamado *SendEmailService*.
 
-```as3
+```java
  package com.adobe.sample.servicemanager; 
   
  /** 
@@ -416,7 +419,7 @@ O exemplo de código Java a seguir start um serviço chamado *SendEmailService*.
 
 O exemplo Java a seguir modifica os valores de configuração que pertencem ao SendEmail Service.
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the following JAR files 
         * 1. adobe-taskmanager-client.jar 
@@ -528,7 +531,7 @@ O exemplo Java a seguir modifica os valores de configuração que pertencem ao S
 
 O exemplo de código Java a seguir remove um componente usando a API Java.
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the following JAR files 
      * 1. adobe-taskmanager-client.jar 
