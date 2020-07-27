@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 1%
 
 ---
 
@@ -115,7 +118,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
 
    Por exemplo:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
@@ -135,7 +138,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
 
    Por exemplo:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
@@ -144,7 +147,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
 1. Copie o arquivo ads-ca.cer para qualquer computador host que precise de comunicação segura com o servidor de aplicativos.
 1. Insira o certificado em um novo arquivo de armazenamento de chaves (o armazenamento de chaves de Confiança personalizado) digitando o seguinte comando:
 
-   [JAVA_HOME]`/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
+   [JAVA_HOME] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
    >[!NOTE]
    >
@@ -152,7 +155,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
 
    Por exemplo:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
@@ -181,7 +184,7 @@ Configure o WebLogic para que ele use o armazenamento de chaves Identidade perso
 
    **Tipo** de armazenamento de chave de identidade personalizado: JKS
 
-   **Senha** personalizada do armazenamento de chave de identidade: *mypassword* (senha personalizada do keystore de identidade)
+   **Senha** personalizada do armazenamento de chave de identidade: *mypassword* (senha personalizada do armazenamento de chaves de identidade)
 
 1. Em Confiança, especifique os seguintes valores:
 
