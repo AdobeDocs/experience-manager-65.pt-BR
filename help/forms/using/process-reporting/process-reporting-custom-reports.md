@@ -1,8 +1,8 @@
 ---
 title: Relatórios Relatórios Personalizados em Andamento
 seo-title: Relatórios Relatórios Personalizados em Andamento
-description: Você pode criar relatórios personalizados e adicioná-los à interface do usuário do Relatórios do AEM Forms no JEE Process.
-seo-description: Você pode criar relatórios personalizados e adicioná-los à interface do usuário do Relatórios do AEM Forms no JEE Process.
+description: Você pode criar relatórios personalizados e adicioná-los aos AEM Forms na interface do usuário do Relatórios do JEE Process.
+seo-description: Você pode criar relatórios personalizados e adicioná-los aos AEM Forms na interface do usuário do Relatórios do JEE Process.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -45,20 +48,20 @@ A interface REST do CRX QueryBuilder expõe a funcionalidade do Criador de Query
    >
    >Em cada query, o parâmetro path aponta para o local do armazenamento crx e os caracteres são escapados de acordo com o padrão de URL.
 
-## Criação de um serviço usando a API do Construtor de Query {#creating-a-service-using-query-builder-api-nbsp}
+## Criação de um serviço usando a API do Construtor de Query  {#creating-a-service-using-query-builder-api-nbsp}
 
 O pré-requisito para a criação de um serviço usando a API do construtor de Query é a [criação e implantação do pacote](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) OSGI do CQ e o [uso da API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)do Construtor de Query.
 
 1. Crie um serviço OSGi com anotações apropriadas. Para acessar o QueryBuilder, use:
 
-   ```
+   ```java
    @Reference(referenceInterface = QueryBuilder.class)
     private QueryBuilder queryBuilder;
    ```
 
 1. Criar um grupo de predicados. O código para criar um grupo de predicados é:
 
-   ```
+   ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
@@ -340,7 +343,7 @@ public class PeriodicProcessVolume {
 
 O `pom.xml`arquivo de amostra a ser criado acima do serviço é:
 
-```java
+```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -420,7 +423,7 @@ O `pom.xml`arquivo de amostra a ser criado acima do serviço é:
 </project>
 ```
 
-## Criação de uma interface de usuário separada {#creating-a-separate-ui-nbsp}
+## Criação de uma interface de usuário separada  {#creating-a-separate-ui-nbsp}
 
 Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornece privilégios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acesso apropriados.
 
@@ -432,7 +435,7 @@ Os pré-requisitos para criar uma interface de usuário separada para exibir res
 
    Um nó de amostra com arquivos JSP e CSS
 
-1. Adicione o código javascript ao start de uma chamada Ajax para a API REST do querybuilder ou para o seu serviço. Além disso, adicione os argumentos apropriados.
+1. Adicione o código JavaScript ao start de uma chamada Ajax para a API REST do querybuilder ou para seu serviço. Além disso, adicione os argumentos apropriados.
 
 1. Adicione um manipulador de sucesso apropriado à chamada Ajax para analisar e exibir o resultado. Você pode analisar o resultado em vários formatos (json/csv/usuário definido) e exibi-lo em uma tabela ou em outros formulários.
 
@@ -440,7 +443,7 @@ Os pré-requisitos para criar uma interface de usuário separada para exibir res
 
 Um exemplo de código JSP que usa OSGi Service e a API do QueryBuilder é:
 
-```
+```html
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
 <%request.setAttribute("silentAuthor", new Boolean(true));%>
 <%@include file="/libs/foundation/global.jsp"%>
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integração da interface do usuário do relatório na interface do Relatórios do processo existente {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integração da interface do usuário do relatório na interface do Relatórios do processo existente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornece privilégios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acesso apropriados.
 
@@ -640,6 +643,7 @@ Os pré-requisitos para criar uma interface de usuário separada para exibir res
    * **link**- Especifica o link relativo para o renderizador da interface de usuário separada. O link é criado na Etapa 1.
    * **descrição**- Especifica a descrição de uma linha do relatório. Você pode deixar o campo de descrição vazio.
    * **ícone**- Especifica a imagem para representar pictorialmente o relatório. Você pode deixar o campo de ícone vazio.
+
    ![Propriedades do nó ](assets/node_properties_new.png)
 
    Propriedades do nó
