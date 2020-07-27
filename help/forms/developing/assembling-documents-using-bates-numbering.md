@@ -1,6 +1,6 @@
 ---
-title: Montagem De Documentos Usando A Numeração De Bates
-seo-title: Montagem De Documentos Usando A Numeração De Bates
+title: Montagem de Documentos usando a numeração de Bates
+seo-title: Montagem de Documentos usando a numeração de Bates
 description: 'null'
 seo-description: 'null'
 uuid: 28d5faeb-6915-41a2-b6a0-78d255df024f
@@ -11,14 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1901'
+ht-degree: 0%
 
 ---
 
 
-# Montagem De Documentos Usando A Numeração De Bates {#assembling-documents-using-bates-numbering}
+# Montagem de Documentos usando a numeração de Bates {#assembling-documents-using-bates-numbering}
 
-É possível montar documentos PDF que contêm identificadores de página exclusivos usando a numeração de Bates. *A numeração* de Bates é um método de aplicar identificações exclusivas a um lote de documentos relacionados. A cada página do documento (ou conjunto de documentos) é atribuído um número de Bates que identifica exclusivamente a página. Por exemplo, documentos de fabricação que contêm informações da lista de materiais e que estão associados à produção de uma montagem podem conter um identificador. Um número de Bates contém um valor numérico incrementado sequencialmente e um prefixo e sufixo opcionais. O prefixo + sufixo numérico + é chamado de padrão *de* barras.
+É possível montar documentos PDF que contêm identificadores de página únicos usando a numeração de Bates. *A numeração* de Bates é um método de aplicar identificações exclusivas a um lote de documentos relacionados. A cada página do documento (ou conjunto de documentos) é atribuído um número de Bates que identifica exclusivamente a página. Por exemplo, documentos de fabricação que contêm informações da lista de materiais e que estão associados à produção de uma montagem podem conter um identificador. Um número de Bates contém um valor numérico incrementado sequencialmente e um prefixo e sufixo opcionais. O prefixo + sufixo numérico + é chamado de padrão *de* barras.
 
 A ilustração a seguir mostra um documento PDF que contém um identificador exclusivo localizado no cabeçalho do documento.
 
@@ -26,7 +29,7 @@ A ilustração a seguir mostra um documento PDF que contém um identificador exc
 
 Para a finalidade desta discussão, o identificador de página exclusivo é colocado no cabeçalho de um documento. Suponha que o seguinte documento DDX seja usado.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
         <PDF result="out.pdf">
@@ -43,7 +46,7 @@ Para a finalidade desta discussão, o identificador de página exclusivo é colo
  </DDX>
 ```
 
-Este documento DDX mescla dois documentos PDF chamados *map.pdf* e *direcçõespdf* em um único documento PDF. O documento PDF resultante contém um cabeçalho que consiste em um identificador de página exclusivo. Por exemplo, o documento na ilustração acima mostra 000016.
+Esse documento DDX une dois documentos PDF chamados *map.pdf* e *direcçõespdf* em um único documento PDF. O documento PDF resultante contém um cabeçalho que consiste em um identificador de página exclusivo. Por exemplo, o documento na ilustração acima mostra 000016.
 
 >[!NOTE]
 >
@@ -51,11 +54,11 @@ Este documento DDX mescla dois documentos PDF chamados *map.pdf* e *direcçõesp
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Assembler, consulte Referência de [serviços para formulários](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Para obter mais informações sobre o serviço Assembler, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Para obter mais informações sobre um documento DX, consulte Serviço de [Montagem e Referência](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX.
+>Para obter mais informações sobre um documento DDX, consulte [Assembler Service e DDX Reference](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Resumo das etapas {#summary-of-steps}
 
@@ -64,7 +67,7 @@ Para montar um documento PDF que contenha um identificador de página exclusivo 
 1. Incluir arquivos de projeto.
 1. Crie um cliente do Montador de PDF.
 1. Faça referência a um documento DDX existente.
-1. Referência a documentos PDF de entrada.
+1. Faça referência a documentos PDF de entrada.
 1. Defina o valor inicial do número de Bates.
 1. Monte os documentos PDF de entrada.
 1. Extraia os resultados.
@@ -78,10 +81,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado em JBoss)
-* jbossall-client.jar (obrigatório se o AEM Forms for implantado em JBoss)
+* adobe-utilities.jar (necessário se os AEM Forms forem implantados em JBoss)
+* jbossall-client.jar (obrigatório se os AEM Forms forem implantados em JBoss)
 
-Se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos do servidor de aplicativos J2EE no qual o AEM Forms é implantado. Para obter informações sobre a localização de todos os arquivos JAR do AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado. Para obter informações sobre a localização de todos os arquivos JAR de AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java de AEM Forms.
 
 **Criar um cliente de Montador de PDF**
 
@@ -91,17 +94,17 @@ Antes de poder executar programaticamente uma operação do Assembler, você dev
 
 Um documento DDX deve ser referenciado para montar um documento PDF. Por exemplo, considere o documento DDX que foi introduzido nesta seção. Para montar um documento PDF que contenha identificadores de página exclusivos, o documento DX deve conter o `BatesNumber` elemento .
 
-**Referência a documentos PDF de entrada**
+**documentos PDF de entrada de referência**
 
-Os documentos PDF de entrada devem ser referenciados para montar um documento PDF. Por exemplo, os documentos map.pdf e direcçõespdf devem ser referenciados para reunir esses documentos PDF em um único documento PDF.
+documentos PDF de entrada devem ser referenciados para montar um documento PDF. Por exemplo, os documentos map.pdf e direcçõesdevem ser referenciados para reunir esses documentos PDF em um único documento PDF.
 
 **Definir o valor inicial do número de Bates**
 
 Você pode definir o valor inicial do número de Bates para atender às suas necessidades comerciais. Por exemplo, suponha que seja um requisito definir o valor inicial como 000100. Se você não definir o valor inicial, o valor da primeira página será 000000.
 
-**Montar os documentos PDF de entrada**
+**Montagem de documentos PDF de entrada**
 
-Depois de criar o cliente do serviço Assembler, consulte o documento DX que contém informações de `BatesNumber` `invokeDDX` elementos, consulte um documento PDF de entrada e defina as opções de tempo de execução, você pode invocar a operação que resulta na montagem pelo serviço Assembler de um documento PDF que contém identificadores de página exclusivos.
+Depois de criar o cliente do serviço Assembler, consulte o documento DDX que contém informações de `BatesNumber` `invokeDDX` elementos, consulte um documento PDF de entrada e defina as opções de tempo de execução, você pode chamar a operação que resulta na montagem pelo serviço Assembler de um documento PDF que contém identificadores de página exclusivos.
 
 **Extrair os resultados**
 
@@ -109,15 +112,15 @@ O serviço Assembler retorna um objeto de coleção que contém os resultados da
 
 >[!NOTE]
 >
->Um objeto de coleção é retornado se você chamar a `invokeDDX` operação. Essa operação é usada ao transmitir dois ou mais documentos PDF de entrada ao serviço Assembler. No entanto, se você passar apenas um documento PDF de entrada para o serviço Assembler, deverá chamar a `invokeOneDocument` operação. Para obter informações sobre como usar essa operação, consulte [Montagem de documentos](/help/forms/developing/assembling-encrypted-pdf-documents.md)PDF criptografados.
+>Um objeto de coleção é retornado se você chamar a `invokeDDX` operação. Essa operação é usada ao transmitir dois ou mais documentos PDF de entrada ao serviço Assembler. No entanto, se você enviar apenas um documento PDF de entrada para o serviço Assembler, deverá chamar a operação. `invokeOneDocument` Para obter informações sobre como usar essa operação, consulte [Montagem de Documentos](/help/forms/developing/assembling-encrypted-pdf-documents.md)PDF criptografados.
 
 **Consulte também:**
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Montagem Programática de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[Montagem programática de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
 ## Montar documentos com a numeração de Bates usando a API Java {#assemble-documents-with-bates-numbering-using-the-java-api}
 
@@ -134,17 +137,17 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento DX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DX.
+   * Crie um `java.io.FileInputStream` objeto que represente o documento DDX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DX.
    * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
 
-1. Referência a documentos PDF de entrada.
+1. Faça referência a documentos PDF de entrada.
 
    * Crie um `java.util.Map` objeto usado para armazenar documentos PDF de entrada usando um `HashMap` construtor.
    * Para cada documento PDF de entrada, crie um `java.io.FileInputStream` objeto usando seu construtor e transmitindo o local do documento PDF de entrada. Nessa situação, passe o local de um documento PDF não protegido.
    * Para cada documento PDF de entrada, crie um `com.adobe.idp.Document` objeto e passe o `java.io.FileInputStream` objeto que contém o documento PDF.
    * Adicione uma entrada ao `java.util.Map` objeto chamando seu `put` método e transmitindo os seguintes argumentos:
 
-      * Um valor de string que representa o nome da chave. Esse valor deve corresponder ao valor do elemento de origem do PDF especificado no documento DX. Por exemplo, o nome do arquivo de origem PDF especificado no documento DX que é introduzido nesta seção é Loan.pdf.
+      * Um valor de string que representa o nome da chave. Esse valor deve corresponder ao valor do elemento de origem do PDF especificado no documento DX. Por exemplo, o nome do arquivo de origem PDF especificado no documento DDX que é introduzido nesta seção é Loan.pdf.
       * Um `com.adobe.idp.Document` objeto que contém o documento PDF não protegido.
 
 1. Defina o valor inicial do número de Bates.
@@ -156,9 +159,10 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
    Chame o `AssemblerServiceClient` método do `invokeDDX` objeto e passe os seguintes valores obrigatórios:
 
-   * Um `com.adobe.idp.Document` objeto que representa o documento DX.
+   * Um `com.adobe.idp.Document` objeto que representa o documento DDX.
    * Um `java.util.Map` objeto que contém o arquivo PDF não protegido de entrada.
    * Um `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log de trabalhos.
+
    O `invokeDDX` método retorna um `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contém um documento PDF criptografado por senha.
 
 1. Extraia os resultados.
@@ -171,9 +175,9 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
 **Consulte também:**
 
-[Início rápido (modo SOAP): Montagem de um documento PDF com numeração de datas usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[Start rápido (modo SOAP): Montagem de um documento PDF com a numeração de datas usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[Incluir arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -187,12 +191,12 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
 
 1. Crie um cliente do Montador de PDF.
 
    * Crie um `AssemblerServiceClient` objeto usando seu construtor padrão.
-   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço de formulários AEM (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
+   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
    * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `AssemblerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
    * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
@@ -204,13 +208,13 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DX.
+   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DDX.
    * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento DX e o modo para abrir o arquivo.
    * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
    * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` objeto `Read` . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
    * Preencha o `BLOB` objeto atribuindo seu `MTOM` campo ao conteúdo da matriz de bytes.
 
-1. Referência a documentos PDF de entrada.
+1. Faça referência a documentos PDF de entrada.
 
    * Para cada documento PDF de entrada, crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento PDF de entrada.
    * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento PDF de entrada e o modo no qual o arquivo deve ser aberto.
@@ -232,9 +236,10 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
    Chame o método do `AssemblerServiceClient` objeto `invoke` e passe os seguintes valores:
 
-   * Um `BLOB` objeto que representa o documento DX.
+   * Um `BLOB` objeto que representa o documento DDX.
    * O `MyMapOf_xsd_string_To_xsd_anyType` objeto que contém os documentos PDF de entrada. Suas chaves devem corresponder aos nomes dos arquivos de origem do PDF, e seus valores devem ser os `BLOB` objetos que correspondem a esses arquivos.
    * Um `AssemblerOptionSpec` objeto que especifica opções de tempo de execução.
+
    O `invoke` método retorna um `AssemblerResult` objeto que contém os resultados da tarefa e quaisquer exceções que ocorreram.
 
 1. Extraia os resultados.
@@ -247,4 +252,4 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
 **Consulte também:**
 
-[Invocar formulários AEM usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
