@@ -1,15 +1,18 @@
 ---
 title: Configuração da ação Enviar
 seo-title: Configuração da ação Enviar
-description: O AEM Forms permite configurar uma ação de envio para definir como um formulário adaptável é processado após o envio. Você pode usar ações de envio incorporadas ou escrever suas próprias do zero.
-seo-description: O AEM Forms permite configurar uma ação de envio para definir como um formulário adaptável é processado após o envio. Você pode usar ações de envio incorporadas ou escrever suas próprias do zero.
+description: O AEM Forms permite que você configure uma ação de envio para definir como um formulário adaptável é processado após o envio. Você pode usar ações de envio incorporadas ou escrever suas próprias do zero.
+seo-description: O AEM Forms permite que você configure uma ação de envio para definir como um formulário adaptável é processado após o envio. Você pode usar ações de envio incorporadas ou escrever suas próprias do zero.
 uuid: 4368d648-88ea-4f84-a051-46296a1a084e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +71,7 @@ Configurando a Ação de Submeter do Rest Endpoint
 >[!NOTE]
 Para passar os campos como parâmetros em um URL REST, todos os campos devem ter nomes de elementos diferentes, mesmo se os campos forem colocados em painéis diferentes.
 
-### Postar dados enviados em um recurso ou ponto final de repouso externo {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Postar dados enviados em um recurso ou ponto final de repouso externo  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Use a ação **Enviar para ponto de extremidade** REST para postar os dados enviados para um URL restante. O URL pode ser de um servidor interno (o servidor no qual o formulário é renderizado) ou externo.
 
@@ -107,7 +110,7 @@ Esta ação de envio está disponível para formulários adaptáveis baseados em
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
-A opção **Enviar para envio do fluxo de trabalho** do Forms envia um xml de dados e anexos de arquivo (se houver) para um processo Adobe LiveCycle ou AEM Forms existente no JEE.
+A opção **Enviar para envio do fluxo de trabalho** do Forms envia um xml de dados e anexos de arquivo (se houver) para um processo Adobe LiveCycle ou AEM Forms no JEE.
 
 Para obter informações sobre como configurar a ação Enviar para envio de fluxo de trabalho de formulários, consulte [Enviar e processar seus dados de formulário usando workflows](../../forms/using/submit-form-data-livecycle-process.md)de formulário.
 
@@ -117,11 +120,11 @@ A ação **Enviar usando o Modelo** de Dados de Formulário grava dados de formu
 
 Além disso, é possível enviar um anexo de formulário usando um modelo de dados de formulário e um Documento de Registro (DoR) para a fonte de dados.
 
-Para obter informações sobre o modelo de dados de formulário, consulte Integração [de dados de formulários](../../forms/using/data-integration.md)AEM.
+Para obter informações sobre o modelo de dados de formulário, consulte Integração [de dados do](../../forms/using/data-integration.md)AEM Forms.
 
 ## Ação de envio do Portal de formulários {#forms-portal-submit-action}
 
-A opção **Forms Portal Submit Action** (Enviar ação do portal de formulários) disponibiliza os dados do formulário por meio de um portal do AEM Forms.
+A opção **Forms Portal Submit Action** (Enviar ação do portal de formulários) disponibiliza os dados do formulário por meio de um portal AEM Forms.
 
 Para obter mais informações sobre o Portal de formulários e a ação de envio, consulte [Rascunhos e componentes](../../forms/using/draft-submission-component.md)de envio.
 
@@ -133,7 +136,7 @@ Antes de usar a ação **Chamar um fluxo de trabalho** do AEM, [defina as config
 
 ## Revalidação do lado do servidor em forma adaptativa {#server-side-revalidation-in-adaptive-form}
 
-Normalmente, em qualquer sistema de captura de dados online, os desenvolvedores colocam algumas validações javascript no lado do cliente para impor algumas regras de negócios. Mas nos navegadores modernos, os usuários finais têm como contornar essas validações e fazer envios manualmente usando várias técnicas, como o Console de Ferramentas de Desenvolvimento do Navegador da Web. Essas técnicas também são válidas para formas adaptativas. Um desenvolvedor de formulários pode criar várias lógicas de validação, mas, tecnicamente, os usuários finais podem ignorar essas lógicas de validação e enviar dados inválidos para o servidor. Dados inválidos quebrariam as regras comerciais que um autor de formulários aplicou.
+Normalmente, em qualquer sistema de captura de dados online, os desenvolvedores colocam algumas validações JavaScript no lado do cliente para impor algumas regras de negócios. Mas nos navegadores modernos, os usuários finais têm como contornar essas validações e fazer envios manualmente usando várias técnicas, como o Console de Ferramentas de Desenvolvimento do Navegador da Web. Essas técnicas também são válidas para formas adaptativas. Um desenvolvedor de formulários pode criar várias lógicas de validação, mas, tecnicamente, os usuários finais podem ignorar essas lógicas de validação e enviar dados inválidos para o servidor. Dados inválidos quebrariam as regras comerciais que um autor de formulários aplicou.
 
 O recurso de revalidação do lado do servidor também permite executar as validações fornecidas por um autor de formulários adaptáveis ao projetar um formulário adaptável no servidor. Evita qualquer possível comprometimento de envios de dados e violações de regras comerciais representadas em termos de validações de formulários.
 
@@ -163,7 +166,7 @@ Se o usuário final ignorar essas validações e enviar os formulários, o servi
 
 Suporte a funções personalizadas em Expressões de validação
 
-O autor pode configurar a biblioteca javascript personalizada por formulário adaptável. Na biblioteca, mantenha somente as funções reutilizáveis, que têm dependência de bibliotecas de terceiros jquery e underscore.js.
+O autor pode configurar a biblioteca customJavaScript por formulário adaptável. Na biblioteca, mantenha somente as funções reutilizáveis, que têm dependência de bibliotecas de terceiros jquery e underscore.js.
 
 ## Manipulação de erros na ação de envio {#error-handling-on-submit-action}
 
