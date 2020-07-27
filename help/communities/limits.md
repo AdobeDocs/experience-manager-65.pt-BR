@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -49,11 +49,11 @@ Para atingir essa configuração do OSGi:
 * Localize `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Selecione o ícone de edição.
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![configurar limites](assets/configure-limits.png)
 
 * **[!UICONTROL Aplicar automaticamente limites de contribuição UGC]**
 
-   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso se reflete no perfil do membro da comunidade e pode ser ativado/desativado no console [de](members.md)membros. Os novos membros com um endereço de email de uma lista permitida de domínios nunca são restringidos.
+   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso se reflete no perfil do membro da comunidade e pode ser ativado/desativado no console [de](members.md)membros. Os novos membros com um endereço de email de uma lista de permissões de domínios nunca são restringidos.
 
    O padrão está desmarcado.
 
@@ -71,11 +71,11 @@ Para atingir essa configuração do OSGi:
 
 * **[!UICONTROL Domínios]**
 
-   Uma lista permitida de um ou mais domínios de email. Selecione o ícone + para fazer entradas adicionais.
+   Uma lista lista de permissões de um ou mais domínios de email. Selecione o ícone + para fazer entradas adicionais.
 
-   Os usuários com endereços de email na lista permitida de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email nunca `me@mycompany.com` será restringido à publicação.
+   Os usuários com endereços de email na lista de permissões de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email nunca `me@mycompany.com` será restringido à publicação.
 
-   O padrão é uma lista vazia permitida.
+   O padrão é uma lista de permissões vazia.
 
 * **[!UICONTROL Recipient de mensagens]**
 
