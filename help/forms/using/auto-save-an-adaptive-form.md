@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -33,10 +36,12 @@ Para um formulário adaptável, a opção de salvar automaticamente não está a
 
    * **[!UICONTROL Baseado em tempo:]** Selecione a opção para salvar o conteúdo em start com base em um intervalo de tempo específico.
    * **[!UICONTROL Baseado em Eventos:]** Selecione a opção para salvar o conteúdo com base no start quando um evento for acionado.
+
    Quando você seleciona um acionador, a caixa Configuração de estratégia é ativada. A caixa Configuração de estratégia permite:
 
    * Especifique um intervalo de tempo se você selecionar acionador baseado **[!UICONTROL em]** tempo.
    * Especifique um nome de evento se você selecionar acionador baseado **[!UICONTROL em]** Eventos.
+
    Você também pode criar e adicionar sua própria estratégia personalizada à lista. Para obter detalhes, consulte [Implementar uma estratégia personalizada para salvar automaticamente os formulários](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Somente salvamento automático com base em tempo) Execute as seguintes etapas para configurar opções para o salvamento automático com base em tempo.
@@ -63,7 +68,7 @@ Você pode implementar um evento personalizado para acionar a funcionalidade de 
 
    Por exemplo, o script a seguir usa o `emailFocusChange`evento personalizado para acionar a funcionalidade de salvamento automático:
 
-   ```
+   ```javascript
    window.addEventListener("bridgeInitializeStart", function (){
        guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) {
            if(data.target.name === 'Email') {
