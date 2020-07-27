@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 1%
 
 ---
 
@@ -130,7 +133,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
 1. Clique com o botão direito do mouse no nó de teste (aqui **afTestRegistration)** e clique em **Criar** > **Criar arquivo**. Nomeie o arquivo js.txt e clique em **OK**.
 1. No arquivo js.txt, adicione o seguinte texto:
 
-   ```
+   ```javascript
    #base=.
    js.txt
    ```
@@ -139,7 +142,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
 1. Clique com o botão direito do mouse no nó de teste (aqui **afTestRegistration)** e clique em **Criar** > **Criar arquivo**. Nomeie o arquivo init.js e clique em **OK**.
 1. Copie o seguinte código para o arquivo init.js e clique em **Salvar tudo**:
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -165,7 +168,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
    | **Propriedade** | **Tipo** | **Valor** |
    |---|---|---|
    | categorias | Sequência de caracteres[] | granite.testing.hobbes.testing, granite.testing.hobbes.testing.testForm |
-   | dependências | Sequência de caracteres[] | granite.testing.calvin.testing |
+   | dependências | Sequência de caracteres[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -177,7 +180,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
 
    Para usar o seguinte código para testar outro formulário adaptável, altere o caminho e o nome do formulário em **navigateTo** (linhas 11, 36 e 62) e os respectivos casos de teste. Para obter mais informações sobre APIs para testar diferentes aspectos de formulários e objetos de formulário, consulte [Calvin APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
    
@@ -281,7 +284,7 @@ Você também pode instalar o pacote no arquivo anexado SampleTestPackage.zip pa
 
 Os Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página é alterada à medida que os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
 
-Um ícone de marca de seleção indica um teste aprovado: ![marca de seleção](assets/checkmark.png)
+Um ícone de marca de seleção indica um teste aprovado: ![marca](assets/checkmark.png)
 
 Um ícone &quot;X&quot; indica uma falha no teste: ![cruz](assets/cross.png)
 
