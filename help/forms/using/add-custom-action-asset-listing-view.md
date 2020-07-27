@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1381'
+ht-degree: 2%
 
 ---
 
@@ -168,7 +171,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
       Em seguida, anexe o seguinte código no final do arquivo formaction.js (sob a ramificação /apps) e clique em **Salvar tudo**:
 
-      ```
+      ```javascript
       /* Action url for xml file to be added.*/
       var ACTION_URL = "/apps/fd/cm/ma/gui/content/commons/actionhandlers/items/letterpdfdownloader.html";
       
@@ -276,7 +279,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
    1. Clique com o Duplo do mouse no arquivo **POST.jsp** para abri-lo no CRX.
    1. Adicione o seguinte código ao arquivo POST.jsp e clique em **Salvar tudo**:
 
-      Esse código é específico do serviço de renderização de letras. Para qualquer outro ativo, adicione as bibliotecas java desse ativo a este código. Para obter mais informações sobre APIs de formulários AEM, consulte API [de formulários](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+      Esse código é específico do serviço de renderização de letras. Para qualquer outro ativo, adicione as bibliotecas java desse ativo a este código. Para obter mais informações sobre APIs de AEM Forms, consulte API [de](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
       Para obter mais informações sobre bibliotecas do AEM, consulte [Componentes](/help/sites-developing/components.md)do AEM.
 
