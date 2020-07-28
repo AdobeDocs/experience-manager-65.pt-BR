@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ A moderação do UGC é útil para reconhecer contribuições positivas e limita
 
 * [Armazenamento de conteúdo da comunidade](working-with-srp.md)
 
-* [console de moderação em massa](moderation.md)
+* [Console de moderação em massa](moderation.md)
 
    O console Moderação pode ser acessado por administradores e moderadores [da](/help/communities/users.md) comunidade no ambiente público, bem como por administradores no ambiente do autor. Isso é possível quando o conteúdo da comunidade é armazenado em uma loja [](/help/communities/working-with-srp.md)comum.
 
@@ -154,11 +157,15 @@ Quando o UGC é excluído, ele é removido do repositório e pode não ser recup
 
 Ao selecionar a ação Recortar, o conteúdo é copiado em uma área de transferência. Várias postagens podem ser copiadas e movidas como um grupo para o novo local.
 
-![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
+![culto](assets/cutugc.png)
+
+![putbackugc](assets/putbackugc.png)
 
 Em outro local, quando o conteúdo está presente na área de transferência, um botão Colar fica visível ao lado de Nova publicação com um número que identifica o número de publicações que serão coladas. O botão Colar inclui uma opção para limpar a área de transferência em vez de colar.
 
-![chlimage_1-28](assets/chlimage_1-28.png) ![chlimage_1-29](assets/chlimage_1-29.png)
+![pasteugc](assets/pasteugc.png)
+
+![pasteugc1](assets/pasteugc1.png)
 
 ### Negar {#deny}
 
@@ -247,7 +254,7 @@ No console [de moderação em](/help/communities/moderation.md)massa, é possív
 
 #### Watchwords {#watchwords}
 
-As comunidades do AEM fornecem um analisador *de palavra de* observação como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecido pelas palavras de observação deve-se a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como de palavras proibidas.
+AEM comunidades fornece um analisador *de palavra de* observação como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecido pelas palavras de observação deve-se a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como de palavras proibidas.
 
 #### Configurar o sentimento e as palavras de observação {#configure-sentiment-and-watchwords}
 
