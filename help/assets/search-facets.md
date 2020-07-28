@@ -3,9 +3,9 @@ title: Pesquisar aspectos.
 description: Como criar, modificar e usar aspectos de pesquisa no Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2515'
 ht-degree: 18%
 
 ---
@@ -28,11 +28,9 @@ Os aspectos de pesquisa exibidos no painel Filtros são definidos no formulário
 Para pesquisas de texto completo, adicione o predicado de [!UICONTROL Texto completo] ao formulário. Use o predicado Propriedade para procurar ativos que correspondam a uma única propriedade especificada. Use o predicado Opções para pesquisar ativos que correspondam a um ou mais valores para uma propriedade específica. Adicione o predicado Intervalo de datas para pesquisar ativos criados dentro de um intervalo de datas especificado.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **Edit** ![edit icon](assets/do-not-localize/aemassets_edit.png).
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
    ![Localize e selecione o painel de pesquisa do administrador de ativos](assets/assets_admin_searchrail.png)
-
-   Localize e selecione o painel de pesquisa do administrador de ativos
 
    >[!NOTE]
    >
@@ -76,7 +74,7 @@ Para pesquisas de texto completo, adicione o predicado de [!UICONTROL Texto comp
 1. Para fechar a pré-visualização, clique em **[!UICONTROL Fechar]** ![fechando](assets/do-not-localize/close.png) no canto superior direito da pré-visualização.
 1. Clique em **[!UICONTROL Concluído]** para salvar as configurações.
 1. Navegue até o painel Pesquisar na interface do usuário Ativos. O predicado Propriedade é adicionado ao painel.
-1. Insira uma descrição para o ativo a ser pesquisado na caixa de texto. Por exemplo, digite &quot;Adobe&quot;. Quando você realiza uma pesquisa, os ativos com a descrição correspondente a &quot;Adobe&quot; são listados nos resultados da pesquisa.
+1. Insira uma descrição para o ativo a ser pesquisado na caixa de texto. For example, enter `Adobe`. Quando você executa uma pesquisa, os ativos com correspondência de descrição `Adobe` são listados nos resultados da pesquisa.
 
 ## Adicionar um predicado de opções {#adding-an-options-predicate}
 
@@ -90,13 +88,13 @@ Quando você seleciona uma opção, a pesquisa é executada com base na `value` 
 
 Por exemplo, se você selecionar &quot;Imagens&quot; para tipos de arquivos, a consulta de pesquisa dos ativos será criada ao combinar a propriedade `value` usando uma operação OR. Por exemplo, a consulta de pesquisa de imagens é construída combinando os resultados correspondentes de *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* e *image/tiff* da propriedade `jcr:content/metadata/dc:format` usando uma operação OR.
 
-![A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem](assets/chlimage_1-418.png)
+![A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem](assets/filetype-value-property.png)
 
 A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem
 
 Em vez de criar manualmente uma estrutura de nó para as opções no repositório CRXDE, você pode definir as opções em um arquivo JSON especificando pares de valores chave correspondentes. Especifique o caminho do arquivo JSON no campo **[!UICONTROL Nome da propriedade]**. Por exemplo, defina os pares de valores chave, `image/bmp`, `image/gif`, `image/jpeg` e `image/png` e especifique os valores, como mostrado no seguinte arquivo JSON de amostra. In the **[!UICONTROL Property Name]** field, you can specify the CRXDE path for this file.
 
-```JSON
+```json
 {
     "options" :
  [
@@ -137,7 +135,7 @@ Se desejar usar um nó existente, especifique-o usando a caixa de diálogo de se
 O predicado Propriedade de vários valores permite pesquisar ativos por vários valores. Considere um cenário em que você tem imagens de vários produtos em Ativos e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para procurar imagens de produtos com base em vários números de SKU.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Na página Pesquisar formulários, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos e clique no ícone **[!UICONTROL Editar]** ![editar](assets/do-not-localize/aemassets_edit.png).
+1. Na página Pesquisar no Forms, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos e clique no ícone **[!UICONTROL Editar]** ![editar](assets/do-not-localize/aemassets_edit.png).
 1. Na página Editar formulário de pesquisa, arraste um **[!UICONTROL Predicado de propriedades de vários valores]** da guia **[!UICONTROL Selecionar predicado]** para o painel principal.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. Você também pode usar a caixa de diálogo de seleção para selecionar um nó.
 1. Verifique se a opção **[!UICONTROL Suporte a delimitadores]** está selecionada. No campo **[!UICONTROL Delimitadores de entrada]**, especifique delimitadores para separar valores individuais. Por padrão, a vírgula é especificada como delimitador. É possível especificar um delimitador diferente.
@@ -164,7 +162,7 @@ O predicado de tag permite que você realize pesquisas baseadas em tags para ati
 1. Navegue até o painel Pesquisar. O predicado **[!UICONTROL Tags]** é adicionado ao painel Pesquisar.
 1. Especifique tags com base nas quais você deseja pesquisar ativos ou selecione na lista de sugestões.
 
-   ![Sugestão fornecida pelo Experience Manager ao digitar o nome da tag](assets/chlimage_1-419.png)
+   ![Sugestão fornecida pelo Experience Manager ao digitar o nome da tag](assets/tag-suggestion.png)
 
    *Figura: Sugestão fornecida pelo Experience Manager ao digitar o nome da tag.*
 
@@ -193,13 +191,13 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
 
 ## Redefinir aspectos de pesquisa padrão {#restoring-default-search-facets}
 
-Por padrão, um ícone de cadeado ícone de ![cadeado ícone](assets/do-not-localize/lock_closed_icon.svg) fechado é exibido antes do Painel **[!UICONTROL de pesquisa do administrador do]** Assets na página **[!UICONTROL Pesquisar formulários]** . O ícone de bloqueio em relação a uma opção na página Pesquisar formulários indica que as configurações padrão estão intactas e não são personalizadas. O ícone ![Bloquear ícone](assets/do-not-localize/lock_closed_icon.svg) fechado desaparece se você adicionar aspectos de pesquisa ao formulário indicando que o formulário padrão foi modificado.
+Por padrão, um ícone de cadeado ícone de ![cadeado ícone](assets/do-not-localize/lock_closed_icon.svg) fechado é exibido antes do Painel **[!UICONTROL de pesquisa do administrador do]** Assets na página **[!UICONTROL Pesquisar no Forms]** . O ícone de bloqueio em relação a uma opção na página Pesquisar Forms indica que as configurações padrão estão intactas e não são personalizadas. O ícone ![Bloquear ícone](assets/do-not-localize/lock_closed_icon.svg) fechado desaparece se você adicionar aspectos de pesquisa ao formulário indicando que o formulário padrão foi modificado.
 
-![O ícone de bloqueio em relação a uma opção na página Pesquisar formulários indica que as configurações padrão estão intactas e não são personalizadas.](assets/locked_admin_rail.png)
+![O ícone de bloqueio em relação a uma opção na página Pesquisar Forms indica que as configurações padrão estão intactas e não são personalizadas.](assets/locked_admin_rail.png)
 
 Para restaurar o aspecto de pesquisa padrão, execute estas etapas:
 
-1. Selecione **[!UICONTROL Assets Admin Search Rail]** na página **[!UICONTROL Pesquisar formulários]** .
+1. Selecione **[!UICONTROL Assets Admin Search Rail]** na página **[!UICONTROL Pesquisar no Forms]** .
 1. Clique em **[!UICONTROL Excluir]** contorno ![excluído](assets/do-not-localize/deleteoutline.png) na barra de ferramentas.
 1. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Excluir]** para remover as alterações personalizadas.
 
