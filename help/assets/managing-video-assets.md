@@ -3,9 +3,9 @@ title: Gerencie ativos de vídeo no [!DNL Adobe Experience Manager].
 description: Faça upload, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '816'
 ht-degree: 7%
 
 ---
@@ -23,17 +23,11 @@ Saiba como gerenciar e editar os ativos de vídeo em [!DNL Adobe Experience Mana
 
 1. Na pasta ou subpastas Ativos digitais, navegue até o local onde deseja adicionar ativos digitais.
 1. Para carregar o ativo, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Arquivos]**. Como alternativa, solte-o diretamente na área de ativos. Consulte [fazer upload de ativos](managing-assets-touch-ui.md#uploading-assets) para obter detalhes sobre a operação de upload.
-1. Para pré-visualização de um vídeo na visualização de placa, clique no botão **[!UICONTROL Reproduzir]** no ativo de vídeo.
+1. Para pré-visualização de um vídeo na visualização de placa, clique na opção **[!UICONTROL Reproduzir]** ![reprodução](assets/do-not-localize/play.png) no ativo de vídeo. Você pode pausar ou reproduzir vídeo apenas na visualização do cartão. As opções [!UICONTROL Reproduzir] e [!UICONTROL Pausar] não estão disponíveis na visualização da lista.
 
-   ![chlimage_1-65](assets/chlimage_1-201.png)
+1. Para pré-visualização do vídeo na página de detalhes do ativo, clique em **[!UICONTROL Editar]** no cartão. O vídeo é reproduzido no player de vídeo nativo do navegador. Você pode reproduzir, pausar, controlar o volume e aplicar zoom no vídeo em tela cheia.
 
-   Você pode pausar ou reproduzir vídeo apenas na visualização do cartão. Os botões [!UICONTROL Reproduzir] e [!UICONTROL Pausar] não estão disponíveis na visualização da lista.
-
-1. Para pré-visualização do vídeo na página de detalhes do ativo, clique em **[!UICONTROL Editar]** no cartão.
-
-   O vídeo é reproduzido no player de vídeo nativo do navegador. Você pode reproduzir, pausar, controlar o volume e aplicar zoom no vídeo em tela cheia.
-
-   ![chlimage_1-66](assets/chlimage_1-202.png)
+   ![Controles de reprodução de vídeo](assets/video-playback-controls.png)
 
 ## Configuração para carregar ativos com mais de 2 GB {#configuration-to-upload-assets-that-are-larger-than-gb}
 
@@ -62,7 +56,7 @@ Para configurar um limite de tamanho de arquivo maior, execute as seguintes etap
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Salvar tudo]**.
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. Na página Pacotes [!DNL Adobe Experience Manager] do Console [!UICONTROL Web, na coluna Nome da tabela, localize e clique em] Adobe Granite Workflow External Process Job Handler ****.
+1. Na página Pacotes [!DNL Adobe Experience Manager] do Console [!UICONTROL Web, na coluna Nome da tabela, localize e clique em] Adobe Granite Workflow Job Handler ****.
 1. On the [!UICONTROL Adobe Granite Workflow External Process Job Handler] page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours). Clique em **[!UICONTROL Salvar]**.
 1. Em [!DNL Experience Manager], clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 1. Na página Modelos de fluxo de trabalho, selecione **[!UICONTROL Dynamic Media Encode Video]** e clique em **[!UICONTROL Editar]**.
