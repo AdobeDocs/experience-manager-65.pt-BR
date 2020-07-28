@@ -1,6 +1,6 @@
 ---
-title: Moderation Console
-seo-title: Moderation Console
+title: Console de moderação
+seo-title: Console de moderação
 description: Como acessar o console Moderação
 seo-description: Como acessar o console Moderação
 uuid: d3b8a160-85b2-43f4-9891-5fafa8c48c5f
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -21,9 +21,9 @@ ht-degree: 4%
 
 # Console de moderação {#moderation-console}
 
-In AEM Communities, bulk [moderation of community content](/help/communities/moderate-ugc.md) is possible from both the author and publish environments by administrators and community moderators (trusted community members assigned as moderators).
+Em AEM Communities, a [moderação em massa do conteúdo](/help/communities/moderate-ugc.md) da comunidade é possível tanto do autor quanto dos ambientes de publicação por administradores e moderadores da comunidade (membros confiáveis da comunidade atribuídos como moderadores).
 
-Administrators and community moderators may also perform [in-context moderation](/help/communities/in-context.md) in the publish environment.
+Os administradores e os moderadores da comunidade também podem executar moderação [](/help/communities/in-context.md) no contexto no ambiente de publicação.
 
 Um recurso de todos os sites [da](/help/communities/sites-console.md) comunidade é um item de `Administration` menu disponível para usuários que fazem logon com privilégios administrativos. O `Administration` link fornece acesso ao console Moderação.
 
@@ -112,7 +112,7 @@ A área de conteúdo contém informações para o UGC publicado:
 
 ### Filtrar painel {#ootbfilters}
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![open-filterrail](assets/open-filterrail.png)
 
 O ícone do painel lateral abre o painel do filtro. O painel de filtros, que aparece à esquerda da área de conteúdo, fornece filtros diferentes, cada um com um efeito imediato no UGC referenciado que aparece na área de conteúdo.
 
@@ -141,17 +141,17 @@ O Caminho do conteúdo limita o UGC de referência exibido nas postagens colocad
 
 A pesquisa de texto limita o UGC referenciado exibido às postagens que contêm o texto inserido.
 
-![chlimage_1-213](assets/chlimage_1-213.png)
+![pesquisa de texto](assets/text-search.png)
 
 #### Site {#site}
 
 O site limita o UGC referenciado exibido às postagens nos sites da comunidade selecionados. Se nenhum site for marcado, todas as referências ao UGC serão exibidas.
 
-![chlimage_1-214](assets/chlimage_1-214.png)
+![painel do site](assets/site-panel.png)
 
 >[!NOTE]
 >
->Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são exibidas, incluindo sites não criados com o assistente [de criação de](/help/communities/sites-console.md)site, como as amostras do Geometrixx.
+>Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são exibidas, incluindo sites não criados com o assistente [de criação de](/help/communities/sites-console.md)site, como amostras de Geometrixx.
 >
 >Quando o console de moderação em massa é acessado na publicação por um membro da comunidade confiável, somente as referências ao UGC criado para sites da comunidade que o membro está autorizado a moderar são mostradas e podem ser filtradas com o filtro Site.
 
@@ -189,8 +189,7 @@ Para adicionar recursos adicionais nos quais filtrar:
    * Por exemplo, para filtrar os componentes de Votação incluídos, informe:
 
       `Voting=social/tally/components/hbs/voting`
-
-![chlimage_1-215](assets/chlimage_1-215.png)
+   ![tipo de conteúdo adicional](assets/additional-contenttype.png)
 
 * Selecione Salvar.
 * Atualize o console Comunidades - Moderação.
@@ -216,25 +215,25 @@ A sinalização limita a exibição do UGC referenciado em postagens que estão 
 
 Depois que um conteúdo é sinalizado, ele permanece sinalizado até que você cancele a sinalização desse único conteúdo selecionando o botão **Sinalizar** novamente. Observe que não há níveis de sinalização, como importante ou acompanhamento.
 
-![chlimage_1-216](assets/chlimage_1-216.png)
+![sinalização](assets/flagging.png)
 
 #### Membros {#members}
 
 Os membros limitam o UGC referenciado exibido ao UGC postado pelo nome do membro inserido.
 
-![chlimage_1-217](assets/chlimage_1-217.png)
+![membros](assets/members.png)
 
 #### Publicado nos últimos {#posted-in-the-last}
 
 Publicado no último limite, o UGC referenciado era exibido nas postagens feitas na última hora, dia, semana, mês ou ano.
 
-![chlimage_1-218](assets/chlimage_1-218.png)
+![post-last](assets/posted-last.png)
 
 #### Sentimento {#sentiment}
 
 [O sentimento](/help/communities/moderate-ugc.md#sentiment) limita a exibição do UGC referenciado em publicações com um valor de sentimento que seja positivo, negativo ou neutro.
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![sentimento](assets/sentiment.png)
 
 ## Custom Filters {#custom-filters}
 
@@ -271,7 +270,7 @@ Para expor os filtros personalizados em sites existentes da Comunidade:
 
 [As ações](/help/communities/moderate-ugc.md#moderation-actions) de moderação podem ser executadas em uma ou mais seleções feitas na área de conteúdo ou ao exibir os detalhes do conteúdo.
 
-Para moderar as publicações em massa, na área de conteúdo, clique no ícone Selecionar ( ![seletor](assets/selecticon.png)) em uma publicação, que aparece ao passar o mouse sobre ela (área de trabalho) ou pressionando e segurando um dedo na publicação (móvel). Ao fazer isso, você entra no modo de seleção múltipla e pode selecionar as publicações subsequentes para serem moderadas em massa simplesmente clicando nelas. Use os botões exibidos na barra de ferramentas para executar ações de moderação nas postagens selecionadas. Todas as ações solicitarão confirmação.
+Para moderar as publicações em massa, na área de conteúdo, clique no ícone Selecionar (![seletor](assets/selecticon.png)) em uma publicação, que aparece ao passar o mouse sobre ela (área de trabalho) ou pressionando e segurando um dedo na publicação (móvel). Ao fazer isso, você entra no modo de seleção múltipla e pode selecionar as publicações subsequentes para serem moderadas em massa simplesmente clicando nelas. Use os botões exibidos na barra de ferramentas para executar ações de moderação nas postagens selecionadas. Todas as ações solicitarão confirmação.
 
 Para moderar uma única publicação na área de conteúdo, passe o mouse sobre ela (área de trabalho) ou pressione e mantenha pressionado um dedo na publicação (móvel) para que os botões apareçam na publicação. Ao operar em um único detalhe de conteúdo, somente uma ação de exclusão solicitará a confirmação.
 
@@ -318,19 +317,19 @@ Presente na visualização do cartão acima dos ícones de ação de moderação
 
 #### Responder {#reply}
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![resposta](assets/reply.png)
 
 Ao trabalhar com uma única publicação, um ícone Responder será exibido se o tipo UGC suportar respostas e estiver configurado para permitir respostas.
 
 #### Permitir {#allow}
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![permitir](assets/allow.png)
 
 Ao trabalhar com uma única publicação, o ícone Permitir aparecerá quando a publicação tiver sido sinalizada ou negada. Se sinalizado, selecionar Permitir apagará todos os sinalizadores.
 
 #### Negar {#deny}
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![negar ](assets/deny.png)
 
 A ação de moderação **Negar** está disponível somente para conteúdo que é moderado e não aparece em conteúdo não moderado, exceto no modo de seleção múltipla.
 
@@ -342,31 +341,31 @@ O conteúdo que deixa o estado pendente nunca poderá voltar a um estado pendent
 
 #### Exclua {#delete}
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![delete](assets/delete.png)
 
 No modo de seleção única ou em massa, é possível selecionar itens e excluí-los. A ação de exclusão resulta em uma caixa de diálogo de confirmação. Depois de excluídos, esses itens desaparecem imediatamente da área de conteúdo. **Depois que o UGC é excluído, ele é removido permanentemente do repositório e não pode ser recuperado** posteriormente.
 
 #### Fechar {#close}
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![fechar](assets/close.png)
 
 Ao trabalhar com uma única publicação, um ícone Fechar será exibido se o tipo UGC suportar a capacidade de impedir outras publicações para esse recurso.
 
 #### Histórico de moderação {#moderation-history}
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![moderação](assets/moderation.png)
 
 Ao trabalhar com uma única publicação, um ícone Histórico de moderação aparecerá ao passar o mouse sobre ela. Selecionar o ícone exibirá um painel contendo um histórico de ações tomadas em relação à publicação do UGC.
 
 Para retornar à exibição da área de conteúdo de várias postagens UGC, selecione o X no canto superior direito do painel de detalhes da visualização.
 
-Por exemplo :
+Por exemplo:
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![história de moderação](assets/moderation-history.png)
 
 #### Exibir detalhe {#view-detail}
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![visualização](assets/view.png)
 
 Ao trabalhar com uma única publicação, mais detalhes podem ser exibidos ao abrir o UGC no modo de detalhes.
 
@@ -374,7 +373,7 @@ Para fazer isso, passe o mouse sobre a publicação para exibir o `View Detail` 
 
 Para retornar à exibição da área de conteúdo de várias postagens UGC, selecione o X no canto superior direito do painel de detalhes da visualização.
 
-Por exemplo :
+Por exemplo:
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![view1](assets/view1.png)
 
