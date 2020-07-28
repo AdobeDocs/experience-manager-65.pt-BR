@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d488b1acc789c0fb1a631e58844d9fe9a70c2662
+source-git-commit: 3a1d02fc1bc561b54e57cf91abc8f4406ba8c365
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2601'
 ht-degree: 2%
 
 ---
@@ -25,8 +25,9 @@ Esta página ajuda a estender as funcionalidades do Multi Site Manager:
 
 * Saiba mais sobre os principais membros da API Java MSM.
 * Crie uma nova ação de sincronização que pode ser usada em uma configuração de implantação.
-* Remova a etapa &quot;Capítulos&quot; no assistente para Criar site.
 * Modifique o idioma padrão e os códigos de país.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
@@ -649,7 +650,7 @@ Para modificar os idiomas:
 1. Clique em **Ferramentas**, **Operações** e Console **da** Web. Nesse console, clique em **OSGi** e em **Configuração**.
 1. Localize e clique em **Day CQ WCM Language Manager**, altere o valor da Lista **de** idioma para `/apps/wcm/core/resources/languages`e clique em **Salvar**.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 ## Configuração de bloqueios MSM em propriedades da página (interface habilitada para toque) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
