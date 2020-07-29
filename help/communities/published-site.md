@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Navegue até Novo site na publicação {#browse-to-new-site-on-publish}
 
-Agora que o site de comunidades recém-criado foi publicado, navegue até o URL exibido ao criar o site, mas no servidor de publicação, por exemplo
+Agora que o site de comunidades recém-criado foi publicado, navegue até o URL exibido ao criar o site, mas no servidor de publicação, por exemplo:
 
 * URL do autor = https://localhost:4502/content/sites/engage/en.html
 * URL de publicação = https://localhost:4503/content/sites/engage/en.html
@@ -65,13 +65,14 @@ Para proteger o conteúdo do site da sua comunidade do acesso de usuários anôn
 
 1. Ir para Propriedades **da** página.
 
-   ![autenticação de site](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Vá para a guia **Avançado** .
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![autenticação de site](assets/site-authentication.png)
+
 1. Adicione o caminho da página de logon. Por exemplo, **/content/......./GetStarted**.
 1. Publique a página.
 
@@ -198,7 +199,7 @@ Faça logon como Weston McCall (weston.mccall@dodgit.com / senha) e navegue até
 
 ### Link da página da Web {#web-page-link}
 
-Visualização a página da Web básica incluída no site selecionando o link Página da Web. As ferramentas de criação padrão do AEM podem ser usadas para adicionar conteúdo a esta página no ambiente do autor.
+Visualização a página da Web básica incluída no site selecionando o link Página da Web. As ferramentas de criação de AEM padrão podem ser usadas para adicionar conteúdo a esta página no ambiente do autor.
 
 Por exemplo, vá para a instância do **autor** , abra a `engage` pasta no console [Sites](/help/communities/sites-console.md)das Comunidades e selecione o ícone **Abrir site** para entrar no modo de edição do autor. Em seguida, selecione o modo de pré-visualização para selecionar o `Web Page` link e, em seguida, selecione o modo de edição para adicionar componentes de Título e Texto. Por último, publique novamente apenas a página ou o site inteiro.
 
