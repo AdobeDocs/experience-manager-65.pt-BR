@@ -1,8 +1,8 @@
 ---
 title: Criar uma nova tela de login
 seo-title: Criar uma nova tela de login
-description: Como modificar a página de logon dos módulos do LiveCycle, por exemplo, da área de trabalho do AEM Forms ou do Gerenciador de Formulários.
-seo-description: Como modificar a página de logon dos módulos do LiveCycle, por exemplo, da área de trabalho do AEM Forms ou do Gerenciador de Formulários.
+description: Como modificar a página de logon dos módulos de LiveCycle, por exemplo, da área de trabalho dos AEM Forms ou do Forms Manager.
+seo-description: Como modificar a página de logon dos módulos de LiveCycle, por exemplo, da área de trabalho dos AEM Forms ou do Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b4c1bc5f09491a8843a82c3589604f6717a76ea8
+source-git-commit: 9fcfd1c2c63d9a32f2d68f5b0c974bc5b5d22b40
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '485'
 ht-degree: 5%
 
 ---
@@ -97,9 +97,11 @@ String browserLocale = "en";
             break;
         }
     }
+```
 
-To
+Para
 
+```jsp
 String browserLocale = "en";
     for(int i=0; i<locales.length; i++)
     {
@@ -125,8 +127,9 @@ String browserLocale = "en";
             break;
         }
     }
-```jsp
+```
 
+```jsp
 String browserLocale = "en";
 
     for(int i=0; i<locales.length; i++)
@@ -149,9 +152,11 @@ String browserLocale = "en";
             break;
         }
     }
+```
 
-To
+Para
 
+```jsp
 String browserLocale = "en";
     for(int i=0; i<locales.length; i++)
     {
@@ -177,20 +182,19 @@ String browserLocale = "en";
             break;
         }
     }
-***To change Default locale***
-
-```jsp
-
-String browserLocale = "en";
-for(int i=0; i<locales.length; i++)
-
-To
-
-String browserLocale = "ar";
-for(int i=0; i<locales.length; i++)
 ```
 
+***Para alterar a localidade padrão***
 
+```jsp
+   String browserLocale = "en";
+   for(int i=0; i<locales.length; i++)
+
+   To
+
+   String browserLocale = "ar";
+   for(int i=0; i<locales.length; i++)
+```
 
 ### Adicionar novo texto ou modificar um texto existente {#adding-new-text-or-modifying-existing-text}
 
@@ -234,9 +238,7 @@ for(int i=0; i<locales.length; i++)
                        <% if (loginFailed) {%>
    ```
 
-
-
-### Adicionar novo estilo ou modificar um estilo existente {#adding-new-style-or-modifying-existing-style}
+### Adicionar novo estilo ou modificar o estilo existente {#adding-new-style-or-modifying-existing-style}
 
 1. Copy `login` node:
 
@@ -285,7 +287,6 @@ css.newLoginContentArea {
 >
 >Se as imagens existentes em `/apps/livecycle/core/content/login` (copiadas de `/libs/livecycle/core/content/login`) forem removidas, remova as referências correspondentes em CSS.
 
-
 ### Adicionar novas imagens {#add-new-images}
 
 1. Siga as etapas de Adicionar novo estilo ou modificar o estilo existente (documentado acima).
@@ -324,4 +325,3 @@ Para
 ```jsp
 <div class="newLginContainerBkg">
 ```
-
