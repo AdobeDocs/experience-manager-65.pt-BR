@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 6a9f273c6e9eb822e2d4765700361a205019b84c
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Consulte também [Características das opções](working-with-srp.md#characteris
    * Versão 2.6 ou superior
    * Não há necessidade de configurar mongos ou compartilhamento
    * Recomendar o uso de um conjunto de [réplicas](#mongoreplicaset)
-   * Pode ser executado no mesmo host do AEM ou executado remotamente
+   * Pode ser executado no mesmo host que AEM ou executado remotamente
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -43,7 +43,7 @@ Consulte também [Características das opções](working-with-srp.md#characteris
    * Escolha dos modos de execução:
       * Modo autônomo
       * [Modo](solr.md#solrcloud-mode) SolrCloud (recomendado para ambientes de produção)
-   * Escolha da pesquisa multilíngue (MLS)
+   * Escolha da pesquisa multilíngue (MLS):
       * [Instalação do MLS padrão](solr.md#installing-standard-mls)
       * [Instalação do Advanced MLS](solr.md#installing-advanced-mls)
 
@@ -91,16 +91,18 @@ Em autor, para acessar o console Configuração do Armazenamento:
 
       * **[!UICONTROL URL]**SolrO URL usado para se comunicar com o Solr no modo independente.
 Deixe em branco se estiver sendo executado no modo SolrCloud.
+
          *Padrão*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Coleção]**SolrO nome da coleção Solr.
+
          *Padrão*: coleção1
 
 * Selecione **[!UICONTROL Enviar]**
 
 >[!NOTE]
 >
->O banco de dados mongoDB, que padroniza o nome `communities`, não deve ser definido como o nome de um banco de dados que está sendo usado para armazenamentos de [nó ou armazenamentos](../../help/sites-deploying/data-store-config.md)de dados (binários). Consulte também Elementos [de Armazenamento no AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>O banco de dados mongoDB, que padroniza o nome `communities`, não deve ser definido como o nome de um banco de dados que está sendo usado para armazenamentos de [nó ou armazenamentos](../../help/sites-deploying/data-store-config.md)de dados (binários). Consulte também Elementos para [Armazenamentos no AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 
 ### Conjunto de Réplicas MongoDB {#mongodb-replica-set}
@@ -222,7 +224,7 @@ Para configurar o MSRP para um ambiente de demonstração ou desenvolvimento, co
 
 Verifique se o MSRP foi configurado para ser o provedor padrão ao verificar a configuração da opção armazenamento. Por padrão, o provedor de recursos do armazenamento é JSRP.
 
-Em todas as instâncias do autor e publicação de AEM, reveja o console [Configuração do](srp-config.md) Armazenamento ou verifique o repositório do AEM:
+Em todas as instâncias de autor e publicação AEM, reveja o console [Configuração do](srp-config.md) Armazenamento ou verifique o repositório AEM:
 
 * No JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -237,7 +239,7 @@ Há uma ferramenta de código aberto disponível no GitHub para esse fim:
 
 * [Ferramenta de migração UGC do AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-A ferramenta de migração pode ser personalizada para exportar o UGC de versões anteriores de comunidades sociais do AEM para importação para o AEM Communities 6.1 ou posterior.
+A ferramenta de migração pode ser personalizada para exportar o UGC de versões anteriores de comunidades sociais AEM para importação para o AEM Communities 6.1 ou posterior.
 
 ### Erro - id_do_provedor de campo indefinido {#error-undefined-field-provider-id}
 
@@ -263,8 +265,8 @@ Para resolver o erro, ao seguir as instruções de [instalação do Standard MLS
 Se uma tentativa de fazer uma conexão segura com o servidor MongoDB falhar devido a uma definição de classe ausente, será necessário atualizar o conjunto de drivers MongoDB, `mongo-java-driver`, disponível no repositório maven público.
 
 1. Baixe o driver em [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versão 2.13.2 ou posterior).
-1. Copie o pacote na pasta &quot;crx-quickstart/install&quot; para uma instância do AEM.
-1. Reinicie a instância do AEM.
+1. Copie o pacote na pasta &quot;crx-quickstart/install&quot; para uma instância AEM.
+1. Reinicie a instância AEM.
 
 ## Recursos {#resources}
 
