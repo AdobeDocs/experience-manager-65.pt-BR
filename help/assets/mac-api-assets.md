@@ -3,9 +3,9 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
+source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1580'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ As pastas são como diretórios em sistemas de arquivos tradicionais. São conta
 * `parent`: Link para a pasta pai.
 * `thumbnail`: (Opcional) link para uma imagem em miniatura da pasta.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 No Experience Manager, um ativo contém os seguintes elementos:
 
@@ -96,7 +96,7 @@ A API HTTP Assets inclui os seguintes recursos:
 **Pré-requisitos**
 
 * Acesso `https://[aem_server]:[port]/system/console/configMgr`.
-* Navegue até Filtro **[!UICONTROL CSRF do]** Adobe Granite.
+* Navegue até **[!UICONTROL Adobe Granite CSRF Filter]**.
 * Verifique se a propriedade Métodos **[!UICONTROL de]** filtro inclui: `POST`, `PUT`, `DELETE`.
 
 ## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
@@ -253,6 +253,9 @@ Move uma pasta ou um ativo no caminho fornecido para um novo destino.
 * `X-Overwrite` - Use `T` para forçar a exclusão de um recurso existente ou `F` para evitar a substituição de um recurso existente.
 
 **Solicitação**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+
+Não usar `/content/dam` no URL. Um comando de amostra a ser movido durante a substituição é:
+`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
 
 **Códigos** de resposta: Os códigos de resposta são:
 
