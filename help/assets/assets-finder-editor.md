@@ -3,7 +3,7 @@ title: Criar e configurar páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: c679cc5ad8f0ecf3495b020ef593de2e73c05ae0
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 1%
@@ -171,7 +171,7 @@ To add predicates:
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![assetshare4](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.png)
 
 The following predicates are available:
 
@@ -204,17 +204,17 @@ Ao criar a página Editor de ativos, uma boa prática é criar a página logo ab
 Para criar uma página do Editor de ativos:
 
 1. Na guia **[!UICONTROL Sites]** , navegue até o local onde deseja criar uma página do editor de ativos e clique em **Novo**.
-1. Selecione **Editor** de ativos Geometrixx e clique em **Criar**. A nova página é criada e listada na guia **Sites** .
+1. Selecione Editor **de ativos** Geometrixx e clique em **Criar**. A nova página é criada e listada na guia **Sites** .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
-A página básica criada usando o modelo do Editor de ativos Geometrixx tem a seguinte aparência:
+A página básica criada usando o modelo do Editor de ativos de Geometrixx é exibida da seguinte maneira:
 
-![assetshare5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.png)
 
 Para personalizar a página do Editor de ativos, use elementos do sidekick. A página do Editor de ativos que é acessada do **Geometrixx Press Center** é uma versão personalizada de uma página baseada neste modelo:
 
-![assetshare6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.png)
 
 #### Definir um editor de ativos para abrir a partir de uma página de compartilhamento de ativos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -262,7 +262,7 @@ Para adicionar componentes do editor de ativos:
 
 #### Formulário de metadados e campo de texto - Configuração do componente Metadados de Visualização {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-O Formulário de metadados é um formulário que inclui um start e uma ação final. No meio, você insere campos **de Texto** . Consulte [Formulários](/help/sites-authoring/default-components-foundation.md#form-component) para obter mais informações sobre como trabalhar com formulários.
+O Formulário de metadados é um formulário que inclui um start e uma ação final. No meio, você insere campos **de Texto** . Consulte [Forms](/help/sites-authoring/default-components-foundation.md#form-component) para obter mais informações sobre como trabalhar com formulários.
 
 1. Crie uma ação de start clicando em **Editar** na área Start do formulário. Você pode inserir um título de Caixa, se desejar. Por padrão, o título Caixa é **Metadados**. Marque a caixa de seleção Validação do cliente se desejar que o código do cliente Java-script para validação seja gerado.
 
@@ -394,7 +394,7 @@ Com os ativos Experience Manager, é possível fazer alterações em vários ati
 
 Para fazer várias edições de ativos com a página Editor de ativos:
 
-1. Abra a página do Geometrixx **Press Center** :
+1. Abra a página **Press Center** :
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Selecione os ativos:
