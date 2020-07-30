@@ -3,9 +3,9 @@ title: API HTTP de ativos em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
+source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1583'
 ht-degree: 1%
 
 ---
@@ -254,8 +254,11 @@ Move uma pasta ou um ativo no caminho fornecido para um novo destino.
 
 **Solicitação**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-Não usar `/content/dam` no URL. Um comando de amostra a ser movido durante a substituição é:
-`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
+Não usar `/content/dam` no URL. Um comando de exemplo para mover ativos e substituir ativos existentes é:
+
+```shell
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+```
 
 **Códigos** de resposta: Os códigos de resposta são:
 
