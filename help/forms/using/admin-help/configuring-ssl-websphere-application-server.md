@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Para habilitar o SSL, o WebSphere precisa de acesso a uma conta de usuário no r
 1. Abra o arquivo de grupo do diretório /etc em um editor de texto.
 1. Adicione ao `root` grupo o usuário que você criou na etapa 2.
 1. Salve e feche o arquivo.
-1. (UNIX com SSL habilitado) Start e parado o WebSphere como o usuário raiz.
+1. (UNIX com SSL ativado) Start e parado o WebSphere como o usuário raiz.
 
 ### Criar um usuário do Windows para WebSphere {#create-a-windows-user-for-websphere}
 
@@ -127,7 +127,7 @@ Truststores e keystores podem ser criados usando o utilitário ikeyman ou o cons
 
    Seu perfil agora é executado com configurações SSL personalizadas e seu certificado.
 
-## Habilitar suporte para nativos de formulários AEM {#enabling-support-for-aem-forms-natives}
+## Habilitar suporte para AEM nativos de formulários {#enabling-support-for-aem-forms-natives}
 
 1. No Console administrativo do WebSphere, selecione **Segurança > Segurança** global.
 1. Na seção Autenticação, expanda a segurança **** RMI/IIOP e clique em Comunicações **de entrada** CSIv2.
@@ -178,7 +178,7 @@ Execute as seguintes etapas para definir a porta como dinâmica e resolver o pro
 1. Abra o arquivo `[aem-forms_root]`\crx-repository\launchpad\sling.properties para edição.
 1. Localize a `sling.bootdelegation.ibm` propriedade e adicione- `com.ibm.websphere.ssl.*`a ao seu campo de valor. O campo atualizado tem a seguinte aparência:
 
-   ```java
+   ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
