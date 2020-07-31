@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -30,9 +30,9 @@ Conhecimento prático de HTML e CSS
 
 A interface do usuário do AEM Forms permite que você adicione metadados a qualquer formulário. Os metadados personalizados podem melhorar a experiência do usuário ao listar e pesquisar formulários de sua organização.
 
-O Portal de formulários permite que você use metadados personalizados em listagens de formulários. Ao criar modelos personalizados para ativos, você pode modificar seu layout e usar metadados personalizados com seu conjunto de estilos CSS.
+O Forms Portal permite que você use metadados personalizados em listagens de formulário. Ao criar modelos personalizados para ativos, você pode modificar seu layout e usar metadados personalizados com seu conjunto de estilos CSS.
 
-Execute as seguintes etapas para criar um modelo personalizado para vários componentes do Portal de formulários.
+Execute as seguintes etapas para criar um modelo personalizado para vários componentes do Forms Portal.
 
 ## Creating a custom template {#creating-a-nbsp-custom-template}
 
@@ -61,9 +61,9 @@ Execute as seguintes etapas para criar um modelo personalizado para vários comp
 
 ## Exemplo de trabalho {#working-example}
 
-A seguir está uma amostra da implementação de um modelo personalizado em que o Portal do Forms adquire um layout personalizado de cartão Gov Geometrixx para o componente de Pesquisa e Lister.
+A seguir está uma amostra da implementação de um modelo personalizado em que o Forms Portal adquire um layout personalizado de cartão Gov para o componente de Pesquisa e Lister.
 
-```xml
+```html
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">
@@ -83,9 +83,9 @@ A seguir está uma amostra da implementação de um modelo personalizado em que 
 
 ## Especificações técnicas para modelos personalizados {#technical-specifications-for-custom-templates}
 
-Um modelo personalizado para qualquer componente do Portal do Forms inclui entradas repetíveis e não repetíveis. As entradas repetidas são entidades básicas para listagem. Exemplos de entradas repetíveis são o Search &amp; Lister, os Rascunhos &amp; Submissões e os componentes do Link.
+Um modelo personalizado para qualquer componente do Forms Portal inclui entradas repetíveis e não repetíveis. As entradas repetidas são entidades básicas para listagem. Exemplos de entradas repetíveis são o Search &amp; Lister, os Rascunhos &amp; Submissões e os componentes do Link.
 
-O Portal de Formulários fornece uma sintaxe para que os usuários possam exibir metadados personalizados/OOTB. Os espaços reservados são preenchidos após a exibição dos resultados de formulários, rascunhos ou envios.
+O Forms Portal fornece uma sintaxe para que os usuários individuais exibam metadados personalizados/OOTB. Os espaços reservados são preenchidos após a exibição dos resultados de formulários, rascunhos ou envios.
 
 Para incluir uma entrada repetível, configure o valor do atributo com **dados repetitivos** como **verdadeiro**.
 
@@ -97,7 +97,7 @@ Cada espaço reservado tem um conjunto exclusivo de metadados OTB. Para exibir m
 
 ## Metadados prontos para uso {#out-of-the-box-metadata}
 
-Vários componentes do Portal de formulários fornecem conjuntos exclusivos de metadados OOTB que podem ser usados para listagem.
+Vários componentes do Forms Portal fornecem conjuntos exclusivos de metadados OOTB que podem ser usados para listagem.
 
 ### Componente de pesquisa e lister {#search-amp-lister-component}
 
@@ -136,7 +136,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na visualização de grade, o
 ### Componente Rascunhos e envios {#drafts-amp-submissions-component}
 
 * **Caminho**: Caminho do nó de metadados de rascunho/envios. Use-o com a extensão .HTML como um URL para abrir um rascunho ou envio.
-* **contextPath**: Caminho de contexto da instância do AEM
+* **contextPath**: Caminho de contexto da instância AEM
 * **firstLetter**: A primeira letra (maiúscula) do título do formulário adaptável, que foi salva como Rascunho ou enviada.
 * **formName**: O título do formulário adaptável, que foi salvo como Rascunho ou submetido.
 * **draftID**: ID do rascunho listado (Use apenas no modelo para a seção Rascunho).
@@ -144,7 +144,7 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na visualização de grade, o
 * **status**: Status do formulário enviado. (Use apenas no modelo para a seção Envio).
 * **descrição**: Descrição do formulário adaptativo associado ao rascunho ou ao envio.
 * **diffTime**: Diferença entre a hora atual e a última ação de salvar do rascunho. Como alternativa, a diferença entre a hora atual e a última ação de envio para a submissão.
-* **iconClass**: Classe CSS usada para exibir a primeira letra do rascunho/envio. O Portal de formulários inclui as seguintes classes, que fornecem vários planos de fundo coloridos.
+* **iconClass**: Classe CSS usada para exibir a primeira letra do rascunho/envio. O Forms Portal inclui as seguintes classes, que fornecem vários planos de fundo coloridos.
 * **proprietário**: Usuário que criou o rascunho/envio.
 * **Hoje**: Data de criação do rascunho ou envio no formato DD:MM:AAAA.
 * **TimeNow**: Hora de criação do rascunho ou envio no formato HH:MM:SS de 24 horas
@@ -172,9 +172,9 @@ Por exemplo, para o cabeçalho &quot;Título&quot; na visualização de grade, o
 ## Dicas, truques e problemas conhecidos {#tips-tricks-and-known-issues}
 
 1. Não use aspas simples (&#39;) em nenhum modelo personalizado.
-1. Para metadados personalizados, armazene essa propriedade somente no nó **jcr:content/metadata** . Se você armazená-lo em qualquer outro lugar, o Portal do Forms não poderá exibir os metadados.
+1. Para metadados personalizados, armazene essa propriedade somente no nó **jcr:content/metadata** . Se você armazená-lo em qualquer outro lugar, o Forms Portal não poderá exibir os metadados.
 1. Certifique-se de que o nome de metadados personalizados ou existentes não incluam dois pontos ( : ). Se isso acontecer, você não poderá exibi-lo na interface do usuário.
-1. **a repetição** de dados não tem importância para um componente **Link** . A Adobe recomenda que você evite usar essa propriedade no modelo para um componente de Link.
+1. **a repetição** de dados não tem importância para um componente **Link** . O Adobe recomenda que você evite usar essa propriedade no modelo para um componente de Link.
 
 ## Artigos relacionados
 
