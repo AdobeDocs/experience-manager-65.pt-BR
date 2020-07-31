@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '6822'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-O recurso de editor de regras no Adobe Experience Manager Forms permite que usuários e desenvolvedores de empresas criem regras em objetos de formulário adaptáveis. Essas regras definem ações para acionar objetos de formulário com base em condições predefinidas, entradas do usuário e ações do usuário no formulário. Ele ajuda a simplificar ainda mais a experiência de preenchimento de formulários, garantindo a precisão e a velocidade.
+O recurso de editor de regras no Adobe Experience Manager Forms permite que usuários e desenvolvedores de formulários empresariais escrevam regras em objetos de formulário adaptáveis. Essas regras definem ações para acionar objetos de formulário com base em condições predefinidas, entradas do usuário e ações do usuário no formulário. Ele ajuda a simplificar ainda mais a experiência de preenchimento de formulários, garantindo a precisão e a velocidade.
 
 O editor de regras fornece uma interface de usuário intuitiva e simplificada para gravar regras. O editor de regras oferta um editor visual para todos os usuários. Além disso, somente para usuários avançados de formulários, o editor de regras fornece um editor de código para gravar regras e scripts. Algumas das ações principais que podem ser executadas em objetos de formulário adaptáveis usando regras são:
 
@@ -33,7 +33,7 @@ O editor de regras fornece uma interface de usuário intuitiva e simplificada pa
 * Chame um serviço de modelo de dados de formulário e execute uma operação
 * Definir propriedade de um objeto
 
-O editor de regras substitui os recursos de script no AEM 6.1 Forms e em versões anteriores. No entanto, os scripts existentes são preservados no novo editor de regras. Para obter mais informações sobre como trabalhar com scripts existentes no editor de regras, consulte [Impacto do editor de regras em scripts](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p)existentes.
+O editor de regras substitui os recursos de script no AEM 6.1 Forms e versões anteriores. No entanto, os scripts existentes são preservados no novo editor de regras. Para obter mais informações sobre como trabalhar com scripts existentes no editor de regras, consulte [Impacto do editor de regras em scripts](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p)existentes.
 
 Os usuários adicionados ao grupo de usuários avançados para formulários podem criar novos scripts e editar os existentes. Os usuários do grupo de usuários de formulários podem usar os scripts, mas não podem criar ou editar scripts.
 
@@ -133,13 +133,13 @@ Ao escrever uma regra Quando, você pode acionar a ação Limpar valor de. A aç
 
 **Desativar** Desativa o objeto especificado.
 
-**Invocar serviço** Chama um serviço configurado em um modelo de dados de formulário. Quando você escolhe a operação Chamar serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário em sua instância do AEM. Ao escolher um serviço de modelo de dados de formulário, são exibidos campos adicionais nos quais é possível mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte regra de exemplo para chamar serviços de modelo de dados de formulário.
+**Invocar serviço** Chama um serviço configurado em um modelo de dados de formulário. Quando você escolhe a operação Chamar serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário na instância AEM. Ao escolher um serviço de modelo de dados de formulário, são exibidos campos adicionais nos quais é possível mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte regra de exemplo para chamar serviços de modelo de dados de formulário.
 
 Além do serviço de modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço da Web. No entanto, um serviço de modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para chamar um serviço.
 
 Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
 
-**Defina o valor de** Calcula e define o valor do objeto especificado. Você pode definir o valor do objeto como uma string, o valor de outro objeto, o valor calculado usando a expressão ou função matemática, o valor de uma propriedade de um objeto ou o valor de saída de um serviço de modelo de dados de formulário configurado. Quando você escolhe a opção de serviço da Web, ela exibe todos os serviços configurados em todos os modelos de dados de formulário na instância do AEM. Ao escolher um serviço de modelo de dados de formulário, são exibidos campos adicionais nos quais é possível mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado.
+**Defina o valor de** Calcula e define o valor do objeto especificado. Você pode definir o valor do objeto como uma string, o valor de outro objeto, o valor calculado usando a expressão ou função matemática, o valor de uma propriedade de um objeto ou o valor de saída de um serviço de modelo de dados de formulário configurado. Quando você escolhe a opção de serviço da Web, ela exibe todos os serviços configurados em todos os modelos de dados de formulário na instância AEM. Ao escolher um serviço de modelo de dados de formulário, são exibidos campos adicionais nos quais é possível mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado.
 
 Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
 
@@ -165,7 +165,7 @@ A figura a seguir descreve um exemplo de adição dinâmica de caixas de seleç�
 
 **Salvar formulário** Salva o formulário.
 
-**Enviar formulários** Envia o formulário.
+**Enviar Forms** Envia o formulário.
 
 **Redefinir formulário** Redefine o formulário.
 
@@ -378,7 +378,7 @@ Os usuários do grupo de usuários avançados de formulários podem acessar o ed
 
 O AEM Forms rastreia o modo de editor de regras usado por último para gravar uma regra. Quando você iniciar o editor de regras na próxima vez, ele será aberto nesse modo. No entanto, também é possível configurar um modo padrão para abrir o editor de regras no modo especificado. Para isso:
 
-1. Vá para o console da Web do AEM em `https://[host]:[port]/system/console/configMgr`.
+1. Vá para AEM console da Web em `https://[host]:[port]/system/console/configMgr`.
 1. Clique para editar o Serviço **** de configuração de formulário adaptável.
 1. escolha o Editor **** visual ou o Editor **** de código no modo **[!UICONTROL padrão do menu suspenso Editor]** de regras
 
@@ -471,11 +471,11 @@ Execute as seguintes etapas para gravar regras:
 
 1. No campo expressão:
 
-   * Selecione ou arraste e solte na guia Objeto de formulários o campo **Salário** no primeiro objeto **Soltar ou selecione aqui** .
+   * Selecione ou arraste e solte na guia Objeto do Forms o campo **Salário** no primeiro objeto **Soltar ou selecione aqui** .
 
    * Selecione **Mais** no campo **Selecionar operador** .
 
-   * Selecione ou arraste e solte na guia Objeto de formulários o campo Salário **do** Cônjuge no outro objeto **Soltar ou selecione aqui** .
+   * Selecione ou arraste e solte na guia Objeto do Forms o campo Salário **do** Cônjuge no outro objeto **Soltar ou selecione aqui** .
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -499,7 +499,7 @@ Execute as seguintes etapas para gravar regras:
 
    Na instrução When:
 
-   * Selecione ou arraste e solte na guia Objeto de formulários o campo Status **** civil no primeiro objeto **Soltar ou selecione aqui** .
+   * Selecione ou arraste e solte na guia Objeto do Forms o campo Status **** civil no primeiro objeto **Soltar ou selecione aqui** .
 
    * Selecione **é igual** ao campo **Selecionar operador** .
 
@@ -642,7 +642,7 @@ area = function(len) {
 
 **Expressão e declaração de função**
 
-```
+```javascript
 var b={};
 /** */
 b.area = function(len) {
@@ -652,7 +652,7 @@ b.area = function(len) {
 
 **Declaração de função como variável**
 
-```
+```javascript
 /** */
 var x1,
     area = function(len) {
@@ -665,7 +665,7 @@ Limitação: a função personalizada seleciona somente a primeira declaração 
 
 **Declaração de função como objeto**
 
-```
+```javascript
 var c = {
     b : {
         /** */
@@ -765,7 +765,7 @@ Quando o usuário indicar que está morando no seu endereço residencial atual h
 
 ## Impacto do editor de regras em scripts existentes {#impact-of-rule-editor-on-existing-scripts}
 
-Em versões do AEM Forms anteriores ao AEM 6.1 Forms feature pack 1, autores e desenvolvedores de formulários usavam para escrever expressões na guia Scripts da caixa de diálogo Editar componente para adicionar comportamento dinâmico aos formulários adaptativos. A guia Scripts agora é substituída pelo editor de regras.
+Nas versões do AEM Forms anteriores ao AEM 6.1 Forms feature pack 1, os autores e desenvolvedores de formulários usavam para escrever expressões na guia Scripts da caixa de diálogo Editar componente para adicionar comportamento dinâmico aos formulários adaptáveis. A guia Scripts agora é substituída pelo editor de regras.
 
 Quaisquer scripts ou expressões que precisem ter gravado na guia Scripts estão disponíveis no editor de regras. Embora não seja possível visualização ou edição no editor visual, se você fizer parte do grupo de usuários avançados dos formulários, poderá editar scripts no editor de código.
 
@@ -785,7 +785,7 @@ Invocar o serviço de modelo de dados de formulário usando a regra de formulár
 
 Em um formulário de solicitação de empréstimo, você deseja capturar se o candidato a empréstimo é um cliente existente ou não. Com base nas informações fornecidas pelo usuário, o campo de ID do cliente deve mostrar ou ocultar. Além disso, você deseja definir o foco no campo ID do cliente se o usuário for um cliente existente. O formulário de pedido de empréstimo tem os seguintes componentes:
 
-* Um botão de opção, você **é um cliente Geometrixx existente?**, que fornece opções Sim e Não. O valor para Sim é **0** e Não é **1**.
+* Botão de opção, **Você é um cliente do Geometrixx?**, que fornece opções Sim e Não. O valor para Sim é **0** e Não é **1**.
 
 * Um campo de texto, ID **do cliente do** Geometrixx, para especificar a ID do cliente.
 
