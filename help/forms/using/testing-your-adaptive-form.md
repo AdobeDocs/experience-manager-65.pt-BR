@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
+source-git-commit: a842aa85652e5c04d5825a3e88aa6b64ef8a0088
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Os AEM Forms fornecem uma estrutura de teste, Calvin, para automatizar o teste d
 
 Os conjuntos de testes têm uma coleção de casos de teste. Você pode ter vários conjuntos de testes. É recomendável ter um conjunto de testes separado para cada formulário. Para criar um conjunto de testes:
 
-1. Efetue logon na instância do autor do AEM Forms como administrador. Abra o CRXDE Lite. Você pode tocar em Logotipo do AEM > **Ferramentas** > **Geral** > **CRXDE Lite** ou abrir o URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) em um navegador para abrir o CRXDE Lite.
+1. Efetue logon na instância do autor do AEM Forms como administrador. Abra o CRXDE Lite. Você pode tocar AEM logotipo > **Ferramentas** > **Geral** > **CRXDE Lite** ou abrir o URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) em um navegador para abrir o CRXDE Lite.
 
 1. Navegue até /etc/clientlibs no CRXDE Lite. Clique com o botão direito do mouse na subpasta /etc/clientlibs e clique em **Criar** > **Criar nó.** No campo Nome, digite **WeRetailFormTestCasos**. Selecione o tipo como **cq:ClientLibraryFolder** e clique em **OK**. Cria um nó. Você pode usar qualquer nome no lugar de WeRetailFormTestCasos.
 1. Adicione as seguintes propriedades ao nó WeRetailFormTestCasos e toque em **Salvar TODAS**.
@@ -101,7 +101,7 @@ Certifique-se de que cada propriedade seja adicionada a uma caixa separada, conf
 
    O código acima cria um conjunto de testes chamado **We retail - Tests**.
 
-1. Abra a interface do usuário de teste do AEM (AEM > Ferramentas > Operações > Teste). O conjunto de testes - **Varejo - Testes** - está listado na interface do usuário.
+1. Abra AEM Teste a interface do usuário (AEM > Ferramentas > Operações > Teste). O conjunto de testes - **Varejo - Testes** - está listado na interface do usuário.
 
    ![we-retail-test-suite](assets/we-retail-test-suite.png)
 
@@ -177,7 +177,7 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
 
 1. Crie um arquivo, `prefillTest.js`no nó **[!UICONTROL WeRetailFormTests]** . Adicione o código abaixo ao arquivo. O código cria um caso de teste. O caso de teste preenche todos os campos de um formulário e valida alguns campos para garantir que os valores corretos sejam inseridos.
 
-   ```
+   ```javascript
    (function (window, hobs) {
        'use strict';
    
