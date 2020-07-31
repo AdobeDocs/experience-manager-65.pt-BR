@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 1%
 
 ---
 
@@ -65,12 +68,15 @@ Verifique os seguintes parâmetros:
    Verifique se o status dos seguintes pacotes está &quot;ativo&quot;:
 
    * escala-lang.bundle [osgi]
+
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Renderizador de formulários do Adobe XFA
+   * Renderizador Adobe XFA Forms
+
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Adobe XFA Forms LC Connector
+   * Conector LC Adobe XFA Forms
+
    (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
 
 ## Problema: Renderizações de formulário sem estilos {#problem-form-renders-without-styles}
@@ -134,7 +140,7 @@ Verifique os seguintes parâmetros:
 
 1. Verifique o conteúdo de js.txt e verifique se ele tem as seguintes entradas.
 
-   ```
+   ```javascript
    ../Namespace.js
    I18N.js
    ../LogMessages.js
