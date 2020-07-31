@@ -1,6 +1,6 @@
 ---
-title: Start rápido (SOAP) da API Java do Acrobat Reader DC para extensões do serviço
-seo-title: Start rápido (SOAP) da API Java do Acrobat Reader DC para extensões do serviço
+title: Start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC
+seo-title: Start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC
 description: 'null'
 seo-description: 'null'
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# Serviço de extensões do Acrobat Reader DClStart rápido da API Java (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
-Os Start Rápidos a seguir estão disponíveis para o serviço Extensões do Acrobat Reader DC.
+Os Start Rápidos a seguir estão disponíveis para o serviço Acrobat Reader DC Extensions.
 
 [Start rápido (modo SOAP):Aplicar direitos de uso usando a API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
@@ -143,7 +143,6 @@ O exemplo de código Java a seguir aplica direitos de uso a um documento PDF cha
  } 
   
   
- 
 ```
 
 ## Start rápido (modo SOAP): Remoção de direitos de uso de um documento PDF usando a API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
