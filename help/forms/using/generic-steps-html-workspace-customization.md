@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 As etapas genéricas para executar qualquer personalização são:
 
-1. Faça logon no CRXDE Lite acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Efetue login no CRXDE Lite acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Crie uma pasta com o nome `ws`em `/apps`, se ela não existir. Clique em **[!UICONTROL Salvar tudo]**.
 1. Navegue até `/apps/ws`a guia **[!UICONTROL Controle de acesso]** e navegue até ela.
 1. Na lista do **[!UICONTROL Controle de acesso]** , clique em **[!UICONTROL +]** para adicionar uma nova entrada. Clique **[!UICONTROL +]** novamente.
@@ -37,7 +37,7 @@ As etapas genéricas para executar qualquer personalização são:
 1. Copie a `/libs/ws/locales` pasta na `/apps/ws` pasta. Clique em **[!UICONTROL Salvar tudo]**.
 1. Atualize as referências e os caminhos relativos no `GET.jsp` arquivo, como mostrado abaixo, e clique em **[!UICONTROL Salvar tudo]**.
 
-   ```jsp
+   ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
    ```
 
@@ -49,14 +49,14 @@ As etapas genéricas para executar qualquer personalização são:
 
    1. Abrir `/apps/ws/html`.jsp e alterar de
 
-   ```css
+   ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
    ```
 
    para
 
-   ```css
+   ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="../../libs/ws/css/style.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="css/newStyle.css" />
    <link lang="en" rel="stylesheet" type="text/css" href="../../libs/ws/css/jquery-ui.css"/>
@@ -68,13 +68,13 @@ As etapas genéricas para executar qualquer personalização são:
 
 1. No arquivo /apps/ws/html.jsp, altere de
 
-   ```css
+   ```jsp
    <script data-main="js/main" src="js/libs/require/require.js"></script>
    ```
 
    para
 
-   ```css
+   ```jsp
    <script data-main="js/main" src="../../libs/ws/js/libs/require/require.js"></script>
    ```
 
