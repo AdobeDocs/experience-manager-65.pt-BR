@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 0%
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # Habilitar logon único em formulários AEM{#enabling-single-sign-on-in-aem-forms}
 
-Os formulários AEM fornecem duas maneiras de ativar o logon único (SSO) - cabeçalhos HTTP e SPNEGO.
+AEM formulários fornece duas maneiras de habilitar o logon único (SSO) - cabeçalhos HTTP e SPNEGO.
 
-Quando o SSO for implementado, as páginas de logon de usuário dos formulários AEM não serão obrigatórias e não aparecerão se o usuário já estiver autenticado por meio de seu portal de empresa.
+Quando o SSO for implementado, as páginas de logon do usuário dos formulários AEM não serão obrigatórias e não aparecerão se o usuário já estiver autenticado por meio de seu portal de empresa.
 
-Se os formulários do AEM não puderem autenticar um usuário usando um desses métodos, o usuário será redirecionado para uma página de logon.
+Se AEM formulários não puderem autenticar um usuário usando um desses métodos, o usuário será redirecionado para uma página de logon.
 
 ## Habilitar SSO usando cabeçalhos HTTP {#enable-sso-using-http-headers}
 
-Você pode usar a página Configuração do portal para ativar o logon único (SSO) entre aplicativos e qualquer aplicativo que suporte a transmissão da identidade pelo cabeçalho HTTP. Quando o SSO for implementado, as páginas de logon de usuário dos formulários AEM não serão obrigatórias e não aparecerão se o usuário já estiver autenticado por meio de seu portal de empresa.
+Você pode usar a página Configuração do portal para ativar o logon único (SSO) entre aplicativos e qualquer aplicativo que suporte a transmissão da identidade pelo cabeçalho HTTP. Quando o SSO for implementado, as páginas de logon do usuário dos formulários AEM não serão obrigatórias e não aparecerão se o usuário já estiver autenticado por meio de seu portal de empresa.
 
 Você também pode ativar o SSO usando o SPNEGO. (Consulte [Ativar SSO usando o SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
@@ -56,7 +56,7 @@ Para obter as etapas de configuração de referenciadores permitidos, consulte [
 
 ## Habilitar SSO usando SPNEGO {#enable-sso-using-spnego}
 
-Você pode usar o Mecanismo de Negociação GSSAPI Simples e Protegido (SPNEGO) para ativar o logon único (SSO) ao usar o Ative Diretory como seu servidor LDAP em um ambiente do Windows. Quando o SSO estiver ativado, as páginas de logon de usuário dos formulários do AEM não são obrigatórias e não são exibidas.
+Você pode usar o Mecanismo de Negociação GSSAPI Simples e Protegido (SPNEGO) para ativar o logon único (SSO) ao usar o Ative Diretory como seu servidor LDAP em um ambiente do Windows. Quando o SSO estiver ativado, as páginas de logon de usuário dos formulários AEM não são obrigatórias e não são exibidas.
 
 Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Ativar SSO usando cabeçalhos](enabling-single-sign-on-aem.md#enable-sso-using-http-headers)HTTP.)
 
@@ -121,14 +121,14 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Ativar SSO u
 
 Se você encontrar este erro:
 
-```java
+```shell
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 tente especificar o usuário como spnegodemo@um.lc.com:
 
-```java
+```shell
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
