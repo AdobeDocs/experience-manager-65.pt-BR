@@ -3,9 +3,9 @@ title: Preparar ativos para tradução
 description: Crie pastas raiz de idioma para preparar ativos para tradução para suportar ativos multilíngues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues.
 
-Nos ativos Adobe Experience Manager, ativos multilíngues são incluídos em pastas, onde cada pasta contém os ativos em um idioma diferente.
+Em [!DNL Adobe Experience Manager Assets], ativos multilíngues são incluídos em pastas, onde cada pasta contém os ativos em um idioma diferente.
 
 Cada pasta de idioma é chamada de cópia de idioma. A pasta raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, */content/dam/it* é a raiz do idioma italiano para a cópia em italiano. As cópias de idioma devem usar uma raiz [de idioma configurada](preparing-assets-for-translation.md#creating-a-language-root) corretamente para que o idioma correto seja direcionado quando as traduções dos ativos de origem forem executadas.
 
@@ -46,7 +46,7 @@ Para criar a raiz do idioma, crie uma pasta e use um código de idioma ISO como 
 
 Por exemplo, a página raiz da cópia em idioma italiano da hierarquia de amostra tem `it` a propriedade Name. A propriedade Name é usada como o nome do nó do ativo no repositório e, portanto, determina o caminho dos ativos. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
-1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
+1. From the [!DNL Assets] console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Criar pasta](assets/Create-folder.png)
 
@@ -54,13 +54,13 @@ Por exemplo, a página raiz da cópia em idioma italiano da hierarquia de amostr
 
    ![Adicionar código de idioma na pasta](assets/Add-language-code-in-folder.png)
 
-1. Clique em **[!UICONTROL Criar]**. A raiz do idioma é criada no console Ativos.
+1. Clique em **[!UICONTROL Criar]**. A raiz do idioma é criada no [!DNL Assets] console.
 
 ## raízes da língua Visualização {#viewing-language-roots}
 
-A interface do Experience Manager fornece um painel **[!UICONTROL Referências]** que exibe uma lista de raízes de idioma que foram criadas em Ativos.
+[!DNL Experience Manager] fornece um painel **[!UICONTROL Referências]** que exibe uma lista de raízes de idioma que foram criadas dentro [!DNL Assets].
 
-1. No console Ativos, selecione o idioma principal para o qual deseja criar cópias de idioma.
+1. No [!DNL Assets] console, selecione o idioma principal para o qual deseja criar cópias de idioma.
 1. No painel esquerdo, selecione a opção **[!UICONTROL Referências]** para abrir o painel [!UICONTROL Referência] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
