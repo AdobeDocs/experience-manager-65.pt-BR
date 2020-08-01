@@ -1,11 +1,11 @@
 ---
 title: 'Informações de ativos '
-description: Saiba como o recurso Asset Insights permite rastrear as classificações de usuários e as estatísticas de uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas da Adobe.
+description: Saiba como o recurso Asset Insights permite rastrear as classificações de usuários e as estatísticas de uso de imagens que são usadas em sites de terceiros, campanhas de marketing e soluções criativas de Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '729'
 ht-degree: 7%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 7%
 
 # Informações de ativos {#asset-insights}
 
-O recurso Asset Insights permite que você rastreie as classificações de usuários e as estatísticas de uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas da Adobe. Ajuda a obter insights sobre o desempenho e a popularidade deles.
+O Asset Insights permite que você rastreie as classificações e estatísticas de uso de imagens usadas em sites de terceiros, campanha e soluções criativas de recursos do Adobe. Ajuda a obter insights sobre o desempenho e a popularidade deles.
 
-O Assets Insights captura detalhes da atividade do usuário, como o número de vezes que uma imagem é classificada, clicada e impressões (número de vezes que uma imagem é carregada no site). Ele atribui pontuações a imagens com base nessas estatísticas. Você pode usar as estatísticas de pontuação e desempenho para selecionar imagens populares para inclusão em catálogos, campanhas de marketing e assim por diante. Você pode até mesmo formular políticas de arquivamento e renovação de licença com base nessas estatísticas.
+[!DNL Assets] Os insights capturam detalhes da atividade do usuário, como o número de vezes que uma imagem é classificada, clicada e impressões (número de vezes que uma imagem é carregada no site). Ele atribui pontuações a imagens com base nessas estatísticas. Você pode usar as estatísticas de pontuação e desempenho para selecionar imagens populares para inclusão em catálogos, campanhas de marketing e assim por diante. Você pode até mesmo formular políticas de arquivamento e renovação de licença com base nessas estatísticas.
 
-Para que o Assets Insights capture as estatísticas de uso de imagens de um site, você deve incluir o código incorporado da imagem no código do site.
+Para que os [!DNL Assets] Insights captem as estatísticas de uso de imagens de um site, você deve incluir o código incorporado da imagem no código do site.
 
 Para permitir que o Asset Insights exiba estatísticas de uso de ativos, configure primeiro o recurso para buscar dados de relatórios da Adobe Analytics. Para obter detalhes, consulte [Configurar insights](/help/assets/touch-ui-configuring-asset-insights.md)de ativos.
 
@@ -29,7 +29,7 @@ Para permitir que o Asset Insights exiba estatísticas de uso de ativos, configu
 
 Você pode visualização as pontuações do Asset Insights na página de metadados.
 
-1. Na interface do usuário do Assets (UI), selecione a imagem e clique em **[!UICONTROL Propriedades]** na barra de ferramentas.
+1. Na interface do [!DNL Assets] usuário (UI), selecione a imagem e clique em **[!UICONTROL Propriedades]** na barra de ferramentas.
 1. Na página Propriedades, clique na guia **[!UICONTROL Insights]** .
 1. Revise os detalhes de uso do ativo na guia **[!UICONTROL Insights]** . A seção **[!UICONTROL Pontuação]** descreve o uso total de ativos e as funções de desempenho de um ativo.
 
@@ -41,8 +41,9 @@ Você pode visualização as pontuações do Asset Insights na página de metada
 
    * **Ativo**: O número de vezes que o ativo fez parte de uma coleção ou de um ativo composto
    * **Web e dispositivos móveis**: O número de vezes que o ativo fez parte de sites e aplicativos
-   * **Social**: O número de vezes que o ativo foi usado em soluções, como o Adobe Social e o Adobe Campaign
+   * **Social**: O número de vezes que o ativo foi usado em soluções, como Adobe Social e Adobe Campaign
    * **Email**: O número de vezes que o ativo foi usado em campanhas de email
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
@@ -65,16 +66,16 @@ Você pode visualização as pontuações do Asset Insights na página de metada
 
 Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!UICONTROL Exibição do Insights]**.
 
-1. Na interface do usuário dos Ativos, navegue até a pasta que contém os ativos para os quais você deseja visualização insights.
+1. Na interface do [!DNL Assets] usuário, navegue até a pasta que contém os ativos para os quais você deseja visualização insights.
 1. Clique em Layout na barra de ferramentas e escolha **[!UICONTROL Visualização]** Insights.
 1. A página exibe as pontuações de uso dos ativos. Compare as classificações dos vários ativos e obtenha insights.
 
 ## Agendar tarefa em segundo plano {#scheduling-background-job}
 
-O Asset Insights busca os dados de uso de ativos dos conjuntos de relatórios da Adobe Analytics de forma periódica. Por padrão, o Asset Insights executa uma tarefa em segundo plano a cada 24 horas às 2 horas da manhã para obter dados. No entanto, você pode modificar a frequência e a hora configurando o serviço Trabalho **[!UICONTROL de sincronização de relatório de desempenho de ativos do]** Adobe CQ DAM no console da Web.
+O Asset Insights busca dados de uso de ativos de conjuntos de relatórios da Adobe Analytics de forma periódica. Por padrão, o Asset Insights executa uma tarefa em segundo plano a cada 24 horas às 2 horas da manhã para obter dados. No entanto, você pode modificar a frequência e a hora configurando o serviço Trabalho **[!UICONTROL de sincronização de relatório de desempenho de ativos do]** Adobe CQ DAM no console da Web.
 
-1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. Abra a configuração do serviço **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** .
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Abra a configuração do serviço **[!UICONTROL Adobe CQ DAM Asset Performance Sync Job]** .
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
 
