@@ -1,11 +1,11 @@
 ---
 title: Pesquisar aspectos.
-description: Como criar, modificar e usar aspectos de pesquisa no Adobe Experience Manager.
+description: Como criar, modificar e usar aspectos de pesquisa em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2515'
+source-wordcount: '2488'
 ht-degree: 18%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 18%
 
 # Pesquisar aspectos {#search-facets}
 
-Uma implantação corporativa dos ativos Adobe Experience Manager tem a capacidade de armazenar muitos ativos. Às vezes, encontrar o ativo certo pode ser árduo e demorado se você usar apenas os recursos de pesquisa genéricos do Experience Manager.
+Uma implantação corporativa do tem [!DNL Adobe Experience Manager Assets] a capacidade de armazenar muitos ativos. Às vezes, encontrar o ativo certo pode ser árduo e demorado se você usar apenas os recursos de pesquisa genéricos de [!DNL Experience Manager].
 
 Use aspectos de pesquisa no painel Filtros para adicionar mais granularidade à sua experiência de pesquisa e tornar a funcionalidade de pesquisa mais eficiente e versátil. Os aspectos de pesquisa adicionam várias dimensões (predicados) que permitem executar pesquisas mais complexas. O painel Filtros inclui algumas facetas padrão. Você também pode adicionar aspectos de pesquisa personalizados.
 
@@ -27,16 +27,16 @@ Os aspectos de pesquisa exibidos no painel Filtros são definidos no formulário
 
 Para pesquisas de texto completo, adicione o predicado de [!UICONTROL Texto completo] ao formulário. Use o predicado Propriedade para procurar ativos que correspondam a uma única propriedade especificada. Use o predicado Opções para pesquisar ativos que correspondam a um ou mais valores para uma propriedade específica. Adicione o predicado Intervalo de datas para pesquisar ativos criados dentro de um intervalo de datas especificado.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
-   ![Localize e selecione o painel de pesquisa do administrador de ativos](assets/assets_admin_searchrail.png)
+   ![Localize e selecione o painel Ativos ou Pesquisa do administrador](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
    >Para usar a funcionalidade de pesquisa de pastas do painel **de pesquisa do administrador de** ativos pré-configurado de uma versão anterior, execute estas etapas:
    >
-   >1. Navegue até */conf/global/settings/dam/search/facets/assets/jcr:content/items* no CRXDE.
+   >1. Navegue até o `/conf/global/settings/dam/search/facets/assets/jcr:content/items` CRXDE.
    >1. Exclua o nó **type** .
    >1. No caminho */libs/settings/dam/search/facets/assets/jcr:content/items*, copie os nós **asset, directory, typeor, excludepaths** e **searchtype** no caminho mencionado na etapa 1.
    >1. Salve as alterações.
@@ -73,7 +73,7 @@ Para pesquisas de texto completo, adicione o predicado de [!UICONTROL Texto comp
 
 1. Para fechar a pré-visualização, clique em **[!UICONTROL Fechar]** ![fechando](assets/do-not-localize/close.png) no canto superior direito da pré-visualização.
 1. Clique em **[!UICONTROL Concluído]** para salvar as configurações.
-1. Navegue até o painel Pesquisar na interface do usuário Ativos. O predicado Propriedade é adicionado ao painel.
+1. Navigate to the Search panel in the [!DNL Assets] user interface. O predicado Propriedade é adicionado ao painel.
 1. Insira uma descrição para o ativo a ser pesquisado na caixa de texto. For example, enter `Adobe`. Quando você executa uma pesquisa, os ativos com correspondência de descrição `Adobe` são listados nos resultados da pesquisa.
 
 ## Adicionar um predicado de opções {#adding-an-options-predicate}
@@ -112,7 +112,7 @@ Se desejar usar um nó existente, especifique-o usando a caixa de diálogo de se
 >
 >O predicado Opções é um invólucro personalizado que inclui predicados de propriedade para demonstrar o comportamento descrito. Atualmente, não há um terminal REST disponível para suportar a funcionalidade nativamente.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. Na página **[!UICONTROL Editar formulário de pesquisa]**, arraste o **[!UICONTROL Predicado de opções]** da guia **[!UICONTROL Selecionar predicado]** até o painel principal.
 1. Na guia **[!UICONTROL Configurações]**, digite um rótulo e um nome para a propriedade. Por exemplo, para pesquisar ativos com base no formato, especifique um nome amigável para o rótulo, por exemplo, **[!UICONTROL Tipo de arquivo]**. Especifique a propriedade com base na qual a pesquisa deve ser realizada no campo de propriedade, por exemplo `jcr:content/metadata/dc:format.`
@@ -132,22 +132,22 @@ Se desejar usar um nó existente, especifique-o usando a caixa de diálogo de se
 
 ## Adicionar um predicado de propriedade de vários valores {#adding-a-multi-value-property-predicate}
 
-O predicado Propriedade de vários valores permite pesquisar ativos por vários valores. Considere um cenário em que você tem imagens de vários produtos em Ativos e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para procurar imagens de produtos com base em vários números de SKU.
+O predicado Propriedade de vários valores permite pesquisar ativos por vários valores. Considere um cenário em que você tem imagens de vários produtos em [!DNL Assets] e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para procurar imagens de produtos com base em vários números de SKU.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Na página Pesquisar no Forms, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos e clique no ícone **[!UICONTROL Editar]** ![editar](assets/do-not-localize/aemassets_edit.png).
 1. Na página Editar formulário de pesquisa, arraste um **[!UICONTROL Predicado de propriedades de vários valores]** da guia **[!UICONTROL Selecionar predicado]** para o painel principal.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. Você também pode usar a caixa de diálogo de seleção para selecionar um nó.
 1. Verifique se a opção **[!UICONTROL Suporte a delimitadores]** está selecionada. No campo **[!UICONTROL Delimitadores de entrada]**, especifique delimitadores para separar valores individuais. Por padrão, a vírgula é especificada como delimitador. É possível especificar um delimitador diferente.
 1. No campo **Descrição** , insira uma descrição opcional e clique em **[!UICONTROL Concluído]**.
-1. Navegue até o painel Filtros na interface do usuário do Assets. O predicado **[!UICONTROL Propriedade de vários valores]** é adicionado ao painel.
+1. Navigate to the Filters panel in the [!DNL Assets] user interface. O predicado **[!UICONTROL Propriedade de vários valores]** é adicionado ao painel.
 1. Especifique vários valores no campo Vários valores separados pelos delimitadores e execute a pesquisa. O predicado busca uma correspondência de texto exata para os valores especificados.
 
 ## Adicionar um predicado de tags {#adding-a-tags-predicate}
 
-O predicado de tag permite que você realize pesquisas baseadas em tags para ativos. Por padrão, o Assets pesquisa ativos por uma ou mais tags correspondentes com base nas tags especificadas. Em outras palavras, o query de pesquisa executa uma operação OU usando as tags especificadas. No entanto, você pode usar a opção de correspondência de todas as tags para pesquisar ativos que incluem todas as tags especificadas.
+O predicado de tag permite que você realize pesquisas baseadas em tags para ativos. Por padrão, [!DNL Assets] pesquisa ativos por uma ou mais tags correspondentes com base nas tags especificadas. Em outras palavras, o query de pesquisa executa uma operação OU usando as tags especificadas. No entanto, você pode usar a opção de correspondência de todas as tags para pesquisar ativos que incluem todas as tags especificadas.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]** and then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. Na guia Configurações, insira um texto de espaço reservado para o predicado. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. Como alternativa, você pode selecionar um nó no CRXDE na caixa de diálogo de seleção.
