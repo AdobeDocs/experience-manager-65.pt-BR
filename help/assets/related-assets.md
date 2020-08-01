@@ -3,9 +3,9 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos digitais que compartilham alguns atributos comuns. Crie também relacionamentos derivados de origem entre ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
 ## Relate assets {#relating-assets}
 
-1. Na interface do Experience Manager, abra a página **[!UICONTROL Propriedades]** de um ativo que você deseja relacionar.
+1. Na [!DNL Experience Manager] interface, abra a página **[!UICONTROL Propriedades]** de um ativo que você deseja relacionar.
 
    ![abrir a página Propriedades de um ativo para relacionar o ativo](assets/asset-properties-relate-assets.png)
 
@@ -65,9 +65,9 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
 1. Click **[!UICONTROL OK]** to close the dialog. Os ativos para os quais você removeu relações são excluídos da lista de ativos relacionados na seção **[!UICONTROL Relacionado]** .
 
-## Traduzindo ativos relacionados {#translating-related-assets}
+## Traduzir ativos relacionados {#translating-related-assets}
 
-Criar relações de origem/derivadas entre ativos usando o recurso Ativos relacionados também é útil em workflows de tradução. Quando você executa um fluxo de trabalho de conversão em um ativo derivado, [!DNL Experience Manager Assets] busca automaticamente qualquer ativo que o arquivo de origem referencie e o inclui para conversão. Dessa forma, o ativo referenciado pelo ativo de origem é convertido junto com os ativos de origem e derivados. Por exemplo, considere um cenário em que sua cópia em inglês inclua um ativo derivado e seu arquivo de origem, como mostrado.
+Criar relações de origem/derivadas entre ativos usando o recurso de ativos relacionados também é útil em workflows de tradução. Quando você executa um fluxo de trabalho de conversão em um ativo derivado, [!DNL Experience Manager Assets] busca automaticamente qualquer ativo que o arquivo de origem referencie e o inclui para conversão. Dessa forma, o ativo referenciado pelo ativo de origem é convertido junto com os ativos de origem e derivados. Por exemplo, considere um cenário em que sua cópia em inglês inclua um ativo derivado e seu arquivo de origem, como mostrado.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
