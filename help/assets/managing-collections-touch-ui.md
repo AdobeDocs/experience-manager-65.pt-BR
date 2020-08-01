@@ -4,17 +4,17 @@ description: Saiba mais sobre tarefas para gerenciar coleções de ativos, como 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 12%
+source-wordcount: '2178'
+ht-degree: 11%
 
 ---
 
 
 # Gerenciar coleções {#managing-collections}
 
-Uma coleção é um conjunto de ativos nos Ativos do Adobe Experience Manager. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
+Uma coleção é um conjunto de ativos dentro de [!DNL Adobe Experience Manager Assets]. Use coleções para compartilhar ativos entre usuários. O conjunto pode ser uma coleção estática ou uma coleção dinâmica baseada nos resultados da pesquisa.
 
 Diferentemente das pastas, uma coleção pode incluir ativos de diferentes locais. Você pode compartilhar coleções com vários usuários aos quais são atribuídos diferentes níveis de privilégios, incluindo exibição, edição e assim por diante.
 
@@ -28,7 +28,7 @@ As coleções são dos seguintes tipos, com base na maneira como elas coletam at
 
 ## Acesse o console de coleções {#navigating-the-collections-console}
 
-Para abrir as **[!UICONTROL Coleções]**, na interface do Experience Manager, vá para **[!UICONTROL Ativos]** > **[!UICONTROL Coleções]**.
+Para abrir as **[!UICONTROL Coleções]**, na [!DNL Experience Manager] interface, acesse **[!UICONTROL Ativos]** > **[!UICONTROL Coleções]**.
 
 ## Criar uma coleção {#creating-a-collection}
 
@@ -52,15 +52,15 @@ Você pode criar uma coleção com referências estáticas, por exemplo, uma col
 
    >[!NOTE]
    >
-   >Os ativos Experience Manager permitem que você crie tarefas de revisão para uma coleção de maneira semelhante à forma como você cria tarefas de revisão para uma pasta de ativos.
+   >[!DNL Experience Manager Assets] permite que você crie tarefas de revisão para uma coleção de maneira semelhante à forma como cria tarefas de revisão para uma pasta de ativos.
 
-   Para adicionar ativos à coleção, navegue até a interface do usuário Ativos. Para obter detalhes, consulte [Adicionar ativos a uma coleção](#adding-assets-to-a-collection).
+   Para adicionar ativos à coleção, navegue até a interface do [!DNL Assets] usuário. Para obter detalhes, consulte [Adicionar ativos a uma coleção](#adding-assets-to-a-collection).
 
 ### Criar coleções usando o dropzone {#create-collections-using-dropzone}
 
-Você pode arrastar ativos da interface do usuário Ativos para uma coleção. Você também pode criar uma cópia de uma coleção e arrastar os ativos para lá.
+Você pode arrastar ativos da interface do [!DNL Assets] usuário para uma coleção. Você também pode criar uma cópia de uma coleção e arrastar os ativos para lá.
 
-1. Na interface do usuário Ativos, selecione os ativos que deseja adicionar a uma coleção.
+1. Na interface do [!DNL Assets] usuário, selecione os ativos que deseja adicionar a uma coleção.
 1. Arraste os ativos até a zona **[!UICONTROL Soltar na coleção]** . Como alternativa, clique em **[!UICONTROL Para coleção]** na barra de ferramentas.
 
    ![drop_in_collection](assets/drop_in_collection.png)
@@ -78,7 +78,7 @@ Uma coleção inteligente usa um critério de pesquisa para preencher dinamicame
 
 Para criar uma coleção inteligente, siga as etapas:
 
-1. Navegue até a interface do usuário Ativos e clique em pesquisar.
+1. Navegue até a interface do [!DNL Assets] usuário e clique em pesquisar.
 
 1. Digite a palavra-chave de pesquisa na caixa Omnisearch e pressione `Enter`. Abra o painel Filtros e aplique um filtro de pesquisa.
 
@@ -108,7 +108,7 @@ Para criar uma coleção inteligente, siga as etapas:
 
 Você pode adicionar ativos a uma coleção que contenha uma lista de ativos ou pastas referenciados. Coleções inteligentes usam um query de pesquisa para preencher ativos. Portanto, referências estáticas a ativos e pastas não se aplicam a eles.
 
-1. Na interface do usuário Ativos, selecione o ativo e clique em **[!UICONTROL Para coleção]** ![adicionar à coleção](assets/do-not-localize/add-to-collection.png) na barra de ferramentas.
+1. Na interface do usuário dos [!DNL A]ativos, selecione o ativo e clique em **[!UICONTROL Para coleção]** ![adicionar à coleção](assets/do-not-localize/add-to-collection.png) na barra de ferramentas.
 Como alternativa, você pode arrastar o ativo para a área **[!UICONTROL Soltar na coleção]** na interface. Adicione os ativos quando o rótulo da região mudar para **[!UICONTROL Soltar para Adicionar]**.
 
 1. Na página **[!UICONTROL Adicionar à coleção]** , selecione a coleção à qual deseja adicionar o ativo.
@@ -119,9 +119,9 @@ Como alternativa, você pode arrastar o ativo para a área **[!UICONTROL Soltar 
 
 As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa da pesquisa [](#saved-searches)salva.
 
-1. Na interface do usuário do Assets, clique na opção de ![pesquisa opção](assets/do-not-localize/search_icon.png) na barra de ferramentas.
+1. Na interface do [!DNL Assets] usuário, clique na opção de ![pesquisa opção](assets/do-not-localize/search_icon.png) na barra de ferramentas.
 1. Com o cursor na caixa Omnisearch, pressione a tecla Return.
-1. Na interface do Experience Manager, abra o painel Filtros.
+1. Na [!DNL Experience Manager] interface, abra o painel Filtros.
 1. Na lista **[!UICONTROL Pesquisas salvas]**, selecione a coleção inteligente que deseja modificar. O painel Pesquisar exibe os filtros configurados para a pesquisa salva.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -156,7 +156,7 @@ Você pode editar os metadados de várias coleções simultaneamente. Essa funci
 
    >[!NOTE]
    >
-   >* Na página [!UICONTROL Propriedades] , é possível remover coleções da lista de coleções desmarcando-as. A lista de coleções tem todas as coleções selecionadas por padrão. O Experience Manager não atualiza os metadados das coleções que você remove.
+   >* Na página [!UICONTROL Propriedades] , é possível remover coleções da lista de coleções desmarcando-as. A lista de coleções tem todas as coleções selecionadas por padrão. [!DNL Experience Manager] não atualiza os metadados das coleções que você remove.
    >* Na parte superior da lista, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre a seleção das coleções e a limpeza da lista.
 
 
@@ -175,15 +175,15 @@ Para personalizar a página [!UICONTROL Propriedades] de metadados, incluindo ad
 
 ## Pesquisar coleções {#searching-collections}
 
-Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, o Assets pesquisa por nomes de coleção, metadados e as tags adicionadas às coleções.
+Você pode pesquisar coleções no console Coleções. Quando você pesquisa com palavras-chave na caixa Omnisearch, [!DNL Assets] pesquisa nomes de coleção, metadados e as tags adicionadas às coleções.
 
-Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. Os ativos ou pastas dentro das coleções são excluídos. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pastas), todos os ativos, pastas e coleções relevantes são retornados.
+Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. [!DNL Assets] ou as pastas dentro das coleções são excluídas. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pastas), todos os ativos, pastas e coleções relevantes são retornados.
 
 ## Pesquisar em coleções {#searching-within-collections}
 
 No console Coleções, clique em uma coleção para abri-la.
 
-Em uma coleção, a pesquisa por Experience Manager está restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
+Dentro de uma coleção, a pesquisa é restrita aos ativos (e suas tags e metadados) dentro da coleção que você está visualizando. [!DNL Experience Manager] Quando você pesquisar em uma pasta, todos os ativos correspondentes e pastas secundárias dentro da pasta atual serão retornados. Quando você pesquisa em uma coleção, somente os ativos, pastas e outras coleções correspondentes que são membros diretos da coleção são retornados.
 
 ## Editar configurações de coleção {#editing-collection-settings}
 
@@ -234,7 +234,7 @@ Quando você baixa uma coleção, toda a hierarquia de ativos dentro dela é bai
 
 ## Pesquisas salvas {#saved-searches}
 
-Na interface do usuário do Assets, pesquise ou filtre ativos com base em determinadas regras, critérios de pesquisa ou aspectos de pesquisa personalizados. Se salvá-los como **[!UICONTROL Pesquisas salvas]**, você poderá acessá-los posteriormente na lista **[!UICONTROL Pesquisas salvas]** do painel Filtro. Criar uma pesquisa salva também cria uma coleção inteligente.
+In the [!DNL Assets] user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. Se salvá-los como **[!UICONTROL Pesquisas salvas]**, você poderá acessá-los posteriormente na lista **[!UICONTROL Pesquisas salvas]** do painel Filtro. Criar uma pesquisa salva também cria uma coleção inteligente.
 
 ![saved_search_lista](assets/saved_searches_list.png)
 
@@ -248,9 +248,9 @@ Editar pesquisas salvas é o mesmo que editar coleções inteligentes. Para obte
 
 Para excluir pesquisas salvas, siga estas etapas:
 
-1. Na interface do usuário do Assets, clique na opção ![de](assets/do-not-localize/search_icon.png)pesquisa.
+1. Na interface do [!DNL Assets] usuário, clique na opção ![](assets/do-not-localize/search_icon.png)Pesquisar.
 1. Com o cursor no campo Omnisearch, pressione a tecla Return.
-1. Na interface do Experience Manager, abra o painel Filtros.
+1. Na [!DNL Experience Manager] interface, abra o painel Filtros.
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
