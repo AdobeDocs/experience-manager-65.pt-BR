@@ -1,25 +1,25 @@
 ---
-title: Experiência com o Home page Adobe Experience Manager Assets
-description: Personalize o Home page Experience Manager Assets para obter uma excelente experiência de tela de boas-vindas, incluindo um instantâneo de atividades recentes sobre ativos.
+title: Experiência do Home page [!DNL Adobe Experience Manager Assets].
+description: Personalize [!DNL Experience Manager Assets] a página inicial para obter uma experiência avançada em tela de boas-vindas, incluindo um instantâneo de atividades recentes sobre ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '565'
 ht-degree: 1%
 
 ---
 
 
-# Experiência com o Home page Adobe Experience Manager Assets {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Experiência do Home page {#aem-assets-home-page-experience}
 
-Personalize o home page Adobe Experience Manager Assets para obter uma excelente experiência de tela de boas-vindas, incluindo um instantâneo de atividades recentes sobre ativos.
+Personalize o [!DNL Adobe Experience Manager Assets] home page para obter uma excelente experiência de tela de boas-vindas, incluindo um instantâneo de atividades recentes sobre ativos.
 
-O home page Assets fornece uma experiência de tela de boas-vindas rica e personalizada, que inclui um instantâneo de atividades recentes, como ativos que foram visualizados ou carregados recentemente.
+[!DNL Assets] O home page fornece uma experiência de tela de boas-vindas rica e personalizada, que inclui um instantâneo de atividades recentes, como ativos que foram visualizados ou carregados recentemente.
 
-O home page Ativos está desativado por padrão. Para ativá-lo, execute as seguintes etapas:
+O [!DNL Assets] home page é desativado por padrão. Para ativá-lo, execute as seguintes etapas:
 
-1. Abra o Experience Manager Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Abra o [!DNL Experience Manager] Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra o serviço Gravador **[!UICONTROL do Evento CQ DAM]** Day.
 1. Selecione **[!UICONTROL Ativar este serviço]** para ativar a gravação de atividade.
 
@@ -32,7 +32,7 @@ O home page Ativos está desativado por padrão. Para ativá-lo, execute as segu
    >Ativar as opções visualizadas Ativo visualizado, Projetos visualizados e Coleções aumenta significativamente o número de eventos registrados.
 
 1. Abra o serviço Sinalizador **[!UICONTROL do recurso Home page do ativo]** DAM no Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
-1. Selecione a `isEnabled.name` opção para ativar o recurso Home page Ativos. Salve as alterações.
+1. Selecione a `isEnabled.name` opção para ativar o recurso [!DNL Assets] Home page. Salve as alterações.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
@@ -40,13 +40,13 @@ O home page Ativos está desativado por padrão. Para ativá-lo, execute as segu
 
    ![Habilitar home page de ativos na caixa de diálogo Preferências de usuário](assets/Annotation-color.png)
 
-Depois de ativar o Home page Ativos, navegue até a interface do usuário Ativos na página Navegação ou acesse-o diretamente do URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
+Depois de ativar o [!DNL Assets] Home page, navegue até a interface do [!DNL Assets] usuário na página Navegação ou acesse-o diretamente do URL `https://[aem_server]:[port]/aem/assetshome.html/content/dam`.
 
 ![configurar o link de experiência na interface do usuário do Assets](assets/config-experience-link.png)
 
 Clique aqui para **[!UICONTROL configurar o link]** de experiência para adicionar o nome de usuário, a imagem de plano de fundo e a imagem do perfil.
 
-O Home page Ativos inclui as seguintes seções:
+O [!DNL Assets] Home page inclui as seguintes seções:
 
 * Seção de boas-vindas
 * Seção do Widget
@@ -69,7 +69,7 @@ Esta seção é exibida abaixo da seção Boas-vindas e exibe os widgets predefi
 
 **Recente**: O widget **[!UICONTROL Visualizado]** recentemente nesta seção exibe entidades acessadas recentemente pelo usuário conectado, incluindo pastas, coleções e projetos.
 
-**Discover**: O widget **[!UICONTROL Novo]** nesta seção exibe os ativos e as execuções carregados recentemente na implantação Ativos.
+**Discover**: O widget **[!UICONTROL Novo]** nesta seção exibe os ativos e as execuções carregados recentemente para a [!DNL Assets] implantação.
 
 Para ativar a remoção de dados de atividade do usuário, ative o Serviço **[!UICONTROL de Expurgação de Eventos]** DAM do Configuration Manager. Após habilitar esse serviço, as atividades do usuário conectado que excederem um número especificado serão excluídas pelo sistema.
 
@@ -77,12 +77,12 @@ A tela de boas-vindas fornece ferramentas de navegação fáceis, por exemplo í
 
 >[!NOTE]
 >
->Habilitar os serviços [!UICONTROL Day CQ DAM Evento Recorder] e [!UICONTROL DAM Evento Purge] aumenta as operações de gravação no JCR e a indexação de pesquisa, o que aumenta significativamente a carga no servidor Experience Manager. A carga adicional no servidor Experience Manager pode afetar seu desempenho.
+>Habilitar os serviços Recorder [!UICONTROL do Evento CQ DAM] Day e Expurgação [!UICONTROL do Evento] DAM aumenta as operações de gravação no JCR e a indexação de pesquisa, o que aumenta significativamente a carga no [!DNL Experience Manager] servidor. A carga adicional no [!DNL Experience Manager] servidor pode afetar seu desempenho.
 
 >[!CAUTION]
 >
->Capturar, filtrar e expurgar atividades de usuário necessárias para o home page Ativos impõem uma sobrecarga no desempenho. Portanto, os administradores devem configurar o Home page de forma eficiente para os usuários do público alvo.
+>Capturar, filtrar e expurgar atividades de usuário necessárias para o [!DNL Assets] home page impõem uma sobrecarga no desempenho. Portanto, os administradores devem configurar o Home page de forma eficiente para os usuários do público alvo.
 >
->A Adobe recomenda que os administradores e usuários que executam operações em massa evitem usar o recurso Home page de ativos para evitar o aumento das atividades do usuário. Além disso, os administradores podem excluir atividades de gravação para usuários específicos ao configurar o Gravador [!UICONTROL de Eventos] Day CQ DAM do [!UICONTROL Configuration Manager].
+>O Adobe recomenda que os administradores e usuários que executam operações em massa evitem usar o recurso Home page de ativos para evitar o aumento das atividades do usuário. Além disso, os administradores podem excluir atividades de gravação para usuários específicos ao configurar o Gravador [!UICONTROL de Eventos] Day CQ DAM do [!UICONTROL Configuration Manager].
 >
->Se você usar o recurso, a Adobe recomenda programar a frequência de expurgação com base na carga do servidor.
+>Se você usar o recurso, o Adobe recomenda agendar a frequência de expurgação com base na carga do servidor.
