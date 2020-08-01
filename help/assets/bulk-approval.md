@@ -3,9 +3,9 @@ title: Revisar ativos e coleções de pastas
 description: Configure workflows de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para obter feedback.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '784'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Configure workflows de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para obter feedback.
 
-Os ativos Adobe Experience Manager permitem que você configure um fluxo de trabalho de revisão ad hoc para ativos em uma pasta ou coleção e o compartilhe com revisores ou parceiros criativos para obter feedback.
+[!DNL Adobe Experience Manager Assets] permite configurar um fluxo de trabalho de revisão ad hoc para ativos em uma pasta ou coleção e compartilhá-lo com revisores ou parceiros criativos para buscar feedback.
 
 Você pode associar o fluxo de trabalho de revisão a um projeto ou criar uma tarefa de revisão independente.
 
@@ -25,7 +25,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
 
 ## Criar uma tarefa de revisão para pastas {#creating-a-review-task-for-folders}
 
-1. Na interface do usuário Ativos, selecione a pasta para a qual deseja criar uma tarefa de revisão.
+1. Na interface do [!DNL Assets] usuário, selecione a pasta para a qual deseja criar uma tarefa de revisão.
 1. Na barra de ferramentas, clique em **[!UICONTROL Criar Tarefa]** de revisão para ![criar a tarefa](assets/do-not-localize/create-review-task.png) de revisão para abrir a página **[!UICONTROL Revisar Tarefa]** . If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Opcional) Na lista **[!UICONTROL Projeto]** , selecione o projeto ao qual deseja associar a tarefa de revisão. Por padrão, a opção **[!UICONTROL Nenhum]** está selecionada. Se você não quiser associar qualquer projeto à tarefa de revisão, mantenha essa seleção.
@@ -49,7 +49,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
    ![review_name](assets/review_name.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Faça logon nos Ativos como Aprovador e navegue até a interface do usuário dos Ativos. Para aprovar ativos, clique em **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
+1. Faça logon [!DNL Assets] como Aprovador e navegue até a [!DNL Assets] interface do usuário. Para aprovar ativos, clique em **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 
    ![Notificação de ativos](assets/aemAssetsNotification.png)
 
@@ -59,7 +59,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
    ![review_tarefa](assets/review_task.png)
 
 1. Click **[!UICONTROL Complete]** from the toolbar. Na caixa de diálogo, digite um comentário e clique em **[!UICONTROL Concluir]** para confirmar.
-1. Navegue até a interface do usuário Ativos e abra a pasta. Os ícones de status de aprovação dos ativos são exibidos na visualização do cartão e na visualização da lista.
+1. Navegue até a interface do [!DNL Assets] usuário e abra a pasta. Os ícones de status de aprovação dos ativos são exibidos na visualização do cartão e na visualização da lista.
 
    **Exibição de cartão**
 
@@ -91,7 +91,7 @@ Depois que o revisor concluir a revisão (aprova ou rejeita ativos), você receb
    ![tarefa_details-collection](assets/task_details-collection.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Uma notificação para a nova tarefa é enviada ao aprovador.
-1. Faça logon nos Ativos como Aprovador e navegue até o console Ativos. Para aprovar ativos, clique em **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
+1. Faça logon [!DNL Assets] como Aprovador e navegue até o [!DNL Assets] console. Para aprovar ativos, clique em **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
 1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e clique em **[!UICONTROL Aprovar/Rejeitar]** para aprovar ou rejeitar ativos, conforme apropriado.
 
