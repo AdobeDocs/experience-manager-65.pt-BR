@@ -3,9 +3,9 @@ title: Práticas recomendadas para traduzir ativos
 description: Práticas recomendadas para o gerenciamento eficiente de ativos para sincronizar várias versões traduzidas e simplificar os workflows de tradução.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '416'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Práticas recomendadas para traduzir ativos {#best-practices-for-translating-assets-efficiently}
 
-O Adobe Experience Manager Assets suporta workflows multilíngues para traduzir binários, metadados e tags para ativos digitais em várias localidades e gerenciar os ativos traduzidos. Para obter detalhes, consulte Ativos [multilíngues](multilingual-assets.md).
+[!DNL Adobe Experience Manager Assets] suporta workflows multilíngues para traduzir binários, metadados e tags para ativos digitais em várias localidades e gerenciar os ativos traduzidos. Para obter detalhes, consulte Ativos [multilíngues](multilingual-assets.md).
 
 Para o gerenciamento eficiente de ativos, a fim de garantir que diferentes versões traduzidas permaneçam sincronizadas, crie cópias [de](preparing-assets-for-translation.md) idioma de ativos antes de executar workflows de tradução.
 
@@ -44,7 +44,7 @@ Você também pode fazer algumas alterações de configuração em alguns workfl
 
 1. Ative o fluxo de trabalho [!UICONTROL Definir última data] modificada.
 
-   O fluxo de trabalho [!UICONTROL DAM MetaData Writeback] configura a última data modificada para um ativo. Como você desativa esse fluxo de trabalho na etapa 2, os ativos não podem mais manter a última data modificada dos ativos atualizados. Portanto, ative o fluxo de trabalho *Definir última data* modificada para garantir que as últimas datas modificadas dos ativos estejam atualizadas. Os ativos com datas de última modificação desatualizadas podem causar erros.
+   O fluxo de trabalho [!UICONTROL DAM MetaData Writeback] configura a última data modificada para um ativo. Como você desativa esse fluxo de trabalho na etapa 2, não [!DNL Assets] é mais capaz de manter a última data modificada dos ativos atualizados. Portanto, ative o fluxo de trabalho *Definir última data* modificada para garantir que as últimas datas modificadas dos ativos estejam atualizadas. Os ativos com datas de última modificação desatualizadas podem causar erros.
 
-1. [Configure a estrutura](/help/sites-administering/tc-tic.md) de integração de tradução para parar a tradução de binários de ativos. Desmarque a opção **[!UICONTROL Traduzir ativos]** na guia Ativos para interromper a conversão de binários de ativos.
+1. [Configure a estrutura](/help/sites-administering/tc-tic.md) de integração de tradução para parar a tradução de binários de ativos. Desmarque a opção **[!UICONTROL Traduzir ativos]** na guia [!UICONTROL Ativos] para interromper a tradução de binários de ativos.
 1. Traduza metadados/tags de ativos usando workflows [](multilingual-assets.md)de ativos multilíngues.
