@@ -3,9 +3,9 @@ title: Processar ativos para realizar processos de negócios, realizar auditoria
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '985'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Para aplicar um fluxo de trabalho a um ativo, siga estas etapas:
 
 ## Aplicar um fluxo de trabalho a vários ativos {#applying-a-workflow-to-multiple-assets}
 
-1. No console Ativos, navegue até o local dos ativos para os quais deseja start um fluxo de trabalho e selecione os ativos. Selecione **[!UICONTROL Linha]** do tempo no menu para exibir a linha do tempo.
+1. No [!DNL Assets] console, navegue até o local dos ativos para os quais deseja start um fluxo de trabalho e selecione os ativos. Selecione **[!UICONTROL Linha]** do tempo no menu para exibir a linha do tempo.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
