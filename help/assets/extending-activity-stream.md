@@ -1,23 +1,23 @@
 ---
-title: Integrar ativos ao fluxo de atividade
-description: Descreve os recursos de gravação do Experience Manager e como configurá-lo para gravar eventos específicos.
+title: Integrar [!DNL Assets] ao fluxo de atividade.
+description: Descreve os recursos [!DNL Experience Manager] de gravação de e como configurá-los para gravar eventos específicos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
 
 
-# Integrar ativos ao fluxo de atividade {#integrating-assets-with-activity-stream}
+# Integrar [!DNL Assets] ao fluxo de atividade {#integrating-assets-with-activity-stream}
 
-Os usuários do Adobe Experience Manager Assets executam várias ações, como criar, carregar e excluir ativos. Essas ações podem ser registradas para que você possa fornecer um histórico do que foi feito por um usuário. Esta seção descreve os recursos de gravação do Experience Manager e como configurar o Experience Manager para gravar eventos específicos.
+[!DNL Adobe Experience Manager Assets] os usuários executam várias ações, como criar, carregar e excluir ativos. Essas ações podem ser registradas para que você possa fornecer um histórico do que foi feito por um usuário. Esta seção descreve os recursos de gravação de [!DNL Experience Manager] e como configurar [!DNL Experience Manager] para gravar eventos específicos.
 
 ## Considerações de desempenho e comportamento padrão {#performance-considerations-and-default-behavior}
 
-Essa integração pode ser de CPU e de consumo de espaço em disco, por exemplo, ao fazer a importação em massa. Por esses motivos, a integração de Ativos com o Fluxo de Atividade é desativada por padrão.
+Essa integração pode ser de CPU e de consumo de espaço em disco, por exemplo, ao fazer a importação em massa. Por esses motivos, a integração [!DNL Assets] com o Fluxo de Atividade é desativada por padrão.
 
 ## eventos de ação suportados {#supported-action-events}
 
@@ -39,7 +39,7 @@ Os seguintes eventos podem ser configurados para serem gravados:
 * Subativo atualizado (SUBASSET_UPDATED)
 * Subativo removido (SUBASSET_REMOVED)
 
-## Configurar a gravação de eventos de ativos {#configuring-aem-assets-events-recording}
+## Configurar gravação de [!DNL Assets] eventos {#configuring-aem-assets-events-recording}
 
 O console [da](/help/sites-deploying/configuring-osgi.md) Web fornece acesso ao ajuste do Gravador do Evento Assets. Para configurar o Gravador de Eventos de Ativos, proceda da seguinte maneira:
 
