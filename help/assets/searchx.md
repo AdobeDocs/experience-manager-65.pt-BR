@@ -1,11 +1,11 @@
 ---
-title: Amplie a funcionalidade de pesquisa dos ativos Adobe Experience Manager
-description: Estenda os recursos de pesquisa dos Ativos do Adobe Experience Manager além dos padrões.
+title: Amplie a funcionalidade de pesquisa [!DNL Adobe Experience Manager Assets].
+description: Estenda os recursos de pesquisa [!DNL Adobe Experience Manager Assets] para além dos padrões.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '841'
 ht-degree: 19%
 
 ---
@@ -21,7 +21,7 @@ Você também pode adicionar outras guias ao painel [!DNL Assets] de administra�
 
 >[!CAUTION]
 >
->A partir da versão [!DNL Experience Manager] 6.4, a interface clássica está obsoleta. Para o anúncio, consulte os recursos [](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)desaprovados e removidos. A Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte aspectos [de pesquisa](/help/assets/search-facets.md).
+>A partir da versão [!DNL Experience Manager] 6.4, a interface clássica está obsoleta. Para o anúncio, consulte os recursos [](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)desaprovados e removidos. O Adobe recomenda o uso da interface habilitada para toque. Para personalização, consulte aspectos [de pesquisa](/help/assets/search-facets.md).
 
 ## Sobreposição {#overlaying}
 
@@ -35,7 +35,7 @@ Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/da
 
 ## Adicionar guias {#adding-tabs}
 
-É possível adicionar guias de pesquisa adicionais configurando-as na interface administrativa do Assets. Para criar guias adicionais:
+É possível adicionar outras guias de pesquisa configurando-as na interface do [!DNL Assets] administrador. Para criar guias adicionais:
 
 1. Crie a estrutura de pastas `/apps/wcm/core/content/damadmin/tabs,`se ela ainda não existir e copie o `tabs` nó de `/libs/wcm/core/content/damadmin` e cole-o.
 1. Crie e configure a segunda guia, conforme desejado.
@@ -48,7 +48,7 @@ Para sobrepor os predicados pré-configurados, copie o `facets` nó de `/libs/da
 
 [!DNL Assets] vem com um conjunto de predicados predefinidos que podem ser usados para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos dessa forma é abordado na [criação e configuração de uma página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
 
-Além de usar predicados preexistentes, os desenvolvedores do Experience Manager também podem criar seus próprios predicados usando a API [do Construtor de](/help/sites-developing/querybuilder-api.md)Query.
+Além de usar predicados pré-existentes, [!DNL Experience Manager] os desenvolvedores também podem criar seus próprios predicados usando a API [do Construtor de](/help/sites-developing/querybuilder-api.md)Query.
 
 A criação de predicados personalizados requer conhecimento básico sobre a estrutura [de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)Widgets.
 
@@ -250,7 +250,7 @@ Para criar um predicado de grupo:
 
 Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados.
 
-### PredicadoTextoCompleto {#fulltextpredicate}
+### PredicadoTexto completo {#fulltextpredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
@@ -296,6 +296,6 @@ Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados
 
 ## Personalizar os resultados da pesquisa {#customizing-search-results}
 
-A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. O Experience Manager Assets vem com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
+A apresentação dos resultados da pesquisa em uma página Compartilhamento de ativos é regida pela lente selecionada. [!DNL Experience Manager Assets] vem com um conjunto de lentes predefinidas que podem ser usadas para personalizar uma página de compartilhamento de ativos. Personalizar um compartilhamento de ativos desta forma é abordado em [Criar e configurar uma página](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de compartilhamento de ativos.
 
-Além de usar lentes pré-existentes, os desenvolvedores de Experience Manager também podem criar suas próprias lentes.
+Além de usar lentes pré-existentes, [!DNL Experience Manager] os desenvolvedores também podem criar suas próprias lentes.
