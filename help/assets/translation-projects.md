@@ -3,9 +3,9 @@ title: Criar projetos de tradução
 description: Saiba como criar projetos de tradução [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34b98636966264b15b16fffc9e712b925303a701
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1898'
 ht-degree: 16%
 
 ---
@@ -66,7 +66,7 @@ Use a opção **[!UICONTROL Somente criar estrutura]** para criar uma hierarquia
 
 Se você usar essa opção, os ativos a serem traduzidos serão copiados para a raiz do idioma para o qual você deseja traduzir. Dependendo das opções escolhidas, um projeto de tradução é criado para os ativos no console Projetos. Dependendo das configurações, o projeto de tradução pode ser iniciado manualmente ou executado automaticamente assim que o projeto de tradução for criado.
 
-1. Na interface do usuário do Assets, selecione a pasta de origem para a qual deseja criar uma cópia de Idioma.
+1. Na interface do [!DNL Assets] usuário, selecione a pasta de origem para a qual deseja criar uma cópia de Idioma.
 1. Open the **[!UICONTROL References]** pane and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
@@ -85,7 +85,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Clique em **[!UICONTROL Criar]**. Os ativos da pasta de origem são copiados para as pastas de públicos alvos para as localidades selecionadas na etapa 4.
+1. Clique em **[!UICONTROL Criar]**. [!DNL Assets] da pasta de origem são copiadas para as pastas de públicos alvos para as localidades selecionadas na etapa 4.
 
    ![cópias de idioma](assets/lang-copy2.png)
 
@@ -95,7 +95,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
 1. Navegue até o console Projetos. A pasta de tradução é copiada para o console Projetos.
 
-   ![chlimage_1-78](assets/chlimage_1-70.png)
+   ![chlimage_1-70](assets/chlimage_1-70.png)
 
 1. Abra a pasta para visualização do projeto de tradução.
 
@@ -111,12 +111,11 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
    Para obter mais detalhes sobre status de trabalhos, consulte [Monitorando o Status de um Trabalho](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de Tradução.
 
-1. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
+1. Navegue até a [!DNL Assets] interface do usuário e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
    ![visualização dos metadados traduzidos na página Propriedades do ativo](assets/translated-metadata-asset-properties.png)
 
    *Figura: Metadados traduzidos na página de propriedades do ativo.*
-
 
    >[!NOTE]
    >
@@ -126,7 +125,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
 Se você usar essa opção, o fluxo de trabalho de tradução será executado para os ativos adicionados à pasta de origem após executar um fluxo de trabalho de tradução anterior. Somente os ativos recém-adicionados são copiados para a pasta do público alvo que contém ativos convertidos anteriormente. Nenhum novo projeto de tradução é criado neste caso.
 
-1. Na interface do usuário Ativos, navegue até a pasta de origem que contém ativos não convertidos.
+1. Na [!DNL Assets] interface do usuário, navegue até a pasta de origem que contém ativos não convertidos.
 1. Selecione um ativo que deseja traduzir e abra o **[!UICONTROL painel Referência]**. A seção **[!UICONTROL Cópias de idioma]** exibe o número de cópias de tradução atualmente disponíveis.
 1. Click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. Uma lista de cópias de tradução disponíveis é exibida.
 1. Clique em **[!UICONTROL Criar e traduzir]** na parte inferior.
@@ -145,7 +144,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 
 1. Na lista do projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Clique em **[!UICONTROL Criar]**. Os ativos que serão traduzidos são adicionados à pasta de destino. A pasta atualizada está listada na seção **[!UICONTROL Cópias de idioma]**.
 
@@ -184,7 +183,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 
    Para obter mais detalhes, consulte [Monitorando o Status de um Trabalho](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de Tradução.
 
-1. Após a conclusão da tradução, o status é alterado para Pronto para Revisão. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
+1. Após a conclusão da tradução, o status é alterado para Pronto para Revisão. Navegue até a [!DNL Assets] interface do usuário e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
 ## Atualizar cópias de idioma {#update-language-copies}
 
@@ -197,7 +196,7 @@ Execute esse fluxo de trabalho para traduzir qualquer conjunto adicional de ativ
 
 Se você usar essa opção, um projeto de tradução será criado para o conjunto de ativos para os quais você deseja atualizar uma cópia de idioma.
 
-1. Na interface do usuário Ativos, selecione a pasta de origem na qual você adicionou um ativo.
+1. Na [!DNL Assets] interface do usuário, selecione a pasta de origem na qual você adicionou um ativo.
 1. Open the **[!UICONTROL References]** pane, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Marque a caixa de seleção ao lado de **[!UICONTROL Cópias de idioma]** e selecione a pasta de destino correspondente ao local adequado.
 
@@ -240,13 +239,13 @@ Se você usar essa opção, um projeto de tradução será criado para o conjunt
 
    Para obter mais detalhes sobre status de trabalhos, consulte [Monitorando o Status de um Trabalho](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de Tradução.
 
-1. Navegue até a interface do usuário Ativos e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
+1. Navegue até a interface do [!DNL Assets] usuário e abra a página Propriedades de cada um dos ativos traduzidos para visualização dos metadados traduzidos.
 
 ### Adicionar ao projeto de tradução existente {#add-to-existing-translation-project-1}
 
 Se você usar essa opção, o conjunto de ativos será adicionado a um projeto de tradução existente para atualizar a cópia de idioma para a localidade escolhida.
 
-1. Na interface do usuário Ativos, selecione a pasta de origem na qual você adicionou uma pasta de ativos.
+1. Na [!DNL Assets] interface do usuário, selecione a pasta de origem na qual você adicionou uma pasta de ativos.
 1. Open the **[!UICONTROL References pane]**, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
