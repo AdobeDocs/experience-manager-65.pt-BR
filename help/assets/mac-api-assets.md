@@ -1,26 +1,26 @@
 ---
-title: API HTTP de ativos em [!DNL Adobe Experience Manager].
+title: API HTTP do [!DNL Assets] em [!DNL Adobe Experience Manager].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1579'
 ht-degree: 1%
 
 ---
 
 
-# API HTTP de ativos {#assets-http-api}
+# [!DNL Assets] API HTTP {#assets-http-api}
 
 ## Visão geral {#overview}
 
-A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos [!DNL Experience Manager] de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos](/help/assets/assets-api-content-fragments.md)de conteúdo.
+A API [!DNL Assets] HTTP permite operações de criação-leitura-atualização-exclusão (CRUD) em ativos digitais, incluindo metadados, execuções e comentários, juntamente com conteúdo estruturado usando Fragmentos [!DNL Experience Manager] de conteúdo. Ele é exposto em `/api/assets` e é implementado como REST API. Inclui [suporte para Fragmentos](/help/assets/assets-api-content-fragments.md)de conteúdo.
 
 Para acessar a API:
 
 1. Abra o documento de serviço da API em `https://[hostname]:[port]/api.json`.
-1. Siga o link de serviço Ativos à esquerda para `https://[hostname]:[server]/api/assets.json`.
+1. Siga o link de [!DNL Assets] serviço que leva a `https://[hostname]:[server]/api/assets.json`.
 
 A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resposta para todos os tipos MIME. A resposta JSON é opcional e pode não estar disponível, por exemplo, para arquivos PDF. Confie no código de resposta para obter mais análises ou ações.
 
@@ -34,7 +34,7 @@ Para obter mais informações, consulte Suporte a fragmentos [de conteúdo na AP
 
 ## Modelo de dados {#data-model}
 
-A API HTTP Assets expõe dois elementos principais, pastas e ativos (para ativos padrão).
+A API [!DNL Assets] HTTP expõe dois elementos principais, pastas e ativos (para ativos padrão).
 
 Além disso, expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte Modelos [de dados de fragmento de](/help/assets/assets-api-content-fragments.md#content-fragments) conteúdo para obter mais informações.
 
@@ -75,7 +75,7 @@ Em [!DNL Experience Manager] uma pasta há os seguintes componentes:
 * Propriedades.
 * Links.
 
-A API HTTP Assets inclui os seguintes recursos:
+A API [!DNL Assets] HTTP inclui os seguintes recursos:
 
 * [Recuperar uma lista](#retrieve-a-folder-listing)de pastas.
 * [Criar uma pasta](#create-a-folder).
