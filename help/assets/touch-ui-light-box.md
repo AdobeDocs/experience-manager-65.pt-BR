@@ -1,11 +1,11 @@
 ---
-title: Lightbox como sua galeria de imagens pessoal nos ativos Adobe Experience Manager.
-description: Saiba mais sobre o Lightbox como sua galeria de imagens pessoal nos ativos Adobe Experience Manager.
+title: Lightbox como sua galeria [!DNL Adobe Experience Manager Assets]de imagens pessoal.
+description: Saiba mais sobre o Lightbox como sua galeria de imagens pessoal nos Ativos do Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 O Lightbox é um tipo especial de coleção que fornece fácil acesso aos ativos. Você pode acessar rapidamente o Lightbox para adicionar ou excluir ativos. Serve como sua galeria de imagens pessoal.
 
-Se você for um usuário do Adobe Experience Manager Assets, o Lightbox será criado automaticamente quando você fizer logon pela primeira vez no aplicativo. É exclusivo do seu login. Outros usuários não podem acessar o Lightbox.
+Se você for um [!DNL Adobe Experience Manager Assets] usuário, o Lightbox será criado automaticamente quando você fizer logon pela primeira vez no aplicativo. É exclusivo do seu login. Outros usuários não podem acessar o Lightbox.
 
 ## Adicionar ativos ao lightbox {#adding-assets-to-lightbox}
 
-1. Na interface do usuário Ativos, selecione os ativos que deseja adicionar ao Lightbox.
+1. Na interface do [!DNL Assets] usuário, selecione os ativos que deseja adicionar ao Lightbox.
 1. Arraste os ativos até a zona **[!UICONTROL Soltar no Lightbox]** . Solte quando a zona suspensa se tornar ativa e seu rótulo se alterar para **[!UICONTROL Soltar para Adicionar]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
