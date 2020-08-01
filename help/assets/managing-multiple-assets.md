@@ -1,11 +1,11 @@
 ---
-title: Gerencie metadados de muitos ativos e coleções no Adobe Enterprise Manager.
+title: Gerencie metadados de muitos ativos e coleções [!DNL Adobe Enterprise Manager]no.
 description: Edite os metadados de vários ativos e coleções simultaneamente para propagar rapidamente alterações comuns de metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '487'
 ht-degree: 12%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # Gerenciar ativos e coleções {#managing-multiple-assets-and-collections}
 
-Os ativos do Adobe Enterprise Manager permitem que você edite os metadados de vários ativos simultaneamente para que possa propagar rapidamente alterações comuns de metadados para ativos em massa. Você também pode editar os metadados de várias coleções em massa.
+[!DNL Adobe Enterprise Manager Assets] permite que você edite os metadados de vários ativos simultaneamente para que possa propagar rapidamente alterações comuns de metadados para ativos em massa. Você também pode editar os metadados de várias coleções em massa.
 
 Use a página de propriedades para executar alterações de metadados em vários ativos ou coleções:
 
@@ -28,7 +28,7 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
 
 ## Editar propriedades de metadados de vários ativos {#editing-metadata-properties-of-multiple-assets}
 
-1. Na interface do usuário Ativos, navegue até o local dos ativos que deseja editar.
+1. Na interface do [!DNL Assets] usuário, navegue até o local dos ativos que deseja editar.
 1. Selecione os ativos para os quais deseja editar propriedades comuns.
 1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]** para abrir a página de propriedades dos ativos selecionados.
 
