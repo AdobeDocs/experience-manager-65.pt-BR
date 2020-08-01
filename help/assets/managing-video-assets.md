@@ -3,9 +3,9 @@ title: Gerencie ativos de vídeo no [!DNL Adobe Experience Manager].
 description: Faça upload, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '814'
 ht-degree: 7%
 
 ---
@@ -19,9 +19,9 @@ Saiba como gerenciar e editar os ativos de vídeo em [!DNL Adobe Experience Mana
 
 ## Fazer upload e pré-visualização de ativos de vídeo {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] gera pré-visualizações para ativos de vídeo com a extensão MP4. Se o formato do ativo não for MP4, instale o FFmpeg pack para gerar uma pré-visualização. FFmpeg cria representações de vídeo do tipo OGG e MP4. Você pode pré-visualização as execuções na interface do usuário Ativos.
+[!DNL Adobe Experience Manager Assets] gera pré-visualizações para ativos de vídeo com a extensão MP4. Se o formato do ativo não for MP4, instale o FFmpeg pack para gerar uma pré-visualização. FFmpeg cria representações de vídeo do tipo OGG e MP4. Você pode pré-visualização as execuções na interface do [!DNL Assets] usuário.
 
-1. Na pasta ou subpastas Ativos digitais, navegue até o local onde deseja adicionar ativos digitais.
+1. Na pasta ou subpastas de ativos digitais, navegue até o local onde deseja adicionar ativos digitais.
 1. Para carregar o ativo, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Arquivos]**. Como alternativa, solte-o diretamente na área de ativos. Consulte [fazer upload de ativos](managing-assets-touch-ui.md#uploading-assets) para obter detalhes sobre a operação de upload.
 1. Para pré-visualização de um vídeo na visualização de placa, clique na opção **[!UICONTROL Reproduzir]** ![reprodução](assets/do-not-localize/play.png) no ativo de vídeo. Você pode pausar ou reproduzir vídeo apenas na visualização do cartão. As opções [!UICONTROL Reproduzir] e [!UICONTROL Pausar] não estão disponíveis na visualização da lista.
 
@@ -71,7 +71,7 @@ Após a publicação, você pode incluir os ativos de vídeo em uma página da W
 
 ## Anotar ativos de vídeo {#annotate-video-assets}
 
-1. No console Ativos, clique em [!UICONTROL Editar] no cartão de ativos para exibir a página de detalhes do ativo.
+1. No [!DNL Assets] console, clique em [!UICONTROL Editar] no cartão do ativo para exibir a página de detalhes do ativo.
 1. Para reproduzir o vídeo, clique em [!UICONTROL Pré-visualização].
 1. Para anotar o vídeo, clique no botão **[!UICONTROL Anotar]** . Uma anotação é adicionada no horário específico (quadro) do vídeo. Ao anotar, você pode desenhar na tela e incluir um comentário com o desenho. Os comentários são salvos automaticamente.
 
