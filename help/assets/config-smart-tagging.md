@@ -3,9 +3,9 @@ title: Configure a marcação de ativos usando o Serviço de conteúdo inteligen
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1103'
 ht-degree: 43%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 43%
 
 # Configurar a marcação de ativos usando o Serviço de conteúdo inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Você pode fazer a integração [!DNL Adobe Experience Manager] com o Smart Content Service usando o Adobe Developer Console. Use essa configuração para acessar o Serviço de conteúdo inteligente de dentro [!DNL Experience Manager].
+Você pode fazer a integração [!DNL Adobe Experience Manager] com o Serviço de conteúdo inteligente usando o Console do desenvolvedor do Adobe. Use essa configuração para acessar o Serviço de conteúdo inteligente de dentro [!DNL Experience Manager].
 
 O artigo detalha as seguintes tarefas principais que são necessárias para configurar o Serviço de conteúdo inteligente. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
 
@@ -25,7 +25,7 @@ O artigo detalha as seguintes tarefas principais que são necessárias para conf
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração no Adobe Developer Console:
+Antes de usar o Smart Content Service, verifique o seguinte para criar uma integração no Adobe Developer Console:
 
 * Existência de uma Adobe ID com privilégios de administrador para a organização.
 * O serviço Smart Content Service está habilitado para sua organização.
@@ -33,7 +33,7 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para cri
 <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
 -->
 
-Para habilitar Tags inteligentes aprimoradas, além do acima, instale também o service pack [mais recente do](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)AEM.
+Para ativar as Smart Tags aprimoradas, além das anteriores, instale também o service pack [mais recente do](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)Experience Manager.
 
 ## Obter certificado público {#obtain-public-certificate}
 
@@ -43,7 +43,7 @@ Um certificado público permite autenticar seu perfil no Console do desenvolvedo
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 1. Na caixa de diálogo **[!UICONTROL Criar configuração]** , especifique um título e um nome para a configuração de Tags inteligentes. Clique em **[!UICONTROL Criar]**.
-1. Na caixa de diálogo Serviço **[!UICONTROL de conteúdo inteligente do]** AEM, use os seguintes valores:
+1. Na caixa de diálogo **[!UICONTROL AEM Serviço]** de conteúdo inteligente, use os seguintes valores:
 
    **[!UICONTROL URL do serviço]**: `https://mc.adobe.io/marketingcloud/smartcontent`
 
@@ -79,9 +79,9 @@ Depois que um certificado expira, ele não é mais confiável. Não é possível
 1. To download a public certificate, click **[!UICONTROL Download Public Certificate for OAuth Integration]**.
 1. Acesse [https://console.adobe.io](https://console.adobe.io) e navegue até os Serviços de conteúdo inteligente existentes na página **[!UICONTROL Integrações]** . Carregue o novo certificado. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
 
-## Criar integração do Adobe Developer Console {#create-adobe-i-o-integration}
+## Criar integração do Console do desenvolvedor do Adobe {#create-adobe-i-o-integration}
 
-Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no Adobe Developer Console para gerar a chave de API, a ID da conta técnica, a ID da organização e o segredo do cliente.
+Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no Console do desenvolvedor do Adobe para gerar a chave da API, a ID da conta técnica, a ID da organização e o segredo do cliente.
 
 1. Acesse [https://console.adobe.io](https://console.adobe.io/) em um navegador. Selecione a conta e verifique se a organização associada tem a função de administrador do sistema.
 1. Crie um projeto com o nome que quiser. Clique em **[!UICONTROL Adicionar API]**.
@@ -94,7 +94,7 @@ Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no
 
 ## Configurar o Serviço de conteúdo inteligente {#configure-smart-content-service}
 
-Para configurar a integração, use os valores dos campos ID da conta técnica, ID da organização, segredo do cliente, servidor de autorização e chave da API da integração do Adobe Developer Console. A criação de uma configuração em nuvem de Tags inteligentes permite a autenticação de solicitações de API da [!DNL Experience Manager] implantação.
+Para configurar a integração, use os valores dos campos ID da conta técnica, ID da organização, segredo do cliente, servidor de autorização e chave da API da integração do Console do desenvolvedor do Adobe. A criação de uma configuração em nuvem de Tags inteligentes permite a autenticação de solicitações de API da [!DNL Experience Manager] implantação.
 
 1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > Cloud Service **** herdados para abrir o console [!UICONTROL Cloud Service] .
 1. Em Tags **[!UICONTROL inteligentes de]** ativos, abra a configuração criada acima. Na página de configurações do serviço, clique em **[!UICONTROL Editar]**.
