@@ -3,9 +3,9 @@ title: Gerencie ativos compostos com referências e ativos de várias páginas n
 description: Saiba como criar referências a ativos digitais de dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para visualização de páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -131,12 +131,12 @@ As seguintes opções estão disponíveis na barra de ferramentas, no painel esq
 
 ## Práticas recomendadas e limitação {#best-practice-limitation-tips}
 
-* A geração de subconjuntos pode consumir muitos recursos em qualquer implantação de Experience Manager. Se você estiver gerando subativos quando os ativos complexos forem carregados, adicione a etapa no fluxo de trabalho Atualizar ativo do DAM. Se você estiver gerando subativos sob demanda, crie um fluxo de trabalho separado para gerar subativos. Um fluxo de trabalho dedicado permite que você pule as outras etapas no fluxo de trabalho do DAM Update Asset e salve os recursos tecnológicos.
+* A geração de subconjuntos pode consumir muitos recursos em qualquer [!DNL Experience Manager] implantação. Se você estiver gerando subativos quando os ativos complexos forem carregados, adicione a etapa no fluxo de trabalho Atualizar ativo do DAM. Se você estiver gerando subativos sob demanda, crie um fluxo de trabalho separado para gerar subativos. Um fluxo de trabalho dedicado permite que você pule as outras etapas no fluxo de trabalho do DAM Update Asset e salve os recursos tecnológicos.
 
 >[!MORELIKETHIS]
 >
 >* [Usar aplicativo de desktop Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
 >* [Configurar ações da área de trabalho no Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Criar objetos inteligentes vinculados no Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Inserir gráficos no Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+>* [Colocar gráficos no Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 
