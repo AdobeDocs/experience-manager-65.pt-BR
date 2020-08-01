@@ -1,27 +1,27 @@
 ---
 title: Detectar o tipo MIME de ativos usando o Apache Tika
-description: Ative o Apache Tika para ajudar o Experience Manager Assets a detectar o tipo MIME de ativos do fluxo de conteúdo durante a operação de upload em vez da extensão de arquivo.
+description: Ative o Apache Tika para [!DNL Experience Manager Assets] ajudar a detectar o tipo MIME de ativos do fluxo de conteúdo durante a operação de upload em vez da extensão do arquivo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
 
 
-# Detect MIME type of assets using Apache Tika {#detecting-mime-type-of-assets-using-apache-tika}
+# Detectar o tipo MIME de ativos usando [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normalmente, o Adobe Experience Manager Assets detecta o tipo MIME de ativos que você carrega de sua extensão de arquivo.
+Normalmente, [!DNL Adobe Experience Manager Assets] detecta o tipo MIME de ativos que você carrega de sua extensão de arquivo.
 
-Se você usar o Apache Tika para fazer upload de ativos, o Assets detectará seu tipo MIME do fluxo de conteúdo durante a operação de upload em vez da extensão do arquivo.
+Se você usar [!DNL Apache Tika] para fazer upload de ativos, [!DNL Assets] detectará o tipo MIME do fluxo de conteúdo durante a operação de upload em vez da extensão do arquivo.
 
 Esse recurso é desativado por padrão. Para ativar o recurso, configure o serviço **[!UICONTROL Day CQ DAM Mime Type]** do [!UICONTROL Configuration Manager].
 
 >[!NOTE]
 >
->A detecção de tipo MIME usando a biblioteca Apache Tika é uma operação que consome muitos recursos.
+>A detecção de tipo MIME usando a [!DNL Apache Tika] biblioteca é uma operação que consome muitos recursos.
 
 1. Para abrir o console da Web do Configuration Manager, acesse `https://[aem_server]:[port]/system/console/configMgr`.
 
