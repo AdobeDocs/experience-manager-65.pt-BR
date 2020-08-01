@@ -1,21 +1,21 @@
 ---
-title: Personalizar e estender os ativos Adobe Experience Manager
+title: Personalize e estenda [!DNL Adobe Experience Manager Assets].
 description: Saiba como personalizar e estender o Asset Share e o Editor de ativos, que apresenta aos usuários uma interface especificamente personalizada e um conjunto de funcionalidades.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
 
-# Personalizar e estender ativos {#customizing-and-extending-assets}
+# Personalizar e estender [!DNL Assets] {#customizing-and-extending-assets}
 
 O Editor de ativos é o principal ponto de acesso que os usuários de um site do Adobe Enterprise Manager usarão para localizar, visualização e manipular os ativos digitais no repositório.
 
-Como desenvolvedor do Experience Manager, você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface especificamente personalizada e um conjunto de funcionalidades.
+Como um [!DNL Experience Manager] desenvolvedor, você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface especificamente personalizada e um conjunto de funcionalidades.
 
 Os seguintes aspectos da funcionalidade podem ser personalizados ou aprimorados:
 
@@ -36,6 +36,6 @@ Os seguintes aspectos da aparência do Editor de ativos são personalizáveis:
 
 ## Personalizar representações {#customizing-renditions}
 
-Na terminologia dos Ativos do Experience Manager, uma representação é o formulário no qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, imagens em cores completas podem ter uma representação em seu tamanho original, outra em tamanho reduzido e outra em escala decrescente e outra em escala de cinza.
+Na [!DNL Experience Manager Assets] terminologia, uma representação é a forma na qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, imagens em cores completas podem ter uma representação em seu tamanho original, outra em tamanho reduzido e outra em escala decrescente e outra em escala de cinza.
 
 As representações nas quais um ativo específico está disponível podem ser personalizadas e novas representações podem ser criadas.
