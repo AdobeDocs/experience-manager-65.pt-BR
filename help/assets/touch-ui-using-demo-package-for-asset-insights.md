@@ -3,9 +3,9 @@ title: Usar o pacote de demonstração para o Asset Insights
 description: Use o pacote de demonstração para permitir que o Adobe Asset Insights capture dados e gere insights para uma página da Web.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Usando o pacote de demonstração, você pode ativar o Adobe Asset Insights para capturar dados e gerar insights para uma página da Web de amostra.
 
-## Usar os insights do Experience Manager Assets com página da Web de amostra  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Insights com exemplo de página da Web  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configure o Asset Insights usando as instruções em [Configurar o Asset Insights](touch-ui-configuring-asset-insights.md).
 1. Baixe o pacote de ativos de amostra abaixo e instale o pacote do gerenciador de pacotes CRXDE.
@@ -34,4 +34,4 @@ Usando o pacote de demonstração, você pode ativar o Adobe Asset Insights para
 
    >[!NOTE]
    >
-   >A página da Web externa pode estar no próprio Experience Manager.
+   >A página da Web externa pode estar em [!DNL Experience Manager] si mesma.
