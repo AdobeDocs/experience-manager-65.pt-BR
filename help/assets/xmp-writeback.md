@@ -1,11 +1,11 @@
 ---
 title: Write-back de XMP a execuções
-description: Saiba como o recurso de gravação XMP propaga as alterações de metadados de um ativo para todas as execuções ou representações específicas do ativo.
+description: Saiba como o recurso XMP write-back propaga as alterações de metadados de um ativo para todas as execuções ou representações específicas do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Write-back de XMP a execuções {#xmp-writeback-to-renditions}
 
-O recurso de gravação XMP em [!DNL Adobe Experience Manager Assets] replica as alterações nos metadados do ativo nas representações do ativo. Quando você altera os metadados de um ativo de dentro [!DNL Experience Manager Assets] ou durante o upload do ativo, as alterações são armazenadas inicialmente no nó do ativo no CRXDe. O recurso de write-back XMP propaga as alterações de metadados para todas as execuções ou representações específicas do ativo.
+O recurso de write-back XMP em [!DNL Adobe Experience Manager Assets] replica as alterações nos metadados do ativo nas representações do ativo. Quando você altera os metadados de um ativo de dentro [!DNL Experience Manager Assets] ou durante o upload do ativo, as alterações são armazenadas inicialmente no nó do ativo no CRXDe. O recurso de write-back XMP propaga as alterações nos metadados para todas as execuções ou para as execuções específicas do ativo.
 
 Considere um cenário em que você modifica a propriedade [!UICONTROL Título] do ativo com título `Classic Leather` para `Nylon`.
 
@@ -25,9 +25,9 @@ Nesse caso, o [!DNL Experience Manager Assets] salva as alterações na propried
 
 No entanto, [!DNL Experience Manager Assets] não propaga automaticamente quaisquer alterações de metadados nas representações de um ativo.
 
-O recurso de Writeback XMP permite que você propague as alterações de metadados para todas as representações ou representações específicas do ativo. No entanto, as alterações não são armazenadas no nó de metadados na hierarquia do ativo. Em vez disso, esse recurso incorpora as alterações nos arquivos binários das execuções.
+O recurso XMP Writeback permite que você propague as alterações de metadados para todas as execuções ou representações específicas do ativo. No entanto, as alterações não são armazenadas no nó de metadados na hierarquia do ativo. Em vez disso, esse recurso incorpora as alterações nos arquivos binários das execuções.
 
-## Habilitando o write-back XMP {#enabling-xmp-writeback}
+## Habilitar XMP write-back {#enabling-xmp-writeback}
 
 Para permitir que as alterações de metadados sejam propagadas para as representações do ativo ao carregá-lo, modifique a configuração do **[!UICONTROL Adobe CQ DAM Rendition Maker]** no Configuration Manager.
 
@@ -37,11 +37,11 @@ Para permitir que as alterações de metadados sejam propagadas para as represen
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
-## Habilitar o write-back XMP para execuções específicas {#enabling-xmp-writeback-for-specific-renditions}
+## Habilitar XMP write-back para execuções específicas {#enabling-xmp-writeback-for-specific-renditions}
 
-Para permitir que o recurso de Gravação XMP propague alterações de metadados para selecionar execuções, especifique essas execuções para a etapa de fluxo de trabalho do Processo de Gravação XMP do fluxo de trabalho WriteBack [!UICONTROL de Metadados] DAM. Por padrão, essa etapa é configurada com a representação original.
+Para permitir que o recurso XMP Writeback propague alterações de metadados para selecionar execuções, especifique essas execuções para a etapa de fluxo de trabalho XMP Processo de gravação do fluxo de trabalho WriteBack [!UICONTROL de metadados de] DAM. Por padrão, essa etapa é configurada com a representação original.
 
-Para o recurso de Writeback XMP propagar metadados para as miniaturas de execução 140.100.png e 319.319.png, execute estas etapas.
+Para que o recurso XMP Writeback propague metadados para as miniaturas de execução 140.100.png e 319.319.png, execute estas etapas.
 
 1. Na interface do Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 1. Na página Modelos, abra o modelo de fluxo de trabalho Writeback **[!UICONTROL de metadados]** DAM.
@@ -62,17 +62,17 @@ As alterações de metadados são propagadas para as representações representa
 
 >[!NOTE]
 >
->Para problemas de gravação em XMP no Linux de 64 bits, consulte [Como ativar a gravação em XMP no RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)de 64 bits.
+>Para XMP problemas de gravação no Linux de 64 bits, consulte [Como ativar XMP write-back no RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)de 64 bits.
 >
->Para as plataformas compatíveis, consulte Pré-requisitos [de gravação de metadados](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)XMP.
+>Para as plataformas compatíveis, consulte [XMP pré-requisitos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)de gravação de metadados.
 
 ## Filtrar metadados XMP {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] suporta a filtragem de lista de bloqueios e lista de permissões de propriedades/nós para metadados XMP que são lidos de binários de ativos e armazenados no JCR quando os ativos são ingeridos.
 
-Filtrar usando uma lista de bloqueios permite importar todas as propriedades de metadados XMP, exceto as propriedades especificadas para exclusão. No entanto, para tipos de ativos, como arquivos INDD que têm quantidades enormes de metadados XMP (por exemplo, 1000 nós com 10.000 propriedades), os nomes dos nós a serem filtrados nem sempre são conhecidos antecipadamente. Se a filtragem usando uma lista de bloqueios permitir a importação de um grande número de ativos com diversos metadados XMP, a implantação do AEM poderá enfrentar problemas de estabilidade, por exemplo, filas de observação obstruídas.
+Filtrar usando uma lista de bloqueios permite importar todas as propriedades de metadados XMP, exceto as propriedades especificadas para exclusão. No entanto, para tipos de ativos, como arquivos INDD que têm uma grande quantidade de metadados XMP (por exemplo, 1000 nós com 10.000 propriedades), os nomes dos nós a serem filtrados nem sempre são conhecidos antecipadamente. Se a filtragem usando uma lista de bloqueios permitir a importação de um grande número de ativos com diversos metadados XMP, a [!DNL Experience Manager] implantação poderá enfrentar problemas de estabilidade, por exemplo, filas de observação obstruídas.
 
-A filtragem de metadados XMP por lista de permissões resolve esse problema ao permitir que você defina as propriedades XMP a serem importadas. Dessa forma, quaisquer outras propriedades XMP ou desconhecidas são ignoradas. Para compatibilidade com versões anteriores, você pode adicionar algumas dessas propriedades ao filtro que usa uma lista de bloqueios.
+A filtragem de metadados de XMP por lista de permissões resolve esse problema ao permitir que você defina as propriedades de XMP a serem importadas. Dessa forma, qualquer outra propriedade XMP ou desconhecida é ignorada. Para compatibilidade com versões anteriores, você pode adicionar algumas dessas propriedades ao filtro que usa uma lista de bloqueios.
 
 >[!NOTE]
 >
@@ -84,10 +84,10 @@ A filtragem de metadados XMP por lista de permissões resolve esse problema ao p
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Para filtrar as propriedades XMP bloqueadas depois de aplicar a filtragem por lista de permissões, especifique as propriedades na caixa de filtragem **[!UICONTROL XML]** bloqueado para XMP.
+1. Para filtrar XMP propriedades bloqueadas após a aplicação da filtragem por lista de permissões, especifique as propriedades na caixa Nomes XML **[!UICONTROL bloqueados para XMP filtragem]** .
 
    >[!NOTE]
    >
-   >A opção **[!UICONTROL Aplicar Lista de bloqueios às propriedades]** XMP está selecionada por padrão. Em outras palavras, a filtragem usando uma lista de bloqueios é ativada por padrão. Para desativar essa filtragem, desmarque a opção **[!UICONTROL Aplicar Lista de bloqueios às propriedades]** XMP.
+   >A opção **[!UICONTROL Aplicar Lista de bloqueios a XMP propriedades]** está selecionada por padrão. Em outras palavras, a filtragem usando uma lista de bloqueios é ativada por padrão. Para desativar essa filtragem, desmarque a opção **[!UICONTROL Aplicar Lista de bloqueios a XMP propriedades]** .
 
 1. Salve as alterações.
