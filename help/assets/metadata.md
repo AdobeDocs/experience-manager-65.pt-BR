@@ -3,7 +3,7 @@ title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Mana
 description: Saiba mais sobre os tipos de metadados e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] como tornar possível organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Typically, the applications that create digital assets add some metadata to the 
 
 ## Modify metadata in bulk {#modify-metadata-in-bulk}
 
-Adobe Enterprise Manager Assets lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. You can also edit the metadata for multiple collections in bulk.
+[!DNL Adobe Enterprise Manager Assets] lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. You can also edit the metadata for multiple collections in bulk.
 
 Use the properties page to perform metadata changes on multiple assets or collections:
 
@@ -48,7 +48,7 @@ To customize the metadata properties page, including adding, modifying, deleting
 >
 >The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](search-assets.md#metadataupdates).
 
-1. In the Assets user interface, navigate to the location of the assets you want to edit.
+1. In the [!DNL Assets] user interface, navigate to the location of the assets you want to edit.
 1. Select the assets for which you want to edit common properties.
 1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
@@ -121,7 +121,7 @@ Os dois tipos básicos de metadados são metadados técnicos e metadados descrit
 Os metadados técnicos são úteis para aplicativos de software que lidam com ativos digitais e não devem ser mantidos manualmente. [!DNL Experience Manager Assets] e outros softwares determinam automaticamente os metadados técnicos e os metadados podem mudar quando o ativo é modificado. Os metadados técnicos disponíveis de um ativo dependem em grande parte do tipo de arquivo do ativo. Alguns exemplos de metadados técnicos são:
 
 * Tamanho de um arquivo.
-* Dimensões (altura e largura) de uma imagem.
+* Dimension (altura e largura) de uma imagem.
 * Taxa de bits de um arquivo de áudio ou vídeo.
 * Resolução (nível de detalhes) de uma imagem.
 
@@ -140,7 +140,7 @@ Há várias maneiras de incorporar metadados em arquivos. Há suporte para uma s
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por todos [!DNL Experience Manager Assets] o gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois fornece um modelo de conteúdo avançado. Os usuários do padrão XMP e do [!DNL Experience Manager Assets] têm uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por [!DNL Experience Manager Assets] todos os gerenciamento de metadados. A codificação padrão de metadados universais do oferta que pode ser incorporada em todos os formatos de arquivo. Adobe e outras empresas oferecem suporte XMP padrão, pois oferecem um modelo de conteúdo avançado. Os usuários XMP padrão e de [!DNL Experience Manager Assets] uma plataforma poderosa para aproveitar. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -199,7 +199,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X.
 * Photoshop e psAux - [!DNL Adobe Photoshop].
 
-### Metadados do Gerenciamento de direitos digitais {#digital-rights-management-metadata}
+### Metadados de Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -207,7 +207,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PRISM - Requisitos de [publicação para metadados](https://www.idealliance.org/prism-metadata)padrão do setor.
 * PRL - Idioma dos Direitos do PRISM.
 * PUR - Direitos de uso do PRISM.
-* `xmpPlus` - Integração da PLUS com a XMP.
+* `xmpPlus` - Integração do PLUS com o XMP.
 
 ### Metadados específicos da fotografia {#photography-specific-metadata}
 
@@ -221,7 +221,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * PDF e PDF/X - Adobe PDF e aplicativos de terceiros.
 * PRISM - Requisitos de [publicação para metadados](https://www.prismstandard.org)padrão do setor.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - Metadados XMP para texto paginado.
+* `xmpPG` - XMP metadados para texto paginado.
 
 ### Metadados específicos de multimídia {#multimedia-specific-metadata}
 
