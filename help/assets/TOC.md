@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guia do usuário dos ativos Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '630'
 ht-degree: 41%
 
 ---
@@ -16,21 +16,21 @@ ht-degree: 41%
 # Guia do usuário dos ativos Experience Manager 6.5 {#assets}
 
 + [[!DNL Assets] guia do usuário](home.md)
-+ [Notas de versão do AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [Notas de versão do Experience Manager 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
-+ Usar AEM Assets {#using}
-   + [Experiência com homes page AEM Assets](assets-home-page.md)
-   + [Pesquisar ativos no AEM](search-assets.md)
++ Usar ativos Experience Manager {#using}
+   + [Experiência de home page de ativos](assets-home-page.md)
+   + [Pesquisar ativos digitais](search-assets.md)
    + [Ativos multilíngues](multilingual-assets.md)
-   + [ [!DNL Adobe Stock] Usar ativos em AEM Assets](aem-assets-adobe-stock.md)
+   + [Ativos [!DNL Adobe Stock] do usuário em ativos](aem-assets-adobe-stock.md)
    + [Visualização de ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Atividade na linha do tempo](activity-stream.md)
    + [Processar ativos](assets-workflow.md)
    + [Adicionar mapas de imagem](image-maps.md)
    + [Reutilizar ativos usando MSM](reuse-assets-using-msm.md)
-   + [Ativos conectados com AEM Sites](use-assets-across-connected-assets-instances.md)
+   + [Ativos conectados com sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
    + [Configuração do Dynamic Media](administering-dynamic-media.md)
@@ -76,14 +76,14 @@ ht-degree: 41%
    + [Instalação do Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
    + [Trabalho com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
-   + [Personalizar e estender AEM Assets](extending-assets.md)
+   + [Personalizar e estender ativos](extending-assets.md)
    + [Processar ativos usando manipuladores de mídia e workflows](media-handlers.md)
    + [Ampliar funcionalidade de pesquisa](searchx.md)
-   + [Instalar e configurar [!DNL ImageMagick] para trabalhar com AEM Assets](best-practices-for-imagemagick.md)
+   + [Instalar e configurar [!DNL ImageMagick] para trabalhar com ativos](best-practices-for-imagemagick.md)
    + [Integrar ativos ao fluxo de atividade](extending-activity-stream.md)
    + [Estender editor de ativos](asseteditorx.md)
    + [API HTTP de ativos](mac-api-assets.md)
-   + [Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](assets-api-content-fragments.md)
+   + [Suporte a fragmentos de conteúdo na API HTTP de ativos](assets-api-content-fragments.md)
    + [Desenvolvimento proxy de ativos](proxy.md)
 + Administrar ativos {#administer}
    + [Formatos de arquivo não suportados](assets-formats.md)
@@ -104,17 +104,17 @@ ht-degree: 41%
    + [Guia de migração de ativos](assets-migration-guide.md)
    + [Metadados XMP](xmp.md)
    + [Considerações sobre a rede de ativos](assets-network-considerations.md)
-   + [AEM Assets e AEM MediaLibrary](medialibrary.md)
+   + [Ativos e MediaLibrary](medialibrary.md)
    + [Usar o rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configurar restrições de upload](configuring-asset-upload-restrictions.md)
-   + [Práticas recomendadas de integração do AEM e da Creative Cloud](aem-cc-integration-best-practices.md)
+   + [integração Experience Manager e Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integrar ao InDesign Server](indesign.md)
    + [Perfis de metadados](metadata-profiles.md)
-   + [Gerenciamento de direitos digitais em ativos](drm.md)
+   + [Digital Rights Management nos ativos](drm.md)
    + [Usar o pacote de demonstração para insights de ativos](touch-ui-using-demo-package-for-asset-insights.md)
    + [Práticas recomendadas de formato de arquivo de ativos](assets-file-format-best-practices.md)
    + [Práticas recomendadas para monitorar ativos](assets-monitoring-best-practices.md)
-   + [Suporte ao Camera Raw](camera-raw.md)
+   + [apoio Camera Raw](camera-raw.md)
    + [Detectar o tipo MIME de ativos usando o Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificação de imagens](imaging-transcoding-library.md)
    + [Suporte para metadados IPTC](iptc-support.md)
@@ -123,11 +123,11 @@ ht-degree: 41%
    + [Marque com água seus ativos](watermarking.md)
    + [Importação e exportação de metadados em massa](metadata-import-export.md)
    + [Modelos de ativos](asset-templates.md)
-   + [Práticas recomendadas para compartilhar pastas com a Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Práticas recomendadas para compartilhar pastas com o Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Esquema de metadados de pastas](folder-metadata-schema.md)
    + [Gerenciar tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configurar o AEM Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Configurar o Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos no Brand Portal](brand-portal-publish-assets.md)
    + [Publicar pastas no Brand Portal](brand-portal-publish-folder.md)
    + [Publicar coleções no Brand Portal](brand-portal-publish-collection.md)
@@ -151,11 +151,11 @@ ht-degree: 41%
    + [Gerenciar ativos de vídeo](managing-video-assets.md)
    + [Criar projetos de tradução](translation-projects.md)
    + [Preparar ativos para tradução](preparing-assets-for-translation.md)
-   + [Baixar ativos no AEM](download-assets-from-aem.md)
+   + [Baixar ativos do Experience Manager](download-assets-from-aem.md)
    + [Trabalhos assíncronos](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Insights de ativos](touch-ui-asset-insights.md)
-   + [Ativar insights de ativos por meio do Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
+   + [Ativar insights de ativos por meio da inicialização de Adobe](touch-ui-using-dtm-for-asset-insights.md)
    + [Configurar insights de ativos](touch-ui-configuring-asset-insights.md)
    + [Fazer check-in e check-out de ativos](check-out-and-submit-assets.md)
    + [Aplicar serviços de tradução em nuvem a pastas](transition-cloud-services.md)
