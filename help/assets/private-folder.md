@@ -1,11 +1,11 @@
 ---
-title: Crie e compartilhe uma pasta privada no Adobe Experience Manager.
-description: Saiba como criar uma pasta privada nos Ativos do Adobe Experience Manager e compartilhá-los com outros usuários e atribuir vários privilégios a eles.
+title: Crie e compartilhe uma pasta privada em [!DNL Adobe Experience Manager].
+description: Saiba como criar uma pasta privada no [!DNL Adobe Experience Manager Assets] site e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Compartilhamento de pasta particular {#private-folder-sharing}
 
-Você pode criar uma pasta privada na interface do usuário dos Ativos do Adobe Experience Manager que esteja disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
+Você pode criar uma pasta privada na interface do [!DNL Adobe Experience Manager Assets] usuário que esteja disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
 
 >[!NOTE]
 >
 >A pasta privada tem pelo menos um membro com a função Proprietário.
 
-1. No console Ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
+1. No [!DNL Assets] console, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
 
    ![Criar pasta de ativos](assets/Create-folder.png)
 
@@ -49,9 +49,9 @@ Você pode criar uma pasta privada na interface do usuário dos Ativos do Adobe 
    >
    >A pasta privada tem pelo menos um membro com a função Proprietário. Portanto, o administrador não pode remover todos os membros proprietários de uma pasta privada. No entanto, para remover proprietários existentes (e o próprio administrador) da pasta privada, o administrador deve adicionar outro usuário como proprietário.
 
-1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando o usuário faz logon em Ativos.
+1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando o usuário faz logon em [!DNL Assets].
 1. Clique em **[!UICONTROL Ok]** para fechar a mensagem de confirmação.
-1. O usuário com quem você compartilha a pasta recebe uma notificação de compartilhamento. Faça logon no Assets com as credenciais do usuário para visualização da notificação.
+1. O usuário com quem você compartilha a pasta recebe uma notificação de compartilhamento. Faça logon [!DNL Assets] com as credenciais do usuário para visualização da notificação.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
