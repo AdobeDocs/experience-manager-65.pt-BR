@@ -3,9 +3,9 @@ title: Gerenciar tags inteligentes e pesquisas
 description: Atualizar ou remover as tags inteligentes imprecisas para melhorar a relevância das tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -24,16 +24,16 @@ A moderação de tags inteligentes também ajuda a refinar pesquisas baseadas em
 Também é possível atribuir uma classificação mais alta a uma tag para aumentar sua relevância em relação a uma imagem. A promoção de uma tag para uma imagem aumenta as chances de a imagem aparecer nos resultados da pesquisa quando uma pesquisa é realizada com base na tag específica.
 
 1. Na caixa Omnisearch, procure ativos com base em uma tag.
-1. Inspecione os resultados da pesquisa para identificar uma imagem que não seja relevante para a sua pesquisa.
+1. Inspect os resultados da pesquisa para identificar uma imagem que você não acha relevante para sua pesquisa.
 1. Selecione a imagem e clique em **[!UICONTROL Gerenciar tags]** na barra de ferramentas.
 1. Na página **[!UICONTROL Gerenciar tags]** , inspecione as tags. Se você não quiser que a imagem seja pesquisada com base em uma tag específica, selecione a tag e clique em **[!UICONTROL Excluir]** na barra de ferramentas. Como alternativa, clique no `X` símbolo que aparece ao lado do rótulo.
 1. Para atribuir uma classificação superior a uma tag, selecione-a e clique em **[!UICONTROL Promover]** na barra de ferramentas. A tag promovida é movida para a seção **[!UICONTROL Tags]** .
 1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Navegue até a página de propriedades da imagem. Observe que a tag promovida tem uma relevância alta e, portanto, aparece mais alta nos resultados da pesquisa.
 
-## Compreender os resultados da pesquisa do Experience Manager com tags inteligentes {#understandsearch}
+## Compreender os resultados da [!DNL Experience Manager] pesquisa com tags inteligentes {#understandsearch}
 
-Por padrão, a pesquisa do Experience Manager combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
+Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
 
 * ativos com `woman` e `running` palavras-chave nos metadados.
 
