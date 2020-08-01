@@ -3,9 +3,9 @@ title: Esquema de metadados de pastas
 description: Saiba mais sobre como criar schemas de metadados para pastas de ativos em Ativos da Adobe Experience Manager
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1016'
 ht-degree: 4%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 4%
 
 # Esquema de metadados de pastas {#folder-metadata-schema}
 
-Os ativos Adobe Experience Manager permitem que você crie schemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta.
+[!DNL Adobe Experience Manager Assets] permite criar schemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta.
 
 ## Adicionar um formulário de schema de metadados de pasta {#add-a-folder-metadata-schema-form}
 
-Use o editor de Formulários de Schema de Metadados da Pasta para criar e editar schemas de metadados para pastas.
+Use o editor do Forms Schema de Metadados da Pasta para criar e editar schemas de metadados para pastas.
 
-1. Na interface do Experience Manager, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **[!UICONTROL de metadados da]** pasta.
-1. Na página Formulários [!UICONTROL de Schema de Metadados de] Pasta, clique em **[!UICONTROL Criar]**.
-1. Specify a name for the form, and click **[!UICONTROL Create]**. O novo formulário de schema é listado na página Formulários [!UICONTROL de] Schemas.
+1. Na [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **[!UICONTROL de metadados]** da pasta.
+1. Na página Forms [!UICONTROL do Schema de metadados da] pasta, clique em **[!UICONTROL Criar]**.
+1. Specify a name for the form, and click **[!UICONTROL Create]**. O novo formulário de schema é listado na página do Forms [!UICONTROL do] Schema.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
 
@@ -32,7 +32,7 @@ Use o editor de Formulários de Schema de Metadados da Pasta para criar e editar
 
 Você pode mapear/configurar esses itens de formulário em um campo dentro de um nó de metadados no repositório CRX. É possível adicionar novas guias ou itens de formulário ao formulário de schema de metadados.
 
-1. Na página Formulários de Schema, selecione o formulário criado e selecione a opção **[!UICONTROL Editar]** na barra de ferramentas.
+1. Na página Forms do Schema, selecione o formulário criado e, em seguida, selecione a opção **[!UICONTROL Editar]** na barra de ferramentas.
 1. Na página Editor de Schemas de Metadados de Pastas, clique em `+` para adicionar uma guia ao formulário. Para renomear a guia, clique no nome padrão e especifique o novo nome em **[!UICONTROL Configurações]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -80,7 +80,7 @@ Estes são os valores válidos para esta propriedade:
 
 * `./jcr:content/metadata/dc:title`: Armazena o valor no nó de metadados da pasta como a propriedade `dc:title`.
 
-* `./jcr:created`: Exibe a propriedade JCR no nó da pasta. Se você configurar essas propriedades no CRXDE, a Adobe recomenda marcá-las como Desativar edição, pois elas estão protegidas. Caso contrário, o erro &#39; `Asset(s) failed to modify`&#39; ocorrerá quando você salvar as propriedades do ativo.
+* `./jcr:created`: Exibe a propriedade JCR no nó da pasta. Se você configurar essas propriedades no CRXDE, o Adobe recomenda marcá-las como Desativar edição, pois elas estão protegidas. Caso contrário, o erro &#39; `Asset(s) failed to modify`&#39; ocorrerá quando você salvar as propriedades do ativo.
 
 Para garantir que o componente seja exibido corretamente no formulário de schema de metadados, não inclua um espaço no caminho da propriedade.
 
@@ -96,20 +96,20 @@ Para garantir que o componente seja exibido corretamente no formulário de schem
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-Você pode excluir formulários de schema de metadados de pasta da página Formulários de Schema de Metadados de Pasta. Para excluir um formulário, selecione-o e clique na opção Excluir da barra de ferramentas.
+Você pode excluir formulários de schema de metadados de pasta da página Forms do Schema Metadados de pasta. Para excluir um formulário, selecione-o e clique na opção Excluir da barra de ferramentas.
 
 ![delete_form](assets/delete_form.png)
 
 ## Atribuir um schema de metadados de pasta {#assign-a-folder-metadata-schema}
 
-Você pode atribuir um schema de metadados de pasta a uma pasta na página Formulários de Schema de Metadados de Pasta ou ao criar uma pasta.
+Você pode atribuir um schema de metadados de pasta a uma pasta na página Forms do Schema Metadados de pasta ou ao criar uma pasta.
 
 Se você configurar um schema de metadados para uma pasta, o caminho para o formulário de schema será armazenado na propriedade `folderMetadataSchema` do nó de pasta em .*/jcr:content*.
 
 ### Atribuir a um schema da página Schema Metadados da pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Na interface do Experience Manager, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **[!UICONTROL de metadados da]** pasta.
-1. Na página Formulários de Schema de Metadados de Pastas, selecione o formulário de schema que deseja aplicar a uma pasta.
+1. Na [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **[!UICONTROL de metadados]** da pasta.
+1. Na página do Forms Schema de metadados da pasta, selecione o formulário de schema que deseja aplicar a uma pasta.
 1. Na barra de ferramentas, clique em **[!UICONTROL Aplicar às pastas]**.
 
 1. Selecione a pasta na qual aplicar o schema e clique em **[!UICONTROL Aplicar]**. Se um schema de metadados já estiver aplicado na pasta, uma mensagem de aviso informará que você está prestes a substituir o schema de metadados existente. Clique em **[!UICONTROL Substituir]**.
