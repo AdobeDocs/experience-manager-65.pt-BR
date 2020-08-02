@@ -3,9 +3,9 @@ title: Faça check-in e check-out de seus ativos digitais para edição.
 description: Saiba como fazer check-out dos ativos para edição e check-in deles novamente após a conclusão das alterações.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,10 @@ Os administradores podem fazer check-in de ativos cujo check-out foi feito por o
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Liberar bloqueio]**. O ativo é devolvido e está disponível para edição para outros usuários.
+
+## Práticas recomendadas e limitações {#tips-limitations}
+
+* É possível excluir uma *pasta* que contenha arquivos de ativos com check-out. Antes de excluir uma pasta, verifique se nenhum ativo digital foi retirado pelos usuários.
 
 >[!MORELIKETHIS]
 >
