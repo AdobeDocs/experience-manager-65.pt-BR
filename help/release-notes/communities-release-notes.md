@@ -1,20 +1,18 @@
 ---
 title: Notas de versão do AEM Communities
 description: Notas de versão específicas das comunidades do Adobe Experience Manager 6.5.
-uuid: 1b436959-581c-4b34-b2df-cccc5727da59
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: c3505807-1550-491a-8619-e87839afca4f
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 69%
 
 ---
 
 
-# Notas de versão do AEM Communities{#aem-communities-release-notes}
+# AEM Communities release notes {#aem-communities-release-notes}
 
-Leia sobre as melhorias no AEM Communities desde a versão 6.4. Para saber sobre os novos recursos mais detalhadamente, consulte o [Guia do usuário das comunidades do AEM 6.5](https://helpx.adobe.com/experience-manager/6-4/communities/user-guide.html).
+Leia sobre as melhorias no AEM Communities desde a versão 6.4. Para saber sobre os novos recursos mais detalhadamente, consulte o [Guia do usuário das comunidades do AEM 6.5](https://helpx.adobe.com/br/experience-manager/6-4/communities/user-guide.html).
 
 To obtain the latest release, see the [Deploying Communities](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) section of the documentation.
 
@@ -22,13 +20,13 @@ To obtain the latest release, see the [Deploying Communities](https://helpx.adob
 
 ### Melhorias na participação da comunidade {#enhancements-to-community-engagement}
 
-**O suporte** ao @Menções do AEM Communities agora permite que usuários registrados marquem (mencionem) outros membros registrados para chamar sua atenção, em Conteúdo gerado pelo usuário. Os membros marcados (mencionados) são então notificados, com links para o Conteúdo gerado pelo usuário. No entanto, os usuários podem optar por desabilitar/habilitar as notificações da Web e de email.
+**O suporte** a @Menções agora permite que os usuários registrados marcem (mencionem) outros membros registrados para chamar sua atenção, em Conteúdo gerado pelo usuário. Os membros marcados (mencionados) são então notificados, com links para o Conteúdo gerado pelo usuário. No entanto, os usuários podem optar por desabilitar/habilitar as notificações da Web e de email.
 
 ![Suporte em menções](assets/at-mentions.png)
 
 Os usuários da comunidade não precisam procurar seu nome, sobrenome ou nome de usuário para ver se alguém contatou eles ou precisa de sua atenção. Além disso, ele permite que os autores UGC procurem respostas de usuários registrados específicos que podem atender melhor o problema e adicionar entradas.
 
-Os administradores da comunidade precisam **Ativar menção **nos componentes da comunidade para permitir que os usuários registrados usem a funcionalidade nesses componentes.
+The community administrators need to **Enable Mention** on community components to allow registered users use the functionality on those components.
 
 **Mensagens em grupo**
 
@@ -38,9 +36,9 @@ Membros registrados da comunidade agora podem enviar mensagens diretas em massa 
 
 ### Aprimoramentos na moderação em massa {#enhancements-to-bulk-moderation}
 
-Filtros personalizados na Moderação em massa
+filtros personalizados na Moderação em massa
 
-[Os filtros](/help/communities/moderation.md#custom-filters) personalizados agora podem ser desenvolvidos e adicionados à interface de usuário de moderação em massa.
+[filtros](/help/communities/moderation.md#custom-filters) personalizados agora podem ser desenvolvidos e adicionados à interface de usuário de moderação em massa.
 
 Um [projeto de amostra](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) que demonstra a filtragem por meio de marcas está disponível no [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). Esse projeto pode ser usado como base para desenvolver filtros personalizados análogos.
 
@@ -68,8 +66,10 @@ Os administradores de sites podem criar um grupo em qualquer nível de hierarqui
 
 The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 
-**O suporte à navegação do teclado nos componentes de ativação**Os componentes de ativação (por exemplo, Catálogo e Reprodução do curso, Atribuições, Biblioteca de arquivos) no AEM Communities oferecem suporte à navegação do teclado para melhorar a acessibilidade.
+* Suporte à navegação do teclado nos componentes de ativação
+* Os componentes de ativação (por exemplo, Catálogo e Reprodução do curso, Atribuições, Biblioteca de arquivos) no AEM Communities suportam a navegação pelo teclado para melhorar a acessibilidade.
 
 ### Outras melhorias {#other-enhancements}
 
-* **Suporte ao Solr 7**As comunidades do AEM 6.5 suportam a versão do Apache Solr 7.0 da plataforma de pesquisa ao configurar o MSRP e o DSRP.
+* Suporte para Solr 7
+* AEM 6.5 Communities suporta a versão Apache Solr 7.0 da plataforma de pesquisa ao configurar MSRP e DSRP.
