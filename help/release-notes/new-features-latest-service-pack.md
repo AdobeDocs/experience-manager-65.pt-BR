@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '1873'
 ht-degree: 3%
@@ -90,11 +90,11 @@ Você pode usar a interface do agente para salvar um ou mais rascunhos para cada
 
 ### [!DNL Oracle WebLogic] suporte ao servidor de aplicativos {#weblogic-support}
 
-O Adobe Experience Manager Forms adicionou suporte para [!DNL Oracle WebLogic 12] o Adobe Experience Manager Forms no JEE. Você pode atualizar de uma versão anterior ou configurar um novo Experience Manager 6.5 Forms no servidor JEE em [!DNL Oracle WebLogic] 12.2.1.4 e posterior. Mais tarde corresponde às alterações de versão secundária, em que x em 12.2.1.x é substituído por um número de versão.
+A Adobe Experience Manager Forms adicionou suporte para [!DNL Oracle WebLogic 12] a Adobe Experience Manager Forms em JEE. Você pode atualizar de uma versão anterior ou configurar um novo Experience Manager 6.5 Forms no servidor JEE em [!DNL Oracle WebLogic] 12.2.1.4 e posterior. Mais tarde corresponde às alterações de versão secundária, em que x em 12.2.1.x é substituído por um número de versão.
 
 ### Aprimoramentos de acessibilidade {#accessibility-improvements}
 
-O Adobe Experience Manager Forms inclui os seguintes aprimoramentos de acessibilidade:
+A Adobe Experience Manager Forms inclui os seguintes aprimoramentos de acessibilidade:
 
 * Quando um usuário pré-visualização um formulário adaptável como um formulário HTML, o campo Assinatura [!UICONTROL em] script retém o foco da guia.
 
@@ -134,7 +134,7 @@ Agora é possível selecionar estilos na caixa de diálogo do componente usando 
 
 #### Configurar [!DNL Experience Manager Assets] com [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-O canal de autorização entre [!DNL Experience Manager Assets] e [!DNL Brand Portal] é alterado. Anteriormente, [!DNL Brand Portal] era configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização. [!DNL Experience Manager Assets] agora está configurado com [!DNL Brand Portal] a Adobe I/O, que obtém um token IMS para autorização do seu [!DNL Brand Portal] locatário.
+O canal de autorização entre [!DNL Experience Manager Assets] e [!DNL Brand Portal] é alterado. Anteriormente, [!DNL Brand Portal] era configurado na interface clássica via Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização. [!DNL Experience Manager Assets] agora está configurado com [!DNL Brand Portal] I/O de Adobe, que obtém um token IMS para autorização do seu [!DNL Brand Portal] locatário.
 
 As etapas para configurar [!DNL Experience Manager Assets] com [!DNL Brand Portal] são diferentes dependendo da sua [!DNL Experience Manager] versão e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos de Experience Manager com o Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) de marcas para obter detalhes.
 
@@ -163,13 +163,13 @@ A geração de imagens inteligentes usa as características de exibição exclus
 
 #### Recorte inteligente em perfis de vídeo para Dynamic Media (6.5.3.0) {#smart-crop-video}
 
-Recorte inteligente para vídeo e recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial no Adobe Sensei para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho. Consulte [Sobre como usar o recorte inteligente em perfis](../assets/video-profiles.md)de vídeo.
+Recorte inteligente para vídeo e recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial no Adobe Sensei para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou vídeo progressivo que você tenha carregado, independentemente do tamanho. Consulte [Sobre como usar o recorte inteligente em perfis](../assets/video-profiles.md)de vídeo.
 
 ### Formulários do Experience Manager {#aem-forms-previous-service-packs}
 
-#### Gerar saída imprimível em workflows do Experience Manager Forms (6.5.4.0) {#generate-printable-output}
+#### Gerar saída imprimível em workflows Experience Manager Forms (6.5.4.0) {#generate-printable-output}
 
-A etapa de fluxo de trabalho Gerar saída imprimível permite integrar um arquivo de modelo de origem a um arquivo de dados. Essa integração permite que você imprima ou salve cópias diferentes do arquivo de modelo. A etapa gera uma saída PCL, PostScript, ZPL, IPL, TPCL ou DPL. Para obter mais informações sobre esse recurso, consulte Fluxo de trabalho centrado no [Forms em OSGi - Referência](../forms/using/aem-forms-workflow-step-reference.md)de etapas.
+A etapa de fluxo de trabalho Gerar saída imprimível permite integrar um arquivo de modelo de origem a um arquivo de dados. Essa integração permite que você imprima ou salve cópias diferentes do arquivo de modelo. A etapa gera uma saída PCL, PostScript, ZPL, IPL, TPCL ou DPL. Para obter mais informações sobre esse recurso, consulte Fluxo de trabalho centrado na [Forms em OSGi - Referência](../forms/using/aem-forms-workflow-step-reference.md)de etapas.
 
 ![Gerar saída para impressão](assets/generate-print-output-step.gif)
 
@@ -207,7 +207,7 @@ Você pode compartilhar seus itens da Caixa de entrada com outro usuário. Quand
 
 #### Definir as configurações de saída do escritório para itens da Caixa de entrada de um usuário do AEM Forms (6.5.3.0) {#configure-out-of-office}
 
-Se planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
+Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
 Você tem a opção de especificar uma data e hora de start e uma data e hora de término para que suas configurações de fora do escritório entrem em vigor. Você pode definir uma pessoa padrão para a qual todos os itens serão enviados. Consulte [Configurar configurações](../forms/using/configure-out-of-office-settings.md)fora do escritório.
 
 #### Gerar várias comunicações interativas usando a API de lote para AEM Forms (6.5.3.0) {#generate-multiple-ic}
@@ -224,7 +224,7 @@ Entre 05 de março de 2020 e 04 de junho de 2020, a Adobe lançou o seguinte, al
 
 * [aplicativo para desktop Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/pt-BR/experience-manager-desktop-app/using/release-notes.html).
 
-* [Telas de Experience Manager: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Experience Manager Screens: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >
