@@ -3,9 +3,9 @@ title: Pesquisar aspectos.
 description: Como criar, modificar e usar aspectos de pesquisa em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2485'
 ht-degree: 18%
 
 ---
@@ -134,7 +134,7 @@ Se desejar usar um nó existente, especifique-o usando a caixa de diálogo de se
 
 O predicado Propriedade de vários valores permite pesquisar ativos por vários valores. Considere um cenário em que você tem imagens de vários produtos em [!DNL Assets] e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para procurar imagens de produtos com base em vários números de SKU.
 
-1. Click the [!DNL Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Na página Pesquisar no Forms, selecione Painel **[!UICONTROL de pesquisa do administrador de]** ativos e clique no ícone **[!UICONTROL Editar]** ![editar](assets/do-not-localize/aemassets_edit.png).
 1. Na página Editar formulário de pesquisa, arraste um **[!UICONTROL Predicado de propriedades de vários valores]** da guia **[!UICONTROL Selecionar predicado]** para o painel principal.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. Você também pode usar a caixa de diálogo de seleção para selecionar um nó.
