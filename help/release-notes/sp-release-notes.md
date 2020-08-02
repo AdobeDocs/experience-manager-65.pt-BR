@@ -4,10 +4,10 @@ description: Notas de versão específicas do Adobe Experience Manager 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a599a1c75a1933d6b21e60e96485f43a0aedd679
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '4496'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Mana
 
 * Salve um [!DNL Interactive Communication] como rascunho.
 
-* Suporte para [!DNL Oracle WebLogic 12] formulários Experience Manager em JEE.
+* Suporte para [!DNL Oracle WebLogic 12] Experience Manager Forms em JEE.
 
 * Aprimoramento da manipulação de exceções no fluxo da interface [!DNL Adobe Experience Manager Assets] do usuário.
 
@@ -85,7 +85,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Agora é possível colocar o foco do teclado na lista [!UICONTROL Comentários] e na opção clicável para [!UICONTROL Criar] comentários da versão em [!UICONTROL Criar nova versão] no painel Ativos da [!UICONTROL Linha] do tempo (NPR-33424).
 
-* Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas do teclado (NPR-33420).
+* Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas de teclado (NPR-33420).
 
 * O pop-up da caixa de lista da caixa de combinação (em vários campos em páginas diferentes) agora mostra as entradas como uma lista de opções que podem ser anunciadas pelos leitores de tela (NPR-33516).
 
@@ -135,7 +135,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * O menu no painel esquerdo agora está acessível. A funcionalidade e o propósito de expandir o menu são anunciados adequadamente pelos leitores de tela (NPR-33068).
 
-* A caixa de Lista e muitos outros elementos da interface do usuário agora estão acessíveis para usuários que não visualizam a tela, e as seguintes informações sobre eles são anunciadas pelos leitores de tela (NPR-33040):
+* A caixa de Lista e muitos outros elementos da interface do usuário agora estão acessíveis para usuários que não visualizam o leitor de tela, e as seguintes informações sobre eles são anunciadas pelos leitores de tela (NPR-33040):
 
    * se a entrada do usuário é necessária em um elemento antes do envio do formulário.
    * se um elemento não é editável.
@@ -191,7 +191,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * [!UICONTROL O Assistente de configuração] de ativos conectados falha ao funcionar com o erro 404, ao instalar a versão 6.5.3 na versão 6.5.1 (NPR-32730).
 
-* Durante o processo de gravação de retorno XMP, todas as propriedades de metadados de namespace personalizados alteram o prefixo de namespace personalizado para ns2 em vez do prefixo de namespace configurado (NPR-32748).
+* Durante o processo de gravação XMP, todas as propriedades personalizadas de metadados de namespace alteram o prefixo de namespace personalizado para ns2 em vez do prefixo de namespace configurado (NPR-32748).
 
 * O carregamento lento não é acionado e somente 100 ativos são exibidos ao selecionar para revisar as tarefas da caixa de entrada de notificações (NPR-32750).
 
@@ -215,7 +215,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * As predefinições de imagem não publicam, se o modo [!UICONTROL de sincronização] Dynamic Media estiver desativado por padrão no Experience Manager com o modo de execução Dynamic Media Scene7 (CQ-4294200).
 
-* O processamento de ativos enquanto o upload em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
+* O processamento de ativos enquanto o carregamento em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
 
 * A criação de uma configuração Dynamic Media no Experience Manager funciona, mas na interface do usuário nada acontece ao selecionar Salvar (CQ-4292442).
 
@@ -233,7 +233,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
    * O tempo de geração de miniaturas no Experience Manager aumenta devido à arquitetura Dynamic Media Scene7.
 
-* Os problemas de migração do Dynamic Media Scene7 falham para clientes com um grande número de ativos (CQ-4279206).
+* Os problemas de migração da Dynamic Media Scene7 falham para clientes com um grande número de ativos (CQ-4279206).
 
 * O layout do visualizador do vídeo 360 será quebrado se `setVideo` for usado e o vídeo será mudado para baixo ao usar `video= modifier` (CQ-4263201).
 
@@ -260,9 +260,9 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 * O cache interno é apagado quando uma página com um componente Adobe Target é publicada (NPR-33162).
 * A integração com o Adobe Target não funciona no [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Ao configurar o Adobe Target, os campos [!UICONTROL Empresa] e Conjunto [!UICONTROL de] relatórios não aparecem ao selecionar uma fonte de relatórios (NPR-32502).
-* Ao exportar [!DNL Experience Fragments] usando a E/S da Adobe, metadados como Produto de origem não são exportados para o Adobe Target (NPR-32159).
+* Ao exportar [!DNL Experience Fragments] usando E/S de Adobe, metadados como Produto de origem não são exportados para o Adobe Target (NPR-32159).
 * Os usuários autorizados do IMS no grupo de administração de Experience Manager local não podem criar ou modificar configurações do IMS (NPR-33045).
-* A página de configurações do Adobe Launch não exibe todos os registros (NPR-33011).
+* A página de configurações de inicialização de Adobe não exibe todos os registros (NPR-33011).
 * Os usuários do grupo de autores de conteúdo não podem editar as propriedades de um componente Adobe Target devido ao erro de JavaScript (NPR-32996).
 
 ### Projetos de tradução {#translation-6550}
@@ -281,7 +281,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 ### [!DNL Brand Portal] {#assets-brand-portal-6550}
 
 * Remover um schema de metadados publicado [!DNL Brand Portal] resulta em um erro (CQ-4292063).
-* Se um administrador configurar [!DNL Experience Manager Assets] 6.5.4 com o Brand Portal via Adobe Developer Console, o [!DNL Brand Portal] usuário não poderá publicar o ativo de uma pasta de contribuição de [!DNL Brand Portal] para [!DNL Experience Manager] (NPR-33046).
+* Se um administrador configurar [!DNL Experience Manager Assets] 6.5.4 com o Brand Portal por meio do Console do desenvolvedor do Adobe, o [!DNL Brand Portal] usuário não poderá publicar o ativo de uma pasta de contribuição de [!DNL Brand Portal] para [!DNL Experience Manager] (NPR-33046).
 * Replicação de Duplicado das pastas pai que causam conflitos (NPR-33001).
 
 ### [!DNL Communities] {#communities-6550}
@@ -308,13 +308,13 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 >O Experience Manager Service Pack não inclui correções para [!DNL Forms]. Eles são entregues usando um pacote complementar separado do Forms. Além disso, é lançado um instalador cumulativo que inclui correções para o AEM Forms no JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
 
 * Gerenciamento de correspondência: A ordem dos ativos em uma área do público alvo é embaralhada após a submissão de uma carta (NPR-33359, NPR-33153).
-* Formulários adaptativos: Quando um usuário edita um formulário adaptável, a opção Fluxo de trabalho [!UICONTROL do] Start disponível no menu Informações [!UICONTROL da] página não funciona (NPR-33004).
-* Formulários adaptativos: O usuário não pode salvar um formulário adaptável com mais de um anexo (NPR-32997).
-* Formulários adaptativos: A alteração do layout do painel em um formulário adaptável resulta em um erro (CQ-4293880).
-* Formulários adaptativos: Uma nova linha de uma string em um dicionário de formulários adaptáveis adiciona `&#xa;` caracteres ao dicionário (NPR-33266).
-* Acessibilidade aos formulários adaptáveis: Quando um usuário pré-visualização um formulário adaptável como um formulário HTML, o campo Assinatura [!UICONTROL em] script não consegue manter o foco da guia (NPR-33159).
-* Acessibilidade aos formulários adaptáveis: As mensagens de erro exibidas ao enviar um formulário adaptável não vinculam a um `aria-describedBy` atributo (NPR-33071).
-* Acessibilidade aos formulários adaptáveis: Os campos marcados como obrigatórios em um formulário adaptável não têm o atributo obrigatório definido como True no schema de acessibilidade ARIA (NPR-33070).
+* Forms adaptável: Quando um usuário edita um formulário adaptável, a opção Fluxo de trabalho [!UICONTROL do] Start disponível no menu Informações [!UICONTROL da] página não funciona (NPR-33004).
+* Forms adaptável: O usuário não pode salvar um formulário adaptável com mais de um anexo (NPR-32997).
+* Forms adaptável: A alteração do layout do painel em um formulário adaptável resulta em um erro (CQ-4293880).
+* Forms adaptável: Uma nova linha de uma string em um dicionário de formulários adaptáveis adiciona `&#xa;` caracteres ao dicionário (NPR-33266).
+* Acessibilidade adaptativa ao Forms: Quando um usuário pré-visualização um formulário adaptável como um formulário HTML, o campo Assinatura [!UICONTROL em] script não consegue manter o foco da guia (NPR-33159).
+* Acessibilidade adaptativa ao Forms: As mensagens de erro exibidas ao enviar um formulário adaptável não vinculam a um `aria-describedBy` atributo (NPR-33071).
+* Acessibilidade adaptativa ao Forms: Os campos marcados como obrigatórios em um formulário adaptável não têm o atributo obrigatório definido como True no schema de acessibilidade ARIA (NPR-33070).
 * Serviço PDFG: Quando um usuário converte um arquivo de texto em PDF, os caracteres japoneses não são renderizados corretamente (NPR-33238).
 * Serviço PDFG: `CreatePDF` falha ao converter um arquivo PDF em formato OCR PDF (NPR-32994).
 * Serviço PDFG: Falha na conversão de PDF para a 200ª instância de um [!DNL OpenOffice] documento (NPR-32766).
@@ -327,14 +327,14 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 **Requisitos de configuração**
 
 * AEM 6.5.5.0 requires AEM 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
-* O download do service pack está disponível na Distribuição [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software da Adobe.
+* O download do service pack está disponível na Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 * Em uma implantação com MongoDB e várias instâncias, instale o AEM 6.5.5.0 em uma das instâncias do autor usando o Gerenciador de pacotes.
-* Antes de instalar, faça um instantâneo ou um backup atualizado da sua instância do AEM.
+* Antes de instalar, faça um instantâneo ou um backup atualizado da instância AEM.
 * Reinicie a instância antes da instalação. Embora isso seja necessário apenas quando a instância ainda está no modo de atualização (e esse é o caso quando a instância foi atualizada de uma versão anterior), é recomendável se a instância estava em execução por um período mais longo.
 
 >[!NOTE]
 >
->A Adobe não recomenda remover ou desinstalar o pacote Adobe Experience Manager 6.5.5.0.
+>O Adobe não recomenda remover ou desinstalar o pacote do Adobe Experience Manager 6.5.5.0.
 
 ### Instale o Service Pack {#install-service-pack}
 
@@ -348,7 +348,7 @@ Execute as seguintes etapas para instalar o Service Pack em uma instância exist
 
 >[!NOTE]
 >
->Às vezes, a caixa de diálogo na interface do usuário do Package Manager sai durante a instalação do service pack. A Adobe recomenda que você aguarde a estabilização dos registros de erros antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de ter certeza de que as instalações foram bem-sucedidas. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
+>Às vezes, a caixa de diálogo na interface do usuário do Package Manager sai durante a instalação do service pack. O Adobe recomenda que você aguarde a estabilização dos registros de erros antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de ter certeza de que as instalações foram bem-sucedidas. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
 
 **Instalação automática**
 
@@ -372,17 +372,17 @@ B. Use a API [HTTP do Gerenciador](https://docs.adobe.com/content/docs/pt/crx/2-
 
 Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte os requisitos [](/help/sites-deploying/technical-requirements.md)técnicos.
 
-### Instale o pacote de complementos Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
+### Instalar o pacote suplementar do Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Pule se você não estiver usando o AEM Forms. Correções no Adobe Experience Manager Forms são entregues por meio de um pacote complementar separado.
+>Pule se você não estiver usando o AEM Forms. Correções no Adobe Experience Manager Forms são fornecidas por meio de um pacote complementar separado.
 
 1. Verifique se você instalou o Adobe Experience Manager Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
-### Instalar formulários Adobe Experience Manager no JEE {#install-aem-forms-jee-installer}
+### Instalar o Adobe Experience Manager Forms no JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
@@ -414,8 +414,8 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | A tela Aceitação **[!UICONTROL de]** AEM cloud services está obsoleta. Com a integração do AEM e do Público alvo atualizada no AEM 6.5 para suportar a API do Target Standard, que usa autenticação por meio do Adobe IMS e E/S, e a função crescente do Adobe Launch para instrumentar páginas do AEM para análise e personalização, o assistente de opção de participação se tornou funcionalmente irrelevante. | Configure as conexões do sistema, a autenticação do Adobe IMS e as integrações de E/S da Adobe por meio dos respectivos AEM cloud services. |
-| Conectores | O Adobe JCR Connector para Microsoft SharePoint 2010 e Microsoft SharePoint 2013 foi descontinuado para o AEM 6.5. | N/A |
+| Integrações | A tela Aceitação **[!UICONTROL de]** AEM cloud services está obsoleta. Com a integração de AEM e Público alvo atualizada no AEM 6.5 para suportar a API do Target Standard, que usa autenticação via Adobe IMS e E/S, e a função crescente de inicialização do Adobe para instrumentar AEM páginas para análise e personalização, o assistente de aceitação se tornou funcionalmente irrelevante. | Configure as conexões do sistema, a autenticação Adobe IMS e as integrações de E/S de Adobe através dos respectivos AEM cloud services. |
+| Conectores | O Conector JCR do Adobe para Microsoft SharePoint 2010 e Microsoft SharePoint 2013 está obsoleto para o AEM 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
 
@@ -423,9 +423,9 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 
 * Se uma pasta na hierarquia for renomeada [!DNL Experience Manager Assets] e a pasta aninhada que contém um ativo for publicada, o título da pasta não será atualizado [!DNL Brand Portal][!DNL Brand Portal] até que a pasta raiz seja publicada novamente.
 
-* Ao instalar o AEM 6.5.5.0, a atualização da [!DNL Chrome] versão 83 está causando um problema na criação de pacotes. Use outros navegadores disponíveis, como [!DNL Internet Explorer] e [!DNL Firefox], ou outras opções de instalação de pacote padrão do AEM para resolver o problema. O problema é resolvido após a instalação do AEM 6.5.5.0.
+* Ao instalar o AEM 6.5.5.0, a atualização da [!DNL Chrome] versão 83 está causando um problema na criação de pacotes. Use outros navegadores disponíveis, como [!DNL Internet Explorer] e [!DNL Firefox], ou outras opções de instalação de pacote padrão AEM para resolver o problema. O problema é resolvido após a instalação do AEM 6.5.5.0.
 
-* Não é possível enviar um email para o servidor SMTP remoto usando o remetente de email padrão do AEM, pois ele permite apenas a comunicação usando TLS v1.2. Remova o pacote `javax.mail:mail:1.5.0-b01` de `system/console` e atualize os pacotes para resolver o problema.
+* Não é possível enviar um email para o servidor SMTP remoto usando o remetente de email padrão AEM, pois ele permite apenas a comunicação usando TLS v1.2. Remova o pacote `javax.mail:mail:1.5.0-b01` de `system/console` e atualize os pacotes para resolver o problema.
 
 * Quando um usuário seleciona configurar um campo pela primeira vez em um formulário adaptável, a opção para salvar uma configuração não é exibida no Navegador de propriedades. Selecionar para configurar outro campo do formulário adaptável no mesmo editor resolve o problema.
 
@@ -456,7 +456,7 @@ Estes sites estão disponíveis somente para clientes. Se você for um cliente e
 >[!MORELIKETHIS]
 >
 >* [Notas de versão do AEM 6.5](/help/release-notes/release-notes.md)
->* [Página do produto AEM](https://www.adobe.com/solutions/web-experience-management.html)
+>* [Página do produto AEM](https://www.adobe.com/br/marketing/experience-manager.html)
 >* [Documentação do AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
 >* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
