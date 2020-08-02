@@ -1,8 +1,8 @@
 ---
-title: Desenvolvimento com a SAP Commerce Cloud
-seo-title: Desenvolvimento com a SAP Commerce Cloud
-description: A estrutura de integração da SAP Commerce Cloud inclui uma camada de integração com uma API
-seo-description: A estrutura de integração da SAP Commerce Cloud inclui uma camada de integração com uma API
+title: Desenvolvimento com o SAP Commerce Cloud
+seo-title: Desenvolvimento com o SAP Commerce Cloud
+description: A estrutura de integração do Commerce Cloud SAP inclui uma camada de integração com uma API
+seo-description: A estrutura de integração do Commerce Cloud SAP inclui uma camada de integração com uma API
 uuid: a780dd17-027a-4a61-af8f-3e2f600524c7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Desenvolvimento com a SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
+# Desenvolvimento com o SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -26,8 +26,8 @@ ht-degree: 0%
 
 A estrutura de integração inclui uma camada de integração com uma API. Isso permite que você:
 
-* conecte um sistema de eCommerce e extraia dados de produto no AEM
-* crie componentes do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico
+* conecte um sistema de eCommerce e extraia dados de produtos para AEM
+* criar componentes AEM para recursos de comércio, independentemente do mecanismo de eCommerce específico
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
 
@@ -35,23 +35,23 @@ A estrutura de integração inclui uma camada de integração com uma API. Isso 
 >
 >[A documentação](/help/sites-developing/ecommerce.md#api-documentation) da API também está disponível.
 
-Vários componentes prontos para uso do AEM são fornecidos para usar a camada de integração. Atualmente, eles são:
+Vários componentes predefinidos AEM são fornecidos para usar a camada de integração. Atualmente, eles são:
 
 * um componente de exibição de produto
 * um carrinho de compras
 * check-out
 
-Para pesquisar, é fornecido um gancho de integração que permite usar a pesquisa do AEM, a pesquisa do sistema de eCommerce, uma pesquisa de terceiros (como Search&amp;Promote) ou uma combinação desses itens.
+Para pesquisar, é fornecido um gancho de integração que permite usar a pesquisa AEM, a pesquisa do sistema de comércio eletrônico, uma pesquisa de terceiros (como Search&amp;Promote) ou uma combinação desses itens.
 
 ## Seleção do mecanismo de comércio eletrônico {#ecommerce-engine-selection}
 
-A estrutura eCommerce pode ser usada com qualquer solução de eCommerce, o mecanismo usado precisa ser identificável pelo AEM:
+A estrutura eCommerce pode ser usada com qualquer solução de eCommerce, o mecanismo usado precisa ser identificável por AEM:
 
 * Os mecanismos de comércio eletrônico são serviços OSGi que oferecem suporte à `CommerceService` interface
 
    * Os mecanismos podem ser diferenciados por uma propriedade `commerceProvider` de serviço
 
-* Suporte ao AEM `Resource.adaptTo()` para `CommerceService` e `Product`
+* AEM suporte `Resource.adaptTo()` para `CommerceService` e `Product`
 
    * A `adaptTo` implementação procura uma `cq:commerceProvider` propriedade na hierarquia do recurso:
 
@@ -68,7 +68,7 @@ A estrutura eCommerce pode ser usada com qualquer solução de eCommerce, o meca
 
 Consulte os seguintes exemplos abaixo:
 
-| `cq:commerceProvider = geometrixx` | em uma instalação padrão do AEM é necessária uma implementação específica; por exemplo, o exemplo geometrixx, que inclui extensões mínimas para a API genérica |
+| `cq:commerceProvider = geometrixx` | numa instalação normal AEM é necessária uma implementação específica; por exemplo, o exemplo geometrixx, que inclui extensões mínimas para a API genérica |
 |---|---|
 | `cq:commerceProvider = hybris` | implementação do hybris |
 
@@ -96,7 +96,7 @@ Consulte os seguintes exemplos abaixo:
 
 >[!NOTE]
 >
->Usando o CRXDE Lite, você pode ver como isso é tratado no componente do produto para a implementação de híbridos:
+>Usando o CRXDE Lite, você pode ver como isso é tratado no componente do produto para a implementação de hybris:
 >
 >`/apps/geometrixx-outdoors/components/hybris/product/product.jsp`
 
@@ -112,11 +112,7 @@ Para desenvolver para Hybris 4 é necessário o seguinte:
 
    `-P hybris4`
 
-   Ele baixa a distribuição pré-configurada do Hybris 4 e a incorpora ao pacote:
-
-   ```
-   cq-commerce-hybris-server
-   ```
+   Ele baixa a distribuição pré-configurada do Hybris 4 e a incorpora ao pacote `cq-commerce-hybris-server`.
 
 * No gerenciador de configuração OSGi:
 
@@ -153,26 +149,27 @@ hybris usa uma sessão do usuário para armazenar informações como o carrinho 
 
 ### Sincronização e publicação do produto {#product-synchronization-and-publishing}
 
-Os dados do produto que são mantidos em híbridos precisam estar disponíveis no AEM. Foi implementado o seguinte mecanismo:
+Os dados do produto que são mantidos em híbridos precisam estar disponíveis em AEM. Foi implementado o seguinte mecanismo:
 
 * Uma carga inicial de IDs é fornecida por híbridos como um feed. Pode haver atualizações neste feed.
-* os híbridos fornecerão informações de atualização por meio de um feed (que o AEM pesquisa).
-* Quando o AEM estiver usando dados do produto, ele enviará solicitações de volta para os híbridos para os dados atuais (solicitação de obtenção condicional usando a última data modificada).
+* os híbridos fornecerão informações de atualização por meio de um feed (que AEM pesquisas).
+* Quando o AEM estiver usando dados de produto, ele enviará solicitações de volta aos híbridos para os dados atuais (solicitação de obtenção condicional usando a última data modificada).
 * Em hiperbilidades é possível especificar o conteúdo do feed de forma declarativa.
-* Mapear a estrutura do feed para o modelo de conteúdo do AEM acontece no adaptador do feed no lado do AEM.
+* O mapeamento da estrutura do feed para o modelo de conteúdo AEM acontece no adaptador do feed no lado AEM.
 
 ![chlimage_1-12](assets/chlimage_1-12a.png)
 
-* O importador (b) é usado para a configuração inicial da estrutura de árvore de páginas no AEM para catálogos.
-* As alterações no catálogo em híbridos são indicadas ao AEM por meio de um feed, propagando-se então para o AEM (b)
+* O importador (b) é usado para a configuração inicial da estrutura em árvore de páginas em AEM para catálogos.
+* As alterações de catálogo em híbridos são indicadas para AEM por meio de um feed, propagando-se então para AEM (b)
 
    * Produto adicionado/excluído/alterado em relação à versão do catálogo.
    * Produto aprovado.
 
-* A extensão hybris fornece um importador de pesquisas (esquema &quot;hybris&quot;), que pode ser configurado para importar alterações para o AEM em um intervalo especificado (por exemplo, a cada 24 horas, onde o intervalo é especificado em segundos):
+* A extensão hybris fornece um importador de pesquisas (esquema &quot;hybris&quot;), que pode ser configurado para importar alterações para AEM em um intervalo especificado (por exemplo, a cada 24 horas, onde o intervalo é especificado em segundos):
 
    * 
-      ```
+
+      ```js
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -185,7 +182,7 @@ Os dados do produto que são mantidos em híbridos precisam estar disponíveis n
 
 * A configuração do catálogo no AEM reconhece as versões do catálogo **Staged** e **Online** .
 
-* A sincronização de produtos entre versões de catálogo exigirá uma (des-)ativação da página AEM correspondente (a, c)
+* A sincronização de produtos entre versões de catálogo exigirá uma (des)ativação da página de AEM correspondente (a, c)
 
    * A adição de um produto a uma versão de catálogo **on-line** requer a ativação da página do produto.
    * A remoção de um produto requer a desativação.
@@ -197,7 +194,7 @@ Os dados do produto que são mantidos em híbridos precisam estar disponíveis n
 
 * As páginas de produtos ativadas precisam acessar a versão **on-line** (d) dos dados do produto.
 
-* A instância de publicação do AEM exige acesso a híbridos para a recuperação do produto e dados personalizados (d).
+* A instância de publicação de AEM exige acesso a híbridos para recuperação de produtos e dados personalizados (d).
 
 ### Arquitetura {#architecture}
 
@@ -209,7 +206,7 @@ No entanto, nem todas as propriedades são eixos variantes. As variações tamb�
 
 Cada produto e/ou variante é representado por um recurso e, portanto, mapeia 1:1 para um nó de repositório. É corolário que um produto e/ou variante específicos possam ser identificados exclusivamente pelo seu caminho.
 
-O produto/recurso variante nem sempre contém os dados reais do produto. Pode ser uma representação dos dados realmente mantidos em outro sistema (como híbridos). Por exemplo, descrições de produtos, preços etc. não são armazenados no AEM, mas recuperados em tempo real do mecanismo de comércio eletrônico.
+O produto/recurso variante nem sempre contém os dados reais do produto. Pode ser uma representação dos dados realmente mantidos em outro sistema (como híbridos). Por exemplo, descrições de produtos, preços etc. não são armazenados em AEM, mas recuperados em tempo real do mecanismo de comércio eletrônico.
 
 Qualquer recurso de produto pode ser representado por um `Product API`. A maioria das chamadas na API do produto é específica para variações (embora as variações possam herdar valores compartilhados de um ancestral), mas também há chamadas que listas o conjunto de variações ( `getVariantAxes()`, `getVariants()`, etc.).
 
@@ -220,7 +217,7 @@ Qualquer recurso de produto pode ser representado por um `Product API`. A maiori
 >* hybris o define para a implementação de hybris
 >
 >
-Embora os produtos (em geral) possam ter vários eixos variantes, o componente de produto pronto para uso trata apenas de dois:
+While products (in general) can have many variant axes, the out-of-the-box product component only handles two:
 >
 >1. `size`
    >
@@ -234,31 +231,31 @@ Esta variante adicional é selecionada através da `variationAxis` propriedade d
 
 Em geral:
 
-* os dados do produto estão localizados em `/etc`
+* product data is located under `/etc`
 
 * e referências de produto em `/content`.
 
 Deve haver um mapa 1:1 entre variações do produto e nós de dados do produto.
 
-As referências de produto também devem ter um nó para cada variação apresentada - mas não há necessidade de apresentar todas as variações. Por exemplo, se um produto tem variações S, M, L, os dados do produto podem ser:
+As referências de produto também devem ter um nó para cada variação apresentada - mas não há necessidade de apresentar todas as variações. Por exemplo, se um produto tem variações S, M, L, os dados do produto podem ser.
 
 ```shell
 etc
-  commerce
-    products
-      shirt
-        shirt-s
-        shirt-m
-        shirt-l
+|──commerce
+|  |──products
+|     |──shirt
+|       |──shirt-s
+|       |──shirt-m
+|       |──shirt-l
 ```
 
-Enquanto um catálogo &quot;Grande e Alto&quot; pode ter apenas:
+Enquanto um catálogo &quot;Grande e Alto&quot; pode ter apenas.
 
 ```shell
 content
-  big-and-tall
-    shirt
-      shirt-l
+|──big-and-tall
+|  |──shirt
+|     |──shirt-l
 ```
 
 Por fim, não há necessidade de usar os dados do produto. É possível colocar todos os dados do produto sob as referências no catálogo; mas não é possível ter vários catálogos sem duplicar todos os dados do produto.
@@ -336,27 +333,27 @@ public class AxisFilter implements VariantFilter {
 }
 ```
 
-* **Mecanismo geral de Armazenamento**
+* **General Storage Mechanism**
 
-   * Os nós do produto não são:não estruturados.
+   * Product nodes are nt:unstructured.
    * Um nó de produto pode ser:
 
-      * Uma referência, com os dados do produto armazenados em outro lugar:
+      * A reference, with the product data stored elsewhere:
 
-         * As referências do produto contêm uma `productData` propriedade, que aponta para os dados do produto (normalmente em `/etc/commerce/products`).
-         * Os dados do produto são hierárquicos; os atributos do produto são herdados dos ancestrais de um nó de dados do produto.
-         * As referências de produtos também podem conter propriedades locais, que substituem as especificadas nos dados de seus produtos.
-      * Um produto em si:
+         * Product references contain a `productData` property, which points to the product data (typically under `/etc/commerce/products`).
+         * The product data is hierarchical; product attributes are inherited from a product data node&#39;s ancestors.
+         * Product references can also contain local properties, which override those specified in their product data.
+      * A product itself:
 
-         * Sem uma `productData` propriedade.
-         * Um nó de produto que contém todas as propriedades localmente (e não contém uma propriedade productData) herda os atributos de produto diretamente de seus próprios ancestrais.
+         * Without a `productData` property.
+         * A product node which holds all properties locally (and does not contain a productData property) inherits product attributes directly from its own ancestors.
 
 
-* **Estrutura do produto genérico AEM**
+* **AEM-generic Product Structure**
 
-   * Cada variante deve ter seu próprio nó de folha.
-   * A interface do produto representa produtos e variantes, mas o nó do repositório relacionado é específico sobre o qual ele é.
-   * O nó product descreve os atributos do produto e os eixos variantes.
+   * Each variant must have its own leaf node.
+   * The product interface represents both products and variants, but the related repository node is specific about which it is.
+   * The product node describes the product attributes and variant axes.
 
 #### Exemplo {#example-1}
 
@@ -401,23 +398,23 @@ public class AxisFilter implements VariantFilter {
         - price = 18.00
 ```
 
-#### Arquitetura do carrinho de compras {#architecture-of-the-shopping-cart}
+#### Architecture of the Shopping Cart {#architecture-of-the-shopping-cart}
 
 **Componentes**
 
-* O carrinho de compras é de propriedade da `CommerceSession:`
+* The shopping cart is owned by the `CommerceSession:`
 
-   * O `CommerceSession` executa add/remove/etc.
-   * O `CommerceSession` também realiza os vários cálculos no carrinho. &quot;
+   * The `CommerceSession` performs add/remove/etc.
+   * The `CommerceSession` also performs the various calculations on the cart. ``
 
 * Embora não esteja diretamente relacionado ao carrinho, o usuário também `CommerceSession` deve fornecer informações de preços do catálogo (já que ele possui preços)
 
-   * O preço pode ter vários modificadores:
+   * Pricing might have several modifiers:
 
-      * Descontos de quantidade.
-      * Moedas diferentes.
-      * IVA e sem IVA.
-   * Os modificadores são completamente abertos com a seguinte interface:
+      * Quantity discounts.
+      * Different currencies.
+      * VAT-liable and VAT-free.
+   * The modifiers are completely open-ended with the following interface:
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
@@ -428,50 +425,50 @@ public class AxisFilter implements VariantFilter {
 * Armazenamento
 
    * No caso hybris, o servidor hybris é proprietário do carrinho.
-   * Nos carrinhos de caso genéricos do AEM são armazenados no [ClientContext](/help/sites-administering/client-context.md).
+   * No AEM-genérico, os cartões de memória são armazenados no [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalização**
 
-* A personalização deve sempre ser conduzida pelo [ClientContext](/help/sites-administering/client-context.md).
-* Um ClientContext `/version/` do carrinho é criado em todos os casos:
+* Personalization should always be driven through the [ClientContext](/help/sites-administering/client-context.md).
+* A ClientContext `/version/` of the cart is created in all cases:
 
-   * Os produtos devem ser adicionados utilizando o `CommerceSession.addCartEntry()` método.
+   * Products should be added by using the `CommerceSession.addCartEntry()` method.
 
-* A seguir está um exemplo de informações do carrinho no carrinho ClientContext:
+* The following illustrates an example of cart information in the ClientContext cart:
 
 ![chlimage_1-13](assets/chlimage_1-13a.png)
 
-#### Arquitetura do Check-out {#architecture-of-checkout}
+#### Architecture of Checkout {#architecture-of-checkout}
 
-**Dados do carrinho e pedido**
+**Cart and Order Data**
 
-Os três elementos `CommerceSession` são os seguintes:
+The `CommerceSession` owns the three elements:
 
-1. Conteúdo do carrinho
-1. Preços
-1. Os detalhes do pedido
+1. Cart contents
+1. Pricing
+1. The order details
 
 1. **Conteúdo do carrinho**
 
-   O schema de conteúdo do carrinho é corrigido pela API:
+   The cart contents schema is fixed by the API:
 
    ```java
-       public void addCartEntry(Product product, int quantity);
-       public void modifyCartEntry(int entryNumber, int quantity);
-       public void deleteCartEntry(int entryNumber);
+   public void addCartEntry(Product product, int quantity);
+   public void modifyCartEntry(int entryNumber, int quantity);
+   public void deleteCartEntry(int entryNumber);
    ```
 
-1. **Preços**
+1. **Pricing**
 
    O schema de preços também é corrigido pela API:
 
    ```java
-       public String getCartPreTaxPrice();
-       public String getCartTax();
-       public String getCartTotalPrice();
-       public String getOrderShipping();
-       public String getOrderTotalTax();
-       public String getOrderTotalPrice();
+   public String getCartPreTaxPrice();
+   public String getCartTax();
+   public String getCartTotalPrice();
+   public String getOrderShipping();
+   public String getOrderTotalTax();
+   public String getOrderTotalPrice();
    ```
 
 1. **Detalhes do pedido**
@@ -479,19 +476,19 @@ Os três elementos `CommerceSession` são os seguintes:
    No entanto, os detalhes do pedido *não* são corrigidos pela API:
 
    ```java
-       public void updateOrderDetails(Map<String, String> orderDetails);
-       public Map<String, String> getOrderDetails();
-       public void submitOrder();
+   public void updateOrderDetails(Map<String, String> orderDetails);
+   public Map<String, String> getOrderDetails();
+   public void submitOrder();
    ```
 
-**Cálculos de Envio**
+**Shipping Calculations**
 
-* Os formulários de pedido geralmente precisam apresentar várias opções de envio (e preços).
-* Os preços podem se basear em itens e detalhes do pedido, como peso e/ou endereço do delivery.
-* O `CommerceSession` tem acesso a todas as dependências, portanto, pode ser tratado de maneira semelhante ao preço do produto:
+* Order forms often need to present multiple shipping options (and prices).
+* The prices might be based on items and details of the order, such as weight and/or delivery address.
+* The `CommerceSession` has access to all the dependencies, so it can be treated in a similar manner as product pricing:
 
    * O `CommerceSession` proprietário é o preço de remessa.
-   * Pode recuperar/atualizar detalhes do delivery usando `updateOrder(Map<String, Object> delta)`
+   * Can retrieve/update delivery details by using `updateOrder(Map<String, Object> delta)`
 
 >[!NOTE]
 >
@@ -499,35 +496,35 @@ Os três elementos `CommerceSession` são os seguintes:
 >
 >`yourProject/commerce/components/shippingpicker`:
 >
->* Basicamente, isso pode ser uma cópia de `foundation/components/form/radio`, mas com retornos para o `CommerceSession` para:
+>* Essentially this could be a copy of `foundation/components/form/radio`, but with callbacks to the `CommerceSession` for:
    >
    >
 * Verificando se o método está disponível
->* Adicionar informações sobre preços
->* Para permitir que os compradores atualizem a página de pedido no AEM (incluindo o superconjunto de métodos de envio e o texto que os descreve), ao mesmo tempo que têm o controle para expor as `CommerceSession` informações relevantes.
+>* Adding pricing information
+>* To enable shoppers to update the order page in AEM (including the superset of shipping methods and the text describing them), while still having the control to expose the relevant `CommerceSession` information.
 
 
 **Processamento de pagamento**
 
-* A `CommerceSession` conta também com a conexão de processamento de pagamentos.
+* The `CommerceSession` also owns the payment processing connection.
 * Os implementadores devem adicionar convites específicos (ao serviço de processamento de pagamentos por eles escolhido) à `CommerceSession` implementação.
 
 **Preenchimento do pedido**
 
-* O `CommerceSession` também possui a conexão de execução.
-* Os implementadores terão de adicionar convites específicos (ao serviço de processamento de pagamentos por eles escolhido) à `CommerceSession` implementação.
+* The `CommerceSession` also owns the fulfillment connection.
+* Implementors will need to add specific calls (to their chosen payment processing service) to the `CommerceSession` implementation.
 
-### Definição de pesquisa {#search-definition}
+### Search Definition {#search-definition}
 
-Seguindo o modelo padrão de API de serviço, o projeto de eCommerce fornece um conjunto de APIs relacionadas à pesquisa que podem ser implementadas por mecanismos de comércio individuais.
+Following the standard service API model, the eCommerce project provides a set of search-related APIs that can be implemented by individual commerce engines.
 
 >[!NOTE]
 >
->Atualmente, somente o mecanismo hybris implementa a API de pesquisa prontamente.
+>Currently, only the hybris engine implements the search API out-of-the-box.
 >
 >No entanto, a API de pesquisa é genérica e pode ser implementada por cada CommerceService individualmente.
 
-O projeto eCommerce contém um componente de pesquisa padrão, localizado em:
+The eCommerce project contains a default search component, located in:
 
 `/libs/commerce/components/search`
 
@@ -535,42 +532,42 @@ O projeto eCommerce contém um componente de pesquisa padrão, localizado em:
 
 Isso usa a API de pesquisa para query do mecanismo de comércio selecionado (consulte Seleção [do mecanismo de](#ecommerce-engine-selection)comércio eletrônico):
 
-#### API de pesquisa {#search-api}
+#### Search API {#search-api}
 
-Há várias classes genéricas/auxiliares fornecidas pelo projeto principal:
+There are several generic / helper classes provided by the core project:
 
 1. `CommerceQuery`
 
-   É usado para descrever um query de pesquisa (contém informações sobre o texto do query, a página atual, o tamanho da página, a classificação e as facetas selecionadas). Todos os serviços de comércio eletrônico que implementam a API de pesquisa receberão instâncias desta classe para realizar sua pesquisa. Um objeto `CommerceQuery` pode ser instanciado a partir de um objeto de solicitação ( `HttpServletRequest`).
+   Is used to describe a search query (contains information about the query text, current page, page size, sort and selected facets). All eCommerce services that implement the search API will receive instances of this class in order to perform their search. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   É uma classe de utilitário que fornece um método estático - `toParams` - que é usado para gerar strings de `GET` parâmetro de uma lista de aspectos e um valor alternado. Isso é útil na interface do usuário, onde é necessário exibir um hiperlink para cada valor de cada aspecto, de modo que quando o usuário clica no hiperlink o respectivo valor é alternado (isto é, se foi selecionado, ele é removido do query, caso contrário é adicionado). Isso cuida de toda a lógica de lidar com facetas múltiplas/de valor único, valores sobrepostos etc.
+   É uma classe de utilitário que fornece um método estático - `toParams` - que é usado para gerar strings de `GET` parâmetro de uma lista de aspectos e um valor alternado. Isso é útil na interface do usuário, onde é necessário exibir um hiperlink para cada valor de cada aspecto, de modo que quando o usuário clica no hiperlink o respectivo valor é alternado (isto é, se foi selecionado, ele é removido do query, caso contrário é adicionado). This takes care of all the logic of handling multiple/single-valued facets, overriding values, etc.
 
-O ponto de entrada da API de pesquisa é o `CommerceService#search` método que retorna um `CommerceResult` objeto. Consulte a Documentação [da](/help/sites-developing/ecommerce.md#api-documentation) API para obter mais informações sobre este tópico.
+O ponto de entrada da API de pesquisa é o `CommerceService#search` método que retorna um `CommerceResult` objeto. See the [API Documentation](/help/sites-developing/ecommerce.md#api-documentation) for more information on this topic.
 
-### Integração de usuários {#user-integration}
+### User Integration {#user-integration}
 
-A integração é fornecida entre o AEM e vários sistemas de eCommerce. Isso requer uma estratégia para sincronizar compradores entre os vários sistemas, de modo que o código específico do AEM tenha que saber somente sobre o AEM e vice-versa:
+Integration is provided between AEM and various eCommerce systems. This requires a strategy for synchronizing shoppers between the various systems so that AEM-specific code only has to know about AEM and vice-versa:
 
 * Autenticação
 
-   Presume-se que o AEM seja o *único* front-end da Web e, portanto, realize *toda* a autenticação.
+   AEM is presumed to be the *only* web front-end and therefore performs *all* authentication.
 
 * Contas em Hybris
 
-   O AEM cria uma conta correspondente (secundária) em híbridos para cada comprador. O nome de usuário desta conta é igual ao nome de usuário do AEM. Uma senha criptograficamente aleatória é gerada automaticamente e armazenada (criptografada) no AEM.
+   AEM cria uma conta correspondente (secundária) em híbridos para cada comprador. The username of this account is the same as the AEM username. Uma senha criptograficamente aleatória é gerada automaticamente e armazenada (criptografada) no AEM.
 
 #### Usuários pré-existentes {#pre-existing-users}
 
-Um front-end do AEM pode ser posicionado na frente de uma implementação de hybris existente. Além disso, um mecanismo hybris pode ser adicionado a uma instalação existente do AEM. Para fazer isso, os sistemas devem ser capazes de lidar com os usuários existentes em qualquer sistema:
+Um front-end AEM pode ser posicionado na frente de uma implementação de hybris existente. Além disso, é possível adicionar um mecanismo hybris a uma instalação AEM existente. Para fazer isso, os sistemas devem ser capazes de lidar com os usuários existentes em qualquer sistema:
 
-* AEM -> hybris
+* AEM -> híbridos
 
-   * Ao fazer logon em híbridos, se o usuário do AEM ainda não existir:
+   * Ao fazer logon em híbridos, se o usuário AEM ainda não existir:
 
       * criar um novo usuário hybris com uma senha aleatória criptografada
-      * armazene o nome de usuário do hybris no diretório de usuário do AEM
+      * armazene o nome de usuário hybris no diretório de usuário do AEM
    * Consulte: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
 
@@ -579,7 +576,7 @@ Um front-end do AEM pode ser posicionado na frente de uma implementação de hyb
    * Ao fazer logon no AEM, se o sistema reconhecer o usuário:
 
       * tentativa de fazer logon em hiperlinks com o nome de usuário/pwd fornecido
-      * se bem-sucedido, crie o novo usuário no AEM com a mesma senha (o sal específico do AEM resultará em hash específico do AEM)
+      * se bem-sucedido, crie o novo usuário no AEM com a mesma senha (sal específico para AEM resultará em hash específico para AEM)
    * O algoritmo acima é implementado em um Sling `AuthenticationInfoPostProcessor`
 
       * Consulte: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
@@ -591,7 +588,7 @@ Para aproveitar a funcionalidade existente, seu manipulador de importação pers
 
 * tem que implementar a `ImportHandler` interface
 
-* pode estender a variável `DefaultImportHandler`
+* pode estender o `DefaultImportHandler`.
 
 ```java
 /**
@@ -601,66 +598,66 @@ Para aproveitar a funcionalidade existente, seu manipulador de importação pers
  */
 public interface ImportHandler {
 
-    /**
-     * Not used.
-     */
-    public void createTaxonomie(ImporterContext ctx);
+  /**
+  * Not used.
+  */
+  public void createTaxonomie(ImporterContext ctx);
 
-    /**
-     * Creates a catalog with the given name.
-     * @param ctx   The importer context
-     * @param name  The catalog's name
-     * @return Path of created catalog
-     */
-    public String createCatalog(ImporterContext ctx, String name) throws Exception;
+  /**
+  * Creates a catalog with the given name.
+  * @param ctx   The importer context
+  * @param name  The catalog's name
+  * @return Path of created catalog
+  */
+  public String createCatalog(ImporterContext ctx, String name) throws Exception;
 
-    /**
-     * Creates a product from the given values.
-     * @param ctx                The importer context
-     * @param values             The product's properties
-     * @param parentCategoryPath The containing category's path
-     * @return Path of created product
-     */
-    public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a product from the given values.
+  * @param ctx                The importer context
+  * @param values             The product's properties
+  * @param parentCategoryPath The containing category's path
+  * @return Path of created product
+  */
+  public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 
-    /**
-     * Creates a variant product from the given values.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The base product's path
-     * @return Path of created product
-     */
-    public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
+  /**
+  * Creates a variant product from the given values.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The base product's path
+  * @return Path of created product
+  */
+  public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
 
-    /**
-     * Creates an asset for a product. This is usually a product
-     * image.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The product's path
-     * @return Path of created asset
-     */
-    public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
+  /**
+  * Creates an asset for a product. This is usually a product
+  * image.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The product's path
+  * @return Path of created asset
+  */
+  public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
 
-    /**
-     * Creates a category from the given values.
-     * @param ctx           The importer context
-     * @param values        The category's properties
-     * @param parentPath    Path of parent category or base path of import in case of root category
-     * @return Path of created category
-     */
-    public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a category from the given values.
+  * @param ctx           The importer context
+  * @param values        The category's properties
+  * @param parentPath    Path of parent category or base path of import in case of root category
+  * @return Path of created category
+  */
+  public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 }
 ```
 
-Para que seu manipulador personalizado seja reconhecido pelo importador, ele deve especificar a `service.ranking`propriedade com um valor superior a 0; por exemplo:
+Para que seu manipulador personalizado seja reconhecido pelo importador, ele deve especificar a `service.ranking`propriedade com um valor superior a 0; por exemplo.
 
 ```java
 @Component
 @Service
 @Property(name = "service.ranking", value = 100)
-public class MyImportHandler extends DefaultImportHandler {
-    ...
+public class MyImportHandler extends DefaultImportHandler
+{
+...
 }
 ```
-
