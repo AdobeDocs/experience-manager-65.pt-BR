@@ -1,13 +1,8 @@
 ---
 title: Notas de versão do AEM Sites
 description: Notas de versão específicas do Adobe Experience Manager 6.5 Sites.
-uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
-docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 71%
@@ -15,7 +10,7 @@ ht-degree: 71%
 ---
 
 
-# Notas de versão do AEM Sites{#aem-sites-release-notes}
+# Notas de versão do AEM Sites {#aem-sites-release-notes}
 
 Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
@@ -27,10 +22,10 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
    * operador &quot;in&quot; para strings, arrays e objetos:
 
-      ```
+      ```html
       ${'a' in 'abc’}
-       ${100 in myArray}
-       ${'a' in myObject}
+      ${100 in myArray}
+      ${'a' in myObject}
       ```
 
    * Declarações de variáveis com dados definidos automaticamente:
@@ -41,10 +36,10 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
    * Identificadores para desvinculação automática de dados:
 
-      ```
+      ```html
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-       text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-       </div>
+      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+      </div>
       ```
 
    * Suporte para números negativos
@@ -61,7 +56,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
 >[!CAUTION]
 >
->O AEM inclui a versão 1.12.4 da biblioteca do jQuery para fornecer compatibilidade máxima com o código personalizado existente. As modificações foram feitas pela Adobe para solucionar problemas de segurança conhecidos.
+>AEM inclui a versão 1.12.4 da biblioteca do jQuery para fornecer compatibilidade máxima com o código personalizado existente. As modificações foram feitas pela Adobe para solucionar problemas de segurança conhecidos.
 
 ## Administração de site {#site-administration}
 
@@ -123,7 +118,7 @@ Consulte o seguinte para aprimoramentos do AEM Sites 6.5 em detalhes:
 
 ## AEM e Adobe Analytics {#aem-amp-adobe-analytics}
 
-* `s_code.js` H.27.5 está incluído. A Adobe recomenda que você mude a implementação para `AppMeasurement.js`
+* `s_code.js` H.27.5 está incluído. O Adobe recomenda que você mude a implementação para `AppMeasurement.js`
 * `AppMeasurement.js` v1.8.0 está incluído. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
 
 ## AEM e comércio {#aem-commerce}
