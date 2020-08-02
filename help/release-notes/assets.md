@@ -1,18 +1,18 @@
 ---
-title: Notas de versão do Adobe Experience Manager Assets
-description: Novos recursos e melhorias do Adobe Experience Manager 6.5 Assets.
+title: Notas de versão [!DNL Adobe Experience Manager Assets] 6.5.
+description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 40%
+source-wordcount: '901'
+ht-degree: 39%
 
 ---
 
 
-# Notas de versão do Adobe Experience Manager Assets {#aem-assets-release-notes}
+# [!DNL Adobe Experience Manager Assets] notas de versão {#aem-assets-release-notes}
 
-Estes são os principais recursos e destaques da versão dos ativos Adobe Experience Manager 6.5.
+Here are the key features and highlights of the [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] release.
 
 ## Integration with [!DNL Adobe Creative Cloud] and creative workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -24,7 +24,7 @@ Read on to know the specific capabilities and integrations of [!DNL Experience M
 
 [!DNL Adobe Asset Link] fortalece a colaboração entre criativos e profissionais de marketing no processo de criação de conteúdo. Creatives can access content stored in [!DNL Experience Manager Assets], without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] apps.
 
-[!DNL Adobe Asset Link] faz parte da oferta da [Creative Cloud para empresas](https://www.adobe.com/br/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] faz parte da [Creative Cloud para oferta corporativa](https://www.adobe.com/br/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html).
 
 ![Pesquisar ativos no Adobe Photoshop](assets/asset_search_photoshop.png)
 
@@ -36,7 +36,7 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Pré-visualização da imagem e da licença do Adobe Stock nos Ativos da Experience Manager](assets/stock_image_preview_license_options.png)
+![Imagem e licença da Pré-visualização Adobe Stock de dentro dos Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
 *Figura: imagem de Pré-visualização[!DNL Adobe Stock]e licença de dentro[!DNL Experience Manager Assets].*
 
@@ -70,11 +70,11 @@ Em grandes empresa, a infraestrutura necessária para criar sites pode ser distr
 
 For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
-### Suporte para vídeo 360 {#video-support}
+### 360 video support {#video-support}
 
 Manage your 360-video files directly in [!DNL Experience Manager] using the cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. Para obter mais informações, consulte [Usar vídeo 360](/help/assets/360-video.md).
 
-### Miniaturas de vídeo personalizadas {#custom-video-thumbnails}
+### Custom video thumbnails {#custom-video-thumbnails}
 
 Agora é possível personalizar as miniaturas dos ativos de vídeo usando quadros do próprio vídeo ou outro conteúdo armazenado no DAM. Para obter instruções adicionais, consulte [Sobre miniaturas de vídeo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -82,7 +82,7 @@ Agora é possível personalizar as miniaturas dos ativos de vídeo usando quadro
 
 [!DNL Dynamic Media] os visualizadores agora suportam recursos de acessibilidade aprimorados, como suporte a Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Notas de versão dos visualizadores do Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
-## Aprimoramento da experiência de pesquisa {#search-experience-enhancement}
+## Aprimoramento da experiência de pesquisa {#experience-enhancement-for-searching}
 
 [!DNL Experience Manager] A partir de 6.5, os profissionais de marketing podem descobrir os ativos desejados mais rapidamente a partir da página de resultados da pesquisa. Os aspectos de pesquisa são atualizados com o número de ativos mesmo antes de aplicar o filtro de pesquisa. Ver a contagem esperada contra o filtro ajuda os usuários a navegar pelos resultados da pesquisa com eficiência. Para obter mais informações, consulte [Pesquisar ativos no Experience Manager](../assets/search-assets.md).
 
