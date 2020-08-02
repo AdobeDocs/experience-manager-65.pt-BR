@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
 workflow-type: tm+mt
-source-wordcount: '9216'
+source-wordcount: '9240'
 ht-degree: 4%
 
 ---
@@ -524,9 +524,9 @@ Para obter mais informações sobre como gerar e exibir subativos, consulte [ger
 
 ## Delete assets {#deleting-assets}
 
-Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo.
+Para excluir ativos, um usuário requer permissões de exclusão em `dam/asset`. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
 
-Além disso, desative o botão forçar exclusão usando uma sobreposição para impedir que os usuários excluam ativos referenciados e deixem links quebrados.
+Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Para impedir que os usuários excluam ativos referenciados e deixem links quebrados, desative a opção forçar exclusão usando uma sobreposição, .
 
 1. Vá ao local do(s) ativo(s) que deseja excluir.
 
@@ -542,11 +542,9 @@ Além disso, desative o botão forçar exclusão usando uma sobreposição para 
 
    >[!NOTE]
    >
-   >Para excluir ativos, um usuário requer permissões de exclusão em `dam/asset`. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
+   >* Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Além disso, desative o botão forçar exclusão usando uma sobreposição para impedir que os usuários excluam ativos referenciados e deixem links quebrados.
+   >* É possível excluir uma *pasta* que contenha arquivos de ativos com check-out. Antes de excluir uma pasta, verifique se nenhum ativo digital foi retirado pelos usuários.
 
-   >[!NOTE]
-   >
-   >Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Além disso, desative o botão forçar exclusão usando uma sobreposição para impedir que os usuários excluam ativos referenciados e deixem links quebrados.
 
 ## Baixar ativos {#downloading-assets}
 
