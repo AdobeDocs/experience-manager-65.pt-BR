@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 Na instância AEM Author, na navegação global:
 
-* Selecione **[!UICONTROL Comunidades] > **[!UICONTROL Sites]**.
+* Selecione **[!UICONTROL Comunidades]** > **[!UICONTROL Sites]**.
 * Selecione **[!UICONTROL engajar pasta]** para abri-la.
 * Selecione o cartão para o site **[!UICONTROL Introdução ao tutorial]** em inglês.
 
@@ -34,11 +34,11 @@ Na instância AEM Author, na navegação global:
 
 O resultado é alcançar o console [](/help/communities/groups.md)Grupos:
 
-![chlimage_1-91](assets/chlimage_1-91.png)
+![create-group](assets/create-group.png)
 
 A função groups será exibida como uma pasta na qual as instâncias de grupos são criadas. Selecione a pasta Grupos para abri-la. O grupo criado na publicação está visível.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![create-new-group](assets/create-new-group.png)
 
 ## Criar grupo de artes principais {#create-main-arts-group}
 
@@ -94,11 +94,11 @@ A `groups` pasta agora contém dois grupos (atualize a página).
 
 Antes de criar grupos aninhados dentro do `arts` grupo, passe o mouse sobre o `arts` cartão e selecione o ícone de publicação para publicá-lo.
 
-![componente de ligação](assets/liking-component.png)
+![site de publicação](assets/publish-site.png)
 
 Aguarde a confirmação de que o grupo foi publicado.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![publicado em grupo](assets/group-published.png)
 
 O `arts` grupo também deve conter uma `groups` pasta, mas que esteja vazia e na qual novos grupos possam ser criados. Navegue até a pasta do grupo artístico e crie 3 grupos aninhados, cada um com uma configuração de associação diferente:
 
@@ -133,11 +133,11 @@ Para navegar até os grupos aninhados no console Sites das Comunidades:
 * Selecionar cartão **[!UICONTROL artístico]**
 * Selecionar pasta **[!UICONTROL Grupos]**
 
-![gosto de configuração](assets/configure-liking.png)
+![create-new-group2](assets/create-new-group2.png)
 
 ## Grupos de publicação {#publishing-groups}
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![site de publicação](assets/publish-site.png)
 
 Depois de publicar o site da comunidade principal:
 
@@ -149,7 +149,7 @@ Depois de publicar o site da comunidade principal:
 
    * Todos os grupos devem ser publicados de cima para baixo.
 
-![chlimage_1-97](assets/chlimage_1-97.png)
+![publicado em grupo](assets/group-published.png)
 
 ## Experiência de publicação {#experience-on-publish}
 
