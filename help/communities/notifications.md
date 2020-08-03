@@ -1,8 +1,8 @@
 ---
 title: Notificações de comunidades
 seo-title: Notificações de comunidades
-description: O AEM Communities tem notificações que exibem eventos de interesse para o membro da comunidade conectado
-seo-description: O AEM Communities tem notificações que exibem eventos de interesse para o membro da comunidade conectado
+description: AEM Communities têm notificações que exibem eventos de interesse para o membro da comunidade conectado
+seo-description: AEM Communities têm notificações que exibem eventos de interesse para o membro da comunidade conectado
 uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 1%
 
 ---
 
@@ -68,7 +71,7 @@ Os componentes devem ser configurados para permitir o seguinte. Os recursos que 
 
 ## Notificações do seguinte {#notifications-from-following}
 
-![chlimage_1-243](assets/chlimage_1-243.png)
+![notificações](assets/notifications.png)
 
 O botão **[!UICONTROL Seguir]** fornece um meio de seguir entradas como atividades, subscrições e/ou notificações. Cada vez que o botão **[!UICONTROL Seguir]** é selecionado, é possível ativar ou desativar uma seleção. A `Email Subscriptions` seleção só está presente quando configurada.
 
@@ -91,17 +94,17 @@ Ao selecionar o link Configurações de notificação na página Notificações,
 
 O canal da Web está sempre ativado.
 
-![chlimage_1-244](assets/chlimage_1-244.png)
+![notifications14](assets/notifications1.png)
 
 O canal de e-mail, que depende da [configuração correta do e-mail](/help/communities/email.md), fornece as mesmas configurações do canal da Web.
 
 O canal de email está desativado por padrão.
 
-![chlimage_1-245](assets/chlimage_1-245.png)
+![notifications2](assets/notifications2.png)
 
 Pode ser ativado por um membro, mas ainda depende do email que está sendo configurado.
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![notifications3](assets/notifications3.png)
 
 ## Visualizar notificações {#viewing-notifications}
 
@@ -111,13 +114,13 @@ Um [assistente criou um site](/help/communities/sites-console.md) da comunidade 
 
 Ao visitar o site publicado, a seleção do `Notifications` link exibirá todas as notificações do membro.
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![notifications4](assets/notifications4.png)
 
 ### Notificações por email {#email-notifications}
 
 Quando o canal de email é ativado, o membro recebe um email que contém um link para o conteúdo da Web.
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![notifications5](assets/notifications5.png)
 
 ## Personalizar notificações por email {#customize-email-notifications}
 
