@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +27,7 @@ Sobreponha o sistema de comentários com uma versão personalizada copiando o n�
 >O conteúdo da pasta /libs nunca é editado porque qualquer reinstalação ou atualização pode excluir ou substituir a pasta /libs enquanto o conteúdo da pasta /apps é deixado inalterado.
 
 
-Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor, comece criando um caminho na pasta /apps que é idêntico ao caminho para os componentes sobrepostos na pasta /libs.
+Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor, comece criando um caminho na pasta /apps, que é idêntico ao caminho para os componentes sobrepostos na pasta /libs.
 
 O caminho que está sendo duplicado é:
 
@@ -56,7 +59,7 @@ Alguns nós no caminho são pastas e alguns são componentes.
       * Clique em **[!UICONTROL Avançar]** até **[!UICONTROL OK]**
 1. Selecionar `comments` nó
 
-   * **[!UICONTROL Criar > Criar componente...]**
+   * **[!UICONTROL Criar]** > **[!UICONTROL Criar componente...]**
 
       * Digite o rótulo: `comment`
       * Enter Title: `Comment`
@@ -79,6 +82,7 @@ Alguns nós no caminho são pastas e alguns são componentes.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
@@ -95,5 +99,5 @@ A própria sobreposição `Type`(propriedade `sling:resourceType`) deve ser uma 
 1. Selecione o verde `[+] Add`
    * Selecione **[!UICONTROL Salvar tudo]**
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![create-nodes](assets/create-nodes.png)
 
