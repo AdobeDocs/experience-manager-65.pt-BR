@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
+source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Ao chegar ao site publicado pela primeira vez, o visitante do site normalmente n
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![autorpublished](assets/authorpublished.png)
 
 ## Visitante Anônimo do Site {#anonymous-site-visitor}
 
@@ -82,7 +82,7 @@ Essa experiência supõe que [Aaron McDonald](/help/communities/tutorials.md#dem
 
 No canto superior direito, selecione `Log in`e assine com o nome de usuário (aaron.mcdonald@mailinator.com) e a senha (senha). Observe a capacidade de fazer logon com credenciais do Twitter ou Facebook.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![login](assets/login.png)
 
 Depois de fazer logon como membro da comunidade registrado, observe os seguintes itens de menu para clicar e explorar seu site da comunidade:
 
@@ -95,11 +95,11 @@ Depois de fazer logon como membro da comunidade registrado, observe os seguintes
 * [A opção Notificações](/help/communities/notifications.md) direciona você para a seção Notificações, onde você pode visualização seus eventos de interesse e editar configurações de notificação.
 * [A administração](/help/communities/published-site.md#moderationlink) o direciona para a Página de moderação de AEM Communities, se você tiver privilégios de moderação.
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![administrador](assets/adminscreen.png)
 
 Observe que a página Calendário é o home page porque o Modelo de site de referência escolhido incluiu a função Calendário primeiro, seguido pela função Fluxo de Atividade, função Fórum e assim por diante. Essa estrutura é visível no console Modelo [de](/help/communities/sites.md#edit-site-template) site ou ao modificar as propriedades do site no ambiente do autor:
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![sitecemplate](assets/sitetemplate.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Os membros podem publicar um novo tópico ou seguir um tópico.
 
 Os visitantes do site podem visualização as publicações e classificá-las de várias maneiras.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![forumlink](assets/forumlink.png)
 
 ### Link de grupos {#groups-link}
 
@@ -130,7 +130,7 @@ Este é um exemplo onde um grupo é criado no ambiente publish.
 
 Grupos também podem ser criados no ambiente do autor e gerenciados no site da comunidade no ambiente do autor (console[Grupos da](/help/communities/groups.md)comunidade). A experiência de [criação de grupos no autor](/help/communities/nested-groups.md) é a seguinte neste tutorial.
 
-![classic-ui](assets/classic-ui.png)
+![grupo](assets/grouplink.png)
 
 Criar um grupo de referência:
 
@@ -148,11 +148,11 @@ Criar um grupo de referência:
 
 1. Selecionar **Criar grupo**
 
-![classic-ui-website](assets/classic-ui-website.png)
+   ![criategroup](assets/creategroup.png)
 
 Após a criação do novo grupo, **selecione o novo grupo** Esportes para criar dois grupos (aninhados) dentro dele. Como uma estrutura de site não pode começar com a função de grupos, após abrir o grupo Esportes, é necessário selecionar o link Grupos:
 
-![classic-ui-create-page](assets/classic-ui-create-page.png)
+![grouplink1](assets/grouplink1.png)
 
 O segundo conjunto de links, começando com `Blog`, pertence ao grupo atualmente selecionado, o `Sports` grupo. Ao selecionar o link Esportes, é possível aninhar dois grupos dentro do grupo Esportes `Groups` .
 
@@ -180,7 +180,7 @@ Depois que ambos os grupos forem criados, selecione o grupo Beisebol, um grupo a
 
 Os links do grupo são exibidos abaixo dos links do site principal e os resultados são exibidos na seguinte exibição:
 
-![classic-ui-website-page](assets/classic-ui-website-page.png)
+![grouplink2](assets/grouplink2.png)
 
 Autor - com privilégios administrativos, navegue até o console [Grupos de](/help/communities/members.md) comunidades e adicione Weston McCall ao `Community Engage Gymnastics <uid> Members` grupo.
 
@@ -195,7 +195,7 @@ Somente o grupo Beisebol estará visível.
 
 Faça logon como Weston McCall (weston.mccall@dodgit.com / senha) e navegue até o mesmo local. Note que a Weston é capaz de `Join` abrir o `Baseball` grupo e ou `enter or Leave` o `Gymnastics` grupo privado.
 
-![classic-ui-repository-visualização](assets/classic-ui-repository-view.png)
+![grouplink3](assets/grouplink3.png)
 
 ### Link da página da Web {#web-page-link}
 
@@ -203,7 +203,7 @@ Visualização a página da Web básica incluída no site selecionando o link P�
 
 Por exemplo, vá para a instância do **autor** , abra a `engage` pasta no console [Sites](/help/communities/sites-console.md)das Comunidades e selecione o ícone **Abrir site** para entrar no modo de edição do autor. Em seguida, selecione o modo de pré-visualização para selecionar o `Web Page` link e, em seguida, selecione o modo de edição para adicionar componentes de Título e Texto. Por último, publique novamente apenas a página ou o site inteiro.
 
-![classic-ui-repository-path](assets/classic-ui-repository-path.png)
+![webpagelink](assets/webpagelink.png)
 
 ### Link de moderação {#moderationlink}
 
@@ -211,7 +211,7 @@ Quando o membro da comunidade tiver privilégios de moderação, o link Moderaç
 
 Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos consoles não está acessível da navegação global no ambiente publish. [](/help/communities/moderate-ugc.md)
 
-![chlimage_1-42](assets/chlimage_1-42.png)
+![moderationlink](assets/moderationlink.png)
 
 ## Autoinscrição {#self-registration}
 
@@ -220,7 +220,9 @@ Depois de fazer logoff, é possível criar um novo registro de usuário.
 * Selecionar `Log In`
 * Selecionar `Sign up for a new account`
 
-![chlimage_1-43](assets/chlimage_1-43.png) ![chlimage_1-44](assets/chlimage_1-44.png)
+![registro](assets/registration.png)
+
+![inscrição](assets/signup.png)
 
 Por padrão, o endereço de email é a ID de login. Se essa opção estiver desmarcada, o visitante poderá inserir sua própria ID de login (nome de usuário). O nome de usuário deve ser exclusivo no ambiente publish.
 
@@ -228,9 +230,9 @@ Depois de especificar o nome, o email e a senha do usuário, a seleção `Sign U
 
 Depois de conectado, a primeira página apresentada é a `Profile` página deles, que podem personalizar.
 
-![chlimage_1-45](assets/chlimage_1-45.png)
+![o perfil do visitante](assets/profile.png)
 
 Se o membro se esquecer da ID de login, será possível recuperar se está usando seu endereço de email.
 
-![chlimage_1-46](assets/chlimage_1-46.png)
+![forgotusername](assets/forgotusername.png)
 
