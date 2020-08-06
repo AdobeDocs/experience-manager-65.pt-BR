@@ -12,7 +12,7 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 0%
@@ -28,10 +28,9 @@ ht-degree: 0%
 
 Ao atualizar seus ambientes AEM, é necessário considerar as diferenças de abordagem entre a atualização de ambientes do autor ou a publicação de ambientes para minimizar o tempo de inatividade para seus autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia AEM atualmente em execução em uma versão do AEM 6.x. Como o processo difere entre os níveis de autor e publicação, bem como implantações baseadas em Mongo e TarMK, cada camada e microkernel foi listado em uma seção separada. Ao executar sua implantação, recomendamos primeiro atualizar seu ambiente do autor, determinar o sucesso e, em seguida, prosseguir para os ambientes de publicação.
 
->[!IMPORTANT]
+<!-->>[!IMPORTANT]
+>O tempo de inatividade durante a atualização pode ser significativamente reduzido pela indexação do repositório antes da execução da atualização. Para obter mais informações, consulte [Uso da reindexação offline para reduzir o tempo de inatividade durante uma atualização](/help/sites-deploying/upgrade-offline-reindexing.md)—>
 >
->O tempo de inatividade durante a atualização pode ser significativamente reduzido pela indexação do repositório antes da execução da atualização. Para obter mais informações, consulte [Uso da reindexação offline para reduzir o tempo de inatividade durante uma atualização](/help/sites-deploying/upgrade-offline-reindexing.md)
-
 ## Camada do autor TarMK {#tarmk-author-tier}
 
 ### Iniciando topologia {#starting-topology}
