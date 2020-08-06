@@ -3,9 +3,9 @@ title: Migre ativos [!DNL Adobe Experience Manager Assets] em massa.
 description: Descreve como inserir ativos [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1799'
 ht-degree: 8%
 
 ---
@@ -17,11 +17,11 @@ Ao migrar ativos para [!DNL Adobe Experience Manager], há várias etapas a sere
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de executar qualquer uma das etapas desta metodologia, reveja e implemente as orientações nas dicas [de ajuste de desempenho do](performance-tuning-guidelines.md)Assets. Muitas das etapas, como a configuração de trabalhos simultâneos máximos, melhoram consideravelmente a estabilidade e o desempenho do servidor com carga. Outras etapas, como a configuração de um File Data Store, são muito mais difíceis de executar depois que o sistema é carregado com ativos.
+Antes de realmente executar qualquer uma das etapas desta metodologia, reveja e implemente as orientações em dicas [de ajuste de desempenho do](performance-tuning-guidelines.md)Assets. Muitas das etapas, como a configuração de trabalhos simultâneos máximos, melhoram consideravelmente a estabilidade e o desempenho do servidor com carga. Outras etapas, como a configuração de um File Data Store, são muito mais difíceis de executar depois que o sistema é carregado com ativos.
 
 >[!NOTE]
 >
->As seguintes ferramentas de migração de ativos não fazem parte da Adobe e não são suportadas por ela [!DNL Experience Manager] :
+>As seguintes ferramentas de migração de ativos não fazem parte do Adobe e não são suportadas por ele: [!DNL Experience Manager]
 >
 >* Criador de tags de ferramentas AEM ACS
 >* Importador de ativos CSV das ferramentas AEM ACS
@@ -62,7 +62,7 @@ Há duas abordagens para carregar os ativos no sistema: uma abordagem baseada em
 
 #### Enviar por HTTP {#pushing-through-http}
 
-A equipe de Serviços gerenciados da Adobe usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro em uma [!DNL Experience Manager] implantação. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
+A equipe do Adobe Managed Services usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. O Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro em uma [!DNL Experience Manager] implantação. Em vez do Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
 
 Há duas desvantagens principais ao usar a abordagem de passar por https:
 
@@ -73,13 +73,13 @@ A outra abordagem para assimilar ativos é extrair ativos do sistema de arquivos
 
 #### Buscar no sistema de arquivos local {#pulling-from-the-local-filesystem}
 
-O Importador [de ativos CSV das ferramentas AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do Gerenciador de ativos do Experience Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivos de rede ou por meio de uma unidade externa.
+O Importador [de ativos CSV das ferramentas](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do Gerenciador de ativos do Experience Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivos de rede ou por meio de uma unidade externa.
 
 Como os ativos não precisam ser transmitidos através de uma rede, o desempenho geral melhora drasticamente e esse método é geralmente considerado a maneira mais eficiente de carregar ativos no repositório. Além disso, como a ferramenta oferece suporte à ingestão de metadados, você pode importar todos os ativos e metadados em uma única etapa, em vez de criar uma segunda etapa para aplicar os metadados por meio de uma ferramenta separada.
 
 ### Processar execuções {#processing-renditions}
 
-Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM para extrair metadados e gerar execuções. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM para atender às suas necessidades. O fluxo de trabalho predefinido contém várias etapas que podem não ser necessárias para você, como geração ou integração do Scene7 PTIFF [!DNL InDesign Server] .
+Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM para extrair metadados e gerar execuções. Antes de executar esta etapa, é necessário duplicado e modificar o fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM para atender às suas necessidades. O fluxo de trabalho predefinido contém várias etapas que podem não ser necessárias para você, como geração ou integração do Scene7 PTIFF. [!DNL InDesign Server]
 
 Depois de configurar o fluxo de trabalho de acordo com suas necessidades, você tem duas opções para executá-lo:
 
@@ -98,7 +98,7 @@ Para qualquer uma dessas abordagens, a advertência é que os ativos na instânc
 
 >[!NOTE]
 >
->A Adobe não mantém nem suporta Grabbit.
+>O Adobe não mantém nem suporta Grabbit.
 
 ### Clonar publicação {#cloning-publish}
 
