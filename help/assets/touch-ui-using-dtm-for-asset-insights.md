@@ -1,9 +1,9 @@
 ---
 title: Ativar insights de ativos por meio do DTM
-description: Saiba como usar o Gerenciamento dinâmico de tags da Adobe (DTM) para ativar o Asset Insights.
+description: Saiba como usar o Gerenciamento dinâmico de tags do Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 1%
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # Ativar insights de ativos por meio do DTM {#enable-asset-insights-through-dtm}
 
-O Gerenciamento dinâmico de tags da Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. É fornecido gratuitamente para clientes da Adobe Analytics.
+O Gerenciamento dinâmico de tags do Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. Ele é fornecido gratuitamente aos clientes da Adobe Analytics.
 
-Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, a Adobe recomenda usar o DTM para inserir tags do Asset Insights.
+Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, o Adobe recomenda que você use o DTM para inserir tags do Asset Insights.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
    >[!NOTE]
    >
    >* `AppMeasurement.js` for removido. Ela deve estar disponível por meio da ferramenta Adobe Analytics do DTM.
-   >* A chamada para `assetAnalytics.dispatcher.init()` é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar de carregar.
+   >* A chamada para `assetAnalytics.dispatcher.init()` é removida. Espera-se que a função seja chamada assim que a ferramenta Adobe Analytics do DTM terminar o carregamento.
    >* Dependendo de onde o Asset Insights Page Tracker estiver hospedado (por exemplo, Experience Manager, CDN e assim por diante), a origem da fonte do script pode exigir alterações.
    >* Para o Controlador de página hospedado no Experience Manager, a origem deve apontar para uma instância de publicação usando o nome de host da instância do dispatcher.
 
@@ -96,7 +96,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
              "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
              "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
              "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
-             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, please include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
+             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
        sObj.doPlugins = assetAnalytics.core.updateContextData;
@@ -112,7 +112,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
    * O código chama `assetAnalytics.dispatcher.init()` depois de verificar se `_satellite.getToolsByType('sc')[0].getS()` está inicializado e `assetAnalytics,dispatcher.init` está disponível. Portanto, você pode ignorar a adição na etapa 11.
    * Conforme indicado nos comentários no código do Controlador de página do Insights (**[!UICONTROL Ferramentas > Ativos > Controlador]** de página do Insights), quando o Controlador de página não cria um `AppMeasurement` objeto, os três primeiros argumentos (RSID, Servidor de rastreamento e Namespace do Visitante) são irrelevantes. Strings vazias são passadas para realçar isso.\
       Os argumentos restantes correspondem ao que está configurado na página Configuração de Insights (**[!UICONTROL Ferramentas > Ativos > Configuração]** de Insights).
-   * O objeto AppMeasurement é recuperado consultando-se `satelliteLib` para todos os mecanismos disponíveis do SiteCatalyst. Se várias tags estiverem configuradas, altere o índice do seletor de matriz adequadamente. As entradas no storage são ordenadas de acordo com as ferramentas do SiteCatalyst disponíveis na interface do DTM.
+   * O objeto AppMeasurement é recuperado consultando todos os mecanismos de SiteCatalyst disponíveis `satelliteLib` . Se várias tags estiverem configuradas, altere o índice do seletor de matriz adequadamente. As entradas no storage são ordenadas de acordo com as ferramentas de SiteCatalyst disponíveis na interface do DTM.
 
 1. Salve e feche a janela Editor de código e salve as alterações na configuração da ferramenta.
 1. Na guia **[!UICONTROL Aprovações]** , aprove ambas as aprovações pendentes. A tag do DTM está pronta para ser inserida na sua página da Web. Para obter detalhes sobre como inserir tags do DTM em páginas da Web, consulte [Integrar o DTM em modelos](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/)de página personalizados.
