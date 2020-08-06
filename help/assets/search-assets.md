@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8f8134d6c4fcc0ef54f9cc8298936c5c7d746c09
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
 workflow-type: tm+mt
 source-wordcount: '5860'
 ht-degree: 5%
@@ -26,14 +26,14 @@ ht-degree: 5%
 | [Compreender os resultados e o comportamento da pesquisa](#searchbehavior) | [Modificar aspectos de pesquisa](#searchfacets) | [Atualizações de metadados em massa](#metadataupdates) |
 | [Classificação de pesquisa e aumento](#searchrank) | [extração de texto](#extracttextupload) | [Coleções inteligentes](#collections) |
 | [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Previsões personalizadas](#custompredicates) | [Entenda os resultados inesperados e solucione problemas](#troubleshoot-unexpected-search-results-and-issues) |
-| [Pesquise de outras soluções e aplicativos](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[aplicativo de desktop Experience Manager](#desktopapp)</li><li>[Imagens do Adobe Stock](#adobestock)</li><li>[Ativos Dynamic Media](#dynamicmedia)</li></ul> |  |  |
-| [Seletor de ativos](#assetselector) |  |  |
+| [Pesquise de outras soluções e aplicativos](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[aplicativo de desktop Experience Manager](#desktopapp)</li><li>[Imagens do Adobe Stock](#adobestock)</li><li>[Ativos do Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Seletor de ativos](#assetpicker) |  |  |
 | [Limitações](#limitations) e [dicas](#tips) |  |  |
 | [Exemplos ilustrados](#samples) |  |  |
 
 Procure ativos usando o campo Omnisearch na parte superior da interface da [!DNL Experience Manager] Web. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** em [!DNL Experience Manager], clique em pesquisar na barra superior, digite a palavra-chave de pesquisa e pressione return. Como alternativa, use o atalho de palavra-chave / (barra) para abrir o campo Omnisearch. `Location:Assets` é pré-selecionada para limitar as pesquisas aos ativos DAM. [!DNL Experience Manager] fornece sugestões enquanto seu start digita uma palavra-chave de pesquisa.
 
-Use o painel **[!UICONTROL Filtros]** para restringir sua pesquisa filtrando os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento do Adobe Stock. Seus administradores podem personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando aspectos de pesquisa. O filtro Tipo [!UICONTROL de] arquivo no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível estarão parcialmente marcadas.
+Use o painel **[!UICONTROL Filtros]** para restringir sua pesquisa filtrando os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento da Adobe Stock. Seus administradores podem personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando aspectos de pesquisa. O filtro Tipo [!UICONTROL de] arquivo no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível estarão parcialmente marcadas.
 
 [!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa por coleções e a pesquisa por ativos dentro de uma coleção. Consulte Coleções [de pesquisa](/help/assets/managing-collections-touch-ui.md).
 
@@ -146,9 +146,9 @@ Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usu
 
 ### Imagens do Adobe Stock {#adobestock}
 
-Na interface do [!DNL Experience Manager] usuário, os usuários podem pesquisar ativos [do](/help/assets/aem-assets-adobe-stock.md) Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` na barra Omnisearch. Você também pode usar o painel Filtros para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock.
+Na interface do [!DNL Experience Manager] usuário, os usuários podem pesquisar ativos [da](/help/assets/aem-assets-adobe-stock.md) Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` na barra Omnisearch. Você também pode usar o painel Filtros para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo Adobe Stock.
 
-### Ativos Dynamic Media {#dmassets}
+### Ativos do Dynamic Media {#dmassets}
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
 
@@ -162,8 +162,8 @@ Você pode pesquisar ativos com base nos valores exatos de campos de metadados e
 | Criador | criador:John |
 | Local | local:NA |
 | Descrição | descrição:&quot;Imagem de amostra&quot; |
-| Ferramenta Criador | criatortool:&quot;Adobe Photoshop CC 2020&quot; |
-| Proprietário de direitos autorais | copyrights towner:&quot;Adobe Systems&quot; |
+| Ferramenta Criador | creatortool: &quot;Adobe Photoshop CC 2020&quot; |
+| Proprietário de direitos autorais | copyrights towner: &quot;Adobe Systems&quot; |
 | Contribuinte | colaborador:John |
 | Termos de Uso  | usageterms:&quot;CopyRights Reserved&quot; |
 | Criado | criado:AAAA-MM-DDTHH |
@@ -172,7 +172,7 @@ Você pode pesquisar ativos com base nos valores exatos de campos de metadados e
 | Hora de desligar | offtime:YYYY-MM-DTHH |
 | Intervalo de tempo(expira em dateontime,offtime) | campo de faceta: limite inferior...upperbound |
 | Caminho | /content/dam/&lt;nome da pasta> |
-| Título do PDF | pdftitle: &quot;Documento da Adobe&quot; |
+| Título do PDF | pdftitle: &quot;Adobe Documento&quot; |
 | Assunto | assunto: &quot;Formação&quot; |
 | Tags | tags:&quot;Localização E Viagem&quot; |
 | Tipo | type:&quot;image\png&quot; |
@@ -192,15 +192,15 @@ Estes são alguns exemplos de formatos de pesquisa para query complexos:
 * Para exibir ativos com valores de propriedade começando com uma string específica (por exemplo: o título é Scott Reynolds): `title:Scott*`
 * Para exibir ativos com valores de propriedade que terminam com uma string específica (por exemplo: o título é Scott Reynolds): `title:*Reynolds`
 * Para exibir ativos com um valor de propriedade que contenha uma string específica (por exemplo: título = Sala de reuniões de Basileia): `title:*Meeting*`
-* Para exibir ativos que contêm uma determinada string e têm um valor de propriedade específico (por exemplo: procure a string Adobe em ativos com título=João da Silva): `*Adobe* title:"John Doe"`
+* Para exibir ativos que contêm uma determinada string e têm um valor de propriedade específico (por exemplo: procure por Adobe de string em ativos com título=João da Silva): `*Adobe* title:"John Doe"`
 
 ## Pesquisar ativos de outras [!DNL Experience Manager] ofertas ou interfaces {#beyondomnisearch}
 
 [!DNL Adobe Experience Manager] conecta o repositório DAM a várias outras [!DNL Experience Manager] soluções para fornecer acesso mais rápido aos ativos digitais e dinamizar os workflows criativos. Qualquer start de descoberta de ativos com navegação ou pesquisa. O comportamento de pesquisa permanece basicamente o mesmo em várias superfícies e soluções. Alguns métodos de pesquisa mudam conforme a audiência do público alvo, os casos de uso e a interface do usuário variam nas [!DNL Experience Manager] soluções. Os métodos específicos estão documentados para as soluções individuais nos links abaixo. As dicas e comportamentos universalmente aplicáveis estão documentados neste artigo.
 
-### Pesquisar ativos no painel Adobe Asset Link {#aal}
+### Pesquisar ativos no painel Link de ativos do Adobe {#aal}
 
-Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado em [!DNL Experience Manager Assets], sem sair dos aplicativos compatíveis da Adobe Creative Cloud. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. O Link de ativo também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição da pesquisa visual são capacitados pelos algoritmos de aprendizado de máquina do Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
+Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado em [!DNL Experience Manager Assets], sem sair dos aplicativos Adobe Creative Cloud suportados. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. O Link de ativo também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição da pesquisa visual são capacitados por algoritmos de aprendizado de máquina da Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Link de ativos do Adobe.
 
 ### Pesquisar ativos no aplicativo [!DNL Experience Manager] de desktop {#desktopapp}
 
@@ -212,9 +212,9 @@ Usuários e comerciantes de linha de negócios usam o Brand Portal para comparti
 
 ### Pesquisar [!DNL Adobe Stock] imagens {#adobestock-1}
 
-Na interface do [!DNL Experience Manager] usuário, os usuários podem pesquisar ativos do Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch. Você também pode usar o painel **[!UICONTROL Filtros]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock. Consulte [Gerenciar imagens do Adobe Stock no Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Na interface do [!DNL Experience Manager] usuário, os usuários podem pesquisar ativos da Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch. Você também pode usar o painel **[!UICONTROL Filtros]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo Adobe Stock. Consulte [Gerenciar imagens do Adobe Stock no Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Pesquisar ativos da Dynamic Media {#dynamicmedia}
+### Pesquisar ativos do Dynamic Media {#dynamicmedia}
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação. Ao criar páginas da Web, os autores podem pesquisar por conjuntos no Localizador de conteúdo. Há um filtro para conjuntos disponível em um menu pop-up.
 
@@ -226,7 +226,7 @@ Os autores podem usar o Localizador de conteúdo para pesquisar no repositório 
 
 [!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa por coleções e a pesquisa por ativos dentro de uma coleção. Consulte Coleções [de pesquisa](/help/assets/managing-collections-touch-ui.md).
 
-## Seletor de ativos {#assetselector}
+## Seletor de ativos {#assetpicker}
 
 O Seletor de ativos permite que você pesquise, filtre e navegue pelos ativos DAM de uma maneira especial. O Seletor de ativos está disponível em `https://[aem-server]:[port]/aem/assetpicker.html`. Você pode buscar os metadados dos ativos selecionados usando essa funcionalidade. Você pode iniciá-lo com parâmetros de solicitação suportados, como tipo de ativo (imagem, vídeo, texto) e modo de seleção (seleções únicas ou múltiplas). Esses parâmetros definem o contexto do Seletor de ativos para uma instância de pesquisa específica e permanecem intactos durante toda a seleção.
 
@@ -278,7 +278,7 @@ A funcionalidade de pesquisa pode ter limitações de desempenho nos seguintes c
 * A pesquisa de texto completo oferece suporte a operadores como - e ^. Para pesquisar essas letras como literais de string, coloque a expressão de pesquisa entre aspas duplos. Por exemplo, use &quot;Notebook - Beauty&quot; em vez de Notebook - Beauty.
 * Se os resultados da pesquisa forem demais, limite o [escopo da pesquisa](#scope) para zero nos ativos desejados. Funciona melhor quando você tem alguma ideia de como procurar melhor os ativos desejados, por exemplo, tipo de arquivo específico, local específico, metadados específicos e assim por diante.
 
-* **Marcação**: As tags ajudam a categorizar ativos que podem ser pesquisados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. [!DNL Experience Manager] Métodos do oferta para marcar automaticamente ativos usando os serviços artificialmente inteligentes do Adobe Sensei que continuam a melhorar a identificação dos ativos com o uso e o treinamento. Quando você pesquisa ativos, as tags inteligentes são fatoradas se o recurso estiver ativado em sua conta. Funciona juntamente com a funcionalidade de pesquisa incorporada. Consulte Comportamento [da](#searchbehavior)pesquisa. Para otimizar a ordem na qual os resultados da pesquisa são exibidos, é possível [aumentar a classificação](#searchrank) de pesquisa de alguns ativos selecionados.
+* **Marcação**: As tags ajudam a categorizar ativos que podem ser pesquisados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. [!DNL Experience Manager] Métodos do oferta para marcar automaticamente ativos usando serviços inteligentes e artificialmente Adobe Sensei que continuam melhorando ao marcar seus ativos com uso e treinamento. Quando você pesquisa ativos, as tags inteligentes são fatoradas se o recurso estiver ativado em sua conta. Funciona juntamente com a funcionalidade de pesquisa incorporada. Consulte Comportamento [da](#searchbehavior)pesquisa. Para otimizar a ordem na qual os resultados da pesquisa são exibidos, é possível [aumentar a classificação](#searchrank) de pesquisa de alguns ativos selecionados.
 
 * **Indexação**: Somente metadados indexados e ativos são retornados nos resultados da pesquisa. Para melhor cobertura e desempenho, assegure a indexação correta e siga as práticas recomendadas. Consulte [indexação](#searchindex).
 
@@ -405,7 +405,7 @@ Você pode fazer o seguinte com os ativos que pesquisou no Experience Manager:
 
 Classifique os resultados da pesquisa para descobrir os ativos necessários mais rapidamente. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
-Na visualização da lista, você pode classificar os resultados da pesquisa da mesma forma que pode classificar os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimensões, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Finalizado.
+Na visualização da lista, você pode classificar os resultados da pesquisa da mesma forma que pode classificar os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Finalizado.
 
 Para obter as limitações da funcionalidade de classificação, consulte [limitações](#limitations).
 
