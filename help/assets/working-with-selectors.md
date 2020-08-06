@@ -1,5 +1,5 @@
 ---
-title: Como trabalhar com seletores
+title: Trabalho com seletores
 description: Selecionar ativos para imagens interativas, vídeo interativo e banners de carrossel
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
@@ -8,12 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 19%
 
 ---
 
 
-# Como trabalhar com seletores {#working-with-selectors}
+# Trabalho com seletores {#working-with-selectors}
 
 Ao trabalhar com uma Imagem interativa, Vídeo interativo ou Banner do carrossel, você seleciona ativos e seleciona sites e produtos para pontos de acesso e mapas de imagem a serem vinculados. Ao trabalhar com Conjuntos de imagens, Conjuntos de rotação e Conjuntos de multimídia, você também seleciona ativos com o Seletor de ativos.
 
@@ -21,19 +24,19 @@ Este tópico aborda como usar os seletores Produto, Site e Ativo, incluindo a ca
 
 Você acessa os seletores ao criar conjuntos de carrossel, adicionar pontos de acesso e mapas de imagem, criar vídeos e imagens interativos.
 
-Por exemplo, neste banner de carrossel, você usa o seletor Produto se estiver vinculando um ponto de acesso ou mapa de imagem a uma página do Quickview; use o seletor de Site se estiver vinculando um ponto de acesso ou mapa de imagem a um Hiperlink; use o seletor de Ativos ao criar um novo slide.
+Por exemplo, neste banner de carrossel, você usa o seletor de Produto se estiver vinculando um ponto de acesso ou mapa de imagem a uma página do Quickview; use o seletor de Site se estiver vinculando um ponto de acesso ou mapa de imagem a um Hiperlink; use o seletor de Ativos ao criar um novo slide.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou os mapas de imagem vão, você está usando o seletor. O seletor de Site só funciona se você for um cliente do AEM Sites. O seletor de produtos também exige o AEM Commerce.
+Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou os mapas de imagem vão, você está usando o seletor. O seletor de Site só funciona se você for um cliente da AEM Sites. O seletor de produtos também exige Comércio AEM.
 
 ## Seleção de produtos {#selecting-products}
 
 Use o seletor de Produto para escolher um produto quando quiser que um ponto de acesso ou mapa de imagem forneça uma visualização rápida para um produto específico no catálogo de produtos.
 
-1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se você tiver definido um ponto de acesso ou mapa de imagem).
+1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
-   O seletor de Produto está na área **[!UICONTROL Action Type** .
+   The Product selector is in the **[!UICONTROL Action Type** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -45,15 +48,15 @@ Use o seletor de Produto para escolher um produto quando quiser que um ponto de 
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Você pode alterar o local em que o AEM procura dados do produto tocando em **[!UICONTROL Procurar]** e navegando para outra pasta.
+   Você pode alterar o local em que AEM navegar pelos dados do produto tocando em **[!UICONTROL Procurar]** e navegando para outra pasta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toque em **[!UICONTROL Classificar]** por para alterar se o AEM classifica pelo mais recente para o mais antigo ou pelo mais antigo para o mais recente.
+   Toque em **[!UICONTROL Classificar]** por para alterar se AEM classifica pelo mais recente para o mais antigo ou o mais antigo para o mais recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Toque em **[!UICONTROL Exibir como]** alterar a forma como você visualiza os produtos - Visualização **[!UICONTROL de]** lista ou Visualização **[!UICONTROL de]** cartão.
+   Toque em **[!UICONTROL Visualizar como]** para alterar a exibição de produtos - **[!UICONTROL Exibição em lista]** ou **[!UICONTROL Exibição de cartão]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -61,21 +64,21 @@ Use o seletor de Produto para escolher um produto quando quiser que um ponto de 
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Quando estiver no modo de **[!UICONTROL Visualização]** , você pode tocar no ponto de acesso ou no mapa de imagens e ver a aparência do Quickview.
+1. Quando estiver no modo de **[!UICONTROL Pré-visualização]** , você pode tocar no ponto de acesso ou no mapa de imagens e ver a aparência do Quickview.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
 ## Seleção de sites {#selecting-sites}
 
-Use o seletor de site para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem vincule-se a uma página da Web gerenciada em sites do AEM.
+Use o seletor de site para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem vincule-se a uma página da Web gerenciada dentro AEM sites.
 
-1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se você tiver definido um ponto de acesso ou mapa de imagem).
+1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
-   O Seletor de site está na área Tipo **[!UICONTROL de]** ação.
+   O Seletor de site está na área **[!UICONTROL Tipo de ação]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Toque no ícone do Seletor **[!UICONTROL de]** site (pasta com lupa) e navegue até uma página nos sites do AEM à qual você deseja vincular o ponto de acesso ou mapa de imagem.
+1. Toque no ícone do **[!UICONTROL Seletor de sites]** (pasta com lupa) e navegue até uma página no AEM Sites a qual você deseja vincular o ponto de acesso ou mapa de imagem.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -83,16 +86,16 @@ Use o seletor de site para escolher uma página da Web quando quiser que um pont
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Quando no modo de **[!UICONTROL Visualização]** , se você tocar no ponto de acesso ou no mapa de imagem, você navega até a página do site do AEM especificada.
+1. Quando no modo de **[!UICONTROL Pré-visualização]** , se você tocar no ponto de acesso ou no mapa de imagem, você navega até a página do site AEM especificada.
 
 ## Selecionar ativos {#selecting-assets}
 
 Use este seletor para escolher imagens para usar em um banner de carrossel, um vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. Em Vídeo interativo, o seletor de ativos fica disponível quando você toca em **[!UICONTROL Selecionar ativos]** na guia **[!UICONTROL Conteúdo]** . Em Conjuntos de carrossel, o seletor de ativos fica disponível quando você cria um novo slide. Em Conjuntos de imagens, Conjuntos de mídia mista e Conjuntos de rotação, o seletor de ativos fica disponível quando você cria um novo Conjunto de imagens, Conjunto de mídia mista ou Conjunto de rotação, respectivamente.
 
-Consulte também Seletor [de ativos](search-assets.md#assetselector) para obter mais informações.
+Consulte também Seletor [de ativos](search-assets.md#assetpicker) para obter mais informações.
 
 1. Navegue até o Conjunto de carrossel e crie um novo slide. Ou navegue até o vídeo interativo, vá até a guia **[!UICONTROL Conteúdo]** e selecione ativos. Ou crie um Conjunto de mídia mista, um Conjunto de imagens ou um Conjunto de rotação.
-1. Toque no ícone Seletor **[!UICONTROL de ativos]** (pasta com lupa) e navegue até um ativo.
+1. Toque no ícone **[!UICONTROL Seletor de ativos]** (pasta com uma lupa) e navegue até um ativo.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -100,13 +103,13 @@ Consulte também Seletor [de ativos](search-assets.md#assetselector) para obter 
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Você pode alterar o local em que o AEM procura ativos navegando até outra pasta no campo **[!UICONTROL Caminho]** .
+   Você pode alterar o local em que AEM procura ativos navegando até outra pasta no campo **[!UICONTROL Caminho]** .
 
    Toque em **[!UICONTROL Coleção]** para pesquisar apenas ativos dentro de coleções.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Toque em **[!UICONTROL Visualizar como]** alterar a exibição de produtos - Visualização **[!UICONTROL de]** lista, Visualização **[!UICONTROL de]** coluna ou Visualização **[!UICONTROL de]** cartão.
+   Toque em **[!UICONTROL Visualizar como]** para alterar a exibição de produtos - **[!UICONTROL Exibição em lista]**, **[!UICONTROL Exibição em coluna]** ou **[!UICONTROL Exibição de cartão]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
