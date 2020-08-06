@@ -1,8 +1,8 @@
 ---
 ttitle: Administering generic eCommerce
 seo-title: Administração de eCommerce genérico
-description: A solução genérica do AEM fornece métodos de gerenciamento das informações comerciais armazenadas no repositório.
-seo-description: A solução genérica do AEM fornece métodos de gerenciamento das informações comerciais armazenadas no repositório.
+description: A solução genérica AEM fornece métodos de gerenciamento das informações comerciais armazenadas no repositório.
+seo-description: A solução genérica AEM fornece métodos de gerenciamento das informações comerciais armazenadas no repositório.
 uuid: 8d2b02a6-0658-4957-a366-29a59350f3e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 95d9ed8a0ccfa7651b83058d337511dd6b15665f
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '3008'
+ht-degree: 4%
 
 ---
 
 
 # Administração de eCommerce genérico {#administering-generic-ecommerce}
 
-A solução genérica do AEM fornece métodos de gerenciamento das informações comerciais armazenadas no repositório (em vez de usar um mecanismo de comércio externo). Isso inclui:
+A solução genérica AEM fornece métodos de gerenciamento das informações comerciais armazenadas no repositório (em vez de usar um mecanismo externo de comércio eletrônico). Isso inclui:
 
 * [Produtos](/help/sites-administering/concepts.md#products)
 * [Variantes do produto](/help/sites-administering/concepts.md#product-variants)
@@ -30,7 +33,7 @@ A solução genérica do AEM fornece métodos de gerenciamento das informações
 
 >[!NOTE]
 >
->A instalação padrão do AEM inclui a implementação genérica de comércio eletrônico do AEM (JCR).
+>A instalação de AEM padrão inclui a implementação de eCommerce AEM genérico (JCR).
 >
 >Atualmente, isso se destina a fins de demonstração ou como base básica para uma implementação personalizada de acordo com suas necessidades.
 
@@ -69,7 +72,7 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    ![chlimage_1-1](do-not-localize/chlimage_1-13.png)
 
-1. Especificar:
+1. Especifique:
 
    * **Importador**
 
@@ -96,18 +99,18 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    >[!NOTE]
    >
-   >O uso repetido de **Próximo** e **Voltar** importará repetidamente as definições do produto. No entanto, como eles têm os mesmos SKUs, as informações existentes no repositório serão simplesmente substituídas.
+   >O uso repetido de **Avançar** e **Voltar** importará repetidamente as definições do produto. No entanto, como eles têm os mesmos SKUs, as informações existentes no repositório serão simplesmente substituídas.
 
 1. Selecione **Concluído** para fechar o assistente.
 
 #### Importar produtos - IU clássica {#importing-products-classic-ui}
 
 1. Usando o console **Ferramentas** , abra a pasta **Comércio** .
-1. Clique duas vezes para abrir o Importador **de produto**:
+1. Clique no Duplo para abrir o Importador **** do produto:
 
    ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
-1. Especificar:
+1. Especifique:
 
    * **Armazenar nome**
 
@@ -117,7 +120,7 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    * **Provedor de comércio**
 
-      O importador do seu provedor [de](/help/sites-administering/concepts.md#commerce-providers)comércio; por padrão, Geometrixx.
+      O importador do seu provedor [de](/help/sites-administering/concepts.md#commerce-providers)comércio; por padrão.
 
    * **Arquivo de origem**
 
@@ -142,6 +145,7 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    * **Criar produto**
    * **Criar variação de produto**
+
    ![chlimage_1-14](do-not-localize/chlimage_1-14.png)
 
 1. O assistente abrirá. Use as guias **Básico** e **Produto** para inserir os atributos [do](/help/sites-administering/concepts.md#product-attributes) produto para o novo produto ou variante do produto.
@@ -175,7 +179,8 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    * [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de seleção](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
-   Selecione o ícone **Exibir dados** do produto:
+
+   Selecione o ícone Dados **do produto de** Visualização:
 
    ![chlimage_1-3](do-not-localize/chlimage_1-15.png)
 
@@ -190,7 +195,7 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    ![chlimage_1-4](do-not-localize/chlimage_1-16.png)
 
-1. Selecione o produto necessário - o trilho secundário será atualizado para mostrar os tipos de referência disponíveis:
+1. Selecione o produto desejado - o trilho secundário será atualizado para mostrar os tipos de referência disponíveis:
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -199,12 +204,13 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    * Navegar até a página do produto
    * Editar página do produto
+
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
 ### Search for Products {#search-for-products}
 
 1. Navegue até o console **Produtos** , via **Comércio**.
-1. Abra o painel secundário para Pesquisa com o ícone:
+1. Abra o trilho secundário para Pesquisa com o ícone:
 
    ![](do-not-localize/chlimage_1-17.png)
 
@@ -212,24 +218,24 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Clicar/tocar em um produto o abre. Você também pode publicá-la ou exibir os dados do produto.
+1. Clicar/tocar em um produto o abre. Você também pode publicá-lo ou visualização os dados do produto.
 
 #### Extensão da pesquisa {#extending-search}
 
-Você pode modificar uma faceta existente ou adicionar novas, usando o CRXDE Lite:
+Você pode modificar uma faceta existente ou adicionar novas, usando CRXDE Lite:
 
 1. Vá até:
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
 1. Você pode modificar, por exemplo, os tamanhos que aparecerão na página de pesquisa do produto. Clique no `sizegroup` nó.
-1. Clique em `items` node e, em seguida, clique em `propertypredicate` node.
+1. Clique em `items` node (Nó) e, em seguida, clique em `propertypredicate` node (Nó).
 1. Você pode modificar o `propertyValues`. Por exemplo, você pode adicionar XS, ou XXL, ou remover um tamanho.
 1. Clique em **Salvar tudo** e navegue até a página de pesquisa de produtos. Suas alterações devem ser exibidas.
 
 ### Vários ativos {#multiple-assets}
 
-Você pode adicionar vários ativos no componente do produto e especificar o ativo que aparecerá na página do produto.
+Você pode adicionar vários ativos no componente do produto e, em seguida, especificar o ativo que aparecerá na página do produto.
 
 >[!NOTE]
 >
@@ -244,7 +250,7 @@ Você pode adicionar vários ativos no componente do produto e especificar o ati
    >
    >Você tem que estar no nível do produto, não no nível da variante.
 
-1. Toque/clique no ícone **Exibir dados** do produto com o modo de seleção ou ações rápidas.
+1. Toque/clique no ícone Dados **do produto de** Visualização com o modo de seleção ou ações rápidas.
 1. Toque/clique no ícone Editar.
 1. Role até **Adicionar**.
 
@@ -262,12 +268,12 @@ Você pode adicionar vários ativos no componente do produto e especificar o ati
 
 Dois ativos agora são armazenados no componente do produto. Você pode configurar qual aparecerá na página do produto. Isso funciona com um sistema de categoria. Primeiro, é necessário adicionar uma categoria aos ativos individuais:
 
-1. Toque/clique em **Exibir dados** do produto.
+1. Toque/clique em Dados **de produto de** Visualização.
 1. Digite uma Categoria **de** ativo nos ativos, por exemplo `cat1` e `cat2`.
 
    >[!NOTE]
    >
-   >Você também pode usar tags para categorias.
+   >Você também pode usar tags para categoria.
 
 1. Toque/clique no ícone Concluído. Agora é necessário [implementar](#rolling-out-a-catalog) as alterações.
 
@@ -284,7 +290,7 @@ Agora seus ativos no componente do produto têm uma categoria. Você pode config
 O mecanismo para selecionar a imagem a ser exibida é o seguinte:
 
 1. Verifique se uma categoria está definida para a Página do produto.
-1. Caso contrário, verifique se uma categoria está definida para o Catálogo.
+1. Caso contrário, verifique se uma categoria está definida para o catálogo.
 1. Caso contrário, verifique se uma categoria está definida para o console Produtos.
 
 >[!NOTE]
@@ -301,38 +307,39 @@ O mecanismo para selecionar a imagem a ser exibida é o seguinte:
 #### Catálogo  {#catalog}
 
 1. Navegue até o catálogo.
-1. Toque/clique em **Exibir propriedades**.
+1. Toque/clique em Propriedades **da** Visualização.
 1. Tap/click **Edit**.
 1. Toque/clique na guia **Ativos** .
-1. Digite a Categoria **de ativo do** produto necessária.
+1. Digite a Categoria **de ativos do** produto necessária.
 1. Toque/clique em **Concluído**.
 1. [Implantar](#rolling-out-a-catalog) suas alterações.
 
 #### Console de produtos {#products-console}
 
 1. Usando o console **Produtos** , navegue até o Produto desejado.
-1. Toque/clique em **Exibir dados** do produto.
+1. Toque/clique em Dados **de produto de** Visualização.
 1. Tap/click **Edit**.
-1. Digite uma Categoria **de ativo** padrão.
+1. Digite uma Categoria **** de ativo padrão.
 1. Toque/clique em **Concluído**.
 1. [Implantar](#rolling-out-a-catalog) suas alterações.
 
-### Publicar/Desfazer publicação de informações sobre produtos {#publishing-unpublishing-product-information}
+### Publicar/Desfazer publicação de informações sobre o produto {#publishing-unpublishing-product-information}
 
 #### Publicar/Desfazer publicação de informações do produto - IU otimizada ao toque {#publishing-unpublishing-product-information-touch-optimized-ui}
 
 >[!NOTE]
 >
->Muitas vezes, as informações do produto são publicadas pelas páginas que fazem referência a elas. Por exemplo, ao publicar a página X que faz referência ao produto Y, o AEM perguntará se você também deseja publicar o produto Y.
+>Muitas vezes, as informações do produto são publicadas pelas páginas que fazem referência a elas. Por exemplo, ao publicar a página X que faz referência ao produto Y, AEM perguntará se você também deseja publicar o produto Y.
 >
->Para casos especiais, o AEM também oferece suporte à publicação direta dos dados do produto.
+>Para casos especiais, AEM também oferece suporte à publicação direta dos dados do produto.
 
 1. Usando o console **Produtos** (via **Comércio**), navegue até suas informações do produto.
 1. Usar:
 
    * [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de seleção](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
-   Selecione o ícone **Publicar** ou **Cancelar publicação** conforme necessário:
+
+   Selecione o ícone **Publicar** ou **Cancelar publicação** , conforme necessário:
 
    ![chlimage_1-6](do-not-localize/chlimage_1-18.png) ![chlimage_1-7](do-not-localize/chlimage_1-19.png)
 
@@ -340,18 +347,18 @@ O mecanismo para selecionar a imagem a ser exibida é o seguinte:
 
 ### Product Feed {#product-feed}
 
-A integração do Search&amp;Promote permite:
+A integração de Search &amp; Promote permite:
 
 * use a API eCommerce, independentemente da estrutura do repositório subjacente e da plataforma de comércio.
-* aproveite o recurso Conector de índice do Search&amp;Promote para fornecer um feed de produto no formato XML.
-* aproveitar o recurso de Controle remoto do Search&amp;Promote para executar solicitações sob demanda ou programadas do feed do produto
-* geração de feed para diferentes contas do Search&amp;Promote, configuradas como configurações de serviços em nuvem.
+* aproveite o recurso Conector de índice do Search &amp; Promote para fornecer um feed de produto no formato XML.
+* aproveitar o recurso de Controle remoto do Search &amp; Promote para executar solicitações sob demanda ou programadas do feed do produto
+* geração de feed para diferentes contas de Search &amp; Promote, configurada como configurações de serviços em nuvem.
 
 Para obter mais informações, leia Feed [do](/help/sites-administering/product-feed.md)produto.
 
-### Manipulador de eventos para atualizações de produtos {#event-handler-for-product-updates}
+### Manipulador de Eventos para atualizações de produtos {#event-handler-for-product-updates}
 
-Há um Manipulador de eventos que registra um evento quando um produto é adicionado, modificado ou excluído e quando uma página de produto é adicionada, modificada ou excluída. Há os seguintes eventos OSGi:
+Há um Manipulador de Eventos que registra um evento quando um produto é adicionado, modificado ou excluído e quando uma página de produto é adicionada, modificada ou excluída. Há os seguintes eventos OSGi:
 
 * `com/adobe/cq/commerce/pim/PRODUCT_ADDED`
 * `com/adobe/cq/commerce/pim/PRODUCT_MODIFIED`
@@ -368,7 +375,7 @@ Você pode observá-los no Console da Web em eventos OSGI ( `/system/console/eve
 
 >[!NOTE]
 >
->Leia também a manipulação [de eventos no AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Leia também a manipulação de [Eventos no AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
 ### Imagem com Links para adicionar ao carrinho {#image-with-add-to-cart-links}
 
@@ -381,8 +388,8 @@ Clicar no ponto de acesso abre uma caixa de diálogo que permite escolher o tama
 1. Arraste e solte uma imagem no componente do navegador de [ativos](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. Você pode:
 
-   * clique no componente e clique no ícone Editar
-   * faça um clique duplo lento
+   * clique no componente e, em seguida, clique no ícone Editar
+   * faça um clique lento no duplo
 
 1. Clique no ícone de tela cheia.
 
@@ -398,7 +405,7 @@ Clicar no ponto de acesso abre uma caixa de diálogo que permite escolher o tama
 
 1. Modifique e mova a forma conforme necessário.
 1. Clique na forma.
-1. Clicar no ícone Procurar abre o Seletor [de ativos](../assets/search-assets.md#assetselector).
+1. Clicar no ícone Procurar abre o Seletor [de ativos](../assets/search-assets.md#assetpicker).
 
    >[!NOTE]
    >
@@ -412,7 +419,7 @@ Clicar no ponto de acesso abre uma caixa de diálogo que permite escolher o tama
    ![](do-not-localize/chlimage_1-22.png)
 
 1. Switch to [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) mode.
-1. Clique no hotspot +. Uma caixa de diálogo é aberta onde você pode escolher o tamanho e a quantidade do produto inserido no **Caminho**.
+1. Clique no ponto de conexão +. Uma caixa de diálogo é aberta onde você pode escolher o tamanho e a quantidade do produto inserido no **Caminho**.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -493,7 +500,7 @@ Para gerar um catálogo:
 
 1. Abra a nova `Swimwear` página e clique em **Editar Blueprint** para abrir a caixa de diálogo **Propriedades** , onde você pode configurar a seleção **Produtos** .
 
-   Por exemplo, abra o campo **Tags/Palavras-chave** para selecionar Atividade e Nadar na seção Geometrixx-Outdoors.
+   Por exemplo, abra o campo **Tags/Palavras-chave** para selecionar Atividade e, em seguida, Nadando na seção Geometrixx-Externo.
 
 1. Clique em **OK** para salvar suas propriedades; os produtos de exemplo serão mostrados nos Critérios **de seleção de** produto na página do blueprint.
 1. Clique em **Alterações de implantação...**, selecione a página **Rollout e todas as subpáginas**, em seguida, clique em **Avançar** e em **Rollout**. Quando a implementação for concluída com êxito, o indicador **Status** será mostrado como verde.
@@ -501,7 +508,7 @@ Para gerar um catálogo:
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
-1. Novamente na página de blueprints, clique em **Editar Blueprint** e, na caixa de diálogo **Propriedades** , abra a guia Página **** gerada. No campo da lista Banner, selecione a imagem que deseja mostrar;por exemplo, `summer.jpg`
+1. Novamente na página de blueprints, clique em **Editar Blueprint** e, na caixa de diálogo **Propriedades** , abra a guia Página **** gerada. No campo lista do banner, selecione a imagem que deseja mostrar; por exemplo, `summer.jpg`
 1. Clique em **OK** para salvar suas propriedades; as informações do banner serão mostradas nos Critérios **de seleção de** produto na página do blueprint.
 1. Implantar essas novas alterações.
 
@@ -517,6 +524,7 @@ Para implementar um catálogo:
 
    * [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de seleção](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Selecione o ícone Alterações **de implantação** :
 
    ![](do-not-localize/chlimage_1-24.png)
@@ -536,7 +544,7 @@ Para implementar um catálogo:
 1. Defina a implementação conforme necessário.
 1. Clique em **Rollout**.
 
-### Importador Blueprint {#blueprint-importer}
+### Importador de Blueprint {#blueprint-importer}
 
 #### Importador de Blueprint - IU otimizada ao toque {#blueprint-importer-touch-optimized-ui}
 
@@ -548,7 +556,7 @@ Para implementar um catálogo:
 
 1. No assistente, selecione a Origem conforme necessário e toque/clique em **Avançar**.
 
-   ![chlimage_1-344](assets/chlimage_1-102.png)
+   ![chlimage_1-340](assets/chlimage_1-102.png)
 
 1. Toque/clique em **Concluído** assim que a importação for concluída.
 
@@ -579,14 +587,15 @@ Para implementar um catálogo:
 >Para obter mais informações, consulte [Promoções e Vouchers](#promotions-and-vouchers).
 
 1. Abra o console **Sites** da sua instância do autor.
-1. No painel esquerdo, selecione sua **Campanha** desejada.
+1. No painel esquerdo, selecione a **Campanha** desejada.
 1. Clique em **Novo**, selecione o modelo de **Promoção** e especifique um **Título** (e **Nome** , se necessário) para seu novo comprovante.
 1. Clique em **Criar**. A nova página de promoção será exibida no painel direito.
 
 1. Edite as **Propriedades** :
 
    * abrir a página e, em seguida, clicar no botão Editar para abrir a caixa de diálogo Propriedades
-   * **selecionando a página no console Sites e usando o menu de contexto (geralmente o botão direito do mouse) para selecionar** Propriedades... e abrir a caixa de diálogo de propriedades
+   * selecionando a página no console Sites e usando o menu de contexto (geralmente o botão direito do mouse) para selecionar **Propriedades...** e abrir a caixa de diálogo de propriedades
+
    Especifique o Tipo **de** promoção, o Tipo **de** desconto, o Valor **de** desconto e quaisquer outros campos, conforme necessário.
 
 1. Clique em **OK** para salvar.
@@ -600,11 +609,11 @@ Para implementar um catálogo:
 #### Criar um comprovante - IU clássica {#creating-a-voucher-classic-ui}
 
 1. Abra o console **Sites** da sua instância do autor.
-1. No painel esquerdo, selecione sua **Campanha** desejada.
+1. No painel esquerdo, selecione a **Campanha** desejada.
 1. Clique em **Novo**, selecione o modelo **Comprovante** e especifique um **Título** (e **Nome** , se necessário) para seu novo comprovante.
 1. Clique em **Criar**. A nova página de comprovante será exibida no painel direito.
 
-1. Abra a nova página do comprovante com um clique duplo e clique em **Editar** para configurar as informações conforme necessário.
+1. Abra a nova página de comprovante com um clique de duplo e clique em **Editar** para configurar as informações conforme necessário.
 1. Clique em **OK** para salvar.
 
 1. Agora você pode ativar seu comprovante, para que os compradores possam usá-lo em seus carrinhos na instância de publicação.
@@ -624,11 +633,11 @@ Ambas as ações podem ser realizadas no console **Sites** .
 
 #### Modificação de Vouchers - IU clássica {#modifying-vouchers-classic-ui}
 
-Para alterar as propriedades de um comprovante ou promoção, clique duas vezes nele no console **Sites** e clique em **Editar**. Depois de salvá-la, você deve ativá-la para que as alterações sejam encaminhadas para as instâncias de publicação.
+Para alterar as propriedades de um comprovante ou promoção, clique com o botão duplo no console **Sites** e clique em **Editar**. Depois de salvá-la, você deve ativá-la para que as alterações sejam encaminhadas para as instâncias de publicação.
 
 ### Adicionando vendedores a um carrinho {#adding-vouchers-to-a-cart}
 
-Para permitir que os usuários adicionem comprovantes aos carrinhos, você pode usar o componente **Vouchers** incorporado (categoria Comércio). É necessário adicionar isso à mesma página em que o carrinho é exibido (mas não é obrigatório). O componente de comprovantes é apenas um formulário no qual o usuário pode digitar um código de comprovante, é o componente do carrinho de compras que realmente mostra a lista de comprovantes aplicados e seu desconto.
+Para permitir que os usuários adicionem vouchers aos seus carrinhos, você pode usar o componente **Vouchers** incorporado (categoria de Comércio). É necessário adicionar isso à mesma página em que o carrinho é exibido (mas não é obrigatório). O componente de comprovantes é apenas um formulário no qual o usuário pode digitar um código de comprovante, é o componente do carrinho de compras que realmente mostra a lista dos comprovantes aplicados e seu desconto.
 
 No site de demonstração (Geometrixx Outdoors - Inglês) você pode ver o formulário de comprovante na página do carrinho, sob o carrinho de compras.
 
@@ -636,12 +645,12 @@ No site de demonstração (Geometrixx Outdoors - Inglês) você pode ver o formu
 
 >[!NOTE]
 >
->Convém lembrar que o AEM predefinido não tem ações necessárias para a funcionalidade padrão relacionada a pedidos, como devolução de mercadorias, atualização do status do pedido, realização, geração de guias de remessa. Ela é destinada principalmente como uma visualização de tecnologia.
+>Convém lembrar que a AEM predefinida não tem ações necessárias para a funcionalidade padrão relacionada a pedidos, como devolução de mercadoria, atualização do status do pedido, realização, geração de guias de remessa. Ela é principalmente destinada como uma pré-visualização tecnológica.
 >
 >A gestão genérica das encomendas no AEM foi mantida como base; os campos disponíveis no assistente dependem do suporte:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
->Se você criar um suporte personalizado, poderá armazenar mais informações de pedido.
+>Se você criar um suporte personalizado, poderá armazenar mais informações sobre o pedido.
 
 >[!NOTE]
 >
@@ -671,7 +680,8 @@ No site de demonstração (Geometrixx Outdoors - Inglês) você pode ver o formu
 
    * [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de seleção](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
-   Selecione o ícone **Exibir dados** do pedido:
+
+   Selecione o ícone Dados **da Ordem de** Visualização:
 
    ![](do-not-localize/chlimage_1-15.png)
 
