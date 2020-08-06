@@ -3,9 +3,9 @@ title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1533'
 ht-degree: 8%
 
 ---
@@ -68,7 +68,7 @@ Adicione os ativos a uma pasta e aplique as tags a cada ativo da página de prop
 >[!NOTE]
 >
 >1. A formação é um processo irrevogável. A Adobe recomenda que você revise as tags no conjunto de ativos preparado bem antes de treinar o Serviço de conteúdo inteligente nas tags.
->1. Leia as diretrizes [de treinamento do Serviço de conteúdo](smart-tags-training-guidelines.md) inteligente antes de iniciar o treinamento de qualquer tag.
+>1. Antes de treinar para uma tag, consulte as diretrizes [de treinamento do Serviço de conteúdo](smart-tags-training-guidelines.md)inteligente.
 >1. Quando você treina o Serviço de conteúdo inteligente pela primeira vez, o Adobe recomenda que você o treine em pelo menos duas tags distintas.
 
 
