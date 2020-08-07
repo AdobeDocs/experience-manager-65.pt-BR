@@ -12,9 +12,9 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 5f8198f0fd6c335708f2b771848b2e66dfc242b3
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,12 @@ ht-degree: 0%
 
 Ao atualizar seus ambientes AEM, é necessário considerar as diferenças de abordagem entre a atualização de ambientes do autor ou a publicação de ambientes para minimizar o tempo de inatividade para seus autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia AEM atualmente em execução em uma versão do AEM 6.x. Como o processo difere entre os níveis de autor e publicação, bem como implantações baseadas em Mongo e TarMK, cada camada e microkernel foi listado em uma seção separada. Ao executar sua implantação, recomendamos primeiro atualizar seu ambiente do autor, determinar o sucesso e, em seguida, prosseguir para os ambientes de publicação.
 
-<!-->>[!IMPORTANT]
->O tempo de inatividade durante a atualização pode ser significativamente reduzido pela indexação do repositório antes da execução da atualização. Para obter mais informações, consulte [Uso da reindexação offline para reduzir o tempo de inatividade durante uma atualização](/help/sites-deploying/upgrade-offline-reindexing.md)—>
+<!--
+>[!IMPORTANT]
 >
+>The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
+-->
+
 ## Camada do autor TarMK {#tarmk-author-tier}
 
 ### Iniciando topologia {#starting-topology}
@@ -162,7 +165,7 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 1. O QA valida o Publicar 2 por meio do Dispatcher, atrás do firewall
 1. Encerrar publicação 2
 1. Copiar a instância do Publicar 2
-1. Publicação de Start 2
+1. Publicação de start 2
 
 ### Se bem-sucedido {#if-successful-2}
 
@@ -174,7 +177,7 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 1. Substitua a instância Publicar 1 por uma cópia do Publicar 2
 1. Atualize o Dispatcher ou o Módulo Web, *se necessário*
 1. Liberar o cache do Dispatcher para o Publicar 1
-1. Publicação de Start 1
+1. Publicação de start 1
 1. O QA valida o Publicar 1 por meio do Dispatcher, atrás do firewall
 
 ### Se não for bem-sucedido (Reversão) {#if-unsuccessful-rollback-1}
@@ -184,7 +187,7 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 1. Criar uma cópia do Publicar 1
 1. Substitua a instância do Publicar 2 por uma cópia do Publicar 1
 1. Liberar o cache do Dispatcher para o Publicar 2
-1. Publicação de Start 2
+1. Publicação de start 2
 1. O QA valida o Publicar 2 por meio do Dispatcher, atrás do firewall
 1. Habilitar tráfego para publicar 2
 
