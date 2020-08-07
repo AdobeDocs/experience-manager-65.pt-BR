@@ -1,11 +1,11 @@
 ---
 title: Configurar os plug-ins do Editor de Rich Text
-description: Saiba como configurar os plug-ins do Editor de Rich Text Adobe Experience Manager para ativar funcionalidades individuais.
+description: Saiba como configurar os plug-ins do Editor de Rich Text da Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
-source-wordcount: '4400'
+source-wordcount: '4397'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Por padrão, `format`, `link`, `list`, `justify`, e `control` plug-ins e todos o
 >
 >O respectivo `rtePlugins` nó é chamado `<rtePlugins-node>` para evitar a duplicação neste artigo.
 
-1. Usando o CRXDE Lite, localize o componente de texto para seu projeto.
+1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie o nó pai de `<rtePlugins-node>` se ele não existir, antes de configurar qualquer plug-in RTE:
 
    * Dependendo do seu componente, os nós principais são:
@@ -79,7 +79,7 @@ Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir
 
 * **Modo** de navegador: Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas.
 
-* **Modo** de texto simples: Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente AEM.
+* **Modo** de texto simples: Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir AEM componente.
 
 * **Modo** MS Word: Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida.
 
@@ -107,7 +107,7 @@ A configuração permite os três tipos de casos de uso a seguir:
 
 * Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode introduzir marcações indesejadas. Configurado usando `browser` abaixo.
 
-* Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente AEM. Configurado usando `plaintext` abaixo.
+* Cole o conteúdo da área de transferência como texto sem formatação. Remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir AEM componente. Configurado usando `plaintext` abaixo.
 
 * Cole o texto, incluindo tabelas, com a formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS Excel, e a formatação apenas parcial é mantida. Configurado usando `wordhtml` abaixo.
 
@@ -120,16 +120,16 @@ A configuração permite os três tipos de casos de uso a seguir:
 
 ### Configurar os formatos permitidos ao colar conteúdo {#pasteformats}
 
-O modo colar como Microsoft Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa definir explicitamente quais estilos são permitidos ao colar no AEM a partir de outro programa, como o Microsoft Word.
+O modo colar como Microsoft Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa definir explicitamente quais estilos são permitidos ao colar em AEM de outro programa, como o Microsoft Word.
 
-Por exemplo, se apenas formatos em negrito e listas forem permitidos ao colar no AEM, você pode filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
+Por exemplo, se apenas formatos em negrito e listas forem permitidos ao colar em AEM, você poderá filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feita para ambos:
 
 * [Texto](#pastemodes)
 * [Links](#linkstyles)
 
 Para links, também é possível definir os protocolos que são automaticamente aceitos.
 
-Para configurar quais formatos são permitidos ao colar texto no AEM a partir de outro programa:
+Para configurar quais formatos são permitidos ao colar texto em AEM de outro programa:
 
 1. Em seu componente, navegue até o nó `<rtePlugins-node>/edit`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 1. Crie um nó sob o `edit` nó para manter as regras de colagem HTML:
@@ -329,11 +329,11 @@ Em seguida, especifique os locais das folhas de estilos que deseja referenciar:
 
 ### Configurar o RTE para quebras de palavras ideais em japonês {#jpwordwrap}
 
-Os autores que usam o AEM para criar conteúdo de idioma japonês podem aplicar um estilo a caracteres para evitar quebras de linha onde uma quebra não é necessária. Isso permite que os autores deixem as frases quebrarem na posição desejada. O estilo para essa funcionalidade é baseado na classe CSS predefinida na folha de estilos CSS.
+Os autores que usam AEM para criar conteúdo de idioma japonês podem aplicar um estilo a caracteres para evitar quebras de linha onde uma quebra não é necessária. Isso permite que os autores deixem as frases quebrarem na posição desejada. O estilo para essa funcionalidade é baseado na classe CSS predefinida na folha de estilos CSS.
 
 >[!NOTE]
 >
->Este recurso requer pelo menos o AEM 6.5 Service Pack 1.
+>Este recurso requer pelo menos AEM 6.5 Service Pack 1.
 
 Para criar o estilo que os autores podem aplicar ao texto em japonês, siga estas etapas:
 
@@ -445,7 +445,7 @@ Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<
 
 ## Configurar caracteres especiais {#spchar}
 
-Em uma instalação padrão do AEM, quando o `misctools` plug-in está ativado para caracteres especiais (`specialchars`) uma seleção padrão está imediatamente disponível para uso; por exemplo, os símbolos de direitos autorais e marcas registradas.
+Em uma instalação padrão de AEM, quando o plug- `misctools` in está ativado para caracteres especiais (`specialchars`) uma seleção padrão está imediatamente disponível para uso; por exemplo, os símbolos de direitos autorais e marcas registradas.
 
 Você pode configurar o RTE para disponibilizar sua própria seleção de caracteres; definindo caracteres distintos ou uma sequência inteira.
 
@@ -593,7 +593,7 @@ Para melhorar a acessibilidade em tais cenários, o RTE suporta células de cabe
 
 Se você especificar o CSS e a string de estilo no código, a classe CSS terá precedência sobre a string de estilo e poderá substituir quaisquer alterações de configuração feitas pela string de estilo.
 
-Para ajudar os autores a aplicar CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
+Para ajudar os autores a aplicar o CSS em cabeçalhos ocultos no modo de pré-visualização, você pode incluir os seguintes parâmetros no código:
 
 * `hiddenHeaderClassName`: Especifica o nome da classe CSS aplicada na célula de cabeçalho oculta no modo de pré-visualização.
 * `hiddenHeaderStyle`: Especifica uma string de estilo que é aplicada na célula de cabeçalho oculto no modo de pré-visualização.
@@ -607,7 +607,7 @@ Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionário
 >[!NOTE]
 A mensagem `Spell checking failed` é exibida se houver tentativa de verificação de um idioma que não esteja instalado. Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos readme apropriados. Não modifique os arquivos.
 
-Uma instalação padrão do AEM inclui os dicionários para inglês americano (`en_us`) e inglês britânico (`en_gb`). Para adicionar mais dicionários, siga estas etapas.
+Uma instalação padrão AEM inclui os dicionários para inglês americano (`en_us`) e inglês britânico (`en_gb`). Para adicionar mais dicionários, siga estas etapas.
 
 1. Navegue até a página [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -690,14 +690,14 @@ Você pode definir a altura do espaço editável mostrado na caixa de diálogo d
 
 ## Configurar estilos e protocolos para links {#linkstyles}
 
-Ao adicionar links no AEM, você pode definir:
+Ao adicionar links em AEM, é possível definir:
 
 * Os estilos CSS a serem usados
 * Os protocolos aceitos automaticamente
 
-Para configurar como os links são adicionados no AEM a partir de outro programa, defina as regras HTML.
+Para configurar como os links são adicionados em AEM de outro programa, defina as regras HTML.
 
-1. Usando o CRXDE Lite, localize o componente de texto para seu projeto.
+1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie um novo nó no mesmo nível `<rtePlugins-node>`, ou seja, crie o nó sob o nó pai de `<rtePlugins-node>`:
 
    * **Nome** `htmlRules`
@@ -731,7 +731,7 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
       * **Nome** `cssExternal`
       * **Tipo** `String`
       * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
-   * Matriz de **protocolos** válidos (incluindo https://, https:// file://, mailto:, entre outros)
+   * Matriz de **protocolos** válidos (incluindo `https://`, `https://`, `file://`e `mailto:` entre outros)
 
       * **Nome** `protocols`
       * **Tipo** `String[]`
@@ -764,7 +764,7 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
 
          * **Nome** `targetInternal`
          * **Tipo** `String`
-         * **Valor** do público alvo para links internos (use apenas quando &quot;mode is `auto`)
+         * **Valor** do público alvo para links internos (use somente quando o modo estiver `auto`)
       * O público alvo para links externos:
 
          * **Nome** `targetExternal`
