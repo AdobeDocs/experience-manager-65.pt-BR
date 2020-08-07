@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '9240'
 ht-degree: 4%
@@ -108,7 +108,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
    >
    >A caixa de diálogo [!UICONTROL Duplicados detectados] aparece somente quando o recurso de detecção de duplicados está ativado. Para ativar o recurso de detecção de duplicados, consulte [Ativar detecção](/help/assets/duplicate-detection.md)de Duplicados.
 
-   ![Caixa de diálogo Ativo do Duplicado detectado](assets/duplicate-asset-detected.png)
+   ![Caixa de diálogo Ativo do duplicado detectado](assets/duplicate-asset-detected.png)
 
    Para reter o ativo do duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, clique em **[!UICONTROL Excluir]**.
 
@@ -141,7 +141,7 @@ Por padrão, o carregamento em série de ativos é ativado. Para desativar o rec
 
 ### Fazer upload de ativos usando FTP {#uploading-assets-using-ftp}
 
-A Dynamic Media permite o carregamento em lote de ativos por meio do servidor FTP. Se você pretende carregar ativos grandes (>1 GB) ou pastas e subpastas inteiras, deve usar o FTP. Você pode até mesmo configurar o upload do FTP para que ocorra de forma recorrente e programada.
+O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FTP. Se você pretende carregar ativos grandes (>1 GB) ou pastas e subpastas inteiras, deve usar o FTP. Você pode até mesmo configurar o upload do FTP para que ocorra de forma recorrente e programada.
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ A Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 
    >[!NOTE]
    >
-   >Ao carregar ativos via FTP, as opções de trabalho de upload definidas no Dynamic Media Classic (S7) têm prioridade sobre os parâmetros de processamento de ativos definidos no [!DNL Experience Manager].
+   >Ao carregar ativos via FTP, as opções de trabalho de upload definidas no Dynamic Media Classic (S7) têm prioridade sobre os parâmetros de processamento de ativos definidos em [!DNL Experience Manager].
 
 1. No canto inferior direito da caixa de diálogo Carregar opções de trabalho, clique em **[!UICONTROL Salvar]**.
 1. No canto inferior direito da página Carregar, clique em **[!UICONTROL Enviar upload]**.
@@ -193,7 +193,7 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 |  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cor.<br> Observe que não há suporte para eCatalogs em [!DNL Experience Manager]. <br> Consulte [Configuração de opções](#setting-pdf-upload-options)de upload de PDF. |
 |  | Opções do Illustrator | Você pode rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte [Configuração de opções](#setting-postscript-and-illustrator-upload-options)de upload de PostScript e Illustrator. |
 |  | Opções de vídeo | Você pode transcodificar um arquivo de vídeo escolhendo uma predefinição de vídeo.<br> Consulte [Configuração de opções](#setting-evideo-upload-options)de upload de eVideo. |
-|  | Predefinições de Conjunto de Lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Configuração de aplicativo/Predefinições de conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
+|  | Predefinições de Conjunto de Lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Predefinições de Configuração de aplicativo/Conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
 
 #### Definir opções de edição de imagem no upload {#setting-image-editing-options-at-upload}
 
@@ -240,7 +240,7 @@ Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode 
 
 Os arquivos do Photoshop Documento (PSD) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela Carregar).
 
-O Dynamic Media cria várias imagens de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
+O Dynamic Media cria várias imagens a partir de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
 
 Use as Opções [!UICONTROL de] corte e as Opções [!UICONTROL de Perfil]colorido, descritas acima, com as opções de upload do Photoshop.
 
@@ -303,11 +303,11 @@ Consulte [Configuração de predefinições de conjuntos de lotes para gerar aut
 
 ### Carregamentos em fluxo {#streamed-uploads}
 
-Se você fizer upload de muitos ativos para o Adobe Experience Manager, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até mesmo fazer com que algumas tarefas de upload fiquem esgotadas. [!DNL Experience Manager Assets] oferece suporte ao carregamento simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado em [!DNL Assets].
+Se você fizer upload de muitos ativos para a Adobe Experience Manager, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até fazer com que algumas tarefas de upload fiquem esgotadas. [!DNL Experience Manager Assets] oferece suporte ao carregamento simplificado de ativos. O carregamento em sequência reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo de upload de ativos grandes e a possibilidade de tempos limite são reduzidos. Por padrão, o upload em fluxo é ativado em [!DNL Assets].
 
 >[!NOTE]
 >
->O carregamento de fluxo é desabilitado para Adobe Experience Manager em execução no servidor JEE com a versão servlet-api inferior a 3.1.
+>O carregamento de fluxo é desabilitado para o Adobe Experience Manager em execução no servidor JEE com a versão servlet-api inferior a 3.1.
 
 ### Extrair arquivo ZIP contendo ativos {#extractzip}
 
@@ -357,8 +357,8 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 >[!MORELIKETHIS]
 >
->* [Pré-visualização do Dynamic Media Assets](/help/assets/previewing-assets.md).
->* [subativos](managing-linked-subassets.md#viewing-subassets)de Visualização.
+>* [Pré-visualização de ativos](/help/assets/previewing-assets.md)de mídia dinâmica.
+>* [subativos](managing-linked-subassets.md#viewing-subassets)de visualização.
 
 
 ## Editar propriedades e metadados {#editing-properties}
@@ -554,7 +554,7 @@ Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from
 
 >[!NOTE]
 >
->Para obter mais informações específicas ao Dynamic Media, consulte [Publicação dos ativos Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
+>Para obter mais informações específicas do Dynamic Media, consulte [Publicação de ativos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Navegue até o local do(s) ativo(s)/pasta que deseja publicar.
 
@@ -762,7 +762,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 >
 >Também é possível adicionar anotações a uma coleção. No entanto, se uma coleção contiver coleções-filho, você poderá adicionar anotações/comentários somente à coleção-pai. A opção Anotar não está disponível para coleções filhas.
 
-### Anotações salvas da Visualização {#viewing-saved-annotations}
+### Anotações salvas da visualização {#viewing-saved-annotations}
 
 1. Para visualização de anotações salvas para um ativo, navegue até o local do ativo e abra a página do ativo para o ativo.
 
@@ -836,7 +836,7 @@ Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas n
 1. Para configurar o serviço CQ-DAM-Handler-Gibson Font Manager, execute um dos seguintes procedimentos:
 
    * Na opção de diretório Fontes do sistema, especifique o caminho completo para o diretório de fontes no sistema. Por exemplo, se você for um usuário do Mac, poderá especificar o caminho como */Library/Fonts* na opção de diretório System Fonts (Fontes do sistema). [!DNL Experience Manager] busca as fontes desse diretório.
-   * Crie um diretório nomeado `fonts` dentro da ``crx-quickstart`` pasta. O serviço CQ-DAM-Handler-Gibson Font Manager busca automaticamente as fontes no local `crx-quickstart/fonts`. Você pode substituir esse caminho padrão na opção de diretório Fontes do servidor Adobe.
+   * Crie um diretório nomeado `fonts` dentro da `crx-quickstart` pasta. O serviço CQ-DAM-Handler-Gibson Font Manager busca automaticamente as fontes no local `crx-quickstart/fonts`. Você pode substituir esse caminho padrão na opção de diretório Fontes do servidor Adobe.
 
    * Crie uma nova pasta para fontes em seu sistema e armazene as fontes desejadas na pasta. Em seguida, especifique o caminho completo para essa pasta na opção de diretório Fontes do cliente.
 
