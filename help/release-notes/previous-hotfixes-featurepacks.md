@@ -1,9 +1,9 @@
 ---
-title: Notas de versão anteriores do Service Pack do Adobe Experience Manager 6.5
+title: Notas de versão do Service Pack anterior do Adobe Experience Manager 6.5
 description: Notas de versão específicas do Adobe Experience Manager 6.5 Service Pack 3 e anterior.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '8108'
 ht-degree: 37%
@@ -15,11 +15,11 @@ ht-degree: 37%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-O Adobe Experience Manager 6.5.4.0 é uma atualização importante que inclui novos recursos, melhorias importantes solicitadas pelo cliente e desempenho, estabilidade, melhorias de segurança, lançadas desde a disponibilização geral da versão 6.5 em **abril de 2019**. Ele pode ser instalado na parte superior do Adobe Experience Manager 6.5.
+O Adobe Experience Manager 6.5.4.0 é uma atualização importante que inclui novos recursos, melhorias importantes solicitadas pelo cliente e desempenho, estabilidade, melhorias de segurança, lançadas desde a disponibilização geral do lançamento do 6.5 em **abril de 2019**. Ele pode ser instalado no Adobe Experience Manager 6.5.
 
 Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Manager 6.5.4.0 incluem:
 
-* Os ativos Adobe Experience Manager agora estão configurados com o Brand Portal por meio do Console de E/S do Adobe.
+* O Adobe Experience Manager Assets agora está configurado com o Brand Portal por meio do Console de E/S do Adobe.
 
 * Uma nova etapa [Gerar saída](../forms/using/aem-forms-workflow-step-reference.md) imprimível agora está disponível para workflows Adobe Experience Manager Forms.
 
@@ -31,13 +31,13 @@ Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Mana
 
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.10.8.
 
-* Agora você pode sincronizar subárvores de conteúdo seletivo no modo *Dynamic Media - Scene7 em vez de todas as subárvores disponíveis em* `content/dam`.
+* Agora é possível sincronizar subárvores de conteúdo seletivo para o modo *Mídia* dinâmica - Scene7 em vez de todos os disponíveis em `content/dam`.
 
 * A integração do modelo de dados de formulário com o serviço da Web SOAP agora oferece suporte a grupos de escolha ou atributos em elementos.
 
 * A entrada ou saída SOAP e estruturas de dados complexas agora suportam Substituição de Grupo Dinâmico.
 
-Para obter uma lista completa dos recursos e dos principais destaques introduzidos nos service packs mais recentes, consulte [Novidades dos service packs](new-features-latest-service-pack.md)do Adobe Experience Manager 6.5.
+Para obter uma lista completa dos recursos e dos principais destaques introduzidos nos service packs mais recentes, consulte [Novidades dos service packs](new-features-latest-service-pack.md)Adobe Experience Manager 6.5.
 
 ### Sites {#sites-fixes}
 
@@ -87,7 +87,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * O botão para acionar o fluxo de trabalho na página de coleta de ativos está desativado (NPR-32471).
 
-* Uma pasta sem nome é criada no SPS (Scene7 Publishing System) ao mover um ativo de uma pasta para outra no Experience Manager com a configuração Dynamic Media Scene7 (NPR-32440).
+* Uma pasta sem nome é criada no SPS (Scene7 Publishing System) ao mover um ativo de uma pasta para outra no Experience Manager com a configuração do Dynamic Media Scene7 (NPR-32440).
 
 * A ação para mover todos os ativos (usando Selecionar tudo e mover) para uma pasta que contém os ativos publicados falha com erro (NPR-32366).
 
@@ -119,11 +119,11 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * A página de resultados da pesquisa de interface de toque (feita pelo Omnisearch) rola automaticamente para cima e perde a posição de rolagem do usuário (NPR-31307).
 
-* A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução Dynamic Media Scene7 (CQ-4286705).
+* A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução do Dynamic Media Scene7 (CQ-4286705).
 
 * Os ativos demoram muito para serem processados pelo processo de upload em lote do Scene7 (CQ-4286445).
 
-* O botão Salvar não importa o Conjunto Remoto quando o usuário não tiver feito nenhuma alteração no Editor definido no Dynamic Media Client (CQ-4285690).
+* O botão Salvar não importa o Conjunto Remoto quando o usuário não tiver feito nenhuma alteração no Editor de Conjunto no Cliente de Mídia Dinâmica (CQ-4285690).
 
 * A miniatura de ativos 3D não é informativa quando um modelo 3D suportado é assimilado ao Experience Manager (CQ-4283701).
 
@@ -141,9 +141,9 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * O controle do mouse muda para o campo de filtro anterior em vez de permanecer no campo de filtro existente enquanto pesquisa ativos usando o painel Filtro (NPR-32538).
 
-* Marcação Platform: Pesquise por tags digitando nos campos de tag mostra tags fora dos limites raiz e não respeita a propriedade `rootPath` dos campos de tag (NPR-31895).
+* Marcação de plataforma: Pesquise por tags digitando nos campos de tag mostra tags fora dos limites raiz e não respeita a propriedade `rootPath` dos campos de tag (NPR-31895).
 
-* Interface do usuário do Platform: O navegador de caminho quebra se um caminho inválido for adicionado no campo de texto (NPR-31884).
+* Interface do usuário da plataforma: O navegador de caminho quebra se um caminho inválido for adicionado no campo de texto (NPR-31884).
 
 * A notificação fica oculta atrás de um menu fixo na seleção da página (NPR-31628).
 
@@ -179,7 +179,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 ### Campaign Targeting {#campaign-targeting-6540}
 
-* Falha na configuração da nuvem de Públicos alvos com o erro de obtenção de mboxes (CQ-4279880).
+* Falha na configuração da nuvem de públicos alvos com o erro de obtenção de mboxes (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal-6540}
 
@@ -191,7 +191,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * Cancelar a publicação do schema de metadados preenche uma mensagem de erro, embora o schema seja removido do backend.
 
-* A imagem de Pré-visualização não é exibida para um ativo publicado (CQ-4285886).
+* A imagem de pré-visualização não é exibida para um ativo publicado (CQ-4285886).
 
 * O usuário não pode publicar ou cancelar a publicação de ativos contendo aspas simples no nome (CQ-4272686).
 
@@ -203,7 +203,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * O formulário Criar membro é exibido como uma página em branco (NPR-31997).
 
-* O usuário não pode visualização o relatório da Analytics na instância do autor (NPR-30913).
+* O usuário não pode visualização o relatório do Analytics na instância do autor (NPR-30913).
 
 ### Oak - Indexação e Query {#oak-indexing-6540}
 
@@ -223,9 +223,9 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * Forms móvel: O botão Enviar é exibido como expandido em tamanho ao renderizar um formulário XDP em uma versão HTML (NPR-32514).
 
-* Serviços do Documento: Problemas de acesso ao URL para Cartas e outras páginas após a aplicação do Service Pack 2 (NPR-32508, NPR-32509).
+* Serviços do documento: Problemas de acesso ao URL para Cartas e outras páginas após a aplicação do Service Pack 2 (NPR-32508, NPR-32509).
 
-* Serviços do Documento: Se o número de transações em um servidor exceder um limite específico, a conversão de HTML em PDF falhará e as configurações de tipo de arquivo serão removidas do [!DNL Forms] servidor (NPR-32204).
+* Serviços do documento: Se o número de transações em um servidor exceder um limite específico, a conversão de HTML em PDF falhará e as configurações de tipo de arquivo serão removidas do [!DNL Forms] servidor (NPR-32204).
 
 * Forms adaptável: A ferramenta de acessibilidade do navegador relata falhas em formulários adaptáveis de acordo com as diretrizes WCAG2 Nível AA (NPR-32312, NPR-32309, CQ-4285439).
 
@@ -235,7 +235,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * Bancada: Uma mensagem de erro é exibida ao usar a operação Obter propriedades do PDF para o serviço Utilitários do PDF (NPR-32150).
 
-* Segurança do Documento: Um arquivo PDF protegido falha ao abrir offline com a opção DisableGlobalOfflineSynchronizationData definida como True (NPR-32078).
+* Segurança do documento: Um arquivo PDF protegido falha ao abrir offline com a opção DisableGlobalOfflineSynchronizationData definida como True (NPR-32078).
 
 * Designer: Se a opção de marcação estiver ativada, a borda do subformulário desaparecerá na saída PDF gerada (NPR-32547, NPR-31983, NPR-31950).
 
@@ -301,7 +301,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * As referências de ativos em coleções não são atualizadas quando os ativos referenciados são movidos para outro local, nos casos em que os mesmos ativos são referenciados por coleção diferente por usuários diferentes (NPR-31486).
 
-* As tags IPTC do Duplicado são adicionadas aos metadados do ativo (NPR-31328).
+* As tags IPTC do duplicado são adicionadas aos metadados do ativo (NPR-31328).
 
 * A contagem de resultados da pesquisa não é atualizada corretamente quando uma pesquisa é acionada a partir do painel de filtros (NPR-31316).
 
@@ -315,7 +315,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * A seleção de pasta Criar > item de ação FileUpload está ausente quando a ACL para Negar `jcr:removeChildNodes` e `jcr:removeNode` no caminho é aplicada para um usuário (NPR-30840).
 
-* workflows DAM entram em estado obsoleto quando determinados ativos mp4 são carregados, fazendo com que todos os workflows restantes entrem em estado obsoleto (NPR-30662).
+* Workflows DAM entram em estado obsoleto quando determinados ativos mp4 são carregados, fazendo com que todos os workflows restantes entrem em estado obsoleto (NPR-30662).
 
 * Erro de falta de memória é observado quando um grande arquivo PDF (de vários Gigabytes) é carregado no DAM e seus subativos são processados (NPR-30614).
 
@@ -421,9 +421,9 @@ Remove one mention of this fix.
 
 * As atualizações na configuração de tamanho do buffer do serviço HTTP baseado em Java não são salvas (NPR-30925).
 
-* O QueryBuilder agora suporta orderby ``fn:name()`` em query xpath (NPR-31322).
+* O QueryBuilder agora suporta orderby `fn:name()` em query xpath (NPR-31322).
 
-* A árvore de ativação do Duplicado é criada ao atualizar da versão [!DNL Experience Manager] 6.3 (NPR-31513).
+* A árvore de ativação do duplicado é criada ao atualizar da versão [!DNL Experience Manager] 6.3 (NPR-31513).
 
 * As solicitações encaminhadas não preservam cabeçalhos de resposta que são definidos durante a autenticação Sling (NPR-30013).
 
@@ -431,7 +431,7 @@ Remove one mention of this fix.
 
 * Um erro é exibido ao anexar um arquivo ZIP a uma [!DNL Experience Manager Communities] publicação devido a diferentes versões do pacote Apache POI e Apache Tika (NPR-31018).
 
-* O ``org.apache.sling.distribution.api`` pacote está oculto no gerenciador de configuração e, portanto, não está disponível para pacotes personalizados (NPR-31720).
+* O `org.apache.sling.distribution.api` pacote está oculto no gerenciador de configuração e, portanto, não está disponível para pacotes personalizados (NPR-31720).
 
 ### Projetos {#projects}
 
