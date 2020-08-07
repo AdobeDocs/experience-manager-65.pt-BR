@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1afda7c23dd71f7ba40c295c13cf24a4d52dbd1c
+source-git-commit: e6d02717811ac78b77dc459814941d654e94733f
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 0%
@@ -37,11 +37,13 @@ ht-degree: 0%
    >   
    * a área de trabalho padrão.
    >   * um espaço de trabalho nomeado, especificado na Configuração da nuvem.
-      >     **Observação:** Exportar para espaços de trabalho específicos requer o Adobe Target Premium.
+   >   * **Observação:** Exportar para espaços de trabalho específicos requer o Adobe Target Premium.
+>
 >* AEM deve ser [integrado ao Adobe Target usando E/S](/help/sites-administering/integration-ims-adobe-io.md)do Adobe.
 
 >
 >
+
 AEM 6.5.0.0 e 6.5.1.0:
 >
 >* Os Fragmentos de experiência AEM são exportados para a área de trabalho padrão do Adobe Target.
