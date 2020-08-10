@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
 workflow-type: tm+mt
-source-wordcount: '5860'
+source-wordcount: '5858'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 5%
 | [Compreender a interface de usuário de pesquisa](#searchui) | [Pesquisa visual ou de semelhança](#configvisualsearch) | [Verificar propriedades e metadados de um ativo](#checkinfo) |
 | [Sugestões de pesquisa](#searchsuggestions) | [Metadados obrigatórios](#mandatorymetadata) | [Download](#download) |
 | [Compreender os resultados e o comportamento da pesquisa](#searchbehavior) | [Modificar aspectos de pesquisa](#searchfacets) | [Atualizações de metadados em massa](#metadataupdates) |
-| [Classificação de pesquisa e aumento](#searchrank) | [extração de texto](#extracttextupload) | [Coleções inteligentes](#collections) |
+| [Classificação de pesquisa e aumento](#searchrank) | [Extração de texto](#extracttextupload) | [Coleções inteligentes](#collections) |
 | [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Previsões personalizadas](#custompredicates) | [Entenda os resultados inesperados e solucione problemas](#troubleshoot-unexpected-search-results-and-issues) |
 | [Pesquise de outras soluções e aplicativos](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[aplicativo de desktop Experience Manager](#desktopapp)</li><li>[Imagens do Adobe Stock](#adobestock)</li><li>[Ativos do Dynamic Media](#dynamicmedia)</li></ul> |  |  |
 | [Seletor de ativos](#assetpicker) |  |  |
@@ -75,7 +75,7 @@ Quando os resultados forem muitos ativos, [!DNL Experience Manager] exibirá os 
 
 ### Resultados com e sem tags inteligentes aprimoradas {#withsmarttags}
 
-Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave mulheres em execução. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. Os seguintes query de pesquisa retornam os mesmos resultados:
+Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. Os seguintes query de pesquisa retornam os mesmos resultados:
 
 * `woman running`
 * `woman.running`
@@ -319,7 +319,7 @@ Use aspas de duplo em torno de palavras-chave para localizar ativos que contenha
 
 *Figura: Uso do traço para pesquisar ativos que não contenham uma palavra-chave excluída.*
 
-## tarefas de configuração e administração relacionadas à funcionalidade de pesquisa {#configadmin}
+## Tarefas de configuração e administração relacionadas à funcionalidade de pesquisa {#configadmin}
 
 ### Pesquisar configurações de índice {#searchindex}
 
@@ -396,7 +396,7 @@ Você pode procurar ativos digitais com base em uma ou mais das seguintes propri
 
 Você pode fazer o seguinte com os ativos que pesquisou no Experience Manager:
 
-* Propriedades de metadados de Visualização e outras informações.
+* Propriedades de metadados de visualização e outras informações.
 * Baixe um ou mais ativos.
 * Use as Ações da área de trabalho para abrir esses ativos no aplicativo da área de trabalho.
 * Crie coleções inteligentes.
@@ -457,6 +457,6 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 >[!MORELIKETHIS]
 >
 >* [Guia de implementação de pesquisa de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
->* [Configuração avançada de predições de pesquisa de tags e valores múltiplos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
+>* [Configuração avançada para aumentar os resultados da pesquisa](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configurar pesquisa de tradução inteligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
