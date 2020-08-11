@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
@@ -27,19 +30,19 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando as bibliotecas [do lado do cliente](rating-basics.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Rating` componente será exibido.
 
-![chlimage_1-493](assets/chlimage_1-493.png)
+![avaliação](assets/rating.png)
 
 ## Configuração da classificação {#configuring-rating}
 
 Selecione o componente inserido a ser acessado e selecione o `Rating` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configure-new](assets/configure-new.png)
 
 Na guia **[!UICONTROL Textos e etiquetas]** , especifique o identificador interno para a Classificação.
 
-![chlimage_1-495](assets/chlimage_1-495.png)
+![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Nome]** Tally (*Obrigatório*) Um nome simples para o `Rating`que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
+**[!UICONTROL Nome]** Tally (*Obrigatório*) Um nome simples para o `Rating` que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
 
 ## Experiência com o Visitante do site {#site-visitor-experience}
 
