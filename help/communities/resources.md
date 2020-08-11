@@ -10,18 +10,21 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+workflow-type: tm+mt
+source-wordcount: '2979'
+ht-degree: 5%
 
 ---
 
 
 # Console de recursos de ativação {#enablement-resources-console}
 
-Para o AEM Communities, o console Recursos é onde os Gerentes de [ativação](users.md) criam, gerenciam e atribuem recursos aos membros de um site da comunidade de ativação.
+Para a AEM Communities, o console Recursos é onde os Gerentes de [ativação](users.md) criam, gerenciam e atribuem recursos aos membros de um site da comunidade de ativação.
 
 ## Requisitos {#requirements}
 
-Antes de adicionar recursos de ativação para um site da comunidade, as instâncias do AEM devem ser configuradas corretamente, incluindo:
+Antes de adicionar recursos de ativação para um site da comunidade, as instâncias AEM devem ser configuradas corretamente, incluindo:
 
 * SCORM
 * FFmpeg
@@ -63,7 +66,7 @@ Um caminho de aprendizado é um conjunto lógico de recursos de ativação agrup
 
 Quando um site da comunidade é criado, o nome fornecido ao site para o URL é usado na criação dos grupos [de usuários específicos do](users.md) site configurados com várias permissões para várias funções. Todos esses grupos criados automaticamente recebem o prefixo `Community <site-name>`.
 
-Um desses grupos de usuários é o `Community <site-name> Members` grupo, que identifica os usuários registrados no ambiente de publicação como membros da comunidade. Consulte o tutorial [Introdução ao AEM Communities para obter um exemplo da Ativação](getting-started-enablement.md) .
+Um desses grupos de usuários é o `Community <site-name> Members` grupo, que identifica os usuários registrados no ambiente de publicação como membros da comunidade. Consulte o tutorial [Introdução ao AEM Communities para Ativação](getting-started-enablement.md) para obter um exemplo.
 
 Para comunidades [de](overview.md#egagementcommunity)envolvimento, é razoável permitir que os visitantes do site se registrem automaticamente ou usem o login social, e nesse ponto eles são adicionados automaticamente ao grupo de membros.
 
@@ -75,9 +78,9 @@ Para comunidades [de](overview.md#enablement-community)ativação, é recomendá
 
 No ambiente do autor, para acessar o console Recursos
 
-* Da navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
+* Da navegação global: **[!UICONTROL Navigation]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+   ![sites de ativação](assets/enablement-sites.png)
 
 ### Selecionar um site da comunidade {#select-a-community-site}
 
@@ -87,25 +90,25 @@ Os recursos de ativação são criados para um site da comunidade específica de
 
 Depois que um site da comunidade específica é selecionado, todos os recursos de ativação e caminhos de aprendizado existentes são acessíveis para gerenciamento e modificação, e novos recursos de ativação e caminhos de aprendizado podem ser criados.
 
-![chlimage_1-164](assets/chlimage_1-164.png)
+![recursos comunitários](assets/community-resources.png)
 
 #### Pesquisar {#search-features}
 
-![chlimage_1-165](assets/chlimage_1-165.png)
+![site de pesquisa](assets/searchsite.png)
 
 Selecione o ícone de alternância do painel lateral para procurar um recurso de ativação ou um caminho de aprendizado. Quando selecionada, um painel de pesquisa é aberto no lado esquerdo do console e fornece uma caixa de texto na qual os termos de pesquisa podem ser inseridos.
 
-![chlimage_1-166](assets/chlimage_1-166.png)
+![resultado da pesquisa](assets/search-result.png)
 
 #### Modo de seleção {#selection-mode}
 
 Para selecionar vários recursos de ativação, selecione o primeiro passando o mouse sobre o cartão e selecionando o ícone de marca de seleção. Depois de selecionado, a seleção de qualquer outro cartão o adicionará ao grupo de seleção. Selecionar uma segunda vez cancela a seleção do cartão.
 
-![chlimage_1-167](assets/chlimage_1-167.png)
+![modo de seleção](assets/selection-mode.png)
 
 ## Criar um recurso {#create-a-resource}
 
-![chlimage_1-168](assets/chlimage_1-168.png)
+![create-resource](assets/create-resource1.png)
 
 Para adicionar um novo recurso de ativação ao site da comunidade
 
@@ -124,7 +127,7 @@ Quando o recurso faz parte de um curso, um caminho de aprendizado, os membros de
 
 ### 1 Basic Info {#basic-info}
 
-![chlimage_1-169](assets/chlimage_1-169.png)
+![resource-basicinfo](assets/resource-basicinfo.png)
 
 * **[!UICONTROL Adicionar]**
 
@@ -154,27 +157,27 @@ Quando o recurso faz parte de um curso, um caminho de aprendizado, os membros de
 
 * **[!UICONTROL Ativo pequeno]**
 
-   (*Opcional*) Selecionado dos ativos AEM. Uma imagem em miniatura para representar o recurso no ambiente de publicação, como em um catálogo.
+   (*Opcional*) Selecionado do AEM Assets. Uma imagem em miniatura para representar o recurso no ambiente de publicação, como em um catálogo.
 
 * **[!UICONTROL Ativo grande]**
 
-   (*Opcional*) Selecionado dos ativos AEM. Uma imagem grande para representar o recurso no ambiente de publicação, como na página principal de um recurso.
+   (*Opcional*) Selecionado do AEM Assets. Uma imagem grande para representar o recurso no ambiente de publicação, como na página principal de um recurso.
 
 * **[!UICONTROL Ativo do conteúdo de fragmento]**
 
-   (*Opcional*) Selecionado dos ativos AEM. Um fragmento de conteúdo que pode ser referenciado no ambiente de publicação, mas não está em uso por padrão.
+   (*Opcional*) Selecionado do AEM Assets. Um fragmento de conteúdo que pode ser referenciado no ambiente de publicação, mas não está em uso por padrão.
 
 * Selecione **[!UICONTROL Próximo]**
 
 ### 2 Add Content {#add-content}
 
-![chlimage_1-170](assets/chlimage_1-170.png)
+![resource-addcontent](assets/resource-addcontent.png)
 
 Embora pareça que vários recursos de ativação podem ser selecionados, somente um é permitido.
 
 Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de escolha do recurso identificando a fonte.
 
-![chlimage_1-171](assets/chlimage_1-171.png)
+![upload-resource](assets/upload-resource1.png)
 
 * **[!UICONTROL Fazer upload a partir de meus arquivos locais]**
 
@@ -228,7 +231,7 @@ Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de es
 
 #### Exemplo de um recurso de vídeo adicionado {#example-of-an-added-video-resource}
 
-![chlimage_1-172](assets/chlimage_1-172.png)
+![add-video](assets/add-video.png)
 
 * **[!UICONTROL Imagem de capa do recurso]**
 
@@ -240,7 +243,7 @@ Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de es
 
 ### 3 Settings {#settings}
 
-![chlimage_1-173](assets/chlimage_1-173.png)
+![configurações de recursos](assets/resource-settings.png)
 
 >[!NOTE]
 >
@@ -283,7 +286,7 @@ Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de es
 
 ### 4 Assignments {#assignments}
 
-![chlimage_1-174](assets/chlimage_1-174.png)
+![atribuições de recursos](assets/resource-assignments.png)
 
 * **[!UICONTROL Adicionar responsáveis]**
 
@@ -291,13 +294,13 @@ Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de es
 
 * Selecione **[!UICONTROL Criar]**.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![resourceinfo](assets/resourceinfo.png)
 
 A criação bem-sucedida do recurso de ativação retorna ao console Recursos com o recurso recém-criado selecionado. Desse console, é possível [gerenciar o recurso](#managing-a-resource).
 
 ## Create a Learning Path {#create-a-learning-path}
 
-![chlimage_1-176](assets/chlimage_1-176.png)
+![add-learning-path](assets/add-learning-path.png)
 
 Para adicionar um novo caminho de aprendizado ao site da comunidade
 
@@ -318,7 +321,7 @@ Para os recursos de ativação incluídos em um caminho de aprendizado, as atrib
 
 ### Informações básicas {#basic-info-1}
 
-![chlimage_1-177](assets/chlimage_1-177.png)
+![learningpath-basic](assets/learningpath-basic1.png)
 
 * **[!UICONTROL Adicionar]**
 
@@ -348,21 +351,21 @@ Para os recursos de ativação incluídos em um caminho de aprendizado, as atrib
 
 * **[!UICONTROL Ativo pequeno]**
 
-   (*Opcional*) Selecionado dos ativos AEM. Uma imagem em miniatura para representar o recurso no ambiente de publicação, como em um catálogo.
+   (*Opcional*) Selecionado do AEM Assets. Uma imagem em miniatura para representar o recurso no ambiente de publicação, como em um catálogo.
 
 * **[!UICONTROL Ativo grande]**
 
-   (*Opcional*) Selecionado dos ativos AEM. Uma imagem grande para representar o recurso no ambiente de publicação, como na página principal de um recurso.
+   (*Opcional*) Selecionado do AEM Assets. Uma imagem grande para representar o recurso no ambiente de publicação, como na página principal de um recurso.
 
 * **[!UICONTROL Ativo do conteúdo de fragmento]**
 
-   (*Opcional*) Selecionado dos ativos AEM. Um fragmento de conteúdo que pode ser referenciado no ambiente de publicação, mas não está em uso por padrão.
+   (*Opcional*) Selecionado do AEM Assets. Um fragmento de conteúdo que pode ser referenciado no ambiente de publicação, mas não está em uso por padrão.
 
 * Selecione **[!UICONTROL Próximo]**.
 
 ### Adicionar pré-requisitos {#add-prerequisites}
 
-![chlimage_1-178](assets/chlimage_1-178.png)
+![learningpath-pré-requisitos](assets/learningpath-prerequisites.png)
 
 * **[!UICONTROL Pré-requisito dos Caminhos de aprendizagem]**
 
@@ -372,7 +375,7 @@ Para os recursos de ativação incluídos em um caminho de aprendizado, as atrib
 
 ### Adicionar recursos {#add-resources}
 
-![chlimage_1-179](assets/chlimage_1-179.png)
+![learningpath-address](assets/learningpath-addresource.png)
 
 * **[!UICONTROL Impor ordem no Caminho de aprendizagem]**
 
@@ -391,7 +394,7 @@ Para os recursos de ativação incluídos em um caminho de aprendizado, as atrib
 
 ### Configurações {#settings-1}
 
-![chlimage_1-180](assets/chlimage_1-180.png)
+![learningpath-settings1](assets/learningpath-settings1.png)
 
 * **[!UICONTROL Adicionar inscrições]**
 
@@ -419,7 +422,7 @@ Para gerenciar um único recurso de ativação:
 
 Para o recurso de ativação selecionado, é possível:
 
-* Propriedades da Visualização (padrão)
+* Propriedades da visualização (padrão)
 * Editar propriedades
 * Excluir
 * Publicação
@@ -429,7 +432,7 @@ Para carregar uma nova versão do recurso de ativação, é recomendável criar 
 
 ### Editar recurso {#edit-resource}
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![edit-resource](assets/edit-resource.png)
 
 Ao selecionar o ícone de lápis, as etapas mostradas para criar um recurso de ativação são disponibilizadas para que qualquer uma das informações fornecidas possa ser modificada.
 
@@ -437,13 +440,13 @@ Se a única alteração for modificar atribuições na etapa Configurações, sa
 
 ### Excluir recurso {#delete-resource}
 
-![chlimage_1-182](assets/chlimage_1-182.png)
+![delete-resource](assets/delete-resource.png)
 
 Ao selecionar o ícone da lixeira, o recurso de ativação será `Deleted` após a confirmação.
 
 ### Publicação {#publish}
 
-![chlimage_1-183](assets/chlimage_1-183.png)
+![publish-resource](assets/publish-resource1.png)
 
 Antes que os alunos possam ver um recurso de ativação atribuído, ele deve ser publicado:
 
@@ -455,25 +458,25 @@ Embora o diálogo afirme que a ação está na fila, geralmente é publicada ime
 
 ### Cancelar publicação {#unpublish}
 
-![chlimage_1-184](assets/chlimage_1-184.png)
+![cancelar publicação](assets/unpublish.png)
 
 Para tornar temporariamente os recursos de ativação inacessíveis aos membros no ambiente de publicação sem excluí-lo, use o ícone de mundo para `Unpublish` o recurso.
 
 ### Relatório {#report}
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![relatórios de recursos](assets/resource-reports.png)
 
 O ícone Relatório fornece acesso aos relatórios gerados quando os alunos interagem com seus recursos de ativação atribuídos no ambiente de publicação. O relatório varia dependendo do tipo de recurso.
 
 Para todos os caminhos de aprendizado, é possível visualização um relatório com base em recursos ou alunos ( `User Report`.)
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![learningpath-info](assets/learningpath-info1.png)
 
-Este Relatório é especificamente para o recurso de ativação ou caminho de aprendizado atual. A profundidade do relatórios fornecido depende se o [Adobe Analytics](analytics.md) está licenciado e habilitado para o site da comunidade. Os relatórios [Linha](#timeline)do tempo, [Envolvimento](#viewer-engagement)do visualizador e [Envolvimento pelo dispositivo](#engagement-by-device) são importados do Adobe Analytics com base no intervalo [de](analytics.md#report-importer)sondagem.
+Este Relatório é especificamente para o recurso de ativação ou caminho de aprendizado atual. A profundidade do relatórios fornecido depende se a [Adobe Analytics](analytics.md) está licenciada e habilitada para o site da comunidade. Os relatórios [Linha](#timeline)do tempo, [Envolvimento](#viewer-engagement)do visualizador e [Envolvimento pelo dispositivo](#engagement-by-device) são importados da Adobe Analytics com base no intervalo [de](analytics.md#report-importer)sondagem.
 
-Para todos os recursos de ativação, independentemente de o Adobe Analytics estar ou não ativado, há relatórios sobre Status [e](#assignee-status) Classificações [do](#ratings) destinatário, bem como uma tabela Resumo [do](#report-summary) relatório.
+Para todos os recursos de ativação, independentemente de a Adobe Analytics estar ou não ativada, há relatórios sobre Status [e](#assignee-status) Classificações [do](#ratings) Destinatário, bem como uma tabela Resumo [do](#report-summary) Relatório.
 
-![chlimage_1-187](assets/chlimage_1-187.png)
+![relatório de recursos](assets/resource-report1.png)
 
 #### Linha do tempo {#timeline}
 
