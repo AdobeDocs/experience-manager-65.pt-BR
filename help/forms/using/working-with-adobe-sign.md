@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70052a5a8cba16dd2d73179e6e1d617347d716bc
+source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
 workflow-type: tm+mt
-source-wordcount: '3679'
+source-wordcount: '3643'
 ht-degree: 0%
 
 ---
@@ -22,27 +22,27 @@ ht-degree: 0%
 
 A Adobe Sign habilita workflows de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os workflows para processar documentos para áreas legais, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e outras.
 
-Em um cenário típico de formulários adaptáveis e Adobe Sign, um usuário preenche um formulário adaptável para solicitar um serviço. Por exemplo, um pedido de hipoteca e de cartão de crédito requer assinaturas legais de todos os mutuários e co-requerentes. Para habilitar workflows de assinatura eletrônica para cenários semelhantes, é possível integrar o Adobe Sign a AEM Forms. Mais alguns exemplos são: você pode usar o Adobe Sign para:
+Em um cenário típico de formulários adaptáveis e Adobe Sign, um usuário preenche um formulário adaptável para solicitar um serviço. Por exemplo, um pedido de hipoteca e de cartão de crédito requer assinaturas legais de todos os mutuários e co-requerentes. Para habilitar workflows de assinatura eletrônica para cenários semelhantes, é possível integrar o Adobe Sign ao AEM Forms. Mais alguns exemplos são: você pode usar o Adobe Sign para:
 
 * Feche negócios de qualquer dispositivo com processos de propostas, cotações e contratos totalmente automatizados.
 * Conclua os processos de recursos humanos mais rapidamente e dê aos seus funcionários as experiências digitais.
 * Reduza o tempo de ciclo de contratos e integre seus fornecedores mais rapidamente.
 * Crie workflows digitais que automatizam processos comuns.
 
-A integração do Adobe Sign com AEM Forms suporta:
+A integração do Adobe Sign com o AEM Forms suporta:
 
-* workflows de assinatura de usuário único e múltiplo
-* workflows de assinatura sequenciais e simultâneos
+* Workflows de assinatura de usuário único e múltiplo
+* Workflows de assinatura sequenciais e simultâneos
 * Experiências de assinatura em forma e fora de forma
 * Assinar formulários como um usuário anônimo ou conectado
-* Processos de assinatura dinâmica (integração com o fluxo de trabalho do AEM Forms)
+* Processos de assinatura dinâmica (integração com o fluxo de trabalho da AEM Forms)
 * Autenticação por meio de uma base de conhecimento, telefone e perfis sociais
 
 ## Pré-requisitos {#prerequisites}
 
 Antes de usar o Adobe Sign em um formulário adaptável:
 
-* Verifique se o serviço de nuvem do AEM Forms está configurado para usar o Adobe Sign. Para obter detalhes, consulte [Integrar o Adobe Sign a AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+* Verifique se o serviço de nuvem da AEM Forms está configurado para usar o Adobe Sign. Para obter detalhes, consulte [Integrar o Adobe Sign ao AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 * Mantenha a lista dos signatários prontos. Você precisa de pelo menos um endereço de email para cada assinante.
 
 ## Configurar o Adobe Sign para um formulário adaptável {#configure-adobe-sign-for-an-adaptive-form}
@@ -75,7 +75,7 @@ Execute as seguintes etapas para criar um formulário adaptável habilitado para
 
    1. Especifique o **Nome** e o **Título** para o formulário adaptável.
 
-   1. Selecione o container [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuração criado ao configurar o Adobe Sign com AEM Forms.
+   1. Selecione o container [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuração criado ao configurar o Adobe Sign com o AEM Forms.
 
 1. Na guia Modelo **[!UICONTROL de]** formulário, selecione uma das seguintes opções:
 
@@ -91,7 +91,7 @@ Execute as seguintes etapas para usar o Adobe Sign em um formulário adaptável 
 
 1. Navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Selecione o formulário adaptável e toque em **[!UICONTROL Propriedades]**.
-1. Na guia **[!UICONTROL Básico]** , selecione o container [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuração criado ao configurar o Adobe Sign com AEM Forms.
+1. Na guia **[!UICONTROL Básico]** , selecione o container [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuração criado ao configurar o Adobe Sign com o AEM Forms.
 1. Na guia Modo **[!UICONTROL de]** formulário, selecione uma das seguintes opções:
 
    * Selecione o modelo de formulário **[!UICONTROL Associar como o Documento do modelo]** de Registro e selecione um Documento do modelo de Registro. Se você usar um formulário adaptativo baseado em modelo de formulário, os documentos enviados para assinatura exibirão apenas os campos que se baseiam no modelo de formulário associado. Não exibe todos os campos do formulário adaptável.
@@ -126,7 +126,7 @@ Execute as seguintes etapas para adicionar campos a um formulário adaptável e 
 
 1. Toque no ícone **Adobe Sign Field** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) . Ele exibe opções para selecionar e adicionar campos do Adobe Sign.
 
-   Expanda o campo **suspenso Tipo** para selecionar um campo Adobe Sign e toque no ícone ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) concluído para adicionar o campo selecionado ao bloco Adobe Sign. O campo suspenso **Tipo** inclui os tipos de campos Assinatura, Informações do assinante e Dados. Integração do Adobe Sign com campos de suporte do AEM Forms listados somente na caixa suspensa Tipo. Para obter informações detalhadas sobre campos do Adobe Sign, consulte a documentação [do](https://helpx.adobe.com/sign/help/field-types.html)Adobe Sign.
+   Expanda o campo **suspenso Tipo** para selecionar um campo Adobe Sign e toque no ícone ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) concluído para adicionar o campo selecionado ao bloco Adobe Sign. O campo suspenso **Tipo** inclui os tipos de campos Assinatura, Informações do assinante e Dados. Integração do Adobe Sign com os campos de suporte do AEM Forms listados somente na caixa suspensa Tipo. Para obter informações detalhadas sobre campos do Adobe Sign, consulte a documentação [do](https://helpx.adobe.com/sign/help/field-types.html)Adobe Sign.
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -146,7 +146,7 @@ A Adobe Sign não está ativada para um formulário adaptável. Execute as segui
 
 ### Selecionar o Cloud Service Adobe Sign e a ordem de assinatura {#selectadobesigncloudserviceforanadaptiveform}
 
-Você pode configurar vários serviços Adobe Sign para uma instância de AEM Forms. É aconselhável ter um conjunto separado de serviços para cada função (Recursos Humanos, Finanças e muito mais). Facilita o rastreamento e o relatórios de documentos assinados. Por exemplo, um banco tem vários departamentos. Você pode ter uma configuração separada para cada departamento para melhor rastreamento dos documentos.
+Você pode configurar vários serviços Adobe Sign para uma instância do AEM Forms. É aconselhável ter um conjunto separado de serviços para cada função (Recursos Humanos, Finanças e muito mais). Facilita o rastreamento e o relatórios de documentos assinados. Por exemplo, um banco tem vários departamentos. Você pode ter uma configuração separada para cada departamento para melhor rastreamento dos documentos.
 
 Um documento também pode ter vários signatários. Por exemplo, uma solicitação de cartão de crédito pode ter vários candidatos. Um banco requer assinaturas de todos os candidatos antes de iniciar o processamento do pedido. Para cenários com vários signatários, você pode optar por assinar o documento em ordem sequencial ou simultânea.
 
@@ -156,7 +156,7 @@ Execute as seguintes etapas para selecionar um serviço em nuvem e a ordem de as
 
 1. No navegador de conteúdo, toque em Container **de** formulário e toque no ícone **Configurar** ![configuração](assets/configure.png) . Ele abre o navegador de propriedades e exibe as propriedades do container de formulário adaptável.
 1. No navegador de propriedades, expanda a opção Assinatura **** eletrônica e selecione a opção **Ativar Adobe Sign** . Ele habilita o Adobe Sign para um formulário adaptável.
-1. Selecione um serviço em nuvem na lista já configurada dos Cloud Service Adobe Sign.
+1. Selecione um serviço em nuvem na lista já configurada dos Cloud Services Adobe Sign.
 
    Se a lista **Adobe Sign Cloud Service** estiver vazia, siga o artigo [Configurar o Adobe Sign com AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) para configurar o serviço.
 
@@ -184,7 +184,7 @@ Você pode ter apenas um ou vários signatários para um formulário adaptável.
 
    * **O assinante e a pessoa que preenche o formulário são os mesmos?:** Selecione **Sim** se o usuário e o primeiro assinante forem a mesma pessoa. Se a opção estiver definida como **Não,** não use o componente de etapa de assinatura no formulário adaptável. Se o formulário contiver um componente Etapa de assinatura, o campo será automaticamente definido como Sim.
 
-   * **Endereço de email do assinante:** Especifique o endereço de email do assinante. O assinante recebe para ser assinado documentos/formulário no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, AEM perfil do usuário conectado ou inserir manualmente um endereço de email. Trata-se de um passo obrigatório. Verifique se o endereço de email do primeiro assinante ou do único assinante (no caso de um único assinante) não é idêntico à conta da Adobe Sign usada para configurar AEM cloud services.
+   * **Endereço de email do assinante:** Especifique o endereço de email do assinante. O assinante recebe para ser assinado documentos/formulário no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, AEM perfil do usuário conectado ou inserir manualmente um endereço de email. Trata-se de um passo obrigatório. Verifique se o endereço de email do primeiro assinante ou do único assinante (no caso de um único assinante) não é idêntico à conta da Adobe Sign usada para configurar os serviços em nuvem do AEM.
 
    * **Método de autenticação do assinante:** Especifique o método para autenticar um usuário antes de abrir um formulário para assinatura. Você pode escolher entre autenticação por telefone, base de conhecimento e baseada em identidade social.
    >[!NOTE]
@@ -206,9 +206,10 @@ Depois que você adicionar campos Adobe Sign a um formulário adaptável, ativar
 
 Além disso, um formulário adaptativo habilitado para Adobe Sign é enviado somente depois que todos os assinantes assinam o formulário. Você pode encontrar um formulário parcialmente assinado na seção Assinatura pendente do portal de formulários. O Adobe Sign Configuration Service continua a sondar o servidor Adobe Sign em intervalos [](../../forms/using/adobe-sign-integration-adaptive-forms.md) regulares para verificar o status das assinaturas. Se todos os signatários concluírem a assinatura do formulário, o serviço de ação de envio será iniciado e o formulário será enviado. Se você estiver usando uma ação de envio personalizada e o formulário usar a Adobe Sign, atualize sua ação de envio personalizada para usar o serviço de ação de envio.
 
+<!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Os dados do formulário adaptável são armazenados temporariamente no Forms Portal. É recomendável usar o armazenamento [personalizado para o Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). Ela garante que os dados de PII (informações de identificação pessoal) não sejam armazenados em servidores AEM.
+>Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. -->
 
 Sua experiência de assinatura de formulário está pronta. Você pode pré-visualização o formulário para verificar a experiência de assinatura. No formulário publicado, os campos Adobe Sign Block são exibidos quando um assinante recebe o formulário para assinatura por meio de um email. Essa experiência também é conhecida como experiência de assinatura fora de forma. Você também pode configurar uma experiência de assinatura no formulário para o primeiro assinante, para obter etapas detalhadas, consulte [Criar experiência](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)de assinatura no formulário.
 
@@ -273,7 +274,7 @@ Execute as seguintes etapas para configurar o componente Etapa de assinatura:
    * **Mensagem do modelo:** Especifique a mensagem a ser exibida enquanto o PDF de assinatura estiver sendo carregado. Os serviços Adobe Sign demoram algum tempo para preparar e carregar um PDF de assinatura.
    * **Serviço de assinatura:** Selecione a opção **Adobe Sign** .
 
-   * **Usar componente** herdado de assinatura eletrônica: Se você estiver usando o respectivo formulário adaptativo no [AEM Forms Workspace](../../forms/using/introduction-html-workspace.md), no aplicativo AEM Forms ou se o formulário adaptativo subjacente tiver um componente de assinatura eletrônica herdado, selecione a opção **Usar componente** de assinatura eletrônica herdado.
+   * **Usar componente** herdado de assinatura eletrônica: Se você estiver usando o respectivo formulário adaptável no [AEM Forms Workspace](../../forms/using/introduction-html-workspace.md), no aplicativo AEM Forms ou se o formulário adaptativo subjacente tiver um componente de assinatura eletrônica herdado, selecione a opção **Usar componente** de assinatura eletrônica herdado.
 
    * **Configuração**: Selecione uma configuração (Adobe Sign Cloud Service). A caixa suspensa estará disponível somente se a opção **Usar componente** de assinatura eletrônica herdado estiver ativada.
 
@@ -303,11 +304,11 @@ Agora, a experiência de assinatura no formulário está pronta. Você pode pré
 
 ## Perguntas frequentes {#frequently-asked-questions}
 
-**Ans:** Não, o AEM Forms não suporta o uso de um formulário adaptável que incorpora um formulário adaptativo habilitado para assinatura da Adobe Sign
+**Ans:** Não, a AEM Forms não suporta o uso de um formulário adaptável que incorpora um formulário adaptativo habilitado para assinatura da Adobe Sign
 
 **Ans:** O formulário adaptável criado usando o modelo avançado está configurado para usar o Adobe Sign. Para resolver o erro, crie e selecione uma configuração em nuvem do Adobe Sign e configure um assinante do Adobe Sign para o formulário adaptável.
 
-**Ans:** Sim, você pode usar tags de texto em um componente de texto para adicionar campos do Adobe Sign a um formulário adaptável habilitado para o [Documento de Registro](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (somente documento gerado automaticamente da opção de registro). Para saber mais sobre o procedimento e as regras para criar uma tag de texto, consulte Documentação [da](https://helpx.adobe.com/sign/help/text-tags.html)Adobe Sign. Observe também que os formulários adaptativos têm suporte limitado para tags de texto. Você pode usar as tags de texto para criar apenas os campos compatíveis com o [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) .
+**Ans:** Sim, você pode usar tags de texto em um componente de texto para adicionar campos do Adobe Sign a um formulário adaptável habilitado para o [Documento de Registro](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (somente documento gerado automaticamente da opção de registro). Para saber mais sobre o procedimento e as regras para criar uma tag de texto, consulte Documentação [da](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign. Observe também que os formulários adaptativos têm suporte limitado para tags de texto. Você pode usar as tags de texto para criar apenas os campos compatíveis com o [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) .
 
 **Ans:** É possível usar ambos os componentes simultaneamente em um formulário. Estas são algumas recomendações para o uso desses componentes:
 
@@ -327,11 +328,11 @@ Agora, a experiência de assinatura no formulário está pronta. Você pode pré
 * Certifique-se de que o aplicativo da API no servidor Adobe Sign usado para configurar o serviço da Adobe Sign Cloud tenha as permissões necessárias.
 * Se você estiver usando vários serviços da Adobe Sign Cloud, aponte o URL **[!UICONTROL oAuth]** de todos os serviços para o mesmo **[!UICONTROL Adobe Sign Share]**.
 
-* Use endereços de email separados para configurar a conta do Adobe Sign e para o primeiro assinante e único assinante. O endereço de email do primeiro assinante ou do único assinante (no caso do assinante único) não pode ser idêntico à conta da Adobe Sign usada para configurar AEM cloud services.
+* Use endereços de email separados para configurar a conta do Adobe Sign e para o primeiro assinante e único assinante. O endereço de email do primeiro assinante ou do único assinante (no caso do assinante único) não pode ser idêntico à conta da Adobe Sign usada para configurar os serviços em nuvem do AEM.
 
 ## Artigos relacionados {#related-articles}
 
-* [Integrar o Adobe Sign a AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
+* [Integrar o Adobe Sign ao AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 * [Uso do Adobe Sign em um formulário adaptável](../../forms/using/working-with-adobe-sign.md)
 
 * [Uso do Adobe Sign com AEM Forms (Vídeo)
