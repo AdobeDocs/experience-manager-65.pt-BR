@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ## Visão geral {#overview}
 
-Para o AEM Communities, há vários relatórios que podem ser acessados de várias formas a partir do ambiente do autor.
+No AEM Communities, há vários relatórios que podem ser acessados de várias maneiras a partir do ambiente do autor.
 
 Em geral, os vários relatórios são:
 
@@ -36,15 +39,15 @@ Em geral, os vários relatórios são:
 
    Fornece um gráfico de vários tipos de publicações por membros da comunidade para qualquer site da comunidade.
 
-Quando o [Adobe Analytics estiver ativado](/help/communities/sites-console.md#analytics), os relatórios incluirão o número de visualizações, reproduções, comentários e classificações de cada recurso de ativação ao longo do tempo.
+Quando o [Adobe Analytics estiver ativado](/help/communities/sites-console.md#analytics), os relatórios incluirão o número de visualizações, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo.
 
 Os relatórios tabulares podem ser exportados no formato .csv para processamento subsequente.
 
-## Consoles do Relatórios {#reporting-consoles}
+## Consoles do relatórios {#reporting-consoles}
 
 ### Relatórios para sites da comunidade {#reports-for-community-sites}
 
-* Da navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]**
+* Da navegação global: **[!UICONTROL Navigation]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]**
 
 * Escolha entre:
 
@@ -60,11 +63,11 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![relatórios](assets/reports1.png)
 
 ### Relatórios para recursos de ativação e caminhos de aprendizado {#reports-for-enablement-resources-and-learning-paths}
 
-* Da navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
+* Da navegação global: **[!UICONTROL Navigation]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
 
 * Selecione um site da comunidade de ativação existente:
 
@@ -93,7 +96,7 @@ O console Atribuições permite que os relatórios sejam filtrados por meio da a
 
 O relatório fornece informações sobre o seu progresso, bem como quaisquer comentários ou notações que lhe sejam fornecidos.
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![relatório de atribuição](assets/assignment-report.png)
 
 Selecione os critérios para o relatório:
 
@@ -104,6 +107,7 @@ Selecione os critérios para o relatório:
 * **Usuário ou grupo**
    * Selecione Usuário para gerar um relatório para um aluno.
    * Selecione Grupo para gerar um relatório para um grupo de alunos.
+
    O serviço de túnel acessará membros e grupos de membros do ambiente publish.
 
 * **Atribuição**
@@ -112,13 +116,13 @@ Selecione os critérios para o relatório:
 
 Selecione **Gerar** para criar o relatório:
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![generate-report](assets/generate-assignment-report.png)
 
 ## Relatório de exibições {#views-report}
 
 O console do Visualização permite que os relatórios sejam gerados nas visualizações de página por recursos da comunidade para um determinado período.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![relatório de visualizações](assets/view-report.png)
 
 Selecione os critérios para o relatório:
 
@@ -141,13 +145,13 @@ Selecione os critérios para o relatório:
 
 Selecione **[!UICONTROL Gerar]** para criar o relatório.
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![visualizações de geração](assets/generate-views.png)
 
 ## Relatório de publicações {#posts-report}
 
 O console Publicações permite que os relatórios sejam gerados em número de publicações para recursos da comunidade em um determinado período.
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![post-report](assets/posts-report.png)
 
 Selecione os critérios para o relatório:
 
@@ -170,13 +174,13 @@ Selecione os critérios para o relatório:
 
 Selecione **[!UICONTROL Gerar]** para criar o relatório.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![generate-report](assets/generate-posts-report.png)
 
 ## Resolução de Problemas{#troubleshooting}
 
 ### Nenhum site da comunidade listado {#no-community-sites-listed}
 
-Se nenhum site da comunidade estiver listado, verifique se o Adobe Analytics foi habilitado para um site. Se você escolher relatórios em atribuições, verifique se a função de atribuições está na estrutura do site da comunidade.
+Se nenhum site da comunidade estiver listado, verifique se a Adobe Analytics foi ativada para um site. Se você escolher relatórios em atribuições, verifique se a função de atribuições está na estrutura do site da comunidade.
 
 ### Os relatórios não são exibidos na instância do autor de AEM {#reports-do-not-show-in-aem-author-instance}
 
