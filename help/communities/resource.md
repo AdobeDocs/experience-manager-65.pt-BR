@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: e84c9a99ce9ec0447a5fb3e0ca5ba76b41c888cd
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 7%
 
 ---
 
@@ -25,15 +28,15 @@ Para adicionar um recurso de ativação ao novo site da comunidade:
    * Por exemplo, [http://localhost:4502/](http://localhost:4503/)
 * Na navegação global, selecione **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
 
-   ![chlimage_1-199](assets/chlimage_1-199.png)
+   ![recursos](assets/resources.png)
 
-   ![chlimage_1-200](assets/chlimage_1-200.png)
+   ![ativlement-resource](assets/enablement-resource.png)
 * Selecione o site da comunidade ao qual os recursos de ativação estão sendo adicionados:
    * Selecione Tutorial **[!UICONTROL de ativação]**.
 * No menu, selecione **[!UICONTROL Criar]**.
 * Selecione **[!UICONTROL Recurso]**.
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![create-resource](assets/create-enablement-resource.png)
 
 ### Informações básicas {#basic-info}
 
@@ -63,7 +66,7 @@ Preencha as informações básicas do Recurso:
 
    Adicione uma imagem para representar o Recurso ao membro em sua visualização Atribuições.
 
-   ![chlimage_1-202](assets/chlimage_1-202.png)
+   ![basic-info](assets/basic-info.png)
 
 * Selecione **[!UICONTROL Próximo]**
 
@@ -73,11 +76,13 @@ Embora pareça que vários Recursos podem ser selecionados, somente um é permit
 
 Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de escolha do Recurso identificando a fonte.
 
-![chlimage_1-203](assets/chlimage_1-203.png) ![chlimage_1-204](assets/chlimage_1-204.png)
+![add-content](assets/add-content.png)
+
+![upload-resource](assets/upload-resource.png)
 
 Carregar um recurso. Se um recurso de vídeo fizer upload de uma imagem personalizada para ser exibida antes da reprodução dos start de vídeo, ou permitir que uma miniatura seja gerada a partir do vídeo (pode levar alguns minutos - não é necessário aguardar).
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![upload-video](assets/upload-video.png)
 
 * Selecione **[!UICONTROL Próximo]**.
 
@@ -105,7 +110,7 @@ Carregar um recurso. Se um recurso de vídeo fizer upload de uma imagem personal
 
    **Observação**: Se os usuários ou grupos não estiverem visíveis, verifique se foram adicionados ao `Community Enable Members` grupo e *salvos* na instância de publicação.
 
-   ![chlimage_1-205](assets/chlimage_1-206.png)
+   ![ativlement-settings](assets/enablement-settings.png)
 
 * Selecione **[!UICONTROL Próximo]**
 
@@ -115,11 +120,11 @@ Carregar um recurso. Se um recurso de vídeo fizer upload de uma imagem personal
 
    Deixe indefinido, pois esse recurso de ativação será adicionado a um caminho de aprendizado. Se um aluno for atribuído ao recurso de ativação individual, bem como a um alunoPath que contém o recurso de ativação, o aluno será atribuído ao recurso de ativação duas vezes.
 
-   ![chlimage_1-207](assets/chlimage_1-207.png)
+   ![atribuições adicionais](assets/add-assignments.png)
 
 * Selecione **[!UICONTROL Criar]**
 
-   ![chlimage_1-208](assets/chlimage_1-208.png)
+   ![create-resource](assets/create-resource.png)
 
 Criação bem-sucedida do Recurso retorna ao console Recursos com o Recurso recém-criado selecionado. Desse console, é possível publicar, adicionar alunos e alterar outras configurações.
 
@@ -131,15 +136,15 @@ Antes de os inscritos poderem ver o recurso atribuído, ele deve ser publicado:
 
 * Selecionar o `Publish` ícone do mundo
 
-A Ativação é confirmada com uma mensagem de sucesso:
+A ativação é confirmada com uma mensagem de sucesso:
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![publish-resource](assets/publish-resource.png)
 
 ## Adicionar um segundo recurso de ativação {#add-a-second-enablement-resource}
 
 Repita as etapas acima para criar e publicar um segundo recurso de ativação relacionado a partir do qual um caminho de aprendizado será criado.
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![add-resource](assets/add-resource.png)
 
 **Publique** o segundo recurso.
 
@@ -147,7 +152,7 @@ Retorne à lista Tutorial de ativação de Recursos.
 
 *Dica: Se ambos os Recursos não estiverem visíveis, atualize a página.*
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![refresh-resource](assets/refresh-resource.png)
 
 ## Adicionar um caminho de aprendizado {#add-a-learning-path}
 
@@ -156,7 +161,7 @@ Um caminho de aprendizado é um agrupamento lógico de recursos de ativação qu
 * No console Recursos, selecione `+ Create`
 * Select **[!UICONTROL Learning Path]**
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![add-learning-path](assets/add-learning-path.png)
 
 Adicione as Informações **** básicas:
 
@@ -176,7 +181,7 @@ Adicione as Informações **** básicas:
 
    Para representar o caminho de aprendizado no console Recursos.
 
-   ![chlimage_1-213](assets/chlimage_1-213.png)
+   ![learningpath-basic](assets/learningpath-basic.png)
 
 * Selecione **[!UICONTROL Próximo]**.
 
@@ -197,13 +202,13 @@ No painel Adicionar recursos:
 
 * Selecione **[!UICONTROL Enviar]**.
 
-   ![chlimage_1-214](assets/chlimage_1-214.png)
+   ![learningpath](assets/learningpath-add.png)
 
-   ![chlimage_1-215](assets/chlimage_1-215.png)
+   ![create-learningpath](assets/create-learningpath.png)
 
 * Selecione **[!UICONTROL Próximo]**
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![learningpath-settings](assets/learningpath-settings.png)
 
 * **[!UICONTROL Adicionar responsáveis]**
 
@@ -215,7 +220,7 @@ No painel Adicionar recursos:
 
 * Selecione **[!UICONTROL Criar]**.
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![learningpath-info](assets/learningpath-info.png)
 
 A criação bem-sucedida do caminho de aprendizado retorna ao console Recursos com o caminho de aprendizado recém-criado selecionado. Desse console, é possível publicar, adicionar alunos e alterar outras configurações.
 
