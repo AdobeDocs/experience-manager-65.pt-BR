@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '1505'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ A API do SocialComponent pode ser estendida para fornecer dados exigidos por um 
 
 ### Como as páginas são renderizadas para o cliente {#how-pages-are-rendered-for-client}
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![renderização de página de scf](assets/scf-overview.png)
 
 ### Personalização e extensão de componentes {#component-customization-and-extension}
 
@@ -54,7 +57,7 @@ Para personalizar ou estender os componentes, você grava somente as sobreposiç
    * Altere o modelo JS e o CSS.
 * Para aparência, sensação e UX:
    * Altere o modelo JS, o CSS e [estenda/substitua o Javascript](client-customize.md#extending-javascript).
-* Para modificar as informações disponíveis para o Modelo JS ou para o terminal GET:
+* Para modificar as informações disponíveis para o Modelo JS ou para o terminal do GET:
    * Estenda o [SocialComponent](server-customize.md#socialcomponent-interface).
 * Para adicionar processamento personalizado durante operações:
    * Escreva uma [OperationExtension](server-customize.md#operationextension-class).
@@ -79,9 +82,9 @@ Visite Visão geral [do provedor de recursos do](srp.md) Armazenamento para sabe
 
 A API HTTP oferece suporte à facilidade de personalização e à escolha de plataformas clientes para aplicativos PhoneGap, aplicativos nativos e outras integrações e mashups. Além disso, a API HTTP permite que um site da comunidade seja executado como um serviço sem um cliente, de modo que os componentes da estrutura possam ser integrados em qualquer página da Web criada em qualquer tecnologia.
 
-### API HTTP - Solicitações GET {#http-api-get-requests}
+### API HTTP - Solicitações de GET {#http-api-get-requests}
 
-Para cada SocialComponent, a estrutura fornece um terminal de API baseado em HTTP. O terminal é acessado enviando uma solicitação GET para o recurso com um seletor &#39;.social.json&#39; + extensão. Usando o Sling, a solicitação é entregue ao `DefaultSocialGetServlet`.
+Para cada SocialComponent, a estrutura fornece um terminal de API baseado em HTTP. O ponto de extremidade é acessado enviando uma solicitação de GET para o recurso com um seletor + extensão &#39;.social.json&#39;. Usando o Sling, a solicitação é entregue ao `DefaultSocialGetServlet`.
 
 **`DefaultSocialGetServlet`**
 
@@ -93,13 +96,13 @@ Para cada SocialComponent, a estrutura fornece um terminal de API baseado em HTT
 
 **`GET Request`**
 
-Um servlet GET padrão escuta solicitações .social.json às quais o SocialComponent responde com JSON personalizável.
+Um servlet de GET padrão escuta solicitações .social.json às quais o SocialComponent responde com JSON personalizável.
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![scf-framework](assets/scf-framework.png)
 
-### API HTTP - Solicitações POST {#http-api-post-requests}
+### API HTTP - Solicitações de POST {#http-api-post-requests}
 
-Além das operações GET (Leitura), a estrutura define um padrão de ponto de extremidade para permitir outras operações em um componente, incluindo Criar, Atualizar e Excluir. Esses pontos finais são APIs HTTP que aceitam entrada e respondem com códigos de status HTTP ou com um objeto de resposta JSON.
+Além das operações de GET (Leitura), a estrutura define um padrão de ponto de extremidade para permitir outras operações em um componente, incluindo Criar, Atualizar e Excluir. Esses pontos finais são APIs HTTP que aceitam entrada e respondem com códigos de status HTTP ou com um objeto de resposta JSON.
 
 Esse padrão de endpoint da estrutura torna as operações CUD extensíveis, reutilizáveis e testáveis.
 
@@ -107,13 +110,13 @@ Esse padrão de endpoint da estrutura torna as operações CUD extensíveis, reu
 
 Há uma operação Sling POST:para cada operação SocialComponent. A lógica comercial e o código de manutenção de cada operação são vinculados em um OperationService que é acessível por meio da API HTTP ou de outro lugar como um serviço OSGi. Os ganchos são fornecidos com suporte para extensões de operação conectáveis para ações anteriores/posteriores.
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![scf-post-request](assets/scf-post-request.png)
 
-### Provedor de recursos do Armazenamento (SRP) {#storage-resource-provider-srp}
+### Provedor de recursos do armazenamento (SRP) {#storage-resource-provider-srp}
 
 Para saber mais sobre como lidar com o UGC armazenado na loja [de conteúdo da](working-with-srp.md)comunidade, consulte:
 
-* [Visão geral](srp.md) do provedor de recursos do Armazenamento - Introdução e visão geral de uso do repositório.
+* [Visão geral](srp.md) do provedor de recursos do armazenamento - Introdução e visão geral de uso do repositório.
 * [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos do utilitário de API SRP.
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
 
@@ -129,7 +132,7 @@ Os scripts HBS são simples, sem lógica, compilados no servidor e no cliente, s
 
 A estrutura fornece vários [handlebars auxiliares](handlebars-helpers.md) que são úteis ao desenvolver SocialComponents.
 
-No servidor, quando o Sling resolve uma solicitação GET, ele identifica o script que será usado para responder à solicitação. Se o script for um modelo HBS (.hbs), o Sling delegará a solicitação ao Mecanismo de barras de mão. O Mecanismo de barras de mão obterá o SocialComponent do SocialComponentFactory apropriado, criará um contexto e renderizará o HTML.
+No servidor, quando o Sling resolve uma solicitação de GET, ele identifica o script que será usado para responder à solicitação. Se o script for um modelo HBS (.hbs), o Sling delegará a solicitação ao Mecanismo de barras de mão. O Mecanismo de barras de mão obterá o SocialComponent do SocialComponentFactory apropriado, criará um contexto e renderizará o HTML.
 
 ### Sem restrição de acesso {#no-access-restriction}
 
@@ -157,7 +160,7 @@ A inclusão de um componente refere-se ao processo de adição de uma referênci
 
 A partir do AEM 6.1, quando um componente é incluído dinamicamente em vez de adicionado, é possível editar as propriedades do componente no modo *design *do autor.
 
-Somente alguns componentes do AEM Communities podem ser incluídos dinamicamente. São eles:
+Somente alguns componentes AEM Communities selecionados podem ser incluídos dinamicamente. São eles:
 
 * [Comentários](essentials-comments.md)
 * [Classificação](rating-basics.md)
