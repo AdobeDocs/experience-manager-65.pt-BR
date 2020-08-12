@@ -10,28 +10,31 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 2%
 
 ---
 
 
 # Configuração inicial {#initial-setup}
 
-## Instâncias de autor e publicação do Start {#start-author-and-publish-instances}
+## Instâncias de autor e publicação do start {#start-author-and-publish-instances}
 
 Para fins de desenvolvimento e demonstração, será necessário executar um autor e uma instância de publicação.
 
-Para fazer isso, siga as instruções básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) ao AEM, que resultarão em:
+Para fazer isso, siga as instruções AEM básicas [Introdução](../../help/sites-deploying/deploy.md#getting-started) , o que resultará em:
 
-* ambiente do autor em [localhost:4502](http://localhost:4502/)
+* Ambiente do autor em [localhost:4502](http://localhost:4502/)
 * Publicar ambiente no [localhost:4503](http://localhost:4503/)
 
-Para o AEM Communities,
+Para AEM Communities,
 
 * O ambiente do autor é para:
 
    * Desenvolvimento de sites, modelos e componentes.
-   * tarefas administrativas e de configuração.
+   * Tarefas administrativas e de configuração.
 
 * O ambiente publish é para:
 
@@ -45,13 +48,13 @@ Para o AEM Communities,
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
-Este tutorial cria um site [de comunidade de](overview.md#engagement-community) envolvimento e é baseado no pacote de recursos do AEM Communities 6.2 versão 1.10.
+Este tutorial cria um site [de comunidade de](overview.md#engagement-community) envolvimento e é baseado no pacote de recursos versão 1.10 do AEM Communities 6.2.
 
-Para garantir que o pacote de recursos mais recente esteja instalado, visite:
+Para verificar se o pacote de recursos mais recente está instalado, visite:
 
 * [Versões mais recentes](deploy-communities.md#latest-releases)
 
-Para obter um tutorial que cria um site [de comunidade de](overview.md#enablement-community)ativação, visite [Introdução ao AEM Communities para ativar](getting-started-enablement.md).
+Para obter um tutorial que cria um site [de comunidade de](overview.md#enablement-community)ativação, visite [Introdução à AEM Communities para Ativação](getting-started-enablement.md).
 
 ## Configurar Analytics {#configure-analytics}
 
@@ -114,7 +117,7 @@ Role para baixo até `Add User to Groups`:
 
 * Selecione **[!UICONTROL Salvar]**.
 
-![chlimage_1-301](assets/chlimage_1-301.png)
+![create-user](assets/create-user.png)
 
 ## Ativar login do Social {#enable-social-login}
 
@@ -140,14 +143,14 @@ Use o console [](../../help/sites-administering/tags.md#tagging-console) Marcaç
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-302](assets/chlimage_1-302.png)
+![tags tutoriais](assets/tutorial-tags.png)
 
 Em seguida, siga as instruções para:
 
 1. [Defina as permissões](../../help/sites-administering/tags.md#setting-tag-permissions)da tag.
 1. [Publique as tags](../../help/sites-administering/tags.md#publishing-tags).
 
-Amostra do pacote de tags criado para os tutoriais de introdução ao AEM Communities
+Pacote de amostra de tags criadas para os Tutorials de Introdução do AEM Communities
 
 [Obter arquivo](assets/tutorial_tags-v63.zip)
 
@@ -157,4 +160,4 @@ Amostra do pacote de tags criado para os tutoriais de introdução ao AEM Commun
 
 Para obter instruções, consulte [Como configurar o MongoDB para demonstração](demo-mongo.md).
 
-Por padrão, a instalação das instâncias do autor e publicação do AEM resulta em conteúdo gerado pelo usuário (UGC) armazenado no armazenamento [de barra](../../help/sites-deploying/platform.md) JCR acessado usando o [JSRP](jsrp.md). O JSRP não é uma loja comum, o que significa que o UGC está visível somente na instância em que foi inserido. Normalmente, o UGC é inserido em uma instância de publicação e não fica visível no ambiente do autor, resultando em todas as tarefas de moderação que precisam usar a instância de publicação.
+Por padrão, a instalação das instâncias do autor e publicação AEM resulta no armazenamento do conteúdo gerado pelo usuário (UGC) no armazenamento [de barra](../../help/sites-deploying/platform.md) JCR acessado usando o [JSRP](jsrp.md). O JSRP não é uma loja comum, o que significa que o UGC está visível somente na instância em que foi inserido. Normalmente, o UGC é inserido em uma instância de publicação e não fica visível no ambiente do autor, resultando em todas as tarefas de moderação que precisam usar a instância de publicação.
