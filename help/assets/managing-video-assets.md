@@ -3,7 +3,7 @@ title: Gerencie ativos de vídeo no [!DNL Adobe Experience Manager].
 description: Faça upload, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 7%
@@ -36,7 +36,7 @@ Por padrão, [!DNL Assets] não permite fazer upload de ativos com mais de 2 GB 
 Além da [!DNL Assets] configuração, altere as seguintes configurações para fazer upload de ativos grandes:
 
 * Aumente o tempo de expiração do token. Consulte Servlet [!UICONTROL CSRF] Adobe Granite no Console da Web em `https://[aem_server]:[port]/system/console/configMgr`. Para obter mais informações, consulte Proteção [](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumente a configuração `receiveTimeout` do Dispatcher. Para obter mais informações, consulte Configuração [do](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager Dispatcher.
+* Aumente a configuração `receiveTimeout` no Dispatcher. Para obter mais informações, consulte Configuração [do](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Dispatcher.
 
 >[!NOTE]
 >
@@ -60,10 +60,10 @@ Para configurar um limite de tamanho de arquivo maior, execute as seguintes etap
 1. On the [!UICONTROL Adobe Granite Workflow External Process Job Handler] page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours). Clique em **[!UICONTROL Salvar]**.
 1. Em [!DNL Experience Manager], clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 1. Na página Modelos de fluxo de trabalho, selecione **[!UICONTROL Dynamic Media Encode Video]** e clique em **[!UICONTROL Editar]**.
-1. Na página do fluxo de trabalho, clique com o duplo no componente Processo **[!UICONTROL do serviço de vídeo da]** Dynamic Media.
+1. Na página de fluxo de trabalho, clique com o duplo no componente Processo **[!UICONTROL de serviço de vídeo do]** Dynamic Media.
 1. Na caixa de diálogo [!UICONTROL Propriedades da etapa], na guia **[!UICONTROL Comum]**, expanda **Configurações avançadas**.
 1. In the **[!UICONTROL Timeout]** field, specify a value of `18000`, then click **[!UICONTROL OK]** to return to the **[!UICONTROL Dynamic Media Encode Video]** workflow page.
-1. Próximo à parte superior da página, abaixo do título da página Codificar vídeo [!UICONTROL da] Dynamic Media, clique em **[!UICONTROL Salvar]**.
+1. Próximo à parte superior da página, abaixo do título da página Codificação de vídeo [!UICONTROL do] Dynamic Media, clique em **[!UICONTROL Salvar]**.
 
 ## Publicar ativos de vídeo {#publish-video-assets}
 
@@ -79,13 +79,13 @@ Após a publicação, você pode incluir os ativos de vídeo em uma página da W
 
    Para sair do assistente de anotações, clique em **[!UICONTROL Fechar]**.
 
-1. Procure um ponto específico no vídeo, especifique o tempo em segundos no campo de **texto** e clique em **Pular**. Por exemplo, para pular os primeiros 10 segundos de vídeo, digite 20 no campo de texto.
+1. Procure um ponto específico no vídeo, especifique o tempo em segundos no campo de **texto** e clique em **Pular**. Por exemplo, para pular os primeiros 20 segundos de vídeo, digite 20 no campo de texto.
 
    ![Procure um horário em um vídeo para pular por segundos especificados](assets/seek-in-video.png)
 
 1. Para visualização na linha do tempo, clique em uma anotação. Para excluir a anotação da linha do tempo, clique em **[!UICONTROL Excluir]**.
 
-   ![Anotações de Visualização e detalhes na linha do tempo](assets/timeline-view-annotation.png)
+   ![Anotações de visualização e detalhes na linha do tempo](assets/timeline-view-annotation.png)
 
 >[!MORELIKETHIS]
 >
