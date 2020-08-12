@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guia do usuário dos ativos Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 41%
+source-wordcount: '635'
+ht-degree: 40%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 41%
    + [Trabalhar com o Dynamic Media](dynamic-media.md)
    + [Configuração do Dynamic Media - modo Scene7](config-dms7.md)
    + [Configuração do Dynamic Media - Modo híbrido](config-dynamic.md)
-   + [Solução de problemas do Dynamic Media - modo Scene7](troubleshoot-dms7.md)
-   + [Migração do Dynamic Media - modo híbrido para o Dynamic Media - modo S7](migrate-from-hybrid-to-dms7.md)
+   + [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
+   + [Migração do Dynamic Media - Modo híbrido para o Dynamic Media - Modo S7](migrate-from-hybrid-to-dms7.md)
    + [Gerenciamento de ativos do Dynamic Media](managing-assets.md)
    + [Práticas recomendadas para otimização da qualidade de imagens](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gerenciamento de predefinições do visualizador do Dynamic Media](managing-viewer-presets.md)
@@ -72,7 +72,7 @@ ht-degree: 41%
    + [Vincular URLs ao aplicativo da Web.](linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
    + [Publicação de ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Invalidação do conteúdo em cache do CDN](invalidate-cdn-cached-content.md)
+   + [Como invalidar o cache CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instalação do Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
    + [Trabalho com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
