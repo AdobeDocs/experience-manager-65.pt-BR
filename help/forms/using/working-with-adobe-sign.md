@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
+source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
 workflow-type: tm+mt
-source-wordcount: '3643'
+source-wordcount: '3839'
 ht-degree: 0%
 
 ---
@@ -304,12 +304,16 @@ Agora, a experiência de assinatura no formulário está pronta. Você pode pré
 
 ## Perguntas frequentes {#frequently-asked-questions}
 
+**P:** É possível incorporar um formulário adaptável em outra forma adaptável. O formulário adaptativo incorporado pode ser habilitado para Adobe Sign?
 **Ans:** Não, a AEM Forms não suporta o uso de um formulário adaptável que incorpora um formulário adaptativo habilitado para assinatura da Adobe Sign
 
+**P:** Quando eu criar um formulário adaptável usando o modelo avançado e abri-lo para edição, uma mensagem de erro &quot;Assinatura eletrônica ou signatários não estão configurados corretamente.&quot; é exibido. Como resolver a mensagem de erro?
 **Ans:** O formulário adaptável criado usando o modelo avançado está configurado para usar o Adobe Sign. Para resolver o erro, crie e selecione uma configuração em nuvem do Adobe Sign e configure um assinante do Adobe Sign para o formulário adaptável.
 
+**P:** É possível usar tags de texto Adobe Sign em um componente de texto estático de um formulário adaptável?
 **Ans:** Sim, você pode usar tags de texto em um componente de texto para adicionar campos do Adobe Sign a um formulário adaptável habilitado para o [Documento de Registro](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (somente documento gerado automaticamente da opção de registro). Para saber mais sobre o procedimento e as regras para criar uma tag de texto, consulte Documentação [da](https://helpx.adobe.com/sign/using/text-tag.html)Adobe Sign. Observe também que os formulários adaptativos têm suporte limitado para tags de texto. Você pode usar as tags de texto para criar apenas os campos compatíveis com o [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) .
 
+**P:** A AEM Forms fornece componentes de bloqueio e etapa de assinatura do Adobe Sign. Eles podem ser usados simultaneamente em uma forma adaptativa?
 **Ans:** É possível usar ambos os componentes simultaneamente em um formulário. Estas são algumas recomendações para o uso desses componentes:
 
 **Bloco Adobe Sign:** Você pode usar o Adobe Sign Block para adicionar campos Adobe Sign em qualquer lugar do formulário adaptável. Também ajuda a atribuir campos específicos a signatários. Por padrão, quando um formulário adaptável é visualizado ou publicado, o Adobe Sign Block não fica visível. Esses blocos são ativados somente no documento de assinatura. No documento de assinatura, somente os campos atribuídos a um assinante são ativados. O bloco Adobe Sign pode ser usado com o primeiro e os signatários subsequentes.
@@ -329,6 +333,14 @@ Agora, a experiência de assinatura no formulário está pronta. Você pode pré
 * Se você estiver usando vários serviços da Adobe Sign Cloud, aponte o URL **[!UICONTROL oAuth]** de todos os serviços para o mesmo **[!UICONTROL Adobe Sign Share]**.
 
 * Use endereços de email separados para configurar a conta do Adobe Sign e para o primeiro assinante e único assinante. O endereço de email do primeiro assinante ou do único assinante (no caso do assinante único) não pode ser idêntico à conta da Adobe Sign usada para configurar os serviços em nuvem do AEM.
+
+
+**Problema** Quando o Adobe Sign é configurado para um formulário adaptável, o fluxo de trabalho configurado usando a opção Invocar Forms Workflow não é start.
+
+**Resolução**
+
+* Quando você usa o Adobe Sign sem a etapa de assinatura ou o formulário requer assinaturas de várias pessoas, o servidor AEM Forms aguarda o scheduler para confirmar se todas as pessoas assinaram o formulário. O scheduler envia o formulário adaptável somente depois que toda a pessoa concluir a assinatura e os start do fluxo de trabalho somente após o envio bem-sucedido do formulário adaptável. É possível encurtar o intervalo do [scheduler](adobe-sign-integration-adaptive-forms.md) para verificar o status da assinatura do formulário em intervalos rápidos e apertar o envio do formulário.
+
 
 ## Artigos relacionados {#related-articles}
 
