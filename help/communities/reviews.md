@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 4%
 
 ---
 
@@ -32,19 +35,19 @@ Para adicionar um `Reviews` componente a uma página no modo de autor, use o nav
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](reviews-basics.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Reviews`componente será exibido.
+Quando as bibliotecas [do lado do cliente](reviews-basics.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Reviews` componente será exibido.
 
-![chlimage_1-340](assets/chlimage_1-340.png)
+![create-review](assets/create-review.png)
 
 ## Configuração de revisões {#configuring-reviews}
 
 Selecione o componente inserido a ser acessado e selecione o `Reviews` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-341](assets/chlimage_1-341.png)
+![configure-new](assets/configure-new.png)
 
 Na guia Classificações **** permitidas, especifique a lista completa de classificações a serem exibidas aos membros. A primeira notação deve ser global/geral, dado que é a notação que fornece a notação média para o `Review Summary (Display)` componente. As próximas duas classificações na configuração padrão devem receber um título diferente de &quot;Subrating 1&quot; ou &quot;Subrating 2&quot;.
 
-![chlimage_1-342](assets/chlimage_1-342.png)
+![classificação permitida](assets/configure-review1.png)
 
 * **[!UICONTROL Classificações permitidas]**
 
@@ -58,7 +61,7 @@ Na guia Classificações **** obrigatórias, digite novamente os itens da lista 
 
 No site, as classificações necessárias são marcadas com um asterisco. Se um item for obrigatório e não estiver marcado, uma mensagem será exibida para o membro e o envio será negado até que todas as classificações necessárias sejam marcadas.
 
-![chlimage_1-343](assets/chlimage_1-343.png)
+![classificação obrigatória](assets/configure-review2.png)
 
 * **[!UICONTROL Classificações necessárias]**
 
@@ -75,7 +78,7 @@ No site, as classificações necessárias são marcadas com um asterisco. Se um 
 
 Na guia **[!UICONTROL Revisões]** , especifique como as revisões serão tratadas.
 
-![chlimage_1-344](assets/chlimage_1-344.png)
+![análises](assets/configure-review3.png)
 
 * **[!UICONTROL Permitir respostas]**
 
@@ -111,7 +114,7 @@ Na guia **[!UICONTROL Revisões]** , especifique como as revisões serão tratad
 
 Na guia Moderação **[!UICONTROL do]** usuário, especifique como as revisões publicadas serão gerenciadas. Para obter mais informações, consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
 
-![chlimage_1-345](assets/chlimage_1-345.png)
+![moderação do usuário](assets/configure-review4.png)
 
 * **[!UICONTROL Pré-moderação]**
 
@@ -161,7 +164,7 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando as bibliotecas [do lado do cliente](reviews-basics.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Reviews Summary (Display)`componente será exibido.
 
-![chlimage_1-346](assets/chlimage_1-346.png)
+![resumo da revisão](assets/configure-review5.png)
 
 >[!NOTE]
 >
@@ -172,15 +175,15 @@ Quando as bibliotecas [do lado do cliente](reviews-basics.md#essentials-for-clie
 
 Selecione o componente inserido a ser acessado e selecione o `Reviews Summary (Display)` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-347](assets/chlimage_1-347.png)
+![configure](assets/configure-new.png)
 
 Na guia **[!UICONTROL Revisar resumo]**
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![resumo da revisão](assets/configure-review6.png)
 
 * `Review Path`
 
-   digite ou navegue até a instância colocada do `reviews`componente para resumir, por exemplo, se adicionada à Página da Web do site de envolvimento do [Geometrixx,](getting-started.md) o caminho seria:
+   digite ou navegue até a instância colocada do `reviews`componente para resumir, por exemplo, se adicionada à Página da Web do site de [Envolvimento do Geometrixx,](getting-started.md) o caminho seria:
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -196,9 +199,9 @@ Ao alterar o Tipo de recurso de comentário, o sistema de comentários não gera
 
 Depois que os tipos de recursos personalizados forem conhecidos, digite Modo [de](../../help/sites-authoring/default-components-designmode.md) design e clique no duplo no componente colocado `Comments` para abrir uma caixa de diálogo com uma guia adicional.
 
-Na guia Tipos **[!UICONTROL de]** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting`componentes:
+Na guia Tipos **[!UICONTROL de]** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting` componentes:
 
-![chlimage_1-349](assets/chlimage_1-349.png)
+![votação de comentários](assets/configure-review7.png)
 
 * **[!UICONTROL Tipo de recursos de comentários]**
 
@@ -224,12 +227,12 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 ### Membros {#members}
 
-Quando o visitante do site estiver conectado, dependendo da configuração, eles poderão
+Quando o visitante do site está conectado, dependendo da configuração, eles podem:
 
-* Publicar uma nova revisão.
-* Edite sua própria revisão.
-* Exclua sua própria revisão.
-* Sinalize os comentários de revisão de outras pessoas.
+* Publicar uma nova revisão
+* Editar sua própria revisão
+* Excluir sua própria revisão
+* Sinalizar comentários de revisão de outras pessoas
 
 Somente uma classificação por membro é permitida. O membro pode alterar a sua notação a qualquer momento.
 
