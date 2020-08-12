@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 1%
 
 ---
 
@@ -70,9 +73,9 @@ Identifique o modelo personalizado adicionando uma `page-template` propriedade a
 
 `/content/sites/sample/en/configuration`
 
-![chlimage_1-80](assets/chlimage_1-80.png)
+![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Certifique-se de **Salvar tudo** e replicar o código personalizado para todas as instâncias do AEM (o código personalizado não é incluído quando o conteúdo do site da comunidade é publicado no console).
+Certifique-se de **Salvar tudo** e replicar o código personalizado para todas as instâncias AEM (o código personalizado não é incluído quando o conteúdo do site da comunidade é publicado no console).
 
 A prática recomendada para replicar código personalizado é [criar um pacote](../../help/sites-administering/package-manager.md#creating-a-new-package) e implantá-lo em todas as instâncias.
 
@@ -84,15 +87,15 @@ Isso está disponível no console [Sites de](sites-console.md#exporting-the-site
 
 Observe que o UGC e o código personalizado não estão incluídos no pacote do site da comunidade.
 
-Para exportar o UGC, use a Ferramenta [de migração UGC do](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, uma ferramenta de migração de código aberto disponível no GitHub.
+Para exportar o UGC, use a Ferramenta [de migração UGC da](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, uma ferramenta de migração de código aberto disponível no GitHub.
 
 ## Excluindo um site da comunidade {#deleting-a-community-site}
 
-A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do console **[!UICONTROL Communities]** > **[!UICONTROL Sites]** . Durante o desenvolvimento, se desejar excluir um site da comunidade e atualizar o start, você poderá usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
+A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do console **[!UICONTROL Comunidades]** > **[!UICONTROL Sites]** . Durante o desenvolvimento, se desejar excluir um site da comunidade e atualizar o start, você poderá usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
 
 * [UGC](#user-generated-content)
 * [Grupos de usuários](#community-user-groups)
-* [Ativos](#enablement-assets)
+* [Assets](#enablement-assets)
 * [Registros do banco de dados](#database-records)
 
 ### ID exclusiva do site da comunidade {#community-unique-site-id}
