@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 O recurso de pesquisa funciona com vários outros recursos, como fóruns, para fornecer a capacidade de pesquisar conteúdo.
 
-Ao adicionar a capacidade de pesquisar postagens inseridas por membros da comunidade, chamado de conteúdo gerado pelo usuário (UGC), há dois componentes: Resultados [de pesquisa](#search) e [pesquisa](#search-results).
+Ao adicionar a capacidade de pesquisar postagens inseridas por membros da comunidade, chamado de conteúdo gerado pelo usuário (UGC), há dois componentes: [Resultados](#search) de pesquisa e [pesquisa](#search-results).
 
 A página que inclui o `Search Results` componente oferece suporte à pesquisa e à exibição de resultados.
 
@@ -37,23 +40,24 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando a biblioteca do lado do cliente necessária, `cq.social.hbs.search`, estiver incluída, é assim que o `Search` componente será exibido.
 
-![chlimage_1-373](assets/chlimage_1-373.png)
+![add-search](assets/add-search.png)
 
 ### Configurar a pesquisa adicionada {#configure-the-added-search}
 
 Selecione o componente inserido a ser acessado e selecione o `Search` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![configue](assets/configure-new.png)
 
 Na guia Configurações **[!UICONTROL de]** pesquisa, especifique como os caminhos são pesquisa quando um query é inserido por um visitante.
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![definições de pesquisa](assets/search-settings.png)
 
 * **[!UICONTROL Caminhos de pesquisa]** Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada. Como exemplo, para limitar a pesquisa a um fórum específico, selecione um componente de fórum inserido em uma página:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Página]** de resultado Os resultados serão exibidos em uma página separada especificada usando o navegador para selecionar uma página que contém o `Search Results` componente.
+* **[!UICONTROL Página]** de resultados Os resultados serão exibidos em uma página separada especificada usando o navegador para selecionar uma página que contenha a variável 
+`Search Results` componente.
 
 ## Resultados da pesquisa {#search-results}
 
@@ -71,17 +75,17 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando a biblioteca do lado do cliente necessária, `cq.social.hbs.search`, estiver incluída, será assim que o `Search Result` componente será exibido:
 
-![chlimage_1-376](assets/chlimage_1-376.png)
+![resultado da pesquisa](assets/search-result1.png)
 
 ### Configurar o resultado de pesquisa adicionado {#configure-the-added-search-result}
 
 Selecione o componente inserido a ser acessado e selecione o `Search Results` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-377](assets/chlimage_1-377.png)
+![configure](assets/configure-new.png)
 
 Na guia Configurações **[!UICONTROL de resultado da]** pesquisa, é possível especificar quais caminhos são incluídos na pesquisa quando um query é inserido por um visitante.
 
-![chlimage_1-378](assets/chlimage_1-378.png)
+![search-result-settings](assets/search-result-settings.png)
 
 * **[!UICONTROL Resultados de busca por página]**
 
