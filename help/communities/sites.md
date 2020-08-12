@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +35,7 @@ No ambiente do autor, para acessar o console de sites da comunidade:
 
 Este console exibe os modelos a partir dos quais um site [da](sites-console.md) comunidade pode ser criado e permite a criação de novos modelos de site.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![modelo de site](assets/site-template.png)
 
 ## Criar modelo de site {#create-site-template}
 
@@ -42,7 +45,7 @@ Isso exibirá o painel do Editor de sites, que contém três subpainéis:
 
 ### Basic info {#basic-info}
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![site-template-basicinfo](assets/site-template-basicinfo.png)
 
 No painel Informações básicas, um nome, uma descrição e se o modelo está ativado ou desativado são configurados:
 
@@ -58,15 +61,15 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
    Um switch de alternância que controla se o modelo é referenciável.
 
-### Miniatura     {#thumbnail}
+### Miniatura  {#thumbnail}
 
-![chlimage_1-20](assets/chlimage_1-20.png)
+![miniatura do site](assets/site-thumbnail.png)
 
 (Opcional) Selecione o ícone Carregar imagem para exibir uma miniatura junto com o nome e a descrição dos criadores dos sites da comunidade.
 
 ### Estrutura {#structure}
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![estrutura do local](assets/site-structure.png)
 
 Para adicionar funções de comunidade, arraste do lado direito para a esquerda na ordem em que os links de menu do site devem aparecer. Os estilos serão aplicados ao modelo durante a criação do site.
 
@@ -83,7 +86,7 @@ A função page fornece uma página vazia. A função groups fornece a capacidad
 >Qualquer outra função, como a função [de](functions.md#page-function)página, deve ser incluída e listada primeiro.
 
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![editor de sites](assets/site-editor.png)
 
 ### Função Modelos de grupo para grupos {#group-templates-for-groups-function}
 
@@ -94,11 +97,11 @@ Ao incluir uma função de grupos no modelo do site, a configuração exige a es
 >A função Grupos *não* deve ser a *primeira nem a única* função na estrutura do site.
 
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![funções de site](assets/site-functions.png)
 
 Ao selecionar dois ou mais modelos de grupo da comunidade, uma opção é fornecida ao administrador do grupo ao criar um novo grupo na comunidade.
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![função de site](assets/site-functions1.png)
 
 ## Modelo de site de edição {#edit-site-template}
 
