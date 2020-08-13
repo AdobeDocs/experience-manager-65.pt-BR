@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 1429a099288f038510cb0a194fb55632297ef371
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 1%
 
 ---
 
@@ -31,9 +34,9 @@ Se desejar adicionar um `Following` componente a uma página no modo de autor, l
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](essentials-socialgraph.md#essentials-for-client-side) necessárias forem incluídas, o `Following` componente aparecerá desta forma:
+Quando as bibliotecas [do lado do cliente](essentials-socialgraph.md#essentials-for-client-side) necessárias forem incluídas, o `Following` componente será exibido desta forma:
 
-![chlimage_1-447](assets/chlimage_1-447.png)
+![following](assets/following.png)
 
 ## Configuração a seguir {#configuring-following}
 
