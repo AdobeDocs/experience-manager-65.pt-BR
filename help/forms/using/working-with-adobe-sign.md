@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
+source-git-commit: f34742a9d11909dcf8403e1b002b65a01e882a74
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3853'
 ht-degree: 0%
 
 ---
@@ -334,6 +334,7 @@ Agora, a experiência de assinatura no formulário está pronta. Você pode pré
 
 * Use endereços de email separados para configurar a conta do Adobe Sign e para o primeiro assinante e único assinante. O endereço de email do primeiro assinante ou do único assinante (no caso do assinante único) não pode ser idêntico à conta da Adobe Sign usada para configurar os serviços em nuvem do AEM.
 
+### O fluxo de trabalho do AEM Forms configurado para um formulário adaptável habilitado para Adobe Sign não é start {#adobe-sign-aem-form-workflow-failures}
 
 **Problema** Quando o Adobe Sign é configurado para um formulário adaptável, o fluxo de trabalho configurado usando a opção Invocar Forms Workflow não é start.
 
