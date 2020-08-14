@@ -8,9 +8,9 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Este tutorial é uma etapa da série [Criar seu primeiro formulário](/help/form
 
 Você pode usar regras para adicionar interatividade, lógica comercial e validações inteligentes a um formulário adaptável. Formulários adaptáveis têm um editor de regras incorporado. O editor de regras fornece uma funcionalidade de arrastar e soltar, semelhante aos tours guiados. O método arrastar e soltar é o método mais rápido e fácil de criar regras. O editor de regras também fornece uma janela de código para usuários interessados em testar suas habilidades de codificação ou levar as regras para o próximo nível.
 
-Você pode saber mais sobre o editor de regras no editor de regras do [Adaptive Forms](/help/forms/using/rule-editor.md).
+Saiba mais sobre o editor de regras no editor de regras [Adaptive Forms](/help/forms/using/rule-editor.md).
 
 Ao final do tutorial, você aprenderá a criar regras para:
 
@@ -38,7 +38,7 @@ As imagens GIF interativas ao final de cada seção do tutorial ajudam você a a
 
 ## Etapa 1: Recuperar um registro de cliente do banco de dados {#retrieve-customer-record}
 
-Você criou um modelo de dados de formulário seguindo o artigo [Criar modelo](/help/forms/using/create-form-data-model.md) de dados de formulário. Agora, você pode usar o editor de regras para chamar os serviços de Modelo de dados de formulários para recuperar e adicionar informações ao banco de dados.
+Você criou um modelo de dados de formulário seguindo o artigo [Criar modelo](/help/forms/using/create-form-data-model.md) de dados de formulário. Agora, você pode usar o editor de regras para chamar os serviços do Forms Data Model para recuperar e adicionar informações ao banco de dados.
 
 A cada cliente é atribuído um número exclusivo de ID do cliente, que ajuda a identificar os dados relevantes do cliente em um banco de dados. O procedimento abaixo usa a ID do cliente para recuperar informações do banco de dados:
 
@@ -89,15 +89,15 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
 
    ![update-Shipping-address](assets/update-shipping-address.png)
 
-1. ![dropojetstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
+   ![dropojetstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   Arraste e solte o campo Endereço de **[!UICONTROL entrega, Estado e CEP]** da guia Objetos de formulário para a propriedade tablename correspondente .property (por exemplo, customerdetails .ShippingAddress) do objeto **[!UICONTROL Drop ou selecione aqui]** o campo na caixa **[!UICONTROL INPUT]** . Todos os campos com prefixo tablename (por exemplo, detalhes do cliente neste caso de uso) servem como dados de entrada para o serviço de atualização. Todo o conteúdo fornecido nesses campos é atualizado na fonte de dados.
+1. Arraste e solte os campos Endereço de **[!UICONTROL entrega, Estado e CEP]** da guia Objetos [!UICONTROL de] formulário para a propriedade tablename correspondente .property (por exemplo, customerdetails.ShippingAddress) do objeto **[!UICONTROL Drop ou selecione aqui]** o campo na caixa **[!UICONTROL INPUT]** . Todos os campos com prefixo tablename (por exemplo, detalhes do cliente neste caso de uso) servem como dados de entrada para o serviço de atualização. Todo o conteúdo fornecido nesses campos é atualizado na fonte de dados.
 
    >[!NOTE]
    >
    >Não arraste e solte os campos **[!UICONTROL Nome]** e ID **[!UICONTROL do]** cliente para a propriedade tablename.property correspondente (por exemplo, customerdetails.name). Isso ajuda a evitar a atualização do nome e da ID do cliente por engano.
 
-1. Arraste e solte o campo ID **[!UICONTROL do]** cliente da guia Objetos de formulário para o campo id na caixa **[!UICONTROL ENTRADA]** . Os campos sem um nome de tablet prefixo (por exemplo, detalhes do cliente neste caso de uso) servem como parâmetro de pesquisa para o serviço de atualização. O campo **[!UICONTROL id]** nesse caso de uso identifica exclusivamente um registro na tabela de detalhes do cliente.
+1. Arraste e solte o campo ID **[!UICONTROL do]** cliente da guia Objetos [!UICONTROL de] formulário para o campo id na caixa **[!UICONTROL ENTRADA]** . Os campos sem um nome de tablet prefixo (por exemplo, detalhes do cliente neste caso de uso) servem como parâmetro de pesquisa para o serviço de atualização. O campo **[!UICONTROL id]** nesse caso de uso identifica exclusivamente um registro na tabela de detalhes **do** cliente.
 1. Toque em **[!UICONTROL Concluído]** para salvar a regra. Na janela do editor de regras, toque em **[!UICONTROL Fechar]**.
 1. Pré-visualização o formulário adaptável. Recupere os detalhes de um cliente, atualize o endereço de envio e envie o formulário. Quando você recupera os detalhes do mesmo cliente novamente, o endereço de entrega atualizado é exibido.
 
@@ -107,9 +107,9 @@ Depois que os detalhes do cliente forem recuperados do banco de dados, você pod
 
 Os formulários adaptáveis fornecem vários componentes com validações incorporadas, por exemplo, e-mail e campos numéricos que podem ser usados para casos de uso comuns. Use o editor de regras para casos de uso avançado, por exemplo, para exibir uma mensagem de erro quando o banco de dados retornar zero (0) registros (nenhum registro).
 
-O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de erro se a ID do cliente inserida no formulário não existir no banco de dados. A regra também traz o foco para o campo ID do cliente e o redefine. A regra usa [a API dataIntegrationUtils do serviço](/help/forms/using/invoke-form-data-model-services.md) de modelo de dados de formulário para verificar se a ID do cliente existe no banco de dados.
+O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de erro se a ID do cliente inserida no formulário não existir no banco de dados. A regra também traz o foco para o campo ID **[!UICONTROL do]** cliente e o redefine. A regra usa [a API dataIntegrationUtils do serviço](/help/forms/using/invoke-form-data-model-services.md) de modelo de dados de formulário para verificar se a ID do cliente existe no banco de dados.
 
-1. Toque no campo ID **[!UICONTROL do]** cliente e toque no `Edit Rules` ícone. A janela Editor de regras é aberta.
+1. Toque no campo ID **[!UICONTROL do]** cliente e toque no `Edit Rules` ícone. A janela Editor [!UICONTROL de] regras é aberta.
 1. Toque no ícone **[!UICONTROL + Criar]** para adicionar uma regra. Ele abre o Editor visual.
 
    No Editor visual, a instrução **[!UICONTROL WHEN]** é selecionada por padrão. Além disso, o objeto de formulário (neste caso, ID **[!UICONTROL do]** cliente) de onde você iniciou o editor de regras é especificado na declaração **[!UICONTROL WHEN]** .
@@ -132,7 +132,7 @@ O procedimento a seguir mostra como criar uma regra para exibir uma mensagem de 
    };
    ```
 
-1. Substitua a seção guidelib.dataIntegrationUtils.executeOperation (operationInfo, entradas, saídas) pelo seguinte código:
+1. Substitua a `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` seção pelo seguinte código:
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
