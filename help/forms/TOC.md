@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guia do usuário do Forms AEM 6.5
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 636224c2ea165e43f8979797926fd05197a15905
+source-git-commit: a1ada0e747f46923dc834c872e522e648adae073
 workflow-type: tm+mt
-source-wordcount: '3708'
+source-wordcount: '3719'
 ht-degree: 1%
 
 ---
@@ -592,6 +592,8 @@ ht-degree: 1%
          + [Invocar o AEM Forms usando APIs](developing/invoking-aem-forms-using-apis.md)
          + [Como entender os processos AEM Forms](developing/aem-forms-processes.md)
          + [Container de serviço](developing/service-container.md)
+      + Desenvolvimento de SPIs para AEM Forms {#developing-spis-aem-forms}
+         + [Criando um Manipulador de Usuários Externos de Convite](developing/creating-invite-external-users-handler.md)
       + Start rápido da API Java - Exemplos de código {#java-api-quick-start-code-examples}
          + [Start rápido JavaAPI do cliente do Application Manager (SOAP)](developing/application-manager-client-java-api.md)
          + [Start rápido JavaAPI do serviço Application Manager (SOAP)](developing/application-manager-service-java-api.md)
