@@ -10,25 +10,28 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 5%
 
 ---
 
 
 # Configuração de armazenamento {#storage-configuration}
 
-A configuração do Armazenamento é o meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC).
+A configuração do armazenamento é o meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC).
 
-Essa configuração informa o código AEM Communities sobre qual implementação do SRP (armazenamento Resource Provider [fornecedor de recursos do ]) deve ser usada ao acessar o UGC e deve refletir a topologia estabelecida quando o AEM foi implantado.
+Essa configuração informa o código da AEM Communities sobre qual implementação do SRP (armazenamento resource provider, Provedor de recursos do servidor) deve ser usada ao acessar o UGC e deve refletir a topologia estabelecida quando o AEM foi implantado.
 
 Para obter uma discussão sobre opções de armazenamento e topologias de implantação, visite:
 
 * [Armazenamento de conteúdo da comunidade](working-with-srp.md)
 * [Topologias recomendadas](topologies.md)
 
-## Console de configuração do Armazenamento {#storage-configuration-console}
+## Console de configuração do armazenamento {#storage-configuration-console}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 No ambiente do autor, para acessar o console de configuração do armazenamento.
 
@@ -47,7 +50,7 @@ Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 ### Sobre o Armazenamento JCR {#about-jcr-storage}
 
-Observe que se nenhuma seleção for feita, o padrão será o repositório do AEM, JCR.
+Observe que se nenhuma seleção for feita, o padrão será o repositório AEM, JCR.
 
 O JCR *não* é uma loja comum compartilhada pelos ambientes de autor e publicação. O conteúdo da comunidade estará visível somente do ambiente do autor ou publicação no qual foi criado.
 
