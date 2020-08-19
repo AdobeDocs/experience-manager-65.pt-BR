@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +62,7 @@ Para um site da comunidade, depois que o site é publicado e as tags são public
 
 Veja a seguir como ele aparece no CRXDE quando um administrador aplica permissões de leitura `/etc/tags/ski-catalog` para o grupo `Community Enable Members`.
 
-![chlimage_1-420](assets/chlimage_1-420.png)
+![tags do site](assets/site-tags.png)
 
 ## Namespaces de tags de catálogo {#catalog-tag-namespaces}
 
@@ -67,7 +70,7 @@ O recurso de catálogo usa tags para se definir. Ao configurar a função de cat
 
 A função Catalog inclui uma configuração de tag que define as tags listadas na interface do usuário do filtro para o catálogo. A configuração &quot;Todas as Namespaces&quot; refere-se ao escopo das namespaces de tags selecionadas para o site da comunidade.
 
-![chlimage_1-421](assets/chlimage_1-421.png)
+![namespace de catálogo](assets/catalog-namespace.png)
 
 ## Aplicação de tags a recursos de ativação {#applying-tags-to-enablement-resources}
 
@@ -88,7 +91,7 @@ Assim, qualquer recurso de ativação marcado com um dos seguintes:
 
 aparecerá `Ski Catalog` após o recurso de ativação ter sido publicado.
 
-![chlimage_1-422](assets/chlimage_1-422.png)
+![basic-info](assets/applytags-basicinfo.png)
 
 ## Visualizando catálogo na publicação {#viewing-catalog-on-publish}
 
@@ -100,5 +103,5 @@ Se as namespaces de tags forem adicionadas e estiverem ausentes, verifique se as
 
 Se nenhum recurso de ativação for exibido após selecionar uma tag ao exibir o catálogo, verifique se há uma tag da(s) namespace(s) do catálogo aplicada(s) ao recurso de ativação.
 
-![chlimage_1-423](assets/chlimage_1-423.png)
+![Catálogo de visualizações](assets/viewcatalog.png)
 
