@@ -1,8 +1,8 @@
 ---
 title: Princípios básicos de SRP e UGC
 seo-title: Princípios básicos de SRP e UGC
-description: Visão geral do provedor de recursos do Armazenamento e do conteúdo gerado pelo usuário
-seo-description: Visão geral do provedor de recursos do Armazenamento e do conteúdo gerado pelo usuário
+description: Visão geral do provedor de recursos do armazenamento e do conteúdo gerado pelo usuário
+seo-description: Visão geral do provedor de recursos do armazenamento e do conteúdo gerado pelo usuário
 uuid: a4ee8725-f554-4fcf-ac1e-34878d6c02f8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +26,11 @@ Se você não estiver familiarizado com o SRP (armazenamento Resource Provider [
 
 Esta seção da documentação fornece algumas informações essenciais sobre o SRP e o UGC.
 
-## StorageResourceProvider API {#storageresourceprovider-api}
+## API StorageResourceProvider {#storageresourceprovider-api}
 
 A API SocialResourceProvider (API SRP) é uma extensão de várias APIs do Provedor de recursos Sling. Inclui suporte para paginação e incremento atômico (útil para tally e pontuação).
 
-Os Query são necessários para os componentes do quadro SEPA para os cartões, uma vez que é necessário classificar por data, utilidade, número de votos, etc. Todas as opções de SRP têm mecanismos flexíveis de query que não dependem da definição de baldes.
+Os query são necessários para os componentes do quadro SEPA para os cartões, uma vez que é necessário classificar por data, utilidade, número de votos, etc. Todas as opções de SRP têm mecanismos flexíveis de query que não dependem da definição de baldes.
 
 A localização do armazenamento SRP incorpora o caminho do componente. A API SRP deve ser sempre usada para acessar o UGC, já que o caminho raiz depende da opção SRP selecionada, como ASRP, MSRP ou JSRP.
 
@@ -35,7 +38,7 @@ A API SRP não é uma classe abstrata, é uma interface. Uma implementação per
 
 Os meios para usar a API SRP são utilitários fornecidos, como os encontrados no pacote SocialResourceUtilities.
 
-Durante a atualização do AEM 6.0 ou anterior, será necessário migrar o UGC para todos os SRPs, para os quais uma ferramenta Open Source está disponível. See [Upgrading to AEM Communities 6.3](upgrade.md).
+Ao atualizar do AEM 6.0 ou anterior, será necessário migrar o UGC para todos os SRPs, para os quais uma ferramenta Open Source está disponível. See [Upgrading to AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
@@ -104,15 +107,15 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 As seguintes descrições da localização do armazenamento podem ser úteis ao desenvolver com JSRP ou talvez MSRP. No momento, não há interface para acessar o UGC armazenado no ASRP, como há para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (ferramentas MongoDB).
 
-**localização do componente**
+**Localização do componente**
 
-Quando um membro entra no UGC no ambiente de publicação, ele interage com um componente como parte de um site do AEM.
+Quando um membro entra no UGC no ambiente de publicação, ele interage com um componente como parte de um site AEM.
 
 Um exemplo desse componente é o componente [](http://localhost:4502/content/community-components/en/comments.html) comments que existe no site [Community Components Guide](components-guide.md) . O caminho para o nó de comentário no repositório local é:
 
 * Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-**localização do nó sombra**
+**Localização do nó sombra**
 
 A criação do UGC também cria um nó [de](srp.md#about-shadow-nodes-in-jcr) sombra ao qual as ACLs necessárias são aplicadas. O caminho para o nó de sombra correspondente no repositório local é o resultado do prefixo do caminho raiz do nó de sombra para o caminho do componente:
 
@@ -126,11 +129,11 @@ O UGC é criado em nenhum desses locais e só deve ser acessado usando um métod
 * Caminho raiz = `/content/usergenerated/asi/srp-choice`
 * Nó UGC para JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Esteja ciente* de que, para o JSRP, o nó UGC *só* estará presente na instância do AEM (autor ou publicação) na qual foi inserido. Se inserido em uma instância de publicação, a moderação não será possível no console de moderação do autor.
+*Esteja ciente* de que, para o JSRP, o nó UGC *só* estará presente na instância AEM (autor ou publicação) na qual foi inserido. Se inserido em uma instância de publicação, a moderação não será possível no console de moderação do autor.
 
 ## Informações relacionadas {#related-information}
 
-* [Visão geral](srp.md) do provedor de recursos do Armazenamento - Introdução e visão geral de uso do repositório.
+* [Visão geral](srp.md) do provedor de recursos do armazenamento - Introdução e visão geral de uso do repositório.
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
 * [Refatoração](socialutils.md) SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
 
