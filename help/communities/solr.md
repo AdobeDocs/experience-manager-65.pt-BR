@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 2%
 
 ---
 
 
 # Configuração de Solr para SRP {#solr-configuration-for-srp}
 
-## Solr para plataforma AEM {#solr-for-aem-platform}
+## Solr para AEM plataforma {#solr-for-aem-platform}
 
 Uma instalação do [Apache Solr](https://lucene.apache.org/solr/) pode ser compartilhada entre a loja [de](../../help/sites-deploying/data-store-config.md) nós (Oak) e a loja [](working-with-srp.md) comum (SRP) usando coleções diferentes.
 
@@ -80,7 +83,8 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 #### 2. Criar uma coleção {#create-a-collection}
 
 Referência:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create
+](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Uso:
 ./bin/solr criar \
@@ -107,7 +111,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 
 ### Comparação do MLS padrão e avançado {#comparison-of-standard-and-advanced-mls}
 
-A pesquisa multilíngue (MLS) para o AEM Communities foi criada para a plataforma Solr fornecer uma pesquisa aprimorada em todos os idiomas suportados, incluindo inglês.
+A busca multilíngue (MLS) para AEM Communities foi criada para a plataforma Solr para fornecer uma busca aprimorada em todos os idiomas suportados, incluindo o inglês.
 
 O MLS para comunidades AEM está disponível como MLS padrão ou MLS avançado. O MLS padrão inclui apenas configurações de Solr e exclui todos os plug-ins ou arquivos de recursos. O Advanced MLS é a solução mais abrangente e inclui configurações de Solr, bem como plug-ins e recursos relacionados
 
@@ -139,11 +143,11 @@ No total, os 33 idiomas a seguir são suportados no Advanced MLS.
 | Finlandês | Letão | Tailandês |
 | Francês | Lituano | Turco |
 
-#### Comparação entre a pesquisa do AEM 6.1 Solr, o Standard MLS e o Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Comparação entre AEM 6.1 Solr search, Standard MLS e Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Observação**: O AEM 6.1 se refere ao AEM 6.1 Communities FP3 e anterior.
+**Observação**: AEM 6.1 refere-se ao AEM 6.1 Comunidades FP3 e anteriores.
 
-![chlimage_1-283](assets/chlimage_1-283.png)
+![compare-solr-mls](assets/compare-solr-mls.png)
 
 ### Instalação do MLS padrão {#installing-standard-mls}
 
@@ -156,7 +160,7 @@ Arquivos MLS padrão (schema.xml, solrconfig.xml) para Solr 4.10.
 
 Arquivos MLS padrão (schema.xml, solrconfig.xml) para Solr 5.x.
 
-Os arquivos MLS padrão são armazenados no repositório do AEM.
+Os arquivos MLS padrão são armazenados no repositório AEM.
 
 **Observação**: Embora os arquivos Solr estejam armazenados na pasta msrp/, eles também são para DSRP (não é necessário fazer alterações).
 
@@ -217,7 +221,7 @@ Os arquivos MLS padrão são armazenados no repositório do AEM.
 
 Para a coleção SRP (MSRP ou DSRP) suportar MLS avançados, novos plug-ins Solr são necessários além de uma configuração personalizada de schema e Solr. Todos os itens necessários são empacotados em um arquivo zip baixável. Além disso, um script de instalação é incluído para uso quando o Solr é implantado no modo independente.
 
-Para obter o pacote MLS avançado, consulte [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) na seção de implantação da documentação.
+Para obter o pacote MLS avançado, consulte [AEM MLS](deploy-communities.md#aem-advanced-mls) avançado na seção de implantação da documentação.
 
 Para começar a instalar o SolrCloud ou o modo independente:
 
