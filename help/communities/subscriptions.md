@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 A partir do [FP1](deploy-communities.md#latestfeaturepack)das Comunidades, os membros da comunidade podem interagir com a comunidade por email usando um recurso chamado subscrição.
 
-As Subscrições são semelhantes às [notificações](notifications.md) , pois os membros podem se inscrever ao seguir artigos de blog, tópicos do fórum ou perguntas de QnA.
+As subscrições são semelhantes às [notificações](notifications.md) , pois os membros podem se inscrever ao seguir artigos de blog, tópicos do fórum ou perguntas de QnA.
 
 O que distingue as subscrições das notificações é:
 
@@ -43,7 +46,7 @@ Os componentes devem ser configurados para ativar o subscrição *e* os seguinte
 
 ## Subscrições a partir de {#subscriptions-from-following}
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![subscrição seguinte](assets/subscription-following.png)
 
 O botão **Seguir** fornece um meio de seguir entradas como atividades, subscrições e/ou notificações. Cada vez que o botão **Seguir** é selecionado, é possível ativar ou desativar uma seleção.
 
@@ -61,9 +64,9 @@ Quando o email for [configurado para resposta por email](email.md#configure-poll
 
 Se eles responderem ao email, o conteúdo digitado na resposta será exibido como conteúdo online.
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![email-reply](assets/email-reply.png)
 
 O tempo necessário para uma resposta ser postada é controlado pelo intervalo [de atualização do importador da](email.md#configure-polling-importer)pesquisa.
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![QA](assets/qa.png)
 
