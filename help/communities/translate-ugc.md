@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '1118'
+ht-degree: 1%
 
 ---
 
 
 # Traduzindo conteúdo gerado pelo usuário {#translating-user-generated-content}
 
-O recurso de tradução do AEM Communities amplia o conceito de [tradução do conteúdo](../../help/sites-administering/translation.md) da página para o conteúdo gerado pelo usuário (UGC) postado em sites da comunidade usando componentes [da estrutura de componentes](scf.md)sociais (SCF).
+O recurso de tradução do AEM Communities estende o conceito de [tradução do conteúdo](../../help/sites-administering/translation.md) da página para o conteúdo gerado pelo usuário (UGC) postado em sites da comunidade usando componentes [SCF (](scf.md)social component framework).
 
 A tradução do UGC permite que os visitantes do site e os membros experimentem uma comunidade global, eliminando barreiras linguísticas.
 
@@ -31,7 +34,7 @@ Por exemplo, suponha que:
 
 ## Visão geral {#overview}
 
-Esta seção da documentação discute especificamente como o serviço de tradução funciona com o UGC, ao mesmo tempo que assume um entendimento de como conectar o AEM a um provedor de serviço [de](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) tradução e integrar esse serviço a um site, configurando uma estrutura [de integração de](../../help/sites-administering/tc-tic.md)tradução.
+Esta seção da documentação discute especificamente como o serviço de tradução funciona com o UGC, ao mesmo tempo que assume um entendimento de como conectar AEM a um provedor de serviço [de](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) tradução e integrar esse serviço a um site, configurando uma estrutura [de integração de](../../help/sites-administering/tc-tic.md)tradução.
 
 Quando um provedor de serviço de tradução é associado ao site, cada cópia de idioma do site mantém seus próprios threads do UGC publicados por componentes do SCF, como comentários.
 
@@ -39,7 +42,7 @@ Quando uma estrutura de integração de tradução é configurada além do prove
 
 ## O Serviço de Tradução Padrão {#the-default-translation-service}
 
-O AEM Communities envia uma licença [de](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) avaliação para um serviço [de tradução](../../help/sites-administering/tc-msconf.md) padrão habilitado para vários idiomas.
+A AEM Communities envia uma licença [de](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) avaliação para um serviço [de tradução](../../help/sites-administering/tc-msconf.md) padrão habilitado para vários idiomas.
 
 Ao [criar um site](sites-console.md)da comunidade, o serviço de tradução padrão é ativado quando `Allow Machine Translation` é verificado no subpainel [TRADUÇÃO](sites-console.md#translation) .
 
@@ -78,20 +81,20 @@ Para criar uma nova integração de tradução, que integra um conector do Servi
 * Selecionar **[!UICONTROL ferramentas]**
 * Selecionar **[!UICONTROL Operações]**
 * Selecionar **[!UICONTROL nuvem]**
-* Selecionar serviços **[!UICONTROL da nuvem]**
+* Selecionar **[!UICONTROL Cloud Services]**
 * Role para baixo até Integração **[!UICONTROL de tradução]**
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
+   ![integração de tradução](assets/translation-integration.png)
 
 * Selecionar **[!UICONTROL Mostrar configurações]**
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
+   ![show-configuration](assets/translation-integration1.png)
 
 * Selecione `[+]` o ícone ao lado de Configurações **** disponíveis para criar uma nova configuração
 
 #### Criar caixa de diálogo de configuração {#create-configuration-dialog}
 
-![chlimage_1-67](assets/chlimage_1-67.png)
+![create-configuration](assets/translation-integration2.png)
 
 * **[!UICONTROL Configuração primária]**
 
@@ -109,16 +112,18 @@ Para criar uma nova integração de tradução, que integra um conector do Servi
 
 #### Caixa de diálogo de configuração de tradução {#translation-config-dialog}
 
-![chlimage_1-68](assets/chlimage_1-68.png)
+![diálogo de configuração](assets/translation-integration3.png)
 
 Para obter instruções detalhadas, consulte [Criação de uma configuração de integração de tradução](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
 * **[!UICONTROL Guia Sites]** : pode ser deixado como padrão.
 
 * **[!UICONTROL Guia Comunidades]** :
-   * **[!UICONTROL Provedor]** de traduçãoSelecione o provedor de tradução na lista suspensa. O padrão é `microsoft`, o serviço de avaliação.
+   * **[!UICONTROL Provedor]** de traduçãoSelecione o provedor de tradução na lista suspensa. O padrão é 
+`microsoft`, o serviço de julgamento.
 
-   * **[!UICONTROL Categoria]** de conteúdo Selecione uma categoria que descreve o conteúdo que está sendo traduzido. O padrão é `General.`
+   * **[!UICONTROL Categoria]** de conteúdo Selecione uma categoria que descreve o conteúdo que está sendo traduzido. O padrão é 
+`General.`
 
    * **[!UICONTROL Escolher Uma Localidade...]**
 (Opcional) Ao selecionar uma localidade para armazenar o UGC, as publicações de todas as cópias de idioma aparecerão em uma conversa global. Por convenção, escolha a localidade para o idioma [](sites-console.md#translation) base do site. Escolher `No Common Store` desativará a tradução global. Por padrão, a tradução global está desativada.
@@ -153,7 +158,7 @@ Uma dessas configurações é sempre exibir ou não o conteúdo da comunidade em
 
 Quando as páginas são traduzidas automaticamente para o idioma preferencial do usuário, a interface do usuário para mostrar o texto original e melhorar a tradução ainda é disponibilizada.
 
-![chlimage_1-69](assets/chlimage_1-69.png)
+![perfil do usuário](assets/translation-integration4.png)
 
 ### Configuração do site da comunidade {#community-site-setting}
 
