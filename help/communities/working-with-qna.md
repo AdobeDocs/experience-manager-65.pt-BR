@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '1380'
+ht-degree: 9%
 
 ---
 
@@ -32,24 +35,26 @@ O recurso de fórum QnA (perguntas e respostas) fornece uma área para que os me
 
 A documentação descreve:
 
-* Adicionar o recurso do fórum QnA a um site do AEM.
+* Adicionar o recurso de fórum QnA a um site AEM.
 * Configurações do `QnA`componente.
 
 ## Adicionar um fórum de P&amp;R a uma página {#adding-a-q-a-forum-to-a-page}
 
-Para adicionar um `QnA` componente a uma página no modo de autor, use o navegador de componentes para localizá-lo `Communities / QnA`e arrastá-lo para o local em uma página onde o fórum QnA deve aparecer.
+Para adicionar um `QnA` componente a uma página no modo de autor, use o navegador de componentes para localizá-lo `Communities / QnA` e arrastá-lo para o local em uma página onde o fórum QnA deve aparecer.
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do cliente](/help/communities/qna-essentials.md#essentials-for-client-side) necessárias forem incluídas, o `QnA`componente será exibido desta forma:
+Quando as bibliotecas [do lado do cliente](/help/communities/qna-essentials.md#essentials-for-client-side) necessárias forem incluídas, é assim que o `QnA` componente aparece:
 
-![chlimage_1](assets/chlimage_1.png)
+![qna-component](assets/qna-component.png)
 
 ### Configuração de QnA {#configuring-qna}
 
 Selecione o componente inserido a ser acessado e selecione o `QnA` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-1](assets/chlimage_1-1.png) ![qna-config](assets/qna-config.png)
+![configure](assets/configure-new.png)
+
+![qna-config](assets/qna-config.png)
 
 #### Guia Configurações {#settings-tab}
 
