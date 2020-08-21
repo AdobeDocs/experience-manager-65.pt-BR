@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%
@@ -23,9 +23,9 @@ ht-degree: 2%
 
 ## Adicionar uma ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Crie uma ClientLibraryFolder com o nome `clientlibs`que conterá o JS e o CSS usados para renderizar as páginas do site.
+Crie uma ClientLibraryFolder com o nome `clientlibs` que conterá o JS e o CSS usados para renderizar as páginas do site.
 
-O valor de `categories`propriedade fornecido para essa biblioteca de cliente é o identificador usado para incluir diretamente essa clientlib de uma página de conteúdo ou para incorporá-la a outras clientlibs.
+O valor de `categories` propriedade fornecido para essa biblioteca de cliente é o identificador usado para incluir diretamente essa clientlib de uma página de conteúdo ou para incorporá-la a outras clientlibs.
 
 1. Usando o **CRXDE Lite**, expanda `/etc/designs`
 
@@ -36,7 +36,7 @@ O valor de `categories`propriedade fornecido para essa biblioteca de cliente é 
 
 1. Clique em **OK**
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![add-client-library](assets/add-client-library.png)
 
 Na guia **Propriedades** do novo `clientlibs` nó, digite a propriedade **categoria** :
 
@@ -55,7 +55,7 @@ Observação: como visualizar o valor do categoria com &quot;aplicativos&quot;. 
 1. Enter **Name:** `js.txt`
 1. Clique em **Salvar tudo**
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![clientlibs-css](assets/clientlibs-css.png)
 
 A primeira linha do css.txt e do js.txt identifica o local base a partir do qual as seguintes listas de arquivos são encontradas.
 
@@ -103,11 +103,11 @@ Nesse caso, incluindo todos e, portanto, os clientlibs SCF mais básicos que sã
 
 * Clique em **Salvar tudo**
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![scf-clientlibs](assets/scf-clientlibs.png)
 
 É assim que agora `/etc/designs/an-scf-sandbox/clientlibs` deve aparecer no repositório:
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![scf-clientlibs-visualização](assets/scf-clientlibs1.png)
 
 ### Incluir Clientlibs no modelo PlayPage {#include-clientlibs-in-playpage-template}
 
@@ -115,11 +115,11 @@ Sem incluir a categoria `apps.an-scf-sandbox` ClientLibraryFolder na página, os
 
 Por exemplo, sem incluir clientlibs, o componente de comentários SCF aparece sem estilo:
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![clientlibs-comment](assets/clientlibs-comment.png)
 
 Depois que apps.an-scf-sandbox clientlibs é incluído, o componente de comentários SCF aparece no estilo :
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![clientlibs-comment-styled](assets/clientlibs-comment1.png)
 
 A instrução include pertence à seção `head` do `html` script. O padrão **`foundation head.jsp`** inclui um script que pode ser sobreposto: **`headlibs.jsp`**.
 
@@ -130,7 +130,7 @@ A instrução include pertence à seção `head` do `html` script. O padrão **`
 1. Clique com o botão direito do mouse e selecione **Copiar** (ou selecione Copiar na barra de ferramentas)
 1. Selecionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Clique com o botão direito do mouse e selecione **Colar** (ou selecione Colar na barra de ferramentas)
-1. Clique no Duplo para **`headlibs.jsp`** abri-lo
+1. Clique no duplo para **`headlibs.jsp`** abri-lo
 1. Anexar a seguinte linha ao final do arquivo
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
@@ -150,7 +150,7 @@ Carregue seu site no navegador e veja se o plano de fundo não é uma sombra de 
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![jogo comunitário](assets/community-play.png)
 
 ### Salvando Seu Trabalho Até Agora {#saving-your-work-so-far}
 
@@ -160,7 +160,7 @@ Este pacote existe no tutorial [Criar uma página](/help/communities/create-samp
 
 Para criar um pacote:
 
-* No CRXDE Lite, clique no ícone [Pacote](https://localhost:4502/crx/packmgr/)
+* Na CRXDE Lite, clique no ícone [Pacote](https://localhost:4502/crx/packmgr/)
 * Clique em **Criar pacote**
 
    * Nome do pacote: an-scf-sandbox-Minimum-pkg
