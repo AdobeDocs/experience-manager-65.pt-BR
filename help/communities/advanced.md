@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -62,9 +62,9 @@ As diferenças na configuração das regras de pontuação e marcação são:
 
 O mecanismo de pontuação avançado fornece uma configuração OSGi com parâmetros que afetam o algoritmo de pontuação avançado.
 
-![chlimage_1-260](assets/chlimage_1-260.png)
+![mecanismo de pontuação avançada](assets/advanced-scoring-engine.png)
 
-* **pesos de pontuação**
+* **Pesos de pontuação**
 
    Para um tópico, especifique o verbo que deve receber a prioridade mais alta ao calcular a pontuação. Um ou mais tópicos podem ser inseridos, mas limitados a **um verbo por tópico**. Consulte [Tópicos e Verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
 Digitado como `topic,verb` com a vírgula que escapou. Por exemplo:
@@ -103,7 +103,7 @@ Para chamar o mecanismo de pontuação avançado, o `scoringType`deve ser defini
 
 Consulte Sub-regras [de](/help/communities/implementing-scoring.md#scoring-sub-rules)Pontuação.
 
-![chlimage_1-261](assets/chlimage_1-261.png)
+![tipo de pontuação avançada](assets/advanced-scoring-type.png)
 
 ### Palavras de interrupção {#stopwords}
 
@@ -123,7 +123,7 @@ As propriedades avançadas da regra de identificação diferem das propriedades 
 
 Em vez de associar pontos a uma imagem emblema, basta identificar o número de especialistas permitidos e a imagem do crachá a ser premiada.
 
-![chlimage_1-262](assets/chlimage_1-262.png)
+![regras de marcação avançadas](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -165,7 +165,7 @@ Incluído nesta versão beta, há um selo de especialista baseado em recompensa:
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+![crachá](assets/included-badge.png)
 
 Para que o selo do especialista apareça como recompensa pela atividades, verifique se:
 
