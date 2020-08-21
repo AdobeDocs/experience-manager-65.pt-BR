@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Blog Essentials {#blog-essentials}
 
-A partir do AEM 6.1 Communities, um blog é uma atividade da comunidade. Os artigos de blog agora são publicados a partir do ambiente de publicação, onde anteriormente os artigos de blog só podiam ser criados no ambiente do autor e publicados.
+Desde AEM 6.1 Communities, um blog é uma atividade comunitária. Os artigos de blog agora são publicados a partir do ambiente de publicação, onde anteriormente os artigos de blog só podiam ser criados no ambiente do autor e publicados.
 
 Os artigos de blog agora podem ser criados por qualquer membro da comunidade, a menos que restritos a membros privilegiados.
 
@@ -71,8 +71,8 @@ O recurso de blog é composto de dois componentes principais que estão disponí
 
 | **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
-| [**inclusivo **](/help/communities/scf.md#add-or-include-a-communities-component) | Não |
-| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
+| [**inclusivo**](/help/communities/scf.md#add-or-include-a-communities-component) | Não |
+| [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **propriedades** | consulte Recurso [do blog](/help/communities/blog-feature.md) |
@@ -96,13 +96,13 @@ Uma estrutura de site da comunidade que inclui a função [](/help/communities/f
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
 Consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
 
-A partir das comunidades do AEM 6.1, o uso de uma loja [](/help/communities/working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+Desde AEM 6.1 Comunidades, o uso de uma loja [](/help/communities/working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte :
 
-* [Visão geral](/help/communities/srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório.
+* [Visão geral](/help/communities/srp.md) do provedor de recursos do armazenamento - introdução e visão geral do uso do repositório.
 * [SRP e UGC Essentials](/help/communities/srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
 * [Acesso ao UGC com SRP](/help/communities/accessing-ugc-with-srp.md) - diretrizes de codificação.
 * [Refatoração](/help/communities/socialutils.md) de utilitários sociais - mapeamento de métodos de utilitários obsoletos para métodos atuais de utilitários SRP.
@@ -115,13 +115,13 @@ Consulte Editor [principal](/help/communities/deploy-communities.md#primary-publ
 
 ## Permitir mídia avançada {#allowing-rich-media}
 
-A plataforma AEM bloqueia links de outros sites para impedir ataques de XSS, conforme descrito em
+A plataforma AEM bloqueia links de outros sites para impedir ataques XSS, conforme descrito em
 
-* [Proteger contra o cross-site Scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect contra script entre sites (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 A partir do AEM 6.2, as modificações anteriormente necessárias para serem feitas manualmente são incluídas no arquivo de configuração padrão do AntiSamy.
 
 A mídia avançada é incorporada em um artigo de blog selecionando o `Embed Media from External Sites` ícone :
 
-![chlimage_1-471](assets/chlimage_1-471.png)
+![media](assets/media-icon.png)
 
