@@ -1,15 +1,15 @@
 ---
 title: Criação de um formulário adaptável
 seo-title: Criação de um formulário adaptável
-description: Como criar um formulário adaptável usando AEM Forms. Formulários adaptáveis são formulários HTML5 responsivos que simplificam o processamento e a coleta de informações.
-seo-description: Como criar um formulário adaptável usando AEM Forms. Formulários adaptáveis são formulários HTML5 responsivos que simplificam o processamento e a coleta de informações.
+description: Como criar um formulário adaptável usando o AEM Forms. Formulários adaptáveis são formulários HTML5 responsivos que simplificam o processamento e a coleta de informações.
+seo-description: Como criar um formulário adaptável usando o AEM Forms. Formulários adaptáveis são formulários HTML5 responsivos que simplificam o processamento e a coleta de informações.
 uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
 content-type: reference
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 3cbcd23254e16231a199276aa2f9e70d6ff39b34
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Siga estas etapas para criar um formulário adaptável.
 
-1. Acessar instância do autor do AEM Forms em `https://'[server]:[port]'/<custom-context-if-any>.`
+1. Acessar a instância do autor do AEM Forms em `https://'[server]:[port]'/<custom-context-if-any>.`
 
-1. Digite suas credenciais na página de logon do AEM.
+1. Digite suas credenciais na página de login AEM.
 
-   Depois de fazer logon, no canto superior esquerdo, toque em **[!UICONTROL Adobe Experience Manager > Formulários > Formulários e Documentos]**.
+   Depois de fazer logon, no canto superior esquerdo, toque em **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 
    >[!NOTE]
    >
@@ -46,8 +46,9 @@ Siga estas etapas para criar um formulário adaptável.
 
    * [Modelo de dados de formulário](#fdm)
    * [Modelo de formulário XFA](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)
-   * [schema XML ou JSON](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
+   * [SCHEMA XML ou JSON](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
    * Nenhum ou sem qualquer modelo de formulário
+
    É possível configurá-los na guia Modelo **[!UICONTROL de]** formulário na página **[!UICONTROL Adicionar propriedades]** . Por padrão, o modelo de formulário selecionado é **[!UICONTROL Nenhum]**.
 
 1. Toque em **Criar**. Um formulário adaptável é criado e uma caixa de diálogo para abrir o formulário para edição é exibida.
@@ -68,7 +69,7 @@ Siga estas etapas para criar um formulário adaptável.
 
 ## Criar um formulário adaptável com base em um modelo de dados de formulário {#fdm}
 
-[A integração](/help/forms/using/data-integration.md) de dados do AEM Forms permite integrar várias fontes de dados e unir suas entidades e serviços para criar um modelo de dados de formulário. É uma extensão do schema JSON. É possível usar um modelo de dados de formulário para criar um formulário adaptável. As entidades ou objetos de modelo de dados configurados em um modelo de dados de formulário estão disponíveis como objetos de modelo de dados para a criação de formulário. Estão vinculados às respectivas fontes de dados e são usados para pré-preencher um formulário e gravar os dados enviados de volta nas respectivas fontes de dados. Também é possível invocar serviços configurados em um modelo de dados de formulário usando regras de formulário adaptáveis.
+[A integração](/help/forms/using/data-integration.md) de dados da AEM Forms permite integrar várias fontes de dados e unir suas entidades e serviços para criar um modelo de dados de formulário. É uma extensão do schema JSON. É possível usar um modelo de dados de formulário para criar um formulário adaptável. As entidades ou objetos de modelo de dados configurados em um modelo de dados de formulário estão disponíveis como objetos de modelo de dados para a criação de formulário. Estão vinculados às respectivas fontes de dados e são usados para pré-preencher um formulário e gravar os dados enviados de volta nas respectivas fontes de dados. Também é possível invocar serviços configurados em um modelo de dados de formulário usando regras de formulário adaptáveis.
 
 Para usar um modelo de dados de formulário para criar um formulário adaptável:
 
@@ -92,7 +93,7 @@ Você pode reaproveitar os modelos de formulário XFA para criar formulários ad
 
 >[!NOTE]
 >
->[Carregue o Modelo](/help/forms/using/get-xdp-pdf-documents-aem.md) de formulário XFA para AEM Forms antes de criar um start de formulário adaptável com base no modelo de formulário.
+>[Faça upload do Modelo](/help/forms/using/get-xdp-pdf-documents-aem.md) de formulário XFA para a AEM Forms antes de criar um start para criar um formulário adaptável com base no modelo de formulário.
 
 Faça o seguinte para usar um modelo de formulário XFA como modelo de formulário para o formulário adaptável:
 
@@ -124,6 +125,7 @@ Faça o seguinte para usar o schema XML ou JSON como modelo de formulário para 
 
    * **[!UICONTROL Carregar do disco]** - Selecione essa opção e toque em Carregar definição de Schema para navegar e carregar um schema XML ou schema JSON do seu sistema de arquivos. O arquivo de schema carregado reside no formulário e não pode ser acessado por outros formulários adaptáveis.
    * **[!UICONTROL Pesquisar no repositório]** - Selecione essa opção para selecionar a partir da lista de arquivos de definição de schemas disponíveis no repositório. Selecione o arquivo de schema XML ou JSON como modelo de formulário. O schema selecionado será associado ao formulário por referência e estará acessível para uso em outros formulários adaptáveis.
+
    >[!CAUTION]
    >
    >Verifique se o nome do arquivo do schema JSON termina com **.schema.json**. Por exemplo: mySchema.schema.json
@@ -142,13 +144,13 @@ Faça o seguinte para usar o schema XML ou JSON como modelo de formulário para 
 
 ## Modelos de formulário adaptável {#adaptive-form-templates}
 
-Um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele possui componentes pré-formatados contendo determinadas propriedades e estrutura de conteúdo. O AEM Forms fornece alguns modelos de formulário adaptáveis. Para obter o pacote de modelo completo, incluindo modelos avançados, é necessário instalar o pacote de complementos AEM Forms. Para obter mais informações, consulte [Instalação do pacote](/help/forms/using/installing-configuring-aem-forms-osgi.md)complementar AEM Forms.
+Um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele possui componentes pré-formatados contendo determinadas propriedades e estrutura de conteúdo. A AEM Forms fornece alguns modelos de formulário adaptáveis. Para obter o pacote de modelo completo, incluindo modelos avançados, é necessário instalar o pacote de complementos AEM Forms. Para obter mais informações, consulte [Instalação do pacote](/help/forms/using/installing-configuring-aem-forms-osgi.md)complementar AEM Forms.
 
 Além disso, você pode usar o editor de modelos para criar seus próprios modelos. Para obter mais informações sobre como trabalhar com modelos, consulte Modelos [de formulário](/help/forms/using/template-editor.md)adaptáveis.
 
 >[!NOTE]
 >
->Quando você abre um formulário adaptável criado usando o modelo avançado para edição, uma mensagem de erro é exibida. O modelo avançado tem um componente Etapa de assinatura e o Adobe Sign está habilitado para ele por padrão. Crie e selecione uma configuração [em nuvem do](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configure um assinante](working-with-adobe-sign.md#addsignerstoanadaptiveform) para resolver o erro.
+>Quando você abre um formulário adaptável criado usando o modelo avançado para edição, uma mensagem de erro é exibida. O modelo avançado tem um componente Etapa de assinatura e a Adobe Sign está habilitada para ele por padrão. Crie e selecione uma configuração [em nuvem do](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign e [configure um assinante](working-with-adobe-sign.md#addsignerstoanadaptiveform) para resolver o erro.
 
 ## Editar propriedades do Modelo de formulário de um formulário adaptável {#edit-form-model}
 
@@ -181,11 +183,13 @@ Por padrão, a opção de salvar automaticamente não está ativada. É possíve
 1. Especifique o Acionador. O salvamento automático é acionado com base na sua configuração. Suas opções são:
 
    * **[!UICONTROL Baseado em tempo:]** Selecione a opção para salvar o conteúdo em start com base em um intervalo de tempo específico.
-   * **[!UICONTROL Baseado em Eventos:]** Selecione a opção para salvar o conteúdo com base no start quando um evento for acionado.
+   * **[!UICONTROL Baseado em eventos:]** Selecione a opção para salvar o conteúdo com base no start quando um evento for acionado.
+
    Quando você seleciona um acionador, a caixa Configuração de estratégia é ativada. A caixa Configuração de estratégia permite:
 
    * Especifique um intervalo de tempo se você selecionar acionador baseado **[!UICONTROL em]** tempo.
    * Especifique um nome de evento se você selecionar acionador baseado **[!UICONTROL em]** Eventos.
+
    Você também pode criar e adicionar sua própria estratégia personalizada à lista. Para obter detalhes, consulte [Implementar uma estratégia personalizada para salvar automaticamente os formulários](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Somente salvamento automático com base em tempo) Execute as seguintes etapas para configurar opções para o salvamento automático com base em tempo.
@@ -200,6 +204,6 @@ Por padrão, a opção de salvar automaticamente não está ativada. É possíve
 
    >[!NOTE]
    >
-   >Para que a opção de salvamento automático funcione para usuários anônimos, certifique-se de configurar o Serviço de configuração comum do Forms para permitir que todos os usuários possam pré-visualização, verificar e assinar formulários.
+   >Para que a opção de salvamento automático funcione para usuários anônimos, certifique-se de configurar o Forms Common Configuration Service para permitir que todos os usuários possam pré-visualização, verificar e assinar formulários.
    >
-   >Para configurar o serviço, vá até Configuração do console da Web do AEM em `https://'[server]:[port]'system/console/configMgr` e edite o serviço **[!UICONTROL de configuração comum do]** Forms para escolher a opção **[!UICONTROL Todos os usuários]** no campo **[!UICONTROL Permitir]** e salve a configuração.
+   >Para configurar o serviço, vá até AEM configuração do Console da Web em `https://'[server]:[port]'system/console/configMgr` e edite o Serviço **[!UICONTROL de Configuração Comum da]** Forms para escolher a opção **[!UICONTROL Todos os usuários]** no campo **[!UICONTROL Permitir]** e salve a configuração.
