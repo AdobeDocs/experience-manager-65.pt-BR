@@ -1,6 +1,6 @@
 ---
-title: Tendências de Atividade
-seo-title: Tendências de Atividade
+title: Tendências de atividade
+seo-title: Tendências de atividade
 description: Adicionar um componente de Lista de Atividade da comunidade a uma página
 seo-description: Adicionar um componente de Lista de Atividade da comunidade a uma página
 uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 ---
 
 
-# Tendências de Atividade {#activity-trends}
+# Tendências de atividade {#activity-trends}
 
 ## Introdução {#introduction}
 
@@ -33,9 +33,9 @@ O documento descreve:
 
 ### Requisito {#requirement}
 
-Os dados para o `Community Activity List` estão disponíveis somente quando o Adobe Analytics está licenciado e configurado para o site da comunidade.
+Os dados para o `Community Activity List` estão disponíveis somente quando a Adobe Analytics está licenciada e configurada para o site da comunidade.
 
-Consulte Configuração [Analytics para recursos](/help/communities/analytics.md)de comunidades.
+Consulte Configuração [do Analytics para recursos](/help/communities/analytics.md)de comunidades.
 
 ### Adicionar uma Lista de Atividade da comunidade a uma página {#adding-a-community-activity-list-to-a-page}
 
@@ -55,11 +55,11 @@ Quando colocado pela primeira vez em uma página de um site da comunidade, é as
 
 Selecione o componente inserido a ser acessado e selecione o `Community Activity List` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-55](assets/chlimage_1-55.png)
+![configure](assets/configure-new.png)
 
 Na guia **Comentários** , especifique se e como os comentários dos arquivos carregados serão exibidos:
 
-![chlimage_1-56](assets/chlimage_1-56.png)
+![propriedades](assets/activity-list-properties.png)
 
 * **Tipo**
 
@@ -126,5 +126,5 @@ O padrão está marcado.
 
 **Configuração de Conteúdo** de Tendência: Tipo = Conteúdo, tipo de Atividade = Postagens
 
-![chlimage_1-57](assets/chlimage_1-57.png)
+![componentes](assets/activity-list-components.png)
 
