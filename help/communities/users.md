@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: 2422ed41b18bc558f0cfc9e80f7eb6f4923aa07c
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '2183'
+ht-degree: 0%
 
 ---
 
@@ -75,14 +78,14 @@ Para gerenciar usuários e grupos de usuários registrados no ambiente do autor,
 |---|---|
 | administradores | O grupo de administradores consiste em administradores de sistema que têm todos os recursos de um administrador da comunidade, bem como a capacidade de gerenciar o grupo de administradores da comunidade. |
 | Administradores da comunidade | O grupo Administradores da comunidade se torna automaticamente membro de todos os sites da comunidade e de todos os grupos da comunidade criados no site. Um membro inicial do grupo Administradores da comunidade é o grupo de administradores. No ambiente do autor, os administradores da comunidade podem criar sites da comunidade, gerenciar sites, gerenciar membros (eles podem proibir membros da comunidade) e moderar conteúdo. |
-| Comunidade &lt;nome *do* site> Sitecontentmanager | O Community Site Content Manager pode executar a criação tradicional do AEM, a criação de conteúdo e a modificação de páginas para um site da comunidade. |
+| Comunidade &lt;nome *do* site> Sitecontentmanager | O Community Site Content Manager é capaz de executar a criação tradicional de AEM, a criação de conteúdo e a modificação de páginas para um site da comunidade. |
 | Gerentes de habilitação da comunidade | O grupo Gerentes de ativação da comunidade consiste em usuários que estão disponíveis para atribuição para gerenciar um grupo de Gerentes de ativação do site da comunidade. |
 | Community &lt;nome *do* site > SiteenableAdministradores | O grupo Gerentes de ativação do site da comunidade consiste em usuários que foram atribuídos para gerenciar os [recursos](resources.md)de ativação do site da comunidade. |
 | Nenhum | Um visitante de site anônimo pode não acessar o ambiente do autor. |
 
 ### Administradores de sistema {#system-administrators}
 
-Os membros do grupo de administradores são administradores de sistema que podem executar a configuração inicial de uma instalação do AEM para o autor e para os ambientes de publicação.
+Os membros do grupo de administradores são administradores de sistema que podem executar a configuração inicial de uma instalação AEM para o autor e publicar ambientes.
 
 Para fins de demonstração e desenvolvimento, o grupo de administradores tem um membro cujo ID de usuário é *admin* e a senha é *admin*.
 
@@ -214,18 +217,18 @@ Em uma instância do autor:
    * O caminho deve ser `/home/users/community`.
 4. Selecione **[!UICONTROL Criar]**.
 
-   ![chlimage_1-130](assets/chlimage_1-130.png)
+   ![create-community-user](assets/create-community-user.png)
 
 * No painel esquerdo, procure o usuário recém-criado e selecione para exibir no painel direito.
 
-   ![chlimage_1-131](assets/chlimage_1-131.png)
+   ![usuário comunitário](assets/view-community-user.png)
 
 No painel esquerdo:
 
 1. Desmarque a caixa de pesquisa e selecione **[!UICONTROL Ocultar usuários]**.
 2. Localize e arraste `community-enablementmanagers` para a guia **[!UICONTROL Grupos]** do novo usuário exibido no painel direito.
 
-   ![chlimage_1-132](assets/chlimage_1-132.png)
+   ![assign-group](assets/assign-group.png)
 
 ### Função de administradores da comunidade {#community-administrators-role}
 
@@ -235,11 +238,11 @@ Siga as mesmas etapas que criar e atribuir um usuário à função de gerenciado
 
 ### Integração LDAP {#ldap-integration}
 
-O AEM oferece suporte ao uso do LDAP para autenticação de usuários e criação de contas de usuários. Isso é detalhado em [Configurar o LDAP com o AEM 6](../../help/sites-administering/ldap-config.md).
+AEM suporta o uso do LDAP para autenticação de usuários e criação de contas de usuários. Isso é detalhado em [Configuração do LDAP com AEM 6](../../help/sites-administering/ldap-config.md).
 
 Veja a seguir alguns detalhes de configuração específicos para membros da comunidade e grupos de membros.
 
-1. Configure o LDAP para cada instância de publicação do AEM.
+1. Configure o LDAP para cada instância de publicação AEM.
 2. [O provedor de identidade LDAP](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * Nenhuma instrução especial
@@ -260,7 +263,7 @@ Isso resulta na atribuição automática de usuários ao grupo de membros do sit
 
 * O `User auto membership` valor deve ser a `rep:authorizableId` propriedade, não o `givenName` (nome de exibição) do perfil.
 
-## Sincronização de usuários entre instâncias do AEM {#synchronizing-users-among-aem-instances}
+## Sincronizando usuários entre instâncias AEM {#synchronizing-users-among-aem-instances}
 
 Ao usar um farm [de](topologies.md)publicação, certifique-se de que os usuários tenham o mesmo caminho em cada instância de publicação importando os usuários primeiro para uma instância e [permitindo a sincronização](sync.md) do usuário para Sling e distribuindo os usuários para as outras instâncias de publicação.
 
