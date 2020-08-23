@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '6053'
-ht-degree: 5%
+source-wordcount: '6050'
+ht-degree: 4%
 
 ---
 
@@ -39,19 +39,19 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 >[!NOTE]
 >
->Se você criar um vídeo interativo para iniciar uma página da Web quando um usuário clicar em uma imagem em miniatura, alguns dispositivos impedirão a abertura da página da Web pop-up. Nesses casos, é necessário alterar a configuração do bloqueador de pop-ups no dispositivo. Por exemplo, em um Apple iPhone 6, toque em **[!UICONTROL Settings** > **Safari** > **Block Pop-ups** e deslize o controle para **[!UICONTROL Off**. Agora, ao reproduzir um vídeo interativo e clicar em uma miniatura, você será solicitado a abrir o pop-up. Se você aceitar, a página da Web será aberta.
+>Se você criar um vídeo interativo para iniciar uma página da Web quando um usuário clicar em uma imagem em miniatura, alguns dispositivos impedirão a abertura da página da Web pop-up. Nesses casos, é necessário alterar a configuração do bloqueador de pop-ups no dispositivo. Por exemplo, em um Apple iPhone 6, toque em **[!UICONTROL Configurações]** > **Safari** > Pop-ups **de** bloqueio e deslize o controle para **[!UICONTROL Desativado]**. Agora, ao reproduzir um vídeo interativo e clicar em uma miniatura, você será solicitado a abrir o pop-up. Se você aceitar, a página da Web será aberta.
 
 ### Veja como os vídeos interativos são criados {#watch-how-interactive-videos-are-created}
 
 Assista a uma apresentação de 7 minutos e 30 segundos sobre [como os vídeos interativos são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
 (Embora a apresentação em vídeo tenha a marca Assets on Demand, os princípios e etapas ainda se aplicam a Vídeo interativo no AEM Assets.)
 
-### Webinar de sucesso do cliente da Adobe {#adobe-customer-success-webinar}
+### Webinar de sucesso do cliente Adobe {#adobe-customer-success-webinar}
 
-O webinário &quot;Usando vídeo interativo, compartilhamento de links e compartilhamento do YouTube em AEM Assets&quot; ensina como usar vídeo interativo e outros recursos para associar eventos direcionados à conversão ao conteúdo de marketing de vídeo.
+O webinário &quot;Usando vídeo interativo, compartilhamento de links e compartilhamento do YouTube no AEM Assets&quot; ensina como usar vídeos interativos e outros recursos para associar eventos direcionados à conversão ao conteúdo de marketing de vídeo.
 
 >[!NOTE]
-[Usando vídeo interativo, compartilhamento de links e compartilhamento do YouTube no AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+[Usar vídeo interativo, compartilhamento de links e compartilhamento do YouTube no AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Start rápido: Vídeos interativos {#quick-start-interactive-videos}
 
@@ -72,7 +72,7 @@ Etapas interativas do vídeo:
 1. **(Opcional) Identificação de variáveis** do Quickview - Start identificando variáveis dinâmicas usadas pela implementação do Quickview existente. Use as variáveis para mapear miniaturas de produtos para o Quickview de produto correspondente ao criar seu vídeo interativo. Consulte [(Opcional) Como identificar variáveis](#optional-identifying-quickview-variables)do Quickview.
    *Observe que esta etapa só é necessária se todas as seguintes etapas forem verdadeiras*:
 ・ Você deseja adicionar interatividade ao seu vídeo, disparando para visualizações rápidas.
-・ Sua implementação do AEM *não* usa uma estrutura de integração de eCommerce para inserir dados de produtos no AEM a partir de qualquer solução de eCommerce, como IBM Webphere Commerce, Elastic Path, hybris ou Intershop. Consulte Conceitos de [eCommerce em AEM Assets](/help/sites-administering/concepts.md).
+・ Sua implementação do AEM *não* usa uma estrutura de integração de eCommerce para inserir dados de produtos em AEM de qualquer solução de eCommerce como IBM Webphere Commerce, Elastic Path, hybris ou Intershop. Consulte Conceitos de [eCommerce na AEM Assets](/help/sites-administering/concepts.md).
 
 1. **(Opcional) Criação de uma predefinição** do visualizador de vídeo interativo - Personalize a aparência e o comportamento de vários componentes que compõem o player, como o depurador de vídeo e as miniaturas interativas.
 A criação de sua própria predefinição do visualizador de vídeo interativo não é necessária se você pretende usar as predefinições do visualizador de vídeo interativo prontas `Shoppable_Video_Light` ou `Shoppable_Video_Dark` .
@@ -82,11 +82,11 @@ Consulte [Criação de uma nova predefinição](/help/assets/managing-viewer-pre
 Consulte [Carregar um vídeo e seus ativos](#uploading-a-video-and-its-associated-thumbnail-assets)em miniatura associados.
 
 1. **Adicionar interatividade ao vídeo** - Adicione um ou mais segmentos de tempo ao vídeo. Em seguida, associe miniaturas de imagem nesses segmentos de tempo. Atribua cada miniatura de imagem a uma ação, como um hiperlink, uma visualização rápida ou um fragmento de experiência.
-(Observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas de AEM Sites.)
+(Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.)
 Conclua publicando os ativos de vídeo interativos. A publicação cria o código incorporado ou o URL que você eventualmente copiará e aplicará à landing page do site.Consulte [Adicionar interatividade ao vídeo](#adding-interactivity-to-your-video).
 Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. **Adicionando um vídeo interativo ao seu site ou ao seu site no AEM** Se você usar o AEM Sites, o eCommerce do AEM ou ambos, poderá adicionar o vídeo interativo diretamente a uma página da Web no AEM arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+1. **Adicionando um vídeo interativo ao seu site ou ao seu site em AEM** Se você usar o AEM Sites ou AEM eCommerce, ou ambos, você pode adicionar o vídeo interativo diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Use o código incorporado ou URL para integrar seu vídeo interativo com as experiências do site. Consulte [Integrar um vídeo interativo ao seu site](#integrating-an-interactive-video-with-your-website).
 Se você estiver usando um WCM de terceiros (Web Content Manager), é necessário integrar o novo vídeo interativo com a implementação existente do Quickview usada em seu site. Consulte [Integrar um vídeo interativo a um Quickview](#integrating-an-interactive-video-with-an-existing-quickview)existente.
    [](/help/assets/adding-dynamic-media-assets-to-pages.md)
@@ -96,9 +96,9 @@ Se você estiver usando um WCM de terceiros (Web Content Manager), é necessári
 >[!NOTE]
 Essa tarefa só é necessária se as seguintes condições forem verdadeiras:
 * Você deseja adicionar interatividade ao vídeo, disparando para o Quickviews.
-* Sua implementação do AEM *não* usa uma estrutura de integração de comércio eletrônico para extrair dados de produtos para o AEM de qualquer solução de comércio eletrônico como IBM Webphere Commerce, Elastic Path, hybris ou Intershop. Consulte Conceitos de [eCommerce em AEM Assets](/help/sites-administering/concepts.md).
+* Sua implementação do AEM *não* usa uma estrutura de integração de eCommerce para inserir dados de produtos em AEM de qualquer solução de eCommerce como IBM Webphere Commerce, Elastic Path, hybris ou Intershop. Consulte Conceitos de [eCommerce na AEM Assets](/help/sites-administering/concepts.md).
 
-Se sua implementação do AEM usar o eCommerce, você poderá ignorar essa tarefa e ir para a próxima tarefa.
+Se sua implementação do AEM usar o eCommerce, você poderá pular essa tarefa e seguir para a próxima tarefa.
 
 Start identificando variáveis dinâmicas usadas pela implementação do Quickview existente para que você possa mapear miniaturas de produtos para o produto correspondente do Quickview durante o processo de criação de vídeo interativo.
 
@@ -121,7 +121,7 @@ Normalmente, não é necessário usar nenhuma ferramenta de depuração especial
 
 * Para ver todas as solicitações HTTP de saída no Google Chrome, pressione **F12** (Windows) ou **Command+Options+I** (Mac) para abrir o painel Ferramentas do desenvolvedor e clique na guia **Rede** .
 
-* No Firefox, você pode ativar o plug-in do Firebug pressionando **F12** (Windows) ou **Command+Option+I** (Mac) e usar a guia **Net]**, ou usar a ferramenta Inspetor integrada e a guia Rede.
+* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows) or **Command+Option+I** (Mac) and use its **`[Net]`** tab, or you can use the built-in Inspector tool and its Network tab.
 
 * No Internet Explorer, ative a ferramenta de depuração pressionando **F12**.
 
@@ -131,7 +131,7 @@ Agora, encontre o URL Ajax do Quickview no registro de rede e copie o URL gravad
 
 Durante esse processo, é importante visitar diferentes áreas do seu site, com diferentes categorias e tipos de produtos. O motivo é que os URLs do Quickview podem ter partes comuns para uma determinada categoria do site, mas são alterados somente se você visitar uma área diferente do site.
 
-No caso mais simples, a única parte variável no URL do Quickview é o SKU do produto. Nesse caso, o valor do SKU do produto é o único dado necessário para adicionar miniaturas a um segmento de tempo no vídeo interativo no AEM.
+No caso mais simples, a única parte variável no URL do Quickview é o SKU do produto. Nesse caso, o valor SKU do produto é o único dado necessário para adicionar miniaturas a um segmento de tempo no vídeo interativo no AEM.
 
 No entanto, em casos complexos, o URL do Quickview tem diferentes elementos variados além do SKU do produto, como ID da categoria, código de cor e assim por diante. Nesses casos, cada elemento se torna uma variável separada na definição de dados em miniatura no AEM.
 
@@ -156,7 +156,7 @@ Considere os seguintes exemplos de URLs do Quickview e suas variáveis de miniat
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>A parte variável está na última parte do caminho e se torna o valor SKU das miniaturas do AEM: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>A parte variável está na última parte do caminho e se torna o valor SKU de miniaturas AEM: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU e ID da categoria na sequência do query.</p> </td>
@@ -260,7 +260,7 @@ Consulte Fragmentos [de experiência](/help/sites-authoring/experience-fragments
 Observe que as ferramentas de compartilhamento de mídia social em Vídeo interativo não são suportadas quando você incorpora o visualizador em um Fragmento de experiência. Para contornar isso, você pode usar ou criar predefinições do visualizador que não tenham ferramentas de compartilhamento de mídia social. Essas predefinições do visualizador permitem que você as incorpore com êxito aos Fragmentos de experiência.
 
 >[!NOTE]
-O método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas de AEM Sites.
+O método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
 
 As opções Desfazer e Refazer, perto do canto superior direito da página, são suportadas durante a sessão atual de criação/edição.
 
@@ -415,15 +415,15 @@ Para adicionar interatividade ao vídeo:
       <td>Para associar a imagem em miniatura selecionada a um hiperlink</td> 
       <td><p>Em Tipo de ação, toque em <strong>Hiperlink</strong>e execute um dos procedimentos a seguir:</p> 
        <ul> 
-       <li>Se você for um cliente do AEM Sites, toque no ícone Seletor de site (pasta) para navegar até uma página da Web. Observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas de AEM Sites.</li> 
-       <li>Se você for um cliente Dynamic Media independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.</li> 
+       <li>Se você for um cliente da AEM Sites, toque no ícone Seletor de site (pasta) para navegar até uma página da Web. Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.</li> 
+       <li>Se você for um cliente independente do Dynamic Media, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.</li> 
        </ul> <p>Certifique-se de especificar se deseja abrir o link em uma nova guia do navegador ou na guia atual.</p> </td> 
       </tr> 
       <tr> 
       <td>Para associar a imagem em miniatura selecionada a um fragmento de experiência</td> 
       <td><p>Em Tipo de ação, toque em Fragmento <strong>de</strong>experiência e faça o seguinte:<p> 
        <ul> 
-       <li>Se você for um cliente do AEM Sites, toque ou clique no ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Toque ou clique no Fragmento de experiência que deseja usar e, em seguida, toque em <strong>Selecionar </strong>no canto superior direito da página para retornar ao painel Ações na página anterior.<br /> Consulte Fragmentos <a href="/help/sites-authoring/experience-fragments.md">de experiência</a>.</li> 
+       <li>Se você for um cliente da AEM Sites, toque ou clique no ícone Pesquisar (lupa) para abrir a página Fragmento de experiência. Toque ou clique no Fragmento de experiência que deseja usar e, em seguida, toque em <strong>Selecionar </strong>no canto superior direito da página para retornar ao painel Ações na página anterior.<br /> Consulte Fragmentos <a href="/help/sites-authoring/experience-fragments.md">de experiência</a>.</li> 
       </ul> 
        <ul> 
        <li>Especifique a largura e a altura do Fragmento de experiência como ele será exibido no vídeo.</li>
@@ -485,7 +485,7 @@ Para adicionar interatividade ao vídeo:
 
 1. Publique o vídeo interativo. A publicação cria o código incorporado ou o URL que você eventualmente copiará e colará nas experiências do site.
 
-   Se você adicionou interatividade com o Quickviews, use apenas o código incorporado; se você adicionou interatividade com páginas da Web hipervinculadas, também é possível usar o URL publicado. Entretanto, observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas de AEM Sites.
+   Se você adicionou interatividade com o Quickviews, use apenas o código incorporado; se você adicionou interatividade com páginas da Web hipervinculadas, também é possível usar o URL publicado. Entretanto, observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
 
    Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
@@ -502,16 +502,16 @@ Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md
 
 Depois de fazer upload de um vídeo, adicionar segmentos de linha do tempo a ele e publicar o vídeo interativo, você estará pronto para adicioná-lo ao site existente.
 
-Se você for um cliente do AEM Sites, poderá adicionar o vídeo interativo arrastando o componente de Mídia interativa para sua página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente da AEM Sites, poderá adicionar o vídeo interativo arrastando o componente de Mídia interativa para sua página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-Se você for um cliente do AEM Assets independente, poderá adicionar manualmente o vídeo interativo ao seu site, conforme descrito nesta seção.
+Se você for um cliente independente da AEM Assets, poderá adicionar manualmente o vídeo interativo ao seu site, conforme descrito nesta seção.
 
 1. Copie o código incorporado ou URL do vídeo interativo publicado.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
-Se você adicionou interatividade com o Quickviews, use apenas o código incorporado; se você adicionou interatividade com páginas da Web hipervinculadas, também é possível usar o URL publicado. Entretanto, observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas de AEM Sites.
+Se você adicionou interatividade com o Quickviews, use apenas o código incorporado; se você adicionou interatividade com páginas da Web hipervinculadas, também é possível usar o URL publicado. Entretanto, observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
 
 1. No código da página da Web do público alvo, identifique onde o vídeo estático está localizado.
-1. Remova o vídeo estático e substitua o código pelo código incorporado ou URL copiado do AEM Assets, como está.
+1. Remova o vídeo estático e substitua o código pelo código incorporado ou URL que você copiou do AEM Assets, como está.
 O código incorporado copiado é definido para um ambiente responsivo, de modo que ele se ajuste automaticamente à área ocupada anteriormente pelo vídeo estático.
 
 >[!NOTE]
@@ -558,7 +558,7 @@ A integração é tão simples quanto remover o código incorporado de vídeo e 
 ## Integração de um vídeo interativo com um Quickview existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Esta tarefa só se aplica se você for um cliente AEM Assets independente.
+Esta tarefa só se aplica se você for um cliente independente da AEM Assets.
 
 A última etapa desse processo é integrar seu vídeo interativo com uma implementação do Quickview existente que é usada em seu site. Não há solução para a integração que funcione para todos os casos. Toda implementação do QuickView é exclusiva. Como tal, é necessária uma abordagem específica que envolva muito provavelmente a assistência de uma pessoa de TI de front-end.
 
