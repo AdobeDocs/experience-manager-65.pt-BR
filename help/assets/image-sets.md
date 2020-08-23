@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 19%
+source-wordcount: '2076'
+ht-degree: 18%
 
 ---
 
@@ -23,7 +23,7 @@ Os Conjuntos de imagens fornecem aos usuários uma experiência de visualizaçã
 
 Os conjuntos de imagens são designados por um banner com a palavra `IMAGESET`. Além disso, se o Conjunto de imagens for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL Mundo]**, estará no banner junto com a última data de modificação, indicada pelo ícone **[!UICONTROL Lápis]**.
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![chlimage_1-135](assets/chlimage_1-339.png)
 
 No conjunto de imagens, também é possível criar amostras criando um Conjunto de imagens e adicionando miniaturas.
 
@@ -43,7 +43,7 @@ Para começar a trabalhar rapidamente:
 
    Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão para obter detalhes ideais de zoom. O Dynamic Media pode renderizar imagens de até 25 megapixels cada. Por exemplo, você pode usar uma imagem de 5000 x 5000 megapixels ou qualquer outra combinação de tamanho até 25 megapixels.
 
-   O AEM Assets suporta muitos formatos de arquivo de imagem, mas são recomendadas imagens TIFF, PNG e EPS sem perdas.
+   A AEM Assets oferece suporte a vários formatos de arquivo de imagem, mas são recomendadas imagens TIFF, PNG e EPS sem perdas.
 
 1. [Criar conjuntos de imagens.](#creating-image-sets)
 
@@ -67,7 +67,7 @@ Para começar a trabalhar rapidamente:
    Consulte **[!UICONTROL Ferramentas > Ativos > Predefinições]** do visualizador para criar ou editar predefinições do visualizador.
 
 1. (Opcional) [Visualizando Conjuntos](/help/assets/image-sets.md#viewing-image-sets) de Imagens que foram criados usando predefinições de conjuntos de lotes.
-1. [Conjuntos de imagens de Pré-visualização.](/help/assets/previewing-assets.md)
+1. [Conjuntos de imagens de pré-visualização.](/help/assets/previewing-assets.md)
 
    Selecione o Conjunto de imagens e você pode pré-visualização-lo. Clique nos ícones de miniatura para examinar seu Conjunto de imagens no Visualizador selecionado. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]** , disponível no menu suspenso do painel esquerdo.
 
@@ -77,7 +77,7 @@ Para começar a trabalhar rapidamente:
 
 1. [Vincule URLs à sua Aplicação web](/help/assets/linking-urls-to-yourwebapplication.md) ou [Incorpore o visualizador](/help/assets/embed-code.md)de vídeo ou imagem.
 
-   O AEM Assets cria chamadas de URL para Conjuntos de imagens e as ativa após a publicação dos conjuntos de imagens. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
+   A AEM Assets cria chamadas de URL para Conjuntos de imagens e as ativa depois que você publica os conjuntos de imagens. Você pode copiar esses URLs ao pré-visualização de ativos. Como alternativa, você pode incorporá-los ao seu site.
 
    Selecione o Conjunto de imagens e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores.]**
 
@@ -85,7 +85,7 @@ Para começar a trabalhar rapidamente:
 
 Para editar Conjuntos de imagens, consulte [edição de Conjuntos de imagens.](#editing-image-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](/help/assets/managing-assets-touch-ui.md#editing-properties)imagens.
 
-Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos no modo [](/help/assets/troubleshoot-dms7.md#images-and-sets)Solução de problemas Dynamic Media - Scene7.
+Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos no modo [](/help/assets/troubleshoot-dms7.md#images-and-sets)Solução de problemas de Dynamic Media - Scene7.
 
 ## Fazer upload de ativos em conjuntos de imagens {#uploading-assets-in-image-sets}
 
@@ -118,7 +118,7 @@ Você pode criar Conjuntos de imagens pela interface do usuário ou pela API. Es
 >[!NOTE]
 >
 >You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
->**Importante:**Os conjuntos de lotes são criados pelo IPS (Image Production System) como parte da ingestão de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.
+>**Importante:** Os conjuntos de lotes são criados pelo IPS (Image Production System) como parte da ingestão de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.
 
 Quando você adiciona ativos ao seu conjunto, eles são adicionados automaticamente em ordem alfanumérica. Você pode reordenar ou classificar manualmente os ativos depois de adicionados.
 
@@ -176,7 +176,7 @@ Você pode criar conjuntos de imagens na interface do usuário ou automaticament
 
 >[!IMPORTANT]
 >
->Os conjuntos de lotes são criados pelo Sistema [de Produção de] Imagens IPS como parte da ingestão de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.)
+>Os conjuntos de lotes são criados pelo IPS [Image Production System] como parte da ingestão de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.)
 
 No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *não* são exibidos na interface do usuário. Você pode visualização esses conjuntos de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você tiver criado os conjuntos de imagens na interface do usuário).
 
@@ -184,13 +184,13 @@ No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *n
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
-* A partir de uma imagem de membro de qualquer conjunto. Selecione o menu **[!UICONTROL Conjuntos** para exibir os conjuntos dos quais o ativo é membro.
+* A partir de uma imagem de membro de qualquer conjunto. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Na pesquisa, você pode selecionar **[!UICONTROL Filtro**, expandir **[!UICONTROL Dynamic Media** e selecionar **[!UICONTROL Conjuntos.]**
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets.]**
 
-   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos de lotes. Para conjuntos automatizados, o query de pesquisa é realizado usando critérios de pesquisa &quot;Start com&quot; diferentes da pesquisa do AEM, que é baseada no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
+   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos de lotes. Para conjuntos automatizados, o query de pesquisa é realizado usando critérios de pesquisa &quot;Start com&quot; diferentes de AEM pesquisa que se baseia no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -224,7 +224,7 @@ No entanto, os conjuntos criados usando predefinições de conjuntos de lotes *n
 
       >[!NOTE]
       >
-      >Se você excluir a imagem que o AEM usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
+      >Se você excluir a imagem que AEM usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
    * Para excluir um ativo, selecione-o e toque ou clique em **[!UICONTROL Excluir ativo.]**
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Para adicionar ou alterar uma miniatura, selecione o ícone de miniatura ao lado direito do ativo. Navegue até a nova miniatura ou ativo de amostra, selecione-o e toque em **[!UICONTROL Selecionar.]**
