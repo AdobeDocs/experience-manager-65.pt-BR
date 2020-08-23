@@ -3,9 +3,9 @@ title: Write-back de XMP a execuções
 description: Saiba como o recurso XMP write-back propaga as alterações de metadados de um ativo para todas as execuções ou representações específicas do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 5%
 
 ---
@@ -33,7 +33,7 @@ Para permitir que as alterações de metadados sejam propagadas para as represen
 
 1. Para abrir o Configuration Manager, acesse `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração do **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
-1. Selecione a opção **[!UICONTROL Propagate XMP[!UICONTROL ** e salve as alterações.
+1. Selecione a opção **[!UICONTROL Propagar XMP]** e salve as alterações.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
