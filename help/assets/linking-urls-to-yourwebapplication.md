@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1274'
 ht-degree: 11%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 11%
 
 # Vincular URLs ao aplicativo da Web.{#linking-urls-to-your-web-application}
 
-Seus sites e aplicativos acessam os serviços da Dynamic Media por meio de chamadas de URL. Depois de publicar um ativo, a Dynamic Media ativa uma string de URL que faz referência ao ativo. Você pode colar esses URLs em um navegador da Web para teste.
+Seus sites e aplicativos acessam os serviços de Dynamic Media por meio de chamadas de URL. Depois de publicar um ativo, o Dynamic Media ativa uma string de URL que faz referência ao ativo. Você pode colar esses URLs em um navegador da Web para teste.
 
-Você vincula a URLs somente se *não* estiver usando o AEM como seu WCM. A vinculação versus incorporação é usada quando você deseja fornecer um player de vídeo como uma janela pop-up ou modal. Se você estiver usando o AEM como seu WCM, [adicione os ativos diretamente na sua página.](adding-dynamic-media-assets-to-pages.md)
+Você vincula a URLs somente se *não* estiver usando AEM como seu WCM. A vinculação versus incorporação é usada quando você deseja fornecer um player de vídeo como uma janela pop-up ou modal. Se você estiver usando AEM como seu WCM, [adicione os ativos diretamente na sua página.](adding-dynamic-media-assets-to-pages.md)
 
 Para colocar essas strings de URL em suas páginas da Web e aplicativos, copie-as do Dynamic Media.
 
@@ -88,7 +88,7 @@ Existem várias maneiras diferentes de obter uma string de URL. No entanto, as e
 
 ## Obter um URL para um ativo estático {#obtaining-a-url-for-a-static-asset}
 
-A Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicionais além de imagens e vídeos. Os formatos de ativos estáticos suportados para o delivery incluem:
+O Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicionais além de imagens e vídeos. Os formatos de ativos estáticos suportados para o delivery incluem:
 
 * arquivos 3D
 * GIF animado
@@ -122,7 +122,7 @@ A Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
 ## Obter um URL de vídeo para uma execução de vídeo publicada {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. No AEM, navegue até **[!UICONTROL Ferramentas > Implantação > Nuvem > Cloud Service.]**
+1. Em AEM, navegue até **[!UICONTROL Ferramentas > Implantação > Nuvem > Cloud Services.]**
 1. Na página **[!UICONTROL Serviços da nuvem]**, role até o cabeçalho **[!UICONTROL Serviços de nuvem do Dynamic Media]** e toque em **[!UICONTROL Mostrar configurações.]**
 1. Em **[!UICONTROL Configurações disponíveis]**, toque no nome da configuração desejada.
 
@@ -138,7 +138,7 @@ A Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
    Por exemplo, se a ID de registro fosse `87654321|MyCompany`, o nome do cliente seria `MyCompany`.
 
-1. Perto do canto superior esquerdo da página, toque em **[!UICONTROL Cloud Service**, toque no logotipo Experience Manager e navegue até **[!UICONTROL General > CRXDE Lite.]**
+1. Perto do canto superior esquerdo da página, toque em **[!UICONTROL Cloud Services]**, toque no logotipo do Experience Manager e navegue até **[!UICONTROL Geral > CRXDE Lite.]**
 1. Copie todo o caminho de execução do vídeo do JCR (Java Content Repository).
 
    Por exemplo, o caminho de renderização do vídeo pode aparecer de maneira semelhante ao seguinte:
@@ -159,12 +159,13 @@ A Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
 ## Obter um URL de vídeo para transmissão adaptável (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. No AEM, navegue até **[!UICONTROL Ferramentas > Implantação > Nuvem > Cloud Service.]**
+1. Em AEM, navegue até **[!UICONTROL Ferramentas > Implantação > Nuvem > Cloud Services.]**
 1. Na página **[!UICONTROL Serviços da nuvem]**, role até o cabeçalho **[!UICONTROL Serviços de nuvem do Dynamic Media]** e toque em **[!UICONTROL Mostrar configurações.]**
 1. Em **[!UICONTROL Configurações disponíveis]**, toque no nome da configuração desejada.
-1. Na página Configurações **[!UICONTROL do]** Dynamic Media Cloud Service, faça o seguinte:
+1. Na página Configurações **[!UICONTROL do]** Dynamic Media Cloud Services, faça o seguinte:
 
    * Em URL **[!UICONTROL do serviço de]** vídeo, copie o caminho do URL inteiro. Você precisará do caminho do URL copiado posteriormente nessas etapas. Por exemplo, o caminho do URL pode ser exibido da seguinte maneira:
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (O caminho acima serve apenas para fins ilustrativos; não é o caminho real que você copia.)
@@ -181,7 +182,7 @@ A Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
    | HTTP <br> Se estiver usando HTTP (delivery de vídeo não seguro), certifique-se de alterar https para http no valor do URL do Serviço de vídeo copiado anteriormente. | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. Copie o caminho completo do ativo de vídeo no AEM, conforme processado pela Dynamic Media. Você precisará desse caminho de ativo de vídeo copiado posteriormente nessas etapas.
+1. Copie o caminho completo do ativo de vídeo no AEM, conforme processado pelo Dynamic Media. Você precisará desse caminho de ativo de vídeo copiado posteriormente nessas etapas.
 
    Por exemplo:
 
@@ -199,8 +200,8 @@ A Dynamic Media suporta o delivery de ativos estáticos, que são ativos adicion
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Usar HTTP/2 para fornecer seus ativos Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Usar HTTP/2 para fornecer seus ativos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O Delivery dos ativos Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Fornece transferência de informações mais rápida e reduz a quantidade de poder de processamento necessário. O delivery de ativos de Dynamic Media agora pode estar acima de HTTP/2, o que oferece melhor resposta e tempo de carregamento.
 
-Consulte Delivery [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta Dynamic Media.
+Consulte Delivery [HTTP2 de conteúdo](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta de Dynamic Media.
