@@ -1,6 +1,6 @@
 ---
-title: Desenvolvimento de formulários (Interface clássica)
-seo-title: Desenvolvimento de formulários (Interface clássica)
+title: Desenvolvimento do Forms (interface clássica)
+seo-title: Desenvolvimento do Forms (interface clássica)
 description: Saiba como desenvolver formulários
 seo-description: Saiba como desenvolver formulários
 uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
@@ -11,26 +11,28 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 5%
 
 ---
 
 
-# Desenvolvimento de formulários (Interface clássica){#developing-forms-classic-ui}
+# Desenvolvimento do Forms (interface clássica){#developing-forms-classic-ui}
 
 A estrutura básica de um formulário é:
 
-* Início do formulário
+* Start de formulário
 * Elementos de formulário
 * Fim do formulário
 
-Todos eles são realizados com uma série de componentes [padrão do](/help/sites-authoring/default-components.md#form)formulário, disponíveis em uma instalação padrão do AEM.
+Todos eles são realizados com uma série de componentes [padrão do](/help/sites-authoring/default-components.md#form)Formulário, disponíveis em uma instalação padrão do AEM.
 
 Além de [desenvolver novos componentes](/help/sites-developing/developing-components-samples.md) para uso em seus formulários, você também pode:
 
 * [Pré-carregar seu formulário com valores](#preloading-form-values)
-* [Pré-carregar (determinados) campos com vários valores
-   ](#preloading-form-fields-with-multiple-values)
+* [Pré-carregar (determinados) campos com vários valores](#preloading-form-fields-with-multiple-values)
 * [Desenvolver novas ações](#developing-your-own-form-actions)
 * [Desenvolver novas restrições](#developing-your-own-form-constraints)
 * [Mostrar ou ocultar campos de formulário específicos](#showing-and-hiding-form-components)
@@ -39,11 +41,11 @@ Além de [desenvolver novos componentes](/help/sites-developing/developing-compo
 
 >[!NOTE]
 >
->Este documento foca no desenvolvimento de formulários usando os Componentes [](/help/sites-authoring/default-components-foundation.md) básicos na interface clássica. A Adobe recomenda aproveitar os novos Componentes [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principais e [Ocultar condições](/help/sites-developing/hide-conditions.md) para o desenvolvimento de formulários na interface habilitada para toque.
+>Este documento foca no desenvolvimento de formulários usando os Componentes [](/help/sites-authoring/default-components-foundation.md) básicos na interface clássica. O Adobe recomenda aproveitar os novos Componentes [](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) principais e [Ocultar condições](/help/sites-developing/hide-conditions.md) para o desenvolvimento de formulários na interface habilitada para toque.
 
 ## Pré-carregamento de valores de formulário {#preloading-form-values}
 
-O componente de início do formulário fornece um campo para o Caminho **de** carga, um caminho opcional que aponta para um nó no repositório.
+O componente de start de formulário fornece um campo para o Caminho **de** carga, um caminho opcional que aponta para um nó no repositório.
 
 O Caminho de carga é o caminho para as propriedades do nó que é usado para carregar valores predefinidos em vários campos do formulário.
 
@@ -53,7 +55,7 @@ Isso é um campo opcional que especifica o caminho para um nó no repositório. 
 >
 >Uma ação [de](#developing-your-own-form-actions) formulário também pode definir o recurso a partir do qual os valores iniciais serão carregados. Isso é feito usando `FormsHelper#setFormLoadResource` o interior `init.jsp`.
 >
->Somente se isso não for definido, o formulário será preenchido a partir do caminho definido no componente de formulário inicial pelo autor.
+>Somente se isso não for definido, o formulário será preenchido a partir do caminho definido no componente de formulário do start pelo autor.
 
 ### Preloading Form Fields with Multiple Values {#preloading-form-fields-with-multiple-values}
 
@@ -61,7 +63,7 @@ Vários campos de formulário também têm o Caminho **de carregamento de** iten
 
 O Caminho **de carga de** itens é o caminho para as propriedades do nó que é usado para carregar valores predefinidos nesse campo específico no formulário, por exemplo, uma lista [](/help/sites-authoring/default-components-foundation.md#dropdown-list)suspensa, um grupo [de caixas de](/help/sites-authoring/default-components-foundation.md#checkbox-group) seleção ou um grupo [de](/help/sites-authoring/default-components-foundation.md#radio-group)opções.
 
-#### Exemplo - Pré-carregar uma lista suspensa com vários valores {#example-preloading-a-dropdown-list-with-multiple-values}
+#### Exemplo - Pré-carregar uma Lista suspensa com vários valores {#example-preloading-a-dropdown-list-with-multiple-values}
 
 Uma lista suspensa pode ser configurada com o intervalo de valores para a seleção.
 
@@ -71,7 +73,8 @@ O Caminho **de carregamento de** itens pode ser usado para acessar uma lista de 
 
 1. Adicione uma nova propriedade (por exemplo, `myList`) do tipo cadeia de caracteres de vários valores ( `String[]`) para conter a lista de itens suspensos. O conteúdo também pode ser importado usando um script, como com um script JSP ou cURL em um script shell.
 
-1. Use o caminho completo no campo Caminho **de carga de** itens:por exemplo, `/etc/designs/geometrixx/formlistvalues/myList`
+1. Use o caminho completo no campo Caminho **de carga de** itens:
+por exemplo, `/etc/designs/geometrixx/formlistvalues/myList`
 
 Observe que, se os valores no `String[]` forem formatados da seguinte maneira:
 
@@ -79,7 +82,7 @@ Observe que, se os valores no `String[]` forem formatados da seguinte maneira:
 * `AK=Alaska`
 * *etc.*
 
-então o AEM gerará a lista como:
+então AEM gerará a lista como:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
@@ -90,11 +93,11 @@ Esse recurso pode, por exemplo, ser bem utilizado em uma configuração de vári
 
 Um formulário exige uma ação. Uma ação define a operação executada quando o formulário é enviado com os dados do usuário.
 
-Uma variedade de ações é fornecida com uma instalação padrão do AEM, que pode ser vista em:
+Uma variedade de ações é fornecida com uma instalação AEM padrão, essas ações podem ser vistas em:
 
 `/libs/foundation/components/form/actions`
 
-e na lista Tipo **de** ação do componente **Formulário** :
+e na lista **Action Type** do componente **Form** :
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -116,7 +119,7 @@ Você pode adicionar sua própria ação da `/apps` seguinte maneira:
 
    * Opcionalmente:
 
-      * `jcr:title` - especifique um título de sua escolha, que será exibido na lista suspensa. Se não estiver definido, o nome do nó será exibido
+      * `jcr:title` - especifique um título de sua escolha, que será exibido na lista de seleção suspensa. Se não estiver definido, o nome do nó será exibido
 
       * `jcr:description` - insira uma descrição de sua escolha
 
@@ -124,14 +127,15 @@ Você pode adicionar sua própria ação da `/apps` seguinte maneira:
 
    1. Adicione campos para que o autor possa editar a caixa de diálogo de formulários depois que a ação for escolhida.
 
-1. Na pasta crie:
+1. Na pasta, crie:
 
    1. Um script post.
-O nome do script é `post.POST.<extension>`, por exemplo, `post.POST.jsp`O script post é chamado quando um formulário é enviado para processar o formulário, ele contém o código que manipula os dados que chegam do formulário `POST`.
+O nome do script é `post.POST.<extension>`, por exemplo, `post.POST.jsp`O script post é chamado quando um formulário é enviado para processar o formulário, ele contém o código que manipula os dados que chegam do formulário 
+`POST`.
 
    1. Adicione um script forward que é chamado quando o formulário é enviado.
 O nome do script é `forward.<extension`>, por exemplo, `forward.jsp`esse script pode definir um caminho. A solicitação atual é encaminhada para o caminho especificado.
-   A chamada necessária é `FormsHelper#setForwardPath` (2 variantes). Um caso típico é executar alguma validação, ou lógica, para encontrar o caminho de destino e, em seguida, encaminhar para esse caminho, permitindo que o servlet Sling POST execute o armazenamento real no JCR.
+   A chamada necessária é `FormsHelper#setForwardPath` (2 variantes). Um caso típico é executar alguma validação, ou lógica, para encontrar o caminho do público alvo e, em seguida, avançar para esse caminho, permitindo que o servlet Sling POST faça o armazenamento real no JCR.
 
    Também pode haver outro servlet que faça o processamento real, nesse caso a ação do formulário e o servidor só `forward.jsp` atuariam como o código de &quot;cola&quot;. Um exemplo disso é a ação de email em `/libs/foundation/components/form/actions/mail`, que encaminha detalhes para `<currentpath>.mail.html`onde um servlet de email se situa.
 
@@ -139,6 +143,7 @@ O nome do script é `forward.<extension`>, por exemplo, `forward.jsp`esse script
 
    * a `post.POST.jsp` é útil para pequenas operações totalmente realizadas pela própria ação
    * enquanto o `forward.jsp` é útil quando somente a delegação é necessária.
+
    A ordem de execução dos scripts é:
 
    * Ao renderizar o formulário ( `GET`):
@@ -164,10 +169,10 @@ O nome do script é `forward.<extension`>, por exemplo, `forward.jsp`esse script
 1. Outra vez na pasta, opcionalmente, adicione:
 
    1. Um script para adicionar campos.
-O nome do script é `addfields.<extension>`, por exemplo, `addfields.jsp`um script addfields é chamado imediatamente depois que o HTML para o início do formulário é gravado. Isso permite que a ação adicione campos de entrada personalizados ou outro HTML desse tipo dentro do formulário.
+O nome do script é `addfields.<extension>`, por exemplo, `addfields.jsp`um script addfields é chamado imediatamente depois que o HTML do start de formulário é gravado. Isso permite que a ação adicione campos de entrada personalizados ou outro HTML desse tipo dentro do formulário.
 
    1. Um script de inicialização.
-O nome do script é `init.<extension>`, por exemplo, `init.jsp`Esse script é chamado quando o formulário é renderizado. Pode ser usado para inicializar detalhes de ação. &quot;
+O nome do script é `init.<extension>`, por exemplo, `init.jsp`Esse script é chamado quando o formulário é renderizado. Ele pode ser usado para inicializar detalhes de ação. &quot;
 
    1. Um script de limpeza.
 O nome do script é `cleanup.<extension>`, por exemplo, `cleanup.jsp`Este script pode ser usado para realizar a limpeza.
@@ -225,7 +230,7 @@ O nome do script é `servervalidation.<extension>`, por exemplo, `servervalidati
 
 #### Restrições de forma global {#form-global-constraints}
 
-A validação global do formulário é especificada pela configuração de um tipo de recurso no componente de formulário inicial ( `validationRT`). Por exemplo:
+A validação global do formulário é especificada pela configuração de um tipo de recurso no componente de formulário do start ( `validationRT`). Por exemplo:
 
 `apps/myProject/components/form/validation`
 
@@ -277,13 +282,14 @@ No Javascript, as condições usam o valor da propriedade Nome do elemento para 
       * **any** - se apenas uma ou mais condições devem ser verdadeiras para mostrar ou ocultar o componente
    * Na linha de condição (uma é apresentada como padrão), selecione um componente, um operador e especifique um valor.
    * Adicione mais condições, se necessário, clicando em **Adicionar condição**.
+
    Por exemplo:
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
 1. Click **OK** to save the definition.
 
-1. Depois de salvar sua definição, um link **Editar regras** é exibido ao lado da opção **Mostrar/ocultar** nas propriedades do componente de formulário. Clique neste link para abrir a caixa de diálogo **Editar mostrar/ocultar regras** para fazer alterações.
+1. Depois de salvar sua definição, um link **Editar regras** é exibido ao lado da opção **Mostrar/ocultar** nas propriedades do componente de formulário. Clique neste link para abrir a caixa de diálogo **Editar Mostrar/Ocultar regras** para fazer alterações.
 
    Click **OK** to save all changes.
 
@@ -295,10 +301,10 @@ No Javascript, as condições usam o valor da propriedade Nome do elemento para 
    >
    >
    >
-   >    * no modo **Visualização** no ambiente do autor (precisa de um recarregamento de página ao alternar pela primeira vez para visualização)
+   >    * no modo de **Pré-visualização** no ambiente do autor (precisa de um recarregamento de página ao alternar pela primeira vez para a pré-visualização)
       >
       >    
-   * no ambiente de publicação
+   * no ambiente publish
 
 
 #### Tratamento de referências de componentes quebrados {#handling-broken-component-references}
@@ -316,4 +322,4 @@ Para obter mais informações sobre os elementos de API que podem ser usados ao 
 * Definir o tipo de recurso de validação
 * Incluir um script para validação:
 
-   * No JSP, chame o serviço da Web e crie um `com.day.cq.wcm.foundation.forms.ValidationInfo` objeto que contenha suas mensagens de erro. Se houver erros, os dados do formulário não serão publicados.
+   * Em seu JSP, chame o serviço da Web e crie um `com.day.cq.wcm.foundation.forms.ValidationInfo` objeto que contenha suas mensagens de erro. Se houver erros, os dados do formulário não serão publicados.
