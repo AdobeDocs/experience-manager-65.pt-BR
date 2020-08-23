@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ba6f94435a4d4945d54614db19f7ff612a317692
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '11830'
+source-wordcount: '11828'
 ht-degree: 8%
 
 ---
@@ -167,7 +167,7 @@ Consulte também [Visualizadores para AEM Assets e Dynamic Media Classic](https:
 
 As predefinições do visualizador de vídeo HTML5 do Dynamic Media são players de vídeo robustos. Você pode usá-los para evitar muitos problemas comuns associados à reprodução de vídeo HTML5 e problemas associados a dispositivos móveis, como falta de delivery de transmissão adaptável e alcance limitado do navegador do desktop.
 
-No lado do design do player, é possível projetar toda a funcionalidade do player de vídeo usando ferramentas padrão de desenvolvimento da Web. Por exemplo, você pode projetar botões, controles e imagens de fundo de pôster personalizadas usando HTML5 e CSS para ajudá-lo a alcançar seus clientes com uma aparência personalizada.
+No lado de design do player, é possível projetar toda a funcionalidade do player de vídeo usando ferramentas padrão de desenvolvimento da Web. Por exemplo, você pode projetar botões, controles e imagens de fundo de pôster personalizadas usando HTML5 e CSS para ajudá-lo a alcançar seus clientes com uma aparência personalizada.
 
 No lado da reprodução do visualizador, ele detecta automaticamente a capacidade de vídeo do navegador. Em seguida, ele serve o vídeo usando HLS (HTTP Live Streaming), também conhecido como streaming de vídeo adaptável. Ou, se esses métodos de delivery não estiverem presentes, então o HTML5 progressivo será usado.
 
@@ -183,7 +183,7 @@ A reprodução do vídeo ocorre usando HLS ou download progressivo de vídeo. Em
 
 No entanto, no AEM 6.3 e em diante, os vídeos agora são transmitidos por HTTPS (ou seja, HLS), pois o URL do serviço de gateway de DM sempre usa HTTPS também. Observe que não há impacto do cliente neste comportamento padrão. Ou seja, o streaming de vídeo sempre ocorrerá em HTTPS, a menos que não seja suportado pelo navegador. (consulte a tabela a seguir). Portanto,
 
-* Se você tiver um site HTTPS com streaming de vídeo HTTPS, o streaming está funcionando bem.
+* Se você tiver um site HTTPS com streaming de vídeo HTTPS, o streaming está correto.
 * Se você tiver um site HTTP com streaming de vídeo HTTPS, o streaming estará correto e não haverá problemas de conteúdo misto no navegador da Web.
 
 HLS é um padrão da Apple para streaming de vídeo adaptável que ajusta automaticamente a reprodução com base na capacidade de largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; qualquer ponto do vídeo, sem precisar aguardar o download do restante do vídeo.
@@ -471,7 +471,7 @@ Para definir as configurações do Google Cloud:
 
 1. Execute um dos procedimentos a seguir:
 
-   * No Painel do seu projeto, no cartão de Introdução, toque em **[!UICONTROL Explorar e ativar as APIs.]**
+   * No Painel do seu projeto, no cartão Introdução, toque em **[!UICONTROL Explorar e habilitar as APIs.]**
    * No Painel do seu projeto, no cartão de APIs, toque em **[!UICONTROL Ir para a visão geral das APIs.]**
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
@@ -688,7 +688,7 @@ Para automatizar a configuração das propriedades padrão do YouTube para os v�
 
 1. No canto superior esquerdo do AEM, clique no logotipo do AEM e, no painel à esquerda, clique em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados.]**
 1. Click **[!UICONTROL default.]** (Não adicione uma marca de seleção à caixa de seleção à esquerda de &quot;padrão&quot;.)
-1. Na página **[!UICONTROL padrão]**, marque a caixa à esquerda do **[!UICONTROL vídeo]** e clique em **Editar.]**
+1. Na página **[!UICONTROL padrão]**, marque a caixa à esquerda do **[!UICONTROL vídeo]** e clique em **[!UICONTROL Editar.]**
 1. Na página Editor de Schemas de metadados, clique na guia **[!UICONTROL Avançado]** .
 1. No cabeçalho Publicação no YouTube, clique em **[!UICONTROL Categoria do YouTube.]**
 1. No lado direito da página, na guia **[!UICONTROL Configurações]** , faça o seguinte:
@@ -722,7 +722,7 @@ Cole o valor copiado no editor de texto aberto. Você precisará desse valor pos
    * (Opcional) No lado direito da página, na guia Configurações, no campo de texto Rótulo do campo, digite `YouTube Publishing`.
    * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you just created.
 
-   * Click **[!UICONTROL Field Label** to select the component.
+   * Click **[!UICONTROL Field Label]** to select the component.
    * No lado direito da página, na guia Configurações, cole os valores de Publicação do YouTube (valor de Rótulo de campo e Mapa para valor de propriedade) que você copiou anteriormente, em seus respectivos campos no formulário. Cole o valor Opções no campo Valor padrão.
 
 1. Adicione os valores de privacidade do YouTube copiados ao perfil, fazendo o seguinte:
@@ -1227,7 +1227,7 @@ Para **adicionar uma miniatura** de vídeo personalizada,
 
 1. Navegue até um ativo de vídeo carregado cuja imagem em miniatura você deseja alterar.
 1. No modo de seleção de ativos, na Visualização **[!UICONTROL da]** Lista ou na Visualização **[!UICONTROL do]** cartão, toque no ativo de vídeo.
-1. Na barra de ferramentas, toque no ícone **[!UICONTROL Properties** (um círculo com um &quot;i&quot;).
+1. Na barra de ferramentas, toque no ícone **[!UICONTROL Propriedades]** (um círculo com um &quot;i&quot; nela).
 1. Na página Propriedades do vídeo, toque em **[!UICONTROL Alterar miniatura.]**
 1. Na página Alterar miniatura, execute um dos procedimentos a seguir:
 
