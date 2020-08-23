@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '7842'
 ht-degree: 0%
@@ -30,7 +30,7 @@ O serviço Gerar PDF usa aplicativos nativos para converter os seguintes formato
 
 >[!NOTE]
 >
->O Acrobat® 9.2 ou posterior é necessário para converter o formato Microsoft XPS em PDF.
+>É necessário o Acrobat® 9.2 ou posterior para converter o formato Microsoft XPS em PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 e 2009 para converter DWF, DWG e DXW (somente em inglês)
 * Corel WordPerfect 12 e X4 para converter WPD, QPW, SHW (somente em inglês)
@@ -44,10 +44,10 @@ O serviço Gerar PDF usa aplicativos nativos para converter os seguintes formato
 
 >[!NOTE]
 >
->O Photoshop CS3 e CS4 não são suportados porque não são compatíveis com o Windows Server 2003 ou o Windows Server 2008.
+>O Photoshop CS3 e o CS4 não são suportados porque não são compatíveis com o Windows Server 2003 ou o Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 e 8 para converter FM (somente Windows)
-* Adobe PageMaker® 7.0 para converter PMD, PM6, P65 e PM (somente Windows)
+* PageMaker Adobe® 7.0 para converter PMD, PM6, P65 e PM (somente Windows)
 * Formatos nativos suportados por aplicativos de terceiros (requer o desenvolvimento de arquivos de configuração específicos para o aplicativo) (somente Windows)
 
 O serviço Gerar PDF converte os seguintes formatos de arquivo baseados em padrões em PDF.
@@ -70,11 +70,11 @@ O serviço Gerar PDF converte PDF nos seguintes formatos de arquivo (somente Win
 
 O serviço Gerar PDF exige que você execute estas tarefas administrativas:
 
-* Instale os aplicativos nativos necessários nos AEM Forms de hospedagem do computador
-* Instale o Adobe Acrobat Professional ou o Acrobat Pro Extended 9.2 no computador que estiver hospedando AEM Forms
+* Instale os aplicativos nativos necessários no computador que hospeda o AEM Forms
+* Instale o Adobe Acrobat Professional ou o Acrobat Pro Extended 9.2 no computador que hospeda o AEM Forms
 * Execute tarefas de configuração pós-instalação
 
-Essas tarefas são descritas em Instalar e implantar formulários do AEM usando o recurso JavaScript Turnkey.
+Essas tarefas são descritas em Instalação e Implantação de formulários AEM usando o recurso JavaScript Turnkey.
 
 É possível realizar essas tarefas usando o serviço Gerar PDF:
 
@@ -134,7 +134,7 @@ Depois que o arquivo for convertido em um documento PDF, você poderá recuperar
 
 [Converter documentos do Word em documentos PDF usando a API de serviço da Web](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-web-service-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -191,7 +191,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
 
 [Start rápido (modo SOAP): Converter um documento do Microsoft Word em um documento PDF usando a API Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -205,7 +205,7 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Gerar PDF.
 
@@ -253,9 +253,9 @@ Converta um documento do Microsoft Word em um documento PDF usando a API Gerar P
 
 [Resumo das etapas](converting-file-formats-pdf.md#summary-of-steps)
 
-[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Converter Documentos HTML em Documentos PDF {#converting-html-documents-to-pdf-documents}
 
@@ -301,7 +301,7 @@ Depois que o conteúdo HTML é convertido em um documento PDF, você pode recupe
 
 [Converter conteúdo HTML em um documento PDF usando a API de serviço da Web](converting-file-formats-pdf.md#convert-html-content-to-a-pdf-document-using-the-web-service-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -348,7 +348,7 @@ Converta um documento HTML em um documento PDF usando a API Gerar PDF (Java):
 
 [Start rápido (modo SOAP): Converter conteúdo HTML em um documento PDF usando a API Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -362,7 +362,7 @@ Converta o conteúdo HTML em um documento PDF usando a API Gerar PDF (serviço d
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Gerar PDF.
 
@@ -403,9 +403,9 @@ Converta o conteúdo HTML em um documento PDF usando a API Gerar PDF (serviço d
 
 [Converter Documentos HTML em Documentos PDF](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Converter Documentos PDF em formatos que não sejam de imagem {#converting-pdf-documents-to-non-image-formats}
 
@@ -451,7 +451,7 @@ Salve o arquivo convertido. Por exemplo, se você converter um documento PDF em 
 
 [Converter um documento PDF em um arquivo RTF usando a API de serviço da Web](converting-file-formats-pdf.md#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -499,7 +499,7 @@ Converta um documento PDF em um arquivo RTF usando a API Gerar PDF (Java):
 
 [Start rápido (modo SOAP): Converter conteúdo HTML em um documento PDF usando a API Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -513,7 +513,7 @@ Converta um documento PDF em um arquivo RTF usando a API Gerar PDF (serviço da 
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Generate PDf.
 
@@ -558,9 +558,9 @@ Converta um documento PDF em um arquivo RTF usando a API Gerar PDF (serviço da 
 
 [Resumo das etapas](converting-file-formats-pdf.md#summary-of-steps)
 
-[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocar AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocando o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Adicionar suporte para formatos de arquivo nativos adicionais {#adding-support-for-additional-native-file-formats}
 
@@ -715,7 +715,7 @@ Se os atributos não identificarem uma legenda, você poderá identificar um ele
 Esteja ciente destes problemas:
 
 * O Microsoft Spy++ exibe legendas usando um E comercial (&amp;) para identificar a tecla de atalho da legenda. Por exemplo, Spy++ mostra a legenda de uma caixa de diálogo Imprimir como `Pri&nt`, o que indica que a tecla de atalho está *n*. Os títulos de legenda em arquivos XML de script e caixa de diálogo devem omitir os E comercial.
-* Algumas legendas incluem quebras de linha. o serviço Gerar PDF não pode identificar quebras de linha. Se uma legenda incluir uma quebra de linha, inclua uma parte suficiente da legenda para diferenciá-la dos outros itens de menu e, em seguida, use expressões regulares para a parte omitida. Um exemplo é ( `^Long caption title$`).]. (Consulte [Uso de expressões regulares em atributos](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)de legenda.)
+* Algumas legendas incluem quebras de linha. o serviço Gerar PDF não pode identificar quebras de linha. Se uma legenda incluir uma quebra de linha, inclua uma parte suficiente da legenda para diferenciá-la dos outros itens de menu e, em seguida, use expressões regulares para a parte omitida. Um exemplo é ( `^Long caption title$`). (Consulte [Uso de expressões regulares em atributos](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)de legenda.)
 * Use entidades de caractere (também chamadas de sequências de escape) para caracteres XML reservados. Por exemplo, use `&` para o E comercial `<` e `>` para menos que e maior que símbolos, `&apos;` para apóstrofos e `&quot;` para aspas.
 
 Se você planeja trabalhar em arquivos XML de diálogo ou script, instale o aplicativo Microsoft Spy++.
@@ -724,7 +724,7 @@ Se você planeja trabalhar em arquivos XML de diálogo ou script, instale o apli
 
 Os arquivos de diálogo e script residem no arquivo appmondata.jar. Antes de poder modificar qualquer um desses arquivos ou adicionar novo script ou arquivos de diálogo, você deve desempacotar esse arquivo JAR. Por exemplo, suponha que você deseja adicionar suporte ao aplicativo EditPlus. Você cria dois arquivos XML, chamados appmon.editplus.script.en_US.xml e appmon.editplus.script.add.en_US.xml. Esses scripts XML devem ser adicionados ao arquivo adobe-appmondata.jar em dois locais, conforme especificado abaixo:
 
-* adobe-livecycle-native-jHead-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. O arquivo adobe-livecycle-native-jpatrão-x86_win32.ear está na pasta de exportação em `[AEM forms install directory]\configurationManager`. (se o AEM Forms for implantado em outro servidor de aplicativos J2EE, substitua o arquivo adobe-livecycle-native-jHead-x86_win32.ear pelo arquivo EAR que corresponde ao servidor de aplicativos J2EE.)
+* adobe-livecycle-native-jHead-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. O arquivo adobe-livecycle-native-jpatrão-x86_win32.ear está na pasta de exportação em `[AEM forms install directory]\configurationManager`. (se a AEM Forms estiver implantada em outro servidor de aplicativos J2EE, substitua o arquivo adobe-livecycle-native-jHead-x86_win32.ear pelo arquivo EAR que corresponde ao servidor de aplicativos J2EE.)
 * adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (o arquivo adobe-appmondata.jar está no arquivo adobe-generatepdf-dsc.jar). O arquivo adobe-generatepdf-dsc.jar está na `[AEM forms install directory]\deploy` pasta.
 
 Depois de adicionar esses arquivos XML ao arquivo adobe-appmondata.jar, é necessário reimplantar o componente GeneratePDF. Para adicionar arquivos XML de diálogo e script ao arquivo adobe-appmondata.jar, execute estas tarefas:
@@ -773,7 +773,7 @@ Use o Microsoft Spy++ para obter as identidades das propriedades de elementos de
 
 É possível usar expressões regulares nas especificações de legenda. O serviço Gerar PDF usa a `java.util.regex.Matcher` classe para suportar expressões regulares. Esse utilitário suporta as expressões regulares descritas em `java.util.regex.Pattern`. (Vá para o site Java em [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
 
-**expressão regular que acomoda o nome do arquivo prefixado ao Bloco de notas no banner Bloco de notas**
+**Expressão regular que acomoda o nome do arquivo prefixado ao Bloco de notas no banner Bloco de notas**
 
 ```xml
  <!-- The regular expression ".*Notepad" means any number of non-terminating characters followed by Notepad. -->
@@ -784,7 +784,7 @@ Use o Microsoft Spy++ para obter as identidades das propriedades de elementos de
  </step>
 ```
 
-**expressão regular diferenciando Impressão da configuração de impressão**
+**Expressão regular diferenciando Impressão da configuração de impressão**
 
 ```xml
  <!-- This regular expression differentiates the Print dialog box from the Print Setup dialog box. The "^" specifies the beginning of the line, and the "$" specifies the end of the line. -->
@@ -875,9 +875,9 @@ Este procedimento explica como atualizar o arquivo de configuração do serviço
 
 **Atualizar o arquivo de configuração Gerar serviço PDF**
 
-1. Selecione **Início** > **Serviços** > **Adobe PDF Generator** > Arquivos **** de configuração e selecione **Exportar configuração**.
+1. Selecione **Início** > **Serviços** > Gerador **** Adobe PDF > Arquivos **** de configuração e selecione **Exportar configuração**.
 1. Modifique o `filetype-settings` elemento no arquivo native2pdfconfig.xml, conforme necessário.
-1. Selecione **Início** > **Serviços** > **Adobe PDF Generator** > Arquivos **** de configuração e selecione **Importar configuração**. Os dados de configuração são importados para o serviço Gerar PDF, substituindo as configurações anteriores.
+1. Selecione **Início** > **Serviços** > Gerador **** Adobe PDF > Arquivos **** de configuração e selecione **Importar configuração**. Os dados de configuração são importados para o serviço Gerar PDF, substituindo as configurações anteriores.
 
 >[!NOTE]
 >
@@ -937,7 +937,7 @@ Depois de criar a nova variável de ambiente, você deve reiniciar o servidor no
 
 #### Arquivos XML {#xml-files}
 
-O AEM Forms inclui arquivos XML de amostra que fazem com que o serviço Gerar PDF use o Bloco de notas para processar quaisquer arquivos com a extensão de nome de arquivo .txt. Este código está incluído nesta seção. Além disso, você deve fazer as outras modificações descritas nesta seção.
+A AEM Forms inclui arquivos XML de amostra que fazem com que o serviço Gerar PDF use o Bloco de notas para processar quaisquer arquivos com a extensão de nome de arquivo .txt. Este código está incluído nesta seção. Além disso, você deve fazer as outras modificações descritas nesta seção.
 
 #### Arquivo XML de diálogo adicional {#additional-dialog-xml-file}
 
