@@ -3,9 +3,9 @@ title: Práticas recomendadas para [!DNL Adobe Experience Manager Assets] monito
 description: Práticas recomendadas para monitorar o ambiente e o desempenho de [!DNL Adobe Experience Manager] sua implantação após sua implantação.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1671'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Do [!DNL Experience Manager Assets] ponto de vista, a monitorização deve inclu
 
 * CPU do sistema
 * Uso da memória do sistema
-* Tempo de espera de E/S do disco do sistema
+* Tempo de espera de E/S e E/S do disco do sistema
 * E/S de rede do sistema
 * MBeans JMX para utilização de heap e processos assíncronos, como workflows
 * Verificações de integridade do console OSGi
@@ -44,7 +44,7 @@ Normalmente, você usa essas ferramentas em conjunto para obter uma ideia abrang
 
 >[!NOTE]
 >
->Essas ferramentas são ferramentas padrão e não são suportadas diretamente pela Adobe. Eles não exigem licenças adicionais.
+>Essas ferramentas são ferramentas padrão e não são suportadas diretamente pelo Adobe. Eles não exigem licenças adicionais.
 
 ![chlimage_1-33](assets/chlimage_1-143.png)
 
@@ -60,9 +60,9 @@ O monitoramento de longo prazo de uma [!DNL Experience Manager] implantação en
 
 Há várias ferramentas disponíveis para registros de agregações, como Splunk(TM) e Elastic Search, Logstash e Kabana (ELK). Para avaliar o tempo de atividade da sua [!DNL Experience Manager] implantação, é importante que você entenda eventos de registro específicos do seu sistema e crie alertas com base neles. Um bom conhecimento de suas práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar seu processo de agregação de log para gerar alertas críticos.
 
-### Monitorização dos Ambientes {#environment-monitoring}
+### Monitorização dos ambientes {#environment-monitoring}
 
-A monitorização dos Ambientes inclui a monitorização dos seguintes elementos:
+A monitorização dos ambientes inclui a monitorização dos seguintes elementos:
 
 * Saída de rede
 * E/S de disco
@@ -71,7 +71,7 @@ A monitorização dos Ambientes inclui a monitorização dos seguintes elementos
 * MBeans JMX
 * Sites externos
 
-Você precisa de ferramentas externas, como NewRelic(TM) e AppDynamics(TM) para monitorar cada item. Usando essas ferramentas, você pode definir alertas específicos ao seu sistema, por exemplo, alta utilização do sistema, backup do fluxo de trabalho, falhas na verificação de integridade ou acesso não autenticado ao seu site. A Adobe não recomenda nenhuma ferramenta específica sobre outras. Encontre a ferramenta que funciona para você e aproveite-a para monitorar os itens discutidos.
+Você precisa de ferramentas externas, como NewRelic(TM) e AppDynamics(TM) para monitorar cada item. Usando essas ferramentas, você pode definir alertas específicos ao seu sistema, por exemplo, alta utilização do sistema, backup do fluxo de trabalho, falhas na verificação de integridade ou acesso não autenticado ao seu site. O Adobe não recomenda nenhuma ferramenta específica sobre outras. Encontre a ferramenta que funciona para você e aproveite-a para monitorar os itens discutidos.
 
 #### Monitoramento interno de aplicativos {#internal-application-monitoring}
 
@@ -95,7 +95,7 @@ Memória
 * Limiar de alarme: Quando a utilização da memória heap ou não heap exceder 75% da memória máxima correspondente.
 * Definição do alarme: A memória do sistema é insuficiente ou há um vazamento de memória no código. Analise um despejo de thread para chegar a uma definição.
 
->[!Nnota]
+>[!NOTE]
 >
 >As informações fornecidas por este bean são expressas em bytes.
 
@@ -122,7 +122,7 @@ Agentes de replicação
 
 * Definição do alarme: Presença de uma fila bloqueada no sistema, indicando que o público alvo de replicação está inativo ou inacessível. Muitas vezes, problemas de rede ou infraestrutura fazem com que entradas excessivas sejam enfileiradas, o que pode afetar negativamente o desempenho do sistema.
 
->[!Nnota]
+>[!NOTE]
 >
 >Para os parâmetros MBean e URL, substitua `<AGENT_NAME>` pelo nome do agente de replicação que você deseja monitorar.
 
@@ -198,5 +198,5 @@ No processo de monitoramento, se você encontrar problemas, veja algumas tarefas
 * Use o console de fluxo de trabalho para verificar se seus workflows têm o desempenho esperado. Se possível, condensar vários workflows em um único fluxo de trabalho.
 * Revise o monitoramento ao vivo e procure gargalos adicionais ou grandes consumidores de recursos específicos.
 * Investigue os pontos de saída da rede do cliente e os pontos de entrada para a rede de [!DNL Experience Manager] implantação, incluindo o dispatcher. Frequentemente, essas são áreas de gargalo. Para obter mais informações, consulte Considerações [de rede do](/help/assets/assets-network-considerations.md)Assets.
-* Aumente o tamanho do seu [!DNL Experience Manager] servidor. Você pode ter um tamanho inadequado na sua [!DNL Experience Manager] implantação. O Atendimento ao cliente da Adobe pode ajudá-lo a identificar se o servidor está com tamanho inferior ao normal.
+* Aumente o tamanho do seu [!DNL Experience Manager] servidor. Você pode ter um tamanho inadequado na sua [!DNL Experience Manager] implantação. O Atendimento ao cliente do Adobe pode ajudá-lo a identificar se o servidor está com tamanho inferior ao normal.
 * Examine os arquivos `access.log` `error.log` e os arquivos para ver as entradas na hora em que algo deu errado. Procure padrões que possam indicar anomalias de código personalizadas. Adicione-os à lista de eventos que você monitorar.
