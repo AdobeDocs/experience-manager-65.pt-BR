@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '6146'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +31,7 @@ Na página Configurações de tipo de arquivo, é possível executar estas taref
 
 >[!NOTE]
 >
->As configurações de tipo de arquivo não estão disponíveis para os conversores de fallback, como o Acrobat para conversão HTML em PDF, Microsoft PowerPoint, Microsoft Word e Microsoft Excel.
+>As configurações de tipo de arquivo não estão disponíveis para os conversores de fallback, como Acrobat para conversão HTML em PDF, Microsoft PowerPoint, Microsoft Word e Microsoft Excel.
 
 ## Criar ou editar configurações de Tipo de arquivo {#create-or-edit-file-type-settings}
 
@@ -53,7 +56,7 @@ Crie ou edite uma configuração de tipo de arquivo para especificar como o apli
 
    [Configurações de HTML para PDF](#html-to-pdf-settings)
 
-   [Configurações de vídeos Flash para PDF](#flash-videos-to-pdf-settings)
+   [Flash de vídeos para configurações de PDF](#flash-videos-to-pdf-settings)
 
    [Configurações do XPS para PDF](#xps-to-pdf-settings)
 
@@ -85,13 +88,13 @@ O suporte para vários tipos de arquivos pode ser personalizado. (Consulte &quot
 
 ## Alterar as configurações padrão {#change-the-default-settings}
 
-Você pode alterar o valor padrão das configurações do Adobe PDF, das configurações de segurança e das configurações de tipo de arquivo que se aplicam às fontes recém-criadas. Alterar os padrões não afeta as configurações de fontes existentes.
+Você pode alterar o valor padrão para as configurações do Adobe PDF, configurações de segurança e configurações de tipo de arquivo que se aplicam às fontes recém-criadas. Alterar os padrões não afeta as configurações de fontes existentes.
 
 1. No Console de administração, clique em **[!UICONTROL Serviços > Gerador]** de PDF.
 1. Na página Configurações **[!UICONTROL do]** Adobe PDF, Configurações **[!UICONTROL de tipo de]** arquivo ou Configurações **[!UICONTROL de]** segurança, clique em **[!UICONTROL Definir configurações]** padrão.
 1. Selecione suas configurações padrão preferenciais. Uma ou mais das seguintes configurações estão disponíveis na página Definir configurações padrão:
 
-   **[!UICONTROL Configuração]** do Adobe PDF: O padrão original é Standard (Acrobat 6).
+   **[!UICONTROL Configuração]** Adobe PDF: O padrão original é Standard (Acrobat 6).
 
    **[!UICONTROL Configurações]** de segurança: O padrão original é Sem segurança (Acrobat 5).
 
@@ -111,9 +114,9 @@ Você pode alterar o valor padrão das configurações do Adobe PDF, das configu
 
 As opções a seguir determinam como os arquivos de imagem são convertidos em PDF. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de arquivo.
 
-**Extensões de nome de arquivo:** lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
+**Extensões de nome de arquivo:** Lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
 
-**Tente Conversor de fallback:** O Gerador de PDF pode usar o Java™ ou o Acrobat para converter arquivos de imagem em PDF. Quando essa opção é selecionada e uma conversão falha ou atinge o limite de tempo limite especificado, o Gerador de PDF tenta a conversão usando o método alternativo. Se um método alternativo falhar ou atingir o limite de tempo limite especificado, uma exceção será gravada no arquivo de log.
+**Tente Conversor de fallback:** O Gerador de PDF pode usar Java™ ou Acrobat para converter arquivos de imagem em PDF. Quando essa opção é selecionada e uma conversão falha ou atinge o limite de tempo limite especificado, o Gerador de PDF tenta a conversão usando o método alternativo. Se um método alternativo falhar ou atingir o limite de tempo limite especificado, uma exceção será gravada no arquivo de log.
 
 >[!NOTE]
 >
@@ -145,7 +148,7 @@ Para obter instruções sobre como acessar essa configuração, consulte [Criar 
 
 As opções a seguir determinam como os arquivos HTML são convertidos em PDF. Para obter instruções sobre como acessar essas opções, consulte [Criar ou editar configurações](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de arquivo.
 
-**Tente Conversor de fallback:** O Gerador de PDF pode usar o Java™ ou o Acrobat para converter arquivos HTML em PDF. Quando essa opção é selecionada e uma conversão falha ou atinge o limite de tempo limite especificado, o Gerador de PDF tenta a conversão usando o método alternativo. Se um método alternativo falhar ou atingir o limite de tempo limite especificado, uma exceção será gravada no arquivo de log.
+**Tente Conversor de fallback:** O Gerador de PDF pode usar Java™ ou Acrobat para converter arquivos HTML em PDF. Quando essa opção é selecionada e uma conversão falha ou atinge o limite de tempo limite especificado, o Gerador de PDF tenta a conversão usando o método alternativo. Se um método alternativo falhar ou atingir o limite de tempo limite especificado, uma exceção será gravada no arquivo de log.
 
 **Codificação padrão:** Define a codificação de entrada do texto do arquivo a partir de um menu de sistemas operacionais e alfabetos. Usa a seleção mostrada na opção Codificação padrão somente se o arquivo de origem HTML não especificar um tipo de codificação.
 
@@ -179,7 +182,7 @@ Ative essas opções para especificar como as páginas HTML são convertidas. Co
 
 **Definir configurações de Visualização inicial:** Permite configurar Opções de Documento, Opções de Janela e Opções de Interface do Usuário. Essas configurações determinam como o conteúdo é exibido inicialmente.
 
-### Opções de Documento {#document-options}
+### Opções de documento {#document-options}
 
 Ative essas opções para especificar como exibir o conteúdo, como exibir as páginas no documento PDF e como especificar o nível de ampliação:
 
@@ -213,15 +216,15 @@ Ative estas opções para especificar a aparência da janela:
 
 **Ocultar controles de janela:** Oculta os controles da janela no documento PDF.
 
-## Configurações de vídeos Flash para PDF {#flash-videos-to-pdf-settings}
+## Flash de vídeos para configurações de PDF {#flash-videos-to-pdf-settings}
 
-O Gerador de PDF suporta a capacidade de enviar um vídeo para o Adobe Flash (arquivo SWF ou FLV) e criar um arquivo PDF com um vídeo para o Adobe Flash incorporado. Essa conversão não exige que o Adobe Flash Player seja instalado no servidor de formulários. Para obter instruções sobre como acessar essa opção, consulte [Criar ou editar configurações](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de arquivo.
+O Gerador de PDF suporta a capacidade de enviar um vídeo para o Flash Adobe (arquivo SWF ou FLV) e criar um arquivo PDF com um vídeo para o Flash Adobe. Essa conversão não exige que o Flash Player Adobe seja instalado no servidor de formulários. Para obter instruções sobre como acessar essa opção, consulte [Criar ou editar configurações](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de arquivo.
 
-**Extensões de nome de arquivo:** lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
+**Extensões de nome de arquivo:** Lista separada por vírgulas de extensões de nome de arquivo que podem ser convertidas.
 
 ## Configurações do XPS para PDF {#xps-to-pdf-settings}
 
-A Especificação de papel XML (XPS) é usada na máquina de impressão do Windows. Este é um formato Microsoft e pode ser criado a partir de qualquer aplicativo do Microsoft Office. Formulários AEM fornecem a capacidade de converter arquivos XPS em PDF.
+A Especificação de papel XML (XPS) é usada na máquina de impressão do Windows. Este é um formato Microsoft e pode ser criado a partir de qualquer aplicativo do Microsoft Office. AEM formulários fornecem a capacidade de converter arquivos XPS em PDF.
 
 **Extensões de nome de arquivo:** Uma lista separada por vírgulas de todas as extensões de nome de arquivo XPS que podem ser convertidas. Atualmente, há um formato: .xps.
 
@@ -235,7 +238,7 @@ O Gerador de PDF oferece suporte à capacidade de reduzir o tamanho dos arquivos
 
 Para obter instruções sobre como acessar essa configuração, consulte [Criar ou editar configurações](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de arquivo.
 
-**Versão PDF do Público alvo:** Especifica a versão do Acrobat com a qual o PDF é compatível.
+**Versão PDF do público alvo:** Especifica a versão do Acrobat com a qual o PDF é compatível.
 
 ### Fontes {#fonts}
 
@@ -251,6 +254,7 @@ Para obter instruções sobre como acessar essa configuração, consulte [Criar 
    * Se necessário, selecione um diretório de fontes diferente no menu suspenso Fonte **** fonte. Este menu suspenso lista diretórios de fontes especificados em **Início > Configurações > Sistema principal > Configurações** principais.
    * Selecione uma ou mais fontes na lista Fontes **** disponíveis e clique em **Adicionar**. Essas fontes são adicionadas às **Fontes para a lista Não incorporada** .
    * Se desejar desincorporar algumas fontes que não existem no servidor de formulários, digite os nomes dessas fontes na caixa **Adicionar fontes a serem desincorporadas** . Clique em **Adicionar**.
+
    >[!NOTE]
    >
    >*Se desejar desincorporar algumas fontes cujos subconjuntos estão incorporados ao documento, coloque o sinal + no prefixo do nome da fonte. Por exemplo, &quot;+Helvetica&quot;.*
@@ -271,7 +275,7 @@ Se o documento PDF incluir arte-final que contenha transparência, você poderá
 
 >[!NOTE]
 >
->Se o Acrobat 4.0 e posterior for selecionado como a versão PDF do Público alvo, todos os objetos transparentes serão nivelados. Para outras versões de PDF de Público alvo, a transparência é suportada e você pode definir as configurações de transparência.
+>Se Acrobat 4.0 e posterior for selecionado como a versão PDF do Público alvo, todos os objetos transparentes serão nivelados. Para outras versões de PDF de Público alvo, a transparência é suportada e você pode definir as configurações de transparência.
 
 Selecione **Transparência** para definir as configurações de transparência ao otimizar documentos PDF.
 
@@ -297,7 +301,11 @@ Selecione **Transparência** para definir as configurações de transparência a
 
 **Converter todos os traçados em contornos** Converte todos os traçados em caminhos preenchidos simples nas páginas que contêm transparência. Essa opção garante que a largura dos traçados permaneça consistente durante o nivelamento. Observe que ativar essa opção faz com que os traçados finos apareçam ligeiramente mais espessos e podem degradar o desempenho do nivelamento.
 
-**Recortar regiões** complexas garante que os limites entre a arte-final vetorial e a arte-final rasterizada caiam ao longo de caminhos de objetos. Esta opção reduz a sutura de artefatos que resultam quando parte de um registro] &quot;>
+**Recortar regiões** complexas garante que os limites entre a arte-final vetorial e a arte-final rasterizada caiam ao longo de caminhos de objetos. Essa opção reduz a sutura de artefatos que resultam quando parte de um logotipo
+
+<!--
+NOTE to WRITER: Unfinished sentence above.
+-->
 
 >[!NOTE]
 >
@@ -362,7 +370,7 @@ A tabela a seguir mostra os tipos comuns de impressoras e sua resolução medida
 
 Selecione **Descartar dados** do usuário para remover quaisquer informações pessoais que você não deseja distribuir ou compartilhar com outros usuários.
 
-* **Descarte Todos Os Comentários, Formulários E Multimídia**: Remove todos os comentários, formulários, campos de formulário e multimídia do PDF.
+* **Descarte Todos Os Comentários, Forms E Multimídia**: Remove todos os comentários, formulários, campos de formulário e multimídia do PDF.
 * **Descartar todos os dados** do objeto: Remove todos os objetos do PDF.
 * **Descartar referências** cruzadas externas: Remove links para outros documentos. Links que saltam para outros locais no PDF não são removidos.
 * **Descarte O Conteúdo Oculto Da Camada E Nivele As Camadas** Visíveis: Diminui o tamanho do arquivo. O documento otimizado se parece com o PDF original, mas não contém informações de camada.
@@ -406,9 +414,9 @@ Essas opções determinam como os arquivos do Microsoft Excel são convertidos. 
 
 **Extensões** de nome de arquivo: Especifica as extensões de nome de arquivo para tipos de arquivo, separadas por vírgulas, que são aceitas para este aplicativo. O padrão é `xls,xlsx`. Não inclua um período antes ou um espaço entre as extensões.
 
-**Criar arquivo** compatível com PDF/A-1a: Força o uso da configuração PDF RGB do Adobe PDF PDF PDF PDF PDF/A-1b:2005.
+**Criar arquivo** compatível com PDF/A-1a: Força o uso da configuração PDF/A-1b:2005 RGB Adobe PDF.
 
-**Adicionar marcadores ao Adobe PDF**: Converte nomes de planilhas do Excel em marcadores. Esta opção está selecionada por padrão.
+**Adicionar Marcadores Ao Adobe PDF**: Converte nomes de planilhas do Excel em marcadores. Esta opção está selecionada por padrão.
 
 **Ajustar Planilha A Uma Única Página**: Reduz o tamanho do texto para ajustar a planilha em uma única página.
 
@@ -422,7 +430,7 @@ Essas opções determinam como os arquivos do Microsoft Excel são convertidos. 
 
 **Anexar arquivo de origem ao Adobe PDF**: Quando essa opção é selecionada, a planilha original do Excel é inserida como um anexo dentro do documento PDF gerado.
 
-**Ative A Acessibilidade E O Refluxo Com Adobe PDF** Marcado: Incorpora tags no documento PDF para permitir a acessibilidade e o refluxo.
+**Ative A Acessibilidade E O Reflow Com Adobe PDF** Marcado: Incorpora tags no documento PDF para permitir a acessibilidade e o refluxo.
 
 **Lista De Adições Do Excel A Carregar**: Por padrão (por motivos de segurança), nenhum suplemento do Excel é executado quando um arquivo do Excel é convertido em PDF. Para permitir que determinados suplementos do Excel sejam executados durante a conversão, forneça uma lista separada por vírgulas dos nomes dos suplementos.
 
@@ -438,11 +446,11 @@ Essas opções determinam como os arquivos do Microsoft PowerPoint são converti
 
 **[!UICONTROL Converter informações]** do Documento: Adiciona informações do documento da caixa de diálogo Propriedades do arquivo de origem, incluindo título, assunto, autor, palavras-chave, gerente, empresa, categoria e comentários. Esta opção está selecionada por padrão.
 
-**[!UICONTROL Adicionar marcadores ao Adobe PDF]**: Converte títulos do PowerPoint em marcadores. Esta opção está selecionada por padrão.
+**[!UICONTROL Adicionar Marcadores Ao Adobe PDF]**: Converte títulos do PowerPoint em marcadores. Esta opção está selecionada por padrão.
 
 **[!UICONTROL Anexar arquivo de origem ao Adobe PDF]**: Adiciona o arquivo de origem ao arquivo PDF como um anexo. Por padrão, essa opção não é selecionada.
 
-**[!UICONTROL Ative A Acessibilidade E O Refluxo Com Adobe PDF]** Marcado: Incorpora tags ao arquivo PDF. Por padrão, essa opção não é selecionada.
+**[!UICONTROL Ative A Acessibilidade E O Reflow Com Adobe PDF]** Marcado: Incorpora tags ao arquivo PDF. Por padrão, essa opção não é selecionada.
 
 **[!UICONTROL Converta Multimídia em Multimídia]** PDF: Converte multimídia em multimídia PDF, onde possível. Esta opção está selecionada por padrão.
 
@@ -456,11 +464,11 @@ Essas opções determinam como os arquivos do Microsoft PowerPoint são converti
 
 **[!UICONTROL Salve Transições De Slides No Adobe PDF]**: Converte transições de slide. Esta opção está selecionada por padrão.
 
-**[!UICONTROL Salvar animações no Adobe PDF]**: Salva animações convertidas no arquivo PDF.
+**[!UICONTROL Salvar Animações No Adobe PDF]**: Salva animações convertidas no arquivo PDF.
 
 **[!UICONTROL Converter slides ocultos em páginas]** PDF: Converte slides ocultos.
 
-**[!UICONTROL Criar arquivo]** compatível com PDF/A-1a: Força o uso da configuração PDF RGB do Adobe PDF PDF PDF PDF PDF/A-1b:2005. Alguns recursos do PowerPoint não são convertidos ao produzir um arquivo PDF. Se uma transição do PowerPoint não tiver uma transição equivalente no Acrobat, uma transição semelhante será substituída. Se vários efeitos de animação estiverem no mesmo slide, um único efeito será usado. As transições de página e os marcadores são convertidos.
+**[!UICONTROL Criar arquivo]** compatível com PDF/A-1a: Força o uso da configuração PDF/A-1b:2005 RGB Adobe PDF. Alguns recursos do PowerPoint não são convertidos ao produzir um arquivo PDF. Se uma transição do PowerPoint não tiver uma transição equivalente no Acrobat, uma transição semelhante será substituída. Se vários efeitos de animação estiverem no mesmo slide, um único efeito será usado. As transições de página e os marcadores são convertidos.
 
 ## Configurações do Microsoft Project (somente Windows) {#microsoft-project-settings-windows-only}
 
@@ -470,7 +478,7 @@ Essas opções determinam como os arquivos do Microsoft Project são convertidos
 
 1. **[!UICONTROL Converter informações]** do Documento: Adiciona informações do documento da caixa de diálogo Propriedades do arquivo de origem, incluindo título, assunto, autor, palavras-chave, gerente, empresa, categoria e comentários. Esta opção está selecionada por padrão.
 1. **[!UICONTROL Anexar arquivo de origem ao Adobe PDF]**: Adiciona o arquivo de origem ao arquivo PDF como um anexo.
-1. **[!UICONTROL Criar arquivo]** compatível com PDF/A-1a: Força o uso da configuração PDF RGB do Adobe PDF PDF PDF PDF PDF/A-1b:2005.
+1. **[!UICONTROL Criar arquivo]** compatível com PDF/A-1a: Força o uso da configuração PDF/A-1b:2005 RGB Adobe PDF.
 1. **[!UICONTROL Executar macros automaticamente]**: Executa todas as macros no documento do Microsoft Project (como uma macro que insere a hora atual) antes de converter o documento.
 
 ## Configurações do Microsoft Word (somente Windows) {#microsoft-word-settings-windows-only}
@@ -483,15 +491,15 @@ Essas opções determinam como os arquivos do Microsoft Word são convertidos. P
 
 **[!UICONTROL Converter informações]** do Documento: Adiciona informações do documento da caixa de diálogo Propriedades do arquivo de origem, incluindo título, assunto, autor, palavras-chave, gerente, empresa, categoria e comentários. Esta opção está selecionada por padrão.
 
-**[!UICONTROL Adicionar marcadores ao Adobe PDF]**: Converte cabeçalhos em marcadores. Esta opção está selecionada por padrão.
+**[!UICONTROL Adicionar Marcadores Ao Adobe PDF]**: Converte cabeçalhos em marcadores. Esta opção está selecionada por padrão.
 
 **[!UICONTROL Anexar arquivo de origem ao Adobe PDF]**: Adiciona o arquivo de origem ao arquivo PDF como um anexo.
 
 **[!UICONTROL Converter Referências Cruzadas E Sumário Em Links]**: Converte todas as referências cruzadas e entradas de sumário em links. Esta opção está selecionada por padrão.
 
-**[!UICONTROL Ative A Acessibilidade E O Refluxo Com Adobe PDF]** Marcado: Incorpora tags ao arquivo PDF. Esta opção está selecionada por padrão.
+**[!UICONTROL Ative A Acessibilidade E O Reflow Com Adobe PDF]** Marcado: Incorpora tags ao arquivo PDF. Esta opção está selecionada por padrão.
 
-**[!UICONTROL Criar arquivo]** compatível com PDF/A-1a: Se selecionada, força a configuração PDF RGB do PDF PDF PDF PDF/A-1b:2005 a ser usada.
+**[!UICONTROL Criar arquivo]** compatível com PDF/A-1a: Se selecionada, força a configuração Adobe PDF RGB PDF/A-1b:2005 a ser usada.
 
 **[!UICONTROL Executar macros automaticamente]**: Executa todas as macros no documento do Word (como uma macro que insere a hora atual) antes de converter o documento.
 
@@ -513,7 +521,7 @@ Essas opções determinam como os arquivos do Microsoft Word são convertidos. P
 
 Se um nome de estilo do Microsoft Word incluir uma vírgula (,) ou sinal igual (=), preceda os caracteres especiais com o caractere de escape (&quot;\_). Por exemplo, especifique um estilo chamado &quot;Cabeçalho, 1&quot; como Cabeçalho\, 1.
 
-**Codificação do Acrobat PDFMaker:** Especifica o tipo de codificação dos arquivos de texto simples de entrada no Acrobat PDFMaker. Por exemplo, se você estiver usando um arquivo codificado UTF-8, selecione UTF-8 para obter melhores resultados.
+**Codificação do Acrobat PDFMaker:** Especifica o tipo de codificação dos arquivos de texto simples de entrada para o Acrobat PDFMaker. Por exemplo, se você estiver usando um arquivo codificado UTF-8, selecione UTF-8 para obter melhores resultados.
 
 ## Configurações do Microsoft Visio (somente Windows) {#visio}
 
@@ -521,17 +529,17 @@ Se um nome de estilo do Microsoft Word incluir uma vírgula (,) ou sinal igual (
 
 **Adicionar links ao Adobe PDF**: Preserva todos os links. Esta opção está selecionada por padrão.
 
-**Adicionar marcadores ao Adobe PDF**: Converte cabeçalhos em marcadores. Esta opção está selecionada por padrão.
+**Adicionar Marcadores Ao Adobe PDF**: Converte cabeçalhos em marcadores. Esta opção está selecionada por padrão.
 
 **Anexar arquivo de origem ao Adobe PDF**: Adiciona o arquivo de origem ao arquivo PDF como um anexo.
 
-**Sempre achatar camadas no Adobe PDF**: Nivela todas as camadas do Visio.
+**Sempre Nivelar Camadas No Adobe PDF**: Nivela todas as camadas do Visio.
 
 **Converter todas as páginas**: Converte todas as páginas do arquivo do Visio.
 
 **Abra O Painel Camadas Quando Visualizado No Adobe Acrobat**: Se as camadas do Visio não estiverem niveladas, abre uma janela onde é possível especificar as camadas preservadas no arquivo PDF quando abertas com o Acrobat. Esta opção está selecionada por padrão.
 
-**Criar arquivo** compatível com PDF/A-1b: Força o uso da Configuração de PDF da Adobe PDF PDF PDF/A-1b:2005 (RGB).
+**Criar arquivo** compatível com PDF/A-1b: Força o uso da configuração Adobe PDF PDF/A-1b:2005 (RGB).
 
 **Converter comentários em comentários** do Adobe PDF: Converte notas do Visio em comentários em PDF.
 
@@ -549,11 +557,11 @@ Essas opções determinam como os arquivos AutoCAD são convertidos. Para obter 
 
 **[!UICONTROL Converter informações]** do Documento: Adiciona informações do documento da caixa de diálogo Propriedades do arquivo de origem, incluindo título, assunto, autor, palavras-chave, gerente, empresa, categoria e comentários. Esta opção está selecionada por padrão.
 
-**[!UICONTROL Adicionar marcadores ao Adobe PDF]**: Converte cabeçalhos em marcadores.
+**[!UICONTROL Adicionar Marcadores Ao Adobe PDF]**: Converte cabeçalhos em marcadores.
 
-**[!UICONTROL Sempre achatar camadas no Adobe PDF]**: Nivela todas as camadas do AutoCAD.
+**[!UICONTROL Sempre Nivelar Camadas No Adobe PDF]**: Nivela todas as camadas do AutoCAD.
 
-**[!UICONTROL Abra O Painel Camadas Quando Visualizado No Adobe Acrobat]**: Mostra a estrutura das camadas quando o PDF é aberto no Acrobat.
+**[!UICONTROL Abra O Painel Camadas Quando Visualizado No Adobe Acrobat]**: Mostra a estrutura de camadas quando o PDF é aberto no Acrobat.
 
 **[!UICONTROL Converter todos os layouts]**: Inclui todos os layouts no PDF.
 
@@ -563,7 +571,7 @@ Essas opções determinam como os arquivos AutoCAD são convertidos. Para obter 
 
 **[!UICONTROL Anexar arquivo de origem ao Adobe PDF]**: Adiciona o arquivo de origem ao arquivo PDF como um anexo.
 
-**[!UICONTROL Criar arquivo]** compatível com PDF/A-1b: Força o uso da configuração PDF PDF PDF/A-1b da Adobe.
+**[!UICONTROL Criar arquivo]** compatível com PDF/A-1b: Força o uso da configuração PDF/A-1b do Adobe PDF.
 
 **[!UICONTROL Converter todas as camadas]**: Por padrão, o Gerador de PDF converte somente a camada padrão de arquivos AutoCAD em PDF em vez de todas as camadas no arquivo. Selecione essa opção para converter todas as camadas do arquivo.
 
@@ -602,7 +610,7 @@ Também é possível especificar como os formulários são submetidos. As opçõ
 
 **Usar efeitos** de Transição: Converte os efeitos de transição de slide nas apresentações do OpenOffice em efeitos de transição de PDF correspondentes.
 
-**Enviar Formulários No Formato**: Cria um formulário PDF que pode ser preenchido e impresso pelo usuário do documento PDF.
+**Enviar Forms em formato**: Cria um formulário PDF que pode ser preenchido e impresso pelo usuário do documento PDF.
 
 **Exportar páginas** em branco automaticamente inseridas: Quando essa opção é selecionada, as páginas em branco inseridas automaticamente são incluídas no documento PDF gerado. Isso é útil se você estiver imprimindo um documento PDF nos lados do duplo. Por exemplo, um livro pode ser configurado para que a primeira página do capítulo sempre seja start em uma página ímpar. Se o capítulo anterior terminar em uma página ímpar, o OpenOffice inserirá uma página par em branco. Essa opção controla se a página par deve ser incluída no PDF gerado.
 
@@ -611,7 +619,7 @@ Também é possível especificar como os formulários são submetidos. As opçõ
 Não é possível alterar as configurações de outros aplicativos por meio do console de administração; eles exibem as extensões de nome de arquivo para os tipos de arquivo suportados. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html)de tipo de arquivo.
 
 * Corel WordPerfect: `wpd`
-* Adobe PageMaker: `pmd, pm6, p65, pm`
+* PageMaker Adobe: `pmd, pm6, p65, pm`
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
