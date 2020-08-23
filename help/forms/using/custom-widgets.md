@@ -1,8 +1,8 @@
 ---
 title: Criar aparências personalizadas em formulários HTML5
 seo-title: Criar aparências personalizadas em formulários HTML5
-description: É possível conectar widgets personalizados a um Mobile Forms. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados.
-seo-description: É possível conectar widgets personalizados a um Mobile Forms. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados.
+description: Você pode conectar widgets personalizados a um Forms móvel. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados.
+seo-description: Você pode conectar widgets personalizados a um Forms móvel. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Criar aparências personalizadas em formulários HTML5{#create-custom-appearances-in-html-forms}
 
-É possível conectar widgets personalizados a um Mobile Forms. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados usando a estrutura de aparências. O mecanismo XFA usa vários widgets. Consulte a Estrutura de [aparência para formulários](/help/forms/using/introduction-widgets.md) adaptáveis e HTML5 para obter informações detalhadas.
+Você pode conectar widgets personalizados a um Forms móvel. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados usando a estrutura de aparências. O mecanismo XFA usa vários widgets. Consulte a Estrutura de [aparência para formulários](/help/forms/using/introduction-widgets.md) adaptáveis e HTML5 para obter informações detalhadas.
 
 ![Um exemplo do widget padrão e personalizado](assets/custom-widgets.jpg)
 
@@ -92,10 +92,14 @@ window.formBridge.registerConfig("widgetConfig",
 
 A configuração do widget é fornecida como um objeto JSON (uma coleção de pares de valores principais), onde a chave identifica os campos e o valor representa o widget a ser usado com esses campos. Uma configuração de amostra é semelhante a:
 
+```
 *{*
 
-*&quot;identifier1&quot; : &quot;customwidgetname&quot;,&quot;identifier2&quot; : &quot;customwidgetname2&quot;,...
+*“identifier1” : “customwidgetname”,
+“identifier2” : “customwidgetname2”,
+..
 }*
+```
 
 onde &quot;identificador&quot; é um seletor CSS do jQuery que representa um campo específico, um conjunto de campos de um tipo específico ou todos os campos. O seguinte lista o valor do identificador em casos diferentes:
 
