@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 456460d54650bcb71d8eee47fdf0e859a383b3d4
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 0%
@@ -511,8 +511,7 @@ Os seguintes subsistemas da AEM Forms não são compatíveis com [508](https://w
 Para obter requisitos adicionais, consulte:
 
 * [Requisitos de sistema para um AEM Forms de servidor único na implantação do JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [Requisitos de sistema para um AEM Forms clusterizado na implantação JEE
-   ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [Requisitos de sistema para um AEM Forms clusterizado na implantação JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
 ## Clientes suportados para AEM Forms no JEE {#supported-clients-for-aem-forms-on-jee}
 
