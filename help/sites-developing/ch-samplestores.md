@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 translation-type: tm+mt
-source-git-commit: e37ff1c9e657c580c607f2656adca01a2b39f81f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
@@ -107,13 +110,13 @@ O armazenamento usa uma árvore de dados semelhante ao seguinte exemplo:
 
 >[!NOTE]
 >
->Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas sobre uma conexão segura. Portanto, o AEM força o uso de https para chamadas de API de localização geográfica se o AEM também estiver sendo executado em https. Caso contrário, http é usado para cumprir a política da mesma origem. Veja [essa postagem](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) do Google para obter mais detalhes sobre a mudança no Chrome.
+>Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas sobre uma conexão segura. Portanto, AEM força o uso de https para chamadas de API de localização geográfica se o AEM também estiver sendo executado em https. Caso contrário, http é usado para seguir a política da mesma origem. Veja [essa postagem](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) do Google para obter mais detalhes sobre a mudança no Chrome.
 
 ## candidato à loja de amostra contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
 
 Armazena informações sobre o ambiente cliente atual, como dispositivo, janela, navegador, data e hora.
 
-### Local de origem {#source-location-surferinfo
+### Local de origem {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
@@ -127,7 +130,7 @@ A configuração padrão é herdada de `ContextHub.Store.PersistedStore`.
 
 ### Itens de dados {#data-items-surferinfo}
 
-As lojas que usam esse candidato de loja têm uma árvore de dados semelhante ao seguinte exemplo:
+As lojas que usam esse candidato de loja têm uma árvore de dados semelhante ao exemplo a seguir:
 
 ```xml
 {
@@ -309,7 +312,7 @@ A árvore de dados de armazenamento é semelhante ao seguinte exemplo:
 }
 ```
 
-## candidato à loja de amostra granite.profile {#granite-profile-sample-store-candidate}
+## candidato à loja de amostra granite.perfil {#granite-profile-sample-store-candidate}
 
 Armazena informações sobre o usuário atual.
 
@@ -338,7 +341,7 @@ A seguinte configuração padrão é usada. Você não deve alterar essa configu
 
 ### Itens de dados {#data-items-profile}
 
-As lojas que usam esse candidato de loja têm uma árvore de dados semelhante ao seguinte exemplo:
+As lojas que usam esse candidato de loja têm uma árvore de dados semelhante ao exemplo a seguir:
 
 ```xml
 {
