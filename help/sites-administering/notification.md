@@ -10,14 +10,17 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 1%
 
 ---
 
 
 # Configuração de notificação por email{#configuring-email-notification}
 
-O AEM envia notificações por email para usuários que:
+AEM envia notificações por email para usuários que:
 
 * Inscreveram-se em eventos de página, por exemplo, modificação ou replicação. A seção Caixa de entrada [de](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) notificação descreve como assinar esses eventos.
 
@@ -29,15 +32,15 @@ Pré-requisitos:
 * O(s) usuário(s) precisa(m) ter um endereço de email válido definido em seu perfil.
 * O Serviço **de Correio do** Day CQ precisa ser configurado corretamente.
 
-Quando um usuário é notificado, ele recebe um email no idioma definido em seu perfil. Cada linguagem tem seu próprio modelo que pode ser personalizado. Novos modelos de email podem ser adicionados para novos idiomas.
+Quando um usuário é notificado, ele recebe um email no idioma definido em seu perfil. Cada linguagem tem seu próprio modelo que pode ser personalizado. Novos modelos de e-mail podem ser adicionados para novos idiomas.
 
 >[!NOTE]
 >
 >When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
-## Configuração do serviço de correio {#configuring-the-mail-service}
+## Configuração do serviço de e-mail {#configuring-the-mail-service}
 
-Para que o AEM possa enviar emails, o **Day CQ Mail Service** precisa ser configurado corretamente. Você pode exibir a configuração no console da Web. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+Para que o AEM possa enviar emails, o **Day CQ Mail Service** precisa ser configurado corretamente. Você pode visualização a configuração no console da Web. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 As seguintes restrições se aplicam:
 
@@ -54,9 +57,9 @@ A configuração é a seguinte no console da Web:
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-## Configuração do canal de notificação por email {#configuring-the-email-notification-channel}
+## Configuração do Canal de notificação por email {#configuring-the-email-notification-channel}
 
-Quando você assina notificações de eventos de página ou de fórum, o endereço de e-mail de é definido como `no-reply@acme.com` por padrão. Você pode alterar esse valor configurando o serviço Canal **de Email de** Notificação no Console da Web.
+Quando você assina notificações de eventos de página ou de fórum, o endereço de e-mail de é definido como `no-reply@acme.com` por padrão. Você pode alterar esse valor configurando o serviço de Canal **de Email de** Notificação no Console da Web.
 
 Para configurar o endereço de e-mail do, adicione um `sling:OsgiConfig` nó ao repositório. Use o seguinte procedimento para adicionar o nó diretamente usando o CRXDE Lite:
 
@@ -65,7 +68,7 @@ Para configurar o endereço de e-mail do, adicione um `sling:OsgiConfig` nó ao 
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` do tipo `sling:OsgiConfig`
 
-1. Adicione uma `String` propriedade ao nó] nomeado `email.from`. Para o valor, especifique o endereço de email que deseja usar.
+1. Adicione uma `String` propriedade ao nó nomeado `email.from`. Para o valor, especifique o endereço de email que deseja usar.
 
 1. Clique em **Salvar tudo**.
 
@@ -88,7 +91,7 @@ A configuração padrão é a seguinte no Console da Web:
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
-### Modelos de email para notificação de página {#email-templates-for-page-notification}
+### Modelos de e-mail para notificação de página {#email-templates-for-page-notification}
 
 Os modelos de e-mail para notificações de página estão localizados abaixo:
 
@@ -133,7 +136,7 @@ O modelo precisa ter o seguinte formato:
  footer=<text_4>
 ```
 
-Em que &lt;text_x> pode ser uma combinação de texto estático e variáveis de string dinâmica. As seguintes variáveis podem ser usadas no modelo de email para notificações de página:
+Em que &lt;text_x> pode ser uma combinação de texto estático e variáveis de string dinâmica. As variáveis a seguir podem ser usadas no modelo de email para notificações de página:
 
 * `${time}`, a data e a hora do evento.
 
@@ -142,11 +145,11 @@ Em que &lt;text_x> pode ser uma combinação de texto estático e variáveis de 
 * `${userId}`, a ID do usuário que acionou o evento.
 * `${modifications}`, descreve o tipo de evento de página e o caminho da página no formato:
 
-   &lt;tipo de evento de página> => &lt;caminho da página>
+   &lt;tipo de evento da página> => &lt;caminho da página>
 
    Por exemplo:
 
-   PageModified => /content/geometrixx/en/products
+   PageModified => /content/geometrixx/br/products
 
 ### Modelos de e-mail para notificação do fórum {#email-templates-for-forum-notification}
 
@@ -199,7 +202,7 @@ As variáveis a seguir podem ser usadas no modelo de email para notificações d
 
 * `${forum.path}`, o caminho para a página do fórum.
 
-### Modelos de email para notificação de fluxo de trabalho {#email-templates-for-workflow-notification}
+### Modelos de e-mail para notificação de fluxo de trabalho {#email-templates-for-workflow-notification}
 
 O modelo de e-mail para notificações de fluxo de trabalho (inglês) está localizado em:
 
@@ -281,7 +284,7 @@ As seguintes variáveis podem ser usadas no modelo de email:
 * `${payload.data}`, a carga
 
 * `${payload.type}`, o tipo de carga
-* `${payload.path}`, caminho da carga
+* `${payload.path}`, o caminho da carga
 * `${host.prefix}`, prefixo do host, por exemplo: http://localhost:4502
 
 ### Adicionando um modelo de email para um novo idioma {#adding-an-email-template-for-a-new-language}
@@ -299,13 +302,13 @@ Para adicionar um modelo para um novo idioma:
 
 >[!NOTE]
 >
->O código `<language-code>` usado como nome de arquivo para o modelo de email precisa ser um código de idioma em minúsculas de duas letras reconhecido pelo AEM. Para códigos de idioma, o AEM depende do ISO-639-1.
+>O nome de arquivo `<language-code>` usado como o modelo de email precisa ser um código de idioma em minúsculas de duas letras reconhecido pela AEM. Para códigos de idioma, AEM depende do ISO-639-1.
 
-## Configurar notificações por email do AEM Assets {#assetsconfig}
+## Configuração de notificações por email da AEM Assets {#assetsconfig}
 
-Quando as coleções nos ativos AEM são compartilhadas ou não, os usuários podem receber notificações por email do AEM. Para configurar notificações por email, siga estas etapas.
+Quando as coleções no AEM Assets são compartilhadas ou não, os usuários podem receber notificações por email da AEM. Para configurar notificações por email, siga estas etapas.
 
-1. Configure o serviço de email, conforme descrito acima em [Configuração do serviço](/help/sites-administering/notification.md#configuring-the-mail-service)de email.
-1. Faça logon no AEM como administrador. Clique em **Ferramentas** > **Operações** > Console **da Web** para abrir a Configuração do console da Web.
-1. Editar Servlet **de Coleta de Recursos CQ DAM** Dia. Selecione **enviar email**. Clique em **Salvar**.
+1. Configure o serviço de e-mail, conforme descrito acima em [Configuração do serviço](/help/sites-administering/notification.md#configuring-the-mail-service)de e-mail.
+1. Efetue login no AEM como um administrador. Clique em **Ferramentas** > **Operações** > Console **da Web** para abrir a Configuração do console da Web.
+1. Editar Servlet **de Coleta de Recursos CQ DAM** Dia. Selecione **enviar e-mail**. Clique em **Salvar**.
 
