@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '2493'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ O fragmento de documento de texto no Interative Communication oferece suporte ao
 
 ## Create text {#createtext}
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
+1. Selecione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL do]** Documento.
 1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Texto]**.
 1. Especifique as seguintes informações:
 
@@ -59,6 +62,7 @@ O fragmento de documento de texto no Interative Communication oferece suporte ao
    * [Caracteres especiais](#special)
    * [Como pesquisar e substituir texto](#searching)
    * [Atalhos de teclado](/help/forms/using/keyboard-shortcuts.md)
+
    >[!NOTE]
    >
    >Você pode adicionar elementos de Modelo de dados de formulário, elementos de Dicionário de dados e variáveis usando o símbolo @ no editor de texto. Quando você insere uma string precedida por @ no editor de texto, todos os elementos do Modelo de dados, os elementos e as variáveis do Dicionário de dados são pesquisados e os elementos ou variáveis que contêm a string pesquisada são exibidos. Você pode navegar pelos resultados da pesquisa e selecionar um elemento ou variável. Se não houver resultado correspondente, a mensagem *Nenhum resultado correspondente encontrado* será exibida.
@@ -71,7 +75,7 @@ O fragmento de documento de texto no Interative Communication oferece suporte ao
 
 É possível editar um fragmento de documento de texto existente usando as seguintes etapas. Você também pode optar por editar um fragmento de documento de texto a partir de um editor de Comunicação interativa.
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
+1. Selecione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL do]** Documento.
 1. Navegue até um fragmento de documento de texto e selecione-o.
 1. Toque em **[!UICONTROL Editar]**.
 1. Faça as alterações necessárias. Para obter mais informações sobre opções em texto, consulte [Criar texto](#createtext).
@@ -79,13 +83,13 @@ O fragmento de documento de texto no Interative Communication oferece suporte ao
 
 ## Personalização de um fragmento de documento de texto usando propriedades de modelo de dados de formulário {#formdatamodel}
 
-É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo as propriedades do modelo de dados de formulário no texto, é possível buscar e preencher dados específicos do recipient da fonte de dados associada enquanto visualiza uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados de formulários](/help/forms/using/data-integration.md)AEM.
+É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo as propriedades do modelo de dados de formulário no texto, é possível buscar e preencher dados específicos do recipient da fonte de dados associada enquanto visualiza uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
 
 Se você tiver especificado um modelo de dados de formulário ao criar um texto, as propriedades no modelo de dados de formulário aparecerão no painel esquerdo do editor de texto. O modelo de dados de formulário especificado deve ser o mesmo para o fragmento do documento de texto, bem como para a Comunicação interativa que o inclui.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Para inserir uma propriedade de modelo de dados de formulário no texto, posicione o cursor no local em que deseja inserir a propriedade, selecione a propriedade **[A]** no painel esquerdo tocando nela e toque em **[!UICONTROL [B]Adicionar selecionados]**. Você também pode apenas tocar com o duplo na propriedade para inseri-la na posição do cursor**[ C ]**. As propriedades do modelo de dados de formulário são realçadas em uma cor de plano de fundo acastanhada.
+* Para inserir uma propriedade de modelo de dados de formulário no texto, posicione o cursor no local em que deseja inserir a propriedade, selecione a propriedade **[A]** no painel esquerdo tocando nela e toque em **[!UICONTROL [B]Adicionar selecionados]**. Você também pode apenas tocar com o duplo na propriedade para inseri-la na posição do cursor **[C]** . As propriedades do modelo de dados de formulário são realçadas em uma cor de plano de fundo acastanhada.
 
 Como alternativa, você pode pesquisar e adicionar a propriedade de modelo de dados de formulário usando o símbolo @ no editor de texto. Posicione o cursor no local em que deseja inserir a propriedade. Digite @ seguido pela string de pesquisa. A operação de pesquisa é executada em todas as propriedades e variáveis do modelo de dados de formulário disponíveis no fragmento do documento. As propriedades ou variáveis que contêm a string de pesquisa são recuperadas e exibidas como uma lista suspensa. Navegue pelos resultados da pesquisa e clique na propriedade que deseja inserir no local do cursor. Pressione Esc para ocultar os resultados da pesquisa.
 
@@ -144,7 +148,7 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 
 * Strings
 * Números
-* expressão matemática
+* Expressão matemática
 * Datas
 * Propriedades do modelo de dados de formulário associado
 * Quaisquer variáveis que você possa ter criado no texto
@@ -161,6 +165,7 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 
    * Propriedades do modelo de dados de formulário associado
    * Quaisquer variáveis que você tenha criado
+
    Selecione a opção apropriada a ser avaliada.
 
    ![editora](assets/ruleeditor.png) de regras ![editorfdm](assets/ruleeditorfdm.png)
@@ -194,11 +199,12 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 ## Formatação de texto {#formatting}
 
 Ao criar ou editar texto, a barra de ferramentas muda dependendo do tipo de edições que você escolher fazer: Parágrafo, Alinhamento ou Listagem:
-[ ![Selecionar tipo de barra de ferramentas](do-not-localize/toolbarselection.png)
+
+![Selecionar tipo de barra de ferramentas](do-not-localize/toolbarselection.png)
 
 Selecione o tipo de barra de ferramentas: Parágrafo, Alinhamento ou Listagem
 
-](assets/toolbarselection.png) Barra de ferramentas de edição de ![fontes](do-not-localize/paragraphtoolbar.png)
+![Barra de ferramentas de edição de fontes](do-not-localize/paragraphtoolbar.png)
 
 Barra de ferramentas de edição de fontes
 
@@ -265,6 +271,7 @@ O recurso Localizar e substituir permite que você procure (e substitua) qualque
 
    * Se outra instância do texto de pesquisa for encontrada, essa instância será realçada no fragmento do documento de texto. Se você tocar em **[!UICONTROL Substituir]** novamente, a instância realçada será substituída e o cursor avançará, se uma terceira instância for encontrada.
    * Se outra instância não for encontrada, a caixa de diálogo Localizar e substituir exibirá uma mensagem: Fim do módulo atingido.
+
    Você também pode tocar em Substituir tudo para substituir todas as correspondências de uma só vez.
 
    Localizar e substituir também inclui uma pesquisa regular avançada de expressões. Para usar o regex em sua pesquisa, selecione **[!UICONTROL Reg ex]** e toque em **[!UICONTROL Localizar]** ou **[!UICONTROL Substituir]**.
