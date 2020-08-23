@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 86%
 
 ---
 
@@ -33,8 +36,7 @@ Como usuário, você pode fazer o seguinte:
 
 Consulte os seguintes tópicos adicionais:
 
-* [Gerenciamento de projetos
-   ](/help/sites-authoring/touch-ui-managing-projects.md)
+* [Gerenciamento de projetos](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Trabalhar com tarefas](/help/sites-authoring/task-content.md)
 * [Trabalhar com fluxos de trabalho de projeto](/help/sites-authoring/projects-with-workflows.md)
 * [Integração com o Creative Project e o PIM](/help/sites-authoring/managing-product-information.md)
@@ -92,7 +94,7 @@ O bloco **Experiências** permite adicionar um aplicativo para dispositivos móv
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-Os ícones indicam que tipo de experiência é representada: um site, um aplicativo para dispositivos móveis ou uma publicação. Adicione experiências clicando no sinal de + ou em **Adicionar experiência** e selecionando o tipo de experiência.
+Os ícones indicam que tipo de experiência é representada: site, aplicativo móvel ou publicação. Adicione experiências ao clicar no sinal + ou em **Adicionar experiência** e selecionar o tipo de experiência.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -201,7 +203,7 @@ Todos os projetos oferecem suporte às seguintes funções padrão, para permiti
   <tr>
    <td><p><strong>Função</strong></p> </td>
    <td><p><strong>Descrição</strong></p> </td>
-   <td><p><strong>Permissões</strong></p> </td>
+   <td><p><strong>Permissões </strong></p> </td>
    <td><p><strong>Associação de Grupo</strong></p> </td>
   </tr>
   <tr>
@@ -242,4 +244,4 @@ Para projetos de criação, também são fornecidas funções adicionais, por ex
 
 >[!NOTE]
 >
->Quando você cria o projeto e adiciona usuários às diferentes funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador precisa excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
+>Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas. Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**. No entanto, se o projeto for excluído, esses grupos não serão excluídos automaticamente. Um administrador precisa excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
