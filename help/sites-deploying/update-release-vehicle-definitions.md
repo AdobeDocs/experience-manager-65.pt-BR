@@ -1,8 +1,8 @@
 ---
 title: Atualizar Definições do Veículo de Liberação
 seo-title: Atualizar Definições do Veículo de Liberação
-description: Este artigo detalha os vários tipos de versões do AEM, incluindo versões completas, pacotes de recursos e pacotes de serviços.
-seo-description: Este artigo detalha os vários tipos de versões do AEM, incluindo versões completas, pacotes de recursos e pacotes de serviços.
+description: Este artigo detalha os vários tipos de versões de AEM, incluindo versões completas, pacotes de recursos e pacotes de serviços.
+seo-description: Este artigo detalha os vários tipos de versões de AEM, incluindo versões completas, pacotes de recursos e pacotes de serviços.
 uuid: 388fb6f5-0249-41e2-a460-1bb4cd0f8494
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,21 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '768'
 ht-degree: 3%
 
 ---
 
 
-# Definições do veículo de lançamento do AEM Update{#update-release-vehicle-definitions}
+# AEM Atualizar Definições do Veículo de Liberação{#update-release-vehicle-definitions}
 
-Este documento inclui detalhes sobre os vários tipos de versões do Adobe Experience Manager (AEM), incluindo versões completas, pacotes de recursos e pacotes de serviços que a Adobe fornece aos seus clientes.
+Este documento inclui detalhes sobre os vários tipos de versões do Adobe Experience Manager (AEM), incluindo versões completas, pacotes de recursos e pacotes de serviços que o Adobe fornece aos seus clientes.
 
->[!Nnota]
+>[!NOTE]
 >
->Para obter o cronograma de versões de atualização do AEM, consulte o roteiro de versões de atualização do [AEM](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
+>Para obter o cronograma de lançamento de AEM atualizações, consulte o roteiro de versões de atualização [AEM](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
 
 ## Versão completa {#full-release}
 
@@ -72,7 +72,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td>
     <ul>
      <li>Fornecido como instalador de produto independente</li>
-     <li>Disponível no site de licenciamento e no site de licenciamento de serviços gerenciados</li>
+     <li>Disponível no site de licenciamento e no site de licenciamento da Managed Services</li>
      <li>Pode exigir migração do repositório de conteúdo</li>
     </ul> </td>
   </tr>
@@ -156,7 +156,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
     <ul>
      <li>Modelo de delivery único para liberação de correções</li>
      <li>Pacote de conteúdo do agregador contendo o pacote de conteúdo de componentes individuais</li>
-     <li>Os CFPs são sobrepostos de hot fixes e nenhum aprimoramento faz parte dele.</li>
+     <li>Os CFPs são sobrepostos de hot fixes e nenhuma melhoria faz parte dele.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -221,7 +221,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td><strong>Disponibilidade e instalação</strong></td>
    <td>
     <ul>
-     <li>Entregue como pacote pelo Atendimento ao cliente do AEM</li>
+     <li>Entregue como pacote pelo Atendimento ao cliente AEM</li>
      <li>Não necessariamente incluído em service packs ou versões completas</li>
     </ul> </td>
   </tr>
@@ -240,9 +240,9 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td><strong>Definição</strong></td>
    <td>
     <ul>
-     <li>Pacotes de recursos são funcionalidades complementares e são fornecidos por Service Packs. Se uma versão do AEM tiver lançado seu último service pack, a Adobe não fornecerá nenhum pacote de recursos para ele no futuro.</li>
-     <li>Os FPs contêm aprimoramentos de produtos, programados para uma versão subsequente do produto, mas disponibilizados antecipadamente com base na decisão do Gerenciamento de produtos da Adobe.</li>
-     <li>Os recursos sempre são mesclados com a próxima versão principal e, em seguida, são suportados para a versão AEM exigida pelo cliente</li>
+     <li>Pacotes de recursos são funcionalidades complementares e são fornecidos por Service Packs. Se uma versão AEM tiver lançado seu último service pack, o Adobe não fornecerá nenhum pacote de recursos para ele no futuro.</li>
+     <li>Os FPs contêm aprimoramentos de produtos, programados para uma versão subsequente do produto, mas fornecidos antecipadamente com base na decisão do Gerenciamento de produto Adobe.</li>
+     <li>Os recursos são sempre mesclados com a próxima versão principal e depois suportados para a versão AEM exigida pelo cliente</li>
      <li>Os pacotes de recursos de interesse comum e GA são mesclados no próximo service pack</li>
     </ul> </td>
   </tr>
@@ -272,7 +272,7 @@ Este documento inclui detalhes sobre os vários tipos de versões do Adobe Exper
    <td>
     <ul>
      <li>Entregue por Service Packs</li>
-     <li>Disponível em Compartilhamento de pacotes. Os clientes aceitam os termos e condições da Adobe por meio do Compartilhamento de pacotes.</li>
+     <li>Disponível em Compartilhamento de pacotes. Os clientes aceitam Termos e Condições por meio do Compartilhamento de pacotes.</li>
     </ul> </td>
   </tr>
   <tr>
