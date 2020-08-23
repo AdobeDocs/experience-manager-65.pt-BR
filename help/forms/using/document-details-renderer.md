@@ -1,6 +1,6 @@
 ---
-title: Detalhes do Documento para renderizador
-seo-title: Detalhes do Documento para renderizador
+title: Detalhes do documento para renderizador
+seo-title: Detalhes do documento para renderizador
 description: Informações conceituais sobre como as renderizações funcionam na área de trabalho do AEM Forms para renderizar os vários tipos de formulários e arquivos suportados.
 seo-description: Informações conceituais sobre como as renderizações funcionam na área de trabalho do AEM Forms para renderizar os vários tipos de formulários e arquivos suportados.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Detalhes do Documento para renderizador {#document-details-for-renderer}
+# Detalhes do documento para renderizador {#document-details-for-renderer}
 
 ## Introdução {#introduction}
 
@@ -28,7 +28,7 @@ Na área de trabalho do AEM Forms, vários tipos de formulário são suportados 
 * Imagens
 * Aplicativos de terceiros (por exemplo, Gerenciamento de correspondência)
 
-Este documento explica o funcionamento desses renderizadores da perspectiva de personalização semântica / reutilização de componentes, de modo que as necessidades do cliente sejam atendidas sem interromper nenhuma execução. Embora a área de trabalho do AEM Forms permita qualquer interface do usuário/alteração semântica, recomenda-se que a lógica de renderização de diferentes tipos de formulário não seja alterada, caso contrário, os resultados podem ser imprevisíveis. Este documento serve para orientação / conhecimento para suportar a renderização do mesmo formulário, usando os mesmos componentes de espaço de trabalho em portais diferentes, e não para modificar a lógica de renderização propriamente dita.
+Este documento explica o funcionamento desses renderizadores da perspectiva de personalização semântica / reutilização de componentes, de modo que as necessidades do cliente sejam atendidas sem interromper nenhuma execução. Embora a área de trabalho do AEM Forms permita qualquer interface de usuário/alteração semântica, recomenda-se que a lógica de renderização de diferentes tipos de formulário não seja alterada, caso contrário, os resultados podem ser imprevisíveis. Este documento serve para orientação / conhecimento para suportar a renderização do mesmo formulário, usando os mesmos componentes de espaço de trabalho em portais diferentes, e não para modificar a lógica de renderização propriamente dita.
 
 ## PDF forms {#pdf-forms}
 
@@ -38,7 +38,7 @@ Quando um formulário XDP é renderizado como PDF, um `FormBridge` JavaScript™
 
 Na área de trabalho do AEM Forms, a visualização PDFTaskForm se comunica com o `FormBridge`javascript, por meio de um HTML intermediário presente no `/lc/libs/ws/libs/ws/pdf.html`. O fluxo é:
 
-**visualização PDFTaskForm - pdf.html**
+**VISUALIZAÇÃO PDFTaskForm - pdf.html**
 
 Comunica-se usando `window.postMessage` / `window.attachEvent('message')`
 
@@ -54,7 +54,7 @@ Este método é o modo padrão de comunicação com um PDFJavaScript de um HTML.
 >
 >Não é recomendado modificar o pdf.html / conteúdo da visualização PdfTaskForm.
 
-## Novos formulários HTML {#new-html-forms}
+## Novo Forms HTML {#new-html-forms}
 
 Novos formulários HTML são renderizados pela Visualização NewHTMLTaskForm.
 
@@ -66,11 +66,11 @@ Esse JavaScript é diferente daquele mencionado nas PDF forms acima, mas tem um 
 >
 >Não é recomendado modificar o conteúdo da visualização NewHTMLTaskForm.
 
-## Formulários e guias flexíveis {#flex-forms-and-guides}
+## Flex Forms e Guias {#flex-forms-and-guides}
 
-Os formulários flexíveis são renderizados por SwfTaskForm e as guias são renderizadas pelas Visualizações HtmlTaskForm, respectivamente.
+O Flex Forms é renderizado por SwfTaskForm e os guias são renderizados por Visualizações HtmlTaskForm, respectivamente.
 
-No espaço de trabalho do AEM Forms, essas visualizações se comunicam com o SWF real, que compõe o formulário/guia flexível usando um SWF intermediário presente em `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+Na área de trabalho do AEM Forms, essas visualizações se comunicam com o SWF real, que compõe o formulário/guia flexível usando um SWF intermediário presente em `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 A comunicação acontece usando `swfObject.postMessage` / `window.flexMessageHandler`.
 
@@ -84,16 +84,16 @@ Este protocolo é definido pelo `WsNextAdapter.swf`. O objeto existente `flexMes
 
 Aplicativos de terceiros são renderizados usando a visualização ExtAppTaskForm.
 
-**Aplicativo de terceiros para comunicação da área de trabalho do AEM Forms**
+**Comunicação de aplicativos de terceiros para a área de trabalho AEM Forms**
 
 A área de trabalho do AEM Forms escuta em `window.global.postMessage([Message],[Payload])`
 
-[A mensagem] pode ser uma cadeia especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`na `runtimeMap`. Os aplicativos de terceiros devem usar essa interface para notificar o espaço de trabalho dos AEM Forms, conforme necessário. O uso dessa interface é obrigatório, pois a área de trabalho dos AEM Forms deve saber isso quando a tarefa é enviada para que possa limpar a janela da tarefa.
+[A mensagem] pode ser uma cadeia especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`na `runtimeMap`. Aplicativos de terceiros devem usar essa interface para notificar a área de trabalho da AEM Forms, conforme necessário. O uso dessa interface é obrigatório, pois a área de trabalho do AEM Forms deve saber isso quando a tarefa é enviada para que possa limpar a janela da tarefa.
 
 **Área de trabalho AEM Forms para comunicação de aplicativos de terceiros**
 
-Se os botões de ação direta do espaço de trabalho do AEM Forms estiverem visíveis, ele chamará `window.[External-App-Name].getMessage([Action])`, onde [ `Action]` é lido do `routeActionMap`. O aplicativo de terceiros deve acompanhar essa interface e notificar o espaço de trabalho do AEM Forms por meio da `postMessage ()` API.
+Se os botões de ação direta do espaço de trabalho AEM Forms estiverem visíveis, ele chamará `window.[External-App-Name].getMessage([Action])`, onde `[Action]` será lido a partir do `routeActionMap`. O aplicativo de terceiros deve acompanhar essa interface e notificar o espaço de trabalho da AEM Forms por meio da `postMessage ()` API.
 
 Por exemplo, um aplicativo Flex pode definir `ExternalInterface.addCallback('getMessage', listener)` para suportar essa comunicação. Se o aplicativo de terceiros desejar manipular o envio do formulário por meio de seus próprios botões, você deverá especificar `hideDirectActions = true() in the runtimeMap` e poderá ignorar esse ouvinte. Por isso, essa construção é opcional.
 
-Você pode ler mais sobre a integração de aplicativos de terceiros em relação ao Gerenciamento de correspondência na [Integração do Gerenciamento de correspondência na área de trabalho](/help/forms/using/integrating-correspondence-management-html-workspace.md)do AEM Forms.
+Você pode ler mais sobre a integração de aplicativos de terceiros em relação ao Gerenciamento de correspondência em [Integração do Gerenciamento de correspondência na área de trabalho](/help/forms/using/integrating-correspondence-management-html-workspace.md)da AEM Forms.
