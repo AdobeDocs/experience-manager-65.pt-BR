@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '6822'
+source-wordcount: '6814'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao 
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Ao escrever uma regra Quando, você pode acionar a ação Limpar valor de. A ação Limpar valor de apaga o valor do objeto especificado. Ter Valor limpo como uma opção na instrução Quando permite criar condições complexas com vários campos.
+Ao escrever uma regra Quando, você pode acionar a ação Limpar valor de. A ação Limpar valor de apaga o valor do objeto especificado. Ter um Valor Claro como uma opção na instrução Quando permite criar condições complexas com vários campos.
 
 ![clear value of](assets/clearvalueof.png)
 
@@ -137,11 +137,11 @@ Ao escrever uma regra Quando, você pode acionar a ação Limpar valor de. A aç
 
 Além do serviço de modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço da Web. No entanto, um serviço de modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para chamar um serviço.
 
-Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
+Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
 
 **Defina o valor de** Calcula e define o valor do objeto especificado. Você pode definir o valor do objeto como uma string, o valor de outro objeto, o valor calculado usando a expressão ou função matemática, o valor de uma propriedade de um objeto ou o valor de saída de um serviço de modelo de dados de formulário configurado. Quando você escolhe a opção de serviço da Web, ela exibe todos os serviços configurados em todos os modelos de dados de formulário na instância AEM. Ao escolher um serviço de modelo de dados de formulário, são exibidos campos adicionais nos quais é possível mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado.
 
-Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados do](/help/forms/using/data-integration.md)AEM Forms.
+Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
 
 O tipo de regra **Definir propriedade** permite definir o valor de uma propriedade do objeto especificado com base em uma ação de condição.
 
@@ -334,11 +334,10 @@ Para iniciar a interface do usuário do editor de regras:
    Todas as regras existentes nos objetos de formulário selecionados são listadas nesta visualização. Para obter informações sobre como gerenciar regras existentes, consulte [Gerenciar regras](../../forms/using/rule-editor.md#p-manage-rules-p).
 
 1. Toque em **[!UICONTROL Criar]** para gravar uma nova regra. O editor visual da interface do usuário do editor de regras é aberto por padrão quando você inicia o editor de regras pela primeira vez.
-[Interface do usuário do editor ![de regras](assets/rule-editor-ui.png)
 
-   Clique para visualização da imagem ampliada
+   ![Interface do usuário do editor de regras](assets/rule-editor-ui.png)
 
-   ](assets/rule-editor-ui-1.png)Vamos analisar cada componente da interface do usuário do editor de regras em detalhes.
+Vamos analisar cada componente da interface do usuário do editor de regras em detalhes.
 
 ### A. Exibição de regra de componente {#a-component-rule-display}
 
@@ -376,7 +375,7 @@ Para obter mais informações sobre como usar o editor de regras visuais, consul
 
 Os usuários do grupo de usuários avançados de formulários podem acessar o editor de código. Para outros usuários, o editor de código não está disponível. Se você tiver os direitos, poderá alternar do modo editor visual para o modo editor de código do editor de regras, e vice-versa, usando o alternador logo acima do editor de regras. Quando você inicia o editor de regras pela primeira vez, ele é aberto no modo editor visual. Você pode gravar regras no modo editor visual ou alternar para o modo editor de código para gravar um script de regra. No entanto, observe que se você modificar uma regra ou gravar uma regra no editor de código, não poderá alternar de volta para o editor visual dessa regra, a menos que você limpe o editor de código.
 
-O AEM Forms rastreia o modo de editor de regras usado por último para gravar uma regra. Quando você iniciar o editor de regras na próxima vez, ele será aberto nesse modo. No entanto, também é possível configurar um modo padrão para abrir o editor de regras no modo especificado. Para isso:
+A AEM Forms rastreia o modo de editor de regras usado por último para gravar uma regra. Quando você iniciar o editor de regras na próxima vez, ele será aberto nesse modo. No entanto, também é possível configurar um modo padrão para abrir o editor de regras no modo especificado. Para isso:
 
 1. Vá para AEM console da Web em `https://[host]:[port]/system/console/configMgr`.
 1. Clique para editar o Serviço **** de configuração de formulário adaptável.
@@ -402,7 +401,7 @@ Vamos entender como criar uma regra no editor visual usando o seguinte formulár
 
 ![create-rule-example](assets/create-rule-example.png)
 
-A seção Requisitos de Empréstimo no formulário de pedido de empréstimo de exemplo exige que os requerentes especifiquem o seu estado civil, salário e, se forem casados, o salário do cônjuge. Com base nos dados de entrada do usuário, a regra calcula o montante de elegibilidade do empréstimo e é exibida no campo Elegibilidade do empréstimo. Aplique as seguintes regras para implementar o cenário:
+A seção Requisitos de Empréstimo no formulário de pedido de empréstimo de exemplo exige que os requerentes especifiquem o seu estado civil, salário e, se forem casados, o salário do cônjuge. Com base nos dados de entrada do usuário, a regra calcula o valor de elegibilidade do empréstimo e é exibida no campo Elegibilidade do empréstimo. Aplique as seguintes regras para implementar o cenário:
 
 * O campo Salário do Cônjuge é mostrado apenas quando o Status Marital é Casado.
 * O valor de elegibilidade do empréstimo é 50% do salário total.
@@ -725,7 +724,7 @@ Para copiar e colar regras, faça o seguinte:
 
 1. Toque em **Concluído** para salvar a regra.
 
-## expressões aninhadas {#nestedexpressions}
+## Expressões aninhadas {#nestedexpressions}
 
 O editor de regras permite que você use vários operadores AND e OR para criar regras aninhadas. É possível combinar vários operadores E e OU nas regras.
 
@@ -765,7 +764,7 @@ Quando o usuário indicar que está morando no seu endereço residencial atual h
 
 ## Impacto do editor de regras em scripts existentes {#impact-of-rule-editor-on-existing-scripts}
 
-Nas versões do AEM Forms anteriores ao AEM 6.1 Forms feature pack 1, os autores e desenvolvedores de formulários usavam para escrever expressões na guia Scripts da caixa de diálogo Editar componente para adicionar comportamento dinâmico aos formulários adaptáveis. A guia Scripts agora é substituída pelo editor de regras.
+Nas versões do AEM Forms anteriores ao AEM 6.1 Forms feature pack 1, os autores e desenvolvedores de formulários usavam para escrever expressões na guia Scripts da caixa de diálogo Editar componente para adicionar comportamento dinâmico aos formulários adaptativos. A guia Scripts agora é substituída pelo editor de regras.
 
 Quaisquer scripts ou expressões que precisem ter gravado na guia Scripts estão disponíveis no editor de regras. Embora não seja possível visualização ou edição no editor visual, se você fizer parte do grupo de usuários avançados dos formulários, poderá editar scripts no editor de código.
 
