@@ -3,10 +3,10 @@ title: Como editar ou adicionar metadados
 description: Saiba mais sobre os metadados do ativo [!DNL Adobe Experience Manager Assets] de várias maneiras pelas quais você pode editar os metadados do ativo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
+source-git-commit: fc14ccc834c9a41b67eb8cf17dd8b34f5dff2406
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 2%
+source-wordcount: '473'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Para editar metadados, siga estas etapas:
 
 Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados XMP. O fluxo de trabalho de gravação de metadados adiciona os metadados ao binário original. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e novas propriedades (incluindo propriedades personalizadas como `cq:tags`) são adicionadas ao schema.
 
-A gravação XMP é suportada e ativada para as plataformas e formatos de arquivo descritos nos requisitos [técnicos.](/help/sites-deploying/technical-requirements.md)
+XMP gravação é suportada e ativada para plataformas e formatos de arquivos descritos nos requisitos [técnicos.](/help/sites-deploying/technical-requirements.md)
 
 ## Editar schema de metadados {#editing-metadata-schema}
 
@@ -55,6 +55,10 @@ Você pode adicionar suas próprias namespaces dentro [!DNL Experience Manager].
 1. Para acessar a página de administração de namespaces, clique em **[!UICONTROL Namespaces]** na parte superior da página.
 1. Para adicionar uma namespace, clique em **[!UICONTROL Novo]** na parte inferior da página.
 1. Especifique uma namespace personalizada na convenção de namespace XML. Especifique a ID na forma de um URI e um prefixo associado para a ID. Clique em **[!UICONTROL Salvar]**.
+
+## Dicas e limitações {#best-practices-limitations}
+
+* Os metadados são atualizados por interface de usuário sensível ao toque e alteram as propriedades dos metadados na `dc` namespace. Qualquer atualização feita por meio da API HTTP altera as propriedades de metadados na `jcr` namespace. Consulte [como atualizar metadados usando a API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
 
 >[!MORELIKETHIS]
 >
