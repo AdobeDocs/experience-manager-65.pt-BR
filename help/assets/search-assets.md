@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 4efe5247d91fa846c4a444c81245b0fa1515a7b4
 workflow-type: tm+mt
 source-wordcount: '5858'
 ht-degree: 5%
@@ -75,7 +75,7 @@ Quando os resultados forem muitos ativos, [!DNL Experience Manager] exibirá os 
 
 ### Resultados com e sem tags inteligentes aprimoradas {#withsmarttags}
 
-Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave que mulheres estejam executando. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. Os seguintes query de pesquisa retornam os mesmos resultados:
+Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar por palavras-chave mulheres em execução. Por padrão, somente os ativos com as palavras-chave de mulher e de execução nos metadados são exibidos nos resultados da pesquisa. O mesmo comportamento é mantido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. Os seguintes query de pesquisa retornam os mesmos resultados:
 
 * `woman running`
 * `woman.running`
@@ -403,7 +403,7 @@ Você pode fazer o seguinte com os ativos que pesquisou no Experience Manager:
 
 ### Classificar resultados pesquisados {#sort}
 
-Classifique os resultados da pesquisa para descobrir os ativos necessários mais rapidamente. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
+Classifique os resultados da pesquisa para descobrir os ativos necessários mais rapidamente. You can sort the search results in list view and only when you select **[!UICONTROL [Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
 Na visualização da lista, você pode classificar os resultados da pesquisa da mesma forma que pode classificar os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Finalizado.
 
