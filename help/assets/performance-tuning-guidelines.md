@@ -4,9 +4,9 @@ description: Sugestões e orientações [!DNL Experience Manager] sobre configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2746'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Por exemplo, após executar vários workflows não transitórios (que criam nós
 
 ### Máximo de trabalhos paralelos {#maximum-parallel-jobs}
 
-Por padrão, [!DNL Experience Manager] executa um número máximo de trabalhos paralelos igual ao número de processadores no servidor. O problema com essa configuração é que durante períodos de carga pesada, todos os processadores são ocupados por workflows de ativos [!UICONTROL de atualização do] DAM, retardando a capacidade de resposta da interface do usuário e impedindo que o [!DNLEExperience Manager] execute outros processos que salvaguardem o desempenho e a estabilidade do servidor. Como prática recomendada, defina esse valor para metade dos processadores disponíveis no servidor, executando as seguintes etapas:
+Por padrão, [!DNL Experience Manager] executa um número máximo de trabalhos paralelos igual ao número de processadores no servidor. O problema com essa configuração é que durante períodos de carga pesada, todos os processadores são ocupados por workflows de ativos [!UICONTROL de atualização do] DAM, retardando a capacidade de resposta da interface do usuário e impedindo a execução [!DNL Experience Manager] de outros processos que salvaguardem o desempenho e a estabilidade do servidor. Como prática recomendada, defina esse valor para metade dos processadores disponíveis no servidor, executando as seguintes etapas:
 
 1. Em [!DNL Experience Manager] Autor, acesse `https://[aem_server]:[port]/system/console/slingevent`.
 
