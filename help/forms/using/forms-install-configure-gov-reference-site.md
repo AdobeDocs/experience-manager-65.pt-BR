@@ -1,5 +1,5 @@
 ---
-title: Configurar e configurar o site de referência We.Gov
+title: Configurar e configurar o site de referência We.Gov e We.Finance
 seo-title: Configurar e configurar o site de referência We.Gov
 description: Instale, configure e personalize um pacote de demonstração AEM Forms.
 seo-description: Instale, configure e personalize um pacote de demonstração AEM Forms.
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c42e5e5274c41469824f12b228698a77bf5d4a6
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4742'
 ht-degree: 1%
 
 ---
 
 
-# Configurar e configurar o site de referência We.Gov {#set-up-and-configure-we-gov-reference-site}
+# Configurar e configurar o site de referência We.Gov e We.Finance {#set-up-and-configure-we-gov-reference-site}
 
 ## Detalhes do pacote de demonstração {#demo-package-details}
 
@@ -147,7 +147,7 @@ Esta seção contém detalhes e instruções sobre a configuração pós-implant
 1. Clique em &quot;Salvar e fechar&quot; na barra de menus.
 1. Repita as etapas de 2 a 7 pesquisando por &quot;**analytics**&quot;, selecionando o grupo &quot;Administradores **do** Analytics&quot; e adicionando o grupo &quot;Usuários **do** We.Gov Forms&quot; como membro.
 1. Repita as etapas de 2 a 7 pesquisando &quot;usuários **de** formulários&quot;, selecionando o grupo &quot;**formulários-usuários** avançados&quot; e adicionando o grupo &quot;Usuários **do** We.Gov Forms&quot; como membro.
-1. Repita as etapas de 2 a 7 pesquisando &quot;**formulários-usuários**&quot;, selecionando o grupo &quot;**formulários-usuários**&quot; e, desta vez, adicionando o grupo &quot;Usuários **** We.Gov&quot; como membro.
+1. Repita as etapas de 2 a 7 pesquisando &quot;**formulários-usuários**&quot;, selecionando o grupo &quot;**formulários-usuários**&quot; e, dessa vez, adicionando o grupo &quot;Usuários **** We.Gov&quot; como membro.
 
 ### Configuração do servidor de email {#email-server-configuration}
 
@@ -674,7 +674,7 @@ Os modelos incluídos neste pacote também suportam o Sistema de estilo:
 
 [Sistema de estilos](../../sites-authoring/style-system.md)
 
-#### Logotipos modelo {#template-logos}
+#### Logotipos para modelos {#template-logos}
 
 Os ativos DAM do projeto também incluem logotipos e imagens We.Gov. Esses ativos estão disponíveis em:
 
