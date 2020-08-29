@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guia do usuário do Forms AEM 6.5
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a1ada0e747f46923dc834c872e522e648adae073
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '3719'
-ht-degree: 1%
+source-wordcount: '3704'
+ht-degree: 2%
 
 ---
 
@@ -26,30 +26,27 @@ ht-degree: 1%
    + [Introdução às Comunicações Interativas](using/interactive-communications-overview.md)
    + [Introdução ao gerenciamento de formulários](using/introduction-managing-forms.md)
    + [Introdução ao serviço de conversão automática de formulários](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
-   + Tutorial: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
+   + formulário: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
       + [Tutorial: Criar seu primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
       + [Tutorial: Criar um formulário adaptável](using/create-adaptive-form.md)
       + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model.md)
       + [Tutorial: Aplicar regras a campos de formulário adaptáveis l](using/apply-rules-to-adaptive-form-fields.md)
-      + [Tutorial: Estilo do formulário adaptável](using/style-your-adaptive-form.md)
-      + [Tutorial: Publicar seu formulário adaptativo](/help/forms/using/publish-your-adaptive-form.md)
-      + [Tutorial: Teste do formulário adaptável](/help/forms/using/testing-your-adaptive-form.md)
-   + Tutorial: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
+      + [formulário: Estilo do formulário adaptável](using/style-your-adaptive-form.md)
+      + [formulário: Publicar seu formulário adaptativo](/help/forms/using/publish-your-adaptive-form.md)
+      + [formulário: Teste do formulário adaptável](/help/forms/using/testing-your-adaptive-form.md)
+   + formulário: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
       + [Tutorial: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
-      + [Tutorial: Planeje a comunicação interativa](using/planning-interactive-communications.md)
+      + [formulário: Planeje a comunicação interativa](using/planning-interactive-communications.md)
       + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model0.md)
-      + [Tutorial: Criar fragmentos de documento](using/create-document-fragments.md)
+      + [formulário: Criar fragmentos de documento](using/create-document-fragments.md)
       + [Tutorial: Criar modelos](using/create-templates-print-web.md)
-      + [Tutorial: Criar comunicação interativa](using/create-interactive-communication0.md)
+      + [formulário: A criação de comunicação interativa](using/create-interactive-communication0.md)
    + Materiais de referência da AEM Forms {#aem-forms-reference-collaterals}
-      + [Configurar e configurar sites de referência de self-service do We.Finance e Funcionário](using/setup-reference-sites.md)
-      + [Configurar e configurar o site de referência We.Gov](/help/forms/using/forms-install-configure-gov-reference-site.md)
-      + [Apresentação do site de referência do We.Finance](using/finance-reference-site-walkthrough.md)
-      + [Apresentação do site de referência We.Gov](/help/forms/using/forms-gov-reference-site-user-demo.md)
-      + [Apresentação do site de referência de autoatendimento do funcionário](/help/forms/using/employee-self-service-reference-site.md)
+      + [Configurar e configurar o site de referência We.Gov e We.Finance](/help/forms/using/forms-install-configure-gov-reference-site.md)
+      + [Apresentação do site de referência We.Gov e We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [Apresentação do site de referência de recrutamento de funcionários](/help/forms/using/employee-recruitment-reference-site.md)
       + [Site de referência de Renovação de Seguro Automático do We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
-      + [Apresentação do site de referência We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
+      + [Apresentação do sítio de referência relativo a We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
       + [Referência a fragmentos de formulário adaptável](using/reference-adaptive-form-fragments.md)
       + [Temas de referência](using/reference-themes.md)
       + [Modelos de carta de referência](using/reference-cm-layout-templates.md)
@@ -58,7 +55,7 @@ ht-degree: 1%
    + [Topologias de arquitetura e implantação para AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Como escolher um tipo de persistência para uma instalação do AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
    + Instalar o AEM Forms no OSGi {#osgi-installation}
-      + [Plataformas suportadas para formulários AEM no OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
+      + [Plataformas suportadas para formulários AEM no OSGi](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/deploying/introduction/technical-requirements.translate.html)
       + [Instalar e configurar os serviços de documento](using/install-configure-document-services.md)
       + [Instalar e configurar os recursos de captura de dados](using/installing-configuring-aem-forms-osgi.md)
       + [Instalar e configurar o fluxo de trabalho centrado na Forms no OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
@@ -320,7 +317,7 @@ ht-degree: 1%
    + [Adicionar propriedades personalizadas aos ativos do Gerenciamento de correspondência](using/add-custom-properties-cm-assets.md)
    + [Personalizar a criação da interface de usuário de correspondência](using/customize-create-correspondence-ui.md)
    + [Personalizar editor de texto](using/customize-text-editor.md)
-   + [Gerenciamento de correspondência: Solução de problemas](using/cm-troubleshooting.md)
+   + [Gerenciamento de correspondência: DPS](using/cm-troubleshooting.md)
    + [APIs para acessar instâncias de carta](using/cm-apis-to-access-letter-instances.md)
    + [Integração da criação da interface de usuário de correspondência com o portal personalizado](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [Personalizar caracteres especiais no Gerenciamento de correspondência](using/custom-special-characters.md)
@@ -578,7 +575,7 @@ ht-degree: 1%
    + [Solução de problemas do Relatórios do processo](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referência do desenvolvedor {#developer-reference}
    + [Noções básicas para desenvolvedores](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-   + [Linguagem de modelo HTML](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
+   + [Linguagem de modelo HTML](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
    + [AEM plug-in para depurar formulários adaptativos](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Referência da API Java AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [Referência da API Java do AEM Forms em JEE](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
@@ -600,7 +597,7 @@ ht-degree: 1%
          + [QuickStart(SOAP) da API Java do Serviço de Assembler](developing/assembler-service-java-api-quick.md)
          + [start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC](developing/acrobat-reader-dc-extensions-service.md)
          + [Start APIQuick do Serviço de Backup e Restauração](developing/backup-restore-service-api-quick.md)
-         + [Start Forms com código de barras Java APIQuick (SOAP)](developing/barcoded-forms-service-java-api.md)
+         + [Start Java APIQuick do serviço Forms com código de barras (SOAP)](developing/barcoded-forms-service-java-api.md)
          + [Start Java APIQuick (SOAP) de componentes e serviços](developing/components-services-java-api-quick.md)
          + [Converter o QuickStart (SOAP) da API Java do serviço PDF](developing/convert-pdf-service-java-api.md)
          + [QuickStart(SOAP) da API Java do serviço de credenciais](developing/credential-service-java-api-quick.md)
