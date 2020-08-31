@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 5%
@@ -83,11 +83,11 @@ Os recursos de pesquisa personalizados devem usar a API [de pesquisa](#ugc-searc
 
 #### Indexação de Oak {#oak-indexing}
 
-Embora os índices Oak não sejam criados automaticamente para a pesquisa da plataforma AEM, a partir do AEM 6.2 eles foram adicionados à AEM Communities para melhorar o desempenho e fornecer suporte para paginação ao apresentar resultados de pesquisa UGC.
+Embora os índices Oak não sejam criados automaticamente para a pesquisa da plataforma AEM, a partir do AEM 6.2 eles foram adicionados à AEM Communities para melhorar o desempenho e fornecer suporte à paginação ao apresentar resultados de pesquisa UGC.
 
 Se as propriedades personalizadas estiverem em uso e as pesquisas estiverem lentas, será necessário criar índices adicionais para que as propriedades personalizadas sejam mais eficientes. Para manter a portabilidade, siga os requisitos [de](#naming-of-custom-properties) nomeação ao criar propriedades personalizadas que podem ser pesquisadas.
 
-Para modificar índices existentes ou criar índices personalizados, consulte [Oak Query e Indexação](../../help/sites-deploying/queries-and-indexing.md).
+Para modificar índices existentes ou criar índices personalizados, consulte [Oak Query e Indexing](../../help/sites-deploying/queries-and-indexing.md).
 
 O [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) está disponível no ACS AEM Commons. Ele fornece:
 
@@ -215,7 +215,7 @@ Por exemplo, para excluir todo o UGC no ASRP:
 curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/usergenerated/asi/cloud -uadmin:admin
 ```
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 ### Query Solr {#solr-query}
 
