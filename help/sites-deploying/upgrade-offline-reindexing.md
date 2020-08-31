@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Um dos principais desafios da atualização do Adobe Experience Manager é o tempo de inatividade associado ao ambiente do autor quando uma atualização no local é realizada. Os autores de conteúdo não poderão acessar o ambiente durante uma atualização. Portanto, é desejável minimizar o tempo necessário para executar a atualização. Para repositórios grandes, especialmente projetos da AEM Assets, que normalmente têm grandes armazenamentos de dados e um alto nível de uploads de ativos por hora, a reindexação de índices Oak leva uma porcentagem significativa do tempo de atualização.
 
-Esta seção descreve como usar a ferramenta Oak-run para reindexar o repositório **antes** de executar a atualização, reduzindo assim o tempo de inatividade durante a atualização real. As etapas apresentadas podem ser aplicadas aos índices [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) para versões AEM 6.4 e posteriores.
+Esta seção descreve como usar a ferramenta Oak-run para reindexar o repositório **antes** de executar a atualização, reduzindo assim o tempo de inatividade durante a atualização real. As etapas apresentadas podem ser aplicadas aos índices [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) para as versões AEM 6.4 e superior.
 
 ## Visão geral {#overview}
 
@@ -37,9 +37,9 @@ A ideia é criar o índice antes da atualização, em relação às definições
 Além disso, essa é a ordem das etapas conforme descrito na abordagem:
 
 1. O texto dos binários é extraído primeiro
-2. São criadas definições de índice de Públicos alvos
+2. São criadas definições de índice de públicos alvos
 3. Índices offline são criados
-4. Os índices são então importados durante o processo de atualização
+4. Os índices são importados durante o processo de atualização
 
 ### Extração de texto {#text-extraction}
 
