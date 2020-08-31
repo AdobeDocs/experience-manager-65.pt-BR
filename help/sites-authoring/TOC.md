@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guia do usuário de criação do AEM 6.5
+user-guide-title: Guia do usuário para criação do AEM 6.5
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 89%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 89%
 # AEM 6.5 Authoring User Guide {#authoring}
 
 + [Visão geral do Guia do usuário de criação](home.md)
-+ tarefas, ferramentas e conceitos essenciais para a criação do AEM {#essentials}
++ Tarefas, ferramentas e conceitos essenciais para a criação de AEM {#essentials}
    + [Primeiros passos para autores](first-steps.md)
    + [Criação de página](page-authoring.md)
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
@@ -42,7 +42,7 @@ ht-degree: 89%
    + [Criação de uma página para dispositivos móveis   ](mobile.md)
    + [Solucionar problemas do AEM durante a criação  ](troubleshooting.md)
    + [Atalhos de teclado ao editar as páginas](page-authoring-keyboard-shortcuts.md)
-   + [Práticas recomendadas   ](best-practices.md)
+   + [Práticas recomendadas    ](best-practices.md)
 + Recursos de site e página {#siteandpage}
    + [Uso de tags](tags.md)
    + [Criação de modelos de páginas  ](templates.md)
@@ -53,7 +53,6 @@ ht-degree: 89%
    + [Layout responsivo](responsive-layout.md)
    + [Content Insight](content-insights.md)
    + [Criação de conteúdo acessível (Conformidade com o WCAG 2.1)](creating-accessible-content.md)
-   + [Andaime](scaffolding.md)
    + [Configuração dos componentes no Modo de design](default-components-designmode.md)
    + [Componentes fundamentais](default-components-foundation.md)
    + [Andaime](scaffolding.md)
