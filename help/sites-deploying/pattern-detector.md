@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 1%
 
 ---
 
@@ -20,16 +23,16 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ## Visão geral {#overview}
 
-Este recurso permite verificar as instâncias do AEM existentes quanto à sua capacidade de atualização, detectando padrões em uso que:
+Este recurso permite verificar as instâncias AEM existentes quanto à sua capacidade de atualização, detectando padrões em uso que:
 
 1. Violar certas regras e são feitas em áreas que serão afetadas ou substituídas pela atualização
-1. Use um recurso do AEM 6.x ou uma API que não seja compatível com versões anteriores no AEM 6.5 e que possa ser interrompida após a atualização.
+1. Use um recurso AEM 6.x ou uma API que não seja compatível com versões anteriores no AEM 6.5 e que possa ser interrompida após a atualização.
 
-Isso poderia servir como uma avaliação do esforço de desenvolvimento envolvido na atualização para o AEM 6.5.
+Tal poderia servir de avaliação do esforço de desenvolvimento que está envolvido na atualização para a AEM 6.5.
 
 ## Como configurar {#how-to-set-up}
 
-O Detector de padrão é lançado separadamente como um pacote [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) único que funciona em qualquer versão de origem do AEM de 6.1 a 6.5, direcionando a atualização do AEM 6.5. Ele pode ser instalado usando o Gerenciador [de pacotes](/help/sites-administering/package-manager.md).
+O Detector de padrão é lançado separadamente como um [único pacote](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona em qualquer versão de AEM de origem da 6.1 para a 6.5, visando AEM atualização 6.5. Ele pode ser instalado usando o Gerenciador [de pacotes](/help/sites-administering/package-manager.md).
 
 ## Como usar {#how-to-use}
 
@@ -47,7 +50,7 @@ Você pode usar vários métodos para verificar a saída do Detector de padrão:
 
 * **Através do console Inventário Felix:**
 
-1. Vá para o console da Web do AEM navegando até *https://serveraddress:serverport/system/console/configMgr*
+1. Vá para o Console da Web AEM navegando até *https://serveraddress:serverport/system/console/configMgr*
 1. Selecionar **status - Detector** de padrão, conforme mostrado na imagem abaixo:
 
    ![screenshot-2018-2-5detector de padrões](assets/screenshot-2018-2-5pattern-detector.png)
