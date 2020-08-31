@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guia do usuário de criação da interface de usuário clássica do AEM 6.5
+user-guide-title: Guia do usuário de criação da interface de usuário clássica AEM 6.5
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '257'
 ht-degree: 89%
 
 ---
@@ -61,10 +61,8 @@ ht-degree: 89%
 + Personalização {#personalization}
    + [Noções sobre segmentação](classic-personalization-campaigns-segmentation.md)
    + [Gerenciamento de campanhas](classic-personalization-campaigns.md)
-   + [Teasers e estratégias](classic-personalization-campaigns-teasers-strategy.md)
    + [Páginas de aterrissagem](classic-personalization-campaigns-landingpage.md)
    + [Ofertas de direcionamento](classic-personalization-campaigns-target-offers.md)
-   + [Trabalhar com o Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Email Marketing](classic-personalization-campaigns-email.md)
    + [Monitoramento de emails retornados](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teasers e estratégias](classic-personalization-campaigns-teasers-strategy.md)
