@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6da27dfda2bb504fc7a1de24260e94141f1a22ab
+source-git-commit: f072522706074d5b3f4e4749caf4379ff8fdfcc3
 workflow-type: tm+mt
 source-wordcount: '4407'
 ht-degree: 6%
@@ -154,7 +154,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
    *Figura:[!UICONTROL Procurar ajuda]no menu[!UICONTROL Ajuda]*
 
-   * a mensagem de erro se um valor incorreto for inserido no campo [!ICONTROL Representar como] na opção [!UICONTROL Usuário] e o foco for movido corretamente para o campo de texto (NPR-33804).
+   * a mensagem de erro se um valor incorreto for inserido no campo [!UICONTROL Representar como] na opção [!UICONTROL Usuário] e o foco for movido corretamente para o campo de texto (NPR-33804).
 
    ![Menu do usuário no cabeçalho](assets/User_aem_header.png)
 
