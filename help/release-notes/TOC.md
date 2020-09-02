@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Notas de versão do AEM 6.5
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 translation-type: tm+mt
-source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
+source-git-commit: 5b4c684e3ebf2f4c37cfe3244c0118cd994093fb
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 45%
@@ -19,7 +19,7 @@ ht-degree: 45%
 + [Notas de versão gerais](release-notes.md)
 + Service Pack Release Notes {#service-pack}
    + [Novidades](new-features-latest-service-pack.md)
-   + [Notas de versão do Service Pack 5](sp-release-notes.md)
+   + [Notas de versão do Service Pack 6](sp-release-notes.md)
    + [Notas de versão anteriores do Service Pack](previous-hotfixes-featurepacks.md)
 + [Notas de versão do AEM Sites](sites.md)
 + [Notas de versão do AEM Assets](assets.md)
