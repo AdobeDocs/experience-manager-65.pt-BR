@@ -3,9 +3,9 @@ title: Gerenciar tags inteligentes e pesquisas
 description: Atualizar ou remover as tags inteligentes imprecisas para melhorar a relevância das tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,7 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos cam
 1. corresponde `woman running` aos vários campos de metadados.
 1. corresponde a `woman running` em tags inteligentes.
 1. correspondências de `woman` ou de `running` em tags inteligentes.
+
+>[!CAUTION]
+>
+>Se a indexação do Lucene for feita fora [!DNL Adobe Experience Manager] , a pesquisa com base em tags inteligentes não funcionará como esperado.
