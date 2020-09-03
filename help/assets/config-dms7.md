@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: d357b5832a3bd95c372c26fd7553eba70583eb6f
 workflow-type: tm+mt
-source-wordcount: '5778'
-ht-degree: 7%
+source-wordcount: '5944'
+ht-degree: 6%
 
 ---
 
@@ -71,17 +71,17 @@ O pacote de recursos 18912 permite que você ingira ativos em massa por meio de 
 
 Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets/bulk-ingest-migrate.md) de ativos em massa para obter mais informações.
 
-## Criando uma configuração de Dynamic Media {#configuring-dynamic-media-cloud-services}
+## Criação de uma configuração de Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
 
 **Antes de configurar o Dynamic Media**: Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) no Dynamic Media Classic para alterar sua senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante que você atualize a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Para criar uma configuração de Dynamic Media**
+**Para criar uma configuração de Dynamic Media no Cloud Services**
 
-1. Em AEM, toque no logotipo AEM para acessar o console de navegação global e toque ou clique no ícone Ferramentas, em seguida, toque em **[!UICONTROL Cloud Services > Configuração de mídia dinâmica.]**
+1. Em AEM, toque no logotipo AEM para acessar o console de navegação global e toque no ícone Ferramentas, em seguida, toque em **[!UICONTROL Cloud Services > Configuração de mídia dinâmica.]**
 1. Na página Navegador de configuração do Dynamic Media, no painel à esquerda, toque em **[!UICONTROL global]** (não toque ou selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, toque em **[!UICONTROL Criar.]**
-1. Na página Criar configuração de mídia dinâmica, digite um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Eles são fornecidos por Adobe no e-mail de provisionamento. Entre em contato com o suporte se você não recebeu essa solicitação.
+1. Na página **[!UICONTROL Criar configuração]** de mídia dinâmica, digite um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Eles são fornecidos por Adobe no e-mail de provisionamento. Entre em contato com o suporte se você não recebeu essa solicitação.
 
    Click **[!UICONTROL Connect to Dynamic Media.]**
 
@@ -89,7 +89,7 @@ Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets
    >
    >Depois de receber seu email de provisionamento com credenciais do Dynamic Media, [faça logon](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) no Dynamic Media Classic para alterar sua senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o serviço de nuvem do Dynamic Media seja configurado com as credenciais corretas.
 
-1. Quando a conexão for bem-sucedida, você também poderá definir o seguinte:
+1. Quando a conexão for bem-sucedida, defina o seguinte. Cabeçalhos com asterisco (*) são obrigatórios:
 
    * **[!UICONTROL Empresa]** - o nome da conta do Dynamic Media. É possível que você tenha várias contas de Dynamic Media para diferentes submarcas, divisões ou diferentes ambientes de preparo/produção.
 
@@ -98,6 +98,7 @@ Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets
    * **[!UICONTROL Publicar ativos]** - você pode escolher entre as três opções a seguir:
       * **[!UICONTROL Imediatamente]** significa que quando os ativos são carregados, o sistema ingere os ativos e fornece o URL/Incorporado instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.
       * **[!UICONTROL Na Ativação]** , significa que você precisa publicar explicitamente o ativo primeiro antes de fornecer um URL/link Incorporado.
+      * **[!UICONTROL Publicação]** seletivaEssa opção permite controlar quais pastas são publicadas no Dynamic Media, para que você possa usar recursos como Cortar inteligente ou representações dinâmicas ou quais pastas são publicadas exclusivamente em AEM para visualização; esses mesmos ativos *não* são publicados no Dynamic Media para delivery no domínio público.<br>Você pode definir essa opção aqui na Configuração **[!UICONTROL da]** Dynamic Media Cloud ou, se preferir, pode optar por definir essa opção no nível da pasta, em **[!UICONTROL Propriedades]** de uma pasta.<br>Consulte [Trabalhar com publicação seletiva no Dynamic Media.](/help/assets/selective-publishing.md)<br>Observe que, se você alterar essa configuração posteriormente ou alterá-la posteriormente no nível da pasta, essas alterações afetarão somente os novos ativos que você carrega a partir desse ponto em diante. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente da caixa de diálogo Publicação **** rápida ou **[!UICONTROL Gerenciar publicação]** .
    * **[!UICONTROL Servidor]** de Pré-visualização seguro - permite que você especifique o caminho do URL para o servidor de pré-visualização de representações seguras. Ou seja, depois que as renderizações são geradas, AEM podem acessar e pré-visualização com segurança as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância AEM).
 A menos que você tenha uma disposição especial para usar seu próprio servidor empresa ou um servidor especial, a Adobe Systems recomenda deixar essa configuração como especificado.
 
@@ -106,7 +107,7 @@ A menos que você tenha uma disposição especial para usar seu próprio servido
    * **[!UICONTROL Modo de sincronização de Mídia dinâmica]**
       * **[!UICONTROL Ativado por padrão]** - a configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Desativado por padrão]** - a configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.
-Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, clique em **[!UICONTROL Propriedades.]** Na guia **[!UICONTROL Detalhes]** , na lista suspensa Modo **[!UICONTROL de sincronização do]** Dynamic Media, escolha uma das três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar.]** *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o conteúdo**anteriormente.*
+Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, clique em **[!UICONTROL Propriedades.]** Na guia **[!UICONTROL Detalhes]** , na lista suspensa Modo **[!UICONTROL de sincronização do]** Dynamic Media, escolha uma das três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar.]** *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o conteúdo**anteriormente.* Consulte também [Trabalhar com publicação seletiva no nível de pasta no Dynamic Media.](/help/assets/selective-publishing.md)
          * **[!UICONTROL Herdado]** - Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou do modo padrão na configuração da nuvem. O status detalhado para herdado é exibido por meio de uma dica de ferramenta.
          * **[!UICONTROL Ativar para subpastas]** - Inclua tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.
          * **[!UICONTROL Desabilitado para subpastas]** - Exclua toda a subárvore da sincronização para o Dynamic Media.
