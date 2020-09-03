@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5bbdc80f199a2af38631a5443c46daae827abb52
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '5858'
+source-wordcount: '5878'
 ht-degree: 5%
 
 ---
@@ -354,6 +354,10 @@ A pesquisa visual usa marcação inteligente e requer [!DNL Experience Manager] 
 1. (Opcional) Se você tiver um formulário de pesquisa personalizado, copie o `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nó para `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salve as alterações.
 
 Para obter informações relacionadas, consulte [entender tags inteligentes no Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) e [como gerenciar tags](/help/assets/managing-smart-tags.md)inteligentes.
+
+>[!CAUTION]
+>
+>Se a indexação do Lucene for feita fora [!DNL Adobe Experience Manager], a pesquisa com base em tags inteligentes não funcionará conforme esperado.
 
 ### Metadados obrigatórios {#mandatorymetadata}
 
