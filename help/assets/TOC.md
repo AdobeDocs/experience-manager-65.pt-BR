@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guia do usuário dos ativos Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 32f8e42325314d5afbec3b3e1611fd696e1a4603
+source-git-commit: c57cc70fbdeabfdff1e8977d3bf8187f7c41ce77
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '651'
 ht-degree: 39%
 
 ---
@@ -73,7 +73,8 @@ ht-degree: 39%
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
    + [Publicação de ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
    + [Trabalhar com publicação seletiva no Dynamic Media](selective-publishing.md)
-   + [Como invalidar o cache CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Invalidar o cache CDN por meio do Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidar o cache CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instalação do Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
    + [Trabalho com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
