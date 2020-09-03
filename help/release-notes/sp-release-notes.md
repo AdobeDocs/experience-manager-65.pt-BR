@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f072522706074d5b3f4e4749caf4379ff8fdfcc3
+source-git-commit: 32addae877604a242c97eac3ed81bbc2f55ec60a
 workflow-type: tm+mt
-source-wordcount: '4407'
+source-wordcount: '4423'
 ht-degree: 6%
 
 ---
@@ -361,6 +361,8 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 * Quando você abre o Designer, a tela Bem-vindo exibe um ano incorreto (CQ-4295289).
 
 * Quando você instala [!DNL Acrobat DC] no servidor, a opção **[!UICONTROL Distribuir formulário]** fica inativa (CQ-4296304).
+
+Para obter informações sobre atualizações de segurança, consulte a página [de boletins de segurança do](https://helpx.adobe.com/security/products/experience-manager.html)Experience Manager.
 
 ## Install 6.5.6.0 {#install}
 
