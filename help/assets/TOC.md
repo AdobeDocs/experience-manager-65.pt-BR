@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guia do usuário dos ativos Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
+source-git-commit: 32f8e42325314d5afbec3b3e1611fd696e1a4603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 40%
+source-wordcount: '642'
+ht-degree: 39%
 
 ---
 
@@ -72,6 +72,7 @@ ht-degree: 40%
    + [Vincular URLs ao aplicativo da Web.](linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
    + [Publicação de ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
+   + [Trabalhar com publicação seletiva no Dynamic Media](selective-publishing.md)
    + [Como invalidar o cache CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instalação do Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
    + [Trabalho com seletores](working-with-selectors.md)
@@ -158,7 +159,7 @@ ht-degree: 40%
    + [Ativar insights de ativos por meio da inicialização de Adobe](touch-ui-using-dtm-for-asset-insights.md)
    + [Configurar insights de ativos](touch-ui-configuring-asset-insights.md)
    + [Fazer check-in e check-out de ativos](check-out-and-submit-assets.md)
-   + [Aplicar serviços de tradução em nuvem a pastas](transition-cloud-services.md)
+   + [Aplicar serviços da nuvem de tradução a pastas](transition-cloud-services.md)
    + [Usar o rastreador de página e incorporar código em páginas da Web](touch-ui-using-page-tracker.md)
    + [Gerenciar ativos compostos](managing-linked-subassets.md)
    + [Ativos relacionados](related-assets.md)
