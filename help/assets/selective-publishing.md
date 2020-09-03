@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6e7368663d18dd0b5b46be9e292dba17577acf70
+source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 2%
@@ -202,6 +202,7 @@ Como opção, você pode usar essas caixas de seleção juntamente com o predica
    | Publicar no Dynamic Media | Publicação seletiva | Publicado somente no Dynamic Media. |
    | Cancelar publicação no Dynamic Media | Imediatamente ou na Ativação | Não publicado do AEM, do Dynamic Media ou de ambos. |
    | Cancelar publicação no Dynamic Media | Publicação seletiva | Não publicado somente no Dynamic Media. |
+
 1. Em **[!UICONTROL Agendamento]**, defina o tempo da desativação.
 | Calendário selecionado | O que acontece |
 | — | — |
