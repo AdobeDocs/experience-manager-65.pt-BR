@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 6a44c4ac11f2fdf794895c28468c2a600a09b3c0
+source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Os ativos de Mídia dinâmica são armazenados em cache pelo CDN (Content Delive
 
 >[!IMPORTANT]
 >
->As etapas a seguir se aplicam somente ao modo Dynamic Media - Scene7 no AEM 6.5, Service Pack 6 (AEM 6.5.6) ou posterior. Este recurso de invalidação de CDN também exige que você use o CDN predefinido que é fornecido com AEM Dynamic Media; nenhum outro CDN personalizado é suportado.<br>Se você usar o Dynamic Media no AEM 6.5, Service Pack 5 (AEM 6.5.5) ou anterior, siga as etapas encontradas em [Invalidar o cache CDN por meio do Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>As etapas a seguir se aplicam somente ao modo Dynamic Media - Scene7 no AEM 6.5, Service Pack 6 (AEM 6.5.6) ou posterior. Este recurso de invalidação de CDN também exige que você use o CDN predefinido que é fornecido com AEM Dynamic Media; nenhum outro CDN personalizado é suportado.<br>Se você usar o Dynamic Media no AEM 6.5, Service Pack 5 (AEM 6.5.5) ou anterior, siga as etapas encontradas em [Invalidar o cache CDN por meio do Dynamic Media Classic.](/help/assets/invalidate-cdn-cache-dm-classic.md)
 
 Consulte também Visão geral do [cache no Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
