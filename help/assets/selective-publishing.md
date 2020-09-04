@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68e3e80b1c1dda8352ff30989f85f83e82bde261
+source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 4%
@@ -114,6 +114,7 @@ Consulte [Criação de uma configuração](#configuring-dynamic-media-cloud-serv
 
 1. No canto superior direito da página **[!UICONTROL Gerenciar publicação]** , toque em **[!UICONTROL Avançar.]**
 1. Na página **[!UICONTROL Gerenciar publicação - Escopo]** , execute um dos procedimentos a seguir:
+
    * Se necessário, selecione um ou mais ativos que deseja remover da publicação.
    * No canto superior direito da página **[!UICONTROL Gerenciar publicação - Escopo]** , toque em **[!UICONTROL Publicar]** ou **[!UICONTROL Publicar no Dynamic Media.]**
 1. Toque em **[!UICONTROL OK.]**
