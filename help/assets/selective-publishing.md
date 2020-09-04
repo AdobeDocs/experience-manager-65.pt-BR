@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
+source-git-commit: 5e5108b943907e5286298552c724d2b33873503f
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -50,11 +50,12 @@ Depois de configurar a publicação seletiva em uma pasta, você pode fazer o se
    * Edite as propriedades de uma nova pasta - Na Visualização **[!UICONTROL do]** cartão, na Visualização **[!UICONTROL da]** coluna ou na Visualização **[!UICONTROL da]** Lista, próximo ao canto superior direito da página, toque em **[!UICONTROL Criar > Pasta.]** Na caixa de diálogo **[!UICONTROL Criar pasta]** , digite um título (obrigatório) para a pasta e, em seguida, toque em **[!UICONTROL Criar.]** Selecione a pasta e, na barra de ferramentas, toque em **[!UICONTROL Propriedades.]**
 
 1. Na lista suspensa Modo **[!UICONTROL de]** sincronização, selecione uma das seguintes opções:
-| Modo de sincronização | Descrição |
-| — | — |
-| **[!UICONTROL Herdado]** | Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão definido na Configuração **[!UICONTROL do]** Dynamic Media. O status detalhado para **[!UICONTROL Herdado]** é exibido por meio de uma dica de ferramenta. |
-| **[!UICONTROL Sincronizar tudo nesta subárvore de pasta com o dynamicmedia]** | Para que a publicação no Dynamic Media tenha êxito, os ativos devem ser sincronizados com o Dynamic Media. A seleção dessa opção incluirá todos os ativos nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem a configuração padrão na Configuração **[!UICONTROL do]**Dynamic Media. |
-| **[!UICONTROL Excluir tudo nesta subárvore de pasta da sincronização de mídia dinâmica]** | Exclua todos os ativos desta subárvore da sincronização para o Dynamic Media. |
+
+   | Modo de sincronização | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Herdado]** | Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão definido na Configuração **[!UICONTROL do]** Dynamic Media. O status detalhado para **[!UICONTROL Herdado]** é exibido por meio de uma dica de ferramenta. |
+   | **[!UICONTROL Sincronizar tudo nesta subárvore da pasta à mídia dinâmica]** | Para que a publicação no Dynamic Media tenha êxito, os ativos devem ser sincronizados com o Dynamic Media. A seleção dessa opção incluirá todos os ativos nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem a configuração padrão na Configuração **[!UICONTROL do]** Dynamic Media. |
+   | **[!UICONTROL Excluir tudo nesta subárvore de pasta da sincronização de mídia dinâmica]** | Exclua todos os ativos desta subárvore da sincronização para o Dynamic Media. |
 
    ![Publicação seletiva de nível de pasta](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
@@ -69,6 +70,7 @@ Depois de configurar a publicação seletiva em uma pasta, você pode fazer o se
    | **[!UICONTROL Imediatamente]** | Quando os ativos são carregados para essa pasta, o sistema ingere os ativos no AEM e fornece o URL/Incorporado instantaneamente. Essa opção está vinculada apenas AEM publicação e não há necessidade de intervenção do usuário para publicar ativos.<br>Essa opção *não* estará disponível se você tiver selecionado **[!UICONTROL Excluir tudo nesta subárvore de pasta da sincronização]** de mídia dinâmica no modo **[!UICONTROL de]** sincronização na etapa anterior. |
    | **[!UICONTROL Por ativação]** | Quando os ativos são carregados para essa pasta, é necessário publicar explicitamente o ativo primeiro antes de fornecer um URL/link Incorporado. Essa opção está vinculada apenas AEM publicação.<br>Essa opção *não* estará disponível se você tiver selecionado **[!UICONTROL Excluir tudo nesta subárvore de pasta da sincronização]** de mídia dinâmica no modo **[!UICONTROL de]** sincronização na etapa anterior. |
    | **[!UICONTROL Publicação seletiva]** | Os ativos são publicados à sua escolha de AEM ou para o Dynamic Media para delivery no domínio público. Ambos os métodos de publicação são mutuamente exclusivos entre si.  Ou seja, você pode publicar ativos no DMS7 para poder usar recursos como Recorte inteligente ou representações dinâmicas. Ou, você pode publicar ativos exclusivamente para AEM para visualização segura; esses mesmos ativos *não* são publicados no DMS7 para delivery no domínio público. Essa opção não estará disponível se você tiver selecionado **[!UICONTROL Excluir tudo nesta subárvore de pasta da sincronização]** de mídia dinâmica no modo **** Sincronizar na etapa anterior. |
+
 1. No canto superior direito da página, toque em **[!UICONTROL Salvar e fechar]** e, em seguida, toque em **[!UICONTROL OK]** para retornar ao AEM Assets.
 
 ## Publicar ativos seletivamente no Dynamic Media ou AEM usando Gerenciar publicação{#selective-publish-manage-publication}
@@ -97,15 +99,19 @@ Consulte [Criação de uma configuração](#configuring-dynamic-media-cloud-serv
       >Se **[!UICONTROL Gerenciar publicação]** não for exibido na barra de ferramentas, toque no botão de reticências e selecione **[!UICONTROL Gerenciar publicação]** no menu lista.
 
 1. Na página **[!UICONTROL Gerenciar publicação - Opções]** , em **[!UICONTROL Ação]**, selecione o tipo de ativação desejado.
-| Ação | Descrição |
-| — | — |
-| **[!UICONTROL Publicar]** (para AEM) | Selecione esta opção para publicar ativos para AEM para pré-visualização segura. |
-| **[!UICONTROL Publicar em Mídia Dinâmica]** | Selecione esta opção para publicar ativos no Dynamic Media para delivery no domínio público ou para que você possa usar recursos como Recorte inteligente ou representações dinâmicas.<br>Essa opção estará disponível somente se o modo **[!UICONTROL Publicação de mídia]** dinâmica estiver definido como Publicação **** seletiva nas propriedades da pasta. |
+
+   | Ação | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Publicar]** (para AEM) | Selecione essa opção para publicar ativos para AEM para pré-visualização segura. |
+   | **[!UICONTROL Publicar no Dynamic Media]** | Selecione essa opção para publicar ativos no Dynamic Media para delivery no domínio público ou para que você possa usar recursos como Recorte inteligente ou representações dinâmicas.<br>Essa opção estará disponível somente se o modo **[!UICONTROL Publicação de mídia]** dinâmica estiver definido como Publicação **** seletiva nas propriedades da pasta. |
+
 1. Em **[!UICONTROL Agendamento]**, defina o horário da publicação.
-| Calendário | Descrição |
-| — | — |
-| **[!UICONTROL Agora]** | Selecione para publicar os ativos imediatamente. |
-| **[!UICONTROL Mais Tarde]** | Selecione para publicar os ativos em uma data e hora específicas. |
+
+   | Agendamento | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Agora]** | Selecione para publicar os ativos imediatamente. |
+   | **[!UICONTROL Posteriomente]** | Selecione para publicar os ativos em uma data e hora específicas. |
+
 1. No canto superior direito da página **[!UICONTROL Gerenciar publicação]** , toque em **[!UICONTROL Avançar]**.
 1. Na página **[!UICONTROL Gerenciar publicação - Escopo]** , execute um dos procedimentos a seguir:
    * Se necessário, selecione um ou mais ativos que deseja remover da publicação.
@@ -124,15 +130,19 @@ Consulte [Criação de uma configuração](#configuring-dynamic-media-cloud-serv
       >Se **[!UICONTROL Gerenciar publicação]** não for exibido na barra de ferramentas, toque no botão de reticências e selecione **[!UICONTROL Gerenciar publicação]** no menu lista.
 
 1. Na página **[!UICONTROL Gerenciar publicação - Opções]** , em **[!UICONTROL Ação]**, selecione o tipo de cancelamento de ativação desejado.
-| Ação | Descrição |
-| — | — |
-| **[!UICONTROL Cancelar publicação]** (de AEM) | Selecione esta opção para cancelar a publicação de ativos do AEM. |
-| **[!UICONTROL Cancelar publicação do Dynamic Media]** | Selecione esta opção para cancelar a publicação de ativos do Dynamic Media.<br>Essa opção estará disponível somente se o modo **[!UICONTROL Publicação de mídia]** dinâmica estiver definido como Publicação **** seletiva nas propriedades da pasta.  |
+
+   | Ação | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Cancelar publicação]** (de AEM) | Selecione essa opção para cancelar a publicação de ativos do AEM. |
+   | **[!UICONTROL Desfazer publicação no Dynamic Media]** | Selecione essa opção para cancelar a publicação de ativos do Dynamic Media.<br>Essa opção estará disponível somente se o modo **[!UICONTROL Publicação de mídia]** dinâmica estiver definido como Publicação **** seletiva nas propriedades da pasta. |
+
 1. Em **[!UICONTROL Agendamento]**, defina o tempo da desativação.
-| Calendário | Descrição |
-| — | — |
-| **[!UICONTROL Agora]** | Selecione para cancelar a publicação dos ativos imediatamente. |
-| **[!UICONTROL Mais Tarde]** | Selecione para cancelar a publicação dos ativos em uma data e hora específicas. |
+
+   | Agendamento | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Agora]** | Selecione para cancelar a publicação dos ativos imediatamente. |
+   | **[!UICONTROL Posteriomente]** | Selecione para cancelar a publicação dos ativos em uma data e hora específicas. |
+
 1. No canto superior direito da página **[!UICONTROL Gerenciar publicação]** , toque em **[!UICONTROL Avançar]**.
 1. Na página **[!UICONTROL Gerenciar publicação - Escopo]** , execute um dos procedimentos a seguir:
    * Selecione um ou mais ativos que deseja remover da despublicação.
@@ -159,12 +169,15 @@ Você pode usar a Publicação **** rápida para casos simples de ativação de 
       >Se a Publicação **** rápida não for vista na barra de ferramentas, toque no botão de reticências e selecione Publicação **** rápida no menu lista.
 
       ![Publicação rápida em nível de pasta no Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+
 1. Selecione uma das seguintes opções na lista do menu Publicação **** rápida.
-| Opção Publicação rápida | O que faz |
-| — | — |
-| Publicar no AEM | Publica imediatamente os ativos selecionados no AEM. |
-| Publicar no Brand Portal | Publica os ativos selecionados imediatamente no Portal **[!UICONTROL da Marca]**.<br>Essa opção só estará disponível se sua instância do AEM Assets já tiver o Portal **[!UICONTROL da]** Marca configurado. |
-| Publicar em Dynamic Media | Publica os ativos selecionados imediatamente no Dynamic Media.<br>Um ativo já deve ser sincronizado com o Dynamic Media. Se necessário, certifique-se de que o modo **[!UICONTROL de]** sincronização nas propriedades de uma pasta já esteja definido para **[!UICONTROL Sincronizar tudo nesta subárvore de pasta para dynamicmedia]**. |
+
+   | Opção Publicação rápida | O que ele faz |
+   | --- | --- | 
+   | Publicar no AEM | Publica os ativos selecionados imediatamente em AEM. |
+   | Publicar no Brand Portal | Publica os ativos selecionados imediatamente no Portal **[!UICONTROL da Marca]**.<br>Essa opção só estará disponível se sua instância do AEM Assets já tiver o Portal **[!UICONTROL da]** Marca configurado. |
+   | Publicar no Dynamic Media | Publica os ativos selecionados imediatamente no Dynamic Media.<br>Um ativo já deve ser sincronizado com o Dynamic Media. Se necessário, certifique-se de que o modo **[!UICONTROL de]** sincronização nas propriedades de uma pasta já esteja definido para **[!UICONTROL Sincronizar tudo nesta subárvore de pasta para dynamicmedia]**. |
+
 1. Toque em **[!UICONTROL OK]** e em **[!UICONTROL Fechar]**.
 
 ## Publicar ou cancelar a publicação seletiva de ativos por meio de resultados de pesquisa {#selective-publish-unpublish-search-results}
@@ -200,27 +213,29 @@ Como opção, você pode usar essas caixas de seleção juntamente com o predica
    | Cancelar publicação | Publicação seletiva | Não publicado somente no AEM. |
    | Publicar no Dynamic Media | Imediatamente ou na Ativação | Não publicado no AEM, no Dynamic Media ou em ambos. |
    | Publicar no Dynamic Media | Publicação seletiva | Publicado somente no Dynamic Media. |
-   | Cancelar publicação no Dynamic Media | Imediatamente ou na Ativação | Não publicado do AEM, do Dynamic Media ou de ambos. |
-   | Cancelar publicação no Dynamic Media | Publicação seletiva | Não publicado somente no Dynamic Media. |
+   | Desfazer publicação no Dynamic Media | Imediatamente ou na Ativação | Não publicado do AEM, do Dynamic Media ou de ambos. |
+   | Desfazer publicação no Dynamic Media | Publicação seletiva | Não publicado somente no Dynamic Media. |
 
 1. Em **[!UICONTROL Agendamento]**, defina o tempo da desativação.
-| Calendário selecionado | O que acontece |
-| — | — |
-| Agora | A ação selecionada é executada imediatamente. |
-| Mais tarde | A ação selecionada é executada na data e hora específicas selecionadas. |
+
+   | Agendamento selecionado | O que acontece |
+   | --- | --- |
+   | Agora | A ação selecionada é executada imediatamente. |
+   | Posteriomente | A ação selecionada é executada na data e hora específicas selecionadas. |
+
 1. No canto superior direito da página **[!UICONTROL Gerenciar publicação - Opções]** , toque em **[!UICONTROL Avançar]**.
 1. (Opcional) Na página **[!UICONTROL Gerenciar publicação - Escopo]** , reveja a coluna **[!UICONTROL Publicar Público alvo]** na tabela para os ativos selecionados.
 
-   | Configuração Publicar ativos na configuração do Dynamic Media | Ação selecionada | Destino de publicação |
+   | Configuração Publicar ativos na configuração do Dynamic Media | Ação selecionada | Direcionamento da publicação |
    | --- | --- | --- |
    | Imediatamente ou <br>na Ativação | Publicação | AEM e Dynamic Media |
    | Imediatamente ou <br>na Ativação | Publicar no Dynamic Media | Nenhum |
    | Publicação seletiva | Publicação | AEM |
    | Publicação seletiva | Publicar no Dynamic Media | Dynamic Media |
    | Imediatamente ou <br>na Ativação | Cancelar publicação | AEM e Dynamic Media |
-   | Imediatamente ou <br>na Ativação | Cancelar publicação no Dynamic Media | Nenhum |
+   | Imediatamente ou <br>na Ativação | Desfazer publicação no Dynamic Media | Nenhum |
    | Publicação seletiva | Cancelar publicação | AEM |
-   | Publicação seletiva | Cancelar publicação no Dynamic Media | Dynamic Media |
+   | Publicação seletiva | Desfazer publicação no Dynamic Media | Dynamic Media |
 
 1. Na página **[!UICONTROL Gerenciar publicação - Escopo]** , execute um dos procedimentos a seguir:
    * Selecione um ou mais ativos que você deseja remover da publicação ou da despublicação.
