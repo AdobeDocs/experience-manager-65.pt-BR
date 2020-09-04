@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 10eef47ec15aef1f17238702520848df4ed36342
+source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 24%
@@ -22,7 +22,7 @@ Os ativos de Dynamic Media são armazenados em cache pelo CDN para delivery ráp
 
 >[!IMPORTANT]
 >
->As etapas a seguir se aplicam somente ao Dynamic Media no AEM 6.5, Service Pack 5 (AEM 6.5.5) ou anterior.<br>Se você usar o Dynamic Media no AEM 6.5, Service Pack 6 (AEM 6.5.6) ou posterior, siga as etapas encontradas em [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>As etapas a seguir se aplicam somente ao Dynamic Media no AEM 6.5, Service Pack 5 (AEM 6.5.5) ou anterior.<br>Se você usar o Dynamic Media no AEM 6.5, Service Pack 6 (AEM 6.5.6) ou posterior, siga as etapas encontradas em [Invalidar o cache CDN por meio do Dynamic Media.](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 
 Consulte também Visão geral do [cache no Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
