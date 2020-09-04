@@ -12,9 +12,9 @@ discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
 translation-type: tm+mt
-source-git-commit: f0ec3415ffef70c985828f17b32dc0d453c1ae7c
+source-git-commit: 93cb84763cfd77b67a5dd1481caab79337f6e7c4
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3423'
 ht-degree: 1%
 
 ---
@@ -190,7 +190,7 @@ Depois de baixado, você pode instalar e configurar o S3 Connector da seguinte m
 1. Edite o arquivo e adicione as opções de configuração exigidas pela configuração.
 1. Start AEM.
 
-### Atualização para uma nova versão do conector S3 1.10.x {#upgrading-to-a-new-version-of-the-x-s-connector}
+### Atualização para uma nova versão do conector S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
 
 Se precisar atualizar para uma nova versão do conector S3 1.10.x (por exemplo, de 1.10.0 para 1.10.4), siga estas etapas:
 
@@ -204,7 +204,7 @@ Se precisar atualizar para uma nova versão do conector S3 1.10.x (por exemplo, 
 
    >[!NOTE]
    >
-   >Os nomes de ficheiros apresentados acima são utilizados apenas para fins ilustrativos e não são definitivos.
+   >Os nomes de arquivo apresentados acima são usados apenas para fins ilustrativos.
 
 1. Baixe a versão mais recente do pacote de recursos 1.8.x do Repositório do [Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Descompacte o conteúdo em uma pasta separada e navegue até `jcr_root/libs/system/install/15`.
