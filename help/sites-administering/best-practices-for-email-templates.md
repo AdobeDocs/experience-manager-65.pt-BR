@@ -1,8 +1,8 @@
 ---
 title: Práticas recomendadas para modelos de e-mail
 seo-title: Práticas recomendadas para modelos de e-mail
-description: Encontre as práticas recomendadas para criar modelos de e-mail no AEM.
-seo-description: Encontre as práticas recomendadas para criar modelos de e-mail no AEM.
+description: Encontre as práticas recomendadas para a criação de modelos de e-mail no AEM.
+seo-description: Encontre as práticas recomendadas para a criação de modelos de e-mail no AEM.
 uuid: 07417a63-7ca6-484c-b55d-57b319428329
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
+source-git-commit: 7e05502b590fb2c7c36919f94611efe999262d32
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 >[!CAUTION]
 >
->Os componentes de email do AEM foram substituídos. Devido à natureza do e-mail, que une o conteúdo e o estilo, os componentes de e-mail fornecidos prontamente pelo AEM tornam-se de reutilização limitada para clientes devido à necessidade de implementar estilos personalizados em quaisquer componentes necessários para projetos.
+>Os componentes de e-mail AEM foram descontinuados. Devido à natureza do e-mail, que une o conteúdo e o estilo, os componentes de e-mail fornecidos prontos para uso AEM tornam-se de reutilização limitada para clientes devido à necessidade de implementar estilos personalizados em quaisquer componentes necessários para projetos.
 >
->Os componentes de email podem ser implementados no nível do projeto, e os componentes de email obsoletos do AEM ilustram como isso pode ser feito. No entanto, esses componentes obsoletos não devem ser usados em projetos.
+>Os componentes de email podem ser implementados no nível do projeto, e os componentes de email AEM obsoletos ilustram como isso pode ser feito. No entanto, esses componentes obsoletos não devem ser usados em projetos.
 
 Este documento descreve algumas das práticas recomendadas para o design de e-mail, resultando em um template de campanha de e-mail bem desenvolvido.
 
@@ -44,7 +47,7 @@ Use essas práticas recomendadas ao criar seu próprio boletim informativo.
 
 >[!NOTE]
 >
->Ao criar um modelo de email para o Adobe Campaign, você deve incluir a propriedade **acMapping** com o valor **mapRecipient** no nó **jcr:content** do modelo, ou você não poderá selecionar o modelo Adobe Campaign em Propriedades **da** página do AEM (o campo está desativado).
+>Ao criar um modelo de email para Adobe Campaign, você deve incluir a propriedade **acMapping** com o valor **mapRecipient** no nó **jcr:content** do modelo, ou você não poderá selecionar o modelo Adobe Campaign em Propriedades **da** página do AEM (o campo está desativado).
 
 ## Modelo/componente de página {#template-page-component}
 
@@ -127,13 +130,13 @@ Use essas práticas recomendadas ao criar seu próprio boletim informativo.
 
 | **Prática recomendada** | **Implementação** |
 |---|---|
-| Use o validador W3C para corrigir o código HTML. Verifique se todas as tags abertas estão fechadas corretamente. | O código foi validado. Para o Doctype de transição XHTML somente o atributo xmlns ausente para o <html> está faltando. |
-| Não se incomode com JavaScript ou Flash - essas tecnologias não são amplamente suportadas pelos clientes de e-mail. | Nem JavaScript nem Flash são usados no modelo do boletim informativo. |
+| Use o validador W3C para corrigir o código HTML. Verifique se todas as tags abertas estão fechadas corretamente. | O código foi validado. Apenas para o Doctype de transição XHTML o atributo xmlns ausente para o `<html>` elemento está ausente. |
+| Não se incomode com JavaScript ou Flash - essas tecnologias geralmente não são suportadas pelos clientes de e-mail. | Nem o JavaScript nem o Flash são usados no modelo do boletim informativo. |
 | Adicione uma versão de texto simples para envio de várias partes. | Um novo widget foi criado nas propriedades da página para extrair facilmente uma versão de texto simples do conteúdo da página. Isso pode ser usado como ponto de partida para a versão final de texto simples. |
 
-## Modelos e exemplos de boletins informativos de Campanha {#campaign-newsletter-templates-and-examples}
+## Modelos e exemplos de boletins informativos de campanha {#campaign-newsletter-templates-and-examples}
 
-O AEM vem com vários modelos e componentes prontos para você criar boletins informativos de campanha. Você pode usar esses modelos e componentes para criar seus boletins personalizados.
+AEM vem com vários modelos e componentes prontos para uso para criar newsletters de campanha. Você pode usar esses modelos e componentes para criar seus boletins personalizados.
 
 ### Modelos {#templates}
 
@@ -145,7 +148,7 @@ Todos têm um **cabeçalho**, um **rodapé** e uma seção de **corpo** . Abaixo
 
 ### Componentes {#components}
 
-Atualmente, há [sete componentes disponíveis para uso dentro dos templates de campanha](/help/sites-authoring/adobe-campaign-components.md). Esses componentes são baseados no idioma **HTL** da marcação da Adobe.
+Atualmente, há [sete componentes disponíveis para uso dentro dos templates de campanha](/help/sites-authoring/adobe-campaign-components.md). Esses componentes são baseados na linguagem de marcação de Adobe **HTL**.
 
 | **Nome do componente** | **Caminho do componente** |
 |---|---|
@@ -161,4 +164,4 @@ Atualmente, há [sete componentes disponíveis para uso dentro dos templates de 
 >
 >Esses componentes são otimizados para conteúdo de email; ou seja, eles seguem as práticas recomendadas descritas neste documento. O uso de outros componentes predefinidos normalmente violará essas regras.
 
-Esses componentes são descritos em detalhes nos componentes [do](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign.
+Esses componentes são descritos detalhadamente nos componentes [da](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign.
