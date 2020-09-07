@@ -1,11 +1,11 @@
 ---
-title: Notas de versão do Service Pack anterior do Adobe Experience Manager 6.5
-description: Notas de versão específicas do Adobe Experience Manager 6.5 Service Pack 3 e anterior.
+title: '[!DNL Adobe Experience Manager] 6.5 Notas de versão anteriores do Service Pack.'
+description: Notas de versão para [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: a842da57a155f56ad3efc268610c167fe140998b
+source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
 workflow-type: tm+mt
-source-wordcount: '11431'
+source-wordcount: '11438'
 ht-degree: 26%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 26%
 
 # Correções e Feature Packs incluídos em Pacotes de serviço anteriores {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.5.0 {#experience-manager-6550}
+## [!DNL Adobe Experience Manager] 6.5.5.0 {#experience-manager-6550}
 
 O Adobe Experience Manager 6.5.5.0 é uma atualização importante que inclui novos recursos, melhorias importantes solicitadas pelo cliente e melhorias de desempenho, estabilidade e segurança, lançadas desde a disponibilização geral do lançamento do 6.5 em **abril de 2019**. Ele pode ser instalado no Adobe Experience Manager 6.5.
 
-Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Manager 6.5.5.0 incluem:
+Alguns dos principais recursos e melhorias introduzidos na versão [!DNL Adobe Experience Manager] 6.5.5.0 incluem:
 
-* Personalize os nomes das colunas exibidas na Caixa de entrada do Adobe Experience Manager.
+* O acesso anônimo ao CRXDE Lite não é permitido. Em vez disso, os usuários são direcionados para a tela de logon. Consulte [Desenvolvimento com CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+
+* Personalize os nomes das colunas exibidas na [!DNL Adobe Experience Manager] Caixa de entrada.
 
 * Aprimoramento da acessibilidade em várias áreas da Gestão de conteúdo da Web para Experience Manager (WCM), como o Editor de páginas, Componentes principais, RTE e a interface do usuário de administração.
 
@@ -69,7 +71,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 * Quando um usuário copia e cola um Container de layout na mesma página, os componentes em um Container de layout não são exibidos (NPR-33648).
 * A verificação de integridade do Dispatcher exibe uma mensagem de `Invalid cookie header` aviso nos arquivos de registro (NPR-33629).
 * XSS refletido em PreferencesServlet (NPR-33438).
-* Os usuários anônimos podem acessar os recursos do CRX DE Lite (GRANITE-27790).
+* Os usuários anônimos podem acessar os recursos do CRXDE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -77,7 +79,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Agora é possível colocar o foco do teclado na lista [!UICONTROL Comentários] e na opção clicável para [!UICONTROL Criar] comentários da versão em [!UICONTROL Criar nova versão] no painel Ativos da [!UICONTROL Linha] do tempo (NPR-33424).
 
-* Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas de teclado (NPR-33420).
+* Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas do teclado (NPR-33420).
 
 * O pop-up da caixa de lista da caixa de combinação (em vários campos em páginas diferentes) agora mostra as entradas como uma lista de opções que podem ser anunciadas pelos leitores de tela (NPR-33516).
 
