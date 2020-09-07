@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 097109edcf66cc06460c9d962037e49613e3405b
+source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '822'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 # Configuração de email {#configuring-email}
 
-AEM Communities usam email para:
+A AEM Communities usa email para:
 
 * [Notificações de comunidades](notifications.md)
 * [Subscrições de comunidades](subscriptions.md)
@@ -46,7 +46,7 @@ O serviço de correio padrão é necessário para notificações e subscrições
 
 Isso se baseia na documentação de [Configuração da notificação](../../help/sites-administering/notification.md)por email, mas com uma diferença de que o campo `"From" address` não ** é obrigatório e deve ficar vazio.
 
-Por exemplo (preenchido com valores somente para fins ilustrativos):
+Por exemplo (preenchido com valores apenas para fins ilustrativos):
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -76,7 +76,7 @@ Por exemplo (preenchido com valores somente para fins ilustrativos):
 
    Se marcada, ativa o registro de interações com o servidor SMTP.
 
-## Configuração de email do AEM Communities {#aem-communities-email-configuration}
+## Configuração de e-mail da AEM Communities {#aem-communities-email-configuration}
 
 Depois que o serviço [de email](#default-mail-service-configuration) padrão é configurado, as duas instâncias existentes da configuração do `AEM Communities Email Reply Configuration` OSGi, incluídas na versão, tornam-se funcionais.
 
@@ -112,7 +112,7 @@ Esta configuração não deve ser alterada.
 
 * Verifique se **Create post from reply email** is `unchecked`.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/configure-email.png)
 
 ### Configuração para Subscrição {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Para subscrições de Comunidades, é possível ativar ou desativar a capacidade
 * Selecione o ícone de edição.
 * Verifique se o **Nome** está `subscriptions-email`.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/configure-email-subscription.png)
 
 * **[!UICONTROL Nome]**
 
@@ -138,9 +138,10 @@ Para subscrições de Comunidades, é possível ativar ou desativar a capacidade
 * **[!UICONTROL Tamanho máximo de]**
 
    Se a ID do rastreador for adicionada à linha do assunto, esse será o comprimento máximo do assunto, exceto a ID rastreada, após a qual será cortada. Observe que isso deve ser o mínimo possível para evitar que as informações de ID rastreadas sejam perdidas. O padrão é 200.
-* **[!UICONTROL Endereço de email &quot;De&quot;]**
 
-   *(Obrigatório)* Endereço do qual o email de notificação será entregue. Provavelmente o mesmo usuário **** SMTP especificado para o serviço [de email](#configuredefaultmailservice)padrão. O padrão é `no-reply@example.com`.
+* **[!UICONTROL Endereço de email &quot;Responder para&quot;]**
+
+   Endereço usado como endereço de email &quot;Responder para&quot;. O padrão é `communities@adobe.com`.
 
 * **[!UICONTROL Responder ao delimitador]**
 
