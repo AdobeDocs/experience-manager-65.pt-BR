@@ -10,16 +10,19 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8f35717324cd2c1524fb2cf931b3ce21be05729a
+workflow-type: tm+mt
+source-wordcount: '2132'
+ht-degree: 1%
 
 ---
 
 
 # Conceitos básicos de configuração{#basic-configuration-concepts}
 
-O Adobe Experience Manager (AEM) é instalado com as configurações padrão para todos os parâmetros que permitem que ele seja executado &quot;out of the box&quot;. No entanto, você pode configurar o AEM para seus próprios requisitos específicos.
+O Adobe Experience Manager (AEM) é instalado com as configurações padrão para todos os parâmetros, o que permite que ele execute &quot;out of the box&quot;. No entanto, você pode configurar AEM para seus próprios requisitos específicos.
 
-Há vários aspectos do AEM que podem ser configurados:
+Há muitos aspectos de AEM que podem ser configurados:
 
 * Alguns são configurados [comumente para cada instalação](#primary-configuration-considerations) do projeto e devem ser revisados para confirmar se são aplicáveis ao seu projeto.
 * [Outras configurações](#further-configuration-considerations) podem ser comuns, embora não sejam imperativas; relacionado aos recursos, ou ao desempenho e estabilidade do sistema.
@@ -27,7 +30,7 @@ Há vários aspectos do AEM que podem ser configurados:
 
 Dependendo da configuração específica, essas alterações podem ser feitas usando:
 
-* **Console Web do Adobe CQ**
+* **Adobe CQ Web Console**
 
    Este é um local padrão para configurar pacotes e serviços OSGi.
 
@@ -45,11 +48,11 @@ Dependendo da configuração específica, essas alterações podem ser feitas us
 
 * **WCM AEM**
 
-   Vários aspectos podem ser configurados no próprio WCM AEM, muitos usando o console [Ferramentas](/help/sites-administering/tools-consoles.md) ; por exemplo, agentes de replicação.
+   Vários aspectos podem ser configurados no próprio AEM WCM, muitos usando o console [Ferramentas](/help/sites-administering/tools-consoles.md) ; por exemplo, agentes de replicação.
 
 >[!NOTE]
 >
->Ao trabalhar com o Adobe Experience Manager, há vários métodos de gerenciar as configurações dos serviços OSGi (console ou nós de repositório).
+>Ao trabalhar com a Adobe Experience Manager, há vários métodos de gerenciar as configurações dos serviços OSGi (console ou nós de repositório).
 >
 >Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
@@ -57,7 +60,7 @@ Dependendo da configuração específica, essas alterações podem ser feitas us
 >
 >A configuração do AEM é simples, mas você deve estar ciente de que:
 >
->Algumas alterações podem ter um impacto importante nos aplicativos. Por esse motivo, verifique se você tem a experiência e o conhecimento necessários antes de começar a configurar o AEM e faça apenas as alterações necessárias. Quaisquer alterações feitas por meio do console OSGi são aplicadas **imediatamente** ao sistema em execução (nenhuma reinicialização é necessária).
+>Determinadas alterações podem ter um impacto importante nos aplicativos. Por esse motivo, certifique-se de ter a experiência e o conhecimento necessários antes da start de configurar o AEM e faça apenas as alterações necessárias. Todas as alterações feitas por meio do console OSGi são aplicadas **imediatamente** ao sistema em execução (nenhuma reinicialização é necessária).
 
 ## Considerações sobre a configuração principal {#primary-configuration-considerations}
 
@@ -67,11 +70,11 @@ A lista fornece uma breve visão geral de cada aspecto de configuração, juntam
 
 ### Security Checklist {#security-checklist}
 
-Vários problemas importantes de configuração estão listados na Lista de verificação de [segurança](/help/sites-administering/security-checklist.md). Certifique-se de ler isso e tomar as medidas necessárias para sua instalação.
+Vários problemas importantes de configuração estão listados na Lista de verificação de [segurança](/help/sites-administering/security-checklist.md). Certifique-se de ler isso e executar todas as ações necessárias para sua instalação.
 
 ### Configuração da interface padrão - otimizada ao toque ou clássica {#configuring-the-default-ui-touch-optimized-or-classic}
 
-Há duas interfaces de usuário disponíveis para uso no AEM:
+Há duas interfaces de usuário disponíveis para uso em AEM:
 
 * A interface otimizada para toque
 * A interface clássica
@@ -84,7 +87,7 @@ Você pode configurar a interface necessária usando o Mapeamento [](/help/sites
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
-Todos os elementos do AEM (por exemplo, o repositório, o Dispatcher etc.) podem ser instalados em redes IPv4 e IPv6.
+Todos os elementos de AEM (por exemplo, o repositório, o Dispatcher etc.) podem ser instalados em redes IPv4 e IPv6.
 
 A operação é contínua, pois nenhuma configuração especial é necessária. Quando necessário, basta especificar um endereço IP usando o formato apropriado ao seu tipo de rede.
 
@@ -108,15 +111,15 @@ Isso significa que, quando um endereço IP precisa ser especificado, você pode 
 
 ### Expurgação de versão {#version-purging}
 
-Em uma instalação padrão, o AEM cria uma nova versão de uma página ou nó sempre que você ativa uma página (após atualizar o conteúdo). Você também pode criar versões adicionais mediante solicitação usando a guia **Controle de versão** do sidekick. Todas essas versões são armazenadas no repositório e podem ser restauradas se necessário.
+Em uma instalação padrão, AEM cria uma nova versão de uma página ou nó sempre que você ativa uma página (após atualizar o conteúdo). Você também pode criar versões adicionais mediante solicitação usando a guia **Controle de versão** do sidekick. Todas essas versões são armazenadas no repositório e podem ser restauradas, se necessário.
 
-Essas versões nunca são removidas, portanto, o tamanho do repositório crescerá com o tempo e, portanto, precisará ser gerenciado.
+Essas versões nunca são expurgadas, portanto, o tamanho do repositório crescerá com o tempo e, portanto, precisará ser gerenciado.
 
-Consulte Expurgação [de](/help/sites-deploying/version-purging.md) versão para obter detalhes completos, em particular o Gerenciador [de](/help/sites-deploying/version-purging.md#version-manager) versão para obter detalhes sobre como configurar o AEM para expurgar versões anteriores quando uma nova versão for criada.
+Consulte Expurgação [de](/help/sites-deploying/version-purging.md) versão para obter detalhes completos, em particular o Gerenciador [de](/help/sites-deploying/version-purging.md#version-manager) versão para obter detalhes sobre como configurar AEM para expurgar versões anteriores quando uma nova versão for criada.
 
-### Registro {#logging}
+### Logs {#logging}
 
-O AEM oferece a possibilidade de configurar:
+AEM oferta a possibilidade de configurar:
 
 * parâmetros globais para o serviço central de registro
 * solicitar o registro de dados; uma configuração de registro especializada para informações de solicitação
@@ -126,9 +129,9 @@ Consulte [Registro](/help/sites-deploying/configure-logging.md) para obter detal
 
 ### Modos de execução {#run-modes}
 
-Os modos de execução permitem ajustar sua instância do AEM para uma finalidade específica; por exemplo, autor ou publicação, teste, desenvolvimento ou intranet, etc.
+Os modos de execução permitem ajustar sua instância de AEM para uma finalidade específica; por exemplo, autor ou publicação, teste, desenvolvimento ou intranet, etc.
 
-Isso é feito definindo coleções de parâmetros de configuração para cada modo de execução. Um conjunto básico de parâmetros de configuração é aplicado para todos os modos de execução, então você pode ajustar conjuntos adicionais para a finalidade do ambiente específico. Eles são aplicados conforme necessário.
+Isso é feito definindo coleções de parâmetros de configuração para cada modo de execução. Um conjunto básico de parâmetros de configuração é aplicado para todos os modos de execução, então você pode ajustar conjuntos adicionais para a finalidade do seu ambiente específico. Eles são aplicados conforme necessário.
 
 Todas as configurações são armazenadas em um repositório e ativadas pela configuração do Modo **de execução**.
 
@@ -140,32 +143,32 @@ O logon único (SSO) permite que um usuário acesse vários sistemas após forne
 
 Consulte Logon [único](/help/sites-deploying/single-sign-on.md) para obter mais detalhes.
 
-### Mapeamento de recursos {#resource-mapping}
+### Resource Mapping {#resource-mapping}
 
-O mapeamento de recursos é usado para definir redirecionamentos, URLs personalizados e hosts virtuais para o AEM.
+O mapeamento de recursos é usado para definir redirecionamentos, URLs personalizados e hosts virtuais para AEM.
 
 Por exemplo, você pode usar esses mapeamentos para:
 
-* Prefixe todas as solicitações com `/content` o prefixo para que a estrutura interna fique oculta dos visitantes do site.
+* Prefixe todas as solicitações com `/content` o prefixo para que a estrutura interna fique oculta dos visitantes para o site.
 * Defina um redirecionamento para que todas as solicitações da `/content/en/gateway` página do site sejam redirecionadas para `https://gbiv.com/`.
 
 Consulte Mapeamento [de](/help/sites-deploying/resource-mapping.md) recursos para obter mais detalhes.
 
 ### Replicação, Replicação Inversa e Agentes de Replicação {#replication-reverse-replication-and-replication-agents}
 
-Os agentes de replicação são fundamentais para o AEM, pois são usados para:
+Os agentes de replicação são fundamentais para AEM como mecanismo usado para:
 
 * [Publique (ative)](/help/sites-authoring/publishing-pages.md) conteúdo de um autor em um ambiente de publicação.
 * Limpe explicitamente o conteúdo do cache do Dispatcher.
-* Retorna a entrada do usuário (por exemplo, a entrada de formulário) do ambiente de publicação para o ambiente do autor (sob controle do ambiente do autor).
+* Retorna a entrada do usuário (por exemplo, a entrada de formulário) do ambiente publish para o ambiente author (sob controle do ambiente author).
 
-Para obter mais detalhes, consulte [Replicação](/help/sites-deploying/replication.md).
+For further details see [Replication](/help/sites-deploying/replication.md).
 
 ### Configurações do OSGi {#osgi-configuration-settings}
 
-[O OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia do AEM. É usado para controlar os pacotes compostos do AEM e suas configurações.
+[O OSGi](https://www.osgi.org/) é um elemento fundamental na pilha de tecnologia de AEM. É usado para controlar os pacotes compostos de AEM e sua configuração.
 
-Consulte as configurações [do](/help/sites-deploying/osgi-configuration-settings.md) OSGi para obter uma lista dos vários pacotes que são relevantes para a implementação do projeto (listados de acordo com o pacote). Nem todas as configurações listadas precisam de ajuste, algumas são mencionadas para ajudá-lo a entender como o AEM opera.
+Consulte as configurações [do](/help/sites-deploying/osgi-configuration-settings.md) OSGi para obter uma lista dos vários pacotes que são relevantes para a implementação do projeto (listados de acordo com o pacote). Nem todas as configurações listadas precisam de ajuste, algumas são mencionadas para ajudá-lo a entender como AEM opera.
 
 When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
@@ -173,31 +176,31 @@ When working with AEM there are several methods of managing the configuration se
 
 A autenticação LDAP é necessária para autenticar usuários armazenados em um diretório LDAP (central), como o Ative Diretory. Isso ajuda a reduzir o esforço necessário para gerenciar contas de usuário.
 
-A autenticação LDAP ocorre no nível do repositório, portanto, é feita diretamente pelo repositório. Para obter mais detalhes, consulte [Configuração do LDAP com o AEM](/help/sites-administering/ldap-config.md).
+A autenticação LDAP ocorre no nível do repositório, portanto, é feita diretamente pelo repositório. Para obter mais detalhes, consulte [Configuração do LDAP com AEM](/help/sites-administering/ldap-config.md).
 
 Para o gerenciamento de usuários no AEM (incluindo atribuição de direitos de acesso), consulte Administração e segurança [](/help/sites-administering/security.md)do usuário.
 
 ### Configuração do Dispatcher {#configuring-the-dispatcher}
 
-O Dispatcher é a ferramenta de cache e/ou balanceamento de carga da Adobe. Usar o Dispatcher também ajuda a proteger seu servidor AEM contra ataques. Portanto, você pode aumentar a segurança da sua instância do AEM usando o Dispatcher em conjunto com um servidor da Web de classe empresarial.
+O Dispatcher é uma ferramenta de cache e/ou balanceamento de carga da Adobe Experience Manager que pode ser usada em conjunto com um servidor Web de classe empresarial.
 
 Consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) para obter detalhes completos, em particular [Configuração do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) para obter mais detalhes sobre a configuração.
 
-### Configuração do AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
+### Configuração AEM conector do LiveCycle {#configuring-aem-livecycle-connector}
 
-Com o lançamento dos Serviços de documento do AEM e da Segurança do documento do AEM, agora temos a capacidade de chamar os serviços de documento do LiveCycle para renderizar um formulário XFA, converter um documento em PDF e proteger um documento por política. Leia o [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obter mais detalhes.
+Com o lançamento dos Serviços AEM e AEM Segurança do Documento, agora temos a capacidade de chamar os serviços de documentação do LiveCycle para renderizar um formulário XFA, converter um documento em PDF e proteger um documento por política. Leia [AEM Conector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) do LiveCycle para obter mais detalhes.
 
 ### Descarregamento de tarefa e administração de topologia {#job-offloading-and-topology-administration}
 
-[A descarga](/help/sites-deploying/offloading.md) distribui tarefas de processamento, incluindo instâncias do Experience Manager em uma topologia. Com a descarga, você pode usar instâncias específicas do Experience Manager para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
+[A descarga](/help/sites-deploying/offloading.md) distribui tarefas de processamento que somam instâncias de Experience Manager em uma topologia. Com o descarregamento, você pode usar instâncias de Experience Manager específicas para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
 
-As topologias são clusters do Experience Manager que estão participando da descarga em conjunto. Um cluster consiste em uma ou mais instâncias de servidor do Experience Manager (uma única instância é considerada um cluster).
+As topologias são clusters de Experience Manager que estão participando da descarga. Um cluster consiste em uma ou mais instâncias de servidor de Experience Manager (uma única instância é considerada um cluster).
 
-Para obter mais informações sobre como exibir ou modificar a associação de topologia, consulte a seção [Administrando topologias](/help/sites-deploying/offloading.md#administering-topologies) .
+Para obter mais informações sobre como visualização ou modificar a associação de topologia, consulte a seção Topologias [de](/help/sites-deploying/offloading.md#administering-topologies) administração.
 
 ### Configuração do console de boas-vindas {#configuring-the-welcome-console}
 
-O console Bem-vindo da interface clássica fornece uma lista de links para os vários consoles e funcionalidades no AEM.
+O console Bem-vindo da interface clássica fornece uma lista de links para os vários consoles e funcionalidades dentro do AEM.
 
 É possível configurar os links que estão visíveis. Consulte [Configuração do console](/help/sites-developing/customizing-the-welcome-console.md) de boas-vindas para obter mais detalhes.
 
@@ -217,7 +220,7 @@ O repositório de dados é usado para descarregar o armazenamento de binários g
 
 Esse recurso &quot;store-once, reference-many-times&quot; pode ser estendido para servir não apenas uma única árvore de repositório, mas repositórios totalmente separados, configurando o armazenamento de dados de cada um para se referir ao mesmo local do sistema de arquivos compartilhado.
 
-Esse armazenamento de dados pode ser compartilhado entre diferentes nós no mesmo cluster, diferentes instâncias de publicação e/ou autor na mesma instalação ou até mesmo instâncias totalmente separadas em diferentes instalações.
+Esse armazenamento de dados pode ser compartilhado entre diferentes nós no mesmo cluster, diferentes instâncias de publicação e/ou autor na mesma instalação, ou até mesmo instâncias totalmente separadas em instalações diferentes.
 
 Para obter mais informações, consulte [Configuração de armazenamento de dados e armazenamento](/help/sites-deploying/data-store-config.md)de nós.
 
@@ -229,9 +232,9 @@ Você pode habilitar HTTP sobre SSL para empregar conexões mais seguras para se
 
 Consulte [Habilitar HTTP sobre SSL](/help/sites-administering/ssl-by-default.md) para obter mais detalhes.
 
-### Portais e portlets do AEM {#aem-portals-and-portlets}
+### Portais e portlets AEM {#aem-portals-and-portlets}
 
-Um portal é um aplicativo da Web que fornece personalização, logon único, integração de conteúdo de diferentes fontes e hospeda a camada de apresentação dos sistemas de informações. O componente portlet também permite que você incorpore um portlet na página. Para acessar o conteúdo fornecido pelo CQ5 WCM, o servidor de portal pode ser equipado com o Portlet do CQ5 Portal Diretor. Você pode fazer isso instalando, configurando e adicionando o portlet à página do portal.
+Um portal é um aplicativo da Web que fornece personalização, logon único, integração de conteúdo de diferentes fontes e hospeda a camada de apresentação dos sistemas de informações. O componente portlet também permite que você incorpore um portlet na página. Para acessar o conteúdo fornecido pelo CQ5 WCM, o servidor de portal pode ser equipado com o Portlet Director do CQ5 Portal. Você pode fazer isso instalando, configurando e adicionando o portlet à página do portal.
 
 Consulte [Portal e Portlets](/help/sites-administering/aem-as-portal.md) para obter mais detalhes.
 
@@ -249,7 +252,7 @@ Se o processo de AEM exceder esse máximo, a mensagem &quot; `too many open file
 
 Para evitar essas exceções, é necessário:
 
-1. Verifique quantos arquivos abertos seu processo AEM está usando.
+1. Verifique quantos arquivos abertos seu processo de AEM está usando.
 
    A forma como você efetua essa verificação dependerá da plataforma na qual sua instância está sendo executada. Utilitários como lsof (Unix) ou Process Explorer (Windows) podem ser usados.
 
@@ -260,7 +263,7 @@ Para evitar essas exceções, é necessário:
 
 1. Defina o máximo permitido.
 
-   O novo valor deverá atender tanto às necessidades atuais como a quaisquer picos futuros, pelo que é aconselhável duplicar as necessidades atuais.
+   O novo valor deverá atender tanto às necessidades atuais como a quaisquer picos futuros, pelo que é aconselhável duplo das necessidades atuais.
 
    Por padrão, `serverctl` configura `CQ_MAX_OPEN_FILES` para `8192`; isso deve ser suficiente para a maioria dos cenários.
 
@@ -306,9 +309,9 @@ As impressões de página são exibidas na coluna **Impressões** do console sit
 
 * Na instância do autor:
 
-   * [Rastreamento de impressões de página da Adobe](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Rastreamento de impressões de página de Adobe](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->A configuração do Adobe Page Impressions Tracker no ambiente do autor permitirá solicitações anônimas ao serviço de rastreamento.
+>A configuração do Controlador de impressões de página de Adobe no ambiente do autor permitirá solicitações anônimas ao serviço de rastreamento.
 
