@@ -3,9 +3,9 @@ title: Metadados em cascata [!DNL Adobe Experience Manager Assets].
 description: Este artigo descreve como definir metadados em cascata para ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '948'
 ht-degree: 6%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 6%
 Ao capturar as informações de metadados de um ativo, os usuários fornecem informações nos vários campos disponíveis. É possível exibir campos de metadados específicos ou valores de campos que dependem das opções selecionadas nos outros campos. Essa exibição condicional de metadados é chamada de metadados em cascata. Em outras palavras, é possível criar uma dependência entre um campo/valor de metadados específico e um ou mais campos e/ou seus valores.
 
 Use schemas de metadados para definir regras para exibir metadados em cascata. Por exemplo, se o schema de metadados incluir um campo de tipo de ativo, você pode definir um conjunto pertinente de campos a serem exibidos com base no tipo de ativo selecionado pelo usuário.
+
+>[!CAUTION]
+>
+>Metadados em cascata não são compatíveis com Fragmentos de conteúdo.
 
 Estes são alguns casos de uso para os quais você pode definir metadados em cascata:
 
@@ -55,6 +59,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
    * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]** e clique em **[!UICONTROL Adicionar escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos Vídeo, PDF, Word e Imagem.
 
    * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho]** JSON e forneça o caminho do arquivo JSON. [!DNL Experience Manager] busca os pares de valores chave em tempo real quando o formulário é apresentado ao usuário.
+
    Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editá-las manualmente.
 
    ![add_choice](assets/add_choice.png)
