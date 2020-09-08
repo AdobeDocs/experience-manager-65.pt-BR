@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 24d817bf8e52136980783ef14cea8531519ee622
+source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1910'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 
 #### Configurar o Dispatcher {#configure-dispatcher}
 
-O Dispatcher está em cache e na ferramenta de balanceamento de carga para AEM. AEM O Dispatcher também ajuda a proteger AEM servidor contra ataques. Você pode aumentar a segurança da sua instância de AEM usando o Dispatcher em conjunto com um servidor Web de classe empresarial. Se você usar o [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), execute as seguintes configurações para AEM Forms:
+O Dispatcher é uma ferramenta de cache e/ou balanceamento de carga da Adobe Experience Manager que pode ser usada em conjunto com um servidor Web de classe empresarial. Se você usar o [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), execute as seguintes configurações para AEM Forms:
 
 1. Configurar acesso para AEM Forms:
 
@@ -192,7 +192,7 @@ O Dispatcher está em cache e na ferramenta de balanceamento de carga para AEM. 
 
 1. Configure o serviço de filtro de quem indicou:
 
-   Faça logon no gerenciador de configuração Apache Felix como administrador. O URL padrão do gerenciador de configuração é `https://[server]:[port_number]/system/console/configMgr`. No menu **Configurações** , selecione a opção Filtro **** de Quem indicou Apache Sling. No campo Permitir hosts, digite o nome de host do dispatcher para permitir como uma quem indicou e clique em **Salvar**. O formato da entrada é https://[server]:[port].
+   Faça logon no gerenciador de configuração Apache Felix como administrador. O URL padrão do gerenciador de configuração é `https://[server]:[port_number]/system/console/configMgr`. No menu **Configurações** , selecione a opção Filtro **** de Quem indicou Apache Sling. No campo Permitir hosts, insira o nome de host do expedidor para permitir como uma quem indicou e clique em **Salvar**. O formato da entrada é https://[server]:[port].
 
 #### Configurar cache {#configure-cache}
 
