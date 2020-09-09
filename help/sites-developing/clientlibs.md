@@ -1,8 +1,8 @@
 ---
 title: Usando bibliotecas do lado do cliente
 seo-title: Usando bibliotecas do lado do cliente
-description: O AEM fornece pastas de biblioteca do lado do cliente, que permitem que você armazene o código do lado do cliente no repositório, organize-o no categoria e defina quando e como cada categoria de código deve ser fornecida ao cliente
-seo-description: O AEM fornece pastas de biblioteca do lado do cliente, que permitem que você armazene o código do lado do cliente no repositório, organize-o no categoria e defina quando e como cada categoria de código deve ser fornecida ao cliente
+description: AEM fornece as Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente
+seo-description: AEM fornece as Pastas de biblioteca do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente
 uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4db76ca1de97d8353ac88a6e66e14f41fb0b87db
+source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2740'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Sites modernos dependem muito do processamento no cliente, conduzido por códigos complexos de JavaScript e CSS. Organizar e otimizar a entrega desse código pode ser um problema complicado.
 
-Para ajudar a lidar com esse problema, o AEM fornece Pastas **de biblioteca do lado do** cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página final para carregar o código correto.
+Para ajudar a lidar com esse problema, o AEM fornece pastas **de biblioteca do lado do** cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo no categoria e definir quando e como cada categoria de código deve ser fornecida ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos em sua página final para carregar o código correto.
 
-## Como as bibliotecas do lado do cliente funcionam no AEM {#how-client-side-libraries-work-in-aem}
+## Como as bibliotecas do lado do cliente funcionam em AEM {#how-client-side-libraries-work-in-aem}
 
 A maneira padrão de incluir uma biblioteca do lado do cliente (ou seja, um arquivo JS ou CSS) no HTML de uma página é simplesmente incluir uma `<script>` ou `<link>` tag no JSP para essa página, contendo o caminho para o arquivo em questão. Por exemplo,
 
@@ -39,7 +39,7 @@ A maneira padrão de incluir uma biblioteca do lado do cliente (ou seja, um arqu
 ...
 ```
 
-Embora essa abordagem funcione no AEM, pode causar problemas quando as páginas e seus componentes se tornam complexos. Nesses casos, há o perigo de várias cópias da mesma biblioteca JS poderem ser incluídas na saída HTML final. Para evitar isso e permitir a organização lógica de bibliotecas do lado do cliente, o AEM usa pastas **de biblioteca do lado do** cliente.
+Embora essa abordagem funcione em AEM, pode causar problemas quando as páginas e seus componentes se tornam complexos. Nesses casos, há o perigo de várias cópias da mesma biblioteca JS poderem ser incluídas na saída HTML final. Para evitar isso e permitir a organização lógica de bibliotecas do lado do cliente, AEM usa pastas **de biblioteca do lado do** cliente.
 
 Uma pasta de biblioteca do lado do cliente é um nó de repositório do tipo `cq:ClientLibraryFolder`. A definição na notação [](https://jackrabbit.apache.org/node-type-notation.html) CND é
 
@@ -51,7 +51,7 @@ Uma pasta de biblioteca do lado do cliente é um nó de repositório do tipo `cq
   - channels (string) multiple
 ```
 
-Por padrão, `cq:ClientLibraryFolder` os nós podem ser colocados em qualquer lugar dentro das `/apps`subárvores `/libs` e `/etc` do repositório (esses padrões e outras configurações podem ser controladas pelo painel do Gerenciador **de biblioteca HTML do** Adobe Granite do Console [do](https://localhost:4502/system/console/configMgr)sistema).
+Por padrão, `cq:ClientLibraryFolder` os nós podem ser colocados em qualquer lugar dentro das `/apps`subárvores `/libs` e `/etc` do repositório (esses padrões e outras configurações podem ser controladas pelo painel **Adobe Granite HTML Library Manager** do Console [do](https://localhost:4502/system/console/configMgr)sistema).
 
 Cada um `cq:ClientLibraryFolder` é preenchido com um conjunto de arquivos JS e/ou CSS, juntamente com alguns arquivos de suporte (veja abaixo). As propriedades do `cq:ClientLibraryFolder` são configuradas da seguinte maneira:
 
@@ -64,11 +64,11 @@ Cada um `cq:ClientLibraryFolder` é preenchido com um conjunto de arquivos JS e/
 
 ## Referência a bibliotecas do lado do cliente {#referencing-client-side-libraries}
 
-Como o HTL é a tecnologia preferencial para o desenvolvimento de sites do AEM, o HTL deve ser usado para incluir bibliotecas do lado do cliente no AEM. No entanto, também é possível fazê-lo usando a JSP.
+Como o HTL é a tecnologia preferida para desenvolver sites AEM, o HTL deve ser usado para incluir bibliotecas do lado do cliente no AEM. No entanto, também é possível fazê-lo usando a JSP.
 
 ### Uso de HTL {#using-htl}
 
-Em HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pelo AEM, que pode ser acessado por meio [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis neste arquivo, que pode ser chamado por meio [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)de:
+Em HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pela AEM, que pode ser acessado por meio [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis neste arquivo, que pode ser chamado por meio [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)de:
 
 * **css** - carrega somente os arquivos CSS das bibliotecas de clientes referenciadas.
 * **js** - carrega somente os arquivos JavaScript das bibliotecas de clientes referenciadas.
@@ -80,7 +80,7 @@ Para obter mais detalhes e exemplos de uso, consulte a [Introdução do document
 
 ### Uso do JSP {#using-jsp}
 
-Adicione uma `ui:includeClientLib` tag ao código JSP para adicionar um link às bibliotecas do cliente na página HTML gerada. Para referenciar as bibliotecas, use o valor da `categories` propriedade do `ui:includeClientLib` nó.
+Adicione uma `ui:includeClientLib` tag ao código JSP para adicionar um link às bibliotecas do cliente na página HTML gerada. Para fazer referência às bibliotecas, use o valor da `categories` propriedade do `ui:includeClientLib` nó.
 
 ```
 <%@taglib prefix="ui" uri="https://www.adobe.com/taglibs/granite/ui/1.0" %>
@@ -103,7 +103,7 @@ Para obter informações completas, incluindo atributos para filtrar JS, CSS ou 
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, que no passado costumava ser usada para incluir bibliotecas de clientes, foi substituída desde o AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) em vez disso, conforme detalhado acima.
+>`<cq:includeClientLib>`, que no passado costumava ser usada para incluir bibliotecas de clientes, foi substituída desde AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) em vez disso, conforme detalhado acima.
 
 ## Criando Pastas de Biblioteca de Clientes {#creating-client-library-folders}
 
@@ -157,7 +157,7 @@ Em seguida, você define a `allowProxy` propriedade como true `foo` .
 
 >[!CAUTION]
 >
->Ao usar bibliotecas de clientes proxy, a configuração do AEM Dispatcher pode exigir uma atualização para garantir que os URIs com as clientlibs de extensão sejam permitidos.
+>Ao usar bibliotecas de clientes proxy, a configuração do Dispatcher AEM pode exigir uma atualização para garantir que os URIs com as clientlibs de extensão sejam permitidos.
 
 >[!CAUTION]
 >
@@ -182,8 +182,8 @@ Em seguida, você define a `allowProxy` propriedade como true `foo` .
 1. Selecione a pasta da biblioteca do cliente e clique em **Criar > Criar arquivo**.
 1. Na caixa Nome do arquivo, digite um dos seguintes nomes de arquivo e clique em OK:
 
-   * **`js.txt`:**Use esse nome de arquivo para gerar um arquivo JavaScript.
-   * **`css.txt`:**Use esse nome de arquivo para gerar uma folha de estilos em cascata.
+   * **`js.txt`:** Use esse nome de arquivo para gerar um arquivo JavaScript.
+   * **`css.txt`:** Use esse nome de arquivo para gerar uma folha de estilos em cascata.
 
 1. Abra o arquivo e digite o seguinte texto para identificar a raiz do caminho dos arquivos de origem:
 
@@ -233,9 +233,9 @@ Use a propriedade categoria para identificar a pasta da biblioteca do cliente a 
 * **Tipo:** String[]
 * **Valor:** O valor da propriedade categoria do `cq:ClientLibraryFolder` nó a ser incorporado.
 
-#### Uso da incorporação para minimizar solicitações {#using-embedding-to-minimize-requests}
+<!-- #### Using Embedding to Minimize Requests {#using-embedding-to-minimize-requests}
 
-Em alguns casos, você pode descobrir que o HTML final gerado para a página típica pela sua instância de publicação inclui um número relativamente grande de `<script>` elementos, especialmente se o site estiver usando informações de contexto do cliente para análise ou direcionamento. Por exemplo, em um projeto não otimizado, você pode encontrar a seguinte série de `<script>` elementos no HTML de uma página:
+In some cases you may find that the final HTML generated for typical page by your publish instance includes a relatively large number of `<script>` elements, particularly if your site is using client context information for analaytics or targeting. For example, in a non-optimized project you might find the following series of `<script>` elements in the HTML for a page:
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery.js"></script>
@@ -247,9 +247,9 @@ Em alguns casos, você pode descobrir que o HTML final gerado para a página tí
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
-Nesses casos, pode ser útil combinar todo o código da biblioteca do cliente necessário em um único arquivo para que o número de solicitações de ida e volta no carregamento da página seja reduzido. Para fazer isso, você pode inserir `embed` as bibliotecas necessárias na biblioteca de cliente específica do aplicativo usando a propriedade embed do `cq:ClientLibraryFolder` nó.
+In such cases, it can be useful to combine all the required client library code in to a single file so that the number of back and forth requests on page load is reduced. To do this you can `embed` the required libraries into you app-specific client library using the embed property of the `cq:ClientLibraryFolder` node.
 
-As seguintes categorias de biblioteca de cliente são incluídas no AEM. Você deve incorporar somente aqueles que são necessários para o funcionamento de seu site específico. No entanto, **você deve manter a ordem listada aqui**:
+The following client library categories are incuded with AEM. You should embed only those that are required for he functioning of your particular site. However, **you should maintain the order listed here**:
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -269,6 +269,10 @@ As seguintes categorias de biblioteca de cliente são incluídas no AEM. Você d
 1. `cq.collab.toggle`
 1. `cq.collab.forum`
 1. `cq.cleditor`
+
+EDITOR NOTE: removed as requested on CQDOC-16765
+
+-->
 
 #### Caminhos em arquivos CSS {#paths-in-css-files}
 
@@ -324,7 +328,7 @@ Por exemplo, a tabela a seguir lista o valor da `channels` propriedade para cada
 
 ## Uso de pré-processadores {#using-preprocessors}
 
-O AEM permite pré-processadores conectáveis e é fornecido com suporte para o [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) para CSS e JavaScript e o [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) para JavaScript com o YUI definido como pré-processador padrão do AEM.
+AEM permite pré-processadores e entregas conectáveis com suporte para o [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) para CSS e JavaScript e o [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) para JavaScript com YUI definido como AEM pré-processador padrão.
 
 Os pré-processadores conectáveis permitem uma utilização flexível, incluindo:
 
@@ -335,7 +339,7 @@ Os pré-processadores conectáveis permitem uma utilização flexível, incluind
 
 >[!NOTE]
 >
->Por padrão, o AEM usa o Compressor YUI. Consulte a documentação [do](https://github.com/yui/yuicompressor/issues) YUI Compressor GitHub para obter uma lista de problemas conhecidos. Mudar para o compressor GCC para clientlibs específicos pode resolver alguns problemas observados ao utilizar IU.
+>Por padrão, AEM usa o Compressor YUI. Consulte a documentação [do](https://github.com/yui/yuicompressor/issues) YUI Compressor GitHub para obter uma lista de problemas conhecidos. Mudar para o compressor GCC para clientlibs específicos pode resolver alguns problemas observados ao utilizar IU.
 
 >[!CAUTION]
 >
@@ -396,7 +400,7 @@ Para obter mais detalhes sobre as opções de GCC, consulte a documentação [do
 A IU é definida como a miniatura padrão no AEM. Para alterar para GCC, siga estas etapas.
 
 1. Vá para o Apache Felix Config Manager em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-1. Localize e edite o Gerenciador **de biblioteca HTML do** Adobe Granite.
+1. Localize e edite o Gerenciador **de biblioteca HTML** Granite.
 1. Ative a **opção Minifique** (se ainda não estiver ativada).
 1. Defina o valor Configurações padrão do processador **JS** como `min:gcc`.
 
@@ -406,7 +410,7 @@ A IU é definida como a miniatura padrão no AEM. Para alterar para GCC, siga es
 
 ## Ferramentas de depuração {#debugging-tools}
 
-O AEM fornece várias ferramentas para depurar e testar pastas da biblioteca do cliente.
+AEM fornece várias ferramentas para depurar e testar pastas da biblioteca do cliente.
 
 ### Consulte Arquivos incorporados {#see-embedded-files}
 
@@ -449,6 +453,7 @@ O `dumplibs` componente inclui um seletor de teste que exibe o código-fonte ger
    * Abra o seguinte URL no navegador da Web (use um host e uma porta diferentes, conforme necessário):
 
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+
    A página padrão mostra a saída de tags sem valor para o atributo categoria.
 
 1. Para ver a saída de uma categoria, digite o valor da propriedade da biblioteca do cliente `categories` e clique em **Enviar Query**.
@@ -461,4 +466,4 @@ O serviço Gerenciador de biblioteca HTML processa `cq:ClientLibraryFolder` tags
 * Melhore o desempenho: Remova o espaço em branco e compacte as bibliotecas.
 * Melhore a legibilidade: Inclua espaços em branco e não compacte.
 
-Para obter informações sobre como configurar o serviço, consulte Gerenciador [de biblioteca HTML do](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager)AEM.
+Para obter informações sobre como configurar o serviço, consulte [AEM Gerenciador](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager)de biblioteca HTML.
