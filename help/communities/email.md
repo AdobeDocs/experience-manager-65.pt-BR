@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
+source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 3%
@@ -112,7 +112,7 @@ Esta configuração não deve ser alterada.
 
 * Verifique se **Create post from reply email** is `unchecked`.
 
-![chlimage_1-100](assets/configure-email.png)
+![configure-email-reply](assets/configure-email-reply.png)
 
 ### Configuração para Subscrição {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Para subscrições de Comunidades, é possível ativar ou desativar a capacidade
 * Selecione o ícone de edição.
 * Verifique se o **Nome** está `subscriptions-email`.
 
-   ![chlimage_1-101](assets/configure-email-subscription.png)
+   ![configure-email-subscrição](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Nome]**
 
@@ -141,7 +141,7 @@ Para subscrições de Comunidades, é possível ativar ou desativar a capacidade
 
 * **[!UICONTROL Endereço de email &quot;Responder para&quot;]**
 
-   Endereço usado como endereço de email &quot;Responder para&quot;. O padrão é `communities@adobe.com`.
+   Endereço usado como endereço de email &quot;Responder para&quot;. O padrão é `no-reply@example.com`.
 
 * **[!UICONTROL Responder ao delimitador]**
 
