@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
+source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
 workflow-type: tm+mt
-source-wordcount: '4423'
+source-wordcount: '4422'
 ht-degree: 6%
 
 ---
@@ -112,7 +112,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * A página de pesquisa e a página de resultados de pesquisa agora têm títulos mais informativos para melhor compreensão dos usuários de leitores de tela (NPR-34093).
 
-* Os leitores de tela agora anunciam as opções para excluir as tags selecionadas na guia [!UICONTROL Básico] dos botões de propriedades do ativo para excluir as tags selecionadas (NPR-33972).
+* Os leitores de tela agora anunciam as opções para excluir as tags selecionadas na guia [!UICONTROL Básico] dos botões [!UICONTROL Propriedades] do ativo para excluir as tags selecionadas (NPR-33972).
 
 * Os elementos em cada linha na visualização da lista agora são anunciados corretamente como os elementos da mesma linha pelos leitores de tela (NPR-33932).
 
