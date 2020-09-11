@@ -2,10 +2,11 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guia do usuário do AEM 6.5 Communities
+user-guide-title: Guia do usuário da AEM 6.5 Communities
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 7%
@@ -18,10 +19,10 @@ ht-degree: 7%
 + [Visão geral do Guia do usuário das Comunidades](home.md)
 + Introduction to AEM Communities {#introduction}
    + [Sites de comunidades](administer-landing.md)
-   + [Visão geral dos AEM Communities](overview.md)
+   + [Visão geral do AEM Communities](overview.md)
    + [Notas de versão do AEM Communities](/help/release-notes/communities-release-notes.md)
    + [Introdução ao AEM Communities](getting-started.md)
-   + [Introdução a AEM Communities para ativação](getting-started-enablement.md)
+   + [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
    + [Configuração inicial](setup.md)
    + [Criar um novo site da comunidade](create-site.md)
    + [Experimente o site publicado](published-site.md)
@@ -34,12 +35,12 @@ ht-degree: 7%
    + [Implantação de comunidades](deploy-communities.md)
    + [Atualização para o AEM 6.5 Communities](upgrade.md)
    + [Topologias recomendadas para comunidades](topologies.md)
-   + [Configuração do Dispatcher for Communities](dispatcher.md)
+   + [Configuração do Dispatcher para Comunidades](dispatcher.md)
 + Administração {#administer}
-   + [Serviço de Gerenciamento de Usuário e UGC em AEM Communities](user-ugc-management-service.md)
+   + [Serviço de gerenciamento de usuário e UGC no AEM Communities](user-ugc-management-service.md)
    + [Sites de comunidades](administer-landing.md)
    + [Consoles de comunidades](consoles.md)
-   + [Recursos da configuração Analytics para comunidades](analytics.md)
+   + [Configuração do Analytics para recursos de comunidades](analytics.md)
    + [Configuração dos recursos de ativação](enablement.md)
    + [Configuração de mensagens](messaging.md)
    + [Moderação do conteúdo da comunidade](moderate-ugc.md)
@@ -66,7 +67,7 @@ ht-degree: 7%
    + [FFmpeg para Comunidades](ffmpeg.md)
    + [Moderação no contexto](in-context.md)
    + [Pontuação avançada e símbolos](advanced.md)
-   + [ASRP - Provedor de Recursos de Armazenamento da Adobe](asrp.md)
+   + [ASRP - Provedor de Recursos de Armazenamento de Adobe](asrp.md)
    + [MSRP - Provedor de recursos do Armazenamento MongoDB](msrp.md)
    + [Como configurar o MongoDB para demonstração](demo-mongo.md)
    + [DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional](dsrp.md)
@@ -89,9 +90,9 @@ ht-degree: 7%
    + [Personalização do servidor](server-customize.md)
    + [Personalização do cliente](client-customize.md)
    + [Auxiliares de barras de mão SCF](handlebars-helpers.md)
-   + [Visão geral do provedor de recursos do Armazenamento](srp.md)
+   + [Visão geral do provedor de recursos do armazenamento](srp.md)
    + [Princípios básicos do site da comunidade](sites-for-developers.md)
-   + [Princípios básicos de fluxo de Atividade](essentials-activities.md)
+   + [Princípios básicos de fluxo de atividade](essentials-activities.md)
    + [Essenciais de atribuições](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
    + [Essenciais do calendário](calendar-basics-for-developers.md)
@@ -142,7 +143,7 @@ ht-degree: 7%
 + Criação {#authoring}
    + [Componentes das comunidades](author-communities.md) 
    + [Componentes básicos das comunidades](basics.md)
-   + [Recurso de fluxos de Atividade](activities.md)
+   + [Recurso de fluxos de atividade](activities.md)
    + [Recurso Atribuições](assignments.md)
    + [Recurso do blog](blog-feature.md)
    + [Recurso de calendário](calendar.md)
@@ -161,7 +162,7 @@ ht-degree: 7%
    + [Usando o Resumo de Revisões e Revisões (Exibição)](reviews.md)
    + [Recurso de pesquisa](search.md)
    + [Uso do gráfico social](socialgraph.md)
-   + [Tendências de Atividade](trends.md)
+   + [Tendências de atividade](trends.md)
    + [Uso da Nuvem de tags sociais](tagcloud.md)
    + [Uso da votação](voting.md)
    + [Criar uma página de amostra](create-sample-page.md)
