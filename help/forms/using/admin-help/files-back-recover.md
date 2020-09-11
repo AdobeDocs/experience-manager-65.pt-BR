@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Uma configuração simples da Solução de gerenciamento de correspondência inc
 
 o Gerenciador de formulários simplifica o processo de atualização, gerenciamento e aposentadoria de formulários.
 
-### Área de trabalho do AEM Forms {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
 O AEM Forms Workspace corresponde aos recursos do Flex Workspace (obsoleto para formulários AEM no JEE) e adiciona novos recursos para estender e integrar o Workspace e torná-lo mais fácil de usar.
 
@@ -142,7 +142,7 @@ Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco
 >O modo de log binário padrão para MySQL é &quot;Instrução&quot;, o que é incompatível com tabelas usadas pelo Content Services (obsoleto). O uso do logon binário nesse modo padrão faz com que o Content Services (obsoleto) falhe. Se o seu sistema incluir o Content Services (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao file:* my.ini
 `binlog_format=mixed log-bin=logname`
 
-Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, certifique-se de start do servidor com a opção - conforme descrito na seção anterior `log-bin` . Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. É possível forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` comando, que cria o próximo arquivo de log.
+Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, verifique se você start o servidor com a opção - conforme descrito na seção anterior `log-bin` . Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. É possível forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` comando, que cria o próximo arquivo de log.
 
 Consulte Resumo [da estratégia de](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html)backup.
 
