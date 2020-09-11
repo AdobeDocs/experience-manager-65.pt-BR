@@ -4,9 +4,10 @@ product: adobe experience manager
 sub-product: formulários
 audience: end-user
 user-guide-title: Guia do usuário do Forms AEM 6.5
+breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '3700'
 ht-degree: 2%
@@ -26,13 +27,13 @@ ht-degree: 2%
    + [Introdução às Comunicações Interativas](using/interactive-communications-overview.md)
    + [Introdução ao gerenciamento de formulários](using/introduction-managing-forms.md)
    + [Introdução ao serviço de conversão automática de formulários](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
-   + Tutorial: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
+   + formulário: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
       + [Tutorial: Criar seu primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
-      + [Tutorial: Criar um formulário adaptável](using/create-adaptive-form.md)
-      + [formulário: Criar modelo de dados de formulário](using/create-form-data-model.md)
+      + [formulário: Criar um formulário adaptável](using/create-adaptive-form.md)
+      + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model.md)
       + [Tutorial: Aplicar regras a campos de formulário adaptáveis l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo do formulário adaptável](using/style-your-adaptive-form.md)
-      + [formulário: Publicar seu formulário adaptativo](/help/forms/using/publish-your-adaptive-form.md)
+      + [Tutorial: Publicar seu formulário adaptativo](/help/forms/using/publish-your-adaptive-form.md)
       + [Tutorial: Teste do formulário adaptável](/help/forms/using/testing-your-adaptive-form.md)
    + Tutorial: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
       + [Tutorial: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
@@ -317,7 +318,7 @@ ht-degree: 2%
    + [Adicionar propriedades personalizadas aos ativos do Gerenciamento de correspondência](using/add-custom-properties-cm-assets.md)
    + [Personalizar a criação da interface de usuário de correspondência](using/customize-create-correspondence-ui.md)
    + [Personalizar editor de texto](using/customize-text-editor.md)
-   + [Gerenciamento de correspondência: Solução de problemas](using/cm-troubleshooting.md)
+   + [Gerenciamento de correspondência: DPS](using/cm-troubleshooting.md)
    + [APIs para acessar instâncias de carta](using/cm-apis-to-access-letter-instances.md)
    + [Integração da criação da interface de usuário de correspondência com o portal personalizado](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [Personalizar caracteres especiais no Gerenciamento de correspondência](using/custom-special-characters.md)
@@ -399,7 +400,7 @@ ht-degree: 2%
    + [Registrar uma transação para implementações personalizadas](using/record-transaction-custom-implementation.md)
 + Ajuda do administrador para AEM Forms no JEE {#administrator-help}
    + Introdução {#get-started}
-      + [Administrador geral do AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
+      + [Configurações gerais do AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Atualizar o tipo de licença para a implantação](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Configurar e gerenciar domínios {#setup-manage-domains}
       + [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md)
@@ -545,7 +546,7 @@ ht-degree: 2%
       + [Banco de dados do Microsoft SQL Server: Ajuste da configuração](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
       + [Dicas para minimizar o crescimento do banco de dados](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
    + Manutenção do servidor de aplicativos {#manage-application-server}
-      + [Considerar sites do servidor](/help/forms/using/admin-help/application-server-websites.md)
+      + [Sites do servidor de aplicativos](/help/forms/using/admin-help/application-server-websites.md)
       + [Diretório global do armazenamento do documento](/help/forms/using/admin-help/global-document-storage-directory.md)
       + [Considerações ao executar o AdministrationConsole](/help/forms/using/admin-help/considerations-running-administration-console.md)
       + [Aprimorando o desempenho do servidor de aplicativos](/help/forms/using/admin-help/enhancing-application-server-performance.md)
