@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guia do usuário para desenvolvimento do AEM 6.5
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '820'
 ht-degree: 11%
 
 ---
@@ -18,16 +18,16 @@ ht-degree: 11%
 + [Visão geral do Guia do usuário de desenvolvimento](home.md)
 + Introdução para desenvolvedores{#introduction}
    + [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](getting-started.md)
-   + [Conceitos principais do AEM](the-basics.md)
-   + [Estrutura da interface habilitada para toque do AEM](touch-ui-structure.md)
-   + [Conceitos da interface habilitada para toque do AEM](touch-ui-concepts.md)
-   + [Desenvolvimento do AEM - Diretrizes e práticas recomendadas](dev-guidelines-bestpractices.md)
+   + [Conceitos principais AEM](the-basics.md)
+   + [Estrutura da interface habilitada para toque AEM](touch-ui-structure.md)
+   + [Conceitos da interface de usuário habilitada para toque AEM](touch-ui-concepts.md)
+   + [Desenvolvimento de AEM - diretrizes e práticas recomendadas](dev-guidelines-bestpractices.md)
    + [Usando bibliotecas do lado do cliente](clientlibs.md)
    + [Desenvolvendo e comparação de páginas](pagediff.md)
    + [Limitações do editor](editor-limitations.md)
    + [Quadro de proteção do QREF](csrf-protection.md)
    + [Modelagem de dados - Modelo de David Nuescheler](model-data.md)
-   + [Contribuir para o AEM](contributing-to-cq.md)
+   + [Contribuição para AEM](contributing-to-cq.md)
    + [Segurança](security.md)
    + [Materiais de referência](reference-materials.md)
    + [Criar um site de recursos completos (interface clássica)](website.md)
@@ -43,17 +43,17 @@ ht-degree: 11%
       + [Modelos de página - Estáticos](page-templates-static.md)
       + [Modelos de fragmento de conteúdo](content-fragment-templates.md)
       + [Renderização de modelo adaptável](templates-adaptive-rendering.md)
-   + [Uso da fusão de recursos Sling no AEM](sling-resource-merger.md)
+   + [Utilização da fusão de recursos Sling em AEM](sling-resource-merger.md)
    + [Sobreposições](overlays.md)
    + [Convenções de nomenclatura](naming-conventions.md)
    + [Criando um novo componente de campo da interface do usuário do Granite](granite-ui-component.md)
    + Query Builder{#query-builder}
       + [Implementação de um Avaliador de Predicado Personalizado para o Construtor de Query](implementing-custom-predicate-evaluator.md)
-      + [Referência de previsão do Construtor de Query](querybuilder-predicate-reference.md)
-      + [API do Construtor de Query](querybuilder-api.md)
+      + [Referência de previsão do Construtor de query](querybuilder-predicate-reference.md)
+      + [API do Construtor de query](querybuilder-api.md)
    + Marcação com tags{#tagging}
       + [Marcação com tags](tags.md)
-      + [Estrutura de marcação do AEM](framework.md)
+      + [Estrutura de marcação AEM](framework.md)
       + [Criação de tags em um aplicativo AEM](building.md)
    + [Personalização de páginas mostradas pelo manipulador de erros](customizing-errorhandler-pages.md)
    + [Tipos de nó personalizados](custom-nodetypes.md)
@@ -69,14 +69,14 @@ ht-degree: 11%
    + eCommerce{#ecommerce}
       + [eCommerce](ecommerce.md)
       + [Desenvolvimento (genérico)](generic.md)
-      + [Desenvolvimento com a SAP Commerce Cloud](sap-commerce-cloud.md)
+      + [Desenvolvimento com o SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componentes{#components}
-   + [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
+   + [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
    + [Sistema de estilos](/help/sites-authoring/style-system.md)
    + [Visão geral dos componentes](components.md)
-   + [Componentes do AEM - Noções básicas](components-basics.md)
-   + [Desenvolvimento de componentes do AEM](developing-components.md)
-   + [Desenvolvimento de componentes do AEM - Exemplos de código](developing-components-samples.md)
+   + [Componentes AEM - Noções básicas](components-basics.md)
+   + [Desenvolvimento de componentes AEM](developing-components.md)
+   + [Desenvolvimento de componentes AEM - exemplos de código](developing-components-samples.md)
    + [Exportador JSON para serviços de conteúdo](json-exporter.md)
    + [Ativando a exportação JSON para um componente](json-exporter-components.md)
    + [Editor de imagem ](image-editor.md)
@@ -87,18 +87,18 @@ ht-degree: 11%
    + [Testando sua interface de usuário](hobbes.md)
    + [Componentes para fragmentos de conteúdo](components-content-fragments.md)
    + [Obter informações da página no formato JSON](pageinfo.md)
-   + Internacionalização{#internationalization}
+   + internacionalização{#internationalization}
       + [Internacionalização de componentes](i18n.md)
       + [Internacionalização de strings de interface](i18n-dev.md)
       + [Uso do tradutor para gerenciar dicionários](i18n-translator.md)
       + [Extração de strings para tradução](i18n-extract.md)
    + Componentes da interface clássica{#classic-ui-components}
-      + [Desenvolvimento de componentes do AEM (interface clássica)](developing-components-classic.md)
+      + [Desenvolvimento de componentes AEM (IU clássica)](developing-components-classic.md)
       + [Uso e extensão de widgets (interface clássica)](widgets.md)
       + [Uso de xtypes (interface clássica)](xtypes.md)
-      + [Desenvolvimento de formulários (Interface clássica)](developing-forms.md)
+      + [Desenvolvimento do Forms (interface clássica)](developing-forms.md)
 + Gerenciamento de experiência headless{#headless}
-   + [Sem cabeçalho e híbrido com o AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Sem cabeça e Híbrido com AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Ativando a exportação JSON para um componente](json-exporter-components.md)
    + Aplicativos de página única{#spas}
       + [Introdução ao SPA e Walkthrough](spa-walkthrough.md)
@@ -108,32 +108,32 @@ ht-degree: 11%
       + [Implementação de um componente de reação para SPA](spa-implementing-react-component.md)
       + [SPA Deep Dives](spa-deep-dives.md)
       + [Visão geral do editor SPA](spa-overview.md)
-      + [Desenvolver SPAs para o AEM](spa-architecture.md)
+      + [Desenvolvimento de SPAs para AEM](spa-architecture.md)
       + [Blueprint do SPA](spa-blueprint.md)
       + [Componente de página do SPA](spa-page-component.md)
       + [Modelo dinâmico para mapeamento de componentes para SPAs](spa-dynamic-model-to-component-mapping.md)
       + [Roteamento de modelo SPA](spa-routing.md)
-      + [Integração de SPA e inicialização de Adobe Experience Platform](spa-launch.md)
+      + [Integração de SPA e Adobe Experience Platform Launch](spa-launch.md)
       + [Renderização do SPA e do servidor](spa-ssr.md)
-      + [Referências da API Javascript do SPA](spa-reference-materials.md)
+      + [Materiais de referência SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
    + [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)
-   + [Noções básicas sobre fragmentos de conteúdo e serviços de conteúdo no AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+   + [Como entender os fragmentos de conteúdo e os serviços de conteúdo no AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Ferramentas de desenvolvimento{#devtools}
    + [Ferramentas de desenvolvimento](dev-tools.md)
    + [Ferramentas de Modernização do AEM](modernization-tools.md)
    + [Editor de diálogo](dialog-editor.md)
    + [Ferramenta de conversão de diálogo](dialog-conversion.md)
-   + [Desenvolver com o CRXDE Lite](developing-with-crxde-lite.md)
+   + [Desenvolvimento com CRXDE Lite](developing-with-crxde-lite.md)
    + [Gerenciamento De Pacotes Usando O Maven](vlt-mavenplugin.md)
-   + [Como desenvolver projetos do AEM usando o Eclipse](howto-projects-eclipse.md)
-   + [Como criar projetos do AEM usando o Apache Maven](ht-projects-maven.md)
-   + [Como desenvolver projetos do AEM usando o IntelliJ IDEA](ht-intellij.md)
+   + [Como desenvolver projetos AEM usando o Eclipse](howto-projects-eclipse.md)
+   + [Como criar projetos AEM usando o Apache Maven](ht-projects-maven.md)
+   + [Como desenvolver projetos AEM usando o IntelliJ IDEA](ht-intellij.md)
    + [Como usar a ferramenta VLT](ht-vlttool.md)
    + [Como usar a ferramenta Servidor proxy](ht-proxy-server.md)
-   + [Extensão de colchetes AEM](aem-brackets.md)
-   + [Ferramentas de desenvolvedor do AEM para Eclipse](aem-eclipse.md)
+   + [Extensão dos colchetes AEM](aem-brackets.md)
+   + [Ferramentas de desenvolvedor AEM para Eclipse](aem-eclipse.md)
    + [Ferramenta AEM Repo](aem-repo-tool.md)
 + Personalização{#personlization}
    + [ContextHub](contexthub.md)
@@ -147,7 +147,7 @@ ht-degree: 11%
    + ClientContext{#client-context}
       + [Contexto do cliente em detalhes](client-context.md)
       + [API JavaScript de contexto do cliente](ccjsapi.md)
-+ Extensão do AEM{#extending-aem}
++ Extensão de AEM{#extending-aem}
    + [Personalização da criação de página](customizing-page-authoring-touch.md)
    + [Personalização dos consoles](customizing-consoles-touch.md)
    + [Personalização de Visualizações de propriedades da página](page-properties-views.md)
@@ -165,18 +165,18 @@ ht-degree: 11%
       + [Referência do processo de fluxo de trabalho](workflows-process-ref.md)
       + [Variáveis em workflows AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Extensão do Gerenciador de vários sites](extending-msm.md)
-   + Rastreamento e Analytics{#extending-analytics}
+   + Rastreamento e análise{#extending-analytics}
       + [Extensão do rastreamento de Eventos](extending-analytics.md)
-      + [Adicionar rastreamento do Adobe Analytics aos componentes](extending-analytics-components.md)
-      + [Personalização do Adobe Analytics Framework](extending-analytics-framework.md)
-      + [Implementação de nomenclatura de página do lado do servidor para Analytics](extending-analytics-pa-naming.md)
+      + [Adicionar rastreamento Adobe Analytics aos componentes](extending-analytics-components.md)
+      + [Personalização da Adobe Analytics Framework](extending-analytics-framework.md)
+      + [Implementação de nomenclatura de página do lado do servidor para o Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
       + [Configurações do Cloud Service](extending-cloud-config.md)
       + [Criação de um Cloud Service personalizado](extending-cloud-config-custom-cloud.md)
    + [Criação de extensões personalizadas](extending-campaign-extensions.md)
    + Forms{#extending-forms}
       + [Criação de mapeamentos de formulário personalizados](extending-campaign-form-mapping.md)
-      + [Criação de modelo de página AEM personalizado com componentes de formulário Adobe Campaign](extending-campaign-custom-template.md)
+      + [Criando modelo de página AEM personalizado com componentes de formulário Adobe Campaign](extending-campaign-custom-template.md)
       + [Script de Análise de solicitação](analyze-request.md)
    + [Integração de serviços com o console JMX](jmx-integration.md)
    + [Desenvolver o Editor em massa](dev-bulk-editor.md)
@@ -197,9 +197,9 @@ ht-degree: 11%
    + [Listas de verificação](checklists.md)
    + [Dia difícil](tough-day.md)
    + [Testando sua interface de usuário](hobbes.md)
-+ Práticas recomendadas   {#bestpractices}
++ Práticas recomendadas    {#bestpractices}
    + [Visão geral das práticas recomendadas](best-practices.md)
-   + [Diretrizes e práticas recomendadas para o desenvolvimento do AEM](dev-guidelines-bestpractices.md)
+   + [Diretrizes de desenvolvimento de AEM e práticas recomendadas](dev-guidelines-bestpractices.md)
    + [Práticas recomendadas de desenvolvimento](development-practices.md)
    + [Arquitetura de conteúdo](content-architecture.md)
    + [Arquitetura de software](software-architecture.md)
