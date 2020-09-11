@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -48,7 +48,7 @@ Usando o CRXDE Lite:
 
 ### Scripts de cabeça e corpo {#head-and-body-scripts}
 
-1. No painel do **CRXDE Lite** Explorer, navegue até `/apps/an-scf-sandbox/components/playpage` e clique com o duplo no arquivo `playpage.jsp` para abri-lo no painel de edição.
+1. No painel do **CRXDE Lite** explorer, navegue até `/apps/an-scf-sandbox/components/playpage` o arquivo e clique com o duplo no arquivo `playpage.jsp` para abri-lo no painel de edição.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
