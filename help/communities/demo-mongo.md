@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Essa configuração é adequada para ambientes de *não produção* , como para 
    * O caminho do diretório de dados definido será conhecido como &lt;mongo-dbpath>.
 
 
-* O MongoDB pode ser executado no mesmo host do AEM ou pode ser executado remotamente.
+* O MongoDB pode ser executado no mesmo host que AEM ou ser executado remotamente.
 
 ### Start MongoDB {#start-mongodb}
 
@@ -72,7 +72,7 @@ Isso start um servidor MongoDB usando a porta padrão 27017.
 
 >[!NOTE]
 >
->Se o MongoDB for iniciado *após* o AEM, **reinicie** todas as instâncias do **AEM** para que elas se conectem corretamente ao MongoDB.
+>Se o MongoDB for iniciado *após* AEM, **reinicie** todas as instâncias **AEM** para que elas se conectem corretamente ao MongoDB.
 
 
 ### Opção de produção de demonstração: Configurar Conjunto de Réplicas MongoDB {#demo-production-option-setup-mongodb-replica-set}
@@ -100,7 +100,7 @@ Os comandos a seguir são um exemplo de como configurar um conjunto de réplicas
 * Baixe o Solr do [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Adequado para qualquer SO.
-   * Use a versão 4.10 ou 5.
+   * Versão 7.0 do Solr.
    * A Solr requer Java 1.7 ou superior.
 
 * Configuração básica
@@ -109,7 +109,7 @@ Os comandos a seguir são um exemplo de como configurar um conjunto de réplicas
    * Nenhum serviço é necessário.
    * A pasta Solr instalada será chamada de &lt;solr-install>.
 
-### Configurar Solr para AEM Communities {#configure-solr-for-aem-communities}
+### Configure o Solr para AEM Communities {#configure-solr-for-aem-communities}
 
 Para configurar uma coleção Solr para MSRP para demonstração, há duas decisões a serem tomadas (selecione os links para a documentação principal para obter detalhes):
 
@@ -143,9 +143,9 @@ Para executar uma configuração muito básica (e não de produção) da solrClo
 
 ## Identificar MongoDB como armazenamento comum {#identify-mongodb-as-common-store}
 
-Inicie o autor e publique as instâncias do AEM, se necessário.
+Inicie o autor e publique AEM instâncias, se necessário.
 
-Se o AEM estava sendo executado antes do MongoDB ser iniciado, as instâncias do AEM precisarão ser reiniciadas.
+Se AEM estava sendo executado antes do MongoDB ser iniciado, as instâncias AEM precisarão ser reiniciadas.
 
 Siga as instruções na página principal da documentação: [MSRP - Loja comum MongoDB](msrp.md)
 
@@ -157,7 +157,7 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 1. Faça logon para postar um comentário:
 1. Digite o texto na caixa de entrada de texto do comentário e clique em **[!UICONTROL Postar]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![chlimage_1-111](assets/chlimage_1-191.png)
 
 1. Basta visualização o comentário na instância [do](http://localhost:4502/content/community-components/en/comments.html) autor (provavelmente ainda conectado como admin / admin).
 
@@ -178,7 +178,7 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 ### Nenhum UGC é exibido {#no-ugc-appears}
 
@@ -186,9 +186,9 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 
 1. Verifique se o MSRP foi configurado para ser o provedor padrão:
 
-   * Em todas as instâncias do autor e publicação do AEM, reveja o console Configuração do [Armazenamento](srp-config.md)
+   * Em todas as instâncias de autor e publicação AEM, revisite o console Configuração do [Armazenamento](srp-config.md)
 
-   Ou verifique o repositório do AEM:
+   Ou verifique o repositório AEM:
 
    * No JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -196,4 +196,4 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
    * Se o nó srpc existir e contiver a configuração [padrão](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)do nó, as propriedades da configuração padrão deverão definir o MSRP como o provedor padrão
 
 
-1. Verifique se o AEM foi reiniciado após a seleção do MSRP.
+1. Verifique se AEM foi reiniciado após a seleção do MSRP.
