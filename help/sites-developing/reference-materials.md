@@ -1,8 +1,8 @@
 ---
 title: Guias da API
 seo-title: Guias da API
-description: Documentação para as APIs que o AEM fornece para o desenvolvimento de aplicativos
-seo-description: Documentação para as APIs que o AEM fornece para o desenvolvimento de aplicativos
+description: Documentação das APIs que AEM fornecem para o desenvolvimento de aplicativos
+seo-description: Documentação das APIs que AEM fornecem para o desenvolvimento de aplicativos
 uuid: d998b23c-5b0a-462f-a733-02cf979de2d0
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -12,14 +12,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b1cbb6fd42c78c068846243734798e658aa28d59
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
 
-# Guias da API{#api-guides}
+# Guias da API {#api-guides}
 
-O Adobe Experience Manager (AEM) fornece várias APIs para desenvolver aplicativos e estender o AEM. A lista a seguir fornece a documentação das APIs compatíveis com o AEM:
+A Adobe Experience Manager (AEM) fornece várias APIs para desenvolver aplicativos e estender a AEM. A lista a seguir fornece a documentação para APIs suportadas pela AEM:
 
 * [API do Adobe AEM 6.5.0](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)
 * Diferenças de API (em breve)
@@ -29,14 +32,14 @@ O Adobe Experience Manager (AEM) fornece várias APIs para desenvolver aplicativ
 * [Referência da API JavaScript da estrutura de teste da interface do usuário](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
 * [Referência da API JavaScript principal do editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-AEM Single Page Application (SPA) Editor SDK framework JavaScript API faz referência a:
+AEM Single Page Application (SPA) Editor SDK estrutura JavaScript API referências:
 
-* [Mapeamento de componentes](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
-* [Gerenciador de modelo de página](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [Reagir componentes editáveis](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
-* [Componentes editáveis angulares](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+* [Mapeamento de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [Gerenciador de modelo de página](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [Reagir componentes editáveis](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Componentes editáveis angulares](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-APIs de entrega e gerenciamento de conteúdo do AEM:
+AEM APIs de Delivery e Gestão de conteúdo:
 
 * Componentes principais (JSON)
 
@@ -44,9 +47,9 @@ APIs de entrega e gerenciamento de conteúdo do AEM:
    * [Ativando a exportação JSON para um componente](/help/sites-developing/json-exporter-components.md)
    * Consulte a seção [Componentes no Guia](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) do Usuário para Desenvolvimento para obter mais informações
 
-* **Ativos**: A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em Ativos, incluindo binários, metadados, execuções e comentários. Consulte API HTTP dos ativos [AEM](/help/assets/mac-api-assets.md)
+* **Ativos**: A API HTTP Assets permite operações de criação-leitura-atualização-exclusão (CRUD) em Ativos, incluindo binários, metadados, execuções e comentários. Consulte API HTTP [AEM Assets](/help/assets/mac-api-assets.md)
 
-* **Fragmentos** de conteúdo (CFs): Suporte [CF em API](/help/assets/assets-api-content-fragments.md) HTTP de ativos e API de ativos [AEM - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* **Fragmentos** de conteúdo (CFs): [Suporte CF em API](/help/assets/assets-api-content-fragments.md) HTTP do Assets e API do [AEM Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 
 Os seguintes recursos externos são apenas para referência:
 
