@@ -3,9 +3,9 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags do Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 3fbf32ec0930b8e832f8bea5b466fcb6bd38fbd3
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '680'
 ht-degree: 1%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 1%
 
 # Ativar insights de ativos por meio do DTM {#enable-asset-insights-through-dtm}
 
-O Gerenciamento dinâmico de tags do Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. Ele é fornecido gratuitamente aos clientes da Adobe Analytics.
+O Gerenciamento dinâmico de tags do Adobe é uma ferramenta que ativa suas ferramentas de marketing digital. Ele é fornecido gratuitamente aos clientes da Adobe Analytics. Você pode personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights ou usar o DTM para inserir tags do Asset Insights. Os insights só são suportados e fornecidos para imagens.
 
-Embora você possa personalizar seu código de rastreamento para permitir que soluções de CMS de terceiros usem o Asset Insights, o Adobe recomenda que você use o DTM para inserir tags do Asset Insights.
-
->[!NOTE]
+>[!CAUTION]
 >
->Os insights só são suportados e fornecidos para imagens.
+>O Adobe DTM foi preterido a favor da Adobe Experience Platform Launch e logo chegará ao [fim da vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda [usar o Launch para obter insights](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de ativos.
 
 Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
@@ -33,7 +31,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
    * Selecione a guia Propriedades **[!UICONTROL da]** Web e clique em **[!UICONTROL Adicionar propriedade]**.
 
-   * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://docs.adobe.com/content/help/br/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Criar propriedade da Web de edição](assets/Create-edit-web-property.png)
 
