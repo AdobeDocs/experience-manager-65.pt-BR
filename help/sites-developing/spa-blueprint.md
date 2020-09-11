@@ -1,8 +1,8 @@
 ---
 title: Blueprint do SPA
 seo-title: Blueprint do SPA
-description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura do SPA deve cumprir para implementar componentes editáveis do SPA no AEM.
-seo-description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura do SPA deve cumprir para implementar componentes editáveis do SPA no AEM.
+description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
+seo-description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura de SPA deve cumprir para implementar componentes de SPA editáveis dentro do AEM.
 uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
 workflow-type: tm+mt
 source-wordcount: '2112'
 ht-degree: 0%
@@ -28,27 +28,27 @@ Para permitir que o autor use o Editor SPA AEM para editar o conteúdo de um SPA
 
 ## Introdução {#introduction}
 
-Este documento descreve o contrato geral que qualquer estrutura SPA deve cumprir (ou seja, o tipo de camada de suporte do AEM) para implementar componentes SPA editáveis no AEM.
+Este documento descreve o contrato geral que qualquer estrutura SPA deve cumprir (isto é, o tipo de camada de suporte AEM) para implementar componentes SPA editáveis dentro da AEM.
 
 >[!NOTE]
 >
 >Os seguintes requisitos são independentes da estrutura. Se esses requisitos forem cumpridos, poderá ser fornecida uma camada específica da estrutura composta por módulos, componentes e serviços.
 >
->**Esses requisitos já são atendidos para estruturas React e Angular no AEM.** Os requisitos neste plano só são relevantes se você quiser implementar outra estrutura para uso com o AEM.
+>**Estes requisitos já são cumpridos para os quadros React e Angular em AEM.** Os requisitos neste plano só são relevantes se você quiser implementar outra estrutura para uso com o AEM.
 
 >[!CAUTION]
 >
->Embora os recursos de SPA do AEM sejam independentes de estrutura, atualmente, somente os frameworks React e Angular são suportados.
+>Embora os recursos de SPA do AEM sejam independentes da estrutura, atualmente, apenas os frameworks React e Angular são suportados.
 
-Para permitir que o autor use o editor de página do AEM para editar os dados expostos por uma estrutura de aplicativo de página única, um projeto deve ser capaz de interpretar a estrutura do modelo que representa a semântica dos dados armazenados para um aplicativo no repositório do AEM. Para atingir esse objetivo, são fornecidas duas bibliotecas agnósticas de estrutura: o `PageModelManager` e o `ComponentMapping`.
+Para permitir que o autor use o Editor de páginas AEM para editar os dados expostos por uma estrutura de aplicativo de página única, um projeto deve ser capaz de interpretar a estrutura do modelo que representa a semântica dos dados armazenados para um aplicativo no repositório AEM. Para atingir esse objetivo, são fornecidas duas bibliotecas agnósticas de estrutura: o `PageModelManager` e o `ComponentMapping`.
 
 ### PageModelManager {#pagemodelmanager}
 
-A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por um projeto SPA. Ele acompanha o SPA e serve como um gerenciador de modelo de dados.
+A `PageModelManager` biblioteca é fornecida como um pacote NPM a ser usado por um projeto SPA. Ele acompanha o SPA e atua como um gerenciador de modelo de dados.
 
 Em nome da ZPE, abstrai a recuperação e a gestão da estrutura JSON que representa a estrutura real do conteúdo. Também é responsável por sincronizar com o SPA para informá-lo quando ele precisa renderizar novamente seus componentes.
 
-Consulte o pacote NPM [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+Consulte o pacote NPM [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Ao inicializar o aplicativo, `PageModelManager`a biblioteca primeiro carrega o modelo raiz fornecido do aplicativo (por meio de parâmetro, meta propriedade ou URL atual). Se a biblioteca identificar que o modelo da página atual não faz parte do modelo raiz, ele o busca e o inclui como o modelo de uma página secundária.
 
@@ -56,13 +56,13 @@ Ao inicializar o aplicativo, `PageModelManager`a biblioteca primeiro carrega o m
 
 ### ComponentMapping {#componentmapping}
 
-O `ComponentMapping` módulo é fornecido como um pacote NPM para o projeto front-end. Ele armazena componentes de front-end e fornece uma maneira para o SPA mapear componentes de front-end para tipos de recursos do AEM. Isso permite uma resolução dinâmica de componentes ao analisar o modelo JSON do aplicativo.
+O `ComponentMapping` módulo é fornecido como um pacote NPM para o projeto front-end. Ele armazena componentes de front-end e fornece uma maneira para o SPA mapear componentes de front-end para tipos de recursos AEM. Isso permite uma resolução dinâmica de componentes ao analisar o modelo JSON do aplicativo.
 
 Cada item presente no modelo contém um `:type` campo que expõe um tipo de recurso AEM. Quando montado, o componente front-end pode se renderizar usando o fragmento do modelo recebido das bibliotecas subjacentes.
 
 #### Modelo dinâmico para mapeamento de componentes {#dynamic-model-to-component-mapping}
 
-Para obter detalhes sobre como o modelo dinâmico para mapeamento de componentes ocorre no Javascript SPA SDK para AEM, consulte o artigo [Dynamic Model to Component Mapping for SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Para obter detalhes sobre como o modelo dinâmico para mapeamento de componentes ocorre no SDK do Javascript SPA para AEM, consulte o artigo Modelo [dinâmico para mapeamento de componentes para SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Camada específica da estrutura {#framework-specific-layer}
 
@@ -74,7 +74,7 @@ O restante deste documento descreve os requisitos desta camada específica do qu
 
 ### Modelo de página {#page-model}
 
-A estrutura de conteúdo da página é armazenada no AEM. O modelo da página é usado para mapear e instanciar componentes do SPA. Os desenvolvedores do SPA criam componentes do SPA que mapeiam para componentes do AEM. Para fazer isso, eles usam o tipo de recurso (ou caminho para o componente AEM) como uma chave exclusiva.
+A estrutura de conteúdo da página é armazenada em AEM. O modelo da página é usado para mapear e instanciar componentes do SPA. Os desenvolvedores do SPA criam componentes do SPA que mapeiam para AEM componentes. Para fazer isso, eles usam o tipo de recurso (ou caminho para o componente AEM) como uma chave exclusiva.
 
 Os componentes do SPA devem estar em sincronia com o modelo de página e ser atualizados com quaisquer alterações em seu conteúdo de acordo. Um padrão que potencialize componentes dinâmicos deve ser usado para instanciar componentes dinamicamente após a estrutura do modelo de página fornecida.
 
@@ -87,25 +87,25 @@ O modelo de página aproveita o Exportador do Modelo JSON, que é baseado na API
 * `:hierarchyType`: Tipo hierárquico de um recurso. O `PageModelManager` atualmente suporta o tipo de página
 
 * `:items`: Recursos de conteúdo filho do recurso atual (estrutura aninhada, presente apenas em container)
-* `:itemsOrder`: lista ordenada das crianças. O objeto de mapa JSON não garante a ordem de seus campos. Com o mapa e o array atual, o consumidor da API tem os benefícios de ambas as estruturas
+* `:itemsOrder`: Lista ordenada das crianças. O objeto de mapa JSON não garante a ordem de seus campos. Com o mapa e o array atual, o consumidor da API tem os benefícios de ambas as estruturas
 * `:path`: Caminho do conteúdo de um item (presente em itens que representam uma página)
 
-Consulte também [Introdução aos serviços de conteúdo do AEM.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
+Consulte também [Introdução ao AEM Content Services.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
 
 ### Módulo específico da estrutura {#framework-specific-module}
 
 A separação de preocupações ajuda a facilitar a implementação do projeto. Por conseguinte, deve ser fornecido um pacote específico para as npm. Este pacote é responsável por agregar e expor os módulos, serviços e componentes básicos. Esses componentes devem encapsular a lógica de gerenciamento do modelo de dados e fornecer acesso aos dados que o componente do projeto espera. O módulo também é responsável por expor transitoriamente pontos de entrada úteis das bibliotecas subjacentes.
 
-Para facilitar a interoperabilidade das bibliotecas, a Adobe aconselha o módulo específico da estrutura a agrupar as seguintes bibliotecas. Se necessário, a camada pode encapsular e adaptar as APIs subjacentes antes de expô-las ao projeto.
+Para facilitar a interoperabilidade das bibliotecas, o Adobe aconselha o módulo específico da estrutura a agrupar as seguintes bibliotecas. Se necessário, a camada pode encapsular e adaptar as APIs subjacentes antes de expô-las ao projeto.
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Implementações {#implementations}
 
 #### Reagir {#react}
 
-módulo npm: [@adobe/cq-response-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+módulo npm: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Angular {#angular}
 
@@ -161,14 +161,14 @@ O `Page` componente estende o `Container` componente. Um container é um compone
 
 O componente Grade responsiva é um container. Ele contém uma variante específica do Provedor de modelos que representa suas colunas. A Grade responsiva e suas colunas são responsáveis por decorar o elemento HTML externo do componente do projeto com os nomes de classe específicos contidos no modelo.
 
-O componente de Grade responsiva deve vir pré-mapeado para sua contraparte do AEM, pois esse componente é complexo e raramente personalizado.
+O componente de Grade responsiva deve vir pré-mapeado para sua AEM contrapartida, pois esse componente é complexo e raramente personalizado.
 
 #### Campos de modelo específicos {#specific-model-fields}
 
 * `gridClassNames:` Nomes de classe fornecidos para a grade responsiva
 * `columnClassNames:` Nomes de classe fornecidos para a coluna responsiva
 
-Consulte também o recurso npm [@adobe/cq-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+Consulte também o recurso npm [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Espaço reservado da grade responsiva {#placeholder-of-the-reponsive-grid}
 
@@ -186,6 +186,7 @@ Por exemplo:
 >
 >* `"new section"`: Indica que o elemento atual é o espaço reservado do container
 >* `"aem-Grid-newComponent"`: Normaliza o componente para a criação de layout
+
 >
 
 
@@ -245,7 +246,7 @@ Os componentes do projeto devem gerar no mínimo os seguintes atributos de dados
 
 Em resumo, para ser interpretado pelo editor de página como editável, um componente de projeto deve respeitar o seguinte contrato:
 
-* Forneça os atributos esperados para associar uma instância de componente front-end a um recurso do AEM.
+* Forneça os atributos esperados para associar uma instância de componente front-end a um recurso AEM.
 * Forneça a série esperada de atributos e nomes de classe que permitem a criação de espaços reservados vazios.
 * Forneça os nomes de classe esperados, permitindo a ação de arrastar e soltar ativos.
 
@@ -274,7 +275,7 @@ O fragmento a seguir ilustra a representação HTML típica de uma estrutura de 
 
 ## Navegação e Roteamento {#navigation-and-routing}
 
-O aplicativo é o proprietário do roteamento. Primeiro, o desenvolvedor front-end precisa implementar um componente de Navegação (mapeado para um componente de navegação do AEM). Esse componente renderizaria links de URL a serem usados em conjunto com uma série de rotas que exibirão ou ocultarão fragmentos de conteúdo.
+O aplicativo é o proprietário do roteamento. Primeiro, o desenvolvedor front-end precisa implementar um componente de Navegação (mapeado para um componente de navegação AEM). Esse componente renderizaria links de URL a serem usados em conjunto com uma série de rotas que exibirão ou ocultarão fragmentos de conteúdo.
 
 A [ biblioteca subjacente `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) e seu ` [ModelRouter](/help/sites-developing/spa-routing.md)` módulo (ativado por padrão) são responsáveis pela busca prévia e pelo acesso ao modelo associado a um determinado caminho de recurso.
 
@@ -284,11 +285,11 @@ Consulte o artigo [SPA Model Roteamento](/help/sites-developing/spa-routing.md) 
 
 ## SPA em ação {#spa-in-action}
 
-Veja como um SPA simples funciona e experimente com um SPA por conta própria, continuando com o documento [Introdução aos SPAs no AEM](/help/sites-developing/spa-getting-started-react.md).
+Veja como um simples SPA funciona e experimente com um SPA você mesmo, continuando com o documento [Introdução aos SPAs no AEM](/help/sites-developing/spa-getting-started-react.md).
 
 ## Leitura adicional {#further-reading}
 
-Para obter mais informações sobre SPAs no AEM, consulte os seguintes documentos:
+Para obter mais informações sobre SPAs em AEM, consulte os seguintes documentos:
 
 * [Visão geral](/help/sites-developing/spa-overview.md) de criação do SPA para obter uma visão geral dos SPAs no AEM e no modelo de comunicação
-* [Introdução aos SPAs no AEM](/help/sites-developing/spa-getting-started-react.md) para obter um guia sobre um SPA simples e como ele funciona
+* [Introdução aos SPAs em AEM](/help/sites-developing/spa-getting-started-react.md) para obter um guia para um SPA simples e como ele funciona
