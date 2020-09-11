@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e05502b590fb2c7c36919f94611efe999262d32
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 1%
@@ -150,7 +150,7 @@ O mecanismo AEM Communities SCORM é necessário para o recurso de [ativação](
 
 **Para instalar um pacote SCORM**
 
-1. Instale o [cq-social-scorm-package, versão 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg)do Compartilhamento de pacotes
+1. Instale o [cq-social-scorm-package, versão 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) do Compartilhamento de pacotes
 1. Baixe `/libs/social/config/scorm/database_scormengine_data.sql` da instância cq e execute-a no servidor mysql para criar um schema scormEngineDB atualizado.
 1. Adicione `/content/communities/scorm/RecordResults` a propriedade Caminhos excluídos no filtro CSRF de `https://<hostname>:<port>/system/console/configMgr` em editores.
 
