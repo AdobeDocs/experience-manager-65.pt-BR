@@ -11,16 +11,19 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 2%
 
 ---
 
 
 # Implementação de um componente de reação para SPA{#implementing-a-react-component-for-spa}
 
-Os aplicativos de página única (SPAs) podem oferta experiências interessantes para os usuários do site. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo no AEM sem problemas para um site criado usando estruturas SPA.
+Os aplicativos de página única (SPAs) podem oferta experiências interessantes para os usuários do site. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo no AEM para um site criado usando estruturas SPA.
 
-O recurso de criação do SPA oferta uma solução abrangente para suportar SPAs no AEM. Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para funcionar com o Editor SPA AEM.
+O recurso de criação do SPA oferta uma solução abrangente para suportar SPAs dentro do AEM. Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para funcionar com o Editor SPA AEM.
 
 >[!NOTE]
 >
@@ -28,16 +31,16 @@ O recurso de criação do SPA oferta uma solução abrangente para suportar SPAs
 
 ## Introdução {#introduction}
 
-Graças ao contrato simples e leve que é exigido pelo AEM e estabelecido entre o SPA e o Editor SPA, pegar um aplicativo Javascript existente e adaptá-lo para uso com um SPA no AEM é uma questão simples.
+Graças ao contrato simples e leve que é exigido pela AEM e estabelecido entre o SPA e o Editor SPA, pegar um aplicativo Javascript existente e adaptá-lo para uso com um SPA em AEM é uma questão simples.
 
 Este artigo ilustra o exemplo do componente meteorológico na amostra de Journal We.Retail SPA.
 
-Você deve estar familiarizado com a [estrutura de um aplicativo SPA para o AEM](/help/sites-developing/spa-getting-started-react.md) antes de ler este artigo.
+Você deve estar familiarizado com a [estrutura de um aplicativo SPA para AEM](/help/sites-developing/spa-getting-started-react.md) antes de ler este artigo.
 
 >[!CAUTION]
 >Este documento usa o aplicativo [do Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail apenas para fins de demonstração. Não deve ser utilizado para qualquer trabalho de projeto.
 >
->Qualquer projeto do AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA.
+>Qualquer projeto AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SDK do SPA.
 
 ## O componente de tempo {#the-weather-component}
 
@@ -51,7 +54,7 @@ Ao criar o conteúdo do SPA no Editor SPA, o componente meteorológico aparece c
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
-A cidade pode ser atualizada em uma caixa de diálogo como qualquer outro componente do AEM.
+A cidade pode ser atualizada em uma caixa de diálogo como qualquer outro componente AEM.
 
 ![screen_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
 
@@ -76,7 +79,7 @@ Revisando o código do componente meteorológico personalizado ( `Weather.js`) n
 
 * **Linhas 31-44**: O componente de Tempo estende a `Component` classe e fornece os dados necessários, conforme definido na documentação de uso do NPM para o componente de Tempo Reato Aberto e renderiza o componente.
 
-```
+```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~ Copyright 2018 Adobe Systems Incorporated
  ~
@@ -94,7 +97,7 @@ Revisando o código do componente meteorológico personalizado ( `Weather.js`) n
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 import React, {Component} from 'react';
 import ReactWeather from 'react-open-weather';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Weather.css');
 
@@ -129,4 +132,4 @@ Embora um componente de back-end já deva existir, o desenvolvedor de front-end 
 
 ## Próxima etapa {#next-step}
 
-Para obter mais informações sobre como desenvolver SPAs para o AEM, consulte o artigo [Desenvolvimento de SPAs para o AEM](/help/sites-developing/spa-architecture.md).
+Para obter mais informações sobre o desenvolvimento de SPAs para AEM, consulte o artigo [Desenvolvimento de SPAs para AEM](/help/sites-developing/spa-architecture.md).
