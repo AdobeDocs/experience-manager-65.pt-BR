@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5cf27977d3d94d39c9dfec51eb50778048f76dfd
+source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
 workflow-type: tm+mt
 source-wordcount: '2482'
 ht-degree: 2%
@@ -17,8 +17,6 @@ ht-degree: 2%
 Os service packs Adobe Experience Manager 6.5 oferecem novos recursos, melhorias solicitadas pelo cliente e melhorias de desempenho, estabilidade e segurança em intervalos trimestrais. A disponibilidade trimestral facilita o acesso e a adoção de novos recursos e inovações.
 
 Este artigo destaca os recursos incluídos no Service Pack 6.5 mais recente, os recursos [principais incluídos nos Service Packs](#key-features-previous-service-packs)6.5 anteriores e algumas das versões [principais desde a versão de Experience Manager 6.5.5.0](#key-releases-since-last-sp) .
-
->[!VIDEO](https://video.tv.adobe.com/v/39867)
 
 ## Adobe [!DNL Experience Manager] Sites {#aem-sites}
 
