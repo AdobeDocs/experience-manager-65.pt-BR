@@ -3,7 +3,7 @@ title: Relatórios sobre o uso e compartilhamento de seus ativos digitais.
 description: Relatórios sobre seus ativos [!DNL Adobe Experience Manager Assets] que ajudam você a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
+source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 10%
@@ -25,7 +25,7 @@ Quando um relatório é gerado, você é notificado por meio de um email (opcion
 
 ## Pré-requisitos {#prerequisite-for-reporting}
 
-Para gerar relatórios, verifique se:
+Para gerar relatórios, faça o seguinte:
 
 * Ative o serviço Gravador [!UICONTROL de Eventos] Day CQ DAM em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web.
 * Selecione as atividades ou eventos em que deseja relatórios. Por exemplo, para gerar um relatório sobre ativos baixados, selecione [!UICONTROL Ativo baixado (BAIXADO)].
@@ -50,7 +50,7 @@ Para gerar relatórios, verifique se:
 
 1. Na [!DNL Experience Manager] interface, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
 
-![Página Ferramentas para navegar no relatório de ativos](assets/AssetsReportNavigation.png)
+   ![Página Ferramentas para navegar no relatório de ativos](assets/AssetsReportNavigation.png)
 
 1. Na página Relatórios [!UICONTROL de] ativos, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Na página **[!UICONTROL Criar relatório]** , escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
@@ -59,11 +59,12 @@ Para gerar relatórios, verifique se:
 
    >[!NOTE]
    >
-   >Por padrão, os Fragmentos de conteúdo e compartilhamentos de link são incluídos no relatório de [!UICONTROL Download] de ativos. Selecione a opção apropriada para criar um relatório de compartilhamentos de link ou para excluir Fragmentos de conteúdo do relatório de download.
+   >Por padrão, os Fragmentos de conteúdo e compartilhamentos de link são incluídos no relatório [!UICONTROL Download] de ativos. Selecione a opção apropriada para criar um relatório de compartilhamentos de link ou para excluir Fragmentos de conteúdo do relatório de download.
 
    >[!NOTE]
    >
-   >O relatório [!UICONTROL Download] exibe detalhes somente dos ativos que são selecionados individualmente e baixados ou baixados por meio da Ação rápida. No entanto, não inclui os detalhes dos ativos que estavam dentro de uma pasta baixada.
+   >O relatório [!UICONTROL Download] exibe detalhes somente dos ativos que são baixados após a seleção individual ou que são baixados por meio da Ação rápida. No entanto, não inclui os detalhes dos ativos que estão dentro de uma pasta baixada.
+
 1. Configure detalhes do relatório, como título, descrição, miniatura e caminho da pasta no repositório CRX onde o relatório é armazenado. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente.
 
    ![Página para adicionar detalhes do relatório](assets/report_configuration.png)
@@ -94,7 +95,7 @@ Para gerar relatórios, verifique se:
 
    ![Página de detalhes do relatório Compartilhamento de links](assets/link_share.png)
 
-1. Clique em **[!UICONTROL Avançar]** na barra de ferramentas.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. Na página **[!UICONTROL Configurar colunas]** , algumas colunas são selecionadas para aparecerem no relatório por padrão. É possível selecionar mais colunas. Desmarque uma coluna selecionada para excluí-la no relatório.
 
@@ -104,7 +105,7 @@ Para gerar relatórios, verifique se:
 
    ![Selecionar ou desmarcar colunas de relatório](assets/custom_columns.png)
 
-1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
+1. Click **[!UICONTROL Create]** from the toolbar. Uma mensagem notifica que a geração de relatórios foi iniciada.
 1. Na página Relatórios [!UICONTROL de] ativos, o status de geração de relatórios se baseia no estado atual do trabalho de relatório, por exemplo, [!UICONTROL Sucesso], [!UICONTROL Falha], [!UICONTROL Enfileirado]ou [!UICONTROL Programado]. O mesmo status aparece na caixa de entrada de notificações.Para visualização na página de relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Visualização]** na barra de ferramentas.
 
    ![Um relatório gerado](assets/report_page.png)
@@ -141,7 +142,7 @@ Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
 
    Para adicionar mais colunas personalizadas, clique em **[!UICONTROL Adicionar]** e repita as etapas 5 e 6.
 
-1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatórios foi iniciada.
+1. Click **[!UICONTROL Create]** from the toolbar. Uma mensagem notifica que a geração de relatórios foi iniciada.
 
 ## Configurar o serviço de remoção {#configure-purging-service}
 
