@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
+source-git-commit: cdf22fea17f6c79e3a2b565a4c6f728bf0bbd23a
 workflow-type: tm+mt
-source-wordcount: '5878'
+source-wordcount: '5888'
 ht-degree: 5%
 
 ---
@@ -65,9 +65,7 @@ Os resultados são classificados por relevância, começando com correspondênci
 
 Para encontrar rapidamente os ativos relevantes, a interface avançada fornece mecanismos de filtragem, classificação e seleção. Você pode filtrar os resultados com base em vários critérios e ver o número de ativos pesquisados para vários filtros. Como alternativa, você pode executar novamente a pesquisa alterando o query no campo Omnisearch. Quando você altera seus termos ou filtros de pesquisa, os outros filtros permanecem aplicados para preservar o contexto da pesquisa.
 
-Quando os resultados forem muitos ativos, [!DNL Experience Manager] exibirá os primeiros 100 na visualização do cartão e 200 na visualização da lista. À medida que os usuários rolam, mais ativos são carregados. Isso é para melhorar o desempenho.
-
->[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+Quando os resultados forem muitos ativos, [!DNL Experience Manager] exibirá os primeiros 100 na visualização do cartão e 200 na visualização da lista. À medida que os usuários rolam, mais ativos são carregados. Isso é para melhorar o desempenho. Assista a uma demonstração em vídeo do [número de ativos exibidos](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
 Às vezes, você pode ver alguns ativos inesperados nos resultados da pesquisa. Para obter mais informações, consulte resultados [](#troubleshoot-unexpected-search-results-and-issues)inesperados.
 
