@@ -3,9 +3,9 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text da Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4398'
 ht-degree: 3%
 
 ---
@@ -731,7 +731,7 @@ Para configurar como os links são adicionados em AEM de outro programa, defina 
       * **Nome** `cssExternal`
       * **Tipo** `String`
       * **Valor** do nome da classe CSS (sem um &#39;.&#39; anterior; for example, `cssClass` instead of `.cssClass`)
-   * Matriz de **protocolos** válidos (incluindo `https://`, `https://`, `file://`e `mailto:` entre outros)
+   * Matriz de **protocolos** válidos. Os protocolos suportados são `http://`, `https://`, `file://`e `mailto:`.
 
       * **Nome** `protocols`
       * **Tipo** `String[]`
