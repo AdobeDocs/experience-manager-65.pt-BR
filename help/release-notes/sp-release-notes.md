@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
 workflow-type: tm+mt
-source-wordcount: '4458'
+source-wordcount: '4402'
 ht-degree: 6%
 
 ---
@@ -106,37 +106,37 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 **Aprimoramentos de acessibilidade nos ativos Experience Manager**
 
-* Os usuários agora podem acessar e focar as opções interativas da interface do usuário na lista de [!UICONTROL Referências] de ativos usando teclas de teclado (NPR-34115).
+* Usando as teclas de teclado, os usuários agora podem acessar e focar nas opções interativas da interface do usuário na lista de [!UICONTROL Referências] de ativos (NPR-34115).
 
-* O leitor de tela agora anuncia as opções no filtro de pesquisa como acordeões expansíveis (NPR-34104).
+* O leitor de tela agora anuncia a ação pretendida dos predicados na página de pesquisa (NPR-34104).
 
 * A página de pesquisa e a página de resultados de pesquisa agora têm títulos mais informativos para melhor compreensão dos usuários de leitores de tela (NPR-34093).
 
-* Os leitores de tela agora anunciam as opções para excluir as tags selecionadas na guia [!UICONTROL Básico] dos botões [!UICONTROL Propriedades] do ativo para excluir as tags selecionadas (NPR-33972).
+* Os leitores de tela agora anunciam as opções para excluir as tags selecionadas na guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] do ativo (NPR-33972).
 
-* Os elementos em cada linha na visualização da lista agora são anunciados corretamente como os elementos da mesma linha pelos leitores de tela (NPR-33932).
+* Os elementos em cada linha na visualização da lista agora são anunciados como os elementos da mesma linha pelos leitores de tela (NPR-33932).
 
-* O foco do usuário ao navegar usando a tecla Tab agora é movido corretamente para a opção Fechar na pré-visualização da versão (NPR-33863).
+* O foco do usuário ao navegar usando a `Tab` tecla agora é movido para a opção Fechar na pré-visualização da versão (NPR-33863).
 
-* O foco do usuário agora se move corretamente para o ícone de pesquisa depois que o Omnisearch é fechado (NPR-33705).
+* O foco do usuário agora se move para o ícone de pesquisa depois que o Omnisearch é fechado (NPR-33705).
 
-* As opções acionáveis da interface do usuário agora têm foco visual mais proeminente com contraste aprimorado quando focadas no uso de teclas do teclado. Portanto, os usuários de teclado com visão agora podem diferenciar as áreas focadas (NPR-33542).
+* As opções acionáveis da interface do usuário agora têm foco visual mais proeminente com contraste aprimorado quando navegadas usando teclas do teclado. Os usuários do teclado podem identificar as áreas focadas (NPR-33542).
 
-* A funcionalidade de arrastar usando o teclado agora funciona corretamente no Editor [!UICONTROL de Schemas de] Metadados no modo de navegação do leitor de tela (CQ-4296326).
+* A funcionalidade de arrastar usando o teclado agora funciona no Editor [!UICONTROL de Schemas de] Metadados no modo de navegação do leitor de tela (CQ-4296326).
 
-* Na caixa de diálogo de compartilhamento de links, ao navegar no modo de navegação, os leitores de tela,
+* Na caixa de diálogo de compartilhamento de links, ao navegar no modo de navegação, um leitor de tela,
 
-   * agora, não narre as informações da tabela assim que a caixa de diálogo for carregada.
+   * Não narra as informações da tabela assim que a caixa de diálogo é carregada.
 
-   * pode navegar até todas as sugestões automáticas listadas.
+   * Pode navegar até todas as sugestões automáticas listadas.
 
-   * agora narrar as sugestões automáticas exibidas para [!UICONTROL Adicionar endereço de email/pesquisa] (CQ-4294232).
+   * Narra as sugestões automáticas exibidas para [!UICONTROL Adicionar endereço de email/pesquisa] (CQ-4294232).
 
-* O uso da tecla Esc para remover os ícones de ação rápida da visualização em miniatura não remove mais o foco do teclado do último item focado (CQ-4293554).
+* O uso da `Esc` tecla para remover os ícones de ação rápida da visualização do cartão não remove mais o foco do teclado do último item focado (CQ-4293554).
 
-* O leitor de tela agora anuncia alternativas em texto, que retratam sua funcionalidade, para ícones (como chevrons) em vez de seus nomes literais (CQ-4272943).
+* Para opções interativas na interface do usuário, o leitor de tela agora anuncia sua finalidade em vez dos nomes literais dos ícones (CQ-4272943).
 
-* O foco do teclado agora é movido com êxito para [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_escuro], [!UICONTROL Zoom_light]  , ZoomVertical_blackOpções de ZoomVertical_light ao navegar usando a tecla Tab do teclado nos detalhes do ativoVisualizadoresDynamic Media (CQ-4290605).
+* O foco do teclado agora é movido com êxito para [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_escuro], [!UICONTROL Zoom_light]  [!DNL Dynamic Media] , ZoomVertical_blackOpções de ZoomVertical_light ao navegar usando a tecla Tab do teclado nos detalhes do ativoVisualizadores(CQ-4290605).
 
 * [!UICONTROL A opção Salvar e fechar] na página [!UICONTROL Propriedades] do ativo agora pode ser acessada usando teclas de teclado (NPR-34107).
 
@@ -144,38 +144,35 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Na seção [!DNL Experience Manager] cabeçalho, ao navegar no modo de navegação, o leitor de tela agora anuncia:
 
-   * sugestões editadas automaticamente em [!UICONTROL Tipo para pesquisar] no Omnisearch.
+   * Sugestões editadas automaticamente em [!UICONTROL Tipo para pesquisar] no Omnisearch.
 
-   * o estado conforme expandido ou recolhido para [!UICONTROL Soluções], [!UICONTROL Ajuda], [!UICONTROL Caixa de entrada] e opções [!UICONTROL de usuário] .
+   * O estado foi expandido ou recolhido para opções [!UICONTROL Soluções], [!UICONTROL Ajuda], [!UICONTROL Caixa de entrada]e [!UICONTROL Usuário] .
 
-   * a mensagem de status [!UICONTROL Pesquisando a Ajuda] que é exibida quando o usuário digita uma string de pesquisa no campo [!UICONTROL Pesquisar por Ajuda] na opção [!UICONTROL Ajuda] .
+   * A mensagem de status [!UICONTROL Pesquisando a Ajuda] que é exibida quando o usuário digita uma string de pesquisa no campo [!UICONTROL Pesquisar por Ajuda] na opção [!UICONTROL Ajuda] .
 
    ![Menu Ajuda no cabeçalho](assets/Help_aem_header.png)
 
-   *Figura:[!UICONTROL Procurar ajuda]no menu[!UICONTROL Ajuda]*
+   *Figura:[!UICONTROL Procure Ajuda]no menu[!UICONTROL Ajuda].*
 
-   * a mensagem de erro se um valor incorreto for inserido no campo [!UICONTROL Representar como] na opção [!UICONTROL Usuário] e o foco for movido corretamente para o campo de texto (NPR-33804).
+   * A mensagem de erro se um valor incorreto for inserido no campo [!UICONTROL Representar como] na opção [!UICONTROL Usuário] e o foco for movido corretamente para o campo de texto (NPR-33804).
 
    ![Menu do usuário no cabeçalho](assets/User_aem_header.png)
 
-   *Figura:[!UICONTROL Representar como]campo no menu[!UICONTROL Usuário]no cabeçalho*
+   *Figura:[!UICONTROL Representar como]campo no menu[!UICONTROL Usuário]no cabeçalho.*
 
-* Agora, o usuário pode mover o foco usando as teclas do teclado dentro de:
+* Agora, o usuário pode alterar o foco usando o teclado dentro de:
 
    * [!UICONTROL Pesquisar/Adicionar endereço] de email na caixa de diálogo Compartilhamento [!UICONTROL de] links.
 
-   * [!UICONTROL Adicione o campo Usuário ou Grupo] em Grupo [!UICONTROL de usuários] fechado na guia [!UICONTROL Permissões] das [!UICONTROL Propriedades] da pasta (NPR-34452).
+   * [!UICONTROL Adicione o campo Usuário ou Grupo] em Grupo [!UICONTROL de usuários] fechado na guia [!UICONTROL Permissões] de [!UICONTROL Propriedades] da pasta (NPR-34452).
 
 **Problemas corrigidos nos ativos Experience Manager**
 
-[!DNL Adobe Experience Manager] 6.5.6.0 Os ativos fornecem correções para os seguintes problemas:
+[!DNL Adobe Experience Manager] A versão 6.5.6.0 [!DNL Assets] oferece correções para os seguintes problemas:
 
-* A pré-visualização de ativos de garantia de marketing (como Brochure, Flyer e Business Card) criados usando o modelo [!DNL Adobe InDesign] (INDD) não retém quebras de linha e quebras de parágrafo (NPR-34268).
+* A pré-visualização de ativos de garantia de marketing (como Brochure, Flyer e Cartão de visita) criados usando o [!DNL Adobe InDesign] modelo não exibe quebras de linha e quebras de parágrafo (NPR-34268).
 
-* A extração de texto para os arquivos PDF carregados não funciona e a pesquisa de texto completo por algumas palavras em um arquivo PDF não consegue obter esse arquivo PDF (NPR-34164).
-
-   >[!NOTE]
-   >Para fazer essa correção funcionar, reinicie a instância do Adobe Experience Manager após instalar o Service Pack 6.5.6.0.
+* Extração de texto e, portanto, a pesquisa de texto completo para os arquivos PDF carregados não funciona (NPR-34164). Para corrigi-lo, reinicie a [!DNL sAdobe Experience Manager] implantação após instalar o Service Pack 6.
 
 * A linha do tempo de ativos de várias páginas exibe anotações aplicadas a todos os subativos ao navegar pelo ativo na visualização da Linha do tempo, em vez de exibir as anotações específicas aos subativos específicos (NPR-34100).
 
@@ -205,11 +202,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Ao criar regras para a lista suspensa no Formulário [!UICONTROL de Schema de Metadados de]Pasta, o usuário não pode selecionar valores na coluna Opções [!UICONTROL de] campo (CQ-4297530).
 
-* A cópia em tempo de execução do modelo de fluxo de trabalho personalizado de ativos (criado em `/var/workflow/models/dam`) é excluída quando você instala o 6.5 Service Pack 5 ou versões anteriores no 6.5 GA (NPR-34532).
-
-   >[!NOTE]
-   >
-   >A atualização para o [!DNL Experience Manager] 6.5 Service Pack 6 não recupera sua cópia em tempo de execução, se sua cópia em tempo de execução for excluída na instalação do [!DNL Experience Manager] 6.5 Service Pack 5 ou de versões anteriores no 6.5 GA. Para recuperar a cópia em tempo de execução, sincronize a cópia em tempo de design do modelo de fluxo de trabalho com a cópia em tempo de execução usando a API HTTP:
+* A cópia em tempo de execução do modelo de fluxo de trabalho personalizado de ativos (criado em `/var/workflow/models/dam`) é excluída quando você instala o [!DNL Experience Manager] 6.5 Service Pack 5 ou uma versão anterior no [!DNL Experience Manager] 6.5 (NPR-34532). Para recuperar a cópia em tempo de execução, sincronize a cópia em tempo de design do modelo de fluxo de trabalho com a cópia em tempo de execução usando a API HTTP:
    `<designModelPath>/jcr:content.generate.json`.
 
 **Problemas corrigidos no Dynamic Media**
@@ -410,7 +403,7 @@ B. Use a API [HTTP do Gerenciador](https://docs.adobe.com/content/docs/pt/crx/2-
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or higher (Use Web Console: `/system/console/bundles`).
+1. O pacote OSGi `org.apache.jackrabbit.oak-core` é a versão 1.22.3 ou posterior (Use o console da Web: `/system/console/bundles`).
 
 Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte os requisitos [](/help/sites-deploying/technical-requirements.md)técnicos.
 
@@ -453,7 +446,7 @@ Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/si
 
 ## Recursos obsoletos {#removed-deprecated-features}
 
-Esta seção lista recursos e recursos que foram marcados como obsoletos com o AEM 6.5.6.0. Os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma opção alternativa a ser usada.
+Esta seção lista recursos e recursos que foram marcados como obsoletos com o Experience Manager 6.5.6.0. Os recursos que estão planejados para serem removidos em uma versão futura são definidos como obsoletos primeiro, com uma opção alternativa a ser usada.
 
 Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em sua implantação atual e façam planos para alterar sua implementação para usar a opção alternativa.
 
@@ -464,7 +457,7 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 
 ## Problemas conhecidos {#known-issues}
 
-* Se você instalar o [!DNL Experience Manager] 6.5 Service Pack 5 ou versões anteriores no GA 6.5, a cópia em tempo de execução do modelo de fluxo de trabalho personalizado de ativos (criado em `/var/workflow/models/dam`) será excluída.
+* Se você instalar o [!DNL Experience Manager] 6.5 Service Pack 5 ou um service pack anterior no [!DNL Experience Manager] 6.5, a cópia em tempo de execução do modelo de fluxo de trabalho personalizado dos ativos (criado em `/var/workflow/models/dam`) será excluída.
 Para recuperar sua cópia em tempo de execução, o Adobe sugere sincronizar a cópia em tempo de design do modelo de fluxo de trabalho personalizado com sua cópia em tempo de execução usando a API HTTP:
    `<designModelPath>/jcr:content.generate.json`.
 
