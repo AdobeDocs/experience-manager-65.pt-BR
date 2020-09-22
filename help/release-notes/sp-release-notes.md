@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4f6b2bbb58f7f18798eb01a6c8f2cef4b02063a3
+source-git-commit: 4da9481dbd74a8cecf13c51b78c94abc4d48332e
 workflow-type: tm+mt
-source-wordcount: '4413'
+source-wordcount: '4485'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,11 @@ ht-degree: 6%
 | Versão | 6.5.6.0 |
 | Tipo | Lançamento do Service Pack |
 | Data | 03 de setembro de 2020 |
-| URL de download | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6.zip) |
+| URL de download | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
+
+>[!NOTE]
+>
+>Uma versão atualizada do AEM 6.5 Service Pack 6 está disponível. Se você já tiver instalado uma versão anterior do Service Pack 6, atualize para a versão mais recente disponível.
 
 ## O que está incluído no Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
@@ -377,7 +381,7 @@ Para obter informações sobre atualizações de segurança, consulte a página 
 
 Execute as seguintes etapas para instalar o Service Pack em uma instância Adobe Experience Manager 6.5 existente:
 
-1. Baixe o service pack da [Software Distribution (Distribuição](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6.zip)de software).
+1. Baixe o service pack da [Software Distribution (Distribuição](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip)de software).
 
 1. Abra o Gerenciador de pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote. Para saber como usá-lo, consulte [Gerenciador](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)de pacotes.
 
@@ -458,6 +462,17 @@ Recomenda-se que os clientes revisem se utilizam o recurso ou a capacidade em su
 | Conectores | O Conector JCR do Adobe para Microsoft SharePoint 2010 e Microsoft SharePoint 2013 está obsoleto para o AEM 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
+
+* Se a verificação de integridade de segurança não funcionar e o sistema exibir a seguinte mensagem de erro:
+   `message: Could not verify users and could not test system account logins.`
+Execute as seguintes etapas para resolver o problema:
+   1. Vá para https://&lt;nome do *host*>:&lt;*porta*>/system/console/configMgr.
+
+   1. Pesquisar `hc.impl`.
+
+   1. Em Mapeamentos [!UICONTROL de]serviço, clique `+` e especifique `com.adobe.granite.repository.hc.impl=[user-reader-service]`.
+
+   1. Click [!UICONTROL Save] to save the configuration.
 
 * Se você instalar o [!DNL Experience Manager] 6.5 Service Pack 5 ou um service pack anterior no [!DNL Experience Manager] 6.5, a cópia em tempo de execução do modelo de fluxo de trabalho personalizado dos ativos (criado em `/var/workflow/models/dam`) será excluída.
 Para recuperar sua cópia em tempo de execução, o Adobe sugere sincronizar a cópia em tempo de design do modelo de fluxo de trabalho personalizado com sua cópia em tempo de execução usando a API HTTP:
