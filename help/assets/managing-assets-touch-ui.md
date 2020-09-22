@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
 workflow-type: tm+mt
-source-wordcount: '9240'
+source-wordcount: '9370'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, vo
 
 >[!NOTE]
 >
->* O compartilhamento de uma [!DNL Assets] pasta do tipo não `sling:OrderedFolder` é suportado ao compartilhar com o Marketing Cloud. Se desejar compartilhar uma pasta, não selecione [!UICONTROL Solicitado] ao criar uma pasta.
+>* O compartilhamento de uma [!DNL Assets] pasta do tipo não `sling:OrderedFolder` é suportado ao compartilhar no Marketing Cloud. Se desejar compartilhar uma pasta, não selecione [!UICONTROL Solicitado] ao criar uma pasta.
 >* [!DNL Experience Manager] não permite usar `subassets` word como o nome de uma pasta. É uma palavra-chave reservada para nós que contêm subativos para ativos compostos.
 
 
@@ -72,64 +72,76 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    ![Barra de progresso Carregar ativos](assets/upload-progress-bar.png)
 
-   O tamanho acima do qual um ativo é considerado um grande ativo é configurável. Por exemplo, você pode configurar o sistema para considerar ativos acima de 1000 MB (em vez de 500 MB) como ativos grandes. Nesse caso, **[!UICONTROL Pausar]** é exibido na barra de progresso quando ativos de tamanho maior que 1000 MB são carregados.
+O tamanho acima do qual um ativo é considerado um grande ativo é configurável. Por exemplo, você pode configurar o sistema para considerar ativos acima de 1000 MB (em vez de 500 MB) como ativos grandes. Nesse caso, **[!UICONTROL Pausar]** é exibido na barra de progresso quando ativos de tamanho maior que 1000 MB são carregados.
 
-   O botão Pausar não mostra se um arquivo maior que 1000 MB é carregado com um arquivo menor que 1000 MB. No entanto, se você cancelar o carregamento de arquivo com menos de 1000 MB, o botão **[!UICONTROL Pausar]** será exibido.
+O botão Pausar não mostra se um arquivo maior que 1000 MB é carregado com um arquivo menor que 1000 MB. No entanto, se você cancelar o carregamento de arquivo com menos de 1000 MB, o botão **[!UICONTROL Pausar]** será exibido.
 
-   Para modificar o limite de tamanho, configure a `chunkUploadMinFileSize` propriedade do `fileupload`nó no repositório CRX.
+Para modificar o limite de tamanho, configure a `chunkUploadMinFileSize` propriedade do `fileupload`nó no repositório CRX.
 
-   Quando você clica em **[!UICONTROL Pausar]**, ela alterna para a opção **[!UICONTROL Reproduzir]** . Para retomar o carregamento, clique em **[!UICONTROL Reproduzir]**.
+Quando você clica em **[!UICONTROL Pausar]**, ela alterna para a opção **[!UICONTROL Reproduzir]** . Para retomar o carregamento, clique em **[!UICONTROL Reproduzir]**.
 
-   ![Retomar o upload do ativo pausado](assets/resume-paused-upload.png)
+![Retomar o upload do ativo pausado](assets/resume-paused-upload.png)
 
-   Para cancelar um upload em andamento, clique em Fechar (`X`) ao lado da barra de progresso. Quando você cancela a operação de upload, [!DNL Assets] exclui a parte parcialmente carregada do ativo.
+Para cancelar um upload em andamento, clique em Fechar (`X`) ao lado da barra de progresso. Quando você cancela a operação de upload, [!DNL Assets] exclui a parte parcialmente carregada do ativo.
 
-   A capacidade de retomar o carregamento é especialmente útil em cenários de largura de banda baixa e falhas de rede, onde demora muito para carregar um grande ativo. Você pode pausar a operação de upload e continuar mais tarde quando a situação melhorar. Ao retomar, carregando start a partir do ponto em que você o pausou.
+A capacidade de retomar o carregamento é especialmente útil em cenários de largura de banda baixa e falhas de rede, onde demora muito para carregar um grande ativo. Você pode pausar a operação de upload e continuar mais tarde quando a situação melhorar. Ao retomar, carregando start a partir do ponto em que você o pausou.
 
-   Durante a operação de upload, [!DNL Experience Manager] salva as partes do ativo que estão sendo carregadas como partes de dados no repositório CRX. Quando o upload é concluído, [!DNL Experience Manager] consolida esses blocos em um único bloco de dados no repositório.
+Durante a operação de upload, [!DNL Experience Manager] salva as partes do ativo que estão sendo carregadas como partes de dados no repositório CRX. Quando o upload é concluído, [!DNL Experience Manager] consolida esses blocos em um único bloco de dados no repositório.
 
-   Para configurar a tarefa de limpeza para os trabalhos de carregamento de segmentos não concluídos, vá para `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
+Para configurar a tarefa de limpeza para os trabalhos de carregamento de segmentos não concluídos, vá para `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
-   Se você fizer upload de um ativo com o mesmo nome de um ativo já disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
-
-   Você pode optar por substituir um ativo existente, criar outra versão ou manter ambos renomeando o novo ativo que é carregado. Se você substituir um ativo existente, os metadados do ativo e quaisquer modificações anteriores (por exemplo, anotação ou recorte) que você fez no ativo existente serão excluídos. Se você optar por manter ambos os ativos, o novo ativo será renomeado com o número `1` anexado ao seu nome.
-
-   ![Caixa de diálogo Conflitos de nomes para resolver o conflito de nomes de ativos](assets/resolve-naming-conflict.png)
-
-   >[!NOTE]
+>[!CAUTION]
+>
+>O valor padrão quando o carregamento do bloco é acionado é de 500 MB e o tamanho do bloco é de 50 MB. Se você modificar o [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) para definir o `timeout configuration` como sendo menor que o tempo necessário para um ativo carregar, então você pode executar uma situação de tempo limite de sessão enquanto o upload do ativo estiver em andamento. Portanto, é necessário alterar o `chunkUploadMinFileSize` e `chunksize`, para que cada solicitação de segmento atualize a sessão.
+>
+>Dado o tempo limite de expiração de credencial, a latência, a largura de banda e os carregamentos simultâneos esperados, o valor mais alto que permite garantir que os dois itens a seguir sejam escolhidos:
+>
+>* Para garantir que o carregamento do bloco esteja ativado para arquivos com tamanhos que possam causar a expiração da credencial enquanto o upload estiver em andamento.
    >
-   >Quando você seleciona **[!UICONTROL Substituir]** na caixa de diálogo Conflito [!UICONTROL de] nomes, a ID do ativo é regenerada para o novo ativo. Essa ID é diferente da ID do ativo anterior.
    >
-   >Se o Asset Insights estiver habilitado para rastrear impressões/cliques com a Adobe Analytics, a ID de ativo regenerada invalida os dados capturados para o ativo no Analytics.
+* Para garantir que cada bloco seja concluído antes da credencial expirar.
 
-   Se o ativo no qual você fez upload existir, a caixa de diálogo [!DNL Assets]Duplicados detectados **** avisará que você está tentando fazer upload de um ativo de duplicado. A caixa de diálogo é exibida somente se o valor de `SHA 1` soma de verificação do binário do ativo existente corresponder ao valor de soma de verificação do ativo que você carrega. Neste caso, os nomes dos ativos não importam.
 
-   >[!NOTE]
-   >
-   >A caixa de diálogo [!UICONTROL Duplicados detectados] aparece somente quando o recurso de detecção de duplicados está ativado. Para ativar o recurso de detecção de duplicados, consulte [Ativar detecção](/help/assets/duplicate-detection.md)de Duplicados.
+Se você fizer upload de um ativo com o mesmo nome de um ativo já disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
 
-   ![Caixa de diálogo Ativo do duplicado detectado](assets/duplicate-asset-detected.png)
+Você pode optar por substituir um ativo existente, criar outra versão ou manter ambos renomeando o novo ativo que é carregado. Se você substituir um ativo existente, os metadados do ativo e quaisquer modificações anteriores (por exemplo, anotação ou recorte) que você fez no ativo existente serão excluídos. Se você optar por manter ambos os ativos, o novo ativo será renomeado com o número `1` anexado ao seu nome.
 
-   Para reter o ativo do duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, clique em **[!UICONTROL Excluir]**.
+![Caixa de diálogo Conflitos de nomes para resolver o conflito de nomes de ativos](assets/resolve-naming-conflict.png)
 
-   [!DNL Experience Manager Assets] impede que você carregue ativos com os caracteres proibidos em seus nomes de arquivo. Se você tentar carregar um ativo com um nome de arquivo contendo um caractere não permitido ou mais, [!DNL Assets] exibirá uma mensagem de aviso e interromperá o upload até que você remova esses caracteres ou faça upload com um nome permitido.
+>[!NOTE]
+>
+>Quando você seleciona **[!UICONTROL Substituir]** na caixa de diálogo Conflito [!UICONTROL de] nomes, a ID do ativo é regenerada para o novo ativo. Essa ID é diferente da ID do ativo anterior.
+>
+>Se o Asset Insights estiver habilitado para rastrear impressões/cliques com a Adobe Analytics, a ID de ativo regenerada invalida os dados capturados para o ativo no Analytics.
 
-   Para adequar-se a convenções de nomenclatura de arquivos específicas para sua organização, a caixa de diálogo [!UICONTROL Carregar ativos] permite especificar nomes longos para os arquivos carregados.
+Se o ativo no qual você fez upload existir, a caixa de diálogo [!DNL Assets]Duplicados detectados **** avisará que você está tentando fazer upload de um ativo de duplicado. A caixa de diálogo é exibida somente se o valor de `SHA 1` soma de verificação do binário do ativo existente corresponder ao valor de soma de verificação do ativo que você carrega. Neste caso, os nomes dos ativos não importam.
 
-   No entanto, os seguintes caracteres (lista separada por espaços de) não são suportados:
+>[!NOTE]
+>
+>A caixa de diálogo [!UICONTROL Duplicados detectados] aparece somente quando o recurso de detecção de duplicados está ativado. Para ativar o recurso de detecção de duplicados, consulte [Ativar detecção](/help/assets/duplicate-detection.md)de Duplicados.
 
-   * o nome do arquivo de ativo não deve conter `* / : [ \\ ] | # % { } ? &`
-   * o nome da pasta de ativos não deve conter `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+![Caixa de diálogo Ativo do duplicado detectado](assets/duplicate-asset-detected.png)
 
-   Não inclua caracteres especiais nas extensões dos nomes de arquivos do ativo.
+Para reter o ativo do duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**. Para excluir o ativo de duplicado carregado, clique em **[!UICONTROL Excluir]**.
 
-   ![A caixa de diálogo de andamento do upload mostra o status dos arquivos carregados com êxito e dos arquivos que não foram carregados](assets/bulk-upload-progress.png)
+[!DNL Experience Manager Assets] impede que você carregue ativos com os caracteres proibidos em seus nomes de arquivo. Se você tentar carregar um ativo com um nome de arquivo contendo um caractere não permitido ou mais, [!DNL Assets] exibirá uma mensagem de aviso e interromperá o upload até que você remova esses caracteres ou faça upload com um nome permitido.
 
-   Além disso, a interface do [!DNL Assets] usuário exibe o ativo mais recente que você carregou ou a pasta que criou primeiro.
+Para adequar-se a convenções de nomenclatura de arquivos específicas para sua organização, a caixa de diálogo [!UICONTROL Carregar ativos] permite especificar nomes longos para os arquivos carregados.
 
-   Se você cancelar a operação de upload antes que os arquivos sejam carregados, [!DNL Assets] interromperá o upload do arquivo atual e atualizará o conteúdo. No entanto, os arquivos que já foram carregados não são excluídos.
+No entanto, os seguintes caracteres (lista separada por espaços de) não são suportados:
 
-   A caixa de diálogo de progresso do upload em [!DNL Assets] exibe a contagem de arquivos carregados com êxito e os arquivos que não foram carregados.
+* o nome do arquivo de ativo não deve conter `* / : [ \\ ] | # % { } ? &`
+* o nome da pasta de ativos não deve conter `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+Não inclua caracteres especiais nas extensões dos nomes de arquivos do ativo.
+
+![A caixa de diálogo de andamento do upload mostra o status dos arquivos carregados com êxito e dos arquivos que não foram carregados](assets/bulk-upload-progress.png)
+
+Além disso, a interface do [!DNL Assets] usuário exibe o ativo mais recente que você carregou ou a pasta que criou primeiro.
+
+Se você cancelar a operação de upload antes que os arquivos sejam carregados, [!DNL Assets] interromperá o upload do arquivo atual e atualizará o conteúdo. No entanto, os arquivos que já foram carregados não são excluídos.
+
+A caixa de diálogo de progresso do upload em [!DNL Assets] exibe a contagem de arquivos carregados com êxito e os arquivos que não foram carregados.
 
 ### Carregamentos em série {#serialuploads}
 
@@ -223,7 +235,7 @@ Ao fazer upload de arquivos de imagem, incluindo arquivos AI, EPS e PSD, você p
 
 #### Definir opções de upload de PostScript e Illustrator {#setting-postscript-and-illustrator-upload-options}
 
-Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cor. As opções para a formatação de arquivos PostScript e Illustrator estão disponíveis na caixa de diálogo Opções [!UICONTROL de trabalho de] upload, em Opções [!UICONTROL de] PostScript e Opções [!UICONTROL do]Illustrator.
+Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cor. As opções para a formatação de arquivos PostScript e Illustrator estão disponíveis na caixa de diálogo Opções [!UICONTROL de trabalho de] upload em Opções  PostScript e Opções [!UICONTROL do]Illustrator.
 
 | Opção | Subopção | Descrição |
 |---|---|---|
@@ -321,7 +333,7 @@ Após a extração ser concluída, [!DNL Experience Manager] notifique você na 
 
 Algumas limitações do recurso são:
 
-* Se existir uma pasta com o mesmo nome no destino, os ativos do arquivo ZIP serão extraídos na pasta existente.
+* Se uma pasta com o mesmo nome existir no destino, os ativos do arquivo ZIP serão extraídos na pasta existente.
 * Se você cancelar a extração, os ativos já extraídos não serão excluídos.
 * Não é possível selecionar dois arquivos ZIP ao mesmo tempo e extraí-los. Você só pode extrair um arquivo ZIP por vez.
 * Ao carregar um arquivo ZIP, se a caixa de diálogo de upload exibir um erro de servidor 500, tente novamente após instalar o service pack mais recente.
@@ -756,7 +768,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 
    Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click **[!UICONTROL Accept]**.
 
-   ![Selecione a cor da anotação em Preferências de usuário para definir a cor Personalizar usuário](assets/Annotation-color.png)
+   ![Selecione a cor da anotação em Preferências de usuário para definir a cor Personalizada do usuário](assets/Annotation-color.png)
 
 >[!NOTE]
 >
