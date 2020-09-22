@@ -1,8 +1,8 @@
 ---
 title: Componentes básicos das comunidades
 seo-title: Componentes básicos das comunidades
-description: Adicionar recursos de Comunidades a sites do AEM no modo de edição e configurar componentes
-seo-description: Adicionar recursos de Comunidades a sites do AEM no modo de edição e configurar componentes
+description: Adicionar recursos de Comunidades a sites AEM no modo de edição e configurar componentes
+seo-description: Adicionar recursos de Comunidades a sites AEM no modo de edição e configurar componentes
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A seção de criação da documentação descreve como adicionar recursos das Comunidades aos sites do AEM no modo de edição do autor, bem como descrever as configurações de componentes.
+A seção de criação da documentação descreve como adicionar recursos de Comunidades a sites AEM no modo de edição do autor, bem como descrever configurações de componentes.
 
-Os componentes podem ser explorados usando uma instância do AEM e o guia [interativo Componentes](components-guide.md)da comunidade.
+Os componentes podem ser explorados usando uma instância AEM e o guia [interativo Componentes](components-guide.md)da comunidade.
 
 ## Acessar componentes das comunidades {#accessing-communities-components}
 
@@ -36,7 +36,7 @@ Os componentes disponíveis das Comunidades estão listados [aqui](author-commun
 >
 >Para obter informações gerais sobre criação, visualização no guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
+>Se não estiver familiarizado com AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
 
 
 ### Entrando no Modo de Design {#entering-design-mode}
@@ -47,11 +47,11 @@ Para obter detalhes, consulte [Configuração de componentes no Modo](../../help
 
 Veja a seguir as imagens de seleção de alguns componentes das Comunidades e sua visualização no navegador de componentes:
 
-![chlimage_1-424](assets/chlimage_1-424.png)
+![concepção de componentes](assets/component-design.png)
 
 Os componentes selecionados agora estão disponíveis no navegador de componentes:
 
-![chlimage_1-425](assets/chlimage_1-425.png)
+![component-design1](assets/component-design1.png)
 
 ## Clientlibs necessários {#required-clientlibs}
 
@@ -61,11 +61,11 @@ Ao adicionar um componente Comunidades a uma página, se o resultado for um erro
 
 ### Exemplo: Análises inicialmente colocadas sem bibliotecas de clientes... {#example-initially-placed-reviews-without-client-libraries}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![clientlibs1](assets/clientlibs1.png)
 
 ### ... E com bibliotecas clientes {#and-with-client-libraries}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![clientlibs2](assets/clientlibs2.png)
 
 ## Marcação com tags {#tagging}
 
@@ -90,6 +90,6 @@ Para informações administrativas:
 
 Para obter informações sobre desenvolvedores:
 
-* [Estrutura de marcação do AEM](../../help/sites-developing/framework.md)
+* [Estrutura de marcação AEM](../../help/sites-developing/framework.md)
 * [Essenciais da marcação](tag.md)
 
