@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '9368'
+source-wordcount: '9410'
 ht-degree: 4%
 
 ---
@@ -538,25 +538,30 @@ Para obter mais informações sobre como gerar e exibir subativos, consulte [ger
 
 Para excluir ativos, um usuário requer permissões de exclusão em `dam/asset`. Se você tiver apenas permissões de modificação, poderá apenas editar os metadados do ativo e adicionar anotações ao ativo. No entanto, não é possível excluir o ativo ou seus metadados.
 
-Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Para impedir que os usuários excluam ativos referenciados e deixem links quebrados, desative a opção forçar exclusão usando uma sobreposição, .
+Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Para impedir que os usuários excluam ativos referenciados e deixem links quebrados, desative a opção forçar exclusão usando uma sobreposição.
 
-1. Vá ao local do(s) ativo(s) que deseja excluir.
+Para excluir um ativo ou uma pasta que contenha o ativo:
 
-1. Selecione o ativo e clique em **[!UICONTROL Excluir]** opção ![](assets/do-not-localize/deleteoutline.png) Excluir na barra de ferramentas.
+1. Navegue até o local do ativo ou da pasta que deseja excluir.
 
-1. Na caixa de diálogo de confirmação, selecione uma das seguintes opções:
+1. Selecione o ativo ou a pasta e clique em **[!UICONTROL Excluir]** opção ![](assets/do-not-localize/deleteoutline.png) Excluir na barra de ferramentas.
 
-   * **[!UICONTROL Cancelar]** para parar a ação
-   * **[!UICONTROL Excluir]** para confirmar a ação:
+   Após confirmar a exclusão:
 
-      * Se o ativo não tiver referências, ele será excluído.
-      * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados.** Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
+   * Se o ativo não tiver referências, ele será excluído.
 
+   * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados**. Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
    >[!NOTE]
    >
    >* Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Além disso, desative o botão forçar exclusão usando uma sobreposição para impedir que os usuários excluam ativos referenciados e deixem links quebrados.
    >* É possível excluir uma *pasta* que contenha arquivos de ativos com check-out. Antes de excluir uma pasta, verifique se nenhum ativo digital foi retirado pelos usuários.
 
+
+>[!NOTE]
+>
+>Se você excluir uma pasta usando o método acima da interface do usuário, os grupos de usuários associados também serão excluídos.
+>
+>No entanto, grupos de usuários redundantes, não utilizados e gerados automaticamente podem ser limpos do repositório usando o `clean` método em JMX na sua instância do autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
 ## Baixar ativos {#downloading-assets}
 
