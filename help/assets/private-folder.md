@@ -3,9 +3,9 @@ title: Pasta privada em [!DNL Adobe Experience Manager Assets]
 description: Saiba como criar uma pasta privada no [!DNL Adobe Experience Manager Assets] site e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: be97ef4f3bb6b904dabcfcd44025a4898bcf4dee
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -67,26 +67,30 @@ Para criar e compartilhar pasta privada:
 
 >[!NOTE]
 >
->Para criar uma pasta privada, você precisa de permissões de Ler e Editar ACL na pasta pai na qual deseja criar uma pasta particular. Se você não for um administrador, essas permissões não serão ativadas para você por padrão em `/content/dam`. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas ou configurações de pastas de visualização.
+>Para criar uma pasta privada, você precisa de permissões [de Leitura e Modificação de](/help/sites-administering/security.md#permissions-in-aem) controles de acesso na pasta pai na qual deseja criar uma pasta privada. Se você não for um administrador, essas permissões não serão ativadas para você por padrão em `/content/dam`. Nesse caso, primeiro obtenha essas permissões para a ID/grupo do usuário antes de tentar criar pastas privadas.
 
 ## Exclusão de pasta particular {#delete-private-folder}
 
-Você pode excluir uma pasta particular selecionando a pasta e a opção [!UICONTROL Excluir] no menu superior ou usando a tecla Backspace no teclado.
+Você pode excluir uma pasta selecionando a pasta e a opção [!UICONTROL Excluir] no menu superior ou usando a tecla Backspace no teclado.
 
-### Remoção do grupo de usuários na exclusão de pastas {#group-removal-on-folder-deletion}
-
-Se você excluir uma pasta privada usando o método acima da interface do usuário, os grupos de usuários associados também serão excluídos. No entanto, grupos de usuários redundantes, não utilizados e gerados automaticamente podem ser limpos do repositório usando o [JMX](#group-clean-up-jmx).
+![opção Excluir no menu superior](assets/delete-option.png)
 
 >[!CAUTION]
 >
 >Se você excluir uma pasta privada do CRXDE Lite, os grupos de usuários redundantes serão deixados no repositório.
 
+>[!NOTE]
+>
+>Se você excluir uma pasta usando o método acima da interface do usuário, os grupos de usuários associados também serão excluídos.
+No entanto, grupos de usuários redundantes, não utilizados e gerados automaticamente podem ser limpos do repositório usando o [JMX](#group-clean-up-jmx).
+
 ### Usar JMX para limpar grupos de usuários não utilizados {#group-clean-up-jmx}
 
 Para limpar o repositório de grupos de usuários não utilizados:
 
-1. Abra o JMX para limpar grupos redundantes de Ativos `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+1. Abra o JMX para limpar grupos redundantes para Ativos na sua instância do [!DNL Experience Manager] autor `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+Por exemplo, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
 
 1. Chame o `clean` método deste JMX.
 
-Você pode ver que todos os grupos de usuários redundantes ou gerados automaticamente (que são criados ao criar uma pasta privada com o mesmo nome de um grupo excluído anteriormente) são removidos do caminho `/home/groups/mac/default/<user_name>/<folder_name>`.
+Você pode ver que todos os grupos de usuários redundantes ou gerados automaticamente (que são criados ao criar uma pasta com o mesmo nome de um grupo excluído anteriormente) são removidos do caminho `/home/groups/mac/default/<user_name>/<folder_name>`.
