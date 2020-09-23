@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1676'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 ## Introdução {#introduction}
 
-O recurso de blog para AEM Communities se transformou de uma atividade de criação em uma verdadeira atividade da comunidade que acontece no ambiente de publicação.
+O recurso de blog do AEM Communities se transformou de uma atividade de criação em uma verdadeira atividade da comunidade que acontece no ambiente de publicação.
 
 O recurso de blog suporta o fornecimento de informações da comunidade em um formato de diário. As entradas do blog são feitas no ambiente de publicação por membros autorizados (usuários registrados, conectados).
 
@@ -40,14 +40,14 @@ O recurso de blog fornece :
 
 Esta seção da documentação descreve:
 
-* Adicionar o recurso de blog a um site do AEM
+* Adicionar o recurso de blog a um site AEM
 * Configurações para componentes de blog
 
 >[!NOTE]
 >
->Os componentes `Journal` e `Journal Sidebar` estão intitulados `Blog` e `Blog Sidebar`.
+>Os componentes `Journal` e `Journal Sidebar` são intitulados `Blog` e `Blog Sidebar`.
 >
->O recurso de blog encontrado no AEM 6.0 e em versões anteriores foi removido. Ele era baseado em um modelo e permitia somente que autores criassem conteúdo no ambiente do autor.
+>O recurso de blog encontrado no AEM 6.0 e versões anteriores foi removido. Ele era baseado em um modelo e permitia somente que autores criassem conteúdo no ambiente do autor.
 
 
 ## Adicionar componentes do blog a uma página {#adding-blog-components-to-a-page}
@@ -63,17 +63,13 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando as bibliotecas [do lado do cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) necessárias forem incluídas, o `Blog` componente aparecerá desta forma:
 
-![chlimage_1-147](assets/chlimage_1-147.png)
-
-E como `Blog Sidebar` aparecerá:
-
-![chlimage_1-148](assets/chlimage_1-148.png)
+![add-blog-component](assets/add-blog-component.png)
 
 ### Configuração do Blog {#configuring-blog}
 
 Selecione o componente inserido a ser acessado e selecione o `Blog` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![configure](assets/configure-new.png)
 
 ![Configurações do blog](assets/blog-configure.png)
 
@@ -307,7 +303,7 @@ Os artigos do blog aparecerão sob a guia apropriada (Publicado, Rascunhos ou Pr
 
 Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar tarefas [de](/help/communities/moderate-ugc.md) moderação (conforme permitido pela configuração do componente) em todos os artigos de blog e comentários publicados em um blog.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![moderador-página](assets/moderator-homepage.png)
 
 #### Membros {#members}
 
@@ -317,20 +313,20 @@ Concretamente, podem:
 
 * Criar um novo artigo de blog
 * Publicar um novo artigo no blog em nome de outro membro
-* Publicar um comentário em um artigo do blog
+* Publicar um comentário em um artigo de blog
 * Editar seu próprio artigo ou comentário no blog
 * Excluir seu próprio artigo ou comentário no blog
 * Sinalizar artigos ou comentários de outras pessoas no blog
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![membro-homepage](assets/member-homepage.png)
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![create-blog](assets/create-blog.png)
 
 #### Anônimo {#anonymous}
 
 Os visitantes do site que não estão conectados só podem ler artigos e comentários postados do blog, traduzi-los se houver suporte, mas não podem adicionar artigos ou comentários do blog nem sinalizar artigos ou comentários de outras pessoas.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![anonimato-usuário-visualização](assets/anonymous-user-view.png)
 
 ## Informações adicionais {#additional-information}
 
