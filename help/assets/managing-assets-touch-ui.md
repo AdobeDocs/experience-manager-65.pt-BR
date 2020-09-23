@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '9370'
+source-wordcount: '9368'
 ht-degree: 4%
 
 ---
@@ -94,7 +94,7 @@ Para configurar a tarefa de limpeza para os trabalhos de carregamento de segment
 >
 >O valor padrão quando o carregamento do bloco é acionado é de 500 MB e o tamanho do bloco é de 50 MB. Se você modificar o [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) para definir o `timeout configuration` como sendo menor que o tempo necessário para um ativo carregar, então você pode executar uma situação de tempo limite de sessão enquanto o upload do ativo estiver em andamento. Portanto, é necessário alterar o `chunkUploadMinFileSize` e `chunksize`, para que cada solicitação de segmento atualize a sessão.
 >
->Dado o tempo limite de expiração de credencial, a latência, a largura de banda e os carregamentos simultâneos esperados, o valor mais alto que permite garantir que os dois itens a seguir sejam escolhidos:
+>Dado o tempo limite de expiração de credencial, a latência, a largura de banda e os carregamentos simultâneos esperados, o valor mais alto que permite garantir que o seguinte seja escolhido:
 >
 >* Para garantir que o carregamento do bloco esteja ativado para arquivos com tamanhos que possam causar a expiração da credencial enquanto o upload estiver em andamento.
    >
