@@ -1,23 +1,27 @@
 ---
-title: Crie e compartilhe uma pasta privada em [!DNL Adobe Experience Manager].
+title: Pasta privada em [!DNL Adobe Experience Manager Assets]
 description: Saiba como criar uma pasta privada no [!DNL Adobe Experience Manager Assets] site e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
 
 
-# Compartilhamento de pasta particular {#private-folder-sharing}
+# Pasta privada em [!DNL Adobe Experience Manager Assets] {#private-folder}
 
 Você pode criar uma pasta privada na interface do [!DNL Adobe Experience Manager Assets] usuário que esteja disponível exclusivamente para você. Você pode compartilhar essa pasta privada com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, visualização de ativos na pasta ou editar os ativos.
 
 >[!NOTE]
 >
 >A pasta privada tem pelo menos um membro com a função Proprietário.
+
+## Criação e compartilhamento de pastas privadas {#create-share-private-folder}
+
+Para criar e compartilhar pasta privada:
 
 1. No [!DNL Assets] console, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
 
@@ -63,4 +67,26 @@ Você pode criar uma pasta privada na interface do [!DNL Adobe Experience Manage
 
 >[!NOTE]
 >
->Para poder criar uma pasta privada, você precisa de permissões de Ler e Editar ACL na pasta pai na qual deseja criar uma pasta privada. Se você não for um administrador, essas permissões não serão ativadas para você por padrão em `/content/dam`. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas ou configurações de pastas de visualização.
+>Para criar uma pasta privada, você precisa de permissões de Ler e Editar ACL na pasta pai na qual deseja criar uma pasta particular. Se você não for um administrador, essas permissões não serão ativadas para você por padrão em `/content/dam`. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas ou configurações de pastas de visualização.
+
+## Exclusão de pasta particular {#delete-private-folder}
+
+Você pode excluir uma pasta particular selecionando a pasta e a opção [!UICONTROL Excluir] no menu superior ou usando a tecla Backspace no teclado.
+
+### Remoção do grupo de usuários na exclusão de pastas {#group-removal-on-folder-deletion}
+
+Se você excluir uma pasta privada usando o método acima da interface do usuário, os grupos de usuários associados também serão excluídos. No entanto, grupos de usuários redundantes, não utilizados e gerados automaticamente podem ser limpos do repositório usando o [JMX](#group-clean-up-jmx).
+
+>[!CAUTION]
+>
+>Se você excluir uma pasta privada do CRXDE Lite, os grupos de usuários redundantes serão deixados no repositório.
+
+### Usar JMX para limpar grupos de usuários não utilizados {#group-clean-up-jmx}
+
+Para limpar o repositório de grupos de usuários não utilizados:
+
+1. Abra o JMX para limpar grupos redundantes de Ativos `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+
+1. Chame o `clean` método deste JMX.
+
+Você pode ver que todos os grupos de usuários redundantes ou gerados automaticamente (que são criados ao criar uma pasta privada com o mesmo nome de um grupo excluído anteriormente) são removidos do caminho `/home/groups/mac/default/<user_name>/<folder_name>`.
