@@ -4,9 +4,9 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2480'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Agora você pode optar por publicar ou cancelar a publicação seletiva de ativo
 
 ### Outras melhorias em ativos {#other-enhancements-assets-6560}
 
-* Grupos de usuários de pastas privadas agora são removidos do repositório ao excluir pastas privadas. A exclusão da pasta privada limpa o repositório de grupos de usuários órfãos, que são criados sempre que uma pasta privada é criada. Para obter mais informações, consulte Remoção do grupo [de usuários na exclusão](#group-removal-on-folder-deletion)de pastas.
+* Os grupos de usuários associados às pastas (privadas e não privadas) agora são removidos do repositório ao [excluir essas pastas](/help/assets/private-folder.md#delete-private-folder). No entanto, grupos de usuários redundantes, órfãos, não utilizados e gerados automaticamente podem ser limpos do repositório usando JMX.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
