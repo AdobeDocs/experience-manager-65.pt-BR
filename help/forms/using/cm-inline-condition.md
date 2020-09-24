@@ -6,11 +6,11 @@ seo-description: Usando condições embutidas e repetidas em Comunicações inte
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: interactive-communications
+topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Condições em linha {#inline-conditions}
 
-O AEM Forms permite usar condições em linha em módulos de texto para automatizar a renderização do texto que depende do contexto ou dos dados associados ao modelo de dados de formulário (em Comunicação interativa) ou ao dicionário de dados (em letras). A condição embutida exibe conteúdo específico com base na avaliação da condição sendo true ou false.
+A AEM Forms permite usar condições embutidas em módulos de texto para automatizar a renderização de texto que depende do contexto ou dos dados associados ao modelo de dados de formulário (em Comunicação interativa) ou ao dicionário de dados (em letras). A condição embutida exibe conteúdo específico com base na avaliação da condição sendo true ou false.
 
 As condições executam cálculos nos valores de dados fornecidos pelo modelo de dados do formulário/Dicionário de dados ou pelos usuários finais. Usando condições em linha, você pode economizar tempo e reduzir erros humanos, ao mesmo tempo em que cria comunicações/letras interativas altamente contextuais e personalizadas.
 
@@ -62,7 +62,7 @@ Depois que você incluir o fragmento de texto em uma Comunicação interativa e 
 
 1. Faça o seguinte para criar uma condição para avaliar se o texto selecionado/condicionado aparece na carta e, em seguida, toque na marca de seleção para salvar a expressão:
 
-   Toque no Duplo em um elemento DD para inseri-lo na condição. Insira o operador apropriado e construa a seguinte condição na caixa de diálogo.
+   Toque no duplo em um elemento DD para inseri-lo na condição. Insira o operador apropriado e construa a seguinte condição na caixa de diálogo.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
