@@ -1,15 +1,15 @@
 ---
 title: APIs para trabalhar com formulários enviados no portal de formulários
 seo-title: APIs para trabalhar com formulários enviados no portal de formulários
-description: O AEM Forms fornece APIs que você pode usar para query e executar ações em dados de formulários enviados no portal de formulários.
-seo-description: O AEM Forms fornece APIs que você pode usar para query e executar ações em dados de formulários enviados no portal de formulários.
+description: A AEM Forms fornece APIs que você pode usar para query e executar ações em dados de formulários enviados no portal de formulários.
+seo-description: A AEM Forms fornece APIs que você pode usar para query e executar ações em dados de formulários enviados no portal de formulários.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: developer-reference
+topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 7%
@@ -19,13 +19,13 @@ ht-degree: 7%
 
 # APIs para trabalhar com formulários enviados no portal de formulários {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-O AEM Forms fornece APIs que você pode usar para query de dados de formulários enviados pelo portal de formulários. Além disso, você pode publicar comentários ou atualizar as propriedades de formulários enviados usando as APIs explicadas neste documento.
+A AEM Forms fornece APIs que podem ser usadas para o query de dados de formulários enviados pelo portal de formulários. Além disso, você pode publicar comentários ou atualizar as propriedades de formulários enviados usando as APIs explicadas neste documento.
 
 >[!NOTE]
 >
 >Os usuários que chamarão as APIs devem ser adicionados ao grupo de revisores, conforme descrito em [Associando os revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
 
-## OBTENHA /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Retorna uma lista de todos os formulários elegíveis.
 
@@ -59,7 +59,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## OBTENHA /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Retorna detalhes de todos os formulários enviados. No entanto, você pode usar parâmetros de URL para limitar os resultados.
 
@@ -160,7 +160,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## OBTENHA /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Retorna todos os comentários postados na instância de envio especificada.
 
