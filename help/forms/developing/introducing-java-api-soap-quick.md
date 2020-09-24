@@ -7,10 +7,10 @@ uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: development-tools
+topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Introdução ao Start rápido da API Java {#introducing-java-api-quickstart}
 
-O Start rápido da API do Adobe AEM Forms pode ajudá-lo a acelerar seus esforços para desenvolver programas que interagem com os serviços do AEM Forms. *Os* Start rápidos são programas completos que você pode copiar e colar em seus próprios projetos e usar como ponto de partida. Você pode executar um Start rápido para ver como ele se comporta e modificá-lo de acordo com suas próprias necessidades.
+Start rápido de API da Adobe AEM Forms pode ajudá-lo a acelerar seus esforços para desenvolver programas que interagem com os serviços da AEM Forms. *Os* Start rápidos são programas completos que você pode copiar e colar em seus próprios projetos e usar como ponto de partida. Você pode executar um Start rápido para ver como ele se comporta e modificá-lo de acordo com suas próprias necessidades.
 
-As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
-O Start rápido da API de tipo Java fornece uma lista de arquivos JAR necessários para executar o aplicativo Java. A maioria dos Start rápidos do Java são aplicativos de console executados no `main`. No entanto, o Start Quick da API Java do Forms é implementado como servlet Java executado em um aplicativo da Web.
+O Start rápido da API de tipo Java fornece uma lista de arquivos JAR necessários para executar o aplicativo Java. A maioria dos Start rápidos do Java são aplicativos de console executados no `main`. No entanto, o Start Quick da API do Forms Java fortemente tipado é implementado como servlet Java executado em um aplicativo da Web.
 
 A listagem de arquivos JAR está localizada em uma seção de comentários localizada no início do Start rápido. Por exemplo, o comentário a seguir está localizado em um start rápido de Saída e é uma lista de arquivos JAR típica encontrada em cada Start rápido de Java.
 
@@ -65,17 +65,17 @@ A listagem de arquivos JAR está localizada em uma seção de comentários local
 
 ## Start rápido de vários serviços {#multiple-services-quick-start}
 
-A maioria dos Start rápidos localizados em *Programação com AEM Forms no JEE* chama um serviço específico para executar uma operação. No entanto, alguns Start rápidos chamam vários serviços de AEM Forms para executar um determinado fluxo de trabalho. A lista a seguir fornece start rápidos do Java que chamam mais de um serviço AEM Forms:
+A maioria dos Start rápidos localizados em *Programando com a AEM Forms no JEE* chama um serviço específico para executar uma operação. Entretanto, alguns Start rápidos chamam vários serviços da AEM Forms para executar um determinado fluxo de trabalho. A lista a seguir fornece start rápidos do Java que chamam mais de um serviço AEM Forms:
 
-[Start rápido (modo SOAP): Transmissão de um documento localizado no Repositório de AEM Forms para o serviço de Saída usando a API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) Java (chama o serviço Repositório e Saída)
+[Start rápido (modo SOAP): Transmissão de um documento localizado no Repositório AEM Forms para o serviço de Saída usando a API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) Java (chama o serviço Repositório e Saída)
 
 [Start rápido (modo SOAP): Criação de um documento PDF com base em fragmentos usando a API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) Java (chama o Assembler e o serviço de Saída)
 
-[Start rápido (modo SOAP): Criação de Documentos PDF com dados XML enviados usando a API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) Java (chama o serviço Formulários, Saída e Gerenciamento de Documentos)
+[Start rápido (modo SOAP): Criação de Documentos PDF com dados XML enviados usando a API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) Java (chama o serviço Forms, Output e Documento Management)
 
-[Start rápido (modo SOAP): Transmissão de documentos para o serviço de formulários usando a API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) Java (chama o serviço de Forms e Documento Management)
+[Start rápido (modo SOAP): Transmissão de documentos para o serviço Forms usando a API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) Java (chama o serviço Forms e Gerenciamento de Documentos)
 
-[Start rápido (modo SOAP): Assinando digitalmente um formulário baseado em XFA usando a API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) Java (chama o serviço de Formulários e Assinatura)
+[Start rápido (modo SOAP): Assinando digitalmente um formulário baseado em XFA usando a API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) Java (chama o serviço de assinatura e Forms)
 
 [Start rápido (modo SOAP): Gerenciando funções e permissões usando a API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) Java (chama o DiretoryManager e o serviço AuthorizationManager )
 
@@ -83,9 +83,9 @@ A maioria dos Start rápidos localizados em *Programação com AEM Forms no JEE*
 
 >[!NOTE]
 >
->O Start rápido localizado em Programação com AEM Forms é baseado nos AEM Forms que estão sendo implantados no JBoss® Application Server e no sistema operacional Microsoft® Windows®. Entretanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua os caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
+>Os Start rápidos localizados em Programação com a AEM Forms são baseados na AEM Forms que está sendo implantada no JBoss® Application Server e no sistema operacional Microsoft® Windows®. Entretanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua os caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
 
 >[!NOTE]
 >
->A maioria dos Start Rápidos do serviço da Web são escritos em C# e usam a estrutura .NET. No entanto, você pode criar uma lógica de aplicativo cliente capaz de invocar os serviços do AEM Forms em qualquer ambiente de desenvolvimento compatível com os padrões SOAP. (Consulte [Invocando AEM Forms Usando Serviços](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)da Web.)
+>A maioria dos Start Rápidos do serviço da Web são escritos em C# e usam a estrutura .NET. No entanto, você pode criar uma lógica de aplicativo cliente capaz de invocar os serviços da AEM Forms em qualquer ambiente de desenvolvimento compatível com os padrões SOAP. (Consulte [Invocando o AEM Forms usando os serviços](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)da Web.)
 
