@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Para obter informações básicas, visite :
 
 * [Usar bibliotecas](/help/sites-developing/clientlibs.md) do lado do cliente que fornecem detalhes de uso e ferramentas de depuração
 * [Clientlibs para SCF](/help/communities/client-customize.md#clientlibs) , que fornece informações úteis ao personalizar componentes SCF
-* [Blog : Bibliotecas do cliente AEM explicadas por exemplo](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [Blog : Bibliotecas AEM clientes explicadas por exemplo](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Por que os clientlibs são obrigatórios {#why-clientlibs-are-required}
 
@@ -41,24 +41,24 @@ Quando faltam os clientlibs necessários, [adicionar um componente Comunidades a
 
 ### Exemplo: Revisões feitas sem Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![revisões feitas](assets/placed-reviews.png)
 
 ### Exemplo: Revisões feitas com Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![review-clientlibs](assets/reviews-clientlibs.png)
 
 ## Como identificar clientlibs obrigatórios {#identifying-required-clientlibs}
 
 As informações de recursos essenciais para desenvolvedores identificam os clientlibs necessários.
 
-Além disso, de uma instância do AEM, navegar até o Guia [de componentes da](/help/communities/components-guide.md) comunidade fornece acesso a uma lista de categorias clientlib necessárias para um componente.
+Além disso, de uma instância AEM, navegar até o Guia [de componentes da](/help/communities/components-guide.md) comunidade fornece acesso a uma lista de categorias clientlib necessárias para um componente.
 
 Por exemplo, na parte superior da página [](https://localhost:4502/content/community-components/en/reviews.html) Revisões, os clientlibs necessários listados são
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![clientlibs-review](assets/clientlibs-reviews.png)
 
 ## Adicionando Clientlibs Obrigatórios {#adding-required-clientlibs}
 
@@ -66,7 +66,7 @@ Quando for desejado adicionar um componente Comunidades a uma página, será nec
 
 Use [CRXDE|Lite](#using-crxde-lite) para modificar uma lista de clientlibslist existente para uma página do site da comunidade.
 
-Para adicionar um clientlib a um site da comunidade usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Para adicionar uma clientlib para um site da comunidade usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navegue até [https://&lt;servidor>:&lt;porta>/crx/de](https://localhost:4502/crx/de).
 * Localize o `clientlibslist` nó da página na qual deseja adicionar o componente:
@@ -92,7 +92,7 @@ Para adicionar um clientlib a um site da comunidade usando o [CRXDE Lite](/help/
 >Se o site não for um site da comunidade, a existência ou o local das bibliotecas clientes em uso para o site precisará ser descoberto.
 
 
-Usando o [exemplo Introdução aos AEM Communities](/help/communities/getting-started.md) , onde `site-name` é *engajado*, esta é a forma como a clientliblist aparecerá se o componente de revisão for adicionado:
+Usando o exemplo [Introdução ao AEM Communities](/help/communities/getting-started.md) , onde `site-name` está *envolvido*, esta é a forma como a clientliblist aparecerá se você adicionar o componente de revisões:
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![componente de revisão](assets/review-component.png)
 
