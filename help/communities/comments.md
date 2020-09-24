@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 6%
@@ -47,7 +47,7 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando as bibliotecas [do cliente](/help/communities/essentials-comments.md#essentials-for-client-side) necessárias são incluídas, é assim que o `Comments` componente aparece.
 
-![chlimage_1-428](assets/chlimage_1-428.png)
+![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ Depois que os tipos de recursos personalizados forem conhecidos, entre no Modo [
 
 Na guia Tipos **de** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting` componentes:
 
-![chlimage_1-429](assets/chlimage_1-429.png)
+![tipo de recurso](assets/resource-type.png)
 
 * **Tipo de recursos de comentários**
 
