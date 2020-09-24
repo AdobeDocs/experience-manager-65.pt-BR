@@ -6,11 +6,11 @@ seo-description: Usando o Calvin, você pode criar casos de teste no CRXDE e exe
 uuid: 7bf4fc8f-96df-4407-8d10-cf18880518bd
 contentOwner: gtalwar
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%
@@ -55,10 +55,10 @@ Usando o Calvin, você pode criar casos de teste no CRXDE e executar testes de i
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Regras de Expressão</p> <p> </p> </td>
+   <td><p>Regras de expressão</p> <p> </p> </td>
    <td>
     <ul>
-     <li>As expressões estão associadas a objetos de formulário, como scripts calculate, visível e execute depois de sair de um campo, sendo executadas após a execução das operações relevantes da interface do usuário?<br /> </li>
+     <li>As expressões estão associadas a objetos de formulário, como scripts calculate, visível e execute após sair de um campo, sendo executadas após a execução das operações relevantes da interface do usuário?<br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -97,7 +97,7 @@ Antes de usar este artigo para criar seus casos de teste, é necessário saber o
 
 O exemplo a seguir o orienta na criação de um conjunto de testes para testar vários formulários adaptáveis. É necessário criar um caso de teste separado para cada formulário que você precisa testar. Ao seguir etapas semelhantes às seguintes e modificar o código JavaScript na etapa 11, você pode criar seu próprio conjunto de testes para testar seus formulários adaptáveis.
 
-1. Vá para o CRXDE Lite no seu navegador da Web: `https://'[server]:[port]'/crx/de`.
+1. Vá para CRXDE Lite no seu navegador da Web: `https://'[server]:[port]'/crx/de`.
 1. Clique com o botão direito do mouse na subpasta /etc/clientlibs e clique em **Criar** > **Criar nó**. Digite um nome (aqui afTestRegistration), especifique o tipo de nó como cq:ClientLibraryFolder e clique em **OK.**
 
    A pasta clientlibs contém o aspecto de registro do seu aplicativo (JS e Init). É recomendável registrar todos os objetos de conjuntos de testes Hobbes específicos a um formulário na pasta clientlibs.
@@ -306,7 +306,7 @@ Para executar um Test Suite:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-As etapas para testar os formulários adaptáveis do AEM são semelhantes às etapas para testar a interface do usuário do AEM. Para obter mais informações sobre como testar seus formulários adaptáveis, consulte os seguintes tópicos em [Testar sua interface do usuário](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
+As etapas para testar seus formulários adaptáveis AEM são semelhantes às etapas para testar sua interface de usuário AEM. Para obter mais informações sobre como testar seus formulários adaptáveis, consulte os seguintes tópicos em [Testar sua interface do usuário](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
 
 * Exibindo conjuntos de testes
 * Execução de vários testes
@@ -332,7 +332,7 @@ As etapas para testar os formulários adaptáveis do AEM são semelhantes às et
    <td><p>As ações são métodos que executam um gesto na interface do usuário, como clicar em um botão ou preencher uma caixa de entrada com um valor.</p> <p>Os métodos das classes hobs.actions.Asserts, hobs.actions.Core e hobs.utils.af são ações que você pode usar em seus testes. Todas as ações são executadas sincronicamente.</p> </td>
   </tr>
   <tr>
-   <td><p>ambiente de autor ou publicação</p> </td>
+   <td><p>Ambiente de autor ou publicação</p> </td>
    <td><p>Em geral, os formulários podem ser testados no ambiente de autor ou publicação. No caso de ambiente publish, por padrão, o acesso para executar o teste é restrito. Isso ocorre porque todas as bibliotecas do cliente relacionadas ao runner de teste estão dentro de /libs na estrutura do JCR.</p> </td>
   </tr>
  </tbody>
