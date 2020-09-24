@@ -6,10 +6,13 @@ seo-description: Este artigo lista os atalhos do teclado que podem ser usados co
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
-topic-tags: correspondence-management
+topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 13%
 
 ---
 
@@ -49,6 +52,7 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 >
 >* Windows: Ctrl+Clique nos componentes necessários.
 >* MAC OS: Command+Clique nos componentes necessários.
+
 >
 
 
@@ -67,7 +71,7 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 >
 >Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no Mac OS.
 
-## Navegador de conteúdo {#contentbrowser}
+## Navegador de conteúdo  {#contentbrowser}
 
 | **Ação** | **Atalho no Windows** | **Atalho no Mac OS** |
 |---|---|---|
@@ -75,8 +79,8 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 | Recolher todas as acordeões na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todos os acordeões seguidos de Seta para a esquerda para recolher | Command+A para selecionar todos os acordeões seguidos pela seta para a esquerda para recolher |
 | Expandir a opção selecionada na árvore Objetos de formulário | Seta para a direita | Seta para a direita |
 | Recolher a opção selecionada na árvore Objetos de formulário | Seta para a esquerda | Seta para a esquerda |
-| Selecione o próximo item na árvore Objetos de formulário | Seta para baixo | Seta para baixo |
-| Selecione o item anterior na árvore Objetos de formulário | Seta para cima | Seta para cima |
+| Selecione o próximo item na árvore de objetos do Forms | Seta para baixo | Seta para baixo |
+| Selecione o item anterior na árvore Objetos do Forms | Seta para cima | Seta para cima |
 
 [1] Substitui Ctrl + seta para a direita para Windows e Command + seta para a direita para Mac OS.\
 [2] Substitui Ctrl + seta para a esquerda para Windows e Command + seta para a esquerda para Mac OS.
