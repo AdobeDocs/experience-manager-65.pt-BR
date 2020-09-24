@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Guia de componentes da comunidade  {#community-components-guide}
 
-O guia Community Components é uma ferramenta de desenvolvimento interativo para o quadro de componentes [sociais (SCF)](scf.md). Ele fornece uma lista de componentes de AEM Communities disponíveis ou os recursos mais complexos criados com vários componentes.
+O guia Community Components é uma ferramenta de desenvolvimento interativo para o quadro de componentes [sociais (SCF)](scf.md). Ele fornece uma lista de componentes AEM Communities disponíveis ou os recursos mais complexos criados com vários componentes.
 
 Juntamente com as informações básicas de cada componente, o guia permite experimentar como os componentes/recursos do SCF funcionam e como eles podem ser configurados ou personalizados.
 
@@ -61,7 +61,7 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 >
 >Para obter informações gerais sobre criação, visualização no guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
+>Se não estiver familiarizado com AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
 
 
 ### Página Inicial {#home-page}
@@ -70,13 +70,13 @@ O guia fornece uma lista de componentes SCF disponíveis para pré-visualizaçã
 
 Guia de componentes conforme exibido em uma instância do autor no modo Editar:
 
-![chlimage_1-404](assets/chlimage_1-404.png)
+![community-component1](assets/community-component1.png)
 
 ## Páginas de componentes {#component-pages}
 
 Selecione um componente da lista no lado esquerdo da página.
 
-![chlimage_1-405](assets/chlimage_1-405.png)
+![páginas de componentes da comunidade](assets/community-component2.png)
 
 O corpo principal da guia exibe:
 
@@ -100,11 +100,11 @@ Ao usar o guia em uma instância do autor, é possível experimentar a configura
 
 Para o guia Componentes da comunidade, algumas configurações de diálogo do componente são sobrepostas com o estado de alternância [Incluível](scf.md#add-or-include-a-communities-component) . Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto e clique em duplo para abrir a caixa de diálogo de edição:
 
-![chlimage_1-406](assets/chlimage_1-406.png)
+![community-component3](assets/community-component3.png)
 
 Na guia **Modelos** :
 
-![chlimage_1-407](assets/chlimage_1-407.png)
+![community-component4](assets/community-component4.png)
 
 * **Incluir o componente-filho com sling:include**
 
@@ -173,7 +173,9 @@ Usando o componente comments como um exemplo, na instância autor ou de publica�
 
 1. Observe que agora há 3 guias para Modelos, CSS e Dados.
 
-![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png)
+![community-component5](assets/community-component5.png)
+
+![community-component6](assets/community-component6.png)
 
 ### Guia Modelos {#templates-tab}
 
