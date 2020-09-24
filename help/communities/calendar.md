@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 7%
@@ -27,7 +27,7 @@ O recurso de calendário oferece suporte ao fornecimento de informações de eve
 
 Esta seção da documentação descreve
 
-* Adicionar o recurso de calendário a um site do AEM
+* Adicionar o recurso de calendário a um site AEM
 * Configurações para `Calendar` componentes
 
 ## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
@@ -42,15 +42,15 @@ Para obter as informações necessárias, visite Noções básicas sobre compone
 
 Quando as bibliotecas [do lado do cliente](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Calendar` componente será exibido.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![componente de calendário](assets/calendar-component.png)
 
 ### Configuração do calendário {#configuring-calendar}
 
 Selecione o componente inserido a ser acessado e selecione o `Calendar` `Configure` ícone que abre a caixa de diálogo de edição.
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![configure](assets/configure-new.png)
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![configure-calendário](assets/configure-calendar1.png)
 
 #### Guia Configurações {#settings-tab}
 
@@ -193,7 +193,7 @@ Outras capacidades dependem de o visitante do site ser um moderador, administrad
 
 Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar tarefas [de](/help/communities/moderate-ugc.md) moderação (conforme permitido pela configuração do componente) em todos os eventos de calendário e comentários postados em um evento.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![moderadores-visualização](assets/moderators-view.png)
 
 #### Membros {#members}
 
@@ -207,15 +207,15 @@ Concretamente, podem:
 * Excluir seus próprios eventos de calendário ou comentários
 * Sinalizar eventos ou comentários do calendário de outras pessoas
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![create-evento](assets/configure-calendar2.png)
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![evento-post](assets/configure-calendar3.png)
 
 #### Anônimo {#anonymous}
 
 Os visitantes do site que não estão conectados só podem ler eventos do calendário publicados, traduzi-los se houver suporte, mas não podem adicionar eventos ou comentários nem sinalizar eventos ou comentários de outras pessoas.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![anonimato-usuário-visualização](assets/anonymous-user-view1.png)
 
 ## Informações adicionais {#additional-information}
 
