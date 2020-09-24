@@ -1,32 +1,35 @@
 ---
-title: Teste da interface do usuário
-seo-title: Teste da interface do usuário
-description: O AEM fornece uma estrutura para automatizar testes para sua interface do usuário do AEM
-seo-description: O AEM fornece uma estrutura para automatizar testes para sua interface do usuário do AEM
+title: Testando sua interface de usuário
+seo-title: Testando sua interface de usuário
+description: AEM fornece uma estrutura para automatizar testes para sua interface de usuário AEM
+seo-description: AEM fornece uma estrutura para automatizar testes para sua interface de usuário AEM
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-topic-tags: testing
+topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 1%
 
 ---
 
 
-# Teste da interface do usuário{#testing-your-ui}
+# Testando sua interface de usuário{#testing-your-ui}
 
 >[!NOTE]
 >
->A partir do AEM 6.5, a estrutura de teste da interface do usuário do hobbes.js está obsoleta. A Adobe não planeja fazer mais aprimoramentos e recomenda que os clientes usem a automação Selenium.
+>A partir AEM 6.5, a estrutura de teste da interface do usuário do hobbes.js está obsoleta. A Adobe não planeja fazer mais aprimoramentos e recomenda que os clientes usem a automação Selenium.
 >
 >See [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md).
 
-O AEM fornece uma estrutura para a automação de testes para sua interface do usuário do AEM. Usando a estrutura, você grava e executa testes de interface diretamente em um navegador da Web. A estrutura fornece uma API javascript para a criação de testes.
+AEM fornece uma estrutura para automatizar testes para sua interface AEM. Usando a estrutura, você grava e executa testes de interface diretamente em um navegador da Web. A estrutura fornece uma API javascript para a criação de testes.
 
-A estrutura de teste do AEM usa Hobbes.js, uma biblioteca de testes escrita em Javascript. A estrutura do Hobbes.js foi desenvolvida para testar o AEM como parte do processo de desenvolvimento. A estrutura agora está disponível para uso público para testar seus aplicativos AEM.
+A estrutura de teste AEM usa Hobbes.js, uma biblioteca de testes escrita em Javascript. A estrutura do Hobbes.js foi desenvolvida para testar AEM como parte do processo de desenvolvimento. A estrutura agora está disponível para uso público para testar seus aplicativos AEM.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ A estrutura de teste do AEM usa Hobbes.js, uma biblioteca de testes escrita em J
 
 ## Estrutura dos ensaios {#structure-of-tests}
 
-Ao usar testes automatizados no AEM, os seguintes termos são importantes para entender:
+Ao usar testes automatizados em AEM, os seguintes termos são importantes para entender:
 
 | Ação | Uma **ação** é uma atividade específica em uma página da Web, como clicar em um link ou em um botão. |
 |---|---|
@@ -45,19 +48,19 @@ Ao usar testes automatizados no AEM, os seguintes termos são importantes para e
 
 ### Exibindo conjuntos de testes {#viewing-test-suites}
 
-Abra o console de teste para ver os conjuntos de teste registrados. O painel Testes contém uma lista de conjuntos de testes e seus casos de teste.
+Abra o console de teste para ver os conjuntos de teste registrados. O painel Testes contém uma lista de conjuntos de teste e seus casos de teste.
 
 Navegue até o console Ferramentas por meio de Navegação **global -> Ferramentas > Operações -> Teste**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-Ao abrir o console, os Conjuntos de teste são listados à esquerda, juntamente com uma opção para executar todos eles sequencialmente. O espaço à direita mostrado com um plano de fundo verificado é um espaço reservado para mostrar o conteúdo da página durante a execução dos testes.
+Ao abrir o console, os Conjuntos de teste são listados à esquerda, juntamente com uma opção para executar todos eles sequencialmente. O espaço à direita mostrado com um plano de fundo verificado é um espaço reservado para mostrar o conteúdo da página à medida que os testes são executados.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
 ### Execução de um único Test Suite {#running-a-single-test-suite}
 
-Os Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página muda conforme os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
+Os Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página é alterada à medida que os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
 
 Um ícone de marca de seleção indica um teste aprovado:
 
@@ -95,7 +98,7 @@ Os conjuntos de testes são executados sequencialmente na ordem em que são exib
 
    ![](do-not-localize/chlimage_1-5.png)
 
-1. Para exibir os resultados de cada caso de teste, toque ou clique no título do caso de teste. Tocar ou clicar no nome do teste no painel **Resultado** mostra todos os detalhes.
+1. Para visualização dos resultados de cada caso de teste, toque ou clique no título do caso de teste. Tocar ou clicar no nome do teste no painel **Resultado** mostra todos os detalhes.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
