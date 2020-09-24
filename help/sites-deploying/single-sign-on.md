@@ -1,16 +1,19 @@
 ---
 title: Logon único
 seo-title: Logon único
-description: Saiba como configurar o logon único (SSO) para uma instância do AEM.
-seo-description: Saiba como configurar o logon único (SSO) para uma instância do AEM.
+description: Saiba como configurar o Single Sign On (SSO) para uma instância AEM.
+seo-description: Saiba como configurar o Single Sign On (SSO) para uma instância AEM.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: configuring, Security
 content-type: reference
-topic-tags: Security
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
@@ -36,26 +39,27 @@ Você deve especificar o mesmo nome de atributo para ambos os serviços. O atrib
 
 ## Configurando SSO {#configuring-sso}
 
-Para configurar o SSO para uma instância do AEM, é necessário configurar o Manipulador [de Autenticação](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)SSO:
+Para configurar o SSO para uma instância AEM, é necessário configurar o Manipulador [de Autenticação](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)SSO:
 
 1. When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
    Por exemplo, para o conjunto NTLM:
 
-   * **** Caminho: conforme necessário;por exemplo, `/`
+   * **Caminho:** conforme necessário; por exemplo, `/`
    * **Nomes** do cabeçalho: `LOGON_USER`
    * **Formato** da ID: `^<DOMAIN>\\(.+)$`
 
       Onde `<*DOMAIN*>` é substituído pelo seu próprio nome de domínio.
    Para CoSign:
 
-   * **** Caminho: conforme necessário;por exemplo, `/`
+   * **Caminho:** conforme necessário; por exemplo, `/`
    * **Nomes** do cabeçalho: remote_user
-   * **** Formato da ID: AsIs
+   * **Formato da ID:** AsIs
+
    Para o SiteMinder:
 
-   * **** Caminho: conforme necessário;por exemplo, `/`
-   * **** Nomes do cabeçalho: SM_USER
+   * **Caminho:** conforme necessário; por exemplo, `/`
+   * **Nomes do cabeçalho:** SM_USER
    * **Formato** da ID: AsIs
 
 
@@ -64,11 +68,11 @@ Para configurar o SSO para uma instância do AEM, é necessário configurar o Ma
 
 >[!CAUTION]
 >
->Verifique se os usuários não podem acessar o AEM diretamente se o SSO estiver configurado.
+>Verifique se os usuários não podem acessar AEM diretamente se o SSO estiver configurado.
 >
->Ao exigir que os usuários passem por um servidor da Web que executa o agente do sistema SSO, é garantido que nenhum usuário possa enviar diretamente um cabeçalho, cookie ou parâmetro que fará com que o usuário seja confiável pelo AEM, já que o agente filtrará essas informações se forem enviadas de fora.
+>Ao exigir que os usuários passem por um servidor da Web que executa o agente do sistema SSO, é garantido que nenhum usuário possa enviar diretamente um cabeçalho, cookie ou parâmetro que fará com que o usuário seja confiável pela AEM, já que o agente filtrará essas informações se forem enviadas de fora.
 >
->Qualquer usuário que possa acessar diretamente sua instância do AEM sem passar pelo servidor da Web poderá agir como qualquer usuário enviando o cabeçalho, o cookie ou o parâmetro, se os nomes forem conhecidos.
+>Qualquer usuário que possa acessar diretamente sua instância de AEM sem passar pelo servidor da Web poderá agir como qualquer usuário enviando o cabeçalho, o cookie ou o parâmetro, se os nomes forem conhecidos.
 >
 >Certifique-se também de que, dos cabeçalhos, cookies e nomes de parâmetros de solicitação, você só configure o que é necessário para a configuração SSO.
 
@@ -83,6 +87,7 @@ Para configurar o SSO para uma instância do AEM, é necessário configurar o Ma
 >
 >* `disp_iis.ini`
 >* IIS
+
 >
 >
 No `disp_iis.ini` conjunto:
@@ -90,6 +95,7 @@ No `disp_iis.ini` conjunto:
 >
 >* `servervariables=1` (encaminha variáveis do servidor IIS como cabeçalhos de solicitação para a instância remota)
 >* `replaceauthorization=1` (substitui qualquer cabeçalho chamado &quot;Autorização&quot;, que não seja &quot;Básica&quot;, por seu equivalente &quot;Básico&quot;)
+
 >
 >
 No IIS:
@@ -98,6 +104,7 @@ No IIS:
    >
    >
 * ativar a autenticação **integrada do Windows**
+
 >
 
 
@@ -106,7 +113,7 @@ Você pode ver qual manipulador de autenticação está sendo aplicado a qualque
 
 `http://localhost:4502/system/console/slingauth`
 
-O manipulador que melhor corresponde ao caminho é consultado primeiro. Por exemplo, se você configurar o manipulador A para o caminho `/` e o manipulador B para o caminho `/content`, então uma solicitação para `/content/mypage.html` consultará o manipulador B primeiro.
+O manipulador que melhor corresponde ao caminho é consultado primeiro. Por exemplo, se você configurar o manipulador A para o caminho `/` e o manipulador B para o caminho `/content`, então uma solicitação para o manipulador de query B `/content/mypage.html` será feita primeiro.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
@@ -153,15 +160,16 @@ Transfer-Encoding: chunked
 Isso também funciona se você solicitar:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Ou você pode usar o seguinte comando de curva para enviar o `TestHeader` cabeçalho para `admin:``curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
+Ou você pode usar o seguinte comando de ondulação para enviar o `TestHeader` cabeçalho para `admin:`
+`curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
 >Ao usar o parâmetro de solicitação em um navegador, você verá apenas alguns dos HTML - sem CSS. Isso ocorre porque todas as solicitações do HTML são feitas sem o parâmetro de solicitação.
 
-## Removendo links de saída do AEM {#removing-aem-sign-out-links}
+## Remoção AEM links de logoff {#removing-aem-sign-out-links}
 
-Ao usar o SSO, o logon e o logoff são tratados externamente, de modo que os próprios links de logoff do AEM não são mais aplicáveis e devem ser removidos.
+Ao usar o SSO, o logon e o logout são tratados externamente, de modo que os próprios links de logout AEM não são mais aplicáveis e devem ser removidos.
 
 O link de logoff na tela de boas-vindas pode ser removido usando as seguintes etapas.
 
