@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -104,19 +104,19 @@ Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
 
 * Publicar novamente o site da comunidade
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![configure-Catalog](assets/configure-catalog.png)
 
 #### TagIDs de pré-filtro {#pre-filter-tagids}
 
 As [TagIDs](../../help/sites-developing/framework.md#tagid) pré-filtradas devem corresponder exatamente às tags aplicadas aos recursos de ativação. Elas estão visíveis na `resources` pasta do site como os valores da propriedade `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![configure-filtros](assets/configure-catalog1.png)
 
 ### APIs de referência {#reference-apis}
 
 * [API de ativação](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [API do Relatórios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [API do relatórios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
 * [API do Relatórios Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
