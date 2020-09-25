@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '5029'
 ht-degree: 2%
@@ -532,7 +532,7 @@ Gerencia módulos de interface do usuário e renderizadores de módulo de interf
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registra um renderizador de módulo de interface com o ContextHub. Depois que o renderizador é registrado, ele pode ser usado para [criar módulos](/help/sites-administering/contexthub-config.md#adding-a-ui-module)de interface do usuário. Use essa função ao [estender ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) para criar um renderizador de Módulo de interface personalizado.
+Registra um renderizador de módulo de interface com o ContextHub. Depois que o renderizador é registrado, ele pode ser usado para [criar módulos](ch-configuring.md#adding-a-ui-module)de interface do usuário. Use essa função ao [estender ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) para criar um renderizador de Módulo de interface personalizado.
 
 **Parâmetros**
 
