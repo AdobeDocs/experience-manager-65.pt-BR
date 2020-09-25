@@ -1,288 +1,151 @@
 ---
-title: Configuração do ContextHub
-seo-title: Configuração do ContextHub
-description: Saiba como configurar o Context Hub.
-seo-description: Saiba como configurar o Context Hub.
-uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
+title: Adicionando o ContextHub a páginas e acessando lojas
+description: Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas do ContextHub Javascript
 translation-type: tm+mt
-source-git-commit: e37ff1c9e657c580c607f2656adca01a2b39f81f
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '927'
+ht-degree: 0%
 
 ---
 
 
-# Configuração do ContextHub {#configuring-contexthub}
+# Adicionando o ContextHub a páginas e acessando lojas {#adding-contexthub-to-pages-and-accessing-stores}
 
-O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. Para obter mais detalhes sobre o ContextHub, consulte a documentação [do](/help/sites-developing/contexthub.md)desenvolvedor. O ContextHub substitui o Contexto [do](/help/sites-administering/client-context.md) cliente na interface de toque.
+Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e para vincular às bibliotecas do ContextHub Javascript.
 
-Configure a barra de ferramentas do [ContextHub](/help/sites-developing/contexthub.md) para controlar se ela aparece no modo de visualização, para criar armazenamentos do ContextHub e adicionar módulos de interface usando a interface otimizada ao toque.
+A API Javascript do ContextHub fornece acesso aos dados de contexto que o ContextHub gerencia. Esta página descreve resumidamente os principais recursos da API para acessar e manipular dados de contexto. Siga os links para a documentação de referência da API para ver informações detalhadas e exemplos de código.
 
-## Desabilitando o ContextHub {#disabling-contexthub}
+## Adicionar o ContextHub a um componente de página {#adding-contexthub-to-a-page-component}
 
-Por padrão, o ContextHub está ativado em uma instalação do AEM. O ContextHub pode ser desabilitado para impedir que ele carregue js/css e inicialize. Há duas opções para desativar o ContextHub:
-
-* Edite a configuração do ContextHub e marque a opção **Desativar o ContextHub**
-
-   1. No painel, clique ou toque em **Ferramentas > Sites > ContextHub**
-   1. Clique ou toque no Contêiner **de configuração padrão**
-   1. Selecione a Configuração **do** ContextHub e clique ou toque em **Editar elemento selecionado**
-   1. Clique ou toque em **Desativar ContextHub** e clique ou toque em **Salvar**
-
-ou
-
-* Use o CRXDE Lite para definir a propriedade `disabled` como **true** em `/libs/settings/cloudsettings`
-
->[!NOTE]
->
->[Devido à reestruturação do repositório no AEM 6.4,](/help/sites-deploying/repository-restructuring.md) o local das configurações do ContextHub mudou de `/etc/cloudsettings` para:
->
-> * `/libs/settings/cloudsettings`
-> * `/conf/global/settings/cloudsettings`
-> * `/conf/<tenant>/settings/cloudsettings`
-
-
-## Mostrar e ocultar a interface do usuário do ContextHub {#showing-and-hiding-the-contexthub-ui}
-
-Configure o serviço OSGi do Adobe Granite ContextHub para mostrar ou ocultar a interface do usuário [do](/help/sites-authoring/ch-previewing.md) ContextHub em suas páginas. O PID deste serviço é `com.adobe.granite.contexthub.impl.ContextHubImpl.`
-
-Para configurar o serviço, você pode usar o Console [da](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web ou usar um nó [JCR no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
-
-* **** Console da Web: Para mostrar a interface do usuário, selecione a propriedade Mostrar interface do usuário. Para ocultar a interface do usuário, limpe a propriedade Ocultar interface do usuário.
-* **** Nó JCR: Para mostrar a interface do usuário, defina a `com.adobe.granite.contexthub.show_ui` propriedade booleana como `true`. Para ocultar a interface do usuário, defina a propriedade como `false`.
-
-Ao mostrar a interface do usuário do ContextHub, ela só aparece nas páginas nas instâncias do autor do AEM. A interface do usuário não aparece nas páginas das instâncias de publicação.
-
-## Adicionar módulos e módulos de interface do usuário do ContextHub {#adding-contexthub-ui-modes-and-modules}
-
-Configure os modos e módulos de interface que aparecem na barra de ferramentas do ContextHub no modo de visualização:
-
-* Modos da interface: Grupos de módulos relacionados
-* Módulos: Widgets que expõem dados de contexto de uma loja e permitem que os autores manipulem o contexto
-
-Os modos de interface são exibidos como uma série de ícones no lado esquerdo da barra de ferramentas. Quando selecionados, os módulos de um modo de interface aparecem à direita.
-
-![chlimage_1-319](assets/chlimage_1-319.png)
-
-Os ícones são referências da biblioteca [de ícones da interface do](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)Coral.
-
-### Adicionar um modo de interface {#adding-a-ui-mode}
-
-Adicione um modo de interface para agrupar módulos ContextHub relacionados. Ao criar o modo de interface do usuário, você fornece o título e o ícone exibidos na barra de ferramentas do ContextHub.
-
-1. No painel Experience Manager, clique ou toque em Ferramentas > Sites > Context Hub.
-1. Clique ou toque no Contêiner de configuração padrão.
-1. Clique ou toque em Configuração do Context Hub.
-1. Clique ou toque no botão Criar e, em seguida, clique ou toque em Modo de interface do usuário do Context Hub.
-
-   ![chlimage_1-320](assets/chlimage_1-320.png)
-
-1. Forneça valores para as seguintes propriedades:
-
-   * Título do modo da interface do usuário: O título que identifica o modo da interface do usuário
-   * Ícone Modo: O seletor para o ícone [da interface do](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) Coral a ser usado, por exemplo `coral-Icon--user`
-   * Ativado: Selecione para mostrar o modo da interface na barra de ferramentas do ContextHub
-
-1. Clique ou toque em Salvar.
-
-### Adicionando um módulo de interface {#adding-a-ui-module}
-
-Adicione um módulo de interface do ContextHub a um modo de interface do usuário para que ele apareça na barra de ferramentas do ContextHub para visualizar o conteúdo da página. Ao adicionar um módulo de interface, você está criando uma instância de um tipo de módulo que está registrado no ContextHub. Para adicionar um módulo de interface, é necessário saber o nome do tipo de módulo associado.
-
-O AEM fornece um tipo de módulo de interface de usuário base, bem como vários tipos de exemplo de módulo de interface de usuário nos quais você pode basear um módulo de interface de usuário. A tabela a seguir fornece uma breve descrição de cada uma. Para obter informações sobre como desenvolver um módulo de interface personalizado, consulte [Criação de módulos](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)de interface do usuário do ContextHub.
-
-As propriedades do módulo de interface incluem uma configuração detalhada na qual você pode fornecer valores para propriedades específicas do módulo. Você fornece a configuração detalhada no formato JSON. A coluna Tipo de módulo na tabela fornece links para informações sobre o código JSON necessário para cada tipo de módulo de interface.
-
-| Tipo de módulo | Descrição | Armazenar |
-|---|---|---|
-| [contexthub.base](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) | Um tipo de módulo de interface genérica | Configurado nas propriedades do módulo de interface |
-| [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Exibe informações sobre o navegador | surferinfo |
-| [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Exibe informações de data e hora | datetime |
-| [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Exibir o dispositivo cliente | emuladores |
-| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Exibe a latitude e a longitude do cliente, bem como o local em um mapa. Permite alterar o local. | geolocalização |
-| [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Exibe a orientação da tela do dispositivo (paisagem ou retrato) | emuladores |
-| [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Exibe estatísticas sobre tags de página | tagcloud |
-| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Exibe as informações de perfil do usuário atual, incluindo authorizedID, displayName e familyName. Você pode alterar o valor de displayName e familyName. | o perfil do visitante |
-
-1. No painel Experience Manager, clique ou toque em Ferramentas > Sites > ContextHub.
-1. Clique ou toque no Contêiner de configuração ao qual deseja adicionar um módulo de interface do usuário.
-1. Clique ou digite a Configuração do ContextHub à qual você deseja adicionar o módulo da interface.
-1. Clique ou toque no modo de interface do usuário ao qual você está adicionando o módulo de interface.
-1. Clique ou toque no botão Criar e, em seguida, clique ou toque em Módulo de interface do usuário do ContextHub (genérico).
-
-   ![chlimage_1-321](assets/chlimage_1-321.png)
-
-1. Forneça valores para as seguintes propriedades:
-
-   * Título do módulo da interface do usuário: Um título que identifica o módulo da interface do usuário
-   * Tipo de módulo: O tipo de módulo
-   * Ativado: Selecione para mostrar o módulo da interface na barra de ferramentas do ContextHub
-
-1. (Opcional) Para substituir a configuração de armazenamento padrão, insira um objeto JSON para configurar o Módulo de interface.
-1. Clique ou toque em Salvar.
-
-## Criação de uma loja do ContextHub {#creating-a-contexthub-store}
-
-Crie um repositório do Context Hub para manter os dados do usuário e acessar os dados conforme necessário. As lojas do ContextHub são baseadas em candidatos a lojas registradas. Ao criar a loja, você precisa do valor de storeType com o qual o candidato da loja foi registrado. (Consulte [Criação de Candidatos](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)à Loja Personalizada.)
-
-### Configuração detalhada da loja {#detailed-store-configuration}
-
-Quando você configura uma loja, a propriedade Configuração de detalhes permite que você forneça valores para propriedades específicas da loja. O valor é baseado no `config` parâmetro da `init` função do repositório. Portanto, se você precisa fornecer esse valor e o formato do valor depende da loja.
-
-O valor da propriedade Detail Configuration é um `config` objeto no formato JSON.
-
-### Amostra de candidatos à loja {#sample-store-candidates}
-
-O AEM fornece os seguintes candidatos de armazenamento de amostra nos quais você pode basear uma loja.
-
-| Tipo de armazenamento | Descrição |
-|---|---|
-| [aem.segmentation](/help/sites-developing/ch-samplestores.md#aem-segmentation-sample-store-candidate) | Armazenar para segmentos do ContextHub resolvidos e não resolvidos. Recupera automaticamente segmentos do ContextHub SegmentManager |
-| [aem.resolvedsegmentos](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Armazena os segmentos resolvidos no momento. Escuta o serviço ContextHub SegmentManager para atualizar automaticamente a loja |
-| [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) | Armazena a latitude e a longitude do local do navegador. |
-| [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) | Armazena a data, a hora e a estação atuais para o local do navegador |
-| [granite.emuladores](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Define as propriedades e os recursos de vários dispositivos e detecta o dispositivo cliente atual |
-| [contexthub.generic-jsonp](/help/sites-developing/ch-samplestores.md#contexthub-generic-jsonp-sample-store-candidate) | Recupera e armazena dados de um serviço JSONP |
-| [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) | Armazena dados de perfil para o usuário atual |
-| [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Armazena informações sobre o cliente, como informações do dispositivo, tipo de navegador e orientação da janela |
-| [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Armazena tags de página e contagens de tags |
-
-1. No painel Experience Manager, clique ou toque em Ferramentas > Sites > ContextHub.
-1. Clique ou toque no contêiner de configuração padrão.
-1. Clique ou toque em Configuração do Contexthub
-1. Para adicionar uma loja, clique ou toque no ícone Criar e, em seguida, clique ou toque em Configuração da Loja ContexHub.
-
-   ![chlimage_1-322](assets/chlimage_1-322.png)
-
-1. Forneça valores para as propriedades de configuração básicas e clique ou toque em Avançar:
-
-   * **** Título da configuração: O título que identifica a loja
-   * **** Tipo de armazenamento: O valor da propriedade storeType do candidato da loja no qual basear a loja
-   * **** Obrigatório: Selecionar
-   * **** Ativado: Selecione para ativar a loja
-
-1. (Opcional) Para substituir a configuração de armazenamento padrão, digite um objeto JSON na caixa Configuração detalhada (JSON).
-1. Clique ou toque em Salvar.
-
-## Exemplo: Uso de um serviço JSONP {#example-using-a-jsonp-service}
-
-Este exemplo ilustra como configurar uma loja e exibir os dados em um módulo de interface. Neste exemplo, o serviço MD5 do site jsontest.com é usado como uma fonte de dados para uma loja. O serviço retorna o código de hash MD5 de uma determinada string, no formato JSON.
-
-Uma loja contexthub.generic-jsonp é configurada para que armazene dados para a chamada de serviço `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. O serviço retorna os seguintes dados exibidos em um módulo de interface do usuário:
+Para ativar os recursos do ContextHub e vincular às bibliotecas do ContextHub Javascript, inclua o `contexthub` componente na seção da `head` página. O código HTL do componente de sua página deve se assemelhar ao exemplo a seguir:
 
 ```xml
-{
-   "md5": "919a56ab62b6d5e1219fe1d95248a2c5",
-   "original": "\"text to md5\""
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
+```
+
+Observe que também é necessário configurar se a barra de ferramentas do ContextHub aparece no modo de Pré-visualização. Consulte [Mostrar e ocultar a interface do usuário](ch-configuring.md#showing-and-hiding-the-contexthub-ui)do ContextHub.
+
+## Sobre as Lojas do ContextHub {#about-contexthub-stores}
+
+Use os armazenamentos do ContextHub para persistir nos dados de contexto. O ContextHub fornece os seguintes tipos de lojas que formam a base de todos os tipos de lojas:
+
+* [PersistedStore](contexthub-api.md#contexthub-store-persistedstore)
+* [SessionStore](contexthub-api.md#contexthub-store-sessionstore)
+* [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
+* [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
+
+Todos os tipos de armazenamento são extensões da [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) classe. Para obter informações sobre como criar um novo tipo de armazenamento, consulte [Criação de armazenamentos](ch-extend.md#creating-custom-store-candidates)personalizados. Para obter informações sobre tipos de armazenamento de amostra, consulte [Amostra de candidatos](ch-samplestores.md)à loja do ContextHub.
+
+### Modos de persistência {#persistence-modes}
+
+Os armazenamentos do Context Hub usam um dos seguintes modos de persistência:
+
+* **Local:** Usa HTML5 localStorage para persistir os dados. O armazenamento local é persistente no navegador entre sessões.
+* **Sessão:** Usa HTML5 sessionStorage para persistir os dados. O armazenamento de sessão é persistente durante a sessão do navegador e está disponível para todas as janelas do navegador.
+* **Cookie:** Usa o suporte nativo do navegador a cookies para armazenamento de dados. Os dados do cookie são enviados para e do servidor em solicitações HTTP.
+* **Window.name:** Usa a propriedade window.name para persistir nos dados.
+* **Memória:** Usa um objeto Javascript para persistir os dados.
+
+Por padrão, o Context Hub usa o modo de persistência Local. Se o navegador não suportar ou permitir HTML5 localStorage, a persistência da sessão será usada. Se o navegador não oferecer suporte ou permitir o HTML5 sessionStorage, a persistência de Window.name será usada.
+
+### Armazenamento de dados {#store-data}
+
+Internamente, armazene formulários de dados em uma estrutura em árvore, permitindo que valores sejam adicionados como tipos primários ou objetos complexos. Quando objetos complexos são adicionados a armazenamentos, as propriedades de objetos formam ramificações na árvore de dados. Por exemplo, o seguinte objeto complexo é adicionado a uma loja vazia com o nome de local:
+
+```javascript
+Object {
+   number: 321,
+   data: {
+      city: "Basel",
+      country: "Switzerland",
+      details: {
+         population: 173330,
+         elevation: 260
+      }
+   }
 }
 ```
 
-### Criação de uma loja contexthub.generic-jsonp {#creating-a-contexthub-generic-jsonp-store}
+A estrutura em árvore dos dados de armazenamento pode ser conceitualizada da seguinte maneira:
 
-O candidato do repositório de amostra contexthub.generic-jsonp permite recuperar dados de um serviço JSONP ou de um serviço da Web que retorna dados JSON. Para o candidato a esta loja, use a configuração da loja para fornecer detalhes sobre o serviço JSONP a ser usado.
+```text
+/
+|- number
+|- data
+      |- city
+      |- country
+      |- details
+            |- population
+            |- elevation
+```
 
-A função [init](/help/sites-developing/contexthub-api.md#init-name-config) da classe `ContextHub.Store.JSONPStore` Javascript define um `config` objeto que inicializa esse candidato de armazenamento. O `config` objeto contém um `service` objeto que inclui detalhes sobre o serviço JSONP. Para configurar a loja, forneça o `service` objeto no formato JSON como o valor da propriedade Detail Configuration.
+A estrutura em árvore define itens de dados no armazenamento como pares de chave/valor. No exemplo acima, a chave `/number` corresponde ao valor `321`, e a chave `/data/country` corresponde ao valor `Switzerland`.
 
-Para salvar dados do serviço MD5 do site jsontest.com, use o procedimento em [Criar uma loja](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store) do ContextHub usando as seguintes propriedades:
+### Manipulação de objetos {#manipulating-objects}
 
-* **** Título da configuração: md5
-* **** Tipo de armazenamento:contexthub.generic-jsonp
-* **** Obrigatório: Selecionar
-* **** Ativado: Selecionar
-* **Configuração detalhada (JSON):**
+O ContextHub fornece a [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) classe para manipular objetos Javascript. Use as funções dessa classe para manipular objetos Javascript antes de adicioná-los a uma loja ou depois de obtê-los de uma loja.
 
-   ```xml
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+Além disso, a [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) classe fornece funções para serialização de objetos em strings e desserialização de strings em objetos. Use essa classe para manipular dados JSON para suportar navegadores que não incluem nativamente as funções `JSON.parse` e `JSON.stringify` .
 
-### Adicionar um módulo de interface para os dados md5 {#adding-a-ui-module-for-the-md-data}
+## Interação com as armazenamentos do ContextHub {#interacting-with-contexthub-stores}
 
-Adicione um módulo de interface à barra de ferramentas do ContextHub para exibir os dados armazenados no armazenamento md5 de exemplo. Neste exemplo, o módulo contexthub.base é usado para produzir o seguinte módulo de interface:
+Use o objeto [`ContextHub`](contexthub-api.md#ui-event-constants) Javascript para obter uma loja como um objeto Javascript. Depois de obter o objeto store, é possível manipular os dados que ele contém. Use a função [`getAllStores`](contexthub-api.md#getallstores) ou a [`getStore`](contexthub-api.md#getstore-name) função para obter a loja.
 
-![chlimage_1-323](assets/chlimage_1-323.png)
+### Acessar dados da loja {#accessing-store-data}
 
-Use o procedimento em [Adicionar um módulo](/help/sites-administering/contexthub-config.md#adding-a-ui-module) de interface para adicionar o módulo de interface a um modo de interface de usuário existente, como o exemplo de Modo de interface de usuário Perona. Para o Módulo de interface, use os seguintes valores de propriedade:
+A classe [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) Javascript define várias funções para interagir com dados de armazenamento. As seguintes funções armazenam e recuperam vários itens de dados contidos em objetos:
 
-* **** Título do módulo da interface do usuário: MD5
-* **** Tipo de módulo:contexthub.base
-* **Configuração detalhada (JSON):**
+* [addAllItems](contexthub-api.md#addallitems-tree-options)
+* [getTree](contexthub-api.md#gettree-includeinternals)
 
-   ```xml
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Converstion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+Os itens de dados individuais são armazenados como um conjunto de pares de chave/valor. Para armazenar e recuperar valores, especifique a chave correspondente:
 
-## Depuração do ContextHub {#debugging-contexthub}
+* [getItem](contexthub-api.md#getitem-key)
+* [setItem](contexthub-api.md#setitem-key-value-options)
 
-Um modo de depuração do ContextHub pode ser habilitado para permitir a solução de problemas. O modo de depuração pode ser ativado pela configuração do ContextHub ou pelo CRXDE.
-
-### Pela configuração {#via-the-configuration}
-
-Edite a configuração do ContextHub e marque a opção **Depurar**
-
-1. No painel, clique ou toque em **Ferramentas > Sites > ContextHub**
-1. Clique ou toque no Contêiner **de configuração padrão**
-1. Selecione a Configuração **do** ContextHub e clique ou toque em **Editar elemento selecionado**
-1. Clique ou toque em **Depurar** e clique ou toque em **Salvar**
-
-### Via CRXDE {#via-crxde}
-
-Use o CRXDE Lite para definir a propriedade `debug` como **true** em:
-
-* `/conf/global/settings/cloudsettings` ou
-* `/conf/<tenant>/settings/cloudsettings`
+Observe que os candidatos a armazenamento personalizado podem definir funções adicionais que fornecem acesso aos dados de armazenamento.
 
 >[!NOTE]
 >
->Para configurações do ContextHub ainda localizadas sob seus caminhos herdados, o local para definir o `debug property` é `/libs/settings/cloudsettings/legacy/contexthub`.
+>Por padrão, o ContextHub não está ciente do logon atualmente usado em servidores de publicação e esses usuários são considerados pelo ContextHub como &quot;Anônimos&quot;.
+>
+>Você pode tornar o ContextHub ciente dos usuários conectados carregando a loja de perfis. Consulte o código de [amostra no GitHub aqui](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
-### Modo silencioso {#silent-mode}
+### Eventos do ContextHub {#contexthub-eventing}
 
-O modo silencioso suprime todas as informações de depuração. Ao contrário da opção de depuração normal, que pode ser definida independentemente para cada configuração do ContextHub, o modo silencioso é uma configuração global que tem precedência sobre qualquer configuração de depuração no nível de configuração do ContextHub.
+O ContextHub inclui uma estrutura de evento que permite que você reaja automaticamente para armazenar eventos. Cada objeto store contém um [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) objeto que está disponível como [`eventing`](contexthub-api.md#eventing) propriedade do armazenamento. Use a função [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) ou [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) para vincular uma função Javascript a um evento de loja.
 
-Isso é útil para a sua instância de publicação, onde você não quer nenhuma informação de depuração. Como é uma configuração global, ela é ativada via OSGi.
+## Uso do Context Hub para Manipular Cookies {#using-context-hub-to-manipulate-cookies}
 
-1. Abra a configuração **do console da Web do** Adobe Experience Manager em `http://<host>:<port>/system/console/configMgr`
-1. Procurar o **Adobe Granite ContextHub**
-1. Clique na configuração do **Adobe Granite ContextHub** para editar suas propriedades
-1. Marque a opção Modo **silencioso** e clique em **Salvar**
+A API Javascript do Context Hub fornece suporte entre navegadores para lidar com cookies de navegadores. A [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace define várias funções para criar, manipular e excluir cookies.
 
-## Recuperando configurações do ContextHub após atualizar {#recovering-contexthub-configurations-after-upgrading}
+## Determinando segmentos resolvidos do ContextHub {#determining-resolved-contexthub-segments}
 
-Quando uma [atualização para o AEM](/help/sites-deploying/upgrade.md) é realizada, o backup das configurações do ContextHub é feito e armazenado em um local seguro. Durante a atualização, as configurações padrão do ContextHub são instaladas, substituindo as existentes. O backup é necessário para preservar quaisquer alterações ou adições feitas.
+O mecanismo de segmento ContextHub permite que você determine quais segmentos registrados são resolvidos no contexto atual. Use a função getResolvedSegments da [`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) classe para recuperar segmentos resolvidos. Em seguida, use a função `getName` ou `getPath` da [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) classe para testar um segmento.
 
-As configurações do ContextHub são armazenadas em uma pasta nomeada `contexthub` nos seguintes nós:
+### Segmentos ContextHub {#contexthub-segments}
 
-* `/conf/global/settings/cloudsettings`
-* `/conf/<tenant>/settings/cloudsettings`
+Os segmentos do ContextHub são instalados abaixo do `/conf/<site>/settings/wcm/segments` nó.
 
-Após uma atualização, o backup é armazenado em uma pasta chamada `contexthub` abaixo de um nó chamado:
+Os seguintes segmentos são instalados com o site de tutorial [WKND.](getting-started.md)
 
-`/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` ou
-`/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
+* verão
+* inverno
 
-A `yyyymmdd` parte do nome do nó é a data em que a atualização foi realizada.
+As regras usadas para resolver esses segmentos são resumidas da seguinte forma:
 
-Para recuperar as configurações do ContextHub, use o CRXDE Lite para copiar os nós que representam as lojas, os modos de interface e os módulos de interface do usuário de baixo para baixo do `default-pre-upgrade_yyyymmdd_xxxxxx` nó a abaixo:
+* Primeiro, a loja de [geolocalização](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) é usada para determinar a latitude do usuário.
+* Em seguida, o item de dados do mês da loja [](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) surferinfo determina qual estação está nessa latitude.
 
-* `/conf/global/settings/cloudsettings` ou
-* `/conf/<tenant>/settings/cloudsettings`
+>[!WARNING]
+>
+>Os segmentos instalados são fornecidos como configurações de referência para ajudá-lo a criar sua própria configuração dedicada ao seu projeto e, como tal, não devem ser usados diretamente.
+
+## Depuração do ContextHub {#debugging-contexthub}
+
+Há várias opções para depurar o ContextHub, incluindo a geração de logs. Consulte [Configuração do ContextHub para obter mais informações.](ch-configuring.md#logging-debug-messages-for-contexthub)
+
+## Consulte uma visão geral da estrutura do ContextHub {#see-an-overview-of-the-contexthub-framework}
+
+O ContextHub fornece uma página [de](ch-diagnostics.md) diagnósticos onde você pode ver uma visão geral da estrutura do ContextHub.
