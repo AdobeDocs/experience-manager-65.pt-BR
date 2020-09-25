@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 20%
@@ -373,7 +373,7 @@ As pastas que têm um perfil atribuído a ele são indicadas na interface do usu
 
 Você pode aplicar perfis de vídeo a pastas específicas ou globalmente a todos os ativos.
 
-Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você tenha alterado posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você tenha alterado posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
 
 ### Aplicar um perfil de vídeo a pastas específicas {#applying-video-profiles-to-specific-folders}
 
@@ -381,7 +381,7 @@ Aplique um perfil de vídeo a uma pasta no menu **[!UICONTROL Ferramentas]** ou,
 
 As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 #### Aplicação de um perfil de vídeo a pastas por meio da interface do usuário de Perfis {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
@@ -402,7 +402,7 @@ Você pode [monitorar o progresso de um trabalho](#monitoring-the-progress-of-an
 
 Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado AEM ativos em qualquer pasta tenha o perfil selecionado aplicado.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 **Para aplicar um perfil de vídeo globalmente**,
 
