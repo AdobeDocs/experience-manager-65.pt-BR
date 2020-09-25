@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +27,7 @@ A barra de ferramentas consiste em uma série de modos de interface que contêm 
 * Os modos de interface do usuário são ícones que aparecem no lado esquerdo da barra de ferramentas. Quando você clica ou toca em um ícone, a barra de ferramentas revela os módulos de interface do usuário que ele contém.
 * Módulos de interface do usuário exibem dados de um ou mais armazenamentos do ContextHub. Alguns módulos de interface do usuário também permitem manipular os dados do armazenamento.
 
-O ContextHub instala vários modos e módulos de interface do usuário. Seu administrador pode ter [configurado o ContextHub](/help/sites-administering/contexthub-config.md) para exibir opções diferentes.
+O ContextHub instala vários modos e módulos de interface do usuário. Seu administrador pode ter [configurado o ContextHub](/help/sites-developing/ch-configuring.md) para exibir opções diferentes.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
