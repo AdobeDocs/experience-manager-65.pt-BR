@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2766'
+source-wordcount: '2767'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Formulários adaptáveis fornecem experiência de preenchimento de formulário otimizada e simplificada para usuários finais com recursos de script dinâmico. Ele permite que você escreva expressões para adicionar vários comportamentos, como mostrar/ocultar dinâmicos campos e painéis. Ela também permite que você adicione campos calculados, torne os campos somente leitura, adicione lógica de validação e muito mais. O comportamento dinâmico é baseado na entrada do usuário ou nos dados pré-preenchidos.
 
-JavaScript é a linguagem expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de certos tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptáveis.
+JavaScript é a linguagem expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de certos tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adaptáveis.
 
 ## Práticas recomendadas para gravar expressões {#best-practices-for-writing-expressions}
 
@@ -44,20 +44,20 @@ Painéis repetitivos são instâncias de um painel que são adicionadas ou remov
    * Para obter o instanceManager de um painel: `_panel1 or panel1.instanceManager`
    * Para remover uma instância de um painel: `_panel1.removeInstance(panel1.instanceIndex)`
 
-## Tipos de Expressão {#expression-types}
+## Tipos de expressão {#expression-types}
 
 Em formulários adaptáveis, é possível gravar expressões para adicionar comportamentos como mostrar/ocultar campos e painéis dinâmicos. Também é possível gravar expressões para adicionar campos calculados, tornar os campos somente leitura, lógica de validação e muito mais. Os formulários adaptáveis suportam as seguintes expressões:
 
-* **[expressões](#access-expression-enablement-expression)**de acesso: para ativar/desativar um campo.
+* **[Expressões](#access-expression-enablement-expression)** de acesso: para ativar/desativar um campo.
 * **[Calcular expressões](#calculate-expression)**: para calcular automaticamente o valor de um campo.
 * **[Clique em expressão](#click-expression)**: para manipular ações ao clicar no evento de um botão.
-* **[Script](#initialization-script)de inicialização:**execute uma ação na inicialização de um campo.
-* **[expressão](#options-expression)**de opções: para preencher dinamicamente uma lista suspensa.
-* **[expressão](#summary)**de resumo: para calcular dinamicamente o título de um acordeão.
+* **[Script](#initialization-script)de inicialização:** execute uma ação na inicialização de um campo.
+* **[Expressão](#options-expression)** de opções: para preencher dinamicamente uma lista suspensa.
+* **[Expressão](#summary)** de resumo: para calcular dinamicamente o título de um acordeão.
 * **[Validar expressões](#validate-expression)**: para validar um campo.
-* **[Script](#value-commit-script)de confirmação de valor:**para alterar os componentes de um formulário após a alteração do valor de um campo.
-* **[expressão](#visibility-expression)**de visibilidade: para controlar a visibilidade de um campo e painel.
-* **[expressão](#step-completion-expression)**de conclusão de etapas: para impedir que um usuário vá para a próxima etapa de um assistente.
+* **[Script](#value-commit-script)de confirmação de valor:** para alterar os componentes de um formulário após a alteração do valor de um campo.
+* **[Expressão](#visibility-expression)** de visibilidade: para controlar a visibilidade de um campo e painel.
+* **[Expressão](#step-completion-expression)** de conclusão de etapas: para impedir que um usuário vá para a próxima etapa de um assistente.
 
 ### Expressão de acesso (Expressão de ativação) {#access-expression-enablement-expression}
 
@@ -88,7 +88,7 @@ A expressão click manipula as ações executadas no evento click de um botão. 
 
 **Tipo** de retorno: A expressão click não retorna nenhum valor. Se qualquer expressão retornar um valor, ele será ignorado.
 
-**Exemplo**: Para preencher uma caixa de texto **caixa1** na ação de clique de um botão com **AEM Forms** de valor, a expressão de clique do botão é `textbox1.value="AEM Forms"`
+**Exemplo**: Para preencher uma caixa de texto **caixa1** na ação de clique de um botão com valor **AEM Forms**, a expressão de clique do botão é `textbox1.value="AEM Forms"`
 
 ### Script de inicialização {#initialization-script}
 
@@ -164,7 +164,7 @@ O script de Confirmação de Valor é acionado quando:
 
 >[!NOTE]
 >
->Você pode desativar a execução do Script de confirmação de valor quando o valor de um campo é alterado de forma programática. Para fazer isso, acesse https://&#39;[server]:[port]&#39;/system/console/configMgr e altere Versão dos formulários **adaptáveis para Compatibilidade** no **AEM Forms 6.1**. Em seguida, o script de confirmação de valor é executado somente quando o usuário altera o valor do campo da interface do usuário.
+>Você pode desativar a execução do Script de confirmação de valor quando o valor de um campo é alterado de forma programática. Para fazer isso, vá para https://&#39;[server]:[port]&#39;/system/console/configMgr e altere a versão **adaptável do Forms para Compatibilidade** com o **AEM Forms 6.1**. Em seguida, o script de confirmação de valor é executado somente quando o usuário altera o valor do campo da interface do usuário.
 
 ### Expressão de visibilidade {#visibility-expression}
 
@@ -253,7 +253,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->No AEM, é uma boa prática gravar um código em um clientLib e incluí-lo em sua página (header.jsp ou footer.jsp da página)
+>No AEM, é uma boa prática gravar o código em um clientLib e incluí-lo na sua página (header.jsp ou footer.jsp da página)
 
 Para usar o GuideBridge após a inicialização do formulário (o `bridgeInitializeComplete` evento é despachado), use a instância do GuideBridge `window.guideBridge`. Você pode verificar o status de inicialização do GuideBridge usando a `guideBride.isConnected` API.
 
@@ -283,7 +283,7 @@ Execute as seguintes etapas para criar um padrão personalizado para um tipo de 
 
 1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para o campo numérico, o valor da `guideComponentType` propriedade é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*.
 &quot;
-1. É possível adicionar um padrão personalizado atribuindo uma propriedade ao `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo `pattern1`) e defina seu valor para o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as Caixas de texto usadas em Formulários adaptáveis.
+1. É possível adicionar um padrão personalizado atribuindo uma propriedade ao `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo `pattern1`) e defina seu valor para o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as caixas de texto usadas no Forms adaptável.
 
    ![Criação de padrões personalizados para campos no CrxDe](assets/creating-custom-patterns.png)
 
