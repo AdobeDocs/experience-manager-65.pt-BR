@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '4813'
 ht-degree: 4%
@@ -223,11 +223,10 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    >    * Animação. Por padrão, cada transição de slide está esmaecida. Você pode mudar isso para uma transição de slide.
    >    * Estilo dos botões. Os usuários podem girar pelos banners tocando em cada ponto ou número. Você pode alterar o local em que os botões de indicador definidos aparecem (e se eles são numéricos ou de estilo pontilhado) e o tamanho deles.
    >    * Altere o estilo de realce de um mapa de imagem ou o ícone usado para pontos de acesso.
-   >    * Antes de editar uma predefinição do visualizador, escolha o estilo do qual deseja basear a predefinição. Se você não fizer isso, ao start de editar a predefinição do visualizador, perderá todas as alterações se decidir mudar para uma predefinição diferente
+   >    * Antes de editar uma predefinição do visualizador, escolha o estilo do qual deseja basear a predefinição. Se você não fizer isso, ao start de editar a predefinição do visualizador, perderá todas as alterações se decidir mudar para uma predefinição diferente.
 
    >
-   >
-   >Consulte Considerações [especiais para banners](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) de carrossel para obter instruções detalhadas e mais informações sobre o editor do visualizador.
+   >Consulte Considerações [especiais para banners](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) de carrossel para obter instruções detalhadas e mais informações sobre o editor do visualizador.
 
    Você também pode pré-visualização como será o banner do carrossel. Consulte [(Opcional) Visualização de banners](#optional-previewing-carousel-banners)de carrossel.
 
