@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '1194'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ O ContextHub fornece vários módulos de UI de amostra que você pode usar em su
 * Onde encontrar o código fonte para que você possa abri-lo para fins de aprendizado.
 * Como configurar o módulo da interface do usuário.
 
-Para obter informações sobre como adicionar módulos de interface ao ContextHub, consulte [Adicionar um módulo](/help/sites-administering/contexthub-config.md#adding-a-ui-module)de interface. Para obter informações sobre o desenvolvimento de módulos de interface, consulte [Criação de tipos](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)de módulos de interface do usuário do ContextHub.
+Para obter informações sobre como adicionar módulos de interface ao ContextHub, consulte [Adicionar um módulo](ch-configuring.md#adding-a-ui-module)de interface. Para obter informações sobre o desenvolvimento de módulos de interface do usuário, consulte [Criação de tipos](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)de módulos de interface do usuário do ContextHub.
 
 ## tipo de módulo de interface do usuário do contexthub.base {#contexthub-base-ui-module-type}
 
@@ -29,45 +32,45 @@ O tipo de módulo da interface do usuário contexthub.base é o tipo básico par
 
 Os seguintes recursos estão disponíveis:
 
-* **** Título e ícone: Especifique um título para o módulo da interface do usuário e um ícone. O ícone pode ser referenciado usando um URL ou a partir da biblioteca de ícones da interface do Coral.
-* **** Armazenar dados: Identifique um ou mais armazenamentos dos quais recuperar dados.
-* **** Conteúdo: Especifique o conteúdo que aparece no módulo da interface como ele aparece na barra de ferramentas do ContextHub.
-* **** Conteúdo do pai: Especifique o conteúdo que aparece em uma janela pop-up quando o módulo da interface do usuário é clicado ou tocado.
-* **** Modo de tela cheia: Controle se o modo de tela cheia é permitido.
+* **Título e ícone:** Especifique um título para o módulo da interface do usuário e um ícone. O ícone pode ser referenciado usando um URL ou a partir da biblioteca de ícones da interface do Coral.
+* **Armazenar dados:** Identifique um ou mais armazenamentos dos quais recuperar dados.
+* **Conteúdo:** Especifique o conteúdo que aparece no módulo da interface como ele aparece na barra de ferramentas do ContextHub.
+* **Conteúdo do pai:** Especifique o conteúdo que aparece em uma janela pop-up quando o módulo da interface do usuário é clicado ou tocado.
+* **Modo de tela cheia:** Controle se o modo de tela cheia é permitido.
 
-O código fonte está localizado em /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
+O código-fonte está localizado em /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
 ### Configuração {#configuration}
 
 Configure o módulo de interface do usuário contexthub.base usando um objeto Javascript no formato JSON. Inclua qualquer uma das seguintes propriedades para configurar os recursos do módulo de interface:
 
-* **** imagem: Um URL para uma imagem a ser exibida como o ícone.
-* **** ícone: O nome de uma classe de ícone [da interface do](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral. Se você especificar um valor para as propriedades de ícone e imagem, a imagem será usada.
+* **imagem:** Um URL para uma imagem a ser exibida como o ícone.
+* **ícone:** O nome de uma classe de ícone [da interface do](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral. Se você especificar um valor para as propriedades de ícone e imagem, a imagem será usada.
 
-* **** título: Um título para o módulo da interface do usuário. O título é exibido quando o ponteiro é pausado sobre o ícone do módulo da interface do usuário.
-* **** tela cheia: Um valor booliano que indica se o módulo da interface suporta o modo de tela cheia. Use `true` para suportar tela cheia e `false` para impedir o modo de tela cheia.
+* **título:** Um título para o módulo da interface do usuário. O título é exibido quando o ponteiro é pausado sobre o ícone do módulo da interface do usuário.
+* **tela cheia:** Um valor booliano que indica se o módulo da interface suporta o modo de tela cheia. Use `true` para suportar tela cheia e `false` para impedir o modo de tela cheia.
 
-* **** modelo: Um modelo [Handlebars](https://handlebarsjs.com/) que especifica o conteúdo a ser renderizado na barra de ferramentas do ContextHub. Use no máximo duas `<p>` tags.
+* **modelo:** Um modelo [Handlebars](https://handlebarsjs.com/) que especifica o conteúdo a ser renderizado na barra de ferramentas do ContextHub. Use no máximo duas `<p>` tags.
 
-* **** storeMapping: Um mapeamento de chave/loja. Use a tecla nos modelos de Handlebar para acessar os dados de armazenamento do ContextHub associados.
-* **** lista: Uma matriz de itens a serem exibidos como uma lista em uma janela quando o módulo da interface é clicado. Se você incluir esse item, não inclua propoverTemplate. O valor é uma matriz de objetos com as seguintes teclas:
+* **storeMapping:** Um mapeamento de chave/loja. Use a tecla nos modelos de Handlebar para acessar os dados de armazenamento do ContextHub associados.
+* **lista:** Uma matriz de itens a serem exibidos como uma lista em um módulo quando o módulo da interface é clicado. Se você incluir esse item, não inclua propoverTemplate. O valor é uma matriz de objetos com as seguintes teclas:
 
    * título: O texto a ser exibido para este item
    * imagem: (Opcional) Um URL para uma imagem que deve ser exibida à esquerda
    * ícone: (Opcional) Uma classe de ícone CUI que deve ser exibida à esquerda; ignorado se uma imagem for especificada
    * selecionados: (Opcional) Um valor booliano que especifica se este item deve ser exibido como selecionado (true=selecionado). Por padrão, os itens selecionados aparecem usando uma fonte em negrito. Use uma `listType` propriedade para configurar outras aparências (consulte abaixo).
 
-* **** listType: O estilo a ser usado para itens da lista de propriedades. Use um dos seguintes valores:
+* **listType:** O estilo a ser usado para itens de lista de entrega. Use um dos seguintes valores:
 
    * marca
    * caixa de seleção
    * rádio
 
-* **** poverTemplate: Um modelo de handlebars que especifica o conteúdo a ser renderizado no pop-up quando o módulo de interface é clicado. Se você incluir este item, não inclua o `list` item.
+* **poverTemplate:** Um modelo de handlebars que especifica o conteúdo a ser renderizado no pop-up quando o módulo de interface é clicado. Se você incluir este item, não inclua o `list` item.
 
 ### Exemplo {#example}
 
-O exemplo a seguir configura um módulo de UI contexthub.base para exibir informações de uma loja [contexthub.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) . O `template` item demonstra como obter dados da loja usando a chave que o `storeMapping` item estabelece.
+O exemplo a seguir configura um módulo de interface do usuário contexthub.base para exibir informações de uma loja [contexthub.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) . O `template` item demonstra como obter dados da loja usando a chave que o `storeMapping` item estabelece.
 
 ```xml
 {
@@ -138,7 +141,7 @@ A fonte do módulo da interface está localizada em /etc/cloudsettings/default/c
 
 ### Configuração {#configuration-4}
 
-As instâncias do módulo de interface contexthub.location não exigem um valor para a Configuração detalhada. O seguinte texto JSON representa a configuração padrão do módulo.
+As instâncias do módulo de interface contexthub.location não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo.
 
 ```xml
 {
@@ -219,17 +222,17 @@ As instâncias do módulo de interface do usuário contexthub.tagcloud não exig
 }
 ```
 
-## tipo de módulo de interface do usuário granite.profile {#granite-profile-ui-module-type}
+## tipo de módulo de interface do usuário granite.perfil {#granite-profile-ui-module-type}
 
-O módulo de interface do usuário do ContextHub granite.profile exibe o nome de exibição do usuário atual. O pop-up revela o nome de logon do usuário e permite que você altere o valor do nome de exibição. O módulo de interface do usuário obtém informações de um perfil chamado de loja do ContextHub, baseado no candidato a loja [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) .
+O módulo de interface do usuário do ContextHub granite.perfil exibe o nome de exibição do usuário atual. O pop-up revela o nome de logon do usuário e permite que você altere o valor do nome de exibição. O módulo de interface do usuário obtém informações de uma loja do ContextHub chamada perfil que é baseado no candidato à loja [granite.perfil](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) .
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-A fonte do módulo da interface está em /libs/granite/contexthub/components/modules/profile.
+A fonte do módulo de interface está em /libs/granite/contexthub/components/modules/perfil.
 
 ### Configuração {#configuration-7}
 
-As instâncias do módulo UI grantie.profile não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo.
+As instâncias do módulo de interface do usuário grantie.perfil não exigem um valor para a Configuração de detalhes. O seguinte texto JSON representa a configuração padrão do módulo.
 
 ```xml
 {
