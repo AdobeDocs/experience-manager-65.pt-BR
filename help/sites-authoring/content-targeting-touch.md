@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 79%
@@ -666,7 +666,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
   </tr>
   <tr>
    <td><strong>Mecanismo</strong></td>
-   <td>Selecione entre Regras do lado do <strong>cliente (sem rastreamento), Adobe Target, ContextHub </strong>e<strong> Adobe Campaign, </strong>dependendo do mecanismo que você deseja usar.</td>
+   <td>Selecione entre Regras do lado do <strong>cliente (sem rastreamento), Adobe Target, ContextHub </strong>e<strong> Adobe Campaign </strong>dependendo do mecanismo que você deseja usar.</td>
   </tr>
  </tbody>
 </table>
@@ -683,7 +683,7 @@ Se você selecionar Adobe Target como mecanismo:
   </tr>
   <tr>
    <td><strong>Destinação exata</strong></td>
-   <td><p>Habilitar a definição de metas precisa indica ao componente que aguarde até que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Observação:</strong> A ativação ou desativação de direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente.</p> </td>
+   <td><p>Habilitar a definição de metas precisa indica ao componente que aguarde até que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para a Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado.</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>Observação:</strong> A ativação ou desativação de direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente.</p> </td>
   </tr>
   <tr>
    <td><strong>Incluir segmentos resolvidos</strong></td>
@@ -691,7 +691,7 @@ Se você selecionar Adobe Target como mecanismo:
   </tr>
   <tr>
    <td><strong>Parâmetros herdados de contexto</strong></td>
-   <td>Parâmetros de contexto do Lista herdados da estrutura Adobe Target, se houver, associados à página selecionada.</td>
+   <td>Parâmetros de contexto do Lista herdados da estrutura do Adobe Target, se houver, associados à página selecionada.</td>
   </tr>
   <tr>
    <td><strong>Parâmetros de contexto</strong></td>
@@ -731,5 +731,4 @@ Se você selecionar Client Context (lado do cliente) como mecanismo:
 
 Selecione **Adobe Campaign** como mecanismo se estiver integrando o AEM com o Adobe Campaign. Consulte [Integrar o AEM com o Adobe Campaign](/help/sites-administering/campaign.md) para obter mais informações.
 
-Selecione **ContextHub** como mecanismo se estiver usando o ContextHub para o direcionamento. Consulte [Configurar o ContextHub.](/help/sites-administering/contexthub-config.md)
-
+Selecione **ContextHub** como mecanismo se estiver usando o ContextHub para o direcionamento. Consulte [Configurar o ContextHub.](/help/sites-developing/ch-configuring.md)
