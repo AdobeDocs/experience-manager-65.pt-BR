@@ -1,17 +1,17 @@
 ---
 title: Tabelas em formulários adaptáveis
 seo-title: Tabelas em formulários adaptáveis
-description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que respondem a layouts móveis e também permite o uso de componentes de tabela XDP.
-seo-description: O componente Tabela no AEM Forms permite criar tabelas em formulários adaptáveis que respondem a layouts móveis e também permite o uso de componentes de tabela XDP.
+description: O componente Tabela no AEM Forms permite que você crie tabelas em formulários adaptáveis que respondem a layouts móveis, além de permitir o uso de componentes de tabela XDP.
+seo-description: O componente Tabela no AEM Forms permite que você crie tabelas em formulários adaptáveis que respondem a layouts móveis, além de permitir o uso de componentes de tabela XDP.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2302'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 O uso de tabelas é uma forma eficiente, simplificada e organizada de apresentar dados complexos. Ajuda os usuários a identificar informações facilmente e a fornecer entradas em uma organização ordenada de linhas e colunas. A maioria dos formulários de serviços financeiros e organizações governamentais exigem grandes tabelas de dados para colocar números e realizar cálculos.
 
-O AEM Forms fornece um componente Tabela no navegador de componentes na barra lateral que permite criar tabelas em formulários adaptáveis. Alguns dos principais recursos que ele oferece são:
+A AEM Forms fornece um componente Tabela no navegador de componentes na barra lateral que permite criar tabelas em formulários adaptáveis. Alguns dos principais recursos que ele oferece são:
 
 * Layout responsivo em dispositivos móveis
 * Linhas e colunas configuráveis
@@ -37,7 +37,7 @@ O AEM Forms fornece um componente Tabela no navegador de componentes na barra la
 
 Para criar uma tabela, arraste e solte o componente Tabela do navegador de componentes no sidekick no formulário adaptável. Por padrão, a tabela contém duas colunas e três linhas, incluindo a linha de cabeçalho.
 
-![Componente de tabela na barra lateral do AEM](assets/sidebar-tables.png)
+![Componente de tabela AEM barra lateral](assets/sidebar-tables.png)
 
 ### Sobre células de cabeçalho e corpo {#about-header-and-body-cells}
 
@@ -121,7 +121,7 @@ Para ativar a classificação:
 
 >[!NOTE]
 >
->Você pode alterar o tema de cores para linhas de cabeçalho e corpo alterando os valores das variáveis MENOS. Para obter mais informações, consulte [Temas em AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>Você pode alterar o tema de cores para linhas de cabeçalho e corpo alterando os valores das variáveis MENOS. Para obter mais informações, consulte [Temas no AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
 ## Adicionar ou excluir uma linha dinamicamente {#add-or-delete-a-row-dynamically}
 
@@ -153,13 +153,13 @@ Embora tabelas e linhas suportem apenas expressões de visibilidade para control
 >Se o script XFA change/exit também for aplicado ao mesmo campo, o script XFA change/exit será executado antes do script Value Commit.
 
 * **Calcular expressões**: para calcular automaticamente o valor de um campo.
-* **expressões** de validação: para validar um campo.
-* **expressões** de acesso: para ativar/desativar um campo.
-* **expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
+* **Expressões** de validação: para validar um campo.
+* **Expressões** de acesso: para ativar/desativar um campo.
+* **Expressão** de visibilidade: para controlar a visibilidade de um campo e painel.
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente Editar. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
 
-Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptáveis.
+Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adaptáveis.
 
 ## Layouts móveis {#mobile-layouts}
 
@@ -173,11 +173,11 @@ No layout Cabeçalhos à esquerda, o cabeçalho na tabela é transposto à esque
 
 ![visualização para desktop](assets/desktopview_new.png)
 
-visualização de desktop de uma tabela com cabeçalho no layout esquerdo
+Visualização de desktop de uma tabela com cabeçalho no layout esquerdo
 
 ![Cabeçalhos à esquerda](assets/headersontheleft_new.png)
 
-visualização móvel de uma tabela com cabeçalho no layout esquerdo
+Visualização móvel de uma tabela com cabeçalho no layout esquerdo
 
 ### Layout de colunas flexível {#collapsible-columns-layout}
 
@@ -281,7 +281,7 @@ Para unir esses dados à tabela no tempo de execução, é necessário apontar o
 
 ## Usar componentes XDP e tipos complexos XSD {#use-xdp-components-and-xsd-complex-types}
 
-Se você tiver criado um formulário adaptável com base em um modelo de formulário XFA, os elementos XFA estarão disponíveis na guia Modelo de dados do AEM Content Finder. Você pode arrastar e soltar esses elementos XFA, incluindo tabelas, no formulário adaptável.
+Se você tiver criado um formulário adaptável com base em um modelo de formulário XFA, os elementos XFA estarão disponíveis na guia Modelo de dados AEM Localizador de conteúdo. Você pode arrastar e soltar esses elementos XFA, incluindo tabelas, no formulário adaptável.
 
 O elemento de tabela XFA é mapeado para o componente Tabela e funciona prontamente em formulários adaptáveis. Todas as propriedades e funcionalidades da tabela XDP são preservadas quando movidas para um formulário adaptável, e você pode executar qualquer operação nela da mesma forma que faz com a tabela de formulário adaptável nativa. Por exemplo, se uma linha em uma tabela XDP estiver marcada como repetível, ela será repetida quando solta também em formulários adaptáveis.
 
