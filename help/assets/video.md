@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 8%
@@ -51,7 +51,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi projetada para aju
       * Saiba mais sobre como [organizar ativos](/help/assets/organize-assets.md)digitais.
    * Carregue seus vídeos de origem primária nas pastas. É possível carregar arquivos de vídeo com até 15 GB cada. Quando você adiciona vídeos à pasta, eles são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
 
-      * [Carregue seus vídeos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+      * [Carregue seus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Saiba mais sobre os formatos [de arquivo de entrada](/help/assets/assets-formats.md#supported-multimedia-formats)suportados.
    * Monitore como a codificação [de vídeo está progredindo](#monitoring-video-encoding-and-youtube-publishing-progress) a partir da visualização do ativo ou do fluxo de trabalho.
 
@@ -64,7 +64,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi projetada para aju
 
       * [Organização de ativos](/help/assets/organize-assets.md)digitais Saiba mais sobre as práticas [recomendadas para a organização de seus ativos digitais para o uso de perfis de processamento](organize-assets.md)
 
-      * [Pesquisar ativos](search-assets.md#custompredicates) de vídeo ou [Pesquisar ativos](managing-assets-touch-ui.md#search-assets)
+      * [Pesquisar ativos](search-assets.md#custompredicates) de vídeo ou [Pesquisar ativos](/help/assets/search-assets.md)
    * Pré-visualização e publicação de ativos de vídeo
 
       * Visualização o vídeo de origem e as representações codificadas do vídeo, juntamente com as miniaturas associadas:
@@ -1223,7 +1223,7 @@ Para **adicionar uma miniatura** de vídeo personalizada,
    * Criada uma pasta para seus ativos de vídeo.
    * [Aplicado um perfil de vídeo à pasta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
-   * [Carregou seus vídeos na pasta](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+   * [Carregou seus vídeos na pasta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Navegue até um ativo de vídeo carregado cuja imagem em miniatura você deseja alterar.
 1. No modo de seleção de ativos, na Visualização **[!UICONTROL da]** Lista ou na Visualização **[!UICONTROL do]** cartão, toque no ativo de vídeo.
