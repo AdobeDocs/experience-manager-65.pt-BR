@@ -1,11 +1,11 @@
 ---
-title: Gerenciamento de direitos digitais em [!DNL Adobe Experience Manager Assets].
+title: Digital Rights Management de ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1423'
 ht-degree: 6%
 
 ---
@@ -82,7 +82,7 @@ Além disso, se uma falha ou erro impedir que o scheduler detecte ativos expirad
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. Abra o [!DNL Experience Manager] Configuration Manager.
-1. Escolha **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Por padrão, o Scheduler **[!UICONTROL com base em]** tempo é selecionado, o que agenda uma tarefa para verificar em um horário específico se um ativo expirou subativos. Após a conclusão da tarefa, os ativos que têm subativos expirados e ativos referenciados são exibidos como expirados nos resultados da pesquisa.
+1. Escolha Notificação **[!UICONTROL de expiração do]** Adobe CQ DAM. Por padrão, o Scheduler **[!UICONTROL com base em]** tempo é selecionado, o que agenda uma tarefa para verificar em um horário específico se um ativo expirou subativos. Após a conclusão da tarefa, os ativos que têm subativos expirados e ativos referenciados são exibidos como expirados nos resultados da pesquisa.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -148,7 +148,7 @@ O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do e
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## Gerenciamento de direitos digitais em [!DNL Assets] {#digital-rights-management-in-assets-1}
+## Digital Rights Management em [!DNL Assets] {#digital-rights-management-in-assets-1}
 
 Este recurso impõe a aceitação do contrato de licença antes que você possa baixar um ativo licenciado de [!DNL Adobe Experience Manager Assets].
 
@@ -165,7 +165,7 @@ Um ativo é considerado protegido se uma dessas condições for cumprida:
 >
 >O local `/etc/dam/drm/licenses` usado para armazenar licenças em versões anteriores de [!DNL Experience Manager] está obsoleto.
 >
->Se você criar ou modificar páginas de licença ou as portar de [!DNL Experience Manager] versões anteriores, a Adobe recomenda armazená-las em `/apps/settings/dam/drm/licenses` ou `/conf/&ast;/settings/dam/drm/licenses`.
+>Se você criar ou modificar páginas de licença ou as portar de [!DNL Experience Manager] versões anteriores, o Adobe recomenda armazená-las em `/apps/settings/dam/drm/licenses` ou `/conf/&ast;/settings/dam/drm/licenses`.
 
 ### Baixar ativos protegidos por DRM {#downloading-drm-assets}
 
