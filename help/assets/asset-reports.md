@@ -1,11 +1,11 @@
 ---
-title: Relatórios sobre o uso e compartilhamento de seus ativos digitais.
+title: Relatórios sobre uso e compartilhamento de ativos
 description: Relatórios sobre seus ativos [!DNL Adobe Experience Manager Assets] que ajudam você a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 10%
 
 ---
