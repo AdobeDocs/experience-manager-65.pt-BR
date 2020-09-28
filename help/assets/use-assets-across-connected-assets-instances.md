@@ -1,12 +1,12 @@
 ---
-title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2105'
-ht-degree: 43%
+source-wordcount: '2103'
+ht-degree: 44%
 
 ---
 
@@ -32,16 +32,16 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
    |  | [!DNL Sites] como um Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] local |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]como um Cloud Service ** | Compatível | Compatível | Compatível |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]no AMS ** | Compatível | Compatível | Compatível |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]local ** | Incompatível | Incompatível | Incompatível |
+   | **[!DNL Experience Manager Assets]como um Cloud Service** | Compatível | Compatível | Compatível |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]no AMS** | Compatível | Compatível | Compatível |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]local** | Incompatível | Incompatível | Incompatível |
 
 ### Formatos de arquivo não suportados {#mimetypes}
 
 Os autores pesquisam por imagens e pelos seguintes tipos de documentos no Localizador de conteúdo e usam os ativos pesquisados no Editor de páginas. Documentos são adicionados ao `Download` componente e às imagens ao `Image` componente. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Os formatos suportados são:
 
 * **Formatos** de imagem: Os formatos suportados pelo componente [](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) de Imagem. [!DNL Dynamic Media] as imagens não são compatíveis.
-* **Formatos** de Documento: Consulte os formatos [de documento](assets-formats.md#supported-document-formats)suportados.
+* **Formatos** de documento: Consulte os formatos [de documento](assets-formats.md#supported-document-formats)suportados.
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
 
