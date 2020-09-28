@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Essenciais de pontuação e emblemas {#scoring-and-badges-essentials}
 
-O recurso de pontuação de AEM Communities e emblemas fornece a capacidade de identificar e recompensar membros da comunidade.
+O recurso de pontuação e emblemas do AEM Communities oferece a capacidade de identificar e recompensar membros da comunidade.
 
 Os detalhes da configuração do recurso estão descritos em
 
@@ -83,7 +83,7 @@ Para obter instruções detalhadas, visite [Criar um arquivo](/help/sites-deploy
 
 Para configurar rapidamente um arquivo de registro de slides:
 
-1. Acesse o suporte **de log do console da Web do** Adobe Experience Manager, por exemplo
+1. Acesse o suporte **de log do Console da Web da** Adobe Experience Manager, por exemplo
 
    * https://localhost:4502/system/console/slinglog
 
@@ -102,7 +102,7 @@ Para configurar rapidamente um arquivo de registro de slides:
 
 
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![debug-scoring-log](assets/debug-scoring-log.png)
 
 Para ver as entradas de log:
 
@@ -118,7 +118,7 @@ Para ver as entradas de log:
 
    * Por exemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-249](assets/chlimage_1-249.png)
+![registro de pontuação](assets/scoring-log.png)
 
 ## UGC para Pontuação e Crachá {#ugc-for-scoring-and-badging}
 
@@ -139,15 +139,15 @@ As seguintes APIs estão disponíveis para uso:
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-Os mais recentes Javadocs para o pacote de recursos instalados estão disponíveis para desenvolvedores do repositório da Adobe. Consulte [Uso do Maven para comunidades : Javadocs](/help/communities/maven.md#javadocs).
+Os mais recentes Javadocs para o pacote de recursos instalados estão disponíveis para desenvolvedores no repositório do Adobe. Consulte [Uso do Maven para comunidades : Javadocs](/help/communities/maven.md#javadocs).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 ### Exemplo de configuração {#example-setup}
 
-As capturas de tela dos dados do repositório vêm da configuração da pontuação e da identificação de um fórum em dois sites diferentes do AEM:
+As capturas de tela dos dados do repositório vêm da configuração da pontuação e identificação de um fórum em dois sites de AEM diferentes:
 
-1. Um site do AEM *com* uma ID exclusiva (site da comunidade criado usando o assistente):
+1. Um site AEM *com* uma id exclusiva (site da comunidade criado usando o assistente):
 
    * Usar o site Tutorial de introdução (engajamento) criado durante o tutorial de [introdução](/help/communities/getting-started.md)
    * Localize o nó da página do fórum
@@ -178,7 +178,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
    * Um usuário entra, cria um tópico do fórum e recebe um crachá de bronze
 
 
-1. Um site do AEM *sem* uma id exclusiva:
+1. Um site AEM *sem* uma id exclusiva:
 
    * Uso do guia Componentes [da comunidade](/help/communities/components-guide.md)
    * Localize o nó da página do fórum
@@ -217,7 +217,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 
    Como um usuário ganhou dois crachás de bronze e recebeu um crachá de moderador, é assim que o usuário aparece com sua entrada no fórum.
 
-![chlimage_1-250](assets/chlimage_1-250.png)
+   ![moderador](assets/moderator.png)
 
 >[!NOTE]
 >
@@ -229,7 +229,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
    >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
-* Criar imagens de crachá exclusivas para sites do AEM diferentes
+* Criar imagens de crachá exclusivas para sites de AEM diferentes
 
 >
 
@@ -245,7 +245,7 @@ Para fins de investigação, usando o JSRP como exemplo, a pasta base que conté
 
 O nó filho de `scoring` é o nome da regra de pontuação. Assim, uma prática recomendada é que os nomes das regras de pontuação em um servidor sejam globalmente exclusivos.
 
-Para o site de Envolvimento Geometrixx, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, a ID do site da comunidade ( `engage-ba81p`), uma ID exclusiva e a ID do usuário:
+Para o site de Envolvimento do Geometrixx, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, a ID do site da comunidade ( `engage-ba81p`), uma ID exclusiva e a ID do usuário:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
@@ -255,7 +255,7 @@ Para o site de guia Componentes da comunidade, o usuário e sua pontuação est�
 
 A pontuação é armazenada na propriedade `scoreValue_tl` que pode conter apenas um valor ou indiretamente se referir a um atomicCounter.
 
-![chlimage_1-251](assets/chlimage_1-251.png)
+![access-score-ugc](assets/access-scoring-ugc.png)
 
 ### UGC da marca de acesso {#access-badging-ugc}
 
@@ -271,11 +271,11 @@ Seguido pelo caminho para o perfil do usuário, terminando em uma pasta de crach
 
 #### Crachá concedido {#awarded-badge}
 
-![chlimage_1-252](assets/chlimage_1-252.png)
+![selo-ugc concedido](assets/access-badging-ugc.png)
 
 #### Crachá atribuído {#assigned-badge}
 
-![chlimage_1-253](assets/chlimage_1-253.png)
+![crachá atribuído](assets/assigned-badge.png)
 
 ## Informações adicionais {#additional-information}
 
