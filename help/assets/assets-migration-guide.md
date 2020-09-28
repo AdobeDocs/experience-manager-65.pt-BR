@@ -1,11 +1,11 @@
 ---
-title: Migre ativos [!DNL Adobe Experience Manager Assets] em massa.
+title: Migrar ativos em massa
 description: Descreve como inserir ativos [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1798'
 ht-degree: 8%
 
 ---
