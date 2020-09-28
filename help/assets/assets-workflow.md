@@ -1,11 +1,11 @@
 ---
-title: Processar ativos para realizar processos de negócios, realizar auditorias, atingir a conformidade e manter a sanidade básica
+title: Processar ativos usando workflows
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '975'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ## Entender workflows {#understand-workflows}
 
-Para processamento de ativos, [!DNL Experience Manager] usa workflows. Os Workflows ajudam a automatizar a lógica comercial ou as atividades. As etapas granulares para realizar tarefas específicas são fornecidas por padrão e os desenvolvedores podem criar suas próprias etapas personalizadas. Essas etapas podem ser combinadas em uma ordem lógica para criar workflows. Por exemplo, um fluxo de trabalho pode aplicar uma marca d&#39;água em imagens carregadas com base em critérios específicos, como pasta para a qual é carregado, resolução da imagem e assim por diante. Outro exemplo é um fluxo de trabalho configurado para marca d&#39;água e, simultaneamente, adicionar metadados, criar execuções, adicionar tags inteligentes e publicar em um armazenamento de dados.
+Para processamento de ativos, [!DNL Experience Manager] usa workflows. Os workflows ajudam a automatizar a lógica comercial ou as atividades. As etapas granulares para realizar tarefas específicas são fornecidas por padrão e os desenvolvedores podem criar suas próprias etapas personalizadas. Essas etapas podem ser combinadas em uma ordem lógica para criar workflows. Por exemplo, um fluxo de trabalho pode aplicar uma marca d&#39;água em imagens carregadas com base em critérios específicos, como pasta para a qual é carregado, resolução da imagem e assim por diante. Outro exemplo é um fluxo de trabalho configurado para marca d&#39;água e, simultaneamente, adicionar metadados, criar execuções, adicionar tags inteligentes e publicar em um armazenamento de dados.
 
-## workflows padrão disponíveis em [!DNL Experience Manager] {#default-workflows}
+## Workflows padrão disponíveis em [!DNL Experience Manager] {#default-workflows}
 
 Por padrão, todos os ativos carregados são processados usando o fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM. O fluxo de trabalho é executado para cada ativo carregado e realiza tarefas básicas de gerenciamento de ativos, como geração de representação, gravação de metadados, extração da página, extração de mídia e transcodificação.
 
@@ -86,7 +86,7 @@ O procedimento para aplicar um fluxo de trabalho a várias pastas é semelhante 
 
 Consulte [aplicar um fluxo de trabalho em uma coleção](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
 
-## start automático de um fluxo de trabalho para processar ativos condicionalmente {#auto-execute-workflow-on-some-assets}
+## Start automático de um fluxo de trabalho para processar ativos condicionalmente {#auto-execute-workflow-on-some-assets}
 
 Os administradores podem configurar o fluxo de trabalho para executar e processar automaticamente ativos com base em condições predefinidas. A funcionalidade é útil para usuários de linha de negócios e comerciantes, por exemplo, para criar fluxo de trabalho personalizado em pastas específicas. Diga que todos os ativos da fotografia de uma agência podem ter marca d&#39;água ou que todos os ativos carregados por um freelancer podem ser processados para criar representações específicas.
 
