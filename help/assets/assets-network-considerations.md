@@ -1,11 +1,11 @@
 ---
-title: Considerações e requisitos de rede do [!DNL Assets].
+title: Considerações e requisitos de rede
 description: Discute as considerações de rede ao projetar [!DNL Adobe Experience Manager Assets] uma implantação.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Certifique-se de incluir o seguinte no diagrama de rede:
 * Faça upload para a Internet a partir da rede corporativa e do [!DNL Experience Manager] ambiente.
 * Topologia do [!DNL Experience Manager] ambiente.
 * Defina consumidores simultâneos da interface de [!DNL Experience Manager] rede.
-* workflows definidos da [!DNL Experience Manager] implantação.
+* Workflows definidos da [!DNL Experience Manager] implantação.
 
 ## Conectividade do dispositivo cliente à rede corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -68,7 +68,7 @@ A partir de exemplos de diagramas, você pode concluir que seis dispositivos com
 
 A criação da topologia do [!DNL Experience Manager] ambiente requer um conhecimento detalhado da configuração do sistema e de como a rede é conectada dentro do ambiente do usuário.
 
-O cenário de amostra inclui um farm de publicação com cinco servidores, uma loja binária S3 e Dynamic Media configurados.
+O cenário de amostra inclui um farm de publicação com cinco servidores, uma loja binária S3 e o Dynamic Media configurados.
 
 O dispatcher compartilha sua conexão de 100 Mbps com duas entidades, o mundo externo e a [!DNL Experience Manager] implantação. Para operações simultâneas de upload e download, você deve dividir esse número por dois. O armazenamento externo conectado usa uma conexão separada.
 
@@ -76,7 +76,7 @@ A [!DNL Experience Manager] implantação compartilha sua conexão de 1Gbps com 
 
 Revisando a rede do dispositivo cliente para a [!DNL Experience Manager] implantação, o menor ponto de estrangulamento parece ser a limitação do firewall corporativo de 10 Mbit. Você pode usar esses valores na calculadora de dimensionamento no Guia [de dimensionamento de](assets-sizing-guide.md) ativos para determinar a experiência do usuário.
 
-## workflows definidos da [!DNL Experience Manager] implantação {#defined-workflows-of-the-aem-deployment}
+## Workflows definidos da [!DNL Experience Manager] implantação {#defined-workflows-of-the-aem-deployment}
 
 Ao considerar o desempenho da rede, pode ser importante considerar os workflows e a publicação que ocorrerão no sistema. Além disso, o S3 ou outro armazenamento conectado à rede que você usa e as solicitações de E/S consomem largura de banda da rede. Portanto, mesmo em uma rede totalmente otimizada, o desempenho pode ser limitado pela E/S do disco.
 
@@ -91,10 +91,10 @@ Ao avaliar a topologia interna do fluxo de trabalho, você deve analisar o segui
 Estes são alguns itens a serem considerados:
 
 * XMP leitura/gravação de metadados
-* ativação automática e replicação
+* Ativação automática e replicação
 * Aplicação de marca d&#39;água
 * Inclusão/extração de página
-* workflows sobrepostos.
+* Workflows sobrepostos.
 
 Este é um exemplo de cliente para a definição de um fluxo de trabalho de ativos.
 
