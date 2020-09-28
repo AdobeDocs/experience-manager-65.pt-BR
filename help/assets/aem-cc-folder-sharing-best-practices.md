@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Adobe Experience Manager] [!DNL Adobe Creative Cloud] para compartilhar práticas recomendadas.'
+title: Práticas de teste [!DNL Adobe Creative Cloud] de compartilhamento de pastas
 description: Configure [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] para trocar pastas com usuários do Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ O diagrama a seguir fornece uma visão geral da integração.
 A integração inclui os seguintes elementos:
 
 * **[!DNL Experience Manager Assets]** implantado na rede corporativa (serviços gerenciados ou no local): O compartilhamento de pastas é iniciado aqui.
-* **[!DNL Adobe Marketing Cloud Assets]serviço **principal: Atua como intermediário entre serviços[!DNL Experience Manager]e serviços[!DNL Creative Cloud]armazenamentos. Um administrador de uma organização que usa a integração precisa estabelecer uma relação de confiança entre a organização do Marketing Cloud e a[!DNL Assets]implantação. Eles também[definem uma lista de colaboradores](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)aprovados para Creative Cloud, que[!DNL Assets]os usuários também podem compartilhar pastas para segurança adicional.
+* **[!DNL Adobe Marketing Cloud Assets]serviço** principal: Atua como intermediário entre serviços [!DNL Experience Manager] e serviços [!DNL Creative Cloud] armazenamentos. Um administrador de uma organização que usa a integração precisa estabelecer uma relação de confiança entre a organização do Marketing Cloud e a [!DNL Assets] implantação. Eles também [definem uma lista de colaboradores](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)aprovados para Creative Cloud, que [!DNL Assets] os usuários também podem compartilhar pastas para segurança adicional.
 
-* **[!DNL Creative Cloud]Serviços **da Web de ativos (UI da Web de armazenamentos e[!DNL Creative Cloud]arquivos): É aqui que usuários específicos do aplicativo Creative Cloud, com quem uma[!DNL Assets]pasta foi compartilhada, poderão aceitar o convite e ver a pasta em seu armazenamento de conta Creative Cloud.
+* **[!DNL Creative Cloud]Serviços** da Web de ativos (UI da Web de armazenamentos e [!DNL Creative Cloud] arquivos): É aqui que usuários específicos do aplicativo Creative Cloud, com quem uma [!DNL Assets] pasta foi compartilhada, poderão aceitar o convite e ver a pasta em seu armazenamento de conta Creative Cloud.
 * **Aplicativo** para desktop Creative Cloud: (Opcional) Permite acesso direto a pastas compartilhadas/arquivos da área de trabalho do usuário criativo por meio da sincronização com o armazenamento [!DNL Creative Cloud] Ativos.
 
 ## Características e limitações {#characteristics-and-limitations}
