@@ -1,11 +1,11 @@
 ---
-title: Use o rasterizador de PDF para gerar execuções de arquivos PDF.
+title: Usar o rasterizador de PDF para gerar execuções
 description: Gere miniaturas e execuções de alta qualidade usando a biblioteca do Adobe PDF Rasterizer no [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Usar o PDF Rasterizer {#using-pdf-rasterizer}
 
-Ao fazer upload de arquivos PDF ou AI grandes e com grande quantidade de conteúdo para [!DNL Adobe Experience Manager Assets], a conversão padrão pode não gerar uma saída precisa. A biblioteca do PDF Rasterizer da Adobe pode gerar uma saída mais confiável e precisa quando comparada à saída de uma biblioteca padrão. A Adobe recomenda usar a biblioteca do PDF Rasterizer para os seguintes cenários:
+Ao fazer upload de arquivos PDF ou AI grandes e com grande quantidade de conteúdo para [!DNL Adobe Experience Manager Assets], a conversão padrão pode não gerar uma saída precisa. A saída do Adobe Rasterizer pode ser mais confiável e precisa quando comparada com a biblioteca padrão. O Adobe recomenda usar a biblioteca do Rasterizer de PDF para os seguintes cenários:
 
 * Arquivos AI ou PDF com grande quantidade de conteúdo.
 * Arquivos AI e arquivos PDF com miniaturas que não são geradas por padrão.
