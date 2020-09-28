@@ -1,11 +1,11 @@
 ---
-title: Processar ativos usando manipuladores de mídia e workflows em [!DNL Adobe Experience Manager].
+title: Processar ativos usando manipuladores de mídia e workflows
 description: Saiba mais sobre os manipuladores de mídia e como usar workflows para executar tarefas em seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2108'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Um fluxo de trabalho pode ser configurado para ser executado automaticamente quando um ativo de um tipo MIME específico é carregado. As etapas de processamento são definidas em termos de uma série de manipuladores de [!DNL Assets] mídia. [!DNL Experience Manager] fornece alguns manipuladores [integrados,](#default-media-handlers) e outros podem ser desenvolvidos [](#creating-a-new-media-handler) personalizados ou definidos delegando o processo a uma ferramenta [de linha de](#command-line-based-media-handler)comando.
 
-Os manipuladores de mídia são serviços em [!DNL Assets] que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado [!DNL Experience Manager], um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com workflows. Os tipos MIME mais comuns são suportados dentro [!DNL Experience Manager]. tarefas específicas podem ser executadas em ativos estendendo/criando workflows, estendendo/criando manipuladores de mídia ou desabilitando/habilitando manipuladores de mídia.
+Os manipuladores de mídia são serviços em [!DNL Assets] que executam ações específicas em ativos. Por exemplo, quando um arquivo de áudio MP3 é carregado [!DNL Experience Manager], um fluxo de trabalho aciona um manipulador MP3 que extrai os metadados e gera uma miniatura. Geralmente, os manipuladores de mídia são usados em combinação com workflows. Os tipos MIME mais comuns são suportados dentro [!DNL Experience Manager]. Tarefas específicas podem ser executadas em ativos estendendo/criando workflows, estendendo/criando manipuladores de mídia ou desabilitando/habilitando manipuladores de mídia.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Os manipuladores de mídia são serviços normalmente usados em combinação com
 
 [!DNL Experience Manager] tem alguns workflows padrão para processar ativos. Para visualização, abra o console Fluxo de trabalho e clique na guia **[!UICONTROL Modelos]** : os títulos de fluxo de trabalho que são start [!DNL Assets] são os ativos específicos.
 
-workflows existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
+Workflows existentes podem ser estendidos e novos podem ser criados para processar ativos de acordo com requisitos específicos.
 
 O exemplo a seguir mostra como aprimorar o fluxo de trabalho de **[!UICONTROL Sincronização do AEM Assets]** para que os ativos secundários sejam gerados para todos os ativos, exceto documentos PDF.
 
@@ -465,7 +465,7 @@ O `CommandLineProcess` processo executa as seguintes operações na ordem em que
 
 ### Um exemplo usando [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-O exemplo a seguir mostra como configurar a etapa do processo da linha de comando para que cada vez que um ativo com o eMIME GIF ou TIFF é adicionado `/content/dam` no [!DNL Experience Manager] servidor, uma imagem invertida do original seja criada junto com três miniaturas adicionais (140x100, 48x48 e 10x250).
+O exemplo a seguir mostra como configurar a etapa de processo da linha de comando para que cada vez que um ativo com o eMIME GIF ou TIFF é adicionado `/content/dam` no [!DNL Experience Manager] servidor, uma imagem invertida do original seja criada junto com três miniaturas adicionais (140x100, 48x48 e 10x250).
 
 Para fazer isso, use [!DNL ImageMagick]. [!DNL ImageMagick] é um software gratuito de linha de comando usado para criar, editar e compor imagens de bitmap.
 
