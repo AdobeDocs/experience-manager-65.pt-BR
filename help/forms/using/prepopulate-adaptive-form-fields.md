@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 12b2b73b6363c90d784527b260d664e48c746496
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2200'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ As tags XML para os dados do usuário enviados para vários campos são geradas 
 
 ## Configuração do serviço de preenchimento prévio usando o Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
-Para ativar o serviço de preenchimento prévio, especifique a Configuração do serviço de preenchimento padrão na Configuração do console da Web do AEM. Use as seguintes etapas para configurar o serviço de Prefill:
+Para habilitar o serviço de preenchimento prévio, especifique a Configuração do serviço de preenchimento padrão na Configuração do console da Web AEM. Use as seguintes etapas para configurar o serviço de Prefill:
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ Para ativar o serviço de preenchimento prévio, especifique a Configuração do
 
    >[!NOTE]
    >
-   >Por padrão, o preenchimento prévio é permitido por meio de arquivos crx para todos os tipos de Formulários adaptáveis (XSD, XDP, JSON, FDM e sem base em Modelo de formulário). O preenchimento prévio é permitido somente com arquivos JSON e XML.
+   >Por padrão, o preenchimento prévio é permitido por meio de arquivos crx para todos os tipos de Forms adaptável (XSD, XDP, JSON, FDM e sem base em Modelo de formulário). O preenchimento prévio é permitido somente com arquivos JSON e XML.
 
 1. O serviço de preenchimento prévio agora está configurado para seu formulário.
 
@@ -334,13 +334,13 @@ prefill-page component.zip
 
 [Obter o arquivo](assets/prefill-page-component.zip)Amostra prefill.jsp no componente de página
 
-## Serviço de preenchimento predefinido personalizado do AEM Forms {#aem-forms-custom-prefill-service}
+## Serviço de preenchimento prévio personalizado da AEM Forms {#aem-forms-custom-prefill-service}
 
 Você pode usar o serviço de preenchimento prévio personalizado para os cenários, onde você lê constantemente os dados de uma fonte predefinida. O serviço de preenchimento prévio lê dados de fontes de dados definidas e preenche previamente os campos do formulário adaptável com o conteúdo do arquivo de dados de preenchimento prévio. Também ajuda a associar permanentemente os dados pré-preenchidos a um formulário adaptável.
 
 ### Criar e executar um serviço de preenchimento prévio {#create-and-run-a-prefill-service}
 
-O serviço de pré-preenchimento é um serviço OSGi e é empacotado por meio do pacote OSGi. Crie o pacote OSGi, carregue e instale-o em pacotes de AEM Forms. Antes de começar a criar o pacote:
+O serviço de pré-preenchimento é um serviço OSGi e é empacotado por meio do pacote OSGi. Crie o pacote OSGi, carregue e instale-o em pacotes da AEM Forms. Antes de começar a criar o pacote:
 
 * [Baixar o SDK do cliente AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
 * Download do pacote estereotipado
@@ -351,7 +351,7 @@ O serviço de pré-preenchimento é um serviço OSGi e é empacotado por meio do
 
 #### Criar um serviço de preenchimento prévio {#create-a-prefill-service}
 
-O pacote estereotipado (pacote de serviço de preenchimento prévio de amostra) contém a implementação de amostra do serviço de preenchimento prévio de AEM Forms. Abra o pacote estereotipado em um editor de código. Por exemplo, abra o projeto estereotipado no Eclipse para edição. Depois de abrir o pacote estereotipado em um editor de código, execute as seguintes etapas para criar o serviço.
+O pacote estereotipado (pacote de serviço de preenchimento prévio de amostra) contém uma implementação de amostra do serviço de preenchimento prévio da AEM Forms. Abra o pacote estereotipado em um editor de código. Por exemplo, abra o projeto estereotipado no Eclipse para edição. Depois de abrir o pacote estereotipado em um editor de código, execute as seguintes etapas para criar o serviço.
 
 1. Abra o arquivo src\main\java\com\adobe\test\Prefill.java para edição.
 1. No código, defina o valor de:
@@ -365,9 +365,26 @@ O pacote estereotipado (pacote de serviço de preenchimento prévio de amostra) 
 
 #### Start e uso do serviço de preenchimento prévio {#start-and-use-the-prefill-service}
 
-Para start do serviço de preenchimento prévio, carregue o arquivo JAR no console da Web do AEM Forms e ative o serviço. Agora, os start de serviço aparecem no editor de formulários adaptáveis. Para associar um serviço de preenchimento prévio a um formulário adaptável:
+Para start do serviço de preenchimento prévio, carregue o arquivo JAR no AEM Forms Web Console e ative o serviço. Agora, os start de serviço aparecem no editor de formulários adaptáveis. Para associar um serviço de preenchimento prévio a um formulário adaptável:
 
-1. Abra o formulário adaptável no Editor de formulários e abra o painel Propriedades do Container de formulário.
-1. No console Propriedades, navegue até AEM Forms container > Básico > Serviço de preenchimento prévio.
+1. Abra o formulário adaptável no Forms Editor e abra o painel Propriedades do Container de formulário.
+1. No console Propriedades, navegue até AEM Forms container > Básico > Serviço de comprovação.
 1. Selecione o Serviço de preenchimento padrão e clique em **[!UICONTROL Salvar]**. O serviço está associado ao formulário.
 
+## Pré-preencher dados no cliente {#prefill-at-client}
+
+Ao preencher previamente um formulário adaptável, o servidor AEM Forms mescla os dados com um formulário adaptável e fornece o formulário preenchido. Por padrão, a ação de união de dados ocorre no servidor.
+
+Você pode configurar o servidor AEM Forms para executar a ação de união de dados no cliente em vez do servidor. Reduz significativamente o tempo necessário para preencher e renderizar formulários adaptáveis. Por padrão, o recurso é desativado. É possível ativá-lo pelo Configuration Manager ou pela linha de comando.
+
+* Para habilitar ou desabilitar do gerenciador de configuração:
+   1. Abra AEM Configuration Manager.
+   1. Localize e abra a Configuração do Canal da Web de Formulário Adaptável e Comunicação Interativa
+   1. Ative a opção Configuration.af.clientside.datamerge.enabled.name
+* Para ativar ou desativar a partir da linha de comando:
+   * Para habilitar, execute o seguinte comando cURL:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   * Para desativar, execute o seguinte comando cURL:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+   Para aproveitar ao máximo os dados pré-preenchidos na opção cliente, atualize seu serviço de pré-preenchimento para retornar [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
