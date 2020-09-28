@@ -1,11 +1,11 @@
 ---
-title: Pesquisar aspectos.
+title: Pesquisar aspectos para filtrar os resultados da pesquisa
 description: Como criar, modificar e usar aspectos de pesquisa em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2489'
 ht-degree: 18%
 
 ---
@@ -88,9 +88,9 @@ Quando você seleciona uma opção, a pesquisa é executada com base na `value` 
 
 Por exemplo, se você selecionar &quot;Imagens&quot; para tipos de arquivos, a consulta de pesquisa dos ativos será criada ao combinar a propriedade `value` usando uma operação OR. Por exemplo, a consulta de pesquisa de imagens é construída combinando os resultados correspondentes de *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* e *image/tiff* da propriedade `jcr:content/metadata/dc:format` usando uma operação OR.
 
-![A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem](assets/filetype-value-property.png)
+![A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para que query de pesquisa funcionem](assets/filetype-value-property.png)
 
-A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem
+A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para que query de pesquisa funcionem
 
 Em vez de criar manualmente uma estrutura de nó para as opções no repositório CRXDE, você pode definir as opções em um arquivo JSON especificando pares de valores chave correspondentes. Especifique o caminho do arquivo JSON no campo **[!UICONTROL Nome da propriedade]**. Por exemplo, defina os pares de valores chave, `image/bmp`, `image/gif`, `image/jpeg` e `image/png` e especifique os valores, como mostrado no seguinte arquivo JSON de amostra. In the **[!UICONTROL Property Name]** field, you can specify the CRXDE path for this file.
 
