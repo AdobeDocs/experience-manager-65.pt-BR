@@ -1,9 +1,9 @@
 ---
-title: Formatos de arquivo suportados para processamento no [!DNL Adobe Experience Manager Assets].
+title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados [!DNL Assets] and [!DNL Dynamic Media] por e os recursos suportados para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Formatos suportados em [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] oferece suporte a uma grande variedade de formatos de arquivos e cada funcionalidade tem suporte variado para diferentes tipos de MIME. Para integrar-se [!DNL Assets] com outras soluções de gerenciamento de ativos digitais (DAM) compatíveis com padrões e software para desktop, use o Adobe [!DNL Extensible Metadata Platform] (XMP).
+[!DNL Experience Manager Assets] oferece suporte a uma grande variedade de formatos de arquivos e cada funcionalidade tem suporte variado para diferentes tipos de MIME. Para integrar [!DNL Assets] com outras soluções de gerenciamento de ativos digitais (DAM) compatíveis com padrões e software para desktop, use o Adobe [!DNL Extensible Metadata Platform] (XMP).
 
 Use a legenda para entender o nível de suporte.
 
@@ -47,7 +47,7 @@ Os formatos de imagem rasterizada suportados em [!DNL Assets] são:
 
 Os formatos de imagem rasterizada suportados em [!DNL Dynamic Media] são:
 
-| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de Pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
+| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -76,7 +76,7 @@ A seguinte lista de formatos 3D é suportada.
 
 See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
-| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | pré-visualização em miniatura | pré-visualização 3D | delivery Dynamic Media |
+| Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Pré-visualização em miniatura | pré-visualização 3D | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -140,9 +140,9 @@ A [!DNL Adobe Camera Raw] biblioteca permite [!DNL Assets] assimilar imagens bru
 
 ## Formatos de [!DNL Assets] documento suportados {#supported-document-formats}
 
-Os formatos de Documento suportados para recursos de gerenciamento de ativos são os seguintes:
+Os formatos de documento suportados para recursos de gerenciamento de ativos são os seguintes:
 
-| Formato | Armazenamento | [Gerenciamento de metadados](metadata.md) | extração de texto<br> completo | [Extração de metadados](metadata.md) | Geração de miniaturas<br> | [extração de Subasset](managing-linked-subassets.md) | [Writeback de metadados](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Formato | Armazenamento | [Gerenciamento de metadados](metadata.md) | Extração de texto<br> completo | [Extração de metadados](metadata.md) | Geração de miniaturas<br> | [Extração de Subasset](managing-linked-subassets.md) | [Writeback de metadados](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
@@ -165,7 +165,7 @@ Os formatos de Documento suportados para recursos de gerenciamento de ativos sã
 
 ## Formatos de documento suportados no Dynamic Media {#supported-document-formats-dynamic-media}
 
-| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de Pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
+| Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -237,7 +237,7 @@ Os formatos de arquivamento suportados e a aplicabilidade dos workflows DAM comu
 
 ## Outros formatos suportados {#other-supported-formats}
 
-A aplicabilidade de workflows DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo. A funcionalidade comum do DAM, como armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados, exceto o Delivery Dynamic Media, é compatível com todos os arquivos.
+A aplicabilidade de workflows DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo. A funcionalidade comum do DAM, como armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados, exceto o Delivery de Mídia dinâmica, é compatível com todos os arquivos.
 
 | Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
