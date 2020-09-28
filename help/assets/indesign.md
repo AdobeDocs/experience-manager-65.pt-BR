@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] Integrar com [!DNL Adobe InDesign Server]'
+title: ' [!DNL Assets] Integrar com [!DNL InDesign Server]'
 description: Saiba como [!DNL Adobe Experience Manager Assets] se integrar [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 4%
@@ -17,13 +17,13 @@ ht-degree: 4%
 
 * Um proxy para distribuir a carga de determinadas tarefas de processamento. Um proxy é uma [!DNL Experience Manager] instância que se comunica com um funcionário proxy para atender a uma tarefa específica e outras [!DNL Experience Manager] instâncias para fornecer os resultados.
 * Um funcionário proxy para definir e gerenciar uma tarefa específica.
-Podem abranger uma grande variedade de tarefas; por exemplo, o uso de um para processar arquivos [!DNL InDesign Server] .
+Podem abranger uma grande variedade de tarefas; por exemplo, o uso de uma ferramenta [!DNL InDesign Server] para processar arquivos.
 
 Para fazer upload completo de arquivos para os quais você criou [!DNL Experience Manager Assets] [!DNL Adobe InDesign] um proxy, é usado. Isso usa um funcionário proxy para se comunicar com o [!DNL Adobe InDesign Server], onde [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) são executados para extrair metadados e gerar várias execuções para [!DNL Experience Manager Assets]. O trabalhador proxy permite a comunicação bidirecional entre as instâncias [!DNL InDesign Server] e as [!DNL Experience Manager] em uma configuração em nuvem.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. [Aplicativo Adobe InDesign](https://www.adobe.com/products/indesign.html) para desktop usado para criar layouts de página para distribuição impressa e digital. [O Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) permite que você crie documentos automatizados de forma programática com base no que você criou com [!DNL InDesign]. Ele opera como um serviço que oferece uma interface para seu mecanismo [ExtendScript](https://www.adobe.com/devnet/scripting.html) .Os scripts são gravados em [!DNL ExtendScript], o que é semelhante a [!DNL JavaScript]. Para obter informações sobre [!DNL InDesign] scripts, consulte [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. [Aplicativo Adobe InDesign](https://www.adobe.com/products/indesign.html) para desktop usado para criar layouts de página para distribuição impressa e digital. [A Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) permite que você crie documentos automatizados de forma programática com base no que você criou com [!DNL InDesign]. Ele opera como um serviço que oferece uma interface para seu mecanismo [ExtendScript](https://www.adobe.com/devnet/scripting.html) .Os scripts são escritos em [!DNL ExtendScript], o que é semelhante a [!DNL JavaScript]. Para obter informações sobre [!DNL InDesign] scripts, consulte [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## Como a extração funciona {#how-the-extraction-works}
 
@@ -47,7 +47,7 @@ Esse script de comando:
 
    >[!NOTE]
    >
-   >IDML é um formato baseado em XML que renderiza todo o conteúdo do [!DNL InDesign] arquivo. Ele é armazenado como um pacote compactado usando a compactação [ZIP](https://www.techterms.com/definition/zip) . Para obter mais informações, consulte [InDesign Interchange Formats INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML é um formato baseado em XML que renderiza todo o conteúdo do [!DNL InDesign] arquivo. Ele é armazenado como um pacote compactado usando a compactação [ZIP](https://www.techterms.com/definition/zip) . Para obter mais informações, consulte Formatos de intercâmbio de [InDesigns INX e IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
@@ -66,7 +66,7 @@ Para integrar o [!DNL InDesign Server] para uso com [!DNL Experience Manager Ass
 1. [Instale o InDesign Server](#installing-the-indesign-server).
 1. Se necessário, [configure o Fluxo de trabalho](#configuring-the-aem-assets-workflow)dos ativos Experience Manager.
 Isso só é necessário se os valores padrão não forem apropriados para sua instância.
-1. Configure um funcionário [proxy para o InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
+1. Configure um [proxy para o InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
 ### Instale o [!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -80,7 +80,7 @@ Para instalar e start o para uso [!DNL InDesign Server] com [!DNL Experience Man
 
    `<*ids-installation-dir*>/InDesignServer.com -port 8080`
 
-   Isso start o servidor com o plug-in SOAP que escuta na porta 8080. Todas as mensagens de registro e saída são gravadas diretamente na janela de comando.
+   Isso start o servidor com o plug-in SOAP escutando na porta 8080. Todas as mensagens de registro e saída são gravadas diretamente na janela de comando.
 
    >[!NOTE]
    >
@@ -137,7 +137,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 
 * **Título** da página: Especifique o título que deseja atribuir à página resultante.
 
-* **Caminho** raiz da página: O caminho para o local raiz da página resultante. Se deixado em branco, o nó que contém as representações do ativo será usado.
+* **Caminho** raiz da página: O caminho para o local raiz da página resultante. Se deixado em branco, o nó que retém as representações do ativo será usado.
 
 * **Modelo** de página: O modelo a ser usado ao gerar a página resultante.
 
@@ -149,7 +149,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 >
 >O trabalhador reside na instância do proxy.
 
-1. No console Ferramentas, expanda Configurações **[!UICONTROL de]** Cloud Service no painel esquerdo. Em seguida, expanda Configuração **[!UICONTROL de proxy da]** Cloud.
+1. No console Ferramentas, expanda Configurações **[!UICONTROL de]** Cloud Services no painel esquerdo. Em seguida, expanda Configuração **[!UICONTROL de proxy da]** Cloud.
 
 1. Clique duas vezes no **[!UICONTROL trabalhador IDS]** para abrir a configuração.
 
