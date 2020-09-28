@@ -1,11 +1,11 @@
 ---
-title: Configure o Asset Insights para obter análises de uso de ativos digitais.
+title: Configure o Asset Insights para obter análises.
 description: Configure o Asset Insights no [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '228'
 ht-degree: 7%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 7%
 1. Clique no cartão **[!UICONTROL Configuração do Insights]**.
 1. No assistente, selecione um centro de dados e forneça suas credenciais, incluindo o nome de sua organização, o nome de usuário e o Segredo compartilhado.
 
-   ![Configurar o Adobe Analytics para insights de ativos no Experience Manager](assets/insights_config2.png)
+   ![Configurar o Adobe Analytics para insights do Assets no Experience Manager](assets/insights_config2.png)
 
    *Figura: Configurar[!DNL Adobe Analytics]para insights do Assets em[!DNL Experience Manager].*
 
