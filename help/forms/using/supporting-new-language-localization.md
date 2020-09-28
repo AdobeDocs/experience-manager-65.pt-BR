@@ -1,8 +1,8 @@
 ---
 title: Suporte a novas localidades para localização de formulários adaptáveis
 seo-title: Suporte a novas localidades para localização de formulários adaptáveis
-description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptativos. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
-seo-description: O AEM Forms permite adicionar novas localidades para localizar formulários adaptativos. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
+description: A AEM Forms permite adicionar novas localidades para localizar formulários adaptativos. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
+seo-description: A AEM Forms permite adicionar novas localidades para localizar formulários adaptativos. Por padrão, as localidades compatíveis são inglês, francês, alemão e japonês.
 uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -26,27 +26,38 @@ A localização de formulários adaptáveis depende de dois tipos de dicionário
 
 **Dicionário** específico do formulário Contém strings usadas em formulários adaptáveis. Por exemplo, rótulos, nomes de campos, mensagens de erro, descrições de ajuda e assim por diante. Ele é gerenciado como um conjunto de arquivos XLIFF para cada localidade e você pode acessá-lo em `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Dicionários** globais Existem dois dicionários globais, gerenciados como objetos JSON, na biblioteca do cliente AEM. Esses dicionários contêm mensagens de erro padrão, nomes de mês, símbolos de moeda, padrões de data e hora e assim por diante. Você pode encontrar esses dicionários no CRXDe Lite em /libs/fd/xfaforms/clientlibs/I18N. Esses locais contêm pastas separadas para cada localidade. Como os dicionários globais geralmente não são atualizados com frequência, a manutenção de arquivos JavaScript separados para cada localidade permite que os navegadores os armazenem em cache e reduzam o uso da largura de banda da rede ao acessar formulários adaptáveis diferentes no mesmo servidor.
+**Dicionários** globais Existem dois dicionários globais, gerenciados como objetos JSON, na biblioteca AEM cliente. Esses dicionários contêm mensagens de erro padrão, nomes de mês, símbolos de moeda, padrões de data e hora e assim por diante. Você pode encontrar esses dicionários no CRXDe Lite em /libs/fd/xfaforms/clientlibs/I18N. Esses locais contêm pastas separadas para cada localidade. Como os dicionários globais geralmente não são atualizados com frequência, a manutenção de arquivos JavaScript separados para cada localidade permite que os navegadores os armazenem em cache e reduzam o uso da largura de banda da rede ao acessar formulários adaptáveis diferentes no mesmo servidor.
 
 ### Como funciona a localização do formulário adaptável {#how-localization-of-adaptive-form-works}
 
-Quando um formulário adaptável é renderizado, ele identifica a localidade solicitada, observando os seguintes parâmetros na ordem especificada:
+Há dois métodos para identificar a localidade do formulário adaptável. Quando um formulário adaptável é renderizado, ele identifica a localidade solicitada ao:
 
-* Parâmetro de solicitação `afAcceptLang`Para substituir a localidade do navegador de usuários, é possível passar a variável 
+* observando o `[local]` seletor no URL do formulário adaptável. The format of the URL is `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. O uso `[local]` do seletor permite o armazenamento em cache de um formulário adaptável.
+
+* observando os seguintes parâmetros na ordem especificada:
+
+   * Parâmetro de solicitação `afAcceptLang`Para substituir a localidade do navegador de usuários, é possível passar a variável 
 `afAcceptLang` parâmetro request para forçar a localidade. Por exemplo, o URL a seguir forçará a renderização do formulário na localidade japonesa:
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* A localidade do navegador definida para o usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
+   * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
 
-* Configuração de idioma do usuário especificado no AEM.
+   * Configuração de idioma do usuário especificado em AEM.
 
-Depois que a localidade é identificada, os formulários adaptativos escolhem o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário inglês (en).
+   * A localidade do navegador está ativada, por padrão. Para alterar a configuração de localidade do navegador,
+      * Abra o gerenciador de configuração. O URL é `http://[server]:[port]/system/console/configMgr`
+      * Localize e abra a configuração do Formulário **[!UICONTROL adaptativo e do Canal]** da Web de comunicação interativa.
+      * Altere o status da opção **[!UICONTROL Usar localidade]** do navegador e **[!UICONTROL Salve]** a configuração.
+
+Depois que a localidade é identificada, os formulários adaptativos escolhem o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário para o idioma no qual o formulário adaptativo foi criado.
+
+Se nenhuma informação de localidade estiver presente, o formulário adaptativo será fornecido no idioma original do formulário. O idioma original é o idioma usado ao desenvolver o formulário adaptativo.
 
 Se uma biblioteca do cliente para a localidade solicitada não existir, ela verificará se há uma biblioteca do cliente para o código de idioma presente na localidade. Por exemplo, se a localidade solicitada for `en_ZA` (inglês sul-africano) e a biblioteca do cliente para `en_ZA` não existir, o formulário adaptável usará a biblioteca do cliente para o idioma `en` (inglês), se existir. No entanto, se nenhum deles existir, o formulário adaptativo usará o dicionário para a `en` localidade.
 
 ## Adicionar suporte de localização para localidades não suportadas {#add-localization-support-for-non-supported-locales}
 
-Atualmente, o AEM Forms suporta localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
+Atualmente, a AEM Forms suporta localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR).
 
 Para adicionar suporte para uma nova localidade em tempo de execução de formulários adaptáveis:
 
