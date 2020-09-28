@@ -1,11 +1,11 @@
 ---
-title: Adicionar mapas de imagem com hiperlinks para imagens digitais
+title: Adicionar mapas de imagem com hiperlinks
 description: Saiba como adicionar um mapa de imagem com hiperlinks a uma imagem.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -45,4 +45,4 @@ Os mapas de imagem permitem adicionar uma ou mais áreas hipervinculadas que fun
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Se a opção Dynamic Media estiver ativada, navegue até o editor de ativos e clique em **[!UICONTROL Mapa]** para visualização de todos os mapas de imagem aplicados.
+   Se a opção Mídia dinâmica estiver ativada, navegue até o editor de ativos e clique em **[!UICONTROL Mapa]** para visualização de todos os mapas de imagem aplicados.
