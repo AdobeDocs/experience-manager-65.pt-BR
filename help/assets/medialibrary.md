@@ -1,9 +1,9 @@
 ---
-title: Oferta [!DNL Adobe Experience Manager Assets] Compareand Media Library.
+title: Ofertas da [!DNL Assets] Compareand Media Library
 description: Ofertas da [!DNL Experience Manager Assets] Compareand Media Library e conheça as diferenças.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 2%
@@ -81,8 +81,8 @@ Para esse caso de uso, não é necessário comprar [!DNL Assets], nem mesmo o us
 * Gerenciamento de direitos
 * apoio Camera Raw
 * Gerenciamento e configuração de aspectos de pesquisa
-* workflows DAM pré-criados (por exemplo, fotografar)
-* relatórios e análise de ativos chamados Insights
+* Workflows DAM pré-criados (por exemplo, fotografar)
+* Relatórios e análise de ativos chamados Insights
 * Gerenciamento de ativos 3D
 * Connected Assets
 * Brand Portal
@@ -101,7 +101,7 @@ Para esse caso de uso, não é necessário comprar [!DNL Assets], nem mesmo o us
 * Representações estáticas
 * Projetos, tarefas, criação de fluxo de trabalho
 * Atividade (linha do tempo)
-* Construtor de Query (API)
+* Construtor de query (API)
 * integração de Marketing Cloud
 * Personalização e extensão da interface do usuário
 * Comentários e anotações
