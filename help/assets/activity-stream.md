@@ -1,11 +1,11 @@
 ---
-title: Atividade de ativos digitais na visualização [!DNL Experience Manager]da linha do tempo.
+title: Atividade de ativos digitais na visualização da linha do tempo
 description: Este artigo descreve como exibir registros de atividades para ativos na linha do tempo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '215'
 ht-degree: 27%
 
 ---
@@ -30,7 +30,7 @@ Os registros de atividades a serem exibidos na linha do tempo são obtidos do lo
 
 >[!NOTE]
 >
->workflows transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses workflows.
+>Workflows transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses workflows.
 
 Para visualização do fluxo de atividade, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha]** do tempo na lista GlobalNav.
 
