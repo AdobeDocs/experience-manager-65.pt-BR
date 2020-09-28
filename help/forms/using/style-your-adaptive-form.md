@@ -8,10 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
+source-git-commit: 0b3884301e09eba6860891f00a98508033d12ec8
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 7%
+source-wordcount: '2058'
+ht-degree: 8%
 
 ---
 
@@ -442,18 +442,18 @@ Alguns estilos se aplicam somente a um componente específico. Esses componentes
 
 É possível usar várias fontes para criar um formulário adaptável. Nem todos os dispositivos nos quais o formulário adaptativo é exibido podem ter as fontes usadas para projetar o formulário adaptável. Você pode usar um serviço de fontes da Web para fornecer as fontes necessárias ao dispositivo de público alvo.
 
-[!DNL Adobe Typekit] é um serviço de fontes da Web. Você pode configurar e usar o serviço com formulários adaptáveis. Para usar [!DNL Adobe Typekit] em uma forma adaptável:
+[!DNL Adobe Fonts] é um serviço de fontes da Web. Você pode configurar e usar o serviço com formulários adaptáveis. Para usar [!DNL Adobe Fonts] em uma forma adaptável:
 
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) agora [!DNL Typekit] é chamado de Adobe Fonts e está incluído em Creative Cloud e outras subscrições. [Saiba mais](https://fonts.adobe.com/).
 
-1. Crie uma conta [Adobe Typekit](https://typekit.com/) , crie um kit, adicione fontes Myriad Pro ao kit, publique o kit e obtenha a ID do Kit. É necessário usar [!DNL Adobe Typekit] fontes (fontes da Web) em um formulário adaptável.
-1. No servidor AEM [!DNL Forms] , navegue até ![adobeexperience emanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **** **** Implantação > Cloud Services. Na página Cloud Services, navegue até Serviços **[!UICONTROL de]** terceiros > **[!UICONTROL Typekit]** e clique em **[!UICONTROL Configurar]** agora em [!UICONTROL Typekit]. Se uma configuração já estiver disponível, clique no botão + para criar uma nova instância.
+1. Crie uma conta [Adobe Fonts](https://typekit.com/) , crie um kit, adicione fontes Myriad Pro ao kit, publique o kit e obtenha a ID do Kit. É necessário usar [!DNL Adobe Fonts] (fontes da Web) em um formulário adaptável.
+1. No servidor AEM [!DNL Forms] , navegue até ![adobeexperience emanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **** Adobe Fonts. Agora, abra uma pasta de configuração. Se uma configuração já estiver disponível, clique no botão **[!UICONTROL Criar]** para criar uma nova instância.
 
    Na caixa de diálogo Criar configuração, especifique um **Título** para a configuração e clique em **[!UICONTROL Criar]**. Você é redirecionado para a página de configuração. Na caixa de diálogo [!UICONTROL Editar componente] que é exibida, forneça a ID **do** Kit e clique em **[!UICONTROL OK]**.
 
-1. Configure seu tema para usar a [!DNL TypeKit] configuração. Na instância do autor, abra Tema **** global no editor de temas. No editor de temas, navegue até Opções **[!UICONTROL de]** tema Opções ![de](assets/theme-options.png) tema > Opções **[!UICONTROL de]** configuração. No campo Configuração **[!UICONTROL do]** Typekit, selecione o kit e clique em **[!UICONTROL Salvar]**.
+1. Configure seu tema para usar a [!DNL Adobe Fonts] configuração. Na instância do autor, abra Tema **** global no editor de temas. No editor de temas, navegue até Opções **[!UICONTROL de]** tema Opções ![de](assets/theme-options.png) tema > Opções **[!UICONTROL de]** configuração. No campo Configuração **** Adobe Fonts, selecione o kit e clique em **[!UICONTROL Salvar]**.
 
-   As fontes adicionadas ao [!UICONTROL Typekit] estão disponíveis para seleção na opção **[!UICONTROL Texto]** de todos os componentes.
+   As fontes adicionadas ao **[!UICONTROL Adobe Fonts]** estão disponíveis para seleção na opção **[!UICONTROL Texto]** de todos os componentes.
 
