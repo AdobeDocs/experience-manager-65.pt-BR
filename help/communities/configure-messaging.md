@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Recurso de mensagens {#messaging-feature}
 
-Além das interações publicamente visíveis que ocorrem em fóruns e comentários, o recurso de mensagens dos AEM Communities permite que os membros da comunidade interajam mais privadamente.
+Além das interações publicamente visíveis que ocorrem em fóruns e comentários, o recurso de mensagens da AEM Communities permite que os membros da comunidade interajam mais privadamente.
 
 Este recurso pode ser incluído quando um site [da](/help/communities/overview.md#communitiessites) comunidade é criado.
 
@@ -41,7 +41,9 @@ O recurso de mensagens oferece a capacidade de:
 
 **G** - restaurar uma mensagem excluída
 
-![mensagem de](assets/messaging-section.png) restauração de seção ![de mensagens](assets/restore-message.png)
+![seção de mensagens](assets/messaging-section.png)
+
+![restore-message](assets/restore-message.png)
 
 Para ativar e modificar o recurso de mensagens, consulte:
 
@@ -87,7 +89,7 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
    Se marcada, o URL de resposta e o URL de Visualização farão referência a um recurso, caso contrário, os dados serão transmitidos como parâmetros de query no URL.
 
-* **Formulário de exibição de Perfil**
+* **Formulário de exibição de perfil**
 
    O formulário de perfil a ser usado para exibir o perfil de remetentes.
 
