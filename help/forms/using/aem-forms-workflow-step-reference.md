@@ -1,8 +1,8 @@
 ---
-title: Fluxo de trabalho centrado em formulários no OSGi - Referência de etapas
-seo-title: Fluxo de trabalho centrado em formulários no OSGi - Referência de etapas
-description: O fluxo de trabalho centrado em formulários nas etapas do OSGi permite que você crie rapidamente workflows baseados em formulários adaptáveis.
-seo-description: O fluxo de trabalho centrado em formulários nas etapas do OSGi permite que você crie rapidamente workflows baseados em formulários adaptáveis.
+title: Fluxo de trabalho centrado na Forms no OSGi - Referência de etapas
+seo-title: Fluxo de trabalho centrado na Forms no OSGi - Referência de etapas
+description: O fluxo de trabalho centrado na Forms nas etapas do OSGi permite que você crie rapidamente workflows baseados em formulários adaptáveis.
+seo-description: O fluxo de trabalho centrado na Forms nas etapas do OSGi permite que você crie rapidamente workflows baseados em formulários adaptáveis.
 uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 contentOwner: null
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,19 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: aff67332de7295936ea45e3f38cd204fd448a570
 workflow-type: tm+mt
-source-wordcount: '7077'
+source-wordcount: '7109'
 ht-degree: 0%
 
 ---
 
 
-# Fluxo de trabalho centrado em formulários no OSGi - Referência de etapas{#forms-centric-workflow-on-osgi-step-reference}
+# Fluxo de trabalho centrado na Forms no OSGi - Referência de etapas{#forms-centric-workflow-on-osgi-step-reference}
 
-## Etapas do fluxo de trabalho do Forms {#forms-workflow-steps}
+## Etapas Forms Workflow {#forms-workflow-steps}
 
-As etapas do fluxo de trabalho do Forms executam operações específicas a AEM Forms em um fluxo de trabalho do AEM. Essas etapas permitem que você crie rapidamente fluxos de trabalho adaptáveis baseados em formulários centrados em formulários no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos de negócios internos e entre firewall. Você também pode usar as etapas do Fluxo de trabalho do Forms para serviços de documento de start, integrar-se ao fluxo de trabalho de assinatura do Adobe Sign e executar outras operações de AEM Forms. Você precisa do complemento [](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms para usar essas etapas em um fluxo de trabalho.
+As etapas do fluxo de trabalho do Forms executam operações específicas do AEM Forms em um fluxo de trabalho AEM. Essas etapas permitem que você crie formulários adaptáveis rapidamente com base no fluxo de trabalho centralizado no Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos de negócios internos e entre firewall. Você também pode usar as etapas do Forms Workflow para os serviços de documento do start, fazer a integração com o fluxo de trabalho de assinatura do Adobe Sign e executar outras operações do AEM Forms. Você precisa do complemento [](https://www.adobe.com/go/learn_aemforms_documentation_63) AEM Forms para usar essas etapas em um fluxo de trabalho.
 
 ## Assign task step {#assign-task-step}
 
@@ -30,12 +30,12 @@ A etapa Atribuir tarefa cria uma tarefa e a atribui a um usuário ou grupo. Junt
 
 Você também pode usar o componente para controlar o comportamento da tarefa. Por exemplo, criar um documento automático de registro, atribuir a tarefa a um usuário ou grupo específico, especificar o caminho dos dados enviados, especificar o caminho dos dados a serem pré-preenchidos e especificar ações padrão. A etapa Atribuir Tarefa tem as seguintes propriedades:
 
-* **Título:** Título da tarefa. O título é exibido na Caixa de entrada do AEM.
+* **Título:** Título da tarefa. O título é exibido AEM Caixa de entrada.
 * **Descrição:** Explicação das operações que estão a ser efetuadas na tarefa. Essas informações são úteis para outros desenvolvedores de processos quando você trabalha em um ambiente de desenvolvimento compartilhado.
 
 * **Caminho da miniatura:** Caminho da miniatura da tarefa. Se nenhum caminho for especificado, para uma miniatura padrão de formulário adaptável será exibida e para o Documento de Registro, um ícone padrão será exibido.
-* **Fase do fluxo de trabalho:** Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM. É possível definir esses estágios nas propriedades do modelo (Sidekick > Página > Propriedades da página > Estágios).
-* **Prioridade:** A prioridade selecionada é exibida na Caixa de entrada do AEM. As opções disponíveis são Alto, Médio e Baixo. O valor padrão é Médio.
+* **Fase do fluxo de trabalho:** Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada AEM. É possível definir esses estágios nas propriedades do modelo (Sidekick > Página > Propriedades da página > Estágios).
+* **Prioridade:** A prioridade selecionada é exibida na Caixa de entrada AEM. As opções disponíveis são Alto, Médio e Baixo. O valor padrão é Médio.
 * **Data de Vencimento:** Especifique o número de dias ou horas após os quais a tarefa está marcada como atrasada. Se você selecionar **Desativado**, a tarefa nunca será marcada como atrasada. Você também pode especificar um manipulador de tempo limite para executar tarefas específicas depois que a tarefa estiver atrasada.
 
 * **Dias:** O número de dias antes do qual a tarefa deve ser concluída. O número de dias é contado após a tarefa ser atribuída a um usuário. Se uma tarefa não for concluída e ultrapassar o número de dias especificado no campo Dias, então, se selecionado, um manipulador de tempo limite será acionado após a data de vencimento.
@@ -51,14 +51,14 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 >[!NOTE]
 >
->É necessário ter usuários com agente de cm e atribuições de grupo de usuários de fluxo de trabalho para acessar a interface do usuário do agente do Interative Communications na caixa de entrada do AEM.
+>É necessário ter atribuições de grupos de usuários-agente-cm e usuários-fluxo de trabalho para acessar a interface do usuário do Agente do Interative Communications na caixa de entrada AEM.
 
 * **Formulário adaptável ou caminho** de comunicação interativo: Especifique o caminho do formulário adaptável ou da Comunicação interativa. Você pode usar o formulário adaptável ou a comunicação interativa enviada para o fluxo de trabalho, disponível em um caminho absoluto, ou recuperar o formulário adaptável de um caminho armazenado em uma variável do tipo de dados da string.
 * **Selecione PDF de entrada usando:** Especifique o caminho de um documento PDF não interativo. O campo está disponível quando você escolhe um documento PDF não interativo no campo Tipo. Você pode selecionar o PDF de entrada usando o caminho relativo à carga, salvo em um caminho absoluto ou usando uma variável do tipo de dados do Documento. Por exemplo, [Payload_Diretory]/Workflow/PDF/credit-card.pdf. O caminho não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. É necessário ativar uma opção Documento de registro ou formulários adaptáveis baseados em modelo de formulário para usar a opção Caminho do PDF.
 * **Para a tarefa concluída, renderize o formulário adaptável como**: Quando uma tarefa está marcada como concluída, é possível renderizar o formulário adaptável como um formulário adaptável somente leitura ou um documento PDF. É necessário ativar uma opção Documento de registro ou formulários adaptáveis baseados em modelo de formulário para renderizar o formulário adaptável como Documento de registro.
 * **Pré-preenchido:** Os seguintes campos listados abaixo servem como entradas para a tarefa:
 
-   * **Selecione o arquivo de dados de entrada usando:** Caminho do arquivo de dados de entrada (.json,. xml, .doc ou modelo de dados de formulário). Você pode recuperar o arquivo de dados de entrada usando um caminho relativo à carga ou recuperar o arquivo armazenado em uma variável do tipo de dados Documento, XML ou JSON. Por exemplo, o arquivo contém os dados enviados para o formulário por meio de um aplicativo AEM Inbox. Um caminho de exemplo é [Payload_Diretory]/workflow/data.
+   * **Selecione o arquivo de dados de entrada usando:** Caminho do arquivo de dados de entrada (.json,. xml, .doc ou modelo de dados de formulário). Você pode recuperar o arquivo de dados de entrada usando um caminho relativo à carga ou recuperar o arquivo armazenado em uma variável do tipo de dados Documento, XML ou JSON. Por exemplo, o arquivo contém os dados enviados para o formulário por meio de um aplicativo AEM Caixa de entrada. Um caminho de exemplo é [Payload_Diretory]/workflow/data.
    * **Selecione anexos de entrada usando:** Os anexos disponíveis no local são anexados ao formulário associado à tarefa. O caminho é sempre relativo à carga. Um caminho de exemplo é [Payload_Diretory]/attachments/
    * **Escolha entrada JSON:** Selecione um arquivo JSON de entrada usando um caminho relativo à carga ou armazenado em uma variável do tipo de dados Documento, JSON ou Modelo de dados de formulário. Essa opção estará disponível se você selecionar IU do agente de comunicação interativo ou Documento do Canal da Web de comunicação interativa na lista suspensa Tipo.
    * **Escolha um serviço de preenchimento prévio personalizado:** Selecione o serviço de pré-preenchimento para recuperar os dados e pré-preencher o documento do canal da Web Interative Communication ou a interface do agente.
@@ -71,14 +71,14 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
    * **Salve o arquivo de dados de saída usando:** Salve o arquivo de dados (.json,. xml, .doc ou modelo de dados de formulário). O arquivo de dados contém informações enviadas por meio do formulário associado. É possível salvar o arquivo de dados de saída usando um caminho relativo à carga ou armazená-lo em uma variável do tipo de dados Documento, XML ou JSON. Por exemplo, [Payload_Diretory]/Workflow/data, onde os dados são um arquivo.
    * **Salvar anexos usando:** Salve os anexos de formulário fornecidos em uma tarefa. É possível salvar os anexos usando um caminho relativo à carga ou armazená-lo em uma variável do tipo de dados do Documento.
-   * **Salvar Documento de Registro usando:** Caminho para salvar um Documento do arquivo de registro. Por exemplo, [Payload_Diretory]/DocumentofRecord/credit-card.pdf. Você pode salvar o Documento de Registro usando um caminho relativo à carga ou armazená-lo em uma variável do tipo de dados do Documento. Se você selecionar a opção **Em relação à carga útil** , o Documento do registro não será gerado se o campo de caminho ficar vazio. Essa opção estará disponível somente se você selecionar Formulário adaptável na lista suspensa Tipo.
+   * **Salvar Documento de Registro usando:** Caminho para salvar um Documento do arquivo de registro. Por exemplo, [Payload_Diretory]/DocumentofRecord/credit-card.pdf. É possível salvar o Documento de Registro usando um caminho relativo à carga ou armazená-lo em uma variável do tipo de dados do Documento. Se você selecionar a opção **Em relação à carga útil** , o Documento do registro não será gerado se o campo de caminho ficar vazio. Essa opção estará disponível somente se você selecionar Formulário adaptável na lista suspensa Tipo.
 
    * **Salvar dados de Canal da Web usando:** Salve o arquivo de dados do Canal da Web usando um caminho relativo à carga ou armazene-o em uma variável do tipo de dados Documento, JSON ou Form Data Model. Essa opção estará disponível somente se você selecionar a interface do usuário do Agente de comunicação interativa na lista suspensa Tipo.
    * **Salve o documento PDF usando:** Salve o documento PDF usando um caminho relativo à carga ou armazene-o em uma variável do tipo de dados do Documento. Essa opção estará disponível somente se você selecionar a interface do usuário do Agente de comunicação interativa na lista suspensa Tipo.
    * **Salve o modelo de layout usando:** Salve o modelo de layout usando um caminho relativo à carga ou armazene-o em uma variável do tipo de dados do Documento. O modelo [de](../../forms/using/layout-design-details.md) layout refere-se a um arquivo XDP que você cria usando o Forms Designer. Essa opção estará disponível somente se você selecionar a interface do usuário do Agente de comunicação interativa na lista suspensa Tipo.
 
-* **Destinatário > Atribuir opções:** Especifique o método para atribuir a tarefa a um usuário. Você pode atribuir dinamicamente a tarefa a um usuário ou grupo usando o script do Seletor de participantes ou atribuir a tarefa a um usuário ou grupo específico do AEM.
-* **Seletor de participantes:** A opção está disponível quando a opção **Dinamicamente para um usuário ou grupo** está selecionada no campo Atribuir opções. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte Atribuir [dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criar uma etapa personalizada do Participante dinâmico do Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **Destinatário > Atribuir opções:** Especifique o método para atribuir a tarefa a um usuário. Você pode atribuir dinamicamente a tarefa a um usuário ou grupo usando o script do Seletor de participantes ou atribuir a tarefa a um usuário ou grupo AEM específico.
+* **Seletor de participantes:** A opção está disponível quando a opção **Dinamicamente para um usuário ou grupo** está selecionada no campo Atribuir opções. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte Atribuir [dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criar uma etapa personalizada do Adobe Experience Manager Dynamic Participant.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 * **Participantes:** O campo está disponível quando a opção **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** está selecionada no campo Seletor de **participantes** . O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 
@@ -89,25 +89,25 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **Usuário ou grupo:** A tarefa é atribuída ao usuário ou grupo selecionado. A opção está disponível quando a opção **** Para um usuário ou grupo específico está selecionada no campo **Atribuir opções** . O campo lista todos os usuários e grupos do grupo de usuários do fluxo de trabalho.\
    O menu suspenso **Usuário ou Grupo** lista os usuários e grupos aos quais o usuário conectado tem acesso. A exibição do nome de usuário depende se você tiver permissões de acesso no nó **usuários** no repositório crx para esse usuário específico.
 
-* **Notificar o destinatário por email:** Selecione essa opção para enviar notificações por email ao destinatário. Essas notificações são enviadas quando uma tarefa é atribuída a um usuário. Antes de usar a opção, ative as notificações do console da Web do AEM. Para obter instruções passo a passo, consulte [configurar notificações por email para a etapa de atribuição de tarefa](../../forms/using/aem-forms-workflow.md)
+* **Notificar o destinatário por email:** Selecione essa opção para enviar notificações por email ao destinatário. Essas notificações são enviadas quando uma tarefa é atribuída a um usuário. Antes de usar a opção, ative as notificações AEM Web Console. Para obter instruções passo a passo, consulte [configurar notificações por email para a etapa de atribuição de tarefa](../../forms/using/aem-forms-workflow.md)
 
 * **Modelo** de email HTML: Selecione o modelo de e-mail para o e-mail de notificação. Para editar um modelo, modifique o arquivo localizado em /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt no repositório crx.
-* **Permitir delegação para:** A Caixa de entrada do AEM fornece uma opção para o usuário conectado para delegar o fluxo de trabalho atribuído a outro usuário. Você pode delegar dentro do mesmo grupo ou ao usuário do fluxo de trabalho de outro grupo. Se a tarefa for atribuída a um único usuário e a opção **permitir delegação a membros do grupo** designado for selecionada, não será possível delegar a tarefa a outro usuário ou grupo.
-* **Configurações de compartilhamento:** A Caixa de entrada do AEM fornece opções para compartilhar uma única ou todas as tarefas da caixa de entrada com outros usuários:
-   * Quando a opção **Permitir que o destinatário compartilhe explicitamente na caixa de entrada** está selecionada, o usuário pode clicar na tarefa e compartilhá-la com outro usuário do AEM.
+* **Permitir delegação para:** AEM Caixa de entrada fornece uma opção para o usuário conectado para delegar o fluxo de trabalho atribuído a outro usuário. Você pode delegar dentro do mesmo grupo ou ao usuário do fluxo de trabalho de outro grupo. Se a tarefa for atribuída a um único usuário e a opção **permitir delegação a membros do grupo** designado for selecionada, não será possível delegar a tarefa a outro usuário ou grupo.
+* **Configurações de compartilhamento:** AEM Caixa de entrada fornece opções para compartilhar uma única ou todas as tarefas na caixa de entrada com outros usuários:
+   * Quando a opção **Permitir que o destinatário compartilhe explicitamente na caixa de entrada** estiver selecionada, o usuário poderá clicar na tarefa e compartilhá-la com outro usuário AEM.
    * Quando a opção **Permitir compartilhamento pelo destinatário via compartilhamento** de caixa de entrada estiver selecionada e um usuário compartilhar seus itens de Caixa de entrada ou permitir que outros usuários acessem seus itens de Caixa de entrada, somente as tarefas com essa opção ativada serão compartilhadas com outros usuários.
 
 * **Ações > Ações padrão:** As ações Enviar, Salvar e Redefinir estão disponíveis na caixa. Todas as ações padrão são ativadas, por padrão.
-* **Variável de rota:** Nome da variável de rota. A variável de rota captura ações personalizadas que um usuário seleciona na Caixa de entrada do AEM.
-* **Rotas:** Uma tarefa pode ramificar para rotas diferentes. Quando selecionada na Caixa de entrada do AEM, a rota retorna um valor e o fluxo de trabalho ramifica com base na rota selecionada. Você pode armazenar rotas em uma variável de uma matriz do tipo de dados String ou selecionar **Literal** para adicionar rotas manualmente.
+* **Variável de rota:** Nome da variável de rota. A variável de rota captura ações personalizadas que um usuário seleciona AEM Caixa de entrada.
+* **Rotas:** Uma tarefa pode ramificar para rotas diferentes. Quando selecionada em AEM Caixa de entrada, a rota retorna um valor e o fluxo de trabalho ramifica com base na rota selecionada. Você pode armazenar rotas em uma variável de uma matriz do tipo de dados String ou selecionar **Literal** para adicionar rotas manualmente.
 
-* **Título**: Especifique o título da rota. É exibido na Caixa de entrada do AEM.
-* **Ícone** Coral: Especifique o atributo HTML de um ícone de coral. A biblioteca do Adobe CorelUI fornece um vasto conjunto de ícones de toque primeiro. Você pode escolher e usar um ícone para a rota. É exibido junto com o título na Caixa de entrada do AEM. Se você armazenar as rotas em uma variável, as rotas usarão um ícone de coral &#39;Tags&#39; padrão.
-* **Permitir que o destinatário adicione comentário**: Selecione essa opção para ativar comentários para a tarefa. Um destinatário pode adicionar os comentários da Caixa de entrada do AEM no momento do envio da tarefa.
+* **Título**: Especifique o título da rota. É exibido em AEM Caixa de entrada.
+* **Ícone** Coral: Especifique o atributo HTML de um ícone de coral. A biblioteca de Adobe CorelUI fornece um vasto conjunto de ícones touch-first. Você pode escolher e usar um ícone para a rota. É exibido junto com o título AEM Caixa de entrada. Se você armazenar as rotas em uma variável, as rotas usarão um ícone de coral &#39;Tags&#39; padrão.
+* **Permitir que o destinatário adicione comentário**: Selecione essa opção para ativar comentários para a tarefa. Um destinatário pode adicionar os comentários de dentro AEM Caixa de entrada no momento do envio da tarefa.
 * **Salve o comentário na variável:** Salve o comentário em uma variável do tipo de dados String. Essa opção é exibida somente se você marcar a caixa de seleção **Permitir que o destinatário adicione comentário** .
 
-* **Permitir que o destinatário adicione anexos à tarefa**: Selecione essa opção para ativar anexos para a tarefa. Um destinatário pode adicionar os anexos de dentro da Caixa de entrada do AEM no momento do envio da tarefa.
-* **Salve anexos de tarefa de saída usando**: Especifique o local da pasta de anexos. É possível salvar anexos de tarefa de saída usando um caminho relativo à carga ou em uma variável de uma matriz de tipo de dados de documento. Essa opção é exibida somente se você marcar a caixa de seleção **Permitir que o destinatário adicione anexos à tarefa** e selecionar Formulário **** Adaptável, Formulário **adaptável somente** leitura ou documento **PDF** não interativo na lista suspensa **Tipo** **** na guia Formulário/Documento.
+* **Permitir que o destinatário adicione anexos à tarefa**: Selecione essa opção para ativar anexos para a tarefa. Um destinatário pode adicionar os anexos de dentro AEM Caixa de entrada no momento do envio da tarefa.
+* **Salve anexos de tarefa de saída usando**: Especifique o local da pasta de anexos. É possível salvar anexos de tarefa de saída usando um caminho relativo à carga ou em uma variável de uma matriz de tipo de dados de documento. Essa opção é exibida somente se você marcar a caixa de seleção **Permitir que o destinatário adicione anexos à tarefa** e selecionar Formulário **** Adaptável, Formulário **adaptável somente** leitura ou documento **PDF** Não interativo na lista suspensa **Tipo** **** na guia Formulário/Documento.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Se você especificar o caminho de uma pasta, por exemplo, anexos, todos os arqui
 
 ## Invoke Form Data Model Service step {#invoke-form-data-model-service-step}
 
-Você pode usar a Integração [de dados do](../../forms/using/data-integration.md) AEM Forms para configurar e se conectar a fontes de dados diferentes. Essas fontes de dados podem ser uma solução de banco de dados, serviço da Web, serviço REST, serviço OData e CRM. A Integração de dados do AEM Forms permite criar um modelo de dados de formulário abrangendo vários serviços para executar operações de recuperação de dados, adição e atualização no banco de dados configurado. Você pode usar a etapa **** Chamar serviço de modelo de dados para selecionar um modelo de dados de formulário (FDM) e usar os serviços do FDM para recuperar, atualizar ou adicionar dados a fontes de dados diferentes.
+Você pode usar a Integração [de dados da](../../forms/using/data-integration.md) AEM Forms para configurar e se conectar a fontes de dados diferentes. Essas fontes de dados podem ser uma solução de banco de dados, serviço da Web, serviço REST, serviço OData e CRM. A Integração de dados da AEM Forms permite criar um modelo de dados de formulário abrangendo vários serviços para executar operações de recuperação de dados, adição e atualização no banco de dados configurado. Você pode usar a etapa **** Chamar serviço de modelo de dados para selecionar um modelo de dados de formulário (FDM) e usar os serviços do FDM para recuperar, atualizar ou adicionar dados a fontes de dados diferentes.
 
 Para explicar entradas para campos da etapa, a tabela do banco de dados a seguir e o arquivo JSON são usados como exemplo:
 
@@ -251,7 +251,8 @@ A etapa Invocar serviço de modelo de dados de formulário tem os campos listado
 * **Selecione documento Input JSON usando**: O arquivo JSON que contém valores para todos os argumentos de serviço. O caminho do arquivo JSON pode ser **relativo à carga** ou a um caminho **absoluto.** Você também pode recuperar o documento JSON de entrada usando uma variável do tipo de dados JSON ou Form Data Model.
 
 * **Notação de ponto JSON:** Deixe o campo em branco para usar todos os objetos do arquivo JSON especificado como entrada para argumentos de serviço. Para ler um objeto JSON específico do arquivo JSON especificado como entrada para argumentos de serviço, especifique a notação de pontos para o objeto JSON, por exemplo, se você tiver um JSON semelhante ao listado no start da seção, especifique Insurance.customerDetails para fornecer todos os detalhes de um cliente como entrada para o serviço.
-* **Saída do serviço > Mapear e gravar valores de saída para variáveis ou metadados:** Selecione a opção para salvar os valores de saída como propriedades do nó de metadados da instância do fluxo de trabalho no repositório crx. Especifique o nome da propriedade de metadados e selecione o atributo de saída do serviço correspondente a ser mapeado com a propriedade de metadados; por exemplo, mapeie o phone_number retornado pelo serviço de saída com a propriedade phone_number dos metadados do fluxo de trabalho. Da mesma forma, é possível armazenar a saída em uma variável do tipo de dados Longo.
+* **Saída do serviço > Mapear e gravar valores de saída para variáveis ou metadados:** Selecione a opção para salvar os valores de saída como propriedades do nó de metadados da instância do fluxo de trabalho no repositório crx. Especifique o nome da propriedade de metadados e selecione o atributo de saída do serviço correspondente a ser mapeado com a propriedade de metadados; por exemplo, mapeie o phone_number retornado pelo serviço de saída com a propriedade phone_number dos metadados do fluxo de trabalho. Da mesma forma, você pode armazenar a saída em uma variável do tipo de dados Longo.Quando você seleciona uma propriedade para a opção de mapeamento **[!UICONTROL do atributo de saída]** Serviço, somente as variáveis capazes de armazenar dados da propriedade selecionada são preenchidas para a opção **[!UICONTROL Salvar a saída]**.
+
 * **Saída do serviço > Salvar saída em uma variável ou um arquivo JSON:** Selecione a opção para salvar os valores de saída em um arquivo JSON em um caminho absoluto, em um caminho relativo à carga ou em uma variável.
 * **Salve o documento JSON de saída usando as opções abaixo:** Salve o arquivo JSON de saída. O caminho do arquivo JSON de saída pode ser relativo à carga ou a um caminho absoluto. Você também pode salvar o arquivo JSON de saída usando uma variável do tipo de dados JSON ou Form Data Model.
 
@@ -270,22 +271,22 @@ A etapa Assinar Documento permite que você use o Adobe Sign para assinar docume
 * **Frequência de email do lembrete:** Você pode enviar um email de lembrete diariamente ou semanalmente. A semana é contada a partir do dia em que o documento é atribuído a um usuário para assinatura.
 * **Processo de assinatura:** Você pode optar por assinar um documento em uma ordem sequencial ou paralela. Em ordem sequencial, um assinante recebe o documento por vez para assinatura. Depois que o primeiro assinante concluir a assinatura do documento, o documento será enviado para o segundo assinante e assim por diante. Em ordem paralela, vários signatários podem assinar um documento de cada vez.
 * **URL de redirecionamento:** Especifique um URL de redirecionamento. Depois que o documento for assinado, você poderá redirecionar o destinatário para um URL. Normalmente, este URL contém uma mensagem de agradecimento ou instruções adicionais.
-* **Fase do fluxo de trabalho:** Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM. É possível definir esses estágios nas propriedades do modelo (Sidekick > Página > Propriedades da página > Estágios).
+* **Fase do fluxo de trabalho:** Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada AEM. É possível definir esses estágios nas propriedades do modelo (Sidekick > Página > Propriedades da página > Estágios).
 * **Selecionar signatários:** Especifique o método para escolher os signatários do documento. Você pode atribuir dinamicamente o fluxo de trabalho a um usuário ou grupo ou adicionar manualmente detalhes de um assinante.
 * **Script ou serviço para selecionar signatários:** A opção estará disponível somente se a opção Dinamicamente estiver selecionada no campo Selecionar signatários. Você pode especificar um ECMAScript ou um serviço para escolher assinantes e opções de verificação para um documento.
-* **Detalhes do assinante:** A opção estará disponível somente se a opção Manualmente estiver selecionada no campo Selecionar signatários. Especifique o endereço de email e escolha um mecanismo de verificação opcional. Antes de selecionar um mecanismo de verificação de 2 etapas, verifique se a opção de verificação correspondente está ativada para a conta configurada do Adobe Sign. Você pode usar uma variável do tipo de dados String para definir valores para os campos **[!UICONTROL Email]**, Código **[!UICONTROL do]** país e Número **[!UICONTROL de]** telefone. Os campos Código **[!UICONTROL do]** país e Número **[!UICONTROL de]** telefone são exibidos somente se você selecionar Verificação **[!UICONTROL de]** telefone na lista suspensa de verificação **[!UICONTROL de]** 2 etapas.
-* **Variável de status:** Um documento habilitado para o Adobe Sign armazena o status de assinatura do documento em uma variável do tipo de dados String. Especifique o nome da variável de status (adobeSignStatus). Uma variável de status de uma instância está disponível no CRXDE em /etc/workflow/instance/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData contém o status de uma variável.
+* **Detalhes do assinante:** A opção estará disponível somente se a opção Manualmente estiver selecionada no campo Selecionar signatários. Especifique o endereço de email e escolha um mecanismo de verificação opcional. Antes de selecionar um mecanismo de verificação de 2 etapas, verifique se a opção de verificação correspondente está ativada para a conta Adobe Sign configurada. Você pode usar uma variável do tipo de dados String para definir valores para os campos **[!UICONTROL Email]**, Código **[!UICONTROL do]** país e Número **[!UICONTROL de]** telefone. Os campos Código **[!UICONTROL do]** país e Número **[!UICONTROL de]** telefone são exibidos somente se você selecionar Verificação **[!UICONTROL de]** telefone na lista suspensa de verificação **[!UICONTROL de]** 2 etapas.
+* **Variável de status:** Um documento habilitado pela Adobe Sign armazena o status de assinatura do documento em uma variável do tipo de dados String. Especifique o nome da variável de status (adobeSignStatus). Uma variável de status de uma instância está disponível no CRXDE em /etc/workflow/instance/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData contém o status de uma variável.
 * **Salve o documento assinado usando as opções abaixo:** Especifique o local para manter documentos assinados. Você pode optar por substituir o arquivo de carga, colocar o documento assinado em um local dentro do diretório de carga ou armazenar o documento assinado em uma variável do tipo de Documento.
 
-## Etapas dos serviços do Documento {#document-services-steps}
+## Etapas dos serviços do documento {#document-services-steps}
 
-Os serviços de Documento AEM são um conjunto de serviços para criar, montar e proteger Documentos PDF. O AEM Forms fornece uma etapa separada do fluxo de trabalho do AEM para cada serviço de documento.
+AEM serviços de Documento são um conjunto de serviços para criar, montar e proteger Documentos PDF. A AEM Forms fornece uma etapa de Fluxo de trabalho AEM separada para cada serviço de documento.
 
-Semelhante a outras etapas do fluxo de trabalho do AEM Forms, como Atribuir Tarefa, Enviar e-mail e Assinar Documento, você pode usar variáveis em todas as etapas dos serviços de Documento do AEM. Para obter mais informações sobre como criar e gerenciar variáveis, consulte [Variáveis em workflows](../../forms/using/variable-in-aem-workflows.md)AEM.
+Semelhante a outras etapas do fluxo de trabalho da AEM Forms, como Atribuir Tarefa, Enviar e-mail e Assinar Documento, você pode usar variáveis em todas as etapas AEM serviços de Documento. Para obter mais informações sobre como criar e gerenciar variáveis, consulte [Variáveis em workflows](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
-Adicione carimbo de data/hora a um documento. Você fornece detalhes do documento, como caminho do documento de entrada, nome do documento de entrada, local para armazenar dados exportados. Você pode optar por substituir o arquivo de carga existente, escolher um nome de arquivo diferente para armazenar dados em um arquivo diferente em uma pasta de carga, fornecer um caminho absoluto para os dados ou armazenar dados em uma variável do tipo de dados do Documento.
+Adicione um carimbo de data/hora a um documento. Você fornece detalhes do documento, como caminho do documento de entrada, nome do documento de entrada, local para armazenar dados exportados. Você pode optar por substituir o arquivo de carga existente, escolher um nome de arquivo diferente para armazenar dados em um arquivo diferente em uma pasta de carga, fornecer um caminho absoluto para os dados ou armazenar dados em uma variável do tipo de dados do Documento.
 
 ### Converter em etapa de imagem {#convert-to-image-step}
 
@@ -338,13 +339,13 @@ Executa o arquivo DDX no mapa especificado de documentos de entrada e retorna os
 >
 >Você pode usar variáveis para especificar o arquivo DDX para documentos de entrada. Armazene o arquivo DDX em uma variável do tipo de dados Documento ou XML.
 
-### Otimizar etapa do PDF {#optimize-pdf-step}
+### Optimize PDF {#optimize-pdf-step}
 
 Otimiza arquivos PDF reduzindo seu tamanho. O resultado dessa conversão são arquivos PDF que podem ser menores que suas versões originais. Essa operação também converte documentos PDF na versão PDF especificada nos parâmetros de otimização.
 
 As configurações de otimização especificam como os arquivos são otimizados. Estas são configurações de exemplo:
 
-* Versão PDF do Público alvo
+* Versão PDF do público alvo
 * Descartar objetos como ações JavaScript e miniaturas de página incorporadas
 * Descartar dados do usuário, como comentários e anexos de arquivo
 * Descartar configurações inválidas ou não usadas
@@ -362,7 +363,7 @@ Renderiza um formulário criado no Form Designer (XDP) em um formulário PDF.
 
 ### Etapa do Documento seguro {#secure-document-step}
 
-Criptografe, assine e certifique um documento. O AEM Forms oferece suporte à criptografia baseada em senha e na base de certificados. Você também pode escolher entre vários algoritmos para assinar documentos. Por exemplo, SHA-256 e SH-512. Também é possível usar a etapa de fluxo de trabalho para o leitor estender documentos PDF. A etapa do fluxo de trabalho fornece opções para ativar a decodificação de códigos de barras, assinaturas digitais, importação e exportação de dados PDF e outras opções.
+Criptografe, assine e certifique um documento. A AEM Forms oferece suporte à criptografia com base em senha e certificado. Você também pode escolher entre vários algoritmos para assinar documentos. Por exemplo, SHA-256 e SH-512. Também é possível usar a etapa de fluxo de trabalho para o leitor estender documentos PDF. A etapa do fluxo de trabalho fornece opções para ativar a decodificação de códigos de barras, assinaturas digitais, importação e exportação de dados PDF e outras opções.
 
 ### Etapa Enviar para impressora {#send-to-printer-step}
 
