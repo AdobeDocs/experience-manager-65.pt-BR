@@ -1,11 +1,11 @@
 ---
-title: API HTTP do [!DNL Assets] em [!DNL Adobe Experience Manager].
+title: API HTTP do [!DNL Assets].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb3fdf25718cd099ff36a206718aa4bf8a2b5068
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1672'
 ht-degree: 1%
 
 ---
@@ -183,7 +183,7 @@ Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer prop
 
 ### Sincronizar atualização de metadados entre `dc` e `jcr` namespace {#sync-metadata-between-namespaces}
 
-O método da API atualiza as propriedades de metadados na `jcr` namespace. As atualizações feitas usando a interface de usuário sensível ao toque alteram as propriedades de metadados na `dc` namespace. Para sincronizar os valores de metadados entre `dc` e a `jcr` namespace, é possível criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho na edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
+O método da API atualiza as propriedades de metadados na `jcr` namespace. As atualizações feitas usando a interface de usuário sensível ao toque alteram as propriedades de metadados na `dc` namespace. Para sincronizar os valores de metadados entre `dc` e a `jcr` namespace, você pode criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho na edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
