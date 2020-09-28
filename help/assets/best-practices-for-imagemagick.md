@@ -1,11 +1,11 @@
 ---
-title: Instale e configure o ImageMagick para trabalhar [!DNL Adobe Experience Manager Assets].
+title: Instalar e configurar o ImageMagick
 description: Saiba mais sobre o software ImageMagick, como instalá-lo, configurar a etapa do processo da linha de comando e usá-lo para editar, compor e gerar miniaturas de imagens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Para processar arquivos grandes usando o ImageMagick, considere requisitos de me
 
 >[!NOTE]
 >
->Se você estiver usando [!DNL Experience Manager] o AMS ( [!DNL Adobe Managed Services] ), entre em contato com o Atendimento ao cliente da Adobe se planeja processar vários arquivos PSD ou PSB de alta resolução. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
+>Se você estiver usando [!DNL Experience Manager] o AMS [!DNL Adobe Managed Services] (Adobe Customer Care), entre em contato com o Atendimento ao cliente da se planeja processar vários arquivos PSD ou PSB de alta resolução. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução com mais de 30000 x 23000 pixels.
 
 ## Instalar ImageMagick {#installing-imagemagick}
 
@@ -82,7 +82,7 @@ Há várias vulnerabilidades de segurança associadas ao uso do ImageMagick para
 
 Além disso, vários plug-ins de processamento de imagens dependem da biblioteca do ImageMagick, incluindo, mas não limitado às imagens do PHP, o rmagick e o clipe de papel de Ruby e o imagemagick do nodejs.
 
-Se você usar o ImageMagick ou uma biblioteca afetada, a Adobe recomenda atenuar as vulnerabilidades conhecidas, executando pelo menos uma das seguintes tarefas (mas, de preferência, ambas):
+Se você usar o ImageMagick ou uma biblioteca afetada, o Adobe recomenda atenuar as vulnerabilidades conhecidas, executando pelo menos uma das seguintes tarefas (mas, de preferência, ambas):
 
 1. Verifique se todos os arquivos de imagem começam com os [&quot;bytes mágicos&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) esperados correspondentes aos tipos de arquivos de imagem suportados antes de enviá-los para o ImageMagick para processamento.
 1. Use um arquivo de política para desativar os codificadores vulneráveis do ImageMagick. A política global para ImageMagick encontra-se em `/etc/ImageMagick`.
