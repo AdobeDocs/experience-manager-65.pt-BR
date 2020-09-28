@@ -1,12 +1,12 @@
 ---
-title: Gerencie seus ativos digitais [!DNL Adobe Experience Manager Assets].
+title: Gerenciar seus ativos digitais
 description: Saiba mais sobre as tarefas de gerenciamento de ativos como carregar, baixar, editar, pesquisar, excluir, anotar e editar seus ativos digitais.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '9410'
+source-wordcount: '9409'
 ht-degree: 4%
 
 ---
