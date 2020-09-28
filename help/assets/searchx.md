@@ -1,11 +1,11 @@
 ---
-title: Amplie a funcionalidade de pesquisa [!DNL Adobe Experience Manager Assets].
+title: Amplie a funcionalidade de pesquisa.
 description: Estenda os recursos de pesquisa [!DNL Adobe Experience Manager Assets] para além dos padrões.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '840'
 ht-degree: 19%
 
 ---
@@ -250,7 +250,7 @@ Para criar um predicado de grupo:
 
 Os seguintes predicados estão disponíveis como widgets ExtJS pré-configurados.
 
-### PredicadoTexto completo {#fulltextpredicate}
+### PredicadoTextoCompleto {#fulltextpredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
