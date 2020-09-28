@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 1%
+source-wordcount: '1133'
+ht-degree: 2%
 
 ---
 
@@ -123,3 +123,37 @@ A guia Detalhes **[!UICONTROL do]** fluxo de trabalho mostra cada etapa do fluxo
 
 ![fluxo de trabalho de tarefa concluído](assets/completed-task-workflow.png)
 
+## Resolução de problemas {#troubleshooting-workflows}
+
+### Não é possível visualização de itens relacionados ao Fluxo de Trabalho AEM na caixa de entrada AEM {#unable-to-see-aem-worklow-items}
+
+Um proprietário de modelo de fluxo de trabalho não consegue visualização de itens relacionados ao Fluxo de Trabalho AEM na pasta A Receber AEM. Para resolver o problema, adicione os índices listados abaixo ao repositório AEM e recrie o índice.
+
+1. Use um dos seguintes métodos para adicionar índices:
+
+   * Crie os seguintes nós no CRX DE com `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` as respectivas propriedades, conforme especificado na tabela a seguir:
+
+      | Nó | Propriedade | Tipo |
+      |---|---|---|
+      | sharedWith | sharedWith | SEQÜÊNCIA DE CARACTERES |
+      | bloqueado | bloqueado | BOOLEANO |
+      | return | return | BOOLEANO |
+      | allowInboxSharing | allowInboxSharing | BOOLEANO |
+      | allowExplitSharing | allowExplitSharing | BOOLEANO |
+
+
+   * Implante os índices por meio de um pacote AEM. Você pode usar um projeto [AEM Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype) para criar um pacote AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do AEM Archetype:
+
+   ```Java
+      .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
+      .property("locked", "locked").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("returned", "returned").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowInboxSharing", "allowInboxSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+   ```
+
+1. [Crie um Índice de propriedades e defina-o como verdadeiro](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+
+1. Depois de configurar índices no CRX DE ou implantar por meio de um pacote, [indexe novamente o repositório](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
+
+https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html
