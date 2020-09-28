@@ -1,11 +1,11 @@
 ---
-title: Baixe ativos digitais [!DNL Adobe Experience Manager].
+title: Baixar ativos
 description: Saiba como baixar ativos [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '850'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 
 Para baixar ativos, siga estas etapas:
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel esquerdo, toque em **[!UICONTROL Navegação]**.
+1. No canto superior esquerdo do AEM, toque no logotipo AEM e, no painel esquerdo, toque em **[!UICONTROL Navegação]**.
 1. Na página Navegação, toque em **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos.]**
 1. Navegue até uma pasta que contenha ativos que você deseja baixar.
 1. Selecione a pasta ou selecione um ou mais ativos na pasta.
@@ -52,7 +52,7 @@ Quando você seleciona uma pasta para download, a hierarquia completa de ativos 
 
 O servlet padrão [!DNL Experience Manager] permite que os usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos visíveis a eles que podem sobrecarregar o servidor e a rede. Para atenuar os possíveis riscos de DoS causados por esse recurso, o componente `AssetDownloadServlet` OSGi é desabilitado por padrão para instâncias de publicação.
 
-Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Share Commons ou outra implementação semelhante ao portal, ative manualmente o servlet por meio de uma configuração OSGi. A Adobe recomenda definir o tamanho de download permitido o mais baixo possível sem afetar os requisitos diários de download. Um valor alto pode afetar o desempenho.
+Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Share Commons ou outra implementação semelhante ao portal, ative manualmente o servlet por meio de uma configuração OSGi. O Adobe recomenda que o tamanho de download permitido seja o mais baixo possível, sem afetar os requisitos diários de download. Um valor alto pode afetar o desempenho.
 
 1. Crie uma pasta com uma convenção de nomenclatura que público alvo o modo de execução de publicação (`config.publish`): `/apps/<your-app-name>/config.publish`. Para definir as propriedades de configuração para um modo de execução, consulte Modos [de execução](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. Na pasta de configuração, crie um arquivo do tipo `nt:file` chamado `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
@@ -75,5 +75,5 @@ O `Asset Download Servlet` pode ser desativado em instâncias de [!DNL Experienc
 >
 >* [Baixe ativos](drm.md)protegidos por DRM.
 >* [Baixe ativos usando o aplicativo de desktop Experience Manager no desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)Win ou Mac.
->* [Baixe ativos usando o Adobe Assets Link dos aplicativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)da Adobe Creative Cloud compatíveis.
+>* [Baixe ativos usando o Link de ativos Adobe nos aplicativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)Adobe Creative Cloud suportados.
 
