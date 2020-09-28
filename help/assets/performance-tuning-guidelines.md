@@ -1,12 +1,12 @@
 ---
-title: Ajuste de desempenho para [!DNL Adobe Experience Manager Assets].
+title: Ajuste [!DNL Assets]de desempenho.
 description: Sugestões e orientações [!DNL Experience Manager] sobre configuração, alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 0%
 
 ---
