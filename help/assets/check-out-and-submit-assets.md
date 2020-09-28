@@ -1,11 +1,11 @@
 ---
-title: Faça check-in e check-out de seus ativos digitais para edição.
+title: Fazer check-in e check-out de ativos para edição
 description: Saiba como fazer check-out dos ativos para edição e check-in deles novamente após a conclusão das alterações.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
