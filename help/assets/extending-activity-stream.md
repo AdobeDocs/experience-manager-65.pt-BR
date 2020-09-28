@@ -1,9 +1,9 @@
 ---
-title: Integrar [!DNL Assets] ao fluxo de atividade.
+title: Integrar [!DNL Assets] ao fluxo de atividade
 description: Descreve os recursos [!DNL Experience Manager] de gravação de e como configurá-los para gravar eventos específicos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Essa integração pode ser de CPU e de consumo de espaço em disco, por exemplo, ao fazer a importação em massa. Por esses motivos, a integração [!DNL Assets] com o Fluxo de Atividade é desativada por padrão.
 
-## eventos de ação suportados {#supported-action-events}
+## Eventos de ação suportados {#supported-action-events}
 
 Os seguintes eventos podem ser configurados para serem gravados:
 
