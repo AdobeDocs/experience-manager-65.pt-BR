@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
+source-git-commit: d5a649337acdc01c58ecc473e7c919e06cbd0188
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 1%
@@ -127,7 +127,8 @@ Execute as etapas listadas abaixo para ativar e configurar o cache de formulári
       # added for AEM forms specific use cases.
       /0003 { /glob "dataRef" /type "allow" }
       }
-   
+   ```
+
 Seu ambiente AEM está configurado para armazenar em cache formulários adaptáveis. Armazena em cache todos os tipos de formulários adaptáveis. Se você tiver um requisito para verificar as permissões de acesso do usuário para uma página antes de entregar a página em cache, consulte [Armazenamento de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html)protegido em cache.
 
 ## Resolução de problemas {#troubleshooting}
