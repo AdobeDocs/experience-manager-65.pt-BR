@@ -1,11 +1,11 @@
 ---
-title: Configure a marcação de ativos usando o Serviço de conteúdo inteligente.
+title: Configurar a marcação de ativos usando o Serviço de conteúdo inteligente
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 506b965e4f1c18230357f25532d3fdd10f526ef0
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1240'
 ht-degree: 36%
 
 ---
@@ -44,7 +44,7 @@ Para ativar as Smart Tags aprimoradas, além das anteriores, instale também o s
 
 Um certificado público permite autenticar seu perfil no Console do desenvolvedor.
 
-1. Na interface do [!DNL Experience Manager] usuário, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service]** herdados.
+1. Na interface do [!DNL Experience Manager] usuário, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Cloud Services]** herdados.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 
@@ -124,7 +124,7 @@ Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no
 
 Para configurar a integração, use os valores dos campos ID [!UICONTROL DA CONTA]TÉCNICA, ID [!UICONTROL da]ORGANIZAÇÃO, SECRETO CLIENTE e ID [!UICONTROL do] CLIENTE da integração do Console do desenvolvedor do Adobe. A criação de uma configuração em nuvem de Tags inteligentes permite a autenticação de solicitações de API da [!DNL Experience Manager] implantação.
 
-1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > Cloud Service **** herdados para abrir o console [!UICONTROL Cloud Service] .
+1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > Cloud Services **** herdados para abrir o console [!UICONTROL Cloud Services] .
 
 1. Em Tags **[!UICONTROL inteligentes de]** ativos, abra a configuração criada acima. Na página de configurações do serviço, clique em **[!UICONTROL Editar]**.
 
