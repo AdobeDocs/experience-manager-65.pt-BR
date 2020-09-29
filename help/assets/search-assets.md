@@ -4,7 +4,7 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7b3282f086ba1f0a2f1e5430b90a6742ddf946d6
+source-git-commit: c94220ca6e31716b6de4dac99dfb98ac1ba1faff
 workflow-type: tm+mt
 source-wordcount: '5955'
 ht-degree: 5%
