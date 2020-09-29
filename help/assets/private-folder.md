@@ -3,9 +3,9 @@ title: Pastas privadas para compartilhar ativos
 description: Saiba como criar uma pasta privada no [!DNL Adobe Experience Manager Assets] site e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -82,15 +82,4 @@ Você pode excluir uma pasta selecionando a pasta e a opção [!UICONTROL Exclui
 >[!NOTE]
 >
 >Se você excluir uma pasta usando o método acima da interface do usuário, os grupos de usuários associados também serão excluídos.
-No entanto, grupos de usuários redundantes, não utilizados e gerados automaticamente podem ser limpos do repositório usando o [JMX](#group-clean-up-jmx).
-
-### Usar JMX para limpar grupos de usuários não utilizados {#group-clean-up-jmx}
-
-Para limpar o repositório de grupos de usuários não utilizados:
-
-1. Abra o JMX para limpar grupos redundantes para Ativos na sua instância do [!DNL Experience Manager] autor `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-Por exemplo, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-
-1. Chame o `clean` método deste JMX.
-
-Você pode ver que todos os grupos de usuários redundantes ou gerados automaticamente (que são criados ao criar uma pasta com o mesmo nome de um grupo excluído anteriormente) são removidos do caminho `/home/groups/mac/default/<user_name>/<folder_name>`.
+Entretanto, os grupos de usuários redundantes, não utilizados e gerados automaticamente existentes podem ser limpos do repositório usando o `clean` método em JMX na sua instância do autor (http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.Team%3Atype%3DClean+redundant+groups+for+Assets).
