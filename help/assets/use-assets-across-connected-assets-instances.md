@@ -3,10 +3,10 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 7790c9c90953e0f5c5b6be38f5d54346fb595e8f
 workflow-type: tm+mt
-source-wordcount: '2103'
-ht-degree: 44%
+source-wordcount: '2159'
+ht-degree: 43%
 
 ---
 
@@ -157,7 +157,9 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
 Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se os metadados associados não puderem ser editados.
 
-## Limitações         {#limitations}
+## Limitações         and best practices {#tips-and-limitations}
+
+* Para obter insights sobre o uso de ativos, configure a funcionalidade [Asset Insight](/help/assets/touch-ui-asset-insights.md) na [!DNL Sites] instância.
 
 ### Permissões e gerenciamento de ativos {#permissions-and-managing-assets}
 
@@ -165,7 +167,7 @@ Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se o
 * Os ativos locais são cópias somente leitura. [!DNL Experience Manager]Os componentes do fazem edições não destrutivas nos ativos. Nenhuma outra edição é permitida.
 * Os ativos buscados localmente estão disponíveis apenas para fins de criação. Os fluxos de trabalho de atualização de ativos não podem ser aplicados e os metadados não podem ser editados.
 * Somente as imagens e os formatos de documento listados são compatíveis. [!DNL Dynamic Media] ativos, Fragmentos de conteúdo e Fragmentos de experiência não são suportados.
-* Os esquemas de metadados não são buscados.
+* [!DNL Experience Manager] não busca os schemas de metadados. Isso significa que nem todos os metadados obtidos podem ser exibidos. Se o schema for atualizado separadamente, todas as propriedades serão exibidas.
 * Todos os [!DNL Sites] autores têm permissões de leitura nas cópias buscadas, mesmo se os autores não puderem acessar a implantação remota do DAM.
 * Não há suporte de API para personalizar a integração.
 * A funcionalidade suporta pesquisa e uso ininterruptos de ativos remotos. Para disponibilizar muitos ativos remotos em uma única implantação local, considere migrar os ativos. Consulte [guia de migração de Ativos](assets-migration-guide.md).
@@ -184,6 +186,7 @@ Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se o
 * A operação de busca expira após 5 segundos. Os autores podem ter problemas ao buscar ativos, digamos se houver problemas de rede. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * Edições simples que não são destrutivas e a edição compatível por meio do componente `Image` do podem ser realizadas nos ativos buscados. Os ativos são somente leitura.
 * O único método para recuperar o ativo é arrastá-lo para uma página. Não há suporte a API ou outros métodos para recuperar um ativo para atualizá-lo.
+* Se os ativos forem descontinuados do DAM, eles continuarão a ser usados nas [!DNL Sites] páginas.
 
 ## Solução de problemas {#troubleshoot}
 
