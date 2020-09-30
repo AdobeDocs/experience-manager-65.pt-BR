@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1728'
 ht-degree: 3%
 
 ---
@@ -98,7 +98,7 @@ Verifique se a maioria das caixas de seleção está desmarcada para Gerenciamen
 
 #### TAGGING {#tagging}
 
-As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando namespaces AEM definidas anteriormente pelo console [de](/help/sites-administering/tags.md#tagging-console) marcação (como a namespace [](/help/communities/enablement-setup.md#create-tutorial-tags)Tutorial).
+As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando AEM namespaces previamente definidas por meio do Console [de](/help/sites-administering/tags.md#tagging-console) marcação (como a namespace [do](/help/communities/enablement-setup.md#create-tutorial-tags)tutorial).
 
 Além disso, selecionar Namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos de ativação. Consulte [Marcação de recursos](/help/communities/tag-resources.md) de ativação para obter informações importantes.
 
@@ -122,7 +122,7 @@ Por exemplo,
 
 >[!NOTE]
 >
->[O serviço](/help/communities/deploy-communities.md#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes apenas no ambiente publish.
+>[O serviço](/help/communities/deploy-communities.md#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes somente no ambiente publish.
 
 
 ![funções de ativação](assets/site-admin.png)
@@ -160,7 +160,7 @@ Para uma comunidade de ativação, é necessário identificar um ou mais Gerente
    * Tipo `s`
    * Selecionar `Sirius Nilson`
 
-* **ID** de organização da Marketing Cloud (opcional) A ID de uma conta da Adobe Analytics que é necessária ao incluir o Analytics [do](/help/communities/analytics.md#video-heartbeat-analytics) Video Heartbeat no relatórios de ativação.
+* **ID** de organização do Marketing Cloud (opcional) A ID de uma conta Adobe Analytics que é necessária ao incluir o [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) no relatórios de ativação.
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -327,11 +327,11 @@ Se não for possível salvar as alterações, verifique se o nome do nó é `loc
 
 #### Solução de problemas: Falha ao redirecionar {#troubleshooting-fail-to-redirect}
 
-O valor &#39;**$**&#39; no final da string de expressão regular é crucial, de modo que apenas `sling:match` `https://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento será anexado a qualquer caminho que possa existir após server:port no URL. Assim, quando o AEM tenta redirecionar para a página de logon, ele falha.
+O valor &#39;**$**&#39; no final da string de expressão regular é crucial, de modo que apenas `sling:match` `https://localhost:4503/` seja mapeado exatamente; caso contrário, o valor de redirecionamento será anexado a qualquer caminho que possa existir após server:port no URL. Dessa forma, quando AEM tentar redirecionar para a página de logon, isso falhará.
 
 ## Modificando o site da comunidade {#modifying-the-community-site}
 
-Após a criação inicial do site, os autores podem usar o ícone [](/help/communities/sites-console.md#authoring-site-content) Abrir site para executar atividades de criação padrão do AEM.
+Após a criação inicial do site, os autores podem usar o ícone [](/help/communities/sites-console.md#authoring-site-content) Abrir site para executar atividades de criação padrão AEM.
 
 Além disso, os administradores podem usar o ícone [](/help/communities/sites-console.md#modifying-site-properties) Editar site para modificar as propriedades do site, como o título.
 
@@ -350,7 +350,7 @@ Caso contrário, a função de catálogo pode ser facilmente adicionada. Isso pe
 
 Se a estrutura do site já contiver o recurso de catálogo, seu Título poderá ser alterado.
 
-Para modificar a estrutura do site, navegue até **Comunidades, console Sites** , abra a `enable` pasta e selecione o ícone **Editar site** para acessar as propriedades do `Enablement Tutorial`.
+Para modificar a estrutura do site, navegue até **[!UICONTROL Comunidades]** > console **[!UICONTROL Sites]** , abra a `enable` pasta e selecione o ícone **Editar site** para acessar as propriedades do `Enablement Tutorial`.
 
 Selecione o painel ESTRUTURA para adicionar um catálogo ou modificar um catálogo existente:
 
