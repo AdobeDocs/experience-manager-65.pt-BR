@@ -3,9 +3,9 @@ title: Pastas privadas para compartilhar ativos
 description: Saiba como criar uma pasta privada no [!DNL Adobe Experience Manager Assets] site e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
+source-git-commit: 2bd850ff421494dda83bafb59fa695365498bbbe
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -82,4 +82,4 @@ Você pode excluir uma pasta selecionando a pasta e a opção [!UICONTROL Exclui
 >[!NOTE]
 >
 >Se você excluir uma pasta usando o método acima da interface do usuário, os grupos de usuários associados também serão excluídos.
-Entretanto, os grupos de usuários redundantes, não utilizados e gerados automaticamente existentes podem ser limpos do repositório usando o `clean` método em JMX na sua instância do autor (http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.Team%3Atype%3DClean+redundant+groups+for+Assets).
+No entanto, grupos de usuários redundantes, não utilizados e gerados automaticamente podem ser limpos do repositório usando o `clean` método em JMX na sua instância do autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
