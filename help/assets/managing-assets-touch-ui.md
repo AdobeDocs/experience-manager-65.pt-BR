@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb531bfc009fc766bab20d28cf332856b1e95c7b
+source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
 workflow-type: tm+mt
-source-wordcount: '9408'
+source-wordcount: '9618'
 ht-degree: 4%
 
 ---
@@ -450,7 +450,14 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    >
    >A opção **[!UICONTROL Colar]** está disponível na barra de ferramentas até que a operação de colar seja concluída.
 
-### Mover ou renomear ativos {#moving-or-renaming-assets}
+## Mover e renomear ativos {#moving-or-renaming-assets}
+
+Quando você move ativos (ou pastas) para outro local, os ativos (ou pastas) não são duplicados, ao contrário de copiar o ativo. Os ativos (ou as pastas) são colocados no local do público alvo e removidos do local de origem. Também é possível renomear o ativo ao movê-lo para o novo local.
+Se você estiver movendo um ativo publicado para um local diferente, você terá a opção de publicar novamente o ativo. Por padrão, a operação de movimentação em um ativo publicado automaticamente a despublica. O ativo movido será republicado se o autor selecionar a opção [!UICONTROL Republicar] ao mover o ativo.
+
+![Você pode republicar um ativo já publicado ao movê-lo](assets/republish-on-move.png)
+
+Para mover ativos ou pastas:
 
 1. Navegue até o local do ativo que deseja mover.
 
@@ -486,6 +493,14 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
    * Clique em **[!UICONTROL Cancelar]** para interromper a operação de movimentação.
 
    Se você não atualizar referências, elas continuarão apontando para o caminho anterior do ativo. Se você ajustar as referências, elas serão atualizadas para o novo caminho do ativo.
+
+### Mover ativos usando a operação de arrastar {#move-using-drag}
+
+Você pode mover ativos (ou pastas) para uma pasta irmão, a coleção [!UICONTROL Lightbox] ou outra coleção arrastando-os para o local do público alvo, em vez de usar a opção [!UICONTROL Mover] na interface do usuário. No entanto, essa operação só é possível na visualização da lista.
+
+Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativos] , portanto, você não tem a opção de renomear os ativos ao mover-se. Além disso, os ativos já publicados são republicados ao movê-los arrastando-os, sem solicitar a aprovação do usuário para republicar.
+
+![Mover ativos para pastas semelhantes arrastando ativos](assets/move-by-drag.gif)
 
 ## Gerenciar execuções {#managing-renditions}
 
