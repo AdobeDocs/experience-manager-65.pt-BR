@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 618464d1e01986786a47a4e9c6ecce87e2a77ec3
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -70,11 +70,11 @@ Uma maneira de fazer isso é:
    * Desmarque **[!UICONTROL Somente Modificado]**.
    * Selecione o botão **[!UICONTROL Ativar]** .
 
-### Página Comentário modificado da Visualização sobre amostra publicada {#view-modified-comment-on-published-sample-page}
+### Página Comentário modificado da visualização sobre amostra publicada {#view-modified-comment-on-published-sample-page}
 
 [Continuando com a experiência](/help/communities/extend-sample-page.md#publish-sample-page) na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para visualização da modificação para remover o avatar:
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![visualização modificada-content](assets/view-modified-content.png)
 
 ### Pacote de extensão de comentário de amostra {#sample-comment-extension-package}
 
