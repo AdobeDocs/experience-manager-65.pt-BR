@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -157,26 +157,26 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 1. Faça logon para postar um comentário:
 1. Digite o texto na caixa de entrada de texto do comentário e clique em **[!UICONTROL Postar]**
 
-   ![chlimage_1-111](assets/chlimage_1-191.png)
+   ![post-comment](assets/post-comment.png)
 
 1. Basta visualização o comentário na instância [do](http://localhost:4502/content/community-components/en/comments.html) autor (provavelmente ainda conectado como admin / admin).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![visualização](assets/view-comment.png)
 
-   Observação: embora existam nós JCR sob o *asipath* no autor, eles são para a estrutura SCF. O UGC real não está no JCR, está no MongoDB.
+   Observação: Embora existam nós JCR sob o *asipath* no autor, eles são para a estrutura SCF. O UGC real não está no JCR, está no MongoDB.
 
 1. Visualização do UGC em **[!UICONTROL comunidades]** mondeus > **[!UICONTROL Coleções]** > **[!UICONTROL Conteúdo]**
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+   ![conteúdo de ugc](assets/ugc-content.png)
 
 1. Visualização o UGC no Solr:
 
-   * Navegue até Solr painel: [http://localhost:8983/solr/](http://localhost:8983/solr/)
-   * Usuário `core selector` para selecionar `collection1`
-   * Selecionar `Query`
-   * Selecionar `Execute Query`
+   * Navegue até Solr painel: [http://localhost:8983/solr/](http://localhost:8983/solr/).
+   * Usuário `core selector` para selecionar `collection1`.
+   * Selecionar `Query`.
+   * Selecionar `Execute Query`.
 
-   ![chlimage_1-194](assets/chlimage_1-194.png)
+   ![ugc-solr](assets/ugc-solr.png)
 
 ## Resolução de problemas {#troubleshooting}
 
@@ -186,14 +186,9 @@ Para testar e verificar a loja comum MongoDB, poste um comentário na instância
 
 1. Verifique se o MSRP foi configurado para ser o provedor padrão:
 
-   * Em todas as instâncias de autor e publicação AEM, revisite o console Configuração do [Armazenamento](srp-config.md)
+   * Em todas as instâncias de autor e publicação AEM, reveja o console [Configuração do](srp-config.md) Armazenamento ou verifique o repositório AEM:
 
-   Ou verifique o repositório AEM:
-
-   * No JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
-
-   * Não contém um nó [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa que o provedor do armazenamento é JSRP
-   * Se o nó srpc existir e contiver a configuração [padrão](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)do nó, as propriedades da configuração padrão deverão definir o MSRP como o provedor padrão
-
+   * No JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) não contiver um nó [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa que o provedor do armazenamento é JSRP.
+   * Se o nó srpc existir e contiver a configuração [](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)padrão do nó, as propriedades da configuração padrão deverão definir o MSRP como o provedor padrão.
 
 1. Verifique se AEM foi reiniciado após a seleção do MSRP.
