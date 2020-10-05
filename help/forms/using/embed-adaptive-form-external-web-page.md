@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: ade3747ba608164a792a62097b82c55626245891
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Para incorporar o formulário adaptativo:
 
 1. No código incorporado:
 
-   * Altere o valor da variável *options.path* com o caminho do URL de publicação do formulário adaptável. Se o servidor AEM estiver sendo executado em um caminho de contexto, verifique se o URL inclui o caminho de contexto. Por exemplo, o código acima e o adaptador de reside no mesmo servidor de formulários aem, de modo que o exemplo usa o caminho de contexto do formulário adaptável /content/forms/af/locbasic.html.
+   * Altere o valor da variável *options.path* com o caminho do URL de publicação do formulário adaptável. Se o servidor AEM estiver sendo executado em um caminho de contexto, verifique se o URL inclui o caminho de contexto. Mencione sempre o nome completo do formulário adaptável, incluindo a extensão.   Por exemplo, o código acima e o adaptador de reside no mesmo servidor de formulários AEM, de modo que o exemplo usa o caminho de contexto do formulário adaptável /content/forms/af/locbasic.html.
    * Substitua *options.dataRef* por atributos a serem passados pelo URL. É possível usar a variável dataref para [preencher previamente um formulário](/help/forms/using/prepopulate-adaptive-form-fields.md)adaptável.
    * Substitua *options.subjectPath* pelo caminho para um tema diferente do configurado no formulário adaptável. Como alternativa, você pode especificar o caminho do tema usando o atributo de solicitação.
    * CSS_Seletor é o seletor de CSS do container de formulário no qual o formulário adaptável está incorporado. Por exemplo, a classe css .customafsection é o seletor de CSS no exemplo acima.
