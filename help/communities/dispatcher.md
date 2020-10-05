@@ -1,6 +1,6 @@
 ---
-title: Configuração do Dispatcher for Communities
-seo-title: Configuração do Dispatcher for Communities
+title: Configuração do Dispatcher para Comunidades
+seo-title: Configuração do Dispatcher para Comunidades
 description: Configurar o dispatcher para AEM Communities
 seo-description: Configurar o dispatcher para AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 2%
@@ -18,23 +18,23 @@ ht-degree: 2%
 ---
 
 
-# Configuração do Dispatcher for Communities {#configuring-dispatcher-for-communities}
+# Configuração do Dispatcher para Comunidades {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
 
-Para AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento correto dos sites [da](overview.md#community-sites)comunidade. Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e login social.
+Para a AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento correto dos sites [da](overview.md#community-sites)comunidade. Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e login social.
 
 Para saber o que é necessário para sua implantação específica e o design do site
 
 * Contact [Customer Care](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
 
-Consulte também a documentação [principal da](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)Dispatcher.
+Consulte também a documentação [principal do](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)Dispatcher.
 
-## Cache Dispatcher {#dispatcher-caching}
+## Dispatcher Caching {#dispatcher-caching}
 
 ### Visão geral {#overview}
 
-O Dispatcher caching para AEM Communities é a capacidade do dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
+O armazenamento em cache do Dispatcher para AEM Communities é a capacidade do dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
 
 Atualmente, ele é compatível apenas com visitantes anônimos do site, como usuários que navegam no site da comunidade ou que chegam em uma página da comunidade como resultado de uma pesquisa, bem como com mecanismos de pesquisa que indexam páginas. A vantagem é que os usuários anônimos e os mecanismos de pesquisa experimentarão um melhor desempenho.
 
@@ -45,14 +45,14 @@ Quando configurado para suportar o cache do dispatcher, uma expiração de &quot
 ### Requisitos {#requirements}
 
 * Dispatcher versão 4.1.2 ou posterior (consulte [Instalação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) para obter a versão mais recente)
-* [Pacote AEM Commons ACS](https://adobe-consulting-services.github.io/acs-aem-commons/)
+* [Pacote ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versão 3.3.2 ou posterior
    * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` Configuração do OSGi
 
 ### Configuração {#configuration}
 
-A configuração OSGi AEM Commons **ACS - Dispatcher Cache Control Header - Max Age** define a expiração de páginas em cache que aparecem em um caminho especificado.
+A configuração **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** define a expiração de páginas em cache exibidas em um caminho especificado.
 
 * Do Console [da Web](../../help/sites-deploying/configuring-osgi.md)
 
@@ -61,19 +61,21 @@ A configuração OSGi AEM Commons **ACS - Dispatcher Cache Control Header - Max 
 * Localizar `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Selecione o ícone &#39;+&#39; para criar uma nova configuração de conexão
 
-   ![chlimage_1-339](assets/chlimage_1-339.png)
+   ![dispatcher](assets/dispatcher.png)
 
 * **Padrões de filtro**
+
    *(obrigatório)* Um ou mais caminhos para páginas da comunidade. Por exemplo, `/content/sites/engage/(.*)`.
 
 * **Idade máxima do controle de cache**
+
    *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho Cache Controll. O valor deve ser maior que zero (0).
 
-## Cabeçalhos do cliente Dispatcher {#dispatcher-client-headers}
+## Cabeçalhos do Cliente do Dispatcher {#dispatcher-client-headers}
 
 Na seção /clientheaders de `dispatcher.any`, se estiver listando um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para que o recurso [](enablement.md) Ativação funcione corretamente.
 
-## Filtros Dispatcher {#dispatcher-filters}
+## Filtros do Dispatcher {#dispatcher-filters}
 
 A seção /filter do `dispatcher.any` arquivo está documentada em [Configuração do acesso ao conteúdo - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
@@ -85,7 +87,7 @@ As amostras a seguir usam nomes de propriedade que provavelmente precisarão ser
 
 Consulte também:
 
-* [Lista de verificação de segurança do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Lista de Verificação de Segurança do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
@@ -188,7 +190,7 @@ A seção de regras de `dispatcher.any` define quais respostas devem ser armazen
 /0208 { /type "deny" /glob "/content/usergenerated/*" }
 ```
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 Uma fonte importante de problemas é inserir regras de filtro sem prestar atenção ao efeito em regras anteriores, especialmente ao adicionar uma regra para negar acesso.
 
