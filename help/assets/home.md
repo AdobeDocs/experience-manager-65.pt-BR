@@ -1,22 +1,21 @@
 ---
 title: Guia de ativos
-seo-title: Guia de ativos Adobe Experience Manager 6.5
 description: Este guia aborda todas as tarefas de ativos de Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
-seo-description: Abrange todas as tarefas de ativos Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
+user-guide-title: Guia de ativos
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 13%
+source-wordcount: '339'
+ht-degree: 14%
 
 ---
 
 
-# Guia de ativos Adobe Experience Manager 6.5
+# Guia de ativos
 
-Este guia aborda todas as tarefas de ativos de Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
+Este guia cobre todas as [!DNL Experience Manager Assets] tarefas, como criar, gerenciar, fornecer e otimizar ativos digitais.
 
-## Artigos principais sobre Experience Manager
+## Principais [!DNL Experience Manager] artigos
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -26,7 +25,7 @@ Este guia aborda todas as tarefas de ativos de Experience Manager, como criar, g
 * [Atualizações recentes na documentação](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de verificação de segurança](/help/sites-administering/security-checklist.md)
 
-## Guias do Experience Manager 6.5
+## [!DNL Experience Manager] 6.5 guias
 
 | Guia do usuário | Descrição |
 |--- |---|
@@ -43,7 +42,7 @@ Este guia aborda todas as tarefas de ativos de Experience Manager, como criar, g
 | [Guia do usuário móvel](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com [!DNL Livefyre]. |
 
-## Principais recursos de Experience Manager
+## Principais [!DNL Experience Manager] recursos
 
 * [Tutorials de vídeo Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
