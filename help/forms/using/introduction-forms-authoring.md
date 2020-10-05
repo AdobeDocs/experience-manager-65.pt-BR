@@ -10,9 +10,9 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
+source-git-commit: 42386f6e580d85efb972f2e63c5ab89112b3f734
 workflow-type: tm+mt
-source-wordcount: '3115'
+source-wordcount: '3145'
 ht-degree: 3%
 
 ---
@@ -146,7 +146,7 @@ Isso permite arrastar e soltar elementos de modelo de formulário no formulário
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
-   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos de suporte a um formulário. É possível anexar vários arquivos a um componente de anexo Arquivo.</p> <p><strong> Nota: </strong><ul> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe os arquivos um a um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente Anexo de arquivo suporta um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para Adobe Sign. Para obter mais informações, consulte Formatos <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">de arquivo</a>suportados. </li> </ul></p> </td>
+   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos de suporte a um formulário. É possível anexar vários arquivos a um componente de anexo Arquivo.</p> <p><strong> Nota: </strong><ul> <li> O componente não suporta anexar arquivos com nome de arquivo começando com caracteres (.), contendo caracteres \ / : * ? " &lt; &gt; | ; % $, ou que contenha nomes de arquivo especiais reservados para o sistema operacional Windows como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe os arquivos um a um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente Anexo de arquivo suporta um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para Adobe Sign. Para obter mais informações, consulte Formatos <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">de arquivo</a>suportados. </li> </ul></p> </td>
   </tr>
   <tr>
    <td>Lista de anexos de arquivo</td>
