@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 1%
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # Configuração inicial para ativação  {#initial-setup-for-enablement}
 
-## Instâncias de autor e publicação do Start {#start-author-and-publish-instances}
+## Instâncias de autor e publicação do start {#start-author-and-publish-instances}
 
 Para fins de desenvolvimento e demonstração, será necessário executar uma instância de autor e uma instância de publicação.
 
-Siga as instruções básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) ao AEM que resultarão em
+Siga as instruções AEM básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) que resultarão em
 
-* ambiente do autor em [localhost:4502](http://localhost:4502/)
+* Ambiente do autor em [localhost:4502](http://localhost:4502/)
 * Publicar ambiente no [localhost:4503](http://localhost:4503/)
 
 Para AEM Communities,
@@ -36,7 +36,7 @@ Para AEM Communities,
    * Desenvolvimento de sites, modelos, componentes, recursos de ativação e caminhos de aprendizado.
    * Atribuição de membros e grupos de membros para ativar recursos e caminhos de aprendizado.
    * Geração de relatórios em atribuições, visualizações e postagens.
-   * tarefas administrativas e de configuração.
+   * Tarefas administrativas e de configuração.
 
 * O ambiente publish é para:
 
@@ -51,11 +51,11 @@ Para AEM Communities,
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
-Este tutorial cria um site [de comunidade de](overview.md#enablement-community)ativação. Para garantir que o pacote de recursos mais recente esteja instalado, visite:
+Este tutorial cria um site [de comunidade de](overview.md#enablement-community)ativação. Para verificar se o pacote de recursos mais recente está instalado, visite:
 
 * [Versões mais recentes](deploy-communities.md#latest-releases)
 
-Para obter um tutorial que cria um site [de comunidade de](overview.md#engagement-community)envolvimento, visite [Introdução aos AEM Communities](getting-started.md).
+Para obter um tutorial que cria um site [de comunidade de](overview.md#engagement-community)envolvimento, visite [Introdução ao AEM Communities](getting-started.md).
 
 ## Configurar recursos de ativação {#configure-enablement-features}
 
@@ -63,7 +63,7 @@ Para seguir este tutorial, é necessário instalar e [configurar corretamente a 
 
 ## Configurar Analytics {#configure-analytics}
 
-Quando o [Adobe Analytics é configurado para o site](analytics.md)da comunidade, mais informações estão disponíveis nos [relatórios](reports.md) gerados nos recursos de ativação e caminhos de aprendizado atribuídos aos membros da comunidade (alunos).
+Quando o [Adobe Analytics está configurado para o site](analytics.md)da comunidade, mais informações estão disponíveis nos [relatórios](reports.md) gerados nos recursos de ativação e caminhos de aprendizado atribuídos aos membros da comunidade (alunos).
 
 ## Configurar email para notificações {#configure-email-for-notifications}
 
@@ -94,14 +94,14 @@ Use o console [](../../help/sites-administering/tags.md#tagging-console) Marcaç
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-417](assets/chlimage_1-417.png)
+![tags tutoriais](assets/tutorial-tags.png)
 
 Em seguida, siga as instruções para:
 
 1. [Definir as permissões da tag](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publicar as tags](../../help/sites-administering/tags.md#publishing-tags)
 
-Amostra do pacote de tags criado para os tutoriais de introdução aos AEM Communities
+Pacote de amostra de tags criadas para os Tutorials de Introdução do AEM Communities
 
 [Obter arquivo](assets/communities_tutorialtags-10.zip)
 
@@ -173,7 +173,7 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 ### Propriedades da classe Ski da comunidade {#community-ski-class-properties}
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![propriedades de classe de esqui](assets/ski-class-properties.png)
 
 >[!NOTE]
 >
@@ -219,5 +219,5 @@ Role para baixo até `Add User to Groups`:
 
 * Selecione **[!UICONTROL Salvar]**
 
-![chlimage_1-419](assets/chlimage_1-419.png)
+![função administrativa](assets/admin-role.png)
 
