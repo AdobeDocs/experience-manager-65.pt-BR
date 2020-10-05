@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4162'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Trabalhar com modelo de dados de formulário{#work-with-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![integração de dados](do-not-localize/data-integeration.png)
 
 O editor de modelo de dados de formulário fornece uma interface de usuário intuitiva e ferramentas para editar e configurar um modelo de dados de formulário. Usando o editor, você pode adicionar e configurar objetos, propriedades e serviços do modelo de dados de fontes de dados associadas no modelo de dados de formulário. Além disso, permite criar objetos e propriedades de modelo de dados sem fontes de dados e vinculá-los posteriormente aos respectivos objetos e propriedades de modelo de dados. Você também pode gerar e editar dados de amostra para propriedades de objetos de modelo de dados que podem ser usados para preencher previamente formulários adaptáveis e comunicações interativas ao visualizar. É possível testar objetos e serviços de modelo de dados configurados em um modelo de dados de formulário para garantir que eles sejam integrados corretamente às fontes de dados.
 
-Se você for novo na integração de dados do Forms e não tiver configurado uma fonte de dados ou criado um modelo de dados de formulário, consulte os seguintes tópicos:
+Se você for novo na integração de dados da Forms e não tiver configurado uma fonte de dados ou criado um modelo de dados de formulário, consulte os seguintes tópicos:
 
-* [Integração de dados do AEM Forms](/help/forms/using/data-integration.md)
+* [Integração de dados AEM Forms](/help/forms/using/data-integration.md)
 * [Configurar fontes de dados](/help/forms/using/configure-data-sources.md)
 * [Criar modelo de dados de formulário](/help/forms/using/create-form-data-models.md)
 
@@ -43,7 +43,7 @@ Se você tiver criado um modelo de dados de formulário com fontes de dados, pod
 
 Para adicionar objetos e serviços de modelo de dados:
 
-1. Faça logon na instância do autor do AEM, navegue até **[!UICONTROL Formulários > Integrações]** de dados e abra o modelo de dados de formulário no qual deseja adicionar objetos de modelo de dados.
+1. Faça logon na instância AEM autor, navegue até **[!UICONTROL Forms > Integrações]** de dados e abra o modelo de dados de formulário no qual deseja adicionar objetos de modelo de dados.
 1. No painel Fontes de dados, expanda as fontes de dados para visualização de objetos e serviços de modelo de dados disponíveis.
 1. Selecione os objetos e serviços do modelo de dados que deseja adicionar ao modelo de dados do formulário e toque em **[!UICONTROL Adicionar selecionados]**.
 
@@ -85,7 +85,7 @@ Embora seja possível adicionar objetos de modelo de dados de fontes de dados co
 
 Para criar um objeto de modelo de dados sem fontes de dados:
 
-1. Faça logon na instância do autor do AEM, navegue até **[!UICONTROL Formulários > Integrações]** de dados e abra o modelo de dados do formulário no qual deseja criar um objeto ou entidade de modelo de dados.
+1. Faça logon na instância do autor AEM, navegue até **[!UICONTROL Forms > Integrações]** de dados e abra o modelo de dados do formulário no qual você deseja criar um objeto ou entidade de modelo de dados.
 1. Toque em **[!UICONTROL Criar entidade]**.
 1. Na caixa de diálogo Criar modelo de dados, especifique um nome para o objeto de modelo de dados e toque em **[!UICONTROL Adicionar]**. Um objeto de modelo de dados é adicionado ao modelo de dados do formulário. Observe que o objeto de modelo de dados recém-adicionado não está vinculado a uma fonte de dados e não tem nenhuma propriedade, como mostrado na imagem a seguir.
 
@@ -175,11 +175,11 @@ Neste exemplo, os detalhes associados ao **4367655678**, como o valor do `mobile
 
 #### Atributo do perfil do usuário {#user-profile-attribute}
 
-Selecione Atributo **[!UICONTROL de Perfil de]** usuário no menu suspenso **[!UICONTROL Vínculo]** e digite o nome do atributo no campo Valor **[!UICONTROL de]** vínculo. Os detalhes do usuário conectado à instância do AEM são recuperados da fonte de dados com base no nome do atributo.
+Selecione Atributo **[!UICONTROL de Perfil de]** usuário no menu suspenso **[!UICONTROL Vínculo]** e digite o nome do atributo no campo Valor **[!UICONTROL de]** vínculo. Os detalhes do usuário conectado à instância AEM são recuperados da fonte de dados com base no nome do atributo.
 
 O nome do atributo especificado no campo Valor **[!UICONTROL de]** Vínculo deve incluir o caminho de vínculo completo até o nome do atributo do usuário. Abra o seguinte URL para acessar os detalhes do usuário no CRXDE:
 
-https://&lt;nome do servidor>:&lt;número da porta>/crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![Perfil de usuário](assets/binding_crxde_user_profile_new.png)
 
@@ -195,15 +195,31 @@ Use o atributo request para recuperar as propriedades associadas da fonte de dad
 
 1. Selecione Atributo **[!UICONTROL de]** solicitação no menu suspenso **[!UICONTROL Vínculo para]** e digite o nome do atributo no campo Valor **[!UICONTROL de]** vínculo.
 
-1. Abra head.jsp para definir os detalhes do atributo no CRXDE:\
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Crie uma [sobreposição](../../../help/sites-developing/overlays.md) para head.jsp. Para criar a sobreposição, abra o CRX DE e copie o arquivo para `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
-1. Inclua o seguinte texto no arquivo head.jsp:
+   >[!NOTE]
+   >
+   > * Se você usar um modelo estático, sobreponha head.jsp em:
+/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * Se você usar um modelo editável, sobreponha aftemplatedpage.jsp em:
+/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+
+1. Defina [!DNL paramMap] para o atributo de solicitação. Por exemplo, inclua o seguinte código no arquivo .jsp na pasta apps:
+
+   ```javascript
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
+   ```
+
+   Por exemplo, use o código abaixo para recuperar o valor de petid da fonte de dados:
+
+
+   ```javascript
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
    ```
 
 Os detalhes são recuperados da fonte de dados com base no nome do atributo especificado na solicitação.
@@ -303,7 +319,7 @@ Por exemplo, você pode criar uma propriedade calculada **FullName** cujo valor 
    ![computed-prop](assets/computed-prop.png)
 
 1. Selecione a propriedade FullName e toque em **[!UICONTROL Editar regra]**. Uma janela do editor de regras é aberta.
-1. Na janela do editor de regras, toque em **[!UICONTROL Criar]**. Uma janela **[!UICONTROL Definir regra de valor]** é aberta.
+1. Na janela do editor de regras, toque em **[!UICONTROL Criar]**. Uma janela de regra **[!UICONTROL Definir valor]** é aberta.
 
    Na lista suspensa Selecionar opção, selecione Expressão **[!UICONTROL matemática]**. Outras opções disponíveis são Objeto **[!UICONTROL e]** String **[!UICONTROL do Modelo de dados de]** formulário.
 
