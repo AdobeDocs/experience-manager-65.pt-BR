@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -44,7 +44,7 @@ Usando o CRXDE Lite:
 1. Clique no botão verde **[!UICONTROL +Adicionar]** .
 1. Clique em **[!UICONTROL Salvar tudo]**.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![page-script](assets/page-script.png)
 
 ### Scripts de cabeça e corpo {#head-and-body-scripts}
 
@@ -128,13 +128,13 @@ Você deve ver não apenas o cabeçalho **Community Play**, mas também a interf
 
 O painel lateral Ativos/Componentes é visto quando o painel lateral é alternado e a janela é larga o suficiente para que o conteúdo lateral e o conteúdo da página sejam exibidos.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![visualização-página](assets/view-page.png)
 
 * Interface clássica: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 Veja como a página de reprodução aparece na interface clássica, incluindo o localizador de conteúdo (cf):
 
-![chlimage_1-233](assets/chlimage_1-233.png)
+![play-page-visualização](assets/play-page-view.png)
 
 ## Componentes do Communities {#communities-components}
 
