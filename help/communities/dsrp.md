@@ -1,8 +1,8 @@
 ---
 title: DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional
 seo-title: DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional
-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
-seo-description: Configurar AEM Communities para usar um banco de dados relacional como sua loja comum
+description: Configurar a AEM Communities para usar um banco de dados relacional como sua loja comum
+seo-description: Configurar a AEM Communities para usar um banco de dados relacional como sua loja comum
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 ## Sobre o DSRP {#about-dsrp}
 
-Quando o AEM Communities é configurado para usar um banco de dados relacional como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
+Quando a AEM Communities está configurada para usar um banco de dados relacional como sua loja comum, o conteúdo gerado pelo usuário (UGC) é acessível de todas as instâncias de autor e publicação sem a necessidade de sincronização nem replicação.
 
 Consulte também [Características das opções](working-with-srp.md#characteristics-of-srp-options) de SRP e das topologias [](topologies.md)recomendadas.
 
-## Requisitos {#requirements}
+## Introdução {#requirements}
 
 * [MySQL](#mysql-configuration), um banco de dados relacional.
 * [Apache Solr](#solr-configuration), uma plataforma de pesquisa.
@@ -71,7 +71,7 @@ Em autor, para acessar o console Configuração do Armazenamento
       >[!NOTE]
       >
       >A configuração padrão do armazenamento agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). É aconselhável seguir as etapas [de](#zerodt-migration-steps) migração para fazer com que os padrões funcionem conforme esperado.
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Configuração do banco de dados**
@@ -90,7 +90,7 @@ Em autor, para acessar o console Configuração do Armazenamento
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host do Zookeeper **
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host do Zookeeper**
 
       Deixe esse valor em branco se estiver executando Solr usando o ZooKeeper interno. Caso contrário, ao executar no modo [](solr.md#solrcloud-mode) SolrCloud com um ZooKeeper externo, defina esse valor para o URI do ZooKeeper, como *my.server.com:80*
 
