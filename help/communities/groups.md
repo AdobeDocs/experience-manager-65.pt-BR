@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -24,9 +24,9 @@ ht-degree: 2%
 
 O console Grupos fornece acesso à criação de grupos da comunidade quando a estrutura [de](/help/communities/sites-console.md#step1) modelo de um site da comunidade inclui a função [de](/help/communities/functions.md#groups-function)grupos.
 
-* AEM Communities suportam o aninhamento de grupos em outros grupos. O aninhamento de grupo é possível quando a [estrutura do novo grupo](/help/communities/tools-groups.md) contém a função de grupos.
+* A AEM Communities suporta o aninhamento de grupos em outros grupos. O aninhamento de grupo é possível quando a [estrutura do novo grupo](/help/communities/tools-groups.md) contém a função de grupos.
 * Somente para o ambiente do autor, há um assistente de criação de grupo semelhante ao assistente de criação de site.
-* Se os membros podem ou não criar grupos no ambiente de publicação, é possível configurá-los ao adicionar uma função Grupos a uma estrutura de site da comunidade ou de grupo da comunidade.
+* Se os membros podem ou não criar grupos no ambiente de publicação, ele é configurável ao adicionar uma função de grupos a uma estrutura de site da comunidade ou de grupo da comunidade.
 
 Dos três modelos de grupo incluídos, somente o `Reference Group` modelo inclui uma função de grupos em sua estrutura.
 
@@ -39,14 +39,14 @@ As diferentes facetas dos grupos comunitários são:
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.-->
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+-->
 
 >[!NOTE]
 >
 >Esse console Grupos, que pode ser acessado somente pelo console Sites das Comunidades, não deve ser confundido com o console [](/help/communities/members.md) Grupos de membros para gerenciar grupos de membros.
 >
 >Os grupos de membros são grupos de usuários registrados no ambiente publish e acessados a partir do ambiente autor usando o serviço [de](/help/communities/deploy-communities.md#tunnel-service-on-author)túnel.
-
 
 ## Criação do grupo {#group-creation}
 
@@ -98,7 +98,7 @@ A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local den
 
    O nome da página raiz do grupo que aparece no URL.
 
-   * Verifique o nome com o Duplo, pois ele não é facilmente alterado após a criação do grupo.
+   * Verifique o nome com o duplo, pois ele não é facilmente alterado após a criação do grupo.
    * O URL base será exibido abaixo do `Community Group Name`.
    * Para um URL válido, acrescente &quot;.html&quot;
       *por exemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
@@ -204,12 +204,11 @@ Quando o processo é concluído, o cartão do novo site da subcomunidade (grupo)
 >
 >O grupo é criado em todos os idiomas, conforme especificado na [Etapa 1: Modelo](/help/communities/groups.md#step-community-group-template) de grupo da comunidade em Idiomas adicionais de grupo da comunidade disponíveis, no console Grupos da comunidade dos respectivos sites da comunidade.
 
-
 ## Conteúdo do grupo de autores {#author-group-content}
 
 ![site aberto](assets/open-site.png)
 
-O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas de qualquer outra página do AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
+O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas de qualquer outra página AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
 
 ## Modificar propriedades do grupo {#modify-group-properties}
 
@@ -256,13 +255,11 @@ Modifique a ordem das funções, conforme exibido na barra de navegação de ní
 >
 >Por exemplo, renomear o URL não moverá o UGC existente, com o efeito de &#39;perder&#39; o UGC.
 
-
 >[!CAUTION]
 >
 >A função groups *não* deve ser a *primeira nem a única* função na estrutura do site.
 >
 >Qualquer outra função, como a função [de](/help/communities/functions.md#page-function)página, deve ser incluída e listada primeiro.
-
 
 **Exemplo: Adicionando uma função de calendário a uma estrutura subcomunitária (grupo)**
 
@@ -304,7 +301,6 @@ Depois que o grupo for publicado com êxito, uma mensagem será exibida:
 >O site da comunidade pai e os grupos pai já deveriam ter sido publicados.
 >
 >O site da comunidade e os grupos aninhados devem ser publicados de cima para baixo.
-
 
 ## Excluir o grupo {#delete-the-group}
 
