@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0c6a1afff62d4a962edfc8c2e6574d65a18534ac
+source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
 workflow-type: tm+mt
-source-wordcount: '9619'
+source-wordcount: '9613'
 ht-degree: 4%
 
 ---
@@ -496,7 +496,7 @@ Para mover ativos ou pastas:
 
 ### Mover ativos usando a operação de arrastar {#move-using-drag}
 
-Você pode mover ativos (ou pastas) para uma pasta irmão, a coleção [!UICONTROL Lightbox] ou outra coleção arrastando-os para o local do público alvo, em vez de usar a opção [!UICONTROL Mover] na interface do usuário. No entanto, essa operação só é possível na visualização da lista.
+Você pode mover ativos (ou pastas) para uma pasta irmão arrastando-os para o local do público alvo, em vez de usar a opção [!UICONTROL Mover] na interface do usuário. No entanto, essa operação só é possível na visualização da lista.
 
 Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativos] , portanto, você não tem a opção de renomear os ativos ao mover-se. Além disso, os ativos já publicados são republicados ao movê-los arrastando-os, sem solicitar a aprovação do usuário para republicar.
 
