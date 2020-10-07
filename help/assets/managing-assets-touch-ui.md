@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
+source-git-commit: 0c6a1afff62d4a962edfc8c2e6574d65a18534ac
 workflow-type: tm+mt
-source-wordcount: '9618'
+source-wordcount: '9619'
 ht-degree: 4%
 
 ---
@@ -453,7 +453,7 @@ As outras propriedades e informações de metadados são mantidas. Uma cópia pa
 ## Mover e renomear ativos {#moving-or-renaming-assets}
 
 Quando você move ativos (ou pastas) para outro local, os ativos (ou pastas) não são duplicados, ao contrário de copiar o ativo. Os ativos (ou as pastas) são colocados no local do público alvo e removidos do local de origem. Também é possível renomear o ativo ao movê-lo para o novo local.
-Se você estiver movendo um ativo publicado para um local diferente, você terá a opção de publicar novamente o ativo. Por padrão, a operação de movimentação em um ativo publicado automaticamente a despublica. O ativo movido será republicado se o autor selecionar a opção [!UICONTROL Republicar] ao mover o ativo.
+Se você estiver movendo um ativo publicado para um local diferente, você terá a opção de publicar novamente o ativo. Por padrão, a operação de movimentação em um ativo publicado automaticamente a despublica. Um ativo movido é republicado se o autor selecionar a opção [!UICONTROL Republicar] ao mover o ativo.
 
 ![Você pode republicar um ativo já publicado ao movê-lo](assets/republish-on-move.png)
 
