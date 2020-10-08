@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 10%
@@ -34,7 +34,7 @@ O recurso de fórum fornece uma área para visitantes de site conectados (membro
 
 Esta seção da documentação descreve:
 
-* Adicionar o recurso do fórum a um site do AEM.
+* Adicionar o recurso do fórum a um site AEM.
 * Configurações do `Forum` componente.
 
 ### Adding a Forum to a Page {#adding-a-forum-to-a-page}
@@ -47,7 +47,7 @@ e arraste-o para o lugar em uma página onde o fórum deve aparecer.
 
 Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do lado do cliente](/help/communities/essentials-forum.md#essentials-for-client-side) necessárias forem incluídas, o `Forum` componente será exibido desta forma:
+Quando as bibliotecas [do lado do cliente](/help/communities/essentials-forum.md#essentials-for-client-side) necessárias forem incluídas, o `Forum` componente aparecerá desta forma:
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -173,7 +173,6 @@ Na guia **Configurações** , especifique as configurações para tópicos e res
 >[!NOTE]
 >
 >Pode ser necessário verificar tanto `AllowThreaded Replies` quanto `Allow users to Delete Comments and Topics` para permitir comentários sobre um tópico.
-
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
