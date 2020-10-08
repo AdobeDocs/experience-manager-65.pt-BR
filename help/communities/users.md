@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 0%
@@ -111,7 +111,6 @@ No ambiente publish, dependendo das [configurações](sites-console.md#user-mana
 >
 >Se um visitante do site se registrar como membro de um site aberto da comunidade, ele automaticamente se tornará membro de outros sites abertos da comunidade no mesmo ambiente de publicação.
 
-
 ### Publicar funções de grupo {#publish-group-roles}
 
 | Se Membro do Grupo... | Função principal |
@@ -151,7 +150,6 @@ Quando uma função da comunidade não está protegida (nenhum grupo de membros 
 >[!NOTE]
 >
 >Adicionar um usuário a um grupo de membros privilegiados para um site da comunidade só lhes concederá privilégios de criação se eles também forem membros desse mesmo site da comunidade.
-
 
 ## Criação de membros da comunidade {#creating-community-members}
 
@@ -200,7 +198,7 @@ Há quatro consoles separados disponíveis somente no ambiente do autor:
 
 ### Função do gerente de habilitação da comunidade {#community-enablement-manager-role}
 
-Normalmente, a capacidade de um visitante do site se registrar automaticamente não é permitida para uma comunidade [de](overview.md#enablement-community) ativação, pois há custos associados a cada membro. Os alunos e os recursos de habilitação são gerenciados por um usuário ao qual é atribuída a [função](#author-group-roles) de `enablement manager` durante a criação [do site no autor (adicionado como membro do grupo](sites-console.md#enablement) `Community <site-name> Siteenablementmanagers`). O também `enablement manager` é responsável por [atribuir recursos](resources.md) de aprendizado aos membros da comunidade no autor.
+Normalmente, a capacidade de um visitante do site se registrar automaticamente não é permitida para uma comunidade [de](overview.md#enablement-community) ativação, pois há custos associados a cada membro. Os alunos e os recursos de habilitação são gerenciados por um usuário ao qual é atribuída a [função](#author-group-roles) de `enablement manager` durante a criação [do site no autor (adicionado como membro do grupo](sites-console.md#enablement) `Community <site-name> Siteenablementmanagers`). O `enablement manager` também é responsável por [atribuir recursos](resources.md) de aprendizado aos membros da comunidade no autor.
 
 Somente os usuários que são membros do `Community Enablement Managers` grupo global podem ser selecionados como um `enablement manager` site da comunidade específica.
 
