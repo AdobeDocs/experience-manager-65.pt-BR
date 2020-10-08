@@ -1,8 +1,8 @@
 ---
 title: Personalização do cliente
 seo-title: Personalização do cliente
-description: Personalizar o comportamento ou aparência do lado do cliente em AEM Communities
-seo-description: Personalizar o comportamento ou aparência do lado do cliente em AEM Communities
+description: Personalizar comportamento ou aparência do lado do cliente no AEM Communities
+seo-description: Personalizar comportamento ou aparência do lado do cliente no AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -109,7 +109,6 @@ Os estilos personalizados substituirão os estilos de estrutura padrão e o comp
 >
 >Embora as `scf-js` classes não afetem estilos, os nomes das classes podem ser usados em folhas de estilo com a ressalva de que, como controlam os estados dos elementos, podem haver efeitos colaterais.
 
-
 ## Extensão do Javascript {#extending-javascript}
 
 Para estender uma implementação do Javascript de componentes, é necessário:
@@ -162,7 +161,7 @@ As clientlibs para SCF seguem um padrão de nomenclatura muito específico para 
 | clientlib completo | cq.social.hbs.&lt;nome do componente> |
 | clientlib do autor | cq.social.author.hbs.&lt;nome do componente> |
 
-### Clientlibs completos {#complete-clientlibs}
+### Complete Clientlibs {#complete-clientlibs}
 
 Os clientlibs completos (não autores) incluem dependências e são convenientes para inclusão com ui:includeClientLib.
 
