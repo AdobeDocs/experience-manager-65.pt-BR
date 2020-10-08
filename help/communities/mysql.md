@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 2%
@@ -140,9 +140,6 @@ Instale o schema antes de instalar os dados.
 >* [Configuração JDBC](#configure-jdbc-connections)
 >* [Configuração SCORM](#configure-scorm)
 
->
-
-
 
 #### Etapa 1: abrir arquivo SQL {#step-open-sql-file}
 
@@ -195,7 +192,7 @@ Quando MySQL é executado em um servidor diferente de AEM, o nome do host do ser
 
 * Insira os seguintes valores:
    * **[!UICONTROL Classe]** de driver JDBC: `com.mysql.jdbc.Driver`
-   * **URIJ **de conexão DBC:`jdbc:mysql://localhost:3306/aem63reporting`especifique o servidor no lugar de localhost se o servidor MySQL não for o mesmo que o servidor AEM &#39;this&#39;.
+   * **URIJ** de conexão DBC: `jdbc:mysql://localhost:3306/aem63reporting` especifique o servidor no lugar de localhost se o servidor MySQL não for o mesmo que o servidor AEM &#39;this&#39;.
    * **[!UICONTROL Nome de usuário]**: Raiz ou digite o nome de usuário configurado para o servidor MySQL, se não for &#39;root&#39;.
    * **[!UICONTROL Senha]**: Limpe este campo se nenhuma senha estiver definida para MySQL, caso contrário, insira a senha configurada para o Nome de Usuário do MySQL.
    * **[!UICONTROL Nome]** da fonte de dados: Nome inserido para a conexão [](#new-connection-settings)MySQL, por exemplo, &quot;ativação&quot;.
@@ -229,7 +226,7 @@ Quando MySQL é executado em um servidor diferente de AEM, o nome do host do ser
 * Quanto ao seguinte parâmetro:
    * **[!UICONTROL Senha]** do usuário do Scorm: NÃO EDITAR
 
-      Apenas para uso interno: É para um usuário de serviço especial usado pelos AEM Communities para se comunicar com o mecanismo de pontuação.
+      Apenas para uso interno: É para um usuário de serviço especial usado pela AEM Communities para se comunicar com o mecanismo de pontuação.
 * Selecione **[!UICONTROL Salvar]**
 
 ### Filtro CSRF Adobe Granite {#adobe-granite-csrf-filter}
