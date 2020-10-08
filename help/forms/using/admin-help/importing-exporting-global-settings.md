@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 >[!NOTE]
 >
->O Flex Workspace está obsoleto para a versão de formulários do AEM.
+>O Flex Workspace está obsoleto para AEM versão de formulários.
 
 Por exemplo, é possível mover de um ambiente de desenvolvimento para um ambiente de produção exportando as definições do modelo de pesquisa e as configurações globais de um ambiente e importando-as para o outro.
 
@@ -65,7 +68,7 @@ Você pode modificar o arquivo de configurações globais; no entanto, as única
 
 >[!NOTE]
 >
->O Flex Workspace está obsoleto para a versão de formulários do AEM.
+>O Flex Workspace está obsoleto para AEM versão de formulários.
 
 O arquivo de configurações globais da Workspace inclui as seguintes configurações:
 
@@ -74,7 +77,7 @@ O arquivo de configurações globais da Workspace inclui as seguintes configura�
 As configurações *SpecialRoutes* especificam as propriedades das rotas especiais, aprovam e negam, no Workspace. Em determinadas situações, os botões dessas rotas são exibidos nos cartões de tarefa no Workspace e o usuário pode selecioná-los sem abrir o formulário. Você pode modificar as configurações especiaisRoutes no arquivo de configurações globais para adicionar nomes personalizados para aprovar e negar ou para criar rotas adicionais.
 
 **client_SpecialRoutes_route_aprove_style:** O nome do estilo localizado no tema do Workspace, que identifica os ícones de botão de aprovação. O estilo deve incluir valores para um ícone ativado e um ícone desativado. Para definir um estilo para um botão personalizado, você deve usar o seguinte modelo:
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` O arquivo CSS da Workspace está incorporado ao arquivo workspace-themazer.swf, localizado no arquivo adobe-workspace-client.ear > adobe-workspace-client.war. Para alterar a aparência do Workspace, é necessário recompilar o arquivo workspace-theme.swf.
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` O arquivo CSS do Workspace está incorporado ao arquivo workspace-themazer.swf, localizado no arquivo adobe-workspace-client.ear > adobe-workspace-client.war. Para alterar a aparência do Workspace, é necessário recompilar o arquivo workspace-theme.swf.
 
 **client_SpecialRoutes_route_deny_names:** A variedade de strings que um usuário do Workbench pode usar para serem interpretadas como &quot;negar&quot;. As strings fazem distinção entre maiúsculas e minúsculas. Por exemplo, o valor padrão é negar. Se o usuário do Workbench usar a palavra Negar em um processo, a palavra não será reconhecida. A palavra Negar deve ser adicionada a essa configuração para que o botão de rota seja personalizado e tenha o estilo aplicado a ele.
 
@@ -85,7 +88,7 @@ As configurações *SpecialRoutes* especificam as propriedades das rotas especia
 
 ### Configurações do JGroup {#jgroup-settings}
 
-Essas configurações aparecem somente se você tiver atualizado do Adobe LiveCycle ES 2.5 ou anterior.
+Essas configurações serão exibidas somente se você tiver atualizado do LiveCycle ES 2.5 ou anterior.
 
 **server_remoteevents_ClientTimeoutMillisegundos:** O tempo máximo que o JGroup aguarda por mensagens de evento. Essa configuração não deve ser alterada.
 
@@ -97,13 +100,13 @@ Talvez seja necessário alterar os valores UDP para o endereço IP multicast (mc
 
 >[!NOTE]
 >
->O TTL deve ser superior ao número de comutadores de rede entre os servidores do cluster; no entanto, se o valor for definido como muito alto, poderá fazer com que os pacotes multicast viajem para sub-redes, onde serão descartados.
+>O TTL deve ser superior ao número de comutadores de rede entre os servidores do cluster; no entanto, se o valor for definido como alto demais, isso pode fazer com que os pacotes multicast viajem para sub-redes, onde serão descartados.
 
 As propriedades restantes nesta configuração não devem ser alteradas.
 
 **server_remoteevents_JGroupName:** O nome do JGroup usado para comunicação de eventos remotos. Esse valor é gerado aleatoriamente para evitar conflitos em clusters. Esse valor não deve ser alterado.
 
-Para obter informações adicionais sobre JGroups e Workspace, consulte [JGroups e AEM Forms Workspace - Explicado](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
+Para obter informações adicionais sobre JGroups e Workspace, consulte [JGroups e AEM formulários Workspace - Explicado](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
 
 ### configurações de FormView {#formview-settings}
 
@@ -123,7 +126,7 @@ Para obter informações adicionais sobre JGroups e Workspace, consulte [JGroups
 
 **server_debugLevel:** Não altere esta configuração.
 
-**client_pollingInterval:** Define o intervalo de sondagem (em segundos) usado na área de trabalho flexível (obsoleto para formulários AEM no JEE) para detectar tarefas novas e modificadas. O padrão é 3 segundos. Isso não funciona para o AEM Forms Workspace.
+**client_pollingInterval:** Define o intervalo de sondagem (em segundos) usado no Flex Workspace (obsoleto para formulários AEM no JEE) para detectar tarefas novas e modificadas. O padrão é 3 segundos. Isso não funciona para o AEM Forms Workspace.
 
 **client_systemContext_name:** Especifique um nome personalizado (por exemplo, Cidadão) a ser exibido no campo Adicionado por (na guia Anexos) para os anexos de uma tarefa no AEM Forms Workspace.
 
@@ -133,4 +136,6 @@ Para definir o nome personalizado:
 
 >[!NOTE]
 >
->Para o aplicativo Demo, o nome de exibição padrão é **Cidadão**. Para um aplicativo personalizado que você cria, o nome de exibição padrão é Conta **de contexto** do sistema.***client_idleTimeout:** Quando um usuário permanece inativo por um período específico, a sessão do AEM Forms Workspace expira. Para ativar o recurso, adicione uma entrada às Configurações globais &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. Você pode especificar o valor 0 para desativar o tempo limite ocioso. A quantidade de tempo é especificada em segundos.
+>Para o aplicativo Demo, o nome de exibição padrão é **Cidadão**. Para um aplicativo personalizado que você cria, o nome de exibição padrão é Conta **de contexto** do sistema.
+>
+>**client_idleTimeout:** Quando um usuário permanece inativo por um período específico, a sessão do AEM Forms Workspace expira. Para ativar o recurso, adicione uma entrada às Configurações globais &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. Você pode especificar o valor 0 para desativar o tempo limite ocioso. A quantidade de tempo é especificada em segundos.
