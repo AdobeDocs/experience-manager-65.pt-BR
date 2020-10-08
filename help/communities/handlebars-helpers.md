@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
-source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1534'
+ht-degree: 2%
 
 ---
 
@@ -25,14 +28,13 @@ Os Handlebars Helpers (helpers) são métodos chamáveis dos scripts Handlebars 
 
 A implementação inclui uma definição do lado do cliente e do lado do servidor. Também é possível para os desenvolvedores criar auxiliares personalizados.
 
-Os auxiliares SCF personalizados fornecidos com o AEM Communities estão definidos na biblioteca do [cliente](../../help/sites-developing/clientlibs.md):
+Os auxiliares SCF personalizados fornecidos com a AEM Communities são definidos na biblioteca do [cliente](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
 >Instale o pacote de recursos [mais recente das Comunidades](deploy-communities.md#latestfeaturepack).
-
 
 ## Abreviar {#abbreviate}
 
@@ -237,7 +239,7 @@ Um auxiliar para incluir um componente como um recurso não existente em um mode
 
 Isso permite que o recurso seja programaticamente personalizado mais facilmente do que é possível para um recurso adicionado como um nó JCR. Consulte [Adicionar ou incluir um componente](scf.md#add-or-include-a-communities-component)de Comunidades.
 
-Somente alguns componentes selecionados de Comunidades podem ser incluídos. Para o AEM 6.1, os que podem ser incluídos são [comentários](essentials-comments.md), [classificações](rating-basics.md), [revisões](reviews-basics.md)e [votação](essentials-voting.md).
+Somente alguns componentes selecionados de Comunidades podem ser incluídos. No AEM 6.1, os que podem ser incluídos são [comentários](essentials-comments.md), [classificações](rating-basics.md), [revisões](reviews-basics.md)e [votação](essentials-voting.md).
 
 Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade semelhante a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -277,7 +279,7 @@ Isso incluirá um novo componente de comentários em `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-Um auxiliar que inclui uma biblioteca de cliente html do AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no script Handlebars.
+Um auxiliar que inclui uma biblioteca de cliente html AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no script Handlebars.
 
 Esse auxiliar, apropriado apenas no lado do servidor, fornece funcionalidade semelhante à [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -567,7 +569,6 @@ public class FooTextHelper implements TemplateHelper<String>{
 >Um auxiliar criado para o lado do servidor também deve ser criado para o lado do cliente.
 >
 >O componente é renderizado novamente no lado do cliente para o usuário conectado e, se o auxiliar do lado do cliente não for encontrado, o componente desaparece.
-
 
 ### Ajuda personalizada do lado do cliente {#client-side-custom-helpers}
 
