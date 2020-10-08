@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Quando a AEM Communities está configurada para usar um banco de dados relaciona
 
 Consulte também [Características das opções](working-with-srp.md#characteristics-of-srp-options) de SRP e das topologias [](topologies.md)recomendadas.
 
-## Introdução {#requirements}
+## Requisitos {#requirements}
 
 * [MySQL](#mysql-configuration), um banco de dados relacional.
 * [Apache Solr](#solr-configuration), uma plataforma de pesquisa.
@@ -34,7 +34,6 @@ Consulte também [Características das opções](working-with-srp.md#characteris
 >[!NOTE]
 >
 >A configuração padrão do armazenamento agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). É aconselhável seguir as etapas [de](#zerodt-migration-steps) migração para fazer com que os padrões funcionem conforme esperado.
-
 
 ## Configuração de Banco de Dados Relacional {#relational-database-configuration}
 
