@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -21,17 +21,17 @@ ht-degree: 1%
 
 Um perfil é uma receita para quais opções se aplicam aos ativos que são carregados em uma pasta. Por exemplo, você pode especificar qual perfil de metadados e perfil de codificação de vídeo aplicar aos ativos de vídeo que você carrega. Ou qual perfil de geração de imagens aplicar aos ativos de imagem para que eles sejam cortados corretamente.
 
-Essas regras podem incluir adição de metadados, recorte inteligente de imagens ou estabelecimento de perfis de codificação de vídeo. No AEM, você pode criar três tipos de perfis, que são abordados detalhadamente nos seguintes links:
+Essas regras podem incluir adição de metadados, recorte inteligente de imagens ou estabelecimento de perfis de codificação de vídeo. Em AEM, você pode criar três tipos de perfis, que são abordados detalhadamente nos seguintes links:
 
 * [Perfis de metadados](/help/assets/metadata-profiles.md)
-* [perfis de imagem](/help/assets/image-profiles.md)
-* [perfis de vídeo](/help/assets/video-profiles.md)
+* [Perfis de imagem](/help/assets/image-profiles.md)
+* [Perfis de vídeo](/help/assets/video-profiles.md)
 
 Você deve ter direitos de Administrador para criar, editar e excluir metadados, imagens ou perfis de vídeo.
 
 Depois de criar seus metadados, imagem ou perfil de vídeo, atribua-o a uma ou mais pastas que você usa como destino para os ativos carregados recentemente.
 
-Um conceito importante em relação ao uso de perfis em AEM Assets é que eles são atribuídos a pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
+Um conceito importante em relação ao uso de perfis no AEM Assets é que eles estão atribuídos a pastas. Dentro de um perfil estão as configurações na forma de perfis de metadados, juntamente com perfis de vídeo ou perfis de imagem. Essas configurações processam o conteúdo de uma pasta junto com qualquer uma de suas subpastas. Portanto, a forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas tem um impacto significativo na forma como esses ativos são processados por um perfil.
 Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo sua coleção de ativos digitais e garantir que os arquivos corretos sejam processados pelo perfil certo.
 
 >[!NOTE]
@@ -52,19 +52,20 @@ Por exemplo, suponha que você tenha criado um perfil de imagem e o atribuiu a u
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou na primeira vez. Assim, mesmo se você não tiver editado um perfil de processamento ou aplicado um perfil de processamento, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Como opção, você pode ajustar o tamanho do lote do fluxo de trabalho de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Processar novamente o fluxo de trabalho dos Ativos_ em uma pasta, os ativos são agrupados em lotes e enviados ao servidor Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados no AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta ao servidor Dynamic Media.
+Como opção, você pode ajustar o tamanho do lote do fluxo de trabalho de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Reprocessar o fluxo de trabalho dos Ativos_ em uma pasta, os ativos são agrupados em lotes e enviados para o servidor de Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta ao servidor de Dynamic Media.
 
 Consulte [Ajustar o tamanho do lote do fluxo de trabalho](#adjusting-load)de reprocessamento.
 
 >[!NOTE]
 >
->Se você estiver realizando uma migração em massa de ativos do Dynamic Media Classic para o AEM, deverá ativar o agente de replicação de Migração no servidor Dynamic Media. Quando a migração estiver concluída, desative o agente.
-O agente de publicação de Migração deve estar desabilitado no servidor Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione como esperado.
+>Se você estiver realizando uma migração em massa de ativos do Dynamic Media Classic para AEM, deverá habilitar o agente de replicação de Migração no servidor de Dynamic Media. Quando a migração estiver concluída, desative o agente.
+>
+>O agente de publicação de Migração deve estar desabilitado no servidor de Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione como esperado.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **Para reprocessar ativos em uma pasta**:
-1. No AEM, na página Ativos, navegue até uma pasta de ativos que tem um perfil de processamento atribuído a ele e para a qual você deseja aplicar o **Scene7: Reprocessar fluxo de trabalho de ativos** ,
+1. Em AEM, na página Ativos, navegue até uma pasta de ativos que tem um perfil de processamento atribuído a ele e para a qual você deseja aplicar o **Scene7: Reprocessar fluxo de trabalho de ativos** ,
 
    As pastas que tiverem um perfil de processamento já atribuído a ele serão indicadas pela exibição do nome do perfil logo abaixo do nome da pasta na Visualização do cartão.
 
@@ -87,26 +88,26 @@ O agente de publicação de Migração deve estar desabilitado no servidor Dynam
 
 1. Clique em **[!UICONTROL Start]** e, em seguida, clique em **[!UICONTROL Confirmar.]**
 
-   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página principal do console do AEM, clique em **[!UICONTROL Ferramentas > Fluxo de trabalho.]** Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir histórico.]** Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho.
+   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página principal do console AEM, clique em **[!UICONTROL Ferramentas > Fluxo de trabalho.]** Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir histórico.]** Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho.
 
 ### Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento {#adjusting-load}
 
-(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por tarefa. O tamanho ideal do lote é regido pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Dessa forma, o banner de processamento permanece nos ativos AEM por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno a 1 MB ou menos, a Adobe recomenda que você aumente o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande - centenas de megabytes - a Adobe recomenda que você reduza o tamanho do lote para até 10.
+(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por tarefa. O tamanho ideal do lote é regido pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Dessa forma, o banner de processamento permanece em ativos AEM por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno-1 MB ou menos-Adobe, você recomenda aumentar o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande, centenas de megabytes-Adobe recomenda que você reduza o tamanho do lote para até 10.
 
 **Como opção, ajuste o tamanho do lote do fluxo de trabalho de reprocessamento**
 
 1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
 1. Na página Modelos de fluxo de trabalho, em Visualização de cartão ou Visualização de Lista, selecione **[!UICONTROL Scene7: Reprocessar ativos.]**
 
-   ![Página Modelos de fluxo de trabalho com o Scene7: Reprocessar fluxo de trabalho de Ativos selecionado na Visualização de Cartão](/help/assets/assets-dm/reprocess-assets7.png)
+   ![Página Modelos de fluxo de trabalho com a Scene7: Reprocessar fluxo de trabalho de Ativos selecionado na Visualização de Cartão](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Editar.]** Uma nova guia do navegador abre o Scene7: Reprocessar página de modelo de fluxo de trabalho dos Ativos.
 1. No Scene7: Reprocessar a página do fluxo de trabalho dos Ativos, próximo ao canto superior direito, clique em **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
-1. No fluxo de trabalho, selecione o componente de Upload em lote do Scene7 para abrir a barra de ferramentas e clique em **[!UICONTROL Configurar]** na barra de ferramentas.
+1. No fluxo de trabalho, selecione o componente Scene7 Batch Upload para abrir a barra de ferramentas e clique em **[!UICONTROL Configurar]** na barra de ferramentas.
 
-   ![Componente de Upload em lote do Scene7](/help/assets/assets-dm/reprocess-assets8.png)
+   ![Componente Scene7 Batch Upload](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Na caixa de diálogo Carregamento em **[!UICONTROL lote para o Scene7—Step Properties]** , defina o seguinte:
+1. Na caixa de diálogo Carregamento **[!UICONTROL em lote para o Scene7—Step Properties]** , defina o seguinte:
    * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
    * Selecione **[!UICONTROL Manipulador avançado]** se o seu manipulador avançar para a próxima etapa.
    * No campo **[!UICONTROL Tempo limite]** , informe o tempo limite do processo externo (segundos).
@@ -116,7 +117,7 @@ O agente de publicação de Migração deve estar desabilitado no servidor Dynam
 
    ![Caixa de diálogo Propriedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. No canto superior direito da caixa de diálogo Carregamento em **[!UICONTROL lote para o Scene7 - Propriedades]** da etapa, clique em **[!UICONTROL Concluído.]**
+1. No canto superior direito da caixa de diálogo Carregamento em **[!UICONTROL lote para Scene7 - Propriedades]** da etapa, clique em **[!UICONTROL Concluído.]**
 
 1. No canto superior direito do Scene7: Reprocessar a página de modelo de fluxo de trabalho dos Ativos, clique em **[!UICONTROL Sincronizar.]** Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do fluxo de trabalho é sincronizado e pronto para reprocessar ativos em uma pasta.
 
