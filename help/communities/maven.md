@@ -1,8 +1,8 @@
 ---
 title: Uso do Maven para comunidades
 seo-title: Uso do Maven para comunidades
-description: jar de API do AEM Communities e jar de API do AEM Uber
-seo-description: jar de API do AEM Communities e jar de API do AEM Uber
+description: jar de API da AEM Communities e jar de API Uber AEM
+seo-description: jar de API da AEM Communities e jar de API Uber AEM
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -22,14 +22,14 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-Esta seção da documentação do AEM Communities é complementar a:
+Esta seção da documentação da AEM Communities é complementar a:
 
-* [Criação de projetos do AEM usando o Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Construção AEM projetos usando o Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Agora existem dois artefatos &quot;uber&quot; que substituem artefatos individuais:
 
-* jar da API do AEM [Communities](#communities-api-jar-artifact)
-* jar de API do AEM [Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM API [Communities](#communities-api-jar-artifact)
+* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Artefato de molar da API das Comunidades {#communities-api-jar-artifact}
 
@@ -59,7 +59,6 @@ Verifique se a versão especificada corresponde à versão do pacote Communities
 >É recomendável manter-se atualizado com a versão mais recente das Comunidades.
 >
 >Visite a seção Versões [mais recentes](deploy-communities.md#latest-releases) para identificar a versão mais recente.
-
 
 ## Exemplo de Dependência Maven {#maven-dependency-example}
 
