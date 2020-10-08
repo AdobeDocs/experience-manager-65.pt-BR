@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 3%
@@ -31,7 +31,6 @@ Por padrão, o recurso de email não está funcionando, pois exige a especifica�
 >[!CAUTION]
 >
 >O email para notificações e subscrições deve ser configurado somente no editor [principal](deploy-communities.md#primary-publisher).
-
 
 ## Configuração padrão do serviço de correio {#default-mail-service-configuration}
 
