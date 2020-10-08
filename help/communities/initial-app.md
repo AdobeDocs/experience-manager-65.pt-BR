@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 2%
@@ -22,8 +22,8 @@ ht-degree: 2%
 
 Nesta seção, você criará o seguinte:
 
-* O **[modelo](#createthepagetemplate)**que será usado para criar páginas de conteúdo no site de exemplo.
-* O **[componente e o script](#create-the-template-s-rendering-component)**que serão usados para renderizar as páginas do site.
+* O **[modelo](#createthepagetemplate)** que será usado para criar páginas de conteúdo no site de exemplo.
+* O **[componente e o script](#create-the-template-s-rendering-component)** que serão usados para renderizar as páginas do site.
 
 ## Criar o modelo de conteúdo {#create-the-content-template}
 
@@ -31,7 +31,7 @@ Um modelo define o conteúdo padrão de uma nova página. Sites complexos podem 
 
 Neste exercício, todas as páginas são baseadas em um modelo simples.
 
-1. No painel explorador do CRXDE Lite:
+1. No painel explorador de CRXDE Lite:
 
    * Selecionar `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Criar]** > **[!UICONTROL Criar modelo]**
