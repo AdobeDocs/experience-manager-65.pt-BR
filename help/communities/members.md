@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## Visão geral {#overview}
 
-Os recursos do AEM Communities geralmente exigem que os visitantes do site sejam registrados e conectados antes de participar de uma comunidade no ambiente de publicação. O registro do usuário só precisa existir no ambiente publish e eles são comumente chamados de *membros* para diferenciá-los dos *usuários* registrados no ambiente author.
+Os recursos da AEM Communities geralmente exigem que os visitantes do site sejam registrados e conectados antes de participarem de uma comunidade no ambiente de publicação. O registro do usuário só precisa existir no ambiente publish e eles são comumente chamados de *membros* para diferenciá-los dos *usuários* registrados no ambiente author.
 
 ### Membros (usuários) na publicação {#members-users-on-publish}
 
@@ -39,7 +39,6 @@ Para gerenciar usuários e grupos registrados no ambiente do *autor* , é necess
 >
 >Com conteúdo de amostra implantado e ativado, muitos usuários de amostra existem nos ambientes de autor e publicação. Esses usuários não estarão presentes ao executar com [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
 
-
 ## Console de membros {#members-console}
 
 No ambiente author, para acessar o console Membros para gerenciar membros registrados no ambiente publish:
@@ -49,7 +48,6 @@ No ambiente author, para acessar o console Membros para gerenciar membros regist
 >[!CAUTION]
 >
 >Não será possível usar o console Membros se o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel não estiver ativado.
-
 
 ![member-console1](assets/member-console1.png)
 
@@ -174,7 +172,6 @@ Para acessar o console Grupos:
 >[!CAUTION]
 >
 >Não será possível usar o console Grupos se o serviço [de](deploy-communities.md#tunnel-service-on-author) túnel não estiver ativado.
-
 
 ### Criar novo grupo {#create-new-group}
 
