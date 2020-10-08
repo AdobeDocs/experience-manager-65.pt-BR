@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '896'
+ht-degree: 0%
 
 ---
 
@@ -27,12 +30,11 @@ source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 >
 >A localização do pacote de APIs de Comunidades está sujeita a alterações ao atualizar de uma versão principal para a próxima.
 
-
 ### Interface do SocialComponent {#socialcomponent-interface}
 
 SocialComponents são POJOs que representam um recurso para um recurso do AEM Communities. Idealmente, cada SocialComponent representa um resourceType específico com GETters expostos que fornecem dados ao cliente para que o recurso seja representado com precisão. Toda lógica de negócios e lógica de visualização é encapsulada no SocialComponent, incluindo as informações de sessão do visitante do site, se necessário.
 
-A interface define um conjunto básico de GETters que são necessários para representar um recurso. Importante, a interface estipula os métodos Map&lt;String, Object> getAsMap() e String toJSONString() necessários para renderizar os modelos Handlebars e expor os pontos finais GET JSON para recursos.
+A interface define um conjunto básico de GETters que são necessários para representar um recurso. O importante é que a interface estipula os métodos Map&lt;String, Object> getAsMap() e String toJSONString() necessários para renderizar os modelos Handlebars e expor os endpoints JSON do GET aos recursos.
 
 Todas as classes SocialComponent devem implementar a interface `com.adobe.cq.social.scf.SocialComponent`
 
@@ -62,13 +64,13 @@ Um SocialComponentFactoryManager é um serviço OSGi e tem acesso a outros servi
 
 Um identificador do serviço OSGi é obtido invocando `com.adobe.cq.social.scf.SocialComponentFactoryManager`
 
-### API HTTP - Solicitações POST {#http-api-post-requests}
+### API HTTP - Solicitações de POST {#http-api-post-requests}
 
 #### Classe PostOperation {#postoperation-class}
 
-Os pontos finais HTTP API POST são classes PostOperation definidas pela implementação da `SlingPostOperation` interface (pacote `org.apache.sling.servlets.post`).
+Os pontos finais da API HTTP são classes PostOperation definidas pela implementação da `SlingPostOperation` interface (pacote `org.apache.sling.servlets.post`).
 
-A implementação do `PostOperation` endpont define `sling.post.operation` um valor ao qual a operação responderá. Todas as solicitações POST com um parâmetro:operation definido para esse valor serão delegadas a essa classe de implementação.
+A implementação do `PostOperation` endpont define `sling.post.operation` um valor ao qual a operação responderá. Todas as solicitações de POST com um parâmetro:operation definido para esse valor serão delegadas a essa classe de implementação.
 
 O `PostOperation` chama as ações `SocialOperation` que executam as necessárias para a operação.
 
@@ -86,7 +88,7 @@ A `SocialOperationResult` classe é retornada como resultado do `SocialOperation
 
 O `SocialComponent` representa o recurso que foi afetado pela operação.
 
-Para uma operação Criar, o `SocialComponent` incluído no `SocialOperationResult` representa o recurso recém-criado e para uma operação Atualizar, representa o recurso que foi alterado pela operação. Não `SocialComponent` é retornado para uma operação Excluir.
+Para uma operação Criar, o `SocialComponent` incluído na `SocialOperationResult` representa o recurso recém-criado e para uma operação Atualizar, representa o recurso que foi alterado pela operação. Não `SocialComponent` é retornado para uma operação Excluir.
 
 Os códigos de status HTTP de sucesso usados são:
 
@@ -117,11 +119,11 @@ Todas as `OperationService` classes se estendem `AbstractOperationService`, perm
 
 ## Código de exemplo {#sample-code}
 
-O código de amostra está disponível no repositório GitHub da [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) . Procure projetos com prefixo `aem-communities` ou `aem-scf`.
+O código de amostra está disponível no repositório [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Procure projetos com prefixo `aem-communities` ou `aem-scf`.
 
-## Práticas recomendadas   {#best-practices}
+## Práticas recomendadas     {#best-practices}
 
-Visualização na seção Diretrizes [de](code-guide.md) codificação para obter várias diretrizes de codificação e práticas recomendadas para desenvolvedores do AEM Communities.
+Visualização na seção Diretrizes [de](code-guide.md) codificação para obter várias diretrizes de codificação e práticas recomendadas para desenvolvedores AEM Communities.
 
 Consulte também SRP ( [Armazenamento Resource Provider [Provedor de recursos do ]) para UGC](srp.md) para saber mais sobre como acessar conteúdo gerado pelo usuário.
 
