@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 6%
@@ -23,12 +23,11 @@ ht-degree: 6%
 
 O tipo de recursos esperados de uma experiência da comunidade são bem conhecidos. Os recursos da comunidade estão disponíveis como funções da comunidade. Basicamente, elas são uma ou mais páginas pré-conectadas para implementar um recurso da comunidade que requer mais do que simplesmente adicionar um componente a uma página no modo de autor. Eles são os elementos básicos usados para definir a estrutura de um modelo [de site da](/help/communities/sites.md) comunidade a partir do qual os sites da comunidade são [criados](/help/communities/sites-console.md).
 
-Depois que um site da comunidade é criado, o conteúdo pode ser adicionado às páginas resultantes usando o modo [de criação padrão do](/help/sites-authoring/editing-content.md)AEM. Várias funções da comunidade estão disponíveis, como visto no console de funções da comunidade.
+Depois que um site da comunidade é criado, o conteúdo pode ser adicionado às páginas resultantes usando o modo [de criação padrão](/help/sites-authoring/editing-content.md)AEM. Várias funções da comunidade estão disponíveis, como visto no console de funções da comunidade.
 
 >[!NOTE]
 >
 >Os consoles para a criação de sites [da](/help/communities/sites-console.md)comunidade, modelos [de site da](/help/communities/sites.md)comunidade, modelos [de grupos da](/help/communities/tools-groups.md)comunidade e funções [da](/help/communities/functions.md) comunidade são para uso somente no ambiente do autor.
-
 
 ## Console de funções da comunidade {#community-functions-console}
 
@@ -40,7 +39,7 @@ Para acessar o console de funções da comunidade no ambiente do autor:
 
 ## Funções pré-criadas {#pre-built-functions}
 
-Veja a seguir uma breve descrição das funções fornecidas com os AEM Communities. Cada função inclui uma ou mais páginas AEM que contêm componentes Comunidades conectados em conjunto em um recurso que é facilmente incorporado a um modelo [de site da](/help/communities/sites.md)comunidade.
+Veja a seguir uma breve descrição das funções fornecidas com a AEM Communities. Cada função inclui uma ou mais páginas AEM contendo componentes Comunidades conectados em conjunto em um recurso que é facilmente incorporado a um modelo [de site da](/help/communities/sites.md)comunidade.
 
 Um modelo de site da comunidade fornece a estrutura para um site da comunidade, incluindo logon, perfis do usuário, notificações, mensagens, menu do site, pesquisa, tema e recursos de marca.
 
@@ -60,7 +59,7 @@ Quando uma função da comunidade é adicionada a um modelo de site da comunidad
 
 * **URL**
 
-   (*Obrigatório*) O nome usado para gerar o URI. O nome deve estar em conformidade com as convenções [de](/help/sites-developing/naming-conventions.md) nomenclatura impostas pelo AEM e JCR.
+   (*Obrigatório*) O nome usado para gerar o URI. O nome deve estar em conformidade com as convenções [de](/help/sites-developing/naming-conventions.md) nomenclatura impostas pela AEM e pelo JCR.
 
 Por exemplo, usar o site criado a partir do acompanhamento do tutorial [Introdução](/help/communities/getting-started.md) , se
 
@@ -81,7 +80,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 #### Detalhes da função de configuração {#configuration-function-details-1}
 
-![chlimage_1-302](assets/chlimage_1-382.png)
+![chlimage_1-382](assets/chlimage_1-382.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -234,10 +233,9 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 >
 >Qualquer outra função, como a função [de](#page-function)página, deve ser incluída e listada primeiro.
 
-
 A função de grupos fornece a capacidade de membros da comunidade criarem subcomunidades dentro do site da comunidade no ambiente de publicação.
 
-Dependendo das [configurações](/help/communities/sites-console.md#groupmanagement) quando a função Grupos é incluída em um modelo [de site da](/help/communities/sites.md)comunidade, os grupos podem ser públicos ou privados e um ou mais modelos de grupo da comunidade podem ser configurados para fornecer uma escolha de modelos quando o grupo da comunidade é realmente criado (como a partir do ambiente de publicação). Um modelo [de grupo da](/help/communities/tools-groups.md) comunidade especifica quais recursos das Comunidades são criados para as páginas de grupo, como fóruns e calendários.
+Dependendo das [configurações](/help/communities/sites-console.md#groupmanagement) quando a função Grupos é incluída em um modelo [de site da](/help/communities/sites.md)comunidade, os grupos podem ser públicos ou privados e um ou mais modelos de grupo da comunidade podem ser configurados para fornecer uma escolha de modelos quando o grupo da comunidade é realmente criado (como a partir do ambiente de publicação). Um modelo [de grupo da](/help/communities/tools-groups.md) comunidade especifica quais recursos de Comunidades são criados para as páginas de grupo, como fóruns e calendários.
 
 Quando um grupo da comunidade é criado, um grupo de membros é criado dinamicamente para o novo grupo, ao qual os membros podem ser atribuídos ou associados. Para obter mais informações, consulte [Gerenciamento de usuários e grupos](/help/communities/users.md)de usuários.
 
@@ -317,7 +315,7 @@ O padrão está desmarcado.
 
 ### Função da página {#page-function}
 
-A função de página adiciona uma página em branco ao site da comunidade que é conectada aos recursos do site da comunidade: login, menu, notificações, mensagens, temas e marcas. O conteúdo é adicionado à página usando o modo [de criação AEM](/help/sites-authoring/editing-content.md)padrão.
+A função de página adiciona uma página em branco ao site da comunidade que é conectada aos recursos do site da comunidade: login, menu, notificações, mensagens, temas e marcas. O conteúdo é adicionado à página usando o modo [de criação de AEM](/help/sites-authoring/editing-content.md)padrão.
 
 Quando adicionada a um modelo, a única configuração é para as Configurações [de](#title-and-url-settings)Título e URL.
 
@@ -353,7 +351,7 @@ Quando adicionada a um modelo, a configuração permite a restrição para membr
 
 ## Criar função da comunidade {#create-community-function}
 
-A capacidade de criar uma função da comunidade é alcançada selecionando o `Create Community Function` ícone localizado na parte superior do console Funções da comunidade. Várias funções baseadas no mesmo Blueprint do AEM podem ser criadas e personalizadas exclusivamente ao abrir no modo de edição do autor.
+A capacidade de criar uma função da comunidade é alcançada selecionando o `Create Community Function` ícone localizado na parte superior do console Funções da comunidade. Várias funções baseadas no mesmo AEM Blueprint podem ser criadas e personalizadas exclusivamente ao abrir no modo de edição do autor.
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
@@ -387,7 +385,7 @@ Como a função da comunidade é implementada como uma cópia [](/help/sites-adm
 
 Consulte também [Gerenciador](/help/sites-administering/msm.md)de vários sites.
 
-### Miniatura     {#thumbnail}
+### Miniatura  {#thumbnail}
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
@@ -401,7 +399,7 @@ Selecione o `Open Community Function` ícone para entrar no modo de edição do 
 
 ### Configuração de componentes {#configuring-components}
 
-Uma função da comunidade é implementada como uma Live Copy de um Blueprint do AEM, cujos detalhes são documentados em [Multi Site Manager](/help/sites-administering/msm.md).
+Uma função da comunidade é implementada como uma Live Copy de um Blueprint AEM, cujos detalhes são documentados em [Multi Site Manager](/help/sites-administering/msm.md).
 
 É possível não apenas criar conteúdo de página, mas também configurar componentes.
 
