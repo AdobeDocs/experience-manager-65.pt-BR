@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 1%
@@ -377,7 +377,7 @@ Copie a fonte Unicode para qualquer um dos seguintes diretórios, conforme aprop
 >[!NOTE]
 >
 >* No RedHat Enterprise Linux 6.x e posterior, as fontes courier não estão disponíveis. Para instalar as fontes do correio, baixe o arquivo font-ibm-type1-1.0.3.zip. Extraia o arquivo em /usr/share/fonts. Crie um link simbólico de /usr/share/X11/fonts para /usr/share/fonts.
->* Exclua todos os arquivos .lst de cache de fontes dos diretórios Html2PdfSvc/bin e /usr/share/fonts.
+>* Exclua todos os arquivos de cache de fontes .lst dos diretórios Html2PdfSvc/bin e /usr/share/fonts.
 >* Verifique se os diretórios /usr/lib/X11/fonts e /usr/share/fonts existem. Se os diretórios não existirem, use o comando ln para criar um link simbólico de /usr/share/X11/fonts para /usr/lib/X11/fonts e outro link simbólico de /usr/share/fonts para /usr/share/X11/fonts. Verifique também se as fontes courier estão disponíveis em /usr/lib/X11/fonts.
 >* Verifique se todas as fontes (Unicode e não-unicode) estão disponíveis no diretório /usr/share/fonts ou /usr/share/X11/fonts.
 >* Ao executar o serviço Gerador de PDF como um usuário não raiz, forneça ao usuário não raiz acesso de leitura e gravação a todos os diretórios de fonte.
@@ -553,8 +553,7 @@ Execute as seguintes etapas para configurar os certificados:
 
    >[!NOTE]
    >
-   >* No ambiente de produção, substitua suas credenciais de avaliação por credenciais de produção. Certifique-se de excluir suas credenciais antigas de Extensões de Reader antes de atualizar uma credencial expirada ou de avaliações.
-
+   >No ambiente de produção, substitua suas credenciais de avaliação por credenciais de produção. Certifique-se de excluir suas credenciais antigas de Extensões de Reader antes de atualizar uma credencial expirada ou de avaliações.
 
 1. Clique em **[!UICONTROL Salvar e fechar]** na página **[!UICONTROL Editar configurações]** do usuário.
 
