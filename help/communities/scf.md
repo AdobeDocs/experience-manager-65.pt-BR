@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Para personalizar ou estender os componentes, você grava somente as sobreposiç
    * Somente o [CSS precisa de edição](client-customize.md#skinning-css).
 * Para aparência e sentimento:
    * Altere o modelo JS e o CSS.
-* Para aparência, sensação e UX:
+* Para aparência, toque e UX:
    * Altere o modelo JS, o CSS e [estenda/substitua o Javascript](client-customize.md#extending-javascript).
 * Para modificar as informações disponíveis para o Modelo JS ou para o terminal do GET:
    * Estenda o [SocialComponent](server-customize.md#socialcomponent-interface).
@@ -184,7 +184,6 @@ O Guia [de componentes da](components-guide.md) comunidade permite que component
 >
 >Para adicionar um componente a uma página dinamicamente, em vez de adicioná-lo ou incluí-lo em um modelo, consulte Sideload [de componentes](sideloading.md).
 
-
 ### Auxiliares de guiadores {#handlebars-helpers}
 
 Consulte Auxiliares [de barras de mão](handlebars-helpers.md) SCF para obter uma lista e uma descrição dos auxiliares personalizados disponíveis no SCF.
@@ -222,7 +221,7 @@ As informações essenciais para desenvolvedores estão descritas na seção [Re
 
 Informações adicionais sobre o desenvolvedor podem ser encontradas na seção [Coding Guidelines (Diretrizes](code-guide.md) de codificação).
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 As preocupações comuns e os problemas conhecidos são descritos na seção [Solução de problemas](troubleshooting.md) .
 
