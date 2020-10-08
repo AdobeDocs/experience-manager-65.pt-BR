@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 7%
@@ -48,7 +48,6 @@ Esta seção da documentação descreve:
 >Os componentes `Journal` e `Journal Sidebar` são intitulados `Blog` e `Blog Sidebar`.
 >
 >O recurso de blog encontrado no AEM 6.0 e versões anteriores foi removido. Ele era baseado em um modelo e permitia somente que autores criassem conteúdo no ambiente do autor.
-
 
 ## Adicionar componentes do blog a uma página {#adding-blog-components-to-a-page}
 
@@ -112,8 +111,8 @@ Na guia **Configurações** , especifique os recursos básicos do blog:
 >[!NOTE]
 >
 >O Título do Journal é usado para criar automaticamente o URL para o blog.
+>
 >No máximo 50 caracteres (com 5 caracteres adicionais para exclusividade) são usados no título do journal que você especificou aqui para criar o URL para o blog.
-
 
 * **Descrição do diário**
 
