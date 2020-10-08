@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -57,7 +57,6 @@ As diferenças na configuração das regras de pontuação e marcação são:
 >
 >Para usar recursos avançados de pontuação e marcação, instale o pacote [de identificação de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)especialistas.
 
-
 ## Mecanismo de Pontuação Configurável {#configurable-scoring-engine}
 
 O mecanismo de pontuação avançado fornece uma configuração OSGi com parâmetros que afetam o algoritmo de pontuação avançado.
@@ -93,7 +92,7 @@ Na pontuação básica, é conhecida a quantidade necessária para ganhar um cra
 
 Na pontuação avançada, a quantidade necessária é constantemente ajustada com base na quantidade de dados de qualidade no sistema. A pontuação é continuamente calculada de forma semelhante à curva em forma de sino.
 
-Se um membro ganhou um crachá de especialista em um tópico que não está mais ativo, há a possibilidade de que ele perca seu crachá devido a uma degradação ao longo do tempo.
+Se um membro ganhou um crachá de especialista em um tópico que não está mais ativo, existe a possibilidade de que ele perca seu crachá devido a uma degradação ao longo do tempo.
 
 ### scoringType {#scoringtype}
 
@@ -167,7 +166,7 @@ Incluído nesta versão beta, há um selo de especialista baseado em recompensa:
 
 ![crachá](assets/included-badge.png)
 
-Para que o selo do especialista apareça como recompensa pela atividades, verifique se:
+Para que o selo do especialista apareça como recompensa pela atividade, verifique se:
 
 * `Badges` são ativados para o recurso, como um fórum ou componente QnA.
 
