@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '3292'
 ht-degree: 4%
@@ -33,7 +33,6 @@ Consulte [Introdução ao AEM Communities](/help/communities/getting-started.md)
 >[!NOTE]
 >
 >Os principais menus Comunidades para a criação de sites [da](/help/communities/sites-console.md)comunidade, modelos [de site da](/help/communities/sites.md)comunidade, modelos [de grupos da](/help/communities/tools-groups.md) comunidade e funções [da](/help/communities/functions.md) comunidade são para uso somente no ambiente do autor.
-
 
 ## Pré-requisitos {#prerequisites}
 
@@ -180,7 +179,6 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 >
 >Isso é feito ao habilitar o ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` para o ambiente do autor.
 
-
 #### USER MANAGEMENT {#user-management}
 
 ![createsitesdefinições](assets/createsitesettings.png)
@@ -190,7 +188,6 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 >Recomenda-se que os sites [da comunidade de](/help/communities/overview.md#enablement-community) ativação sejam privados (entre em contato com seu representante de conta para obter mais informações).
 >
 >Um site da comunidade é privado quando visitantes anônimos do site têm acesso negado, podem não se inscrever e podem não usar o login social.
-
 
 * **Permitir registro do usuário**
 
@@ -227,7 +224,6 @@ Deixe desmarcada para um site de comunidade *privada* . O padrão está desmarca
 >**Permitir logons sociais**
 >
 >Embora a amostra de configurações do Facebook e do Twitter possa existir e ser selecionável, para um ambiente [de](/help/sites-administering/production-ready.md)produção, é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte Logon [social com Facebook e Twitter](/help/communities/social-login.md).
-
 
 #### TAGGING {#tagging}
 
@@ -403,7 +399,6 @@ O conteúdo de um site pode ser criado com as mesmas ferramentas que qualquer ou
 >
 >Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
 
-
 ## Modificando Propriedades do Site {#modifying-site-properties}
 
 ![editar site](assets/edit-site.png)
@@ -450,7 +445,6 @@ O painel ESTRUTURA permite a modificação da estrutura criada inicialmente a pa
 >
 >Você pode alterar a ordem de todas as funções na Estrutura do site, exceto a função na parte superior. Portanto, o home page de sites de comunidades não pode ser alterado.
 
-
 >[!CAUTION]
 >
 >* Embora o título de exibição possa ser alterado sem efeitos colaterais, não é recomendável editar o nome do URL de uma função da comunidade pertencente a um site da comunidade.
@@ -458,13 +452,11 @@ O painel ESTRUTURA permite a modificação da estrutura criada inicialmente a pa
 >
 Por exemplo, renomear o URL não moverá o UGC existente, com o efeito de &#39;perder&#39; o UGC.
 
-
 >[!CAUTION]
 >
 >A função groups *não* deve ser a *primeira nem a única* função na estrutura do site.
 >
 >Qualquer outra função, como a função [de](/help/communities/functions.md#page-function)página, deve ser incluída e listada primeiro.
-
 
 #### Exemplo: Adicionando uma função de catálogo a uma estrutura de site da comunidade {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -551,7 +543,6 @@ Para obter detalhes, consulte [Gerenciamento de usuários e grupos](/help/commun
 >
 >
 for criado, o serviço [de nuvem do](/help/communities/social-login.md#createafacebookcloudservice) Facebook aplicado deve ser configurado para adicionar usuários a esse grupo.
-
 
 ## Erro ao configurar para autenticação {#configure-for-authentication-error}
 
