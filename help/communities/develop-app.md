@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -161,8 +161,8 @@ Além disso, escolha os componentes **[!UICONTROL Gerais]** , como
 >[!NOTE]
 >
 >Os componentes ativados para o par de páginas são armazenados no repositório como o valor da `components` propriedade da variável
+>
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
-
 
 ## Página de aterrissagem {#landing-page}
 
