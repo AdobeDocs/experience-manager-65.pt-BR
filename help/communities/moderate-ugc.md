@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 2%
@@ -221,7 +221,7 @@ Para ativar o mecanismo de detecção de spam, siga estas etapas:
 
 1. Abra o Console [da Web](https://localhost:4502/system/console/configMgr), indo até `/system/console/configMgr`.
 
-1. Localize a configuração de Moderação **automática do** AEM Communities e edite-a.
+1. Localize a configuração da Moderação **automática do** AEM Communities e edite-a.
 1. Adicione a entrada **[!UICONTROL SpamProcess]** .
 
 ![spamprocess](assets/spamprocess.png)
@@ -229,7 +229,6 @@ Para ativar o mecanismo de detecção de spam, siga estas etapas:
 >[!NOTE]
 >
 >A detecção de spam só é implementada para o idioma inglês.
-
 
 ### Sentimento {#sentiment}
 
