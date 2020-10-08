@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -139,8 +139,7 @@ Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco
 
 >[!NOTE]
 >
->O modo de log binário padrão para MySQL é &quot;Instrução&quot;, o que é incompatível com tabelas usadas pelo Content Services (obsoleto). O uso do logon binário nesse modo padrão faz com que o Content Services (obsoleto) falhe. Se o seu sistema incluir o Content Services (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao file:* my.ini
-`binlog_format=mixed log-bin=logname`
+>O modo de log binário padrão para MySQL é &quot;Instrução&quot;, o que é incompatível com tabelas usadas pelo Content Services (obsoleto). O uso do logon binário nesse modo padrão faz com que o Content Services (obsoleto) falhe. Se o seu sistema incluir o Content Services (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao arquivo my.ini: `binlog_format=mixed log-bin=logname`
 
 Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem arquivos de backup grandes e levam tempo para gerar. Para fazer um backup incremental, verifique se você start o servidor com a opção - conforme descrito na seção anterior `log-bin` . Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir daí, o novo se torna o atual. É possível forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` comando, que cria o próximo arquivo de log.
 
