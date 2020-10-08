@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -21,13 +21,13 @@ ht-degree: 4%
 
 # Console de moderação {#moderation-console}
 
-No AEM Communities, a [moderação em massa do conteúdo](/help/communities/moderate-ugc.md) da comunidade é possível tanto do autor quanto dos ambientes de publicação por administradores e moderadores da comunidade (membros da comunidade confiáveis atribuídos como moderadores).
+No AEM Communities, a [moderação em massa do conteúdo](/help/communities/moderate-ugc.md) da comunidade é possível tanto do autor quanto dos ambientes de publicação por administradores e moderadores da comunidade (membros confiáveis da comunidade atribuídos como moderadores).
 
 Os administradores e os moderadores da comunidade também podem executar moderação [](/help/communities/in-context.md) no contexto no ambiente de publicação.
 
 Um recurso de todos os sites [da](/help/communities/sites-console.md) comunidade é um item de `Administration` menu disponível para usuários que fazem logon com privilégios administrativos. O `Administration` link fornece acesso ao console Moderação.
 
-No console Moderação, os administradores e moderadores da comunidade terão acesso a todo o conteúdo gerado pelo usuário (UGC) para o qual eles têm permissão para moderar. Se for permitido moderar vários sites, é possível visualização as publicações em todos os sites ou filtrar por sites de comunidades selecionadas.
+No console Moderação, os administradores e moderadores da comunidade terão acesso a todo o conteúdo gerado pelo usuário (UGC) para o qual eles têm permissão para moderar. Se for permitido moderar vários sites, é possível visualização postagens em todos os sites ou filtrar por sites de comunidades selecionadas.
 
 Para obter informações mais detalhadas, visite [Gerenciar usuários e grupos](/help/communities/users.md)de usuários.
 
@@ -61,7 +61,6 @@ Somente quando conectado como administrador, ou como membro com permissões [de]
 >[!NOTE]
 >
 >O UGC do ambiente publish só estará visível no autor se o SRP escolhido implementar uma loja comum. Por exemplo, por padrão, o armazenamento é JSRP, que não é uma loja comum para autor e publicação. Consulte Armazenamento [de conteúdo da](/help/communities/working-with-srp.md)comunidade.
-
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
@@ -109,7 +108,6 @@ A área de conteúdo contém informações para o UGC publicado:
 > 
 >A área de conteúdo apresenta uma rolagem ** infinita, o que significa que permitirá que você continue a rolagem até atingir o final do conteúdo. A barra de ferramentas permanece em uma posição fixa e visível acima da área de conteúdo, mesmo durante a rolagem.
 
-
 ### Filtrar painel {#ootbfilters}
 
 ![open-filterrail](assets/open-filterrail.png)
@@ -126,10 +124,9 @@ No entanto, se você marcar **Pergunta** e **Pendente**, verá somente o conteú
 >
 >Os moderadores da comunidade podem marcar os filtros predefinidos na interface do usuário do console de moderação. Como esses filtros são anexados ao final do URL (como parâmetros de string de query), os moderadores podem voltar aos filtros marcados posteriormente e também compartilhar esses links.
 
-
 ![search icon](assets/searchicon.png)
 
-Quando o trilho do filtro estiver aberto, o ícone Pesquisar alterna o painel lateral para fechado. No entanto, para fechar o painel de filtros e somente visualização o conteúdo gerado pelo usuário, clique no ícone Pesquisar e selecione a opção Somente conteúdo.
+Quando o painel de filtros estiver aberto, o ícone Pesquisar alterna o painel lateral para fechá-lo. No entanto, para fechar o painel de filtros e somente visualização o conteúdo gerado pelo usuário, clique no ícone Pesquisar e selecione a opção Somente conteúdo.
 
 #### Caminho do conteúdo {#content-path}
 
@@ -154,7 +151,6 @@ O site limita o UGC referenciado exibido às postagens nos sites da comunidade s
 >Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são exibidas, incluindo sites não criados com o assistente [de criação de](/help/communities/sites-console.md)site, como amostras de Geometrixx.
 >
 >Quando o console de moderação em massa é acessado na publicação por um membro da comunidade confiável, somente as referências ao UGC criado para sites da comunidade que o membro está autorizado a moderar são mostradas e podem ser filtradas com o filtro Site.
-
 
 #### Tipo de conteúdo {#content-type}
 
@@ -205,7 +201,6 @@ O status limita o UGC referenciado exibido às postagens do status selecionado, 
 >[!NOTE]
 >
 >Se apenas o status Não respondida for selecionado, então o moderador visualizará todo o conteúdo (para todos os tipos de conteúdo), exceto as perguntas respondidas. Isso ocorre porque a propriedade responsável pela Pergunta respondida não existe no caso de perguntas não respondidas e outros conteúdos, como tópico do fórum, artigo do blog ou comentários.
-
 
 ![status](assets/statuses.png)
 
