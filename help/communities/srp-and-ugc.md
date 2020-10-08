@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -46,7 +46,6 @@ Ao atualizar do AEM 6.0 ou anterior, será necessário migrar o UGC para todos o
 >
 >Para obter utilitários de substituição, consulte Refatoração [SocialUtils](socialutils.md).
 
-
 ## Método do utilitário para acessar o UGC {#utility-method-to-access-ugc}
 
 Para acessar o UGC, use um método do pacote SocialResourceUtilities que retorna um caminho adequado para acessar o UGC do SRP e substitui o método obsoleto encontrado no pacote SocialUtils.
@@ -74,7 +73,6 @@ Para obter diretrizes de codificação, consulte [Acesso ao UGC com SRP](accessi
 >
 >O recurso pathToUGCStoragePath() retorna *não* é adequado para verificação [](srp.md#for-access-control-acls)ACL.
 
-
 ## Método do utilitário para acessar ACLs {#utility-method-to-access-acls}
 
 Algumas implementações SRP, como ASRP e MSRP, armazenam conteúdo da comunidade em bancos de dados que não fornecem verificação de ACL. Os nós de sombra fornecem um local no repositório local ao qual as ACLs podem ser aplicadas.
@@ -101,7 +99,6 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 >[!CAUTION]
 >
 >O caminho retornado por resourceToACLPath() *não* é adequado para [acessar o próprio UGC](#utility-method-to-access-acls) .
-
 
 ## Locais de Armazenamentos relacionados ao UGC {#ugc-related-storage-locations}
 
@@ -136,4 +133,3 @@ O UGC é criado em nenhum desses locais e só deve ser acessado usando um métod
 * [Visão geral](srp.md) do provedor de recursos do armazenamento - Introdução e visão geral de uso do repositório.
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
 * [Refatoração](socialutils.md) SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
-
