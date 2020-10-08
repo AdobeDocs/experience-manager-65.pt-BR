@@ -1,8 +1,8 @@
 ---
 title: Configurar mensagens
 seo-title: Configuração de mensagens
-description: Mensagens das comunidades
-seo-description: Mensagens das comunidades
+description: Mensagens de comunidades
+seo-description: Mensagens de comunidades
 uuid: 159dcf9d-7948-4a3d-9f51-a5b4d03e172b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-O recurso de mensagens para AEM Communities fornece a capacidade de visitantes (membros) de sites conectados enviarem mensagens para outros que sejam acessíveis quando conectados ao site.
+O recurso de mensagens para o AEM Communities fornece a capacidade de visitantes de sites conectados (membros) enviarem mensagens entre si que podem ser acessadas quando conectados ao site.
 
 As mensagens são ativadas para um site da comunidade marcando uma caixa durante a criação [do site da](/help/communities/sites-console.md)comunidade.
 
@@ -33,7 +33,7 @@ Para obter informações adicionais para desenvolvedores, consulte [Messaging Es
 
 ## Serviço de Operações de Mensagens {#messaging-operations-service}
 
-O Serviço [de Operações de Mensagens do](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities de configuração identifica o ponto de extremidade que lida com solicitações relacionadas a mensagens, as pastas que o serviço deve usar para armazenar mensagens e, se as mensagens podem incluir anexos de arquivo, quais tipos de arquivos são permitidos.
+O serviço [de configuração do](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities Messaging Operations identifica o ponto de extremidade que lida com solicitações relacionadas a mensagens, as pastas que o serviço deve usar para armazenar mensagens e, se as mensagens podem incluir anexos de arquivo, quais tipos de arquivos são permitidos.
 
 Para sites da comunidade criados usando o `Communities Sites console`, já existe uma instância do serviço, com a caixa de entrada definida como `/mail/inbox`.
 
@@ -135,7 +135,6 @@ Para adicionar uma nova configuração, selecione o ícone de adição &quot;**+
 >
 >Para permitir todas as extensões de nome de arquivo, exceto aquelas incluir na lista de bloqueios, use o ícone &quot;**-**&quot; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
 
-
 ## Group Messaging {#group-messaging}
 
 Para permitir que usuários registrados enviem mensagens diretas em massa para grupos de usuários, certifique-se de **Ativar mensagens** de grupo nas duas instâncias de configuração dos Serviços **de Operação de** Mensagens a seguir:
@@ -151,7 +150,7 @@ Para permitir que usuários registrados enviem mensagens diretas em massa para g
 
 ![social-message-op-service](assets/social-message-op-service.png)
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 Uma maneira de solucionar problemas é ativar a [depuração de mensagens no registro.](/help/sites-administering/troubleshooting.md)
 
