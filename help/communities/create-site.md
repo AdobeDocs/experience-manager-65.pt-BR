@@ -135,7 +135,7 @@ Aceite as configurações globais padrão para [moderar](/help/communities/sites
 
 #### ANALYTICS {#analytics}
 
-Se a Adobe Analytics estiver licenciada e um serviço e uma estrutura em nuvem do Analytics tiverem sido configurados, então será possível habilitar o Analytics e selecionar a estrutura.
+Se a Adobe Analytics estiver licenciada e um serviço e uma estrutura em nuvem do Analytics tiverem sido configurados, será possível habilitar o Analytics e selecionar a estrutura.
 
 Consulte Configuração [do Analytics para recursos](/help/communities/analytics.md)de comunidades.
 
