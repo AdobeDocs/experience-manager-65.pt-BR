@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 1%
@@ -50,8 +50,8 @@ Observe que este home page mostra quatro itens de menu: `Assignments, Ski Catalo
 >[!NOTE]
 >
 >É possível conceder acesso anônimo a um site de ativação sem permitir que os visitantes do site se registrem automaticamente.
+>
 >Se um recurso de ativação estiver definido como `show in catalog` e `allow anonymous access`, será possível que visitantes anônimos do site visualizações recursos no catálogo.
-
 
 ### Impedir acesso anônimo no JCR {#prevent-anonymous-access-on-jcr}
 
@@ -59,7 +59,7 @@ Uma limitação conhecida expõe o conteúdo do site da comunidade a visitantes 
 
 Para proteger o conteúdo do site da sua comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json , siga estas etapas:
 
-1. Na instância do autor de AEM, vá para https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;sitename>.html.
+1. AEM instância do autor, vá para https://&lt;host>:&lt;porta>/editor.html/content/site/&lt;sitename>.html.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ No autor, navegue até **Communities (Comunidades),[Resources console](resources
 * Todos os recursos de ativação e caminhos de aprendizado
 * Um recurso de ativação ou caminho de aprendizado específico
 
-Navegue até **Comunidades, console[](reports.md)**Relatórios e gere relatórios de acordo com:
+Navegue até **Comunidades, console[](reports.md)** Relatórios e gere relatórios de acordo com:
 
 * Atribuições para ativar recursos e caminhos de aprendizado
 * Postagens em um site da comunidade durante um período específico
@@ -209,7 +209,7 @@ Com uma certa atividade e interação com os Recursos na publicação, a exibiç
 * Selecione o `Report` ícone para obter um resumo de todos os Recursos.
 * Selecione um Recurso e, em seguida, o `Report` ícone para um relatório sobre esse Recurso.
 
-Observe que provavelmente é muito cedo para mostrar dados do Adobe Analytics, que podem levar de 1 a 12 horas para serem exibidos. No entanto, o relatórios SCORM básico já está disponível.
+Observe que provavelmente é muito cedo para mostrar dados da Adobe Analytics, que podem levar de 1 a 12 horas para serem exibidos. No entanto, o relatórios SCORM básico já está disponível.
 
 #### Relatório de recursos de lições de esqui {#ski-lessons-resource-report}
 
@@ -251,7 +251,7 @@ Para relatórios sobre visualizações:
 
 * Em autor, faça logon com privilégios administrativos.
 * Navegue até **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]** > Relatório **[!UICONTROL de]** Visualizações.
-* Selecione um **Site **no menu suspenso (selecione`Enablement Tutorial`).
+* Selecione um **Site** no menu suspenso (selecione `Enablement Tutorial`).
 
 * Selecione Tipo **[!UICONTROL de]** conteúdo (selecione `all`).
 
