@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -224,15 +224,14 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
 >Este exemplo não segue essas práticas recomendadas:
 >
 >* Os nomes das regras de pontuação devem ser globalmente exclusivos; não devem terminar com o mesmo nome.
-   >  Um exemplo do que *não* fazer:
-   >  /libs/settings/community/scoring/rules/site1/forums-scoring
-   >  /libs/settings/community/scoring/rules/site2/forums-scoring
-   >
-   >
-* Criar imagens de crachá exclusivas para sites de AEM diferentes
-
 >
-
+>  
+Um exemplo do que *não* fazer:
+>
+>  /libs/settings/community/scoring/rules/site1/forums-scoring
+>  /libs/settings/community/scoring/rules/site2/forums-scoring
+>
+>* Criar imagens de crachá exclusivas para sites de AEM diferentes
 
 
 ### Acesse a Pontuação UGC {#access-scoring-ugc}
