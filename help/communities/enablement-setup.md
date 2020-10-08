@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 1%
@@ -47,7 +47,6 @@ Para AEM Communities,
 >[!NOTE]
 >
 >Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
-
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
@@ -123,7 +122,6 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 >
 >Em vez disso, mais tarde, eles serão [atribuídos ao grupo](enablement-create-site.md#assignuserstocommunityenablemembersgroup)de membros.
 
-
 ### Riley Taylor - Inscrito {#riley-taylor-enrollee}
 
 [Crie um membro](members.md#create-new-member) que será adicionado a um grupo de alunos - o grupo Classe de esqui da comunidade.
@@ -178,7 +176,6 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 >[!NOTE]
 >
 >Durante a criação do site da comunidade, os membros e grupos existentes podem ser adicionados ao grupo de membros do site da comunidade.
-
 
 ## Função de administrador da comunidade {#community-administrator-role}
 
