@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 2%
@@ -44,7 +44,6 @@ Para AEM Communities,
 >[!NOTE]
 >
 >Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
-
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
@@ -95,7 +94,7 @@ Crie um usuário no *autor*, ao qual seja atribuída a função de Administrador
    * Por exemplo, nome de usuário &#39;admin&#39; / senha &#39;admin&#39;
 
 * No console principal, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
-* No menu **Editar **, selecione**[!UICONTROL Adicionar usuário ]**
+* No menu **Editar** , selecione **[!UICONTROL Adicionar usuário]**
 
 * Na `Create New User` caixa de diálogo insira:
 
