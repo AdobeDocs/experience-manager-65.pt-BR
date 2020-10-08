@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 4%
@@ -53,7 +53,6 @@ Para ativar e modificar o recurso de mensagens, consulte:
 >[!NOTE]
 >
 >Não há suporte para adicionar `Compose Message, Message, or Message List` componentes (encontrados no grupo de `Communities`componentes) a uma página no modo de edição do autor.
-
 
 ## Configurar componentes de mensagens {#configure-messaging-components}
 
