@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Uma limitação conhecida expõe o conteúdo do site da comunidade a visitantes 
 
 Para proteger o conteúdo do site da sua comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json , siga estas etapas:
 
-1. Na instância do AEM Author, vá para https:// nome do host:port/editor.html/content/site/sitename.html.
+1. Na instância do autor de AEM, vá para https:// nome do host:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -86,14 +86,14 @@ No canto superior direito, selecione `Log in`e assine com o nome de usuário (aa
 
 Depois de fazer logon como membro da comunidade registrado, observe os seguintes itens de menu para clicar e explorar seu site da comunidade:
 
-* **A opção Perfil** permite que você visualização e edite seu perfil.
+* **A opção perfil** permite que você visualização e edite seu perfil.
 * [A opção Mensagens](/help/communities/configure-messaging.md) direciona você para a seção de mensagens diretas, onde você pode:
 
    1. Visualização as mensagens diretas recebidas (Caixa de entrada), enviadas (Itens enviados) e excluídas (Lixeira).
    1. Componha novas mensagens diretas para enviar a indivíduos e grupos.
 
 * [A opção Notificações](/help/communities/notifications.md) direciona você para a seção Notificações, onde você pode visualização seus eventos de interesse e editar configurações de notificação.
-* [A administração](/help/communities/published-site.md#moderationlink) o direciona para a Página de moderação de AEM Communities, se você tiver privilégios de moderação.
+* [A administração](/help/communities/published-site.md#moderationlink) direciona você para a Página de moderação do AEM Communities, se você tiver privilégios de moderação.
 
 ![administrador](assets/adminscreen.png)
 
@@ -107,9 +107,6 @@ Observe que a página Calendário é o home page porque o Modelo de site de refe
 >
 >* [Componentes](/help/communities/author-communities.md) das comunidades (para autores)
 >* [Componentes, funções e recursos básicos](/help/communities/essentials.md) (para desenvolvedores)
-
->
-
 
 
 ### Link do fórum {#forum-link}
