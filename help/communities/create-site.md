@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 2%
@@ -97,7 +97,6 @@ Marque todas as caixas de seleção para Gerenciamento de [usuários](/help/comm
 >
 >Para um ambiente de produção, é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte Logon [social com Facebook e Twitter](/help/communities/social-login.md).
 
-
 ![configurações do site da comunidade](assets/site-settings.png)
 
 #### TAGGING {#tagging}
@@ -126,7 +125,6 @@ Por exemplo,
 >
 >[O serviço](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) de túnel permite a seleção de membros e grupos existentes somente no ambiente publish.
 
-
 ![funções de usuário no novo site](assets/site-admin-1.png)
 
 #### MODERATION {#moderation}
@@ -137,7 +135,7 @@ Aceite as configurações globais padrão para [moderar](/help/communities/sites
 
 #### ANALYTICS {#analytics}
 
-Se a Adobe Analytics estiver licenciada e um serviço e uma estrutura em nuvem do Analytics tiverem sido configurados, será possível habilitar o Analytics e selecionar a estrutura.
+Se a Adobe Analytics estiver licenciada e um serviço e uma estrutura em nuvem do Analytics tiverem sido configurados, então será possível habilitar o Analytics e selecionar a estrutura.
 
 Consulte Configuração [do Analytics para recursos](/help/communities/analytics.md)de comunidades.
 
@@ -228,9 +226,6 @@ Observe que o UGC não está incluído no pacote do site.
 >1. Selecione **[!UICONTROL OK]**.
 >1. (Opcional) Selecione **[!UICONTROL Limpar]** ou **[!UICONTROL Forçar nova tentativa]** para redefinir a fila de replicação.
 
->
-
-
 
 ### Selecione Publicar {#select-publish}
 
@@ -318,7 +313,6 @@ Para começar:
 >
 >Para desativar, basta prefixar o valor da `sling:match` propriedade com um &quot;x&quot; - `xlocalhost.4503/$` - e **Salvar tudo**.
 
-
 ![etapas opcionais](assets/optional-steps.png)
 
 #### Solução de problemas: Erro ao salvar mapa {#troubleshooting-error-saving-map}
@@ -342,5 +336,3 @@ Após qualquer modificação, lembre-se de **Salvar** e **publicar** o site nova
 >[!NOTE]
 >
 >Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](/help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
-
-
