@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,6 @@ Sobreponha o sistema de comentários com uma versão personalizada copiando o n�
 >[!CAUTION]
 >
 >O conteúdo da pasta /libs nunca é editado porque qualquer reinstalação ou atualização pode excluir ou substituir a pasta /libs enquanto o conteúdo da pasta /apps é deixado inalterado.
-
 
 Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância do autor, comece criando um caminho na pasta /apps, que é idêntico ao caminho para os componentes sobrepostos na pasta /libs.
 
@@ -82,9 +81,6 @@ Alguns nós no caminho são pastas e alguns são componentes.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
->
-
 
 
 A própria sobreposição `Type`(propriedade `sling:resourceType`) deve ser uma referência automática relativa para que qualquer conteúdo não encontrado em /apps seja procurado em /libs.
