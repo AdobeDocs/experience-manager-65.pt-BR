@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 1%
@@ -52,7 +52,6 @@ Ao [criar um site](sites-console.md)da comunidade, o serviço de tradução padr
 >
 >Para um sistema de produção, é necessário um serviço de tradução licenciado. Se não estiver licenciado, o serviço de tradução padrão deve ser [desativado](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
-
 ## Tradução Global da UGC {#global-translation-of-ugc}
 
 Quando um site tem várias cópias [de](../../help/sites-administering/tc-prep.md)idioma, o serviço de tradução padrão não reconhece que o UGC inserido em um site pode estar relacionado ao UGC inserido em outro, como quando o UGC é, essencialmente, gerado pelo mesmo componente (a cópia de idioma da página que contém o componente).
@@ -70,7 +69,6 @@ Por exemplo, se um fórum foi estabelecido no site base, as cópias de idioma cr
 >Embora o UGC ainda esteja na loja [](working-with-srp.md)comum, ele está localizado na localização do UGC específico do idioma, enquanto o novo conteúdo, adicionado após a conversão global ter sido configurada, está sendo recuperado da localização do armazenamento compartilhado global.
 >
 >Não há ferramenta de migração para mover ou mesclar conteúdo específico de idioma na loja compartilhada global.
-
 
 ### Configuração da integração da tradução {#translation-integration-configuration}
 
@@ -146,7 +144,6 @@ O novo serviço em nuvem de integração de tradução precisará ser ativado pa
 >O idioma preferencial é a preferência de idioma definida no perfil do usuário, quando o visitante do site está conectado e especificou uma preferência de idioma.
 >
 >Quando o visitante do site é anônimo ou não especificou uma preferência de idioma em seu perfil, o idioma preferencial é o idioma base do modelo de página.
-
 
 ### Preferência do usuário {#user-preference}
 
