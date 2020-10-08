@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 1%
 
 ---
 
@@ -21,13 +24,13 @@ A partir do AEM Communities 6.1, uma abordagem única foi adotada para lidar com
 
 Essa abordagem é fundamentalmente diferente da forma como a plataforma AEM lida com o conteúdo do site, geralmente gerenciado pelo ambiente do autor.
 
-A plataforma AEM usa uma loja de nós que replica o conteúdo do site do autor para publicar, enquanto o AEM Communities usa uma única loja comum para UGC que nunca é replicada.
+A plataforma AEM usa uma loja de nós que replica o conteúdo do site do autor para a publicação, enquanto a AEM Communities usa uma única loja comum para UGC que nunca é replicada.
 
 Para a loja UGC comum, é necessário escolher um provedor de recursos de [armazenamento (SRP)](working-with-srp.md). As opções recomendadas são:
 
 * [DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional](dsrp.md)
 * [MSRP - Provedor de recursos do Armazenamento MongoDB](msrp.md)
-* [ASRP - Provedor de Recursos de Armazenamento da Adobe](asrp.md)
+* [ASRP - Provedor de Recursos de Armazenamento de Adobe](asrp.md)
 
 Outra opção SRP, [JSRP - Provedor](jsrp.md)de recursos do Armazenamento JCR, não oferece suporte a uma loja UGC comum para o autor e publicação de ambientes para ambos os acessos.
 
@@ -35,15 +38,14 @@ Exigir um armazenamento comum resulta nas seguintes topologias recomendadas.
 
 >[!NOTE]
 >
->Para o AEM Communities, o [UGC nunca é replicado](working-with-srp.md#ugc-never-replicated).
+>Para AEM Communities, o [UGC nunca é replicado](working-with-srp.md#ugc-never-replicated).
 >
->Quando a implantação não incluir uma loja [](working-with-srp.md)comum, o UGC estará visível somente na instância de publicação ou autor do AEM na qual foi inserido.
+>Quando a implantação não incluir uma loja [](working-with-srp.md)comum, o UGC estará visível somente na instância de publicação ou autor AEM na qual foi inserido.
 
 
 >[!NOTE]
 >
->Para obter mais informações sobre a plataforma AEM, consulte Implantações [](../../help/sites-deploying/recommended-deploys.md) recomendadas e [Introdução à plataforma](../../help/sites-deploying/data-store-config.md)AEM.
-
+>Para obter mais informações sobre a plataforma AEM, consulte [Implantações](../../help/sites-deploying/recommended-deploys.md) recomendadas e [Introdução à plataforma](../../help/sites-deploying/data-store-config.md)AEM.
 
 ## Para produção {#for-production}
 
@@ -70,16 +72,16 @@ Quando a topologia é um farm de publicação, os tópicos relevantes de import�
 
 ### Recomendado: DSRP, MSRP ou ASRP {#recommended-dsrp-msrp-or-asrp}
 
-| MicroKernel | CONTEÚDO DO LOCAL | CONTENTREPOSITÓRIO GERADO PELO USUÁRIO | PROVEDOR DE RECURSOS DO ARMAZENAMENTO | LOJA COMUM |
+| MicroKernel | CONTEÚDO DO LOCAL | CONTENTREPOSITÓRIO GERADO PELO USUÁRIO | PROVEDOR DE RECURSOS DO armazenamento | LOJA COMUM |
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | qualquer | JCR | MySQL | DSRP | Sim |
 | qualquer | JCR | MongoDB | MSRP | Sim |
-| qualquer | JCR | Armazenamento sob demanda da Adobe | ASRP | Sim |
+| qualquer | JCR | Adobe on-demand storage | ASRP | Sim |
 
 ### JSRP {#jsrp}
 
 
-| Implantação | CONTEÚDO DO LOCAL | CONTENTREPOSITÓRIO GERADO PELO USUÁRIO | PROVEDOR DE RECURSOS DO ARMAZENAMENTO | LOJA COMUM |
+| Implantação | CONTEÚDO DO LOCAL | CONTENTREPOSITÓRIO GERADO PELO USUÁRIO | PROVEDOR DE RECURSOS DO armazenamento | LOJA COMUM |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | Farm TarMK (padrão) | JCR | JCR | JSRP | Não |
 | Cluster Oak | JCR | JCR | JSRP | Sim somente para ambiente de publicação |
@@ -88,7 +90,7 @@ Quando a topologia é um farm de publicação, os tópicos relevantes de import�
 
 Para ambientes que não sejam de produção, o [JSRP](jsrp.md) oferece simplicidade na configuração de um ambiente de desenvolvimento com uma instância do autor e uma instância de publicação.
 
-Se você escolher [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) para produção, também será possível configurar um ambiente de desenvolvimento semelhante usando o armazenamento sob demanda da Adobe ou o MongoDB. Para ver um exemplo, consulte [Como configurar o MongoDB para demonstração](demo-mongo.md).
+Se você escolher [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) para produção, também será possível configurar um ambiente de desenvolvimento semelhante usando o armazenamento sob demanda Adobe ou MongoDB. Para ver um exemplo, consulte [Como configurar o MongoDB para demonstração](demo-mongo.md).
 
 ## Referências {#references}
 
@@ -108,6 +110,6 @@ Se você escolher [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) para produ
 
    Basicamente, o conteúdo do site é armazenado em um armazenamento de nós. Para Ativos, um armazenamento de dados pode ser configurado para armazenar dados binários. Para Comunidades, um armazenamento comum deve ser configurado para selecionar o SRP.
 
-* [Elementos de Armazenamento no AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementos do armazenamento no AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Descreve as implementações de armazenamento de dois nós: Tar e MongoDB.
