@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 2%
@@ -92,8 +92,8 @@ Consulte também:
 >[!NOTE]
 >
 >**Exemplos de nome da propriedade**
+>
 >Todos os nomes de propriedade mostrados, como **/0050** e **/0170**, devem ser ajustados para se ajustarem a um dispatcher existente.any arquivo de configuração.
-
 
 As seguintes entradas devem ser adicionadas ao final da seção /filter, especialmente depois de todas as entradas de negação.
 
