@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c0834e9b70266e8b678771510fb1756c8091ea8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -329,7 +329,6 @@ Para copiar o material principal do autor para todas as outras instâncias, é n
 >
 >Se outro recurso de segurança já tiver sido configurado com base nas chaves criptografadas, a replicação das chaves criptografadas poderá danificar a configuração. Para obter ajuda, [entre em contato com o Atendimento](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)ao cliente.
 
-
 #### Replicação do repositório {#repository-replication}
 
 Ter o material principal armazenado no repositório, como era o caso do AEM 6.2 e anterior, pode ser preservado especificando-se a seguinte propriedade do sistema na primeira inicialização de cada instância AEM (que cria o repositório inicial):
@@ -339,7 +338,6 @@ Ter o material principal armazenado no repositório, como era o caso do AEM 6.2 
 >[!NOTE]
 >
 >É importante verificar se o agente de [replicação do autor](#replication-agents-on-author) está configurado corretamente.
-
 
 Com o material principal armazenado no repositório, a maneira de replicar a chave de criptografia do autor para outras instâncias é a seguinte:
 
