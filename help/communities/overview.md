@@ -1,8 +1,8 @@
 ---
-title: Visão geral dos AEM Communities
-seo-title: Visão geral dos AEM Communities
-description: Uma visão geral dos recursos e da configuração dos AEM Communities
-seo-description: Uma visão geral dos recursos e da configuração dos AEM Communities
+title: Visão geral do AEM Communities
+seo-title: Visão geral do AEM Communities
+description: Uma visão geral dos recursos e da configuração do AEM Communities
+seo-description: Uma visão geral dos recursos e da configuração do AEM Communities
 uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 3%
@@ -19,15 +19,15 @@ ht-degree: 3%
 ---
 
 
-# Visão geral dos AEM Communities {#aem-communities-overview}
+# Visão geral do AEM Communities {#aem-communities-overview}
 
 O Adobe Experience Manager (AEM) Communities oferece a capacidade de criar rapidamente um site local da comunidade com o melhor desempenho, gerenciamento de site, e estimula a conversão de visitantes do site em membros de alto valor da Comunidade.
 
-Entre em contato com seu representante de conta para obter informações sobre o licenciamento de AEM Communities, além de licenças adicionais para recursos de ativação e Adobe Analytics.
+Entre em contato com seu representante de conta para obter informações sobre o licenciamento da AEM Communities, além de licenças adicionais para recursos de ativação e Adobe Analytics.
 
 ## Recursos das comunidades {#communities-features}
 
-O AEM Communities permite o desenvolvimento de uma relação com visitantes do site, que:
+A AEM Communities permite o desenvolvimento de uma relação com visitantes do site, que:
 
 * **Informa** por meio de blogs, P&amp;R e calendários de eventos,
 * Ao **obter insights** por meio de fóruns, comentários e outros conteúdos da comunidade, geralmente conhecidos como conteúdo gerado pelo usuário (UGC).
@@ -80,11 +80,11 @@ os membros veem eventos de relevância para eles e conteúdo gerado pelo usuári
    * Marca: carregamento opcional de uma imagem de banner para exibição em todas as páginas do site da comunidade
    * Menu de navegação: os links de navegação são fornecidos para os recursos incluídos no modelo de site da comunidade.
 
-Para experimentar a facilidade de criar rapidamente um novo site da comunidade, visite [Introdução aos AEM Communities](/help/communities/getting-started.md).
+Para experimentar a facilidade de criar rapidamente um novo site da comunidade, visite [Introdução ao AEM Communities](/help/communities/getting-started.md).
 
 ## Persistência do conteúdo da comunidade {#community-content-persistence}
 
-Para melhorar o desempenho e a sincronização do conteúdo da comunidade, o AEM Communities exige uma loja comum especificamente para o conteúdo gerado pelo usuário (UGC) compartilhado entre todas as instâncias de AEM (autor e publicação).
+Para melhorar o desempenho e a sincronização do conteúdo da comunidade, a AEM Communities exige uma loja comum especificamente para o conteúdo gerado pelo usuário (UGC) compartilhado entre todas as instâncias de AEM (autor e publicação).
 
 O conteúdo da comunidade é facilmente acessado por meio do SRP (armazenamento Resource Provider, provedor de recursos do ), que fornece uma camada para separar o acesso da topologia subjacente e oferece suporte a uma loja comum para UGC.
 
@@ -139,7 +139,7 @@ O console de ferramentas globais fornece acesso às seguintes ferramentas de Com
 
    * Crie e gerencie funções da comunidade.
 
-* [Console de configuração](/help/communities/tools.md#storageconfiguratonconsole) do Armazenamento
+* [Console de configuração](/help/communities/tools.md#storageconfiguratonconsole) do armazenamento
 
    * Selecione e configure a loja [](/help/communities/working-with-srp.md) comum do site.
 
@@ -157,7 +157,7 @@ Consulte o console [Modelos de](/help/communities/sites.md)site.
 
 ## Funções da comunidade {#community-functions}
 
-Os recursos esperados de uma experiência da comunidade são bem conhecidos. Com o AEM Communities, esses recursos estão disponíveis como blocos de construção, conhecidos como funções da comunidade.
+Os recursos esperados de uma experiência da comunidade são bem conhecidos. Com a AEM Communities, esses recursos estão disponíveis como blocos de construção, conhecidos como funções da comunidade.
 
 As funções da comunidade são normais AEM páginas incluem componentes conectados em conjunto em um recurso que é facilmente incorporado em um modelo de site da comunidade.
 
@@ -175,7 +175,7 @@ Consulte também:
 
 * [Console](/help/communities/groups.md) de grupos de sites para criar subcomunidades no ambiente do autor.
 * [Console](/help/communities/tools-groups.md) Modelos de grupo para criar a estrutura do site para grupos.
-* [Introdução aos AEM Communities](/help/communities/getting-started.md) para tutorial para criar rapidamente um site da comunidade, incluindo grupos aninhados.
+* [Introdução ao AEM Communities](/help/communities/getting-started.md) para tutorial para criar rapidamente um site da comunidade, incluindo grupos aninhados.
 
 ## Componentes da comunidade {#community-components}
 
@@ -205,9 +205,9 @@ Os recursos de uma comunidade de envolvimento podem incluir:
 * Moderação
 * Notificações
 * Pontuação e emblemas
-* relatórios Analytics
+* Relatórios do Analytics
 
-Para experimentar a facilidade de criar rapidamente uma nova comunidade de envolvimento, visite [Introdução aos AEM Communities](/help/communities/getting-started.md).
+Para experimentar a facilidade de criar rapidamente uma nova comunidade de envolvimento, visite [Introdução à AEM Communities](/help/communities/getting-started.md).
 
 ### Comunidade de ativação {#enablement-community}
 
@@ -224,7 +224,7 @@ Os recursos de uma comunidade de ativação podem incluir:
 
 Uma comunidade de ativação pode ser criada quando o complemento [Ativação é configurado](/help/communities/enablement.md), o que requer licenciamento adicional para uso em um ambiente de produção. Um site de comunidade de ativação incluirá a função [de](#community-functions)atribuições.
 
-Para experimentar a facilidade de criar uma nova comunidade de ativação, visite [Introdução aos AEM Communities de Ativação](/help/communities/getting-started-enablement.md).
+Para experimentar a facilidade de criar uma nova comunidade de ativação, visite [Introdução à AEM Communities para Ativação](/help/communities/getting-started-enablement.md).
 
 ## Máquina de demonstração AEM {#aem-demo-machine}
 
@@ -244,7 +244,6 @@ A máquina de demonstração AEM requer uma licença AEM válida.
 >[!NOTE]
 >
 >Visualização uma introdução [de](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) vídeo à máquina de demonstração AEM (13:26).
-
 
 ## Documentação do AEM Communities {#aem-communities-documentation}
 
