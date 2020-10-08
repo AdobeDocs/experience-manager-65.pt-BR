@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '4162'
+source-wordcount: '4148'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![integração de dados](do-not-localize/data-integeration.png)
 
-O editor de modelo de dados de formulário fornece uma interface de usuário intuitiva e ferramentas para editar e configurar um modelo de dados de formulário. Usando o editor, você pode adicionar e configurar objetos, propriedades e serviços do modelo de dados de fontes de dados associadas no modelo de dados de formulário. Além disso, permite criar objetos e propriedades de modelo de dados sem fontes de dados e vinculá-los posteriormente aos respectivos objetos e propriedades de modelo de dados. Você também pode gerar e editar dados de amostra para propriedades de objetos de modelo de dados que podem ser usados para preencher previamente formulários adaptáveis e comunicações interativas ao visualizar. É possível testar objetos e serviços de modelo de dados configurados em um modelo de dados de formulário para garantir que eles sejam integrados corretamente às fontes de dados.
+O editor de modelo de dados de formulário fornece uma interface de usuário intuitiva e ferramentas para editar e configurar um modelo de dados de formulário. Usando o editor, é possível adicionar e configurar objetos, propriedades e serviços do modelo de dados de fontes de dados associadas no modelo de dados de formulário. Além disso, permite criar objetos e propriedades de modelo de dados sem fontes de dados e vinculá-los posteriormente aos respectivos objetos e propriedades de modelo de dados. Você também pode gerar e editar dados de amostra para propriedades de objetos de modelo de dados que podem ser usados para preencher previamente formulários adaptáveis e comunicações interativas ao visualizar. É possível testar objetos e serviços de modelo de dados configurados em um modelo de dados de formulário para garantir que eles sejam integrados corretamente às fontes de dados.
 
 Se você for novo na integração de dados da Forms e não tiver configurado uma fonte de dados ou criado um modelo de dados de formulário, consulte os seguintes tópicos:
 
@@ -200,9 +200,9 @@ Use o atributo request para recuperar as propriedades associadas da fonte de dad
    >[!NOTE]
    >
    > * Se você usar um modelo estático, sobreponha head.jsp em:
-/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Se você usar um modelo editável, sobreponha aftemplatedpage.jsp em:
-/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Defina [!DNL paramMap] para o atributo de solicitação. Por exemplo, inclua o seguinte código no arquivo .jsp na pasta apps:
