@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Quando a AEM Communities está configurada para usar o MSRP como sua loja comum,
 
 Consulte também [Características das opções](working-with-srp.md#characteristics-of-srp-options) de SRP e das topologias [](topologies.md)recomendadas.
 
-## Introdução {#requirements}
+## Requisitos {#requirements}
 
 * [MongoDB](https://www.mongodb.org/):
 
@@ -103,7 +103,6 @@ Deixe em branco se estiver sendo executado no modo SolrCloud.
 >[!NOTE]
 >
 >O banco de dados mongoDB, que padroniza o nome `communities`, não deve ser definido como o nome de um banco de dados que está sendo usado para armazenamentos de [nó ou armazenamentos](../../help/sites-deploying/data-store-config.md)de dados (binários). Consulte também Elementos para [Armazenamentos no AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
-
 
 ### Conjunto de Réplicas MongoDB {#mongodb-replica-set}
 
@@ -206,7 +205,6 @@ cURL -u *logon* -d *data* *reindex-url*
 >[!NOTE]
 >
 >Se você estiver [reindexando o DSRP Solr](dsrp.md), o URL será **/services/social/datastore/rdb/reindex**
-
 
 ### Exemplo de reindexação de MSRP {#msrp-reindex-example}
 
