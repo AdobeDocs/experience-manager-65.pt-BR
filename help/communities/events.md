@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 4%
@@ -34,7 +34,7 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | Membro cria um evento de calendário |
+| POST | Membro cria um evento de calendário |
 | ADICIONAR | Comentários do membro sobre um evento de calendário |
 | ATUALIZAR | O evento do calendário ou comentário do membro é editado |
 | EXCLUIR | O evento do calendário ou comentário do membro é excluído |
@@ -43,7 +43,7 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | Membro cria um comentário |
+| POST | Membro cria um comentário |
 | ADICIONAR | Membro responde às observações |
 | ATUALIZAR | O comentário do membro é editado |
 | EXCLUIR | O comentário do deputado é suprimido |
@@ -52,7 +52,7 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | Membro cria uma pasta |
+| POST | Membro cria uma pasta |
 | ANEXAR | O membro carrega um arquivo |
 | ATUALIZAR | O membro atualiza uma pasta ou um arquivo |
 | EXCLUIR | O membro exclui uma pasta ou arquivo |
@@ -61,16 +61,16 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | Membro cria tópico do fórum |
+| POST | Membro cria tópico do fórum |
 | ADICIONAR | Respostas dos membros ao tópico do fórum |
 | ATUALIZAR | O tópico do fórum do membro ou a resposta é editada |
 | EXCLUIR | O tópico ou a resposta do membro do fórum é excluído |
 
-[Componente](blog-developer-basics.md)de JournalSocialEvent `topic`= com/adobe/cq/social/journal
+[Componente](blog-developer-basics.md)de journalSocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | Membro cria um artigo de blog |
+| POST | Membro cria um artigo de blog |
 | ADICIONAR | Membro comenta em um artigo de blog |
 | ATUALIZAR | O artigo ou comentário do membro do blog é editado |
 | EXCLUIR | O artigo ou comentário do membro do blog é excluído |
@@ -79,7 +79,7 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | Membro cria uma pergunta QnA |
+| POST | Membro cria uma pergunta QnA |
 | ADICIONAR | Membro cria uma resposta QnA |
 | ATUALIZAR | A pergunta ou resposta do membro é editada |
 | SELECIONAR | A resposta do membro é selecionada |
@@ -90,7 +90,7 @@ Para os componentes Comunidades entregues na versão, as tabelas a seguir descre
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | Membro cria revisão |
+| POST | Membro cria revisão |
 | ATUALIZAR | A revisão do membro é editada |
 | EXCLUIR | A revisão do membro é suprimida |
 
@@ -128,7 +128,6 @@ O evento personalizado substituiria o método para `getVerb()` que um apropriado
 >[!NOTE]
 >
 >Certifique-se de que uma extensão personalizada esteja registrada com uma classificação inferior a qualquer implementação existente no produto.
-
 
 ### Pseudo-código para o Evento de componente personalizado {#pseudo-code-for-custom-component-event}
 
@@ -235,7 +234,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 É possível ouvir eventos com o objetivo de modificar o que aparece no fluxo de atividades.
 
-A amostra de pseudo código a seguir removerá DELETE eventos para o componente Comentários do fluxo de atividades.
+A amostra de pseudo-código a seguir removerá eventos de DELETE para o componente Comentários do fluxo de atividades.
 
 ### Pseudo-código para EventListener {#pseudo-code-for-eventlistener}
 
