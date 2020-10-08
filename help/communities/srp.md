@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -33,7 +33,6 @@ Todos os componentes do SCF são implementados usando a API SRP, permitindo que 
 >[!NOTE]
 >
 >**Componentes** personalizados: Para clientes licenciados da AEM Communities, a API SRP está disponível para desenvolvedores de componentes personalizados com o objetivo de acessar o UGC sem considerar a topologia subjacente. Consulte [SRP e UGC Essentials](srp-and-ugc.md).
-
 
 Consulte também:
 
@@ -68,7 +67,6 @@ Quando o UGC é salvo no armazenamento compartilhado, há uma única instância 
 >Consulte [SRP e UGC Essentials](srp-and-ugc.md) para obter exemplos de código e detalhes adicionais.
 >
 >Consulte [Acessar o UGC com SRP](accessing-ugc-with-srp.md) para obter as práticas recomendadas na codificação.
-
 
 ### ASRP {#asrp}
 
@@ -130,7 +128,6 @@ Os nós de sombra fornecem um local endereçável Sling no repositório.
 >[!CAUTION]
 >
 >Como o nó de sombra tem vários usos, a presença de um nó de sombra *não* implica que o componente seja um NER.
-
 
 ### Localização do armazenamento {#storage-location}
 
