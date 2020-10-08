@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
-source-git-commit: e84c9a99ce9ec0447a5fb3e0ca5ba76b41c888cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 7%
@@ -128,7 +128,7 @@ Carregar um recurso. Se um recurso de vídeo fizer upload de uma imagem personal
 
 Criação bem-sucedida do Recurso retorna ao console Recursos com o Recurso recém-criado selecionado. Desse console, é possível publicar, adicionar alunos e alterar outras configurações.
 
-Para carregar uma nova versão do recurso de ativação, é recomendável criar um novo Recurso e, em seguida, cancelar a inscrição dos membros da versão antiga e inscrevê-los na nova versão.
+Para carregar uma nova versão do recurso de ativação, é recomendável criar um novo Recurso e, em seguida, cancelar a inscrição de membros da versão antiga e inscrevê-los na nova versão.
 
 ### Publicar o recurso {#publish-the-resource}
 
@@ -198,7 +198,6 @@ No painel Adicionar recursos:
 >[!NOTE]
 >
 >Você só pode selecionar os recursos disponíveis no mesmo nível do caminho de aprendizado. Por exemplo, para um caminho de aprendizado criado em um grupo, somente os recursos de nível de grupo estão disponíveis; para um caminho de aprendizado criado em um site da comunidade, os recursos desse site estão disponíveis para adição ao caminho de aprendizado.
-
 
 * Selecione **[!UICONTROL Enviar]**.
 
