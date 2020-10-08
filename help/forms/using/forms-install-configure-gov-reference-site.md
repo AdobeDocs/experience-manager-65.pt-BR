@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4742'
 ht-degree: 1%
@@ -788,10 +788,10 @@ Para configurá-los para serem ativados no Fluxo de trabalho, os usuários preci
 
 1. Abra a definição do serviço e permita que os serviços selecionados sejam chamados dentro do fluxo de trabalho.
 
->[!NOTE]
-Como um usuário ativa o serviço na página do Configuration Manager, os usuários ainda precisam configurar uma configuração de serviço para se comunicar com os serviços externos solicitados.
+   >[!NOTE]
+   Como um usuário ativa o serviço na página do Configuration Manager, os usuários ainda precisam configurar uma configuração de serviço para se comunicar com os serviços externos solicitados.
 
-![nós governamos o pacote de formulários](assets/aftia-configuration-options.jpg)
+   ![nós governamos o pacote de formulários](assets/aftia-configuration-options.jpg)
 
 1. Depois de concluído, clique no botão Salvar para salvar as configurações.
 
