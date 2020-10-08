@@ -1,8 +1,8 @@
 ---
 title: Pontuação das comunidades e emblemas
 seo-title: Pontuação das comunidades e emblemas
-description: A pontuação de AEM Communities e os emblemas permitem identificar e recompensar os membros da comunidade
-seo-description: A pontuação de AEM Communities e os emblemas permitem identificar e recompensar os membros da comunidade
+description: A pontuação e os emblemas do AEM Communities permitem identificar e recompensar os membros da comunidade
+seo-description: A pontuação e os emblemas do AEM Communities permitem identificar e recompensar os membros da comunidade
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2884'
 ht-degree: 2%
 
 ---
@@ -24,13 +24,14 @@ ht-degree: 2%
 
 ## Visão geral {#overview}
 
-O recurso de pontuação de AEM Communities e emblemas fornece a capacidade de identificar e recompensar membros da comunidade.
+O recurso de pontuação e emblemas do AEM Communities oferece a capacidade de identificar e recompensar membros da comunidade.
 
 Os principais aspectos da pontuação e dos emblemas são:
 
 * [Atribua emblemas](#assign-and-revoke-badges) para identificar a função de um membro na comunidade.
 
 * [Atribuição básica de emblemas](#enable-scoring) aos membros para incentivar sua participação (quantidade de conteúdo criado).
+
 * [Atribuição avançada de emblemas](/help/communities/advanced.md) para identificar membros como especialistas (qualidade do conteúdo criado).
 
 **Observe** que a atribuição de emblemas [não está ativada por padrão](/help/communities/implementing-scoring.md#main-pars-text-237875536).
@@ -38,7 +39,6 @@ Os principais aspectos da pontuação e dos emblemas são:
 >[!CAUTION]
 >
 >A estrutura de implementação visível no CRXDE Lite está sujeita a alterações assim que a interface do usuário estiver disponível.
-
 
 ## Selos {#badges}
 
@@ -76,7 +76,7 @@ Na versão estão incluídos três emblemas baseados em função:
 
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+   ![crachás atribuídos](assets/assigned-badges.png)
 
 ### Crachás recompensados {#awarded-badges}
 
@@ -101,14 +101,13 @@ Na versão estão incluídos três cartões baseados em recompensa:
 
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+   ![crachás concedidos](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >As regras de pontuação podem ser configuradas para atribuir pontos negativos para postagens sinalizadas como inadequadas e, portanto, afetar o valor da pontuação. No entanto, uma vez obtido um crachá, ele não será removido automaticamente devido à redução do ponto de pontuação ou a alterações na regra de pontuação.
 >
 >Os emblemas atribuídos podem ser revogados da mesma forma que os emblemas atribuídos. Consulte a seção [Atribuir e Revogar emblemas](#assign-and-revoke-badges) . As melhorias futuras incluirão uma interface do usuário para gerenciar os emblemas dos membros.
-
 
 ### Caracteres personalizados {#custom-badges}
 
@@ -140,13 +139,12 @@ Se o nó for do tipo `cq:Page` (recomendado), então, usando CRXDE|Lite, adicion
 
 | **Propriedade** | **Tipo** | **Descrição** |
 |---|---|---|
-| badgingRules | Sequência de caracteres[] | uma lista de matriz de regras de [marcação](#badging-rules) |
-| regras de pontuação | Sequência de caracteres[] | uma lista de matriz de regras de [pontuação](#scoring-rules) |
+| badgingRules | Sequência de caracteres | uma lista de matriz de regras de [marcação](#badging-rules) |
+| regras de pontuação | Sequência de caracteres | uma lista de matriz de regras de [pontuação](#scoring-rules) |
 
 >[!NOTE]
 >
 >Se uma regra de pontuação parecer não ter efeito na atribuição de emblemas, verifique se a regra de pontuação não foi bloqueada pela propriedade scoringRules da regra de classificação. Consulte a seção [Regras](#badging-rules)de identificação.
-
 
 ### Ativar emblemas para o componente {#enable-badges-for-component}
 
@@ -156,12 +154,11 @@ Uma propriedade booleana `allowBadges`, ativa/desativa a exibição de emblemas 
 
 #### Exemplo: allowBadges para a instância do componente Fórum {#example-allowbadges-for-forum-component-instance}
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![enable-badges-component](assets/enable-badges-component.png)
 
 >[!NOTE]
 >
 >Qualquer componente pode ser sobreposto para exibir emblemas usando o código HBS encontrado em fóruns, QnA e comentários como exemplo.
-
 
 ## Regras de Pontuação {#scoring-rules}
 
@@ -191,9 +188,9 @@ As pontuações são armazenadas no SRP.
 >Os nomes das regras de pontuação devem ser globalmente exclusivos; não devem terminar com o mesmo nome.
 >
 >Um exemplo do que *não* fazer:
+>
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
-
 
 ### Sub-regras de Pontuação {#scoring-sub-rules}
 
@@ -205,7 +202,7 @@ Cada subregra de pontuação identifica:
 * Que função comunitária específica está envolvida?
 * Quantos pontos são atribuídos?
 
-Por padrão, os pontos são concedidos ao membro que está tomando a ação, a menos que a subregra especifique o proprietário do conteúdo como recebendo os pontos ( `forOwner`).
+Por padrão, os pontos são concedidos ao membro que realiza a ação, a menos que a subregra especifique o proprietário do conteúdo como recebendo os pontos ( `forOwner`).
 
 Cada subregra pode ser incluída em uma ou mais regras de pontuação.
 
@@ -239,7 +236,7 @@ Subregras são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó q
   </tr>
   <tr>
    <td><code>topics</code></td>
-   <td>Sequência de caracteres[]</td>
+   <td>Sequência de caracteres</td>
    <td>
     <ul>
      <li>facultativo; restringe a sub-regra aos componentes da comunidade identificados pelos tópicos do evento</li>
@@ -310,8 +307,8 @@ Quaisquer alterações ou adições feitas às regras ou sub-regras de pontuaç�
 
 As regras de marcação vinculam as regras de pontuação aos símbolos especificando:
 
-* Regra de pontuação.
-* A pontuação necessária para receber um crachá específico.
+* Regra de pontuação
+* Pontuação necessária para receber um crachá específico
 
 As regras de marcação são nós do tipo `cq:Page` com propriedades em seu `jcr:content` nó que correlacionam as regras de pontuação com pontuações e emblemas.
 
@@ -335,10 +332,9 @@ A `scoringRules` propriedade em uma regra de identificação simplesmente restri
 
 >[!NOTE]
 >
->Melhores práticas : crie imagens de crachá exclusivas para cada site do AEM.
+>Melhores práticas : crie imagens de emblema exclusivas para cada site AEM.
 
-
-![chlimage_1-101](assets/chlimage_1-101.png)
+![badging-rule-configuration](assets/badging-rule-configuration.png)
 
 <table>
  <tbody>
@@ -349,7 +345,7 @@ A `scoringRules` propriedade em uma regra de identificação simplesmente restri
   </tr>
   <tr>
    <td>limiares</td>
-   <td>Sequência de caracteres[]</td>
+   <td>Sequência de caracteres</td>
    <td><em>(obrigatório)</em> Uma string de vários valores do formulário 'number|path'
     <ul>
      <li>número = pontuação</li>
@@ -364,7 +360,7 @@ A `scoringRules` propriedade em uma regra de identificação simplesmente restri
   </tr>
   <tr>
    <td>regras de pontuação</td>
-   <td>Sequência de caracteres[]</td>
+   <td>Sequência de caracteres</td>
    <td>(<em>opcional</em>) Uma string de vários valores para restringir a regra de identificação aos eventos de pontuação identificados pelas regras de pontuação</td>
   </tr>
  </tbody>
@@ -374,9 +370,9 @@ A `scoringRules` propriedade em uma regra de identificação simplesmente restri
 
 Na versão estão incluídas duas Regras de marcação que correspondem às Regras [de pontuação de](#includedscoringrules)Fóruns e Comentários.
 
-* /libs/settings/community/badging/rules/comments-badging
+* `/libs/settings/community/badging/rules/comments-badging`
 
-* /libs/settings/community/badging/rules/forums-badging
+* `/libs/settings/community/badging/rules/forums-badging`
 
 **Notas:**
 
@@ -416,9 +412,6 @@ cURL -i -X POST -H *header* -u *login* -F *operação* -F *emblema* *membro-perf
 >* Pode consultar uma instância do autor se o Serviço [de](/help/communities/users.md#tunnel-service) Túnel estiver ativado.
 >* Pode ser um nome obscuro e aleatório - consulte Lista de verificação [de](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) segurança com relação à ID autorizada.
 
->
-
-
 
 ### Exemplos: {#examples}
 
@@ -454,79 +447,78 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem o `v
 >
 >Uma nova propriedade booleana `allowBadges`, ativa/desativa a exibição de emblemas para uma instância do componente. Ele será configurável em caixas de diálogo [de edição de](/help/communities/author-communities.md) componentes atualizadas por meio de uma caixa de seleção rotulada **Exibir emblemas**.
 
-
-**[Componente](/help/communities/calendar.md)**de calendárioSocialEvent`topic`= com/adobe/cq/social/calendário
+**[Componente](/help/communities/calendar.md)** de calendárioSocialEvent `topic`= com/adobe/cq/social/calendário
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um evento de calendário |
+| POST | membro cria um evento de calendário |
 | ADICIONAR | comentários do membro em um evento de calendário |
 | ATUALIZAR | o evento do calendário ou comentário do membro é editado |
 | EXCLUIR | o evento ou comentário do calendário do membro é excluído |
 
-**[Componente Comentários](/help/communities/comments.md)**SocialEvent`topic`= com/adobe/cq/social/comment
+**[Componente Comentários](/help/communities/comments.md)** SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um comentário |
+| POST | membro cria um comentário |
 | ADICIONAR | membro responde ao comentário |
 | ATUALIZAR | o comentário do membro é editado |
 | EXCLUIR | o comentário do membro é excluído |
 
-**[Componente](/help/communities/file-library.md)**da biblioteca de arquivosSocialEvent`topic`= com/adobe/cq/social/fileLibrary
+**[Componente](/help/communities/file-library.md)** da biblioteca de arquivosSocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria uma pasta |
+| POST | membro cria uma pasta |
 | ANEXAR | membro carrega um arquivo |
 | ATUALIZAR | membro atualiza uma pasta ou arquivo |
 | EXCLUIR | membro exclui uma pasta ou arquivo |
 
-**[Componente](/help/communities/forum.md)**de fórumSocialEvent`topic`= com/adobe/cq/social/fórum
+**[Componente](/help/communities/forum.md)** de fórumSocialEvent `topic`= com/adobe/cq/social/fórum
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria tópico do fórum |
+| POST | membro cria tópico do fórum |
 | ADICIONAR | respostas do membro ao tópico do fórum |
 | ATUALIZAR | o tópico do fórum do membro ou a resposta é editada |
 | EXCLUIR | o tópico do fórum do membro ou a resposta é excluída |
 
-**[Componente](/help/communities/blog-feature.md)**de JournalSocialEvent`topic`= com/adobe/cq/social/journal
+**[Componente](/help/communities/blog-feature.md)** de journalSocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria um artigo de blog |
+| POST | membro cria um artigo de blog |
 | ADICIONAR | membro comenta em um artigo de blog |
 | ATUALIZAR | artigo ou comentário do membro do blog é editado |
 | EXCLUIR | artigo ou comentário do membro do blog é excluído |
 
-**[Componente QnA](/help/communities/working-with-qna.md)**SocialEvent`topic`= com/adobe/cq/social/qna
+**[Componente QnA](/help/communities/working-with-qna.md)** SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria uma pergunta QnA |
+| POST | membro cria uma pergunta QnA |
 | ADICIONAR | membro cria uma resposta QnA |
 | ATUALIZAR | pergunta ou resposta QnA do membro é editada |
 | SELECIONAR | a resposta do membro é selecionada |
 | CANCELAR SELEÇÃO | a resposta do membro é desmarcada |
 | EXCLUIR | pergunta ou resposta do membro é excluída |
 
-**[Revisa o componente](/help/communities/reviews.md)**SocialEvent`topic`= com/adobe/cq/social/review
+**[Revisa o componente](/help/communities/reviews.md)** SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POSTAGEM | membro cria revisão |
+| POST | membro cria revisão |
 | ATUALIZAR | a revisão do membro é editada |
 | EXCLUIR | a revisão do membro é excluída |
 
-**[Componente de classificação](/help/communities/rating.md)**SocialEvent`topic`= com/adobe/cq/social/tally/rating
+**[Componente de classificação](/help/communities/rating.md)** SocialEvent `topic`= com/adobe/cq/social/tally/rating
 
 | **Verbo** | **Descrição** |
 |---|---|
 | ADICIONAR CLASSIFICAÇÃO | o conteúdo do membro foi avaliado |
 | REMOVER CLASSIFICAÇÃO | o conteúdo do membro foi reduzido |
 
-**[Componente](/help/communities/voting.md)**de votaçãoSocialEvent`topic`= com/adobe/cq/social/tally/vote
+**[Componente](/help/communities/voting.md)** de votaçãoSocialEvent `topic`= com/adobe/cq/social/tally/vote
 
 | **Verbo** | **Descrição** |
 |---|---|
@@ -550,7 +542,7 @@ Para um componente personalizado, um SocialEvent é instanciado para registrar o
 
 Para suportar a pontuação, o SocialEvent precisaria sobrescrever o método para `getVerb()` que um apropriado `verb` fosse retornado para cada `action`. A ação `verb` retornada pode ser uma ação comumente usada (como `POST`) ou uma especializada para o componente (como `ADD RATING`). Existe uma relação *n-1* entre `actions` e `verbs`.
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 ### Os símbolos não aparecem {#badges-are-not-appearing}
 
@@ -574,7 +566,7 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
 
 É possível tentar marcar e marcar rapidamente usando o site Tutorial [de](/help/communities/getting-started.md) introdução (engajar):
 
-* Acesse o CRXDE Lite no autor.
+* Acesse CRXDE Lite no autor.
 * Navegue até a página base:
 
    * /content/sites/contact/en/jcr:content
@@ -603,11 +595,11 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
 
 * Selecione **Salvar tudo**.
 
-![chlimage_1-102](assets/chlimage_1-102.png)
+![marcação de teste](assets/test-scoring-badging.png)
 
 Em seguida, verifique se os componentes do fórum e dos comentários permitem a exibição de emblemas:
 
-* Novamente usando o CRXDE Lite.
+* Mais uma vez usando o CRXDE Lite.
 * Navegue até o componente do fórum
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -618,7 +610,7 @@ Em seguida, verifique se os componentes do fórum e dos comentários permitem a 
    * **Tipo**: `Boolean`
    * **Valor**: `true`
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![test-forum-component](assets/test-forum-component.png)
 
 Em seguida, [republique](/help/communities/sites-console.md#publishing-the-site) o site da comunidade.
 
