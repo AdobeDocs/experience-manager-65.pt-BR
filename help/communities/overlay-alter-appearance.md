@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -62,14 +62,13 @@ Encaminhe o componente de comentários sobrepostos para a instância de publica�
 >
 >Uma forma mais robusta de replicação seria criar um pacote no Package Manager e [ativá](/help/sites-administering/package-manager.md#replicating-packages) -lo. Um pacote pode ser exportado e arquivado.
 
-
 Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]** e clique em **[!UICONTROL Ativar árvore]**.
 
 Para Caminho do Start, digite `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
-### Resultados da Visualização {#view-results}
+### Resultados da visualização {#view-results}
 
 Se você fizer logon na instância de publicação como administrador, por exemplo, https://localhost:4503/crx/de como administrador/administrador, poderá verificar se os componentes sobrepostos estão lá.
 
