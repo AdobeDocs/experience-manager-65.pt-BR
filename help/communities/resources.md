@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 5%
@@ -35,12 +35,9 @@ Para obter detalhes, consulte [Configuração de habilitação](enablement.md).
 >
 >Se o SCORM for instalado após a criação do site da comunidade, todos os recursos de ativação presentes antes da instalação do SCORM devem ser recriados.
 
-
-
 >[!NOTE]
 >
 >Com o lançamento do [AEM 6.3](deploy-communities.md#latestfeaturepack) e os pacotes de recursos equivalentes Comunidades [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) e [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), o recurso de ativação não requer mais um banco de dados [](mysql.md)MySQL.
-
 
 ## Terminologia {#terminology}
 
@@ -251,7 +248,6 @@ Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de es
 >
 >Se um membro estiver inscrito em um recurso e em um caminho de aprendizado que faça referência a esse recurso, suas atribuições mostrarão o recurso único e o recurso no caminho de aprendizado.
 
-
 * **[!UICONTROL Configurações sociais]**
 
    Essas configurações controlam se os alunos podem ou não fornecer informações sobre o recurso de ativação. As configurações [de](sites-console.md#moderation) moderação são as do site da comunidade pai.
@@ -389,7 +385,6 @@ Para os recursos de ativação incluídos em um caminho de aprendizado, as atrib
 >
 >Você só pode selecionar os recursos disponíveis no mesmo nível do caminho de aprendizado. Por exemplo, para um caminho de aprendizado criado em um grupo, somente os recursos de nível de grupo estão disponíveis; para um caminho de aprendizado criado em um site da comunidade, os recursos desse site estão disponíveis para adição ao caminho de aprendizado.
 
-
 * Selecione **[!UICONTROL Próximo]**.
 
 ### Configurações {#settings-1}
@@ -411,7 +406,6 @@ Para os recursos de ativação incluídos em um caminho de aprendizado, as atrib
 >Os recursos de habilitação referenciados no caminho de aprendizado não devem lista os mesmos Designados (alunos), se houver.
 >
 >Se um membro estiver inscrito em um recurso de ativação e em um caminho de aprendizado que faça referência a esse recurso, suas atribuições mostrarão o recurso único e o recurso no caminho de aprendizado.
-
 
 ## Gerenciamento de um recurso {#managing-a-resource}
 
@@ -549,7 +543,7 @@ Para um Relatório de Recursos de caminho de aprendizado, o Resumo do Relatório
    * Publicar status
    * Número de visualizações
    * Número de reproduções
-   * Classificação média
+   * Average rating
    * Formato
    * Tamanho
    * Nome do site da comunidade
