@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -120,4 +120,4 @@ O diretório /etc/designs contém as imagens, scripts e folhas de estilo que ser
 
 O diretório /content no repositório é onde o conteúdo do site reside. Os caminhos em /content compreendem os caminhos do URL para as solicitações do navegador.
 
-*Depois* que o modelo [de](initial-app.md#createthepagetemplate) página é criado como parte do aplicativo inicial, o conteúdo da página inicial pode ser criado com base no modelo.... [**execute **](initial-app.md)
+*Depois* que o modelo [de](initial-app.md#createthepagetemplate) página é criado como parte do aplicativo inicial, o conteúdo da página inicial pode ser criado com base no modelo.... [**execute**](initial-app.md)
