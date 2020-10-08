@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
@@ -33,10 +33,9 @@ No momento em que uma ação é executada para criar um novo grupo da comunidade
 >
 >Os consoles para a criação de sites [da](/help/communities/sites-console.md)comunidade, modelos [de site da](/help/communities/sites.md)comunidade, modelos [de grupos da](/help/communities/tools-groups.md) comunidade e funções [da](/help/communities/functions.md) comunidade são para uso somente no ambiente do autor.
 
-
 ## Console de modelos de grupo {#group-templates-console}
 
-Para acessar o console de modelos de grupos no ambiente AEM Author:
+Para acessar o console de modelos de grupos no ambiente de autor de AEM:
 
 * Selecionar **ferramentas | Comunidades | Modelos de grupo,** da navegação global.
 
@@ -78,12 +77,11 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
 >[!CAUTION]
 >
->Se estiver trabalhando com o AEM 6.1 Communities FP4 ou anterior, não adicione uma função de grupo a um modelo de grupo.
+>Se estiver trabalhando com AEM 6.1 Communities FP4 ou anterior, não adicione uma função de grupos a um modelo de grupo.
 >
 >O recurso de grupos aninhados está disponível a partir do [FP1](/help/communities/communities.md#latestfeaturepack)das Comunidades.
 >
 >Ainda não é permitido adicionar uma função de Grupos como a primeira função ou somente função em um modelo.
-
 
 ![Editor de modelos de grupo](assets/template-editor.png)
 
