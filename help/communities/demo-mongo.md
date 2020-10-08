@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -74,7 +74,6 @@ Isso start um servidor MongoDB usando a porta padrão 27017.
 >
 >Se o MongoDB for iniciado *após* AEM, **reinicie** todas as instâncias **AEM** para que elas se conectem corretamente ao MongoDB.
 
-
 ### Opção de produção de demonstração: Configurar Conjunto de Réplicas MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
 Os comandos a seguir são um exemplo de como configurar um conjunto de réplicas com 3 nós em localhost:
@@ -133,7 +132,6 @@ Isso start um servidor HTTP Solr usando a porta padrão 8983. Você pode navegar
 >
 >Se o Solr Console não estiver disponível, verifique os registros em &lt;solrinstall>/example/logs. Verifique se o SOLR está tentando se ligar a um nome de host específico que não pode ser resolvido (por exemplo, &quot;user-macbook-pro&quot;).
 Em caso positivo, atualize o arquivo etc/hosts com uma nova entrada para esse nome de host (por exemplo, 127.0.0.1 user-macbook-pro) e o Solr será start corretamente.
-
 
 ### SolrCloud {#solrcloud}
 
