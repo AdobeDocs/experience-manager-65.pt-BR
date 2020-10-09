@@ -3,9 +3,9 @@ title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Mana
 description: Saiba mais sobre os tipos de metadados e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] como tornar possível organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 ### Metadados específicos para impressão {#print-specific-metadata}
 
 * PDF e PDF/X - Adobe PDF e aplicativos de terceiros.
-* PRISM - Requisitos de [publicação para metadados](https://www.prismstandard.org)padrão do setor.
+* PRISM - Requisitos de [publicação para metadados](https://www.idealliance.org/prism-metadata/)padrão do setor.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadados para texto paginado.
 
@@ -228,7 +228,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - Gerenciamento de mídia.
 
-## workflows orientados por metadados {#metadata-driven-workflows}
+## Workflows orientados por metadados {#metadata-driven-workflows}
 
 A criação de workflows orientados por metadados ajuda a automatizar alguns processos, o que aumenta a eficiência. Em um fluxo de trabalho controlado por metadados, o sistema de gerenciamento de fluxo de trabalho lê o fluxo de trabalho e, como resultado, executa alguma ação predefinida. Por exemplo, algumas maneiras de usar workflows orientados por metadados:
 
