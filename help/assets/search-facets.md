@@ -3,9 +3,9 @@ title: Pesquisar aspectos para filtrar os resultados da pesquisa
 description: Como criar, modificar e usar aspectos de pesquisa em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2438'
 ht-degree: 18%
 
 ---
@@ -42,19 +42,13 @@ Para pesquisas de texto completo, adicione o predicado de [!UICONTROL Texto comp
    >1. Salve as alterações.
 
 
-1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Por exemplo, arraste o Predicado **[!UICONTROL de propriedade]**.
+1. In the [!UICONTROL Edit Search Forms] page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Por exemplo, arraste o Predicado **[!UICONTROL de propriedade]**.
 
    ![Pressione e mova um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
 
    *Figura: Pressione e mova um predicado para personalizar os filtros de pesquisa.*
 
-1. Na guia Configurações, digite um rótulo de campo, um texto de espaço reservado e uma descrição para o predicado. Especifique um nome válido para a propriedade de metadados que deseja associar ao predicado.
-
-   O rótulo do cabeçalho na guia Configurações identifica o tipo do predicado selecionado.
-
-   ![Use a guia Configurações para fornecer as opções necessárias de um predicado](assets/settings.png)
-
-   Use a guia Configurações para fornecer as opções necessárias de um predicado
+1. Na guia [!UICONTROL Configurações] , digite um rótulo de campo, um texto de espaço reservado e uma descrição para o predicado. Especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. O rótulo do cabeçalho na guia [!UICONTROL Configurações] identifica o tipo do predicado selecionado.
 
 1. No campo **[!UICONTROL Nome da propriedade]**, especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. É o nome com base no qual a pesquisa é realizada. Por exemplo, insira `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`.
 
@@ -154,17 +148,9 @@ O predicado de tag permite que você realize pesquisas baseadas em tags para ati
 1. Configure a propriedade de caminho de tags raiz desse predicado para preencher várias tags na lista Tags.
 1. Selecione a opção **[!UICONTROL Mostrar correspondência de todas as tags]** para procurar ativos que incluem todas as tags especificadas.
 
-   ![Configurações típicas do predicado Tags](assets/tags_predicate.png)
-
-   Configurações típicas do predicado Tags
-
 1. No campo **[!UICONTROL Descrição]** , insira uma descrição opcional e clique em **[!UICONTROL Concluído]**.
 1. Navegue até o painel Pesquisar. O predicado **[!UICONTROL Tags]** é adicionado ao painel Pesquisar.
 1. Especifique tags com base nas quais você deseja pesquisar ativos ou selecione na lista de sugestões.
-
-   ![Sugestão fornecida pelo Experience Manager ao digitar o nome da tag](assets/tag-suggestion.png)
-
-   *Figura: Sugestão fornecida pelo Experience Manager ao digitar o nome da tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
