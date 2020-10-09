@@ -1,16 +1,16 @@
 ---
-title: Notas de versão do AEM 6.5
+title: Notas de versão do Adobe Experience Manager 6.5
 description: As Notas de versão AEM abrangem informações importantes sobre a versão mais recente do AEM, incluindo novas plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 19%
+source-wordcount: '374'
+ht-degree: 17%
 
 ---
 
 
-# Notas de versão do AEM 6.5
+# Notas de versão do Adobe Experience Manager 6.5
 
 As Notas de versão AEM abrangem informações importantes sobre a versão mais recente do AEM, incluindo novas plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos.
 
@@ -40,10 +40,10 @@ As Notas de versão AEM abrangem informações importantes sobre a versão mais 
 ## Principais recursos AEM
 
 * [AEM tutoriais](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
-* [Guia do usuário Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.translate.html)
-* [Guia do usuário HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html)
-* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html)
+* [Guia do usuário HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+* [Guia do usuário dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
