@@ -3,9 +3,9 @@ title: Criar projetos de tradução
 description: Saiba como criar projetos de tradução [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1885'
 ht-degree: 16%
 
 ---
@@ -47,8 +47,6 @@ Use a opção **[!UICONTROL Somente criar estrutura]** para criar uma hierarquia
 1. Clique em **[!UICONTROL Criar e traduzir]** na parte inferior.
 
 1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
-
-   ![selecionar idioma do público alvo](assets/target-language.png)
 
 1. Na lista **[!UICONTROL Projeto]**, escolha **[!UICONTROL Somente criar estrutura]**.
 
@@ -132,8 +130,6 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 
 1. Na lista **[!UICONTROL Idiomas de destino]**, selecione os idiomas para os quais deseja criar uma estrutura de pastas.
 
-   ![selecionar idioma do público alvo](assets/target-language.png)
-
 1. Na lista **[!UICONTROL Projeto]**, selecione **[!UICONTROL Adicionar ao projeto de tradução existente]** para executar o fluxo de trabalho de tradução na pasta.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -143,8 +139,6 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
    >Se você escolher a opção **[!UICONTROL Adicionar ao projeto]** de tradução existente, seu projeto de tradução será adicionado a um projeto pré-existente somente se as configurações do projeto corresponderem exatamente às configurações do projeto pré-existente. Caso contrário, um novo projeto será criado.
 
 1. Na lista do projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
-
-   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Clique em **[!UICONTROL Criar]**. Os ativos que serão traduzidos são adicionados à pasta de destino. A pasta atualizada está listada na seção **[!UICONTROL Cópias de idioma]**.
 
@@ -174,8 +168,6 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
    Uma mensagem notifica o início do trabalho de tradução.
-
-   ![chlimage_1-82](assets/chlimage_1-82.png)
 
 1. Para visualização do status do trabalho de tradução, clique nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução.
 
@@ -210,8 +202,6 @@ Se você usar essa opção, um projeto de tradução será criado para o conjunt
 
 1. No campo **[!UICONTROL Título do projeto]**, informe um título para o projeto.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
-
 1. Clique em **[!UICONTROL Start]**.
 1. Navegue até o console Projetos. A pasta de tradução é copiada para o console Projetos.
 
@@ -230,8 +220,6 @@ Se você usar essa opção, um projeto de tradução será criado para o conjunt
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    Uma mensagem notifica o início do trabalho de tradução.
-
-   ![chlimage_1-92](assets/chlimage_1-92.png)
 
 1. Para visualização do status do trabalho de tradução, clique nas reticências na parte inferior do bloco Trabalho **[!UICONTROL de]** tradução.
 
@@ -261,8 +249,6 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. Na lista do projeto **[!UICONTROL de tradução]** existente, selecione um projeto para adicionar o ativo para conversão.
-
-   ![selecionar um projeto](assets/select-a-project.png)
 
 1. Clique em **[!UICONTROL Start]**.
 1. Consulte as etapas 9 a 14 de [Adicionar ao projeto](translation-projects.md#add-to-existing-translation-project) de tradução existente para concluir o restante do procedimento.
