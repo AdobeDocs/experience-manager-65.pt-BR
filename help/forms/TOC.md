@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: formulários
 audience: end-user
-user-guide-title: Guia do usuário do Forms AEM 6.5
+user-guide-title: Guia do Forms Adobe Experience Manager 6.5
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '3700'
+source-wordcount: '3702'
 ht-degree: 2%
 
 ---
 
-# AEM 6.5 - Forms User Guide {#forms}
+# Adobe Experience Manager 6.5 Forms Guide {#forms}
 
 + [Guia do usuário do Forms AEM 6.5](home.md)
 + Notas de versão {#release-notes-new-features}
@@ -27,9 +27,9 @@ ht-degree: 2%
    + [Introdução às Comunicações Interativas](using/interactive-communications-overview.md)
    + [Introdução ao gerenciamento de formulários](using/introduction-managing-forms.md)
    + [Introdução ao serviço de conversão automática de formulários](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
-   + formulário: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
+   + Tutorial: Criar seu primeiro formulário adaptável {#create-first-adaptive-form}
       + [Tutorial: Criar seu primeiro formulário adaptável](using/create-your-first-adaptive-form.md)
-      + [formulário: Criar um formulário adaptável](using/create-adaptive-form.md)
+      + [Tutorial: Criar um formulário adaptável](using/create-adaptive-form.md)
       + [Tutorial: Criar modelo de dados de formulário](using/create-form-data-model.md)
       + [Tutorial: Aplicar regras a campos de formulário adaptáveis l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo do formulário adaptável](using/style-your-adaptive-form.md)
@@ -318,7 +318,7 @@ ht-degree: 2%
    + [Adicionar propriedades personalizadas aos ativos do Gerenciamento de correspondência](using/add-custom-properties-cm-assets.md)
    + [Personalizar a criação da interface de usuário de correspondência](using/customize-create-correspondence-ui.md)
    + [Personalizar editor de texto](using/customize-text-editor.md)
-   + [Gerenciamento de correspondência: DPS](using/cm-troubleshooting.md)
+   + [Gerenciamento de correspondência: Solução de problemas](using/cm-troubleshooting.md)
    + [APIs para acessar instâncias de carta](using/cm-apis-to-access-letter-instances.md)
    + [Integração da criação da interface de usuário de correspondência com o portal personalizado](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [Personalizar caracteres especiais no Gerenciamento de correspondência](using/custom-special-characters.md)
