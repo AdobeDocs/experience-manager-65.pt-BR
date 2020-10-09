@@ -3,9 +3,9 @@ title: Modelos de ativos
 description: Saiba mais sobre os modelos de ativos [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais promocionais de marketing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -50,17 +50,11 @@ Considere um cenário em que você deseja criar materiais de suporte para impres
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. Faça com que um ou mais modelos INDD sejam carregados e disponibilizados [!DNL Experience Manager] antecipadamente. Escolha um modelo para o folheto e clique em **[!UICONTROL Avançar]**.
-
-   ![chlimage_1-103](assets/chlimage_1-308.png)
-
 1. Especifique um nome e uma descrição opcional para o folheto.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Opcional) Clique em **[!UICONTROL Tags]** e selecione uma ou mais tags para o folheto. Clique em **[!UICONTROL Confirmar]** para confirmar sua seleção.
-
-   ![chlimage_1-105](assets/chlimage_1-310.png)
-
 1. Clique em **[!UICONTROL Criar]**. Uma caixa de diálogo confirma que um novo folheto foi criado. Clique em **[!UICONTROL Abrir]** para abrir o folheto no modo de edição.
 
    <!--![chlimage_1-106](assets/.png) -->
@@ -88,11 +82,9 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    Usando o localizador de ativos, você pode navegar ou procurar por imagens dentro [!DNL Experience Manager Assets] e substituir as imagens editáveis no modelo por imagens de sua escolha.
 
-   ![chlimage_1-189](assets/chlimage_1-314.png)
+   ![chlimage_1-109](assets/chlimage_1-314.png)
 
    Os editáveis são exibidos à direita. Para que um campo possa ser editado, [!DNL Experience Manager Assets]o campo correspondente no modelo deve estar marcado [!DNL InDesign]. Em outras palavras, eles devem ser marcados como editáveis em [!DNL InDesign].
-
-   ![chlimage_1-110](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
@@ -100,33 +92,24 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
 1. Para modificar o texto em um campo editável, clique no campo de texto da lista de campos editáveis e edite o texto no campo.
 
-   ![chlimage_1-191](assets/chlimage_1-316.png)
+   ![chlimage_1-111](assets/chlimage_1-316.png)
 
    É possível editar as propriedades do texto, por exemplo, estilo de fonte, cor e tamanho usando as opções fornecidas.
 
 1. Clique em **[!UICONTROL Pré-visualização]** para pré-visualização das alterações de texto.
 
-   ![Alterações na visualização](assets/view-changes.png)
-
-1. Para trocar uma imagem, clique no Localizador **[!UICONTROL de ativos]**.
-
-   ![chlimage_1-113](assets/chlimage_1-318.png)
+1. Para trocar uma imagem, clique no Localizador **[!UICONTROL de]** ativos ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Selecione o campo de imagem na lista de campos editáveis e arraste uma imagem desejada do seletor de ativos para o campo editável.
 
-   ![chlimage_1-115](assets/chlimage_1-319.png)
+   ![chlimage_1-114](assets/chlimage_1-319.png)
 
    Você também pode pesquisar por imagens usando palavras-chave, tags e com base no status de publicação. Você pode navegar pelo [!DNL Experience Manager Assets] repositório e navegar até o local da imagem desejada.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Clique em **[!UICONTROL Pré-visualização]** para pré-visualização da imagem.
-
-   ![Alterações na visualização](assets/view-changes.png)
-
 1. Para editar uma página específica em um material promocional de várias páginas, use o navegador da página na parte inferior.
-
-   ![navegador de página](assets/page-navigator.png)
 
 1. Clique em **[!UICONTROL Pré-visualização]** na barra de ferramentas para pré-visualização de todas as alterações. Clique em **[!UICONTROL Concluído]** para salvar as alterações de edição no material de apoio.
 
@@ -175,11 +158,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    Você pode navegar pelo [!DNL Experience Manager Assets] repositório ou coleções, navegar até o local dos modelos desejados e selecioná-los para mesclar.
 
-   ![chlimage_1-124](assets/chlimage_1-329.png)
-
    Você pode aplicar vários filtros para pesquisar os modelos desejados. Por exemplo, você pode pesquisar por modelos com base no tipo de arquivo ou tags.
-
-   ![chlimage_1-125](assets/chlimage_1-330.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 1. Na tela **[!UICONTROL Pré-visualização e reorganização]** , reorganize os modelos, se necessário, e pré-visualização a seleção de modelos para mesclar. Em seguida, clique em **[!UICONTROL Avançar]** na barra de ferramentas.
