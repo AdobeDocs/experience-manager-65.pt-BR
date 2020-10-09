@@ -3,10 +3,10 @@ title: Digital Rights Management de ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 6%
+source-wordcount: '1400'
+ht-degree: 5%
 
 ---
 
@@ -20,10 +20,6 @@ Os ativos digitais geralmente são associados a uma licença que especifica os t
 A expiração do ativo é uma maneira eficaz de aplicar os requisitos de licença para ativos. Ela garante que o ativo publicado não seja publicado quando expirar, o que evita a possibilidade de qualquer violação de licença. Um usuário sem permissões de administrador não pode editar, copiar, mover, publicar e baixar um ativo expirado.
 
 Você pode visualização o status de expiração de um ativo no [!DNL Assets] console nas visualizações de cartão e lista.
-
-![expired_flag_card](assets/expired_flag_card.png)
-
-*Figura: Na visualização do cartão, um sinalizador no cartão indica o ativo expirado.*
 
 ![expired_flag_lista](assets/expired_flag_list.png)
 
@@ -40,17 +36,11 @@ Você pode visualização o status de expiração de um ativo na [!UICONTROL Lin
 Você também pode visualização o status de expiração dos ativos no painel **[!UICONTROL Referências]** . Ele gerencia os status e as relações de expiração de ativos entre ativos compostos e subativos, coleções e projetos referenciados.
 
 1. Navegue até o ativo para o qual você deseja visualização as páginas da Web e os ativos compostos.
-1. Selecione o ativo e clique no [!DNL Experience Manager] logotipo.
-
-1. Escolha **[!UICONTROL Referências]** no menu.
-
-   ![chlimage_1-146](assets/chlimage_1-146.png)
-
-   Para ativos expirados, o painel Referências exibe o status de expiração **[!UICONTROL Ativo expirado]** na parte superior.
+1. Selecione o ativo e abra **[!UICONTROL Referências]** no painel esquerdo. Para ativos expirados, o painel [!UICONTROL Referências] exibe o status de expiração **[!UICONTROL Ativo expirado]** na parte superior.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Se o ativo tiver subativos expirados, o painel Referências exibirá o status **[!UICONTROL Ativo tiver subativos]** expirados.
+   Se o ativo tiver subativos expirados, o painel [!UICONTROL Referências] exibirá o status **[!UICONTROL Ativo tiver subativos]** expirados.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -61,17 +51,11 @@ Você pode pesquisar ativos expirados, incluindo subativos expirados no painel P
 1. No [!DNL Assets] console, clique em **[!UICONTROL Pesquisar]** na barra de ferramentas para exibir a caixa Omnisearch.
 
 1. Com o cursor na caixa Omnisearch, pressione a tecla Enter para exibir a página de resultados da pesquisa.
-
-   ![chlimage_1-150](assets/chlimage_1-150.png)
-
-1. Clique no [!DNL Experience Manager] logotipo para exibir o painel de pesquisa.
-1. Click the **[!UICONTROL Expiry Status]** option to expand it.
+1. Abra o painel de pesquisa no painel esquerdo. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Escolha **[!UICONTROL Expirado]**. Os ativos expirados são exibidos nos resultados da pesquisa.
-
-   ![chlimage_1-153](assets/chlimage_1-153.png)
+1. Escolha **[!UICONTROL Expirado]**. Somente os ativos expirados são exibidos após a filtragem dos resultados da pesquisa.
 
 Quando você escolhe a opção **[!UICONTROL Expirado]** , o [!DNL Assets] console exibe apenas os ativos e subativos expirados que são referenciados pelos ativos compostos. Os ativos compostos que fazem referência a subativos expirados não são exibidos imediatamente após a expiração dos subativos. Em vez disso, eles são exibidos após [!DNL Experience Manager] detectar que fazem referência a subativos expirados na próxima vez que o scheduler for executado.
 
@@ -84,9 +68,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 1. Abra o [!DNL Experience Manager] Configuration Manager.
 1. Escolha Notificação **[!UICONTROL de expiração do]** Adobe CQ DAM. Por padrão, o Scheduler **[!UICONTROL com base em]** tempo é selecionado, o que agenda uma tarefa para verificar em um horário específico se um ativo expirou subativos. Após a conclusão da tarefa, os ativos que têm subativos expirados e ativos referenciados são exibidos como expirados nos resultados da pesquisa.
 
-   ![chlimage_1-154](assets/chlimage_1-154.png)
-
-1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; aciona o trabalho às 00 horas.
+1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo `0 0 0 &ast; &ast; ?` aciona o trabalho em 00 horas.
 1. Selecione **[!UICONTROL enviar e-mail]** para receber e-mails quando um ativo expirar.
 
    >[!NOTE]
@@ -102,9 +84,6 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 O [!DNL Assets] console pode exibir vários estados para ativos. Dependendo do estado atual de um ativo específico, sua visualização de cartão exibe um rótulo que descreve seu estado, por exemplo, Expirado, Publicado, Aprovado, Rejeitada e assim por diante.
 
 1. Na interface do [!DNL Assets] usuário, selecione um ativo.
-
-   ![chlimage_1-155](assets/chlimage_1-155.png)
-
 1. Click **[!UICONTROL Publish]** from the toolbar. Se você não vir **Publicar** na barra de ferramentas, clique em **[!UICONTROL Mais]** na barra de ferramentas e localize a opção **[!UICONTROL Publicar]** ![publicação](assets/do-not-localize/publish-globe.png) .
 1. Escolha **[!UICONTROL Publicar]** no menu e feche a caixa de diálogo de confirmação.
 1. Saia do modo de seleção. O status de publicação do ativo aparece na parte inferior da miniatura do ativo na visualização do cartão. Na visualização da lista, a coluna Publicado exibe a hora em que o ativo foi publicado.
