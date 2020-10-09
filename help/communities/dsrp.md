@@ -70,6 +70,7 @@ Em autor, para acessar o console Configuração do Armazenamento
       >[!NOTE]
       >
       >A configuração padrão do armazenamento agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). É aconselhável seguir as etapas [de](#zerodt-migration-steps) migração para fazer com que os padrões funcionem conforme esperado.
+
    ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**

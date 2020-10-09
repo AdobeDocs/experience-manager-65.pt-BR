@@ -62,7 +62,8 @@ Muitas vezes, é feito um backup completo em intervalos regulares (por exemplo, 
 >Sem isso, o backup é potencialmente inútil (pior cenário).
 >
 >[!NOTE]
-Para obter mais informações sobre o desempenho do backup, leia a seção Desempenho [do](/help/sites-deploying/configuring-performance.md#backup-performance) Backup.
+>
+>Para obter mais informações sobre o desempenho do backup, leia a seção Desempenho [do](/help/sites-deploying/configuring-performance.md#backup-performance) Backup.
 
 ### Fazer backup da instalação do software {#backing-up-your-software-installation}
 
@@ -74,13 +75,16 @@ Para fazer isso, é necessário fazer [backup de todo o repositório](#backing-u
 1. Faça backup de todo o sistema `<cq-installation-dir>` de arquivos.
 
 >[!CAUTION]
-Se você estiver operando um servidor de aplicativos de terceiros, as pastas adicionais podem estar em um local diferente e talvez também seja necessário fazer backup delas. Consulte [Como instalar o AEM com um servidor](/help/sites-deploying/application-server-install.md) de aplicativos para obter informações sobre como instalar servidores de aplicativos. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
+>
+>Se você estiver operando um servidor de aplicativos de terceiros, as pastas adicionais podem estar em um local diferente e talvez também seja necessário fazer backup delas. Consulte [Como instalar o AEM com um servidor](/help/sites-deploying/application-server-install.md) de aplicativos para obter informações sobre como instalar servidores de aplicativos. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
 
 >[!CAUTION]
-Há suporte para backup incremental do armazenamento de dados de arquivos; ao usar backup incremental para outros componentes (como o índice Lucene), verifique se os arquivos excluídos também estão marcados como excluídos no backup.
+>
+>Há suporte para backup incremental do armazenamento de dados de arquivos; ao usar backup incremental para outros componentes (como o índice Lucene), verifique se os arquivos excluídos também estão marcados como excluídos no backup.
 
 >[!NOTE]
-O espelhamento de disco também pode ser usado como um mecanismo de backup.
+>
+>O espelhamento de disco também pode ser usado como um mecanismo de backup.
 
 ### Backup do repositório {#backing-up-your-repository}
 
@@ -132,7 +136,8 @@ Para expurgar versões de um site, proceda da seguinte maneira:
 1. Clique em **Expurgar** para iniciar o processo.
 
 >[!CAUTION]
-Os nós removidos não podem ser revertidos sem restaurar o repositório. Você deve cuidar de sua configuração, então recomendamos que você sempre execute uma execução seca antes de purgar.
+>
+>Os nós removidos não podem ser revertidos sem restaurar o repositório. Você deve cuidar de sua configuração, então recomendamos que você sempre execute uma execução seca antes de purgar.
 
 ### Analisando o console {#analyzing-the-console}
 
@@ -180,7 +185,8 @@ A rotação do arquivo de log refere-se ao processo que limita o crescimento do 
 * Os arquivos de log anteriores não são excluídos, portanto, é sua responsabilidade limpar os arquivos de log antigos periodicamente para limitar o uso do disco.
 
 >[!NOTE]
-Se você atualizar sua instalação do AEM, observe que qualquer arquivo de log existente que não for mais usado pelo AEM permanecerá no disco. Você pode removê-los sem riscos. Todas as novas entradas de log serão gravadas nos novos arquivos de log.
+>
+>Se você atualizar sua instalação do AEM, observe que qualquer arquivo de log existente que não for mais usado pelo AEM permanecerá no disco. Você pode removê-los sem riscos. Todas as novas entradas de log serão gravadas nos novos arquivos de log.
 
 ### Como localizar os arquivos de registro {#finding-the-log-files}
 
@@ -223,7 +229,8 @@ Fornece um registro de todas as operações de atualização que são executadas
 Revise as informações do diário.
 
 >[!NOTE]
-Os registros de acesso ImageServer e s7access não estão incluídos no pacote **Download completo **gerado a partir da **página **system/console/status-Bundlelist **page. Para fins de suporte, se tiver [!DNL Dynamic Media] problemas, anexe também os registros do ImageServer e s7access ao entrar em contato com o Suporte ao cliente.
+>
+>Os registros de acesso ImageServer e s7access não estão incluídos no pacote **Download completo **gerado a partir da **página **system/console/status-Bundlelist **page. Para fins de suporte, se tiver [!DNL Dynamic Media] problemas, anexe também os registros do ImageServer e s7access ao entrar em contato com o Suporte ao cliente.
 
 ### Ativando o nível de log DEBUG {#activating-the-debug-log-level}
 
@@ -232,7 +239,8 @@ O nível de log padrão ([Apache Sling Logging Configuration](/help/sites-deploy
 Para ativar o nível de log de depuração para um Logger, defina a propriedade `org.apache.sling.commons.log.level` para depurar no repositório. Por exemplo, para configurar `/libs/sling/config/org.apache.sling.commons.log.LogManager` o registro Apache Sling [global](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
-Não deixe o log no nível do log de depuração por mais tempo do que o necessário, pois ele gera muitas entradas de log, consumindo recursos.
+>
+>Não deixe o log no nível do log de depuração por mais tempo do que o necessário, pois ele gera muitas entradas de log, consumindo recursos.
 
 Uma linha no arquivo de depuração geralmente é start com DEBUG e, em seguida, fornece o nível de log, a ação do instalador e a mensagem de log. Por exemplo:
 
@@ -251,7 +259,8 @@ Os níveis de log são os seguintes:
 ### Criar um arquivo de log personalizado {#create-a-custom-log-file}
 
 >[!NOTE]
-When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+>
+>When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 Em determinadas circunstâncias, você pode querer criar um arquivo de log personalizado com um nível de log diferente. Você pode fazer isso no repositório:
 
@@ -266,7 +275,8 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
-   Embora não seja um requisito técnico, é aconselhável tornar `<*identifier*>` único.
+   >
+   >Embora não seja um requisito técnico, é aconselhável tornar `<*identifier*>` único.
 
 1. Defina as seguintes propriedades neste nó:
 
@@ -301,33 +311,38 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
-   `org.apache.sling.commons.log.pattern` apoia até seis argumentos.
+   >
+   >`org.apache.sling.commons.log.pattern` apoia até seis argumentos.
 
    >{0} O carimbo de data e hora do tipo `java.util.Date`{1} o marcador de log{2} o nome do thread atual{3} o nome do registrador{4} o nível de log{5} a mensagem de log
 
    >Se a chamada de log incluir um rastreamento de pilha, ele será anexado à mensagem. `Throwable`
 
    >[!CAUTION]
-   org.apache.sling.commons.log.names deve ter um valor.
+   >
+   >org.apache.sling.commons.log.names deve ter um valor.
 
    >[!NOTE]
-   Os caminhos do gravador de log são relativos ao `crx-quickstart` local.
-   Portanto, um arquivo de log especificado como:
-   `logs/thelog.log`
+   >
+   >Os caminhos do gravador de log são relativos ao `crx-quickstart` local.
+   >Portanto, um arquivo de log especificado como:
+   >`logs/thelog.log`
 
    >escreve para:
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
-   E um arquivo de log especificado como:
-   `../logs/thelog.log`
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
+   >E um arquivo de log especificado como:
+   >`../logs/thelog.log`
 
    >grava em um diretório:
-   ` <*cq-installation-dir*>/logs/`
+   >` <*cq-installation-dir*>/logs/`
+
 &quot;(ou seja, ao lado de ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
 
 1. Essa etapa só é necessária quando um novo Gravador é necessário (isto é, com uma configuração diferente do Gravador padrão).
 
    >[!CAUTION]
-   Uma nova Configuração de Gravador de Log é necessária somente quando o padrão existente não é adequado.
+   >
+   >Uma nova Configuração de Gravador de Log é necessária somente quando o padrão existente não é adequado.
 
    >Se nenhum Escritor explícito estiver configurado, o sistema gerará automaticamente um Escritor implícito com base no padrão.
 
@@ -339,7 +354,8 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
-   Embora não seja um requisito técnico, é aconselhável tornar `<*identifier*>` único.
+   >
+   >Embora não seja um requisito técnico, é aconselhável tornar `<*identifier*>` único.
 
    Defina as seguintes propriedades neste nó:
 
@@ -365,9 +381,10 @@ Em determinadas circunstâncias, você pode querer criar um arquivo de log perso
 
          Valor: especificar, se for caso disso, o controlo da rotação dos ficheiros por dimensão/data; por exemplo, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` controla a rotação do arquivo de log ao configurar:
-   * um tamanho máximo de arquivo
-   * uma programação de data/hora
+   >
+   >`org.apache.sling.commons.log.file.size` controla a rotação do arquivo de log ao configurar:
+   >* um tamanho máximo de arquivo
+   >* uma programação de data/hora
 
    para indicar quando um novo arquivo será criado (e o arquivo existente será renomeado de acordo com o padrão de nome).
    * Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, isso será considerado como o número de bytes, ou você poderá adicionar um dos indicadores de tamanho - `KB`, `MB`ou `GB` (caso seja ignorado).
@@ -455,10 +472,11 @@ Para monitorar um agente de replicação:
    * **Forçar nova tentativa** em qualquer item da fila, se necessário.
 
    >[!CAUTION]
-   Não use o link &quot;Testar conexão&quot; para a caixa de saída de replicação inversa em uma instância de publicação.
-   Se um teste de replicação for executado para uma fila de caixa de saída, todos os itens mais antigos que a replicação de teste serão processados novamente com cada replicação reversa.
-   Se esses itens já existirem em uma fila, eles podem ser encontrados com o seguinte query XPath JCR e devem ser removidos.
-   `/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
+   >
+   >Não use o link &quot;Testar conexão&quot; para a caixa de saída de replicação inversa em uma instância de publicação.
+   >Se um teste de replicação for executado para uma fila de caixa de saída, todos os itens mais antigos que a replicação de teste serão processados novamente com cada replicação reversa.
+   >Se esses itens já existirem em uma fila, eles podem ser encontrados com o seguinte query XPath JCR e devem ser removidos.
+   >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 Novamente, você pode desenvolver uma solução para detectar todos os agentes de replicação (localizados em `/etc/replication/author` ou `/etc/replication/publish`), em seguida, verificar o status do agente ( `enabled`, `disabled`) e a fila subjacente ( `active`, `idle`, `blocked`).
 
@@ -469,7 +487,8 @@ Novamente, você pode desenvolver uma solução para detectar todos os agentes d
 Os métodos usados ao coletar informações para otimização também podem ser usados para monitoramento contínuo.
 
 >[!NOTE]
-Também é possível verificar [configurações específicas disponíveis para melhorar o desempenho](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
+>
+>Também é possível verificar [configurações específicas disponíveis para melhorar o desempenho](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
 
 As listas a seguir apresentam problemas comuns de desempenho, juntamente com propostas sobre como detectar e contrariá-los.
 
@@ -854,7 +873,8 @@ Como o JDK 1.6, o comando de ferramenta `jvisualvm` está disponível. Depois de
 1. Start da sua instância do AEM.
 
    >[!NOTE]
-   Se estiver usando o Java 5, você pode adicionar o `-Dcom.sun.management.jmxremote` argumento à linha de comando java que start sua JVM. O JMX é ativado por padrão com o Java 6.
+   >
+   >Se estiver usando o Java 5, você pode adicionar o `-Dcom.sun.management.jmxremote` argumento à linha de comando java que start sua JVM. O JMX é ativado por padrão com o Java 6.
 
 1. Execute:
 
@@ -1018,11 +1038,12 @@ Repita o procedimento acima na instância de publicação.
 Veja a seguir uma lista de sugestões sobre o que verificar se o start apresenta determinados problemas de desempenho. A lista não é (infelizmente) totalmente abrangente.
 
 >[!NOTE]
-Consulte também os seguintes artigos para obter mais informações:
-* [Despejo de thread](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
-* [Analisar problemas de memória](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
-* [Analisar usando o profiler incorporado](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
-* [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>
+>Consulte também os seguintes artigos para obter mais informações:
+>* [Despejo de thread](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
+>* [Analisar problemas de memória](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
+>* [Analisar usando o profiler incorporado](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
+>* [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 
 
@@ -1115,5 +1136,6 @@ Ou JConsole:
 Isso ajudará você a ver quanta memória está sendo usada, quais algoritmos GC estão sendo usados, quanto tempo levam para serem executados e qual efeito isso tem no desempenho do aplicativo. Sem isso, o ajuste é apenas &quot;botões de giro aleatório&quot;.
 
 >[!NOTE]
-Para a VM da Oracle, também há informações em:
-[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>
+>Para a VM da Oracle, também há informações em:
+>[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
