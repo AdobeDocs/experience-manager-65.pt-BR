@@ -8,9 +8,9 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Com o modo sem binários ativado, os pacotes de conteúdo distribuídos contêm 
 #### Como ativar a distribuição sem binários? {#how-do-i-enable-binary-less-distribution}
 
 Para ativar a distribuição sem binários, implante com um armazenamento de blob compartilhado.
-Verifique a `useBinaryReferences` propriedade na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*que seu agente está usando.
+Verifique a `useBinaryReferences` propriedade na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
 
 #### Como posso personalizar as mensagens de erro ao navegar pela hierarquia de páginas no console de sites AEM? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
@@ -118,7 +118,7 @@ Como solução alternativa, você também pode desativar manualmente o component
 
 #### Como configurar o Asset Insights com a instância AEM 6.5? {#how-to-configure-asset-insights-with-aem-instance}
 
-Para configurar e configurar o Asset Insights para Experience Manager implantado via Adobe Ativação (DTM), consulte [Configurar o Asset Insights com a AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+Para configurar e configurar o Asset Insights para Experience Manager implantado via Adobe Ativação (DTM), consulte como [configurar o Asset Insights com a AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### Como personalizar consoles de administração? {#how-to-customize-admin-consoles}
 
@@ -138,7 +138,7 @@ A implementação de pesquisa Simples são os materiais do laboratório Summit 2
 
 #### Qual é a diferença entre a AEM Assets e AEM MediaLibrary? {#what-is-the-difference-between-aem-assets-and-aem-medialibrary}
 
-A AEM Assets é um aplicativo na Plataforma AEM que permite que nossos clientes gerenciem seus ativos digitais (imagens, vídeos, documentos e clipes de áudio) em um repositório baseado na Web, enquanto a Biblioteca de mídia é uma parte designada do repositório de conteúdo AEM WCM, onde as imagens e outros recursos compartilhados são armazenados.
+A AEM Assets é um aplicativo na plataforma AEM que permite que nossos clientes gerenciem seus ativos digitais (imagens, vídeos, documentos e clipes de áudio) em um repositório baseado na Web, enquanto a Biblioteca de mídia é uma parte designada do repositório de conteúdo AEM WCM, onde as imagens e outros recursos compartilhados são armazenados.
 
 Consulte [AEM Assets vs. AEM MediaLibrary](/help/assets/medialibrary.md) para obter mais informações.
 
