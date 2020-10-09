@@ -3,9 +3,9 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos digitais que compartilham alguns atributos comuns. Crie também relacionamentos derivados de origem entre ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
    * Para relacionar um arquivo derivado, selecione **[!UICONTROL Derivado]** da lista.
    * Para criar uma relação bidirecional entre os ativos, selecione **[!UICONTROL Outros]** na lista.
 
-   ![chlimage_1-276](assets/chlimage_1-276.png)
-
 1. Na tela **[!UICONTROL Selecionar ativo]** , navegue até o local do ativo que deseja relacionar e selecione-o.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
@@ -55,9 +53,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Para cancelar a relação de um ativo, clique em **[!UICONTROL Desrelacionar]** na barra de ferramentas.
-
-   ![ativos não relacionados](assets/do-not-localize/link-unrelate-icon.png)
+1. Para cancelar a relação de um ativo, clique em **[!UICONTROL Cancelar a relação]** de ativos ![](assets/do-not-localize/link-unrelate-icon.png) não relacionados na barra de ferramentas.
 
 1. Selecione o(s) ativo(s) que deseja desrelacionar na caixa de diálogo **[!UICONTROL Remover relações]** e clique em **[!UICONTROL Desrelacionar]**.
 
@@ -81,8 +77,6 @@ Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manag
 
 1. Na página [!UICONTROL Projetos] , abra a pasta de tradução.
 
-   ![chlimage_1-283](assets/chlimage_1-283.png)
-
 1. Clique no bloco do projeto para abrir a página de detalhes.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
@@ -97,8 +91,4 @@ Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manag
 
 1. Para verificar se os ativos relacionados à origem foram convertidos, clique no ativo de origem.
 
-   ![chlimage_1-287](assets/chlimage_1-287.png)
-
 1. Selecione o ativo relacionado à origem e clique em **[!UICONTROL Revelar nos Ativos]**. O ativo relacionado convertido é exibido.
-
-   ![chlimage_1-288](assets/chlimage_1-288.png)
