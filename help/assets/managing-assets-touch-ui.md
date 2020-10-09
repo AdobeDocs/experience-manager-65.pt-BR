@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '9613'
+source-wordcount: '9565'
 ht-degree: 4%
 
 ---
@@ -508,9 +508,6 @@ Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativos] , po
 
 1. Clique no ativo para abrir sua página.
 1. Na interface do Experience Manager, selecione **[!UICONTROL Representações]** na lista.
-
-   ![Painel esquerdo para abrir o menu e selecionar a opção Representações](assets/renditions_menu.png)
-
 1. No painel **[!UICONTROL Representações]** , visualização a lista de representações geradas para o ativo.
 
    ![Painel Representações na página Detalhes de ativos](assets/renditions_panel.png)
@@ -666,10 +663,6 @@ Você pode visualização, navegar e selecionar ativos com qualquer uma das visu
 
 Na visualização de lista e na visualização de coluna, a opção **[!UICONTROL Selecionar]** é exibida quando você passa o ponteiro do mouse sobre a miniatura do ativo.
 
-![Selecionar ativos na visualização de lista](assets/select_quick_in_listview.png)
-
-![Selecionar ativos na visualização de colunas](assets/select_quick_in_columnview.png)
-
 Na visualização do cartão, a opção **[!UICONTROL Selecionar]** é exibida como uma ação rápida.
 
 ![Selecionar ação rápida na visualização do cartão](assets/select_quick_action.png)
@@ -690,9 +683,7 @@ As ferramentas de edição na [!DNL Assets] interface permitem executar pequenos
 
    * Selecione o ativo e clique em **[!UICONTROL Editar]** na barra de ferramentas.
    * Clique na opção **[!UICONTROL Editar]** que é exibida em um ativo na visualização do cartão.
-   * Clique em **[!UICONTROL Editar]** na barra de ferramentas.
-
-   ![Opção Editar na barra de ferramentas](assets/do-not-localize/edit_icon.png)
+   * Clique em **[!UICONTROL Editar]** na opção ![Editar da barra de ferramentas na barra de ferramentas](assets/do-not-localize/edit_icon.png).
 
 1. Para recortar a imagem, clique em **[!UICONTROL Opção de recorte]** ![para recortar uma imagem](assets/do-not-localize/crop.png).
 
@@ -751,9 +742,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 1. Clique na opção **[!UICONTROL Anotar]** de uma das seguintes opções:
 
    * [Ações rápidas](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo
-
-   ![opção Anotar](assets/annotate-option.png)
+   * Na barra de ferramentas depois de selecionar o ativo ou navegar até a página do ativo.
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
 
@@ -768,8 +757,6 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
    >Para um usuário que não seja administrador, as sugestões serão exibidas somente se o usuário tiver permissões de leitura no `/home` caminho no CRXDE.
 
 1. Depois de adicionar a anotação, clique em **[!UICONTROL Adicionar]** para salvá-la. Uma notificação para a anotação é enviada para Aaron.
-
-   ![Botão Adicionar para salvar uma anotação](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -799,12 +786,7 @@ As anotações de vídeo são compatíveis apenas em navegadores com formatos de
 1. Para visualização de anotações salvas para um ativo, navegue até o local do ativo e abra a página do ativo para o ativo.
 
 1. Na interface do Experience Manager, escolha **[!UICONTROL Linha do tempo]**.
-
-   ![Opção Linha do tempo disponível no Experience Manager](assets/view-timeline.png)
-
 1. Na lista **[!UICONTROL Exibir todos]** na linha do tempo, selecione **[!UICONTROL Comentários]** para filtrar os resultados com base em anotações.
-
-   ![Mostrar todas as listas na linha do tempo](assets/timeline-show-all-option.png)
 
    Clique em um comentário no painel **[!UICONTROL Linha]** do tempo para visualização da anotação correspondente na imagem.
 
@@ -833,8 +815,6 @@ Para imprimir as anotações e revisar o status, clique em **[!UICONTROL Imprimi
    Para imprimir somente o status da revisão, selecione-o na linha do tempo.
 
 1. Click **[!UICONTROL Print]** from the toolbar.
-
-   ![Opção Imprimir na barra de ferramentas](assets/do-not-localize/print.png)
 
 1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se desejar que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Superior esquerda** . Está selecionado por padrão.
 
@@ -923,8 +903,6 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
 
    * Clique em **[!UICONTROL Mostrar tudo]** na [!UICONTROL Linha do tempo].
    * Clique em **[!UICONTROL Versões]**. Todas as versões criadas para um ativo são listadas na barra lateral esquerda.
-
-      ![ Selecione a opção Versões na Linha do tempo](assets/versions_option.png)
 
    * Selecione uma versão específica do ativo e clique em Versão **[!UICONTROL da]** Pré-visualização.
 
