@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+source-git-commit: b08149e00c418319ebacec71c56472ad4e8e1089
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 7%
@@ -43,7 +43,7 @@ Devido à possibilidade de valores diferentes, as propriedades da página não e
 
 >[!NOTE]
 >
->A edição em massa também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/managing-multiple-assets.md) para obter as informações completas. Você pode personalizar os campos no editor de Metadados em massa para Ativos usando o editor [de](/help/assets/metadata-schemas.md)Schemas.
+>A edição em massa também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/metadata.md) para obter as informações completas. Você pode personalizar os campos no editor de Metadados em massa para Ativos usando o editor [de](/help/assets/metadata-schemas.md)Schemas.
 
 ## Ativação de um campo {#enabling-a-field}
 
@@ -70,7 +70,7 @@ Os campos são ativados no componente de página (*não* no modelo):
 
    >[!NOTE]
    >
-   >Este exemplo presume que os Componentes principais foram instalados na instância, o que é o caso se a instância estiver sendo executada com conteúdo de amostra We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) for more information.
+   >Este exemplo presume que os Componentes principais foram instalados na instância, o que é o caso se a instância estiver sendo executada com conteúdo de amostra We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) for more information.
 
 1. Navegue até o campo desejado dentro da `cq:dialog` definição.
 1. Defina a seguinte propriedade no nó de campo:
