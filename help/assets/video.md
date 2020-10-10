@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 8%
@@ -739,7 +739,7 @@ Cole o valor copiado no editor de texto aberto. Você precisará desse valor pos
 1. Ao lado do canto superior direito da página, clique em **[!UICONTROL Salvar.]**
 1. Aplique o perfil de metadados de publicação do YouTube às pastas onde você carregará vídeos. Você precisará ter o Perfil Metadados e o Perfil Vídeo definidos.
 
-   Consulte [Perfis de metadados](/help/assets/metadata-profiles.md) e [Perfis de vídeo](/help/assets/video-profiles.md).
+   Consulte [Perfis de metadados](/help/assets/metadata-config.md#metadata-profiles) e [Perfis de vídeo](/help/assets/video-profiles.md).
 
 ### Publicar vídeos no canal do YouTube {#publishing-videos-to-your-youtube-channel}
 
