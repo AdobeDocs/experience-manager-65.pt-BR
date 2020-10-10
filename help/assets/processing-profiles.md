@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Um perfil é uma receita para quais opções se aplicam aos ativos que são carr
 
 Essas regras podem incluir adição de metadados, recorte inteligente de imagens ou estabelecimento de perfis de codificação de vídeo. Em AEM, você pode criar três tipos de perfis, que são abordados detalhadamente nos seguintes links:
 
-* [Perfis de metadados](/help/assets/metadata-profiles.md)
+* [Perfis de metadados](/help/assets/metadata-config.md#metadata-profiles)
 * [Perfis de imagem](/help/assets/image-profiles.md)
 * [Perfis de vídeo](/help/assets/video-profiles.md)
 
