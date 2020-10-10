@@ -3,7 +3,7 @@ title: Organize seus ativos digitais
 description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Usando tags, como metadados, você pode pesquisar facilmente ativos, criar cole�
 Para obter mais informações, consulte os seguintes artigos:
 
 * [Sobre tags no Experience Manager](/help/sites-authoring/tags.md)
-* [Editar metadados de ativos](meta-edit.md)
+* [Editar metadados de ativos](metadata.md)
 * [Tags inteligentes aprimoradas em ativos](enhanced-smart-tags.md)
 
 ## Organizar como coleções {#organize-as-collections}
@@ -62,14 +62,14 @@ Add back links to blog posts by marketing?
 
 ## Organize seus ativos para usar perfis {#organize-to-use-profiles}
 
-Um perfil de processamento contém comandos de [!DNL Assets] processamento que se aplicam a ativos que são carregados em pastas predefinidas. Os Perfis são usados para automatizar o processamento do conteúdo de uma pasta ou dos ativos carregados recentemente. Você pode aproveitar perfis para organizar melhor seus ativos.
+Um perfil de processamento contém comandos de [!DNL Assets] processamento que se aplicam a ativos que são carregados em pastas predefinidas. Os perfis são usados para automatizar o processamento do conteúdo de uma pasta ou dos ativos carregados recentemente. Você pode aproveitar perfis para organizar melhor seus ativos.
 
 A padronização do uso de metadados, da nomeação de arquivos e da estrutura de pastas garante que, à medida que o pool de ativos digitais cresce, você aplique perfis de processamento a pastas com maior precisão e consistência.
 
 >[!MORELIKETHIS]
 >
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
->* [Perfis de metadados](metadata-profiles.md).
->* [perfis](video-profiles.md)de vídeo.
->* [perfis](image-profiles.md)de imagem Dynamic Media.
+>* [Perfis de metadados](/help/assets/metadata-config.md#metadata-profiles).
+>* [Perfis](video-profiles.md)de vídeo.
+>* [Perfis](image-profiles.md)de imagem do Dynamic Media.
 
