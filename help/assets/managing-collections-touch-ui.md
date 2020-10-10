@@ -4,7 +4,7 @@ description: Saiba mais sobre tarefas para gerenciar coleções de ativos, como 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: cedefb58919d7d215040e72b4cc41159161938a8
 workflow-type: tm+mt
 source-wordcount: '2178'
 ht-degree: 11%
@@ -137,7 +137,7 @@ As coleções inteligentes são criadas salvando uma pesquisa para que você pos
 1. Clique em **[!UICONTROL Substituir]** para substituir a coleção inteligente original pela coleção editada. Como alternativa, selecione **[!UICONTROL Salvar como]** para salvar a coleção editada separadamente.
 1. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Salvar]** para concluir o processo.
 
-## Visualização e edição de metadados da coleção {#viewing-and-editing-collection-metadata}
+## Visualização e edição de metadados da coleção {#view-edit-collection-metadata}
 
 Os metadados da coleção incluem dados sobre a coleção, incluindo quaisquer tags adicionadas.
 
