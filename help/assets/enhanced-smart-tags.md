@@ -3,9 +3,9 @@ title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1587'
 ht-degree: 8%
 
 ---
@@ -44,6 +44,7 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para cri
 
 * Existência de uma Adobe ID com privilégios de administrador para a organização.
 * O serviço Smart Content Service está habilitado para sua organização.
+* O Pacote básico do Smart Content Services só pode ser adicionado a uma implantação na qual um Pacote [!DNL Sites] básico e um complemento [!DNL Assets] foram licenciados.
 
 ## Integração {#onboarding}
 
@@ -107,7 +108,7 @@ Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no
 >
 >Depois que os ativos em uma pasta são processados para treinamento, somente os ativos modificados são processados em ciclos de treinamento subsequentes.
 
-### Relatórios de treinamento de Visualização {#viewing-training-reports}
+### Relatórios de treinamento de visualização {#viewing-training-reports}
 
 Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags no conjunto de ativos de treinamento, reveja o relatório de fluxo de trabalho de treinamento no console Relatórios.
 
@@ -179,3 +180,7 @@ Você pode acionar o fluxo de trabalho de marcação do seguinte para marcar ins
 >[!NOTE]
 >
 >Nos ciclos de marcação subsequentes, somente os ativos modificados são marcados novamente com tags treinadas recentemente.No entanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede 6 meses.
+
+## Dicas e limitações {#tips-best-practices-limitations}
+
+* O uso do Smart Content Services é limitado a até 2 milhões de imagens marcadas por ano. Todas as imagens de duplicado que são processadas e marcadas são contadas como imagens marcadas.
