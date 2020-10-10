@@ -2,7 +2,7 @@
 title: Notas de versão [!DNL Adobe Experience Manager Assets] 6.5.
 description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 39%
@@ -36,9 +36,9 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Imagem e licença da Pré-visualização Adobe Stock de dentro dos Experience Manager Assets](assets/stock_image_preview_license_options.png)
+![Imagem e licença do Pré-visualização Adobe Stock de dentro dos Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
-*Figura: imagem de Pré-visualização[!DNL Adobe Stock]e licença de dentro[!DNL Experience Manager Assets].*
+*Figura: imagem de pré-visualização[!DNL Adobe Stock]e licença de dentro[!DNL Experience Manager Assets].*
 
 ![Pesquise e filtre as imagens licenciadas do Adobe Stock no Experience Manager](assets/aem-search-filters2.jpg)
 
@@ -100,9 +100,9 @@ Agora você pode selecionar todos os ativos carregados em uma pasta ou de um res
 
 ## Aprimoramentos de metadados {#metadata-enhancements}
 
-[!DNL Assets] permite criar schemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta. Agora é possível atribuir um esquema de metadados de pasta a uma pasta existente ou ao criar uma nova pasta. Para obter mais informações, consulte [Esquema de metadados de pasta](/help/assets/folder-metadata-schema.md).
+[!DNL Assets] permite criar schemas de metadados para pastas de ativos, que definem o layout e os metadados exibidos nas páginas de propriedades da pasta. Agora é possível atribuir um esquema de metadados de pasta a uma pasta existente ou ao criar uma nova pasta. Para obter mais informações, consulte [Esquema de metadados de pasta](/help/assets/metadata-config.md#folder-metadata-schema).
 
-Ao especificar metadados em cascata, as opções podem ser carregadas de um arquivo JSON no tempo de execução, em vez de digitar manualmente no formulário. Para obter mais informações, consulte [Metadados em cascata](/help/assets/cascading-metadata.md).
+Ao especificar metadados em cascata, as opções podem ser carregadas de um arquivo JSON no tempo de execução, em vez de digitar manualmente no formulário. For more information, see [cascading metadata](/help/assets/metadata-schemas.md#cascading-metadata).
 
 ## Aprimoramentos de relatórios {#reporting-enhancements}
 
