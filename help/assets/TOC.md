@@ -6,10 +6,10 @@ user-guide-title: Guia de ativos
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 39%
+source-wordcount: '619'
+ht-degree: 38%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 39%
 + Usar ativos Experience Manager {#using}
    + [Experiência de home page de ativos](assets-home-page.md)
    + [Pesquisar ativos digitais](search-assets.md)
+   + [Trabalhar com metadados de ativos](metadata.md)
    + [Ativos multilíngues](multilingual-assets.md)
    + [Ativos [!DNL Adobe Stock] do usuário em ativos](aem-assets-adobe-stock.md)
    + [Visualização de ativos 3D](previewing-3d-assets.md)
@@ -91,28 +92,24 @@ ht-degree: 39%
 + Administrar ativos {#administer}
    + [Formatos de arquivo não suportados](assets-formats.md)
    + [Pesquisar aspectos](search-facets.md)
-   + [Gerenciar metadados de ativos](metadata.md)
+   + [Compreender conceitos de metadados](metadata-concepts.md)
+   + [Configuração da funcionalidade de metadados](metadata-config.md)
    + [Write-back de XMP a execuções](xmp-writeback.md)
    + [Compartilhamento de link de ativos](link-sharing.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
    + [Perfis para processar metadados, imagens e vídeos](processing-profiles.md)
-   + [Metadados em cascata](cascading-metadata.md)
    + [Criar e configurar páginas do Editor de ativos](assets-finder-editor.md)
    + [Guia de dimensionamento de ativos](assets-sizing-guide.md)
-   + [Referência dos esquemas de metadados](meta-ref.md)
    + [Práticas recomendadas para traduzir ativos](best-practices-for-translating-assets-efficiently.md)
    + [Guia de ajuste de desempenho de ativos](performance-tuning-guidelines.md)
-   + [Como adicionar ou editar metadados](meta-edit.md)
    + [Guia de migração de ativos](assets-migration-guide.md)
-   + [Metadados XMP](xmp.md)
    + [Considerações sobre a rede de ativos](assets-network-considerations.md)
    + [Ativos e MediaLibrary](medialibrary.md)
    + [Usar o rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configurar restrições de upload](configuring-asset-upload-restrictions.md)
    + [integração Experience Manager e Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integrar ao InDesign Server](indesign.md)
-   + [Perfis de metadados](metadata-profiles.md)
    + [Digital Rights Management nos ativos](drm.md)
    + [Usar o pacote de demonstração para insights de ativos](touch-ui-using-demo-package-for-asset-insights.md)
    + [Práticas recomendadas de formato de arquivo de ativos](assets-file-format-best-practices.md)
@@ -120,14 +117,11 @@ ht-degree: 39%
    + [apoio Camera Raw](camera-raw.md)
    + [Detectar o tipo MIME de ativos usando o Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificação de imagens](imaging-transcoding-library.md)
-   + [Suporte para metadados IPTC](iptc-support.md)
    + [Esquemas de metadados](metadata-schemas.md)
    + [Várias tendências para coleções, snippets e modelos de snippet](multi-tenancy.md)
    + [Marque com água seus ativos](watermarking.md)
-   + [Importação e exportação de metadados em massa](metadata-import-export.md)
    + [Modelos de ativos](asset-templates.md)
    + [Práticas recomendadas para compartilhar pastas com o Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-   + [Esquema de metadados de pastas](folder-metadata-schema.md)
    + [Gerenciar tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [Configurar o Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md)
@@ -147,7 +141,6 @@ ht-degree: 39%
 + Manage Assets {#managing}
    + [Gerenciar ativos digitais](managing-assets-touch-ui.md)
    + [Gerenciar coleções](managing-collections-touch-ui.md)
-   + [Gerenciar vários ativos e coleções](managing-multiple-assets.md)
    + [Configurar a marcação usando o Serviço de conteúdo inteligente](config-smart-tagging.md)
    + [Ativar detecção de duplicados](duplicate-detection.md)
    + [Organizar ativos digitais](organize-assets.md)
