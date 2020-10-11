@@ -3,9 +3,9 @@ title: API HTTP do [!DNL Assets].
 description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API HTTP em [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -183,7 +183,7 @@ Atualiza as propriedades de metadados do ativo. Se você atualizar qualquer prop
 
 ### Sincronizar atualização de metadados entre `dc` e `jcr` namespace {#sync-metadata-between-namespaces}
 
-O método da API atualiza as propriedades de metadados na `jcr` namespace. As atualizações feitas usando a interface de usuário sensível ao toque alteram as propriedades de metadados na `dc` namespace. Para sincronizar os valores de metadados entre `dc` e a `jcr` namespace, você pode criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho na edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
+O método da API atualiza as propriedades de metadados na `jcr` namespace. As atualizações feitas usando a interface de usuário sensível ao toque alteram as propriedades de metadados na `dc` namespace. Para sincronizar os valores de metadados entre `dc` e a `jcr` namespace, é possível criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho na edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O script de amostra a seguir sincroniza a string de título entre `dc:title` e `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -307,3 +307,9 @@ Exclui um recurso (-tree) no caminho fornecido.
 * 200 - OK - se a pasta tiver sido excluída com êxito.
 * 412 - PRECONDITION FAILED - se a coleção raiz não puder ser encontrada ou acessada.
 * 500 - ERRO DE SERVIDOR INTERNO - se algo der errado.
+
+## Dicas e limitações {#tips-best-practices-limitations}
+
+* [A API HTTP atualiza as propriedades](#update-asset-metadata) de metadados na `jcr` namespace. No entanto, a interface do usuário do Experience Manager atualiza as propriedades de metadados na `dc` namespace.
+
+* A API de ativos não retorna os metadados completos. Na API, as namespaces são codificadas e só são retornadas. Se você precisar de metadados completos, verifique o caminho do ativo `/jcr_content/metadata.json`.
