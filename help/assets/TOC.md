@@ -6,10 +6,10 @@ user-guide-title: Guia de ativos
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 38%
+source-wordcount: '586'
+ht-degree: 36%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 38%
 # Guia de ativos {#assets}
 
 + [[!DNL Assets] guia do usuário](home.md)
-+ [Notas de versão do Experience Manager 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 Notas de versão dos ativos](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
 + Usar ativos Experience Manager {#using}
-   + [Experiência de home page de ativos](assets-home-page.md)
+   + [[!DNL Assets] experiência do home page](assets-home-page.md)
    + [Pesquisar ativos digitais](search-assets.md)
    + [Trabalhar com metadados de ativos](metadata.md)
    + [Ativos multilíngues](multilingual-assets.md)
@@ -32,7 +32,7 @@ ht-degree: 38%
    + [Processar ativos](assets-workflow.md)
    + [Adicionar mapas de imagem](image-maps.md)
    + [Reutilizar ativos usando MSM](reuse-assets-using-msm.md)
-   + [Ativos conectados com sites](use-assets-across-connected-assets-instances.md)
+   + [Ativos conectados com [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
    + [Configuração do Dynamic Media](administering-dynamic-media.md)
@@ -80,15 +80,15 @@ ht-degree: 38%
    + [Instalação do Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
    + [Trabalho com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
-   + [Personalizar e estender ativos](extending-assets.md)
+   + [Personalizar e estender [!DNL Assets]](extending-assets.md)
    + [Processar ativos usando manipuladores de mídia e workflows](media-handlers.md)
    + [Ampliar funcionalidade de pesquisa](searchx.md)
-   + [Instalar e configurar [!DNL ImageMagick] para trabalhar com ativos](best-practices-for-imagemagick.md)
+   + [Instalar e configurar [!DNL ImageMagick] para trabalhar com [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integrar ativos ao fluxo de atividade](extending-activity-stream.md)
    + [Estender editor de ativos](asseteditorx.md)
-   + [API HTTP de ativos](mac-api-assets.md)
-   + [Suporte a fragmentos de conteúdo na API HTTP de ativos](assets-api-content-fragments.md)
-   + [Desenvolvimento proxy de ativos](proxy.md)
+   + [[!DNL Assets] API HTTP](mac-api-assets.md)
+   + [Suporte a fragmentos de conteúdo [!DNL Assets] na API HTTP](assets-api-content-fragments.md)
+   + [[!DNL Assets] desenvolvimento de proxy](proxy.md)
 + Administrar ativos {#administer}
    + [Formatos de arquivo não suportados](assets-formats.md)
    + [Pesquisar aspectos](search-facets.md)
@@ -102,14 +102,14 @@ ht-degree: 38%
    + [Criar e configurar páginas do Editor de ativos](assets-finder-editor.md)
    + [Guia de dimensionamento de ativos](assets-sizing-guide.md)
    + [Práticas recomendadas para traduzir ativos](best-practices-for-translating-assets-efficiently.md)
-   + [Guia de ajuste de desempenho de ativos](performance-tuning-guidelines.md)
-   + [Guia de migração de ativos](assets-migration-guide.md)
-   + [Considerações sobre a rede de ativos](assets-network-considerations.md)
-   + [Ativos e MediaLibrary](medialibrary.md)
+   + [[!DNL Assets] guia de ajuste de desempenho](performance-tuning-guidelines.md)
+   + [[!DNL Assets] guia de migração](assets-migration-guide.md)
+   + [[!DNL Assets] considerações de rede](assets-network-considerations.md)
+   + [[!DNL Assets] e MediaLibrary](medialibrary.md)
    + [Usar o rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configurar restrições de upload](configuring-asset-upload-restrictions.md)
-   + [integração Experience Manager e Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integrar ao InDesign Server](indesign.md)
+   + [[!DNL Experience Manager] and [!DNL Creative Cloud] integração](aem-cc-integration-best-practices.md)
+   + [Integrar com [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management nos ativos](drm.md)
    + [Usar o pacote de demonstração para insights de ativos](touch-ui-using-demo-package-for-asset-insights.md)
    + [Práticas recomendadas de formato de arquivo de ativos](assets-file-format-best-practices.md)
@@ -121,13 +121,13 @@ ht-degree: 38%
    + [Várias tendências para coleções, snippets e modelos de snippet](multi-tenancy.md)
    + [Marque com água seus ativos](watermarking.md)
    + [Modelos de ativos](asset-templates.md)
-   + [Práticas recomendadas para compartilhar pastas com o Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Práticas recomendadas para compartilhar pastas com [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
    + [Gerenciar tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configurar o Assets com o Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Publicar ativos no Brand Portal](brand-portal-publish-assets.md)
-   + [Publicar pastas no Brand Portal](brand-portal-publish-folder.md)
-   + [Publicar coleções no Brand Portal](brand-portal-publish-collection.md)
+   + [ [!DNL Assets] Configurar com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Publicar ativos em [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Publicar pastas em [!DNL Brand Portal]](brand-portal-publish-folder.md)
+   + [Publicar coleções em [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Fragmentos de conteúdo {#fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
@@ -148,7 +148,6 @@ ht-degree: 38%
    + [Criar projetos de tradução](translation-projects.md)
    + [Preparar ativos para tradução](preparing-assets-for-translation.md)
    + [Baixar ativos do Experience Manager](download-assets-from-aem.md)
-   + [Trabalhos assíncronos](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Insights de ativos](touch-ui-asset-insights.md)
    + [Ativar insights de ativos por meio do DTM](touch-ui-using-dtm-for-asset-insights.md)
