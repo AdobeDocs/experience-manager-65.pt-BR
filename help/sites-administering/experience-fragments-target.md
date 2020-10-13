@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 410858ee7d1b8022070445937731644724a90155
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 0%
 >6.5.3.0
 >
 >* **Domínios** do Externalizador agora podem ser selecionados.
+   >  **Observação:** Domínios do Externalizador são relevantes somente para o conteúdo do Fragmento de experiência que é enviado ao Público alvo, e não para metadados como Conteúdo de Oferta da Visualização.
 >
 >
 6.5.2.0:
@@ -136,7 +137,11 @@ As opções necessárias podem ser selecionadas em Propriedades **da** página d
 
    >[!CAUTION]
    >
-   >O domínio do externalizador é opcional. Um AEM externalizador é configurado quando você deseja que o conteúdo exportado aponte para um domínio de *publicação* específico. Para obter mais detalhes, consulte [Configuração do AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >O domínio do externalizador é opcional.
+   >
+   > Um AEM externalizador é configurado quando você deseja que o conteúdo exportado aponte para um domínio de *publicação* específico. Para obter mais detalhes, consulte [Configuração do AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >
+   > Observe também que os Domínios do Externalizador são relevantes somente para o conteúdo do Fragmento de experiência enviado ao Público alvo, e não para metadados, como Conteúdo de Oferta da Visualização.
 
    Por exemplo, para uma pasta:
 
