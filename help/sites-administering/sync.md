@@ -1,8 +1,8 @@
 ---
 title: Sincronização do usuário
 seo-title: Sincronização do usuário
-description: Saiba mais sobre a sincronização do usuário no AEM.
-seo-description: Saiba mais sobre a sincronização do usuário no AEM.
+description: Saiba mais sobre a sincronização de usuários no AEM.
+seo-description: Saiba mais sobre a sincronização de usuários no AEM.
 uuid: 0a519daf-21b7-4adc-b419-eeb8c404c54f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
+source-git-commit: 8ed7409740cdd3e45fad006dc6e470a06acc60fe
+workflow-type: tm+mt
+source-wordcount: '2436'
+ht-degree: 3%
 
 ---
 
@@ -74,7 +77,7 @@ Quando a sincronização do usuário estiver ativada, somente os usuários e gru
 
 1. Verifique se o código mais recente foi instalado:
 
-* [Atualizações da plataforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [Atualizações da plataforma AEM](https://helpx.adobe.com/br/experience-manager/kb/aem62-available-hotfixes.html)
 * [Atualizações do AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
@@ -123,13 +126,14 @@ Quando a sincronização do usuário estiver ativada, somente os usuários e gru
 >
 >* O usuário padrão atribuído é **`admin`**.
 >* Não utilize `communities-user-admin user.`
+
 >
 
 
 
 #### Como adicionar ACL {#addacls}
 
-* acessar CRXDE Lite
+* crxde lite de acesso
 
    * por exemplo, [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
@@ -137,7 +141,7 @@ Quando a sincronização do usuário estiver ativada, somente os usuários e gru
 * no painel direito, selecione a `Access Control` guia
 * selecione o `+` botão para adicionar uma entrada ACL
 
-   * **Principal**: *pesquisar usuário criado para sincronização do usuário*
+   * **Principal**: *procurar utilizador criado para sincronização de utilizador*
    * **Tipo**: `Allow`
    * **Privilégios**: `jcr:all`
    * **Restrições** rep:global: `*/activities/*`
@@ -152,7 +156,7 @@ Consulte também:
 * [Gerenciamento de direitos de acesso](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Seção Solução de problemas [Modificar Exceção da Operação Durante o Processamento](#modify-operation-exception-during-response-processing)da Resposta.
 
-### 3. Credenciais de Transporte de Distribuição do Apache Sling - Credenciais de Usuário baseadas em DistributionTransportSecretProvider {#adobegraniteencpasswrd}
+### 3. Distribuição de Adobe Granite - Provedor Secreto de Transporte de Senha Criptografado {#adobegraniteencpasswrd}
 
 **Configurar permissões**
 
@@ -164,7 +168,7 @@ Depois que um usuário autorizado, um membro do grupo de usuários **`administra
    * acessar o console [da Web](/help/sites-deploying/configuring-osgi.md)
 
       * por exemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-   * location `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
+   * location `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * selecione a configuração existente para abrir para edição (ícone de lápis)Verificar `property name`: **`socialpubsync-publishUser`**
 
    * defina o nome de usuário e a senha para o usuário [](#createauthuser) autorizado criado ao publicar na etapa 2
@@ -294,7 +298,7 @@ Se houver dados personalizados que serão sincronizados em várias instâncias d
 ![](assets/chlimage_1-26.png)
 
 * **Tipos**de nó Essa é a lista de tipos de nó que serão sincronizados. Qualquer tipo de nó diferente de sling:Folder precisa ser listado aqui (sling:folder é manipulado separadamente).
-lista padrão de tipos de nó a sincronizar:
+Lista padrão de tipos de nó a sincronizar:
 
    * rep:User
    * nt:unstructured
@@ -358,7 +362,7 @@ Repita essas etapas até que todas as instâncias de publicação tenham uma Sli
 
 Para que as atualizações sejam sincronizadas corretamente, é necessário modificar o construtor de pacote do cofre para sincronização do usuário:
 
-* em cada instância de publicação do AEM
+* em cada instância de publicação AEM
 * acessar o console [da Web](/help/sites-deploying/configuring-osgi.md)
 
    * por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
@@ -399,7 +403,7 @@ Por padrão, os dados do usuário criados no ambiente de publicação não apare
 
 Quando o console Administração e segurança [do](/help/sites-administering/security.md) usuário for usado para adicionar novos usuários ao ambiente de publicação, a sincronização do usuário sincronizará os novos usuários e sua associação de grupo com outras instâncias de publicação, se necessário. A sincronização do usuário também sincronizará os grupos de usuários criados por meio do console de segurança.
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 ### Como colocar a sincronização do usuário offline {#how-to-take-user-sync-offline}
 
@@ -409,7 +413,7 @@ Para verificar o estado da fila de distribuição:
 
 * sobre o autor:
 
-   * usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
+   * usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
       * procurar entradas em `/var/sling/distribution/packages`
 
@@ -474,7 +478,7 @@ Veja a seguir visualizações de como as configurações padrão editadas devem 
 
 ![](assets/chlimage_1-32.png)
 
-#### (publicar) Uma sincronização do Adobe Social - Fábrica de Observadores Diff {#publish-one-adobe-social-sync-diff-observer-factory}
+#### (publicar) Uma Adobe Social Sync - Fábrica de Observadores Diff {#publish-one-adobe-social-sync-diff-observer-factory}
 
 ![](assets/chlimage_1-33.png)
 
@@ -529,7 +533,7 @@ Ver seção [9. ID de Sling exclusiva](#unique-sling-id)
 
       * ao editar o pacote
 
-         * guia Filtros: Adicionar filtro: Caminho raiz: `/home`
+         * guia filtros: Adicionar filtro: Caminho raiz: `/home`
          * Guia Avançado: Manuseio de CA: `Overwrite`
    * [exportar o pacote](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
@@ -538,7 +542,7 @@ Ver seção [9. ID de Sling exclusiva](#unique-sling-id)
 
    * [importar o pacote](/help/sites-administering/package-manager.md#installing-packages)
 
-Para configurar ou ativar a sincronização do usuário, vá para a etapa 1: Apache Sling Distribution Agent - Fábrica de agentes de sincronização [](#apache-sling-distribution-agent-sync-agents-factory)
+Para configurar ou ativar a sincronização do usuário, vá para a etapa 1: [Apache Sling Distribution Agent - Fábrica de agentes de sincronização](#apache-sling-distribution-agent-sync-agents-factory)
 
 ### Quando um editor fica indisponível {#when-a-publisher-becomes-unavailable}
 
