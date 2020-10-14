@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
 workflow-type: tm+mt
-source-wordcount: '3842'
+source-wordcount: '3867'
 ht-degree: 10%
 
 ---
@@ -35,6 +35,10 @@ Esta seção descreve como criar, modificar e gerenciar predefinições de image
 ## Understanding Dynamic Media image presets {#understanding-image-presets}
 
 Como uma macro, uma predefinição de imagem é uma coleção predefinida de comandos de dimensionamento e formatação salvos com um nome. Para entender como as predefinições de imagens funcionam, suponha que seu site exija que cada imagem de produto apareça em tamanhos diferentes, formatos diferentes e taxas de compactação para desktop e delivery móvel.
+
+>[!NOTE]
+>
+>No modo Dynamic Media - Scene7, as predefinições de imagens são suportadas apenas para ativos de imagem.
 
 É possível criar duas predefinições de imagens: uma com 500 x 500 pixels para a versão para desktop e 150 x 150 pixels para a versão para dispositivos móveis. Você cria duas predefinições de imagens, uma chamada `Enlarge` para exibir imagens a 500 x 500 pixels e outra chamada `Thumbnail` para exibir imagens a 150 x 150 pixels. Para fornecer imagens no `Enlarge` e no `Thumbnail` tamanho, AEM a definição de Predefinição de ampliação de imagem e Predefinição de imagem em miniatura. Em seguida, AEM gera dinamicamente uma imagem no tamanho e nas especificações de formatação de cada predefinição de imagem.
 
@@ -62,7 +66,11 @@ Você gerencia as predefinições de imagens em AEM tocando ou clicando no logot
 >
 >O sistema exibe várias representações quando você seleciona Representações **** na Visualização Detalhe de um ativo. Você pode aumentar ou diminuir o número de predefinições de imagens exibidas. See [Increasing the number of image presets that display](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Formatos de arquivo Adobe Illustrator (AI), Postscript (EPS) e PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Recortes inteligentes, Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+
+>[!NOTE]
+>
+>Este tópico se aplica ao Dynamic Media - somente ao modo híbrido.
 
 Se você pretende oferecer suporte à ingestão de arquivos AI, EPS e PDF para que você possa gerar representações dinâmicas desses formatos de arquivo, talvez você queira revisar as seguintes informações antes de criar predefinições de imagem.
 
