@@ -3,9 +3,9 @@ title: Baixar ativos
 description: Saiba como baixar ativos [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '866'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Para baixar ativos, siga estas etapas:
 
    ![Opções disponíveis ao baixar ativos dos ativos Experience Manager](/help/assets/assets/asset-download1.png)
 
-   *Figura: Opções da caixa de diálogo de download.*
+   *Figura: Opções disponíveis na caixa de diálogo de download.*
 
 1. Na caixa de diálogo Download, selecione as opções de download desejadas.
 
@@ -73,6 +73,7 @@ O `Asset Download Servlet` pode ser desativado em instâncias de [!DNL Experienc
 
 >[!MORELIKETHIS]
 >
+>* [Baixar ativos usando o Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Baixe ativos](drm.md)protegidos por DRM.
 >* [Baixe ativos usando o aplicativo de desktop Experience Manager no desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)Win ou Mac.
 >* [Baixe ativos usando o Link de ativos Adobe nos aplicativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)Adobe Creative Cloud suportados.
