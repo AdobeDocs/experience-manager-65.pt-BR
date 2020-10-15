@@ -3,9 +3,9 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d2bc8c7c52084a415faaf8a5b68be7dc6fc461c4
+source-git-commit: c5972647d23b7e7bfd2fcd791648cb26de1fdb68
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2247'
 ht-degree: 41%
 
 ---
@@ -194,4 +194,6 @@ Para solucionar problemas do cenário de erro comum, siga estas etapas:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * Um ativo obtido da barragem remota pode não ser publicado em uma página da Web por um ou mais motivos. Ele não existe no servidor remoto, falta de permissões apropriadas para buscá-lo ou falha na rede pode ser o motivo. Verifique se o ativo não foi removido do DAM remoto. Verifique se as permissões apropriadas estão em vigor e se os pré-requisitos foram atendidos. Tente adicionar o ativo novamente à página e publique-o novamente. Verifique a [lista de trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) quanto a erros na busca de ativos.
-* Se você não conseguir acessar a implantação remota do DAM a partir da [!DNL Sites] implantação local, verifique se os cookies entre sites são permitidos. Se os cookies entre sites estiverem bloqueados, as duas implantações do podem não [!DNL Experience Manager] ser autenticadas. Por exemplo, [!DNL Google Chrome] no modo Incognito pode bloquear cookies de terceiros. Em [!DNL Chrome], clique no ícone &#39;olho&#39; na barra de endereços para permitir cookies ou consulte a ajuda sobre [como ativar cookies](https://support.google.com/chrome/answer/95647)de terceiros.
+* Se você não conseguir acessar a implantação remota do DAM a partir da [!DNL Sites] implantação local, verifique se os cookies entre sites são permitidos. Se os cookies entre sites estiverem bloqueados, as duas implantações do podem não [!DNL Experience Manager] ser autenticadas. Por exemplo, [!DNL Google Chrome] no modo Incognito pode bloquear cookies de terceiros. Para permitir cookies no [!DNL Chrome] navegador, clique no ícone &#39;olho&#39; na barra de endereços, navegue até Site Not Working > Blocked, selecione o URL do DAM remoto e permita o cookie do token de login. Como alternativa, consulte a ajuda sobre [como ativar cookies](https://support.google.com/chrome/answer/95647)de terceiros.
+
+![Erro de cookie no Chrome no modo cognito](assets/chrome-cookies-incognito-dialog.png)
