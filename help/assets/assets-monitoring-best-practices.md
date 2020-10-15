@@ -3,9 +3,9 @@ title: Práticas recomendadas para [!DNL Assets] monitorar a implantação
 description: Práticas recomendadas para monitorar o ambiente e o desempenho de [!DNL Adobe Experience Manager] sua implantação após sua implantação.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Você deve executar monitoração ao vivo durante a fase de teste de desempenho 
 * [Parte superior](https://man7.org/linux/man-pages/man1/top.1.html): Parte superior é um comando Linux que abre um painel, que exibe as estatísticas de uso, incluindo CPU, memória e uso de E/S. Ele fornece uma visão geral de alto nível do que está acontecendo em uma instância.
 * [Acima](https://hisham.hm/htop/): Htop é um visualizador de processo interativo. Ele fornece uso detalhado da CPU e da memória além do que o Top pode fornecer. O Htop pode ser instalado na maioria dos sistemas Linux usando `yum install htop` ou `apt-get install htop`.
 
-* [Iotop](https://guichaz.free.fr/iotop/): O Iotop é um painel detalhado para uso de E/S de disco. Ele exibe barras e medidores que mostram os processos que usam E/S de disco e a quantidade que eles usam. O Iotop pode ser instalado na maioria dos sistemas Linux usando `yum install iotop` ou `apt-get install iotop`.
+* Iotop: O Iotop é um painel detalhado para uso de E/S de disco. Ele exibe barras e medidores que mostram os processos que usam E/S de disco e a quantidade que eles usam. O Iotop pode ser instalado na maioria dos sistemas Linux usando `yum install iotop` ou `apt-get install iotop`.
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): O Iftop exibe informações detalhadas sobre o uso da rede/Ethernet. O Iftop exibe as estatísticas por canal de comunicação nas entidades que usam a Ethernet e a quantidade de largura de banda que usam. O Iftop pode ser instalado na maioria dos sistemas Linux usando `yum install iftop` ou `apt-get install iftop`.
 
