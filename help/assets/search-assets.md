@@ -4,15 +4,15 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 421f18bef4b0dbcad74e91316eead70036c9750e
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '5955'
+source-wordcount: '5968'
 ht-degree: 5%
 
 ---
 
 
-# Pesquisar ativos em [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Pesquisar ativos em [!DNL Adobe Experience Manager] {#assets-search-in-aem}
 
 [!DNL Adobe Experience Manager Assets] fornece métodos robustos de descoberta de ativos que ajudam você a atingir uma velocidade de conteúdo mais alta. Suas equipes reduzem o tempo de comercialização com uma experiência de pesquisa inteligente e perfeita, usando recursos prontos para uso e métodos personalizados. Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte de profissionais de criação, para o gerenciamento robusto de ativos por parte de usuários e comerciantes, ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que podem ser realizadas pela interface do [!DNL Assets] usuário ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
 
@@ -43,7 +43,7 @@ Familiarize-se com a interface de pesquisa e as ações disponíveis.
 
 ![Compreender a interface de resultados de pesquisa do Experience Manager Assets](assets/aem_search_results.png)
 
-*Figura: Entenda a interface dos resultados da[!DNL Experience Manager Assets]pesquisa.*
+*Figura: Entenda a interface dos resultados da [!DNL Experience Manager Assets] pesquisa.*
 
 **A.** Salve a pesquisa como uma coleção inteligente. **B.** Filtros ou previsões para restringir os resultados da pesquisa. **C.** Exibir arquivos, pastas ou ambos. **D.** Clique em Filtros para abrir ou fechar o painel à esquerda. **E.** O local de pesquisa é DAM. **F.** Campo Omnisearch com palavra-chave de pesquisa fornecida pelo usuário. **G.** Selecione os resultados de pesquisa carregados. **H.** Número de resultados de pesquisa exibidos fora do total de resultados de pesquisa. **Eu.** Feche a pesquisa **J.** Alterne entre a visualização da placa e a visualização da lista.
 
@@ -178,13 +178,13 @@ Você pode pesquisar ativos com base nos valores exatos de campos de metadados e
 | Altura da imagem | height:limite inferior..upperbound |
 | Person | pessoa:John |
 
-As propriedades `path`, `limit`, `size`e `orderby` não podem ser *OUed* com qualquer outra propriedade.
+As propriedades `path`, `limit`, `size`e `orderby` não podem ser combinadas usando `OR` operador com qualquer outra propriedade.
 
 A palavra-chave para uma propriedade gerada pelo usuário é seu rótulo de campo no editor de propriedades em minúsculas, com espaços removidos.
 
 Estes são alguns exemplos de formatos de pesquisa para query complexos:
 
-* Para exibir todos os ativos com vários campos de facetas (por exemplo: title=John Doe e ferramenta criadora = Adobe Photoshop): `tiltle:"John Doe" creatortool:Adobe*`
+* Para exibir todos os ativos com vários campos de facetas (por exemplo: title=John Doe e ferramenta criadora = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
 * Para exibir todos os ativos quando o valor de facetas não for uma única palavra, mas uma sentença (por exemplo: title=Scott Reynolds): `title:"Scott Reynolds"`
 * Para exibir ativos com vários valores de uma única propriedade (por exemplo: title=Scott Reynolds ou John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * Para exibir ativos com valores de propriedade começando com uma string específica (por exemplo: o título é Scott Reynolds): `title:Scott*`
@@ -284,6 +284,8 @@ A funcionalidade de pesquisa pode ter limitações de desempenho nos seguintes c
 * **Marcação**: As tags ajudam a categorizar ativos que podem ser pesquisados e pesquisados com mais eficiência. A marcação ajuda a propagar a taxonomia apropriada para outros usuários e workflows. [!DNL Experience Manager] Métodos do oferta para marcar automaticamente ativos usando serviços inteligentes e artificialmente Adobe Sensei que continuam melhorando ao marcar seus ativos com uso e treinamento. Quando você pesquisa ativos, as tags inteligentes são fatoradas se o recurso estiver ativado em sua conta. Funciona juntamente com a funcionalidade de pesquisa incorporada. Consulte Comportamento [da](#searchbehavior)pesquisa. Para otimizar a ordem na qual os resultados da pesquisa são exibidos, é possível [aumentar a classificação](#searchrank) de pesquisa de alguns ativos selecionados.
 
 * **Indexação**: Somente metadados indexados e ativos são retornados nos resultados da pesquisa. Para melhor cobertura e desempenho, assegure a indexação correta e siga as práticas recomendadas. Consulte [indexação](#searchindex).
+
+* Para excluir ativos específicos dos resultados da pesquisa, use a `excludedPath` propriedade no índice Lucene.
 
 ## Alguns exemplos ilustrando a pesquisa {#samples}
 
@@ -438,7 +440,7 @@ Você pode baixar os ativos pesquisados e suas representações da mesma forma q
 
 Para os ativos que estão disponíveis em uma única pasta ou coleção, é mais fácil [atualizar os metadados em massa](/help/assets/metadata.md) sem usar a funcionalidade de pesquisa. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é mais rápido atualizar os metadados em massa por meio da pesquisa.
 
-### Coleções inteligentes {#collections-1}
+### Coleções inteligentes {#smart-collections}
 
 Uma coleção é um conjunto ordenado de ativos que podem incluir ativos de locais diferentes, pois as coleções contêm somente referências a esses ativos. As coleções são dos dois tipos a seguir:
 
@@ -457,13 +459,13 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 | Nenhuma sugestão de preenchimento automático para ativos. | Os ativos carregados recentemente ainda não estão indexados. Os metadados não estão disponíveis imediatamente como sugestões quando você start digitar uma palavra-chave de pesquisa na barra Omnisearch. | [!DNL Assets] aguarda até a expiração de um período de tempo limite (uma hora por padrão) antes de executar um trabalho em segundo plano para indexar os metadados de todos os ativos recentemente carregados ou atualizados e, em seguida, adiciona os metadados à lista de sugestões. |
 | Nenhum resultado de pesquisa. | <ul><li>Os ativos correspondentes ao seu query não existem. </li><li> Espaço em branco adicionado antes do query de pesquisa. </li><li> O campo de metadados não suportados contém a palavra-chave que você pesquisou.</li><li> Pesquisa feita durante o tempo de inatividade de um ativo. </li></ul> | <ul><li>Pesquise usando uma palavra-chave diferente. Como alternativa, use a marcação inteligente ou a pesquisa de semelhança para melhorar os resultados da pesquisa. </li><li>[Limitação](#limitations)conhecida.</li><li>Nem todos os campos de metadados são considerados para pesquisas. Consulte [escopo](#scope).</li><li>Pesquise mais tarde ou modifique os ativos necessários em tempo real e inativo.</li></ul> |
 | O filtro de pesquisa ou um predicado não está disponível. | <ul><li>O filtro de pesquisa não está configurado.</li><li>Ele não está disponível para seu logon.</li><li>(Menos provável) As opções de pesquisa não são personalizadas na implantação que você está usando.</li></ul> | <ul><li>Entre em contato com o administrador para verificar se as personalizações de pesquisa estão disponíveis ou não.</li><li>Entre em contato com o administrador para verificar se sua conta tem o privilégio/permissões para usar a personalização.</li><li>Entre em contato com o administrador e verifique as personalizações disponíveis para a [!DNL Assets] implantação que você está usando.</li></ul> |
-| Ao procurar imagens visualmente semelhantes, uma imagem esperada está ausente. | <ul><li>A imagem não está disponível em [!DNL Experience Manager].</li><li>A imagem não está indexada. Normalmente, quando é carregado recentemente.</li><li>A imagem não está com tags inteligentes.</li></ul> | <ul><li>Adicione a imagem a [!DNL Assets].</li><li>Entre em contato com o administrador para reindexar o repositório. Além disso, verifique se você está usando o índice apropriado.</li><li>Entre em contato com o administrador para obter uma tag inteligente dos ativos relevantes.</li></ul> |
+| Ao procurar imagens visualmente semelhantes, uma imagem esperada está ausente. | <ul><li>A imagem não está disponível em [!DNL Experience Manager].</li><li>A imagem não está indexada. Normalmente, quando é carregado recentemente.</li><li>A imagem não está com tags inteligentes.</li></ul> | <ul><li>Adicione a imagem a [!DNL Assets].</li><li>Entre em contato com o administrador para indexar novamente o repositório. Além disso, verifique se você está usando o índice apropriado.</li><li>Entre em contato com o administrador para obter uma tag inteligente dos ativos relevantes.</li></ul> |
 | Ao procurar imagens visualmente semelhantes, uma imagem irrelevante é exibida. | Comportamento da pesquisa visual. | [!DNL Experience Manager] exibe quantos ativos potencialmente relevantes forem possíveis. Imagens menos relevantes, se houver, são adicionadas aos resultados, mas com uma classificação de pesquisa mais baixa. A qualidade das correspondências e a relevância dos ativos pesquisados diminuem à medida que você percorre os resultados da pesquisa. |
 | Ao selecionar e operar nos resultados da pesquisa, todos os ativos pesquisados não são operados. | A opção [!UICONTROL Selecionar tudo] seleciona apenas os primeiros 100 resultados de pesquisa na visualização do cartão e os primeiros 200 resultados de pesquisa na visualização da lista. |  |
 
 >[!MORELIKETHIS]
 >
->* [Guia de implementação de pesquisa de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [[!DNL Experience Manager] guia de implementação de pesquisa](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuração avançada para aumentar os resultados da pesquisa](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configurar pesquisa de tradução inteligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
