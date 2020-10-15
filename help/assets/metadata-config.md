@@ -3,9 +3,9 @@ title: Configuração e administração da funcionalidade de metadados.
 description: Configuração e administração [!DNL Experience Manager Assets] da funcionalidade relacionada à adição e gerenciamento de metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1953'
 ht-degree: 5%
 
 ---
@@ -109,7 +109,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 1. Clique em **[!UICONTROL Excluir Perfis]** de metadados na barra de ferramentas.
 1. Na caixa de diálogo, clique em **[!UICONTROL Excluir]** para confirmar a operação de exclusão. O perfil de metadados é excluído da lista.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps.
+<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
 These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
@@ -269,7 +269,6 @@ Insira os valores de metadados nos vários campos e clique em **[!UICONTROL Salv
 >[!MORELIKETHIS]
 >
 >* [Conceitos de metadados e compreensão](metadata-concepts.md).
->* [Edite as propriedades de metadados de várias coleções](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 >* [Edite as propriedades de metadados de várias coleções](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 >* [Importação e exportação de metadados no Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
