@@ -3,7 +3,7 @@ title: Processar ativos usando manipuladores de mídia e workflows
 description: Saiba mais sobre os manipuladores de mídia e como usar workflows para executar tarefas em seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 4%
@@ -447,7 +447,7 @@ As conversões a seguir podem ser executadas e armazenadas automaticamente em [!
 * Transformação de EPS e AI usando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/).
 * Transcodificação de vídeo FLV usando [FFmpeg](https://ffmpeg.org/).
 * Codificação MP3 usando [LAME](https://lame.sourceforge.io/).
-* Processamento de áudio usando [SOX](http://sox.sourceforge.net/).
+* Processamento de áudio usando [SOX](https://sox.sourceforge.net/).
 
 >[!NOTE]
 >
