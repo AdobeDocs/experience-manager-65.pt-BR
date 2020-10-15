@@ -3,9 +3,9 @@ title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Mana
 description: Saiba mais sobre os tipos de metadados e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] como tornar possível organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2423'
 ht-degree: 11%
 
 ---
@@ -49,7 +49,7 @@ Para editar os metadados de um ativo na interface do [!DNL Assets] usuário, sig
 
    ![Selecione Propriedades de um ativo para visualização de seus metadados](assets/asset-metadata.png)
 
-   *Figura: Edite ou adicione metadados na página[!UICONTROL Propriedades]do ativo.*
+   *Figura: Edite ou adicione metadados na página [!UICONTROL Propriedades] do ativo.*
 
 1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
@@ -68,7 +68,7 @@ XMP gravação é suportada e ativada para plataformas e formatos de arquivos de
 * Alterar propriedades de metadados para um valor comum
 * Adicionar ou modificar tags
 
-Para personalizar a página de propriedades de metadados, incluindo adicionar, modificar e excluir propriedades de metadados, use o editor de schemas.
+Para personalizar a página de propriedades de metadados, incluindo adicionar, modificar e excluir propriedades de metadados, use o editor [de](metadata-config.md#folder-metadata-schema)schemas.
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do n
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você tenha alterado posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
 
-### Aplicar perfis de metadados a pastas da interface do usuário do Perfis {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Aplicar perfis de metadados a pastas da interface do usuário de [!UICONTROL Perfis] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Siga as etapas para aplicar o perfil de metadados:
 
@@ -196,7 +196,7 @@ Siga as etapas para aplicar o perfil de metadados:
 1. Selecione o perfil de metadados que deseja aplicar a uma pasta ou várias pastas.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-### Aplicar perfis de metadados a pastas a partir de Propriedades {#applying-metadata-profiles-to-folders-from-properties}
+### Aplicar perfis de metadados a pastas de [!UICONTROL Propriedades] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. No painel esquerdo, clique em **[!UICONTROL Ativos]** e navegue até a pasta à qual deseja aplicar um perfil de metadados.
 1. Na pasta, clique na marca de seleção para selecioná-la e clique em **[!UICONTROL Propriedades]**.
@@ -205,9 +205,11 @@ Siga as etapas para aplicar o perfil de metadados:
 
 As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-### Aplicar perfil de metadados globalmente {#metadata-profile-global}
+<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
 
-Para obter detalhes, consulte a [configuração para aplicar o perfil de metadados globalmente](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+### Apply metadata profile globally {#metadata-profile-global}
+
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
 ### Remover um perfil de metadados das pastas {#removing-a-metadata-profile-from-folders}
 
