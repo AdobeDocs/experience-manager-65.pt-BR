@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guia de ativos
-breadcrumb-title: Assets Guide
-user-guide-description: Create, manage, deliver, and optimize digital assets.
+user-guide-title: Guia do Assets
+breadcrumb-title: Guia do Assets
+user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
-source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 36%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Guia de ativos {#assets}
+# Guia do Assets {#assets}
 
 + [[!DNL Assets] guia do usuário](home.md)
 + [[!DNL Experience Manager] 6.5 Notas de versão dos ativos](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
@@ -28,6 +28,7 @@ ht-degree: 36%
    + [Ativos [!DNL Adobe Stock] do usuário em ativos](aem-assets-adobe-stock.md)
    + [Visualização de ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
+   + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
    + [Atividade na linha do tempo](activity-stream.md)
    + [Processar ativos](assets-workflow.md)
    + [Adicionar mapas de imagem](image-maps.md)
@@ -93,11 +94,12 @@ ht-degree: 36%
    + [Formatos de arquivo não suportados](assets-formats.md)
    + [Pesquisar aspectos](search-facets.md)
    + [Compreender conceitos de metadados](metadata-concepts.md)
-   + [Configuração da funcionalidade de metadados](metadata-config.md)
+   + [Configurar a funcionalidade de metadados](metadata-config.md)
+   + [Esquemas de metadados](metadata-schemas.md)
    + [Write-back de XMP a execuções](xmp-writeback.md)
    + [Compartilhamento de link de ativos](link-sharing.md)
    + [Relatórios de ativos](asset-reports.md)
-   + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
+   + [Configurar o Serviço de conteúdo inteligente para marcação](config-smart-tagging.md)
    + [Perfis para processar metadados, imagens e vídeos](processing-profiles.md)
    + [Criar e configurar páginas do Editor de ativos](assets-finder-editor.md)
    + [Guia de dimensionamento de ativos](assets-sizing-guide.md)
@@ -117,12 +119,10 @@ ht-degree: 36%
    + [apoio Camera Raw](camera-raw.md)
    + [Detectar o tipo MIME de ativos usando o Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificação de imagens](imaging-transcoding-library.md)
-   + [Esquemas de metadados](metadata-schemas.md)
    + [Várias tendências para coleções, snippets e modelos de snippet](multi-tenancy.md)
    + [Marque com água seus ativos](watermarking.md)
    + [Modelos de ativos](asset-templates.md)
    + [Práticas recomendadas para compartilhar pastas com [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
-   + [Gerenciar tags inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [ [!DNL Assets] Configurar com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos em [!DNL Brand Portal]](brand-portal-publish-assets.md)
@@ -141,7 +141,6 @@ ht-degree: 36%
 + Manage Assets {#managing}
    + [Gerenciar ativos digitais](managing-assets-touch-ui.md)
    + [Gerenciar coleções](managing-collections-touch-ui.md)
-   + [Configurar a marcação usando o Serviço de conteúdo inteligente](config-smart-tagging.md)
    + [Ativar detecção de duplicados](duplicate-detection.md)
    + [Organizar ativos digitais](organize-assets.md)
    + [Gerenciar ativos de vídeo](managing-video-assets.md)
@@ -158,5 +157,4 @@ ht-degree: 36%
    + [Gerenciar ativos compostos](managing-linked-subassets.md)
    + [Ativos relacionados](related-assets.md)
    + [Compartilhamento de pasta particular](private-folder.md)
-   + [Diretrizes de treinamento para o Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
    + [Execuções de vídeo](video-renditions.md)
