@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de versão anteriores do Servi
 description: Notas de versão para [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: 263a25b70fe4a3e7de65b47f07932d2e5f3d0197
 workflow-type: tm+mt
-source-wordcount: '11487'
+source-wordcount: '11483'
 ht-degree: 26%
 
 ---
@@ -83,7 +83,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Agora é possível colocar o foco do teclado na lista [!UICONTROL Comentários] e na opção clicável para [!UICONTROL Criar] comentários da versão em [!UICONTROL Criar nova versão] no painel Ativos da [!UICONTROL Linha] do tempo (NPR-33424).
 
-* Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas do teclado (NPR-33420).
+* Agora é possível acessar a opção Configurações [!UICONTROL de] Visualização para ativos e alterar configurações na caixa de diálogo Configurações [!UICONTROL de] Visualização usando teclas de teclado (NPR-33420).
 
 * O pop-up da caixa de lista da caixa de combinação (em vários campos em páginas diferentes) agora mostra as entradas como uma lista de opções que podem ser anunciadas pelos leitores de tela (NPR-33516).
 
@@ -693,7 +693,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * Uma exceção é exibida durante [!DNL Experience Manager] a pesquisa para obter detalhes de um ativo (CQ-4283569).
 
-### Sites {#sites}
+### Sites
 
 * Se a herança do LiveCopy for quebrada, as páginas de Live Copy exibirão links de cópia de idioma em vez de links do LiveCopy (NPR-30980).
 * Para um novo Blueprint, se o número de registros for superior a 40, somente os primeiros 40 registros serão exibidos. O Blueprint exibe linhas em branco para o restante dos registros (NPR-31182).
@@ -725,7 +725,7 @@ Remove one mention of this fix.
 
 * Dois pop-ups de calendário são exibidos ao selecionar a opção Data de vencimento em um trabalho de tradução (NPR-31270).
 
-### Plataforma {#platform}
+### Plataforma
 
 * A opção de tipo Mime no console da Web não funciona (NPR-31108).
 
@@ -745,7 +745,7 @@ Remove one mention of this fix.
 
 * O `org.apache.sling.distribution.api` pacote está oculto no gerenciador de configuração e, portanto, não está disponível para pacotes personalizados (NPR-31720).
 
-### Projetos {#projects}
+### Projetos
 
 * A alternância de visualizações de calendário não funciona (NPR-31271).
 
@@ -854,7 +854,7 @@ Alguns destaques principais desta versão do Service pack:
 * Correção para garantir que a exibição da coluna da interface do usuário do ativo mostre somente conteúdo específico do locatário.
 * Correção para permitir que as alterações de acordeão de estilo reflitam nos resultados de pesquisa.
 
-### Assets {#assets}
+### Ativos
 
 **Aprimoramentos do produto**
 
@@ -961,7 +961,7 @@ Alguns destaques principais desta versão do Service pack:
 
 * A atualização da instância de 6.3.3.2 para 6.5 resulta em configurações OSGi duplicadas. NPR-30130: Hotfix do CQ-4274016
 
-### Integração {#integration}
+### Integração
 
 * O conteúdo personalizado não é exibido corretamente na instância de publicação até a reinicialização da instância. NPR-30377: Hotfix do CQ-4273706
 * Ao configurar o Launch em um site, o endereço da biblioteca tem uma barra (/) anexada, sempre causando intervenção manual. NPR-30694: Hotfix do CQ-4275501
@@ -976,7 +976,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Added &#39;Auto&#39; setting to `RenderAtClient` in `PDFFormRenderOptions` API for [!DNL Experience Manager] Forms OSGi.
 
-#### Pacote complementar do Forms {#forms-add-on-package}
+#### Pacote complementar do Forms
 
 **Integração back end**
 
@@ -1006,7 +1006,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Ao usar o NonVisual Desktop Access no modo Procurar para ler um formulário HTML5, o navegador Chrome lê &quot;gráfico&quot; antes de cada Gráfico de vetor escalonável (SVG) no design do formulário. NPR-30449: Hotfix do CQ-4274732
 
-#### Instalador do Forms JEE {#forms-jee-installer}
+#### Instalador do Forms JEE
 
 **Forms - Segurança de documentos**
 
@@ -1021,7 +1021,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 * O serviço HTMLtoPDF não mostra maxReuseCount no console JMX. NPR-30134, NPR-30304: Hotfix do CQ-4273763
 * Adding or editing a Web Service connection by invoking web services from [!DNL Experience Manager Forms] Workbench throws an error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: Hotfix do CQ-4273217
 
-### Feature Packs incluídos {#feature-packs-included}
+### Feature Packs incluídos
 
 >[!NOTE]
 >
