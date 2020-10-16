@@ -4,10 +4,10 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '5968'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -358,7 +358,7 @@ A pesquisa visual usa marcação inteligente e requer [!DNL Experience Manager] 
 1. No CRXDE, no `/oak-index/damAssetLucene` nó, defina a `reindex` propriedade como `true`. Salve as alterações.
 1. (Opcional) Se você tiver um formulário de pesquisa personalizado, copie o `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` nó para `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salve as alterações.
 
-Para obter informações relacionadas, consulte [entender tags inteligentes no Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) e [como gerenciar tags](/help/assets/managing-smart-tags.md)inteligentes.
+Para obter informações relacionadas, consulte [entender tags inteligentes no Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) e [como gerenciar tags](/help/assets/enhanced-smart-tags.md)inteligentes.
 
 >[!CAUTION]
 >
