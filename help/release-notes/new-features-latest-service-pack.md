@@ -4,9 +4,9 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
+source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2561'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ Agora você pode optar por publicar ou cancelar a publicação seletiva de ativo
 ### Preencher previamente um formulário adaptável no cliente {#prefill-merge-data-at-client}
 
 Ao preencher previamente um formulário adaptável, o [!DNL Experience Manager Forms] servidor mescla os dados com um formulário adaptável e fornece o formulário preenchido. Por padrão, a ação de união de dados ocorre no servidor.
-Agora você pode configurar o [!DNL Experience Manager Forms] servidor para executar a ação de união de dados no cliente em vez do servidor. Reduz significativamente o tempo necessário para preencher e renderizar formulários adaptáveis.
+Agora você pode configurar o [!DNL Experience Manager Forms] servidor para [executar a ação de união de dados no cliente](../../help/forms/using/prepopulate-adaptive-form-fields.md) em vez do servidor. Reduz significativamente o tempo necessário para preencher e renderizar formulários adaptáveis.
 
 ### Integração do modelo de dados de formulário com APIs RESTful em um servidor com implementação SSL bidirecional {#fdm-integration-rest-apis-two-way-ssl}
 
@@ -87,7 +87,7 @@ Agora você pode configurar o [!DNL Experience Manager Forms] servidor para exec
 
 Se um formulário AcroForm incluir [!DNL Adobe Sign] Tags de texto, esses campos agora serão reconhecidos e representados como [!DNL Adobe Sign] campos no formulário adaptável convertidos usando [!DNL Automated Forms Conversion service]. Um assinante pode preencher esses campos ao assinar o formulário adaptável.
 
-### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
 
 Você pode usar [!DNL Automated Forms Conversion service] para converter PDF forms coloridos em formulários adaptáveis.
 
@@ -97,7 +97,7 @@ Você pode usar [!DNL Automated Forms Conversion service] para converter PDF for
 
 ### Cache aprimorado para páginas de formulário adaptáveis traduzidas {#enhanced-caching-translated-adaptive-forms}
 
-Agora é possível especificar a localidade como um seletor em vez de um argumento de URL. Ajuda a colocar em cache formulários adaptáveis traduzidos [!DNL Experience Manager Dispatcher].
+Agora é possível especificar a [localidade como um seletor no URL do formulário adaptável em vez de um argumento no URL](../../help/forms/using/supporting-new-language-localization.md)do formulário adaptável. Ajuda a colocar em cache formulários adaptáveis traduzidos [!DNL Experience Manager Dispatcher]. Não era possível armazenar em cache o formulário adaptável traduzido em versões anteriores. Para obter informações detalhadas sobre como configurar o cache para usar a localidade como seletor no URL do formulário adaptável, consulte [Configurar o cache do formulário adaptável no dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
 
 ### Salvar saída do serviço de modelo de dados de formulário em uma variável {#save-fdm-service-to-variable}
 
@@ -105,7 +105,9 @@ O modelo de dados de formulário permite salvar a saída de um serviço de model
 
 ### Anexar vários arquivos para o componente Anexo de arquivo {#attach-multiple-files}
 
-Agora é possível anexar vários arquivos ao componente Anexo [!UICONTROL de arquivo] dos formulários adaptáveis.
+Agora você pode [anexar vários arquivos](../../help/forms/using/introduction-forms-authoring.md) ao componente Anexo [!UICONTROL de arquivo] dos formulários adaptáveis.
+
+
 
 ## Principais recursos dos Service Packs anteriores do Experience Manager 6.5 {#key-features-previous-service-packs}
 
