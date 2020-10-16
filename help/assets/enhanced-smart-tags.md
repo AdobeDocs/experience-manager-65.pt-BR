@@ -3,17 +3,15 @@ title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Tags inteligentes aprimoradas {#enhanced-smart-tags}
-
-## Visão geral de tags inteligentes aprimoradas {#overview-of-enhanced-smart-tags}
 
 As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar ativos digitais de uma classe específica. Marcar ativos com um vocabulário controlado por taxonomia garante que eles possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
 
@@ -60,70 +58,36 @@ O processo de integração é concluído quando o administrador configura o serv
 
 ## Revisar ativos e tags {#reviewing-assets-and-tags}
 
-Depois que você estiver integrado, a primeira coisa que deseja fazer é identificar um conjunto de tags que melhor descrevem essas imagens no contexto de sua empresa.
+Depois que você estiver integrado, a primeira coisa que deseja fazer é identificar um conjunto de tags que descrevam melhor essas imagens no contexto de sua empresa.
 
-Em seguida, analise as imagens para identificar um conjunto de imagens que melhor representem seu produto para um requisito comercial específico. Certifique-se de que os ativos no conjunto preparado estejam em conformidade com as diretrizes [de treinamento do Serviço de conteúdo](smart-tags-training-guidelines.md)inteligente.
+Em seguida, analise as imagens para identificar um conjunto de imagens que melhor representem seu produto para um requisito comercial específico. Certifique-se de que os ativos no conjunto preparado estejam em conformidade com as diretrizes [de treinamento do Serviço de conteúdo](/help/assets/config-smart-tagging.md#training-the-smart-content-service)inteligente.
 
 Adicione os ativos a uma pasta e aplique as tags a cada ativo da página de propriedades. Em seguida, execute o fluxo de trabalho de treinamento nesta pasta. O conjunto preparado de ativos permite que o Serviço de conteúdo inteligente treine com eficácia mais ativos usando suas definições de taxonomia.
 
 >[!NOTE]
 >
 >1. A formação é um processo irrevogável. A Adobe recomenda que você revise as tags no conjunto de ativos preparado bem antes de treinar o Serviço de conteúdo inteligente nas tags.
->1. Antes de treinar para uma tag, consulte as diretrizes [de treinamento do Serviço de conteúdo](smart-tags-training-guidelines.md)inteligente.
+>1. Antes de treinar para uma tag, consulte as diretrizes [de treinamento do Serviço de conteúdo](/help/assets/config-smart-tagging.md#training-the-smart-content-service)inteligente.
 >1. Quando você treina o Serviço de conteúdo inteligente pela primeira vez, o Adobe recomenda que você o treine em pelo menos duas tags distintas.
 
 
-## Treinar o Serviço de conteúdo inteligente {#training-the-smart-content-service}
+## Compreender os resultados da [!DNL Experience Manager] pesquisa com tags inteligentes {#understandsearch}
 
-Para que o Serviço de conteúdo inteligente reconheça a taxonomia de sua empresa, execute-a em um conjunto de ativos que já incluem tags relevantes para sua empresa. Após o treinamento, o serviço pode aplicar a mesma taxonomia em um conjunto de ativos semelhante.
+Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com uma `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` cláusula adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. For example, consider searching for `woman running`. Por padrão, os ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa. No entanto, um ativo marcado com tags inteligentes `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
 
-Você pode treinar o serviço várias vezes para melhorar sua capacidade de aplicar tags relevantes. Após cada ciclo de treinamento, execute um fluxo de trabalho de marcação e verifique se seus ativos estão marcados corretamente.
+* ativos com `woman` e `running` palavras-chave nos metadados.
 
-Você pode treinar o Serviço de conteúdo inteligente periodicamente ou com base em requisitos.
+* ativos marcados com inteligência com qualquer uma das palavras-chave.
 
->[!NOTE]
+Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos campos de metadados são exibidos primeiro, seguidos dos resultados da pesquisa que correspondem a qualquer um dos termos de pesquisa nas tags inteligentes. No exemplo acima, a ordem aproximada de exibição dos resultados da pesquisa é:
+
+1. corresponde `woman running` aos vários campos de metadados.
+1. corresponde a `woman running` em tags inteligentes.
+1. correspondências de `woman` ou de `running` em tags inteligentes.
+
+>[!CAUTION]
 >
->O fluxo de trabalho de treinamento é executado somente em pastas.
-
-### Formação contínua {#periodic-training}
-
-Você pode ativar o Serviço de conteúdo inteligente para treinar periodicamente nos ativos e tags associadas em uma pasta. Abra a página [!UICONTROL Propriedades] da sua pasta de ativos, selecione **[!UICONTROL Ativar tags]** inteligentes na guia **[!UICONTROL Detalhes]** e salve as alterações.
-
-![enable_smart_tags](assets/enable_smart_tags.png)
-
-Quando essa opção for selecionada para uma pasta, [!DNL Experience Manager] executará um fluxo de trabalho de treinamento automaticamente para treinar o Serviço de conteúdo inteligente nos ativos da pasta e em suas tags. Por padrão, o fluxo de trabalho de treinamento é executado semanalmente às 12h30 do sábado.
-
-### Treinamento sob demanda {#on-demand-training}
-
-Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no console Fluxo de trabalho.
-
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
-1. Na caixa de diálogo **[!UICONTROL Executar fluxo de trabalho]** , navegue até a pasta de carga que inclui os ativos marcados para treinar o serviço.
-1. Especifique um título para o fluxo de trabalho e adicione um comentário. Em seguida, clique em **[!UICONTROL Executar]**. Os ativos e as tags são enviados para treinamento.
-
-   ![workflow_dialog](assets/workflow_dialog.png)
-
->[!NOTE]
->
->Depois que os ativos em uma pasta são processados para treinamento, somente os ativos modificados são processados em ciclos de treinamento subsequentes.
-
-### Relatórios de treinamento de visualização {#viewing-training-reports}
-
-Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags no conjunto de ativos de treinamento, reveja o relatório de fluxo de trabalho de treinamento no console Relatórios.
-
-1. Na [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
-1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
-1. Especifique um título e uma descrição para o relatório. Em **[!UICONTROL Agendar relatório]**, deixe a opção **[!UICONTROL Agora]** selecionada. Se desejar agendar o relatório para posteriormente, selecione **[!UICONTROL Posteriormente]** e especifique uma data e hora. Then, click **[!UICONTROL Create]** from the toolbar.
-1. Na página **[!UICONTROL Relatórios de ativos]**, selecione o relatório gerado. To view the report, click **[!UICONTROL View]** from the toolbar.
-1. Revise os detalhes do relatório.
-
-   O relatório exibe o status do treinamento das tags que você treinou. A cor verde na coluna **[!UICONTROL Status de treinamento]** indica que o Serviço de conteúdo inteligente foi treinado para a tag. A cor amarela indica que o serviço não é completamente treinado para uma tag específica. Nesse caso, adicione mais imagens com a tag específica e execute o fluxo de trabalho de treinamento para treinar o serviço completamente na tag.
-
-   Se você não vir suas tags neste relatório, execute o fluxo de trabalho de treinamento novamente para essas tags.
-
-1. Para baixar o relatório, selecione-o na lista e clique em **[!UICONTROL Download]** na barra de ferramentas. O relatório é baixado como uma planilha do Microsoft Excel.
+>Se a indexação do Lucene for feita fora [!DNL Adobe Experience Manager] , a pesquisa com base em tags inteligentes não funcionará como esperado.
 
 ## Marcar ativos automaticamente {#tagging-assets-automatically}
 
@@ -143,10 +107,7 @@ Depois que essa opção é selecionada para uma pasta, o Serviço de conteúdo i
 
 ### Marcação sob demanda {#on-demand-tagging}
 
-Você pode acionar o fluxo de trabalho de marcação do seguinte para marcar instantaneamente seus ativos:
-
-* Console de fluxo de trabalho
-* Linha do tempo
+Você pode acionar o fluxo de trabalho de marcação do console do fluxo de trabalho ou da linha do tempo para marcar instantaneamente seus ativos.
 
 >[!NOTE]
 >
@@ -164,7 +125,7 @@ Você pode acionar o fluxo de trabalho de marcação do seguinte para marcar ins
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Navegue até a pasta de ativos e reveja as tags para verificar se o Smart Content Service marcou seus ativos corretamente. Para obter detalhes, consulte [Gerenciamento de tags](managing-smart-tags.md)inteligentes.
+   Navegue até a pasta de ativos e reveja as tags para verificar se o Smart Content Service marcou seus ativos corretamente.
 
 #### Marcar ativos da linha do tempo {#tagging-assets-from-the-timeline}
 
@@ -175,12 +136,29 @@ Você pode acionar o fluxo de trabalho de marcação do seguinte para marcar ins
    ![start_workflow](assets/start_workflow.png)
 
 1. Selecione o fluxo de trabalho dos Ativos **[!UICONTROL de tags inteligentes do]** DAM e especifique um título para o fluxo de trabalho.
-1. Clique em **[!UICONTROL Start]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e reveja as tags para verificar se o Smart Content Service marcou seus ativos corretamente. Para obter detalhes, consulte [Gerenciamento de tags](managing-smart-tags.md)inteligentes.
+1. Clique em **[!UICONTROL Start]**. O fluxo de trabalho aplica suas tags em ativos. Navegue até a pasta de ativos e reveja as tags para verificar se o Smart Content Service marcou seus ativos corretamente.
 
 >[!NOTE]
 >
 >Nos ciclos de marcação subsequentes, somente os ativos modificados são marcados novamente com tags treinadas recentemente.No entanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede 6 meses.
 
+## Preparar ou moderar as tags inteligentes aplicadas {#manage-smart-tags}
+
+É possível preparar tags inteligentes para remover tags imprecisas que possam ter sido atribuídas às imagens da sua marca, de modo que somente as tags mais relevantes sejam exibidas.
+
+A moderação de tags inteligentes também ajuda a refinar pesquisas baseadas em tags para imagens, garantindo que sua imagem apareça nos resultados da pesquisa para obter as tags mais relevantes. Essencialmente, ajuda a eliminar as chances de imagens não relacionadas aparecerem nos resultados da pesquisa.
+
+Também é possível atribuir uma classificação mais alta a uma tag para aumentar sua relevância em relação a uma imagem. A promoção de uma tag para uma imagem aumenta as chances de a imagem aparecer nos resultados da pesquisa quando uma pesquisa é realizada com base na tag específica.
+
+1. Na caixa Omnisearch, procure ativos com base em uma tag.
+1. Inspect os resultados da pesquisa para identificar uma imagem que você não acha relevante para sua pesquisa.
+1. Selecione a imagem e clique em **[!UICONTROL Gerenciar tags]** na barra de ferramentas.
+1. Na página **[!UICONTROL Gerenciar tags]** , inspecione as tags. Se você não quiser que a imagem seja pesquisada com base em uma tag específica, selecione a tag e clique em **[!UICONTROL Excluir]** na barra de ferramentas. Como alternativa, clique no `x` símbolo que aparece ao lado de uma tag.
+1. Como opção, para atribuir uma classificação mais alta a uma tag, selecione a tag e clique em **[!UICONTROL Promover]** na barra de ferramentas. A tag promovida é movida para a seção **[!UICONTROL Tags]** .
+1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
+1. Navegue até a página **[!UICONTROL Propriedades]** da imagem. Observe que a tag promovida tem mais relevância e aparece mais cedo nos resultados da pesquisa.
+
 ## Dicas e limitações {#tips-best-practices-limitations}
 
 * O uso do Smart Content Services é limitado a até 2 milhões de imagens marcadas por ano. Todas as imagens de duplicado que são processadas e marcadas são contadas como imagens marcadas.
+* Se você executar o fluxo de trabalho de marcação a partir da linha do tempo, poderá aplicar tags em no máximo 15 ativos de cada vez.
