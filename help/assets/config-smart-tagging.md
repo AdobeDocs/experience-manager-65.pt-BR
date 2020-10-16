@@ -3,19 +3,33 @@ title: Configurar a marcação de ativos usando o Serviço de conteúdo intelige
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '1240'
-ht-degree: 36%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Configurar a marcação de ativos usando o Serviço de conteúdo inteligente {#configure-asset-tagging-using-the-smart-content-service}
+# Preparar [!DNL Assets] para marcação inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Você pode fazer a integração [!DNL Adobe Experience Manager] com o Serviço de conteúdo inteligente usando o Console do desenvolvedor do Adobe. Use essa configuração para acessar o Serviço de conteúdo inteligente de dentro [!DNL Experience Manager].
+Antes de poder marcar seus ativos em start usando o Smart Content Services, integre-se [!DNL Experience ManageR Assets] ao Adobe Developer Console para aproveitar o serviço inteligente de [!DNL Adobe Sensei]. Depois de configurado, treine o serviço usando algumas imagens e uma tag.
 
-O artigo detalha as seguintes tarefas principais que são necessárias para configurar o Serviço de conteúdo inteligente. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
+Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte:
+
+* [Integração com o Console do desenvolvedor](#integrate-adobe-io).
+* [Treinar o Serviço](#training-the-smart-content-service)de conteúdo inteligente.
+
+   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
+  -->
+
+* Instale o service pack [mais recente do](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)Experience Manager.
+
+## Integração com o Console do desenvolvedor {#integrate-adobe-io}
+
+Quando você se integra ao Console do desenvolvedor do Adobe, o [!DNL Experience Manager] servidor autentica suas credenciais de serviço no gateway do Console do desenvolvedor do Adobe antes de encaminhar sua solicitação ao Serviço de conteúdo inteligente. Para integrar você precisa de uma conta da Adobe ID que tenha privilégios de administrador para a organização e a licença do Serviço de conteúdo inteligente adquirida e ativada para sua organização.
+
+Para configurar o Serviço de conteúdo inteligente, siga estas etapas de nível superior:
 
 1. [Crie uma configuração do Smart Content Service](#obtain-public-certificate) em [!DNL Experience Manager] para gerar uma chave pública. [Obtenha um certificado público](#obtain-public-certificate) para a integração OAuth.
 
@@ -27,20 +41,7 @@ O artigo detalha as seguintes tarefas principais que são necessárias para conf
 
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-## Pré-requisitos {#prerequisites}
-
-Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração no Console do desenvolvedor do Adobe:
-
-* Existência de uma Adobe ID com privilégios de administrador para a organização.
-
-* O Serviço de conteúdo inteligente está habilitado para sua organização.
-
-<!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
--->
-
-Para ativar as Smart Tags aprimoradas, além das anteriores, instale também o service pack [mais recente do](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)Experience Manager.
-
-## Criar configuração do Serviço de conteúdo inteligente para obter {#obtain-public-certificate}
+### Criar configuração do Smart Content Service para obter certificado público {#obtain-public-certificate}
 
 Um certificado público permite autenticar seu perfil no Console do desenvolvedor.
 
@@ -74,7 +75,7 @@ Um certificado público permite autenticar seu perfil no Console do desenvolvedo
 
    *Figura: Configurações do serviço de marcação inteligente*
 
-### Reconfigure when a certificate expires {#certrenew}
+#### Reconfigure when a certificate expires {#certrenew}
 
 Depois que um certificado expira, ele não é mais confiável. Não é possível renovar um certificado expirado. Para adicionar um novo certificado, siga estas etapas.
 
@@ -87,7 +88,7 @@ Depois que um certificado expira, ele não é mais confiável. Não é possível
    ![Exclua a entrada de pesquisa de similaridade existente no Keystore para adicionar um novo certificado de segurança](assets/smarttags_delete_similaritysearch_keystore.png)
 
 
-   *Figura: exclua a entrada`similaritysearch`existente no Armazenamento de chaves para adicionar um novo certificado de segurança.*
+   *Figura: exclua a entrada `similaritysearch` existente no Armazenamento de chaves para adicionar um novo certificado de segurança.*
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços da nuvem]** > **[!UICONTROL Serviços da nuvem herdados]**. Clique em **[!UICONTROL Tags inteligentes de ativos]** > **[!UICONTROL Mostrar configuração]** > **[!UICONTROL Configurações disponíveis]**. Clique na configuração necessária.
 
@@ -95,7 +96,7 @@ Depois que um certificado expira, ele não é mais confiável. Não é possível
 
 1. Acesse [https://console.adobe.io](https://console.adobe.io) e navegue até os Serviços de conteúdo inteligente existentes na página **[!UICONTROL Integrações]** . Carregue o novo certificado. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
 
-## Criar integração do Console do desenvolvedor do Adobe {#create-adobe-i-o-integration}
+### Criar integração do Console do desenvolvedor do Adobe {#create-adobe-i-o-integration}
 
 Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no Console do desenvolvedor do Adobe para obter a chave [!UICONTROL da] API (gerada no campo ID [!UICONTROL do] CLIENTE da integração do Console do desenvolvedor do Adobe), a ID [!UICONTROL da conta]TÉCNICA, a ID [!UICONTROL da]ORGANIZAÇÃO e o segredo [!UICONTROL do]  [!DNL Experience Manager]CLIENT para configurações de serviço de marcação inteligente doAssets.
 
@@ -120,7 +121,7 @@ Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no
 
    *Figura: Detalhes da integração no Adobe Developer Console*
 
-## Configurar o Serviço de conteúdo inteligente {#configure-smart-content-service}
+### Configurar o Serviço de conteúdo inteligente {#configure-smart-content-service}
 
 Para configurar a integração, use os valores dos campos ID [!UICONTROL DA CONTA]TÉCNICA, ID [!UICONTROL da]ORGANIZAÇÃO, SECRETO CLIENTE e ID [!UICONTROL do] CLIENTE da integração do Console do desenvolvedor do Adobe. A criação de uma configuração em nuvem de Tags inteligentes permite a autenticação de solicitações de API da [!DNL Experience Manager] implantação.
 
@@ -139,13 +140,13 @@ Para configurar a integração, use os valores dos campos ID [!UICONTROL DA CONT
    | [!UICONTROL ID da organização] | [!UICONTROL ID DA ORGANIZAÇÃO] |
    | [!UICONTROL Client Secret] | [!UICONTROL SEGREDO DO CLIENTE] |
 
-## Validar a configuração {#validate-the-configuration}
+### Validar a configuração {#validate-the-configuration}
 
 Depois de concluir a configuração, você pode usar um MBean JMX para validar a configuração. Para validar, siga estas etapas.
 
 1. Acesse seu [!DNL Experience Manager] servidor em `https://[aem_server]:[port]`.
 
-1. Vá até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web para abrir o console do OSGi. Clique em **[!UICONTROL Principal]>[!UICONTROL JMX]**.
+1. Vá até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da]** Web para abrir o console do OSGi. Clique em **[!UICONTROL Principal] > [!UICONTROL JMX]**.
 
 1. Clique em `com.day.cq.dam.similaritysearch.internal.impl`. Ele abre **[!UICONTROL SemelhançaPesquise Tarefas]** diversas.
 
@@ -153,7 +154,7 @@ Depois de concluir a configuração, você pode usar um MBean JMX para validar a
 
 Os resultados da validação são exibidos na mesma caixa de diálogo.
 
-## Habilitar marcação inteligente no fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM (Opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+### Habilitar marcação inteligente no fluxo de trabalho do Ativo [!UICONTROL de atualização do] DAM (Opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. In [!DNL Experience Manager], go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
@@ -190,10 +191,102 @@ Os resultados da validação são exibidos na mesma caixa de diálogo.
 
 1. Clique em **[!UICONTROL OK]** para fechar a etapa do processo e salve o fluxo de trabalho.
 
+## Treinar o Serviço de conteúdo inteligente {#training-the-smart-content-service}
+
+Para que o Serviço de conteúdo inteligente reconheça a taxonomia de sua empresa, execute-a em um conjunto de ativos que já incluem tags relevantes para sua empresa. Para marcar com eficácia as imagens de sua marca, o Serviço de conteúdo inteligente exige que as imagens de treinamento estejam em conformidade com determinadas diretrizes. Após o treinamento, o serviço pode aplicar a mesma taxonomia em um conjunto de ativos semelhante.
+
+Você pode treinar o serviço várias vezes para melhorar sua capacidade de aplicar tags relevantes. Após cada ciclo de treinamento, execute um fluxo de trabalho de marcação e verifique se seus ativos estão marcados corretamente.
+
+Você pode treinar o Serviço de conteúdo inteligente periodicamente ou com base em requisitos.
+
+>[!NOTE]
+>
+>O fluxo de trabalho de treinamento é executado somente em pastas.
+
+### Orientações para a formação {#guidelines-for-training}
+
+Para obter melhores resultados, as imagens em seu conjunto de treinamento devem estar em conformidade com as seguintes diretrizes:
+
+**Quantidade e tamanho:** mínimo de 30 imagens por tag. Mínimo de 500 pixels no lado maior.
+
+**Coerência**: As imagens de uma tag devem ser visualmente semelhantes.
+
+Por exemplo, não é uma boa ideia marcar todas essas imagens como `my-party` (para treinamento) porque elas não são visualmente semelhantes.
+
+![Imagens ilustrativas para exemplificar as diretrizes para treinamento](/help/assets/assets/do-not-localize/coherence.png)
+
+**Cobertura**: Deve haver uma variedade suficiente de imagens no treinamento. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que a Experience Manager aprenda a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
+
+Por exemplo, para o *modelo de tag-down-pose*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
+
+![Imagens ilustrativas para exemplificar as diretrizes para treinamento](/help/assets/assets/do-not-localize/coverage_1.png)
+
+**Desvio/obstrução**: O serviço treina melhor em imagens com menos distração (fundo proeminente, acompanhamento não relacionado, como objetos/pessoas com o assunto principal).
+
+Por exemplo, para a tag *casual-shoe*, a segunda imagem não é um bom candidato a treinamento.
+
+![Imagens ilustrativas para exemplificar as diretrizes para treinamento](/help/assets/assets/do-not-localize/distraction.png)
+
+**Integridade:** se uma imagem se qualificar para mais de uma tag, adicione todas as tags aplicáveis antes de incluir a imagem para treinamento. For example, for tags, such as `raincoat` and `model-side-view`, add both the tags on the eligible asset before including it for training.
+
+![Imagens ilustrativas para exemplificar as diretrizes para treinamento](/help/assets/assets/do-not-localize/completeness.png)
+
+>[!NOTE]
+>
+>A capacidade do Serviço de conteúdo inteligente de treinar suas tags e aplicá-las em outras imagens depende da qualidade das imagens usadas para treinamento. Para obter melhores resultados, o Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço de cada tag.
+
+### Formação contínua {#periodic-training}
+
+Você pode ativar o Serviço de conteúdo inteligente para treinar periodicamente nos ativos e tags associadas em uma pasta. Abra a página [!UICONTROL Propriedades] da sua pasta de ativos, selecione **[!UICONTROL Ativar tags]** inteligentes na guia **[!UICONTROL Detalhes]** e salve as alterações.
+
+![enable_smart_tags](assets/enable_smart_tags.png)
+
+Quando essa opção for selecionada para uma pasta, [!DNL Experience Manager] executará um fluxo de trabalho de treinamento automaticamente para treinar o Serviço de conteúdo inteligente nos ativos da pasta e em suas tags. Por padrão, o fluxo de trabalho de treinamento é executado semanalmente às 12h30 do sábado.
+
+### Treinamento sob demanda {#on-demand-training}
+
+Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no console Fluxo de trabalho.
+
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+1. Na caixa de diálogo **[!UICONTROL Executar fluxo de trabalho]** , navegue até a pasta de carga que inclui os ativos marcados para treinar o serviço.
+1. Especifique um título para o fluxo de trabalho e adicione um comentário. Em seguida, clique em **[!UICONTROL Executar]**. Os ativos e as tags são enviados para treinamento.
+
+   ![workflow_dialog](assets/workflow_dialog.png)
+
+>[!NOTE]
+>
+>Depois que os ativos em uma pasta são processados para treinamento, somente os ativos modificados são processados em ciclos de treinamento subsequentes.
+
+### Relatórios de treinamento de visualização {#viewing-training-reports}
+
+Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags no conjunto de ativos de treinamento, reveja o relatório de fluxo de trabalho de treinamento no console Relatórios.
+
+1. Na [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios]**.
+1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
+1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
+1. Especifique um título e uma descrição para o relatório. Em **[!UICONTROL Agendar relatório]**, deixe a opção **[!UICONTROL Agora]** selecionada. Se desejar agendar o relatório para posteriormente, selecione **[!UICONTROL Posteriormente]** e especifique uma data e hora. Then, click **[!UICONTROL Create]** from the toolbar.
+1. Na página **[!UICONTROL Relatórios de ativos]**, selecione o relatório gerado. To view the report, click **[!UICONTROL View]** from the toolbar.
+1. Revise os detalhes do relatório.
+
+   O relatório exibe o status do treinamento das tags que você treinou. A cor verde na coluna **[!UICONTROL Status de treinamento]** indica que o Serviço de conteúdo inteligente foi treinado para a tag. A cor amarela indica que o serviço não é completamente treinado para uma tag específica. Nesse caso, adicione mais imagens com a tag específica e execute o fluxo de trabalho de treinamento para treinar o serviço completamente na tag.
+
+   Se você não vir suas tags neste relatório, execute o fluxo de trabalho de treinamento novamente para essas tags.
+
+1. Para baixar o relatório, selecione-o na lista e clique em **[!UICONTROL Download]** na barra de ferramentas. O relatório é baixado como uma planilha do Microsoft Excel.
+
+## Limitações           {#limitations}
+
+* Tags inteligentes aprimoradas são baseadas em modelos de aprendizado de imagens e suas tags. Esses modelos nem sempre são perfeitos para identificar tags. A versão atual do Serviço de conteúdo inteligente tem as seguintes limitações:
+
+   * Incapacidade de reconhecer diferenças sutis nas imagens. Por exemplo, camisas finas versus camisetas comuns.
+   * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em camisetas.
+   * A marcação é suportada nas localidades nas quais [!DNL Experience Manager] há suporte. Para obter uma lista de idiomas, consulte Notas [de versão do](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)Smart Content Services.
+
+* Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o [!DNL Assets] Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
+
 >[!MORELIKETHIS]
 >
->* [Gerenciar tags inteligentes](managing-smart-tags.md)
 >* [Visão geral e como treinar Tags inteligentes](enhanced-smart-tags.md)
->* [Diretrizes e regras para treinamento do Serviço de conteúdo inteligente](smart-tags-training-guidelines.md)
 >* [Tutorial em vídeo sobre como configurar tags inteligentes](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 
