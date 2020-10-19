@@ -3,10 +3,10 @@ title: Configurar a marcação de ativos usando o Serviço de conteúdo intelige
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2188'
+ht-degree: 26%
 
 ---
 
@@ -23,7 +23,7 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Instale o service pack [mais recente do](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html)Experience Manager.
+* Instale o service pack [mais recente do](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager.
 
 ## Integração com o Console do desenvolvedor {#integrate-adobe-io}
 
