@@ -1,17 +1,17 @@
 ---
-title: Guia de ativos
+title: Guia do Assets
 description: Este guia aborda todas as tarefas de ativos de Experience Manager, como criar, gerenciar, fornecer e otimizar ativos digitais.
-user-guide-title: Guia de ativos
+user-guide-title: Guia do Assets
 translation-type: tm+mt
-source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
+source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 14%
+source-wordcount: '344'
+ht-degree: 21%
 
 ---
 
 
-# Guia de ativos
+# Guia do Assets
 
 Este guia cobre todas as [!DNL Experience Manager Assets] tarefas, como criar, gerenciar, fornecer e otimizar ativos digitais.
 
@@ -22,7 +22,7 @@ Este guia cobre todas as [!DNL Experience Manager Assets] tarefas, como criar, g
 
 * [Introdução ao Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Notas de versão do Experience Manager 6.5](/help/release-notes/home.md)
-* [Atualizações recentes na documentação](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Atualizações recentes na documentação](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Lista de verificação de segurança](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 guias
