@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 O componente [](/help/sites-authoring/default-components-foundation.md#video) Vídeo permite que você coloque um ativo de vídeo predefinido e pronto para uso (OTB) na sua página.
 
-Para que ocorra a transcodificação correta, um administrador instala o FFmpeg separadamente. Consulte [Instalar FFmpeg e configurar o AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
+Para que ocorra a transcodificação correta, um administrador instala o FFmpeg separadamente. Consulte [Instalar FFmpeg e configurar AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
 
 ## Configurar perfis de vídeo {#configure-video-profiles}
 
@@ -30,9 +30,9 @@ Para usar elementos HTML5, defina perfis de vídeo. Os escolhidos aqui são usad
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
-Nessa caixa de diálogo, você também pode configurar o design do componente Vídeo e os parâmetros para [!UICONTROL Reprodução], [!UICONTROL Flash]e [!UICONTROL Advanced].
+Nessa caixa de diálogo, você também pode configurar o design do componente Vídeo e os parâmetros para [!UICONTROL Reprodução], [!UICONTROL Flash]e [!UICONTROL Avançado].
 
-## Instalar FFmpeg e configurar o AEM {#install-ffmpeg}
+## Instalar FFmpeg e configurar AEM {#install-ffmpeg}
 
 O componente Vídeo depende do produto FFmpeg de código aberto de terceiros para transcodificação de vídeos. Baixado em [https://ffmpeg.org/](https://ffmpeg.org/). Depois de instalar o FFmpeg, configure o AEM para usar um codec de áudio específico e opções específicas de tempo de execução.
 
@@ -45,7 +45,7 @@ Para instalar o FFmpeg no **Windows**, siga estas etapas:
 
 Para instalar o FFmpeg no **Mac OS X**, siga estas etapas:
 
-1. Instale o Xcode disponível em [developer.apple.com/xcode](hhttps://developer.apple.com/xcode/).
+1. Instale o Xcode disponível em [developer.apple.com/xcode](https://developer.apple.com/xcode/).
 1. Instale disponível no [XQuartz](https://www.xquartz.org) para obter o [X11](https://support.apple.com/en-us/HT201341).
 1. Instale o MacPorts disponível em [www.macports.org](https://www.macports.org/).
 1. No console execute `sudo port install ffmpeg` command e siga as instruções na tela. Verifique se o caminho do `FFmpeg` executável foi adicionado à variável do `PATH` sistema.
@@ -56,7 +56,7 @@ Para instalar o FFmpeg no **Mac OS X 10.6**, usando a versão pré-compilada, si
 1. Desarquive-o no `/usr/local` diretório.
 1. No console, execute `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Altere os caminhos conforme apropriado.
 
-Para **configurar o AEM**, siga estas etapas:
+Para **configurar AEM**, siga estas etapas:
 
 >[!NOTE]
 >
@@ -78,4 +78,4 @@ Para **configurar o AEM**, siga estas etapas:
 
 >[!NOTE]
 >
->As alterações nos modelos de fluxo de trabalho padrão out-of-the-box (OOTB) não são preservadas quando você atualiza sua instância do AEM. A Adobe recomenda que você copie os modelos de fluxo de trabalho modificados antes de editá-los. Por exemplo, copie o modelo de Ativo [!UICONTROL de atualização de] DAM OOTB antes de editar a etapa de Transcodificação de FFmpeg no modelo de Ativo [!UICONTROL de atualização de] DAM para escolher nomes de perfis de vídeo existentes antes da atualização. Em seguida, você pode sobrepor o `/apps` nó para permitir que o AEM recupere as alterações personalizadas no modelo OOTB.
+>As alterações nos modelos de fluxo de trabalho padrão prontos para uso (OOTB) não são preservadas quando você atualiza sua instância AEM. O Adobe recomenda que você copie os modelos de fluxo de trabalho modificados antes de editá-los. Por exemplo, copie o modelo de Ativo [!UICONTROL de atualização de] DAM OOTB antes de editar a etapa de Transcodificação de FFmpeg no modelo de Ativo [!UICONTROL de atualização de] DAM para escolher nomes de perfis de vídeo existentes antes da atualização. Em seguida, você pode sobrepor o `/apps` nó para permitir AEM recuperar as alterações personalizadas no modelo OOTB.
