@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ A migração real é realizada usando o arquivo jar AEM quickstart padrão, exec
 
 >[!NOTE]
 >
->Se você estiver executando a migração de conteúdo do repositório TarMK usando a extensão de Início Rápido CRX2Oak, poderá remover o **modo de execução de conteúdo de amostra** adicionando o seguinte à linha de comando de migração:
+>Se você estiver executando a migração de conteúdo do repositório TarMK usando a extensão de Início Rápido CRX2Oak, você poderá remover o modo de execução **de conteúdo de amostra** adicionando o seguinte à linha de comando de migração:
 >
 >* `--promote-runmode nosamplecontent`
 
@@ -77,7 +77,7 @@ Em que `<<YOUR_PROFILE>>` e `<<ADDITIONAL_FLAGS>>` são substituídos pelo perfi
  <tbody>
   <tr>
    <td><strong>Repositório de origem</strong></td>
-   <td><strong>Repositório de Públicos alvos</strong></td>
+   <td><strong>Repositório de públicos alvos</strong></td>
    <td><strong>Perfil</strong></td>
    <td><strong>Sinalizadores adicionais</strong><br /> </td>
   </tr>
@@ -175,6 +175,10 @@ Onde `/path/to/datastore` representa o caminho para seu Arquivo de Dados.
 ### Como determinar o comando correto do start de atualização {#determining-the-correct-upgrade-start-command}
 
 Para executar a atualização, é importante start AEM usando o arquivo jar para exibir a instância. Para atualizar para a versão 6.5, veja também outras opções de reestruturação e migração de conteúdo na Migração [de conteúdo](/help/sites-deploying/lazy-content-migration.md) ocioso que você pode escolher com o comando de atualização.
+
+>[!IMPORTANT]
+>
+>Se você estiver executando o Oracle Java 11 (ou, em geral, versões do Java mais recentes que 8), outras opções precisarão ser adicionadas à linha de comando ao iniciar o AEM. Para obter mais informações, consulte Considerações sobre [o](/help/sites-deploying/custom-standalone-install.md#java-considerations)Java 11.
 
 Observe que iniciar AEM a partir do script de start não start a atualização. A maioria dos clientes AEM usando o script de start e personalizou esse script de start para incluir switches para configurações de ambiente, como configurações de memória, certificados de segurança etc. Por isso, recomendamos seguir este procedimento para determinar o comando de atualização correto:
 
