@@ -4,9 +4,9 @@ description: Sugestões e orientações [!DNL Experience Manager] sobre configur
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2743'
 ht-degree: 0%
 
 ---
@@ -205,7 +205,7 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no arquivo `co
 
 >[!CAUTION]
 >
->Uma configuração incorreta pode tornar o servidor instável se o ImageMagick usar todo o espaço em disco disponível. As alterações de política necessárias para processar arquivos grandes usando o ImageMagick podem afetar o desempenho do Experience Manager [!DNLE] . Para obter mais informações, consulte [instalar e configurar o ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Uma configuração incorreta pode tornar o servidor instável se o ImageMagick usar todo o espaço em disco disponível. As alterações de política necessárias para processar arquivos grandes usando o ImageMagick podem afetar o [!DNL Experience Manager] desempenho. Para obter mais informações, consulte [instalar e configurar o ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
