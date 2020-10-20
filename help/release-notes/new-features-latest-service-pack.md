@@ -4,7 +4,7 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
+source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 2%
@@ -28,7 +28,7 @@ A operação Mover página agora está disponível no modo assíncrono. Além da
 
 ### Invalidar conteúdo em cache CDN {#invalidate-cdn-cached-content}
 
-Agora você pode usar a interface do usuário[!DNL  Dynamic Media] para invalidar o conteúdo em cache da Rede de Delivery de Conteúdo (CDN). Como resultado, os ativos atualizados estão disponíveis instantaneamente em vez de aguardar a expiração do cache. Você pode invalidar o CDN ao:
+Agora você pode usar a interface do [!DNL Dynamic Media] usuário para invalidar o conteúdo em cache da Rede de Delivery de Conteúdo (CDN). Como resultado, os ativos atualizados estão disponíveis instantaneamente em vez de aguardar a expiração do cache. Você pode invalidar o CDN ao:
 
 * Criando um modelo de invalidação CDN: Selecionar ativos e URLs baseados em modelo associados a formulários
 
