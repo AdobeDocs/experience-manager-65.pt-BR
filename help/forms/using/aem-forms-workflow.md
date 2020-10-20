@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 149e505eb4dac0d9a56c53036ce1c6b8d16ad0f1
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 1%
@@ -136,7 +136,7 @@ O aplicativo é o formulário adaptável associado ao fluxo de trabalho. Quando 
 >
 >Você deve ser um membro do grupo de administradores de fd para poder criar e gerenciar aplicativos de fluxo de trabalho.
 
-1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** (Ferramentas de fluxo de trabalho) e toque em **[!UICONTROL Create (Criar]**).
+1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Gerenciar aplicativo]** de fluxo de trabalho e toque em **[!UICONTROL Criar]**.
 1. Na janela Criar aplicativo de fluxo de trabalho, forneça entradas para os seguintes campos e toque em **Criar**. Um novo aplicativo é criado e está listado na tela Aplicativos de fluxo de trabalho.
 
 <table>
@@ -218,7 +218,7 @@ Você pode configurar um formulário adaptável para sincronizar, enviar e acion
 
 Um administrador (um membro do grupo de administradores de fd) pode configurar uma pasta de rede para executar um fluxo de trabalho pré-configurado quando um usuário coloca um arquivo (como um arquivo PDF) na pasta. Depois que o fluxo de trabalho for concluído, ele poderá salvar o arquivo de resultado em uma pasta de saída especificada. Essa pasta é conhecida como Pasta [assistida](../../forms/using/watched-folder-in-aem-forms.md). Execute o seguinte procedimento para configurar uma pasta assistida para iniciar um fluxo de trabalho:
 
-1. Na instância do autor AEM, vá para ![tools-1](assets/tools-1.png) **>**[!UICONTROL  Forms ]**> Configure Watched Folder.** Uma lista de pastas monitoradas já configuradas é exibida.
+1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Uma lista de pastas monitoradas já configuradas é exibida.
 1. Toque em **[!UICONTROL Novo]**. Uma lista de campos é exibida. Especifique um valor para os seguintes campos para configurar uma Pasta assistida para um fluxo de trabalho:
 
 <table>
