@@ -8,8 +8,8 @@ user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
 source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '585'
+ht-degree: 39%
 
 ---
 
