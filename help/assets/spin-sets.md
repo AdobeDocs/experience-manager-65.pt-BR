@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 11%
@@ -29,7 +29,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET.]** Al�
 
 >[!NOTE]
 >
->Para obter informações sobre a interface do usuário Ativos, consulte [Gerenciamento de ativos com a interface do usuário](/help/assets/managing-assets-touch-ui.md)de toque.
+>Para obter informações sobre a interface do usuário Ativos, consulte [Gerenciamento de ativos com a interface do usuário](/help/assets/manage-assets.md)de toque.
 
 ## Start rápido: Conjuntos de rotação {#quick-start-spin-sets}
 
@@ -77,13 +77,13 @@ Para colocar você em funcionamento rapidamente com Conjuntos de rotação, siga
 
    Consulte [Vincular um conjunto de rotação a uma página da Web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](/help/assets/embed-code.md).
 
-Se necessário, é possível [editar Conjuntos](#editing-spin-sets)de rotação. Além disso, você pode visualização e modificar as propriedades [do Conjunto de](/help/assets/managing-assets-touch-ui.md#editing-properties)rotação.
+Se necessário, é possível [editar Conjuntos](#editing-spin-sets)de rotação. Além disso, você pode visualização e modificar as propriedades [do Conjunto de](/help/assets/manage-assets.md#editing-properties)rotação.
 
 ## Fazer upload de ativos para conjuntos de rotação {#uploading-assets-for-spin-sets}
 
 No mínimo, você precisa de 8 a 12 fotos de um item para um Conjunto de rotação unidimensional e 16 a 24 para um Conjunto de rotação bidimensional. As fotos devem ser tiradas a intervalos regulares para dar a impressão de que o item está girando e sendo virado. Por exemplo, se um Conjunto de rotação unidimensional incluir 12 fotos, gire o item 30 graus (360/12) para cada tomada.
 
-Você pode carregar imagens para os Conjuntos de rotação da mesma forma que faria [upload de qualquer outro ativo no AEM Assets](/help/assets/managing-assets-touch-ui.md).
+Você pode carregar imagens para os Conjuntos de rotação da mesma forma que faria [upload de qualquer outro ativo no AEM Assets](/help/assets/manage-assets.md).
 
 ### Diretrizes para a captura de imagens para seu Conjunto de rotação {#guidelines-for-shooting-spin-set-images}
 
