@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 18%
@@ -33,7 +33,7 @@ Por exemplo, suponha que você queira apresentar imagens de maiúsculas com dife
 
 >[!NOTE]
 >
->Para obter informações sobre a interface do usuário Ativos, consulte [Gerenciamento de ativos com a interface do usuário](/help/assets/managing-assets-touch-ui.md)de toque.
+>Para obter informações sobre a interface do usuário Ativos, consulte [Gerenciamento de ativos com a interface do usuário](/help/assets/manage-assets.md)de toque.
 
 ## Start rápido: Conjuntos de imagens {#quick-start-image-sets}
 
@@ -83,7 +83,7 @@ Para começar a trabalhar rapidamente:
 
    Consulte [Vincular um conjunto de imagens a uma página da Web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](/help/assets/embed-code.md).
 
-Para editar Conjuntos de imagens, consulte [edição de Conjuntos de imagens.](#editing-image-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](/help/assets/managing-assets-touch-ui.md#editing-properties)imagens.
+Para editar Conjuntos de imagens, consulte [edição de Conjuntos de imagens.](#editing-image-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](/help/assets/manage-assets.md#editing-properties)imagens.
 
 Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos no modo [](/help/assets/troubleshoot-dms7.md#images-and-sets)Solução de problemas de Dynamic Media - Scene7.
 
@@ -91,7 +91,7 @@ Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos no modo [](/
 
 Start carregando as imagens para seus Conjuntos de imagens. Como os usuários podem aplicar zoom em imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher as imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS são recomendadas sem perdas.
 
-Você pode carregar imagens para Conjuntos de imagens da mesma forma que faria [upload de qualquer outro ativo em Ativos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Você pode carregar imagens para Conjuntos de imagens da mesma forma que faria [upload de qualquer outro ativo em Ativos](/help/assets/manage-assets.md#uploading-assets).
 
 ### Preparando ativos de Conjunto de imagens para upload {#preparing-image-set-assets-for-upload}
 
