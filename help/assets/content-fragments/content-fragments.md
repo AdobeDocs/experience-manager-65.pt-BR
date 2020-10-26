@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 7%
@@ -21,9 +21,9 @@ ht-degree: 7%
 
 # Trabalho com fragmentos de conteúdo{#working-with-content-fragments}
 
-Fragmentos de conteúdo do Adobe Experience Manager (AEM) permitem que você crie, crie, prepare e [publique conteúdo](/help/sites-authoring/content-fragments.md)independente de página. Eles permitem que você prepare conteúdo pronto para uso em vários locais/em vários canais.
+Os Fragmentos de conteúdo da Adobe Experience Manager (AEM) permitem que você crie, crie, prepare e [publique conteúdo](/help/sites-authoring/content-fragments.md)independente de página. Eles permitem que você prepare conteúdo pronto para uso em vários locais/em vários canais.
 
-Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando os recursos de exportação do Modelo Sling (JSON) dos componentes principais do AEM. Esta forma de delivery:
+Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando os recursos de exportação do Modelo Sling (JSON) dos componentes principais AEM. Esta forma de delivery:
 
 * permite que você use o componente para gerenciar quais elementos de um fragmento fornecer
 * permite delivery em massa, adicionando vários componentes do fragmento do conteúdo na página que está sendo usada para o delivery da API
@@ -43,7 +43,7 @@ Esta e as seguintes páginas cobrem as tarefas para criar, configurar e manter s
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo do delivery, como:
 
-* canal físico; por exemplo, desktop, móvel.
+* Canal físico; por exemplo, desktop, móvel.
 * Forma de delivery num canal físico; Por exemplo, &quot;página de detalhes do produto&quot;, &quot;página de categoria do produto&quot; para desktop ou &quot;Web móvel&quot;, &quot;aplicativo móvel&quot; para dispositivos móveis.
 
 No entanto, você (provavelmente) não deseja usar exatamente o mesmo conteúdo para todos os canais - é necessário otimizar o conteúdo de acordo com o canal específico.
@@ -60,23 +60,23 @@ Esses fragmentos de conteúdo podem ser montados para fornecer experiências em 
 
 ## Fragmentos de conteúdo e serviços de conteúdo {#content-fragments-and-content-services}
 
-Os serviços de conteúdo do AEM foram criados para generalizar a descrição e o delivery do conteúdo de/para o AEM, além do foco nas páginas da Web.
+AEM Content Services foram criados para generalizar a descrição e o delivery do conteúdo de/para AEM além de um foco nas páginas da Web.
 
-Eles fornecem o delivery do conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente. Esses canais podem incluir:
+Eles fornecem o delivery do conteúdo para canais que não são tradicionais AEM páginas da Web, usando métodos padronizados que podem ser consumidos por qualquer cliente. Esses canais podem incluir:
 
 * Aplicativos de página única
 * Aplicativos móveis nativos
 * outros canais e pontos de contato externos ao AEM
 
-O Delivery é feito no formato JSON.
+O delivery é feito no formato JSON.
 
-Fragmentos de conteúdo do AEM podem ser usados para descrever e gerenciar conteúdo estruturado. O conteúdo estruturado é definido em modelos que podem conter diversos tipos de conteúdo; incluindo texto, dados numéricos, booleano, data e hora e muito mais.
+AEM Fragmentos de conteúdo podem ser usados para descrever e gerenciar conteúdo estruturado. O conteúdo estruturado é definido em modelos que podem conter diversos tipos de conteúdo; incluindo texto, dados numéricos, booleano, data e hora e muito mais.
 
-Junto com os recursos de exportação JSON dos componentes principais do AEM, esse conteúdo estruturado pode ser usado para fornecer conteúdo do AEM a canais diferentes das páginas do AEM.
+Junto com os recursos de exportação JSON dos componentes principais AEM, esse conteúdo estruturado pode ser usado para fornecer conteúdo AEM a canais que não sejam páginas AEM.
 
 >[!NOTE]
 >
->**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)**são recursos diferentes no AEM:
+>**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)** são recursos diferentes no AEM:
 >* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 
@@ -84,7 +84,7 @@ Junto com os recursos de exportação JSON dos componentes principais do AEM, es
 >
 Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte também [Compreensão de fragmentos de conteúdo e fragmentos de experiência no AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html).
+>Para obter mais informações, consulte também [Entendendo fragmentos de conteúdo e fragmentos de experiência em AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html).
 
 >[!CAUTION]
 >
@@ -94,7 +94,7 @@ Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de con
 
 >[!NOTE]
 >
->O AEM também oferece suporte à tradução do conteúdo do fragmento. Consulte [Criação de projetos de tradução para fragmentos](/help/assets/creating-translation-projects-for-content-fragments.md) de conteúdo para obter mais informações.
+>AEM também suporta a tradução do conteúdo do fragmento. Consulte [Criação de projetos de tradução para fragmentos](/help/assets/creating-translation-projects-for-content-fragments.md) de conteúdo para obter mais informações.
 
 ## Tipos de fragmento do conteúdo {#types-of-content-fragment}
 
@@ -207,7 +207,7 @@ Os ativos do fragmento de conteúdo são compostos pelas seguintes partes (diret
    * Os ativos estão [associados a fragmentos por meio de coleções](/help/assets/content-fragments/content-fragments-assoc-content.md); as coleções associadas permitem que o autor decida quais ativos usar ao criar a página.
 
       * As coleções podem ser associadas a fragmentos por meio de modelos, como conteúdo padrão ou por autores durante a criação de fragmentos.
-      * [Coleções](/help/assets/managing-collections-touch-ui.md) de ativos (DAM) são a base para o conteúdo associado de fragmentos.
+      * [Coleções](/help/assets/manage-collections.md) de ativos (DAM) são a base para o conteúdo associado de fragmentos.
    * Opcionalmente, você também pode adicionar o fragmento em si a uma coleção para ajudar no rastreamento.
 
 
