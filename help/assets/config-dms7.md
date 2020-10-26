@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5944'
 ht-degree: 6%
@@ -237,7 +237,7 @@ Você pode definir quais tipos de ativos devem ser processados pelo Dynamic Medi
 * Rasterize um arquivo Adobe Illustrator (.AI) ou um arquivo Adobe Photoshop Encapsulated Postscript (.EPS).
 * Observação: Perfis de vídeo e Perfis de imagem podem ser usados para definir o processamento de vídeos e imagens, respectivamente.
 
-Consulte [Upload de ativos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Consulte [Upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 
 **Para configurar o processamento de ativos**
 
@@ -428,7 +428,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
    Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
 
-1. Na barra de navegação próxima à parte superior da página, clique em **[!UICONTROL Configuração]> Configuraçãodo aplicativo > Predefinições[!UICONTROL de conjunto]de lote > Predefinição[!UICONTROL de conjunto de]** lotes.
+1. Na barra de navegação próxima à parte superior da página, clique em **[!UICONTROL Configuração] > Configuração  do aplicativo > Predefinições [!UICONTROL de conjunto] de lote > Predefinição [!UICONTROL de conjunto de]** lotes.
 
    Observe que o Formulário **[!UICONTROL de]** Visualização, conforme definido no canto superior direito da página Detalhes, é a visualização padrão.
 
