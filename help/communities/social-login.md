@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2803'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,8 @@ A instância de Aplicativo e Provedor [OAuth do](#adobe-granite-oauth-applicatio
 1. Vá até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > Navegador **** de configuração. Selecione o contexto e edite as propriedades. Habilite Configurações de nuvem se ainda não estiver habilitado.
 
    ![config-propertiespng](assets/config-propertiespng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. **Criar/editar** a configuração do serviço de nuvem do Facebook.
 
@@ -260,6 +262,8 @@ A instância de Aplicativo e Provedor [OAuth](#adobe-granite-oauth-application-a
 1. Vá até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > Navegador **** de configuração. Selecione o contexto e edite as propriedades. Habilite Configurações de nuvem se ainda não estiver habilitado.
 
    ![twitterconfigproppng](assets/twitterconfigproppng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. Criar/editar a configuração do serviço de nuvem do Twitter.
 
@@ -460,7 +464,7 @@ Se forem vistos avisos transversais nos registros, é recomendável adicionar es
 
 Em uma instância do autor, conectado com privilégios administrativos:
 
-1. Da navegação global: selecione **Ferramentas,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Da navegação global: selecione **Ferramentas, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Crie um índice chamado ntBaseLucene-oauth a partir de uma cópia de ntBaseLucene:
 
    * No nó `/oak:index`
