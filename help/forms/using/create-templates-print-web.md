@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ Com base no caso [de](/help/forms/using/create-your-first-interactive-communicat
 
 ![create_print_template](assets/create_print_template.gif)
 
-Esses subformulários são exibidos como áreas de público alvo no modelo Imprimir depois de fazer upload do arquivo XDP para o servidor de formulários. Todas as entidades, como fragmentos de documento, gráficos, fragmentos de layout e imagens, são adicionadas às áreas de público alvo ao criar a Comunicação interativa.
+Esses subformulários são exibidos como áreas de público alvo no modelo Imprimir depois de fazer upload do arquivo XDP para o servidor Forms. Todas as entidades, como fragmentos de documento, gráficos, fragmentos de layout e imagens, são adicionadas às áreas de público alvo ao criar a Comunicação interativa.
 
 Execute as seguintes etapas para criar um modelo XDP para o canal Print:
 
-1. Abra o Designer de Formulários, selecione **Arquivo** > **Novo** > **Usar um formulário em branco,** toque em **Avançar** e em **Concluir** para abrir o formulário para a criação do modelo.
+1. Abra o Forms Designer, selecione **Arquivo** > **Novo** > **Usar um formulário em branco,** toque em **Avançar** e em **Concluir** para abrir o formulário para a criação do modelo.
 
    Verifique se as opções Biblioteca **de** objetos e **Objeto** estão selecionadas no menu **Janela** .
 
@@ -115,9 +115,9 @@ Execute as seguintes etapas para criar um modelo XDP para o canal Print:
 
 ### Carregar modelo XDP no servidor AEM Forms {#upload-xdp-template-to-the-aem-forms-server}
 
-Depois de criar um modelo XDP usando o Designer de Formulários, você deve carregá-lo no servidor de AEM Forms para que o modelo esteja disponível para uso ao criar a Comunicação Interativa.
+Depois de criar um modelo XDP usando o Forms Designer, você deve carregá-lo no servidor AEM Forms para que o modelo esteja disponível para uso ao criar a Comunicação interativa.
 
-1. Selecione **[!UICONTROL Formulários]** > **[!UICONTROL Formulários e Documentos]**.
+1. Selecione **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Toque em **Criar** > Upload **de arquivo**.
 
    Navegue e selecione o modelo **create_first_ic_print_template** (XDP) e toque em **Abrir** para importar o modelo XDP para o servidor AEM Forms.
@@ -126,7 +126,7 @@ Depois de criar um modelo XDP usando o Designer de Formulários, você deve carr
 
 Para criar um fragmento de layout para o canal Imprimir da comunicação interativa, crie um XDP usando o Forms Designer e carregue-o no servidor AEM Forms.
 
-1. Abra o Designer de Formulários, selecione **Arquivo** > **Novo** > **Usar um formulário em branco,** toque em **Avançar** e em **Concluir** para abrir o formulário para a criação do modelo.
+1. Abra o Forms Designer, selecione **Arquivo** > **Novo** > **Usar um formulário em branco,** toque em **Avançar** e em **Concluir** para abrir o formulário para a criação do modelo.
 
    Verifique se as opções Biblioteca **de** objetos e **Objeto** estão selecionadas no menu **Janela** .
 
@@ -180,6 +180,7 @@ Para criar um modelo de canal da Web, defina uma pasta onde você possa salvar o
 Execute as seguintes etapas para criar uma pasta para os modelos editáveis:
 
 1. Toque em **Ferramentas** ![ícone](assets/hammer-icon.svg) de martelo > Navegador **de** configuração.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Na página Navegador de configuração, toque em **Criar**.
 1. Na caixa de diálogo **Criar configuração** , especifique **Create_First_IC_models** como o título da pasta, marque Modelos **** editáveis e toque em **Criar**.
 
