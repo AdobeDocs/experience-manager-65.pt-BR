@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '3064'
+ht-degree: 94%
 
 ---
 
 
 # Editar conteúdo da página{#editing-page-content}
 
-Assim que a página for criada (nova ou como parte de uma cópia dinâmica ou de lançamento), você pode editar o conteúdo para fazer as atualizações necessárias.
+Assim que a página for criada (nova ou como parte de um lançamento ou uma live copy), você pode editar o conteúdo para fazer as atualizações necessárias.
 
 O conteúdo é adicionado usando [componentes](/help/sites-authoring/default-components-console.md) (adequados ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
 
@@ -30,11 +33,11 @@ O conteúdo é adicionado usando [componentes](/help/sites-authoring/default-com
 
 >[!NOTE]
 >
->If your page and/or template has been appropriately set up, then you can use [responsive layout](/help/sites-authoring/responsive-layout.md) when editing.
+>Se a página e/ou o modelo foi configurado corretamente, é possível usar o [layout responsivo](/help/sites-authoring/responsive-layout.md) durante a edição.
 
 >[!NOTE]
 >
->When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewingpagestouchoptimizedui) if you want to navigate using the links in your content.
+>Quando estiver no modo de **Edição**, os links em seu conteúdo ficam visíveis, mas **não ficam acessíveis**. Use o [modo de Visualização](#previewingpagestouchoptimizedui) se você deseja navegar usando os links no seu conteúdo.
 
 ## Barra de ferramentas da página {#page-toolbar}
 
@@ -62,7 +65,7 @@ A barra de ferramentas oferece acesso a várias opções. Dependendo do contexto
 
    ![](do-not-localize/screen_shot_2018-03-22at111442.png)
 
-* **Context Hub**
+* **ContextHub**
 
    Abre o [hub de contexto](/help/sites-authoring/ch-previewing.md). Disponível somente no modo de Visualização.
 
@@ -94,7 +97,7 @@ A barra de ferramentas oferece acesso a várias opções. Dependendo do contexto
 
 ### Notificação de status {#status-notification}
 
-If a page is part of a [workflow](/help/sites-authoring/workflows.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+Se uma página é parte de um [fluxo de trabalho](/help/sites-authoring/workflows.md) ou de vários fluxos de trabalho, essas informações serão exibidas em uma barra de notificação na parte superior da tela ao editar a página.
 
 ![screen_shot_2018-03-22at11739](assets/screen_shot_2018-03-22at111739.png)
 
@@ -108,9 +111,9 @@ A notificação lista o fluxo de trabalho que está sendo executado em relação
 
 * **Delegar** - abre a caixa de diálogo **Concluir item** de trabalho
 
-* **Exibir detalhes** - Abre a janela **Detalhes** do fluxo de trabalho
+* **Exibir detalhes** - abre a janela **Detalhes** do fluxo de trabalho
 
-Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-authoring/workflows-participating.md) from the Notification inbox.
+Concluir e delegar etapas do fluxo de trabalho por meio da barra de notificação funciona da mesma maneira como ao [participar de fluxos de trabalho](/help/sites-authoring/workflows-participating.md) por meio da caixa de entrada de Notificações.
 
 Se a página estiver sujeita a vários fluxos de trabalho, o número de fluxos de trabalho será exibido na extremidade direita da notificação, junto a botões de seta para permitir que você navegue pelos fluxos de trabalho.
 
@@ -134,7 +137,7 @@ O placeholder do componente indica onde um componente será posicionado quando v
 
 É possível adicionar um novo componente, usando o [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). O [placeholder do componente](#component-placeholder) mostra onde o componente será posicionado:
 
-1. Certifique-se de que a página está no modo de [**edição **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Abra o [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 1. Arraste o componente para a [posição desejada](#component-placeholder).
 
@@ -148,20 +151,22 @@ O placeholder do componente indica onde um componente será posicionado quando v
 
 É possível adicionar um novo componente, usando a caixa **Arraste componentes aqui**:
 
-1. Certifique-se de que a página está no modo de [**edição **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Há duas maneiras de selecionar e adicionar um novo componente do sistema de parágrafo:
 
    * Selecione a opção **Inserir componente** (+) na barra de ferramentas de um componente existente ou na caixa **Arrastar componentes aqui**.
+
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
-   * If you are on a desktop device you can double-click on the **Drag components here** box.
+   * Se você estiver em um dispositivo de desktop, clique duas vezes na caixa **Arraste componentes aqui**.
+
    A caixa de diálogo **Inserir novo componente** será aberta para permitir que você selecione o componente desejado: 
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
 
 1. O componente selecionado será adicionado à parte inferior da página. [Edite](#editmovecopypastedelete) o componente conforme necessário.
 
-### Inserir um componente usando o Navegador de ativos {#inserting-a-component-using-the-assets-browser}
+### Inserir um componente usando o Navegador de ativos   {#inserting-a-component-using-the-assets-browser}
 
 Você também pode adicionar um novo componente à página, arrastando um ativo a partir do [navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser). Isto criará automaticamente um novo componente do tipo apropriado (e que contém o ativo).
 
@@ -190,8 +195,8 @@ Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema
    <td>Flash</td>
   </tr>
   <tr>
-   <td>Fragmento do conteúdo</td>
-   <td>Fragmento do conteúdo<br /> </td>
+   <td>Fragmento de conteúdo</td>
+   <td>Fragmento de conteúdo<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -202,7 +207,7 @@ Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema
 
 Para criar um componente arrastando um dos tipos de ativos acima:
 
-1. Certifique-se de que a página está no modo de [**edição **](/help/sites-authoring/author-environment-tools.md#page-modes).
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Abra o [navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. Arraste o ativo para a posição desejada. O [placeholder do componente](#component-placeholder) mostra onde o componente será posicionado.
 
@@ -214,7 +219,7 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 >
 >Em um dispositivo móvel, o navegador de ativos preencherá a tela inteira. Depois que você começa a arrastar um ativo, o navegador será fechado para mostrar a página novamente, para que você possa colocar o ativo.
 
-Se, durante a navegação pelos ativos, você perceber que precisa fazer uma alteração rápida a um ativo, é possível inicializar o [editor de ativos](/help/assets/managing-assets-touch-ui.md) diretamente do navegador, clicando no ícone de edição ao lado do nome do ativo.
+Se, durante a navegação pelos ativos, você perceber que precisa fazer uma alteração rápida a um ativo, é possível inicializar o [editor de ativos](/help/assets/manage-assets.md) diretamente do navegador, clicando no ícone de edição ao lado do nome do ativo.
 
 ![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
 
@@ -228,13 +233,13 @@ As ações reais disponíveis para o usuário serão mostradas conforme apropria
 
 * **Editar**
 
-   [Dependendo do tipo](/help/sites-authoring/default-components.md) de componente, isso permitirá a [edição do conteúdo do componente](#edit-content). Muitas vezes será disponibilizada uma barra de ferramentas.
+   [Dependendo do tipo de componente,](/help/sites-authoring/default-components.md) permitirá a [edição do conteúdo do componente](#edit-content). Muitas vezes será disponibilizada uma barra de ferramentas.
 
    ![](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurar**
 
-   [Dependendo do tipo](/help/sites-authoring/default-components.md) de componente, isso permitirá a edição e configuração das propriedades do componente. Frequentemente uma caixa de diálogo será aberta.
+   [Dependendo do tipo de componente,](/help/sites-authoring/default-components.md) permitirá a edição e configuração das propriedades do componente. Frequentemente uma caixa de diálogo será aberta.
 
    ![](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -269,6 +274,7 @@ As ações reais disponíveis para o usuário serão mostradas conforme apropria
    * Você pode colar na mesma página ou em uma diferente.
    * O item colado será colocado acima do item no qual você seleciona a ação de colar.
    * A ação de Colar será mostrada somente se houver conteúdo na área de transferência.
+
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
@@ -306,7 +312,7 @@ Existem dois métodos de adição e/ou edição do conteúdo dos componentes:
 * Abra a caixa de diálogo de [componentes para editar](#component-edit-dialog).
 * [Arraste e solte um ativo](#draganddropintocomponent) do navegador de ativos para adicionar diretamente o conteúdo.
 
-### Caixa de diálogo de edição de componente {#component-edit-dialog}
+### Caixa de diálogo de edição de componente   {#component-edit-dialog}
 
 Você pode abrir um componente para editar o conteúdo usando o [ícone Editar (lápis) na barra de ferramentas do componente](#edit-configure-copy-cut-delete-paste).
 
@@ -329,7 +335,7 @@ As opções de edição exatas dependerão do componente. Para alguns componente
 
 * Componente de imagem- tela cheia
 
-   [Entrar no modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) para o componente de imagem permite mais espaço para editar a imagem, bem como mostrar opções de edição adicionais como **Inicializar mapa** e **Restaurar zoom**. Além disso, a tela cheia permite a seleção de predefinições de corte.
+   [Entrar no modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) para o componente de imagem permite mais espaço para editar a imagem, bem como mostrar opções de edição adicionais como **Inicializar mapa** e **Restaurar zoom**. Além disso, a tela cheia permite selecionar predefinições de corte.
 
    ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
@@ -347,7 +353,7 @@ Para tipos de componentes específicos, você pode arrastar e soltar os ativos d
 | Documento | Download |
 | Produto | Produto |
 | Vídeo | Flash |
-| Fragmento do conteúdo | Fragmento do conteúdo |
+| Fragmento de conteúdo | Fragmento do conteúdo |
 
 ## Editar (conteúdo) Modo de tela cheia {#edit-content-full-screen-mode}
 
@@ -382,11 +388,11 @@ Para mover um componente de parágrafo:
 
 Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/sites-authoring/responsive-layout.md) para ajustar um componente, você pode selecionar a ação **Layout** referente a um componente para alterar o layout do componente e poupar tempo, uma vez que não é preciso sair do modo de edição.
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component&#39;s toolbar.
+1. Quando estiver no modo de **Edição** do console de sites, selecionar um componente revela a barra de ferramentas do componente.
 
    ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   Clique ou toque na ação **Layout** para definir o layout do componente.
 
    ![](do-not-localize/chlimage_1-21.png)
 
@@ -395,17 +401,18 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
    * As alças de redimensionamento do componente são exibidas.
    * A barra de ferramentas do emulador é exibida na parte superior da tela.
    * As ações de Layout são exibidas na barra de ferramentas do componente no lugar das ações padrão de edição.
+
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+   Agora é possível modificar o layout do componente da mesma maneira que você faria no [modo de layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. A barra de ferramentas do componente retornará ao seu estado normal de edição.
+1. Após fazer as alterações necessárias no layout, clique no botão **Fechar** no menu de ação de componente para concluir a modificação do layout do componente. A barra de ferramentas do componente retornará ao seu estado normal de edição.
 
    ![](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
->O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recém-selecionado e as alças de redimensionamento, bem como a barra de ferramentas do emulador desaparecerão.
+>O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recém-selecionado e as alças de redimensionamento, bem como a barra de ferramentas do emulador, desaparecerão.
 >
 >Se precisar editar o layout geral da página, afetando vários componentes, alterne para o [modo de layout](/help/sites-authoring/responsive-layout.md).
 
@@ -414,7 +421,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 Componentes herdados podem ser o resultado de vários cenários, incluindo:
 
 * [Gerenciamento de vários sites](/help/sites-administering/msm.md)
-* [Lançamentos](/help/sites-authoring/launches.md) (quando com base em cópia dinâmica).
+* [Lançamentos](/help/sites-authoring/launches.md) (quando com base na live copy).
 * Componentes específicos como o Sistema de parágrafo herdado no Geometrixx.
 
 Você pode cancelar (e depois reativar) a herança. Dependendo do componente, essa ação pode estar disponível em:
@@ -449,9 +456,9 @@ Se a página for baseada em um [modelo editável](/help/sites-authoring/template
 
 If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
 
-É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição em colunas](/help/sites-authoring/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view).
+É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição de coluna](/help/sites-authoring/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Status da Live Copy {#live-copy-status}
+## Status da Live Copy   {#live-copy-status}
 
 O modo de página [Status da Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite ter uma visão geral rápida do status da live copy e quais componentes são/não são herdados:
 
@@ -466,7 +473,7 @@ Por exemplo:
 
 As [anotações ](/help/sites-authoring/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas {#previewing-pages}
+## Visualizar páginas   {#previewing-pages}
 
 Existem duas opções para a visualização de uma página:
 
@@ -479,6 +486,7 @@ Existem duas opções para a visualização de uma página:
 >* Os links no conteúdo são visíveis, mas não são acessíveis no modo Editar.
 >* Use qualquer uma das opções de visualização, caso deseje navegar usando os links.
 >* Use o [atalho de teclado](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` para alternar entre a visualização e o último modo selecionado.
+
 >
 
 
@@ -513,6 +521,7 @@ Uma página pode ser bloqueada através do:
 
    1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Selecione o ícone de bloqueio.
+
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
@@ -532,7 +541,7 @@ Uma vez bloqueadas, as informações de exibição do console são atualizadas e
 
 ## Desbloquear uma página {#unlocking-a-page}
 
-Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked the lock options are replaced by unlock actions.
+Desbloquear uma página é muito semelhante a [bloquear uma página](#locking-a-page). Uma vez bloqueada, as opções de bloqueio são substituídas por ações de desbloqueio.
 
 O menu de Informações da página lista **Desbloquear** como uma opção, e o ícone Bloquear no console de sites é substituído pelo ícone **Desbloquear**.
 
@@ -560,7 +569,7 @@ Os ícones a seguir permitem desfazer ou refazer uma ação. Os seguintes itens 
 >
 >Consulte [Desfazer e refazer edições de página - A teoria](#undoing-and-redoing-page-edits-the-theory) para obter todos os detalhes do que é possível fazer ao desfazer e refazer edições de página.
 
-## Undoing and Redoing Page Edits - The Theory {#undoing-and-redoing-page-edits-the-theory}
+## Desfazer e refazer edições de página - a teoria {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
@@ -579,6 +588,7 @@ O comportamento dos comandos desfazer e refazer é semelhante à de outros progr
 >* Refazer ações, contanto que não tenha feito uma edição de página desde que usou o comando desfazer.
 >* Desfazer um máximo de 20 ações de edição (configuração padrão).
 >* Usar também os [Atalhos de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para desfazer e refazer.
+
 >
 
 
