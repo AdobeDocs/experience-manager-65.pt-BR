@@ -3,7 +3,7 @@ title: Introdução à [!DNL Adobe Experience Manager Assets].
 description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e [!DNL Adobe Experience Manager Asset] ofertas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 41%
@@ -67,7 +67,7 @@ When working with digital assets in [!DNL Experience Manager], you need to under
 
 * **Representações**: Uma representação é a representação binária de um ativo. [!DNL Assets] sempre tem uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações adicionais que são criadas, por exemplo, por etapas de fluxo de trabalho personalizadas ou quando um ativo é carregado. As representações podem ter tamanhos diferentes, com uma resolução diferente, com uma marca d&#39;água adicionada ou alguma outra característica alterada.
 
-* **Versões**: O controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. See [versioning in Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versões**: O controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. See [versioning in Assets](manage-assets.md#asset-versioning).
 
 * **Sub-ativos**: Subativos são ativos que compõem um ativo, por exemplo, camadas em um [!DNL Adobe Photoshop] arquivo ou páginas em um arquivo PDF. In [!DNL Assets], you can manage sub-assets as you would assets.
 
