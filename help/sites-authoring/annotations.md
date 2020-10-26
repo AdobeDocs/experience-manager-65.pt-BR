@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +38,7 @@ Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação
 
 >[!NOTE]
 >
->Dependendo dos seus requisitos, também é possível desenvolver um fluxo de trabalho para enviar notificações quando as anotações forem adicionadas, atualizadas ou excluídas.
+>Dependendo dos seus requisitos, também é possível desenvolver um fluxo de trabalho para enviar notificações quando anotações são adicionadas, atualizadas ou excluídas.
 
 ## Anotações {#annotations}
 
@@ -49,8 +52,9 @@ Um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) é usado
 >
 >É possível fazer anotações em vários recursos:
 >
->* [Anotação de ativos](/help/assets/managing-assets-touch-ui.md#annotating)
+>* [Anotação de ativos](/help/assets/manage-assets.md#annotating)
 >* [Anotação de ativos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
+
 >
 
 
@@ -84,13 +88,15 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
    * Inserir o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
-      O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, um círculo ou uma elipse.
+      O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Escolher/alterar a cor:
+
    ![](do-not-localize/chlimage_1-19.png)
 
    * Excluir a anotação.
+
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Você pode fechar a caixa de diálogo de anotação clicando/tocando fora dela. Uma exibição truncada (a primeira palavra) da anotação, junto com os rascunhos existentes, é mostrada:
