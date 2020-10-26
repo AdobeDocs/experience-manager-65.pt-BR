@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Você pode preparar personalizações para a interface do usuário do Assets exe
 
 ### Geração de IDs de ativos para ativos existentes {#generating-asset-ids-for-existing-assets}
 
-Para gerar IDs de ativos para ativos existentes, atualize os ativos ao atualizar sua instância de AEM para executar AEM 6.5. Isso é necessário para habilitar o recurso [](/help/assets/touch-ui-asset-insights.md)Assets Insights. Para obter mais detalhes, consulte [Adicionar código](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)incorporado.
+Para gerar IDs de ativos para ativos existentes, atualize os ativos ao atualizar sua instância de AEM para executar AEM 6.5. Isso é necessário para habilitar o recurso [](/help/assets/asset-insights.md)Assets Insights. Para obter mais detalhes, consulte [Adicionar código](/help/assets/use-page-tracker.md#add-embed-code)incorporado.
 
 Para atualizar ativos, configure o pacote Associate Asset IDs no console JMX. Dependendo do número de ativos no repositório, `migrateAllAssets` pode levar muito tempo. Nossos testes internos estimam aproximadamente uma hora para 125 mil ativos no TarMK.
 
