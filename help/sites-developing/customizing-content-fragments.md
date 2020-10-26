@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2749'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Um fragmento de conteúdo estende um ativo padrão; consulte:
 
 * [Criação e gerenciamento de fragmentos](/help/assets/content-fragments/content-fragments.md) de conteúdo e criação de [páginas com fragmentos](/help/sites-authoring/content-fragments.md) de conteúdo para obter mais informações sobre fragmentos de conteúdo.
 
-* [Gerenciamento de ativos](/help/assets/managing-assets-touch-ui.md) e [personalização e extensão de ativos](/help/assets/extending-assets.md) para obter mais informações sobre os ativos padrão.
+* [Gerenciamento de ativos](/help/assets/manage-assets.md) e [personalização e extensão de ativos](/help/assets/extending-assets.md) para obter mais informações sobre os ativos padrão.
 
 ## Arquitetura {#architecture}
 
@@ -61,12 +61,12 @@ Dependendo do tipo de fragmento, modelos ou modelos também são usados:
    * Os modelos definem a estrutura (básica e somente texto) de um fragmento de conteúdo quando ele é criado.
    * O modelo é copiado para o fragmento quando é criado; portanto, novas alterações no modelo não serão refletidas em fragmentos existentes.
    * As funções para adicionar novas variações, etc., precisam atualizar o fragmento de acordo.
-   * [Os modelos](/help/sites-developing/content-fragment-templates.md) de fragmento de conteúdo operam de maneira diferente da de outros mecanismos de formatação no ecossistema do AEM (por exemplo, modelos de página, etc.). Por conseguinte, devem ser considerados separadamente.
+   * [Os modelos](/help/sites-developing/content-fragment-templates.md) de fragmento de conteúdo operam de maneira diferente da de outros mecanismos de modelagem dentro do ecossistema AEM (por exemplo, modelos de página, etc.). Por conseguinte, devem ser considerados separadamente.
    * Quando baseado em um modelo, o tipo MIME do conteúdo é gerenciado no conteúdo real; isso significa que cada elemento e variação pode ter um tipo MIME diferente.
 
 ### Integração com ativos {#integration-with-assets}
 
-O Gerenciamento de fragmentos de conteúdo (CFM) faz parte dos AEM Assets como:
+O Gerenciamento de fragmentos de conteúdo (CFM) faz parte do AEM Assets como:
 
 * Fragmentos de conteúdo são ativos.
 * Eles usam a funcionalidade Ativos existente.
@@ -130,7 +130,7 @@ Para obter mais detalhes, consulte Fragmento [do conteúdo - Excluir consideraç
 >
 >O Componente [principal do fragmento de](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) conteúdo agora é recomendado. Consulte [Desenvolvimento de componentes](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) principais para obter mais detalhes.
 
-Os fragmentos de conteúdo podem ser referenciados em páginas AEM, assim como qualquer outro tipo de ativo. O AEM fornece o componente [**principal do Fragmento **de conteúdo - um](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)componente que permite incluir fragmentos de conteúdo em suas páginas[](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender, este componente principal do Fragmento****de conteúdo.
+Os fragmentos de conteúdo podem ser referenciados AEM páginas, assim como qualquer outro tipo de ativo. AEM fornece o componente [**principal do Fragmento** de conteúdo - um](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) componente que permite incluir fragmentos de conteúdo em suas páginas [](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender, este componente principal do Fragmento **** de conteúdo.
 
 * O componente usa a `fragmentPath` propriedade para fazer referência ao fragmento de conteúdo real. A `fragmentPath` propriedade é tratada da mesma forma que as propriedades semelhantes de outros tipos de ativos; por exemplo, quando o fragmento de conteúdo é movido para outro local.
 
@@ -146,9 +146,9 @@ Os fragmentos de conteúdo podem ser referenciados em páginas AEM, assim como q
 
 >[!NOTE]
 >
->**Modelo de fragmentos do conteúdo:**
+>**Modelo de fragmentos de conteúdo:**
 >
->Ao usar um fragmento de conteúdo que tenha sido baseado em um modelo de fragmento de conteúdo em uma página, o modelo é referenciado. Isso significa que, se o modelo não tiver sido publicado no momento em que você publicar a página, ele será sinalizado e o modelo será adicionado aos recursos a serem publicados com a página.
+>Ao usar um fragmento de conteúdo que tenha sido baseado em um modelo de fragmento de conteúdo em uma página, o modelo é referenciado. Isso significa que, se o modelo não tiver sido publicado no momento em que você publicar a página, ele será sinalizado e o modelo adicionado aos recursos a serem publicados com a página.
 >
 >**Modelo de fragmento de conteúdo:**
 >
@@ -158,7 +158,7 @@ Os fragmentos de conteúdo podem ser referenciados em páginas AEM, assim como q
 
 A implementação de backend de fragmentos de conteúdo é, por exemplo, responsável por tornar as instâncias de um fragmento usadas em uma página pesquisável ou pelo gerenciamento de conteúdo de mídia mista. Essa implementação precisa saber quais componentes são usados para renderizar fragmentos e como a renderização é parametrizada.
 
-Os parâmetros para isso podem ser configurados no Console [da](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)Web, para a Configuração **do componente de fragmento de** conteúdo do pacote OSGi.
+Os parâmetros para isso podem ser configurados no Console [da](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)Web para a Configuração **do componente de fragmento de** conteúdo do pacote OSGi.
 
 * **Tipos** de recursos Uma lista de 
 `sling:resourceTypes` pode ser fornecido para definir componentes usados para renderizar fragmentos de conteúdo e para os quais o processamento em segundo plano deve ser aplicado.
@@ -169,7 +169,7 @@ Os parâmetros para isso podem ser configurados no Console [da](/help/sites-depl
 >
 >Não há mapeamento direto entre a propriedade e o tipo de componente.
 >
->O AEM simplesmente pega a primeira propriedade que pode ser encontrada em um parágrafo. Então você deve escolher as propriedades cuidadosamente.
+>AEM simplesmente a primeira propriedade que pode ser encontrada em um parágrafo. Então você deve escolher as propriedades cuidadosamente.
 
 ![captura de tela_2019-03-18at100941](assets/screenshot_2019-03-18at100941.png)
 
@@ -196,7 +196,7 @@ Os fragmentos de conteúdo podem ser integrados com:
 
 * **Traduções**
 
-   Fragmentos de conteúdo são totalmente integrados ao fluxo de trabalho [de tradução do](/help/sites-administering/tc-manage.md)AEM. Em nível arquitetônico, isso significa:
+   Os Fragmentos de conteúdo são totalmente integrados ao fluxo de trabalho [de tradução](/help/sites-administering/tc-manage.md)AEM. Em nível arquitetônico, isso significa:
 
    * As traduções individuais de um fragmento de conteúdo são, na verdade, fragmentos separados; por exemplo:
 
@@ -218,7 +218,7 @@ Os fragmentos de conteúdo podem ser integrados com:
    * Além dos caminhos baseados em regras, não há mais conexão entre as diferentes versões linguísticas de um fragmento de conteúdo; são manipulados como dois fragmentos separados, embora a interface do usuário forneça os meios de navegação entre as variantes de idioma.
    >[!NOTE]
    >
-   >O fluxo de trabalho de tradução do AEM funciona com `/content`:
+   >O fluxo de trabalho de tradução AEM funciona com `/content`:
    >
    >    * Como os modelos de fragmento de conteúdo residem em `/conf`, eles não são incluídos nessas traduções. Você pode [internacionalizar as strings](/help/sites-developing/i18n-dev.md)da interface do usuário.
       >
@@ -271,12 +271,12 @@ As três interfaces a seguir podem servir como pontos de entrada:
    * Acessar dados básicos (título, descrição)
    * Acesse modelos/modelos para os elementos do fragmento:
 
-      * Modelos de elementos de Lista
+      * Modelos de elementos de lista
       * Obter informações estruturais para um determinado elemento
       * Acessar o modelo de elemento (consulte `ElementTemplate`)
    * Acessar modelos para as variações do fragmento:
 
-      * Modelos de variação de Lista
+      * Modelos de variação de lista
       * Obter informações estruturais para determinada variação
       * Acessar o modelo de variação (consulte `VariationTemplate`)
    * Obter conteúdo associado inicial
@@ -310,16 +310,16 @@ As três interfaces a seguir podem servir como pontos de entrada:
    * Acessar metadados
    * Elementos de acesso:
 
-      * Elementos de Lista
+      * Elementos de lista
       * Obter elementos por nome
       * Criar novos elementos (consulte [Avisos](#caveats))
 
       * Dados do elemento de acesso (consulte `ContentElement`)
-   * variações de Lista definidas para o fragmento
+   * variações de lista definidas para o fragmento
    * Criar novas variações globalmente
    * Gerenciar conteúdo associado:
 
-      * Coleções de Lista
+      * Coleções de lista
       * Adicionar coleções
       * Remover coleções
    * Acessar o modelo ou modelo do fragmento
@@ -332,7 +332,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
       * Obter/definir conteúdo
       * Variações de acesso de um elemento:
 
-         * variações de Lista
+         * variações de lista
          * Obter variações por nome
          * Criar novas variações (consulte [Avisos](#caveats))
          * Remover variações (consulte [Avisos](#caveats))
@@ -347,7 +347,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
    Todas as três interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation``Versionable` ) estendem a interface, que adiciona recursos de controle de versão, necessários para fragmentos de conteúdo:
 
    * Criar nova versão do elemento
-   * Versões de Lista do elemento
+   * Versões de lista do elemento
    * Obter o conteúdo de uma versão específica do elemento com versão
 
 
@@ -398,7 +398,7 @@ Note-se que:
 
 >[!CAUTION]
 >
->Para o AEM 6.5, a API do lado do cliente é interna.
+>Para AEM 6.5, a API do cliente é interna.
 
 ### Informações adicionais {#additional-information}
 
@@ -448,7 +448,7 @@ Os processos envolvidos são:
 * Edição
 
    * Todas as alterações (salvamento automático incluído) são feitas no fragmento de conteúdo ativo - não em uma área separada e protegida.
-   * Portanto, essas alterações são refletidas imediatamente nas páginas do AEM que fazem referência ao respectivo fragmento de conteúdo
+   * Portanto, essas alterações são refletidas imediatamente em páginas AEM que fazem referência ao respectivo fragmento de conteúdo
 
 #### Ações {#actions}
 
