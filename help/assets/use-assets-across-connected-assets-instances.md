@@ -3,7 +3,7 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2c3836cb7e2275c30e88e8a750eafce24a05837a
+source-git-commit: 2fe2b5fcaff2b2f2402f0bc638a0df2afd335b31
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 41%
@@ -159,7 +159,7 @@ Os ativos buscados podem ser usados como qualquer outro ativo local, exceto se o
 
 ## Limitações         and best practices {#tips-and-limitations}
 
-* Para obter insights sobre o uso de ativos, configure a funcionalidade [Asset Insight](/help/assets/touch-ui-asset-insights.md) na [!DNL Sites] instância.
+* Para obter insights sobre o uso de ativos, configure a funcionalidade [Asset Insight](/help/assets/asset-insights.md) na [!DNL Sites] instância.
 
 ### Permissões e gerenciamento de ativos {#permissions-and-managing-assets}
 
