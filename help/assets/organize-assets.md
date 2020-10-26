@@ -3,7 +3,7 @@ title: Organize seus ativos digitais
 description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Offic
 
 ## Organizar ativos em pastas {#organize-using-folders}
 
-A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo à organização de arquivos em pastas no nosso sistema de arquivos local. Para obter mais informações sobre como criar e gerenciar pastas, consulte [Gerenciar ativos](managing-assets-touch-ui.md). A forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas pode ter um impacto significativo na forma como esses ativos são processados. Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo seu repositório de ativos digitais.
+A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo à organização de arquivos em pastas no nosso sistema de arquivos local. Para obter mais informações sobre como criar e gerenciar pastas, consulte [Gerenciar ativos](manage-assets.md). A forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas pode ter um impacto significativo na forma como esses ativos são processados. Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo seu repositório de ativos digitais.
 
 * Na maioria dos casos, seu repositório de ativos digitais está sempre crescendo. Portanto, é importante formalizar o uso de metadados, a estrutura de pastas e a nomeação de arquivos no início do ciclo de criação de conteúdo.
 * Use pastas somente para impor uma estrutura de armazenamento consistente para seus ativos digitais. Essa consistência ajuda a processar e gerenciar melhor seus ativos. Por exemplo, os ativos colocados nos seguintes tipos de pastas podem ajudá-lo a usar os [perfis apropriados para o processamento](processing-profiles.md)de ativos:
@@ -53,7 +53,7 @@ Para obter mais informações, consulte os seguintes artigos:
 
 Com as coleções de ativos em [!DNL Experience Manager Assets], você pode simplificar a capacidade de criar, editar e compartilhar ativos entre usuários. Crie vários tipos de coleções com base na maneira como você as usa, incluindo coleções que contêm uma lista de referência estática de ativos, pastas e coleções, bem como coleções que extraiam ativos com base em critérios de pesquisa.  Você também pode criar coleções com ativos de diferentes locais e compartilhá-las com vários usuários com diferentes níveis de privilégios de acesso, visualização e edição.
 
-Para obter mais informações, consulte [gerenciar coleções](managing-collections-touch-ui.md)
+Para obter mais informações, consulte [gerenciar coleções](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
