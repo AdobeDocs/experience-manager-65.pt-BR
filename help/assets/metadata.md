@@ -3,7 +3,7 @@ title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Mana
 description: Saiba mais sobre os tipos de metadados e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] como tornar possível organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 11%
@@ -163,7 +163,7 @@ Alguns casos de uso para exportar metadados em massa são:
 
 ## Editar metadados de coleções {#collections-metadata}
 
-Para obter detalhes, consulte [visualização e edição de metadados](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) de coleção e [edição de metadados de várias coleções em massa](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+Para obter detalhes, consulte [visualização e edição de metadados](/help/assets/manage-collections.md#view-edit-collection-metadata) de coleção e [edição de metadados de várias coleções em massa](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Aplicar um perfil de metadados a pastas {#applying-a-metadata-profile-to-folders}
 
@@ -242,7 +242,7 @@ Você pode remover um perfil de metadados de uma pasta do menu **[!UICONTROL Fer
 >[!MORELIKETHIS]
 >
 >* [Conceitos de metadados e compreensão](metadata-concepts.md).
->* [Editar propriedades de metadados de várias coleções](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Importação e exportação de metadados no Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
