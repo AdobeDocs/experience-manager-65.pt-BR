@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 2%
@@ -21,9 +21,9 @@ ht-degree: 2%
 
 # Administração e segurança do usuário{#user-administration-and-security}
 
-Este capítulo descreve como configurar e manter a autorização do usuário e também descreve a teoria por trás de como a autenticação e a autorização funcionam no AEM.
+Este capítulo descreve como configurar e manter a autorização do usuário e também descreve a teoria por trás de como a autenticação e a autorização funcionam em AEM.
 
-## Usuários e grupos no AEM {#users-and-groups-in-aem}
+## Usuários e grupos em AEM {#users-and-groups-in-aem}
 
 Esta seção trata mais detalhadamente das várias entidades e conceitos relacionados para ajudá-lo a configurar um conceito de gerenciamento de usuários fácil de manter.
 
@@ -48,7 +48,7 @@ Com o planejamento e uma estrutura limpa, o uso de grupos pode refletir sua estr
 
 ### Built-in Users and Groups {#built-in-users-and-groups}
 
-O WCM AEM instala vários usuários e grupos. Estes podem ser vistos quando você acessa o Console de segurança pela primeira vez após a instalação.
+AEM WCM instala vários usuários e grupos. Estes podem ser vistos quando você acessa o Console de segurança pela primeira vez após a instalação.
 
 As tabelas a seguir listas cada item junto com:
 
@@ -68,8 +68,8 @@ As tabelas a seguir listas cada item junto com:
   <tr>
    <td><p>admin</p> <p>Senha padrão: admin</p> </td>
    <td>Usuário</td>
-   <td><p>Conta de administração do sistema com direitos de acesso totais.</p> <p>Esta conta é usada para a conexão entre o AEM WCM e o CRX.</p> <p>Se você excluir acidentalmente essa conta, ela será recriada após a reinicialização do repositório (na configuração padrão).</p> <p>A conta de administrador é um requisito da plataforma AEM. Consequentemente, esta conta não pode ser eliminada.</p> </td>
-   <td><p>A Adobe recomenda que a senha desta conta de usuário seja alterada do padrão.</p> <p>De preferência na instalação, embora possa ser feito depois.</p> <p>Observação: Esta conta não deve ser confundida com a conta de administrador do CQ Servlet Engine.</p> </td>
+   <td><p>Conta de administração do sistema com direitos de acesso totais.</p> <p>Esta conta é usada para a conexão entre AEM WCM e CRX.</p> <p>Se você excluir acidentalmente essa conta, ela será recriada após a reinicialização do repositório (na configuração padrão).</p> <p>A conta de administrador é um requisito da plataforma AEM. Consequentemente, esta conta não pode ser eliminada.</p> </td>
+   <td><p>O Adobe recomenda que a senha desta conta de usuário seja alterada do padrão.</p> <p>De preferência na instalação, embora possa ser feito depois.</p> <p>Observação: Esta conta não deve ser confundida com a conta de administrador do CQ Servlet Engine.</p> </td>
   </tr>
   <tr>
    <td><p>anônimo</p> <p> </p> </td>
@@ -81,7 +81,7 @@ As tabelas a seguir listas cada item junto com:
    <td><p>author</p> <p>Senha padrão: autor</p> </td>
    <td>Usuário</td>
    <td><p>Uma conta do autor com permissão para gravar em /content. Abrange privilégios de contribuinte e surfista.</p> <p>Pode ser usado como um webmaster, pois tem acesso a toda a /árvore de conteúdo.</p> <p>Este não é um usuário integrado, mas outro usuário de demonstração geometrixx</p> </td>
-   <td><p>A Adobe recomenda que a conta seja totalmente excluída ou que a senha seja alterada a partir do padrão.</p> <p>De preferência na instalação, embora possa ser feito depois.</p> </td>
+   <td><p>O Adobe recomenda que a conta seja totalmente excluída ou que a senha seja alterada a partir do padrão.</p> <p>De preferência na instalação, embora possa ser feito depois.</p> </td>
   </tr>
   <tr>
    <td>administradores</td>
@@ -104,13 +104,13 @@ As tabelas a seguir listas cada item junto com:
   <tr>
    <td>hidrelétricas</td>
    <td>Grupo</td>
-   <td>Grupo de referência predefinido para um usuário AEM Assets típico. Os membros deste grupo têm privilégios apropriados para permitir o upload/compartilhamento de ativos e coleções.</td>
+   <td>Grupo de referência predefinido para um usuário típico do AEM Assets. Os membros deste grupo têm privilégios apropriados para permitir o upload/compartilhamento de ativos e coleções.</td>
    <td> </td>
   </tr>
   <tr>
    <td>everyone</td>
    <td>Grupo</td>
-   <td><p>Todos os usuários do AEM são membros do grupo e todos, mesmo que você não veja o grupo ou a relação de associação em todas as ferramentas.</p> <p>Esse grupo pode ser considerado como os direitos padrão, pois pode ser usado para aplicar permissões a todos, até mesmo aos usuários que serão criados no futuro.</p> </td>
+   <td><p>Todos os usuários no AEM são membros do grupo e todos, mesmo que você não veja o grupo ou a relação de associação em todas as ferramentas.</p> <p>Esse grupo pode ser considerado como os direitos padrão, pois pode ser usado para aplicar permissões a todos, até mesmo aos usuários que serão criados no futuro.</p> </td>
    <td><p>Não modifique ou exclua este grupo.</p> <p>Modificar esta conta tem implicações adicionais de segurança.</p> </td>
   </tr>
   <tr>
@@ -139,17 +139,17 @@ As tabelas a seguir listas cada item junto com:
  </tbody>
 </table>
 
-## Permissões no AEM {#permissions-in-aem}
+## Permissões em AEM {#permissions-in-aem}
 
-O AEM usa ACLs para determinar quais ações um usuário ou grupo pode realizar e onde pode executar essas ações.
+AEM usa ACLs para determinar quais ações um usuário ou grupo pode realizar e onde pode executar essas ações.
 
 ### Permissões e ACLs {#permissions-and-acls}
 
 As permissões definem quem pode executar quais ações em um recurso. As permissões são o resultado de avaliações de [controles de acesso](#access-control-lists-and-how-they-are-evaluated) .
 
-Você pode alterar as permissões concedidas/negadas a um determinado usuário marcando ou desmarcando as caixas de seleção das [ações](security.md#actions)individuais do AEM. Uma marca de seleção indica que uma ação é permitida. Nenhuma marca de seleção indica que uma ação foi negada.
+Você pode alterar as permissões concedidas/negadas a um determinado usuário marcando ou desmarcando as caixas de seleção das [ações](security.md#actions)AEM individuais. Uma marca de seleção indica que uma ação é permitida. Nenhuma marca de seleção indica que uma ação foi negada.
 
-Onde a marca de seleção está localizada na grade também indica quais permissões os usuários têm em quais locais no AEM (ou seja, quais caminhos).
+Onde a marca de seleção está localizada na grade também indica quais permissões os usuários têm em quais locais dentro do AEM (ou seja, quais caminhos).
 
 ### Ações {#actions}
 
@@ -205,13 +205,13 @@ As ações podem ser executadas em uma página (recurso). Para cada página na h
 
 >[!NOTE]
 >
->O AEM gera automaticamente grupos de usuários para atribuição de funções (Proprietário, Editor, Visualizador) em [Coleções](/help/assets/managing-collections-touch-ui.md). No entanto, adicionar manualmente ACLs para esses grupos pode introduzir vulnerabilidades de segurança no AEM. A Adobe recomenda que você evite adicionar ACLs manualmente.
+>AEM gera automaticamente grupos de usuários para atribuição de funções (Proprietário, Editor, Visualizador) em [Coleções](/help/assets/manage-collections.md). No entanto, adicionar manualmente ACLs para esses grupos pode apresentar vulnerabilidades de segurança dentro do AEM. A Adobe recomenda que você evite adicionar ACLs manualmente.
 
-### Listas do Controle de acesso e como elas são avaliadas {#access-control-lists-and-how-they-are-evaluated}
+### listas do controle de acesso e como elas são avaliadas {#access-control-lists-and-how-they-are-evaluated}
 
-O AEM WCM usa Listas de Controles de acesso (ACLs) para organizar as permissões aplicadas às várias páginas.
+AEM WCM usa as Listas do Controle de acesso (ACLs) para organizar as permissões que estão sendo aplicadas às várias páginas.
 
-As Listas do Controle de acesso são constituídas pelas permissões individuais e são usadas para determinar a ordem na qual essas permissões são realmente aplicadas. A lista é formada de acordo com a hierarquia das páginas em questão. Essa lista é digitalizada de baixo para cima até que a primeira permissão apropriada para aplicar a uma página seja encontrada.
+As Listas do controle de acesso são constituídas pelas permissões individuais e são usadas para determinar a ordem na qual essas permissões são realmente aplicadas. A lista é formada de acordo com a hierarquia das páginas em questão. Essa lista é digitalizada de baixo para cima até que a primeira permissão apropriada para aplicar a uma página seja encontrada.
 
 >[!NOTE]
 >
@@ -238,8 +238,8 @@ As Listas do Controle de acesso são constituídas pelas permissões individuais
 
 | **Ação** | **Descrição** |
 |---|---|
-| Permitir (marca de seleção) | O WCM AEM permite que o usuário execute a ação nesta página ou em qualquer página secundária. |
-| Negar (sem marca de seleção) | O WCM AEM não permite que o usuário execute a ação nesta página nem em nenhuma página secundária. |
+| Permitir (marca de seleção) | AEM WCM permite que o usuário execute a ação nesta página ou em qualquer página secundária. |
+| Negar (sem marca de seleção) | AEM WCM não permite que o usuário execute a ação nesta página nem em nenhuma página secundária. |
 
 As permissões também são aplicadas a qualquer página secundária.
 
@@ -292,13 +292,13 @@ Veja a seguir recomendações sobre como gerenciar listas do controle de acesso:
 
    O uso de negação pode causar efeitos inesperados se as permissões forem aplicadas em uma ordem diferente da ordem esperada. Se um usuário for membro de mais de um grupo, as declarações Negar de um grupo poderão cancelar a instrução Permitir de outro grupo ou vice-versa. É difícil manter uma visão geral quando isso acontece e pode facilmente levar a resultados imprevistos, enquanto Permitir atribuições não gera tais conflitos.
 
-   A Adobe recomenda que você trabalhe com Permitir, em vez de Negar, ver [Práticas recomendadas](#best-practices).
+   A Adobe recomenda que você trabalhe com Permitir em vez de Negar para ver as [Práticas](#best-practices)recomendadas.
 
-Antes de modificar qualquer permissão, certifique-se de entender como elas funcionam e se relacionam. Consulte a documentação do CRX para ilustrar como o AEM WCM [avalia os direitos](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) de acesso e exemplos sobre como configurar listas do controle de acesso.
+Antes de modificar qualquer permissão, certifique-se de entender como elas funcionam e se relacionam. Consulte a documentação do CRX para ilustrar como AEM WCM [avalia os direitos](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) de acesso e exemplos sobre como configurar listas do controle de acesso.
 
-### Permissões     {#permissions}
+### Permissões  {#permissions}
 
-As permissões concedem aos usuários e grupos acesso à funcionalidade do AEM nas páginas do AEM.
+As permissões concedem aos usuários e grupos acesso à funcionalidade AEM em AEM páginas.
 
 Você navega permissões por caminho expandindo/recolhendo os nós e pode rastrear a herança de permissão até o nó raiz.
 
@@ -308,7 +308,7 @@ Você permite ou nega permissões marcando ou desmarcando as caixas de seleção
 
 ### Exibindo Informações Detalhadas sobre Permissão {#viewing-detailed-permission-information}
 
-Juntamente com a visualização de grade, o AEM fornece uma visualização detalhada de permissões para um usuário/grupo selecionado em um determinado caminho. A visualização de detalhes fornece informações adicionais.
+Juntamente com a visualização de grade, AEM fornece uma visualização detalhada de permissões para um usuário/grupo selecionado em um determinado caminho. A visualização de detalhes fornece informações adicionais.
 
 Além de visualizar informações, você também pode incluir ou excluir o usuário ou grupo atual de um grupo. Consulte [Adicionar usuários ou grupos ao adicionar permissões](#adding-users-or-groups-while-adding-permissions). As alterações feitas aqui são refletidas imediatamente na porção superior da visualização detalhada.
 
@@ -352,7 +352,7 @@ Isso permite que as contas do representador completem as tarefas como se estives
 >
 >Para que a representação funcione para usuários que não sejam administradores, o impersonador (no caso acima, user-B) deve ter permissões de LEITURA no `/home/users` caminho.
 >
->Para obter mais informações sobre como fazer isso, consulte [Permissões no AEM](/help/sites-administering/security.md#permissions-in-aem).
+>Para obter mais informações sobre como fazer isso, consulte [Permissões em AEM](/help/sites-administering/security.md#permissions-in-aem).
 
 >[!CAUTION]
 >
@@ -364,7 +364,7 @@ Isso permite que as contas do representador completem as tarefas como se estives
 >
 >Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
 
-### Práticas recomendadas    {#best-practices}
+### Práticas recomendadas     {#best-practices}
 
 A seguir, é apresentada uma descrição das práticas recomendadas ao trabalhar com permissões e privilégios:
 
@@ -388,7 +388,7 @@ Ambos podem ser configurados usando a funcionalidade Administração do usuário
 
 Você acessa todos os usuários, grupos e permissões associadas usando o console Segurança. Todos os procedimentos descritos nesta seção são executados nesta janela.
 
-Para acessar a segurança WCM do AEM, execute um dos procedimentos a seguir:
+Para acessar AEM segurança WCM, execute um dos procedimentos a seguir:
 
 * Na tela Bem-vindo ou em vários locais no AEM, clique no ícone de segurança:
 
@@ -417,7 +417,7 @@ As guias fornecem acesso a várias configurações:
 | Propriedades | Listas informações sobre o usuário ou grupo que podem incluir informações de email, uma descrição e informações de nome. Também permite alterar a senha de um usuário. Consulte [Criação de usuários e grupos](#creating-users-and-groups), [Modificação de propriedades](#modifying-user-and-group-properties) de usuários e grupos e [Alteração de uma senha](#changing-a-user-password)de usuário. |
 | Grupos | Lista todos os grupos aos quais o usuário ou grupo selecionado pertence. Você pode atribuir o usuário ou grupos selecionados a grupos adicionais ou removê-los de grupos. Consulte [Grupos](#adding-users-or-groups-to-a-group). |
 | Membros | Disponível somente para grupos. Lista os membros de um grupo específico. Consulte [Membros](#members-adding-users-or-groups-to-a-group). |
-| Permissões     | Você pode alocar permissões para um usuário ou grupo. Permite controlar o seguinte:<ul><li>Permissões relacionadas a páginas/nós específicos. Consulte [Configuração de permissões](#setting-permissions). </li><li>Permissões relacionadas à criação e exclusão de páginas e modificação de hierarquia. ???? permite [alocar privilégios](#settingprivileges), como modificação de hierarquia, que permite criar e excluir páginas,</li><li>Permissões relacionadas a privilégios [de](#setting-replication-privileges) replicação (normalmente do autor para a publicação) de acordo com um caminho.</li></ul> |
+| Permissões  | Você pode alocar permissões para um usuário ou grupo. Permite controlar o seguinte:<ul><li>Permissões relacionadas a páginas/nós específicos. Consulte [Configuração de permissões](#setting-permissions). </li><li>Permissões relacionadas à criação e exclusão de páginas e modificação de hierarquia. ???? permite [alocar privilégios](#settingprivileges), como modificação de hierarquia, que permite criar e excluir páginas,</li><li>Permissões relacionadas a privilégios [de](#setting-replication-privileges) replicação (normalmente do autor para a publicação) de acordo com um caminho.</li></ul> |
 | Personificadores | Permite que outro usuário personalize a conta. Útil quando você precisa que um usuário atue em nome de outro usuário. Consulte [Representando usuários](#impersonating-another-user). |
 | Preferências | Define [preferências para o grupo ou usuário](#setting-user-and-group-preferences). Por exemplo, preferências de idioma. |
 
@@ -456,7 +456,7 @@ Para criar um novo usuário ou grupo:
 
 1. Insira os detalhes necessários, de acordo com a criação de um usuário ou de um grupo.
 
-   * Se você selecionar **Criar usuário,** digite a ID de login, o nome e o sobrenome, o endereço de email e a senha. Por padrão, o AEM cria um caminho com base na primeira letra do sobrenome, mas você pode selecionar outro caminho.
+   * Se você selecionar **Criar usuário,** digite a ID de login, o nome e o sobrenome, o endereço de email e a senha. Por padrão, AEM cria um caminho com base na primeira letra do sobrenome, mas você pode selecionar outro caminho.
 
    ![createuserdialog](assets/createuserdialog.png)
 
@@ -471,7 +471,7 @@ Para criar um novo usuário ou grupo:
 Para excluir um usuário ou grupo:
 
 1. No console **Segurança** , selecione o usuário ou grupo que deseja excluir. Se desejar excluir vários itens, pressione Shift ou Ctrl e clique para selecioná-los.
-1. Clique em **Editar,** em seguida, selecione Excluir. O WCM AEM pergunta se você deseja excluir o usuário ou grupo.
+1. Clique em **Editar,** em seguida, selecione Excluir. AEM WCM pergunta se você deseja excluir o usuário ou grupo.
 1. Clique em **OK** para confirmar ou em Cancelar para cancelar sua ação.
 
 ### Modificando propriedades de usuário e grupo {#modifying-user-and-group-properties}
@@ -496,7 +496,7 @@ Use o procedimento a seguir para modificar a senha de um usuário.
 >
 >Não é possível usar o console Segurança para alterar a senha do administrador. Para alterar a senha da conta de administrador, use o console [](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) Usuários fornecido pelo Granite Operations.
 >
->Se você estiver usando AEM Forms no JEE, não use as instruções abaixo para alterar a senha, em vez de usar AEM Forms no console de administração do JEE (/adminui) para alterar a senha.
+>Se você estiver usando o AEM Forms no JEE, não use as instruções abaixo para alterar a senha, em vez de usar o AEM Forms no console de administração do JEE (/adminui) para alterar a senha.
 
 1. No console **Segurança** , clique com o duplo no nome de usuário para o qual deseja alterar a senha.
 1. Clique na guia **Propriedades** (se ainda não estiver ativa).
@@ -509,7 +509,7 @@ Use o procedimento a seguir para modificar a senha de um usuário.
 
 ### Adicionar usuários ou grupos a um grupo {#adding-users-or-groups-to-a-group}
 
-O AEM oferta três maneiras diferentes de adicionar usuários ou grupos a um grupo existente:
+AEM ofertas três maneiras diferentes de adicionar usuários ou grupos a um grupo existente:
 
 * Quando estiver no grupo, você poderá adicionar membros (usuários ou grupos).
 * Quando você estiver no membro, poderá adicionar membros a grupos.
@@ -519,7 +519,7 @@ O AEM oferta três maneiras diferentes de adicionar usuários ou grupos a um gru
 
 A guia **Grupos** mostra a quais grupos a conta atual pertence. Você pode usá-lo para adicionar a conta selecionada a um grupo:
 
-1. Clique com o Duplo no nome da conta (usuário ou grupo) que você deseja atribuir a um grupo.
+1. Clique com o duplo no nome da conta (usuário ou grupo) que você deseja atribuir a um grupo.
 1. Click the **Groups** tab. Você verá uma lista de grupos aos quais a conta já pertence.
 1. Na lista em árvore, clique no nome do grupo ao qual deseja adicionar a conta e arraste-o para o painel **Grupos** . (Se você quiser adicionar vários usuários, pressione Shift ou Ctrl e clique nesses nomes e arraste-os.)
 
@@ -531,7 +531,7 @@ A guia **Grupos** mostra a quais grupos a conta atual pertence. Você pode usá-
 
 A guia **Membros** funciona somente para grupos e mostra quais usuários e grupos pertencem ao grupo atual. Você pode usá-lo para adicionar contas a um grupo:
 
-1. Clique com o Duplo no nome do grupo ao qual deseja adicionar membros.
+1. Clique com o duplo no nome do grupo ao qual deseja adicionar membros.
 1. Click the **Members** tab. Você verá uma lista de membros que já pertencem a esse grupo.
 1. Na lista em árvore, clique no nome do membro que deseja adicionar ao grupo e arraste-o para o painel **Membros** . (Se você quiser adicionar vários usuários, pressione Shift ou Ctrl e clique nesses nomes e arraste-os.)
 
@@ -543,7 +543,7 @@ A guia **Membros** funciona somente para grupos e mostra quais usuários e grupo
 
 Para adicionar membros a um grupo em um determinado caminho:
 
-1. Clique com o Duplo no nome do grupo ou usuário ao qual deseja adicionar usuários.
+1. Clique com o duplo no nome do grupo ou usuário ao qual deseja adicionar usuários.
 
 1. Click the **Permissions** tab.
 
@@ -556,7 +556,7 @@ Para adicionar membros a um grupo em um determinado caminho:
 
 ### Removendo usuários ou grupos de grupos {#removing-users-or-groups-from-groups}
 
-O AEM oferta três maneiras diferentes de remover usuários ou grupos de um grupo:
+AEM ofertas três maneiras diferentes de remover usuários ou grupos de um grupo:
 
 * Quando estiver no perfil do grupo, você poderá remover membros (usuários ou grupos).
 * Quando estiver no perfil membro, você poderá remover membros dos grupos.
@@ -566,7 +566,7 @@ O AEM oferta três maneiras diferentes de remover usuários ou grupos de um grup
 
 Para remover uma conta de usuário ou grupo de um grupo:
 
-1. Clique com o Duplo no nome do grupo ou conta de usuário que deseja remover de um grupo.
+1. Clique com o duplo no nome do grupo ou conta de usuário que deseja remover de um grupo.
 1. Click the **Groups** tab. Você verá a quais grupos a conta selecionada pertence.
 1. No painel **Grupos** , clique no nome do usuário ou grupo que deseja remover do grupo e clique em **Remover**. (Se quiser remover várias contas, pressione Shift ou Ctrl e clique nesses nomes e clique em **Remover**.)
 
@@ -578,7 +578,7 @@ Para remover uma conta de usuário ou grupo de um grupo:
 
 Para remover contas de um grupo:
 
-1. Clique com o Duplo no nome do grupo do qual você deseja remover membros.
+1. Clique com o duplo no nome do grupo do qual você deseja remover membros.
 1. Click the **Members** tab. Você verá uma lista de membros que já pertencem a esse grupo.
 1. No painel **Membros** , clique no nome do membro que deseja remover do grupo e clique em **Remover**. (Se quiser remover vários usuários, pressione Shift ou Control e clique nesses nomes e clique em **Remover**.)
 
@@ -590,7 +590,7 @@ Para remover contas de um grupo:
 
 Para remover membros de um grupo em um determinado caminho:
 
-1. Clique com o Duplo no nome do grupo ou usuário do qual você deseja remover usuários.
+1. Clique com o duplo no nome do grupo ou usuário do qual você deseja remover usuários.
 
 1. Click the **Permissions** tab.
 
@@ -611,7 +611,7 @@ Para saber mais sobre a sincronização do usuário e como ativá-la, consulte S
 
 >[!NOTE]
 >
->A Adobe introduziu uma nova visualização principal baseada na interface do usuário para o gerenciamento de permissões. Para obter mais detalhes sobre como usá-lo, consulte [esta página](/help/sites-administering/touch-ui-principal-view.md).
+>O Adobe introduziu uma nova visualização principal com base na interface de toque para o gerenciamento de permissões. Para obter mais detalhes sobre como usá-lo, consulte [esta página](/help/sites-administering/touch-ui-principal-view.md).
 
 Esta seção descreve como definir permissões, incluindo privilégios de replicação.
 
@@ -639,7 +639,7 @@ O privilégio de replicação é o direito de publicar conteúdo e pode ser defi
 >
 >* Todos os direitos de replicação aplicados a um grupo se aplicam a todos os usuários nesse grupo.
 >* Os privilégios de replicação de um usuário substituem os privilégios de replicação de um grupo.
->* Os direitos de replicação de Permitir têm uma precedência superior aos direitos de replicação de Negar. Consulte [Permissões no AEM](#permissions-in-aem) para obter mais informações.
+>* Os direitos de replicação de Permitir têm uma precedência superior aos direitos de replicação de Negar. Consulte [Permissões em AEM](#permissions-in-aem) para obter mais informações.
 
 >
 
@@ -650,7 +650,7 @@ Para definir privilégios de replicação:
 1. Selecione o usuário ou grupo na lista, clique com o duplo para abrir e clique em **Permissões**.
 1. Na grade, navegue até o caminho onde deseja que o usuário tenha privilégios de replicação ou [procure nós.](#searching-for-nodes)
 
-1. Na coluna **Replicar** no caminho selecionado, marque uma caixa de seleção para adicionar o privilégio de replicação para esse usuário ou grupo, ou desmarque a caixa de seleção para remover o privilégio de replicação. O AEM exibe um triângulo vermelho em qualquer lugar em que você tenha feito alterações que ainda não foram salvas.
+1. Na coluna **Replicar** no caminho selecionado, marque uma caixa de seleção para adicionar o privilégio de replicação para esse usuário ou grupo, ou desmarque a caixa de seleção para remover o privilégio de replicação. AEM exibe um triângulo vermelho em qualquer lugar em que você tenha feito alterações que ainda não foram salvas.
 
    ![cquserreplicatepermissions](assets/cquserreplicatepermissions.png)
 
@@ -697,7 +697,7 @@ Há vários cenários em que você pode usar essa funcionalidade, incluindo:
 
 Para representar um usuário existente:
 
-1. Na lista em árvore, selecione o nome da pessoa que você deseja atribuir a outros usuários para representar. Clique com o Duplo para abrir.
+1. Na lista em árvore, selecione o nome da pessoa que você deseja atribuir a outros usuários para representar. Clique com o duplo para abrir.
 1. Click the **Impersonators** tab.
 1. Clique no usuário que deseja personalizar o usuário selecionado. Arraste o usuário (que representará) da lista para o painel Representar. O nome é exibido na lista.
 
@@ -720,7 +720,7 @@ Para definir as preferências do usuário e do grupo, incluindo idioma, gerencia
 
 Para definir usuários ou administradores com os privilégios para excluir/ativar/desativar outros usuários:
 
-1. Adicione o usuário que você deseja conceder privilégios para gerenciar outros usuários ao grupo de administradores e salve suas alterações.
+1. Adicione o usuário ao qual você deseja conceder privilégios para gerenciar outros usuários ao grupo de administradores e salvar suas alterações.
 
    ![cqsecurityaddmembertoadmin](assets/cqsecurityaddmembertoadmin.png)
 
