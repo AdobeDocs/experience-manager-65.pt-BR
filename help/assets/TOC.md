@@ -6,7 +6,7 @@ user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 39%
@@ -113,7 +113,7 @@ ht-degree: 39%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integração](aem-cc-integration-best-practices.md)
    + [Integrar com [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management nos ativos](drm.md)
-   + [Usar o pacote de demonstração para insights de ativos](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Usar o pacote de demonstração para insights de ativos](use-demo-package-for-asset-insights.md)
    + [Práticas recomendadas de formato de arquivo de ativos](assets-file-format-best-practices.md)
    + [Práticas recomendadas para monitorar ativos](assets-monitoring-best-practices.md)
    + [apoio Camera Raw](camera-raw.md)
@@ -139,21 +139,21 @@ ht-degree: 39%
    + [Fragmentos de conteúdo - Marcação](content-fragments/content-fragments-markdown.md)
    + [Criar projetos de tradução para Fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
-   + [Gerenciar ativos digitais](managing-assets-touch-ui.md)
-   + [Gerenciar coleções](managing-collections-touch-ui.md)
+   + [Gerenciar ativos digitais](manage-assets.md)
+   + [Gerenciar coleções](manage-collections.md)
    + [Ativar detecção de duplicados](duplicate-detection.md)
    + [Organizar ativos digitais](organize-assets.md)
    + [Gerenciar ativos de vídeo](managing-video-assets.md)
    + [Criar projetos de tradução](translation-projects.md)
    + [Preparar ativos para tradução](preparing-assets-for-translation.md)
    + [Baixar ativos do Experience Manager](download-assets-from-aem.md)
-   + [Lightbox](touch-ui-light-box.md)
-   + [Insights de ativos](touch-ui-asset-insights.md)
-   + [Ativar insights de ativos por meio do DTM](touch-ui-using-dtm-for-asset-insights.md)
-   + [Configurar insights de ativos](touch-ui-configuring-asset-insights.md)
+   + [Lightbox](light-box.md)
+   + [Insights de ativos](asset-insights.md)
+   + [Ativar insights de ativos por meio do DTM](use-dtm-for-asset-insights.md)
+   + [Configurar insights de ativos](configure-asset-insights.md)
    + [Fazer check-in e check-out de ativos](check-out-and-submit-assets.md)
    + [Aplicar serviços da nuvem de tradução a pastas](transition-cloud-services.md)
-   + [Usar o rastreador de página e incorporar código em páginas da Web](touch-ui-using-page-tracker.md)
+   + [Usar o rastreador de página e incorporar código em páginas da Web](use-page-tracker.md)
    + [Gerenciar ativos compostos](managing-linked-subassets.md)
    + [Ativos relacionados](related-assets.md)
    + [Compartilhamento de pasta particular](private-folder.md)
