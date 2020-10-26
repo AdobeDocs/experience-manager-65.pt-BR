@@ -3,7 +3,7 @@ title: Processar ativos usando workflows
 description: Processamento de ativos para converter formatos, criar execuções, gerenciar ativos, validar ativos e executar workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Para ver os vários modelos de fluxo de trabalho disponíveis por padrão, consu
 
 ![Alguns dos fluxos de trabalho padrão](assets/aem-default-workflows.png)
 
-*Figura: Alguns dos workflows padrão disponíveis em[!DNL Experience Manager].*
+*Figura: Alguns dos workflows padrão disponíveis em [!DNL Experience Manager].*
 
 ## Aplicar workflows para processar ativos {#applying-workflows-to-assets}
 
@@ -84,7 +84,7 @@ O procedimento para aplicar um fluxo de trabalho a várias pastas é semelhante 
 
 ## Aplicar um fluxo de trabalho a uma coleção {#applying-a-workflow-to-a-collection}
 
-Consulte [aplicar um fluxo de trabalho em uma coleção](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+Consulte [aplicar um fluxo de trabalho em uma coleção](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## Start automático de um fluxo de trabalho para processar ativos condicionalmente {#auto-execute-workflow-on-some-assets}
 
