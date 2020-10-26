@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: 7a1da89805799f392f4397b1582bcc83d9bc67de
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 3%
@@ -44,7 +44,7 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 
 
-Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicação de ativos.](managing-assets-touch-ui.md)
+Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicação de ativos.](manage-assets.md)
 
 ## DELIVERY HTTP/2 de ativos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
