@@ -3,7 +3,7 @@ title: Integração com as práticas recomendadas da Adobe Creative Cloud
 description: Práticas recomendadas para [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integrar-se para dinamizar os workflows de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 17%
@@ -39,7 +39,7 @@ Leia para saber quais integrações escolher entre desktop e DAM de nível corpo
 | Os usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações para [!DNL Experience Manager]e o upload de novos arquivos para o ambiente [!DNL Experience Manager] de desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo desktop nativo, incluindo os não-Adobe. | [aplicativo de desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] aplicativo desktop no desktop Win e Mac |
 | Os profissionais de marketing e os usuários empresariais descobrem, pré-visualizações, licenciam e salvam e gerenciam os [!DNL Adobe Stock] ativos de dentro [!DNL Experience Manager]. Os ativos licenciados e salvos fornecem metadados selecionados [!DNL Adobe Stock] para melhor governança. | [Integração com Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface da Web |
 
-Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Alternate solutions such as [Brand Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/home.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
+Este artigo foca principalmente nos dois primeiros aspectos das necessidades de colaboração. A distribuição e o fornecimento de ativos em escala são brevemente mencionadas como um caso de uso. Para essas necessidades, considere o Adobe Brand Portal ou o Asset Share Commons. Alternate solutions such as [Brand Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/home.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/manage-assets.md) should be reviewed based on specific requirement.
 
 ![conexões Creative Cloud para Experience Manager, decidir qual recurso usar](assets/creative-connections-aem.png)
 
@@ -53,13 +53,13 @@ Este artigo foca principalmente nos dois primeiros aspectos das necessidades de 
 | Discover - procurar pastas DAM | Sim | [!DNL Experience Manager] Interface da Web e ações da área de trabalho |  |
 | Discover - acessar coleções de DAM | Sim | [!DNL Experience Manager] Interface da Web e ações da área de trabalho |  |
 | Discover - pesquisar ativos do DAM | Sim | [!DNL Experience Manager] Interface da Web e ações da área de trabalho |  |
-| Usar - ativo aberto | Sim | Sim | [Abrir da interface](managing-assets-touch-ui.md#previewing-assets) da Web ou do Finder |
+| Usar - ativo aberto | Sim | Sim | [Abrir da interface](manage-assets.md#previewing-assets) da Web ou do Finder |
 | Usar - colocar o ativo do DAM em um documento | Sim - incorporação | Sim - vinculação ou incorporação | [!DNL Experience Manager] o aplicativo desktop dá acesso aos ativos como arquivos no sistema de arquivos local. Esses links nos aplicativos nativos são representados por caminhos locais. |
 | Editar - abrir para edição | Sim - Ação de check-out | Sim - ação de abertura (no compartilhamento de rede) | [O check-out no AAL](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) salva o ativo na conta do armazenamento da Creative Cloud do usuário (sincronizada pelo aplicativo Creative Cloud) por padrão. |
 | Editar - trabalho em andamento fora do DAM | Sim - ativo disponível na conta do armazenamento do Creative Cloud do usuário sincronizado com o desktop. | Sim |  |
 | Editar - carregar alterações | Sim - ação [de](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) check-in com comentário opcional | Sim |  |
-| Carregar - único arquivo | Sim - carrega o documento ativo atual | Sim | [Fazer upload por meio da interface da Web](managing-assets-touch-ui.md#uploading-assets) |
-| Carregar - vários arquivos / estruturas hierárquicas de pastas | Não | Sim | [Faça upload pela interface](managing-assets-touch-ui.md#uploading-assets) da Web ou por meio de scripts ou ferramentas personalizados. |
+| Carregar - único arquivo | Sim - carrega o documento ativo atual | Sim | [Fazer upload por meio da interface da Web](manage-assets.md#uploading-assets) |
+| Carregar - vários arquivos / estruturas hierárquicas de pastas | Não | Sim | [Faça upload pela interface](manage-assets.md#uploading-assets) da Web ou por meio de scripts ou ferramentas personalizados. |
 | Misc - usuário e login | O usuário Creative Cloud conectado ao aplicativo de desktop Creative Cloud é reconhecido (SSO) | [!DNL Experience Manager] usuário e credenciais | Os usuários de ambas as soluções contam para a cota de [!DNL Experience Manager] usuários. |
 | Diversos - rede e acesso | Requer acesso da área de trabalho do usuário à [!DNL Experience Manager] implantação pela rede | Requer acesso da área de trabalho do usuário à [!DNL Experience Manager] implantação pela rede | [!DNL Adobe Asset Link] não compartilha o ambiente proxy de rede. |
 | Diversos - Migrar um grande número de ativos | Não | Não | [Guia de migração de ativos](assets-migration-guide.md) |
@@ -69,7 +69,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 * [Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/home.html) da marca para um complemento SaaS configurável para [!DNL Experience Manager Assets] publicar ativos.
 * As soluções personalizadas são criadas com base na base de código [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) .
 * [!DNL Experience Manager] [compartilhamento](/help/assets/link-sharing.md) de link para compartilhar ativos ad hoc usando links.
-* [interface](/help/assets/managing-assets-touch-ui.md) da Web do Experience Manager Assets com áreas para terceiros externos protegidas pela configuração do [!DNL Experience Manager] controle de acesso e com os ajustes necessários de configuração de TI/rede, dando a esses usuários externos acesso [!DNL Experience Manager].
+* [interface](/help/assets/manage-assets.md) da Web do Experience Manager Assets com áreas para terceiros externos protegidas pela configuração do [!DNL Experience Manager] controle de acesso e com os ajustes necessários de configuração de TI/rede, dando a esses usuários externos acesso [!DNL Experience Manager].
 
 ## Conceitos-chave e casos de uso {#key-concepts-and-use-cases}
 
@@ -109,7 +109,7 @@ Alguns pontos importantes sobre essa integração:
 * Quando os ativos do Adobe stock são salvos em [!DNL Experience Manager], eles se tornam regulares [!DNL Assets], com o binário salvo no [!DNL Experience Manager] repositório. Alguns metadados relacionados a [!DNL Adobe Stock] são salvos para o ativo em [!DNL Experience Manager], caso contrário, o processo de ingestão terá a mesma aparência de qualquer outro arquivo. Por exemplo, se as Tags inteligentes estiverem ativas, as tags serão adicionadas a esses ativos ao salvar.
 * O ativo salvo [!DNL Experience Manager] é uma cópia, não um link de volta para [!DNL Adobe Stock].
 
-**Trabalhar com ativos salvos de[!DNL Adobe Stock]em[!DNL Experience Manager]em[!DNL Creative Cloud]**. Essa integração é independente [!DNL Adobe Asset Link], mas [!DNL Adobe Asset Link] reconhece esses ativos salvos dessa [!DNL Stock] maneira, e exibe metadados adicionais e um [!DNL Adobe Stock] logotipo nesses ativos na [!DNL Adobe Asset Link] extensão da interface do usuário em [!DNL Photoshop], [!DNL Illustrator]ou [!DNL InDesign]. Os arquivos estão disponíveis para navegação, abertura e assim por diante - porque são ativos comuns quando salvos em [!DNL Experience Manager].
+**Trabalhar com ativos salvos de [!DNL Adobe Stock] em [!DNL Experience Manager] em[!DNL Creative Cloud]**. Essa integração é independente [!DNL Adobe Asset Link], mas [!DNL Adobe Asset Link] reconhece esses ativos salvos dessa [!DNL Stock] maneira, e exibe metadados adicionais e um [!DNL Adobe Stock] logotipo nesses ativos na [!DNL Adobe Asset Link] extensão da interface do usuário em [!DNL Photoshop], [!DNL Illustrator]ou [!DNL InDesign]. Os arquivos estão disponíveis para navegação, abertura e assim por diante - porque são ativos comuns quando salvos em [!DNL Experience Manager].
 Os usuários criativos que trabalham em [!DNL Creative Cloud] aplicativos com [!DNL Adobe Asset Link] extensão presentes, além de terem acesso a ativos já licenciados [!DNL Adobe Stock] de dentro [!DNL Experience Manager], também podem usar o painel [!DNL Creative Cloud] Bibliotecas para pesquisar, pré-visualização e licenciar ativos [!DNL Adobe Stock] .
 [!DNL Assets] de [!DNL Adobe Stock] licenciados e salvos em [!DNL Experience Manager] tornam-se disponíveis para as equipes mais amplas que acessam a [!DNL Experience Manager Assets] implantação, enquanto os ativos de licenciamento de criativos [!DNL Adobe Stock] por meio do painel [!DNL Creative Cloud] Bibliotecas os disponibilizam somente para elas próprias por padrão em suas [!DNL Creative Cloud] contas.
 
@@ -181,7 +181,7 @@ Use as seguintes estratégias para fornecer acesso aos ativos finais/aprovados:
 
 #### Trabalhos em andamento em ativos de [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
-Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas [!DNL Experience Manager] como alterações. Isso acelera o trabalho de um usuário do desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
+Conforme discutido neste documento, é recomendável realizar atualizações importantes em ativos, às vezes chamados de trabalhos em andamento, sem ter todas as edições salvas no arquivo local também carregadas [!DNL Experience Manager] como alterações. Isso acelera o trabalho de um usuário de desktop, limita a largura de banda da rede usada e mantém a linha do tempo dos ativos limpos e focados em atualizações importantes e controladas.
 
 Adobe Asset Link oferta um bom suporte para este caso de uso:
 
