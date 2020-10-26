@@ -3,7 +3,7 @@ title: Gerenciar ativos compostos com referências e várias páginas
 description: Saiba como criar referências a ativos digitais de dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para visualização de páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illu
 1. Usando o aplicativo [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager desktop, busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
 1. Arraste o ativo da pasta local para o [!DNL Illustrator] arquivo.
 
-1. Salve o [!DNL Illustrator] arquivo na unidade montada ou [carregue](/help/assets/managing-assets-touch-ui.md#uploading-assets) no [!DNL Experience Manager] repositório.
+1. Salve o [!DNL Illustrator] arquivo na unidade montada ou [carregue](/help/assets/manage-assets.md#uploading-assets) no [!DNL Experience Manager] repositório.
 
 1. Após a conclusão do fluxo de trabalho, vá para a página de detalhes do ativo do ativo. As referências a ativos digitais existentes são listadas em **[!UICONTROL Dependências]** na coluna **[!UICONTROL Referências]** .
 
@@ -72,7 +72,7 @@ Esse procedimento é semelhante a [adicionar ativos digitais como referências n
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. Salve o arquivo na unidade montada ou [!DNL Photoshop] carregue [no](/help/assets/managing-assets-touch-ui.md#uploading-assets) [!DNL Experience Manager] repositório.
+1. Salve o arquivo na unidade montada ou [!DNL Photoshop] carregue [no](/help/assets/manage-assets.md#uploading-assets) [!DNL Experience Manager] repositório.
 1. Após a conclusão do fluxo de trabalho, as referências aos ativos existentes são listadas na página de detalhes do ativo. [!DNL Experience Manager]
 
    Para visualização dos ativos referenciados, feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector) na página de detalhes do ativo.
