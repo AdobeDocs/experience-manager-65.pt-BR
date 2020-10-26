@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 8%
@@ -70,7 +70,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi projetada para aju
       * Visualização o vídeo de origem e as representações codificadas do vídeo, juntamente com as miniaturas associadas:
          [Visualizar vídeos](managing-video-assets.md#upload-and-preview-video-assets) ou [Visualizar ativos](previewing-assets.md)
          [Exibição de representações de vídeo](video-renditions.md)
-         [Gerenciamento de execuções de vídeo](managing-assets-touch-ui.md#managing-renditions)
+         [Gerenciamento de execuções de vídeo](manage-assets.md#managing-renditions)
 
       * [Gerenciar predefinições do visualizador](managing-viewer-presets.md)
       * [Publicar ativos](publishing-dynamicmedia-assets.md)
@@ -80,16 +80,16 @@ A seguinte descrição passo a passo do fluxo de trabalho foi projetada para aju
          [Exibir propriedades de representação de vídeo](video-renditions.md)
 
       * Edite as propriedades do vídeo, como título, descrição e tags, e os campos de metadados personalizados:
-         [Editar propriedades de vídeo](managing-assets-touch-ui.md#editing-properties)
+         [Editar propriedades de vídeo](manage-assets.md#editing-properties)
 
       * [Gerenciamento de metadados para ativos digitais](metadata.md)
       * [Esquemas de metadados](metadata-schemas.md)
    * Revise, aprove e anote vídeos e mantenha o controle total da versão
 
-      * [Anotação em vídeos](managing-video-assets.md#annotate-video-assets) ou ativos de [anotação](managing-assets-touch-ui.md#annotating)
+      * [Anotação em vídeos](managing-video-assets.md#annotate-video-assets) ou ativos de [anotação](manage-assets.md#annotating)
 
-      * [Criação de uma versão](managing-assets-touch-ui.md#asset-versioning)
-      * [Aplicar workflows a ativos](assets-workflow.md) ou ver [Iniciar um fluxo de trabalho em um ativo](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Criação de uma versão](manage-assets.md#asset-versioning)
+      * [Aplicar workflows a ativos](assets-workflow.md) ou ver [Iniciar um fluxo de trabalho em um ativo](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Revisar ativos da pasta](bulk-approval.md)
       * [Projetos](../sites-authoring/projects.md)
@@ -339,7 +339,7 @@ Use o CBR se o vídeo contiver um nível de movimento semelhante em todo o víde
 O VBR demora mais para codificar, mas produz os resultados mais favoráveis; a qualidade do arquivo de mídia é superior. O VBR é usado com mais frequência para o delivery progressivo http do conteúdo de vídeo.
 
 Quando você deve usar VBR versus CRB?
-Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar o VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima como 1,5x a taxa de bits de vídeo do público alvo.
+Quando se trata de selecionar VBR versus CBR, é quase sempre recomendável usar VBR para seus arquivos de mídia. O VBR fornece arquivos de maior qualidade a taxas de bits competitivas. Ao usar VBR, certifique-se de usar com codificação de duas passagens e definir a taxa de bits máxima para 1,5x a taxa de bits do vídeo do público alvo.
 
 Ao escolher uma predefinição de codificação de vídeo, considere a velocidade de conexão do usuário final do público alvo. Escolha uma predefinição com uma taxa de dados que seja 80% dessa velocidade. Por exemplo, se a velocidade de conexão do usuário final do público alvo for de 1000 Kbps, a melhor predefinição será aquela com uma taxa de dados de vídeo de 800 Kbps.
 
@@ -1165,7 +1165,7 @@ Consulte [WebVTT: O formato de Rastreamento de texto de vídeo da Web](https://d
    Geralmente, você deseja nomear o arquivo VTT do capítulo com o mesmo nome do arquivo de vídeo e anexá-lo aos capítulos. Ao fazer isso, ele pode ajudá-lo a automatizar a geração de URLs de vídeo usando seu sistema de gestão de conteúdo da Web existente.
 1. Em AEM, carregue seu arquivo de capítulo WebVTT.
 
-   Consulte [Upload de ativos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Consulte [Upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 
 1. Faça uma das seguintes opções:
 
