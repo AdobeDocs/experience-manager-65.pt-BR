@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ee2b13f2fc1f044f119ff54f332844d458663287
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1810'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,7 @@ Todas as configurações de serviço em nuvem no AEM são consolidadas na `/conf
 Para configurar a pasta das configurações do serviço de nuvem:
 
 1. Vá até **[!UICONTROL Ferramentas > Geral > Navegador]** de configuração.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Faça o seguinte para ativar a pasta global para configurações de nuvem ou ignore esta etapa para criar e configurar outra pasta para configurações de serviço de nuvem.
 
    1. No Navegador **[!UICONTROL de]** configuração, selecione a `global` pasta e toque em **[!UICONTROL Propriedades]**.
