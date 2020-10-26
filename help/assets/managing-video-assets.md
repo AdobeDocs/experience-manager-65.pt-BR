@@ -3,7 +3,7 @@ title: Gerenciar ativos de vídeo
 description: Faça upload, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 7%
@@ -22,7 +22,7 @@ Saiba como gerenciar e editar os ativos de vídeo em [!DNL Adobe Experience Mana
 [!DNL Adobe Experience Manager Assets] gera pré-visualizações para ativos de vídeo com a extensão MP4. Se o formato do ativo não for MP4, instale o FFmpeg pack para gerar uma pré-visualização. FFmpeg cria representações de vídeo do tipo OGG e MP4. Você pode pré-visualização as execuções na interface do [!DNL Assets] usuário.
 
 1. Na pasta ou subpastas de ativos digitais, navegue até o local onde deseja adicionar ativos digitais.
-1. Para carregar o ativo, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Arquivos]**. Como alternativa, arraste um arquivo na interface do usuário. Consulte [fazer upload de ativos](managing-assets-touch-ui.md#uploading-assets) para obter detalhes.
+1. Para carregar o ativo, clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Arquivos]**. Como alternativa, arraste um arquivo na interface do usuário. Consulte [fazer upload de ativos](manage-assets.md#uploading-assets) para obter detalhes.
 1. Para pré-visualização de um vídeo na visualização de placa, clique na opção **[!UICONTROL Reproduzir]** ![reprodução](assets/do-not-localize/play.png) no ativo de vídeo. Você pode pausar ou reproduzir vídeo apenas na visualização do cartão. As opções [!UICONTROL Reproduzir] e [!UICONTROL Pausar] não estão disponíveis na visualização da lista.
 
 1. Para pré-visualização do vídeo na página de detalhes do ativo, clique em **[!UICONTROL Editar]** no cartão. O vídeo é reproduzido no player de vídeo nativo do navegador. Você pode reproduzir, pausar, controlar o volume e aplicar zoom no vídeo em tela cheia.
@@ -87,7 +87,7 @@ Após a publicação, você pode incluir os ativos de vídeo em uma página da W
 
 >[!MORELIKETHIS]
 >
->* [Gerenciar ativos digitais nos ativos Experience Manager](/help/assets/managing-assets-touch-ui.md)
->* [Gerenciar coleções nos ativos Experience Manager](/help/assets/managing-collections-touch-ui.md)
+>* [Gerenciar ativos digitais nos ativos Experience Manager](/help/assets/manage-assets.md)
+>* [Gerenciar coleções nos ativos Experience Manager](/help/assets/manage-collections.md)
 >* [Documentação](/help/assets/video.md)de vídeo do Dynamic Media.
 
