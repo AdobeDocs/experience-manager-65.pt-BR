@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 22%
@@ -30,7 +30,7 @@ Modelos de fragmento de conteúdo definem a estrutura do conteúdo para seus fra
 
 Para ativar os modelos de fragmento de conteúdo, é necessário:
 
-* Habilitar o uso de modelos de fragmento de conteúdo no gerenciador de configurações
+* Habilitar o uso de modelos de fragmento de conteúdo no Navegador [de configuração](/help/sites-administering/configurations.md)
 * Aplicar a configuração à pasta Ativos
 
 ### Ativar modelos de fragmento de conteúdo no Configuration Manager {#enable-content-fragment-models-in-configuration-manager}
