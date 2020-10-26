@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 11%
@@ -120,7 +120,7 @@ Selecione o fragmento para revelar a barra de ferramentas com as ações aplicá
 
 >[!NOTE]
 >
->Muitas dessas ações são [padrão para os Ativos](/help/assets/managing-assets-touch-ui.md) e/ou o aplicativo [para desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
+>Muitas dessas ações são [padrão para os Ativos](/help/assets/manage-assets.md) e/ou o aplicativo [para desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)AEM.
 
 ## Abrir o Editor de fragmentos {#opening-the-fragment-editor}
 
@@ -233,14 +233,14 @@ Também é possível [associar conteúdo](/help/assets/content-fragments/content
 
 ## Linha do tempo para fragmentos de conteúdo {#timeline-for-content-fragments}
 
-Além das opções padrão, a [Linha do tempo](/help/assets/managing-assets-touch-ui.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
+Além das opções padrão, a [Linha do tempo](/help/assets/manage-assets.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
 
-* Informações de Visualização sobre versões, comentários e anotações
+* Informações de visualização sobre versões, comentários e anotações
 * Ações para versões
 
-   * **[Reverter para esta versão](#reverting-to-a-version)**(selecione um fragmento existente e, em seguida, uma versão específica)
+   * **[Reverter para esta versão](#reverting-to-a-version)** (selecione um fragmento existente e, em seguida, uma versão específica)
 
-   * **[Comparar com Atual](#comparing-fragment-versions)**(selecione um fragmento existente e, em seguida, uma versão específica)
+   * **[Comparar com Atual](#comparing-fragment-versions)** (selecione um fragmento existente e, em seguida, uma versão específica)
 
    * Adicionar um **Rótulo** e/ou **Comentário** (selecione um fragmento existente e, em seguida, uma versão específica)
 
