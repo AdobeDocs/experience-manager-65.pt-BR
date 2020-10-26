@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 15%
@@ -21,12 +21,12 @@ ht-degree: 15%
 
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
-[As variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso significativo de fragmentos de conteúdo, pois permitem criar e editar cópias do conteúdo mestre para uso em canais específicos e/ou cenários.
+[As variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso significativo de fragmentos de conteúdo, pois permitem criar e editar cópias do conteúdo principal para uso em canais específicos e/ou cenários.
 
 Na guia **Variações** , é possível:
 
 * [Insira o conteúdo](#authoring-your-content) do fragmento
-* [Criar e gerenciar variações](#managing-variations) do conteúdo **mestre**
+* [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal**
 
 Executar várias outras ações, dependendo do tipo de dados que está sendo editado; por exemplo:
 
@@ -35,18 +35,18 @@ Executar várias outras ações, dependendo do tipo de dados que está sendo edi
 
 * [Fazer upload de conteúdo](#uploading-content)
 
-* [Estatísticas](#viewing-key-statistics) de chave de Visualização (sobre texto de várias linhas)
+* [Estatísticas](#viewing-key-statistics) de chave de visualização (sobre texto de várias linhas)
 * [Resumir texto](#summarizing-text)
 
-* [Sincronizar variações com conteúdo mestre](#synchronizing-with-master)
+* [Sincronizar variações com conteúdo Principal](#synchronizing-with-master)
 
 >[!CAUTION]
 >
->Depois que um fragmento é publicado e/ou referenciado, o AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
+>Depois que um fragmento é publicado e/ou referenciado, AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
 ## Criação de seu conteúdo {#authoring-your-content}
 
-Quando você abre seu fragmento de conteúdo para edição, a guia **Variações** será aberta por padrão. Aqui você pode criar o conteúdo, para Mestre ou quaisquer variações que tenha. É possível:
+Quando você abre seu fragmento de conteúdo para edição, a guia **Variações** será aberta por padrão. Aqui você pode criar o conteúdo, para obter variações Principais ou possíveis. É possível:
 
 * faça edições diretamente na guia **Variações**
 * abra o editor [de tela](#full-screen-editor) cheia para:
@@ -90,7 +90,7 @@ As seguintes ações também estão disponíveis (para todos os [formatos](#form
 * [Mostrar estatísticas de texto](#viewing-key-statistics)
 
 * [Carregar conteúdo](#uploading-content)
-* [Sincronizar com Mestre](#synchronizing-with-master) (ao editar uma variação)
+* [Sincronizar com Principal](#synchronizing-with-master) (ao editar uma variação)
 * [Resumir texto](#summarizing-text)
 * [Anotar](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) seu texto
 
@@ -114,8 +114,8 @@ A edição de rich text permite formatar:
 * Itálico
 * Sublinhado
 * Alinhamento: esquerda, centro, direita
-* lista com marcadores
-* lista numerada
+* Lista com marcadores
+* Lista numerada
 * Recuo: aumento, diminuição
 * Criar/Quebrar hiperlinks
 * Abra o editor de tela cheia, onde as seguintes opções de formatação estão disponíveis:
@@ -204,7 +204,7 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 
 
 
-1. Selecione **Mestre** ou a variação necessária.
+1. Selecione **Principal** ou a variação necessária.
 1. Abra o editor de tela cheia.
 
 1. Selecione **Resumir texto** na barra de ferramentas.
@@ -226,7 +226,7 @@ O texto de resumo foi projetado para ajudar os usuários a reduzir o comprimento
 
 Para anotar um fragmento:
 
-1. Selecione **Mestre** ou a variação necessária.
+1. Selecione **Principal** ou a variação necessária.
 1. Abra o editor de tela cheia.
 1. Selecione algum texto. O ícone **Anotar** fica disponível.
 
@@ -256,7 +256,7 @@ Anotações:
 
 ### Inserir ativos no fragmento {#inserting-assets-into-your-fragment}
 
-Para facilitar o processo de criação de fragmentos de conteúdo, é possível adicionar [Ativos](/help/assets/managing-assets-touch-ui.md) (imagens) diretamente ao fragmento.
+Para facilitar o processo de criação de fragmentos de conteúdo, é possível adicionar [Ativos](/help/assets/manage-assets.md) (imagens) diretamente ao fragmento.
 
 Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer formatação; a formatação pode ser feita quando o [fragmento é usado/referenciado em uma página](/help/sites-authoring/content-fragments.md).
 
@@ -296,7 +296,7 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
 
 ### Criação de uma variação {#creating-a-variation}
 
-As variações permitem que você pegue o conteúdo **mestre** e varie de acordo com a finalidade (se necessário).
+As variações permitem que você pegue o conteúdo **Principal** e o varie de acordo com a finalidade (se necessário).
 
 Para criar uma nova variação:
 
@@ -308,7 +308,7 @@ Para criar uma nova variação:
 
    >[!NOTE]
    >
-   >Ao criar uma nova variação, é sempre o **Mestre** que é copiado, não a variação que está aberta no momento.
+   >Ao criar uma nova variação, é sempre **Principal** copiar, não a variação que está aberta no momento.
 
 ### Edição de uma variação {#editing-a-variation}
 
@@ -347,13 +347,13 @@ Para excluir uma variação existente:
 
 >[!NOTE]
 >
->Não é possível excluir o **Master**.
+>Não é possível excluir o **Principal**.
 
-### Sincronizar com o Mestre {#synchronizing-with-master}
+### Sincronização com Principal {#synchronizing-with-master}
 
-**Master** é parte integrante de um fragmento de conteúdo e, por definição, contém a cópia mestre do conteúdo, enquanto as variações contêm as versões individuais atualizadas e personalizadas desse conteúdo. Quando o Master é atualizado, é possível que essas alterações também sejam relevantes para as variações e, portanto, precisem ser propagadas para elas.
+**Principal** é parte integrante de um fragmento de conteúdo e, por definição, contém a cópia principal do conteúdo, enquanto as variações retêm as versões individuais atualizadas e personalizadas desse conteúdo. Quando for Principal, é possível que estas alterações sejam igualmente relevantes para as variações e, por conseguinte, tenham de ser propagadas para elas.
 
-Ao editar uma variação, você tem acesso à ação para sincronizar o elemento atual da variação com Mestre. Isso permite que você copie automaticamente as alterações feitas no Mestre para a variação necessária.
+Ao editar uma variação, você tem acesso à ação para sincronizar o elemento atual da variação com o Principal. Isso permite que você copie automaticamente as alterações feitas no Principal para a variação necessária.
 
 >[!CAUTION]
 >
@@ -363,16 +363,16 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 >
 >A sincronização só funciona no tipo de dados **Texto de várias linhas**.
 >
->A transferência de alterações *de uma variação para **Mestre ***não está disponível como uma opção.
+>A transferência de alterações *de uma variação para **Mestre*** não está disponível como uma opção.
 
-1. Abra o fragmento do conteúdo no editor de fragmentos. Certifique-se de que o **Mestre** foi editado.
+1. Abra o fragmento do conteúdo no editor de fragmentos. Verifique se o **Principal** foi editado.
 1. Selecione uma variação específica e, em seguida, a ação de sincronização apropriada de:
 
-   * o seletor suspenso **Ações** - **Sincronizar o elemento atual com o mestre**
+   * o seletor suspenso **Ações** - **Sincronizar elemento atual com principal**
 
-   * a barra de ferramentas do editor de tela cheia - **Sincronizar com o mestre**
+   * a barra de ferramentas do editor de tela cheia - **Sincronizar com o principal**
 
-1. O capitão e a variação serão apresentados lado a lado:
+1. Principal e a variação será mostrada lado a lado:
 
    * verde indica o conteúdo adicionado (à variação)
    * vermelho indica o conteúdo removido (da variação)
