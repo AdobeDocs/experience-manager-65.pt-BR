@@ -1,9 +1,9 @@
 ---
-title: Lista de recursos de experiências fluidas do AEM
+title: lista de recursos de experiências fluidas AEM
 description: Lista de recursos de experiências fluidas
 index: n
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 33abb544c5f12f7d7a44fc326f07fe9b53ebc9d3
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 8%
@@ -11,13 +11,13 @@ ht-degree: 8%
 ---
 
 
-# Lista de recursos de experiências fluidas do AEM{#aem-fluid-experiences-feature-list}
+# lista de recursos de experiências fluidas AEM{#aem-fluid-experiences-feature-list}
 
-Experiências fluidas de Adobe Experience Manager são obtidas dos poderosos conjuntos de recursos de AEM Sites, Dynamic Media AEM e AEM Assets para fornecer uma solução robusta para delivery de conteúdo sem cabeçalho.
+A Adobe Experience Manager Fluid Experiences utiliza os poderosos conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para o delivery de conteúdo sem cabeçalho.
 
-As experiências fluidas do AEM se diferenciam do AEM clássico, já que somente o caso de uso do delivery sem cabeçalho é abordado. A criação e o delivery de conteúdo intenso e o forte suporte do AEM para casos de uso híbrido estão disponíveis com as soluções [completas de AEM Sites, Ativos e Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Experiências fluidas se diferenciam dos AEM clássicos, já que somente o caso de uso do delivery sem cabeçalho é abordado. A criação e o delivery de conteúdo intenso e o suporte AEM para casos de uso híbrido estão disponíveis com as soluções [completas de AEM Sites, Assets e Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
-As tabelas a seguir definem os recursos das experiências fluidas do AEM e vinculam-se à documentação de suporte relevante.
+As tabelas a seguir definem os recursos de AEM experiências fluidas e vinculam-se à documentação de suporte relevante.
 
 * [Repositório](#repository-features)
 * [Acesso, APIs e Delivery](#access-api-and-delivery-features)
@@ -26,21 +26,21 @@ As tabelas a seguir definem os recursos das experiências fluidas do AEM e vincu
 
 >[!NOTE]
 >
->Experiências fluidas do AEM é um subconjunto da funcionalidade do AEM. Os recursos vinculados nessas tabelas podem incluir recursos adicionais incluídos no AEM, mas não no AEM Fluid Experiences.
+>AEM experiências fluidas é um subconjunto da funcionalidade AEM. Os recursos vinculados nessas tabelas podem incluir recursos adicionais incluídos no AEM, mas não no Fluid Experiences AEM.
 
 ## Recursos do repositório {#repository-features}
 
 |  |
 |---|
-| [Repositório de conteúdo](/help/assets/managing-assets-touch-ui.md) |
+| [Repositório de conteúdo](/help/assets/manage-assets.md) |
 | [Tipos de ativos](/help/assets/assets-formats.md) |
 | [Representações de imagem](/help/assets/image-presets.md) |
 | [Metadados e gerenciamento de tags](/help/assets/metadata.md) |
-| [Pesquisar](/help/assets/managing-assets-touch-ui.md) |
-| [Coleções](/help/assets/managing-collections-touch-ui.md) e [lightbox](/help/assets/touch-ui-light-box.md) |
+| [Pesquisar](/help/assets/manage-assets.md) |
+| [Coleções](/help/assets/manage-assets.md) e [lightbox](/help/assets/light-box.md) |
 | [Perfis](/help/assets/processing-profiles.md) |
-| [Controle de versão](/help/assets/managing-assets-touch-ui.md) |
-| [detecção de Duplicados](/help/assets/duplicate-detection.md) |
+| [Controle de versão](/help/assets/manage-assets.md) |
+| [detecção de duplicados](/help/assets/duplicate-detection.md) |
 | [Tags inteligentes](/help/assets/enhanced-smart-tags.md) |
 
 ## Recursos de acesso, API e Delivery {#access-api-and-delivery-features}
@@ -53,7 +53,7 @@ As tabelas a seguir definem os recursos das experiências fluidas do AEM e vincu
 | [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md) |
 | API HTTP para conteúdo estruturado (lido) |
 | API HTTP para conteúdo estruturado (CRUD) |
-| [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) |
+| [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) |
 | [Mídia dinâmica](/help/assets/dynamic-media.md) |
 
 ## Recursos de administração e integração {#admin-and-integration-features}
@@ -62,11 +62,11 @@ As tabelas a seguir definem os recursos das experiências fluidas do AEM e vincu
 |---|
 | [Gerenciamento de usuários](/help/sites-administering/user-group-ac-admin.md) |
 | [Gerenciamento de ativos multilíngues](/help/assets/multilingual-assets.md) |
-| [Internacionalização](/help/sites-developing/i18n.md) |
+| [internacionalização](/help/sites-developing/i18n.md) |
 | [Tradução de conteúdo](/help/sites-administering/translation.md) |
 | [Monitoramento](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Backup](/help/sites-administering/backup-and-restore.md) |
-| [Gerenciador de nuvem](https://docs.adobe.com/content/help/br/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Gerenciador de nuvem](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
 | [Integração de PIM](/help/sites-authoring/managing-product-information.md) |
 | [Projetos e tarefas](/help/sites-authoring/projects.md) |
 | [Fluxos de trabalhos](/help/sites-administering/workflows-starting.md) |
@@ -76,14 +76,14 @@ As tabelas a seguir definem os recursos das experiências fluidas do AEM e vincu
 
 |  |
 |---|
-| [relatórios de ativos](/help/assets/asset-reports.md) |
+| [Relatórios de ativos](/help/assets/asset-reports.md) |
 | Insights avançados pela Adobe Analytics |
-| Insights avançados fornecidos pelo Adobe Target |
+| Insights avançados pela Adobe Target |
 
 ## Saiba mais {#learn-more}
 
 * [Experiências fluidas para casos de uso sem cabeça](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
-* [Serviço de conteúdo do AEM: O quê, Por quê e Como?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
+* [AEM Content Service: O quê, Por quê e Como?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Uso dos serviços de conteúdo](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
 * [Desenvolvimento de aplicativo móvel](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/developing/developing-content-services.html)
 * [Perguntas frequentes sobre acesso de terceiros](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
