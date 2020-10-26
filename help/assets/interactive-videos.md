@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '6050'
 ht-degree: 4%
@@ -237,14 +237,14 @@ Consulte [Criar uma nova predefinição](/help/assets/managing-viewer-presets.md
 
 Se você já carregou seus ativos de vídeo e miniatura, prossiga para [Adicionar interatividade ao vídeo](#adding-interactivity-to-your-video).
 
-Se você carregou os vídeos ou imagens errados, ou quiser excluir vídeos ou imagens carregados de que não precisa mais, consulte [Excluindo ativos](/help/assets/managing-assets-touch-ui.md#deleting-assets).
+Se você carregou os vídeos ou imagens errados, ou quiser excluir vídeos ou imagens carregados de que não precisa mais, consulte [Excluindo ativos](/help/assets/manage-assets.md#deleting-assets).
 
 Para carregar um vídeo e seus ativos em miniatura associados:
 
 1. Faça upload do vídeo e dos ativos em miniatura associados para a pasta ou pastas desejadas.
 
-   See [Uploading assets](/help/assets/managing-assets-touch-ui.md).
-Consulte [Fazer upload de ativos usando o agendamento](/help/assets/managing-assets-touch-ui.md)de tarefas FTP.
+   See [Uploading assets](/help/assets/manage-assets.md).
+Consulte [Fazer upload de ativos usando o agendamento](/help/assets/manage-assets.md)de tarefas FTP.
 
    Agora, adicione interatividade ao seu vídeo.
 
