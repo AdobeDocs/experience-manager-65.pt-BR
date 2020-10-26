@@ -4,10 +4,10 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5968'
+ht-degree: 5%
 
 ---
 
@@ -35,7 +35,7 @@ Procure ativos usando o campo Omnisearch na parte superior da interface da [!DNL
 
 Use o painel **[!UICONTROL Filtros]** para restringir sua pesquisa filtrando os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento da Adobe Stock. Seus administradores podem personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando aspectos de pesquisa. O filtro Tipo [!UICONTROL de] arquivo no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível estarão parcialmente marcadas.
 
-[!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa por coleções e a pesquisa por ativos dentro de uma coleção. Consulte Coleções [de pesquisa](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa por coleções e a pesquisa por ativos dentro de uma coleção. Consulte Coleções [de pesquisa](/help/assets/manage-collections.md).
 
 ## Compreender a interface de pesquisa {#searchui}
 
@@ -222,7 +222,7 @@ Os autores podem usar o Localizador de conteúdo para pesquisar no repositório 
 
 ### Pesquisar coleções {#collections}
 
-[!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa por coleções e a pesquisa por ativos dentro de uma coleção. Consulte Coleções [de pesquisa](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa por coleções e a pesquisa por ativos dentro de uma coleção. Consulte Coleções [de pesquisa](/help/assets/manage-collections.md).
 
 ## Asset selector {#assetpicker}
 
@@ -374,7 +374,7 @@ Para melhorar a velocidade da descoberta, o [!DNL Experience Manager Assets] ofe
 
 ### Extrair texto ao carregar ativos {#extracttextupload}
 
-Você pode configurar [!DNL Experience Manager] para extrair o texto dos ativos quando os usuários carregam ativos, como arquivos PSD ou PDF. [!DNL Experience Manager] indexa o texto extraído e ajuda os usuários a pesquisar nesses ativos com base no texto extraído. Consulte [fazer upload de ativos](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Você pode configurar [!DNL Experience Manager] para extrair o texto dos ativos quando os usuários carregam ativos, como arquivos PSD ou PDF. [!DNL Experience Manager] indexa o texto extraído e ajuda os usuários a pesquisar nesses ativos com base no texto extraído. Consulte [fazer upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 
 Se a extração de texto se tornar muito intensiva em recursos para sua implantação, considere [desativar a extração](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)de texto.
 
@@ -447,7 +447,7 @@ Uma coleção é um conjunto ordenado de ativos que podem incluir ativos de loca
 * Uma lista de referência estática de ativos, pastas e outras coleções.
 * Uma lista dinâmica (coleção inteligente) que preenche ativos na coleção com base em critérios de pesquisa.
 
-Você pode criar coleções inteligentes com base nos critérios de pesquisa. No painel **[!UICONTROL Filtros]**, selecione **[!UICONTROL Arquivos]** e clique em **[!UICONTROL Salvar coleção inteligente]**. Consulte [gerenciar coleções](/help/assets/managing-collections-touch-ui.md).
+Você pode criar coleções inteligentes com base nos critérios de pesquisa. No painel **[!UICONTROL Filtros]**, selecione **[!UICONTROL Arquivos]** e clique em **[!UICONTROL Salvar coleção inteligente]**. Consulte [gerenciar coleções](/help/assets/manage-collections.md).
 
 ## Solucionar problemas e resultados de pesquisa inesperados {#troubleshoot-unexpected-search-results-and-issues}
 
