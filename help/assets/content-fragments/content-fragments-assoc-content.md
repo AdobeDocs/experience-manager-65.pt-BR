@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 21%
@@ -29,7 +29,7 @@ O conteúdo associado fornece a conexão para que os ativos (isto é,) possam se
 >
 >Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
-Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection). Assim que isso for feito, você poderá:
+Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/manage-collections.md#adding-assets-to-a-collection). Assim que isso for feito, você poderá:
 
 1. Abra o fragmento e selecione **Conteúdo associado** no painel lateral.
 
