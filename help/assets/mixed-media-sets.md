@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 28%
@@ -27,7 +27,7 @@ Os Conjuntos de mídias mistas são designados por um banner com a palavra **[!U
 
 >[!NOTE]
 >
->Para obter informações sobre a interface do usuário Ativos, consulte [Gerenciamento de ativos com a interface do usuário](/help/assets/managing-assets-touch-ui.md)de toque.
+>Para obter informações sobre a interface do usuário Ativos, consulte [Gerenciamento de ativos com a interface do usuário](/help/assets/manage-assets.md)de toque.
 
 ## Start rápido: Conjuntos de mídia mista {#quick-start-mixed-media-sets}
 
@@ -67,7 +67,7 @@ Para iniciá-lo e executá-lo rapidamente com Conjuntos de mídia mista, siga es
 
    Consulte [Vincular um conjunto de mídias mistas a uma página da Web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](/help/assets/embed-code.md).
 
-Se necessário, edite Conjuntos de mídia [mista](#editing-mixed-media-sets). Além disso, você pode visualização e modificar as propriedades [do Conjunto de mídia](/help/assets/managing-assets-touch-ui.md#editing-properties)mista.
+Se necessário, edite Conjuntos de mídia [mista](#editing-mixed-media-sets). Além disso, você pode visualização e modificar as propriedades [do Conjunto de mídia](/help/assets/manage-assets.md#editing-properties)mista.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Quando você adiciona ativos ao seu conjunto, eles são adicionados automaticame
 
 ## Edição de conjuntos de mídia mista {#editing-mixed-media-sets}
 
-Você pode executar várias tarefas de edição em ativos em Conjuntos de mídia mista diretamente na interface do usuário, [como faria com qualquer ativo em Ativos](/help/assets/managing-assets-touch-ui.md). Você também pode executar as seguintes ações em Conjuntos de mídia mista:
+Você pode executar várias tarefas de edição em ativos em Conjuntos de mídia mista diretamente na interface do usuário, [como faria com qualquer ativo em Ativos](/help/assets/manage-assets.md). Você também pode executar as seguintes ações em Conjuntos de mídia mista:
 
 * Adicione ativos ao Conjunto de mídias mistas.
 * Resolicite ativos no Conjunto de mídia mista.
