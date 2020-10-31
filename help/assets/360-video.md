@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: 0d5ee29141c897284f3f298d921f4f8528216f8f
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Os ativos de vídeo 360 que são carregados no AEM são rotulados como **Multim�
 **Para fazer upload de ativos para uso com o visualizador de vídeo 360:**
 
 1. Criada uma pasta dedicada ao seu ativo de vídeo 360.
-1. [Aplique um perfil de vídeo adaptável à pasta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+1. [Aplique um perfil de vídeo adaptável à pasta.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
 
    A renderização de conteúdo de vídeo 360 coloca requisitos mais altos para a resolução de vídeo de origem e para a resolução de execuções codificadas do que o conteúdo de vídeo padrão não-360.
 
@@ -96,8 +96,8 @@ Consulte também [Edição de predefinições](/help/assets/managing-viewer-pres
 
 Quando estiver satisfeito com o vídeo 360, você poderá publicá-lo.
 
-See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
-See [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
+See [Embedding the Video or Image Viewer on a Web Page.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
+Consulte [Vincular URLs ao aplicativo](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html)da Web. Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
 See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
 **Para a pré-visualização 360 vídeos**
