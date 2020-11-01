@@ -1,16 +1,15 @@
 ---
 title: Workflows centrados na Forms no OSGi | Tratamento de dados de utilizadores
 seo-title: Workflows centrados na Forms no OSGi | Tratamento de dados de utilizadores
-description: 'null'
-seo-description: 'null'
+description: Workflows centrados na Forms no OSGi | Tratamento de dados de utilizadores
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -77,7 +76,7 @@ Você pode acessar e excluir dados do usuário de uma instância do fluxo de tra
 No entanto, você não pode identificar ou os resultados podem ser ambíguos ao identificar workflows associados a um iniciador nos seguintes cenários:
 
 * **Fluxo de trabalho acionado por meio de uma pasta** assistida: Uma instância de fluxo de trabalho não pode ser identificada usando seu iniciador se o fluxo de trabalho for acionado por uma pasta assistida. Nesse caso, as informações do usuário são codificadas nos dados armazenados.
-* **Fluxo de trabalho iniciado da instância** de publicação AEM: Todas as instâncias de fluxo de trabalho são criadas usando um usuário de serviço quando formulários adaptáveis, comunicações interativas ou letras são submetidos AEM instância de publicação. Nesses casos, o nome de usuário do usuário conectado não é capturado nos dados da instância do fluxo de trabalho.
+* **Fluxo de trabalho iniciado da instância** de publicação AEM: Todas as instâncias de fluxo de trabalho são criadas usando um usuário de serviço quando formulários adaptáveis, comunicações interativas ou letras são enviadas AEM instância de publicação. Nesses casos, o nome de usuário do usuário conectado não é capturado nos dados da instância do fluxo de trabalho.
 
 ### Acessar dados do usuário {#access}
 
