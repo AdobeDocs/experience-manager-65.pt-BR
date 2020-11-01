@@ -1,8 +1,7 @@
 ---
 title: Container de serviço
 seo-title: Container de serviço
-description: 'null'
-seo-description: 'null'
+description: Serviços AEM Forms localizados no container de serviço
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '915'
 ht-degree: 0%
 
 ---
@@ -70,7 +69,7 @@ O container de serviço oferece a seguinte funcionalidade:
 
    O container de serviço envia uma resposta de invocação assim que a operação é executada. Uma resposta de chamada contém informações como os resultados da operação. Por exemplo, se a operação modificar um documento PDF, a resposta de invocação conterá o documento PDF modificado. Se a operação não foi bem-sucedida, a resposta de invocação contém uma mensagem de erro.
 
-   Uma resposta de invocação pode ser recuperada da mesma forma em que uma solicitação de invocação é enviada. Ou seja, se a solicitação de invocação for enviada usando a API Java, uma resposta de invocação poderá ser recuperada usando a API Java. Considere, por exemplo, que uma operação modifica um documento PDF. Você pode recuperar o documento PDF modificado obtendo o valor de retorno do método Java que invocou o serviço.
+   Uma resposta de invocação pode ser recuperada da mesma maneira em que uma solicitação de invocação é enviada. Ou seja, se a solicitação de invocação for enviada usando a API Java, uma resposta de invocação poderá ser recuperada usando a API Java. Considere, por exemplo, que uma operação modifica um documento PDF. Você pode recuperar o documento PDF modificado obtendo o valor de retorno do método Java que invocou o serviço.
 
    Quando um processo de longa duração é chamado, uma resposta de invocação contém um valor identificador associado à solicitação de invocação. Usando esse valor identificador, você pode verificar o status do processo posteriormente. Por exemplo, considere o serviço de longa duração da MortgageLoan. Usando o valor do identificador, você pode verificar se o processo foi concluído com êxito. (Consulte [Invocando Processos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)De Vida Longa Centrados Em Pessoas.)
 
