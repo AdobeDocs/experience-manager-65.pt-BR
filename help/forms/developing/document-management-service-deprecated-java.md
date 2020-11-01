@@ -1,8 +1,7 @@
 ---
-title: Serviço de gerenciamento de Documentos (obsoleto)Start rápido da API Java (SOAP)
-seo-title: Serviço de gerenciamento de Documentos (obsoleto)Start rápido da API Java (SOAP)
-description: 'null'
-seo-description: 'null'
+title: Serviço de gerenciamento de documentos (obsoleto)Start rápido da API Java (SOAP)
+seo-title: Serviço de gerenciamento de documentos (obsoleto)Start rápido da API Java (SOAP)
+description: Serviço de gerenciamento de documentos (obsoleto)Start rápido da API Java (SOAP)
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,7 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Gerenciamento de 
 
 >[!NOTE]
 >
->A partir de 5 de agosto de 2011, a Adobe está migrando clientes Content Services ES para o Adobe Digital Enterprise Platform Experience Services. O roteiro do produto para clientes que usam o Content Services é migrar para o novo ADEP Experience Services - Core, que inclui um Repositório de Conteúdo nativo baseado na arquitetura CRX moderna e modular, adquirida durante a aquisição do Day Software pela Adobe.
+>A partir de 5 de agosto de 2011, a Adobe está migrando clientes do Content Services ES para o Adobe Digital Enterprise Platform Experience Services. O roteiro do produto para clientes que usam o Content Services é migrar para o novo ADEP Experience Services - Core, que inclui um Repositório de Conteúdo nativo baseado na arquitetura CRX moderna e modular, adquirida durante a aquisição do Day Software.
 
 [Start rápido (modo SOAP): Criar espaços do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -42,11 +41,11 @@ Os Start Rápidos a seguir estão disponíveis para o serviço Gerenciamento de 
 
 [Start rápido (modo SOAP): Configuração de permissões de serviços de conteúdo usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 
-start rápidos localizados em Programação com formulários AEM são baseados no Forms Server que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+Start rápidos localizados em Programação com formulários AEM são baseados no Forms Server que está sendo implantado em JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Criar espaços do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
