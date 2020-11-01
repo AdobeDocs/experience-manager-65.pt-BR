@@ -1,8 +1,7 @@
 ---
-title: Start Java APIQuick (SOAP) do serviço de formulários com códigos de barras
-seo-title: Start Java APIQuick (SOAP) do serviço de formulários com códigos de barras
-description: 'null'
-seo-description: 'null'
+title: Start Java APIQuick do serviço Forms com código de barras (SOAP)
+seo-title: Start Java APIQuick do serviço Forms com código de barras (SOAP)
+description: Start Java APIQuick do serviço Forms com código de barras (SOAP)
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
@@ -10,25 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
 
-# Start rápido Java API (SOAP) do serviço de formulários com códigos de barras {#barcoded-forms-service-java-apiquick-start-soap}
+# Start rápido (SOAP) da API Java do serviço Forms com códigos de barras {#barcoded-forms-service-java-apiquick-start-soap}
 
-O SOAP (Java API Quick Start) está disponível para o serviço de formulários com códigos de barras:
+O SOAP (Java API Quick Start) está disponível para o serviço Forms com código de barras:
 
 [Start rápido (modo SOAP): Decodificação de dados de formulário com código de barras usando a API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Os Start rápidos localizados em Programação com AEM Forms têm por base o Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>Os Start rápidos localizados em Programação com o AEM Forms são baseados no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 ## Start rápido (modo SOAP): Decodificação de dados de formulário com código de barras usando a API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
