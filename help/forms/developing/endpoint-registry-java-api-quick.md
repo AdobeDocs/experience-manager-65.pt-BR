@@ -1,8 +1,7 @@
 ---
 title: QuickStart(SOAP) da API Java do Registro do Endpoint
 seo-title: QuickStart(SOAP) da API Java do Registro do Endpoint
-description: 'null'
-seo-description: 'null'
+description: QuickStart(SOAP) da API Java do Registro do Endpoint
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ O SOAP (Java API Quick Start) está disponível para o Endpoint Registry.
 
 [Início rápido: Adicionar um terminal SOAP usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[Início rápido: Adicionar um ponto de extremidade de Pasta assistida usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[Início rápido: Adicionando um ponto de extremidade de Pasta assistida usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
 [Início rápido: Adicionar um terminal de email usando a API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
@@ -40,11 +39,11 @@ O SOAP (Java API Quick Start) está disponível para o Endpoint Registry.
 
 [Início rápido: Recuperando informações do conector do ponto de extremidade usando a API Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O start rápido localizado em Programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos das janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>O start rápido localizado em Programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
 
 >[!NOTE]
 >
@@ -249,7 +248,7 @@ O exemplo de código Java a seguir adiciona um terminal SOAP a um serviço chama
  
 ```
 
-## Início rápido: Adicionar um ponto de extremidade de Pasta assistida usando a API Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
+## Início rápido: Adicionando um ponto de extremidade de Pasta assistida usando a API Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
 O exemplo de código Java a seguir adiciona um terminal de Pasta assistida a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints)da Pasta Observada.)
 
