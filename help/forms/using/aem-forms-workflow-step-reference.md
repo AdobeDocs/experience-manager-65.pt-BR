@@ -4,13 +4,12 @@ seo-title: Fluxo de trabalho centrado na Forms no OSGi - Referência de etapas
 description: O fluxo de trabalho centrado na Forms nas etapas do OSGi permite que você crie rapidamente workflows baseados em formulários adaptáveis.
 seo-description: O fluxo de trabalho centrado na Forms nas etapas do OSGi permite que você crie rapidamente workflows baseados em formulários adaptáveis.
 uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
-contentOwner: null
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: aff67332de7295936ea45e3f38cd204fd448a570
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
 source-wordcount: '7109'
 ht-degree: 0%
@@ -111,7 +110,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 >[!NOTE]
 >
->Use a guia Anexos na interface do agente durante o tempo de execução para associar os anexos a uma comunicação interativa. Os anexos associados são exibidos como anexos de tarefa no sidekick depois de abrir o item de trabalho em um estado Concluído.
+>Use a guia Anexos na interface do agente durante o tempo de execução para associar os anexos a uma Comunicação interativa. Os anexos associados são exibidos como anexos de tarefa no sidekick depois de abrir o item de trabalho em um estado Concluído.
 
 * **Usar metadados personalizados:** Selecione essa opção para ativar o campo de metadados personalizado. Os metadados personalizados são usados em modelos de email.
 * **Metadados personalizados:** Selecione um metadados personalizados para os modelos de email. Os metadados personalizados estão disponíveis no repositório crx em apps/fd/painel/scripts/metadataScripts. O caminho especificado não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. Você também pode usar um serviço para os metadados personalizados. Você também pode estender a interface WorkitemUserMetadataService para fornecer metadados personalizados.
