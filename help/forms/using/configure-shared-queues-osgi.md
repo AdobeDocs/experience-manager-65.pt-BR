@@ -3,13 +3,11 @@ title: Configurar filas compartilhadas
 seo-title: Configurar filas compartilhadas
 description: Saiba como usar filas compartilhadas para workflows centrados na Forms no AEM Forms no OSGi.
 seo-description: Saiba como usar filas compartilhadas para workflows centrados na Forms no AEM Forms no OSGi.
-uuid: null
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: null
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 1%
