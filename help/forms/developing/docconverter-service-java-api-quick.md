@@ -1,8 +1,7 @@
 ---
 title: QuickStart (SOAP) da API Java do Serviço DocConverter
 seo-title: QuickStart (SOAP) da API Java do Serviço DocConverter
-description: 'null'
-seo-description: 'null'
+description: QuickStart (SOAP) da API Java do Serviço DocConverter
 uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ O SOAP (Java API Quick Start) está disponível para o serviço DocConverter.
 
 [Start rápido (modo SOAP): Converter um documento em um documento PDF/A usando a API Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
-As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
