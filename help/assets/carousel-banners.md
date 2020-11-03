@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4803'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ Assista a uma caminhada de 10 minutos e 33 segundos sobre [como os banners de ca
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** dam.
+>Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** DAM.
 
 ## Start rápido: Banners de carrossel {#quick-start-carousel-banners}
 
@@ -92,7 +92,7 @@ Para começar a trabalhar rapidamente:
    * [Adicione um banner de carrossel ao seu site em AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) Se você for um cliente da AEM Sites, poderá adicionar o conjunto de carrossel diretamente à página em AEM, usando o componente de Mídia interativa.
 
 
-Se precisar editar Conjuntos de carrossel, consulte [edição de Conjuntos de carrossel.](#editing-carousel-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)carrossel.
+Se precisar editar Conjuntos de carrossel, consulte [edição de Conjuntos de carrossel.](#editing-carousel-sets) Além disso, você pode visualização e editar as propriedades [do Conjunto de](manage-assets.md#editing-properties)carrossel.
 
 ## Como identificar as variáveis de hotspot e mapa de imagem {#identifying-hotspot-and-image-map-variables}
 
@@ -186,7 +186,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** DAM.
+>Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** dam.
 
 **Para criar um conjunto de carrossel**
 
@@ -327,7 +327,7 @@ Consulte Fragmentos [de experiência](/help/sites-authoring/experience-fragments
 ## Edição de conjuntos de carrossel {#editing-carousel-sets}
 
 >[!NOTE]
-Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** dam.
+Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** DAM.
 
 É possível executar várias tarefas de edição em Conjuntos de carrossel, como:
 
