@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 13%
+source-wordcount: '114'
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ O gerenciamento de ativos do Dynamic Media - imagens, vídeos e ativos interativ
 
 Ao visualizar, você também pode aplicar predefinições de imagens (somente para imagens) ou predefinições do visualizador (para vídeo e imagens). Não é possível aplicar ambos a um ativo. Consulte [Aplicar predefinições](/help/assets/viewer-presets.md) do visualizador e [Aplicar predefinições](/help/assets/image-sets.md)de imagens.
 
-Informações gerais sobre o gerenciamento de ativos estão disponíveis em [Gerenciamento de ativos com a interface de usuário](/help/assets/manage-assets.md)sensível ao toque.
+Informações gerais sobre o gerenciamento de ativos estão disponíveis em [Gerenciar ativos](/help/assets/manage-assets.md).
 
 Os tópicos a seguir descrevem o que você precisa fazer para gerenciar ativos do Dynamic Media:
 
@@ -30,4 +30,3 @@ Os tópicos a seguir descrevem o que você precisa fazer para gerenciar ativos d
 * [Visualização de ativos do Dynamic Media](/help/assets/previewing-assets.md)
 * [Publicação de ativos de mídia dinâmica](/help/assets/publishing-dynamicmedia-assets.md)
 * [Trabalho com seletores](/help/assets/working-with-selectors.md)
-
