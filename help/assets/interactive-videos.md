@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '6050'
+source-wordcount: '6056'
 ht-degree: 4%
 
 ---
@@ -89,7 +89,7 @@ Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md
 1. **Adicionando um vídeo interativo ao seu site ou ao seu site em AEM** Se você usar o AEM Sites ou AEM eCommerce, ou ambos, você pode adicionar o vídeo interativo diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Use o código incorporado ou URL para integrar seu vídeo interativo com as experiências do site. Consulte [Integrar um vídeo interativo ao seu site](#integrating-an-interactive-video-with-your-website).
 Se você estiver usando um WCM de terceiros (Web Content Manager), é necessário integrar o novo vídeo interativo com a implementação existente do Quickview usada em seu site. Consulte [Integrar um vídeo interativo a um Quickview](#integrating-an-interactive-video-with-an-existing-quickview)existente.
-   [](/help/assets/adding-dynamic-media-assets-to-pages.md)
+   [Adição de ativos de Mídia dinâmica a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 ## (Opcional) Como identificar variáveis do Quickview {#optional-identifying-quickview-variables}
 
