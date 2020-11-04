@@ -3,9 +3,9 @@ title: Pastas privadas para compartilhar ativos
 description: Saiba como criar uma pasta privada no [!DNL Adobe Experience Manager Assets] site e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ Para criar e compartilhar pasta privada:
 
    >[!NOTE]
    >
-   >Você pode atribuir várias funções, como Editor, Proprietário ou Visualizador ao usuário com quem você compartilha a pasta. Se você atribuir uma função Proprietário ao usuário, este terá privilégios de Editores na pasta. Além disso, o usuário pode compartilhar a pasta com outras pessoas. Se você atribuir uma função de Editor, o usuário poderá editar os ativos em sua pasta particular. Se você atribuir uma função de visualizador, o usuário poderá apenas visualização os ativos em sua pasta particular.
+   >Você pode atribuir várias funções, como `Editor`, `Owner`ou `Viewer` ao usuário com quem você compartilha a pasta. Se você atribuir uma `Owner` função ao usuário, este terá `Editor` privilégios na pasta. Além disso, o usuário pode compartilhar a pasta com outras pessoas. Se você atribuir uma `Editor` função, o usuário poderá editar os ativos em sua pasta particular. Se você atribuir uma função de visualizador, o usuário poderá apenas visualização os ativos em sua pasta particular.
 
    >[!NOTE]
    >
-   >A pasta privada tem pelo menos um membro com a função Proprietário. Portanto, o administrador não pode remover todos os membros proprietários de uma pasta privada. No entanto, para remover proprietários existentes (e o próprio administrador) da pasta privada, o administrador deve adicionar outro usuário como proprietário.
+   >A pasta privada tem pelo menos um membro com `Owner` função. Portanto, o administrador não pode remover todos os membros proprietários de uma pasta privada. No entanto, para remover os proprietários existentes (e o próprio administrador) da pasta privada, o administrador deve adicionar outro usuário como proprietário.
 
 1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando o usuário faz logon em [!DNL Assets].
 1. Clique em **[!UICONTROL Ok]** para fechar a mensagem de confirmação.
@@ -59,7 +59,7 @@ Para criar e compartilhar pasta privada:
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Clique em Notificações para abrir a lista de notificações.
+1. Clique em [!UICONTROL Notificações] para abrir uma lista de notificações.
 
    ![Lista das notificações](assets/Assets-Notification.png)
 
@@ -83,4 +83,4 @@ Você pode excluir uma pasta selecionando a pasta e a opção [!UICONTROL Exclui
 >
 >Se você excluir uma pasta usando o método acima da interface do usuário, os grupos de usuários associados também serão excluídos.
 >
->No entanto, grupos de usuários redundantes, não utilizados e gerados automaticamente podem ser limpos do repositório usando o `clean` método em JMX na sua instância do autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>No entanto, os grupos de usuários redundantes, não utilizados e gerados automaticamente existentes podem ser removidos do repositório usando o `clean` método em JMX na instância do autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
