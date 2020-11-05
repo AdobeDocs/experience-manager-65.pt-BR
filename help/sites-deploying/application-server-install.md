@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 0a082d3cff66b82ef6de551a735a16a001446a1e
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Consulte a documentação apropriada do servidor de aplicativos para obter mais 
 
 >[!NOTE]
 >
->Se você estiver usando o Dynamic Media em uma implantação WAR, consulte a documentação [da mídia](/help/assets/config-dynamic.md#enabling-dynamic-media)dinâmica.
+>Se você estiver usando o Dynamic Media em uma implantação WAR, consulte a documentação [do](/help/assets/config-dynamic.md#enabling-dynamic-media)Dynamic Media.
 
 ## Descrição geral {#general-description}
 
@@ -136,7 +136,7 @@ Defina os argumentos da memória no arquivo conf (por exemplo, `standalone.conf`
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-se você usar o deployment-scanner para instalar o aplicativo da Web AEM, talvez seja bom aumentar o valor `deployment-timeout,` desse conjunto de um `deployment-tiimeout` atributo no arquivo xml da sua instância (por exemplo `configuration/standalone.xml)`:
+se você usar o deployment-scanner para instalar o aplicativo da Web AEM, talvez seja bom aumentar o valor `deployment-timeout,` desse conjunto de um `deployment-timeout` atributo no arquivo xml da sua instância (por exemplo `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -162,42 +162,42 @@ Isso usa um layout de servidor simples com apenas um servidor de administração
 
    * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` consulte em [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) para obter a posição correta (por padrão, para posicioná-la no final da seção está ok)
 
-* Increase VM Memory settings:
+* Aumente as configurações de memória da VM:
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh)search for WLS_MEM_ARGS, set e.g set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh)search for WLS_MEM_ARGS, defina por exemplo set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * reiniciar o WebLogic Server
 
 * Criar em `${myDomain}` uma pasta de pacotes e dentro de uma pasta cq e nela uma pasta Plano
 
 **Implantar AEM aplicativo da Web**
 
-* Download AEM war file
-* Put the AEM war file into the ${myDomain}/packages/cq folder
+* Baixar AEM arquivo de guerra
+* Coloque o arquivo de guerra AEM na pasta ${myDomain}/packages/cq
 * Faça com que suas configurações sejam ativadas `WEB-INF/web.xml` (consulte acima na Descrição geral)
 
-   * Unpack `WEB-INF/web.xml`file
-   * change sling.run.modes parameter to publish
+   * Desempacotar `WEB-INF/web.xml`arquivo
+   * alterar o parâmetro sling.run.mode para publicar
    * exclua o comentário do parâmetro inicial sling.home e defina esse caminho conforme necessário (consulte Descrição geral)
    * Repack arquivo web.xml
 
-* Deploy AEM war file as an Application, (for the other settings use the default settings)
-* The installation can take time...
-* Check that the installation has finished as mentioned above in the General Description (e.g. tailing the error.log)
-* You can change the context root in the Configuration tab of the web application in the WebLogic `/console`
+* Implantar AEM arquivo de guerra como um aplicativo (para outras configurações, use as configurações padrão)
+* A instalação pode demorar...
+* Verifique se a instalação terminou conforme mencionado acima na Descrição geral (por exemplo, ajustando o error.log)
+* Você pode alterar a raiz de contexto na guia Configuração do aplicativo da Web no WebLogic `/console`
 
 #### Tomcat 8/8.5 {#tomcat}
 
 Antes de uma implantação, leia a Descrição [](#general-description) geral acima.
 
-* **Prepare Tomcat Server**
+* **Preparar servidor Tomcat**
 
-   * Increase VM memory settings:
+   * Aumente as configurações de memória da VM:
 
-      * In `bin/catalina.bat` (resp `catalina.sh` on unix) add the following setting:
+      * Em `bin/catalina.bat` (resp `catalina.sh` on unix), adicione a seguinte configuração:
       * `set "JAVA_OPTS= -Xmx2048m`
-   * O Tomcat não permite acesso de administrador nem de gerente na instalação. Therefore you have to manually edit `tomcat-users.xml` to allow access for these accounts:
+   * O Tomcat não permite acesso de administrador nem de gerente na instalação. Portanto, é necessário editar manualmente `tomcat-users.xml` para permitir o acesso a essas contas:
 
-      * Edit `tomcat-users.xml` to include access for admin and manager. The configuration should look similar to the following example:
+      * Edite `tomcat-users.xml` para incluir o acesso do administrador e do gerente. A configuração deve ser semelhante ao seguinte exemplo:
 
          ```xml
          <?xml version='1.0' encoding='utf-8'?>
@@ -213,16 +213,16 @@ Antes de uma implantação, leia a Descrição [](#general-description) geral ac
          <user username="role1" password="tomcat" roles="role1"/>
          </tomcat-users>
          ```
-   * If you like to deploy AEM with context root &quot;/&quot; then you have to change context root of the existing ROOT webapp:
+   * Se você quiser implantar AEM com a raiz de contexto &quot;/&quot;, é necessário alterar a raiz de contexto do aplicativo Web ROOT existente:
 
-      * Stop and undeploy ROOT webapp
-      * Rename ROOT.war folder in tomcat&#39;s webapps folder
-      * Start webapp again
-   * Se você instalar o aplicativo da Web AEM usando o manager-gui, precisará aumentar o tamanho máximo de um arquivo carregado, já que o padrão permite apenas o tamanho de upload de 50 MB. For that open the web.xml of the manager web application,
+      * Parar e desimplantar o aplicativo Web ROOT
+      * Renomear pasta ROOT.war na pasta de aplicativos da Web do tomcat
+      * Aplicativo Web do start novamente
+   * Se você instalar o aplicativo da Web AEM usando o manager-gui, precisará aumentar o tamanho máximo de um arquivo carregado, já que o padrão permite apenas o tamanho de upload de 50 MB. Para isso, abra o web.xml do aplicativo da Web do gerenciador,
 
       `webapps/manager/WEB-INF/web.xml`
 
-      and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a a `web.xml` file.
+      e aumentar o tamanho máximo de arquivo e o tamanho máximo de solicitação para pelo menos 500 MB, veja o `multipart-config` exemplo a seguir de um arquivo como esse `web.xml` .
 
       ```xml
       <multipart-config>
@@ -238,10 +238,10 @@ Antes de uma implantação, leia a Descrição [](#general-description) geral ac
 
 * **Implantar AEM aplicativo da Web**
 
-   * Download AEM war file
-   * Make your configurations In web.xml if needed (see above in the General Description)
+   * Baixar AEM arquivo de guerra
+   * Faça suas configurações em web.xml, se necessário (consulte acima na Descrição geral)
 
-      * Unpack WEB-INF/web.xml file
+      * Desempacotar arquivo WEB-INF/web.xml
       * alterar o parâmetro sling.run.mode para publicar
       * exclua o comentário do parâmetro inicial sling.home e defina esse caminho conforme necessário
       * Repack arquivo web.xml
@@ -250,7 +250,7 @@ Antes de uma implantação, leia a Descrição [](#general-description) geral ac
    * aguarde até que AEM esteja instalado
 
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 Para obter informações sobre como lidar com problemas que podem surgir durante a instalação, consulte:
 
