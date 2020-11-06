@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
+source-git-commit: 141a1783f275c0b3587ebc374bde19a21e107409
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho](#adjusting-load)de rep
 **Como opção, ajuste o tamanho do lote do fluxo de trabalho de reprocessamento**
 
 1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
-1. Na página Modelos de fluxo de trabalho, em Visualização de cartão ou Visualização de Lista, selecione **[!UICONTROL Scene7: Reprocessar ativos.]**
+1. Na página Modelos de fluxo de trabalho, em Visualização de cartão ou Visualização de Lista, selecione **[!UICONTROL Scene7: Reprocessar ativos]**.
 
    ![Página Modelos de fluxo de trabalho com a Scene7: Reprocessar fluxo de trabalho de Ativos selecionado na Visualização de Cartão](/help/assets/assets-dm/reprocess-assets7.png)
 
@@ -117,9 +117,9 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho](#adjusting-load)de rep
 
    ![Caixa de diálogo Propriedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. No canto superior direito da caixa de diálogo Carregamento em **[!UICONTROL lote para Scene7 - Propriedades]** da etapa, clique em **[!UICONTROL Concluído.]**
+1. No canto superior direito da caixa de diálogo Carregamento em **[!UICONTROL lote para Scene7 - Propriedades]** da etapa, clique em **[!UICONTROL Concluído]**.
 
-1. No canto superior direito do Scene7: Reprocessar a página de modelo de fluxo de trabalho dos Ativos, clique em **[!UICONTROL Sincronizar.]** Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do fluxo de trabalho é sincronizado e pronto para reprocessar ativos em uma pasta.
+1. No canto superior direito do Scene7: Reprocessar a página de modelo de fluxo de trabalho dos Ativos, clique em **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do fluxo de trabalho é sincronizado e pronto para reprocessar ativos em uma pasta.
 
    ![Sincronizar o modelo de fluxo de trabalho](/help/assets/assets-dm/reprocess-assets1.png)
 
