@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
+source-git-commit: 5a3045b89ba6bb32482926ea8d2c5533e5394d9a
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '1816'
 ht-degree: 2%
 
 ---
@@ -193,34 +193,6 @@ Durante a transição inicial, as imagens não armazenadas em cache acessam dire
 Nem todas as imagens são convertidas. O Smart Imaging decide se a conversão é necessária para melhorar o desempenho. Em alguns casos, quando não há ganho de desempenho esperado ou o formato não é JPEG ou PNG, a imagem não é convertida.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-
-## Como saber o ganho de desempenho? Há alguma maneira de notar os benefícios do Smart Imaging? {#performance-gain}
-
-**Sobre Cabeçalhos de Imagens Inteligentes**
-
-Os valores do cabeçalho de Imagem inteligente funcionam somente quando solicitações que não estão em cache são atendidas a partir de agora. Isso é feito para manter o cache atual compatível e evitar a necessidade de cálculo quando as imagens estão sendo servidas por meio do cache.
-
-Para usar Cabeçalhos de imagem inteligentes, é necessário adicionar o`cache=off`modificador às solicitações. Consulte[cache na API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html)de disponibilização e renderização de imagem do Dynamic Media.
-
-Exemplo de uso `cache=off` (apenas para fins ilustrativos):
-
-`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
-
-Depois de usar essa solicitação, na seção Cabeçalhos de resposta, você pode ver o `-x-adobe-smart-imaging` cabeçalho. Consulte a seguinte captura de tela com `-x-adobe-smart-imaging` realce.
-
-![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
-
-Esse valor de cabeçalho indica o seguinte:
-
-* O Smart Imaging está funcionando para a empresa.
-* O valor positivo (>=0) indica que a conversão foi bem-sucedida. Nesse caso, uma nova imagem (webP aqui) é retornada.
-* O valor negativo (&lt;0) indica que a conversão não foi bem-sucedida. Nesse caso, a imagem solicitada original é retornada (JPEG por padrão, se não especificada).
-* O valor indica a diferença em bytes entre a imagem solicitada e a nova imagem. Nesse caso, os bytes salvos são 75048, o que é de aproximadamente 75 KB para uma imagem. 
-   * O valor negativo indica que a imagem solicitada era menor que a nova imagem. Mostramos a diferença de tamanho negativa, mas a imagem fornecida é somente a imagem solicitada original
-
-**Quando usar os Cabeçalhos de imagem inteligentes?**
-
-Os Cabeçalhos de resposta de imagem inteligente são ativados para fins de depuração ou ao mesmo tempo em que destacam os benefícios somente da Imagem inteligente. O uso`cache=off`em cenários normais pode afetar significativamente o tempo de carga.
 
 ## A Imagem inteligente pode ser desativada para qualquer solicitação? {#turning-off-smart-imaging}
 
