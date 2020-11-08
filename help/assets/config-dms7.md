@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 648b9601445a46b6a2734d5a47545c0439b9c283
+source-git-commit: ee527712b4d7f6ebf9ef2996de1405f6f9c3d335
 workflow-type: tm+mt
 source-wordcount: '5964'
 ht-degree: 6%
@@ -73,7 +73,7 @@ Consulte [Instalação do pacote de recursos 18912 para migração](/help/assets
 
 ## Criação de uma configuração de Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Antes de configurar o Dynamic Media**: Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) no Dynamic Media Classic para alterar sua senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante que você atualize a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
+**Antes de configurar o Dynamic Media** - Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve [fazer logon](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) no Dynamic Media Classic para alterar sua senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante que você atualize a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
