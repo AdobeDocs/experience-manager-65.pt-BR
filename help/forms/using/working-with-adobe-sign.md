@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3904'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,10 @@ Execute as seguintes etapas para criar um formulário adaptável habilitado para
    1. Especifique o **Nome** e o **Título** para o formulário adaptável.
 
    1. Selecione o container [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuração criado ao configurar o Adobe Sign com o AEM Forms.
+
+      >[!NOTE]
+      >
+      >A lista suspensa Cloud Service **[!UICONTROL do]** Adobe Sign exibe os serviços em nuvem configurados no container de configuração selecionado nesse campo. A lista suspensa Cloud Service **** Adobe Sign está disponível na seção Assinatura **** eletrônica das propriedades do formulário adaptável ao selecionar a opção **[!UICONTROL Ativar Adobe Sign]** .
 
 1. Na guia Modelo **[!UICONTROL de]** formulário, selecione uma das seguintes opções:
 
