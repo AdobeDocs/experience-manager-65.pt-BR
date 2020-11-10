@@ -3,9 +3,9 @@ title: Configurar a marcação de ativos usando o Serviço de conteúdo intelige
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2179'
 ht-degree: 26%
 
 ---
@@ -23,7 +23,7 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Instale o service pack [mais recente do](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager.
+* Instale o service pack [mais recente do](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager.
 
 ## Integração com o Console do desenvolvedor {#integrate-adobe-io}
 
@@ -281,12 +281,12 @@ Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags n
 
    * Incapacidade de reconhecer diferenças sutis nas imagens. Por exemplo, camisas finas versus camisetas comuns.
    * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em camisetas.
-   * A marcação é suportada nas localidades nas quais [!DNL Experience Manager] há suporte. Para obter uma lista de idiomas, consulte Notas [de versão do](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html)Smart Content Services.
+   * A marcação é suportada nas localidades nas quais [!DNL Experience Manager] há suporte. Para obter uma lista de idiomas, consulte Notas [de versão do](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html)Smart Content Services.
 
 * Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o [!DNL Assets] Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 
 >[!MORELIKETHIS]
 >
 >* [Visão geral e como treinar Tags inteligentes](enhanced-smart-tags.md)
->* [Tutorial em vídeo sobre como configurar tags inteligentes](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
+>* [Tutorial em vídeo sobre tags inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
