@@ -3,10 +3,10 @@ title: Ativar insights de ativos por meio do DTM
 description: Saiba como usar o Gerenciamento dinâmico de tags do Adobe (DTM) para ativar o Asset Insights.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d13381d961f7663366b041168da369c0b01c9336
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 1%
+source-wordcount: '671'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ O Gerenciamento dinâmico de tags do Adobe é uma ferramenta que ativa suas ferr
 
 >[!CAUTION]
 >
->O Adobe DTM foi preterido a favor da Adobe Experience Platform Launch e logo chegará ao [fim da vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda [usar o Launch para obter insights](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de ativos.
+>O Adobe DTM foi preterido a favor do [!DNL Adobe Experience Platform Launch] e em breve chegará ao [fim da vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda que você [ [!DNL Launch] use insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de ativos.
 
 Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
@@ -31,7 +31,7 @@ Execute essas etapas para ativar os Asset Insights por meio do DTM.
 
    * Selecione a guia Propriedades **[!UICONTROL da]** Web e clique em **[!UICONTROL Adicionar propriedade]**.
 
-   * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Atualize os campos conforme apropriado e clique em **[!UICONTROL Criar propriedade]**. Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Criar propriedade da Web de edição](assets/Create-edit-web-property.png)
 
