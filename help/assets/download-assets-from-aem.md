@@ -3,9 +3,9 @@ title: Baixar ativos
 description: Saiba como baixar ativos [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '856'
 ht-degree: 3%
 
 ---
@@ -67,14 +67,14 @@ Para permitir o download de ativos do DAM, digamos ao usar algo como o Asset Sha
 
 O `Asset Download Servlet` pode ser desativado em instâncias de [!DNL Experience Manager] Publicação atualizando a configuração do dispatcher para bloquear quaisquer solicitações de download de ativos. O servlet também pode ser desabilitado manualmente por meio do console OSGi diretamente.
 
-1. Para bloquear as solicitações de download de ativos por meio de uma configuração de despachante, edite a `dispatcher.any` configuração e adicione uma regra à seção [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Para bloquear as solicitações de download de ativos por meio de uma configuração de despachante, edite a `dispatcher.any` configuração e adicione uma regra à seção [de](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Para desativar o componente OSGi em uma instância de publicação, acesse o console OSGi em `http://[aem_server]:[port]/system/console/components`. Localize `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e clique em **[!UICONTROL Desativar]**.
 
 >[!MORELIKETHIS]
 >
->* [Baixar ativos usando o Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [Baixar ativos usando o Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Baixe ativos](drm.md)protegidos por DRM.
->* [Baixe ativos usando o aplicativo de desktop Experience Manager no desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)Win ou Mac.
+>* [Baixe ativos usando o aplicativo de desktop Experience Manager no desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)Win ou Mac.
 >* [Baixe ativos usando o Link de ativos Adobe nos aplicativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)Adobe Creative Cloud suportados.
 
