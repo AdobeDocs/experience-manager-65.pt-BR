@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12ebf77d2af389e0a3aea5c7f311c828ecd7c17
+source-git-commit: 26efba567985dcb89b2610935cab18943b7034b3
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1335'
 ht-degree: 1%
 
 ---
@@ -231,6 +231,17 @@ A configuração agora pode ser referenciada para uma Cloud Service para usar a 
 
    * **Autenticação**: IMS
    * **ID** do inquilino: a ID do locatário do Adobe IMS
+
+      >[!NOTE]
+      >
+      >Para o IMS este valor precisa ser retirado do próprio Público alvo. Você pode fazer logon no Público alvo e extrair a ID do locatário do URL.
+      >
+      >Por exemplo, se o URL for:
+      >
+      >`https://experience.adobe.com/#/@yourtenantid/target/activities`
+      >
+      >Então você usaria `yourtenantid`.
+
    * **Configuração** IMS: selecione o nome da Configuração IMS
    * **Tipo** de API: REST
    * **Configuração** Analytics Cloud A4T: Selecione a configuração de nuvem do Analytics usada para as métricas e metas de atividade do público alvo. Isso é necessário se você estiver usando o Adobe Analytics como a fonte do relatórios ao direcionar o conteúdo. Se você não vir a configuração da nuvem, consulte a observação em [Configuração](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration)da A4T Analytics Cloud.
