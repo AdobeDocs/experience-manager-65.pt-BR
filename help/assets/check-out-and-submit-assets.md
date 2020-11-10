@@ -3,9 +3,9 @@ title: Fazer check-in e check-out de ativos para edição
 description: Saiba como fazer check-out dos ativos para edição e check-in deles novamente após a conclusão das alterações.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,6 @@ Os administradores podem fazer check-in de ativos cujo check-out foi feito por o
 
 >[!MORELIKETHIS]
 >
->* [Entenda o check-in e o check-out no aplicativo de desktop Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Tutorial em vídeo para entender o check-in e o check-out nos ativos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Entenda o check-in e o check-out no aplicativo de desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Tutorial em vídeo para entender o check-in e o check-out nos ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
