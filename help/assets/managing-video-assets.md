@@ -3,9 +3,9 @@ title: Gerenciar ativos de vídeo
 description: Faça upload, pré-visualização, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '807'
 ht-degree: 7%
 
 ---
@@ -36,7 +36,7 @@ Por padrão, [!DNL Assets] não permite fazer upload de ativos com mais de 2 GB 
 Além da [!DNL Assets] configuração, altere as seguintes configurações para fazer upload de ativos grandes:
 
 * Aumente o tempo de expiração do token. Consulte Servlet [!UICONTROL CSRF] Adobe Granite no Console da Web em `https://[aem_server]:[port]/system/console/configMgr`. Para obter mais informações, consulte Proteção [](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumente a configuração `receiveTimeout` no Dispatcher. Para obter mais informações, consulte Configuração [do](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Dispatcher.
+* Aumente a configuração `receiveTimeout` no Dispatcher. Para obter mais informações, consulte Configuração [do](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Dispatcher.
 
 >[!NOTE]
 >
