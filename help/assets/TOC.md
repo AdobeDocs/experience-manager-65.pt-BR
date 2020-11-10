@@ -7,9 +7,9 @@ user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 39%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 39%
 # Guia do Assets {#assets}
 
 + [[!DNL Assets] guia do usuário](home.md)
-+ [[!DNL Experience Manager] 6.5 Notas de versão dos ativos](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 Notas de versão dos ativos](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
 + Usar ativos Experience Manager {#using}
