@@ -3,9 +3,9 @@ title: Gerenciar ativos compostos com referências e várias páginas
 description: Saiba como criar referências a ativos digitais de dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para visualização de páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ As referências são resolvidas com base no caminho, na ID do documento e na ID 
 
 Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illustrator] arquivo.
 
-1. Usando o aplicativo [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)Experience Manager desktop, busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
+1. Usando o aplicativo [[!DNL Experience Manager] de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)desktop, busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
 1. Arraste o ativo da pasta local para o [!DNL Illustrator] arquivo.
 
 1. Salve o [!DNL Illustrator] arquivo na unidade montada ou [carregue](/help/assets/manage-assets.md#uploading-assets) no [!DNL Experience Manager] repositório.
@@ -68,7 +68,7 @@ Esse procedimento é semelhante a [adicionar ativos digitais como referências n
 
 ## Adicionar ativos digitais como referências em [!DNL Adobe Photoshop] {#refps}
 
-1. Use o aplicativo [!DNL Experience Manager] desktop para acessar [!DNL Experience Manager Assets]. Baixe e revele os ativos no sistema de arquivos local. Use a funcionalidade [!UICONTROL Inserir vinculado] em [!DNL Adobe Photoshop]. Consulte [colocar ativos no aplicativo](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de desktop.
+1. Use o aplicativo [!DNL Experience Manager] desktop para acessar [!DNL Experience Manager Assets]. Baixe e revele os ativos no sistema de arquivos local. Use a funcionalidade [!UICONTROL Inserir vinculado] em [!DNL Adobe Photoshop]. Consulte [colocar ativos no aplicativo](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de desktop.
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
@@ -119,7 +119,7 @@ Para [!DNL InDesign], você pode extrair páginas usando [!DNL InDesign Server].
 
 As seguintes opções estão disponíveis na barra de ferramentas, no painel esquerdo e nos controles do Visualizador de páginas:
 
-* **[!UICONTROL Ações]** da área de trabalho para abrir ou revelar um subativo específico usando o aplicativo da [!DNL Experience Manager] área de trabalho. Veja como [configurar as ações](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) da área de trabalho se você estiver usando o aplicativo da [!DNL Experience Manager] área de trabalho.
+* **[!UICONTROL Ações]** da área de trabalho para abrir ou revelar um subativo específico usando o aplicativo da [!DNL Experience Manager] área de trabalho. Veja como [configurar as ações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) da área de trabalho se você estiver usando o aplicativo da [!DNL Experience Manager] área de trabalho.
 
 * **[!UICONTROL A opção Propriedades]** abre a página [!UICONTROL Propriedades] do subativo específico.
 
@@ -135,8 +135,8 @@ As seguintes opções estão disponíveis na barra de ferramentas, no painel esq
 
 >[!MORELIKETHIS]
 >
->* [Usar o aplicativo Adobe Experience Manager para desktop](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Configurar ações da área de trabalho no Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Usar o aplicativo Adobe Experience Manager para desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Configurar ações da área de trabalho no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Criar objetos inteligentes vinculados no Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Colocar gráficos no Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 
