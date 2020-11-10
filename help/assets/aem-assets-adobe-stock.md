@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Gerenciar ativos'
 description: Pesquise, busque, licencie e [!DNL Adobe Stock] gerencie ativos de dentro [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1080'
 ht-degree: 13%
 
 ---
@@ -19,7 +19,7 @@ As organizações podem integrar seus planos [!DNL Adobe Stock] corporativos [!D
 
 ## Pré-requisitos {#prerequisites}
 
-A integração exige um plano [Adobe Stock](https://stockenterprise.adobe.com/)corporativo.
+A integração exige um plano [ [!DNL Adobe Stock] empresarial](https://stockenterprise.adobe.com/).
 
 ## Integrar [!DNL Experience Manager] e [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -52,7 +52,7 @@ Para permitir a comunicação entre [!DNL Experience Manager] e [!DNL Adobe Stoc
 
 >[!NOTE]
 >
->Se houver várias [!DNL Adobe Stock] configurações, selecione a configuração desejada no painel Preferências do usuário. Para acessar o painel a partir do home page do Experience Manager, clique no ícone do usuário e, em seguida, clique em Preferências **** do usuário > Configuração **[!UICONTROL do]** estoque).
+>Se houver várias [!DNL Adobe Stock] configurações, selecione a configuração desejada no painel Preferências  do usuário. Para acessar o painel a partir do [!DNL Experience Manager] home page, clique no ícone do usuário e, em seguida, clique em Preferências **** do usuário > Configuração **[!UICONTROL do]** Stock.
 
 ## Usar e gerenciar [!DNL Adobe Stock] ativos em [!DNL Experience Manager] {#usemanage}
 
@@ -60,9 +60,9 @@ Usando esse recurso, as organizações podem permitir que seus usuários trabalh
 
 Quando um [!DNL Adobe Stock] ativo é licenciado em [!DNL Experience Manager], ele pode ser usado e gerenciado como um ativo comum. Em [!DNL Experience Manager], os usuários podem pesquisar e pré-visualização os ativos; copiar e publicar os ativos; compartilhar os ativos em [!DNL Brand Portal]; acessar e usar os ativos por meio do aplicativo [!DNL Experience Manager] desktop; e assim por diante.
 
-![Procure ativos do Adobe Stock e filtre os resultados de sua área de trabalho do Adobe Experience Manager](assets/adobe-stock-search-results-workspace.png)
+![Procure [!DNL Adobe Stock] ativos e filtre os resultados de sua [!DNL Adobe Experience Manager] área de trabalho](assets/adobe-stock-search-results-workspace.png)
 
-*Figura: Procure[!DNL Adobe Stock]ativos e filtre os resultados da sua[!DNL Experience Manager]interface.*
+*Figura: Procure [!DNL Adobe Stock] ativos e filtre os resultados da sua [!DNL Experience Manager] interface.*
 
 **A.**[!DNL Adobe Stock] Pesquise ativos semelhantes aos ativos cuja ID do é fornecida. **B.** Pesquise ativos que correspondem à seleção de forma ou orientação. **C.** Procure um dos tipos de ativos mais compatíveis **D.** Abra ou recolha o painel Filtros **E.** Licencie e salve o ativo selecionado no [!DNL Experience Manager]**F.**[!DNL Experience Manager] Salve o ativo no com a marca d&#39;água **G.**[!DNL Adobe Stock] Explore os ativos no site do que são semelhantes ao ativo selecionado **H.**[!DNL Adobe Stock] Exiba os ativos selecionados no site do **I.** Número de ativos selecionados dos resultados de pesquisa **J.** Alterne entre a exibição Cartão e a exibição em Lista
 
@@ -80,9 +80,9 @@ Como alternativa, digite um start `Location: Adobe Stock` na barra de pesquisa p
 >
 >Assets searched from [!DNL Adobe Stock] are just displayed in [!DNL Experience Manager]. [!DNL Adobe Stock] os ativos são buscados e armazenados no [!DNL Experience Manager] repositório somente depois que um usuário [salva um ativo](/help/assets/aem-assets-adobe-stock.md#saveassets) ou [licencia e salva um ativo](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets that are already stored in [!DNL Experience Manager] are displayed and highlighted for ease of reference and access. Also, the [!DNL Stock] assets are saved with some additional metadata to indicate the source as [!DNL Stock].
 
-![Pesquisar filtros no Experience Manager e ativos Adobe Stock destacados nos resultados da pesquisa](assets/aem-search-filters2.jpg)
+![Pesquisar filtros em [!DNL Experience Manager] e [!DNL Adobe Stock] ativos destacados nos resultados da pesquisa](assets/aem-search-filters2.jpg)
 
-*Figura: Pesquise filtros em[!DNL Experience Manager]e[!DNL Adobe Stock]ativos destacados nos resultados da pesquisa.*
+*Figura: Pesquise filtros em [!DNL Experience Manager] e [!DNL Adobe Stock] ativos destacados nos resultados da pesquisa.*
 
 ### Salve e visualização os ativos necessários {#saveassets}
 
@@ -98,9 +98,9 @@ Na próxima vez que você pesquisar ativos, os ativos salvos serão realçados c
 
 Os usuários podem licenciar [!DNL Adobe Stock] ativos usando a cota de seu plano de [!DNL Adobe Stock] empresa. Quando você licencia um ativo, ele é salvo sem uma marca d&#39;água e está disponível para pesquisa e uso no [!DNL Experience Manager Assets].
 
-![Caixa de diálogo para licenciar e salvar ativos Adobe Stock nos Experience Manager Assets](assets/aem-stock_licenseandsave.jpg)
+![Diálogo para licenciar e salvar [!DNL Adobe Stock] ativos em [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)
 
-*Figura: Caixa de diálogo para licenciar e salvar[!DNL Adobe Stock]ativos em[!DNL Experience Manager Assets].*
+*Figura: Caixa de diálogo para licenciar e salvar [!DNL Adobe Stock] ativos em [!DNL Experience Manager Assets].*
 
 ### Acessar metadados e propriedades de ativos {#access-metadata-and-asset-properties}
 
@@ -122,7 +122,7 @@ Os usuários podem ver as propriedades dos ativos licenciados e não licenciados
 
 >[!MORELIKETHIS]
 >
->* [Tutorial em vídeo sobre como usar ativos Adobe Stock com ativos Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Ajuda do plano corporativo Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [Perguntas frequentes sobre a Adobe Stock](https://helpx.adobe.com/stock/faq.html)
+>* [Tutorial em vídeo sobre como [!DNL Adobe Stock] usar ativos com [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] ajuda do plano corporativo](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Perguntas frequentes](https://helpx.adobe.com/stock/faq.html)
 
