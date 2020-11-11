@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
+source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3949'
 ht-degree: 0%
 
 ---
@@ -163,6 +163,8 @@ Execute as seguintes etapas para selecionar um serviço em nuvem e a ordem de as
 1. Selecione um serviço em nuvem na lista já configurada dos Cloud Services Adobe Sign.
 
    Se a lista **Adobe Sign Cloud Service** estiver vazia, siga o artigo [Configurar o Adobe Sign com AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) para configurar o serviço.
+
+   A lista suspensa lista os serviços em nuvem existentes na `global` pasta em Ferramentas > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Além disso, a lista suspensa também lista os serviços em nuvem existentes na pasta selecionada no campo Container **** Configuração ao criar um formulário adaptável.
 
 1. Selecione a ordem de assinatura na caixa de diálogo **Os assinantes podem assinar** . Os cantores Adobe Sign podem assinar um formulário adaptável **Sequencialmente** - um após o outro assinante, ou **Simultaneamente** - em qualquer ordem.
 
