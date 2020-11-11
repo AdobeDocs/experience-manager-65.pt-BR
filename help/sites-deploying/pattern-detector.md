@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Avaliação da complexidade da atualização com o detector de padrões{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Avaliação da complexidade da atualização com o detector de padrões
 
 ## Visão geral {#overview}
 
@@ -43,9 +43,10 @@ O Detector de padrão é lançado separadamente como um [único pacote](https://
 >* aumentar a taxa de detecção
 >* evitar qualquer lentidão em instâncias críticas para os negócios
 
-
->ao mesmo tempo, é recomendável executá-lo **em ambientes** de preparo que estejam o mais próximos possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
 >
+>
+ao mesmo tempo, é recomendável executá-lo **em ambientes** de preparo que estejam o mais próximos possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
+
 Você pode usar vários métodos para verificar a saída do Detector de padrão:
 
 * **Através do console Inventário Felix:**
@@ -56,7 +57,6 @@ Você pode usar vários métodos para verificar a saída do Detector de padrão:
    ![screenshot-2018-2-5detector de padrões](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Por meio de uma interface JSON comum ou baseada em texto reativo**
-
 * **Por meio de uma interface de linhas JSON reativa, **que gera um documento JSON separado em cada linha.
 
 Ambos os métodos estão detalhados abaixo:
@@ -211,7 +211,8 @@ Com a saída:
 ```
 
 >[!NOTE]
-A abordagem recomendada é salvar toda a saída do ondulado no arquivo e, em seguida, processá-la por meio `jq` ou `grep` para filtrar o tipo de informação.
+>
+>A abordagem recomendada é salvar toda a saída do ondulado no arquivo e, em seguida, processá-la por meio `jq` ou `grep` para filtrar o tipo de informação.
 
 ## Âmbito de detecção {#scope}
 
@@ -224,5 +225,5 @@ Atualmente, o Detector de padrão permite verificar:
 * rep:compatibilidade de nós do usuário (no contexto da configuração OAuth)
 
 >[!NOTE]
-Observe que o Detector de padrão tenta prever com precisão os avisos para atualização. No entanto, pode gerar falsos positivos em alguns cenários.
-
+>
+>Observe que o Detector de padrão tenta prever com precisão os avisos para atualização. No entanto, pode gerar falsos positivos em alguns cenários.
