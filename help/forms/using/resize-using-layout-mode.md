@@ -1,40 +1,30 @@
 ---
-title: Usar o modo Layout para redimensionar componentes
-seo-title: Usar o modo Layout para redimensionar componentes
+title: Usar o modo Layout para redimensionar componentes para formulários adaptáveis
 description: 'Definir a posição dos componentes usando a grade responsiva disponível no modo Layout '
-seo-description: 'Definir a posição dos componentes usando a grade responsiva disponível no modo Layout '
-uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
-contentOwner: anujkapo
-topic-tags: interactive-communications, author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
 
 
-# Usar o modo Layout para redimensionar componentes{#use-layout-mode-to-resize-components}
+# Usar o modo Layout para redimensionar componentes {#use-layout-mode-to-resize-components}
 
-A interface adaptativa de criação de canais da Web de formulários e Comunicações interativas permite redimensionar componentes usando o modo Layout. Arraste e solte pontos azuis dentro de colunas para definir o start e os pontos finais para posicionar os componentes. Os pontos azuis são exibidos após tocar no componente dentro da grade responsiva. A grade responsiva consiste em 12 colunas iguais. O sombreamento de cores branco e azul em colunas alternativas diferencia uma coluna da outra.
+A interface adaptativa de criação de formulários permite redimensionar componentes usando o modo Layout. Arraste e solte pontos azuis dentro de colunas para definir o start e os pontos finais para posicionar os componentes. Os pontos azuis são exibidos após tocar no componente dentro da grade responsiva. A grade responsiva consiste em 12 colunas iguais. O sombreamento de cores branco e azul em colunas alternativas diferencia uma coluna da outra.
 
 Você pode usar o modo Layout para redimensionar componentes para todos os tipos de dispositivos, como desktop, tablet, telefone e outros dispositivos menores. O tablet deriva automaticamente a configuração do layout da versão do desktop e os dispositivos menores derivam a configuração do layout do telefone. Entretanto, é possível substituir as configurações derivadas automaticamente para definir uma configuração diferente para cada tipo de dispositivo.
 
-Se você estiver criando o canal da Web usando o canal [Imprimir como principal](../../forms/using/create-interactive-communication.md) para uma Comunicação interativa, os componentes disponíveis para redimensionamento também incluirão os subformulários e campos gerados automaticamente no canal da Web usando o canal Imprimir. O canal da Web retém o layout dos elementos do canal Imprimir no modo Layout.
-
 ## Modo de layout de acesso {#access-layout-mode}
 
-Selecione **Layout** na lista suspensa que aparece na parte superior da interface de criação do formulário adaptável e da Comunicação interativa ao lado da opção **Pré-visualização** . O formulário é exibido no modo Layout.
+Selecione **Layout** na lista suspensa que é exibida na parte superior da interface adaptável de criação de formulário ao lado da opção **Pré-visualização** . O formulário é exibido no modo Layout.
 
 1. Faça logon na instância do autor AEM e navegue até **Adobe Experience Manager** > **Forms** > **Forms e Documentos**.
-1. [Crie um novo](../../forms/using/create-interactive-communication.md) formulário ou abra um formulário adaptativo existente ou uma Comunicação interativa.
+1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Selecione **Layout** na lista suspensa que aparece na parte superior ao lado da opção **Pré-visualização** . O formulário é exibido no modo Layout.
 
-   ![Modo de layout para Interative Communications](assets/layout_mode_ic_new.png)
+   ![Modo Layout](assets/layout_mode_ic_new.png)
 
 ## Redimensionar componentes {#resize-components}
 
@@ -56,9 +46,9 @@ Selecione **Layout** na lista suspensa que aparece na parte superior da interfac
 
 ### Exemplo {#example}
 
-**Objetivo:** Você deseja inserir um componente de tabela e um componente de Imagem e posicioná-los paralelamente entre si em uma Comunicação interativa.
+**Objetivo:** Insira um componente de tabela e um componente de Imagem e posicione-os paralelos entre si em um formulário adaptável.
 
-1. Insira os componentes de tabela e imagem usando o modo Editar no canal da Web. O componente de imagem é exibido após o componente de tabela.
+1. Insira os componentes da tabela e da imagem usando o modo Editar no formulário adaptável. O componente de imagem é exibido após o componente de tabela.
 1. Alterne para o modo Layout e toque no componente Tabela. Os pontos azuis para redimensionar o componente são exibidos nas colunas 1 e 12.
 1. Arraste e solte o ponto azul na coluna 12 para a coluna 6 da grade responsiva.
 
