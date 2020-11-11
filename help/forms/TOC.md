@@ -8,9 +8,9 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3716'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 2%
       + [Instalar e configurar os recursos de captura de dados](using/installing-configuring-aem-forms-osgi.md)
       + [Instalar e configurar o fluxo de trabalho centrado na Forms no OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Instalar e configurar o Interative Communications](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [Instalar e configurar o serviço de conversão automatizado da Forms](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [Instalar e configurar o serviço de Automated forms conversion](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Install AEM Forms on JEE {#jee-installation}
       + [Plataformas compatíveis para formulários AEM em JEE](using/aem-forms-jee-supported-platforms.md)
       + [Instale e implante o AEM Forms no JEE usando o chave-mão JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -193,6 +193,7 @@ ht-degree: 2%
    + [Imprimir canal e canal da Web](using/web-channel-print-channel.md)
    + [Propriedades de configuração do Interative Communications](using/interactive-communication-configuration-properties.md)
    + [Gerar várias comunicações interativas](using/generate-multiple-interactive-communication-using-batch-api.md)
+   + [Usar o modo Layout para redimensionar componentes](using/resize-using-layout-mode-interactive-communication.md)
 + Fluxos de trabalhos {#workflows}
    + [Fluxo de trabalho centrado na Forms no OSGi](using/aem-forms-workflow.md)
    + [Fluxo de trabalho centrado na Forms no OSGi - Referência de etapas](using/aem-forms-workflow-step-reference.md)
