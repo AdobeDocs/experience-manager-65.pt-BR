@@ -1,6 +1,6 @@
 ---
-title: Como executar o AEM com TarMK Cold Standby
-seo-title: Como executar o AEM com TarMK Cold Standby
+title: Como executar AEM com o modo de espera refrigerado TarMK
+seo-title: Como executar AEM com o modo de espera refrigerado TarMK
 description: Saiba como criar, configurar e manter uma configuração TarMK Cold Standby.
 seo-description: Saiba como criar, configurar e manter uma configuração TarMK Cold Standby.
 uuid: 004fdf3e-517c-452b-8db1-a47d6b31d8ba
@@ -11,30 +11,33 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
+source-git-commit: a99c5794cee88d11ca3fb9eeed443c4d0178c7b3
+workflow-type: tm+mt
+source-wordcount: '2731'
+ht-degree: 0%
 
 ---
 
 
-# Como executar o AEM com TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
+# Como executar AEM com o modo de espera refrigerado TarMK{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Introdução {#introduction}
 
-A capacidade de Espera Fria do Tar Micro Kernel permite que uma ou mais instâncias AEM em espera se conectem a uma instância primária. O processo de sincronização é uma forma somente de fazer isso apenas das instâncias primárias às de espera.
+A capacidade de Espera Fria do Tar Micro Kernel permite que uma ou mais instâncias de AEM stand-by se conectem a uma instância primária. O processo de sincronização é uma forma somente de fazer isso apenas das instâncias primárias às de espera.
 
-A finalidade das instâncias stand-by é garantir uma cópia de dados em tempo real do repositório mestre e garantir um switch rápido sem perda de dados, caso o mestre esteja indisponível por qualquer motivo.
+A finalidade das instâncias stand-by é garantir uma cópia de dados em tempo real do repositório principal e garantir um switch rápido sem perda de dados, caso o principal não esteja disponível por qualquer motivo.
 
 O conteúdo é sincronizado linearmente entre a instância principal e as instâncias stand-by, sem qualquer verificação de integridade para detecção de danos no arquivo ou repositório. Devido a esse design, as instâncias stand-by são cópias exatas da instância principal e não podem ajudar a atenuar inconsistências em instâncias primárias.
 
 >[!NOTE]
 >
->O recurso Modo de espera frio é projetado para proteger cenários nos quais é necessária alta disponibilidade em instâncias do **autor** . Para situações em que a alta disponibilidade é necessária em instâncias de **publicação** usando o Tar Micro Kernel, a Adobe recomenda usar um farm de publicação.
+>O recurso Modo de espera frio é projetado para proteger cenários em que a alta disponibilidade é necessária em instâncias do **autor** . Para situações em que a alta disponibilidade é necessária em instâncias de **publicação** usando o Tar Micro Kernel, o Adobe recomenda o uso de um farm de publicação.
 >
 >Para obter informações sobre implantações mais disponíveis, consulte a página Implantações [](/help/sites-deploying/recommended-deploys.md) recomendadas.
 
 ## Como funciona {#how-it-works}
 
-Na instância principal do AEM, uma porta TCP é aberta e está ouvindo mensagens recebidas. Atualmente, há dois tipos de mensagens que os escravos enviarão ao mestre:
+Na instância principal do AEM, uma porta TCP é aberta e está ouvindo mensagens recebidas. Atualmente, há dois tipos de mensagens que os escravos enviarão ao principal:
 
 * uma mensagem solicitando a ID do segmento do cabeçalho atual
 * uma mensagem solicitando dados de segmento com uma ID especificada
@@ -53,17 +56,17 @@ Uma implantação típica do TarMK Cold Standby:
 
 ### Robustez {#robustness}
 
-O fluxo de dados é projetado para detectar e lidar automaticamente com problemas relacionados à conexão e à rede. Todos os pacotes são agrupados com somas de verificação e assim que ocorrem problemas com a conexão ou pacotes danificados, os mecanismos de repetição são acionados.
+O fluxo de dados é projetado para detectar e lidar automaticamente com problemas relacionados à conexão e à rede. Todos os pacotes são agrupados com somas de verificação e assim que ocorrem problemas com a conexão ou pacotes danificados, os mecanismos de nova tentativa são acionados.
 
 #### Show {#performance}
 
 A ativação do TarMK Cold Standby na instância primária quase não tem impacto mensurável no desempenho. O consumo adicional da CPU é muito baixo e o disco rígido extra e a E/S de rede não devem gerar problemas de desempenho.
 
-No modo de espera, você pode esperar alto consumo de CPU durante o processo de sincronização. Devido ao fato de o procedimento não ser multisegmentado, ele não pode ser acelerado usando vários núcleos. Se nenhum dado for alterado ou transferido, não haverá atividade mensurável. A velocidade da conexão varia dependendo do hardware e do ambiente de rede, mas não depende do tamanho do repositório ou do uso do SSL. Lembre-se disso ao estimar o tempo necessário para uma sincronização inicial ou quando muitos dados foram alterados enquanto isso no nó primário.
+No modo de espera, você pode esperar alto consumo de CPU durante o processo de sincronização. Devido ao fato de o procedimento não ser multisegmentado, ele não pode ser acelerado usando vários núcleos. Se nenhum dado for alterado ou transferido, não haverá atividade mensurável. A velocidade da conexão varia dependendo do hardware e do ambiente da rede, mas não depende do tamanho do repositório ou do uso do SSL. Lembre-se disso ao estimar o tempo necessário para uma sincronização inicial ou quando muitos dados foram alterados enquanto isso no nó primário.
 
 #### Segurança {#security}
 
-Supondo que todas as instâncias ocorrem na mesma zona de segurança da intranet, o risco de violação de segurança é muito reduzido. No entanto, é possível adicionar uma camada de segurança adicional, permitindo conexões SSL entre os escravos e o mestre. Isso reduz a possibilidade de os dados serem comprometidos por um homem no meio.
+Supondo que todas as instâncias ocorrem na mesma zona de segurança da intranet, o risco de violação de segurança é muito reduzido. No entanto, é possível adicionar uma camada de segurança adicional, permitindo conexões SSL entre os escravos e os principais. Isso reduz a possibilidade de os dados serem comprometidos por um homem no meio.
 
 Além disso, você pode especificar as instâncias stand-by que podem se conectar restringindo o endereço IP das solicitações recebidas. Isso deve ajudar a garantir que ninguém na intranet possa copiar o repositório.
 
@@ -71,21 +74,22 @@ Além disso, você pode especificar as instâncias stand-by que podem se conecta
 >
 >É recomendável adicionar um balanceador de carga entre o Dispatcher e os servidores que fazem parte da configuração do Coldy Standby. O balanceador de carga deve ser configurado para direcionar o tráfego do usuário somente para a instância **principal** , a fim de garantir a consistência e impedir que o conteúdo seja copiado na instância stand-by por outros meios que não o mecanismo de modo de espera frio.
 
-## Criação de uma configuração de AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
+## Criando uma configuração AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
->O PID para o armazenamento de nó do segmento e o serviço de armazenamento Stand-by foram alterados no AEM 6.3 em comparação com as versões anteriores da seguinte forma:
+>O PID para o armazenamento do nó Segmento e o serviço de armazenamento Standby foram alterados no AEM 6.3 em comparação às versões anteriores da seguinte forma:
 >
 >* de org.apache.Jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService para org.apache.Jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* de org.apache.Jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService para org.apache.Jackrabbit.oak.segment.SegmentNodeStoreService
+
 >
 >
- Certifique-se de fazer os ajustes de configuração necessários para refletir essa alteração.
+Certifique-se de fazer os ajustes de configuração necessários para refletir essa alteração.
 
-Para criar uma configuração TarMK Easy standby, primeiro é necessário criar as instâncias stand-by, executando uma cópia do sistema de arquivos de toda a pasta de instalação do principal em um novo local. Em seguida, você pode iniciar cada instância com um modo de execução que especifique sua função ( `primary` ou `standby`).
+Para criar uma configuração TarMK Easy standby, primeiro é necessário criar as instâncias stand-by, executando uma cópia do sistema de arquivos de toda a pasta de instalação do principal em um novo local. Em seguida, você pode start cada instância com um modo de execução que especificará sua função ( `primary` ou `standby`).
 
-Abaixo está o procedimento que precisa ser seguido para criar uma configuração com uma instância mestre e uma instância stand-by:
+Abaixo está o procedimento que precisa ser seguido para criar uma configuração com uma instância principal e uma em espera:
 
 1. Instale o AEM.
 
@@ -99,14 +103,16 @@ Abaixo está o procedimento que precisa ser seguido para criar uma configuraçã
    1. Crie as configurações necessárias para o armazenamento de nó preferencial e o armazenamento de dados em `aem-primary/crx-quickstart/install/install.primary`
    1. Crie um arquivo chamado `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` no mesmo local e configure-o de acordo. Para obter mais informações sobre as opções de configuração, consulte [Configuração](/help/sites-deploying/tarmk-cold-standby.md#configuration).
 
-   1. Se você estiver usando uma instância do AEM TarMK com um armazenamento de dados externo, crie uma pasta com o nome `crx3` em `aem-primary/crx-quickstart/install``crx3`
+   1. Se você estiver usando uma instância AEM TarMK com um armazenamento de dados externo, crie uma pasta com o nome `crx3` em `aem-primary/crx-quickstart/install` `crx3`
 
    1. Coloque o arquivo de configuração do armazenamento de dados na `crx3` pasta.
-   Se, por exemplo, você estiver executando uma instância do AEM TarMK com um File Data Store externo, precisará dos seguintes arquivos de configuração:
+
+   Se, por exemplo, você estiver executando uma instância AEM TarMK com um File Data Store externo, precisará dos seguintes arquivos de configuração:
 
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
    * `aem-primary/crx-quickstart/install/crx3/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`
+
    Abaixo, você encontrará configurações de amostra para a instância principal:
 
    **Amostra** de **org.apache.Jackrabbit.oak.segment.SegmentNodeStoreService.config**
@@ -117,7 +123,7 @@ Abaixo está o procedimento que precisa ser seguido para criar uma configuraçã
    standby=B"false"
    ```
 
-   **Exemplo de org.apache.Jackrabbit.oak.segment.standby.store.StandbyStoreService.config**
+   **Amostra de org.apache.Jackrabbit.oak.segment.standby.store.StandbyStoreService.config**
 
    ```xml
    org.apache.sling.installer.configuration.persist=B"false"
@@ -133,15 +139,15 @@ Abaixo está o procedimento que precisa ser seguido para criar uma configuraçã
    minRecordLength=I"16384"
    ```
 
-1. Inicie o primário certificando-se de especificar o modo de execução principal:
+1. Start o principal, certificando-se de especificar o modo de execução principal:
 
    ```shell
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
 1. Crie um novo Apache Sling Logging Logger para o pacote **org.apache.Jackrabbit.oak.segment** . Defina o nível de log como &quot;Depurar&quot; e aponte a saída de log para um arquivo de log separado, como */logs/tarmk-coldstandby.log*. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
-1. Vá para o local da instância **standby** e inicie-a executando o jar.
-1. Crie a mesma configuração de registro que para o principal. Então, pare a instância.
+1. Vá para o local da instância **standby** e start-a executando o jar.
+1. Crie a mesma configuração de registro que para o principal. Em seguida, pare a instância.
 1. Em seguida, prepare a instância de espera. É possível fazer isso executando as mesmas etapas da instância primária:
 
    1. Exclua os arquivos que possam estar em `aem-standby/crx-quickstart/install`.
@@ -155,8 +161,9 @@ Abaixo está o procedimento que precisa ser seguido para criar uma configuraçã
 
    1. Crie a configuração do armazenamento de dados e coloque-a em `aem-standby/crx-quickstart/install/crx3`. Neste exemplo, o arquivo que você precisa criar é:
 
-      * org.apache.Jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
+      * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
    1. Edite os arquivos e crie as configurações necessárias.
+
    Abaixo estão exemplos de arquivos de configuração para uma instância stand-by típica:
 
    **Exemplo de org.apache.Jackrabbit.oak.segment.SegmentNodeStoreService.config**
@@ -169,7 +176,7 @@ Abaixo está o procedimento que precisa ser seguido para criar uma configuraçã
    customBlobStore=B"true"
    ```
 
-   **Exemplo de org.apache.Jackrabbit.oak.segment.standby.store.StandbyStoreService.config**
+   **Amostra de org.apache.Jackrabbit.oak.segment.standby.store.StandbyStoreService.config**
 
    ```xml
    org.apache.sling.installer.configuration.persist=B"false"
@@ -189,7 +196,7 @@ Abaixo está o procedimento que precisa ser seguido para criar uma configuraçã
    minRecordLength=I"16384"
    ```
 
-1. Inicie a instância **standby** usando o modo de execução standby:
+1. Start a instância **standby** usando o modo de execução standby:
 
    ```xml
    java -jar quickstart.jar -r standby,crx3,crx3tar
@@ -198,15 +205,14 @@ Abaixo está o procedimento que precisa ser seguido para criar uma configuraçã
 O serviço também pode ser configurado por meio do Console da Web:
 
 1. Ir para o Web Console em: *https://serveraddress:serverport/system/console/configMgr*
-1. Procurando um serviço chamado **Apache Jackrabbit Oak Segment Tar Cold Standby Service** e clique duas vezes nele para editar as configurações.
+1. Procurando um serviço chamado Serviço **de espera por frio do segmento Oak do** Apache Jackrabbit Oak e clique no duplo para editar as configurações.
 1. Salvar as configurações e reiniciar as instâncias para que as novas configurações tenham efeito.
 
 >[!NOTE]
 >
 >Você pode verificar a função de uma instância a qualquer momento verificando a presença dos modos de execução **principal** ou **stand-by** no console da Web Sling Settings.
-
->Isso pode ser feito indo até *https://localhost:4502/system/console/status-slingsettings* e verificando a linha **&quot;Modos de execução&quot;** .
 >
+>Isso pode ser feito indo até *https://localhost:4502/system/console/status-slingsettings* e verificando a linha **&quot;Modos de execução&quot;** .
 
 ## Primeira sincronização {#first-time-synchronization}
 
@@ -246,7 +252,7 @@ No **principal** *tarmk-coldstandby.log*, você verá entradas como estas:
 
 Nesse caso, o &quot;cliente&quot; mencionado no registro é a instância **standby** .
 
-Depois que essas entradas pararem de aparecer no log, você pode assumir com segurança que o processo de sincronização está concluído.
+Depois que essas entradas pararem de aparecer no log, você poderá assumir com segurança que o processo de sincronização está concluído.
 
 Embora as entradas acima mostrem que o mecanismo de pesquisa está funcionando corretamente, geralmente é útil entender se há dados sendo sincronizados enquanto a pesquisa está ocorrendo. Para fazer isso, procure entradas como as seguintes:
 
@@ -254,7 +260,7 @@ Embora as entradas acima mostrem que o mecanismo de pesquisa está funcionando c
 *DEBUG* [defaultEventExecutorGroup-156-1] org.apache.jackrabbit.oak.segment.file.TarWriter Writing segment 3a03fafc-d1f9-4a8f-a67a-d0849d5a36d5 to /<<CQROOTDIRECTORY>>/crx-quickstart/repository/segmentstore/data00014a.tar
 ```
 
-Além disso, ao executar com um arquivo não compartilhado `FileDataStore`, mensagens como as seguintes confirmarão que os arquivos binários estão sendo transmitidos corretamente:
+Além disso, ao executar com um arquivo não compartilhado, mensagens como `FileDataStore`a seguir confirmarão que os arquivos binários estão sendo transmitidos corretamente:
 
 ```xml
 *DEBUG* [nioEventLoopGroup-228-1] org.apache.jackrabbit.oak.segment.standby.codec.ReplyDecoder received blob with id eb26faeaca7f6f5b636f0ececc592f1fd97ea1a9#169102 and size 169102
@@ -264,31 +270,34 @@ Além disso, ao executar com um arquivo não compartilhado `FileDataStore`, mens
 
 As seguintes configurações OSGi estão disponíveis para o serviço de Modo de Espera Frio:
 
-* **** Configuração persistente: se ativada, a configuração será armazenada no repositório em vez dos arquivos de configuração OSGi tradicionais. É recomendável manter essa configuração desativada nos sistemas de produção para que a configuração primária não seja puxada pelo modo de espera.
+* **Configuração persistente:** se ativada, a configuração será armazenada no repositório em vez dos arquivos de configuração OSGi tradicionais. É recomendável manter essa configuração desativada nos sistemas de produção para que a configuração primária não seja puxada pelo modo de espera.
 
-* **`mode`Modo (**): isso escolherá o modo de execução da instância.
+* **Modo (`mode`):** isso escolherá o modo de execução da instância.
 
-* **** Porta (porta): a porta a ser usada para comunicação. O padrão é `8023`.
+* **Porta (porta):** a porta a ser usada para comunicação. O padrão é `8023`.
 
-* **`primary.host`Host primário (**): - o host da instância principal. Esta definição só é aplicável ao modo de espera.
-* **`interval`Intervalo de sincronização (**): - essa configuração determina o intervalo entre a solicitação de sincronização e é aplicável somente para a instância stand-by.
+* **Host primário (`primary.host`):** - o host da instância principal. Esta definição só é aplicável para o modo de espera.
+* **Intervalo de sincronização (`interval`):** - essa configuração determina o intervalo entre a solicitação de sincronização e é aplicável somente para a instância stand-by.
 
-* **`primary.allowed-client-ip-ranges`Intervalos de IP permitidos (**): - os intervalos IP dos quais o principal permitirá conexões.
-* **`secure`Seguro (**): Ative a criptografia SSL. Para usar essa configuração, ela deve estar ativada em todas as instâncias.
-* **`standby.readtimeout`Tempo limite de leitura em espera (**): Tempo limite para solicitações emitidas da instância stand-by em milissegundos. A configuração de tempo limite recomendada é 43200000. É recomendável definir o tempo limite para um valor de pelo menos 12 horas.
+* **Intervalos de IP permitidos (`primary.allowed-client-ip-ranges`):** - os intervalos IP dos quais o principal permitirá conexões.
+* **Seguro (`secure`):** Ative a criptografia SSL. Para usar essa configuração, ela deve estar ativada em todas as instâncias.
+* **Tempo limite de leitura em espera (`standby.readtimeout`):** Tempo limite para solicitações emitidas da instância stand-by em milissegundos. A configuração de tempo limite recomendada é 43200000. Geralmente, recomenda-se que você defina o tempo limite para um valor de pelo menos 12 horas.
 
-* **`standby.autoclean`Limpeza automática em espera (**): Chame o método de limpeza se o tamanho da loja aumentar em um ciclo de sincronização.
+* **Limpeza automática em espera (`standby.autoclean`):** Chame o método de limpeza se o tamanho da loja aumentar em um ciclo de sincronização.
 
 >[!NOTE]
-É altamente recomendável que o principal e o standby tenham IDs de repositório diferentes para torná-los separadamente identificáveis para serviços como Descarregamento.
-A melhor maneira de garantir que isso seja abordado é excluindo o arquivo *sling.id* no modo de espera e reiniciando a instância.
+>
+>É altamente recomendável que o principal e o standby tenham IDs de repositório diferentes para torná-los separadamente identificáveis para serviços como Descarregamento.
+>
+>A melhor maneira de garantir que isso seja abordado é excluindo o arquivo *sling.id* no modo de espera e reiniciando a instância.
 
 ## Procedimentos de failover {#failover-procedures}
 
-Se a instância primária falhar por qualquer motivo, você pode definir uma das instâncias stand-by para assumir a função do primário alterando o modo de execução de início, conforme detalhado abaixo:
+Se a instância primária falhar por qualquer motivo, você pode definir uma das instâncias stand-by para assumir a função do principal alterando o modo de execução do start, conforme detalhado abaixo:
 
 >[!NOTE]
-Os arquivos de configuração também precisam ser modificados para que correspondam às configurações usadas para a instância primária.
+>
+>Os arquivos de configuração também precisam ser modificados para que correspondam às configurações usadas para a instância primária.
 
 1. Vá para o local onde a instância standby está instalada e pare-a.
 
@@ -302,7 +311,7 @@ Os arquivos de configuração também precisam ser modificados para que correspo
    ```
 
 1. Adicione o novo primário ao balanceador de carga.
-1. Crie e inicie uma nova instância stand-by. Para obter mais informações, consulte o procedimento acima em [Criar uma configuração](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)AEM TarMK Cold Standby.
+1. Crie e start uma nova instância stand-by. Para obter mais informações, consulte o procedimento acima em [Criar uma configuração](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)AEM TarMK Cold Standby.
 
 ## Aplicação de hotfixes a uma configuração de espera fria {#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -310,18 +319,18 @@ A maneira recomendada de aplicar hotfixes a uma configuração de espera fria é
 
 Você pode fazer isso seguindo as etapas descritas abaixo:
 
-1. Pare o processo de sincronização na instância de standby frio indo para o console JMX e usando o **org.apache.Jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Para obter mais informações sobre como fazer isso, consulte a seção sobre [Monitoramento](#monitoring).
-1. Pare a instância de espera fria.
+1. Pare o processo de sincronização na instância do modo de espera frio indo para o console JMX e usando o **org.apache.Jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Para obter mais informações sobre como fazer isso, consulte a seção sobre [Monitoramento](#monitoring).
+1. Pare a instância do modo de espera frio.
 1. Instale o hotfix na instância principal. Para obter mais detalhes sobre como instalar uma correção, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 1. Teste a instância para problemas após a instalação.
 1. Remova a instância de espera fria excluindo sua pasta de instalação.
 1. Pare a instância principal e clone-a executando uma cópia do sistema de arquivos de toda a pasta de instalação para o local do modo de espera frio.
-1. Reconfigure o clone recém-criado para agir como uma instância de espera fria. Para obter detalhes adicionais, consulte [Criação de um AEM TarMK Cold Standby.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
-1. Inicie as instâncias principal e de espera fria.
+1. Reconfigure o clone recém-criado para agir como uma instância de espera fria. Para obter detalhes adicionais, consulte [Criação de uma configuração AEM TarMK Cold Standby.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. Start das instâncias principal e de espera fria.
 
 ## Monitoramento {#monitoring}
 
-O recurso expõe informações usando JMX ou MBeans. Fazendo isso, você pode inspecionar o estado atual do modo de espera e do master usando o console [](/help/sites-administering/jmx-console.md)JMX. As informações podem ser encontradas em um MBean `type org.apache.jackrabbit.oak:type="Standby"`nomeado `Status`.
+O recurso expõe informações usando JMX ou MBeans. Fazendo isso, você pode inspecionar o estado atual do modo de espera e o estado principal usando o console [](/help/sites-administering/jmx-console.md)JMX. As informações podem ser encontradas em um MBean `type org.apache.jackrabbit.oak:type="Standby"`nomeado `Status`.
 
 **Espera**
 
@@ -340,7 +349,7 @@ Este nó tem cinco atributos somente leitura:
 
 Há também três métodos chamáveis:
 
-* `start():` inicia o processo de sincronização.
+* `start():` start o processo de sincronização.
 * `stop():` interrompe o processo de sincronização.
 * `cleanup():` executa a operação de limpeza no modo de espera.
 
@@ -350,7 +359,7 @@ A observação do primário expõe algumas informações gerais por meio de um M
 
 * `Mode:` sempre mostrará o valor `primary`.
 
-Além disso, podem ser obtidas informações para até 10 clientes (instâncias em espera) ligados ao mestre. A ID MBean é o UUID da instância. Não há métodos chamáveis para esses MBeans, mas alguns atributos somente leitura muito úteis:
+Além disso, podem ser obtidas informações para até 10 clientes (instâncias em espera) ligados ao principal. A ID MBean é o UUID da instância. Não há métodos chamáveis para esses MBeans, mas alguns atributos somente leitura muito úteis:
 
 * `Name:` a ID do cliente.
 * `LastSeenTimestamp:` o carimbo de data e hora da última solicitação em uma representação textual.
@@ -365,19 +374,21 @@ Além disso, podem ser obtidas informações para até 10 clientes (instâncias 
 ### Limpeza de revisão {#revision-clean}
 
 >[!NOTE]
-Se você executar a Limpeza [de revisão](/help/sites-deploying/revision-cleanup.md) online na instância principal, o procedimento manual apresentado abaixo não é necessário. Além disso, se você estiver usando a Limpeza de revisão on-line, a operação na instância `cleanup ()` em espera será executada automaticamente.
+>
+>Se você executar a Limpeza [de revisão](/help/sites-deploying/revision-cleanup.md) online na instância principal, o procedimento manual apresentado abaixo não é necessário. Além disso, se você estiver usando a Limpeza de revisão on-line, a operação na instância `cleanup ()` em espera será executada automaticamente.
 
 >[!NOTE]
-Não execute limpeza de revisão offline no modo de espera. Não é necessário e não reduzirá o tamanho do armazenamento de segmentos.
+>
+>Não execute a limpeza de revisão offline no modo de espera. Não é necessário e não reduzirá o tamanho do armazenamento de segmentos.
 
 A Adobe recomenda executar a manutenção regularmente para evitar o crescimento excessivo do repositório ao longo do tempo. Para executar manualmente a manutenção do repositório em modo de espera frio, siga as etapas abaixo:
 
 1. Pare o processo de espera na instância stand-by indo para o Console JMX e usando o **org.apache.Jackrabbit.oak: Bean de status (&quot;Standby&quot;)** . Para obter mais informações sobre como fazer isso, consulte a seção acima sobre [Monitoramento](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
-1. Pare a instância principal do AEM.
+1. Pare a instância AEM principal.
 1. Execute a ferramenta de compactação de carvalho na instância principal. Para obter mais detalhes, consulte [Manutenção do repositório](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-1. Inicie a instância principal.
-1. Inicie o processo de espera na instância stand-by usando o mesmo bean JMX como descrito na primeira etapa.
+1. Start da instância principal.
+1. Start o processo de espera na instância stand-by usando o mesmo bean JMX como descrito na primeira etapa.
 1. Assista aos registros e aguarde a conclusão da sincronização. É possível que, neste momento, se verifique um crescimento substancial no repositório de espera.
 1. Execute a `cleanup()` operação na instância stand-by, usando o mesmo bean JMX como descrito na primeira etapa.
 
@@ -394,6 +405,8 @@ Como alternativa, o repositório principal pode ser copiado manualmente para o m
 
    * No principal, execute a coleta de lixo do armazenamento de dados por meio do bean JMX relevante, conforme descrito [neste artigo](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * No modo de espera, a coleta de lixo do armazenamento de dados está disponível somente por meio do MBean **BlobGarbageCollection** - `startBlobGC()`. O **RepositoryManagement **MBean não está disponível no modo de espera.
+
    >[!NOTE]
-   Se você não estiver usando um armazenamento de dados compartilhado, a coleta de lixo terá que ser executada primeiro no primário e depois no modo de espera.
+   >
+   >Se você não estiver usando um armazenamento de dados compartilhado, a coleta de lixo terá que ser executada primeiro no primário e depois no modo de espera.
 
