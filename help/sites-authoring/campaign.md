@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 6853306d217809e05dbef4968c75bfef9d048f1c
+source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
+workflow-type: tm+mt
+source-wordcount: '2780'
+ht-degree: 75%
 
 ---
 
@@ -36,7 +39,7 @@ Consulte também [Criação de formulários do Adobe Campaign no AEM](/help/site
 
 Depois de configurar o AEM e o Adobe Campaign, é possível criar conteúdo de email diretamente no AEM e processá-lo no Adobe Campaign.
 
-Ao criar conteúdo do Adobe Campaign no AEM, você deve vincular-se a um serviço do Adobe Campaign antes de editar o conteúdo para acessar toda a funcionalidade.
+Ao criar conteúdo Adobe Campaign no AEM, é necessário vincular a um serviço Adobe Campaign antes de editar o conteúdo para acessar toda a funcionalidade.
 
 Há dois casos possíveis:
 
@@ -65,8 +68,8 @@ As instruções detalhadas estão descritas neste documento.
 1. Selecione **Criar** e **Criar página**.
 1. Selecione um dos modelos disponíveis específico do Adobe Campaign ao qual você está se conectando e clique em **Próximo**. Há três modelos disponíveis por padrão:
 
-   * **Email** do Adobe Campaign Classic: permite adicionar conteúdo a um modelo predefinido (duas colunas) antes de enviá-lo para o Adobe Campaign Classic para entrega.
-   * **Email** do Adobe Campaign Standard: permite adicionar conteúdo a um modelo predefinido (duas colunas) antes de enviá-lo para o Adobe Campaign Standard para entrega.
+   * **Email** da Adobe Campaign Classic: permite que você adicione conteúdo a um modelo predefinido (duas colunas) antes de enviá-lo para a Adobe Campaign Classic para delivery.
+   * **Email** da Adobe Campaign Standard: permite que você adicione conteúdo a um modelo predefinido (duas colunas) antes de enviá-lo para a Adobe Campaign Standard para delivery.
 
 1. Fill in the **Title** and optionally the **Description** and click **Create**. O título é usado como o assunto do boletim informativo/email, a menos que você o substitua ao editar o email.
 
@@ -91,7 +94,7 @@ Na página **Sites**:
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. Selecione a configuração que corresponde à instância do Adobe Campaign na lista suspensa e confirme clicando em **Salvar**.
-1. Você pode ver o modelo que o e-mail lhe aplicou clicando na guia** Adobe Campaign**. Caso deseje selecionar outro modelo, é possível acessá-lo do email ao editar.
+1. É possível exibir o modelo aplicado ao email, clicando na guia **Adobe Campaign**. Caso deseje selecionar outro modelo, é possível acessá-lo do email ao editar.
 
    If you would like to apply a specific email delivery template (from Adobe Campaign), other than the default mail template, in **Properties**, select the **Adobe Campaign** tab. Digite o nome interno do modelo de entrega de email na instância relacionada do Adobe Campaign.
 
@@ -111,7 +114,7 @@ Na criação do boletim informativo/email, talvez não seja possível selecionar
    >
    >Como alternativa, é possível selecionar os serviços de nuvem em **Propriedades da exibição** na guia **Sites**.
 
-1. Selecione a configuração que corresponde à sua instância do Adobe Campaign na lista suspensa, exclua a primeira configuração criada que não foi criada para o Adobe Campaign e confirme clicando na marca de seleção.
+1. Selecione a configuração que corresponde à sua instância do Adobe Campaign na lista suspensa, exclua a primeira configuração que você criou que não foi para o Adobe Campaign e, em seguida, confirme clicando na marca de seleção.
 1. Continue com a etapa 4 do procedimento anterior para selecionar modelos e adicionar texto simples.
 
 ### Edição do conteúdo de email {#editing-email-content}
@@ -148,8 +151,8 @@ Para editar o conteúdo do email:
 
 Ao editar o conteúdo, é possível inserir:
 
-* Campos de contexto do Adobe Campaign. Esses são campos que você pode inserir no texto que serão adaptados de acordo com os dados do destinatário (por exemplo, nome, sobrenome ou quaisquer dados da dimensão de destino).
-* Blocos de personalização do Adobe Campaign. São blocos de conteúdo predefinido que não estão relacionados aos dados do destinatário, como um logotipo de marca, ou link para uma página espelhada.
+* Campos de contexto do Adobe Campaign. Esses são campos que você pode inserir no texto que serão adaptados de acordo com os dados do recipient (por exemplo, nome, sobrenome ou quaisquer dados da dimensão do público alvo).
+* Blocos de personalização do Adobe Campaign. Esses são blocos de conteúdo predefinido que não estão relacionados aos dados do recipient, como o logotipo de uma marca ou o link para um mirror page.
 
 Consulte [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) para obter uma descrição completa dos componentes de campanha.
 
@@ -157,6 +160,7 @@ Consulte [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-co
 >
 >* Somente os campos da dimensão de direcionamento de **Perfis** do Adobe Campaign são considerados.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. É possível acessá-los diretamente do email ao editar.
+
 >
 
 
@@ -177,6 +181,7 @@ Para inserir a personalização:
    >
    >* Os campos de contexto disponíveis correspondem à dimensão de direcionamento **Perfis** no Adobe Campaign.
    >* See [Linking an AEM page to an Adobe Campaign email](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+
    >
    >**Para o Adobe Campaign Classic:**
    >
@@ -259,11 +264,11 @@ Fazer isso permite entregar o conteúdo. Será possível saber se um boletim inf
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
-Se um boletim informativo estiver vinculado a várias entregas, o número de entregas vinculadas (mas nem todas as ID são exibidas).
+Se um boletim informativo estiver vinculado a vários delivery, o número de delivery vinculados (mas nem todas as ID são exibidas).
 
 Para vincular uma página criada no AEM com um email do Adobe Campaign:
 
-1. Crie um novo email baseado em um modelo de email específico do AEM. Refer to [Creating emails in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) for more information.
+1. Crie um novo email baseado em um modelo de email específico do AEM. Refer to [Creating emails in Adobe Campaign Standard](https://helpx.adobe.com/br/campaign/standard/channels/using/creating-an-email.html) for more information.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -286,6 +291,7 @@ Para vincular uma página criada no AEM com um email do Adobe Campaign:
    * O status de aprovação do conteúdo no AEM. Se o conteúdo não estiver aprovado, será possível sincronizá-lo, mas ele terá que ser aprovado para que a entrega seja realizada. No entanto, é possível executar algumas operações, como enviar uma comprovação ou o teste de visualização.
    * A data da última modificação de conteúdo.
    * Qualquer conteúdo já vinculado a uma entrega.
+
    >[!NOTE]
    Por padrão, o conteúdo que já está sincronizado com uma entrega está oculto. No entanto, é possível exibi-lo e usá-lo. Por exemplo, se quiser usar o conteúdo como um modelo para várias entregas.
 
@@ -315,9 +321,8 @@ No AEM, se um boletim informativo estiver vinculado a uma única entrega, o cód
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
-Se o boletim informativo estiver vinculado a várias entregas, o número de entregas vinculadas (mas nem todas as ID são exibidas).
-
->[!NOTE]
+Se o boletim informativo estiver vinculado a vários delivery, o número de delivery vinculados (mas nem todas as ID são exibidas).
+[!NOTE]
 A etapa do fluxo de trabalho **Publicar no Adobe Campaign** foi descontinuada no AEM 6.1. Essa etapa fazia parte da integração do AEM 6.0 com o Adobe Campaign e não é mais necessária.
 
 Para sincronizar o conteúdo criado no AEM com uma entrega do Adobe Campaign:
@@ -341,6 +346,7 @@ Para sincronizar o conteúdo criado no AEM com uma entrega do Adobe Campaign:
    * O status de aprovação do conteúdo no AEM. Se o conteúdo não estiver aprovado, será possível sincronizá-lo, mas ele terá que ser aprovado para que a entrega seja realizada. No entanto, é possível executar algumas operações, como enviar um BAT ou o teste de visualização.
    * A data da última modificação do conteúdo.
    * Qualquer conteúdo já vinculado a uma entrega.
+
    >[!NOTE]
    Por padrão, o conteúdo que já está sincronizado com uma entrega está oculto. No entanto, é possível exibi-lo e usá-lo. Por exemplo, se quiser usar o conteúdo como um modelo para várias entregas.
 
