@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
+source-git-commit: 8e663a3c11523796a2bad15e9c088e484f2b573b
 workflow-type: tm+mt
 source-wordcount: '2780'
 ht-degree: 75%
@@ -53,7 +53,6 @@ As instruções detalhadas estão descritas neste documento.
 >[!NOTE]
 >
 >When adding email templates, be sure to add them under **/content/campaigns** to make them available.
-
 
 #### Criar novo conteúdo email {#creating-new-email-content-1}
 
@@ -161,9 +160,6 @@ Consulte [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-co
 >* Somente os campos da dimensão de direcionamento de **Perfis** do Adobe Campaign são considerados.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. É possível acessá-los diretamente do email ao editar.
 
->
-
-
 
 Para inserir a personalização:
 
@@ -212,7 +208,7 @@ Para inserir a personalização:
 
 1. Para visualizar a personalização, abra o ContextHub, clicando/tocando no ícone correspondente na barra de ferramentas. As tags do campo de personalização foram substituídas pelos dados de distribuição do perfil selecionado. Veja como as variáveis se adaptam ao alternar perfis no ContextHub.
 
-   ![chlimage_1-29](assets/chlimage_1-29a.png)
+   ![chlimage_1-21](assets/chlimage_1-29a.png)
 
 1. É possível ver os dados de distribuição do Adobe Campaign que estão associados ao perfil atualmente selecionado. Para fazer isso, toque no módulo do Adobe Campaign na barra do ContextHub. Isso abre uma caixa de diálogo que exibe todos os dados de distribuição do perfil atual. Além disso, os dados ajustam-se ao alternar para um perfil diferente.
 
