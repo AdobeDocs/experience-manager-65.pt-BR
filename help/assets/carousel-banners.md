@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
-source-wordcount: '4803'
+source-wordcount: '4802'
 ht-degree: 4%
 
 ---
@@ -186,7 +186,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** dam.
+>Usuários não administrativos devem ser adicionados ao grupo de usuários **[!UICONTROL do]** DAM para que possam criar ou editar banners do carrossel. Se tiver problemas para criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo de usuários **[!UICONTROL do]** DAM.
 
 **Para criar um conjunto de carrossel**
 
@@ -255,8 +255,7 @@ Consulte [(Opcional) Visualização de banners de carrossel.](#optional-previewi
 >[!NOTE]
 >
 >Quando você adiciona pontos de acesso a uma imagem em uma Imagem [](/help/assets/interactive-images.md) interativa ou em um banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados, em relação ao local da imagem e ao mdashtag, independentemente de ser uma Imagem interativa ou um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem, juntamente com seus dados de ponto de conexão definidos, em qualquer um dos visualizadores.
-
->Esteja ciente, no entanto, de que os Carousel Banners oferecem suporte para mapas de imagem em imagens que também podem conter pontos de conexão; uma imagem interativa não. Lembre-se disso se você pretende criar uma imagem interativa ou um banner de carrossel que use a mesma imagem. Você pode criar Imagens interativas e Banners de carrossel usando cópias separadas da mesma imagem.
+Esteja ciente, no entanto, de que os Carousel Banners oferecem suporte para mapas de imagem em imagens que também podem conter pontos de conexão; uma imagem interativa não. Lembre-se disso se você pretende criar uma imagem interativa ou um banner de carrossel que use a mesma imagem. Você pode criar Imagens interativas e Banners de carrossel usando cópias separadas da mesma imagem.
 
 >[!NOTE]
 Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, seus pontos de acesso serão removidos.
