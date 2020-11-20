@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 86%
 
 ---
 
 
 # Criação - o Ambiente e as ferramentas {#authoring-the-environment-and-tools}
 
-O ambiente de criação do AEM fornece vários mecanismos para organizar e editar seu conteúdo. As ferramentas fornecidas são acessadas de vários consoles e editores de página.
+O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo. As ferramentas fornecidas são acessadas de vários consoles e editores de página.
 
 ## Administração de site {#site-administration}
 
@@ -100,9 +103,9 @@ Esta guia lista os produtos. Depois que você criar um parágrafo apropriado (po
 
 ### Encontrar páginas {#finding-pages}
 
-Esta guia mostra todas as páginas. Clique duas vezes em qualquer página para abri-la para edição.
+Esta guia mostra todas as páginas. Clique em qualquer página para abri-la para edição.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 ### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
 
@@ -145,7 +148,7 @@ os seguintes padrões de pesquisa vão encontrá-la (e qualquer outra imagem cor
 a correspondência de caracteres *não* diferencia maiúsculas e minúsculas.
 
 * `name:ad?nm??is.*`
-você pode usar qualquer número de curingas em uma consulta.
+você pode usar qualquer número de curingas em um query.
 
 >[!NOTE]
 >
@@ -161,7 +164,7 @@ Para mostrar referências de página diretas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Selecione** Mostrar referências... O AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
+1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +187,7 @@ O **Log de auditoria** pode ser acessado na guia **Informações** do sidekick. 
 
 The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
 
-## Modos de página {#page-modes}
+## Modos de página   {#page-modes}
 
 Durante a edição de uma página com a interface de usuário clássica, há vários modos que podem ser acessados com o uso de ícones na parte inferior do sidekick:
 
@@ -201,12 +204,11 @@ Os ícones na parte inferior do Sidekick são usados para alternar os modos de t
 >[!NOTE]
 >
 >Também há outras opções disponíveis:
-
+>
 >* [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
-* Websites - abrirá o console Websites.
-* Recarregar - atualizará a página.
-
+>* Websites - abrirá o console Websites.
+>* Recarregar - atualizará a página.
 
 
 ## Atalhos de teclado {#keyboard-shortcuts}
