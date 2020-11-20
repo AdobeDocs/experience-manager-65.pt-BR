@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '2854'
+ht-degree: 81%
 
 ---
 
@@ -22,9 +25,9 @@ Ao fazer a integração com o Adobe Campaign, você tem componentes disponíveis
 
 >[!CAUTION]
 >
->Os componentes de email do AEM foram descontinuados. Devido à natureza do e-mail, que une o conteúdo e o estilo, os componentes de e-mail fornecidos prontamente pelo AEM tornam-se de reutilização limitada para clientes devido à necessidade de implementar estilos personalizados em quaisquer componentes necessários para projetos.
+>Os componentes de e-mail AEM foram descontinuados. Devido à natureza do e-mail, que une o conteúdo e o estilo, os componentes de e-mail fornecidos prontos para uso AEM tornam-se de reutilização limitada para clientes devido à necessidade de implementar estilos personalizados em quaisquer componentes necessários para projetos.
 >
->Os componentes de email podem ser implementados no nível do projeto, e os componentes de email obsoletos do AEM ilustram como isso pode ser feito. No entanto, esses componentes obsoletos não devem ser usados em projetos.
+>Os componentes de email podem ser implementados no nível do projeto, e os componentes de email AEM obsoletos ilustram como isso pode ser feito. No entanto, esses componentes obsoletos não devem ser usados em projetos.
 
 ## Componentes de informativos do Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -88,9 +91,9 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 >[!NOTE]
 >
 >O editor local usa o tamanho e a proporção original da imagem durante a edição. Você também pode especificar as propriedades de altura e largura. Qualquer restrição de tamanho e aspecto definida nas propriedades será aplicada ao salvar as alterações de edição.
-
->Dependendo do seu caso, restrições mínimas e máximas também podem ser impostas pelo [design da página ](/help/sites-developing/designer.md); estas são desenvolvidas durante a implementação do projeto.
 >
+>Dependendo do seu caso, restrições mínimas e máximas também podem ser impostas pelo [design da página ](/help/sites-developing/designer.md); estas são desenvolvidas durante a implementação do projeto.
+
 Várias opções adicionais estão disponíveis no modo de edição de tela cheia; por exemplo, mapa e zoom:
 
 ![](do-not-localize/chlimage_1-11.png)
@@ -120,8 +123,10 @@ Para girar uma imagem, clique em Girar. Clique repetidamente até que a imagem s
 * **Tamanho** Define a altura e a largura da imagem.
 
 >[!NOTE]
-Você deve inserir informações no campo **Alternar texto** da guia **Avançado**, ou a imagem não poderá ser salva, e a seguinte mensagem de erro será exibida:
-`Validation failed. Verify the values of the marked fields.`
+>
+>Você deve inserir informações no campo **Alternar texto** da guia **Avançado**, ou a imagem não poderá ser salva, e a seguinte mensagem de erro será exibida:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 O exemplo a seguir mostra um componente Imagem (Campaign) sendo exibido.
@@ -138,13 +143,16 @@ O componente Link (Campaign) permite adicionar um link ao seu informativo.
 
 * **Dica de ferramenta do link** Adiciona mais informações sobre como usar o link.
 
-* **Tipo de link** Na lista suspensa, selecione entre um **URL personalizado** e um **Documento adaptável**. Este campo é obrigatório. Se você selecionar um URL personalizado, será possível fornecer o URL do link. Se você selecionar Documento adaptável, é possível fornecer o caminho do documento.
+* **LinkType** Na lista suspensa, selecione entre uma 
+**URL** personalizado e um Documento **** adaptável. Este campo é obrigatório. Se você selecionar um URL personalizado, será possível fornecer o URL do link. Se você selecionar Documento adaptável, é possível fornecer o caminho do documento.
 
 * **Parâmetro de URL adicional** Adicione qualquer parâmetro de URL adicional. Clique em Adicionar item para adicionar vários itens.
 
 >[!NOTE]
-You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
-`Validation failed. Verify the values of the marked fields.`
+>
+>You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 O exemplo a seguir mostra um componente Link (Campaign) sendo exibido.
@@ -153,7 +161,7 @@ O exemplo a seguir mostra um componente Link (Campaign) sendo exibido.
 
 ### Modelo de imagem do Scene7 (Campaign) {#scene-image-template-campaign}
 
-[Modelos](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) de imagem Scene7 são em camadas arquivos de imagem em camadas, onde o conteúdo e as propriedades podem ser parametrizados para a variabilidade. O componente **Modelo de imagem** permite usar modelos do Scene7 em informativos e alterar os valores dos parâmetros de modelo. Além disso, você pode usar variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
+[Os Modelos](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) de imagem Scene7 são em camadas de arquivos de imagem, onde o conteúdo e as propriedades podem ser parametrizados para a variabilidade. O componente **Modelo de imagem** permite usar modelos do Scene7 em informativos e alterar os valores dos parâmetros de modelo. Além disso, você pode usar variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -211,8 +219,10 @@ Permite que você especifique o seguinte:
    * **Tamanho** Define a altura e a largura da imagem.
 
 >[!NOTE]
-O campo **Alternar texto** na guia **Avançado** é necessário, ou o componente não poderá ser salvo, e você verá a seguinte mensagem de erro:
-`Validation failed. Verify the values of the marked fields.`
+>
+>O campo **Alternar texto** na guia **Avançado** é necessário, ou o componente não poderá ser salvo, e você verá a seguinte mensagem de erro:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 O exemplo a seguir mostra um componente Texto e imagem (Campaign) sendo exibido.
@@ -230,15 +240,19 @@ A seleção de ícones permite que você formate o texto, incluindo característ
 No editor local, você pode adicionar texto, alterar a justificação, adicionar e remover links, adicionar campos de contexto ou blocos de personalização e entrar no modo de tela inteira. Quando terminar de adicionar texto/personalização, clique na marca de seleção para salvar suas alterações (ou clique no X para cancelar). See [Inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) for more information.
 
 >[!NOTE]
-* Os campos de personalização disponíveis dependem do modelo do Adobe Campaign ao qual o seu informativo está vinculado.
-* Após a seleção de uma persona no ContextHub, os campos de personalização são automaticamente substituídos pelos dados do perfil selecionado.
+>
+>* Os campos de personalização disponíveis dependem do modelo do Adobe Campaign ao qual o seu informativo está vinculado.
+>* Após a seleção de uma persona no ContextHub, os campos de personalização são automaticamente substituídos pelos dados do perfil selecionado.
 
+>
+>
 Consulte [Inserir personalização](/help/sites-authoring/campaign.md#inserting-personalization).
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
-Apenas os campos definidos no esquema **nms:seedMember** ou em uma de suas extensões são levados em consideração. Os atributos das tabelas vinculadas a **nms:seedMember** não estão disponíveis.
+>
+>Apenas os campos definidos no esquema **nms:seedMember** ou em uma de suas extensões são levados em consideração. Os atributos das tabelas vinculadas a **nms:seedMember** não estão disponíveis.
 
 ## Componentes de formulário do Adobe Campaign {#adobe-campaign-form-components}
 
@@ -278,7 +292,7 @@ A tabela a seguir descreve os componentes disponíveis para exibir e modificar d
   <tr>
    <td><p>Caixa de seleção (Campaign)</p> </td>
    <td><p>boolean</p> </td>
-   <td><p>Não há mais contato (por qualquer canal)</p> </td>
+   <td><p>Não há mais contato (por nenhum canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de dados (Campanha)</p> <p>Campo de data/HTML 5 (Campanha)</p> </td>
@@ -439,7 +453,8 @@ Use o componente **Lista de verificação de assinaturas (Campaign)** para modif
 Quando adicionado a um formulário, esse componente exibe todas as assinaturas disponíveis como caixas de seleção e permite que o usuário selecione as assinaturas desejadas. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
 
 >[!NOTE]
-O componente não verifica quais serviços já foram assinados/cancelados pelo usuário.
+>
+>O componente não verifica quais serviços já foram assinados/cancelados pelo usuário.
 
 É possível [definir configurações comuns à maioria dos componentes do Adobe Campaign](#settings-common-to-most-components) no componente Lista de verificação de assinaturas (Campaign). (Não há configurações do Adobe Campaign disponíveis para esse componente.)
 
