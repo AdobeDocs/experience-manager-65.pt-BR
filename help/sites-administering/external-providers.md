@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 4%
 
 ---
 
@@ -20,14 +23,14 @@ source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
 
 O Analytics pode fornecer informações importantes e interessantes sobre como seu site está sendo usado.
 
-Várias configurações predefinidas estão disponíveis para integração com o serviço apropriado, por exemplo:
+Várias configurações prontas para uso estão disponíveis para integração com o serviço apropriado, por exemplo:
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
 Você também pode configurar sua própria instância dos Trechos **do Analytics** Genérico para definir novas configurações de serviço.
 
-As informações são então coletadas por meio de pequenos trechos de código adicionados às páginas da Web. Por exemplo:
+As informações são então coletadas por meio de pequenos trechos de código que são adicionados às páginas da Web. Por exemplo:
 
 >[!CAUTION]
 >
@@ -50,27 +53,27 @@ Esses trechos permitem coletar dados e gerar relatórios. Os dados reais coletad
 * quantos visitantes ao longo do tempo
 * quantas páginas visitaram
 * termos de pesquisa usados
-* páginas de aterrissagem
+* landings page
 
 >[!CAUTION]
 >
->O site de demonstração Geometrixx-Outdoors está configurado de forma que os atributos fornecidos nas Propriedades da página sejam anexados ao código-fonte html (logo acima da `</html>` tag de extremidade) no `js` script correspondente.
-
+>O site de demonstração do Geometrixx-Outdoors está configurado de forma que os atributos fornecidos nas Propriedades da página sejam anexados ao código fonte html (logo acima da `</html>` tag de extremidade) no `js` script correspondente.
+>
 >Se `/apps` não herdar do componente de página padrão ( `/libs/foundation/components/page`), você (ou seus desenvolvedores) precisará verificar se os `js` scripts correspondentes foram incluídos, por exemplo, incluindo `cq/cloudserviceconfigs/components/servicescomponents`, ou usando um mecanismo semelhante.
 >
->Sem isso, nenhum dos serviços (Genérico, Analytics, Target etc.) funcionará.
+>Sem isso, nenhum dos serviços (Genérico, Analytics, Público alvo etc.) funcionará.
 
 ## Criação de um novo serviço com um trecho genérico {#creating-a-new-service-with-a-generic-snippet}
 
 Para a configuração básica:
 
 1. Open the **Tools** console.
-1. No painel esquerdo, expanda Configurações **de serviços em** nuvem.
-1. Clique duas vezes no trecho **do** Genérico Analytics para abrir a página:
+1. No painel esquerdo, expanda Configurações de **Cloud Services**.
+1. Clique com o duplo no trecho **** Genérico do Analytics para abrir a página:
 
    ![](assets/analytics_genericoverview.png)
 
-1. Clique em + para adicionar uma nova configuração usando a caixa de diálogo; no mínimo, atribua um nome, por exemplo, análises google:
+1. Clique em + para adicionar uma nova configuração usando a caixa de diálogo; no mínimo, atribua um nome, por exemplo, análises do google:
 
    ![](assets/analytics_addconfig.png)
 
@@ -85,21 +88,22 @@ Para a configuração básica:
 Depois de criar a configuração de serviço, agora é necessário configurar as páginas necessárias para usá-la:
 
 1. Navegue até a página.
-1. Abra as Propriedades **da** página no sidekick e, em seguida, na guia Serviços **em** nuvem.
+1. Abra as Propriedades **da** página no sidekick e, em seguida, na guia **Cloud Services** .
 1. Clique em **Adicionar serviço** e selecione o serviço necessário; por exemplo, o trecho **Genérico do Analytics**:
 
    ![](assets/analytics_selectservice.png)
 
 1. Clique em **OK** para salvar.
-1. Você será redirecionado para a guia Serviços **em** nuvem. O trecho **do Analytics** genérico agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica; por exemplo google-analytics:
+1. Você será redirecionado para a guia **Cloud Services** . O trecho **do Analytics** genérico agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica; por exemplo google-analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 
 1. Clique em **OK** para salvar.
 
-   O snippet agora pode ser visto se você exibir a Origem da página para a página.
+   O snippet agora pode ser visto se você visualização a Origem da página para a página.
 
-   Após um período de tempo adequado, você poderá visualizar as estatísticas que foram coletadas.
+   Decorrido um período de tempo adequado, poderá visualização das estatísticas recolhidas.
 
    >[!NOTE]
-   Se a configuração estiver anexada a uma página que tem páginas secundárias, o serviço também será herdado por elas.
+   >
+   >Se a configuração estiver anexada a uma página que tem páginas secundárias, o serviço também será herdado por elas.
