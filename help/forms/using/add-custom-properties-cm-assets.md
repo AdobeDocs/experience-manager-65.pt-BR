@@ -105,6 +105,7 @@ Complete as etapas a seguir para adicionar uma propriedade personalizada a todos
 
    >[!NOTE]
    >
+
    >As propriedades comuns de todos os ativos adicionados são exibidas na guia básica das propriedades do ativo. Por padrão, as propriedades comuns adicionadas para todos os ativos aparecem na página de propriedades, bem como na página de criação de ativos. Para ocultar as propriedades comuns, é necessário <!--link to show / hide properties]-->.
 
 ### Cenário: Adicionar valores e menu suspenso personalizados a uma propriedade/campo personalizado {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
