@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '6169'
+ht-degree: 83%
 
 ---
 
@@ -151,7 +154,8 @@ Estão disponíveis em duas guias:
          * **Página principal** Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usar a página atual como principal.
       * **Opções para a lista fixa**
 
-         * **Páginas** Selecione uma lista de páginas. Use `+` para adicionar mais entradas e os botões para cima/para baixo para ajustar a ordem.
+         * **Páginas** Selecione uma lista de páginas. Use 
+`+` para adicionar mais entradas e os botões Para cima/Para baixo para ajustar a ordem.
       * **Opções de pesquisa**
 
          * **Começa em** Especifique um caminho manualmente ou usando o seletor.
@@ -160,7 +164,8 @@ Estão disponíveis em duas guias:
       * **Opções de pesquisa avançada**
 
          * **Notação do predicativo do Querybuilder** Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com “Marketing” em seu conteúdo exibidas no carrossel. Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
-   * **Ordenar por** Selecione `jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` no menu suspenso.
+   * **Ordenar por** seleção 
+`jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` do menu suspenso.
 
    * **Limite** O número máximo de itens que você gostaria de usar no carrossel; esse item é opcional.
 
@@ -196,7 +201,7 @@ O exemplo a seguir mostra um gráfico de dados seguido pelo gráfico de barras r
 >[!NOTE]
 Você pode criar um controle gráfico AEM personalizado que exibe os dados localizados no JCR AEM. Para obter informações, consulte [Exibição dos dados do Adobe Experience Manager em um gráfico](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
 
-### Fragmento do conteúdo {#content-fragment}
+### Fragmento de conteúdo {#content-fragment}
 
 >[!CAUTION]
 A funcionalidade completa do Gerenciamento de fragmento do conteúdo só está disponível com a Interface do usuário otimizada para toque.
@@ -305,8 +310,7 @@ Você pode arrastar e soltar uma imagem do [Localizador de conteúdo](/help/site
 >[!NOTE]
 O progresso do upload não pode ser monitorado com o Internet Explorer.
 Os usuários do Internet Explorer precisam fazer upload da imagem e clique em **Ok** e abra novamente a imagem para ver o arquivo carregado na visualização e para poder realizar as modificações (isto é, cortar).
-
->See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
 Quando uma imagem é carregada, você pode configurar o seguinte:
 
@@ -388,12 +392,12 @@ Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usa
 
          * **Pesquisar consulta**
 
-            Você pode inserir uma consulta de pesquisa de texto simples.
+            Você pode inserir um query de pesquisa de texto simples.
       * **Opções de pesquisa avançada**
 
          * **Notação do predicativo do Querybuilder**
 
-            Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
+            Você pode inserir um query de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com &quot;Marketing&quot; em seu conteúdo exibidas no carrossel.
 
             Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
       * **Tags**
@@ -426,7 +430,7 @@ Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usa
 
 O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá exibir uma lista de páginas filhas (o design é controlado pelas definições CSS personalizadas do site).
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_lista_use](assets/dc_list_use.png)
 
 ### Logon {#login}
 
@@ -518,7 +522,7 @@ O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
 É possível configurar:
 
-* Pesquisar
+* Pesquisar  
 
    * **Tipos de nós**
 
@@ -706,7 +710,7 @@ O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você ta
 
    * **Vincular para**
 
-      Especifique um caminho de destino.
+      Especifique um caminho de público alvo.
 
    * **Descrição**
 
@@ -745,7 +749,7 @@ O exemplo a seguir mostra um componente de **Título** sendo exibido; o design �
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### O vídeo {#video}
+### Vídeo {#video}
 
 O componente de **Vídeo** permite que você coloque um elemento “out-of-the-box” de vídeo predefinido em uma página.
 
@@ -767,7 +771,7 @@ Depois de adicionar uma instância de componente em sua página, você pode conf
 Os formatos suportados incluem:
 * `.mp4`
 * `Ogg`
-* `FLV` (Vídeo em Flash)
+* `FLV` (vídeo do Flash)
 
 
 
@@ -816,7 +820,7 @@ Os formulários são criados de vários componentes diferentes:
 
 * **Componentes de perfil**
 
-   Os componentes de perfil estão relacionados aos perfis de visitantes usados para a colaboração social e outras áreas onde a personalização do visitante é necessária.
+   Os componentes do perfil se relacionam aos perfis do visitante usados para a colaboração social e outras áreas onde a personalização do visitante é necessária.
 
 A seguir, há um formulário de exemplo que contém o componente do **Formulário** (início e fim) com dois campos de **texto de** **formulário** usados para inserir, um campo de **texto** **geral** usado para o texto principal e um botão **Enviar.**
 
@@ -884,7 +888,7 @@ Este é um campo obrigatório e deve conter apenas os seguintes caracteres:
 
    * **Obrigatório**
 
-      Isso depende do tipo de componente de formulário, mas fornece uma ou mais caixas de clique para indicar que esse campo, ou determinadas partes dele, é/são necessários.
+      Isso depende do tipo de componente de formulário, mas fornece uma ou mais caixas de clique para indicar que esse campo, ou determinadas partes desse campo, é/são necessários.
 
    * **Mensagem obrigatória**
 
