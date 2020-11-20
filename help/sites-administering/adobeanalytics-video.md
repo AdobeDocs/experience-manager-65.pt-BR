@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 1%
@@ -25,9 +25,9 @@ Há vários métodos disponíveis para rastrear eventos de vídeo, sendo 2 opç�
 
 >[!NOTE]
 >
->Antes de continuar, verifique se*** **você tem um** vídeo reproduzível** carregado no AEM.
-
->Para garantir que seus vídeos sejam reproduzidos na página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)**para obter informações sobre como transcodificar arquivos de vídeo no AEM.
+>Antes de continuar, verifique se o vídeo **** reproduzível foi carregado no AEM.
+>
+>Para garantir que seus vídeos sejam reproduzidos na página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)** para obter informações sobre como transcodificar arquivos de vídeo no AEM.
 
 Use o procedimento a seguir para configurar uma estrutura para rastreamento de vídeo usando cada método.
 
@@ -39,7 +39,7 @@ Use o procedimento a seguir para configurar uma estrutura para rastreamento de v
 
 1. Configure uma página da Web arrastando um componente **de** vídeo do sidekick e adicionando um **vídeo reproduzível como um ativo** para o componente
 
-1. [Crie uma configuração e uma estrutura](/help/sites-administering/adobeanalytics.md)do Adobe Analytics.
+1. [Crie uma configuração e uma estrutura](/help/sites-administering/adobeanalytics.md)Adobe Analytics.
 
    * Os exemplos nas seções a seguir usam o nome **my-sc-configuration** para a configuração e o **videofw** da estrutura.
 
@@ -58,7 +58,7 @@ Use o procedimento a seguir para configurar uma estrutura para rastreamento de v
 
 O método Marcos rastreia a maioria das informações sobre o vídeo, é altamente personalizável e fácil de configurar.
 
-Para usar o método Marcos, especifique os deslocamentos de rastreamento baseados em tempo para definir os marcos. Quando uma reprodução de vídeo ultrapassar um marco, a página chamará o Adobe Analytics para rastrear o evento. Para cada marco definido, o componente cria uma variável CQ que pode ser mapeada para uma propriedade do Adobe Analytics. O nome dessas variáveis CQ usa o seguinte formato:
+Para usar o método Marcos, especifique os deslocamentos de rastreamento baseados em tempo para definir os marcos. Quando uma reprodução de vídeo ultrapassar um marco, a página chamará a Adobe Analytics para rastrear o evento. Para cada marco definido, o componente cria uma variável CQ que pode ser mapeada para uma propriedade do Adobe Analytics. O nome dessas variáveis CQ usa o seguinte formato:
 
 ```shell
 eventdata.events.milestoneXX
@@ -152,7 +152,7 @@ Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao r
  <tbody>
   <tr>
    <th>Variável CQ</th>
-   <th>Propriedade da Adobe Analytics</th>
+   <th>Propriedade Adobe Analytics</th>
   </tr>
   <tr>
    <td>eventdata.videoName </td>
@@ -208,7 +208,7 @@ Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao r
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
-   <td>eVar1, prop1 </td>
+   <td>eVar 1, prop1 </td>
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
@@ -223,7 +223,7 @@ Neste exemplo, o componente Vídeo é exibido da seguinte forma na página de es
 
 >[!NOTE]
 >
->Para ver as chamadas feitas para o Adobe Analytics, use uma ferramenta apropriada, como o Depurador DigitalPulse ou o Fiddler.
+>Para ver as chamadas feitas para a Adobe Analytics, use uma ferramenta apropriada, como o Depurador DigitalPulse ou o Fiddler.
 
 As chamadas para a Adobe Analytics usando o exemplo fornecido devem ser semelhantes quando visualizadas com o DigitalPulse Debugger:
 
@@ -232,12 +232,12 @@ As chamadas para a Adobe Analytics usando o exemplo fornecido devem ser semelhan
 *Esta é a **primeira chamada**feita para a Adobe Analytics que contém os seguintes valores:*
 
 * *prop1 e eVar1 para eventdata.a.media.name,*
-* *props2-4, junto com eVar2 e eVar3 contendo contentType (vídeo) e segmento (1:O:1-4)*
+* *props2-4, juntamente com o eVar 2 e o eVar 3 contendo contentType (vídeo) e segmento (1:O:1-4)*
 * *evento3 que foi mapeado para eventdata.eventos.a.media.visualização.*
 
-![chlimage_1-127](assets/chlimage_1-129.png)
+![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Esta é a **terceira chamada**feita para a Adobe Analytics:*
+*Esta é a **terceira chamada**feita à Adobe Analytics:*
 
 * *prop1 e eVar1 contêm a.media.name;*
 * *evento 1 porque um segmento foi visualizado*
@@ -249,7 +249,7 @@ As chamadas para a Adobe Analytics usando o exemplo fornecido devem ser semelhan
 
 O método Marcos não herdados é semelhante ao método Marcos, exceto que os marcos são definidos usando porcentagens da duração da faixa. Os pontos comuns são os seguintes:
 
-* Quando uma reprodução de vídeo ultrapassar um marco, a página chamará o Adobe Analytics para rastrear o evento.
+* Quando uma reprodução de vídeo ultrapassar um marco, a página chamará a Adobe Analytics para rastrear o evento.
 * O conjunto [estático de variáveis](#cqvars) CQ definidas para mapeamento com propriedades do Adobe Analytics.
 * Para cada marco definido, o componente cria uma variável CQ que pode ser mapeada para uma propriedade do Adobe Analytics.
 
@@ -293,7 +293,7 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
 
    * e.g.10,50,75,100
 
-   Além disso, as informações enviadas para a Adobe Analytics são menos personalizáveis; há apenas 3 variáveis disponíveis para mapeamento:
+   Além disso, as informações enviadas à Adobe Analytics são menos personalizáveis; há apenas 3 variáveis disponíveis para mapeamento:
 
 <table>
  <tbody>
@@ -320,7 +320,7 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
 
    O **restante das informações** relevantes na chamada serão enviadas concatenadas para **uma** variável chamada **pev3**.
 
-   **As chamadas** de amostra para o Adobe Analytics usando o exemplo fornecido devem ser semelhantes quando visualizadas com o Depurador DigitalPulse:
+   **As chamadas** de amostra para a Adobe Analytics usando o exemplo fornecido devem ser semelhantes quando visualizadas com o Depurador DigitalPulse:
 
    ![lmilestones1](assets/lmilestones1.png)
 
@@ -334,13 +334,13 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
 
    * *Total de segundos reproduzidos* - o número total de segundos em que o vídeo foi reproduzido (*25*)
 
-   * *Carimbo de data e hora* do Start - Carimbo de data e hora que identifica quando a reprodução do vídeo começou (*1331035567*)
+   * *Carimbo de data e hora* do start - Carimbo de data e hora que identifica quando a reprodução do vídeo começou (*1331035567*)
 
    * *Sessão* Play - Os detalhes da sessão Play. Este campo indica como o usuário interagiu com o vídeo. Isso pode incluir dados como o local em que começaram a reproduzir o vídeo, se eles usaram o controle deslizante para avançar o vídeo e onde pararam de reproduzir o vídeo (*L10E24S58L58 - o vídeo foi interrompido em segundos. 25 da seção L10, depois pulado para s. 48*)
 
 ## Segundos herdados {#legacy-seconds}
 
-Ao usar o método** de segundos herdados**, as chamadas do Adobe Analytics são acionadas a cada N-ésimo segundo, onde N é especificado no campo de deslocamento Track.
+Ao usar o método** de segundos herdados**, as chamadas da Adobe Analytics são acionadas a cada N-ésimo segundo, onde N é especificado no campo de deslocamento Track.
 
 1. Defina o deslocamento da faixa para qualquer número de segundos,
 
@@ -349,7 +349,7 @@ Ao usar o método** de segundos herdados**, as chamadas do Adobe Analytics são 
    >
    >O campo de deslocamento de rastreamento aceita apenas números inteiros que sejam superiores a 0
 
-   As informações enviadas para a Adobe Analytics são menos personalizáveis. Há apenas 3 variáveis disponíveis para mapeamento:
+   As informações enviadas à Adobe Analytics são menos personalizáveis. Há apenas 3 variáveis disponíveis para mapeamento:
 
 <table>
  <tbody>
