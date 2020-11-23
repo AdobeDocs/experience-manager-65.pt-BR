@@ -1,5 +1,5 @@
 ---
-ttitle: Administering generic eCommerce
+title: Administração de eCommerce genérico
 seo-title: Administração de eCommerce genérico
 description: A solução genérica AEM fornece métodos de gerenciamento das informações comerciais armazenadas no repositório.
 seo-description: A solução genérica AEM fornece métodos de gerenciamento das informações comerciais armazenadas no repositório.
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 06d6696a5493f0e166e400bcd9a379b7be062c1e
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3011'
 ht-degree: 4%
 
 ---
@@ -99,14 +99,14 @@ Antes de criar produtos, é necessário definir um [suporte](/help/sites-authori
 
    >[!NOTE]
    >
-   >O uso repetido de **Avançar** e **Voltar** importará repetidamente as definições do produto. No entanto, como eles têm os mesmos SKUs, as informações existentes no repositório serão simplesmente substituídas.
+   >O uso repetido de **Próximo** e **Voltar** importará repetidamente as definições do produto. No entanto, como eles têm os mesmos SKUs, as informações existentes no repositório serão simplesmente substituídas.
 
 1. Selecione **Concluído** para fechar o assistente.
 
 #### Importar produtos - IU clássica {#importing-products-classic-ui}
 
 1. Usando o console **Ferramentas** , abra a pasta **Comércio** .
-1. Clique no Duplo para abrir o Importador **** do produto:
+1. Clique no duplo para abrir o Importador **** do produto:
 
    ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -356,7 +356,7 @@ A integração de Search &amp; Promote permite:
 
 Para obter mais informações, leia Feed [do](/help/sites-administering/product-feed.md)produto.
 
-### Manipulador de Eventos para atualizações de produtos {#event-handler-for-product-updates}
+### Manipulador de eventos para atualizações de produtos {#event-handler-for-product-updates}
 
 Há um Manipulador de Eventos que registra um evento quando um produto é adicionado, modificado ou excluído e quando uma página de produto é adicionada, modificada ou excluída. Há os seguintes eventos OSGi:
 
@@ -401,7 +401,7 @@ Clicar no ponto de acesso abre uma caixa de diálogo que permite escolher o tama
 
 1. Clique em um dos ícones de forma.
 
-   ![chlimage_1-21](do-not-localize/chlimage_1-21.png)
+   ![chlimage_1-29](do-not-localize/chlimage_1-21.png)
 
 1. Modifique e mova a forma conforme necessário.
 1. Clique na forma.
