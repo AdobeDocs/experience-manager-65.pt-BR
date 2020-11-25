@@ -4,9 +4,9 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -32,9 +32,9 @@ Agora é possível executar as movimentações de página e as implantações de
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Os usuários podem classificar ativos digitais em visualizações de cartão e coluna.
+* [!DNL Assets] e [!DNL Dynamic Media] fornecer vários aprimoramentos de acessibilidade. Os aprimoramentos estão relacionados à navegação do teclado, ao uso de leitores de tela, a melhorias semelhantes para permitir o uso de tecnologias de assistência (AT). Consulte [[!DNL Assets] aprimoramentos](/help/release-notes/sp-release-notes.md#assets-6570) e [[!DNL Dynamic Media] aprimoramentos](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
 
-* [!DNL Assets] e [!DNL Dynamic Media] fornecer vários aprimoramentos de acessibilidade. Os aprimoramentos estão relacionados à navegação do teclado, ao uso de leitores de tela, a melhorias semelhantes para permitir o uso de tecnologias de assistência (AT). Consulte Aprimoramentos [e](/help/release-notes/sp-release-notes.md#assets-6570) aprimoramentos [[!DNL Dynamic Media] do](/help/release-notes/sp-release-notes.md#dynamic-media-6570)Assets. <!-- TBD: Add link to a11y article after go-live. Adding RN link for now. -->
+* Os usuários podem classificar ativos digitais em visualizações de cartão e coluna.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
