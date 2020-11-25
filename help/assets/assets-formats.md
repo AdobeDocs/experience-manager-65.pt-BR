@@ -3,9 +3,9 @@ title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados [!DNL Assets] and [!DNL Dynamic Media] por e os recursos suportados para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: c2c0f38d0c8e403264db05064d4423ef46880d9a
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1634'
 ht-degree: 10%
 
 ---
@@ -30,18 +30,18 @@ Os formatos de imagem rasterizada suportados em [!DNL Assets] são:
 | Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Edição | Writeback de metadados | Insights |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
-| PBM | ✓ | ✓ |  |  |  |  | ✓ |
-| PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD ‡ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
-| PICT |  |  |  |  |  |  | ✓ |
-| PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PNM | ✓ | ✓ | − | − | − | − | ✓ |
+| PGM | ✓ | ✓ | − | − | − | − | ✓ |
+| PBM | ✓ | ✓ | − | − | − | − | ✓ |
+| PPM | ✓ | ✓ | − | − | − | − | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | − | ✓ | − |
+| PICT | − | − | − | − | − | − | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pela Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
@@ -53,10 +53,10 @@ Os formatos de imagem rasterizada suportados em [!DNL Dynamic Media] são:
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ |  |  |  |  |
-| PSD ‡ | ✓ |  |  |  |  |
+| BMP | ✓ | − | − | − | − |
+| PSD ‡ | ✓ | − | − | − | − |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ |  |  |  |  |
+| PICT | ✓ | − | − | − | − |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pela Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
@@ -78,12 +78,12 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Pré-visualização em miniatura | pré-visualização 3D | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | − | − |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | − | ✓ | − |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 
 ## Formatos de imagem rasterizada não suportados no Dynamic Media {#unsupported-image-formats-dynamic-media}
 
@@ -144,32 +144,32 @@ Os formatos de documento suportados para recursos de gerenciamento de ativos sã
 
 | Formato | Armazenamento | [Gerenciamento de metadados](metadata.md) | Extração de texto<br> completo | [Extração de metadados](metadata.md) | Geração de miniaturas<br> | [Extração de Subasset](managing-linked-subassets.md) | [Writeback de metadados](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
-| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| ODT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| RTF | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| TXT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| XLS | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| ODS | ✓ | ✓ | ✓ |  |  |  |  |  |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| ODP | ✓ | ✓ | ✓ |  |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
-| PS | ✓ | ✓ |  |  |  |  |  |  |
-| QXP | ✓ | ✓ |  |  |  |  |  |  |
-| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
+| HTML | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| RTF | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| TXT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLS | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODS | ✓ | ✓ | ✓ | − | − | − | − | − |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| ODP | ✓ | ✓ | ✓ | − | − | − | − | − |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| PS | ✓ | ✓ | − | − | − | − | − | − |
+| QXP | ✓ | ✓ | − | − | − | − | − | − |
+| EPUB | ✓ | ✓ | − | ✓ | ✓ | − | − | − |
 
 ## Formatos de documento suportados no Dynamic Media {#supported-document-formats-dynamic-media}
 
 | Formato | Carregar<br> (formato de entrada) | Criar<br> predefinição<br><br> de imagem (formato de saída) | Execução dinâmica<br> de pré-visualização<br> | Fornecer<br> representação dinâmica<br> | Baixar<br> representação dinâmica<br> |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
 
 Além da funcionalidade acima, considere o seguinte:
 
@@ -183,45 +183,45 @@ Além da funcionalidade acima, considere o seguinte:
 
 |  | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Transcodificação de FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | − | * |
-| MIDI | ✓ | ✓ |  | − | * |
-| 3GP | ✓ | ✓ |  | − | * |
+| AAC | ✓ | ✓ | − | − | * |
+| MIDI | ✓ | ✓ | − | − | * |
+| 3GP | ✓ | ✓ | − | − | * |
 | MP3 | ✓ | ✓ | ✓ | − | * |
-| MPG | ✓ | ✓ |  | − | * |
-| OGA | ✓ | ✓ |  | − | * |
-| OGG | ✓ | ✓ |  | − | * |
-| RA | ✓ | ✓ |  | − | * |
-| WAV | ✓ | ✓ |  | − | * |
-| WMA | ✓ | ✓ |  | − | * |
-| DVI | ✓ | ✓ |  | * | * |
-| FLV | ✓ | ✓ |  | * | * |
-| M4V | ✓ | ✓ |  | * | * |
-| MPEG | ✓ | ✓ |  | * | * |
-| OGV | ✓ | ✓ |  | * | * |
-| MOV | ✓ | ✓ |  | * | * |
-| WMV | ✓ | ✓ |  | * | * |
-| SWF | ✓ | ✓ |  |  |  |
+| MPG | ✓ | ✓ | − | − | * |
+| OGA | ✓ | ✓ | − | − | * |
+| OGG | ✓ | ✓ | − | − | * |
+| RA | ✓ | ✓ | − | − | * |
+| WAV | ✓ | ✓ | − | − | * |
+| WMA | ✓ | ✓ | − | − | * |
+| DVI | ✓ | ✓ | − | * | * |
+| FLV | ✓ | ✓ | − | * | * |
+| M4V | ✓ | ✓ | − | * | * |
+| MPEG | ✓ | ✓ | − | * | * |
+| OGV | ✓ | ✓ | − | * | * |
+| MOV | ✓ | ✓ | − | * | * |
+| WMV | ✓ | ✓ | − | * | * |
+| SWF | ✓ | ✓ | − | − | − |
 
 ## Formatos de vídeo de entrada suportados no Dynamic Media para transcodificação {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extensão do arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |---|---|---|---|
-| MP4 | MPEG-4 | H264/AVC (todos os perfis) |  |
+| MP4 | MPEG-4 | H264/AVC (todos os perfis) | − |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animação da Apple |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
-| M4V | Apple iTunes | H264/AVC |  |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
+| M4V | Apple iTunes | H264/AVC | − |
 | AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| WebM | WebM | VP8 do Google |  |
-| OGV, OGG | Ogg | Theora, VP3, Dirac |  |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |  |
-| MTS | AVCHD | H264/AVC |  |
-| MKV | Matroska | H264/AVC |  |
-| R3D, RM | Vídeo vermelho bruto | MJPEG 2000 |  |
+| WebM | WebM | VP8 do Google | − |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| MTS | AVCHD | H264/AVC | − |
+| MKV | Matroska | H264/AVC | − |
+| R3D, RM | Vídeo vermelho bruto | MJPEG 2000 | − |
 | RAM, RM | RealVideo | Não suportado | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Flash nativo | Codec de áudio sem perda gratuito |  |
-| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 |  |
+| FLAC | Flash nativo | Codec de áudio sem perda gratuito | − |
+| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | − |
 
 ## Formatos de arquivo suportados {#supported-archive-formats}
 
@@ -229,23 +229,23 @@ Os formatos de arquivamento suportados e a aplicabilidade dos workflows DAM comu
 
 | Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Outros formatos suportados {#other-supported-formats}
 
-A aplicabilidade de workflows DAM comuns para alguns outros formatos de arquivo está descrita na tabela abaixo. A funcionalidade comum do DAM, como armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados, exceto o Delivery de Mídia dinâmica, é compatível com todos os arquivos.
+As funcionalidades comuns do DAM, como armazenamento, controle de versão, ACL, fluxo de trabalho, publicação e gerenciamento de metadados, exceto [!DNL Dynamic Media] delivery, são suportadas para muitos formatos de arquivo. A aplicabilidade das funcionalidades para alguns formatos de ficheiro específicos está descrita a seguir.
 
 | Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript (quando configurado com o próprio domínio do delivery) |  |  |  |  |  | ✓ |
+| JavaScript (quando configurado com o próprio domínio do delivery) | − | − | − | − | − | ✓ |
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -313,6 +313,6 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/glo
 
 >[!MORELIKETHIS]
 >
->* [Habilite o suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)ao parâmetro de trabalho de upload de ativos/Scene7 baseados em tipos MIME.
+>* [Habilite o suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)aos parâmetros de trabalho de upload do Dynamic Media Classic Assets baseados em tipos MIME.
 >* [Configure o tipo de MIME baseado no suporte](config-dynamic.md)de parâmetros de trabalho de upload.
 
