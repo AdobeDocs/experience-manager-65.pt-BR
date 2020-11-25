@@ -7,9 +7,9 @@ user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: caf5737a05a312308f817ac24a3800965d2c2555
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '585'
 ht-degree: 39%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 39%
 + [[!DNL Experience Manager] 6.5 Notas de versão dos ativos](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
++ [Acessibilidade em [!DNL Assets]](accessibility.md)
 + Usar ativos Experience Manager {#using}
    + [[!DNL Assets] experiência do home page](assets-home-page.md)
    + [Pesquisar ativos digitais](search-assets.md)
@@ -53,7 +54,7 @@ ht-degree: 39%
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adicionar recursos do Scene7 à sua página](scene7.md)
+   + [Adding Scene7 features to your page](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entrega de ativos de mídia dinâmica](delivering-dynamic-media-assets.md)
    + [Ativação da proteção de hotlink no Dynamic Media](hotlink-protection.md)
