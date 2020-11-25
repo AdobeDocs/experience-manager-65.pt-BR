@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários [!DNL Adobe Experience 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 752f8a305f689a9aa1377533108d28c714da8afd
+source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
 workflow-type: tm+mt
-source-wordcount: '5776'
+source-wordcount: '5769'
 ht-degree: 5%
 
 ---
@@ -411,9 +411,9 @@ Você pode fazer o seguinte com os ativos que pesquisou [!DNL Experience Manager
 
 ### Classificar resultados da pesquisa {#sort}
 
-Classifique os resultados da pesquisa para descobrir os ativos necessários mais rapidamente. You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
+Classifique os resultados da pesquisa para descobrir os ativos necessários mais rapidamente. Você pode classificar os resultados da pesquisa somente ao selecionar **[[!UICONTROL Arquivos]](#searchui)** no painel **[!UICONTROL Filtros]** . [!DNL Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
-Na visualização da lista, você pode classificar os resultados da pesquisa da mesma forma que pode classificar os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Finalizado.
+Você pode classificar os resultados da pesquisa da mesma forma que pode classificar os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Finalizado.
 
 Para obter as limitações da funcionalidade de classificação, consulte [limitações](#limitations).
 
