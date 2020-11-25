@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
+source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2756'
 ht-degree: 4%
 
 ---
@@ -125,9 +125,7 @@ Se estiver usando um **novo conjunto** de relatórios, esteja ciente de que um n
 
 Se estiver usando um conjunto **de relatórios** existente, talvez seja necessário [modificar o mapeamento](#modifying-analytics-variable-mapping) de variável antes de ativar a estrutura do Analytics para um site da comunidade.
 
-<!--
-Contact your account representative for any concerns regarding the variables dedicated to Communities.
--->
+Entre em contato com seu representante de conta para obter informações sobre quaisquer preocupações relacionadas às variáveis dedicadas às Comunidades.
 
 >[!CAUTION]
 >
