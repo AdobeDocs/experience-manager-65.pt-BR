@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3796'
 ht-degree: 5%
 
 ---
@@ -139,7 +139,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 [!DNL Adobe Experience Manager] A versão 6.5.7.0 [!DNL Assets] corrige os seguintes problemas e fornece os seguintes aprimoramentos.
 
-* Os seguintes aprimoramentos são feitos para acessibilidade em [!DNL Experience Manager Assets]:
+* Os seguintes aprimoramentos são feitos para acessibilidade [!DNL Experience Manager Assets] nesta versão. Para obter mais informações, consulte Recursos de [acessibilidade em [!DNL Assets]](/help/assets/accessibility.md).
 
    * Ao navegar pela linha do tempo usando um teclado, a `Esc` tecla pode recolher a opção [!UICONTROL Mostrar tudo] sem perder o foco (CQ-4293598).
    * Ao navegar usando a tecla de guia do teclado, depois de remover a última tag das tags adicionadas, o campo de tag retém o foco (NPR-35109).
@@ -193,7 +193,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* Os principais aprimoramentos a seguir são feitos para acessibilidade em [!DNL Dynamic Media] (CQ-4290306). Para obter detalhes, consulte recursos de acessibilidade em [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
+* Os seguintes aprimoramentos são feitos para acessibilidade em [!DNL Dynamic Media] (CQ-4290306). Para obter detalhes, consulte Recursos de [acessibilidade em [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
    * Os leitores de tela (JAWS, Narrador) registram o nome, a função e o estado dos itens de menu na opção de menu Incorporar tamanho (CQ-4290927).
    * Os usuários podem navegar na caixa de diálogo Link de email usando a `Tab` chave (CQ-4290926).
