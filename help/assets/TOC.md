@@ -7,10 +7,10 @@ user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
 translation-type: tm+mt
-source-git-commit: caf5737a05a312308f817ac24a3800965d2c2555
+source-git-commit: 3443fe49e7eacbdacf7d21077f920d38b34daeae
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 39%
+source-wordcount: '588'
+ht-degree: 38%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 39%
    + [Configuração do Dynamic Media - modo Scene7](config-dms7.md)
    + [Configuração do Dynamic Media - Modo híbrido](config-dynamic.md)
    + [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
+   + [Recursos de acessibilidade em [!DNL Dynamic Media]](accessibility-dm.md)
    + [Migração do Dynamic Media - Modo híbrido para o Dynamic Media - Modo S7](migrate-from-hybrid-to-dms7.md)
    + [Gerenciamento de ativos do Dynamic Media](managing-assets.md)
    + [Práticas recomendadas para otimização da qualidade de imagens](best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -54,7 +55,7 @@ ht-degree: 39%
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adding Scene7 features to your page](scene7.md)
+   + [Adicionar recursos do Scene7 à sua página](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entrega de ativos de mídia dinâmica](delivering-dynamic-media-assets.md)
    + [Ativação da proteção de hotlink no Dynamic Media](hotlink-protection.md)
