@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
+source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '827'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Consulte também [Características das opções](/help/communities/working-with-
 
 É necessária uma licença adicional para o uso do ASRP.
 
-Para configurar seu site da AEM Communities para usar o ASRP para UGC, verifique se você tem o seguinte:
+Para configurar seu site da AEM Communities para usar o ASRP para UGC, entre em contato com seu representante de conta para:
 
 * URL do centro de dados (endereço do ponto final ASRP)
 * Chave do consumidor
