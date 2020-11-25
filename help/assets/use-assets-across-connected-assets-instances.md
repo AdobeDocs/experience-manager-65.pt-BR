@@ -3,9 +3,9 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 916b49572981115f6178c04f260ce63bcfc6d054
+source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2263'
 ht-degree: 40%
 
 ---
@@ -19,7 +19,7 @@ Os usuários podem criar páginas da Web em [!DNL Experience Manager Sites]. [!D
 
 ## Visão geral do Connected Assets {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. Os administradores criam uma integração única de uma implantação do [!DNL Sites] com uma implantação diferente (remota) do [!DNL Assets].
+Ao editar páginas no Editor [!UICONTROL de] páginas como destino de públicos alvos, os autores podem pesquisar, navegar e incorporar facilmente ativos de uma [!DNL Assets] implantação diferente que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação de [!DNL Experience Manager] com [!DNL Sites] capacidade com outra implantação de [!DNL Experience Manager] com [!DNL Assets] capacidade.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Consulte Guia [de migração dos ativos](/help/assets/assets-migration-guide.md)Experience Manager.
 
