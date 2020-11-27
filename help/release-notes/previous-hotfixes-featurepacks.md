@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de versão anteriores do Servi
 description: Notas de versão para [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 62a04c1d9f62a5a5fa6f97f415015001daa94747
+source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
 workflow-type: tm+mt
-source-wordcount: '14760'
+source-wordcount: '14804'
 ht-degree: 20%
 
 ---
@@ -326,6 +326,8 @@ Após instalar o pacote suplementar [!DNL Experience Manager Forms] 6.5.6.0:
 * Os formulários adaptáveis têm alguns resolvedores de recursos abertos. Isso resulta em falhas de envio. O problema ocorre intermitentemente (CQ-4299407).
 
 * Quando você abre a configuração do campo pela primeira vez, o ícone de propriedades não é exibido (CQ-4296284).
+
+* Os usuários podem editar metadados de envio, como `afPath`, `afSubmissionTime` e `signers`, ao enviar um formulário adaptável. Para resolver o problema, os valores de metadados são removidos dos dados de envio do formulário no lado do cliente. Os usuários podem usar o `FormSubmitInfo` objeto para recuperar esses valores do servidor (NPR-33654).
 
 **Fluxo de trabalho**
 
