@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0389508f7870dd2ce6ed7bfc5fb8a9bc88fedffb
+source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3789'
 ht-degree: 5%
 
 ---
@@ -145,7 +145,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
    * Ao navegar usando a tecla de guia do teclado, depois de remover a última tag das tags adicionadas, o campo de tag retém o foco (NPR-35109).
    * [!DNL Experience Manager] os componentes agora contêm informações apropriadas para nome, função e valor a serem usados pelos leitores de tela (NPR-34255).
    * Depois que você exclui a caixa de combinação Tipo/Tamanho, a caixa de combinação Link, a caixa de combinação Idioma ou a caixa de edição de texto, o foco do teclado retorna para os elementos da interface do usuário anterior ou seguinte ou para um elemento da interface do usuário mais relevante (CQ-4293585).
-   * Ao passar o ponteiro do mouse sobre várias opções, dicas como Selecionar e Download são exibidas. Os usuários que usam ampliação de tela podem ter dificuldade para visualizar as miniaturas do arquivo devido ao conteúdo exibido devido ao passar o mouse. Agora é possível preservar o foco, depois de remover a opção usando uma `Escape` chave (CQ-4293554).
+   * Ao passar o ponteiro do mouse sobre as opções, dicas como Selecionar e Download são exibidas. Os usuários que usam uma lente de aumento de tela podem não ver as miniaturas do arquivo devido a essas dicas. Agora, é possível preservar o foco, depois de remover a opção usando a `Escape` tecla. (CQ-4293554).
    * Ao selecionar uma célula de grade da grade presente na página, o foco muda para a barra de ação que aparece na tela (CQ-4282127).
    * Os usuários visuais podem diferenciar entre o texto normal e um link, à medida que as pistas visuais (ícone sublinhado e divisa) são exibidas para links para todas as soluções no [!DNL Experience Manager] home page (CQ-4282072).
 
@@ -405,7 +405,7 @@ Analise se você usa um recurso ou um recurso em uma implantação. Além disso,
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | A tela Aceitação **[!UICONTROL dos serviços da]** AEM Cloud está obsoleta. Com a integração de AEM e Público alvo atualizada no AEM 6.5 para suportar a API do Target Standard, que usa autenticação via Adobe IMS e E/S, e a função crescente de inicialização de Adobe para instrumentar AEM páginas para análise e personalização, o assistente de aceitação se tornou funcionalmente irrelevante. | Configure as conexões do sistema, a autenticação Adobe IMS e as integrações de E/S de Adobe por meio dos respectivos serviços em nuvem do AEM. |
+| Integrações | A tela Aceitação **[!UICONTROL dos serviços da]** AEM Cloud está obsoleta. Com a integração de AEM e Público alvo atualizada no AEM 6.5 para suportar a API do Target Standard, que usa autenticação via Adobe IMS e E/S, e a função crescente de inicialização de Adobe para instrumentar AEM páginas para análise e personalização, o assistente de aceitação se tornou funcionalmente irrelevante. | Configure conexões do sistema, autenticação Adobe IMS e integrações Adobe I/O por meio dos respectivos serviços de nuvem do AEM. |
 | Conectores | O Conector JCR do Adobe para Microsoft SharePoint 2010 e Microsoft SharePoint 2013 está obsoleto para o AEM 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
