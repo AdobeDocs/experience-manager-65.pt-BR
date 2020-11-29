@@ -3,9 +3,9 @@ title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados [!DNL Assets] and [!DNL Dynamic Media] por e os recursos suportados para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
+source-git-commit: eaff176bf3ffc197607b8eb39b15c1e945927f8e
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1639'
 ht-degree: 10%
 
 ---
@@ -246,6 +246,10 @@ A aplicabilidade das funcionalidades habituais do DAM para alguns formatos de ar
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (quando configurado com o próprio domínio do delivery) | − | − | − | − | − | ✓ |
+
+>[!NOTE]
+>
+>Fazer upload e distribuir arquivos JavaScript pode ou não ser seguro. Se necessário, as sobreposições podem ser usadas para impedir que os usuários carreguem arquivos JS.
 
 ## Supported MIME types {#supported-mime-types}
 
