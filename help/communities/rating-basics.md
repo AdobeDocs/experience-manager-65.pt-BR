@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 translation-type: tm+mt
 source-git-commit: b7318370c45f37a7faf5434b2de3f145b8d64bce
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 1%
 
 ---
 
 
 # Noções básicas de classificação {#rating-essentials}
 
-O componente de classificação, uma subclasse [total](tally.md) , permite que membros da comunidade conectados avaliem um recurso no site.
+O componente de classificação, uma subclasse [tally](tally.md), permite que membros da comunidade conectados classifiquem um recurso no site.
 
-É permitido colocar várias instâncias de um componente de votação na mesma página; cada instância deve ser configurada com uma `tally name` propriedade exclusiva.
+É permitido colocar várias instâncias de um componente de votação na mesma página; cada instância deve ser configurada com uma propriedade exclusiva `tally name`.
 
 Não há suporte para a publicação anônima de uma classificação. Os visitantes do site devem se registrar e fazer logon para participar de uma classificação apenas uma vez. O visitante com logon (membro) pode alterar sua classificação a qualquer momento.
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -33,7 +36,7 @@ Não há suporte para a publicação anônima de uma classificação. Os visitan
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusivo</strong></a></td>
-   <td>Sim - as propriedades são editáveis no <i>modo </i>de design</td>
+   <td>Sim - as propriedades são editáveis no modo <i>design </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -56,7 +59,7 @@ Não há suporte para a publicação anônima de uma classificação. Os visitan
 
 * [Personalizações do cliente](client-customize.md)
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 * [Tally APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
@@ -67,16 +70,16 @@ Não há suporte para a publicação anônima de uma classificação. Os visitan
 ### Acessar classificações publicadas (UGC) {#accessing-posted-ratings-ugc}
 
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
-Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir das comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir AEM Comunidades 6.1, o uso de uma [loja comum](working-with-srp.md) para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório.
-* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração](socialutils.md) de utilitários sociais - mapeamento de métodos de utilitários obsoletos para métodos atuais de utilitários SRP.
+* [Visão geral](srp.md)  do provedor de recursos do armazenamento - introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com diretrizes de codificação do SRP](accessing-ugc-with-srp.md) .
+* [Refatoração](socialutils.md)  do SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
 
