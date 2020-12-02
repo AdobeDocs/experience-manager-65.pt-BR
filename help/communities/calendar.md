@@ -28,25 +28,25 @@ O recurso de calendário oferece suporte ao fornecimento de informações de eve
 Esta seção da documentação descreve
 
 * Adicionar o recurso de calendário a um site AEM
-* Configurações para `Calendar` componentes
+* Configurações para componentes `Calendar`
 
-## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
+## Adicionar um calendário a uma página {#adding-a-calendar-to-a-page}
 
-Para adicionar um `Calendar` componente a uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um componente `Calendar` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Calendar`
 
 e arraste-o para o lugar em uma página, como uma posição relativa ao recurso que os usuários devem revisar.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do lado do cliente](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Calendar` componente será exibido.
+Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) forem incluídas, o componente `Calendar` aparecerá desta forma.
 
 ![componente de calendário](assets/calendar-component.png)
 
 ### Configuração do calendário {#configuring-calendar}
 
-Selecione o componente inserido a ser acessado e selecione o `Calendar` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Calendar` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configure](assets/configure-new.png)
 
@@ -54,7 +54,7 @@ Selecione o componente inserido a ser acessado e selecione o `Calendar` `Configu
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **Configurações** , especifique se as tags devem ou não ser aplicadas às entradas do calendário.
+Na guia **Configurações**, especifique se as tags devem ou não ser aplicadas às entradas do calendário.
 
 * **Eventos por página**
 
@@ -74,7 +74,7 @@ Na guia **Configurações** , especifique se as tags devem ou não ser aplicadas
 
 * **Permitir marcação**
 
-   Se marcada, permita que os membros adicionem etiquetas às eventos que publicaram (consulte a guia Campo **** de etiqueta). O padrão está marcado.
+   Se marcada, permita que os membros adicionem rótulos de tag aos eventos que publicaram (consulte a guia **Campo de tag**). O padrão está marcado.
 
 * **Permitir carregamento de arquivos**
 
@@ -86,11 +86,11 @@ Na guia **Configurações** , especifique se as tags devem ou não ser aplicadas
 
 * **Tamanho máximo do arquivo**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+   Relevante somente se `Allow File Uploads` estiver marcado. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
 * **Tipos de arquivos permitidos**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+   Relevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **Tamanho máximo do arquivo de imagem a ser anexado**
 
@@ -122,9 +122,9 @@ Na guia **Configurações** , especifique se as tags devem ou não ser aplicadas
 
 * **Ativar conteúdo em destaque**
 
-   Se marcada, a ideia pode ser identificada como conteúdo [em](/help/communities/featured.md)destaque. O padrão está desmarcado.
+   Se marcada, a ideia pode ser identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
-Na guia Moderação **do** usuário, especifique como os tópicos e as respostas publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Na guia **Moderação do usuário**, especifique como os tópicos e as respostas publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
@@ -158,11 +158,11 @@ Na guia Moderação **do** usuário, especifique como os tópicos e as respostas
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na guia **Configurações** , são limitadas de acordo com as namespaces escolhidas.
+Na guia **Campo de tag**, as tags que podem ser aplicadas, se permitidas na guia **Settings**, são limitadas de acordo com as namespaces escolhidas.
 
 * **Espaços de nomes permitidos**
 
-   Relevante se `Allow Tagging` estiver marcado na guia **Configurações** . As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+   Relevante se `Allow Tagging` estiver marcado na guia **Settings**. As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
 
 * **Limite sugerido**
 
@@ -170,17 +170,17 @@ Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na gui
 
 >[!NOTE]
 >
->Visite [Administrando tags](/help/sites-administering/tags.md) para saber como adicionar uma nova namespace de tag (taxonomia).
+>Visite [Administração de tags](/help/sites-administering/tags.md) para saber como adicionar uma nova namespace de tag (taxonomia).
 
 #### Guia Tradução {#translation-tab}
 
-Na guia **Tradução** , se a tradução estiver ativada para o site da comunidade, a tradução pode ser definida para traduzir o thread inteiro (evento e comentários) em vez de postagens específicas.
+Na guia **Tradução**, se a tradução estiver ativada para o site da comunidade, a tradução poderá ser definida para traduzir o thread inteiro (evento e comentários) em vez de postagens específicas.
 
 * **Converter tudo**
 
    Se marcada, o evento e os comentários são traduzidos para o idioma preferencial do usuário. O padrão está marcado.
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
 No ambiente de publicação, o recurso de calendário exibirá um campo de pesquisa com um intervalo de datas padrão e qualquer evento de calendário que se enquadre nesse intervalo.
 
@@ -190,13 +190,13 @@ Outras capacidades dependem de o visitante do site ser um moderador, administrad
 
 ### Moderadores e administradores {#moderators-and-administrators}
 
-Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar tarefas [de](/help/communities/moderate-ugc.md) moderação (conforme permitido pela configuração do componente) em todos os eventos de calendário e comentários postados em um evento.
+Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar [tarefas de moderação](/help/communities/moderate-ugc.md) (conforme permitido pela configuração do componente) em todos os eventos de calendário e comentários postados em um evento.
 
 ![moderadores-visualização](assets/moderators-view.png)
 
 #### Membros {#members}
 
-Quando o usuário conectado é membro da comunidade ou membro [](/help/communities/users.md#privileged-members-group) privilegiado (dependendo da configuração), ele pode optar por `New Event` criar e publicar um novo evento de calendário.
+Quando o usuário conectado é um membro da comunidade ou [membro privilegiado](/help/communities/users.md#privileged-members-group) (dependendo da configuração), ele poderá selecionar `New Event` para criar e publicar um novo evento de calendário.
 
 Concretamente, podem:
 
@@ -220,8 +220,8 @@ Os visitantes do site que não estão conectados só podem ler eventos do calend
 
 Mais informações podem ser encontradas na página [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) para desenvolvedores.
 
-Para moderação de eventos de calendário e comentários, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Para moderação de eventos de calendário e comentários, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para marcar eventos de calendário e comentários, consulte [Marcação de conteúdo](/help/communities/tag-ugc.md)gerado pelo usuário.
+Para marcar eventos de calendário e comentários, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
 
-Para obter a tradução de eventos de calendário e comentários, consulte [Traduzindo conteúdo](/help/communities/translate-ugc.md)gerado pelo usuário.
+Para obter a tradução de eventos de calendário e comentários, consulte [Traduzindo conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
