@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 3%
 
 ---
 
 
-# Propriedades de configuração do gerenciamento de correspondência {#correspondence-management-configuration-properties}
+# Propriedades de Configuração do Gerenciamento de Correspondência {#correspondence-management-configuration-properties}
 
-Para configurar essas propriedades, abra o seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione Configurações **de gerenciamento de** correspondência.
+Para configurar essas propriedades, abra o seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione **Configurações de gerenciamento de correspondência**.
 
 O Gerenciamento de correspondência tem as seguintes propriedades de configuração:
 
@@ -31,42 +34,42 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr>
    <td><p>Recuo</p> </td>
    <td>Recuo em módulos<p> </p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Qualquer número</p> </td>
   </tr>
   <tr>
    <td>Largura mínima do número</td>
    <td>Largura mínima a ser aplicada no campo de marcador/número, ao usar Listas numeradas além dos números romanos</td>
-   <td>8.0mm</td>
+   <td>8,0 mm</td>
    <td>Qualquer número</td>
   </tr>
   <tr>
    <td><p>Largura mínima dos números romanos</p> </td>
    <td><p>Largura mínima a ser aplicada no campo de marcador/número ao usar números romanos</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Qualquer número</p> </td>
   </tr>
   <tr>
    <td>Tipo de representação</td>
-   <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a visualização da carta. </td>
+   <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a pré-visualização da carta. </td>
    <td>Representação HTML</td>
    <td>Representação HTML / representação de PDF</td>
   </tr>
   <tr>
    <td><p>Ativar destaque do CCR PDF</p> </td>
-   <td><p>Permite destacar PDF no aplicativo Criar correspondência</p> </td>
+   <td><p>Permite destacar em PDF no aplicativo Criar correspondência</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Tipo de Destaque do Target</p> </td>
-   <td><p>Tipo de destaque do Target no aplicativo Criar correspondência</p> </td>
+   <td><p>Tipo de realce do público alvo</p> </td>
+   <td><p>Tipo de realce do público alvo no aplicativo Criar correspondência</p> </td>
    <td><p>border</p> </td>
    <td><p>borda / preenchimento / nenhum</p> </td>
   </tr>
   <tr>
-   <td><p>Cor de realce do Target</p> </td>
-   <td><p>Cor de realce do Target no aplicativo Criar correspondência</p> </td>
+   <td><p>Cor de realce do público alvo</p> </td>
+   <td><p>Cor de realce do público alvo no aplicativo Criar correspondência</p> </td>
    <td><p>90;155;245</p> </td>
    <td><p>Qualquer cor RGB no formato R;G;B</p> </td>
   </tr>
@@ -102,7 +105,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr>
   <tr>
    <td><p>Nome do parâmetro do documento PDF</p> </td>
-   <td><p>Nome do parâmetro para documento PDF em pós-processo</p> </td>
+   <td><p>Nome do parâmetro para documento PDF no pós-processo</p> </td>
    <td><p>inPDFDoc</p> </td>
    <td><p>Qualquer nome de variável de string</p> </td>
   </tr>
@@ -114,7 +117,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr>
   <tr>
    <td><p>Nome do parâmetro do documento XDP</p> </td>
-   <td><p>Nome do parâmetro para documento XDP enviado ao processo de publicação</p> </td>
+   <td><p>Nome do parâmetro para o documento XDP enviado para o processo de publicação</p> </td>
    <td><p>inXDPDoc</p> </td>
    <td><p>Qualquer nome de variável de string</p> </td>
   </tr>
@@ -152,13 +155,13 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>Formatos de Exibição de Dados</p> </td>
    <td><p>Especifica o formato de exibição específico da localidade para dados</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
   </tr>
   <tr>
    <td><p>Formato de edição de dados</p> </td>
    <td><p>Editar formato para dados. Isso é usado ao gravar dados como String ou analisar dados de String</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>Gerenciar instâncias de carta na publicação</p> </td>
@@ -168,7 +171,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr>
   <tr>
    <td><p>Ativar auditoria</p> </td>
-   <td><p>Ativar/desativar a funcionalidade de auditoria. Quando falso, os logs de auditoria de todas as ações serão desativados</p> </td>
+   <td><p>Ativar/Desativar a funcionalidade de auditoria. Quando falso, os logs de auditoria de todas as ações serão desativados</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -227,44 +230,44 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar auditoria de entrega personalizada</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para entrega personalizada de cartas</p> </td>
+   <td><p>Ativar auditoria de Delivery personalizados</p> </td>
+   <td><p>Ativar/Desativar a funcionalidade de auditoria para delivery personalizado de letras</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Nome do parâmetro de documentos anexos</p> </td>
-   <td><p>Nome do parâmetro para documentos do anexo enviados para o processo de publicação</p> </td>
+   <td><p>Nome do parâmetro documentos de anexo</p> </td>
+   <td><p>Nome do parâmetro para documentos de anexo enviados para o processo de publicação</p> </td>
    <td><p>inAttachmentDocs</p> </td>
    <td><p>Qualquer nome de variável de string</p> </td>
   </tr>
   <tr>
    <td><p>Raiz do usuário CM</p> </td>
    <td><p>URL da pasta que contém todos os ativos de usuário do Gerenciamento de correspondência</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Local válido da pasta</p> </td>
   </tr>
   <tr>
    <td><p>Tamanho do Cache Carta</p> </td>
-   <td><p>Especifique o número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza do <code>in-memory</code> cache.</p> </td>
+   <td><p>Especifique o número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory</code>.</p> </td>
    <td><p>100</p> </td>
    <td><p>Qualquer valor numérico</p> </td>
   </tr>
   <tr>
    <td><p>Ativar Cache Carta</p> </td>
-   <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza do <code>in-memory </code> cache.</p> </td>
+   <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory </code>.</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Pedidos de elementos de dados</p> </td>
-   <td><p>Mantém os elementos de dados ordenando na criação da interface de correspondência conforme sua sequência em Carta</p> </td>
+   <td><p>Mantém os elementos de dados ordenando na criação da interface de correspondência de acordo com sua sequência em Carta</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Recarregar suporte</p> </td>
-   <td><p>Ative/desative o suporte para recarregamento em letras renderizadas no lado do servidor.</p> <p>Desativar isso melhorará o desempenho da renderização de letras.</p> </td>
+   <td><p>Recarregamento de suporte</p> </td>
+   <td><p>Ative/desative o suporte para recarregamento em letras renderizadas no lado do servidor.</p> <p>Desabilitar isso melhorará o desempenho da renderização de letras.</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> <p> </p> </td>
   </tr>
