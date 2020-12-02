@@ -1,8 +1,8 @@
 ---
 title: Sites de comunidades
 seo-title: Sites de comunidades
-description: Visão geral da documentação dos AEM Communities
-seo-description: Visão geral da documentação dos AEM Communities
+description: Visão geral da documentação da AEM Communities
+seo-description: Visão geral da documentação da AEM Communities
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -18,23 +18,23 @@ ht-degree: 5%
 ---
 
 
-# Communities Sites {#communities-sites}
+# Sites das comunidades {#communities-sites}
 
-Esta seção destina-se àqueles que administram AEM Communities e assumem familiaridade com os recursos do AEM Communities.
+Esta seção é para aqueles que administram o AEM Communities e assumem familiaridade com os recursos do AEM Communities.
 
 ## Visão geral {#overview}
 
 Para obter uma visão geral e tutoriais de introdução, visite:
 
-* [Visão geral dos AEM Communities](overview.md)
+* [Visão geral do AEM Communities](overview.md)
 * [Introdução ao AEM Communities](getting-started.md)
-* [Introdução a AEM Communities para ativação](getting-started-enablement.md)
+* [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
 
-## Tópicos de administração e configuração {#administration-and-configuration-topics}
+## Tópicos de Administração e Configuração {#administration-and-configuration-topics}
 
 ### Criação e gerenciamento de sites das comunidades {#communities-site-creation-and-management}
 
-* Consoles [de comunidades](consoles.md)
+* Comunidades [consoles](consoles.md)
 
    * [Sites](sites-console.md)
 
@@ -45,7 +45,7 @@ Para obter uma visão geral e tutoriais de introdução, visite:
    * [Relatórios](reports.md)
 
 
-* [*Ferramentas *](tools.md)das comunidades:
+* Comunidades [*ferramentas*](tools.md):
 
    * [Modelos de site](sites.md)
    * [Modelos de grupo](tools-groups.md)
@@ -57,21 +57,21 @@ Para obter uma visão geral e tutoriais de introdução, visite:
 
 ### Conteúdo gerado pelo usuário {#user-generated-content}
 
-Um recurso principal do AEM Communities é a geração de conteúdo gerado pelo usuário (UGC) por visitantes do site (membros) conectados. Para saber mais sobre como trabalhar com o UGC, visite:
+Um recurso principal do AEM Communities é a geração de conteúdo gerado pelo usuário (UGC) por visitantes do site conectados (membros). Para saber mais sobre como trabalhar com o UGC, visite:
 
-* [Loja](working-with-srp.md)UGC comum: escolha de SRP para armazenamento compartilhado de UGC
+* [Loja](working-with-srp.md) UGC comum: escolha de SRP para armazenamento compartilhado de UGC
 * [Moderação do UGC](moderate-ugc.md): membros confiáveis podem moderar o UGC em massa ou no contexto
-* [Marcação de UGC](tag-ugc.md): os recursos podem ser configurados para permitir que os membros marcem o conteúdo
+* [Marcando UGC](tag-ugc.md): os recursos podem ser configurados para permitir que os membros marcem o conteúdo
 * [Traduzindo UGC](translate-ugc.md): os recursos podem ser configurados para traduzir todo o UGC ou permitir que os membros traduzam postagens selecionadas
-* [Configuração](analytics.md)Analytics: habilitar o Adobe Analytics a relatar várias métricas relacionadas à atividade de membros
+* [Configuração](analytics.md) do Analytics: habilitar a Adobe Analytics a relatar várias métricas relacionadas à atividade de membros
 
 ### Membros da comunidade {#community-members}
 
-* [Gerenciando usuários e grupos](users.md)de usuários: detalhes sobre membros da comunidade e grupos de membros, incluindo membros privilegiados.
-* [Limites](limits.md)de contribuição: capacidade de restringir a publicação por novos membros.
-* [Serviço](deploy-communities.md#tunnel-service-on-author)de túnel: permite que membros do lado da publicação e grupos de membros sejam acessados a partir do ambiente do autor.
-* [consoles](members.md)de membros e grupos: permite que membros do lado da publicação e grupos de membros sejam criados e gerenciados a partir do ambiente do autor.
-* [Sincronização](sync.md)do usuário: para sincronizar membros e grupos de membros em várias instâncias de publicação.
+* [Gerenciando usuários e grupos](users.md) de usuários: detalhes sobre membros da comunidade e grupos de membros, incluindo membros privilegiados.
+* [Limites](limits.md) de contribuição: capacidade de restringir a publicação por novos membros.
+* [Serviço](deploy-communities.md#tunnel-service-on-author) de túnel: permite que membros do lado da publicação e grupos de membros sejam acessados a partir do ambiente do autor.
+* [consoles](members.md) de membros e grupos: permite que membros do lado da publicação e grupos de membros sejam criados e gerenciados a partir do ambiente do autor.
+* [Sincronização](sync.md) do usuário: para sincronizar membros e grupos de membros em várias instâncias de publicação.
 * [Logon social com Facebook e Twitter](social-login.md): capacidade de visitantes do site se tornarem membros da comunidade usando suas credenciais do Facebook ou Twitter.
 * [Pontuação e símbolos](implementing-scoring.md): capacidade de atribuição de emblemas para identificar funções de um membro e para que os membros ganhem emblemas através da sua participação na comunidade.
 * [Notificações](notifications.md): capacidade de os membros serem notificados da atividade que seguem.
@@ -81,12 +81,12 @@ Um recurso principal do AEM Communities é a geração de conteúdo gerado pelo 
 ### Recursos de ativação {#enablement-features}
 
 * [Configurando a ativação](enablement.md): informações necessárias para configurar corretamente os recursos de ativação.
-* [Configuração](analytics.md)Analytics: informações necessárias para ativar os recursos do Adobe Analytics para Comunidades.
-* [Marcação de recursos](tag-resources.md)de habilitação: necessário para criar catálogos de ativação.
+* [Configuração](analytics.md) do Analytics: informações necessárias para ativar os recursos do Adobe Analytics for Communities.
+* [Marcação de recursos](tag-resources.md) de habilitação: necessário para criar catálogos de ativação.
 
 ### Implantação {#deployment}
 
-A seção de implantação contém informações específicas para AEM Communities.
+A seção de implantação contém informações específicas da AEM Communities.
 
 A natureza do trabalho com conteúdo da comunidade influencia a estrutura da implantação:
 
@@ -96,12 +96,12 @@ A natureza do trabalho com conteúdo da comunidade influencia a estrutura da imp
 
 * [Pacote de recursos das Comunidades mais recentes](deploy-communities.md#latestfeaturepack)
 
-Consulte a página de implantação para obter outras informações específicas das Comunidades, como para [Atualização](upgrade.md), [Dispatcher](dispatcher.md) e [Replicação](deploy-communities.md#replication-agents-on-author).
+Consulte a página de implantação para obter informações específicas de outras Comunidades, como para [Atualização](upgrade.md), [Dispatcher](dispatcher.md) e [Replicação](deploy-communities.md#replication-agents-on-author).
 
-## Documentação das Comunidades relacionadas {#related-communities-documentation}
+## Documentação de comunidades relacionadas {#related-communities-documentation}
 
 * Visite [Implantação de comunidades](deploy-communities.md) para saber mais sobre implantações recomendadas.
 
-* Visite Comunidades [em desenvolvimento](communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e como personalizar componentes e recursos das Comunidades.
+* Visite [Comunidades em desenvolvimento](communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e como personalizar componentes e recursos das Comunidades.
 
-* Visite Componentes [de comunidades de](author-communities.md) criação para saber como criar e configurar componentes de Comunidades.
+* Visite [Criação de componentes das comunidades](author-communities.md) para saber como criar e configurar componentes das Comunidades.
