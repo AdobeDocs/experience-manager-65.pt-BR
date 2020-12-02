@@ -12,23 +12,27 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
 
 # Criar uma raiz de idioma usando a interface clássica{#creating-a-language-root-using-the-classic-ui}
 
-O procedimento a seguir usa a interface clássica para criar uma raiz de idioma de um site. Para obter mais informações, consulte [Criação de uma raiz](/help/sites-administering/tc-prep.md#creating-a-language-root)de idioma.
+O procedimento a seguir usa a interface clássica para criar uma raiz de idioma de um site. Para obter mais informações, consulte [Criação de uma Raiz de Idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. No console Sites, na árvore Sites, selecione a página raiz do site. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Adicione uma nova página secundária que representa a versão do idioma do site:
 
    1. Clique em Nova > Nova página.
-   1. Na caixa de diálogo, especifique o Título e o Nome. O Nome precisa estar no formato de `<language-code>` ou, `<language-code>_<country-code>`por exemplo, en, en_US, en_us, en_GB, en_gb.
+   1. Na caixa de diálogo, especifique o Título e o Nome. O Nome precisa estar no formato `<language-code>` ou `<language-code>_<country-code>`, por exemplo, en, en_US, en_us, en_GB, en_gb.
 
       * O código de idioma suportado é o código de duas letras em minúsculas, conforme definido pela ISO-639-1
       * O código do país suportado é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela ISO 3166
    1. Selecione o Modelo e clique em Criar.
+
    ![newpagefer](assets/newpagefr.png)
 
 1. No console Sites, na árvore Sites, selecione a página raiz do site.
