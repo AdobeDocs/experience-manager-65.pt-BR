@@ -77,14 +77,14 @@ Você pode fechar o painel de navegação global clicando ou tocando em **Fechar
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
-* **[Navegação](/help/sites-authoring/basic-handling.md#navigation-panel)**- Representado por uma bússola
-* **[Ferramentas](/help/sites-authoring/basic-handling.md#tools-panel)**- Representado por um martelo
+* **[Navegação](/help/sites-authoring/basic-handling.md#navigation-panel)** - Representado por uma bússola  
+* **[Ferramentas](/help/sites-authoring/basic-handling.md#tools-panel)** - Representado por um martelo
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
-### Painel Navegação   {#navigation-panel}
+### Painel Navegação    {#navigation-panel}
 
-O painel Navegação fornece acesso aos consoles do AEM:
+O painel Navegação fornece acesso aos consoles de AEM:
 
 ![bh-01](assets/bh-01.png)
 
@@ -99,7 +99,7 @@ Em Navegação, os consoles disponíveis são:
    <td><strong>Propósito</strong></td>
   </tr>
   <tr>
-   <td>Ativos<br /> </td>
+   <td>Assets<br /> </td>
    <td>Esse consoles permitem importar e <a href="/help/assets/home.md">gerenciar ativos digitais</a> como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM. </td>
   </tr>
   <tr>
@@ -107,7 +107,7 @@ Em Navegação, os consoles disponíveis são:
    <td>Este console permite criar e gerenciar os <a href="/help/communities/sites-console.md">sites da comunidade</a> para a <a href="/help/communities/overview.md#engagement-community">participação</a> e <a href="/help/communities/overview.md#enablement-community">capacitação</a>.</td>
   </tr>
   <tr>
-   <td>Comércio</td>
+   <td>Commerce</td>
    <td>Permite gerenciar produtos, catálogos de produtos e pedidos relacionados ao seus sites de <a href="/help/sites-administering/ecommerce.md">Comércio</a>. </td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ No painel Ferramentas, cada opção no painel lateral contém um intervalo de su
 
 O cabeçalho sempre está presente na parte superior da tela. Embora a maioria das opções no cabeçalho permaneça igual, independentemente de onde você esteja no sistema, algumas são específicas do contexto.
 
-![bh-03](assets/bh-03.png)
+![bh-05](assets/bh-03.png)
 
 * [Navegação global](#navigatingconsolesandtools)
 
@@ -193,7 +193,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * Navegações estruturais
 
-   ![bh-05](assets/bh-05.png)
+   ![bh-03](assets/bh-05.png)
 
    Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, você pode navegar pelos níveis do seu site.
 
@@ -205,7 +205,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Isso está disponível somente na exibição de lista. See [list view](#list-view) for more information.
+   Isso está disponível somente na exibição de lista. Consulte [visualização de lista](#list-view) para obter mais informações.
 
 * Botão **Criar**
 
@@ -225,9 +225,9 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * Navegação pelo teclado
 
-   Você pode navegar por um site usando apenas o teclado. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*.
+   Você pode navegar por um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da tecla **TAB** (ou **OPT+TAB**) para movê-lo entre os elementos na página que são *focalizáveis*.
 
-   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
+   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso se torna visível à medida que você *tab* passa pelas opções de cabeçalho e acelera sua navegação, permitindo que você pule os elementos padrão na barra de ferramentas (produto) e leve você diretamente para o conteúdo principal.
 
    ![bh-30](assets/bh-30.png)
 
@@ -253,7 +253,7 @@ Há vários recursos de ajuda disponíveis:
 
    Navegue por essa visão geral como faria com a [visão geral de navegação do produto](/help/sites-authoring/basic-handling.md#product-navigation) ao acessar qualquer console pela primeira vez.
 
-   No menu [**Informações da página,**é possível selecionar** Ajuda **](/help/sites-authoring/author-environment-tools.md#accessing-help)para exibir isso novamente, a qualquer momento.
+   No menu [**Informações da página,** é possível selecionar **Ajuda**](/help/sites-authoring/author-environment-tools.md#accessing-help) para exibir isso novamente, a qualquer momento.
 
 * **Console Ferramentas**
 
@@ -294,7 +294,7 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 >
 >Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas {#quick-actions}
+## Ações rápidas  {#quick-actions}
 
 Na [Exibição de cartão](#cardviewquickactions), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -317,7 +317,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 >
 >Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
-### Seleção de recursos   {#selecting-resources}
+### Seleção de recursos    {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -345,13 +345,13 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>Exibição de cartão<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
+     <li>Área de trabalho:<br /> Passar o mouse sobre o mouse e, em seguida, usar a ação rápida de marca de seleção</li>
      <li>Dispositivo móvel:<br /> Tocar e segurar o cartão</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Click the card</li>
-     <li>Mobile device:<br /> Tap the card</li>
+     <li>Área de trabalho:<br /> Clique no cartão</li>
+     <li>Dispositivo móvel:<br /> Toque no cartão</li>
     </ul> </td>
   </tr>
   <tr>
@@ -416,7 +416,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
    * O nome do recurso e a divisa serão destacados quando forem tocados ou clicados.
 
-   ![bh-17](assets/bh-17.png)
+   ![bh-15](assets/bh-17.png)
 
    * Os filhos do recurso clicado/tocado aparecerão na coluna à direita do pai.
    * Se você tocar ou clicar em um nome de recurso sem filhos, seus detalhes aparecerão na coluna final.
@@ -460,7 +460,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](/help/sites-authoring/basic-handling.md#the-header).
 
-### Exibição de lista   {#list-view}
+### Exibição de lista    {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
