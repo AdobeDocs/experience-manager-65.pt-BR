@@ -1,8 +1,8 @@
 ---
 title: Criar aparências personalizadas para campos de formulário adaptáveis
 seo-title: Criar aparências personalizadas para campos de formulário adaptáveis
-description: Personalize a aparência dos componentes prontos para uso nos Formulários adaptativos.
-seo-description: Personalize a aparência dos componentes prontos para uso nos Formulários adaptativos.
+description: Personalize a aparência dos componentes prontos para uso no Forms adaptável.
+seo-description: Personalize a aparência dos componentes prontos para uso no Forms adaptável.
 uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Formulários adaptáveis aproveitam a estrutura [de](/help/forms/using/introduction-widgets.md) aparência para ajudá-lo a criar aparências personalizadas para campos de formulário adaptáveis e fornecer uma experiência diferente ao usuário. Por exemplo, substitua botões de opção e caixas de seleção por botões de alternância ou use plug-ins jQuery personalizados para restringir as entradas de usuários em campos como números de telefone ou ID de email.
+Formulários adaptáveis aproveitam a [estrutura de aparência](/help/forms/using/introduction-widgets.md) para ajudar a criar aparências personalizadas para campos de formulários adaptáveis e fornecer uma experiência de usuário diferente. Por exemplo, substitua botões de opção e caixas de seleção por botões de alternância ou use plug-ins jQuery personalizados para restringir as entradas de usuários em campos como números de telefone ou ID de email.
 
 Este documento explica como usar um plug-in do jQuery para criar essas experiências alternativas para campos de formulário adaptáveis. Além disso, exibe um exemplo para criar uma aparência personalizada para que o componente de campo numérico apareça como um auxiliar numérico ou um controle deslizante.
 
 Vamos primeiro ver os termos e conceitos principais usados neste artigo.
 
-**Aparência** Refere-se ao estilo, aparência e comportamento e organização de vários elementos de um campo de formulário adaptável. Geralmente inclui um rótulo, uma área interativa para fornecer entradas, um ícone de ajuda e descrições curtas e longas do campo. A personalização da aparência discutida neste artigo é aplicável à aparência da área de entrada do campo.
+**** AparênciaRefere-se ao estilo, aparência e comportamento e à organização de vários elementos de um campo de formulário adaptável. Geralmente inclui um rótulo, uma área interativa para fornecer entradas, um ícone de ajuda e descrições curtas e longas do campo. A personalização da aparência discutida neste artigo é aplicável à aparência da área de entrada do campo.
 
-**Plug-in** jQuery Fornece um mecanismo padrão, baseado na estrutura do widget jQuery, para implementar uma aparência alternativa.
+**Plug-** in jQueryFornece um mecanismo padrão, baseado na estrutura do widget jQuery, para implementar uma aparência alternativa.
 
-**ClientLib** Um sistema de bibliotecas do lado do cliente no processamento do lado do cliente AEM, controlado por complexos códigos JavaScript e CSS. Para obter mais informações, consulte Usar bibliotecas do lado do cliente.
+**** ClientLibUm sistema de bibliotecas do lado do cliente em AEM processamento do lado do cliente, orientado por complexos códigos JavaScript e CSS. Para obter mais informações, consulte Usar bibliotecas do lado do cliente.
 
-**Archetype** Um kit de ferramentas de modelo de projeto Maven definido como um padrão ou modelo original para projetos Maven. Para obter mais informações, consulte Introdução aos arquétipos.
+**** ArchetypeUm kit de ferramentas de modelo de projeto Maven definido como um padrão ou modelo original para projetos Maven. Para obter mais informações, consulte Introdução aos arquétipos.
 
 **Controle** do usuárioRefere-se ao elemento principal em um widget que contém o valor do campo e é usado pela estrutura de aparência para vincular a interface do usuário do widget personalizado ao modelo de formulário adaptável.
 
@@ -42,9 +42,9 @@ Vamos primeiro ver os termos e conceitos principais usados neste artigo.
 
 As etapas, em alto nível, para criar uma aparência personalizada são as seguintes:
 
-1. **Criar um projeto**: Crie um projeto Maven que gera um pacote de conteúdo para implantar no AEM.
+1. **Criar um projeto**: Crie um projeto Maven que gera um pacote de conteúdo para implantação no AEM.
 1. **Estende uma classe** de widget existente: Estende uma classe de widget existente e substitui as classes necessárias.
-1. **Criar uma biblioteca** de clientes: Crie uma `clientLib: af.customwidget` biblioteca e adicione os arquivos JavaScript e CSS necessários.
+1. **Criar uma biblioteca** de clientes: Crie uma  `clientLib: af.customwidget` biblioteca e adicione os arquivos JavaScript e CSS necessários.
 
 1. **Crie e instale o projeto**: Crie o projeto Maven e instale o pacote de conteúdo gerado no AEM.
 1. **Atualize o formulário** adaptável: Atualize as propriedades de campos de formulário adaptáveis para usar a aparência personalizada.
@@ -68,8 +68,8 @@ O comando baixa os plug-ins Maven e as informações de tipo de arquivo do repos
 * **artefatoId**: ID de artefato usada pelo projeto Maven gerado.
 * **versão**: Versão do projeto Maven gerado.
 * **pacote**: Pacote usado para a estrutura do arquivo.
-* **artefatoName**: Nome do artefato do pacote AEM gerado.
-* **packageGroup**: Grupo de pacotes do pacote AEM gerado.
+* **artefatoName**: Nome do artefato do pacote de AEM gerado.
+* **packageGroup**: Grupo de pacotes do pacote de AEM gerado.
 * **widgetName**: Nome de aparência usado para referência.
 
 O projeto gerado tem a seguinte estrutura:
@@ -114,7 +114,7 @@ Depois que o modelo de projeto for criado, faça as seguintes alterações, conf
 
 1. Inclua a dependência do plug-in de terceiros no projeto.
 
-   1. Coloque os plug-ins jQuery personalizados ou de terceiros na `jqueryplugin/javascript` pasta e os arquivos CSS relacionados na `jqueryplugin/css` pasta. Para obter mais detalhes, consulte os arquivos JS e CSS na `jqueryplugin/javascript and jqueryplugin/css` pasta.
+   1. Coloque os plug-ins jQuery personalizados ou de terceiros na pasta `jqueryplugin/javascript` e os arquivos CSS relacionados na pasta `jqueryplugin/css`. Para obter mais detalhes, consulte os arquivos JS e CSS na pasta `jqueryplugin/javascript and jqueryplugin/css`.
 
    1. Modifique os arquivos `js.txt` e `css.txt` para incluir qualquer arquivo adicional JavaScript e CSS do plug-in jQuery.
 
@@ -128,13 +128,13 @@ Depois que o modelo de projeto for criado, faça as seguintes alterações, conf
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>A função de renderização retorna o objeto jQuery para o elemento HTML padrão do widget. O elemento HTML padrão deve ser do tipo focalizável. Por exemplo, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>e <code>&lt;li&gt;</code>. O elemento retornado é usado como <code>$userControl</code>. Se a restrição <code>$userControl</code> especificar acima, as funções da <code>AbstractWidget</code> classe funcionarão conforme esperado, caso contrário, algumas das APIs comuns (foco, clique) exigirão alterações. </td>
+   <td>A função de renderização retorna o objeto jQuery para o elemento HTML padrão do widget. O elemento HTML padrão deve ser do tipo focalizável. Por exemplo, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> e <code>&lt;li&gt;</code>. O elemento retornado é usado como <code>$userControl</code>. Se <code>$userControl</code> especificar a restrição acima, as funções da classe <code>AbstractWidget</code> funcionarão conforme esperado, caso contrário algumas das APIs comuns (foco, clique) exigirão alterações. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
    <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Este exemplo mostra que <code>blur</code> é um evento HTML e <code>XFA_EXIT_EVENT</code> é o evento XFA correspondente. </td>
+      }</code><br /> Este exemplo mostra que  <code>blur</code> é um evento HTML e  <code>XFA_EXIT_EVENT</code> é o evento XFA correspondente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -146,32 +146,32 @@ Depois que o modelo de projeto for criado, faça as seguintes alterações, conf
   </tr>
   <tr>
    <td><code>showValue</code></td>
-   <td>Por padrão, no XFA ao inserir o evento, o campo <code>rawValue</code> é exibido. Essa função é chamada para mostrar o <code>rawValue</code> ao usuário. </td>
+   <td>Por padrão, no XFA ao inserir o evento, <code>rawValue</code> do campo é exibido. Essa função é chamada para mostrar o <code>rawValue</code> para o usuário. </td>
   </tr>
   <tr>
    <td><code>showDisplayValue</code></td>
-   <td>Por padrão, no XFA ao sair do evento, o campo <code>formattedValue</code> é exibido. Essa função é chamada para mostrar o <code>formattedValue</code> ao usuário. </td>
+   <td>Por padrão, em XFA no evento exit, <code>formattedValue</code> do campo é exibido. Essa função é chamada para mostrar o <code>formattedValue</code> para o usuário. </td>
   </tr>
  </tbody>
 </table>
 
-1. Atualize o arquivo JavaScript na `integration/javascript` pasta, conforme necessário.
+1. Atualize o arquivo JavaScript na pasta `integration/javascript`, conforme necessário.
 
    * Substitua o texto `__widgetName__` pelo nome do widget real.
    * Estenda o widget de uma classe de widget pronta para uso adequada. Na maioria dos casos, é a classe do widget correspondente ao widget existente que está sendo substituído. O nome da classe pai é usado em vários locais, portanto, é recomendável procurar todas as instâncias da string `xfaWidget.textField` no arquivo e substituí-las pela classe pai real usada.
-   * Estenda o `render` método para fornecer uma interface alternativa. É o local de onde o plug-in jQuery será chamado para atualizar a interface do usuário ou o comportamento de interação. O `render` método deve retornar um elemento de controle de usuário.
+   * Estenda o método `render` para fornecer uma interface alternativa. É o local de onde o plug-in jQuery será chamado para atualizar a interface do usuário ou o comportamento de interação. O método `render` deve retornar um elemento de controle de usuário.
 
-   * Estende o `getOptionsMap` método para substituir qualquer configuração de opção afetada devido a uma alteração no widget. A função retorna um mapeamento que fornece detalhes para a ação ser executada quando uma opção é alterada. As teclas são as opções fornecidas ao widget e os valores são as funções chamadas sempre que uma alteração na opção é detectada.
-   * O `getEventMap` método mapeia eventos acionados pelo widget, com os eventos exigidos pelo modelo de formulário adaptável. O valor padrão mapeia eventos HTML padrão para o widget padrão e precisa ser atualizado se um evento alternativo for acionado.
-   * A cláusula de exibição `showDisplayValue` e edição de imagem é aplicada `showValue` e pode ser substituída para ter um comportamento alternativo.
+   * Estenda o método `getOptionsMap` para substituir qualquer configuração de opção afetada devido a uma alteração no widget. A função retorna um mapeamento que fornece detalhes para a ação ser executada quando uma opção é alterada. As teclas são as opções fornecidas ao widget e os valores são as funções chamadas sempre que uma alteração na opção é detectada.
+   * O método `getEventMap` mapeia eventos acionados pelo widget, com os eventos exigidos pelo modelo de formulário adaptável. O valor padrão mapeia eventos HTML padrão para o widget padrão e precisa ser atualizado se um evento alternativo for acionado.
+   * As opções `showDisplayValue` e `showValue` aplicam a cláusula de exibição e edição de imagem e podem ser substituídas para ter um comportamento alternativo.
 
-   * O `getCommitValue` método é chamado pela estrutura de formulários adaptáveis quando o `commit`evento ocorre. Geralmente, é o evento exit, exceto para os elementos suspensos, botões de opção e caixas de seleção nos quais ocorre ao mudar). Para obter mais informações, consulte Expressões [de formulários](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)adaptáveis.
+   * O método `getCommitValue` é chamado pela estrutura de formulários adaptáveis quando o evento `commit`ocorre. Geralmente, é o evento exit, exceto para os elementos suspensos, botões de opção e caixas de seleção nos quais ocorre ao mudar). Para obter mais informações, consulte [Expressões adaptáveis Forms](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
    * O arquivo de modelo fornece implementação de amostra para vários métodos. Remova os métodos que não devem ser estendidos.
 
 ### Criar uma biblioteca de cliente {#create-a-client-library}
 
-O projeto de amostra gerado pelo arquétipo Maven cria automaticamente as bibliotecas do cliente necessárias e as envolve em uma biblioteca do cliente com uma categoria `af.customwidgets`. Os arquivos JavaScript e CSS disponíveis no `af.customwidgets` são incluídos automaticamente no tempo de execução.
+O projeto de amostra gerado pelo arquétipo Maven cria automaticamente as bibliotecas de cliente necessárias e as envolve em uma biblioteca de cliente com uma categoria `af.customwidgets`. Os arquivos JavaScript e CSS disponíveis em `af.customwidgets` são incluídos automaticamente no tempo de execução.
 
 ### Criar e instalar {#build-and-install}
 
@@ -181,15 +181,15 @@ Para criar o projeto, execute o seguinte comando no shell para gerar um pacote C
 
 >[!NOTE]
 >
->O projeto maven se refere a um repositório remoto dentro do arquivo POM. Isso é feito apenas para fins de referência e, de acordo com os padrões Maven, as informações do repositório são capturadas no `settings.xml` arquivo.
+>O projeto maven se refere a um repositório remoto dentro do arquivo POM. Isso é feito apenas para fins de referência e, de acordo com os padrões Maven, as informações do repositório são capturadas no arquivo `settings.xml`.
 
-### Atualizar o formulário adaptável {#update-the-adaptive-form}
+### Atualize o formulário adaptável {#update-the-adaptive-form}
 
 Para aplicar a aparência personalizada a um campo de formulário adaptável:
 
 1. Abra o formulário adaptável no modo de edição.
-1. Abra a caixa de diálogo **Propriedade** do campo no qual você deseja aplicar a aparência personalizada.
-1. Na guia **Estilo** , atualize a `CSS class` propriedade para adicionar o nome da aparência no `widget_<widgetName>` formato. Por exemplo: **widget_numericstep**
+1. Abra a caixa de diálogo **Propriedade** para o campo no qual deseja aplicar a aparência personalizada.
+1. Na guia **Estilo**, atualize a propriedade `CSS class` para adicionar o nome da aparência no formato `widget_<widgetName>`. Por exemplo: **widget_numericstep**
 
 ## Amostra: Criar uma aparência personalizada   {#sample-create-a-custom-appearance-nbsp}
 
@@ -216,7 +216,7 @@ Agora vamos observar um exemplo para criar uma aparência personalizada para que
 
    `Define value for property 'widgetName': numericStepper`
 
-1. Navegue até o diretório `customWidgets` (valor especificado para a `artifactID` propriedade) e execute o seguinte comando para gerar um projeto Eclipse:
+1. Navegue até o diretório `customWidgets` (valor especificado para a propriedade `artifactID`) e execute o seguinte comando para gerar um projeto Eclipse:
 
    `mvn eclipse:eclipse`
 
@@ -224,9 +224,9 @@ Agora vamos observar um exemplo para criar uma aparência personalizada para que
 
    1. Selecione **[!UICONTROL Arquivo > Importar > Projetos existentes no Workspace]**.
 
-   1. Procure e selecione a pasta na qual você executou o `archetype:generate` comando.
+   1. Procure e selecione a pasta na qual você executou o comando `archetype:generate`.
 
-   1. Click **[!UICONTROL Finish]**.
+   1. Clique em **[!UICONTROL Concluir]**.
 
       ![captura de tela do eclipse](assets/eclipse-screenshot.png)
 
@@ -234,20 +234,20 @@ Agora vamos observar um exemplo para criar uma aparência personalizada para que
 
    [https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
 
-   No projeto do Eclipse, reveja o código do plug-in no `plugin.js` arquivo para garantir que ele corresponda aos requisitos para a aparência. Nessa amostra, a aparência atende aos seguintes requisitos:
+   No projeto do Eclipse, reveja o código do plug-in no arquivo `plugin.js` para garantir que ele corresponda aos requisitos para a aparência. Nessa amostra, a aparência atende aos seguintes requisitos:
 
-   * O passo numérico deve se estender de `- $.xfaWidget.numericInput`.
-   * O `set value` método do widget define o valor após o foco estar no campo. É um requisito obrigatório para um widget de formulário adaptável.
-   * O `render` método precisa ser substituído para chamar o `bootstrapNumber` método.
+   * A revisão numérica deve se estender de `- $.xfaWidget.numericInput`.
+   * O método `set value` do widget define o valor após o foco estar no campo. É um requisito obrigatório para um widget de formulário adaptável.
+   * O método `render` precisa ser substituído para chamar o método `bootstrapNumber`.
 
    * Não há nenhuma dependência adicional para o plug-in que não seja o código-fonte principal do plug-in.
    * A amostra não executa nenhum estilo na revisão, portanto, nenhum CSS adicional é necessário.
-   * O `$userControl` objeto deve estar disponível para o `render` método. É um campo do `text` tipo clonado com o código do plug-in.
+   * O objeto `$userControl` deve estar disponível para o método `render`. É um campo do tipo `text` que é clonado com o código do plug-in.
 
    * Os botões **+** e **-** devem ser desativados quando o campo estiver desativado.
 
-1. Substitua o conteúdo do `bootstrap-number-input.js` (plug-in jQuery) pelo conteúdo do `numericStepper-plugin.js` arquivo.
-1. No `numericStepper-widget.js` arquivo, adicione o seguinte código para substituir o método de renderização para chamar o plug-in e retornar o `$userControl` objeto:
+1. Substitua o conteúdo do `bootstrap-number-input.js` (plug-in jQuery) pelo conteúdo do arquivo `numericStepper-plugin.js`.
+1. No arquivo `numericStepper-widget.js`, adicione o seguinte código para substituir o método de renderização para chamar o plug-in e retornar o objeto `$userControl`:
 
    ```javascript
    render : function() {
@@ -267,7 +267,7 @@ Agora vamos observar um exemplo para criar uma aparência personalizada para que
    }
    ```
 
-1. No `numericStepper-widget.js` arquivo, substitua a `getOptionsMap` propriedade para substituir a opção de acesso e oculte os botões + e - no modo desativado.
+1. No arquivo `numericStepper-widget.js`, substitua a propriedade `getOptionsMap` para substituir a opção de acesso e oculta os botões + e - no modo desativado.
 
    ```javascript
    getOptionsMap: function(){
@@ -309,16 +309,16 @@ Agora vamos observar um exemplo para criar uma aparência personalizada para que
     }
    ```
 
-1. Salve as alterações, navegue até a pasta que contém o `pom.xml` arquivo e execute o seguinte comando Maven para criar o projeto:
+1. Salve as alterações, navegue até a pasta que contém o arquivo `pom.xml` e execute o seguinte comando Maven para criar o projeto:
 
    `mvn clean install`
 
-1. Instale o pacote usando o AEM Package Manager.
+1. Instale o pacote usando AEM Package Manager.
 
 1. Abra o formulário adaptável no modo de edição no qual você deseja aplicar a aparência personalizada e faça o seguinte:
 
    1. Clique com o botão direito do mouse no campo no qual deseja aplicar a aparência e clique em **[!UICONTROL Editar]** para abrir a caixa de diálogo Editar componente.
 
-   1. Na guia Estilo, atualize a propriedade de classe **[!UICONTROL CSS a ser adicionada]** `widget_numericStepper`.
+   1. Na guia Estilo, atualize a propriedade **[!UICONTROL classe CSS]** para adicionar `widget_numericStepper`.
 
 A nova aparência que você acabou de criar está disponível para uso.
