@@ -50,36 +50,36 @@ O código neste tutorial dependerá do nome da pasta principal ser o mesmo para 
    >   * underscore torna-se &#39;_005f&#39;
 
 
-## Configurar o diretório do aplicativo (/apps) {#setup-the-application-directory-apps}
+## Configurar o Diretório de Aplicativos (/apps) {#setup-the-application-directory-apps}
 
 O diretório /apps no repositório contém o código com implementa o comportamento e a renderização das páginas fornecidas do diretório /content.
 
 O diretório /apps está protegido e não é acessível publicamente, como são os diretórios /content e /etc/designs.
 
-1. Create `/apps/an-scf-sandbox` folder.
+1. Crie a pasta `/apps/an-scf-sandbox`.
 
-   Usando o **[!UICONTROL CRXDE Lite]**, no painel explorador
+   Usando **[!UICONTROL CRXDE Lite]**, no painel do explorador
 
-   1. Selecione a `/apps` pasta.
-   1. Clique com o botão direito do mouse em **[!UICONTROL Criar]**... ou puxe para baixo a opção **[!UICONTROL Criar...]** menu.
+   1. Selecione a pasta `/apps`.
+   1. Clique com o botão direito do mouse em **[!UICONTROL Criar]**... ou puxe para baixo **[!UICONTROL Criar...]**.
    1. Selecione **[!UICONTROL Criar pasta...]**.
-   1. Na caixa de diálogo **[!UICONTROL Criar pasta]** , digite `an-scf-sandbox`.
+   1. Na caixa de diálogo **[!UICONTROL Criar pasta]**, digite `an-scf-sandbox`.
    1. Clique em **[!UICONTROL OK]**.
 
-1. Criar subpasta **[!UICONTROL de componentes]** .
+1. Crie a subpasta **[!UICONTROL components]**.
 
-   1. Selecione a `/apps/an-scf-sandbox` pasta.
+   1. Selecione a pasta `/apps/an-scf-sandbox`.
    1. Clique em **[!UICONTROL Criar > Criar pasta]**.
-   1. Na caixa de diálogo **[!UICONTROL Criar pasta]** , digite **[!UICONTROL componentes]**.
+   1. Na caixa de diálogo **[!UICONTROL Criar pasta]**, digite **[!UICONTROL componentes]**.
    1. Clique em **[!UICONTROL OK]**.
 
-1. Criar subpasta **[!UICONTROL de modelos]** .
+1. Crie a subpasta **[!UICONTROL modelos]**.
 
-   1. Selecione a `/apps/an-scf-sandbox` pasta.
+   1. Selecione a pasta `/apps/an-scf-sandbox`.
    1. Clique em **[!UICONTROL Criar > Criar pasta]**.
-   1. Na caixa de diálogo **[!UICONTROL Criar pasta]** , digite **[!UICONTROL modelos]**.
+   1. Na caixa de diálogo **[!UICONTROL Criar pasta]**, digite **[!UICONTROL modelos]**.
    1. Clique em **[!UICONTROL OK]**.
-   1. Selecione novamente `/apps/an-scf-sandbox`.
+   1. Reselecione `/apps/an-scf-sandbox`.
    1. Selecione **[!UICONTROL Salvar tudo]**.
 
    Como em qualquer processo de edição, salve com frequência. Se você encontrar problemas com a inserção de dados, isso pode ocorrer porque seu login expirou ou você precisa salvar as edições anteriores.
@@ -92,17 +92,17 @@ O diretório /apps está protegido e não é acessível publicamente, como são 
 
 O diretório /etc/designs contém as imagens, scripts e folhas de estilo que serão baixadas juntamente com o conteúdo da página.
 
-1. Para usar a ferramenta Designer na interface clássica, navegue até [https://&lt;servidor>:&lt;porta>/miscadmin](http://localhost:4502/miscadmin).
+1. Para usar a ferramenta Designer na interface clássica, navegue até [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
    Observação: Se você usar CRXDE Lite para criar um Nó do tipo `cq:Page`, o Controle de acesso e a Replicação não serão definidos com as configurações padrão de uma página.
 
-1. No painel explorador, selecione a pasta **[!UICONTROL Designs]** e clique em **[!UICONTROL Nova]** > **[!UICONTROL Nova página]**.
+1. No painel explorador, selecione a pasta **[!UICONTROL Designs]** e clique em **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**.
 
    Digite:
 
    * Título: **[!UICONTROL Uma caixa de proteção SCF]**
    * Nome: **[!UICONTROL an-scf-sandbox]**
-   * Selecionar modelo de página **[!UICONTROL de design]**
+   * Selecione **[!UICONTROL Modelo de Página de Design]**
 
    Clique em **[!UICONTROL Criar]**.
 
@@ -120,4 +120,4 @@ O diretório /etc/designs contém as imagens, scripts e folhas de estilo que ser
 
 O diretório /content no repositório é onde o conteúdo do site reside. Os caminhos em /content compreendem os caminhos do URL para as solicitações do navegador.
 
-*Depois* que o modelo [de](initial-app.md#createthepagetemplate) página é criado como parte do aplicativo inicial, o conteúdo da página inicial pode ser criado com base no modelo.... [**execute**](initial-app.md)
+*Depois* que os modelos de  [página ](initial-app.md#createthepagetemplate) forem criados como parte do aplicativo inicial, o conteúdo da página inicial poderá ser criado com base no modelo....  [**execute**](initial-app.md)
