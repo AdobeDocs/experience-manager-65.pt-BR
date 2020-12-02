@@ -23,13 +23,13 @@ ht-degree: 0%
 ## Pré-requisitos {#prerequisites}
 
 * [Criação de pacotes OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [Desenvolvimento de componentes do AEM](/help/sites-developing/components.md)
+* [Desenvolvimento de componentes AEM](/help/sites-developing/components.md)
 * [Criar formulário adaptável](../../forms/using/creating-adaptive-form.md)
 * [Criação de formulário adaptativo](../../forms/using/introduction-forms-authoring.md)
 
 ## Procedimento para preencher dinamicamente listas suspensas {#procedure-to-dynamically-populate-drop-down-lists}
 
-Considere um cenário em que você deseja preencher a lista suspensa **Estado** com base em um valor selecionado na lista suspensa **País** . Se você selecionar Austrália na lista suspensa **País** , a lista suspensa **Estado** exibirá os estados na Austrália. O procedimento a seguir descreve como realizar essa tarefa.
+Considere um cenário em que você deseja preencher a lista suspensa **Estado** com base em um valor selecionado na lista suspensa **País**. Se você selecionar Austrália na lista suspensa **País**, a lista suspensa **Estado** exibirá os estados na Austrália. O procedimento a seguir descreve como realizar essa tarefa.
 
 1. Crie um projeto com os seguintes módulos:
 
@@ -147,16 +147,16 @@ Considere um cenário em que você deseja preencher a lista suspensa **Estado** 
    }
    ```
 
-1. Crie um nó suspenso em uma hierarquia de pastas específica em aplicativos (por exemplo, crie um nó em /apps/myfolder/demo). Certifique-se de que o `sling:resourceType` parâmetro para o nó seja o mesmo para o qual os pontos de servlet (/apps/populatedropdown).
+1. Crie um nó suspenso em uma hierarquia de pastas específica em aplicativos (por exemplo, crie um nó em /apps/myfolder/demo). Certifique-se de que o parâmetro `sling:resourceType` para o nó seja o mesmo para o qual o servlet aponta (/apps/populatedropdown).
 
    ![Criar um nó suspenso](assets/dropdown-node.png)
 
 1. Compacte o nó de conteúdo e incorpore o arquivo .jar em um local específico (por exemplo, /apps/myfolder/demo/install/). Implante o mesmo arquivo no servidor.
-1. Crie um formulário adaptável e adicione duas listas suspensas, País e Estado. A lista País pode incluir os nomes dos países. A lista State pode preencher dinamicamente os nomes dos estados para o país selecionado na primeira lista.
+1. Crie um formulário adaptável e adicione duas listas suspensas, País e Estado. A lista do País pode incluir os nomes dos países. A lista State pode preencher dinamicamente os nomes dos estados para o país selecionado na primeira lista.
 
    Adicione os nomes dos países a serem exibidos na lista do país. Na lista State (Estado), adicione um script para preenchê-lo com base no nome do país na lista Country (País).
 
-   ![Adicionando nomes](assets/country-dropdown.png) de países ![Adicionando script para preencher nomes](assets/state-dropdown.png) de estado ![País e Estado listas suspensas para reunir](assets/2dropdowns.png)
+   ![Adicionar ](assets/country-dropdown.png) ![nomes de paísesAdicionar script para preencher ](assets/state-dropdown.png) ![nomes de estadolistas suspensas País e Estado para reunir](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
