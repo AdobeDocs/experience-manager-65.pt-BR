@@ -1,6 +1,6 @@
 ---
-title: Práticas recomendadas
-seo-title: Práticas recomendadas
+title: 'Práticas recomendadas    '
+seo-title: 'Práticas recomendadas    '
 description: As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 seo-description: As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 65%
 
 ---
 
 
-# Práticas recomendadas{#best-practices}
+# Práticas recomendadas    {#best-practices}
 
 As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 
@@ -66,10 +69,10 @@ As práticas recomendadas do Assets, incluindo a capacidade de Dynamic Media e a
 
 O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas recomendadas descritas a seguir:
 
-Criação: Ambiente e ferramentas [do](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) autor - fornece uma visão geral sobre como criar páginas.
+Criação: [ambiente e ferramentas do autor](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornece uma visão geral sobre como criar páginas.
 
 ## Forms {#forms}
 
-Formulários adaptativos: Práticas [recomendadas para trabalhar com formulários](/help/forms/using/adaptive-forms-best-practices.md) adaptáveis - descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptáveis.
+Formulários adaptativos: [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md) - Descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptativos.
 
-Formulários HTML5: Práticas [recomendadas para a criação de formulários](/help/forms/using/best-practices-for-html5-forms.md) HTML5 - descreve as práticas recomendadas para trabalhar com o layout e o design de formulários HTML5.
+Formulários HTML5: [Práticas recomendadas para criar formulários HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Descreve as práticas recomendadas para trabalhar no layout e no design de formulários HTML5.
