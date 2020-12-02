@@ -1,8 +1,8 @@
 ---
-title: Administração de fluxos de trabalho
-seo-title: Administração de fluxos de trabalho
-description: Saiba como administrar fluxos de trabalho no AEM.
-seo-description: Saiba como administrar fluxos de trabalho no AEM.
+title: Administração de Workflows
+seo-title: Administração de Workflows
+description: Saiba como administrar workflows em AEM.
+seo-description: Saiba como administrar workflows em AEM.
 uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,41 +11,45 @@ content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
 
-# Administração de fluxos de trabalho{#administering-workflows}
+# Administração de Workflows{#administering-workflows}
 
-Os fluxos de trabalho permitem automatizar as atividades do Adobe Experience Manager (AEM). Fluxos de trabalhos:
+Os workflows permitem que você automatize as atividades Adobe Experience Manager (AEM). Fluxos de trabalhos:
 
 * Consiste de uma série de etapas executadas em uma ordem específica.
 
-   * Cada etapa executa uma atividade distinta; como aguardar entrada do usuário, ativar uma página ou enviar uma mensagem de email.
+   * Cada etapa executa uma atividade distinta; como aguardar a entrada do usuário, ativar uma página ou enviar uma mensagem de email.
 
-* Pode interagir com ativos no repositório, contas de usuário e serviços AEM.
-* Pode coordenar atividades complicadas que envolvem qualquer aspecto do AEM.
+* Pode interagir com ativos no repositório, contas de usuário e serviços de AEM.
+* Pode coordenar atividades complicadas que envolvem qualquer aspecto da AEM.
 
-Os processos de negócios que sua organização estabeleceu podem ser representados como fluxos de trabalho. Por exemplo, o processo de publicação de conteúdo do site normalmente inclui etapas como aprovação e aprovação por vários participantes. Esses processos podem ser implementados como fluxos de trabalho do AEM e aplicados a páginas de conteúdo e ativos.
+Os processos de negócios que sua organização estabeleceu podem ser representados como workflows. Por exemplo, o processo de publicação de conteúdo do site normalmente inclui etapas como aprovação e aprovação por vários participantes. Esses processos podem ser implementados como workflows AEM e aplicados a páginas de conteúdo e ativos.
 
-* [Iniciando fluxos de trabalho](/help/sites-administering/workflows-starting.md)
+* [Iniciando Workflows](/help/sites-administering/workflows-starting.md)
 * [Administração de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md)
-* [Gerenciamento do acesso aos fluxos de trabalho](/help/sites-administering/workflows-managing.md)
+* [Gerenciamento do acesso a Workflows](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
 >
 >Para obter mais informações, consulte:
 >
->* Aplicação e participação em fluxos de trabalho: [Trabalhar com fluxos de trabalho](/help/sites-authoring/workflows.md).
->* Criação de modelos de fluxo de trabalho e extensão da funcionalidade do fluxo de trabalho: [Desenvolvimento e extensão de fluxos de trabalho](/help/sites-developing/workflows.md).
->* Melhorando o desempenho dos fluxos de trabalho que usam recursos significativos do servidor: Processamento [](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)de fluxo de trabalho simultâneo.
+>* Aplicação e participação em workflows: [Trabalhando com Workflows](/help/sites-authoring/workflows.md).
+>* Criação de modelos de fluxo de trabalho e extensão da funcionalidade do fluxo de trabalho: [Desenvolvimento e extensão de Workflows](/help/sites-developing/workflows.md).
+>* Melhorando o desempenho de workflows que usam recursos significativos do servidor: [Processamento de Fluxo de Trabalho Simultâneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+
 >
 
 
 
 ## Modelos e instâncias de fluxo de trabalho {#workflow-models-and-instances}
 
-[Os modelos](/help/sites-developing/workflows.md#model) de fluxo de trabalho no AEM são a representação e implementação de processos de negócios:
+[Os ](/help/sites-developing/workflows.md#model) modelos de fluxo de trabalho em AEM são a representação e implementação de processos de negócios:
 
 * Normalmente, eles agem em páginas ou ativos para obter um resultado específico.
 * Essas páginas e/ou ativos são chamados de carga do fluxo de trabalho.
@@ -56,7 +60,7 @@ Quando um modelo de fluxo de trabalho é iniciado (executado), uma instância de
 
 >[!CAUTION]
 >
->As etapas executadas são as definidas pelo modelo de fluxo de trabalho *no momento em que a instância é gerada*. Consulte [Desenvolvimento de fluxos de trabalho](/help/sites-developing/workflows.md#model) para obter mais detalhes.
+>As etapas executadas são as definidas pelo modelo de fluxo de trabalho *no momento em que a instância é gerada*. Consulte [Desenvolvimento de Workflows](/help/sites-developing/workflows.md#model) para obter mais detalhes.
 
 As instâncias de fluxo de trabalho avançam pelo seguinte ciclo de vida:
 
@@ -64,14 +68,14 @@ As instâncias de fluxo de trabalho avançam pelo seguinte ciclo de vida:
 
    1. A carga da instância do fluxo de trabalho é identificada quando o modelo é iniciado.
    1. A instância é efetivamente uma cópia do modelo (como no momento da criação).
-   1. Os autores, administradores ou serviços do AEM podem iniciar modelos de fluxo de trabalho.
+   1. AEM autores, administradores ou serviços podem criar modelos de fluxo de trabalho de start.
 
 1. A primeira etapa do modelo de fluxo de trabalho é executada.
-1. A etapa é concluída e o mecanismo de fluxo de trabalho usa o modelo para determinar a próxima etapa a ser executada.
+1. A etapa é concluída e o motor de workflow usa o modelo para determinar a próxima etapa a ser executada.
 1. As etapas subsequentes no modelo de fluxo de trabalho são executadas e concluídas.
 1. Quando a etapa final é concluída, a instância do fluxo de trabalho é concluída e, portanto, arquivada.
 
-Muitos modelos de fluxo de trabalho úteis são fornecidos com o AEM. Além disso, os desenvolvedores em sua organização podem criar modelos de fluxo de trabalho personalizados, adaptados às necessidades específicas de seus processos de negócios.
+Muitos modelos úteis de fluxo de trabalho são fornecidos com AEM. Além disso, os desenvolvedores em sua organização podem criar modelos de fluxo de trabalho personalizados, adaptados às necessidades específicas de seus processos de negócios.
 
 ## Etapas do fluxo de trabalho {#workflow-steps}
 
@@ -84,7 +88,7 @@ Um usuário ou serviço executa etapas de fluxo de trabalho, dependendo do tipo 
 
 >[!NOTE]
 >
->Se ocorrer um erro, a implementação de serviço/etapa deve lidar com o comportamento de um cenário de erro. O próprio mecanismo de fluxo de trabalho tentará novamente o trabalho, registrará um erro e interromperá a instância.
+>Se ocorrer um erro, a implementação de serviço/etapa deve lidar com o comportamento de um cenário de erro. O próprio motor de workflow tentará novamente o trabalho, registrará um erro e interromperá a instância.
 
 ## Status e ações do fluxo de trabalho {#workflow-status-and-actions}
 
@@ -105,5 +109,5 @@ Dependendo do status atual, você pode executar ações em executar instâncias 
 
 * **Suspender**: Interrompe temporariamente a execução do fluxo de trabalho. A suspensão é útil em casos excepcionais quando você não deseja que o fluxo de trabalho continue, por exemplo, para manutenção. A suspensão altera o estado do fluxo de trabalho para Suspenso.
 * **Retomar**: Reinicie um fluxo de trabalho suspenso no mesmo ponto de execução em que ele foi suspenso, usando a mesma configuração.
-* **Terminar**: Termina a execução do fluxo de trabalho e altera o estado para **ABORTED**. Uma instância de fluxo de trabalho abortada não pode ser reiniciada.
+* **Terminar**: Termina a execução do fluxo de trabalho e altera o estado para  **ABORTED**. Uma instância de fluxo de trabalho abortada não pode ser reiniciada.
 
