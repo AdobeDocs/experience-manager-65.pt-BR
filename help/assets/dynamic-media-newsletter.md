@@ -1,6 +1,6 @@
 ---
 title: Newsletter do Dynamic Media
-description: 'A newsletter Dynamic Media da Experience League é uma newsletter mensal. Ele foi projetado para ajudá-lo a se atualizar com o Dynamic Media e o Dynamic Media Classic, para que você possa start imediatamente para obter valor. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim de balcão único, incluindo vídeos, visões gerais de soluções e apresentações para alguns dos principais recursos e recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
+description: 'A newsletter do Dynamic Media da Experience League é uma newsletter mensal. Ele foi projetado para ajudá-lo a se atualizar com o Dynamic Media e o Dynamic Media Classic, para que você possa start imediatamente para obter valor. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim de balcão único, incluindo vídeos, visões gerais de soluções e apresentações para alguns dos principais recursos e recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # ![Logotipo da Newsletter do Dynamic Media](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-A newsletter mensal do Dynamic Media pela Experience League foi projetada para ajudá-lo a se familiarizar com o Dynamic Media e o Dynamic Media Classic, para que você possa start a valor imediatamente.
+A newsletter mensal do Dynamic Media da Experience League foi projetada para ajudá-lo a se familiarizar com o Dynamic Media e o Dynamic Media Classic, para que você possa obter o valor imediatamente.
 
 Neste boletim de balcão único, descubra recursos valiosos para a criação de conhecimento, como vídeos passo a passo, visão geral da solução e apresentações para alguns dos principais recursos e recursos da solução, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais.
 
 ## Inspire-se. Mantenha-se informado.
 
-[Inscreva-se](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para receber a newsletter do Dynamic Media mensalmente na sua caixa de entrada.
+[Faça logon ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para receber a newsletter do Dynamic Media mensalmente em sua caixa de entrada.
 
 ## Ocorreu um problema com a newsletter do Dynamic Media?
 
@@ -53,7 +53,7 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
 
    >[!IMPORTANT]
    >
-   >Queremos ter certeza de que estamos enviando apenas o boletim informativo do Dynamic Media para aqueles que desejam recebê-lo. Para continuar recebendo o boletim informativo após este problema, inscreva-se para ele [aqui](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
+   >Queremos ter certeza de que estamos enviando apenas o boletim informativo do Dynamic Media para aqueles que desejam recebê-lo. Para continuar recebendo o boletim informativo após esse problema, inscreva-se [aqui](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
 
 * **[Fevereiro de 2020, Edição 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -95,7 +95,7 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
    * Um artigo do CMSwire que ajuda você a entender como atualizar sua estratégia de mídias avançadas para atender às expectativas atuais dos clientes.
    * Acesso ao webinar sob demanda no Dynamic Media da série Skill Builder.
    * Conheça Nick Peters, Gerente, Engenharia de Confiança no Site, Adobe Experience Manager.
-   * Acelere o Dynamic Media e o Dynamic Media Classic na Experience League.
+   * Atualize-se com o Dynamic Media e o Dynamic Media Classic no Experience League.
 
 * **[Setembro de 2019, Edição 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
@@ -106,7 +106,7 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
    * Uma segunda chance de capturar dois webinars recentes do Construtor de habilidades.
    * Assista ao webinário sob demanda para proteger seus ativos digitais contra pirataria.
    * Conheça a Bridget Roman, Gerente sênior de marketing de produtos para Adobe Experience Manager Assets.
-   * Acelere o Dynamic Media e o Dynamic Media Classic na Experience League.
+   * Atualize-se com o Dynamic Media e o Dynamic Media Classic no Experience League.
 
 
 * **[Agosto de 2019, edição 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
@@ -115,7 +115,7 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
 
    * Explore recursos valiosos disponíveis somente quando você atualizar para o Dynamic Media.
    * Saiba mais sobre uma série de webinários criada para agilizar o seu funcionamento com os ativos Adobe Experience Manager e o Dynamic Media.
-   * Start sua jornada obtendo valor do Dynamic Media na Experience League.
+   * Start sua jornada obtendo valor do Dynamic Media no Experience League.
    * Dê uma olhada numa integração poderosa que vem neste setembro e permite analisar como os visitantes interagem com sua mídia avançada.
    * Conheça PieterJan Pieper, wiz de suporte técnico do Dynamic Media.
 
@@ -136,7 +136,7 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
    Nesta edição:
 
    * Curta vídeos que destacam a sensatez de atualizar para o Dynamic Media no AEM Assets.
-   * Assista aos vídeos práticos da Experience League.
+   * Assista aos vídeos práticos principais no Experience League.
    * Saiba mais sobre o Adobe Insider Tour futuro.
    * Leia sobre como você pode proteger seus ativos digitais de serem pirateados.
    * Saiba mais sobre o Smart Crop controlado por AI para imagens.
@@ -147,7 +147,7 @@ Neste boletim de balcão único, descubra recursos valiosos para a criação de 
    Nesta edição:
 
    * Descubra os 10 principais recursos ocultos do Dynamic Media Classic em uma publicação de blog.
-   * Assista aos vídeos práticos da Experience League.
+   * Assista aos vídeos práticos principais no Experience League.
    * Saiba mais sobre a próxima Adobe Insider Tour.
    * Leia uma série de blogues de três partes para atualizar sua estratégia de mídia avançada.
    * Saiba mais sobre o recorte inteligente de vídeo controlado por AI.
