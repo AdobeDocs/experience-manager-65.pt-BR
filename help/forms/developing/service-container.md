@@ -37,15 +37,15 @@ A tabela a seguir descreve as diferentes maneiras pelas quais você pode chamar 
   </tr>
   <tr>
    <td><p>API Java</p></td>
-   <td><p>Uma API Java pode chamar um serviço AEM Forms. A API Java é organizada nas bibliotecas do cliente e na API de chamada do Java. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">Invocando o AEM Forms usando a API</a>Java.)</p></td>
+   <td><p>Uma API Java pode chamar um serviço AEM Forms. A API Java é organizada nas bibliotecas do cliente e na API de chamada do Java. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">Invocar o AEM Forms usando a API Java</a>.)</p></td>
   </tr>
   <tr>
    <td><p>Serviços Web</p></td>
-   <td><p>A AEM Forms oferece suporte a padrões de serviço da Web, como SOAP/HTTP. Um serviço pode ser exposto como um serviço da Web, com o WSDL em conformidade com os padrões de serviço da Web definidos pelo W3C.</p><p>Um serviço pode ser chamado a partir de qualquer pilha de serviços da Web, incluindo o .NET Framework e o Sun™ Web Services SDK. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Invocando o AEM Forms usando os Serviços</a>da Web.)</p></td>
+   <td><p>A AEM Forms oferece suporte a padrões de serviço da Web, como SOAP/HTTP. Um serviço pode ser exposto como um serviço da Web, com o WSDL em conformidade com os padrões de serviço da Web definidos pelo W3C.</p><p>Um serviço pode ser chamado a partir de qualquer pilha de serviços da Web, incluindo o .NET Framework e o Sun™ Web Services SDK. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Invocar o AEM Forms usando os Serviços Web</a>.)</p></td>
   </tr>
   <tr>
    <td><p>Pedidos REST</p></td>
-   <td><p>A AEM Forms suporta solicitações REST. Um serviço pode ser chamado diretamente de uma página HTML. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Invocando o AEM Forms usando Solicitações</a>REST.)</p></td>
+   <td><p>A AEM Forms suporta solicitações REST. Um serviço pode ser chamado diretamente de uma página HTML. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Invocando o AEM Forms usando Solicitações REST</a>.)</p></td>
   </tr>
  </tbody>
 </table>
@@ -54,16 +54,16 @@ A ilustração a seguir fornece uma representação visual das diferentes maneir
 
 >[!NOTE]
 >
->Além de usar o AEM Forms SDK para criar aplicativos clientes que possam chamar os serviços da AEM Forms, você também pode criar componentes que podem ser implantados no container de serviço. Por exemplo, você pode criar um componente Banco que contenha tipos de dados personalizados que podem ser usados em processos. Ou seja, você pode criar um tipo de dados como `com.adobe.idp.BankAccount`. Em seguida, é possível criar `com.adobe.idp.BankAccount` instâncias nos aplicativos clientes.
+>Além de usar o AEM Forms SDK para criar aplicativos clientes que possam chamar os serviços da AEM Forms, você também pode criar componentes que podem ser implantados no container de serviço. Por exemplo, você pode criar um componente Banco que contenha tipos de dados personalizados que podem ser usados em processos. Ou seja, você pode criar um tipo de dados como `com.adobe.idp.BankAccount`. Em seguida, você pode criar instâncias `com.adobe.idp.BankAccount` em seus aplicativos clientes.
 
 O container de serviço oferece a seguinte funcionalidade:
 
-* Permite que os serviços da AEM Forms sejam chamados usando métodos diferentes. Você pode configurar um serviço definindo pontos de extremidade para que ele possa ser chamado usando todos os métodos: Remoting, a API Java, os serviços da Web e REST. (Consulte Gerenciamento [Programático de Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
+* Permite que os serviços da AEM Forms sejam chamados usando métodos diferentes. Você pode configurar um serviço definindo pontos de extremidade para que ele possa ser chamado usando todos os métodos: Remoting, a API Java, os serviços da Web e REST. (Consulte [Gerenciando Programaticamente Endpoints](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
 * Converte uma mensagem em um formato normalizado chamado solicitação de invocação. Uma solicitação de invocação é enviada de um aplicativo cliente (ou de outro serviço) para um serviço localizado no container de serviço. Uma solicitação de invocação contém informações como o nome do serviço a ser chamado e valores de dados necessários para executar a operação. Muitos serviços exigem um documento para executar uma operação. Portanto, uma solicitação de invocação geralmente contém um documento, que pode ser dados PDF, dados XDP, dados XML e assim por diante.
 * Encaminha solicitações de invocação para serviços apropriados (o nome do serviço a ser chamado faz parte da solicitação de invocação).
 * Executa tarefas como determinar se o chamador tem permissão para chamar a operação de serviço especificada. A solicitação de invocação deve conter um nome de usuário e senha válidos para formulários AEM.
 
-   Há maneiras diferentes de enviar uma solicitação de invocação para um serviço. Além disso, há diferentes maneiras de enviar os valores de entrada necessários para o serviço. Por exemplo, suponha que você use a API Java para chamar um serviço que exija um documento PDF. O método Java correspondente contém um parâmetro que aceita um documento PDF. Nessa situação, o tipo de dados do parâmetro é `com.adobe.idp.Document`. (Consulte [Transmissão de dados para serviços da AEM Forms usando a API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)Java.)
+   Há maneiras diferentes de enviar uma solicitação de invocação para um serviço. Além disso, há diferentes maneiras de enviar os valores de entrada necessários para o serviço. Por exemplo, suponha que você use a API Java para chamar um serviço que exija um documento PDF. O método Java correspondente contém um parâmetro que aceita um documento PDF. Nessa situação, o tipo de dados do parâmetro é `com.adobe.idp.Document`. (Consulte [Passar dados para os serviços da AEM Forms usando a API do Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
    Se você chamar um serviço usando pastas monitoradas, uma solicitação de invocação será enviada quando você colocar um arquivo em uma pasta assistida configurada. Se você chamar um serviço usando email, uma solicitação de invocação será enviada para um serviço quando uma mensagem de email chegar em uma caixa de entrada configurada.
 
@@ -71,7 +71,7 @@ O container de serviço oferece a seguinte funcionalidade:
 
    Uma resposta de invocação pode ser recuperada da mesma maneira em que uma solicitação de invocação é enviada. Ou seja, se a solicitação de invocação for enviada usando a API Java, uma resposta de invocação poderá ser recuperada usando a API Java. Considere, por exemplo, que uma operação modifica um documento PDF. Você pode recuperar o documento PDF modificado obtendo o valor de retorno do método Java que invocou o serviço.
 
-   Quando um processo de longa duração é chamado, uma resposta de invocação contém um valor identificador associado à solicitação de invocação. Usando esse valor identificador, você pode verificar o status do processo posteriormente. Por exemplo, considere o serviço de longa duração da MortgageLoan. Usando o valor do identificador, você pode verificar se o processo foi concluído com êxito. (Consulte [Invocando Processos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)De Vida Longa Centrados Em Pessoas.)
+   Quando um processo de longa duração é chamado, uma resposta de invocação contém um valor identificador associado à solicitação de invocação. Usando esse valor identificador, você pode verificar o status do processo posteriormente. Por exemplo, considere o serviço de longa duração da MortgageLoan. Usando o valor do identificador, você pode verificar se o processo foi concluído com êxito. (Consulte [Invocando processos de longa vida centrados em humanos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
    O diagrama a seguir mostra um aplicativo cliente (que usa a API Java) chamando um serviço.
 
