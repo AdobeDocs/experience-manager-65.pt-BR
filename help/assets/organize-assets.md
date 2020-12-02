@@ -22,7 +22,7 @@ Todos os ativos digitais, metadados e conteúdo de documentos do Microsoft Offic
 A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo à organização de arquivos em pastas no nosso sistema de arquivos local. Para obter mais informações sobre como criar e gerenciar pastas, consulte [Gerenciar ativos](manage-assets.md). A forma como você nomeia arquivos e pastas, como você organiza as subpastas e como manipula os arquivos dessas pastas pode ter um impacto significativo na forma como esses ativos são processados. Usando estratégias de nomenclatura de arquivos e pastas consistentes e apropriadas, juntamente com boas práticas de metadados, você pode aproveitar ao máximo seu repositório de ativos digitais.
 
 * Na maioria dos casos, seu repositório de ativos digitais está sempre crescendo. Portanto, é importante formalizar o uso de metadados, a estrutura de pastas e a nomeação de arquivos no início do ciclo de criação de conteúdo.
-* Use pastas somente para impor uma estrutura de armazenamento consistente para seus ativos digitais. Essa consistência ajuda a processar e gerenciar melhor seus ativos. Por exemplo, os ativos colocados nos seguintes tipos de pastas podem ajudá-lo a usar os [perfis apropriados para o processamento](processing-profiles.md)de ativos:
+* Use pastas somente para impor uma estrutura de armazenamento consistente para seus ativos digitais. Essa consistência ajuda a processar e gerenciar melhor seus ativos. Por exemplo, os ativos colocados nos seguintes tipos de pastas podem ajudá-lo a usar os perfis [apropriados para o processamento de ativos](processing-profiles.md):
 
    * **Pastas** de desenvolvimento: contém ativos digitais em que você está trabalhando no momento.
    * **Pastas** do cliente: contém ativos digitais com base em clientes ou nomes de projetos.
@@ -35,7 +35,7 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
    * **Pastas** baseadas em data: contém ativos digitais com base em uma data de criação ou em uma data de última modificação.
 
 * Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer personalização ou automação continue funcionando. Por exemplo, os perfis de processamento atribuídos continuam funcionando.
-* Se um ativo já estiver publicado, você usará [!DNL Experience Manager] para movê-lo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é *perdido* para [!DNL Experience Manager] e não pode ser despublicado. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois mova-o para uma pasta diferente.
+* Se um ativo já estiver publicado, você usará [!DNL Experience Manager] para mover o ativo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-publicado. O ativo publicado original, no entanto, é *perdido* para [!DNL Experience Manager] e não pode ser despublicado. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e depois mova-o para uma pasta diferente.
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
@@ -62,7 +62,7 @@ Add back links to blog posts by marketing?
 
 ## Organize seus ativos para usar perfis {#organize-to-use-profiles}
 
-Um perfil de processamento contém comandos de [!DNL Assets] processamento que se aplicam a ativos que são carregados em pastas predefinidas. Os perfis são usados para automatizar o processamento do conteúdo de uma pasta ou dos ativos carregados recentemente. Você pode aproveitar perfis para organizar melhor seus ativos.
+Um perfil de processamento contém [!DNL Assets] comandos de processamento que se aplicam a ativos que são carregados em pastas predefinidas. Os perfis são usados para automatizar o processamento do conteúdo de uma pasta ou dos ativos carregados recentemente. Você pode aproveitar perfis para organizar melhor seus ativos.
 
 A padronização do uso de metadados, da nomeação de arquivos e da estrutura de pastas garante que, à medida que o pool de ativos digitais cresce, você aplique perfis de processamento a pastas com maior precisão e consistência.
 
@@ -70,6 +70,6 @@ A padronização do uso de metadados, da nomeação de arquivos e da estrutura d
 >
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
 >* [Perfis de metadados](/help/assets/metadata-config.md#metadata-profiles).
->* [Perfis](video-profiles.md)de vídeo.
->* [Perfis](image-profiles.md)de imagem do Dynamic Media.
+>* [Perfis](video-profiles.md) de vídeo.
+>* [Perfis](image-profiles.md) de imagem do Dynamic Media.
 
