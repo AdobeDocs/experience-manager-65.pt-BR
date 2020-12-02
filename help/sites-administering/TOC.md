@@ -149,14 +149,14 @@ ht-degree: 17%
    + [Integração com a Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuração manual da integração com a Adobe Target](target-configuring.md)
    + [Pré-requisitos para integração com a Adobe Target](target-requirements.md)
-   + [Integração com a Adobe Target usando E/S Adobe](integration-ims-adobe-io.md)
+   + [Integração com a Adobe Target usando o Adobe I/O](integration-ims-adobe-io.md)
    + [Classificações de Adobe](adobeanalytics-classifications.md)
    + [Integração com o Adobe](search-and-promote.md)
    + [Integração de soluções](integration.md)
    + [Exportação de fragmentos de experiência para o Adobe Target](experience-fragments-target.md)
    + [Práticas recomendadas para modelos de e-mail](best-practices-for-email-templates.md)
    + [Integração com o Livefyre](livefyre.md)
-+ Práticas recomendadas     {#bestpractices}
++ Práticas recomendadas      {#bestpractices}
    + [Práticas recomendadas    ](administer-best-practices.md)
    + [Práticas recomendadas de tradução](tc-bp.md)
    + [Práticas recomendadas do MSM](msm-best-practices.md)
