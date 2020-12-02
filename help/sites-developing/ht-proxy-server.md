@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,11 @@ Você pode usar o servidor proxy para monitorar todas as interações cliente-se
 * SMTP para mensagens de email
 * LDAP para gerenciamento de usuários
 
-Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; Por exemplo, um navegador da Web e o AEM. Isso permite monitorar exatamente o que acontece quando você solicita uma página do CQ.
+Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; Por exemplo, um navegador da Web e AEM. Isso permite que você monitore exatamente o que acontece quando você solicita uma página do CQ.
 
-## Iniciando a ferramenta Servidor proxy {#starting-the-proxy-server-tool}
+## Iniciando a Ferramenta de Servidor Proxy {#starting-the-proxy-server-tool}
 
-Inicie o servidor na linha de comando:
+Start o servidor na linha de comando:
 
 `java -jar proxy-2.1.jar <host> <remoteport> <localport> [options]`
 
@@ -46,7 +49,7 @@ Este é o endereço de host da instância do CRX à qual você deseja se conecta
 
 `<remoteport>`
 
-Esta é a porta host da instância CRX de destino. Por exemplo, o padrão de uma instalação do AEM recém-instalada é **`4502`** e o padrão de uma instância do autor do AEM recém-instalada é `4502`.
+Esta é a porta host da instância CRX do público alvo. Por exemplo, o padrão de uma instalação de AEM recém-instalada é **`4502`** e o padrão para uma instância de autor de AEM recém-instalada é `4502`.
 
 `<localport>`
 
@@ -64,7 +67,7 @@ Se você estiver procurando combinações de bytes específicas no tráfego, ati
 
 `-t` (entradas do registro de carimbo de data/hora)
 
-Adiciona um carimbo de data e hora a cada saída de log. O carimbo de data/hora está em segundos, portanto ele pode não ser adequado para verificar solicitações únicas. Use-o para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy durante um período de tempo maior.
+Adiciona um carimbo de data e hora a cada saída de log. O carimbo de data/hora está em segundos, portanto ele pode não ser adequado para verificar solicitações únicas. Use-o para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy em um período de tempo mais longo.
 
 `-logfile <filename>`(gravar no arquivo de log)
 
@@ -85,8 +88,8 @@ Por exemplo, uma solicitação de uma página da Web pode ser exibida da seguint
 `C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]`
 
 * C significa que esta entrada provém do cliente (é uma solicitação para uma página da Web)
-* 0 é o número da conexão (o contador de conexão é iniciado em 0)
-* &#x200B;# 00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
+* 0 é o número da conexão (os start do contador de conexão são 0)
+* # 00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
 * `[GET <?>]` é o conteúdo da solicitação, no exemplo um dos cabeçalhos HTTP (url).
 
 Quando uma conexão é fechada, as seguintes informações são registradas:
@@ -126,13 +129,13 @@ O conteúdo de `test.html` é:
 </html>
 ```
 
-Supondo que a instância do AEM esteja em execução, `localhost:4502` iniciamos o proxy desta forma:
+Supondo que a instância AEM esteja em execução em `localhost:4502`, o proxy será start desta forma:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-A instância do CQ/CRX agora pode ser acessada pelo proxy em `localhost:4444` e toda a comunicação via essa porta está conectada `test.log`.
+A instância do CQ/CRX agora pode ser acessada pelo proxy em `localhost:4444` e toda a comunicação por essa porta é registrada em `test.log`.
 
-Se agora observarmos a saída do proxy, veremos a interação entre o navegador e a instância do AEM.
+Se agora observarmos a saída do proxy, veremos a interação entre o navegador e a instância AEM.
 
 Na inicialização, o proxy gera o seguinte:
 
@@ -145,7 +148,7 @@ Em seguida, abrimos um navegador e acessamos a página de teste:
 
 `http://localhost:4444/content/test.html`
 
-e vemos o navegador fazer uma `GET` solicitação para a página:
+e vemos o navegador fazer uma solicitação `GET` para a página:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -162,7 +165,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-A instância do AEM responde com o conteúdo do arquivo `test.html`:
+A instância AEM responde com o conteúdo do arquivo `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -184,9 +187,9 @@ S-0-#000311 -> [</body>]
 S-0-#000319 -> [</html>]
 ```
 
-### Usos do servidor proxy {#uses-of-the-proxy-server}
+### Usos do Servidor Proxy {#uses-of-the-proxy-server}
 
-Os seguintes cenários ilustram alguns dos objetivos para os quais o Servidor proxy pode ser usado:
+Os seguintes cenários ilustram alguns dos objetivos para os quais o Servidor Proxy pode ser usado:
 
 **Verificar Cookies e seus Valores**
 
@@ -210,7 +213,7 @@ Keep-live é um recurso HTTP que permite que um cliente reutilize a conexão TCP
 
 Para verificar se o keep-alive funciona:
 
-* Inicie o servidor proxy.
+* Start do servidor proxy.
 * Solicite uma página.
 * Se keep-alive estiver funcionando, o contador de conexão nunca deve ultrapassar 5 a 10 conexões.
 * Se keep-alive não estiver funcionando, o contador de conexão aumenta rapidamente.
@@ -219,15 +222,15 @@ Para verificar se o keep-alive funciona:
 
 Se você perder solicitações em uma configuração complexa de servidor, por exemplo, com um firewall e um dispatcher, poderá usar o servidor proxy para descobrir onde a solicitação foi perdida. No caso de um firewall:
 
-* Iniciar um proxy antes de um firewall
-* Iniciar outro proxy após um firewall
+* Start de um proxy antes de um firewall
+* Start outro proxy após um firewall
 * Use-os para ver até que ponto as solicitações estão chegando.
 
 **Solicitações Suspensas**
 
 Se você tiver solicitações pendentes de vez em quando:
 
-* Inicie o proxy.
+* Start o proxy.
 * Aguarde ou grave o log de acesso em um arquivo com cada entrada com um carimbo de data e hora.
-* Quando a solicitação começa a ser suspensa, você pode ver quantas conexões estavam abertas e qual solicitação está causando problemas.
+* Quando o start de solicitação está travado, você pode ver quantas conexões estão abertas e qual solicitação está causando problemas.
 
