@@ -20,15 +20,15 @@ ht-degree: 1%
 
 # Moderação no contexto {#in-context-moderation}
 
-Para AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
+No AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
 
-Ao usar um console [de](moderation.md)moderação, as informações exibidas para o conteúdo incluem um link para a página publicada para permitir o acesso a ações de moderação adicionais disponíveis ao moderar no contexto.
+Ao usar um [console de moderação](moderation.md), as informações exibidas para o conteúdo incluem um link para a página publicada para permitir o acesso a ações de moderação adicionais disponíveis ao moderar no contexto.
 
 ## Ações de moderação {#moderation-actions}
 
-Visite a visão geral da moderação para obter uma descrição das ações [de](moderate-ugc.md#moderation-actions)moderação.
+Visite a visão geral da moderação para obter uma descrição das [ações de moderação](moderate-ugc.md#moderation-actions).
 
-## Interface de usuário de moderação {#moderation-ui}
+## Interface do usuário de moderação {#moderation-ui}
 
 A interface do usuário apresentada ao moderador na instância de publicação está contida na caixa de diálogo para publicar e gerenciar conteúdo gerado pelo usuário (UGC). Os elementos da interface são determinados pelo status do visitante do site - se eles são...
 
@@ -40,13 +40,13 @@ A interface do usuário apresentada ao moderador na instância de publicação e
 
 ## Exemplo {#example}
 
-Usando o site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) criado ao [começar a usar o AEM Communities](getting-started.md), é possível configurar rapidamente um thread em um fórum no qual você pode experimentar várias atividades de moderação no ambiente de publicação, como mostrado abaixo.
+Usando o site [Engage](http://localhost:4503/content/sites/engage/en.html) criado quando [Introdução ao AEM Communities](getting-started.md), é possível configurar rapidamente um thread em um fórum no qual você pode experimentar várias atividades de moderação no ambiente de publicação, como visto abaixo.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) foi identificado como um membro confiável da comunidade ao adicioná-lo ao grupo de moderadores engajados pela comunidade ao criar o site.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) pode ser adicionado como membro do grupo de membros engajados da comunidade usando o console [](members.md)Membros.
+Rebekah Larsen (rebekah.larsen@trashymail.com) pode ser adicionado como membro do grupo de membros engajados da comunidade usando o [console Membros](members.md).
 
-Para obter mais informações sobre grupos de usuários da comunidade, visite [Gerenciar usuários e grupos](users.md)de usuários.
+Para obter mais informações sobre grupos de usuários da comunidade, visite [Gerenciar usuários e grupos de usuários](users.md).
 
 ### Criar as publicações do fórum {#create-the-forum-posts}
 
@@ -69,7 +69,7 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
    * Selecionar fórum
    * Para o tópico do Hummingbird, selecione Leia mais
-   * Insira o comentário para a resposta da postagem
+   * Digite o comentário para a resposta da postagem
 
       Eu troco o meu uma vez por semana e os recebo de maio a outubro.
 
@@ -80,14 +80,14 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
    * Selecionar fórum
    * Para o tópico do Hummingbird, selecione Leia mais
-   * Insira o comentário para a resposta da postagem
+   * Digite o comentário para a resposta da postagem
 
       Eu vendo néctar e alimentadores - visite https://my.viral.url/
 
    * Selecionar resposta
    * Selecione Desconectar
 
-### Visitante do site anônimo (#5) {#anonymous-site-visitor}
+### Visitante de site anônimo (#5) {#anonymous-site-visitor}
 
 Veja a seguir uma visualização do fórum visto por um visitante do site que não está conectado (5).
 
@@ -95,11 +95,11 @@ Um visitante de site anônimo só pode visualização no fórum, mas não pode p
 
 ![community-forum-visitante](assets/community-forum-visitor.png)
 
-### Novo Membro ( nº 4) {#new-member}
+### Novo Membro (#4) {#new-member}
 
-No autor, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dodgit.com) como um novo membro do grupo de membros engajados pela comunidade usando o console [](members.md)Membros e, em seguida, faça logout.
+No autor, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dodgit.com) como um novo membro do grupo de membros engajados da comunidade usando o [console Membros](members.md) e, em seguida, faça logout.
 
-Ao publicar, faça logon como Boyd Larsen e acesse o thread selecionando `Forum`e, em seguida, `Read more` para a publicação de beija-flor.
+Ao publicar, faça logon como Boyd Larsen e acesse o thread selecionando `Forum` e `Read more` para a publicação de beija-flor.
 
 Aviso:
 
@@ -113,7 +113,7 @@ Fazer logoff
 
 ![membro do fórum comunitário](assets/community-forum-member.png)
 
-### Administrator (#3) {#administrator}
+### Administrador (#3) {#administrator}
 
 Faça logon como um administrador (admin) e acesse o thread selecionando Fórum e, em seguida, Leia mais para uma publicação.
 
@@ -124,9 +124,9 @@ Aviso:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Selecione o item de menu Administração para acessar o console [de](moderation.md) moderação do ambiente de publicação.
+Selecione o item de menu Administração para acessar o [console de moderação](moderation.md) do ambiente de publicação.
 
-Observe que, para um administrador, todo o conteúdo moderável é visível, não apenas o conteúdo do site da comunidade Geometrixx Engage.
+Observe que, para um administrador, todo o conteúdo moderável é visível, não apenas o conteúdo do site da comunidade do Geometrixx Engage.
 
 O filtro de pesquisa é um painel lateral que alterna entre aberto e fechado.
 
@@ -147,11 +147,11 @@ Aviso:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Selecione o item de menu Administração para acessar o console [de](moderation.md) moderação do ambiente de publicação.
+Selecione o item de menu Administração para acessar o [console de moderação](moderation.md) do ambiente de publicação.
 
 Observe que, para um moderador da comunidade, somente o conteúdo moderável do site da comunidade do Geometrixx Engage está visível.
 
-Observe que o moderador da comunidade tem as mesmas opções que o administrador (a imagem está na barra lateral de pesquisa alternada fechada), mas não há acesso a outros consoles do AEM.
+Observe que o moderador da comunidade tem as mesmas opções que o administrador (a imagem está na barra lateral de pesquisa alternada fechada), mas não há acesso a outros consoles AEM.
 
 Fazer logoff.
 
