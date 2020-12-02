@@ -85,7 +85,7 @@ As propriedades são distribuídas por várias guias.
 
    Permite que você insira uma vanity URL para esta página, o que pode permitir que você tenha um URL menor e/ou mais expressivo.
 
-   For example, if the Vanity URL is set to `welcome`to the page identified by the path `/v1.0/startpage`for the website `http://example.com,` then `http://example.com/welcome`would be the vanity URL of `http://example.com/content/v1.0/startpage`
+   Por exemplo, se o URL personalizado estiver definido como `welcome`para a página identificada pelo caminho `/v1.0/startpage`para o site `http://example.com,` então `http://example.com/welcome`será o URL personalizado de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -96,7 +96,7 @@ As propriedades são distribuídas por várias guias.
    >* Não deve ser definido como uma página existente.
 
 
-   Você também precisa configurar o Dispatcher para ativar o acesso a URLs personalizados. Consulte [Ativando o acesso a URLs](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) personalizados para obter mais detalhes.
+   Você também precisa configurar o Dispatcher para ativar o acesso a URLs personalizados. Consulte [Ativando o acesso a URLs personalizados](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
 
 * **Redirecionar URL personalizada**
 
@@ -130,7 +130,7 @@ As propriedades são distribuídas por várias guias.
    >
    >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada por meio de `/content/we-retail/latin-language`
    >
-   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
+   >Para obter mais detalhes, consulte [Nomes de página localizados em SEO e URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Herdado de &lt;*path*>**
 
@@ -154,7 +154,7 @@ As propriedades são distribuídas por várias guias.
 
    >[!CAUTION]
    >
-   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
+   >A guia **[Permissões](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite a edição de configurações de CUG com base na presença da combinação `granite:AuthenticationRequired`. Se as permissões da página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled`, uma mensagem de aviso será mostrada em **Requisito de autenticação** e a opção não será editável, nem as [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) serão editáveis.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -167,7 +167,7 @@ As propriedades são distribuídas por várias guias.
 
    Especifique uma configuração de exportação.
 
-### Miniatura  {#thumbnail}
+### Miniatura   {#thumbnail}
 
 Exibe a imagem de miniatura da página. É possível:
 
@@ -217,7 +217,7 @@ Define a variação do fragmento de experiência usada para gerar metadados para
    >[!NOTE]
    >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Adminstrators`grupo.
 
-### Permissões  {#permissions}
+### Permissões   {#permissions}
 
 * **Permissões**
 
@@ -229,14 +229,14 @@ Define a variação do fragmento de experiência usada para gerar metadados para
    * Exibir as [permissões efetivas](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown and the CUG permissions will not be editable, nor will the Authentication Requirement on the [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) tab be editable.
+   >A guia **Permissões** permite a edição de configurações de CUG com base na presença da combinação `granite:AuthenticationRequired`. Se as permissões da página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled`, uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, assim como o Requisito de autenticação na guia [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) não será editável.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. See the document [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
+   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. Consulte o documento [Administração de direitos de usuário, grupo e acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
 
 ### Blueprint {#blueprint}
 
@@ -244,13 +244,13 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
    Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site  {#site-structure}
+### Estrutura do site   {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
@@ -298,7 +298,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
+1. Selecione **Abrir propriedades** e uma caixa de diálogo será aberta permitindo que você edite as propriedades, classificadas pela guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
 
    * **Cancelar**
    * **Salvar e fechar**
