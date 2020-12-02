@@ -11,6 +11,9 @@ discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 0%
 
 ---
 
@@ -32,8 +35,8 @@ Você pode personalizar o layout de um único campo ou de todos os campos para a
 
 Execute as seguintes etapas para aplicar um layout personalizado a um único campo:
 
-1. Abra o formulário no modo **Estilo** . Para abrir o formulário no modo de estilo, na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
-1. Na barra lateral, em Objetos **de** formulário, selecione o campo e toque no botão Editar, botão ![editar](assets/edit-button.png).
+1. Abra o formulário no modo **Estilo**. Para abrir o formulário no modo de estilo, na barra de ferramentas da página, toque em ![menu suspenso da tela](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra lateral, em **Objetos de formulário**, selecione o campo e toque no botão de edição ![edit-button](assets/edit-button.png).
 1. Selecione o estado do campo que deseja personalizar e especifique o estilo para esse estado.
 
    ![Especificação do estilo em linha de um campo](assets/edit-error-state.png)
@@ -45,7 +48,7 @@ Com o AEM Forms, agora é possível criar um tema e aplicá-lo ao formulário. O
 Crie um tema usando o Editor de Temas para personalizar o layout de todos os campos do formulário. Depois de criar um tema, execute as seguintes etapas para aplicá-lo a um formulário:
 
 1. Abra o formulário no modo de edição.
-1. No modo de edição, selecione um componente, em seguida, toque em nível ![de](assets/field-level.png) campo > Container **de formulário** adaptável e, em seguida, toque em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente, em seguida, toque em ![field-level](assets/field-level.png) > **Container de formulário adaptável** e, em seguida, toque em ![cmppr](assets/cmppr.png).
 1. Na barra lateral, em Tema de formulário adaptável, selecione o tema que você criou usando o Editor de temas.
 
 ## Criar um layout de campo personalizado {#create-a-custom-field-layout}
@@ -80,7 +83,7 @@ Crie um tema usando o Editor de Temas para personalizar o layout de todos os cam
    ```
 
 1. Para aprimorar a aparência e o comportamento, inclua a biblioteca do cliente criada no arquivo de layout (errorOnRight.jsp).
-1. Abra a caixa de diálogo de edição do campo e selecione a guia **Estilo** . Na caixa suspensa **Configurar layout** de campo, selecione o layout recém-criado e clique em **OK**.
+1. Abra a caixa de diálogo de edição do campo e selecione a guia **Estilo**. Na caixa suspensa **Configurar layout de campo**, selecione o layout recém-criado e clique em **OK**.
 
 O pacote ErrorOnRight.zip contém código para mostrar mensagens de erro no lado direito dos campos.
 
