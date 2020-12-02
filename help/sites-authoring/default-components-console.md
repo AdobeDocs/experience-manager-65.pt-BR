@@ -2,7 +2,7 @@
 title: Console de componentes
 seo-title: Console de componentes
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: a4e34d81-7875-4e26-8b48-4473e2905c37
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,6 +12,9 @@ discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
 
 O console Componentes permite navegar em todos os componentes definidos para a sua instância e exibir as principais informações de cada componente. 
 
-It can be accessed from **Tools ->** **General ->** **Components**. No console, as visualizações de cartão e de lista estão disponíveis. Como não há uma estrutura de árvore para componentes, a visualização de coluna não está disponível.
+Ele pode ser acessado em **Ferramentas ->** **Geral ->** **Componentes**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -53,7 +56,7 @@ Para exibir detalhes sobre um componente específico, toque/clique no recurso de
       * Clicar no Supertipo do recurso levará você até esse componente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Como `/apps` não pode ser editado no tempo de execução, o console Componentes fica somente leitura.
 
 * **Políticas**
 
