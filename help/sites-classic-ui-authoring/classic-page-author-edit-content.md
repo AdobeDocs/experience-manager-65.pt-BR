@@ -12,13 +12,16 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 98%
 
 ---
 
 
 # Editar conteúdo da página{#editing-page-content}
 
-Assim que a página for criada (nova ou como parte de uma cópia dinâmica ou de lançamento), você pode editar o conteúdo para fazer as atualizações necessárias.
+Assim que a página for criada (nova ou como parte de um lançamento ou uma live copy), você pode editar o conteúdo para fazer as atualizações necessárias.
 
 O conteúdo é adicionado usando [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (adequados ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
 
@@ -76,6 +79,7 @@ Para inserir um novo componente:
 
    * Arraste um componente da barra de ferramentas flutuante (chamado sidekick) para inserir um novo parágrafo.
    * Clique com o botão direito do mouse em um parágrafo existente e selecione **Novo** - a barra de ferramentas Inserir um novo componente abrirá. Selecione um componente e clique em **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. No sidekick e na barra de ferramentas **Inserir um novo componente** é possível visualizar uma lista dos componentes disponíveis (tipos parágrafo). Essas listas podem ser divididas em várias seções (por exemplo, geral, colunas, etc.), que podem ser expandidas quando necessário.
@@ -84,7 +88,7 @@ Para inserir um novo componente:
 
 1. Insira o componente que deseja na página. Em seguida, clique duas vezes no parágrafo, uma janela é aberta e permite que você configure o parágrafo e adicione conteúdo.
 
-### Inserir um componente usando o localizador de conteúdo {#inserting-a-component-using-the-content-finder}
+### Inserir um componente usando o localizador de conteúdo  {#inserting-a-component-using-the-content-finder}
 
 Você também pode adicionar um novo componente à página, arrastando um ativo do [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Isto criará automaticamente um novo componente do tipo apropriado que contém o ativo.
 
@@ -103,7 +107,7 @@ Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema
 
 Para criar um componente arrastando um dos tipos de ativos acima:
 
-1. Certifique-se de que a página está no modo de [**edição **](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Abra o [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Arraste o ativo para a posição desejada. O [placeholder do componente](#componentplaceholder) mostra onde o componente será posicionado.
 
@@ -111,7 +115,7 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 
 1. [Edite](#editmovecopypastedelete) o componente, se necessário.
 
-## Edição de um componente (conteúdo e propriedades) {#editing-a-component-content-and-properties}
+## Edição de um componente (conteúdo e propriedades)  {#editing-a-component-content-and-properties}
 
 Para editar um parágrafo existente, faça o seguinte:
 
@@ -185,9 +189,11 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
    Caso um componente seja parte de uma live-copy ou lançamento, o mesmo é indicado por um ícone de cadeado. Você pode clicar no cadeado para cancelar a herança.
 
    * O ícone de cadeado é apresentado quando o componente é selecionado, por exemplo:
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
    * O cadeado também é exibido na caixa de diálogo de componentes, por exemplo:
+
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. **Um sistema de parágrafo herdado**
@@ -200,7 +206,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
 
 [As anotações](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permitem que outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas {#previewing-pages}
+## Visualizar páginas    {#previewing-pages}
 
 Há dois ícones na borda inferior do sidekick que são importantes para a visualização das páginas:
 
@@ -220,7 +226,7 @@ Há dois ícones na borda inferior do sidekick que são importantes para a visua
 
 ## Localizar e Substituir {#find-replace}
 
-Para edições de maior escala de uma mesma frase, uma opção de menu **[Encontrar e substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**permite que você procure e substitua várias instâncias de uma sequência em uma seção do site.
+Para edições de maior escala de uma mesma frase, uma opção de menu **[Encontrar e substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite que você procure e substitua várias instâncias de uma sequência em uma seção do site.
 
 ## Bloquear uma página {#locking-a-page}
 
@@ -263,7 +269,7 @@ Ao desfazer ou refazer a remoção, adição, ou a transferência de um ou mais 
 >
 >Consulte [Desfazer e refazer edições de página - A teoria](#undoing-and-redoing-page-edits-the-theory) para obter todos os detalhes do que é possível fazer ao desfazer e refazer edições de página.
 
-## Undoing and Redoing Page Edits - The Theory {#undoing-and-redoing-page-edits-the-theory}
+## Desfazer e refazer edições de página - a teoria {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
@@ -282,6 +288,7 @@ O comportamento dos comandos desfazer e refazer é semelhante à de outros progr
 >* refazer ações, contanto que não tenha feito uma edição de página desde que usou o comando desfazer.
 >* desfazer um máximo de 20 ações de edição (configuração padrão).
 >* use também os [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para desfazer e refazer.
+
 >
 
 
