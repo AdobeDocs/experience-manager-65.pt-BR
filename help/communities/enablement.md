@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Configuração dos recursos de ativação {#configuring-enablement-features}
+# Configurando os recursos de ativação {#configuring-enablement-features}
 
 ## Visão geral {#overview}
 
-Os recursos de ativação fornecem a capacidade de criar comunidades [de](overview.md#enablement-community)ativação.
+Os recursos de ativação fornecem a capacidade de criar [comunidades de ativação](overview.md#enablement-community).
 
 * Este recurso requer licenciamento adicional para uso em um ambiente de produção.
 
@@ -40,19 +40,19 @@ Instalação de:
 
 * **FFmpeg**
 
-   FFmpeg é uma solução para conversão e streaming de áudio e vídeo e, quando instalada, é usada para transcodificação adequada dos ativos [de](../../help/sites-authoring/default-components-foundation.md#video)vídeo. Para comunidades de ativação, é usado no ambiente do autor para obter metadados para recursos carregados, bem como para gerar uma miniatura para exibição ao listar o recurso.
+   FFmpeg é uma solução para conversão e streaming de áudio e vídeo e, quando instalada, é usada para transcodificação adequada dos [ativos de vídeo](../../help/sites-authoring/default-components-foundation.md#video). Para comunidades de ativação, é usado no ambiente do autor para obter metadados para recursos carregados, bem como para gerar uma miniatura para exibição ao listar o recurso.
 
 Configuração de:
 
 * **Gerentes da comunidade**
 
-   Para comunidades de ativação, somente os membros do grupo de `Community Enablement Managers` usuários podem receber a função de `Community Site Enablement Manager`, cujas permissões podem incluir criação de conteúdo, atribuições e gerenciamento de membros no ambiente de publicação.
+   Para comunidades de ativação, somente os membros do grupo de usuários `Community Enablement Managers` podem receber a função de `Community Site Enablement Manager`, cujas permissões podem incluir criação de conteúdo, atribuições e gerenciamento de membros no ambiente de publicação.
 
 Configuração opcional de:
 
 * **Adobe Analytics**
 
-   A integração com o Adobe Analytics adiciona recursos abrangentes do relatórios e oferece suporte à adição do Video Heartbeat ao Analytics.
+   A integração com a Adobe Analytics adiciona recursos abrangentes do relatórios e oferece suporte à adição do Video Heartbeat ao Analytics.
 
 * **Dispatcher**
 
@@ -68,7 +68,7 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
    Usar o Console da Web (pacotes): *http://localhost:4502/system/console/bundles*
 
-   Instale *antes* de instalar o pacote SCORM
+   Instale *antes de* instalar o pacote SCORM
 
 1. **[Instalar pacote SCORM](deploy-communities.md#scorm-package)**
 
@@ -105,9 +105,9 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 **Na instância do autor:**
 
-1. (*Opcional*) **[Configurar o serviço Analytics](analytics.md)**
+1. (*Opcional*) **[Configurar o serviço do Analytics](analytics.md)**
 
-   Use Ferramentas, Implantação, console Cloud Service: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Use Ferramentas, Implantação, console Cloud Services: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[Configurar FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -130,4 +130,4 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 ## Dispatcher {#dispatcher}
 
-Quando a implantação inclui o Dispatcher [do](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, para que os recursos de ativação funcionem corretamente, as seções `clientheader` e `filter` as seções precisam ser modificadas. Consulte [Configuração do Dispatcher para comunidades](dispatcher.md#enablement).
+Quando a implantação inclui [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), para que os recursos de ativação funcionem corretamente, as seções `clientheader` e `filter` precisam de modificação. Consulte [Configurando o Dispatcher para Comunidades](dispatcher.md#enablement).
