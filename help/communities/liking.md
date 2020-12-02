@@ -18,31 +18,31 @@ ht-degree: 5%
 ---
 
 
-# Como usar curtidas {#using-liking}
+# Usando curtir {#using-liking}
 
-O `Liking` componente é uma ferramenta útil que permite aos usuários expressar uma opinião sobre um conteúdo específico, como um comentário em um fórum. Com o `Liking` componente, os membros selecionam o ícone do coração para indicar uma opinião positiva.
+O componente `Liking` é uma ferramenta útil que permite aos usuários expressar uma opinião sobre um conteúdo específico, como um comentário em um fórum. Com o componente `Liking`, os membros selecionam o ícone de coração para indicar uma opinião positiva.
 
 ## Adicionar curtir a uma página {#adding-liking-to-a-page}
 
-Para adicionar um `Liking` componente a uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um componente `Liking` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Liking`
 
 e arraste-o para o lugar em uma página, como uma posição relativa ao recurso que os usuários desejam.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](essentials-liking.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Liking` componente será exibido.
+Quando as [bibliotecas obrigatórias do lado do cliente](essentials-liking.md#essentials-for-client-side) forem incluídas, o componente `Liking` aparecerá desta forma.
 
 ![componente de ligação](assets/liking-component.png)
 
 ## Configuração de curtir {#configuring-liking}
 
-Selecione o componente inserido a ser acessado e selecione o `Liking` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Liking` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configure-new](assets/configure-new.png)
 
-Na guia **[!UICONTROL Textos e etiquetas]** , especifique as propriedades usadas para registrar curtidas.
+Na guia **[!UICONTROL Textos e etiquetas]**, especifique as propriedades usadas para registrar curtidas.
 
 ![gosto de configuração](assets/configure-liking.png)
 
@@ -52,13 +52,13 @@ Na guia **[!UICONTROL Textos e etiquetas]** , especifique as propriedades usadas
 
 * **[!UICONTROL Etiqueta de resposta negativa]**
 
-   (*Obrigatório*) O nome da propriedade para uma resposta negativa.
+   (*Required*) O nome da propriedade para uma resposta negativa.
 
 * **[!UICONTROL Nome Tally]**
 
    (*Obrigatório*) O nome de propriedade interno e identificável para esta instância de um componente de votação.
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
 ### Membros {#members}
 
@@ -70,4 +70,4 @@ Gostos anônimos não são suportados. Os visitantes do site devem se registrar 
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [Curtir essenciais](essentials-liking.md) para desenvolvedores.
+Mais informações podem ser encontradas na página [Curtir o Essentials](essentials-liking.md) para desenvolvedores.
