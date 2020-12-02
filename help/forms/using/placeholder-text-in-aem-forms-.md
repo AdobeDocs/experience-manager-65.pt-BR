@@ -10,6 +10,9 @@ discoiquuid: f9ff2cc5-3f0a-4b2f-a206-2fe0985646ea
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
@@ -24,14 +27,14 @@ O texto do espaço reservado representa uma palavra ou frase curta. Ela destina-
 
 ![Componente de data com e sem texto de espaço reservado](assets/dat-picker-place-holder-text.png)
 
-******A. Componente de data com texto de espaço reservado** B. Componente de data sem texto de espaço reservado
+**Componente A.** Date com texto de espaço reservado  **B.Componente** Date sem texto de espaço reservado
 
-O AEM Forms oferece suporte para texto de espaço reservado para campos de caixa Senha, seletor de data, caixa numérica e caixa de texto.\
+O AEM Forms suporta o texto de espaço reservado para os campos de caixa Senha, Seletor de data, caixa numérica e caixa de texto.\
 Os textos de espaço reservado não são suportados para o widget de data HTML5 nativo. Para especificar um texto de espaço reservado:
 
 1. Clique com o botão direito do mouse em um componente que oferece suporte a Texto de espaço reservado e clique em **Editar**. A caixa de diálogo Editar componente é exibida.
 
-1. Abra a guia **Título e texto** .
+1. Abra a guia **Título e texto**.
 1. Especifique uma palavra ou uma frase curta na caixa de texto **Espaço reservado**. Clique em **OK**.
 
 >[!NOTE]
