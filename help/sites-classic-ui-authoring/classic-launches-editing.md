@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 99%
 
 ---
 
@@ -47,6 +50,7 @@ Depois de criar um lançamento, você pode alterar seu nome e sua data. Também 
       * **Título**
       * **Data de ativação**: equivalente à data de lançamento
       * **Pronto para produção**
+
       Consulte [Lançamentos - a ordem de eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre o propósito e a interação desses campos.
 
    * Na guia **Imagem**, você pode fazer upload de um arquivo de imagem.
