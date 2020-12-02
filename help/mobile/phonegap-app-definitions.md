@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 860dde0b-7cb4-4668-9fac-6f954f1ec0a7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
@@ -19,23 +22,23 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 As definições do aplicativo são uma forma de identificar quais espaços e outras configurações são apropriados para o aplicativo. As definições do aplicativo permitem que o usuário adicione espaço, sem precisar recompilar o aplicativo. A definição do aplicativo é atualizada e incluirá as informações de quaisquer novos espaços.
 
 >[!NOTE]
 >
->As definições do aplicativo estão vinculadas a um aplicativo, portanto, elas exigem a criação de um aplicativo no console do aplicativo do AEM Mobile.
+>As definições do aplicativo estão vinculadas a um aplicativo, portanto, elas exigem a criação de um aplicativo no console do aplicativo AEM Mobile.
 
 ## Criar uma nova definição de aplicativo {#creating-a-new-app-definition}
 
-1. Escolha **Mobile** no console de navegação do AEM.
+1. Escolha **Móvel** no Console de Navegação AEM.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Escolha **Aplicativos** do **Mobile** e clique em **Criar.**
+1. Escolha **Aplicativos** de **Móvel** e clique em **Criar.**
 
-   Escolha **Aplicativo** para criar seu novo aplicativo e insira detalhes.
+   Escolha **Aplicativo** e insira detalhes para criar seu novo aplicativo.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
@@ -47,7 +50,7 @@ Depois de conhecer as Definições do aplicativo, saiba mais sobre os seguintes 
 * [Criar um novo aplicativo usando o Assistente de criação de aplicativo](/help/mobile/phonegap-create-new-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
-## Additional Resources {#additional-resources}
+## Recursos adicionais {#additional-resources}
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
