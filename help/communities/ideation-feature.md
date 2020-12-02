@@ -32,26 +32,26 @@ O recurso de ideação fornece uma área para visitantes de site conectados (mem
 
 Esta seção da documentação descreve:
 
-* Adicionar o recurso de ideação a um site do AEM.
+* Adicionar o recurso de ideação a um site AEM.
 * Configurações do componente Ideação.
 
-### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
+### Adicionar uma ideia a uma página {#adding-a-ideation-to-a-page}
 
-Para adicionar um `Ideation` componente a uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um componente `Ideation` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Ideation`
 
 e arraste-a para o lugar em uma página onde a ideia deve aparecer.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do lado do cliente](/help/communities/ideation.md#essentials-for-client-side) necessárias forem incluídas, o `Ideation` componente será exibido desta forma:
+Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/ideation.md#essentials-for-client-side) forem incluídas, o componente `Ideation` aparecerá desta forma:
 
 ![ideação](assets/ideation.png)
 
-### Configuração de uma ideia {#configuring-an-ideation}
+### Configurando uma Ideia {#configuring-an-ideation}
 
-Selecione o componente inserido a ser acessado e selecione o `Ideation` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Ideation` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configure-new](assets/configure-new.png)
 
@@ -59,7 +59,7 @@ Selecione o componente inserido a ser acessado e selecione o `Ideation` `Configu
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **[!UICONTROL Configurações]** , especifique as configurações para ideias e comentários:
+Na guia **[!UICONTROL Settings]**, especifique as configurações para ideias e comentários:
 
 * **Permitir miniatura de anexo**
 * **Tamanho máximo da miniatura do anexo**
@@ -93,7 +93,7 @@ Na guia **[!UICONTROL Configurações]** , especifique as configurações para i
 
 * **Permitir marcação**
 
-   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia Campo **[!UICONTROL de]** tag). O padrão está desmarcado.
+   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia **[!UICONTROL Campo de tag]**). O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
@@ -101,11 +101,11 @@ Na guia **[!UICONTROL Configurações]** , especifique as configurações para i
 
 * **Tamanho máximo do arquivo**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+   Relevante somente se `Allow File Uploads` estiver marcado. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
 * **Tipos de arquivos permitidos**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+   Relevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **Tamanho máximo do arquivo de imagem a ser anexado**
 
@@ -125,11 +125,11 @@ Na guia **[!UICONTROL Configurações]** , especifique as configurações para i
 
 * **Permitir monitoramento**
 
-   Se marcada, inclua o seguinte recurso para publicações de ideias, que permite que os membros sejam [notificados](/help/communities/notifications.md) sobre novas publicações. O padrão está desmarcado.
+   Se marcada, inclua o seguinte recurso para publicações de ideias, que permite que os membros sejam [notificados](/help/communities/notifications.md) de novas publicações. O padrão está desmarcado.
 
 * **Permitir assinaturas de email**
 
-   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](/help/communities/subscriptions.md)). Requer `Allow Following` a verificação e configuração [de](/help/communities/email.md)email. O padrão está desmarcado.
+   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](/help/communities/subscriptions.md)). Exige que `Allow Following` seja verificado e [e-mail configurado](/help/communities/email.md). O padrão está desmarcado.
 
 * **Permitir votação**
 
@@ -137,13 +137,13 @@ Na guia **[!UICONTROL Configurações]** , especifique as configurações para i
 
 * **Exibir selos**
 
-   Se marcada, exiba [crachás](/help/communities/implementing-scoring.md) ganhados e atribuídos com a ideia de um membro. O padrão está desmarcado.
+   Se marcada, exiba os [emblemas](/help/communities/implementing-scoring.md) obtidos e atribuídos com a ideia de um membro. O padrão está desmarcado.
 
 * **Não obter respostas na página de listagem**
 
 * **Ativar conteúdo em destaque**
 
-   Se marcada, a ideia pode ser identificada como conteúdo [em](/help/communities/featured.md)destaque. O padrão está desmarcado.
+   Se marcada, a ideia pode ser identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
 * **Ativar a menção**
 * **Quantidade máxima de menções**
@@ -151,7 +151,7 @@ Na guia **[!UICONTROL Configurações]** , especifique as configurações para i
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia Moderação **[!UICONTROL do]** usuário, especifique como as ideias e os comentários publicados (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Na guia **[!UICONTROL Moderação do usuário]**, especifique como as ideias e os comentários publicados (conteúdo gerado pelo usuário) serão gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
 * **Negar postagens**
 
@@ -183,19 +183,19 @@ Na guia Moderação **[!UICONTROL do]** usuário, especifique como as ideias e o
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia Campo **[!UICONTROL de]** tag , as tags que podem ser aplicadas, se permitidas na guia **[!UICONTROL Configurações]** , são limitadas de acordo com as namespaces escolhidas.
+Na guia **[!UICONTROL Campo de tag]**, as tags que podem ser aplicadas, se permitidas na guia **[!UICONTROL Settings]**, são limitadas de acordo com as namespaces escolhidas.
 
 * **Espaços de nomes permitidos**
 
-   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Configurações]** . As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+   Relevante se `Allow Tagging` estiver marcado na guia **[!UICONTROL Settings]**. As marcas que podem ser aplicadas são limitadas às da categoria verificada. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
 
 * **Limite sugerido**
 
-   Insira o número de tags a serem exibidas como uma sugestão para o membro postando no fórum. Um valor de **-1** significa sem limite. O padrão é 0.
+   Insira o número de tags a serem exibidas como uma sugestão para o membro postando no fórum. Um valor de **-1** significa que não há limite. O padrão é 0.
 
-#### Guia Configurações de classificação {#sort-settings-tab}
+#### guia Configurações de classificação {#sort-settings-tab}
 
-Na guia **[!UICONTROL Classificar configurações]** , especifique como os comentários publicados são classificados quando exibidos.
+Na guia **[!UICONTROL Classificar configurações]**, especifique como os comentários publicados são classificados quando exibidos.
 
 * **Ordenar por**
 
@@ -207,11 +207,11 @@ Na guia **[!UICONTROL Classificar configurações]** , especifique como os comen
 
 * **Selecionar as opções de tempo para a classificação do Analytics**
 
-   Puxe para baixo para selecionar um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
+   Puxe para baixo para selecionar `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
-### Criando ideia {#creating-idea}
+### Criando Ideia {#creating-idea}
 
 Como acontece com todos os recursos das Comunidades, se não estiverem conectados, um visitante do site só poderá ler ideias e visualização opiniões de outras pessoas (através de comentários e votação/curtir).
 
@@ -221,17 +221,17 @@ Depois de conectado, um membro pode criar uma nova ideia.
 
 Antes de enviar a ideia, é possível que o membro salve um rascunho.
 
-Ao selecionar o `Save as Draft` botão, um rascunho é salvo.
+Ao selecionar o botão `Save as Draft`, um rascunho é salvo.
 
 ![ideia salvadora](assets/save-idea.png)
 
-Ao exibir rascunhos salvos na `My Drafts` guia, selecione `Read More` para entrar novamente no modo de edição:
+Ao exibir rascunhos salvos na guia `My Drafts`, selecione `Read More` para entrar novamente no modo de edição:
 
 ![ideia de edição](assets/edit-idea.png)
 
 #### Fornecer feedback {#providing-feedback}
 
-Uma vez publicada a ideia, outros membros podem fazer logon, abrir a ideia ( `Read More`) e gostar da ideia, adicionando ao número de votos e fazendo comentários.
+Assim que a ideia for publicada, outros membros poderão fazer logon, abrir a ideia ( `Read More`) e curtir a ideia, adicionando à contagem de votos e fazendo comentários.
 
 ![feedback](assets/feedback-idea.png)
 
@@ -239,6 +239,6 @@ Uma vez publicada a ideia, outros membros podem fazer logon, abrir a ideia ( `Re
 
 Mais informações podem ser encontradas na página [Ideation Essentials](/help/communities/ideation.md) para desenvolvedores.
 
-Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo](/help/communities/tag-ugc.md)gerado pelo usuário.
+Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
