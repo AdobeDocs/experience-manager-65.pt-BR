@@ -2,7 +2,7 @@
 title: QuickStart(SOAP) da API Java do serviço do Tarefa Manager
 seo-title: QuickStart(SOAP) da API Java do serviço do Tarefa Manager
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -36,15 +36,15 @@ Os Start rápidos a seguir estão disponíveis para o serviço Tarefa Manager.
 
 [Start rápido (modo SOAP): Recuperando informações de tarefa usando a API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-As operações de AEM Forms podem ser executadas usando a API de tipo seguro dos AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Não é possível pesquisar tarefas atribuídas a usuários usando a API de serviço da Web. O motivo é que você não pode chamar o `taskList` método, que é uma chamada de método necessária para executar essa tarefa.
+>Não é possível pesquisar tarefas atribuídas a usuários usando a API de serviço da Web. O motivo é que você não pode chamar o método `taskList`, que é uma chamada de método necessária para executar essa tarefa.
 
 >[!NOTE]
 >
->O Start rápido localizado em Programação com AEM Forms é baseado no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>O Start rápido localizado em Programação com a AEM Forms é baseado no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Start rápido (modo SOAP): Atribuindo tarefas usando a API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -268,7 +268,7 @@ O exemplo de código Java a seguir bloqueia uma tarefa que corresponde ao valor 
  
 ```
 
-## Start rápido (modo SOAP): Recuperar tarefas atribuídas a usuários usando a API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Start rápido (modo SOAP): Recuperando tarefas atribuídas a usuários usando a API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
 O exemplo de código Java a seguir recupera todas as tarefas atribuídas a um usuário chamado *tony blue*. Observe que esse usuário é especificado nas propriedades de conexão. São exibidas informações sobre tarefas retornadas, como seu valor identificador e sua descrição.
 
@@ -502,7 +502,7 @@ O exemplo de código Java a seguir recupera dados de formulário de uma tarefa c
 
 ## Start rápido (modo SOAP): Modificação de dados de formulário usando a API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-O exemplo de código Java a seguir atualiza um formulário com dados localizados no arquivo *FormData.xml* .
+O exemplo de código Java a seguir atualiza um formulário com dados localizados no arquivo *FormData.xml*.
 
 ```java
  /*
@@ -716,7 +716,7 @@ O exemplo de código Java a seguir recupera anexos de arquivo. Cada anexo de arq
 
 ## Start rápido (modo SOAP): Recuperando informações de tarefa usando a API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-O exemplo de código Java a seguir recupera todas as tarefas baseadas em um processo chamado *MortgageLoan - Prebuild*. O status de cada tarefa retornada é verificado para garantir que seja uma tarefa concluída. Informações como o nome do usuário que concluiu a tarefa e a data em que a tarefa foi concluída são recuperadas e exibidas.
+O exemplo de código Java a seguir recupera todas as tarefas que se baseiam em um processo chamado *MortgageLoan - Prebuild*. O status de cada tarefa retornada é verificado para garantir que seja uma tarefa concluída. Informações como o nome do usuário que concluiu a tarefa e a data em que a tarefa foi concluída são recuperadas e exibidas.
 
 ```java
  /*
