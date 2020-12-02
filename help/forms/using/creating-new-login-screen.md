@@ -1,8 +1,8 @@
 ---
 title: Criar uma nova tela de login
 seo-title: Criar uma nova tela de login
-description: Como modificar a página de logon dos módulos de LiveCycle, por exemplo, da área de trabalho dos AEM Forms ou do Forms Manager.
-seo-description: Como modificar a página de logon dos módulos de LiveCycle, por exemplo, da área de trabalho dos AEM Forms ou do Forms Manager.
+description: Como modificar a página de logon dos módulos de LiveCycle, por exemplo, da área de trabalho da AEM Forms ou do Forms Manager.
+seo-description: Como modificar a página de logon dos módulos de LiveCycle, por exemplo, da área de trabalho da AEM Forms ou do Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,16 +18,16 @@ ht-degree: 5%
 ---
 
 
-# Criar uma nova tela de login{#creating-a-new-login-screen}
+# Criar uma nova tela de logon{#creating-a-new-login-screen}
 
-Você pode modificar a tela de login de todos os módulos de AEM Forms que usam a tela de login de AEM Forms. Por exemplo, as modificações afetam a tela de logon da área de trabalho do Forms Manager e do AEM Forms.
+Você pode modificar a tela de logon de todos os módulos AEM Forms que usam a tela de logon AEM Forms. Por exemplo, as modificações afetam a tela de logon da área de trabalho do Forms Manager e do AEM Forms.
 
 ## Pré-requisitos {#prerequisite}
 
-1. Faça logon com permissões `/lc/crx/de` de administrador.
+1. Faça logon em `/lc/crx/de` com permissões de administrador.
 1. Execute as seguintes ações:
 
-   1. Replicar a estrutura hierárquica: de `/libs/livecycle/core/content` na `/apps/livecycle/core/content`.
+   1. Replicar a estrutura hierárquica: de `/libs/livecycle/core/content` em `/apps/livecycle/core/content`.
 
       Mantenha as mesmas propriedades (nó/pasta) e controle de acesso.
 
@@ -37,33 +37,33 @@ Você pode modificar a tela de login de todos os módulos de AEM Forms que usam 
 
       para: `/apps/livecycle/core`.
 
-   1. Exclua o conteúdo da `/apps/livecycle/core` pasta.
+   1. Exclua o conteúdo da pasta `/apps/livecycle/core`.
 
 1. Execute estas ações:
 
-   1. Replicar a estrutura hierárquica: de `/libs/livecycle/core/components/login` na `/apps/livecycle/core/components/login`. Mantenha as mesmas propriedades (nó/pasta) e controle de acesso.
+   1. Replicar a estrutura hierárquica: de `/libs/livecycle/core/components/login` em `/apps/livecycle/core/components/login`. Mantenha as mesmas propriedades (nó/pasta) e controle de acesso.
 
-   1. Copie a pasta de componentes: de `/libs/livecycle/core` a `/apps/livecycle/core`.
+   1. Copie a pasta de componentes: de `/libs/livecycle/core` para `/apps/livecycle/core`.
 
    1. Exclua o conteúdo da pasta: `/apps/livecycle/core/components/login`.
 
-### Adicionar uma nova localidade {#adding-a-new-locale}
+### Adicionando uma nova localidade {#adding-a-new-locale}
 
-1. Copie a `i18n` pasta:
+1. Copie a pasta `i18n`:
 
    * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
-1. Exclua todas as pastas dentro `i18n` exceto uma, digamos `en`.
+1. Exclua todas as pastas dentro de `i18n`, exceto uma, digamos `en`.
 
 1. Na pasta `en`, execute estas ações:
 
    1. Renomeie a pasta para o nome da localidade que deseja suportar. Por exemplo, `ar`.
 
-   1. Altere o `jcr:language` valor da propriedade para `ar`(para a `ar` pasta).
+   1. Altere o valor da propriedade `jcr:language` para `ar`(para a pasta `ar`).
    >[!NOTE]
    >
-   >Se locale for uma combinação de código de país de idioma, digamos, `ar-DZ`altere o nome da pasta e o valor da propriedade para `ar-DZ`.
+   >Se locale for uma combinação de código de país de idioma, digamos, `ar-DZ`, altere o nome da pasta e o valor da propriedade para `ar-DZ`.
 
 1. Copiar `login.jsp`:
 
@@ -196,24 +196,24 @@ String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
 ```
 
-### Adicionar novo texto ou modificar um texto existente {#adding-new-text-or-modifying-existing-text}
+### Adicionar novo texto ou modificar o texto existente {#adding-new-text-or-modifying-existing-text}
 
-1. Copiar `i18n` pasta:
+1. Copiar pasta `i18n`:
 
    * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
-1. Agora, modifique o valor da propriedade `sling:message` do nó (sob a pasta de código de localidade desejada) para o qual você deseja alterar o texto. A tradução é feita por meio da chave mencionada no valor da `sling:key` propriedade do nó.
+1. Agora, modifique o valor da propriedade `sling:message` do nó (na pasta de código de localidade desejada) para o qual você deseja alterar o texto. A tradução é feita por meio da chave mencionada no valor da propriedade `sling:key` do nó.
 
 1. Para adicionar um novo par de valores chave, execute as seguintes ações. Verifique um exemplo na captura de tela a seguir.
 
-   1. Crie um nó do tipo `sling:MessageEntry`, ou copie um nó existente e renomeie-o em todas as pastas de localidade.
+   1. Crie um nó do tipo `sling:MessageEntry` ou copie um nó existente e renomeie-o em todas as pastas de localidade.
    1. Copiar `login.jsp` :
 
       * de `/libs/livecycle/core/components/login`
 
       * para `/apps/livecycle/core/components/login`
-   1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar o texto recém-adicionado.
+   1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar o texto recém-adicionado.
 
    ![Adicionar novo par de valores chave](assets/capture_new.png)
 
@@ -240,12 +240,12 @@ String browserLocale = "en";
 
 ### Adicionar novo estilo ou modificar o estilo existente {#adding-new-style-or-modifying-existing-style}
 
-1. Copy `login` node:
+1. Copiar nó `login`:
 
    * de `/libs/livecycle/core/content`
    * para `/apps/livecycle/core/content`
 
-1. Excluir arquivos `login.js` e `jquery-1.8.0.min.js`, do nó `/apps/livecycle/core/content/login.`
+1. Exclua os arquivos `login.js` e `jquery-1.8.0.min.js` do nó `/apps/livecycle/core/content/login.`
 1. Modifique os estilos no arquivo CSS.
 1. Para adicionar novos estilos:
 
@@ -293,11 +293,11 @@ css.newLoginContentArea {
 1. Adicione novas imagens em `/apps/livecycle/core/content/login`. Para adicionar imagem:
 
    1. Instale o cliente WebDAV.
-   1. Navegue até a `/apps/livecycle/core/content/login` pasta, usando o cliente webDAV. Para obter mais informações, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navegue até a pasta `/apps/livecycle/core/content/login`, usando o cliente WebDAV. Para obter mais informações, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    1. Adicione novas imagens.
 
-1. Adicione novos estilos `/apps/livecycle/core/content/login/login.css,` correspondentes a novas imagens adicionadas em `/apps/livecycle/core/content/login`.
+1. Adicione novos estilos em `/apps/livecycle/core/content/login/login.css,` correspondentes a novas imagens adicionadas em `/apps/livecycle/core/content/login`.
 1. Use os novos estilos em `login.jsp` em `/apps/livecycle/core/components`.
 
 Por exemplo:
