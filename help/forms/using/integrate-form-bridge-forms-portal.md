@@ -11,13 +11,16 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 0%
 
 ---
 
 
 # Integração do Form Bridge com o portal personalizado para formulários HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-O FormBridge é uma API de ponte de formulários HTML5 que permite interagir com um formulário. Para obter a referência da API FormBridge, consulte Referência [da API do](/help/forms/using/form-bridge-apis.md)FormBridge.
+O FormBridge é uma API de ponte de formulários HTML5 que permite interagir com um formulário. Para obter a referência da API FormBridge, consulte [Referência da API FormBridge](/help/forms/using/form-bridge-apis.md).
 
 Você pode usar a API FormBridge para obter ou definir os valores dos campos de formulário na página HTML e enviar o formulário. Por exemplo, você pode usar a API para criar uma experiência semelhante a um assistente.
 
@@ -31,7 +34,7 @@ Um aplicativo HTML existente pode aproveitar a API FormBridge para interagir com
    1. Faça logon com as credenciais de administrador.
    1. Crie um perfil ou escolha um perfil existente.
 
-      Para obter detalhes sobre como criar um perfil, consulte [Criação de um novo Perfil](/help/forms/using/custom-profile.md).
+      Para obter detalhes sobre como criar um perfil, consulte [Criar um novo Perfil](/help/forms/using/custom-profile.md).
 
 1. **Modificar o Perfil HTML**
 
@@ -73,24 +76,24 @@ Um aplicativo HTML existente pode aproveitar a API FormBridge para interagir com
 
    >[!NOTE]
    >
-   >A **linha 9** contém referência JSP adicional para estilos CSS e arquivos JavaScript para projetar a página.
+   >A **linha 9** contém uma referência JSP adicional para estilos CSS e arquivos JavaScript para criar a página.
    >
    >
-   >A tag &lt;div id=&quot;rightdiv&quot;> na **linha 18** contém o trecho HTML do formulário XFA.
-   A página tem o estilo de dois container: **esquerda** e **direita**. O container direito tem o formulário. O container esquerdo tem dois campos de entrada e parte da página HTML externa.
+   >A tag &lt;div id=&quot;rightdiv&quot;> em **linha 18** contém o trecho HTML do formulário XFA.
+   A página tem o estilo de dois container: **left** e **right**. O container direito tem o formulário. O container esquerdo tem dois campos de entrada e parte da página HTML externa.
    A seguinte captura de tela mostra como o formulário é exibido em um navegador.
 
    ![portal](assets/portal.jpg)
 
-   O lado esquerdo faz parte da página **** HTML. O lado direito que contém os campos é o formulário **** xfa.
+   O lado esquerdo faz parte da **página HTML**. O lado direito que contém os campos é o **xfa form**.
 
 1. **Acessar os campos de formulário na página**
 
    A seguir está um script de amostra que pode ser adicionado para definir valores em um campo de formulário.
 
-   Por exemplo, se você quiser definir **EmployeeName** usando os valores nos Campos **First Name** e **Last Name**, chame a função **window.formBridge.setFieldValue** .
+   Por exemplo, se você quiser definir **NomeFuncionário** usando os valores em Campos **Nome** e **Sobrenome**, chame a função **window.formBridge.setFieldValue**.
 
-   Da mesma forma, é possível ler o valor chamando **window.formBridge.getFieldValue** API.
+   Da mesma forma, você pode ler o valor chamando a API **window.formBridge.getFieldValue**.
 
    ```javascript
    $(function() {
