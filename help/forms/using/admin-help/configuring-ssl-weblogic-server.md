@@ -85,7 +85,7 @@ O comando keytool geralmente está localizado no diretório Java jre/bin e deve 
   <tr>
    <td><p>-keypass</p></td>
    <td><p>A senha que protege a chave privada do par de chaves.</p></td>
-   <td><p>Use a mesma senha que você usou para a <code>-storepass</code> opção. A senha da chave deve ter pelo menos seis caracteres.</p></td>
+   <td><p>Use a mesma senha que você usou para a opção <code>-storepass</code>. A senha da chave deve ter pelo menos seis caracteres.</p></td>
   </tr>
   <tr>
    <td><p>-dname</p></td>
@@ -107,7 +107,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
 
 ## Crie os armazenamentos de chaves de identidade e confiança personalizadas {#create-the-custom-identity-and-trust-keystores}
 
-1. Em um prompt de comando, navegue até *[appserverdomain]*/adobe/*[server name]*.
+1. Em um prompt de comando, navegue até *[appserverdomain]*/adobe/*[nome do servidor]*.
 1. Digite o seguinte comando:
 
    `[JAVA_HOME]/bin/keytool -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass store_password -keypass key_password -dname "CN=Hostname, OU=Group Name, O=Company Name, L=City Name, S=State,C=Country Code`
@@ -122,7 +122,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   O arquivo de armazenamento de chave da Identidade personalizada chamado &quot;ads-entials.jks&quot; é criado no diretório [appserverdomain]/adobe/[server name] .
+   O arquivo de armazenamento de chave da Identidade Personalizada chamado &quot;ads-entials.jks&quot; é criado no diretório [appserverdomain]/adobe/[nome do servidor].
 
 1. Extraia o certificado do armazenamento de chaves ads-entials digitando o seguinte comando:
 
@@ -134,7 +134,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
 
    >[!NOTE]
    >
-   >Substitua `[JAVA_HOME]` pelo diretório onde o JDK está instalado e substitua `store`*_* `password`* pela senha do armazenamento de chaves da Identidade personalizada.*
+   >Substitua `[JAVA_HOME]` pelo diretório onde o JDK está instalado e substitua `store`*_* `password`* pela senha do armazenamento de chaves de identidade personalizado.*
 
    Por exemplo:
 
@@ -142,7 +142,7 @@ Para obter mais informações sobre como usar o comando keytool, consulte o arqu
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   O arquivo de certificado chamado &quot;ads-ca.cer&quot; é criado no diretório [appserverdomain]/adobe/[*server name*] .
+   O arquivo de certificado chamado &quot;ads-ca.cer&quot; é criado no diretório [appserverdomain]/adobe/[*nome do servidor*].
 
 1. Copie o arquivo ads-ca.cer para qualquer computador host que precise de comunicação segura com o servidor de aplicativos.
 1. Insira o certificado em um novo arquivo de armazenamento de chaves (o armazenamento de chaves de Confiança personalizado) digitando o seguinte comando:
@@ -163,36 +163,36 @@ O arquivo de armazenamento de chave de Confiança personalizada chamado &quot;ad
 
 Configure o WebLogic para que ele use o armazenamento de chaves Identidade personalizada e o armazenamento de chaves Confiança personalizada criados. Além disso, desative o recurso Verificação de nome de host WebLogic porque o nome distinto usado para criar os arquivos de armazenamento de chaves não incluía o nome do computador que hospeda o WebLogic Server.
 
-## Configurar WebLogic para usar SSL {#configure-weblogic-to-use-ssl}
+## Configure o WebLogic para usar SSL {#configure-weblogic-to-use-ssl}
 
-1. Start o console de administração do WebLogic Server digitando o nome `https://`*[do ]*host`:7001/console`na linha de URL de um navegador da Web.
+1. Start o console de administração do WebLogic Server digitando `https://`*[nome do host ]*`:7001/console` na linha de URL de um navegador da Web.
 1. Em Ambiente, em Configurações de domínio, selecione **Servidores > &#39;servidor&#39; > Configuração > Geral**.
-1. Em Geral, em Configuração, verifique se a opção Porta de **escuta ativada** e Porta de escuta **SSL ativada** está selecionada. Se não estiver ativado, faça o seguinte:
+1. Em Geral, em Configuração, verifique se **Porta de escuta ativada** e **Porta de escuta SSL ativada** estão selecionadas. Se não estiver ativado, faça o seguinte:
 
    1. Em Centro de alterações, clique em **Bloquear e editar** para modificar seleções e valores.
-   1. Marque as caixas de seleção Porta de **escuta ativada** e Porta de escuta **SSL ativada** .
+   1. Marque as caixas de seleção **Porta de escuta ativada** e **Porta de escuta SSL ativada**.
 
 1. Se esse servidor for um servidor gerenciado, altere a Porta de escuta para um valor de porta não utilizado (como 8001) e a Porta de escuta SSL para um valor de porta não utilizado (como 8002). Em um servidor independente, a porta SSL padrão é 7002.
-1. Clique em **Liberar configuração**.
-1. Em Ambiente, em Configurações de domínio, clique em **Servidores > Servidor [**]gerenciado > Configuração > Geral**.
+1. Clique em **Release Configuration**.
+1. Em Ambiente, em Configurações de domínio, clique em **Servidores > [*Servidor gerenciado*] > Configuração > Geral**.
 1. Em Geral, em Configuração, selecione **armazenamentos de chaves**.
 1. Em Centro de alterações, clique em **Bloquear e editar** para modificar seleções e valores.
-1. Clique em **Alterar** para obter a lista do keystore como lista suspensa e selecione Identidade **personalizada e Confiança** personalizada.
+1. Clique em **Alterar** para obter a lista do keystore como lista suspensa e selecione **Identidade personalizada e Confiança personalizada**.
 1. Em Identidade, especifique os seguintes valores:
 
-   **Armazenamento de chaves** de identidade personalizado: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, onde *[appserverdomain] *é o caminho real e o nome *[do]* servidor é o nome do servidor de aplicativos.
+   **Armazenamento de chaves** de identidade personalizado:  *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, onde *[appserverdomain] *é o caminho real e o  *[nome do]* servidor é o nome do servidor de aplicativos.
 
    **Tipo** de armazenamento de chave de identidade personalizado: JKS
 
-   **Senha** personalizada do armazenamento de chave de identidade: *mypassword* (senha personalizada do armazenamento de chaves de identidade)
+   **Senha** personalizada do armazenamento de chave de identidade:  *mypassword* (senha personalizada do armazenamento de chaves de identidade)
 
 1. Em Confiança, especifique os seguintes valores:
 
-   **Nome** do Arquivo do Keystore de Confiança Personalizado: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, onde `*[appserverdomain]*` é o caminho real
+   **Nome** do Arquivo do Keystore de Confiança Personalizado:  `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, onde  `*[appserverdomain]*` é o caminho real
 
    **Tipo** de armazenamento de chave de confiança personalizado: JKS
 
-   **Frase** de Aprovação do Keystore de Confiança Personalizado: *mypassword* (senha da chave de confiança personalizada)
+   **Frase** de Aprovação do Keystore de Confiança Personalizado:  *mypassword* (senha da chave de confiança personalizada)
 
 1. Em Geral, em Configuração, selecione **SSL**.
 1. Por padrão, o Keystore é selecionado para Locais de identidade e confiança. Caso contrário, altere para keystore.
@@ -200,11 +200,11 @@ Configure o WebLogic para que ele use o armazenamento de chaves Identidade perso
 
    **Alias** da chave privada: publicidades-credenciais
 
-   **Senha**: *mypassword*
+   **Senha**:  *mypassword*
 
-1. Clique em **Liberar configuração**.
+1. Clique em **Release Configuration**.
 
-## Desativar o recurso Verificação do nome do host {#disable-the-hostname-verification-feature}
+## Desative o recurso Verificação do nome do host {#disable-the-hostname-verification-feature}
 
 1. Na guia Configuração, clique em SSL.
 1. Em Avançado, selecione Nenhum na lista de verificação do nome do host.
