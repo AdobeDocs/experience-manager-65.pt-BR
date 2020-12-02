@@ -22,13 +22,13 @@ ht-degree: 2%
 
 Esta página fornece as informações essenciais para trabalhar com o recurso do fórum.
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceTypes</strong></td>
-   <td>social/fórum/components/hbs/forum<br /> social/forum/components/hbs/tópico<br /> social/fórum/components/hbs/post</td>
+   <td>social/fórum/components/hbs/forum<br /> social/fórum/components/hbs/tópico<br /> social/fórum/componentes/hbs/post</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusivo</strong></a></td>
@@ -48,14 +48,14 @@ Esta página fornece as informações essenciais para trabalhar com o recurso do
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte Recurso <a href="forum.md">do fórum</a></td>
+   <td>Consulte <a href="forum.md">Recurso do fórum</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizações do cliente](client-customize.md)
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 * [API do fórum](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
@@ -65,21 +65,21 @@ Esta página fornece as informações essenciais para trabalhar com o recurso do
 
 ### Função do fórum {#forum-function}
 
-Uma estrutura de site da comunidade que inclui a função [](functions.md#forum-function)Fórum, inclui um `forum` componente configurado, bem como configurações que afetam a moderação, marcação e tradução.
+Uma estrutura de site da comunidade que inclui a [função do fórum](functions.md#forum-function), inclui um componente `forum` configurado, bem como configurações que afetam a moderação, marcação e tradução.
 
 ### Acessar publicações do fórum (UGC) {#accessing-forum-posts-ugc}
 
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
-Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir das comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir AEM Comunidades 6.1, o uso de uma [loja comum](working-with-srp.md) para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos do Armazenamento - Introdução e visão geral de uso do repositório.
-* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração](socialutils.md) SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
+* [Visão geral](srp.md)  do provedor de recursos do armazenamento - Introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com diretrizes de codificação SRP](accessing-ugc-with-srp.md) .
+* [Refatoração](socialutils.md)  do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP.
 
