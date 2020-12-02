@@ -11,23 +11,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 0%
 
 ---
 
 
 # Importar e gerenciar aplicativos{#import-and-manage-applications}
 
-Em formulários AEM, um *aplicativo* é um contêiner para armazenar ativos necessários para implementar uma solução de formulários AEM. Exemplos de ativos são designs de formulário, fragmentos de formulário, imagens, processos, arquivos DX, guias de formulário, páginas HTML e arquivos SWF. Durante a fase de desenvolvimento de um projeto, os usuários do Workbench podem implantar aplicativos diretamente da exibição Aplicativos no Workbench. Depois de implantados, esses aplicativos aparecem no console de administração, na guia Aplicativos da página Gerenciamento de aplicativos.
+Em formulários AEM, um *aplicativo* é um container para armazenar ativos necessários para implementar uma solução de formulários AEM. Exemplos de ativos são designs de formulário, fragmentos de formulário, imagens, processos, arquivos DX, guias de formulário, páginas HTML e arquivos SWF. Durante a fase de desenvolvimento de um projeto, os usuários do Workbench podem implantar aplicativos diretamente da visualização Aplicativos no Workbench. Depois de implantados, esses aplicativos são exibidos no console de administração, na guia Aplicativos da página Gerenciamento de aplicativos.
 
-Quando um aplicativo estiver completo e pronto para implantação em um servidor de produção, o usuário do Workbench agrupará o aplicativo em um arquivo *de aplicativo de formulários do* AEM (.lca). Em seguida, um administrador usa o console de administração para importar e implantar o arquivo do aplicativo, usando a guia Aplicativos na página Gerenciamento de aplicativos.
+Quando um aplicativo estiver completo e pronto para implantação em um servidor de produção, o usuário do Workbench agrupará o aplicativo em um *AEM arquivo de aplicativo de formulários* (.lca). Em seguida, um administrador usa o console de administração para importar e implantar o arquivo do aplicativo, usando a guia Aplicativos na página Gerenciamento de aplicativos.
 
 Você também pode usar a guia arquivamentos na página Gerenciamento de aplicativos para importar LCAs criados usando o workbench 8.x.
 
 >[!NOTE]
 >
->Há um problema conhecido de que os arquivos LCA de uma versão futura não são necessariamente compatíveis com versões anteriores. Embora seja possível exibir e importar arquivos LCA de uma versão futura de formulários AEM (por exemplo, uma versão de visualização), isso não é suportado e pode resultar em comportamento anormal.
+>Há um problema conhecido de que os arquivos LCA de uma versão futura não são necessariamente compatíveis com versões anteriores. Embora seja possível visualização e importar arquivos LCA de uma versão futura de formulários AEM (por exemplo, uma versão de pré-visualização), isso não é suportado e pode resultar em comportamento anormal.
 
-Use a guia Aplicativos para importar e gerenciar aplicativos que foram criados no Workbench. Os administradores de aplicativos também podem exportar a configuração do tempo de execução para um aplicativo. Exportar a configuração do tempo de execução elimina a necessidade de reconfigurar manualmente as configurações no ambiente de produção antes de iniciar os aplicativos implantados. O arquivo de configuração do tempo de execução contém:
+Use a guia Aplicativos para importar e gerenciar aplicativos que foram criados no Workbench. Os administradores de aplicativos também podem exportar a configuração do tempo de execução para um aplicativo. Exportar a configuração do tempo de execução elimina a necessidade de redefinir manualmente as configurações no ambiente de produção antes de iniciar os aplicativos implantados. O arquivo de configuração do tempo de execução contém:
 
 * configurações de serviço
 * configurações do pool
@@ -38,8 +41,8 @@ Use a guia Aplicativos para importar e gerenciar aplicativos que foram criados n
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de aplicativos.
 1. Clique em Importar.
-1. Clique em Procurar e selecione o arquivo .lca a ser importado e clique em Visualizar. A página Visualizar aplicativo exibe informações sobre o aplicativo.
-1. (Opcional) Para ver uma lista dos ativos contidos no aplicativo, clique em Exibir ativos.
+1. Clique em Procurar e selecione o arquivo .lca a ser importado e clique em Pré-visualização. A página Aplicativo de Pré-visualização exibe informações sobre o aplicativo.
+1. (Opcional) Para ver uma lista dos ativos contidos no aplicativo, clique em Ativos de Visualização.
 1. (Opcional) Para implantar os ativos no tempo de execução, selecione Implantar ativos no tempo de execução quando a importação estiver concluída. Se você não selecionar essa opção, poderá implantar os ativos mais tarde.
 1. Clique em Importar. O aplicativo é exibido na guia Aplicativos.
 1. Faça logon no repositório CRX com credenciais de administrador.
@@ -65,7 +68,7 @@ Use a guia Aplicativos para importar e gerenciar aplicativos que foram criados n
 
 ## Desimplantar um aplicativo {#undeploy-an-application}
 
-Você pode desimplantar aplicativos do tempo de execução.
+Você pode desimplantar aplicativos a partir do tempo de execução.
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de aplicativos.
 1. Marque a caixa de seleção ao lado do aplicativo que você deseja desimplantar e clique em Desimplantar.
@@ -111,5 +114,5 @@ A implantação com script elimina a necessidade de reconfigurar manualmente as 
 1. Em um prompt de comando, navegue até *[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement.
 1. Consulte o arquivo ReadMe.txt para obter instruções mais detalhadas.
 1. Modifique manualmente os arquivos scriptedDeploy.bat e sample-files/sample.xml como descrito no arquivo readme.txt.
-1. Execute o arquivo scriptedDeploy.bat. Essa ação implanta o arquivo de arquivamento de formulários do AEM com as configurações de substituição.
+1. Execute o arquivo scriptedDeploy.bat. Esta ação implanta o arquivo de arquivamento de formulários AEM com as configurações de substituição.
 
