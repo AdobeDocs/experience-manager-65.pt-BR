@@ -18,33 +18,34 @@ ht-degree: 2%
 ---
 
 
-# Uso de classificações {#using-ratings}
+# Usando classificações {#using-ratings}
 
-O `Rating` componente é usado separadamente ou em conjunto com outros recursos das Comunidades. Este componente permite que membros da comunidade com logon expressem suas opiniões por meio da classificação do conteúdo.
+O componente `Rating` é usado separadamente ou em conjunto com outros recursos das Comunidades. Este componente permite que membros da comunidade com logon expressem suas opiniões por meio da classificação do conteúdo.
 
-## Adding a Rating to a Page {#adding-a-rating-to-a-page}
+## Adicionar uma classificação a uma página {#adding-a-rating-to-a-page}
 
-Para adicionar um `Rating` componente a uma página no modo de autor, localize o componente `Communities / Rating` e arraste-o para o lugar em uma página, como uma posição relativa ao recurso para os membros classificarem.
+Para adicionar um componente `Rating` a uma página no modo de autor, localize o componente `Communities / Rating` e arraste-o para o lugar em uma página, como uma posição relativa ao recurso para os membros classificarem.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](rating-basics.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Rating` componente será exibido.
+Quando as [bibliotecas obrigatórias do lado do cliente](rating-basics.md#essentials-for-client-side) forem incluídas, o componente `Rating` aparecerá desta forma.
 
 ![avaliação](assets/rating.png)
 
 ## Configuração da classificação {#configuring-rating}
 
-Selecione o componente inserido a ser acessado e selecione o `Rating` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Rating` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configure-new](assets/configure-new.png)
 
-Na guia **[!UICONTROL Textos e etiquetas]** , especifique o identificador interno para a Classificação.
+Na guia **[!UICONTROL Textos e etiquetas]**, especifique o identificador interno para a Classificação.
 
 ![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Nome]** Tally (*Obrigatório*) Um nome simples para o `Rating` que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
+**[!UICONTROL Nome]**
+ Tally (*Obrigatório*) Um nome simples para o  `Rating` que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
 ### Membros {#members}
 
