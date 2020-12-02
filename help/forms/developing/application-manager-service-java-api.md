@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Start rápido JavaAPI (SOAP) do Serviço Application Manager {#application-manager-service-javaapi-quick-start-soap}
+# Start Rápido (SOAP) de JavaAPI de serviço do Application Manager {#application-manager-service-javaapi-quick-start-soap}
 
 O SOAP (Java API Quick Start) está disponível para o serviço Application Manager.
 
@@ -33,7 +33,7 @@ As operações do AEM Forms podem ser executadas usando a API fortemente tipada 
 
 >[!NOTE]
 >
->O Start rápido da API Java (SOAP) localizado em Programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>O Start rápido da API Java (SOAP) localizado em Programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Start rápido (modo SOAP): Implantação de aplicativos usando a API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
