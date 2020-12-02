@@ -11,13 +11,16 @@ topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 2%
 
 ---
 
 
 # Personalização da marca {#branding-customization}
 
-Você pode personalizar o ícone do aplicativo, o nome do aplicativo, as imagens de ativação e a página de logon para fornecer uma aparência específica da organização ao aplicativo AEM Forms. Por exemplo, você pode alterar as imagens para usar logotipos de sua organização. O aplicativo AEM Forms oferece suporte às seguintes personalizações:
+Você pode personalizar o ícone do aplicativo, o nome do aplicativo, as imagens de ativação e a página de logon para fornecer uma aparência distinta específica da organização ao aplicativo AEM Forms. Por exemplo, você pode alterar as imagens para usar logotipos de sua organização. O aplicativo AEM Forms oferece suporte às seguintes personalizações:
 
 * Personalização de ícones de aplicativos e imagens de inicialização
 * Personalização do nome do aplicativo
@@ -32,23 +35,24 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 >
 >Para todos os ícones e imagens, use o formato PNG não entrelaçado.
 
-### Como personalizar ícones e imagens de ativação {#to-customize-icon-and-launch-images}
+### Para personalizar ícones e imagens de ativação {#to-customize-icon-and-launch-images}
 
 #### Para iOS {#for-ios}
 
-1. Abra o `Capture.xcodeproj` projeto no Xcode.
-1. (***Para personalizar o ícone***) Na visualização do navegador de Captura, navegue até **[!UICONTROL Capturar > Capturar > Arquivos de suporte > Capture-info.plist]**. Clique na lista suspensa ao lado dos arquivos de Ícone. Especifique o nome do arquivo de ícone (.png) e faça upload do arquivo em **[!UICONTROL Captura > Capturar > Recursos > ícones]**. As dimensões atualmente suportadas são: 29 x 29, 50 x 50, 58 x 58, 72 x 72, 100 x 100 e 144 x 144.
-1. (***Para personalizar imagens*** de ativação) Certifique-se de que os nomes de arquivo de suas imagens sejam:
+1. Abra o projeto `Capture.xcodeproj` no Xcode.
+1. (***Para personalizar o ícone***) Na visualização do navegador do Capture, navegue até **[!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]**. Clique na lista suspensa ao lado dos arquivos de Ícone. Especifique o nome do arquivo de ícone (.png) e faça upload do arquivo em **[!UICONTROL Capturar > Capturar > Recursos > ícones]**. As dimensões atualmente suportadas são: 29 x 29, 50 x 50, 58 x 58, 72 x 72, 100 x 100 e 144 x 144.
+1. (***Para personalizar imagens de ativação***) Certifique-se de que os nomes de arquivo das suas imagens são:
 
    * Para retrato: `Default-Portrait~ipad.png` e `Default-Portrait@2x~ipad.png`
    * Para paisagem: `Default-Landscape~ipad.png` e `Default-Landscape@2x~ipad.png`
+
    Carregue-os no projeto Capture para substituir os arquivos existentes no projeto.
 
    >[!NOTE]
    >
    >Verifique se o nome e a resolução da imagem correspondem à imagem que você substituiu no projeto.
 
-1. Crie e execute o aplicativo AEM Forms em dispositivos iOS ou simuladores iOS.
+1. Crie e execute o aplicativo AEM Forms no dispositivo iOS ou no simulador iOS.
 
 #### Para Android {#for-android}
 
@@ -63,6 +67,7 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
+
    >[!NOTE]
    >
    >Verifique se o nome e a resolução da imagem correspondem à imagem que você substituiu no projeto.
@@ -89,14 +94,14 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 
 ### Para iOS {#for-ios-1}
 
-1. Abra o `Capture.xcodeproj` projeto no Xcode.
+1. Abra o projeto `Capture.xcodeproj` no Xcode.
 1. Na visualização do navegador Capture, navegue até **[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**.
 
-   Atualize o valor do `CFBundleDisplayName` atributo para um nome que você deseja exibir para o aplicativo.
+   Atualize o valor do atributo `CFBundleDisplayName` para um nome que você deseja exibir para o aplicativo.
 
-1. Crie e execute o aplicativo AEM Forms em dispositivos iOS ou simuladores iOS.
+1. Crie e execute o aplicativo AEM Forms no dispositivo iOS ou no simulador iOS.
 
-   Para obter detalhes sobre como criar o aplicativo para iOS, consulte [Configurar o projeto Xcode e criar o aplicativo](/help/forms/using/setup-xcode-project-build-installer.md)iOS.
+   Para obter detalhes sobre como criar o aplicativo para iOS, consulte [Configure o projeto Xcode e crie o aplicativo iOS](/help/forms/using/setup-xcode-project-build-installer.md).
 
 ### Para Android {#for-android-1}
 
@@ -107,7 +112,7 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 1. Atualize o valor da chave `app_name`.
 1. Recrie o aplicativo AEM Forms.
 
-   Para obter detalhes sobre como criar o aplicativo para Android, consulte [Configurar o projeto Eclipse e criar o aplicativo](/help/forms/using/setup-eclipse-project-build-installer.md)Android.
+   Para obter detalhes sobre como criar o aplicativo para Android, consulte [Configure o projeto do Eclipse e crie o aplicativo Android](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 ### Para Windows {#for-windows-1}
 
@@ -115,12 +120,12 @@ Execute as seguintes etapas para personalizar o ícone do aplicativo padrão e a
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. Atualize o valor na `<name>...</name>` tag .
+1. Atualize o valor na tag `<name>...</name>`.
 1. Recrie o aplicativo AEM Forms.
 
-   Para obter detalhes sobre como criar o aplicativo para Windows, consulte [Configurar o projeto do Visual Studio e criar o aplicativo](/help/forms/using/setup-visual-studio-project-build-installer.md)do Windows.
+   Para obter detalhes sobre como criar o aplicativo para Windows, consulte [Configure o projeto do Visual Studio e crie o aplicativo do Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
-## Personalização de imagens na página de login {#customizing-images-on-the-login-page}
+## Personalização de imagens na página de logon {#customizing-images-on-the-login-page}
 
 A página de logon do aplicativo AEM Forms tem imagens de logotipo e plano de fundo. O logotipo está localizado acima da caixa de diálogo de logon e a imagem de fundo está localizada abaixo da caixa de diálogo de logon. Execute as seguintes etapas para personalizar a imagem padrão na página de logon:
 
@@ -150,34 +155,34 @@ Verifique se você tem as seguintes imagens:
 
 **Para personalizar imagens na página de logon usando o Xcode**
 
-1. Abra o `Capture.xcodeproj` projeto no Xcode.
+1. Abra o projeto `Capture.xcodeproj` no Xcode.
 
-1. Navegue até a `www/wsmobile/images`pasta.
-1. Para alterar o logotipo, substitua o arquivo padrão `LC-logo.png` pelo arquivo personalizado `LC-logo.png` .
-1. Para alterar o plano de fundo, substitua o `Landing_bg.jpeg` arquivo padrão pelo `Landing_bg.jpeg`arquivo personalizado.
-1. Crie e execute o aplicativo AEM Forms em dispositivos iOS ou simuladores iOS.
+1. Navegue até a pasta `www/wsmobile/images`.
+1. Para alterar o logotipo, substitua o arquivo padrão `LC-logo.png` pelo arquivo personalizado `LC-logo.png`.
+1. Para alterar o plano de fundo, substitua o arquivo padrão `Landing_bg.jpeg` pelo arquivo personalizado `Landing_bg.jpeg`.
+1. Crie e execute o aplicativo AEM Forms no dispositivo iOS ou no simulador iOS.
 
 ### Para personalizar imagens nas páginas de logon usando o Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}
 
 1. Abra o projeto do Android no Eclipse.
 
-1. Navegue até a `assets/www/wsmobile/images`pasta.
-1. Para alterar o logotipo, substitua o arquivo padrão `LC-logo.png` pelo arquivo personalizado `LC-logo.png` .
-1. Para alterar o plano de fundo, substitua o `Landing_bg.jpeg` arquivo padrão pelo `Landing_bg.jpeg`arquivo personalizado.
-1. Crie e execute o aplicativo AEM Forms em dispositivos Android.
+1. Navegue até a pasta `assets/www/wsmobile/images`.
+1. Para alterar o logotipo, substitua o arquivo padrão `LC-logo.png` pelo arquivo personalizado `LC-logo.png`.
+1. Para alterar o plano de fundo, substitua o arquivo padrão `Landing_bg.jpeg` pelo arquivo personalizado `Landing_bg.jpeg`.
+1. Crie e execute o aplicativo AEM Forms no dispositivo Android.
 
 ### Para personalizar imagens nas páginas de logon usando o Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
 
-1. Abra o `MWSWindows.sln` projeto no Visual Studio.
+1. Abra o projeto `MWSWindows.sln` no Visual Studio.
 
-1. Navegue até a `MWSWindows\www\wsmobile\images`pasta.
-1. Para alterar o logotipo, substitua o arquivo padrão `LC-logo.png` pelo arquivo personalizado `LC-logo.png` .
-1. Para alterar o plano de fundo, substitua o `Landing_bg.jpeg` arquivo padrão pelo `Landing_bg.jpeg`arquivo personalizado.
+1. Navegue até a pasta `MWSWindows\www\wsmobile\images`.
+1. Para alterar o logotipo, substitua o arquivo padrão `LC-logo.png` pelo arquivo personalizado `LC-logo.png`.
+1. Para alterar o plano de fundo, substitua o arquivo padrão `Landing_bg.jpeg` pelo arquivo personalizado `Landing_bg.jpeg`.
 1. Crie e execute o aplicativo AEM Forms no dispositivo Windows.
 
 ## Personalizar o logotipo no menu do aplicativo {#customizing_images_on_the_login_page-1}
 
-Depois de fazer logon no aplicativo AEM Forms e tocar no botão de menu, você pode ver o logotipo acima do menu. Execute as seguintes etapas para personalizar o logotipo padrão:
+Depois de fazer logon no aplicativo AEM Forms e tocar no botão de menu, você poderá ver o logotipo acima do menu. Execute as seguintes etapas para personalizar o logotipo padrão:
 
 **Antes de você iniciar**
 
@@ -200,24 +205,24 @@ Verifique se você tem a seguinte imagem:
 
 **Para personalizar imagens na página de logon usando o Xcode**
 
-1. Abra o `Capture.xcodeproj` projeto no Xcode.
+1. Abra o projeto `Capture.xcodeproj` no Xcode.
 
-1. Navegue até a `www/wsmobile/images`pasta.
-1. Para alterar o logotipo, substitua o arquivo padrão `aem_icon.png` pelo arquivo personalizado `aem_icon.png` .
-1. Crie e execute o aplicativo AEM Forms em dispositivos iOS ou simuladores iOS.
+1. Navegue até a pasta `www/wsmobile/images`.
+1. Para alterar o logotipo, substitua o arquivo padrão `aem_icon.png` pelo arquivo personalizado `aem_icon.png`.
+1. Crie e execute o aplicativo AEM Forms no dispositivo iOS ou no simulador iOS.
 
 ### Para personalizar imagens nas páginas de logon usando o Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
 1. Abra o projeto do Android no Eclipse.
 
-1. Navegue até a `assets/www/wsmobile/images`pasta.
-1. Para alterar o logotipo, substitua o arquivo padrão `aem_icon.png` pelo arquivo personalizado `aem_icon.png` .
-1. Crie e execute o aplicativo AEM Forms em dispositivos Android.
+1. Navegue até a pasta `assets/www/wsmobile/images`.
+1. Para alterar o logotipo, substitua o arquivo padrão `aem_icon.png` pelo arquivo personalizado `aem_icon.png`.
+1. Crie e execute o aplicativo AEM Forms no dispositivo Android.
 
 ### Para personalizar imagens nas páginas de logon usando o Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
-1. Abra o `MWSWindows.sln` projeto no Visual Studio.
+1. Abra o projeto `MWSWindows.sln` no Visual Studio.
 
-1. Navegue até a `MWSWindows\www\wsmobile\images`pasta.
-1. Para alterar o logotipo, substitua o arquivo padrão `aem_icon.png` pelo arquivo personalizado `aem_icon.png` .
+1. Navegue até a pasta `MWSWindows\www\wsmobile\images`.
+1. Para alterar o logotipo, substitua o arquivo padrão `aem_icon.png` pelo arquivo personalizado `aem_icon.png`.
 1. Crie e execute o aplicativo AEM Forms no dispositivo Windows.
