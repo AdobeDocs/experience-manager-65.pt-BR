@@ -2,7 +2,7 @@
 title: Gerenciamento Programático de Pontos de Extremidade
 seo-title: Gerenciamento Programático de Pontos de Extremidade
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -28,14 +28,14 @@ O serviço Endpoint Registry fornece a capacidade de gerenciar programaticamente
 * SOAP
 * Pasta assistida
 * E-mail
-* (Obsoleto para formulários do AEM) Solução remota
-* Gerenciador de Tarefas
+* (Obsoleto para formulários AEM) Remoção
+* Gerenciador de tarefas
 
 >[!NOTE]
 >
->SOAP, EJB e (obsoleto para formulários AEM no JEE) Os pontos finais remotos são criados automaticamente para cada serviço ativado. Os pontos de extremidade SOAP e EJB habilitam SOAP e EJB para todas as operações de serviço.
+>SOAP, EJB e (Obsoleto para formulários AEM no JEE) Os pontos finais remotos são criados automaticamente para cada serviço ativado. Os pontos de extremidade SOAP e EJB habilitam SOAP e EJB para todas as operações de serviço.
 
-Um terminal Remoting permite que clientes Flex chamem operações no serviço AEM Forms ao qual o terminal é adicionado. Um destino Flex com o mesmo nome do ponto de extremidade é criado e os clientes Flex podem criar RemoteObjects que apontam para esse destino para chamar operações no serviço relevante.
+Um terminal Remoting permite que os clientes Flex chamem operações no serviço AEM Forms ao qual o terminal é adicionado. É criado um destino Flex com o mesmo nome do ponto de extremidade e os clientes Flex podem criar RemoteObjects que apontam para esse destino para chamar operações no serviço relevante.
 
 Os pontos de extremidade Email, Gerenciador de Tarefas e Pasta assistida expõem apenas uma operação específica do serviço. A adição desses pontos finais requer uma segunda etapa de configuração para selecionar um método para chamar, definir parâmetros de configuração e especificar mapeamentos de parâmetros de entrada e saída.
 
@@ -43,19 +43,19 @@ Você pode organizar pontos de extremidade do TaskManager em grupos chamados *ca
 
 É possível realizar essas tarefas usando o serviço Endpoint Registry:
 
-* Adicione pontos de extremidade EJB. (Consulte [Adicionando pontos finais](programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
-* Adicionar pontos de extremidade SOAP. (Consulte [Adicionando Pontos de Extremidade](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
-* Adicionar pontos de extremidade de pasta monitorada (Consulte [Adicionar pontos de extremidade](programmatically-endpoints.md#adding-watched-folder-endpoints)de pasta monitorados.)
-* Adicionar pontos de extremidade de email. (Consulte [Adicionando Pontos de Extremidade](programmatically-endpoints.md#adding-email-endpoints)de Email.)
-* Adicionar pontos finais remotos. (Consulte [Adicionando Pontos Finais](programmatically-endpoints.md#adding-remoting-endpoints)Remotos.)
-* Adicionar pontos de extremidade do TaskManager (Consulte [Adicionar pontos de extremidade](programmatically-endpoints.md#adding-taskmanager-endpoints)do TaskManager.)
+* Adicione pontos de extremidade EJB. (Consulte [Adicionando Endpoints EJB](programmatically-endpoints.md#adding-ejb-endpoints).)
+* Adicionar pontos de extremidade SOAP. (Consulte [Adicionando Endpoints SOAP](programmatically-endpoints.md#adding-soap-endpoints).)
+* Adicionar pontos de extremidade de pasta monitorada (Consulte [Adicionar pontos de extremidade de pasta monitorada](programmatically-endpoints.md#adding-watched-folder-endpoints).)
+* Adicionar pontos de extremidade de email. (Consulte [Adicionando Pontos de Extremidade de Email](programmatically-endpoints.md#adding-email-endpoints).)
+* Adicionar pontos finais remotos. (Consulte [Adicionando Pontos Finais Remotos](programmatically-endpoints.md#adding-remoting-endpoints).)
+* Adicionar pontos de extremidade do TaskManager (Consulte [Adicionando pontos de extremidade do TaskManager](programmatically-endpoints.md#adding-taskmanager-endpoints).)
 * Modifique pontos de extremidade (Consulte [Modificando Pontos de Extremidade](programmatically-endpoints.md#modifying-endpoints).)
 * Remova os pontos de extremidade (Consulte [Remoção dos pontos de extremidade](programmatically-endpoints.md#removing-endpoints).)
-* Recuperar informações do conector do ponto de extremidade (Consulte [Recuperando informações](programmatically-endpoints.md#retrieving-endpoint-connector-information)do conector do ponto de extremidade.)
+* Recuperar informações do conector do ponto de extremidade (Consulte [Recuperando Informações do Conector do Ponto de Extremidade](programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ## Adicionando pontos finais EJB {#adding-ejb-endpoints}
 
-Você pode adicionar programaticamente um terminal EJB a um serviço usando a API Java do AEM Forms. Ao adicionar um terminal EJB a um serviço, você está permitindo que um aplicativo cliente chame o serviço usando o modo EJB. Ou seja, ao definir as propriedades de conexão necessárias para chamar AEM Forms, você pode selecionar o modo EJB. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.)
+Você pode adicionar programaticamente um terminal EJB a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal EJB a um serviço, você está permitindo que um aplicativo cliente chame o serviço usando o modo EJB. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, você pode selecionar o modo EJB. (Consulte [Definição das propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Você pode adicionar programaticamente um terminal EJB a um serviço usando a AP
 Para adicionar um terminal EJB a um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `EndpointRegistry Client` objeto.
+1. Crie um objeto `EndpointRegistry Client`.
 1. Defina atributos de ponto de extremidade EJB.
 1. Crie um terminal EJB.
 1. Ative o terminal.
@@ -81,14 +81,14 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Os seguintes arqu
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Antes de poder adicionar programaticamente um terminal EJB, é necessário criar um `EndpointRegistryClient` objeto.
+Antes de poder adicionar programaticamente um terminal EJB, é necessário criar um objeto `EndpointRegistryClient`.
 
 **Definir atributos de ponto de extremidade EJB**
 
@@ -98,7 +98,7 @@ Para criar um terminal EJB para um serviço, especifique os seguintes valores:
 * **Descrição**: Especifica a descrição do ponto de extremidade.
 * **Nome**: Especifica o nome do ponto final.
 * **Identificador** do serviço: Especifica o serviço ao qual o ponto de extremidade pertence.
-* **Nome** da operação: Especifica o nome da operação que é invocada usando o ponto final. Ao criar um terminal EJB, especifique um caractere curinga ( `*`). No entanto, se você quiser especificar uma operação específica em vez de chamar todas as operações de serviço, especifique o nome da operação em vez de usar o caractere curinga ( `*`).
+* **Nome** da operação: Especifica o nome da operação que é invocada usando o ponto final. Ao criar um ponto de extremidade EJB, especifique um caractere curinga ( `*`). No entanto, se você quiser especificar uma operação específica em vez de chamar todas as operações de serviço, especifique o nome da operação em vez de usar o caractere curinga ( `*`).
 
 **Criar um ponto de extremidade EJB**
 
@@ -112,7 +112,7 @@ Depois de criar um novo terminal, é necessário ativá-lo. Depois de ativar o t
 
 [Adicionar um terminal EJB usando a API Java](programmatically-endpoints.md#adding-an-ejb-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -126,25 +126,25 @@ Adicione um terminal EJB usando a API Java:
 
 1. Crie um objeto EndpointRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `EndpointRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Defina atributos de ponto de extremidade EJB.
 
-   * Crie um `CreateEndpointInfo` objeto usando seu construtor.
-   * Especifique o valor do identificador do conector, chamando o método do `CreateEndpointInfo` objeto `setConnectorId` e transmitindo o valor da string `EJB`.
-   * Especifique a descrição do ponto de extremidade chamando o método do `CreateEndpointInfo` objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade chamando o método do `CreateEndpointInfo` `setName` objeto e transmitindo um valor de string que especifica o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método do `CreateEndpointInfo` objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
-   * Especifique a operação que é invocada invocando o método do `CreateEndpointInfo` `setOperationName` objeto e transmita um valor de string que especifica o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
+   * Crie um objeto `CreateEndpointInfo` usando seu construtor.
+   * Especifique o valor do identificador do conector, chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e transmitindo o valor da string `EJB`.
+   * Especifique a descrição do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de string que especifica o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
+   * Especifique a operação que é invocada invocando o método `CreateEndpointInfo` do objeto `setOperationName` e transmita um valor de cadeia de caracteres que especifica o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
 
 1. Crie um terminal EJB.
 
-   Crie o ponto de extremidade chamando o `EndpointRegistryClient` método do `createEndpoint` objeto e transmitindo o `CreateEndpointInfo` objeto. Este método retorna um `Endpoint` objeto que representa o novo ponto final EJB.
+   Crie o ponto de extremidade chamando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo ponto final EJB.
 
 1. Ative o terminal.
 
-   Ative o terminal chamando o método enable do `EndpointRegistryClient` objeto e transmitindo o `Endpoint` objeto que foi retornado pelo `createEndpoint` método.
+   Ative o terminal chamando o método enable do objeto `EndpointRegistryClient` e transmitindo o objeto `Endpoint` que foi retornado pelo método `createEndpoint`.
 
 **Consulte também:**
 
@@ -152,13 +152,13 @@ Adicione um terminal EJB usando a API Java:
 
 [Início rápido: Adicionar um terminal EJB usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adicionando pontos de extremidade SOAP {#adding-soap-endpoints}
+## Adicionando Endpoints SOAP {#adding-soap-endpoints}
 
-Você pode adicionar programaticamente um terminal SOAP a um serviço usando a API Java do AEM Forms. Ao adicionar um terminal SOAP, você permite que um aplicativo cliente chame o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar AEM Forms, você pode selecionar o modo SOAP.
+Você pode adicionar programaticamente um terminal SOAP a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal SOAP, você permite que um aplicativo cliente chame o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, você pode selecionar o modo SOAP.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ Você pode adicionar programaticamente um terminal SOAP a um serviço usando a A
 Para adicionar um terminal SOAP a um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `EndpointRegistryClient` objeto.
+1. Crie um objeto `EndpointRegistryClient`.
 1. Defina os atributos de ponto de extremidade SOAP.
 1. Crie um terminal SOAP.
 1. Ative o terminal.
@@ -186,14 +186,14 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Esses arquivos JAR são necessários para criar um terminal SOAP. No entanto, é necessário adicionar arquivos JAR se você usar o terminal SOAP para chamar o serviço. Para obter informações sobre arquivos JAR do AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Esses arquivos JAR são necessários para criar um terminal SOAP. No entanto, é necessário adicionar arquivos JAR se você usar o terminal SOAP para chamar o serviço. Para obter informações sobre arquivos AEM Forms JAR, consulte [Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Para adicionar programaticamente um terminal SOAP a um serviço, é necessário criar um `EndpointRegistryClient` objeto.
+Para adicionar programaticamente um terminal SOAP a um serviço, é necessário criar um objeto `EndpointRegistryClient`.
 
 **Definir atributos de ponto de extremidade SOAP**
 
@@ -217,11 +217,11 @@ Depois de criar um novo terminal, é necessário ativá-lo. Quando o terminal es
 
 [Adicionar um terminal SOAP usando a API Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicionar um terminal SOAP usando a API Java {#add-a-soap-endpoint-using-the-java-api}
+### Adicione um terminal SOAP usando a API Java {#add-a-soap-endpoint-using-the-java-api}
 
 Adicione um terminal SOAP a um serviço usando a API Java:
 
@@ -231,25 +231,25 @@ Adicione um terminal SOAP a um serviço usando a API Java:
 
 1. Crie um objeto EndpointRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `EndpointRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Defina os atributos de ponto de extremidade SOAP.
 
-   * Crie um `CreateEndpointInfo` objeto usando seu construtor.
-   * Especifique o valor do identificador do conector, chamando o método do `CreateEndpointInfo` objeto `setConnectorId` e transmitindo o valor da string `SOAP`.
-   * Especifique a descrição do ponto de extremidade chamando o método do `CreateEndpointInfo` objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade chamando o método do `CreateEndpointInfo` `setName` objeto e transmitindo um valor de string que especifica o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método do `CreateEndpointInfo` objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
-   * Especifique a operação que é invocada chamando o método do `CreateEndpointInfo` `setOperationName` objeto e transmitindo um valor de string que especifica o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
+   * Crie um objeto `CreateEndpointInfo` usando seu construtor.
+   * Especifique o valor do identificador do conector, chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e transmitindo o valor da string `SOAP`.
+   * Especifique a descrição do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de string que especifica o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
+   * Especifique a operação que é invocada invocando o método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
 
 1. Crie um terminal SOAP.
 
-   Crie o ponto de extremidade chamando o `EndpointRegistryClient` método do `createEndpoint` objeto e transmitindo o `CreateEndpointInfo` objeto. Esse método retorna um `Endpoint` objeto que representa o novo terminal SOAP.
+   Crie o ponto de extremidade chamando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo terminal SOAP.
 
 1. Ative o terminal.
 
-   Ative o terminal chamando o método enable do `EndpointRegistryClient` objeto e transmitindo o `Endpoint` objeto que foi retornado pelo `createEndpoint` método.
+   Ative o terminal chamando o método enable do objeto `EndpointRegistryClient` e transmitindo o objeto `Endpoint` que foi retornado pelo método `createEndpoint`.
 
 **Consulte também:**
 
@@ -257,19 +257,19 @@ Adicione um terminal SOAP a um serviço usando a API Java:
 
 [Início rápido: Adicionar um terminal SOAP usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adicionando pontos de extremidade de pasta monitorada {#adding-watched-folder-endpoints}
+## Adicionando Pontos de Extremidade da Pasta Observada {#adding-watched-folder-endpoints}
 
-Você pode adicionar programaticamente um terminal de Pasta assistida a um serviço usando a API Java do AEM Forms. Ao adicionar um terminal de Pasta assistida, você permite que os usuários coloquem um arquivo (como um arquivo PDF) em uma pasta. Quando o arquivo é colocado na pasta, o serviço configurado é então chamado e manipula o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada. Uma pasta assistida é configurada para ser digitalizada em um intervalo de taxa fixa ou com um cronograma de verificação, como todas as segundas, quartas e sextas-feiras ao meio-dia.
+Você pode adicionar programaticamente um terminal de Pasta assistida a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal de Pasta assistida, você permite que os usuários coloquem um arquivo (como um arquivo PDF) em uma pasta. Quando o arquivo é colocado na pasta, o serviço configurado é então chamado e manipula o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada. Uma pasta assistida é configurada para ser digitalizada em um intervalo de taxa fixa ou com um cronograma de verificação, como todas as segundas, quartas e sextas-feiras ao meio-dia.
 
-Para fins de adicionar programaticamente um ponto de extremidade de Pasta assistida a um serviço, considere o seguinte processo de vida curta chamado *EncryptDocument*. (Consulte [Como entender os processos](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)do AEM Forms.)
+Para fins de adicionar programaticamente um ponto de extremidade de Pasta monitorada a um serviço, considere o seguinte processo de vida curta chamado *EncryptDocument*. (Consulte [Entendendo os processos AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Esse processo aceita um documento PDF não protegido como um valor de entrada e passa o documento PDF não protegido para a `EncryptPDFUsingPassword` operação do serviço de criptografia. O documento PDF é criptografado com uma senha e o documento PDF criptografado por senha é o valor de saída desse processo. O nome do valor de entrada (o documento PDF não protegido) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
+Esse processo aceita um documento PDF não protegido como um valor de entrada e passa o documento PDF não protegido para a operação `EncryptPDFUsingPassword` do serviço de criptografia. O documento PDF é criptografado com uma senha e o documento PDF criptografado por senha é o valor de saída desse processo. O nome do valor de entrada (o documento PDF não protegido) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -280,7 +280,7 @@ Esse processo aceita um documento PDF não protegido como um valor de entrada e 
 Para adicionar um terminal de Pasta assistida a um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `EndpointRegistryClient` objeto.
+1. Crie um objeto `EndpointRegistryClient`.
 1. Defina os atributos do ponto de extremidade da Pasta assistida.
 1. Especifique os valores de configuração.
 1. Defina os valores dos parâmetros de entrada.
@@ -296,14 +296,14 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Para adicionar programaticamente um ponto de extremidade de Pasta assistida, é necessário criar um `EndpointRegistryClient` objeto.
+Para adicionar programaticamente um ponto de extremidade de Pasta assistida, é necessário criar um objeto `EndpointRegistryClient`.
 
 **Definir atributos de ponto de extremidade de Pasta assistida**
 
@@ -313,7 +313,7 @@ Para criar um ponto de extremidade de Pasta assistida para um serviço, especifi
 * **Descrição**: Especifica a descrição do ponto final.
 * **Nome**: Especifica o nome do ponto final.
 * **Identificador** do serviço: Especifica o serviço ao qual o ponto de extremidade pertence. Por exemplo, para adicionar um endpoint de Pasta assistida ao processo que é introduzido nesta seção (um processo se torna um serviço quando ativado usando o Workbench), especifique `EncryptDocument`.
-* **Nome** da operação: Especifica o nome da operação que é invocada usando o ponto final. Geralmente, ao criar um terminal de Pasta assistida para um serviço que se originou de um processo criado no Workbench, o nome da operação é `invoke`.
+* **Nome** da operação: Especifica o nome da operação que é invocada usando o ponto final. Normalmente, ao criar um ponto de extremidade de Pasta assistida para um serviço que se originou de um processo criado no Workbench, o nome da operação é `invoke`.
 
 **Especificar valores de configuração**
 
@@ -332,8 +332,8 @@ A lista a seguir especifica os valores de configuração que são definidos ao a
 * **domainName**: O domínio do usuário. Este valor é obrigatório. O valor padrão é DefaultDom.
 * **batchSize**: O número de arquivos ou pastas a serem coletados por varredura. Use esse valor para evitar uma sobrecarga no sistema; a verificação de muitos arquivos ao mesmo tempo pode resultar em uma falha. O valor padrão é 2.
 * **waitTime**: O tempo, em milissegundos, para aguardar antes de digitalizar uma pasta ou arquivo após a criação. Por exemplo, se o tempo de espera for de 36.000.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será coletado depois de 59 minutos ou mais. Esse atributo é útil para garantir que um arquivo ou pasta seja completamente copiado para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o arquivo levar dez minutos para ser baixado, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Essa configuração impede que a pasta assistida verifique o arquivo se ele não estiver aguardando por dez minutos. O valor padrão é 0.
-* **excludeFilePattern**: O padrão que uma pasta assistida usa para determinar quais arquivos e pastas serão examinados e coletados. Qualquer arquivo ou pasta que tenha esse padrão não será verificado para processamento. Essa configuração é útil quando a entrada é uma pasta que contém vários arquivos. O conteúdo da pasta pode ser copiado em uma pasta que tenha um nome que será selecionado pela pasta assistida. Esta etapa impede que a pasta assistida pegue uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. Por exemplo, se o valor excludeFilePattern for `data*`, todos os arquivos e pastas correspondentes não `data*` serão selecionados. Isso inclui arquivos e pastas nomeados `data1`, `data2`etc. Além disso, o padrão pode ser complementado com padrões curingas para especificar padrões de arquivos. A pasta assistida modifica a expressão normal para suportar padrões curingas, como `*.*` e `*.pdf`. Esses padrões curingas não são suportados por expressões regulares.
-* **includeFilePattern**: O padrão que a pasta assistida usa para determinar quais pastas e arquivos serão examinados e coletados. Por exemplo, se esse valor for `*`, todos os arquivos e pastas correspondentes `input*` serão selecionados. Isso inclui arquivos e pastas nomeados `input1`, `input2`etc. O valor padrão é `*`. Esse valor indica todos os arquivos e pastas. Além disso, o padrão pode ser complementado com padrões curingas para especificar padrões de arquivos. A pasta assistida modifica a expressão normal para suportar padrões curingas, como `*.*` e `*.pdf`. Esses padrões curingas não são suportados por expressões regulares. Este valor é obrigatório.
+* **excludeFilePattern**: O padrão que uma pasta assistida usa para determinar quais arquivos e pastas serão examinados e coletados. Qualquer arquivo ou pasta que tenha esse padrão não será verificado para processamento. Essa configuração é útil quando a entrada é uma pasta que contém vários arquivos. O conteúdo da pasta pode ser copiado em uma pasta que tenha um nome que será selecionado pela pasta assistida. Esta etapa impede que a pasta assistida pegue uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. Por exemplo, se o valor excludeFilePattern for `data*`, todos os arquivos e pastas que correspondem a `data*` não serão selecionados. Isso inclui arquivos e pastas chamados `data1`, `data2` e assim por diante. Além disso, o padrão pode ser complementado com padrões curingas para especificar padrões de arquivos. A pasta assistida modifica a expressão normal para suportar padrões curingas, como `*.*` e `*.pdf`. Esses padrões curingas não são suportados por expressões regulares.
+* **includeFilePattern**: O padrão que a pasta assistida usa para determinar quais pastas e arquivos serão examinados e coletados. Por exemplo, se esse valor for `*`, todos os arquivos e pastas que correspondem a `input*` serão coletados. Isso inclui arquivos e pastas chamados `input1`, `input2` e assim por diante. O valor padrão é `*`. Esse valor indica todos os arquivos e pastas. Além disso, o padrão pode ser complementado com padrões curingas para especificar padrões de arquivos. A pasta assistida modifica a expressão normal para suportar padrões curingas, como `*.*` e `*.pdf`. Esses padrões curingas não são suportados por expressões regulares. Este valor é obrigatório.
 * **resultFolderName**: A pasta onde os resultados salvos são armazenados. Esse local pode ser um caminho absoluto ou relativo do diretório. Se os resultados não forem exibidos nessa pasta, verifique a pasta de falha. Os arquivos somente leitura não são processados e serão salvos na pasta de falha. O valor padrão é `result/%Y/%M/%D/`. Esta é a pasta de resultados dentro da pasta assistida.
 * **preserveFolderName**: O local onde os arquivos são armazenados após a verificação e coleta bem-sucedidas. Esse local pode ser um caminho de diretório absoluto, relativo ou nulo. O valor padrão é `preserve/%Y/%M/%D/`.
 * **failureFolderName**: A pasta onde os arquivos de falha são salvos. Esse local é sempre relativo à pasta assistida. Os arquivos somente leitura não são processados e serão salvos na pasta de falha. O valor padrão é `failure/%Y/%M/%D/`.
@@ -342,7 +342,7 @@ A lista a seguir especifica os valores de configuração que são definidos ao a
 
 **Definir valores de parâmetros de entrada**
 
-Ao criar um ponto final de Pasta assistida, você deve definir valores de parâmetro de entrada. Ou seja, você deve descrever os valores de entrada passados para a operação chamada pela pasta assistida. Por exemplo, considere o processo apresentado neste tópico. Tem um valor de entrada nomeado `InDoc` e seu tipo de dados é `com.adobe.idp.Document`. Ao criar um terminal de Pasta assistida para esse processo (depois que um processo é ativado, ele se torna um serviço), você deve definir o valor do parâmetro de entrada.
+Ao criar um ponto final de Pasta assistida, você deve definir valores de parâmetro de entrada. Ou seja, você deve descrever os valores de entrada passados para a operação chamada pela pasta assistida. Por exemplo, considere o processo apresentado neste tópico. Ele tem um valor de entrada chamado `InDoc` e seu tipo de dados é `com.adobe.idp.Document`. Ao criar um terminal de Pasta assistida para esse processo (depois que um processo é ativado, ele se torna um serviço), você deve definir o valor do parâmetro de entrada.
 
 Para definir valores de parâmetro de entrada necessários para um ponto de extremidade de Pasta assistida, especifique os seguintes valores:
 
@@ -353,13 +353,13 @@ Para definir valores de parâmetro de entrada necessários para um ponto de extr
 * `Literal`: O endpoint de Pasta assistida usa o valor inserido no campo conforme ele é exibido. Todos os tipos básicos de Java são suportados. Por exemplo, se uma API usar uma entrada como String, long, int e Boolean, a string será convertida no tipo correto e o serviço será chamado.
 * `Variable`: O valor inserido é um padrão de arquivo que a pasta assistida usa para escolher a entrada. Por exemplo, se você selecionar Variável para o tipo de mapeamento e o documento de entrada precisar ser um arquivo PDF, poderá especificar `*.pdf`como valor de mapeamento.
 
-**Valor** de mapeamento: Especifica o valor do tipo de mapeamento. Por exemplo, se você selecionar um tipo de `Variable` mapeamento, poderá especificar `*.pdf` como padrão de arquivo.
+**Valor** de mapeamento: Especifica o valor do tipo de mapeamento. Por exemplo, se você selecionar um tipo de mapeamento `Variable`, poderá especificar `*.pdf` como padrão de arquivo.
 
 **Tipo** de dados: Especifica o tipo de dados dos valores de entrada. Por exemplo, o tipo de dados do valor de entrada do processo introduzido nesta seção é `com.adobe.idp.Document`.
 
 **Definir um valor de parâmetro de saída**
 
-Ao criar um ponto final de Pasta assistida, você deve definir um valor de parâmetro de saída. Ou seja, você deve descrever o valor de saída que é retornado pelo serviço chamado pelo endpoint de Pasta assistida. Por exemplo, considere o processo apresentado neste tópico. Tem um valor de saída nomeado `SecuredDoc` e seu tipo de dados é `com.adobe.idp.Document`. Ao criar um terminal de Pasta assistida para esse processo (depois que um processo é ativado, ele se torna um serviço), você deve definir o valor do parâmetro de saída.
+Ao criar um ponto final de Pasta assistida, você deve definir um valor de parâmetro de saída. Ou seja, você deve descrever o valor de saída que é retornado pelo serviço chamado pelo endpoint de Pasta assistida. Por exemplo, considere o processo apresentado neste tópico. Ele tem um valor de saída chamado `SecuredDoc` e seu tipo de dados é `com.adobe.idp.Document`. Ao criar um terminal de Pasta assistida para esse processo (depois que um processo é ativado, ele se torna um serviço), você deve definir o valor do parâmetro de saída.
 
 Para definir um valor de parâmetro de saída necessário para um endpoint de Pasta assistida, especifique os seguintes valores:
 
@@ -367,9 +367,9 @@ Para definir um valor de parâmetro de saída necessário para um endpoint de Pa
 
 **Tipo** de mapeamento: Usado para configurar a saída do serviço e da operação. As opções disponíveis são as seguintes:
 
-* Se o serviço retornar um único objeto (um único documento), o padrão será `%F.pdf` e o destino de origem será sourcefilename.pdf. Por exemplo, o processo introduzido nesta seção retorna um único documento. Como resultado, o tipo de mapeamento pode ser definido como `%F.pdf` ( `%F` significa usar o nome de arquivo fornecido). O padrão `%E` especifica a extensão do documento de entrada.
-* Se o serviço retornar uma lista, o padrão será `Result\%F\`e o destino de origem será Result\sourcefilename\source1 (output 1) e Result\sourcefilename\source2 (output 2).
-* Se o serviço retornar um mapa, o padrão será `Result\%F\`e o destino de origem será Result\sourcefilename\file1 and Result\sourcefilename\file2. Se o mapa tiver mais de um objeto, o padrão será `Result\%F.pdf` e o destino de origem será Result\sourcefilename1.pdf (saída 1), Result\sourcefilenam2.pdf (saída 2) e assim por diante.
+* Se o serviço retornar um único objeto (um único documento), o padrão será `%F.pdf` e o destino de origem será sourcefilename.pdf. Por exemplo, o processo introduzido nesta seção retorna um único documento. Como resultado, o tipo de mapeamento pode ser definido como `%F.pdf` ( `%F` significa usar o nome de arquivo especificado). O padrão `%E` especifica a extensão do documento de entrada.
+* Se o serviço retornar uma lista, o padrão será `Result\%F\` e o destino de origem será Result\sourcefilename\source1 (output 1) e Result\sourcefilename\source2 (output 2).
+* Se o serviço retornar um mapa, o padrão será `Result\%F\` e o destino de origem será Result\sourcefilename\file1 and Result\sourcefilename\file2. Se o mapa tiver mais de um objeto, o padrão será `Result\%F.pdf` e o destino de origem será Result\sourcefilename1.pdf (saída 1), Result\sourcefilenam2.pdf (saída 2) e assim por diante.
 
 **Tipo** de dados: Especifica o tipo de dados do valor de retorno. Por exemplo, o tipo de dados do valor de retorno do processo introduzido nesta seção é `com.adobe.idp.Document`.
 
@@ -385,13 +385,13 @@ Depois de criar um terminal de Pasta assistida, é necessário ativá-lo. Quando
 
 [Adicionar um terminal de Pasta assistida usando a API Java](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicionar um terminal de Pasta assistida usando a API Java {#add-a-watched-folder-endpoint-using-the-java-api}
+### Adicionar um ponto de extremidade de Pasta assistida usando a API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Adicione um terminal de Pasta assistida usando a API Java do AEM Forms:
+Adicione um terminal de Pasta assistida usando a API Java da AEM Forms:
 
 1. Incluir arquivos de projeto.
 
@@ -399,71 +399,71 @@ Adicione um terminal de Pasta assistida usando a API Java do AEM Forms:
 
 1. Crie um objeto EndpointRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `EndpointRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Defina os atributos do ponto de extremidade da Pasta assistida.
 
-   * Crie um `CreateEndpointInfo` objeto usando seu construtor.
-   * Especifique o valor do identificador do conector, chamando o método do `CreateEndpointInfo` objeto `setConnectorId` e transmitindo o valor da string `WatchedFolder`.
-   * Especifique a descrição do ponto de extremidade chamando o método do `CreateEndpointInfo` objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade chamando o método do `CreateEndpointInfo` `setName` objeto e transmitindo um valor de string que especifica o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método do `CreateEndpointInfo` objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
-   * Especifique a operação que é invocada chamando o método do `CreateEndpointInfo` `setOperationName` objeto e transmitindo um valor de string que especifica o nome da operação. Geralmente, ao criar um ponto de extremidade de Pasta assistida para um serviço originado de um processo criado no Workbench, o nome da operação é chamado.
+   * Crie um objeto `CreateEndpointInfo` usando seu construtor.
+   * Especifique o valor do identificador do conector, chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e transmitindo o valor da string `WatchedFolder`.
+   * Especifique a descrição do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de string que especifica o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
+   * Especifique a operação que é invocada invocando o método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Geralmente, ao criar um ponto de extremidade de Pasta assistida para um serviço originado de um processo criado no Workbench, o nome da operação é chamado.
 
 1. Especifique os valores de configuração.
 
-   Para cada valor de configuração a ser definido para o endpoint de Pasta assistida, é necessário chamar o `CreateEndpointInfo` método do `setConfigParameterAsText` objeto. Por exemplo, para definir o valor de `url` configuração, chame o método `CreateEndpointInfo` do objeto `setConfigParameterAsText` e transmita os seguintes valores de string:
+   Para que cada valor de configuração seja definido para o ponto de extremidade Pasta assistida, é necessário chamar o método `CreateEndpointInfo` do objeto `setConfigParameterAsText`. Por exemplo, para definir o valor de configuração `url`, chame o método `CreateEndpointInfo` do objeto `setConfigParameterAsText` e passe os seguintes valores de string:
 
-   * Um valor de string que especifica o nome do valor de configuração. Ao definir o valor de `url` configuração, especifique `url`.
-   * Um valor de string que especifica o valor da configuração. Ao definir o valor de `url` configuração, especifique o local da pasta monitorada.
+   * Um valor de string que especifica o nome do valor de configuração. Ao definir o valor de configuração `url`, especifique `url`.
+   * Um valor de string que especifica o valor da configuração. Ao definir o valor de configuração `url`, especifique o local da pasta monitorada.
 
    >[!NOTE]
    >
-   >Para ver todos os valores de configuração definidos para o serviço EncryptDocument, consulte o exemplo de código Java localizado em [QuickStart: Adicionando um terminal de Pasta assistida usando a API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)Java.
+   >Para ver todos os valores de configuração definidos para o serviço EncryptDocument, consulte o exemplo de código Java localizado em [QuickStart: Adicionando um terminal de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
 
 1. Defina os valores dos parâmetros de entrada.
 
-   Defina um valor de parâmetro de entrada chamando o método do `CreateEndpointInfo` objeto `setInputParameterMapping` e transmitindo os seguintes valores:
+   Defina um valor de parâmetro de entrada invocando o método `CreateEndpointInfo` do objeto `setInputParameterMapping` e transmita os seguintes valores:
 
    * Um valor de string que especifica o nome do parâmetro de entrada. Por exemplo, o nome do parâmetro de entrada para o serviço EncryptDocument é `InDoc`.
-   * Um valor de string que especifica o tipo de dados do parâmetro de entrada. Por exemplo, o tipo de dados do parâmetro de `InDoc` entrada é `com.adobe.idp.Document`.
-   * Um valor de string que especifica o tipo de mapeamento. For example, you can specify `variable`.
+   * Um valor de string que especifica o tipo de dados do parâmetro de entrada. Por exemplo, o tipo de dados do parâmetro de entrada `InDoc` é `com.adobe.idp.Document`.
+   * Um valor de string que especifica o tipo de mapeamento. Por exemplo, você pode especificar `variable`.
    * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &amp;ast;.pdf como padrão de arquivo.
 
    >[!NOTE]
    >
-   >Chame o `setInputParameterMapping` método para cada valor de parâmetro de entrada a ser definido. Como o processo EncryptDocument tem apenas um parâmetro de entrada, é necessário chamar esse método uma vez.
+   >Chame o método `setInputParameterMapping` para cada valor de parâmetro de entrada a ser definido. Como o processo EncryptDocument tem apenas um parâmetro de entrada, é necessário chamar esse método uma vez.
 
 1. Defina um valor de parâmetro de saída.
 
-   Defina um valor de parâmetro de saída chamando o método do `CreateEndpointInfo` objeto `setOutputParameterMapping` e transmitindo os seguintes valores:
+   Defina um valor de parâmetro de saída chamando o método `CreateEndpointInfo` do objeto `setOutputParameterMapping` e transmita os seguintes valores:
 
    * Um valor de string que especifica o nome do parâmetro de saída. Por exemplo, o nome do parâmetro de saída para o serviço EncryptDocument é `SecuredDoc`.
-   * Um valor de string que especifica o tipo de dados do parâmetro de saída. Por exemplo, o tipo de dados do parâmetro de `SecuredDoc` saída é `com.adobe.idp.Document`.
-   * Um valor de string que especifica o tipo de mapeamento. For example, you can specify `%F.pdf`.
+   * Um valor de string que especifica o tipo de dados do parâmetro de saída. Por exemplo, o tipo de dados do parâmetro de saída `SecuredDoc` é `com.adobe.idp.Document`.
+   * Um valor de string que especifica o tipo de mapeamento. Por exemplo, você pode especificar `%F.pdf`.
 
 1. Criar um terminal de Pasta assistida.
 
-   Crie o ponto de extremidade chamando o `EndpointRegistryClient` método do `createEndpoint` objeto e transmitindo o `CreateEndpointInfo` objeto. Esse método retorna um `Endpoint` objeto que representa o endpoint de Pasta assistida.
+   Crie o ponto de extremidade chamando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o ponto final da Pasta assistida.
 
 1. Ative o terminal.
 
-   Ative o terminal chamando o `EndpointRegistryClient` método do `enable` objeto e transmitindo o `Endpoint` objeto que foi retornado pelo `createEndpoint` método.
+   Ative o terminal chamando o método `EndpointRegistryClient` do objeto `enable` e transmitindo o objeto `Endpoint` que foi retornado pelo método `createEndpoint`.
 
 **Consulte também:**
 
 [Resumo das etapas](programmatically-endpoints.md#summary-of-steps)
 
-[Início rápido: Adicionar um ponto de extremidade de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[Início rápido: Adicionando um ponto de extremidade de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Arquivo constante de valores de configuração de pasta monitorada {#watched-folder-configuration-values-constant-file}
+### Arquivo constante de valores de configuração de pasta monitorados {#watched-folder-configuration-values-constant-file}
 
-O [QuickStart: A adição de um terminal de Pasta assistida usando a API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) Java usa um arquivo constante que deve fazer parte do seu projeto Java para compilar o start rápido. Esse arquivo constante representa valores de configuração que devem ser definidos ao adicionar um ponto final de Pasta assistida. O código Java a seguir representa o arquivo constante.
+O [QuickStart: A adição de um terminal de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) usa um arquivo constante que deve fazer parte do seu projeto Java para compilar o start rápido. Esse arquivo constante representa valores de configuração que devem ser definidos ao adicionar um ponto final de Pasta assistida. O código Java a seguir representa o arquivo constante.
 
 ```java
  /**
@@ -496,13 +496,13 @@ O [QuickStart: A adição de um terminal de Pasta assistida usando a API](/help/
 
 ## Adicionando Pontos de Extremidade de Email {#adding-email-endpoints}
 
-Você pode adicionar programaticamente um terminal de email a um serviço usando a API Java do AEM Forms. Ao adicionar um terminal de email, você permite que os usuários enviem uma mensagem de email com um ou mais anexos de arquivo para uma conta de email especificada. Em seguida, a operação de configuração de serviço é chamada e manipula os arquivos. Depois que o serviço executa a operação especificada, ele envia uma mensagem de email para o remetente com os arquivos modificados como anexos de arquivo.
+Você pode adicionar programaticamente um terminal de email a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal de email, você permite que os usuários enviem uma mensagem de email com um ou mais anexos de arquivo para uma conta de email especificada. Em seguida, a operação de configuração de serviço é chamada e manipula os arquivos. Depois que o serviço executa a operação especificada, ele envia uma mensagem de email para o remetente com os arquivos modificados como anexos de arquivo.
 
-Para fins de adicionar programaticamente um ponto de extremidade de email a um serviço, considere o seguinte processo de vida curta chamado *MyApplication\EncryptDocument*. Para obter informações sobre processos de duração curta, consulte [Entendendo processos](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)de AEM Forms.
+Para fins de adicionar programaticamente um terminal de email a um serviço, considere o seguinte processo de vida curta chamado *MyApplication\EncryptDocument*. Para obter informações sobre processos de duração curta, consulte [Entendendo os processos AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Esse processo aceita um documento PDF não protegido como um valor de entrada e passa o documento PDF não protegido para a `EncryptPDFUsingPassword` operação do serviço de criptografia. Esse processo criptografa o documento PDF com uma senha e retorna o documento PDF criptografado por senha como valor de saída. O nome do valor de entrada (o documento PDF não protegido) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
+Esse processo aceita um documento PDF não protegido como um valor de entrada e passa o documento PDF não protegido para a operação `EncryptPDFUsingPassword` do serviço de criptografia. Esse processo criptografa o documento PDF com uma senha e retorna o documento PDF criptografado por senha como valor de saída. O nome do valor de entrada (o documento PDF não protegido) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -513,7 +513,7 @@ Esse processo aceita um documento PDF não protegido como um valor de entrada e 
 Para adicionar um terminal de email a um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `EndpointRegistryClient` objeto.
+1. Crie um objeto `EndpointRegistryClient`.
 1. Defina atributos de ponto de extremidade de email.
 1. Especifique os valores de configuração.
 1. Defina os valores dos parâmetros de entrada.
@@ -529,14 +529,14 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Antes de poder adicionar programaticamente um terminal de E-mail, é necessário criar um `EndpointRegistryClient` objeto.
+Antes de poder adicionar programaticamente um terminal de E-mail, você deve criar um objeto `EndpointRegistryClient`.
 
 **Definir atributos de ponto de extremidade de email**
 
@@ -545,7 +545,7 @@ Para criar um terminal de email para um serviço, especifique os seguintes valor
 * **Valor** do identificador do conector: Especifica o tipo de endpoint criado. Para criar um terminal de email, especifique `Email`.
 * **Descrição**: Especifica uma descrição para o ponto final.
 * **Nome**: Especifica o nome do ponto final.
-* **Valor** do identificador de serviço: Especifica o serviço ao qual o ponto de extremidade pertence. Por exemplo, para adicionar um terminal de Email ao processo que é introduzido nesta seção (um processo se torna um serviço quando ativado usando o Workbench), especifique `EncryptDocument`.
+* **Valor** do identificador de serviço: Especifica o serviço ao qual o ponto de extremidade pertence. Por exemplo, para adicionar um terminal de email ao processo que é introduzido nesta seção (um processo se torna um serviço quando ativado usando o Workbench), especifique `EncryptDocument`.
 * **Nome** da operação: Especifica o nome da operação que é invocada usando o ponto final. Geralmente, ao criar um terminal de email para um serviço originado de um processo criado no Workbench, o nome da operação é `invoke`.
 
 **Especificar valores de configuração**
@@ -567,8 +567,8 @@ Os seguintes valores de configuração são definidos ao adicionar programaticam
 * **domainName**: Um valor de configuração obrigatório. O valor padrão é `DefaultDom`.
 * **domainPattern**: Especifica os padrões de domínio do email recebido que o provedor aceita. Por exemplo, se `adobe.com` for usado, somente o email do adobe.com será processado, o email de outros domínios será ignorado.
 * **filePattern**: Especifica os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões de nome de arquivo específicas (&amp;ast;.dat, &amp;ast;.xml), arquivos com nomes específicos (dados) e arquivos com expressões compostas no nome e na extensão (&amp;ast;.[dD][aA]&#39;port&#39;). O valor padrão é `*`.
-* **receiptSuccessfulJob**: Um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de trabalho bem-sucedida é sempre enviada ao remetente. Se você digitar `sender`, os resultados do email serão enviados ao remetente. Há suporte para até 100 recipient. Especifique recipient adicionais com endereços de email, cada um separado por vírgula. Para desativar essa opção, deixe esse valor em branco. Em alguns casos, talvez você queira acionar um processo e não desejar uma notificação por email do resultado. O valor padrão é `sender`.
-* **receiptFailedJob**: Um endereço de email para o qual são enviadas mensagens para indicar trabalhos com falha. Por padrão, uma mensagem de falha de trabalho é sempre enviada ao remetente. Se você digitar `sender`, os resultados do email serão enviados ao remetente. Há suporte para até 100 recipient. Especifique recipient adicionais com endereços de email, cada um separado por vírgula. Para desativar essa opção, deixe esse valor em branco. O valor padrão é `sender`.
+* **receiptSuccessfulJob**: Um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de trabalho bem-sucedida é sempre enviada ao remetente. Se você digitar `sender`, os resultados do email serão enviados para o remetente. Há suporte para até 100 recipient. Especifique recipient adicionais com endereços de email, cada um separado por vírgula. Para desativar essa opção, deixe esse valor em branco. Em alguns casos, talvez você queira acionar um processo e não desejar uma notificação por email do resultado. O valor padrão é `sender`.
+* **receiptFailedJob**: Um endereço de email para o qual são enviadas mensagens para indicar trabalhos com falha. Por padrão, uma mensagem de falha de trabalho é sempre enviada ao remetente. Se você digitar `sender`, os resultados do email serão enviados para o remetente. Há suporte para até 100 recipient. Especifique recipient adicionais com endereços de email, cada um separado por vírgula. Para desativar essa opção, deixe esse valor em branco. O valor padrão é `sender`.
 * **inboxHost**: O nome do host da caixa de entrada ou o endereço IP do provedor de email a ser verificado.
 * **inboxPort**: A porta que o servidor de email usa. O valor padrão para POP3 é 110 e o valor padrão para IMAP é 143. Se SSL estiver ativado, o valor padrão para POP3 é 995 e o valor padrão para IMAP é 993.
 * **inboxProtocol**: O protocolo de email do terminal de email a ser usado para digitalizar a caixa de entrada. As opções são `IMAP` ou `POP3`. O servidor de correio do host da caixa de entrada deve suportar esses protocolos.
@@ -576,7 +576,7 @@ Os seguintes valores de configuração são definidos ao adicionar programaticam
 * **inboxUser**: O nome de usuário necessário para fazer logon na conta de email. Dependendo do servidor de e-mail e da configuração, essa pode ser apenas a parte do nome do usuário do e-mail ou pode ser o endereço de e-mail completo.
 * **inboxPassword**: A senha do usuário da caixa de entrada.
 * **inboxSSLEnabled**: Defina esse valor para forçar o provedor de email a usar SSL ao enviar mensagens de notificação de resultados ou erros. Verifique se o host IMAP ou POP3 suporta SSL.
-* **smtpHost**: O nome de host do servidor de email para o qual o provedor envia resultados e mensagens de erro.
+* **smtpHost**: O nome de host do servidor de email para o qual o provedor de email envia resultados e mensagens de erro.
 * **smtpPort**: O valor padrão para a porta SMTP é 25.
 * **smtpUser**: A conta de usuário que o provedor de email deve usar ao enviar notificações por email de resultados e erros.
 * **smtpPassword**: A senha da conta SMTP. Alguns servidores de email não exigem uma senha SMTP.
@@ -587,11 +587,11 @@ Os seguintes valores de configuração são definidos ao adicionar programaticam
 
 **Definir valores de parâmetros de entrada**
 
-Ao criar um terminal de email, você deve definir valores de parâmetro de entrada. Ou seja, você deve descrever os valores de entrada passados para a operação chamada pelo terminal Email. Por exemplo, considere o processo apresentado neste tópico. Tem um valor de entrada nomeado `InDoc` e seu tipo de dados é `com.adobe.idp.Document`. Ao criar um terminal de email para esse processo (depois que um processo é ativado, ele se torna um serviço), você deve definir o valor do parâmetro de entrada.
+Ao criar um terminal de email, você deve definir valores de parâmetro de entrada. Ou seja, você deve descrever os valores de entrada passados para a operação chamada pelo terminal Email. Por exemplo, considere o processo apresentado neste tópico. Ele tem um valor de entrada chamado `InDoc` e seu tipo de dados é `com.adobe.idp.Document`. Ao criar um terminal de email para esse processo (depois que um processo é ativado, ele se torna um serviço), você deve definir o valor do parâmetro de entrada.
 
 Para definir os valores de parâmetro de entrada necessários para um ponto de extremidade Email, especifique os seguintes valores:
 
-**Nome** do parâmetro de entrada: O nome do parâmetro de entrada. O nome de um valor de entrada é especificado no Workbench para um processo. Se o valor de entrada pertencer a uma operação de serviço (um serviço do Forms que não é um processo criado no Workbench), o nome de entrada será especificado no arquivo component.xml. Por exemplo, o nome do parâmetro de entrada para o processo introduzido nesta seção é `InDoc`.
+**Nome** do parâmetro de entrada: O nome do parâmetro de entrada. O nome de um valor de entrada é especificado no Workbench para um processo. Se o valor de entrada pertencer a uma operação de serviço (um serviço Forms que não é um processo criado no Workbench), o nome de entrada será especificado no arquivo component.xml. Por exemplo, o nome do parâmetro de entrada para o processo introduzido nesta seção é `InDoc`.
 
 **Tipo** de mapeamento: Usado para configurar os valores de entrada necessários para chamar a operação de serviço. Dois tipos de mapeamento são os seguintes:
 
@@ -604,7 +604,7 @@ Para definir os valores de parâmetro de entrada necessários para um ponto de e
 
 **Definir um valor de parâmetro de saída**
 
-Ao criar um terminal de email, você deve definir um valor de parâmetro de saída. Ou seja, você deve descrever o valor de saída que é retornado pelo serviço chamado pelo terminal Email. Por exemplo, considere o processo apresentado neste tópico. Tem um valor de saída nomeado `SecuredDoc` e seu tipo de dados é `com.adobe.idp.Document`. Ao criar um terminal de email para esse processo (depois que um processo é ativado, ele se torna um serviço), você deve definir o valor do parâmetro de saída.
+Ao criar um terminal de email, você deve definir um valor de parâmetro de saída. Ou seja, você deve descrever o valor de saída que é retornado pelo serviço chamado pelo terminal Email. Por exemplo, considere o processo apresentado neste tópico. Ele tem um valor de saída chamado `SecuredDoc` e seu tipo de dados é `com.adobe.idp.Document`. Ao criar um terminal de email para esse processo (depois que um processo é ativado, ele se torna um serviço), você deve definir o valor do parâmetro de saída.
 
 Para definir um valor de parâmetro de saída necessário para um ponto de extremidade Email, especifique os seguintes valores:
 
@@ -612,9 +612,9 @@ Para definir um valor de parâmetro de saída necessário para um ponto de extre
 
 **Tipo** de mapeamento: Usado para configurar a saída do serviço e da operação. As opções disponíveis são as seguintes:
 
-* Se o serviço retornar um único objeto (um único documento), o padrão será `%F.pdf` e o destino de origem será sourcefilename.pdf. Por exemplo, o processo introduzido nesta seção retorna um único documento. Como resultado, o tipo de mapeamento pode ser definido como `%F.pdf` ( `%F` significa usar o nome de arquivo fornecido). O padrão `%E` especifica a extensão do documento de entrada.
-* Se o serviço retornar uma lista, o padrão será `Result\%F\`e o destino de origem será Result\sourcefilename\source1 (output 1) e Result\sourcefilename\source2 (output 2).
-* Se o serviço retornar um mapa, o padrão será `Result\%F\`e o destino de origem será Result\sourcefilename\file1 and Result\sourcefilename\file2. Se o mapa tiver mais de um objeto, o padrão será `Result\%F.pdf` e o destino de origem será Result\sourcefilename1.pdf (saída 1), Result\sourcefilenam2.pdf (saída 2) e assim por diante.
+* Se o serviço retornar um único objeto (um único documento), o padrão será `%F.pdf` e o destino de origem será sourcefilename.pdf. Por exemplo, o processo introduzido nesta seção retorna um único documento. Como resultado, o tipo de mapeamento pode ser definido como `%F.pdf` ( `%F` significa usar o nome de arquivo especificado). O padrão `%E` especifica a extensão do documento de entrada.
+* Se o serviço retornar uma lista, o padrão será `Result\%F\` e o destino de origem será Result\sourcefilename\source1 (output 1) e Result\sourcefilename\source2 (output 2).
+* Se o serviço retornar um mapa, o padrão será `Result\%F\` e o destino de origem será Result\sourcefilename\file1 and Result\sourcefilename\file2. Se o mapa tiver mais de um objeto, o padrão será `Result\%F.pdf` e o destino de origem será Result\sourcefilename1.pdf (saída 1), Result\sourcefilenam2.pdf (saída 2) e assim por diante.
 
 **Tipo** de dados: Especifica o tipo de dados do valor de retorno. Por exemplo, o tipo de dados do valor de retorno do processo introduzido nesta seção é `com.adobe.idp.Document`.
 
@@ -630,7 +630,7 @@ Depois de criar um terminal de email, é necessário ativá-lo. Quando o termina
 
 [Adicionar um terminal de email usando a API Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -644,71 +644,71 @@ Adicione um terminal de email usando a API Java:
 
 1. Crie um objeto EndpointRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `EndpointRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Defina atributos de ponto de extremidade de email.
 
-   * Crie um `CreateEndpointInfo` objeto usando seu construtor.
-   * Especifique o valor do identificador do conector, chamando o método do `CreateEndpointInfo` objeto `setConnectorId` e transmitindo o valor da string `Email`.
-   * Especifique a descrição do ponto de extremidade chamando o método do `CreateEndpointInfo` objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade chamando o método do `CreateEndpointInfo` `setName` objeto e transmitindo um valor de string que especifica o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método do `CreateEndpointInfo` objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
-   * Especifique a operação que é invocada chamando o método do `CreateEndpointInfo` `setOperationName` objeto e transmitindo um valor de string que especifica o nome da operação. Geralmente, ao criar um terminal de email para um serviço originado de um processo criado no Workbench, o nome da operação é chamado.
+   * Crie um objeto `CreateEndpointInfo` usando seu construtor.
+   * Especifique o valor do identificador do conector, chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e transmitindo o valor da string `Email`.
+   * Especifique a descrição do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de string que especifica o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
+   * Especifique a operação que é invocada invocando o método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Geralmente, ao criar um terminal de email para um serviço originado de um processo criado no Workbench, o nome da operação é chamado.
 
 1. Especifique os valores de configuração.
 
-   Para que cada valor de configuração seja definido para o terminal Email, é necessário chamar o método do `CreateEndpointInfo` objeto `setConfigParameterAsText` . Por exemplo, para definir o valor de `smtpHost` configuração, chame o método `CreateEndpointInfo` do objeto `setConfigParameterAsText` e passe os seguintes valores:
+   Para que cada valor de configuração seja definido para o terminal Email, você deve chamar o método `CreateEndpointInfo` `setConfigParameterAsText` do objeto. Por exemplo, para definir o valor de configuração `smtpHost`, chame o método `CreateEndpointInfo` do objeto `setConfigParameterAsText` e passe os seguintes valores:
 
-   * Um valor de string que especifica o nome do valor de configuração. Ao definir o valor de `smtpHost` configuração, especifique `smtpHost`.
-   * Um valor de string que especifica o valor da configuração. Ao definir o valor de `smtpHost` configuração, especifique um valor de string que especifique o nome do servidor SMTP.
+   * Um valor de string que especifica o nome do valor de configuração. Ao definir o valor de configuração `smtpHost`, especifique `smtpHost`.
+   * Um valor de string que especifica o valor da configuração. Ao definir o valor de configuração `smtpHost`, especifique um valor de string que especifique o nome do servidor SMTP.
 
    >[!NOTE]
    >
-   >Para ver todos os valores de configuração definidos para o serviço EncryptDocument introduzido nesta seção, consulte o exemplo de código Java localizado em [QuickStart: Adicionando um terminal de email usando a API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)Java.
+   >Para ver todos os valores de configuração definidos para o serviço EncryptDocument introduzido nesta seção, consulte o exemplo de código Java localizado em [QuickStart: Adicionando um terminal de email usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
 
 1. Defina os valores dos parâmetros de entrada.
 
-   Defina um valor de parâmetro de entrada chamando o método do `CreateEndpointInfo` objeto `setInputParameterMapping` e transmitindo os seguintes valores:
+   Defina um valor de parâmetro de entrada invocando o método `CreateEndpointInfo` do objeto `setInputParameterMapping` e transmita os seguintes valores:
 
    * Um valor de string que especifica o nome do parâmetro de entrada. Por exemplo, o nome do parâmetro de entrada para o serviço EncryptDocument é `InDoc`.
-   * Um valor de string que especifica o tipo de dados do parâmetro de entrada. Por exemplo, o tipo de dados do parâmetro de `InDoc` entrada é `com.adobe.idp.Document`.
-   * Um valor de string que especifica o tipo de mapeamento. For example, you can specify `variable`.
+   * Um valor de string que especifica o tipo de dados do parâmetro de entrada. Por exemplo, o tipo de dados do parâmetro de entrada `InDoc` é `com.adobe.idp.Document`.
+   * Um valor de string que especifica o tipo de mapeamento. Por exemplo, você pode especificar `variable`.
    * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &amp;ast;.pdf como padrão de arquivo.
 
    >[!NOTE]
    >
-   >Chame o `setInputParameterMapping` método para cada valor de parâmetro de entrada a ser definido. Como o processo EncryptDocument tem apenas um parâmetro de entrada, é necessário chamar esse método uma vez.
+   >Chame o método `setInputParameterMapping` para cada valor de parâmetro de entrada a ser definido. Como o processo EncryptDocument tem apenas um parâmetro de entrada, é necessário chamar esse método uma vez.
 
 1. Defina um valor de parâmetro de saída.
 
-   Defina um valor de parâmetro de saída chamando o método do `CreateEndpointInfo` objeto `setOutputParameterMapping` e transmitindo os seguintes valores:
+   Defina um valor de parâmetro de saída chamando o método `CreateEndpointInfo` do objeto `setOutputParameterMapping` e transmitindo os seguintes valores:
 
    * Um valor de string que especifica o nome do parâmetro de saída. Por exemplo, o nome do parâmetro de saída para o serviço EncryptDocument é `SecuredDoc`.
-   * Um valor de string que especifica o tipo de dados do parâmetro de saída. Por exemplo, o tipo de dados do parâmetro de `SecuredDoc` saída é `com.adobe.idp.Document`.
-   * Um valor de string que especifica o tipo de mapeamento. For example, you can specify `%F.pdf`.
+   * Um valor de string que especifica o tipo de dados do parâmetro de saída. Por exemplo, o tipo de dados do parâmetro de saída `SecuredDoc` é `com.adobe.idp.Document`.
+   * Um valor de string que especifica o tipo de mapeamento. Por exemplo, você pode especificar `%F.pdf`.
 
 1. Crie o terminal Email.
 
-   Crie o ponto de extremidade chamando o `EndpointRegistryClient` método do `createEndpoint` objeto e transmitindo o `CreateEndpointInfo` objeto. Esse método retorna um `Endpoint` objeto que representa o ponto de extremidade Email.
+   Crie o ponto de extremidade chamando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o ponto de extremidade Email.
 
 1. Ative o terminal.
 
-   Ative o terminal chamando o `EndpointRegistryClient` método do `enable` objeto e transmitindo o `Endpoint` objeto que foi retornado pelo `createEndpoint` método.
+   Ative o terminal chamando o método `EndpointRegistryClient` do objeto `enable` e transmitindo o objeto `Endpoint` que foi retornado pelo método `createEndpoint`.
 
 **Consulte também:**
 
 [Resumo das etapas](programmatically-endpoints.md#summary-of-steps)
 
-[Início rápido: Adicionar um ponto de extremidade de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[Início rápido: Adicionando um ponto de extremidade de Pasta assistida usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Arquivo constante de valores de configuração de email {#email-configuration-values-constant-file}
 
-O [QuickStart: Adicionar um terminal de email usando a API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) Java usa um arquivo constante que deve fazer parte do seu projeto Java para compilar o start rápido. Esse arquivo constante representa valores de configuração que devem ser definidos ao adicionar um ponto de extremidade de email. O código Java a seguir representa o arquivo constante.
+O [QuickStart: Adicionar um terminal de email usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) usa um arquivo constante que deve fazer parte do seu projeto Java para compilar o start rápido. Esse arquivo constante representa valores de configuração que devem ser definidos ao adicionar um ponto de extremidade de email. O código Java a seguir representa o arquivo constante.
 
 ```java
  /**
@@ -746,19 +746,19 @@ O [QuickStart: Adicionar um terminal de email usando a API](/help/forms/developi
  }
 ```
 
-## Adicionando Pontos Finais Remotos {#adding-remoting-endpoints}
+## Adicionando Pontos de Extremidade Remotos {#adding-remoting-endpoints}
 
 >[!NOTE]
 >
->As APIs do LiveCycle Remoting foram substituídas para formulários AEM no JEE.
+>APIs de LiveCycle Remoting substituídas para formulários AEM em JEE.
 
-Você pode adicionar programaticamente um terminal Remoting a um serviço usando a API Java AEM Forms. Ao adicionar um terminal Remoting, você está permitindo que um aplicativo Flex chame o serviço usando a remoção. (Consulte [Chamada de AEM Forms usando (obsoleto para formulários AEM) AEM Forms Remota](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Você pode adicionar programaticamente um terminal Remoting a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal Remoting, você está permitindo que um aplicativo Flex chame o serviço usando a remoção. (Consulte [Invocando o AEM Forms Usando (Obsoleto para formulários AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Para fins de adicionar programaticamente um terminal Remoto a um serviço, considere o seguinte processo de vida curta chamado *EncryptDocument*.
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Esse processo aceita um documento PDF não protegido como um valor de entrada e passa o documento PDF não protegido para a `EncryptPDFUsingPassword` operação do serviço de criptografia. O documento PDF é criptografado com uma senha e o documento PDF criptografado por senha é o valor de saída desse processo. O nome do valor de entrada (o documento PDF não protegido) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
+Esse processo aceita um documento PDF não protegido como um valor de entrada e passa o documento PDF não protegido para a operação `EncryptPDFUsingPassword` do serviço de criptografia. O documento PDF é criptografado com uma senha e o documento PDF criptografado por senha é o valor de saída desse processo. O nome do valor de entrada (o documento PDF não protegido) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
 
 Para demonstrar como adicionar um terminal Remoto a um serviço, esta seção adiciona um terminal Remoto a um serviço chamado EncryptDocument.
 
@@ -771,7 +771,7 @@ Para demonstrar como adicionar um terminal Remoto a um serviço, esta seção ad
 Para remover um terminal de um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `EndpointRegistryClient` objeto.
+1. Crie um objeto `EndpointRegistryClient`.
 1. Definir atributos de ponto final remoto.
 1. Criar um terminal Remoto.
 1. Ative o terminal.
@@ -784,14 +784,14 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Para adicionar programaticamente um terminal Remoting, é necessário criar um `EndpointRegistryClient` objeto.
+Para adicionar programaticamente um terminal Remoting, é necessário criar um objeto `EndpointRegistryClient`.
 
 **Definir atributos de ponto final remoto**
 
@@ -809,17 +809,17 @@ Depois de definir os atributos de ponto de extremidade Remoto, você pode criar 
 
 **Ativar o ponto final**
 
-Depois de criar um novo terminal, é necessário ativá-lo. Quando um terminal Remoting está ativado, ele permite que um cliente Flex chame o serviço.
+Depois de criar um novo terminal, é necessário ativá-lo. Quando um terminal Remoting é ativado, ele permite que um cliente Flex chame o serviço.
 
 **Consulte também:**
 
 [Adicionar um terminal Remoto usando a API Java](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicionar um terminal Remoto usando a API Java {#add-a-remoting-endpoint-using-the-java-api}
+### Adicionar um terminal Remoting usando a API Java {#add-a-remoting-endpoint-using-the-java-api}
 
 Adicione um terminal Remoting usando a API Java:
 
@@ -829,25 +829,25 @@ Adicione um terminal Remoting usando a API Java:
 
 1. Crie um objeto EndpointRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `EndpointRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Definir atributos de ponto final remoto.
 
-   * Crie um `CreateEndpointInfo` objeto usando seu construtor.
-   * Especifique o valor do identificador do conector, chamando o método do `CreateEndpointInfo` objeto `setConnectorId` e transmitindo o valor da string `Remoting`.
-   * Especifique a descrição do ponto de extremidade chamando o método do `CreateEndpointInfo` objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade chamando o método do `CreateEndpointInfo` `setName` objeto e transmitindo um valor de string que especifica o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método do `CreateEndpointInfo` objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
-   * Especifique a operação que é invocada pelo método do `CreateEndpointInfo` `setOperationName` objeto e transmitindo um valor de string que especifica o nome da operação. Para um terminal Remoto, especifique um caractere curinga (&amp;ast;).
+   * Crie um objeto `CreateEndpointInfo` usando seu construtor.
+   * Especifique o valor do identificador do conector, chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e transmitindo o valor da string `Remoting`.
+   * Especifique a descrição do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de string que especifica o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
+   * Especifique a operação que é invocada pelo método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Para um terminal Remoto, especifique um caractere curinga (&amp;ast;).
 
 1. Criar um terminal Remoto.
 
-   Crie o ponto de extremidade chamando o `EndpointRegistryClient` método do `createEndpoint` objeto e transmitindo o `CreateEndpointInfo` objeto. Esse método retorna um `Endpoint` objeto que representa o novo terminal Remoto.
+   Crie o ponto de extremidade chamando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo terminal Remoting.
 
 1. Ative o terminal.
 
-   Ative o terminal chamando o `EndpointRegistryClient` método do `enable` objeto e transmitindo o `Endpoint` objeto que foi retornado pelo `createEndpoint` método.
+   Ative o terminal chamando o método `EndpointRegistryClient` do objeto `enable` e transmitindo o objeto `Endpoint` que foi retornado pelo método `createEndpoint`.
 
 **Consulte também:**
 
@@ -855,13 +855,13 @@ Adicione um terminal Remoting usando a API Java:
 
 [Início rápido: Adicionar um terminal Remoting usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adicionando pontos finais do TaskManager {#adding-taskmanager-endpoints}
+## Adicionando Pontos de Extremidade do TaskManager {#adding-taskmanager-endpoints}
 
-Você pode adicionar programaticamente um terminal do TaskManager a um serviço usando a API Java do AEM Forms. Ao adicionar um terminal do TaskManager a um serviço, você permite que um usuário do Workspace chame o serviço. Ou seja, um usuário que trabalha no Workspace pode chamar um processo que tem um terminal do TaskManager correspondente.
+Você pode adicionar programaticamente um terminal do TaskManager a um serviço usando a API Java da AEM Forms. Ao adicionar um terminal do TaskManager a um serviço, você permite que um usuário do Workspace chame o serviço. Ou seja, um usuário que trabalha no Workspace pode chamar um processo que tem um terminal do TaskManager correspondente.
 
 >[!NOTE]
 >
@@ -872,7 +872,7 @@ Você pode adicionar programaticamente um terminal do TaskManager a um serviço 
 Para adicionar um terminal do TaskManager a um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `EndpointRegistryClient` objeto.
+1. Crie um objeto `EndpointRegistryClient`.
 1. Crie uma categoria para o terminal.
 1. Defina os atributos do ponto de extremidade do TaskManager.
 1. Criar um terminal do TaskManager.
@@ -886,18 +886,18 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Antes de poder adicionar programaticamente um terminal do TaskManager, é necessário criar um `EndpointRegistryClient` objeto.
+Antes de poder adicionar programaticamente um terminal do TaskManager, é necessário criar um objeto `EndpointRegistryClient`.
 
 **Criar uma categoria para o terminal**
 
-As Categorias são usadas para organizar serviços no Workspace. Ou seja, um usuário do Workspace pode chamar um serviço que tenha um terminal do TaskManager selecionando uma categoria no Workspace. Ao criar um terminal do TaskManager, você pode fazer referência a uma categoria existente ou criar programaticamente uma nova categoria.
+As categorias são usadas para organizar serviços no Workspace. Ou seja, um usuário do Workspace pode chamar um serviço que tenha um terminal do TaskManager selecionando uma categoria no Workspace. Ao criar um terminal do TaskManager, você pode fazer referência a uma categoria existente ou criar programaticamente uma nova categoria.
 
 >[!NOTE]
 >
@@ -912,7 +912,7 @@ Para criar um terminal do TaskManager para um serviço, especifique os seguintes
 * **Nome**: Especifica o nome do ponto final.
 * **Identificador** do serviço: Especifica o serviço ao qual o ponto de extremidade pertence.
 * **Categoria**: Especifica um valor de identificador de categoria associado ao terminal do TaskManager.
-* **Nome** da operação: Geralmente, ao criar um terminal do TaskManager para um serviço originado de um processo criado no Workbench, o nome da operação é `invoke`.
+* **Nome** da operação: Geralmente, ao criar um terminal do TaskManager para um serviço originado de um processo criado no Workbench, o nome da operação é  `invoke`.
 
 **Criar um terminal do TaskManager**
 
@@ -926,7 +926,7 @@ Depois de criar um novo terminal, é necessário ativá-lo. Quando o terminal es
 
 [Adicionar um terminal do TaskManager usando a API Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -940,35 +940,35 @@ Adicione um terminal do TaskManager usando a API Java:
 
 1. Crie um objeto EndpointRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `EndpointRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Crie uma categoria para o terminal.
 
-   * Crie um `CreateEndpointCategoryInfo` objeto usando seu construtor e transmitindo os seguintes valores:
+   * Crie um objeto `CreateEndpointCategoryInfo` usando seu construtor e transmitindo os seguintes valores:
 
       * Um valor de string que especifica o valor identificador da categoria
       * Um valor de string que especifica a descrição da categoria
-   * Crie a categoria chamando o `EndpointRegistryClient` método do `createEndpointCategory` objeto e transmitindo o `CreateEndpointCategoryInfo` objeto. Esse método retorna um `EndpointCategory` objeto que representa a nova categoria.
+   * Crie a categoria chamando o método `EndpointRegistryClient` do objeto `createEndpointCategory` e transmitindo o objeto `CreateEndpointCategoryInfo`. Este método retorna um objeto `EndpointCategory` que representa a nova categoria.
 
 
 1. Defina os atributos do ponto de extremidade do TaskManager.
 
-   * Crie um `CreateEndpointInfo` objeto usando seu construtor.
-   * Especifique o valor do identificador do conector, chamando o método do `CreateEndpointInfo` objeto `setConnectorId` e transmitindo o valor da string `TaskManagerConnector`.
-   * Especifique a descrição do ponto de extremidade chamando o método do `CreateEndpointInfo` objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade chamando o método do `CreateEndpointInfo` `setName` objeto e transmitindo um valor de string que especifica o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método do `CreateEndpointInfo` objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
-   * Especifique a categoria à qual o ponto de extremidade pertence, chamando o método do `CreateEndpointInfo` objeto `setCategoryId` e transmitindo um valor de string que especifica o valor do identificador de categoria. Você pode invocar o método do `EndpointCategory` objeto para obter o valor identificador dessa categoria `getId` .
-   * Especifique a operação que é invocada chamando o método do `CreateEndpointInfo` `setOperationName` objeto e transmitindo um valor de string que especifica o nome da operação. Normalmente, ao criar um `TaskManager` terminal para um serviço que tenha origem em um processo criado no Workbench, o nome da operação é `invoke`.
+   * Crie um objeto `CreateEndpointInfo` usando seu construtor.
+   * Especifique o valor do identificador do conector, chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e transmitindo o valor da string `TaskManagerConnector`.
+   * Especifique a descrição do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de string que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade chamando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de string que especifica o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de string que especifica o nome do serviço.
+   * Especifique a categoria à qual o ponto de extremidade pertence chamando o método `CreateEndpointInfo` do objeto `setCategoryId` e transmitindo um valor de string que especifica o valor do identificador de categoria. Você pode chamar o método `EndpointCategory` do objeto `getId` para obter o valor identificador dessa categoria.
+   * Especifique a operação que é invocada invocando o método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Normalmente, ao criar um terminal `TaskManager` para um serviço que tenha origem em um processo criado no Workbench, o nome da operação é `invoke`.
 
 1. Criar um terminal do TaskManager.
 
-   Crie o ponto de extremidade chamando o `EndpointRegistryClient` método do `createEndpoint` objeto e transmitindo o `CreateEndpointInfo` objeto. Este método retorna um `Endpoint` objeto que representa o novo endpoint do TaskManager.
+   Crie o ponto de extremidade chamando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo terminal do TaskManager.
 
 1. Ative o terminal.
 
-   Ative o terminal chamando o `EndpointRegistryClient` método do `enable` objeto e transmitindo o `Endpoint` objeto que foi retornado pelo `createEndpoint` método.
+   Ative o terminal chamando o método `EndpointRegistryClient` do objeto `enable` e transmitindo o objeto `Endpoint` que foi retornado pelo método `createEndpoint`.
 
 **Consulte também:**
 
@@ -976,13 +976,13 @@ Adicione um terminal do TaskManager usando a API Java:
 
 [Início rápido: Adicionar um terminal do TaskManager usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Modificação de Pontos de Extremidade {#modifying-endpoints}
+## Modificando Pontos de Extremidade {#modifying-endpoints}
 
-Você pode modificar programaticamente um terminal existente usando a API Java AEM Forms. Ao modificar um endpoint, você pode alterar o comportamento do endpoint. Considere, por exemplo, um endpoint de Pasta assistida que especifica uma pasta que é usada como a pasta assistida. Você pode modificar programaticamente os valores de configuração que pertencem ao ponto final da Pasta assistida, resultando em outra pasta funcionando como a pasta assistida. Para obter informações sobre os valores de configuração que pertencem a um endpoint de Pasta assistida, consulte [Adicionar pontos finais](programmatically-endpoints.md#adding-watched-folder-endpoints)de pasta monitorada.
+Você pode modificar programaticamente um terminal existente usando a API Java da AEM Forms. Ao modificar um endpoint, você pode alterar o comportamento do endpoint. Considere, por exemplo, um endpoint de Pasta assistida que especifica uma pasta que é usada como a pasta assistida. Você pode modificar programaticamente os valores de configuração que pertencem ao ponto final da Pasta assistida, resultando em outra pasta funcionando como a pasta assistida. Para obter informações sobre valores de configuração que pertencem a um ponto de extremidade de Pasta assistida, consulte [Adicionar pontos de extremidade de pasta monitorada](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
 Para demonstrar como modificar um terminal, esta seção modifica um terminal de Pasta assistida alterando a pasta que se comporta como a pasta assistida.
 
@@ -995,7 +995,7 @@ Para demonstrar como modificar um terminal, esta seção modifica um terminal de
 Para modificar um terminal, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `EndpointRegistryClient` objeto.
+1. Crie um objeto `EndpointRegistryClient`.
 1. Recupere o terminal.
 1. Especifique novos valores de configuração.
 
@@ -1007,38 +1007,38 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Para modificar programaticamente um terminal, é necessário criar um `EndpointRegistryClient` objeto.
+Para modificar programaticamente um terminal, é necessário criar um objeto `EndpointRegistryClient`.
 
 **Recuperar o ponto de extremidade para modificar**
 
-Antes de modificar um terminal, é necessário recuperá-lo. Para recuperar um terminal, é necessário conectar-se como um usuário que pode acessar um terminal. É recomendável conectar-se como administrador. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão).
+Antes de modificar um terminal, é necessário recuperá-lo. Para recuperar um terminal, é necessário conectar-se como um usuário que pode acessar um terminal. É recomendável conectar-se como administrador. (Consulte [Definição das propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
 Você pode recuperar um terminal recuperando uma lista de pontos finais. Em seguida, você pode iterar pela lista, pesquisando o endpoint específico a ser removido. Por exemplo, você pode localizar um terminal determinando o serviço que corresponde ao terminal e o tipo de terminal. Ao localizar o terminal, é possível modificá-lo.
 
 **Especificar novos valores de configuração**
 
-Ao modificar um terminal, especifique novos valores de configuração. Por exemplo, para modificar um endpoint de Pasta assistida, redefina todos os valores de configuração de endpoint de Pasta assistida, não apenas aqueles que você deseja modificar. Para obter informações sobre os valores de configuração que pertencem a um endpoint de Pasta assistida, consulte [Adicionar pontos finais](programmatically-endpoints.md#adding-watched-folder-endpoints)de pasta monitorada.
+Ao modificar um terminal, especifique novos valores de configuração. Por exemplo, para modificar um endpoint de Pasta assistida, redefina todos os valores de configuração de endpoint de Pasta assistida, não apenas aqueles que você deseja modificar. Para obter informações sobre valores de configuração que pertencem a um ponto de extremidade de Pasta assistida, consulte [Adicionar pontos de extremidade de pasta monitorada](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
 >[!NOTE]
 >
->Para obter informações sobre valores de configuração que pertencem a um ponto de extremidade de email, consulte [Adicionar pontos de extremidade](programmatically-endpoints.md#adding-email-endpoints)de email.
+>Para obter informações sobre valores de configuração que pertencem a um ponto de extremidade de email, consulte [Adicionando pontos de extremidade de email](programmatically-endpoints.md#adding-email-endpoints).
 
 >[!NOTE]
 >
->Não é possível modificar o serviço chamado pelo ponto final. Se você tentar modificar o serviço, uma exceção será lançada. Para modificar o serviço associado a um determinado terminal, remova o terminal e crie um novo. (Consulte [Remoção de pontos de extremidade](programmatically-endpoints.md#removing-endpoints).)
+>Não é possível modificar o serviço chamado pelo ponto final. Se você tentar modificar o serviço, uma exceção será lançada. Para modificar o serviço associado a um determinado terminal, remova o terminal e crie um novo. (Consulte [Remoção de Pontos de Extremidade](programmatically-endpoints.md#removing-endpoints).)
 
 **Consulte também:**
 
 [Modificação de um terminal usando a API Java](programmatically-endpoints.md#modifying-an-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1052,24 +1052,24 @@ Modifique um terminal usando a API Java:
 
 1. Crie um objeto EndpointRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `EndpointRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recupere o terminal para modificá-lo.
 
-   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) pode acessar chamando o `EndpointRegistryClient` método do `getEndpoints` objeto e transmitindo um `PagingFilter` objeto que atue como filtro. Você pode passar um `(PagingFilter)null` valor para retornar todos os pontos de extremidade. Esse método retorna um `java.util.List` objeto no qual cada elemento é um `Endpoint` objeto. Para obter informações sobre um `PagingFilter` objeto, consulte Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
-   * Iterar pelo `java.util.List` objeto para determinar se ele tem pontos de extremidade. Se houver pontos de extremidade, cada elemento será uma `EndPoint` instância.
-   * Determine o serviço que corresponde a um ponto final chamando o método do `EndPoint` objeto `getServiceId` . Esse método retorna um valor de string que especifica o nome do serviço.
-   * Determine o tipo de endpoint chamando o `EndPoint` método do `getConnectorId` objeto. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o endpoint for um endpoint de Pasta assistida, esse método retornará `WatchedFolder`.
+   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) pode acessar, chamando o método `EndpointRegistryClient` do objeto `getEndpoints` e transmitindo um objeto `PagingFilter` que atue como filtro. Você pode passar um valor `(PagingFilter)null` para retornar todos os pontos de extremidade. Este método retorna um objeto `java.util.List` em que cada elemento é um objeto `Endpoint`. Para obter informações sobre um objeto `PagingFilter`, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Itere pelo objeto `java.util.List` para determinar se ele tem pontos de extremidade. Se houver pontos de extremidade, cada elemento será uma instância `EndPoint`.
+   * Determine o serviço que corresponde a um ponto final chamando o método `EndPoint` `getServiceId` do objeto. Esse método retorna um valor de string que especifica o nome do serviço.
+   * Determine o tipo de terminal chamando o método `EndPoint` do objeto `getConnectorId`. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o ponto de extremidade for um ponto de extremidade de Pasta assistida, esse método retornará `WatchedFolder`.
 
 1. Especifique novos valores de configuração.
 
-   * Crie um `ModifyEndpointInfo` objeto chamando seu construtor.
-   * Para cada valor de configuração a ser definido, chame o `ModifyEndpointInfo` método do `setConfigParameterAsText` objeto. Por exemplo, para definir o valor de configuração de url, chame o método do `ModifyEndpointInfo` objeto `setConfigParameterAsText` e transmita os seguintes valores:
+   * Crie um objeto `ModifyEndpointInfo` chamando seu construtor.
+   * Para cada valor de configuração a ser definido, chame o método `ModifyEndpointInfo` do objeto `setConfigParameterAsText`. Por exemplo, para definir o valor de configuração de url, chame o método `ModifyEndpointInfo` do objeto `setConfigParameterAsText` e passe os seguintes valores:
 
-      * Um valor de string que especifica o nome do valor de configuração. Por exemplo, para definir o valor de `url` configuração, especifique `url`.
-      * Um valor de string que especifica o valor da configuração. Para definir um valor para o valor de `url` configuração, especifique o local da pasta monitorada.
-   * Chame o `EndpointRegistryClient` método do `modifyEndpoint` objeto e passe o `ModifyEndpointInfo` objeto.
+      * Um valor de string que especifica o nome do valor de configuração. Por exemplo, para definir o valor de configuração `url`, especifique `url`.
+      * Um valor de string que especifica o valor da configuração. Para definir um valor para o valor de configuração `url`, especifique o local da pasta monitorada.
+   * Chame o método `EndpointRegistryClient` do objeto `modifyEndpoint` e passe o objeto `ModifyEndpointInfo`.
 
 
 **Consulte também:**
@@ -1078,13 +1078,13 @@ Modifique um terminal usando a API Java:
 
 [Início rápido: Modificação de um terminal usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Remoção de pontos de extremidade {#removing-endpoints}
+## Removendo Pontos de Extremidade {#removing-endpoints}
 
-Você pode remover programaticamente um terminal de um serviço usando a API Java do AEM Forms. Depois de remover um terminal, o serviço não pode ser chamado usando o método de invocação que o terminal ativou. Por exemplo, se você remover um terminal SOAP de um serviço, não será possível chamar o serviço usando o modo SOAP.
+Você pode remover programaticamente um terminal de um serviço usando a API Java da AEM Forms. Depois de remover um terminal, o serviço não pode ser chamado usando o método de invocação que o terminal ativou. Por exemplo, se você remover um terminal SOAP de um serviço, não será possível chamar o serviço usando o modo SOAP.
 
 Para demonstrar como remover um ponto de extremidade de um serviço, esta seção remove um ponto de extremidade EJB de um serviço chamado *EncryptDocument*.
 
@@ -1097,7 +1097,7 @@ Para demonstrar como remover um ponto de extremidade de um serviço, esta seçã
 Para remover um terminal de um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `EndpointRegistryClient` objeto.
+1. Crie um objeto `EndpointRegistryClient`.
 1. Recupere o terminal.
 1. Remova o terminal.
 
@@ -1109,18 +1109,18 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java do AEM Forms.
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo os arquivos da biblioteca Java da AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto Cliente EndpointRegistry**
 
-Para remover programaticamente um terminal, é necessário criar um `EndpointRegistryClient` objeto.
+Para remover programaticamente um terminal, é necessário criar um objeto `EndpointRegistryClient`.
 
 **Recuperar o ponto de extremidade a ser removido**
 
-Antes de remover um terminal, é necessário recuperá-lo. Para recuperar um terminal, é necessário conectar-se como um usuário que pode acessar um terminal. É recomendável conectar-se como administrador. (Consulte [Configuração das propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão).
+Antes de remover um terminal, é necessário recuperá-lo. Para recuperar um terminal, é necessário conectar-se como um usuário que pode acessar um terminal. É recomendável conectar-se como administrador. (Consulte [Definição das propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
 Você pode recuperar um terminal recuperando uma lista de pontos finais. Em seguida, você pode iterar pela lista, pesquisando o endpoint específico a ser removido. Por exemplo, você pode localizar um terminal determinando o serviço que corresponde ao terminal e o tipo de terminal. Ao localizar o terminal, você pode removê-lo.
 
@@ -1132,7 +1132,7 @@ Depois de criar um novo terminal, é necessário ativá-lo. Quando o terminal es
 
 [Remoção de um terminal usando a API Java](programmatically-endpoints.md#removing-an-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1146,19 +1146,19 @@ Remova um terminal usando a API Java:
 
 1. Crie um objeto EndpointRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `EndpointRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recupere o terminal a ser removido.
 
-   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) tem acesso, invocando o `EndpointRegistryClient` método do `getEndpoints` objeto e transmitindo um `PagingFilter` objeto que atua como filtro. Você pode passar `(PagingFilter)null` para retornar todos os pontos de extremidade. Esse método retorna um `java.util.List` objeto no qual cada elemento é um `Endpoint` objeto.
-   * Iterar pelo `java.util.List` objeto para determinar se ele tem pontos de extremidade. Se houver pontos de extremidade, cada elemento será uma `EndPoint` instância.
-   * Determine o serviço que corresponde a um ponto final chamando o método do `EndPoint` objeto `getServiceId` . Esse método retorna um valor de string que especifica o nome do serviço.
-   * Determine o tipo de terminal chamando o `EndPoint` método do `getConnectorId` objeto. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o endpoint for um endpoint EJB, esse método retornará `EJB`.
+   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) tem acesso, chamando o método `EndpointRegistryClient` do objeto `getEndpoints` e transmitindo um objeto `PagingFilter` que atue como filtro. Você pode enviar `(PagingFilter)null` para retornar todos os pontos de extremidade. Este método retorna um objeto `java.util.List` em que cada elemento é um objeto `Endpoint`.
+   * Itere pelo objeto `java.util.List` para determinar se ele tem pontos de extremidade. Se houver pontos de extremidade, cada elemento será uma instância `EndPoint`.
+   * Determine o serviço que corresponde a um ponto final chamando o método `EndPoint` `getServiceId` do objeto. Esse método retorna um valor de string que especifica o nome do serviço.
+   * Determine o tipo de terminal chamando o método `EndPoint` do objeto `getConnectorId`. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o endpoint for um endpoint EJB, esse método retornará `EJB`.
 
 1. Remova o terminal.
 
-   Remova o ponto de extremidade chamando o `EndpointRegistryClient` método do `remove` objeto e transmitindo o `EndPoint` objeto que representa o ponto de extremidade a ser removido.
+   Remova o ponto de extremidade chamando o método `EndpointRegistryClient` do objeto `remove` e transmitindo o objeto `EndPoint` que representa o ponto de extremidade a ser removido.
 
 **Consulte também:**
 
@@ -1166,15 +1166,15 @@ Remova um terminal usando a API Java:
 
 [Início rápido: Remoção de um terminal usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Recuperando informações do conector do ponto de extremidade {#retrieving-endpoint-connector-information}
+## Recuperando Informações do Conector do Ponto Final {#retrieving-endpoint-connector-information}
 
-Você pode recuperar informações programaticamente sobre conectores de ponto de extremidade usando a API do AEM Forms. Um conector permite que um terminal chame um serviço usando vários métodos de invocação. Por exemplo, um conector de Pasta assistida permite que um terminal chame um serviço usando pastas monitoradas. Ao recuperar informações programaticamente sobre conectores de ponto de extremidade, você pode recuperar valores de configuração associados a um conector, como quais valores de configuração são obrigatórios e quais são opcionais.
+Você pode recuperar programaticamente informações sobre conectores de ponto de extremidade usando a API do AEM Forms. Um conector permite que um terminal chame um serviço usando vários métodos de invocação. Por exemplo, um conector de Pasta assistida permite que um terminal chame um serviço usando pastas monitoradas. Ao recuperar informações programaticamente sobre conectores de ponto de extremidade, você pode recuperar valores de configuração associados a um conector, como quais valores de configuração são obrigatórios e quais são opcionais.
 
-Para demonstrar como recuperar informações sobre conectores de ponto de extremidade, esta seção recupera informações sobre um conector de Pasta assistida. (Consulte [Adicionando Pontos de Extremidade](programmatically-endpoints.md#adding-watched-folder-endpoints)da Pasta Observada.)
+Para demonstrar como recuperar informações sobre conectores de ponto de extremidade, esta seção recupera informações sobre um conector de Pasta assistida. (Consulte [Adicionando Pontos de Extremidade de Pasta Assistidos](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
@@ -1182,14 +1182,14 @@ Para demonstrar como recuperar informações sobre conectores de ponto de extrem
 
 >[!NOTE]
 >
->Este tópico usa a `ConnectorRegistryClient` API para recuperar informações sobre conectores de ponto de extremidade. (Consulte Referência [da API do](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
+>Este tópico usa a API `ConnectorRegistryClient` para recuperar informações sobre conectores de ponto de extremidade. (Consulte [Referência de API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 ### Resumo das etapas {#summary_of_steps-8}
 
 Para recuperar as informações do conector do ponto de extremidade, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um `ConnectorRegistryClient` objeto.
+1. Crie um objeto `ConnectorRegistryClient`.
 1. Especifique o tipo de conector.
 1. Recuperar valores de configuração.
 
@@ -1201,14 +1201,14 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
-* jbossall-client.jar (necessário se os AEM Forms forem implantados no JBoss Application Server)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada no JBoss Application Server)
+* jbossall-client.jar (necessário se o AEM Forms estiver implantado no JBoss Application Server)
 
-Se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, substitua adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos ao servidor de aplicativos J2EE no qual o AEM Forms é implantado. Para obter informações sobre a localização de todos os arquivos JAR de AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java de AEM Forms.
+Se a AEM Forms for implantada em um servidor de aplicativos J2EE compatível que não seja JBoss, substitua adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos ao servidor de aplicativos J2EE no qual a AEM Forms está implantada. Para obter informações sobre a localização de todos os arquivos AEM Forms JAR, consulte [Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto ConnectorRegistry Client**
 
-Para recuperar programaticamente as informações do conector do ponto de extremidade, crie um `ConnectorRegistryClient` objeto.
+Para recuperar programaticamente as informações do conector do ponto de extremidade, crie um objeto `ConnectorRegistryClient`.
 
 **Especificar o tipo de conector**
 
@@ -1229,7 +1229,7 @@ Depois de especificar o tipo de conector, você pode recuperar informações sob
 
 [Recuperar informações do conector do ponto de extremidade usando a API Java](programmatically-endpoints.md#retrieve-endpoint-connector-information-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1243,17 +1243,17 @@ Recupere informações do conector do ponto de extremidade usando a API Java:
 
 1. Crie um objeto ConnectorRegistry Client.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `ConnectorRegistryClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `ConnectorRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Especifique o tipo de conector.
 
-   Especifique o tipo de conector, chamando o método do `ConnectorRegistryClient` objeto `getEndpointDefinition` e transmitindo um valor de string que especifica o tipo de conector. Por exemplo, para especificar o tipo de conector de Pasta assistida, passe o valor da string `WatchedFolder`. Esse método retorna um `Endpoint` objeto que corresponde ao tipo de conector.
+   Especifique o tipo de conector chamando o método `ConnectorRegistryClient` do objeto `getEndpointDefinition` e transmitindo um valor de string que especifica o tipo de conector. Por exemplo, para especificar o tipo de conector de Pasta assistida, passe o valor da string `WatchedFolder`. Este método retorna um objeto `Endpoint` que corresponde ao tipo de conector.
 
 1. Recuperar valores de configuração.
 
-   * Recupere os valores de configuração associados a esse ponto de extremidade, chamando o `Endpoint` método do `getConfigParameters` objeto. Esse método retorna uma matriz de `ConfigParameter` objetos.
-   * Recupere informações sobre cada valor de configuração recuperando cada elemento dentro da matriz. Cada elemento é um `ConfigParameter` objeto. Você pode, por exemplo, determinar se o valor de configuração é obrigatório ou opcional chamando o método do `ConfigParameter` objeto `isRequired` . Se o valor de configuração for necessário, esse método retornará `true`.
+   * Recupere os valores de configuração associados a esse ponto de extremidade invocando o método `Endpoint` `getConfigParameters` do objeto. Este método retorna uma matriz de `ConfigParameter` objetos.
+   * Recupere informações sobre cada valor de configuração recuperando cada elemento dentro da matriz. Cada elemento é um objeto `ConfigParameter`. Você pode, por exemplo, determinar se o valor de configuração é obrigatório ou opcional chamando o método `ConfigParameter` do objeto `isRequired`. Se o valor de configuração for necessário, esse método retornará `true`.
 
 **Consulte também:**
 
@@ -1261,6 +1261,6 @@ Recupere informações do conector do ponto de extremidade usando a API Java:
 
 [Início rápido: Recuperando informações do conector do ponto de extremidade usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
