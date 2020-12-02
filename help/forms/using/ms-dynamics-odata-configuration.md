@@ -123,7 +123,7 @@ A configuração **MS Dynamics OData Cloud Service (OData Service)** vem com a c
 
    1. Digite o valor para o campo **Raiz do Serviço**. Vá para a instância do Dynamics e navegue até **Developer Resources** para visualização do valor do campo Service Root. Por exemplo, https://&lt;nome-locatário>/api/data/v9.1/
 
-   1. Replace the default values in the **Client Id**(also referred to as **Application ID**), **Client Secret**, **OAuth URL**, **Refresh Token URL**, **Access Token URL**, and **Resource** fields with values from your Microsoft Dynamics service configuration. É obrigatório especificar o URL da instância dinâmica no campo **Recurso** para configurar o Microsoft Dynamics com um modelo de dados de formulário. Use o URL raiz do serviço para derivar o URL da instância dinâmica. Por exemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Substitua os valores padrão no **ID do cliente**(também conhecido como **ID da aplicação**), **Segredo do cliente**, **URL OAuth**, **Atualizar URL do token**, **URL do Token de acesso&lt;a 11/> e os campos** Resource **com valores da configuração do serviço Microsoft Dynamics.** É obrigatório especificar o URL da instância dinâmica no campo **Recurso** para configurar o Microsoft Dynamics com um modelo de dados de formulário. Use o URL raiz do serviço para derivar o URL da instância dinâmica. Por exemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Especifique **openid** no campo **Escopo da Autorização** para o processo de autorização no Microsoft Dynamics.
 
