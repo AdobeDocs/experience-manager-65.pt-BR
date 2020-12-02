@@ -13,14 +13,14 @@ ht-degree: 6%
 ---
 
 
-# AEM 6.5 User Guide {#user-guide}
+# Guia do usuário AEM 6.5 {#user-guide}
 
 + [Hub do guia do usuário AEM 6.5](home.md)
 + Guias e recursos do usuário{#user-guides}
    + [Guias do usuário para recursos AEM](capabilities.md)
    + [Guias do usuário da implementação AEM](implementation.md)
    + [Recursos AEM](resources.md)
-+ Solução de problemas e ajuda{#troubleshooting}
++ Solução de problemas e Ajuda{#troubleshooting}
    + [Recursos para novos usuários AEM](new.md)
    + [Saiba mais sobre os recursos AEM](learn.md)
    + [Práticas recomendadas, procedimentos e treinamentos](best-practice.md)
