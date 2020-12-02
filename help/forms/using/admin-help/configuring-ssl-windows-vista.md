@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 translation-type: tm+mt
 source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
 
 # Configuração do SSL no Windows Vista {#configuring-ssl-on-windows-vista}
 
-Para configurar o SSL no Windows Vista™, é necessário um certificado SSL com chaves RSA para autenticação. Você pode usar a ferramenta-chave Java para criar o certificado.
+Para configurar o SSL no Windows Vista™, você precisa de um certificado SSL com chaves RSA para autenticação. Você pode usar a ferramenta-chave Java para criar o certificado.
 
 >[!NOTE]
 >
@@ -29,7 +32,7 @@ Você pode executar keytool usando um único comando que inclui todas as informa
 
 1. Em um prompt de comando, navegue até *`[JAVA HOME]`*/bin e digite o seguinte comando para criar o certificado e o keystore:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nome *do Host Nome`, OU=`** do Grupo Nome `, O=`*da *Empresa Nome`,L=`** Cidade Nome `, S=`**Estado`, C=`** Estado `" -alias`**`-keypass``key`** ** `-keystore`**Código do País&quot;LCt&quot;_Nome`.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Host* `, OU=`*NameGroup* `, O=`*NameEmpresa* `,L=`*NameCity* `, S=`** `, C=`*NameStateCountry Code* `" -alias`*&quot;LC Cert&quot;* `-keypass` `key`*_* ** `-keystore`*passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
