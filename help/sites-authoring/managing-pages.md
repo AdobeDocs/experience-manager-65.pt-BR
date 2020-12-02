@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
 workflow-type: tm+mt
 source-wordcount: '2523'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
@@ -35,15 +35,15 @@ Você também pode usar [pastas](#creating-a-new-folder) para ajudar a organizar
 
 A estrutura de um site pode ser considerada como uma estrutura em árvore que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, ao passo que o título é mostrado quando o conteúdo da página é visualizado.
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+A seguir, é mostrado um exemplo do site We.Retail, onde uma página de shorts de caminhada ( `desert-sky-shorts`) é acessada:
 
-* ambiente do autor
+* Ambiente do autor
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Ambiente de publicação
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente publish.
 
 ```xml
  /content
@@ -105,7 +105,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs de até um determinado comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+Ao criar uma nova página, AEM irá [validar o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pela AEM e pelo JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -162,7 +162,7 @@ O AEM vem com vários modelos predefinidos. Os modelos disponíveis dependem do 
 
 ### Componentes {#components}
 
-Components are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of [out-of-the-box components](/help/sites-authoring/default-components-console.md) that provide comprehensive functionality. These include:
+Os componentes são os elementos fornecidos pelo AEM para que você possa adicionar tipos específicos de conteúdo. AEM vem com uma gama de [componentes prontos para uso](/help/sites-authoring/default-components-console.md) que fornecem funcionalidade abrangente. Eles incluem:
 
 * Texto
 * Imagem
@@ -182,7 +182,7 @@ Depois de criar e abrir uma página, é possível[ adicionar conteúdo usando os
 
 A menos que todas as páginas tenham sido criadas para você com antecedência, antes que possa começar a criar conteúdo, é necessário criar uma página:
 
-1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. Abra o console Sites (por exemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navegue até o local onde deseja criar a nova página.
 1. Abra o seletor suspenso usando **Criar** na barra de ferramentas e, em seguida, selecione **Página** na lista:
 
@@ -258,7 +258,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 >
 >Navegar para outras páginas do editor de páginas só é possível no modo de visualização, pois os links não estão ativos no modo de Edição...
 
-### Copiar e colar uma página    {#copying-and-pasting-a-page}
+### Copiar e colar uma página      {#copying-and-pasting-a-page}
 
 É possível copiar uma página e todas as respectivas subpáginas para um novo site:
 
@@ -297,7 +297,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
 >[!NOTE]
 >
->Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. Consulte [Disponibilidade do modelo](/help/sites-developing/templates.md#template-availability) para obter mais informações.
 
 O procedimento para mover ou renomear uma página é basicamente o mesmo e é realizado pelo mesmo assistente. Com este assistente você pode:
 
@@ -373,28 +373,28 @@ O AEM oferece a funcionalidade de atualizar os links internos que se referem à 
 
 #### Ações assíncronas {#asynchronous-actions}
 
-Normalmente, uma ação de mover ou renomear página é executada imediatamente. Isso é considerado um processamento síncrono e outras ações na interface do usuário são bloqueadas até que a ação seja concluída.
+Normalmente, uma ação de mover ou renomear página é executada imediatamente. Essa ação é considerada um processamento síncrono e outras ações na interface do usuário são bloqueadas até que a ação seja concluída.
 
-No entanto, se o número de páginas afetadas estiver acima de um limite definido, a ação será processada de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida pela ação de mover ou renomear página.
+No entanto, se o número de páginas afetadas estiver acima de um limite definido, a ação será processada de modo assíncrono, permitindo que o usuário continue a criação na interface do usuário desimpedida pela ação de mover ou renomear página.
 
 * Ao clicar em **Mover** na última etapa acima, o AEM verifica o limite configurado.
 * Se o número de páginas afetadas estiver abaixo do limite, ele executará uma operação síncrona.
 * Se o número de páginas afetadas estiver acima do limite, ele executará uma operação assíncrona.
    * O usuário deve definir quando a operação assíncrona deve ser executada
-      * **Agora** começa a execução do trabalho assíncrono imediatamente.
-      * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será start.
+      * **Agora** a execução do trabalho assíncrono começa imediatamente.
+      * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será iniciado.
 
          ![Mover página assíncrona](assets/asynchronous-page-move.png)
 
-O status de trabalhos assíncronos pode ser verificado no painel [**Status **de Trabalhos](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)assíncronos na Navegação****global ->** Ferramentas **->** Operações **->** Tarefas **
+O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos** ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**
 
 >[!NOTE]
 >
->Para obter mais informações sobre o processamento assíncrono de tarefas e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento de Tarefas [](/help/sites-administering/asynchronous-jobs.md) assíncronas no guia do usuário Administração.
+>Para obter mais informações sobre o processamento assíncrono de tarefas e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento [Tarefas assíncronas](/help/sites-administering/asynchronous-jobs.md) no guia do usuário Administração.
 
 >[!NOTE]
 >
->O processamento de movimentação de página assíncrona requer o AEM 6.5.3.0 ou superior.
+>O processamento assíncrono de movimentação de página requer AEM 6.5.3.0 ou superior.
 
 ### Excluir uma página {#deleting-a-page}
 
