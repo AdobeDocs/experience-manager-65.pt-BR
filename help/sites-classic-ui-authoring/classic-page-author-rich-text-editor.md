@@ -8,6 +8,9 @@ discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 77%
 
 ---
 
@@ -20,7 +23,7 @@ O Editor de Rich Text é um elemento básico fundamental para introduzir o conte
 * Imagem de texto
 * Tabela
 
-## Rich Text Editor {#rich-text-editor-1}
+## Editor de Rich Text {#rich-text-editor-1}
 
 A caixa de diálogo de edição WYSIWYG fornece uma grande variedade de funcionalidades:
 
@@ -54,7 +57,7 @@ No momento, o modo de Edição local está habilitado para elementos de página 
 
 ## Recursos do Editor de Rich Text {#features-of-the-rich-text-editor}
 
-The Rich Text Editor provides a range of featues, these [depend on the configuration](/help/sites-administering/rich-text-editor.md) of the individual component. The features are available for both the touch-optimized and classic UI.
+O Editor de Rich Text fornece vários recursos, esses [dependem da configuração](/help/sites-administering/rich-text-editor.md) do componente individual. Os recursos estão disponíveis para a interface otimizada ao toque e clássica.
 
 ### Formatos básicos de caracteres {#basic-character-formats}
 
@@ -102,8 +105,8 @@ As funções padrão de **[!UICONTROL recortar]** e **[!UICONTROL copiar]** est�
 
 * Cortar (Ctrl-X)
 * Copiar (Ctrl-C)
-* Paste
-This is the default paste mechanism (Ctrl-V) for the component; when installed out-of-the-box this is configured to be [!UICONTROL Paste from Word].
+* Colar
+Este é o mecanismo de colagem padrão (Ctrl-V) para o componente; quando instalado e pronto, isso é configurado para ser [!UICONTROL Colar do Word].
 
 * Colar como texto: Remove todos os estilos e formatação para colar apenas o texto sem formatação.
 
@@ -149,7 +152,7 @@ Para listas aninhadas, recue um ou mais itens da lista.
 
 Para alterar o estilo de uma lista, basta posicionar o cursor dentro da lista e, em seguida, selecionando o outro estilo. Uma sublista também pode ter um estilo diferente da lista que a contém. Isso pode ser aplicado quando a sublista tiver sido criada (por recuo).
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_lista_use](assets/cq55_rte_lists_use.png)
 
 ### Links {#links}
 
@@ -167,13 +170,13 @@ Uma caixa de diálogo permitirá que você especifique a URL de destino; e se de
 
 * Digite um URI diretamente
 * Usar o mapa do site para selecionar uma página dentro do site
-* Enter the URI, then append the target anchor; e.g. `www.TargetUri.org#AnchorName`
-* Enter an anchor only (to reference &quot;the current page&quot;); For example, `#anchor`
+* Digite o URI e anexe a âncora do público alvo; por exemplo, `www.TargetUri.org#AnchorName`
+* Insira somente uma âncora (para fazer referência à &quot;página atual&quot;); Por exemplo, `#anchor`
 * Procure uma página no localizador de conteúdo e arraste e solte o ícone da página na caixa de diálogo Hiperlink
 
 >[!NOTE]
 >
->A URL pode ser anexada a quaisquer protocolos configurados para sua instalação. In a standard installation these are `https://`, `ftp://`, and `mailto:`. Os protocolos não configurados para sua instalação são rejeitados e marcados como inválidos.
+>A URL pode ser anexada a quaisquer protocolos configurados para sua instalação. Em uma instalação padrão, eles são `https://`, `ftp://` e `mailto:`. Os protocolos não configurados para sua instalação são rejeitados e marcados como inválidos.
 
 Para quebrar o link, coloque o cursor em qualquer lugar no texto do link e clique no ícone [!UICONTROL Desvincular]:
 
@@ -247,7 +250,7 @@ As tabelas estão disponíveis:
 
    >[!NOTE]
    >
-   >Although tables are available in the RTE, it is recommended to use the **Table** component when creating tables.
+   >Embora as tabelas estejam disponíveis no RTE, recomenda-se usar o componente **Table** ao criar tabelas.
 
 Nos componentes **Texto** e **Tabela** a funcionalidade de tabela está disponível por meio do menu de contexto (normalmente, o botão direito do mouse) clicado na tabela; por exemplo:
 
@@ -269,7 +272,7 @@ As funções específicas da tabela são:
 * [Tabelas aninhadas](#creating-nested-tables)
 * [Remover tabela](#remove-table)
 
-#### Propriedades da tabela {#table-properties}
+#### Propriedades da tabela  {#table-properties}
 
 ![cq55_rte_tableproperties_icon](assets/cq55_rte_tableproperties_icon.png)
 
@@ -293,7 +296,7 @@ As propriedades básicas da tabela podem ser configuradas antes de clicar em **O
 
 >[!CAUTION]
 >
->A Adobe recomenda que você defina uma largura para a tabela.
+>O Adobe recomenda que você defina uma largura para a tabela.
 
 #### Propriedades da célula {#cell-properties}
 
@@ -305,10 +308,10 @@ As propriedades de uma célula específica ou a série de células, podem ser co
 
 * **Largura**
 * **Altura**
-* **Alinhamento** horizontal - Esquerda, Centro ou Direita
-* **Alinhamento** vertical - Parte superior, Meio, Parte inferior ou Linha de base
+* **Alinhamento**  horizontal - Esquerda, Centro ou Direita
+* **Alinhamento**  vertical - Parte superior, Meio, Parte inferior ou Linha de base
 * **Tipo** de célula - Dados ou cabeçalho
-* **** Aplicar a: Célula única, Linha inteira, coluna inteira
+* **Aplicar a:célula** única, linha inteira, coluna inteira
 
 #### Adicionar ou excluir linhas {#add-or-delete-rows}
 
@@ -328,13 +331,13 @@ A coluna atual também pode ser excluída.
 
 #### Selecionar linhas ou colunas inteiras {#selecting-entire-rows-or-columns}
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 Seleciona toda a linha ou coluna atual. As ações específicas (por exemplo, mesclar) estarão, em seguida, disponíveis.
 
 #### Mesclar células {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Caso tenha selecionado um grupo de células, você pode mesclá-las em uma.
 * Caso tenha apenas uma célula selecionada, então você pode mesclá-la com a célula à direita ou abaixo.
@@ -366,7 +369,7 @@ Criar uma tabela aninhada criará uma nova tabela autossuficiente, dentro da cé
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
-Use a opção para remover a tabela do componente **[!UICONTROL Texto]** .
+Use a opção para remover a tabela do componente **[!UICONTROL Texto]**.
 
 ### Caracteres especiais {#special-characters}
 
