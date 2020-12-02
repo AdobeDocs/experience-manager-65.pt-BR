@@ -13,22 +13,22 @@ ht-degree: 5%
 
 # Compartilhar ativos por meio de um link {#asset-link-sharing}
 
-[!DNL Adobe Experience Manager Assets] permite que você compartilhe ativos, pastas e coleções como um URL com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Compartilhar ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon [!DNL Assets].
+[!DNL Adobe Experience Manager Assets] permite que você compartilhe ativos, pastas e coleções como um URL com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Compartilhar ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros, sem que eles precisem primeiro fazer logon em [!DNL Assets].
 
 >[!PREREQUISITES]
 >
 >* Você precisa da permissão Editar ACL na pasta ou no ativo que deseja compartilhar como um link.
->* Para enviar emails aos usuários, configure os detalhes do servidor SMTP no [Day CQ Mail Service](#configmailservice).
+>* Para enviar emails aos usuários, configure os detalhes do servidor SMTP em [Day CQ Mail Service](#configmailservice).
 
 
 ## Compartilhar ativos {#sharelink}
 
-Para gerar o URL dos ativos que você deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de links. Os usuários com privilégios de administrador ou com permissões de leitura no `/var/dam/share` local podem visualização os links compartilhados com eles.
+Para gerar o URL dos ativos que você deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de links. Os usuários com privilégios de administrador ou com permissões de leitura no local `/var/dam/share` podem visualização os links compartilhados com eles.
 
-1. Na interface do [!DNL Assets] usuário, selecione o ativo a ser compartilhado como um link.
-1. Na barra de ferramentas, clique no ícone **[!UICONTROL Compartilhar ativos do Link]** ![](assets/do-not-localize/assets_share.png)Compartilhar.
+1. Na interface do usuário [!DNL Assets], selecione o ativo a ser compartilhado como um link.
+1. Na barra de ferramentas, clique no ícone **[!UICONTROL Compartilhar link]** ![compartilhar ativos](assets/do-not-localize/assets_share.png).
 
-   O link que será criado após clicar em [!UICONTROL Compartilhar] será exibido antecipadamente no campo Link [!UICONTROL de] compartilhamento. A hora de expiração padrão do link é um dia.
+   O link que será criado após clicar em [!UICONTROL Compartilhar] é exibido antecipadamente no campo [!UICONTROL Compartilhar link]. A hora de expiração padrão do link é um dia.
 
    ![Diálogo com o compartilhamento de links](assets/Link-sharing-dialog-box.png)
 
@@ -36,64 +36,64 @@ Para gerar o URL dos ativos que você deseja compartilhar com os usuários, use 
 
    >[!NOTE]
    >
-   >Se você quiser compartilhar links da implantação do [!DNL Experience Manager] Autor para entidades externas, certifique-se de apenas expor os seguintes URLs (que são usados para compartilhamento de links) para `GET` solicitações. Bloquear outros URLs por motivos de segurança.
+   >Se você quiser compartilhar links da implantação do [!DNL Experience Manager] Autor para entidades externas, certifique-se de expor apenas os seguintes URLs (que são usados para compartilhamento de links) somente para solicitações `GET`. Bloquear outros URLs por motivos de segurança.
    >
    >* `http://[aem_server]:[port]/linkshare.html`
    >* `http://[aem_server]:[port]/linksharepreview.html`
    >* `http://[aem_server]:[port]/linkexpired.html`
 
 
-1. Na [!DNL Experience Manager] interface, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da Web]**.
+1. Na interface [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console Web]**.
 
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. Para as propriedades `local` e `author` , forneça o URL para as instâncias local e autor, respectivamente. As propriedades `local` e `author` as propriedades têm o mesmo valor se você executar uma única instância [!DNL Experience Manager] do autor. Para instâncias de Publicação, forneça o URL para a instância de [!DNL Experience Manager] publicação.
+1. Abra a configuração **[!UICONTROL Externalizador de links do Day CQ]** e modifique as seguintes propriedades no campo **[!UICONTROL Domínios]** com os valores mencionados em `local`, `author` e `publish`. Para as propriedades `local` e `author`, forneça o URL para as instâncias local e autor, respectivamente. As propriedades `local` e `author` têm o mesmo valor se você executar uma única instância do autor [!DNL Experience Manager]. Para instâncias de Publicação, forneça o URL para a instância de publicação [!DNL Experience Manager].
 
 1. Na caixa de endereço de email da caixa de diálogo **[!UICONTROL Compartilhamento de links]**, digite a ID de email do usuário com o qual deseja compartilhar o link. Você pode adicionar um ou mais usuários.
 
    ![Compartilhar links com ativos diretamente da caixa de diálogo Compartilhamento de links](assets/Asset-Sharing-LinkShareDialog.png)
 
-   *Figura: Compartilhe links para ativos diretamente da caixa de diálogo Compartilhamento [!UICONTROL de] links.*
+   *Figura: Compartilhe links para ativos diretamente da caixa de diálogo  [!UICONTROL Compartilhamento de ] links.*
 
    >[!NOTE]
    >
-   >Se você inserir uma ID de email de um usuário que não seja membro de sua organização, as palavras Usuário  externo receberão o prefixo ID de email do usuário.
+   >Se você inserir uma ID de email de um usuário que não seja membro de sua organização, as palavras [!UICONTROL Usuário externo] receberão o prefixo ID de email do usuário.
 
-1. No campo **[!UICONTROL Assunto]** , informe uma linha de assunto.
+1. No campo **[!UICONTROL Assunto]**, insira uma linha de assunto.
 
-1. No campo **[!UICONTROL Mensagem]** , insira uma mensagem opcional.
+1. No campo **[!UICONTROL Message]**, digite uma mensagem opcional.
 
-1. No campo **[!UICONTROL Expiração]** , especifique uma data e hora de expiração para o link parar de funcionar. Por padrão, a data de expiração é definida para uma semana a partir da data em que você compartilha o link.
+1. No campo **[!UICONTROL Expiração]**, especifique uma data e hora de expiração para o link parar de funcionar. Por padrão, a data de expiração é definida para uma semana a partir da data em que você compartilha o link.
 
    ![Definir data de expiração do link compartilhado](assets/Set-shared-link-expiration.png)
 
-1. Para permitir que os usuários baixem o ativo original junto com as representações, selecione **[!UICONTROL Permitir download do arquivo]** original. Por padrão, os usuários podem baixar somente as representações do ativo que você compartilha como um link.
+1. Para permitir que os usuários baixem o ativo original junto com as representações, selecione **[!UICONTROL Permitir download do arquivo original]**. Por padrão, os usuários podem baixar somente as representações do ativo que você compartilha como um link.
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários por email.
 
-1. Para visualização do ativo compartilhado, clique no link no email enviado ao usuário. O ativo compartilhado é exibido na página do **[!UICONTROL Adobe Marketing Cloud]** .
+1. Para visualização do ativo compartilhado, clique no link no email enviado ao usuário. O ativo compartilhado é exibido na página **[!UICONTROL Adobe Marketing Cloud]**.
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
-1. Para gerar uma pré-visualização do ativo, clique no ativo compartilhado. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
+1. Para gerar uma pré-visualização do ativo, clique no ativo compartilhado. Para fechar a pré-visualização e voltar para a página **[!UICONTROL Marketing Cloud]**, clique em **[!UICONTROL Voltar]** na barra de ferramentas. Se você tiver compartilhado uma pasta, clique em **[!UICONTROL Pasta pai]** para retornar à pasta pai.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
    >
-   >[!DNL Experience Manager] suporta gerar a pré-visualização de ativos somente [dos tipos](/help/assets/assets-formats.md)de arquivos suportados. Se outros tipos MIME forem compartilhados, você poderá baixar apenas os ativos e não poderá fazer a pré-visualização.
+   >[!DNL Experience Manager] suporta gerar a pré-visualização de ativos somente  [dos tipos](/help/assets/assets-formats.md) de arquivos suportados. Se outros tipos MIME forem compartilhados, você poderá baixar apenas os ativos e não poderá fazer a pré-visualização.
 
 1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e em **[!UICONTROL Download]** na barra de ferramentas.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Para visualização dos ativos compartilhados como links, vá para a interface do [!DNL Assets] usuário e clique no [!DNL Experience Manager] logotipo. Escolha **[!UICONTROL Navegação]**. In the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
+1. Para visualização dos ativos que você compartilhou como links, vá para a interface do usuário [!DNL Assets] e clique no logotipo [!DNL Experience Manager]. Escolha **[!UICONTROL Navegação]**. No painel de Navegação, escolha **[!UICONTROL Links compartilhados]** para exibir uma lista de ativos compartilhados.
 
-1. Para descompartilhar um ativo, selecione-o e clique em **[!UICONTROL Descompartilhar]** na barra de ferramentas. Uma mensagem de confirmação é exibida. A entrada do ativo é removida da lista.
+1. Para cancelar o compartilhamento de um ativo, selecione-o e clique em **[!UICONTROL Cancelar compartilhamento]** na barra de ferramentas. Uma mensagem de confirmação é exibida. A entrada do ativo é removida da lista.
 
-## Configurar o serviço de e-mail Day CQ {#configmailservice}
+## Configurar o serviço Day CQ Mail {#configmailservice}
 
-1. No [!DNL Experience Manager] home page, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > Console **[!UICONTROL da Web]**.
-1. Na lista de serviços, localize o **[!UICONTROL Dia CQ Mail Service]**.
-1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
+1. No home page [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console Web]**.
+1. Na lista de serviços, localize **[!UICONTROL Day CQ Mail Service]**.
+1. Clique em **[!UICONTROL Editar]** ao lado do serviço e configure os seguintes parâmetros para **[!UICONTROL Day CQ Mail Service]** com os detalhes mencionados em relação aos seus nomes:
 
    * Nome do host do servidor SMTP: nome do host do servidor de email
    * Porta do servidor SMTP: porta do servidor de email
@@ -106,20 +106,20 @@ Para gerar o URL dos ativos que você deseja compartilhar com os usuários, use 
 
 ## Configurar tamanho máximo de dados {#maxdatasize}
 
-Quando você baixa ativos do link compartilhado usando o recurso Compartilhamento de link, [!DNL Experience Manager] compacta a hierarquia de ativos do repositório e retorna o ativo em um arquivo ZIP. No entanto, na ausência de limites para a quantidade de dados que pode ser compactada em um arquivo ZIP, grandes quantidades de dados são submetidas à compactação, o que causa erros de memória esgotada no JVM. Para proteger o sistema de um possível ataque de negação de serviço devido a essa situação, configure o tamanho máximo usando o parâmetro **[!UICONTROL Máximo de tamanho de conteúdo (descompactado)]** para o Servlet [!UICONTROL Proxy de compartilhamento de ativos ad hoc do] Day CQ DAM no Configuration Manager. Se o tamanho descompactado do ativo exceder o valor configurado, as solicitações de download do ativo serão rejeitadas. O valor padrão é 100 MB.
+Quando você baixa ativos do link compartilhado usando o recurso Compartilhamento de link, [!DNL Experience Manager] compacta a hierarquia de ativos do repositório e retorna o ativo em um arquivo ZIP. No entanto, na ausência de limites para a quantidade de dados que pode ser compactada em um arquivo ZIP, grandes quantidades de dados são submetidas à compactação, o que causa erros de memória esgotada no JVM. Para proteger o sistema de um possível ataque de negação de serviço devido a essa situação, configure o tamanho máximo usando o parâmetro **[!UICONTROL Tamanho máx. do conteúdo (descompactado)]** para [!UICONTROL Servlet proxy Ad hoc de compartilhamento de ativos do Day CQ DAM] no Configuration Manager. Se o tamanho descompactado do ativo exceder o valor configurado, as solicitações de download do ativo serão rejeitadas. O valor padrão é 100 MB.
 
-1. Click the [!DNL Experience Manager] logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. No Console da Web, localize a configuração do Servlet **[!UICONTROL Adhoc de Compartilhamento de ativos Ad hoc do]** Day CQ DAM.
+1. Clique no logotipo [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console Web]**.
+1. No console da Web, localize a configuração **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]**.
 1. Abra a configuração do **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** no modo de edição e modifique o valor do parâmetro **[!UICONTROL Tamanho máximo de conteúdo (descompactado)]**.
 
    ![chlimage_1-264](assets/chlimage_1-549.png)
 
 1. Salve as alterações.
 
-## Best practices and troubleshooting {#bestpractices}
+## Práticas recomendadas e solução de problemas {#bestpractices}
 
 * Pastas de ativos ou Coleções que contêm um espaço em branco em seu nome podem não ser compartilhadas.
-* Se os usuários não puderem baixar os ativos compartilhados, verifique com seu [!DNL Experience Manager] administrador quais são os limites [de](#maxdatasize) download.
-* Se você não puder enviar emails com links para ativos compartilhados ou se os outros usuários não puderem receber seu email, verifique com seu [!DNL Experience Manager] administrador se o serviço [de](#configmailservice) email está configurado ou não.
+* Se os usuários não puderem baixar os ativos compartilhados, verifique com seu administrador [!DNL Experience Manager] quais são os [limites de download](#maxdatasize).
+* Se você não puder enviar emails com links para ativos compartilhados ou se os outros usuários não puderem receber seu email, verifique com seu administrador [!DNL Experience Manager] se o [serviço de email](#configmailservice) estiver configurado ou não.
 * Se você não puder compartilhar ativos usando a funcionalidade de compartilhamento de links, verifique se você tem as permissões apropriadas. Consulte [compartilhar ativos](#sharelink).
 * Se um ativo compartilhado for movido para um local diferente, seu link para de funcionar. Recrie o link e compartilhe-o novamente com os usuários.
