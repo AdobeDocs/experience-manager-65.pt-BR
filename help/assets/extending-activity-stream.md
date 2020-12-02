@@ -1,6 +1,6 @@
 ---
-title: Integrar [!DNL Assets] ao fluxo de atividade
-description: Descreve os recursos [!DNL Experience Manager] de gravação de e como configurá-los para gravar eventos específicos.
+title: Integrar [!DNL Assets] com fluxo de atividade
+description: Descreve os recursos de gravação de [!DNL Experience Manager] e como configurá-los para gravar eventos específicos.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Considerações de desempenho e comportamento padrão {#performance-considerations-and-default-behavior}
 
-Essa integração pode ser de CPU e de consumo de espaço em disco, por exemplo, ao fazer a importação em massa. Por esses motivos, a integração [!DNL Assets] com o Fluxo de Atividade é desativada por padrão.
+Essa integração pode ser de CPU e de consumo de espaço em disco, por exemplo, ao fazer a importação em massa. Por esses motivos, a integração [!DNL Assets] com o Fluxo de Atividade está desabilitada por padrão.
 
 ## Eventos de ação suportados {#supported-action-events}
 
@@ -39,22 +39,22 @@ Os seguintes eventos podem ser configurados para serem gravados:
 * Subativo atualizado (SUBASSET_UPDATED)
 * Subativo removido (SUBASSET_REMOVED)
 
-## Configurar gravação de [!DNL Assets] eventos {#configuring-aem-assets-events-recording}
+## Configurar [!DNL Assets] eventos gravando {#configuring-aem-assets-events-recording}
 
-O console [da](/help/sites-deploying/configuring-osgi.md) Web fornece acesso ao ajuste do Gravador do Evento Assets. Para configurar o Gravador de Eventos de Ativos, proceda da seguinte maneira:
+O [console Web](/help/sites-deploying/configuring-osgi.md) fornece acesso ao ajuste do Gravador de Eventos de Ativos. Para configurar o Gravador de Eventos de Ativos, proceda da seguinte maneira:
 
-1. Navegue até o Console **[!UICONTROL da Web]**
+1. Navegue até **[!UICONTROL Console Web]**
 
 1. Clique em **[!UICONTROL Configuração]**.
 
-1. Duplo clique em Gravador **[!UICONTROL do Evento]** Day CQ DAM.
+1. Clique no duplo **[!UICONTROL Gravador de Evento do Day CQ DAM]**.
 
-1. Marcar **[!UICONTROL Ativa este serviço]**.
+1. Marcar **[!UICONTROL Habilita este serviço]**.
 
-1. Verifique quais **[!UICONTROL Tipos de evento]** você deseja que sejam registrados no fluxo de atividade do usuário.
+1. Verifique quais **[!UICONTROL Tipos de evento]** você deseja que sejam gravados no fluxo de atividade do usuário.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
 ## Ler eventos gravados {#reading-recorded-events}
 
-Os eventos gravados são armazenados como atividades. Você pode lê-los de forma programática usando a API [do](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)Activity Manager.
+Os eventos gravados são armazenados como atividades. Você pode lê-los de forma programática usando a [API do Activity Manager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
