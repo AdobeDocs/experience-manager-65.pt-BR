@@ -1,8 +1,8 @@
 ---
 title: Sistema de estilos
 seo-title: Sistema de estilos
-description: O Sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente, de modo que o autor de conteúdo possa selecioná-los ao editar o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
-seo-description: O Sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente, de modo que o autor de conteúdo possa selecioná-los ao editar o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
+description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
+seo-description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 uuid: 0d857650-8738-49e6-b431-f69c088be74f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,24 +12,24 @@ translation-type: tm+mt
 source-git-commit: 0985ba24f7430381fccc40faf3a316d3abd85a30
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 69%
+ht-degree: 96%
 
 ---
 
 
 # Sistema de estilos{#style-system}
 
-O Sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente, de modo que o autor de conteúdo possa selecioná-los ao editar o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando o componente mais flexível.
+O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando esse componente mais flexível.
 
 Isso elimina a necessidade de desenvolver um componente personalizado para cada estilo ou personalizar a caixa de diálogo do componente para permitir essa funcionalidade de estilo. Isso resulta em componentes mais reutilizáveis, que podem ser adaptados de forma rápida e fácil às necessidades dos autores de conteúdo, sem exigir uma implantação de back-end no AEM.
 
-## Caso de uso   {#use-case}
+## Caso de uso  {#use-case}
 
 Os autores de modelos precisam ter a capacidade de configurar a forma como os componentes funcionam para os autores de conteúdo, bem como configurar algumas variações visuais alternativas de um componente.
 
 Da mesma forma, os autores de conteúdo precisam ter a capacidade de estruturar e organizar o conteúdo, além de selecionar a maneira como ele é apresentado visualmente.
 
-O Sistema de estilo fornece uma solução unificada para os requisitos do autor do modelo e do autor do conteúdo:
+O Sistema de estilos fornece uma solução unificada para os requisitos do autor de modelo e do autor de conteúdo:
 
 * Os autores de modelos podem definir classes de estilo na política de conteúdo de componentes.
 * Os autores de conteúdo podem selecionar essas classes em uma lista suspensa ao editar o componente em uma página para aplicar os estilos correspondentes.
@@ -38,7 +38,7 @@ A classe de estilo é inserida no elemento wrapper de decoração do componente 
 
 ## Visão geral {#overview}
 
-O uso do Sistema de estilo geralmente assume o seguinte formato.
+O uso do Sistema de estilos geralmente funciona da seguinte maneira.
 
 1. O web designer cria diferentes variações visuais de um componente.
 
@@ -58,28 +58,28 @@ Observe que somente as três últimas etapas são realmente realizadas no AEM. I
 
 A aplicação real dos estilos requer apenas a implantação no AEM e a seleção nos componentes dos modelos desejados.
 
-O diagrama a seguir ilustra a arquitetura do Sistema de estilo.
+O diagrama a seguir ilustra a arquitetura do Sistema de estilos.
 
 ![aem-style-system](assets/aem-style-system.png)
 
 ## Uso {#use}
 
-Para demonstrar o recurso, usaremos a implementação do [WKND](https://docs.adobe.com/content/help/br/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)do componente [de](https://www.adobe.com/go/aem_cmp_title_v2) título do componente principal como exemplo.
+Para demonstrar o recurso, usaremos como exemplo a implementação da [WKND](https://docs.adobe.com/content/help/br/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) do [componente de título](https://www.adobe.com/go/aem_cmp_title_v2) do componente principal.
 
-The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
+As seções a seguir, [Como um autor de conteúdo](#as-a-content-author) e [Como um autor de modelo](#as-a-template-author) descrevem como testar a funcionalidade do Sistema de estilos usando o Sistema de estilos da WKND.
 
-Se você quiser usar o Sistema de estilo para seus próprios componentes, faça o seguinte:
+Se você desejar usar o Sistema de estilos em seus próprios componentes, faça o seguinte:
 
 1. Instale o CSS como bibliotecas de cliente, conforme descrito na seção [Visão geral](#overview).
 1. Configure as classes CSS que deseja disponibilizar para os autores de conteúdo, conforme descrito na seção [Como um autor de modelo](#as-a-template-author).
 1. Os autores de conteúdo podem usar os estilos conforme descrito na seção [Como um autor de conteúdo](#as-a-content-author).
 
-### Como um autor de conteúdo   {#as-a-content-author}
+### Como autor de conteúdo   {#as-a-content-author}
 
-1. Após instalar o projeto WKND, navegue até o home page mestre do idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e edite a página.
+1. Depois de instalar o projeto WKND, navegue até a página inicial principal no idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e edite a página.
 1. Selecione um componente de **Título** mais abaixo da página
 
-   ![Sistema de estilo do autor](assets/style-system-author.png)
+   ![Sistema de estilos do autor](assets/style-system-author.png)
 
 1. Toque ou clique no botão **Estilos** na barra de ferramentas do componente **Lista** para abrir o menu de estilos e alterar a aparência do componente.
 
@@ -87,15 +87,15 @@ Se você quiser usar o Sistema de estilo para seus próprios componentes, faça 
 
    >[!NOTE]
    >
-   >Neste exemplo, os estilos de **Cores** (**Preto**, **Branco** e **Cinza**) são mutuamente exclusivos, enquanto as opções de **Estilo**************(Sublinhado, , SpacingMini) podem ser combinadas. Isso pode ser [configurado no modelo como o autor do modelo](#as-a-template-author).
+   >Neste exemplo, os estilos de **Cores** (**Preto**, **Branco** e **Cinza**) são mutuamente exclusivos, enquanto as opções de **Estilo** (**Sublinhado**, **Alinhar à direita** e **Miniespaçamento**) podem ser combinadas. Isso pode ser [configurado no modelo como o autor do modelo](#as-a-template-author).
 
-### Como um autor de modelo   {#as-a-template-author}
+### Como autor de modelo   {#as-a-template-author}
 
-1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
+1. Ao editar a página inicial mestre em inglês do WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página em **Informações da página -> Editar modelo**.
 
    ![Editar modelo](assets/style-system-edit-template.png)
 
-1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
+1. Edite a política do componente de **Título** tocando ou clicando no botão **Política** do componente.
 
    ![Editar política](assets/style-system-edit-policy.png)
 
@@ -107,39 +107,40 @@ Se você quiser usar o Sistema de estilo para seus próprios componentes, faça 
    * **Estilos podem ser combinados:** permite a seleção simultânea de vários estilos desse grupo.
    * **Nome do estilo:** a descrição do estilo que será exibida para o autor do conteúdo ao configurar o estilo do componente.
    * **Classes de CSS:** o nome real da classe CSS associada ao estilo.
+
    Use as alças de arrastar para organizar a ordem dos grupos e dos estilos nos grupos. Use os ícones Adicionar ou Excluir para adicionar ou remover grupos ou estilos nos grupos.
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
+>As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas do cliente](/help/sites-developing/clientlibs.md) para funcionarem.
 
 ## Configurar {#setup}
 
-Os Componentes principais versão 2 e posteriores estão habilitados para se beneficiarem do Sistema de estilo e não exigem configuração adicional.
+Os Componentes principais versão 2 e posteriores estão habilitados para se beneficiarem do Sistema de estilos e não exigem configuração adicional.
 
-As etapas a seguir são necessárias apenas para ativar o Sistema de estilo para seus próprios componentes personalizados ou para [ativar a guia Estilos opcional na caixa de diálogo Editar.](#enable-styles-tab-edit)
+As etapas a seguir são necessárias apenas para ativar o Sistema de estilos para os seus próprios componentes personalizados ou para [habilitar a guia Estilos opcional na caixa de diálogo Editar.](#enable-styles-tab-edit)
 
-### Ativar guia Estilo na caixa de diálogo Design {#enable-styles-tab-design}
+### Habilitar guia Estilo na caixa de diálogo Design {#enable-styles-tab-design}
 
-Para que um componente funcione com o Sistema de estilo do AEM e mostre a guia de estilo em sua caixa de diálogo de design, o desenvolvedor do componente deve incluir a guia de estilo com as seguintes configurações no componente:
+Para que um componente funcione com o Sistema de estilos do AEM e mostre a guia Estilo na caixa de diálogo Design, o desenvolvedor do componente deve incluir essa guia com as seguintes configurações no componente:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 Com o componente configurado, os estilos configurados pelos autores da página serão inseridos automaticamente pelo AEM no elemento de decoração que o AEM adiciona ao redor de cada componente editável. O componente não precisa fazer mais nada para que isso ocorra.
 
-### Ativar guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
+### Habilitar a guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
 
-A partir do AEM versão 6.5.3.0, uma guia Estilos opcional na caixa de diálogo Editar está disponível. Diferentemente da guia Caixa de diálogo de design, a guia na caixa de diálogo Editar não é essencial para o funcionamento do Sistema de estilo, mas é uma interface alternativa opcional para um autor de conteúdo definir estilos.
+A partir AEM versão 6.5.3.0, uma guia Estilos opcional na caixa de diálogo Editar está disponível. Diferentemente da guia da caixa de diálogo Design, a guia na caixa de diálogo Editar não é essencial para o funcionamento do Sistema de estilos, mas é uma interface alternativa opcional para um autor de conteúdo definir estilos.
 
-A guia da caixa de diálogo de edição pode ser incluída de maneira semelhante à guia da caixa de diálogo de design:
+A guia da caixa de diálogo Editar pode ser incluída de maneira semelhante na guia da caixa de diálogo Design:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
 >
->A guia Estilos na caixa de diálogo Editar não está ativada por padrão.
+>A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
 
 ### Estilos com nomes de elemento   {#styles-with-element-names}
 
@@ -155,11 +156,12 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 >
 >1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
->1. Por fim, a `cq:tagName`/ `cq:htmlTag` do componente será considerada como um valor de fallback.
+>1. Por fim, a `cq:htmlTag`/ `cq:tagName` do componente será considerada um valor de fallback.
+
 >
 
 
 
-Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento do conteúdo, para oferecer-lhes significado adicional.
+Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento de conteúdo, para oferecer-lhes significado adicional.
 
 Por exemplo, permite que um Contêiner de layout receba uma semântica como `<main>`, `<aside>`, `<nav>`, etc.
