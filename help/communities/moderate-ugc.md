@@ -40,7 +40,7 @@ A moderação do UGC é útil para reconhecer contribuições positivas e limita
 
 * [Console de moderação em massa](moderation.md)
 
-   O console Moderação pode ser acessado por administradores e moderadores [da](/help/communities/users.md) comunidade no ambiente público, bem como por administradores no ambiente do autor. Isso é possível quando o conteúdo da comunidade é armazenado em uma loja [](/help/communities/working-with-srp.md)comum.
+   O console Moderação é acessível pelos administradores e [moderadores da comunidade](/help/communities/users.md) no ambiente público, bem como pelos administradores no ambiente do autor. Isso é possível quando o conteúdo da comunidade é armazenado em um [armazenamento comum](/help/communities/working-with-srp.md).
 
 * [Moderação no contexto](in-context.md)
 
@@ -52,11 +52,11 @@ As ações que podem ser executadas no conteúdo publicado (UGC) variam dependen
 
 * `Admin`
 
-   Um usuário que é membro do grupo de administradores [da](users.md) comunidade.
+   Um usuário que é membro do grupo [administradores da comunidade](users.md).
 
 * `Moderator`
 
-   Um membro de um grupo de moderadores [da](users.md#publishenvironmentusersandgroups) comunidade (tem permissões [de](in-context.md#moderatorpermissions)moderador).
+   Um membro de um grupo [de moderadores da comunidade](users.md#publishenvironmentusersandgroups) (tem [permissões de moderador](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
@@ -79,7 +79,7 @@ As ações que podem ser executadas no conteúdo publicado (UGC) variam dependen
    <td><strong>Criador</strong></td>
    <td><strong>Membro</strong></td>
    <td><strong>Visitante</strong></td>
-   <td><strong>Evento<br /> acionado</strong></td>
+   <td><strong>Evento<br /> Disparado</strong></td>
    <td><strong>Premoderizado</strong></td>
   </tr>
   <tr>
@@ -193,15 +193,17 @@ O sistema rastreia todos os sinalizadores, que sinalizaram, o motivo do sinaliza
 
 A ação Permitir é uma opção para UGC que foi Sinalizado, Negado ou não foi aprovado em um sistema pré-moderado. A ação Permitir limpará qualquer status sinalizado ou negado/spam presente e arquivará quaisquer dados sinalizados.
 
-## Conceitos comuns de moderação {#common-moderation-concepts}
+## Conceitos de moderação comuns {#common-moderation-concepts}
 
 ### Premoderation {#premoderation}
 
-Quando o UGC for pré-moderado, a publicação não aparecerá no site publicado até ser aprovada por uma ação de moderação. Durante a criação de um site [da](/help/communities/sites-console.md)comunidade, marcar a caixa [Conteúdo removido](sites-console.md#moderation) permitirá a pré-moderação de todo o site. Depois que os componentes são colocados em uma página, os componentes que suportam moderação podem ser configurados para pré-moderação usando uma configuração em sua caixa de diálogo de edição:
+Quando o UGC for pré-moderado, a publicação não aparecerá no site publicado até ser aprovada por uma ação de moderação. Durante a criação de um [site da comunidade](/help/communities/sites-console.md), marcar a caixa [Conteúdo é Premoderado](sites-console.md#moderation) permitirá a pré-moderação de todo o site. Depois que os componentes são colocados em uma página, os componentes que suportam moderação podem ser configurados para pré-moderação usando uma configuração em sua caixa de diálogo de edição:
 
-* [Comentários](comments.md) e [revisões](reviews.md)em Moderação **** do usuário > **[!UICONTROL Pré-moderação]**.
+* [](comments.md) Comentários e  [](reviews.md)
+revisões em Moderação **** do usuário >  **[!UICONTROL Pré-moderação]**.
 
-* [Fórum](/help/communities/forum.md), [ideação](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md)e [calendário](/help/communities/calendar.md)em **[!UICONTROL Configurações]** > **** Moderado.
+* [Fórum](/help/communities/forum.md),  [ideação](/help/communities/ideation-feature.md),  [QnA](/help/communities/working-with-qna.md) e  [](/help/communities/calendar.md)
+configurações **[!UICONTROL de calendário>]** Moderado ****.
 
 ### Detecção de spam {#spam-detection}
 
@@ -209,7 +211,7 @@ A detecção de spam é uma funcionalidade de moderação automática, que filtr
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-No entanto, para personalizar ou estender as palavras de spam padrão, crie um conjunto de palavras no diretório /apps seguindo a estrutura das palavras de spam padrão por meio da [sobreposição](/help/communities/overlay-comments.md).
+No entanto, para personalizar ou estender as palavras de spam padrão, crie um conjunto de palavras no diretório /apps, seguindo a estrutura das palavras de spam padrão por meio de [overlay](/help/communities/overlay-comments.md).
 
 Uma postagem gerada pelo usuário (em todos os tipos de conteúdo, por exemplo, blogs, fóruns e comentários) que contém palavras de spam é marcada com o texto &quot;Essa postagem foi classificada como spam&quot; acima da postagem.
 
@@ -219,10 +221,10 @@ O moderador pode ver uma publicação e marcar a mesma para permitir ou negar a 
 
 Para ativar o mecanismo de detecção de spam, siga estas etapas:
 
-1. Abra o Console [da Web](https://localhost:4502/system/console/configMgr), indo até `/system/console/configMgr`.
+1. Abra [Console Web](https://localhost:4502/system/console/configMgr), indo para `/system/console/configMgr`.
 
-1. Localize a configuração da Moderação **automática do** AEM Communities e edite-a.
-1. Adicione a entrada **[!UICONTROL SpamProcess]** .
+1. Localize a configuração **Moderação automática do AEM Communities** e edite-a.
+1. Adicione a entrada **[!UICONTROL SpamProcess]**.
 
 ![spamprocess](assets/spamprocess.png)
 
@@ -232,7 +234,7 @@ Para ativar o mecanismo de detecção de spam, siga estas etapas:
 
 ### Sentimento {#sentiment}
 
-O sentimento é calculado com base no número de palavras-chave positivas e negativas (palavras de[observação](#configuringwatchwords)) presentes em uma publicação (UGC).
+O sentimento é calculado com base no número de palavras-chave positivas e negativas ([palavras-chave](#configuringwatchwords)) presentes em uma publicação (UGC).
 
 A análise de sentimento usa um conjunto de regras pré-configuradas e calcula o sentimento do UGC. As regras padrão estão localizadas em: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
@@ -249,24 +251,24 @@ Para substituir ou adicionar regras, crie um conjunto de regras no diretório /a
 
 Depois de analisado, o sentimento é armazenado com o UGC.
 
-No console [de moderação em](/help/communities/moderation.md)massa, é possível filtrar e visualização o UGC com base no fato de o sentimento ser negativo, neutro ou positivo.
+No [console de moderação em massa](/help/communities/moderation.md), é possível filtrar e visualização o UGC com base no fato de o sentimento ser negativo, neutro ou positivo.
 
 #### Watchwords {#watchwords}
 
-AEM comunidades fornece um analisador *de palavra de* observação como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecido pelas palavras de observação deve-se a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como de palavras proibidas.
+AEM comunidades fornece um *analisador de palavra de ordem* como uma etapa no processo para avaliar [sentimento](#sentiment). A contribuição para o valor do sentimento fornecido pelas palavras de observação deve-se a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como de palavras proibidas.
 
-#### Configurar o sentimento e as palavras de observação {#configure-sentiment-and-watchwords}
+#### Configurar Sentimento e palavras de observação {#configure-sentiment-and-watchwords}
 
 A lista de palavras de observação positivas e negativas pode ser personalizada como podem ser as regras de sentimento.
 
-A lista padrão de palavras de observação pode ser inserida como propriedades de um nó no repositório, semelhante ao padrão ou substituindo o padrão configurando o serviço OSGi `sentimentprocess.name` com a lista de palavras.
+A lista padrão de palavras de observação pode ser inserida como propriedades de um nó no repositório, semelhante ao padrão ou substituindo o padrão configurando o serviço OSGi `sentimentprocess.name` pela lista de palavras.
 
 O **sentimentprocess.name** também pode ser modificado para fazer referência ao local de um conjunto personalizado de regras de sentimento.
 
 Para configurar sentimentos e palavras de observação:
 
 * Faça logon na instância do autor como administrador.
-* Abra o Console [da Web](https://localhost:4502/system/console/configMgr).
+* Abra [Console Web](https://localhost:4502/system/console/configMgr).
 * Localize `sentimentprocess.name`.
 * Selecione a configuração para abrir no modo de edição.
 
@@ -288,7 +290,7 @@ Para configurar sentimentos e palavras de observação:
 
    A localização do repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é `/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum fluxo de trabalho envolvido).
 
-A seguir, há um exemplo de uma entrada personalizada para as palavras de observação padrão, quando `Explicit Path to Watchwords Node` está definida como `/libs/settings/community/watchwords/default`.
+Veja a seguir um exemplo de uma entrada personalizada para as palavras de observação padrão, quando `Explicit Path to Watchwords Node` está definido como `/libs/settings/community/watchwords/default`.
 
 ![crxde](assets/crxde.png)
 
