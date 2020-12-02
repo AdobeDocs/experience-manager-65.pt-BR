@@ -1,8 +1,8 @@
 ---
 title: Operações Granite - Administração de usuários e grupos
 seo-title: Operações Granite - Administração de usuários e grupos
-description: Saiba mais sobre a administração de usuários e grupos do Granite.
-seo-description: Saiba mais sobre a administração de usuários e grupos do Granite.
+description: Saiba mais sobre o usuário do Granite e a administração de grupos.
+seo-description: Saiba mais sobre o usuário do Granite e a administração de grupos.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 4%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
 
 Como o Granite incorpora a implementação do Repositório CRX da Especificação da API JCR, ele tem sua própria administração de usuários e grupos.
 
-Essas contas são a base subjacente das contas [do](/help/sites-administering/security.md) AEM e qualquer alteração de conta feita com a administração do Granite será refletida se/quando as contas forem acessadas pelo console [Usuários do](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) AEM (por exemplo, `http://localhost:4502/useradmin`). No console Usuários do AEM, você também pode gerenciar os privilégios e outras especificações do AEM.
+Essas contas são a base subjacente das [AEM contas](/help/sites-administering/security.md) e qualquer alteração de conta feita com a administração Granite será refletida se/quando as contas forem acessadas do [AEM console Usuários](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (por exemplo, `http://localhost:4502/useradmin`). No console Usuários do AEM, você também pode gerenciar os privilégios e outras AEM específicas.
 
-Os consoles de administração de grupo e usuário granite estão disponíveis no console **[Ferramentas](/help/sites-administering/tools-consoles.md)**da interface otimizada ao toque:
+Os consoles de administração de grupo e usuário granito estão disponíveis no console **[Ferramentas](/help/sites-administering/tools-consoles.md)** da interface otimizada ao toque:
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
-Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console apropriado. Em ambos, você pode agir usando a caixa de clique e as ações da barra de ferramentas, ou abrindo os detalhes da conta por meio do link em **Nome**.
+Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console apropriado. Em ambos, você pode agir usando a caixa de clique e as ações da barra de ferramentas, ou abrindo os detalhes da conta pelo link em **Nome**.
 
 * [Administração do usuário](#user-administration)
 
@@ -51,11 +54,11 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
 ### Adicionando um novo usuário {#adding-a-new-user}
 
-1. Use o ícone **Adicionar usuário** :
+1. Use o ícone **Adicionar usuário**:
 
    ![](do-not-localize/chlimage_1-1.png)
 
-1. O formulário **Criar usuário** abrirá:
+1. O formulário **Criar usuário** será aberto:
 
    ![chlimage_1-75](assets/chlimage_1-75a.png)
 
@@ -89,7 +92,9 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
    * **Sobre**
    * **Configurações da conta**
 
-      * **Status** Você pode sinalizar a conta como **ativa** ou **inativa**.
+      * ****
+StatusVocê pode sinalizar a conta como 
+**** ativeor  **inative**.
    * **Foto**
 
       Aqui você pode carregar uma foto para usar como avatar.
@@ -100,19 +105,19 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
    * **Adicionar usuário aos grupos**
 
-      Use o menu suspenso de seleção para selecionar grupos dos quais o usuário deve ser membro. Depois de selecionado, use o **X** pelo nome para desmarcar antes de salvar.
+      Use o menu suspenso de seleção para selecionar grupos dos quais o usuário deve ser membro. Depois de selecionado, use **X** pelo nome para desmarcar antes de salvar.
 
    * **Grupos**
 
-      Uma lista de grupos dos quais o usuário é membro no momento. Use o **X** pelo nome para desmarcar antes de salvar.
+      Uma lista de grupos dos quais o usuário é membro no momento. Use o nome **X** para desmarcar antes de salvar.
 
 
 1. Depois de definir a conta de usuário, use:
 
    * **Cancelar** para suspender o registro.
-   * **Salvar** para concluir o registro. A criação da conta de usuário será confirmada com uma mensagem.
+   * **** Savto conclui o registro. A criação da conta de usuário será confirmada com uma mensagem.
 
-### Editar um usuário existente {#editing-an-existing-user}
+### Editando um Usuário Existente {#editing-an-existing-user}
 
 1. Acesse os detalhes do usuário no link sob o nome do usuário no console Usuários.
 
@@ -126,7 +131,7 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
 1. Acesse os detalhes do usuário no link sob o nome do usuário no console Usuários.
 
-1. Agora você pode editar os detalhes como em [Adicionar um novo usuário](#adding-a-new-user). Em Configurações **de** conta há um link para **Alterar senha**.
+1. Agora você pode editar os detalhes como em [Adicionar um novo usuário](#adding-a-new-user). Em **Configurações da conta** há um link para **Alterar senha**.
 
    ![chlimage_1-76](assets/chlimage_1-76a.png)
 
@@ -139,7 +144,7 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 ### Atribuição de grupo rápido {#quick-group-assignment}
 
 1. Use a caixa de clique para sinalizar um ou mais usuários.
-1. Use the **Groups** icon:
+1. Use o ícone **Grupos**:
 
    ![](do-not-localize/chlimage_1-2.png)
 
@@ -151,8 +156,8 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
 1. Quando você atribuiu ou não atribuiu os grupos, conforme necessário, use:
 
-   * **Cancelar** para suspender as alterações
-   * **Salvar** para confirmar as alterações
+   * **** Cancelar para suspender as alterações
+   * **** Salvar para confirmar as alterações
 
 ### Excluindo Detalhes de Usuário Existentes {#deleting-existing-user-details}
 
@@ -161,11 +166,11 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. Será solicitado que você confirme a exclusão e uma mensagem confirmará que a exclusão real ocorreu.
+1. Será solicitado que você confirme a exclusão, e então uma mensagem confirmará que a exclusão real ocorreu.
 
 ## Administração de grupos {#group-administration}
 
-### Adicionando um novo grupo {#adding-a-new-group}
+### Adicionando um Novo Grupo {#adding-a-new-group}
 
 1. Use o ícone Adicionar grupo:
 
@@ -191,42 +196,42 @@ Escolher **Usuários** ou **Grupos** no console Ferramentas abrirá o console ap
 
    * **Adicionar membros ao grupo**
 
-      Use o menu suspenso de seleção para selecionar usuários a serem adicionados ao grupo. Depois de selecionado, use o **X** pelo nome para desmarcar antes de salvar.
+      Use o menu suspenso de seleção para selecionar usuários a serem adicionados ao grupo. Depois de selecionado, use **X** pelo nome para desmarcar antes de salvar.
 
    * **Membros do grupo**
 
-      Uma lista de usuários no grupo. Use o **X** pelo nome para desmarcar antes de salvar.
+      Uma lista de usuários no grupo. Use o nome **X** para desmarcar antes de salvar.
 
 1. Depois de definir o grupo, use:
 
    * **Cancelar** para suspender o registro.
-   * **Salvar** para concluir o registro. A criação do grupo será confirmada com uma mensagem.
+   * **** Savto conclui o registro. A criação do grupo será confirmada com uma mensagem.
 
-### Editando um grupo existente {#editing-an-existing-group}
+### Editando um Grupo Existente {#editing-an-existing-group}
 
 1. Acesse os detalhes do grupo no link abaixo do nome do grupo no console Grupos.
 
 1. Agora você pode editar e salvar os detalhes como em [Adicionar um novo grupo](#adding-a-new-group).
 
-### Copiando um grupo existente {#copying-an-existing-group}
+### Copiando um Grupo Existente {#copying-an-existing-group}
 
 1. Use a caixa de clique para sinalizar um grupo.
 1. Use o ícone **Copiar** para copiar os detalhes do grupo:
 
    ![](do-not-localize/chlimage_1-5.png)
 
-1. O formulário **Editar configurações** de grupo será aberto.
+1. O formulário **Editar configurações de grupo** será aberto.
 
    A ID do grupo será a mesma do original, mas terá o prefixo `Copy of`. É necessário editar isso, pois a ID não pode conter espaços. Todos os outros detalhes serão os mesmos do original.
 
    Agora você pode editar e salvar os detalhes como em [Adicionar um novo grupo](#adding-a-new-group).
 
-### Excluindo um grupo existente {#deleting-an-existing-group}
+### Excluindo um Grupo Existente {#deleting-an-existing-group}
 
 1. Use a caixa de clique para sinalizar um ou mais grupos.
 1. Use o ícone **Excluir** para excluir os detalhes do grupo:
 
    ![](do-not-localize/chlimage_1-6.png)
 
-1. Será solicitado que você confirme a exclusão e uma mensagem confirmará que a exclusão real ocorreu.
+1. Será solicitado que você confirme a exclusão, e então uma mensagem confirmará que a exclusão real ocorreu.
 
