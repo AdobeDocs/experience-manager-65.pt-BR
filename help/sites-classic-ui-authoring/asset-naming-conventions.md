@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 90%
 
 ---
 
 
-# Convenções de nomenclatura para ativos testing{#naming-conventions-for-assets-testing}
+# Convenções de nomenclatura para ativos teste{#naming-conventions-for-assets-testing}
 
-Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o Adobe Experience Manager impõe mais convenções para o nome de nós de ativos.
+Os nós no repositório estão sujeitos às convenções de nomenclatura do [repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o Adobe Experience Manager impõe mais convenções para o nome de nós de ativos.
 
 ## Interface clássica {#classic-ui}
 
