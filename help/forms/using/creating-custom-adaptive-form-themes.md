@@ -1,8 +1,8 @@
 ---
 title: Criação de temas de formulário adaptáveis personalizados
 seo-title: Criação de temas de formulário adaptáveis personalizados
-description: Um tema de formulário adaptável é uma biblioteca de cliente do AEM que você usa para definir os estilos (aparência) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
-seo-description: Um tema de formulário adaptável é uma biblioteca de cliente do AEM que você usa para definir os estilos (aparência) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
+description: Um tema de formulário adaptável é uma biblioteca cliente AEM que você usa para definir os estilos (aparência e comportamento) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
+seo-description: Um tema de formulário adaptável é uma biblioteca cliente AEM que você usa para definir os estilos (aparência e comportamento) de um formulário adaptável. Saiba como criar temas de formulário adaptáveis personalizados.
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
 topic-tags: customization
@@ -21,19 +21,19 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Os AEM Forms fornecem o recurso do Editor [de](/help/forms/using/themes.md) Temas para criar e modificar [temas](/help/forms/using/themes.md)de formulários adaptáveis. Execute as etapas listadas neste artigo somente se você tiver atualizado de uma versão que não tem o Editor [de](/help/forms/using/themes.md) Temas e tiver um investimento existente em temas criados usando arquivos Menos/CSS (método editor pré-temático).
+>A AEM Forms fornece o recurso [Editor de Temas](/help/forms/using/themes.md) para criar e modificar formulários adaptáveis [temas](/help/forms/using/themes.md). Execute as etapas listadas neste artigo somente se você tiver atualizado de uma versão que não tem [Editor de Temas](/help/forms/using/themes.md) e tiver um investimento existente em temas criados usando arquivos Menos/CSS (método editor pré-temático).
 
 ## Pré-requisitos {#prerequisites}
 
 * Conhecimento da estrutura LESS (Leaner CSS)
 * Como criar uma biblioteca de clientes no Adobe Experience Manager
-* [Criar um modelo](/help/forms/using/custom-adaptive-forms-templates.md) de formulário adaptável para usar o tema criado
+* [Criação de um modelo de formulário adaptável ](/help/forms/using/custom-adaptive-forms-templates.md) para uso do tema criado
 
-## Adaptive form theme {#adaptive-form-theme}
+## Tema de formulário adaptável {#adaptive-form-theme}
 
-Um tema **de formulário** adaptável é uma biblioteca do cliente AEM que você usa para definir os estilos (aparência e comportamento) de um formulário adaptável.
+Um **tema de formulário adaptável** é uma biblioteca de cliente AEM que você usa para definir os estilos (aparência e comportamento) de um formulário adaptável.
 
-Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo personalizado para criar um formulário **** adaptável.
+Você cria um **modelo adaptável** e aplica o tema ao modelo. Use esse modelo personalizado para criar um **formulário adaptável**.
 
 ![Formulário adaptável e biblioteca do cliente](assets/hierarchy.png)
 
@@ -41,29 +41,30 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 
 >[!NOTE]
 >
->O procedimento a seguir é descrito usando nomes de amostra para objetos AEM, como nó, propriedades e pastas.
+>O procedimento a seguir é descrito usando nomes de amostra para objetos AEM como nó, propriedades e pastas.
 >
 >Se você seguir essas etapas usando os nomes, o modelo resultante deverá aparecer de forma semelhante ao seguinte instantâneo:
 
-![Instantâneo](assets/thumbnail.png)do formulário adaptável com tema de floresta **Figura:** *Exemplo de tema da floresta*
+![Instantâneo do formulário adaptável com tema de florestaFigura:](assets/thumbnail.png)
+**Exemplo de tema** *da floresta*
 
-1. Crie um nó do tipo `cq:ClientLibraryFolder` abaixo do `/apps`nó.
+1. Crie um nó do tipo `cq:ClientLibraryFolder` no nó `/apps`.
 
    Por exemplo, crie o seguinte nó:
 
    `/apps/myAfThemes/forestTheme`
 
-1. Adicione uma propriedade de string com vários valores `categories` ao nó e defina seu valor adequadamente.
+1. Adicione uma propriedade de string de vários valores `categories` ao nó e defina seu valor apropriadamente.
 
    Por exemplo, defina a propriedade como: `af.theme.forest`.
 
    ![Instantâneo do repositório CRX](assets/3-2.png)
 
-1. Adicione duas pastas `less` e `css`um arquivo `css.txt` ao nó criado na etapa 1:
+1. Adicione duas pastas, `less` e `css`, e um arquivo `css.txt` ao nó criado na etapa 1:
 
-   * `less` pasta: Contém os arquivos de `less` variável nos quais você define as `less` variáveis e `less mixins` que são usados para gerenciar os estilos .css.
+   * `less` pasta: Contém os arquivos de  `less` variável nos quais você define as  `less` variáveis e  `less mixins` que são usados para gerenciar os estilos .css.
 
-      Essa pasta consiste em arquivos `less` variáveis, arquivos `less` de mixagem, `less` arquivos que definem estilos usando misturas e variáveis. E todos esses arquivos a menos são importados em styles.less.
+      Essa pasta consiste em `less` arquivos de variáveis, `less` arquivos de combinação, `less` arquivos que definem estilos usando misturas e variáveis. E todos esses arquivos a menos são importados em styles.less.
 
    * `css`pasta: Contém os arquivos .css nos quais você define os estilos estáticos a serem usados no tema.
 
@@ -94,7 +95,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
    @button-font-color: #ffffff;
    ```
 
-   Para substituir as `less`variáveis:
+   Para substituir as variáveis `less`:
 
    1. Importar variáveis de formulário adaptável padrão:
 
@@ -109,7 +110,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **Menos arquivos de mixagem:** É possível definir as funções que aceitam variáveis como argumentos. A saída dessas funções são os estilos resultantes. Use essas combinações em estilos diferentes para evitar a repetição de estilos CSS.
+   **Menos arquivos de mixagem:** você pode definir as funções que aceitam variáveis como argumentos. A saída dessas funções são os estilos resultantes. Use essas combinações em estilos diferentes para evitar a repetição de estilos CSS.
 
    Os formulários adaptáveis fornecem misturas OOTB definidas em:
 
@@ -137,7 +138,7 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 
    **Arquivo Styles.less:** Use esse arquivo para incluir todos os arquivos menores (variáveis, mixins, estilos) que você precisa usar na biblioteca do cliente.
 
-   No arquivo de amostra a seguir, a declaração de importação pode ser colocada em qualquer ordem. `styles.less`
+   No arquivo de amostra a seguir `styles.less`, a declaração de importação pode ser colocada em qualquer ordem.
 
    As instruções para importar os seguintes arquivos .less são obrigatórias:
 
@@ -208,11 +209,11 @@ Você cria um modelo **** adaptável e aplica o tema ao modelo. Use esse modelo 
 
 Depois de criar um tema de formulário adaptável, execute as seguintes etapas para usar esse tema em um formulário adaptável:
 
-1. Para incluir o tema criado em [para criar uma seção de tema](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) de formulário adaptável, crie uma página personalizada do tipo `cq:Component`.
+1. Para incluir o tema criado em [para criar uma seção de tema de formulário adaptável](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), crie uma página personalizada do tipo `cq:Component`.
 
    Por exemplo, `/apps/myAfCustomizations/myAfPages/forestPage`
 
-   1. Adicione uma `sling:resourceSuperType` propriedade e defina seu valor como `fd/af/components/page/base`.
+   1. Adicione uma propriedade `sling:resourceSuperType` e defina seu valor como `fd/af/components/page/base`.
 
       ![Instantâneo do repositório CRX](assets/1-2.png)
 
@@ -220,7 +221,7 @@ Depois de criar um tema de formulário adaptável, execute as seguintes etapas p
 
       Em seguida, importe o tema criado em Para criar uma seção adaptativa do tema de formulário deste artigo.
 
-      O trecho de código de amostra a seguir importa o `af.theme.forest` tema.
+      O trecho de código de amostra a seguir importa o tema `af.theme.forest`.
 
       ```jsp
       <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
