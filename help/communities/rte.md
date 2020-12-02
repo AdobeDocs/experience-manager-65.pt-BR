@@ -24,15 +24,15 @@ ht-degree: 3%
 
 Um Editor de Rich Text (RTE) fornece a capacidade de inserir texto com marcação.
 
-Para componentes Comunidades, embora semelhantes ao editor de texto [avançado no ambiente](../../help/sites-authoring/rich-text-editor.md)do autor, isso afeta o texto inserido no ambiente de publicação.
+Para componentes Comunidades, embora semelhante ao [editor de Rich Text no ambiente do autor](../../help/sites-authoring/rich-text-editor.md), afeta o texto inserido no ambiente de publicação.
 
 ![editor de rich text](assets/rich-text-editor.png)
 
-## Enabling Rich Text Editor {#enabling-rich-text-editor}
+## Ativando o Editor de Rich Text {#enabling-rich-text-editor}
 
 Os componentes das comunidades que permitem o conteúdo gerado pelo usuário (UGC) podem ser ativados para permitir o RTE. Dependendo de o componente ter sido adicionado a uma página ou incluído em uma [função](functions.md), o RTE pode ou não ser ativado por padrão.
 
-Se não estiver ativado, basta entrar no modo [de edição do](sites-console.md#authoring-site-content)autor, selecionar o componente para edição e marcar a caixa de seleção `Rich Text Editor` .
+Se não estiver ativado, basta inserir [modo de edição do autor](sites-console.md#authoring-site-content), selecionar o componente para edição e marcar a caixa de seleção `Rich Text Editor`.
 
 O RTE está disponível para os seguintes componentes das Comunidades:
 
@@ -47,9 +47,9 @@ O RTE está disponível para os seguintes componentes das Comunidades:
 
 ## Personalização {#customization}
 
-A personalização do editor de Rich Text é possível, pois a implementação se baseia no [CKEditor](https://www.ckeditor.com/).
+A personalização do editor de Rich Text é possível, pois a implementação se baseia em [CKEditor](https://www.ckeditor.com/).
 
-A configuração atual dos componentes Comunidades está no repositório, localizado no `cq.social.  scf   clientlib`diretório
+A configuração atual dos componentes Comunidades está no `cq.social.  scf   clientlib`, localizado no repositório em
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
