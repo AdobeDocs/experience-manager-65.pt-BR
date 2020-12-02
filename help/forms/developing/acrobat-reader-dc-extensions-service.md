@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# start rápido (SOAP) da API Java do Serviço de extensões do Acrobat Reader DC {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
 Os Start Rápidos a seguir estão disponíveis para o serviço Acrobat Reader DC Extensions.
 
@@ -30,11 +30,11 @@ As operações do AEM Forms podem ser executadas usando a API fortemente tipada 
 
 >[!NOTE]
 >
->Os Start rápidos localizados em Programação com a AEM Forms são baseados no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>Os Start rápidos localizados em Programação com a AEM Forms são baseados no sistema operacional do servidor Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Start rápido (modo SOAP):Aplicar direitos de uso usando a API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-O exemplo de código Java a seguir aplica direitos de uso a um documento PDF chamado *Loan.pdf*. O documento PDF habilitado para direitos é salvo como um arquivo PDF chamado *LoanUsageRights.pdf*. Os seguintes direitos de uso são aplicados a este documento PDF: `enabledComments`, `enabledFormFillIn`e `enabledDigitalSignatures`. (Consulte [Aplicar direitos de uso a Documentos](/help/forms/developing/assigning-usage-rights.md)PDF.)
+O exemplo de código Java a seguir aplica direitos de uso a um documento PDF chamado *Loan.pdf*. O documento PDF habilitado para direitos é salvo como um arquivo PDF chamado *LoanUsageRights.pdf*. Os seguintes direitos de uso são aplicados a este documento PDF: `enabledComments`, `enabledFormFillIn` e `enabledDigitalSignatures`. (Consulte [Aplicar direitos de uso a Documentos PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```java
@@ -146,7 +146,7 @@ O exemplo de código Java a seguir aplica direitos de uso a um documento PDF cha
 
 ## Start rápido (modo SOAP): Remoção de direitos de uso de um documento PDF usando a API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir remove os direitos de uso de um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Remoção de direitos de uso de Documentos](/help/forms/developing/assigning-usage-rights.md)PDF.)
+O exemplo de código Java a seguir remove os direitos de uso de um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Remoção de direitos de uso de Documentos PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
@@ -246,7 +246,7 @@ O exemplo de código Java a seguir remove os direitos de uso de um documento PDF
 
 ## Start rápido (modo SOAP): Recuperando informações de credenciais usando a API Java {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-O exemplo de código Java a seguir recupera informações sobre a credencial usada para aplicar direitos de uso a um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Recuperando Informações](/help/forms/developing/assigning-usage-rights.md)de Credenciais.)
+O exemplo de código Java a seguir recupera informações sobre a credencial usada para aplicar direitos de uso a um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Recuperando Informações de Credenciais](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
