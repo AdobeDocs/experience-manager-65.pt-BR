@@ -12,6 +12,9 @@ discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 translation-type: tm+mt
 source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +63,7 @@ Para alterar o período de relatório de uma página Content Insight:
 
 1. Para alterar a data de término do período de relatório, arraste o círculo exibido no lado direito da área sombreada para a data de término desejada.
 
-#### Alterar a granularidade do período de relatório {#changing-the-granularity-of-the-reporting-period}
+#### Alterar a granularidade do período de relatório  {#changing-the-granularity-of-the-reporting-period}
 
 Altere o intervalo de tempo medido para cada ponto de dados em um relatório. Por exemplo, quando a granularidade de Semana é selecionada, cada ponto de dados no relatório de Exibições representa o número de exibições para uma semana.
 
@@ -74,7 +77,7 @@ A granularidade afeta os relatórios que representam os dados ao longo do tempo,
 
 1. Clique ou toque na granularidade desejada. Assim que selecionado, o relatório é atualizado automaticamente para refletir a granularidade.
 
-### Atribuir tarefas para recomendações de SEO {#assigning-tasks-for-seo-recommendations}
+### Atribuir tarefas para recomendações de SEO  {#assigning-tasks-for-seo-recommendations}
 
 Use o relatório Recomendações de SEO para criar tarefas a fim de melhorar a visibilidade da página aos mecanismos de pesquisa. Para cada recomendação no relatório que não tenha uma marca de verificação, é possível criar uma tarefa a ser atribuída a um usuário para executar o trabalho necessário.
 
@@ -84,7 +87,7 @@ O status da recomendação de SEO indica quando a tarefa foi criada, mas que ain
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Quando criada, a tarefa será exibida na lista de Tarefas do usuário. Para obter informações sobre tarefas, consulte [Trabalhar com tarefas](/help/sites-authoring/task-content.md).
+Quando criada, a tarefa será exibida na lista de Tarefas do usuário. Para obter informações sobre o tarefa, consulte [Trabalhar com o Tarefa](/help/sites-authoring/task-content.md).
 
 Use o procedimento a seguir para criar uma tarefa para uma recomendação de SEO.
 
@@ -94,7 +97,7 @@ Use o procedimento a seguir para criar uma tarefa para uma recomendação de SEO
 
 1. Clique no ícone de triângulo circundado que aparece ao lado do ícone de informações.
 
-   ![chlimage_1-135](assets/chlimage_1-131.png)
+   ![chlimage_1-131](assets/chlimage_1-131.png)
 
 1. Preencha os campos de formulário que parecem e toque em Criar:
 
@@ -104,6 +107,7 @@ Use o procedimento a seguir para criar uma tarefa para uma recomendação de SEO
    * Descrição: uma descrição da atividade necessária para concluir a tarefa. A descrição padrão são as informações que acompanham a recomendação de SEO.
    * Prioridade da tarefa: a prioridade da tarefa.
    * Data de vencimento: a data limite de conclusão da tarefa.
+
    **Observação:** a tarefa criada também inclui o caminho para a página à qual a recomendação de SEO se aplica.
 
 1. Clique ou toque em Concluído para fechar a mensagem Tarefa criada.
