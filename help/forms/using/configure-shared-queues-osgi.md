@@ -23,7 +23,7 @@ Você também pode compartilhar seus itens da Caixa de entrada com outro usuári
 
 ## Pré-requisitos {#pre-requisites}
 
-O usuário conectado deve ser membro do `workflow-users` grupo. O usuário pode compartilhar itens ou solicitar acesso aos itens somente dos usuários em que o usuário conectado tem permissões de leitura ou somente dos usuários que habilitaram o perfil público.
+O usuário conectado deve ser membro do grupo `workflow-users`. O usuário pode compartilhar itens ou solicitar acesso aos itens somente dos usuários em que o usuário conectado tem permissões de leitura ou somente dos usuários que habilitaram o perfil público.
 
 ## Compartilhar um único ou todos os itens da sua caixa de entrada com outro usuário
 
@@ -34,14 +34,14 @@ AEM Caixa de entrada permite que você compartilhe um único ou todos os itens e
 Execute as seguintes etapas para compartilhar todos os itens em uma caixa de entrada com outro usuário:
 
 1. Faça logon na sua instância AEM. Toque no ícone ![Caixa de entrada](assets/bell.svg) e toque em **[!UICONTROL Visualização tudo]**. Uma lista dos itens da caixa de entrada é exibida.
-1. Toque no ícone Seletor ![de](assets/viewlist.svg) Visualização ou Seletor ![de](assets/calendar.svg) Visualização ao lado do botão **[!UICONTROL Criar]** e toque em **[!UICONTROL Configurações]**. A caixa de diálogo de configurações é exibida.
+1. Toque no ícone ![Seletor de Visualizações](assets/viewlist.svg) ou ![Seletor de Visualizações](assets/calendar.svg) ao lado do botão **[!UICONTROL Criar]** e toque em **[!UICONTROL Definições]**. A caixa de diálogo de configurações é exibida.
 1. Abra a guia **[!UICONTROL Compartilhar]** na caixa de diálogo de configurações.
-1. Digite o nome de um usuário na caixa de texto **[!UICONTROL Conceder acesso aos itens]** da Caixa de entrada e toque em **[!UICONTROL Conceder]**. Repita a etapa para adicionar mais usuários. Todos os usuários com acesso aos itens são exibidos na seção **Nome de usuário** .
+1. Digite o nome de um usuário na caixa de texto **[!UICONTROL Conceder acesso aos itens da Caixa de entrada]** e toque em **[!UICONTROL Conceder]**. Repita a etapa para adicionar mais usuários. Todos os usuários com acesso aos seus itens são exibidos na seção **Nome de usuário**.
 1. Toque em **[!UICONTROL Salvar]**.
 
 >[!NOTE]
 >
->(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **[Permitir que o destinatário compartilhe](aem-forms-workflow-step-reference.md)** por meio da caixa de entrada da etapa **Atribuir tarefa** no fluxo de trabalho. Somente os itens com a opção mencionada acima ativada são exibidos para outros usuários.
+>(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **[Permitir que o destinatário compartilhe via Compartilhamento da Caixa de entrada](aem-forms-workflow-step-reference.md)** da etapa **Atribuir tarefa** no fluxo de trabalho. Somente os itens com a opção mencionada acima ativada são exibidos para outros usuários.
 
 ### Compartilhar itens individuais
 
@@ -49,20 +49,20 @@ Execute as seguintes etapas para compartilhar um item da Caixa de entrada com ou
 
 1. Faça logon na sua instância AEM. Toque no ícone ![Caixa de entrada](assets/bell.svg) e toque em **[!UICONTROL Visualização tudo]**. Uma lista dos itens da caixa de entrada é exibida.
 1. Selecione um item e toque em **[!UICONTROL Compartilhar]**. Uma caixa de diálogo é exibida.
-1. Digite o nome de um usuário na caixa de texto Adicionar usuários para compartilhar esse item e toque em **[!UICONTROL Adicionar]**. Repita a etapa para adicionar mais usuários. Todos os usuários com acesso aos itens são exibidos na seção **[!UICONTROL Nome de usuário]** .
+1. Digite o nome de um usuário na caixa de texto Adicionar usuários para compartilhar esse item e toque em **[!UICONTROL Adicionar]**. Repita a etapa para adicionar mais usuários. Todos os usuários com acesso aos seus itens são exibidos na seção **[!UICONTROL Nome de usuário]**.
 1. Toque em **[!UICONTROL Salvar]**.
 
 
 >[!NOTE]
 >
->(Somente para itens de fluxo de trabalho centrados no Forms) Ative **[Permitir que o destinatário compartilhe explicitamente na opção Caixa de entrada](aem-forms-workflow-step-reference.md)** da etapa **Atribuir tarefa** no fluxo de trabalho. Somente os itens com a opção mencionada acima ativada são exibidos para outros usuários.
+>(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **[Permitir que o destinatário compartilhe explicitamente na Caixa de entrada](aem-forms-workflow-step-reference.md)** da etapa **Atribuir tarefa** no fluxo de trabalho. Somente os itens com a opção mencionada acima ativada são exibidos para outros usuários.
 
 ## Solicitar acesso aos itens da Caixa de entrada {#request-access}
 
 Você pode solicitar acesso aos itens da Caixa de entrada de outro usuário. Depois que o acesso for concedido, você poderá visualização, reivindicar e tomar as ações apropriadas em itens compartilhados. Execute as seguintes etapas para solicitar acesso aos itens da Caixa de entrada de outro usuário:
 
-1. Faça logon na sua instância AEM. Toque no ícone Seletor ![de](assets/bell.svg) Visualização e toque em **[!UICONTROL Visualização]**.
-1. Toque no ícone Seletor ![de](assets/viewlist.svg) Visualização ou Seletor ![de](assets/calendar.svg) Visualização ao lado do botão **[!UICONTROL Criar]** e toque em **[!UICONTROL Configurações]**. A caixa de diálogo de configurações é exibida.
+1. Faça logon na sua instância AEM. Toque no ícone ![Seletor de Visualização](assets/bell.svg) e toque em **[!UICONTROL Visualização All]**.
+1. Toque no ícone ![Seletor de Visualizações](assets/viewlist.svg) ou ![Seletor de Visualizações](assets/calendar.svg) ao lado do botão **[!UICONTROL Criar]** e toque em **[!UICONTROL Definições]**. A caixa de diálogo de configurações é exibida.
 1. Digite o nome de um usuário na caixa de texto **[!UICONTROL Solicitar acesso aos itens da Caixa de entrada do usuário]** e toque em **[!UICONTROL Solicitar]**. Uma solicitação é enviada ao usuário e o status da solicitação é exibido em relação ao nome do usuário. Repita a etapa para adicionar mais usuários.
 1. Toque em **[!UICONTROL Salvar]**. A solicitação é enviada como um item Caixa de entrada para os usuários. O usuário pode selecionar o item e tocar em Aprovar ou Rejeitar para conceder ou rejeitar o acesso.
 
@@ -71,9 +71,9 @@ Você pode solicitar acesso aos itens da Caixa de entrada de outro usuário. Dep
 
 Você pode start ao trabalhar em um item compartilhado somente depois de reivindicá-lo. Impede que vários usuários trabalhem em um único item. Execute as seguintes etapas para solicitar um item:
 
-1. Faça logon na sua instância AEM. Toque no ícone Caixa de ![entrada](assets/bell.svg) da caixa de entrada e toque em **[!UICONTROL Visualização tudo]**.
-1. Toque no ícone Somente ![](assets/railleft.svg) conteúdo para abrir o seletor de filtro.
-1. Toque no menu suspenso **[!UICONTROL Selecionar destinatário]** para visualização e selecione os usuários que compartilharam seus itens da Caixa de entrada com você.
+1. Faça logon na sua instância AEM. Toque no ícone Caixa de entrada ![Caixa de entrada](assets/bell.svg) e toque em **[!UICONTROL Visualização tudo]**.
+1. Toque no ícone ![Somente conteúdo](assets/railleft.svg) para abrir o seletor de filtro.
+1. Toque na lista suspensa **[!UICONTROL Selecionar destinatário]** para visualização e selecione os usuários que compartilharam seus itens de Caixa de entrada com você.
 1. Selecione um item e toque em **[!UICONTROL Reivindicação]**. O item é adicionado à sua Caixa de entrada.
 
 ## Liberar itens solicitados {#release-items}
@@ -82,8 +82,8 @@ Você pode trabalhar em um item compartilhado somente depois de reivindicá-lo. 
 
 Execute as seguintes etapas para liberar um item:
 
-1. Faça logon na sua instância AEM. Toque no ícone Caixa de ![entrada](assets/bell.svg) da caixa de entrada e toque em **[!UICONTROL Visualização tudo]**. Uma lista dos itens da caixa de entrada é exibida.
-1. Selecione o item a ser lançado e toque em **[!UICONTROL Cancelar solicitação]**. O item é adicionado de volta ao pool. Outros podem agora reclamar o item.
+1. Faça logon na sua instância AEM. Toque no ícone Caixa de entrada ![Caixa de entrada](assets/bell.svg) e toque em **[!UICONTROL Visualização tudo]**. Uma lista dos itens da caixa de entrada é exibida.
+1. Selecione o item a ser liberado e toque em **[!UICONTROL CancelarReivindicação]**. O item é adicionado de volta ao pool. Outros podem agora reclamar o item.
 
 ## Limitações           {#limitations}
 
