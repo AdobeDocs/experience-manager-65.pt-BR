@@ -31,9 +31,9 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 >
 >A infraestrutura subjacente do recurso de blog é o recurso do journal.
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
-O recurso de blog é composto de dois componentes principais que estão disponíveis ao adicionar a função [](/help/communities/functions.md#blog-function) Blog ou ao adicionar os componentes a uma página no modo de edição do autor.
+O recurso de blog é composto de dois componentes principais que estão disponíveis ao adicionar a [função de blog](/help/communities/functions.md#blog-function) ou ao adicionar os componentes a uma página no modo de edição do autor.
 
 ### Blog {#blog}
 
@@ -61,7 +61,7 @@ O recurso de blog é composto de dois componentes principais que estão disponí
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>consulte Recurso <a href="/help/communities/blog-feature.md">do blog</a></td>
+   <td>consulte <a href="/help/communities/blog-feature.md">Recurso de blog</a></td>
   </tr>
  </tbody>
 </table>
@@ -72,13 +72,13 @@ O recurso de blog é composto de dois componentes principais que estão disponí
 |---|---|
 | [**inclusivo**](/help/communities/scf.md#add-or-include-a-communities-component) | Não |
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| **modelos** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **propriedades** | consulte Recurso [do blog](/help/communities/blog-feature.md) |
+| **propriedades** | consulte [Recurso de blog](/help/communities/blog-feature.md) |
 
 * [Personalizações do cliente](/help/communities/client-customize.md)
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 * [API do blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
@@ -88,29 +88,29 @@ O recurso de blog é composto de dois componentes principais que estão disponí
 
 ### Função do blog {#blog-function}
 
-Uma estrutura de site da comunidade que inclui a função [](/help/communities/functions.md#blog-function) Blog terá configurado `Blog` e `Blog Sidebar` componentes. A função Blog suporta a identificação de um grupo [de usuários membro](/help/communities/users.md#privileged-members-group)privilegiado.
+Uma estrutura de site da comunidade que inclui a [função Blog](/help/communities/functions.md#blog-function) terá os componentes `Blog` e `Blog Sidebar` configurados. A função Blog suporta a identificação de um [grupo de usuários membro privilegiado](/help/communities/users.md#privileged-members-group).
 
 ### Acesso às entradas do blog (UGC) {#accessing-blog-entries-ugc}
 
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
-Consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Desde AEM 6.1 Comunidades, o uso de uma loja [](/help/communities/working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir AEM Comunidades 6.1, o uso de uma [loja comum](/help/communities/working-with-srp.md) para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte :
 
-* [Visão geral](/help/communities/srp.md) do provedor de recursos do armazenamento - introdução e visão geral do uso do repositório.
-* [SRP e UGC Essentials](/help/communities/srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
-* [Acesso ao UGC com SRP](/help/communities/accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração](/help/communities/socialutils.md) de utilitários sociais - mapeamento de métodos de utilitários obsoletos para métodos atuais de utilitários SRP.
+* [Visão geral](/help/communities/srp.md)  do provedor de recursos do armazenamento - introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](/help/communities/srp-and-ugc.md)  - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com diretrizes de codificação do SRP](/help/communities/accessing-ugc-with-srp.md) .
+* [Refatoração](/help/communities/socialutils.md)  do SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
 
 ## Editor principal {#primary-publisher}
 
 Quando a implantação for um farm de publicação, será necessário identificar um editor principal que pesquisará artigos programados para publicação.
 
-Consulte Editor [principal](/help/communities/deploy-communities.md#primary-publisher) para obter mais detalhes.
+Consulte [Editor principal](/help/communities/deploy-communities.md#primary-publisher) para obter mais detalhes.
 
 ## Permitir mídia avançada {#allowing-rich-media}
 
@@ -120,7 +120,7 @@ A plataforma AEM bloqueia links de outros sites para impedir ataques XSS, confor
 
 A partir do AEM 6.2, as modificações anteriormente necessárias para serem feitas manualmente são incluídas no arquivo de configuração padrão do AntiSamy.
 
-A mídia avançada é incorporada em um artigo de blog selecionando o `Embed Media from External Sites` ícone :
+A mídia avançada é incorporada em um artigo de blog selecionando o ícone `Embed Media from External Sites` :
 
 ![media](assets/media-icon.png)
 
