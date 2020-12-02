@@ -145,14 +145,14 @@ os seguintes padrões de pesquisa vão encontrá-la (e qualquer outra imagem cor
 
 * `name:*nmv*`
 * `name:AD*`
-a correspondência de caracteres *não* diferencia maiúsculas e minúsculas.
+a correspondência de caracteres  ** não diferencia maiúsculas e minúsculas.
 
 * `name:ad?nm??is.*`
 você pode usar qualquer número de curingas em um query.
 
 >[!NOTE]
 >
->You can also use [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) search.
+>Você também pode usar a pesquisa [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Exibição de referências {#showing-references}
 
@@ -164,7 +164,7 @@ Para mostrar referências de página diretas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
+1. Selecione **Mostrar referências...** AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -185,9 +185,9 @@ O **Log de auditoria** pode ser acessado na guia **Informações** do sidekick. 
 
 ## Informações da página {#page-information}
 
-The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
+O console Site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), como publicação, modificação, bloqueio, livecopy etc.
 
-## Modos de página   {#page-modes}
+## Modos de página    {#page-modes}
 
 Durante a edição de uma página com a interface de usuário clássica, há vários modos que podem ser acessados com o uso de ícones na parte inferior do sidekick:
 
