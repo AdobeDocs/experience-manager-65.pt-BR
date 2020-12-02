@@ -1,8 +1,8 @@
 ---
-title: Consoles do administrador
-seo-title: Consoles do administrador
-description: Saiba como usar os consoles de administração disponíveis no AEM.
-seo-description: Saiba como usar os consoles de administração disponíveis no AEM.
+title: Admin Console
+seo-title: Admin Console
+description: Saiba como usar os Admin Console disponíveis no AEM.
+seo-description: Saiba como usar os Admin Console disponíveis no AEM.
 uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,15 +12,18 @@ discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 2%
 
 ---
 
 
-# Consoles do administrador{#admin-consoles}
+# Admin Console{#admin-consoles}
 
 Por padrão, a capacidade de alternar para a interface clássica por meio dos consoles admin foi desativada. Portanto, os ícones de pop-up que foram vistos ao passar o mouse sobre certos ícones de console, permitindo o acesso à interface clássica, não são mais exibidos.
 
-Cada console que tem uma versão de interface clássica em `/libs/cq/core/content/nav` pode ser reativado individualmente para que a opção de interface **clássica** apareça novamente sobre o ícone do console quando o mouse for passado.
+Cada console que tem uma versão de interface clássica em `/libs/cq/core/content/nav` pode ser reativado individualmente para que a opção **Interface clássica** volte a aparecer no ícone do console quando o mouse for passado.
 
 Neste exemplo, estamos reativando a interface clássica para o console Sites.
 
@@ -36,7 +39,7 @@ Neste exemplo, estamos reativando a interface clássica para o console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Criar uma sobreposição usando a opção **Sobrepor nó** ; por exemplo:
+1. Crie uma sobreposição usando a opção **Sobrepor nó**; por exemplo:
 
    * **Caminho**: `/apps/cq/core/content/nav/sites`
    * **Local de sobreposição**: `/apps/`
@@ -46,7 +49,7 @@ Neste exemplo, estamos reativando a interface clássica para o console Sites.
 
    `enableDesktopOnly = {Boolean}true`
 
-1. A opção Interface do usuário **** clássica está disponível novamente como opção de entrega no console de administração.
+1. A opção **Interface clássica** está novamente disponível como uma opção de entrega no console de administração.
 
    ![](assets/syui-01-2019-02-27-15-16-55.png)
 
