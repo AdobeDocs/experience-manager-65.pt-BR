@@ -21,7 +21,7 @@ ht-degree: 21%
 
 # Conteúdo associado{#associated-content}
 
-O conteúdo associado fornece a conexão para que os ativos (isto é,) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo. Isso proporciona flexibilidade ao [fornecer uma variedade de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para procurar o ativo apropriado.
+O conteúdo associado fornece a conexão para que os ativos (isto é,) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo. Isso proporciona flexibilidade ao [fornecer uma variedade de ativos a serem acessados ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
 
 ## Adicionar conteúdo associado {#adding-associated-content}
 
@@ -29,7 +29,7 @@ O conteúdo associado fornece a conexão para que os ativos (isto é,) possam se
 >
 >Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
-Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/manage-collections.md#adding-assets-to-a-collection). Assim que isso for feito, você poderá:
+Para fazer a associação, primeiro é necessário [adicionar seus ativos de mídia a uma coleção](/help/assets/manage-collections.md#adding-assets-to-a-collection). Assim que isso for feito, você poderá:
 
 1. Abra o fragmento e selecione **Conteúdo associado** no painel lateral.
 
@@ -50,8 +50,8 @@ Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a
 
 Depois de associar uma coleção, você pode:
 
-* **Remova** a associação.
-* **Adicionar ativos** à coleção.
+* **** Remova a associação.
+* **Adicionar** ativos à coleção.
 * Selecione um ativo para ação adicional.
 * Edite o ativo.
 
