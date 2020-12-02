@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 92%
 
 ---
 
@@ -42,7 +45,7 @@ A qualquer momento, você pode suspender ou restaurar a herança. Além disso, s
 
 O suporte multisite para conteúdo direcionado está disponível imediatamente e permite enviar conteúdo direcionado da página mestra que você gerencia por meio do MSM para uma live copy local, ou permite gerenciar modificações globais e locais desse conteúdo.
 
-You manage this in an **Area**. Áreas separam o conteúdo direcionado (atividades, experiências e ofertas) usado em diferentes sites e fornecem um mecanismo baseado no MSM para criar e gerenciar a herança do conteúdo direcionado junto com a herança do site. Dessa forma, você não precisa recriar conteúdo direcionado em sites herdados, como era exigido no AEM antes da versão 6.2.
+Você gerencia isso em uma **Área**. Áreas separam o conteúdo direcionado (atividades, experiências e ofertas) usado em diferentes sites e fornecem um mecanismo baseado no MSM para criar e gerenciar a herança do conteúdo direcionado junto com a herança do site. Dessa forma, você não precisa recriar conteúdo direcionado em sites herdados, como era exigido no AEM antes da versão 6.2.
 
 Em uma área, apenas as atividades vinculadas a essa área são enviadas para cópias em tempo real. Por padrão, a Área mestra é selecionada. Depois de criar áreas adicionais, você pode vinculá-las a seus sites ou páginas para indicar qual conteúdo direcionado é enviado.
 
@@ -54,11 +57,12 @@ Um site ou uma live copy se vincula a uma área que contém as atividades que pr
 >
 >* Quando você usa implantações ou cópias em tempo real, é necessário usar uma licença do MSM.
 >* Quando você usa a sincronização com o Adobe Target, é necessária uma licença do Adobe Target.
+
 >
 
 
 
-## Casos de uso {#use-cases}
+## Casos de uso  {#use-cases}
 
 Você pode configurar o suporte multisite para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, em [Exemplo: direcionamento de conteúdo com base em região](#example-targeting-content-based-on-geography), você pode ver uma aplicação real do conteúdo de direcionamento em vários sites.
 
@@ -76,7 +80,7 @@ Com o suporte multisite para conteúdo direcionado, você pode, por exemplo, ter
    * O Site A se vincula à Área X
    * O Site B se vincula à Área X
 
-* A distinct set of targeted content *inherited* from another site via MSM - Content can be unidirectionally rolled out from master to live copy. Por exemplo:
+* Um conjunto distinto de conteúdo direcionado *herdado* de outro site via MSM - o conteúdo pode ser distribuído de forma unidirecional de principal para live copy. Por exemplo:
 
    * O Site A se vincula à Área X
    * O Site B se vincula à Área Y (que é uma live copy da Área X)
@@ -87,7 +91,7 @@ Você também pode ter **várias** marcas que são usadas em um site, o que pode
 
 >[!NOTE]
 >
->For a more technical look at this feature, see [How Multisite Management for Targeted Content is Structured](/help/sites-authoring/technical-multisite-targeted.md).
+>Para obter uma visão mais técnica desse recurso, consulte [Como o Gerenciamento de Vários Sites para Conteúdo Direcionado é Estruturado](/help/sites-authoring/technical-multisite-targeted.md).
 
 ## Exemplo: direcionamento de conteúdo com base na região {#example-targeting-content-based-on-geography}
 
@@ -128,7 +132,7 @@ A qualquer momento, é possível suspender a herança ou desconectá-la completa
 
 >[!NOTE]
 >
->For a more technical look at this feature, see [How Multisite Management for Targeted Content is Structured](/help/sites-authoring/technical-multisite-targeted.md).
+>Para obter uma visão mais técnica desse recurso, consulte [Como o Gerenciamento de Vários Sites para Conteúdo Direcionado é Estruturado](/help/sites-authoring/technical-multisite-targeted.md).
 
 ### Criação de uma nova área em comparação à criação de uma nova área como live copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -151,17 +155,17 @@ Para conseguir isso no AEM, você faria o seguinte:
 * O Site C vincula-se à Área herdada, que é uma live copy da Área mestra - Use a opção Criar área como Live Copy, em que você cria uma live copy com base na Área mestra. A Área herdada herda as atividades da área mestra após a implantação.
 * O Site D vincula-se à sua própria Área isolada - Use a opção Criar área, em que você cria uma área totalmente nova, sem atividades ainda definidas. A área isolada não compartilhará atividades com nenhum outro site.
 
-## Criação de novas áreas {#creating-new-areas}
+## Criação de novas áreas  {#creating-new-areas}
 
 Áreas podem abranger atividades e ofertas. Depois de criar uma área em qualquer uma delas (por exemplo, atividades), você também tem a área disponível na outra (por exemplo, ofertas).
 
 >[!NOTE]
 >
->A área padrão, chamada Área mestra, é recolhida por padrão quando você toca ou clica no nome de uma marca **até** criar outra área. Em seguida, quando você selecionar uma marca no console **Atividades** ou **Ofertas**, verá o console **Área.**
+>A área padrão chamada Área mestre é recolhida por padrão ao tocar ou clicar no nome de uma marca **até** criar outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
 Para criar uma nova área:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** or and then to your brand.
+1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
 1. Toque ou clique em **Criar área**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
@@ -180,7 +184,7 @@ Você cria uma área como uma live copy para herdar o conteúdo direcionado entr
 
 Para criar uma área como uma live copy:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then to your brand.
+1. Navegue até **Personalização** > **Atividades** ou **ofertas** e, em seguida, acesse sua marca.
 1. Toque ou clique em **Criar área como Live Copy**.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
@@ -189,7 +193,7 @@ Para criar uma área como uma live copy:
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. No campo **Nome**, insira um nome para a live copy. Por padrão, as subpáginas são incluídas. Exclua-as marcando a caixa de seleção **Excluir subpáginas**.
+1. No campo **Nome**, digite um nome para a live copy. Por padrão, as sub páginas são incluídas; exclua-as selecionando a caixa de seleção **Excluir sub páginas**.
 
    ![chlimage_1-281](assets/chlimage_1-281.png)
 
@@ -217,7 +221,7 @@ Ao vincular, apenas as atividades, experiências e ofertas da área selecionada 
 
 >[!NOTE]
 >
->Pages or sites that reference the same area are using the *same* shared set of activities, experiences, and offers. A edição de uma atividade, experiência ou oferta compartilhada por vários sites afeta todos esses sites.
+>As páginas ou sites que fazem referência à mesma área estão usando o *mesmo* conjunto compartilhado de atividades, experiências e ofertas. A edição de uma atividade, experiência ou oferta compartilhada por vários sites afeta todos esses sites.
 
 Para vincular um site a uma área:
 
@@ -238,7 +242,7 @@ Você pode querer suspender ou desconectar a herança do conteúdo direcionado. 
 
 A suspensão da live copy interrompe temporariamente a herança, mas, no futuro, você poderá restaurar a herança. A desconexão da live copy interrompe permanentemente a herança.
 
-Você suspende ou desconecta a herança do conteúdo direcionado restaurando-o em uma atividade. Se uma página ou site se vincula a uma área que seja uma Live Copy, você poderá exibir o status de herança de uma atividade.
+Você suspende ou desconecta a herança do conteúdo direcionado restaurando-o em uma atividade. Se uma página ou site se vincula a uma área que seja uma Live Copy, você pode visualização um status de herança de atividade.
 
 Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma herança suspensa é marcada em vermelho, e uma atividade criada localmente não tem ícone.
 
@@ -246,11 +250,12 @@ Uma atividade herdada de outro site é marcada em verde ao lado do seu nome. Uma
 >
 >* Apenas é possível suspender ou desconectar cópias em tempo real em uma atividade.
 >* Não é necessário suspender ou desconectar cópias em tempo real para estender uma atividade herdada. Você sempre pode criar **novas** experiências e ofertas locais para essa atividade. Se quiser modificar uma atividade existente, será necessário suspender a herança.
+
 >
 
 
 
-### Suspensão da herança {#suspending-inheritance}
+### Suspensão da herança  {#suspending-inheritance}
 
 Para suspender ou desconectar a herança do conteúdo direcionado em uma atividade:
 
@@ -260,9 +265,10 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
    1. Selecione um elemento da atividade, como o público-alvo. O AEM exibe automaticamente uma caixa de confirmação Suspender Live Copy. (É possível suspender a cópia ao vivo tocando ou clicando em qualquer elemento por todo o processo de Direcionamento.)
    1. Selecione **Suspender Live Copy** no menu suspenso da barra de ferramentas.
+
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Tap or click **Suspend** to suspend the activity. Atividades suspensas são marcadas em vermelho.
+1. Toque ou clique em **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -272,7 +278,7 @@ Para interromper a herança do conteúdo direcionado em uma atividade:
 
 1. Navegue até a página da qual você deseja desconectar a live copy da mestra e toque ou clique em **Direcionar** no menu suspenso de modo.
 1. Se a sua página estiver vinculada a uma área que é uma live copy, você verá o status da herança. Toque ou clique em **Iniciar o direcionamento**.
-1. Selecione **Destacar Live Copy** no menu suspenso da barra de ferramentas. O AEM confirma se você deseja separar a live copy.
+1. Selecione **Desanexar Live Copy** no menu suspenso na barra de ferramentas. O AEM confirma que você deseja desanexar a live copy.
 1. Toque ou clique em **Destacar** para desconectar a live copy da atividade. Depois que ela é desconectada, o menu suspenso de herança deixa de ser exibido. A atividade agora é local.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
@@ -283,21 +289,21 @@ Se você suspendeu a herança do conteúdo direcionado em uma atividade, é poss
 
 Para restaurar a herança do conteúdo direcionado em uma atividade:
 
-1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
+1. Navegue até a página onde deseja restaurar a herança e toque ou clique em **Definição de metas** no menu suspenso de modo.
 1. Toque ou clique em **Iniciar o direcionamento**.
-1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
+1. Selecione **Retomar Live Copy** no menu suspenso da barra de ferramentas.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
 1. Toque ou clique em **Retomar** para confirmar que você deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
 
-## Exclusão de áreas {#deleting-areas}
+## Exclusão de áreas  {#deleting-areas}
 
-Ao excluir uma área, você exclui todas as atividades nessa área. O AEM avisa antes que você possa excluir uma área. Se você excluir uma área à qual um site está vinculado, o mapeamento para essa marca será automaticamente mapeado para a área mestre.
+Ao excluir uma área, você exclui todas as atividades nessa área. O AEM avisa antes que você possa excluir uma área. Se você excluir uma área à qual um site está vinculado, o mapeamento dessa marca será automaticamente mapeado para a área principal.
 
 Para excluir uma área:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then your brand.
+1. Navegue até **Personalização** > **Atividade** ou **Oferta** e, em seguida, sua marca.
 1. Toque ou clique no ícone ao lado da área que você deseja excluir.
 1. Toque ou clique em **Excluir** e confirme que você deseja excluir a área.
 
