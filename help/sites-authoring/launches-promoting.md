@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +35,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 
 >[!CAUTION]
 >
->Um único lançamento não pode ser promovido simultaneamente. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>Um único lançamento não pode ser promovido simultaneamente. Isso significa que duas ações de promoção na mesma inicialização ao mesmo tempo podem resultar em um erro - `Launch could not be promoted` (juntamente com erros de conflito no log).
 
 >[!CAUTION]
 >
@@ -46,6 +49,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 >
 >* [Promover um lançamento aninhado](#promoting-a-nested-launch) quando há mais de um lançamento na estrutura.
 >* [Lançamentos - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter mais detalhes sobre promoção e publicação automática.
+
 >
 
 
@@ -56,7 +60,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 
    * o console **Sites**:
 
-      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). Todas as referências serão exibidas.
+      1. Abra o painel [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e selecione a página de origem necessária usando [modo de seleção](/help/sites-authoring/basic-handling.md) (ou selecione e abra o painel de referências, a ordem não é importante). Todas as referências serão exibidas.
 
       1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
       1. Selecione o lançamento específico para mostrar as ações disponíveis.
@@ -78,6 +82,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
       * **Divulgar as páginas modificadas**
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
+
    Por exemplo, ao selecionar para promover somente as páginas modificadas:
 
    ![launch-pd-06](assets/launches-pd-06.png)
@@ -103,7 +108,7 @@ Ao editar uma página de lançamento, a ação **Promover lançamento** também 
 >
 >Está disponível para [lançamentos aninhados](#promoting-a-nested-launch) e individuais.
 
-## Promover um lançamento aninhado {#promoting-a-nested-launch}
+## Promover um lançamento aninhado  {#promoting-a-nested-launch}
 
 Depois de criar uma inicialização aninhada, é possível promovê-la para qualquer uma das origens, incluindo a origem raiz (produção).
 
@@ -114,7 +119,7 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
 
 1. Insira os detalhes necessários:
 
-   * **Target**
+   * **Público alvo**
 
       * **Destino de promoção** É possível promover para qualquer uma das origens.
 
@@ -125,12 +130,13 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
       * **Divulgar as páginas modificadas**
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. Selecione **Próximo**.
 1. Revise os detalhes da promoção antes que selecionar **Promover**:
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-105](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
@@ -140,7 +146,7 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
-## Processamento de páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
+## Processamento de Páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
 
 Use modelos de fluxo de trabalho para realizar o processamento em massa de páginas de Lançamentos promovidos:
 
