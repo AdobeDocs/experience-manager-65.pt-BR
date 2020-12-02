@@ -32,7 +32,7 @@ Tal poderia servir de avaliação do esforço de desenvolvimento que está envol
 
 ## Como configurar {#how-to-set-up}
 
-O Detector de padrão é lançado separadamente como um [único pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona em qualquer versão de AEM de origem da 6.1 para a 6.5, visando AEM atualização 6.5. Ele pode ser instalado usando o Gerenciador [de pacotes](/help/sites-administering/package-manager.md).
+O Detector de padrão é lançado separadamente como um [um pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) trabalhando em qualquer versão de AEM de origem da versão 6.1 para a 6.5, visando AEM atualização 6.5. Ele pode ser instalado usando o [Gerenciador de pacotes](/help/sites-administering/package-manager.md).
 
 ## Como usar {#how-to-use}
 
@@ -45,14 +45,14 @@ O Detector de padrão é lançado separadamente como um [único pacote](https://
 
 >
 >
-ao mesmo tempo, é recomendável executá-lo **em ambientes** de preparo que estejam o mais próximos possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
+ao mesmo tempo, é recomendável executá-lo **em ambientes de preparo** que estejam o mais próximos possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
 
 Você pode usar vários métodos para verificar a saída do Detector de padrão:
 
 * **Através do console Inventário Felix:**
 
 1. Vá para o Console da Web AEM navegando até *https://serveraddress:serverport/system/console/configMgr*
-1. Selecionar **status - Detector** de padrão, conforme mostrado na imagem abaixo:
+1. Selecione **Status - Pattern Detector** como mostrado na imagem abaixo:
 
    ![screenshot-2018-2-5detector de padrões](assets/screenshot-2018-2-5pattern-detector.png)
 
@@ -61,7 +61,7 @@ Você pode usar vários métodos para verificar a saída do Detector de padrão:
 
 Ambos os métodos estão detalhados abaixo:
 
-## Interface reativa {#reactive-interface}
+## Interface Reativa {#reactive-interface}
 
 A interface reativa permite o processamento do relatório de violação assim que uma suspeita é detectada.
 
@@ -86,7 +86,7 @@ A saída será parecida com esta:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-O progresso pode ser filtrado usando o `grep` comando:
+O progresso pode ser filtrado usando o comando `grep`:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -102,7 +102,7 @@ O que resulta na seguinte saída:
 
 ## Manuseio da interface JSON {#handling-the-json-interface}
 
-Da mesma forma, o JSON pode ser processado usando a ferramenta [](https://stedolan.github.io/jq/) jq assim que for publicado.
+Da mesma forma, o JSON pode ser processado usando a ferramenta [jq](https://stedolan.github.io/jq/) assim que for publicado.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -212,9 +212,9 @@ Com a saída:
 
 >[!NOTE]
 >
->A abordagem recomendada é salvar toda a saída do ondulado no arquivo e, em seguida, processá-la por meio `jq` ou `grep` para filtrar o tipo de informação.
+>A abordagem recomendada é salvar toda a saída do ondulado no arquivo e processá-la por `jq` ou `grep` para filtrar o tipo de informação.
 
-## Âmbito de detecção {#scope}
+## Escopo de detecção {#scope}
 
 Atualmente, o Detector de padrão permite verificar:
 
