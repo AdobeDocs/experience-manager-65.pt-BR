@@ -36,21 +36,21 @@ O recurso de fórum QnA (perguntas e respostas) fornece uma área para que os me
 A documentação descreve:
 
 * Adicionar o recurso de fórum QnA a um site AEM.
-* Configurações do `QnA`componente.
+* Configurações para o componente `QnA`.
 
 ## Adicionar um fórum de P&amp;R a uma página {#adding-a-q-a-forum-to-a-page}
 
-Para adicionar um `QnA` componente a uma página no modo de autor, use o navegador de componentes para localizá-lo `Communities / QnA` e arrastá-lo para o local em uma página onde o fórum QnA deve aparecer.
+Para adicionar um componente `QnA` a uma página no modo de autor, use o navegador de componentes para localizar `Communities / QnA` e arraste-o para o lugar em uma página onde o fórum QnA deve aparecer.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do lado do cliente](/help/communities/qna-essentials.md#essentials-for-client-side) necessárias forem incluídas, é assim que o `QnA` componente aparece:
+Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/qna-essentials.md#essentials-for-client-side) forem incluídas, é assim que o componente `QnA` aparece:
 
 ![qna-component](assets/qna-component.png)
 
-### Configuração de QnA {#configuring-qna}
+### Configurando o QnA {#configuring-qna}
 
-Selecione o componente inserido a ser acessado e selecione o `QnA` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `QnA` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configure](assets/configure-new.png)
 
@@ -58,7 +58,7 @@ Selecione o componente inserido a ser acessado e selecione o `QnA` `Configure` �
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **Configurações** , especifique as configurações para tópicos (perguntas) e respostas (respostas):
+Na guia **Configurações**, especifique as configurações para tópicos (perguntas) e respostas (respostas):
 
 * **Permitir miniatura de anexo**
 
@@ -94,7 +94,7 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
 
 * **Permitir marcação**
 
-   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia Campo **de** tag). O padrão está desmarcado.
+   Se marcada, permita que os membros adicionem etiquetas à sua postagem (consulte a guia **Campo de tag**). O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
@@ -102,7 +102,7 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
 
 * **Permitir monitoramento**
 
-   Se marcada, inclua o seguinte recurso para postagens do fórum, que permite que os membros sejam [notificados](/help/communities/notifications.md) sobre novas postagens. O padrão está desmarcado.
+   Se marcada, inclua o seguinte recurso para postagens do fórum, que permite que os membros sejam [notificados](/help/communities/notifications.md) de novas postagens. O padrão está desmarcado.
 
 * **Permitir fixação**
 
@@ -110,15 +110,15 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
 
 * **Permitir assinaturas de email**
 
-   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](/help/communities/subscriptions.md)). Requer que Permitir seguidores seja marcado e o [email seja configurado](/help/communities/email.md). O padrão está desmarcado.
+   Se marcada, permita que os membros sejam notificados de novas postagens por email ([subscrição](/help/communities/subscriptions.md)). Exige que a opção Permitir seguidores seja marcada e [e-mail configurado](/help/communities/email.md). O padrão está desmarcado.
 
 * **Tamanho máximo do arquivo**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+   Relevante somente se `Allow File Uploads` estiver marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
 * **Tipos de arquivos permitidos**
 
-   Relevante apenas se `Allow File Uploads` for verificada. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que** **todos os tipos de arquivos são permitidos.
+   Relevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivos com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, o upload dos não especificados não será permitido. O padrão não é especificado, de modo que** **todos os tipos de arquivos são permitidos.
 
 * **Tamanho máximo do arquivo de imagem a ser anexado**
 
@@ -149,11 +149,11 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
    Se marcada, a primeira resposta mostrada é uma resposta selecionada. O padrão está desmarcado.
 * **Exibir selos**
 
-   Se marcada, exiba [crachás](/help/communities/implementing-scoring.md) ganhados e atribuídos com a entrada de blog de um membro. O padrão está desmarcado.
+   Se marcada, exiba os [emblemas](/help/communities/implementing-scoring.md) obtidos e atribuídos com a entrada de blog de um membro. O padrão está desmarcado.
 
 * **Ativar conteúdo em destaque**
 
-   se marcada, a ideia pode ser identificada como conteúdo [em](/help/communities/featured.md)destaque. O padrão está desmarcado.
+   se marcada, a ideia pode ser identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
 * **Ativar a menção**
 
@@ -169,7 +169,7 @@ Na guia **Configurações** , especifique as configurações para tópicos (perg
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia Moderação **do** usuário, especifique como os tópicos publicados (perguntas) e as respostas (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Na guia **Moderação do usuário**, especifique como os tópicos publicados (perguntas) e as respostas (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
 * **Negar respostas**
 
@@ -179,7 +179,8 @@ Na guia Moderação **do** usuário, especifique como os tópicos publicados (pe
 
    Se marcada, os moderadores de membros confiáveis podem fechar uma pergunta (tópico) para outras edições e respostas e também reabrir uma pergunta. O padrão está desmarcado.
 
-* **Mover tópicos** Se marcada, permita que os moderadores do lado da publicação movam perguntas. O padrão está desmarcado.
+* **Mover**
+tópicosSe marcada, permita que os moderadores do lado da publicação movam perguntas. O padrão está desmarcado.
 
 * **Sinalizar postagens**
 
@@ -203,19 +204,19 @@ Na guia Moderação **do** usuário, especifique como os tópicos publicados (pe
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Na guia Campo **de** tag , as tags que podem ser aplicadas, se permitidas na guia **Configurações** , são limitadas de acordo com as namespaces escolhidas.
+Na guia **Campo de tag**, as tags que podem ser aplicadas, se permitidas na guia **Settings**, são limitadas de acordo com as namespaces escolhidas.
 
 * **Espaços de nomes permitidos**
 
-   Relevante se `Allow Tagging` estiver marcado na guia **Configurações** . As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
+   Relevante se `Allow Tagging` estiver marcado na guia **Settings**. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista do namespace inclui &quot;Tags padrão&quot; (a namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todas as namespaces são permitidas.
 
 * **Limite sugerido**
 
    Insira o número de tags a serem exibidas como uma sugestão para o membro postando no fórum. Um valor de **-**1 significa sem limites. O padrão é 0.
 
-#### Guia Configurações de classificação {#sort-settings-tab}
+#### guia Configurações de classificação {#sort-settings-tab}
 
-Na guia **Classificar configurações** , especifique como os comentários publicados são classificados quando exibidos.
+Na guia **Classificar configurações**, especifique como os comentários publicados são classificados quando exibidos.
 
 * **Ordenar por**
 
@@ -227,17 +228,17 @@ Na guia **Classificar configurações** , especifique como os comentários publi
 
 * **Selecionar as opções de tempo para a classificação do Analytics**
 
-   Solte para selecionar um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
+   Solte para selecionar um de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
-### Como identificar respostas {#identifying-answers}
+### Identificando respostas {#identifying-answers}
 
-Uma resposta pode ser marcada como uma resposta correta ou útil usando o `Select Answer` botão. Quando uma pergunta é marcada como Respondida, outra resposta não pode ser selecionada até que a primeira seja desmarcada usando o `Unmark Chosen Answer` botão.
+Uma resposta pode ser marcada como uma resposta correta ou útil usando o botão `Select Answer`. Quando uma pergunta é marcada como Respondida, outra resposta não pode ser selecionada até que a primeira seja desmarcada usando o botão `Unmark Chosen Answer`.
 
-Depois de selecionada como uma resposta viável, ela pode ser desmarcada usando o `Unmark Chosen Answer` botão.
+Depois de selecionada como uma resposta viável, ela pode ser desmarcada usando o botão `Unmark Chosen Answer`.
 
-Depois que uma resposta é selecionada como resposta viável, uma indicação de que a pergunta foi `Answered` exibida ao lado do tópico da pergunta na página principal de QnA.
+Depois que uma resposta é selecionada como resposta viável, uma indicação de que a pergunta foi `Answered` é exibida ao lado do tópico da pergunta na página principal do QnA.
 
 #### Moderadores e administradores {#moderators-and-administrators}
 
@@ -260,8 +261,8 @@ Os visitantes do site que não estão conectados só podem ler perguntas e respo
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [do QnA Essentials](/help/communities/qna-essentials.md) para desenvolvedores.
+Mais informações podem ser encontradas na página [QnA Essentials](/help/communities/qna-essentials.md) para desenvolvedores.
 
-Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo](/help/communities/tag-ugc.md)gerado pelo usuário.
+Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
