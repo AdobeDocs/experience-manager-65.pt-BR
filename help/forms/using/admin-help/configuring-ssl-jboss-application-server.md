@@ -26,29 +26,29 @@ Você pode executar keytool usando um único comando que inclui todas as informa
 
 Neste procedimento:
 
-* `[appserver root]` é o diretório inicial do servidor de aplicativos que executa formulários AEM.
+* `[appserver root]` é o diretório inicial do servidor de aplicativos que executa AEM formulários.
 * `[type]` é um nome de pasta que varia, dependendo do tipo de instalação executada.
 
 ## Criar uma credencial SSL {#create-an-ssl-credential}
 
 1. Em um prompt de comando, navegue até *[JAVA HOME]*/bin e digite o seguinte comando para criar a credencial e o keystore:
 
-   `keytool -genkey -dname "CN=`*Nome *do host Nome`, OU=`*do* grupo Nome `, O=`*da *Empresa Nome`,L=`*da* cidade Nome `, S=`*do *estado`, C=`Código do`-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`*país&quot;key_passwordkeystorename *`.keystore`
+   `keytool -genkey -dname "CN=`*Host* `, OU=`*NameGroup* `, O=`*NameEmpresa* `,L=`*NameCity* `, S=`** `, C=`NameStateCountry Code&quot;  `-alias "AEMForms Cert"` `-keyalg RSA -keypass`*key_* `-keystore`*passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
    >Substitua `[JAVA_HOME]` pelo diretório onde o JDK está instalado e substitua o texto em itálico por valores que correspondam ao seu ambiente. Nome do host é o nome de domínio totalmente qualificado do servidor de aplicativos.
 
-1. Digite a senha `keystore_password` quando solicitado. A senha para o armazenamento de chaves e a chave deve ser idêntica.
+1. Digite `keystore_password` quando solicitado a fornecer uma senha. A senha para o armazenamento de chaves e a chave deve ser idêntica.
 
    >[!NOTE]
    >
-   >A `keystore_password` *digitada nesta etapa pode ser a mesma senha (key_password) que você digitou na etapa 1 ou pode ser diferente.*
+   >O `keystore_password` *inserido nesta etapa pode ser a mesma senha (key_password) que você digitou na etapa 1, ou pode ser diferente.*
 
-1. Copie o *keystorename*.keystore para o `[appserver root]/server/[type]/conf` diretório digitando um dos seguintes comandos:
+1. Copie o *keystorename*.keystore para o diretório `[appserver root]/server/[type]/conf` digitando um dos seguintes comandos:
 
    * (Windows Single Server) `copy` `keystorename.keystore[appserver root]\standalone\configuration`
-   * Cópia (Cluster do Windows Server) `keystorename.keystore[appserver root]\domain\configuration`
+   * (Cluster do Windows Server) copiar `keystorename.keystore[appserver root]\domain\configuration`
    * (Servidor único Linux) `cp keystorename.keystore [appserver root]/standalone/configuration`
    * (Cluster do servidor Linux) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
 
@@ -59,7 +59,7 @@ Neste procedimento:
    * (Cluster do Servidor) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/domain/configuration/keystorename.keystore`
 
 1. Digite *keystore_password* quando solicitado a fornecer uma senha.
-1. Copie o arquivo AEMForms_cert.cer para o diretório raiz *[\conf]do *appserver digitando o seguinte comando:
+1. Copie o arquivo AEMForms_cert.cer para o diretório *[appserver root] \conf* digitando o seguinte comando:
 
    * (Windows Single Server) `copy AEMForms_cert.cer [appserver root]\standalone\configuration`
    * (Cluster do Windows Server) `copy AEMForms_cert.cer [appserver root]\domain\configuration`
@@ -78,21 +78,21 @@ Neste procedimento:
 
 1. Importe o certificado digitando o seguinte comando:
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_* `.cer -keystore`*certJAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Digite `changeit` como a senha. Esta senha é a senha padrão para uma instalação Java e pode ter sido alterada pelo administrador do sistema.
 1. Quando solicitado para `Trust this certificate? [no]`:, digite `yes`. A confirmação &quot;Certificado adicionado ao keystore&quot; é exibida.
 1. Se você estiver se conectando por SSL do Workbench, instale o certificado no computador do Workbench.
 1. Em um editor de texto, abra os seguintes arquivos para edição:
 
-   * Servidor único - `[appserver root]`/independente/configuration/lc_&lt;dbname/turnkey>.xml
+   * Servidor único - `[appserver root]`/standalone/configuration/lc_&lt;dbname/turnkey>.xml
 
    * Cluster do servidor - `[appserver root]`/domain/configuration/host.xml
 
    * Cluster do servidor - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
 1. 
-   * **Para um único servidor,** no arquivo lc_&lt;dbaname/tunkey>.xml, adicione o seguinte após a seção &lt;security-realms>:
+   * **Para um único servidor,** no arquivo lc_&lt;dbaname>.xml, adicione o seguinte após a  &lt;security-realms> seção:
 
    ```xml
    <security-realm name="SSLRealm">
@@ -104,7 +104,7 @@ Neste procedimento:
    </security-realm>
    ```
 
-   Localize a `<server>` seção presente depois do seguinte código:
+   Localize a seção `<server>` presente depois do seguinte código:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
@@ -114,7 +114,7 @@ Neste procedimento:
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
-   * **Para o cluster de servidores,** na raiz [\domain\configuration\host.xml do]appserver em todos os nós, adicione o seguinte após a seção &lt;security-realms>:
+   * **Para o cluster de servidores,** na raiz [\domain\configuration\host.xml do ]appserver em todos os nós, adicione o seguinte após a  &lt;security-realms> seção:
 
    ```xml
    <security-realm name="SSLRealm">
@@ -126,7 +126,7 @@ Neste procedimento:
    </security-realm>
    ```
 
-   No nó primário do Cluster do Servidor, na raiz [\domain\configuration\domain_&lt;dbname>.xml do]appserver, localize a seção &lt;server> presente após o seguinte código:
+   No nó primário do Cluster do Servidor, na seção [appserver root]\domain\configuration\domain_&lt;dbname>.xml, localize a seção &lt;server> presente após o seguinte código:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
@@ -136,7 +136,7 @@ Neste procedimento:
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
-1. Altere o valor do `keystoreFile` atributo e o `keystorePass` atributo para a senha do armazenamento de chaves que você especificou ao criar o armazenamento de chaves.
+1. Altere o valor do atributo `keystoreFile` e do atributo `keystorePass` para a senha do armazenamento de chaves que você especificou ao criar o armazenamento de chaves.
 1. Reinicie o servidor de aplicativos:
 
    * Para instalações chave na mão:
@@ -146,7 +146,7 @@ Neste procedimento:
       * Selecione Ação > Parar.
       * Aguarde até que o status do serviço seja exibido como interrompido.
       * Selecione Ação > Start.
-   * Para instalações JBoss pré-configuradas ou configuradas manualmente da Adobe:
+   * Para instalações JBoss pré-configuradas ou configuradas manualmente para Adobe:
 
       * Em um prompt de comando, navegue até *`[appserver root]`*/bin.
       * Pare o servidor inserindo o seguinte comando:
@@ -167,9 +167,9 @@ Neste procedimento:
 
 ## Solicitar uma credencial de uma CA {#request-a-credential-from-a-ca}
 
-1. Em um prompt de comando, navegue até *[JAVA HOME]*/bin e digite o seguinte comando para criar o keystore e a tecla:
+1. Em um prompt de comando, navegue até *[JAVA HOME]*/bin e digite o seguinte comando para criar o armazenamento de chaves e a chave:
 
-   `keytool -genkey -dname "CN=`*Nome *do host Nome`, OU=`*do* grupo Nome `, O=`*da *Empresa Nome`, L=`*da* cidade Nome `, S=`*do *estado`, C=`*do host Código* do `-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`*país&quot; -País_chave senhakeystorename *`.keystore`
+   `keytool -genkey -dname "CN=`*Host* `, OU=`*NameGroup* `, O=`*NameEmpresa* `, L=`*NameCity* `, S=`** `, C=`*NameStateCountry Code*&quot;  `-alias "AEMForms Cert"` `-keyalg RSA -keypass`-*key_* `-keystore`*passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
@@ -177,11 +177,11 @@ Neste procedimento:
 
 1. Digite o seguinte comando para gerar uma solicitação de certificado para enviar à autoridade de certificação:
 
-   `keytool -certreq -alias` &quot;AEMForms Cert&quot; `-keystore`*keystorename *`.keystore -file`*AEMFormscertRequest.csr*
+   `keytool -certreq -alias` &quot;AEMForms Cert&quot;  `-keystore`** `.keystore -file`*keystorenameAEMFormscertRequest.csr*
 
 1. Quando sua solicitação de um arquivo de certificado for atendida, conclua o procedimento seguinte.
 
-## Usar uma credencial obtida de uma CA para habilitar o SSL {#use-a-credential-obtained-from-a-ca-to-enable-ssl}
+## Use uma credencial obtida de uma CA para habilitar o SSL {#use-a-credential-obtained-from-a-ca-to-enable-ssl}
 
 1. Em um prompt de comando, navegue até *`[JAVA HOME]`*/bin e digite o seguinte comando para importar o certificado raiz da CA com a qual o CSR foi assinado:
 
@@ -193,9 +193,9 @@ Neste procedimento:
    >
    >Substitua *`[JAVA_HOME]`pelo diretório onde o JDK está instalado e substitua o texto em itálico por valores que correspondam ao seu ambiente.*
 
-1. Em um prompt de comando, navegue até *`[JAVA HOME]`*/bin e digite o seguinte comando para importar a credencial para o keystore:
+1. Em um prompt de comando, navegue até *`[JAVA HOME]`*/bin e digite o seguinte comando para importar a credencial para o armazenamento de chaves:
 
-   `keytool -import -trustcacerts -file`*CACertificateName *`.crt -keystore`*keystorename* `.keystore`
+   `keytool -import -trustcacerts -file`** `.crt -keystore`*CACertificateNamestorename* `.keystore`
 
    >[!NOTE]
    >
