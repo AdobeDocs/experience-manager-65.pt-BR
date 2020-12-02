@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +48,7 @@ Fluxos de trabalho geralmente incluem etapas que exigem que uma pessoa realize u
 
 ### Notificações de ações do fluxo de trabalho atribuídas {#notifications-of-assigned-workflow-actions}
 
-Quando você recebe um item de trabalho (por exemplo, **Aprovar conteúdo**), vários alertas e/ou notificações são exibidos:
+Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteúdo**), vários alertas e/ou notificações são exibidos:
 
 * A coluna **Status** do console Sites indica quando uma página está em um fluxo de trabalho:
 
@@ -68,7 +71,7 @@ Depois de realizar a ação indicada, você pode concluir o item de trabalho, pe
 
 1. Clique em **OK** para confirmar a ação.
 
-### Delegação de uma etapa do participante {#delegating-a-participant-step}
+### Delegação de uma etapa do participante  {#delegating-a-participant-step}
 
 Use o procedimento a seguir para delegar um item de trabalho.
 
@@ -79,7 +82,7 @@ Use o procedimento a seguir para delegar um item de trabalho.
 
 1. Clique em **OK** para confirmar a ação.
 
-### Retroceder em uma etapa do participante {#performing-step-back-on-a-participant-step}
+### Retroceder em uma etapa do participante  {#performing-step-back-on-a-participant-step}
 
 Use o procedimento a seguir para retroceder.
 
