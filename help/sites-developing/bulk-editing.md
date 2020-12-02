@@ -18,9 +18,9 @@ ht-degree: 7%
 ---
 
 
-# Configuring your Page for Bulk Editing of Page Properties {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configuração da página para edição em massa das propriedades da página {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[A edição em massa das propriedades](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) da página permite que você edite as propriedades de várias páginas de uma só vez.
+[A edição em massa das ](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) propriedades da página permite que você edite as propriedades de várias páginas de uma só vez.
 
 Devido à possibilidade de valores diferentes, as propriedades da página não estão habilitadas para edição em massa como padrão. Eles devem ser explicitamente permitidos (habilitados). Ao definir as propriedades da página que estarão disponíveis para a edição em massa, é necessário considerar algumas implicações, como:
 
@@ -43,9 +43,9 @@ Devido à possibilidade de valores diferentes, as propriedades da página não e
 
 >[!NOTE]
 >
->A edição em massa também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/metadata.md) para obter as informações completas. Você pode personalizar os campos no editor de Metadados em massa para Ativos usando o editor [de](/help/assets/metadata-schemas.md)Schemas.
+>A edição em massa também está disponível para os Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/metadata.md) para obter as informações completas. Você pode personalizar os campos no editor de Metadados em massa para Ativos usando o [editor de Schemas](/help/assets/metadata-schemas.md).
 
-## Ativação de um campo {#enabling-a-field}
+## Habilitando um campo {#enabling-a-field}
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Devido à possibilidade de valores diferentes, as propriedades da página não e
 
 
 
-Os campos são ativados no componente de página (*não* no modelo):
+Os campos estão ativados no componente de página (*e não* no modelo):
 
 1. Usando o CRXDE Lite (ou um método equivalente), abra o componente de página.
 
@@ -70,16 +70,16 @@ Os campos são ativados no componente de página (*não* no modelo):
 
    >[!NOTE]
    >
-   >Este exemplo presume que os Componentes principais foram instalados na instância, o que é o caso se a instância estiver sendo executada com conteúdo de amostra We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) for more information.
+   >Este exemplo presume que os Componentes principais foram instalados na instância, o que é o caso se a instância estiver sendo executada com conteúdo de amostra We.Retail. Consulte a documentação [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) para obter mais informações.
 
-1. Navegue até o campo desejado dentro da `cq:dialog` definição.
+1. Navegue até o campo desejado na definição `cq:dialog`.
 1. Defina a seguinte propriedade no nó de campo:
 
    * **Nome**: `allowBulkEdit`
    * **Tipo**: `Boolean`
-   * **Valor**: `true`
+   * **Valor**:  `true`
 
-   Por exemplo, para o componente [de](/help/sites-authoring/default-components-foundation.md)base de página padrão:
+   Por exemplo, para a página padrão [componente de fundação](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 
@@ -89,13 +89,13 @@ Os campos são ativados no componente de página (*não* no modelo):
 
    >[!CAUTION]
    >
-   >Você não ***deve*** alterar nada no `/libs` caminho.
+   >Você ***deve*** não alterar nada no caminho `/libs`.
    >
-   >Isso ocorre porque o conteúdo do é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos). `/libs`
+   >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos).
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >    1. Recriar o item desejado (isto é, como ele existe em `/libs`) em `/apps`
+   >    1. Recrie o item necessário (isto é, como ele existe em `/libs`) em `/apps`
    >    1. Faça quaisquer alterações em `/apps`
 
 
