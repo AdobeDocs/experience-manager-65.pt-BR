@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 O diagrama a seguir mostra como o suporte multisite para conteúdo direcionado está estruturado.
 
-Areas appear underneath **/content/campaigns/&lt;brand>** and by default each brand has a master area, which is created automatically. Cada área contém seu próprio conjunto de atividades, experiências e ofertas.
+As áreas aparecem abaixo de **/content/campanha/&lt;brand>** e, por padrão, cada marca tem uma área principal, que é criada automaticamente. Cada área contém seu próprio conjunto de atividades, experiências e ofertas.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
