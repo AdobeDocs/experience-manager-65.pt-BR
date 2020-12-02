@@ -1,8 +1,8 @@
 ---
-title: Integração de componentes do espaço de trabalho do AEM Forms em aplicativos da Web
-seo-title: Integração de componentes do espaço de trabalho do AEM Forms em aplicativos da Web
-description: Como reutilizar os componentes do espaço de trabalho do AEM Forms em seus próprios aplicativos da Web para aproveitar a funcionalidade e fornecer integração total.
-seo-description: Como reutilizar os componentes do espaço de trabalho do AEM Forms em seus próprios aplicativos da Web para aproveitar a funcionalidade e fornecer integração total.
+title: Integração de componentes de espaço de trabalho AEM Forms em aplicativos da Web
+seo-title: Integração de componentes de espaço de trabalho AEM Forms em aplicativos da Web
+description: Como reutilizar os componentes do espaço de trabalho da AEM Forms em seus próprios aplicativos da Web para aproveitar a funcionalidade e fornecer integração total.
+seo-description: Como reutilizar os componentes do espaço de trabalho da AEM Forms em seus próprios aplicativos da Web para aproveitar a funcionalidade e fornecer integração total.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Integração de componentes do espaço de trabalho do AEM Forms em aplicativos da Web {#integrating-aem-forms-workspace-components-in-web-applications}
+# Integração de componentes do espaço de trabalho AEM Forms em aplicativos da Web {#integrating-aem-forms-workspace-components-in-web-applications}
 
-Você pode usar [componentes](/help/forms/using/description-reusable-components.md) de espaço de trabalho do AEM Forms em seu próprio aplicativo da Web. A seguinte implementação de exemplo usa componentes de um pacote dev de espaço de trabalho AEM Forms instalado em uma instância do CRX™ para criar um aplicativo da Web. Personalize a solução abaixo para atender às suas necessidades específicas. A implementação de amostra reutiliza `UserInfo`, `FilterList`e `TaskList`componentes dentro de um portal da Web.
+Você pode usar a área de trabalho do AEM Forms [componentes](/help/forms/using/description-reusable-components.md) em seu próprio aplicativo da Web. A seguinte implementação de exemplo usa componentes de um pacote dev de espaço de trabalho AEM Forms instalado em uma instância do CRX™ para criar um aplicativo da Web. Personalize a solução abaixo para atender às suas necessidades específicas. A implementação de amostra reutiliza os componentes `UserInfo`, `FilterList` e `TaskList`dentro de um portal da Web.
 
-1. Efetue login no ambiente CRXDE Lite em `https://'[server]:[port]'/lc/crx/de/`. Verifique se você tem um pacote dev de espaço de trabalho AEM Forms instalado.
+1. Efetue login no ambiente CRXDE Lite em `https://'[server]:[port]'/lc/crx/de/`. Verifique se você tem um pacote de desenvolvimento de espaço de trabalho AEM Forms instalado.
 1. Crie um caminho `/apps/sampleApplication/wscomponents`.
 1. Copie css, imagens, js/libs, js/runtime e js/registry.js
 
@@ -43,8 +43,8 @@ Você pode usar [componentes](/help/forms/using/description-reusable-components.
        });
    ```
 
-1. Crie um nó em /content por nome `sampleApplication` e digite `nt:unstructured`. Nas propriedades desse nó, adicione `sling:resourceType` o tipo String e o valor `sampleApplication`. Na Lista de Controles de acesso desse nó, adicione uma entrada para `PERM_WORKSPACE_USER` permitir privilégios de jcr:read. Além disso, na Lista Controle de acesso de `/apps/sampleApplication` adicionar uma entrada para `PERM_WORKSPACE_USER` permitir privilégios de jcr:read.
-1. Em caminhos de `/apps/sampleApplication/wscomponents/js/registry.js` atualização de `/lc/libs/ws/` para `/lc/apps/sampleApplication/wscomponents/` valores de modelo.
+1. Crie um nó em /content pelo nome `sampleApplication` e digite `nt:unstructured`. Nas propriedades desse nó, adicione `sling:resourceType` do tipo String e valor `sampleApplication`. Na Lista do Controle de acesso desse nó, adicione uma entrada para `PERM_WORKSPACE_USER` permitindo privilégios de jcr:read. Além disso, na Lista do Controle de acesso de `/apps/sampleApplication`, adicione uma entrada para `PERM_WORKSPACE_USER` permitindo privilégios de jcr:read.
+1. Em `/apps/sampleApplication/wscomponents/js/registry.js`, atualize os caminhos de `/lc/libs/ws/` para `/lc/apps/sampleApplication/wscomponents/` para valores de modelo.
 1. No arquivo JSP do home page do portal em `/apps/sampleApplication/GET.jsp`, adicione o seguinte código para incluir os componentes necessários dentro do portal.
 
    ```jsp
@@ -54,11 +54,11 @@ Você pode usar [componentes](/help/forms/using/description-reusable-components.
    <div class="taskListView gcomponent" data-name="tasklist"></div>
    ```
 
-   Inclua também os arquivos CSS necessários para os componentes do espaço de trabalho dos AEM Forms.
+   Inclua também os arquivos CSS necessários para os componentes do espaço de trabalho AEM Forms.
 
    >[!NOTE]
    >
-   >Cada componente é adicionado à tag do componente (tendo um componente de classe) durante a renderização. Certifique-se de que seu home page contenha essas tags. Consulte o `html.jsp` arquivo da área de trabalho do AEM Forms para saber mais sobre essas tags de controle base.
+   >Cada componente é adicionado à tag do componente (tendo um componente de classe) durante a renderização. Certifique-se de que seu home page contenha essas tags. Consulte o arquivo `html.jsp` da área de trabalho do AEM Forms para saber mais sobre essas tags de controle base.
 
 1. Para personalizar os componentes, você pode estender as visualizações existentes para o componente necessário da seguinte forma:
 
@@ -82,7 +82,7 @@ Você pode usar [componentes](/help/forms/using/description-reusable-components.
    });
    ```
 
-1. Modifique o CSS do portal para configurar o layout, o posicionamento e o estilo dos componentes necessários no portal. Por exemplo, você gostaria de manter a cor do plano de fundo como preta para este portal para visualização bem do componente userInfo. Você pode fazer isso alterando a cor do plano de fundo da `/apps/sampleApplication/wscomponents/css/style.css` seguinte maneira:
+1. Modifique o CSS do portal para configurar o layout, o posicionamento e o estilo dos componentes necessários no portal. Por exemplo, você gostaria de manter a cor do plano de fundo como preta para este portal para visualização bem do componente userInfo. Você pode fazer isso alterando a cor do plano de fundo em `/apps/sampleApplication/wscomponents/css/style.css` da seguinte maneira:
 
    ```css
    body {
