@@ -113,7 +113,7 @@ Essa exibição apresenta itens de acordo com sua posição no calendário e a e
 
 ![wf-91](assets/wf-91.png)
 
-### Inbox - Settings {#inbox-view-settings}
+### Caixa de entrada - Configurações {#inbox-view-settings}
 
 Para ambas as exibições (Lista e Calendário), você pode definir configurações:
 
@@ -136,35 +136,35 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
    ![wf-83](assets/inbox-settings.png)
 
-### Caixa de entrada - Controle de administrador {#inbox-admin-control}
+### Caixa de entrada - Controle admin {#inbox-admin-control}
 
 A opção Controle de administrador permite que os administradores:
 
-* Personalizar as colunas da Caixa de entrada do AEM
+* Personalizar as colunas AEM Caixa de entrada
 
 * Personalizar o texto e o logotipo do cabeçalho
 
 * Controlar a exibição de links de navegação disponíveis no cabeçalho
 
-A opção Controle de administrador está visível somente para os membros do `administrators` grupo ou do `workflow-administrators` grupo.
+A opção Controle de administrador está visível somente para os membros do grupo `administrators` ou `workflow-administrators`.
 
-* **Personalização** da coluna: Personalize uma Caixa de entrada do AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
-   * **Adicionar Coluna**: Selecione uma coluna para adicionar na Caixa de entrada do AEM.
-   * **Editar coluna**: Passe o mouse sobre o título da coluna e toque no ícone de ![edição](assets/edit.svg) para inserir o nome de exibição da coluna.
-   * **Excluir coluna**: Toque no ícone ![Excluir](assets/delete_updated.svg) para excluir a coluna da Caixa de entrada do AEM.
-   * **Mover coluna**: Arraste o ícone ![mover](assets/move_updated.svg) para mover uma coluna para uma nova posição na Caixa de entrada do AEM.
+* **Personalização** da coluna: Personalize uma Caixa de entrada AEM para alterar o título padrão de uma coluna, reordene a posição de uma coluna e exiba colunas adicionais com base nos dados de um fluxo de trabalho.
+   * **Adicionar Coluna**: Selecione uma coluna para adicionar AEM Caixa de entrada.
+   * **Editar coluna**: Passe o mouse sobre o título da coluna e toque em  ![](assets/edit.svg) editicon para inserir o nome de exibição da coluna.
+   * **Excluir coluna**: Toque no ícone de  ![](assets/delete_updated.svg) exclusão para excluir a coluna AEM Caixa de entrada.
+   * **Mover coluna**: Arraste o  ![](assets/move_updated.svg) ícone de movimento para mover uma coluna para uma nova posição AEM Caixa de entrada.
 
    ![controle admin](assets/admin-control-column-customize.png)
 
 * **Personalização da marca**
 
-   * **Personalizar o texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto de **Adobe Experience Manager** padrão.
+   * **Personalizar texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto padrão do  **Adobe Experience** Manager.
 
    * **Personalizar logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a no campo.
 
 * **Navegação do usuário**
-   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
-* **Salvar:** Toque/clique nesta opção para salvar as configurações.
+   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto da Adobe Experience Manager.
+* **Salvar:** Toque/clique nessa opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
 
@@ -236,13 +236,13 @@ Na caixa de entrada, você pode criar tarefas:
 
    * **Avançado**
 
-      * **Nome**: this will be used to form the URL; if blank it will be based on the **Title**.
+      * **Nome**: isso será usado para formar o URL; se estiver em branco, será baseado no **Title**.
 
    ![wf-87](assets/wf-87.png)
 
 1. Selecione **Enviar**.
 
-## Criação de um projeto   {#creating-a-project}
+## Criação de um projeto    {#creating-a-project}
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
