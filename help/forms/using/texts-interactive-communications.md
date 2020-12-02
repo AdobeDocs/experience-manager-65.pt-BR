@@ -30,9 +30,9 @@ O fragmento de documento de texto no Interative Communication oferece suporte ao
 * **Variáveis**: No fragmento do documento de texto, as variáveis não estão vinculadas a uma fonte de dados de backend. O agente preenche/seleciona valores em variáveis ou vincula as variáveis a fontes de dados ao preparar a Comunicação interativa para enviá-la a um processo de publicação.
 * **Repetir**: Você pode ter informações dinâmicas em sua Comunicação interativa, como transações em um demonstrativo de cartão de crédito, cujo número de ocorrências pode continuar alterando com cada Comunicação interativa gerada. Usando repetir, você pode formatar e estruturar essas informações dinâmicas. Para obter mais informações, consulte [Condição embutida e repita](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
-## Create text {#createtext}
+## Criar texto {#createtext}
 
-1. Selecione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL do]** Documento.
+1. Selecione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de Documento]**.
 1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Texto]**.
 1. Especifique as seguintes informações:
 
@@ -40,11 +40,11 @@ O fragmento de documento de texto no Interative Communication oferece suporte ao
    * **[!UICONTROL Nome]**: O nome exclusivo do texto, em uma pasta. Não podem existir dois fragmentos de documento (texto, condição ou lista) em qualquer estado com o mesmo nome em uma pasta. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
 
    * **[!UICONTROL Descrição]**: Digite uma descrição do texto.
-   * **[!UICONTROL Modelo]** de dados de formulário: Como opção, selecione o botão de opção Modelo de dados de formulário para criar o texto com base em um modelo de dados de formulário. Quando o botão de opção Modelo de dados de formulário é selecionado, o campo Modelo **[!UICONTROL de dados de]** formulário é exibido. Procure e selecione um modelo de dados de formulário. Ao criar texto e condição para uma Comunicação interativa, certifique-se de usar o mesmo modelo de dados que pretende usar na Comunicação interativa. Para obter mais informações sobre o Modelo de dados de formulário, consulte Integração [de](/help/forms/using/data-integration.md)dados.
+   * **[!UICONTROL Modelo]** de dados de formulário: Como opção, selecione o botão de opção Modelo de dados de formulário para criar o texto com base em um modelo de dados de formulário. Quando você seleciona o botão de opção Modelo de dados de formulário, o campo **[!UICONTROL Modelo de dados de formulário]** é exibido. Procure e selecione um modelo de dados de formulário. Ao criar texto e condição para uma Comunicação interativa, certifique-se de usar o mesmo modelo de dados que pretende usar na Comunicação interativa. Para obter mais informações sobre o Modelo de dados de formulário, consulte [Integração de dados](/help/forms/using/data-integration.md).
 
    * **[!UICONTROL Tags]**: Como opção, para criar uma tag personalizada insira um valor no campo de texto e pressione Enter. Quando você salva esse texto, as tags recém-adicionadas são criadas.
 
-1. Toque em **[!UICONTROL Avançar]**.
+1. Toque em **[!UICONTROL Next]**.
 
    A página Criar texto é exibida. Se você optou por criar um texto baseado em modelo de dados de formulário, as propriedades do modelo de dados de formulário aparecerão no painel esquerdo.
 
@@ -75,27 +75,27 @@ O fragmento de documento de texto no Interative Communication oferece suporte ao
 
 É possível editar um fragmento de documento de texto existente usando as seguintes etapas. Você também pode optar por editar um fragmento de documento de texto a partir de um editor de Comunicação interativa.
 
-1. Selecione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL do]** Documento.
+1. Selecione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de Documento]**.
 1. Navegue até um fragmento de documento de texto e selecione-o.
 1. Toque em **[!UICONTROL Editar]**.
-1. Faça as alterações necessárias. Para obter mais informações sobre opções em texto, consulte [Criar texto](#createtext).
-1. Toque em **[!UICONTROL Salvar]** e, em seguida, toque em **[!UICONTROL Fechar]**.
+1. Faça as alterações necessárias. Para obter mais informações sobre opções no texto, consulte [Criar texto](#createtext).
+1. Toque em **[!UICONTROL Salvar]** e toque em **[!UICONTROL Fechar]**.
 
-## Personalização de um fragmento de documento de texto usando propriedades de modelo de dados de formulário {#formdatamodel}
+## Personalização de um fragmento de documento de texto usando as propriedades do modelo de dados de formulário {#formdatamodel}
 
-É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo as propriedades do modelo de dados de formulário no texto, é possível buscar e preencher dados específicos do recipient da fonte de dados associada enquanto visualiza uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
+É possível personalizar fragmentos de documento de texto inserindo as propriedades do modelo de dados de formulário. Inserindo as propriedades do modelo de dados de formulário no texto, é possível buscar e preencher dados específicos do recipient da fonte de dados associada enquanto visualiza uma Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte [Integração de dados da AEM Forms](/help/forms/using/data-integration.md).
 
 Se você tiver especificado um modelo de dados de formulário ao criar um texto, as propriedades no modelo de dados de formulário aparecerão no painel esquerdo do editor de texto. O modelo de dados de formulário especificado deve ser o mesmo para o fragmento do documento de texto, bem como para a Comunicação interativa que o inclui.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Para inserir uma propriedade de modelo de dados de formulário no texto, posicione o cursor no local em que deseja inserir a propriedade, selecione a propriedade **[A]** no painel esquerdo tocando nela e toque em **[!UICONTROL [B]Adicionar selecionados]**. Você também pode apenas tocar com o duplo na propriedade para inseri-la na posição do cursor **[C]** . As propriedades do modelo de dados de formulário são realçadas em uma cor de plano de fundo acastanhada.
+* Para inserir uma propriedade de modelo de dados de formulário no texto, posicione o cursor no local em que deseja inserir a propriedade, selecione a propriedade **[A]** no painel esquerdo tocando nela e toque em **[!UICONTROL [B] Adicionar selecionados]**. Você também pode tocar no duplo da propriedade para inseri-la na posição do cursor **[C]**. As propriedades do modelo de dados de formulário são realçadas em uma cor de plano de fundo acastanhada.
 
 Como alternativa, você pode pesquisar e adicionar a propriedade de modelo de dados de formulário usando o símbolo @ no editor de texto. Posicione o cursor no local em que deseja inserir a propriedade. Digite @ seguido pela string de pesquisa. A operação de pesquisa é executada em todas as propriedades e variáveis do modelo de dados de formulário disponíveis no fragmento do documento. As propriedades ou variáveis que contêm a string de pesquisa são recuperadas e exibidas como uma lista suspensa. Navegue pelos resultados da pesquisa e clique na propriedade que deseja inserir no local do cursor. Pressione Esc para ocultar os resultados da pesquisa.
 
-* Para permitir que os agentes editem o valor de uma propriedade do modelo de dados de formulário na interface do usuário do agente enquanto [Preparar e enviar a Comunicação](/help/forms/using/prepare-send-interactive-communication.md) interativa usando a interface do agente, toque no ícone de bloqueio **[D]** para essa propriedade e verifique se ela está em um estado desbloqueado. O estado padrão da propriedade está bloqueado e um agente não pode editar a propriedade na interface do agente.
+* Para permitir que os agentes editem o valor de uma propriedade do modelo de dados de formulário na interface do usuário do agente enquanto [Prepare e envie Interative Communication](/help/forms/using/prepare-send-interactive-communication.md) usando a interface do agente, toque no ícone de bloqueio **[D]** dessa propriedade e verifique se ela está em um estado desbloqueado. O estado padrão da propriedade está bloqueado e um agente não pode editar a propriedade na interface do agente.
 
-Também é possível usar propriedades de modelo de dados de formulário para criar regras para exibir ou ocultar partes do conteúdo. Para obter mais informações, consulte [Criar regras no texto](#rules).
+Também é possível usar propriedades de modelo de dados de formulário para criar regras para exibir ou ocultar partes do conteúdo. Para obter mais informações, consulte [Criar regras em text](#rules).
 
 ## Criação e uso de variáveis em um fragmento de documento de texto {#variables}
 
@@ -107,7 +107,7 @@ Você pode usar variáveis em vez de propriedades de modelo de dados de formulá
 * O fragmento de documento de texto não tem um modelo de dados de formulário no momento da criação. É possível inserir variáveis e, posteriormente, vinculá-las às propriedades do modelo de dados de formulário no momento da criação da Comunicação interativa.
 * É necessário vincular e recuperar o texto de um fragmento de documento de texto. Somente esses fragmentos de documento de texto podem ser vinculados a variáveis não devem ter variáveis que não tenham variáveis.
 
-Ao criar ou editar um fragmento de documento de texto, você pode criar e inserir variáveis. As variáveis que você cria são exibidas na guia Dados da interface do usuário do agente. O agente especifica os valores para as variáveis ao [preparar e enviar comunicação interativa usando a interface do usuário](/help/forms/using/prepare-send-interactive-communication.md)do agente.
+Ao criar ou editar um fragmento de documento de texto, você pode criar e inserir variáveis. As variáveis que você cria são exibidas na guia Dados da interface do usuário do agente. O agente especifica os valores das variáveis enquanto [Preparar e enviar comunicação interativa usando a interface do usuário do agente](/help/forms/using/prepare-send-interactive-communication.md).
 
 ### Criar variáveis {#createvariables}
 
@@ -126,7 +126,7 @@ Ao criar ou editar um fragmento de documento de texto, você pode criar e inseri
    * **[!UICONTROL Nome]** : Nome da variável.
    * **[!UICONTROL Descrição]** : Opcionalmente, insira uma descrição sobre a variável.
    * **[!UICONTROL Tipo]** : Selecione um tipo de variável: String, Number, Boolean ou Date.
-   * **[!UICONTROL Permitir apenas]** valores específicos: Para variáveis String e Number, é possível garantir que o agente escolha a partir de um conjunto específico de valores para um espaço reservado na interface do agente. Para especificar o conjunto de valores, selecione essa opção e especifique valores separados por vírgulas que são permitidos no campo **[!UICONTROL Valores]** .
+   * **[!UICONTROL Permitir somente]**  valores específicos: Para variáveis String e Number, é possível garantir que o agente escolha a partir de um conjunto específico de valores para um espaço reservado na interface do agente. Para especificar o conjunto de valores, selecione essa opção e especifique valores separados por vírgulas que são permitidos no campo **[!UICONTROL Valores]**.
 
 1. Toque em **[!UICONTROL Criar]**.
 
@@ -144,7 +144,7 @@ Ao criar ou editar um fragmento de documento de texto, você pode criar e inseri
 
 ## Criar regras no texto {#rules}
 
-Usando o editor de regras em um texto, é possível criar regras para exibir ou ocultar strings de texto ou partes de conteúdo com base em condições **** predefinidas. Essas condições podem ser construídas com base em:
+Usando o editor de regras em um texto, você pode criar regras para exibir ou ocultar strings de texto ou partes de conteúdo com base em **condições predefinidas**. Essas condições podem ser construídas com base em:
 
 * Strings
 * Números
@@ -168,7 +168,7 @@ Usando o editor de regras em um texto, é possível criar regras para exibir ou 
 
    Selecione a opção apropriada a ser avaliada.
 
-   ![editora](assets/ruleeditor.png) de regras ![editorfdm](assets/ruleeditorfdm.png)
+   ![](assets/ruleeditor.png) ![ruleeditorruleeditorfdm](assets/ruleeditorfdm.png)
 
    >[!NOTE]
    >
@@ -222,7 +222,7 @@ Para realçar\enfatizar partes de texto em um fragmento de documento editável, 
 
 ![textbackground Colorido-1](assets/textbackgroundcolorapplied-1.png)
 
-Você pode tocar diretamente em uma cor básica `**[A]**` presente na paleta Cores básicas ou tocar em **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
+Você pode tocar diretamente em uma cor básica `**[A]**` presente na paleta Cores básicas ou tocar em **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher a sombra apropriada da cor.
 
 Opcionalmente, você também pode ir para a guia Avançado para selecionar a Matiz, a Luminosidade e a Saturação apropriadas `**[C]**` para criar a cor precisa e, em seguida, tocar em Selecionar `**[D]**` para aplicar a cor para realçar o texto.
 
@@ -254,7 +254,7 @@ Se necessário, insira caracteres especiais no fragmento do documento. Por exemp
 
 ![specialcharacter-2](assets/specialcharacters-2.png)
 
-O editor de texto tem suporte incorporado para 210 caracteres especiais. O administrador pode [adicionar suporte para caracteres especiais mais/personalizados por personalização](/help/forms/using/custom-special-characters.md).
+O editor de texto tem suporte incorporado para 210 caracteres especiais. O administrador pode [adicionar suporte para caracteres especiais mais/personalizados ao personalizar](/help/forms/using/custom-special-characters.md).
 
 ## Como pesquisar e substituir texto {#searching}
 
@@ -262,10 +262,10 @@ Ao trabalhar com fragmentos de documento de texto que contêm uma grande quantid
 
 O recurso Localizar e substituir permite que você procure (e substitua) qualquer string de texto em um fragmento de documento de texto. O recurso também inclui uma pesquisa de expressão regular avançada.
 
-1. Abra um fragmento de documento de texto para [edição](#edittext).
+1. Abra um fragmento de documento de texto para [editar](#edittext).
 1. Toque em **[!UICONTROL Localizar e substituir]**.
 
-1. Digite o texto a ser pesquisado na caixa de texto **[!UICONTROL Localizar]** e o novo texto (texto substituto) na caixa de texto **[!UICONTROL Substituir]** e toque em **[!UICONTROL Substituir]**.
+1. Digite o texto a ser pesquisado na caixa de texto **[!UICONTROL Localizar]** e o novo texto (texto de substituição) na caixa de texto **[!UICONTROL Substituir]** e toque em **[!UICONTROL Substituir]**.
 
 1. Se o texto pesquisado for encontrado, ele será substituído pelo texto substituto.
 
@@ -274,5 +274,5 @@ O recurso Localizar e substituir permite que você procure (e substitua) qualque
 
    Você também pode tocar em Substituir tudo para substituir todas as correspondências de uma só vez.
 
-   Localizar e substituir também inclui uma pesquisa regular avançada de expressões. Para usar o regex em sua pesquisa, selecione **[!UICONTROL Reg ex]** e toque em **[!UICONTROL Localizar]** ou **[!UICONTROL Substituir]**.
+   Localizar e substituir também inclui uma pesquisa regular avançada de expressões. Para usar o regex em sua pesquisa, selecione **[!UICONTROL Reg ex]** e toque **[!UICONTROL Localizar]** ou **[!UICONTROL Substituir]**.
 
