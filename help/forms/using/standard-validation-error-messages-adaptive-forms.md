@@ -58,21 +58,21 @@ Em que:
 * `originCode` contém o código de erro retornado pelo serviço externo
 * `originMessage` contém os dados de erro brutos retornados pelo serviço externo
 
-## Configurar envio de formulário adaptável para adicionar manipuladores personalizados {#configure-adaptive-form-submission}
+## Configure o envio de formulário adaptável para adicionar manipuladores personalizados {#configure-adaptive-form-submission}
 
 Se a mensagem de erro de validação do servidor não for exibida no formato padrão, você poderá ativar o envio assíncrono e adicionar um manipulador de erros personalizado no envio do formulário adaptável para converter a mensagem em um formato padrão.
 
-### Configurar envio de formulário adaptável assíncrono {#configure-asynchronous-adaptive-form-submission}
+### Configurar envio assíncrono de formulário adaptável {#configure-asynchronous-adaptive-form-submission}
 
 Antes de adicionar o manipulador personalizado, é necessário configurar o formulário adaptável para envio assíncrono. Execute as seguintes etapas:
 
-1. No modo de criação de formulário adaptável, selecione o objeto Container de formulário e toque em Propriedades ![de formulário](assets/configure_icon.png) adaptável para abrir suas propriedades.
-1. Na seção Propriedades de **[!UICONTROL envio]** , ative **[!UICONTROL Usar envio]** assíncrono.
+1. No modo de criação de formulário adaptável, selecione o objeto Container de formulário e toque em ![propriedades de formulário adaptáveis](assets/configure_icon.png) para abrir suas propriedades.
+1. Na seção de propriedades **[!UICONTROL Submission]**, ative **[!UICONTROL Utilizar submissão assíncrona]**.
 1. Selecione **[!UICONTROL Revalidar no servidor]** para validar os valores de campo de entrada no servidor antes do envio.
 1. Selecione a Ação Enviar:
 
-   * Selecione **[!UICONTROL Enviar usando o Modelo]** de dados de formulário e selecione o modelo de dados apropriado se estiver usando o modelo [de dados de](work-with-form-data-model.md) formulário com base no serviço Web RESTful como fonte de dados.
-   * Selecione **[!UICONTROL Enviar para ponto de extremidade]** REST e especifique o URL/caminho **[!UICONTROL de]** redirecionamento se você estiver usando os serviços Web RESTful como a fonte de dados.
+   * Selecione **[!UICONTROL Enviar usando o Modelo de Dados de Formulário]** e selecione o modelo de dados apropriado, se estiver usando o serviço Web RESTful baseado [no modelo de dados de formulário](work-with-form-data-model.md) como a fonte de dados.
+   * Selecione **[!UICONTROL Enviar para o ponto de extremidade REST]** e especifique o **[!UICONTROL Redirecionar URL/Caminho]**, se estiver usando os serviços Web RESTful como fonte de dados.
 
    ![propriedades adaptáveis de envio de formulário](assets/af_submission_properties.png)
 
@@ -80,14 +80,14 @@ Antes de adicionar o manipulador personalizado, é necessário configurar o form
 
 ### Adicionar manipulador de erros personalizado no envio de formulário adaptável {#add-custom-error-handler-af-submission}
 
-O AEM Forms fornece controladores de erros e sucesso prontos para uso para envios de formulário. Os manipuladores são funções do lado do cliente que são executadas com base na resposta do servidor. Quando um formulário é submetido, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função.
+A AEM Forms fornece manipuladores de erros e sucesso prontos para uso para envios de formulário. Os manipuladores são funções do lado do cliente que são executadas com base na resposta do servidor. Quando um formulário é submetido, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função.
 
 Execute as seguintes etapas para adicionar o manipulador de erros personalizado no envio do formulário adaptável:
 
 1. Abra o formulário adaptável no modo de criação, selecione qualquer objeto de formulário e toque em <!--![Rule Editor](assets/af_edit_rules.png)--> para abrir o editor de regras.
-1. Selecione **[!UICONTROL Formulário]** na árvore Objetos de formulário e toque em **[!UICONTROL Criar]**.
+1. Selecione **[!UICONTROL Formulário]** na árvore de objetos de formulário e toque em **[!UICONTROL Criar]**.
 1. Selecione **[!UICONTROL Erro no envio]** na lista suspensa Evento.
-1. Grave uma regra para converter a estrutura de erro personalizada para a estrutura de erro padrão e toque em **[!UICONTROL Concluído]** para salvar a regra.
+1. Grave uma regra para converter a estrutura de erro personalizada para a estrutura de erro padrão e toque em **[!UICONTROL Done]** para salvar a regra.
 
 A seguir está um exemplo de código para converter uma estrutura de erro personalizada para a estrutura de erro padrão:
 
@@ -129,23 +129,23 @@ if (data) {
 }
 ```
 
-O `var som_map` lista a expressão SOM dos campos de formulário adaptáveis que você deseja transformar no formato padrão. Você pode visualização a expressão SOM de qualquer campo em um formulário adaptável tocando no campo e selecionando Expressão **[!UICONTROL SOM de]** Visualização.
+O `var som_map` lista a expressão SOM dos campos de formulário adaptáveis que você deseja transformar no formato padrão. Você pode visualização a expressão SOM de qualquer campo em um formulário adaptável tocando no campo e selecionando **[!UICONTROL Expressão SOM da Visualização]**.
 
-Usando esse manipulador de erros personalizado, o formulário adaptável converte os campos listados em `var som_map` para o formato de mensagem de erro padrão. Como resultado, as mensagens de erro de validação são exibidas no nível do campo no formulário adaptável.
+Usando esse manipulador de erros personalizado, o formulário adaptativo converte os campos listados em `var som_map` para o formato de mensagem de erro padrão. Como resultado, as mensagens de erro de validação são exibidas no nível do campo no formulário adaptável.
 
 ## Adicionar manipulador personalizado usando a ação Chamar serviço
 
-Execute as seguintes etapas para adicionar o manipulador de erros para converter uma estrutura de erro personalizada na estrutura de erro padrão usando a ação Invocar serviço do Editor de [regras](rule-editor.md) :
+Execute as seguintes etapas para adicionar o manipulador de erros para converter uma estrutura de erro personalizada na estrutura de erro padrão usando a ação Chamar serviço [do Editor de regras](rule-editor.md):
 
-1. Abra o formulário adaptável no modo de criação, selecione qualquer objeto de formulário e toque em Editor ![de](assets/rule_editor_icon.png) regras para abrir o editor de regras.
+1. Abra o formulário adaptável no modo de criação, selecione qualquer objeto de formulário e toque em ![Editor de regras](assets/rule_editor_icon.png) para abrir o editor de regras.
 1. Toque em **[!UICONTROL Criar]**.
-1. Crie uma condição na seção **[!UICONTROL Quando]** da regra. Por exemplo,[WhenName do campo] é alterado. A seleção **[!UICONTROL é alterada]** na lista suspensa **[!UICONTROL Selecionar estado]** para obter essa condição.
-1. Na seção **[!UICONTROL Então]** , selecione **[!UICONTROL Chamar serviço]** na lista suspensa **[!UICONTROL Selecionar ação]** .
-1. Selecione um serviço de Postagem e seus vínculos de dados correspondentes na seção **[!UICONTROL Entrada]** . Por exemplo, se você quiser validar os campos **Nome**, **ID** e **Status** no formulário adaptável, selecione um serviço de Post (pet) e selecione pet.name, pet.id e pet.status na seção **[!UICONTROL Input]** .
+1. Crie uma condição na seção **[!UICONTROL When]** da regra. Por exemplo, Quando[Nome do campo] é alterado. Selecione **[!UICONTROL é alterado]** na lista suspensa **[!UICONTROL Selecionar Estado]** para obter esta condição.
+1. Na seção **[!UICONTROL Em seguida]**, selecione **[!UICONTROL Chamar serviço]** na lista suspensa **[!UICONTROL Selecionar ação]**.
+1. Selecione um serviço Post e seus vínculos de dados correspondentes na seção **[!UICONTROL Input]**. Por exemplo, se você deseja validar os campos **Nome**, **ID** e **Status** no formulário adaptável, selecione um serviço Post (pet) e selecione pet.name, pet.id e pet.status na seção **[!UICONTROL Input]**.
 
-Como resultado dessa regra, os valores inseridos para os campos **Nome**, **ID** e **Status** são validados, assim que o campo definido na etapa 2 é alterado e você sai do campo do formulário.
+Como resultado dessa regra, os valores inseridos para os campos **Name**, **ID** e **Status** são validados, assim que o campo definido na etapa 2 é alterado e você sai do campo no formulário.
 
-1. Selecione Editor **[!UICONTROL de]** código na lista suspensa de seleção de modo.
+1. Selecione **[!UICONTROL Editor de código]** na lista suspensa de seleção de modo.
 1. Toque em **[!UICONTROL Editar código]**.
 1. Exclua a seguinte linha do código existente:
 
@@ -153,7 +153,7 @@ Como resultado dessa regra, os valores inseridos para os campos **Nome**, **ID**
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
    ```
 
-1. Grave uma regra para converter a estrutura de erro personalizada para a estrutura de erro padrão e toque em **[!UICONTROL Concluído]** para salvar a regra.
+1. Grave uma regra para converter a estrutura de erro personalizada para a estrutura de erro padrão e toque em **[!UICONTROL Done]** para salvar a regra.
 Por exemplo, adicione o seguinte código de amostra no final para converter uma estrutura de erro personalizada para a estrutura de erro padrão:
 
    ```javascript
@@ -198,7 +198,7 @@ Por exemplo, adicione o seguinte código de amostra no final para converter uma 
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   O `var som_map` lista a expressão SOM dos campos de formulário adaptáveis que você deseja transformar no formato padrão. Você pode visualização a expressão SOM de qualquer campo em um formulário adaptável tocando no campo e selecionando **[!UICONTROL Visualização]** SOM no menu **[!UICONTROL Mais opções]** (...).
+   O `var som_map` lista a expressão SOM dos campos de formulário adaptáveis que você deseja transformar no formato padrão. Você pode visualização a expressão SOM de qualquer campo em um formulário adaptável tocando no campo e selecionando **[!UICONTROL Expressão SOM Visualização]** no menu **[!UICONTROL Mais opções]** (...).
 
    Certifique-se de copiar a seguinte linha do código de amostra para o manipulador de erros personalizado:
 
@@ -208,4 +208,4 @@ Por exemplo, adicione o seguinte código de amostra no final para converter uma 
 
    A API executeOperation inclui os parâmetros `null` e `errorHandler` com base no novo manipulador de erros personalizado.
 
-   Usando esse manipulador de erros personalizado, o formulário adaptável converte os campos listados em `var som_map` para o formato de mensagem de erro padrão. Como resultado, as mensagens de erro de validação são exibidas no nível do campo no formulário adaptável.
+   Usando esse manipulador de erros personalizado, o formulário adaptativo converte os campos listados em `var som_map` para o formato de mensagem de erro padrão. Como resultado, as mensagens de erro de validação são exibidas no nível do campo no formulário adaptável.
