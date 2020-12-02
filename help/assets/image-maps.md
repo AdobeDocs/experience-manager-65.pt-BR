@@ -15,29 +15,29 @@ ht-degree: 0%
 
 Os mapas de imagem permitem adicionar uma ou mais áreas hipervinculadas que funcionam como outros hiperlinks.
 
-1. Execute um dos procedimentos a seguir para abrir o Editor **[!UICONTROL de imagens]** no local:
+1. Execute um dos procedimentos a seguir para abrir **[!UICONTROL Editor de Imagens no Local]**:
 
-   * Usando Ações rápidas, clique em **[!UICONTROL Editar]** que aparece em um ativo na visualização **[!UICONTROL Cartão]** . Na visualização da Lista, selecione o ativo e clique na opção **[!UICONTROL Editar]** na barra de ferramentas.
+   * Usando Ações rápidas, clique em **[!UICONTROL Editar]** que aparece em um ativo na visualização **[!UICONTROL Cartão]**. Na visualização da Lista, selecione o ativo e clique na opção **[!UICONTROL Editar]** na barra de ferramentas.
 
       >[!NOTE]
       >
-      >As Ações rápidas não estão disponíveis na visualização da **[!UICONTROL Lista]** .
+      >As Ações rápidas não estão disponíveis na visualização **[!UICONTROL Lista]**.
 
-   * Na **[!UICONTROL caixa Cartão]** ou visualização de **[!UICONTROL Lista]** , selecione o ativo e clique em **[!UICONTROL Editar]** na barra de ferramentas.
-   * Clique em **[!UICONTROL Editar]** na página do ativo.
+   * Na visualização **[!UICONTROL Cartão]** ou **[!UICONTROL Lista]**, selecione o ativo e clique em **[!UICONTROL Editar]** na barra de ferramentas.
+   * Clique em **[!UICONTROL Editar]** na página de ativos.
 
       ![opção de edição](assets/do-not-localize/edit_icon.png)
 
-1. Para inserir um mapa de imagem, clique em **[!UICONTROL Iniciar mapa]** de ![imagem da barra de ferramentas](assets/do-not-localize/image-map-icon.png) .
+1. Para inserir um mapa de imagem, clique em **[!UICONTROL Iniciar mapa]** ![mapa de imagem](assets/do-not-localize/image-map-icon.png) na barra de ferramentas.
 1. Selecione a forma do mapa de imagem. O ponto de acesso da forma selecionada é colocado na imagem.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Clique no ponto de acesso e insira o URL e o texto Alt. Na lista do **[!UICONTROL Público alvo]** , especifique onde deseja que o mapa de imagem seja exibido, por exemplo, a mesma guia, uma nova guia ou um iFrame. Por exemplo, insira `https://www.adobe.com` como o URL, `Adobe website` como o texto alternativo, e especifique **[!UICONTROL Nova guia]** na lista do **[!UICONTROL Público alvo]** para que o mapa de imagem seja aberto em uma nova guia.
+1. Clique no ponto de acesso e insira o URL e o texto Alt. Na lista **[!UICONTROL Público alvo]**, especifique onde deseja que o mapa de imagem seja exibido, por exemplo, a mesma guia, uma nova guia ou um iFrame. Por exemplo, digite `https://www.adobe.com` como o URL, `Adobe website` como o texto alternativo e especifique **[!UICONTROL Nova guia]** na lista **[!UICONTROL Público alvo]** para que o mapa de imagem seja aberto em uma nova guia.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Clique em **[!UICONTROL Confirmar]** e, em seguida, clique em **[!UICONTROL Concluir]** ![selecione a seleção concluída](assets/do-not-localize/check-ok-done-icon.png) na barra de ferramentas para salvar as alterações.
+1. Clique em **[!UICONTROL Confirmar]** e, em seguida, clique em **[!UICONTROL Concluir]** ![selecione a verificação concluída](assets/do-not-localize/check-ok-done-icon.png) na barra de ferramentas para guardar as alterações.
 
    Para excluir o mapa de imagem, clique no ponto de acesso e em **[!UICONTROL Excluir]** ![excluir](assets/do-not-localize/delete-solid-line.png).
 
