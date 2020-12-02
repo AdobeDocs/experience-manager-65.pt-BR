@@ -12,6 +12,9 @@ discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 86%
 
 ---
 
@@ -32,19 +35,19 @@ Facetas são configuradas no servidor Search&amp;Promote, assim como as informa�
 <table>
  <tbody>
   <tr>
-   <th>Componente do Search&amp;Promote</th>
+   <th>componente do Search &amp; Promote</th>
    <th>Descrição</th>
   </tr>
   <tr>
    <td>Banners</td>
-   <td>Exibe anúncios em banners. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td>
+   <td>Exibe anúncios em banners. Os banners são selecionados com base nos dados coletados pelo Search &amp; Promote.<br /> </td>
   </tr>
   <tr>
    <td>Navegações estruturais</td>
    <td>Exibe a palavra-chave de pesquisa e a sequência de filtros que o usuário aplicou aos resultados da pesquisa.</td>
   </tr>
   <tr>
-   <td>Aspecto da lista da caixa de seleção</td>
+   <td>Lista da caixa de seleção - Aspecto</td>
    <td>Uma lista de caixas de seleção para selecionar aspectos para filtrar os resultados da pesquisa.</td>
   </tr>
   <tr>
@@ -64,7 +67,7 @@ Facetas são configuradas no servidor Search&amp;Promote, assim como as informa�
    <td>Exibe os resultados de uma pesquisa por palavra-chave.</td>
   </tr>
   <tr>
-   <td>Pesquisar</td>
+   <td>Pesquisar  </td>
    <td>Adiciona um campo de pesquisa à página.</td>
   </tr>
  </tbody>
@@ -91,9 +94,9 @@ Você pode configurar as seguintes propriedades do componente no modo de Ediçã
 
 ### Ativação da filtragem de resultados por facetas {#enabling-the-filtering-of-results-by-facets}
 
-Você pode permitir que os usuários filtrem os resultados da pesquisa por facetas. The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components enable users to select one or more facets for filtering. Ao usar esses componentes, você também deve incluir o componente **Caminhos de navegação**. Caminhos de navegação indicam os filtros atuais que são usados.
+Você pode permitir que os usuários filtrem os resultados da pesquisa por facetas. Os componentes **Faceta de Lista da caixa de seleção**, **Faceta suspensa** e **Faceta de Lista de link** permitem que os usuários selecionem uma ou mais facetas para filtragem. Ao usar esses componentes, você também deve incluir o componente **Caminhos de navegação**. Caminhos de navegação indicam os filtros atuais que são usados.
 
-The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components each have the following properties that you configure in **Edit** mode:
+Os componentes **Faceta de Lista da caixa de seleção**, **Faceta suspensa** e **Faceta de Lista de link** têm as seguintes propriedades que você configura no modo **Editar**:
 
 * **Nome da faceta**: o nome da faceta usada para filtros.
 
@@ -126,7 +129,7 @@ Você pode configurar as seguintes propriedades para Caminhos de navegação no 
 * Delimitador: defina o caractere ou sequência de caracteres que atuará como um delimitador entre cada caminho de navegação. O campo Delimitador aceita qualquer sequência de caracteres como entrada. A configuração padrão é: &quot;>&quot; (sem as aspas)
 * Delimitador de caminho: defina um caractere ou uma sequência de caracteres para exibição no final dos caminhos de navegação. O campo Delimitador de caminho aceita qualquer sequência de caracteres como entrada. A configuração padrão para isso é *em branco* (ou seja, nada é exibido no final da linha de caminho de navegação)
 
-### Adição de caixas de pesquisa {#adding-search-boxes}
+### Adição de caixas de pesquisa  {#adding-search-boxes}
 
 O componente Pesquisa permite que os clientes realizem pesquisas por palavra-chave. Adicione componentes Pesquisa a cada página na qual você deseja fornecer acesso para pesquisa.
 
@@ -139,7 +142,7 @@ Configure as seguintes propriedades no modo de Edição para controlar o comport
 
 ### Adição de banners {#adding-banners}
 
-O componente Banners exibe anúncios de banner de acordo com as pesquisas do Search&amp;Promote do cliente. A lógica no servidor Search&amp;Promote determina o banner a ser exibido. Por exemplo, uma pesquisa por jeans pode fazer com que um banner de moda apareça. Filtrar no departamento masculino pode refinar ainda mais a escolha do banner.
+O componente Banners exibe anúncios de banner de acordo com as pesquisas do cliente. A lógica no servidor Search&amp;Promote determina o banner a ser exibido. Por exemplo, uma pesquisa por jeans pode fazer com que um banner de moda apareça. Filtrar no departamento masculino pode refinar ainda mais a escolha do banner.
 
 O componente Banners fornece uma propriedade configurável denominada Área do banner. No modo de Edição, selecione um dos valores da propriedade para especificar como o banner é exibido. O serviço Search&amp;Promote determina a lista de valores que você pode selecionar.
 
@@ -147,4 +150,4 @@ O componente Banners fornece uma propriedade configurável denominada Área do b
 
 Este diagrama mostra os componentes que são adicionados a uma página para criar a página de resultados do Search&amp;Promote totalmente funcional abaixo.
 
-![1328213789109](assets/1328213789109.png) exemplo de ![sandppageexample](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandppageexample](assets/sandppageexample.png)
