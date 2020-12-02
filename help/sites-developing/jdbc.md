@@ -1,8 +1,8 @@
 ---
 title: Conexão com Bancos de Dados SQL
 seo-title: Conexão com Bancos de Dados SQL
-description: Acesse um banco de dados SQL externo para que seus aplicativos AEM possam interagir com os dados
-seo-description: Acesse um banco de dados SQL externo para que seus aplicativos AEM possam interagir com os dados
+description: Acessar um banco de dados SQL externo para que seus aplicativos AEM possam interagir com os dados
+seo-description: Acessar um banco de dados SQL externo para que seus aplicativos AEM possam interagir com os dados
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 0%
 
 ---
 
@@ -19,24 +22,24 @@ source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 
 Acesse um banco de dados SQL externo para que seus aplicativos CQ possam interagir com os dados:
 
-1. [Crie ou obtenha um pacote OSGi que exporte o pacote](#bundling-the-jdbc-database-driver)de driver JDBC.
-1. [Configure um provedor](#configuring-the-jdbc-connection-pool-service)de pool de fontes de dados JDBC.
+1. [Crie ou obtenha um pacote OSGi que exporte o pacote](#bundling-the-jdbc-database-driver) de driver JDBC.
+1. [Configure um provedor](#configuring-the-jdbc-connection-pool-service) de pool de fontes de dados JDBC.
 1. [Obtenha um objeto de fonte de dados e crie a conexão em seu código](#connecting-to-the-database).
 
 ## Pacote do driver de banco de dados JDBC {#bundling-the-jdbc-database-driver}
 
-Alguns fornecedores de banco de dados fornecem drivers JDBC em um pacote OSGi, por exemplo, [MySQL](https://www.mysql.com/downloads/connector/j/). Se o driver JDBC para seu banco de dados não estiver disponível como um pacote OSGi, obtenha o JAR do driver e coloque-o em um pacote OSGi. O pacote deve exportar os pacotes necessários para interagir com o servidor de banco de dados. O pacote também deve importar os pacotes aos quais faz referência.
+Alguns fornecedores de banco de dados fornecem drivers JDBC em um pacote OSGi, por exemplo [MySQL](https://www.mysql.com/downloads/connector/j/). Se o driver JDBC para seu banco de dados não estiver disponível como um pacote OSGi, obtenha o JAR do driver e coloque-o em um pacote OSGi. O pacote deve exportar os pacotes necessários para interagir com o servidor de banco de dados. O pacote também deve importar os pacotes aos quais faz referência.
 
 O exemplo a seguir usa o plug-in [Bundle para Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) para vincular o driver HSQLDB em um pacote OSGi. O POM instrui o plug-in a incorporar o arquivo hsqldb.jar identificado como uma dependência. Todos os pacotes org.hsqldb são exportados.
 
-O plug-in determina automaticamente quais pacotes serão importados e os relaciona no arquivo MANIFEST.MF do pacote. Se algum dos pacotes não estiver disponível no servidor CQ, o pacote não será iniciado após a instalação. Duas soluções possíveis são as seguintes:
+O plug-in determina automaticamente quais pacotes serão importados e os lista no arquivo MANIFEST.MF do pacote. Se algum dos pacotes não estiver disponível no servidor CQ, o pacote não será start ao instalar. Duas soluções possíveis são as seguintes:
 
-* Indique no POM que os pacotes são opcionais. Use essa solução quando a conexão JDBC não exigir os membros do pacote. Use o elemento Importar pacote para indicar pacotes opcionais, como no exemplo a seguir:
+* Indique no POM que os pacotes são opcionais. Use essa solução quando a conexão JDBC não exigir os membros do pacote. Use o elemento Importar pacote para indicar os pacotes opcionais, como no exemplo a seguir:
 
    `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
 * Encapsule os arquivos JAR que contêm os pacotes em um pacote OSGi que exporta os pacotes e implante o pacote. Use essa solução quando os membros do pacote forem necessários durante a execução do código.
 
-O conhecimento do código fonte permite que você decida qual solução usar. Você também pode tentar qualquer solução e executar testes para validar a solução.
+O conhecimento do código-fonte permite que você decida qual solução usar. Você também pode tentar qualquer solução e executar testes para validar a solução.
 
 ### POM que empacota hsqldb.jar {#pom-that-bundles-hsqldb-jar}
 
@@ -84,19 +87,19 @@ O conhecimento do código fonte permite que você decida qual solução usar. Vo
 
 Os links a seguir abrem as páginas de download de alguns produtos de banco de dados populares:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
-### Configuração do serviço do pool de conexões JDBC {#configuring-the-jdbc-connection-pool-service}
+### Configurando o serviço de pool de conexão JDBC {#configuring-the-jdbc-connection-pool-service}
 
 Adicione uma configuração para o serviço do pool de conexões JDBC que usa o driver JDBC para criar objetos de fonte de dados. O código do aplicativo usa esse serviço para obter o objeto e se conectar ao banco de dados.
 
 O JDBC Connections Pool ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) é um serviço de fábrica. Se você precisar de conexões que usam propriedades diferentes, por exemplo, acesso somente leitura ou acesso de leitura/gravação, crie várias configurações.
 
-When working with CQ there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+Ao trabalhar com o CQ, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configurando o OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
-As seguintes propriedades estão disponíveis para configurar um serviço de conexão em pool. Os nomes das propriedades são listados conforme aparecem no Console da Web. O nome correspondente de um `sling:OsgiConfig` nó aparece entre parênteses. Exemplos de valores são mostrados para um servidor HSQLDB e um banco de dados que tem um alias de `mydb`:
+As seguintes propriedades estão disponíveis para configurar um serviço de conexão em pool. Os nomes das propriedades são listados conforme aparecem no Console da Web. O nome correspondente para um nó `sling:OsgiConfig` aparece entre parênteses. Exemplos de valores são mostrados para um servidor HSQLDB e um banco de dados que tem um alias de `mydb`:
 
 * Classe de driver JDBC ( `jdbc.driver.class`): A classe Java a ser usada que implementa a interface java.sql.Driver, por exemplo `org.hsqldb.jdbc.JDBCDriver`. O tipo de dados é `String`.
 
@@ -106,12 +109,12 @@ As seguintes propriedades estão disponíveis para configurar um serviço de con
 
 * Senha ( `jdbc.password`): A senha a ser usada para autenticação do usuário. O tipo de dados é `String`.
 
-* Consulta de validação ( `jdbc.validation.query`): A instrução SQL a ser usada para verificar se a conexão foi bem-sucedida, por exemplo `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. O tipo de dados é `String`.
+* Query de validação ( `jdbc.validation.query`): A instrução SQL a ser usada para verificar se a conexão foi bem-sucedida, por exemplo `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. O tipo de dados é `String`.
 
-* Somente leitura por padrão (default.readonly): Selecione esta opção quando quiser que a conexão forneça acesso somente leitura. O tipo de dados é `Boolean`.
+* Somente leitura por padrão (default.readonly): Selecione essa opção quando desejar que a conexão forneça acesso somente leitura. O tipo de dados é `Boolean`.
 * Confirmação automática por padrão ( `default.autocommit`): Selecione essa opção para criar transações separadas para cada comando SQL enviado para o banco de dados e cada transação é automaticamente confirmada. Não selecione essa opção ao confirmar transações explicitamente em seu código. O tipo de dados é `Boolean`.
 
-* Tamanho do pool ( `pool.size`): O número de conexões simultâneas a serem disponibilizadas ao banco de dados. O tipo de dados é `Long`.
+* Tamanho do pool ( `pool.size`): O número de conexões simultâneas a serem disponibilizadas para o banco de dados. O tipo de dados é `Long`.
 
 * Espera do pool ( `pool.max.wait.msec`): A quantidade de tempo antes de uma solicitação de conexão expirar. O tipo de dados é `Long`.
 
@@ -119,15 +122,15 @@ As seguintes propriedades estão disponíveis para configurar um serviço de con
 
 * Propriedades de serviço adicionais ( `datasource.svc.properties`): Um conjunto de pares de nome/valor que você deseja anexar ao URL da conexão. O tipo de dados é `String[]`.
 
-O serviço JDBC Connections Pool é uma fábrica. Portanto, se você usar um `sling:OsgiConfig` nó para configurar o serviço de conexão, o nome do nó deverá incluir o PID do serviço de fábrica seguido por *`-alias`*. O alias que você usa deve ser exclusivo para todos os nós de configuração desse PID. Um nome de nó de exemplo é `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+O serviço JDBC Connections Pool é uma fábrica. Portanto, se você usar um nó `sling:OsgiConfig` para configurar o serviço de conexão, o nome do nó deverá incluir o PID do serviço de fábrica seguido por *`-alias`*. O alias que você usa deve ser exclusivo para todos os nós de configuração desse PID. Um nome de nó de exemplo é `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
 ### Conexão com o banco de dados {#connecting-to-the-database}
 
-Em seu código Java, use o serviço DataSourcePool para obter um `javax.sql.DataSource` objeto para a configuração criada. O serviço DataSourcePool fornece o `getDataSource` método que retorna um `DataSource` objeto para um determinado nome de fonte de dados. Como argumento de método, use o valor da propriedade Nome da fonte de dados (ou `datasource.name`) especificada para a configuração do Pool de conexões JDBC.
+Em seu código Java, use o serviço DataSourcePool para obter um objeto `javax.sql.DataSource` para a configuração criada. O serviço DataSourcePool fornece o método `getDataSource` que retorna um objeto `DataSource` para um determinado nome de fonte de dados. Como argumento de método, use o valor da propriedade Datasource Name (ou `datasource.name`) que você especificou para a configuração do Pool de Conexões JDBC.
 
-O exemplo a seguir de código JSP obtém uma instância da fonte de dados hsqldbds, executa uma consulta SQL simples e exibe o número de resultados que são retornados.
+O seguinte exemplo de código JSP obtém uma instância da fonte de dados hsqldbds, executa um query SQL simples e exibe o número de resultados que são retornados.
 
 #### JSP que executa uma pesquisa de banco de dados {#jsp-that-performs-a-database-lookup}
 
@@ -167,10 +170,10 @@ O exemplo a seguir de código JSP obtém uma instância da fonte de dados hsqldb
 
 >[!NOTE]
 >
->Se o método getDataSource lançar uma exceção porque a fonte de dados não foi encontrada, verifique se a configuração do serviço do Pool de conexões está correta. Verifique os nomes, valores e tipos de dados da propriedade.
+>Se o método getDataSource lançar uma exceção porque a fonte de dados não foi encontrada, verifique se a configuração do serviço do Pool de Conexões está correta. Verifique os nomes, valores e tipos de dados da propriedade.
 
 
 >[!NOTE]
 >
->Para saber como injetar um DataSourcePool em um pacote OSGi, consulte [Injeção de um serviço DataSourcePool em um pacote](https://helpx.adobe.com/experience-manager/using/datasourcepool.html)OSGi do Adobe Experience Manager.
+>Para saber como injetar um DataSourcePool em um pacote OSGi, consulte [Injeção de um serviço DataSourcePool em um pacote OSGi da Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
 
