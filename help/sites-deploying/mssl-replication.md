@@ -1,8 +1,8 @@
 ---
 title: Replicação usando SSL mútuo
 seo-title: Replicação usando SSL mútuo
-description: Saiba como configurar o AEM para que um agente de replicação na instância do autor use SSL mútuo (MSSL) para se conectar à instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
-seo-description: Saiba como configurar o AEM para que um agente de replicação na instância do autor use SSL mútuo (MSSL) para se conectar à instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
+description: Saiba como configurar o AEM para que um agente de replicação na instância do autor use SSL (MSSL) mútuo para se conectar à instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
+seo-description: Saiba como configurar o AEM para que um agente de replicação na instância do autor use SSL (MSSL) mútuo para se conectar à instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,16 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 2%
 
 ---
 
 
 # Replicação usando SSL mútuo{#replicating-using-mutual-ssl}
 
-Configure o AEM para que um agente de replicação na instância do autor use SSL (MSSL) mútuo para se conectar com a instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
+Configure AEM para que um agente de replicação na instância do autor use SSL (MSSL) mútuo para se conectar com a instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
 
 A configuração do MSSL para replicação envolve a execução das seguintes etapas:
 
@@ -77,7 +80,7 @@ Use o procedimento a seguir para criar uma chave privada e um certificado autoas
 
    | Opção | Autor | Publicação |
    |---|---|---|
-   | -alias | author | publicação |
+   | -alias | autor | publicação |
    | -arquivo | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -131,7 +134,7 @@ Gere uma chave privada e um certificado no formato pkcs#12. Use [openSSL](https:
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -em | author.cer | publish.cer |
-   | -name | author | publicação |
+   | -name | autor | publicação |
 
 ## Instale a chave privada e o TrustStore no autor {#install-the-private-key-and-truststore-on-author}
 
@@ -161,7 +164,7 @@ Para executar o procedimento a seguir, você deve estar conectado como um admini
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Instalar o certificado de publicação {#install-the-publish-certificate}
+### Instale o certificado de publicação {#install-the-publish-certificate}
 
 1. Abra a página Gerenciamento de usuários para a instância do autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir as propriedades da sua conta de usuário, clique ou toque no seu nome de usuário.
@@ -196,7 +199,7 @@ Para executar o procedimento a seguir, você deve estar conectado como um admini
 1. Insira um alias e a senha para o armazenamento de chaves. Digite o alias e a senha da chave privada e clique em Enviar.
 1. Feche a caixa de diálogo Gerenciamento do KeyStore.
 
-### Instale o certificado do autor {#install-the-author-certificate}
+### Instale o Certificado do Autor {#install-the-author-certificate}
 
 1. Abra a página Gerenciamento de usuários para a instância de publicação. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Localize a conta de usuário que você usa para executar solicitações de replicação e clique ou toque no nome de usuário.
@@ -206,11 +209,11 @@ Para executar o procedimento a seguir, você deve estar conectado como um admini
 1. Verifique se a opção Mapear certificado para usuário está selecionada. Clique em Selecionar arquivo de certificado, selecione author.cer e clique em Abrir.
 1. Clique em Enviar e feche a caixa de diálogo Gerenciamento do TrustStore.
 
-## Configurar o serviço HTTP ao publicar {#configure-the-http-service-on-publish}
+## Configurar o serviço HTTP em Publicar {#configure-the-http-service-on-publish}
 
 Configure as propriedades do Apache Felix Jetty Based HTTP Service na instância de publicação para que ele use HTTPS ao acessar o Granite Keystore. O PID do serviço é `org.apache.felix.http`.
 
-A tabela a seguir lista as propriedades OSGi que você precisa configurar se você está usando o Console da Web.
+A tabela a seguir lista as propriedades do OSGi que você precisa configurar se está usando o Console da Web.
 
 | Nome da propriedade no console da Web | Nome da propriedade OSGi | Valor |
 |---|---|---|
@@ -221,7 +224,7 @@ A tabela a seguir lista as propriedades OSGi que você precisa configurar se voc
 
 ## Configurar o Agente de Replicação no Autor {#configure-the-replication-agent-on-author}
 
-Configure o agente de replicação na instância do autor para usar o protocolo HTTPS ao se conectar à instância de publicação. Para obter informações completas sobre a configuração de agentes de replicação, consulte [Configuração dos Agentes](/help/sites-deploying/replication.md#configuring-your-replication-agents)de Replicação.
+Configure o agente de replicação na instância do autor para usar o protocolo HTTPS ao se conectar à instância de publicação. Para obter informações completas sobre a configuração de agentes de replicação, consulte [Configuração dos Agentes de Replicação](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Para ativar o MSSL, configure as propriedades na guia Transporte de acordo com a seguinte tabela:
 
