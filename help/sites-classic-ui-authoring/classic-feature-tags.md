@@ -1,6 +1,6 @@
 ---
-title: Uso de tags
-seo-title: Uso de tags
+title: 'Uso de tags  '
+seo-title: 'Uso de tags  '
 description: Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 seo-description: Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 uuid: 9799131f-4043-4022-a401-af8be93a1bf6
@@ -11,16 +11,19 @@ topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 83%
 
 ---
 
 
-# Uso de tags{#using-tags}
+# Uso de tags  {#using-tags}
 
 Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags, bem como as tags de conteúdo que foram aplicadas.
+* Consulte [Marcação para desenvolvedores](/help/sites-developing/tags.md) para obter informações sobre a estrutura de marcação, bem como sobre como incluir e estender tags em aplicativos personalizados.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
@@ -37,11 +40,11 @@ Tags são um método rápido e fácil de classificar o conteúdo em um site. Tag
 
 Ao projetar a estrutura de conteúdo de um site e o esquema de metadados para ativos, considere a abordagem leve e acessível de tags.
 
-## Aplicação de tags {#applying-tags}
+## Aplicação de tags   {#applying-tags}
 
-In the author environment, authors may apply tags by accessing the page properties and entering one or more tags in the **Tags/Keywords** field.
+No ambiente de criação, os autores podem aplicar tags acessando as propriedades da página e digitando uma ou mais tags no campo **Tags/Palavras-chave**.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the `Tags/Keywords` field pull-down to select from the list of tags permitted for the page. Tthe **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
+Para aplicar [tags predefinidas](/help/sites-administering/tags.md), na janela **Propriedades da página**, utilize a lista suspensa de campo `Tags/Keywords` para selecionar a partir da lista de tags permitidas para a página. A guia **Tags padrão** é a namespace padrão, o que significa que não há um prefixo `namespace-string:` para a taxonomia.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -63,19 +66,19 @@ Assim como com as páginas, você pode fazer o seguinte em tags e espaços de no
 
 * Desativar as tags selecionadas.
 
-## Nuvens de tags {#tag-clouds}
+## Nuvens de tags  {#tag-clouds}
 
 Nuvens de tags mostram uma nuvem de tags, seja para a página atual, o site inteiro ou as tags mais acessadas. Nuvens de tags são um meio de destacar os problemas que são (ou foram) de interesse do usuário. O tamanho do texto usado para exibir a tag varia em relação ao seu uso.
 
 O componente [Nuvem de tags](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (grupo de componentes Geral) é usado para adicionar uma nuvem de tags a uma página.
 
-## Pesquisa em tags {#searching-on-tags}
+## Pesquisa em tags  {#searching-on-tags}
 
 Você pode procurar tags nos ambiente de autor e publicação.
 
-### Uso do componente de pesquisa {#using-search-component}
+### Uso do componente de pesquisa  {#using-search-component}
 
-Adding a [Search component](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) to a page provides a search capability which includes tags and can be used in both the author and publish environments.
+A adição de um [componente de pesquisa](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) a uma página fornece um recurso de pesquisa que inclui tags e pode ser usado nos ambientes de autor e publicação.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
