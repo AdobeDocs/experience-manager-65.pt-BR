@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 19%
 
 ---
 
 
-# Naming Conventions{#naming-conventions}
+# Nomeando Convenções{#naming-conventions}
 
-Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o AEM impõe outras convenções para o nome dos nós de página.
+Os nós no repositório estão sujeitos às convenções de nomenclatura do [repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, AEM impõem outras convenções para o nome dos nós de página.
 
 ## Convenções de nomenclatura para páginas {#naming-conventions-for-pages}
 
 Essas convenções de nomenclatura são implementadas em vários níveis:
 
-* JcrUtil: a implementação do AEM dos utilitários [do](#jcr-utilities)JCR.
+* JcrUtil: a implementação AEM de [utilitários JCR](#jcr-utilities).
 * PageManager: o [Page Manager](#page-manager) fornece métodos para operações de nível de página.
 * De acordo com a interface que está sendo usada:
 
@@ -32,7 +35,7 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 
 ### Utilitários JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) é a implementação AEM dos utilitários JCR. De especial interesse para validar nomes são os mapeamentos de caracteres que ele controla e as seguintes validações:
+[O ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis é a implementação AEM dos utilitários do JCR. De especial interesse para validar nomes são os mapeamentos de caracteres que ele controla e as seguintes validações:
 
 * `isValidName`
 
@@ -42,13 +45,13 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 * `createValidName`
 
    * Isso cria um rótulo válido a partir de uma string arbitrária.
-   * Pode ser usado para criar um nome a partir de um título.
+   * Ele pode ser usado para criar um nome a partir de um título.
 
 ### Gerenciador de páginas {#page-manager}
 
-[O PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fornece métodos para operações de nível de página, com base em [JCRUtil](#jcr-utilities).
+[O ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager fornece métodos para operações de nível de página, com base em  [JCRUtil](#jcr-utilities).
 
-### Interface padrão {#standard-ui}
+### Interface do usuário padrão {#standard-ui}
 
 A interface de usuário padrão e habilitada para toque:
 
