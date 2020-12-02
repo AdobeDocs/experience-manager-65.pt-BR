@@ -1,8 +1,8 @@
 ---
 title: Temas de referência
 seo-title: Temas de referência
-description: Os AEM Forms fornecem temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário.
-seo-description: Os AEM Forms fornecem temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário.
+description: A AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário.
+seo-description: A AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário.
 uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Temas de referência{#reference-themes}
 
-[Temas](../../forms/using/themes.md) permitem que você estime seus formulários sem o conhecimento profundo do CSS. Além do tema padrão, você pode obter os seguintes temas instalando o pacote [AEM-FORMS-REFERENCE-TEMAS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+[O ](../../forms/using/themes.md) tema permite estilizar seus formulários sem o conhecimento profundo do CSS. Além do tema padrão, você pode obter os seguintes temas instalando o pacote [AEM-FORMS-REFERENCE-TEMAS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES):
 
 * Beril
 * Exec
@@ -34,11 +34,11 @@ Cada tema contém um estilo exclusivo e elegante que você pode usar para criar 
 
 ![Temas de referência](assets/ref-themes.png)
 
-Os Temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para telas móveis e de desktop. A maioria dos navegadores modernos em vários dispositivos pode renderizar formulários aplicados com um desses temas sem problemas.
+Os temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para telas móveis e de desktop. A maioria dos navegadores modernos em vários dispositivos pode renderizar formulários aplicados com um desses temas sem problemas.
 
 Para obter mais informações sobre como instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
-## Beril {#beryl}
+## Beryl {#beryl}
 
 O tema Beryl é usado pela forma adaptativa We.Gov e enfatiza o uso da imagem de plano de fundo, a transparência e os ícones grandes e planos. Na captura de tela abaixo, você pode ver a aparência do tema Beryl e como ele pode melhorar o estilo do formulário.
 
@@ -68,7 +68,7 @@ O tema Exec Light usa espaço em branco para criar uma experiência contínua. O
 
 ](assets/exec-light-1.png)-->
 
-## Liberdade {#liberty}
+## Liberty {#liberty}
 
 O tema da liberdade usa uma abordagem minimalista para destacar a importância. Por exemplo, a cor da fonte da guia visitada muda para verde. É possível visualizar apenas o contorno inferior da caixa de texto que emula a aparência de um formulário baseado em papel com linhas. A caixa de texto ativa tem um contorno inferior preto, enquanto outros ficam cinza claro no contorno inferior.
 
@@ -88,7 +88,7 @@ O tema Tranquilo fornece tons claros e escuros do Esquema de cores Tranquilo par
 
 ](assets/tranquil-1.png)-->
 
-## Ultramarina {#ultramarine}
+## Ultramarine {#ultramarine}
 
 O tema ultramarine usa tons azuis profundos para realçar componentes como guias, painéis, caixas de texto e botões.
 
@@ -96,7 +96,7 @@ O tema ultramarine usa tons azuis profundos para realçar componentes como guias
 
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
-## Urbana {#urbane}
+## Urbane {#urbane}
 
 O tema Urbane enfatiza uma aparência minimalista e funcional para seu formulário. Ao aplicar o tema Urbane ao formulário, é possível ver que os componentes são planos. Os painéis têm contornos finos para criar uma aparência moderna.
 
@@ -106,7 +106,7 @@ O tema Urbane enfatiza uma aparência minimalista e funcional para seu formulár
 
 ](assets/urbane-1.png)-->
 
-## Padrões de Web Design dos EUA {#u-s-web-design-standards}
+## Padrões de Web Design nos EUA {#u-s-web-design-standards}
 
 O tema Padrões de Web Design dos Estados Unidos, como o nome sugere, usa fontes e estilos descritos no site Padrões de Web Design nos Estados Unidos. O padrão web é usado por organizações federais para criar experiências web consistentes em sites governamentais federais.
 
