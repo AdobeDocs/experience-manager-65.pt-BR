@@ -12,6 +12,9 @@ discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
@@ -34,9 +37,9 @@ Para sobrepor comentários, você precisará:
 
 **E-mails de notificações de sobreposição**
 
-Suponha que você queira personalizar a mensagem das notificações por email, você pode fazer isso [sobrepondo](/help/communities/client-customize.md#overlays) os modelos em **/libs/settings/community/models/email/html**.
+Suponha que você queira personalizar a mensagem das notificações por email, faça isso [sobrepondo](/help/communities/client-customize.md#overlays) os modelos em **/libs/settings/community/models/email/html**.
 
-Por exemplo, para modificar as notificações por e-mail de menções (para um componente de comunidades específicas onde o ugc é criado), adicione uma condição **if** para a **menção** verbo nos modelos dos componentes para os quais você habilitou o suporte a **@menções** .
+Por exemplo, para modificar as notificações de e-mail de menções (para um componente de comunidades específicas onde o ugc é criado), adicione uma condição **if** para o verbo **menção** nos modelos dos componentes para os quais você habilitou o suporte a **@menções**.
 
 ```java
 {{#equals this.verb "mention"}}\
