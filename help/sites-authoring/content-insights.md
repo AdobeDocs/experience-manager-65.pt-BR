@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 96%
 
 ---
 
@@ -48,7 +51,7 @@ Consulte [Alteração do período de relatório](/help/sites-authoring/ci-analyz
 
 >[!NOTE]
 >
->Os relatórios do Content Insight exigem que o administrador integre o AEM com o SiteCatalyst, o Target e o BrightEdge. See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>Os relatórios do Content Insight exigem que o administrador integre o AEM com o SiteCatalyst, o Target e o BrightEdge. Consulte [Integração com o SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integração com o Adobe Target](/help/sites-administering/target.md) e [Integração com o BrightEdge](/help/sites-administering/brightedge.md).
 
 ## O Relatório de exibições {#the-views-report}
 
