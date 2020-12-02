@@ -1,8 +1,8 @@
 ---
 title: Personalização da lista de instâncias de processo
 seo-title: Personalização da lista de instâncias de processo
-description: Como personalizar as propriedades exibidas na instância do processo no espaço de trabalho do AEM Forms.
-seo-description: Como personalizar as propriedades exibidas na instância do processo no espaço de trabalho do AEM Forms.
+description: Como personalizar as propriedades exibidas na instância do processo na área de trabalho do AEM Forms.
+seo-description: Como personalizar as propriedades exibidas na instância do processo na área de trabalho do AEM Forms.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -17,7 +17,7 @@ ht-degree: 3%
 ---
 
 
-# Personalização da lista de instâncias de processo {#customizing-the-listing-of-process-instances}
+# Personalizar a listagem de instâncias de processo {#customizing-the-listing-of-process-instances}
 
 A lista da instância do processo é exibida na guia Rastreamento da área de trabalho do AEM Forms.
 
@@ -51,7 +51,7 @@ Na lista da instância do processo, para cada instância do processo, a área de
   </tr>
   <tr>
    <td>processInstanceStatus</td>
-   <td>0 = Iniciado<br /> 1 = Executando<br /> 2 = Concluído<br /> 3 = Concluindo<br /> 4 = Terminado<br /> 5 = Finalizando<br /> 6 = Suspenso<br /> 7 = Suspendendo<br /> 8 = Cancelando a suspensão</td>
+   <td>0 = Iniciado<br /> 1 = Executando<br /> 2 = Concluído<br /> 3 = Concluindo<br /> 4 = Terminado<br /> 5 = Terminando<br /> 6 = Suspenso<br /> 7 = Suspendendo<br /> 8 = Não suspendendo</td>
   </tr>
   <tr>
    <td>processName</td>
@@ -63,16 +63,16 @@ Na lista da instância do processo, para cada instância do processo, a área de
   </tr>
   <tr>
    <td>processVariables</td>
-   <td>Matriz de objetos de variáveis de processo. Cada objeto de variável de processo contém <strong>nome</strong> (o nome da variável de processo), <strong>valor</strong> (o valor da variável de processo) e tipo<strong></strong> (o tipo de variável de processo).</td>
+   <td>Matriz de objetos de variáveis de processo. Cada objeto de variável de processo contém <strong>name</strong> (o nome da variável de processo), <strong>value</strong> (o valor da variável de processo) e<strong> type</strong> (o tipo de variável de processo).</td>
   </tr>
  </tbody>
 </table>
 
 **Exemplo:**
 
-Para exibir a `description` propriedade da instância do processo no cartão de instância do processo, execute as seguintes etapas.
+Para exibir a propriedade `description` da instância do processo no cartão de instância do processo, execute as seguintes etapas.
 
-1. Siga as etapas [Genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
+1. Siga as [etapas genéricas para personalização do espaço de trabalho AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Faça o seguinte:
 
    1. Copie /libs/ws/js/runtime/templates/processinstance.html para/apps/ws/js/runtime/models/, se ele não existir. Clique em **Salvar tudo**.
@@ -85,7 +85,7 @@ Para exibir a `description` propriedade da instância do processo no cartão de 
 1. Faça o seguinte:
 
    1. Abra /apps/ws/js/registry.js para edição.
-   1. Pesquise e substitua `text!/lc/libs/ws/js/runtime/templates/processinstance.html`por `text!/lc/`**aplicativos **/ws/js/runtime/templates/processinstance.html.
+   1. Pesquise e substitua `text!/lc/libs/ws/js/runtime/templates/processinstance.html`por `text!/lc/`**aplicativos**/ws/js/runtime/templates/processinstance.html.
 
 1. As alterações acima podem exigir uma atualização do arquivo CSS, adicionando uma entrada na folha de estilos /apps/ws/css/newStyle.css da seguinte maneira:
 
