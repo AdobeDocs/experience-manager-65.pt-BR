@@ -31,9 +31,9 @@ Para uma demonstração simples, um recurso visual, o avatar mostrado pelo usuá
 
 ## Modificar os scripts HBS {#modify-the-hbs-scripts}
 
-Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Abrir [/apps/custom/components/comments/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Abra [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Comente a tag que inclui o avatar para uma postagem de comentário (~ linha 21):
 
@@ -43,7 +43,7 @@ Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Abrir [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Abra [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Comente a tag que inclui o avatar para a próxima entrada de comentário (~ linha 44):
 
@@ -67,11 +67,11 @@ Uma maneira de fazer isso é:
    * Selecione **[!UICONTROL Ativar árvore]**.
    * Defina `Start Path` como `/apps/custom`.
    * Desmarque **[!UICONTROL Somente Modificado]**.
-   * Selecione o botão **[!UICONTROL Ativar]** .
+   * Selecione o botão **[!UICONTROL Ativar]**.
 
-### Página Comentário modificado da visualização sobre amostra publicada {#view-modified-comment-on-published-sample-page}
+### Comentário modificado da visualização na página de amostra publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuando com a experiência](/help/communities/extend-sample-page.md#publish-sample-page) na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para visualização da modificação para remover o avatar:
+[Continuando a ](/help/communities/extend-sample-page.md#publish-sample-page) experiência na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para visualização da modificação para remover o avatar:
 
 ![visualização modificada-content](assets/view-modified-content.png)
 
