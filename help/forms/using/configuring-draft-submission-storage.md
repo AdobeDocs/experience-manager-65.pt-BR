@@ -10,21 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
 
-# Configurar serviços de armazenamento para rascunhos e envios {#configuring-storage-services-for-drafts-and-submissions}
+# Configurando serviços de armazenamento para rascunhos e envios {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Visão geral {#overview}
 
-Com o AEM Forms, é possível armazenar:
+Com a AEM Forms, você pode armazenar:
 
 * **Rascunhos**: Um formulário de trabalho em andamento que os usuários finais preenchem e salvam para mais tarde e enviam depois.
 
 * **Envios**: Formulários enviados contendo dados fornecidos pelo usuário.
 
-Os serviços de metadados e dados do portal de formulários AEM fornecem suporte para rascunhos e envios. Por padrão, os dados são armazenados na instância de publicação, que é revertida e replicada para a instância do autor configurada para que esteja disponível para implementação em outras instâncias de publicação.
+Os serviços de dados e metadados do AEM Forms Portal oferecem suporte para rascunhos e envios. Por padrão, os dados são armazenados na instância de publicação, que é revertida e replicada para a instância do autor configurada para que esteja disponível para implementação em outras instâncias de publicação.
 
 A preocupação com a abordagem predefinida atual é que ela armazene todos os dados na instância de publicação, incluindo os dados que podem ser Informações pessoais identificáveis (PII).
 
@@ -32,13 +35,13 @@ Além da abordagem padrão mencionada acima, uma implementação alternativa tam
 
 >[!NOTE]
 >
->Quando você usa a ação de envio do Portal do Forms ou habilita a opção Armazenar dados no portal de formulários em forma adaptável, os dados do formulário são armazenados no repositório do AEM. Em um ambiente de produção, é recomendável não armazenar dados de formulário rascunho ou enviados no repositório do AEM. Em vez disso, é necessário integrar os rascunhos e o componente de envio a um armazenamento seguro como o banco de dados corporativo para armazenar rascunhos e dados de formulários enviados.
+>Quando você usa a ação de envio do Forms Portal ou habilita a opção Armazenar dados no portal de formulários em forma adaptável, os dados do formulário são armazenados AEM repositório. Em um ambiente de produção, é recomendável não armazenar dados de formulário preliminares ou enviados AEM repositório. Em vez disso, é necessário integrar os rascunhos e o componente de envio a um armazenamento seguro como o banco de dados corporativo para armazenar rascunhos e dados de formulários enviados.
 >
 >Para obter mais informações, consulte [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md).
 
-## Configurar serviços de envio e rascunhos do Portal do Forms {#configuring-forms-portal-drafts-and-submissions-services}
+## Configurando serviços de envio e rascunhos do Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-Em Configuração do console da Web do AEM ( `https://[host]:'port'/system/console/configMgr`), clique para abrir Configuração **de rascunho e envio do portal de** formulários no modo de edição.
+Na Configuração do console da Web AEM ( `https://[host]:'port'/system/console/configMgr`), clique para abrir **Configuração de rascunho e envio do Forms Portal no modo de edição.**
 
 Especifique os valores para as propriedades com base em seus requisitos, conforme descrito abaixo:
 
@@ -53,19 +56,19 @@ Os dados são replicados reversivamente para a instância do autor configurada.
    <th>Valor</th>
   </tr>
   <tr>
-   <td>Serviço de Dados de Rascunho do Portal de Formulários(Identificador para serviço de dados de rascunho (<strong>draft.data.service</strong>))</td>
+   <td>Serviço de Dados de Rascunho do Forms Portal(Identificador para serviço de dados de rascunho (<strong>draft.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Serviço de Metadados de Rascunho do Portal do Forms (Identificador para serviço de metadados de rascunho (<strong>draft.metadata.service</strong>))</td>
+   <td>Serviço de Metadados de Rascunho do Forms Portal (Identificador do serviço de metadados de rascunho (<strong>draft.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Serviço de dados de envio do Portal do Forms (Identificador para serviço de dados de envio (<strong>submit.data.service</strong>))</td>
+   <td>Forms Portal Submit Data Service (Identificador para serviço de dados de envio (<strong>submit.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Serviço de Metadados de Envio do Portal do Forms (Identificador para serviço de metadados de envio (<strong>submit.metadata.service</strong>))</td>
+   <td>Serviço de Metadados de Envio do Forms Portal (Identificador para serviço de metadados de envio (<strong>submit.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceImpl<br /> </td>
   </tr>
  </tbody>
@@ -82,19 +85,19 @@ Os dados são enviados diretamente para a instância remota configurada
    <th>Valor</th>
   </tr>
   <tr>
-   <td>Serviço de Dados de Rascunho do Portal de Formulários(Identificador para serviço de dados de rascunho (<strong>draft.data.service</strong>))</td>
+   <td>Serviço de Dados de Rascunho do Forms Portal(Identificador para serviço de dados de rascunho (<strong>draft.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Serviço de Metadados de Rascunho do Portal do Forms (Identificador para serviço de metadados de rascunho (<strong>draft.metadata.service</strong>))</td>
+   <td>Serviço de Metadados de Rascunho do Forms Portal (Identificador do serviço de metadados de rascunho (<strong>draft.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Serviço de dados de envio do Portal do Forms (Identificador para serviço de dados de envio (<strong>submit.data.service</strong>))</td>
+   <td>Forms Portal Submit Data Service (Identificador para serviço de dados de envio (<strong>submit.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Serviço de Metadados de Envio do Portal do Forms (Identificador para serviço de metadados de envio (<strong>submit.metadata.service</strong>))</td>
+   <td>Serviço de Metadados de Envio do Forms Portal (Identificador para serviço de metadados de envio (<strong>submit.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceRemoteImpl<br /> </td>
   </tr>
  </tbody>
@@ -102,7 +105,7 @@ Os dados são enviados diretamente para a instância remota configurada
 
 Além da configuração especificada acima, forneça informações sobre a instância de processamento remoto configurada.
 
-Na Configuração do console da Web do AEM ( `https://[host]:'port'/system/console/configMgr`), clique para abrir o Serviço **de configurações do** AEM DS no modo de edição. Na caixa de diálogo Serviço de configurações do AEM DS, forneça informações sobre o processamento do URL do servidor, o nome de usuário do servidor de processamento e a senha.
+Na Configuração do console da Web AEM ( `https://[host]:'port'/system/console/configMgr`), clique para abrir **AEM Serviço de configurações do DS** no modo de edição. Na caixa de diálogo Serviço de configurações do AEM DS, forneça informações sobre o processamento do URL do servidor, o nome de usuário do servidor de processamento e a senha.
 
 >[!NOTE]
 >
