@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Apresentação do site de referência de recrutamento de funcionários {#employee-recruitment-reference-site-walkthrough}
+# Passagem do site de referência de recrutamento de funcionários {#employee-recruitment-reference-site-walkthrough}
 
 ## Visão geral {#overview}
 
@@ -44,13 +44,13 @@ Esses workflows são criados em AEM e podem ser encontrados em:
 
 `https://[authorHost]:[authorPort]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models/`
 
-#### Fluxo de trabalho de Recrutamento de Funcionário Financeiro {#we-finance-employee-recruiting-workflow}
+#### Fluxo de trabalho {#we-finance-employee-recruiting-workflow} de Recrutamento de Funcionário Financeiro
 
 Veja a seguir o modelo do fluxo de trabalho de Recrutamento de Funcionário do We Finance seguido neste documento.
 
 ![we-finance-funcionário-recrutar-fluxo de trabalho](assets/we-finance-employee-recruiting-workflow.png)
 
-#### Nós financiamos o fluxo de trabalho de Recrutamento de Funcionário Após Entrevista {#we-finance-employee-recruiting-post-interview-workflow}
+#### Financiamos o Fluxo de Trabalho de Recrutamento de Funcionários da Pós-Entrevista {#we-finance-employee-recruiting-post-interview-workflow}
 
 Este é o modelo do fluxo de trabalho de Recrutamento de Post Entrevista de Funcionário do We Finance seguido neste documento.
 
@@ -65,7 +65,7 @@ O cenário envolve as seguintes personas:
 * Gloria Rios, gerente de contratação
 * John Doe, o cara do HR
 
-## Sarah se inscreve para um emprego {#sarah-applies-for-a-job}
+## Sarah se aplica a um trabalho {#sarah-applies-for-a-job}
 
 Sarah Rose está procurando uma oportunidade de emprego na organização. Ela visita seu portal na web e explora as vagas de emprego listadas na página Carreira. Ela encontra uma lista de empregos correspondente e se candidata a ela.
 
@@ -83,15 +83,15 @@ Sarah clica em Aplicar em uma publicação de trabalho. O formulário de solicit
 
 ### Como funciona {#how-it-works}
 
-O home page We.Finance e a página de carreira são páginas do AEM Sites. A página de carreira incorpora um formulário adaptável, que usa um painel repetível para buscar as aberturas de emprego usando um serviço e as lista na página. Você pode consultar o formulário adaptável em `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+O home page We.Finance e a página de carreira são páginas do AEM Sites. A página de carreira incorpora um formulário adaptável, que usa um painel repetível para buscar as aberturas de emprego usando um serviço e as lista na página. Você pode revisar o formulário adaptável em `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
 
 ### Veja você mesmo {#see-it-yourself}
 
-Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` e clique em **[!UICONTROL Carreira]**. Clique em **[!UICONTROL Pesquisar]** para preencher a lista de trabalho e clique em **[!UICONTROL Aplicar]** para um trabalho. Preencha os detalhes no formulário e envie o pedido.
+Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` e clique em **[!UICONTROL Carreira]**. Clique em **[!UICONTROL Pesquisar]** para preencher a lista de tarefa e clique em **[!UICONTROL Aplicar]** para obter uma tarefa. Preencha os detalhes no formulário e envie o pedido.
 
 Certifique-se de especificar uma ID de email válida no aplicativo, pois qualquer comunicação por meio dessa apresentação será enviada para a ID de email especificada.
 
-## John Jacobs lista o perfil de Sarah Rose para o exame do gerente de contratação {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
+## John Jacobs lista o perfil de Sarah Rose para a seleção do gerente de contratação {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
 A organização recebe o pedido de emprego enviado pela Sarah. John Jacobs, um recrutador, recebe a tarefa para rever o perfil da Sarah. Ele revisa a tarefa em sua Caixa de entrada de AEM, encontra o perfil que corresponde ao requisito de trabalho e clica em Lista de atalhos. O perfil de Sarah é encaminhado para Gloria Rios, a gerente de contratação, para sua aprovação.
 
@@ -109,7 +109,7 @@ A ação de envio no formulário de solicitação de emprego aciona um fluxo de 
 
 ### Veja você mesmo {#see-it-yourself-1}
 
-Acesse `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`e faça logon usando jjacobs/password como nome de usuário/senha para John Jacobs. Abra a tarefa de Revisão de Perfil do Candidato e liste o candidato como um atalho.
+Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça logon usando jjacobs/password como nome de usuário/senha para John Jacobs. Abra a tarefa de Revisão de Perfil do Candidato e liste o candidato como um atalho.
 
 ## Gloria revê o pedido e aprova a recorrente para uma entrevista {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
@@ -131,7 +131,7 @@ Quando Gloria aprova o candidato para uma entrevista, o fluxo de trabalho cria u
 
 Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça logon usando jjacobs/password como nome de usuário/senha para John Jacobs. Abra a tarefa de Revisão de Perfil do Candidato e liste o candidato como um atalho.
 
-Acesse `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça logon usando grios/password como nome de usuário/senha para Gloria Rios. Abra a tarefa de Revisão de Perfil do Candidato e clique em Agendar entrevista.
+Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça logon usando grios/password como nome de usuário/senha para Gloria Rios. Abra a tarefa de Revisão de Perfil do Candidato e clique em Agendar entrevista.
 
 ## John Doe agenda uma entrevista {#john-doe-schedules-an-interview}
 
@@ -145,7 +145,7 @@ Caixa de entrada AEM de John Doe
 
 John Doe agenda a entrevista e envia os detalhes para Sarah Rose
 
-## Sarah Rose recebe o email com o cronograma de entrevistas {#sarah-rose-receives-the-email-with-interview-schedule}
+## Sarah Rose recebe o email com o agendamento da entrevista {#sarah-rose-receives-the-email-with-interview-schedule}
 
 Sarah Rose recebe o email com agendamento de entrevista, local e outros detalhes. Ela clica em Aceitar para significar que está bem com o horário e local da entrevista. Como guiada pela informação precisa, Sarah chega às entrevistas.
 
@@ -153,7 +153,7 @@ Sarah Rose recebe o email com agendamento de entrevista, local e outros detalhes
 
 Sarah Rose recebe o cronograma da entrevista
 
-## Depois das entrevistas, a Gerente de Contratação lista Sarah Rose {#after-the-interviews-the-hiring-manager-shortlists-sarah-rose}
+## Depois das entrevistas, o Gerente de Contratação lista Sarah Rose {#after-the-interviews-the-hiring-manager-shortlists-sarah-rose}
 
 Depois que Sarah Rose passar pelas entrevistas e limpá-las, Gloria Rios, a Gerente de Contratação, abre a tarefa Seleção de Candidatos de sua caixa de entrada e clica em Selecionar. A decisão de Gloria Rios é transmitida ao HR, John Doe, para posterior processamento.
 
@@ -169,7 +169,7 @@ Gloria Rios seleciona Sarah Rose depois das entrevistas
 
 Antes de pedir a um candidato que se junte à organização, é necessário verificar o seu passado. John Doe abre e revisa os detalhes da candidata selecionada e descobre que alguns de seus detalhes de emprego e educação ainda não estão preenchidos. Os cliques de John Doe Precisam De Mais Informação.
 
-![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
+![](assets/johndoeinbox.png) ![johndoeinboxjohndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 
 John Doe solicita mais informações de Sarah Rose sobre sua formação e experiência de trabalho
 
@@ -183,15 +183,15 @@ Sarah Rose recebe um e-mail notificando que informações adicionais são necess
 
 Sarah clica no link Fornecer detalhes no email. Um formulário é exibido. Sarah preenche os detalhes de educação e emprego necessários, conforme solicitado por John Doe e clica em Enviar.
 
-![additionalinformation1](assets/additionalinformation1.png)
+![informações adicionais1](assets/additionalinformation1.png)
 
 Sarah abre o formulário de informações adicionais clicando no link no e-mail
 
-![additionalinformation2](assets/additionalinformation2.png)
+![informações adicionais2](assets/additionalinformation2.png)
 
 Sarah preenche informações adicionais conforme solicitado por John Doe e clica em Enviar
 
-## John Doe analisa o perfil candidato selecionado para obter as informações adicionais fornecidas {#john-doe-reviews-the-selected-candidate-profile-for-the-additional-information-provided}
+## John Doe revisa o perfil candidato selecionado para obter as informações adicionais fornecidas {#john-doe-reviews-the-selected-candidate-profile-for-the-additional-information-provided}
 
 John Doe seleciona a solicitação de revisão do candidato e a abre. John Doe acha que Sarah encheu toda a informação conforme necessário. Depois de revisar o aplicativo, John Doe clica em Aprovar. Com a aprovação de John Doe, o pedido para fazer uma verificação de antecedentes de Sarah Rose é encaminhado para John Jacobs.
 
@@ -203,7 +203,7 @@ Caixa de entrada de AEM de John Doe
 
 John Doe revisa as informações adicionais fornecidas por Sarah e as aprova
 
-## John Jacobs recebe um pedido de verificação de antecedentes {#john-jacobs-receives-a-background-check-request}
+## John Jacobs recebe uma solicitação de verificação em segundo plano {#john-jacobs-receives-a-background-check-request}
 
 John Jacobs vê a solicitação de verificação de fundo em sua caixa de entrada. John Jacobs abre a tarefa e revisa as informações fornecidas por Sarah Rose. Depois de fazer uma verificação em segundo plano, John Jacobs clica em Avançar para indicar que a verificação em segundo plano foi bem-sucedida.
 
@@ -227,7 +227,7 @@ Caixa de entrada AEM de John Doe
 
 John Doe envia a carta de entrada para assinatura
 
-## Sarah Rose recebe e assina a carta de junção {#sarah-rose-receives-and-signs-the-joining-letter}
+## Sarah Rose recebe e assina a letra de junção {#sarah-rose-receives-and-signs-the-joining-letter}
 
 Sarah Rose recebe a carta de entrada por assinatura. Sarah clica Em Clique Aqui Para Rever E Assinar A Carta De Aderência. A letra de junção PDF é aberta com um campo para assinar o documento.
 
