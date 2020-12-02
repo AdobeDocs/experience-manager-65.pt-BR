@@ -1,8 +1,8 @@
 ---
 title: Compreensão da estrutura de pastas
 seo-title: Compreensão da estrutura de pastas
-description: Como entender a estrutura de pastas do código-fonte da área de trabalho do AEM Forms para personalizar.
-seo-description: Como entender a estrutura de pastas do código-fonte da área de trabalho do AEM Forms para personalizar.
+description: Como entender a estrutura de pastas do código-fonte da área de trabalho do AEM Forms a ser personalizada.
+seo-description: Como entender a estrutura de pastas do código-fonte da área de trabalho do AEM Forms a ser personalizada.
 uuid: ee844f89-887e-4f07-9db3-389859baa374
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
 
 # Compreensão da estrutura de pastas {#understanding-the-folder-structure}
 
-Os componentes do espaço de trabalho do AEM Forms são projetados na arquitetura MVC usando o Backbone. Cada componente tem um arquivo para:
+Os componentes do espaço de trabalho AEM Forms são projetados na arquitetura MVC usando backbone. Cada componente tem um arquivo para:
 
 * Modelo, que contém lógica comercial.
 * Modelo, que é um arquivo HTML que contém controles de interface.
@@ -25,14 +28,14 @@ Os componentes do espaço de trabalho do AEM Forms são projetados na arquitetur
 
 Os ativos de todos os componentes são colocados na estrutura de pastas descrita abaixo. Para acessar os ativos, faça logon no CRXDE Lite e navegue até `/libs/ws/js/runtime/`.
 
-**modelos** contêm modelos de backbone.
+**** ModelosContém modelos de backbone.
 
-**O visualização** contém visualizações de backbone.
+**** viewsContém visualizações de backbone.
 
-**modelos** Contém apenas os modelos HTML para os componentes.
+**** ModelosContém apenas os modelos HTML para os componentes.
 
-**rotas** Contém rotas universais. A pasta Templates dentro de rotas contém o código HTML e as referências aos componentes.
+**** rotasContém rotas universais. A pasta Templates dentro de rotas contém o código HTML e as referências aos componentes.
 
-**services** Contém a interface de serviço para chamar as APIs do servidor Adobe Experience Manager no terminal REST.
+**** servicesContém a interface de serviço para chamar APIs do servidor Adobe Experience Manager no terminal REST.
 
-**util** Contém utilitários genéricos utilizáveis por vários componentes.
+**** utilContém utilitários genéricos utilizáveis por vários componentes.
