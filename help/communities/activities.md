@@ -23,7 +23,7 @@ ht-degree: 4%
 
 ## Introdução {#introduction}
 
-As atividades de um membro da comunidade conectado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras pela configuração do `Activity Streams` componente.
+As atividades de um membro da comunidade conectado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras pela configuração do componente `Activity Streams`.
 
 A habilidade de seguir adiciona outra visualização de atividades quando os membros da comunidade seguem postagens de interesse ou seguem as atividades de outros membros da comunidade.
 
@@ -32,27 +32,27 @@ O documento descreve:
 * Adicionar o componente de Fluxos de Atividade a um site AEM
 * Configurações do componente Fluxos de Atividade
 
-### Adicionar fluxos de Atividade a uma página {#adding-activity-streams-to-a-page}
+### Adicionando fluxos de Atividade a uma página {#adding-activity-streams-to-a-page}
 
-Se desejar adicionar um `Activity Streams` componente a uma página no modo de autor, use o navegador de componentes para localizar
+Se desejar adicionar um componente `Activity Streams` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Activity Streams`
 
 e arraste-o para o lugar em uma página onde os fluxos de atividade devem aparecer.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do lado do cliente](/help/communities/essentials-activities.md#essentials-for-client-side) necessárias forem incluídas, o `Activity Streams` componente aparecerá desta forma:
+Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-activities.md#essentials-for-client-side) forem incluídas, o componente `Activity Streams` aparecerá desta forma:
 
 ![atividades](assets/activity-component.png)
 
-### Configuração de fluxos de Atividade {#configuring-activity-streams}
+### Configurando fluxos de Atividade {#configuring-activity-streams}
 
-Selecione o componente inserido a ser acessado e selecione o `Activity Streams` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Activity Streams` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configure](assets/configure-new.png)
 
-Na guia **Atividades** do usuário, especifique quais atividades serão exibidas:
+Na guia **Atividades do usuário**, especifique quais atividades serão exibidas:
 
 ![atividades do usuário](assets/user-activities.png)
 
@@ -76,15 +76,15 @@ Na guia **Atividades** do usuário, especifique quais atividades serão exibidas
 
    Se marcada, a página atividades incluirá uma guia que filtros atividades com base naqueles que o membro atual está seguindo. O padrão está marcado.
 
-### Visualização seguinte {#following-view}
+### Visualização a seguir {#following-view}
 
-Os componentes devem ser configurados para permitir o seguinte. Os recursos que permitem o seguinte são [blog](/help/communities/blog-feature.md), [fórum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendário](/help/communities/calendar.md), [biblioteca](/help/communities/file-library.md)[](/help/communities/comments.md)e comentários.
+Os componentes devem ser configurados para permitir o seguinte. Os recursos que permitem o seguinte são [blog](/help/communities/blog-feature.md), [fórum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendário](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md) e [comentários](/help/communities/comments.md).
 
 ![visualização seguinte](assets/following-activities.png)
 
-O botão **Seguir** fornece um meio de seguir entradas como atividades, [notificações](/help/communities/notifications.md)ou [subscrições](/help/communities/subscriptions.md). Cada vez que o botão **Seguir** é selecionado, é possível ativar ou desativar uma seleção. A `Email Subscriptions` seleção só está presente quando configurada.
+O botão **Seguir** fornece um meio de seguir as entradas como atividade, [notifications](/help/communities/notifications.md) ou [subscrição](/help/communities/subscriptions.md). Sempre que o botão **Seguir** for selecionado, é possível ativar ou desativar uma seleção. A seleção `Email Subscriptions` só está presente quando configurada.
 
-Se algum método de seguir for selecionado, o texto do botão mudará para **Seguinte**. Para sua conveniência, é possível selecionar `Unfollow All` alternar todos os métodos.
+Se algum método do seguinte for selecionado, o texto do botão mudará para **Seguindo**. Para conveniência, é possível selecionar `Unfollow All` para desativar todos os métodos.
 
 O botão **Seguir** será exibido:
 
