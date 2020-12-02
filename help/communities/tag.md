@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
 
 # Tag Essentials {#tag-essentials}
 
-Quando os componentes do AEM Communities são configurados com marcação ativada, os membros da comunidade podem marcar o conteúdo que publicam no ambiente de publicação.
+Quando os componentes do AEM Communities são configurados com marcação ativada, os membros da comunidade podem marcar o conteúdo que publicaram no ambiente de publicação.
 
-A infraestrutura subjacente para tags aplicadas no ambiente de publicação é a mesma que para tags aplicadas ao conteúdo no ambiente do autor, como páginas e ativos:
+A infraestrutura subjacente para tags aplicadas no ambiente publish é a mesma que para tags aplicadas ao conteúdo no ambiente autor, como páginas e ativos:
 
-* Consulte [Administração de tags](../../help/sites-administering/tags.md) e [marcação de conteúdo](tag-ugc.md) gerado pelo usuário (UGC) para obter informações sobre como criar e gerenciar tags.
+* Consulte [Administrando tags](../../help/sites-administering/tags.md) e [Marcando conteúdo gerado pelo usuário](tag-ugc.md) (UGC) para obter informações sobre como criar e gerenciar tags.
 
-* See [Tagging for Developers](../../help/sites-developing/tags.md) for information about the [tagging framework](../../help/sites-developing/framework.md) as well as including and extending tags in [custom applications](../../help/sites-developing/building.md).
+* Consulte [Marcação para desenvolvedores](../../help/sites-developing/tags.md) para obter informações sobre a [estrutura de marcação](../../help/sites-developing/framework.md), bem como para incluir e estender tags em [aplicativos personalizados](../../help/sites-developing/building.md).
 
-* Consulte [Uso da nuvem](tagcloud.md) de tags sociais para obter informações para autores sobre como adicionar um `social tag cloud` componente a uma página para realçar as tags aplicadas ao UGC no ambiente de publicação.
+* Consulte [Usando a Nuvem de tags sociais](tagcloud.md) para obter informações para autores sobre como adicionar um componente `social tag cloud` a uma página para realçar as tags aplicadas ao UGC no ambiente de publicação.
 
-* Consulte [Marcação de recursos](tag-resources.md) de ativação para obter informações sobre como marcar recursos para catálogos.
+* Consulte [Marcando recursos de ativação](tag-resources.md) para obter informações sobre como marcar recursos para catálogos.
 
-A marcação do UGC pode ser ativada ao configurar um site [da](sites-console.md#tagging) comunidade ou um dos seguintes recursos:
+A marcação do UGC pode ser ativada ao configurar um [site da comunidade](sites-console.md#tagging) ou um dos seguintes recursos:
 
 * [Blog](blog-feature.md)
 * [Calendário](calendar.md)
@@ -37,7 +40,7 @@ A marcação do UGC pode ser ativada ao configurar um site [da](sites-console.md
 * [Fórum](forum.md)
 * [Perguntas e respostas](working-with-qna.md)
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 ### Nuvem de tags sociais {#social-tag-cloud}
 
@@ -65,14 +68,14 @@ A marcação do UGC pode ser ativada ao configurar um site [da](sites-console.md
   </tr>
   <tr>
    <td><strong>propriedades</strong></td>
-   <td>Consulte <a href="tagcloud.md">Uso da Nuvem de tags sociais</a></td>
+   <td>Consulte <a href="tagcloud.md">Usando a Nuvem de tags sociais</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizações do cliente](client-customize.md)
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 * [API do Social Tag Cloud](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
@@ -82,6 +85,6 @@ A marcação do UGC pode ser ativada ao configurar um site [da](sites-console.md
 
 ## Pesquisa de tags {#tag-searching}
 
-A partir do pacote de [recursos 1](deploy-communities.md#latestfeaturepack) (FP1), a pesquisa de tags é realizada usando títulos [de](../../help/sites-developing/framework.md#tag-characteristics)tags.
+A partir de [pacote de recursos 1](deploy-communities.md#latestfeaturepack) (FP1), a pesquisa de tags é realizada usando [títulos de tags](../../help/sites-developing/framework.md#tag-characteristics).
 
-Antes do FP1, a pesquisa era realizada usando IDs [de](../../help/sites-developing/framework.md#tagid)tag.
+Antes do FP1, a pesquisa era realizada usando [tags ids](../../help/sites-developing/framework.md#tagid).
