@@ -1,6 +1,6 @@
 ---
 title: Status do recurso da interface de toque
-description: Notas de versão específicas [!DNL Adobe Experience Manager] da interface habilitada para toque.
+description: Notas de versão específicas para [!DNL Adobe Experience Manager] Interface habilitada para toque.
 translation-type: tm+mt
 source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
 workflow-type: tm+mt
@@ -12,15 +12,15 @@ ht-degree: 14%
 
 # Status do recurso da interface de toque {#touch-ui-feature-status}
 
-AEM versão 6.4 da interface [clássica está obsoleta](../release-notes/deprecated-removed-features.md). O Adobe não fará mais aprimoramentos na interface clássica e os usuários são incentivados a aproveitar os novos recursos avançados disponíveis na interface habilitada para toque.
+A partir da AEM 6.4 [Interface clássica está obsoleta](../release-notes/deprecated-removed-features.md). O Adobe não fará mais aprimoramentos na interface clássica e os usuários são incentivados a aproveitar os novos recursos avançados disponíveis na interface habilitada para toque.
 
-A partir da versão 6.0, AEM introduziu uma nova interface de usuário chamada de &quot;interface de usuário habilitada para toque&quot; (simplesmente chamada de &quot;Interface de usuário para toque&quot;) que é alinhada às diretrizes gerais da interface de usuário do Adobe [!DNL Adobe Experience Cloud] e às diretrizes. Com quase a paridade de recursos alcançada, essa passou a ser a interface padrão em AEM com a interface legada orientada para desktop chamada de &quot;interface clássica&quot;.
+A partir da versão 6.0, AEM introduziu uma nova interface de usuário chamada de &quot;interface de usuário habilitada para toque&quot; (simplesmente chamada de &quot;Interface de usuário para toque&quot;) que está alinhada às [!DNL Adobe Experience Cloud] e às diretrizes gerais da interface de usuário do Adobe. Com quase a paridade de recursos alcançada, essa passou a ser a interface padrão em AEM com a interface legada orientada para desktop chamada de &quot;interface clássica&quot;.
 
 Embora a maioria dos recursos esteja presente na interface habilitada para toque, há recursos que ainda não estão completos e serão adicionados em versões futuras.
 
 A lista a seguir mostra o status atual dos recursos conforme implementado no AEM 6.5.
 
-Para obter recomendações para clientes que atualizam para o AEM 6.5, consulte Recomendações da interface [do usuário para clientes](/help/sites-deploying/ui-recommendations.md).
+Para obter recomendações para clientes que atualizam para AEM 6.5, consulte [Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
@@ -40,11 +40,11 @@ Para obter recomendações para clientes que atualizam para o AEM 6.5, consulte 
 
 ## Status do recurso: Administrador de sites {#feature-status-sites-admin}
 
-Esta é uma lista de recursos que o administrador (`/siteadmin`) do site da interface clássica tem e o status na interface habilitada para toque (`/sites.html`).
+Esta é uma lista de recursos que o Administrador do site da interface clássica (`/siteadmin`) tem e o status na interface habilitada para toque (`/sites.html`).
 
 | Recurso | Status | Comentário |
 |--- |--- |--- |
-| Navegar pela Hierarquia do Site | Concluir | AEM 6.4 introduziu uma visualização [de árvore de](/help/sites-authoring/basic-handling.md#content-tree)conteúdo. |
+| Navegar pela Hierarquia do Site | Concluir | AEM 6.4 introduziu uma visualização de [árvore de conteúdo](/help/sites-authoring/basic-handling.md#content-tree). |
 | Iniciar fluxo de trabalho | Concluir |  |
 | Criar nova página | Concluir |  |
 | Criar novo site | Concluir |  |
@@ -64,7 +64,7 @@ Esta é uma lista de recursos que o administrador (`/siteadmin`) do site da inte
 | Desfazer a publicação mais tarde | Concluir |  |
 | Excluir | Concluir |  |
 | Bloquear/Desbloquear | Concluir |  |
-| Propriedades de Visualização/edição | Concluir |  |
+| Propriedades de visualização/edição | Concluir |  |
 | Definir permissões nas páginas | Concluir |  |
 | Histórico da versão | Concluir |  |
 | Restaurar versão | Concluir |  |
@@ -76,7 +76,7 @@ Esta é uma lista de recursos que o administrador (`/siteadmin`) do site da inte
 | Caixa de entrada de notificação (eventos JCR) | Ausente | Use a interface clássica. Será substituído por uma implementação diferente. |
 | Referências | Concluir | Exibição de links de página de entrada adicionados ao AEM 6.5. |
 
-## Status do recurso: Editor de página {#feature-status-page-editor}
+## Status do recurso: Editor de páginas {#feature-status-page-editor}
 
 Esta é uma lista de recursos que o Editor de página da interface clássica (`/cf#`) tem e o status na interface habilitada para toque (`/editor.html`).
 
@@ -106,15 +106,15 @@ Esta é uma lista de recursos que o Editor de página da interface clássica (`/
 | Página de cópia | Removido | Use o Administrador do site para [copiar páginas](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
 | Mover página | Removido | Use o Administrador do site para [mover páginas](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
 | Excluir página | Removido | Use o Administrador do site para [excluir páginas](/help/sites-authoring/managing-pages.md#deleting-a-page). |
-| Mostrar referências | Removido | Use o Administrador do site para ver a lista [de referência](/help/sites-authoring/author-environment-tools.md#references)detalhada. |
-| Log de auditoria | Removido | Use o Administrador do site e [abra o painel](/help/sites-authoring/author-environment-tools.md#events-timeline)de atividades. |
+| Mostrar referências | Removido | Use o Administrador do site para ver a [lista de referência detalhada](/help/sites-authoring/author-environment-tools.md#references). |
+| Log de auditoria | Removido | Use o Administrador do site e [abrir o painel de atividades](/help/sites-authoring/author-environment-tools.md#events-timeline). |
 | Criar versão | Removido | Use o Administrador do site para [criar novas versões](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
 | Restaurar versão | Removido | Use o Administrador do site para [restaurar versões](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
-| Interromper inicializações | Removido | Use o Administrador do site para [alternar entre inicializações](/help/sites-authoring/launches-promoting.md). |
-| Traduzir página | Removido | Use o Administrador do site para [adicionar página a projetos](/help/sites-administering/tc-manage.md)de tradução. |
+| Interromper inicializações | Removido | Use o Administrador do site para alternar [entre inicializações](/help/sites-authoring/launches-promoting.md). |
+| Traduzir página | Removido | Use o Administrador do site para [adicionar página a projetos de tradução](/help/sites-administering/tc-manage.md). |
 | Timewarp (escolha a data/hora e navegue no site como ele parecia) | Concluir |  |
 | Definir permissões | Concluir |  |
-| Interface do usuário de contexto do cliente | Substituído | Use a interface do usuário do [ContextHub](/help/sites-authoring/ch-previewing.md) para avançar. |
+| Interface do usuário de contexto do cliente | Substituído | Use a interface do usuário [ContextHub](/help/sites-authoring/ch-previewing.md) para frente. |
 | Localizador de conteúdo para os vários tipos de mídia | Concluir |  |
 | Lista do componente | Concluir |  |
 | Copiar e colar componentes | Concluir |  |
@@ -130,7 +130,7 @@ Esta é uma lista de recursos que o Texto da interface clássica, a Tabela e o E
 | Recurso | Status | Comentário |
 |--- |--- |--- |
 | Editor de Rich Text | Concluir | Usável no local, na caixa de diálogo e em tela cheia. |
-| Ativar/desativar plug-ins RTE | Concluir | Pode ser feito usando o Editor [de modelos](/help/sites-authoring/templates.md). |
+| Ativar/desativar plug-ins RTE | Concluir | Pode ser feito usando o [Editor de modelos](/help/sites-authoring/templates.md). |
 | Usar RTE para texto sem formatação | Concluir |  |
 | Plug-in RTE: Links e âncora | Concluir |  |
 | Plug-in RTE: Mapa de caracteres | Concluir |  |
@@ -151,7 +151,7 @@ Esta é uma lista de recursos que o Texto da interface clássica, a Tabela e o E
 | Editor de tabela | Concluir | Usável no local, na caixa de diálogo e em tela cheia. |
 | Arrastar imagem para a célula da tabela | Concluir | Usável em linha |
 | Editor de imagem  | Concluir | Usável no local, na caixa de diálogo e em tela cheia. |
-| Ativar/desativar plug-ins IPE | Concluir | AEM 6.3 introduziu uma interface no Editor [de](/help/sites-authoring/templates.md)modelos. |
+| Ativar/desativar plug-ins IPE | Concluir | AEM 6.3 introduziu uma interface no [Editor de modelos](/help/sites-authoring/templates.md). |
 | Plug-in IPE: Recortar | Concluir |  |
 | Plug-in IPE: Inverter | Concluir |  |
 | Plug-in IPE: Desfazer/Refazer | Concluir |  |
@@ -167,7 +167,7 @@ Esta é uma lista de várias ferramentas que a interface clássica tem e o statu
 |--- |--- |--- |
 | Gerenciamento de tarefas | Substituído | 6.0 introduziu projetos e tarefas. |
 | Caixa de entrada do fluxo de trabalho | Concluir |  |
-| Configuração de fluxo de trabalho para modelo de página (`/etc/workflow/wcm/templates.html`) | Ausente | Use a interface clássica. |
+| Configuração do fluxo de trabalho para modelo de página (`/etc/workflow/wcm/templates.html`) | Ausente | Use a interface clássica. |
 | Marcação da interface do usuário do administrador | Concluir |  |
 | Centro de controle MSM/Blueprint | Concluir |  |
 | Interface do usuário do Gerenciador de Blueprint | Concluir |  |
