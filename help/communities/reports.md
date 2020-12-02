@@ -29,7 +29,7 @@ Em geral, os vários relatórios são:
 
 * [Relatório de atribuições](#assignments-report)
 
-   Para uma comunidade [de](/help/communities/overview.md#enablement-community)ativação, fornece uma visão geral do progresso dos alunos em suas atribuições, incluindo uma pontuação associada ao implementar o padrão SCORM.
+   Para uma [comunidade de ativação](/help/communities/overview.md#enablement-community), fornece uma visão geral do progresso dos alunos em suas atribuições, incluindo uma pontuação associada ao implementar o padrão SCORM.
 
 * [Relatório de exibições](#views-report)
 
@@ -39,15 +39,15 @@ Em geral, os vários relatórios são:
 
    Fornece um gráfico de vários tipos de publicações por membros da comunidade para qualquer site da comunidade.
 
-Quando o [Adobe Analytics estiver ativado](/help/communities/sites-console.md#analytics), os relatórios incluirão o número de visualizações, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo.
+Quando [Adobe Analytics estiver ativado](/help/communities/sites-console.md#analytics), os relatórios incluirão o número de visualizações, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo.
 
 Os relatórios tabulares podem ser exportados no formato .csv para processamento subsequente.
 
-## Consoles do relatórios {#reporting-consoles}
+## Consoles de relatórios {#reporting-consoles}
 
 ### Relatórios para sites da comunidade {#reports-for-community-sites}
 
-* Da navegação global: **[!UICONTROL Navigation]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]**
+* Da navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]**
 
 * Escolha entre:
 
@@ -67,13 +67,13 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 ### Relatórios para recursos de ativação e caminhos de aprendizado {#reports-for-enablement-resources-and-learning-paths}
 
-* Da navegação global: **[!UICONTROL Navigation]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
+* Da navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
 
 * Selecione um site da comunidade de ativação existente:
 
    * Selecione o ícone **Relatório** para gerar relatórios que abrangem todos os recursos de ativação.
    * Selecione um caminho de aprendizado de ativação.
-   * Selecione o ícone **Relatório** para o qual gerar relatórios:
+   * Selecione o ícone **Relatório** para gerar relatórios para:
 
       * Os recursos de ativação incluídos.
       * Os alunos atribuídos ao caminho de aprendizado.
@@ -88,7 +88,7 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
       * Número de comentários feitos
       * Classificação de estrelas fornecida
 
-Para obter mais detalhes, consulte a seção [](/help/communities/resources.md#report) Relatórios do console Recursos.
+Para obter mais detalhes, consulte [seção Relatórios](/help/communities/resources.md#report) do console Recursos.
 
 ## Relatório de atribuições {#assignments-report}
 
@@ -176,7 +176,7 @@ Selecione **[!UICONTROL Gerar]** para criar o relatório.
 
 ![generate-report](assets/generate-posts-report.png)
 
-## Resolução de Problemas{#troubleshooting}
+## Resolução de problemas {#troubleshooting}
 
 ### Nenhum site da comunidade listado {#no-community-sites-listed}
 
@@ -184,6 +184,6 @@ Se nenhum site da comunidade estiver listado, verifique se a Adobe Analytics foi
 
 ### Os relatórios não são exibidos na instância do autor de AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se os relatórios não forem exibidos na instância de autor de AEM, verifique se há personalizações, como o mapeamento de URL na instância de publicação. Se o mapeamento de URL for feito somente na instância de publicação de AEM do site de comunidades, verifique se o mesmo foi configurado na instância de autor de AEM na configuração de fábrica **de componentes sociais do relatório de tendência do** site.
+Se os relatórios não forem exibidos na instância de autor de AEM, verifique se há personalizações, como o mapeamento de URL na instância de publicação. Se o mapeamento de URL for feito somente na instância de publicação de AEM do site de comunidades, verifique se o mesmo foi configurado na instância de autor de AEM na configuração **Site Trend Report Social Component Fatory**.
 
 ![Mapeamento de URL no autor do AEM](assets/sitetrend.png)
