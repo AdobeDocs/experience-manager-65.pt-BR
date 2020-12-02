@@ -11,19 +11,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 1%
 
 ---
 
 
 # Configurando o Connector para IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-O Connector for IBM FileNet permite a comunicação entre formulários AEM e IBM FileNet. Para obter informações adicionais de plano de fundo, consulte &quot;Conectores para ECM&quot; na Referência [de](https://www.adobe.com/go/learn_aemforms_services_63)serviços.
+O Connector for IBM FileNet permite a comunicação entre formulários AEM e IBM FileNet. Para obter informações adicionais de plano de fundo, consulte &quot;Conectores para ECM&quot; em [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Nesta versão, os ativos são armazenados no repositório nativo de formulários do AEM e os serviços do Provedor de repositório foram descontinuados. A migração de ativos de um repositório ECM para o repositório de formulários AEM é feita quando você faz uma atualização para formulários AEM. Para obter mais informações, consulte o Guia de atualização de formulários do AEM para seu servidor de aplicativos.
+>Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Nesta versão, os ativos são armazenados no repositório nativo de formulários AEM e os serviços do Provedor de Repositório foram descontinuados. A migração de ativos de um repositório ECM para o repositório de formulários AEM é feita quando você faz uma atualização para formulários AEM. Para obter mais informações, consulte o guia Atualização de formulários AEM para o servidor de aplicativos.
 
-## Configurar a conexão com o mecanismo de conteúdo {#configure-the-connection-to-the-content-engine}
+## Configure a conexão com o mecanismo de conteúdo {#configure-the-connection-to-the-content-engine}
 
 O IBM FileNet P8 Content Engine fornece serviços de software para gerenciar conteúdo corporativo e objetos comerciais definidos pelo cliente em repositórios de conteúdo FileNet.
 
@@ -40,8 +43,8 @@ O IBM FileNet P8 Content Engine fornece serviços de software para gerenciar con
 
 1. Na lista do Esquema de Proteção Credencial, selecione um destes níveis de proteção:
 
-   * **Limpar:** Envia credenciais pela rede em um modo desprotegido
-   * **Simétrica:** Envia credenciais criptografadas pela rede
+   * **Limpar:** envia credenciais pela rede em um modo desprotegido
+   * **Simétrica:** envia credenciais criptografadas pela rede
 
 1. Na caixa Local do arquivo de criptografia, digite o caminho para o arquivo de criptografia:
 
@@ -80,7 +83,7 @@ As opções disponíveis são as seguintes:
 
 **Nome atual do provedor do repositório:** O nome do provedor de serviço do repositório atual
 
-**Provedor de repositório IBM FileNet:** Torna o provedor do repositório FileNet o provedor do repositório. Esta opção foi substituída.
+**IBM FileNet Repository Provider:** Torna o provedor de repositório FileNet o provedor do repositório para o repositório. Esta opção foi substituída.
 
 **provedor de repositório:** Torna o provedor de repositório nativo o provedor do repositório
 
