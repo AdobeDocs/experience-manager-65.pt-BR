@@ -31,9 +31,9 @@ Alguns estão imediatamente disponíveis através do Sidekick; vários outros ta
 >
 >Dependendo do seu caso, você pode ter componentes personalizados desenvolvidos explicitamente para as suas necessidades. Eles podem até ter o mesmo nome que alguns dos componentes discutidos aqui.
 
-The components are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) from the **Components** tab of the sidekick and the **Insert New Component** selector (when you double-click in the **Drag components or assets here** area).
+Os componentes estão disponíveis ao editar uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) na guia **Componentes** do sidekick e no seletor **Inserir novo componente** (ao clicar com o duplo na área **Arraste componentes ou ativos aqui**).[
 
-You can select a component and drag it to the required location on your page and then [Edit Content and Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
+Você pode selecionar um componente e arrastá-lo para o local desejado na página e, em seguida, [Editar conteúdo e propriedades](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
 Os componentes são classificados de acordo com as diferentes categorias (grupos de componentes), incluindo (para criação de página):
 
@@ -51,7 +51,7 @@ Você pode definir um link com título e descrição.
 
 ![](do-not-localize/chlimage_1-2.png)
 
-### Imagem adaptativa {#adaptive-image}
+### Imagem adaptativa  {#adaptive-image}
 
 O componente de base da Imagem adaptativa gera imagens que são dimensionadas para caber na janela na qual a página da Web está aberta. Para usar o componente, você fornece um recurso de imagem do sistema de arquivos ou DAM. Quando a página da Web está aberta, o navegador baixa uma cópia da imagem que foi redimensionada para que seja adequada à janela atual.
 
@@ -154,7 +154,8 @@ Estão disponíveis em duas guias:
          * **Página principal** Especifique um caminho manualmente ou usando o seletor. Deixe em branco para usar a página atual como principal.
       * **Opções para a lista fixa**
 
-         * **Páginas** Selecione uma lista de páginas. Use 
+         * ****
+PáginasSelecione uma lista de páginas. Use 
 `+` para adicionar mais entradas e os botões Para cima/Para baixo para ajustar a ordem.
       * **Opções de pesquisa**
 
@@ -164,8 +165,9 @@ Estão disponíveis em duas guias:
       * **Opções de pesquisa avançada**
 
          * **Notação do predicativo do Querybuilder** Você pode inserir uma consulta de pesquisa usando a notação do predicativo do Querybuilder. Por exemplo, é possível inserir &quot;fulltext=Marketing&quot; para ter todas as páginas com “Marketing” em seu conteúdo exibidas no carrossel. Consulte a [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa sobre as expressões de consulta e mais exemplos.
-   * **Ordenar por** seleção 
-`jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` do menu suspenso.
+   * **Ordenar**
+porSelecionar 
+`jcr:title`,  `jcr:created`,  `cq:lastModified`ou  `cq:template` do menu suspenso.
 
    * **Limite** O número máximo de itens que você gostaria de usar no carrossel; esse item é opcional.
 
@@ -176,7 +178,7 @@ Estão disponíveis em duas guias:
 >[!NOTE]
 Você pode criar um componente de carrossel personalizado para o Adobe Experience Manager que exibe os ativos digitais localizados no DAM AEM. Para obter informações, consulte [Criação de componentes personalizados do carrossel para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
-### Gráfico {#chart}
+### Gráfico  {#chart}
 
 O componente Gráfico permite que você adicione um gráfico de barras, de linhas o de pizza. O AEM cria um gráfico a partir dos dados fornecidos. Você fornece os dados, digitando diretamente na guia de Dados ou copiando e colando em uma planilha.
 
@@ -196,7 +198,7 @@ O componente Gráfico permite que você adicione um gráfico de barras, de linha
 
 O exemplo a seguir mostra um gráfico de dados seguido pelo gráfico de barras resultante:
 
-![chlimage_1-6](assets/chlimage_1-6.png) _ ![dc_chart_use](assets/dc_chart_use.png)
+![chlimage_1-6](assets/chlimage_1-6.png) ![dc_chart_use](assets/dc_chart_use.png)
 
 >[!NOTE]
 Você pode criar um controle gráfico AEM personalizado que exibe os dados localizados no JCR AEM. Para obter informações, consulte [Exibição dos dados do Adobe Experience Manager em um gráfico](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
@@ -250,14 +252,14 @@ O componente externo de integração do aplicativo (**Externo**) permite que voc
 
       Define o tamanho do iframe
 
-The external application is integrated into the paragraph system of the AEM page; for example, when using a Target application of `https://en.wikipedia.org/wiki/Main_Page`:
+A aplicação externa é integrada no sistema de parágrafo da página AEM; por exemplo, ao usar um aplicativo de Público alvo de `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
 >[!NOTE]
 Dependendo do caso de uso, outras opções estão disponíveis para integração de aplicativos externos, por exemplo, a [Integração de portlets](/help/sites-administering/aem-as-portal.md).
 
-### Flash {#flash}
+### Flash  {#flash}
 
 O componente Flash permite que você carregue um filme em Flash. Você pode arrastar um ativo em Flash do localizador de conteúdo para o componente ou usar a caixa de diálogo:
 
@@ -310,7 +312,7 @@ Você pode arrastar e soltar uma imagem do [Localizador de conteúdo](/help/site
 >[!NOTE]
 O progresso do upload não pode ser monitorado com o Internet Explorer.
 Os usuários do Internet Explorer precisam fazer upload da imagem e clique em **Ok** e abra novamente a imagem para ver o arquivo carregado na visualização e para poder realizar as modificações (isto é, cortar).
-See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+Consulte a seção [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obter mais informações sobre os recursos HTML5 usados pelo AEM.
 
 Quando uma imagem é carregada, você pode configurar o seguinte:
 
@@ -526,7 +528,7 @@ O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
    * **Tipos de nós**
 
-      If the search is to be restricted to specific node type list them here; for example, `cq:Page`.
+      Se a pesquisa for restrita a um nó específico, digite lista aqui; por exemplo, `cq:Page`.
 
    * **Caminho para pesquisar em**
 
@@ -605,7 +607,7 @@ Este componente permite que você carregue uma série de imagens a serem exibida
 
    * **Novo slide**
 
-      You can specify a selection of slides using the **Add** (and **Remove**) buttons.
+      Você pode especificar uma seleção de slides usando os botões **Adicionar** (e **Remover**).
 
    * **Título**
 
@@ -688,11 +690,11 @@ O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você ta
 
 É possível configurar:
 
-* **Estilos** de componente (**Estilos**)
+* **Estilos**  de componente (**Estilos**)
 
    Aqui, você pode alinhar à esquerda ou à direita da imagem. O padrão é alinhamento à **Esquerda,** com a imagem à esquerda.
 
-* **Propriedades** da imagem (Propriedades **** avançadas da imagem)
+* **Propriedades**  da imagem (Propriedades **** avançadas da imagem)
 
    Permite que você especifique o seguinte:
 
@@ -787,7 +789,7 @@ O exemplo a seguir mostra os componentes das 2 Colunas e 3 Colunas em uso. É po
 
 Um componente de controle de coluna que padroniza 2 colunas iguais.
 
-### 3 colunas {#columns-2}
+### 3 colunas  {#columns-2}
 
 Um componente de controle de coluna que padroniza 3 colunas iguais.
 
@@ -801,12 +803,12 @@ O componente de Controle de coluna permite que os usuários escolham como dividi
 
       Selecione o número de colunas que deseja apresentar. Depois da criação, cada coluna tem seu próprio link para arrastar componentes ou ativos aqui ao adicionar conteúdo.
 
-## Formulário {#form}
+## Formulário  {#form}
 
 Os componentes do formulário são usados &#x200B;&#x200B;para criar formulários para os visitantes enviarem informações. Os formulários e os componentes do formulário podem ser usado para coletar informações, incluindo o feedback do usuário (por exemplo, um questionário de satisfação do cliente) e as informações do usuário (por exemplo, o registro do usuário).
 
 >[!NOTE]
-Consulte [Ajuda com os formulários AEM](/help/forms/home.md) para obter informações sobre os formulários AEM.
+Consulte [Ajuda com os AEM Forms](/help/forms/home.md) para obter informações sobre os AEM Forms.
 
 Os formulários são criados de vários componentes diferentes:
 
@@ -914,7 +916,7 @@ Este é um campo obrigatório e deve conter apenas os seguintes caracteres:
 
    * **CSS**
 
-### Formulário (componente) {#form-component}
+### Formulário (componente)  {#form-component}
 
 O componente Formulário define o início e o final de um formulário usando os elementos **Início do formulário** e **Fim do formulário**. São sempre pareados para garantir que o formulário esteja definido corretamente.
 
@@ -922,7 +924,7 @@ O componente Formulário define o início e o final de um formulário usando os 
 
 Entre o início e o fim de um formulário, você pode adicionar componentes do formulário que definem os campos de entrada atuais para os usuários.
 
-#### Início do formulário {#start-of-form}
+#### Início do formulário  {#start-of-form}
 
 Esse componente é necessário para definir o início de um novo formulário em uma página. É possível configurar:
 
@@ -994,15 +996,15 @@ Com o uso do **Caminho de carga,** é possível pré-carregar o formulário com 
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Configurações de ação**
 
-      The options available in **Action Configuration** are dependent on the **Action Type** selected:
+      As opções disponíveis em **Action Configuration** dependem de **Action Type** selecionado:
 
       * **Solicitação de conta**
 
          * **Criar página de conta** A página usada para criar uma nova conta.
       * **Criar conteúdo**
 
-         * Content Path
-The content path for any content that the form dumps. Enter a path that ends with a slash `/`. The slash means that for each form port, a new node is created at the given location; for example:
+         * Caminho do conteúdo
+O caminho do conteúdo para qualquer conteúdo que o formulário acumule. Insira um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local especificado; por exemplo:
             `/forms/feedback/`
 
          * **Tipo**
@@ -1041,7 +1043,7 @@ The content path for any content that the form dumps. Enter a path that ends wit
 
          * **Exibir dados...**
 
-            Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. From here, you can export the information to a `.tsv` (tab-separated) file (for use, for example, in an Excel spreadsheet).
+            Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. Aqui, você pode exportar as informações para um arquivo `.tsv` (separado por tabulações) (para uso, por exemplo, em uma planilha do Excel).
       * **Email**
 
          * **De**
@@ -1080,7 +1082,7 @@ The content path for any content that the form dumps. Enter a path that ends wit
             Clique nesse botão para acessar as informações sobre os resultados do formulário no editor em massa. Aqui, você pode exportar as informações para um arquivo .tsv (separado por tabulações) (para ser usado, por exemplo, em uma planilha do Excel).
       * **Armazenar conteúdo com os uploads**
 
-         Isso tem as mesmas opções que **Armazenar conteúdo**.
+         Isso tem as mesmas opções de **Armazenar conteúdo**.
 
       * **Cancelar assinatura do assinante**
 
@@ -1141,7 +1143,7 @@ Isso permite que você adicione um campo de endereço internacional, com o segui
 
 O componente está configurado para uso imediato, mas é possível alterar a configuração, se necessário. Por exemplo, as restrições podem ser adicionadas para os elementos individuais do endereço. As configurações padrão serão usadas caso haja campos vazios.
 
-### Captcha {#captcha}
+### Captcha  {#captcha}
 
 O componente Captcha exige que o usuário digite uma sequência alfanumérica como exibido na tela. A sequência muda a cada atualização.
 
@@ -1149,7 +1151,7 @@ O componente Captcha exige que o usuário digite uma sequência alfanumérica co
 
 Você pode configurar vários parâmetros para este componente, incluindo uma mensagem a ser exibida quando a sequência captcha for inválida.
 
-### Grupos de caixa de seleção {#checkbox-group}
+### Grupos de caixa de seleção  {#checkbox-group}
 
 Uma caixa de seleção permite que você crie uma lista de uma ou mais caixas de seleção, algumas das quais, podem ser selecionadas ao mesmo tempo.
 
@@ -1188,7 +1190,7 @@ O componente de upload de arquivos fornece ao usuário um mecanismo para selecio
 >[!NOTE]
 Você pode criar um componente de upload personalizado para fazer o upload de arquivos para um Sling Servlet. Para obter informações, consulte [Upload de arquivos no Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
-### Campo oculto {#hidden-field}
+### Campo oculto  {#hidden-field}
 
 Esse componente permite a criação de um campo oculto. Estes podem ser utilizados para diversos fins; por exemplo, quando você precisa executar uma ação após enviar o formulário ou quando dados ocultos são necessários no processamento posterior. 
 
@@ -1198,7 +1200,7 @@ Esse componente permite a criação de um campo oculto. Estes podem ser utilizad
 Você também pode personalizar o seu formulário para mostrar ou ocultar componentes do formulário específicos, de acordo com o valor de outros campos no formulário. Alterar a visibilidade de um campo do formulário é útil, quando o campo é necessário apenas em condições específicas.
 Consulte [Mostrar e ocultar componentes de formulário](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Botão de imagem {#image-button}
+### Botão de imagem  {#image-button}
 
 Um botão de imagem permite que você crie um botão com seu próprio texto e imagem:
 
@@ -1287,7 +1289,7 @@ O campo de texto padrão pode ser configurado no tamanho necessário e com o seu
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Workflow Submit Button(s) {#workflow-submit-button-s}
+### Botões de envio de fluxo de trabalho {#workflow-submit-button-s}
 
 Esse componente permite que você crie um botão de envio para usar em um fluxo de trabalho.
 
