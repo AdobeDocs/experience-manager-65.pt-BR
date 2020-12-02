@@ -24,11 +24,11 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 O recurso de catálogo, quando incluído em um site da comunidade, permite que os membros da comunidade naveguem e selecionem os recursos de ativação listados em um catálogo.
 
-O [ componente `enablement catalog` permite que os membros da comunidade acessem um catálogo de recursos](catalog.md) de [](resources.md)ativação. O uso de tags AEM é uma parte importante do gerenciamento da aparência dos recursos de ativação em um catálogo.
+O componente [ `enablement catalog`](catalog.md) permite que os membros da comunidade acessem um catálogo de [recursos de ativação](resources.md). O uso de tags AEM é uma parte importante do gerenciamento da aparência dos recursos de ativação em um catálogo.
 
-Consulte [Marcação de recursos](tag-resources.md)de ativação.
+Consulte [Marcando recursos de ativação](tag-resources.md).
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -54,25 +54,25 @@ Consulte [Marcação de recursos](tag-resources.md)de ativação.
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte Recurso <a href="catalog.md">do catálogo</a></td>
+   <td>Consulte <a href="catalog.md">Recurso de catálogo</a></td>
   </tr>
  </tbody>
 </table>
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 ### Função do catálogo {#catalog-function}
 
-Uma estrutura de site da comunidade que inclui a função [](functions.md#catalog-function)Catalog, inclui um `enablement catalog` componente configurado.
+Uma estrutura de site da comunidade que inclui a [função Catalog](functions.md#catalog-function), inclui um componente `enablement catalog` configurado.
 
 ### Pré-Filtros {#pre-filters}
 
 Quando uma função de Catálogo é adicionada a um site da comunidade, é possível restringir os recursos de ativação e os caminhos de aprendizado que aparecem no catálogo especificando um pré-filtro. Isso é feito configurando propriedades na instância do recurso de catálogo do site.
 
-Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
+Usando o exemplo do [Tutorial de ativação](getting-started-enablement.md):
 
 * Sobre o autor
-* Uso do [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
+* Usando [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
 
    * Como [https://&lt;servidor>:&lt;porta>/crx/de](http://localhost:4502/crx/de)
 
@@ -82,23 +82,23 @@ Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
 
 * Adicionar um nó filtros filho
 
-   * Selecionar o `catalog`nó
-   * Selecionar nó **[!UICONTROL Criar]**
+   * Selecione o nó `catalog`
+   * Selecione **[!UICONTROL Criar Nó]**
 
       * Nome: `filters`
       * Tipo: `nt:unstructured`
       * Selecione **[!UICONTROL Salvar tudo]**
 
-* Adicionar `se_resource-tags` propriedade ao `filters` nó
+* Adicionar a propriedade `se_resource-tags` ao nó `filters`
 
-   * Selecione o `filters` nó
+   * Selecione o nó `filters`
    * Adicionar uma propriedade Multi
 
       * Nome: `se_resource-tags`
       * Tipo: String
-      * Valor: *&lt;insira uma[TagID](#pre-filter-tagids)>*
-         * Selecionar **[!UICONTROL vários]**
-         * Selecionar **[!UICONTROL Adicionar]**
+      * Valor: *&lt;introduza um [TagID](#pre-filter-tagids)>*
+         * Selecione **[!UICONTROL Multi]**
+         * Selecione **[!UICONTROL Adicionar]**
 
             * Na caixa de diálogo pop-up, selecione `+` para adicionar TagIDs de pré-filtro adicionais
 
@@ -108,7 +108,7 @@ Usando o exemplo do Tutorial de [ativação](getting-started-enablement.md):
 
 #### TagIDs de pré-filtro {#pre-filter-tagids}
 
-As [TagIDs](../../help/sites-developing/framework.md#tagid) pré-filtradas devem corresponder exatamente às tags aplicadas aos recursos de ativação. Elas estão visíveis na `resources` pasta do site como os valores da propriedade `se_resource-tags`.
+O pré-filtro [TagIDs](../../help/sites-developing/framework.md#tagid) deve corresponder exatamente às tags aplicadas aos recursos de ativação. Eles estão visíveis na pasta `resources` do site como os valores da propriedade `se_resource-tags`.
 
 ![configure-filtros](assets/configure-catalog1.png)
 
