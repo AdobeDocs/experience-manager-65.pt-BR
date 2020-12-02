@@ -136,7 +136,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
 * **Tratar cabeçalhos como seus próprios parágrafos**
 
-### Conexão rápida no editor de fragmentos    {#quick-connection-to-fragment-editor}
+### Conexão rápida no editor de fragmentos     {#quick-connection-to-fragment-editor}
 
 É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Assim, você pode [editar e gerenciar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md).
 
@@ -144,7 +144,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 >
 >Como sempre, editar a origem do fragmento afetará todas as páginas que fazem referência a esse fragmento de conteúdo.
 
-### Adicionar conteúdo intermediário     {#adding-in-between-content}
+### Adicionar conteúdo intermediário      {#adding-in-between-content}
 
 Quando um fragmento de conteúdo específico for adicionado à página, há um espaço reservado para **Arrastar os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
@@ -184,7 +184,7 @@ Isso causa a impressão de que o posicionamento relativo mudou, pois os parágra
 
 
 
-### Usar conteúdo associado     {#using-associated-content}
+### Usar conteúdo associado      {#using-associated-content}
 
 Se você tiver [conteúdo associado ](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](#adding-in-between-content).
 
@@ -204,7 +204,7 @@ Aqui, é possível arrastar os ativos para o local desejado (para um componente 
 
 ### Ativos inseridos no fragmento {#assets-inserted-into-the-fragment}
 
-Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento, as opções para editar esses ativos no editor de páginas serão limitadas. <!-- Removed link as it was a 404 on helpx -->
+Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento, as opções para editar esses ativos no editor de páginas serão limitadas.  <!-- Removed link as it was a 404 on helpx -->
 
 Por exemplo, para uma imagem, é possível
 
