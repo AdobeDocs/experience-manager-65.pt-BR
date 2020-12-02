@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Componente Estender comentários  {#extend-comments-component}
+# Componente Estender Comentários {#extend-comments-component}
 
 A intenção de [estender](client-customize.md#extensions) um componente padrão é alterar a aparência ou o comportamento de um componente para usos específicos.
 
@@ -26,7 +26,7 @@ O caminho para o componente é exclusivo e faz referência ao componente padrão
 
 >[!NOTE]
 >
->Não há suporte para a extensão de um componente [sobreposto](client-customize.md#overlays) .
+>Não há suporte para a extensão de um componente [sobreposto](client-customize.md#overlays).
 
 ## Exemplo {#example}
 
@@ -34,7 +34,7 @@ Suponha que o cabeçalho do componente de comentário deve ser exibido com uma a
 
 Para implementar essa solução, crie um novo componente que estenda (substitui) o existente e modifique o script Handlebars. A área do site que usa os novos comentários pode usar o extendido, enquanto os sites que usam a aparência padrão permanecem não afetados.
 
-O componente de comentário é, na verdade, um dos dois componentes que compõem o sistema de comentários. Assim, há dois componentes a serem estendidos: *comentários* e *comentários*. O script a ser editado está no arquivo do componente de *comentário* , enquanto o componente de `header.hbs` comentários ** pai (o sistema de comentários) é o que um autor realmente adiciona à página.
+O componente de comentário é, na verdade, um dos dois componentes que compõem o sistema de comentários. Assim, há dois componentes a serem estendidos: *comments* e *comment*. O script a ser editado está no arquivo *comment* do componente `header.hbs`, enquanto o componente pai *comments* (o sistema de comentários) é o que um autor realmente adiciona à página.
 
 Para estender comentários, é necessário:
 
