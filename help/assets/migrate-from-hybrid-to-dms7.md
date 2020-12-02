@@ -8,13 +8,16 @@ content-type: reference
 docset: aem65
 translation-type: tm+mt
 source-git-commit: f466193a259d9e8869d7f79eafda1be20869e4af
+workflow-type: tm+mt
+source-wordcount: '512'
+ht-degree: 2%
 
 ---
 
 
 # Sobre a mudança do Dynamic Media-Hybrid para o Dynamic Media-Scene7 {#about-migrating}
 
-O Dynamic Media-Hybrid é uma versão mais antiga da integração do Dynamic Media com o Adobe Experience Manager. A versão híbrida foi introduzida pela primeira vez no AEM (Adobe Experience Manager) 6.1. Embora a Adobe continue a oferecer suporte ao modo Híbrido, ele não é o modo preferencial (o Dynamic Media-Scene7 é o modo preferencial). Também não oferece suporte a novos recursos, como o Smart Crop e imagens panorâmicas. Enquanto o Dynamic Media-Scene7 faz isso.
+O Dynamic Media-Hybrid é uma versão mais antiga da integração do Dynamic Media com o Adobe Experience Manager. A versão híbrida foi introduzida pela primeira vez no AEM (Adobe Experience Manager) 6.1. Embora o Adobe continue a oferecer suporte ao modo Híbrido, ele não é o modo preferencial (o Dynamic Media-Scene7 é o modo preferencial). Também não oferece suporte a novos recursos, como o Smart Crop e imagens panorâmicas. Enquanto o Dynamic Media-Scene7 faz isso.
 
 As principais diferenças adicionais entre o Dynamic Media-Hybrid e o Dynamic Media-Scene7 incluem:
 
@@ -29,19 +32,19 @@ Duas opções estão disponíveis quando você muda do Dynamic Media-Hybrid para
 >
 >A Adobe recomenda que você não migre uma implementação do Dynamic Media-Hybrid para o Dynamic Media-Scene7 em instâncias de produção ativas.
 
-## Opção 1 - Provisionamento de uma nova instância do Dynamic Media-Scene7 no AEM {#provision-new-dms7}
+## Opção 1 - Provisionamento de uma nova instância do Dynamic Media-Scene7 em AEM {#provision-new-dms7}
 
-Considere apenas começar de novo com uma nova instância provisionada do Dynamic Media-Scene7 no Adobe Experience Manager. Além da ingestão e do processamento de ativos por meio do Serviço da Dynamic Media Cloud, uma auditoria da Adobe sobre o uso de ativos, workflows e componentes é altamente recomendada. Em muitos casos, os componentes e workflows personalizados podem ser substituídos por recursos mais novos e prontos para uso.
+Considere apenas começar de novo com uma nova instância provisionada do Dynamic Media-Scene7 no Adobe Experience Manager. Além da ingestão e do processamento de ativos por meio do Cloud Service do Dynamic Media, é altamente recomendável fazer uma auditoria Adobe sobre o uso de ativos, workflows e componentes. Em muitos casos, os componentes e workflows personalizados podem ser substituídos por recursos mais novos e prontos para uso.
 
 ## Opção 2 - Migração da instância existente do Dynamic Media-Hybrid para o Dynamic Media-Scene7 {#process-for-migrating}
 
 | Etapa | Tarefa | Considerações |
 |---|---|---|
 | 1 | Clonar instância do autor híbrido do Dynamic Media. | Você deve manter sua instância atual do Autor do Dynamic Media-Hybrid para fins de fallback até que as etapas restantes neste processo de migração sejam concluídas com êxito. |
-| 2 | Instância do autor clonada pelo Start no modo Dynamic Media-Scene7. |  |
-| 3 | No Adobe Experience Manager Cloud Services, configure o Dynamic Media com credenciais do Dynamic Media-Scene7. | A Adobe precisa aprovar o provisionamento do Dynamic Media-Scene7. Você terá ambientes simultâneos do Dynamic MediaM-Hybrid e do Dynamic Media-Scene7 que serão suportados por um tempo limitado. |
+| 2 | Instância de autor clonada pelo start no modo Dynamic Media-Scene7. |  |
+| 3 | No Adobe Experience Manager Cloud Services, configure o Dynamic Media com credenciais do Dynamic Media-Scene7. | O Adobe precisa aprovar o provisionamento do Dynamic Media-Scene7. Você terá ambientes simultâneos de Dynamic MediaM-Hybrid e Dynamic Media-Scene7 que serão suportados por um tempo limitado. |
 | 4 | Criar pacote de migração para assimilar ativos conforme necessário.<br>Exclua os PTIFFs locais criados durante a ingestão inicial no Dynamic Media-Hybrid. | Se todos os ativos estiverem disponíveis no momento na sua instância do Dynamic Media-Hybrid, um clone do qual já inclui todos eles. Portanto, nenhum pacote é necessário. |
-| 5 | Execute o fluxo de trabalho de atualização de ativos para sincronizar ativos com o serviço da Dynamic Media Cloud. | A Adobe recomenda que o fluxo de trabalho de atualização seja feito em lotes para permitir a compactação. |
+| 5 | Execute o fluxo de trabalho de atualização de ativos para sincronizar ativos com o Cloud Service do Dynamic Media. | O Adobe recomenda que o fluxo de trabalho de atualização seja feito em lotes para permitir a compactação. |
 | 6 | Migrar predefinições de visualizador, imagem e vídeo. |  |
 | 7 | Percorra cada ativo referenciado por Gestão de conteúdo da Web e atualize seus URLs associados. |  |
 | 8 | Migre quaisquer workflows personalizados para suportar o novo modo Dynamic Media-Scene7 (atualizações manuais). |  |
