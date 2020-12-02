@@ -1,8 +1,8 @@
 ---
 title: Configurando o Connector para EMC Documentum
 seo-title: Configurando o Connector para EMC Documentum
-description: Saiba como configurar o Connector for EMC Documentum para permitir a comunicação entre formulários AEM e EMC Documentum.
-seo-description: Saiba como configurar o Connector for EMC Documentum para permitir a comunicação entre formulários AEM e EMC Documentum.
+description: Saiba como configurar o Connector for EMC Documentum para permitir a comunicação entre os formulários AEM e o EMC Documentum.
+seo-description: Saiba como configurar o Connector for EMC Documentum para permitir a comunicação entre os formulários AEM e o EMC Documentum.
 uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
@@ -11,21 +11,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 1%
 
 ---
 
 
 # Configurando o Connector para EMC Documentum {#configuring-connector-for-emc-documentum}
 
-O Connector for EMC Documentum permite a comunicação entre formulários AEM e EMC Documentum. Para obter informações adicionais de plano de fundo, consulte &quot;Conectores para ECM&quot; na Referência [de](https://www.adobe.com/go/learn_aemforms_services_63)serviços.
+O Connector for EMC Documentum permite a comunicação entre AEM formulários e o EMC Documentum. Para obter informações adicionais de plano de fundo, consulte &quot;Conectores para ECM&quot; em [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 A configuração do Connector for EMC Documentum envolve a configuração da conexão do servidor e das credenciais do repositório.
 
 >[!NOTE]
 >
->Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Na versão atual, os ativos são armazenados no repositório nativo de formulários do AEM e os serviços do Provedor de repositório foram descontinuados. A migração de ativos de um repositório ECM para o repositório de formulários AEM é feita quando você faz uma atualização para formulários AEM. Para obter mais informações, consulte o Guia de atualização de formulários do AEM para seu servidor de aplicativos.
+>Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Na versão atual, os ativos são armazenados no repositório nativo de formulários AEM e os serviços do Provedor de Repositório foram descontinuados. A migração de ativos de um repositório ECM para o repositório de formulários AEM é feita quando você faz uma atualização para formulários AEM. Para obter mais informações, consulte o guia Atualização de formulários AEM para o servidor de aplicativos.
 
-## Configuração da conexão com o servidor {#configuring-the-server-connection}
+## Configurando a conexão do servidor {#configuring-the-server-connection}
 
 Este tópico descreve as tarefas para o Connector for EMC Documentum que você pode executar na página Configurações.
 
@@ -33,7 +36,7 @@ Este tópico descreve as tarefas para o Connector for EMC Documentum que você p
 >
 >Se você estiver configurando todas as configurações simultaneamente, basta clicar em Salvar uma vez.
 
-### Configurar o servidor {#configure-the-server}
+### Configure o servidor {#configure-the-server}
 
 É necessário configurar as informações do servidor do Agente de Conexão. Essas informações são necessárias para conectar-se aos repositórios de conteúdo da Documentum e iniciar o Connector for EMC Documentum.
 
@@ -41,7 +44,7 @@ Este tópico descreve as tarefas para o Connector for EMC Documentum que você p
 1. Na área Informações de configuração do Documentum, digite o nome do host ou endereço IP e o número da porta do agente de conexão. O número da porta deve ser um número inteiro positivo (por exemplo, 1489).
 1. Clique em Salvar.
 
-### Configurar credenciais do principal {#configure-principal-credentials}
+### Configurar credenciais principais {#configure-principal-credentials}
 
 Ao configurar as credenciais principais, o nome do repositório que você fornecer dependerá de um nome de repositório explícito ser fornecido durante o logon.
 
@@ -61,7 +64,7 @@ Você pode configurar qual provedor de serviço de repositório usar com o Docum
 
 **Nome do Provedor de serviço do repositório atual:** O nome do provedor de serviço do repositório atual
 
-**Provedor de repositório do ECM Documentum:** Torna o provedor do repositório Documentum o provedor do repositório. Esta opção foi substituída
+**Provedor de Repositório do ECM Documentum:** Torna o provedor de repositório do Documentum o provedor do repositório. Esta opção foi substituída
 
 **provedor de repositório:** Torna o provedor de repositório nativo o provedor do repositório
 
@@ -75,7 +78,7 @@ Você pode configurar qual provedor de serviço de repositório usar com o Docum
 
 ## Configurando credenciais do repositório {#configuring-repository-credentials}
 
-As informações de credenciais do Documentum são usadas no contexto do sistema de formulários do AEM. As credenciais do repositório são específicas a repositórios específicos no Documentum. Você pode fornecer credenciais para qualquer número de repositórios; no entanto, você pode especificar apenas um conjunto de credenciais por repositório.
+As informações de credenciais do Documentum são usadas no contexto do sistema de formulários AEM. As credenciais do repositório são específicas a repositórios específicos no Documentum. Você pode fornecer credenciais para qualquer número de repositórios; no entanto, você pode especificar apenas um conjunto de credenciais por repositório.
 
 ### Adicionar uma credencial de repositório {#add-a-repository-credential}
 
@@ -87,7 +90,7 @@ As informações de credenciais do Documentum são usadas no contexto do sistema
 
 Se o Content Repository Connector for EMC Documentum Service e/ou o Repository Service for EMC Documentum estiver em execução, as informações de credenciais serão verificadas em relação ao repositório especificado antes de serem armazenadas no banco de dados. Se as credenciais forem inválidas ou existirem, uma mensagem de erro será exibida.
 
-### Remover uma credencial do repositório {#remove-a-repository-credential}
+### Remover uma credencial de repositório {#remove-a-repository-credential}
 
 1. No console de administração, clique em Serviços > Conector para EMC Documentum > Configurações.
 1. Marque a caixa de seleção ao lado do repositório do qual deseja remover as credenciais e clique em Remover. As credenciais do repositório selecionado são removidas do banco de dados.
@@ -101,11 +104,11 @@ Se o Content Repository Connector for EMC Documentum Service e/ou o Repository S
 
 Se o Content Repository Connector for EMC Documentum Service e/ou o Repository Service for EMC Documentum estiver em execução, as informações de credenciais serão verificadas em relação ao repositório especificado antes de serem armazenadas no banco de dados. Se as credenciais forem inválidas ou existirem, uma mensagem de erro será exibida.
 
-## Ativar a solicitação para compartilhamento de filas de tarefas do Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Ativar a solicitação para compartilhamento de filas de tarefa do Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 Algumas etapas manuais são necessárias para garantir que o recurso Solicitar compartilhamento da fila de Tarefas no Workspace funcione corretamente com o Connector for EMC Documentum.
 
-1. Depois que os formulários AEM forem implantados e o Workbench for instalado, faça logon no Workbench e abra a visualização Recursos. Você determinará onde o arquivo QueueSharing.swf está localizado a partir dessa visualização.
+1. Depois que AEM formulários forem implantados e o Workbench for instalado, faça logon no Workbench e abra a visualização Recursos. Você determinará onde o arquivo QueueSharing.swf está localizado a partir dessa visualização.
 1. Arraste o arquivo QueueSharing.swf da Visualização Resources para a área de trabalho do Windows ou um local equivalente, dependendo do sistema operacional.
 1. No console de administração, clique em Serviços > Conector para EMC Documentum > Configurações.
 1. Em Informações sobre Provedores de serviço do repositório, altere o provedor de repositório configurado para o EMC Documentum Repository Provider.
