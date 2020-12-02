@@ -15,7 +15,7 @@ ht-degree: 18%
 ---
 
 
-# AEM 6.5 Deploying User Guide {#deploying}
+# AEM 6.5 Implantação do Guia do Usuário {#deploying}
 
 + [Implantação do Guia do Usuário](home.md)
 + Introdução à plataforma AEM {#introduction}
@@ -39,7 +39,7 @@ ht-degree: 18%
    + [Solução de problemas de índices Oak](troubleshooting-oak-indexes.md)
    + [Optar Pela Coleta De Estatísticas De Uso Agregado](opt-in-aggregated-usage-statistics.md)
    + [Resolução de Problemas](troubleshooting.md)
-+ Configuração de AEM {#configuring}
++ Configurando AEM {#configuring}
    + [Conceitos básicos de configuração](configuring.md)
    + [Logs](configure-logging.md)
    + [Configuração do OSGi](configuring-osgi.md)
@@ -62,7 +62,7 @@ ht-degree: 18%
    + [Guia de desempenho de ativos](assets-performance-sizing.md)
    + [Artigos sobre procedimentos de configuração](ht-deploy.md)
    + [Configurando o Console da Web](configuring-web-console.md)
-+ Upgrading to AEM 6.5 {#upgrading}
++ Atualização para AEM 6.5 {#upgrading}
    + [Atualização para AEM 6.5](upgrade.md)
    + [Planejamento da atualização](upgrade-planning.md)
    + [Avaliação da complexidade da atualização com o detector de padrões](pattern-detector.md)
