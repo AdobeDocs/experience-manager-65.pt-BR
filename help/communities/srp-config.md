@@ -35,7 +35,7 @@ Para obter uma discussão sobre opções de armazenamento e topologias de implan
 
 No ambiente do autor, para acessar o console de configuração do armazenamento.
 
-* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > Configuração do **[!UICONTROL Armazenamento]**
+* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuração do Armazenamento]**
 
 Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
@@ -43,8 +43,8 @@ Para selecionar uma opção de armazenamento diferente do JCR padrão:
 * Configurar apropriadamente
 
    * Consulte os detalhes para [selecionar MSRP](msrp.md#select-msrp)
-   * Consulte os detalhes para [selecionar o DSRP](dsrp.md#select-dsrp)
-   * Consulte os detalhes para [selecionar o ASRP](asrp.md#select-asrp)
+   * Consulte os detalhes para [selecionar DSRP](dsrp.md#select-dsrp)
+   * Consulte os detalhes para [selecionar ASRP](asrp.md#select-asrp)
 
 * Selecione **[!UICONTROL Enviar]**.
 
@@ -52,10 +52,10 @@ Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 Observe que se nenhuma seleção for feita, o padrão será o repositório AEM, JCR.
 
-O JCR *não* é uma loja comum compartilhada pelos ambientes de autor e publicação. O conteúdo da comunidade estará visível somente do ambiente do autor ou publicação no qual foi criado.
+O JCR é *e não* uma loja comum compartilhada pelos ambientes de autor e publicação. O conteúdo da comunidade estará visível somente do ambiente do autor ou publicação no qual foi criado.
 
-Visite a [JCR Store](jsrp.md) para obter mais informações.
+Visite [JCR Store](jsrp.md) para obter mais informações.
 
 >[!NOTE]
 >
->A ausência do nó `srpc` em `/etc/socialconfig` indica o armazenamento [padrão](jsrp.md)JCR.
+>A ausência do nó `srpc` em `/etc/socialconfig` indica o armazenamento padrão [JCR](jsrp.md).
