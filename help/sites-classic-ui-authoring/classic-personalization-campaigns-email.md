@@ -12,6 +12,9 @@ discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 96%
 
 ---
 
@@ -130,7 +133,7 @@ Para personalizar um boletim informativo e simular como será sua aparência:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Antes de enviar boletins informativos, verifique a configuração do OSGi para o Externalizador de links do Day CQ em `https://localhost:4502/system/console/configMgr`.
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` e a operação não pode ser concluída se a porta para a execução da instância for alterada.
 
@@ -218,7 +221,7 @@ Você pode enviar um informativo a partir dele mesmo ou da lista. Ambos os proce
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Antes de enviar boletins informativos, verifique a configuração do OSGi para o Externalizador de links do Day CQ em `https://localhost:4502/system/console/configMgr`.
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` e a operação não pode ser concluída se a porta para a execução da instância for alterada.
 
@@ -226,7 +229,7 @@ Você pode enviar um informativo a partir dele mesmo ou da lista. Ambos os proce
 >
 >Se você atualizar provedores de email, fazer um teste de envio ou enviar um informativo, essas operações falharão se o informativo não for publicado primeiro na Instância de publicação ou se a Instância de publicação não estiver disponível. Publique o informativo e verifique se a Instância de publicação está ativa e em execução.
 
-### Envio de informativos a partir de uma campanha {#sending-newsletters-from-a-campaign}
+### Envio de informativos a partir de uma campanha  {#sending-newsletters-from-a-campaign}
 
 Para enviar um informativo a partir da campanha:
 
@@ -283,7 +286,7 @@ Para enviar um informativo de uma lista:
 
 Esta seção descreve como assinar um informativo.
 
-### Assinatura de um informativo {#subscribing-to-a-newsletter-1}
+### Assinatura de um informativo  {#subscribing-to-a-newsletter-1}
 
 Para assinar um boletim informativo (usando o site Geometrixx como um exemplo):
 
