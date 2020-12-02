@@ -20,11 +20,11 @@ ht-degree: 2%
 
 # Guia de componentes da comunidade  {#community-components-guide}
 
-O guia Community Components é uma ferramenta de desenvolvimento interativo para o quadro de componentes [sociais (SCF)](scf.md). Ele fornece uma lista de componentes AEM Communities disponíveis ou os recursos mais complexos criados com vários componentes.
+O guia Community Components é uma ferramenta de desenvolvimento interativo para [framework de componente social (SCF)](scf.md). Ele fornece uma lista de componentes AEM Communities disponíveis ou os recursos mais complexos criados com vários componentes.
 
 Juntamente com as informações básicas de cada componente, o guia permite experimentar como os componentes/recursos do SCF funcionam e como eles podem ser configurados ou personalizados.
 
-Para obter informações sobre o desenvolvimento essencial relacionado a cada componente, consulte [Recurso e Componentes essenciais](essentials.md).
+Para obter informações sobre os recursos essenciais de desenvolvimento relacionados a cada componente, consulte [Recursos e componentes essenciais](essentials.md).
 
 ## Introdução {#getting-started}
 
@@ -32,24 +32,24 @@ O guia é destinado ao uso em instalações de desenvolvimento de instâncias do
 
 O site Componentes da comunidade é acessado navegando até
 
-* [https://&lt;servidor>:&lt;porta>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
+* [https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
 As interações com os componentes das Comunidades variam, dependendo de:
 
 * O servidor (autor ou publicação).
 * Se o visitante do site está conectado ou não.
 * Se conectado, os privilégios atribuídos ao membro.
-* Se o SRP padrão, [JSRP](jsrp.md), está ou não em uso.
+* Se o SRP padrão, [JSRP](jsrp.md), está em uso.
 
 No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o primeiro segmento de caminho após o nome do servidor:
 
 * Interface do usuário padrão:
 
-   [https://&lt;servidor>:&lt;porta>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * Interface clássica:
 
-   [https://&lt;servidor>:&lt;porta>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -59,9 +59,9 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 >
 >Com a página do componente exibida no navegador, volte ao modo de Edição para abrir a caixa de diálogo de edição do componente.
 >
->Para obter informações gerais sobre criação, visualização no guia [rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Para obter informações gerais de criação, visualização o guia rápido [para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md)básico.
+>Se não estiver familiarizado com o AEM, visualização a documentação em [manuseio básico](../../help/sites-authoring/basic-handling.md).
 
 ### Página Inicial {#home-page}
 
@@ -80,7 +80,7 @@ Selecione um componente da lista no lado esquerdo da página.
 O corpo principal da guia exibe:
 
 1. Título: O nome do componente selecionado
-1. [Bibliotecas](#client-side-libraries)do lado do cliente: Uma lista de uma ou mais categorias necessárias
+1. [Bibliotecas](#client-side-libraries) do lado do cliente: Uma lista de uma ou mais categorias necessárias
 1. [Incluível](scf.md#add-or-include-a-communities-component): Se o componente puder ser incluído dinamicamente, o estado pode ser alternado no modo de edição do autor:
 
    * Se adicionado, o texto exibido é: &quot;Esse componente é incluído por meio de seu nó par.&quot;
@@ -95,15 +95,15 @@ O corpo principal da guia exibe:
 
 ### Interações do autor {#author-interactions}
 
-Ao usar o guia em uma instância do autor, é possível experimentar a configuração de um componente abrindo sua caixa de diálogo. As informações para desenvolvedores são fornecidas na seção [Component and Feature Essentials](essentials.md) da documentação, enquanto as configurações da caixa de diálogo são descritas na seção [Communities Components](author-communities.md) (Componentes de comunidades) para autores.
+Ao usar o guia em uma instância do autor, é possível experimentar a configuração de um componente abrindo sua caixa de diálogo. As informações para desenvolvedores são fornecidas na seção [Component and Feature Essentials](essentials.md) da documentação, enquanto as configurações de diálogo são descritas na seção [Communities Components](author-communities.md) para autores.
 
-Para o guia Componentes da comunidade, algumas configurações de diálogo do componente são sobrepostas com o estado de alternância [Incluível](scf.md#add-or-include-a-communities-component) . Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto e clique em duplo para abrir a caixa de diálogo de edição:
+Para o guia Componentes da comunidade, algumas configurações da caixa de diálogo do componente são sobrepostas com o estado de alternância [Includable](scf.md#add-or-include-a-communities-component). Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto e clique em duplo para abrir a caixa de diálogo de edição:
 
-![community-component3](assets/community-component3.png)
+![componente da comunidade3](assets/community-component3.png)
 
-Na guia **Modelos** :
+Na guia **Modelos**:
 
-![community-component4](assets/community-component4.png)
+![componente da comunidade4](assets/community-component4.png)
 
 * **Incluir o componente-filho com sling:include**
 
@@ -123,31 +123,31 @@ Ao usar o guia em uma instância de publicação, é possível experimentar os c
 
 >[!NOTE]
 >
->Observe que, se o SRP for deixado como padrão para [JSRP](jsrp.md), o UGC inserido na instância de publicação estará visível somente na publicação e *não* estará visível do console de [moderação](moderate-ugc.md) na instância do autor.
+>Lembre-se, se o SRP for deixado como padrão para [JSRP](jsrp.md), então o UGC inserido na instância de publicação estará visível somente na publicação e *não* estará visível do console [moderação](moderate-ugc.md) na instância do autor.
 
 ## Bibliotecas do lado do cliente {#client-side-libraries}
 
-As bibliotecas do lado do cliente (clientlibs) listadas para cada componente são aquelas *necessárias* para serem referenciadas quando o componente é colocado em uma página. Os clientlibs fornecem um meio de gerenciar e otimizar o download do Javascript e do CSS usados para renderizar o componente no navegador.
+As bibliotecas do lado do cliente (clientlibs) listadas para cada componente são as *necessárias* a serem referenciadas quando o componente é colocado em uma página. Os clientlibs fornecem um meio de gerenciar e otimizar o download do Javascript e do CSS usados para renderizar o componente no navegador.
 
-Para obter mais informações, visite [Clientlibs for Communities Components (Clientlibs para componentes](clientlibs.md)de comunidades).
+Para obter mais informações, visite [Clientlibs for Communities Components](clientlibs.md).
 
 ## Representação {#impersonation}
 
-Na instância do autor, em que um deles é frequentemente conectado como administrador ou desenvolvedor, para experimentar o componente conectado como outro usuário, use a caixa de texto à esquerda do botão **[!UICONTROL Representar]** para digitar no nome de usuário ou selecionar na lista suspensa e clique no botão. Clique em Reverter para sair e encerrar a representação.
+Na instância do autor, onde um deles é frequentemente conectado como administrador ou desenvolvedor, para experimentar o componente conectado como outro usuário, use a caixa de texto à esquerda do botão **[!UICONTROL Representar]** para digitar no nome de usuário ou selecionar na lista suspensa e clique no botão. Clique em Reverter para sair e encerrar a representação.
 
-A instância de publicação não precisa representar. Basta usar o link Logon/Logout para representar vários usuários, como os usuários [da](tutorials.md#demo-users)demonstração.
+A instância de publicação não precisa representar. Basta usar o link Logon/Logout para representar vários usuários, como [demo users](tutorials.md#demo-users).
 
 ## Personalização {#customization}
 
 Quando ativado, cada componente SCF está disponível para prototipagem de possíveis personalizações modificando temporariamente o modelo do componente, o CSS e os dados.
 
-### Ativação da personalização {#enabling-customization}
+### Ativando a Personalização {#enabling-customization}
 
 >[!NOTE]
 >
 >**Esta ferramenta é somente** leitura. Nenhuma das edições feitas nos modelos, CSS ou dados são salvas no repositório.
 
-Para experimentar rapidamente personalizações, a `scg:showIde`propriedade deve ser adicionada ao nó do JCR de conteúdo da página do componente e definida como true.
+Para experimentar rapidamente personalizações, a propriedade `scg:showIde`deve ser adicionada ao nó JCR de conteúdo da página do componente e definida como true.
 
 Usando o componente comments como um exemplo, na instância autor ou de publicação, conectado com privilégios de administrador:
 
@@ -155,7 +155,7 @@ Usando o componente comments como um exemplo, na instância autor ou de publica�
 
    Por exemplo, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-1. Selecionar o `jcr:content` nó do componente
+1. Selecione o nó `jcr:content` do componente
 
    Por exemplo, `/content/community-components/en/comments/jcr:content`
 
@@ -172,9 +172,9 @@ Usando o componente comments como um exemplo, na instância autor ou de publica�
 
 1. Observe que agora há 3 guias para Modelos, CSS e Dados.
 
-![community-component5](assets/community-component5.png)
+![componente da comunidade5](assets/community-component5.png)
 
-![community-component6](assets/community-component6.png)
+![componente da comunidade6](assets/community-component6.png)
 
 ### Guia Modelos {#templates-tab}
 
