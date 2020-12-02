@@ -21,11 +21,11 @@ ht-degree: 86%
 
 # Projetos{#projects}
 
-Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Os blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and**/home/groups**.
+>Para que os usuários em projetos vejam outros usuários/grupos ao usar a funcionalidade Projetos, como criar projetos, criar tarefas/workflows, ver e gerenciar a equipe, esses usuários precisam ter acesso de leitura em **/home/users** e **/home/groups**. A maneira mais fácil de implementar isso é dar ao grupo **projects-users** acesso de leitura a **/home/users** e**/home/groups**.
 
 Como usuário, você pode fazer o seguinte:
 
@@ -88,7 +88,7 @@ Semelhante a ativos, você pode adicionar [coleções de ativos](/help/assets/ma
 
 Adicione uma coleção clicando em **Adicionar coleção** e selecionando a coleção apropriada na lista.
 
-### Experiências {#experiences}
+### Experiências  {#experiences}
 
 O bloco **Experiências** permite adicionar um aplicativo para dispositivos móveis, um site ou uma publicação ao projeto.
 
@@ -126,7 +126,7 @@ O bloco Tarefa de tradução é onde você inicia uma tradução e visualiza o s
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
+Clique nas reticências na parte inferior do cartão **Trabalho de tradução** para visualização dos ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -148,7 +148,7 @@ O bloco **Páginas de aterrissagem** permite que você solicite uma nova página
 
 Esse fluxo de trabalho é descrito em [Criar um fluxo de trabalho de Página de aterrissagem](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
-### Emails {#emails}
+### Emails  {#emails}
 
 O bloco **Emails** ajuda você a gerenciar solicitações de email. Ele inicia o fluxo de trabalho Solicitar email.
 
@@ -174,7 +174,7 @@ O bloco Lançamentos mostra todos os lançamentos que foram solicitados com um [
 
 ### Tarefas {#tasks}
 
-Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
+Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas detalhadamente em [Trabalhar com Tarefa](/help/sites-authoring/task-content.md).
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -184,12 +184,12 @@ O AEM acompanha três modelos diferentes prontos para uso:
 
 * Um projeto simples - uma amostra de referência para quaisquer projetos que não se encaixem em outras categorias (um catch-all). Ele inclui três funções básicas (Proprietários, Editores e Observadores) e quatro fluxos de trabalho (Aprovação de projeto, Solicitar lançamento, Solicitar página de aterrissagem e Solicitar email).
 * Um projeto de mídia - um exemplo de projeto de referência para atividades relacionadas à mídia. Ele inclui várias funções de projeto relacionadas a mídia (Fotógrafos, Editores, Redatores, Designers, Proprietários e Observadores). Também inclui dois fluxos de trabalho relacionados a conteúdo de mídia - Solicitar cópia (para solicitar e revisar texto) e Sessão fotográfica do produto (para gerenciar fotos relacionadas ao produto)
-* [Projeto](/help/sites-authoring/managing-product-information.md) fotográfico do produto - uma amostra de referência para gerenciar fotos de produtos relacionados ao comércio eletrônico. Ele inclui funções para Fotógrafos, Editores, Retocadores de foto, Proprietários, Diretores criativos, Comerciantes de mídia social, Diretores de marketing, Revisores e Observadores.
+* [Projeto](/help/sites-authoring/managing-product-information.md)  fotográfico do produto - uma amostra de referência para gerenciar a fotografia de produtos relacionados ao comércio eletrônico. Ele inclui funções para Fotógrafos, Editores, Retocadores de foto, Proprietários, Diretores criativos, Comerciantes de mídia social, Diretores de marketing, Revisores e Observadores.
 * [Um projeto de tradução](/help/sites-administering/translation.md) - Uma amostra de referência para o gerenciamento de atividades relacionadas a tradução. Ele inclui três funções básicas (Proprietários, Editores e Observadores). Também inclui dois fluxos de trabalho que são acessados na interface de usuário de Fluxos de trabalho.
 
 Com base no modelo selecionado, você tem diferentes opções disponíveis, principalmente em relação a funções de usuário e fluxos de trabalho.
 
-## Funções de usuário em um projeto {#user-roles-in-a-project}
+## Funções de usuário em um projeto  {#user-roles-in-a-project}
 
 As diferentes funções de usuário são definidas em um modelo de Projeto e são usadas por dois motivos principais:
 
