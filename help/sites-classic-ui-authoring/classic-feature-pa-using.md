@@ -12,6 +12,9 @@ discoiquuid: 28529cae-6fbd-4879-a5b8-3ec8e1bcd586
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 87%
 
 ---
 
@@ -30,4 +33,4 @@ Os dados de análises de páginas são exibidos no console Sites. Quando os site
 
 >[!NOTE]
 >
->A exibição direta de dados de análises no console só está disponível na interface otimizada para toque. See [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md) in the standard authoring documentation for details.
+>A exibição direta de dados de análises no console só está disponível na interface otimizada para toque. Consulte [Ver os dados de análise de página](/help/sites-authoring/page-analytics-using.md) na documentação de criação padrão para obter detalhes.
