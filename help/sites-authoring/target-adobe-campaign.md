@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 78%
 
 ---
 
@@ -33,15 +36,15 @@ A configuração da segmentação inclui a criação de segmentos, uma marca, um
 
 Para criar segmentos:
 
-1. Open the [segmentation console](http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Create a new page and enter a title - for example, **AC Segments**- and select the **Segment (Adobe Campaign)** template.
+1. Abra o [console de segmentação](http://localhost:4502/miscadmin#/etc/segmentation) em **&lt;host>:&lt;porta>/miscadmin#/etc/segmentation**.
+1. Crie uma nova página e insira um título - por exemplo, **Segmentos AC** - e selecione o modelo **Segmento (Adobe Campaign)**.
 1. Selecione a página criada na exibição em árvore no lado esquerdo.
 1. Crie um segmento, por exemplo, direcionando usuários do sexo masculino, criando uma nova página no segmento criado com o nome Masculino, e selecione o modelo **Segmento (Adobe Campaign)**.
 1. Abra a página de segmento criada e arraste e solte um **ID de segmento** do sidekick até a página.
-1. Double-click the trait, enter the ID representing in this case, the male segment defined in Adobe Campaign - for example, **MALE** - and click **OK**. The following message should appear: *`targetData.segmentCode == "MALE"`*
+1. Clique com o duplo no traço, digite a ID que representa, nesse caso, o segmento macho definido no Adobe Campaign - por exemplo, **MALE** - e clique em **OK**. A seguinte mensagem deve ser exibida: *`targetData.segmentCode == "MALE"`*
 1. Repita as etapas para outro segmento, por exemplo, um segmento direcionado para usuários do sexo feminino.
 
-### Criação de uma marca {#creating-a-brand}
+### Criação de uma marca  {#creating-a-brand}
 
 Para criar uma marca:
 
@@ -55,18 +58,18 @@ Para criar uma campanha:
 1. Abra a página **Marca** que você acabou de criar.
 1. Clique em **Criar página** e insira um título para a sua página, por exemplo, Campanha We.Retail, selecione o modelo **Campanha** e clique em **Criar**.
 
-### Criação de experiências {#creating-experiences}
+### Criação de experiências  {#creating-experiences}
 
 Para criar experiências para segmentos:
 
 1. Abra a página **Campanha** que você acabou de criar.
-1. Create experiences for your segments by clicking **Create Page** and entering a title for your page, for example, Male as you are creating an experience for the Male segment, and select the **Experience** template.
+1. Crie experiências para seus segmentos clicando em **Criar página** e inserindo um título para sua página, por exemplo, Masculino enquanto você está criando uma experiência para o segmento Masculino, e selecione o modelo **Experiência**.
 1. Abra a página de Experiência criada.
 1. Clique em **Editar** e, em seguida, abaixo de Segmentos, clique em **Adicionar item**.
-1. Enter the path to the male segment, for example **/etc/segmentation/ac-segments/male** and click **OK**. The following message should appear: *Experience is targeted at: Male*
+1. Digite o caminho para o segmento masculino, por exemplo **/etc/segmentation/ac-segment/masculino**, e clique em **OK**. A seguinte mensagem deve ser exibida: *A experiência destina-se a: Masculino*
 1. Repita as etapas anteriores para criar uma experiência para todos os segmentos, por exemplo, o direcionamento de usuários do sexo feminino.
 
-## Criação de um informativo com conteúdo direcionado {#creating-a-newsletter-with-targeted-content}
+## Criação de um informativo com conteúdo direcionado  {#creating-a-newsletter-with-targeted-content}
 
 Depois de criar segmentos, uma marca, uma campanha e uma experiência, você pode criar um informativo com conteúdo direcionado. Depois de criar a experiência, você a vincula aos seus segmentos.
 
@@ -76,13 +79,13 @@ Depois de criar segmentos, uma marca, uma campanha e uma experiência, você pod
 
 Para criar um informativo com conteúdo direcionado:
 
-1. Create a newsletter with targeted content: Below Email Campaigns in Geometrixx Outdoors, click or tap **Create** > **Page**, and select one of the Adobe Campaign Mail templates.
+1. Crie um boletim informativo com conteúdo direcionado: Abaixo das Campanhas de e-mail no Geometrixx Outdoors, clique ou toque em **Criar** > **Página** e selecione um dos modelos do Adobe Campaign Mail.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
 1. No informativo, adicione um componente Texto e personalização.
 1. Adicione texto ao componente Texto e personalização, como &quot;Este é o padrão&quot;.
-1. Click the arrow next to **Edit** and select **Targeting**.
+1. Clique na seta ao lado de **Editar** e selecione **Definição de metas**.
 1. Selecione sua marca no menu suspenso Marca e selecione sua campanha. (Essa é a marca e a campanha que você criou anteriormente).
 1. Clique em **Iniciar o direcionamento**. Você vê seus segmentos aparecerem na área Públicos. A experiência padrão será usada se nenhum dos segmentos definidos corresponder.
 
@@ -92,11 +95,11 @@ Para criar um informativo com conteúdo direcionado:
 
 1. Clique em **Padrão** e depois no componente Texto e personalização adicionado. Você verá a mira com uma seta nela. Clique no ícone para direcionar esse componente.
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
 1. Navegue até outro segmento (Masculino), clique em **Adicionar oferta** e clique no ícone de adição +. Em seguida, edite a oferta.
 1. Navegue até outro segmento (Feminino), clique em **Adicionar oferta** e no ícone de adição +. Em seguida, edite essa oferta.
-1. Click **Next** to see Mapping, then click **Next** to see Settings, which does not apply to Adobe Campaign, and click **Save**.
+1. Clique em **Próximo** para ver Mapeamento e, em seguida, clique em **Próximo** para ver Configurações, que não se aplicam ao Adobe Campaign, e clique em **Salvar**.
 
    O AEM gera automaticamente o código de direcionamento correto para o Adobe Campaign quando o conteúdo é usado em uma entrega dentro do Adobe Campaign
 
