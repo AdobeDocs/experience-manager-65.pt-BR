@@ -1,6 +1,6 @@
 ---
-title: Gerencie metadados de seus ativos digitais no [!DNL Adobe Experience Manager].
-description: Saiba mais sobre os tipos de metadados e [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] como tornar possível organizar e processar ativos automaticamente com base em seus metadados.
+title: Gerencie metadados de seus ativos digitais em [!DNL Adobe Experience Manager].
+description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] torna possível organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
@@ -23,35 +23,35 @@ ht-degree: 11%
 
 ## Metadados e sua origem {#how-to-edit-or-add-metadata}
 
-Metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é adicionado aos ativos e [!DNL Experience Manager] é processado quando você carrega um ativo. É possível editar os metadados existentes, adicionar novas propriedades de metadados aos campos existentes. As organizações precisam de vocabulários de metadados controlados e confiáveis. Portanto, não [!DNL Experience Manager Assets] permite a adição sob demanda de novas propriedades de metadados. Somente administradores e desenvolvedores podem adicionar novas propriedades ou campos que contêm metadados. Os usuários podem preencher os campos existentes com metadados.
+Metadados são informações adicionais sobre o ativo que pode ser pesquisado. Ele é adicionado aos ativos e em [!DNL Experience Manager] é processado quando você carrega um ativo. É possível editar os metadados existentes, adicionar novas propriedades de metadados aos campos existentes. As organizações precisam de vocabulários de metadados controlados e confiáveis. Portanto, [!DNL Experience Manager Assets] não permite a adição sob demanda de novas propriedades de metadados. Somente administradores e desenvolvedores podem adicionar novas propriedades ou campos que contêm metadados. Os usuários podem preencher os campos existentes com metadados.
 
 Os seguintes métodos podem ser usados para adicionar metadados a ativos digitais:
 
-* Para começar, os aplicativos nativos que criam ativos adicionam alguns metadados a ele. Por exemplo, a [Acrobat adiciona alguns metadados](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a arquivos PDF ou uma câmera adiciona alguns metadados básicos às fotografias. Ao gerar ativos, você pode adicionar os metadados nos próprios aplicativos nativos. Por exemplo, você pode [adicionar metadados IPTC no Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+* Para começar, os aplicativos nativos que criam ativos adicionam alguns metadados a ele. Por exemplo, [A Acrobat adiciona alguns metadados](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a arquivos PDF ou uma câmera adiciona alguns metadados básicos às fotografias. Ao gerar ativos, você pode adicionar os metadados nos próprios aplicativos nativos. Por exemplo, você pode [adicionar metadados IPTC no Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Antes de fazer upload de um ativo para [!DNL Experience Manager], você pode editar e modificar metadados usando o aplicativo nativo usado para criar um ativo ou usando outro aplicativo de edição de metadados. Quando você carrega um ativo no Experience Manager, os metadados são processados. Por exemplo, consulte como [trabalhar com metadados em [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e ver o painel de [tags para [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) em [!DNL Adobe Exchange].
+* Antes de fazer upload de um ativo para [!DNL Experience Manager], você pode editar e modificar metadados usando o aplicativo nativo usado para criar um ativo ou usando outro aplicativo de edição de metadados. Quando você carrega um ativo no Experience Manager, os metadados são processados. Por exemplo, veja como [trabalhar com metadados em [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e consulte o painel [tags para [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) em [!DNL Adobe Exchange].
 
-* Em [!DNL Experience Manager Assets], você pode adicionar ou editar manualmente metadados de ativos na página [!UICONTROL Propriedades] .
+* Em [!DNL Experience Manager Assets], você pode adicionar ou editar manualmente metadados de ativos na página [!UICONTROL Propriedades].
 
-* Você pode aproveitar a funcionalidade de perfis [de](/help/assets/metadata-config.md#metadata-profiles) metadados [!DNL Experience Manager Assets] para adicionar metadados automaticamente quando os ativos forem carregados no DAM.
+* Você pode aproveitar a funcionalidade [perfis de metadados](/help/assets/metadata-config.md#metadata-profiles) de [!DNL Experience Manager Assets] para adicionar metadados automaticamente quando os ativos forem carregados no DAM.
 
 ## Adicionar ou editar metadados em [!DNL Experience Manager Assets] {#add-edit-metadata}
 
-Para editar os metadados de um ativo na interface do [!DNL Assets] usuário, siga estas etapas:
+Para editar os metadados de um ativo na interface do usuário [!DNL Assets], siga estas etapas:
 
 1. Faça uma das seguintes opções:
 
-   * Na [!DNL Assets] interface, selecione o ativo e clique em Propriedades **[!UICONTROL da]** Visualização na barra de ferramentas.
-   * Na miniatura do ativo, selecione a ação rápida Propriedades **[!UICONTROL da]** Visualização.
-   * Na página do ativo, clique no ícone **[!UICONTROL de informações Propriedades]** da ![Visualização](assets/do-not-localize/info-circle-icon.png) Ativos na barra de ferramentas.
+   * Na interface [!DNL Assets], selecione o ativo e clique em **[!UICONTROL Propriedades da Visualização]** na barra de ferramentas.
+   * Na miniatura do ativo, selecione a ação rápida **[!UICONTROL Propriedades da Visualização]**.
+   * Na página do ativo, clique em **[!UICONTROL Propriedades da Visualização]** ![Ícone de informações do Assets](assets/do-not-localize/info-circle-icon.png) na barra de ferramentas.
 
-   A página do ativo exibe todos os metadados do ativo. Os metadados são extraídos quando o ativo é carregado (assimilado) no [!DNL Experience Manager].
+   A página do ativo exibe todos os metadados do ativo. Os metadados são extraídos quando o ativo é carregado (assimilado) em [!DNL Experience Manager].
 
    ![Selecione Propriedades de um ativo para visualização de seus metadados](assets/asset-metadata.png)
 
-   *Figura: Edite ou adicione metadados na página [!UICONTROL Propriedades] do ativo.*
+   *Figura: Edite ou adicione metadados ao   espage de Propriedades do ativo.*
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
+1. Faça edições nos metadados sob as várias guias, conforme necessário, e, quando concluído, clique em **[!UICONTROL Salvar]** na barra de ferramentas para salvar suas alterações. Clique em **[!UICONTROL Fechar]** para voltar à interface da Web [!DNL Assets].
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ Para editar os metadados de um ativo na interface do [!DNL Assets] usuário, sig
 
 Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados XMP. O fluxo de trabalho de gravação de metadados adiciona os metadados ao binário original. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e novas propriedades (incluindo propriedades personalizadas como `cq:tags`) são adicionadas ao schema.
 
-XMP gravação é suportada e ativada para plataformas e formatos de arquivos descritos nos requisitos [técnicos.](/help/sites-deploying/technical-requirements.md)
+XMP write-back é suportado e habilitado para plataformas e formatos de arquivos descritos em [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
 
 ## Editar propriedades de metadados de vários ativos {#editing-metadata-properties-of-multiple-assets}
 
@@ -68,13 +68,13 @@ XMP gravação é suportada e ativada para plataformas e formatos de arquivos de
 * Alterar propriedades de metadados para um valor comum
 * Adicionar ou modificar tags
 
-Para personalizar a página de propriedades de metadados, incluindo adicionar, modificar e excluir propriedades de metadados, use o editor [de](metadata-config.md#folder-metadata-schema)schemas.
+Para personalizar a página de propriedades de metadados, incluindo adicionar, modificar e excluir propriedades de metadados, use o [editor de schemas](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
->Os métodos de edição em massa funcionam para ativos disponíveis em uma pasta ou coleção. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é possível atualizar [em massa os metadados após a pesquisa](search-assets.md#metadataupdates).
+>Os métodos de edição em massa funcionam para ativos disponíveis em uma pasta ou coleção. Para os ativos que estão disponíveis em pastas ou que correspondem a critérios comuns, é possível [atualizar os metadados em massa depois de pesquisar](search-assets.md#metadataupdates).
 
-1. Na interface do [!DNL Assets] usuário, navegue até o local dos ativos que deseja editar.
+1. Na interface do usuário [!DNL Assets], navegue até o local dos ativos que deseja editar.
 1. Selecione os ativos para os quais deseja editar propriedades comuns.
 1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]** para abrir a página de propriedades dos ativos selecionados.
 
@@ -88,7 +88,7 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
    >[!NOTE]
    >
    >* Na página de propriedades, é possível remover ativos da lista de ativos desmarcando-os. A lista do ativo tem todos os ativos selecionados por padrão. Os metadados dos ativos que você remove da lista não são atualizados.
-   >* Na parte superior da lista de ativos, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre a seleção dos ativos e a limpeza da lista.
+   >* Na parte superior da lista de ativos, marque a caixa de seleção próxima a **[!UICONTROL Título]** para alternar entre selecionar os ativos e limpar a lista.
 
 
 1. Para selecionar um schema de metadados diferente para os ativos, clique em **[!UICONTROL Configurações]** na barra de ferramentas e selecione o schema desejado.
@@ -109,9 +109,9 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
 >
 >Para importar metadados em namespaces personalizadas, registre primeiro as namespaces.
 
-1. Navegue até a interface do [!DNL Assets] usuário e clique em **[!UICONTROL Criar]** na barra de ferramentas.
+1. Navegue até a [!DNL Assets] interface do usuário e clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. No menu, selecione **[!UICONTROL Metadados]**.
-1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Selecione o arquivo CSV com os metadados.
+1. Na página **[!UICONTROL Importação de metadados]**, clique em **[!UICONTROL Selecionar arquivo]**. Selecione o arquivo CSV com os metadados.
 1. Especifique os seguintes parâmetros. Consulte um arquivo CSV de amostra em [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Parâmetros de importação de metadados | Descrição |
@@ -119,22 +119,22 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | [!UICONTROL Tamanho do lote] | Número de ativos em um lote para os quais os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
    | [!UICONTROL Separador de campos] | O valor padrão é `,` (uma vírgula). É possível especificar qualquer outro caractere. |
    | [!UICONTROL Delimitador de múltiplo valor] | Separador para valores de metadados. O valor padrão é `|`. |
-   | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definidas como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho WriteBack [!UICONTROL de metadados] DAM (que grava metadados nos dados binários XMP). Habilitar workflows de inicialização retarda o sistema. |
+   | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definidas como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho [!UICONTROL WriteBack] de Metadados DAM (que grava metadados nos dados binários XMP). Habilitar workflows de inicialização retarda o sistema. |
    | [!UICONTROL Nome de coluna do caminho do ativo] | Define o nome da coluna para o arquivo CSV com ativos. |
 
-1. Click **[!UICONTROL Import]** from the toolbar. Depois que os metadados são importados, uma notificação é exibida na caixa de entrada [!UICONTROL Notificação] .
+1. Clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é exibida na caixa de entrada [!UICONTROL Notification].
 
 1. Para verificar a importação correta, navegue até a página [!UICONTROL Propriedades] de um ativo e verifique os valores nos campos.
 
-Para adicionar data e carimbo de data e hora ao importar metadados, use o `YYYY-MM-DDThh:mm:ss.fff-00:00` formato para data e hora. A data e a hora são separadas por `T`, `hh` é horas no formato de 24 horas, `fff` é nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 da hora PST.
+Para adicionar data e carimbo de data e hora ao importar metadados, use o formato `YYYY-MM-DDThh:mm:ss.fff-00:00` para data e hora. A data e a hora são separadas por `T`, `hh` são horas no formato de 24 horas, `fff` são nanossegundos e `-00:00` são deslocamentos de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 AM horário PST.
 
 >[!CAUTION]
 >
->Se o formato de data não corresponder `YYYY-MM-DDThh:mm:ss.fff-00:00`, os valores de data não serão definidos. Os formatos de data do arquivo CSV de metadados exportados estão no formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desejar importá-lo, converta-o no formato aceitável adicionando o valor de nanossegundos indicado por `fff`.
+>Se o formato de data não corresponder a `YYYY-MM-DDThh:mm:ss.fff-00:00`, os valores de data não serão definidos. Os formatos de data do arquivo CSV de metadados exportados estão no formato `YYYY-MM-DDThh:mm:ss-00:00`. Se desejar importá-lo, converta-o no formato aceitável adicionando o valor de nanossegundos indicado por `fff`.
 
-## Export metadata {#export-metadata}
+## Exportar metadados {#export-metadata}
 
-É possível exportar metadados para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, [!DNL Experience Manager] percorre as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
+É possível exportar metadados para vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, [!DNL Experience Manager] percorre as propriedades do nó de ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
 
 Alguns casos de uso para exportar metadados em massa são:
 
@@ -145,17 +145,17 @@ Alguns casos de uso para exportar metadados em massa são:
 
 1. Selecione a pasta de ativos que contém os ativos para os quais deseja exportar metadados. Na barra de ferramentas, selecione **[!UICONTROL Exportar metadados]**.
 
-1. Na caixa de diálogo Exportação [!UICONTROL de] metadados, especifique um nome para o arquivo CSV. Para exportar metadados para ativos em subpastas, selecione **[!UICONTROL Incluir ativos em subpastas]**.
+1. Na caixa de diálogo [!UICONTROL Exportação de metadados], especifique um nome para o arquivo CSV. Para exportar metadados para ativos em subpastas, selecione **[!UICONTROL Incluir ativos em subpastas]**.
 
-   ![Interface e opções para exportar metadados de todos os ativos em uma](assets/export_metadata_page.png "folderInterface e opções para exportar metadados de todos os ativos em uma pasta")
+   ![Interface e opções para exportar metadados de todos os ativos em uma ](assets/export_metadata_page.png "folderInterface e opções para exportar metadados de todos os ativos em uma pasta")
 
 1. Selecione as opções desejadas. Forneça um nome de arquivo e, se necessário, uma data.
 
-1. No campo **[!UICONTROL Propriedades a serem exportadas]** , especifique se deseja exportar todas as propriedades ou propriedades específicas. Se você escolher Propriedades seletivas a serem exportadas, adicione as propriedades desejadas.
+1. No campo **[!UICONTROL Propriedades a serem exportadas]**, especifique se deseja exportar todas as propriedades ou propriedades específicas. Se você escolher Propriedades seletivas a serem exportadas, adicione as propriedades desejadas.
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Exportar]**. Uma mensagem confirma que os metadados são exportados. Feche a mensagem.
 
-1. Abra a notificação da caixa de entrada do trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. To download the CSV file with the metadata, click **[!UICONTROL CSV Download]** from the toolbar. Clique em **[!UICONTROL Fechar]**.
+1. Abra a notificação da caixa de entrada do trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, clique em **[!UICONTROL Download CSV]** na barra de ferramentas. Clique em **[!UICONTROL Fechar]**.
 
    ![Caixa de diálogo para baixar o arquivo CSV que contém os metadados exportados em massa](assets/csv_download.png)
 
@@ -163,9 +163,9 @@ Alguns casos de uso para exportar metadados em massa são:
 
 ## Editar metadados de coleções {#collections-metadata}
 
-Para obter detalhes, consulte [visualização e edição de metadados](/help/assets/manage-collections.md#view-edit-collection-metadata) de coleção e [edição de metadados de várias coleções em massa](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
+Para obter detalhes, consulte [visualização e editar metadados da coleção](/help/assets/manage-collections.md#view-edit-collection-metadata) e [editar metadados de várias coleções em massa](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
-## Aplicar um perfil de metadados a pastas {#applying-a-metadata-profile-to-folders}
+## Aplicar um perfil de metadados às pastas {#applying-a-metadata-profile-to-folders}
 
 <!-- TBD: Review this overview.
 -->
@@ -188,20 +188,20 @@ As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do n
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você tenha alterado posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
 
-### Aplicar perfis de metadados a pastas da interface do usuário de [!UICONTROL Perfis] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Aplicar perfis de metadados a pastas de [!UICONTROL Perfis] interface de usuário {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Siga as etapas para aplicar o perfil de metadados:
 
-1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Clique no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de metadados]**.
 1. Selecione o perfil de metadados que deseja aplicar a uma pasta ou várias pastas.
-1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
+1. Clique em **[!UICONTROL Aplicar Perfil de Metadados à(s) pasta(s)]** e selecione a pasta ou várias pastas que deseja usar para receber os ativos carregados recentemente e clique em **[!UICONTROL Concluído]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
 ### Aplicar perfis de metadados a pastas de [!UICONTROL Propriedades] {#applying-metadata-profiles-to-folders-from-properties}
 
-1. No painel esquerdo, clique em **[!UICONTROL Ativos]** e navegue até a pasta à qual deseja aplicar um perfil de metadados.
+1. No painel esquerdo, clique em **[!UICONTROL Assets]** e navegue até a pasta à qual deseja aplicar um perfil de metadados.
 1. Na pasta, clique na marca de seleção para selecioná-la e clique em **[!UICONTROL Propriedades]**.
 
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the popup menu and click **[!UICONTROL Save]**.
+1. Selecione a guia **[!UICONTROL Perfis de metadados]** e selecione o perfil no menu pop-up e clique em **[!UICONTROL Salvar]**.
 
 As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
@@ -215,25 +215,25 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 Quando você remove um perfil de metadados de uma pasta, qualquer subpasta herda automaticamente a remoção do perfil da pasta pai. No entanto, qualquer processamento de arquivos que tenha ocorrido dentro das pastas permanece intacto.
 
-Você pode remover um perfil de metadados de uma pasta do menu **[!UICONTROL Ferramentas]** ou das **[!UICONTROL Propriedades]** de dentro da pasta.
+Você pode remover um perfil de metadados de uma pasta do menu **[!UICONTROL Ferramentas]** ou **[!UICONTROL Propriedades]** de dentro da pasta.
 
-#### Remover perfis de metadados de pastas por meio da interface do usuário de Perfis {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+#### Remover perfis de metadados de pastas por meio da interface de usuário do Perfil {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Clique no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de metadados]**.
 1. Selecione o perfil de metadados que deseja remover de uma pasta ou de várias pastas.
-1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
+1. Clique em **[!UICONTROL Remover Perfil de Metadados da(s) pasta(s)]** e selecione a pasta ou várias pastas que deseja usar para remover um perfil e clique em **[!UICONTROL Concluído]**.
 
    Você pode confirmar que o perfil de metadados não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
-#### Remover perfis de metadados de pastas por Propriedades {#removing-metadata-profiles-from-folders-via-properties}
+#### Remover perfis de metadados de pastas por meio das Propriedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Clique no [!DNL Experience Manager] logotipo, navegue pelos **[!UICONTROL Ativos]** e, em seguida, até a pasta da qual deseja remover um perfil de metadados.
+1. Clique no logotipo [!DNL Experience Manager] e navegue **[!UICONTROL Assets]** até a pasta da qual você deseja remover um perfil de metadados.
 1. Na pasta, clique na marca de seleção para selecioná-la e clique em **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de metadados]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e clique em **[!UICONTROL Salvar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
 ## Dicas e limitações {#best-practices-limitations}
 
-* As atualizações de metadados por meio da interface do usuário alteram as propriedades de metadados na `dc` namespace. Qualquer atualização feita por meio da API HTTP altera as propriedades de metadados na `jcr` namespace. Consulte [como atualizar metadados usando a API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
+* Os metadados são atualizados por meio da interface do usuário e alteram as propriedades dos metadados na namespace `dc`. Qualquer atualização feita por meio da API HTTP altera as propriedades de metadados na namespace `jcr`. Consulte [como atualizar metadados usando a API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 * O arquivo CSV para importar metadados de ativos está em um formato muito específico. Para economizar esforço e tempo e evitar erros não intencionais, você pode start na criação do CSV usando o formato de um arquivo CSV exportado.
 
