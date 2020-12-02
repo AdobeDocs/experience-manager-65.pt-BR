@@ -26,13 +26,13 @@ Para adicionar um recurso de ativação ao novo site da comunidade:
 
 * Faça logon como administrador do sistema na instância do autor:
    * Por exemplo, [http://localhost:4502/](http://localhost:4503/)
-* Na navegação global, selecione **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
+* Na navegação global, selecione **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
    ![recursos](assets/resources.png)
 
    ![ativlement-resource](assets/enablement-resource.png)
 * Selecione o site da comunidade ao qual os recursos de ativação estão sendo adicionados:
-   * Selecione Tutorial **[!UICONTROL de ativação]**.
+   * Selecione **[!UICONTROL Tutorial de ativação]**.
 * No menu, selecione **[!UICONTROL Criar]**.
 * Selecione **[!UICONTROL Recurso]**.
 
@@ -46,7 +46,7 @@ Preencha as informações básicas do Recurso:
 
    Defina para o nome do site da comunidade selecionado: Tutorial de ativação
 
-* **[!UICONTROL Nome do recurso &amp;ast;]**
+* **[!UICONTROL Nome do &amp;Recurso;]**
 
    Lição de Esqui 1
 
@@ -56,7 +56,7 @@ Preencha as informações básicas do Recurso:
 
 * **[!UICONTROL Mostrar no catálogo]**
 
-   Defina para **Ligado**.
+   Defina para **On**.
 
 * **[!UICONTROL Descrição]**
 
@@ -74,7 +74,7 @@ Preencha as informações básicas do Recurso:
 
 Embora pareça que vários Recursos podem ser selecionados, somente um é permitido.
 
-Selecione o `'+' icon`, no canto superior direito, para iniciar o processo de escolha do Recurso identificando a fonte.
+Selecione `'+' icon`, no canto superior direito, para iniciar o processo de escolha do Recurso identificando a fonte.
 
 ![add-content](assets/add-content.png)
 
@@ -100,15 +100,15 @@ Carregar um recurso. Se um recurso de vídeo fizer upload de uma imagem personal
 
    *(Opcional)* Deixe em branco.
 
-* **[!UICONTROL &amp;Painel de Recurso;ast;]**
+* **[!UICONTROL Contato do &amp;Recurso;]**
 
-   *(Obrigatório)* Use o menu suspenso para selecionar o membro `Quinn Harper`.
+   *(Obrigatório)* Use o menu suspenso para selecionar o membro  `Quinn Harper`.
 
 * **[!UICONTROL Especialista de recurso]**
 
    *(Opcional)* Deixe em branco.
 
-   **Observação**: Se os usuários ou grupos não estiverem visíveis, verifique se foram adicionados ao `Community Enable Members` grupo e *salvos* na instância de publicação.
+   **Observação**: Se os usuários ou grupos não estiverem visíveis, verifique se foram adicionados ao  `Community Enable Members` grupo e  ** salvos na instância de publicação.
 
    ![ativlement-settings](assets/enablement-settings.png)
 
@@ -130,11 +130,11 @@ Criação bem-sucedida do Recurso retorna ao console Recursos com o Recurso rec�
 
 Para carregar uma nova versão do recurso de ativação, é recomendável criar um novo Recurso e, em seguida, cancelar a inscrição de membros da versão antiga e inscrevê-los na nova versão.
 
-### Publicar o recurso {#publish-the-resource}
+### Publicar o Recurso {#publish-the-resource}
 
 Antes de os inscritos poderem ver o recurso atribuído, ele deve ser publicado:
 
-* Selecionar o `Publish` ícone do mundo
+* Selecione o ícone do mundo `Publish`
 
 A ativação é confirmada com uma mensagem de sucesso:
 
@@ -146,7 +146,7 @@ Repita as etapas acima para criar e publicar um segundo recurso de ativação re
 
 ![add-resource](assets/add-resource.png)
 
-**Publique** o segundo recurso.
+**** Publicar o segundo recurso.
 
 Retorne à lista Tutorial de ativação de Recursos.
 
@@ -159,11 +159,11 @@ Retorne à lista Tutorial de ativação de Recursos.
 Um caminho de aprendizado é um agrupamento lógico de recursos de ativação que formam um curso.
 
 * No console Recursos, selecione `+ Create`
-* Select **[!UICONTROL Learning Path]**
+* Selecione **[!UICONTROL Caminho de aprendizado]**
 
 ![add-learning-path](assets/add-learning-path.png)
 
-Adicione as Informações **** básicas:
+Adicione as **[!UICONTROL Informações básicas]**:
 
 * **[!UICONTROL Nome do Caminho de aprendizagem]**
 
@@ -193,7 +193,7 @@ No painel Adicionar recursos:
 
 * Selecione `+ Add Resources` para selecionar os 2 recursos de lesões de esqui a serem adicionados ao caminho de aprendizado.
 
-   Observação: Somente Recursos **publicados** poderão ser selecionados.
+   Observação: Somente os recursos **publicados** serão selecionáveis.
 
 >[!NOTE]
 >
@@ -211,11 +211,11 @@ No painel Adicionar recursos:
 
 * **[!UICONTROL Adicionar responsáveis]**
 
-   Use o menu suspenso para selecionar o `Community Ski Class` grupo, que deve incluir os membros `Riley Taylor` e `Sidney Croft.`
+   Use o menu suspenso para selecionar o grupo `Community Ski Class`, que deve incluir os membros `Riley Taylor` e `Sidney Croft.`
 
-* **[!UICONTROL &amp;Painel de Contato do Caminho de Aprendizagem;ast;]**
+* **[!UICONTROL &amp;Contato do Caminho de Aprendizagem;]**
 
-   *(Obrigatório)* Use o menu suspenso para selecionar o membro `Quinn Harper`.
+   *(Obrigatório)* Use o menu suspenso para selecionar o membro  `Quinn Harper`.
 
 * Selecione **[!UICONTROL Criar]**.
 
@@ -223,5 +223,5 @@ No painel Adicionar recursos:
 
 A criação bem-sucedida do caminho de aprendizado retorna ao console Recursos com o caminho de aprendizado recém-criado selecionado. Desse console, é possível publicar, adicionar alunos e alterar outras configurações.
 
-**Publique** o caminho de aprendizado.
+**** Publicar o caminho de aprendizado.
 
