@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Mapeamento de grupos de usuários personalizados no AEM 6.5 {#custom-user-group-mapping-in-aem}
+# Mapeamento personalizado de grupos de usuários no AEM 6.5 {#custom-user-group-mapping-in-aem}
 
 ## Comparação do conteúdo JCR relacionado ao CUG {#comparison-of-jcr-content-related-to-cug}
 
@@ -53,7 +53,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## Comparação de serviços OSGi {#comparison-of-osgi-services}
+## Comparação dos serviços OSGi {#comparison-of-osgi-services}
 
 **Versões anteriores AEM**
 
@@ -89,7 +89,7 @@ Serviço para configurar a lista de exclusão de principais que não devem ser a
 
    >[!NOTE]
    > 
-   >Se o não `CugExcludeImpl` estiver configurado, o `CugConfiguration` reverterá para o padrão.
+   >Se `CugExcludeImpl` não estiver configurado, `CugConfiguration` voltará ao padrão.
 
    É possível conectar uma implementação CugExclude personalizada em caso de necessidades especiais.
 
