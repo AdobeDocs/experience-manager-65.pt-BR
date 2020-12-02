@@ -18,11 +18,11 @@ ht-degree: 17%
 ---
 
 
-# Componentes, funções e recursos básicos  {#component-function-and-feature-essentials}
+# Componentes, funções e recursos essenciais {#component-function-and-feature-essentials}
 
-Os recursos do AEM Communities exigem que os visitantes do site se tornem membros e façam logon no site [da](overview.md#communitiessites) comunidade antes de poderem publicar conteúdo. Assim, os modelos [de site da](sites.md)comunidade, a partir dos quais um site da comunidade é [criado](sites-console.md), são projetados para incluir um recurso de logon, bem como perfis do usuário, mensagens, pesquisa, moderação e tradução.
+Os recursos do AEM Communities exigem que os visitantes do site se tornem membros e façam logon no [site da comunidade](overview.md#communitiessites) antes de poderem publicar conteúdo. Assim, [modelos de site da comunidade](sites.md), a partir dos quais um site da comunidade é [criado](sites-console.md), são projetados para incluir um recurso de logon, bem como perfis de usuário, mensagens, pesquisa, moderação e tradução.
 
-Um site da comunidade oferecerá suporte aos membros que criam grupos da comunidade quando a função [de grupos da](functions.md#groups-function) comunidade for incluída no modelo de site da comunidade selecionada.
+Um site da comunidade oferecerá suporte aos membros que criam grupos da comunidade quando a [função de grupos da comunidade](functions.md#groups-function) for incluída no modelo de site da comunidade selecionada.
 
 A seguir estão links para informações essenciais para componentes, funções e recursos das Comunidades.
 
@@ -41,7 +41,7 @@ A seguir estão links para informações essenciais para componentes, funções 
 
 * [Fluxos de atividade](essentials-activities.md)
 * [Atribuições](essentials-assignments.md)
-* [Blog](blog-developer-basics.md) ( `Journal`)
+* [Blog](blog-developer-basics.md) (  `Journal`)
 
 * [Calendário](calendar-basics-for-developers.md)
 * [Catálogo](catalog-developer-essentials.md)
@@ -64,16 +64,16 @@ A seguir estão links para informações essenciais para componentes, funções 
 * [Pontuação e emblemas](configure-scoring.md)
 * [Pesquisar](search-implementation.md)
 * [Gráfico social](essentials-socialgraph.md)
-* [Provedor de recursos do Armazenamento](srp-and-ugc.md) `(SRP)`
+* [Provedor de recursos do armazenamento](srp-and-ugc.md) `(SRP)`
 
 * [Marcação com tags](tag.md)
 
 ## Javadocs {#javadocs}
 
-Os javadocs [online](../../help/sites-developing/reference-materials.md) refletem as APIs disponíveis na versão AEM 6.3.
+O [javadocs online](../../help/sites-developing/reference-materials.md) reflete as APIs disponíveis na versão AEM 6.3.
 As APIs de comunidades estão em `com.adobe.cq.social.*` pacotes.
 
-Para cada pacote [de](deploy-communities.md#latestfeaturepack)recursos, um jar javadoc é disponibilizado. Para obter mais informações, visite [Usando o Maven para comunidades](maven.md#javadocs).
+Para cada [pacote de recursos](deploy-communities.md#latestfeaturepack), um jar javadoc é disponibilizado. Para obter mais informações, visite [Usando o Maven para Communities](maven.md#javadocs).
 
 ## Informações adicionais {#additional-information}
 
@@ -81,7 +81,7 @@ Para cada pacote [de](deploy-communities.md#latestfeaturepack)recursos, um jar j
 
    * [Personalizações do cliente](client-customize.md)
    * [Personalizações do servidor](server-customize.md)
-   * [Visão geral do provedor de recursos do Armazenamento](srp.md)
+   * [Visão geral do provedor de recursos do armazenamento](srp.md)
 
 * [Diretrizes de codificação](code-guide.md)
 * [Tutoriais](tutorials.md)
