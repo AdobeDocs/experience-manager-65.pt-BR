@@ -28,7 +28,7 @@ O ContextHub fornece vários candidatos de armazenamento de amostra que podem se
 >
 >Os candidatos à loja de amostras são fornecidos como configurações de referência para ajudá-lo a criar sua própria configuração dedicada ao seu projeto e, portanto, não devem ser usados diretamente.
 
-## candidato à loja de amostra aem.segmentation {#aem-segmentation-sample-store-candidate}
+## aem.segmentation Sample Store Candidato {#aem-segmentation-sample-store-candidate}
 
 Armazenar para segmentos do ContextHub resolvidos e não resolvidos. Recupera segmentos automaticamente do ContextHub SegmentManager.
 
@@ -38,7 +38,7 @@ Armazenar para segmentos do ContextHub resolvidos e não resolvidos. Recupera se
 
 ### Implementação básica {#base-implementation-segmentation}
 
-O candidato a armazenamento aem.segmentation se estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+O candidato a repositório aem.segmentation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuração {#configuration-segmentation}
 
@@ -54,7 +54,7 @@ Ao criar um armazenamento aem.segmentation, não é necessário fornecer uma con
 }
 ```
 
-## candidato à Loja de Amostra do contexthub.geolocation {#contexthub-geolocation-sample-store-candidate}
+## context.geolocation Sample Store Candidato {#contexthub-geolocation-sample-store-candidate}
 
 O candidato do repositório de amostra contexthub.geolocation usa o Google Maps para obter e armazenar informações sobre a localização do cliente.
 
@@ -64,7 +64,7 @@ O candidato do repositório de amostra contexthub.geolocation usa o Google Maps 
 
 ### Implementação básica {#base-implementation-geolocation}
 
-O candidato da loja contexthub.geolocation se estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+O candidato do repositório contexthub.geolocation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuração {#configuration-geolocation}
 
@@ -110,9 +110,9 @@ O armazenamento usa uma árvore de dados semelhante ao seguinte exemplo:
 
 >[!NOTE]
 >
->Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas sobre uma conexão segura. Portanto, AEM força o uso de https para chamadas de API de localização geográfica se o AEM também estiver sendo executado em https. Caso contrário, http é usado para seguir a política da mesma origem. Veja [essa postagem](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) do Google para obter mais detalhes sobre a mudança no Chrome.
+>Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas sobre uma conexão segura. Portanto, AEM força o uso de https para chamadas de API de localização geográfica se o AEM também estiver sendo executado em https. Caso contrário, http é usado para seguir a política da mesma origem. Consulte [esta postagem do blog do Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obter mais detalhes sobre a mudança no Chrome.
 
-## candidato à loja de amostra contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
+## candidato da loja de amostra do contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
 
 Armazena informações sobre o ambiente cliente atual, como dispositivo, janela, navegador, data e hora.
 
@@ -122,7 +122,7 @@ Armazena informações sobre o ambiente cliente atual, como dispositivo, janela,
 
 ### Implementação básica {#base-implementation-surferinfo}
 
-O candidato da loja contexthub.datetime estende-se [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+O candidato do repositório contexthub.datetime estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuração {#configuration-surferinfo}
 
@@ -179,7 +179,7 @@ As lojas que usam esse candidato de loja têm uma árvore de dados semelhante ao
 }
 ```
 
-## candidato à loja de amostra granite.emulators {#granite-emulators-sample-store-candidate}
+## Candidato à loja de amostra granite.emulators {#granite-emulators-sample-store-candidate}
 
 O candidato de armazenamento de amostra granite.emulators armazena informações sobre dispositivos cliente.
 
@@ -189,11 +189,11 @@ O candidato de armazenamento de amostra granite.emulators armazena informações
 
 ### Implementação básica {#base-implementation-emulators}
 
-O candidato da loja contexthub.geolocation se estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+O candidato do repositório contexthub.geolocation estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuração {#configuration-emulators}
 
-A configuração padrão inclui um storage chamado `defaultEmulators` que contém informações sobre diferentes dispositivos. Ao criar uma loja, forneça perfis de dispositivo diferentes na propriedade Detail Configuration conforme necessário, usando o formato ilustrado no exemplo a seguir:
+A configuração padrão inclui uma matriz chamada `defaultEmulators` que contém informações sobre diferentes dispositivos. Ao criar uma loja, forneça perfis de dispositivo diferentes na propriedade Detail Configuration conforme necessário, usando o formato ilustrado no exemplo a seguir:
 
 ```xml
 {
@@ -312,7 +312,7 @@ A árvore de dados de armazenamento é semelhante ao seguinte exemplo:
 }
 ```
 
-## candidato à loja de amostra granite.perfil {#granite-profile-sample-store-candidate}
+## candidato à loja de amostra do granite.perfil {#granite-profile-sample-store-candidate}
 
 Armazena informações sobre o usuário atual.
 
@@ -322,7 +322,7 @@ Armazena informações sobre o usuário atual.
 
 ### Implementação básica {#base-implementation-profile}
 
-O candidato da loja contexthub.datetime estende-se [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+O candidato do repositório contexthub.datetime estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuração {#configuration-profile}
 
