@@ -1,6 +1,6 @@
 ---
-title: Pesquisar
-seo-title: Pesquisar
+title: 'Pesquisar  '
+seo-title: 'Pesquisar  '
 description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
 seo-description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
@@ -12,6 +12,9 @@ discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 96%
 
 ---
 
@@ -30,15 +33,15 @@ A pesquisa está disponível na barra de ferramentas superior:
 
 ![](do-not-localize/chlimage_1-17.png)
 
-Com o trilho de pesquisa, você pode:
+Com o painel de pesquisa, você pode:
 
-* Pesquise por uma palavra-chave, um caminho ou uma tag específica. 
+* Pesquise por uma palavra-chave, um caminho ou uma tag específica.
 * Filtre de acordo com os critérios específicos dos recursos, como datas modificadas, status da página, tamanho do arquivo, etc.
 * Defina e use uma [pesquisa salva](#saved-searches) - com base nos critérios acima.
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>A pesquisa também pode ser invocada usando a tecla de atalho `/` (barra) sempre que o painel de pesquisa estiver visível.
 
 ## Pesquisar e filtrar {#search-and-filter}
 
@@ -71,13 +74,14 @@ Para pesquisar e filtrar os recursos:
    * Diretório de pesquisa
    * Tags
    * Critérios de pesquisa; por exemplo, datas modificadas, status de publicação, status da Live Copy. 
+
    >[!NOTE]
    >
    >O critério de pesquisa pode variar:
    >
    >
    >
-   >    * Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Assets e Communities são compreensivelmente especializados.
+   >    * Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Ativos e comunidades são compreensivelmente especializados.
    >    * Sua instância, como os [Formulários de pesquisa,](/help/sites-administering/search-forms.md) pode ser personalizada (adequada ao local no AEM).
 
 
@@ -87,7 +91,7 @@ Para pesquisar e filtrar os recursos:
 
    ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 
-1. Feche a opção **Pesquisar** com o **X** (parte superior direita).
+1. Feche a **Pesquisa** com o **X** (canto superior direito).
 
 >[!NOTE]
 >
@@ -95,9 +99,9 @@ Para pesquisar e filtrar os recursos:
 >
 >Quando você seleciona um item na página de resultados da pesquisa e retorna à página de pesquisa após usar o botão Voltar do navegador, os critérios de pesquisa permanecem.
 
-## Saved Searches {#saved-searches}
+## Pesquisas salvas {#saved-searches}
 
-Além de pesquisar por uma grande variedade de aspectos, também é possível salvar uma configuração de pesquisa específica para recuperar e usar em uma etapa posterior:
+Além de pesquisar por uma grande variedade de aspectos, também é possível salvar uma configuração de pesquisa específica para recuperar e usar em um estágio posterior:
 
 1. Defina o seu critério de pesquisa e selecione **Salvar**.
 
@@ -116,6 +120,6 @@ Além de pesquisar por uma grande variedade de aspectos, também é possível sa
    * Use **X** (em comparação ao nome da pesquisa salva) para iniciar uma nova consulta (a própria pesquisa salva não será excluída).
    * **Edite a pesquisa salva**, altere as condições de pesquisa e, em seguida, **Salve** novamente.
 
-Para modificar uma pesquisa salva, selecione-a e clique em **Editar pesquisa alva**, na parte inferior do painel de pesquisa.
+As pesquisas salvas podem ser modificadas ao selecionar a pesquisa salva e clicar em **Editar pesquisa salva** na parte inferior do painel de pesquisa.
 
 ![screen-shot_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)
