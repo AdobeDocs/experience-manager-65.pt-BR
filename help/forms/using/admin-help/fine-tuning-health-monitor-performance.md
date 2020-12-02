@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
 
 # Ajuste do desempenho do Monitor de Integridade{#fine-tuning-health-monitor-performance}
 
-A coleta de estatísticas do sistema que preenchem o Monitor de integridade afeta o desempenho do ambiente de formulários do AEM. Esse impacto pode ser controlado pela configuração das opções de Java listadas abaixo no servidor de aplicativos.
+A coleta de estatísticas do sistema que preenchem o Monitor de integridade afeta o desempenho do ambiente de formulários AEM. Esse impacto pode ser controlado pela configuração das opções de Java listadas abaixo no servidor de aplicativos.
 
 <table>
  <thead>
@@ -29,7 +32,7 @@ A coleta de estatísticas do sistema que preenchem o Monitor de integridade afet
  </thead>
  <tbody>
   <tr>
-   <td><p>adobe.saudável.monitor.enabled</p></td>
+   <td><p>adobe.healthmonitor.enabled</p></td>
    <td><p>Ativar ou desativar a thread do Monitor de Integridade</p></td>
    <td><p>verdadeiro</p></td>
   </tr>
@@ -39,7 +42,7 @@ A coleta de estatísticas do sistema que preenchem o Monitor de integridade afet
    <td><p>verdadeiro</p></td>
   </tr>
   <tr>
-   <td><p>adobe.saudmonitor.refresh-range</p></td>
+   <td><p>adobe.healthmonitor.refresh-interval</p></td>
    <td><p>O intervalo em milissegundos após o qual o thread do Monitor de Integridade coleta as estatísticas</p></td>
    <td><p>10 minutos (600.000 milissegundos)</p></td>
   </tr>
@@ -54,14 +57,14 @@ A coleta de estatísticas do sistema que preenchem o Monitor de integridade afet
    <td><p>600000</p></td>
   </tr>
   <tr>
-   <td><p>adobe.workmanager.saudmonitor.enabled</p></td>
+   <td><p>adobe.workmanager.healthmonitor.enabled</p></td>
    <td><p>Essa propriedade ativa ou desativa a coleta estatística do Gerenciador de Trabalho, como a contagem de itens de trabalho ou de trabalho.</p></td>
    <td><p>verdadeiro</p></td>
   </tr>
  </tbody>
 </table>
 
-## Adicionar opções Java a JBoss {#add-java-options-to-jboss}
+## Adicionar opções Java ao JBoss {#add-java-options-to-jboss}
 
 1. Pare o servidor de aplicativos JBoss.
 1. Abra o *[appserver root]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções Java conforme necessário.
@@ -69,7 +72,7 @@ A coleta de estatísticas do sistema que preenchem o Monitor de integridade afet
 
 ## Adicionar opções Java ao WebLogic {#add-java-options-to-weblogic}
 
-1. Start o console de administração WebLogic digitando https://[host name]:&#39;port&#39;/console na linha URL de um navegador da Web.
+1. Start o console de administração do WebLogic digitando https://[nome do host]:&#39;port&#39;/console na linha de URL de um navegador da Web.
 1. Digite o nome de usuário e a senha que você criou para o domínio do WebLogic Server e clique em Registrar em Change Center (Centro de alterações) e clique em Bloquear e editar.
 1. Em Estrutura do domínio, clique em Ambiente > Servidores e, no painel direito, clique no nome do servidor gerenciado.
 1. Na tela seguinte, clique na guia Configuração > guia Start do servidor.
@@ -89,5 +92,5 @@ A coleta de estatísticas do sistema que preenchem o Monitor de integridade afet
 1. Em Infraestrutura do servidor, clique em Java e fluxo de trabalho dos formulários > Definição do processo.
 1. Em Propriedades adicionais, clique em Java Virtual Machine.
 1. Na caixa Argumentos JVM genéricos, digite os argumentos necessários.
-1. Clique em OK ou Aplicar e em Salvar diretamente na configuração mestre.
+1. Clique em OK ou Aplicar e em Salvar diretamente na configuração principal.
 
