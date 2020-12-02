@@ -20,14 +20,14 @@ ht-degree: 1%
 
 # Recurso de catálogo {#catalog-feature}
 
-Os componentes [`Enablement Assignments`](assignments.md) e `Enablement Catalog` componentes encontrados no grupo Comunidades no navegador de componentes são componentes de uma comunidade [de](overview.md#enablement-community)ativação.
+Os componentes [`Enablement Assignments`](assignments.md) e `Enablement Catalog` encontrados no grupo Comunidades no navegador de componentes são componentes de uma [comunidade de ativação](overview.md#enablement-community).
 
-O `Enablement Catalog` componente permite que os membros da comunidade acessem um catálogo de recursos [de](resources.md)ativação. O uso de tags AEM é uma parte importante do gerenciamento da lista de recursos de ativação em um catálogo (consulte [Marcação de recursos](tag-resources.md)de ativação).
+O componente `Enablement Catalog` permite que os membros da comunidade acessem um catálogo de [recursos de ativação](resources.md). O uso de tags AEM é uma parte importante do gerenciamento da lista de recursos de ativação em um catálogo (consulte [Marcando recursos de ativação](tag-resources.md)).
 
-No [tutorial Introdução às AEM Communities de ativação](getting-started-enablement.md) , consulte a visualização de atribuições e catálogos de um membro na seção [Experiência no site](enablement-published-site.md) publicado.
+No tutorial [Introdução ao AEM Communities para Ativação](getting-started-enablement.md), consulte a visualização de atribuições e catálogos de um membro na seção [Experimente o Site Publicado](enablement-published-site.md).
 
 ## Informações adicionais {#additional-information}
 
 Mais informações podem ser encontradas na página [Catalog Essentials](catalog-developer-essentials.md) para desenvolvedores.
 
-A função [de](functions.md#catalog-function) catálogo está disponível ao criar um site [da](sites-console.md)comunidade.
+A [função de catálogo](functions.md#catalog-function) está disponível ao criar um [site da comunidade](sites-console.md).
