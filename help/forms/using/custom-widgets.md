@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Criar aparências personalizadas em formulários HTML5{#create-custom-appearances-in-html-forms}
 
-Você pode conectar widgets personalizados a um Forms móvel. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados usando a estrutura de aparências. O mecanismo XFA usa vários widgets. Consulte a Estrutura de [aparência para formulários](/help/forms/using/introduction-widgets.md) adaptáveis e HTML5 para obter informações detalhadas.
+Você pode conectar widgets personalizados a um Forms móvel. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados usando a estrutura de aparências. O mecanismo XFA usa vários widgets, consulte [Estrutura de aparência para formulários adaptáveis e HTML5](/help/forms/using/introduction-widgets.md) para obter informações detalhadas.
 
 ![Um exemplo do widget padrão e personalizado](assets/custom-widgets.jpg)
 
@@ -31,11 +31,11 @@ Um exemplo do widget padrão e personalizado
 
 ### Criar um perfil  {#create-a-profile-nbsp}
 
-Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre como criar perfis, consulte [Criação de Perfis](/help/forms/using/custom-profile.md)personalizados.
+Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre a criação de perfis, consulte [Criação de Perfis personalizados](/help/forms/using/custom-profile.md).
 
 ### Criar um widget {#create-a-widget}
 
-Formulários HTML5 fornecem uma implementação da estrutura do widget que pode ser estendida para criar novos widgets. A implementação é um widget *abstractWidget* do jQuery que pode ser estendido para gravar um novo widget. O novo widget só pode ser ativado se você estender/substituir as funções mencionadas abaixo.
+Formulários HTML5 fornecem uma implementação da estrutura do widget que pode ser estendida para criar novos widgets. A implementação é um widget jQuery *abstractWidget* que pode ser estendido para gravar um novo widget. O novo widget só pode ser ativado se você estender/substituir as funções mencionadas abaixo.
 
 <table>
  <tbody>
@@ -78,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrar widget personalizado com mecanismo de script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Quando o código do widget personalizado estiver pronto, registre o widget com o mecanismo de scripts usando a `registerConfig`API para o [Form Bridge](/help/forms/using/form-bridge-apis.md). É necessário o widgetConfigObject como entrada.
+Quando o código do widget personalizado estiver pronto, registre o widget com o mecanismo de scripts usando `registerConfig`API para [Form Bridge](/help/forms/using/form-bridge-apis.md). É necessário o widgetConfigObject como entrada.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
