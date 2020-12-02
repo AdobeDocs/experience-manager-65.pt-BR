@@ -18,14 +18,14 @@ ht-degree: 6%
 ---
 
 
-# Conteúdo essencial em destaque  {#featured-content-essentials}
+# Conteúdo essencial em destaque {#featured-content-essentials}
 
 Esta página fornece as informações essenciais para trabalhar com conteúdo em destaque.
 
 Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permite que o conteúdo seja destacado em qualquer lugar no site da comunidade.
 
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -51,7 +51,7 @@ Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permi
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte Conteúdo <a href="featured.md">em destaque</a></td>
+   <td>Consulte <a href="featured.md">Conteúdo em destaque</a></td>
   </tr>
  </tbody>
 </table>
@@ -60,4 +60,4 @@ Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permi
 
 ### Função da biblioteca de arquivo {#file-library-function}
 
-Uma estrutura de site da comunidade que inclui a função [Conteúdo](functions.md#featured-content-function)em destaque, inclui um `featured content` componente configurado.
+Uma estrutura de site da comunidade que inclui a [função de Conteúdo em destaque](functions.md#featured-content-function), inclui um componente `featured content` configurado.
