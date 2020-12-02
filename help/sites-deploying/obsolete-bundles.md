@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Se o código depender desses pacotes, entre em contato com o suporte da Adobe e peça um pacote de compatibilidade para a área afetada.
+>Se o seu código depender desses pacotes, entre em contato com o Suporte à Adobe e peça um pacote de compatibilidade para a área afetada.
 
-Ao atualizar para o AEM 6.3, os seguintes pacotes serão desinstalados automaticamente, dependendo de qual versão do AEM a atualização foi realizada:
+Durante a atualização para o AEM 6.3, os seguintes pacotes serão desinstalados automaticamente, dependendo de AEM versão da atualização:
 
 **AEM 6.1:**
 
@@ -34,7 +37,7 @@ Ao atualizar para o AEM 6.3, os seguintes pacotes serão desinstalados automatic
 * com.adobe.cq.cq-creativecloud-cloudims, versão 0.0.10, Ativo
 * com.adobe.cq.cq-creativecloud-commons, versão 0.0.8, Ativo
 * com.adobe.cq.cq-creativecloud-filesync, versão 0.0.12, instalado
-* com.adobe.cq.cq-creativecloud-storage, versão 0.0.8, instalado
+* com.adobe.cq.cq-creativecloud-armazenamento, versão 0.0.8, instalado
 * biz.Qute.bndlib, versão 1.43.0, Ativa
 * com.day.cq.dam.commons.nekohtml, versão 0.9.5, Ativa
 * com.day.cq.mcm.cq-mcm-silverpop-integration, versão 1.2.2, Ative
