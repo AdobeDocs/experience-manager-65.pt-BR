@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Formulários adaptáveis são parte integrante das interações do cliente. É importante testar seus formulários adaptáveis com todas as alterações feitas neles, como ao rolar um novo pacote de correções ou alterar uma regra no formulário. Entretanto, o teste funcional de formulários adaptativos e todos os campos neles contidos podem ser tediosos.
 
-O Calvin permite que você automatize o teste de seus formulários adaptáveis no navegador da Web. Calvin utiliza a interface de usuário [do Hobbes](/help/sites-developing/hobbes.md)para executar os testes e fornece as seguintes ferramentas:
+O Calvin permite que você automatize o teste de seus formulários adaptáveis no navegador da Web. Calvin utiliza a interface de usuário do [Hobbes](/help/sites-developing/hobbes.md) para executar os testes e fornece as seguintes ferramentas:
 
 * Uma API JavaScript para criação de testes.
 * Uma interface do usuário para executar testes.
@@ -93,7 +93,7 @@ Antes de usar este artigo para criar seus casos de teste, é necessário saber o
 * [Hobbes JavaScript APIs](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [Calvin JavaScript APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## Exemplo: Criar um conjunto de testes para um formulário adaptável usando Hobbes como estrutura de teste {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## Exemplo: Crie um conjunto de testes para um formulário adaptável usando Hobbes como estrutura de teste {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 O exemplo a seguir o orienta na criação de um conjunto de testes para testar vários formulários adaptáveis. É necessário criar um caso de teste separado para cada formulário que você precisa testar. Ao seguir etapas semelhantes às seguintes e modificar o código JavaScript na etapa 11, você pode criar seu próprio conjunto de testes para testar seus formulários adaptáveis.
 
@@ -130,7 +130,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Clique com o botão direito do mouse no nó de teste (aqui **afTestRegistration)** e clique em **Criar** > **Criar arquivo**. Nomeie o arquivo js.txt e clique em **OK**.
+1. Clique com o botão direito do mouse no nó de teste (aqui **afTestRegistration)** e clique em **Criar** > **Criar Arquivo**. Nomeie o arquivo js.txt e clique em **OK**.
 1. No arquivo js.txt, adicione o seguinte texto:
 
    ```javascript
@@ -156,7 +156,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
    }(window, window.hobs));
    ```
 
-   O código acima cria um conjunto de testes chamado Formulário **adaptável - Teste** de demonstração. Para criar um conjunto de testes com um nome diferente, altere o nome de acordo.
+   O código acima cria um conjunto de testes chamado **Formulário adaptável - Teste de demonstração**. Para criar um conjunto de testes com um nome diferente, altere o nome de acordo.
 
 1. Clique em **Criar** > **Criar nó** para criar um nó na pasta clientlib para cada formulário que você deseja testar. Este exemplo usa um nó chamado **testForm** para testar um formulário adaptável chamado **testForm**. Especifique as seguintes propriedades e clique em **OK**:
 
@@ -178,7 +178,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
 
 1. Clique com o botão direito do mouse na pasta que você criou para o formulário de teste (aqui testForm) e selecione **Criar** > **Criar arquivo**. Nomeie o arquivo scriptingTest.js e adicione o seguinte código ao arquivo e clique em **Salvar tudo.**
 
-   Para usar o seguinte código para testar outro formulário adaptável, altere o caminho e o nome do formulário em **navigateTo** (linhas 11, 36 e 62) e os respectivos casos de teste. Para obter mais informações sobre APIs para testar diferentes aspectos de formulários e objetos de formulário, consulte [Calvin APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Para usar o seguinte código para testar outro formulário adaptável, altere o caminho e o nome do formulário em **navigateTo** (linhas 11, 36 e 62) e os respectivos casos de teste. Para obter mais informações sobre APIs para testar diferentes aspectos de formulários e objetos de formulário, consulte [APIs de calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```javascript
    (function(window, hobs) {
@@ -272,7 +272,7 @@ O exemplo a seguir o orienta na criação de um conjunto de testes para testar v
     }(window, window.hobs));
    ```
 
-   O caso de teste é criado. Continue a executar o caso de teste para testar formulários adaptáveis por meio de Hobbes. Para obter etapas para executar os casos de teste, consulte [Executando testes em Testar sua interface do usuário usando testes](/help/sites-developing/hobbes.md)automatizados.
+   O caso de teste é criado. Continue a executar o caso de teste para testar formulários adaptáveis por meio de Hobbes. Para obter etapas para executar os casos de teste, consulte [Executando testes em Testando sua interface do usuário usando testes automatizados](/help/sites-developing/hobbes.md).
 
 Você também pode instalar o pacote no arquivo anexado SampleTestPackage.zip para obter os mesmos resultados das etapas explicadas em Exemplo: Crie um conjunto de testes para um formulário adaptável usando Hobbes como estrutura de teste.
 
@@ -284,9 +284,9 @@ Você também pode instalar o pacote no arquivo anexado SampleTestPackage.zip pa
 
 Os Conjuntos de testes podem ser executados individualmente. Quando você executa um Test Suite, a página é alterada à medida que os Casos de teste e suas Ações são executados e os resultados são exibidos após a conclusão do teste. Os ícones indicam os resultados.
 
-Um ícone de marca de seleção indica um teste aprovado: ![marca](assets/checkmark.png)
+Um ícone de marca de seleção indica um teste aprovado: ![marca de verificação](assets/checkmark.png)
 
-Um ícone &quot;X&quot; indica uma falha no teste: ![cruz](assets/cross.png)
+Um ícone &quot;X&quot; indica uma falha no teste: ![cross](assets/cross.png)
 
 Para executar um Test Suite:
 
