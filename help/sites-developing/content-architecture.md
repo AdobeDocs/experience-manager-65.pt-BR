@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +26,11 @@ O Modelo de David foi escrito por David Nuescheler anos atrás, mas as ideias s�
 
 * Os dados vêm primeiro, depois a estrutura. Talvez.
 * Direcione a hierarquia de conteúdo, não deixe que isso aconteça.
-* Os espaços de trabalho são para `clone()`, `merge()`e `update()`.
+* Os espaços de trabalho são para `clone()`, `merge()` e `update()`.
 * Cuidado com o mesmo nome de irmãos.
 * As referências são consideradas prejudiciais.
 * Arquivos são arquivos.
-*  As IDs são más.
+* As IDs são más.
 
 O modelo de David pode ser encontrado no wiki do Jackrabbit em [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
@@ -35,21 +38,21 @@ O modelo de David pode ser encontrado no wiki do Jackrabbit em [https://wiki.apa
 
 Tudo deve ser armazenado no repositório em vez de depender de fontes de dados de terceiros separadas, como bancos de dados. Isso se aplica ao conteúdo criado, aos dados binários, como imagens, código, configurações etc. Isso nos permite usar um conjunto de APIs para gerenciar todo o conteúdo e gerenciar a promoção desse conteúdo por meio da replicação. Também ganhamos uma única fonte de backup, registro, etc.
 
-### Usar o princípio de design &quot;content model first&quot; {#use-the-content-model-first-design-principle}
+### Use o princípio de design &quot;content model first&quot; {#use-the-content-model-first-design-principle}
 
-Ao criar um novo recurso, comece sempre projetando a estrutura de conteúdo JCR primeiro e depois procure ler e gravar seu conteúdo usando os servlets Sling padrão. Isso permitirá garantir que sua implementação funcione bem com mecanismos de controle de acesso prontos e permitirá que você evite gerar servlets desnecessários ao estilo CRUD.
+Ao criar um novo recurso, sempre faça start ao projetar a estrutura de conteúdo JCR primeiro e, em seguida, procure ler e gravar seu conteúdo usando os servlets Sling padrão. Isso permitirá garantir que sua implementação funcione bem com mecanismos de controle de acesso prontos para uso e permitirá evitar a geração de servlets desnecessários ao estilo CRUD.
 
 ### Seja RESTful {#be-restful}
 
-Servlets devem ser definidos com base em resourceTypes em vez de caminhos. Isso possibilita o uso de controles de acesso JCR, o cumprimento dos princípios REST e o uso do resolvedor de recursos e recursos que são fornecidos para nós na solicitação. Isso também permite alterar os scripts que renderizam URLs no lado do servidor sem precisar alterar quaisquer URLs do lado do cliente, enquanto oculta detalhes de implementação do lado do servidor do cliente para maior segurança.
+Servlets devem ser definidos com base em resourceTypes em vez de caminhos. Isso possibilita usar controles de acesso JCR, seguir os princípios REST e usar o resolvedor de recursos e recursos que nos são fornecidos na solicitação. Isso também permite alterar os scripts que renderizam URLs no lado do servidor sem precisar alterar quaisquer URLs do lado do cliente, enquanto oculta detalhes de implementação do lado do servidor do cliente para maior segurança.
 
 ### Evite definir novos tipos de nó {#avoid-defining-new-node-types}
 
-Os tipos de nó funcionam em um nível baixo na camada de infraestrutura e a maioria dos requisitos pode ser atendida usando um sling:resourceType atribuído a um tipo de nó nt:unstructed, oak:Unstructed, sling:Folder ou cq:Page. Os tipos de nó correspondem ao esquema no repositório e a alteração dos tipos de nó pode ser muito cara na estrada.
+Os tipos de nó funcionam em um nível baixo na camada de infraestrutura e a maioria dos requisitos pode ser atendida usando um sling:resourceType atribuído a um tipo de nó nt:unstructed, oak:Unstructed, sling:Folder ou cq:Page. Os tipos de nó correspondem ao schema no repositório e a alteração dos tipos de nó pode ser muito cara na estrada.
 
 ### Aceitar convenções de nomenclatura no JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-O cumprimento das convenções de nomenclatura adicionará consistência à sua base de códigos, diminuindo a taxa de incidência de defeitos e aumentando a velocidade de trabalho dos desenvolvedores no sistema. As seguintes convenções são usadas pela Adobe no desenvolvimento do AEM:
+O cumprimento das convenções de nomenclatura adicionará consistência à sua base de códigos, diminuindo a taxa de incidência de defeitos e aumentando a velocidade de trabalho dos desenvolvedores no sistema. As seguintes convenções são usadas pela Adobe no desenvolvimento de AEM:
 
 * Nomes de nó
 
