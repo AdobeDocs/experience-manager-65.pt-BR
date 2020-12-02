@@ -1,6 +1,6 @@
 ---
-title: Atalhos de teclado para os consoles
-seo-title: Atalhos de teclado para os consoles
+title: 'Atalhos de teclado para Consoles  '
+seo-title: Atalhos de teclado para Consoles
 description: Poupe tempo durante a criação usando estes atalhos de teclado
 seo-description: Poupe tempo durante a criação usando estes atalhos de teclado
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 100%
 
 ---
 
 
-# Atalhos de teclado para os consoles{#keyboard-shortcuts-for-consoles}
+# Atalhos de teclado para Consoles  {#keyboard-shortcuts-for-consoles}
 
 Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à [edição de página](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
@@ -30,15 +33,15 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Commerce, Scree
 | Local | Atalho | Descrição |
 |---|---|---|
 | Geral | `Ctrl+Click` | Multisseleção em um dispositivo de desktop |
-| Console - Exibição de coluna e Exibição de conteúdo | `Right Arrow` | Navegar para baixo na estrutura do site / expandir o nó da árvore |
+| Console - Exibição de coluna e exibição de conteúdo | `Right Arrow` | Navegar para baixo na estrutura do site / expandir o nó da árvore |
 |  | `Left Arrow` | Navegar para cima na estrutura de árvore / recolher o nó de árvore |
 |  | `Down Arrow` | Mova para baixo uma lista de páginas no mesmo nível |
 |  | `Up Arrow` | Mova para cima uma lista de páginas no mesmo nível |
-| Console - Exibição de Coluna | `Shift-Up/Down Arrow` | Mova para cima uma lista de páginas no mesmo nível |
+| Console - Exibição de coluna | `Shift-Up/Down Arrow` | Mova para cima uma lista de páginas no mesmo nível |
 |  | `Esc` | Mova para cima uma lista de páginas no mesmo nível |
 | Consoles | `?` | Ajuda dos atalhos de teclado |
 |  | `/` | Executar a [pesquisa](/help/sites-authoring/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-authoring/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | Alternar para a opção de [seletor do painel](/help/sites-authoring/basic-handling.md#rail-selector) que deseja exibir |
 |  | ` | Ocultar painel |
 |  | `e` | Editar |
 |  | `p` | Propriedades |
@@ -77,7 +80,7 @@ Além disso, os atalhos de teclado são os mesmos para todas as localidades e la
 >
 >Os atalhos de teclado do AEM podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
 >
->A Adobe recomenda[desabilitar os atalhos de teclado do AEM](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
+>A Adobe recomenda [desabilitar os atalhos de teclado do AEM](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
 
 ## Desativar atalhos de teclado {#deactivating-keyboard-shortcuts}
 
