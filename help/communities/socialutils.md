@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Refatoração de SocialUtils {#socialutils-refactoring}
+# Refatoração do SocialUtils {#socialutils-refactoring}
 
-## Pacote SocialUtils obsoleto {#socialutils-package-deprecated}
+## Pacote SocialUtils Substituído {#socialutils-package-deprecated}
 
 O pacote `com.adobe.cq.social.ugcbase.SocialUtils` foi substituído no AEM 6.1.
 
-As tabelas a seguir listas os métodos a serem usados no lugar dos `SocialUtils` métodos.
+As tabelas a seguir listas os métodos a serem usados no lugar dos métodos `SocialUtils`.
 
-## Pacote SocialResourceUtilities  {#socialresourceutilities-package}
+## Pacote SocialResourceUtilities {#socialresourceutilities-package}
 
 | Métodos em com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -60,7 +60,7 @@ As tabelas a seguir listas os métodos a serem usados no lugar dos `SocialUtils`
 | String getSocialProfileURL(String username, ResourceResolver resolver, página) |
 | UserProperties getUserProperties(Resolver de Recursos, UserId de Cadeia de Caracteres) |
 
-## For Internal Use Only {#for-internal-use-only}
+## Somente para uso interno {#for-internal-use-only}
 
 | booleano canAddNode(Session session, String path) |
 |---|
