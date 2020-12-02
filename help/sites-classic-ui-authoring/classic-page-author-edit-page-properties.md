@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +24,7 @@ Você pode definir as propriedades desejadas para uma página. Eles podem variar
 
 ## Propriedades da página {#page-properties}
 
-As propriedades são distribuídas por meio de várias guias:
+As propriedades são distribuídas por várias guias:
 
 ### Básico {#basic}
 
@@ -79,7 +82,7 @@ As propriedades são distribuídas por meio de várias guias:
 
    Permite inserir uma URL personalizada para esta página. Permite que você tenha uma URL mais curta e mais expressiva.
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   Por exemplo, se o URL personalizado estiver definido como w `elcome`para a página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,` então h `ttp://example.com/welcome`será o URL personalizado de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -93,7 +96,7 @@ As propriedades são distribuídas por meio de várias guias:
 
    Indica se você deseja que a página use a URL personalizada.
 
-### Avançado {#advanced}
+### Avançado  {#advanced}
 
 * **Idioma**
 
@@ -131,7 +134,7 @@ As propriedades são distribuídas por meio de várias guias:
 
    Especifique uma configuração de exportação.
 
-### Miniatura {#thumbnail}
+### Miniatura   {#thumbnail}
 
 * **Miniatura da página**
 
@@ -145,9 +148,9 @@ As propriedades são distribuídas por meio de várias guias:
 
       Carregue uma imagem para usar como miniatura.
 
-### Serviços em nuvem {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Serviços em nuvem**
+* **Cloud Services**
 
    Defina as propriedades para os [serviços em nuvem](/help/sites-developing/extending-cloud-config.md).
 
@@ -155,9 +158,9 @@ As propriedades são distribuídas por meio de várias guias:
 
 * **Personalização**
 
-   Selecione uma [Marca para especificar um escopo para a segmentação](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+   Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permissões {#permissions}
+### Permissões    {#permissions}
 
 * **Permissões** (interface otimizada para toque)
 
@@ -167,15 +170,15 @@ As propriedades são distribuídas por meio de várias guias:
 
 * **Blueprint**
 
-   Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live-copy.
+   Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site {#site-structure}
+### Estrutura do site   {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
