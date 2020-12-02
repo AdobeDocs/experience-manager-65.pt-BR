@@ -19,11 +19,11 @@ ht-degree: 3%
 ---
 
 
-# Princípios básicos para mensagens {#messaging-essentials}
+# Messaging Essentials {#messaging-essentials}
 
 Esta página documentos os detalhes de como trabalhar com o componente Mensagens para incluir um recurso de mensagem em um site.
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 **Escrever mensagem**
 
@@ -47,7 +47,7 @@ Esta página documentos os detalhes de como trabalhar com o componente Mensagens
   </tr>
   <tr>
    <td><strong>propriedades</strong></td>
-   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar mensagens</a></td>
+   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar Mensagens</a></td>
   </tr>
   <tr>
    <td><strong>configuração do administrador</strong></td>
@@ -71,7 +71,7 @@ Esta página documentos os detalhes de como trabalhar com o componente Mensagens
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelos</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
   </tr>
   <tr>
@@ -80,7 +80,7 @@ Esta página documentos os detalhes de como trabalhar com o componente Mensagens
   </tr>
   <tr>
    <td><strong>propriedades</strong></td>
-   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar mensagens</a></td>
+   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar Mensagens</a></td>
   </tr>
   <tr>
    <td><strong>configuração do administrador</strong></td>
@@ -89,19 +89,19 @@ Esta página documentos os detalhes de como trabalhar com o componente Mensagens
  </tbody>
 </table>
 
-Consulte também Personalizações do lado do [cliente](/help/communities/client-customize.md)
+Consulte também [Personalizações do cliente](/help/communities/client-customize.md)
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 * [Configuração de mensagens](/help/communities/configure-messaging.md)
-* [APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) de cliente de mensagens para componentes SCF
-* [APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) de mensagens para o serviço
+* [Mensagens de ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) APIs de cliente para componentes SCF
+* [Mensagens de ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) APIs para o serviço
 * [Pontos finais de mensagens](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizações do servidor](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->O parâmetro String *não* deve conter uma barra final &quot;/&quot; para os seguintes métodos do MessageBuilder:
+>O parâmetro String deve conter *not* uma barra à direita &quot;/&quot; para os seguintes métodos do MessageBuilder:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -118,32 +118,32 @@ Por exemplo:
 
 ### Site da comunidade {#community-site}
 
-Uma estrutura de site da comunidade, criada usando o assistente, inclui o recurso de mensagens quando selecionado. Consulte `User Management` Configurações do console [Sites da](/help/communities/sites-console.md#user-management)comunidade.
+Uma estrutura de site da comunidade, criada usando o assistente, inclui o recurso de mensagens quando selecionado. Consulte `User Management` configurações de [Console de sites da comunidade](/help/communities/sites-console.md#user-management).
 
-### Código de exemplo: Notificação de mensagem recebida {#sample-code-message-received-notification}
+### Código de exemplo: Notificação de Mensagem Recebida {#sample-code-message-received-notification}
 
 O recurso Mensagens sociais lança eventos para operações, por exemplo `send`, `marking read`, `marking delete`. Esses eventos podem ser capturados e as ações executadas nos dados contidos no evento.
 
-O exemplo a seguir é de um manipulador de eventos que escuta o `message sent` evento e envia um email para todos os recipient de mensagens que usam o `Day CQ Mail Service`.
+O exemplo a seguir é de um manipulador de eventos que escuta o evento `message sent` e envia um email para todos os recipient de mensagens usando o `Day CQ Mail Service`.
 
 Para tentar o script de amostra do servidor, é necessário um ambiente de desenvolvimento e a capacidade de criar um pacote OSGi:
 
-1. Faça logon como administrador do ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Crie uma `bundle node`entrada `/apps/engage/install` com nomes arbitrários, como:
+1. Faça logon como administrador em ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
+1. Crie um `bundle node`em `/apps/engage/install` com nomes arbitrários, como:
 
    * Nome simbólico: `com.engage.media.social.messaging.MessagingNotification`
    * Nome: Notificação de mensagem do tutorial de introdução
    * Descrição: Um exemplo de serviço para enviar uma notificação por email aos usuários quando eles receberem uma mensagem
    * Pacote: `com.engage.media.social.messaging.notification`
 
-1. Navegue até `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`e, em seguida:
+1. Navegue até `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification` e, em seguida:
 
-   1. Exclua a `Activator.java` classe criada automaticamente.
-   1. Criar classe `MessageEventHandler.java`.
+   1. Exclua a classe `Activator.java` criada automaticamente.
+   1. Crie a classe `MessageEventHandler.java`.
    1. Copie e cole o código abaixo em `MessageEventHandler.java`.
 
 1. Clique em **Salvar tudo**.
-1. Navegue até `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`e adicione todas as instruções de importação conforme gravadas no `MessageEventHandler.java` código.
+1. Navegue até `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` e adicione todas as instruções de importação conforme gravadas no código `MessageEventHandler.java`.
 1. Construa o pacote.
 1. Verifique se o serviço `Day CQ Mail Service`OSGi está configurado.
 1. Efetue logon como um usuário de demonstração e envie um email para outro usuário.
