@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Uso do Maven para comunidades {#using-maven-for-communities}
+# Usando o Maven para Comunidades {#using-maven-for-communities}
 
 ## Visão geral {#overview}
 
@@ -28,10 +28,10 @@ Esta seção da documentação da AEM Communities é complementar a:
 
 Agora existem dois artefatos &quot;uber&quot; que substituem artefatos individuais:
 
-* AEM API [Communities](#communities-api-jar-artifact)
+* AEM [jar da API Communities](#communities-api-jar-artifact)
 * AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
-## Artefato de molar da API das Comunidades {#communities-api-jar-artifact}
+## Artefato de jar da API das Comunidades {#communities-api-jar-artifact}
 
 Veja a seguir um exemplo de um GAV para o jar de API do AEM Communities:
 
@@ -47,7 +47,7 @@ Veja a seguir um exemplo de um GAV para o jar de API do AEM Communities:
 Verifique se a versão especificada corresponde à versão do pacote Communities instalada para AEM Communities. Para verificar o número da versão instalada:
 
 1. Faça logon com privilégios administrativos.
-1. Navegue até [Package Manager](../../help/sites-administering/package-manager.md). Por exemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Navegue até [Gerenciador de pacotes](../../help/sites-administering/package-manager.md). Por exemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
 1. Localize o pacote: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extraia a versão do nome do pacote:
@@ -58,7 +58,7 @@ Verifique se a versão especificada corresponde à versão do pacote Communities
 >
 >É recomendável manter-se atualizado com a versão mais recente das Comunidades.
 >
->Visite a seção Versões [mais recentes](deploy-communities.md#latest-releases) para identificar a versão mais recente.
+>Visite a seção [Versões mais recentes](deploy-communities.md#latest-releases) para identificar a versão mais recente.
 
 ## Exemplo de Dependência Maven {#maven-dependency-example}
 
