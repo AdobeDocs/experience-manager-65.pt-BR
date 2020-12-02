@@ -1,8 +1,8 @@
 ---
 title: Alteração do esquema de cores da interface
 seo-title: Alteração do esquema de cores da interface
-description: Como modificar seletivamente o esquema de cores das partes da interface do usuário da área de trabalho do AEM Forms.
-seo-description: Como modificar seletivamente o esquema de cores das partes da interface do usuário da área de trabalho do AEM Forms.
+description: Como modificar seletivamente o esquema de cores das partes da interface do usuário do espaço de trabalho AEM Forms.
+seo-description: Como modificar seletivamente o esquema de cores das partes da interface do usuário do espaço de trabalho AEM Forms.
 uuid: 32c32f7a-8271-4d2c-8a1f-ad5ab3c90b83
 contentOwner: robhagat
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
 
 # Alteração do esquema de cores da interface {#changing-the-color-scheme-of-the-interface}
 
-Você pode modificar o esquema de cores das partes da interface do usuário da área de trabalho do AEM Forms para atender às suas necessidades. Veja a seguir alguns exemplos de personalizações representativas do esquema de cores. Além das etapas discutidas neste artigo, consulte Etapas [genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
+Você pode modificar o esquema de cores das partes da interface do usuário do espaço de trabalho do AEM Forms para atender aos seus requisitos. Veja a seguir alguns exemplos de personalizações representativas do esquema de cores. Além das etapas discutidas neste artigo, consulte [Etapas genéricas para personalização do espaço de trabalho AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
-## Top navigation bar {#top-navigation-bar}
+## Barra de navegação superior {#top-navigation-bar}
 
 ### Uso da imagem de plano de fundo {#using-background-image}
 
@@ -40,7 +43,7 @@ Para atualizar a barra de navegação na parte superior da área de trabalho do 
    }
    ```
 
-### Uso da propriedade color no CSS {#using-color-property-in-css}
+### Uso da propriedade color em CSS {#using-color-property-in-css}
 
 1. Adicione o seguinte estilo em newStyle.css em /apps/ws/css
 
@@ -51,10 +54,10 @@ Para atualizar a barra de navegação na parte superior da área de trabalho do 
    }
    ```
 
-## componente Categoria {#category-component}
+## componente de categoria {#category-component}
 
-O componente de Categoria exibe as várias categorias de suas tarefas no painel esquerdo. Para alterar sua cor, defina a cor do plano de fundo no `.category` elemento do arquivo CSS.
+O componente de categoria exibe as várias categorias de suas tarefas no painel esquerdo. Para alterar sua cor, defina a cor do plano de fundo no elemento `.category` do arquivo CSS.
 
-## componente Tarefa {#task-component}
+## componente de tarefa {#task-component}
 
-As Tarefas são exibidas no painel do meio chamado Componente TaskList. Para alterar sua cor, modifique o estilo associado ao seletor .tarefa na folha de estilos.
+As tarefas são exibidas no painel do meio chamado Componente TaskList. Para alterar sua cor, modifique o estilo associado ao seletor .tarefa na folha de estilos.
