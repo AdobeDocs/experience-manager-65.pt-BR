@@ -1,6 +1,6 @@
 ---
-title: Atalhos de teclado para os consoles
-seo-title: Atalhos de teclado para os consoles
+title: 'Atalhos de teclado para Consoles  '
+seo-title: 'Atalhos de teclado para Consoles  '
 description: Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à edição de página.
 seo-description: Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à edição de página.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 97%
 
 ---
 
 
-# Atalhos de teclado para os consoles{#keyboard-shortcuts-for-consoles}
+# Atalhos de teclado para Consoles  {#keyboard-shortcuts-for-consoles}
 
 Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à [edição de página](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
@@ -27,6 +30,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
    >
    >
 * Mac: **Cmd**+**clique** nos componentes necessários.
+
 >
 
 
