@@ -1,8 +1,8 @@
 ---
-title: Integração de aplicativos de terceiros na área de trabalho do AEM Forms
-seo-title: Integração de aplicativos de terceiros na área de trabalho do AEM Forms
-description: Integre aplicativos de terceiros, como o Gerenciamento de correspondência, na área de trabalho do AEM Forms.
-seo-description: Como integrar aplicativos de terceiros como o Gerenciamento de correspondência na área de trabalho do AEM Forms.
+title: Integração de aplicativos de terceiros na área de trabalho AEM Forms
+seo-title: Integração de aplicativos de terceiros na área de trabalho AEM Forms
+description: Integre aplicativos de terceiros, como o Gerenciamento de correspondência, na área de trabalho da AEM Forms.
+seo-description: Como integrar aplicativos de terceiros como o Gerenciamento de correspondência na área de trabalho da AEM Forms.
 uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 # Integração de aplicativos de terceiros na área de trabalho do AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
-A área de trabalho do AEM Forms suporta o gerenciamento de atividades de conclusão e atribuição de tarefas para formulários e documentos. Esses formulários e documentos podem ser formulários XDP, formulários Flex® ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
+A área de trabalho da AEM Forms oferece suporte ao gerenciamento de atividades de atribuição e conclusão de tarefas para formulários e documentos. Esses formulários e documentos podem ser XDP Forms, Flex® ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
 
-Esses recursos são aprimorados ainda mais. Agora, o AEM Forms oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes à área de trabalho dos AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho da atribuição e aprovação subsequente de uma tarefa. O AEM Forms fornece uma única experiência unificada para usuários corporativos do AEM Forms, para que todas as atribuições ou aprovações de tarefa para os aplicativos suportados possam ser tratadas por meio da área de trabalho do AEM Forms.
+Esses recursos são aprimorados ainda mais. A AEM Forms agora oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes à área de trabalho da AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho da atribuição e aprovação subsequente de uma tarefa. A AEM Forms fornece uma única experiência unificada para usuários corporativos AEM Forms para que todas as atribuições ou aprovações de tarefa para os aplicativos suportados possam ser tratadas por meio da área de trabalho da AEM Forms.
 
-Como exemplo, consideremos o Gerenciamento de correspondência como o candidato de amostra para integração com o espaço de trabalho do AEM Forms. O Gerenciamento de correspondência tem o conceito de &quot;Carta&quot;, que pode ser renderizada e permite ações.
+Como exemplo, consideremos o Gerenciamento de correspondência como o candidato de amostra para integração com a área de trabalho da AEM Forms. O Gerenciamento de correspondência tem o conceito de &quot;Carta&quot;, que pode ser renderizada e permite ações.
 
 ## Criar ativos do Gerenciamento de correspondência {#create-correspondence-management-assets}
 
-Start criando um modelo de gerenciamento de correspondência de amostra que é renderizado na área de trabalho do AEM Forms. Para obter mais detalhes, consulte [Criar um modelo](../../forms/using/create-letter.md)de carta.
+Start criando um modelo de gerenciamento de correspondência de amostra que é renderizado na área de trabalho do AEM Forms. Para obter mais detalhes, consulte [Criar um modelo de carta](../../forms/using/create-letter.md).
 
-Acesse o modelo de Gerenciamento de Correspondência em seu URL para verificar se o modelo de Gerenciamento de Correspondência pode ser renderizado com êxito. O URL tem um padrão semelhante ao `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Acesse o modelo de Gerenciamento de Correspondência em seu URL para verificar se o modelo de Gerenciamento de Correspondência pode ser renderizado com êxito. O URL tem um padrão semelhante a `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-onde `encodedLetterId` é a ID da carta codificada por URL. Especifique a mesma ID de letra ao definir o processo de renderização para a tarefa de espaço de trabalho no Workbench.
+em que `encodedLetterId` é a ID da letra codificada por URL. Especifique a mesma ID de letra ao definir o processo de renderização para a tarefa de espaço de trabalho no Workbench.
 
-## Criar uma tarefa para renderizar e enviar uma carta no AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Criar uma tarefa para renderizar e enviar uma carta AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Antes de executar essas etapas, verifique se você é membro dos seguintes grupos:
 
@@ -42,11 +42,11 @@ Antes de executar essas etapas, verifique se você é membro dos seguintes grupo
 
 Para obter mais informações, consulte [Adicionar e configurar usuários](/help/forms/using/admin-help/adding-configuring-users.md).
 
-Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta no AEM Workspace:
+Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta AEM Workspace:
 
 1. Inicie o Workbench. Faça logon no localhost como administrador.
 1. Clique em Arquivo > Novo > Aplicativo. No campo Nome do aplicativo, digite `CMDemoSample` e clique em Concluir.
-1. Selecione `CMDemoSample/1.0` e clique com o botão direito do mouse `NewProcess`. No campo de nome, digite `CMRenderer` e clique em Concluir.
+1. Selecione `CMDemoSample/1.0` e clique com o botão direito do mouse em `NewProcess`. No campo de nome, digite `CMRenderer` e clique em Concluir.
 1. Arraste o seletor de atividade do Ponto de Start e configure-o:
 
    1. Em Dados de apresentação, selecione Usar um ativo CRX.
@@ -57,7 +57,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
 
       ![Guia Carta](assets/letter_tab_new.png)
 
-   1. Selecione a carta apropriada e clique em **OK**.
+   1. Selecione a letra apropriada e clique em **OK**.
 
 1. Clique em Gerenciar Perfis de ação. A caixa de diálogo Gerenciar Perfil de ação é exibida. Certifique-se de que o Processo de renderização e o Processo de envio estejam selecionados adequadamente.
 1. Para abrir a carta com um arquivo XML de dados, procure e selecione o arquivo de dados apropriado no Processo de preparação de dados.
@@ -102,12 +102,13 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
    }
    ```
 
-   [Obter DSC de](assets/dscsample.zip)Download de Arquivo: Uma amostra de DSC está disponível no arquivo DSCSamplie.zip anexado acima. Baixe e descompacte o arquivo DSCSamplie.zip. Antes de usar o serviço DSC, é necessário configurá-lo. Para obter informações, consulte [Configurar o serviço](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)DSC.
+   [Obter DSC ](assets/dscsample.zip)
+FileDownload: Uma amostra de DSC está disponível no arquivo DSCSamplie.zip anexado acima. Baixe e descompacte o arquivo DSCSamplie.zip. Antes de usar o serviço DSC, é necessário configurá-lo. Para obter informações, consulte [Configurar o serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
-   Na caixa de diálogo Definir Atividade, selecione a atividade apropriada, como getLetterInstanceInfo, e clique em **OK**.
+   Na caixa de diálogo Definir Atividade, selecione a atividade apropriada, como getLetterInstanceInfo e clique em **OK**.
 
 1. Implante o aplicativo. Se solicitado, faça check-in e salve os ativos.
-1. Faça logon na área de trabalho de formulários do AEM em https://&#39;[server]:[port]&#39;/lc/content/ws.
+1. Faça logon na área de trabalho dos formulários AEM em https://&#39;[server]:[port]&#39;/lc/content/ws.
 1. Abra a tarefa que você adicionou, CMRenderer. A carta de Gerenciamento de correspondência é exibida.
 
    ![cminworkspace](assets/cminworkspace.png)
