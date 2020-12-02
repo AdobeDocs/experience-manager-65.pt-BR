@@ -30,20 +30,20 @@ Por padrão, o recurso de email não está funcionando, pois exige a especifica�
 
 >[!CAUTION]
 >
->O email para notificações e subscrições deve ser configurado somente no editor [principal](deploy-communities.md#primary-publisher).
+>O e-mail para notificações e subscrições deve ser configurado somente no [editor principal](deploy-communities.md#primary-publisher).
 
-## Configuração padrão do serviço de correio {#default-mail-service-configuration}
+## Configuração padrão do serviço de e-mail {#default-mail-service-configuration}
 
 O serviço de correio padrão é necessário para notificações e subscrições.
 
-* Faça logon no editor principal com privilégio de administrador e acesse o Console [](../../help/sites-deploying/configuring-osgi.md)da Web:
+* Faça logon no editor principal com privilégio de administrador e acesse o [Web Console](../../help/sites-deploying/configuring-osgi.md):
 
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Localize o `Day CQ Mail Service`.
+* Localize `Day CQ Mail Service`.
 * Selecione o ícone de edição.
 
-Isso se baseia na documentação de [Configuração da notificação](../../help/sites-administering/notification.md)por email, mas com uma diferença de que o campo `"From" address` não ** é obrigatório e deve ficar vazio.
+Isso se baseia na documentação de [Configuração de notificação por email](../../help/sites-administering/notification.md), mas com uma diferença no fato de o campo `"From" address` não ser *necessário e deve ficar vazio.*
 
 Por exemplo (preenchido com valores apenas para fins ilustrativos):
 
@@ -75,23 +75,23 @@ Por exemplo (preenchido com valores apenas para fins ilustrativos):
 
    Se marcada, ativa o registro de interações com o servidor SMTP.
 
-## Configuração de e-mail da AEM Communities {#aem-communities-email-configuration}
+## Configuração do AEM Communities Email {#aem-communities-email-configuration}
 
-Depois que o serviço [de email](#default-mail-service-configuration) padrão é configurado, as duas instâncias existentes da configuração do `AEM Communities Email Reply Configuration` OSGi, incluídas na versão, tornam-se funcionais.
+Depois que o [serviço de correio padrão](#default-mail-service-configuration) é configurado, as duas instâncias existentes da configuração `AEM Communities Email Reply Configuration` OSGi, incluída na versão, tornam-se funcionais.
 
 Somente a instância do subscrição precisa ser configurada posteriormente ao permitir a resposta por email.
 
-1. [Instância de email](#configuration-for-notifications) :
+1. [Instância de ](#configuration-for-notifications) email:
 
    Para notificações, que não suportam e-mail de resposta, e que não devem ser alteradas.
 
-1. [Instância de email](#configuration-for-subscriptions) do Subscrição:
+1. [Subscrição-](#configuration-for-subscriptions) emailinstance:
 
    Requer configuração para ativar totalmente a criação de postagem a partir do email de resposta.
 
 Para acessar as instâncias de configuração de email das Comunidades:
 
-* Faça logon no editor principal com privilégio de administrador e acesse o Console [da Web](../../help/sites-deploying/configuring-osgi.md)
+* Faça logon no editor principal com privilégio de administrador e acesse o [Web Console](../../help/sites-deploying/configuring-osgi.md)
 
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -101,15 +101,15 @@ Para acessar as instâncias de configuração de email das Comunidades:
 
 ### Configuração para notificações {#configuration-for-notifications}
 
-A instância da configuração do `AEM Communities Email Reply Configuration` OSGi com o e-mail Nome é o recurso de notificações. Esse recurso não inclui resposta por email.
+A instância da configuração `AEM Communities Email Reply Configuration` OSGi com o e-mail Name é o recurso de notificações. Esse recurso não inclui resposta por email.
 
 Esta configuração não deve ser alterada.
 
-* Localize o `AEM Communities Email Reply Configuration`.
+* Localize `AEM Communities Email Reply Configuration`.
 * Selecione o ícone de edição.
-* Verifique se o **Nome** está `email`.
+* Verifique se **Name** é `email`.
 
-* Verifique se **Create post from reply email** is `unchecked`.
+* Verifique se **Criar publicação do email de resposta** é `unchecked`.
 
 ![configure-email-reply](assets/configure-email-reply.png)
 
@@ -117,9 +117,9 @@ Esta configuração não deve ser alterada.
 
 Para subscrições de Comunidades, é possível ativar ou desativar a capacidade de um membro postar conteúdo respondendo a um email.
 
-* Localize o `AEM Communities Email Reply Configuration`.
+* Localize `AEM Communities Email Reply Configuration`.
 * Selecione o ícone de edição.
-* Verifique se o **Nome** está `subscriptions-email`.
+* Verifique se **Name** é `subscriptions-email`.
 
    ![configure-email-subscrição](assets/configure-email-subscriptions.png)
 
@@ -154,7 +154,7 @@ Para subscrições de Comunidades, é possível ativar ou desativar a capacidade
 
    Se a ID do rastreador for adicionada ao corpo da mensagem, esse prefixo será usado. O padrão é `Please do not remove this:`.
 
-* **[!UICONTROL Enviar por email como HTML]**: Se marcada, o Tipo de conteúdo do email será definido como `"text/html;charset=utf-8"`. O padrão está marcado.
+* **[!UICONTROL Enviar por email como HTML]**: Se marcada, o Tipo de conteúdo do email será definido como  `"text/html;charset=utf-8"`. O padrão está marcado.
 
 * **[!UICONTROL Nome de usuário padrão]**
 
@@ -174,21 +174,22 @@ Para que o email seja trazido para o repositório, é necessário configurar um 
 
    Por exemplo, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
-* Selecionar **[!UICONTROL Adicionar]**
+* Selecione **[!UICONTROL Adicionar]**
 
    ![importador de votos](assets/polling-importer.png)
 
 * **[!UICONTROL Tipo]**
 
-   *(Obrigatório)* Puxe para baixo para selecionar `POP3 (over SSL)`.
+   *(Obrigatório)* Puxe para baixo para selecionar  `POP3 (over SSL)`.
 
 * **[!UICONTROL URL]**
 
-   *(Obrigatório)* O servidor de correio de saída. Por exemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+   *(Obrigatório)* O servidor de correio externo. Por exemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
 * **[!UICONTROL Importar para o Caminho]**&amp;ast;
 
-   *(Obrigatório)* Defina como `/content/usergenerated/mailFolder/postEmails`navegando até a `postEmails`pasta e selecione **OK**.
+   *(Obrigatório)* Defina como  `/content/usergenerated/mailFolder/postEmails`
+navegando até a  `postEmails`pasta e selecione  **OK**.
 
 * **[!UICONTROL Ativar o intervalo em segundo]**
 
@@ -208,13 +209,13 @@ Para que o email seja trazido para o repositório, é necessário configurar um 
 
 Quando a nova configuração de pesquisa for salva, será necessário modificar ainda mais as propriedades do importador de e-mail de subscrição para alterar o protocolo de `POP3` para `emailreply`.
 
-Usando o [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Usando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Faça logon no editor principal com privilégio de administrador e navegue até [https://&lt;servidor>:&lt;porta>/crx/de/index.jsp#/etc/imported/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
+* Faça logon no editor principal com privilégio de administrador e navegue até [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/imported/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Selecione a configuração recém-criada e modifique as seguintes propriedades:
 
-   * **feedType**: Substituir `pop3s` por **`emailreply`**
-   * **fonte**: Substituir o protocolo da fonte `pop3s://` por **`emailreply://`**
+   * **feedType**: Substituir  `pop3s` por  **`emailreply`**
+   * **fonte**: Substituir o protocolo da fonte  `pop3s://` por  **`emailreply://`**
 
 ![protocolo de votação](assets/polling-protocol.png)
 
