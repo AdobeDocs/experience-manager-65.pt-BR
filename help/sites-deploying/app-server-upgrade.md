@@ -1,8 +1,8 @@
 ---
 title: Etapas de atualização para instalações do servidor de aplicativos
 seo-title: Etapas de atualização para instalações do servidor de aplicativos
-description: Saiba como atualizar instâncias do AEM que são implantadas por meio de servidores de aplicativos.
-seo-description: Saiba como atualizar instâncias do AEM que são implantadas por meio de servidores de aplicativos.
+description: Saiba como atualizar instâncias de AEM implantadas pelos Servidores de aplicativos.
+seo-description: Saiba como atualizar instâncias de AEM implantadas pelos Servidores de aplicativos.
 uuid: e4020966-737c-40ea-bfaa-c63ab9a29cee
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,17 +12,20 @@ discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 0%
 
 ---
 
 
 # Etapas de atualização para instalações do servidor de aplicativos{#upgrade-steps-for-application-server-installations}
 
-Esta seção descreve o procedimento que precisa ser seguido para atualizar o AEM para instalações do Servidor de aplicativos.
+Esta seção descreve o procedimento que precisa ser seguido para atualizar AEM para instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o JBoss como o Application Server e implicam que você já tem uma versão funcional do AEM implantada. O procedimento destina-se a documentar as atualizações executadas do **AEM versão 5.6 para 6.3**.
+Todos os exemplos neste procedimento usam o JBoss como o Application Server e implicam que você já tem uma versão em funcionamento do AEM implantado. O procedimento destina-se a documento de atualizações executadas de **AEM versão 5.6 para 6.3**.
 
-1. Primeiro, inicie o JBoss. Na maioria das situações, é possível fazer isso executando o script de `standalone.sh` inicialização executando esse comando do terminal:
+1. Primeiro, start JBoss. Na maioria das situações, é possível fazer isso executando o script de inicialização `standalone.sh`, executando esse comando do terminal:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -75,11 +78,11 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
 
 1. Remova os arquivos e pastas que não são mais necessários. Os itens que você precisa remover especificamente são:
 
-   * A pasta **launch/startup**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * A pasta **launch pad/startup**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
 
-   * O arquivo **** base.jar: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * O arquivo **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * O arquivo **** BootstrapCommandFile_timestamp.txt: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * O arquivo **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copie o repositório de segmentos recém-migrado para o local apropriado:
 
@@ -100,7 +103,8 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-   Esses dois arquivos configurarão o AEM para usar um armazenamento de nó TarMK e um armazenamento de dados File.
+
+   Esses dois arquivos configurarão AEM para usar um armazenamento de nó TarMK e um armazenamento de dados File.
 
 1. Edite os arquivos de configuração para prepará-los para uso. Mais especificamente:
 
@@ -120,13 +124,13 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. Agora é necessário alterar os modos de execução no arquivo de guerra do AEM 6.3. Para fazer isso, primeiro crie uma pasta temporária que hospede a guerra do AEM 6.3. O nome da pasta neste exemplo será **temp**. Depois que o arquivo de guerra tiver sido copiado, extraia seu conteúdo executando de dentro da pasta temporária:
+1. Agora é necessário alterar os modos de execução no arquivo de guerra AEM 6.3. Para fazer isso, primeiro crie uma pasta temporária que estará hospedando a guerra AEM 6.3. O nome da pasta neste exemplo será **temp**. Depois que o arquivo de guerra tiver sido copiado, extraia seu conteúdo executando de dentro da pasta temporária:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o `web.xml` arquivo para alterar os modos de execução. Para localizar o local onde estão definidos no XML, procure a `sling.run.modes` string. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definido como autor:
+1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o arquivo `web.xml` para alterar os modos de execução. Para localizar o local em que estão definidos no XML, procure a string `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definido como autor:
 
    ```shell
    <param-value >author</param-value>
