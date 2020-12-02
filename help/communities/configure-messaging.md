@@ -23,13 +23,13 @@ ht-degree: 4%
 
 Além das interações publicamente visíveis que ocorrem em fóruns e comentários, o recurso de mensagens da AEM Communities permite que os membros da comunidade interajam mais privadamente.
 
-Este recurso pode ser incluído quando um site [da](/help/communities/overview.md#communitiessites) comunidade é criado.
+Este recurso pode ser incluído quando um [site da comunidade](/help/communities/overview.md#communitiessites) é criado.
 
 O recurso de mensagens oferece a capacidade de:
 
 **A** - enviar uma mensagem para um ou mais membros da comunidade
 
-**B** - enviar mensagens diretas em [massa para grupos de membros da comunidade](/help/communities/messaging.md#group-messaging)
+**B** - enviar mensagens diretas em  [massa para grupos de membros da comunidade](/help/communities/messaging.md#group-messaging)
 
 **C** - enviar uma mensagem com anexos
 
@@ -47,12 +47,12 @@ O recurso de mensagens oferece a capacidade de:
 
 Para ativar e modificar o recurso de mensagens, consulte:
 
-* [Configurar mensagens](/help/communities/messaging.md) para administradores
-* [Princípios básicos](/help/communities/essentials-messaging.md) de mensagens para desenvolvedores
+* [Configurar ](/help/communities/messaging.md) mensagens para administradores
+* [Messaging ](/help/communities/essentials-messaging.md) Essentials para desenvolvedores
 
 >[!NOTE]
 >
->Não há suporte para adicionar `Compose Message, Message, or Message List` componentes (encontrados no grupo de `Communities`componentes) a uma página no modo de edição do autor.
+>Não há suporte para adicionar `Compose Message, Message, or Message List` componentes (encontrados em `Communities`grupo de componentes) a uma página no modo de edição do autor.
 
 ## Configurar componentes de mensagens {#configure-messaging-components}
 
@@ -60,29 +60,29 @@ Quando as mensagens são ativadas para um site da comunidade, elas são configur
 
 ### Configurar Lista de mensagem (caixa de mensagem) {#configure-message-list-message-box}
 
-Para modificar a configuração da lista de mensagens para as páginas **Caixa de entrada**, Itens **** enviados e **Lixeira** do recurso de mensagem, abra o site no modo [de edição do](/help/communities/sites-console.md#authoring-site-content)autor.
+Para modificar a configuração da lista de mensagens para as páginas **Caixa de entrada**, **Itens enviados** e **Lixeira** do recurso de mensagens, abra o site no [modo de edição do autor](/help/communities/sites-console.md#authoring-site-content).
 
-1. No `Preview` modo, selecione o link **Mensagens** para abrir a página principal de mensagens. Em seguida, selecione **Caixa de entrada**, Itens **** enviados ou **Lixeira** para configurar o componente para essa lista de mensagem.
+1. No modo `Preview`, selecione o link **Mensagens** para abrir a página de mensagens principal. Em seguida, selecione **Caixa de entrada**, **Itens enviados** ou **Lixeira** para configurar o componente para essa lista de mensagem.
 
-1. No `Edit` modo, selecione o componente na página.
-1. Para acessar a caixa de diálogo de configuração, cancele a herança selecionando o `link` ícone.
+1. No modo `Edit`, selecione o componente na página.
+1. Para acessar a caixa de diálogo de configuração, cancele a herança selecionando o ícone `link`.
 Após a herança ser cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
-1. Quando a configuração for concluída, será necessário restaurar a herança selecionando o `broken link` ícone.
+1. Quando a configuração for concluída, será necessário restaurar a herança selecionando o ícone `broken link`.
 
 ![configure-message-lista](assets/configure-message-list.png)
 
-#### Basic tab {#basic-tab}
+#### Guia Básica {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
 * **Seletor de serviços**
 
-   (*Obrigatório*) Defina esse valor para o valor da propriedade **`serviceSelector.name`** do Serviço [de Operações de Mensagens do](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
+   (*Obrigatório*) Defina para o valor da propriedade **`serviceSelector.name`** do [Serviço de Operações de Mensagens da AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 * **Compor página**
 
-   (*Obrigatório*) A página a ser aberta quando um membro clicar no **`Reply`** botão. A página público alvo deve conter o formulário **Compor mensagem** .
+   (*Obrigatório*) A página a ser aberta quando um membro clicar no botão **`Reply`**. A página público alvo deve conter o formulário **Compor mensagem**.
 
 * **Responder/Visualização como Recurso**
 
@@ -98,7 +98,7 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 * **Caminhos da pasta**
 
-   (*Obrigatório*) Referência aos valores definidos para **inbox.path.name** e **sentitems.path.name** no Serviço [de Operações de Mensagens do](/help/communities/messaging.md#messaging-operations-service)AEM Communities. Ao configurar para um `Inbox`, adicione uma entrada usando o valor de **inbox.path.name**. Ao configurar para um `Outbox`, adicione uma entrada usando o valor de **sentitems.path.name**. Ao configurar para `Trash`, adicione duas entradas com ambos os valores.
+   (*Required*) Referenciando os valores definidos para **inbox.path.name** e **sentitems.path.name** no [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Ao configurar para um `Inbox`, adicione uma entrada usando o valor de **inbox.path.name**. Ao configurar para um `Outbox`, adicione uma entrada usando o valor de **sentitems.path.name**. Ao configurar para `Trash`, adicione duas entradas com ambos os valores.
 
 #### Guia Exibir {#display-tab}
 
@@ -106,19 +106,19 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 * **Botão Marcar leitura**
 
-   Se marcada, exibe um `Read`botão que permite que uma mensagem seja marcada como lida.
+   Se marcada, exibe um botão `Read`permitindo que uma mensagem seja marcada como lida.
 
 * **Botão Marcar como não lido**
 
-   Se marcada, exibe um `Mark Unread` botão que permite que uma mensagem seja marcada como lida.
+   Se marcada, exibe um botão `Mark Unread` permitindo que uma mensagem seja marcada como lida.
 
 * **Botão Excluir**
 
-   Se marcada, exibe um `Delete` botão que permite que uma mensagem seja marcada como lida. A funcionalidade de exclusão será duplicado se **`Message Options`** também estiver marcada.
+   Se marcada, exibe um botão `Delete` permitindo que uma mensagem seja marcada como lida. A funcionalidade de exclusão será duplicado se **`Message Options`** também estiver marcada.
 
 * **Opções de mensagem**
 
-   Se marcada, exibe **`Reply`**, **`Reply All`** e **`Forward`** **`Delete`** botões permitindo que uma mensagem seja reenviada ou excluída. A funcionalidade de exclusão será duplicado se **`Delete Button`** também estiver marcada.
+   Se marcada, exibe os botões **`Reply`**, **`Reply All`**, **`Forward`** e **`Delete`**, permitindo que uma mensagem seja reenviada ou excluída. A funcionalidade de exclusão será duplicado se **`Delete Button`** também estiver marcada.
 
 * **Mensagens por página**
 
@@ -134,19 +134,19 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 ### Configurar mensagem de composição {#configure-compose-message}
 
-Para modificar a configuração da página de mensagem de composição, abra o site no modo [de edição do](/help/communities/sites-console.md#authoring-site-content)autor.
+Para modificar a configuração da página de mensagem de composição, abra o site em [modo de edição do autor](/help/communities/sites-console.md#authoring-site-content).
 
-* No `Preview` modo, selecione o link **Mensagens** para abrir a página principal de mensagens. Em seguida, selecione o botão Nova mensagem para abrir a `Compose Message` página.
+* No modo `Preview`, selecione o link **Mensagens** para abrir a página de mensagens principal. Em seguida, selecione o botão Nova mensagem para abrir a página `Compose Message`.
 
-* No `Edit` modo, selecione o componente principal na página que contém o corpo da mensagem.
-* Para acessar a caixa de diálogo de configuração, cancele a herança selecionando o `link` ícone.
+* No modo `Edit`, selecione o componente principal na página que contém o corpo da mensagem.
+* Para acessar a caixa de diálogo de configuração, cancele a herança selecionando o ícone `link`.
 Após a herança ser cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
-* Quando a configuração for concluída, será necessário restaurar a herança selecionando o `broken link` ícone.
+* Quando a configuração for concluída, será necessário restaurar a herança selecionando o ícone `broken link`.
 
 ![config-compose-message](assets/config-compose-message.png)
 
-#### Basic tab {#basic-tab-1}
+#### Guia Básica {#basic-tab-1}
 
 ![composição de guias básicas](assets/basic-tab-compose.png)
 
@@ -168,7 +168,7 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 * **Seletor de serviços**
 
-   (*Obrigatório*) Defina esse valor para o valor da propriedade **`serviceSelector.name`** do Serviço [de Operações de Mensagens do](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
+   (*Obrigatório*) Defina para o valor da propriedade **`serviceSelector.name`** do [Serviço de Operações de Mensagens da AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 #### Guia Exibir {#display-tab-1}
 
@@ -176,27 +176,27 @@ Após a herança ser cancelada, é possível selecionar o ícone de configuraç�
 
 * **Mostrar campo de assunto**
 
-   Se marcada, mostre o `Subject` campo e ative a adição de um assunto à mensagem. O padrão não está marcado.
+   Se marcada, mostre o campo `Subject` e ative a adição de um assunto à mensagem. O padrão não está marcado.
 
 * **Rótulo do assunto**
 
-   Insira o texto a ser exibido ao lado do `Subject` campo. O padrão é `Subject`.
+   Digite o texto a ser exibido ao lado do campo `Subject`. O padrão é `Subject`.
 
 * **Mostrar campo Anexar arquivo**
 
-   Se marcada, mostre o `Attachment` campo e ative a adição de anexos de arquivo à mensagem. O padrão não está marcado.
+   Se marcada, mostre o campo `Attachment` e ative a adição de anexos de arquivo à mensagem. O padrão não está marcado.
 
 * **Anexar etiqueta de arquivo**
 
-   Insira o texto a ser exibido ao lado do `Attachment` campo. O padrão é **`Attach File`**.
+   Digite o texto a ser exibido ao lado do campo `Attachment`. O padrão é **`Attach File`**.
 
 * **Mostrar campo de conteúdo**
 
-   Se marcada, mostre o `Content` campo e ative a adição de um corpo de mensagem. O padrão não está marcado.
+   Se marcada, mostre o campo `Content` e ative a adição de um corpo de mensagem. O padrão não está marcado.
 
 * **Rótulo do conteúdo**
 
-   Insira o texto a ser exibido ao lado do `Content` campo. O padrão é **`Body`**.
+   Digite o texto a ser exibido ao lado do campo `Content`. O padrão é **`Body`**.
 
 * **Com Rich Text Editor**
 
