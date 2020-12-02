@@ -12,6 +12,9 @@ discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +33,7 @@ Para criar uma página de aterrissagem de informativo eficaz, você precisa faze
 >[!NOTE]
 >
 >A Adobe não planeja aprimorar mais esse recurso (Gerenciamento de leads e listas).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>A recomendação é aproveitar [Adobe Campaign e a integração para AEM](/help/sites-administering/campaign.md).
 
 ## Criação de uma lista para o informativo {#creating-a-list-for-the-newsletter}
 
