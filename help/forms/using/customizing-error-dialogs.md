@@ -1,8 +1,8 @@
 ---
 title: Personalização de caixas de diálogo de erro
 seo-title: Personalização de caixas de diálogo de erro
-description: Como personalizar as caixas de diálogo de erro da área de trabalho de AEM Forms de LiveCycles para adicionar diferentes descrições de falhas.
-seo-description: Como personalizar as caixas de diálogo de erro da área de trabalho de AEM Forms de LiveCycles para adicionar diferentes descrições de falhas.
+description: Como personalizar as caixas de diálogo de erro da área de trabalho do LiveCycle AEM Forms para adicionar diferentes descrições de falhas.
+seo-description: Como personalizar as caixas de diálogo de erro da área de trabalho do LiveCycle AEM Forms para adicionar diferentes descrições de falhas.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,11 +19,11 @@ ht-degree: 4%
 
 # Personalização de caixas de diálogo de erro {#customizing-error-dialogs}
 
-A área de trabalho AEM Forms permite personalizar caixas de diálogo de erro. Execute as etapas [Genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md) do espaço de trabalho do AEM Forms, seguidas pelas etapas abaixo para personalizar caixas de diálogo de erro.
+A área de trabalho do AEM Forms permite personalizar caixas de diálogo de erro. Execute as [etapas genéricas para personalização do espaço de trabalho AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) seguidas pelas etapas abaixo para personalizar caixas de diálogo de erro.
 
-## Personalização de texto {#customizing-text}
+## Personalizando texto {#customizing-text}
 
-1. No `/apps/ws/locales/en-US/translation.json` arquivo, altere os valores de `wserror` para os valores personalizados. Por exemplo:
+1. No arquivo `/apps/ws/locales/en-US/translation.json`, altere os valores de `wserror` para os valores personalizados. Por exemplo:
 
    ```json
    "wserror" : {
@@ -51,9 +51,9 @@ A área de trabalho AEM Forms permite personalizar caixas de diálogo de erro. E
    >
    >Adicione pares de valores chave correspondentes para todos os idiomas suportados.
 
-## Personalização do CSS {#customizing-css}
+## Personalizando CSS {#customizing-css}
 
-1. É possível atualizar a caixa de diálogo, o cabeçalho, a área de conteúdo, a barra de pé, os botões da barra de pé e outras garantias adicionando o seguinte trecho no `/apps/ws/css/newStyle.css` arquivo:
+1. Você pode atualizar a caixa de diálogo, o cabeçalho, a área de conteúdo, a barra de pé, os botões da barra de pé e outras garantias adicionando o seguinte trecho no arquivo `/apps/ws/css/newStyle.css`:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -188,7 +188,7 @@ A área de trabalho AEM Forms permite personalizar caixas de diálogo de erro. E
    }
    ```
 
-1. Para a extensão do botão da barra de pé, separe as `.error-dialog` e `.foot-bar` as faixas do botão da lista composta. Para fazer essa alteração, adicione o seguinte no arquivo newStyle.css:
+1. Para a extensão do botão da barra de pé, separe os botões `.error-dialog` e `.foot-bar` da lista composta. Para fazer essa alteração, adicione o seguinte no arquivo newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -225,7 +225,7 @@ A área de trabalho AEM Forms permite personalizar caixas de diálogo de erro. E
 
 >[!NOTE]
 >
->Se estiver fazendo referência a imagens adicionais, adicione-as na hierarquia desejada em `/apps/ws/images`.
+>Se você estiver fazendo referência a imagens adicionais, adicione-as na hierarquia desejada em `/apps/ws/images`.
 
 ## Exemplos {#examples}
 
