@@ -17,16 +17,16 @@ ht-degree: 0%
 ---
 
 
-# Como personalizar guias para uma tarefa {#customizing-tabs-for-a-task}
+# Personalizar guias para uma tarefa {#customizing-tabs-for-a-task}
 
-Você pode personalizar nomes de guias para o `Start Process` componente na visualização `Start Process` Uber e o `Task Details` componente na visualização `ToDo` Uber.
+Você pode personalizar nomes de guias para o componente `Start Process` na visualização `Start Process` Uber e o componente `Task Details` na visualização `ToDo` Uber.
 
-1. Siga as etapas [Genéricas para personalização](/help/forms/using/generic-steps-html-workspace-customization.md)da área de trabalho do AEM Forms.
-1. Altere o valor de `tabname`no `translation.json` arquivo.
+1. Siga as [etapas genéricas para personalização do espaço de trabalho AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Altere o valor de `tabname`no arquivo `translation.json`.
 
-   Por exemplo, mude `/apps/ws/locales/en-US/translation.json` para inglês para o seguinte.
+   Por exemplo, altere `/apps/ws/locales/en-US/translation.json` para inglês para o seguinte.
 
-   * Para tarefas iniciadas no processo de start, use o seguinte trecho do `"startprocess" : {}` bloco.
+   * Para tarefas iniciadas no processo de start, use o seguinte trecho do bloco `"startprocess" : {}`.
 
    ```json
    "tabname" : {
@@ -37,7 +37,7 @@ Você pode personalizar nomes de guias para o `Start Process` componente na visu
            }
    ```
 
-   * Para tarefa em tarefas a fazer, use o seguinte snippet do `"todo" : {}` bloco.
+   * Para tarefa em To-do, use o seguinte snippet do bloco `"todo" : {}`.
 
    ```json
    "tabname" : {
