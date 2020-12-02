@@ -69,7 +69,7 @@ Além disso, há tarefas administrativas que o ajudam a gerenciar seu conteúdo:
 
 #### Ambiente de publicação {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
+Quando pronto, o conteúdo do site AEM é publicado no ambiente **publish**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
 
 Normalmente, o ambiente de publicação está localizado dentro da zona desmilitarizada; em outras palavras, disponível para a Internet, mas não mais sob a proteção total da rede interna.
 
