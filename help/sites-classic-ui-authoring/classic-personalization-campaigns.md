@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 85%
 
 ---
 
@@ -33,11 +36,17 @@ Esse documento descreve os vários elementos que compõem as campanhas. Informa�
 
 O gerenciamento de campanhas é composto de vários elementos:
 
-* **Marcas** No AEM, marcas são a unidade de nível superior e formam uma coleção de **Campanhas**.
+* ****
+MarcasNo AEM, as marcas são a unidade de nível superior e formam uma coleção de 
+**Campanhas**.
 
-* **Campanhas** Uma campanha é uma coleção de **Experiências** individuais.
+* ****
+CampanhasUma campanha é uma coleção de 
+**Experiências**.
 
-* **Experiências** O conteúdo concentrado forma as várias experiências apresentadas ao visitante em **Pontos de interação**. Existem vários tipos de experiências disponíveis:
+* ****
+ExperiênciasO conteúdo direcionado forma as várias experiências, apresentadas ao visitante em 
+**Pontos de contato**. Existem vários tipos de experiências disponíveis:
 
    * **Teasers**
       [Página de teaser/Parágrafos](#teasers) são usados para direcionar **Segmentos** específicos de visitantes para conteúdos concentrados em seus interesses.
@@ -46,11 +55,12 @@ O gerenciamento de campanhas é composto de vários elementos:
 
       * apresentar uma gama de opções para o visitante escolher
       * mostrar somente um parágrafo de teaser baseado no segmento de visitantes específico; por exemplo, o parágrafo de teaser mostrado pode depender da idade do visitante.
+
       Geralmente, uma página de teaser é uma ação temporária que durará por um período específico, até ser substituída pela próxima página de teaser.
 
    * **Boletins informativos**
 
-      [As Comunicações](#emailmarketing) por email são usadas para envolver usuários e encorajá-los a visitar seu site. Elas geralmente assumem o formato de um informativo, enviado aos seus **Leads** (que geralmente estão agrupados em **Listas**). **Observação:** a Adobe não planeja aprimorar mais esse recurso. A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+      [As ](#emailmarketing) Comunicações por email são usadas para engajar os usuários e incentivá-los a visitar seu site. Elas geralmente assumem o formato de um informativo, enviado aos seus **Leads** (que geralmente estão agrupados em **Listas**). **Observação:** a Adobe não planeja aprimorar mais esse recurso. A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -71,7 +81,7 @@ O gerenciamento de campanhas é composto de vários elementos:
 
 * **Listas**
 
-   Geralmente, os clientes potenciais são agrupados em listas para que você possa realizar ações coletivas neles. **Observação:** a Adobe não planeja aprimorar mais esse recurso.
+   Os clientes em potencial são normalmente agrupados em listas para que você possa realizar ações coletivas neles. **Observação:** a Adobe não planeja aprimorar mais esse recurso.
 
    A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM.](/help/sites-administering/campaign.md)
 
@@ -83,7 +93,7 @@ O gerenciamento de campanhas é composto de vários elementos:
 
    O Marketing Campaign Manager (MCM) é um console que permite acessar todas as funcionalidades necessárias para criar e controlar campanhas, marcas, experiências, pontos de interação, leads, listas, segmentos e relatórios.
 
-   It can be accessed from various locations (labelled as **Campaigns**), or with, for example, the URL:
+   Ele pode ser acessado de vários locais (rotulado como **Campanha**) ou com, por exemplo, o URL:
 
    `http://localhost:4502/libs/mcm/content/admin.html`
 
