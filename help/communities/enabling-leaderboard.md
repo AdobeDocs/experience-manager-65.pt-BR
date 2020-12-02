@@ -19,36 +19,36 @@ ht-degree: 9%
 ---
 
 
-# Recurso de quadro de líderes {#leaderboard-feature}
+# Recurso do Quadro de líderes {#leaderboard-feature}
 
 ## Introdução {#introduction}
 
-O `Leaderboard` componente fornece a capacidade de obter uma noção de como os membros estão interagindo dentro da comunidade classificando os membros de acordo com os pontos ganhos (pontuação básica) ou sua experiência (pontuação avançada).
+O componente `Leaderboard` fornece a capacidade de obter uma noção de como os membros estão interagindo dentro da comunidade classificando os membros de acordo com os pontos ganhos (pontuação básica) ou sua experiência (pontuação avançada).
 
-Antes de incluir o componente de quadro de líderes em uma página, é necessário configurar a Pontuação e os Distintos [de](/help/communities/implementing-scoring.md)comunidades.
+Antes de incluir o componente de quadro de líderes em uma página, é necessário configurar [Pontuação e emblemas das comunidades](/help/communities/implementing-scoring.md).
 
 Esta seção da documentação descreve:
 
-* Adicionar o `Leaderboard` componente a um site [da](/help/communities/overview.md#community-sites)comunidade.
-* Configurações do `Leaderboard` componente.
+* Adicionando o componente `Leaderboard` a um [site da comunidade](/help/communities/overview.md#community-sites).
+* Configurações do componente `Leaderboard`.
 
-### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+### Adicionar um Quadro de líderes a uma Página {#adding-a-leaderboard-to-a-page}
 
-Para adicionar um `Leaderboard` componente a uma página no modo de autor, localize o componente
+Para adicionar um componente `Leaderboard` a uma página no modo de autor, localize o componente
 
 * `Communities / Leaderboard`
 
 e arraste-o para o lugar em uma página.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](/help/communities/basics.md).
 
 Quando colocado pela primeira vez em uma página de um site da comunidade, é assim que o componente aparece:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-### Configuração do Quadro de líderes {#configuring-leaderboard}
+### Configurando o Quadro de líderes {#configuring-leaderboard}
 
-Selecione o componente inserido a ser acessado e selecione o `Leaderboard` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Leaderboard` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -56,7 +56,7 @@ Selecione o componente inserido a ser acessado e selecione o `Leaderboard` `Conf
 
 #### Guia Configurações {#settings-tab}
 
-Na guia **[!UICONTROL Configurações]** , especifique quais informações relacionadas ao membro serão exibidas:
+Na guia **[!UICONTROL Settings]**, especifique as informações relacionadas ao membro que serão exibidas:
 
 * **Nome para exibição**
 
@@ -80,7 +80,7 @@ O padrão está desmarcado.
 
 #### Guia Regras {#rules-tab}
 
-Na guia **Regras** , o site da comunidade e suas regras de pontuação e marcação
+Na guia **Regras**, o site da comunidade e suas regras de pontuação e marcação
 
 * **Local da regra**
 
@@ -98,7 +98,7 @@ Na guia **Regras** , o site da comunidade e suas regras de pontuação e marcaç
 
    Número de membros a serem exibidos por página. O padrão é 10.
 
-### Exemplo: Painel de líderes de participantes {#example-participants-leaderboard}
+### Exemplo: Painel de líderes dos participantes {#example-participants-leaderboard}
 
 Este quadro de líderes informa os resultados da aplicação de regras básicas de pontuação.
 
@@ -147,6 +147,6 @@ Configuração do componente de quadro de líderes:
 
 ### Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [do Painel de líderes](/help/communities/leaderboard.md) para desenvolvedores.
+Mais informações podem ser encontradas na página [Principais componentes do Quadro de líderes](/help/communities/leaderboard.md) para desenvolvedores.
 
-As instruções para a criação de regras são fornecidas na página Pontuação de [comunidades e emblemas](/help/communities/implementing-scoring.md) para administradores.
+As instruções para a criação de regras são fornecidas na página [Pontuação de comunidades e emblemas](/help/communities/implementing-scoring.md) para administradores.
