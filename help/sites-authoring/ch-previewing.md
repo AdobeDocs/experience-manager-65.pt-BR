@@ -49,7 +49,7 @@ A barra de ferramentas do ContextHub está disponível no modo de Visualização
 
 Cada módulo de interface fornece um conjunto diferente de recursos, mas os tipos de recursos a seguir são os mais comuns. Como os módulos de interface podem ser estendidos, o desenvolvedor pode implementar outros recursos, conforme necessário.
 
-### Conteúdo da barra de ferramentas {#toolbar-content}
+### Conteúdo da barra de ferramentas  {#toolbar-content}
 
 Os módulos de interface podem exibir dados de um ou mais armazenamentos do ContextHub na barra de ferramentas. Os módulos de interface usam um ícone e um título para se identificar.
 
@@ -65,7 +65,7 @@ Alguns módulos de interface exibem uma sobreposição de pop-up quando clicados
 
 A sobreposição de pop-up de um módulo pode incluir elementos de formulário que permitem alterar os dados no armazenamento do ContextHub. Se o conteúdo da página for determinado pelos dados do armazenamento, será possível usar o formulário e observar as alterações no conteúdo da página.
 
-### Modo de tela cheia {#fullscreen-mode}
+### Modo de tela cheia  {#fullscreen-mode}
 
 As sobreposições de pop-up podem incluir um ícone que você clica ou toca para expandir o conteúdo do pop-up a toda a janela do navegador ou a tela.
 
