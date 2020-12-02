@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Ao aplicar o fluxo de trabalho, você especifica as seguintes informações:
 
-* O fluxo de trabalho que será aplicado.
+* O fluxo de trabalho a ser aplicado.
 
    É possível aplicar qualquer fluxo de trabalho (ao qual você tenha acesso, conforme atribuído pelo administrador do AEM).
 * Opcionalmente:
@@ -35,7 +38,7 @@ Ao aplicar o fluxo de trabalho, você especifica as seguintes informações:
 
 Fluxos de trabalho podem ser iniciados no console Sites ou, ao editar uma página, no Sidekick.
 
-The **Status** column in the **Websites** console indicates whether a workflow has been applied to a page:
+A coluna **Status** no console **Sites** indica se um fluxo de trabalho foi aplicado a uma página:
 
 ![workflow](assets/workflowstatus.png)
 
@@ -46,12 +49,12 @@ The **Status** column in the **Websites** console indicates whether a workflow h
 1. Na lista de páginas, selecione a página e clique em Fluxo de trabalho.
 1. Na caixa de diálogo Iniciar fluxo de trabalho, selecione o fluxo de trabalho que será aplicado. Opcionalmente, insira um comentário e um título. Em seguida, clique em Iniciar.
 
-### Início de um fluxo de trabalho usando o Sidekick {#starting-a-workflow-using-sidekick}
+### Início de um fluxo de trabalho usando o Sidekick  {#starting-a-workflow-using-sidekick}
 
 1. Abra o console Sites.
 1. Abra a página necessária.
 1. Selecione a guia Fluxo de trabalho no Sidekick.
-1. Expand the **Workflow** dialog, allowing you to select the **Workflow** and optionally enter **Workflow Title** and **Comment**.
+1. Expanda a caixa de diálogo **Fluxo de trabalho**, permitindo que você selecione o **Fluxo de trabalho** e, opcionalmente, digite **Título do fluxo de trabalho** e **Comentário**.
 
    ![workflows startsidekick](assets/workflowstartsidekick.png)
 
