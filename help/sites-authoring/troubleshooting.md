@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas AEM durante a criação
-seo-title: Solucionar problemas do AEM durante a criação
+title: 'Solucionar problemas do AEM durante a criação  '
+seo-title: 'Solucionar problemas do AEM durante a criação  '
 description: Alguns problemas que podem ocorrer quando você usa o AEM
 seo-description: Alguns problemas que podem ocorrer quando você usa o AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 100%
 
 ---
 
 
-# Solucionar problemas do AEM durante a criação{#troubleshooting-aem-when-authoring}
+# Solucionar problemas do AEM durante a criação  {#troubleshooting-aem-when-authoring}
 
 A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
 
@@ -42,7 +45,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
    * Há várias possibilidades aqui:
    * Confirmar se a página foi replicada corretamente. Verificar o status da página e, se necessário, o estado da fila de replicação.
    * Limpar o cache no seu navegador local e acessar a página novamente.
-   * Add `?` to the end of the page URL. For example:
+   * Adicionar `?` ao final do URL da página. Por exemplo:
 
       * `http://localhost:4502/sites.html/content?`
       * Isso solicitará a página diretamente do AEM e ignorará o Dispatcher. Se você receber a página atualizada, isso será uma indicação de que é necessário limpar o cache do Dispatcher.
