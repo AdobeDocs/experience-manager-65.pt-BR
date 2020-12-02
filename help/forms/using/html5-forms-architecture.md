@@ -23,21 +23,21 @@ ht-degree: 0%
 
 ## Arquitetura {#architecture}
 
-A funcionalidade de formulários HTML5 é implantada como um pacote dentro da instância de AEM incorporada e é exposta como um ponto final REST sobre HTTP/S usando a arquitetura RESTful [Apache Sling](https://sling.apache.org/).
+A funcionalidade de formulários HTML5 é implantada como um pacote dentro da instância de AEM incorporada e é exposta como um ponto final REST sobre HTTP/S usando RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
 ![02-aem-forms-Architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
-### Uso da estrutura Sling {#using-sling-framework}
+### Usando a Estrutura Sling {#using-sling-framework}
 
-[O Apache Sling](https://sling.apache.org/) é centrado em recursos. Ele usa um URL de solicitação para resolver o recurso primeiro. Cada recurso tem uma propriedade **sling:resourceType** (ou **sling:resourceSuperType**). Com base nessa propriedade, no método de solicitação e nas propriedades do URL de solicitação, um script sling é selecionado para lidar com a solicitação. Este script sling pode ser um JSP ou um servlet. Para formulários HTML5, os nós de **Perfil** atuam como recursos de sling e o **Perfil Renderer** atua como o script sling que lida com a solicitação para renderizar o formulário móvel com um perfil específico. Um renderizador de **Perfil** é um JSP que lê parâmetros de uma solicitação e chama o Forms OSGi Service.
+[Apache ](https://sling.apache.org/) Slingis centrado em recursos. Ele usa um URL de solicitação para resolver o recurso primeiro. Cada recurso tem uma propriedade **sling:resourceType** (ou **sling:resourceSuperType**). Com base nessa propriedade, no método de solicitação e nas propriedades do URL de solicitação, um script sling é selecionado para lidar com a solicitação. Este script sling pode ser um JSP ou um servlet. Para formulários HTML5, os nós **Perfil** atuam como recursos de sling e **Renderizador de Perfis** atua como o script sling que lida com a solicitação para renderizar o formulário móvel com um perfil específico. Um **Renderizador de Perfis** é um JSP que lê parâmetros de uma solicitação e chama o Forms OSGi Service.
 
-Para obter detalhes sobre o terminal REST e os parâmetros de solicitação suportados, consulte [Renderizando modelo](/help/forms/using/rendering-form-template.md)de formulário.
+Para obter detalhes sobre o terminal REST e os parâmetros de solicitação suportados, consulte [Renderizando Modelo de Formulário](/help/forms/using/rendering-form-template.md).
 
-Quando um usuário faz uma solicitação de um dispositivo cliente, como um navegador iOS ou Android, o Sling primeiro resolve o Nó de Perfil com base no URL da solicitação. A partir deste Nó de Perfil, é exibido **sling:resourceSuperType** e **sling:resourceType** para determinar todos os scripts disponíveis que podem lidar com essa solicitação de renderização de formulário. Em seguida, ele usa seletores de solicitação Sling junto com o método de solicitação para identificar o script mais adequado para lidar com essa solicitação. Quando a solicitação chegar a um JSP do renderizador de Perfis, o JSP chamará o serviço Forms OSGi.
+Quando um usuário faz uma solicitação de um dispositivo cliente, como um navegador iOS ou Android, o Sling primeiro resolve o Nó de Perfil com base no URL da solicitação. A partir deste Nó de Perfil, é exibido **sling:resourceSuperType** e **sling:resourceType** para determinar todos os scripts disponíveis que podem lidar com essa solicitação de Renderização de formulário. Em seguida, ele usa seletores de solicitação Sling junto com o método de solicitação para identificar o script mais adequado para lidar com essa solicitação. Quando a solicitação chegar a um JSP do renderizador de Perfis, o JSP chamará o serviço Forms OSGi.
 
-Para obter mais detalhes sobre a resolução de scripts de sling, consulte [AEM Folha](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) de Bate-Papo ou decomposição [do Url de Sling do](https://sling.apache.org/site/url-decomposition.html)Apache.
+Para obter mais detalhes sobre a resolução do script de divisão, consulte [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) ou [decomposição do Apache Sling Url](https://sling.apache.org/site/url-decomposition.html).
 
-#### Fluxo típico de chamada de processamento de formulário {#typical-form-processing-call-flow}
+#### Fluxo de chamada de processamento de formulário típico {#typical-form-processing-call-flow}
 
 Os formulários HTML5 armazenam em cache todos os objetos intermediários necessários para processar (execução ou envio) um formulário na primeira solicitação. Ele não armazena em cache os objetos dependentes dos dados, pois é provável que esses objetos sejam alterados.
 
@@ -54,13 +54,13 @@ O serviço OSGi da Forms processa uma solicitação em duas etapas:
 * **Geração** de layout e estado inicial do formulário: O serviço de renderização OSGi da Forms chama o componente Cache da Forms para determinar se o formulário já foi armazenado em cache e não foi invalidado. Se o formulário for armazenado em cache e válido, ele servirá o HTML gerado do cache. Se o formulário for invalidado, o serviço de renderização OSGi da Forms gerará o Layout inicial do formulário e o Estado do formulário no formato XML. Esse XML é transformado em layout HTML e Estado de formulário JSON inicial pelo serviço OSGi da Forms e armazenado em cache para solicitações subsequentes.
 * **Forms** pré-preenchido: Durante a renderização, se um usuário solicitar formulários com dados pré-preenchidos, o serviço de renderização OSGi da Forms chamará o container de serviço da Forms e gerará um novo estado de Formulário com dados unidos. No entanto, como o layout já é gerado na etapa acima, essa chamada é mais rápida do que a primeira chamada. Essa chamada só executa a união de dados e os scripts são executados nos dados.
 
-Se houver alguma atualização no formulário ou qualquer um dos ativos usados dentro do formulário, o componente de cache de formulário a detectará e o cache desse formulário específico será invalidado. Quando o serviço Forms OSGi concluir o processamento, o Perfil Renderer jsp adicionará referências e estilos da biblioteca JavaScript a esse formulário e retornará a resposta ao cliente. Um servidor Web típico como o [Apache](https://httpd.apache.org/) pode ser usado aqui com a compactação HTML ativada. Um servidor Web reduziria significativamente o tamanho da resposta, o tráfego de rede e o tempo necessário para transmitir os dados entre o servidor e o computador cliente.
+Se houver alguma atualização no formulário ou qualquer um dos ativos usados dentro do formulário, o componente de cache de formulário a detectará e o cache desse formulário específico será invalidado. Quando o serviço Forms OSGi concluir o processamento, o Perfil Renderer jsp adicionará referências e estilos da biblioteca JavaScript a esse formulário e retornará a resposta ao cliente. Um servidor Web típico como [Apache](https://httpd.apache.org/) pode ser usado aqui com a compactação HTML ativada. Um servidor Web reduziria significativamente o tamanho da resposta, o tráfego de rede e o tempo necessário para transmitir os dados entre o servidor e o computador cliente.
 
-Quando um usuário envia o formulário, o navegador envia o estado do formulário no formato JSON para o proxy [do serviço de](../../forms/using/service-proxy.md)envio; em seguida, o proxy de serviço de envio gera um XML de dados usando dados JSON e envia esse XML de dados para o terminal de envio.
+Quando um usuário envia o formulário, o navegador envia o estado do formulário no formato JSON para [enviar proxy de serviço](../../forms/using/service-proxy.md); em seguida, o proxy de serviço de envio gera um XML de dados usando dados JSON e envia esse XML de dados para o terminal de envio.
 
 ## Componentes {#components}
 
-Você precisa de um pacote complementar do AEM Forms para ativar formulários HTML5. Para obter informações sobre como instalar o pacote suplementar do AEM Forms, consulte [Instalação e configuração do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
+Você precisa de um pacote complementar do AEM Forms para ativar formulários HTML5. Para obter informações sobre como instalar o pacote suplementar do AEM Forms, consulte [Instalar e configurar o AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 ### Componentes do OSGi (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
@@ -96,7 +96,7 @@ Os formulários HTML5 usam o cache para otimizar o throughput e o tempo de respo
   </tr>
   <tr>
    <td>Agressivo</td>
-   <td>Armazenar em cache conteúdo<br /> HTML renderizado Armazena em cache todos os artefatos em cache no nível Conservador.<br /> <strong>Observação</strong>: Essa estratégia resulta em melhor desempenho, mas consome mais memória para armazenar os artefatos em cache.</td>
+   <td>Armazenar em cache conteúdo HTML renderizado<br /> Armazenar em cache todos os artefatos em cache no nível Conservador.<br /> <strong>Observação</strong>: Essa estratégia resulta em melhor desempenho, mas consome mais memória para armazenar os artefatos em cache.</td>
   </tr>
  </tbody>
 </table>
@@ -107,13 +107,13 @@ Os formulários HTML5 executam o cache na memória usando a estratégia LRU. Se 
 >
 >O cache na memória não é compartilhado entre nós do cluster.
 
-#### Serviço de configuração {#configuration-service}
+#### Serviço de Configuração {#configuration-service}
 
 O Serviço de configuração permite o ajuste dos parâmetros de configuração e das configurações de cache para formulários HTML5.
 
-Para atualizar essas configurações, vá para o Admin Console CQ Felix (disponível em https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), procure e selecione Configuração do Forms móvel.
+Para atualizar essas configurações, vá para o Admin Console CQ Felix (disponível em https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), procure e selecione Configuração do Mobile Forms.
 
-É possível configurar o tamanho do cache ou desativá-lo usando o serviço de configuração. Você também pode ativar a depuração usando o parâmetro Opções de depuração. Para obter mais informações sobre como depurar formulários, consulte [Depuração de formulários](/help/forms/using/debug.md)HTML5.
+É possível configurar o tamanho do cache ou desativá-lo usando o serviço de configuração. Você também pode ativar a depuração usando o parâmetro Opções de depuração. Mais informações sobre a depuração de formulários podem ser encontradas em [Depuração de formulários HTML5](/help/forms/using/debug.md).
 
 ### Componentes de tempo de execução (adobe-lc-forms-runtime-pkg.zip) {#runtime-components-adobe-lc-forms-runtime-pkg-zip}
 
@@ -129,17 +129,17 @@ O mecanismo de script do HTML Forms é gravado em JavaScript para suportar a API
 
 No tempo de renderização, o script FormCalc é convertido (e armazenado em cache) em JavaScript no servidor transparente para o usuário ou designer.
 
-Este mecanismo de script usa alguns dos recursos do ECMAScript5, como Object.defineProperty. O mecanismo/biblioteca é entregue como o CQ Client Lib com o nome da categoria **xfaforms.perfil**. Também fornece API **** FormBridge para permitir que portais ou aplicativos externos interajam com formulários. Usando o FormBridge, um aplicativo externo pode ocultar programaticamente certos elementos, obter ou definir seus valores ou alterar seus atributos.
+Este mecanismo de script usa alguns dos recursos do ECMAScript5, como Object.defineProperty. O mecanismo/biblioteca é entregue como o CQ Client Lib com o nome da categoria **xfaforms.perfil**. Também fornece **API FormBridge** para permitir que portais ou aplicativos externos interajam com formulários. Usando o FormBridge, um aplicativo externo pode ocultar programaticamente certos elementos, obter ou definir seus valores ou alterar seus atributos.
 
-Para obter mais detalhes, consulte o artigo [Form Bridge](/help/forms/using/form-bridge-apis.md) .
+Para obter mais detalhes, consulte o artigo [Form Bridge](/help/forms/using/form-bridge-apis.md).
 
 #### Mecanismo de layout {#layout-engine}
 
-O layout e o aspecto visual dos formulários HTML5 são baseados nos recursos SVG 1.1, jQuery, BackBone e CSS3. A aparência inicial de um formulário é gerada e armazenada em cache no servidor. O ajuste desse layout inicial e quaisquer outras alterações incrementais no layout do formulário são gerenciados no cliente. Para isso, o pacote de tempo de execução contém um mecanismo de layout escrito em JavaScript e baseado em jQuery/Backbone. Esse mecanismo lida com todos os comportamentos dinâmicos, como Adicionar/Remover instâncias repetíveis, Layout de objeto expansível. Esse mecanismo de layout renderiza um formulário uma página de cada vez. Inicialmente, um usuário visualização somente uma página e a barra de rolagem horizontal é responsável apenas pela primeira página. No entanto, quando um usuário rola para baixo, a próxima página start a renderização. Essa execução página por página reduz a quantidade de tempo necessário para renderizar a primeira página em um navegador e melhora o desempenho percebido do formulário. Este mecanismo/biblioteca faz parte do CQ Client Lib com o nome da categoria **xfaforms.perfil**.
+O layout e o aspecto visual dos formulários HTML5 são baseados nos recursos SVG 1.1, jQuery, BackBone e CSS3. A aparência inicial de um formulário é gerada e armazenada em cache no servidor. O ajuste desse layout inicial e quaisquer outras alterações incrementais no layout do formulário são gerenciados no cliente. Para isso, o pacote de tempo de execução contém um mecanismo de layout escrito em JavaScript e baseado em jQuery/Backbone. Esse mecanismo lida com todos os comportamentos dinâmicos, como Adicionar/Remover instâncias repetíveis, Layout de objeto expansível. Esse mecanismo de layout renderiza um formulário uma página de cada vez. Inicialmente, um usuário visualização somente uma página e a barra de rolagem horizontal é responsável apenas pela primeira página. No entanto, quando um usuário rola para baixo, a próxima página start a renderização. Essa execução página por página reduz a quantidade de tempo necessário para renderizar a primeira página em um navegador e melhora o desempenho percebido do formulário. Esse mecanismo/biblioteca faz parte do Client Lib do CQ com o nome da categoria **xfaforms.perfil**.
 
-O Mecanismo de layout também contém um conjunto de widgets usados para capturar o valor dos campos de formulário de um usuário. Esses widgets são modelados como Widgets [da interface do](https://api.jqueryui.com/jQuery.widget/) jQuery que implementam certos contratos adicionais para funcionar perfeitamente com o mecanismo de layout.
+O Mecanismo de layout também contém um conjunto de widgets usados para capturar o valor dos campos de formulário de um usuário. Esses widgets são modelados como [Widgets da interface do usuário do jQuery](https://api.jqueryui.com/jQuery.widget/) que implementam certos contratos adicionais para funcionar perfeitamente com o mecanismo de layout.
 
-Para obter mais detalhes sobre widgets e contratos correspondentes, consulte Widgets [personalizados para formulários](/help/forms/using/introduction-widgets.md)HTML5.
+Para obter mais detalhes sobre widgets e contratos correspondentes, consulte [Widgets personalizados para formulários HTML5](/help/forms/using/introduction-widgets.md).
 
 #### Estilo {#styling}
 
@@ -162,7 +162,7 @@ O mecanismo de script do cliente:
 
 #### Pacotes de recursos de localização {#localization-resource-bundles}
 
-Os formulários HTML5 suportam italiano (it), espanhol (es), português brasileiro (pt_BR), chinês simplificado (zh_CN), chinês tradicional (zh_TW), coreano (ko_KR), inglês (pt_BR), francês (fr_FR), alemão (de_DE) e japonês (ja). Com base na localidade recebida no cabeçalho da solicitação, o Pacote de recursos correspondente é enviado para o cliente. Este pacote de recursos é adicionado ao JSP do Perfil como um Client Lib do CQ com o nome da categoria **xfaforms.I18N**. Você pode substituir a lógica de escolher o pacote de localidade no perfil.
+Os formulários HTML5 suportam italiano (it), espanhol (es), português brasileiro (pt_BR), chinês simplificado (zh_CN), chinês tradicional (zh_TW), coreano (ko_KR), inglês (pt_BR), francês (fr_FR), alemão (de_DE) e japonês (ja). Com base na localidade recebida no cabeçalho da solicitação, o Pacote de recursos correspondente é enviado para o cliente. Este pacote de recursos é adicionado ao JSP do Perfil como um CQ Client Lib com o nome da categoria **xfaforms.I18N**. Você pode substituir a lógica de escolher o pacote de localidade no perfil.
 
 ### Componentes Sling (adobe-lc-forms-content-pkg.zip) {#sling-components-adobe-lc-forms-content-pkg-zip}
 
@@ -170,19 +170,19 @@ O pacote Sling contém conteúdo relacionado a Perfis e Perfil Renderer.
 
 #### Perfis {#profiles}
 
-Perfis são os nós de Recursos no sling que representam um formulário ou uma Família do Forms. No nível do CQ, esses perfis são nós JCR. Os nós residem na pasta **/conteúdo** no repositório JCR e podem estar dentro de qualquer subpasta na pasta **/conteúdo** .
+Perfis são os nós de Recursos no sling que representam um formulário ou uma Família do Forms. No nível do CQ, esses perfis são nós JCR. Os nós residem na pasta **/content** no repositório JCR e podem estar dentro de qualquer subpasta na pasta **/content**.
 
-#### Renderizadores de perfis {#profile-renderers}
+#### Renderizadores de perfil {#profile-renderers}
 
-O nó Perfil tem uma propriedade **sling:resourceSuperType** com valor **xfaforms/perfil**. Essa propriedade envia internamente solicitações para o script sling para nós de Perfil localizados na pasta **/libs/xfaforms/perfil** . Esses scripts são páginas JSP, que são container para reunir os formulários HTML e os artefatos JS/CSS necessários. As páginas incluem referências a:
+O nó do Perfil tem uma propriedade **sling:resourceSuperType** com o valor **xfaforms/perfil**. Essa propriedade envia internamente solicitações para o script sling para nós de Perfil localizados na pasta **/libs/xfaforms/perfil**. Esses scripts são páginas JSP, que são container para reunir os formulários HTML e os artefatos JS/CSS necessários. As páginas incluem referências a:
 
 * **xfaforms.I18N.&lt;locale>**: Esta biblioteca contém dados localizados.
 * **xfaforms.perfil**: Esta biblioteca contém implementação para o mecanismo de script e layout XFA.
 
 Essas bibliotecas são modeladas como Bibliotecas do cliente CQ, que aproveitam as vantagens dos recursos de concatenação automática, miniificação e compactação das bibliotecas JavaScript da estrutura do CQ.
-Para obter mais informações sobre a CQ Client Libs, consulte Documentação do [CQ Clientlib](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
+Para obter mais informações sobre o CQ Client Libs, consulte [Documentação do CQ Clientlib](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
 
 Como descrito acima, o renderizador de perfil JSP chama o Forms Service por meio de uma inclusão sling. Esse JSP também define várias opções de depuração com base na configuração do administrador ou nos parâmetros de solicitação.
 
 Os formulários HTML5 permitem que os desenvolvedores criem o Perfil e o Perfil Renderer para personalizar a aparência dos formulários. Por exemplo, formulários HTML permitem que desenvolvedores integrem formulários em um painel ou seção &lt;div> de um portal HTML existente.
-Para obter mais detalhes sobre como criar perfis personalizados, consulte [Criação de um Perfil](/help/forms/using/custom-profile.md)personalizado.
+Para obter mais detalhes sobre a criação de perfis personalizados, consulte [Criação de um Perfil personalizado](/help/forms/using/custom-profile.md).
