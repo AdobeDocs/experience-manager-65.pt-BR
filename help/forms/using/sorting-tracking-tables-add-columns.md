@@ -1,8 +1,8 @@
 ---
 title: Personalizar tabelas de rastreamento
 seo-title: Personalizar tabelas de rastreamento
-description: Como personalizar a exibição dos detalhes dos processos do usuário na tabela tarefa exibida na guia de rastreamento da área de trabalho dos AEM Forms.
-seo-description: Como personalizar a exibição dos detalhes dos processos do usuário na tabela tarefa exibida na guia de rastreamento da área de trabalho dos AEM Forms.
+description: Como personalizar a exibição dos detalhes dos processos do usuário na tabela tarefa exibida na guia de rastreamento da área de trabalho do AEM Forms.
+seo-description: Como personalizar a exibição dos detalhes dos processos do usuário na tabela tarefa exibida na guia de rastreamento da área de trabalho do AEM Forms.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Personalizar tabelas de rastreamento{#customize-tracking-tables}
 
-A guia de rastreamento no espaço de trabalho do AEM Forms é usada para exibir os detalhes das instâncias de processo nas quais o usuário conectado está envolvido. Para visualização das tabelas de rastreamento, primeiro selecione um nome de processo no painel esquerdo para ver sua lista de instâncias no painel do meio. Selecione uma instância do processo para ver uma tabela de tarefas gerada por essa instância no painel direito. Por padrão, as colunas da tabela exibem os seguintes atributos de tarefa (o atributo correspondente no modelo de tarefa é fornecido entre parênteses):
+A guia de rastreamento na área de trabalho do AEM Forms é usada para exibir os detalhes das instâncias de processo nas quais o usuário conectado está envolvido. Para visualização das tabelas de rastreamento, primeiro selecione um nome de processo no painel esquerdo para ver sua lista de instâncias no painel do meio. Selecione uma instância do processo para ver uma tabela de tarefas gerada por essa instância no painel direito. Por padrão, as colunas da tabela exibem os seguintes atributos de tarefa (o atributo correspondente no modelo de tarefa é fornecido entre parênteses):
 
 * ID ( `taskId`)
 * Nome ( `stepName`)
@@ -116,9 +116,9 @@ Os atributos restantes no modelo de tarefa disponíveis para exibição na tabel
  </tbody>
 </table>
 
-Para as seguintes personalizações na tabela tarefa, é necessário fazer alterações semânticas no código-fonte. Consulte [Introdução à área de trabalho](/help/forms/using/introduction-customizing-html-workspace.md) Personalizar AEM Forms para saber como fazer alterações semânticas usando o SDK do espaço de trabalho e criar um pacote minified a partir da fonte alterada.
+Para as seguintes personalizações na tabela tarefa, é necessário fazer alterações semânticas no código-fonte. Consulte [Introdução à Personalização da área de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para saber como você pode fazer alterações semânticas usando o SDK da área de trabalho e criar um pacote minified a partir da fonte alterada.
 
-## Alteração das colunas da tabela e sua ordem {#changing-table-columns-and-their-order}
+## Alteração de colunas de tabela e ordem {#changing-table-columns-and-their-order}
 
 1. Para modificar os atributos de tarefa exibidos na tabela e sua ordem, configure o arquivo /ws/js/runtime/templates/processinstancehistory.html :
 
@@ -158,7 +158,7 @@ Para as seguintes personalizações na tabela tarefa, é necessário fazer alter
 
 Para classificar a tabela de lista de tarefa ao clicar no cabeçalho da coluna:
 
-1. Registre um manipulador de cliques para `.fixedTaskTableHeader th` o no arquivo `js/runtime/views/processinstancehistory.js`.
+1. Registre um manipulador de cliques para `.fixedTaskTableHeader th` no arquivo `js/runtime/views/processinstancehistory.js`.
 
    ```javascript
    events: {
@@ -168,7 +168,7 @@ Para classificar a tabela de lista de tarefa ao clicar no cabeçalho da coluna:
    }
    ```
 
-   No manipulador, chame a `onTaskTableHeaderClick` função de `js/runtime/util/history.js`.
+   No manipulador, chame a função `onTaskTableHeaderClick` de `js/runtime/util/history.js`.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -176,7 +176,7 @@ Para classificar a tabela de lista de tarefa ao clicar no cabeçalho da coluna:
    }
    ```
 
-1. Exponha o `TaskTableHeaderClick` método em `js/runtime/util/history.js`.
+1. Exponha o método `TaskTableHeaderClick` em `js/runtime/util/history.js`.
 
    O método encontra o atributo tarefa do evento click, classifica a lista de tarefas desse atributo e renderiza a tabela tarefa com a lista de tarefas classificada.
 
