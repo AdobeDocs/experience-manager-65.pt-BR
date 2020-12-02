@@ -42,17 +42,17 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td><code>target</code></td>
-   <td>Especifica o objeto sobre o qual o evento está agindo.</td>
-   <td>Não há suporte para a configuração de valor por meio de script.<br /> </td>
+   <td>Especifica o objeto sobre o qual o evento está atuando.</td>
+   <td>Não há suporte para a definição de valor por meio de script.<br /> </td>
   </tr>
   <tr>
    <td><code>newtext</code></td>
    <td>Especifica o conteúdo do campo após a sua alteração em resposta a ações de usuários.</td>
-   <td><p>A <code>newText</code> propriedade não funciona corretamente nos seguintes casos:</p>
+   <td><p>A propriedade <code>newText</code> não funciona corretamente nos seguintes casos:</p>
     <ul>
      <li>Sobre a seleção e a substituição de textos</li>
      <li>Ao excluir, copiar e colar textos.</li>
-     <li>Ao digitar algumas teclas de caractere especiais (por exemplo $, (, ), &amp;, @ e muito mais) em campos numéricos<br /> </li>
+     <li>Ao digitar algumas teclas de caractere especiais (por exemplo $, (, ), &amp;, @ e mais) em campos numéricos<br /> </li>
      <li>Ao usar a combinação shift+alfanumérico. </li>
      <li>Ao usar campos de data/hora.</li>
     </ul>
@@ -131,7 +131,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
-   <td>Specifies whether validation scripts will execute.<br /> </td>
+   <td>Especifica se os scripts de validação serão executados.<br /> </td>
    <td>Nenhum</td>
   </tr>
   <tr>
@@ -204,17 +204,17 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
   <tr>
    <td><code>formattedValue</code></td>
    <td>Especifica o valor formatado para este campo.</td>
-   <td>A configuração <code>formattedValue</code> por script não é suportada.</td>
+   <td>Não há suporte para a configuração <code>formattedValue</code> pelo script.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Especifica o valor de edição para este campo.</td>
-   <td>A configuração <code>editValue </code>por script não é suportada.</td>
+   <td>Não há suporte para a configuração de <code>editValue </code>through script.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Especifica a string da mensagem de validação de formato para esse campo.</td>
-   <td>A configuração <code>formatMessage </code>por script não é suportada.</td>
+   <td>Não há suporte para a configuração de <code>formatMessage </code>through script.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -380,7 +380,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
 | `remove` | Remove um nó da lista de nós. |
 | `insert` | Insere um nó antes de um nó específico na lista de nós. |
 
-## node {#node}
+## nó {#node}
 
 | Propriedade | Descrição | Exceção |
 |---|---|---|
@@ -493,7 +493,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
 |---|---|
 | target | O URL para o qual os dados são enviados. A omissão deste atributo implica que o aplicativo de processamento XFA obtém o URI usando uma técnica específica do produto, como acessar informações específicas do produto no objeto de configuração. |
 
-## árvore {#tree}
+## tree {#tree}
 
 <table>
  <tbody>
@@ -720,7 +720,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>legenda</td>
    <td>O objeto caption descreve um rótulo descritivo associado a um objeto de design de formulário.</td>
    <td> </td>
   </tr>
@@ -773,7 +773,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td><strong>Exceção</strong></td>
   </tr>
   <tr>
-   <td>border</td>
+   <td>fronteira</td>
    <td>O objeto border descreve a borda que envolve o objeto checkButton. </td>
    <td>As alterações são refletidas no modelo e estão disponíveis para scripts, mas não são sincronizadas com elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.<br /> </td>
   </tr>
@@ -790,7 +790,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td><strong>Exceção</strong></td>
   </tr>
   <tr>
-   <td>border</td>
+   <td>fronteira</td>
    <td>O objeto border descreve a borda que delimita o objeto choiceList.</td>
    <td> </td>
   </tr>
@@ -801,7 +801,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
 
 | **Propriedade** | **Descrição** | **Exceção** |
 |---|---|---|
-| border | O objeto border descreve a borda que delimita o objeto dateTimeEdit. |  |
+| fronteira | O objeto border descreve a borda que delimita o objeto dateTimeEdit. |  |
 
 ## Imagem {#image}
 
@@ -825,17 +825,17 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
  </tbody>
 </table>
 
-## imageEdit {#imageedit}
+## imageEdit  {#imageedit}
 
 | **Propriedade** | **Descrição** | **Exceção** |
 |---|---|---|
-| border | O objeto border descreve a borda que envolve o objeto imageEdit. |  |
+| fronteira | O objeto border descreve a borda que envolve o objeto imageEdit. |  |
 
 ## numericEdit {#numericedit}
 
 | **Propriedade** | **Descrição** | **Exceção** |
 |---|---|---|
-| border | O objeto border descreve as bordas que circundam um objeto. | nenhum |
+| fronteira | O objeto border descreve as bordas que circundam um objeto. | nenhum |
 
 ## objeto {#object}
 
@@ -864,7 +864,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td><strong>Exceção</strong></td>
   </tr>
   <tr>
-   <td>edge</td>
+   <td>margem</td>
    <td>O objeto edge descreve um arco, linha ou lado de uma borda ou retângulo.<br /> </td>
    <td>Atributos como cor, cap e muito mais não são suportados.</td>
   </tr>
@@ -881,7 +881,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td><strong>Exceção</strong></td>
   </tr>
   <tr>
-   <td>border</td>
+   <td>fronteira</td>
    <td>O objeto border descreve as bordas que circundam um objeto.<br /> </td>
    <td>Nenhum</td>
   </tr>
@@ -903,7 +903,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td>Nenhum</td>
   </tr>
   <tr>
-   <td>border</td>
+   <td>fronteira</td>
    <td>Especifica a borda em torno desse campo.</td>
    <td>Nenhum</td>
   </tr>
@@ -948,7 +948,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td>Nenhum</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>legenda</td>
    <td>O objeto caption descreve um rótulo descritivo associado a um objeto de design de formulário.<br /> </td>
    <td>Nenhum</td>
   </tr>
@@ -968,7 +968,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td> </td>
   </tr>
   <tr>
-   <td>access</td>
+   <td>acesso</td>
    <td>Controla o acesso de usuários ao conteúdo de um contêiner , como um subformulário.</td>
    <td>Para itens individuais no exclgrp, ele sempre retorna aberto. </td>
   </tr>
@@ -1010,7 +1010,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td><strong>Exceção<strong></strong></strong></td>
   </tr>
   <tr>
-   <td>edge</td>
+   <td>margem</td>
    <td>O objeto edge descreve um arco, linha ou lado de uma borda ou retângulo.<br /> </td>
    <td>Atributos como cor, cap e muito mais não são suportados. </td>
   </tr>
@@ -1027,7 +1027,7 @@ As propriedades JavaScript, FormCalc e os métodos suportados em formulários HT
    <td><strong>Exceção<strong></strong></strong></td>
   </tr>
   <tr>
-   <td>edge</td>
+   <td>margem</td>
    <td>O objeto edge descreve um arco, linha ou lado de uma borda ou retângulo.<br /> </td>
    <td>Atributos como cor, cap e muito mais não são suportados. </td>
   </tr>
@@ -1117,7 +1117,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
 
 ### Funções suportadas por FormCalc {#formcalc-supported-functions}
 
-### Suporte de Expressão FormCalc {#formcalc-expression-support}
+### Suporte à Expressão FormCalc {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1137,7 +1137,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
    <td>var a<br /> var a=3<br /> a=3</td>
   </tr>
   <tr>
-   <td>expressão lógica</td>
+   <td>Expressão lógica</td>
    <td>
     <ul>
      <li>Lógica (e/ou)</li>
@@ -1173,7 +1173,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
  </tbody>
 </table>
 
-### Suporte à API do Acrobat {#acrobat-api-support}
+### Suporte à API Acrobat {#acrobat-api-support}
 
 1. **Funções aritméticas**
 
@@ -1313,7 +1313,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
   <tr>
    <td>app.calculate</td>
    <td>Se verdadeiro (o valor padrão), os cálculos podem ser executados. Se falso, os cálculos não são permitidos.</td>
-   <td>Sempre verdadeiro para formulários HTMl5.</td>
+   <td>Sempre verdadeiro para HTMl5 Forms.</td>
   </tr>
   <tr>
    <td>app.constants</td>
@@ -1332,13 +1332,13 @@ FormCalc é uma linguagem específica do XFA para criar raízes de lógica e cá
   </tr>
   <tr>
    <td>app.language</td>
-   <td>O idioma do visualizador do Acrobat em execução.</td>
+   <td>O idioma do visualizador Acrobat em execução.</td>
    <td>Sempre "ENU" para formulários HTMl5.</td>
   </tr>
  </tbody>
 </table>
 
-## eventos XFA suportados {#supported-xfa-events}
+## Eventos XFA suportados {#supported-xfa-events}
 
 Os seguintes eventos XFA do lado do cliente são suportados:
 
@@ -1353,4 +1353,4 @@ Os seguintes eventos XFA do lado do cliente são suportados:
 
 >[!NOTE]
 >
->Os formulários HTML5 são renderizados no lado do cliente (navegador). Recomenda-se usar a **validação** e o **cálculo** de scripts no cliente em vez de scripts no servidor.
+>Os formulários HTML5 são renderizados no lado do cliente (navegador). É recomendável usar scripts **validate** e **calculate** no cliente em vez de scripts no servidor.
