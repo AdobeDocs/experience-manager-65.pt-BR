@@ -131,4 +131,4 @@ Embora você ainda possa estar em produção com visualizadores baseados em DHTM
 
 **Com quem posso entrar em contato para obter mais informações?**
 
-Se essas Perguntas frequentes não responderem a todas as suas perguntas, [use a Admin Console para criar um caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de suporte ou entre em contato com o gerente da conta do Adobe.
+Se essas perguntas frequentes não responderem a todas as suas perguntas, [use o Admin Console para criar um caso de suporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ou entre em contato com o gerente da conta do Adobe.
