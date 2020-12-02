@@ -11,23 +11,26 @@ discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
 
-# Interação da coluna vertebral{#backbone-interaction}
+# Interação com backbone{#backbone-interaction}
 
-Backbone é uma biblioteca que ajuda a criar e seguir a arquitetura MVC em aplicativos da Web. A ideia básica do Backbone é organizar sua interface em visualizações lógicas, apoiadas por modelos, cada um dos quais pode ser atualizado independentemente quando o modelo é alterado, sem precisar redesenhar a página. Para obter mais informações sobre o Backbone, consulte [https://backbonejs.org](https://backbonejs.org/).
+Backbone é uma biblioteca que ajuda a criar e seguir a arquitetura MVC em aplicativos da Web. A ideia básica do Backbone é organizar sua interface em visualizações lógicas, apoiadas por modelos, cada um dos quais pode ser atualizado independentemente quando o modelo é alterado, sem precisar redesenhar a página. Para obter mais informações sobre Backbone, consulte [https://backbonejs.org](https://backbonejs.org/).
 
 Alguns conceitos-chave são os seguintes:
 
-**Modelo** Backbone Contém dados e a maior parte da lógica relacionada a esses dados.
+**Modelo** de backboneContém dados e a maior parte da lógica relacionada a esses dados.
 
-**visualização** Backbone Usada para representar o estado do modelo correspondente. Uma visualização de backbone na verdade se comporta como um controlador, ouvindo eventos de interface do usuário como cliques do usuário ou eventos de modelo (como dados alterados) e modifica a interface do usuário conforme apropriado.
+**Exibição de backbone** usada para representar o estado do modelo correspondente. Uma visualização de backbone na verdade se comporta como um controlador, ouvindo eventos de interface do usuário como cliques do usuário ou eventos de modelo (como dados alterados) e modifica a interface do usuário conforme apropriado.
 
-**Modelo** HTML Um modelo de invólucro que tem espaços reservados preenchidos pelo modelo.
+**Modelo** HTMLUm modelo de invólucro que tem espaços reservados preenchidos pelo modelo.
 
-**Área de trabalho** do AEM Forms Contém vários componentes individuais. Cada componente:
+**Espaço** de trabalho AEM FormsContém vários componentes individuais. Cada componente:
 
 * Representa um único elemento lógico da interface do usuário.
 * Pode ser uma coleção de componentes semelhantes.
@@ -50,10 +53,10 @@ Quando uma visualização é inicializada, a visualização chama seu modelo cor
 Um exemplo:
 
 1. O usuário clica em um modelo de tarefa na lista de tarefa.
-1. A visualização de Tarefa escuta o clique e chama a função de renderização no modelo de tarefa.
-1. Posteriormente, o modelo de Tarefa chama o serviço, que é um ponto comum para todas as comunicações com o servidor de formulários AEM.
-1. A classe de serviço chama o terminal REST do AEM Forms para método de renderização via ajax.
+1. A visualização de tarefa escuta o clique e chama a função de renderização no modelo de tarefa.
+1. O modelo de tarefa chama subsequentemente o serviço, que é um ponto comum para toda a comunicação com o servidor AEM Forms.
+1. A classe Service chama o terminal REST do AEM Forms para método de renderização via ajax.
 1. O retorno de sucesso para esta invocação Ajax é definido no modelo de tarefa.
-1. O modelo de Tarefa gera um evento de backbone como uma notificação de conclusão da chamada de renderização.
+1. O modelo de tarefa gera um evento de backbone como uma notificação de conclusão da chamada de renderização.
 1. Outra visualização, a visualização de detalhes da tarefa escuta esse evento do modelo de tarefa.
-1. A visualização de detalhes da Tarefa altera o modelo de detalhes da tarefa para exibir a tarefa renderizada (formulário, detalhes, anexos, observações e assim por diante) para o usuário.
+1. A visualização de detalhes da tarefa altera o modelo de detalhes da tarefa para exibir a tarefa renderizada (formulário, detalhes, anexos, observações e assim por diante) para o usuário.
