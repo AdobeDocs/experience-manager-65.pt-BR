@@ -1,6 +1,6 @@
 ---
-title: Configurar o ambiente para o aplicativo AEM Forms
-seo-title: Configurar o ambiente para o aplicativo AEM Forms
+title: Configurar ambiente para aplicativos AEM Forms
+seo-title: Configurar ambiente para aplicativos AEM Forms
 description: Hardware, software e licenças para criar e implantar o aplicativo AEM Forms.
 seo-description: Hardware, software e licenças para criar e implantar o aplicativo AEM Forms.
 uuid: 4123a6b7-5766-476c-9afb-f57029b148ad
@@ -12,11 +12,14 @@ discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 0%
 
 ---
 
 
-# Configurar o ambiente para o aplicativo AEM Forms{#set-up-environment-for-aem-forms-app}
+# Configurar ambiente para aplicativos AEM Forms{#set-up-environment-for-aem-forms-app}
 
 Você precisa do seguinte hardware, software e licenças para criar e implantar o aplicativo AEM Forms:
 
@@ -37,9 +40,9 @@ Você precisa do seguinte hardware, software e licenças para criar e implantar 
 
 ## Para dispositivos Android {#for-android-devices}
 
-* Android Development Toolkit (pacote ADT) que pode ser baixado de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
+* Android Development Toolkit (conjunto ADT) que pode ser baixado de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Se o ambiente estiver configurado em um sistema MAC, o ADT deverá ser instalado na pasta Aplicativos.
-* Se o ADT estiver instalado em qualquer outro local no MAC, ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT precisa ser atualizado no `local.properties` arquivo disponível na `src\android` pasta no arquivo de origem extraído `mobileworkspace-src.zip`. Neste arquivo, aponte a `sdk.dir` variável para o local do ADT SDK em sua área de trabalho.
+* Se o ADT estiver instalado em qualquer outro local no MAC, ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT precisa ser atualizado no arquivo `local.properties` que está disponível na pasta `src\android` no arquivo de origem extraído `mobileworkspace-src.zip`. Neste arquivo, aponte a variável `sdk.dir` para o local do ADT SDK em sua área de trabalho.
 
 >[!NOTE]
 >
