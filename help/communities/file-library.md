@@ -19,7 +19,7 @@ ht-degree: 9%
 ---
 
 
-# Recurso Biblioteca de arquivos{#file-library-feature}
+# Recurso da biblioteca de arquivos{#file-library-feature}
 
 ## Introdução {#introduction}
 
@@ -27,26 +27,26 @@ O recurso de biblioteca de arquivos fornece um local para visitantes do site com
 
 Esta seção da documentação descreve:
 
-* Adicionar o recurso da biblioteca de arquivos a um site do AEM.
-* Configurações do `File Library` componente.
+* Adicionar o recurso da biblioteca de arquivos a um site AEM.
+* Configurações do componente `File Library`.
 
 ### Adicionar uma biblioteca de arquivos a uma página {#adding-a-file-library-to-a-page}
 
-Para adicionar um `File Library` componente a uma página no modo de autor, localize o componente:
+Para adicionar um componente `File Library` a uma página no modo de autor, localize o componente:
 
 * `Communities / File Library`
 
 e arraste-o para o lugar em uma página.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando as bibliotecas [do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) necessárias forem incluídas, o `File Library` componente será exibido desta forma:
+Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) forem incluídas, o componente `File Library` aparecerá desta forma:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
-### Configuração da biblioteca de arquivos {#configuring-file-library}
+### Configurando a biblioteca de arquivos {#configuring-file-library}
 
-Selecione o componente inserido a ser acessado e selecione o `File Library` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `File Library` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![chlimage_1-431](assets/chlimage_1-431.png)
 
@@ -54,7 +54,7 @@ Selecione o componente inserido a ser acessado e selecione o `File Library` `Con
 
 #### Guia Comentários {#comments-tab}
 
-Na guia **Comentários** , especifique se e como os comentários dos arquivos carregados serão exibidos:
+Na guia **Comments**, especifique se e como os comentários dos arquivos carregados serão exibidos:
 
 * **Permitir comentários em arquivos**
 
@@ -102,7 +102,7 @@ Na guia **Comentários** , especifique se e como os comentários dos arquivos ca
 
 * **Permitir monitoramento**
 
-   Se marcada, inclua o seguinte recurso para artigos de blog, que permite que os membros sejam [notificados](/help/communities/notifications.md) sobre novas publicações. O padrão está desmarcado.
+   Se marcada, inclua o seguinte recurso para artigos de blog, que permite que os membros sejam [notificados](/help/communities/notifications.md) de novas publicações. O padrão está desmarcado.
 
 * **Ativar a menção**
 
@@ -122,7 +122,7 @@ Na guia **Comentários** , especifique se e como os comentários dos arquivos ca
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia Moderação **do** usuário, configure a moderação de comentários, se forem permitidos comentários:
+Na guia **Moderação do usuário**, configure a moderação dos comentários, se os comentários forem permitidos:
 
 * **Pré-moderação**
 
@@ -158,9 +158,9 @@ Na guia Moderação **do** usuário, configure a moderação de comentários, se
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao Limite de **moderação**. O padrão é 5.
+   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao **Limite de moderação**. O padrão é 5.
 
-### Guia Configurações de classificação {#sort-settings-tab}
+### guia Configurações de classificação {#sort-settings-tab}
 
 Ordenar por
 
@@ -170,6 +170,6 @@ Definir como padrão
 
 Mais informações podem ser encontradas na página [File Library Essentials](/help/communities/essentials-file-library.md) para desenvolvedores.
 
-Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo](/help/communities/moderate-ugc.md)gerado pelo usuário.
+Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo](/help/communities/tag-ugc.md)gerado pelo usuário.
+Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
