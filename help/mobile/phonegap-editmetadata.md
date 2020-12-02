@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 O bloco **Gerenciar aplicativo** e a página &quot;Gerenciar aplicativo&quot; fornecem um meio de visualização e edição de metadados do aplicativo. Os metadados do aplicativo são detalhes necessários para a liberação de um aplicativo na loja de um fornecedor. Isso pode incluir metadados comuns, metadados do iOS e capturas de tela. Consulte [Gerenciar o bloco de aplicativos](/help/mobile/phonegap-app-details-tile.md) para obter mais detalhes sobre metadados comuns e iOS.
 
@@ -34,13 +34,13 @@ Para editar os metadados do aplicativo:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Para visualização ou editar detalhes clicando em &#39;...&#39; no canto inferior direito do bloco **Gerenciar aplicativo** .
+1. Para visualização ou editar detalhes clicando em &#39;...&#39; no canto inferior direito do bloco **Gerenciar aplicativo**.
 
 1. Digite ou visualização os detalhes em qualquer uma das cinco guias disponíveis, conforme mostrado na figura abaixo.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-## Edição de metadados comuns e IOS {#editing-common-and-ios-metadata}
+## Editando Metadados Comuns e IOS {#editing-common-and-ios-metadata}
 
 Você pode editar os metadados comuns e IOS:
 
@@ -51,7 +51,7 @@ Você pode editar os metadados comuns e IOS:
 
 ## Adicionar e remover capturas de tela {#add-and-remove-screenshots}
 
-Você pode incluir capturas de tela do aplicativo ao roll-up de metadados. Alguns fornecedores precisam de capturas de tela precisas ao enviar qualquer aplicativo para a app store. Essas imagens já devem existir no Assets. Consulte Seletor [de ativos](../assets/search-assets.md#assetpicker) para fazer upload de suas capturas de tela.
+Você pode incluir capturas de tela do aplicativo ao roll-up de metadados. Alguns fornecedores precisam de capturas de tela precisas ao enviar qualquer aplicativo para a app store. Essas imagens já devem existir no Assets. Consulte [Seletor de ativos](../assets/search-assets.md#assetpicker) para fazer upload de suas capturas de tela.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -59,12 +59,12 @@ Você pode incluir capturas de tela do aplicativo ao roll-up de metadados. Algun
 
 Para adicionar um ativo como uma captura de tela:
 
-1. No modo de edição da página **Gerenciar aplicativo** , clique em adicionar (ícone de adição).
-1. Selecione o ativo e clique em **Selecionar** para adicioná-lo.
+1. No modo de edição da página **Gerenciar aplicativo**, clique em adicionar (ícone de adição).
+1. Selecione o ativo e clique em **Selecione** para adicionar o ativo.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Selecione o ativo e clique em **Selecionar** para adicioná-lo.
+1. Selecione o ativo e clique em **Selecione** para adicionar o ativo.
 
 >[!NOTE]
 >
