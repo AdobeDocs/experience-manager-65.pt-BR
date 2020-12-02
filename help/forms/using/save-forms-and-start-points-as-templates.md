@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
@@ -22,14 +25,14 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 Execute as seguintes etapas para criar um modelo:
 
 1. Abra um formulário e selecione ou preencha os campos que têm valores quase idênticos toda vez que você o usa. Você pode incluir um anexo ao modelo que normalmente é adicionado ao preencher o formulário.
-1. Toque em **Salvar como modelo** ![save_as_](assets/save_as_template.png)templateicon. Será exibida uma caixa de diálogo para especificar o nome do modelo.
+1. Toque no ícone **Salvar como modelo** ![save_as_template](assets/save_as_template.png). Será exibida uma caixa de diálogo para especificar o nome do modelo.
 1. Especifique o nome do modelo e toque em **Salvar**. O modelo é exibido na pasta de modelo.
 
    Se existir um modelo com o mesmo nome, uma caixa de diálogo para confirmar a substituição do modelo existente será exibida. Para substituir o modelo existente pelo novo modelo, toque em **Continuar** ou para salvar o modelo com um nome diferente, toque em **Cancelar**.
 
 Agora, você pode abrir o modelo salvo. Toda vez que um modelo é aberto, um novo formulário ou tarefa é criada e o formulário exibe os dados e as opções salvos. Com os modelos, você pode editar os dados pré-preenchidos, adicionar um anexo, salvar como rascunho, enviar a tarefa ou criar outro modelo usando-o. Os modelos são específicos para dispositivos móveis e não são sincronizados com o servidor Adobe Experience Manager Forms.
 
-Você também pode excluir um modelo se ele não for mais necessário. Para excluir um modelo, navegue até a pasta de modelos, toque nas reticências e em **Excluir modelo**.
+Você também pode excluir um modelo se ele não for mais necessário. Para excluir um modelo, navegue até a pasta de modelos, toque nas reticências e toque em **Excluir modelo**.
 
 >[!NOTE]
 >
