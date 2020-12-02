@@ -22,10 +22,10 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->`JAR` e `WAR` são os tipos de arquivos AEM são lançados. Esses formatos estão passando por uma garantia de qualidade para acomodar os níveis de suporte que a Adobe comprometeu.
+>`JAR` e  `WAR` são os tipos de arquivos AEM são lançados. Esses formatos estão passando por uma garantia de qualidade para acomodar os níveis de suporte que a Adobe comprometeu.
 
 
-Esta seção informa como instalar o Adobe Experience Manager (AEM) com um servidor de aplicativos. Consulte a seção Plataformas [](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) suportadas para ver os níveis de suporte específicos fornecidos para os servidores de aplicativos individuais.
+Esta seção informa como instalar o Adobe Experience Manager (AEM) com um servidor de aplicativos. Consulte a seção [Plataformas suportadas](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) para ver os níveis de suporte específicos fornecidos para os servidores de aplicativos individuais.
 
 As etapas de instalação dos seguintes Servidores de aplicativos estão descritas:
 
@@ -38,9 +38,9 @@ Consulte a documentação apropriada do servidor de aplicativos para obter mais 
 
 >[!NOTE]
 >
->Se você estiver usando o Dynamic Media em uma implantação WAR, consulte a documentação [do](/help/assets/config-dynamic.md#enabling-dynamic-media)Dynamic Media.
+>Se você estiver usando o Dynamic Media em uma implantação WAR, consulte a [documentação do Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
-## Descrição geral {#general-description}
+## Descrição Geral {#general-description}
 
 ### Comportamento padrão ao instalar AEM em um Servidor de aplicativos {#default-behaviour-when-installing-aem-in-an-application-server}
 
@@ -49,7 +49,7 @@ AEM vem como um único arquivo de guerra para implantar.
 Se implantado, o seguinte ocorrerá por padrão:
 
 * o modo de execução é `author`
-* a instância (Repository, Felix OSGI ambiente, pacotes etc.) está instalado no `${user.dir}/crx-quickstart`local em que `${user.dir}` está o diretório de trabalho atual, este caminho para crx-quickstart é chamado `sling.home`
+* a instância (Repository, Felix OSGI ambiente, pacotes etc.) está instalado em `${user.dir}/crx-quickstart`onde `${user.dir}` é o diretório de trabalho atual, este caminho para crx-quickstart é chamado `sling.home`
 
 * a raiz de contexto é o nome do arquivo de guerra, por exemplo: `aem-6`
 
@@ -57,9 +57,9 @@ Se implantado, o seguinte ocorrerá por padrão:
 
 Você pode alterar o comportamento padrão da seguinte maneira:
 
-* modo de execução : configure o `sling.run.modes` `WEB-INF/web.xml` parâmetro no arquivo do arquivo de guerra AEM antes da implantação
+* modo de execução : configure o parâmetro `sling.run.modes` no arquivo `WEB-INF/web.xml` do arquivo de guerra AEM antes da implantação
 
-* sling.home: configure o `sling.home` parâmetro no `WEB-INF/web.xml`arquivo do arquivo AEM war antes da implantação
+* sling.home: configure o parâmetro `sling.home` no arquivo `WEB-INF/web.xml`do arquivo de guerra AEM antes da implantação
 
 * raiz de contexto: renomear o arquivo AEM war
 
@@ -72,12 +72,12 @@ Para obter uma instância de publicação implantada, é necessário definir o m
 * Reempacotar o arquivo web.xml em AEM arquivo de guerra
 * Implantar AEM arquivo de guerra
 
-#### Verificação da instalação {#installation-check}
+#### Verificação de instalação {#installation-check}
 
 Para verificar se tudo está instalado, você pode:
 
-* exclua o `error.log`arquivo para ver se todo o conteúdo está instalado
-* verifique se todos os pacotes estão instalados `/system/console`
+* exclua o arquivo `error.log`para ver se todo o conteúdo está instalado
+* verifique `/system/console` se todos os pacotes estão instalados
 
 #### Duas instâncias no mesmo servidor de aplicativos {#two-instances-on-the-same-application-server}
 
@@ -99,7 +99,7 @@ Para fins de demonstração, pode ser apropriado instalar o autor e publicar a i
 
 ### WebSphere 8.5 {#websphere}
 
-Antes de uma implantação, leia a Descrição [](#general-description) geral acima.
+Antes de uma implantação, leia a [Descrição Geral](#general-description) acima.
 
 **Preparação do servidor**
 
@@ -128,7 +128,7 @@ Antes de uma implantação, leia a Descrição [](#general-description) geral ac
 
 #### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
 
-Antes de uma implantação, leia a Descrição [](#general-description) geral acima.
+Antes de uma implantação, leia a [Descrição Geral](#general-description) acima.
 
 **Preparar servidor JBoss**
 
@@ -136,7 +136,7 @@ Defina os argumentos da memória no arquivo conf (por exemplo, `standalone.conf`
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-se você usar o deployment-scanner para instalar o aplicativo da Web AEM, talvez seja bom aumentar o valor `deployment-timeout,` desse conjunto de um `deployment-timeout` atributo no arquivo xml da sua instância (por exemplo `configuration/standalone.xml)`:
+se você usar o deployment-scanner para instalar o aplicativo da Web AEM, talvez seja bom aumentar o `deployment-timeout,` para esse conjunto de atributos `deployment-timeout` no arquivo xml da sua instância (por exemplo, `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -152,30 +152,30 @@ se você usar o deployment-scanner para instalar o aplicativo da Web AEM, talvez
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-Antes de uma implantação, leia a Descrição [](#general-description) geral acima.
+Antes de uma implantação, leia a [Descrição Geral](#general-description) acima.
 
 Isso usa um layout de servidor simples com apenas um servidor de administração.
 
 **Preparação do WebLogic Server**
 
-* Em `${myDomain}/config/config.xml`adicionar à seção de configuração de segurança:
+* Em `${myDomain}/config/config.xml`adicione à seção security-configuration:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` consulte em [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) para obter a posição correta (por padrão, para posicioná-la no final da seção está ok)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` consulte  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdpara obter a posição correta (por padrão, para posicioná-la no final da seção está ok)
 
 * Aumente as configurações de memória da VM:
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh)search for WLS_MEM_ARGS, defina por exemplo set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * abra `${myDomain}/bin/setDomainEnv.cmd` (resp.sh)pesquise por WLS_MEM_ARGS, defina, por exemplo, set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * reiniciar o WebLogic Server
 
-* Criar em `${myDomain}` uma pasta de pacotes e dentro de uma pasta cq e nela uma pasta Plano
+* Crie em `${myDomain}` uma pasta de pacotes e dentro de uma pasta cq e, nela, uma pasta Plan
 
 **Implantar AEM aplicativo da Web**
 
 * Baixar AEM arquivo de guerra
 * Coloque o arquivo de guerra AEM na pasta ${myDomain}/packages/cq
-* Faça com que suas configurações sejam ativadas `WEB-INF/web.xml` (consulte acima na Descrição geral)
+* Faça suas configurações em `WEB-INF/web.xml`, se necessário (consulte acima na Descrição geral)
 
-   * Desempacotar `WEB-INF/web.xml`arquivo
+   * Desempacotar o arquivo `WEB-INF/web.xml`
    * alterar o parâmetro sling.run.mode para publicar
    * exclua o comentário do parâmetro inicial sling.home e defina esse caminho conforme necessário (consulte Descrição geral)
    * Repack arquivo web.xml
@@ -183,19 +183,19 @@ Isso usa um layout de servidor simples com apenas um servidor de administração
 * Implantar AEM arquivo de guerra como um aplicativo (para outras configurações, use as configurações padrão)
 * A instalação pode demorar...
 * Verifique se a instalação terminou conforme mencionado acima na Descrição geral (por exemplo, ajustando o error.log)
-* Você pode alterar a raiz de contexto na guia Configuração do aplicativo da Web no WebLogic `/console`
+* Você pode alterar a raiz de contexto na guia Configuração do aplicativo Web no WebLogic `/console`
 
 #### Tomcat 8/8.5 {#tomcat}
 
-Antes de uma implantação, leia a Descrição [](#general-description) geral acima.
+Antes de uma implantação, leia a [Descrição Geral](#general-description) acima.
 
 * **Preparar servidor Tomcat**
 
    * Aumente as configurações de memória da VM:
 
-      * Em `bin/catalina.bat` (resp `catalina.sh` on unix), adicione a seguinte configuração:
+      * Em `bin/catalina.bat` (resp `catalina.sh` no unix) adicione a seguinte configuração:
       * `set "JAVA_OPTS= -Xmx2048m`
-   * O Tomcat não permite acesso de administrador nem de gerente na instalação. Portanto, é necessário editar manualmente `tomcat-users.xml` para permitir o acesso a essas contas:
+   * O Tomcat não permite acesso de administrador nem de gerente na instalação. Portanto, é necessário editar `tomcat-users.xml` manualmente para permitir o acesso a essas contas:
 
       * Edite `tomcat-users.xml` para incluir o acesso do administrador e do gerente. A configuração deve ser semelhante ao seguinte exemplo:
 
@@ -222,7 +222,7 @@ Antes de uma implantação, leia a Descrição [](#general-description) geral ac
 
       `webapps/manager/WEB-INF/web.xml`
 
-      e aumentar o tamanho máximo de arquivo e o tamanho máximo de solicitação para pelo menos 500 MB, veja o `multipart-config` exemplo a seguir de um arquivo como esse `web.xml` .
+      e aumente o tamanho máximo de arquivo e o tamanho máximo de solicitação para pelo menos 500 MB, consulte o seguinte exemplo `multipart-config` de um arquivo `web.xml`.
 
       ```xml
       <multipart-config>
