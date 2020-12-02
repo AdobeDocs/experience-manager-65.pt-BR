@@ -10,20 +10,23 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 2%
 
 ---
 
 
 # Estilo em linha de componentes de formulário adaptáveis {#inline-styling-of-adaptive-form-components}
 
-É possível definir a aparência geral e o estilo de um formulário adaptável especificando estilos usando o editor [de](../../forms/using/themes.md)temas. Além disso, é possível aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações dinamicamente. Os estilos incorporados substituem o estilo fornecido no tema.
+Você pode definir a aparência geral e o estilo de um formulário adaptável especificando estilos usando [editor de temas](../../forms/using/themes.md). Além disso, é possível aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e pré-visualização as alterações dinamicamente. Os estilos incorporados substituem o estilo fornecido no tema.
 
 ## Aplicar propriedades CSS em linha {#apply-inline-css-properties}
 
 Para adicionar estilos incorporados a um componente:
 
-1. Abra o formulário no editor de formulários e altere o modo para o modo de estilização. Para alterar o modo para o modo de estilização, na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
-1. Selecione um componente na página e toque no botão editar, botão ![editar, botão](assets/edit-button.png). As propriedades de estilo são abertas na barra lateral.
+1. Abra o formulário no editor de formulários e altere o modo para o modo de estilização. Para alterar o modo para o modo de estilização, na barra de ferramentas da página, toque em ![menu suspenso da tela](assets/canvas-drop-down.png) > **Estilo**.
+1. Selecione um componente na página e toque no botão de edição ![edit-button](assets/edit-button.png). As propriedades de estilo são abertas na barra lateral.
 
    Também é possível selecionar componentes da árvore de hierarquia do formulário na barra lateral. A árvore da hierarquia do formulário está disponível como Objetos de formulário na barra lateral.
 
@@ -33,7 +36,7 @@ Para adicionar estilos incorporados a um componente:
 
 1. Clique em uma guia na barra lateral para especificar as propriedades CSS. Você pode especificar propriedades como:
 
-   * Dimensões e posição (configuração de exibição, preenchimento, altura, largura, margem, posição, índice z, flutuante, claro, sobrefluxo)
+   * Dimension e posição (configuração de exibição, preenchimento, altura, largura, margem, posição, índice z, flutuante, claro, sobrefluxo)
    * Texto (família da fonte, peso, cor, tamanho, altura da linha e alinhamento)
    * Plano de fundo (imagem e gradiente, cor do plano de fundo)
    * Borda (Largura, estilo, cor, raio)
@@ -41,13 +44,13 @@ Para adicionar estilos incorporados a um componente:
    * Avançado (permite gravar CSS personalizado para o componente)
 
 1. Da mesma forma, você pode aplicar estilos para outras partes de um componente, como Widget, Legenda e Ajuda.
-1. Toque em **Concluído** para confirmar as alterações ou em **Cancelar** para descartar as alterações.
+1. Toque em **Concluído** para confirmar as alterações ou **Cancelar** para eliminar as alterações.
 
 ## Exemplo: estilos incorporados para um componente de campo {#example-inline-styles-for-a-field-component}
 
 As imagens a seguir representam um campo de texto antes e depois da aplicação de estilos incorporados a ele.
 
-![Componente de caixa de texto antes da aplicação do estilo incorporado](assets/no-style.png)
+![Componente de caixa de texto antes da aplicação do estilo em linha](assets/no-style.png)
 
 Componente da caixa de texto antes de aplicar propriedades de estilo em linha
 
@@ -65,7 +68,7 @@ Observe a alteração no estilo da caixa de texto como mostrado na imagem a segu
    <td><p>Texto</p> </td>
    <td><p>border</p> </td>
    <td><p>Largura da borda = 2px</p> <p>Estilo de borda=Sólido</p> <p>Cor da borda=#1111</p> </td>
-   <td><p>Cria uma borda preta com largura de 2x ao redor do campo</p> </td>
+   <td><p>Cria uma borda preta com largura de 2 px ao redor do campo</p> </td>
   </tr>
   <tr>
    <td><p>Caixa de texto</p> </td>
@@ -76,7 +79,7 @@ Observe a alteração no estilo da caixa de texto como mostrado na imagem a segu
   <tr>
    <td><p>Etiqueta</p> </td>
    <td><p>Dimensões e posição &gt; largura</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100 px</p> </td>
    <td><p>Corrige a largura como 100px para o rótulo</p> </td>
   </tr>
   <tr>
