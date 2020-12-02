@@ -32,7 +32,7 @@ Layout de amostra da barra de ferramentas
 
 Os formulários adaptativos fornecem um conjunto de layouts predefinidos:
 
-![Layouts da barra de ferramentas disponíveis prontamente ](assets/toolbar1.png)
+![Layouts da barra de ferramentas disponíveis prontamente  ](assets/toolbar1.png)
 
 Layouts da barra de ferramentas disponíveis prontamente
 
@@ -40,11 +40,12 @@ Além disso, é possível criar um layout personalizado da barra de ferramentas.
 
 O procedimento a seguir detalha as etapas para criar uma barra de ferramentas personalizada que exibe três ações na barra de ferramentas e as outras ações em uma lista suspensa na barra de ferramentas.
 
-O pacote de conteúdo anexado contém todo o código descrito abaixo. Depois de instalar o pacote de conteúdo, abra `/content/forms/af/CustomLayoutDemo.html` a visualização da demonstração de layout personalizada da barra de ferramentas.
+O pacote de conteúdo anexado contém todo o código descrito abaixo. Depois de instalar o pacote de conteúdo, abra `/content/forms/af/CustomLayoutDemo.html` para visualização da demonstração de layout personalizada da barra de ferramentas.
 
 CustomToolbarLayoutDemo.zip
 
-[Obter layout personalizado da barra de ferramentas para](assets/customtoolbarlayoutdemo.zip)demonstração de arquivo
+[Obter layout personalizado da barra de ferramentas ](assets/customtoolbarlayoutdemo.zip)
+FileDemo
 
 ## Para criar um layout personalizado da barra de ferramentas {#layout-1}
 
@@ -56,25 +57,25 @@ CustomToolbarLayoutDemo.zip
 
    `/libs/fd/af/layouts/toolbar`
 
-   Por exemplo, copie o `mobileFixedToolbarLayout` nó da `/libs/fd/af/layouts/toolbar` pasta para a `/apps/customlayout/toolbar` pasta.
+   Por exemplo, copie o nó `mobileFixedToolbarLayout` da pasta `/libs/fd/af/layouts/toolbar` para a pasta `/apps/customlayout/toolbar`.
 
-   Além disso, copie a barra de ferramentas Common.jsp para a `/apps/customlayout/toolbar` pasta.
+   Além disso, copie toolbarCommon.jsp para a pasta `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
-   >A pasta que você cria para manter os layouts personalizados pode ser criada com a `apps` pasta.
+   >A pasta que você cria para manter os layouts personalizados pode ser criada com a pasta `apps`.
 
-1. Renomear o nó copiado, `mobileFixedToolbarLayout`, como `customToolbarLayout.`
+1. Renomeie o nó copiado, `mobileFixedToolbarLayout`, para `customToolbarLayout.`
 
-   Além disso, forneça uma descrição relevante para o nó. Por exemplo, altere jcr:description do nó para o layout **Personalizado da barra de ferramentas**.
+   Além disso, forneça uma descrição relevante para o nó. Por exemplo, altere jcr:description do nó para **Layout personalizado para toolbar**.
 
-   A `guideComponentType` propriedade do nó determina o tipo de layout. Nesse caso, o tipo de layout é a barra de ferramentas e, portanto, aparece no menu suspenso de seleção de layout da barra de ferramentas.
+   A propriedade `guideComponentType` do nó determina o tipo de layout. Nesse caso, o tipo de layout é a barra de ferramentas e, portanto, aparece no menu suspenso de seleção de layout da barra de ferramentas.
 
    ![Um nó com descrição relevante](assets/toolbar3.png)
 
    Um nó com descrição relevante
 
-   O novo layout personalizado da barra de ferramentas é exibido na configuração da caixa de diálogo Barra de ferramentas **adaptável** .
+   O novo layout personalizado da barra de ferramentas é exibido na configuração da caixa de diálogo **Barra de ferramentas adaptável**.
 
    ![Lista dos layouts disponíveis da barra de ferramentas](assets/toolbar4.png)
 
@@ -86,7 +87,7 @@ CustomToolbarLayoutDemo.zip
 
 1. Selecione esse layout personalizado da barra de ferramentas e clique em OK.
 
-   Adicione clientlib (javascript e css) no `/etc/customlayout` nó e inclua a referência da clientlib no `customToolbarLayout.jsp`.
+   Adicione clientlib (javascript e css) no nó `/etc/customlayout` e inclua a referência do clientlib no `customToolbarLayout.jsp`.
 
    ![Caminho do arquivo customToolbarLayout.css](assets/toolbar_3.png)
 
@@ -231,7 +232,7 @@ CustomToolbarLayoutDemo.zip
 >
 >A descrição atualizada na etapa anterior é exibida na lista suspensa Layout.
 
-![visualização da área de trabalho da barra de ferramentas de layout personalizado](assets/toolbar_1.png)
+![Visualização da área de trabalho da barra de ferramentas de layout personalizado](assets/toolbar_1.png)
 
-visualização da área de trabalho da barra de ferramentas de layout personalizado
+Visualização da área de trabalho da barra de ferramentas de layout personalizado
 
