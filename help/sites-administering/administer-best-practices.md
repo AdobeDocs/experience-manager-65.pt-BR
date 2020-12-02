@@ -1,8 +1,8 @@
 ---
-title: Práticas recomendadas
-seo-title: Práticas recomendadas
-description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia e consultoria da Adobe para ajudar os administradores a se estabelecerem e funcionarem.
-seo-description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia e consultoria da Adobe para ajudar os administradores a se estabelecerem e funcionarem.
+title: 'Práticas recomendadas    '
+seo-title: 'Práticas recomendadas    '
+description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia de Adobe e consultoria para ajudar os administradores a se estabelecerem e funcionarem.
+seo-description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia de Adobe e consultoria para ajudar os administradores a se estabelecerem e funcionarem.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
 source-git-commit: e594c53b2a26c1c9e484ac07220dc89c283cf7da
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 13%
 
 ---
 
 
-# Práticas recomendadas{#best-practices}
+# Práticas recomendadas    {#best-practices}
 
-As práticas recomendadas descrevem como desenvolver, administrar ou usar o AEM da forma mais eficiente possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
+As práticas recomendadas descrevem como desenvolver, administrar ou usar AEM da maneira mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 
 As áreas a seguir têm a documentação disponível a respeito das práticas recomendadas:
 
@@ -45,18 +48,18 @@ As práticas recomendadas do Assets, incluindo a capacidade de Dynamic Media e a
   </tr>
   <tr>
    <td>Como organizar o conteúdo (hierarquia de pastas)</td>
-   <td><a href="/help/assets/organize-assets.md">Práticas recomendadas para o gerenciamento de arquivos</a></td>
-   <td>A maioria dos perfis de processamento é baseada em pastas, como vídeo, metadados e processamento de imagens, sempre são aplicados a pastas. Este documento de práticas recomendadas descreve como definir e configurar sua hierarquia de pastas, uma vez que a hierarquia tem um impacto significativo sobre como o conteúdo é processado. </td>
+   <td><a href="/help/assets/organize-assets.md">Práticas recomendadas para gerenciamento de arquivos</a></td>
+   <td>Muitos perfis de processamento são pastas baseadas em vídeo, metadados e processamento de imagem sempre são aplicados a pastas. Este documento de práticas recomendadas descreve como definir e configurar sua hierarquia de pastas, uma vez que a hierarquia tem um impacto significativo no modo como o conteúdo é processado. </td>
   </tr>
   <tr>
-   <td>Integração do Scene7 e do AEM</td>
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Práticas recomendadas para a integração do Scene7 com o AEM</a></td>
+   <td>Integração entre Scene7 e AEM</td>
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Práticas recomendadas para a integração da Scene7 com a AEM</a></td>
    <td><p>Descreve quando ativar o importador de pesquisas, como testar sua integração e quando usar o navegador de conteúdo em vez de um upload direto para os Ativos.</p> </td>
   </tr>
   <tr>
    <td>Opções predefinidas de imagem</td>
-   <td>Noções básicas sobre predefinições <a href="/help/assets/managing-image-presets.md#understanding-image-presets">de</a> imagens e práticas recomendadas de predefinição de <a href="/help/assets/managing-image-presets.md#image-preset-options">imagens</a></td>
-   <td>Como parte da documentação sobre como <a href="/help/assets/managing-image-presets.md">gerenciar predefinições</a>de imagens, esses tópicos descrevem quais são as predefinições de imagens e as práticas recomendadas para selecionar as opções predefinidas de imagens.</td>
+   <td>Noções básicas sobre <a href="/help/assets/managing-image-presets.md#understanding-image-presets">predefinições de imagens</a> e <a href="/help/assets/managing-image-presets.md#image-preset-options">práticas recomendadas de predefinições de imagens</a></td>
+   <td>Como parte da documentação sobre <a href="/help/assets/managing-image-presets.md">Gerenciar predefinições de imagens</a>, esses tópicos descrevem quais são as predefinições de imagens e as práticas recomendadas para selecionar as opções predefinidas de imagens.</td>
   </tr>
   <tr>
    <td>Dynamic Media versus integração direta com o Scene7</td>
@@ -74,13 +77,13 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
  <tbody>
   <tr>
    <td>Conformidade com o GDPR</td>
-   <td><a href="/help/sites-administering/gdpr-compliance-sites.md">Conformidade com o GDPR do AEM Sites</a></td>
-   <td>O Regulamento Geral da União Europeia sobre a Proteção de Dados relativo aos direitos de privacidade dos dados entra em vigor em maio de 2018. O AEM Sites é compatível com o RGPD. Esta página orienta os clientes pelos procedimentos para lidar com solicitações do RGPD no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.</td>
+   <td><a href="/help/sites-administering/gdpr-compliance-sites.md">Conformidade com o AEM Sites GDPR</a></td>
+   <td>O Regulamento Geral da Proteção de Dados da União sobre os direitos de privacidade dos dados entra em vigor em maio de 2018. A AEM Sites é compatível com o RGPD. Esta página orienta os clientes pelos procedimentos para lidar com solicitações do RGPD no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.</td>
   </tr>
   <tr>
    <td>Defina a interface padrão para a sua instância.</td>
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">Configuração da interface padrão para sua instância</a></p> </td>
-   <td>O AEM tem duas interfaces de usuário: otimizada ao toque e clássica. Esta seção detalha como definir a interface padrão para a sua instância.</td>
+   <td>AEM tem duas interfaces de usuário: otimizada ao toque e clássica. Esta seção detalha como definir a interface padrão para a sua instância.</td>
   </tr>
   <tr>
    <td>Gerenciamento de vários sites</td>
@@ -100,7 +103,7 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
   <tr>
    <td>Fluxos de trabalhos</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Práticas recomendadas de fluxo de trabalho - Configuração</a></td>
-   <td>Os fluxos de trabalho permitem que você automatize as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar e configurar suas implementações de fluxos de trabalho com cuidado.</td>
+   <td>Os workflows permitem que você automatize as atividades Adobe Experience Manager (AEM) e podem representar uma grande parte do processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar e configurar as implementações dos workflows com cuidado.</td>
   </tr>
  </tbody>
 </table>
