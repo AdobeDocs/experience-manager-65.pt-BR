@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 74%
 
 ---
 
@@ -23,12 +26,12 @@ Um lançamento é criado para permitir que você faça modificações prontas pa
 
 >[!NOTE]
 >
->The theory behind launches is described in detail under [Launches](/help/sites-authoring/launches.md) in the standard authoring documentation.
+>A teoria por trás das inicializações é descrita em detalhes em [Inicializações](/help/sites-authoring/launches.md) na documentação de criação padrão.
 >
->Information specific to using launches in the classic UI can be found in the following documentation together with [Creating Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editing Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md), and [Promoting Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>As informações específicas para o uso de inicializações na interface clássica podem ser encontradas na documentação a seguir juntamente com [Criando Inicializações](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editando Inicializações](/help/sites-classic-ui-authoring/classic-launches-editing.md) e [Promovendo Inicializações](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Não é possível ter várias ramificações de origem para um lançamento na interface clássica.
 
-The Launches console can be directly accessed with [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+O console Inicializações pode ser acessado diretamente com [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
