@@ -26,9 +26,9 @@ A criação de um formulário adaptável usando um Schema JSON como seu modelo d
 * [Criação de um formulário adaptável](../../forms/using/creating-adaptive-form.md)
 * [Schema JSON](https://json-schema.org/)
 
-## Uso de um Schema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
+## Uso de um Schema JSON como modelo de formulário {#using-a-json-schema-as-form-model}
 
-O AEM Forms suporta a criação de um formulário adaptável usando um Schema JSON existente como modelo de formulário. Este Schema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O Schema JSON que você usa deve estar em conformidade com as especificações [](https://json-schema.org/draft-04/schema)v4.
+A AEM Forms suporta a criação de um formulário adaptável usando um Schema JSON existente como modelo de formulário. Este Schema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O Schema JSON que você usa deve ser compatível com [especificações v4](https://json-schema.org/draft-04/schema).
 
 Os principais recursos do uso de um Schema JSON são:
 
@@ -87,18 +87,18 @@ Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é 
   </tr>
   <tr>
    <td>propriedade number<br /> </td>
-   <td>Campo numérico com subtipo definido como flutuante<br /> </td>
+   <td>Campo numérico com subtipo definido como float<br /> </td>
   </tr>
   <tr>
    <td>propriedade integer<br /> </td>
-   <td>Campo numérico com subtipo definido como inteiro<br /> </td>
+   <td>Campo numérico com subtipo definido como integer<br /> </td>
   </tr>
   <tr>
    <td>propriedade booleana<br /> </td>
    <td>Alternar<br /> </td>
   </tr>
   <tr>
-   <td>object property<br /> </td>
+   <td>propriedade object<br /> </td>
    <td>Painel<br /> </td>
   </tr>
   <tr>
@@ -337,7 +337,7 @@ As chaves de definição são usadas para identificar schemas reutilizáveis. As
 
 O exemplo acima define um registro de cliente, no qual cada cliente tem um endereço de entrega e de cobrança. A estrutura de ambos os endereços é a mesma - os endereços têm endereço, cidade e estado - então é uma boa ideia não duplicado os endereços. Além disso, facilita a adição e exclusão de campos para qualquer alteração futura.
 
-## Pré-configuração de campos na definição de Schema JSON {#pre-configuring-fields-in-json-schema-definition}
+## Pré-configuração de campos em Definição de Schema JSON {#pre-configuring-fields-in-json-schema-definition}
 
 Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo de Schema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo está listado abaixo:
 
@@ -359,7 +359,7 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
 }
 ```
 
-## Configurar scripts ou expressões para objetos de formulário  {#configure-scripts-or-expressions-for-form-objects}
+## Configurar scripts ou expressões para objetos de formulário {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript é a linguagem expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. É possível pré-configurar objetos de formulário para [avaliar uma expressão](../../forms/using/adaptive-form-expressions.md) em um evento de formulário.
 
@@ -381,7 +381,7 @@ Use a propriedade aem:afproperties para pré-configurar expressões de formulár
 }
 ```
 
-Você deve ser um membro do grupo [de usuários avançados dos](/help/forms/using/forms-groups-privileges-tasks.md) formulários para configurar scripts ou expressões para objetos de formulário. A tabela abaixo lista todos os eventos de script suportados para um componente de formulário adaptável.
+Você deve ser um membro do [form-power-user group](/help/forms/using/forms-groups-privileges-tasks.md) para configurar scripts ou expressões para objetos de formulário. A tabela abaixo lista todos os eventos de script suportados para um componente de formulário adaptável.
 
 <table>
  <tbody>
@@ -586,7 +586,7 @@ Você deve ser um membro do grupo [de usuários avançados dos](/help/forms/usin
  </tbody>
 </table>
 
-Alguns exemplos de uso de eventos em um JSON estão ocultando um campo no evento initialize e configurando o valor de outro campo no evento commit value. Para obter informações detalhadas sobre como criar expressões para eventos de script, consulte Expressões [de formulário](../../forms/using/adaptive-form-expressions.md)adaptáveis.
+Alguns exemplos de uso de eventos em um JSON estão ocultando um campo no evento initialize e configurando o valor de outro campo no evento commit value. Para obter informações detalhadas sobre como criar expressões para os eventos de script, consulte [Expressões de formulário adaptáveis](../../forms/using/adaptive-form-expressions.md).
 
 Este é o exemplo de código JSON para exemplos mencionados acima.
 
@@ -634,7 +634,7 @@ Este é o exemplo de código JSON para exemplos mencionados acima.
 <table>
  <tbody>
   <tr>
-   <td><p><strong> propriedade Schema</strong></p> </td>
+   <td><p><strong> propriedade schema</strong></p> </td>
    <td><p><strong>Tipo de dados</strong></p> </td>
    <td><p><strong>Descrição</strong></p> </td>
    <td><p><strong>Componente</strong></p> </td>
@@ -725,12 +725,12 @@ Este é o exemplo de código JSON para exemplos mencionados acima.
  </tbody>
 </table>
 
-## Construção sem suporte  {#non-supported-constructs}
+## Construção sem suporte {#non-supported-constructs}
 
 Os formulários adaptativos não suportam as seguintes construções de Schema JSON:
 
 * Tipo nulo
-* tipos de Uniões, como qualquer, e
+* tipos de uniões, como qualquer, e
 * OneOf, AnyOf, AllOf e NOT
 * Somente matrizes homogêneas são suportadas. Portanto, a restrição de itens deve ser um objeto e não uma matriz.
 
