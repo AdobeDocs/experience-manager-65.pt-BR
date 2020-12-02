@@ -71,7 +71,7 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 >
 >Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no Mac OS.
 
-## Navegador de conteúdo  {#contentbrowser}
+## Navegador de conteúdo {#contentbrowser}
 
 | **Ação** | **Atalho no Windows** | **Atalho no Mac OS** |
 |---|---|---|
@@ -89,10 +89,10 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 
 Esta seção lista vários teclados e atalhos de acessibilidade que podem ser usados no editor de texto do Gerenciamento de correspondência. Você pode usar esses atalhos enquanto estiver:
 
-* Criação ou edição de um ativo de [Texto](texts-interactive-communications.md)
-* Editar um módulo de texto depois de tocar no ícone Editar relevante ( ![edittext](assets/edittextmodule.png)) ao [criar uma correspondência](/help/forms/using/create-correspondence.md).
+* Criação ou edição de um ativo [Texto](texts-interactive-communications.md)
+* Editar um módulo de texto depois de tocar no ícone Editar relevante ( ![edittextmodule](assets/edittextmodule.png)) quando [criar uma correspondência](/help/forms/using/create-correspondence.md).
 
-### Seleção de texto e movimento do cursor ao redor {#text-selection-and-moving-the-cursor-around}
+### Seleção de texto e movimento do cursor em {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -210,7 +210,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
 </table>
 
 
-### Alinhamento do texto {#text-alignment}
+### Alinhamento de texto {#text-alignment}
 
 <table> 
  <tbody>
