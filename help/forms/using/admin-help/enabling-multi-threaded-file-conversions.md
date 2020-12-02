@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Ativação de conversões de arquivos de vários processos {#enabling-multi-threaded-file-conversions}
+# Habilitando conversões de arquivos de vários processos {#enabling-multi-threaded-file-conversions}
 
 O Gerador de PDF fornece a capacidade de ativar conversões de arquivos de vários processos para certos tipos de arquivos. A conversão de arquivos de vários processos melhora o desempenho do Gerador de PDF ao permitir que ele execute várias conversões ao mesmo tempo.
 
@@ -45,7 +45,7 @@ Ao adicionar usuários para OpenOffice, Microsoft Word ou Microsoft PowerPoint n
 Em um sistema operacional Windows, as contas de usuário administradores usadas para conversão de PDF (usuários de PDFG) precisarão substituir privilégios de token de nível de processo. Você pode adicionar esse direito usando o Editor de Diretiva de Grupo:
 
 1. No menu Start do Windows, clique em Executar e digite gpedit.msc.
-1. Clique em Política local do computador > Configuração do computador > Configurações do Windows > Configurações de segurança > Políticas locais > Atribuição de direitos de usuário. Edite a política *Substituir token* de nível de processo para incluir o grupo Administradores.
+1. Clique em Política local do computador > Configuração do computador > Configurações do Windows > Configurações de segurança > Políticas locais > Atribuição de direitos de usuário. Edite a política *Substitua um token de nível de processo* para incluir o grupo Administradores.
 1. Adicione o usuário à entrada Substituir um token de nível de processo.
 
 ### Configuração adicional necessária para o OpenOffice, Microsoft Word e Microsoft PowerPoint no Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -56,9 +56,9 @@ Se você estiver executando o OpenOffice, o Microsoft Word ou o Microsoft PowerP
 1. Desmarque a caixa &quot;Use User Account Control (UAC) Control (Usar controle de conta de usuário) para ajudar a proteger seu computador&quot; e clique em OK.
 1. Reinicie o computador para que as configurações entrem em vigor.
 
-### Configuração adicional necessária para o OpenOffice no Linux ou Solaris {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
+### Configuração adicional necessária para o OpenOffice em Linux ou Solaris {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. Adicionar contas de usuário. (Consulte [Adicionar uma conta](enabling-multi-threaded-file-conversions.md#add-a-user-account)de usuário.)
+1. Adicionar contas de usuário. (Consulte [Adicionar uma conta de usuário](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
 1. Em seguida, você fará alterações no arquivo /etc/sudoers. A permissão padrão para este arquivo é 440. Altere a permissão deste arquivo para gravável.
 1. Adicione entradas para usuários adicionais (que não sejam o administrador que executa o servidor de formulários) no arquivo /etc/sudoers. Por exemplo, se você estiver executando formulários AEM como um usuário chamado lcadm e um servidor chamado myhost, e quiser representar user1 e user2, adicione as seguintes entradas a /etc/sudoers:
 
@@ -82,7 +82,7 @@ Se você estiver executando o OpenOffice, o Microsoft Word ou o Microsoft PowerP
    Isso permite adicionar usuários Linux.
 
 1. Altere a permissão para o arquivo etc/sudoers de volta para 440.
-1. Permite que todos os usuários adicionados por meio da opção [Adicionar uma conta](enabling-multi-threaded-file-conversions.md#add-a-user-account) de usuário façam conexões com o servidor de formulários. Por exemplo, para permitir que um usuário local chamado user1 tenha a permissão de fazer a conexão com o servidor de formulários, use o seguinte comando
+1. Permite que todos os usuários adicionados por meio de [Adicionar uma conta de usuário](enabling-multi-threaded-file-conversions.md#add-a-user-account) façam conexões com o servidor de formulários. Por exemplo, para permitir que um usuário local chamado user1 tenha a permissão de fazer a conexão com o servidor de formulários, use o seguinte comando
 
    `xhost +local:user1@`
 
