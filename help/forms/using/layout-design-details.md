@@ -23,7 +23,7 @@ ht-degree: 0%
 Os modelos de formulário XFA ou XDPs são os modelos para:
 
 * [Cartas](/help/forms/using/create-letter.md)
-* [Imprimir canal](/help/forms/using/web-channel-print-channel.md#printchannel) de Comunicações [Interativas](/help/forms/using/interactive-communications-overview.md)
+* [Imprimir ](/help/forms/using/web-channel-print-channel.md#printchannel) canal de Comunicações  [Interativas](/help/forms/using/interactive-communications-overview.md)
 
 * Fragmentos de layout
 
@@ -56,43 +56,43 @@ Depois de analisar o layout necessário para criar a Comunicação interativa, v
 
 >[!NOTE]
 >
->Adicione conteúdo ao canal Imprimir da Comunicação interativa em vez de adicionar conteúdo ao componente de subformulário no modelo XDP. Adicione conteúdo às áreas de público alvo no canal Imprimir usando fragmentos de [documento, gráficos, imagens](create-interactive-communication.md#step2)e fragmentos de layout.
+>Adicione conteúdo ao canal Imprimir da Comunicação interativa em vez de adicionar conteúdo ao componente de subformulário no modelo XDP. Adicione conteúdo às áreas de público alvo no canal Imprimir usando [fragmentos de documento, gráficos, imagens](create-interactive-communication.md#step2) e fragmentos de layout.
 
 Execute as seguintes etapas para usar o subformulário em um modelo XDP:
 
-1. Abra o Forms Designer, selecione **Arquivo** > **Novo** > **Usar um formulário** em branco, toque em **Avançar** e em **Concluir** para abrir o formulário para a criação do modelo.
+1. Abra o Forms Designer, selecione **Arquivo** > **Novo** > **Utilize um formulário em branco**, toque em **Seguinte** e, em seguida, toque em **Concluir** para abrir o formulário para a criação de modelo.
 
-   Verifique se as opções Biblioteca **de** objetos e **Objeto** estão selecionadas no menu **Janela** .
+   Verifique se as opções **Biblioteca de objetos** e **Objeto** estão selecionadas no menu **Janela**.
 
-1. Arraste e solte o componente **Subformulário** da Biblioteca **de** objetos para o formulário.
+1. Arraste e solte o componente **Subform** da **Biblioteca de objetos** no formulário.
 
    ![Designer de componentes](assets/subform_component_designer_new.png)
 
 1. Selecione o subformulário para exibir as opções do subformulário na janela **Objeto** no painel direito.
-1. Selecione a guia **Subformulário** e selecione **Fluxo** na lista suspensa **Conteúdo** . Arraste o ponto de extremidade esquerdo do subformulário para ajustar o comprimento.
+1. Selecione a guia **Subform** e selecione **Fluxo** na lista suspensa **Conteúdo**. Arraste o ponto de extremidade esquerdo do subformulário para ajustar o comprimento.
 
    ![Subformulário continuado](assets/object_subform_flowed_new.png)
 
-1. Na guia **Vínculo** :
+1. Na guia **Vínculo**:
 
-   1. Especifique um nome para o subformulário no campo **Nome** .
-   1. Selecione **Nenhum vínculo** de dados na lista suspensa Vínculo **de** dados.
+   1. Especifique um nome para o subformulário no campo **Nome**.
+   1. Selecione **Nenhum vínculo de dados** na lista suspensa **Vínculo de dados**.
 
 1. Da mesma forma, selecione o subformulário raiz no painel esquerdo.
 
    ![Subformulário raiz](assets/root_subform_designer_new.png)
 
-1. Selecione a guia **Subformulário** e selecione **Fluxo** na lista suspensa **Conteúdo** . Na guia **Vínculos** :
+1. Selecione a guia **Subform** e selecione **Fluxo** na lista suspensa **Conteúdo**. Na guia **Ligações**:
 
-   1. Especifique um nome para o subformulário no campo **Nome** .
-   1. Selecione **Nenhum vínculo** de dados na lista suspensa Vínculo **de** dados.
+   1. Especifique um nome para o subformulário no campo **Nome**.
+   1. Selecione **Nenhum vínculo de dados** na lista suspensa **Vínculo de dados**.
 
-   Repita as etapas de 2 a 5 para adicionar mais subformulários ao modelo XDP. Adicione [texto, fragmentos de documento, imagens e gráficos](create-interactive-communication.md#step2) às áreas de público alvo somente durante a criação da Comunicação interativa.
+   Repita as etapas de 2 a 5 para adicionar mais subformulários ao modelo XDP. Adicione [texto, fragmentos de documento, imagens e gráficos](create-interactive-communication.md#step2) somente às áreas de público alvo durante a criação da Comunicação Interativa.
 
 1. Selecione **Arquivo** > **Salvar como** para salvar o arquivo no sistema de arquivos local:
 
    1. Navegue até o local para salvar o arquivo e especifique um nome para o modelo XDP.
-   1. Selecione **.xdp** na lista suspensa **Salvar como tipo** .
+   1. Selecione **.xdp** na lista suspensa **Salvar como type**.
 
    1. Toque em **Salvar**.
 
@@ -102,16 +102,16 @@ Use o componente Campo de imagem ou Subformulário no modelo XDP e adicione uma 
 
 >[!NOTE]
 >
->Adicione imagem ao canal Imprimir da Comunicação interativa em vez de adicionar imagem ao componente Campo de imagem ou Subformulário no modelo XDP. Para obter mais informações, consulte [Adicionar conteúdo à comunicação](../../forms/using/create-interactive-communication.md#step2)interativa.
+>Adicione imagem ao canal Imprimir da Comunicação interativa em vez de adicionar imagem ao componente Campo de imagem ou Subformulário no modelo XDP. Para obter mais informações, consulte [Adicionar conteúdo à comunicação interativa](../../forms/using/create-interactive-communication.md#step2).
 
 Execute as seguintes etapas para usar o componente Campo de imagem em um modelo XDP:
 
-1. Arraste e solte o componente Campo **de** imagem da Biblioteca **de** objetos para o formulário.
+1. Arraste e solte o componente **Campo de imagem** da **Biblioteca de objetos** no formulário.
 1. Selecione o subformulário para exibir as opções do subformulário na janela **Objeto** no painel direito.
-1. Na guia **Vínculo** :
+1. Na guia **Vínculo**:
 
-   1. Especifique um nome para o campo de imagem no campo **Nome** .
-   1. Selecione **Nenhum vínculo** de dados na lista suspensa Vínculo **de** dados.
+   1. Especifique um nome para o campo de imagem no campo **Nome**.
+   1. Selecione **Nenhum vínculo de dados** na lista suspensa **Vínculo de dados**.
 
 ### Criar modelo XDP para fragmentos de layout {#xdplayoutfragments}
 
@@ -119,31 +119,31 @@ Use o componente Tabela no Forms Designer para criar fragmentos de layout e, em 
 
 >[!NOTE]
 >
->Insira texto nas células da tabela ou [crie vínculos com os objetos](create-interactive-communication.md#step2) do modelo de dados de formulário somente durante a criação da Comunicação interativa.
+>Insira texto nas células da tabela ou [crie vínculos com os objetos do modelo de dados de formulário](create-interactive-communication.md#step2) somente durante a criação da Comunicação Interativa.
 
 Execute as seguintes etapas para usar o componente Tabela no modelo XDP usando o Forms Designer:
 
-1. Arraste e solte o componente **Tabela** da Biblioteca **de** objetos para o formulário.
-1. Na caixa de diálogo **Inserir tabela** :
+1. Arraste e solte o componente **Tabela** da **Biblioteca de objetos** no formulário.
+1. Na caixa de diálogo **Inserir tabela**:
 
    1. Especifique o número de linhas e colunas da tabela.
    1. Marque a caixa de seleção **Incluir linha do cabeçalho na tabela** para incluir uma linha para o cabeçalho da tabela.
    1. Toque em **OK**.
 
-1. Toque em **+** no painel esquerdo ao lado do nome da tabela, clique com o botão direito do mouse nos nomes das células incluídas no cabeçalho e em outras linhas e selecione **Renomear objeto** para renomear as células da tabela.
-1. Clique nos campos de texto do cabeçalho da tabela na Visualização **** Design e renomeie-os.
-1. Arraste e solte o componente Campo **de** texto da Biblioteca **de** objetos para cada célula da tabela na Visualização **** Design. Execute essa etapa para poder vincular células de tabela aos objetos de modelo de dados de formulário durante a criação da Comunicação interativa.
+1. Toque em **+** no painel esquerdo ao lado do nome da tabela, clique com o botão direito do mouse nos nomes das células incluídos no cabeçalho e em outras linhas e selecione **Renomear objeto** para renomear as células da tabela.
+1. Clique nos campos de texto do cabeçalho da tabela em **Visualização de design** e renomeie-os.
+1. Arraste e solte o componente **Campo de texto** da **Biblioteca de objetos** para cada célula de tabela na **Visualização de design**. Execute essa etapa para poder vincular células de tabela aos objetos de modelo de dados de formulário durante a criação da Comunicação interativa.
 
    ![Campos de texto em uma tabela](assets/text_fields_table_new.png)
 
-1. Selecione o nome da linha no painel esquerdo e selecione **Objeto** > **Vínculo** > **Repetir linha para cada item** de dados. Execute essa etapa para garantir que, se um vínculo for criado entre as células de tabela dessa linha com objetos de modelo de dados de formulário do tipo de coleta, a linha de tabela será repetida automaticamente para cada item de dados disponível no banco de dados.
+1. Selecione o nome da linha no painel esquerdo e selecione **Objeto** > **Vínculo** > **Repetir linha para cada item de dados**. Execute essa etapa para garantir que, se um vínculo for criado entre as células de tabela dessa linha com objetos de modelo de dados de formulário do tipo de coleta, a linha de tabela será repetida automaticamente para cada item de dados disponível no banco de dados.
 
-   Insira texto nas células da tabela ou [crie vínculos com os objetos](create-interactive-communication.md#step2) do modelo de dados de formulário somente durante a criação da Comunicação interativa.
+   Insira texto nas células da tabela ou [crie vínculos com os objetos do modelo de dados de formulário](create-interactive-communication.md#step2) somente durante a criação da Comunicação Interativa.
 
 1. Selecione **Arquivo** > **Salvar como** para salvar o arquivo no sistema de arquivos local:
 
    1. Navegue até o local para salvar o arquivo e especifique o nome para o modelo XDP.
-   1. Selecione **.xdp** na lista suspensa **Salvar como tipo** .
+   1. Selecione **.xdp** na lista suspensa **Salvar como type**.
 
    1. Toque em **Salvar**.
 
@@ -152,10 +152,10 @@ Execute as seguintes etapas para usar o componente Tabela no modelo XDP usando o
 Depois de criar um modelo XDP usando o Forms Designer, você deve carregá-lo no servidor AEM Forms para que o modelo esteja disponível para uso ao criar a Comunicação interativa.
 
 1. Selecione **Forms** > **Forms e Documentos**.
-1. Toque em **Criar** > Upload **de arquivo**.
+1. Toque em **Criar** > **Carregamento de Ficheiros**.
 1. Navegue até o local do modelo XDP no sistema de arquivos local e toque em **Abrir** para importar o modelo XDP para o servidor AEM Forms.
 
-## Uso do schema {#using-schema}
+## Usando o schema {#using-schema}
 
 Você pode usar um schema em um fragmento de layout ou layout, mas ele não é necessário. Se você usar um schema, verifique o seguinte:
 
@@ -233,5 +233,5 @@ Quando elementos como o logotipo e o endereço de sua organização forem exibid
 
 Use o formato de renderização do servidor do layout para Formulário XML dinâmico; caso contrário, as letras/Comunicações interativas baseadas neste layout não poderão ser renderizadas corretamente. Por padrão, o formato de renderização do servidor no Forms Designer é definido como Formulário XML dinâmico. Para garantir que você esteja usando o formato correto:
 
-* No Designer, clique em **Arquivo** > Propriedades **do** formulário > **Padrões** e verifique se a configuração Renderização/Formato do PDF está definida como Formulário XML dinâmico.
+* No Designer, clique em **Arquivo** > **Propriedades do formulário** > **Padrões** e verifique se a configuração Renderização/Formato do PDF está definida como Formulário XML dinâmico.
 
