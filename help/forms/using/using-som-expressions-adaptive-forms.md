@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Os formulários adaptáveis são modelados como AEM Página, que é representada como estrutura de conteúdo JCR no repositório AEM. O elemento principal da estrutura de conteúdo é o nó guideContainer. Abaixo de guideContainer, há um rootPanel que pode conter campos e painel aninhados.
 
-Você pode usar um SOM (Modelo de objeto de script) para fazer referência a valores, propriedades e métodos em um DOM (Modelo de objeto de documento) específico. Um DOM organiza os objetos de memória e as propriedades em uma hierarquia de árvore. Uma expressão SOM faz referência aos elementos Campos/Desenhar e painéis.
+Você pode usar um SOM (Modelo de objeto de script) para fazer referência a valores, propriedades e métodos em um DOM (Modelo de objeto de documento) específico. Um DOM organiza os objetos de memória e as propriedades em uma hierarquia de árvore. Uma expressão SOM faz referência aos elementos Campos/Desenhar e aos painéis.
 
 A imagem a seguir descreve uma estrutura de nó à qual um formulário adaptável se traduz ao adicionar componentes a um formulário. Por exemplo, você pode adicionar um painel ao painel raiz e um botão de opção no painel que é transformado em DOM no tempo de execução. A Expressão SOM do campo de botão de opção em forma adaptável é especificada como `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
@@ -47,4 +47,4 @@ Dentro dos painéis, você pode acessar o recurso na barra de ferramentas do pai
 
 Extrair Expressões SOM usando a barra de ferramentas do painel
 
-Algumas APIs listadas no [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) usam a expressão SOM de um elemento. Por exemplo, para trazer o foco para um campo específico em um formulário adaptável, passe a expressão SOM correspondente para a `getFocus`API em `guideBridge`.
+Algumas APIs listadas em [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) usam a expressão SOM de um elemento. Por exemplo, para trazer o foco para um campo específico em um formulário adaptável, passe a expressão SOM correspondente para a API `getFocus`em `guideBridge`.
