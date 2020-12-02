@@ -1,6 +1,6 @@
 ---
-title: Sua Caixa de entrada
-seo-title: Sua Caixa de entrada
+title: Sua caixa de entrada
+seo-title: Sua caixa de entrada
 description: Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
 seo-description: Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
@@ -12,18 +12,21 @@ discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 93%
 
 ---
 
 
-# Sua Caixa de entrada{#your-inbox}
+# Sua caixa de entrada{#your-inbox}
 
 Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
 
 Você recebe essas notificações em duas caixas de entrada, que são separadas pelo tipo de notificações:
 
 * Uma caixa de entrada onde é possível visualizar as notificações recebidas como resultado das assinaturas está descrita na próxima seção.
-* A specialized inbox for workflow items is described in the [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* Uma caixa de entrada especializada para itens de fluxo de trabalho está descrita no documento [Participação em Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
 
 ## Viewing Your Notifications {#viewing-your-notifications}
 
@@ -44,6 +47,7 @@ Para exibir suas notificações:
 
    * [Se inscrever para receber notificações](#subscribing-to-notifications)
    * [Processar suas notificações](#processing-your-notifications)
+
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
 ## Se inscrever para receber notificações {#subscribing-to-notifications}
@@ -69,6 +73,7 @@ Para assinar notificações:
 
    * **Caixa de entrada**: as notificações serão exibidas na sua caixa de entrada do AEM.
    * **Email**: as notificações serão enviadas por email para o endereço definido no seu perfil de usuário.
+
    >[!NOTE]
    >
    >Algumas configurações precisam ser definidas para serem notificadas por email. Também é possível personalizar o modelo de email ou adicionar um modelo de email para um novo idioma. Consulte [Configurar a notificação por email](/help/sites-administering/notification.md#configuringemailnotification) para configurar as notificações por email no AEM.
@@ -87,12 +92,13 @@ Para assinar notificações:
 1. Defina os caminhos das páginas sobre as quais você será notificado:
 
    * Clique em **Adicionar** para adicionar uma nova linha à tabela.
-   * Click the **Path** table cell and enter the path, e.g. `/content/docs`.
+   * Clique na célula da tabela **Caminho** e insira o caminho, por exemplo, `/content/docs`.
 
    * Para ser notificado sobre todas as páginas pertencentes à subárvore, defina **Exata?** como **Não**.
 Para ser notificado somente sobre ações na página definidas pelo caminho, defina **Exata?** como **Sim**.
 
    * Para permitir a regra, defina **Regra** como **Permitir**. Se definida como **Negar**, a regra será negada, mas não removida e poderá ser permitida depois.
+
    Para remover uma definição, selecione a linha clicando em uma célula de tabela e clique em **Excluir**.
 
 1. Clique em **OK** para salvar a configuração.
