@@ -20,16 +20,16 @@ ht-degree: 3%
 
 # Atualização do link para a documentação {#updating-the-link-to-the-documentation}
 
-Você pode acessar o conteúdo de ajuda padrão da área de trabalho do AEM Forms selecionando **Ajuda > Ajuda** da área de trabalho. Ele aponta para a documentação on-line no site da Adobe. No entanto, você pode atualizá-lo para apontar para qualquer outro URL.
+Você pode acessar o conteúdo de ajuda padrão da área de trabalho do AEM Forms selecionando **Ajuda > Ajuda da Workspace**. Ele aponta para a documentação on-line no site da Adobe. No entanto, você pode atualizá-lo para apontar para qualquer outro URL.
 
 Considere os seguintes casos de uso nos quais você pode querer alterar o URL de ajuda padrão:
 
 * Para fornecer ajuda localizada em um idioma de sua escolha.
 * Para fornecer conteúdo de ajuda personalizado para sua área de trabalho personalizada.
 
-Para atualizar o URL da documentação on-line, siga as etapas [genéricas de personalização](/help/forms/using/generic-steps-html-workspace-customization.md) e, em seguida, siga as etapas a seguir.
+Para atualizar o URL da documentação online, siga as [Etapas genéricas de personalização](/help/forms/using/generic-steps-html-workspace-customization.md) e, em seguida, siga as etapas a seguir.
 
-1. Copie o `userinfo.html` arquivo de `/libs/ws/js/runtime/templates` para `/apps/ws/js/runtime/templates`.
+1. Copie o arquivo `userinfo.html` de `/libs/ws/js/runtime/templates` para `/apps/ws/js/runtime/templates`.
 1. Alterar:
 
    ```html
