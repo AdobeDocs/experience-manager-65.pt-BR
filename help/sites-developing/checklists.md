@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ A lista de verificação a seguir destaca alguns dos principais problemas - leia
 
 | Marcar | Resposta | Ação | Proprietário | O prazo é |
 |---|---|---|---|---|
-| Foi criado um mecanismo claro e regular de apresentação de relatórios? |  |  |  |  |
+| Foi criado um mecanismo de relatórios claro e regular? |  |  |  |  |
 | Os principais intervenientes (da equipe de testes) estão envolvidos nas reuniões de status? |  |  |  |  |
 | As responsabilidades de teste estão claramente definidas (especialmente para o cliente)? |  |  |  |  |
 | O cliente tem a experiência necessária para cumprir seus compromissos de teste? |  |  |  |  |
@@ -34,4 +37,4 @@ A lista de verificação a seguir destaca alguns dos principais problemas - leia
 
 >[!NOTE]
 >
->Você também pode ver a lista de verificação [Gerenciar projetos - Práticas recomendadas](/help/managing/best-practices.md) para obter mais listas de verificação relacionadas ao projeto inteiro.
+>Você também pode ver a [Gerenciar projetos - lista de verificação de práticas recomendadas](/help/managing/best-practices.md) para obter mais listas de verificação relacionadas ao projeto inteiro.
