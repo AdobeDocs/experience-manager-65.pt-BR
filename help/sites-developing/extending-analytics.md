@@ -1,6 +1,6 @@
 ---
-title: Extensão do rastreamento de eventos
-seo-title: Extensão do rastreamento de eventos
+title: Extensão do rastreamento de Eventos
+seo-title: Extensão do rastreamento de Eventos
 description: O AEM Analytics permite rastrear a interação do usuário em seu site
 seo-description: O AEM Analytics permite rastrear a interação do usuário em seu site
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
 
-# Extensão do rastreamento de eventos{#extending-event-tracking}
+# Extensão do rastreamento de Eventos{#extending-event-tracking}
 
-O AEM Analytics permite rastrear a interação do usuário em seu site. Como desenvolvedor, talvez seja necessário:
+O AEM Analytics permite que você rastreie a interação do usuário em seu site. Como desenvolvedor, talvez seja necessário:
 
-* Acompanhe como os visitantes estão interagindo com seus componentes. Isso pode ser feito com eventos [personalizados.](#custom-events)
+* Acompanhe como os visitantes estão interagindo com seus componentes. Isso pode ser feito com [eventos personalizados.](#custom-events)
 * [Acesse valores no ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
-* [Adicionar retornos de chamada](#adding-record-callbacks)de registro.
+* [Adicionar retornos de chamada](#adding-record-callbacks) de registro.
 
 >[!NOTE]
 >
->Essas informações são basicamente genéricas, mas usam o [Adobe Analytics](/help/sites-administering/adobeanalytics.md) para exemplos específicos.
+>Essas informações são basicamente genéricas, mas usam [Adobe Analytics](/help/sites-administering/adobeanalytics.md) para exemplos específicos.
 >
 >Para obter informações gerais sobre o desenvolvimento de componentes e caixas de diálogo, consulte [Desenvolvimento de componentes](/help/sites-developing/components.md).
 
@@ -33,11 +36,11 @@ O AEM Analytics permite rastrear a interação do usuário em seu site. Como des
 
 Os eventos personalizados rastreiam qualquer coisa que dependa da disponibilidade de um componente específico na página. Isso também inclui eventos específicos do modelo, já que o componente da página é tratado como outro componente.
 
-### Rastreamento De Eventos Personalizados No Carregamento Da Página {#tracking-custom-events-on-page-load}
+### Rastreamento de Eventos personalizados no carregamento da página {#tracking-custom-events-on-page-load}
 
-Isso pode ser feito usando o pseudo-atributo `data-tracking` (o atributo de registro mais antigo ainda é compatível com versões anteriores). É possível adicionar isso a qualquer tag HTML.
+Isso pode ser feito usando o pseudo-atributo `data-tracking` (o atributo de registro mais antigo ainda é suportado para compatibilidade com versões anteriores). É possível adicionar isso a qualquer tag HTML.
 
-The syntax for `data-tracking` is
+A sintaxe para `data-tracking` é
 
 * `data-tracking="{'event': ['eventName'], 'values': {'key': 'value', 'nextKey': 'nextValue'}, componentPath: 'myapp/component/mycomponent'}"`
 
@@ -58,9 +61,9 @@ Um exemplo pode ser semelhante a:
 </span>
 ```
 
-No carregamento da página, todos os `data-tracking` atributos serão coletados e adicionados ao armazenamento de eventos do ContextHub, onde podem ser mapeados para eventos do Adobe Analytics. Os eventos não mapeados não serão rastreados pelo Adobe Analytics. Consulte [Conexão com o Adobe Analytics](/help/sites-administering/adobeanalytics.md) para obter mais detalhes sobre eventos de mapeamento.
+No carregamento da página, todos os atributos `data-tracking` serão coletados e adicionados ao armazenamento de eventos do ContextHub, onde podem ser mapeados para eventos Adobe Analytics. Eventos que não estão mapeados não serão rastreados pelo Adobe Analytics. Consulte [Ligar ao Adobe Analytics](/help/sites-administering/adobeanalytics.md) para obter mais detalhes sobre o mapeamento de eventos.
 
-### Acompanhamento de eventos personalizados após o carregamento da página {#tracking-custom-events-after-page-load}
+### Rastreamento de Eventos personalizados após o carregamento da página {#tracking-custom-events-after-page-load}
 
 Para rastrear eventos que ocorrem depois que uma página é carregada (como interações de usuário), use a função `CQ_Analytics.record` JavaScript:
 
@@ -72,11 +75,11 @@ Where
 
 * `values` contém todos os valores a serem rastreados
 * `collect` é opcional e retornará uma matriz contendo o evento e o objeto de dados.
-* `options` é opcional e contém opções de rastreamento de link, como elemento HTML `obj` e ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` é opcional e contém opções de rastreamento de link, como elemento HTML  `obj` e  ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
-* `componentPath` é um atributo necessário e é recomendável defini-lo como `<%=resource.getResourceType()%>`
+* `componentPath` é um atributo necessário e é recomendável defini-lo como  `<%=resource.getResourceType()%>`
 
-Por exemplo, com a seguinte definição, um usuário que clicar no link **Ir para o link superior** fará com que os dois eventos `jumptop` e `headlineclick`, sejam acionados:
+Por exemplo, com a seguinte definição, um usuário que clica no link **Ir para o início** fará com que os dois eventos, `jumptop` e `headlineclick`, sejam disparados:
 
 ```xml
 <h1 data-tracking="{event: 'headline', values: {level:'1'}, componentPath: '<%=resource.getResourceType()%>'}">
@@ -86,11 +89,11 @@ Por exemplo, com a seguinte definição, um usuário que clicar no link **Ir par
 
 ## Acessar valores no ContextHub {#accessing-values-in-the-contexthub}
 
-A API JavaScript do ContextHub tem uma `getStore(name)` função que retorna o armazenamento especificado, se disponível. O armazenamento tem uma `getItem(key)` função que retorna o valor da chave especificada, se disponível. Usando a `getKeys()` função, é possível recuperar uma matriz de chaves definidas para a loja específica.
+A API JavaScript do ContextHub tem uma função `getStore(name)` que retorna o armazenamento especificado, se disponível. O armazenamento tem uma função `getItem(key)` que retorna o valor da chave especificada, se disponível. Usando a função `getKeys()` é possível recuperar uma matriz de chaves definidas para o armazenamento específico.
 
-Você pode ser notificado sobre alterações de valor em uma loja vinculando uma função usando a `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` função.
+Você pode ser notificado sobre alterações de valor em uma loja vinculando uma função usando a função `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)`.
 
-A melhor maneira de ser notificado sobre a disponibilidade inicial do ContextHub é usar a `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` função.
+A melhor maneira de ser notificado sobre a disponibilidade inicial do ContextHub é usar a função `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);`.
 
 **Eventos adicionais para o ContextHub:**
 
@@ -104,11 +107,11 @@ Específico da loja:
 
 >[!NOTE]
 >
->Consulte também a Referência completa da API do [ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Consulte também a [Referência completa da API do ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
 ## Adicionando Retornos de chamada de registro {#adding-record-callbacks}
 
-Antes e depois dos retornos de chamada são registrados usando as funções `CQ_Analytics.registerBeforeCallback(callback,rank)` e `CQ_Analytics.registerAfterCallback(callback,rank)`.
+Antes e depois os retornos de chamada são registrados usando as funções `CQ_Analytics.registerBeforeCallback(callback,rank)` e `CQ_Analytics.registerAfterCallback(callback,rank)`.
 
 Ambas as funções assumem uma função como o primeiro argumento e uma classificação como o segundo, o que determina a ordem em que os retornos de chamada são executados.
 
