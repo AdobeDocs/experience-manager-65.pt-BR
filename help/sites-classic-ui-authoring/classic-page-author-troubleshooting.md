@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas AEM durante a criação
-seo-title: Solucionar problemas do AEM durante a criação
+title: 'Solucionar problemas do AEM durante a criação  '
+seo-title: 'Solucionar problemas do AEM durante a criação  '
 description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
 seo-description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
 
-# Solucionar problemas do AEM durante a criação{#troubleshooting-aem-when-authoring}
+# Solucionar problemas do AEM durante a criação  {#troubleshooting-aem-when-authoring}
 
 A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
 
@@ -42,7 +45,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
    * Há várias possibilidades aqui:
    * Confirmar se a página foi replicada corretamente. Verificar o status da página e, se necessário, o estado da fila de replicação.
    * Limpar o cache no seu navegador local e acessar a página novamente.
-   * Add `?` to the end of the page URL. For example:
+   * Adicionar `?` ao final do URL da página. Por exemplo:
 
       `http://localhost:4502/sites.html/content?`
 
@@ -68,7 +71,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Problema:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * Ao usar a opção **Localizar e substituir**, pode acontecer que nem todas as instâncias do termo `find` sejam substituídas em uma página.
 
 * **Motivo**:
 
