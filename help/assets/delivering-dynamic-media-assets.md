@@ -32,7 +32,7 @@ Com a Mídia dinâmica, você tem várias opções:
 
 >[!NOTE]
 >
->A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte Imagens [inteligentes](/help/assets/imaging-faq.md) para obter mais informações.
+>A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagens inteligentes](/help/assets/imaging-faq.md) para obter mais informações.
 
 Para obter mais informações, consulte os seguintes tópicos:
 
@@ -50,4 +50,4 @@ Para obter mais informações, consulte os seguintes tópicos:
 
 AEM agora suporta o delivery de todo o conteúdo de Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Este método de delivery melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos de Dynamic Media.
 
-Consulte [HTTP/2 Delivery de Perguntas](/help/sites-administering/scene7-http2faq.md) frequentes sobre conteúdo para saber mais.
+Consulte [Delivery HTTP/2 de Perguntas frequentes sobre conteúdo](/help/sites-administering/scene7-http2faq.md) para saber mais.
