@@ -23,31 +23,31 @@ ht-degree: 6%
 
 ## Visão geral {#overview}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.5. Para continuar usando letras no AEM Forms 6.5, é necessário instalar o pacote [de compatibilidade do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)AEMFD mais recente.
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.5. Para continuar usando letras no AEM Forms 6.5, é necessário instalar o pacote de [Compatibilidade do AEMFD](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) mais recente.
 
-O pacote Compatibilidade do AEMFD também permite [usar os seguintes ativos do AEM Forms 6.4, 6.3 e 6.2 no AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+O pacote Compatibilidade do AEMFD também permite que você [use os seguintes ativos do AEM Forms 6.4, 6.3 e 6.2 no AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Fragmentos de documento
 * Cartas
 * Dicionários de dados
 * Formulários adaptáveis modelos e páginas obsoletos
 
-Para obter mais informações, consulte [Ativos compatíveis com o AEM Forms 6.5 instalando o pacote](../../forms/using/compatibility-package.md#assetsmadecompatible)Compatibilidade.
+Para obter mais informações, consulte [Ativos compatíveis com o AEM Forms 6.5 instalando o pacote de compatibilidade](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## Adicione suporte para ativos AEM Forms 6.4, 6.3 e 6.2 no AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Após executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.5:
 
-Verifique se você tem [AEM pacote](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) de compatibilidade pré-instalado.
+Certifique-se de que [AEM pacote de compatibilidade](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) esteja pré-instalado.
 
-1. Instale o pacote [de](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)compatibilidade 6.5 mais recente.
+1. Instale o pacote de compatibilidade mais recente da versão 6.5 [](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
    Para obter mais informações sobre como carregar e instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
 1. Depois que os registros estiverem estabilizados, reinicie o servidor.
 1. Use o utilitário de migração para tornar seus ativos compatíveis com a versão 6.5.
 
-   Para obter mais informações, consulte Utilitário [de](../../forms/using/migration-utility.md)migração.
+   Para obter mais informações, consulte [utilitário de migração](../../forms/using/migration-utility.md).
 
 ## Ativos compatíveis com o AEM Forms 6.5 ao instalar o pacote de compatibilidade {#assetsmadecompatible}
 
