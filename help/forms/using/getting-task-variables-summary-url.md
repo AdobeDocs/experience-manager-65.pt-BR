@@ -23,7 +23,7 @@ A página de resumo exibe informações relacionadas à tarefa. Este artigo desc
 
 Nessa orquestração de amostra, um funcionário envia um formulário de solicitação de licença. O formulário de inscrição será então enviado ao gerente do funcionário para aprovação.
 
-1. Crie um renderizador HTML de amostra (html.esp) para resourceType **Workers/PtoApplication**.
+1. Crie um renderizador HTML de amostra (html.esp) para resourceType **Funcionários/PtoApplication**.
 
    O renderizador assume as seguintes propriedades a serem definidas no nó:
 
@@ -59,33 +59,33 @@ Nessa orquestração de amostra, um funcionário envia um formulário de solicit
    </html>
    ```
 
-1. Modifique a orquestração para extrair as quatro propriedades dos dados de formulário enviados. Depois disso, crie um nó no CRX do tipo **Funcionários/Aplicativo** Pto, com as propriedades preenchidas.
+1. Modifique a orquestração para extrair as quatro propriedades dos dados de formulário enviados. Depois disso, crie um nó no CRX do tipo **Funcionários/PtoApplication**, com as propriedades preenchidas.
 
-   1. Crie um processo para **criar um resumo** PTO e use-o como um subprocesso antes da operação **Atribuir Tarefa** em sua orquestração.
-   1. Defina **funcionárioName**, **funcionárioID**, **ptoReason**, **totalDays** e **nodeName** como variáveis de entrada no novo processo. Essas variáveis serão passadas como dados de formulário enviados.
+   1. Crie um processo **crie um resumo PTO** e use-o como um subprocesso antes da operação **Atribuir Tarefa** na sua orquestração.
+   1. Defina **empregadoName**, **empregadoID**, **ptoReason**, **totalDays** e **nodeName** como variáveis de entrada no novo processo. Essas variáveis serão passadas como dados de formulário enviados.
 
       Defina também uma variável de saída **ptoNodePath** que será usada ao configurar o URL de resumo.
 
-   1. No processo de **criação de resumo** PTO, use o componente de valor **** definido para definir os detalhes de entrada em um mapa **nodeProperty**(**nodeProps**).
+   1. No processo **criar resumo PTO**, use o componente **set value** para definir os detalhes de entrada em um mapa **nodeProperty**(**nodeProps**).
 
       As teclas neste mapa devem ser as mesmas definidas no seu renderizador HTML na etapa anterior.
 
-      Além disso, adicione uma chave **sling:resourceType** com o valor **Funcionários/Aplicativo** Pto no mapa.
+      Além disso, adicione uma tecla **sling:resourceType** com o valor **Funcionários/PtoApplication** no mapa.
 
-   1. Use o subprocesso **storeContent** do serviço **ContentRepositoryConnector** no processo de **criação de resumo** PTO. Esse subprocesso cria um nó CRX.
+   1. Use o subprocesso **storeContent** do serviço **ContentRepositoryConnector** no processo **criar resumo PTO**. Esse subprocesso cria um nó CRX.
 
       São necessárias três variáveis de entrada:
 
-      * **Caminho** da pasta: O caminho onde o novo nó CRX é criado. Defina o caminho como **/conteúdo**.
+      * **Caminho** da pasta: O caminho onde o novo nó CRX é criado. Defina o caminho como **/content**.
       * **Nome** do nó: Atribua a variável de entrada nodeName a este campo. Esta é uma string de nome de nó exclusiva.
-      * **Tipo** de nó: Defina o tipo como **nt:unstruct**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O ndoePath seria a saída final do processo de **criação de resumo PTO** .
-   1. Passe os dados de formulário enviados (**funcionárioName**, **funcionárioID**, **ptoReason** e **totalDays**) como entrada para o novo processo de **criação do resumo** PTO. Obtenha a saída como **ptoSummaryNodePath**.
+      * **Tipo** de nó: Defina o tipo como  **nt:unstruct**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O ndoePath seria a saída final do processo de resumo **create PTO**.
+   1. Passe os dados de formulário enviados (**empregadoName**, **empregadoID**, **ptoReason** e **totalDays**) como entrada para o novo processo **criar resumo PTO**. Obtenha a saída como **ptoSummaryNodePath**.
 
 
-1. Defina o URL de resumo como uma expressão XPath que contém os detalhes do servidor junto com **ptoSummaryNodePath**.
+1. Defina o URL de resumo como uma expressão XPath contendo os detalhes do servidor junto com **ptoSummaryNodePath**.
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Na área de trabalho AEM Forms, quando você abre uma tarefa, o URL de resumo acessa o nó CRX e o renderizador HTML exibe o resumo.
+Na área de trabalho do AEM Forms, quando você abre uma tarefa, o URL de resumo acessa o nó CRX e o renderizador HTML exibe o resumo.
 
 O layout de resumo pode ser alterado sem modificar o processo. O renderizador HTML exibe o resumo adequadamente.
