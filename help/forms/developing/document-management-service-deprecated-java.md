@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Start rápido da API Java (SOAP) do Documento Management Service (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Start rápido (SOAP) da API Java (obsoleto) do Serviço de gerenciamento de documentos {#document-management-service-deprecated-java-api-quick-start-soap}
 
 Os Start Rápidos a seguir estão disponíveis para o serviço Gerenciamento de Documentos (Obsoleto).
 
@@ -45,11 +45,11 @@ As operações do AEM Forms podem ser executadas usando a API fortemente tipada 
 
 >[!NOTE]
 
-Start rápidos localizados em Programação com formulários AEM são baseados no Forms Server que está sendo implantado em JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+Start rápidos localizados em Programação com formulários AEM são baseados no Forms Server que está sendo implantado em JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Start rápido (modo SOAP): Criar espaços do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir cria um novo espaço chamado Diretório *de* teste localizado em Início da Empresa. O valor de identificação do novo espaço é gravado no console.
+O exemplo de código Java a seguir cria um novo espaço chamado *Diretório de teste* localizado em Início da Empresa. O valor de identificação do novo espaço é gravado no console.
 
 ```java
  /*
@@ -143,7 +143,7 @@ O exemplo de código Java a seguir cria um novo espaço chamado Diretório *de* 
  
 ```
 
-## Start rápido (modo SOAP): Excluir o conteúdo dos Serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Excluir conteúdo do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 O exemplo de código Java a seguir exclui um espaço chamado /Empresa Home/Test Diretory.
 
@@ -366,9 +366,9 @@ O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgageForm
  
 ```
 
-## Start rápido (modo SOAP): Recuperar conteúdo do Content Services usando a API Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Recuperar conteúdo do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm.pdf* de /Empresa Home. O arquivo PDF é salvo no sistema de arquivos local e é nomeado como *UpdatesMortgageForm.pdf*.
+O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm.pdf* de /Empresa Home. O arquivo PDF é salvo no sistema de arquivos local e é nomeado *UpdatesMortgageForm.pdf*.
 
 ```java
  /*
@@ -472,7 +472,7 @@ O exemplo de código Java a seguir recupera um arquivo PDF chamado *MortgageForm
  
 ```
 
-## Start rápido (modo SOAP): Mover o conteúdo do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Mover conteúdo do Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
 O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf* de /Empresa Home/Test Diretory para /Empresa Home. O valor de identificação do conteúdo movido é gravado no console.
 
@@ -573,7 +573,7 @@ O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf
  
 ```
 
-## Start rápido (modo SOAP): Conteúdo do Lista Content Services usando a API Java (obsoleto) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Start rápido (modo SOAP): Conteúdo do Lista Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 O exemplo de código Java a seguir lista o conteúdo localizado em /Empresa Home. Cada tipo de nó e nome do nó é exibido.
 
