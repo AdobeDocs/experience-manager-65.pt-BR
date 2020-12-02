@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ Os componentes podem ser adaptados para gerar a exportação JSON de seu conteú
 
 ## Visão geral {#overview}
 
-A exportação JSON baseia-se nos Modelos [de](https://sling.apache.org/documentation/bundles/models.html)Sling e no quadro do Exportador [do Modelo de](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) Sling (que, por sua vez, se baseia em anotações [](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)Jackson).
+A exportação JSON é baseada em [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html) e na estrutura [Exportador de Modelo Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (que depende ela própria de [anotações Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
 Isso significa que o componente deve ter um Modelo Sling se precisar exportar JSON. Portanto, você precisará seguir estas duas etapas para ativar a exportação JSON em qualquer componente.
 
@@ -37,7 +37,7 @@ Primeiro, um Modelo Sling deve ser definido para o componente.
 
 >[!NOTE]
 >
->Para obter um exemplo de uso de modelos Sling, consulte o artigo [Desenvolvimento de exportadores de modelos Sling no AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
+>Para obter um exemplo de uso de Modelos Sling, consulte o artigo [Desenvolvimento de exportadores de modelos Sling em AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
 
 A classe de implementação do Modelo Sling deve ser anotada com o seguinte:
 
@@ -47,9 +47,9 @@ A classe de implementação do Modelo Sling deve ser anotada com o seguinte:
 @JsonSerialize(as = MyComponent.class)
 ```
 
-Isso garante que seu componente possa ser exportado sozinho, usando o `.model` seletor e a `.json` extensão.
+Isso garante que seu componente possa ser exportado sozinho, usando o seletor `.model` e a extensão `.json`.
 
-Além disso, isso especifica que a classe Sling Model pode ser adaptada à `ComponentExporter` interface.
+Além disso, isso especifica que a classe Sling Model pode ser adaptada à interface `ComponentExporter`.
 
 >[!NOTE]
 >
@@ -57,29 +57,29 @@ Além disso, isso especifica que a classe Sling Model pode ser adaptada à `Comp
 
 >[!NOTE]
 >
->As `ExporterConstants` e `ComponentExporter` as aulas vêm do `com.adobe.cq.export.json` pacote.
+>As classes `ExporterConstants` e `ComponentExporter` vêm do pacote `com.adobe.cq.export.json`.
 
-### Uso de vários seletores {#multiple-selectors}
+### Usando vários seletores {#multiple-selectors}
 
-Embora não seja um caso de uso padrão, é possível configurar vários seletores além do `model` seletor.
+Embora não seja um caso de uso padrão, é possível configurar vários seletores além do seletor `model`.
 
 ```
 https://<server>:<port>/content/page.model.selector1.selector2.json
 ```
 
-Entretanto, nesse caso, o `model` seletor deve ser o primeiro seletor e a extensão deve ser `.json`.
+Entretanto, nesse caso, o seletor `model` deve ser o primeiro seletor e a extensão deve ser `.json`.
 
 ## Anotar na interface do modelo Sling {#annotate-the-sling-model-interface}
 
-A fim de ser tido em conta pelo quadro do exportador JSON, a interface modelo deve implementar a `ComponentExporter` interface (ou `ContainerExporter`, no caso de um componente container).
+Para ser tida em conta pelo quadro do Exportador JSON, a interface Model deve implementar a interface `ComponentExporter` (ou `ContainerExporter`, no caso de um componente de container).
 
-A interface do Sling Model correspondente ( `MyComponent`) seria anotada usando anotações [](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) Jackson para definir como deve ser exportada (serializada).
+A interface correspondente do Modelo Sling ( `MyComponent`) seria anotada usando [anotações Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) para definir como deve ser exportada (serializada).
 
-A interface Modelo precisa ser anotada corretamente para definir quais métodos devem ser serializados. Por padrão, todos os métodos que respeitam a convenção de nomenclatura comum para getters serão serializados e derivarão seus nomes de propriedades JSON naturalmente dos nomes do getter. Isso pode ser impedido ou substituído usando `@JsonIgnore` ou `@JsonProperty` para renomear a propriedade JSON.
+A interface Modelo precisa ser anotada corretamente para definir quais métodos devem ser serializados. Por padrão, todos os métodos que respeitam a convenção de nomenclatura comum para getters serão serializados e derivarão seus nomes de propriedades JSON naturalmente dos nomes do getter. Isso pode ser evitado ou substituído usando `@JsonIgnore` ou `@JsonProperty` para renomear a propriedade JSON.
 
 ## Exemplo {#example}
 
-Os Componentes principais têm suporte para exportação JSON desde a versão [1.1.0 dos componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais e podem ser usados como referência.
+Os Componentes principais têm suporte para exportação JSON desde a versão [1.1.0 dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) e podem ser usados como referência.
 
 Para ver um exemplo, consulte a implementação do Modelo Sling do Componente principal de imagem e sua interface anotada.
 
@@ -87,17 +87,17 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir projeto aem-core-wcm-components no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
-* Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)
+* [Abra o projeto aem-core-wcm-components no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
+* Baixe o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)
 
-## Related Documentation {#related-documentation}
+## Documentação relacionada {#related-documentation}
 
 Para mais informações, consulte:
 
-* O tópico Fragmentos [de conteúdo no guia do usuário Ativos](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* O tópico [Fragmentos de conteúdo no guia do usuário Ativos](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para serviços de conteúdo](/help/sites-developing/json-exporter.md)
-* [Componentes](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) principais e o componente Fragmento [do conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes principais ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) e o componente Fragmento  [do conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
