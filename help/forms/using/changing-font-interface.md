@@ -21,9 +21,9 @@ ht-degree: 1%
 
 # Alteração da fonte na interface{#changing-the-font-on-the-interface}
 
-É possível alterar a fonte exibida na área de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário de forma seletiva.
+Você pode alterar a fonte exibida na área de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário de forma seletiva.
 
-Siga as etapas [genéricas para personalização](../../forms/using/generic-steps-html-workspace-customization.md) do espaço de trabalho do AEM Forms e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
+Siga as [etapas genéricas para personalização do espaço de trabalho AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
 
 1. Altere ou adicione a família de fontes em um estilo existente.
 1. Altere ou adicione a família de fontes em linha para o elemento HTML.
@@ -42,7 +42,7 @@ Por exemplo, para alterar a fonte do texto de ancoragem da barra de navegação 
       }
       ```
 
-   1. Para adicionar a família de fontes em linha para o elemento HTML, copie o `/libs/ws/js/runtime/templates/appnavigation.html` arquivo para `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Para adicionar a família de fontes em linha para o elemento HTML, copie o arquivo `/libs/ws/js/runtime/templates/appnavigation.html` para `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 
