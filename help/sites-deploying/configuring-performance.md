@@ -1,8 +1,8 @@
 ---
 title: Otimização do desempenho
 seo-title: Otimização do desempenho
-description: Saiba como configurar certos aspectos do AEM para otimizar o desempenho.
-seo-description: Saiba como configurar certos aspectos do AEM para otimizar o desempenho.
+description: Saiba como configurar certos aspectos da AEM para otimizar o desempenho.
+seo-description: Saiba como configurar certos aspectos da AEM para otimizar o desempenho.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,19 +11,22 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
 source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+workflow-type: tm+mt
+source-wordcount: '6722'
+ht-degree: 2%
 
 ---
 
 
-# Otimização do desempenho{#performance-optimization}
+# Otimização de desempenho{#performance-optimization}
 
 >[!NOTE]
 >
->Para obter orientações gerais sobre desempenho, leia a página [Diretrizes](/help/sites-deploying/performance-guidelines.md) de desempenho.
+>Para obter diretrizes gerais sobre desempenho, leia a página [Diretrizes de desempenho](/help/sites-deploying/performance-guidelines.md).
 >
->Para obter mais informações sobre solução de problemas e correção de problemas de desempenho, consulte também a árvore [](/help/sites-deploying/performance-tree.md)Desempenho.
+>Para obter mais informações sobre solução de problemas e correção de problemas de desempenho, consulte a [árvore de desempenho](/help/sites-deploying/performance-tree.md).
 >
->Além disso, você pode consultar um artigo da Base de conhecimento sobre dicas de ajuste de [desempenho.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>Além disso, você pode revisar um artigo da Base de conhecimento em [Dicas de ajuste de desempenho.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 Um problema chave é o tempo que seu site leva para responder às solicitações do visitante. Embora esse valor varie para cada solicitação, um valor médio de público alvo pode ser definido. Uma vez que este valor seja comprovadamente alcançável e sustentável, poderá ser utilizado para acompanhar o desempenho do website e indicar o desenvolvimento de possíveis problemas.
 
@@ -39,8 +42,9 @@ Este ambiente contém conteúdo que você disponibiliza para seus usuários. Nes
 
 >[!NOTE]
 >
->* Depois de configurar para otimização de desempenho, siga os procedimentos do Dia [](/help/sites-developing/tough-day.md) difícil para testar o ambiente com carga pesada.
->* Consulte também [Dicas](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)de ajuste de desempenho.
+>* Depois de configurar para otimização de desempenho, siga os procedimentos em [Dia difícil](/help/sites-developing/tough-day.md) para testar o ambiente com carga pesada.
+>* Consulte também [Dicas de ajuste de desempenho](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+
 >
 
 
@@ -63,7 +67,7 @@ Essas regras, em grande parte, se aplicam a projetos da Web em geral e são rele
 
 Cerca de 10% do esforço do projeto deve ser planejado para a fase de otimização do desempenho. É claro que os requisitos reais de otimização de desempenho dependerão do nível de complexidade de um projeto e da experiência da equipe de desenvolvimento. Embora seu projeto possa (em última análise) não exigir todo o tempo alocado, é uma boa prática planejar sempre a otimização do desempenho na região sugerida.
 
-Sempre que possível, um projeto deve ser lançado de forma branda para uma audiência limitada, a fim de reunir experiência na vida real e realizar outras otimizações, sem a pressão adicional que se segue a um anúncio completo.
+Sempre que possível, um projeto deve ser lançado de forma flexível a uma audiência limitada, a fim de reunir a experiência da vida real e realizar novas otimizações, sem a pressão adicional que se segue a um anúncio completo.
 
 Quando estiver &quot;ao vivo&quot;, a otimização de desempenho não terminará. Este é o momento em que você enfrenta a carga &quot;real&quot; no seu sistema. É importante planejar ajustes adicionais após o lançamento.
 
@@ -85,7 +89,7 @@ A importância de estabelecer adequadamente objetivos de desempenho não deve se
 
 Estabelecer metas de desempenho boas e sólidas é realmente uma das áreas mais difíceis. Geralmente é melhor coletar registros e benchmarks da vida real de um site comparável (por exemplo, o predecessor do novo site).
 
-### Permanecer relevante {#stay-relevant}
+### Permaneça relevante {#stay-relevant}
 
 ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
@@ -128,7 +132,7 @@ A maneira como um repositório de conteúdo é estruturado também pode afetar o
 
 Seus melhores amigos durante um exercício normal de otimização de desempenho são:
 
-* the `request.log`
+* o `request.log`
 * tempo com base no componente
 * por último, mas não menos importante, um perfilador java.
 
@@ -159,7 +163,7 @@ Para melhorar o desempenho, considere o seguinte:
 
 O desempenho (ou a falta dele) é uma das primeiras coisas que seus usuários notam, de modo que, como em qualquer aplicativo com uma interface do usuário, o desempenho é de importância fundamental. Para otimizar o desempenho da instalação do CQ, é necessário monitorar vários atributos da instância e seu comportamento.
 
-Para obter informações sobre como executar o monitoramento de desempenho, consulte [Monitoramento de desempenho](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
+Para obter informações sobre como executar o monitoramento de desempenho, consulte [Monitorando o Desempenho](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
 Os problemas que causam problemas de desempenho geralmente são difíceis de rastrear, mesmo quando seus efeitos são fáceis de ver.
 
@@ -171,9 +175,9 @@ O diagrama a seguir ilustra o caminho que uma solicitação de conteúdo CQ pode
 
 O desempenho também é um equilíbrio entre Volume e Capacidade:
 
-**Volume** A quantidade de saída processada e entregue pelo sistema.
+**** VolumeA quantidade de saída processada e entregue pelo sistema.
 
-**Capacidade** A capacidade do sistema de fornecer o volume.
+**** CapacidadeA capacidade do sistema de fornecer o volume.
 
 Isso pode ser ilustrado em vários locais da cadeia da Web.
 
@@ -194,7 +198,7 @@ Algumas regras devem ser levadas em conta ao otimizar o desempenho:
 * O desempenho é tão bom quanto o elo mais fraco.
 * Sempre pense sobre capacidade vs. volume.
 * Otimize coisas importantes primeiro.
-* Nunca otimize sem metas *realistas* .
+* Nunca otimize sem metas *realistas*.
 
 >[!NOTE]
 >
@@ -206,18 +210,18 @@ Determinados aspectos do CQ (e/ou do CRX subjacente) podem ser configurados para
 
 >[!NOTE]
 >
->Para obter informações adicionais, consulte o artigo [da](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)KB.
+>Para obter informações adicionais, consulte o artigo da Base de conhecimento [KB](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
-### Search Indexing {#search-indexing}
+### Indexação de pesquisa {#search-indexing}
 
-A partir do AEM 6.0, o Adobe Experience Manager usa uma arquitetura de repositório baseada no Oak.
+A partir do AEM 6.0, a Adobe Experience Manager usa uma arquitetura de repositório baseada no Oak.
 
 Você pode encontrar as informações de indexação atualizadas aqui:
 
 * [Práticas recomendadas para Query e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
 * [Query e indexação](/help/sites-deploying/queries-and-indexing.md)
 
-### Processamento de fluxo de trabalho simultâneo {#concurrent-workflow-processing}
+### Processamento de Fluxo de Trabalho Simultâneo {#concurrent-workflow-processing}
 
 Limite o número de processos de fluxo de trabalho em execução simultânea para melhorar o desempenho. Por padrão, o motor de workflow processa tantos workflows simultaneamente quanto há processadores disponíveis para a Java VM. Quando as etapas do fluxo de trabalho exigem grandes quantidades de recursos de processamento (RAM ou CPU), a execução paralela de vários desses workflows pode colocar altas demandas nos recursos disponíveis do servidor.
 
@@ -226,25 +230,25 @@ Por exemplo, quando imagens (ou ativos DAM em geral) são carregadas, os workflo
 O motor de workflow usa as filas de trabalhos do Apache Sling para manusear e programar o processamento de itens de trabalho. Os seguintes serviços de fila de trabalhos foram criados por padrão a partir do fábrica do serviço Configuração da fila de trabalhos Apache Sling para processamento de trabalhos de fluxo de trabalho:
 
 * Fila de Fluxo de Trabalho Granite: A maioria das etapas do fluxo de trabalho, como aquelas que processam ativos DAM, usam o serviço Fila de fluxo de trabalho Granite.
-* Fila de Trabalho de Processo Externo do Fluxo de Trabalho Granite: Este serviço é usado para etapas de fluxo de trabalho externo especiais que são normalmente usadas para entrar em contato com um sistema externo e pesquisar resultados. Por exemplo, a etapa do processo de Extração de mídia do InDesign é implementada como um processo externo. O motor de workflow usa a fila externa para processar a pesquisa. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Fila de Trabalho de Processo Externo do Fluxo de Trabalho Granite: Este serviço é usado para etapas de fluxo de trabalho externo especiais que são normalmente usadas para entrar em contato com um sistema externo e pesquisar resultados. Por exemplo, a etapa Processo de Extração de mídia do InDesign é implementada como um processo externo. O motor de workflow usa a fila externa para processar a pesquisa. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configure esses serviços para limitar o número máximo de processos de fluxo de trabalho em execução simultânea.
 
-**Observação:** A configuração dessas filas de trabalhos afeta todos os workflows, a menos que você tenha criado uma fila de trabalhos para um modelo de fluxo de trabalho específico (consulte [Configurar a fila para um modelo](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) de fluxo de trabalho específico abaixo).
+**Observação: a** configuração dessas filas de trabalhos afeta todos os workflows, a menos que você tenha criado uma fila de trabalhos para um modelo de fluxo de trabalho específico (consulte  [Configurar a fila para um ](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) modelo de fluxo de trabalho específico abaixo).
 
 **Configuração no repositório**
 
-Se você estiver configurando os serviços [usando um nó](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)sling:OsgiConfig, é necessário encontrar o PID dos serviços existentes, por exemplo: org.apache.sling.evento.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Você pode descobrir o PID usando o Console da Web.
+Se você estiver configurando os serviços [usando um nó sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), é necessário encontrar o PID dos serviços existentes, por exemplo: org.apache.sling.evento.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Você pode descobrir o PID usando o Console da Web.
 
 É necessário configurar a propriedade chamada queue.maxparalelo.
 
 **Configuração no Console da Web**
 
-Para configurar esses serviços [usando o Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)da Web, localize os itens de configuração existentes abaixo da fábrica do serviço Configuração da fila de trabalhos do Apache Sling.
+Para configurar esses serviços [usando o Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), localize os itens de configuração existentes abaixo da fábrica do serviço Configuração da fila de trabalhos do Apache Sling.
 
 É necessário configurar a propriedade chamada Máximo de Trabalhos Paralelos.
 
-### Configurar a fila para um fluxo de trabalho específico {#configure-the-queue-for-a-specific-workflow}
+### Configure a fila para um fluxo de trabalho específico {#configure-the-queue-for-a-specific-workflow}
 
 Crie uma fila de trabalhos para um modelo de fluxo de trabalho específico para que você possa configurar a manipulação de tarefas para esse modelo de fluxo de trabalho. Dessa forma, suas configurações afetam o processamento de um fluxo de trabalho específico, enquanto a configuração da Fila de Fluxo de Trabalho Granite padrão controla o processamento de outros workflows.
 
@@ -253,15 +257,15 @@ Quando os modelos de fluxo de trabalho são executados, eles criam trabalhos do 
 * com/adobe/granite/workflow/job&amp;ast;
 * com/adobe/granite/workflow/external/job&amp;ast;
 
-Os tópicos reais da tarefa que os modelos de fluxo de trabalho geram incluem o sufixo específico do modelo. Por exemplo, o modelo de fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM gera trabalhos com o seguinte tópico:
+Os tópicos reais da tarefa que os modelos de fluxo de trabalho geram incluem o sufixo específico do modelo. Por exemplo, o modelo de fluxo de trabalho [!UICONTROL DAM Update Asset] gera trabalhos com o seguinte tópico:
 
 com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
 
 Portanto, você pode criar uma fila de trabalhos para o tópico que corresponda aos tópicos de trabalho do seu modelo de fluxo de trabalho. A configuração das propriedades relacionadas ao desempenho da fila afeta apenas o modelo de fluxo de trabalho que gera os trabalhos que correspondem ao tópico da fila.
 
-O procedimento a seguir cria uma fila de trabalhos para um fluxo de trabalho, usando o fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM como exemplo.
+O procedimento a seguir cria uma fila de trabalhos para um fluxo de trabalho, usando o fluxo de trabalho [!UICONTROL DAM Update Asset] como exemplo.
 
-1. Execute o modelo de fluxo de trabalho para o qual você deseja criar a fila de trabalhos, para que as estatísticas de tópicos sejam geradas. Por exemplo, adicione uma imagem aos Ativos para executar o fluxo de trabalho Atualizar ativo [!UICONTROL do] DAM.
+1. Execute o modelo de fluxo de trabalho para o qual você deseja criar a fila de trabalhos, para que as estatísticas de tópicos sejam geradas. Por exemplo, adicione uma imagem aos Ativos para executar o fluxo de trabalho [!UICONTROL DAM Update Asset].
 1. Abra o console Sling Jobs. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
 1. Descubra os tópicos relacionados ao fluxo de trabalho no console. Para o Ativo de atualização do DAM, os seguintes tópicos foram encontrados:
 
@@ -271,13 +275,13 @@ O procedimento a seguir cria uma fila de trabalhos para um fluxo de trabalho, us
 
 1. Crie uma fila de trabalhos para cada um desses tópicos. Para criar uma fila de trabalhos, crie uma configuração de fábrica para o serviço de fábrica da fila de trabalhos do Apache Sling.
 
-   As configurações de fábrica são semelhantes à Fila de fluxo de trabalho Granite descrita em Processamento [de fluxo de trabalho](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)simultâneo, exceto que a propriedade Tópicos corresponde ao tópico de suas tarefas de fluxo de trabalho.
+   As configurações de fábrica são semelhantes à Fila de Fluxo de Trabalho Granito descrita em [Processamento de Fluxo de Trabalho Simultâneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), exceto que a propriedade Tópicos corresponde ao tópico de seus trabalhos de fluxo de trabalho.
 
 ### Serviço de Sincronização de Ativos do CQ5 DAM {#cq-dam-asset-synchronization-service}
 
 O `AssetSynchronizationService` é usado para sincronizar ativos de repositórios montados (incluindo LiveLink, Documentum, entre outros). Por padrão, isso faz uma verificação regular a cada 300 segundos (5 minutos), portanto, se você não usar repositórios montados, poderá desativar esse serviço.
 
-Isso é feito [configurando o serviço](/help/sites-deploying/configuring-osgi.md) OSGi **CQ DAM Asset Synchronization Service** para definir o período **de** sincronização ( `scheduler.period`) como (no mínimo) 1 ano (definido em segundos).
+Isso é feito por [configurar o serviço OSGi](/help/sites-deploying/configuring-osgi.md) **CQ DAM Asset Synchronization Service** para definir o **período de sincronização** ( `scheduler.period`) como (no mínimo, 1 ano) (definido em segundos).
 
 ### Várias instâncias DAM {#multiple-dam-instances}
 
@@ -291,13 +295,13 @@ Considerações adicionais são:
 * separar &quot;trabalho em andamento&quot; do autor de &quot;final&quot; ao publicar
 * separar usuários internos do autor de visitantes/usuários externos ao publicar (por exemplo, agentes, representantes de imprensa, clientes, estudantes etc).
 
-## Práticas recomendadas para garantia de qualidade {#best-practices-for-quality-assurance}
+## Práticas recomendadas para o controle de qualidade {#best-practices-for-quality-assurance}
 
 O desempenho é de importância primordial para o seu ambiente de publicação. Portanto, você precisa planejar e analisar cuidadosamente os testes de desempenho que você fará para o ambiente de publicação ao implementar seu projeto.
 
-Esta seção tem como objetivo fornecer uma visão geral padronizada dos problemas envolvidos na definição de um conceito de teste especificamente para testes de desempenho no ambiente *publicado* . Isso interessa principalmente aos engenheiros de controle de qualidade, gerentes de projeto e administradores de sistema.
+Esta seção tem como objetivo fornecer uma visão geral padronizada dos problemas envolvidos na definição de um conceito de teste especificamente para testes de desempenho em seu ambiente *publish*. Isso interessa principalmente aos engenheiros de controle de qualidade, gerentes de projeto e administradores de sistema.
 
-A seguir está uma abordagem padronizada para testes de desempenho para um aplicativo CQ no ambiente *Publicar* . Isso envolve as seguintes cinco fases:
+A seguir está uma abordagem padronizada para testes de desempenho para um aplicativo CQ no ambiente *Publicar*. Isso envolve as seguintes cinco fases:
 
 * [Verificação do conhecimento](#verification-of-knowledge)
 * [Definição de âmbito](#scope-definition)
@@ -353,7 +357,7 @@ Este conceito tem quatro cenários usados para definir e testar as metas de dese
 
 * Testes de componentes únicos
 * Ensaios de componentes combinados
-* *Cenário do Live*
+* *Indo para o* Livescenario
 * Cenários de erro
 
 Com base nos seguintes princípios:
@@ -367,7 +371,7 @@ Com base nos seguintes princípios:
 
 **Transações**
 
-* O termo transação é utilizado para representar a solicitação de uma página da Web completa, incluindo a própria página e todas as chamadas subsequentes; Ou seja, a solicitação de página, quaisquer chamadas, imagens e outros objetos AJAX.**Solicitar Drill-Down**
+* O termo transação é utilizado para representar a solicitação de uma página da Web completa, incluindo a própria página e todas as chamadas subsequentes; Ou seja, a solicitação de página, quaisquer chamadas AJAX, imagens e outros objetos.**Solicitar Drill-Down**
 * Para analisar completamente cada solicitação, você pode representar cada elemento da pilha de chamadas, em seguida, totalizar o tempo médio de processamento de cada uma.
 
 ### Definição das Metas de Desempenho {#defining-the-performance-goals}
@@ -386,10 +390,10 @@ Em ambos os casos, você pode definir o número esperado de transações por seg
 
 | Componente | Tipo de teste | #Usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Página inicial - Usuário único | Média | 1 | 1 |  |  |
+| Página inicial - Usuário único | Média | 1 | 3 |  |  |
 |  | Pico | 1 | 3 |  |  |
-| Usuários da página inicial 100 | Média | 100 | 3 |  |  |
-|  | Pico | 100 | 3 |  |
+| Usuários da página inicial 100 | Média | 100 | 1 |  |  |
+|  | Pico | 100 | 1 |  |
 
 #### Testes de componentes combinados {#combined-component-tests}
 
@@ -401,14 +405,14 @@ O teste dos componentes em combinação oferece uma reflexão mais detalhada sob
 |  | Pesquisar   | 10 | 1 |  |  |
 |  | Notícias | 10 | 2 |  |  |
 |  | Eventos | 10 | 1 |  |  |
-|  | Ativações | 10 | 3 |  | Simulação do comportamento do autor. |
+|  | Ativações | 10 | 1 |  | Simulação do comportamento do autor. |
 | Pico misto | Página inicial | 100 | 5 |  |  |
 |  | Pesquisar   | 50 | 5 |  |  |
 |  | Notícias | 100 | 10 |  |  |
 |  | Eventos | 100 | 10 |  |  |
 |  | Ativações | 20 | 20 |  | Simulação do comportamento do autor. |
 
-#### Indo para testes ao vivo {#going-live-tests}
+#### Indo ao vivo com testes {#going-live-tests}
 
 Durante os primeiros dias após o site ser disponibilizado, você pode esperar um maior nível de interesse. Isso provavelmente será ainda maior do que os valores de pico que você tem testado. É altamente recomendável testar cenários do Google Live para garantir que o sistema possa atender a essa situação.
 
@@ -422,7 +426,7 @@ Durante os primeiros dias após o site ser disponibilizado, você pode esperar u
 
 #### Testes de cenário de erro {#error-scenario-tests}
 
-Os cenários de erro também devem ser testados para garantir que o sistema reaja corretamente e apropriadamente. Não apenas na forma como o erro em si é tratado, mas no impacto que pode ter no desempenho. Por exemplo:
+Os cenários de erro também devem ser testados para garantir que o sistema reaja corretamente e apropriadamente. Não apenas na forma como o erro em si é tratado, mas no impacto que ele pode ter no desempenho. Por exemplo:
 
 * o que acontece quando o usuário tenta inserir um termo de pesquisa inválido na caixa de pesquisa
 * o que acontece quando o termo de pesquisa é tão geral que retorna um número excessivo de resultados
@@ -433,7 +437,7 @@ Ao elaborar esses testes, lembre-se de que nem todos os cenários ocorrerão reg
 |---|---|---|---|---|---|
 | Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 1 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
 |  | Palavra de interrupção | 20 | 2 |  | Procurando uma palavra de parada. |
-|  | Sequência vazia | 10 | 1 |  | Procurando uma string vazia. |
+|  | Sequência vazia | 10 | 3 |  | Procurando uma string vazia. |
 |  | Caracteres especiais | 10 | 1 |  | Procurando caracteres especiais. |
 
 #### Testes de resistência {#endurance-tests}
@@ -443,10 +447,10 @@ Determinados problemas só serão encontrados depois que o sistema estiver em ex
 | Cenário | Tipo de teste | #Usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
 | Teste de resistência (72 horas) | Página inicial | 10 | 1 |  |  |
-|  | Pesquisar   | 10 | 1 |  |  |
+|  | Pesquisar   | 10 | 3 |  |  |
 |  | Notícias | 20 | 2 |  |  |
 |  | Eventos | 10 | 1 |  |  |
-|  | Ativações | 1 | 3 |  | Simulação do comportamento do autor. |
+|  | Ativações | 1 | 1 |  | Simulação do comportamento do autor. |
 
 ### Otimização {#optimization}
 
@@ -461,7 +465,7 @@ Uma seleção de ferramentas está disponível para ajudá-lo com a geração de
 
 * [JMeter](https://jakarta.apache.org/jmeter/)
 * [Carregar Runner](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
-* [Determyne](https://www.determyne.com/) InsideApps
+* [](https://www.determyne.com/) DetermyneInsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Perfil interativo Java](https://jiprof.sourceforge.net/)
 * e muito mais...
@@ -481,11 +485,11 @@ Depois que todos os testes tiverem sido concluídos, você deverá informar sobr
 
 ## Otimizando o desempenho ao usar o Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-O [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) é a ferramenta de cache e/ou balanceamento de carga da Adobe. Ao usar o Dispatcher, você deve considerar a otimização do seu site para o desempenho do cache.
+O &lt;a>Dispatcher1/> é uma ferramenta de balanceamento de carga e/ou de armazenamento de dados em cache. [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) Ao usar o Dispatcher, você deve considerar a otimização do seu site para o desempenho do cache.
 
 >[!NOTE]
 >
->As versões do Dispatcher são independentes do AEM, no entanto, a documentação do Dispatcher é incorporada na documentação do AEM. Sempre use a documentação do Dispatcher incorporada na documentação para obter a versão mais recente do AEM.
+>As versões do Dispatcher são independentes do AEM, no entanto, a documentação do Dispatcher é incorporada na documentação AEM. Use sempre a documentação do Dispatcher incorporada na documentação para obter a versão mais recente do AEM.
 >
 >Você pode ter sido redirecionado para esta página se tiver seguido um link para a documentação do Dispatcher incorporada à documentação de uma versão anterior do AEM.
 
@@ -497,20 +501,21 @@ O Dispatcher oferta vários mecanismos integrados que você pode usar para otimi
 >
 >* pode armazenar em cache tudo o que você pode armazenar como uma página e solicitar usando um URL
 >* não é possível armazenar outras coisas, como cookies, dados de sessão e dados de formulário.
+
 >
 >
 Em geral, muitas estratégias de cache envolvem selecionar bons URLs e não depender desses dados adicionais.
 >
->Com o Dispatcher versão 4.1.11, também é possível armazenar em cache cabeçalhos de resposta, consulte [Armazenamento em cache de cabeçalhos](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)de resposta HTTP.
+>Com o Dispatcher versão 4.1.11, também é possível armazenar em cache cabeçalhos de resposta, consulte [Armazenando em cache cabeçalhos de resposta HTTP](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 
 
-### Calculando a taxa de cache do Dispatcher {#calculating-the-dispatcher-cache-ratio}
+### Calculando a Taxa de Cache do Dispatcher {#calculating-the-dispatcher-cache-ratio}
 
 A fórmula da taxa de cache estima a porcentagem de solicitações tratadas pelo cache do número total de solicitações que entram no sistema. Para calcular a taxa de cache, é necessário o seguinte:
 
-* O número total de solicitações. Essas informações estão disponíveis no Apache `access.log`. Para obter mais detalhes, consulte a documentação [](https://httpd.apache.org/docs/2.4/logs.html#accesslog)oficial do Apache.
+* O número total de solicitações. Essas informações estão disponíveis no Apache `access.log`. Para obter mais detalhes, consulte a [documentação oficial do Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-* O número de solicitações que a instância Publicar serviu. Essas informações estão disponíveis na parte `request.log` da instância. Para obter mais detalhes, consulte [Interpretação do request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) e [Localização dos arquivos](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files)de log.
+* O número de solicitações que a instância Publicar serviu. Essas informações estão disponíveis em `request.log` da instância. Para obter mais detalhes, consulte [Interpretação do request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) e [Localizando os arquivos de log](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
 
 A fórmula para calcular a taxa de cache é:
 
@@ -518,18 +523,18 @@ A fórmula para calcular a taxa de cache é:
 
 Por exemplo, se o número total de solicitações for 129491 e o número de solicitações atendidas pela instância de publicação for 58959, a taxa de cache será: **(129491 - 58959)/129491= 54.5%**.
 
-Se você não tiver um emparelhamento de um editor/despachante, precisará adicionar solicitações de todos os despachantes e editores juntos para obter uma avaliação precisa. Consulte também [Implantações](/help/sites-deploying/recommended-deploys.md)recomendadas.
+Se você não tiver um emparelhamento de um editor/despachante, precisará adicionar solicitações de todos os despachantes e editores juntos para obter uma avaliação precisa. Consulte também [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
->Para melhor desempenho, a Adobe recomenda uma taxa de cache de 90% a 95%.
+>Para melhor desempenho, o Adobe recomenda uma taxa de cache de 90% a 95%.
 
 #### Usando codificação de página consistente {#using-consistent-page-encoding}
 
 Com a versão 4.1.11 do Dispatcher, é possível armazenar em cache os cabeçalhos de resposta. Se você não estiver armazenando cabeçalhos de resposta em cache no Dispatcher, poderão ocorrer problemas se você armazenar informações de codificação de página no cabeçalho. Nessa situação, quando o Dispatcher envia uma página do cache, a codificação padrão do servidor da Web é usada para a página. Há duas maneiras de evitar esse problema:
 
-* Se você usar apenas uma codificação, verifique se a codificação usada no servidor da Web é a mesma usada na codificação padrão do site do AEM.
-* Use uma `<META>` tag na seção HTML `head` para definir a codificação, como no exemplo a seguir:
+* Se você usar apenas uma codificação, verifique se a codificação usada no servidor da Web é a mesma usada na codificação padrão do site da AEM.
+* Use uma tag `<META>` na seção HTML `head` para definir a codificação, como no exemplo a seguir:
 
 ```xml
         <META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
@@ -537,7 +542,7 @@ Com a versão 4.1.11 do Dispatcher, é possível armazenar em cache os cabeçalh
 
 #### Evitar parâmetros de URL {#avoid-url-parameters}
 
-Se possível, evite parâmetros de URL para as páginas que deseja armazenar em cache. Por exemplo, se você tiver uma galeria de imagens, o seguinte URL nunca será armazenado em cache (a menos que o Dispatcher esteja [configurado adequadamente](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Se possível, evite parâmetros de URL para as páginas que deseja armazenar em cache. Por exemplo, se você tiver uma galeria de imagens, o seguinte URL nunca será armazenado em cache (a menos que o Dispatcher esteja [configurado de acordo com](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -575,7 +580,7 @@ www.myCompany.com/news/main.large.html
 >
 >Usando a globalização do script da definição do modelo, você pode especificar um script separado que renderiza as páginas de impressão.
 
-#### Invalidando Arquivos De Imagem Usados Como Títulos {#invalidating-image-files-used-as-titles}
+#### Invalidando arquivos de imagem usados como títulos {#invalidating-image-files-used-as-titles}
 
 Se você renderizar títulos de página, ou outro texto, como imagens, é recomendável armazenar os arquivos para que sejam excluídos após uma atualização de conteúdo na página:
 
@@ -588,9 +593,9 @@ Por exemplo, você pode armazenar o título da página myPage.html no arquivo my
 
 >[!NOTE]
 >
->O arquivo de imagem não existe fisicamente na instância do AEM. Você pode usar um script que cria dinamicamente o arquivo de imagem. O Dispatcher armazena o arquivo no servidor da Web.
+>O arquivo de imagem não existe fisicamente na instância AEM. Você pode usar um script que cria dinamicamente o arquivo de imagem. O Dispatcher armazena o arquivo no servidor da Web.
 
-#### Invalidando Arquivos De Imagem Usados Para Navegação {#invalidating-image-files-used-for-navigation}
+#### Invalidando arquivos de imagem usados para navegação {#invalidating-image-files-used-for-navigation}
 
 Se você usar imagens para as entradas de navegação, o método é basicamente o mesmo que com títulos, apenas ligeiramente mais complexo. Armazene todas as imagens de navegação com as páginas de público alvo. Se você usar duas imagens para normais e ativas, poderá usar os seguintes scripts:
 
@@ -617,15 +622,16 @@ O Dispatcher não pode armazenar dados personalizados em cache, portanto, recome
 >
 >* use iFrames para dividir a página em uma parte que é a mesma para todos os usuários e uma parte que é a mesma para todas as páginas do usuário. Em seguida, é possível armazenar essas duas partes em cache.
 >* use o JavaScript do lado do cliente para exibir informações personalizadas. No entanto, é necessário verificar se a página ainda é exibida corretamente se um usuário desativa o JavaScript.
+
 >
 
 
 
 #### Conexões aderentes {#sticky-connections}
 
-[As conexões](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) adesivas garantem que os documentos de um usuário sejam todos compostos no mesmo servidor. Se um usuário sair desta pasta e posteriormente retornar a ela, a conexão ainda permanecerá. Defina uma pasta para manter todos os documentos que exigem conexões aderentes para o site. Tente não ter outros documentos nele. Isso afeta o balanceamento de carga se você usar páginas personalizadas e dados de sessão.
+[As ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) conexões adesivas garantem que os documentos de um usuário sejam todos compostos no mesmo servidor. Se um usuário sair desta pasta e posteriormente retornar a ela, a conexão ainda permanecerá. Defina uma pasta para manter todos os documentos que exigem conexões aderentes para o site. Tente não ter outros documentos nele. Isso afeta o balanceamento de carga se você usar páginas personalizadas e dados de sessão.
 
-#### MIME Types {#mime-types}
+#### Tipos MIME {#mime-types}
 
 Há duas maneiras de um navegador determinar o tipo de arquivo:
 
@@ -639,7 +645,7 @@ Para a maioria dos arquivos, o tipo MIME está implícito na extensão do arquiv
 
 Se o nome do arquivo não tiver extensão, ele será exibido como texto sem formatação.
 
-Com a versão 4.1.11 do Dispatcher, é possível armazenar em cache os cabeçalhos de resposta. Se você não armazenar em cache os cabeçalhos de resposta no Dispatcher, esteja ciente de que o tipo MIME faz parte do cabeçalho HTTP. Dessa forma, se o aplicativo AEM retornar arquivos que não têm um arquivo reconhecido como encerrado e, em vez disso, depender do tipo MIME, esses arquivos poderão ser exibidos incorretamente.
+Com a versão 4.1.11 do Dispatcher, é possível armazenar em cache os cabeçalhos de resposta. Se você não armazenar em cache os cabeçalhos de resposta no Dispatcher, esteja ciente de que o tipo MIME faz parte do cabeçalho HTTP. Dessa forma, se seu aplicativo AEM retorna arquivos que não têm um arquivo reconhecido como encerrado e, em vez disso, dependem do tipo MIME, esses arquivos podem ser exibidos incorretamente.
 
 Para garantir que os arquivos sejam armazenados em cache corretamente, siga estas diretrizes:
 
@@ -682,7 +688,7 @@ A tabela a seguir ilustra o tamanho dos volumes de dados usados nos benchmarks d
   </tr>
   <tr>
    <td>Instalação básica</td>
-   <td>69,610</td>
+   <td>69 610</td>
    <td>562</td>
    <td>256</td>
    <td>237</td>
@@ -697,7 +703,7 @@ A tabela a seguir ilustra o tamanho dos volumes de dados usados nos benchmarks d
   <tr>
    <td>Conteúdo grande para backup completo</td>
    <td><br type="_moz" /> </td>
-   <td>+10,000</td>
+   <td>+10.000</td>
    <td>+100</td>
    <td>+100</td>
   </tr>
@@ -708,11 +714,11 @@ O benchmark de backup é repetido com os conjuntos de conteúdo adicionais adici
 
 #### Cenários de benchmark {#benchmark-scenarios}
 
-Os benchmarks de backup abrangem dois cenários principais: é feito backup quando o sistema está com carga significativa do aplicativo e quando o sistema está ocioso. Embora a recomendação geral seja que os backups sejam executados quando o sistema CQ estiver o mais ocioso possível, há situações em que é necessário que o backup seja executado quando o sistema estiver sendo carregado.
+Os benchmarks de backup abrangem dois cenários principais: é feito backup quando o sistema está sob uma carga significativa do aplicativo e quando o sistema está ocioso. Embora a recomendação geral seja que os backups sejam executados quando o sistema CQ estiver o mais ocioso possível, há situações em que é necessário que o backup seja executado quando o sistema estiver sendo carregado.
 
-**Os backups de estado** ocioso são executados sem outra atividade no CQ.
+**Idle** StateBackups são executados sem nenhuma outra atividade no CQ.
 
-**Em Load** Backups (Carregar backups) são executados enquanto o sistema está com menos de 80% de carga dos processos on-line. O atraso do backup variou para ver o impacto na carga.
+**Em** LoadBackups são executados enquanto o sistema está com menos de 80% de carga dos processos on-line. O atraso do backup variou para ver o impacto na carga.
 
 Os tempos de backup e o tamanho do backup resultante são obtidos dos registros do servidor CQ. Normalmente, é recomendável que os backups sejam programados para períodos fora do horário em que o CQ estiver ocioso, como no meio da noite. Esse cenário é representativo da abordagem recomendada.
 
@@ -720,9 +726,9 @@ O carregamento consistirá em criar/excluir páginas, traversais e query com a m
 
 O impacto da carga no desempenho do backup pode ser estimado pela diferença entre o desempenho com e sem essa carga do aplicativo. O impacto do backup no throughput do aplicativo é encontrado comparando o throughput de cenário em transações por hora com e sem um backup simultâneo em andamento e com backups operando com diferentes configurações de &quot;atraso de backup&quot;.
 
-**Configuração** de atraso Para vários dos cenários, também alteramos a configuração de atraso de backup, usando valores de 10 ms (padrão), 1 ms e 0 ms, para explorar como essa configuração afetava o desempenho dos backups.
+**Atraso na** configuraçãoPara vários dos cenários, também alteramos a configuração de atraso de backup, usando valores de 10 ms (padrão), 1 ms e 0 ms, para explorar como essa configuração afetava o desempenho dos backups.
 
-**Tipo** de backup Todos os backups eram backups externos do repositório feitos em um diretório de backup sem criar um zip, exceto em uma única vez para comparação em que o comando tar era usado diretamente. Como os backups incrementais não podem ser criados em um arquivo zip, ou quando o backup completo anterior é um arquivo zip, o método do diretório de backup é o mais usado em situações de produção.
+**Tipo** de backupTodos os backups eram backups externos do repositório feito em um diretório de backup sem criar um zip, exceto em uma vez para comparação em que o comando tar era usado diretamente. Como os backups incrementais não podem ser criados em um arquivo zip, ou quando o backup completo anterior é um arquivo zip, o método do diretório de backup é o mais usado em situações de produção.
 
 ### Resumo dos resultados {#summary-of-results}
 
@@ -740,12 +746,12 @@ O tamanho do backup produzido é o principal determinante do tempo necessário p
 
 Este gráfico ilustra que os backups incrementais e completos seguem um padrão simples de tamanho versus tempo que podemos medir como throughput. Os tempos de backup em uma instância ociosa são bastante consistentes, com uma média de 0,61 MB/s, independentemente dos backups completos ou incrementais no ambiente de benchmark.
 
-#### Atraso no backup {#backup-delay}
+#### Atraso de backup {#backup-delay}
 
 O parâmetro de atraso de backup é fornecido para limitar a extensão em que os backups podem interferir nas cargas de trabalho de produção. O parâmetro especifica um tempo de espera em milissegundos, que é intercalado na operação de backup em uma base arquivo a arquivo. O efeito geral depende em parte do tamanho dos arquivos afetados. A avaliação do desempenho do backup em MB/s oferece uma maneira razoável de comparar os efeitos do atraso no backup.
 
 * A execução de um backup simultaneamente com carga regular do aplicativo terá um impacto negativo na throughput da carga normal.
-* O impacto pode ser leve — até 5% — ou pode ser muito significativo — causando até 75% de queda na saída, e isso provavelmente depende do aplicativo mais do que qualquer coisa.
+* O impacto pode ser leve — até 5% — ou pode ser muito significativo — causando até 75% de queda na saída, e isso provavelmente depende mais do aplicativo do que de qualquer coisa.
 * O backup não é uma carga pesada na CPU e, portanto, as cargas de trabalho de produção que exigem muita CPU seriam menos afetadas pelo backup do que as que exigem muita E/S.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
