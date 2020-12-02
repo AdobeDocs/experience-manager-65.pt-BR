@@ -12,39 +12,42 @@ discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 6%
 
 ---
 
 
-# Ativar o registro em log para formulários HTML5{#enable-logging-for-html-forms}
+# Habilitar registro para formulários HTML5{#enable-logging-for-html-forms}
 
 Você pode configurar o utilitário logger para start criando registros para formulários HTML5. O utilitário logger tem vários níveis, você pode definir um nível conforme suas necessidades. Os formulários HTML5 têm componentes de servidor e cliente. Você pode configurar registros para ambos os componentes.
 
-## Configuração do registro no servidor {#configuring-server-side-logging}
+## Configurando o registro no servidor {#configuring-server-side-logging}
 
 Execute as seguintes etapas para configurar os registros do servidor:
 
-1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção de configuração *do agente de log do* Apace Sling. Uma caixa de diálogo é exibida:
+1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Apace Sling logging logger configuration*. Uma caixa de diálogo é exibida:
 
    ![ Caixa de diálogo da opção de configuração do registrador de Sling Apace](assets/logconfig.png)
 
    Opção de configuração do agente de log do Apace Sling
 
-1. Altere o Nível **do** log para **Depuração**.
+1. Altere **Log Level** para **Depuração**.
 
-1. Especifique o nome e o caminho do Arquivo **de** Log.
+1. Especifique o nome e o caminho do **Arquivo de Log**.
 
    >[!NOTE]
    >
    >Para gerar logs no diretório de log de formulários HTML5, adicione ../logs/ antes do nome do arquivo.
 
-1. Altere o **Logger** para **HTMLFormsPerfLogger**. Clique em **Salvar**.
+1. Altere **Logger** para **HTMLFormsPerfLogger**. Clique em **Salvar**.
 
 ## Configurando o registro de cliente {#configuring-client-logging}
 
 Você pode usar os seguintes métodos para habilitar o logon do lado do cliente em formulários HTML5:
 
-* Uso do parâmetro request nomeado `log`
+* Usando o parâmetro de solicitação chamado `log`
 * Uso do CQ Configuration Manager
 
 ### Habilitar o registro usando o parâmetro de solicitação {#enabling-logging-using-request-parameter}
@@ -65,11 +68,11 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
   </tr>
   <tr>
    <td>1</td>
-   <td>Os registros são direcionados para o <strong>console do navegador</strong></td>
+   <td>Os registros são direcionados para o navegador <strong>Console</strong></td>
   </tr>
   <tr>
    <td>2</td>
-   <td>Os logs são coletados em um objeto JavaScript no lado do cliente e podem ser publicados no <strong>Servidor</strong> </td>
+   <td>Os registros são coletados em um objeto JavaScript no lado do cliente e podem ser publicados em <strong>Servidor</strong> </td>
   </tr>
   <tr>
    <td>3</td>
@@ -99,7 +102,7 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
    <td>ERRO<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>AVISO<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -112,7 +115,7 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
   </tr>
   <tr>
    <td>6</td>
-   <td>TRAÇO<br type="_moz" /> </td>
+   <td>TRACE<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>7</td>
@@ -121,7 +124,7 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
  </tbody>
 </table>
 
-#### Categorias do registrador {#logger-categories}
+#### Categorias de registro {#logger-categories}
 
 <table>
  <tbody>
@@ -144,7 +147,7 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
  </tbody>
 </table>
 
-#### Configuração do registro {#log-configuration}
+#### Configuração de registro {#log-configuration}
 
 No URL do log, o parâmetro da string de configuração do query é definido da seguinte forma:
 
@@ -160,7 +163,7 @@ Por exemplo:
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>Destino: Nível xfa do servidor<br /> : Nível de INFO<br /> xfaView: Nível DEBUG<br /> xfaPerf: TRAÇO</td>
+   <td>Destino: Servidor<br /> xfa level: INFO<br /> nível xfaView: Nível DEBUG<br /> xfaPerf: TRACE</td>
   </tr>
  </tbody>
 </table>
@@ -172,37 +175,37 @@ Por exemplo:
 >b (xfaView): 6 (TRACE especificado pelo usuário)
 >a (xfaPerf): 2 (ERRO de nível padrão)
 
-### Habilitar o registro usando o Configuration Manager {#enabling-logging-using-configuration-manager}
+### Habilitando o registro usando o Configuration Manager {#enabling-logging-using-configuration-manager}
 
 Se você usar o Configuration Manager para ativar o registro, os registros serão gerados para cada solicitação de renderização até que o registro seja desabilitado novamente.
 
 1. Faça logon no CQ Configuration Manager em `https://'[server]:[port]'/system/console/configMgr` e faça logon com as credenciais de administrador.
-1. Procure e clique em Configurações **de formulários** móveis.
+1. Procure e clique em **Configurações do Mobile Forms**.
 1. Na caixa de texto Opções de depuração, digite as configurações de log conforme descrito na seção anterior, por exemplo, **2-a4-b5-c6**
 
    ![Configuração de formulários](assets/forms_configuration.png)
 
    Configuração de formulários
 
-## Carregar logs {#uploading-logs}
+## Carregando logs {#uploading-logs}
 
-Se o destino for definido como 1, todas as mensagens de log de script do cliente serão direcionadas para o console. Se um administrador exigir esses logs juntamente com os logs do servidor, defina o nível de destino como 2. Nesse nível, todos os registros são coletados em um objeto JS no lado do cliente e, se o formulário for renderizado com o Perfil padrão, um botão **Enviar registros** será exibido à esquerda do botão **Realçar campos** existentes na barra de ferramentas. Quando o usuário clica no link, todos os logs coletados são publicados no servidor e são registrados no arquivo de log de erros configurado no servidor.
+Se o destino for definido como 1, todas as mensagens de log de script do cliente serão direcionadas para o console. Se um administrador exigir esses logs juntamente com os logs do servidor, defina o nível de destino como 2. Nesse nível, todos os logs são coletados em um objeto JS no lado do cliente e, se o formulário for renderizado com o Perfil padrão, um botão **Enviar logs** será exibido à esquerda do botão **Realçar campos existentes** na barra de ferramentas. Quando o usuário clica no link, todos os logs coletados são publicados no servidor e são registrados no arquivo de log de erros configurado no servidor.
 
 Por padrão, todas as informações são adicionadas ao arquivo error.log no diretório /crx-repository/logs/.
 
 Para alterar o local e o nome do arquivo de log:
 
 1. Faça logon no Configuration Manager como administrador. O URL padrão do Configuration Manager é `https://'[server]:[port]'/system/console/configMgr`.
-1. Clique em **Apache Sling Logging Logger Configuration (Configuração** do registrador Apache Sling). Uma caixa de diálogo é exibida.
+1. Clique em **Apache Sling Logging Logger Configuration**. Uma caixa de diálogo é exibida.
 
    ![logconfig-1](assets/logconfig-1.png)
 
-1. Altere o Nível **do** log para Depuração.
+1. Altere **Log Level** para Depuração.
 
-1. Especifique o caminho e o nome do Arquivo **de** Log.
+1. Especifique o caminho e o nome do **Arquivo de Log**.
 
    >[!NOTE]
    >
    >Para criar logs no mesmo diretório onde outros arquivos de log são mantidos, especifique ../logs/&lt;nome do arquivo> na propriedade Arquivos de Log.
 
-1. Altere o **Logger** para **HTMLFormsPerfLogger** e clique em **Salvar**.
+1. Altere **Logger** para **HTMLFormsPerfLogger** e clique em **Salvar**.
