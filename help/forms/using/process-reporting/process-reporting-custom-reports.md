@@ -1,8 +1,8 @@
 ---
 title: Relatórios Relatórios Personalizados em Andamento
 seo-title: Relatórios Relatórios Personalizados em Andamento
-description: Você pode criar relatórios personalizados e adicioná-los aos AEM Forms na interface do usuário do Relatórios do JEE Process.
-seo-description: Você pode criar relatórios personalizados e adicioná-los aos AEM Forms na interface do usuário do Relatórios do JEE Process.
+description: Você pode criar relatórios personalizados e adicioná-los à interface do usuário do Relatórios do AEM Forms no JEE Process.
+seo-description: Você pode criar relatórios personalizados e adicioná-los à interface do usuário do Relatórios do AEM Forms no JEE Process.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Relatórios Relatórios Personalizados em Andamento{#custom-reports-in-process-reporting}
+# Relatórios de Relatórios Personalizados em Processo{#custom-reports-in-process-reporting}
 
 Você pode usar a interface REST do QueryBuilder ou criar um serviço OSGi usando a API do QueryBuilder para criar um relatório personalizado.
 
@@ -26,14 +26,14 @@ Você pode usar a interface REST do QueryBuilder ou criar um serviço OSGi usand
 
 Antes de adicionar qualquer relatório personalizado, execute o seguinte procedimento de modelo:
 
-1. Os dados usados em relatórios personalizados devem estar disponíveis no Relatórios Process. Para garantir a disponibilidade dos dados, programe uma tarefa cron ou use a opção **[Sincronizar](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**na interface do usuário do Processar Relatórios.
-1. A solicitação de URL (encapsulando o query desejado) deve retornar um objeto de resultado de query apropriado. Para criar um query, você pode usar a interface REST do [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) para criar um serviço OSGi usando a API do QueryBuilder. Você pode criar query dinâmicos ou estáticos.
+1. Os dados usados em relatórios personalizados devem estar disponíveis no Relatórios Process. Para garantir a disponibilidade dos dados, programe um trabalho de cron ou use a opção **[Sincronizar](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** na interface do Relatórios do processo.
+1. A solicitação de URL (encapsulando o query desejado) deve retornar um objeto de resultado de query apropriado. Para criar um query, você pode usar a interface REST de [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) para criar um serviço OSGi usando a API do QueryBuilder. Você pode criar query dinâmicos ou estáticos.
 
 1. Crie uma interface de usuário personalizada para exibir os resultados. Você pode criar uma interface de usuário independente ou integrar um resultado com a interface de usuário existente do Relatórios do processo.
 
-## Uso da interface REST do QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
+## Usando a interface REST do QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-A interface REST do CRX QueryBuilder expõe a funcionalidade do Criador de Query de compartilhamento de ativos por meio de uma API Java e REST. Saiba como usar a interface [REST do](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder, antes de executar as seguintes etapas:
+A interface REST do CRX QueryBuilder expõe a funcionalidade do Criador de Query de compartilhamento de ativos por meio de uma API Java e REST. Saiba como usar a [interface REST do CRX QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html), antes de executar as seguintes etapas:
 
 1. Navegue até o URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Crie um query com base na estrutura do nó do armazenamento do Relatórios Process e nas propriedades do nó.
@@ -50,7 +50,7 @@ A interface REST do CRX QueryBuilder expõe a funcionalidade do Criador de Query
 
 ## Criação de um serviço usando a API do Construtor de Query  {#creating-a-service-using-query-builder-api-nbsp}
 
-O pré-requisito para a criação de um serviço usando a API do construtor de Query é a [criação e implantação do pacote](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) OSGI do CQ e o [uso da API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)do Construtor de Query.
+Os pré-requisitos para criar um serviço usando a API do construtor de Query são [criar e implantar o pacote OSGI do CQ](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) e [usando a API do Construtor de Query](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Crie um serviço OSGi com anotações apropriadas. Para acessar o QueryBuilder, use:
 
@@ -66,7 +66,7 @@ O pré-requisito para a criação de um serviço usando a API do construtor de Q
     predicateGroup.setAllRequired(true);
    ```
 
-1. Adicione predicados ao predicateGroup recém-criado. Algumas construções de predicado úteis são [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)e [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
+1. Adicione predicados ao predicateGroup recém-criado. Algumas construções de predicado úteis são [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html) e [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
 
    Para relatórios estáticos, codifique os predicados, enquanto para relatórios dinâmicos, obtenha os predicados da solicitação.
 
@@ -137,13 +137,13 @@ O pré-requisito para a criação de um serviço usando a API do construtor de Q
                        out.write(row.toString().getBytes());
    ```
 
-1. Use o `org.apache.felix maven-bundle-plugin` para criar um pacote OSGi para o servlet.
+1. Use `org.apache.felix maven-bundle-plugin` para criar um pacote OSGi para o servlet.
 
 1. Implante o pacote no servidor CRX.
 
 ### Exemplo de serviço {#service-example}
 
-O exemplo de serviço a seguir conta instâncias de um processo que está em **EXECUÇÃO** e estado **COMPLETO** no final de cada mês, trimestre e ano.
+O exemplo de serviço a seguir conta instâncias de um processo que está no estado **RUNNING** e **COMPLETE** no fim de cada mês, trimestre e ano.
 
 ```java
 package custom.reporting.service;
@@ -341,7 +341,7 @@ public class PeriodicProcessVolume {
 }
 ```
 
-O `pom.xml`arquivo de amostra a ser criado acima do serviço é:
+O arquivo de amostra `pom.xml`a ser criado acima do serviço é:
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
@@ -425,10 +425,10 @@ O `pom.xml`arquivo de amostra a ser criado acima do serviço é:
 
 ## Criação de uma interface de usuário separada  {#creating-a-separate-ui-nbsp}
 
-Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornece privilégios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acesso apropriados.
+Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Informações básicas sobre Sling](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Criar um nó CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornecer [privilégios de acesso](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control) apropriados.
 
-1. Crie um Nó CRX no `/apps` nó e conceda as permissões de acesso apropriadas. (PERM_PROCESS_RELATÓRIOS_USER)
-1. Defina o renderizador no `/content` nó.
+1. Crie um Nó CRX no nó `/apps` e conceda as permissões de acesso apropriadas. (PERM_PROCESS_RELATÓRIOS_USER)
+1. Defina o renderizador no nó `/content`.
 1. Adicione arquivos JSP ou HTML ao nó criado na Etapa 1. Você também pode adicionar arquivos CSS.
 
    ![Um nó de amostra com arquivos JSP e CSS](assets/nodewith_jsp_css_new.png)
@@ -633,18 +633,18 @@ response.setCharacterEncoding("utf-8");
 
 ## Integração da interface do usuário do relatório na interface do Relatórios do processo existente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornece privilégios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acesso apropriados.
+Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Informações básicas sobre Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Criar um nó CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) e fornecer [privilégios de acesso](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control) apropriados.
 
 1. Crie uma interface de usuário separada.
-1. Crie um `nt:unstructured` nó filho no `/content/process-reporting-runtime/custom-reports` nó para cada relatório conectável.
+1. Crie um nó filho `nt:unstructured` no nó `/content/process-reporting-runtime/custom-reports` para cada relatório conectável.
 
-   * **id**- Especifica o número de identificação exclusivo do relatório.
-   * **name**- Especifica o nome do relatório. O nome é exibido na interface do usuário.
-   * **link**- Especifica o link relativo para o renderizador da interface de usuário separada. O link é criado na Etapa 1.
-   * **descrição**- Especifica a descrição de uma linha do relatório. Você pode deixar o campo de descrição vazio.
-   * **ícone**- Especifica a imagem para representar pictorialmente o relatório. Você pode deixar o campo de ícone vazio.
+   * **id** - Especifica o número de identificação exclusivo do relatório.
+   * **name** - Especifica o nome do relatório. O nome é exibido na interface do usuário.
+   * **link** - Especifica o link relativo para o renderizador da interface de usuário separada. O link é criado na Etapa 1.
+   * **descrição** - Especifica a descrição de uma linha do relatório. Você pode deixar o campo de descrição vazio.
+   * **ícone** - Especifica a imagem para representar pictorialmente o relatório. Você pode deixar o campo de ícone vazio.
 
-   ![Propriedades do nó ](assets/node_properties_new.png)
+   ![Propriedades do nó  ](assets/node_properties_new.png)
 
    Propriedades do nó
 
@@ -660,6 +660,6 @@ Os pré-requisitos para criar uma interface de usuário separada para exibir res
 
 ## Pacote de amostra {#sample-package}
 
-Importe o `sample-report-pkg-1.zip` pacote para integrar relatórios personalizados e interface discutida no artigo à interface do usuário do Process Management.
+Importe o pacote `sample-report-pkg-1.zip` para integrar relatórios personalizados e IU discutidos no artigo à interface do usuário do Process Management.
 
 [Obter arquivo](assets/sample-report-pkg-1.zip)
