@@ -1,6 +1,6 @@
 ---
 title: Markdown
-seo-title: Markdown
+seo-title: Marcação
 description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
 seo-description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
 uuid: afcbf82f-3a75-4491-9172-706188db65bb
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Markdown{#markdown}
 
-Quando você está [criando](content-fragments-variations.md#authoring-your-content), o editor de fragmentos de conteúdo usa a sintaxe de *markdown* para permitir que você escreva conteúdo facilmente:
+Quando você está [criando](content-fragments-variations.md#authoring-your-content), o editor de fragmentos de conteúdo usa a sintaxe *markdown* para permitir que você grave conteúdo facilmente:
 
 ![editor de marcação](/help/assets/content-fragments/assets/cfm-6420-08.png)
 
