@@ -1,8 +1,8 @@
 ---
 title: Componentes
 seo-title: Componentes
-description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os criadores de sites
-seo-description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os criadores de sites
+description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites
+seo-description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +30,7 @@ Os componentes estão disponíveis ao [editar uma página](/help/sites-authoring
 >
 >Dependendo do seu caso, você pode ter componentes personalizados desenvolvidos explicitamente para as suas necessidades. Eles podem até ter o mesmo nome que alguns dos componentes discutidos aqui.
 
-## Uso geral {#general-usage}
+## Uso geral   {#general-usage}
 
 Os componentes estão disponíveis na guia **Componentes** do painel lateral do editor de páginas ao [editar uma página](/help/sites-authoring/editing-content.md).
 
@@ -51,13 +54,13 @@ Os componentes são classificados de acordo com as várias categorias chamadas g
 
 O console [Componentes](/help/sites-authoring/default-components-console.md) fornece uma visão geral dos grupos de componentes e dos componentes, que são fornecidos por sua instalação do AEM. É possível visualizar as principais informações sobre os componentes individuais e seu uso.
 
-## Componentes - Áreas principais {#components-major-areas}
+## Componentes - Áreas principais  {#components-major-areas}
 
 As páginas a seguir fornecem links para algumas informações adicionais e importantes sobre os componentes:
 
-* [Componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - Os componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+* [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) - Os componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
-* [Comunidades](/help/communities/author-communities.md) - Os componentes fornecem recursos interativos para um site, como fóruns e comentários. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
+* [Comunidades](/help/communities/author-communities.md) - Os componentes fornecem recursos interativos para um site, como fóruns e comentários. Muitos desses componentes são incluídos quando um [Site da comunidade](/help/communities/overview.md) é criado.
 
 * [eCommerce](/help/sites-administering/ecommerce.md) - A funcionalidade eCommerce do AEM também inclui uma série de componentes. O uso efetivo pode depender do mecanismo de comércio utilizado.
 
@@ -65,6 +68,6 @@ As páginas a seguir fornecem links para algumas informações adicionais e impo
 
 Além dos componentes que os autores podem acessar em uma instalação padrão, vários outros componentes também estão disponíveis.
 
-* If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-authoring/templates.md) enable/disable these and edit parameters for specific components.
+* Se a página for baseada no modelo editável moderno recomendado, é possível [editar o modelo](/help/sites-authoring/templates.md), habilitar/desabilitar os modelos e editar parâmetros de componentes específicos.
 * Se a página for baseada no modelo estático, use o [modo de design](/help/sites-authoring/default-components-designmode.md#enable-disable-components) para habilitar/desabilitar componentes e editar parâmetros de componentes específicos.
 
