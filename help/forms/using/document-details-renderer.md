@@ -36,7 +36,7 @@ PDF forms são renderizados por `PdfTaskForm View`.
 
 Quando um formulário XDP é renderizado como PDF, um `FormBridge` JavaScript™ é adicionado pelo serviço FormsAugmenter. Esse JavaScript™ (dentro do formulário PDF) ajuda a executar ações como enviar formulários, salvar formulários ou tornar o formulário off-line.
 
-Na área de trabalho do AEM Forms, a visualização PDFTaskForm se comunica com o `FormBridge`javascript, por meio de um HTML intermediário presente no `/lc/libs/ws/libs/ws/pdf.html`. O fluxo é:
+Na área de trabalho do AEM Forms, a visualização PDFTaskForm se comunica com `FormBridge`javascript, por meio de um HTML intermediário presente em `/lc/libs/ws/libs/ws/pdf.html`. O fluxo é:
 
 **VISUALIZAÇÃO PDFTaskForm - pdf.html**
 
@@ -44,7 +44,7 @@ Comunica-se usando `window.postMessage` / `window.attachEvent('message')`
 
 Este método é a forma padrão de comunicação entre um quadro pai e um iframe. Os ouvintes de eventos existentes de PDF forms abertos anteriormente são removidos antes de adicionar um novo. Essa limpeza também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa.
 
-**pdf.html -`FormBridge`javascript dentro do PDF renderizado**
+**pdf.html -  `FormBridge`javascript dentro do PDF renderizado**
 
 Comunica-se usando `pdfObject.postMessage` / `pdfObject.messageHandler`
 
@@ -58,7 +58,7 @@ Este método é o modo padrão de comunicação com um PDFJavaScript de um HTML.
 
 Novos formulários HTML são renderizados pela Visualização NewHTMLTaskForm.
 
-Quando um formulário XDP é renderizado como HTML usando o pacote de formulários móveis implantado no CRX, ele também adiciona `FormBridge`JavaScript ao formulário, o que expõe diferentes métodos para salvar e enviar dados do formulário.
+Quando um formulário XDP é renderizado como HTML usando o pacote de formulários móveis implantado no CRX, ele também adiciona `FormBridge`JavaScript ao formulário, o que expõe diferentes métodos para salvar e enviar dados de formulário.
 
 Esse JavaScript é diferente daquele mencionado nas PDF forms acima, mas tem um objetivo semelhante.
 
@@ -70,11 +70,11 @@ Esse JavaScript é diferente daquele mencionado nas PDF forms acima, mas tem um 
 
 O Flex Forms é renderizado por SwfTaskForm e os guias são renderizados por Visualizações HtmlTaskForm, respectivamente.
 
-Na área de trabalho do AEM Forms, essas visualizações se comunicam com o SWF real, que compõe o formulário/guia flexível usando um SWF intermediário presente em `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+No espaço de trabalho do AEM Forms, essas visualizações se comunicam com o SWF real, que compõe o formulário/guia flexível usando um SWF intermediário presente em `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
-A comunicação acontece usando `swfObject.postMessage` / `window.flexMessageHandler`.
+A comunicação ocorre usando `swfObject.postMessage` / `window.flexMessageHandler`.
 
-Este protocolo é definido pelo `WsNextAdapter.swf`. O objeto existente `flexMessageHandlers`na janela, de formulários SWF abertos anteriormente, é removido antes da adição de um novo. A lógica também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa. `WsNextAdapter.swf` é usado para executar várias ações de formulário, como salvar ou enviar.
+Este protocolo é definido pelo `WsNextAdapter.swf`. O objeto existente `flexMessageHandlers`na janela, de formulários SWF abertos anteriormente, são removidos antes de adicionar um novo. A lógica também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa. `WsNextAdapter.swf` é usado para executar várias ações de formulário, como salvar ou enviar.
 
 >[!NOTE]
 >
@@ -88,12 +88,12 @@ Aplicativos de terceiros são renderizados usando a visualização ExtAppTaskFor
 
 A área de trabalho do AEM Forms escuta em `window.global.postMessage([Message],[Payload])`
 
-[A mensagem] pode ser uma cadeia especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`na `runtimeMap`. Aplicativos de terceiros devem usar essa interface para notificar a área de trabalho da AEM Forms, conforme necessário. O uso dessa interface é obrigatório, pois a área de trabalho do AEM Forms deve saber isso quando a tarefa é enviada para que possa limpar a janela da tarefa.
+[O ] Messagecan pode ser uma cadeia especificada como  `SubmitMessage`|  `CancelMessage`|  `ErrorMessage`|  `actionEnabledMessage`na  `runtimeMap`. Aplicativos de terceiros devem usar essa interface para notificar a área de trabalho da AEM Forms, conforme necessário. O uso dessa interface é obrigatório, pois a área de trabalho do AEM Forms deve saber isso quando a tarefa é enviada para que possa limpar a janela da tarefa.
 
 **Área de trabalho AEM Forms para comunicação de aplicativos de terceiros**
 
-Se os botões de ação direta do espaço de trabalho AEM Forms estiverem visíveis, ele chamará `window.[External-App-Name].getMessage([Action])`, onde `[Action]` será lido a partir do `routeActionMap`. O aplicativo de terceiros deve acompanhar essa interface e notificar o espaço de trabalho da AEM Forms por meio da `postMessage ()` API.
+Se os botões de ação direta do espaço de trabalho AEM Forms estiverem visíveis, ele chamará `window.[External-App-Name].getMessage([Action])`, onde `[Action]` será lido a partir de `routeActionMap`. O aplicativo de terceiros deve acompanhar essa interface e notificar o espaço de trabalho da AEM Forms por meio da API `postMessage ()`.
 
 Por exemplo, um aplicativo Flex pode definir `ExternalInterface.addCallback('getMessage', listener)` para suportar essa comunicação. Se o aplicativo de terceiros desejar manipular o envio do formulário por meio de seus próprios botões, você deverá especificar `hideDirectActions = true() in the runtimeMap` e poderá ignorar esse ouvinte. Por isso, essa construção é opcional.
 
-Você pode ler mais sobre a integração de aplicativos de terceiros em relação ao Gerenciamento de correspondência em [Integração do Gerenciamento de correspondência na área de trabalho](/help/forms/using/integrating-correspondence-management-html-workspace.md)da AEM Forms.
+Você pode ler mais sobre a integração de aplicativos de terceiros em relação ao Gerenciamento de correspondência em [Integrando o Gerenciamento de correspondência na área de trabalho da AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).
