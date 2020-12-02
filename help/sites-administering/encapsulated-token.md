@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Por padrão, o AEM usa o Manipulador de autenticação de token para autenticar cada solicitação. No entanto, para atender às solicitações de autenticação, o Token Authentication Handler requer acesso ao repositório para cada solicitação. Isso ocorre porque os cookies são usados para manter o estado de autenticação. Logicamente, o estado precisa ser persistente no repositório para validar solicitações subsequentes. Com efeito, isto significa que o mecanismo de autenticação é estável.
+Por padrão, AEM usa o Token Authentication Handler para autenticar cada solicitação. No entanto, para atender às solicitações de autenticação, o Token Authentication Handler requer acesso ao repositório para cada solicitação. Isso ocorre porque os cookies são usados para manter o estado de autenticação. Logicamente, o estado precisa ser persistente no repositório para validar solicitações subsequentes. Com efeito, isto significa que o mecanismo de autenticação é estável.
 
 Isto é de particular importância para a escalabilidade horizontal. Em uma configuração de várias instâncias, como o farm de publicação descrito abaixo, o balanceamento de carga não pode ser obtido da maneira ideal. Com a autenticação com estado, o estado de autenticação persistente só estará disponível na instância em que o usuário foi autenticado pela primeira vez.
 
@@ -40,7 +40,7 @@ Caso uma instância de publicação fique indisponível, todos os usuários aute
 
 A solução para a escalabilidade horizontal é a autenticação sem estado com o uso do novo suporte a token encapsulado no AEM.
 
-O token encapsulado é uma parte da criptografia que permite ao AEM criar e validar com segurança as informações de autenticação offline, sem acessar o repositório. Dessa forma, uma solicitação de autenticação pode ocorrer em todas as instâncias de publicação e sem necessidade de conexões aderentes. Também tem a vantagem de melhorar o desempenho da autenticação, pois o repositório não precisa ser acessado para cada solicitação de autenticação.
+O token encapsulado é uma parte da criptografia que permite AEM criar e validar com segurança as informações de autenticação offline, sem acessar o repositório. Dessa forma, uma solicitação de autenticação pode ocorrer em todas as instâncias de publicação e sem necessidade de conexões aderentes. Também tem a vantagem de melhorar o desempenho da autenticação, pois o repositório não precisa ser acessado para cada solicitação de autenticação.
 
 Você pode ver como isso funciona em uma implantação distribuída geograficamente com os autores do MongoMK e as instâncias de publicação do TarMK abaixo:
 
@@ -61,47 +61,48 @@ Você pode ver como isso funciona em uma implantação distribuída geograficame
 >* As sessões aderentes estão ativadas ou
    >
    >
-* Os usuários já são criados no AEM quando os start de sincronização são executados. Isso significa que os tokens encapsulados não serão suportados em situações em que os manipuladores **criam** usuários durante o processo de sincronização.
+* Os usuários já são criados em AEM quando os start de sincronização são executados. Isso significa que os tokens encapsulados não serão suportados em situações nas quais os usuários **create** manipuladores durante o processo de sincronização.
 
 
 Há algumas coisas que você precisa levar em consideração ao configurar o token encapsulado:
 
-1. Devido à criptografia envolvida, todas as instâncias precisam ter a mesma chave HMAC. Desde o AEM 6.3, o material principal não é mais armazenado no repositório, mas no sistema de arquivos real. Com isso em mente, a melhor maneira de replicar as chaves é copiá-las do sistema de arquivos da instância de origem para a instância(s) do público alvo para a qual você deseja replicar as chaves. Consulte mais informações em &quot;Replicando a chave HMAC&quot; abaixo.
+1. Devido à criptografia envolvida, todas as instâncias precisam ter a mesma chave HMAC. Desde AEM 6.3, o material principal não é mais armazenado no repositório, mas no sistema de arquivos real. Com isso em mente, a melhor maneira de replicar as chaves é copiá-las do sistema de arquivos da instância de origem para a instância(s) do público alvo para a qual você deseja replicar as chaves. Consulte mais informações em &quot;Replicando a chave HMAC&quot; abaixo.
 1. O token encapsulado precisa ser ativado. Isso pode ser feito por meio do Console da Web.
 
 ### Replicação da chave HMAC {#replicating-the-hmac-key}
 
-A chave HMAC está presente como uma propriedade binária do `/etc/key` repositório. Você pode baixá-lo separadamente pressionando o link de **visualização** ao lado dele:
+A chave HMAC está presente como uma propriedade binária de `/etc/key` no repositório. Você pode baixá-lo separadamente pressionando o link **visualização** ao lado dele:
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 Para replicar a chave entre instâncias, é necessário:
 
-1. Acesse a instância do AEM, normalmente uma instância do autor, que contém o material principal a ser copiado;
-1. Localize o `com.adobe.granite.crypto.file` pacote no sistema de arquivos local. Por exemplo, neste caminho:
+1. Acesse a instância AEM, normalmente uma instância do autor, que contém o material principal a ser copiado;
+1. Localize o pacote `com.adobe.granite.crypto.file` no sistema de arquivos local. Por exemplo, neste caminho:
 
    * &lt;author-aem-install-dir>/crx-quickstart/launch/felix/bundle21
-   O `bundle.info` arquivo dentro de cada pasta identificará o nome do pacote.
+
+   O arquivo `bundle.info` dentro de cada pasta identificará o nome do pacote.
 
 1. Navegue até a pasta de dados. Por exemplo:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. Copie os arquivos HMAC e master.
+1. Copie os arquivos HMAC e principais.
 1. Em seguida, vá para a instância do público alvo para a qual deseja duplicado a chave HMAC e navegue até a pasta de dados. Por exemplo:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Cole os dois arquivos copiados anteriormente.
-1. [Atualize o pacote](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) Crypto se a instância do público alvo já estiver em execução.
+1. [Atualize o ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) pacote Crypto se a instância do público alvo já estiver em execução.
 
 1. Repita as etapas acima para todas as instâncias às quais deseja replicar a chave.
 
-#### Ativação do token encapsulado {#enabling-the-encapsulated-token}
+#### Habilitando o token encapsulado {#enabling-the-encapsulated-token}
 
 Depois que a chave HMAC tiver sido replicada, você poderá ativar o token encapsulado por meio do console da Web:
 
 1. Aponte seu navegador para `https://serveraddress:port/system/console/configMgr`
 1. Procure uma entrada chamada **Day CRX Token Authentication Handler** e clique nela.
-1. Na janela a seguir, marque a caixa **Ativar suporte** a token encapsulado e pressione **Salvar**.
+1. Na janela a seguir, marque a caixa **Ativar suporte a token encapsulado** e pressione **Salvar**.
 
