@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Tutorial: Criar sua primeira comunicação interativa {#tutorial-create-your-first-interactive-communication}
+# Tutorial: Crie sua primeira comunicação interativa {#tutorial-create-your-first-interactive-communication}
 
 Saiba como criar sua primeira Comunicação interativa.
 
@@ -37,7 +37,7 @@ No final deste tutorial, você poderá:
 * Criar uma comunicação interativa
 * Testar e publicar uma comunicação interativa
 
-## Use case {#use-case}
+## Caso de uso {#use-case}
 
 A jornada start com o aprendizado do caso de uso:
 
@@ -50,9 +50,9 @@ Um operador de telecom envia contas mensais aos clientes por email. O projeto de
 ## Pré-requisitos {#prerequisites}
 
 * Configure uma instância do autor AEM.
-* Instalar complemento [do](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms na instância do autor
+* Instalar [suplemento AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor
 * Configurar o banco de dados MYSQL
-* Obtenha o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Os exemplos no tutorial são baseados no banco de dados MySQL e usam o driver [de banco de dados](https://dev.mysql.com/downloads/connector/j/5.1.html)MySQL JDBC da Oracle.
+* Obtenha o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Os exemplos no tutorial são baseados no banco de dados MySQL e usam [driver de banco de dados MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) da Oracle.
 
 ## Etapa 1: Planeje a comunicação interativa {#step-plan-the-interactive-communication}
 
@@ -72,11 +72,11 @@ Para criar uma anatomia para a Comunicação interativa com os seguintes modos d
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
-## Step 2: Create form data model {#step-create-form-data-model}
+## Etapa 2: Criar modelo de dados de formulário {#step-create-form-data-model}
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Um modelo de dados de formulário permite que você conecte uma Comunicação interativa a fontes de dados diferentes. Por exemplo, AEM perfil do usuário, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um schema unificado de representação de dados de entidades de negócios e serviços disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação Interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de dados da](/help/forms/using/data-integration.md)AEM Forms.
+Um modelo de dados de formulário permite que você conecte uma Comunicação interativa a fontes de dados diferentes. Por exemplo, AEM perfil do usuário, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um schema unificado de representação de dados de entidades de negócios e serviços disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação Interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte [Integração de dados da AEM Forms](/help/forms/using/data-integration.md).
 
 **Objetivos:**
 
