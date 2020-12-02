@@ -1,8 +1,8 @@
 ---
 title: Estrutura de aparência para formulários adaptáveis e HTML5
 seo-title: Estrutura de aparência para formulários adaptáveis e HTML5
-description: Formulários móveis renderizam Modelos de formulário como formulários HTML5. Esses formulários usam arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar o script.
-seo-description: Formulários móveis renderizam Modelos de formulário como formulários HTML5. Esses formulários usam arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar o script.
+description: O Mobile Forms renderiza os Modelos de formulário como formulários HTML5. Esses formulários usam arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar o script.
+seo-description: O Mobile Forms renderiza os Modelos de formulário como formulários HTML5. Esses formulários usam arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar o script.
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 3%
 
 ---
 
 
 # Estrutura de aparência para formulários adaptáveis e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
-Os formulários (formulários adaptáveis e HTML5) usam as bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) para obter aparência e scripts. Os formulários também usam a arquitetura [jQuery UI](https://jqueryui.com/) **Widgets** para todos os elementos interativos (como campos e botões) no formulário. Essa arquitetura permite que o desenvolvedor de formulários use um conjunto avançado de widgets e plug-ins disponíveis do jQuery no Forms. Você também pode implementar uma lógica específica do formulário enquanto captura dados de usuários como restrições leadDigits/trailDigits ou implementar cláusulas de imagem. Os desenvolvedores de formulários podem criar e usar percepções personalizadas para melhorar a experiência de captura de dados e torná-la mais fácil de usar.
+Forms (formulários adaptáveis e formulários HTML5) use as bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) para obter aparência e scripts. Os formulários também usam a arquitetura [jQuery UI](https://jqueryui.com/) **Widgets** para todos os elementos interativos (como campos e botões) no formulário. Essa arquitetura permite que o desenvolvedor de formulários use um conjunto avançado de widgets e plug-ins disponíveis do jQuery no Forms. Você também pode implementar uma lógica específica do formulário enquanto captura dados de usuários como restrições leadDigits/trailDigits ou implementar cláusulas de imagem. Os desenvolvedores de formulários podem criar e usar percepções personalizadas para melhorar a experiência de captura de dados e torná-la mais fácil de usar.
 
 Este artigo destina-se a desenvolvedores com conhecimento suficiente dos widgets jQuery e jQuery. Ele fornece informações sobre a estrutura de aparência e permite que os desenvolvedores criem uma aparência alternativa para um campo de formulário.
 
@@ -50,7 +53,7 @@ A seguir estão as opções globais definidas. Essas opções estão disponívei
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Leitores de tela usam esse valor para registrar informações sobre o campo. O formulário fornece o valor e você pode substituí-lo.<br /> </td>
+   <td>Os Reader de tela usam esse valor para registrar informações sobre o campo. O formulário fornece o valor e você pode substituir o valor.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -78,7 +81,7 @@ A seguir estão as opções globais definidas. Essas opções estão disponívei
   </tr>
   <tr>
    <td>dir</td>
-   <td>A direção do texto. Os valores possíveis são ltr (esquerda para a direita) e rtl (direita para a esquerda).</td>
+   <td>A direção do texto. Os valores possíveis são ltr (da esquerda para a direita) e rtl (da direita para a esquerda).</td>
   </tr>
  </tbody>
 </table>
@@ -172,7 +175,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
  </tbody>
 </table>
 
-### ChoiceList: Lista suspensa, Caixa de listagem {#choicelist-dropdownlist-listbox}
+### ChoiceList: DropDownList, ListBox {#choicelist-dropdownlist-listbox}
 
 <table>
  <tbody>
@@ -186,7 +189,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
   </tr>
   <tr>
    <td>items<br /> </td>
-   <td>Matriz de objetos a serem exibidos como opções. Cada objeto contém duas propriedades - salvar<br /> : valor a ser salvo, exibir: valor a ser exibido.<br /> <br /> </td>
+   <td>Matriz de objetos a serem exibidos como opções. Cada objeto contém duas propriedades -<br /> salvar: valor a ser salvo, exibir: valor a ser exibido.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>editável</p> <p><strong>Observação</strong>: Aplicável somente para formulários HTML5.<br /> </p> </td>
@@ -198,7 +201,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
   </tr>
   <tr>
    <td>multiselect<br /> </td>
-   <td>True se várias seleções forem permitidas, caso contrário, false.<br /> </td>
+   <td>True se várias seleções forem permitidas, caso contrário false.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -212,11 +215,11 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <th>Descrição</th>
   </tr>
   <tr>
-   <td><p>addItem:<em> function(itemValues)<br /> itemValues: objeto que contém o valor de exibição e salvamento <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;salvar valor&gt;}</em></p> </td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: objeto que contém o valor de exibição e salvamento <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td>
    <td>Adiciona um item à lista.</td>
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice do item a ser removido da lista<br /> </em><br /><br /> </td>
+   <td>deleteItem<em>: function(nIndex)<br /> nÍndice: índice do item a ser removido da lista<br /> </em><br /> <br /> </td>
    <td>Exclui uma opção da lista.</td>
   </tr>
   <tr>
@@ -246,7 +249,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
   </tr>
   <tr>
    <td>values</td>
-   <td><p>Matriz de valores (ligado/desligado/neutro).</p> <p>É uma matriz de valores para os diferentes estados de checkButton. valores[0] é o valor quando o estado está ATIVADO, valores[1] é o valor quando o estado está OFF,<br /> valores[2] é o valor quando o estado é NEUTRAL. O comprimento da matriz de valores é igual ao valor da opção de estado.<br /> </p> </td>
+   <td><p>Matriz de valores (ligado/desligado/neutro).</p> <p>É uma matriz de valores para os diferentes estados de checkButton. values[0] é o valor quando o estado está ON, values[1] é o valor quando o estado está OFF,<br /> valores[2] é o valor quando o estado é NEUTRAL. O comprimento da matriz de valores é igual ao valor da opção de estado.<br /> </p> </td>
   </tr>
   <tr>
    <td>estados</td>
