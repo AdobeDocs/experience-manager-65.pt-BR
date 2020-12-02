@@ -19,19 +19,19 @@ ht-degree: 1%
 
 # Alteração do conteúdo Zero da página no Designer {#changing-page-zero-content-in-designer}
 
-O conteúdo da Página zero é exibido por padrão quando um visualizador que não seja o Adobe PDF, como o visualizador de PDF padrão no ou [!DNL Chrome] [!DNL Firefox], não pode ler o conteúdo do formulário PDF/XFA. A mensagem padrão de Página zero é mostrada abaixo.
+O conteúdo da Página zero é exibido por padrão quando um visualizador que não seja da Adobe PDF, como o visualizador de PDF padrão em [!DNL Chrome] ou [!DNL Firefox], não pode ler o conteúdo do formulário PDF/XFA. A mensagem padrão de Página zero é mostrada abaixo.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
 [!DNL AEM Forms] a versão do Designer permite alterar a mensagem exibida na Página zero. Para alterar a mensagem Page Zero (Zero de página), execute as seguintes etapas:
 
-1. Verifique se a [!DNL AEM Forms] versão do Designer está instalada. Você pode verificar a versão na tela Sobre do designer.
+1. Verifique se a versão [!DNL AEM Forms] do Designer está instalada. Você pode verificar a versão na tela Sobre do designer.
 
 1. Abra o formulário para o qual deseja alterar o conteúdo de Página zero.
 
-1. Click **[!UICONTROL File]** > **[!UICONTROL Form Properties]**.
+1. Clique em **[!UICONTROL Arquivo]** > **[!UICONTROL Propriedades do formulário]**.
 
-1. Na caixa de diálogo Propriedades [!UICONTROL do] formulário, clique em ![mais](assets/plus.png) (ícone de adição) para adicionar uma propriedade personalizada.
+1. Na caixa de diálogo [!UICONTROL Propriedades do formulário], clique em ![mais](assets/plus.png) (ícone Plus) para adicionar uma propriedade personalizada.
 
 1. Especifique **_pagezerocontent** como o nome da propriedade.
 1. Adicione a nova mensagem Zero da página, no formato Rich Text, como valor. Por exemplo:
