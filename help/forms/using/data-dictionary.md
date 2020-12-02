@@ -33,14 +33,14 @@ Normalmente, os usuários corporativos não exigem conhecimento de representaç�
 
 ### Fluxo de trabalho do Dicionário de dados {#data-dictionary-workflow}
 
-1. Um Autor [cria o Dicionário](#createdatadictionary) de dados carregando um schema ou do zero.
+1. Um Autor [cria o Dicionário de dados](#createdatadictionary) carregando um schema ou do zero.
 1. O autor cria cartas e comunicações interativas com base no dicionário de dados e associa elementos do dicionário de dados em cartas e comunicações interativas, sempre que necessário.
 1. Um autor pode baixar arquivos XML de dados de amostra, que se baseiam no schema de um dicionário de dados. O autor pode modificar o arquivo XML de dados de amostra, que pode ser associado como dados de teste com o dicionário de dados. O mesmo é usado durante a pré-visualização da letra.
-1. Ao [visualizar uma carta](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), um autor escolhe pré-visualização a carta com dados (Pré-visualização personalizada). A carta é aberta pré-preenchida com os dados fornecidos pelo Autor. Isso é aberto na interface de criação de correspondência. O agente que está visualizando esta carta pode modificar o conteúdo, os dados e os anexos desta carta e pode enviar a carta final. Para obter mais informações sobre como criar cartas, consulte [Criar correspondência](../../forms/using/create-letter.md).
+1. Enquanto [visualiza uma carta](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), um autor escolhe pré-visualização a carta com dados (Pré-visualização personalizada). A carta é aberta pré-preenchida com os dados fornecidos pelo Autor. Isso é aberto na interface de criação de correspondência. O agente que está visualizando esta carta pode modificar o conteúdo, os dados e os anexos desta carta e pode enviar a carta final. Para obter mais informações sobre como criar letras, consulte [Criar correspondência](../../forms/using/create-letter.md).
 
 ## Pré-requisitos {#prerequisite}
 
-Instale o Pacote [de](compatibility-package.md) compatibilidade para visualização da opção **Dicionários** de dados na página **Formulários** .
+Instale o [Pacote de compatibilidade](compatibility-package.md) para visualização da opção **Dicionários de dados** na página **Forms**.
 
 ## Criar um dicionário de dados {#createdatadictionary}
 
@@ -50,28 +50,28 @@ Use o Editor de dicionário de dados para criar um dicionário de dados ou faça
 >
 >Para várias letras que exigem elementos semelhantes, é possível criar um dicionário de dados comum. Entretanto, um grande dicionário de dados com um grande número de elementos pode causar problemas de desempenho ao usar o dicionário de dados e carregar os elementos, como em letras e fragmentos de documento. Se tiver problemas de desempenho, tente criar dicionários de dados separados para letras diferentes.
 
-1. Selecione **Formulários** > Dicionários **de dados**.
-1. Toque em **Criar dicionário** de dados.
+1. Selecione **Forms** > **Dicionários de dados**.
+1. Toque em **Criar dicionário de dados**.
 1. Na tela Propriedades, adicione o seguinte:
 
    * **Título:** (Opcional) Insira o título do dicionário de dados. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês. Letras e outros fragmentos de documento são referenciados com seu título (quando disponíveis), como em miniaturas e propriedades de ativos. Os dicionários de dados são referenciados com seus nomes e não com títulos.
-   * **Nome:** O nome exclusivo do dicionário de dados. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é automaticamente preenchido com base no campo Título e os caracteres especiais, espaços, números e caracteres que não sejam em inglês inseridos no campo Título são substituídos por hífens. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
+   * **Nome:** o nome exclusivo do dicionário de dados. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é automaticamente preenchido com base no campo Título e os caracteres especiais, espaços, números e caracteres que não sejam em inglês inseridos no campo Título são substituídos por hífens. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
 
    * **Descrição**: (Opcional) Descrição do dicionário de dados.
    * **Tags:** (Opcional) Para criar uma tag personalizada, insira o valor no campo de texto e pressione Enter. Você pode ver sua tag abaixo do campo de texto das tags. Quando você salva esse texto, as tags recém-adicionadas também são criadas.
-   * **Propriedades** estendidas: (Opcional) Toque em **Adicionar campo** para especificar atributos de metadados para o dicionário de dados. Na coluna Nome da propriedade, digite um nome de propriedade exclusivo. Na coluna Valor, insira um valor a ser associado à propriedade.
+   * **Propriedades** estendidas: (Opcional) Toque em  **Adicionar** campo para especificar os atributos de metadados para o dicionário de dados. Na coluna Nome da propriedade, digite um nome de propriedade exclusivo. Na coluna Valor, insira um valor a ser associado à propriedade.
 
    ![Propriedades do dicionário de dados especificadas em alemão](do-not-localize/1_ddproperties.png)
 
-1. (Opcional) Para carregar uma definição de schema XSD para seu dicionário de dados, no painel Estrutura do dicionário de dados, toque em **Carregar Schema** XML. Navegue até o arquivo XSD, selecione-o e toque em **Abrir**. Um Dicionário de dados é criado com base no schema XML carregado. É necessário ajustar os nomes de exibição e as descrições dos elementos no dicionário de dados. Para fazer isso, selecione os nomes dos elementos tocando neles e edite suas descrições, nomes de exibição e outros detalhes nos campos no painel direito.
+1. (Opcional) Para carregar uma definição de schema XSD para seu dicionário de dados, no painel Estrutura do dicionário de dados, toque em **Carregar Schema XML**. Navegue até o arquivo XSD, selecione-o e toque em **Abrir**. Um Dicionário de dados é criado com base no schema XML carregado. É necessário ajustar os nomes de exibição e as descrições dos elementos no dicionário de dados. Para fazer isso, selecione os nomes dos elementos tocando neles e edite suas descrições, nomes de exibição e outros detalhes nos campos no painel direito.
 
-   Para obter mais informações sobre Elementos de DDD calculados, consulte Elementos [de dicionário de dados](#computedddelements)calculados.
+   Para obter mais informações sobre Elementos de dados calculados, consulte [Elementos de dicionário de dados calculados](#computedddelements).
 
    >[!NOTE]
    >
    >Você pode ignorar o upload do arquivo de schema e criar o dicionário de dados do zero usando a interface do usuário. Para fazer isso, pule esta etapa e continue com as próximas etapas.
 
-1. Toque em **Avançar**.
+1. Toque em **Next**.
 1. Na tela Adicionar propriedades, adicione os elementos ao dicionário de dados. Você também pode adicionar/excluir elementos e editar seus detalhes se tiver carregado um schema para obter uma estrutura básica do dicionário de dados.
 
    Você pode tocar nos três pontos no lado direito de um elemento e adicionar um elemento à estrutura do dicionário de dados.
@@ -92,9 +92,9 @@ Use o Editor de dicionário de dados para criar um dicionário de dados ou faça
    * Um DDE pai (composto) não pode ter dois filhos com o mesmo nome.
    * As enumerações contêm apenas tipos de String primitiva.
 
-   Para obter mais informações sobre elementos Compostos, Coleção e Primitivos e como trabalhar com elementos do dicionário de dados, consulte [Mapeamento de elementos do dicionário de dados para o Schema](#mappingddetoschema)XML.
+   Para obter mais informações sobre elementos Compostos, Coleção e Primitivos e como trabalhar com elementos do dicionário de dados, consulte [Mapeamento de elementos do dicionário de dados para o Schema XML](#mappingddetoschema).
 
-   Para obter informações sobre validações no Dicionário de dados, consulte Validações [do Editor do dicionário de](#ddvalidations)dados.
+   Para obter informações sobre validações no Dicionário de dados, consulte [Validações do Editor de dicionários de dados](#ddvalidations).
 
    ![2_adddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
@@ -102,7 +102,7 @@ Use o Editor de dicionário de dados para criar um dicionário de dados ou faça
 
    ![3_adddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
-1. (Opcional) É possível remover qualquer elemento tocando nos três pontos no lado direito de um elemento e selecionando **Excluir**.
+1. (Opcional) Você pode remover qualquer elemento tocando nos três pontos no lado direito de um elemento e selecionando **Excluir**.
 
    ![4_deleteelement](assets/4_deleteelement.png)
 
@@ -153,7 +153,7 @@ Ao editar ou exibir um dicionário de dados, você pode ver quais elementos no d
 ## Trabalhar com dados de teste {#working-with-test-data}
 
 1. Na página Dicionários de dados, toque em **Selecionar**.
-1. Toque em um dicionário de dados para o qual deseja baixar dados de teste e toque em **Baixar dados** XML de amostra.
+1. Toque em um dicionário de dados para o qual deseja baixar dados de teste e toque em **Baixar dados XML de amostra**.
 1. Toque em **OK** na mensagem de alerta. Um arquivo XML é baixado.
 1. Abra o arquivo XML com o Bloco de notas ou outro editor XML. O arquivo XML tem a mesma estrutura que o dicionário de dados e as strings de espaço reservado nos elementos. Substitua as strings de espaço reservado pelos dados com os quais você deseja testar uma letra.
 
@@ -200,13 +200,14 @@ Ao editar ou exibir um dicionário de dados, você pode ver quais elementos no d
 
 1. Depois de fazer as entradas de dados, você pode usar esse arquivo XML ao visualizar uma carta com dados de teste.
 
-   Você pode adicionar esses dados de teste com DD (Selecione DD e toque em Fazer upload de dados de teste e fazer upload desse arquivo xml). Assim, depois disso, quando você pré-visualização a carta normalmente (não personalizada), esses dados XML são usados em carta. Você também pode tocar em Personalizado e fazer upload desse XML.
+   Você pode adicionar esses dados de teste com DD (selecione DD e toque em Fazer upload de dados de teste e fazer upload desse arquivo xml)
+Assim, depois disso, quando você pré-visualização a carta normalmente (não personalizada), esses dados XML são usados em carta. Você também pode tocar em Personalizado e fazer upload desse XML.
 
 ## Amostras {#samples}
 
 As amostras de código a seguir mostram detalhes de implementação do Dicionário de dados.
 
-### Schema de amostra que pode ser carregado no dicionário de dados {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
+### Schema de amostra que pode ser carregado no Dicionário de dados {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -277,7 +278,7 @@ A tabela a seguir detalha os atributos comuns associados a um DDE:
    <td>Obrigatório.<br /> Nome do DDE. Deve ser único.</td>
   </tr>
   <tr>
-   <td>Reference<br /> Name</td>
+   <td>Nome da referência<br /></td>
    <td>Sequência de caracteres</td>
    <td>Obrigatório. Nome de referência exclusiva para o DDE, permitindo referências ao DDE que não dependem de alterações na hierarquia ou estrutura do dicionário de dados. Os módulos de texto são mapeados usando esse nome</td>
   </tr>
@@ -358,7 +359,7 @@ A exportação de um XSD requer mapeamento de dados específicos, que é detalha
   </tr>
   <tr>
    <td><p>xs:elemento do tipo - Tipo composto<br /> </p> </td>
-   <td>DDE do tipo - COMPOSTO<br /> </p> </td>
+   <td>DDE do tipo - COMPOSITE<br /> </p> </td>
    <td>java.util.Map<br /> </td>
   </tr>
   <tr>
@@ -378,7 +379,7 @@ A exportação de um XSD requer mapeamento de dados específicos, que é detalha
   </tr>
   <tr>
    <td>xs:attribute /xs:elemento do tipo - xs: booleano <br /> </td>
-   <td>DDE do tipo - Booleano <br /> </td>
+   <td>DDE do tipo - Boolean <br /> </td>
    <td>java.lang.Boolean<br /> </td>
   </tr>
   <tr>
@@ -403,7 +404,7 @@ A exportação de um XSD requer mapeamento de dados específicos, que é detalha
   </tr>
   <tr>
    <td>Elemento do tipo enum e baseType - xs:string</td>
-   <td>DDE<br /> do tipo - subtipo STRING<br /> - ENUM<br /> valueSet - os valores permitidos para ENUM<br /> </td>
+   <td>DDE de<br /> type - STRING<br /> subtype - ENUM<br /> valueSet - os valores permitidos para ENUM<br /> </td>
    <td>java.lang.String</td>
   </tr>
  </tbody>
@@ -414,7 +415,7 @@ A exportação de um XSD requer mapeamento de dados específicos, que é detalha
 Depois de criar um dicionário de dados, é possível baixá-lo como um arquivo de dados de amostra XML para fazer entradas de texto nele.
 
 1. Na página Dicionários de dados, toque em **Selecionar** e em um dicionário de dados para selecioná-lo.
-1. Select **Download Sample XML Data**.
+1. Selecione **Baixar dados XML de amostra**.
 1. Toque em **OK** na mensagem de alerta.
 
    O Gerenciamento de correspondência cria um arquivo XML com base na estrutura do dicionário de dados selecionado e o baixa no computador com o nome &lt;data-dictionary-name>-SampleData. Agora você pode editar esse arquivo em um editor de texto ou XML para fazer entradas de dados ao [criar uma carta](../../forms/using/create-letter.md).
@@ -425,8 +426,8 @@ Quando quiser enviar a mesma carta em idiomas diferentes para seus clientes, loc
 
 ### Localizar dicionário de dados {#localize-data-dictionary}
 
-1. Na página Dicionários de dados, toque em **Selecionar** e em um dicionário de dados para selecioná-lo.
-1. Toque em **Download de dados** de Localização.
+1. Na página Dicionários de dados, toque em **Selecionar** e, em seguida, toque em um dicionário de dados para selecioná-lo.
+1. Toque em **Baixar dados de Localização**.
 1. Toque em **OK** no alerta. O Gerenciamento de correspondência baixa um arquivo zip em seu computador com o nome DataDictionary-&lt;Nome>.zip.
 1. O arquivo Zip contém um arquivo .properties. Esse arquivo define o dicionário de dados baixado. O conteúdo do arquivo de propriedade é semelhante ao seguinte:
 
@@ -456,10 +457,10 @@ Quando quiser enviar a mesma carta em idiomas diferentes para seus clientes, loc
 
 1. Arquive o arquivo .properties (ou arquivos para várias localidades) em um único arquivo .zip.
 
-1. Na página Dicionários de dados, selecione **Mais** > **Carregar dados** de Localização e selecione o arquivo zip com arquivos de propriedades localizados.
+1. Na página Dicionários de dados, selecione **Mais** > **Carregar dados de Localização** e selecione o arquivo zip com arquivos de propriedades localizados.
 1. Para visualização das alterações de localização, altere a localidade do navegador.
 
-## Validações do dicionário de dados {#ddvalidations}
+## Validações do Dicionário de dados {#ddvalidations}
 
 O Editor do dicionário de dados impõe as seguintes validações ao criar ou atualizar um dicionário de dados.
 
