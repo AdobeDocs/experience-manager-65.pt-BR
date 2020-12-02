@@ -1,5 +1,5 @@
 ---
-title: 'Schemas de metadados para definir o layout da página de propriedades de metadados [!DNL Adobe Experience Manager Assets]. '
+title: 'Schemas de metadados para definir o layout da página de propriedades de metadados em [!DNL Adobe Experience Manager Assets]. '
 description: O schema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar schemas de metadados personalizados, editar schemas de metadados e como aplicar schemas de metadados a ativos.
 contentOwner: AG
 translation-type: tm+mt
@@ -15,37 +15,37 @@ ht-degree: 7%
 
 As organizações vêm com um modelo de metadados que aprimora a descoberta de ativos, o uso, a interoperabilidade e assim por diante. A aplicação correta de metadados é sacrossanta para manter workflows e processos orientados por metadados. Para aderir à estratégia e aos padrões de metadados de toda a organização, você pode usar schemas de metadados que ajudam os usuários do DAM a se alinhar. [!DNL Adobe Experience Manager] permite que métodos fáceis e flexíveis criem, mantenham e apliquem schemas de metadados.
 
-Em [!DNL Adobe Experience Manager Assets], os schemas contêm campos específicos para informações específicas a serem preenchidas. Ele também contém informações de layout para exibir campos de metadados de uma forma fácil de usar. As propriedades de metadados incluem título, descrição, tipos MIME, tags e muito mais. Você pode usar o editor Forms [!UICONTROL do Schema] Metadados para modificar os schemas existentes ou adicionar schemas de metadados personalizados.
+Em [!DNL Adobe Experience Manager Assets], os schemas contêm campos específicos para que informações específicas sejam preenchidas. Ele também contém informações de layout para exibir campos de metadados de uma forma fácil de usar. As propriedades de metadados incluem título, descrição, tipos MIME, tags e muito mais. Você pode usar o editor [!UICONTROL Schema de metadados Forms] para modificar os schemas existentes ou adicionar schemas de metadados personalizados.
 
 Para visualização e edição da página de propriedades de um ativo, siga estas etapas:
 
-1. Clique na opção Propriedades **[!UICONTROL da]** Visualização nas ações rápidas no mosaico do ativo na visualização do cartão. Como alternativa, selecione um ativo e clique em **[!UICONTROL Propriedades]** das propriedades ![de](assets/do-not-localize/info-circle-icon.png) visualização na barra de ferramentas.
+1. Clique na opção **[!UICONTROL Propriedades da Visualização]** nas ações rápidas no bloco de ativos na visualização do cartão. Como alternativa, selecione um ativo e clique em **[!UICONTROL Propriedades]** ![propriedades de visualização](assets/do-not-localize/info-circle-icon.png) na barra de ferramentas.
 
-1. É possível editar as várias propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o [!UICONTROL Tipo] de ativo na guia [!UICONTROL Básico] da página de propriedades.
+1. É possível editar as várias propriedades de metadados editáveis nas guias disponíveis. No entanto, não é possível modificar o ativo [!UICONTROL Type] na guia [!UICONTROL Basic] da página de propriedades.
 
    ![Guia Básica de Propriedades do ativo, na qual o tipo de ativo não pode ser alterado](assets/asset-properties-basic-tab.png)
 
-*Figura: Guia Básico em[!UICONTROL Propriedades]do ativo.*
+*Figura: Guia Básico em  [!UICONTROL Propriedades] do ativo.*
 
-Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Editar Schema de metadados Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) para obter mais informações. Se você modificar o schema de metadados de um tipo MIME, o layout da página de propriedades dos ativos e todos os subtipos serão modificados. Por exemplo, modificar um schema jpeg em `default/image` modifica somente o layout de metadados (propriedades do ativo) para ativos com tipo MIME `image/jpeg`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
+Para modificar o tipo MIME de um ativo, use um formulário de schema de metadados personalizado ou modifique um formulário existente. Consulte [Editar Schema de Metadados Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) para obter mais informações. Se você modificar o schema de metadados de um tipo MIME, o layout da página de propriedades dos ativos e todos os subtipos serão modificados. Por exemplo, modificar um schema jpeg em `default/image` modifica apenas o layout de metadados (propriedades do ativo) para ativos com o tipo MIME `image/jpeg`. No entanto, se você editar o schema padrão, suas alterações modificarão o layout de metadados de todos os tipos de ativos.
 
-## Metadata Schema forms {#default-metadata-schema-forms}
+## Formulários de Schema de metadados {#default-metadata-schema-forms}
 
-Para visualização de uma lista de formulários ou modelos, na [!DNL Experience Manager] interface, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **** de metadados.
+Para visualização de uma lista de formulários ou modelos, na interface [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Schemas de metadados]**.
 
 [!DNL Experience Manager] fornece os seguintes modelos de formulário de Schema de metadados.
 
 | Modelos |  | Descrição |
 |---|---|---|
 | [!UICONTROL default] |  | O formulário de schema de metadados base para ativos. |
-|  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão] : |  |
+|  | Os seguintes formulários filho herdam as propriedades do formulário [!UICONTROL padrão]: |  |
 |  | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulário de schema para vídeos do Dynamic Media. |
-|  | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de schema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> O formulário de [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de schema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de schema para os ativos com subtipo TIFF.</li></ul> |
+|  | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de schema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> A   forma de imagem tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de schema para ativos com subtipo  [!UICONTROL jpeg].</li> <li>[!UICONTROL TIFF]: Formulário de schema para os ativos com subtipo TIFF.</li></ul> |
 |  | <ul><li>[!UICONTROL aplicativo]</li></ul> | Formulário de schema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Formulário de schema para ativos com subtipo PDF. |
 |  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de schema para ativos de vídeo com tipo MIME, como `video/avi` e `video/mp4`. |
 | [!UICONTROL collection] |  | Formulário de schema para coleções. |
-| [!UICONTROL contentfragment] |  | [Formulário de schema para fragmentos](/help/sites-developing/customizing-content-fragments.md)de conteúdo. |
-| [!UICONTROL formulários] |  | Este formulário de schema está relacionado ao [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL contentfragment] |  | [Formulário de schema para fragmentos](/help/sites-developing/customizing-content-fragments.md) de conteúdo. |
+| [!UICONTROL formulários] |  | Este formulário de schema está relacionado a [Adobe Experience Manager Forms](/help/forms/home.md). |
 | [!UICONTROL ugc_contentfragment] |  | Formulário de schema para itens de conteúdo e ativos gerados pelo usuário integrados ao Experience Manager a partir de redes sociais. |
 
 >[!NOTE]
@@ -60,7 +60,7 @@ Para adicionar um formulário de schema de metadados, siga estas etapas:
 
    >[!NOTE]
    >
-   >Um símbolo de cadeado é exibido com os modelos não editados. Se você personalizar um modelo, ele não será bloqueado ![bloqueado](assets/do-not-localize/lock_closed_icon.svg).
+   >Um símbolo de cadeado é exibido com os modelos não editados. Se você personalizar um modelo, ele não será bloqueado ![bloqueio fechado](assets/do-not-localize/lock_closed_icon.svg).
 
 1. Na caixa de diálogo, forneça o título do formulário de schema e clique em **[!UICONTROL Criar]** para concluir o processo de criação do formulário.
 
@@ -68,19 +68,19 @@ Para adicionar um formulário de schema de metadados, siga estas etapas:
 
 É possível editar um formulário de schema de metadados recém-adicionado ou existente. O formulário de schema de metadados inclui guias e itens de formulário dentro de guias. Você pode mapear/configurar esses itens de formulário em um campo dentro de um nó de metadados no repositório CRX. É possível adicionar guias ou itens de formulário ao formulário de schema de metadados. As guias e os itens de formulário derivados do pai estão no estado bloqueado. Não é possível alterá-los no nível da criança.
 
-1. Na página Forms [!UICONTROL do Schema de] metadados, selecione um formulário e clique em **[!UICONTROL Editar]** na barra de ferramentas.
+1. Na página [!UICONTROL Forms] Schema de metadados, selecione um formulário e clique em **[!UICONTROL Editar]** na barra de ferramentas.
 
-1. Na página Editor **[!UICONTROL de formulário de Schema de]** metadados, personalize o formulário de metadados. Arraste os componentes necessários da guia **[!UICONTROL Criar formulário]** para uma das guias.
+1. Na página **[!UICONTROL Editor de formulário de Schema de metadados]**, personalize o formulário de metadados. Arraste os componentes necessários da guia **[!UICONTROL Criar formulário]** para uma das guias.
 
    ![Editor de Schemas de metadados para personalizar a página Propriedades do ativo](assets/metadata-schema-editor.png)
 
-   *Figura: Uma página do Editor[!UICONTROL de formulário de Schema de]metadados com guias disponíveis.*
+   *Figura: Uma página  [!UICONTROL do ] Editor de formulário de Schema de metadados com guias disponíveis.*
 
-1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Configurações]** .
+1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Configurações]**.
 
-### Componentes na guia [!UICONTROL Criar formulário] {#components-within-the-build-form-tab}
+### Componentes na guia [!UICONTROL Formulário de compilação] {#components-within-the-build-form-tab}
 
-A guia **[!UICONTROL Criar formulário]** lista itens de formulário usados no formulário do schema. A guia **[!UICONTROL Configurações]** fornece os atributos de cada item selecionado na guia **[!UICONTROL Criar formulário]** . A tabela a seguir lista os itens de formulário disponíveis na guia **[!UICONTROL Criar formulário]** :
+A guia **[!UICONTROL Criar formulário]** lista itens de formulário que você usa no formulário de schema. A guia **[!UICONTROL Configurações]** fornece os atributos de cada item selecionado na guia **[!UICONTROL Criar formulário]**. A tabela a seguir lista os itens de formulário disponíveis na guia **[!UICONTROL Criar formulário]**:
 
 | Nome do componente | Descrição |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
@@ -101,11 +101,11 @@ A guia **[!UICONTROL Criar formulário]** lista itens de formulário usados no f
 
 #### Editar o componente de metadados {#edit-the-metadata-component}
 
-Para editar as propriedades de um componente de metadados no formulário, clique no componente para editar todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Configurações]** .
+Para editar as propriedades de um componente de metadados no formulário, clique no componente para editar todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Configurações]**.
 
 **Rótulo** do campo: O nome da propriedade de metadados que é exibida na página de propriedades do ativo.
 
-**Mapear para propriedade**: Essa propriedade especifica o caminho relativo ou o nome do nó do ativo no qual ele é salvo no repositório CRX. Ele é start `./` para indicar que o caminho está sob o nó do ativo.
+**Mapear para propriedade**: Essa propriedade especifica o caminho relativo ou o nome do nó do ativo no qual ele é salvo no repositório CRX. Ele é start com `./` para indicar que o caminho está sob o nó do ativo.
 
 Estes são os valores válidos para esta propriedade:
 
@@ -123,11 +123,11 @@ Para garantir que o componente seja exibido corretamente no formulário de schem
 * **Opções**: Use essa propriedade para especificar opções em uma lista.
 * **Descrição** : Use essa propriedade para adicionar uma breve descrição para o componente de metadados.
 * **Classe**: Classe de objeto à qual a propriedade está associada.
-* **Excluir**: Clique em [!UICONTROL Excluir] para excluir um componente do formulário de schema.
+* **Excluir**: Clique em   Excluir para excluir um componente do formulário de schema.
 
 >[!NOTE]
 >
->O componente Campo  oculto não inclui esses atributos. Em vez disso, inclui propriedades, como Nome dos atributos, Valor, Rótulo do campo e Descrição. Os valores do componente Campo oculto são enviados como um parâmetro POST sempre que o ativo é salvo. Ele não é salvo como metadados para o ativo.
+>O componente [!UICONTROL Campo oculto] não inclui esses atributos. Em vez disso, inclui propriedades, como Nome dos atributos, Valor, Rótulo do campo e Descrição. Os valores do componente Campo oculto são enviados como um parâmetro POST sempre que o ativo é salvo. Ele não é salvo como metadados para o ativo.
 
 Se você selecionar a opção **[!UICONTROL Obrigatório]**, poderá pesquisar por ativos sem metadados obrigatórios. No painel **[!UICONTROL Filtros]**, expanda o predicado **[!UICONTROL Validação de metadados]** e selecione a opção **[!UICONTROL Inválido]**. Os resultados de pesquisa exibem ativos que não têm metadados obrigatórios configurados por meio do formulário de esquema.
 
@@ -149,11 +149,11 @@ Em vez de especificar propriedades para as opções na guia **[!UICONTROL Config
 
 #### Adicionar ou excluir uma guia no formulário de schema {#adding-deleting-a-tab-in-the-schema-form}
 
-O editor de esquema permite adicionar ou excluir uma guia. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
+O editor de esquema permite adicionar ou excluir uma guia. O formulário de schema padrão inclui as guias **[!UICONTROL Basic]**, **[!UICONTROL Advanced]**, **[!UICONTROL IPTC]** e **[!UICONTROL IPTC Extension]**.
 
 ![Guias padrão no formulário Schema de metadados](assets/metadata-schema-form-tabs.png)
 
-Clique em `+` para adicionar uma guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Configurações]** . Clique `X` para excluir uma guia.
+Clique em `+` para adicionar uma guia em um formulário de schema. Por padrão, a nova guia tem o nome `Unnamed-1`. É possível modificar o nome na guia **[!UICONTROL Settings]**. Clique em `X` para excluir uma guia.
 
 ![Adicionar ou excluir uma guia usando o Editor de Schemas de metadados](assets/metadata-schema-form-new-tab.png)
 
@@ -185,26 +185,26 @@ Considere um cenário em que você deseja exibir metadados em cascata com base n
 
 Independentemente do tipo de ativo escolhido, exiba as informações de direitos autorais como um campo obrigatório.
 
-1. Na [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **** de metadados.
-1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
+1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Schemas de metadados]**.
+1. Na página **[!UICONTROL Forms]** do Schema, selecione um formulário de schema e clique em **[!UICONTROL Editar]** na barra de ferramentas para editar o schema.
 
    ![select_form](assets/select_form.png)
 
-1. (Opcional) No editor de schemas de metadados, crie um novo campo para condicionalizar. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Configurações]** .
+1. (Opcional) No editor de schemas de metadados, crie um novo campo para condicionalizar. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Settings]**.
 
-   Para criar uma nova guia, clique `+` para adicionar uma guia e, em seguida, adicionar um campo de metadados.
+   Para criar uma nova guia, clique em `+` para adicionar uma guia e, em seguida, adicionar um campo de metadados.
 
    ![add_tab](assets/add_tab.png)
 
-1. Adicionar um campo Suspenso para o tipo de ativo. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Configurações]** . Adicione uma descrição opcional.
+1. Adicionar um campo Suspenso para o tipo de ativo. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Settings]**. Adicione uma descrição opcional.
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. Os pares de valores-chave são as opções fornecidas a um usuário de formulário. Você pode fornecer os pares de valor chave manualmente ou de um arquivo JSON.
 
-   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]** e clique em **[!UICONTROL Adicionar escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos Vídeo, PDF, Word e Imagem.
+   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar Manualmente]** e clique em **[!UICONTROL Adicionar Escolha]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos Vídeo, PDF, Word e Imagem.
 
-   * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho]** JSON e forneça o caminho do arquivo JSON. [!DNL Experience Manager] busca os pares de valores chave em tempo real quando o formulário é apresentado ao usuário.
+   * Para obter os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar pelo caminho JSON]** e forneça o caminho do arquivo JSON. [!DNL Experience Manager] busca os pares de valores chave em tempo real quando o formulário é apresentado ao usuário.
 
    Ambas as opções são mutuamente exclusivas. Não é possível importar as opções de um arquivo JSON e editá-las manualmente.
 
@@ -224,12 +224,12 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    ![video_dependence_fields](assets/video_dependent_fields.png)
 
-1. Para criar uma dependência entre o campo de tipo de ativo e outros campos, escolha o campo dependente e abra a guia **[!UICONTROL Regras]** .
+1. Para criar uma dependência entre o campo de tipo de ativo e outros campos, escolha o campo dependente e abra a guia **[!UICONTROL Regras]**.
 
    ![select_depenentfield](assets/select_dependentfield.png)
 
-1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
-1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Click **[!UICONTROL Done]** to save the changes.
+1. Em **[!UICONTROL Requisito]**, escolha a opção **[!UICONTROL Obrigatório, com base na nova regra]**.
+1. Clique em **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Clique em **[!UICONTROL Concluído]** para salvar as alterações.
 
    ![define_rule](assets/define_rule.png)
 
@@ -239,7 +239,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
 1. Em **[!UICONTROL Visibilidade]**, escolha **[!UICONTROL Visível, com base na nova opção de regra]**.
 
-1. Click **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Click **[!UICONTROL Done]** to save the changes.
+1. Clique em **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Clique em **[!UICONTROL Concluído]** para salvar as alterações.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -252,7 +252,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
    >É possível aplicar as condições de **[!UICONTROL Requisito]** e **[!UICONTROL Visibilidade]** independentemente umas das outras.
 
 1. Da mesma forma, crie uma dependência entre o valor Vídeo no campo Tipo de ativo e outros campos, como Codec e Duração.
-1. Repita as etapas para criar dependência entre os ativos do documento (PDF e Word) no campo Tipo [!UICONTROL de] ativo e campos como Contagem [!UICONTROL de] página e [!UICONTROL Autor].
+1. Repita as etapas para criar dependência entre os ativos do documento (PDF e Word) no campo [!UICONTROL Tipo de ativo] e campos como [!UICONTROL Contagem de páginas] e [!UICONTROL Autor].
 1. Clique em **[!UICONTROL Salvar]**. Aplique o schema de metadados a uma pasta.
 
 1. Navegue até a pasta na qual você aplicou o Schema Metadados e abra a página de propriedades de um ativo. Dependendo de sua escolha no campo Tipo de ativo, os campos de metadados em cascata pertinentes são exibidos.
@@ -273,7 +273,7 @@ Para excluir um formulário, selecione-o e clique em Excluir.
 
 >[!NOTE]
 >
->* Depois que você excluir alterações personalizadas em um formulário padrão, o bloqueio ![fechado](assets/do-not-localize/lock_closed_icon.svg) reaparecerá antes do formulário. Indica que o formulário é revertido para seu estado padrão.
+>* Após excluir alterações personalizadas em um formulário padrão, o bloqueio ![lock closed](assets/do-not-localize/lock_closed_icon.svg) reaparece antes do formulário. Indica que o formulário é revertido para seu estado padrão.
 >* Não é possível excluir os formulários de schema de metadados padrão em [!DNL Assets].
 
 
@@ -281,20 +281,20 @@ Para excluir um formulário, selecione-o e clique em Excluir.
 
 [!DNL Experience Manager] fornece formulários padrão para vários tipos MIME prontos para uso. No entanto, você pode adicionar formulários personalizados para ativos de vários tipos MIME.
 
-### Adicionar novos formulários para tipos MIME {#add-new-forms-for-mime-types}
+### Adicionar novos formulários aos tipos MIME {#add-new-forms-for-mime-types}
 
-Crie um formulário no tipo de formulário apropriado. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. O título do formulário de esquema é o nome do subtipo. Nesse caso, o título é `png`.
+Crie um formulário no tipo de formulário apropriado. Por exemplo, para adicionar um modelo para o subtipo `image/png`, crie o formulário sob os formulários &quot;image&quot;. O título do formulário de esquema é o nome do subtipo. Nesse caso, o título é `png`.
 
-#### Usar um modelo de schema existente para vários tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
+#### Use um modelo de schema existente para vários tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
 
-Você pode usar um modelo existente para um tipo MIME diferente. Por exemplo, use o `image/jpeg` formulário para ativos do tipo MIME `image/png`.
+Você pode usar um modelo existente para um tipo MIME diferente. Por exemplo, use o formulário `image/jpeg` para ativos do tipo MIME `image/png`.
 
-Nesse caso, crie um nó `/etc/dam/metadataeditor/mimetypemappings` no repositório CRX. Especifique um nome para o nó e defina as seguintes propriedades:
+Nesse caso, crie um nó em `/etc/dam/metadataeditor/mimetypemappings` no repositório CRX. Especifique um nome para o nó e defina as seguintes propriedades:
 
 | Nome | Descrição | Tipo | Valor |
 |------|-------------|------|-------|
 | `exposedmimetype` | Nome do formulário existente a ser mapeado | `String` | `image/jpeg` |
-| `mimetypes` | Lista de tipos MIME que usam o formulário definido no `exposedmimetype` atributo | `String` | `image/png` |
+| `mimetypes` | Lista de tipos MIME que usam o formulário definido no atributo `exposedmimetype` | `String` | `image/png` |
 
 [!DNL Assets] mapeia os seguintes tipos MIME e formulários de schema:
 
@@ -314,7 +314,7 @@ Nesse caso, crie um nó `/etc/dam/metadataeditor/mimetypemappings` no repositór
 
 ## Conceder acesso a schemas de metadados {#grant-access-to-metadata-schemas}
 
-O recurso Schema de metadados está disponível somente para administradores. No entanto, os administradores podem fornecer acesso a não administradores modificando algumas permissões. Forneça aos usuários não administradores permissões para criar, modificar e excluir na `/conf` pasta.
+O recurso Schema de metadados está disponível somente para administradores. No entanto, os administradores podem fornecer acesso a não administradores modificando algumas permissões. Forneça aos usuários não administradores permissões para criar, modificar e excluir na pasta `/conf`.
 
 ## Aplicar metadados específicos da pasta {#apply-folder-specific-metadata}
 
@@ -328,18 +328,18 @@ A herança de metadados por ativos baseia-se no schema aplicado à pasta de prim
 
 Você pode aplicar um schema diferente na subpasta. Os ativos dentro de uma subpasta herdam o schema de metadados da subpasta imediata. Se nenhum schema ou mesmo schema for aplicado no nível da subpasta, seus ativos herdarão o schema da pasta pai.
 
-1. Na [!DNL Experience Manager] interface, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **** de metadados. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
+1. Na interface [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Schemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Marque a caixa de seleção antes de um formulário, por exemplo, o formulário de metadados padrão, clique em **[!UICONTROL Copiar]** e salve-o como um formulário personalizado. Especifique um nome personalizado para o formulário, por exemplo `my_default`. Como alternativa, é possível criar um formulário personalizado.
 
-1. Na página Forms **[!UICONTROL do Schema de]** metadados, selecione o `my_default` formulário e clique em **[!UICONTROL Editar]**.
+1. Na página **[!UICONTROL Forms]** Schema de metadados, selecione o formulário `my_default` e clique em **[!UICONTROL Editar]**.
 
-1. Na página Editor **[!UICONTROL de Schemas de]** metadados, adicione um campo de texto ao formulário de schema. Por exemplo, adicione um campo com a **[!UICONTROL Categoria]** do rótulo.
+1. Na página **[!UICONTROL Editor de Schemas de metadados]**, adicione um campo de texto ao formulário de schema. Por exemplo, adicione um campo com o rótulo **[!UICONTROL Categoria]**.
 
    ![Campo de texto adicionado ao Editor de formulário de Schema de metadados](assets/text-field-metadata-schema-editor.png)
 
    *Figura: Campo de texto adicionado ao editor de formulário de schema de metadados.*
 
-1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Forms **[!UICONTROL do Schema de]** metadados.
+1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado na página **[!UICONTROL Schema de metadados Forms]**.
 1. Clique em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 
 1. Selecione a pasta na qual aplicar o schema modificado e clique em **[!UICONTROL Aplicar]**.
@@ -358,22 +358,22 @@ Você pode definir campos obrigatórios em nível de pasta, que é imposto aos a
 >
 >Um campo de metadados pode ser definido como obrigatório com base no valor de outro campo. Na visualização do cartão, [!DNL Experience Manager] não exibe a mensagem de aviso sobre metadados ausentes para esses campos de metadados obrigatórios.
 
-1. Na [!DNL Experience Manager] interface, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > Schemas **** de metadados. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
+1. Na interface [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Schemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Salve o formulário de metadados padrão como um formulário personalizado. Por exemplo, salve-o como `my_default`.
 
-1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um campo de **[!UICONTROL Categoria]** e torne-o obrigatório.
+1. Edite o formulário personalizado. Adicione um campo obrigatório. Por exemplo, adicione um campo **[!UICONTROL Categoria]** e torne o campo obrigatório.
 
    ![Adicionar campo obrigatório ao formulário de metadados selecionando Obrigatório na guia Regras no Editor de formulário de Schema de metadados](assets/mandatory-field-metadata-schema-editor.png)
 
    *Figura: Campo obrigatório no editor de formulário de schema de metadados.*
 
-1. Clique em **[!UICONTROL Salvar]**. O formulário modificado é listado na página Forms **[!UICONTROL do Schema de]** metadados. Selecione o formulário e clique em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
+1. Clique em **[!UICONTROL Salvar]**. O formulário modificado está listado na página **[!UICONTROL Schema de metadados Forms]**. Selecione o formulário e clique em **[!UICONTROL Aplicar às pastas]** na barra de ferramentas para aplicar os metadados personalizados a uma pasta.
 
 1. Navegue até a pasta e carregue alguns ativos com metadados ausentes para o campo obrigatório adicionado ao formulário personalizado. Uma mensagem para os metadados ausentes do campo obrigatório é exibida na visualização do cartão do ativo.
 
    ![Mensagem para metadados obrigatórios ausentes na visualização do cartão de ativos ao fazer upload de ativos na pasta](assets/metadata-missing-info-card-view.png)
 
-1. (Opcional) Acesso `https://[aem_server]:[port]/system/console/components/`. Configure e ative `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` o componente que está desativado por padrão. Defina uma frequência na qual [!DNL Experience Manager] verifica a validade dos metadados nos ativos. Essa configuração adiciona uma propriedade `hasValidMetadata` a `jcr:content` ativos. [!DNL Experience Manager] usa essa propriedade para filtrar os ativos inválidos em um resultado de pesquisa. Se você adicionar um ativo após uma verificação, o ativo não será sinalizado `hasValidMetadata` até a próxima verificação programada. Portanto, os ativos não aparecem nos filtros de pesquisa para metadados inválidos até após a próxima verificação programada.
+1. (Opcional) Acesse `https://[aem_server]:[port]/system/console/components/`. Configure e ative o componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está desativado por padrão. Defina uma frequência na qual [!DNL Experience Manager] verifica a validade dos metadados nos ativos. Essa configuração adiciona uma propriedade `hasValidMetadata` a `jcr:content` de ativos. [!DNL Experience Manager] usa essa propriedade para filtrar os ativos inválidos em um resultado de pesquisa. Se você adicionar um ativo após uma verificação, o ativo não será sinalizado com `hasValidMetadata` até a próxima verificação programada. Portanto, os ativos não aparecem nos filtros de pesquisa para metadados inválidos até após a próxima verificação programada.
 
    >[!CAUTION]
    >
