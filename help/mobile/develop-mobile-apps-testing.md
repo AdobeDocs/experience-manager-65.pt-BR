@@ -2,7 +2,7 @@
 title: Testar aplicativos móveis
 seo-title: Testar aplicativos móveis
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +22,17 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Dada a grande variedade de dispositivos no mercado e dispositivos sendo lançados, testar seus aplicativos se tornou extremamente importante. Essa é uma área em que a funcionalidade e a usabilidade podem ganhar baixas revisões em uma app store, mas um único defeito pode resultar na desinstalação do aplicativo. É necessário prestar especial atenção aos seus planos de testes e à garantia da qualidade. O link a seguir aborda muitos dos tópicos que precisam ser abordados em geral, como identificar seu ambiente, definir casos de teste, tipos de testes, pressuposições, envolvimento do cliente etc. Também são discutidas ferramentas para ajudar no esforço de teste. Ferramentas internas, como o [Hobbes](/help/sites-developing/hobbes.md), podem ajudar com testes de interface baseados na Web. [O Dia](/help/sites-developing/tough-day.md) difícil pode estressar suas instâncias com uma carga simulada. Se seu ambiente de teste já tiver experiência com ferramentas de terceiros, como Selenium, elas também podem ser usadas.
+Dada a grande variedade de dispositivos no mercado e dispositivos sendo lançados, testar seus aplicativos se tornou extremamente importante. Essa é uma área em que a funcionalidade e a usabilidade podem ganhar baixas revisões em uma app store, mas um único defeito pode resultar na desinstalação do aplicativo. É necessário prestar especial atenção aos seus planos de testes e à garantia da qualidade. O link a seguir aborda muitos dos tópicos que precisam ser abordados em geral, como identificar seu ambiente, definir casos de teste, tipos de testes, pressuposições, envolvimento do cliente etc. Também são discutidas ferramentas para ajudar no esforço de teste. Ferramentas internas, como [Hobbes](/help/sites-developing/hobbes.md), podem ajudar com testes de interface de usuário baseados na Web. [Duro ](/help/sites-developing/tough-day.md) Daycan enfatize suas instâncias com uma carga simulada. Se seu ambiente de teste já tiver experiência com ferramentas de terceiros, como Selenium, elas também podem ser usadas.
 
 Ao desenvolver um aplicativo para dispositivos móveis, há muitas preocupações novas específicas aos dispositivos que precisam ser abordadas junto com os de testes tradicionais.
 
-* Funcional - Todos os requisitos são atendidos pelo aplicativo?
-* Usabilidade - o aplicativo é fácil de usar e entender pelo cliente?
+* Funcional - Todos os requisitos são atendidos pelo seu aplicativo?
+* Usabilidade - o aplicativo é fácil de usar e entender pelo seu cliente?
 * Desempenho - O que acontece durante um pico no uso? Os elementos do aplicativo, como deslizes e carrosséis, são rápidos e não diminuem a experiência?
 * Falha ou interrupções - o que acontece quando há uma chamada ou notificação recebida enquanto o aplicativo está sendo executado? O que acontece se houver uma interrupção ou desligamento da rede?
-* Instalação e atualizações - Como está a experiência de instalação? Como as atualizações são enviadas?
+* Instalação e atualizações - Como está a experiência de instalação? Como as atualizações são removidas?
 * Técnica - seu aplicativo está consumindo muita energia de um dispositivo?
 * Localização - Todas as áreas no aplicativo são traduzidas?
 * Certificação - seu aplicativo foi certificado? Os clientes podem confiar que ele segue todos os requisitos legais de privacidade de dados?
@@ -44,9 +47,9 @@ Alguns graus de teste automatizado devem ser executados para abranger a variedad
 
 ## Teste manual {#manual-testing}
 
-Além dos testes automatizados, seu aplicativo deve passar por um ciclo de testes manuais. Os clientes que executam o aplicativo em um dispositivo real não podem ser duplicados por um script. Aqui também, você tem muitas opções. Você pode usar uma plataforma, como HóqueiApp, para definir quem tem acesso e coletar feedback. Ou você pode terceirizar todo o processo para um serviço como UTest, ElusiveStars ou Testin. Se você tiver um grupo de testadores internos, mas não houver variação de dispositivos, há serviços em nuvem nos quais você pode executar testes manuais no pool de dispositivos. Um desses serviços que fornece isso é o SauceLabs. Você também pode criar aplicativos remotamente para o PhoneGap Enterprise e instalá-los em dispositivos locais como um nível de teste de aceitação ou demonstração. Consulte o site do [PhoneGap](https://phonegap.com/) para obter os recursos e a documentação mais recentes. Seja qual for a abordagem, os ensaios manuais devem ser efetuados;
+Além dos testes automatizados, seu aplicativo deve passar por um ciclo de testes manuais. Os clientes que executam o aplicativo em um dispositivo real não podem ser duplicados por um script. Aqui também, você tem muitas opções. Você pode usar uma plataforma, como HóqueiApp, para definir quem tem acesso e coletar feedback. Ou você pode terceirizar todo o processo para um serviço como UTest, ElusiveStars ou Testin. Se você tiver um grupo de testadores internos, mas não houver variação de dispositivos, há serviços em nuvem nos quais você pode executar testes manuais no pool de dispositivos. Um desses serviços que fornece isso é o SauceLabs. Você também pode criar aplicativos remotamente para o PhoneGap Enterprise e instalá-los em dispositivos locais como um nível de teste de aceitação ou demonstração. Consulte o site [PhoneGap](https://phonegap.com/) para obter os recursos e a documentação mais recentes. Seja qual for a abordagem, os ensaios manuais devem ser efetuados;
 
-* atingir um grande alvo de testadores,
+* atingir um grande público alvo de testadores.
 * testar em relação a um grande conjunto de dispositivos (idealmente dispositivos reais, mas simuladores/emuladores se não existirem dispositivos reais),
 * fornecer feedback informativo:
 
@@ -73,7 +76,7 @@ Para obter mais informações, consulte [https://www.seleniumhq.org/](https://ww
 **Testdroid**
 
 * Um serviço de teste baseado em nuvem com ganchos de integração contínuos e teste de dispositivo real.
-* Inclui um App Crawler que verifica a compatibilidade do dispositivo, analisa registros, atravessa exibições, captura de tela e monitora o desempenho.
+* Inclui um App Crawler que verifica a compatibilidade do dispositivo, analisa registros, atravessa visualizações, captura de tela e monitora o desempenho.
 
 Para obter mais informações, consulte [https://testdroid.com/](https://testdroid.com/).
 
@@ -87,14 +90,14 @@ Para obter mais informações, consulte [https://appium.io/](https://appium.io/)
 **SauceLabs**
 
 * O SauceLabs fornece testes baseados em nuvem e integra-se à integração contínua.
-* Os testes são executados automaticamente no ambiente de nuvem ou você pode iniciar um dispositivo ou plataforma específica e executar testes manuais para ajudar a depurar problemas.
+* Os testes são executados automaticamente no ambiente em nuvem ou você pode start um dispositivo ou plataforma específica e executar testes manuais para ajudar a depurar problemas.
 
 Para obter mais informações, consulte [https://saucelabs.com/](https://saucelabs.com/).
 
 **AppTestNow**
 
 * Um serviço de terceirização que testará seus aplicativos móveis.
-* Inclui um grande conjunto de dispositivos e oferece uma grande variedade de tipos de testes: desempenho, qualidade, funcionalidade, certificação, localização, consumo de dados etc.
+* Inclui um grande conjunto de dispositivos e oferta de uma grande variedade de tipos de testes: desempenho, qualidade, funcionalidade, certificação, localização, consumo de dados, etc.
 
 Para obter mais informações, consulte [https://www.apptestnow.com](https://www.apptestnow.com/).
 
