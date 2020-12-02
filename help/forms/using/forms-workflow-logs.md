@@ -1,6 +1,6 @@
 ---
-title: Logon em workflows de AEM Forms
-seo-title: Logon em workflows de AEM Forms
+title: Logon em workflows AEM Forms
+seo-title: Logon em workflows AEM Forms
 description: Use logs para depurar problemas de fluxo de trabalho do AEM Forms.
 seo-description: Use logs para depurar problemas de fluxo de trabalho do AEM Forms.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
@@ -18,11 +18,11 @@ ht-degree: 5%
 ---
 
 
-# Logon em workflows de AEM Forms{#logging-in-aem-forms-workflows}
+# Efetuar logon em workflows AEM Forms{#logging-in-aem-forms-workflows}
 
 As etapas do fluxo de trabalho do Forms fornecem registros detalhados para depurar problemas relacionados ao fluxo de trabalho de forma conveniente. Ative o registro de depuração para workflows AEM Forms para visualização dos registros.
 
-Por padrão, todas as informações de registro estão disponíveis no arquivo **error.log** no diretório */crx-repository/logs/* .
+Por padrão, todas as informações de registro estão disponíveis no arquivo **error.log** no diretório */crx-repository/logs/*.
 
 Os registros de depuração para workflows de formulários incluem:
 
@@ -72,26 +72,26 @@ O exemplo a seguir ilustra os registros da etapa do Documento Sign:
 Use os registros para avaliar que:
 
 * Você está usando uma configuração correta do adobe sign.
-* O Adobe Sign Service sai após a criação de um contrato com êxito.
+* O Serviço Adobe Sign sai após a criação de um contrato com êxito.
 * A etapa Assinar Documento sai com uma mensagem de sucesso.
 
 Se houver uma exceção, você poderá visualização o rastreamento completo da pilha para avaliar a causa do erro.
 
-## Ativar o registro de depuração para workflows AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
+## Habilitar registro de depuração para workflows AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
 Execute as seguintes etapas para ativar o registro de depuração para workflows AEM Forms:
 
-1. Vá para o gerenciador de configuração do console da Web do AEM em:
+1. Vá para AEM gerenciador de configuração do console da Web em:
 
    https://&#39;[server]:[port]&#39;/system/console/configMgr
 
-1. Selecione **[!UICONTROL Sling]** > Suporte **** de registro.
-1. Toque em **[!UICONTROL Adicionar novo registrador.]**
-1. Selecione **[!UICONTROL Depurar]** como o Nível **[!UICONTROL de]** log.
+1. Selecione **[!UICONTROL Sling]** > **[!UICONTROL Suporte de registro]**.
+1. Toque em **[!UICONTROL Adicionar novo Registrador.]**
+1. Selecione **[!UICONTROL Depurar]** como **[!UICONTROL Nível de Log]**.
 1. Especifique o local do arquivo de log. O local padrão do arquivo de log é: *logs\error.log*
-1. Especifique o nome do pacote como **com.adobe.granite.workflow.core** na coluna **[!UICONTROL Logger]** .
+1. Especifique o nome do pacote como **com.adobe.granite.workflow.core** na coluna **[!UICONTROL Logger]**.
 
-   A execução dessas etapas permite armazenar os logs de depuração para o pacote **com.adobe.granite.workflow.core** . Toque em **[!UICONTROL +]** e adicione os seguintes nomes de pacote à lista:
+   A execução dessas etapas permite armazenar os logs de depuração para o pacote **com.adobe.granite.workflow.core**. Toque em **[!UICONTROL +]** e adicione os seguintes nomes de pacote à lista:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace
