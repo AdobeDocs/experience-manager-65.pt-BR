@@ -1,8 +1,8 @@
 ---
-title: Orientações para solução de problemas para a área de trabalho do AEM Forms
-seo-title: Orientações para solução de problemas para a área de trabalho do AEM Forms
-description: Ative os logs e use o depurador no navegador para solucionar problemas na área de trabalho do AEM Forms.
-seo-description: Ative os logs e use o depurador no navegador para solucionar problemas na área de trabalho do AEM Forms.
+title: Diretrizes de solução de problemas para a área de trabalho AEM Forms
+seo-title: Diretrizes de solução de problemas para a área de trabalho AEM Forms
+description: Ative os registros e use o depurador no navegador para solucionar problemas na área de trabalho do AEM Forms.
+seo-description: Ative os registros e use o depurador no navegador para solucionar problemas na área de trabalho do AEM Forms.
 uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
 
-# Orientações para solução de problemas para a área de trabalho do AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Diretrizes de solução de problemas para o espaço de trabalho AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
 
-Este artigo aborda como depurar a área de trabalho do AEM Forms ativando o registro em log e usando o depurador em um navegador. Ele também explica alguns problemas comuns que você pode encontrar ao usar a área de trabalho do AEM Forms e suas soluções alternativas.
+Este artigo aborda como depurar a área de trabalho do AEM Forms ativando o registro e usando o depurador em um navegador. Ele também explica alguns problemas comuns que você pode encontrar ao usar a área de trabalho do AEM Forms e suas soluções alternativas.
 
-## Não é possível instalar o pacote de espaço de trabalho do AEM Forms {#unable-to-install-aem-forms-workspace-package}
+## Não é possível instalar o pacote de espaço de trabalho AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Após instalar o patch, abra a área de trabalho do AEM Forms. Se você encontrar o erro Nenhum recurso encontrado, abra o Gerenciador de pacotes CRX e reinstale o `adobe-lc-workspace-pkg-<version>.zip` pacote.
+Após instalar o patch, abra a área de trabalho do AEM Forms. Se você encontrar o erro Nenhum recurso encontrado, abra o Gerenciador de pacotes CRX e reinstale o pacote `adobe-lc-workspace-pkg-<version>.zip`.
 
 Ao instalar o pacote, se você encontrar um erro `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, execute as seguintes etapas:
 
@@ -31,18 +34,18 @@ Ao instalar o pacote, se você encontrar um erro `javax.jcr.nodetype.ConstraintV
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. Vá para o Gerenciador de pacotes. O URL padrão é `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. Pesquise e instale o `adobe-lc-workspace-pkg-[version].zip` pacote.
+1. Pesquise e instale o pacote `adobe-lc-workspace-pkg-[version].zip`.
 1. Reinicie o servidor de aplicativos.
 
-## Registro em log da área de trabalho do AEM Forms {#aem-forms-workspace-nbsp-logging}
+## Log de espaço de trabalho do AEM Forms {#aem-forms-workspace-nbsp-logging}
 
 Você pode gerar registros em vários níveis para permitir a solução ideal de erros. Por exemplo, em um aplicativo complexo, o registro em log no nível do componente ajuda na depuração e solução de problemas de componentes específicos.
 
 Na área de trabalho do AEM Forms:
 
-* Para obter as informações de registro sobre um arquivo de componente específico, anexe `/log/<ComponentFile>/<LogLevel>` o URL e pressione `Enter`. Todas as informações de registro do arquivo de componente no nível de registro especificado são impressas no console.
+* Para obter as informações de registro sobre um arquivo de componente específico, anexe `/log/<ComponentFile>/<LogLevel>` no URL e pressione `Enter`. Todas as informações de registro do arquivo de componente no nível de registro especificado são impressas no console.
 
-* Para obter informações de registro de todos os arquivos de componente, anexe `/log/all/trace` o URL e pressione `Enter`.
+* Para obter informações de registro de todos os arquivos de componente, anexe `/log/all/trace` no URL e pressione `Enter`.
 
 * Formato de registro: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -146,16 +149,16 @@ Na área de trabalho do AEM Forms:
 * AVISO
 * INFO
 * DEPURAR
-* TRAÇO
+* TRACE
 * DESLIGADO
 
-## Informações de depuração para navegadores {#debugging-information-for-browsers}
+## Depuração de informações para navegadores {#debugging-information-for-browsers}
 
 Scripts e estilos podem ser depurados em navegadores diferentes.
 
-* **Depuração no IE**: Para depurar a área de trabalho do AEM Forms no IE, consulte: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Depuração no IE**: Para depurar a área de trabalho do AEM Forms no IE, consulte:  [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Depuração no Chrome**: Para abrir o depurador no Chrome, use o atalho: Ctrl+Shift+I. Para obter mais informações, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Depuração no Chrome**: Para abrir o depurador no Chrome, use o atalho: Ctrl+Shift+I. Para obter mais informações, consulte:  [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
 * **Depuração no Firefox**: Vários complementos estão disponíveis para depurar scripts e estilos no Firefox. Por exemplo, o Firebug é um desses utilitários de depuração ([https://getfirebug.com](https://getfirebug.com)).
 
@@ -170,10 +173,10 @@ Scripts e estilos podem ser depurados em navegadores diferentes.
 1. O formulário SWF ou o Guia não é renderizado no Google Chrome.
 
    1. No Chrome, abra chrome://plugins para visualização dos plug-ins disponíveis.
-   1. Consulte os detalhes do plug-in Adobe Flash® Player.
-   1. Desative o PepperFlash no plug-in do Adobe Flash Player.
+   1. Consulte os detalhes do plug-in do Adobe Flash® Player.
+   1. Desative o PepperFlash no plug-in do Flash Player Adobe.
 
-1. Eu personalizei a área de trabalho do AEM Forms, mas não consigo visualizar as alterações.
+1. Eu personalizei a área de trabalho do AEM Forms, mas não consigo ver as alterações.
 
    Limpe o cache do navegador e acesse a área de trabalho do AEM Forms.
 
@@ -185,10 +188,10 @@ Scripts e estilos podem ser depurados em navegadores diferentes.
 
    Para visualização de anexos, ative pop-ups no navegador.
 
-1. Um usuário está conectado a um aplicativo de formulários. Se o usuário tentar fazer logon na área de trabalho, talvez ele não seja carregado, se o usuário não tiver permissões de área de trabalho.
+1. Um usuário está conectado a um aplicativo de formulários. Se o usuário tentar fazer logon na área de trabalho, ele poderá não ser carregado, se o usuário não tiver permissões de área de trabalho.
 
    Faça logout do outro aplicativo de formulários e, em seguida, faça logon no espaço de trabalho.
 
 1. Formulários HTML, usando Propriedades do processo em seu design, quando renderizados na área de trabalho do AEM Forms, exibem o botão Enviar dentro do formulário.
 
-   Ao projetar formulários, ao usar Propriedades do processo, ele adiciona um botão Enviar dentro do formulário. Quando renderizado como um PDF na área de trabalho do AEM Forms, o botão Enviar não estará visível para o usuário final. Entretanto, ao renderizar como um formulário HTML na área de trabalho do AEM Forms, o botão Enviar fica visível para o usuário final. Clicar nesse botão Enviar dentro do formulário não inicia nenhuma ação. Clicar no botão Enviar na parte inferior da área de trabalho do AEM Forms, fora do formulário, conclui a tarefa.
+   Ao projetar formulários, ao usar Propriedades do processo, ele adiciona um botão Enviar dentro do formulário. Quando renderizado como um PDF na área de trabalho do AEM Forms, o botão Enviar não fica visível para o usuário final. Entretanto, ao renderizar como um formulário HTML na área de trabalho do AEM Forms, o botão Enviar fica visível para o usuário final. Clicar nesse botão Enviar dentro do formulário não inicia nenhuma ação. Clicar no botão Enviar na parte inferior da área de trabalho do AEM Forms, fora do formulário, conclui a tarefa.
