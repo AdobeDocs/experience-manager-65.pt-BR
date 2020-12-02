@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Apresentação do site de referência de Renovação de Seguro Automático do We.Finance{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Cenário do Site de Referência do We.Finance  {#we-finance-reference-site-scenario}
+## Cenário do Site de Referência do We.Finance {#we-finance-reference-site-scenario}
 
 We.Finance site é um site de serviços financeiros projetado para ajudá-lo a conhecer os recursos interativos de comunicação da AEM Forms.
 
@@ -29,16 +29,16 @@ Leia a apresentação detalhada do caso de uso do We.Finance Auto Insurance que 
 
 Sarah Rose é uma cliente existente da We.Finance e comprou uma apólice de seguro de automóveis. Agora é a hora do ano para renovar sua apólice de seguro. Gloria Rios, Agente de Seguros, We.Finance envia um lembrete para Sarah sobre sua renovação de apólice. Sarah segue as instruções fornecidas no email e conclui com êxito o processo.
 
-## Apresentação da aplicação de seguro automático {#auto-insurance-application-walkthrough}
+## Passagem do aplicativo de Seguro Automático {#auto-insurance-application-walkthrough}
 
 O cenário do aplicativo We.Finance AutoInsurance é uma narração visual para o usuário e é baseado em duas pessoas:
 
 * Sarah Rose, uma cliente We.Finance
 * Gloria Rios, Agente de Seguros, We.Finance
 
-### Gloria envia uma comunicação de renovação da apólice de seguro do We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
+### Gloria envia uma comunicação de renovação de apólice de seguro de We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria entra em AEM instância, clica em Renovação **automática de seguro e,** em seguida, clica em **Abrir interface do usuário do agente.** O clique pré-preenche o documento com detalhes da apólice da Sarah Rose. Gloria clica **em Enviar** e uma mensagem é exibida na tela &quot;Enviar iniciado&quot; e em alguns segundos &quot;Enviado com êxito&quot;.
+Gloria entra AEM instância, clica em **Renovação automática de seguro,** e clica em **Abrir interface do agente.** O clique pré-preenche o documento com detalhes da apólice da Sarah Rose. Gloria clica em **Enviar** e uma mensagem é exibida na tela &quot;Envio iniciado&quot; e em alguns segundos &quot;Enviado com êxito&quot;.
 
 Sarah recebe um email com o assunto &quot;Sua renovação do seguro automático&quot;.
 
@@ -46,15 +46,15 @@ Sarah recebe um email com o assunto &quot;Sua renovação do seguro automático&
 
 #### Veja você mesmo {#see-it-yourself}
 
-Vá para **Adobe Experience Manager** > **Forms** > **Forms e Documentos** > **We.Finance** > **Auto Insurance**. Selecione a comunicação **** interativa Renovação automática de seguro e clique em **Abrir interface do usuário** do agente. A comunicação interativa é aberta na interface do usuário do agente. Insira um endereço de email válido para receber o email com o documento de política anexado e clique em Enviar.
+Vá para **Adobe Experience Manager** > **Forms** > **Forms &amp; Documentos** > **We.Finance** > **Seguro Automático**. Selecione a Renovação de Seguro Automático **comunicação interativa** e clique em **Abrir IU do Agente**. A comunicação interativa é aberta na interface do usuário do agente. Insira um endereço de email válido para receber o email com o documento de política anexado e clique em Enviar.
 
-Você pode acessar e revisar a comunicação interativa Renovação automática de seguro diretamente de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+Você pode acessar e revisar a comunicação interativa Renovação de seguro automático diretamente de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
-### Sarah recebe uma comunicação de renovação da apólice de seguro da We.Finance e decide renovar {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
+### Sarah recebe uma comunicação de renovação de apólice de seguro da We.Finance e decide renovar {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
 Sarah recebe um email com um anexo do We.Finance que a lembra que sua apólice de Seguro Automático está prestes a expirar. O anexo é a versão impressa da carta de Seguro Automático.
 
-Sarah clica em **Renove Now (Renovar agora** ) e é direcionada para a versão da Web de sua carta de Seguro Automático. Além desta carta, Sarah encontra o número de dias que faltam para sua política expirar. A página fornece a Sarah uma visão geral básica dos detalhes da Política de Seguro, como Número da Política, Quantia Devida e outras informações, como ofertas de desconto e recompensas por fidelidade. Sarah clica novamente em **Renovar agora** na parte inferior da política.
+Sarah clica em **Renovar agora** e é direcionada para a versão da Web da carta de Seguro Automático. Além desta carta, Sarah encontra o número de dias que faltam para sua política expirar. A página fornece a Sarah uma visão geral básica dos detalhes da Política de Seguro, como Número da Política, Quantia Devida e outras informações, como ofertas de desconto e recompensas por fidelidade. Sarah clica novamente em **Renovar agora** na parte inferior da política.
 
 ![ref1](assets/ref1.png)
 
@@ -66,7 +66,7 @@ O botão Renovar agora no email está vinculado ao aplicativo Renovação de seg
 
 #### Veja você mesmo {#see-it-yourself-1}
 
-Você deve ter recebido um email com um PDF anexado. O PDF é uma versão impressa da carta de Seguro Automático. Clique em **Renovar agora** para acessar a versão da Web da política. Verifique suas informações pessoais e detalhes de políticas e clique em **Renovar agora** , o que leva você para outra Comunicação interativa.
+Você deve ter recebido um email com um PDF anexado. O PDF é uma versão impressa da carta de Seguro Automático. Clique em **Renovar agora** para acessar a versão da Web da política. Verifique suas informações pessoais e detalhes de política e clique em **Renovar agora**, que o leva para outra Comunicação interativa.
 
 O botão **Renovar agora** no email direciona Sarah para a versão da Web da política. Você pode visitar o seguinte URL:
 
@@ -84,15 +84,15 @@ O botão Renovar agora direciona a Sarah para a página de pagamento. A página 
 
 #### Veja você mesmo {#see-it-yourself-2}
 
-Clique em **Renovar agora** para acessar a página Pagamento. Preencha as informações do Cartão de crédito e clique em **Efetuar pagamento**.
+Clique em **Renovar agora** para acessar a página Pagamento. Preencha as informações do Cartão de Crédito e clique em **Efetuar Pagamento**.
 
 Você pode acessar a página de pagamento na instância de criação em
 
 `https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=1`
 
-### Sarah faz o pagamento e completa o processo {#sarah-makes-the-payment-and-completes-the-process}
+### Sarah efetua o pagamento e conclui o processo {#sarah-makes-the-payment-and-completes-the-process}
 
-Sarah preenche os detalhes do Cartão de Crédito e clica em **Fazer Pagamento**.
+Sarah preenche os detalhes do Cartão de Crédito e clica em **Efetuar Pagamento**.
 
 #### Como funciona {#how-it-works-2}
 
