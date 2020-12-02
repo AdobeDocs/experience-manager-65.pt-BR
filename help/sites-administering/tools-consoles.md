@@ -1,8 +1,8 @@
 ---
-title: Consoles de ferramentas
-seo-title: Consoles de ferramentas
-description: Saiba mais sobre os diferentes consoles de ferramentas em todo o AEM.
-seo-description: Saiba mais sobre os diferentes consoles de ferramentas em todo o AEM.
+title: Consoles Ferramentas
+seo-title: Consoles Ferramentas
+description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
+seo-description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,22 +12,25 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d366e9f9a1c44ff4866907e83432ab2b1438bbb3
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 44%
 
 ---
 
 
-# Consoles de ferramentas{#tools-consoles}
+# Consoles Ferramentas{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. Atualmente, existem duas opções do console **Ferramentas** , dependendo da interface do usuário que você está usando:
+Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. No momento, existem dois sabores do console **Ferramentas** dependendo da interface do usuário que você está usando:
 
 * [Ferramentas - IU otimizada ao toque](#tools-touch-optimized-ui)
 * [Ferramentas - IU clássica](#tools-classic-ui)
 
-## Ferramentas - IU otimizada ao toque {#tools-touch-optimized-ui}
+## Ferramentas - Interface otimizada ao toque {#tools-touch-optimized-ui}
 
 >[!NOTE]
 >
->Esses consoles podem ser acessados no Painel [Ferramentas da Navegação](/help/sites-authoring/basic-handling.md#tools-panel)global.
+>Esses consoles podem ser acessados no Painel [Ferramentas da Navegação global](/help/sites-authoring/basic-handling.md#tools-panel).
 
 >[!NOTE]
 >
@@ -160,7 +163,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Verificador de links externos<br /> </td>
   </tr>
   <tr>
-   <td>Assets</td>
+   <td>Ativos</td>
    <td> </td>
   </tr>
   <tr>
@@ -257,7 +260,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>Permissões</td>
+   <td>Permissões </td>
   </tr>
   <tr>
    <td> </td>
@@ -272,16 +275,16 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Configurações do Adobe IMS</td>
   </tr>
   <tr>
-   <td>Serviços em nuvem<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Serviços na nuvem herdados</td>
+   <td>Cloud Services herdados</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Serviços de tradução na nuvem</td>
+   <td>Cloud Services de tradução</td>
   </tr>
   <tr>
    <td> </td>
@@ -348,7 +351,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Selos da comunidade</td>
   </tr>
   <tr>
-   <td>Comércio</td>
+   <td>Commerce</td>
    <td> </td>
   </tr>
   <tr>
@@ -362,7 +365,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
  </tbody>
 </table>
 
-## Ferramentas - IU clássica {#tools-classic-ui}
+## Ferramentas - Interface clássica {#tools-classic-ui}
 
 <table>
  <tbody>
@@ -372,7 +375,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Centro de controle MSM</td>
-   <td>Ponto centralizado para gerenciar vários sites.</td>
+   <td>Ponto centralizado para gerenciar seus vários sites.</td>
   </tr>
   <tr>
    <td>Configurações de contexto do cliente<br /> </td>
@@ -380,7 +383,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Configurações dos serviços em nuvem<br /> </td>
-   <td>Mantém configurações relacionadas à integração com a Adobe Marketing Cloud.</td>
+   <td>Mantém configurações relacionadas à integração com o Adobe Marketing Cloud.</td>
   </tr>
   <tr>
    <td>Configurações da nuvem<br /> </td>
@@ -408,7 +411,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Envio de formulário</td>
-   <td>Contém a lista de envios de formulário recebidos.</td>
+   <td>Retém a lista de envios de formulário recebidos.</td>
   </tr>
   <tr>
    <td>Importadores </td>
@@ -424,15 +427,15 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Pacotes</td>
-   <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para o AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes do CRX.</td>
+   <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes do CRX.</td>
   </tr>
   <tr>
    <td>Replicação - Agentes de Replicação</td>
-   <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar comentários do usuário do ambiente de publicação ao autor.</td>
+   <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar comentários do usuário do ambiente de publicação para o autor.</td>
   </tr>
   <tr>
    <td>Relatórios</td>
-   <td>O AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva seus próprios relatórios.</td>
+   <td>AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva seus próprios relatórios.</td>
   </tr>
   <tr>
    <td>Scaffolding da página padrão </td>
@@ -440,11 +443,11 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Segurança - Configuração de autoatendimento </td>
-   <td>Permite configurar os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirmam uma senha que foi redefinida.</td>
+   <td>Permite que você configure os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirme uma senha que foi redefinida.</td>
   </tr>
   <tr>
    <td>Segmentação</td>
-   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Compreender essas metas e atender às expectativas é um fator importante para o sucesso do marketing online. Segmentation helps to achieve this by analyzing and characterizing a visitor's details.<br /> </td>
+   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Compreender essas metas e atender às expectativas é um fator importante para o sucesso do marketing online. A segmentação ajuda a alcançar isso ao analisar e caracterizar os detalhes de um visitante.<br /> </td>
   </tr>
   <tr>
    <td>inquilinos</td>
@@ -460,7 +463,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Fluxo de trabalho</td>
-   <td>Os fluxos de trabalho controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td>
+   <td>Os workflows controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td>
   </tr>
  </tbody>
 </table>
