@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Ao editar páginas no AEM, vários [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) estão disponíveis, incluindo o modo Desenvolvedor. Isso abre um painel lateral com várias guias que fornecem ao desenvolvedor informações sobre a página atual. As três guias são:
 
-* **[Componentes](#components)**para exibir informações sobre a estrutura e o desempenho.
-* **[Testes](#tests)**para executar testes e analisar os resultados.
-* **[Erros](#errors)**para ver qualquer problema que ocorresse.
+* **[](#components)** Componentes para exibir informações sobre estrutura e desempenho.
+* **[](#tests)** Testes para executar testes e analisar os resultados.
+* **[Erros](#errors)** para ver qualquer problema ocorrendo.
 
 Isso ajuda um desenvolvedor a:
 
@@ -43,7 +43,7 @@ Isso ajuda um desenvolvedor a:
    >
    >   
    * Isso ocorre quando a largura é inferior a 1024px.
->* Está disponível somente para usuários que são membros do `administrators` grupo.
+>* Está disponível somente para usuários que sejam membros do grupo `administrators`.
 
 
 >[!CAUTION]
@@ -63,14 +63,14 @@ Deve ser desativado novamente após a utilização.
 >
 >Consulte:
 >
->* Artigo da Base de conhecimento, [Solução de problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)do AEM TouchUI, para obter mais dicas e ferramentas.
->* Sessão do AEM Gems sobre o Modo [de desenvolvedor do](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)AEM 6.0.
+>* Artigo da Base de conhecimento, [Solução de problemas AEM TouchUI problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
+>* AEM sessão Gems sobre [AEM 6.0 Developer Mode](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 >
 
 
 
-## Abrindo o modo Desenvolvedor {#opening-developer-mode}
+## Abrindo o modo de desenvolvedor {#opening-developer-mode}
 
 O modo Desenvolvedor é implementado como um painel lateral para o editor de páginas. Para abrir o painel, selecione **Desenvolvedor** no seletor de modo na barra de ferramentas do editor de páginas:
 
@@ -78,9 +78,9 @@ O modo Desenvolvedor é implementado como um painel lateral para o editor de pá
 
 O painel é dividido em duas guias:
 
-* **[Componentes](/help/sites-developing/developer-mode.md#components)**- mostra uma árvore de componentes, semelhante à árvore[de](/help/sites-authoring/author-environment-tools.md#content-tree)conteúdo para autores
+* **[Componentes](/help/sites-developing/developer-mode.md#components)**  - mostra uma árvore de componentes, semelhante à árvore de  [conteúdo ](/help/sites-authoring/author-environment-tools.md#content-tree) dos autores
 
-* **[Erros](/help/sites-developing/developer-mode.md#errors)**- Quando ocorrem problemas, os detalhes são mostrados para cada componente.
+* **[Erros](/help/sites-developing/developer-mode.md#errors)**  - Quando ocorrem problemas, os detalhes são mostrados para cada componente.
 
 ### Componentes {#components}
 
@@ -107,7 +107,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-* **Detalhes** da Visualização: um link para uma lista que mostra:
+* **Detalhes** da visualização: um link para uma lista que mostra:
 
    * todos os scripts de componente usados para renderizar o componente.
    * o caminho do conteúdo do repositório para esse componente específico.
@@ -127,18 +127,18 @@ Cada entrada de componente pode mostrar (por exemplo):
 
 >[!CAUTION]
 >
->Alguns links apontam para scripts em `/libs`. No entanto, esses itens são apenas para referência, você não **deve editar nada em** `/libs`, pois as alterações feitas podem ser perdidas. Isso se deve ao fato de essa ramificação estar sujeita a alterações sempre que você atualizar ou aplicar um hotfix/pacote de recursos. Quaisquer alterações necessárias devem ser feitas em `/apps`, consulte [Sobreposições e substituições](/help/sites-developing/overlays.md).
+>Alguns links apontam para scripts em `/libs`. No entanto, esses itens são apenas para referência, você **não deve** editar nada em `/libs`, já que qualquer alteração feita pode ser perdida. Isso se deve ao fato de essa ramificação estar sujeita a alterações sempre que você atualizar ou aplicar um hotfix/pacote de recursos. Quaisquer alterações necessárias devem ser feitas em `/apps`, consulte [Sobreposições e Sobreposições](/help/sites-developing/overlays.md).
 
 ### Erros {#errors}
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-Esperamos que a guia **Erros** esteja sempre vazia (como acima), mas quando ocorrerem problemas, os detalhes a seguir são mostrados para cada componente:
+Esperamos que a guia **Errors** esteja sempre vazia (como acima), mas quando ocorrerem problemas, os detalhes a seguir são mostrados para cada componente:
 
-* Um aviso se o componente gravar uma entrada no registro de erros, juntamente com detalhes do erro e links diretos para o código apropriado no CRXDE Lite.
+* Um aviso se o componente gravar uma entrada no registro de erros, juntamente com detalhes do erro e links diretos para o código apropriado dentro do CRXDE Lite.
 * Um aviso se o componente abrir uma sessão de administrador.
 
-Por exemplo, em uma situação em que um método indefinido é chamado, o erro resultante será mostrado na guia **Erros** :
+Por exemplo, em uma situação em que um método indefinido é chamado, o erro resultante será mostrado na guia **Errors**:
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
