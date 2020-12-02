@@ -17,7 +17,7 @@ ht-degree: 11%
 # Guia do usuário do AEM 6.5 Mobile {#mobile}
 
 + [Visão geral do Guia do usuário móvel](home.md)
-+ Introduction to AEM Mobile {#introduction}
++ Introdução ao AEM Mobile {#introduction}
    + [Introdução ao AEM Mobile](getting-started-aem-mobile.md)
    + [AEM Mobile sob demanda](getting-started-aem-mobile-on-demand.md)
    + [Aplicativos móveis](mobile-apps.md)
@@ -34,7 +34,7 @@ ht-degree: 11%
    + [Upload de recursos compartilhados](mobile-on-demand-shared-resources.md)
    + [Configuração na nuvem](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gerenciamento de banners](mobile-on-demand-managing-banners.md)
-+ Desenvolvimento de aplicativos de serviços sob demanda {#developing}
++ Desenvolvimento do aplicativo de serviços sob demanda {#developing}
    + [AEM Mobile sob demanda](aem-mobile-on-demand.md)
    + [Modelos e componentes do aplicativo](app-templates-and-components1.md)
    + [Propriedades e nós do conteúdo](content-properties.md)
@@ -66,7 +66,7 @@ ht-degree: 11%
    + [Criação de aplicativos móveis](phonegap-authoring-apps.md)
    + [Gerenciar bloco de aplicativos](phonegap-app-details-tile.md)
    + [Personalização de conteúdo do AEM Mobile](phonegap-aem-mobile-content-personalization.md)
-+ Desenvolvimento da Adobe PhoneGap Enterprise {#developphonegap}
++ Desenvolvimento do Adobe PhoneGap Enterprise {#developphonegap}
    + [PhoneGap](developing-in-phonegap.md)
    + [Criação de aplicativos móveis](building-app-mobile-phonegap.md)
    + [Notificações push](phonegap-push-notifications.md)
