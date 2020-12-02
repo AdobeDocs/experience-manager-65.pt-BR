@@ -1,6 +1,6 @@
 ---
-title: Iniciar um novo processo com dados de processo existentes na área de trabalho do AEM Forms
-seo-title: Iniciar um novo processo com dados de processo existentes na área de trabalho do AEM Forms
+title: Iniciando um novo processo com dados de processo existentes na área de trabalho do AEM Forms
+seo-title: Iniciando um novo processo com dados de processo existentes na área de trabalho do AEM Forms
 description: Veja como você pode iniciar um novo processo com dados de processo existentes na área de trabalho do AEM Forms.
 seo-description: Veja como você pode iniciar um novo processo com dados de processo existentes na área de trabalho do AEM Forms.
 uuid: 4cb96d7f-483b-4db4-bea1-57948931423d
@@ -11,6 +11,9 @@ discoiquuid: cbc5af90-5d51-4fdb-ac72-eea91137975d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 2%
 
 ---
 
@@ -23,12 +26,13 @@ Veja a seguir as etapas para iniciar um novo processo a partir dos dados do proc
 
 1. Conclua uma destas ações:
 
-   * Em Rastreamento, clique na instância do processo cujos dados você deseja usar. Na exibição Histórico do processo no painel direito, clique na linha de tarefa que corresponde ao ponto inicial.
+   * Em Rastreamento, clique na instância do processo cujos dados você deseja usar. Na visualização Histórico de processos no painel direito, clique na linha de tarefa que corresponde ao ponto de start.
    * Em Rastreamento, selecione um modelo de pesquisa para exibir uma lista de instâncias de processo. Selecione a instância cujos dados você deseja usar.
-   * Na guia **[!UICONTROL Tarefas]** , selecione a tarefa. Clique na guia **[!UICONTROL Histórico]** e selecione a tarefa que iniciou a instância do processo.
-   ![Selecionar a tarefa](assets/start3_new.png) ![Selecionar a tarefa](assets/start1_new.png)
+   * Na guia **[!UICONTROL Para fazer]**, selecione a tarefa. Clique na guia **[!UICONTROL Histórico]** e selecione a tarefa que iniciou a instância do processo.
 
-1. Na barra de ferramentas da ação Tarefa, clique em **[!UICONTROL Iniciar]**. Um Formulário adaptável para a nova instância do processo é exibido com dados pré-preenchidos.
+   ![Selecione a ](assets/start3_new.png) ![tarefaSelecione a tarefa](assets/start1_new.png)
+
+1. Na barra de ferramentas de ação de Tarefa, clique em **[!UICONTROL Start]**. Um Formulário adaptável para a nova instância do processo é exibido com dados pré-preenchidos.
 
 1. Atualize os dados conforme necessário e clique em **[!UICONTROL Concluir]** ou em um botão apropriado no formulário.
 
