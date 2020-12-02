@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Limites de contribuição dos membros {#member-contribution-limits}
+# Limites de contribuição do membro {#member-contribution-limits}
 
 ## Visão geral {#overview}
 
@@ -26,11 +26,11 @@ O recurso de limites de contribuição oferece a capacidade de limitar as contri
 
 Quando um membro é limitado, qualquer postagem que exceda o número permitido de contribuições resultará em um alerta de que o limite foi excedido e a postagem é rejeitada. O membro da comunidade pode então ir ao centro de mensagens da comunidade e entrar em contato com um gerente da comunidade que pode remover os limites, se apropriado.
 
-Os limites de contribuição podem ser ativados individualmente no console [](members.md) Membros e/ou configurados para serem automaticamente ativados quando os visitantes do site se tornarem novos membros.
+Os limites de contribuição podem ser ativados individualmente pelo [console Membros](members.md) e/ou configurados para serem automaticamente ativados quando os visitantes do site se tornarem novos membros.
 
 Usando o console Membros, os limites de contribuição podem ser removidos de forma proativa para um membro por um gerente da comunidade a qualquer momento ou removidos de forma reativa quando um membro envia uma mensagem para um gerente da comunidade que faz tal solicitação.
 
-## Configuração de limites de contribuição de conteúdo gerada pelo usuário do AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuração de limites de contribuição de conteúdo gerada pelo usuário AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Esta configuração OSGi:
 
@@ -42,7 +42,7 @@ Para atingir essa configuração do OSGi:
 
 * No editor principal:
 * Faça logon com privilégios de administrador.
-* Acesse o Console [da Web](../../help/sites-deploying/configuring-osgi.md).
+* Acesse o [Web Console](../../help/sites-deploying/configuring-osgi.md).
 
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -53,7 +53,7 @@ Para atingir essa configuração do OSGi:
 
 * **[!UICONTROL Aplicar automaticamente limites de contribuição UGC]**
 
-   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso se reflete no perfil do membro da comunidade e pode ser ativado/desativado no console [de](members.md)membros. Os novos membros com um endereço de email de uma lista de permissões de domínios nunca são restringidos.
+   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso se reflete no perfil do membro da comunidade e pode ser ativado/desativado no console [membros](members.md). Os novos membros com um endereço de email de uma lista de permissões de domínios nunca são restringidos.
 
    O padrão está desmarcado.
 
@@ -73,7 +73,7 @@ Para atingir essa configuração do OSGi:
 
    Uma lista lista de permissões de um ou mais domínios de email. Selecione o ícone + para fazer entradas adicionais.
 
-   Os usuários com endereços de email na lista de permissões de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email nunca `me@mycompany.com` será restringido à publicação.
+   Os usuários com endereços de email na lista de permissões de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email `me@mycompany.com` nunca será restringido à publicação.
 
    O padrão é uma lista de permissões vazia.
 
