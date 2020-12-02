@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '82'
+ht-degree: 2%
 
 ---
 
 
 # Especificar configurações de segurança {#specify-security-settings}
 
-A Saída permite controlar se as entidades externas em entradas XML são resolvidas. Por padrão, eles são resolvidos, mas você pode alterar esse comportamento para aumentar a segurança do seu sistema de formulários AEM.
+A Saída permite controlar se as entidades externas em entradas XML são resolvidas. Por padrão, eles são resolvidos, mas é possível alterar esse comportamento para aumentar a segurança do sistema de formulários AEM.
 
 **Impedir o processamento de arquivos de dados XML que contêm referências a entidades externas**
 
