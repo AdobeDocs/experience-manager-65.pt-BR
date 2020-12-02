@@ -13,9 +13,9 @@ ht-degree: 12%
 
 # Guia do Assets
 
-Este guia cobre todas as [!DNL Experience Manager Assets] tarefas, como criar, gerenciar, fornecer e otimizar ativos digitais.
+Este guia aborda todas as [!DNL Experience Manager Assets] tarefas, como criar, gerenciar, fornecer e otimizar ativos digitais.
 
-## Principais [!DNL Experience Manager] artigos
+## Teclas [!DNL Experience Manager] artigos
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -42,7 +42,7 @@ Este guia cobre todas as [!DNL Experience Manager Assets] tarefas, como criar, g
 | [Guia do usuário móvel](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com [!DNL Livefyre]. |
 
-## Principais [!DNL Experience Manager] recursos
+## Recursos chave [!DNL Experience Manager]
 
 * [Tutorials de vídeo Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
