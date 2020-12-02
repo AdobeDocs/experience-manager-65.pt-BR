@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -21,14 +24,14 @@ O recurso Apache Sling Discovery fornece uma API Java que permite criar trabalho
 
 Para obter informações sobre como criar topologias de descarga e configurar o consumo de tópicos, consulte [Descarregamento de Tarefas](/help/sites-deploying/offloading.md).
 
-## Manuseio de cargas de trabalho {#handling-job-payloads}
+## Tratamento de cargas de trabalho {#handling-job-payloads}
 
 A estrutura de descarga define duas propriedades de job que você usa para identificar a carga da ordem de produção. Os agentes de replicação de descarga usam essas propriedades para identificar os recursos a serem replicados para as instâncias na topologia:
 
 * `offloading.job.input.payload`: Uma lista separada por vírgulas de caminhos de conteúdo. O conteúdo é replicado para a instância que executa o trabalho.
 * `offloading.job.output.payload`: Uma lista separada por vírgulas de caminhos de conteúdo. Quando a execução da tarefa é concluída, a carga da tarefa é replicada para esses caminhos na instância que criou a tarefa.
 
-Use a `OffloadingJobProperties` enumeração para fazer referência aos nomes das propriedades:
+Use a enumeração `OffloadingJobProperties` para fazer referência aos nomes das propriedades:
 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
@@ -41,7 +44,7 @@ Crie um cliente que chame o método JobManager.addJob para criar um trabalho que
 
 * Tópico: O tópico do trabalho.
 * Nome: (Opcional)
-* Mapa de propriedades: Um `Map<String, Object>` objeto que contém qualquer número de propriedades, como caminhos de carga de entrada e caminhos de carga de saída. Este objeto Map está disponível para o objeto JobConsumer que executa a tarefa.
+* Mapa de propriedades: Um objeto `Map<String, Object>` que contém qualquer número de propriedades, como caminhos de carga de entrada e caminhos de carga de saída. Este objeto Map está disponível para o objeto JobConsumer que executa a tarefa.
 
 O serviço de exemplo a seguir cria uma tarefa para um determinado tópico e caminho de carga de entrada.
 
@@ -91,17 +94,17 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-O log contém a seguinte mensagem quando JobGeneratorImpl.createJob é chamado para o `com/adobe/example/offloading` tópico e a `/content/geometrixx/de/services` carga:
+O log contém a seguinte mensagem quando JobGeneratorImpl.createJob é chamado para o tópico `com/adobe/example/offloading` e a carga `/content/geometrixx/de/services`:
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
 ```
 
-## Desenvolver um consumidor de emprego {#developing-a-job-consumer}
+## Desenvolvendo um consumidor de trabalho {#developing-a-job-consumer}
 
-Para consumir trabalhos, desenvolva um serviço OSGi que implemente a `org.apache.sling.event.jobs.consumer.JobConsumer` interface. Identifique com o tópico a ser consumido usando a `JobConsumer.PROPERTY_TOPICS` propriedade.
+Para consumir trabalhos, desenvolva um serviço OSGi que implemente a interface `org.apache.sling.event.jobs.consumer.JobConsumer`. Identifique com o tópico a ser consumido usando a propriedade `JobConsumer.PROPERTY_TOPICS`.
 
-O exemplo a seguir de implementação JobConsumer é registrado com o `com/adobe/example/offloading` tópico. O consumidor simplesmente define a propriedade Consumed do nó de conteúdo da carga como true.
+O exemplo de implementação JobConsumer a seguir é registrado com o tópico `com/adobe/example/offloading`. O consumidor simplesmente define a propriedade Consumed do nó de conteúdo da carga como true.
 
 ```java
 package com.adobe.example.offloading;
@@ -178,7 +181,7 @@ A propriedade Consumida pode ser observada usando o CRXDE Lite:
 
 ![chlimage_1-25](assets/chlimage_1-25a.png)
 
-## Dependências de Maven {#maven-dependencies}
+## Dependências Maven {#maven-dependencies}
 
 Adicione as seguintes defesas de dependência ao arquivo pom.xml para que o Maven possa resolver as classes relacionadas à descarga.
 
