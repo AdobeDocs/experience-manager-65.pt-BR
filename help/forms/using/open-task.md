@@ -10,15 +10,18 @@ topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
 
-# Abrir uma tarefa {#opening-a-task}
+# Abrindo uma tarefa {#opening-a-task}
 
-Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. Tarefas são etapas no Fluxo de trabalho definido na bancada ou no editor de fluxo de trabalho do AEM.
+Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. As tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho AEM.
 
-Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvar um rascunho](/help/forms/using/save-as-draft.md).
+Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvando um rascunho](/help/forms/using/save-as-draft.md).
 
 **Para abrir uma tarefa**
 
@@ -31,11 +34,11 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 1. Toque na tarefa para abri-la.
 
-   Você pode tocar em Resumo **da** Visualização para visualização de instruções adicionais especificadas no processo do Workbench.
+   Você pode tocar em **Resumo da Visualização** para visualização de instruções adicionais especificadas no processo do Workbench.
 
 **Para abrir um aplicativo**
 
-1. Toque no **aplicativo** na guia **Formulários** .
+1. Toque em **application** na guia **Forms**.
 
    Quando você seleciona um aplicativo, a descrição do aplicativo é exibida abaixo do nome do aplicativo. Após a descrição, as ações/ações do usuário associadas ao aplicativo são exibidas.
 
@@ -44,4 +47,4 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 1. Toque na tarefa para abri-la.
 
-   Você pode tocar em Resumo **da** Visualização para visualização de instruções adicionais especificadas para o aplicativo.
+   Você pode tocar em **Resumo da Visualização** para visualização das instruções adicionais especificadas para o aplicativo.
