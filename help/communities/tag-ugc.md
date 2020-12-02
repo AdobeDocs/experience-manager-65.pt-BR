@@ -44,7 +44,7 @@ Consulte [Administração de tags](../../help/sites-administering/tags.md#taggin
 
 Consulte [Tag Essentials](tag.md) para obter informações sobre desenvolvedores.
 
-Consulte [Usar a Nuvem](tagcloud.md) de tags sociais para adicionar um componente da Nuvem de tags sociais a uma página para facilitar a pesquisa por UGC publicado usando as tags aplicadas.
+Consulte [Usar a Nuvem de tags sociais](tagcloud.md) para adicionar um componente da Nuvem de tags sociais a uma página para facilitar a pesquisa por UGC publicado usando as tags aplicadas.
 
 ### Permissões de tag {#tag-permissions}
 
@@ -52,9 +52,9 @@ As permissões padrão estão definidas para não permitir que namespaces de tag
 
 Como as tags são aplicadas ao UGC no ambiente de publicação, a permissão de leitura precisa ser ativada para membros da comunidade para que possam selecionar as tags a serem aplicadas.
 
-Consulte [Configuração de permissões](../../help/sites-administering/tags.md#setting-tag-permissions)de tag.
+Consulte [Definindo permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Veja a seguir como ele aparece no CRXDE quando um administrador aplica permissões de leitura `/etc/tag/discussions` para o grupo `Community Engage Members`.
+A seguir está como ele aparece no CRXDE quando um administrador aplica permissões de leitura a `/etc/tag/discussions` para o grupo `Community Engage Members`.
 
 ![tag-permissions](assets/tag-permissions.png)
 
