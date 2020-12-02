@@ -49,7 +49,7 @@ Por exemplo, a primeira linha de corpo na tabela a seguir inclui caixa de texto,
 
 ![tipos de célula de linha](assets/row-cell-types.png)
 
-É possível unir duas ou mais células de corpo selecionando as células que deseja mesclar, clicando com o botão direito do mouse e selecionando **Mesclar**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse nela e selecionando **Dividir células**.
+Você pode unir duas ou mais células de corpo selecionando as células que deseja mesclar, clicando com o botão direito do mouse e selecione **Mesclar**. Além disso, você pode dividir uma célula unida clicando com o botão direito do mouse nela e selecionando **Dividir células**.
 
 ### Adicionar, excluir, mover linhas e colunas {#add-delete-move-rows-and-columns}
 
@@ -91,13 +91,13 @@ Para aplicar a classificação nas colunas da tabela, as células da coluna da t
 
 Para ativar a classificação:
 
-1. Selecione a tabela e toque em ![configure_icon](assets/configure_icon.png) (Configurar). Você também pode selecionar a tabela usando o navegador **Conteúdo** no sidekick da Comunicação Interativa.
-1. Selecione **Ativar classificação**.
+1. Selecione a tabela e toque em ![configure_icon](assets/configure_icon.png) (Configurar). Você também pode selecionar a tabela usando o navegador **Content** no sidekick da Comunicação interativa.
+1. Selecione **Ativar Classificação**.
 1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, em cabeçalhos de colunas representam que a classificação foi ativada.
 
    ![Ativar classificação](assets/enable_sorting_new.png)
 
-1. Alterne para o modo de **Pré-visualização** para visualização da saída. A tabela é classificada automaticamente com base na primeira coluna da tabela.
+1. Alterne para o modo **Pré-visualização** para visualização da saída. A tabela é classificada automaticamente com base na primeira coluna da tabela.
 1. Clique no cabeçalho da coluna para classificar os valores com base na coluna.
 
    Um cabeçalho de coluna com uma seta para cima representa que a tabela é classificada com base nessa coluna. Além disso, os valores na coluna são exibidos na ordem crescente.
@@ -106,15 +106,15 @@ Para ativar a classificação:
 
    Da mesma forma, um cabeçalho de coluna com uma seta para baixo representa que os valores na coluna são exibidos na ordem decrescente.
 
-   Você também pode fazer alterações na tabela no modo de **Pré-visualização** e clicar no cabeçalho da coluna novamente para classificar os valores da coluna.
+   Você também pode fazer alterações na tabela no modo **Pré-visualização** e clicar no cabeçalho da coluna novamente para classificar os valores da coluna.
 
 ## Configurar estilo de tabela {#configure}
 
 É possível definir o estilo de uma tabela usando o modo Estilo na barra de ferramentas da página. Execute as seguintes etapas para alternar para o modo de estilo e editar o estilo da tabela
 
-1. Na barra de ferramentas da página, antes da Pré-visualização, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra de ferramentas da página, antes da Pré-visualização, toque ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
 
-1. Na barra lateral, selecione a tabela e toque no botão editar, botão ![editar, botão](assets/edit-button.png).
+1. Na barra lateral, selecione a tabela e toque no botão de edição ![botão de edição](assets/edit-button.png).
 É possível ver as propriedades de estilização na barra lateral.
 
 ![Propriedades de estilo de uma tabela](assets/style-table.png)
@@ -131,7 +131,7 @@ As tabelas fornecem suporte imediato para adicionar ou excluir linhas dinamicame
 1. Na guia Configurações de repetição, especifique as contagens mínima e máxima para limitar o número de linhas na tabela.
 1. Clique em **Concluído**.
 
-No tempo de execução, você verá **+** e *-* botões para adicionar ou excluir uma linha.
+No tempo de execução, você verá os botões **+** e *-* para adicionar ou excluir uma linha.
 
 ![add-delete-lines-dinamicamente](assets/add-delete-rows-dynamically.png)
 
@@ -159,7 +159,7 @@ Embora tabelas e linhas suportem apenas expressões de visibilidade para control
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia Propriedades do painel da caixa de diálogo correspondente do componente Editar. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
 
-Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte Referência da API da biblioteca [JavaScript para formulários](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)adaptáveis.
+Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Layouts móveis {#mobile-layouts}
 
@@ -167,7 +167,7 @@ Tabelas em formulários adaptáveis oferecem experiência inigualável em dispos
 
 Você pode configurar um layout móvel para uma tabela na guia Estilo da caixa de diálogo Editar componente para uma tabela.
 
-### Headers on left {#headers-on-left}
+### Cabeçalhos à esquerda {#headers-on-left}
 
 No layout Cabeçalhos à esquerda, o cabeçalho na tabela é transposto à esquerda com apenas uma célula aparecendo em um cabeçalho. Cada linha neste layout aparece como uma seção distinta. As imagens a seguir comparam uma tabela em um desktop com a tabela em um dispositivo móvel.
 
@@ -210,7 +210,7 @@ Neste exemplo, a propriedade Nome do elemento para:
 * a linha é **Linha1**
 * a célula de corpo na data da Transação é **tableItem1**
 * a célula de corpo em Descrição é **tableItem2**
-* a célula de corpo em Tipo de transação é **tipo**
+* a célula de corpo em Tipo de transação é **type**
 * a célula de corpo em Amount in USD é **tableItem3**
 
 O arquivo XML que contém dados no seguinte formato:
@@ -271,9 +271,9 @@ O arquivo XML que contém dados no seguinte formato:
 </afData>
 ```
 
-No XML de amostra, os dados de uma linha são definidos pelas `<Row1>` tags, que é o nome do elemento da linha na tabela. Na `<Row1>` tag , os dados de cada célula são definidos dentro da tag para seu nome de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`e `<type>`.
+No XML de amostra, os dados de uma linha são definidos pelas tags `<Row1>`, que é o nome do elemento da linha na tabela. Na tag `<Row1>`, os dados de cada célula são definidos dentro da tag para o nome do elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>` e `<type>`.
 
-Para unir esses dados à tabela no tempo de execução, é necessário apontar o formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *https://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados estiver salvo em *C:/myTransactions/bankSummary.xml*, você pode visualização a tabela com dados no seguinte URL:
+Para unir esses dados à tabela no tempo de execução, é necessário apontar o formulário adaptável que contém a tabela para o local XML absoluto com wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *https://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados for salvo em *C:/myTransactions/bankSummary.xml*, você poderá visualização a tabela com dados no seguinte URL:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
