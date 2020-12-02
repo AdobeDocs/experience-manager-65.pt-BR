@@ -96,7 +96,7 @@ Para reverter para uma versão anterior:
 
 1. Selecione **Reverter para esta versão**. A versão selecionada será restaurada e as informações na linha do tempo serão atualizadas.
 
-## Visualização de uma versão   {#previewing-a-version}
+## Visualização de uma versão    {#previewing-a-version}
 
 É possível visualizar uma versão específica:
 
@@ -129,7 +129,7 @@ Para comparar uma versão anterior com a página atual:
 
 1. Selecione **Comparar a atual**. O [diferencial de páginas](/help/sites-authoring/page-diff.md) será aberto e exibirá as diferenças.
 
-## Timewarp   {#timewarp}
+## Timewarp    {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado *publicado* de uma página em ocasiões específicas no passado.
 
