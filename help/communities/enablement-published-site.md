@@ -33,7 +33,7 @@ Comece navegando até o URL exibido ao criar o site, mas no servidor de publica�
 * URL do autor = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * URL de publicação = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Se o home page [padrão foi definido](enablement-create-site.md#changethedefaulthomepage), basta navegar até [http://localhost:4503/](http://localhost:4503/) para iniciar o site.
+Se o home page padrão [estiver definido](enablement-create-site.md#changethedefaulthomepage), basta navegar para [http://localhost:4503/](http://localhost:4503/) iniciar o site.
 
 Ao chegar ao site publicado pela primeira vez, o visitante do site normalmente não estaria conectado e seria anônimo.
 
@@ -41,11 +41,11 @@ Ao chegar ao site publicado pela primeira vez, o visitante do site normalmente n
 
 ![enable-login](assets/enablement-login.png)
 
-## Visitante Anônimo do Site {#anonymous-site-visitor}
+## Visitante de site anônimo {#anonymous-site-visitor}
 
 Um visitante de site anônimo é imediatamente apresentado com a página de logon deste site privado da comunidade de ativação. Observe que não há nenhuma opção para se registrar automaticamente nem fazer login no Facebook ou Twitter.
 
-Observe que este home page mostra quatro itens de menu: `Assignments, Ski Catalog, What's New` e `Discussions`, mas nenhum pode ser acessado sem fazer logon.
+Observe que este home page mostra quatro itens de menu: `Assignments, Ski Catalog, What's New` e `Discussions`, mas nenhum pode ser alcançado sem fazer logon.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Observe que este home page mostra quatro itens de menu: `Assignments, Ski Catalo
 
 ### Impedir acesso anônimo no JCR {#prevent-anonymous-access-on-jcr}
 
-Uma limitação conhecida expõe o conteúdo do site da comunidade a visitantes anônimos por meio de conteúdo jcr e json , embora **[!UICONTROL permita o acesso]** anônimo esteja desabilitado para o conteúdo do site. No entanto, esse comportamento pode ser controlado usando Restrições de Sling como uma solução alternativa.
+Uma limitação conhecida expõe o conteúdo do site da comunidade a visitantes anônimos por meio de conteúdo jcr e json , embora **[!UICONTROL permita acesso anônimo]** esteja desabilitado para o conteúdo do site. No entanto, esse comportamento pode ser controlado usando Restrições de Sling como uma solução alternativa.
 
 Para proteger o conteúdo do site da sua comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json , siga estas etapas:
 
@@ -65,12 +65,12 @@ Para proteger o conteúdo do site da sua comunidade do acesso de usuários anôn
    >
    >Não vá para o site localizado.
 
-1. Ir para Propriedades **[!UICONTROL da]** página.
+1. Vá para **[!UICONTROL Propriedades da página]**.
 
    ![page-properties](assets/page-properties.png)
 
-1. Vá para a guia **[!UICONTROL Avançado]** .
-1. Enable **[!UICONTROL Authentication Requirement]**.
+1. Vá para a guia **[!UICONTROL Avançado]**.
+1. Ative **[!UICONTROL Requisito de autenticação]**.
 
    ![autenticação de site](assets/site-authentication.png)
 
@@ -79,7 +79,7 @@ Para proteger o conteúdo do site da sua comunidade do acesso de usuários anôn
 
 ## Membro inscrito {#enrolled-member}
 
-Essa experiência depende dos usuários `Riley Taylor` e `Sidney Croft` está sendo [criada](enablement-setup.md#publishcreateenablementmembers) e [atribuída](resource.md#settings) ao caminho de aprendizado das *Lições* de Esqui por meio de sua associação ao grupo *Community Ski Class* .
+Esta experiência depende de os usuários `Riley Taylor` e `Sidney Croft` serem [criados](enablement-setup.md#publishcreateenablementmembers) e [atribuídos](resource.md#settings) ao caminho de aprendizagem *Leções de Esqui* através da sua associação ao grupo *Classe de Esqui da Comunidade*.
 
 Logon com
 
@@ -108,13 +108,13 @@ O tipo de Atribuição é indicado por um ícone no canto superior esquerdo do c
 
 ![chlimage_1-435](assets/chlimage_1-435.png)
 
-A seleção de Lições *de* esqui exibirá os dois recursos de ativação referenciados pelo caminho de aprendizado.
+Selecionar *Lições de esqui* exibirá os dois recursos de ativação referenciados pelo caminho de aprendizado.
 
 ![chlimage_1-436](assets/chlimage_1-436.png)
 
-Selecionar a Lição de *Esqui 1* abrirá a página de detalhes do recurso de ativação.
+Selecionar *Lição de esqui 1* abrirá a página de detalhes do recurso de ativação.
 
-Na página de detalhes, o membro pode aprender, [classificar](rating.md) a lição e adicionar [comentários](comments.md). Qualquer atividade de membro será refletida na seção Novidades do site.
+Na página de detalhes, o membro pode aprender [classificar](rating.md) a lição e adicionar [comentários](comments.md). Qualquer atividade de membro será refletida na seção Novidades do site.
 
 As interações com o recurso de ativação serão anotadas na seção Relatório, acessível no ambiente do autor.
 
@@ -122,7 +122,7 @@ As interações com o recurso de ativação serão anotadas na seção Relatóri
 
 ### Catálogo de esqui {#ski-catalog}
 
-A página Catálogo de esqui é o catálogo de recursos de ativação marcados com tags da `Tutorial` namespace. Os dois recursos de Lição *de* esqui são marcados com a `Skiing` tag , de modo que se nenhuma tag diferente `All` ou `Tutorial: Sports / Skiing` estiver selecionada, nada será exibido.
+A página Catálogo de esqui é o catálogo de recursos de ativação marcados com tags da namespace `Tutorial`. Os dois recursos *Lição de esqui* são marcados com a tag `Skiing`, de modo que, se qualquer tag diferente de `All` ou `Tutorial: Sports / Skiing` for selecionada, nada será exibido.
 
 Quando os recursos de ativação não foram atribuídos a um membro, diretamente ou por meio de um caminho de aprendizado, é possível interagir com os recursos de ativação localizados em um catálogo e fornecer feedback por meio de comentários e classificações.
 
@@ -130,9 +130,9 @@ Quando os recursos de ativação não foram atribuídos a um membro, diretamente
 
 ### Debates {#discussions}
 
-Além de classificar e comentar sobre recursos de ativação ([quando habilitados](enablement-create-site.md#step33asettings)), o modelo de site da comunidade a partir do qual `Enablement Tutorial` foi criado inclui a função [do](functions.md#forum-function) fórum (o título é `Discussions)`.
+Além de classificar e comentar sobre recursos de ativação ([quando ativado](enablement-create-site.md#step33asettings)), o modelo de site da comunidade a partir do qual `Enablement Tutorial` foi criado inclui a [função do fórum](functions.md#forum-function) (o título é `Discussions)`.
 
-Selecione o `Discussions`link e poste um tópico.
+Selecione o link `Discussions`e poste um tópico.
 
 Faça logout e login como Sidney Croft (lateral/senha) e responda à pergunta, bem como Siga o tópico.
 
@@ -142,15 +142,15 @@ Observe que, além da moderação em linha, há opções para compartilhar o tó
 
 ### Novidades {#what-s-new}
 
-O item de `What's New` menu é o título, considerando a função [de fluxo de](functions.md#activity-stream-function) atividade na estrutura deste site da comunidade.
+O item de menu `What's New` é o título dado à [função de fluxo de atividade](functions.md#activity-stream-function) na estrutura deste site da comunidade.
 
-Ainda conectado como Sidney, selecione o `What's New` link para mostrar a atividade.
+Ainda conectado como Sidney, selecione o link `What's New` para mostrar a atividade.
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## Membro da Comunidade Confiável {#trusted-community-member}
+## Membro da comunidade confiável {#trusted-community-member}
 
-Essa experiência supõe que ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` as funções de [moderador](enablement-create-site.md#moderation) e contato [de](resource.md#settings)recursos foram atribuídas.
+Essa experiência supõe que ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` recebeu as funções de [moderador](enablement-create-site.md#moderation) e [contato de recursos](resource.md#settings).
 
 Logon com
 
@@ -165,7 +165,7 @@ O home page é identificado pelo primeiro item de menu, Atribuições. Quinn é 
 
 ### Administração {#administration}
 
-O que há é atividade pelos dois alunos, `Riley Taylor` e `Sidney Croft`. Ao selecionar o `Administration` link para acessar o Console de moderação, o Quinn é capaz de usar o console [de moderação em](moderation.md) massa para moderar suas publicações.
+O que há é atividade pelos dois alunos, `Riley Taylor` e `Sidney Croft`. Ao selecionar o link `Administration` para acessar o console de moderação, o Quinn pode usar o [console de moderação em massa](moderation.md) para moderar suas publicações.
 
 Selecionar o ícone do painel lateral alterna para abrir os filtros usados para pesquisar o conteúdo da comunidade.
 
@@ -177,12 +177,12 @@ Passar o mouse sobre um cartão de comentários exibe ações de moderação.
 
 Há duas maneiras de acessar o relatórios nos alunos e os recursos de ativação.
 
-No autor, navegue até **Communities (Comunidades),[Resources console](resources.md)**(Recursos), onde os recursos de ativação são gerenciados e, após selecionar um site da comunidade, é possível gerar relatórios para
+No autor, navegue até **Communities, [Resources console](resources.md)**, onde os recursos de ativação são gerenciados, e depois de selecionar um site da comunidade, é possível gerar relatórios para
 
 * Todos os recursos de ativação e caminhos de aprendizado
 * Um recurso de ativação ou caminho de aprendizado específico
 
-Navegue até **Comunidades, console[](reports.md)** Relatórios e gere relatórios de acordo com:
+Navegue até **Comunidades, [console Relatórios](reports.md)** e gere relatórios de acordo com:
 
 * Atribuições para ativar recursos e caminhos de aprendizado
 * Postagens em um site da comunidade durante um período específico
@@ -204,10 +204,10 @@ Navegue até **Comunidades, console[](reports.md)** Relatórios e gere relatóri
 Com uma certa atividade e interação com os Recursos na publicação, a exibição dos relatórios do autor vale a pena.
 
 * Em autor, faça logon com privilégios administrativos.
-* Navegue do menu principal para **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**.
-* Selecione o `Enablement Tutorial` site.
-* Selecione o `Report` ícone para obter um resumo de todos os Recursos.
-* Selecione um Recurso e, em seguida, o `Report` ícone para um relatório sobre esse Recurso.
+* Navegue do menu principal até **[!UICONTROL Communities]** > **[!UICONTROL Resources]**.
+* Selecione o site `Enablement Tutorial`.
+* Selecione o ícone `Report` para obter um resumo de todos os Recursos.
+* Selecione um Recurso e o ícone `Report` para um relatório sobre esse Recurso.
 
 Observe que provavelmente é muito cedo para mostrar dados da Adobe Analytics, que podem levar de 1 a 12 horas para serem exibidos. No entanto, o relatórios SCORM básico já está disponível.
 
@@ -217,7 +217,7 @@ Observe que provavelmente é muito cedo para mostrar dados da Adobe Analytics, q
 
 #### Relatório do usuário de lições de esqui {#ski-lessons-user-report}
 
-* Selecionar **[!UICONTROL comunidades > Recursos]**
+* Selecione **[!UICONTROL Comunidades > Recursos]**
 
 * Abrir cartão `Enablement Tutorial`
 * Abrir cartão `Ski Lessons`
@@ -230,32 +230,32 @@ Observe que provavelmente é muito cedo para mostrar dados da Adobe Analytics, q
 O console Relatórios permite a geração de relatórios em
 
 * **Atribuições** para qualquer site de comunidade de ativação
-* **Visualizações** para qualquer site da comunidade
-* **Postagens** para qualquer site da comunidade
+* **** Visualizações para qualquer site da comunidade
+* **** Postagens para qualquer site da comunidade
 
 Para relatórios em atribuições:
 
 * Em autor, faça logon com privilégios administrativos.
-* Navegue até **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]** > Relatório **[!UICONTROL de]** atribuições.
+* Navegue até **[!UICONTROL Communities]** > **[!UICONTROL Relatórios]** > **[!UICONTROL Relatório de atribuições]**.
 * Selecione um **[!UICONTROL Site]** no menu suspenso (selecione `Enablement Tutorial`).
 
-* Selecionar **[!UICONTROL grupo]** (selecione `Community Ski Class`)
+* Selecione **[!UICONTROL Grupo]** (selecione `Community Ski Class`)
 
-* Selecionar uma **[!UICONTROL atribuição]** (selecione `Ski Lessons`)
+* Selecione um **[!UICONTROL Atribuição]** (selecione `Ski Lessons`)
 
-* Selecionar **[!UICONTROL Gerar]**
+* Selecione **[!UICONTROL Gerar]**
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
 Para relatórios sobre visualizações:
 
 * Em autor, faça logon com privilégios administrativos.
-* Navegue até **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]** > Relatório **[!UICONTROL de]** Visualizações.
+* Navegue até **[!UICONTROL Communities]** > **[!UICONTROL Relatórios]** > **[!UICONTROL Relatório do Visualização]**.
 * Selecione um **Site** no menu suspenso (selecione `Enablement Tutorial`).
 
-* Selecione Tipo **[!UICONTROL de]** conteúdo (selecione `all`).
+* Selecione **[!UICONTROL Tipo de conteúdo]** (selecione `all`).
 
-* Selecione um intervalo **[!UICONTROL de]** datas (selecione `Last 7 days`).
+* Selecione um **[!UICONTROL intervalo de datas]** (selecione `Last 7 days`).
 
 * Selecione **[!UICONTROL Gerar]**.
 
