@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
 source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 0%
 
 ---
 
@@ -21,21 +24,21 @@ Tally é uma classe abstrata que fornece um método padrão para coletar feedbac
 
 Um componente tally personalizado pode ser criado ao estender a classe tally abstrata.
 
-[O gosto](essentials-liking.md) é uma implementação de uma aliança que é uma forma simples de expressar uma opinião positiva.
+[](essentials-liking.md) Provavelmente, é uma implementação de uma aliança que é uma forma simples de expressar uma opinião positiva.
 
-[Votar](essentials-voting.md) é uma implementação de um aliado que é uma forma simples de expressar uma opinião positiva ou negativa.
+[A ](essentials-voting.md) Votingança é uma implementação do tally que é uma forma simples de expressar uma opinião positiva ou negativa.
 
-[A classificação](rating-basics.md) é uma implementação do tally que usa um sistema de estrelas para expressar uma gama de opiniões de positivas a negativas.
+[A ](rating-basics.md) Ratingis é uma implementação do tally que usa um sistema de estrelas para expressar uma gama de opiniões de positivas a negativas.
 
 A partir do AEM 6.1, o componente de pesquisa não estará mais disponível.
 
-[As revisões](reviews-basics.md) são um componente do quadro SEPA para os cartões que é um híbrido de [comentários](essentials-comments.md) e [classificações](rating-basics.md).
+[A ](reviews-basics.md) Reviews é um componente do SCF que é um híbrido de  [](essentials-comments.md) comentários e  [classificações](rating-basics.md).
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 * [Personalizações do cliente](client-customize.md)
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 * [Tally APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
@@ -43,19 +46,19 @@ A partir do AEM 6.1, o componente de pesquisa não estará mais disponível.
 
 * [Personalizações do servidor](server-customize.md)
 
-### Acessar Conversações Publicadas (UGC) {#accessing-posted-tallies-ugc}
+### Acessar Conversas Publicadas (UGC) {#accessing-posted-tallies-ugc}
 
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
-Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir das comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir AEM Comunidades 6.1, o uso de uma [loja comum](working-with-srp.md) para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos do Armazenamento - Introdução e visão geral de uso do repositório.
-* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração](socialutils.md) SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
+* [Visão geral](srp.md)  do provedor de recursos do armazenamento - Introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com diretrizes de codificação SRP](accessing-ugc-with-srp.md) .
+* [Refatoração](socialutils.md)  do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP.
 
