@@ -1,8 +1,8 @@
 ---
 title: Configuração das configurações de administração segura para AEM Forms no JEE
 seo-title: Configuração das configurações de administração segura para AEM Forms no JEE
-description: Saiba como administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção de AEM Forms no JEE.
-seo-description: Saiba como administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção de AEM Forms no JEE.
+description: Saiba como administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção da AEM Forms no JEE.
+seo-description: Saiba como administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção da AEM Forms no JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 # Configuração das configurações de administração segura para AEM Forms no JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Saiba como administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção de AEM Forms no JEE.
+Saiba como administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são necessários em um ambiente de produção da AEM Forms no JEE.
 
 Geralmente, os desenvolvedores não usam o ambiente de produção para criar e testar seus aplicativos. Portanto, você deve administrar contas de usuário e serviços que, embora obrigatórios em um ambiente de desenvolvimento privado, não são exigidos em um ambiente de produção.
 
-Este artigo descreve os métodos para reduzir a superfície geral do ataque por meio das opções de administração fornecidas pelo AEM Forms no JEE.
+Este artigo descreve os métodos para reduzir a superfície geral do ataque por meio das opções de administração fornecidas pela AEM Forms no JEE.
 
-## Desativar acesso remoto não essencial a serviços {#disabling-non-essential-remote-access-to-services}
+## Desabilitando o acesso remoto não essencial aos serviços {#disabling-non-essential-remote-access-to-services}
 
-Depois que AEM Forms no JEE são instalados e configurados, muitos serviços estão disponíveis para invocação remota no SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, refere-se a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou AMF (Action Message Format) para o servidor de aplicativos.
+Depois que o AEM Forms em JEE é instalado e configurado, muitos serviços estão disponíveis para invocação remota em SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, refere-se a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou Action Message Format (AMF) para o servidor de aplicativos.
 
-Embora os AEM Forms nos serviços JEE exijam que credenciais válidas sejam passadas para um chamador autorizado, você deve permitir somente acesso remoto aos serviços que precisam ser acessados remotamente. Para obter acessibilidade limitada, você deve reduzir o conjunto de serviços acessíveis remotamente ao mínimo possível para um sistema operacional e, em seguida, habilitar a invocação remota para os serviços adicionais de que precisa.
+Embora os serviços AEM Forms em JEE exijam que credenciais válidas sejam passadas para um chamador autorizado, você deve permitir somente acesso remoto aos serviços que precisam ser acessados remotamente. Para obter acessibilidade limitada, você deve reduzir o conjunto de serviços acessíveis remotamente ao mínimo possível para um sistema operacional e, em seguida, habilitar a invocação remota para os serviços adicionais de que precisa.
 
-AEM Forms em serviços JEE sempre precisam de pelo menos acesso SOAP. Normalmente, esses serviços são necessários para uso pelo Workbench, mas também incluem serviços que são chamados pelo aplicativo da Web do Workspace.
+Os serviços AEM Forms em JEE sempre precisam de pelo menos acesso SOAP. Normalmente, esses serviços são necessários para uso pelo Workbench, mas também incluem serviços que são chamados pelo aplicativo da Web do Workspace.
 
 Conclua este procedimento usando a página da Web Aplicativos e Serviços no Console de administração:
 
@@ -43,11 +43,11 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
 
 1. Clique em **Serviços > Aplicativos e serviços > Preferências**.
 1. Defina Preferências para visualização de até 200 serviços e pontos finais na mesma página.
-1. Clique em **Serviços** > **Aplicativos e serviços** > Gerenciamento **de** ponto de extremidade.
+1. Clique em **Serviços** > **Aplicativos e Serviços** > **Endpoint Management**.
 1. Selecione **EJB** na lista **Provedor** e clique em **Filtro**.
 1. Para desativar todos os pontos de extremidade EJB, marque a caixa de seleção ao lado de cada um na lista e clique em **Desativar**.
-1. Clique em **Avançar** e repita a etapa anterior para todos os pontos finais EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos de extremidade.
-1. Selecione **SOAP** na lista **Provedor** e clique em **Filtro**.
+1. Clique em **Próximo** e repita a etapa anterior para todos os pontos finais EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos de extremidade.
+1. Selecione **SOAP** na lista **Fornecedor** e clique em **Filtro**.
 1. Para remover pontos de extremidade SOAP, marque a caixa de seleção ao lado de cada um na lista e clique em **Remover**. Não remova os seguintes pontos finais:
 
    * AuthenticationManagerService
@@ -66,7 +66,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
 
 1. Clique em **Avançar** e repita a etapa anterior para pontos de extremidade SOAP que não estejam na lista acima. Certifique-se de que SOAP esteja listado na coluna Provedor antes de remover pontos de extremidade.
 
-## Desativar o acesso anônimo não essencial aos serviços {#disabling-non-essential-anonymous-access-to-services}
+## Desabilitando o acesso anônimo não essencial aos serviços {#disabling-non-essential-anonymous-access-to-services}
 
 Alguns serviços de servidor de formulários permitem invocação não autenticada (anônima) para algumas operações. Isso significa que uma ou mais operações expostas pelo serviço podem ser chamadas como qualquer usuário autenticado ou como nenhum usuário autenticado.
 
@@ -76,9 +76,9 @@ Alguns serviços de servidor de formulários permitem invocação não autentica
             https://[host name]:'port'/adminui
    ```
 
-1. Clique em **Serviços > Aplicativos e serviços > Gerenciamento** de serviços.
+1. Clique em **Serviços > Aplicativos e serviços > Gerenciamento de serviços**.
 1. Clique no nome do serviço que deseja desativar (por exemplo, AuthenticationManagerService).
-1. Clique na guia **** Segurança, desmarque Acesso **anônimo permitido** e clique em **Salvar**.
+1. Clique na **guia Segurança**, desmarque **Acesso Anônimo Permitido** e clique em **Salvar**.
 1. Complete as etapas 3 e 4 para os seguintes serviços:
 
    * AuthenticationManagerService
@@ -109,7 +109,7 @@ Alguns serviços de servidor de formulários permitem invocação não autentica
 
 ## Alteração do tempo limite global padrão {#changing-the-default-global-time-out}
 
-Os usuários finais podem se autenticar em AEM Forms por meio do Workbench, de aplicativos da Web do AEM Forms ou de aplicativos personalizados que chamam os serviços de servidor do AEM Forms. Uma configuração de tempo limite global é usada para especificar por quanto tempo esses usuários podem interagir com AEM Forms (usando uma Asserção baseada em SAML) antes de serem forçados a reautenticar. A configuração padrão é de duas horas. Em um ambiente de produção, a quantidade de tempo precisa ser reduzida para o número mínimo de minutos aceitáveis.
+Os usuários finais podem se autenticar na AEM Forms por meio do Workbench, de aplicativos da Web da AEM Forms ou de aplicativos personalizados que chamam os serviços do servidor AEM Forms. Uma configuração de tempo limite global é usada para especificar por quanto tempo esses usuários podem interagir com o AEM Forms (usando uma Asserção baseada em SAML) antes de serem forçados a reautenticar. A configuração padrão é de duas horas. Em um ambiente de produção, a quantidade de tempo precisa ser reduzida para o número mínimo de minutos aceitáveis.
 
 ### Minimizar o limite de tempo de reautenticação {#minimize-reauthentication-time-limit}
 
@@ -119,8 +119,8 @@ Os usuários finais podem se autenticar em AEM Forms por meio do Workbench, de a
             https://[host name]:'port'/adminui
    ```
 
-1. Clique em **Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos** de configuração.
-1. Clique em **Exportar** para produzir um arquivo config.xml com as configurações de AEM Forms existentes.
+1. Clique em **Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração**.
+1. Clique em **Exportar** para produzir um arquivo config.xml com as configurações existentes do AEM Forms.
 1. Abra o arquivo XML em um editor e localize a seguinte entrada:
 
    `<entry key=”assertionValidityInMinutes” value=”120”/>`
