@@ -35,7 +35,7 @@ O gráfico a seguir mostra um fluxo de trabalho típico para criar um modelo de 
 
 Neste fluxo de trabalho:
 
-1. Os designers de formulário criam layouts e layouts de fragmento usando o Adobe Forms Designer e os carregam em um repositório CRX. Os layouts contêm campos de formulário típicos, recursos de layout, como um cabeçalho e rodapé, e &quot;áreas de público alvo&quot; vazias para o posicionamento do conteúdo. Posteriormente, os Application Specialists mapeiam o conteúdo necessário para essas áreas de público alvo. Mais informações sobre [criação de layout](/help/forms/using/layout-design-details.md).
+1. Os designers de formulário criam layouts e layouts de fragmento usando o Adobe Forms Designer e os carregam em um repositório CRX. Os layouts contêm campos de formulário típicos, recursos de layout, como um cabeçalho e rodapé, e &quot;áreas de público alvo&quot; vazias para o posicionamento do conteúdo. Posteriormente, os Application Specialists mapeiam o conteúdo necessário para essas áreas de público alvo. Mais informações sobre [como criar layout](/help/forms/using/layout-design-details.md).
 1. Especialistas em assuntos de assunto dos departamentos Jurídico, Financeiro ou de Marketing, criam e carregam conteúdo, como cláusulas de texto, isenções de responsabilidade, termos e condições e imagens, como logotipos, que são reutilizados em vários modelos de correspondência.
 1. Os especialistas em aplicativos criam modelos de correspondência. O especialista do aplicativo
 
@@ -43,11 +43,11 @@ Neste fluxo de trabalho:
    * Define condições/regras para a inclusão de conteúdo
    * Vincula campos de layout e variáveis a modelos de dados subjacentes
 
-1. O autor pré-visualização a carta e a envia para processamento posterior. Mais informações sobre o processamento [de](/help/forms/using/submit-letter-topostprocess.md)postagens.
+1. O autor pré-visualização a carta e a envia para processamento posterior. Mais informações sobre [pós-processamento](/help/forms/using/submit-letter-topostprocess.md).
 
 #### Uso de modelos de carta fornecidos com o Gerenciamento de correspondência {#using-letter-templates-provided-with-correspondence-management}
 
-Em vez de criar um modelo de layout do zero, você pode optar por modificar e reutilizar os modelos fornecidos pelo Gerenciamento de correspondência. Você pode usar o designer para modificar rapidamente a marca e os campos de dados e conteúdo dos modelos para atender às necessidades de sua organização. Para obter mais informações sobre os modelos de Gerenciamento de correspondência, consulte Modelos [de carta de](/help/forms/using/reference-cm-layout-templates.md)referência.
+Em vez de criar um modelo de layout do zero, você pode optar por modificar e reutilizar os modelos fornecidos pelo Gerenciamento de correspondência. Você pode usar o designer para modificar rapidamente a marca e os campos de dados e conteúdo dos modelos para atender às necessidades de sua organização. Para obter mais informações sobre modelos de Gerenciamento de correspondência, consulte [Modelos de carta de referência](/help/forms/using/reference-cm-layout-templates.md).
 
 ### Criação de fragmentos de documento {#document-fragment-creation}
 
@@ -67,11 +67,11 @@ Lista é uma série de fragmentos de documento, incluindo texto, listas (a mesma
 
 As condições permitem que você defina qual conteúdo será incluído no momento da criação da correspondência, com base nos dados fornecidos. A condição é descrita em termos de variáveis de controle. As variáveis podem ser um elemento de dicionário de dados ou um espaço reservado. Ao adicionar uma condição, você pode optar por incluir um ativo com base no valor que a variável de controle tem. As condições têm uma única saída com base em uma expressão. A primeira expressão é considerada verdadeira, com base na variável de condição atual. Seu valor se torna a saída da condição.
 
-#### Layout fragment {#layout-fragment}
+#### Fragmento de layout {#layout-fragment}
 
-Um fragmento de layout é um layout que pode ser usado dentro de uma ou mais letras. Um fragmento de layout é usado para criar padrões repetíveis, especialmente tabelas dinâmicas. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Ele também contém subformulários vazios que indicam áreas de público alvo. Os layouts (XDPs) são criados no Designer e, em seguida, são [carregados no Forms e nos Documentos](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Um fragmento de layout é um layout que pode ser usado dentro de uma ou mais letras. Um fragmento de layout é usado para criar padrões repetíveis, especialmente tabelas dinâmicas. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Ele também contém subformulários vazios que indicam áreas de público alvo. Os layouts (XDPs) são criados no Designer e depois [carregados no Forms e nos Documentos](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
-### Criação de cartas {#letter-creation}
+### Criação de letras {#letter-creation}
 
 Há duas maneiras de gerar a correspondência enviada aos clientes: controlado pelo usuário e pelo sistema.
 
@@ -87,7 +87,7 @@ A geração de correspondência é automatizada, acionada por acionadores de eve
 
 ![Correspondência orientada pelo sistema](assets/us_cm_generate.png)
 
-### Pós-processamento {#post-processing}
+### Processamento posterior {#post-processing}
 
 A correspondência final pode ser enviada para um processo back-end para pós-processamento. A correspondência pode ser:
 
@@ -97,13 +97,13 @@ A correspondência final pode ser enviada para um processo back-end para pós-pr
 1. Convertido em um documento PDF pesquisável que contém todos os metadados necessários para fins de arquivamento e auditoria.
 1. Incluído em um Portfolio PDF que inclui mais documentos, como material de marketing. O Portfolio PDF pode ser enviado como a correspondência final.
 
-### Arquitetura da solução Gerenciamento de correspondência {#correspondence-management-solution-architecture}
+### Arquitetura da solução de Gerenciamento de correspondência {#correspondence-management-solution-architecture}
 
 O gráfico a seguir fornece uma visão geral de uma arquitetura de exemplo da Solução Letters.
 
 ![Arquitetura da solução Carta](assets/us_cm_architecture_es3.png)
 
-## Desconstrução de uma carta {#deconstructing-a-letter}
+## Desconstruindo uma letra {#deconstructing-a-letter}
 
 Este documento de Aviso de Cancelamento é um exemplo de uma correspondência típica:
 
@@ -119,22 +119,22 @@ Este documento de Aviso de Cancelamento é um exemplo de uma correspondência t�
   <tr> 
    <td>Dados de sistemas empresariais back-end</td> 
    <td>Dados provenientes de sistemas de backend de empresas. Os dados são unidos dinamicamente com o modelo de correspondência.</td> 
-   <td>O<br /> arquivo de dados criado com base em um Dicionário de dados</td> 
+   <td>O arquivo de dados <br /> criado com base em um Dicionário de dados</td> 
   </tr> 
   <tr> 
-   <td>Dados<br /> Informados por Funcionário da linha de frente</td> 
+   <td>Dados<br /> Introduzidos pelo Funcionário da linha de frente</td> 
    <td>Dados que podem ser fornecidos por um funcionário de linha frontal que está personalizando a carta antes de enviá-la.<br /> </td> 
-   <td><p>Elementos<br /> DD desprotegidos Parágrafos<br /> de texto editáveis Variáveis/espaços reservados<br /> </p> </td> 
+   <td><p>Elementos DD desprotegidos<br /> parágrafos de texto editáveis<br /> Variáveis/espaços reservados<br /> </p> </td> 
   </tr> 
   <tr> 
-   <td>Parágrafos de texto pré-aprovados<br /></td> 
+   <td>Parágrafos de texto<br /> pré-aprovados</td> 
    <td>Conteúdo de texto pré-aprovado. Especialistas em Assuntos legais, finanças ou uma linha de negócios que entendem o contexto comercial da carta, normalmente criam o conteúdo do texto. Conteúdo como cabeçalho, rodapé, isenção de responsabilidade e saudação seria comum à maioria das letras. No entanto, o conteúdo, como "motivo para rescisão", seria específico da carta em questão.</td> 
-   <td><p>Text\Lists\<br /> do usuário\Layout</p> <p> </p> </td> 
+   <td><p>Text\Lists\<br /> Condições\Layout</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td>Dados<br /> baseados na lógica personalizada?</td> 
+   <td>Dados<br /> com base na lógica personalizada?</td> 
    <td>Para algumas letras, como uma carta para solicitar mais informações sobre uma solicitação, usuários como o Ajustador de solicitações podem adicionar conteúdo de texto personalizado.</td> 
-   <td>Fragmento do documento<br /> do tipo Condição </td> 
+   <td>Documento<br /> Fragmento do tipo Condição </td> 
   </tr> 
   <tr> 
    <td>Imagens armazenadas<br /> do repositório central</td> 
@@ -144,7 +144,7 @@ Este documento de Aviso de Cancelamento é um exemplo de uma correspondência t�
  </tbody> 
 </table>
 
-## Analisar uma carta antes de construí-la {#analyze-a-letter-before-you-construct-it}
+## Analise uma carta antes de construí-la {#analyze-a-letter-before-you-construct-it}
 
 Analise cada letra para descobrir as várias partes que compõem a carta. O Application Specialist analisa as correspondências geradas.
 
@@ -164,23 +164,23 @@ Analise cada letra para descobrir as várias partes que compõem a carta. O Appl
 * Os cenários também fornecem:os conjuntos de habilidades e ferramentas necessários para o seu projeto.
 * Práticas recomendadas para planejar sua implementação. &quot;Visão geral da implementação de alto nível.
 
-## Benefícios da análise {#benefits-of-performing-the-analysis}
+## Benefícios da execução da análise {#benefits-of-performing-the-analysis}
 
-**Reutilização** de conteúdo Você tem uma lista consolidada de novo conteúdo necessário para gerar correspondência. Grande parte do conteúdo, como cabeçalhos, rodapés, textos de isenção de responsabilidade e introduções, é comum a muitas letras e pode ser reutilizada em várias letras. Todo esse conteúdo comum pode ser criado e aprovado por especialistas uma vez e reutilizado em muitos pedaços de correspondência.
+**Reutilização** de conteúdoVocê tem uma lista consolidada de novo conteúdo necessário para gerar correspondência. Grande parte do conteúdo, como cabeçalhos, rodapés, textos de isenção de responsabilidade e introduções, é comum a muitas letras e pode ser reutilizada em várias letras. Todo esse conteúdo comum pode ser criado e aprovado por especialistas uma vez e reutilizado em muitos pedaços de correspondência.
 
-**Criação do dicionário** de dados Haverá valores de dados, como &quot;ID do cliente&quot; e &quot;Nome do cliente&quot;, comuns a muitas letras. Você pode preparar uma lista consolidada de todos esses valores de dados. Normalmente, alguém da equipe de middleware da empresa é consultado ao planejar a estrutura. Essa é a base para a criação do Dicionário de dados.
+**Criação do** dicionário de dadosHaverá valores de dados, como &quot;ID do cliente&quot; e &quot;Nome do cliente&quot;, comuns a muitas letras. Você pode preparar uma lista consolidada de todos esses valores de dados. Normalmente, alguém da equipe de middleware da empresa é consultado ao planejar a estrutura. Essa é a base para a criação do Dicionário de dados.
 
-**Fonte de dados de sistemas** de empresas de backend Você também conhecerá todos os valores de dados necessários e de onde os dados do sistema empresarial são obtidos. Você pode, então, arquitetar a implementação para extrair os dados do sistema corporativo e alimentar a solução Letters.
+**Fonte de dados de** sistemas de backend enterprise Você também conhecerá todos os valores de dados necessários e de onde os dados do sistema corporativo são obtidos. Você pode, então, arquitetar a implementação para extrair os dados do sistema corporativo e alimentar a solução Letters.
 
-**Estimando a complexidade das cartas** É importante determinar quão complexo será criar uma determinada correspondência. Essa análise ajuda a determinar a quantidade de tempo e os conjuntos de habilidades necessários para criar os modelos de carta. Por sua vez, isso ajudará a estimar os recursos e os custos da implementação da solução &quot;Cartas&quot;.
+**Estimando a complexidade das** letrasÉ importante determinar quão complexo será criar uma determinada correspondência. Essa análise ajuda a determinar a quantidade de tempo e os conjuntos de habilidades necessários para criar os modelos de carta. Por sua vez, isso ajudará a estimar os recursos e os custos da implementação da solução &quot;Cartas&quot;.
 
 ## Complexidade da correspondência {#correspondence-complexity}
 
 A complexidade da correspondência pode ser determinada pela análise dos seguintes parâmetros:
 
-**Complexidade** do layout Quão complexo é o layout? Cartas como Aviso de cancelamento têm layouts simples. Enquanto letras como Confirmação de cobertura de solicitações têm um layout complexo com várias tabelas e mais de 60 campos de formulário. A criação de layouts complexos leva mais tempo e requer conjuntos avançados de habilidades de design de layout.
+**Complexidade de layoutQuão complexo é o layout?** Cartas como Aviso de cancelamento têm layouts simples. Enquanto letras como Confirmação de cobertura de solicitações têm um layout complexo com várias tabelas e mais de 60 campos de formulário. A criação de layouts complexos leva mais tempo e requer conjuntos avançados de habilidades de design de layout.
 
-**Número de parágrafos e condições** de texto Um contrato de empréstimo pode ter 10 páginas e conter mais de 40 cláusulas de texto. Muitas destas cláusulas dependeriam de &quot;parâmetros de empréstimo&quot;. Com base nos termos e condições exatos, as cláusulas seriam incluídas ou excluídas do contrato. A criação dessas cartas requer um planeamento exaustivo e uma definição cuidadosa das condições complexas.
+**Número de parágrafos e** condições de texto Um contrato de empréstimo pode ter 10 páginas e conter mais de 40 cláusulas de texto. Muitas destas cláusulas dependeriam de &quot;parâmetros de empréstimo&quot;. Com base nos termos e condições exatos, as cláusulas seriam incluídas ou excluídas do contrato. A criação dessas cartas requer um planeamento exaustivo e uma definição cuidadosa das condições complexas.
 
 Esta tabela fornece algumas orientações que você pode usar para classificar suas letras:
 
@@ -228,20 +228,20 @@ Esta tabela fornece algumas orientações que você pode usar para classificar s
 
 Primeiro, você precisa dos seguintes itens para criar uma correspondência:
 
-* [Pacote](compatibility-package.md)de compatibilidade. Instale o Pacote de compatibilidade para visualização da opção **Cartas** na página do **Forms** .
+* [Pacote](compatibility-package.md) de compatibilidade. Instale o Pacote de compatibilidade para visualização da opção **Letters** na página **Forms**.
 * A letra XDP ([layout](/help/forms/using/document-fragments.md)).
-* Outros XDPs (fragmentos[de](document-fragments.md#document-fragments)layout) que formam partes da carta. Os XDPs\Layouts são criados no [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
-* O dicionário [de](/help/forms/using/data-dictionary.md) dados relevante (opcional).
-* Os módulos [de](/help/forms/using/document-fragments.md) dados que você deseja usar na correspondência.
-* [Dados](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) de teste é o arquivo XML com os dados de teste inseridos nele. Os dados de teste são necessários se você estiver usando um dicionário de dados.
+* Outros XDPs ([fragmentos de layout](document-fragments.md#document-fragments)) que formam partes da letra. Os XDPs\Layouts são criados em [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* O [dicionário de dados](/help/forms/using/data-dictionary.md) relevante (Opcional).
+* Os [módulos de dados](/help/forms/using/document-fragments.md) que você deseja usar na correspondência.
+* [Os dados de teste ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) indicam o arquivo XML com os dados de teste que ele contém. Os dados de teste são necessários se você estiver usando um dicionário de dados.
 
 ## Criar um modelo de carta {#create-a-letter-template}
 
-### Selecione um layout e insira as propriedades das letras {#select-a-layout-and-enter-the-letter-properties}
+### Selecione um layout e insira as propriedades de letras {#select-a-layout-and-enter-the-letter-properties}
 
 1. Selecione **Forms** > **Cartas**.
 
-1. Selecione **Criar > Carta**. O Gerenciamento de correspondência exibe os layouts disponíveis (XDPs). Esses layouts vêm do Designer. Os layouts também incluem os modelos de carta que o Gerenciamento de correspondência fornece na caixa. Para obter mais informações sobre os modelos de Gerenciamento de correspondência, consulte Modelos [de carta de](/help/forms/using/reference-cm-layout-templates.md)referência. Para adicionar seus próprios layouts, crie arquivos XDP (layout) no Designer e, em seguida, [carregue-os no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Selecione **Criar > Carta**. O Gerenciamento de correspondência exibe os layouts disponíveis (XDPs). Esses layouts vêm do Designer. Os layouts também incluem os modelos de carta que o Gerenciamento de correspondência fornece na caixa. Para obter mais informações sobre modelos de Gerenciamento de correspondência, consulte [Modelos de carta de referência](/help/forms/using/reference-cm-layout-templates.md). Para adicionar seus próprios layouts, crie arquivos XDP (layout) no Designer e [carregue-os no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![create-letter](assets/create-letter.png)
 
@@ -249,24 +249,24 @@ Primeiro, você precisa dos seguintes itens para criar uma correspondência:
 
    ![Selecione o layout para criar uma carta](assets/selectlayout.png)
 
-1. Insira as propriedades para a Correspondência e toque em **Salvar:**
+1. Insira as propriedades da Correspondência e toque em **Salvar:**
 
-   * **Título (opcional):** Insira o título da carta. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês.
-   * **Nome:** O nome exclusivo da carta. Não podem existir duas letras em nenhum estado com o mesmo nome. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
+   * **Título (Opcional):** insira o título da carta. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres diferentes do inglês.
+   * **Nome:** o nome exclusivo da carta. Não podem existir duas letras em nenhum estado com o mesmo nome. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
    * **Descrição (Opcional):** Descreva a carta para sua referência.
    * **Dicionário de dados (opcional)**: O Dicionário de dados pode ser associado à correspondência. Os ativos que você inserir posteriormente nesta correspondência devem ter o mesmo dicionário de dados que você escolher para a correspondência aqui ou nenhum dicionário de dados.
-   * **Tags (opcional):** Selecione as tags a serem aplicadas à correspondência. Você também pode digitar um nome de tag novo/personalizado e pressionar Enter para criá-lo.
-   * **Processo de publicação (opcional):** Selecione o processo de publicação a ser aplicado ao modelo de carta. Há processos de postagem fora da caixa e aqueles que você criou usando AEM, como email e impressão.
+   * **Tags (Opcional):** Selecione as tags a serem aplicadas à correspondência. Você também pode digitar um nome de tag novo/personalizado e pressionar Enter para criá-lo.
+   * **Processo de publicação (opcional):** selecione o processo de publicação a ser aplicado ao modelo de carta. Há processos de postagem fora da caixa e aqueles que você criou usando AEM, como email e impressão.
 
    ![Propriedades da correspondência](assets/createcorrespondenceproperties.png)
 
-1. O sistema exibe uma mensagem: &quot;Carta criada com êxito.&quot; (na mensagem de alerta) Toque em **Abrir** para configurar os módulos de dados e os fragmentos de layout nele contidos. Ou toque em **Concluído** para voltar à página anterior.
+1. O sistema exibe uma mensagem: &quot;Carta criada com êxito.&quot; (na mensagem de alerta) Toque em **Abrir** para configurar os módulos de dados e os fragmentos de layout neles. Ou toque em **Concluído** para voltar à página anterior.
 
    ![Mensagem de alerta: carta criada com êxito](assets/createcorrespondencecreated.png)
 
-   **Próximo**: Quando você toca em **Abrir**, o Gerenciamento de correspondência exibe uma representação do layout com todos os componentes do layout (XDP) listados. Continue inserindo os Módulos de [dados e Fragmentos de layout e Configurando-os](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Próximo**: Quando você toca em  **Abrir**, o Gerenciamento de correspondência exibe uma representação do layout com todos os componentes do layout (XDP) listados. Continue inserindo os [Módulos de dados e Fragmentos de layout e Configurando-os](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
-### Inserir módulos de dados e fragmentos de layout em uma letra e configurá-los {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
+### Insira módulos de dados e fragmentos de layout em uma letra e configure-os {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
 Depois de criar uma correspondência, toque em Abrir, o Gerenciamento de correspondência exibe uma representação do layout com todas as áreas de subformulários/públicos alvos no layout (XDP) listado. Em cada uma das áreas de público alvo, você pode optar por inserir um Módulo de dados ou um Fragmento de layout (e, em seguida, módulos de dados no fragmento de layout).
 
@@ -288,7 +288,7 @@ Depois de criar uma correspondência, toque em Abrir, o Gerenciamento de corresp
    1. **Editável**: Quando essa opção é selecionada, o conteúdo pode ser editado na interface do usuário Criar correspondência. Marque o conteúdo como editável somente se ele exigir que o usuário comercial (como um Ajustador de solicitações) o modifique.
    1. **Obrigatório**: Quando essa opção é selecionada, o conteúdo é necessário na interface do usuário Criar correspondência.
    1. **Selecionado**: Quando essa opção é selecionada, o conteúdo é selecionado por padrão na interface do usuário Criar correspondência.
-   1. **Recuo**: Aumente ou diminua o recuo do módulo/conteúdo na letra. O recuo é especificado em termos de níveis, começando em 0. Cada nível recua 36 pontos. Para obter mais informações sobre como personalizar formulários, consulte Configurações **[!UICONTROL de gerenciamento de]** correspondência no fluxo de trabalho [do](submit-letter-topostprocess.md#formsworkflow)Forms.
+   1. **Recuo**: Aumente ou diminua o recuo do módulo/conteúdo na letra. O recuo é especificado em termos de níveis, começando em 0. Cada nível recua 36 pontos. Para obter mais informações sobre como personalizar formulários, consulte **[!UICONTROL Configurações de gerenciamento de correspondência]** em [Fluxo de trabalho da Forms](submit-letter-topostprocess.md#formsworkflow).
    1. **Quebra de página antes**: Se você definir a opção Quebra de página antes como ativada, o conteúdo DESTE módulo sempre será exibido em uma nova página.
    1. **Quebra de página após**: Se você definir a opção Quebra de página depois como ativada para um módulo específico, o conteúdo do módulo AVANÇAR sempre será exibido em uma nova página.
 
@@ -305,16 +305,16 @@ Depois de criar uma correspondência, toque em Abrir, o Gerenciamento de corresp
 
    1. **Altere a ordem dos ativos**: arraste e solte um ativo que contém o ícone de reordem de um ativo ( ![arrastar e soltar](assets/dragndrop.png)).
    1. **Excluir ativos**: Toque no ícone Excluir ao lado de um ativo para excluí-lo.
-   1. **Ativos** de pré-visualização: Toque no ícone de mostrar pré-visualização ( ![mostrar visualização](assets/showpreview.png)) ao lado de um ativo.
+   1. **Ativos** de pré-visualização: Toque no ícone de mostrar pré-visualização (  ![mostrar visualização](assets/showpreview.png)) ao lado de um ativo.
 
 
-1. Toque em **Avançar**.
+1. Toque em **Next**.
 1. A página Dados detalha como os campos de dados e as variáveis são usados no modelo. Os dados podem ser vinculados a fontes de dados, como um dicionário de dados ou uma entrada do usuário. Cada campo define as propriedades a partir das quais o dicionário de dados mapeia dados ou qual legenda é exibida para os campos de entrada do usuário.
 
    Ligação:
 
-   * Os elementos de **campo** podem ser vinculados a um literal, a um elemento de dicionário de dados, a um ativo ou a um valor especificado pelo usuário. Também é possível ignorar um elemento de campo ao vinculá-lo à opção Ignorar.
-   * Os elementos de **variável** podem ser vinculados a um literal, a um elemento de dicionário de dados, a um campo, a uma variável, a um ativo ou a um valor especificado pelo usuário.
+   * Os elementos **field** podem ser vinculados a um elemento de dicionário de dados literal, a um ativo ou a um valor especificado pelo usuário. Também é possível ignorar um elemento de campo ao vinculá-lo à opção Ignorar.
+   * Os elementos **variable** podem ser vinculados a um elemento de dicionário de dados literal, a um campo, a uma variável, a um ativo ou a um valor especificado pelo usuário.
 
    A seguir estão alguns campos principais no vínculo:
 
@@ -322,7 +322,7 @@ Depois de criar uma correspondência, toque em Abrir, o Gerenciamento de corresp
    * **Opcional**: Você pode especificar se o valor para campo ou variável é opcional ou não. A opção de campo opcional está disponível para campos e variáveis com o tipo de vínculo Usuário ou Elementos de dicionário de dados desprotegidos.
 
    * **Validação** de campo/variável: Para fornecer a validação aprimorada do valor de um campo ou variável, é possível atribuir um validador ao campo ou à variável. Essa opção está disponível somente para campos e variáveis com o tipo de vínculo Usuário ou Elementos de dicionário de dados desprotegidos.
-   * **Legenda** e **dica** de ferramenta: Legenda é o rótulo do campo que aparece antes do campo na interface do usuário do CCR. Essa opção está disponível para campos e variáveis com o tipo de vínculo Usuário ou Elementos de dicionário de dados desprotegidos.
+   * **** Legenda e  **dica** de ferramenta: Legenda é o rótulo do campo que aparece antes do campo na interface do usuário do CCR. Essa opção está disponível para campos e variáveis com o tipo de vínculo Usuário ou Elementos de dicionário de dados desprotegidos.
 
    Estes são os tipos de validação que você pode usar para os campos:
 
@@ -342,12 +342,12 @@ Depois de criar uma correspondência, toque em Abrir, o Gerenciamento de corresp
 ### Configurar os anexos {#set-up-the-attachments}
 
 1. Selecione **Adicionar ativo**.
-1. Na tela Selecionar ativo, toque nos ativos a serem anexados com a letra e toque em **Concluído**. É necessário primeiro fazer upload dos ativos para os Ativos. É recomendável anexar somente documentos PDF e do Microsoft Office, mas também pode anexar imagens. Para obter mais informações sobre como fazer upload de ativos no DAM, consulte [Fazer upload de ativos](/help/assets/manage-assets.md).
-1. Para bloquear a ordem dos ativos na lista de modo que o Ajustador de solicitações não possa alterar a ordem, toque em **Bloquear pedido**. Se você não selecionar essa opção, o Ajustador de solicitações poderá alterar a ordem dos itens de lista.
-1. Para alterar a ordem dos ativos, arraste e solte um ativo que contém o ícone de reordem de um ativo ( ![arrastar e soltar](assets/dragndrop.png)).
+1. Na tela Selecionar ativo, toque nos ativos para anexar com a letra e toque em **Concluído**. É necessário primeiro fazer upload dos ativos para os Ativos. É recomendável anexar somente documentos PDF e do Microsoft Office, mas também pode anexar imagens. Para obter mais informações sobre como fazer upload de ativos no DAM, consulte [Fazer upload de ativos](/help/assets/manage-assets.md).
+1. Para bloquear a ordem dos ativos na lista para que o Ajustador de solicitações não possa alterar a ordem, toque em **Bloquear pedido**. Se você não selecionar essa opção, o Ajustador de solicitações poderá alterar a ordem dos itens de lista.
+1. Para alterar a ordem dos ativos, arraste e solte um ativo que contém o ícone de reordem de um ativo ( ![dragndrop](assets/dragndrop.png)).
 1. Toque em **Editar** na frente de um anexo e especifique um anexo como Obrigatório se não quiser que o autor o exclua. Especifique um anexo como Selecionado se desejar que ele seja pré-selecionado na interface do CCR.
-1. Selecione Acesso **à** biblioteca para conceder acesso à biblioteca. Se o Acesso à biblioteca estiver ativado, o Ajustador de solicitações poderá acessar a biblioteca de conteúdo ao criar uma carta e inserir anexos.
-1. Selecione Configuração **de** anexos e especifique o número máximo de anexos.
+1. Selecione **Acesso à biblioteca** para conceder acesso à biblioteca. Se o Acesso à biblioteca estiver ativado, o Ajustador de solicitações poderá acessar a biblioteca de conteúdo ao criar uma carta e inserir anexos.
+1. Selecione **Configuração de Anexos** e especifique o número máximo de anexos.
 
 1. Toque em **Salvar**. Sua correspondência é criada e listada na página Cartas.
 
@@ -436,7 +436,7 @@ Os seguintes valores na tabela
    <td>N/A</td> 
   </tr> 
   <tr> 
-   <td><strong>simples</strong> <strong>texto</strong></td> 
+   <td><strong></strong> <strong>plaintext</strong></td> 
    <td>Sim</td> 
    <td>somente texto</td> 
    <td>Sim</td> 
@@ -473,7 +473,7 @@ Os seguintes valores na tabela
 Você pode usar um modelo de carta existente para criar rapidamente um modelo de carta com propriedades, conteúdo e ativos herdados semelhantes, como fragmentos de documento e dicionário de dados. Para fazer isso, copie e cole uma carta.
 
 1. Na página Letras, selecione uma ou mais letras. A interface do usuário exibe o ícone Copiar.
-1. Toque em Copiar. A interface do usuário exibe o ícone Colar. Você também pode escolher entrar em uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organizar ativos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Toque em Copiar. A interface do usuário exibe o ícone Colar. Você também pode escolher entrar em uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e ativos de organização](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Toque em Colar. A caixa de diálogo Colar é exibida. Se você estiver copiando e colando as letras no mesmo local, o sistema atribuirá automaticamente nomes e títulos às novas cópias de letras, mas você poderá editar os títulos e os nomes das letras.
 1. Se necessário, edite o Título e o Nome com os quais deseja salvar a cópia da carta.
 1. Toque em Colar. A cópia da carta é criada. Agora você pode fazer as alterações necessárias na carta recém-criada.
