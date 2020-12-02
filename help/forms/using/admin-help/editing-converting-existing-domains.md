@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 0%
 
 ---
 
@@ -24,11 +27,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 1. No console de administração, clique em Configurações > Gerenciamento de usuário > Gerenciamento de domínio.
 1. Clique no nome do domínio a ser editado.
 1. Para alterar o nome do domínio, altere o texto na caixa Nome.
-1. Para alterar as informações de autenticação de um domínio corporativo ou híbrido, clique no nome de autenticação apropriado na parte inferior da página. Na página Editar autenticação, altere as configurações conforme necessário. (Consulte Configurações [de autenticação](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
-1. Para alterar as informações do diretório de um domínio corporativo, clique no nome do diretório apropriado na parte inferior da página. Na página Editar diretório, altere as configurações conforme necessário. (Consulte [Adicionar diretórios ou SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)personalizados.)
+1. Para alterar as informações de autenticação de um domínio corporativo ou híbrido, clique no nome de autenticação apropriado na parte inferior da página. Na página Editar autenticação, altere as configurações conforme necessário. (Consulte [Configurações de autenticação](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
+1. Para alterar as informações do diretório de um domínio corporativo, clique no nome do diretório apropriado na parte inferior da página. Na página Editar diretório, altere as configurações conforme necessário. (Consulte [Adicionar diretórios ou SPIs personalizados](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
 1. Ao concluir as alterações, clique em OK.
 
-## Converter um domínio empresarial em um domínio híbrido {#convert-an-enterprise-domain-to-a-hybrid-domain}
+## Converter um domínio corporativo em um domínio híbrido {#convert-an-enterprise-domain-to-a-hybrid-domain}
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuário > Gerenciamento de domínio.
 1. Clique no nome do domínio corporativo a ser convertido.
@@ -46,5 +49,5 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 1. Clique no nome do domínio híbrido a ser convertido.
 1. Clique em Converter em domínio corporativo.
 1. Revise as informações que aparecem com relação aos dados de usuário e grupo e à autenticação de usuários e clique em OK.
-1. Clique em Adicionar diretório e configure as informações necessárias do diretório. (Consulte [Adicionar diretórios ou SPIs](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)personalizados.)
+1. Clique em Adicionar diretório e configure as informações necessárias do diretório. (Consulte [Adicionar diretórios ou SPIs personalizados](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
 
