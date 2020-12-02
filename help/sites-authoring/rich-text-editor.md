@@ -47,9 +47,9 @@ Essa barra de ferramentas fornece as seguintes opções:
 
 ## Edição em tela cheia {#full-screen-editing}
 
-For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+Para componentes baseados em texto, tocar no modo de tela cheia na barra de ferramentas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre o editor de Rich Text e oculta o restante do conteúdo da página.
 
-O modo Tela inteira exibe todas as opções configuradas que podem ser usadas para criação. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
+O modo Tela inteira exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade é opções [depende da configuração](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
