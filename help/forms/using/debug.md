@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # Depuração de formulários HTML5 {#debugging-html-forms}
 
-Este documento inclui vários cenários de solução de problemas. Para cada cenário, algumas etapas são fornecidas para solucionar o problema. Siga estas etapas e, se o problema persistir, configure o Logger para obter e revisar os registros em busca de erros/avisos. Para obter mais detalhes sobre o registro de formulários em HTML5, consulte [Geração de registros para formulários](/help/forms/using/enable-logs.md)em HTML5.
+Este documento inclui vários cenários de solução de problemas. Para cada cenário, algumas etapas são fornecidas para solucionar o problema. Siga estas etapas e, se o problema persistir, configure o Logger para obter e revisar os registros em busca de erros/avisos. Para obter mais detalhes sobre o registro de formulários em HTML5, consulte [Geração de registros para formulários em HTML5](/help/forms/using/enable-logs.md).
 
 ## Problema: Ao renderizar o formulário, vejo a página de exceção org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
-Nos detalhes da exceção, pesquise por palavra **causada por**.
+Nos detalhes da exceção, procure a palavra **causada por**.
 
 O motivo provável é que um ou mais parâmetros no URL estejam incorretos.
 
@@ -79,9 +79,9 @@ Verifique os seguintes parâmetros:
 
    (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
 
-## Problema: Renderizações de formulário sem estilos {#problem-form-renders-without-styles}
+## Problema: O formulário é renderizado sem estilos {#problem-form-renders-without-styles}
 
-1. No seu navegador, abra Ferramentas **do** desenvolvedor. Verifique se perfil.css está disponível.
+1. No seu navegador, abra **Ferramentas do desenvolvedor**. Verifique se perfil.css está disponível.
 1. Se o arquivo perfil.css não estiver disponível, faça logon no CRX DE em https://&lt;servidor>:&lt;porta>/crx/de.
 1. Na hierarquia de pastas à esquerda, navegue até /etc/clientlibs/fd/xfaforms/. Abra os arquivos css.txt listados nas pastas.
 
@@ -108,7 +108,7 @@ Verifique os seguintes parâmetros:
 
 1. No URL do formulário, adicione um parâmetro de query debugClientLibs e defina seu valor como true (por exemplo: https://&lt;servidor>:&lt;porta>/content/xfaforms/profiles/test.html?contentRoot=&lt;algum caminho>&amp;template=&lt;nome do arquivo xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. No navegador de desktop como o chrome, vá até Developer Tools -> Console.
-1. Abra os registros para identificar o tipo de erro. Para obter informações detalhadas sobre registros, consulte [logs para formulários](/help/forms/using/enable-logs.md)HTML5.
+1. Abra os registros para identificar o tipo de erro. Para obter informações detalhadas sobre registros, consulte [registros para formulários HTML5](/help/forms/using/enable-logs.md).
 1. Vá para Ferramentas do desenvolvedor -> Console. Use o rastreamento de pilha para localizar o código que está causando o erro. Depurar o erro para resolver o problema.
 
    >[!NOTE]
@@ -119,12 +119,12 @@ Verifique os seguintes parâmetros:
 
 1. Verifique se você tem direitos de acesso ao servidor AEM e se está conectado ao servidor.
 1. Verifique se o parâmetro submitUrl está correto.
-1. Ative os registros do lado do cliente como mencionado em [Logs para os formulários](/help/forms/using/enable-logs.md) HTML5 usando a opção debug como **1-a5-b5-c5**. Em seguida, renderize o formulário e clique em Enviar. Abra o console de depuração do navegador e verifique se há um erro.
-1. Localize os logs do servidor, conforme mencionado em [Logs, para os formulários](/help/forms/using/enable-logs.md)HTML5. Verifique se ocorreu algum erro nos registros do servidor durante o envio.
+1. Ative os registros do lado do cliente como mencionado em [Registros para os formulários HTML5](/help/forms/using/enable-logs.md) usando a opção de depuração como **1-a5-b5-c5**. Em seguida, renderize o formulário e clique em Enviar. Abra o console de depuração do navegador e verifique se há um erro.
+1. Localize os registros do servidor, conforme mencionado em [Registros para os formulários HTML5](/help/forms/using/enable-logs.md). Verifique se ocorreu algum erro nos registros do servidor durante o envio.
 
-## Problema: Mensagens de erro localizadas não são exibidas {#problem-localized-error-messages-do-not-display}
+## Problema: As mensagens de erro localizadas não exibem {#problem-localized-error-messages-do-not-display}
 
-1. Renderize o formulário com o parâmetro de query adicional **debugClientLibs=true** no navegador de desktop e vá para Ferramentas do desenvolvedor -> Recursos e verifique o arquivo I18N.css.
+1. Renderize o formulário com o parâmetro de query adicional **debugClientLibs=true** no navegador da área de trabalho e vá até Developer Tools -> Resources (Ferramentas do desenvolvedor -> Recursos) e verifique o arquivo I18N.css.
 1. Se o arquivo não estiver disponível, faça logon no CRX DE em https://&lt;servidor>:&lt;porta>/crx/de.
 1. Na hierarquia de pastas à esquerda, navegue até /libs/fd/xfaforms/clientlibs/I18N e verifique se os seguintes arquivos e pastas existem:
 
@@ -132,7 +132,7 @@ Verifique os seguintes parâmetros:
    * LogMessages.js
    * Pastas para idiomas
 
-1. Se algum dos arquivos ou pastas acima não existir, instale o pacote **adobe-lc-forms-runtime-pkg-&lt;versão>.zip** novamente.
+1. Se algum dos arquivos ou pastas acima não existir, instale novamente o pacote **adobe-lc-forms-runtime-pkg-&lt;version>.zip**.
 1. Navegue até a pasta que tem o mesmo nome que o nome da localidade e verifique seu conteúdo. A pasta deve conter os seguintes arquivos:
 
    * I18N.js
@@ -150,7 +150,7 @@ Verifique os seguintes parâmetros:
 
 1. Verifique se o URL da imagem está correto.
 1. Verifique se o navegador suporta esse tipo de imagem.
-1. Nos detalhes da exceção, pesquise por palavra **causada por**.
+1. Nos detalhes da exceção, procure a palavra **causada por**.
 
    O motivo provável é que um ou mais parâmetros no URL estejam incorretos.
 
