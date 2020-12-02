@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 translation-type: tm+mt
 source-git-commit: ca15258a5dc7ca99b6c9d6ae85e42c77a3802c87
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 2%
 
 ---
 
 
-# Noções básicas sobre QnA {#qna-essentials}
+# QnA Essentials {#qna-essentials}
 
 Esta página fornece as informações essenciais para trabalhar com o recurso de fórum de perguntas e respostas (QnA).
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -45,14 +48,14 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
   </tr>
   <tr>
    <td> propriedades</td>
-   <td>Consulte Recurso do fórum de <a href="working-with-qna.md">perguntas e respostas</a></td>
+   <td>Consulte <a href="working-with-qna.md">Recurso do fórum de perguntas e respostas</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizações do cliente](client-customize.md)
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 * [API QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
@@ -62,21 +65,21 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 ### Função QnA {#qna-function}
 
-Uma estrutura de site da comunidade que inclui a função [](functions.md#qna-function) QnA terá um `QnA` componente configurado, bem como configurações que afetam a moderação e a marcação. A função QnA suporta a identificação de um grupo [de usuários membro](users.md#privileged-members-group)privilegiado.
+Uma estrutura de site da comunidade que inclui a função [QnA](functions.md#qna-function) terá um componente `QnA` configurado, bem como configurações que afetam a moderação e a marcação. A função QnA suporta a identificação de um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
 
 ### Acessar publicações de fórum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
-Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir das comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir AEM Comunidades 6.1, o uso de uma [loja comum](working-with-srp.md) para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos do Armazenamento - introdução e visão geral do uso do repositório.
-* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração](socialutils.md) de utilitários sociais - mapeamento de métodos de utilitários obsoletos para métodos atuais de utilitários SRP.
+* [Visão geral](srp.md)  do provedor de recursos do armazenamento - introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com diretrizes de codificação do SRP](accessing-ugc-with-srp.md) .
+* [Refatoração](socialutils.md)  do SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
 
