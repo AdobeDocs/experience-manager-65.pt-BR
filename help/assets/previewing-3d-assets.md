@@ -27,13 +27,13 @@ A pré-visualização 3D interativa suporta os seguintes formatos de arquivo:
 | extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmissão binária do GL | model/gltf-binary |  |
-| GLTF | Formato de transmissão GL | model/gltf+json | Consulte a **Nota** abaixo. |
+| GLTF | Formato de transmissão GL | model/gltf+json | Consulte **Nota** abaixo. |
 | OBJ | Arquivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Apoio unicamente à ingestão; pré-visualização não disponível. |
 | USDZ | Arquivo Zip de descrição do Universal Scene | model/vnd.usdz+zip | Apoio unicamente à ingestão; pré-visualização não disponível. |
 
-**Observação**: Se os materiais não forem renderizados na pré-visualização de um modelo gLTF, verifique se eles foram nomeados corretamente e se estão localizados em uma `textures` pasta na mesma pasta raiz do modelo, semelhante ao seguinte:
+**Observação**: Se os materiais não forem renderizados na pré-visualização de um modelo gLTF, verifique se eles foram nomeados corretamente e se estão localizados em uma  `textures` pasta na mesma pasta raiz do modelo, semelhante ao seguinte:
 
     Ativo (pasta)
     model.
@@ -42,7 +42,7 @@ A pré-visualização 3D interativa suporta os seguintes formatos de arquivo:
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Considerações de desempenho ao pré-visualização de ativos 3D em AEM{#performance-3d-previewing-assets}
+## Considerações de desempenho quando você pré-visualização ativos 3D em AEM{#performance-3d-previewing-assets}
 
 O tempo necessário para abrir um ativo 3D na página de visualização de detalhes do ativo depende de vários fatores, como largura de banda, complexidade da imagem e latências para o servidor.
 
@@ -51,8 +51,8 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
 **Para pré-visualização de ativos 3D em AEM**
 
 1. Verifique se você fez upload dos ativos 3D no AEM.
-See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-assets.md#uploading-assets).
-1. Em AEM, na página **[!UICONTROL Navegação]** , toque em **[!UICONTROL Ativos > Arquivos.]**
+Consulte [Formatos suportados para pré-visualização 3D](#supported-3d-previewing-assets) e [Carregar ativos](/help/assets/manage-assets.md#uploading-assets).
+1. Em AEM, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos > Arquivos.]**
 
    ![Página de navegação](/help/assets/assets-dm/navigation-assets.png)
 
@@ -69,16 +69,16 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
    * **Vire sua câmera**—Orbite sua visualização em torno da cena 3D e dos objetos.
       * _Mouse_: Clique com o botão esquerdo + arraste.
       * _Tela_ sensível ao toque: Pressione um único dedo + arraste.
-   * **Deslocar sua câmera**- Desloce a visualização para a esquerda, direita, para cima ou para baixo.
+   * **Deslocar sua câmera** - Desloce a visualização para a esquerda, direita, para cima ou para baixo.
       * _Mouse_: Clique com o botão direito do mouse e arraste.
       * _Tela_ sensível ao toque: Pressione com dois dedos e arraste.
    * **Zoom na câmera**—Aplica zoom na câmera para mover para dentro e para fora das áreas da cena 3D.
       * _Mouse_: Roda de rolagem.
       * _Tela_ sensível ao toque: Pinça com dois dedos.
-   * **Recenter your camera**— Recenter your camera to a point on a object in a 3D scenation (Recentro em cena sua câmera, insira novamente sua câmera em um ponto de um objeto na cena 3D).
+   * **Recenter your camera** — Recenter your camera to a point on a object in a 3D scenation (Recentro em cena sua câmera, insira novamente sua câmera em um ponto de um objeto na cena 3D).
       * _Mouse_: Duplo-clique.
       * _Tela_ sensível ao toque: Toque em duplo.
-   * **Redefinir**— próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de público alvo da visualização para o centro do ativo 3D. A redefinição também aproxima a câmera ou afasta-a para mostrar o ativo na totalidade e em um tamanho de visualização razoável.
+   * **Redefinir** — próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de público alvo da visualização para o centro do ativo 3D. A redefinição também aproxima a câmera ou afasta-a para mostrar o ativo na totalidade e em um tamanho de visualização razoável.
    * **Modo** de tela cheia — Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia.
 
-1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close.]**
+1. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Fechar.]**
