@@ -20,31 +20,31 @@ ht-degree: 4%
 
 # Usando o Resumo de Revisões e Revisões (Exibição) {#using-reviews-and-reviews-summary-display}
 
-O `Reviews` componente é um composto de componentes [Comentários](comments.md) e [Classificação](rating.md) prontos para uso.
+O componente `Reviews` é um composto dos componentes [Comments](comments.md) e [Classificação](rating.md) prontos para uso.
 
-O `Reviews Summary (Display)` componente fornece um resumo de uma instância ativa ou fechada de um `Reviews` componente para exibição em outro lugar do site.
+O componente `Reviews Summary (Display)` fornece um resumo de uma instância ativa ou fechada de um componente `Reviews` para exibição em outro lugar do site.
 
 >[!NOTE]
 >
 >Não há suporte para a publicação anônima de uma revisão. Os visitantes do site devem se registrar (tornar-se um membro) e fazer logon para participar. O visitante conectado pode atualizar sua revisão a qualquer momento.
 
-## Adding a Review to a Page {#adding-a-review-to-a-page}
+## Adicionar uma revisão a uma página {#adding-a-review-to-a-page}
 
-Para adicionar um `Reviews` componente a uma página no modo de autor, use o navegador de componentes para localizá-lo `Communities / Reviews` e arrastá-lo para o local em uma página, como uma posição relativa ao recurso que os usuários devem revisar.
+Para adicionar um componente `Reviews` a uma página no modo de autor, use o navegador de componentes para localizar `Communities / Reviews` e arraste-o para o lugar em uma página, como uma posição relativa ao recurso que os usuários devem revisar.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](reviews-basics.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Reviews` componente será exibido.
+Quando as [bibliotecas obrigatórias do lado do cliente](reviews-basics.md#essentials-for-client-side) forem incluídas, o componente `Reviews` aparecerá desta forma.
 
 ![create-review](assets/create-review.png)
 
-## Configuração de revisões {#configuring-reviews}
+## Configurando revisões {#configuring-reviews}
 
-Selecione o componente inserido a ser acessado e selecione o `Reviews` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Reviews` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configure-new](assets/configure-new.png)
 
-Na guia Classificações **** permitidas, especifique a lista completa de classificações a serem exibidas aos membros. A primeira notação deve ser global/geral, dado que é a notação que fornece a notação média para o `Review Summary (Display)` componente. As próximas duas classificações na configuração padrão devem receber um título diferente de &quot;Subrating 1&quot; ou &quot;Subrating 2&quot;.
+Na guia **[!UICONTROL Classificações permitidas]**, especifique a lista completa de classificações a serem mostradas aos membros. A primeira notação deve ser uma notação geral/global, uma vez que é a notação que fornece a notação média para o componente `Review Summary (Display)`. As próximas duas classificações na configuração padrão devem receber um título diferente de &quot;Subrating 1&quot; ou &quot;Subrating 2&quot;.
 
 ![classificação permitida](assets/configure-review1.png)
 
@@ -54,9 +54,9 @@ Na guia Classificações **** permitidas, especifique a lista completa de classi
 
    Use a seta para cima, a seta para baixo e os botões para excluir para modificar as seleções visíveis.
 
-   Clique em **[!UICONTROL Adicionar item]** para adicionar outra opção de classificação.
+   Clique em **[!UICONTROL Adicionar Item]** para adicionar outra opção de classificação.
 
-Na guia Classificações **** obrigatórias, digite novamente os itens da lista de Classificações **** permitidas que precisam ser classificados. Se um item for especificado apenas na guia Classificações permitidas, ele poderá ficar desmarcado quando submetido pelo membro.
+Na guia **[!UICONTROL Classificações necessárias]**, digite novamente os itens da lista de **[!UICONTROL Classificações permitidas]** que precisam ser classificados. Se um item for especificado apenas na guia Classificações permitidas, ele poderá ficar desmarcado quando submetido pelo membro.
 
 No site, as classificações necessárias são marcadas com um asterisco. Se um item for obrigatório e não estiver marcado, uma mensagem será exibida para o membro e o envio será negado até que todas as classificações necessárias sejam marcadas.
 
@@ -68,13 +68,13 @@ No site, as classificações necessárias são marcadas com um asterisco. Se um 
 
    Use a seta para cima, a seta para baixo e os botões para excluir para modificar as seleções visíveis.
 
-   Clique em **[!UICONTROL Adicionar item]** para adicionar outra opção de resposta.
+   Clique em **[!UICONTROL Adicionar Item]** para adicionar outra opção de resposta.
 
 >[!NOTE]
 >
->Se um item for inserido na guia Classificações **** obrigatórias que não esteja especificada na guia Classificações **** permitidas, então ele não será incluído nos itens para classificar.
+>Se um item for inserido na guia **[!UICONTROL Classificações Obrigatórias]** que não está especificada na guia **[!UICONTROL Classificações Permitidas]**, então ele não será incluído nos itens para classificar.
 
-Na guia **[!UICONTROL Revisões]** , especifique como as revisões serão tratadas.
+Na guia **[!UICONTROL Revisões]**, especifique como as revisões serão tratadas.
 
 ![análises](assets/configure-review3.png)
 
@@ -92,7 +92,7 @@ Na guia **[!UICONTROL Revisões]** , especifique como as revisões serão tratad
 
 * **Tamanho máximo do arquivo**
 
-   Relevante somente se a opção **[!UICONTROL Permitir uploads]** de arquivo estiver marcada. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 10 MB.
+   Relevante somente se **[!UICONTROL Permitir uploads de arquivo]** estiver marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 10 MB.
 
 * **[!UICONTROL Comprimento máximo da mensagem de]**
 
@@ -100,7 +100,7 @@ Na guia **[!UICONTROL Revisões]** , especifique como as revisões serão tratad
 
 * **[!UICONTROL Tipos de arquivos permitidos]**
 
-   Relevante somente se a opção **[!UICONTROL Permitir uploads]** de arquivo estiver marcada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+   Relevante somente se **[!UICONTROL Permitir uploads de arquivo]** estiver marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **[!UICONTROL Editor de Rich Text]**
 
@@ -110,7 +110,7 @@ Na guia **[!UICONTROL Revisões]** , especifique como as revisões serão tratad
 
    Se marcada, inclua o recurso Voto para um tópico. O padrão está desmarcado.
 
-Na guia Moderação **[!UICONTROL do]** usuário, especifique como as revisões publicadas serão gerenciadas. Para obter mais informações, consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Na guia **[!UICONTROL Moderação do usuário]**, especifique como as revisões publicadas serão gerenciadas. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
 ![moderação do usuário](assets/configure-review4.png)
 
@@ -148,19 +148,19 @@ Na guia Moderação **[!UICONTROL do]** usuário, especifique como as revisões 
 
 * **[!UICONTROL Limite de sinalização]**
 
-   Insira o número de vezes que uma revisão deve ser sinalizada antes de ser ocultada da visualização pública. Esse número deve ser maior ou igual ao Limite de **[!UICONTROL moderação]**. O padrão é 5.
+   Insira o número de vezes que uma revisão deve ser sinalizada antes de ser ocultada da visualização pública. Esse número deve ser maior ou igual ao **[!UICONTROL Limite de moderação]**. O padrão é 5.
 
-### Adicionar um resumo de revisão (exibição) a uma página {#adding-a-review-summary-display-to-a-page}
+### Adicionar um Resumo da Revisão (Exibição) a uma Página {#adding-a-review-summary-display-to-a-page}
 
-Para adicionar um `Reviews Summary (Display)` componente a uma página no modo de autor, localize o componente
+Para adicionar um componente `Reviews Summary (Display)` a uma página no modo de autor, localize o componente
 
 * `Communities / Reviews Summary (Display)`
 
 e arraste-o para o lugar em uma página onde um resumo de uma revisão ativa ou fechada deve ser exibido.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](reviews-basics.md#essentials-for-client-side) necessárias forem incluídas, será assim que o `Reviews Summary (Display)`componente será exibido.
+Quando as [bibliotecas do lado do cliente necessárias](reviews-basics.md#essentials-for-client-side) forem incluídas, será assim que o componente `Reviews Summary (Display)`aparecerá.
 
 ![resumo da revisão](assets/configure-review5.png)
 
@@ -170,17 +170,17 @@ Quando as bibliotecas [do lado do cliente](reviews-basics.md#essentials-for-clie
 
 ### Configuração do Resumo das Revisões (Exibição) {#configuring-reviews-summary-display}
 
-Selecione o componente inserido a ser acessado e selecione o `Reviews Summary (Display)` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Reviews Summary (Display)` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configure](assets/configure-new.png)
 
-Na guia **[!UICONTROL Revisar resumo]**
+Na guia **[!UICONTROL Resumo da revisão]**
 
 ![resumo da revisão](assets/configure-review6.png)
 
 * `Review Path`
 
-   digite ou navegue até a instância colocada do `reviews`componente para resumir, por exemplo, se adicionada à Página da Web do site de [Envolvimento do Geometrixx,](getting-started.md) o caminho seria:
+   digite ou navegue até a instância colocada do componente `reviews`para resumir, por exemplo, se adicionado à Página da Web do [site de participação no Geometrixx,](getting-started.md) o caminho seria:
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -188,35 +188,35 @@ Na guia **[!UICONTROL Revisar resumo]**
 
    Se marcada, inclua a exibição de um gráfico de barras indicando quantos de cada classificação de estrela existem nas revisões que estão sendo resumidas. O padrão está desmarcado.
 
-### Alteração para um tipo de revisão personalizada {#changing-to-a-custom-review-type}
+### Alteração para um Tipo de Revisão Personalizada {#changing-to-a-custom-review-type}
 
 O componente Revisões usa o Sistema de comentários.
 
 Ao alterar o Tipo de recurso de comentário, o sistema de comentários não gerará mais uma instância de um comentário usando o padrão, mas uma que foi personalizada (estendida) pelos desenvolvedores.
 
-Depois que os tipos de recursos personalizados forem conhecidos, digite Modo [de](../../help/sites-authoring/default-components-designmode.md) design e clique no duplo no componente colocado `Comments` para abrir uma caixa de diálogo com uma guia adicional.
+Quando os tipos de recursos personalizados forem conhecidos, digite [Modo de design](../../help/sites-authoring/default-components-designmode.md) e clique no duplo no componente `Comments` inserido para abrir uma caixa de diálogo com uma guia adicional.
 
-Na guia Tipos **[!UICONTROL de]** recursos, especifique o resourceType personalizado para novas instâncias dos `Comments or Voting` componentes:
+Na guia **[!UICONTROL Tipos de recurso]**, especifique o resourceType personalizado para novas instâncias dos componentes `Comments or Voting`:
 
 ![votação de comentários](assets/configure-review7.png)
 
 * **[!UICONTROL Tipo de recursos de comentários]**
 
-   Navegue até resourceType de um `comment`componente estendido (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`.
+   Navegue até resourceType de um componente `comment`estendido (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`.
 
    Esse recurso identificará o resourceType do UGC criado quando um visitante postar um comentário.
 
 * **[!UICONTROL Tipo de recursos para pesquisa]**
 
-   Navegue até resourceType de um `voting`componente estendido em /apps. Por exemplo, `/apps/social/components/hbs/voting`.
+   Navegue até resourceType de um componente `voting`estendido em /apps. Por exemplo, `/apps/social/components/hbs/voting`.
 
    Esse recurso identificará o tipo de recurso do UGC criado quando um visitante postar um voto.
 
 * **[!UICONTROL Tipo de recurso do sistema de comentários]**
 
-   Navegue até resourceType de um `comments`componente estendido (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página inclua [](scf.md#add-or-include-a-communities-component) dinamicamente o Sistema de comentários no script subjacente em vez de ser adicionado à página como um recurso (nó de comentários). Saiba mais lendo sobre o auxiliar [](handlebars-helpers.md#include){{include}}.
+   Navegue até resourceType de um componente `comments`estendido (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página [inclua dinamicamente](scf.md#add-or-include-a-communities-component) o Sistema de comentários no script subjacente em vez de ser adicionado à página como um recurso (nó de comentários). Saiba mais lendo sobre o auxiliar [{{include}}](handlebars-helpers.md#include).
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
 ### Moderadores e administradores {#moderators-and-administrators}
 
@@ -239,8 +239,8 @@ Os visitantes do site que não estão conectados só podem ler revisões publica
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [Revisar essenciais](reviews-basics.md) para desenvolvedores.
+Mais informações podem ser encontradas na página [Analisar Essentials](reviews-basics.md) para desenvolvedores.
 
-Para moderação de comentários publicados, consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Para moderação de comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-Para obter a tradução de comentários publicados, consulte [Traduzindo conteúdo](translate-ugc.md)gerado pelo usuário.
+Para obter a tradução de comentários postados, consulte [Traduzindo conteúdo gerado pelo usuário](translate-ugc.md).
