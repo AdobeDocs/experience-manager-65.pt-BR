@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Configuração Configurar Fora do Escritório {#configure-out-of-office-settings}
 
-Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
+Se planeja estar fora do escritório, você pode especificar o que acontece com os itens que lhe são atribuídos para esse período.
 
 Você tem a opção de especificar uma data e hora de start e uma data e hora de término para que suas configurações de fora do escritório entrem em vigor. Se você estiver localizado em um fuso horário diferente do servidor, o fuso horário usado será o do cliente.
 
@@ -32,21 +32,21 @@ Você tem a opção de especificar uma data e hora de start e uma data e hora de
 >* Quando há um loop na atribuição, as tarefas permanecem com o usuário original. Por exemplo, quando o Usuário A delega itens ao Usuário B O Usuário B delega ao Usuário C, o Usuário C delega ao Usuário D e o Usuário D delega ao Usuário B, um loop é criado. Nessa situação, o item permanece com o Usuário original. O usuário A é o usuário original no exemplo acima.
 
 
-## Ativar a configuração Fora do escritório para sua conta {#enable-out-of-office}
+## Ative a configuração Fora do escritório para sua conta {#enable-out-of-office}
 
 Execute as seguintes etapas para Ativar a configuração Fora do escritório para sua conta e delegar seus Itens da caixa de entrada a outro usuário:
 
-1. Faça logon na sua instância do AEM. Toque no ícone ![Caixa de entrada](assets/bell.svg) e toque em **[!UICONTROL Visualização tudo]**. Uma lista dos itens da caixa de entrada é exibida.
-1. Toque no ícone Seletor ![de](assets/viewlist.svg) Visualização ou Seletor ![de](assets/calendar.svg) Visualização ao lado do botão **[!UICONTROL Criar]** e toque em **[!UICONTROL Configurações]**. A caixa de diálogo de configurações é exibida.
-1. Abra a guia **[!UICONTROL Sem escritório]** na caixa de diálogo de configurações.
-1. Toque no botão **[!UICONTROL Ativar/Desativar]** para ativar a configuração Fora do escritório.
-1. Especifique a Hora **[!UICONTROL do]** Start e a Hora **[!UICONTROL de]** término para a configuração. Os itens são delegados somente durante o período especificado. Deixe o campo Hora **[!UICONTROL de]** término vazio para delegar itens por um período de tempo indefinido.
-1. Marque a caixa de seleção **[!UICONTROL Encaminhar meus itens durante esse período]** . Se você não selecionar a opção e não especificar um destinatário, seus itens não serão encaminhados a nenhum usuário. Embora esteja ausente e a configuração esteja ativada, os itens permanecerão em sua Caixa de entrada.
-1. Toque em **[!UICONTROL Adicionar destinatário]**. Especifique um usuário no campo **[!UICONTROL Destinatário]** para delegar os itens. Especifique o Modelo **[!UICONTROL de]** Fluxo de Trabalho para delegar ao usuário especificado. Você pode selecionar mais de um modelo de fluxo de trabalho.
+1. Faça logon na sua instância AEM. Toque no ícone ![Caixa de entrada](assets/bell.svg) e toque em **[!UICONTROL Visualização tudo]**. Uma lista dos itens da caixa de entrada é exibida.
+1. Toque no ícone ![Seletor de Visualizações](assets/viewlist.svg) ou ![Seletor de Visualizações](assets/calendar.svg) ao lado do botão **[!UICONTROL Criar]** e toque em **[!UICONTROL Definições]**. A caixa de diálogo de configurações é exibida.
+1. Abra a guia **[!UICONTROL Fora do Office]** na caixa de diálogo de configurações.
+1. Toque no botão **[!UICONTROL Ativar/Desativar]** para ativar a configuração Fora do Escritório.
+1. Especifique **[!UICONTROL Hora do Start]** e **[!UICONTROL Hora de Fim]** para a definição. Os itens são delegados somente durante o período especificado. Deixe o campo **[!UICONTROL Hora Final]** vazio para delegar itens por um período de tempo indefinido.
+1. Marque a caixa de seleção **[!UICONTROL Encaminhar meus itens durante esse período]**. Se você não selecionar a opção e não especificar um destinatário, seus itens não serão encaminhados a nenhum usuário. Embora esteja ausente e a configuração esteja ativada, os itens permanecerão em sua Caixa de entrada.
+1. Toque em **[!UICONTROL Adicionar destinatário]**. Especifique um usuário no campo **[!UICONTROL Destinatário]** para delegar os itens. Especifique **[!UICONTROL Modelo de Fluxo de Trabalho]** para delegar ao usuário especificado. Você pode selecionar mais de um modelo de fluxo de trabalho.
 
    Além disso, para atribuir todos os itens, independentemente do modelo de fluxo de trabalho, a um usuário específico, selecione **[!UICONTROL Todos os Workflows]** na lista suspensa Modelo de fluxo de trabalho. <br>
 
-   Para atribuir itens a um usuário específico para todos os modelos de fluxo de trabalho, exceto alguns, selecione **[!UICONTROL Todos os Workflows]** na lista suspensa Modelo de fluxo de trabalho, toque em **[!UICONTROL + Adicionar exceções]**e especifique os modelos de fluxo de trabalho que serão deixados de fora.
+   Para atribuir itens a um usuário específico para todos os modelos de fluxo de trabalho, exceto alguns, selecione **[!UICONTROL Todos os Workflows]** na lista suspensa Modelo de Fluxo de Trabalho, toque em **[!UICONTROL + Adicionar Exceções]** e especifique os modelos de fluxo de trabalho que serão deixados de fora.
    <br>
 
    Repita a etapa para adicionar mais destinatários. <br>
@@ -62,7 +62,7 @@ Agora, os itens atribuídos a você durante o período Fora do escritório são 
 
 >[!NOTE]
 >
->(Somente para itens de fluxo de trabalho centrados no Forms) Ative **Permitir que o destinatário delegue usando a opção de configurações** &#39;Fora do Office&#39; da etapa **Atribuir tarefa** no fluxo de trabalho. Somente os itens com a opção mencionada acima ativada são delegados a outros usuários.
+>(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **Permitir que o destinatário delegue usando configurações &#39;Fora do Office&#39;** da etapa **Atribuir tarefa** no fluxo de trabalho. Somente os itens com a opção mencionada acima ativada são delegados a outros usuários.
 
 ## Limitações           {#limitations}
 
