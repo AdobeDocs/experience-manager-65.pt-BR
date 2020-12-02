@@ -29,7 +29,7 @@ A AEM Forms fornece APIs que podem ser usadas para o query de dados de formulár
 
 Retorna uma lista de todos os formulários elegíveis.
 
-### URL parameters {#url-parameters}
+### Parâmetros de URL {#url-parameters}
 
 Essa API não requer parâmetros adicionais.
 
@@ -63,7 +63,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 
 Retorna detalhes de todos os formulários enviados. No entanto, você pode usar parâmetros de URL para limitar os resultados.
 
-### URL parameters {#url-parameters-1}
+### Parâmetros de URL {#url-parameters-1}
 
 Especifique os seguintes parâmetros no URL da solicitação:
 
@@ -133,7 +133,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 Adiciona um comentário à instância de envio especificada.
 
-### URL parameters {#url-parameters-2}
+### Parâmetros de URL {#url-parameters-2}
 
 Especifique os seguintes parâmetros no URL da solicitação:
 
@@ -164,7 +164,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 Retorna todos os comentários postados na instância de envio especificada.
 
-### URL parameters {#url-parameters-3}
+### Parâmetros de URL {#url-parameters-3}
 
 Especifique o seguinte parâmetro no URL da solicitação:
 
@@ -202,7 +202,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 Atualiza o valor da propriedade especificada da instância de formulário submetido especificada.
 
-### URL parameters {#url-parameters-4}
+### Parâmetros de URL {#url-parameters-4}
 
 Especifique os seguintes parâmetros no URL da solicitação:
 
