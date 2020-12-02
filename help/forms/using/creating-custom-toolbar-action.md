@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Pré-requisitos {#prerequisite}
 
-Antes de criar uma ação personalizada da barra de ferramentas, familiarize-se com [Usar bibliotecas](/help/sites-developing/clientlibs.md) do lado do cliente e [Desenvolver com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Antes de criar uma ação personalizada da barra de ferramentas, familiarize-se com [Usando bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) e [Desenvolvimento com CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## O que é uma ação {#what-is-an-action-br}
 
@@ -36,24 +36,24 @@ Além do conjunto de ações fornecido por padrão, você pode criar ações per
 
 Para ilustrar a criação de uma ação personalizada da barra de ferramentas, as etapas a seguir o orientam a criar um botão para que os usuários finais revisem todos os campos do formulário adaptável antes de enviar um formulário preenchido.
 
-1. Todas as ações padrão suportadas por formulários adaptáveis estão presentes na `/libs/fd/af/components/actions` pasta. No CRXDE, copie o `fileattachmentlisting` nó de `/libs/fd/af/components/actions/fileattachmentlisting` para `/apps/customaction`.
+1. Todas as ações padrão compatíveis com formulários adaptativos estão presentes na pasta `/libs/fd/af/components/actions`. No CRXDE, copie o nó `fileattachmentlisting` de `/libs/fd/af/components/actions/fileattachmentlisting` para `/apps/customaction`.
 
-1. Depois de copiar o nó para a `apps/customaction` pasta, renomeie o nome do nó para `reviewbeforesubmit`. Além disso, altere as propriedades `jcr:title` e `jcr:description` do nó.
+1. Depois de copiar o nó para a pasta `apps/customaction`, renomeie o nome do nó para `reviewbeforesubmit`. Além disso, altere as propriedades `jcr:title` e `jcr:description` do nó.
 
-   A `jcr:title` propriedade contém o nome da ação exibida na caixa de diálogo da barra de ferramentas. A `jcr:description` propriedade contém mais informações que são exibidas quando um usuário posiciona o ponteiro sobre a ação.
+   A propriedade `jcr:title` contém o nome da ação que é exibida na caixa de diálogo da barra de ferramentas. A propriedade `jcr:description` contém mais informações que são exibidas quando um usuário posiciona o ponteiro sobre a ação.
 
    ![Hierarquia de nós para personalização da barra de ferramentas](assets/action3.png)
 
-1. Selecione `cq:template` nó no `reviewbeforesubmit` nó. Verifique se o valor da `guideNodeClass` propriedade é `guideButton` e altere a `jcr:title` propriedade de acordo.
-1. Altere a propriedade type no `cq:Template` nó. No exemplo atual, altere a propriedade type para button.
+1. Selecione `cq:template` nó no nó `reviewbeforesubmit`. Verifique se o valor da propriedade `guideNodeClass` é `guideButton` e altere a propriedade `jcr:title` de acordo.
+1. Altere a propriedade type no nó `cq:Template`. No exemplo atual, altere a propriedade type para button.
 
    O valor de tipo é adicionado como uma classe CSS no HTML gerado para o componente. Os usuários podem usar essa Classe CSS para criar um estilo para suas ações. O estilo padrão para dispositivos móveis e de desktop é fornecido para os valores de tipo de botão, botão, enviar, redefinir e salvar.
 
 1. Selecione a ação personalizada na caixa de diálogo da barra de ferramentas de edição de formulário adaptável. Um botão Revisar é exibido na barra de ferramentas do painel.
 
-   ![A ação personalizada está disponível na barra](assets/custom_action_available_in_toolbar.png) de ferramentas ![Exibindo a ação da barra de ferramentas criada personalizada](assets/action7.png)
+   ![A ação personalizada está disponível na ](assets/custom_action_available_in_toolbar.png) ![barra de ferramentasExibir a ação da barra de ferramentas criada personalizada](assets/action7.png)
 
-1. Para fornecer funcionalidade ao botão Revisar, adicione algum código JavaScript e CSS e código do lado do servidor no arquivo init.jsp, presente no `reviewbeforesubmit` nó.
+1. Para fornecer funcionalidade ao botão Revisar, adicione algum código JavaScript e CSS e código do lado do servidor no arquivo init.jsp, presente no nó `reviewbeforesubmit`.
 
    Adicione o seguinte código em `init.jsp`.
 
@@ -113,7 +113,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
    </div><!-- /.modal -->
    ```
 
-   Adicione o seguinte código no `ReviewBeforeSubmit.js` arquivo.
+   Adicione o seguinte código no arquivo `ReviewBeforeSubmit.js`.
 
    ```javascript
    /*anonymous function to handle show of review before submit view */
@@ -148,7 +148,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
    });
    ```
 
-   Adicione o seguinte código ao `ReviewBeforeSubmit.css` arquivo.
+   Adicione o seguinte código ao arquivo `ReviewBeforeSubmit.css`.
 
    ```css
    .modal-list .reviewlabel {
@@ -181,7 +181,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
 
    >[!NOTE]
    >
-   >A `GuideBridge` biblioteca não é carregada no modo de criação. Portanto, essa ação personalizada não funciona no modo de criação.
+   >A biblioteca `GuideBridge` não é carregada no modo de criação. Portanto, essa ação personalizada não funciona no modo de criação.
 
    ![Demonstração da ação do botão de revisão personalizado](assets/action9.png)
 
