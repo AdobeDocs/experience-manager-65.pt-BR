@@ -1,8 +1,8 @@
 ---
 title: Página Criar Comentários
 seo-title: Página Criar Comentários
-description: Página Comentários da Visualização
-seo-description: Página Comentários da Visualização
+description: Página Comentários da visualização
+seo-description: Página Comentários da visualização
 uuid: 1f043133-51c6-41e8-bbdb-d9fd7780136b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# Página Criar Comentários {#create-comments-page}
+# Criar página de comentários {#create-comments-page}
 
-**[Componente](overlay-comments.md)Comentários da sobreposição ⇐[Criar Nós](overlay-create-nodes.md)**
+**[⇐ Overlay Comments ](overlay-comments.md) [ComponentCreate Nodes](overlay-create-nodes.md)**
 
 ## Página de comentários {#comments-page}
 
-O guia [Componentes da](components-guide.md) comunidade fornece a capacidade de facilmente se sobrepor ao componente de comentários.
+O [Guia de componentes da comunidade](components-guide.md) oferece a capacidade de facilmente experimentar a sobreposição do componente de comentários.
 
 Visualização a página na instância do autor:
 
@@ -32,4 +32,4 @@ Visualização a página na instância do autor:
 
 ![comentários](assets/comments.png)
 
-**[Componente](overlay-comments.md)Comentários da sobreposição ⇐[Criar Nós](overlay-create-nodes.md)**
+**[⇐ Overlay Comments ](overlay-comments.md) [ComponentCreate Nodes](overlay-create-nodes.md)**
