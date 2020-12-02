@@ -1,8 +1,8 @@
 ---
 title: Ferramentas de teste e rastreamento
 seo-title: Ferramentas de teste e rastreamento
-description: O AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
-seo-description: O AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
+description: AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
+seo-description: AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
 uuid: 12abedb5-4ee7-4389-9340-e628adbbc053
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,6 +12,9 @@ discoiquuid: 3cf0fd8d-7fc8-468a-bb1e-1debb68a82a5
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 ## Testes {#testing}
 
-O AEM fornece:
+AEM fornece:
 
-* [uma estrutura para testar a interface do usuário](/help/sites-developing/hobbes.md)do componente.
+* [uma estrutura para testar a interface do usuário](/help/sites-developing/hobbes.md) do componente.
 * [um mecanismo para testar e depurar componentes](/help/sites-developing/developer-mode.md).
 
 Estas são duas ferramentas de teste de fonte aberta:
@@ -51,7 +54,7 @@ Um sistema de rastreamento de erros que pode ser configurado de acordo com seus 
 
 **Planilhas**
 
-Embora não seja especificamente uma ferramenta de rastreamento de erros, as planilhas geralmente são ** usadas incorretamente para essa finalidade, pois são fáceis de entender e a maioria dos usuários tem experiência de sua funcionalidade.
+Embora não seja especificamente uma ferramenta de rastreamento de erros, as planilhas geralmente são *mis* usadas para esse fim, pois são fáceis de entender e a maioria dos usuários tem experiência de sua funcionalidade.
 
 Se forem usados para rastreamento, então:
 
@@ -60,6 +63,6 @@ Se forem usados para rastreamento, então:
 * devem ser atualizados regularmente.
 * apenas uma cópia principal deve ser mantida e todos devem saber onde está a cópia principal.
 * devem ser acessíveis a todos os membros do projeto.
-* se a segurança for um problema (muitas vezes ocorre em grandes empresas) e o acesso comum não for possível, as cópias poderão ser distribuídas desde que todos entendam que são cópias e não podem ser atualizadas.
+* se a segurança for um problema (geralmente ocorre em empresas grandes) e o acesso comum não for possível, as cópias poderão ser distribuídas desde que todos entendam que são cópias e não podem ser atualizadas.
 
-Novamente, há muitas ferramentas proprietárias para rastrear erros e requisitos de recursos.
+Novamente, há muitas ferramentas proprietárias para rastrear bugs e requisitos de recursos.
