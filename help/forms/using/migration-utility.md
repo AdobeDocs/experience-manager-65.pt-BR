@@ -22,7 +22,7 @@ ht-degree: 2%
 
 # Migrar ativos e documentos da AEM Forms{#migrate-aem-forms-assets-and-documents}
 
-O utilitário de Migração converte os ativos [](../../forms/using/introduction-forms-authoring.md)Adaptive Forms, as configurações [de](/help/sites-developing/extending-cloud-config.md)nuvem e os ativos [do Gerenciamento de](/help/forms/using/cm-overview.md) correspondência do formato usado nas versões anteriores para o formato usado no Forms AEM 6.5. Quando você executa o utilitário de migração, os seguintes itens são migrados:
+O utilitário de Migração converte os [ativos Adaptive Forms](../../forms/using/introduction-forms-authoring.md), [configurações de nuvem](/help/sites-developing/extending-cloud-config.md) e [ativos de Gerenciamento de Correspondência](/help/forms/using/cm-overview.md) do formato usado nas versões anteriores para o formato usado no Forms AEM 6.5. Quando você executa o utilitário de migração, os seguintes itens são migrados:
 
 * Componentes personalizados para formulários adaptáveis
 * Modelos de gerenciamento de correspondência e formulários adaptativos
@@ -39,17 +39,17 @@ Você pode [atualizar](../../forms/using/upgrade.md) para a versão mais recente
 
 **Em caso de atualização no local**
 
-Se você tiver realizado uma atualização no local, a instância atualizada já terá os ativos e os documentos. No entanto, antes de poder usar os ativos e documentos, será necessário instalar o pacote [Compatibilidade do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEMFD (inclui o pacote Compatibilidade do Correspondence Management)
+Se você tiver realizado uma atualização no local, a instância atualizada já terá os ativos e os documentos. Entretanto, antes de usar os ativos e documentos, será necessário instalar o [pacote de compatibilidade do AEMFD](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) (inclui o pacote de compatibilidade do Correspondence Management)
 
-Em seguida, é necessário atualizar os ativos e documentos [executando o utilitário](#runningmigrationutility)de Migração.
+Em seguida, é necessário atualizar os ativos e documentos ao [executar o utilitário de Migração](#runningmigrationutility).
 
 **Em caso de instalação fora do local**
 
-Se for uma instalação fora de lugar (nova), antes de poder usar os ativos e documentos, será necessário instalar o pacote [Compatibilidade do](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) AEMFD (inclui o pacote Compatibilidade do Correspondence Management).
+Se for uma instalação fora de lugar (nova), antes de poder usar os ativos e documentos, será necessário instalar o [pacote de compatibilidade do AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (inclui o pacote de compatibilidade do Correspondence Management).
 
-Em seguida, é necessário importar o pacote de ativos (zip ou cmp) na nova configuração e atualizar os ativos e documentos [executando o utilitário](#runningmigrationutility)de Migração. A Adobe recomenda criar novos ativos na nova configuração somente depois de executar o utilitário de migração.
+Em seguida, é necessário importar seu pacote de ativos (zip ou cmp) na nova configuração e atualizar os ativos e documentos ao [executar o utilitário de Migração](#runningmigrationutility). A Adobe recomenda criar novos ativos na nova configuração somente depois de executar o utilitário de migração.
 
-Devido a alterações [anteriores relacionadas](/help/sites-deploying/backward-compatibility.md) à compatibilidade, os locais de algumas pastas no repositório crx são alterados. Exporte e importe manualmente dependências (bibliotecas e ativos personalizados) da configuração anterior para o ambiente novo.
+Devido às alterações [relacionadas à compatibilidade com versões anteriores](/help/sites-deploying/backward-compatibility.md), os locais de algumas pastas no repositório crx são alterados. Exporte e importe manualmente dependências (bibliotecas e ativos personalizados) da configuração anterior para o ambiente novo.
 
 ## Leia antes de continuar com a migração {#prerequisites}
 
@@ -64,11 +64,11 @@ Para os ativos de Gestão de Correspondência:
 * O estado Pronto para publicar está obsoleto desde o AEM 6.1 Forms, portanto todos os ativos no estado Pronto para publicar são alterados para o estado Modificado.
 * Como a interface do usuário é atualizada no AEM Forms 6.3, as etapas para executar as personalizações também são diferentes. É necessário refazer a personalização se você estiver migrando de uma versão anterior à 6.3.
 * Os Fragmentos de layout mudam de /content/apps/cm/layouts/fragmentlayouts/1001 para /content/apps/cm/modules/fragmentlayouts. A referência do Dicionário de dados em ativos exibe o caminho do Dicionário de dados em vez do nome.
-* Quaisquer espaços de tabulação usados para alinhamento em módulos de texto precisam ser reajustados. Para obter mais informações, consulte Gerenciamento de [correspondência - Uso do espaçamento entre guias para organizar o texto](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
+* Quaisquer espaços de tabulação usados para alinhamento em módulos de texto precisam ser reajustados. Para obter mais informações, consulte [Gerenciamento de correspondência - Usar o espaçamento entre guias para organizar o texto](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 * As configurações do compositor de ativos mudam para as configurações do Gerenciamento de correspondência.
 * Os ativos são movidos em pastas com nomes como Texto existente e Lista existente.
 
-## Uso do utilitário de migração {#using-the-migration-utility}
+## Usando o utilitário de migração {#using-the-migration-utility}
 
 ### Execução do utilitário de migração {#runningmigrationutility}
 
@@ -84,7 +84,7 @@ Quando você executa o Utilitário de migração pela primeira vez, um log é cr
 
 1. Abra o seguinte URL no navegador:
 
-   https://[*hostname*]:[*port*]/[*context_path*]/libs/fd/foundation/gui/content/migration.html
+   https://[*nome do host*]:[*porta*]/[*caminho_do_contexto*]/libs/fd/foundation/gui/content/migration.html
 
    O navegador exibe quatro opções:
 
@@ -95,7 +95,7 @@ Quando você executa o Utilitário de migração pela primeira vez, um log é cr
 
 1. Faça o seguinte para executar a migração:
 
-   * Para migrar **ativos**, toque em Migração de ativos AEM Forms e, na tela seguinte, toque em Migração **de** Start. Os itens a seguir são migrados:
+   * Para migrar **assets**, toque em Migração de ativos AEM Forms e, na tela seguinte, toque em **Migração de Start**. Os itens a seguir são migrados:
 
       * Formulários adaptáveis
       * Fragmentos de documento
@@ -133,16 +133,16 @@ Quando você executa o Utilitário de migração pela primeira vez, um log é cr
       >        * Novos modelos - Modelos de formulários adaptáveis criados usando o editor de modelos em /conf. Isso inclui a migração de regras e scripts criados usando o editor de regras.
 
 
-   * Para migrar de componentes personalizados de forma adaptável, toque em Migração **de componentes personalizados** adaptáveis Forms e, na página Migração de componentes personalizados, toque em Migração **de** Start. Os itens a seguir são migrados:
+   * Para migrar de componentes personalizados de formulário adaptável, toque em **Migração adaptável de componentes personalizados Forms** e, na página Migração de componentes personalizados, toque em **Migração de Start**. Os itens a seguir são migrados:
 
       * Componentes personalizados criados para o Adaptive Forms
       * Sobreposições de componentes, se houver.
-   * Para migrar modelos de formulário adaptáveis, toque em Migração **de modelo Forms adaptável e, na página Migração de componentes personalizados, toque em Migração** de **** Start. Os itens a seguir são migrados:
+   * Para migrar modelos de formulário adaptáveis, toque em **Migração de modelo adaptável Forms** e, na página Migração de componentes personalizados, toque em **Migração de Start**. Os itens a seguir são migrados:
 
       * Modelos de formulário adaptáveis criados em /apps ou /conf usando AEM Editor de modelos.
    * Migre os serviços de Configuração da AEM Forms Cloud para aproveitar o novo paradigma de serviço em nuvem sensível ao contexto, que inclui a interface habilitada para toque (em /conf). Quando você migra os serviços de Configuração da AEM Forms Cloud, os serviços em nuvem em /etc são movidos para /conf. Se você não tiver personalizações de serviços em nuvem que dependam dos caminhos herdados (/etc), é recomendável executar o utilitário de migração logo após a atualização para a versão 6.5 e usar a configuração em nuvem Touch UI para qualquer trabalho adicional. Se você tiver personalizações de serviços em nuvem, continue usando a interface clássica na configuração atualizada até que as personalizações sejam atualizadas para alinhar-se aos caminhos migrados (/conf) e execute o utilitário de migração.
 
-   Para migrar os serviços **em nuvem da** AEM Forms, que incluem o seguinte, toque em Migração de configuração da AEM Forms Cloud (a migração de configuração em nuvem é independente do pacote de compatibilidade da AEMFD), toque em Migração de configurações da AEM Forms Cloud e, na página Migração de configuração, toque em Migração **de** Start:
+   Para migrar **serviços em nuvem da AEM Forms**, que incluem o seguinte, toque em Migração de configuração da AEM Forms Cloud (a migração de configuração em nuvem é independente do pacote de Compatibilidade da AEMFD), toque em Migração de configurações da AEM Forms Cloud e, na página Migração de configuração, toque em **Migração de Start**:
 
    * Serviços em nuvem do Form Data Model
 
@@ -187,19 +187,19 @@ Quando você executa o Utilitário de migração pela primeira vez, um log é cr
 
 
 
-1. Depois que o utilitário de migração terminar de ser executado, vá para as tarefas [de](#housekeepingtasks)manutenção.
+1. Depois que o utilitário de migração terminar de ser executado, prossiga para as [tarefas de manutenção](#housekeepingtasks).
 
-### Tarefas para uso doméstico após executar o utilitário de migração {#housekeepingtasks}
+### Tarefas de casa após executar o utilitário de migração {#housekeepingtasks}
 
 Após executar o utilitário de migração, tome cuidado com as seguintes tarefas de manutenção: [](../../forms/using/import-export-forms-templates.md)
 
 1. Certifique-se de que a versão XFA de layouts e layouts de fragmento seja 3.3 ou posterior. Se você estiver usando layouts e layouts de fragmento de uma versão mais antiga, pode haver problemas na renderização da carta. Para atualizar a versão de um XFA mais antigo para a versão mais recente, conclua as seguintes etapas:
 
-   1. [Baixe o XFA como um arquivo](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) zip da interface do usuário do Forms.
+   1. [Baixe o XFA como um ](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) arquivo zip da interface do usuário do Forms.
    1. Extraia o arquivo.
    1. Abra o arquivo XFA no Designer mais recente e salve-o. A versão do XFA é atualizada para a mais recente.
    1. Carregue o XFA na interface do usuário do Forms.
 
 1. Publique todos os ativos que foram publicados no sistema anterior antes da migração. O utilitário de migração atualiza os ativos somente na instância do autor e para atualizar os ativos nas instâncias de publicação que você precisa para publicar os ativos.
-1. No AEM Forms 6.4 e 6.5, alguns dos direitos dos grupos de usuários dos formulários são alterados. Se você quiser que qualquer um de seus usuários seja capaz de carregar XDPs e Forms adaptável que contêm scripts ou usar o editor de códigos, é necessário adicioná-los ao grupo de usuários avançados para formulários. Da mesma forma, os autores de modelo não podem mais usar o editor de código no Editor de regras. Para que os usuários possam usar o editor de código, adicione-os ao grupo af-template-script-writer. Para obter instruções sobre como adicionar usuários a grupos, consulte [Gerenciamento de usuários e grupos](/help/communities/users.md)de usuários.
+1. No AEM Forms 6.4 e 6.5, alguns dos direitos dos grupos de usuários dos formulários são alterados. Se você quiser que qualquer um de seus usuários seja capaz de carregar XDPs e Forms adaptável que contêm scripts ou usar o editor de códigos, é necessário adicioná-los ao grupo de usuários avançados para formulários. Da mesma forma, os autores de modelo não podem mais usar o editor de código no Editor de regras. Para que os usuários possam usar o editor de código, adicione-os ao grupo af-template-script-writer. Para obter instruções sobre como adicionar usuários a grupos, consulte [Gerenciar usuários e grupos de usuários](/help/communities/users.md).
 
