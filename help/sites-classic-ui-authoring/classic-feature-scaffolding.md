@@ -12,6 +12,9 @@ discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1502'
+ht-degree: 82%
 
 ---
 
@@ -36,7 +39,7 @@ Os scaffolds são armazenados no console de **Ferramentas** do administrador do 
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-The scaffold consists of a form with a field for each piece of content that will make up the page to be created and four important parameters which are accessed through the **Page Properties** of the scaffold page.
+O suporte consiste em um formulário com um campo para cada parte do conteúdo que compõe a página a ser criada e quatro parâmetros importantes que são acessados por meio de **Propriedades da página** da página do suporte.
 
 ![pageprops](assets/pageprops.png)
 
@@ -45,7 +48,7 @@ As propriedades de scaffolding de página são:
 * **Texto do título:** esse é o nome da própria página de scaffolding. Neste exemplo, é chamado de “News”.
 * **Descrição:** isso aparecerá abaixo do título na página de scaffolding.
 * **Modelo de destino:** este é o modelo que o scaffold usará ao criar uma nova página. Neste exemplo, temos um modelo de *Página de conteúdo Geometrrixx*.
-* **Caminho de destino:** este é o caminho da página principal abaixo, a partir da qual este scaffold criará novas páginas. In this example the path is */content/geometrixx/en/news*.
+* **Caminho de destino:** este é o caminho da página principal abaixo, a partir da qual este scaffold criará novas páginas. Neste exemplo, o caminho é */content/geometrixx/en/news*.
 
 O corpo do scaffold é o formulário. Quando um usuário desejar criar uma página usando o scaffold, ele preenche o formulário e clica em *Criar*, na parte inferior. No exemplo **News** acima, o formulário apresenta os seguintes campos:
 
@@ -54,17 +57,17 @@ O corpo do scaffold é o formulário. Quando um usuário desejar criar uma pági
 * **Imagem**: Esse campo corresponde a um Componente de imagem na página resultante.
 * **Imagem/avançado**: **Título:** o título da imagem.
 * **Imagem/avançado**: **Texto alternativo:** o texto alternativo da imagem.
-* **Imagem/Avançado**: **Descrição**: A descrição da imagem.
+* **Imagem/Avançado**:  **Descrição**: A descrição da imagem.
 * **Imagem/avançado**: **Tamanho:** o tamanho da imagem.
 * **Tags/palavras-chave**: metadados a serem atribuídos a esta página. Este campo está sempre presente em cada scaffold.
 
 ### Criação de um scaffold {#creating-a-scaffold}
 
-To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
+Para criar um novo suporte, vá para o console **Ferramentas**, **Andaime de página padrão** e crie uma nova página. Um único tipo de modelo de página estará disponível, o *Modelo de Andaime.*
 
-Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template* and *Target Path*, as described above.
+Vá para **Propriedades da página** da nova página e defina *Texto do título*, *Descrição*, *Modelo do Público alvo* e *Caminho do Público alvo*, conforme descrito acima.
 
-Em seguida, é necessário definir a estrutura da página que este scaffold criará. To do this go into **[design mode](/help/sites-authoring/page-authoring.md#sidekick)**on the scaffold page. Um link será exibido, permitindo editar o scaffold no **editor de caixas de diálogo**.
+Em seguida, é necessário definir a estrutura da página que este scaffold criará. Para fazer isso, vá para o **[modo de design](/help/sites-authoring/page-authoring.md#sidekick)** na página do suporte. Um link será exibido, permitindo editar o scaffold no **editor de caixas de diálogo**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -78,13 +81,13 @@ A definição da caixa de diálogo para um scaffold funciona de maneira semelhan
 
 É útil consultar o exemplo da caixa de diálogo de scaffold **News** no editor de caixas de diálogo para ver como isso funciona. Entre no modo de design na página de scaffold e clique no link do editor de caixas de diálogo.
 
-Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
+Agora, clique no campo de diálogo **Diálogo > Painel de guias > Texto > Texto**, desta forma:
 
 ![textedit](assets/textedit.png)
 
 A lista de propriedades para esse campo será exibida no lado direito do editor de caixa de diálogo, da seguinte forma:
 
-![list_of_properties](assets/list_of_properties.png)
+![lista_of_properties](assets/list_of_properties.png)
 
 Observe a propriedade de nome desse campo. Ela tem o valor
 
@@ -99,25 +102,25 @@ Isso define o local de armazenamento de conteúdo para o texto que será inserid
 
 Observe que, em uma caixa de diálogo de componentes normal, não seria necessário especificar essas informações porque estão implícitas no fato de que a caixa de diálogo já está vinculada a um componente específico.
 
-Para especificar essas duas informações, use campos ocultos. Click on the first hidden field **Dialog > Tab Panel > Text > Hidden**, like this:
+Para especificar essas duas informações, use campos ocultos. Clique no primeiro campo oculto **Caixa de diálogo > Painel de guias > Texto > Oculto**, desta forma:
 
 ![oculto](assets/hidden.png)
 
 As propriedades desse campo oculto são as seguintes:
 
-![hidden_list_props](assets/hidden_list_props.png)
+![hidden_lista_props](assets/hidden_list_props.png)
 
 A propriedade nome desse campo oculto é
 
 `./jcr:content/par/text/textIsRich`
 
-This is a boolean property used to interpret the text string stored at `./jcr:content/par/text/text`.
+Esta é uma propriedade booleana usada para interpretar a string de texto armazenada em `./jcr:content/par/text/text`.
 
 Como sabemos que o texto deve ser interpretado como rich text, especificamos a propriedade `value` (valor) do campo como `true`.
 
 >[!CAUTION]
 >
->The dialog editor allows the user to change the values of *existing* properties in the dialog definition. Para adicionar uma nova propriedade, o usuário deve usar o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por exemplo, quando um novo campo oculto é adicionado a uma definição de caixa de diálogo com o editor de caixa de diálogo, ele não tem uma propriedade *value* (ou seja, uma propriedade com o nome “value”). Se o campo oculto na pergunta exigir a definição de uma propriedade *value* padrão, essa propriedade deverá ser adicionada manualmente com uma das ferramentas de CRX. O valor não pode ser adicionado com o próprio editor de caixas de diálogo. No entanto, quando a propriedade estiver presente, seu valor poderá ser editado com o editor de caixa de diálogo.
+>O editor de diálogo permite que o usuário altere os valores das propriedades *existentes* na definição da caixa de diálogo. Para adicionar uma nova propriedade, o usuário deve usar o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por exemplo, quando um novo campo oculto é adicionado a uma definição de caixa de diálogo com o editor de caixa de diálogo, ele não tem uma propriedade *value* (ou seja, uma propriedade com o nome “value”). Se o campo oculto na pergunta exigir a definição de uma propriedade *value* padrão, essa propriedade deverá ser adicionada manualmente com uma das ferramentas de CRX. O valor não pode ser adicionado com o próprio editor de caixas de diálogo. No entanto, quando a propriedade estiver presente, seu valor poderá ser editado com o editor de caixa de diálogo.
 
 O segundo campo oculto pode ser visualizado ao clicá-lo da seguinte maneira:
 
@@ -125,7 +128,7 @@ O segundo campo oculto pode ser visualizado ao clicá-lo da seguinte maneira:
 
 As propriedades desse campo oculto são as seguintes:
 
-![hidden_list_props2](assets/hidden_list_props2.png)
+![hidden_lista_props2](assets/hidden_list_props2.png)
 
 A propriedade nome desse campo oculto é
 
@@ -135,7 +138,7 @@ e o valor fixo especificado para essa propriedade é
 
 `foundation/components/textimage`
 
-Isso especifica que o componente a ser usado para renderizar o conteúdo de texto deste parágrafo é o componente de *Imagem de texto*. Using with the `isRichText` boolean specified in the other hidden field, the component can render the actual text string stored at `./jcr:content/par/text/text` in the desired way.
+Isso especifica que o componente a ser usado para renderizar o conteúdo de texto deste parágrafo é o componente de *Imagem de texto*. Usando com o booliano `isRichText` especificado no outro campo oculto, o componente pode renderizar a string de texto real armazenada em `./jcr:content/par/text/text` da maneira desejada.
 
 ### Scaffolding com Herança MSM {#scaffolding-with-msm-inheritance}
 
@@ -165,4 +168,4 @@ Depois de desbloquear, é possível restaurar a herança, clicando no símbolo d
 
 >[!NOTE]
 >
->If the inheritance is canceled at the page level (from the Livecopy tab of Page Properties) then all components will be editable in **Scaffolding** mode (they will be shown in unlocked state).
+>Se a herança for cancelada no nível da página (na guia Livecopy das Propriedades da página), todos os componentes poderão ser editados no modo **Scaffolding** (serão exibidos no estado desbloqueado).
