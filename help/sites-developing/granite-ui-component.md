@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
 
-# Criando um novo componente de campo da interface do usuário do Granite{#creating-a-new-granite-ui-field-component}
+# Criando um Novo Componente de Campo da IU Granite{#creating-a-new-granite-ui-field-component}
 
-A interface do usuário Granite fornece uma variedade de componentes projetados para serem usados em formulários; estes são chamados *campos* no vocabulário da IU de Granite. Os componentes padrão do formulário Granite estão disponíveis em:
+A interface do usuário Granite fornece uma variedade de componentes projetados para serem usados em formulários; eles são chamados de *fields* no vocabulário da interface do usuário de Granite. Os componentes padrão do formulário Granite estão disponíveis em:
 
 `/libs/granite/ui/components/foundation/form/*`
 
 >[!NOTE]
 >
->Esses campos de formulário da interface de usuário Granite são de especial interesse, pois são usados para caixas de diálogo [de](/help/sites-developing/developing-components.md)componentes.
+>Esses campos de formulário da interface de usuário do Granite são de especial interesse, pois são usados para [caixas de diálogo do componente](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
->Para obter detalhes completos sobre os campos, consulte a documentação [da interface do usuário do](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)Granite.
+>Para obter detalhes completos sobre os campos, consulte a [documentação da interface do usuário do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 Use a estrutura da UI Foundation Granite para desenvolver e/ou estender componentes Granite. Isso tem dois elementos:
 
@@ -47,15 +50,15 @@ Use a estrutura da UI Foundation Granite para desenvolver e/ou estender componen
 O componente genérico da interface do usuário Granite `field` é composto de dois arquivos de interesse:
 
 * `init.jsp`: trata do processamento genérico; rotulação, descrição e fornece o valor de formulário necessário ao renderizar o campo.
-* `render.jsp`: é aqui que a renderização real do campo é executada e precisa ser substituída para seu campo personalizado; é incluído por `init.jsp`.
+* `render.jsp`: é aqui que a renderização real do campo é executada e precisa ser substituída para seu campo personalizado; é incluído por  `init.jsp`.
 
-Consulte a documentação da interface do usuário [Granite - Campo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) se desejar mais detalhes.
+Consulte a [documentação da interface do usuário do Granite - Field](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) se desejar mais detalhes.
 
 Para obter exemplos, consulte:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * fornecido pela amostra [de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * fornecido pela [Amostra de código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 
@@ -67,9 +70,9 @@ Para obter exemplos, consulte:
 
 ## Criação do script do lado do servidor para o componente {#creating-the-server-side-script-for-the-component}
 
-Seu campo personalizado deve substituir somente o `render.jsp` script, onde você fornece a marcação para o componente. Você pode considerar o JSP (ou seja, o script de renderização) como um invólucro para sua marcação.
+Seu campo personalizado deve substituir somente o script `render.jsp`, onde você fornece a marcação para o componente. Você pode considerar o JSP (ou seja, o script de renderização) como um invólucro para sua marcação.
 
-1. Crie um novo componente que use a `sling:resourceSuperType` propriedade para herdar de:
+1. Crie um novo componente que use a propriedade `sling:resourceSuperType` para herdar de:
 
    `/libs/granite/ui/components/foundation/form/field`
 
@@ -98,9 +101,9 @@ Seu campo personalizado deve substituir somente o `render.jsp` script, onde voc�
 Para adicionar um comportamento específico do cliente ao seu componente:
 
 1. Crie uma clientlib de categoria `cq.authoring.dialog`.
-1. Crie uma clientlib de categoria `cq.authoring.dialog` e defina sua `JS`/ `CSS` dentro dela.
+1. Crie um clientlib de categoria `cq.authoring.dialog` e defina seu `JS`/ `CSS` dentro dele.
 
-   Defina seu `JS`/ `CSS` dentro da clientlib.
+   Defina `JS`/ `CSS` dentro da clientlib.
 
    >[!NOTE]
    >
