@@ -12,6 +12,9 @@ discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +35,7 @@ Por exemplo:
 
 No MCM, você pode acessar:
 
-* **[Painel](#dashboard)**Que é dividido em quatro painéis:
+* **[Painel](#dashboard)** Que é dividido em quatro painéis:
 
    * [Listas](#lists) Este painel mostra as listas que já foram criadas, juntamente com o número de leads nessa lista. Nesse painel, é possível criar uma nova lista diretamente ou através da importação de leads.
 Se selecionar uma lista específica, você será levado para a seção [Listas](#lists) que mostra os detalhes da lista.
@@ -45,26 +48,26 @@ Selecionar um relatório abrirá a página do relatório.
 
    * [Campanhas](#campaigns) Este painel lista suas experiências de campanha, como[ boletins informativos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [ teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
-* **[Leads](#leads)**Aqui você pode gerenciar seus leads. É possível criar ou importar leads, editar detalhes específicos para leads individuais ou excluir quando não forem mais necessários. Também é possível adicionar os leads a diferentes grupos, chamados de Listas.**Observação:**a Adobe não planeja aprimorar mais esse recurso.
-A recomendação é[aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+* **[Leads](#leads)** Aqui você pode gerenciar seus leads. É possível criar ou importar leads, editar detalhes específicos para leads individuais ou excluir quando não forem mais necessários. Também é possível adicionar os leads a diferentes grupos, chamados de Listas. **Observação:** a Adobe não planeja aprimorar mais esse recurso.
+A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
-* **[Listas](#lists)**Aqui você pode gerenciar suas listas (de leads).**Observação:**a Adobe não planeja aprimorar mais esse recurso.
-A recomendação é[aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+* **[Listas](#lists)** Aqui você pode gerenciar suas listas (de leads).**Observação:** a Adobe não planeja aprimorar mais esse recurso.
+A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
-* **[Campanhas](#campaigns)**Aqui você pode gerenciar suas marcas, campanhas e experiências.
+* **[Campanhas](#campaigns)** Aqui você pode gerenciar suas marcas, campanhas e experiências.
 
 ## Painel {#dashboard}
 
 O painel mostra quatro painéis que fornecem uma visão geral de suas listas (de leads), segmentos, relatórios e campanhas. O acesso à funcionalidade básica destes também está disponível aqui.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_painel](assets/mcm_dashboard.png)
 
 ### Leads {#leads}
 
 >[!NOTE]
 >
 >A Adobe não planeja aprimorar mais esse recurso (Gerenciamento de leads).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>A recomendação é aproveitar [Adobe Campaign e a integração para AEM](/help/sites-administering/campaign.md).
 
 No AEM MCM, é possível organizar e adicionar leads, inserindo-os manualmente ou importando uma lista separada por vírgulas (por exemplo, uma lista de endereços). Outras maneiras de gerar leads são a partir de inscrições em informativos ou de inscrições em comunidades (se configuradas, elas podem acionar um fluxo de trabalho que multiplica leads). Os Leads normalmente são categorizados e armazenados em uma lista, de modo a permitir a posterior execução de ações em toda a lista (por exemplo, o envio de um email personalizado para uma determinada lista).
 
@@ -81,7 +84,7 @@ Em **Leads** no painel esquerdo, é possível criar, importar, editar e excluir 
 >[!NOTE]
 >
 >A Adobe não planeja aprimorar mais esse recurso (Gerenciamento de listas).
->Recommendation is to leverage [Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+>A recomendação é aproveitar [Adobe Campaign e a integração para AEM](/help/sites-administering/campaign.md).
 
 As listas permitem organizar seus leads em grupos. Com as listas, é possível direcionar suas campanhas de marketing a um grupo seleto de pessoas (por exemplo, é possível enviar um boletim informativo direcionado para uma lista).
 
@@ -152,7 +155,7 @@ Para campanhas individuais, há duas exibições disponíveis:
 
    * Clicar em um teaser (no painel direito) para definir **Em tempo** e **Tempo desligado**.
 
-1. **Visualização de lista**
+1. **Exibição de lista**
 
    Use o ícone:
 
@@ -164,7 +167,7 @@ Para campanhas individuais, há duas exibições disponíveis:
 
    Aqui você pode:
 
-   * **Criar um** novo... Experiência; por exemplo, ofertas, teasers e boletins informativos do Adobe Target.
+   * Criar um **Novo...experiência**; por exemplo, ofertas Adobe Target, teasers e boletins informativos.
    * **Editar** os detalhes de uma página de teaser ou boletim informativo específico (também é possível clicar duas vezes).
    * Definir as **Propriedades...** para uma página de teaser ou boletim informativo específico.
    * **Simular** a aparência de uma experiência (página de teaser ou boletim informativo).
@@ -176,7 +179,7 @@ Quando a página simulada abrir, será possível abrir o sidekick para alternar 
    * **Pesquisar** texto (o campo Título da experiência será pesquisado).
    * Usar a pesquisa **Avançada** para aplicar filtros na pesquisa.
 
-### Simular as experiências da campanha {#simulating-your-campaign-experiences}
+### Simular as experiências da campanha  {#simulating-your-campaign-experiences}
 
 No MCM, clique em **Campanhas**. Certifique-se de que a exibição de lista está ativa, selecione a experiência necessária da campanha e clique em **Simular**. O ponto de contato (página de teaser ou boletim informativo) será aberto para mostrar a experiência selecionada, conforme o visitante a verá.
 
@@ -184,7 +187,7 @@ No MCM, clique em **Campanhas**. Certifique-se de que a exibição de lista est�
 
 Também é possível também abrir o sidekick (clique na pequena seta para baixo) para alterar para o modo de edição e atualizar a página.
 
-### Analisar as experiências da campanha {#analyzing-your-campaign-experiences}
+### Analisar as experiências da campanha  {#analyzing-your-campaign-experiences}
 
 No MCM, clique em **Campanhas**. Certifique-se de que a exibição de lista está ativa, selecione a experiência necessária da campanha e clique em **Analisar...**. Um gráfico das impressões da página será exibido ao longo do tempo.
 
