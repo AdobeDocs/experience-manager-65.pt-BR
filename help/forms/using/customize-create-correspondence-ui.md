@@ -11,6 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1099'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ O ícone personalizado na interface Criar correspondência
 
 Para configurar uma imagem de logotipo de sua escolha, faça o seguinte:
 
-1. Crie a estrutura de [pastas apropriada no CRX](#creatingfolderstructure).
-1. [Carregue o novo arquivo](#uploadlogo) de logotipo na pasta que você criou no CRX.
+1. Crie a estrutura de pastas apropriada [no CRX](#creatingfolderstructure).
+1. [Carregue o novo ](#uploadlogo) arquivo de logotipo na pasta que você criou no CRX.
 
-1. [Configure o CSS](#createcss) no CRX para se referir ao novo logotipo.
-1. Limpe o histórico do navegador e [atualize a interface de usuário](#refreshccrui)Criar correspondência.
+1. [Configure o ](#createcss) CSSon CRX para se referir ao novo logotipo.
+1. Limpe o histórico do navegador e [atualize a interface de usuário Criar correspondência](#refreshccrui).
 
 ## Criação da estrutura de pastas necessária {#creatingfolderstructure}
 
@@ -47,16 +50,16 @@ A ramificação /apps (estrutura de pastas):
 
 * Certifique-se de que seus arquivos estejam seguros no caso de uma atualização do sistema. No caso de atualização, pacote de recursos ou hot fix, a ramificação /libs é atualizada e, se você hospedar suas alterações na ramificação /libs, elas serão substituídas.
 * Ajuda você a não perturbar o sistema/ramificação atual, que você possivelmente poderá desfazer por engano se usar os locais padrão para armazenar os arquivos personalizados.
-* Ajuda seus recursos a terem prioridade mais alta quando o AEM pesquisa por recursos. O AEM é configurado para pesquisar primeiro a ramificação /apps e depois a ramificação /libs para localizar um recurso. Esse mecanismo significa que o sistema usa sua sobreposição (e as personalizações definidas ali).
+* Ajuda seus recursos a terem prioridade mais alta quando AEM pesquisa por recursos. AEM configurado para pesquisar primeiro a ramificação /apps e depois a ramificação /libs para localizar um recurso. Esse mecanismo significa que o sistema usa sua sobreposição (e as personalizações definidas ali).
 
 Use as seguintes etapas para criar a estrutura de pastas necessária na ramificação /apps:
 
 1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta apps, crie uma pasta nomeada `css` com caminho/estrutura semelhante à pasta css (localizada na pasta ccrui).
+1. Na pasta apps, crie uma pasta chamada `css` com caminho/estrutura semelhante à pasta css (localizada na pasta ccrui).
 
    Etapas para criar a pasta css:
 
-   1. Clique com o botão direito do mouse na pasta **css** no seguinte caminho e selecione **Sobrepor nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Clique com o botão direito do mouse na pasta **css** no seguinte caminho e selecione **Nó de sobreposição**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![Nó Sobreposição](assets/1_overlaynode_css.png)
 
@@ -66,7 +69,7 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
       **Localização da sobreposição:** /apps/
 
-      **Corresponder tipos de nós:** Verificado
+      **Tipos De Nó De Correspondência:** Marcado
 
       ![Caminho do nó da sobreposição](assets/0_1_5ioverlaynodedialog.png)
 
@@ -87,14 +90,14 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
 1. Na pasta apps, crie uma pasta chamada `imgs` com caminho/estrutura semelhante à pasta imgs (localizada na pasta ccrui).
 
-   1. Clique com o botão direito do mouse na pasta **de imagens** no seguinte caminho e selecione **Sobrepor nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Clique com o botão direito do mouse na pasta **imgs** no seguinte caminho e selecione **Nó de sobreposição**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
       **Caminho:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
       **Localização da sobreposição:** /apps/
 
-      **Corresponder tipos de nós:** Verificado
+      **Tipos De Nó De Correspondência:** Marcado
 
    1. Clique em **OK**.
 
@@ -104,7 +107,7 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
 
 1. Clique em **Salvar tudo** para salvar as alterações no servidor.
 
-## Carregar o novo logotipo no CRX {#uploadlogo}
+## Carregue o novo logotipo no CRX {#uploadlogo}
 
 Carregue seu arquivo de logotipo personalizado no CRX. As regras HTML padrão controlam a renderização do logotipo. Os formatos de arquivo de imagem suportados estão de acordo com o navegador que você está usando para acessar o AEM Forms. Todos os navegadores suportam JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem suportados.
 
@@ -115,7 +118,7 @@ Carregue seu arquivo de logotipo personalizado no CRX. As regras HTML padrão co
 Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado para o CRX:
 
 1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, faça logon como Administrador.
-1. No CRXDE, clique com o botão direito do mouse na pasta de **imagens** no seguinte caminho e selecione **Criar > Criar arquivo**:
+1. No CRXDE, clique com o botão direito do mouse na pasta **imgs** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
 
@@ -135,7 +138,7 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Clique com o Duplo na propriedade **jcr:data** .
+1. Clique com o duplo na propriedade **jcr:data**.
 
    A caixa de diálogo Editar jcr:data é exibida.
 
@@ -151,7 +154,7 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
 1. Clique em **Salvar tudo**.
 
-## Crie o CSS para integrar o logotipo à interface do usuário {#createcss}
+## Crie o CSS para integrar o logotipo à interface {#createcss}
 
 A imagem do logotipo personalizado requer que uma folha de estilos adicional seja carregada no contexto do conteúdo.
 
@@ -165,7 +168,7 @@ Use as seguintes etapas para configurar a folha de estilos para renderizar o log
    Etapas para criar o arquivo customcss.css:
 
    1. Clique com o botão direito do mouse na pasta **css** e selecione **Criar > Criar arquivo**.
-   1. Na caixa de diálogo Novo arquivo, especifique o nome do CSS como `customcss.css`(não é possível usar um nome de arquivo diferente) e clique em **OK**.
+   1. Na caixa de diálogo Novo arquivo, especifique o nome do CSS como `customcss.css` (não é possível usar um nome de arquivo diferente) e clique em **OK**.
    1. Adicione o seguinte código ao arquivo css recém-criado. Em content:url no código, especifique o nome da imagem que você carregou para a pasta de imagens no CRXDE.
 
       ```css
