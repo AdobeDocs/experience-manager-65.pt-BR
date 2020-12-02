@@ -27,7 +27,7 @@ ht-degree: 38%
    + [Pesquisar ativos digitais](search-assets.md)
    + [Trabalhar com metadados de ativos](metadata.md)
    + [Ativos multilíngues](multilingual-assets.md)
-   + [Ativos [!DNL Adobe Stock] do usuário em ativos](aem-assets-adobe-stock.md)
+   + [Ativos  [!DNL Adobe Stock] do usuário em ativos](aem-assets-adobe-stock.md)
    + [Visualização de ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
@@ -87,11 +87,11 @@ ht-degree: 38%
    + [Personalizar e estender [!DNL Assets]](extending-assets.md)
    + [Processar ativos usando manipuladores de mídia e workflows](media-handlers.md)
    + [Ampliar funcionalidade de pesquisa](searchx.md)
-   + [Instalar e configurar [!DNL ImageMagick] para trabalhar com [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Instalar e configurar  [!DNL ImageMagick] para trabalhar com [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integrar ativos ao fluxo de atividade](extending-activity-stream.md)
    + [Estender editor de ativos](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
-   + [Suporte a fragmentos de conteúdo [!DNL Assets] na API HTTP](assets-api-content-fragments.md)
+   + [Suporte a fragmentos de conteúdo  [!DNL Assets] na API HTTP](assets-api-content-fragments.md)
    + [[!DNL Assets] desenvolvimento de proxy](proxy.md)
 + Administrar ativos {#administer}
    + [Formatos de arquivo não suportados](assets-formats.md)
@@ -141,7 +141,7 @@ ht-degree: 38%
    + [Fragmentos de conteúdo - excluir considerações](content-fragments/content-fragments-delete.md)
    + [Fragmentos de conteúdo - Marcação](content-fragments/content-fragments-markdown.md)
    + [Criar projetos de tradução para Fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Gerenciar ativos {#managing}
    + [Gerenciar ativos digitais](manage-assets.md)
    + [Gerenciar coleções](manage-collections.md)
    + [Ativar detecção de duplicados](duplicate-detection.md)
