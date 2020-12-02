@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 translation-type: tm+mt
 source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 86%
 
 ---
 
@@ -37,7 +40,7 @@ Cada coluna mostra um valor para o período de relatório atual e também indica
 >
 >Para alterar o período de atualização, [configure o intervalo de importação](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Open the **Sites** console; for example [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. Abra o console **Sites**; por exemplo [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. Na extremidade direita da barra de ferramentas (canto superior direito), clique ou toque no ícone para selecionar **Visualização de lista** (o ícone mostrado dependerá da [visualização atual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
 1. Novamente, na extremidade direita da barra de ferramentas (canto superior direito), clique ou toque no ícone e selecione **Configurações de exibição**. A caixa de diálogo **Configurar colunas** será aberta. Faça as alterações necessárias e confirme com **Atualizar**.
@@ -64,7 +67,7 @@ Os membros do grupo de usuários análise-administradores podem configurar o con
 >
 >Quando uma árvore de páginas contém páginas secundárias associadas a diferentes configurações de nuvem do Adobe Analytics, você não pode configurar as colunas de dados disponíveis para as páginas.
 
-1. In List View, use the view selectors (right of toolbar), select **View Settings** and then **Add Custom Analytics Data**.
+1. Na Visualização da Lista, use os seletores de visualização (à direita da barra de ferramentas), selecione **Configurações de Visualização** e **Adicionar dados personalizados do Analytics**.
 
    ![spad-03](assets/spad-03.png)
 
@@ -76,17 +79,17 @@ Os membros do grupo de usuários análise-administradores podem configurar o con
 
 ### Abrir Content Insight do Sites {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+Abra [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar a eficácia da página.
 
 1. No console Sites, selecione a página para da qual você deseja ver os Content Insights.
 1. Na barra de ferramentas, clique no ícone Analytics e Recomendações.
 
    ![](do-not-localize/chlimage_1-14.png)
 
-## Análise visível do Editor de página (Mapa de atividades) {#analytics-visible-from-the-page-editor-activity-map}
+## Análise visível do Editor de página (Mapa de atividades)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>O plug-in [ActivityMap fornecido pela Adobe Analytics](https://docs.adobe.com/content/help/br/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) agora deve ser usado.
