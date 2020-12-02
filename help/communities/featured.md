@@ -37,25 +37,25 @@ A capacidade de incluir conteúdo pode ser permitida ou não permitida por compo
 Esta seção da documentação descreve:
 
 * Adicionar conteúdo em destaque a um site da comunidade.
-* Configurações do `Featured Content` componente.
+* Configurações do componente `Featured Content`.
 
 ## Adicionar conteúdo em destaque a uma página {#adding-featured-content-to-a-page}
 
-Para adicionar um `Featured Content` componente a uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um componente `Featured Content` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Featured Content`
 
 e arraste-o para o lugar em uma página onde o conteúdo em destaque deve aparecer.
 
-Para obter as informações necessárias, visite Noções básicas sobre componentes [das comunidades](basics.md).
+Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](basics.md).
 
-Quando as bibliotecas [do lado do cliente](essentials-featured.md#essentials-for-client-side) necessárias forem incluídas, o `Featured Content` componente será exibido desta forma:
+Quando as [bibliotecas obrigatórias do lado do cliente](essentials-featured.md#essentials-for-client-side) forem incluídas, o componente `Featured Content` aparecerá desta forma:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
 ## Configuração do conteúdo em destaque {#configuring-featured-content}
 
-Selecione o componente inserido a ser acessado e selecione o `Featured Content` `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Featured Content` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
@@ -63,11 +63,11 @@ Selecione o componente inserido a ser acessado e selecione o `Featured Content` 
 
 ### Guia Configurações {#settings-tab}
 
-Na guia **[!UICONTROL Configurações]** , identifique o conteúdo a ser exibido:
+Na guia **[!UICONTROL Settings]**, identifique o conteúdo a ser exibido:
 
 * **[!UICONTROL Nome para exibição]**
 
-   O título para a lista do conteúdo em destaque. For example `Featured Questions` or `Featured Ideas`. O padrão é `Featured Content` se deixado em branco.
+   O título para a lista do conteúdo em destaque. Por exemplo `Featured Questions` ou `Featured Ideas`. O padrão é `Featured Content` se deixado em branco.
 
 * **[!UICONTROL Local do conteúdo em destaque]**
 
@@ -77,17 +77,17 @@ Na guia **[!UICONTROL Configurações]** , identifique o conteúdo a ser exibido
 
    O número máximo de conteúdos em destaque a serem exibidos. O padrão é 5.
 
-## Experiência com o Visitante do site {#site-visitor-experience}
+## Experiência de Visitante do site {#site-visitor-experience}
 
 A capacidade de sinalizar o conteúdo como conteúdo em destaque requer privilégios de moderador.
 
-Quando um moderador visualização postou conteúdo, ele tem acesso aos sinalizadores de moderação no contexto, que inclui o novo `Feature` sinalizador.
+Quando um moderador visualização postou conteúdo, ele tem acesso aos sinalizadores de moderação no contexto, que inclui o novo sinalizador `Feature`.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
 Depois de sinalizado como recurso, o sinalizador de moderação se torna `Unfeature`.
 
-A página que contém o `Featured Content` componente agora incluirá essa publicação.
+A página que contém o componente `Featured Content` agora incluirá essa publicação.
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -95,6 +95,6 @@ A página que contém o `Featured Content` componente agora incluirá essa publi
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página Conteúdo [](essentials-featured.md) em destaque para desenvolvedores.
+Mais informações podem ser encontradas na página [Conteúdo em destaque](essentials-featured.md) para desenvolvedores.
 
-Para marcar o conteúdo como em destaque, consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Para marcar o conteúdo como em destaque, consulte [Moderando conteúdo gerado pelo usuário](moderate-ugc.md).
