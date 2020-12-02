@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
 source-git-commit: 844d42ed50da153077423190684aa85265bce12f
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -25,35 +28,35 @@ Um autor pode encontrar as seguintes limitações funcionais ao usar o editor pa
 
 ### Links não ativos {#links-not-active}
 
-Ao [editar uma página](/help/sites-authoring/editing-content.md), os links não ficam ativos.
+Quando [editar uma página](/help/sites-authoring/editing-content.md), os links não estão ativos.
 
-* [Alterne para o modo **de** Pré-visualização](/help/sites-authoring/editing-content.md#preview-mode) para navegar usando os links no seu conteúdo.
+* [Alterne para  **** ](/help/sites-authoring/editing-content.md#preview-mode) Visualizar modo de navegação para navegar usando os links no conteúdo.
 
 ### Páginas de estrutura {#structure-pages}
 
-As páginas não podem ser nomeadas `structure`. As páginas nomeadas não `structure` poderão ser editadas no editor de páginas.
+As páginas não podem ser nomeadas como `structure`. As páginas nomeadas como `structure` não poderão ser editadas no editor de páginas.
 
 ## Limitações de CSS {#css-limitations}
 
 Um desenvolvedor pode encontrar as seguintes limitações com as interações do editor com o CSS.
 
-### Elementos totalmente posicionados {#absolutely-positioned-elements}
+### Elementos absolutamente posicionados {#absolutely-positioned-elements}
 
 Elementos com posição absoluta podem causar problemas na posição de sua sobreposição.
 
 * Se isso acontecer, verifique se as dimensões do elemento absolutamente posicionado estão corretas, pois o editor criará uma sobreposição com as mesmas dimensões.
 
-### unidades vh {#vh-units}
+### unidades Vh {#vh-units}
 
-`vh` não há suporte para unidades, pois a altura do iframe deve ser automaticamente ajustada pelo AEM.
+`vh` não há suporte para unidades, pois a altura do iframe deve ser automaticamente ajustada por AEM.
 
-### Imagens de plano de fundo fixas {#fixed-background-images}
+### Imagens em segundo plano fixas {#fixed-background-images}
 
 Imagens de plano de fundo fixas podem não ser exibidas como fixas na rolagem devido ao fato de estarem incorporadas em um iframe.
 
-* Selecionar Página de **Visualização como Publicada** nas ações da barra de cabeçalho exibe a página corretamente.
+* Selecionar **Página de Visualização como Publicada** nas ações da barra de cabeçalho exibe a página corretamente.
 
-### 100% Height {#height}
+### Altura 100% {#height}
 
 A altura de 100% não é suportada no elemento de corpo de uma página.
 
