@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Criar tabelas complexas acessíveis em formulários HTML5 {#create-accessible-complex-tables-in-html-forms}
 
-A implementação padrão de tabelas no HTML5 Forms usa elementos DIV HTML para renderizar uma tabela. A renderização envolve o uso de funções ARIA para atender aos requisitos de acessibilidade.
+A implementação padrão de tabelas no Forms HTML5 usa elementos DIV HTML para renderizar uma tabela. A renderização envolve o uso de funções ARIA para atender aos requisitos de acessibilidade.
 
 Para evitar problemas de acessibilidade com leitores de tela que não suportam totalmente as funções ARIA usadas com tabelas de dados, o HTML5 Forms fornece uma execução alternativa para as tabelas. Essas tabelas são baseadas no novo formato de tabela introduzido no Designer, que também oferece suporte a:
 
 * Cabeçalhos de Linha
 * Intervalo de linha
 
-Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para marcar a tabela como complexa, adicione `extras` tag à fonte XML do subformulário de tabela da seguinte maneira:
+Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para marcar a tabela como complexa, adicione a tag `extras` na fonte XML do subformulário de tabela da seguinte maneira:
 
 ```xml
 </extras>
@@ -34,17 +34,17 @@ Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para mar
  </extras>
 ```
 
-As tabelas marcadas como *complexasTable* seguem a execução HTML nativa e fornecem melhor suporte de acessibilidade para determinados leitores de tela.  Para criar uma extensão de linha, selecione células consecutivas de uma tabela na mesma coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Unir células]**.
+As tabelas marcadas como *complexaTable* seguem a execução HTML nativa e fornecem melhor suporte de acessibilidade para determinados leitores de tela.  Para criar uma extensão de linha, selecione células consecutivas de uma tabela na mesma coluna, clique com o botão direito do mouse na seleção e, em seguida, clique em **[!UICONTROL Unir células]**.
 
 >[!NOTE]
 >
 >A criação de uma extensão de linha funciona somente para células na extremidade esquerda.
 
-Para marcar uma linha como cabeçalho de linha, selecione todas as células na linha, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Marcar cabeçalho]**.
+Para marcar uma linha como cabeçalho de linha, selecione todas as células na linha, clique com o botão direito do mouse na seleção e, em seguida, clique em **[!UICONTROL Marcar cabeçalho]**.
 
-Para marcar uma célula como cabeçalho da coluna, selecione qualquer célula na coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Marcar cabeçalho]**.
+Para marcar uma célula como cabeçalho de coluna, selecione qualquer célula na coluna, clique com o botão direito do mouse na seleção e, em seguida, clique em **[!UICONTROL Marcar cabeçalho]**.
 
-Limitações no novo formato *AccessibleTable* :
+Limitações no novo formato *AccessibleTable*:
 
 * Falta de suporte para campos com capacidade de expansão se a extensão de linha for usada na tabela
 * Não há suporte para tabelas aninhadas (tabelas dentro de células de tabela)
