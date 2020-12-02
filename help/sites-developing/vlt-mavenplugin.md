@@ -20,9 +20,9 @@ A implantação dos pacotes construídos para AEM é realizada pelo plug-in Adob
 >
 >Para obter mais detalhes, consulte:
 >
->* O artigo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) no AEM como uma documentação do Cloud Service para saber como implantar aplicativos AEM.
->* O artigo [AEM Estrutura](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) do projeto no AEM como uma documentação Cloud Service para estruturar projetos AEM modernos.
->* A documentação do [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html) para saber como start um novo projeto AEM usando o arquétipo.
+>* O artigo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) no AEM como uma documentação Cloud Service para saber como implantar aplicativos AEM.
+>* O artigo [AEM Estrutura do projeto](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html) no AEM como uma documentação Cloud Service para estruturar projetos modernos de AEM.
+>* A documentação [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html) para saber como start um novo projeto AEM usando o arquétipo.
 
 >
 >
