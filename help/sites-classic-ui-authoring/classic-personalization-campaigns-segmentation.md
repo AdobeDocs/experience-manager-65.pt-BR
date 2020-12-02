@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 72%
 
 ---
 
@@ -33,26 +36,26 @@ O conteúdo pode então ser direcionado especificamente para as necessidades e o
 
 Segmentos são definidos em [Configuração da segmentação](/help/sites-administering/campaign-segmentation.md). Eles são usados para orientar o conteúdo real visto por um público-alvo específico.
 
-## Terminologia de segmentação {#segmentation-terminology}
+## Terminologia de segmentação  {#segmentation-terminology}
 
 Ao discutir segmentação, a seguinte terminologia é usada:
 
-**Visitante** Um visitante é uma pessoa que visita um site. Normalmente, a visita dessa pessoa começa em uma página de referência e passa para uma ou mais visualizações de página no seu próprio site. Um perfil comportamental pode ser criado a partir dos detalhes da visita dessa pessoa.
+**visitante** VisitorUma pessoa está visitando um site. Normalmente, a visita dessa pessoa começa em uma página de referência e passa para uma ou mais visualizações de página no seu próprio site. Um perfil comportamental pode ser criado a partir dos detalhes da visita dessa pessoa.
 
 **Usuário** Um usuário é um visitante que se registra no site para receber um perfil de conta. Para gerar seu perfil, ele fornece identificação adicional, como endereço de email e gênero, entre outras informações. Informações adicionais também podem ser coletadas, incluindo a atividade na comunidade e os padrões de compra, entre outros. Com base nas informações fornecidas no perfil, um perfil demográfico pode ser criado.
 
-**Característica** Uma característica ou propriedade de um visitante que pode ser usada para determinar a associação em um segmento específico.
+**** CaracterísticaUma característica ou propriedade de um visitante que pode ser usada para determinar a associação em um segmento específico.
 
 **Segmento** Um segmento é uma coleção de visitantes que compartilham certas características. Segmentos devem ser distintos, com um mínimo de sobreposição com outros segmentos.
 
-**Características** comportamentais As características comportamentais são aquelas relacionadas ao comportamento de um visitante no site. Dentre elas:
+**Características** comportamentais Características comportamentais são as que se relacionam com o comportamento de um visitante no site. Dentre elas:
 
 * Interesse no seu site; incluindo páginas visitadas e produtos comprados.
 * Interesse no site de referência; incluindo termos de pesquisa usados ou anúncios clicados.
 * Interesse em outros sites, determinado com o uso de ferramentas como o Spyjax.
 * Fidelidade dos visitantes, duração da visita, frequência de visitas.
 
-**Características** demográficas São características da população selecionadas incluindo:
+**Características demográficas** São características da população selecionadas, incluindo:
 
 * Idade
 * Renda
@@ -67,17 +70,17 @@ Algumas características demográficas são difíceis de determinar sem registro
 
 Por exemplo, a combinação do URL de referência (como uma característica comportamental) com os dados demográficos (adquiridos de ferramentas como o [Google Ad Planner](https://www.google.com/adplanner/)) permite aos proprietários do site obterem características demográficas de seus visitantes.
 
-**Subsegmento** Um segmento pode ser subdividido em vários subsegmentos. Isso é feito com a definição de características adicionais.
+**** SubsegmentoUm segmento pode ser subdividido em vários subsegmentos. Isso é feito com a definição de características adicionais.
 
-**Página** do teaserA página do teaser é direcionada a um público-alvo específico. Ela tem conteúdo reutilizável que pode ser usado no parágrafo de teaser.
+**Página do** teaserUma página do teaser é direcionada a uma audiência específica. Ela tem conteúdo reutilizável que pode ser usado no parágrafo de teaser.
 
-**Campanha** Uma campanha é uma coleção de páginas de teaser e páginas de marketing por email, como boletins informativos ou convites. Normalmente, uma campanha é veiculada por um período limitado, sendo substituída por outra.
+**** CampanhaUma campanha é uma coleção de páginas de teaser e páginas de marketing por email, como boletins informativos ou convites. Normalmente, uma campanha é veiculada por um período limitado, sendo substituída por outra.
 
-**Parágrafo** do TeaserEste é um parágrafo que extrai conteúdo de outra página dependendo de uma estratégia de seleção. Essa estratégia de seleção pode considerar segmentos e campanhas.
+**Parágrafo** do teaserEste é um parágrafo que extrai o conteúdo de outra página dependendo de uma estratégia de seleção. Essa estratégia de seleção pode considerar segmentos e campanhas.
 
-**Lista** A lista é extraída de um segmento de usuários registrados. Por exemplo, a localização usada para orientar o conteúdo do parágrafo de teaser.
+**** ListaUma lista é extraída de um segmento de usuários registrados. Por exemplo, a localização usada para orientar o conteúdo do parágrafo de teaser.
 
 >[!NOTE]
 >
->Please see [Segmentation](/help/sites-administering/campaign-segmentation.md) for further information on segments in AEM.
+>Consulte [Segmentação](/help/sites-administering/campaign-segmentation.md) para obter mais informações sobre os segmentos no AEM.
 
