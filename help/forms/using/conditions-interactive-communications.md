@@ -10,17 +10,20 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1511'
+ht-degree: 0%
 
 ---
 
 
-# Condições em comunicações interativas{#conditions-in-interactive-communications}
+# Condições em Comunicações Interativas{#conditions-in-interactive-communications}
 
 Criação e edição de fragmentos de condição a serem usados no Interative Communications - condição é um dos quatro tipos de fragmentos de documento usados para criar o Interative Communications. Os outros três são textos, listas e fragmentos de layout.
 
 ## Visão geral {#overview}
 
-Condição é um fragmento de documento que pode ser incluído em uma Comunicação interativa. Os outros fragmentos de documento são fragmentos de [texto](../../forms/using/texts-interactive-communications.md), lista e layout. As condições permitem definir um ou mais ativos contextuais que são incluídos em uma Comunicação interativa com base nos dados e regras fornecidos.
+Condição é um fragmento de documento que pode ser incluído em uma Comunicação interativa. Os outros fragmentos de documento são [text](../../forms/using/texts-interactive-communications.md), lista e fragmento de layout. As condições permitem definir um ou mais ativos contextuais que são incluídos em uma Comunicação interativa com base nos dados e regras fornecidos.
 
 Exemplos:
 
@@ -33,12 +36,12 @@ Os ativos nas condições que são renderizados com base nas regras aplicadas e 
 * Quaisquer variáveis que você criar na condição
 * Strings
 * Números
-* expressões matemáticas
+* Expressões matemáticas
 * Datas
 
-## Create condition {#createcondition}
+## Criar condição {#createcondition}
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
+1. Selecione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de Documento]**.
 1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Condição]**.
 1. Especifique as seguintes informações:
 
@@ -46,11 +49,11 @@ Os ativos nas condições que são renderizados com base nas regras aplicadas e 
    * **[!UICONTROL Nome]**: O nome exclusivo da condição, em uma pasta. Não podem existir dois fragmentos de documento (texto, condição ou lista) em qualquer estado com o mesmo nome dentro de uma pasta. No campo Nome, é possível digitar somente caracteres, números e hífens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título. Os caracteres especiais, os espaços, os números e os caracteres que não estão em inglês inseridos no campo Título são substituídos por hífens no campo Nome. Embora o valor no campo Título seja copiado automaticamente para o Nome, é possível editar o valor.
 
    * **[!UICONTROL Descrição]**: Digite uma descrição do fragmento do documento.
-   * **[!UICONTROL Modelo]** de dados de formulário: Como opção, selecione o botão de opção Modelo de dados de formulário para criar a condição com base em um modelo de dados de formulário. Quando o botão de opção Modelo de dados de formulário é selecionado, o campo Modelo **[!UICONTROL de dados de]** formulário é exibido. Procure e selecione um modelo de dados de formulário. Ao criar a condição para uma Comunicação interativa, certifique-se de usar o mesmo modelo de dados que pretende usar na Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte Integração [de](../../forms/using/data-integration.md)dados.
+   * **[!UICONTROL Modelo]** de dados de formulário: Como opção, selecione o botão de opção Modelo de dados de formulário para criar a condição com base em um modelo de dados de formulário. Quando você seleciona o botão de opção Modelo de dados de formulário, o campo **[!UICONTROL Modelo de dados de formulário]** é exibido. Procure e selecione um modelo de dados de formulário. Ao criar a condição para uma Comunicação interativa, certifique-se de usar o mesmo modelo de dados que pretende usar na Comunicação interativa. Para obter mais informações sobre o modelo de dados de formulário, consulte [Integração de dados](../../forms/using/data-integration.md).
 
    * **[!UICONTROL Tags]**: Como opção, para criar uma tag personalizada, insira o valor no campo de texto e toque em Enter. Quando você salva essa condição, as tags recém-adicionadas são criadas.
 
-1. Toque em **[!UICONTROL Avançar]**.
+1. Toque em **[!UICONTROL Next]**.
 
    A página Criar condição é exibida.
 
@@ -64,7 +67,7 @@ Os ativos nas condições que são renderizados com base nas regras aplicadas e 
    >
    >Somente ativos baseados em nenhum e recém-criados e ativos baseados em FDM (criados usando o mesmo FDM que a condição que está sendo criada) aparecem na página Selecionar ativos.
 
-1. Toque nos ativos apropriados para selecioná-los para incluí-los na condição e, em seguida, toque em **[!UICONTROL Concluído]**.
+1. Toque nos ativos apropriados para selecioná-los para inclusão na condição e toque em **[!UICONTROL Concluído]**.
 
    A página Criar condição é exibida e lista os ativos adicionados.
 
@@ -74,15 +77,19 @@ Os ativos nas condições que são renderizados com base nas regras aplicadas e 
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[Uma]Alteração Rejeitada.**Toque nesse ícone para rejeitar as alterações que você pode ter feito no ativo e na regra na condição.   **[B]Aceitar Alteração.**Toque neste ícone para aceitar as alterações feitas no ativo e na regra na condição.   **[C]Ativo do Duplicado.**Toque nesse ícone para criar uma cópia do ativo junto com a regra aplicada, se houver, na condição. Em seguida, você pode continuar editando a regra e o ativo para o ativo duplicado. A duplicação de um ativo é útil para criar regras semelhantes para exibir ativos alternativos com base em um contexto específico.   **[D]Mostrar Pré-visualização.**Toque nesse ícone para exibir uma pré-visualização do ativo na página Criar\Editar condição.   **Reordenar &#39;server&#39;.** Toque e mantenha pressionado este ícone para arrastar e soltar ativos para reorganizá-los em uma condição.
+   **[Alteração ] de ejeção.** Toque nesse ícone para rejeitar as alterações que você pode ter feito no ativo e na regra na condição.
+   **[Alteração ] BAccept.** Toque neste ícone para aceitar as alterações feitas no ativo e na regra na condição.
+   **[Ativo ] duplicado.** Toque nesse ícone para criar uma cópia do ativo junto com a regra aplicada, se houver, na condição. Em seguida, você pode continuar editando a regra e o ativo para o ativo duplicado. A duplicação de um ativo é útil para criar regras semelhantes para exibir ativos alternativos com base em um contexto específico.
+   **[] Como a Pré-visualização.** Toque nesse ícone para exibir uma pré-visualização do ativo na página Criar\Editar condição.
+   **Reordenar &#39;server&#39;.** Toque e mantenha pressionado este ícone para arrastar e soltar ativos para reorganizá-los em uma condição.
 
    Você pode selecionar as seguintes opções para especificar como a condição se comporta no tempo de execução:
 
    * **Avaliação de múltiplos resultados desativada\Avaliação de vários resultados ativada**: Quando essa opção está ativada (aparece como &quot;Avaliação de múltiplos resultados ativada&quot;), todas as regras são avaliadas e o resultado é a soma de todas as regras verdadeiras. Se essa opção estiver desativada (aparece como &quot;Avaliação de resultados múltiplos desativada&quot;), somente a primeira regra que for encontrada como verdadeira será avaliada e se tornará a saída da condição.
 
-   * **Quebra** de página: Selecione essa opção ( ![quebra](assets/break.png)) para adicionar uma quebra de página entre os ativos das condições. Quando essa opção não está selecionada ( ![nobreak](assets/nobreak.png)), se uma condição estiver transbordando para a próxima página na saída de impressão, toda a condição será deslocada para a próxima página em vez de quebrar a página entre os ativos na condição.
+   * **Quebra** de página: Selecione essa opção ( ![quebra](assets/break.png)) para adicionar uma quebra de página entre os ativos das condições. Quando essa opção não estiver selecionada ( ![nobreak](assets/nobreak.png)), se uma condição estiver sendo expandida para a próxima página na saída de impressão, toda a condição será deslocada para a próxima página em vez de ser dividida na página entre os ativos na condição.
 
-1. Toque em **[!UICONTROL Criar regra]** para adicionar regras para exibir ou ocultar os ativos, conforme necessário. Para usar variáveis nas regras, consulte [criação de variáveis](#variables). Para obter mais informações, consulte [Adicionar regras à condição](#ruleeditor).
+1. Toque em **[!UICONTROL Criar regra]** para adicionar regras para exibir ou ocultar os ativos, conforme necessário. Para usar variáveis nas regras, consulte [criar variáveis](#variables). Para obter mais informações, consulte [Adicionar regras à condição](#ruleeditor).
 
    As regras criadas aparecem na coluna REGRA na tela Criar condição.
 
@@ -104,31 +111,32 @@ Os ativos nas condições que são renderizados com base nas regras aplicadas e 
 
 É possível editar uma condição usando as seguintes etapas. Você também pode optar por editar uma condição em uma Comunicação interativa selecionando Editar fragmento no menu pop-up.
 
-1. Selecione **[!UICONTROL Formulários]** > Fragmentos **[!UICONTROL de]** Documento.
+1. Selecione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de Documento]**.
 1. Navegue até a condição e selecione-a.
 1. Toque em **[!UICONTROL Editar]**.
 1. Faça as alterações necessárias na condição. Para obter mais detalhes sobre as informações que podem ser alteradas em uma condição, consulte [Criar condição](#createcondition).
-1. Toque em **[!UICONTROL Salvar]** e, em seguida, toque em **[!UICONTROL Fechar]**.
+1. Toque em **[!UICONTROL Salvar]** e toque em **[!UICONTROL Fechar]**.
 
-## Criar regras em condição {#ruleeditor}
+## Criar regras na condição {#ruleeditor}
 
-Usando o editor de regras em uma condição, é possível criar regras para exibir ou ocultar ativos com base em condições **** predefinidas. Essas condições podem ser construídas com base em:
+Usando o editor de regras em uma condição, você pode criar regras para exibir ou ocultar ativos com base em **condições predefinidas**. Essas condições podem ser construídas com base em:
 
 * Strings
 * Números
-* expressões matemáticas
+* Expressões matemáticas
 * Datas
 * Propriedades do modelo de dados de formulário associado
-* Quaisquer [variáveis](#variables) que você possa ter criado
+* Qualquer [variável](#variables) que você possa ter criado
 
-### Criar regra em condição {#create-rule-in-condition}
+### Criar regra na condição {#create-rule-in-condition}
 
 1. Ao criar ou editar uma condição, toque no ícone ![ruleeditoricon](assets/ruleeditoricon.png) (Editor de regras) para o ativo relevante.
 
    A caixa de diálogo Criar regra é exibida. Além da string, do número, da expressão matemática e da data, os seguintes itens também estão disponíveis no Editor de regras para a criação de declarações das regras:
 
    * Propriedades do modelo de dados de formulário associado
-   * Quaisquer [variáveis](#variables) que você tenha criado.
+   * Qualquer [variável](#variables) que você possa ter criado.
+
    ![createruledialog](assets/createruledialog.png)
 
    Selecione a opção apropriada a ser avaliada.
@@ -144,7 +152,7 @@ Usando o editor de regras em uma condição, é possível criar regras para exib
 
    Regra para mostrar um ativo quando o tipo de política é padrão
 
-   * Ao criar ou editar uma regra, você também pode tocar em ![icon_resize](assets/icon_resize.png) (Redimensionar) para expandir a caixa de diálogo Criar regra/Editar regra. A caixa de diálogo expandida de janela cheia permite criar [variáveis](#variables) para construir regras. Toque em Redimensionar novamente para voltar à caixa de diálogo Criar regra.
+   * Ao criar ou editar uma regra, você também pode tocar em ![icon_resize](assets/icon_resize.png) (Redimensionar) para expandir a caixa de diálogo Criar regra/Editar regra. A caixa de diálogo expandida de janela cheia permite criar [variáveis](#variables) para criar regras. Toque em Redimensionar novamente para voltar à caixa de diálogo Criar regra.
 
    * Você também pode criar várias condições em uma regra.
 
@@ -184,14 +192,14 @@ Toque em Redimensionar novamente para voltar à caixa de diálogo Criar regra\Ed
    * **[!UICONTROL Nome]**: Nome da variável.
    * **[!UICONTROL Descrição]**: Opcionalmente, insira uma descrição sobre a variável.
    * **[!UICONTROL Tipo]**: Selecione um tipo de variável: String, Number, Boolean ou Date.
-   * **[!UICONTROL Permitir somente]** valores específicos: Para variáveis String e Number, é possível garantir que o agente escolha a partir de um conjunto específico de valores para um espaço reservado na interface do agente. Para especificar o conjunto de valores, selecione essa opção e especifique valores separados por vírgulas que são permitidos no campo **[!UICONTROL Valores]** .
+   * **[!UICONTROL Permitir somente]** valores específicos: Para variáveis String e Number, é possível garantir que o agente escolha a partir de um conjunto específico de valores para um espaço reservado na interface do agente. Para especificar o conjunto de valores, selecione essa opção e especifique valores separados por vírgulas que são permitidos no campo **[!UICONTROL Valores]**.
 
 1. Toque em **[!UICONTROL Criar]**.
 
    A variável é criada e listada no painel Variáveis.
 
 1. Para inserir uma variável na regra, arraste e solte a variável em um espaço reservado para uma opção na regra.
-1. Depois de criar uma regra válida, toque em **[!UICONTROL Concluído]**.
+1. Depois de criar uma regra válida, toque em **[!UICONTROL Done]**.
 
    Passe para fazer outras alterações, se necessário, na condição e salvá-la.
 
