@@ -82,9 +82,9 @@ Você pode arrastar e soltar uma imagem do [Navegador de ativos](/help/sites-aut
 
 >[!NOTE]
 >
->You must enter information in the **Alt Text** field, or the image cannot be saved.
+>É necessário inserir informações no campo **Texto alternativo**, ou a imagem não pode ser salva.
 
-After the image is uploaded (and not before) you can use [inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) to crop/rotate the image as required:
+Depois que a imagem é carregada (e não antes), você pode usar [edição local](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) para cortar/girar a imagem conforme necessário:
 
 ![](do-not-localize/chlimage_1-10.png)
 
@@ -143,14 +143,15 @@ O componente Link (Campaign) permite adicionar um link ao seu informativo.
 
 * **Dica de ferramenta do link** Adiciona mais informações sobre como usar o link.
 
-* **LinkType** Na lista suspensa, selecione entre uma 
-**URL** personalizado e um Documento **** adaptável. Este campo é obrigatório. Se você selecionar um URL personalizado, será possível fornecer o URL do link. Se você selecionar Documento adaptável, é possível fornecer o caminho do documento.
+* ****
+LinkTypeNa lista suspensa, selecione entre uma 
+**URL personalizado** e um Documento **** adaptável. Este campo é obrigatório. Se você selecionar um URL personalizado, será possível fornecer o URL do link. Se você selecionar Documento adaptável, é possível fornecer o caminho do documento.
 
 * **Parâmetro de URL adicional** Adicione qualquer parâmetro de URL adicional. Clique em Adicionar item para adicionar vários itens.
 
 >[!NOTE]
 >
->You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>Digite as informações no campo **Tipo de link** na guia **Informações do URL**, ou o componente não pode ser salvo e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
 
@@ -161,11 +162,11 @@ O exemplo a seguir mostra um componente Link (Campaign) sendo exibido.
 
 ### Modelo de imagem do Scene7 (Campaign) {#scene-image-template-campaign}
 
-[Os Modelos](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) de imagem Scene7 são em camadas de arquivos de imagem, onde o conteúdo e as propriedades podem ser parametrizados para a variabilidade. O componente **Modelo de imagem** permite usar modelos do Scene7 em informativos e alterar os valores dos parâmetros de modelo. Além disso, você pode usar variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
+[Os ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Modelos de imagem Scene7 são em camadas de arquivos de imagem, onde o conteúdo e as propriedades podem ser parametrizados para a variabilidade. O componente **Modelo de imagem** permite usar modelos do Scene7 em informativos e alterar os valores dos parâmetros de modelo. Além disso, você pode usar variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-Clique em **Editar** para configurar o componente. Você pode definir as configurações descritas nesta seção. This Scene7 Image template is described in detail in [Scene7 Image Template component](/help/assets/scene7.md#image-template).
+Clique em **Editar** para configurar o componente. Você pode definir as configurações descritas nesta seção. Este modelo de Imagem do Scene7 é descrito detalhadamente em [componente de Modelo de Imagem do Scene7](/help/assets/scene7.md#image-template).
 
 Além disso, o painel de parâmetros lista todos os parâmetros de modelo que foram definidos para o modelo no Scene7. Para cada um desses parâmetros, você pode adaptar o valor, inserir variáveis ou redefini-las para seus valores padrão.
 
@@ -231,13 +232,13 @@ O exemplo a seguir mostra um componente Texto e imagem (Campaign) sendo exibido.
 
 ### Texto e personalização (Campaign) {#text-personalization-campaign}
 
-The Text &amp; Personalization (Campaign) component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). Além disso, esse componente permite usar campos de contexto e blocos de personalização disponíveis no Adobe Campaign. Consulte também [Inserir personalização](/help/sites-authoring/campaign.md#inserting-personalization).
+O componente Texto e personalização (Campanha) permite que você insira um bloco de texto usando um editor WYSIWYG, com funcionalidade fornecida pelo [Editor de Rich Text](/help/sites-authoring/rich-text-editor.md). Além disso, esse componente permite usar campos de contexto e blocos de personalização disponíveis no Adobe Campaign. Consulte também [Inserir personalização](/help/sites-authoring/campaign.md#inserting-personalization).
 
-A seleção de ícones permite que você formate o texto, incluindo características de fontes, alinhamento, links, listas e recuo. The functionality is basically the same in [both UIs](/help/sites-authoring/editing-content.md), although the look-and-feel is different:
+A seleção de ícones permite que você formate o texto, incluindo características de fontes, alinhamento, links, listas e recuo. A funcionalidade é basicamente a mesma em [ambas as interfaces](/help/sites-authoring/editing-content.md), embora a aparência seja diferente:
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
-No editor local, você pode adicionar texto, alterar a justificação, adicionar e remover links, adicionar campos de contexto ou blocos de personalização e entrar no modo de tela inteira. Quando terminar de adicionar texto/personalização, clique na marca de seleção para salvar suas alterações (ou clique no X para cancelar). See [Inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) for more information.
+No editor local, você pode adicionar texto, alterar a justificação, adicionar e remover links, adicionar campos de contexto ou blocos de personalização e entrar no modo de tela inteira. Quando terminar de adicionar texto/personalização, clique na marca de seleção para salvar suas alterações (ou clique no X para cancelar). Consulte [Edição no local](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) para obter mais informações.
 
 >[!NOTE]
 >
@@ -260,7 +261,7 @@ Você usa componentes do Adobe Campaign para criar um formulário que os usuári
 
 Cada campo de componente pode ser vinculado a um campo de banco de dados do Adobe Campaign. Os campos disponíveis diferem de acordo com o tipo de dados que eles contêm, conforme descrito na seção [Componentes e tipo de dados](#components-and-data-type). Se você estender o esquema de destinatários no Adobe Campaign, os novos campos estarão disponíveis nos componentes cujos tipos de dados corresponderem.
 
-When you open a form that is configured to integrate with Adobe Campaign, you see the following components in the **Adobe Campaign** section:
+Ao abrir um formulário configurado para integração com o Adobe Campaign, você verá os seguintes componentes na seção **Adobe Campaign**:
 
 * Caixa de seleção (Campaign)
 * Campo de dados (Campaign) e Campo de data/HTML5 (Campaign)
@@ -278,7 +279,7 @@ Os componentes aparecem da seguinte maneira:
 
 Esta seção descreve cada componente em detalhes.
 
-### Componentes e tipo de dados {#components-and-data-type}
+### Componentes e tipo de dados  {#components-and-data-type}
 
 A tabela a seguir descreve os componentes disponíveis para exibir e modificar dados de perfil do Adobe Campaign. Cada componente pode ser mapeado para um campo de perfil do Adobe Campaign para exibir seu valor e atualizar o campo quando o formulário for enviado. Os diferentes componentes só podem ser correspondidos a campos de um tipo de dados apropriado.
 
@@ -323,7 +324,7 @@ Os componentes do Adobe Campaign têm configurações que são comuns em todos o
 
 Na maioria dos componentes, você pode configurar o seguinte:
 
-#### Título e texto {#title-and-text}
+#### Título e texto  {#title-and-text}
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -374,10 +375,10 @@ Use o campo de data para permitir que os destinatários especifiquem uma data. P
 
 Além das [configurações comuns à maioria dos componentes do Adobe Campaign](#settings-common-to-most-components), você pode configurar o seguinte:
 
-* **Restrições - suspensa** RestriçãoVocê pode selecionar - **Nenhuma** ou **Data -** para adicionar a restrição de uma data ou nenhuma restrição. Se você selecionar data, a resposta que os usuários inserirem no campo deverão estar em um formato de data.
+* **Restrições - menu suspenso** Restrições Você pode selecionar -  **** Nenhuma  **data -** para adicionar a restrição de uma data ou nenhuma restrição. Se você selecionar data, a resposta que os usuários inserirem no campo deverão estar em um formato de data.
 
 * **Mensagem de restrição** Além disso, você pode adicionar uma mensagem de restrição para que os usuários saibam como formatar corretamente suas respostas.
-* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando nos ícones **+** e **-** ou digitando um número.
+* **Estilo -** LarguraAjuste a largura do campo clicando ou tocando nos  **+** e  **-** ícones ou digitando um número.
 
 O exemplo a seguir mostra um componente Campo de dados (Campaign) com a largura ajustada sendo exibida.
 
@@ -425,10 +426,10 @@ Use o campo numérico para permitir que os destinatários insiram números, por 
 
 Além das [configurações comuns à maioria dos componentes do Adobe Campaign](#settings-common-to-most-components), você pode configurar o seguinte:
 
-* **Restrições - menu suspenso** RestriçãoVocê pode selecionar - **Nenhum** ou **Numérico -** para adicionar a restrição de um número ou nenhuma restrição. Se você selecionar um número, a resposta que os usuários inserirem no campo deverá ser numérica.
+* **Restrições - menu suspenso** Restrições Você pode selecionar -  **** Nenhum ou  **Numérico -** para adicionar a restrição de um número ou nenhuma restrição. Se você selecionar um número, a resposta que os usuários inserirem no campo deverá ser numérica.
 
 * **Mensagem de restrição** Além disso, você pode adicionar uma mensagem de restrição para que os usuários saibam como formatar corretamente suas respostas.
-* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando nos ícones **+** e **-** ou digitando um número.
+* **Estilo -** LarguraAjuste a largura do campo clicando ou tocando nos  **+** e  **-** ícones ou digitando um número.
 
 O exemplo a seguir mostra um componente Campo numérico (Campaign) com a largura configurada sendo exibida.
 
@@ -450,7 +451,7 @@ O exemplo a seguir mostra um componente Campo de opções (Campaign) sendo exibi
 
 Use o componente **Lista de verificação de assinaturas (Campaign)** para modificar as assinaturas associadas a um perfil do Adobe Campaign.
 
-Quando adicionado a um formulário, esse componente exibe todas as assinaturas disponíveis como caixas de seleção e permite que o usuário selecione as assinaturas desejadas. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
+Quando adicionado a um formulário, esse componente exibe todas as assinaturas disponíveis como caixas de seleção e permite que o usuário selecione as assinaturas desejadas. Quando os usuários enviam o formulário, esse componente assina o usuário ou cancela a assinatura dos serviços selecionados, dependendo do tipo de ação do formulário (**Adobe Campaign: Assine os Serviços** ou **Adobe Campaign: Cancele a assinatura do Services**).
 
 >[!NOTE]
 >
@@ -468,10 +469,10 @@ O componente Campo de texto (Campaign), que permite inserir dados do tipo sequê
 
 Além das [configurações comuns à maioria dos componentes do Adobe Campaign](#settings-common-to-most-components), você pode configurar o seguinte:
 
-* **Restrições - suspensa** RestriçãoVocê pode selecionar - **Nenhum,** **Email** ou **Nome** (sem tremas) - para adicionar a restrição de endereço de email, nome ou nenhuma restrição. Se você selecionar um email, a resposta que os usuários inserirem no campo deverá ser um endereço de email. Se você selecionar um nome, a resposta deverá ser um nome (tremas não são permitidos).
+* **Restrições - menu suspenso** Restrições Você pode selecionar -  **Nenhum,** **Email** ou  **Nome**  (sem tremas) - para adicionar a restrição de endereço de email, nome ou nenhuma restrição. Se você selecionar um email, a resposta que os usuários inserirem no campo deverá ser um endereço de email. Se você selecionar um nome, a resposta deverá ser um nome (tremas não são permitidos).
 
 * **Mensagem de restrição** Além disso, você pode adicionar uma mensagem de restrição para que os usuários saibam como formatar corretamente suas respostas.
-* **Estilo - Largura** Ajusta a largura do campo clicando ou tocando nos ícones **+** e **-** ou digitando um número.
+* **Estilo -** LarguraAjuste a largura do campo clicando ou tocando nos  **+** e  **-** ícones ou digitando um número.
 
 O exemplo a seguir mostra um componente Campo de texto (Campaign) sendo exibido.
 
