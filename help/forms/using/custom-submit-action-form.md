@@ -1,8 +1,8 @@
 ---
 title: Ação de gravação de envio personalizado para formulários adaptáveis
 seo-title: Ação de gravação de envio personalizado para formulários adaptáveis
-description: O AEM Forms permite criar uma ação de envio personalizada para formulários adaptáveis. Este artigo descreve o procedimento para adicionar uma ação de envio personalizada para formulários adaptáveis.
-seo-description: O AEM Forms permite criar uma ação de envio personalizada para formulários adaptáveis. Este artigo descreve o procedimento para adicionar uma ação de envio personalizada para formulários adaptáveis.
+description: O AEM Forms permite que você crie uma ação de envio personalizada para formulários adaptáveis. Este artigo descreve o procedimento para adicionar uma ação de envio personalizada para formulários adaptáveis.
+seo-description: O AEM Forms permite que você crie uma ação de envio personalizada para formulários adaptáveis. Este artigo descreve o procedimento para adicionar uma ação de envio personalizada para formulários adaptáveis.
 uuid: fd8e1dac-b997-4e86-aaf6-3507edcb3070
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Ação de gravação de envio personalizado para formulários adaptáveis{#writing-custom-submit-action-for-adaptive-forms}
+# Escrevendo ação de envio personalizado para formulários adaptáveis{#writing-custom-submit-action-for-adaptive-forms}
 
-Formulários adaptáveis exigem ações de envio para processar dados especificados pelo usuário. Uma ação Enviar determina a tarefa executada nos dados que você envia usando um formulário adaptável. O Adobe Experience Manager (AEM) inclui ações [de envio de](../../forms/using/configuring-submit-actions.md) OOTB que demonstram tarefas personalizadas que você pode executar usando os dados enviados pelo usuário. Por exemplo, você pode realizar tarefas, como enviar e-mail ou armazenar os dados.
+Formulários adaptáveis exigem ações de envio para processar dados especificados pelo usuário. Uma ação Enviar determina a tarefa executada nos dados que você envia usando um formulário adaptável. A Adobe Experience Manager (AEM) inclui [ações de Enviar OOTB](../../forms/using/configuring-submit-actions.md) que demonstram tarefas personalizadas que você pode executar usando os dados enviados pelo usuário. Por exemplo, você pode realizar tarefas, como enviar e-mail ou armazenar os dados.
 
 ## Fluxo de trabalho para uma ação Enviar {#workflow-for-a-submit-action}
 
@@ -30,7 +30,7 @@ O fluxograma descreve o fluxo de trabalho de uma ação Enviar que é acionada q
 
 ### Formato de dados XML {#xml-data-format}
 
-Os dados XML são enviados para o servlet usando o parâmetro **`jcr:data`** request. As ações de envio podem acessar o parâmetro para processar os dados. O código a seguir descreve o formato dos dados XML. Os campos vinculados ao modelo de formulário são exibidos na **`afBoundData`** seção. Campos não vinculados são exibidos na `afUnoundData`seção. Para obter mais informações sobre o formato do `data.xml` arquivo, consulte [Introdução ao preenchimento prévio dos campos](../../forms/using/prepopulate-adaptive-form-fields.md)adaptáveis.
+Os dados XML são enviados para o servlet usando o parâmetro de solicitação **`jcr:data`**. As ações de envio podem acessar o parâmetro para processar os dados. O código a seguir descreve o formato dos dados XML. Os campos vinculados ao modelo de formulário são exibidos na seção **`afBoundData`**. Campos não vinculados são exibidos na seção `afUnoundData`. Para obter mais informações sobre o formato do arquivo `data.xml`, consulte [Introdução ao pré-preenchimento de campos de formulário adaptáveis](../../forms/using/prepopulate-adaptive-form-fields.md).
 
 ```xml
 <?xml ?>
@@ -54,15 +54,15 @@ Os dados XML são enviados para o servlet usando o parâmetro **`jcr:data`** req
 
 ### Campos de ação {#action-fields}
 
-Uma ação Enviar pode adicionar campos de entrada ocultos (usando a tag de [entrada](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) HTML) ao formulário renderizado HTML. Esses campos ocultos podem conter valores necessários durante o processamento do envio do formulário. Ao enviar o formulário, esses valores de campo são lançados de volta como parâmetros de solicitação que a ação Enviar pode usar durante a manipulação de envio. Os campos de entrada são chamados de campos de ação.
+Uma ação Enviar pode adicionar campos de entrada ocultos (usando a tag HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input)) ao formulário renderizado HTML. Esses campos ocultos podem conter valores necessários durante o processamento do envio do formulário. Ao enviar o formulário, esses valores de campo são lançados de volta como parâmetros de solicitação que a ação Enviar pode usar durante a manipulação de envio. Os campos de entrada são chamados de campos de ação.
 
 Por exemplo, uma ação Enviar que também captura o tempo gasto para preencher um formulário pode adicionar os campos de entrada ocultos `startTime` e `endTime`.
 
-Um script pode fornecer os valores dos campos `startTime` e `endTime` quando o formulário é renderizado e antes do envio do formulário, respectivamente. O script de ação Enviar `post.jsp` pode então acessar esses campos usando parâmetros de solicitação e calcular o tempo total necessário para preencher o formulário.
+Um script pode fornecer os valores dos campos `startTime` e `endTime` quando o formulário é renderizado e antes do envio do formulário, respectivamente. O script de ação Enviar `post.jsp` pode acessar esses campos usando parâmetros de solicitação e calcular o tempo total necessário para preencher o formulário.
 
 ### Anexos de arquivo {#file-attachments}
 
-As ações de envio também podem usar os anexos de arquivo carregados usando o componente Anexo de arquivo. Os scripts de ação Submit podem acessar esses arquivos usando a API [sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html)RequestParameter. O método [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) da API ajuda a identificar se o parâmetro de solicitação é um arquivo ou um campo de formulário. É possível repetir os parâmetros de Solicitação em uma ação Enviar para identificar os parâmetros de Anexo de arquivo.
+As ações de envio também podem usar os anexos de arquivo carregados usando o componente Anexo de arquivo. Os scripts de ação Submit podem acessar esses arquivos usando a API sling [RequestParameter](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). O método [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) da API ajuda a identificar se o parâmetro de solicitação é um arquivo ou um campo de formulário. É possível repetir os parâmetros de Solicitação em uma ação Enviar para identificar os parâmetros de Anexo de arquivo.
 
 O código de amostra a seguir identifica os anexos de arquivo na solicitação. Em seguida, ele lê os dados no arquivo usando a [Get API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Finalmente, cria um objeto de Documento usando os dados e o anexa a uma lista.
 
@@ -84,26 +84,26 @@ Se a ação não fornecer um caminho de encaminhamento, o servlet Enviar redirec
 
 >[!NOTE]
 >
->Um autor fornece o URL de redirecionamento (usando a Configuração da página de agradecimento). [As ações](../../forms/using/configuring-submit-actions.md) de envio de OTB usam o URL de redirecionamento para redirecionar o navegador do recurso ao qual o caminho de encaminhamento faz referência.
+>Um autor fornece o URL de redirecionamento (usando a Configuração da página de agradecimento). [As ](../../forms/using/configuring-submit-actions.md) ações Enviar OTB utilizam o URL de redirecionamento para redirecionar o navegador do recurso ao qual o caminho de encaminhamento faz referência.
 >
->Você pode gravar uma ação de Enviar personalizada que encaminha uma solicitação para um recurso ou servlet. A Adobe recomenda que o script que executa a manipulação de recursos para o caminho de encaminhamento redirecione a solicitação para o URL de redirecionamento quando o processamento for concluído.
+>Você pode gravar uma ação de Enviar personalizada que encaminha uma solicitação para um recurso ou servlet. O Adobe recomenda que o script que executa a manipulação de recursos para o caminho de encaminhamento redirecione a solicitação para o URL de redirecionamento quando o processamento for concluído.
 
-## Submit action {#submit-action}
+## Enviar ação {#submit-action}
 
 Uma ação Enviar é uma sling:Folder que inclui o seguinte:
 
-* **addfields.jsp**: Esse script fornece os campos de ação adicionados ao arquivo HTML durante a execução. Use esse script para adicionar os parâmetros de entrada ocultos necessários durante a submissão no script post.POST.jsp.
+* **addfields.jsp**: Esse script fornece os campos de ação adicionados ao arquivo HTML durante a execução. Use esse script para adicionar os parâmetros de entrada ocultos necessários durante o envio no script post.POST.jsp.
 * **dialog.xml**: Esse script é semelhante à caixa de diálogo Componente do CQ. Ele fornece informações de configuração que o autor personaliza. Os campos são exibidos na guia Enviar ações na caixa de diálogo Edição de formulário adaptável quando você seleciona a ação Enviar.
 * **post.POST.jsp**: O servlet Enviar chama esse script com os dados que você envia e os dados adicionais nas seções anteriores. Qualquer menção à execução de uma ação nesta página implica a execução do script post.POST.jsp. Para registrar a ação Enviar com os formulários adaptáveis a serem exibidos na caixa de diálogo Edição de formulário adaptável, adicione essas propriedades à sling:Folder:
 
-   * **guideComponentType** do tipo String e valor **fd/af/components/guidesubmittype**
-   * **guideDataModel** do tipo String que especifica o tipo de formulário adaptável ao qual a ação Enviar é aplicável. **xfa** é suportado para formulários adaptativos baseados em XFA, enquanto **xsd** é suportado para formulários adaptativos baseados em XSD. **o Basic** é compatível com formulários adaptáveis que não usam XDP ou XSD. Para exibir a ação em vários tipos de formulários adaptáveis, adicione as strings correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível em formulários adaptativos baseados em XFA e XSD, especifique os valores **xfa** e **xsd** respectivamente.
+   * **** guideComponentType do tipo String e valor  **fd/af/components/guidesubmittype**
+   * **** guideDataModelof tipo String que especifica o tipo de formulário adaptável ao qual a ação Enviar é aplicável. **Há suporte para** xfais adaptativos baseados em XFA e  **** xsdis são suportados para formulários adaptativos baseados em XSD. **Há suporte** básico para formulários adaptáveis que não usam XDP ou XSD. Para exibir a ação em vários tipos de formulários adaptáveis, adicione as strings correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível em formulários adaptativos baseados em XFA e XSD, especifique os valores **xfa** e **xsd** respectivamente.
 
-   * **jcr:descrição** do tipo String. O valor dessa propriedade é exibido na lista de ação Enviar na guia Enviar ações da caixa de diálogo Edição de formulário adaptável. As ações OOTB estão presentes no repositório CRX no local **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:** descrição do tipo String. O valor dessa propriedade é exibido na lista de ação Enviar na guia Enviar ações da caixa de diálogo Edição de formulário adaptável. As ações OOTB estão presentes no repositório CRX no local **/libs/fd/af/components/guidesubmittype**.
 
 ## Criação de uma ação Enviar personalizada {#creating-a-custom-submit-action}
 
-Execute as seguintes etapas para criar uma ação Enviar personalizada que salve os dados no repositório CRX e, em seguida, envie um email para você. O formulário adaptável contém a ação Enviar Conteúdo do Repositório de Ação OOTB (obsoleto) que salva os dados no repositório CRX. Além disso, o CQ fornece uma API de [email](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) que pode ser usada para enviar emails. Antes de usar a API de email, [configure](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring o serviço de email) o serviço Day CQ Mail pelo console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório CRX.
+Execute as seguintes etapas para criar uma ação Enviar personalizada que salve os dados no repositório CRX e, em seguida, envie um email para você. O formulário adaptável contém a ação Enviar Conteúdo do Repositório de Ação OOTB (obsoleto) que salva os dados no repositório CRX. Além disso, o CQ fornece uma API [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) que pode ser usada para enviar emails. Antes de usar a API de email, [configure] (https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring o serviço de email) o serviço Day CQ Mail pelo console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório CRX.
 
 1. Faça logon no CRXDE Lite no URL https://&lt;servidor>:&lt;porta>/crx/de/index.jsp. Crie um nó com a propriedade sling:Folder e name store_and_mail na pasta /apps/custom_submit_action. Crie a pasta custom_submit_action se ela já não existir.
 
@@ -125,13 +125,13 @@ Execute as seguintes etapas para criar uma ação Enviar personalizada que salve
 
    Adicione as seguintes propriedades no nó store_and_email:
 
-   * **guideComponentType** do tipo **String** e valor **fd/af/components/guidesubmittype**
+   * **** guideComponentType do tipo  **** Stringand value  **fd/af/components/guidesubmittype**
 
-   * **guideDataModel** do tipo **String** e valor **xfa, xsd, basic**
+   * **** guideDataModelof type  **** Stringand value  **xfa, xsd, basic**
 
-   * **jcr:descrição** do tipo **String** e valor **Store e ação de email**
+   * **jcr:** descrição do tipo  **** String e valor  **Store e ação de email**
 
-1. Abra qualquer formulário adaptável. Clique no botão **Editar** ao lado de **Start** para abrir a caixa de diálogo **Editar** do container de formulário adaptável. A nova ação é exibida na guia **Enviar ações** . Selecionar a Ação **de** Armazenamento e Email exibe a configuração adicionada no nó de diálogo.
+1. Abra qualquer formulário adaptável. Clique no botão **Editar** ao lado de **Start** para abrir a caixa de diálogo **Editar** do container de formulário adaptável. A nova ação é exibida na guia **Enviar ações**. A seleção de **Loja e Ação de E-mail** exibe a configuração adicionada no nó de diálogo.
 
    ![Caixa de diálogo Enviar configuração de ação](assets/store_and_email_submit_action_dialog.jpg)
 
@@ -139,7 +139,7 @@ Execute as seguintes etapas para criar uma ação Enviar personalizada que salve
 
    Adicione o script post.POST.jsp à sua ação. (/apps/custom_submit_action/store_and_mail/).
 
-   Execute a ação da Loja OOTB (script post.POST.jsp). Use a API [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que o CQ fornece em seu código para executar a Loja ação. Adicione o seguinte código no arquivo JSP:
+   Execute a ação da Loja OOTB (script post.POST.jsp). Use a API [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) que o CQ fornece em código para executar a ação Loja. Adicione o seguinte código no arquivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -149,7 +149,7 @@ Execute as seguintes etapas para criar uma ação Enviar personalizada que salve
 
    `String mailTo = properties.get("mailTo");`
 
-   Por fim, use a CQ Mail API para enviar o email. Use a classe [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) para criar o Objeto de e-mail, como mostrado abaixo:
+   Por fim, use a CQ Mail API para enviar o email. Use a classe [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) para criar o Objeto de e-mail, conforme mostrado abaixo:
 
    >[!NOTE]
    >
