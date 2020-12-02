@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos no AEM. Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
 
-Após instalar o pacote [complementar do](../../forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms, os grupos mencionados neste artigo, como usuários de formulários e usuários avançados de formulários, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições do grupo:
+Depois que você instalar [o pacote complementar do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como usuários de formulários e usuários avançados de formulários, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições do grupo:
 
 <table>
  <tbody>
@@ -32,7 +32,7 @@ Após instalar o pacote [complementar do](../../forms/using/installing-configuri
    <td>Tarefas</td> 
   </tr>
   <tr>
-   <td>usuários de formulários <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Criar, pré-visualização, publicar e enviar formulários adaptativos</li> 
@@ -62,7 +62,7 @@ Após instalar o pacote [complementar do](../../forms/using/installing-configuri
     </ul> </td> 
   </tr>
   <tr>
-   <td>autores-modelo <sup>[2]</sup></td> 
+   <td>template-author <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Criar e pré-visualização formulários adaptáveis ou modelos de comunicação interativa</li> 
@@ -94,7 +94,7 @@ Após instalar o pacote [complementar do](../../forms/using/installing-configuri
    <td>usuários do fluxo de trabalho</td> 
    <td>
     <ul> 
-     <li>Usar aplicativos<br /> de caixa de entrada AEM <strong>Nota: </strong>É necessário ter atribuições de grupos de usuários-agente-cm e usuários-fluxo de trabalho para acessar a interface do usuário do Agente do Interative Communications na caixa de entrada AEM.</li> 
+     <li>Use AEM aplicativos de caixa de entrada<br /> <strong>Observação: </strong>É necessário ter usuários com agente de cm e atribuições de grupo de usuários de fluxo de trabalho para acessar a interface do usuário do Interative Communications Agent na caixa de entrada AEM.</li> 
      <li>Gerenciar instâncias de fluxo de trabalho</li> 
     </ul> </td> 
   </tr>
