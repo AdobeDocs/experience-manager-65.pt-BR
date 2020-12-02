@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Adicionar ação personalizada em itens do lister de formulários{#adding-custom-action-on-form-lister-items}
 
-No AEM Forms, é possível criar uma página de portal que lista os formulários disponíveis. Por padrão, você pode pesquisar e lista formulários em uma página do portal. Você pode abrir formulários para preencher e enviar suas informações. Somente as ações de renderização são fornecidas prontamente para formulários listados em uma página do portal. Para saber mais sobre as ações disponíveis em uma página de portal, consulte [Criar uma página](../../forms/using/creating-form-portal-page.md)de portal de formulários.
+No AEM Forms, você pode criar uma página de portal que lista os formulários disponíveis. Por padrão, você pode pesquisar e lista formulários em uma página do portal. Você pode abrir formulários para preencher e enviar suas informações. Somente as ações de renderização são fornecidas prontamente para formulários listados em uma página do portal. Para saber mais sobre as ações disponíveis em uma página de portal, consulte [Criar uma página de portal de formulários](../../forms/using/creating-form-portal-page.md).
 
 É possível adicionar outras opções à página do portal. Essas opções ou ações podem ser personalizadas personalizando o modelo do portal de formulários.
 
 Este artigo mostra como criar um botão para enviar o link de um formulário, diretamente de uma página do portal de formulários. Esta personalização requer a atualização do modelo para o componente de Pesquisa e Lister.
 
-O código necessário para adicionar a ação ao modelo está disponível abaixo. O `onclick` atributo no trecho de código tem um script para enviar um link de um formulário por email.
+O código necessário para adicionar a ação ao modelo está disponível abaixo. O atributo `onclick` no trecho de código tem um script para enviar um link de um formulário por email.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -47,7 +47,7 @@ O código necessário para adicionar a ação ao modelo está disponível abaixo
 </div>
 ```
 
-É possível adicionar ações semelhantes no modelo personalizado. Para definir uma função JavaScript, adicione a função em um script de nível de página e vincule-a ao elemento HTML necessário. No exemplo acima, a `onclick` expressão é a função vinculada.
+É possível adicionar ações semelhantes no modelo personalizado. Para definir uma função JavaScript, adicione a função em um script de nível de página e vincule-a ao elemento HTML necessário. No exemplo acima, a expressão `onclick` é a função vinculada.
 
 Depois de fazer as edições no modelo, a página do portal de amostra contém um botão para enviar o link do formulário por email, como mostrado abaixo.
 
