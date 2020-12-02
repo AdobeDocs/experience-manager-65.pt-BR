@@ -1,8 +1,8 @@
 ---
 title: Funções remotas no Expressão Builder
 seo-title: Builder de expressões
-description: O Construtor de Expressões no Gerenciamento de correspondência permite criar expressões e funções remotas.
-seo-description: O Construtor de Expressões no Gerenciamento de correspondência permite criar expressões e funções remotas.
+description: O Construtor de expressões no Gerenciamento de correspondência permite criar expressões e funções remotas.
+seo-description: O Construtor de expressões no Gerenciamento de correspondência permite criar expressões e funções remotas.
 uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Funções remotas no Expressão Builder{#remote-functions-in-expression-builder}
+# Funções remotas no Construtor de Expressões{#remote-functions-in-expression-builder}
 
 Usando o Construtor de Expressões, você pode criar expressões ou condições que executam cálculos em valores de dados fornecidos pelo Dicionário de dados ou por usuários finais. O Gerenciamento de correspondência usa o resultado da avaliação da expressão para selecionar ativos como texto, imagens, listas e condições e inseri-los na correspondência, conforme necessário.
 
-## Criação de expressões e funções remotas com o expressão Builder {#creating-expressions-and-remote-functions-with-expression-builder}
+## Criação de funções expressão e remotas com o expressão Builder {#creating-expressions-and-remote-functions-with-expression-builder}
 
 O Construtor de Expressões usa internamente bibliotecas JSP EL, de modo que a expressão adere à sintaxe JSPEL. Para obter mais informações, consulte [Exemplo de expressões](#exampleexpressions).
 
@@ -32,7 +32,7 @@ O Construtor de Expressões usa internamente bibliotecas JSP EL, de modo que a e
 
 Os operadores disponíveis para uso no expressão estão disponíveis na barra superior do construtor de expressões.
 
-### expressões de exemplo {#exampleexpressions}
+### Expressões de exemplo {#exampleexpressions}
 
 Estes são alguns exemplos de JSP EL comumente usados que podem ser usados na solução Gerenciamento de correspondência:
 
@@ -40,9 +40,9 @@ Estes são alguns exemplos de JSP EL comumente usados que podem ser usados na so
 * Para concatenar duas strings: ${str1} ${str2}
 * Para comparar dois números: ${age &lt; 18}
 
-Você pode encontrar mais informações na especificação [](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)JSP EL. O gerenciador de expressões do cliente não suporta determinadas variáveis e funções na especificação JSP EL, especificamente:
+Você pode encontrar mais informações na [especificação JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). O gerenciador de expressões do cliente não suporta determinadas variáveis e funções na especificação JSP EL, especificamente:
 
-* Os índices de coleção e as chaves de mapa (usando a [] notação) não são suportados em nomes de variáveis para expressão avaliados no cliente.
+* Os índices de coleção e as chaves de mapa (usando a notação []) não são suportados em nomes de variáveis para expressão avaliados no lado do cliente.
 * A seguir estão os tipos de parâmetros ou tipos de retorno de funções usados no expressão:
 
    * java.lang.String
@@ -78,10 +78,10 @@ As funções remotas fornecem a capacidade de usar a lógica personalizada no ex
 Você pode criar um pacote personalizado para exportar suas próprias funções remotas para uso no expressão. Para criar um pacote personalizado para exportar suas próprias funções remotas, execute as seguintes tarefas. Ele demonstra como gravar uma função personalizada que coloca em letra maiúscula sua string de entrada.
 
 1. Defina uma interface para o serviço OSGi que contenha métodos que estão sendo exportados para uso pelo Gerenciador de Expressões.
-1. Declare os métodos na interface A e anote-os com a anotação @ServiceMethod (com.adobe.exm.exm.exval.ServiceMethod). O Gerenciador de Expressões ignora todos os métodos não anotados. A anotação ServiceMethod tem os seguintes atributos opcionais que também podem ser especificados:
+1. Declare os métodos na interface A e anote-os com a anotação @ServiceMethod (com.adobe.exm.exm.exval.ServiceMethod). O Gerenciador de expressões ignora todos os métodos não anotados. A anotação ServiceMethod tem os seguintes atributos opcionais que também podem ser especificados:
 
-   1. **Ativado**: Determina se este método está ativado. O Gerenciador de Expressões ignora os métodos desativados.
-   1. **familyId**: Especifica a família do método (grupo). Se estiver vazio, o Gerenciador de Expressões assumirá que o método pertence à família padrão. Não há registro de famílias (exceto o padrão) a partir das quais as funções são escolhidas. O Gerenciador de Expressões cria dinamicamente o registro, tirando uma união de todas as IDs de família especificadas por todas as funções exportadas pelos vários pacotes. Certifique-se de que a ID especificada aqui seja razoavelmente legível, já que também é exibida na interface do usuário de criação de expressões.
+   1. **Ativado**: Determina se este método está ativado. O Gerenciador de expressões ignora os métodos desativados.
+   1. **familyId**: Especifica a família do método (grupo). Se estiver vazio, o Gerenciador de Expressões assumirá que o método pertence à família padrão. Não há registro de famílias (exceto o padrão) a partir das quais as funções são escolhidas. O Gerenciador de expressões cria dinamicamente o registro, tirando uma união de todas as IDs de família especificadas por todas as funções exportadas pelos vários pacotes. Certifique-se de que a ID especificada aqui seja razoavelmente legível, já que também é exibida na interface do usuário de criação de expressões.
    1. **displayName**: Um nome legível para a função. Esse nome é usado para fins de exibição na interface do usuário de criação. Se estiver vazio, o Gerenciador de Expressões construirá um nome padrão usando o prefixo e o nome local da função.
    1. **Descrição**: Uma descrição detalhada da função. Essa descrição é usada para fins de exibição na interface do usuário de criação. Se estiver vazio, o Gerenciador de Expressões construirá uma descrição padrão usando o prefixo e o nome local da função.
 
@@ -157,8 +157,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Abaixo estão os arquivos de amostra a serem usados:
 
-* **GoodFunctions.jar.zip** é o arquivo jar com um pacote que contém uma amostra de definição de função remota. Baixe o arquivo GoodFunctions.jar.zip e descompacte-o para obter o arquivo jar.
-* **GoodFunctions.zip** é o pacote de código fonte para definir uma função remota personalizada e criar um pacote para ela.
+* **GoodFunctions.jar.** zipis é o arquivo jar com um pacote que contém uma amostra de definição de função remota. Baixe o arquivo GoodFunctions.jar.zip e descompacte-o para obter o arquivo jar.
+* **GoodFunctions.** zipis é o pacote de código fonte para definir uma função remota personalizada e criar um pacote para ela.
 
 GoodFunctions.jar.zip
 
