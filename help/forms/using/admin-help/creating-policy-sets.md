@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 0%
 
 ---
 
@@ -19,68 +22,68 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Os conjuntos de políticas são usados para agrupar políticas que têm um objetivo comercial comum. Conjuntos de políticas podem ser disponibilizados para um subconjunto de usuários no sistema.
 
-Cada conjunto de políticas tem pelo menos um coordenador de conjunto de políticas associado. O coordenador *do conjunto de* políticas é um administrador ou usuário com permissões adicionais. O coordenador do conjunto de políticas é tipicamente um especialista na organização que pode melhor criar as políticas em um determinado conjunto de políticas.
+Cada conjunto de políticas tem pelo menos um coordenador de conjunto de políticas associado. O *coordenador do conjunto de políticas* é um administrador ou um usuário com permissões adicionais. O coordenador do conjunto de políticas é tipicamente um especialista na organização que pode melhor criar as políticas em um determinado conjunto de políticas.
 
-Os coordenadores dos conjuntos de políticas podem executar estas tarefas:
+Os coordenadores de conjuntos de políticas podem executar estas tarefas:
 
 * Criar novas políticas
 * Editar e excluir qualquer política no conjunto de políticas
 * Editar configurações de conjunto de políticas
 * Adicionar e remover coordenadores para o conjunto de políticas
-* Exibir eventos de política e documento para qualquer política ou documento dentro do conjunto de políticas
+* Política de visualização e eventos de documento para qualquer política ou documento dentro do conjunto de políticas
 * Revogar acesso a documentos
 * Alternar políticas para o documento
 
-Os conjuntos de políticas são criados e excluídos na interface do administrador de segurança do documento por superusuários e coordenadores de definição de política que têm permissão para isso.
+Os conjuntos de políticas são criados e excluídos na interface do administrador de segurança do documento por superusuários e coordenadores de conjuntos de políticas que têm permissão para isso.
 
-Quando você exclui um conjunto de políticas, as políticas que faziam parte do conjunto não podem ser aplicadas a novos documentos. No entanto, você pode exibir as informações da política no console de administração e nas páginas da Web do usuário final para as políticas que ainda estão em uso. É possível exibir as informações da política na página de detalhes do documento para qualquer documento protegido pela política. As políticas ainda em uso podem ser editadas.
+Quando você exclui um conjunto de políticas, as políticas que faziam parte do conjunto não podem ser aplicadas a novos documentos. No entanto, você pode visualização as informações de política no console de administração e nas páginas da Web do usuário final para políticas que ainda estão em uso. Você pode visualização as informações de política da página de detalhes do documento para qualquer documento protegido pela política. As políticas ainda em uso podem ser editadas.
 
-O superusuário ou coordenador de conjunto de políticas adiciona domínios criados no Gerenciamento de usuários ao usuário e grupo visíveis para cada conjunto de políticas. Essa lista é visível para o coordenador do conjunto de políticas e é usada para colocar limites em quais domínios o coordenador do conjunto de políticas pode navegar ao escolher usuários para adicionar às políticas.
+O superusuário ou coordenador de conjunto de políticas adiciona domínios criados no Gerenciamento de usuários ao usuário e grupo visíveis para cada conjunto de políticas. Essa lista é visível para o coordenador do conjunto de políticas e é usada para colocar limites em quais domínios o coordenador do conjunto de políticas pode navegar ao escolher usuários a serem adicionados às políticas.
 
-Ao criar conjuntos de políticas, você atribui aos usuários a função de editor de documentos. O editor *do* documento é o usuário que protege o documento com uma política. Esse usuário está, por padrão, sempre incluído em uma política com direitos de acesso totais, incluindo recursos de revogação e switching de política. No entanto, os administradores podem alterar os direitos de acesso do editor do documento para políticas compartilhadas. Por exemplo, o administrador pode desativar o direito do editor do documento de revogar o acesso ao documento ou alterar a política. Se um administrador mudar a política anexada ao documento, o nome do Editor será atualizado para o nome do proprietário da política aplicada por último ao documento.
+Ao criar conjuntos de políticas, você atribui aos usuários a função de editor de documentos. O *publicador do documento* é o usuário que protege o documento com uma política. Esse usuário está, por padrão, sempre incluído em uma política com direitos de acesso totais, incluindo recursos de revogação e switching de política. No entanto, os administradores podem alterar os direitos de acesso do editor do documento para políticas compartilhadas. Por exemplo, o administrador pode desativar o direito do editor do documento de revogar o acesso ao documento ou alterar a política. Se um administrador mudar a política anexada ao documento, o nome do Editor será atualizado para o nome do proprietário da política aplicada por último ao documento.
 
-Após a instalação da segurança do documento, um conjunto de políticas padrão é criado chamado Conjunto *de Políticas* Global. Esse conjunto de políticas é gerenciado pelo administrador que instalou o software ou pelo coordenador do conjunto de políticas designado para esse conjunto de políticas.
+Após a instalação da segurança do documento, um conjunto de políticas padrão é criado chamado *Conjunto de Políticas Global*. Esse conjunto de políticas é gerenciado pelo administrador que instalou o software ou pelo coordenador do conjunto de políticas designado para esse conjunto de políticas.
 
 ## Criar um conjunto de políticas {#create-a-policy-set}
 
-Conjunto de políticas global é o único conjunto de políticas padrão criado na instalação. Você pode criar outros conjuntos de políticas e adicionar políticas, usuários, coordenadores de conjuntos de políticas e editores de documentos. Depois de criar um conjunto de políticas, você pode criar políticas dentro do conjunto.
+Conjunto de políticas global é o único conjunto de políticas padrão criado após a instalação. Você pode criar outros conjuntos de políticas e adicionar políticas, usuários, coordenadores de conjuntos de políticas e editores de documentos. Depois de criar um conjunto de políticas, você pode criar políticas dentro do conjunto.
 
 Durante a criação do conjunto de políticas, você pode usar o botão Voltar para retornar à tela anterior e o botão Salvar para salvar o conjunto de políticas a qualquer momento.
 
-1. Na página Segurança do documento, clique em Políticas, clique na guia Conjuntos de políticas e clique em Novo.
+1. Na página Segurança do documento, clique em Políticas, clique na guia Conjuntos de políticas e, em seguida, clique em Novo.
 1. Na caixa Nome, digite um nome para o conjunto de políticas, digite opcionalmente uma Descrição e clique em Avançar. O nome não pode conter dois pontos **:**.
 
    >[!NOTE]
    >
-   >É possível criar um nome de conjunto de políticas que contenha caracteres estendidos; no entanto, quando uma comparação é feita entre duas strings, caracteres acentuados e não acentuados como &quot;e&quot; e &quot;é&quot; são considerados iguais. Quando alguém cria um conjunto de políticas, uma comparação é feita para verificar se um conjunto de políticas com o mesmo nome já existe. A comparação não pode distinguir entre nomes iguais, exceto caracteres acentuados. Pressupõe-se que o conjunto de políticas já esteja adicionado ao banco de dados e o novo não seja adicionado.
+   >É possível criar um nome de conjunto de políticas que contenha caracteres estendidos; no entanto, quando uma comparação é feita entre duas strings, caracteres acentuados e não acentuados, como &quot;e&quot; e &quot;é&quot;, são considerados iguais. Quando alguém cria um conjunto de políticas, uma comparação é feita para verificar se um conjunto de políticas com o mesmo nome já existe. A comparação não pode distinguir entre nomes que são os mesmos, exceto caracteres acentuados. Pressupõe-se que o conjunto de políticas já esteja adicionado ao banco de dados e o novo não seja adicionado.
 
-1. (Opcional) Para definir os domínios que estão visíveis para os Editor de documentos quando eles adicionam usuários a uma política, clique em Adicionar domínios, selecione os domínios que podem ser pesquisados, clique em Adicionar e em OK.
+1. (Opcional) Para definir os domínios que estão visíveis para os Editores de Documentos quando eles adicionam usuários a uma política, clique em Adicionar domínios, selecione os domínios que podem ser pesquisados, clique em Adicionar e em OK.
 1. Na página Adicionar usuários e grupos visíveis, clique em Avançar.
 1. (Opcional) Para adicionar um coordenador de conjunto de políticas, clique em Adicionar usuários e grupos na página Adicionar coordenadores de conjunto de políticas (Etapa 3 de 4) e execute estas tarefas:
 
    * Na caixa Localizar, digite o nome ou endereço de email.
-   * Na lista Uso, selecione a opção apropriada.
-   * Na lista Tipo, selecione Usuário e, na lista Em, selecione um domínio para pesquisar.
-   * Na lista Exibir, selecione o número de resultados a serem exibidos por página e clique em Localizar.
+   * Na lista Using (Uso), selecione a opção apropriada.
+   * Na lista Tipo, selecione Usuário e, na lista Na, selecione um domínio para pesquisar.
+   * Na lista de exibição, selecione o número de resultados a serem exibidos por página e clique em Localizar.
    * Marque a caixa de seleção do usuário ou grupo a ser adicionado e clique em Avançar.
    * Selecione as permissões do coordenador do conjunto de políticas e clique em Adicionar. As seguintes permissões podem ser definidas:
 
-      * Exibir eventos
-      * Gerenciar documentos (revogar e restabelecer o acesso aos documentos e ativar políticas em documentos)
+      * Eventos visualizações
+      * Gerenciar documentos (revogar e reinstalar o acesso a documentos e ativar políticas em documentos)
       * Gerenciar políticas (criar, editar e excluir políticas)
-      * Gerenciamento de editores de documento (adicionar e remover editores de documento)
+      * Gerenciando editores de Documentos (adicionar e remover editores de Documentos)
       * Delegar (adicionar e remover coordenadores de conjunto de políticas)
 
 1. Repita a etapa 5 para adicionar mais coordenadores de conjunto de políticas.
 1. Revise as configurações do coordenador do conjunto de políticas e clique em Avançar.
-1. Clique em Adicionar usuários e grupos para adicionar editores de documento que podem usar as políticas dentro do conjunto de políticas para proteger documentos.
-1. Na página Adicionar editores de documento, execute estas tarefas:
+1. Clique em Adicionar usuários e grupos para adicionar editores de documentos que podem usar as políticas dentro do conjunto de políticas para proteger documentos.
+1. Na página Adicionar editores de Documento, execute estas tarefas:
 
    * Na caixa Localizar, digite o nome ou endereço de email.
-   * Na lista Uso, selecione a opção apropriada.
-   * Na lista Tipo, selecione Usuário e, na lista Em, selecione um domínio para pesquisar.
-   * Na lista Exibir, selecione o número de resultados a serem exibidos por página e clique em Localizar.
-   * Marque as caixas de seleção para os usuários e grupos a serem adicionados, clique em Adicionar e em OK.
+   * Na lista Using (Uso), selecione a opção apropriada.
+   * Na lista Tipo, selecione Usuário e, na lista Na, selecione um domínio para pesquisar.
+   * Na lista de exibição, selecione o número de resultados a serem exibidos por página e clique em Localizar.
+   * Marque as caixas de seleção para os usuários e grupos a serem adicionados, clique em Adicionar e, em seguida, clique em OK.
 
 1. Clique em Salvar.
 
@@ -91,14 +94,14 @@ Agora é possível adicionar políticas ao conjunto de políticas. (Consulte [Cr
 1. Na página Segurança do documento, clique em Políticas, clique na guia Conjuntos de políticas e clique no conjunto de políticas para editar.
 1. Clique na guia apropriada e edite conforme necessário:
 
-   * **** Detalhe: Edite o nome e a descrição do conjunto de políticas.
-   * **** Políticas: Criar, ativar, editar e excluir políticas dentro do conjunto de políticas.
-   * **** Usuários e grupos visíveis: Adicione e remova usuários e grupos visíveis que podem ser incluídos em uma política.
-   * **** Coordenadores do conjunto de políticas: Adicione, remova e altere permissões para coordenadores.
-   * **** Editores de documentos: Adicione e remova usuários que podem publicar documentos usando as políticas do conjunto.
+   * **Detalhe:** edite o nome e a descrição do conjunto de políticas.
+   * **Políticas:** Criar, ativar, editar e excluir políticas dentro do conjunto de políticas.
+   * **Usuários e grupos visíveis:** adicione e remova usuários e grupos visíveis que podem ser incluídos em uma política.
+   * **Coordenadores do conjunto de políticas:** Adicionar, remover e alterar permissões para coordenadores.
+   * **Publicadores de documentos:** adicione e remova usuários que podem publicar documentos usando as políticas no conjunto.
 
-1. Para excluir um usuário ou grupo visível, Coordenador do conjunto de políticas ou Editor de documentos, clique na guia apropriada, marque a caixa de seleção da entrada, clique em Excluir e clique em OK.
-1. Para adicionar usuários ou grupos visíveis, um Coordenador de conjunto de políticas ou Editores de documentos, clique na guia apropriada, clique em Adicionar usuários ou grupos, procure o usuário ou grupo a ser adicionado, selecione a entrada, clique em Adicionar e clique em OK.
+1. Para excluir um usuário ou grupo visível, Coordenador do conjunto de políticas ou Editor de Documentos, clique na guia apropriada, marque a caixa de seleção da entrada, clique em Excluir e, em seguida, clique em OK.
+1. Para adicionar usuários ou grupos visíveis, um Coordenador de conjunto de políticas ou Editores de Documentos, clique na guia apropriada, clique em Adicionar usuários ou grupos, procure o usuário ou grupo a ser adicionado, selecione a entrada, clique em Adicionar e clique em OK.
 1. Na guia Políticas, procure por políticas para adicionar ao conjunto de políticas e criar novas políticas:
 
    * Para pesquisar por uma política, selecione ID da política ou Nome da política, digite o valor correspondente, selecione o número de itens a serem exibidos e clique em Localizar.
@@ -106,7 +109,7 @@ Agora é possível adicionar políticas ao conjunto de políticas. (Consulte [Cr
 
 ## Excluir um conjunto de políticas {#delete-a-policy-set}
 
-Quando você exclui um conjunto de políticas, as políticas que faziam parte do conjunto não podem ser aplicadas a novos documentos. No entanto, você pode exibir as informações da política no console de administração e nas páginas da Web do usuário final para as políticas que ainda estão em uso. É possível exibir as informações da política na página de detalhes do documento para qualquer documento protegido pela política. As políticas ainda em uso podem ser editadas.
+Quando você exclui um conjunto de políticas, as políticas que faziam parte do conjunto não podem ser aplicadas a novos documentos. No entanto, você pode visualização as informações da política no console de administração e nas páginas da Web do usuário final para políticas que ainda estão em uso. Você pode visualização as informações de política da página de detalhes do documento para qualquer documento protegido pela política. As políticas ainda em uso podem ser editadas.
 
 1. Clique em Políticas e na guia Conjuntos de políticas.
 1. Marque a caixa de seleção do conjunto de políticas a ser excluído.
