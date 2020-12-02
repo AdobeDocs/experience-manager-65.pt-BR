@@ -21,13 +21,13 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 >
 >Somente os usuários com permissões de edição em ativos podem relacionar e desrelacionar os ativos.
 
-## Relate assets {#relating-assets}
+## Relacionar ativos {#relating-assets}
 
-1. Na [!DNL Experience Manager] interface, abra a página **[!UICONTROL Propriedades]** de um ativo que você deseja relacionar.
+1. Na interface [!DNL Experience Manager], abra a página **[!UICONTROL Propriedades]** de um ativo que você deseja relacionar.
 
    ![abrir a página Propriedades de um ativo para relacionar o ativo](assets/asset-properties-relate-assets.png)
 
-   *Figura:[!DNL Assets][!UICONTROL Página Propriedades]para relacionar ativos.*
+   *Figura:  [!DNL Assets] [!UICONTROL Apropriação ] para relacionar ativos.*
 
    Como alternativa, selecione o ativo na visualização da lista.
 
@@ -37,29 +37,29 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Para relacionar outro ativo com o ativo selecionado, clique em **[!UICONTROL Relacionar]** ativos ![](assets/do-not-localize/link-relate.png) relacionados na barra de ferramentas.
+1. Para relacionar outro ativo com o ativo selecionado, clique em **[!UICONTROL Relacionar]** ![ativos relacionados](assets/do-not-localize/link-relate.png) na barra de ferramentas.
 1. Faça uma das seguintes opções:
 
    * Para relacionar o arquivo de origem do ativo, selecione **[!UICONTROL Origem]** na lista.
    * Para relacionar um arquivo derivado, selecione **[!UICONTROL Derivado]** da lista.
    * Para criar uma relação bidirecional entre os ativos, selecione **[!UICONTROL Outros]** na lista.
 
-1. Na tela **[!UICONTROL Selecionar ativo]** , navegue até o local do ativo que deseja relacionar e selecione-o.
+1. Na tela **[!UICONTROL Selecionar ativo]**, navegue até o local do ativo que deseja relacionar e selecione-o.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Clique em **[!UICONTROL Confirmar]**.
-1. Click **[!UICONTROL OK]** to close the dialog. Dependendo da sua escolha de relacionamento na etapa 3, o ativo relacionado é listado sob uma categoria apropriada na seção **[!UICONTROL Relacionado]** . Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Origem]**.
+1. Clique em **[!UICONTROL OK]** para fechar a caixa de diálogo. Dependendo da sua escolha de relacionamento na etapa 3, o ativo relacionado é listado sob uma categoria apropriada na seção **[!UICONTROL Relacionado]**. Por exemplo, se o ativo relacionado for o arquivo de origem do ativo atual, ele será listado em **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Para cancelar a relação de um ativo, clique em **[!UICONTROL Cancelar a relação]** de ativos ![](assets/do-not-localize/link-unrelate-icon.png) não relacionados na barra de ferramentas.
+1. Para cancelar a relação de um ativo, clique em **[!UICONTROL Cancelar a relação]** ![ativos não relacionados](assets/do-not-localize/link-unrelate-icon.png) na barra de ferramentas.
 
-1. Selecione o(s) ativo(s) que deseja desrelacionar na caixa de diálogo **[!UICONTROL Remover relações]** e clique em **[!UICONTROL Desrelacionar]**.
+1. Selecione o(s) ativo(s) que deseja desrelacionar da caixa de diálogo **[!UICONTROL Remover Relações]** e clique em **[!UICONTROL Desrelacionar]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Click **[!UICONTROL OK]** to close the dialog. Os ativos para os quais você removeu relações são excluídos da lista de ativos relacionados na seção **[!UICONTROL Relacionado]** .
+1. Clique em **[!UICONTROL OK]** para fechar a caixa de diálogo. Os ativos para os quais você removeu relações são excluídos da lista de ativos relacionados na seção **[!UICONTROL Relacionado]**.
 
 ## Traduzir ativos relacionados {#translating-related-assets}
 
@@ -67,15 +67,15 @@ Criar relações de origem/derivadas entre ativos usando o recurso de ativos rel
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manager Assets] buscará o ativo referenciado e o incluirá para conversão.
+Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manager Assets] obterá o ativo referenciado e o incluirá para conversão.
 
 ![a página Propriedades do ativo mostra o arquivo de origem do ativo relacionado a ser incluído para conversão](assets/asset-properties-source-asset.png)
 
 *Figura: Ativo de origem dos ativos relacionados a serem incluídos para conversão.*
 
-1. Traduza os ativos na pasta de origem para um idioma de público alvo seguindo as etapas em [Criar um novo projeto](translation-projects.md#create-a-new-translation-project)de tradução. Por exemplo, neste caso, traduza seus ativos para francês.
+1. Traduza os ativos na pasta de origem para um idioma de público alvo seguindo as etapas em [Criar um novo projeto de tradução](translation-projects.md#create-a-new-translation-project). Por exemplo, neste caso, traduza seus ativos para francês.
 
-1. Na página [!UICONTROL Projetos] , abra a pasta de tradução.
+1. Na página [!UICONTROL Projetos], abra a pasta de tradução.
 
 1. Clique no bloco do projeto para abrir a página de detalhes.
 
@@ -85,10 +85,10 @@ Se o arquivo de origem estiver relacionado a outro ativo, [!DNL Experience Manag
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Selecione o ativo e clique em **[!UICONTROL Revelar nos ativos]** na barra de ferramentas para visualização do status de conversão do ativo.
+1. Selecione o ativo e clique em **[!UICONTROL Revelar em Ativos]** na barra de ferramentas para visualização o status de conversão do ativo.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
 1. Para verificar se os ativos relacionados à origem foram convertidos, clique no ativo de origem.
 
-1. Selecione o ativo relacionado à origem e clique em **[!UICONTROL Revelar nos Ativos]**. O ativo relacionado convertido é exibido.
+1. Selecione o ativo relacionado à origem e clique em **[!UICONTROL Revelar em Ativos]**. O ativo relacionado convertido é exibido.
