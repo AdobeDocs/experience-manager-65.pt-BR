@@ -1,8 +1,8 @@
 ---
 title: Ativação e desativação do modo de backup seguro
 seo-title: Ativação e desativação do modo de backup seguro
-description: Na página Configurações de backup, você pode operar formulários AEM no modo de backup seguro para que possa fazer backup confiável do banco de dados e do diretório GDS (Global Document Storage, Armazenamento de Documentos Global). Saiba como ativar e desativar o modo de backup seguro.
-seo-description: Na página Configurações de backup, você pode operar formulários AEM no modo de backup seguro para que possa fazer backup confiável do banco de dados e do diretório GDS (Global Document Storage, Armazenamento de Documentos Global). Saiba como ativar e desativar o modo de backup seguro.
+description: Na página Configurações de backup, você pode operar formulários AEM no modo de backup seguro para que possa fazer backup confiável do banco de dados e do diretório GDS (Global Documento Armazenamento). Saiba como ativar e desativar o modo de backup seguro.
+seo-description: Na página Configurações de backup, você pode operar formulários AEM no modo de backup seguro para que possa fazer backup confiável do banco de dados e do diretório GDS (Global Documento Armazenamento). Saiba como ativar e desativar o modo de backup seguro.
 uuid: 2fdeaeaf-e969-40a4-8aee-1f2b627d3942
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
 
-# Ativação e desativação do modo de backup seguro {#enabling-and-disabling-safe-backup-mode}
+# Ativando e desativando o modo de backup seguro {#enabling-and-disabling-safe-backup-mode}
 
-Na página Configurações de backup, você pode operar formulários AEM no modo de backup seguro para que possa fazer backup confiável do banco de dados e do diretório GDS (Global Document Storage, Armazenamento de Documentos Global).
+Na página Configurações de backup, você pode operar formulários AEM no modo de backup seguro para que possa fazer backup confiável do banco de dados e do diretório GDS (Global Documento Armazenamento).
 
-Embora os formulários AEM estejam no modo de backup seguro, ele opera normalmente, exceto que não remove arquivos ativamente do diretório GDS.
+Embora AEM formulários esteja no modo de backup seguro, ele opera normalmente, exceto que não remove arquivos ativamente do diretório GDS.
 
 >[!NOTE]
 >
