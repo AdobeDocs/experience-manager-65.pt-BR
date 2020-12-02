@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: 0033dfac2540f56b3903c19f6ca19677af050db3
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 85%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 0033dfac2540f56b3903c19f6ca19677af050db3
 
 Os fluxos de trabalho de projeto disponíveis para uso imediato incluem os seguintes:
 
-* **Fluxo de trabalho** de aprovação de projeto - Esse fluxo de trabalho permite que você atribua conteúdo a um usuário, revise e aprove.
-* **Solicitar lançamento** - um fluxo de trabalho que solicita uma inicialização.
-* **Página** de aterrissagem da solicitação - Este fluxo de trabalho solicita uma página de aterrissagem.
+* **Fluxo de trabalho**  de aprovação de projeto - Esse fluxo de trabalho permite que você atribua conteúdo a um usuário, revise e aprove.
+* **Solicitar lançamento**  - um fluxo de trabalho que solicita uma inicialização.
+* **Solicitar Landing page**  - esse fluxo de trabalho solicita uma landing page.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.
 * **Sessão fotográfica do produto e Sessão fotográfica do produto (Comércio)** - Mapeia ativos com produtos
 * **Criar e traduzir cópia DAM e Criar cópia de idioma DAM** - Cria binários, metadados e tags traduzidos para ativos e pastas.
@@ -42,7 +45,7 @@ Dependendo de qual modelo de projeto você selecionar, certos fluxos de trabalho
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. Consulte [Criação de cópias de idioma para ativos.](/help/sites-administering/tc-manage.md)
+>&amp;ast; Esses workflows não são iniciados a partir do bloco **Workflow** em Projetos. Consulte [Criação de cópias de idioma para ativos.](/help/sites-administering/tc-manage.md)
 
 As etapas para iniciar e concluir fluxos de trabalho são as mesmas, independentemente do fluxo de trabalho escolhido. Apenas as etapas mudam.
 
@@ -60,7 +63,7 @@ Esta seção descreve os fluxos de trabalho disponíveis para Projetos.
 
 Esse fluxo de trabalho permite solicitar um manuscrito de um usuário e depois aprová-lo. Para iniciar o fluxo de trabalho Solicitar cópia:
 
-1. No seu projeto de Mídia, selecione o sinal de **+** no bloco **Fluxos de trabalho** e selecione **Fluxo de trabalho Solicitar cópia**.
+1. No projeto Mídia, selecione o sinal **+** no bloco **Fluxos de trabalho** e selecione **Solicitar fluxo de trabalho de cópia**.
 1. Insira um título de manuscrito e um breve resumo do que você está solicitando. Se aplicável, insira uma contagem de palavras de destino, uma prioridade de tarefa e uma data de vencimento.
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
@@ -73,11 +76,11 @@ Esse fluxo de trabalho permite solicitar um manuscrito de um usuário e depois a
 
 Os fluxos de trabalho Sessão fotográfica do produto (comércio e sem comércio) são abordados em detalhes em [Projeto criativo](/help/sites-authoring/managing-product-information.md).
 
-## Fluxo de trabalho para aprovação do projeto {#project-approval-workflow}
+## Fluxo de trabalho para aprovação do projeto  {#project-approval-workflow}
 
 No fluxo de trabalho Aprovação de projeto, você atribui conteúdo a um usuário e depois revisa e aprova esse conteúdo.
 
-1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. No projeto Simples, selecione o sinal **`+`** no bloco **Workflows** e selecione **Fluxo de Trabalho de Aprovação de Projeto**.
 1. Insira um título e selecione a quem ele deve ser atribuído na lista Equipe. Se aplicável, insira uma descrição, um caminho de conteúdo, uma prioridade de tarefa e uma data de vencimento.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -90,12 +93,12 @@ No fluxo de trabalho Aprovação de projeto, você atribui conteúdo a um usuár
 
 Esse fluxo de trabalho permite solicitar um lançamento.
 
-1. Em seu projeto Simples, selecione o sinal de **+** no bloco **Fluxos de trabalho** e selecione **Fluxo de trabalho Solicitar lançamento**.
+1. No projeto Simples, selecione o sinal **+** no bloco **Fluxos de trabalho** e selecione **Solicitar fluxo de trabalho de inicialização**.
 1. Insira um título para o lançamento e forneça o caminho da origem de lançamento. Você também pode adicionar uma descrição e uma data de colocação ao vivo, se aplicável. Selecione Herdar dados online de página fonte ou Excluir subpáginas, dependendo de como você deseja que o lançamento se comporte.
 
-   ![chlimage_1-321](assets/chlimage_1-325.png)
+   ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Clique em **Criar**. O fluxo de trabalho é iniciado. **O fluxo de trabalho é exibido na lista** Fluxos de trabalho **(clique em elipses**... no bloco **Fluxos de trabalho** para acessar essa lista).
+1. Clique em **Criar**. O fluxo de trabalho é iniciado. O fluxo de trabalho é exibido na lista **Workflows** (clique em elipses **...** no bloco **Workflows** para acessar esta lista).
 
 ## Fluxo de trabalho Solicitar página de aterrissagem {#request-landing-page-workflow}
 
@@ -108,7 +111,7 @@ Esse fluxo de trabalho permite solicitar uma página de aterrissagem.
 
 1. Clique em **Criar**. O fluxo de trabalho é iniciado. A tarefa é exibida no bloco **Tarefas**.
 
-## Fluxo de trabalho Solicitar email {#request-email-workflow}
+## Fluxo de trabalho Solicitar email  {#request-email-workflow}
 
 Esse fluxo de trabalho permite solicitar um email. É o mesmo fluxo de trabalho que aparece no bloco **Emails**.
 
