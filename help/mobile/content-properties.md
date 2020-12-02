@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
 source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 20%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Artigos, banners e coleções são representados como cq:Pages no AEM.
+Artigos, banners e coleções são representados como cq:Pages em AEM.
 
 Eles compartilham as mesmas propriedades comuns encontradas em qualquer cq:Page, além de várias outras mostradas abaixo que representam os metadados dos serviços sob demanda do Adobe Experience Manager (AEM) Mobile e as propriedades de suporte da integração.
 
@@ -31,12 +34,12 @@ As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
 
 | **Nome da Propriedade** | **Tipo** | **Valores padrão ou valores esperados** | **Descrição** |
 |---|---|---|---|
-| dps-id | Sequência de caracteres |  | atribuído pelo AEM Mobile e armazenado pelo AEM depois de carregado no AEM Mobile ou importado do AEM Mobile |
+| dps-id | Sequência de caracteres |  | atribuído pela AEM Mobile e armazenado por AEM uma vez carregado no AEM Mobile ou importado da AEM Mobile |
 | dps-resourceType | Sequência de caracteres | dps:Article | dps:Banner | dps:Collection | propriedade de tipo de entidade |
-| dps-version | Sequência de caracteres |  | versão da entidade do AEM Mobile (também contida na aemm-id completa) |
-| dps-lastSynced | Data |  | data da última sincronização/importação do AEM Mobile para o AEM |
+| dps-version | Sequência de caracteres |  | versão da entidade AEM Mobile (também contida em aemm-id completo) |
+| dps-lastSynced | Data |  | data da última sincronização/importação da AEM Mobile para AEM |
 | dps-lastUploaded | Data |  | data do último upload do AEM para o AEM Mobile |
-| dps-lastUploadedBy | String:userid |  | usuário de ID que executou a última solicitação de upload do AEM para o AEM Mobile |
+| dps-lastUploadedBy | String:userid |  | usuário de ID que executou a última solicitação de upload do AEM para a AEM Mobile |
 
 ## Propriedades de metadados principais {#core-metadata-properties}
 
@@ -89,7 +92,7 @@ As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
 
 | Nome do nó | Tipo | Valores padrão ou valores esperados | Descrição |
 |--- |--- |--- |--- |
-| imagem | jcr:PrimaryType=nt: <br> sling não estruturado:resourceType=base/components/image |  |  |
+| imagem | jcr:PrimaryType=nt:sling <br> não estruturado:resourceType=base/components/image |  |  |
 
 ### Entidades {#entities}
 
@@ -97,7 +100,7 @@ As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
 
 | Nome do nó | Tipo | Padrões de valores esperados | Descrição |
 |--- |--- |--- |--- |
-| social-share-image |  | jcr:PrimaryType=nt: <br> sling não estruturado:resourceType=base/components/image |  |
+| social-share-image |  | jcr:PrimaryType=nt:sling <br> não estruturado:resourceType=base/components/image |  |
 
 #### Banners {#banners-1}
 
@@ -109,4 +112,4 @@ As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
 
 | Nome do nó | Tipo | Padrões de valores esperados | Descrição |
 |--- |--- |--- |--- |
-| background-image | jcr:PrimaryType=nt: <br> sling não estruturado:resourceType=base/components/image |  |  |
+| background-image | jcr:PrimaryType=nt:sling <br> não estruturado:resourceType=base/components/image |  |  |
