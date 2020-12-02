@@ -44,7 +44,7 @@ Antes de editar, você precisa [criar uma nova página](/help/sites-classic-ui-a
 
 Para várias ações, como edição, você precisa [abrir uma página](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
-### Editar a página {#editing-a-page}
+### Editar a página  {#editing-a-page}
 
 Se a instância já tem páginas ou você acabou de criar uma nova página, é possível [editar uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) seguindo estes procedimentos:
 
@@ -58,11 +58,11 @@ Se a instância já tem páginas ou você acabou de criar uma nova página, é p
 * [Bloquear uma página  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### Publicar uma página {#publishing-a-page}
+### Publicar uma página  {#publishing-a-page}
 
 Quando terminar de editar sua página, você desejará [publicá-la (ou ativá-la)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10), para que ela esteja disponível para os visitantes do seu site.
 
-## Próximas ações {#further-actions}
+## Próximas ações  {#further-actions}
 
 Além das etapas básicas há muitas outras ações disponíveis durante a criação.
 
@@ -74,7 +74,7 @@ Além das etapas básicas há muitas outras ações disponíveis durante a cria�
 
 [Mover e renomear páginas são realizados basicamente com a mesma ação.](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page)
 
-### Desfazer publicação de uma página {#unpublishing-a-page}
+### Desfazer publicação de uma página  {#unpublishing-a-page}
 
 Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no seu site público, você [desfaz a publicação (ou desativa) a página](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
 
@@ -82,14 +82,14 @@ Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no se
 
 Caso uma página não seja mais necessária, você pode [excluí-la](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#deleting-a-page).
 
-### Configurar as propriedades da página {#setting-the-page-properties}
+### Configurar as propriedades da página  {#setting-the-page-properties}
 
 Cada [página tem propriedades](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) que você pode definir para determinar os aspectos do seu funcionamento.
 
-### Criar uma versão de uma página {#creating-a-version-of-a-page}
+### Criar uma versão de uma página  {#creating-a-version-of-a-page}
 
 Você pode [criar uma versão de uma página](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) e, em seguida, [reverter para uma versão,](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) se necessário.
 
-## Mais informações {#more-information}
+## Mais informações  {#more-information}
 
 O acesso a mais informações sobre a criação pode ser encontrado nas seções [Criação de página](/help/sites-classic-ui-authoring/classic-page-author.md) e [Trabalhar com o ambiente de criação](/help/sites-classic-ui-authoring/author-env.md).
