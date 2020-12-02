@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Prevenção de ataques CSRF {#preventing-csrf-attacks}
+# Impedir ataques de CSRF {#preventing-csrf-attacks}
 
-## Como funcionam os ataques de CSRF {#how-csrf-attacks-work}
+## Como os ataques de CSRF funcionam {#how-csrf-attacks-work}
 
 A falsificação de solicitação entre sites (CSRF) é uma vulnerabilidade de site na qual um navegador de usuário válido é usado para enviar uma solicitação mal-intencionada, possivelmente por meio de um iFrame. Como o navegador envia cookies por domínio, se o usuário estiver conectado no momento a um aplicativo, os dados do usuário podem estar comprometidos.
 
@@ -30,31 +30,31 @@ Por exemplo, considere um cenário em que você está conectado ao console de ad
 
 **Referenciador:** O endereço da página de origem da qual uma solicitação está vindo. Por exemplo, uma página da Web no site1.com contém um link para site2.com. Clicar no link postou uma solicitação para site2.com. O referenciador desta solicitação é site1.com porque a solicitação é feita de uma página cuja fonte é site1.com.
 
-**URIs permitidos:** Os URIs identificam recursos no servidor de formulários que estão sendo solicitados, por exemplo, /adminui ou /contentspace. Alguns recursos podem permitir que uma solicitação entre no aplicativo de sites externos. Esses recursos são considerados URIs permitidos. O servidor de formulários nunca realiza uma verificação de referenciador de URIs permitidos.
+**URIs Incluir na lista de permissões:** URIs identificam recursos no servidor de formulários que estão sendo solicitados, por exemplo, /adminui ou /contentspace. Alguns recursos podem permitir que uma solicitação entre no aplicativo de sites externos. Esses recursos são considerados URIs incluir na lista de permissões. O servidor de formulários nunca realiza uma verificação de referenciador de URIs incluir na lista de permissões.
 
-**Referenciador nulo:** Quando você abre uma nova janela ou guia do navegador, digite um endereço e pressione Enter, o referenciador é nulo. O pedido é inteiramente novo e não tem origem numa página Web principal; por conseguinte, não existe um referenciador para o pedido. O servidor de formulários pode receber um referenciador nulo de:
+**Referenciador nulo:** Quando você abre uma nova janela ou guia do navegador, digita um endereço e pressione Enter, o referenciador é nulo. O pedido é inteiramente novo e não tem origem numa página Web principal; por conseguinte, não existe um referenciador para o pedido. O servidor de formulários pode receber um referenciador nulo de:
 
-* solicitações feitas em pontos de extremidade SOAP ou REST do Acrobat
-* qualquer cliente desktop que faça uma solicitação HTTP em um ponto de extremidade SOAP ou REST de formulários AEM
-* quando uma nova janela do navegador é aberta e o URL de qualquer página de logon de aplicativo da Web de formulários AEM é inserido
+* solicitações feitas em pontos de extremidade SOAP ou REST da Acrobat
+* qualquer cliente desktop que faça uma solicitação HTTP em um ponto de extremidade AEM formulários SOAP ou REST
+* quando uma nova janela do navegador é aberta e o URL de qualquer página de logon de aplicativo da Web para formulários AEM é inserido
 
-Permita um referenciador nulo nos pontos finais SOAP e REST. Também permite um referenciador nulo em todas as páginas de logon de URI, como /adminui e /contentspace, e seus recursos mapeados correspondentes. Por exemplo, o servlet mapeado para /contentspace é /contentspace/faces/jsp/login.jsp, que deve ser uma exceção de referenciador nula. Essa exceção é necessária somente se você ativar a filtragem GET para seu aplicativo da Web. Seus aplicativos podem especificar se permitem referenciadores nulos. Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em [Proteção e segurança para formulários](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)AEM.
+Permita um referenciador nulo nos pontos finais SOAP e REST. Também permite um referenciador nulo em todas as páginas de logon de URI, como /adminui e /contentspace, e seus recursos mapeados correspondentes. Por exemplo, o servlet mapeado para /contentspace é /contentspace/faces/jsp/login.jsp, que deve ser uma exceção de referenciador nula. Essa exceção é necessária somente se você ativar a filtragem de GET para seu aplicativo da Web. Seus aplicativos podem especificar se permitem referenciadores nulos. Consulte &quot;Protegendo contra ataques de falsificação de solicitações entre sites&quot; em [Proteção e segurança para formulários AEM](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
-**Exceção de referenciador permitida:** A Exceção de Referenciador Permitida é uma sublista da lista de referenciadores permitidos, a partir da qual as solicitações são bloqueadas. As Exceções de referência permitidas são específicas a um aplicativo da Web. Se um subconjunto dos Referenciadores permitidos não tiver permissão para invocar um determinado aplicativo da Web, você poderá bloquear a lista de referenciadores por meio de Exceções de referenciador permitidas. Exceções de referenciador permitidas são especificadas no arquivo web.xml para seu aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em Formulários de proteção e segurança para AEM na página Ajuda e tutoriais.)
+**Exceção de referenciador permitida:Exceção de referenciador** permitida é uma sublista da lista de referenciadores permitidos, a partir da qual as solicitações são bloqueadas. As Exceções de referência permitidas são específicas a um aplicativo da Web. Se um subconjunto dos Referenciadores permitidos não tiver permissão para invocar um determinado aplicativo da Web, você pode lista de bloqueios os referenciadores por Exceções de referenciador permitidas. Exceções de referenciador permitidas são especificadas no arquivo web.xml para seu aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em Proteção e segurança para formulários AEM na página Ajuda e Tutorials.)
 
 ## Como os referenciadores permitidos funcionam {#how-allowed-referers-work}
 
-Os formulários AEM fornecem filtragem de referenciador, o que pode ajudar a impedir ataques CSRF. Veja como a filtragem de referenciador funciona:
+AEM formulários fornecem filtragem de referenciador, o que pode ajudar a impedir ataques de CSRF. Veja como a filtragem de referenciador funciona:
 
 1. O servidor de formulários verifica o método HTTP usado para a invocação:
 
    * Se for POST, o servidor de formulários executará a verificação do cabeçalho do referenciador.
-   * Se for GET, o servidor de formulários ignorará a verificação do referenciador, a menos que CSRF_CHECK_GETS esteja definido como true, caso em que executa a verificação do cabeçalho do referenciador. CSRF_CHECK_GETS é especificado no arquivo web.xml para seu aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitações entre sites&quot; no guia [de](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)proteção e segurança.)
+   * Se for GET, o servidor de formulários ignorará a verificação do referenciador, a menos que CSRF_CHECK_GETS esteja definido como true, nesse caso, ele executa a verificação do cabeçalho do referenciador. CSRF_CHECK_GETS é especificado no arquivo web.xml para seu aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em [Guia de proteção e segurança](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
 
-1. O servidor de formulários verifica se o URI solicitado é permitido:
+1. O servidor de formulários verifica se o URI solicitado está incluir na lista de permissões:
 
-   * Se o URI for permitido na lista, o servidor transmitirá a solicitação.
-   * Se o URI solicitado não for permitido na lista, o servidor recuperará o referenciador da solicitação.
+   * Se o URI for incluir na lista de permissões, o servidor transmitirá a solicitação.
+   * Se o URI solicitado não for incluir na lista de permissões, o servidor recuperará o referenciador da solicitação.
 
 1. Se houver um referenciador na solicitação, o servidor verificará se ele é um referenciador permitido. Se for permitido, o servidor verifica se há uma exceção de referenciador:
 
