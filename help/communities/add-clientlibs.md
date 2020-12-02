@@ -23,13 +23,13 @@ ht-degree: 2%
 
 ## Adicionar uma ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Crie uma ClientLibraryFolder com o nome `clientlibs` que conterá o JS e o CSS usados para renderizar as páginas do site.
+Crie uma ClientLibraryFolder chamada `clientlibs` que conterá o JS e o CSS usados para renderizar as páginas do site.
 
-O valor de `categories` propriedade fornecido para essa biblioteca de cliente é o identificador usado para incluir diretamente essa clientlib de uma página de conteúdo ou para incorporá-la a outras clientlibs.
+O valor da propriedade `categories` fornecido para esta biblioteca de cliente é o identificador usado para incluir diretamente esta clientlib de uma página de conteúdo ou para incorporá-la a outras clientlibs.
 
-1. Usando o **CRXDE Lite**, expanda `/etc/designs`
+1. Usando **CRXDE Lite**, expanda `/etc/designs`
 
-1. Clique com o botão direito do mouse `an-scf-sandbox` e selecione `Create Node`
+1. Clique com o botão direito do mouse em `an-scf-sandbox` e selecione `Create Node`
 
    * Nome : `clientlibs`
    * Tipo : `cq:ClientLibraryFolder`
@@ -38,21 +38,21 @@ O valor de `categories` propriedade fornecido para essa biblioteca de cliente é
 
 ![add-client-library](assets/add-client-library.png)
 
-Na guia **Propriedades** do novo `clientlibs` nó, digite a propriedade **categoria** :
+Na guia **Propriedades** do novo nó `clientlibs`, digite a propriedade **categoria**:
 
-* Nome : **categorias**
+* Nome : **categoria**
 * Tipo: **String**
 * Valor : **apps.an-scf-sandbox**
 * Clique em **Adicionar**
 * Clique em **Salvar tudo**
 
-Observação: como visualizar o valor do categoria com &quot;aplicativos&quot;. é uma convenção para identificar o &quot;aplicativo proprietário&quot; como estando na pasta /apps, não /libs.  IMPORTANTE: Adicione espaço reservado `js.tx`a e **`css.txt`** arquivos. (Não é oficialmente uma cq:ClientLibraryFolder sem eles.)
+Observação: como visualizar o valor do categoria com &quot;aplicativos&quot;. é uma convenção para identificar o &quot;aplicativo proprietário&quot; como estando na pasta /apps, não /libs.  IMPORTANTE: Adicione arquivos de espaço reservado `js.tx`t e **`css.txt`**. (Não é oficialmente uma cq:ClientLibraryFolder sem eles.)
 
 1. Clique com o botão direito do mouse em **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Selecione **Criar Arquivo...**
-1. Enter **Name:** `css.txt`
+1. Digite **Nome:** `css.txt`
 1. Selecione **Criar Arquivo...**
-1. Enter **Name:** `js.txt`
+1. Digite **Nome:** `js.txt`
 1. Clique em **Salvar tudo**
 
 ![clientlibs-css](assets/clientlibs-css.png)
@@ -76,9 +76,9 @@ Em seguida, crie um arquivo em clientlibs chamado style.css e defina o conteúdo
 
 ### Incorporar Clientlibs SCF {#embed-scf-clientlibs}
 
-Na guia **Propriedades** do `clientlibs` nó, digite a propriedade String com vários valores **incorporada**. Isso incorpora as bibliotecas necessárias do lado do [cliente (clientlibs) para componentes](/help/communities/client-customize.md#clientlibs-for-scf)SCF. Neste tutorial, muitas das clientlibs necessárias para os componentes Comunidades são adicionadas.
+Na guia **Propriedades** do nó `clientlibs`, digite a propriedade String de vários valores **embed**. Isso incorpora as [bibliotecas do lado do cliente (clientlibs) necessárias para componentes SCF](/help/communities/client-customize.md#clientlibs-for-scf). Neste tutorial, muitas das clientlibs necessárias para os componentes Comunidades são adicionadas.
 
-**Observe** que essa pode ou não ser a abordagem desejada para usar em um site de produção, pois há considerações de conveniência em relação ao tamanho/velocidade dos clientlibs baixados para cada página.
+**** Observe que essa pode ser ou não a abordagem desejada para usar em um site de produção, pois há considerações de conveniência em relação ao tamanho/velocidade dos clientlibs baixados para cada página.
 
 Se apenas estiver usando um recurso em uma página, você poderá incluir a clientlib completa desse recurso diretamente na página, por exemplo,
 
@@ -91,7 +91,8 @@ Nesse caso, incluindo todos e, portanto, os clientlibs SCF mais básicos que sã
 * Clique em **`Multi`**
 * Valor: **`cq.social.scf`**
 
-   * Ela abrirá uma caixa de diálogo, clique **`+`** depois de cada entrada para adicionar as seguintes categorias clientlib:
+   * Vai abrir um diálogo,
+clique em **`+`** após cada entrada para adicionar as seguintes categorias clientlib:
 
       * **`cq.ckeditor`**
       * **`cq.social.author.hbs.comments`**
@@ -105,13 +106,13 @@ Nesse caso, incluindo todos e, portanto, os clientlibs SCF mais básicos que sã
 
 ![scf-clientlibs](assets/scf-clientlibs.png)
 
-É assim que agora `/etc/designs/an-scf-sandbox/clientlibs` deve aparecer no repositório:
+É assim que `/etc/designs/an-scf-sandbox/clientlibs` agora deve aparecer no repositório:
 
 ![scf-clientlibs-visualização](assets/scf-clientlibs1.png)
 
-### Incluir Clientlibs no modelo PlayPage {#include-clientlibs-in-playpage-template}
+### Incluir Clientlibs no Modelo PlayPage {#include-clientlibs-in-playpage-template}
 
-Sem incluir a categoria `apps.an-scf-sandbox` ClientLibraryFolder na página, os componentes do SCF não estarão funcionais nem com estilo, pois os Javascript e o(s) estilo(s) necessários não estarão disponíveis.
+Sem incluir a categoria `apps.an-scf-sandbox` ClientLibraryFolder na página, os componentes do SCF não estarão funcionais nem com estilo, pois os Javascript(s) e o(s) estilo(s) necessários não estarão disponíveis.
 
 Por exemplo, sem incluir clientlibs, o componente de comentários SCF aparece sem estilo:
 
@@ -121,16 +122,16 @@ Depois que apps.an-scf-sandbox clientlibs é incluído, o componente de comentá
 
 ![clientlibs-comment-styled](assets/clientlibs-comment1.png)
 
-A instrução include pertence à seção `head` do `html` script. O padrão **`foundation head.jsp`** inclui um script que pode ser sobreposto: **`headlibs.jsp`**.
+A instrução include pertence à seção `head` do script `html`. O padrão **`foundation head.jsp`** inclui um script que pode ser sobreposto: **`headlibs.jsp`**.
 
 **Copie headlibs.jsp e inclua clientlibs:**
 
-1. Usando o **CRXDE Lite**, selecione **`/libs/foundation/components/page/headlibs.jsp`**
+1. Usando **CRXDE Lite**, selecione **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Clique com o botão direito do mouse e selecione **Copiar** (ou selecione Copiar na barra de ferramentas)
 1. Selecionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Clique com o botão direito do mouse e selecione **Colar** (ou selecione Colar na barra de ferramentas)
-1. Clique no duplo para **`headlibs.jsp`** abri-lo
+1. Duplo clique em **`headlibs.jsp`** para abri-lo
 1. Anexar a seguinte linha ao final do arquivo
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
@@ -152,11 +153,11 @@ Carregue seu site no navegador e veja se o plano de fundo não é uma sombra de 
 
 ![jogo comunitário](assets/community-play.png)
 
-### Salvando Seu Trabalho Até Agora {#saving-your-work-so-far}
+### Salvar seu trabalho até agora {#saving-your-work-so-far}
 
-Nesse ponto, existe uma caixa de proteção minimalista e pode valer a pena salvar como um pacote para que, durante a reprodução, se o repositório ficar corrompido e você desejar start, desative, renomeie ou exclua a pasta crx-quickstart/, ligue o servidor, carregue e instale esse pacote salvo e não precise repetir essas etapas mais básicas.
+Nesse ponto, existe uma caixa de proteção minimalista e pode valer a pena salvar como um pacote para que, durante a reprodução, se o repositório ficar corrompido e você desejar start, desative, renomeie ou exclua a pasta crx-quickstart/, ligue o servidor, carregue e instale o pacote salvo e não precise repetir essas etapas mais básicas.
 
-Este pacote existe no tutorial [Criar uma página](/help/communities/create-sample-page.md) de amostra para aqueles que não podem esperar para pular e reproduzir start!...
+Este pacote existe no tutorial [Criar uma página de amostra](/help/communities/create-sample-page.md) para aqueles que não podem esperar para saltar e reproduzir start!...
 
 Para criar um pacote:
 
@@ -170,20 +171,20 @@ Para criar um pacote:
 
 * Clique em **Editar**
 
-   * Guia Selecionar **Filtros**
+   * Selecione a guia **Filtros**
 
       * Clique em **Adicionar filtro**
-      * Caminho raiz: navegar até `/apps/an-scf-sandbox`
+      * Caminho raiz: navegue até `/apps/an-scf-sandbox`
       * Clique em **Concluído**
       * Clique em **Adicionar filtro**
-      * Caminho raiz: navegar até `/etc/designs/an-scf-sandbox`
+      * Caminho raiz: navegue até `/etc/designs/an-scf-sandbox`
       * Clique em **Concluído**
       * Clique em **Adicionar filtro**
-      * Caminho raiz: navegar até `/content/an-scf-sandbox**`
+      * Caminho raiz: navegue até `/content/an-scf-sandbox**`
       * Clique em **Concluído**
    * Clique em **Salvar**
 
 
-* Clique em **Criar**
+* Clique em **Compilação**
 
-Agora você pode selecionar **Download** para salvá-lo em disco e **Carregar pacote** em outro lugar, bem como selecionar **Mais > Replicar** para encaminhar a caixa de proteção para uma instância de publicação de host local a fim de expandir o realm da sua caixa de proteção.
+Agora você pode selecionar **Download** para salvá-lo em disco e **Carregar pacote** em outro lugar, bem como selecionar **Mais > Replicar** para encaminhar a caixa de proteção para uma instância de publicação de host local para expandir o realm da sua caixa de proteção.
