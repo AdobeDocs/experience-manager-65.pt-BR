@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '3766'
+ht-degree: 0%
 
 ---
 
 
-# Configuração de pontos de extremidade de email {#configuring-email-endpoints}
+# Configurando pontos de extremidade de email {#configuring-email-endpoints}
 
 Os pontos de extremidade de e-mail permitem que os usuários chamem um serviço enviando um ou mais documentos (como anexos de e-mail) para uma conta de e-mail especificada. A caixa de entrada de email atua como um ponto de coleta para os anexos. O serviço monitora a caixa de entrada e processa os anexos. Os resultados da conversão são encaminhados ao usuário definido no ponto final.
 
@@ -29,9 +32,9 @@ Antes de configurar um terminal de email, crie uma conta de email POP3 ou IMAP p
 
 Todos os pontos de extremidade de e-mail são configurados com um nome de usuário e senha autorizados para a caixa de entrada de e-mail, que são necessários ao chamar o serviço. A conta de email é protegida pelo sistema do servidor de email no qual está configurada.
 
-Se os usuários enviarem documentos com caracteres de idioma da Europa Ocidental em nomes de arquivos e caminhos de conversão, eles deverão usar um aplicativo de email que suporte os tipos de codificação necessários (Latin1 [ISO-8859-1], Western European [Windows]ou UTF-8). Para obter mais informações, consulte o documento *Instalar e implantar formulários* AEM para seu servidor de aplicativos.
+Se os usuários enviarem documentos com caracteres de idioma da Europa Ocidental em nomes de arquivos e caminhos de conversão, eles deverão usar um aplicativo de email que suporte os tipos de codificação necessários (Latin1 [ISO-8859-1], Western European [Windows] ou UTF-8). Para obter mais informações, consulte o documento *Instalação e Implantação de formulários AEM* para o servidor de aplicativos.
 
-Antes de configurar um terminal de e-mail, configure o serviço de e-mail. (Consulte [Definir configurações](configuring-email-endpoints.md#configure-default-email-endpoint-settings)padrão de ponto de extremidade de email.) Os parâmetros de configuração do serviço de email têm dois objetivos:
+Antes de configurar um terminal de e-mail, configure o serviço de e-mail. (Consulte [Configurar definições de pontos finais de correio eletrônico predefinidos](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Os parâmetros de configuração do serviço de email têm dois objetivos:
 
 * Para configurar atributos comuns a todos os pontos de extremidade de email
 * Para fornecer valores padrão para todos os pontos finais de email
@@ -60,7 +63,7 @@ Você pode configurar POP3, IMAP ou SMTP para usar SSL (Secure Sockets Layer) pa
 
 Você pode usar a página Gerenciamento de serviços para configurar atributos comuns a todos os pontos de extremidade de email e fornecer valores padrão para todos os pontos de extremidade de email.
 
-Para que o fluxo de trabalho de formulários receba e manipule mensagens de email recebidas de usuários, é necessário criar um terminal de email para o serviço de Tarefa completa. Esse terminal de email requer configurações adicionais, conforme descrito em [Criar um terminal de email para o serviço](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)de Tarefa completa.
+Para que o fluxo de trabalho de formulários receba e manipule mensagens de email recebidas de usuários, é necessário criar um terminal de email para o serviço de Tarefa completa. Este ponto de extremidade de email requer configurações adicionais, conforme descrito em [Criar um ponto de extremidade de email para o serviço de Tarefa completa](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
 
 ### Alterar os valores padrão para pontos de extremidade de email {#change-the-default-values-for-email-endpoints}
 
@@ -70,73 +73,73 @@ Para que o fluxo de trabalho de formulários receba e manipule mensagens de emai
 
 ### Configurações de ponto de extremidade de email padrão {#default-email-endpoint-settings}
 
-**Expressão do cron:** A expressão cron como usada pelo quartzo para agendar a pesquisa do diretório de entrada.
+**Expressão Cron:** A expressão cron, como usada pelo quartzo para agendar a pesquisa do diretório de entrada.
 
-**Intervalo de repetição:** O número de vezes que a pesquisa de diretório é repetida. O intervalo de repetição padrão é em segundos se esse valor não for especificado na configuração do ponto de extremidade. O valor padrão é 10. Este valor não pode ser inferior a 10.
+**Intervalo de repetição:** o número de vezes que a pesquisa de diretório é repetida. O intervalo de repetição padrão é em segundos se esse valor não for especificado na configuração do ponto de extremidade. O valor padrão é 10. Este valor não pode ser inferior a 10.
 
 **Contagem de repetição:** O número de vezes que o diretório de entrada é pesquisado. A contagem de repetição padrão a ser usada se esse valor não for especificado na configuração do ponto de extremidade. Um valor de -1 indica uma varredura indefinida do diretório. O valor padrão é -1.
 
-**Atraso quando o trabalho for start:** O valor padrão, em segundos, para o atraso antes dos start do trabalho para digitalizar o terminal. O valor padrão é 0.
+**Atraso quando o job é start:** O valor padrão, em segundos, para o atraso antes que o job seja start para verificar o terminal. O valor padrão é 0.
 
-**Tamanho do lote:** O número de emails que o receptor processa por varredura para obter um desempenho ótimo. O valor -1 indica todos os emails. O valor padrão é 2.
+**Tamanho do lote:** o número de emails que o receptor processa por verificação para obter o desempenho ideal. O valor -1 indica todos os emails. O valor padrão é 2.
 
-**Assíncrono:** Identifica o tipo de invocação como assíncrono ou síncrono. Processos transitórios e síncronos só podem ser chamados de forma síncrona. O valor padrão é assíncrono.
+**Assíncrono:** identifica o tipo de invocação como assíncrono ou síncrono. Processos transitórios e síncronos só podem ser chamados de forma síncrona. O valor padrão é assíncrono.
 
-**Padrão de domínio:** O padrão de nome de domínio usado para filtrar emails recebidos. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios é ignorado.
+**Padrão de domínio:** o padrão de nome de domínio usado para filtrar emails recebidos. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios é ignorado.
 
-**Padrão de arquivo:** Os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&amp;ast;.dat, &amp;ast;.xml), nomes específicos (dados) e expressões compostas no nome e na extensão (.[dD][aA]&#39;port&#39;). O valor padrão é &amp;ast;.&amp;ast;.
+**Padrão de arquivo:** os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&amp;ast;.dat, &amp;ast;.xml), nomes específicos (dados) e expressões compostas no nome e na extensão (.[dD][aA]&#39;port&#39;). O valor padrão é &amp;ast;.&amp;ast;.
 
 **Recipient de trabalho bem-sucedidos:** Um ou mais endereços de email usados para enviar emails para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de trabalho bem-sucedida é sempre enviada ao remetente do trabalho inicial. Há suporte para até 100 recipient. Para desativar esta configuração, deixe este campo em branco.
 
-**Recipient de trabalho com falha:** Um ou mais endereços de email usados para enviar emails para indicar trabalhos com falha. Por padrão, uma mensagem de falha de trabalho é sempre enviada ao remetente que enviou o trabalho inicial. Há suporte para até 100 recipient. Para desativar esta configuração, deixe este campo em branco.
+**Recipient de trabalho com falha:** um ou mais endereços de email usados para enviar emails para indicar trabalhos com falha. Por padrão, uma mensagem de falha de trabalho é sempre enviada ao remetente que enviou o trabalho inicial. Há suporte para até 100 recipient. Para desativar esta configuração, deixe este campo em branco.
 
-**Host da Caixa de Entrada:** O nome do host da caixa de entrada ou o endereço IP do provedor de email a ser verificado.
+**Host da caixa de entrada:** o nome do host da caixa de entrada ou o endereço IP para que o provedor de email possa digitalizar.
 
-**Porta da caixa de entrada:** O número da porta da caixa de entrada para que o provedor de email possa digitalizar. Se o valor for 0, a porta padrão IMAP ou POP3 será usada.
+**Porta da Caixa de Entrada:** O número da porta da caixa de entrada para o provedor de email a ser verificado. Se o valor for 0, a porta padrão IMAP ou POP3 será usada.
 
-**Protocolo da caixa de entrada:** O protocolo de email do terminal de email a ser usado para digitalizar a caixa de entrada. As opções são IMAP ou POP3. O servidor de correio do host da caixa de entrada deve suportar esses protocolos.
+**Protocolo de Caixa de Entrada:** O protocolo de email do ponto de extremidade de email a ser usado para digitalizar a caixa de entrada. As opções são IMAP ou POP3. O servidor de correio do host da caixa de entrada deve suportar esses protocolos.
 
-**Tempo limite da caixa de entrada:** Especifica o tempo que o ponto de extremidade aguardará antes de cancelar ao tentar se conectar à caixa de entrada. Se uma conexão não for adquirida antes de o valor de tempo limite ser atingido, a caixa de entrada não será sondada.
+**Tempo limite da caixa de entrada:** especifica o tempo que o ponto final aguardará antes de cancelar ao tentar se conectar à caixa de entrada. Se uma conexão não for adquirida antes de o valor de tempo limite ser atingido, a caixa de entrada não será sondada.
 
-**Usuário da Caixa de Entrada:** O nome de usuário necessário para fazer logon na conta de email. Dependendo do servidor de e-mail e da configuração, esse nome pode ser apenas a parte do nome do usuário do e-mail ou pode ser o endereço de e-mail completo.
+**Usuário da caixa de entrada:** o nome de usuário necessário para fazer logon na conta de email. Dependendo do servidor de e-mail e da configuração, esse nome pode ser apenas a parte do nome do usuário do e-mail ou pode ser o endereço de e-mail completo.
 
-**Senha da caixa de entrada:** A senha para o usuário da Caixa de entrada.
+**Senha da Caixa de Entrada:** A senha do Usuário da Caixa de Entrada.
 
-**SSL POP3/IMAP ativado:** Quando selecionada, ativa SSL.
+**SSL POP3/IMAP Ativado:** quando selecionado, habilita SSL.
 
-**Host SMTP:** O nome de host do servidor de email que o provedor usa para enviar resultados e mensagens de erro. Por exemplo, mail.corp.example.com.
+**Host SMTP:** o nome de host do servidor de email que o provedor de email usa para enviar resultados e mensagens de erro. Por exemplo, mail.corp.example.com.
 
-**Porta SMTP:** A porta usada para conectar-se ao servidor de email. O valor padrão é 25.
+**Porta SMTP:** a porta usada para conectar-se ao servidor de email. O valor padrão é 25.
 
 **Usuário SMTP:** A conta de usuário que o provedor de email deve usar ao enviar emails para obter resultados e erros.
 
 **Senha SMTP:** A senha da conta SMTP. Alguns servidores de email não exigem uma senha SMTP.
 
-**Enviar de:** O endereço de email (por exemplo, user@company.com) usado para enviar notificações por email de resultados e erros. Se você não especificar um valor Enviar de, o servidor de email tentará determinar o endereço de email combinando o valor especificado na configuração Usuário SMTP com um domínio padrão configurado no servidor de email. Se o servidor de e-mail não tiver um domínio padrão e você não especificar um valor para Enviar de, podem ocorrer erros. Para garantir que as mensagens de e-mail tenham o endereço de origem correto, especifique um valor para a configuração Enviar de.
+**Enviar de:** o endereço de email (por exemplo, user@company.com) usado para enviar notificações por email de resultados e erros. Se você não especificar um valor Enviar de, o servidor de email tentará determinar o endereço de email combinando o valor especificado na configuração Usuário SMTP com um domínio padrão configurado no servidor de email. Se o servidor de e-mail não tiver um domínio padrão e você não especificar um valor para Enviar de, podem ocorrer erros. Para garantir que as mensagens de e-mail tenham o endereço de origem correto, especifique um valor para a configuração Enviar de.
 
-**SSL SMTP Habilitado:** Quando selecionada, ativa SSL sobre SMTP.
+**SSL SMTP ativado:** quando selecionado, habilita SSL em SMTP.
 
-**Inclua O Corpo De Email Original Como Um Anexo:** Por padrão, quando você envia um email para o servidor de formulários, o texto original da mensagem é incluído no corpo da mensagem. Para incluir o texto como anexo, selecione essa opção.
+**Incluir o corpo original do email como um anexo:** por padrão, quando você envia um email para o servidor de formulários, o texto original da mensagem é incluído no corpo da mensagem. Para incluir o texto como anexo, selecione essa opção.
 
-**Use A Linha De Assunto Original Para Emails De Resultado:** Por padrão, o servidor do Forms usa os valores especificados nas configurações Assunto do email de sucesso e Assunto do email de erro como a linha de assunto ao enviar mensagens de email de resultado. Para, em vez disso, usar a mesma linha de assunto que o email original enviado para o servidor, selecione essa opção.
+**Usar a linha de assunto original para emails de resultado:** por padrão, o servidor Forms usa os valores especificados nas configurações de Assunto do email de sucesso e Assunto do email de erro como a linha de assunto ao enviar mensagens de email de resultado. Para, em vez disso, usar a mesma linha de assunto que o email original enviado para o servidor, selecione essa opção.
 
-**Assunto do email de sucesso:** Depois de enviar um email para um terminal de email para o start ou continuar um processo, você receberá uma mensagem de email de retorno do servidor de formulários do AEM. Se seu email for bem-sucedido, você receberá um email de sucesso. Se seu email falhar, você receberá um email com falha informando por que ele falhou. Essa configuração permite especificar a linha de assunto das mensagens de email de sucesso enviadas para esse terminal.
+**Assunto do email de sucesso:** Depois de enviar um email para um terminal de email para o start ou continuar um processo, você receberá uma mensagem de email de retorno do servidor de formulários AEM. Se seu email for bem-sucedido, você receberá um email de sucesso. Se seu email falhar, você receberá um email com falha informando por que ele falhou. Essa configuração permite especificar a linha de assunto das mensagens de email de sucesso enviadas para esse terminal.
 
-**Corpo de email de sucesso:** Permite que você especifique o texto do corpo das mensagens de email de sucesso enviadas para este terminal.
+**Corpo de email de sucesso:** permite que você especifique o texto do corpo das mensagens de email de sucesso enviadas para este terminal.
 
-**Prefixo de assunto do email de erro:** Permite que você especifique o texto usado no início da linha de assunto das mensagens de e-mail de falha enviadas para este terminal.
+**Prefixo de assunto do email de erro:** permite especificar o texto usado no início da linha de assunto das mensagens de email de falha enviadas para esse terminal.
 
-**Assunto do email de erro:** Permite que você especifique a linha de assunto das mensagens de e-mail de falha enviadas para este terminal. Esse texto é exibido após o Prefixo de assunto do email de erro.
+**Assunto do email de erro:** permite que você especifique a linha de assunto das mensagens de email de falha enviadas para este terminal. Esse texto é exibido após o Prefixo de assunto do email de erro.
 
-**Corpo do email de erro:** Permite que você especifique a primeira linha no texto do corpo das mensagens de e-mail de falha enviadas para esse terminal.
+**Corpo do email de erro:** permite que você especifique a primeira linha no texto do corpo das mensagens de email de falha enviadas para este terminal.
 
-**Informações de resumo do email:** Cada mensagem de sucesso ou falha inclui uma seção que contém o texto original do email enviado para o servidor de formulários. Essa configuração especifica o texto que aparece acima dessa seção.
+**Informações de resumo do email:** cada mensagem de sucesso ou falha inclui uma seção que contém o texto original do email enviado ao servidor de formulários. Essa configuração especifica o texto que aparece acima dessa seção.
 
-**Validar Caixa De Entrada Antes De Criar/Atualizar Este Ponto Final:** Quando essa opção é selecionada, o servidor de formulários verifica se as configurações de SMTP/POP3 estão corretas antes da criação do terminal. Quando você clica em Adicionar, uma mensagem é exibida informando se a conta da caixa de entrada é válida. Se essa opção não estiver selecionada, o servidor de formulários AEM criará o terminal sem validar a caixa de entrada.
+**Validar Caixa de Entrada Antes de Criar/Atualizar Este Ponto Final:** Quando esta opção é selecionada, o servidor de formulários verifica se as configurações de SMTP/POP3 estão corretas antes de criar o ponto de extremidade. Quando você clica em Adicionar, uma mensagem é exibida informando se a conta da caixa de entrada é válida. Se essa opção não estiver selecionada, o servidor de formulários AEM criará o terminal sem validar a caixa de entrada.
 
-**Codificação do conjunto de caracteres:** O formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários em um ambiente japonês podem escolher ISO2022-JP.
+**Codificação do conjunto de caracteres:** o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários em um ambiente japonês podem escolher ISO2022-JP.
 
-**Pasta Enviada por Email com Falha:** Especifica um diretório no qual armazenar resultados se o servidor de correio SMTP não estiver operacional.
+**Pasta de Correio Eletrônico com Falha Enviada:** Especifica um diretório no qual armazenar resultados se o servidor de correio SMTP não estiver operacional.
 
 ## Configurações de ponto de extremidade de email {#email-endpoint-settings}
 
@@ -144,113 +147,113 @@ Use as seguintes configurações para configurar um ponto de extremidade de emai
 
 **Nome:** Uma configuração obrigatória que identifica o ponto final. Não inclua um caractere &lt; porque ele trava o nome exibido no Workspace. Se você estiver inserindo um URL como o nome do ponto de extremidade, verifique se ele está em conformidade com as regras de sintaxe especificadas em RFC1738.
 
-**Descrição:** Uma descrição do terminal. Não inclua um caractere &lt; porque ele trava a descrição exibida no Workspace.
+**Descrição:** uma descrição do ponto final. Não inclua um caractere &lt; porque ele trava a descrição exibida no Workspace.
 
-**Expressão do cron:** Digite uma expressão cron se o email precisar ser programado usando uma expressão cron.
+**Expressão Cron:** insira uma expressão cron se o e-mail precisar ser programado usando uma expressão cron.
 
-**Contagem de repetição:** Número de vezes que o ponto de extremidade de email verifica a pasta ou o diretório. Um valor de -1 indica uma varredura indefinida. O valor padrão é -1.
+**Contagem de repetição:** número de vezes que o ponto de extremidade do email verifica a pasta ou o diretório. Um valor de -1 indica uma varredura indefinida. O valor padrão é -1.
 
-**Intervalo de repetição:** A taxa de varredura que o receptor usa para verificar a entrada de emails.
+**Intervalo de repetição:** A taxa de varredura que o receptor usa para verificar se há emails recebidos.
 
-**Atraso quando o trabalho for start:** O tempo de espera para digitalizar após os start do scheduler.
+**Atraso quando o trabalho é start:** o tempo de espera para a verificação após os start do scheduler.
 
-**Tamanho do lote:** O número de emails que o receptor processa por varredura para obter um desempenho ótimo. O valor -1 indica todos os emails. O valor padrão é 2.
+**Tamanho do lote:** o número de emails que o receptor processa por verificação para obter o desempenho ideal. O valor -1 indica todos os emails. O valor padrão é 2.
 
-**Nome do usuário:** Uma configuração obrigatória, que é o nome de usuário usado ao chamar um serviço de público alvo do email. O valor padrão é SuperAdmin.
+**Nome do usuário:** uma configuração obrigatória, que é o nome do usuário usado ao chamar um serviço de público alvo do email. O valor padrão é SuperAdmin.
 
-**Nome do domínio:** Uma configuração obrigatória, que é o domínio do usuário. O valor padrão é DefaultDom.
+**Nome do domínio:** uma configuração obrigatória, que é o domínio do usuário. O valor padrão é DefaultDom.
 
-**Padrão de domínio:** Especifica os padrões de domínio do email recebido que o provedor aceita. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios é ignorado.
+**Padrão de domínio:** especifica os padrões de domínio do email recebido que o provedor aceita. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios é ignorado.
 
 **Padrão de arquivo:** Especifica os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&amp;ast;.dat, &amp;ast;.xml), nomes específicos (dados) ou expressões compostas no nome e extensão (&amp;ast;.[dD][aA]&#39;port&#39;).
 
-**Recipient de trabalho bem-sucedidos:** Um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de trabalho bem-sucedida é sempre enviada ao remetente. Se você digitar remetente, os resultados do email serão enviados para o remetente. Há suporte para até 100 recipient. Especifique recipient adicionais com endereços de email separados por vírgulas (,).
+**Recipient de trabalho bem-sucedidos:** um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de trabalho bem-sucedida é sempre enviada ao remetente. Se você digitar remetente, os resultados do email serão enviados para o remetente. Há suporte para até 100 recipient. Especifique recipient adicionais com endereços de email separados por vírgulas (,).
 
 Para desativar essa configuração, deixe a configuração em branco. Em alguns casos, você deseja acionar um processo e não desejar uma notificação por email do resultado.
 
-**Recipient de trabalho com falha:** Um endereço de email para o qual são enviadas mensagens para indicar trabalhos com falha. Por padrão, uma mensagem de falha é sempre enviada ao remetente. Se você digitar remetente, os resultados do email serão enviados para o remetente. Há suporte para até 100 recipient. Especifique recipient adicionais com endereços de email separados por vírgulas (,).
+**Recipient de trabalho com falha:** um endereço de email para o qual são enviadas mensagens para indicar trabalhos com falha. Por padrão, uma mensagem de falha é sempre enviada ao remetente. Se você digitar remetente, os resultados do email serão enviados para o remetente. Há suporte para até 100 recipient. Especifique recipient adicionais com endereços de email separados por vírgulas (,).
 
 Para desativar essa configuração, deixe a configuração em branco. Em alguns casos, você deseja acionar um processo e não desejar uma notificação por email do resultado.
 
-**Host da Caixa de Entrada:** O nome do host da caixa de entrada ou o endereço IP do provedor de email a ser verificado.
+**Host da caixa de entrada:** o nome do host da caixa de entrada ou o endereço IP para que o provedor de email possa digitalizar.
 
-**Porta da caixa de entrada:** A porta que o servidor de email usa. O valor padrão para POP3 é 110 e o valor padrão para IMAP é 143. Se SSL estiver ativado, o valor padrão para POP3 é 995 e o valor padrão para IMAP é 993.
+**Porta da Caixa de Entrada:** a porta que o servidor de email usa. O valor padrão para POP3 é 110 e o valor padrão para IMAP é 143. Se SSL estiver ativado, o valor padrão para POP3 é 995 e o valor padrão para IMAP é 993.
 
-**Protocolo da caixa de entrada:** O protocolo de email do terminal de email a ser usado para digitalizar a caixa de entrada. Os valores são IMAP ou POP3. O servidor de correio do host da caixa de entrada deve suportar esses protocolos.
+**Protocolo de Caixa de Entrada:** O protocolo de email do ponto de extremidade de email a ser usado para digitalizar a caixa de entrada. Os valores são IMAP ou POP3. O servidor de correio do host da caixa de entrada deve suportar esses protocolos.
 
-**Tempo limite da caixa de entrada:** O tempo limite, em segundos, para que o provedor de email aguarde as respostas da caixa de entrada.
+**Tempo limite da caixa de entrada:** o tempo limite, em segundos, para o provedor de email aguardar respostas da caixa de entrada.
 
-**Usuário da Caixa de Entrada:** O nome de usuário necessário para fazer logon na conta de email. Dependendo do servidor de e-mail e da configuração, esse valor pode ser apenas a parte do nome do usuário do e-mail ou pode ser o endereço de e-mail completo.
+**Usuário da caixa de entrada:** o nome de usuário necessário para fazer logon na conta de email. Dependendo do servidor de e-mail e da configuração, esse valor pode ser apenas a parte do nome do usuário do e-mail ou pode ser o endereço de e-mail completo.
 
 **Senha da caixa de entrada:** A senha do usuário da caixa de entrada.
 
-**SSL POP3/IMAP ativado:** Selecione esta configuração para forçar o provedor de email a usar SSL para digitalizar a caixa de entrada. Certifique-se de que o servidor de correio suporta SSL.
+**SSL POP3/IMAP ativado:** selecione essa configuração para forçar o provedor de email a usar SSL para digitalizar a caixa de entrada. Certifique-se de que o servidor de correio suporta SSL.
 
-**Host SMTP:** O nome de host do servidor de email que o provedor usa para enviar resultados e mensagens de erro.
+**Host SMTP:** o nome de host do servidor de email que o provedor usa para enviar resultados e mensagens de erro.
 
-**Porta SMTP:** O valor padrão para a porta SMTP é 25.
+**Porta SMTP:** o valor padrão para a porta SMTP é 25.
 
 **Usuário SMTP:** A conta de usuário que o provedor de email deve usar ao enviar notificações por email de resultados e erros.
 
 **Senha SMTP:** A senha da conta SMTP. Alguns servidores de email não exigem uma senha SMTP.
 
-**Enviar de:** O endereço de email (por exemplo, user@company.com) usado para enviar notificações por email de resultados e erros. Se você não especificar um valor Enviar de, o servidor de email tentará determinar o endereço de email combinando o valor especificado na configuração Usuário SMTP com um domínio padrão configurado no servidor de email. Se o servidor de e-mail não tiver um domínio padrão e você não especificar um valor para Enviar de, podem ocorrer erros. Para garantir que as mensagens de e-mail tenham o endereço de origem correto, especifique um valor para a configuração Enviar de.
+**Enviar de:** o endereço de email (por exemplo, user@company.com) usado para enviar notificações por email de resultados e erros. Se você não especificar um valor Enviar de, o servidor de email tentará determinar o endereço de email combinando o valor especificado na configuração Usuário SMTP com um domínio padrão configurado no servidor de email. Se o servidor de e-mail não tiver um domínio padrão e você não especificar um valor para Enviar de, podem ocorrer erros. Para garantir que as mensagens de e-mail tenham o endereço de origem correto, especifique um valor para a configuração Enviar de.
 
-**SSL SMTP Habilitado:** Selecione esta configuração para forçar o provedor de email a usar SSL para digitalizar a caixa de entrada. Certifique-se de que o servidor de correio suporta SSL.
+**SSL SMTP Ativado:** Selecione essa configuração para forçar o provedor de email a usar o SSL para digitalizar a caixa de entrada. Certifique-se de que o servidor de correio suporta SSL.
 
-**Pasta Enviada por Email com Falha:** Especifica um diretório no qual armazenar resultados se o servidor de correio SMTP não estiver operacional.
+**Pasta de Correio Eletrônico com Falha Enviada:** Especifica um diretório no qual armazenar resultados se o servidor de correio SMTP não estiver operacional.
 
-**assíncrono:** Quando definido como síncrono, todos os documentos de entrada são processados e uma única resposta é retornada. Quando definido como assíncrono, uma resposta é enviada para cada documento processado.
+**assíncrono:** quando definido como síncrono, todos os documentos de entrada são processados e uma única resposta é retornada. Quando definido como assíncrono, uma resposta é enviada para cada documento processado.
 
 Por exemplo, um terminal de email é criado para um serviço que utiliza um único documento do Word e retorna esse documento como um arquivo PDF. Um email pode ser enviado para a caixa de entrada do ponto final que contém vários (3) documentos do Word. Quando todos os três documentos são processados, se o terminal estiver configurado como síncrono, um único email de resposta será enviado com os três documentos anexados. Se o ponto de extremidade for assíncrono, um email de resposta será enviado depois que cada documento do Word for convertido em PDF. O resultado são três emails, cada um com um único anexo PDF.
 
 O valor padrão é assíncrono.
 
-**Inclua o corpo original do email como um anexo:** Por padrão, quando você envia um email para o servidor de formulários, o texto original da mensagem é incluído no corpo da mensagem. Para incluir o texto como anexo, selecione essa opção.
+**Incluir o corpo original do email como um anexo:** Por padrão, quando você envia um email para o servidor de formulários, o texto original da mensagem é incluído no corpo da mensagem. Para incluir o texto como anexo, selecione essa opção.
 
-**Use a linha de assunto original para emails de resultado:** Por padrão, o servidor do Forms usa os valores especificados nas configurações Assunto do email de sucesso e Assunto do email de erro como a linha de assunto ao enviar mensagens de email de resultado. Para, em vez disso, usar a mesma linha de assunto que o email original enviado para o servidor, selecione essa opção.
+**Use a linha de assunto original para emails de resultado:** por padrão, o servidor Forms usa os valores especificados nas configurações Assunto do email de sucesso e Assunto do email de erro como a linha de assunto ao enviar mensagens de email de resultado. Para, em vez disso, usar a mesma linha de assunto que o email original enviado para o servidor, selecione essa opção.
 
-**Assunto do email de sucesso:** Depois de enviar um email para um terminal de email para o start ou continuar um processo, você receberá uma mensagem de email de retorno do servidor de formulários do AEM. Se seu email for bem-sucedido, você receberá um email de sucesso. Se seu email falhar, você receberá um email com falha informando por que ele falhou. Essa configuração permite especificar a linha de assunto das mensagens de email de sucesso enviadas para esse terminal.
+**Assunto do email de sucesso:** Depois de enviar um email para um terminal de email para o start ou continuar um processo, você receberá uma mensagem de email de retorno do servidor de formulários AEM. Se seu email for bem-sucedido, você receberá um email de sucesso. Se seu email falhar, você receberá um email com falha informando por que ele falhou. Essa configuração permite especificar a linha de assunto das mensagens de email de sucesso enviadas para esse terminal.
 
-**Corpo de email de sucesso:** Permite que você especifique o texto do corpo das mensagens de email de sucesso enviadas para este terminal.
+**Corpo de email de sucesso:** permite que você especifique o texto do corpo das mensagens de email de sucesso enviadas para este terminal.
 
-**Prefixo de assunto do email de erro:** Permite que você especifique o texto usado no início da linha de assunto das mensagens de e-mail de falha enviadas para este terminal.
+**Prefixo de assunto do email de erro:** permite especificar o texto usado no início da linha de assunto das mensagens de email de falha enviadas para esse terminal.
 
-**Assunto do email de erro:** Permite que você especifique a linha de assunto das mensagens de e-mail de falha enviadas para este terminal. Esse texto é exibido após o Prefixo de assunto do email de erro.
+**Assunto do email de erro:** permite que você especifique a linha de assunto das mensagens de email de falha enviadas para este terminal. Esse texto é exibido após o Prefixo de assunto do email de erro.
 
-**Corpo do email de erro:** Permite que você especifique a primeira linha no texto do corpo das mensagens de e-mail de falha enviadas para esse terminal.
+**Corpo do email de erro:** permite que você especifique a primeira linha no texto do corpo das mensagens de email de falha enviadas para este terminal.
 
-**Informações de resumo do email:** Cada mensagem de sucesso ou falha inclui uma seção que contém o texto original do email enviado para o servidor de formulários. Essa configuração especifica o texto que aparece acima dessa seção.
+**Informações de resumo do email:** cada mensagem de sucesso ou falha inclui uma seção que contém o texto original do email enviado ao servidor de formulários. Essa configuração especifica o texto que aparece acima dessa seção.
 
-**Valide a Caixa de entrada antes de criar/atualizar este ponto de extremidade:** Quando essa opção é selecionada, o servidor de formulários verifica se as configurações de SMTP/POP3 estão corretas antes da criação do terminal. Quando você clica em Adicionar, uma mensagem é exibida informando se a conta da caixa de entrada é válida. Se essa opção não estiver selecionada, o servidor de formulários AEM criará o terminal sem validar a caixa de entrada.
+**Validar Caixa de entrada antes de criar/atualizar este ponto de extremidade:** Quando essa opção é selecionada, o servidor de formulários verifica se as configurações de SMTP/POP3 estão corretas antes de criar o ponto de extremidade. Quando você clica em Adicionar, uma mensagem é exibida informando se a conta da caixa de entrada é válida. Se essa opção não estiver selecionada, o servidor de formulários AEM criará o terminal sem validar a caixa de entrada.
 
-**Nome da Operação:** Esta configuração é obrigatória. Uma lista de operações que podem ser atribuídas ao ponto de extremidade de email. A operação selecionada aqui determina quais campos são exibidos nas seções Mapeamentos de parâmetro de entrada e Mapeamentos de parâmetro de saída.
+**Nome da operação:** essa configuração é obrigatória. Uma lista de operações que podem ser atribuídas ao ponto de extremidade de email. A operação selecionada aqui determina quais campos são exibidos nas seções Mapeamentos de parâmetro de entrada e Mapeamentos de parâmetro de saída.
 
-**Mapeamentos de parâmetros de entrada:** Usado para configurar a entrada necessária para processar o serviço e a operação. Os dois tipos de entrada são literal e variável:
+**Mapeamentos do parâmetro de entrada:** usado para configurar a entrada necessária para processar o serviço e a operação. Os dois tipos de entrada são literal e variável:
 
-**Literal:** O email usa o valor inserido no campo conforme é exibido.
+**Literal:** o email usa o valor inserido no campo conforme é exibido.
 
-**Variável:** Você pode mapear uma string do assunto do email, corpo, cabeçalho ou endereço de email do remetente. Para fazer isso, use uma das seguintes palavras-chave: %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Por exemplo, se você usar %SUBJECT%, o conteúdo do assunto do email será usado como parâmetro de entrada. Para coletar anexos, insira um padrão de arquivo que o ponto de extremidade de email pode usar para selecionar os documentos anexados. Por exemplo, inserir &amp;ast;.pdf seleciona qualquer documento anexado que tenha uma extensão de nome de arquivo .pdf. Inserir &amp;ast; seleciona qualquer documento anexado. Digitar example.pdf seleciona qualquer documento anexado chamado example.pdf.
+**Variável:** você pode mapear uma string do assunto do email, corpo, cabeçalho ou endereço de email do remetente. Para fazer isso, use uma das seguintes palavras-chave: %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Por exemplo, se você usar %SUBJECT%, o conteúdo do assunto do email será usado como parâmetro de entrada. Para coletar anexos, insira um padrão de arquivo que o ponto de extremidade de email pode usar para selecionar os documentos anexados. Por exemplo, inserir &amp;ast;.pdf seleciona qualquer documento anexado que tenha uma extensão de nome de arquivo .pdf. Inserir &amp;ast; seleciona qualquer documento anexado. Digitar example.pdf seleciona qualquer documento anexado chamado example.pdf.
 
-**Mapeamentos de parâmetros de saída:** Usado para configurar a saída do serviço e da operação. Os seguintes caracteres nos valores de mapeamento do parâmetro de saída são expandidos no nome do arquivo anexo:
+**Mapeamentos de parâmetro de saída:** usados para configurar a saída do serviço e da operação. Os seguintes caracteres nos valores de mapeamento do parâmetro de saída são expandidos no nome do arquivo anexo:
 
-**%F** Representa o nome de arquivo do arquivo de origem (não inclui uma extensão).
+**%** FReapresenta o nome de arquivo do arquivo de origem (não incluindo uma extensão).
 
-**%E** Representa a extensão do arquivo de origem.
+**%** ERrepresenta a extensão do arquivo de origem.
 
 Qualquer ocorrência da barra invertida (\) é substituída por %%.
 
-***observação **: Se a mensagem de solicitação de serviço incluir vários anexos de arquivo, você não poderá usar os parâmetros %F e %E para a propriedade Mapeamentos de Parâmetro de Saída do ponto final. Se a resposta dos serviços retornar vários anexos de arquivo, não será possível especificar o mesmo nome para mais de um anexo. Se você não seguir essas recomendações, o serviço chamado criará os nomes dos arquivos retornados e os nomes não serão previsíveis.*
+***observação **: Se a mensagem de solicitação de serviço incluir vários anexos de arquivo, você não poderá usar os parâmetros %F e %E para a propriedade Mapeamentos de Parâmetro de Saída do ponto final. Se a resposta dos serviços retornar vários anexos de arquivo, não será possível especificar o mesmo nome para mais de um anexo. Se você não seguir essas recomendações, o serviço chamado criará os nomes para os arquivos retornados e os nomes não serão previsíveis.*
 
 Os seguintes valores estão disponíveis:
 
-**Objeto único:** O provedor de e-mail não tem o destino da pasta de origem; os resultados são retornados como anexos. O padrão é Result/%F.ps e retorna Result%%sourcefilename.ps como o anexo de nome de arquivo.
+**Objeto único:** o provedor de email não tem o destino da pasta de origem; os resultados são retornados como anexos. O padrão é Result/%F.ps e retorna Result%%sourcefilename.ps como o anexo de nome de arquivo.
 
-**Lista:** O padrão é Result/%F/ e retorna Result%%sourcefilename%%file1 como o anexo de nome de arquivo.
+**Lista:** o padrão é Result/%F/ e retorna Result%%sourcefilename%%file1 como o anexo de nome de arquivo.
 
 **Mapa:** O padrão é Result/%F/ e o destino de origem é Result%%sourcefilename%%file1 e Result%%sourcefilename%%file2. Se o mapa contiver mais de um objeto e o padrão for Result/%F.ps, os anexos do arquivo de resposta serão Result%%sourcefilename1.ps (saída 1) e Result%%sourcefilename2.ps (saída 2).
 
-## Criar um ponto de extremidade de email para o serviço de Tarefa completa {#create-an-email-endpoint-for-the-complete-task-service}
+## Criar um terminal de email para o serviço de Tarefa completa {#create-an-email-endpoint-for-the-complete-task-service}
 
 Para que o fluxo de trabalho de formulários receba e manipule mensagens de email recebidas de usuários, é necessário criar um terminal de email para o serviço de Tarefa completa.
 
