@@ -1,8 +1,8 @@
 ---
 title: Personalização do tema
 seo-title: Personalização do tema
-description: Como personalizar o tema do aplicativo AEM Forms.
-seo-description: Como personalizar o tema do aplicativo AEM Forms.
+description: Como personalizar o tema do seu aplicativo AEM Forms.
+seo-description: Como personalizar o tema do seu aplicativo AEM Forms.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Personalização do tema {#theme-customization}
 
-Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência distinta e específica da organização ao aplicativo AEM Forms. Por exemplo, é possível alterar a cor e a altura do plano de fundo de tarefas ou Pontos de partida. O exemplo a seguir fornece instruções para alterar:
+Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência específica da organização ao aplicativo AEM Forms. Por exemplo, é possível alterar a cor e a altura do plano de fundo de tarefas ou Pontos de partida. O exemplo a seguir fornece instruções para alterar:
 
 * instruções de exibição no lugar da descrição
 * número de rotas de exibição
@@ -36,11 +36,11 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 
 1. Navegue até a pasta de modelos.
 
-   * No Xcode, navegue até a pasta **Capture > www > wsmobile > js > tempo de execução > modelos** .
-   * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > tempo de execução > modelos** .
-   * No Visual Studio, navegue até a pasta **MWSWwindows > www > wsmobile > js > tempo de execução > modelos** .
+   * No Xcode, navegue até a pasta **Captura > www > wsmobile > js > tempo de execução > modelos**.
+   * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > tempo de execução > modelos**.
+   * No Visual Studio, navegue até a pasta **MWSWwindows > www > wsmobile > js > tempo de execução > modelos**.
 
-1. Open the `template.html` file for editing.
+1. Abra o arquivo `template.html` para edição.
 1. Localize a seguinte string:
 
    ```jsp
@@ -53,7 +53,7 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 
    Substitua-o por `<%`.
 
-1. Localize o seguinte código no `template.html` arquivo:
+1. Localize o seguinte código no arquivo `template.html`:
 
    ```jsp
    <ul id="task_menu_list">
@@ -75,13 +75,13 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 
 1. Navegue até a pasta css.
 
-   * No Xcode, navegue até **Capture > www > wsmobile > css**.
+   * No Xcode, navegue até **Capturar > www > wsmobile > css**.
    * No Eclipse, navegue até **assets > www > wsmobile > css**.
    * No Visual Studio, navegue até **MWSWwindows > www > wsmobile > css**.
 
-1. Open the `_style.css` file for editing.
+1. Abra o arquivo `_style.css` para edição.
 1. Para imagem de plano de fundo, altere `#323232` para `#fff`.
-1. Salve as alterações e feche o `_style.css` arquivo.
+1. Salve as alterações e feche o arquivo `_style.css`.
 1. Abra o aplicativo AEM Forms.
 
    O aplicativo AEM Forms agora exibe instruções em vez de descrição.
