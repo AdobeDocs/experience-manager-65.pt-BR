@@ -16,9 +16,9 @@ ht-degree: 0%
 ---
 
 
-# Apresentação do sítio de referência relativo a We.Gov FOIA {#we-gov-reference-site-foia-walkthrough}
+# O site de referência We.Gov FOIA passou {#we-gov-reference-site-foia-walkthrough}
 
-## Cenário do Ato de Liberdade de Informação do Site de Referência {#reference-site-freedom-of-information-act-scenario}
+## Cenário do Ato de Liberdade de Informação do site de referência {#reference-site-freedom-of-information-act-scenario}
 
 We.Gov é uma organização estatal que permite que pais adotivos se inscrevam para o suporte infantil se eles adotarem uma criança. We.Gov também permite que os pais solicitem informações aos seguintes departamentos governamentais sob a lei de liberdade de informação:
 
@@ -36,7 +36,7 @@ O cenário envolve as seguintes personas:
 * John Jacobs, o responsável pelo pedido, encaminha-o para o departamento adequado
 * Gloria Rios, funcionária do governo que fornece as informações conforme o pedido
 
-## Sarah dá início a um pedido de informações ao abrigo da FOIA {#sarah-initiates-request-for-information-under-foia}
+## Sarah dá início ao pedido de informações em FOIA {#sarah-initiates-request-for-information-under-foia}
 
 Sob a Lei de Liberdade de Informação, Sarah solicita uma cópia dos registros de processos da Administração para Crianças e Famílias por anos (FY) 2013 até 2016. Sarah submete este pedido ao Departamento de Justiça - Gabinete de Política de Informação e significa também que está disposta a pagar até 100 dólares para os custos de impressão e envio de correio.
 
@@ -46,11 +46,11 @@ Sob a Lei de Liberdade de Informação, Sarah solicita uma cópia dos registros 
 
 No seu navegador, abra `https://<hostname>:<PublishPort>/wegov`. No site We.Gov, toque em Aplicativos > Todos os aplicativos. Na página Todos os aplicativos, toque em Aplicar sob Solicitação FOIA.
 
-## Sarah start seu pedido de informações dentro da FOIA {#sarah-starts-her-application-for-information-under-foia}
+## Sarah start seu pedido de informações em FOIA {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah clica em **Aplicar** e, na página Formulário de solicitação do Ato de Liberdade de Informação, digita as seguintes informações:
+Sarah clica em **Apply** e na página Formulário de solicitação do Ato de Liberdade de Informação, Sarah insere informações incluindo o seguinte:
 
-* **Agência:** Sarah especifica a agência para a qual o pedido foi dirigido como Departamento de Justiça - Escritório de Política de Informação.
+* **Agência:** Sarah especifica a agência à qual o pedido foi dirigido como Departamento de Justiça - Gabinete de Política de Informação.
 
 * **Pagará Até**: Sarah especifica que está disposta a pagar até 100 dólares para as despesas de impressão e envio de correio.
 * **Descreva a solicitação em detalhes**: Sarah especifica &quot;Solicitando cópia dos registros de caso da Administração para Crianças e Famílias para os anos fiscais de 2013 a 2016.&quot;
@@ -63,9 +63,9 @@ A qualquer momento, Sarah pode tocar em Salvar para salvar o rascunho do formul�
 
 >[!NOTE]
 >
->O fluxo de trabalho de retornar do e-mail funciona somente com usuários conectados. No cenário do site de referência, verifique se a usuário Sarah Rose está adicionada. As credenciais de login da Sarah são `srose/password`.
+>O fluxo de trabalho de retornar do e-mail funciona somente com usuários conectados. No cenário do site de referência, verifique se a usuário Sarah Rose está adicionada. As credenciais de logon da Sarah são `srose/password`.
 
-## John Jacobs recebe e aprova a candidatura {#john-jacobs-receives-and-approves-the-application}
+## John Jacobs recebe e aprova o aplicativo {#john-jacobs-receives-and-approves-the-application}
 
 John Jacobs recebe os pedidos e os encaminha para a pessoa certa. AEM Caixa de entrada permite que ela veja todas as solicitações enviadas em um único lugar.
 
@@ -75,7 +75,7 @@ Quando Sarah preenche e envia o pedido FOIA, um registro do pedido é enviado pa
 
 ### Veja você mesmo {#see-it-yourself-1}
 
-Você pode acessar a caixa de entrada AEM em https://&lt;nome do ***host***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Faça logon na caixa de entrada AEM usando jjacobs/password como o nome de usuário/senha de John Jacobs e consulte o aplicativo FOIA. Para obter informações sobre como usar AEM Caixa de entrada para tarefas de fluxo de trabalho centradas em formulários, consulte [Gerenciar aplicativos e tarefas do Forms AEM Caixa de entrada](/help/forms/using/manage-applications-inbox.md).
+Você pode acessar a caixa de entrada AEM em https://&lt;***nome do host***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Faça logon na caixa de entrada AEM usando jjacobs/password como o nome de usuário/senha de John Jacobs e consulte o aplicativo FOIA. Para obter informações sobre como usar AEM Caixa de entrada para tarefas de fluxo de trabalho centradas em formulários, consulte [Gerenciar aplicativos e tarefas Forms em AEM Caixa de entrada](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -89,7 +89,7 @@ Depois que John Jacobs aprovar o aplicativo, Sarah recebe um e-mail de reconheci
 
 ![sarahroseemail](assets/sarahroseemail.png)
 
-## Gloria recebe o pedido FOIA de aprovação de segundo nível {#gloria-receives-the-foia-request-for-second-level-approval}
+## Gloria recebe a solicitação FOIA para aprovação de segundo nível {#gloria-receives-the-foia-request-for-second-level-approval}
 
 Depois que John Jacobs preenche as informações exigidas e aprova o pedido de Sarah, os pedidos vão para Gloria Rios para a aprovação final. Gloria revisa o documento de registro anexado e aprova o pedido.
 
@@ -99,15 +99,15 @@ Depois que John Jacobs preenche as informações exigidas e aprova o pedido de S
 
 Quando John Jacobs aprova a solicitação FOIA, um PDF ou Documento de Record é criado e enviado para a caixa de entrada de Gloria Rios. Gloria pode visualização o pedido enviado e aprová-lo ou rejeitá-lo.
 
-### Veja você mesmo {#see-for-yourself}
+### Consulte você mesmo {#see-for-yourself}
 
-Você pode acessar a caixa de entrada AEM em https://&lt;nome do ***host***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Faça logon na caixa de entrada AEM usando grios/password como nome de usuário/senha para Gloria Rios e consulte a solicitação FOIS.
+Você pode acessar a caixa de entrada AEM em https://&lt;***nome do host***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Faça logon na caixa de entrada AEM usando grios/password como nome de usuário/senha para Gloria Rios e consulte a solicitação FOIS.
 
 Gloria abre o pedido e examina os detalhes do pedido FOIA. Depois de rever os detalhes do pedido e verificar a viabilidade de fornecer os documentos requeridos, Gloria aprova o pedido.
 
 ![gloriariosaprovações](assets/gloriariosapproves.png)
 
-## Sarah recebe uma notificação de que seu pedido foi aprovado {#sarah-receives-notification-that-her-request-is-approved}
+## Sarah recebe uma notificação de que sua solicitação foi aprovada {#sarah-receives-notification-that-her-request-is-approved}
 
 Depois que Gloria aprova a solicitação FOIA, Sarah recebe um e-mail notificando-a de que sua solicitação foi aprovada. O e-mail também inclui as informações sobre o cronograma provisório para fornecer o documento e os detalhes de contato para o acompanhamento da solicitação.
 
