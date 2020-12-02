@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
@@ -33,14 +36,14 @@ Uma solução MDM junto com o Gerenciamento de aplicativos móveis permite geren
 
 O administrador do MDM pode carregar arquivos ipa e apk no servidor MDM e controlar os usuários que podem acessar os arquivos ipa ou apk. O administrador também pode controlar a configuração do perfil correspondente a cada aplicativo.
 
-## Configurações de Perfil que afetam o aplicativo AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
+## Configurações de perfil que afetam o aplicativo AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
 
 As seguintes configurações de Perfil em seu dispositivo afetarão o funcionamento do aplicativo AEM Forms em seu dispositivo:
 
-* **Permitir uso da câmera** na seção **Funcionalidade** do dispositivo
+* **Permitir o uso da** câmera na seção  **de** funcionalidade do dispositivo
 
-Se você desativar **Permitir uso de câmera**, o recurso de câmera da anotação [](/help/forms/using/add-attachments.md) Fotografia não funcionará. É necessário ativar essa opção para usar a câmera no aplicativo.
+Se você desativar **Permitir o uso da câmera**, o recurso de câmera da [Anotação de fotografia](/help/forms/using/add-attachments.md) não funcionará. É necessário ativar essa opção para usar a câmera no aplicativo.
 
-* **Exigir senha no dispositivo** na seção Políticas de senha
+* **Exigir senha no** dispositivo na seção Políticas de senha
 
-Para ativar a **criptografia de dados** do aplicativo, é recomendável ativar a **senha** no dispositivo. Se a senha não estiver definida no dispositivo, os dados do aplicativo armazenados no dispositivo não serão criptografados.
+Para habilitar **criptografia de dados do aplicativo**, é recomendável habilitar **senha** no dispositivo. Se a senha não estiver definida no dispositivo, os dados do aplicativo armazenados no dispositivo não serão criptografados.
