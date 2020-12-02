@@ -1,8 +1,8 @@
 ---
-title: Como auditar operações de gerenciamento de usuários no AEM
-seo-title: Como auditar operações de gerenciamento de usuários no AEM
-description: Saiba como auditar as operações de gerenciamento de usuários no AEM.
-seo-description: Saiba como auditar as operações de gerenciamento de usuários no AEM.
+title: Como auditar operações de gerenciamento de usuários em AEM
+seo-title: Como auditar operações de gerenciamento de usuários em AEM
+description: Saiba como auditar as Operações de Gerenciamento de Usuário no AEM.
+seo-description: Saiba como auditar as Operações de Gerenciamento de Usuário no AEM.
 uuid: 9d177afb-172c-4858-a678-254c97cfa472
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,15 +12,18 @@ discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 
 
-# Como auditar operações de gerenciamento de usuários no AEM{#how-to-audit-user-management-operations-in-aem}
+# Como auditar operações de gerenciamento de usuários em AEM{#how-to-audit-user-management-operations-in-aem}
 
 ## Introdução {#introduction}
 
-O AEM introduziu a capacidade de registrar alterações de permissão para que possam ser auditadas posteriormente.
+AEM introduziu a capacidade de registrar alterações de permissão para que possam ser auditadas posteriormente.
 
 O aprimoramento permite a auditoria de ações CRUD (Criar, Ler, Atualizar, Excluir) em permissões e atribuições de grupos de usuários. Mais especificamente, registrará:
 
@@ -28,21 +31,22 @@ O aprimoramento permite a auditoria de ações CRUD (Criar, Ler, Atualizar, Excl
 * Um usuário sendo adicionado a um grupo
 * Alterações de permissão de um usuário ou grupo existente
 
-Por padrão, as entradas serão gravadas no `error.log` arquivo. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado. Mais informações sobre como fazer isso no parágrafo abaixo.
+Por padrão, as entradas serão gravadas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado. Mais informações sobre como fazer isso no parágrafo abaixo.
 
 ## Redirecionando a saída para um arquivo de log separado {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirecionar a saída de log para um arquivo de log separado, é necessário criar uma nova configuração do **Apache Sling Logging Logger** . Usaremos `useraudit.log` como o nome do arquivo separado no exemplo abaixo.
+Para redirecionar a saída de log para um arquivo de log separado, é necessário criar uma nova configuração **Apache Sling Logging Logger**. Usaremos `useraudit.log` como o nome do arquivo separado no exemplo abaixo.
 
 1. Vá para o Console da Web navegando até *https://serveraddress:serverport/system/console/configMgr*
-1. Procure a configuração **do** Apache Sling Logging Logger. Em seguida, pressione o &quot;+&quot; no lado direito da entrada para criar uma nova configuração de fábrica.
+1. Procure **Configuração do Apache Sling Logging Logger**. Em seguida, pressione o &quot;+&quot; no lado direito da entrada para criar uma nova configuração de fábrica.
 1. Crie a seguinte configuração:
 
-   * **** Nível de registro:Informações
-   * **** Arquivo de log: logs/useraudit.log
-   * **** Padrão de mensagem: padrão nível
-   * **** Logger: com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
-   Para inserir os dois loggers no campo **Logger** , é necessário digitar o nome do primeiro, criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo logger.
+   * **Nível de log:** Informações
+   * **Arquivo de registro:** logs/useraudit.log
+   * **Padrão de mensagem:padrão** de nível
+   * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
+   Para inserir os dois registradores no campo **Logger**, é necessário digitar o nome do primeiro e, em seguida, criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo registrador.
 
 ## Exemplo de saída {#example-output}
 
