@@ -2,7 +2,7 @@
 title: Montagem de Documentos usando a numeração de Bates
 seo-title: Montagem de Documentos usando a numeração de Bates
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 uuid: 28d5faeb-6915-41a2-b6a0-78d255df024f
 contentOwner: admin
 content-type: reference
@@ -19,9 +19,9 @@ ht-degree: 0%
 ---
 
 
-# Montagem de Documentos usando a numeração de Bates {#assembling-documents-using-bates-numbering}
+# Montagem de Documentos com Numeração de Bates {#assembling-documents-using-bates-numbering}
 
-É possível montar documentos PDF que contêm identificadores de página únicos usando a numeração de Bates. *A numeração* de Bates é um método de aplicar identificações exclusivas a um lote de documentos relacionados. A cada página do documento (ou conjunto de documentos) é atribuído um número de Bates que identifica exclusivamente a página. Por exemplo, documentos de fabricação que contêm informações da lista de materiais e que estão associados à produção de uma montagem podem conter um identificador. Um número de Bates contém um valor numérico incrementado sequencialmente e um prefixo e sufixo opcionais. O prefixo + sufixo numérico + é chamado de padrão *de* barras.
+É possível montar documentos PDF que contêm identificadores de página únicos usando a numeração de Bates. *A* numeração de Bates é um método de aplicação de identificações exclusivas a um lote de documentos relacionados. A cada página do documento (ou conjunto de documentos) é atribuído um número de Bates que identifica exclusivamente a página. Por exemplo, documentos de fabricação que contêm informações da lista de materiais e que estão associados à produção de uma montagem podem conter um identificador. Um número de Bates contém um valor numérico incrementado sequencialmente e um prefixo e sufixo opcionais. O prefixo + sufixo numérico + é chamado de *padrão de barras*.
 
 A ilustração a seguir mostra um documento PDF que contém um identificador exclusivo localizado no cabeçalho do documento.
 
@@ -50,11 +50,11 @@ Esse documento DDX une dois documentos PDF chamados *map.pdf* e *direcçõespdf*
 
 >[!NOTE]
 >
->Antes de ler esta seção, é recomendável que você esteja familiarizado com a montagem de documentos PDF usando o serviço Assembler. Esta seção não discute os conceitos, como criar um objeto de coleção que contenha documentos de entrada ou extrair os resultados do objeto de coleção retornado. (Consulte Montagem [Programática De Documentos](/help/forms/developing/programmatically-assembling-pdf-documents.md)PDF.)
+>Antes de ler esta seção, é recomendável que você esteja familiarizado com a montagem de documentos PDF usando o serviço Assembler. Esta seção não discute os conceitos, como criar um objeto de coleção que contenha documentos de entrada ou extrair os resultados do objeto de coleção retornado. (Consulte [Montagem Programática de Documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Assembler, consulte Referência de [serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Assembler, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -81,10 +81,10 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do seu proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (necessário se os AEM Forms forem implantados em JBoss)
-* jbossall-client.jar (obrigatório se os AEM Forms forem implantados em JBoss)
+* adobe-utilities.jar (necessário se a AEM Forms estiver implantada em JBoss)
+* jbossall-client.jar (obrigatório se o AEM Forms estiver implantado em JBoss)
 
-Se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é implantado. Para obter informações sobre a localização de todos os arquivos JAR de AEM Forms, consulte [Inclusão de arquivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)da biblioteca Java de AEM Forms.
+Se o AEM Forms for implantado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms está implantado. Para obter informações sobre a localização de todos os arquivos AEM Forms JAR, consulte [Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um cliente de Montador de PDF**
 
@@ -92,11 +92,11 @@ Antes de poder executar programaticamente uma operação do Assembler, você dev
 
 **Referência a um documento DDX existente**
 
-Um documento DDX deve ser referenciado para montar um documento PDF. Por exemplo, considere o documento DDX que foi introduzido nesta seção. Para montar um documento PDF que contenha identificadores de página exclusivos, o documento DX deve conter o `BatesNumber` elemento .
+Um documento DDX deve ser referenciado para montar um documento PDF. Por exemplo, considere o documento DDX que foi introduzido nesta seção. Para montar um documento PDF que contenha identificadores de página exclusivos, o documento DX deve conter o elemento `BatesNumber`.
 
-**documentos PDF de entrada de referência**
+**Documentos PDF de entrada de referência**
 
-documentos PDF de entrada devem ser referenciados para montar um documento PDF. Por exemplo, os documentos map.pdf e direcçõesdevem ser referenciados para reunir esses documentos PDF em um único documento PDF.
+Documentos PDF de entrada devem ser referenciados para montar um documento PDF. Por exemplo, os documentos map.pdf e direcçõesdevem ser referenciados para reunir esses documentos PDF em um único documento PDF.
 
 **Definir o valor inicial do número de Bates**
 
@@ -104,7 +104,7 @@ Você pode definir o valor inicial do número de Bates para atender às suas nec
 
 **Montagem de documentos PDF de entrada**
 
-Depois de criar o cliente do serviço Assembler, consulte o documento DDX que contém informações de `BatesNumber` `invokeDDX` elementos, consulte um documento PDF de entrada e defina as opções de tempo de execução, você pode chamar a operação que resulta na montagem pelo serviço Assembler de um documento PDF que contém identificadores de página exclusivos.
+Depois de criar o cliente do serviço Assembler, consulte o documento DDX que contém `BatesNumber` informações do elemento, consulte um documento PDF de entrada e defina as opções de tempo de execução, você pode chamar a operação `invokeDDX` que resulta na montagem pelo serviço Assembler de um documento PDF que contém identificadores de página exclusivos.
 
 **Extrair os resultados**
 
@@ -112,11 +112,11 @@ O serviço Assembler retorna um objeto de coleção que contém os resultados da
 
 >[!NOTE]
 >
->Um objeto de coleção é retornado se você chamar a `invokeDDX` operação. Essa operação é usada ao transmitir dois ou mais documentos PDF de entrada ao serviço Assembler. No entanto, se você enviar apenas um documento PDF de entrada para o serviço Assembler, deverá chamar a operação. `invokeOneDocument` Para obter informações sobre como usar essa operação, consulte [Montagem de Documentos](/help/forms/developing/assembling-encrypted-pdf-documents.md)PDF criptografados.
+>Um objeto de coleção é retornado se você chamar a operação `invokeDDX`. Essa operação é usada ao transmitir dois ou mais documentos PDF de entrada ao serviço Assembler. No entanto, se você enviar apenas um documento PDF de entrada para o serviço Assembler, deverá chamar a operação `invokeOneDocument`. Para obter informações sobre como usar essa operação, consulte [Montagem de Documentos PDF criptografados](/help/forms/developing/assembling-encrypted-pdf-documents.md).
 
 **Consulte também:**
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -132,52 +132,52 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
 1. Crie um cliente do Montador de PDF.
 
-   * Crie um `ServiceClientFactory` objeto que contenha propriedades de conexão.
-   * Crie um `AssemblerServiceClient` objeto usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `AssemblerServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `java.io.FileInputStream` objeto que represente o documento DDX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DX.
-   * Crie um `com.adobe.idp.Document` objeto usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento DDX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DX.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Faça referência a documentos PDF de entrada.
 
-   * Crie um `java.util.Map` objeto usado para armazenar documentos PDF de entrada usando um `HashMap` construtor.
-   * Para cada documento PDF de entrada, crie um `java.io.FileInputStream` objeto usando seu construtor e transmitindo o local do documento PDF de entrada. Nessa situação, passe o local de um documento PDF não protegido.
-   * Para cada documento PDF de entrada, crie um `com.adobe.idp.Document` objeto e passe o `java.io.FileInputStream` objeto que contém o documento PDF.
-   * Adicione uma entrada ao `java.util.Map` objeto chamando seu `put` método e transmitindo os seguintes argumentos:
+   * Crie um objeto `java.util.Map` usado para armazenar documentos PDF de entrada usando um construtor `HashMap`.
+   * Para cada documento PDF de entrada, crie um objeto `java.io.FileInputStream` usando seu construtor e transmitindo o local do documento PDF de entrada. Nessa situação, passe o local de um documento PDF não protegido.
+   * Para cada documento PDF de entrada, crie um objeto `com.adobe.idp.Document` e passe o objeto `java.io.FileInputStream` que contém o documento PDF.
+   * Adicione uma entrada ao objeto `java.util.Map` invocando seu método `put` e transmitindo os seguintes argumentos:
 
       * Um valor de string que representa o nome da chave. Esse valor deve corresponder ao valor do elemento de origem do PDF especificado no documento DX. Por exemplo, o nome do arquivo de origem PDF especificado no documento DDX que é introduzido nesta seção é Loan.pdf.
-      * Um `com.adobe.idp.Document` objeto que contém o documento PDF não protegido.
+      * Um objeto `com.adobe.idp.Document` que contém o documento PDF não protegido.
 
 1. Defina o valor inicial do número de Bates.
 
-   * Crie um `AssemblerOptionSpec` objeto que armazene opções de tempo de execução usando seu construtor.
-   * Defina o número de Bates inicial chamando o `AssemblerOptionSpec` objeto `setFirstBatesNumber` e transmitindo um valor numérico que especifique o valor inicial.
+   * Crie um objeto `AssemblerOptionSpec` que armazene opções de tempo de execução usando seu construtor.
+   * Defina o número de Bates inicial chamando `AssemblerOptionSpec` o `setFirstBatesNumber` do objeto e transmitindo um valor numérico que especifique o valor inicial.
 
 1. Monte os documentos PDF de entrada.
 
-   Chame o `AssemblerServiceClient` método do `invokeDDX` objeto e passe os seguintes valores obrigatórios:
+   Chame o método `AssemblerServiceClient` do objeto `invokeDDX` e passe os seguintes valores obrigatórios:
 
-   * Um `com.adobe.idp.Document` objeto que representa o documento DDX.
-   * Um `java.util.Map` objeto que contém o arquivo PDF não protegido de entrada.
-   * Um `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log de trabalhos.
+   * Um objeto `com.adobe.idp.Document` que representa o documento DDX.
+   * Um objeto `java.util.Map` que contém o arquivo PDF não protegido de entrada.
+   * Um objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log de trabalhos.
 
-   O `invokeDDX` método retorna um `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contém um documento PDF criptografado por senha.
+   O método `invokeDDX` retorna um objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contém um documento PDF criptografado por senha.
 
 1. Extraia os resultados.
 
    Para obter o documento PDF recém-criado, execute as seguintes ações:
 
-   * Chame o `AssemblerResult` método do `getDocuments` objeto. Essa ação retorna um `java.util.Map` objeto.
-   * Iterar pelo `java.util.Map` objeto até encontrar o `com.adobe.idp.Document` objeto.
-   * Chame o `com.adobe.idp.Document` `copyToFile` método do objeto para extrair o documento PDF.
+   * Chame o método `AssemblerResult` do objeto `getDocuments`. Esta ação retorna um objeto `java.util.Map`.
+   * Itere pelo objeto `java.util.Map` até encontrar o objeto `com.adobe.idp.Document`.
+   * Chame o método `com.adobe.idp.Document` do objeto `copyToFile` para extrair o documento PDF.
 
 **Consulte também:**
 
 [Start rápido (modo SOAP): Montagem de um documento PDF com a numeração de datas usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -191,14 +191,14 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP das AEM Forms de hospedagem do servidor.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente do Montador de PDF.
 
-   * Crie um `AssemblerServiceClient` objeto usando seu construtor padrão.
-   * Crie um `AssemblerServiceClient.Endpoint.Address` objeto usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
-   * Crie um `System.ServiceModel.BasicHttpBinding` objeto obtendo o valor do `AssemblerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` campo do `MessageEncoding` objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
+   * Crie um objeto `AssemblerServiceClient` usando seu construtor padrão.
+   * Crie um objeto `AssemblerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Passe um valor de string que especifica o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar o atributo `lc_version`. Esse atributo é usado ao criar uma referência de serviço.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `AssemblerServiceClient.Endpoint.Binding`. Converta o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `System.ServiceModel.BasicHttpBinding` `MessageEncoding` do objeto como `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
       * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -208,48 +208,48 @@ Monte um documento PDF que usa identificadores de página exclusivos (numeraçã
 
 1. Faça referência a um documento DDX existente.
 
-   * Crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento DDX.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento DX e o modo para abrir o arquivo.
-   * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
-   * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` objeto `Read` . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
-   * Preencha o `BLOB` objeto atribuindo seu `MTOM` campo ao conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento DDX.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento DX e o modo para abrir o arquivo.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `System.IO.FileStream` do objeto `Length`.
+   * Preencha a matriz de bytes com dados de fluxo chamando o método `System.IO.FileStream` do objeto `Read`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` ao conteúdo da matriz de bytes.
 
 1. Faça referência a documentos PDF de entrada.
 
-   * Para cada documento PDF de entrada, crie um `BLOB` objeto usando seu construtor. O `BLOB` objeto é usado para armazenar o documento PDF de entrada.
-   * Crie um `System.IO.FileStream` objeto chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento PDF de entrada e o modo no qual o arquivo deve ser aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo do `System.IO.FileStream` objeto. É possível determinar o tamanho da matriz de bytes obtendo a propriedade do `System.IO.FileStream` objeto `Length` .
-   * Preencha a matriz de bytes com dados de fluxo chamando o método do `System.IO.FileStream` objeto `Read` . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
-   * Preencha o `BLOB` objeto atribuindo sua `MTOM` propriedade ao conteúdo da matriz de bytes.
-   * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Esse objeto de coleção é usado para armazenar os documentos PDF de entrada.
-   * Para cada documento PDF de entrada, crie um `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto. Por exemplo, se dois documentos PDF de entrada forem usados, crie dois `MyMapOf_xsd_string_To_xsd_anyType_Item` objetos.
-   * Atribua um valor de string que representa o nome da chave ao campo do `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto `key` . Esse valor deve corresponder ao valor do elemento de origem do PDF especificado no documento DX. (Execute essa tarefa para cada documento PDF de entrada.)
-   * Atribua o `BLOB` objeto que armazena o documento PDF ao `MyMapOf_xsd_string_To_xsd_anyType_Item` campo do `value` objeto. (Execute essa tarefa para cada documento PDF de entrada.)
-   * Adicione o `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto ao `MyMapOf_xsd_string_To_xsd_anyType` objeto. Chame o `MyMapOf_xsd_string_To_xsd_anyType` método do objeto `Add` e passe o `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Execute essa tarefa para cada documento PDF de entrada.)
+   * Para cada documento PDF de entrada, crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento PDF de entrada.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento PDF de entrada e o modo no qual o arquivo deve ser aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `System.IO.FileStream` do objeto `Length`.
+   * Preencha a matriz de bytes com dados de fluxo chamando o método `System.IO.FileStream` do objeto `Read`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` ao conteúdo da matriz de bytes.
+   * Crie um objeto `MyMapOf_xsd_string_To_xsd_anyType`. Esse objeto de coleção é usado para armazenar os documentos PDF de entrada.
+   * Para cada documento PDF de entrada, crie um objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`. Por exemplo, se dois documentos PDF de entrada forem usados, crie dois objetos `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Atribua um valor de string que representa o nome da chave ao campo `MyMapOf_xsd_string_To_xsd_anyType_Item` `key` do objeto. Esse valor deve corresponder ao valor do elemento de origem do PDF especificado no documento DX. (Execute essa tarefa para cada documento PDF de entrada.)
+   * Atribua o objeto `BLOB` que armazena o documento PDF ao campo `MyMapOf_xsd_string_To_xsd_anyType_Item` `value` do objeto. (Execute essa tarefa para cada documento PDF de entrada.)
+   * Adicione o objeto `MyMapOf_xsd_string_To_xsd_anyType_Item` ao objeto `MyMapOf_xsd_string_To_xsd_anyType`. Chame o método `MyMapOf_xsd_string_To_xsd_anyType` do objeto `Add` e passe o objeto `MyMapOf_xsd_string_To_xsd_anyType`. (Execute essa tarefa para cada documento PDF de entrada.)
 
 1. Defina o valor inicial do número de Bates.
 
-   * Crie um `AssemblerOptionSpec` objeto que armazene opções de tempo de execução usando seu construtor.
-   * Defina o número de Bates inicial atribuindo um valor numérico ao membro de `firstBatesNumber` dados que pertence ao `AssemblerOptionSpec` objeto.
+   * Crie um objeto `AssemblerOptionSpec` que armazene opções de tempo de execução usando seu construtor.
+   * Defina o número de Bates inicial atribuindo um valor numérico ao membro de dados `firstBatesNumber` que pertence ao objeto `AssemblerOptionSpec`.
 
 1. Monte os documentos PDF de entrada.
 
-   Chame o método do `AssemblerServiceClient` objeto `invoke` e passe os seguintes valores:
+   Chame o método `AssemblerServiceClient` do objeto `invoke` e passe os seguintes valores:
 
-   * Um `BLOB` objeto que representa o documento DDX.
-   * O `MyMapOf_xsd_string_To_xsd_anyType` objeto que contém os documentos PDF de entrada. Suas chaves devem corresponder aos nomes dos arquivos de origem do PDF, e seus valores devem ser os `BLOB` objetos que correspondem a esses arquivos.
-   * Um `AssemblerOptionSpec` objeto que especifica opções de tempo de execução.
+   * Um objeto `BLOB` que representa o documento DDX.
+   * O objeto `MyMapOf_xsd_string_To_xsd_anyType` que contém os documentos PDF de entrada. Suas chaves devem corresponder aos nomes dos arquivos de origem do PDF e seus valores devem ser os objetos `BLOB` que correspondem a esses arquivos.
+   * Um objeto `AssemblerOptionSpec` que especifica opções de tempo de execução.
 
-   O `invoke` método retorna um `AssemblerResult` objeto que contém os resultados da tarefa e quaisquer exceções que ocorreram.
+   O método `invoke` retorna um objeto `AssemblerResult` que contém os resultados do trabalho e quaisquer exceções que ocorreram.
 
 1. Extraia os resultados.
 
    Para obter o documento PDF recém-criado, execute as seguintes ações:
 
-   * Acesse o `AssemblerResult` campo do `documents` objeto, que é um `Map` objeto que contém os documentos PDF de resultado.
-   * Itere pelo `Map` objeto até encontrar a chave que corresponde ao nome do documento resultante. Em seguida, converta o membro do storage `value` em um `BLOB`.
-   * Extraia os dados binários que representam o documento PDF acessando a propriedade do `BLOB` objeto `MTOM` . Isso retorna uma matriz de bytes que você pode gravar em um arquivo PDF.
+   * Acesse o campo `AssemblerResult` do objeto `documents`, que é um objeto `Map` que contém os documentos PDF de resultado.
+   * Itere pelo objeto `Map` até encontrar a chave que corresponde ao nome do documento resultante. Em seguida, converta `value` desse membro da matriz em `BLOB`.
+   * Extraia os dados binários que representam o documento PDF acessando a propriedade `BLOB` do objeto `MTOM`. Isso retorna uma matriz de bytes que você pode gravar em um arquivo PDF.
 
 **Consulte também:**
 
-[Invocar AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar o AEM Forms usando o MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
