@@ -11,18 +11,21 @@ content-type: reference
 discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
 translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 0%
 
 ---
 
 
 # Aceitação e logoff{#acceptance-and-sign-off}
 
-Como mencionado, os testes [de](/help/sites-developing/planning.md) aceitação são uma categoria especial de testes usados para verificar se:
+Conforme mencionado, [Ensaios de aceitação](/help/sites-developing/planning.md) são uma categoria especial de teste usada para verificar se:
 
 * O projeto atende aos requisitos do cliente.
 * O cliente aceita o projeto.
 
-Eles devem ser definidos pelo cliente e pelo gerente do projeto. Têm um significado particular, dado que estão muitas vezes relacionadas com a faturação final.
+Eles devem ser definidos pelo cliente e pelo gerente do projeto. Têm um significado particular, uma vez que estão muitas vezes relacionados com a faturação final.
 
 Por esta razão, devem ser:
 
