@@ -1,6 +1,6 @@
 ---
 title: AEM Foundation e repositório
-description: Notas de versão para plataforma e repositório do Adobe Experience Manager.
+description: Notas de versão para plataforma e repositório Adobe Experience Manager.
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
@@ -21,13 +21,13 @@ ht-degree: 62%
 
 >[!CAUTION]
 >
->A nova versão do Oak Segment Tar presente desde o AEM 6.3 exige uma migração de repositório. Esta etapa é obrigatória se você estiver atualizando de uma versão mais antiga do TarMK ou quiser alternar o novo segmento de Tar de outro tipo de persistência. For more information on what the benefits of the new Segment Tar are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>A nova versão do Oak Segment Tar presente desde o AEM 6.3 exige uma migração de repositório. Esta etapa é obrigatória se você estiver atualizando de uma versão mais antiga do TarMK ou quiser alternar o novo segmento de Tar de outro tipo de persistência. Para obter mais informações sobre quais são os benefícios da nova barra de segmentos, consulte [Migração para Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 ### Suporte ao Java {#java-support}
 
 * Novo suporte para o Java 11, bem como o Java 8 já compatível.
 * Para melhor desempenho, substitua os valores GC padrão por outros valores. Para obter informação, consulte a seção [Instalar e atualizar](/help/sites-deploying/custom-standalone-install.md).
-* As atualizações de manutenção do Java 11 e Java 8 são distribuídas pela Adobe para uso pelo cliente em projetos relacionados a AEM, quando não estiverem publicamente disponíveis pela Oracle.
+* As atualizações de manutenção do Java 11 e Java 8 são distribuídas pela Adobe para uso pelo cliente em projetos relacionados a AEM, quando não estiverem disponíveis publicamente na Oracle.
 
 ### OSGI {#osgi}
 
@@ -35,7 +35,7 @@ ht-degree: 62%
 
 ### Projetos e fluxos de trabalho {#projects-and-workflows}
 
-* New Workflow Model editor introduced in 6.4 has been improved to include more operations like Copy and Publish, Variable support in Workflow steps and enhanced `OR` and `AND` splits.
+* O novo editor do Modelo de Fluxo de Trabalho introduzido no 6.4 foi melhorado para incluir mais operações como Copiar e Publicar, Suporte a variáveis em etapas do Fluxo de trabalho e divisões aprimoradas `OR` e `AND`.
 
 ### Pesquisar {#searching}
 
@@ -58,14 +58,14 @@ Vários aprimoramentos foram feitos à interface do usuário para torná-la mais
 
 >[!CAUTION]
 >
->O Adobe não fará mais aprimoramentos na interface clássica. O Experience Manager 6.5 inclui a interface clássica para compatibilidade com versões anteriores. Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
+>O Adobe não fará mais aprimoramentos na interface clássica. O Experience Manager 6.5 inclui a interface clássica para compatibilidade com versões anteriores. A interface de usuário clássica permanece totalmente compatível enquanto está sendo substituída [Leia mais](/help/sites-deploying/ui-recommendations.md).
 
 ### Atualização {#upgrade}
 
 * O procedimento de atualização permanece amplamente o mesmo no 6.5.
 * Ainda oferecemos suporte à compatibilidade com versões anteriores, à avaliação de complexidade da atualização e aos recursos de atualizações sustentáveis inseridos na versão 6.4. Foram feitas atualizações específicas da versão a essas áreas onde foi necessário.
 * O empacotamento de detector de padrão foi simplificado, e haverá um pacote que avalia atualizações no 6.5 para as versões de origem disponíveis.
-* Para obter detalhes sobre o procedimento de atualização, consulte a documentação [de](/help/sites-deploying/upgrade.md)atualização.
+* Para obter detalhes sobre o procedimento de atualização, consulte a [documentação de atualização](/help/sites-deploying/upgrade.md).
 
 ### Servidor Web {#web-server}
 
