@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 Os formulários HTML5 oferecem suporte à cláusula Imagem XFA para valores de exibição e valores formatados para símbolos de data, texto e numéricos. As seguintes Expressões de cláusula de imagem são suportadas:
 
-* categoria(locale){picture-cláusula}| categoria(locale){picture-cláusula}| categoria(locale){picture-cláusula}
+* categoria(locale){picture-cláusula} | categoria(locale){picture-cláusula} | categoria(locale){picture-cláusula}
 * category.subcategory{}
 
 >[!NOTE]
@@ -28,7 +31,7 @@ Os formulários HTML5 oferecem suporte à cláusula Imagem XFA para valores de e
 
 ## Símbolos de campo de data suportados {#supported-date-field-symbols}
 
-expressão suportada para cláusula de imagem de data:
+Expressão suportada para cláusula de imagem de data:
 
 * date.long{}
 * date.short{}
@@ -53,11 +56,11 @@ expressão suportada para cláusula de imagem de data:
   </tr>
   <tr>
    <td>DD</td>
-   <td>Zero-padded two digit (01-31) day of the month.<br /> </td>
+   <td>Dia do mês com 2 dígitos e 0 incluído (de 01 a 31).<br /> </td>
   </tr>
   <tr>
    <td>M</td>
-   <td>1- or 2-digit (1-12) month of the year.<br /> </td>
+   <td>Mês do ano com 1 ou 2 dígitos (de 1 a 12).<br /> </td>
   </tr>
   <tr>
    <td>MM</td>
@@ -92,19 +95,19 @@ expressão suportada para cláusula de imagem de data:
 
 ## Cláusula de Imagem Numérica {#numeric-picture-clause}
 
-Formulários HTML5 suportam símbolos de Imagem numérica. No entanto, há uma diferença no suporte entre formulários PDF e HTML.
+Formulários HTML5 suportam símbolos de Imagem numérica. No entanto, há uma diferença no suporte entre PDF forms e HTML Forms.
 
-No Forms **** PDF, um número é formatado independentemente do número de símbolos na cláusula Picture
+Em **PDF forms**, um número é formatado independentemente do número de símbolos na cláusula Picture
 
-No Forms **** HTML, um número é formatado somente se o número tiver dígitos menores que o número de símbolos na cláusula Picture.
+Em **HTML Forms**, um número é formatado somente se o número tiver dígitos inferiores ao número de símbolos na cláusula Picture.
 
 **Exemplo**: Considere uma cláusula de imagem: num{zzz,zzz,zz9}.
 
-O número **10000** é formatado como **10.000** em formulários HTML e PDF.
+O número **10000** está formatado como **10.000** em HTML e PDF forms.
 
-O número 1000000 é formatado como 1.000.000 em formulários PDF. Entretanto, no Forms HTML, o número permanece sem formatação como 1000000.
+O número 1000000 é formatado como 1.000.000 em PDF forms. No entanto, em HTML Forms, o número permanece sem formatação como 1000000.
 
-expressões suportadas para cláusula de imagem numérica em formulários **** HTML são:
+Expressões suportadas para a cláusula Imagem numérica em **HTML Forms** são:
 
 * num.integer{}
 * num.decimal{}
@@ -121,22 +124,22 @@ expressões suportadas para cláusula de imagem numérica em formulários **** H
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Formatação</strong>de saída: um único dígito. Ou para o dígito zero se os dados de entrada estiverem vazios ou se houver um espaço na posição correspondente.<br /> </td>
+   <td><strong>Formatação</strong> de saída: um único dígito. Ou para o dígito zero se os dados de entrada estiverem vazios ou se houver um espaço na posição correspondente.<br /> </td>
    <td>Um único dígito</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>Formatação</strong>de saída: um único dígito. Ou para um espaço se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td>
+   <td><strong>Formatação</strong> de saída: um único dígito. Ou para um espaço se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td>
    <td>Um único dígito ou espaço</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>Formatação</strong>de saída: um único dígito. Ou para nada se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td>
+   <td><strong>Formatação</strong> de saída: um único dígito. Ou para nada se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td>
    <td>Um único dígito ou nada</td>
   </tr>
   <tr>
    <td>E</td>
-   <td><strong>Formatação</strong>de saída: a parte expoente de um número de ponto flutuante que consiste no símbolo exponencial (E). Seguido por um sinal de mais ou menos opcional. Seguido pelo valor do expoente.<br /> </td>
+   <td><strong>Formatação</strong> de saída: a parte expoente de um número de ponto flutuante que consiste no símbolo exponencial (E). Seguido por um sinal de mais ou menos opcional. Seguido pelo valor do expoente.<br /> </td>
    <td>Igual à formatação de saída</td>
   </tr>
   <tr>
