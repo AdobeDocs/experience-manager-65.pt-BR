@@ -12,19 +12,22 @@ discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 6%
 
 ---
 
 
-# Migration to the Touch UI{#migration-to-the-touch-ui}
+# Migração para a interface de usuário de toque{#migration-to-the-touch-ui}
 
-A partir da versão 6.0, o Adobe Experience Manager (AEM) introduziu uma nova interface de usuário chamada de interface de usuário habilitada para *toque* (também conhecida simplesmente como interface de usuário *de* toque). Ele está alinhado à Adobe Marketing Cloud e às diretrizes gerais da interface do usuário da Adobe. Essa interface se tornou a interface padrão no AEM com a interface legada orientada para desktop, chamada de interface *clássica*.
+A partir da versão 6.0, a Adobe Experience Manager (AEM) introduziu uma nova interface de usuário chamada *interface de usuário habilitada para toque* (também conhecida simplesmente como *interface de usuário de toque*). Ele está alinhado ao Adobe Marketing Cloud e às diretrizes gerais da interface do usuário do Adobe. Essa interface se tornou a interface padrão em AEM com a interface legada orientada para desktop, chamada *interface clássica*.
 
-Se você tiver usado o AEM com a interface clássica, precisará tomar medidas para migrar sua instância. Esta página tem como objetivo agir como trampolim, fornecendo links para recursos individuais.
+Se você tiver usado AEM com a interface clássica, precisará tomar medidas para migrar sua instância. Esta página tem como objetivo agir como trampolim, fornecendo links para recursos individuais.
 
 >[!NOTE]
 >
->Esse projeto de migração pode ter um impacto significativo em sua instância. Consulte [Gerenciamento de projetos - Práticas recomendadas](/help/managing/best-practices.md) para obter as diretrizes recomendadas.
+>Esse projeto de migração pode ter um impacto significativo em sua instância. Consulte [Gerenciar projetos - Práticas recomendadas](/help/managing/best-practices.md) para obter as diretrizes recomendadas.
 
 ## Noções básicas {#the-basics}
 
@@ -37,7 +40,7 @@ Ao migrar, você deve estar ciente das seguintes (principais) diferenças entre 
    <td>Interface do usuário habilitada para toque</td>
   </tr>
   <tr>
-   <td>É descrito no repositório JCR como uma estrutura de nós. Cada nó que representa um elemento da interface de usuário é chamado de widget <em></em> ExtJS e renderizado no lado do cliente por <code>ExtJS</code>.</td>
+   <td>É descrito no repositório JCR como uma estrutura de nós. Todos os nós que representam um elemento da interface de usuário são chamados de <em>widget ExtJS</em> e renderizados no lado do cliente por <code>ExtJS</code>.</td>
    <td>Também descrito no repositório JCR como uma estrutura de nós. No entanto, nesse caso, cada nó se refere a um tipo de recurso Sling (componente Sling), que é responsável pela renderização. Portanto, a interface do usuário é (basicamente) renderizada no servidor.</td>
   </tr>
   <tr>
@@ -48,7 +51,7 @@ Ao migrar, você deve estar ciente das seguintes (principais) diferenças entre 
    <td><code>sling:resourceType</code>
     <ul>
      <li>usado</li>
-     <li>for example<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
+     <li>por exemplo<br /> <code>cq/gui/components/authoring/dialog</code><br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -60,7 +63,7 @@ Ao migrar, você deve estar ciente das seguintes (principais) diferenças entre 
    <td><p>Nós de diálogo:</p>
     <ul>
      <li>Nome: <code>cq:dialog</code></li>
-     <li>jcr:primaryType: <code>nt:unstructured</code></li>
+     <li>jcr:PrimaryType: <code>nt:unstructured</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -70,7 +73,7 @@ Ao migrar, você deve estar ciente das seguintes (principais) diferenças entre 
     </ul> </td>
    <td><p>Localização do Javascript:</p>
     <ul>
-     <li>As partes imperativas não podem ser incorporadas na definição do diálogo; separação de responsabilidades.</li>
+     <li>As partes imperativas não podem ser incorporadas na definição da caixa de diálogo; separação de responsabilidades.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -92,51 +95,51 @@ Ao migrar, você deve estar ciente das seguintes (principais) diferenças entre 
    <td>Renderização realizada pelo servidor:
     <ul>
      <li>O cliente solicita páginas juntamente com a interface relacionada.</li>
-     <li>O servidor envia (envia) a interface do usuário como documentos HTML; usando componentes da interface do usuário Coral.<br /> </li>
+     <li>O servidor envia (envia) a interface do usuário como documentos HTML; usando componentes da interface do usuário do Coral.<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-Em outras palavras, a migração de uma seção da interface do usuário da interface clássica para a interface do usuário de toque significa portar um widget *ExtJS para um componente* ** Sling. Para facilitar isso, a interface de usuário de toque é baseada na estrutura da interface de usuário Granite, que já fornece alguns componentes Sling para a interface de usuário (conhecidos como componentes da interface de usuário Granite).
+Em outras palavras, a migração de uma seção da interface do usuário da interface clássica para a interface do usuário de toque significa portar um *widget ExtJS* para um *componente Sling*. Para facilitar isso, a interface de usuário de toque é baseada na estrutura da interface de usuário Granite, que já fornece alguns componentes Sling para a interface de usuário (conhecidos como componentes da interface de usuário Granite).
 
-Antes de começar, verifique o status e as recomendações relacionadas:
+Antes do start, verifique o status e as recomendações relacionadas:
 
 * [Status dos recursos da interface de toque](/help/release-notes/touch-ui-features-status.md)
-* [Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md)
+* [Interface do usuário Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
 
 As noções básicas para desenvolver a interface de usuário de toque fornecerão uma base sólida:
 
-* [Conceitos da interface habilitada para toque do AEM](/help/sites-developing/touch-ui-concepts.md)
-* [Estrutura da interface habilitada para toque do AEM](/help/sites-developing/touch-ui-structure.md)
+* [Conceitos da interface de usuário habilitada para toque AEM](/help/sites-developing/touch-ui-concepts.md)
+* [Estrutura da interface habilitada para toque AEM](/help/sites-developing/touch-ui-structure.md)
 
-## Migração da criação de página {#migrating-page-authoring}
+## Migração de criação de página {#migrating-page-authoring}
 
 As caixas de diálogo são um fator importante ao migrar seus componentes:
 
-* [Desenvolver componentes](/help/sites-developing/developing-components.md) do AEM (com a interface habilitada para toque)
+* [Desenvolvimento de componentes](/help/sites-developing/developing-components.md)  AEM (com a interface habilitada para toque)
 * [Migração de um componente clássico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Ferramenta](/help/sites-developing/dialog-conversion.md) de conversão de diálogo - para ajudar a converter as caixas de diálogo dos componentes clássicos da interface do usuário para tocar na interface do usuário
+* [Ferramenta](/help/sites-developing/dialog-conversion.md)  de conversão de diálogo - para ajudar a converter as caixas de diálogo dos componentes clássicos da interface do usuário para tocar na interface do usuário
 
    * Há uma camada de compatibilidade na interface de usuário de toque para abrir uma caixa de diálogo clássica dentro de um &quot;invólucro de interface de toque&quot;, mas isso tem funcionalidade limitada e não é recomendado para o longo prazo.
 
 * [Personalização de campos de diálogo na interface de usuário de toque](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Criando um novo componente de campo da interface do usuário do Granite](/help/sites-developing/granite-ui-component.md)
-* [Personalização da criação](/help/sites-developing/customizing-page-authoring-touch.md) de página (com a interface habilitada para toque)
+* [Personalização da criação](/help/sites-developing/customizing-page-authoring-touch.md)  de página (com a interface habilitada para toque)
 
 ## Migração de consoles {#migrating-consoles}
 
 Você também pode personalizar os consoles:
 
-* [Personalização dos consoles](/help/sites-developing/customizing-consoles-touch.md) (para a interface habilitada para toque)
+* [Personalização dos consoles](/help/sites-developing/customizing-consoles-touch.md)  (para a interface habilitada para toque)
 
 ## Considerações relacionadas {#related-considerations}
 
 Embora não estejam diretamente relacionados a uma migração para a interface de usuário de toque, há problemas relacionados que vale a pena considerar ao mesmo tempo, já que eles também são a prática recomendada:
 
-* [Modelos](/help/sites-developing/templates.md) - Modelos [editáveis](/help/sites-developing/page-templates-editable.md)
-* [Componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [Modelos](/help/sites-developing/templates.md)  - Modelos  [editáveis](/help/sites-developing/page-templates-editable.md)
+* [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
 
 >[!NOTE]
 >
@@ -144,16 +147,16 @@ Embora não estejam diretamente relacionados a uma migração para a interface d
 
 ## Outros recursos {#further-resources}
 
-Para obter informações completas sobre o desenvolvimento do AEM, consulte a coleta de recursos em:
+Para obter informações completas sobre o desenvolvimento AEM consulte a coleta de recursos em:
 
 * [Guia do usuário de desenvolvimento](/help/sites-developing/home.md)
 * [Documentação da interface do usuário do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [Tutoriais e vídeos do AEM 6.5 Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
-* [Introdução ao desenvolvimento de sites AEM - Tutorial de WKND](/help/sites-developing/getting-started.md)
+* [AEM 6.5 Tutorials e vídeos do Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
-* [Ferramentas de modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
+* [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >
->As Ferramentas de modernização do AEM são um esforço da comunidade e não são suportadas nem garantidas pela Adobe.
+>AEM As Ferramentas de Modernização são um esforço comunitário e não são suportadas nem garantidas pela Adobe.
 
