@@ -36,9 +36,9 @@ A seguinte árvore decisória fornece uma orientação para restringir o gargalo
 
 ## Configurar arquivos de registro e registros de auditoria {#configuring-log-files-and-audit-logs}
 
-AEM registra registros detalhados que talvez você queira configurar para solucionar problemas de instalação. Para obter informações, consulte a seção [Trabalhando com registros de auditoria e arquivos](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) de registro.
+AEM registra registros detalhados que talvez você queira configurar para solucionar problemas de instalação. Para obter informações, consulte a seção [Trabalhando com registros de auditoria e arquivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
-## Uso da opção detalhada {#using-the-verbose-option}
+## Usando a opção detalhada {#using-the-verbose-option}
 
 Ao start AEM WCM, você pode adicionar a opção -v (verbose) à linha de comando como em: java -jar cq-wcm-quickstart-&lt;versão>.jar -v.
 
@@ -48,7 +48,7 @@ A opção detalhada exibe parte da saída de log do Quickstart no console, para 
 
 A seção a seguir descreve alguns problemas de instalação e suas soluções.
 
-### Clicar no duplo do jar do Quickstart não tem nenhum efeito ou abre o arquivo jar com outro programa (por exemplo, gerenciador de arquivamento) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
+### Clicar no duplo do jar do Quickstart não tem nenhum efeito ou abre o arquivo jar com outro programa (por exemplo, gerenciador de arquivos) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 Isso normalmente indica um problema com a forma como o ambiente para desktop do seu sistema operacional está configurado para abrir arquivos com a extensão .jar. Isso também pode indicar que você não tem o Java instalado ou que está usando uma versão não suportada do Java.
 
@@ -65,11 +65,11 @@ Para solucionar problemas, faça o seguinte:
 * Às vezes, reinstalar a versão do Java compatível ajuda a restaurar a associação correta.
 * Você sempre pode executar o CRX usando a linha de comando ou scripts start/stop conforme descrito anteriormente neste documento.
 
-### Meu aplicativo em execução no CRX emite erros de falta de memória {#my-application-running-on-crx-throws-out-of-memory-errors}
+### Meu aplicativo em execução no CRX lança erros de falta de memória {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->Consulte também [Analisar problemas](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)de memória.
+>Consulte também [Analisar problemas de memória](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 
 O próprio CRX tem uma memória muito baixa. Se o aplicativo em execução no CRX tiver requisitos de memória maiores ou solicitar operações com muita memória (por exemplo, transações grandes), a instância JVM em que o CRX é executado precisa ser iniciada com as configurações de memória apropriadas.
@@ -106,15 +106,15 @@ Se tudo o mais falhar, verifique os registros para descobrir o que aconteceu.
 
 Quando uma solicitação para a página geometrixx-outdoors/en retorna uma página 404 (Página não encontrada), você pode verificar novamente se definiu a propriedade sling adicional no arquivo sling.properties necessário para esses servidores de aplicativos específicos.
 
-Consulte as etapas *Implantar AEM aplicativo* da Web para obter detalhes.
+Consulte as etapas *Implantar AEM aplicativo da Web* para obter detalhes.
 
 ### O tamanho do cabeçalho de resposta pode ser maior que 4Kb {#response-header-size-can-be-greater-than-kb}
 
 Os erros 502 podem indicar que o servidor da Web não pode lidar com o tamanho do cabeçalho de resposta HTTP AEM. AEM pode gerar cabeçalhos de resposta HTTP que incluem cookies de tamanho superior a 4 Kb. Certifique-se de que seu container de servlet esteja configurado de modo que o tamanho máximo do cabeçalho de resposta possa exceder 4 kb.
 
-Por exemplo, para Tomcat 7.0, o atributo maxHttpHeaderSize do Conector [](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) HTTP controla as limitações no tamanho do cabeçalho.
+Por exemplo, para Tomcat 7.0, o atributo maxHttpHeaderSize do [Conector HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controla as limitações no tamanho do cabeçalho.
 
-## Uninstalling Adobe Experience Manager {#uninstalling-adobe-experience-manager}
+## Desinstalação do Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
 Como AEM é instalado em um único diretório, não há necessidade de um utilitário de desinstalação. A desinstalação pode ser tão simples quanto excluir o diretório de instalação inteiro, embora a maneira como você desinstala o AEM dependa do que você deseja obter e do armazenamento persistente que você usa.
 
@@ -128,4 +128,5 @@ Se a instalação do AEM usar um armazenamento externo, por exemplo, um servidor
 
 ### Arquivos JSP não são compilados em JBoss {#jsp-files-are-not-compiled-on-jboss}
 
-Se você instalar ou atualizar arquivos JSP para o Experience Manager no JBoss e os servlets correspondentes não forem compilados, verifique se o compilador JSP JBoss está configurado corretamente. Para obter informações, consulte o artigo Problemas de compilação[JSP no JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) .
+Se você instalar ou atualizar arquivos JSP para o Experience Manager no JBoss e os servlets correspondentes não forem compilados, verifique se o compilador JSP JBoss está configurado corretamente. Para obter informações, consulte a
+[Problemas de compilação JSP no artigo JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
