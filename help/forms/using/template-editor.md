@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Modelos de formulário adaptáveis{#adaptive-form-templates}
 
-Ao criar um formulário, você adiciona campos e componentes para definir a estrutura do formulário, o conteúdo e as ações no editor. É possível adicionar campos e componentes na parte superior `guideRootPanel` do container de formulário. Com o Editor de modelos, você pode criar um modelo que contenha estrutura básica e conteúdo inicial que os autores podem usar para criar formulários.
+Ao criar um formulário, você adiciona campos e componentes para definir a estrutura do formulário, o conteúdo e as ações no editor. Você adiciona campos e componentes em `guideRootPanel` do container de formulário. Com o Editor de modelos, você pode criar um modelo que contenha estrutura básica e conteúdo inicial que os autores podem usar para criar formulários.
 
 Por exemplo, você deseja que todos os autores de formulários tenham determinadas caixas de texto, botões de navegação e um botão Enviar em um formulário de inscrição. Você pode criar um modelo com os componentes que os autores podem usar para criar um formulário que seja consistente com outros formulários de inscrição. Quando os autores usam o modelo para criar um formulário adaptável, o novo formulário herda a estrutura e os componentes especificados no modelo. O Editor de modelos permite:
 
@@ -30,7 +30,7 @@ Por exemplo, você deseja que todos os autores de formulários tenham determinad
 
 ## Trabalhar com modelos {#working-with-templates}
 
-Você pode acessar o editor de modelos no menu Ferramentas navegando até **Adobe Experience Manager > Ferramentas > Modelos**. Aqui, os modelos são organizados em pastas ativadas para modelos editáveis. AEM fornece uma pasta global para organizar modelos. No entanto, não está ativado por padrão. Você pode solicitar ao Administrador que ative a pasta global ou crie uma nova pasta para modelos. Para obter mais informações sobre como criar pastas, consulte Pastas [de](/help/sites-developing/page-templates-editable.md)modelos.
+Você pode acessar o editor de modelos no menu Ferramentas navegando até **Adobe Experience Manager > Ferramentas > Modelos**. Aqui, os modelos são organizados em pastas ativadas para modelos editáveis. AEM fornece uma pasta global para organizar modelos. No entanto, não está ativado por padrão. Você pode solicitar ao Administrador que ative a pasta global ou crie uma nova pasta para modelos. Para obter mais informações sobre como criar pastas, consulte [Pastas de modelos](/help/sites-developing/page-templates-editable.md).
 
 Depois de tocar em para abrir uma pasta, você encontrará um botão Criar que permite a criação de um novo modelo para formulários adaptáveis.
 
@@ -39,7 +39,7 @@ Depois de tocar em para abrir uma pasta, você encontrará um botão Criar que p
 Depois de criar uma pasta, abra-a e execute as seguintes etapas para criar um modelo:
 
 1. No console Modelo, toque em **Criar** dentro da pasta que você criou.
-1. Na seção Escolha um tipo de modelo, selecione Modelo **de formulário** adaptável e toque em **Próximo**.
+1. Na seção Escolha um tipo de modelo, selecione **Modelo de formulário adaptável** e toque em **Próximo**.
 
 1. Na seção Detalhes do modelo, forneça um Título do modelo e toque em **Criar**.
 É possível fornecer uma descrição e uma miniatura que podem ser vistas quando você pode selecionar o modelo criado no momento da criação do formulário.
@@ -50,21 +50,22 @@ Depois de criar uma pasta, abra-a e execute as seguintes etapas para criar um mo
 
 Ao abrir um modelo para edição, você pode ver os seguintes componentes AEM Editor:
 
-* **Barra de ferramentas** Página contém as seguintes opções:
+* **Barra de**
+ferramentas da páginaContém as seguintes opções:
 
    * **Alternar painel** lateral: Permite mostrar ou ocultar a barra lateral.
    * **Informações** da página: Permite que você especifique informações como o tempo de publicação/despublicação, miniaturas, bibliotecas do lado do cliente, política de página e biblioteca do lado do cliente do design de página.
    * **Emulador**: Permite simular e personalizar a aparência para dispositivos diferentes.
    * **Seletor de camada:** Permite alterar a camada.
-É possível escolher a camada **Estrutura** ou a camada Conteúdo **** inicial. A camada de estrutura permite adicionar e personalizar o cabeçalho e o rodapé. A camada Conteúdo inicial permite personalizar o conteúdo do formulário.
+Você pode escolher a camada **Estrutura** ou **Conteúdo inicial**. A camada de estrutura permite adicionar e personalizar o cabeçalho e o rodapé. A camada Conteúdo inicial permite personalizar o conteúdo do formulário.
 
-   * **Pré-visualização:** Permite que você pré-visualização a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Pré-visualização para alternar os modos de edição e pré-visualização.
+   * **Pré-visualização:** permite que você pré-visualização a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Pré-visualização para alternar os modos de edição e pré-visualização.
 
-* **Barra lateral:** Fornece os navegadores de Conteúdo, Propriedades, Ativos e Componentes.
-* **Barra de ferramentas do componente:** Ao selecionar um componente, você verá uma barra de ferramentas que permite personalizar o componente.
+* **Barra lateral:** fornece os navegadores de Conteúdo, Propriedades, Ativos e Componentes.
+* **Barra de ferramentas Componente:** ao selecionar um componente, você verá uma barra de ferramentas que permite personalizar o componente.
 * **Página**: A área onde você adiciona conteúdo para criar o modelo.
 
-Consulte [Introdução à criação de formulários](../../forms/using/introduction-forms-authoring.md) adaptáveis para entender o editor da interface de toque.
+Consulte [Introdução à criação de formulários adaptáveis](../../forms/using/introduction-forms-authoring.md) para entender o editor de interface de toque.
 
 ### Editar um modelo {#editing-a-template}
 
@@ -83,7 +84,7 @@ Ao selecionar a camada de estrutura no Editor de modelos, é possível ver os co
 
 Container de layout na camada de estrutura
 
-**A.** Container de layout para o componente Cabeçalho **B.** Container de layout para o componente Rodapé
+**Container A.** Layout para o componente Cabeçalho  **B.container** Layout para o componente Rodapé
 
 Arraste e solte o componente Cabeçalho do formulário adaptativo no container de layout acima do Container de formulário adaptável. Depois de adicionar o componente, você pode especificar suas propriedades que permitem adicionar um logotipo e fornecer seu título.
 
@@ -107,7 +108,7 @@ Por exemplo, você adiciona o componente de cabeçalho no modelo. Quando você s
 
 Quando a opção Conteúdo inicial estiver selecionada, o Container Formulário adaptável do modelo será aberto como um formulário adaptável para edição. Como criar um formulário adaptável, você pode especificar configurações iniciais, como selecionar um tema e enviar ações.
 
-Os autores de formulários usam-no como base para criar um formulário. A estrutura de fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes da Pré-visualização na barra de ferramentas da página, toque em ![menu suspenso](assets/canvas-drop-down.png) Tela **> Conteúdo**inicial.
+Os autores de formulários usam-no como base para criar um formulário. A estrutura de fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes da Pré-visualização na barra de ferramentas da página, toque ![tela suspensa](assets/canvas-drop-down.png) **Conteúdo inicial**.
 ![Camada Conteúdo inicial no Editor de modelos](assets/initial-content-layer.png)
 
 Camada Conteúdo inicial no Editor de modelos mostrando o Container de formulário adaptável selecionado para especificar as propriedades.
@@ -133,26 +134,26 @@ Você adicionou um logotipo, forneceu um título e adicionou um rodapé na camad
 
 Altere a camada de Estrutura para Conteúdo inicial e o start adicione conteúdo ao formulário. Para criar uma estrutura com guias, adicione um painel filho no guiaPainel raiz do container de formulário adaptável. Para adicionar um painel:
 
-* Você pode adicionar um painel tocando no botão **+** ao selecionar a opção **Arrastar componentes aqui** .
+* Você pode adicionar um painel tocando no botão **+** ao selecionar a opção **Arraste componentes aqui**.
 
 * Você pode arrastar e soltar o componente do painel do navegador de componentes na barra lateral.
-* Você pode adicionar o painel filho da barra de ferramentas `guideRootPanel` do componente.
+* Você pode adicionar o painel filho do `guideRootPanel` na barra de ferramentas do componente.
 
-Para criar as guias Informações gerais e Informações profissionais, adicione dois painéis no painel filho do `guideRootPanel`. Selecione os painéis e toque em ![cmppr](assets/cmppr.png) para abrir as propriedades na barra lateral. Altere os nomes dos elementos como `general-info` e `professional-info`e os títulos como Informações gerais e Informações profissionais, respectivamente. Na barra lateral, toque em conteúdo para abrir o navegador de conteúdo. Na guia Objetos de formulário, selecione `guideRootPanel`. No editor, guideRootPanel é selecionado. Toque em ![cmppr](assets/cmppr.png) na barra de ferramentas do componente para abrir suas propriedades. No campo Layout do painel, selecione **Guias na parte superior** e toque em **Concluído**. A estrutura de modelo com guias é aplicada.
+Para criar as guias Informações gerais e Informações profissionais, adicione dois painéis no painel filho do `guideRootPanel`. Selecione os painéis e toque em ![cmppr](assets/cmppr.png) para abrir as propriedades na barra lateral. Altere os nomes dos elementos como `general-info` e `professional-info` e os títulos como Informações gerais e Informações profissionais, respectivamente. Na barra lateral, toque em conteúdo para abrir o navegador de conteúdo. Na guia Objetos de formulário, selecione `guideRootPanel`. No editor, guideRootPanel é selecionado. Toque em ![cmppr](assets/cmppr.png) na barra de ferramentas do componente para abrir suas propriedades. No campo Layout do painel, selecione **Guias em cima** e toque **Concluído**. A estrutura de modelo com guias é aplicada.
 
 #### Adicionar conteúdo em guias {#adding-content-in-tabs}
 
 ![Adicionar campos no modelo de formulário adaptável](assets/template-edit-initial-content.png)
 
-Depois de adicionar painéis e estruturá-los como guias, é possível adicionar campos dentro das guias. Ao selecionar uma guia no editor, é possível ver a opção **Arrastar componentes aqui** . Você pode arrastar e soltar componentes como caixas de texto, itens de lista e botões. Você pode arrastar e soltar componentes do navegador de componentes na barra lateral.
+Depois de adicionar painéis e estruturá-los como guias, é possível adicionar campos dentro das guias. Quando você seleciona uma guia no editor, pode ver a opção **Arrastar componentes aqui**. Você pode arrastar e soltar componentes como caixas de texto, itens de lista e botões. Você pode arrastar e soltar componentes do navegador de componentes na barra lateral.
 
-Cada componente tem propriedades que aprimoram a captura e manipulação de dados. Por exemplo, você pode ativar a propriedade de campo **** Obrigatório de um componente. Seus autores podem especificar uma mensagem que seus clientes veem quando ignoram o preenchimento de um campo obrigatório. Especifique a mensagem na propriedade Mensagem **de campo** obrigatória.
+Cada componente tem propriedades que aprimoram a captura e manipulação de dados. Por exemplo, você pode ativar a propriedade **Campo obrigatório** de um componente. Seus autores podem especificar uma mensagem que seus clientes veem quando ignoram o preenchimento de um campo obrigatório. Especifique a mensagem na propriedade **Mensagem de campo obrigatória**.
 
 No modelo de exemplo, os campos Nome, Número de telefone e Data de nascimento são adicionados na guia Informações gerais. Na guia Informações profissionais, são adicionados o tipo de emprego atualmente empregado, os campos Qualificação educacional.
 
 Depois de adicionar campos, você pode adicionar botões, como Enviar e Redefinir.
 
-### Ativação do modelo {#enabling-the-template}
+### Habilitando o modelo {#enabling-the-template}
 
 Quando você cria um modelo, ele é adicionado como rascunho. Ative o modelo para usá-lo na criação de formulários adaptáveis. Para ativar um modelo:
 
@@ -164,28 +165,28 @@ Ao criar um formulário adaptável, você pode ver o modelo listado quando for s
 
 ## Importando ou exportando um modelo {#importing-or-exporting-a-template}
 
-Um formulário funciona com seu modelo. Quando você baixa um formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Quando você importa o formulário em uma instância diferente do AEM Forms, ele é importado sem o modelo. Se um formulário for importado, mas seu modelo não estiver disponível, ele não será renderizado. Você pode disponibilizar o modelo personalizado do `/conf` nó em `https://<server>:<port>/crx/packmgr`e exportá-lo para a instância do AEM Forms onde deseja carregar o formulário.
+Um formulário funciona com seu modelo. Quando você baixa um formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Quando você importa o formulário em uma instância diferente do AEM Forms, ele é importado sem o modelo. Se um formulário for importado, mas seu modelo não estiver disponível, ele não será renderizado. Você pode disponibilizar o modelo personalizado do nó `/conf` em `https://<server>:<port>/crx/packmgr` e exportá-lo para a instância do AEM Forms onde deseja carregar o formulário.
 
 ## Criação de um formulário adaptável usando o modelo {#creating-an-adaptive-form-using-the-template}
 
-Depois de criar e ativar um modelo, ele estará disponível no gerenciador de formulários ao criar um formulário adaptável. Para usar um modelo e criar um formulário adaptável, consulte [Criação de um formulário](../../forms/using/creating-adaptive-form.md)adaptável.
+Depois de criar e ativar um modelo, ele estará disponível no gerenciador de formulários ao criar um formulário adaptável. Para usar um modelo e criar um formulário adaptável, consulte [Criar um formulário adaptável](../../forms/using/creating-adaptive-form.md).
 
-## Alterar a opção de exibição dos modelos predefinidos  {#change-display-option-of-out-of-the-box-templates}
+## Alterar a opção de exibição dos modelos predefinidos {#change-display-option-of-out-of-the-box-templates}
 
 Você pode criar modelos personalizados para formulários adaptáveis para definir a estrutura básica e o conteúdo inicial. A AEM Forms também fornece um conjunto de modelos prontos para formulários adaptáveis. Você pode optar por mostrar ou ocultar os modelos.
 
 Execute as seguintes etapas para mostrar e ocultar modelos:
 
-1. Faça logon na instância do autor do AEM Forms e navegue até **Ferramentas** > **Operações** > Console **da** Web.
+1. Faça logon na instância do autor do AEM Forms e navegue até **Ferramentas** > **Operações** > **Console da Web**.
 
    >[!NOTE]
    >
    >O URL AEM console da Web é https://&#39;[server]:[port]&#39;/system/console/configMgr
 
-1. Localize e abra as configurações **do** FormsManager:
+1. Localize e abra as configurações do **FormsManager Configuration**:
 
-   * Para mostrar ou ocultar modelos de formulários adaptáveis, marque ou desmarque a opção **Incluir fora da caixa AF e Modelos** AD.
-   * Para mostrar ou ocultar modelos de formulário adaptáveis que foram adicionados AEM versões 6.0 Forms ou AEM 6.1 Forms mas que agora estão obsoletos, marque ou desmarque a opção **Incluir AEM 6.0 modelos** AF. Se essa opção estiver marcada, para entrar em vigor, será necessário ativar a configuração **Incluir fora da caixa AF e Modelos** AD para que ela seja ativada.
+   * Para mostrar ou ocultar o modelo de formulários adaptáveis, marque ou desmarque a opção **Incluir Fora da caixa AF e Modelos AD**.
+   * Para mostrar ou ocultar modelos de formulário adaptáveis que foram adicionados AEM versão 6.0 do Forms ou AEM 6.1 do Forms, mas que agora estão obsoletos, marque ou desmarque a opção **Incluir modelos AF AEM 6.0**. Se essa opção estiver marcada, para entrar em vigor, será necessário ativar a configuração **Incluir Fora da caixa AF e Modelos do AD**.
 
 1. Clique em **Salvar**. As opções de exibição para os modelos predefinidos são alteradas.
 
@@ -193,5 +194,5 @@ Execute as seguintes etapas para mostrar e ocultar modelos:
 
 * Ao modificar as propriedades do formulário no editor de modelo, não use a propriedade BindReference.
 * Se você quiser adicionar um ponto de interrupção, crie-o ao criar um modelo de formulário adaptável.
-Para obter mais informações sobre pontos de interrupção, consulte Layout [responsivo](/help/sites-authoring/responsive-layout.md).
+Para obter mais informações sobre pontos de interrupção, consulte [Layout responsivo](/help/sites-authoring/responsive-layout.md).
 
