@@ -10,23 +10,24 @@ ht-degree: 69%
 ---
 
 
-# AEM Communities release notes {#aem-communities-release-notes}
+# Notas de versão do AEM Communities {#aem-communities-release-notes}
 
 Leia sobre as melhorias no AEM Communities desde a versão 6.4. Para saber sobre os novos recursos mais detalhadamente, consulte o [Guia do usuário das comunidades do AEM 6.5](https://helpx.adobe.com/br/experience-manager/6-4/communities/user-guide.html).
 
-To obtain the latest release, see the [Deploying Communities](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) section of the documentation.
+Para obter a versão mais recente, consulte a seção [Implantação de comunidades](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) da documentação.
 
 ## Principais melhorias {#major-enhancements}
 
 ### Melhorias na participação da comunidade {#enhancements-to-community-engagement}
 
-**O suporte** a @Menções agora permite que os usuários registrados marcem (mencionem) outros membros registrados para chamar sua atenção, em Conteúdo gerado pelo usuário. Os membros marcados (mencionados) são então notificados, com links para o Conteúdo gerado pelo usuário. No entanto, os usuários podem optar por desabilitar/habilitar as notificações da Web e de email.
+**@**
+Suporte a mençõesO AEM Communities agora permite que os usuários registrados marquem (mencionem) outros membros registrados para chamar sua atenção, em Conteúdo gerado pelo usuário. Os membros marcados (mencionados) são então notificados, com links para o Conteúdo gerado pelo usuário. No entanto, os usuários podem optar por desabilitar/habilitar as notificações da Web e de email.
 
 ![Suporte em menções](assets/at-mentions.png)
 
 Os usuários da comunidade não precisam procurar seu nome, sobrenome ou nome de usuário para ver se alguém contatou eles ou precisa de sua atenção. Além disso, ele permite que os autores UGC procurem respostas de usuários registrados específicos que podem atender melhor o problema e adicionar entradas.
 
-The community administrators need to **Enable Mention** on community components to allow registered users use the functionality on those components.
+Os administradores da comunidade precisam **Habilitar menção** nos componentes da comunidade para permitir que os usuários registrados usem a funcionalidade nesses componentes.
 
 **Mensagens em grupo**
 
@@ -36,9 +37,9 @@ Membros registrados da comunidade agora podem enviar mensagens diretas em massa 
 
 ### Aprimoramentos na moderação em massa {#enhancements-to-bulk-moderation}
 
-filtros personalizados na Moderação em massa
+Filtros personalizados na Moderação em massa
 
-[filtros](/help/communities/moderation.md#custom-filters) personalizados agora podem ser desenvolvidos e adicionados à interface de usuário de moderação em massa.
+[A ](/help/communities/moderation.md#custom-filters) filtragem personalizada agora é desenvolvida e adicionada à interface de usuário de moderação em massa.
 
 Um [projeto de amostra](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) que demonstra a filtragem por meio de marcas está disponível no [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). Esse projeto pode ser usado como base para desenvolver filtros personalizados análogos.
 
@@ -64,10 +65,10 @@ Os administradores de sites podem criar um grupo em qualquer nível de hierarqui
 
 **Suporte SCORM 2017.1**
 
-The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
+A funcionalidade de ativação do AEM 6.5 Communities suporta o mecanismo Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Suporte à navegação do teclado nos componentes de ativação
-* Os componentes de ativação (por exemplo, Catálogo e Reprodução do curso, Atribuições, Biblioteca de arquivos) no AEM Communities suportam a navegação pelo teclado para melhorar a acessibilidade.
+* Os componentes de ativação (por exemplo, Catálogo e Reprodução do curso, Atribuições, Biblioteca de arquivos) na AEM Communities suportam a navegação pelo teclado para melhorar a acessibilidade.
 
 ### Outras melhorias {#other-enhancements}
 
