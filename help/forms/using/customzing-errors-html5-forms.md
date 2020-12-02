@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Personalização de mensagens de erro para formulários HTML5 {#customizing-error-messages-for-html-forms}
+# Personalizar mensagens de erro para formulários HTML5 {#customizing-error-messages-for-html-forms}
 
 Em formulários HTML5, na caixa, as mensagens de erro e os avisos têm uma posição e aparência fixas (fonte e cor), o erro é exibido somente para um campo selecionado e apenas um erro é exibido.
 
@@ -38,8 +38,8 @@ Depois de extrair o pacote, abra a pasta CustomErrorManager-1.0-SNAPSHOT. Ele co
 
 Para personalizar a posição da mensagem de erro, adicione a tag &lt;div> para cada campo de erro e aviso, posicione a tag &lt;div> à esquerda ou à direita e aplique estilos css na tag &lt;div>. Para ver as etapas detalhadas, consulte o procedimento listado abaixo:
 
-1. Navegue até a `CustomErrorManager-1.0-SNAPSHOT`pasta e abra a `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` pasta.
-1. Open the `customErrorManager.js` file for editing. A `markError` função no arquivo aceita os seguintes parâmetros:
+1. Navegue até a pasta `CustomErrorManager-1.0-SNAPSHOT`e abra a pasta `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Abra o arquivo `customErrorManager.js` para edição. A função `markError` no arquivo aceita os seguintes parâmetros:
 
    |  |  |
    |---|---|
@@ -77,7 +77,7 @@ Para personalizar a posição da mensagem de erro, adicione a tag &lt;div> para 
    ```
 
 1. Salve e feche o arquivo.
-1. Navegue até a `CustomErrorManager-1.0-SNAPSHOT` pasta e crie um arquivo de pastas jcr_root e META-INF. Renomeie o arquivo como CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Navegue até a pasta `CustomErrorManager-1.0-SNAPSHOT` e crie um arquivo de pastas jcr_root e META-INF. Renomeie o arquivo como CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Use o gerenciador de pacote para fazer upload e instalar o pacote.
 
 ## Exibir mensagens de erro para vários campos  {#display-error-messages-for-multiple-fields-nbsp}
