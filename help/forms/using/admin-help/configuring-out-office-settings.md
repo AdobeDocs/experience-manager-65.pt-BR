@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 0%
 
 ---
 
 
-# Configuração de configurações fora do escritório {#configuring-out-of-office-settings}
+# Configuração das configurações fora do escritório {#configuring-out-of-office-settings}
 
 O recurso Fora do escritório permite que usuários ou administradores especifiquem quando um usuário estará fora do escritório e não poderá concluir tarefas atribuídas por formulários AEM. Enquanto um usuário estiver definido como Fora do escritório, suas tarefas serão atribuídas a um ou mais usuários designados. Os usuários podem alterar suas configurações de Ausência Temporária no Workspace ou os administradores podem alterar as configurações em nome de um usuário no fluxo de trabalho dos formulários.
 
 Ao criar um processo, o usuário do Workbench pode especificar se uma tarefa pode ser redirecionada devido às configurações de Ausência Temporária.
 
-## Exibir informações de usuário que não estão em escritório {#view-a-user-s-out-of-office-information}
+## Visualização de informações de usuário fora do escritório {#view-a-user-s-out-of-office-information}
 
 1. No console de administração, clique em Serviços > fluxo de trabalho de formulários > Fora do escritório.
 1. Na caixa próxima à parte superior da página Fora do escritório, é possível fazer o seguinte:
@@ -36,19 +39,19 @@ Ao criar um processo, o usuário do Workbench pode especificar se uma tarefa pod
 
 1. Clique em um nome de usuário para exibir as informações de Ausência Temporária do usuário abaixo da lista de usuários.
 
-## Alterar o status de ausência do escritório de um usuário {#change-a-user-s-out-of-office-status}
+## Alterar o status de usuário fora do escritório {#change-a-user-s-out-of-office-status}
 
-1. Localize o usuário, conforme descrito em [Exibir informações](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)de ausência temporária do usuário.
-1. Clique no nome do usuário que deseja alterar.
-1. Na lista Nome *de* usuário está atualmente, selecione No escritório ou Fora do escritório.
+1. Localize o usuário, conforme descrito em [Visualização de informações de usuários que não estão em escritório](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. Clique no nome do usuário que você deseja alterar.
+1. No momento, em *Nome de usuário* é lista, selecione No escritório ou Fora do escritório.
 1. Clique em Salvar.
 
 ## Adicionar um intervalo de datas fora do escritório para um usuário {#add-an-out-of-office-date-range-for-a-user}
 
-1. Localize o usuário, conforme descrito em [Exibir informações](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)de ausência temporária do usuário.
-1. Clique no nome do usuário que deseja alterar.
+1. Localize o usuário, conforme descrito em [Visualização de informações de usuários que não estão em escritório](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. Clique no nome do usuário que você deseja alterar.
 1. Clique em Adicionar intervalo de datas.
-1. Informe a Hora de Início e a Hora de Fim. Você pode clicar no ícone Calendário para selecionar uma data. Se você não especificar uma hora de término, o usuário será definido como fora do escritório indefinidamente.
+1. Insira uma Hora do Start e uma Hora Final. Você pode clicar no ícone Calendário para selecionar uma data. Se você não especificar uma hora de término, o usuário será definido como fora do escritório indefinidamente.
 1. Clique em Salvar.
 
 ## Atribuir um usuário para tarefas fora do escritório {#assign-a-user-for-out-of-office-tasks}
@@ -60,12 +63,12 @@ Enquanto um usuário estiver fora do escritório, você pode atribuir um ou mais
 * Atribua um usuário padrão que receberá a maioria das tarefas do usuário, mas especifique se as tarefas de determinados processos serão reatribuídas a outros usuários ou permanecerão atribuídas ao usuário que estiver fora do escritório.
 * Não atribua um usuário padrão, mas atribua determinadas tarefas de determinados processos a usuários específicos.
 
-   1. Localize o usuário, conforme descrito em [Exibir informações](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)de ausência temporária do usuário.
-   1. Clique no nome do usuário que deseja alterar.
-   1. Na lista Usuário padrão para tarefas fora do escritório, selecione um usuário na lista. Se você não quiser designar um usuário padrão para receber itens reatribuídos, selecione Não atribuir.
+   1. Localize o usuário, conforme descrito em [Visualização de informações de usuários que não estão em escritório](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+   1. Clique no nome do usuário que você deseja alterar.
+   1. Na lista Usuário padrão para Tarefas fora do Office, selecione um usuário na lista. Se você não quiser designar um usuário padrão para receber itens reatribuídos, selecione Não atribuir.
 
-      Se o nome de usuário apropriado não aparecer na lista, clique em Localizar usuário e use a caixa de diálogo Localizar usuário para procurar o usuário. Selecione o usuário apropriado na lista e clique em Selecionar usuário. Você também pode clicar em Exibir o agendamento do usuário na caixa de diálogo Localizar usuário para ver o agendamento do usuário selecionado fora do escritório.
+      Se o nome de usuário apropriado não for exibido na lista, clique em Localizar usuário e use a caixa de diálogo Localizar usuário para procurar o usuário. Selecione o usuário apropriado na lista e clique em Selecionar usuário. Você também pode clicar em Visualização do agendamento do usuário na caixa de diálogo Localizar usuário para ver o agendamento do usuário selecionado fora do escritório.
 
-   1. Se houver processos que não devem ser enviados para o usuário padrão, clique em Adicionar uma exceção, selecione o processo e outro usuário na lista. Você também pode selecionar Não atribuir para que a tarefa permaneça atribuída ao usuário que está fora do escritório.
+   1. Se houver processos que não devem ser enviados para o usuário padrão, clique em Adicionar uma exceção, selecione o processo e outro usuário da lista. Você também pode selecionar Não atribuir para que a tarefa permaneça atribuída ao usuário que está fora do escritório.
    1. Clique em Salvar.
 
