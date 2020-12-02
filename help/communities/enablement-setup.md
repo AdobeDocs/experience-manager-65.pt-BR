@@ -18,16 +18,16 @@ ht-degree: 1%
 ---
 
 
-# Configuração inicial para ativação  {#initial-setup-for-enablement}
+# Configuração inicial para a ativação {#initial-setup-for-enablement}
 
 ## Instâncias de autor e publicação do start {#start-author-and-publish-instances}
 
 Para fins de desenvolvimento e demonstração, será necessário executar uma instância de autor e uma instância de publicação.
 
-Siga as instruções AEM básicas de [Introdução](../../help/sites-deploying/deploy.md#getting-started) que resultarão em
+Siga as instruções AEM básicas [Introdução](../../help/sites-deploying/deploy.md#getting-started) que resultarão em
 
 * Ambiente do autor em [localhost:4502](http://localhost:4502/)
-* Publicar ambiente no [localhost:4503](http://localhost:4503/)
+* Publicar ambiente em [localhost:4503](http://localhost:4503/)
 
 Para AEM Communities,
 
@@ -46,15 +46,15 @@ Para AEM Communities,
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o AEM, visualização a documentação sobre manuseio [](../../help/sites-authoring/basic-handling.md) básico e um guia [rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o AEM, visualização a documentação em [manuseio básico](../../help/sites-authoring/basic-handling.md) e um [guia rápido para criar páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Instalar a versão mais recente das comunidades {#install-latest-communities-release}
 
-Este tutorial cria um site [de comunidade de](overview.md#enablement-community)ativação. Para verificar se o pacote de recursos mais recente está instalado, visite:
+Este tutorial cria um [site da comunidade de ativação](overview.md#enablement-community). Para verificar se o pacote de recursos mais recente está instalado, visite:
 
 * [Versões mais recentes](deploy-communities.md#latest-releases)
 
-Para obter um tutorial que cria um site [de comunidade de](overview.md#engagement-community)envolvimento, visite [Introdução ao AEM Communities](getting-started.md).
+Para obter um tutorial que cria um [site da comunidade de envolvimento](overview.md#engagement-community), visite [Introdução ao AEM Communities](getting-started.md).
 
 ## Configurar recursos de ativação {#configure-enablement-features}
 
@@ -62,29 +62,29 @@ Para seguir este tutorial, é necessário instalar e [configurar corretamente a 
 
 ## Configurar Analytics {#configure-analytics}
 
-Quando o [Adobe Analytics está configurado para o site](analytics.md)da comunidade, mais informações estão disponíveis nos [relatórios](reports.md) gerados nos recursos de ativação e caminhos de aprendizado atribuídos aos membros da comunidade (alunos).
+Quando [o Adobe Analytics está configurado para o site da comunidade](analytics.md), mais informações estão disponíveis nos [relatórios](reports.md) gerados nos recursos de ativação e caminhos de aprendizado atribuídos aos membros da comunidade (alunos).
 
 ## Configurar email para notificações {#configure-email-for-notifications}
 
-O recurso de notificações, disponível por padrão para todos os sites criados usando o `Communities Sites` console, fornece um canal de email para notificações.
+O recurso de notificações, disponível por padrão para todos os sites criados usando o console `Communities Sites`, fornece um canal de email para notificações.
 
 O que é necessário é que o email seja configurado corretamente para o site.
 
-See [Configuring Email](email.md).
+Consulte [Configuração de Email](email.md).
 
-## Ativar o serviço de túnel {#enable-the-tunnel-service}
+## Ative o serviço de túnel {#enable-the-tunnel-service}
 
 Ao criar um site da comunidade no ambiente do autor, o serviço de túnel possibilita a criação e o gerenciamento de usuários e grupos de usuários registrados no ambiente de publicação (membros), a atribuição de funções a membros da comunidade confiáveis e a atribuição de conteúdo a alunos.
 
-Para obter mais informações, consulte [Gerenciamento de usuários e grupos](users.md)de usuários.
+Para obter mais informações, consulte [Gerenciamento de usuários e grupos de usuários](users.md).
 
-Para obter instruções simples para habilitar o serviço de túnel, consulte Serviço [de](deploy-communities.md#tunnel-service-on-author)Túnel.
+Para obter instruções simples para habilitar o serviço de túnel, consulte [Serviço de Túnel](deploy-communities.md#tunnel-service-on-author).
 
 ## Criar tags do tutorial {#create-tutorial-tags}
 
-Crie tags para usar nos tutoriais de envolvimento e ativação, usando a namespace de tags de `Tutorial`.
+Crie tags para usar nos tutoriais de envolvimento e ativação, usando a namespace de tag `Tutorial`.
 
-Use o console [](../../help/sites-administering/tags.md#tagging-console) Marcação para criar as seguintes tags:
+Use o [console de marcação](../../help/sites-administering/tags.md#tagging-console) para criar as seguintes tags:
 
 * `Tutorial: Sports / Baseball`
 * `Tutorial: Sports / Gymnastics`
@@ -106,9 +106,9 @@ Pacote de amostra de tags criadas para os Tutorials de Introdução do AEM Commu
 
 ## Criar membros e grupos de ativação {#create-enablement-members-and-groups}
 
-Para um site da comunidade de ativação, os visitantes do site não devem ser capazes de se [autoregistrar nem usar o login](sites-console.md#user-management)social.
+Para um site da comunidade de ativação, os visitantes do site não devem ser capazes de [registrar-se automaticamente nem usar o login social](sites-console.md#user-management).
 
-Em vez disso, com o serviço [de](#enable-the-tunnel-service) túnel ativado, o console [](members.md) Membros é usado para registrar novos membros no ambiente de publicação.
+Em vez disso, com o [serviço de túnel](#enable-the-tunnel-service) ativado, o [console Membros](members.md) é usado para registrar novos membros no ambiente de publicação.
 
 Neste tutorial, três membros são criados no ambiente de publicação. Dois membros se tornarão membros de um grupo de usuários atribuído a um caminho de aprendizado, enquanto o terceiro membro se tornará um contato de recurso de ativação.
 
@@ -116,15 +116,15 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 >[!NOTE]
 >
->Esses membros estão sendo criados antes da criação do site da comunidade do Tutorial *de* ativação.
+>Esses membros estão sendo criados antes da criação do site da comunidade *Enablement Tutorial*.
 >
->Se forem criados depois, eles poderão ser adicionados como membros do grupo *de membros do Tutorial de* ativação durante a criação do membro.
+>Se forem criados depois, eles poderão ser adicionados como membros do *grupo de membros do Tutorial de Ativação* durante a criação do membro.
 >
->Em vez disso, mais tarde, eles serão [atribuídos ao grupo](enablement-create-site.md#assignuserstocommunityenablemembersgroup)de membros.
+>Em vez disso, mais tarde, eles serão [atribuídos ao grupo de membros](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
 
 ### Riley Taylor - Inscrito {#riley-taylor-enrollee}
 
-[Crie um membro](members.md#create-new-member) que será adicionado a um grupo de alunos - o grupo Classe de esqui da comunidade.
+[Crie um ](members.md#create-new-member) membro que será adicionado a um grupo de alunos - o grupo Classe de esqui da comunidade.
 
 * **ID**: estrada
 * **Email**: riley.taylor@mailinator.com
@@ -133,9 +133,9 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 * **Nome**: Riley
 * **Sobrenome**: Taylor
 
-### Sidney Croft - Inscrito {#sidney-croft-enrollee}
+### Sidney Croft - Registrando {#sidney-croft-enrollee}
 
-[Crie um segundo membro](members.md#create-new-member) que será adicionado ao grupo Classe de esqui da comunidade.
+[Crie um segundo ](members.md#create-new-member) membro que será adicionado ao grupo Classe de esqui da comunidade.
 
 * **ID**: calçada
 * **Email**: sidney.croft@mailinator.com
@@ -144,9 +144,9 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 * **Nome**: Sidney
 * **Sobrenome**: Corte
 
-### Quinn Harper - Ativação do Contato e Moderador de Recursos {#quinn-harper-enablement-resource-contact-and-moderator}
+### Quinn Harper - Ativação do Contato de Recursos e Moderador {#quinn-harper-enablement-resource-contact-and-moderator}
 
-[Crie um membro](members.md#create-new-member) que será adicionado ao grupo de membros do Site da Comunidade depois que o site for criado. Essa associação permitirá que o membro seja atribuído como o Contato [de](resources.md#settings) recursos de ativação quando um recurso de ativação for criado para o site.
+[Crie um ](members.md#create-new-member) membro que será adicionado ao grupo de membros do Site da Comunidade depois que o site for criado. Esta associação permitirá que o membro seja atribuído como a ativação [Contato de Recursos](resources.md#settings) quando um recurso de ativação for criado para o site.
 
 * **ID**: quinn
 * **Email**: quinn.harper@mailinator.com
@@ -157,19 +157,19 @@ Um quarto usuário é criado no ambiente do autor e recebe as funções de Admin
 
 ### Adicionar um grupo de usuários - Classe de esqui da comunidade {#add-a-user-group-community-ski-class}
 
-[Adicione um novo grupo](members.md#create-new-group) chamado Classe de esqui da comunidade.
+[Adicione um novo ](members.md#create-new-group) grupo chamado Classe de esqui da comunidade.
 
 * **ID**: classe Community-ski
 * **Nome**: Classe Community Ski
 * **Descrição**: um grupo de exemplo para atribuir recursos de ativação
-* **Adicionar membros ao grupo** &#39;add&#39;:
+* **Adicionar membros ao grupo**  &#39;add&#39;:
 
    * estrada
    * calçada
 
 * Selecione **[!UICONTROL Salvar]**
 
-### Propriedades da classe Ski da comunidade {#community-ski-class-properties}
+### Propriedades de Classe de Esqui da Comunidade {#community-ski-class-properties}
 
 ![propriedades de classe de esqui](assets/ski-class-properties.png)
 
@@ -183,7 +183,7 @@ Os membros do grupo Administradores da comunidade podem criar sites da comunidad
 
 ### Criar usuário {#create-user}
 
-Crie um usuário no *autor*, ao qual seja atribuída a função de Administrador da comunidade:
+Crie um usuário em *author*, que tenha a função de Administrador da comunidade:
 
 * Na instância do autor
 
@@ -193,17 +193,17 @@ Crie um usuário no *autor*, ao qual seja atribuída a função de Administrador
 
    * Por exemplo, nome de usuário &#39;admin&#39; / senha &#39;admin&#39;
 
-* No console principal, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
-* No menu **[!UICONTROL Editar]** , selecione **[!UICONTROL Adicionar usuário]**.
+* No console principal, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança]** > **[!UICONTROL Utilizadores]**.
+* No menu **[!UICONTROL Editar]**, selecione **[!UICONTROL Adicionar Utilizador]**.
 
-* Na `Create New User` caixa de diálogo insira:
+* Na caixa de diálogo `Create New User`, digite:
 
-   * **ID&amp;ast;**: sírio
+   * **&amp;Estar;**: sírio
    * **Endereço** Emai: sirius.nilson@mailinator.com
-   * **Senha&amp;passado;**: password
-   * **Confirmar Senha&amp;passado;**: password
+   * **&amp;Passar senha;**: password
+   * **Confirmar &amp;senha;**: password
    * **Nome**: Sirius
-   * **Sobrenome&amp;ast;**: Nilson
+   * **Apelido&amp;s;**: Nilson
 
 ### Atribuir Sirius ao grupo de administradores da comunidade {#assign-sirius-to-community-administrators-group}
 
