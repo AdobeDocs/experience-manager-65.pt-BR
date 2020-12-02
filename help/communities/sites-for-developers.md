@@ -29,7 +29,7 @@ Para isso:
 * Crie um modelo personalizado.
 * Sobrepor o caminho padrão do modelo do site.
 * Adicione o modelo personalizado ao caminho de sobreposição.
-* Especifique o modelo personalizado adicionando uma `page-template` propriedade ao `configuration` nó.
+* Especifique o modelo personalizado adicionando uma propriedade `page-template` ao nó `configuration`.
 
 **Modelo** padrão:
 
@@ -43,7 +43,7 @@ Para isso:
 
 **Tipo**: String
 
-**Valor**: `template-name` (sem extensão)
+**Valor**:  `template-name` (sem extensão)
 
 **Nó** de configuração:
 
@@ -53,7 +53,7 @@ Por exemplo: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
->Todos os nós no caminho sobreposto precisam apenas ser do tipo `Folder`.
+>Todos os nós no caminho sobreposto precisam ser do tipo `Folder`.
 
 >[!CAUTION]
 >
@@ -63,11 +63,12 @@ Por exemplo: `/content/sites/engage/en/configuration`
 
 Por exemplo, `vertical-sitepage.hbs` é um modelo de site que resulta na colocação de links de menu verticalmente para baixo do lado esquerdo da página, em vez de horizontalmente abaixo do banner.
 
-[Obter arquivo](assets/vertical-sitepage.hbs)Coloque o modelo de site personalizado na pasta de sobreposição:
+[Obter ](assets/vertical-sitepage.hbs)
+ArquivoColoque o modelo de site personalizado na pasta de sobreposição:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-Identifique o modelo personalizado adicionando uma `page-template` propriedade ao nó de configuração:
+Identifique o modelo personalizado adicionando uma propriedade `page-template` ao nó de configuração:
 
 `/content/sites/sample/en/configuration`
 
@@ -77,19 +78,19 @@ Certifique-se de **Salvar tudo** e replicar o código personalizado para todas a
 
 A prática recomendada para replicar código personalizado é [criar um pacote](../../help/sites-administering/package-manager.md#creating-a-new-package) e implantá-lo em todas as instâncias.
 
-## Exportar um site da comunidade {#exporting-a-community-site}
+## Exportando um Site de Comunidade {#exporting-a-community-site}
 
 Depois que um site da comunidade é criado, é possível exportar o site como um pacote AEM armazenado no gerenciador de pacotes e disponível para download e upload.
 
-Isso está disponível no console [Sites de](sites-console.md#exporting-the-site)comunidades.
+Isso está disponível no [console Sites das Comunidades](sites-console.md#exporting-the-site).
 
 Observe que o UGC e o código personalizado não estão incluídos no pacote do site da comunidade.
 
-Para exportar o UGC, use a Ferramenta [de migração UGC da](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities, uma ferramenta de migração de código aberto disponível no GitHub.
+Para exportar o UGC, use a [Ferramenta de migração UGC da AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), uma ferramenta de migração de código aberto disponível no GitHub.
 
-## Excluindo um site da comunidade {#deleting-a-community-site}
+## Excluindo um Site da Comunidade {#deleting-a-community-site}
 
-A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do console **[!UICONTROL Comunidades]** > **[!UICONTROL Sites]** . Durante o desenvolvimento, se desejar excluir um site da comunidade e atualizar o start, você poderá usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
+A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do console **[!UICONTROL Communities]** > **[!UICONTROL Sites]**. Durante o desenvolvimento, se desejar excluir um site da comunidade e atualizar o start, você poderá usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
 
 * [UGC](#user-generated-content)
 * [Grupos de usuários](#community-user-groups)
@@ -102,15 +103,15 @@ Para identificar a ID de site exclusiva associada ao site da comunidade, use o C
 
 * Navegue até a raiz do idioma do site, como `/content/sites/*<site name>*/en/rep:policy`.
 
-* Encontre o `allow<#>` nó com um `rep:principalName` neste formato `rep:principalName = *community-enable-nrh9h-members*`.
+* Localize o nó `allow<#>` com um `rep:principalName` neste formato `rep:principalName = *community-enable-nrh9h-members*`.
 
 * A ID do site é o terceiro componente de `rep:principalName`
 
    Por exemplo, se `rep:principalName = community-enable-nrh9h-members`
 
-   * **nome** do site = *ativar*
-   * **ID** do site = *nrh9h*
-   * **ID** exclusiva do site = *enable-nrh9h*
+   * **nome**  do site=  *habilitar*
+   * **ID**  do site=  *nrh9h*
+   * **ID**  de site exclusiva=  *enable-nrh9h*
 
 ### Conteúdo gerado pelo usuário {#user-generated-content}
 
@@ -124,14 +125,14 @@ Todo o UGC pode ser removido ou para um site específico, por exemplo:
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Isso só remove o conteúdo gerado pelo usuário (inserido na publicação) e não o conteúdo criado (inserido no autor). Portanto, nós [de](srp.md#shadownodes) sombra não são afetados.
+Isso só remove o conteúdo gerado pelo usuário (inserido na publicação) e não o conteúdo criado (inserido no autor). Portanto, [nós de sombra](srp.md#shadownodes) não são afetados.
 
 ### Grupos de usuários da comunidade {#community-user-groups}
 
-Em todas as instâncias de autor e publicação, no console [de](../../help/sites-administering/security.md)segurança, localize e remova os grupos [de](users.md) usuários que são:
+Em todas as instâncias de autor e publicação, no [console de segurança](../../help/sites-administering/security.md), localize e remova os [grupos de usuários](users.md) que são:
 
 * Prefixo com `community`
-* Seguido pela ID de site [exclusiva](#community-unique-site-id)
+* Seguido por [id de site exclusiva](#community-unique-site-id)
 
 Por exemplo, `community-engage-x0e11-members`.
 
@@ -139,10 +140,10 @@ Por exemplo, `community-engage-x0e11-members`.
 
 No console principal:
 
-* Select **[!UICONTROL Assets]**.
-* Entre no modo **[!UICONTROL Selecionar]** .
-* Selecione a pasta nomeada com a ID [de site](#community-unique-site-id)exclusiva.
-* Selecione **[!UICONTROL Excluir]** (pode ser necessário selecionar de **[!UICONTROL Mais...]**).
+* Selecione **[!UICONTROL Ativos]**.
+* Digite o modo **[!UICONTROL Select]**.
+* Selecione a pasta nomeada com a [ID de site exclusiva](#community-unique-site-id).
+* Selecione **[!UICONTROL Eliminar]** (pode ser necessário selecionar **[!UICONTROL Mais...]**).
 
 ### Registros do banco de dados {#database-records}
 
