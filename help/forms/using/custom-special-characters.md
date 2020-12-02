@@ -11,6 +11,9 @@ discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 1%
 
 ---
 
@@ -29,31 +32,31 @@ Por exemplo, você pode inserir os seguintes caracteres especiais:
 
 É possível inserir caracteres especiais em letras:
 
-* No editor de [texto](/help/forms/using/document-fragments.md#createtext)
-* Em um módulo incorporado [editável em uma correspondência](../../forms/using/create-correspondence.md#managecontent)
+* No editor de texto [](/help/forms/using/document-fragments.md#createtext)
+* Em um [módulo incorporado editável em uma correspondência](../../forms/using/create-correspondence.md#managecontent)
 
 ![regra especial](assets/specialcharactersinlinemodule.png)
 
 O administrador pode adicionar suporte para caracteres especiais mais/personalizados por personalização. Este artigo fornece instruções sobre como adicionar suporte para caracteres especiais adicionais e personalizados.
 
-## Adicionar ou modificar o suporte para caracteres especiais personalizados no Gerenciamento de correspondência {#creatingfolderstructure}
+## Adicione ou modifique o suporte para caracteres especiais personalizados no Gerenciamento de correspondência {#creatingfolderstructure}
 
 Use as seguintes etapas para adicionar suporte para caracteres especiais personalizados:
 
 1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta apps, crie uma pasta chamada caracteres **** especiais com caminho/estrutura semelhante à pasta de caracteres especiais (localizada na pasta textEditorConfig em libs):
+1. Na pasta apps, crie uma pasta chamada **[!UICONTROL caracteres especiais]** com caminho/estrutura semelhante à pasta de caracteres especiais (localizada na pasta textEditorConfig em libs):
 
-   1. Clique com o botão direito do mouse na pasta de caracteres **** especiais no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta **caracteres especiais** no seguinte caminho e selecione **Nó de sobreposição**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
-      **Caminho:** /libs/fd/cm/ma/gui/configuration/textEditorConfiguração/caracteres especiais
+      **Caminho:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcaracteres
 
       **Localização da sobreposição:** /apps/
 
-      **Corresponder tipos de nós:** Verificado
+      **Tipos De Nó De Correspondência:** Marcado
 
       >[!NOTE]
       >
@@ -66,7 +69,7 @@ Use as seguintes etapas para adicionar suporte para caracteres especiais persona
       >    * Instalar um pacote de recursos
 
 
-   1. Clique em **OK** e em **Salvar tudo**. A pasta de caracteres especiais é criada no caminho especificado.
+   1. Clique em **OK** e, em seguida, clique em **Salvar tudo**. A pasta de caracteres especiais é criada no caminho especificado.
 
       Depois de criar a sobreposição, verifique as tags de estrutura do nó. Cada nó criado em /apps usando a sobreposição deve ter a mesma classe e as mesmas propriedades definidas em /libs para esse nó. Se alguma propriedade ou tag estiver ausente na estrutura do nó no local /apps, sincronize suas tags com o nó correspondente em /libs.
 
@@ -79,7 +82,7 @@ Use as seguintes etapas para adicionar suporte para caracteres especiais persona
    | cmConfigurationType | Sequência de caracteres | cmTextEditorConfiguration |
    | cssPath | Sequência de caracteres | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Clique com o botão direito do mouse na pasta de caracteres **** especiais no seguinte caminho e selecione **Criar > Nó** filho e clique em **Salvar tudo**:
+1. Clique com o botão direito do mouse na pasta **[!UICONTROL caracteres especiais]** no seguinte caminho e selecione **Criar > Nó filho** e clique em **Salvar tudo**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcaracteres/&lt;YourChildNode>
 
