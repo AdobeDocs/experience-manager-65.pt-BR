@@ -44,7 +44,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tr>
     <tr>
     <td>Imagens interativas</td>
-    <td><a href="/help/assets/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Adicionar pontos de acesso a um banner</a>de imagem.</td>
+    <td><a href="/help/assets/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Adicionar pontos de acesso a um banner</a> de imagem.</td>
     </tr>
     <tr>
     <td>Vídeos interativos</td>
@@ -75,7 +75,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tr>
     <tr>
     <td>Banner do carrossel</td>
-    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adicionar um banner de carrossel à página</a>do site.<br /> </td>
+    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adicionar um banner de carrossel à página</a> do site.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -84,7 +84,8 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    Para fazer isso, o visualizador usa um manipulador chamado `QuickViewActive`.
 
-   **Exemplo** Suponha que você esteja usando a seguinte amostra de código incorporado em sua página da Web para uma imagem interativa:
+   ****
+ExemploSuponha que você esteja usando a seguinte amostra de código incorporado em sua página da Web para uma imagem interativa:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -105,16 +106,17 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
    })
    ```
 
-   Saiba mais sobre o `setHandlers()` método no seguinte:
+   Saiba mais sobre o método `setHandlers()` no seguinte:
 
    * Visualizador de imagens interativas: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visualizador de vídeo interativo: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Agora é necessário configurar o `quickViewActivate` manipulador.
+1. Agora é necessário configurar o manipulador `quickViewActivate`.
 
-   O `quickViewActivate` manipulador controla as exibições rápidas no visualizador. O manipulador contém a lista variável e as chamadas de função para uso com o Quickview. O código incorporado fornece mapeamento para a variável SKU definida no Quickview, bem como uma chamada de `loadQuickView` função de amostra.
+   O manipulador `quickViewActivate` controla as exibições rápidas no visualizador. O manipulador contém a lista variável e as chamadas de função para uso com o Quickview. O código incorporado fornece mapeamento para a variável SKU definida no Quickview, bem como uma chamada de função `loadQuickView` de amostra.
 
-   **Variável mapeando variáveis** do mapa para uso na sua página da Web para o valor SKU e variáveis genéricas contidas no Quickview:
+   **Variável**
+mappingMap variáveis para uso em sua página da Web para o valor SKU e variáveis genéricas contidas no Quickview:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -129,13 +131,14 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Chamada** de função O manipulador também requer uma chamada de função para que o Quickview funcione. Pressupõe-se que a função seja acessível pela página de host. O código incorporado fornece uma chamada de função de exemplo:
+   **Função**
+callO manipulador também requer uma chamada de função para que o Quickview funcione. Pressupõe-se que a função seja acessível pela página de host. O código incorporado fornece uma chamada de função de exemplo:
 
    `loadQuickView(sku)`
 
    A chamada de função de exemplo considera que a função `loadQuickView()` existe e está acessível.
 
-   Saiba mais sobre o `quickViewActivate` método no seguinte:
+   Saiba mais sobre o método `quickViewActivate` no seguinte:
 
    * Visualizador de imagens interativas: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
    * Visualizador de vídeo interativo: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
@@ -146,8 +149,8 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
    * Exclua as barras de comentário da seção setHandlers do código incorporado.
    * Mapeie quaisquer variáveis adicionais contidas no Quickview.
 
-      * Atualize a `loadQuickView(sku,*var1*,*var2*)` chamada se você estiver adicionando variáveis adicionais.
-   * Crie uma função simples `loadQuickView` () na página, fora do visualizador.
+      * Atualize a chamada `loadQuickView(sku,*var1*,*var2*)` se você estiver adicionando variáveis adicionais.
+   * Crie uma função `loadQuickView` () simples na página, fora do visualizador.
 
       Por exemplo, o seguinte grava o valor de sku no console do navegador:
 
@@ -207,13 +210,13 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    Para ter a exibição pop-up nos modos padrão e de tela cheia, anexe a pop-up ao container do visualizador. Para fazer isso, você pode usar um segundo método handler, `initComplete`.
 
-   O `initComplete` hander é chamado depois que o visualizador é inicializado.
+   O hander `initComplete` é chamado depois que o visualizador é inicializado.
 
    ```xml
    "initComplete":function() { code block }
    ```
 
-   Saiba mais sobre o `init()` método no seguinte:
+   Saiba mais sobre o método `init()` no seguinte:
 
    * Visualizador de imagens interativas: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * Visualizador de vídeo interativo: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
@@ -260,9 +263,10 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
 
    `*viewerInstance.*init()`
 
-   **Exemplo** Este exemplo usa o visualizador de imagem Interativo.
+   ****
+ExemploEste exemplo usa o visualizador de imagem interativo.
 
    `s7interactiveimageviewer.init()`
 
-   Depois de incorporar o visualizador à página de host, verifique se a instância do visualizador foi criada e se os manipuladores foram carregados antes que o visualizador seja chamado usando `init()`.
+   Depois de incorporar o visualizador à sua página de host, verifique se a instância do visualizador foi criada e se os manipuladores foram carregados antes que o visualizador seja chamado usando `init()`.
 
