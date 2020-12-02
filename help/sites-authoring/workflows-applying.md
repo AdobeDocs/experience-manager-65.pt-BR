@@ -61,30 +61,30 @@ Em ambos os casos, é necessário:
 
 * [Especificar os Detalhes do fluxo de trabalho no assistente Criar fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Início de um fluxo de trabalho na barra de ferramentas de Sites {#starting-a-workflow-from-the-sites-toolbar}
+### Início de um fluxo de trabalho na barra de ferramentas de Sites  {#starting-a-workflow-from-the-sites-toolbar}
 
-You can start a workflow from the toolbar of the **Sites** console:
+Você pode start um fluxo de trabalho da barra de ferramentas do console **Sites**:
 
 1. Navegue até página desejada e selecione-a.
 
-1. From the **Create** option in the toolbar you can now select **Workflow**.
+1. Na opção **Criar** na barra de ferramentas, agora é possível selecionar **Fluxo de trabalho**.
 
    ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
 1. O assistente **Criar fluxo de trabalho** ajudará você a [especificar os detalhes do fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Início de um fluxo de trabalho na Linha do tempo {#starting-a-workflow-from-the-timeline}
+### Início de um fluxo de trabalho na Linha do tempo  {#starting-a-workflow-from-the-timeline}
 
 Na **Linha do tempo**, você pode iniciar um fluxo de trabalho a ser aplicado ao seu recurso selecionado.
 
-1. [Selecione o recurso](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) e abra a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) (ou abra a Linha do tempo e selecione o recurso).
+1. [Selecione o ](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) recurso e abra a  [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline)  (ou abra a Linha do tempo e selecione o recurso).
 1. A ponta da seta no campo de comentário pode ser usada para revelar a opção **Iniciar fluxo de trabalho**:
 
    ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
 
 1. O assistente **Criar fluxo de trabalho** ajudará você a [especificar os detalhes do fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Especificar detalhes do fluxo de trabalho no assistente Criar fluxo de trabalho {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Especificar detalhes do fluxo de trabalho no assistente Criar fluxo de trabalho  {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 O assistente **Criar fluxo de trabalho** ajudará você a selecionar o fluxo de trabalho e a especificar os detalhes necessários.
 
@@ -118,7 +118,7 @@ Você pode especificar os detalhes:
 
 1. Na etapa **Escopo**, você pode selecionar:
 
-   * **Adicionar conteúdo** para abrir o navegador [de](/help/sites-authoring/author-environment-tools.md#path-browser) caminho e selecionar recursos adicionais; quando estiver no navegador, clique/toque em **Selecionar** para adicionar o conteúdo à instância do fluxo de trabalho.
+   * **Adicionar** conteúdo para abrir o  [navegador de ](/help/sites-authoring/author-environment-tools.md#path-browser) caminho e selecionar recursos adicionais; quando estiver no navegador, clique/toque em  **** Selecionar para adicionar o conteúdo à instância do fluxo de trabalho.
 
    * Um recurso existente para ver ações adicionais:
 
@@ -139,9 +139,9 @@ Uma caixa de diálogo será aberta, permitindo que você refine a seleção de a
    >
    >Se você adicionar recursos extras, poderá usar **Voltar** para ajustar a configuração **Manter fluxo de trabalho do pacote** na etapa **Propriedades**.
 
-1. Use **Create** to close the wizard and create the workflow instance. Uma notificação é exibida no console Sites.
+1. Use **Criar** para fechar o assistente e criar a instância do fluxo de trabalho. Uma notificação é exibida no console Sites.
 
-## Iniciar um fluxo de trabalho no editor de páginas {#starting-a-workflow-from-the-page-editor}
+## Iniciar um fluxo de trabalho no editor de páginas  {#starting-a-workflow-from-the-page-editor}
 
 Ao editar uma página, você pode selecionar **Informações da página** na barra de ferramentas. O menu suspenso tem a opção **Iniciar no fluxo de trabalho**. Isso abrirá uma caixa de diálogo na qual você pode especificar o fluxo de trabalho necessário, juntamente com um título, se necessário:
 
