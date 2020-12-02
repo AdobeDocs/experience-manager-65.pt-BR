@@ -1,6 +1,6 @@
 ---
-title: AEM Sites - Preparação para o RGPD
-seo-title: AEM Sites - Preparação para o RGPD
+title: AEM Sites - Prontidão para o RGPD
+seo-title: AEM Sites - Prontidão para o RGPD
 description: Saiba mais sobre os detalhes de Prontidão para o RGPD para AEM Sites.
 seo-description: Saiba mais sobre os detalhes de Prontidão para o RGPD para AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Sites - Preparação para o RGPD{#aem-sites-gdpr-readiness}
+# AEM Sites - Preparação para o GDPR{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -28,49 +28,49 @@ O Regulamento Geral da Proteção de Dados da União sobre os direitos de privac
 
 A AEM Sites está pronta para ajudar os clientes com suas obrigações de conformidade com o RGPD. Esta página orienta os clientes pelos procedimentos para lidar com solicitações do RGPD no AEM Sites. Ela descreve a localização dos dados privados armazenados e como removê-los manualmente ou com código.
 
-Para obter mais informações, consulte a página do [RGPD no Centro](https://www.adobe.com/privacy/general-data-protection-regulation.html)de privacidade da Adobe.
+Para obter mais informações, consulte a página [RGPD no Centro de Privacidade do Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Consulte Prontidão [do](/help/managing/data-protection-and-privacy.md) AEM GDPR para obter mais detalhes.
+>Consulte [AEM Prontidão do RGPD](/help/managing/data-protection-and-privacy.md) para obter mais detalhes.
 
 ## Servidor do autor {#author-server}
 
-As contas de usuário e o conteúdo UGC no servidor autor são abordados na documentação [do](/help/managing/data-protection-and-privacy.md)Platform GDPR.
+As contas de usuário e o conteúdo UGC no servidor do autor são abordados na [documentação GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
 
 ## Servidor de publicação {#publish-server}
 
-As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na documentação [do](/help/managing/data-protection-and-privacy.md)Platform GDPR.
+As contas de usuário usadas para autenticar visitantes no site, e o conteúdo UGC no servidor de publicação são abordados na [documentação GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
 
-Por padrão, os componentes do AEM Sites não armazenam dados de formulário inseridos por visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros ou Adobe Campaign para processamento adicional.
+Por padrão, os componentes da AEM Sites não armazenam dados de formulário inseridos por visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros, ou para a Adobe Campaign, para processamento adicional.
 
-## Inclusão/recusa {#opt-in-opt-out}
+## Inclusão/exclusão {#opt-in-opt-out}
 
-O AEM tem um serviço [de opção de não participação de](/help/sites-developing/cookie-optout.md) cookie que pode ser usado para gerenciar a opção de participação/não participação dos usuários.
+AEM tem um [serviço de opção de não participação de cookie](/help/sites-developing/cookie-optout.md) que pode ser usado para gerenciar a opção de não participação/não participação dos usuários.
 
-## Insights avançados da Analytics {#enhanced-insights-by-analytics}
+## Insights aprimorados pelo Analytics {#enhanced-insights-by-analytics}
 
-O AEM Sites inclui uma integração opcional com o Enhanced Insights by Analytics que usa funcionalidade no Adobe Analytics On-demand Service.
+A AEM Sites inclui uma integração opcional com o Enhanced Insights pelo Analytics que usa a funcionalidade no Adobe Analytics On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de assunto de dados do RGPD relacionadas ao Adobe Analytics, consulte [Adobe Analytics e RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+Para obter mais informações sobre como gerenciar solicitações de pessoas com dados do RGPD relacionadas ao Adobe Analytics, consulte [Adobe Analytics e RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Personalização aprimorada por Público alvo {#enhanced-personalization-by-target}
 
-O AEM Sites inclui uma integração opcional com a Personalização aprimorada por Público alvo que usa funcionalidade no Adobe Target On-demand Service.
+A AEM Sites inclui uma integração opcional com a Personalização aprimorada por Público alvo que usa funcionalidade no Adobe Target On-demand Service.
 
-Para obter mais informações sobre o gerenciamento de pedidos de informações do RGPD relacionados ao Adobe Target, consulte o Regulamento [sobre Privacidade e Proteção Geral de Dados do](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)Adobe Target.
+Para obter mais informações sobre como gerenciar solicitações de pessoas com dados do RGPD relacionadas ao Adobe Target, consulte [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
-O AEM fornece uma camada de dados opcional com o [ContextHub](/help/sites-developing/contexthub.md). Isso mantém os dados específicos do visitante no navegador, a serem usados para personalização baseada em regras.
+AEM fornece uma camada de dados opcional com [ContextHub](/help/sites-developing/contexthub.md). Isso mantém os dados específicos do visitante no navegador, a serem usados para personalização baseada em regras.
 
-Por padrão, esses dados de visitante não são armazenados no AEM; O AEM envia regras para a camada de dados para tomar decisões de personalização no navegador.
+Por padrão, esses dados de visitante não são armazenados em AEM; AEM envia regras para a camada de dados para tomar decisões de personalização no navegador.
 
 >[!NOTE]
 >
 >Antes do Adobe CQ 5.6, o ClientContext (uma versão anterior do ContextHub) enviava os dados para o servidor, mas não os armazenava.
 >
->O Adobe CQ 5.5 e versões anteriores agora são EOL e não são abordados nesta documentação.
+>A Adobe CQ 5.5 e versões anteriores agora são EOL e não são abordadas nesta documentação.
 
 ### Implementação da aceitação/não participação {#implementing-opt-in-opt-out}
 
