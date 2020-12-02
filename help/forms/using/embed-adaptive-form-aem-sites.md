@@ -23,17 +23,19 @@ ht-degree: 0%
 
 A AEM Forms permite que os desenvolvedores de formulários incorporem sem problemas formulários adaptativos e comunicações interativas em uma página do AEM Sites ou em uma página da Web hospedada fora do AEM. O formulário adaptativo incorporado e a comunicação interativa estão totalmente funcionais e os usuários podem preencher e enviar o formulário sem sair da página. Ajuda o usuário a permanecer no contexto de outros elementos na página da Web e a interagir simultaneamente com o formulário ou a comunicação interativa.
 
-Para obter informações sobre como incorporar um formulário adaptável em uma página da Web externa, consulte [Incorporar formulário adaptável em uma página](/help/forms/using/embed-adaptive-form-external-web-page.md)da Web externa.
+Para obter informações sobre como incorporar um formulário adaptável em uma página da Web externa, consulte [Incorporar formulário adaptável em uma página da Web externa](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
 Na página do AEM Sites, é possível adicionar um formulário adaptável ou uma comunicação interativa usando:
 
-* **[Componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** do Container AEM Forms A AEM Forms fornece um componente que você pode adicionar às páginas do site. O componente Container AEM Forms permite incorporar um formulário adaptável e uma comunicação interativa.
+* **[Componente do Container AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+O AEM Forms fornece um componente que você pode adicionar às páginas do site. O componente Container AEM Forms permite incorporar um formulário adaptável e uma comunicação interativa.
 
-* **[Navegador](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** de ativos Todos os formulários e comunicações interativas que você cria estão disponíveis em Ativos. Você pode arrastar e soltar o formulário como um ativo na sua página.
+* **[Navegador](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+de ativosTodos os formulários e comunicações interativas que você cria estão disponíveis em Ativos. Você pode arrastar e soltar o formulário como um ativo na sua página.
 
 ## Pré-requisitos {#prerequisites}
 
-Para incorporar um formulário adaptável ou uma comunicação interativa em uma página de sites AEM que usa um modelo editável, verifique se o componente de Formulário AEM está configurado como um componente permitido no modelo associado. Para obter mais informações, consulte a seção **Política e propriedades (Container de layout)** em [Criação de modelos](/help/sites-authoring/templates.md)de página.
+Para incorporar um formulário adaptável ou uma comunicação interativa em uma página de sites AEM que usa um modelo editável, verifique se o componente de Formulário AEM está configurado como um componente permitido no modelo associado. Para obter mais informações, consulte a seção **Política e propriedades (Container de layout)** em [Criação de modelos de página](/help/sites-authoring/templates.md).
 
 No caso de uma página Sites usando um modelo estático, é necessário configurá-la no sistema de parágrafo da página do site. Para obter mais informações, Consulte [Configuração dos componentes no modo de Design](/help/sites-authoring/default-components-designmode.md).
 
@@ -50,12 +52,12 @@ Para incorporar um formulário adaptável ou comunicação interativa usando o c
    >
    >Não há suporte para vários componentes de Container AEM Forms em uma página.
 
-1. Toque no componente de Container AEM Forms incorporado na página de sites e, em seguida, toque em ![settings_icon](assets/settings_icon.png) na barra de ações. A caixa de diálogo **[!UICONTROL Editar Container]** AEM Forms é aberta.
+1. Toque no componente de Container AEM Forms incorporado na página de sites e toque em ![settings_icon](assets/settings_icon.png) na barra de ações. A caixa de diálogo **[!UICONTROL Editar Container AEM Forms]** é aberta.
 1. Na caixa de diálogo Editar Container AEM Forms, especifique o seguinte.
 
-   * **Tipo de ativo:** Selecione o tipo de ativo a ser incorporado. As opções são forma adaptável e comunicação interativa
+   * **Tipo de ativo:** selecione o tipo de ativo a ser incorporado. As opções são forma adaptável e comunicação interativa
    * **Caminho** do ativo: Procure e selecione o formulário adaptável ou a comunicação interativa a ser incorporada. Ele é preenchido automaticamente se você soltou do navegador Ativos.
-   * (Somente formulário adaptável) Envio **de publicação**: Selecione a ação a ser acionada no envio do formulário. Você pode optar por mostrar uma mensagem de agradecimento ou uma página de agradecimento.
+   * (Somente formulário adaptável) **Envio da publicação**: Selecione a ação a ser acionada no envio do formulário. Você pode optar por mostrar uma mensagem de agradecimento ou uma página de agradecimento.
 
       * **Mensagem** de agradecimento: Grave uma mensagem usando o editor de rich text para mostrar no envio do formulário. Esta opção está disponível somente quando você escolhe mostrar uma mensagem de agradecimento.
       * **Página** de agradecimento: Navegue e selecione a página a ser exibida no envio do formulário. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
@@ -82,13 +84,13 @@ AEM página de sites mantém uma referência ao formulário adaptável e à comu
 Para modificar qualquer configuração ou propriedade do formulário adaptável incorporado e da comunicação interativa, execute um dos procedimentos a seguir.
 
 * Abra o formulário original em formulários adaptáveis ou comunicação interativa nos respectivos editores e modifique-os.
-* Toque no formulário adaptável ou na comunicação interativa na página do site no modo de edição e toque em **[!UICONTROL Editar em uma nova janela]**. O formulário original é aberto no modo de edição que você pode modificar.
+* Toque no formulário adaptável ou na comunicação interativa de dentro da página do site no modo de edição e toque em **[!UICONTROL Editar em uma nova janela]**. O formulário original é aberto no modo de edição que você pode modificar.
 
 >[!NOTE]
 >
 >As alterações feitas na forma adaptativa original ou na comunicação interativa refletem automaticamente no formulário incorporado. Entretanto, publique novamente o formulário adaptável, a comunicação interativa ou a página do site para refletir as alterações na página publicada.
 
-## Considerations and best practices {#considerations-and-best-practices}
+## Considerações e práticas recomendadas {#considerations-and-best-practices}
 
 Lembre-se dos seguintes pontos ao incorporar formulários adaptativos em páginas de sites AEM:
 
