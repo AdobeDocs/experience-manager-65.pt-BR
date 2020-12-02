@@ -11,29 +11,32 @@ content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 1%
 
 ---
 
 
-# Desenvolver o Editor em massa{#developing-the-bulk-editor}
+# Desenvolver o Editor de itens em massa{#developing-the-bulk-editor}
 
-Esta seção descreve como desenvolver a ferramenta de editor em massa e como estender o componente Lista de produtos, que é baseado no editor em massa.
+Esta seção descreve como desenvolver a ferramenta de editor em massa e como estender o componente de Lista do Produto, que é baseado no editor em massa.
 
-## Parâmetros de consulta do Editor em massa {#bulk-editor-query-parameters}
+## Parâmetros de Query do Editor em Massa {#bulk-editor-query-parameters}
 
-Ao trabalhar com o editor em massa, há vários parâmetros de consulta que podem ser adicionados ao URL para chamar o editor em massa com uma configuração específica. Se você quiser que o editor em massa seja sempre usado com uma determinada configuração, por exemplo, como no componente Lista de produtos, é necessário modificar bulkeditor.jsp (localizado em /libs/wcm/core/components/bulkeditor) ou criar um componente com a configuração específica. As alterações feitas usando parâmetros de consulta não são permanentes.
+Ao trabalhar com o editor em massa, há vários parâmetros de query que podem ser adicionados ao URL para chamar o editor em massa com uma configuração específica. Se você quiser que o editor em massa seja sempre usado com uma determinada configuração, por exemplo, como no componente de Lista do produto, é necessário modificar bulkeditor.jsp (localizado em /libs/wcm/core/components/bulkeditor) ou criar um componente com a configuração específica. As alterações feitas usando parâmetros de query não são permanentes.
 
 Por exemplo, se você digitar o seguinte no URL do seu navegador:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-o editor em massa é exibido sem o campo Caminho **da** raiz como hrp=true e oculta o campo. Com o parâmetro hrp=false, o campo é exibido (o valor padrão).
+o editor em massa é exibido sem o campo **Caminho raiz** como hrp=true oculta o campo. Com o parâmetro hrp=false, o campo é exibido (o valor padrão).
 
-A seguir está uma lista dos parâmetros de consulta do editor em massa:
+Veja a seguir uma lista dos parâmetros de query do editor em massa:
 
 >[!NOTE]
 >
->Cada parâmetro pode ter um nome longo e curto. Por exemplo, o nome longo do caminho raiz de pesquisa é `rootPath`, o nome curto é `rp`. Se o nome longo não estiver definido, o curto será lido da solicitação.
+>Cada parâmetro pode ter um nome longo e curto. Por exemplo, o nome longo do caminho raiz de pesquisa é `rootPath`, o nome abreviado é `rp`. Se o nome longo não estiver definido, o curto será lido da solicitação.
 
 <table>
  <tbody>
@@ -55,7 +58,7 @@ A seguir está uma lista dos parâmetros de consulta do editor em massa:
   <tr>
    <td> queryParams / qp<br /> </td>
    <td> Sequência de caracteres</td>
-   <td> consulta de pesquisa</td>
+   <td> query de pesquisa</td>
   </tr>
   <tr>
    <td> contentMode / cm<br /> </td>
@@ -75,7 +78,7 @@ A seguir está uma lista dos parâmetros de consulta do editor em massa:
   <tr>
    <td> initialSearch / is<br /> </td>
    <td> Booleano</td>
-   <td> quando verdadeiro, a consulta é executada no carregamento da página<br /> </td>
+   <td> quando verdadeiro, o query é executado no carregamento da página<br /> </td>
   </tr>
   <tr>
    <td> colsSelection / cs<br /> </td>
@@ -100,7 +103,7 @@ A seguir está uma lista dos parâmetros de consulta do editor em massa:
   <tr>
    <td> hideQueryParams / hqp</td>
    <td> Booleano</td>
-   <td> quando verdadeiro, oculta o campo de consulta</td>
+   <td> quando verdadeiro, oculta o campo query</td>
   </tr>
   <tr>
    <td> hideContentMode / hcm</td>
@@ -160,18 +163,18 @@ A seguir está uma lista dos parâmetros de consulta do editor em massa:
  </tbody>
 </table>
 
-### Desenvolvimento de um componente baseado no Editor em massa: o componente de lista de produtos {#developing-a-bulk-editor-based-component-the-product-list-component}
+### Desenvolvimento de um componente baseado no Editor em massa: o componente de Lista do produto {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Esta seção fornece uma visão geral de como usar o editor em massa e fornece uma descrição do componente Geometrixx existente com base no editor em massa: o componente Lista de produtos.
+Esta seção fornece uma visão geral de como usar o editor em massa e fornece uma descrição do componente de Geometrixx existente com base no editor em massa: o componente Lista do produto.
 
-O componente Lista de produtos permite que os usuários exibam e editem uma tabela de dados. Por exemplo, você pode usar o componente Lista de produtos para representar produtos em um catálogo. As informações são apresentadas em uma tabela HTML padrão e qualquer edição é executada na caixa de diálogo **Editar** , que contém um widget do BulkEditor. (Esse Editor em massa é exatamente o mesmo que aquele que pode ser acessado em /etc/importers/bulkeditor.html ou pelo menu Ferramentas). O componente Lista de produtos foi configurado para a funcionalidade específica e limitada do editor em massa. Todas as partes do editor em massa (ou componentes derivados do editor em massa) podem ser configuradas.
+O componente Lista do produto permite que os usuários exibam e editem uma tabela de dados. Por exemplo, você pode usar o componente Lista do produto para representar produtos em um catálogo. As informações são apresentadas em uma tabela HTML padrão e qualquer edição é realizada na caixa de diálogo **Editar**, que contém um widget do BulkEditor. (Esse Editor em massa é exatamente o mesmo que aquele que pode ser acessado em /etc/importers/bulkeditor.html ou pelo menu Ferramentas). O componente Lista do produto foi configurado para a funcionalidade específica e limitada do editor em massa. Todas as partes do editor em massa (ou componentes derivados do editor em massa) podem ser configuradas.
 
-Com o editor em massa, você pode adicionar, modificar, excluir, filtrar e exportar as linhas, salvar modificações e importar um conjunto de linhas. Cada linha é armazenada como um nó na própria instância do componente Lista de produtos. Cada célula é uma propriedade de cada nó. Esta é uma opção de design e pode ser facilmente alterada, por exemplo, você pode armazenar nós em outro lugar no repositório. A função do servlet de consulta é retornar a lista dos nós a serem exibidos; o caminho de pesquisa é definido como uma instância da Lista de produtos.
+Com o editor em massa, você pode adicionar, modificar, excluir, filtrar e exportar as linhas, salvar modificações e importar um conjunto de linhas. Cada linha é armazenada como um nó na própria instância do componente Lista do Produto. Cada célula é uma propriedade de cada nó. Esta é uma opção de design e pode ser facilmente alterada, por exemplo, você pode armazenar nós em outro lugar no repositório. A função do servlet do query é retornar a lista dos nós para exibição; o caminho de pesquisa é definido como uma instância de Lista do Produto.
 
-O código-fonte do componente Lista de produtos está disponível no repositório em /apps/geometrixx/components/productlist e é composto de várias partes, como todos os componentes do AEM:
+O código-fonte do componente Lista do produto está disponível no repositório em /apps/geometrixx/components/productlist e é composto de várias partes, como todos os componentes AEM:
 
-* Renderização HTML: a renderização é feita em um arquivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). O JSP lê os subnós do componente Lista de produtos atual e exibe cada um deles como uma linha de uma tabela HTML.
-* Caixa de diálogo Editar, que é onde você define a configuração do Editor em massa. Configure a caixa de diálogo para corresponder às necessidades do componente: colunas disponíveis e ações possíveis executadas na grade ou na pesquisa. Consulte as propriedades [de configuração do editor](#bulk-editor-configuration-properties) em massa para obter informações sobre todas as propriedades de configuração.
+* Renderização HTML: a renderização é feita em um arquivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). O JSP lê os subnós do componente Lista do produto atual e exibe cada um deles como uma linha de uma tabela HTML.
+* Caixa de diálogo Editar, que é onde você define a configuração do Editor em massa. Configure a caixa de diálogo para corresponder às necessidades do componente: colunas disponíveis e ações possíveis executadas na grade ou na pesquisa. Consulte [propriedades de configuração do editor em massa](#bulk-editor-configuration-properties) para obter informações sobre todas as propriedades de configuração.
 
 Esta é uma representação XML dos subnós da caixa de diálogo:
 
@@ -264,7 +267,7 @@ Esta é uma representação XML dos subnós da caixa de diálogo:
         </editor>
 ```
 
-### Propriedades de configuração do editor em massa {#bulk-editor-configuration-properties}
+### Propriedades de Configuração do Editor em Massa {#bulk-editor-configuration-properties}
 
 Todas as partes do editor em massa podem ser configuradas. A tabela a seguir lista todas as propriedades de configuração do editor em massa.
 
@@ -296,7 +299,7 @@ Todas as partes do editor em massa podem ser configuradas. A tabela a seguir lis
   </tr>
   <tr>
    <td>initialSearch</td>
-   <td>Verdadeiro para executar consulta no carregamento da página</td>
+   <td>Verdadeiro para executar query no carregamento da página</td>
   </tr>
   <tr>
    <td>colsSelection</td>
@@ -316,7 +319,7 @@ Todas as partes do editor em massa podem ser configuradas. A tabela a seguir lis
   </tr>
   <tr>
    <td>hideQueryParams</td>
-   <td>Ocultar campo de consulta</td>
+   <td>Ocultar campo query</td>
   </tr>
   <tr>
    <td>hideContentMode</td>
@@ -364,7 +367,7 @@ Todas as partes do editor em massa podem ser configuradas. A tabela a seguir lis
   </tr>
   <tr>
    <td>queryURL</td>
-   <td>Caminho para o servlet de consulta</td>
+   <td>Caminho para o servlet de query</td>
   </tr>
   <tr>
    <td>exportURL</td>
@@ -436,7 +439,7 @@ Todas as partes do editor em massa podem ser configuradas. A tabela a seguir lis
     <ul>
      <li>cellStyle: estilo html </li>
      <li>cellCls: classe css </li>
-     <li>readOnly: true para não poder alterar o valor </li>
+     <li>readOnly: true para não ser capaz de alterar o valor </li>
      <li>caixa de seleção: true para definir todas as células da coluna como caixas de seleção (valores true/false) </li>
      <li>forcedPosition: valor inteiro para especificar onde a coluna deve ser colocada na grade (entre 0 e número de colunas-1)<p><br /> </p> </li>
     </ul> </td>
@@ -457,7 +460,7 @@ Colunas CSS e somente leitura
 
 O editor em massa tem três configurações de coluna:
 
-* Nome da classe Cell CSS (cellCls): um nome de classe CSS adicionado a cada célula da coluna configurada.
+* Nome da classe Cell CSS (cellCls): um nome de classe CSS que é adicionado a cada célula da coluna configurada.
 * Estilo da célula (cellStyle): um estilo HTML que é adicionado a cada célula da coluna configurada.
 * Somente leitura (somente leitura): somente leitura está definida para cada célula da coluna configurada.
 
@@ -510,7 +513,7 @@ O exemplo a seguir pode ser encontrado no componente da lista de produtos (/apps
 
 **Caixa de seleção**
 
-Se a propriedade de configuração da caixa de seleção estiver definida como true, todas as células da coluna serão renderizadas como caixas de seleção. Uma caixa marcada envia **true** para o servidor Salvar servlet, caso contrário, **false** . No menu de cabeçalho, você também pode **selecionar tudo** ou **selecionar nenhum**. Essas opções serão ativadas se o cabeçalho selecionado for o cabeçalho de uma coluna de caixa de seleção.
+Se a propriedade de configuração da caixa de seleção estiver definida como true, todas as células da coluna serão renderizadas como caixas de seleção. Uma caixa marcada envia **true** para o servidor Salvar servlet, caso contrário, **false**. No menu de cabeçalho, você também pode **selecionar tudo** ou **selecionar nenhum**. Essas opções serão ativadas se o cabeçalho selecionado for o cabeçalho de uma coluna de caixa de seleção.
 
 No exemplo anterior, a coluna de seleção contém apenas caixas de seleção como caixa de seleção=&quot;true&quot;.
 
@@ -520,15 +523,15 @@ Os metadados de posição forçada forcedPosition permitem especificar onde a co
 
 No exemplo anterior, a coluna de seleção é a primeira coluna como forcedPosition=&quot;0&quot;.
 
-### Servlet de consulta {#query-servlet}
+### Servlet de query {#query-servlet}
 
-Por padrão, o Servlet de consulta pode ser encontrado em `/libs/wcm/core/components/bulkeditor/json.java`. Você pode configurar outro caminho para recuperar os dados.
+Por padrão, o servlet de Query pode ser encontrado em `/libs/wcm/core/components/bulkeditor/json.java`. Você pode configurar outro caminho para recuperar os dados.
 
-O servlet Query funciona da seguinte maneira: ele recebe uma consulta GQL e as colunas a serem retornadas, calcula os resultados e envia os resultados para o editor em massa como um fluxo JSON.
+O servlet do Query funciona da seguinte maneira: ele recebe um query GQL e as colunas a serem retornadas, calcula os resultados e envia os resultados de volta ao editor em massa como um fluxo JSON.
 
-No caso do componente Lista de produtos, os dois parâmetros enviados para o servlet Consulta são os seguintes:
+No caso do componente Lista do produto, os dois parâmetros enviados para o servlet do Query são os seguintes:
 
-* consulta: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
+* query: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cubo&quot;
 * cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 e o fluxo JSON retornado é o seguinte:
@@ -550,15 +553,15 @@ e o fluxo JSON retornado é o seguinte:
 
 Cada ocorrência corresponde a um nó e suas propriedades e é exibida como uma linha na grade.
 
-Você pode estender o servlet de Consulta para retornar um modelo de herança complexo ou nós de retorno armazenados em um local lógico específico. O servlet Query pode ser usado para fazer qualquer tipo de computação complexa. A grade pode então exibir linhas que são um agregado de vários nós no repositório. A modificação e o salvamento dessas linhas devem, nesse caso, ser gerenciados pelo Servlet Salvar.
+Você pode estender o servlet Query para retornar um modelo de herança complexo ou nós de retorno armazenados em um local lógico específico. O servlet do Query pode ser usado para fazer qualquer tipo de computação complexa. A grade pode então exibir linhas que são uma agregação de vários nós no repositório. A modificação e o salvamento dessas linhas devem, nesse caso, ser gerenciados pelo Servlet Salvar.
 
-### Salvar servlet {#save-servlet}
+### Salvar Servlet {#save-servlet}
 
-Na configuração padrão do editor em massa, cada linha é um nó e o caminho desse nó é armazenado no registro de linha. O editor em massa mantém o link entre a linha e o nó pelo caminho jcr. Quando um usuário edita a grade, uma lista de todas as modificações é criada. Quando um usuário clica em **Salvar**, uma consulta POST é enviada para cada caminho com os valores de propriedades atualizados. Esta é a base do conceito Sling e funciona bem se cada célula for uma propriedade do nó. Mas se o servlet de Consulta for implementado para realizar a computação de herança, esse modelo não poderá funcionar como uma propriedade retornada pelo servlet de Consulta pode ser herdada de outro nó.
+Na configuração padrão do editor em massa, cada linha é um nó e o caminho desse nó é armazenado no registro de linha. O editor em massa mantém o link entre a linha e o nó pelo caminho jcr. Quando um usuário edita a grade, uma lista de todas as modificações é criada. Quando um usuário clica em **Salvar**, um query POST é enviado para cada caminho com os valores de propriedades atualizados. Esta é a base do conceito Sling e funciona bem se cada célula for uma propriedade do nó. Mas se o servlet do Query for implementado para fazer a computação de herança, esse modelo não poderá funcionar como uma propriedade retornada pelo servlet do Query poderá ser herdada de outro nó.
 
 O conceito Salvar servlet é que as modificações não são publicadas diretamente em cada nó, mas são publicadas em um servlet que faz a tarefa de salvar. Isso dá a este servlet a possibilidade de analisar as modificações e salvar as propriedades no nó direito.
 
-Cada propriedade atualizada é enviada ao servlet no seguinte formato:
+Cada propriedade atualizada é enviada para o servlet no seguinte formato:
 
 * Nome do parâmetro: &lt;caminho jcr>/&lt;nome da propriedade>
 
@@ -570,6 +573,6 @@ Cada propriedade atualizada é enviada ao servlet no seguinte formato:
 
 O servlet precisa saber onde a propriedade CatalogCode é armazenada.
 
-Uma implementação padrão do servlet Salvar está disponível em /libs/wcm/bulkeditor/save/POST.jsp e é usada no componente Lista de produtos. Ele pega todos os parâmetros da solicitação (com um formato &lt;jcr path>/&lt;property name>) e grava propriedades em nós usando a API JCR. Ele também cria nó se eles não existirem (linhas inseridas na grade).
+Uma implementação padrão do servlet Save está disponível em /libs/wcm/bulkeditor/save/POST.jsp e é usada no componente Lista do produto. Ele pega todos os parâmetros da solicitação (com um formato &lt;jcr path>/&lt;property name>) e grava propriedades em nós usando a API JCR. Ele também cria nó se eles não existirem (linhas inseridas na grade).
 
-O código padrão não deve ser usado como está, pois reimplementa o que o servidor faz nativamente (um POST em &lt;caminho jcr>/&lt;nome da propriedade>) e, portanto, é apenas um bom ponto de partida para a criação de um servlet Save que gerenciará um modelo de herança de propriedade.
+O código padrão não deve ser usado como está, pois reimplementa o que o servidor faz nativamente (um POST no &lt;caminho do jcr>/&lt;nome da propriedade>) e, portanto, é apenas um bom ponto de partida para a criação de um servlet Save que gerenciará um modelo de herança de propriedade.
