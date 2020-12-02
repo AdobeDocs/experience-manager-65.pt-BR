@@ -20,13 +20,13 @@ Esta página apresenta uma lista de problemas conhecidos do Adobe Experience Man
 
 * Um problema é reportado onde o CRX-Quickstart e seu conteúdo são excluídos.
 
-   Em cada uma dessas ações, verifique se a propriedade não `htmllibmanager.fileSystemOutputCacheLocation` é uma string vazia:
+   Em cada uma dessas ações, verifique se a propriedade `htmllibmanager.fileSystemOutputCacheLocation` não é uma string vazia:
 
-   1. Ligando `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
+   1. Chamando `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Atualizando para AEM 6.5.
    3. Executando a &quot;migração de conteúdo lento&quot; no AEM 6.5.
 
-   Um artigo da [Base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) de conhecimento está disponível com mais detalhes e a solução alternativa para esse problema.
+   Um artigo [Knowledge Base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) está disponível com mais detalhes e a solução alternativa para esse problema.
 
 * Se você estiver usando o JDK 11 com a instância AEM 6.5, algumas páginas podem ser exibidas em branco após a implantação de alguns pacotes. A seguinte mensagem de erro é exibida no arquivo de log:
 
@@ -37,7 +37,7 @@ Esta página apresenta uma lista de problemas conhecidos do Adobe Experience Man
 
 Para resolver esse erro:
 
-1. Pare a instância AEM. Vá até `<aem_server_path_on_server>crx-quickstart\conf` e abra o `sling.properties` arquivo. O Adobe recomenda fazer um backup desse arquivo.
+1. Pare a instância AEM. Vá para `<aem_server_path_on_server>crx-quickstart\conf` e abra o arquivo `sling.properties`. O Adobe recomenda fazer um backup desse arquivo.
 
 1. Pesquisar `org.osgi.framework.bootdelegation=`. Adicione `jdk.internal.reflect,jdk.internal.reflect.*` propriedades para exibir o resultado como.
 
@@ -49,25 +49,25 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 ## Assets {#assets}
 
-* **Pesquisar:** A pesquisa não resultará em nenhum retorno se a string de pesquisa contiver espaços à esquerda ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
+* **Pesquisa:** a pesquisa não resultará em nenhum retorno se a string de pesquisa contiver espaços à esquerda ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Esquema de metadados de pasta**: depois de adicionar um botão de escolha, os campos ID e Valor não são renderizados como esperado e a funcionalidade de exclusão não funciona. (CQ-4261144)
 * Ao renomear um ativo, não é possível usar um espaço em branco no nome do ativo. (CQ-4266403)
 
 ## Forms {#forms}
 
-* Quando o AEM Forms é instalado no sistema operacional Linux, a Assinatura digital com módulo de segurança de hardware não funciona. (CQ-4266721)
-* (Formulários do AEM somente na WebSphere) A opção **Fluxo de trabalho de formulários** > **Pesquisa de tarefas** não retorna nenhum resultado se você pesquisar por um **Administrador** com o **nome de usuário** como o critério de pesquisa. (CQ-4266457)
+* Quando a AEM Forms está instalada no sistema operacional Linux, a Assinatura Digital com Módulo de Segurança de Hardware não funciona. (CQ-4266721)
+* (AEM Forms somente na WebSphere) A opção **Fluxo de trabalho de formulários** > **Pesquisa de tarefas** não retorna nenhum resultado se você pesquisar por um **Administrador** com o **nome de usuário** como o critério de pesquisa. (CQ-4266457)
 
-* O AEM Forms não converte arquivos TIF e TIFF com compactação JPEG em Documentos PDF. (CQ-4265972)
+* A AEM Forms não converte arquivos TIF e TIFF com compactação JPEG em Documentos PDF. (CQ-4265972)
 * As opções **Scanner de ativos do AEM Forms** e **Carta para migração de comunicação interativa** não funcionam na página **Migração do AEM Forms**. (CQ-4266572)
 
 * (Somente no JBoss 7) Quando você atualiza de uma versão anterior para o AEM 6.5 Forms e a versão anterior tinha processos (.lca) que criavam e usavam uma cópia do processo padrão de envio ou renderização padrão, o Forms HTML5 que utilizava esses processos (.lca) falha ao executar as ações necessárias. (CQ-4243928)
 * Em um formulário adaptável, quando um serviço de modelo de dados do formulário é chamado a partir do editor de regras para atualizar valores dinamicamente do componente de escolha de imagem, os valores do componente de escolha de imagem não são atualizados. (CQ-4254754)
-* AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/pt-br/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/pt-br/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Certifique-se de que os pacotes de tempo de execução redistribuíveis mencionados acima estão instalados antes de iniciar a instalação. (CQ-4265668)
+* O instalador do AEM Forms Designer requer a versão de 32 bits de [Pacote de tempo de execução redistribuível do Visual C++ 2012](https://support.microsoft.com/pt-br/help/2977003/the-latest-supported-visual-c-downloads) e [Pacotes de tempo de execução redistribuíveis do Visual C++ 2013](https://support.microsoft.com/pt-br/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Certifique-se de que os pacotes de tempo de execução redistribuíveis mencionados acima estão instalados antes de iniciar a instalação. (CQ-4265668)
 
-* O Gerador de PDF não suporta autenticação baseada em smart card.  Quando um administrador ativa a Política de grupo `Interactive Logon: Require Smart card` em um servidor Windows, todos os usuários existentes do Gerador de PDF são invalidados.
+* O Gerador de PDF não suporta autenticação baseada em smart card.  Quando um administrador ativa a Diretiva de grupo `Interactive Logon: Require Smart card` em um servidor Windows, todos os usuários existentes do Gerador de PDF são invalidados.
 
-* Quando um formulário adaptável é configurado para atualizar dinamicamente valores de um componente e a instância de publicação que hospeda o formulário é acessada por meio do distribuidor, a funcionalidade para atualizar dinamicamente os valores de um campo para de funcionar. To resolve the issue, on the publish instance, open CRXDE, navigate to `/libs/fd/af/runtime/clientlibs/guideChartReducer`, and create the property listed in below.
+* Quando um formulário adaptável é configurado para atualizar dinamicamente valores de um componente e a instância de publicação que hospeda o formulário é acessada por meio do distribuidor, a funcionalidade para atualizar dinamicamente os valores de um campo para de funcionar. Para resolver o problema, na instância de publicação, abra CRXDE, navegue até `/libs/fd/af/runtime/clientlibs/guideChartReducer` e crie a propriedade listada abaixo.
 
    * Nome: allowProxy
    * Tipo: booliano
@@ -79,4 +79,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
    A propriedade habilita as bibliotecas de clientes na pasta de tempo de execução para acessar proxies. (CQ-4268679)
 
-* Quando o AEM Forms for iniciado, o `SAX Security Manager could not be setup` aviso será exibido.
+* Quando o AEM Forms é iniciado, o aviso `SAX Security Manager could not be setup` é exibido.
