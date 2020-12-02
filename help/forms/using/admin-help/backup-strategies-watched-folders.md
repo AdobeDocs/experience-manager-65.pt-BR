@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '1122'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 Este conteúdo descreve como as pastas monitoradas são afetadas por diferentes cenários de backup e recuperação, as limitações e os resultados desses cenários e como minimizar a perda de dados.
 
-*A Pasta* assistida é um aplicativo baseado no sistema de arquivos que chama operações de serviço configuradas que manipulam o arquivo em uma das seguintes pastas na hierarquia de pastas monitoradas:
+*A* pasta assistida é um aplicativo baseado no sistema de arquivos que chama operações de serviço configuradas que manipulam o arquivo em uma das seguintes pastas na hierarquia de pastas monitoradas:
 
 * Entrada
 * Estágio
@@ -27,7 +30,7 @@ Este conteúdo descreve como as pastas monitoradas são afetadas por diferentes 
 * Falha
 * Preservar
 
-Primeiro, um usuário ou aplicativo cliente solta o arquivo ou pasta na pasta de entrada. A operação de serviço move o arquivo para a pasta de estágio para processamento. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado na pasta de saída. Os arquivos de origem processados com êxito são movidos para a pasta de preservação e os arquivos de processamento com falha são movidos para a pasta de falha. Quando o `Preserve On Failure` atributo da pasta monitorada está ativado, os arquivos de origem processados com falha são movidos para a pasta preserve. (Consulte [Configuração de pontos de extremidade](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)de pasta monitorados.)
+Primeiro, um usuário ou aplicativo cliente solta o arquivo ou pasta na pasta de entrada. A operação de serviço move o arquivo para a pasta de estágio para processamento. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado na pasta de saída. Os arquivos de origem processados com êxito são movidos para a pasta de preservação e os arquivos de processamento com falha são movidos para a pasta de falha. Quando o atributo `Preserve On Failure` da pasta assistida estiver ativado, os arquivos de origem processados com falha serão movidos para a pasta preserve. (Consulte [Configuração de pontos finais de pastas observados](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
 
 É possível fazer backup das pastas monitoradas fazendo backup do sistema de arquivos.
 
@@ -37,7 +40,7 @@ Primeiro, um usuário ou aplicativo cliente solta o arquivo ou pasta na pasta de
 
 ## Como as pastas monitoradas funcionam {#how-watched-folders-work}
 
-Este conteúdo descreve o processo de manipulação de arquivos de pastas monitoradas. É importante compreender este processo antes de desenvolver um plano de recuperação. Neste exemplo, o `Preserve On Failure` atributo da pasta assistida está ativado. Os arquivos são processados na ordem em que chegam.
+Este conteúdo descreve o processo de manipulação de arquivos de pastas monitoradas. É importante compreender este processo antes de desenvolver um plano de recuperação. Neste exemplo, o atributo `Preserve On Failure` da pasta assistida está ativado. Os arquivos são processados na ordem em que chegam.
 
 A tabela a seguir descreve a manipulação de arquivo de cinco arquivos de amostra (arquivo1, arquivo2, arquivo3, arquivo4, arquivo5) durante todo o processo. Na tabela, o eixo x representa o tempo, como Tempo 1 ou T1, e o eixo y representa pastas dentro da hierarquia de pastas monitoradas, como Entrada.
 
@@ -60,20 +63,20 @@ A tabela a seguir descreve a manipulação de arquivo de cinco arquivos de amost
    <td><p>arquivo1, arquivo2, arquivo3, arquivo4</p></td>
    <td><p>arquivo2, arquivo3, arquivo4</p></td>
    <td><p>arquivo3, arquivo4</p></td>
-   <td><p>file4</p></td>
+   <td><p>arquivo4</p></td>
    <td><p>empty</p></td>
-   <td><p>file5</p></td>
+   <td><p>arquivo5</p></td>
    <td><p>empty</p></td>
   </tr>
   <tr>
    <td><p>Estágio</p></td>
    <td><p>empty</p></td>
-   <td><p>file1</p></td>
-   <td><p>file2</p></td>
-   <td><p>file3</p></td>
-   <td><p>file4</p></td>
+   <td><p>arquivo1</p></td>
+   <td><p>arquivo2</p></td>
+   <td><p>arquivo3</p></td>
+   <td><p>arquivo4</p></td>
    <td><p>empty</p></td>
-   <td><p>file5</p></td>
+   <td><p>arquivo5</p></td>
   </tr>
   <tr>
    <td><p>Saída</p></td>
@@ -99,7 +102,7 @@ A tabela a seguir descreve a manipulação de arquivo de cinco arquivos de amost
    <td><p>Preservar</p></td>
    <td><p>empty</p></td>
    <td><p>empty</p></td>
-   <td><p>file1 </p></td>
+   <td><p>arquivo1 </p></td>
    <td><p>arquivo1, arquivo2 </p></td>
    <td><p>arquivo1, arquivo2 </p></td>
    <td><p>arquivo1, arquivo2, arquivo4 </p></td>
@@ -136,13 +139,13 @@ Por exemplo, se um backup for feito no momento T1 e o servidor falhar no T7, o a
 
 Se um backup mais recente for realizado, você poderá restaurar os arquivos. Ao restaurar os arquivos, considere qual pasta de hierarquia de pastas assistida o arquivo atual reside em:
 
-**Fase:** Os arquivos desta pasta são processados novamente depois que a pasta assistida é restaurada.
+**Palco:** os arquivos desta pasta são processados novamente depois que a pasta assistida é restaurada.
 
-**Entrada:** Os arquivos desta pasta são processados novamente depois que a pasta assistida é restaurada.
+**Entrada:** os arquivos desta pasta são processados novamente depois que a pasta assistida é restaurada.
 
-**Resultado:** Os arquivos desta pasta não são processados.
+**Resultado:** os arquivos desta pasta não são processados.
 
-**Saída:** Os arquivos desta pasta não são processados.
+**Saída:** os arquivos desta pasta não são processados.
 
 **Preservar:** Os arquivos desta pasta não são processados.
 
@@ -153,16 +156,17 @@ As estratégias a seguir podem minimizar a perda de dados da pasta de entrada e 
 * Faça backup das pastas de saída e falha com frequência, como por hora, para evitar a perda de arquivos de resultado e falha.
 * Faça backup dos arquivos de entrada em uma pasta que não seja a assistida. Isso garante a disponibilidade do arquivo após a recuperação, caso não seja possível localizar os arquivos na pasta de saída ou de falha. Certifique-se de que seu esquema de nomenclatura de arquivos seja consistente.
 
-   Por exemplo, se você estiver salvando a saída com a `%F.`*extensão *, o arquivo de saída terá o mesmo nome do arquivo de entrada. Isso ajuda a determinar quais arquivos de entrada são manipulados e quais devem ser reenviados. Se você vir apenas o arquivo file1_out na pasta de resultados e não o arquivo2_out, o arquivo3_out e o arquivo4_out, é necessário reenviar o arquivo2, o arquivo3 e o arquivo4.
+   Por exemplo, se você estiver salvando a saída com `%F.`*extension*, o arquivo de saída terá o mesmo nome que o arquivo de entrada. Isso ajuda a determinar quais arquivos de entrada são manipulados e quais devem ser reenviados. Se você vir apenas o arquivo file1_out na pasta de resultados e não o arquivo2_out, o arquivo3_out e o arquivo4_out, é necessário reenviar o arquivo2, o arquivo3 e o arquivo4.
 
 * Se o backup de pasta monitorada que está disponível for anterior ao tempo necessário para processar o trabalho, você deverá permitir que o sistema crie uma nova pasta monitorada e coloque automaticamente os arquivos na pasta de entrada.
 * Se o backup disponível mais recente não for recente o suficiente, o tempo de backup será menor do que o tempo necessário para processar os arquivos e a pasta monitorada será restaurada, o arquivo será manipulado em um dos seguintes estágios diferentes:
 
-   * **Fase 1:** Na pasta de entrada
-   * **Fase 2:** Copiado para a pasta de estágio, mas o processo ainda não foi chamado
-   * **Fase 3:** Copiado para a pasta de estágio e o processo é chamado
-   * **Fase 4:** Manipulação em andamento
-   * **Fase 5:** Resultados retornados
+   * **Etapa 1:** Na pasta de entrada
+   * **Etapa 2:** copiado para a pasta stage, mas o processo ainda não foi chamado
+   * **Etapa 3:** Copiado para a pasta stage e o processo é chamado
+   * **Etapa 4:** Manipulação em andamento
+   * **Etapa 5:** Resultados retornados
+
    Se os arquivos estiverem no Estágio 1, eles serão manipulados. Se os arquivos estiverem no Estágio 2 ou 3, coloque-os na pasta de entrada para que a manipulação ocorra novamente.
 
    >[!NOTE]
