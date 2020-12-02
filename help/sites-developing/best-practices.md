@@ -1,8 +1,8 @@
 ---
-title: 'Práticas recomendadas  '
-seo-title: 'Práticas recomendadas  '
-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
-seo-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
+title: 'Práticas recomendadas    '
+seo-title: 'Práticas recomendadas    '
+description: As equipes de engenharia e consultoria de Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM
+seo-description: As equipes de engenharia e consultoria de Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,20 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 12%
 
 ---
 
 
-# Práticas recomendadas  {#best-practices}
+# Práticas recomendadas    {#best-practices}
 
 ## Práticas recomendadas para desenvolvedores - Introdução {#best-practices-for-developers-getting-started}
 
-As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM. Os desenvolvedores da Adobe seguem essas práticas recomendadas ao desenvolver atualizações de produtos AEM e código do cliente para implementações de clientes.
+As equipes de engenharia e consultoria de Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM. Os desenvolvedores do Adobe seguem essas práticas recomendadas, pois desenvolvem as principais atualizações de produtos AEM e o código do cliente para implementações de clientes.
 
-Antes de start de seu projeto de desenvolvimento do AEM, analise primeiro essas práticas recomendadas:
+Antes de start de seu projeto de desenvolvimento de AEM, analise primeiro essas práticas recomendadas:
 
 * [Práticas de desenvolvimento](/help/sites-developing/development-practices.md)
 * [Arquitetura de conteúdo](/help/sites-developing/content-architecture.md)
@@ -72,33 +75,33 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
   <tr>
    <td>Fluxos de trabalhos</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de Workflows</a></td>
-   <td><p>Os Workflows permitem que você automatize as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de workflows com cuidado.</p> </td>
+   <td><p>Os workflows permitem que você automatize as atividades Adobe Experience Manager (AEM) e podem representar uma grande quantidade de processamento que ocorre em um ambiente AEM, portanto, é altamente recomendável planejar suas implementações de workflows com cuidado.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Communities {#communities}
 
-[O AEM Communities](/help/communities/overview.md) simplifica a criação e o gerenciamento de comunidades locais.
+[AEM ](/help/communities/overview.md) Comunidades simplifica a criação e a gestão de comunidades locais.
 
 Algumas práticas recomendadas para Comunidades são descritas aqui:
 
 |  |  |  |
 |---|---|---|
-| Práticas recomendadas para trabalhar com conteúdo gerado pelo usuário (UGC) | [Diretrizes de codificação](/help/communities/code-guide.md) | Orientações para o desenvolvimento de códigos flexíveis e portáteis para o quadro [de componentes](/help/communities/scf.md) sociais (SCF). |
+| Práticas recomendadas para trabalhar com conteúdo gerado pelo usuário (UGC) | [Diretrizes de codificação](/help/communities/code-guide.md) | Diretrizes para desenvolver código flexível e portátil para a [estrutura de componente social](/help/communities/scf.md) (SCF). |
 | Exemplo de uso de componentes de Comunidades | [Guia de componentes da comunidade](/help/communities/components-guide.md) | Uma ferramenta interativa de desenvolvimento. |
 
-## Ferramenta/HTL {#tooling-htl}
+## Ferramentas/HTL {#tooling-htl}
 
-A Linguagem de modelo HTML (HTL) é um novo sistema de modelo HTML, introduzido com o AEM 6.0. Substitui o JSP e o ESP como o sistema de modelo preferencial do AEM.
+A Linguagem de modelo HTML (HTL) é um novo sistema de modelo HTML, introduzido com AEM 6.0. Substitui o JSP e o ESP como o sistema de modelo preferencial da AEM.
 
 |  |  |  |
 |---|---|---|
-| Visão geral do HTL | [Visão geral e sintaxe HTL](https://docs.adobe.com/content/help/br/experience-manager-htl/using/overview.html) | Este documento descreve o que é HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e declarações |
+| Visão geral do HTL | [Visão geral e sintaxe HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html) | Este documento descreve o que é HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e declarações |
 | Uso da API no java | [API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | A HTL Java Use-API permite que um arquivo HTL acesse métodos auxiliares em uma classe Java personalizada. |
 
 >[!NOTE]
 >
->O tutorial de várias partes a seguir pode ser de interesse para a prática recomendada de configurar um novo projeto AEM, detalhando os componentes principais, modelos editáveis, bibliotecas de clientes e desenvolvimento de componentes:
->[Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>O tutorial de várias partes a seguir pode ser de interesse para a prática recomendada de configurar um novo projeto de AEM, detalhando os Componentes principais, Modelos editáveis, Bibliotecas do cliente e desenvolvimento de componentes:
+>[Introdução ao AEM Sites - Tutorial do WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
