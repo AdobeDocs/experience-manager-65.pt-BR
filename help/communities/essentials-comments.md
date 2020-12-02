@@ -24,7 +24,7 @@ Esta página fornece os fundamentos de trabalhar com o sistema de comentários (
 
 O componente comments estabelece um sistema de comentários de forma que cada publicação seja representada por um componente de comentário (singular). É o sistema de comentários incluído na página. O sistema de comentários criará os comentários individuais quando chamados.
 
-## Essenciais para o lado do cliente {#essentials-for-client-side}
+## Essentials for Client-Side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -34,7 +34,7 @@ O componente comments estabelece um sistema de comentários de forma que cada pu
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusivo</strong></a></td>
-   <td>Sim - as propriedades são editáveis no <i>modo </i>de design</td>
+   <td>Sim - as propriedades são editáveis no modo <i>design </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -50,7 +50,7 @@ O componente comments estabelece um sistema de comentários de forma que cada pu
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td> Consulte <a href="comments.md">Uso de comentários</a></td>
+   <td> Consulte <a href="comments.md">Usando Comentários</a></td>
   </tr>
  </tbody>
 </table>
@@ -78,7 +78,7 @@ A lista do motivo de sinalização pode ser personalizada adicionando flagrazoav
 
 Isso se aplica a qualquer componente que estende um sistema de comentários.
 
-## Fundamentos para servidor {#essentials-for-server-side}
+## Essentials for Server-Side {#essentials-for-server-side}
 
 * [API de comentários](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
@@ -89,16 +89,16 @@ Isso se aplica a qualquer componente que estende um sistema de comentários.
 ### Acessar Comentários Publicados (UGC) {#accessing-posted-comments-ugc}
 
 O UGC deve ser moderado usando um dos métodos padrão de moderação.
-Consulte [Moderação de conteúdo](moderate-ugc.md)gerado pelo usuário.
+Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir das comunidades do AEM 6.1, o uso de uma loja [](working-with-srp.md) comum para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir AEM Comunidades 6.1, o uso de uma [loja comum](working-with-srp.md) para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
 
 Consulte:
 
-* [Visão geral](srp.md) do provedor de recursos do Armazenamento - Introdução e visão geral de uso do repositório.
-* [SRP e UGC Essentials](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração](socialutils.md) SocialUtils - mapeamento de métodos de utilitários obsoletos para métodos de utilitários SRP atuais.
+* [Visão geral](srp.md)  do provedor de recursos do armazenamento - Introdução e visão geral do uso do repositório.
+* [SRP e UGC Essentials](srp-and-ugc.md)  - métodos e exemplos de utilitários SRP.
+* [Acesso ao UGC com diretrizes de codificação SRP](accessing-ugc-with-srp.md) .
+* [Refatoração](socialutils.md)  do SocialUtils - mapeamento de métodos de utilitário obsoletos para os métodos atuais do utilitário SRP.
 
