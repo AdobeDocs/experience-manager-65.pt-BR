@@ -16,14 +16,14 @@ ht-degree: 3%
 ---
 
 
-# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
+# Publicando ativos de mídia dinâmica {#publishing-dynamic-media-assets}
 
-Você publica seus ativos de Mídia dinâmica selecionando os ativos que já carregou e tocando em **[!UICONTROL Publicar]** ou Publicar **[!UICONTROL rapidamente.]** Depois que seus ativos de Mídia dinâmica forem publicados, eles estarão disponíveis para você incluir em uma página da Web por meio de um URL ou da incorporação do código na página.
+Você publica seus ativos de Mídia dinâmica selecionando os ativos que já carregou e tocando em **[!UICONTROL Publicar]** ou **[!UICONTROL Publicação rápida.]** Depois que seus ativos de Mídia dinâmica forem publicados, eles estarão disponíveis para você incluir em uma página da Web por meio de um URL ou da incorporação do código na página.
 
-Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. Consulte [Configuração do Dynamic Media - Modo Scene7.](config-dms7.md)
-Ou você pode publicar seletivamente ativos no Dynamic Media ou AEM, mutuamente exclusivos entre si, usando Publicação **** seletiva no nível da pasta. See [Working with Selective Publish in Dynamic Media.](/help/assets/selective-publishing.md)
+Você também pode publicar instantaneamente ativos que você carrega, sem nenhuma intervenção do usuário. Consulte [Configuração de Dynamic Media - Modo Scene7.](config-dms7.md)
+Ou você pode publicar seletivamente ativos no Dynamic Media ou AEM, mutuamente exclusivos entre si, usando  **[!UICONTROL Publicação seletiva no]** nível de pasta. Consulte [Trabalhando com publicação seletiva no Dynamic Media.](/help/assets/selective-publishing.md)
 
-Na Visualização **[!UICONTROL de]** cartão, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda da data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
+Na **[!UICONTROL Visualização de cartão]**, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda da data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ Na Visualização **[!UICONTROL de]** cartão, um pequeno ícone de globo aparec
 
 Se você pretende publicar ativos de vídeo imediatamente após a codificação, certifique-se de que a codificação esteja concluída. Quando os vídeos ainda estão sendo codificados, o sistema permite que você saiba que um fluxo de trabalho de processamento de vídeo está em andamento. Quando a codificação de vídeo estiver concluída, você poderá pré-visualização as execuções de vídeo. Nesse ponto, é seguro publicar os vídeos sem incorrer em erros de publicação.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+Consulte também [Vincular URLs à sua Aplicação web](linking-urls-to-yourwebapplication.md).
 
-See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed-code.md)
+Consulte também [Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web](embed-code.md)
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 
 
-Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicação de ativos.](manage-assets.md)
+Para obter informações detalhadas sobre como publicar um conjunto ou ativo, consulte [Publicar ativos.](manage-assets.md)
 
 ## DELIVERY HTTP/2 de ativos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
 AEM agora suporta o delivery de todo o conteúdo de Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou um código incorporado para a imagem ou o vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Este método de delivery melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos de Dynamic Media.
 
-Consulte Perguntas frequentes sobre o delivery [HTTP/2 sobre conteúdo](/help/sites-administering/scene7-http2faq.md) para saber mais.
+Consulte [delivery HTTP/2 de conteúdo com perguntas frequentes](/help/sites-administering/scene7-http2faq.md) para saber mais.
