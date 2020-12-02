@@ -15,7 +15,7 @@ ht-degree: 8%
 
 A Adobe Experience Manager Fluid Experiences utiliza os poderosos conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para o delivery de conteúdo sem cabeçalho.
 
-AEM Experiências fluidas se diferenciam dos AEM clássicos, já que somente o caso de uso do delivery sem cabeçalho é abordado. A criação e o delivery de conteúdo intenso e o suporte AEM para casos de uso híbrido estão disponíveis com as soluções [completas de AEM Sites, Assets e Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Experiências fluidas se diferenciam dos AEM clássicos, já que somente o caso de uso do delivery sem cabeçalho é abordado. A criação de conteúdo dedicado e o delivery e o suporte AEM para casos de uso híbrido estão disponíveis com as [soluções completas de AEM Sites, Assets e Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 As tabelas a seguir definem os recursos de AEM experiências fluidas e vinculam-se à documentação de suporte relevante.
 
@@ -37,7 +37,7 @@ As tabelas a seguir definem os recursos de AEM experiências fluidas e vinculam-
 | [Representações de imagem](/help/assets/image-presets.md) |
 | [Metadados e gerenciamento de tags](/help/assets/metadata.md) |
 | [Pesquisar](/help/assets/manage-assets.md) |
-| [Coleções](/help/assets/manage-assets.md) e [lightbox](/help/assets/light-box.md) |
+| [](/help/assets/manage-assets.md) Coleções e  [lightbox](/help/assets/light-box.md) |
 | [Perfis](/help/assets/processing-profiles.md) |
 | [Controle de versão](/help/assets/manage-assets.md) |
 | [detecção de duplicados](/help/assets/duplicate-detection.md) |
