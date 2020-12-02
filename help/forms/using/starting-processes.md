@@ -1,8 +1,8 @@
 ---
 title: Iniciando processos
 seo-title: Iniciando processos
-description: 'Como usar a área de trabalho do LiveCycle AEM Forms: selecionar processos, adicionar notas e anexos, salvar cópias de rascunho e adicionar aos favoritos.'
-seo-description: 'Como usar a área de trabalho do LiveCycle AEM Forms: selecionar processos, adicionar notas e anexos, salvar cópias de rascunho e adicionar aos favoritos.'
+description: Como usar a área de trabalho do LiveCycle AEM Forms — selecione processos, adicione notas e anexos, salve cópias de rascunho e adicione aos favoritos.
+seo-description: Como usar a área de trabalho do LiveCycle AEM Forms — selecione processos, adicione notas e anexos, salve cópias de rascunho e adicione aos favoritos.
 uuid: a61da785-25b4-4482-bd72-02e250d35dc7
 contentOwner: robhagat
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1364'
+ht-degree: 0%
 
 ---
 
 
 # Iniciando processos {#starting-processes}
 
-A área de trabalho do AEM Forms organiza processos pelas categorias que o administrador ou o designer de processos configura. Também é possível colocar processos que você usa com frequência em sua categoria Favoritos para localizá-los rapidamente.
+A área de trabalho da AEM Forms organiza processos pelas categorias configuradas pelo administrador ou pelo designer de processos. Também é possível colocar processos que você usa com frequência em sua categoria Favoritos para localizá-los rapidamente.
 
-Ao start de um processo, talvez seja necessário preencher um formulário para start de um processo de negócios que o fluxo de trabalho do AEM Forms controla. Se um formulário usar o Processo de preparação de dados, algumas informações poderão ser preenchidas previamente em um formulário em branco, quando um novo processo for iniciado.
+Ao start de um processo, talvez seja necessário preencher um formulário para start de um processo de negócios controlado pelo fluxo de trabalho da AEM Forms. Se um formulário usar o Processo de preparação de dados, algumas informações poderão ser preenchidas previamente em um formulário em branco, quando um novo processo for iniciado.
 
-Por exemplo, você deseja comprar um novo monitor de computador e, portanto, start um processo chamado Pedido *de compra*. Quando você start o processo, um formulário é aberto e solicita detalhes sobre o item a ser solicitado. Seu nome, o número do funcionário e o nome do gerente já podem ser pré-preenchidos no formulário. Quando você submete a solicitação, um processo de negócios é iniciado. Com base na definição do processo, o servidor automaticamente encaminha a solicitação para o seu gerente. Os start de tarefa que aparecem na lista de tarefas do seu gerente. Quando o gerente aprova a solicitação, o fluxo de trabalho dos formulários encaminha a solicitação para o departamento de compras e envia uma notificação por email.
+Por exemplo, você deseja comprar um novo monitor de computador e, portanto, start um processo chamado *Pedido de compra*. Quando você start o processo, um formulário é aberto e solicita detalhes sobre o item a ser solicitado. Seu nome, o número do funcionário e o nome do gerente já podem ser pré-preenchidos no formulário. Quando você submete a solicitação, um processo de negócios é iniciado. Com base na definição do processo, o servidor automaticamente encaminha a solicitação para o seu gerente. Os start de tarefa que aparecem na lista de tarefas do seu gerente. Quando o gerente aprova a solicitação, o fluxo de trabalho dos formulários encaminha a solicitação para o departamento de compras e envia uma notificação por email.
 
 ## Selecionar processos para start {#selecting-processes-to-start}
 
@@ -29,11 +32,11 @@ Você pode selecionar um processo para start ou para visualização de mais info
 
 Ao selecionar um processo a ser start, talvez seja necessário preencher um formulário associado a esse processo. Enviar o formulário start o processo.
 
-Os formulários em vários tipos de formatos de arquivo são suportados, incluindo Adobe PDF, HTML e arquivo SWF. Um formulário pode se parecer com um formulário tradicional impresso ou baseado na Web ou pode orientá-lo por uma série de painéis no estilo assistente para coletar informações.
+Há suporte para o Forms em vários tipos de formatos de arquivo, incluindo Adobe PDF, HTML e arquivo SWF. Um formulário pode se parecer com um formulário tradicional impresso ou baseado na Web ou pode orientá-lo por uma série de painéis no estilo assistente para coletar informações.
 
 Se o formulário e o processo permitirem, você também poderá salvar o formulário off-line, preenchê-lo e enviá-lo para completar a tarefa. Quando o formulário for enviado, seu cliente de e-mail será iniciado com o endereço de e-mail do servidor apropriado, se o ponto final do e-mail estiver configurado. Em seguida, é possível enviar o formulário preenchido para o servidor por email.
 
-Quando um processo é selecionado, as guias Formulário e Detalhes são exibidas. Se o processo permitir que você adicione notas ou anexos, a guia Anexos e a guia Notas também serão exibidas. Se você também tiver configurado o url de resumo com o processo, a guia Resumo também será exibida. A guia Formulários exibe o formulário associado e a guia Detalhes exibe informações sobre a tarefa atual e o processo do qual ela faz parte.
+Quando um processo é selecionado, as guias Formulário e Detalhes são exibidas. Se o processo permitir que você adicione notas ou anexos, a guia Anexos e a guia Notas também serão exibidas. Se você também tiver configurado o url de resumo com o processo, a guia Resumo também será exibida. A guia Forms exibe o formulário associado e a guia Detalhes exibe informações sobre a tarefa atual e o processo do qual ela faz parte.
 
 ### Start de um processo de negócios {#start-a-business-process}
 
@@ -41,7 +44,7 @@ Quando um processo é selecionado, as guias Formulário e Detalhes são exibidas
 
    >[!NOTE]
    >
-   >Se o painel Categoria for recolhido, clique em &#39;Abrir Categoria&#39;, na área superior esquerda da área de trabalho do AEM Forms, para abrir o painel.
+   >Se o painel do Categoria for recolhido, clique em &#39;Abrir Categoria&#39;, na área superior esquerda do espaço de trabalho do AEM Forms, para abrir o painel.
 
 1. Selecione um processo clicando em uma tarefa. O formulário associado ao processo é aberto na guia Formulário.
 
@@ -54,13 +57,14 @@ Quando um processo é selecionado, as guias Formulário e Detalhes são exibidas
 
    * Clique no botão Enviar no formulário, se o formulário tiver um botão Enviar.
    * Clique em Concluir abaixo do formulário se o formulário não tiver um botão Enviar.
+
    O Process Management start o processo e encaminha o formulário para as listas de tarefas das pessoas apropriadas que precisam concluir a próxima tarefa no processo.
 
-   Se você precisar fechar um formulário antes de enviá-lo e sem perder os dados inseridos, salve um rascunho e preencha-o posteriormente, se o processo permitir. Se o formulário e o processo permitirem, você também pode clicar em **Off-line** e enviá-lo posteriormente do Adobe® Reader® ou Adobe® Acrobat® Professional ou Acrobat Standard.
+   Se você precisar fechar um formulário antes de enviá-lo e sem perder os dados inseridos, salve um rascunho e preencha-o posteriormente, se o processo permitir. Se o formulário e o processo permitirem, você também pode clicar em **Offline** e enviá-lo posteriormente do Adobe® Reader® ou Adobe® Acrobat® Professional ou Acrobat Standard.
 
    >[!NOTE]
    >
-   >A opção offline está disponível somente para formulários PDF.
+   >A opção offline está disponível somente para PDF forms.
 
 ## Adicionar notas e anexos {#adding-notes-and-attachments}
 
@@ -76,10 +80,10 @@ Quando um processo é selecionado, as guias Formulário e Detalhes são exibidas
 * Leitura/exclusão
 * Sem acesso
 
-1. Abra uma tarefa e clique na guia **Notas** , se o processo permitir.
-1. Digite um título para a nota na caixa **Título** e digite o texto da nota na caixa **Nota** .
-1. Selecione o nível de **Permissões** para a observação para outros usuários que participam do processo.
-1. Clique em **OK**. Um arquivo de texto que contém sua nota é anexado ao formulário. Você pode atualizar uma nota clicando nela e modificando diretamente o texto. Você pode excluir uma nota clicando no botão **Excluir** ![Imagem de uma lixeira ao lado da nota](assets/icondelete.png) .
+1. Abra uma tarefa e clique na guia **Notas**, se o processo permitir.
+1. Digite um título para a nota na caixa **Título** e digite o texto da nota na caixa **Nota**.
+1. Selecione o nível **Permissões** para a observação para outros usuários que participam do processo.
+1. Clique em **OK**. Um arquivo de texto que contém sua nota é anexado ao formulário. Você pode atualizar uma nota clicando nela e modificando diretamente o texto. Você pode excluir uma nota clicando no botão **Excluir** ![Imagem de uma lixeira pode](assets/icondelete.png) ao lado da nota.
 
 ### Adicionar um anexo {#add-an-attachment}
 
@@ -92,9 +96,9 @@ Você também pode adicionar seus comentários sobre o anexo. Você pode definir
 * Sem acesso
 
 1. Clique na guia **Anexos** e selecione **Anexo**.
-1. Clique em **Procurar** para selecionar o arquivo a ser anexado.
-1. Selecione o nível de **Permissões** para o anexo para outros usuários que participam do processo. Se você selecionar **Ler**, outros usuários poderão salvar o arquivo localmente. Se você selecionar uma das permissões de edição, outros usuários também poderão carregar um novo arquivo para substituir seu anexo.
-1. Clique em **OK**. O arquivo é anexado ao formulário. Você pode excluir um arquivo clicando no botão **Excluir** ![Imagem de uma lixeira ao lado do anexo](assets/icondelete.png) .
+1. Clique em **Procurar** para selecionar o ficheiro a anexar.
+1. Selecione o nível **Permissões** para o anexo para outros usuários que participam do processo. Se você selecionar **Ler**, outros usuários poderão salvar o arquivo localmente. Se você selecionar uma das permissões de edição, outros usuários também poderão carregar um novo arquivo para substituir seu anexo.
+1. Clique em **OK**. O arquivo é anexado ao formulário. Você pode excluir um arquivo clicando no botão **Excluir** ![Imagem de uma lixeira pode](assets/icondelete.png) ao lado do anexo.
 
 ## Salvar cópias de rascunho de formulários {#saving-draft-copies-of-forms}
 
@@ -102,7 +106,7 @@ Se for necessário preencher e enviar um formulário posteriormente, é possíve
 
 Após reabrir e enviar um formulário de rascunho, ele será removido da categoria Rascunhos.
 
-Além disso, você pode configurar o espaço de trabalho para salvar automaticamente as informações inseridas por um usuário como rascunho. Para obter mais informações, consulte [Gerenciamento de preferências](/help/forms/using/getting-started-livecycle-html-workspace.md).
+Além disso, você pode configurar o espaço de trabalho para salvar automaticamente as informações inseridas por um usuário como rascunho. Para obter mais informações, consulte [Gerenciando preferências](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 >[!NOTE]
 >
@@ -114,7 +118,7 @@ Além disso, você pode configurar o espaço de trabalho para salvar automaticam
 
 ### Reabrir uma cópia de rascunho {#reopen-a-draft-copy}
 
-1. Na página A fazer, selecione a fila **Rascunhos** e clique na cópia de rascunho do formulário.
+1. Na página Tarefas pendentes, selecione a fila **Rascunhos** e clique na cópia de rascunho do formulário.
 
    Se o formulário contiver uma série de painéis, talvez seja necessário ir para o painel onde terminou a última sessão.
 
@@ -124,6 +128,6 @@ Você pode adicionar qualquer processo à sua categoria Favoritos. Ao configurar
 
 >[!NOTE]
 >
->Se você costuma processar o start ao usar a área de trabalho do AEM Forms, é possível definir a preferência Local do Start para exibir automaticamente a categoria Favoritos ao start da área de trabalho do AEM Forms. Para obter mais detalhes, consulte Gerenciar preferências em [Introdução à área de trabalho](/help/forms/using/getting-started-livecycle-html-workspace.md)do AEM Forms.
+>Se você costuma processar o start ao usar a área de trabalho do AEM Forms, é possível definir a preferência Local do Start para exibir automaticamente a categoria Favoritos ao start da área de trabalho do AEM Forms. Para obter mais detalhes, consulte Gerenciamento de preferências em [Introdução ao espaço de trabalho AEM Forms](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Para marcar um processo como favorito, selecione a tarefa na categoria e clique na estrela vazia. A estrela fica dourada. Para desmarcar um processo como favorito, clique na estrela dourada novamente.
