@@ -12,33 +12,36 @@ discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 0%
 
 ---
 
 
 # SSL por padrão{#ssl-by-default}
 
-Em um esforço para melhorar continuamente a segurança do AEM, a Adobe introduziu um recurso chamado SSL por padrão. O objetivo é incentivar o uso de HTTPS para se conectar às instâncias do AEM.
+Em um esforço para melhorar continuamente a segurança do AEM, o Adobe introduziu um recurso chamado SSL por padrão. O objetivo é incentivar o uso de HTTPS para se conectar a instâncias AEM.
 
-## Ativar SSL por padrão {#enabling-ssl-by-default}
+## Habilitando SSL por padrão {#enabling-ssl-by-default}
 
-Você pode começar a configurar SSL por padrão clicando na mensagem Caixa de entrada relevante em sua tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone do sino no canto superior direito da tela. Em seguida, clique em **Exibir tudo**. Isso exibirá uma lista de todos os alertas solicitados em uma exibição de lista.
+Você pode fazer start para configurar o SSL por padrão clicando na mensagem Caixa de entrada relevante na tela inicial AEM. Para acessar a Caixa de entrada, pressione o ícone do sino no canto superior direito da tela. Em seguida, clique em **Visualização All**. Isso exibirá uma lista de todos os alertas solicitados em uma visualização de lista.
 
-Na lista, selecione e abra o alerta **Configurar HTTPS** :
+Na lista, selecione e abra o alerta **Configurar HTTPS**:
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->Se o alerta **Configurar HTTPS** não estiver presente na Caixa de entrada, você pode navegar diretamente para o Assistente HTTPS indo para *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Se o alerta **Configure HTTPS** não estiver presente na Caixa de entrada, você pode navegar diretamente para o Assistente HTTPS indo para *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
 Um usuário de serviço chamado **ssl-service** foi criado para esse recurso. Depois de abrir o alerta, você será guiado pelo seguinte assistente de configuração:
 
-1. Primeiro, configure as Credenciais da Loja. Essas são as credenciais do armazenamento de chave do usuário do sistema **ssl-service** que conterão a chave privada e o armazenamento de confiança do ouvinte HTTPS.
+1. Primeiro, configure as Credenciais da Loja. Essas são as credenciais para o armazenamento de chave do usuário do sistema **ssl-service** que conterá a chave privada e o armazenamento de confiança do ouvinte HTTPS.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Depois de inserir as credenciais, clique em **Avançar** no canto superior direito da página. Em seguida, carregue a chave privada e o certificado associados para a conexão SSL.
+1. Depois de inserir as credenciais, clique em **Próximo** no canto superior direito da página. Em seguida, carregue a chave privada e o certificado associados para a conexão SSL.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -62,7 +65,7 @@ O primeiro método envolve a publicação no servidor SSLSetup que está sendo u
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Você pode usar a seguinte carga no POST para automatizar a configuração:
+Você pode usar a seguinte carga no seu POST para automatizar a configuração:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -95,7 +98,7 @@ O servlet, como qualquer servlet POST sling, responderá com 200 OK ou um códig
 
 Veja a seguir exemplos de uma resposta bem-sucedida e um erro.
 
-**EXEMPLO** DE SUCESSO (status = 200):
+**EXEMPLO**  DE SUCESSO (status = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -126,7 +129,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**EXEMPLO** DE ERRO (status = 500):
+**EXEMPLO**  DE ERRO (status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -148,14 +151,14 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-### Via Pacote {#via-package}
+### Via Package {#via-package}
 
 Como alternativa, você pode automatizar a configuração SSL fazendo upload de um pacote que já contenha estes itens necessários:
 
 * O armazenamento de chaves do usuário do serviço ssl. Está localizado em */home/users/system/security/ssl-service/keystore* no repositório.
-* A `GraniteSslConnectorFactory` configuração
+* A configuração `GraniteSslConnectorFactory`
 
-### Gerando um par de chave privada/certificado para usar com o assistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
+### Gerando um par de chave privada/certificado para usar com o Assistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
 Abaixo você encontrará um exemplo para a criação de um certificado autoassinado no formato DER que o Assistente SSL pode usar.
 
@@ -182,23 +185,23 @@ Abaixo você encontrará um exemplo para a criação de um certificado autoassin
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-Converta a Chave privada no formato DER. Isso ocorre porque o assistente SSL exige que a chave esteja no formato DER:
+Converta a Chave privada para o formato DER. Isso ocorre porque o assistente SSL exige que a chave esteja no formato DER:
 
 ```shell
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Por fim, carregue o **localhostprivate.der** como a Chave privada e **localhost.crt** como o Certificado SSL na etapa 2 do Assistente gráfico SSL descrito no início desta página.
+Finalmente, carregue **localhostprivate.der** como a Chave privada e **localhost.crt** como o Certificado SSL na etapa 2 do Assistente de SSL gráfico descrito no início desta página.
 
 ### Atualização da configuração SSL via cURL {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->Consulte [Usar cURL com AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obter uma lista centralizada de comandos cURL úteis no AEM.
+>Consulte [Usando cURL com AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obter uma lista centralizada de comandos cURL úteis em AEM.
 
 Você também pode automatizar a configuração SSL usando a ferramenta cURL. Você pode fazer isso ao postar os parâmetros de configuração neste URL:
 
-*https://&lt;nomedoservidor>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
+*https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
 Abaixo estão os parâmetros que você pode usar para alterar as várias configurações no assistente de configuração:
 
@@ -221,7 +224,7 @@ Abaixo estão os parâmetros que você pode usar para alterar as várias configu
 >
 >A maneira mais rápida de executar cURL para automatizar a configuração SSL é a partir da pasta onde os arquivos DER e CRT estão. Como alternativa, você pode especificar o caminho completo nos argumentos `privatekeyFile` e certificateFile.
 >
->Você também precisa ser autenticado para executar a atualização, portanto, anexe o comando cURL ao `-u user:passeword` parâmetro.
+>Você também precisa ser autenticado para executar a atualização, portanto, anexe o comando cURL ao parâmetro `-u user:passeword`.
 >
 >Um comando cURL post correto deve ter a seguinte aparência:
 
