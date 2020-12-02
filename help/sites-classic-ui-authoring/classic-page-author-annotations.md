@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 translation-type: tm+mt
 source-git-commit: c8a02ad9fc33e963d2c760840e70c40ede988054
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 92%
 
 ---
 
@@ -76,6 +79,7 @@ Os três ícones no canto superior esquerdo permitem minimizar a anotação (jun
 >
 >* o ícone não será mostrado.
 >* os rascunhos existentes, criados em outro navegador, não serão mostrados.
+
 >
 
 
@@ -84,7 +88,7 @@ Os rascunhos são um recurso de anotações que permitem criar gráficos de linh
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* O cursor se transformará em uma cruz quando você estiver no modo de rascunho. Você pode desenhar várias linhas distintas. 
+* O cursor se transformará em uma cruz quando você estiver no modo de rascunho. Você pode desenhar várias linhas distintas.
 * A linha de rascunho reflete a cor da anotação e pode ser:
 
    * mão livre
@@ -93,7 +97,7 @@ Os rascunhos são um recurso de anotações que permitem criar gráficos de linh
 
    * reto:
 
-      hold down `ALT` and click the start and end points; finish with a double-click.
+      mantenha pressionada a tecla `ALT` e clique no start e nos pontos finais; termine com um clique de duplo.
 
 * Depois que você sair do modo de rascunho, poderá clicar em uma linha de rascunho para selecionar esse rascunho.
 * Para mover um rascunho, selecione-o e depois arraste-o para a posição desejada.
