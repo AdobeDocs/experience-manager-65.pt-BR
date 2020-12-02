@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 60%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    ![](do-not-localize/chlimage_1-11.png)
 
 1. Clique em **Novo ...**
-1. You can specify the **Title**, **Name** and type of experience to be created; in this case, Test&amp;Target Offer.
+1. Você pode especificar o **Título**, **Nome** e o tipo de experiência a ser criado; neste caso, Oferta do Test&amp;Público alvo.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -33,8 +36,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    >[!NOTE]
    >
-   >As experiências do Test&amp;Target não são listadas atualmente no MCM. They can be accessed from the **Websites** console, under Campaigns.
+   >As experiências do Test&amp;Target não são listadas atualmente no MCM. Eles podem ser acessados pelo console **Sites**, em Campanha.
 
 ## Integração com o Adobe Target {#integrating-with-adobe-target}
 
-See [Integrate with Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) for full details.
+Consulte [Integrar com Adobe](/help/sites-administering/target.md) [Público alvo](/help/sites-administering/target.md) para obter detalhes completos.
