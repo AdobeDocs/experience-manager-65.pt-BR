@@ -75,7 +75,7 @@ Observe que as cores alteradas e movidas são as mesmas.
 >
 >Ao comparar cópias de idiomas, o realce é desativado, pois, em uma tradução, tudo muda, e não seria benéfico realçar.
 
-### Tela cheia e ao sair   {#fullscreen-and-exiting}
+### Tela cheia e ao sair    {#fullscreen-and-exiting}
 
 Para se concentrar em um conteúdo específico, você pode clicar no ícone de tela inteira para qualquer &quot;lado&quot; da comparação lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
 
@@ -91,7 +91,7 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 Você pode sair do diferencial lado a lado a qualquer momento clicando no botão Fechar do cabeçalho.
 
-## Limitações   {#limitations}
+## Limitações    {#limitations}
 
 Existem algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme o esperado.
 
