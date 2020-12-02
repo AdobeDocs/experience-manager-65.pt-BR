@@ -1,6 +1,6 @@
 ---
 title: Gerenciar ativos compostos com referências e várias páginas
-description: Saiba como criar referências a ativos digitais de dentro [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para visualização de páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
+description: Saiba como criar referências a ativos digitais de dentro de [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para visualização de páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] pode identificar se um arquivo carregado contém referências a ativos que já existem no repositório. Este recurso está disponível somente para formatos de arquivo suportados. Se o ativo carregado contiver referências a [!DNL Experience Manager] ativos, um link bidirecional será criado entre os ativos carregados e referenciados.
 
-Além de eliminar a redundância, a referência aos ativos nos [!DNL Adobe Creative Cloud] aplicativos aumenta a colaboração e a eficiência e produtividade dos usuários.
+Além de eliminar a redundância, a referência aos ativos em [!DNL Adobe Creative Cloud] aplicativos aumenta a colaboração e a eficiência e produtividade dos usuários.
 
 [!DNL Experience Manager Assets] suporta referenciação bidirecional. Você pode encontrar ativos referenciados na página de detalhes do ativo do arquivo carregado. Além disso, você pode visualização os arquivos de referência na página de detalhes do ativo referenciado.
 
@@ -23,14 +23,14 @@ As referências são resolvidas com base no caminho, na ID do documento e na ID 
 
 ## Adicionar ativos digitais como referências em [!DNL Adobe Illustrator] {#refai}
 
-Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illustrator] arquivo.
+Você pode fazer referência a ativos digitais existentes em um arquivo [!DNL Adobe Illustrator].
 
-1. Usando o aplicativo [[!DNL Experience Manager] de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)desktop, busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
-1. Arraste o ativo da pasta local para o [!DNL Illustrator] arquivo.
+1. Usando [[!DNL Experience Manager] aplicativo desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html), busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
+1. Arraste o ativo da pasta local para o arquivo [!DNL Illustrator].
 
-1. Salve o [!DNL Illustrator] arquivo na unidade montada ou [carregue](/help/assets/manage-assets.md#uploading-assets) no [!DNL Experience Manager] repositório.
+1. Salve o arquivo [!DNL Illustrator] na unidade montada ou [carregue](/help/assets/manage-assets.md#uploading-assets) no repositório [!DNL Experience Manager].
 
-1. Após a conclusão do fluxo de trabalho, vá para a página de detalhes do ativo do ativo. As referências a ativos digitais existentes são listadas em **[!UICONTROL Dependências]** na coluna **[!UICONTROL Referências]** .
+1. Após a conclusão do fluxo de trabalho, vá para a página de detalhes do ativo do ativo. As referências a ativos digitais existentes estão listadas em **[!UICONTROL Dependências]** na coluna **[!UICONTROL Referências]**.
 
    ![chlimage_1-84](assets/chlimage_1-258.png)
 
@@ -38,7 +38,7 @@ Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illu
 
    ![chlimage_1-85](assets/chlimage_1-259.png)
 
-1. Clique em Propriedades **[!UICONTROL da]** Visualização na barra de ferramentas. Na página [!UICONTROL Propriedades] , a lista de arquivos que fazem referência ao ativo atual é exibida na coluna **[!UICONTROL Referências]** da guia **[!UICONTROL Básico]** .
+1. Clique em **[!UICONTROL Propriedades da Visualização]** na barra de ferramentas. Na página [!UICONTROL Propriedades], a lista de arquivos que fazem referência ao ativo atual aparece sob a coluna **[!UICONTROL Referências]** na guia **[!UICONTROL Básico]**.
 
    ![visualização das referências de Ativos Experience Manager na coluna Referências nos detalhes do ativo](assets/asset-references.png)
 
@@ -46,13 +46,13 @@ Você pode fazer referência a ativos digitais existentes em um [!DNL Adobe Illu
 
 ## Adicionar ativos digitais como referências em [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
-Para referenciar ativos digitais de dentro de um [!DNL InDesign] arquivo, arraste os ativos para o [!DNL InDesign] arquivo ou exporte o [!DNL InDesign] arquivo como um arquivo ZIP.
+Para referenciar ativos digitais de um arquivo [!DNL InDesign], arraste os ativos para o arquivo [!DNL InDesign] ou exporte o arquivo [!DNL InDesign] como um arquivo ZIP.
 
-Os ativos referenciados já existem em [!DNL Experience Manager Assets]. Você pode extrair subativos [configurando o InDesign Server](indesign.md). Os ativos incorporados em um [!DNL InDesign] arquivo são extraídos como subativos.
+Os ativos referenciados já existem em [!DNL Experience Manager Assets]. Você pode extrair subativos ao [configurar o InDesign Server](indesign.md). Os ativos incorporados em um arquivo [!DNL InDesign] são extraídos como subativos.
 
 >[!NOTE]
 >
->Se o proxy [!DNL InDesign Server] for feito, [!DNL InDesign] a pré-visualização dos arquivos será incorporada aos metadados XMP. Nesse caso, a extração em miniatura não é explicitamente exigida. No entanto, se o proxy não [!DNL InDesign Server] for feito, as miniaturas deverão ser explicitamente extraídas para [!DNL InDesign] arquivos.
+>Se [!DNL InDesign Server] for enviado por proxy, os arquivos [!DNL InDesign] terão sua pré-visualização incorporada nos metadados XMP. Nesse caso, a extração em miniatura não é explicitamente exigida. No entanto, se [!DNL InDesign Server] não for proxy, as miniaturas deverão ser explicitamente extraídas para arquivos [!DNL InDesign].
 
 ### Criar referências arrastando ativos {#create-references-by-dragging-aem-assets}
 
@@ -60,20 +60,20 @@ Esse procedimento é semelhante a [adicionar ativos digitais como referências n
 
 ### Criar referências a ativos exportando um arquivo ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Execute as etapas em [Criar modelos](/help/sites-developing/workflows-models.md) de fluxo de trabalho para criar um novo fluxo de trabalho.
-1. Use o recurso Package (Pacote) de [!DNL Adobe InDesign] para exportar o documento. [!DNL Adobe InDesign] pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma pasta Links que contém subativos no [!DNL InDesign] arquivo.
-1. Crie um arquivo ZIP e carregue-o no [!DNL Experience Manager] repositório.
-1. Start do `Unarchiver` fluxo de trabalho.
-1. Quando o fluxo de trabalho é concluído, as referências na pasta Links são automaticamente mencionadas como subativos. Para visualização de uma lista de ativos referenciados, navegue até a página de detalhes do ativo e feche o [!DNL InDesign] Painel [](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Execute as etapas em [Criar modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md) para criar um novo fluxo de trabalho.
+1. Use o recurso Pacote de [!DNL Adobe InDesign] para exportar o documento. [!DNL Adobe InDesign] pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma pasta Links que contém subativos no arquivo [!DNL InDesign].
+1. Crie um arquivo ZIP e carregue-o no repositório [!DNL Experience Manager].
+1. Start do fluxo de trabalho `Unarchiver`.
+1. Quando o fluxo de trabalho é concluído, as referências na pasta Links são automaticamente mencionadas como subativos. Para visualização de uma lista de ativos referenciados, navegue até a página de detalhes do ativo [!DNL InDesign] e feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Adicionar ativos digitais como referências em [!DNL Adobe Photoshop] {#refps}
 
-1. Use o aplicativo [!DNL Experience Manager] desktop para acessar [!DNL Experience Manager Assets]. Baixe e revele os ativos no sistema de arquivos local. Use a funcionalidade [!UICONTROL Inserir vinculado] em [!DNL Adobe Photoshop]. Consulte [colocar ativos no aplicativo](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de desktop.
+1. Use [!DNL Experience Manager] aplicativo desktop para acessar [!DNL Experience Manager Assets]. Baixe e revele os ativos no sistema de arquivos local. Use a funcionalidade [!UICONTROL Colocar vinculado] em [!DNL Adobe Photoshop]. Consulte [colocar ativos no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. Salve o arquivo na unidade montada ou [!DNL Photoshop] carregue [no](/help/assets/manage-assets.md#uploading-assets) [!DNL Experience Manager] repositório.
-1. Após a conclusão do fluxo de trabalho, as referências aos ativos existentes são listadas na página de detalhes do ativo. [!DNL Experience Manager]
+1. Salve no arquivo [!DNL Photoshop] na unidade montada ou [carregue](/help/assets/manage-assets.md#uploading-assets) no repositório [!DNL Experience Manager].
+1. Após a conclusão do fluxo de trabalho, as referências aos ativos [!DNL Experience Manager] existentes são listadas na página de detalhes do ativo.
 
    Para visualização dos ativos referenciados, feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector) na página de detalhes do ativo.
 
@@ -81,57 +81,57 @@ Esse procedimento é semelhante a [adicionar ativos digitais como referências n
 
 >[!NOTE]
 >
->Os ativos em ativos compostos também podem ser referenciados com base na ID do Documento e na ID da instância. Essa funcionalidade está disponível somente com [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop] versões. Para outros, a referência é feita com base na trajetória relativa dos ativos vinculados no ativo composto principal, conforme feito em versões anteriores do [!DNL Experience Manager].
+>Os ativos em ativos compostos também podem ser referenciados com base na ID do Documento e na ID da instância. Essa funcionalidade está disponível somente nas versões [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Para outros, a referência é feita com base no caminho relativo dos ativos vinculados no ativo composto principal, conforme feito em versões anteriores de [!DNL Experience Manager].
 
 ## Criar subativos {#generate-subassets}
 
-Para os ativos suportados com formatos de várias páginas — arquivos PDF, arquivos AI [!DNL Microsoft PowerPoint] e [!DNL Apple Keynote] arquivos e [!DNL Adobe InDesign] arquivos — [!DNL Experience Manager] pode gerar subativos que correspondem a cada página individual do ativo original. Esses subativos estão vinculados ao ativo *pai* e facilitam a visualização de várias páginas. Para todos os outros fins, os subativos são tratados como ativos normais em [!DNL Experience Manager].
+Para os ativos suportados com formatos de várias páginas — arquivos PDF, arquivos AI, [!DNL Microsoft PowerPoint] e [!DNL Apple Keynote] e arquivos [!DNL Adobe InDesign] — [!DNL Experience Manager] pode gerar subativos que correspondem a cada página individual do ativo original. Esses subativos estão vinculados ao ativo *parent* e facilitam a visualização de várias páginas. Para todos os outros fins, os subativos são tratados como ativos normais em [!DNL Experience Manager].
 
 Por padrão, a geração de conjunto de subconjuntos é desativada. Para ativar a geração de subativos, siga estas etapas:
 
-1. Faça logon [!DNL Experience Manager] como administrador. Acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
-1. Selecione Fluxo de trabalho **[!UICONTROL Atualizar ativo]** DAM e clique em **[!UICONTROL Editar]**.
-1. Clique em **[!UICONTROL Alternar painel]** lateral e localize a etapa **[!UICONTROL Criar subativo]** . Adicione a etapa ao fluxo de trabalho. Clique em **[!UICONTROL Sincronizar]**.
+1. Faça logon em [!DNL Experience Manager] como um administrador. Acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
+1. Selecione **[!UICONTROL DAM Update Asset]** e clique em **[!UICONTROL Editar]**.
+1. Clique em **[!UICONTROL Alternar painel lateral]** e localize a etapa **[!UICONTROL Criar subativo]**. Adicione a etapa ao fluxo de trabalho. Clique em **[!UICONTROL Sincronizar]**.
 
 Para gerar os subativos, execute um dos procedimentos a seguir:
 
-* Novos ativos: O fluxo de trabalho dos Ativos [!UICONTROL de atualização do] DAM é executado em qualquer novo ativo carregado para [!DNL Experience Manager]. Os subativos são gerados automaticamente para novos ativos de várias páginas.
-* Ativos de várias páginas existentes: Execute manualmente o fluxo de trabalho Atualizar ativos [!UICONTROL do] DAM seguindo uma das etapas:
+* Novos ativos: O fluxo de trabalho [!UICONTROL DAM Update Assets] é executado em qualquer novo ativo carregado para [!DNL Experience Manager]. Os subativos são gerados automaticamente para novos ativos de várias páginas.
+* Ativos de várias páginas existentes: Execute manualmente o fluxo de trabalho [!UICONTROL DAM Update Assets] seguindo qualquer uma das etapas:
 
-   * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho do teclado `alt + 3`. Clique em Fluxo de trabalho [!UICONTROL do]Start, selecione Ativo [!UICONTROL de atualização]DAM, clique em [!UICONTROL Start]e em [!UICONTROL Prosseguir].
-   * Selecione um ativo e clique em [!UICONTROL Criar] > [!UICONTROL Fluxo de trabalho] na barra de ferramentas. Na caixa de diálogo pop-up, selecione Fluxo de trabalho [!UICONTROL DAM Update Asset (Atualizar ativo] DAM), clique em [!UICONTROL Start]e em [!UICONTROL Continue (Continuar]).
+   * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho de teclado `alt + 3`. Clique em [!UICONTROL Fluxo de trabalho do Start], selecione [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Start] e clique em [!UICONTROL Prosseguir].
+   * Selecione um ativo e clique em [!UICONTROL Criar] > [!UICONTROL Fluxo de trabalho] na barra de ferramentas. Na caixa de diálogo pop-up, selecione [!UICONTROL DAM Update Asset] fluxo de trabalho, clique em [!UICONTROL Start] e em [!UICONTROL Prosseguir].
 
-Especificamente para documentos do Microsoft Word, execute o fluxo de trabalho de Documentos **[!UICONTROL do]** DAM Parse Word. Ele gera um `cq:Page` componente do conteúdo do documento do Microsoft Word. As imagens extraídas do documento são referenciadas do `cq:Page` componente. Essas imagens são extraídas mesmo se a geração de subativos estiver desativada.
+Especificamente para documentos do Microsoft Word, execute o fluxo de trabalho **[!UICONTROL Documentos do DAM Parse Word]**. Ele gera um componente `cq:Page` do conteúdo do documento do Microsoft Word. As imagens extraídas do documento são referenciadas do componente `cq:Page`. Essas imagens são extraídas mesmo se a geração de subativos estiver desativada.
 
-## View subassets {#viewing-subassets}
+## Visualização de subativos {#viewing-subassets}
 
-Os subativos são exibidos somente se os subativos forem gerados e estiverem disponíveis para o ativo multipáginas selecionado. Para visualização dos subativos gerados, abra o ativo de várias páginas. Na área superior esquerda da página, clique em ![Opção para abrir o painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo e clique em **[!UICONTROL Subativos]** na lista. Quando você seleciona **[!UICONTROL Subativos]** na lista. Como alternativa, use o atalho do teclado `alt + 5`.
+Os subativos são exibidos somente se os subativos forem gerados e estiverem disponíveis para o ativo multipáginas selecionado. Para visualização dos subativos gerados, abra o ativo de várias páginas. Na área superior esquerda da página, clique em ![Opção para abrir o painel esquerdo](assets/do-not-localize/aem_leftrail_contentonly.png) e clique em **[!UICONTROL Subassets]** na lista. Quando você seleciona **[!UICONTROL Subassets]** na lista. Como alternativa, use o atalho de teclado `alt + 5`.
 
 ![Visualização de subativos para um ativo de várias páginas](assets/view_subassets_simulation.gif)
 
-## páginas de visualização de um arquivo de várias páginas {#view-pages-of-a-multi-page-file}
+## Páginas de visualização de um arquivo de várias páginas {#view-pages-of-a-multi-page-file}
 
-É possível visualização de um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e AI, usando o recurso Visualizador de página de [!DNL Experience Manager Assets]. Abra um ativo de várias páginas e clique em Páginas **[!UICONTROL de]** Visualização no canto superior esquerdo da página. O Visualizador de página que é aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom em cada página.
+É possível visualização de um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e AI, usando o recurso Visualizador de páginas de [!DNL Experience Manager Assets]. Abra um ativo de várias páginas e clique em **[!UICONTROL Páginas de Visualização]** no canto superior esquerdo da página. O Visualizador de página que é aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom em cada página.
 
 ![Visualização e visualização de páginas de um ativo de várias páginas](assets/view_multipage_asset_fmr.gif)
 
-Para [!DNL InDesign], você pode extrair páginas usando [!DNL InDesign Server]. Se as pré-visualizações das páginas forem salvas durante a criação do [!DNL InDesign] arquivo, então não [!DNL InDesign Server] será necessário para a extração da página.
+Para [!DNL InDesign], você pode extrair páginas usando [!DNL InDesign Server]. Se as pré-visualizações das páginas forem salvas durante a criação do arquivo [!DNL InDesign], [!DNL InDesign Server] não será necessário para a extração da página.
 
 As seguintes opções estão disponíveis na barra de ferramentas, no painel esquerdo e nos controles do Visualizador de páginas:
 
-* **[!UICONTROL Ações]** da área de trabalho para abrir ou revelar um subativo específico usando o aplicativo da [!DNL Experience Manager] área de trabalho. Veja como [configurar as ações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) da área de trabalho se você estiver usando o aplicativo da [!DNL Experience Manager] área de trabalho.
+* **[!UICONTROL As]** ações da área de trabalho para abrir ou revelar um subativo específico usando o aplicativo da  [!DNL Experience Manager] área de trabalho. Veja como [configurar as Ações da Área de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) se você estiver usando [!DNL Experience Manager] aplicativo da área de trabalho.
 
-* **[!UICONTROL A opção Propriedades]** abre a página [!UICONTROL Propriedades] do subativo específico.
+* **[!UICONTROL A]** opção Propriedades abre a   página Propriedades do subativo específico.
 
-* **[!UICONTROL A opção Anotar]** permite que você anote o subativo específico. As anotações usadas em subativos separados são coletadas e exibidas juntas quando o ativo pai é aberto para exibição.
+* **[!UICONTROL A opção]** Anotar permite que você anote o subativo específico. As anotações usadas em subativos separados são coletadas e exibidas juntas quando o ativo pai é aberto para exibição.
 
-* **[!UICONTROL A opção Visão geral]** da página exibe todos os subativos simultaneamente.
+* **[!UICONTROL A opção]** Visão geral da página exibe todos os subativos simultaneamente.
 
-* **[!UICONTROL A opção Linha]** do tempo no painel esquerdo depois de clicar em ![Opção para abrir o painel](assets/do-not-localize/aem_leftrail_contentonly.png) esquerdo exibe o fluxo de atividade do arquivo.
+* **[!UICONTROL A opção]** Linha do tempo no painel esquerdo depois de clicar em  ![Opção para abrir o ](assets/do-not-localize/aem_leftrail_contentonly.png) painel esquerdo exibe o fluxo de atividade do arquivo.
 
 ## Práticas recomendadas e limitação {#best-practice-limitation-tips}
 
-* A geração de subconjuntos pode consumir muitos recursos em qualquer [!DNL Experience Manager] implantação. Se você estiver gerando subativos quando os ativos complexos forem carregados, adicione a etapa no fluxo de trabalho Atualizar ativo do DAM. Se você estiver gerando subativos sob demanda, crie um fluxo de trabalho separado para gerar subativos. Um fluxo de trabalho dedicado permite que você pule as outras etapas no fluxo de trabalho do DAM Update Asset e salve os recursos tecnológicos.
+* A geração de subconjuntos pode consumir muitos recursos em qualquer implantação [!DNL Experience Manager]. Se você estiver gerando subativos quando os ativos complexos forem carregados, adicione a etapa no fluxo de trabalho Atualizar ativo do DAM. Se você estiver gerando subativos sob demanda, crie um fluxo de trabalho separado para gerar subativos. Um fluxo de trabalho dedicado permite que você pule as outras etapas no fluxo de trabalho do DAM Update Asset e salve os recursos tecnológicos.
 
 >[!MORELIKETHIS]
 >
