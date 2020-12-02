@@ -24,7 +24,7 @@ Para evitar riscos de segurança, o campo de senha de ligação no arquivo de co
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração.
 1. Para exportar a configuração atual para um arquivo, clique em Exportar e salve o arquivo de configuração em outro local.
-1. No arquivo, localize o nó `Domains` > *[Seu nome]* de domínio > `DirectoryConfigs` > `LDAPGroupConfig` . Exemplo:
+1. No arquivo, localize o nó `Domains` > *[Seu nome de domínio]* > `DirectoryConfigs` > `LDAPGroupConfig`. Exemplo:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -39,7 +39,7 @@ Para evitar riscos de segurança, o campo de senha de ligação no arquivo de co
 
    Digite um valor para `bindpassword` e salve as alterações.
 
-1. No arquivo, localize o nó `Domains` > *[Seu nome]* de domínio > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` . Exemplo:
+1. No arquivo, localize o nó `Domains` > *[Seu nome de domínio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Exemplo:
 
    ```xml
     <node name="LDAPUserConfig">
