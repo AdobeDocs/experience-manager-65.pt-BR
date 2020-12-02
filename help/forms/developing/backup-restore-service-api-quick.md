@@ -29,11 +29,11 @@ As operações do AEM Forms podem ser executadas usando a API fortemente tipada 
 
 >[!NOTE]
 >
->Os Start rápidos localizados em Programação com a AEM Forms são baseados no sistema operacional Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexão.
+>Os Start rápidos localizados em Programação com a AEM Forms são baseados no sistema operacional Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Start rápido (modo SOAP): Entrando no modo de backup usando a API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-O exemplo de código Java a seguir entra no modo de backup com uma etiqueta exclusiva por duas horas. Depois que o tempo de backup expira ou se o modo de backup for explicitamente encerrado, o servidor de formulários retornará à remoção de arquivos do Armazenamento Global Documento. (Consulte [Entrando no modo de backup no servidor](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)de formulários.)
+O exemplo de código Java a seguir entra no modo de backup com uma etiqueta exclusiva por duas horas. Depois que o tempo de backup expira ou se o modo de backup for explicitamente encerrado, o servidor de formulários retornará à remoção de arquivos do Armazenamento Global Documento. (Consulte [Entrando no Modo de Backup no servidor de formulários](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -146,9 +146,9 @@ O exemplo de código Java a seguir entra no modo de backup com uma etiqueta excl
  
 ```
 
-## Start rápido (modo SOAP): Sair do modo de backup usando a API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Start rápido (modo SOAP): Deixando o modo de backup usando a API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-O exemplo de código Java a seguir faz com que o Forms Server saia do modo de backup e volte para a remoção de arquivos do Armazenamento do Documento Global. (Consulte [Saindo do Modo de backup no servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formulários.)
+O exemplo de código Java a seguir faz com que o Forms Server saia do modo de backup e volte para a remoção de arquivos do Armazenamento do Documento Global. (Consulte [Saindo do Modo de Backup no servidor de formulários](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
