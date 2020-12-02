@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 63%
 
 ---
 
@@ -43,7 +46,7 @@ O formulário é atualizado automaticamente com base no usuário. Consulte [Edi�
 
 Antes de criar formulários específicos para o Adobe Campaign, você deve disponibilizar os diferentes modelos no seu aplicativo AEM.
 
-To do this, see the [Templates documentation](/help/sites-developing/page-templates-static.md#templateavailability).
+Para fazer isso, consulte a documentação [Modelos](/help/sites-developing/page-templates-static.md#templateavailability).
 
 Em primeiro lugar, verifique a conexão entre as instâncias de autor e publicação e verifique se o Adobe Campaign está funcionando. Consulte [Integração com o Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) ou [Integração com o Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md).
 
@@ -56,80 +59,81 @@ Em primeiro lugar, verifique a conexão entre as instâncias de autor e publica�
 
 1. Comece em siteadmin.
 1. Percorra a estrutura da árvore para chegar ao local em que você gostaria de criar o formulário no site escolhido.
-1. **Selecione** Novo **>** Nova página... .
-1. Select either **Adobe Campaign Profile (AC 6.1)** or **Adobe Campaign Profile (ACS)** template and enter the page properties.
+1. Selecione **Nova** > **Nova página...**.
+1. Selecione o modelo **Perfil Adobe Campaign (AC 6.1)** ou **Perfil Adobe Campaign (ACS)** e insira as propriedades da página.
 
    >[!NOTE]
    >
-   >If the template is not available, refer to the [Making a template available](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) section.
+   >Se o modelo não estiver disponível, consulte a seção [Disponibilizar um modelo](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
 
-1. Click **Create** to create the form.
+1. Clique em **Criar** para criar o formulário.
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
 
    Em seguida, você pode [editar e configurar o conteúdo do seu formulário](#editing-form-content).
 
-## Edição do conteúdo do formulário {#editing-form-content}
+## Edição do conteúdo do formulário  {#editing-form-content}
 
 Formulários dedicados ao Adobe Campaign têm componentes específicos. Esses componentes têm uma opção para permitir que você vincule cada campo do formulário a um campo no banco de dados do Adobe Campaign.
 
 >[!NOTE]
 >
->If the desired template is not available, see [Making a template available](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
+>Se o modelo desejado não estiver disponível, consulte [Disponibilizar um modelo](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
 
-Esta seção apenas detalha links específicos para o Adobe Campaign. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
+Esta seção apenas detalha links específicos para o Adobe Campaign. Para obter mais informações sobre uma visão geral mais geral de como usar formulários no Adobe Experience Manager, consulte [Componentes do modo de edição](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Navegue até o formulário que você deseja editar.
-1. **Na caixa de ferramentas, selecione** Página **> Propriedades** da página... em seguida, vá para a guia Serviços **em** nuvem da janela pop-up.
-1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service&#39;s drop down list. Essa configuração é realizada ao configurar a conexão entre as suas instâncias. For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
+1. Na caixa de ferramentas, selecione **Página** > **Propriedades da página...** em seguida, vá para a guia **Cloud Services** da janela pop-up.
+1. Adicione o serviço Adobe Campaign clicando em **Adicionar serviço** e selecionando a configuração que corresponde à sua instância do Adobe Campaign na lista suspensa do serviço. Essa configuração é realizada ao configurar a conexão entre as suas instâncias. Para obter mais informações, consulte [Conectando AEM ao Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >
    >Se necessário, desbloqueie a configuração clicando no ícone de cadeado para adicionar o serviço do Adobe Campaign.
 
-1. Access the form&#39;s general parameters using the **Edit** button found at the start of the form. The **Form** tab allows you to select a thank you page to which the user will be redirected after having validated the form.
+1. Acesse os parâmetros gerais do formulário usando o botão **Editar** encontrado no start do formulário. A guia **Formulário** permite selecionar uma página de agradecimento para a qual o usuário será redirecionado após a validação do formulário.
 
-   The **Advanced** form allows you to select the type of form. The **Post Options** field gives you the choice between three types of Adobe Campaign forms:
+   O formulário **Avançado** permite selecionar o tipo de formulário. O campo **Opções de publicação** oferece a você a escolha entre três tipos de formulários do Adobe Campaign:
 
    * **Adobe Campaign: salvar perfil**: permite criar ou atualizar um destinatário no Adobe Campaign (valor padrão).
    * **Adobe Campaign: inscrever-se para os serviços**: permite gerenciar as assinaturas de um destinatário no Adobe Campaign.
    * **Adobe Campaign: cancelar a assinatura dos serviços**: permite cancelar as assinaturas de um destinatário no Adobe Campaign.
-   The **Action Configuration** field lets you specify whether or not you would like to create the recipient profile in the Adobe Campaign database if it does not yet exist. To do this, check the **Create user if not existing** option.
+
+   O campo **Action Configuration** permite que você especifique se deseja ou não criar o perfil do recipient no banco de dados do Adobe Campaign, caso ele ainda não exista. Para fazer isso, marque a opção **Criar usuário, se não existir**.
 
 1. Adicione os componentes selecionados arrastando-os da caixa de ferramentas e soltando-os no formulário. Para obter mais informações sobre os componentes específicos disponíveis do Adobe Campaign, consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. Configure os campos adicionados clicando neles duas vezes. The **Adobe Campaign** tab lets you link the field to a field in the Adobe Campaign recipient table. Você também pode especificar se o campo faz parte da chave de reconciliação, que permite que os destinatários já presentes no banco de dados do Adobe Campaign sejam reconhecidos.
+1. Configure os campos adicionados clicando neles duas vezes. A guia **Adobe Campaign** permite vincular o campo a um campo na tabela recipient Adobe Campaign. Você também pode especificar se o campo faz parte da chave de reconciliação, que permite que os destinatários já presentes no banco de dados do Adobe Campaign sejam reconhecidos.
 
    >[!CAUTION]
    >
-   >The **Element Name** must be different for each form field. Altere-o se necessário.
+   >O **Nome do elemento** deve ser diferente para cada campo de formulário. Altere-o se necessário.
    >
-   >Each form must contain an **Encrypted Primary Key** component in order to correctly manage recipients in the Adobe Campaign database.
+   >Cada formulário deve conter um componente **Chave primária criptografada** para gerenciar corretamente recipient no banco de dados Adobe Campaign.
 
-1. Activate the page by selecting **Page** > **Activate Page** in the toolbox. A página está ativada no seu site. Você pode visualizá-la acessando a instância de publicação do AEM. Os dados no banco de dados do Adobe Campaign são atualizados assim que um formulário é validado.
+1. Ative a página selecionando **Página** > **Ativar Página** na caixa de ferramentas. A página está ativada no seu site. Você pode visualizá-la acessando a instância de publicação do AEM. Os dados no banco de dados do Adobe Campaign são atualizados assim que um formulário é validado.
 
-## Teste de um formulário {#testing-a-form}
+## Teste de um formulário  {#testing-a-form}
 
 Depois de criar um formulário e editar seu conteúdo, convém testar manualmente se ele está funcionando conforme esperado.
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. Em Componentes, selecione Adobe Campaign para que apenas esses componentes fiquem visíveis.
+>Você deve ter um componente **Chave primária criptografada** em cada formulário. Em Componentes, selecione Adobe Campaign para que apenas esses componentes fiquem visíveis.
 >
 >Neste procedimento, embora você insira o número da EPK manualmente, na prática os usuários receberiam um link para essa página (para cancelar a assinatura, assinar ou atualizar seu perfil) em um informativo. Com base no usuário, a EPK é atualizada automaticamente.
 >
->To create that link, you use the variable **Main resource identifier**(Adobe Campaign Standard) or **Encrypted identifier** (Adobe Campaign 6.1) (for example, in a **Text &amp; Personalization (Campaign)** component), which links to the epk in Adobe Campaign.
+>Para criar esse link, use a variável **Identificador de recurso principal**(Adobe Campaign Standard) ou **Identificador criptografado** (Adobe Campaign 6.1) (por exemplo, em um componente **Texto e personalização (Campanha)**), que se vincula à epk no Adobe Campaign.
 
 Para fazer isso, você precisa obter manualmente a EPK de um perfil do Adobe Campaign e, em seguida, anexá-la ao URL:
 
 1. Para obter a chave primária criptografada (EPK) de um perfil do Adobe Campaign:
 
-   * In Adobe Campaign Standard - Navigate to **Profiles and Audiences** > **Profiles**, which lists the existing profiles. Make sure the table displays the **Main Resource Identifier** field in a column (This can be configured by clicking/tapping **Configure list**). Copie o identificador de recursos principal do perfil desejado.
-   * In Adobe Campaign 6.11, go to **Profiles and Targets** >  **Recipients**, which lists the existing profiles. Make sure the table displays the **Encrypted identifier** field in a column (This can be configured by right-clicking on an entry and selecting **Configure list...**). Copie o identificador criptografado do perfil desejado.
+   * No Adobe Campaign Standard - navegue até **Perfis e Audiências** > **Perfis**, que lista os perfis existentes. Certifique-se de que a tabela exibe o campo **Identificador de Recurso Principal** em uma coluna (Isso pode ser configurado clicando/tocando em **Configurar lista**). Copie o identificador de recursos principal do perfil desejado.
+   * No Adobe Campaign 6.11, vá para **Perfis e Públicos alvos** > **Recipient**, que lista os perfis existentes. Verifique se a tabela exibe o campo **Identificador criptografado** em uma coluna (Isso pode ser configurado clicando com o botão direito do mouse em uma entrada e selecionando **Configurar lista...**). Copie o identificador criptografado do perfil desejado.
 
-1. In AEM, open the form page on the publish instance and append the EPK from step 1 as a URL parameter: use the same name that you previously defined in the EPK component when authoring the form (for example: `?epk=...`)
+1. Em AEM, abra a página de formulário na instância de publicação e anexe o EPK da etapa 1 como um parâmetro de URL: use o mesmo nome definido anteriormente no componente EPK ao criar o formulário (por exemplo: `?epk=...`)
 1. O formulário agora pode ser usado para modificar os dados e as assinaturas associadas ao perfil vinculado do Adobe Campaign. Depois de modificar alguns campos e enviar o formulário, você pode verificar no Adobe Campaign se os dados apropriados foram atualizados.
 
 Os dados no banco de dados do Adobe Campaign são atualizados assim que um formulário é validado.
