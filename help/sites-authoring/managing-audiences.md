@@ -26,11 +26,11 @@ O console Públicos-alvo permite criar, organizar e gerenciar públicos-alvo da 
 * Adicionar públicos-alvo: públicos-alvo do Adobe Target ou segmentos do ContextHub.
 * Gerenciar públicos-alvo.
 
-An Audience, called *segment* in ContextHub and Client Context, is a class of visitors defined by specific criteria, which then determines who sees a targeted activity. Ao direcionar uma atividade, você pode selecionar públicos-alvo diretamente no processo de direcionamento ou pode criar novos no console Públicos-alvo.
+Uma Audiência, chamada *segment* no ContextHub e no Client Context, é uma classe de visitantes definidos por critérios específicos, que determinam quem vê uma atividade direcionada. Ao direcionar uma atividade, você pode selecionar públicos-alvo diretamente no processo de direcionamento ou pode criar novos no console Públicos-alvo.
 
 No console Públicos-alvo, os públicos-alvo são organizados por marca.
 
-Audiences are available in Targeting mode for [authoring targeted content](/help/sites-authoring/content-targeting-touch.md), where you can also create audiences (but you need to create Adobe Target audiences in the Audiences console). Os públicos-alvo que você cria no modo Direcionar aparecem no console Públicos-alvo.
+As audiências estão disponíveis no modo de definição de metas para [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md), onde também é possível criar audiências (mas é necessário criar audiências Adobe Target no console do Audiência). Os públicos-alvo que você cria no modo Direcionar aparecem no console Públicos-alvo.
 
 Os públicos-alvo são exibidos com um rótulo descrevendo o tipo de público-alvo definido:
 
@@ -44,7 +44,7 @@ Você pode criar um segmento do ContextHub no console Públicos-alvo ou durante 
 
 Para criar um segmento do ContextHub no console Públicos-alvo:
 
-1. No console Navegação, clique ou toque em **Personalização**. Click or tap **Audiences**.
+1. No console Navegação, clique ou toque em **Personalização**. Clique ou toque em **Audiência**.
 1. Toque ou clique em **Criar segmento do ContextHub**.
 
    ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
@@ -57,7 +57,7 @@ Para criar um segmento do ContextHub no console Públicos-alvo:
 
 Para obter mais detalhes sobre como criar segmentos usando o ContextHub, consulte a documentação [Configuração da segmentação com o ContextHub](/help/sites-administering/segmentation.md).
 
-## Criação de um público-alvo do Adobe Target usando o console Públicos-alvo {#creating-an-adobe-target-audience-using-the-audience-console}
+## Criação de um público-alvo do Adobe Target usando o console Públicos-alvo  {#creating-an-adobe-target-audience-using-the-audience-console}
 
 Você pode criar públicos-alvo do Adobe Target diretamente no AEM usando o console Públicos.
 
@@ -67,15 +67,15 @@ Quando você usa mais de uma regra, elas são combinadas pelo operador booleano 
 
 >[!NOTE]
 >
->If you do not see **Create Target Audience **in the **Create** menu, you do not have the necessary permissions to create an audience. You need write permissions under **/etc/segmentation** to be able to create audiences. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
+>Se você não vir **Criar Audiência de Público alvo **no menu **Criar**, não terá as permissões necessárias para criar uma audiência. Você precisa de permissões de gravação em **/etc/segmentation** para poder criar audiências. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
 
 Para criar um público-alvo do Adobe Target:
 
-1. No console Navegação, clique ou toque em **Personalização**. Click or tap **Audiences**.
+1. No console Navegação, clique ou toque em **Personalização**. Clique ou toque em **Audiência**.
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. In the Audiences console, tap or click **Create** and then** Create Target Audience**.
+1. No console do Audiência, toque ou clique em **Criar** e, em seguida,** Criar Audiência do Público alvo**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -84,21 +84,21 @@ Para criar um público-alvo do Adobe Target:
 1. Clique em **Adicionar regra** para adicionar outra regra. Insira quantas regras forem necessárias. As regras são combinadas com o operador booleano AND, o que significa que o público-alvo deve atender a todos os requisitos de cada regra para ser elegível para uma atividade.
 1. Toque ou clique em **Próximo**.
 1. Insira um nome para o público-alvo e toque ou clique em **Salvar**.
-1. Tap or click **Save**. Seu público-alvo é listado na lista Público-alvo.
+1. Toque ou clique em **Salvar**. Seu público-alvo é listado na lista Público-alvo.
 
-### Atributos e suas opções {#attributes-and-their-options}
+### Atributos e suas opções  {#attributes-and-their-options}
 
 Você pode criar regras de direcionamento para cada um dos seguintes atributos:
 
 | **Atributo** | **Descrição** | **Para obter mais informações** |
 |---|---|---|
-| **Móvel** | Dispositivos móveis de público alvo com base em parâmetros como dispositivo móvel, tipo de dispositivo, fornecedor do dispositivo, dimensões de tela (por pixels) e muito mais. | Consulte a documentação [do](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) Mobile na Adobe Target. |
-| **Personalizado** | Parâmetros personalizados são parâmetros de mbox. Se você passar algum parâmetro de mbox para mboxes, ou usar a função targetPageParams, esses parâmetros aparecerão aqui para uso em públicos-alvo. | Consulte a documentação [Parâmetros](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) personalizados na Adobe Target. |
+| **Móvel** | Dispositivos móveis de público alvo com base em parâmetros como dispositivo móvel, tipo de dispositivo, fornecedor do dispositivo, dimensões de tela (por pixels) e muito mais. | Consulte [Documentação móvel](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) na Adobe Target. |
+| **Personalizado** | Parâmetros personalizados são parâmetros de mbox. Se você passar algum parâmetro de mbox para mboxes, ou usar a função targetPageParams, esses parâmetros aparecerão aqui para uso em públicos-alvo. | Consulte [Documentação de Parâmetros Personalizados](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) no Adobe Target. |
 | **OS** | Você pode público alvo visitantes que usam um determinado sistema operacional. | Direcionado a usuários que estejam usando Linux, Macintosh ou Windows. |
-| **Páginas do site** | Visitantes de público alvo que estão em uma página específica ou têm um parâmetro de mbox específico. | Consulte a documentação [de Páginas](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) do site na Adobe Target. |
-| **Navegador** | Você pode público alvo usuários que usam um navegador específico ou opções específicas de navegador quando visitam sua página. | Consulte [Documentação de opções de](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)navegador no Adobe Target. |
-| **Perfil do visitante** | Visitantes de público alvo que atendem a parâmetros de perfil específicos. | Consulte a documentação [do Perfil do](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) Visitante na Adobe Target. |
-| **Fontes de tráfego** | Visitantes de público alvo com base no mecanismo de pesquisa ou na landing page que os referenciam ao site. | Consulte a documentação [Fontes de](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) tráfego na Adobe Target. |
+| **Páginas do site** | Visitantes de público alvo que estão em uma página específica ou têm um parâmetro de mbox específico. | Consulte [Documentação de Páginas do Site](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) no Adobe Target. |
+| **Navegador** | Você pode público alvo usuários que usam um navegador específico ou opções específicas de navegador quando visitam sua página. | Consulte [Documentação das opções do navegador](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)no Adobe Target. |
+| **Perfil do visitante** | Visitantes de público alvo que atendem a parâmetros de perfil específicos. | Consulte [documentação do Perfil do Visitante](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) no Adobe Target. |
+| **Fontes de tráfego** | Visitantes de público alvo com base no mecanismo de pesquisa ou na landing page que os referenciam ao site. | Consulte [Documentação das Fontes de Tráfego](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) no Adobe Target. |
 
 ## Modificação de um público-alvo no console Públicos-alvo {#modifying-an-audience-in-the-audiences-console}
 
@@ -108,6 +108,6 @@ Você pode criar regras de direcionamento para cada um dos seguintes atributos:
 
 É possível editar qualquer público-alvo do ContextHub ou do ClientContext no console Públicos-alvo. Você pode editar os públicos-alvo do Adobe Target, mas somente aqueles que foram criados no AEM:
 
-1. No console Navegação, clique ou toque em **Personalização**. Click or tap **Audiences**.
+1. No console Navegação, clique ou toque em **Personalização**. Clique ou toque em **Audiência**.
 1. Toque ou clique no ícone ao lado do segmento do ContextHub ou do ClientContext que você deseja editar e toque ou clique em **Editar**.
 1. Faça edições no editor de segmentos. Consulte a documentação do [ClientContext](/help/sites-administering/campaign-segmentation.md) ou do [ContextHub](/help/sites-developing/ch-configuring.md).
