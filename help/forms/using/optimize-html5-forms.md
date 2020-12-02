@@ -35,7 +35,7 @@ Obtenha o software do servidor Web Apache aplicável ao seu sistema operacional:
 
 O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
-1. Exclua as barras de comentário das seguintes configurações de módulo no arquivo *APACHE_HOME/conf/httpd.conf* .
+1. Exclua as barras de comentário das seguintes configurações de módulo no arquivo *APACHE_HOME/conf/httpd.conf*.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -49,7 +49,7 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
 1. Configure o proxy na porta 8080 do JBoss.
 
-   Adicione a seguinte configuração ao arquivo de configuração *APACHE_HOME/conf/httpd.conf* .
+   Adicione a seguinte configuração ao arquivo de configuração *APACHE_HOME/conf/httpd.conf*.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -67,7 +67,7 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
 1. Ative a compactação.
 
-   Adicione a seguinte configuração ao arquivo de configuração *APACHE_HOME/conf/httpd.conf* .
+   Adicione a seguinte configuração ao arquivo de configuração *APACHE_HOME/conf/httpd.conf*.
 
    ```xml
    <Location /content/xfaforms>
