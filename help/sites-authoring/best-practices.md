@@ -1,6 +1,6 @@
 ---
-title: Práticas recomendadas
-seo-title: Práticas recomendadas
+title: 'Práticas recomendadas    '
+seo-title: 'Práticas recomendadas    '
 description: Como usar o AEM da maneira mais eficiente e efetiva possível
 seo-description: Como usar o AEM da maneira mais eficiente e efetiva possível
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 83%
 
 ---
 
 
-# Práticas recomendadas{#best-practices}
+# Práticas recomendadas    {#best-practices}
 
 As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
 
