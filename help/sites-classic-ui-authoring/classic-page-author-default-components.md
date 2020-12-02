@@ -1,8 +1,8 @@
 ---
 title: Componentes
 seo-title: Componentes
-description: 'O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites. '
-seo-description: 'O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites. '
+description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites.
+seo-description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +35,7 @@ As páginas a seguir fornecem links rápidos para algumas das principais áreas 
 
 * [Componentes da autoria de página](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   Os componentes usados para criar conteúdo de página padrão estão contidos principalmente nos grupos **Geral**, **Colunas** e **Forms**.
 
 * [eCommerce](/help/sites-administering/ecommerce.md)
 
