@@ -1,8 +1,8 @@
 ---
 title: Listar formulários em uma página da Web usando APIs
 seo-title: Listar formulários em uma página da Web usando APIs
-description: query programaticamente o Gerenciador de Formulários para recuperar uma lista filtrada de formulários e exibir em suas próprias páginas da Web.
-seo-description: query programaticamente o Gerenciador de Formulários para recuperar uma lista filtrada de formulários e exibir em suas próprias páginas da Web.
+description: Query programaticamente o Forms Manager para recuperar uma lista filtrada de formulários e exibi-los em suas próprias páginas da Web.
+seo-description: Query programaticamente o Forms Manager para recuperar uma lista filtrada de formulários e exibi-los em suas próprias páginas da Web.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # Listar formulários em uma página da Web usando APIs {#listing-forms-on-a-web-page-using-apis}
 
-O AEM Forms fornece uma API de pesquisa baseada em REST que os desenvolvedores da Web podem usar para query e recuperação de um conjunto de formulários que atende aos critérios de pesquisa. Você pode usar APIs para pesquisar formulários com base em vários filtros. O objeto response contém atributos de formulário, propriedades e pontos finais de formulários.
+A AEM Forms fornece uma API de pesquisa baseada em REST que os desenvolvedores da Web podem usar para query e recuperação de um conjunto de formulários que atenda aos critérios de pesquisa. Você pode usar APIs para pesquisar formulários com base em vários filtros. O objeto response contém atributos de formulário, propriedades e pontos finais de formulários.
 
-Para pesquisar formulários usando a REST API, envie uma solicitação GET ao servidor com os parâmetros de query `https://'[server]:[port]'/libs/fd/fm/content/manage.json` descritos abaixo.
+Para pesquisar formulários usando a REST API, envie uma solicitação de GET para o servidor em `https://'[server]:[port]'/libs/fd/fm/content/manage.json` com os parâmetros de query descritos abaixo.
 
-## Query parameters {#query-parameters}
+## Parâmetros de query {#query-parameters}
 
 <table>
  <tbody>
@@ -33,9 +33,9 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Especifica a função a ser chamada. Para pesquisar formulários, defina o valor do <code>func </code>atributo como <code>searchForms</code>.</p> <p>Por exemplo, <code class="code">
+   <td><p>Especifica a função a ser chamada. Para pesquisar formulários, defina o valor do atributo <code>func </code>como <code>searchForms</code>.</p> <p>Por exemplo, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Observação:</strong> <em>Este parâmetro é obrigatório.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Observação: </strong> <em>este parâmetro é obrigatório.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -94,7 +94,7 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
        <li>ENDSWITH - A termina com B se B for a parte final de A</li>
        <li>LIKE - Implementa o operador LIKE</li>
        <li>AND - Combine várias declarações</li>
-      </ul> <p><strong>Observação:</strong> <em>Os operadores GT, LT, GTEQ e LTEQ são aplicáveis para propriedades de tipo linear, como LONG, DUPLO e DATE.</em></p> </li>
+      </ul> <p><strong>Observação: operadores </strong> <em>GT, LT, GTEQ e LTEQ são aplicáveis para propriedades de tipo linear, como LONG, DUPLO e DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -116,7 +116,7 @@ Para pesquisar formulários usando a REST API, envie uma solicitação GET ao se
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Especifica se o conteúdo binário deve ser recuperado ou não. O <code>includeXdp</code> atributo é aplicável para ativos do tipo <code>FORM</code>, <code>PDFFORM</code>e <code>PRINTFORM</code>.</td>
+   <td>Especifica se o conteúdo binário deve ser recuperado ou não. O atributo <code>includeXdp</code> é aplicável a ativos do tipo <code>FORM</code>, <code>PDFFORM</code> e <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
