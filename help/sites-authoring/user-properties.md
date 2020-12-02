@@ -1,8 +1,8 @@
 ---
-title: Configurar o ambiente da sua conta
-seo-title: Configurar o ambiente da sua conta
-description: O AEM fornece a você a capacidade de configurar a sua conta e certos aspectos do ambiente do autor
-seo-description: O AEM fornece a você a capacidade de configurar a sua conta e certos aspectos do ambiente do autor
+title: 'Configurar o ambiente da sua conta  '
+seo-title: 'Configurar o ambiente da sua conta  '
+description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
+seo-description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
 uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,11 +12,14 @@ discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 99%
 
 ---
 
 
-# Configurar o ambiente da sua conta{#configuring-your-account-environment}
+# Configurar o ambiente da sua conta  {#configuring-your-account-environment}
 
 O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação.
 
@@ -68,9 +71,9 @@ Cada usuário pode definir certas propriedades para si mesmo.
       * As páginas serão abertas na janela atual.
 
 
-* **Mostrar ações do desktop para Assets**
+* **Mostrar ações do desktop para Ativos**
 
-   Essa opção requer o aplicativo de desktop AEM para uso.
+   Essa opção requer o aplicativo de desktop do AEM para uso.
 
 * **Cor da anotação**
 
@@ -100,8 +103,9 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
    O AEM oferece suporte a vários atalhos de teclado que tornam a criação mais eficiente.
 
-   * [Atalhos de teclado para a edição de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+   * [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Atalhos de teclado para consoles](/help/sites-authoring/keyboard-shortcuts.md)
+
    Essa opção ativa atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados, por exemplo, caso um usuário tenha determinados requisitos de acessibilidade.
 
 * **Usar a experiência de criação clássica**
@@ -110,7 +114,7 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Ativar a Página inicial dos ativos**
 
-   Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Assets para toda a organização.
+   Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Ativos para toda a organização.
 
 * **Configuração do Stock**
 
