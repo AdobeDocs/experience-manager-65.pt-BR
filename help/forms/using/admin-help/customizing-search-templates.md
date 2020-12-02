@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 0%
 
 ---
 
 
-# Personalização de modelos de pesquisa {#customizing-search-templates}
+# Personalizar modelos de pesquisa {#customizing-search-templates}
 
 Você pode criar modelos de pesquisa a serem usados no Workspace para pesquisar instâncias de processos nas páginas de Tarefas e Rastreamento. Também é possível editar ou excluir modelos de pesquisa existentes.
 
@@ -44,9 +47,9 @@ Você pode criar quantos modelos de pesquisa forem necessários.
 
    * Na parte superior da guia Critérios, selecione um Elemento de processo ou Elemento de Tarefa.
 
-      **Dica**: *Se você tiver selecionado o elemento Nome do processo anteriormente e tiver especificado um processo, quaisquer Variáveis de processo definidas nesse processo também estarão disponíveis para seleção.*
+      **Dica**:  *Se você selecionou anteriormente o elemento Nome do processo e especificou um processo, quaisquer Variáveis de processo definidas nesse processo também estarão disponíveis para seleção.*
 
-      **Dica**: *Se você selecionar o elemento Visível da Tarefa, os usuários poderão remover tarefas concluídas dos resultados da pesquisa.*
+      **Dica**:  *Se você selecionar o elemento Visível da Tarefa, os usuários poderão remover tarefas concluídas dos resultados da pesquisa.*
 
       Os campos de critérios de pesquisa do elemento selecionado aparecem na parte inferior da guia Critérios.
 
@@ -55,9 +58,10 @@ Você pode criar quantos modelos de pesquisa forem necessários.
       * Selecione um operador relacional (como &quot;ser igual a&quot;) na lista fornecida e especifique o valor do operando na caixa ao lado.
       * (Opcional) Para permitir que os usuários alterem o valor do operando no Workspace, selecione Permitir que o usuário altere o operando.
       * (Opcional) Para permitir que os usuários alterem o operador relacional, selecione Permitir que o usuário selecione outro operador relacional. Na lista exibida, selecione os operadores que estarão disponíveis para o usuário.
-      **Dica**: *Se você selecionou Nome do processo como o elemento, poderá clicar no ícone ao lado do campo operando para exibir uma lista na qual é possível selecionar um processo que está sendo executado no servidor de formulários. Após selecionar um processo, quaisquer variáveis de processo definidas nesse processo estarão disponíveis para seleção em Variáveis de processo na seção superior da guia Critérios.*
 
-      **Dica**: *Você pode excluir um elemento do modelo de pesquisa clicando no ícone Excluir ao lado dos critérios de pesquisa do elemento.*
+      **Dica**:  *Se você selecionou Nome do processo como o elemento, poderá clicar no ícone ao lado do campo operando para exibir uma lista na qual é possível selecionar um processo que está sendo executado no servidor de formulários. Após selecionar um processo, todas as variáveis de processo definidas nesse processo estarão disponíveis para seleção em Variáveis de processo na seção superior da guia Critérios.*
+
+      **Dica**:  *Você pode excluir um elemento do modelo de pesquisa clicando no ícone Excluir ao lado dos critérios de pesquisa do elemento.*
 
 
 1. (Opcional) Para que cada cabeçalho de coluna seja exibido nos resultados da pesquisa, clique na guia Layout e execute as seguintes etapas:
@@ -65,6 +69,7 @@ Você pode criar quantos modelos de pesquisa forem necessários.
    * Selecione um elemento de processo ou tarefa e clique na seta para a direita para movê-lo para a lista Colunas para Relatório.
    * Na lista Colunas a serem relatadas, selecione o processo ou elemento de tarefa e clique na Seta para cima ou Seta para baixo para movê-la para o seu lugar na ordem da coluna. Os cabeçalhos de coluna nos resultados da pesquisa serão exibidos na ordem em que estão listados aqui.
    * (Opcional) Para alterar o nome do elemento para o cabeçalho da coluna, selecione o elemento na lista Colunas para Relatório e forneça o novo nome.
+
    >[!NOTE]
    >
    >O layout especificado no modelo de pesquisa substitui as preferências do usuário especificadas para os cabeçalhos de coluna no Workspace.
