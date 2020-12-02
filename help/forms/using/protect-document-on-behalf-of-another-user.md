@@ -18,12 +18,12 @@ ht-degree: 0%
 
 O AEM Forms Documento Security Java SDK fornece APIs para permitir que uma conta de usuário proteja um documento em nome de outro usuário sem obter as permissões para editar o documento. Você pode usar as APIs em um processo de fluxo de trabalho ou programaticamente como um serviço de documento. As novas APIs são:
 
-* **protectDocumentUse** a API ProtectDocument para aplicar uma política a um documento em nome de
+* **** protectDocumentUse a API ProtectDocument para aplicar uma política a um documento em nome de
 
    outra conta de usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Não obtém direitos para abrir e visualização o documento. RMSecureDocumentResult protectDocument(Documento inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
-* **createLicenseUse** a API CreateLicense para criar uma licença para uma política em nome de outra conta de usuário. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
-* **protectedDocumentWithCoverPageUse** a API ProtectDocumentWithCoverPage para aplicar uma política e adicionar uma página de capa a um documento em nome de outro usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Não alcança os direitos de abertura e visualização do documento. RMSecureDocumentResult protectDocumentWithCoverPage(Documento inDoc, String documentName, String policySetName, String policyName, coverDoc, boolean bExactMatchForNames)
+* **** createLicenseUse a API CreateLicense para criar uma licença para uma política em nome de outra conta de usuário. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
+* **** protectDocumentWithCoverPageUse a API ProtectDocumentWithCoverPage para aplicar uma política e adicionar uma página de capa a um documento em nome de outro usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Não alcança os direitos de abertura e visualização do documento. RMSecureDocumentResult protectDocumentWithCoverPage(Documento inDoc, String documentName, String policySetName, String policyName, coverDoc, boolean bExactMatchForNames)
 
 ## Usar as APIs para proteger um documento em nome de outro usuário {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
