@@ -12,6 +12,9 @@ discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
@@ -31,14 +34,14 @@ Para promover páginas, realize as etapas a seguir ao editar a página de lança
 1. Na guia **Página** no Sidekick, clique em **Promover lançamento**.
 1. Especifique as páginas que serão promovidas:
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
-   * To also promote the child pages of the current page, select **Include Sub Pages**.
+   * (Padrão) Para promover somente a página atual, selecione **Promover alterações na página para a versão de produção**.
+   * Para também promover as páginas secundárias da página atual, selecione **Incluir subpáginas**.
    * Para promover todas as páginas do lançamento, selecione **Promover o lançamento completo para a versão de produção**.
 
 1. Para adicionar as páginas de produção a um pacote de fluxos de trabalho, selecione **Adicionar ao pacote de fluxo de trabalho** e selecione o pacote de fluxos de trabalho.
 1. Clique em **Promover**.
 
-## Processamento de páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
+## Processamento de Páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
 
 Use modelos de fluxo de trabalho para realizar o processamento em massa de páginas de Lançamentos promovidos:
 
