@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 93%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
    >
 * Algumas funcionalidades não estão disponíveis em todos os consoles, e/ou a funcionalidade adicional está disponível em alguns consoles. Informações específicas sobre os consoles individuais e o recurso relacionado serão abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [edição](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+
 >
 
 
@@ -160,7 +164,7 @@ Os seguintes itens estão disponíveis; um subconjunto desses campos é mostrado
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td>Miniatura</td>
+   <td>Miniatura </td>
    <td>Mostra uma miniatura da página.</td>
   </tr>
   <tr>
@@ -204,7 +208,7 @@ Os seguintes itens estão disponíveis; um subconjunto desses campos é mostrado
    <td>Mostra quando uma página foi bloqueada e a conta do usuário que a bloqueou.</td>
   </tr>
   <tr>
-   <td>Live Copy</td>
+   <td>Live Copy </td>
    <td>Indica quando a página faz parte de uma cópia online.</td>
   </tr>
  </tbody>
