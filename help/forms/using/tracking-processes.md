@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Na página Rastreamento, você pode pesquisar por processos ativos ou concluído
 
 ## Procurar processos e tarefas {#search-for-processes-and-tasks}
 
-Você pode pesquisar instâncias de processo e tarefas associadas com base em nomes de processo ou usando modelos de pesquisa definidos pelo administrador do espaço de trabalho do AEM Forms.
+Você pode pesquisar instâncias de processo e tarefas associadas com base em nomes de processo ou usando modelos de pesquisa definidos pelo administrador da área de trabalho da AEM Forms.
 
 É possível definir quais colunas serão exibidas nos resultados da pesquisa.
 
@@ -29,21 +32,21 @@ Você pode pesquisar instâncias de processo e tarefas associadas com base em no
 >
 >Os resultados da pesquisa não incluem tarefas que apareceram em um grupo ou lista compartilhada a que você tem acesso, a menos que você tenha participado efetivamente das tarefas. Os resultados não incluem instâncias de processo concluídas que o administrador removeu.
 
-### Pesquisar por nome do processo {#search-by-process-name}
+### Pesquisar pelo nome do processo {#search-by-process-name}
 
 1. Na página Rastreamento, no painel esquerdo, selecione um nome de processo. Todas as instâncias desse processo para as quais você iniciou ou concluiu uma tarefa são exibidas no painel principal.
 1. Clique em uma instância do processo para visualização mais informações sobre ele.
 
 ### Procurar uma tarefa usando um modelo de pesquisa {#search-for-a-task-using-a-search-template}
 
-1. Na página Rastreamento, na lista à esquerda, selecione Modelos **de** pesquisa e selecione um modelo de pesquisa.
+1. Na página Rastreamento, na lista à esquerda, selecione **Pesquisar Modelos** e selecione um modelo de pesquisa.
 1. Se o modelo suportar parâmetros de pesquisa, Para restringir os parâmetros de pesquisa, preencha os campos do modelo e clique em **Pesquisar**. Exibe uma lista de todas as tarefas em que você participou, que correspondem aos critérios de pesquisa.
 
-## Detalhes do processo de Visualização {#view-process-details}
+## Detalhes do processo de visualização {#view-process-details}
 
 Na página Rastreamento, você pode selecionar um processo e visualização seus detalhes. Você pode pesquisar os processos com base em vários parâmetros para visualização dos detalhes da tarefa. Você também pode visualização a guia Status para processos que tenham vários usuários recebendo tarefas em paralelo, onde as ferramentas para revisão de documentos estão ativadas.
 
-**Status:** O status das tarefas em um processo é exibido na coluna &quot;Ação selecionada&quot; ao clicar em uma tarefa. No entanto, o status do processo não está disponível.
+**Status:** O status das tarefas em um processo é exibido na coluna &#39;Ação selecionada&#39; ao clicar em uma tarefa. No entanto, o status do processo não está disponível.
 
 1. Selecione a instância do processo na lista de resultados da pesquisa para obter detalhes da visualização das tarefas que fazem parte da instância do processo.
 1. Para visualização de mais informações sobre uma tarefa, execute uma ou mais destas ações:
