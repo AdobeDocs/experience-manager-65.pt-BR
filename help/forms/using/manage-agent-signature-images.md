@@ -11,6 +11,9 @@ discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +26,19 @@ No Gerenciamento de correspondência, é possível usar uma imagem para renderiz
 
 O DDE agentSignatureImage é um DDE computado que representa a imagem de assinatura do agente. A expressão para este DDE calculado usa uma nova função personalizada exposta pelo bloco modular do Gerenciador de Expressões. Essa função personalizada utiliza agentID e agentFolder como parâmetros de entrada e busca o conteúdo da imagem com base nesses parâmetros. O dicionário de dados do sistema SystemContext fornece às letras no Gerenciamento de Correspondência acesso às informações no contexto atual do sistema. O contexto do sistema inclui informações sobre os parâmetros de configuração do usuário e ativos atualmente conectados.
 
-É possível adicionar imagens sob a pasta cmuserroot. Em Propriedades [de configuração do](/help/forms/using/cm-configuration-properties.md)Correspondence Management, usando a propriedade raiz do usuário do CM, é possível alterar a pasta de onde a imagem de assinatura do agente é selecionada.
+É possível adicionar imagens sob a pasta cmuserroot. Em [Propriedades de configuração do Correspondence Management](/help/forms/using/cm-configuration-properties.md), usando a propriedade raiz do usuário do CM, você pode alterar a pasta de onde a imagem de assinatura do agente é selecionada.
 
 O valor do DDE agentFolder é obtido do parâmetro de configuração CMUserRoot para as propriedades de configuração do Gerenciamento de correspondência. Por padrão, esse parâmetro de configuração aponta para/content/cmUserRoot no repositório CRX. Você pode alterar o valor da configuração de CMUserRoot nas Propriedades de configuração.
 Você também pode substituir a função personalizada padrão para definir sua própria lógica para buscar a imagem de assinatura do usuário.
 
 ## Adicionar imagem de assinatura do agente {#adding-agent-signature-image}
 
-1. Certifique-se de que a imagem de assinatura do agente tenha o mesmo nome que o nome de usuário AEM do usuário. (A extensão não é necessária para o nome do arquivo de imagem.)
-1. No CRX, crie uma pasta nomeada `cmUserRoot` na pasta de conteúdo.
+1. Certifique-se de que a imagem de assinatura do agente tenha o mesmo nome do usuário AEM. (A extensão não é necessária para o nome do arquivo de imagem.)
+1. No CRX, crie uma pasta chamada `cmUserRoot` na pasta de conteúdo.
 
    1. Ir para `https://'[server]:[port]'/crx/de`. Se necessário, faça logon como Administrador.
 
-   1. Clique com o botão direito do mouse na pasta **de conteúdo** e selecione **Criar** > **Criar pasta**.
+   1. Clique com o botão direito do mouse na pasta **content** e selecione **Criar** > **Criar pasta**.
 
       ![Criar pasta](assets/1_createnode_cmuserroot.png)
 
@@ -43,7 +46,7 @@ Você também pode substituir a função personalizada padrão para definir sua 
 
       >[!NOTE]
       >
-      >cmUserRoot é o local padrão onde o AEM procura pela imagem de assinatura do agente. Entretanto, é possível alterá-la editando a propriedade Raiz do usuário do CM nas propriedades [de configuração do Gerenciamento de](/help/forms/using/cm-configuration-properties.md)correspondência.
+      >cmUserRoot é o local padrão onde AEM procura a imagem de assinatura do agente. No entanto, você pode alterá-la editando a propriedade Raiz do usuário do CM nas [propriedades de configuração do Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
 1. No Content Explorer, navegue até a pasta cmUserRoot e adicione a imagem de assinatura do agente a ela.
 
@@ -59,17 +62,17 @@ Você também pode substituir a função personalizada padrão para definir sua 
 
       **Tipo:** nt:file
 
-      Na `cmUserRoot` pasta, uma nova pasta chamada `JohnDoe` (ou o nome fornecido na etapa anterior) é criada.
+      Na pasta `cmUserRoot`, uma nova pasta chamada `JohnDoe` (ou o nome fornecido na etapa anterior) é criada.
 
    1. Clique na nova pasta que você criou (aqui `JohnDoe`). O Content Explorer exibe o conteúdo da pasta como esmaecido.
 
-   1. Clique com o Duplo na propriedade **jcr:content** , defina seu tipo como **nt:resource** e clique na marca de seleção verde para salvar a entrada.
+   1. Clique com o duplo na propriedade **jcr:content**, defina seu tipo como **nt:resource** e clique na marca de seleção verde para salvar a entrada.
 
       Se a propriedade não estiver presente, primeiro crie uma propriedade com o nome jcr:content.
 
       ![jcr:propriedade content](assets/3_jcrcontentntresource.png)
 
-      Entre as subpropriedades de jcr:content está jcr:data, que está esmaecida. Duplo-clique em jcr:data. A propriedade se torna editável e o botão Escolher arquivo aparece na entrada. Clique em **Escolher arquivo** e selecione o arquivo de imagem que deseja usar como logotipo. O arquivo de imagem não precisa ter uma extensão.
+      Entre as subpropriedades de jcr:content está jcr:data, que está esmaecida. Duplo-clique em jcr:data. A propriedade se torna editável e o botão Escolher arquivo aparece na entrada. Clique em **Escolher Arquivo** e selecione o arquivo de imagem que deseja usar como logotipo. O arquivo de imagem não precisa ter uma extensão.
 
       ![Dados JCR](assets/5_jcrdata.png)
    Clique em **Salvar tudo**.
