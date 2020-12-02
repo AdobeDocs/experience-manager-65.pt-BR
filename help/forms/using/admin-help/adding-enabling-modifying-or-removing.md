@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
 
-# Adicionar, ativar, modificar ou remover pontos de extremidade {#adding-enabling-modifying-or-removing-endpoints}
+# Adicionar, ativar, modificar ou remover pontos finais {#adding-enabling-modifying-or-removing-endpoints}
 
 ## Adicionar um terminal a um serviço {#add-an-endpoint-to-a-service}
 
-Os pontos finais podem ser adicionados somente a serviços. Um terminal não pode existir sozinho; deve estar associado a um serviço.
+Os pontos de extremidade podem ser adicionados somente a serviços. Um terminal não pode existir sozinho; deve estar associado a um serviço.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ Os pontos finais podem ser adicionados somente a serviços. Um terminal não pod
 
    [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-   [Configurando pontos de extremidade do Gerenciador de Tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+   [Configuração dos pontos finais do Gerenciador de Tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
    [Configurações de ponto de extremidade remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
@@ -56,7 +59,7 @@ Se você estiver enfrentando problemas com os serviços, desative os pontos de e
 >As alterações feitas na configuração de um terminal usando o console de administração não são refletidas nas cópias em tempo de design dos aplicativos. Se você reimplantar um aplicativo, qualquer alteração feita em seus pontos finais usando o console de administração será perdida.
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de ponto de extremidade.
-1. Na página Gerenciamento de Ponto Final, clique no ponto final para modificá-lo.
+1. Na página Gerenciamento de ponto de extremidade, clique no ponto de extremidade para modificá-lo.
 1. Na página Atualizar ponto de extremidade, modifique o nome do ponto de extremidade, a descrição e as configurações.
 
    >[!NOTE]
@@ -65,9 +68,9 @@ Se você estiver enfrentando problemas com os serviços, desative os pontos de e
 
 1. Para salvar as alterações, clique em Atualizar.
 
-Você também pode realizar essa tarefa na página Gerenciamento de serviços selecionando um serviço e clicando na guia Pontos de extremidade.
+Você também pode fazer essa tarefa na página Gerenciamento de serviços selecionando um serviço e, em seguida, clicando na guia Pontos de extremidade.
 
-## Remover um terminal {#remove-an-endpoint}
+## Remover um ponto de extremidade {#remove-an-endpoint}
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de ponto de extremidade.
 1. Na página Gerenciamento de ponto de extremidade, marque a caixa de seleção do ponto de extremidade a ser removido e clique em Remover. O terminal não é mais exibido.
