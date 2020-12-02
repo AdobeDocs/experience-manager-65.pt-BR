@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Adobe Experience Manager Ready for Data Protection and Data Privacy Regulations (Prontidão para proteção de dados e regulamentos de privacidade de dados) {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager Ready for Data Protection and Data Privacy Regulations {#aem-readiness-for-data-protection-and-data-privacy-regulations} (Disponibilidade para proteção de dados e regulamentos de privacidade de dados)
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Para obter mais informações sobre o que isso significa em relação a problemas de privacidade, consulte o Centro de privacidade do [Adobe](https://www.adobe.com/privacy.html).
+>Para obter mais informações sobre o que isso significa em relação a problemas de privacidade, consulte [Centro de Privacidade do Adobe](https://www.adobe.com/privacy.html)Adobe.
 
 A Adobe está fornecendo documentação e procedimentos (com APIs quando disponíveis), para o administrador de privacidade do cliente ou administrador de AEM para lidar com solicitações de proteção de dados e privacidade e ajudar nossos clientes a cumprir essas regulamentações. Os procedimentos documentados permitirão que os clientes executem as solicitações normativas manualmente ou chamando as APIs, quando disponíveis, de um portal ou serviço externo.
 
@@ -39,7 +39,7 @@ A Adobe está fornecendo documentação e procedimentos (com APIs quando dispon�
 >
 >Os dados de outro Serviço sob demanda do Adobe, juntamente com quaisquer solicitações de privacidade relacionadas, exigirão ações nesse serviço.
 >
->Para obter mais informações, consulte Central [de privacidade do](https://www.adobe.com/privacy.html)Adobe.
+>Para obter mais informações, consulte o Centro de Privacidade do Adobe[.](https://www.adobe.com/privacy.html)
 
 ## Introdução {#introduction}
 
@@ -93,23 +93,23 @@ Consulte as seções abaixo para obter a documentação normativa das áreas de 
 
 ## AEM Foundation {#aem-foundation}
 
-Consulte [Manuseio de Proteção de Dados e Solicitações de Privacidade para a AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+Consulte [Tratamento de solicitações de proteção e privacidade de dados para a AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
-## AEM Optando Pela Coleta De Estatísticas De Uso De Agregação {#aem-opting-into-aggregate-usage-statistics-collection}
+## AEM Optando pela Coleta de Estatísticas de Uso de Agregação {#aem-opting-into-aggregate-usage-statistics-collection}
 
-Consulte Coleta [de Estatísticas de Uso](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)Agregado.
+Consulte [Coleta de Estatísticas de Uso Agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 ## AEM Sites {#aem-sites}
 
-Consulte [AEM Sites - Proteção de dados e prontidão para privacidade.](/help/sites-administering/gdpr-compliance-sites.md)
+Consulte [AEM Sites - Proteção de Dados e Disponibilidade de Privacidade.](/help/sites-administering/gdpr-compliance-sites.md)
 
-## AEM Commerce {#aem-commerce}
+## Comércio AEM {#aem-commerce}
 
-Consulte Comércio [AEM - Proteção de dados e prontidão](/help/sites-administering/gdpr-compliance-commerce.md)para privacidade.
+Consulte [Comércio AEM - Proteção de dados e prontidão para privacidade](/help/sites-administering/gdpr-compliance-commerce.md).
 
 ## AEM Mobile {#aem-mobile}
 
-Consulte [AEM Mobile - Proteção de dados e prontidão](/help/mobile/aem-mobile-gdpr-compliance.md)para privacidade.
+Consulte [AEM Mobile - Proteção de dados e prontidão para privacidade](/help/mobile/aem-mobile-gdpr-compliance.md).
 
 ## Integração AEM com Adobe Target e Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
@@ -122,11 +122,11 @@ Para obter mais informações, consulte:
 
 ## AEM Communities {#aem-communities}
 
-A AEM Communities concede às pessoas de dados direito à portabilidade dos dados, direito de acesso e direito de ser esquecido por meio de APIs [](/help/communities/user-ugc-management-service.md)prontas para uso. Essas APIs permitem a exclusão em massa e a exportação em massa de conteúdo gerado pelo usuário, além de desativar as contas de usuário identificadas por meio de suas IDs autorizados. No entanto, a exclusão permanente da conta de usuário é realizável por meio da exclusão do nó de usuário no CRXDE Lite, que atende à necessidade de recusa fácil do sistema.
+A AEM Communities concede às pessoas de dados o direito de portabilidade de dados, o direito de acesso e o direito de serem esquecidos por meio de [APIs prontas para uso](/help/communities/user-ugc-management-service.md). Essas APIs permitem a exclusão em massa e a exportação em massa de conteúdo gerado pelo usuário, além de desativar as contas de usuário identificadas por meio de suas IDs autorizados. No entanto, a exclusão permanente da conta de usuário é realizável por meio da exclusão do nó de usuário no CRXDE Lite, que atende à necessidade de recusa fácil do sistema.
 
 Além disso, a privacidade do AEM Communities oferta por design devido ao seu console Moderação em massa, que permite que membros privilegiados localizem e excluam as contribuições e detalhes dos usuários. O console de gerenciamento de membros permite limitar ao ponto de banir um contribuinte. Além disso, autoriza as pessoas em causa a eliminar as contribuições por elas autorizadas.
 
-## Formulários AEM {#aem-forms}
+## AEM Forms {#aem-forms}
 
 A AEM Forms inclui componentes e workflows que capturam, processam e armazenam dados para orquestrar processos comerciais e concluir transações digitais. Diferentes componentes usam diferentes armazenamentos de dados e também permitem a integração com armazenamentos de dados personalizados. A documentação a seguir explica os procedimentos e as diretrizes para acessar e manipular dados do usuário para dar suporte à proteção de dados e aos workflows de privacidade (por exemplo, RGPD ou CCPA) de um componente.
 
@@ -134,6 +134,6 @@ A AEM Forms inclui componentes e workflows que capturam, processam e armazenam d
 * [Gerenciamento de correspondência](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integração com a Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [Workflows centrados na Forms no OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md) Forms JEE (somente AEM Forms JEE)
-* [Segurança](/help/forms/using/document-security-handling-user-data.md) do documento (AEM Forms JEE apenas)
-* [Gerenciamento](/help/forms/using/user-management-handling-user-data.md) de usuários (somente AEM Forms JEE)
+* [Workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md)  Forms JEE (somente AEM Forms JEE)
+* [Segurança](/help/forms/using/document-security-handling-user-data.md)  do documento (AEM Forms JEE apenas)
+* [Gerenciamento](/help/forms/using/user-management-handling-user-data.md)  de usuários (somente AEM Forms JEE)
