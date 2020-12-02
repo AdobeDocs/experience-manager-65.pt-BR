@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 4%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor SPA para projetos que exigem renderização do lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 Os aplicativos são representados como *cq:Pages* no AEM.
 
-Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page* , além de outras mostradas abaixo que representam as propriedades de suporte da integração.
+Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page*, além de outras mostradas abaixo que representam as propriedades de suporte da integração.
 
 ## Propriedades do aplicativo {#app-properties}
 
-A tabela a seguir mostra as Propriedades e nós do **aplicativo**.
+A tabela a seguir mostra **Propriedades do aplicativo e nós**.
 
 <table>
  <tbody>
@@ -39,7 +42,7 @@ A tabela a seguir mostra as Propriedades e nós do **aplicativo**.
   <tr>
    <td>dps-cloudConfig</td>
    <td>Sequência:Caminho</td>
-   <td><p>Caminho para um serviço Mobile On-Demand Cloud configurado. Usado para ações sob demanda do AEM Mobile para Mobile (invocação da API)</p> <p>Essa associação é configurada pelo bloco Gerenciar conexão quando um autor escolhe um serviço Mobile On-Demand Cloud ao qual associar o aplicativo.</p> </td>
+   <td><p>Caminho para um Cloud Service Mobile On-Demand configurado. Usado para ações sob demanda do AEM Mobile para dispositivos móveis (invocação da API)</p> <p>Essa associação é configurada pelo bloco Gerenciar conexão quando um autor escolhe um Cloud Service Mobile On-Demand para associar o aplicativo.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -49,7 +52,7 @@ A tabela a seguir mostra as Propriedades e nós do **aplicativo**.
   <tr>
    <td>dps-projectId</td>
    <td>Sequência de caracteres</td>
-   <td><p>Id/URI do projeto Mobile On-Demand ao qual este aplicativo está vinculado/vinculado.</p> <p>Essa associação é configurada pelo bloco Gerenciar conexão quando um autor escolhe o projeto a partir de uma lista de projetos disponíveis para o serviço Mobile On-Demand Cloud associado.</p> </td>
+   <td><p>Id/URI do projeto Mobile On-Demand ao qual este aplicativo está vinculado/vinculado.</p> <p>Essa associação é configurada pelo bloco Gerenciar conexão quando um autor escolhe o projeto a partir de uma lista de projetos disponíveis para o Cloud Service Mobile On-Demand associado.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -64,15 +67,15 @@ A tabela a seguir mostra as Propriedades e nós do **aplicativo**.
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
    <td>Data</td>
-   <td>Data do último upload de recursos compartilhados do AEM para o AEM Mobile.</td>
+   <td>Data do último carregamento de recursos compartilhados do AEM para a AEM Mobile.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>String:userid</td>
-   <td>ID do usuário que realizou o último upload da solicitação de recursos compartilhados do AEM para o AEM Mobile.</td>
+   <td>Id do usuário que realizou o último upload da solicitação de recursos compartilhados da AEM para a AEM Mobile.</td>
   </tr>
   <tr>
-   <td>pge-dashboard-config</td>
+   <td>pge-painel-config</td>
    <td>Sequência:Caminho</td>
    <td>Caminho para uma configuração de painel. O caminho pode ser redirecionado para uma configuração de painel personalizada, conforme necessário.</td>
   </tr>
@@ -84,7 +87,7 @@ A tabela a seguir mostra as Propriedades e nós do **aplicativo**.
  </tbody>
 </table>
 
-Você pode usar Propriedades ****** de conteúdo para criar conteúdo. Consulte os seguintes recursos para criar e exportar artigos e recursos compartilhados:
+Você pode usar ***Propriedades do conteúdo*** para criar conteúdo. Consulte os seguintes recursos para criar e exportar artigos e recursos compartilhados:
 
 * [Propriedades do conteúdo](/help/mobile/content-properties.md)
 * [Criando Configuração de Exportação de Artigo](/help/mobile/creating-article-export-configuration.md)
