@@ -12,6 +12,9 @@ discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 93%
 
 ---
 
@@ -23,10 +26,10 @@ Essa seção fornece uma visão geral das principais tarefas que você usará ao
 Abrange:
 
 * [Introdução](#getting-started)\
-    Detalhar a sequência básica de eventos que você precisa para criar e publicar sua primeira página.
+   Detalhar a sequência básica de eventos que você precisa para criar e publicar sua primeira página.
 
 * [Próximas ações](#further-actions)\
-    Além das muitas outras ações que você pode usar ao criar.
+   Além das muitas outras ações que você pode usar durante a criação.
 
 ## Introdução {#getting-started}
 
@@ -44,7 +47,7 @@ Antes de editar, você precisa [criar uma nova página](/help/sites-authoring/ma
 
 Para várias ações, como edição, você precisa [abrir uma página](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
-### Editar a página {#editing-a-page}
+### Editar a página  {#editing-a-page}
 
 Se a instância já tem páginas ou você acabou de criar uma nova página, é possível [editar uma página](/help/sites-authoring/editing-content.md) seguindo estes procedimentos:
 
@@ -57,11 +60,11 @@ Se a instância já tem páginas ou você acabou de criar uma nova página, é p
 * [Usar o modo de visualização](/help/sites-authoring/editing-content.md#preview-mode) (para verificar como ficará ao ser publicada)
 * [Bloquear uma página](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### Publicar uma página {#publishing-a-page}
+### Publicar uma página  {#publishing-a-page}
 
 Quando terminar de editar sua página, você desejará [publicá-la (ou ativá-la)](/help/sites-authoring/publishing-pages.md#main-pars-title-10), para que ela esteja disponível para os visitantes do seu site.
 
-## Próximas ações {#further-actions}
+## Próximas ações  {#further-actions}
 
 Após as etapas básicas, existem muitas outras ações que você pode usar na criação.
 
@@ -73,7 +76,7 @@ Após as etapas básicas, existem muitas outras ações que você pode usar na c
 
 [Mover e renomear páginas são realizados basicamente com a mesma ação.](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)
 
-### Desfazer publicação de uma página {#unpublishing-a-page}
+### Desfazer publicação de uma página  {#unpublishing-a-page}
 
 Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no seu site público, você [desfaz a publicação (ou desativa) a página](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
 
@@ -81,14 +84,14 @@ Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no se
 
 Caso uma página não seja mais necessária, você pode [excluí-la](/help/sites-authoring/managing-pages.md#deleting-a-page).
 
-### Configurar as propriedades da página {#setting-the-page-properties}
+### Configurar as propriedades da página  {#setting-the-page-properties}
 
 Cada [página tem propriedades](/help/sites-authoring/editing-page-properties.md) que você pode definir para determinar os aspectos do seu funcionamento. Elas podem ser atualizadas com as duas interfaces do usuário do usuário.
 
-### Criar uma versão de uma página {#creating-a-version-of-a-page}
+### Criar uma versão de uma página  {#creating-a-version-of-a-page}
 
 Você pode [criar uma versão](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) de uma página e, em seguida, [reverter essa versão](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version), se necessário.
 
-## Mais informações {#more-information}
+## Mais informações  {#more-information}
 
 O acesso a mais informações sobre a criação pode ser encontrado em [Criação de página](/help/sites-authoring/page-authoring.md).
