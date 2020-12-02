@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 360/VR Video {#vr-video}
+# Vídeo 360/VR {#vr-video}
 
 Vídeos de 360 graus gravam uma visualização em todas as direções ao mesmo tempo. Eles são filmados usando uma câmera onidirecional ou uma coleção de câmeras. Durante a reprodução num visor plano, o utilizador controla o ângulo de visualização; a reprodução em dispositivos móveis normalmente aproveita seus controles giroscópicos incorporados.
 
@@ -27,25 +27,27 @@ Esta seção descreve como trabalhar com o visualizador de vídeo 360/VR para re
 
 Não há suporte para áudio espacial no momento; se o áudio estiver misturado em estéreo, o equilíbrio (L/R) não é alterado à medida que o cliente altera o ângulo de visualização da câmera.
 
-See also [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
+Consulte também [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
 ## 360 Vídeo em ação {#video-in-action}
 
-Toque em [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir uma janela do navegador e assistir a um vídeo de 360 graus. Durante a reprodução do vídeo, arraste o ponteiro do mouse para um novo local para alterar o ângulo de visualização.
+Toque em [Estação Espacial 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir uma janela do navegador e assistir a um vídeo de 360 graus. Durante a reprodução do vídeo, arraste o ponteiro do mouse para um novo local para alterar o ângulo de visualização.
 
-![360 Exemplo](assets/6_5_360videoiss_simplified.png)de quadro de *vídeo da Estação Espacial 360*
+![360 ](assets/6_5_360videoiss_simplified.png)
+*Exemplo de vídeoQuadro de vídeo da Estação Espacial 360*
 
 ## Vídeo 360/VR e Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
 Você pode usar o Adobe Premier Pro para visualização e editar a gravação 360/VR. Por exemplo, você pode colocar logotipos e texto corretamente em uma cena e aplicar efeitos e transições projetados especificamente para mídia retangular.
 
-Consulte [Editar vídeo](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)360/VR.
+Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Fazer upload de ativos para uso com o visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
 Os ativos de vídeo 360 que são carregados no AEM são rotulados como **Multimídia** em uma página Ativo, similar ao ativo de vídeo normal.
 
-![6_5_360video-select-preview](assets/6_5_360video-selecttopreview.png)*Um ativo de vídeo 360 carregado visto na visualização de cartão. O ativo é rotulado como Multimídia.*
+![6_5_360video-](assets/6_5_360video-selecttopreview.png)
+*select-previewUm ativo de vídeo 360 carregado visto na visualização de cartão. O ativo é rotulado como Multimídia.*
 
 **Para fazer upload de ativos para uso com o visualizador de vídeo 360:**
 
@@ -60,7 +62,7 @@ Os ativos de vídeo 360 que são carregados no AEM são rotulados como **Multim�
 
       * 1080p - 1920 x 1080, conhecida como resolução Full HD ou FHD ou
       * 2160p - 3840 x 2160, conhecida como resolução 4K, UHD ou HD Ultra. Essa resolução de tela muito grande é encontrada na maioria das vezes em televisores premium e monitores de computador. A resolução 2160p é frequentemente chamada de &quot;4K&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, ele oferta quatro vezes mais pixels do que 1080p.
-   * [Crie um Perfil](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) Adaptive Video personalizado com execuções de qualidade superior. Por exemplo, você pode criar um Perfil de vídeo adaptativo que contenha as três configurações a seguir:
+   * [Crie um ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) Perfil de vídeo adaptativo personalizado com execuções de qualidade superior. Por exemplo, você pode criar um Perfil de vídeo adaptativo que contenha as três configurações a seguir:
 
       * width=auto; height=720; bitrate=2500 kbps
       * width=auto; height=1080; bitrate=5000 kbps
@@ -71,11 +73,11 @@ Os ativos de vídeo 360 que são carregados no AEM são rotulados como **Multim�
 
 1. [Carregue seu vídeo na pasta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## Substituição da proporção padrão de 360 vídeos  {#overriding-the-default-aspect-ratio-of-videos}
+## Substituição da proporção padrão de 360 vídeos {#overriding-the-default-aspect-ratio-of-videos}
 
 Para um ativo carregado se qualificar como um vídeo 360 que você pretende usar com o visualizador de vídeo 360, o ativo deve ter uma proporção de 2.
 
-Por padrão, AEM detecta o vídeo como &quot;360&quot; se sua proporção (largura/altura) for 2.0. Se você for um Administrador, poderá substituir a configuração padrão de proporção de tela de 2 ao configurar a propriedade opcional no CRXDE Lite no seguinte: `s7video360AR`
+Por padrão, AEM detecta o vídeo como &quot;360&quot; se sua proporção (largura/altura) for 2.0. Se você for um Administrador, poderá substituir a configuração padrão de proporção 2 definindo a propriedade opcional `s7video360AR` no CRXDE Lite no seguinte:
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
@@ -84,21 +86,21 @@ Por padrão, AEM detecta o vídeo como &quot;360&quot; se sua proporção (largu
 
 Após definir essa propriedade, ela entrará em vigor imediatamente nos vídeos existentes e nos vídeos carregados recentemente.
 
-A proporção se aplica a 360 ativos de vídeo para a página de detalhes do ativo e o componente [](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components)Video 360 Media WCM.
+A proporção se aplica a 360 ativos de vídeo para a página de detalhes do ativo e o [componente WCM de mídia do Video 360](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
 
 Start por meio do upload de vídeos 360.
 
-## Previewing 360 Video {#previewing-video}
+## Visualização do vídeo 360 {#previewing-video}
 
 Você pode usar a Pré-visualização para ver a aparência do seu vídeo 360 para os clientes e garantir que ele esteja se comportando como esperado.
 
-Consulte também [Edição de predefinições](/help/assets/managing-viewer-presets.md#editing-viewer-presets)do visualizador.
+Consulte também [Edição de predefinições do visualizador](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
 
 Quando estiver satisfeito com o vídeo 360, você poderá publicá-lo.
 
-See [Embedding the Video or Image Viewer on a Web Page.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
-Consulte [Vincular URLs ao aplicativo](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html)da Web. Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
-See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
+Consulte [Incorporar o Visualizador de vídeo ou imagem em uma página da Web.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
+Consulte  [Vincular URLs ao aplicativo](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html) da Web. Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
+Consulte [Adicionar ativos de mídia dinâmica às páginas.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
 **Para a pré-visualização 360 vídeos**
 
@@ -125,13 +127,13 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
    ![6_5_360video-pré-visualização-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Uma imagem de vídeo de 360 VR.*
 
-1. Near the upper-right of the preview page, tap **[!UICONTROL Close.]**
+1. Perto do canto superior direito da página de pré-visualização, toque em **[!UICONTROL Fechar.]**
 
 ## Publicação de vídeo 360 {#publishing-video}
 
 Você precisa publicar o vídeo 360 para usá-lo. A publicação de um vídeo 360 ativa o URL e o código incorporado. Ele também publica o vídeo 360 na nuvem Dynamic Media, que é integrada a um CDN para delivery escaláveis e com desempenho.
 
-Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md) de mídia dinâmica para obter detalhes sobre como publicar vídeos 360.
-See also [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
-See also [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
-See also [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
+Consulte [Publicar ativos de mídia dinâmica](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar vídeos 360.
+Consulte também [Incorporar o Visualizador de vídeo ou imagem em uma página da Web](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
+Consulte também [Vincular URLs ao seu aplicativo da Web](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
+Consulte também [Adicionar Ativos de Mídia Dinâmica às páginas.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
