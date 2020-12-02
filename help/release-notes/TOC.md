@@ -14,11 +14,11 @@ ht-degree: 29%
 ---
 
 
-# Adobe Experience Manager 6.5 Release Notes {#release-notes}
+# Notas de versão do Adobe Experience Manager 6.5 {#release-notes}
 
 + [Visão geral do AEM 6.5](home.md)
 + [Notas de versão gerais](release-notes.md)
-+ Service Pack Release Notes {#service-pack}
++ Notas de versão do Service Pack {#service-pack}
    + [Novidades](new-features-latest-service-pack.md)
    + [Notas de versão do Service Pack 7](sp-release-notes.md)
    + [Notas de versão anteriores do Service Pack](previous-hotfixes-featurepacks.md)
