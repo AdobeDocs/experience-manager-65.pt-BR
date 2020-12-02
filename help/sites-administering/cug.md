@@ -12,6 +12,9 @@ discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -24,10 +27,10 @@ Para configurar tal área dentro do seu site, você:
 
 * [crie o grupo de usuários fechado e atribua membros](#creating-the-user-group-to-be-used).
 
-* [aplique esse grupo às páginas](#applying-your-closed-user-group-to-content-pages) necessárias e selecione (ou crie) a página de logon para uso pelos membros do CUG; também especificado ao aplicar um CUG a uma página de conteúdo.
+* [aplique esse grupo às ](#applying-your-closed-user-group-to-content-pages) páginas necessárias e selecione (ou crie) a página de logon para uso pelos membros do CUG; também especificado ao aplicar um CUG a uma página de conteúdo.
 
-* [crie um link, de algum formulário, para pelo menos uma página dentro da área](#linking-to-the-realm)protegida, caso contrário ele não estará visível.
-* [configure o Dispatcher](#configure-dispatcher-for-cugs) se estiver em uso.
+* [crie um link, de algum formulário, para pelo menos uma página dentro da área](#linking-to-the-realm) protegida, caso contrário ele não estará visível.
+* [configure o ](#configure-dispatcher-for-cugs) Dispatcherif em uso.
 
 >[!CAUTION]
 >
@@ -41,7 +44,7 @@ Para configurar tal área dentro do seu site, você:
 
 Para criar um grupo de usuários fechado:
 
-1. Vá para **Ferramentas - Segurança** na tela inicial do AEM.
+1. Vá para **Ferramentas - Segurança** a partir da tela inicial AEM.
 
    >[!NOTE]
    >
@@ -51,32 +54,32 @@ Para criar um grupo de usuários fechado:
 
    ![captura de tela_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Pressione o botão **Criar** no canto superior direito para criar um novo grupo.
+1. Pressione o botão **Create** no canto superior direito para criar um novo grupo.
 1. Dê um nome ao seu novo grupo; por exemplo, `cug_access`.
 
    ![captura de tela_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
-1. Vá até a guia **Membros** e atribua os usuários necessários a esse grupo.
+1. Vá para a guia **Membros** e atribua os usuários necessários a esse grupo.
 
    ![captura de tela_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
-1. Ative quaisquer usuários que você tenha atribuído ao CUG; neste caso, todos os membros do `cug_access`.
-1. Ative o grupo de usuários fechado para que esteja disponível no ambiente de publicação; neste exemplo, `cug_access`.
+1. Ative quaisquer usuários que você tenha atribuído ao CUG; neste caso, todos os membros de `cug_access`.
+1. Ative o grupo de usuários fechado para que ele esteja disponível no ambiente de publicação; neste exemplo, `cug_access`.
 
 ## Aplicar seu grupo de usuários fechado às páginas de conteúdo {#applying-your-closed-user-group-to-content-pages}
 
 Para aplicar o CUG a uma página:
 
 1. Navegue até a página raiz da seção restrita que deseja atribuir ao CUG.
-1. Selecione a página clicando em sua miniatura e em **Propriedades** no painel superior.
+1. Selecione a página clicando em sua miniatura e, em seguida, clicando em **Propriedades** no painel superior.
 
    ![captura de tela_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. Na janela a seguir, vá para a guia **Avançado** .
-1. Role para baixo e ative o tickbox na seção Requisitos **de** autenticação.
+1. Na seguinte janela, vá para a guia **Avançado**.
+1. Role para baixo e ative o tickbox na seção **Authentication Requirements**.
 
 1. Adicione o caminho de configuração abaixo e pressione Salvar.
-1. Em seguida, vá para a guia **Permissões** e pressione o botão **Editar grupo** de usuários fechado.
+1. Em seguida, vá para a guia **Permissões** e pressione o botão **Editar grupo de usuários fechado**.
 
    ![captura de tela_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
@@ -86,23 +89,23 @@ Para aplicar o CUG a uma página:
    >
    > Para obter mais informações, consulte [esta página](closed-user-groups.md#aem-livecopy).
 
-1. Procure e adicione seu CUG na seguinte janela - neste caso, adicione o grupo chamado **cug_access**. Finalmente, pressione **Save (Salvar**).
+1. Procure e adicione seu CUG na seguinte janela - neste caso, adicione o grupo chamado **cug_access**. Finalmente, pressione **Save**.
 1. Clique em **Ativado** para definir que esta página (e quaisquer páginas secundárias) pertencem a um CUG.
-1. Especifique a página **de** logon que os membros do grupo usarão; por exemplo:
+1. Especifique a **Página de Login** que os membros do grupo usarão; por exemplo:
 
    `/content/geometrixx/en/toolbar/login.html`
 
    Isso é opcional, se deixado em branco, a página de logon padrão será usada.
 
-1. Adicione os grupos **autorizados**. Use + para adicionar grupos ou - para remover. Somente os membros desses grupos poderão fazer logon e acessar as páginas.
+1. Adicione os **Grupos Admitidos**. Use + para adicionar grupos ou - para remover. Somente os membros desses grupos poderão fazer logon e acessar as páginas.
 1. Atribua um **Realm** (um nome para os grupos de páginas), se necessário. Deixe em branco para utilizar o título da página.
-1. Click **OK** to save the specification.
+1. Clique em **OK** para salvar a especificação.
 
-Consulte Gerenciamento [de](/help/sites-administering/identity-management.md) identidade para obter informações sobre perfis no ambiente de publicação e fornecer formulários para logon e logout.
+Consulte [Identity Management](/help/sites-administering/identity-management.md) para obter informações sobre perfis no ambiente de publicação e fornecer formulários para fazer logon e logout.
 
-## Vinculação Ao Realm {#linking-to-the-realm}
+## Vinculação ao Realm {#linking-to-the-realm}
 
-Como o destino de qualquer link para o Realm CUG não está visível para o usuário anônimo, o verificador de links removerá esses links.
+Como o público alvo de qualquer link para o Realm CUG não está visível para o usuário anônimo, o verificador de links removerá esses links.
 
 Para evitar isso, é aconselhável criar páginas de redirecionamento não protegidas que apontem para páginas dentro do território CUG. As entradas de navegação são renderizadas sem causar problemas ao verificador de links. Somente ao acessar a página de redirecionamento, o usuário será redirecionado dentro do território CUG - depois de fornecer suas credenciais de logon com êxito.
 
@@ -114,9 +117,9 @@ Se você estiver usando o Dispatcher, será necessário definir um farm do Dispa
 * \sessionmanagement: veja abaixo.
 * [cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Um diretório de cache dedicado aos arquivos aos quais o CUG se aplica.
 
-### Configuração do Dispatcher Session Management para CUGs {#configuring-dispatcher-session-management-for-cugs}
+### Configurando o Dispatcher Session Management para CUGs {#configuring-dispatcher-session-management-for-cugs}
 
-Configure o gerenciamento de [sessão no arquivo](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) dispatcher.any para o CUG. O manipulador de autenticação usado quando o acesso é solicitado para páginas CUG determina como você configura o gerenciamento de sessões.
+Configure [o gerenciamento de sessão no dispatcher.any file](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) para o CUG. O manipulador de autenticação usado quando o acesso é solicitado para páginas CUG determina como você configura o gerenciamento de sessões.
 
 ```xml
 /sessionmanagement
@@ -130,7 +133,7 @@ Configure o gerenciamento de [sessão no arquivo](https://helpx.adobe.com/experi
 >Quando um farm do Dispatcher tem o gerenciamento de sessões ativado, todas as páginas que manipulam o farm não são armazenadas em cache. Para armazenar em cache as páginas que estão fora do CUG, crie um segundo farm no dispatcher.any
 >que manipula as páginas não-CUG.
 
-1. Configurar o gerenciamento [de](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) sessões definindo `/directory`; por exemplo:
+1. Configure [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) definindo `/directory`; por exemplo:
 
    ```xml
    /sessionmanagement
