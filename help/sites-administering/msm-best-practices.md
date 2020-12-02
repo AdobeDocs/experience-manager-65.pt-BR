@@ -24,12 +24,12 @@ ht-degree: 1%
 
 O MSM é uma estrutura configurável para automatizar a implantação de conteúdo. As implementações geralmente envolvem partes importantes de um site e abrangem organizações e geografias. Portanto, é altamente recomendável planejar implementações MSM tão cuidadosamente quanto planejar seu site:
 
-* Planeje cuidadosamente a estrutura e os fluxos **** de conteúdo antes de iniciar a implementação.
+* Cuidadosamente **planeje a estrutura e os fluxos de conteúdo** antes de iniciar a implementação.
 * **Personalize o máximo necessário, mas o mínimo possível.** Embora o MSM suporte um alto grau de personalização (por exemplo, configurações de implementação), a prática recomendada para o desempenho, a confiabilidade e a capacidade de atualização do seu site é minimizar a personalização.
-* Estabeleça um modelo de **governança** precocemente e treine os usuários em conformidade, para garantir o sucesso. Uma prática recomendada de um ponto de visualização de controle é **minimizar a autoridade que os produtores de conteúdo local têm** para alocar/conectar conteúdo a outros usuários locais e suas respectivas cópias online. Isso ocorre porque heranças encadeadas e não governadas podem aumentar significativamente a complexidade de uma estrutura MSM e comprometer seu desempenho e confiabilidade.
+* Estabeleça um modelo de **governança** antecipadamente e treine os usuários de acordo com isso, para garantir o sucesso. Uma prática recomendada de um ponto de visualização de controle é **minimizar a autoridade que os produtores de conteúdo local têm** para alocar/conectar conteúdo a outros usuários locais e suas respectivas cópias online. Isso ocorre porque heranças encadeadas e não governadas podem aumentar significativamente a complexidade de uma estrutura MSM e comprometer seu desempenho e confiabilidade.
 
-* Quando existir um plano para sua estrutura, fluxos de conteúdo, automação e controle - **protótipo e teste minuciosamente seu sistema**, antes de iniciar a implementação ativa.
-* Lembre-se de que a **Adobe Consulting e os Integradores** de sistemas líderes têm um planejamento de experiência profunda e implementam a automação de conteúdo com a MSM, para que eles possam ajudá-lo a começar a usar o projeto MSM e toda a implementação.
+* Quando existir um plano para sua estrutura, os fluxos de conteúdo, a automação e o controle - **protótipo e teste minuciosamente seu sistema**, antes de iniciar a implementação ativa.
+* Lembre-se de que **Consultoria de Adobe e Integradores de sistemas líderes** têm um planejamento de experiência profunda e implementam a automação de conteúdo com o MSM, de modo que eles podem ajudá-lo a começar a usar o projeto MSM e toda a implementação.
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ O MSM é uma estrutura configurável para automatizar a implantação de conteú
 
 >[!NOTE]
 >
->Você também pode usar o componente [](/help/sites-authoring/default-components-foundation.md#reference) Referência para reutilizar uma única página ou parágrafo. No entanto, lembre-se:
+>Você também pode usar o [componente de referência](/help/sites-authoring/default-components-foundation.md#reference) para reutilizar uma única página ou parágrafo. No entanto, lembre-se:
 >
 >* O MSM é mais flexível e permite controle detalhado sobre qual conteúdo é sincronizado e quando.
->* [Agora, os componentes](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) principais são recomendados pelos componentes básicos.
+>* [Agora, ](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) os componentes principais são recomendados pelos componentes básicos.
 
 >
 
@@ -55,12 +55,12 @@ O MSM é uma estrutura configurável para automatizar a implantação de conteú
 
 ## Fontes de Live Copy e configurações do Blueprint {#live-copy-sources-and-blueprint-configurations}
 
-Lembre-se de que uma cópia ao vivo pode ser criada usando páginas [](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) regulares ou uma configuração [de](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)blueprint. Ambos são casos de uso válidos.
+Lembre-se de que é possível criar uma live copy usando [páginas regulares](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) ou uma [configuração blueprint](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Ambos são casos de uso válidos.
 
 Os benefícios adicionais do uso de uma configuração de blueprint são:
 
-* Permita que o autor use a opção **Rollout** em um blueprint - para (explicitamente) modificações de envio para cópias online herdadas deste blueprint.
-* Permitir que o autor use **Criar site**; isso permite que o usuário selecione facilmente os idiomas e configure a estrutura da live copy.
+* Permita que o autor use a opção **Rollout** em um blueprint - para (explicitamente) as modificações de envio para cópias online herdadas deste blueprint.
+* Permitir que o autor use **Criar Site**; isso permite que o usuário selecione facilmente os idiomas e configure a estrutura da live copy.
 * Defina uma configuração padrão de implementação para cópias online que tenham uma relação com o blueprint.
 
 Caso uma configuração de blueprint não seja mencionada, as rotações só podem ser iniciadas a partir das próprias cópias ativas, essencialmente retirando o conteúdo da fonte.
@@ -86,19 +86,19 @@ Para suportar o aninhamento de componentes, de modo que os componentes adicionad
 
 Observe que AEM tem duas abordagens principais para a criação de cópias online:
 
-* When [creating a Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
+* Quando [criar uma Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
    Isso pode ser considerado como a abordagem mais genérica, permitindo que você crie cópias online de qualquer página. A estrutura de conteúdo de uma live copy corresponde exatamente à fonte.
 
-* Ao [criar um site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
+* Quando [criar um Site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
    Esta é uma abordagem mais especializada, principalmente para criar sites com uma estrutura multilíngue.
 
 Veja a seguir algumas considerações para ter em mente ao criar um site:
 
-* Para criar um novo site, você precisa de uma configuração [](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)blueprint.
+* Para criar um novo site, você precisa de uma [configuração blueprint](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Para permitir a seleção de caminhos de idioma para criar em um novo site, as raízes de idioma correspondentes devem existir no blueprint (origem).
-* Depois que um [novo site é criado como uma live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Criar** e, em seguida, **Site**), os dois primeiros níveis dessa live copy são *superficiais*. Os filhos da página não pertencem ao relacionamento ao vivo, mas uma implementação ainda descerá se uma relação ao vivo que corresponde ao acionador for encontrada.
+* Depois que um [novo site tiver sido criado como uma live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Criar**, em seguida **Site**), os dois primeiros níveis desta live copy serão *shallow*. Os filhos da página não pertencem ao relacionamento ao vivo, mas uma implementação ainda descerá se uma relação ao vivo que corresponde ao acionador for encontrada.
 
    Ajuda a evitar:
 
@@ -112,7 +112,7 @@ A MSM pode ajudar na criação de sites multilíngues de duas formas:
 
 * Ao criar mestres em linguagem.
 
-   * Embora o próprio MSM **não forneça tradução** de conteúdo, ele pode ser integrado a conectores de tradução de terceiros que o fazem. Note que:
+   * Embora o próprio MSM **não forneça a tradução de conteúdo**, ele pode ser integrado aos conectores de tradução de terceiros que o fazem. Note que:
 
       * O MSM permite que você cancele a herança no nível da página e/ou do componente. Isso ajuda a impedir a substituição de conteúdo traduzido (de uma cópia ao vivo, com conteúdo ainda não traduzido de um blueprint) no próximo lançamento.
       * Alguns conectores de tradução de terceiros automatizam esse gerenciamento de heranças MSM.
@@ -125,17 +125,17 @@ A MSM pode ajudar na criação de sites multilíngues de duas formas:
 
    * Por exemplo, da língua francesa principal a sites específicos de cada país, como França/Francês, Canadá/Francês, Suíça/Francês.
 
-Para obter mais informações, consulte [Traduzir conteúdo para sites](/help/sites-administering/translation.md) multilíngues e as práticas recomendadas [](/help/sites-administering/tc-bp.md)de tradução.
+Para obter mais informações, consulte [Traduzindo conteúdo para sites multilíngues](/help/sites-administering/translation.md) e [Práticas recomendadas de tradução](/help/sites-administering/tc-bp.md).
 
 ## Alterações na estrutura e rolagens {#structure-changes-and-rollouts}
 
 As modificações na estrutura do conteúdo em uma árvore de blueprint/origem são refletidas de forma diferente em uma cópia ao vivo. Isso depende do tipo de modificação:
 
-* **A criação** de novas páginas em um blueprint resultará na criação das páginas correspondentes em cópias online após a implantação com a configuração padrão de implantação.
+* **A** criação de novas páginas em um blueprint resultará na criação das páginas correspondentes em cópias online após a implantação com a configuração padrão de implantação.
 
-* **A exclusão** de páginas em um blueprint resultará na exclusão de páginas correspondentes de cópias online após a implantação com a configuração padrão de implantação.
+* **A** exclusão de páginas em um blueprint resultará na exclusão de páginas correspondentes de cópias online após a implantação com a configuração padrão de implantação.
 
-* **Mover** páginas em um blueprint **não** resultará na movimentação das páginas correspondentes em cópias online após a implantação com a configuração padrão de roll-out:
+* **A** movimentação de páginas em um blueprint  **** não resultará na movimentação de páginas correspondentes em cópias online após a implantação com a configuração padrão de implementação:
 
    * O motivo desse comportamento é que uma movimentação de página inclui implicitamente uma exclusão de página. Isso pode levar a um comportamento inesperado na publicação, já que a exclusão de páginas no autor desativa automaticamente o conteúdo correspondente na publicação. Isso também pode ter um efeito de repercussão em itens relacionados, como links, marcadores e outros.
    * A herança de conteúdo nas respectivas páginas de live copy é atualizada para refletir a nova localização de suas fontes no blueprint.
@@ -143,7 +143,7 @@ As modificações na estrutura do conteúdo em uma árvore de blueprint/origem s
 
 >[!NOTE]
 >
->Isso funcionará somente com o acionador [Ativado](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
+>Isso funcionará somente com [No acionador de Rollout](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
 
 * Crie uma configuração de implantação personalizada:
 
@@ -167,20 +167,20 @@ As modificações na estrutura do conteúdo em uma árvore de blueprint/origem s
          Isso garantirá que nenhum conteúdo seja excluído na live copy ou desativado da publicação.
 
 
-## Personalização de roteiros {#customizing-rollouts}
+## Personalizando rolagens {#customizing-rollouts}
 
-As configurações de implementação MSM são altamente personalizáveis. Vocês devem estar cientes de que a automatização das rotações pode ter consequências de longo alcance. Como prática recomendada, você deve planejar com *muito* cuidado antes, por exemplo:
+As configurações de implementação MSM são altamente personalizáveis. Vocês devem estar cientes de que a automatização das rotações pode ter consequências de longo alcance. Como prática recomendada, você deve planejar *muito* cuidadosamente antes, por exemplo:
 
-* automatização das rotações; por exemplo, com acionadores [onModify](#onmodify),
-* personalização de tipos/propriedades [de](#node-types-properties)nós,
+* automatização das rotações; por exemplo, com [onModify disparadores](#onmodify),
+* personalização de [tipos/propriedades de nó](#node-types-properties),
 * iniciando workflows subsequentes,
 * e/ou ativação de conteúdo como parte de lançamentos.
 
 ### onModify {#onmodify}
 
-Ao usar o acionador [de](/help/sites-administering/msm-sync.md#rollout-triggers) roll-out, `onModify` você deve considerar que:
+Ao usar o acionador [rollout](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify`, considere que:
 
-* Automatizar implementações com `onModify` acionadores pode ter um impacto negativo no desempenho de criação à medida que acionam implantações após *cada* modificação de página.
+* A automatização de implantações com `onModify` acionadores pode ter um impacto negativo no desempenho de criação à medida que acionam implantações após *a* modificação de página.
 
 * O resultado do roll-out pode diferir do esperado como:
 
@@ -189,13 +189,13 @@ Ao usar o acionador [de](/help/sites-administering/msm-sync.md#rollout-triggers)
 
 * O uso dessa configuração de implementação pode levar à confirmação de conflitos se ocorrerem atualizações simultâneas do mesmo recurso.
 
-Portanto, é recomendável que você *use* `onModify` acionadores apenas se os benefícios da iniciação automática de roll-out compensarem quaisquer possíveis problemas de desempenho.
+Portanto, é recomendável que você *somente* use `onModify` acionadores se os benefícios da iniciação automática de implementação superarem quaisquer problemas de desempenho potenciais.
 
 ### Tipos de nó/Propriedades {#node-types-properties}
 
 Lembre-se de que:
 
-* Além de personalizar ações de implementação, o MSM também permite personalizar as propriedades do nó que estão sendo implantadas. A configuração do [MSM OSGi permite excluir tipos](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) de nó da cópia da origem para a live copy.
+* Além de personalizar ações de implementação, o MSM também permite personalizar as propriedades do nó que estão sendo implantadas. A configuração [MSM OSGi permite excluir tipos de nó](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) da cópia da origem para a live copy.
 
 ## Informações adicionais {#further-information}
 
