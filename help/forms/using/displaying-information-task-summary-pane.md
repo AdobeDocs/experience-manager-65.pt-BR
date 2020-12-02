@@ -1,8 +1,8 @@
 ---
 title: Exibição de informações no painel Resumo da Tarefa
 seo-title: Exibição de informações no painel Resumo da Tarefa
-description: Na área de trabalho AEM Forms, um painel Resumo da Tarefa pode ser configurado para resumir a tarefa ou exibir qualquer outra página da Web.
-seo-description: Na área de trabalho AEM Forms, um painel Resumo da Tarefa pode ser configurado para resumir a tarefa ou exibir qualquer outra página da Web.
+description: Na área de trabalho do AEM Forms, um painel Resumo da Tarefa pode ser configurado para resumir a tarefa ou exibir qualquer outra página da Web.
+seo-description: Na área de trabalho do AEM Forms, um painel Resumo da Tarefa pode ser configurado para resumir a tarefa ou exibir qualquer outra página da Web.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Ao abrir uma tarefa na área de trabalho do AEM Forms, um painel Resumo da Tarefa pode exibir um resumo da tarefa. Essas informações adicionais e relevantes para uma tarefa agregam mais valor ao usuário final da área de trabalho do AEM Forms.
 
-A área de trabalho do AEM Forms permite exibir uma página da Web de sua escolha no painel Resumo da Tarefa. Um processo pode ser criado para exibir um painel Resumo da Tarefa usando o Workbench.
+A área de trabalho do AEM Forms permite que você exiba uma página da Web de sua escolha no painel Resumo da Tarefa. Um processo pode ser criado para exibir um painel Resumo da Tarefa usando o Workbench.
 
-1. Criar um processo de Tarefa Atribuir no Workbench. Para obter mais detalhes sobre a operação Atribuir Tarefa, consulte o tópico Referência de serviço na Ajuda [do](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/)Workbench.
+1. Criar um processo de Tarefa Atribuir no Workbench. Para obter mais detalhes sobre a operação Atribuir Tarefa, consulte o tópico Referência de serviço em [Ajuda do Workbench](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >
@@ -34,8 +34,8 @@ A área de trabalho do AEM Forms permite exibir uma página da Web de sua escolh
 1. Um exemplo de exibição das informações na página Resumo da Tarefa é mostrado abaixo.
 
    * Faça logon no ambiente CRXDE Lite em `https://'[server]:[port]'/lc/crx/de`.
-   * `Create a node`**SampleSummary **` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
-   * `Create a folder`**SampleSummary **em`/apps`. Na Lista de Controle de acesso de`/apps/SampleSummary`, adicione uma entrada para`PERM_WORKSPACE_USER`permitir`jcr:readprivileges`.
+   * `Create a node`**SampleSummary** ` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
+   * `Create a folder`**** SampleSummaryunder  `/apps`. Na Lista do Controle de acesso de `/apps/SampleSummary`, adicione uma entrada para `PERM_WORKSPACE_USER` permitindo `jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
 
    ```html
@@ -52,4 +52,4 @@ A área de trabalho do AEM Forms permite exibir uma página da Web de sua escolh
    ```
 
    * Defina o valor do url de resumo da tarefa como `/lc/content/SampleSummary.html` na etapa Atribuir Tarefa.
-   * Quando a tarefa associada à etapa Atribuir Tarefa é aberta na área de trabalho de AEM Forms, a  `html.esp` em `/apps/SampleSummary` é renderizada no painel de resumo da tarefa.
+   * Quando a tarefa associada à etapa Atribuir Tarefa é aberta na área de trabalho do AEM Forms, o `html.esp` em `/apps/SampleSummary` é renderizado no painel de resumo da tarefa.
