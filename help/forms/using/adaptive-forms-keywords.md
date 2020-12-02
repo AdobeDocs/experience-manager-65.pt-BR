@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 15%
 
 ---
 
@@ -70,7 +73,7 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
    <td><p>getElement</p> </td>
   </tr>
   <tr>
-   <td><p>espaço reservadoTexto</p> </td>
+   <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
    <td><p>filhos</p> </td>
   </tr>
@@ -237,4 +240,4 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
  </tbody>
 </table>
 
-Além das palavras-chave listadas acima, evite usar nomes semelhantes aos formulários [adaptáveis APIs](https://adobe.com/go/learn_aemforms_javascript_api_63)JavaScript.
+Além das palavras-chave listadas acima, evite usar nomes semelhantes a [formulários adaptáveis APIs JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).
