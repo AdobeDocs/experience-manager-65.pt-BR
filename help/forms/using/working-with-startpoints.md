@@ -32,18 +32,18 @@ Para iniciar um processo a partir do aplicativo AEM Forms, é necessário ter um
 
 **Para start de um processo definido no Workbench**
 
-1. Para visualização dos pontos de partida disponíveis no aplicativo AEM Forms, vá para a tela [inicial](../../forms/using/home-screen.md).
-1. Na tela **[!UICONTROL Início]** , por padrão, a lista **[!UICONTROL Todos os Forms]** é exibida.
+1. Para visualização dos pontos de partida disponíveis no aplicativo AEM Forms, vá para [tela inicial](../../forms/using/home-screen.md).
+1. Na tela **[!UICONTROL Início]**, por padrão, a lista **[!UICONTROL Todos os Forms]** é exibida.
 
    O ponto de partida está associado a um formulário. Toque no formulário associado ao ponto de partida na lista para abri-lo.
 
    O formulário associado ao ponto de partida é aberto.
 
-1. Insira os detalhes no formulário **[!UICONTROL Ponto de partida]** .
+1. Insira os detalhes no formulário **[!UICONTROL Startpoint]**.
 
-   É possível adicionar anotações a essa tarefa usando o botão [anexo](../../forms/using/add-attachments.md) .
+   Você pode adicionar anotações a essa tarefa usando o botão [anexo](../../forms/using/add-attachments.md).
 
-1. Depois de preencher o formulário, toque no botão **[!UICONTROL Enviar]** .
+1. Depois de preencher o formulário, toque no botão **[!UICONTROL Enviar]**.
 
 Se o aplicativo estiver offline, o formulário e seus dados serão salvos na pasta Caixa de saída.
 
