@@ -12,6 +12,9 @@ discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 95%
 
 ---
 
@@ -46,18 +49,19 @@ Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma 
 
 Lançamentos permitem que você:
 
-* Crie uma cópia das suas páginas de origem:
+* Crie uma cópia das páginas de origem:
 
-   * A cópia é o seu lançamento.
+   * A cópia é sua inicialização.
    * As páginas de origem de nível superior são conhecidas como **Produção**.
 
       * As páginas de origem podem ser obtidas de várias ramificações (separadas).
+
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-* Edite a configuração de lançamento:
+* Edite a configuração de inicialização:
 
    * Adicione ou remova páginas e/ou ramificações ao/do lançamento.
-   * Edite propriedades de lançamento, como **Título**, **Data de lançamento**, sinalizador de **Pronto para produção**.
+   * Edite as propriedades de inicialização; como **Título**, **Data de inicialização**, sinalizador **Pronto para produção**.
 
 * Você pode promover e publicar o conteúdo manual ou automaticamente:
 
@@ -79,12 +83,14 @@ Lançamentos permitem que você:
 
    * As alterações nas páginas de origem são implementadas automaticamente na cópia de lançamento (se configurada como herança, ou seja, como uma live copy).
    * As alterações na sua cópia de lançamento podem ser feitas sem interromper essas atualizações automáticas ou as páginas de origem.
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 * [Crie um lançamento aninhado](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - um lançamento dentro de outro:
 
    * A origem é um lançamento existente.
    * Você pode [promover um lançamento ](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch)aninhado para qualquer destino. Esse destino pode ser um lançamento pai ou as páginas de origem de nível superior (Produção).
+
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
    >[!CAUTION]
@@ -93,7 +99,7 @@ Lançamentos permitem que você:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>A criação e edição de inicializações requer direitos de acesso a `/content/launches` - como no grupo padrão `content-authors`.
 >
 >Entre em contato com o administrador do sistema se você tiver algum problema.
 
@@ -103,7 +109,7 @@ O console Lançamentos fornece uma visão geral dos seus lançamentos e permite 
 
 * No console **Ferramentas**: **Ferramentas**, **Sites**, **Lançamentos**.
 
-* Or directly with [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* Ou diretamente com [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Lançamentos em Referências (console Sites) {#launches-in-references-sites-console}
 
