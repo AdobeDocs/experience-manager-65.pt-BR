@@ -11,6 +11,9 @@ topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 O filtro de disposição de conteúdo é um recurso de segurança contra ataques XSS em arquivos SVG.
 
-Depois de instalado, o filtro bloqueia o acesso a todos os ativos. Por exemplo, não era possível exibir um pfd online. Esta seção descreve como configurar o filtro de acordo com suas necessidades.
+Depois de instalado, o filtro bloqueia o acesso a todos os ativos. Por exemplo, você não pôde visualização um pfd online. Esta seção descreve como configurar o filtro de acordo com suas necessidades.
 
 ## Configurar filtro de descarte de conteúdo {#configure-content-disposition-filter}
 
-Você pode exibir o Filtro de [descarte de conteúdo do Apache Sling no GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+Você pode visualização o filtro de [Apache Sling Content Disposition no GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
 
 As opções de Filtro de descarte de conteúdo fornecem a seguinte funcionalidade:
 
-* Caminhos de descarte do conteúdo: uma lista de caminhos onde o filtro será aplicado, seguida por uma lista de tipos MIME a serem excluídos nesse caminho. Esse caminho deve ser um caminho absoluto e pode conter um curinga (&#39;&amp;ast;&#39;) no final, para corresponder cada caminho de recurso ao prefixo de caminho especificado. Por exemplo: /content/&amp;ast;:image/jpeg,image/svg+xml &quot; aplicará o filtro a todos os nós em /content, exceto imagens jpg e svg
+* Caminhos de descarte do conteúdo: uma lista de caminhos onde o filtro será aplicado seguido por uma lista de tipos MIME a serem excluídos nesse caminho. Esse caminho deve ser um caminho absoluto e pode conter um curinga (&#39;&amp;ast;&#39;) no final, para corresponder cada caminho de recurso ao prefixo de caminho especificado. Por exemplo: /content/&amp;ast;:image/jpeg,image/svg+xml &quot; aplicará o filtro a todos os nós em /content, exceto imagens jpg e svg
 
 * Caminhos de recursos excluídos: uma lista de recursos excluídos, cada caminho de recurso deve ser fornecido como caminho absoluto e totalmente qualificado. Correspondência de prefixo/curingas não são suportados.
 
