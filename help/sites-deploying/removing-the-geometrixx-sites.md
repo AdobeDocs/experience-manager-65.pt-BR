@@ -1,8 +1,8 @@
 ---
-title: Remoção dos sites da Geometrixx
-seo-title: Remoção dos sites da Geometrixx
-description: Saiba como remover o conteúdo do Geometrixx de amostra.
-seo-description: Saiba como remover o conteúdo do Geometrixx de amostra.
+title: Remoção dos sites de Geometrixx
+seo-title: Remoção dos sites de Geometrixx
+description: Saiba como remover o conteúdo da amostra de Geometrixx.
+seo-description: Saiba como remover o conteúdo da amostra de Geometrixx.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,13 +10,16 @@ content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
 translation-type: tm+mt
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
 
-# Remoção dos sites da Geometrixx{#removing-the-geometrixx-sites}
+# Remoção dos sites de Geometrixx{#removing-the-geometrixx-sites}
 
-O AEM vem com um conjunto de exemplos de sites da Geometrixx. É possível remover esse conteúdo de amostra por meio do Gerenciador **de pacotes**.
+AEM vem com um conjunto de exemplos de sites de Geometrixx. Você pode remover esse conteúdo de amostra pelo **Gerenciador de pacotes**.
 
 Os pacotes relacionados à geometrixx individuais são:
 
@@ -36,9 +39,9 @@ Há também um super-pacote:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Este pacote inclui todos os pacotes individuais acima. Para remover todo o conteúdo relacionado ao geometrixx de uma vez, clique em **Desinstalar** neste pacote. O superpacote entrará no estado desinstalado e todos os pacotes individuais desaparecerão da exibição do gerenciador de pacotes.
+Este pacote inclui todos os pacotes individuais acima. Para remover todo o conteúdo relacionado ao geometrixx de uma vez, clique em **Desinstalar** neste pacote. O superpacote entrará no estado desinstalado e todos os pacotes individuais desaparecerão da visualização do gerenciador de pacotes.
 
-Agora você tem uma instância do AEM &quot;vazia&quot; sem nenhum site de demonstração.
+Agora você tem uma instância AEM &quot;vazia&quot; sem nenhum site de demonstração.
 
 >[!NOTE]
 >
