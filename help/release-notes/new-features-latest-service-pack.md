@@ -4,9 +4,9 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 55ef8af25887a59d9d13275645c1ec20f0c49380
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2807'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,23 @@ Agora é possível executar as movimentações de página e as implantações de
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] os pacotes de complementos são disponibilizados uma semana após a versão programada do  [!DNL Experience Manager] Service Pack. [!DNL Experience Manager] 6.5 O Service Pack 7 (6.5.7.0) está programado para lançamento em 26 de novembro de 2020.
+>[!DNL Experience Manager Forms] os pacotes de complementos são disponibilizados uma semana após a versão programada do  [!DNL Experience Manager] Service Pack.
+
+### Melhorias no desempenho {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 O Service Pack 7 Forms melhora o desempenho para:
+
+* Validação dos valores de campo no servidor ao enviar um formulário adaptável.
+
+* Converter um formulário PDF em um formulário adaptável usando [!DNL Automated Forms Conversion service].
+
+### Configuração do cliente HTTP do modelo de dados de formulário para otimizar o desempenho {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] o modelo de dados de formulário ao integrar com os serviços Web RESTful como fonte de dados agora inclui configurações de cliente HTTP para otimização de desempenho.
+
+### Disponibilidade da opção Redefinir para cada componente no modo Layout {#reset-option-layout-mode}
+
+Agora é possível usar a opção de redefinição para cada componente no modo Layout de um formulário adaptável. Ao definir um layout de várias colunas para um painel, você pode usar esse recurso para redefinir componentes individuais dentro do painel.
 
 ## Principais recursos dos pacotes de serviços anteriores [!DNL Experience Manager] 6.5 {#key-features-previous-service-packs}
 
