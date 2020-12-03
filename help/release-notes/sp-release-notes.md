@@ -4,9 +4,9 @@ description: Notas de versão específicas do [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
+source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
 workflow-type: tm+mt
-source-wordcount: '4201'
+source-wordcount: '4243'
 ht-degree: 4%
 
 ---
@@ -310,6 +310,10 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 >
 >[!DNL Experience Manager Forms] libera os pacotes de complementos uma semana após a data programada de lançamento do  [!DNL Experience Manager] Service Pack.
 
+>[!NOTE]
+>
+>[!DNL Experience Manager] O Service Pack não inclui correções para  [!DNL Forms]. Eles são entregues usando um pacote complementar separado [!DNL Forms]. Além disso, é lançado um instalador cumulativo que inclui correções para [!DNL Experience Manager Forms] no JEE. Para obter mais informações, consulte [Instalar o complemento AEM Forms](#install-aem-forms-add-on-package) e [Instalar o AEM Forms no JEE](#install-aem-forms-jee-installer).
+
 **Formulários adaptáveis**
 
 * Não é possível editar um formulário adaptável usando a interface clássica depois de aplicar o [!DNL Experience Manager] Service Pack 6 (NPR-35126).
@@ -350,16 +354,16 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Quando você salva uma nova política de segurança de documento, o Experience Manager Forms exibe a mensagem de erro `Invalid filed value.Numeric value is required` (NPR-34678).
 
-* O Document Security não pode proteger o documento PDF 2.0 (CQ-4305851).
+* A Segurança do documento não pode proteger o documento PDF 2.0 (CQ-4305851).
 
-Para obter informações sobre atualizações de segurança, consulte a página [Boletins de segurança de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
+Para obter informações sobre atualizações de segurança, consulte [página de marcadores de segurança do Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Instalar 6.5.7.0 {#install}
 
 **Requisitos de configuração e mais informações**
 
 * AEM 6.5.7.0 requer AEM 6.5. Consulte [documentação de atualização](/help/sites-deploying/upgrade.md) para obter instruções detalhadas.
-* O download do service pack está disponível no Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* O download do service pack está disponível em Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 * Em uma implantação com MongoDB e várias instâncias, instale o AEM 6.5.7.0 em uma das instâncias do autor usando o Gerenciador de pacotes.
 
 >[!NOTE]
@@ -372,11 +376,11 @@ Execute as seguintes etapas para instalar o Service Pack em uma instância Adobe
 
 1. Reinicie a instância antes da instalação se a instância estiver no modo de atualização (e esse é o caso quando a instância foi atualizada de uma versão anterior). O Adobe também recomenda uma reinicialização se o tempo de atividade atual de uma instância for alto.
 
-1. Antes de instalar, tire um instantâneo ou um novo backup da sua instância [Experience Manager].
+1. Antes de instalar, faça um instantâneo ou um backup atualizado da sua instância [Experience Manager].
 
-1. Baixe o service pack de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.7.zip).
+1. Baixe o service pack de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.7.zip).
 
-1. Abra o Gerenciador de pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote. Para saber mais, consulte [Gerenciador de Pacotes](/help/sites-administering/package-manager.md).
+1. Abra o Gerenciador de pacotes e clique em **[!UICONTROL Carregar pacote]** para fazer upload do pacote. Para saber mais, consulte [Gerenciador de pacotes](/help/sites-administering/package-manager.md).
 
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
@@ -388,15 +392,15 @@ Execute as seguintes etapas para instalar o Service Pack em uma instância Adobe
 
 **Instalação automática**
 
-Há duas maneiras de instalar automaticamente o Adobe Experience Manager 6.5.7.0 em uma instância de trabalho:
+Há duas maneiras de instalar automaticamente o Adobe Experience Manager 6.5.7.0 em uma instância em funcionamento:
 
 A. Coloque o pacote na pasta `../crx-quickstart/install` quando o servidor estiver disponível online. O pacote é instalado automaticamente.
 
-B. Use a API [HTTP do Gerenciador de Pacotes](https://docs.adobe.com/content/docs/pt/crx/2-3/how_to/package_manager.html). Use `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
+B. Use a API [HTTP do Gerenciador de pacotes](https://docs.adobe.com/content/docs/pt/crx/2-3/how_to/package_manager.html). Use `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
 >[!NOTE]
 >
->O Adobe Experience Manager 6.5.7.0 não suporta a instalação de Bootstraps.
+>O Adobe Experience Manager 6.5.7.0 não suporta a instalação do Bootstrap.
 
 **Validar instalação**
 
@@ -404,11 +408,11 @@ B. Use a API [HTTP do Gerenciador de Pacotes](https://docs.adobe.com/content/doc
 
 1. Todos os pacotes OSGi são **[!UICONTROL ATIVE]** ou **[!UICONTROL FRAGMENTO]** no Console OSGi (Use o Console da Web: `/system/console/bundles`).
 
-1. O pacote OSGi `org.apache.jackrabbit.oak-core` é a versão 1.22.3 ou posterior (Use o Console da Web: `/system/console/bundles`).
+1. O pacote OSGi `org.apache.jackrabbit.oak-core` é a versão 1.22.3 ou posterior (Use o console da Web: `/system/console/bundles`).
 
 Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte os [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-### Instalar o pacote de complementos da Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
+### Instalar o pacote de complementos do Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -418,23 +422,23 @@ Para conhecer as plataformas certificadas para trabalhar com esta versão, consu
 >
 >Pule se você não estiver usando o AEM Forms. Correções no Adobe Experience Manager Forms são fornecidas por meio de um pacote complementar separado.
 
-1. Certifique-se de ter instalado o Adobe Experience Manager Service Pack.
+1. Verifique se você instalou o Adobe Experience Manager Service Pack.
 1. Baixe o pacote de complementos Forms correspondente listado em [Versões AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para seu sistema operacional.
 1. Instale o pacote de complementos Forms conforme descrito em [Instalação de pacotes de complementos AEM Forms](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
-### Instalar o Adobe Experience Manager Forms no JEE {#install-aem-forms-jee-installer}
+### Instalar o Adobe Experience Manager Forms em JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Pule se você não estiver usando o AEM Forms no JEE. As correções no Adobe Experience Manager Forms no JEE são fornecidas por meio de um instalador separado.
+>Pule se você não estiver usando o AEM Forms no JEE. Correções no Adobe Experience Manager Forms em JEE são entregues por meio de um instalador separado.
 
 Para obter informações sobre como instalar o instalador cumulativo do Experience Manager Forms na configuração do JEE e pós-implantação, consulte as [notas de versão](jee-patch-installer-65.md).
 
 ### UberJar {#uber-jar}
 
-O UberJar para Experience Manager 6.5.7.0 está disponível no [repositório do Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.7/).
+O UberJar para Experience Manager 6.5.7.0 está disponível no repositório [Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.7/).
 
-Para usar UberJar em um projeto Maven, consulte [como usar UberJar](/help/sites-developing/ht-projects-maven.md) e inclua a seguinte dependência no POM do projeto:
+Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/sites-developing/ht-projects-maven.md) e inclua a seguinte dependência no POM do projeto:
 
 ```shell
 <dependency>
@@ -447,18 +451,18 @@ Para usar UberJar em um projeto Maven, consulte [como usar UberJar](/help/sites-
 
 >[!NOTE]
 >
->O UberJar e outros artefatos relacionados estão disponíveis no Repositório Central Maven em vez do repositório do Adobe Public Maven (`repo.adobe.com`). O arquivo UberJar principal foi renomeado para `uber-jar-<version>.jar`. Portanto, não há `classifier`, com `apis` como valor, para a tag `dependency`.
+>O UberJar e os outros artefatos relacionados estão disponíveis no Repositório Central Maven em vez do repositório do Adobe Public Maven (`repo.adobe.com`). O arquivo UberJar principal é renomeado para `uber-jar-<version>.jar`. Portanto, não há `classifier`, com `apis` como valor, para a tag `dependency`.
 
 ## Recursos obsoletos {#removed-deprecated-features}
 
-Veja abaixo uma lista de recursos e recursos marcados como obsoletos com [!DNL Experience Manager] 6.5.7.0. Os recursos são marcados como obsoletos inicialmente e posteriormente removidos em uma versão futura. Uma opção alternativa é normalmente fornecida.
+Abaixo está uma lista de recursos e recursos marcados como obsoletos com [!DNL Experience Manager] 6.5.7.0. Os recursos são marcados como obsoletos inicialmente e depois removidos em uma versão futura. Uma opção alternativa geralmente é fornecida.
 
-Revise se você usa um recurso ou um recurso em uma implantação. Além disso, planeje alterar a implementação para usar uma opção alternativa.
+Analise se você usa um recurso ou um recurso em uma implantação. Além disso, planeje alterar a implementação para usar uma opção alternativa.
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | A tela **[!UICONTROL Aceitação de serviços da nuvem do AEM]** está obsoleta. Com a integração de AEM e Público alvo atualizada no AEM 6.5 para suportar a API do Target Standard, que usa autenticação via Adobe IMS e E/S, e a função crescente de inicialização de Adobe para instrumentar AEM páginas para análise e personalização, o assistente de aceitação se tornou funcionalmente irrelevante. | Configure conexões do sistema, autenticação Adobe IMS e integrações Adobe I/O por meio dos respectivos serviços de nuvem do AEM. |
-| Conectores | O Conector JCR de Adobe para Microsoft SharePoint 2010 e Microsoft SharePoint 2013 foi descontinuado para AEM 6.5. | N/A |
+| Integrações | A tela **[!UICONTROL Aceitação de serviços da AEM Cloud]** está obsoleta. Com a integração de AEM e Público alvo atualizada no AEM 6.5 para suportar a API do Target Standard, que usa autenticação via Adobe IMS e E/S, e a função crescente de inicialização de Adobe para instrumentar AEM páginas para análise e personalização, o assistente de aceitação se tornou funcionalmente irrelevante. | Configure conexões do sistema, autenticação Adobe IMS e integrações Adobe I/O por meio dos respectivos serviços de nuvem do AEM. |
+| Conectores | O Conector JCR do Adobe para Microsoft SharePoint 2010 e Microsoft SharePoint 2013 está obsoleto para o AEM 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
 
@@ -484,24 +488,24 @@ Revise se você usa um recurso ou um recurso em uma implantação. Além disso, 
    com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)BundleComponentActivator : Unexpected failure enabling component holder com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy (java.lang.IllegalStateException: Could not load implementation object class com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy)
    ```
 
-* Se você estiver atualizando sua instância [!DNL Experience Manager] da versão 6.5 para a versão 6.5.7.0, poderá ver `RRD4JReporter` exceções no arquivo `error.log`. Reinicie a instância para resolver o problema.
+* Se você estiver atualizando sua instância [!DNL Experience Manager] da versão 6.5 para a 6.5.7.0, poderá visualização as exceções `RRD4JReporter` no arquivo `error.log`. Reinicie a instância para resolver o problema.
 
-* Se você instalar o [!DNL Experience Manager] 6.5 Service Pack 5 ou um service pack anterior em [!DNL Experience Manager] 6.5, a cópia do tempo de execução do modelo de fluxo de trabalho personalizado dos ativos (criado em `/var/workflow/models/dam`) será excluída.
-Para recuperar a cópia do tempo de execução, o Adobe recomenda sincronizar a cópia do tempo de design do modelo de fluxo de trabalho personalizado com a cópia do tempo de execução usando a API HTTP:
+* Se você instalar o [!DNL Experience Manager] 6.5 Service Pack 5 ou um service pack anterior em [!DNL Experience Manager] 6.5, a cópia em tempo de execução do modelo de fluxo de trabalho personalizado de ativos (criado em `/var/workflow/models/dam`) será excluída.
+Para recuperar sua cópia de tempo de execução, o Adobe recomenda sincronizar a cópia de tempo de design do modelo de fluxo de trabalho personalizado com sua cópia de tempo de execução usando a API HTTP:
    `<designModelPath>/jcr:content.generate.json`.
 
-* Entre em contato com o Atendimento ao cliente da Adobe se encontrar problemas ao editar e criar regras em cascata no [!UICONTROL Editor de esquema de metadados da pasta Forms] e [!UICONTROL Editor de Forms do esquema de metadados] usando a caixa de diálogo [!UICONTROL Definir regra]. As regras que já foram criadas e salvas estão funcionando como esperado.
+* Entre em contato com o Atendimento ao cliente do Adobe se tiver problemas ao editar e criar regras em cascata no [!UICONTROL Editor Forms do Schema Metadados da Pasta] e [!UICONTROL Editor Forms do Schema Metadados] usando a caixa de diálogo [!UICONTROL Definir Regra]. As regras que já foram criadas e salvas estão funcionando como esperado.
 
 * Se uma pasta na hierarquia for renomeada em [!DNL Experience Manager Assets] e a pasta aninhada que contém um ativo for publicada em [!DNL Brand Portal], o título da pasta não será atualizado em [!DNL Brand Portal] até que a pasta raiz seja publicada novamente.
 
-* Quando um usuário seleciona configurar um campo pela primeira vez em um formulário adaptável, a opção para salvar uma configuração não é exibida no Navegador de propriedades. A seleção de configuração de outro campo do formulário adaptável no mesmo editor resolve o problema.
+* Quando um usuário seleciona configurar um campo pela primeira vez em um formulário adaptável, a opção para salvar uma configuração não é exibida no Navegador de propriedades. Selecionar para configurar outro campo do formulário adaptável no mesmo editor resolve o problema.
 
 * Se o assistente [!UICONTROL Connected assets configuration] retornar uma mensagem de erro 404 após a instalação, reinstale manualmente os pacotes `cq-remotedam-client-ui-content` e `cq-remotedam-client-ui-components` usando o Gerenciador de pacotes.
 
 * Os seguintes erros e mensagens de aviso podem ser exibidos durante a instalação do AEM 6.5.x.x:
    * &quot;Quando a integração do Target é configurada no AEM usando a API do Target Standard (autenticação IMS), a exportação de Fragmentos de experiência para o Target resulta na criação de tipos de ofertas incorretos. Em vez do tipo &quot;Fragmento de experiência&quot;/fonte &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/fonte &quot;Adobe Target Classic&quot;.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Nenhuma janela de manutenção encontrada em granito/operações/manutenção.
-   * A validação do servidor de formulário adaptável falha quando funções agregadas como SUM, MAX e MIN são usadas. CQ-4274424
+   * A validação do lado do servidor do Formulário adaptável falha quando funções de agregação, como SUM, MAX e MIN são usadas. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Não foram encontradas janelas de manutenção no granito/operações/manutenção.
    * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner que pode ser comprado.
 
