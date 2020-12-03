@@ -3,15 +3,15 @@ title: Relatórios sobre uso e compartilhamento de ativos
 description: Relatórios sobre seus ativos em [!DNL Adobe Experience Manager Assets] que ajudam você a entender o uso, a atividade e o compartilhamento de seus ativos digitais.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 10%
+source-wordcount: '1131'
+ht-degree: 9%
 
 ---
 
 
-# Relatórios dos ativos {#asset-reports}
+# Relatórios de ativos {#asset-reports}
 
 O relatórios de ativos permite que você avalie a utilidade de sua implantação [!DNL Adobe Experience Manager Assets]. Com [!DNL Assets], você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
 
@@ -152,3 +152,11 @@ Para remover relatórios que não são mais necessários, configure o serviço d
 1. Abra a configuração **[!UICONTROL DAM Report Purge Service]**.
 1. Especifique a frequência (intervalo de tempo) do serviço de expurgação no campo `scheduler.expression.name`. Você também pode configurar a idade e o limite de quantidade para os relatórios.
 1. Salve as alterações.
+
+## Solução de problemas de informações, dicas e limitações {#best-practices-and-limitations}
+
+* Se alguns relatórios ou números nos relatórios não estiverem disponíveis ou conforme esperado, certifique-se de que o serviço [!UICONTROL Gravador de Evento Day CQ DAM] esteja ativado.
+
+* Remova os relatórios que não são mais necessários. Use as opções de configuração no serviço de Expurgação de relatório do DAM para configurar os critérios para expurgar relatórios.
+
+* Se o Relatório de uso de disco não for gerado e você estiver usando [!DNL Dynamic Media], verifique se todos os ativos foram processados corretamente. Para resolver, reprocesse os ativos e gere o relatório novamente.
