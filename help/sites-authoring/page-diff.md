@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 99%
+source-wordcount: '579'
+ht-degree: 97%
 
 ---
 
@@ -61,10 +61,6 @@ O diferencial detecta alterações no componente e no nível do HTML. Itens que 
 
 * Verde claro - Componente adicionado
 * Rosa - Componente removido
-* Azul - Componente alterado
-* Azul - Componente movido
-
-Observe que as cores alteradas e movidas são as mesmas.
 
 **Alterações no HTML**
 
@@ -96,9 +92,7 @@ Você pode sair do diferencial lado a lado a qualquer momento clicando no botão
 Existem algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme o esperado.
 
 * Ao diferenciar versões e lançamentos, o recurso de diferencial não leva em consideração os componentes dinâmicos, como navegação estrutural, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
-* Para versões, o diferencial não recria a política de controle de acesso e as relações de live copy.
-* Se for feita alguma alteração em uma imagem, como modificar os atributos alt, title ou src, ela será destacada em azul como alterada. No entanto, em alguns casos, a imagem tem uma representação Base64 do atributo src e, mesmo que as duas imagens tenham a mesma aparência, elas serão marcadas pelo recurso de diferencial como diferentes por causa dos diferentes atributos src.
-* O recurso de diferencial é incapaz de detectar a rotação da imagem.
+* Para versões, o diff não recria a política de controles de acesso e as relações de live copy.
 * Se uma página for movida, você não poderá mais executar um diff com versões feitas antes do movimento.
 
    * Se você tiver problemas com um diff, verifique a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) da página para ver se a página foi movida.
