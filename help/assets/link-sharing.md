@@ -3,9 +3,9 @@ title: Compartilhar ativos usando um link
 description: Compartilhe ativos, pastas e coleções como um URL.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f6da1c69ea3b3c3f07e8ac10fd8e1e9c7208158
+source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1056'
 ht-degree: 5%
 
 ---
@@ -57,9 +57,9 @@ Para gerar o URL dos ativos que você deseja compartilhar com os usuários, use 
    >
    >Se você inserir uma ID de email de um usuário que não seja membro de sua organização, as palavras [!UICONTROL Usuário externo] receberão o prefixo ID de email do usuário.
 
-1. No campo **[!UICONTROL Assunto]**, insira uma linha de assunto.
+1. Na caixa **[!UICONTROL Assunto]**, digite um assunto para o ativo que deseja compartilhar.
 
-1. No campo **[!UICONTROL Message]**, digite uma mensagem opcional.
+1. Na caixa **[!UICONTROL Message]**, digite uma mensagem opcional.
 
 1. No campo **[!UICONTROL Expiração]**, especifique uma data e hora de expiração para o link parar de funcionar. Por padrão, a data de expiração é definida para uma semana a partir da data em que você compartilha o link.
 
@@ -69,9 +69,9 @@ Para gerar o URL dos ativos que você deseja compartilhar com os usuários, use 
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários por email.
 
-1. Para visualização do ativo compartilhado, clique no link no email enviado ao usuário. O ativo compartilhado é exibido na página **[!UICONTROL Adobe Marketing Cloud]**.
+1. Para visualização do ativo compartilhado, clique no link no email enviado ao usuário. O ativo compartilhado é exibido na página [!UICONTROL Adobe Marketing Cloud].
 
-   ![chlimage_1-260](assets/chlimage_1-545.png)
+   ![Os ativos compartilhados estão disponíveis no Adobe Marketing Cloud](assets/chlimage_1-545.png)
 
 1. Para gerar uma pré-visualização do ativo, clique no ativo compartilhado. Para fechar a pré-visualização e voltar para a página **[!UICONTROL Marketing Cloud]**, clique em **[!UICONTROL Voltar]** na barra de ferramentas. Se você tiver compartilhado uma pasta, clique em **[!UICONTROL Pasta pai]** para retornar à pasta pai.
 
@@ -83,7 +83,7 @@ Para gerar o URL dos ativos que você deseja compartilhar com os usuários, use 
 
 1. Para baixar o ativo compartilhado, clique em **[!UICONTROL Selecionar]** na barra de ferramentas, clique no ativo e em **[!UICONTROL Download]** na barra de ferramentas.
 
-   ![chlimage_1-262](assets/chlimage_1-547.png)
+   ![Opção da barra de ferramentas para baixar o ativo compartilhado](assets/chlimage_1-547.png)
 
 1. Para visualização dos ativos que você compartilhou como links, vá para a interface do usuário [!DNL Assets] e clique no logotipo [!DNL Experience Manager]. Escolha **[!UICONTROL Navegação]**. No painel de Navegação, escolha **[!UICONTROL Links compartilhados]** para exibir uma lista de ativos compartilhados.
 
