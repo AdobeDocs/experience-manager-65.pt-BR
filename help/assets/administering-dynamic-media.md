@@ -1,14 +1,14 @@
 ---
 title: Configuração do Dynamic Media
-description: Para configurar a mídia dinâmica, é necessário configurar a mídia dinâmica e gerenciar predefinições de imagem e do visualizador
+description: Para configurar o Dynamic Media, é necessário configurar o Dynamic Media e gerenciar predefinições de imagem e do visualizador.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Esta documentação descreve os recursos do Dynamic Media, que são integrados diretamente ao AEM. Se você estiver usando o Dynamic Media Classic (anteriormente denominado Scene7) integrado ao AEM, consulte [a documentação de integração do Dynamic Media Classic](/help/sites-administering/scene7.md).
+>Esta documentação descreve os recursos do Dynamic Media, que são integrados diretamente ao AEM. Se você estiver usando o Dynamic Media Classic integrado ao AEM, consulte [a documentação de integração do Dynamic Media Classic](/help/sites-administering/scene7.md).
 >
 >Consulte [Cenário de dupla utilização](/help/sites-administering/scene7.md#dual-use-scenario) para ver os momentos em que você pode querer usar AEM integrados ao Dynamic Media Classic juntamente com o Dynamic Media.
 
