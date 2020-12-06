@@ -3,9 +3,9 @@ title: Compreender conceitos de metadados
 description: Saiba mais sobre a necessidade e os tipos de metadados que permitem uma classificação e organização mais fáceis dos ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2731'
 ht-degree: 6%
 
 ---
@@ -178,7 +178,7 @@ Além do DCMES, existem outros elementos de metadados criados pela iniciativa Du
 | descrição | Mais informações sobre o ativo. |
 | format | O formato de arquivo, a mídia física ou as dimensões do ativo. [!DNL Experience Manager] usa  `dc:format` para indicar o tipo MIME do ativo. |
 | identifier | Uma referência exclusiva ao ativo. |
-| language | O idioma do ativo (por exemplo, en para inglês). |
+| language | O idioma do ativo (por exemplo, `en` para inglês). |
 | editor | A pessoa ou empresa responsável por disponibilizar o ativo. |
 | relation | Um ativo relacionado. |
 | direitos | Informações sobre quem tem os direitos a este ativo. |
