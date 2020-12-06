@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
 workflow-type: tm+mt
 source-wordcount: '11812'
 ht-degree: 8%
@@ -402,7 +402,7 @@ Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. Na tabela a seguir
 
 | Tipo de vídeo | Largura x altura | Proporção de largura | Taxa de altura |
 |--- |--- |--- |--- |
-| Origem | 1920x1080 | 1 | 1 |
+| Origem | 1920x1080 | 1 | 3 |
 | Codificado | 960 x 540 | 2 | 2 |
 | Codificado | 640 x 360 | 3 | 3 |
 | Codificado | 480 x 270 | 4 | 4 |
@@ -991,13 +991,13 @@ Para visualização de relatórios de vídeo:
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios de vídeo.]**
 1. Na página Relatórios de vídeo, execute um dos procedimentos a seguir:
 
-   * Próximo ao canto superior direito, toque no **ícone Atualizar relatório de vídeo **I.
+   * Próximo ao canto superior direito, toque no ícone **Atualizar relatório de vídeo**.
 Você só precisará usar Atualizar se a data final do relatório for o dia atual. Isso garante que você visualize o rastreamento de vídeo que ocorreu desde a última vez que você executou o relatório.
 
-   * Próximo ao canto superior direito, toque no **ícone Seletor de datas **I.
+   * Próximo ao canto superior direito, toque no ícone **Seletor de data**.
 Especifique o intervalo de datas inicial e final para o qual deseja obter dados de vídeo e toque em **[!UICONTROL Executar Relatório.]**
 
-   A caixa de grupo Principais métricas identifica várias medidas de agregação para todos os *vídeos *publicados em seu site.
+   A caixa de grupo Principais métricas identifica várias medidas de agregação para todos os vídeos *publicados* do site.
 
 1. Na tabela que lista os vídeos publicados principais, toque no nome de um vídeo para reproduzir o vídeo e também veja o relatório de retenção de audiência (suspenso) do vídeo.
 
