@@ -3,9 +3,9 @@ title: Migrar ativos em massa
 description: Descreve como trazer ativos para [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1799'
 ht-degree: 8%
 
 ---
@@ -79,7 +79,7 @@ Como os ativos não precisam ser transmitidos através de uma rede, o desempenho
 
 ### Processar representações {#processing-renditions}
 
-Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho [!UICONTROL DAM Update Asset] para extrair metadados e gerar representações. Antes de executar esta etapa, você precisa duplicado e modificar o fluxo de trabalho [!UICONTROL DAM Update Asset] para atender às suas necessidades. O fluxo de trabalho predefinido contém várias etapas que podem não ser necessárias para você, como a geração do Scene7 PTIFF ou a integração [!DNL InDesign Server].
+Depois de carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho [!UICONTROL DAM Update Asset] para extrair metadados e gerar representações. Antes de executar esta etapa, você precisa duplicado e modificar o fluxo de trabalho [!UICONTROL DAM Update Asset] para atender às suas necessidades. O fluxo de trabalho predefinido contém várias etapas que podem não ser necessárias para você, como a geração do Dynamic Media PTIFF ou a integração [!DNL InDesign Server].
 
 Depois de configurar o fluxo de trabalho de acordo com suas necessidades, você tem duas opções para executá-lo:
 
