@@ -4,9 +4,9 @@ description: Saiba como localizar os ativos necessários em [!DNL Adobe Experien
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '5769'
+source-wordcount: '5767'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 5%
 | [Limitações ](#limitations) e  [dicas](#tips) |  |  |
 | [Exemplos ilustrados](#samples) |  |  |
 
-Pesquise ativos usando o campo Omnisearch na parte superior da interface da Web [!DNL Experience Manager]. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Ficheiros]** em [!DNL Experience Manager], clique em ![ícone_de_pesquisa](assets/do-not-localize/search_icon.png) na barra superior, introduza a palavra-chave de pesquisa e prima return. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch. `Location:Assets` é pré-selecionada para limitar as pesquisas aos ativos DAM. [!DNL Experience Manager] fornece sugestões enquanto seu start digita uma palavra-chave de pesquisa.
+Pesquise ativos usando o campo Omnisearch na parte superior da interface da Web [!DNL Experience Manager]. Vá para **[!UICONTROL Ativos]** > **[!UICONTROL Ficheiros]** em [!DNL Experience Manager], clique em ![ícone_de_pesquisa](assets/do-not-localize/search_icon.png) na barra superior, introduza a palavra-chave de pesquisa e selecione `Return`. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch. `Location:Assets` é pré-selecionada para limitar as pesquisas aos ativos DAM. [!DNL Experience Manager] fornece sugestões enquanto seu start digita uma palavra-chave de pesquisa.
 
 Use o painel **[!UICONTROL Filtros]** para procurar ativos, pastas, tags e metadados. Você pode filtrar os resultados da pesquisa com base nas várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados de insights e licenciamento da Adobe Stock. Você pode personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando [aspectos de pesquisa](/help/assets/search-facets.md). O filtro [!UICONTROL Tipo de arquivo] no painel [!UICONTROL Filtros] tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível estarão parcialmente marcadas.
 
@@ -259,7 +259,7 @@ O recurso de pesquisa em [!DNL Experience Manager Assets] tem as seguintes limit
 * Não insira um espaço à esquerda no query de pesquisa; caso contrário, a pesquisa não funcionará.
 * [!DNL Experience Manager] pode continuar a mostrar o termo de pesquisa depois de selecionar as propriedades de um ativo dos resultados pesquisados e cancelar a pesquisa.  <!-- (CQ-4273540) -->
 * Ao procurar pastas ou arquivos e pastas, os resultados da pesquisa não podem ser classificados em nenhum parâmetro.
-* Se você pressionar Return sem digitar na barra Omnisearch, [!DNL Experience Manager] retornará uma lista de somente arquivos e não pastas. Se você pesquisar especificamente por pastas sem usar uma palavra-chave, [!DNL Experience Manager] não retornará nenhum resultado.
+* Se você selecionar `Return` sem digitar na barra do Omnisearch, [!DNL Experience Manager] retornará uma lista de somente arquivos e não pastas. Se você pesquisar especificamente por pastas sem usar uma palavra-chave, [!DNL Experience Manager] não retornará nenhum resultado.
 
 Pesquisa visual ou pesquisa de semelhança tem as seguintes limitações:
 
