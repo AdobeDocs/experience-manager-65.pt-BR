@@ -3,9 +3,9 @@ title: '[!DNL Assets] guia de dimensionamento'
 description: Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Considerando esses fatores, você precisa de uma metodologia para calcular um es
 1. Determine o tamanho e o número de ativos que serão carregados no sistema.
 1. Obtenha uma amostra representativa dos ativos a serem carregados em [!DNL Experience Manager]. Por exemplo, se você planeja carregar arquivos PSD, JPG, AI e PDF no sistema, é necessário várias imagens de amostra de cada formato de arquivo. Além disso, essas amostras devem ser representativas dos diferentes tamanhos de arquivo e complexidades das imagens.
 1. Defina as representações a serem usadas.
-1. Crie as execuções em [!DNL Experience Manager] usando [!DNL ImageMagick] ou [!DNL Adobe Creative Cloud] aplicativos. Além das representações que os usuários especificam, crie execuções prontas para uso. Para usuários que implementam o Scene7, você pode usar o binário IC para gerar as execuções PTIFF a serem armazenadas no Experience Manager.
+1. Crie as execuções em [!DNL Experience Manager] usando [!DNL ImageMagick] ou [!DNL Adobe Creative Cloud] aplicativos. Além das representações que os usuários especificam, crie execuções prontas para uso. Para usuários que implementam o Dynamic Media, você pode usar o binário IC para gerar as execuções PTIFF a serem armazenadas no Experience Manager.
 1. Se você planeja usar subativos, gere-os para os tipos de arquivo apropriados.
 1. Compare o tamanho das imagens de saída, representações e subativos com as imagens originais. Ele permite gerar um fator de crescimento esperado quando o sistema é carregado. Por exemplo, se você gerar representações e subativos com um tamanho combinado de 3 GB após o processamento de 1 GB de ativos, o fator de crescimento da representação será 3.
 1. Determine o tempo máximo durante o qual as versões de ativos devem ser mantidas no sistema.
