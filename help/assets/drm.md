@@ -3,9 +3,9 @@ title: Digital Rights Management de ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1398'
 ht-degree: 5%
 
 ---
@@ -50,7 +50,7 @@ Você pode pesquisar ativos expirados, incluindo subativos expirados no painel P
 
 1. No console [!DNL Assets], clique em **[!UICONTROL Pesquisar]** na barra de ferramentas para exibir a caixa Omnisearch.
 
-1. Com o cursor na caixa Omnisearch, pressione a tecla Enter para exibir a página de resultados da pesquisa.
+1. Com o cursor na caixa Omnisearch, selecione a tecla `Enter` para exibir a página de resultados da pesquisa.
 1. Abra o painel de pesquisa no painel esquerdo. Clique na opção **[!UICONTROL Status de expiração]** para expandi-la.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -110,7 +110,7 @@ O console [!DNL Assets] pode exibir vários estados para ativos. Dependendo do e
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
 1. Para pesquisar ativos com base em seu status, clique em **[!UICONTROL Pesquisar]** ![opção de pesquisa](assets/do-not-localize/search_icon.png) para exibir a barra do Omnisearch.
-1. Pressione return (Retornar) e clique em [!DNL Experience Manager] para exibir o painel de pesquisa.
+1. Selecione `Return` e clique em [!DNL Experience Manager] para exibir o painel de pesquisa.
 1. No painel de pesquisa, clique em **[!UICONTROL Publicar status]** e selecione **[!UICONTROL Publicado]** para procurar ativos publicados em [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
