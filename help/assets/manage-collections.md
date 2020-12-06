@@ -4,9 +4,9 @@ description: Saiba mais sobre tarefas para gerenciar coleções de ativos, como 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2176'
 ht-degree: 11%
 
 ---
@@ -80,7 +80,7 @@ Para criar uma coleção inteligente, siga as etapas:
 
 1. Navegue até a [!DNL Assets] interface do usuário e clique em pesquisar.
 
-1. Digite a palavra-chave de pesquisa na caixa Omnisearch e pressione `Enter`. Abra o painel Filtros e aplique um filtro de pesquisa.
+1. Digite a palavra-chave de pesquisa na caixa Omnisearch e selecione `Enter`. Abra o painel Filtros e aplique um filtro de pesquisa.
 
 1. Na lista **[!UICONTROL Arquivos e pastas]**, selecione **[!UICONTROL Arquivos]**.
 
@@ -120,7 +120,7 @@ Como alternativa, você pode arrastar o ativo para a área **[!UICONTROL Soltar 
 As coleções inteligentes são criadas salvando uma pesquisa para que você possa alterar seu conteúdo modificando os parâmetros de pesquisa de [pesquisa salva](#saved-searches).
 
 1. Na interface do usuário [!DNL Assets], clique na opção de pesquisa ![opção de pesquisa](assets/do-not-localize/search_icon.png) na barra de ferramentas.
-1. Com o cursor na caixa Omnisearch, pressione a tecla Return.
+1. Com o cursor na caixa Omnisearch, selecione a tecla `Return`.
 1. Na interface [!DNL Experience Manager], abra o painel Filtros.
 1. Na lista **[!UICONTROL Pesquisas salvas]**, selecione a coleção inteligente que deseja modificar. O painel Pesquisar exibe os filtros configurados para a pesquisa salva.
 
@@ -249,7 +249,7 @@ Editar pesquisas salvas é o mesmo que editar coleções inteligentes. Para obte
 Para excluir pesquisas salvas, siga estas etapas:
 
 1. Na interface do usuário [!DNL Assets], clique em pesquisar ![opção de pesquisa](assets/do-not-localize/search_icon.png).
-1. Com o cursor no campo Omnisearch, pressione a tecla Return.
+1. Com o cursor no campo Omnisearch, selecione a tecla `Return`.
 1. Na interface [!DNL Experience Manager], abra o painel Filtros.
 1. Na lista **[!UICONTROL Pesquisas salvas]**, clique em **[!UICONTROL Excluir]** ao lado da coleção inteligente que você deseja excluir.
 
