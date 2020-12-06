@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 24%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https
    Se o Modelo contiver apenas `<ID>`, o Dynamic Media preencherá `https://<server>/is/image`, onde `<server>` é o Nome do Servidor de Publicação definido em Configurações Gerais, e &lt;ID> serão os ativos selecionados para invalidação.
 
 1. No canto inferior direito da página, clique em **[!UICONTROL Fechar.]**
-1. Na interface do usuário do Dynamic Media Classic (Scene7), selecione um ou mais ativos e clique em **[!UICONTROL Arquivo > Invalidar CDN.]** Você verá uma lista de um ou mais URLs gerados a partir do modelo criado e dos ativos selecionados. Ele usa o URL do servidor listado em &quot;Published Server Name&quot; nas Configurações gerais do aplicativo.
+1. Na interface do usuário do Dynamic Media Classic, selecione um ou mais ativos e clique em **[!UICONTROL Arquivo > Invalidar CDN.]** Você verá uma lista de um ou mais URLs gerados a partir do modelo criado e dos ativos selecionados. Ele usa o URL do servidor listado em &quot;Published Server Name&quot; nas Configurações gerais do aplicativo.
 
    Por exemplo, com o Modelo de Invalidação CDN definido na etapa anterior, suponha que você tenha selecionado uma única imagem de ativo de imagem chamada `Backpack_B`. Quando você clica em **[!UICONTROL Arquivo > Invalidar CDN]**, o resultado é o seguinte URL gerado na interface do usuário de Invalidação CDN:
 
