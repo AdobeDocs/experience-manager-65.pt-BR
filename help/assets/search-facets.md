@@ -3,10 +3,10 @@ title: Pesquisar aspectos para filtrar os resultados da pesquisa
 description: Como criar, modificar e usar aspectos de pesquisa em [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 18%
+source-wordcount: '2424'
+ht-degree: 17%
 
 ---
 
@@ -38,15 +38,15 @@ Para pesquisas de texto completo, adicione o predicado [!UICONTROL Texto complet
    >
    >1. Navegue até `/conf/global/settings/dam/search/facets/assets/jcr:content/items` no CRXDE.
    >1. Exclua o nó **type**.
-   >1. No caminho */libs/settings/dam/search/facets/assets/jcr:content/items*, copie os nós **asset, directory, typeor, excludepaths** e **searchtype** no caminho mencionado na etapa 1.
+   >1. No caminho `/libs/settings/dam/search/facets/assets/jcr:content/items`, copie os nós `asset`, `directory`, `typeor`, `excludepaths` e `searchtype` para o caminho mencionado na etapa 1.
    >1. Salve as alterações.
 
 
 1. Na página [!UICONTROL Editar Forms] de Pesquisa, arraste um predicado da guia **[!UICONTROL Selecionar Predicado]** para o painel principal. Por exemplo, arraste **[!UICONTROL Predicado de propriedade]**.
 
-   ![Pressione e mova um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
+   ![Selecionar e mover um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
 
-   *Figura: Pressione e mova um predicado para personalizar os filtros de pesquisa.*
+   *Figura: Selecione e mova um predicado para personalizar os filtros de pesquisa.*
 
 1. Na guia [!UICONTROL Configurações], digite um rótulo de campo, um texto de espaço reservado e uma descrição para o predicado. Especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. O rótulo do cabeçalho na guia [!UICONTROL Settings] identifica o tipo do predicado selecionado.
 
@@ -82,7 +82,7 @@ Quando você seleciona uma opção, a pesquisa é executada com base na propried
 
 Por exemplo, se você selecionar &quot;Imagens&quot; para tipos de arquivos, a consulta de pesquisa dos ativos será criada ao combinar a propriedade `value` usando uma operação OR. Por exemplo, a consulta de pesquisa de imagens é construída combinando os resultados correspondentes de *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* e *image/tiff* da propriedade `jcr:content/metadata/dc:format` usando uma operação OR.
 
-![A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para que query de pesquisa funcionem](assets/filetype-value-property.png)
+![A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem](assets/filetype-value-property.png)
 
 A propriedade value de um tipo de arquivo, como visto no CRXDE, é usada para query de pesquisa funcionarem
 
