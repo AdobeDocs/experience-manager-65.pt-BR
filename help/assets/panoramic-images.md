@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos 
 
 Para fazer upload de ativos para uso com o visualizador de Imagem panorâmica, consulte [Fazer upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 
-## Configuração do Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
+## Configuração do Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é necessário sincronizar as predefinições do visualizador de Imagem panorâmica com os metadados específicos do Dynamic Media Classic (Scene7) e do Dynamic Media Classic (Scene7) para que as predefinições do visualizador sejam atualizadas no JCR. Para fazer isso, configure o Dynamic Media Classic (Scene7) da seguinte maneira:
+Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é necessário sincronizar as predefinições do visualizador de Imagem panorâmica com os metadados específicos do Dynamic Media Classic e do Dynamic Media Classic para que as predefinições do visualizador sejam atualizadas no JCR. Para fazer isso, configure o Dynamic Media Classic da seguinte maneira:
 
-1. [Faça logon na sua instância do Dynamic Media Classic (Scene7) ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada conta de empresa.
+1. [Faça logon na sua instância do Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicpara cada conta de empresa.
 
 1. Perto do canto superior direito da página, clique em **[!UICONTROL Configuração > Configuração de Aplicativo > Configurar Publicação > Servidor de Imagem.]**
 1. Na página de Publicação do Servidor de Imagens, no menu suspenso **[!UICONTROL Publicar Contexto]** próximo ao topo, selecione **[!UICONTROL Serviço de Imagens.]**
@@ -51,7 +51,7 @@ Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é n
 1. Na mesma página de Publicação do Servidor de Imagens, localize o cabeçalho **[!UICONTROL Atributos de Solicitação.]**
 1. No cabeçalho Request Attributes (Atributos de solicitação), localize **[!UICONTROL Reply Image Size Limit (Limite de tamanho de imagem de resposta).]** Em seguida, nos campos Largura e Altura associados, aumente o tamanho máximo permitido da imagem para imagens panorâmicas.
 
-   O Dynamic Media Classic (Scene7) tem um limite de 25.000.000 pixels. O tamanho máximo permitido para imagens com uma proporção de 2:1 é 7000 x 3500. No entanto, para telas típicas de desktop, 4096 x 2048 pixels são suficientes.
+   O Dynamic Media Classic tem um limite de 25.000.000 pixels. O tamanho máximo permitido para imagens com uma proporção de 2:1 é 7000 x 3500. No entanto, para telas típicas de desktop, 4096 x 2048 pixels são suficientes.
 
    >[!NOTE]
    >
@@ -72,11 +72,11 @@ Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é n
 
 Se você soltou uma imagem no componente de Mídia panorâmica em seu WCM e o espaço reservado do componente desabou, talvez você queira solucionar o seguinte problema:
 
-* Se você encontrar um erro 403 Proibido, ele pode ter sido causado pelo tamanho da imagem solicitada ser muito grande. Revise as configurações **[!UICONTROL Reply Image Size Limit]** em [Configuração do Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Se você encontrar um erro 403 Proibido, ele pode ter sido causado pelo tamanho da imagem solicitada ser muito grande. Revise as configurações **[!UICONTROL Reply Image Size Limit]** em [Configuração do Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Para um &quot;Bloqueio inválido&quot; no ativo ou &quot;Erro de análise&quot; exibido na página, marque Modo de ofuscação de solicitação e Modo de bloqueio de solicitação para garantir que eles estejam desativados.
 * Para um erro de tela contaminada, configure um Caminho de arquivo de definição de conjunto de regras e Invalide o CTN para as solicitações anteriores do ativo de imagem.
-* Se a qualidade da imagem ficar muito baixa depois de uma solicitação de imagem com dimensionamento acima do limite suportado, verifique se a configuração **[!UICONTROL Atributos de codificação JPEG > Quality]** não está vazia. Uma configuração típica para o campo **[!UICONTROL Quality]** é `95`. Você pode encontrar a configuração na página Publicação do Servidor de imagens. Para acessar a página, consulte [Configuração do Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Se a qualidade da imagem ficar muito baixa depois de uma solicitação de imagem com dimensionamento acima do limite suportado, verifique se a configuração **[!UICONTROL Atributos de codificação JPEG > Quality]** não está vazia. Uma configuração típica para o campo **[!UICONTROL Quality]** é `95`. Você pode encontrar a configuração na página Publicação do Servidor de imagens. Para acessar a página, consulte [Configuração do Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Visualização de imagens panorâmicas {#previewing-panoramic-images}
 
