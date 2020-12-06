@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 17%
@@ -227,7 +227,7 @@ O valor exato retornado pelo Elemento de dados depende do contexto. Se o Element
    * Usa o evento key press da extensão Core Adobe Launch como disparador.
    * Envia o valor de **[!UICONTROL ZoomScale]** Elemento de dados para a Adobe Analytics.
 
-Agora, suponha que o usuário final carregue a página da Web com os dois visualizadores. Em *viewer1*, eles aumentam o zoom para 50% de escala; em seguida, em *viewer2*, aumentam o zoom para 25% da escala. Em *viewer1*, eles deslocam a imagem e, por fim, pressionam uma tecla no teclado.
+Agora, suponha que o usuário final carregue a página da Web com os dois visualizadores. Em *viewer1*, eles aumentam o zoom para 50% de escala; em seguida, em *viewer2*, aumentam o zoom para 25% da escala. Em *viewer1*, eles deslocam a imagem e finalmente selecionam uma tecla no teclado.
 
 A atividade do usuário final resulta nas duas chamadas de rastreamento a seguir feitas para a Adobe Analytics:
 
