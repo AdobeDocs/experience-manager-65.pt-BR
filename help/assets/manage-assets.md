@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '9565'
+source-wordcount: '9562'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
    ![Criar opção para carregar ativos](assets/create-options.png)
 
-   Para selecionar vários arquivos, pressione a tecla Ctrl ou Command e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
+   Para selecionar vários arquivos, selecione a tecla `Ctrl` ou `Command` e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
 
    Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo mais tarde a partir da mesma página. Clique em **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um upload é start.
 
@@ -355,13 +355,13 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 1. Na interface do usuário [!DNL Assets], navegue até o ativo desejado usando `Tab` e as teclas de seta.
 
-1. Pressione a tecla `Enter` no ativo desejado para abri-lo. É possível aplicar zoom em ativos no modo de pré-visualização.
+1. Selecione a tecla `Enter` no ativo desejado para abri-lo. É possível aplicar zoom em ativos no modo de pré-visualização.
 
 1. Para aplicar zoom no ativo:
    1. Use a tecla `Tab` para mover o foco para a opção de zoom.
    1. Use a tecla `Enter` para aplicar zoom na imagem.
 
-   Para diminuir o zoom, use a tecla `Tab` para mover o foco para a opção de redução de zoom e pressione `Enter`.
+   Para diminuir o zoom, use a tecla `Tab` para mover o foco para a opção de afastar o zoom e selecione `Enter`.
 
 1. Use as teclas `Shift` + `Tab` para mover o foco de volta para a imagem.
 
@@ -395,7 +395,7 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo **[!UICONTROL Tempo de desligamento]**. A data de desativação deve ser posterior à data de ativação de um ativo. Depois do [!UICONTROL Tempo desligado], um ativo e suas representações não estão disponíveis por meio da interface da Web [!DNL Assets] ou por meio da API HTTP.
 
-1. No campo **[!UICONTROL Tags]**, selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e pressione Enter. A nova tag é salva em [!DNL Experience Manager]. [!DNL YouTube] requer tags para publicação. Consulte [publicar vídeos no YouTube](video.md#publishing-videos-to-youtube).
+1. No campo **[!UICONTROL Tags]**, selecione uma ou mais tags. Para adicionar uma tag personalizada, digite o nome da tag na caixa e selecione `Enter`. A nova tag é salva em [!DNL Experience Manager]. [!DNL YouTube] requer tags para publicação. Consulte [publicar vídeos no YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
