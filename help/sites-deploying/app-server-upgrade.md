@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+source-git-commit: f696b1081f14ba379cde51a3542a5b1b5f9668e2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -23,37 +23,27 @@ ht-degree: 0%
 
 Esta seção descreve o procedimento que precisa ser seguido para atualizar AEM para instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o JBoss como o Application Server e implicam que você já tem uma versão em funcionamento do AEM implantado. O procedimento destina-se a documento de atualizações executadas de **AEM versão 5.6 para 6.3**.
+Todos os exemplos neste procedimento usam o Tomcat como o Application Server e implicam que você tem uma versão funcional de AEM já implantada. O procedimento destina-se a documento de atualizações executadas de **AEM versão 6.4 para 6.5**.
 
-1. Primeiro, start JBoss. Na maioria das situações, é possível fazer isso executando o script de inicialização `standalone.sh`, executando esse comando do terminal:
-
-   ```shell
-   jboss-install-folder/bin/standalone.sh
-   ```
-
-1. Se o AEM 5.6 já estiver implantado, verifique se os pacotes estão funcionando corretamente executando:
+1. Primeiro, start Tom Cat. Na maioria das situações, é possível fazer isso executando o script de inicialização do start `./catalina.sh` executando esse comando do terminal:
 
    ```shell
-   wget https://<serveraddress:port>/cq/system/console/bundles
+   $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. Em seguida, desimplante o AEM 5.6:
+1. Se o AEM 6.4 já estiver implantado, verifique se os pacotes estão funcionando corretamente acessando:
 
    ```shell
-   rm jboss-install-folder/standalone/deployments/cq.war
+   https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Pare com o JBoss.
+1. Em seguida, desimplante AEM 6.4. Isso pode ser feito pelo Gerenciador de aplicativos do TomCat (`http://serveraddress:serverport/manager/html`)
 
-1. Agora, migre o repositório usando a ferramenta de migração crx2oak:
+1. Agora, migre o repositório usando a ferramenta de migração crx2oak. Para fazer isso, baixe a versão mais recente do crx2oak de [este local](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak).
 
    ```shell
-   java -jar crx2oak.jar crx-quickstart/repository/ crx-quickstart/oak-repository
+   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
    ```
-
-   >[!NOTE]
-   >
-   >Neste exemplo, o repositório de carvalho é o diretório temporário no qual o repositório recém-convertido residirá. Antes de executar esta etapa, verifique se você tem a versão mais recente do crx2oak.jar.
 
 1. Exclua as propriedades necessárias no arquivo sling.properties fazendo o seguinte:
 
@@ -84,59 +74,41 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
 
    * O arquivo **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-1. Copie o repositório de segmentos recém-migrado para o local apropriado:
+   * Remova **sling.options.file** executando: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-   ```shell
-   mv crx-quickstart/oak-repository/segmentstore crx-quickstart/repository/segmentstore
-   ```
-
-1. Copie também o armazenamento de dados:
-
-   ```shell
-   mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
-   ```
-
-1. Em seguida, é necessário criar a pasta que conterá as configurações OSGi que serão usadas com a nova instância atualizada. Mais especificamente, uma pasta chamada install precisa ser criada em **crx-quickstart**.
-
-1. Agora, crie o armazenamento de nó e o armazenamento de dados que serão usados com o AEM 6.3. Você pode fazer isso criando dois arquivos com os seguintes nomes em **crx-quickstart\install**:
+1. Agora, crie o armazenamento de nó e o armazenamento de dados que serão usados com o AEM 6.5. Você pode fazer isso criando dois arquivos com os seguintes nomes em `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
-
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
    Esses dois arquivos configurarão AEM para usar um armazenamento de nó TarMK e um armazenamento de dados File.
 
 1. Edite os arquivos de configuração para prepará-los para uso. Mais especificamente:
 
-   * Adicione a seguinte linha a **org.apache.Jackrabbit.oak.segment.SegmentNodeStoreService.config**:\
-      `customBlobStore=true`
+   * Adicione a seguinte linha a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-   * Em seguida, adicione as seguintes linhas a **org.apache.Jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+      ```customBlobStore=true```
+
+   * Em seguida, adicione as seguintes linhas a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
       ```
       path=./crx-quickstart/repository/datastore
-       minRecordLength=4096
+      minRecordLength=4096
       ```
 
-1. Remova o modo de execução crx2 executando:
+1. Agora é necessário alterar os modos de execução no arquivo de guerra AEM 6.5. Para fazer isso, primeiro crie uma pasta temporária que estará hospedando a guerra AEM 6.5. O nome da pasta neste exemplo será `temp`. Depois que o arquivo de guerra tiver sido copiado, extraia seu conteúdo executando de dentro da pasta temporária:
 
-   ```shell
-   find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
+   ```
+   jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Agora é necessário alterar os modos de execução no arquivo de guerra AEM 6.3. Para fazer isso, primeiro crie uma pasta temporária que estará hospedando a guerra AEM 6.3. O nome da pasta neste exemplo será **temp**. Depois que o arquivo de guerra tiver sido copiado, extraia seu conteúdo executando de dentro da pasta temporária:
+1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o arquivo web.xml para alterar os modos de execução. Para localizar o local em que estão definidos no XML, procure a string `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definido como autor:
 
-   ```shell
-   jar xvf aem-quickstart-6.3.0.war
-   ```
-
-1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o arquivo `web.xml` para alterar os modos de execução. Para localizar o local em que estão definidos no XML, procure a string `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definido como autor:
-
-   ```shell
+   ```bash
    <param-value >author</param-value>
    ```
 
-1. Altere o valor do autor acima e defina os modos de execução como: author,crx3,crx3tar O bloco final de código deve ter a seguinte aparência:
+1. Altere o valor do autor acima e defina os modos de execução como: `author,crx3,crx3tar`. O bloco final de código deve ter a seguinte aparência:
 
    ```
    <init-param>
@@ -149,13 +121,8 @@ Todos os exemplos neste procedimento usam o JBoss como o Application Server e im
 
 1. Recrie o frasco com o conteúdo modificado:
 
-   ```shell
-   jar cvf aem62.war
+   ```bash
+   jar cvf aem65.war
    ```
 
-1. Finalmente, implante o novo arquivo de guerra:
-
-   ```shell
-   cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
-   ```
-
+1. Finalmente, coloque o novo arquivo de guerra em TomCat.
