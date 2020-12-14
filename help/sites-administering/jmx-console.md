@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+source-git-commit: 97c93a95cd7fe63b306d80fe127388a209b727c7
 workflow-type: tm+mt
-source-wordcount: '4989'
+source-wordcount: '4974'
 ht-degree: 1%
 
 ---
@@ -803,10 +803,7 @@ Exibe uma mensagem na janela QuickStart.
 
 Argumentos:
 
-* p1: Um valor `String` que representa a mensagem a ser exibida. A ilustração a seguir mostra o resultado de invocar `log` com um valor p1 de `this is a log message`.
-
-![lavoura](assets/launcheruilog.png)
-
+* p1: Um valor `String` que representa a mensagem a ser exibida.
 * Valor retornado: none
 
 **startupFinished**
@@ -821,12 +818,8 @@ Chama o método startupFinished do iniciador do servidor. O método tenta abrir 
 Define o valor de conclusão do processo de inicialização do servidor. A barra de progresso na janela QuickStart representa o valor de conclusão.
 
 * Argumentos:
-
    * p1: Um valor flutuante que representa quanto do processo de inicialização é concluído, como uma fração. O valor deve estar entre zero e um. Por exemplo, 0.3 indica 30% de conclusão.
-
 * Valor retornado: nenhum.
-
-![lavoura](assets/launcherprogress.png)
 
 ## Serviços de terceiros {#third-party-services}
 
