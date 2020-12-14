@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: 4eb5f1c4aa6631d2570279eb1d4bf17a928e3b9f
+source-git-commit: f8abdd7ed0212d5ee0602e2573c184203f22d4a4
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Geralmente, os administradores precisam automatizar ou simplificar tarefas comuns em qualquer sistema. Por AEM, por exemplo, gerenciar usuários, instalar pacotes e gerenciar pacotes OSGi são tarefas que devem ser normalmente feitas.
 
-Devido à natureza RESTful da estrutura Sling na qual a AEM é criada, a maioria das tarefas pode ser reduzida a uma chamada de URL. cURL pode ser usado para executar tais chamadas de URL e pode ser uma ferramenta útil para administradores de AEM.
+Devido à natureza RESTful da estrutura Sling na qual a AEM é criada, a maioria das tarefas pode ser feita com uma chamada de URL. cURL pode ser usado para executar tais chamadas de URL e pode ser uma ferramenta útil para administradores de AEM.
 
 ## O que é cURL {#what-is-curl}
 
@@ -206,7 +206,7 @@ curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http:/
 #### Excluir um usuário {#delete-a-user}
 
 ```shell
-curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser 
+curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser
 ```
 
 #### Excluir um grupo {#delete-a-group}
