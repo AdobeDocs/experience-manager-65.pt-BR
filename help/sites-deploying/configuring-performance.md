@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 7f1ae2d4ab361bc039c1098daa0ef944ec9df639
 workflow-type: tm+mt
-source-wordcount: '6722'
-ht-degree: 2%
+source-wordcount: '6648'
+ht-degree: 1%
 
 ---
 
 
-# Otimização de desempenho{#performance-optimization}
+# Otimização de desempenho {#performance-optimization}
 
 >[!NOTE]
 >
@@ -43,15 +43,12 @@ Este ambiente contém conteúdo que você disponibiliza para seus usuários. Nes
 >[!NOTE]
 >
 >* Depois de configurar para otimização de desempenho, siga os procedimentos em [Dia difícil](/help/sites-developing/tough-day.md) para testar o ambiente com carga pesada.
->* Consulte também [Dicas de ajuste de desempenho](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
-
->
-
+>* Consulte também [Dicas de ajuste de desempenho.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 
 ## Metodologia de otimização de desempenho {#performance-optimization-methodology}
 
-Uma metodologia de otimização de desempenho para projetos CQ pode ser resumida em cinco regras muito simples que podem ser seguidas para evitar problemas de desempenho do start:
+Uma metodologia de otimização do desempenho para projetos AEM pode ser resumida em cinco regras muito simples que podem ser seguidas para evitar problemas de desempenho do start:
 
 1. [Planejamento para otimização](#planning-for-optimization)
 1. [Simular realidade](#simulate-reality)
@@ -115,16 +112,16 @@ Geralmente, mantenha as solicitações html não armazenadas em cache com menos 
 
 Os números acima assumem as seguintes condições:
 
-* medido na publicação (sem custos indiretos relacionados a um ambiente de criação)
-* medido no servidor (sem sobrecarga de rede)
-* não armazenado em cache (sem cache de saída CQ, sem cache do Dispatcher)
-* somente para itens complexos com muitas dependências (HTML, JS, PDF, ...)
-* nenhuma outra carga no sistema
+* Medido na publicação (sem custos indiretos relacionados a um ambiente de criação)
+* Medido no servidor (sem sobrecarga de rede)
+* Não armazenado em cache (sem cache de saída AEM, sem cache do Dispatcher)
+* Somente para itens complexos com muitas dependências (HTML, JS, PDF, ...)
+* Nenhuma outra carga no sistema
 
 Há um certo número de problemas que frequentemente contribuem para problemas de desempenho. Eles giram principalmente em torno de:
 
-* ineficiência de armazenamento em cache do dispatcher
-* o uso de query em modelos de exibição normais.
+* Ineficiência de armazenamento em cache do Dispatcher
+* O uso de query em modelos de exibição normais.
 
 O ajuste de nível de JVM e SO geralmente não leva a grandes saltos no desempenho e, portanto, deve ser executado no final do ciclo de otimização.
 
@@ -132,9 +129,9 @@ A maneira como um repositório de conteúdo é estruturado também pode afetar o
 
 Seus melhores amigos durante um exercício normal de otimização de desempenho são:
 
-* o `request.log`
-* tempo com base no componente
-* por último, mas não menos importante, um perfilador java.
+* A `request.log`
+* Tempo baseado em componente
+* Por último, mas não menos importante, um perfilador java.
 
 ### Desempenho ao carregar e editar ativos digitais {#performance-when-loading-and-editing-digital-assets}
 
@@ -161,7 +158,7 @@ Para melhorar o desempenho, considere o seguinte:
 
 ## Monitoramento de desempenho {#performance-monitoring}
 
-O desempenho (ou a falta dele) é uma das primeiras coisas que seus usuários notam, de modo que, como em qualquer aplicativo com uma interface do usuário, o desempenho é de importância fundamental. Para otimizar o desempenho da instalação do CQ, é necessário monitorar vários atributos da instância e seu comportamento.
+O desempenho (ou a falta dele) é uma das primeiras coisas que seus usuários notam, de modo que, como em qualquer aplicativo com uma interface do usuário, o desempenho é de importância fundamental. Para otimizar o desempenho da instalação do AEM, é necessário monitorar vários atributos da instância e seu comportamento.
 
 Para obter informações sobre como executar o monitoramento de desempenho, consulte [Monitorando o Desempenho](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
@@ -169,15 +166,14 @@ Os problemas que causam problemas de desempenho geralmente são difíceis de ras
 
 Um ponto de partida básico é um bom conhecimento do seu sistema quando ele está funcionando normalmente. A menos que você saiba como seu ambiente &quot;parece&quot; e &quot;se comporta&quot; quando está funcionando corretamente, pode ser difícil localizar o problema quando o desempenho se deteriorar. Isso significa que você deve dedicar algum tempo investigando seu sistema quando ele estiver sendo executado sem problemas e garantir que a coleta de informações de desempenho seja uma tarefa contínua. Isso fornecerá uma base para comparação caso o desempenho sofra.
 
-O diagrama a seguir ilustra o caminho que uma solicitação de conteúdo CQ pode tomar - e, portanto, o número de elementos diferentes que podem afetar o desempenho.
+O diagrama a seguir ilustra o caminho que uma solicitação de conteúdo AEM pode tomar e, portanto, o número de elementos diferentes que podem afetar o desempenho.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-O desempenho também é um equilíbrio entre Volume e Capacidade:
+O desempenho também é um equilíbrio entre volume e capacidade:
 
-**** VolumeA quantidade de saída processada e entregue pelo sistema.
-
-**** CapacidadeA capacidade do sistema de fornecer o volume.
+* **Volume**  - a quantidade de saída processada e entregue pelo sistema.
+* **Capacidade**  - a capacidade do sistema de fornecer o volume.
 
 Isso pode ser ilustrado em vários locais da cadeia da Web.
 
@@ -206,7 +202,7 @@ Algumas regras devem ser levadas em conta ao otimizar o desempenho:
 
 ## Configuração para desempenho {#configuring-for-performance}
 
-Determinados aspectos do CQ (e/ou do CRX subjacente) podem ser configurados para otimizar o desempenho. A seguir estão as possibilidades e sugestões, é necessário ter certeza se, ou como, você usa a funcionalidade em questão antes de fazer alterações.
+Determinados aspectos do AEM (e/ou do repositório subjacente) podem ser configurados para otimizar o desempenho. A seguir estão as possibilidades e sugestões, é necessário ter certeza se, ou como, você usa a funcionalidade em questão antes de fazer alterações.
 
 >[!NOTE]
 >
@@ -234,15 +230,17 @@ O motor de workflow usa as filas de trabalhos do Apache Sling para manusear e pr
 
 Configure esses serviços para limitar o número máximo de processos de fluxo de trabalho em execução simultânea.
 
-**Observação: a** configuração dessas filas de trabalhos afeta todos os workflows, a menos que você tenha criado uma fila de trabalhos para um modelo de fluxo de trabalho específico (consulte  [Configurar a fila para um ](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) modelo de fluxo de trabalho específico abaixo).
+>[!NOTE]
+>
+>A configuração dessas filas de trabalhos afeta todos os workflows, a menos que você tenha criado uma fila de trabalhos para um modelo de fluxo de trabalho específico (consulte [Configurar a fila para um modelo de fluxo de trabalho específico](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) abaixo).
 
-**Configuração no repositório**
+#### Configuração no repositório {#configuration-in-the-repo}
 
 Se você estiver configurando os serviços [usando um nó sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), é necessário encontrar o PID dos serviços existentes, por exemplo: org.apache.sling.evento.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Você pode descobrir o PID usando o Console da Web.
 
-É necessário configurar a propriedade chamada queue.maxparalelo.
+É necessário configurar a propriedade chamada `queue.maxparallel`.
 
-**Configuração no Console da Web**
+#### Configuração no Console Web {#configuration-in-the-web-console}
 
 Para configurar esses serviços [usando o Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), localize os itens de configuração existentes abaixo da fábrica do serviço Configuração da fila de trabalhos do Apache Sling.
 
@@ -254,30 +252,30 @@ Crie uma fila de trabalhos para um modelo de fluxo de trabalho específico para 
 
 Quando os modelos de fluxo de trabalho são executados, eles criam trabalhos do Sling para um tópico específico. Por padrão, o tópico corresponde aos tópicos configurados para a Fila geral de Fluxo de Trabalho Granite ou para a Fila de Trabalho de Processo Externo de Fluxo de Trabalho Granito:
 
-* com/adobe/granite/workflow/job&amp;ast;
-* com/adobe/granite/workflow/external/job&amp;ast;
+* `com/adobe/granite/workflow/job*`
+* `com/adobe/granite/workflow/external/job*`
 
-Os tópicos reais da tarefa que os modelos de fluxo de trabalho geram incluem o sufixo específico do modelo. Por exemplo, o modelo de fluxo de trabalho [!UICONTROL DAM Update Asset] gera trabalhos com o seguinte tópico:
+Os tópicos de trabalho reais que os modelos de fluxo de trabalho geram incluem sufixo específico do modelo. Por exemplo, o modelo de fluxo de trabalho **DAM Update Asset** gera trabalhos com o seguinte tópico:
 
-com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
+`com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
 Portanto, você pode criar uma fila de trabalhos para o tópico que corresponda aos tópicos de trabalho do seu modelo de fluxo de trabalho. A configuração das propriedades relacionadas ao desempenho da fila afeta apenas o modelo de fluxo de trabalho que gera os trabalhos que correspondem ao tópico da fila.
 
-O procedimento a seguir cria uma fila de trabalhos para um fluxo de trabalho, usando o fluxo de trabalho [!UICONTROL DAM Update Asset] como exemplo.
+O procedimento a seguir cria uma fila de trabalhos para um fluxo de trabalho, usando o fluxo de trabalho **DAM Update Asset** como exemplo.
 
-1. Execute o modelo de fluxo de trabalho para o qual você deseja criar a fila de trabalhos, para que as estatísticas de tópicos sejam geradas. Por exemplo, adicione uma imagem aos Ativos para executar o fluxo de trabalho [!UICONTROL DAM Update Asset].
-1. Abra o console Sling Jobs. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
+1. Execute o modelo de fluxo de trabalho para o qual você deseja criar a fila de trabalhos, para que as estatísticas de tópicos sejam geradas. Por exemplo, adicione uma imagem aos Ativos para executar o fluxo de trabalho **DAM Update Asset**.
+1. Abra o console Sling Jobs (`https://<host>:<port>/system/console/slingevent`).
 1. Descubra os tópicos relacionados ao fluxo de trabalho no console. Para o Ativo de atualização do DAM, os seguintes tópicos foram encontrados:
 
-   * com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model
-   * com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
-   * com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-write-back/jcr_content/model
+   * `com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model`
+   * `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
+   * `com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model`
 
 1. Crie uma fila de trabalhos para cada um desses tópicos. Para criar uma fila de trabalhos, crie uma configuração de fábrica para o serviço de fábrica da fila de trabalhos do Apache Sling.
 
    As configurações de fábrica são semelhantes à Fila de Fluxo de Trabalho Granito descrita em [Processamento de Fluxo de Trabalho Simultâneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), exceto que a propriedade Tópicos corresponde ao tópico de seus trabalhos de fluxo de trabalho.
 
-### Serviço de Sincronização de Ativos do CQ5 DAM {#cq-dam-asset-synchronization-service}
+### Serviço de sincronização de ativos DAM AEM {#cq-dam-asset-synchronization-service}
 
 O `AssetSynchronizationService` é usado para sincronizar ativos de repositórios montados (incluindo LiveLink, Documentum, entre outros). Por padrão, isso faz uma verificação regular a cada 300 segundos (5 minutos), portanto, se você não usar repositórios montados, poderá desativar esse serviço.
 
@@ -287,13 +285,13 @@ Isso é feito por [configurar o serviço OSGi](/help/sites-deploying/configuring
 
 A implantação de várias instâncias de DAM pode ajudar no desempenho quando, por exemplo:
 
-* você tem uma carga alta devido ao carregamento regular de um grande número de ativos para o ambiente do autor; aqui, uma instância separada do DAM pode ser dedicada à manutenção do autor.
-* você tem várias equipes em locais globais (por exemplo, EUA, Europa e Ásia).
+* Você tem uma carga alta devido ao carregamento regular de um grande número de ativos para o ambiente do autor; aqui, uma instância separada do DAM pode ser dedicada à manutenção do autor.
+* Você tem várias equipes em locais globais (por exemplo, EUA, Europa, Ásia).
 
 Considerações adicionais são:
 
-* separar &quot;trabalho em andamento&quot; do autor de &quot;final&quot; ao publicar
-* separar usuários internos do autor de visitantes/usuários externos ao publicar (por exemplo, agentes, representantes de imprensa, clientes, estudantes etc).
+* Separação de &quot;trabalhos em andamento&quot; no autor de &quot;final&quot; ao publicar
+* Separação de usuários internos do autor de visitantes/usuários externos na publicação (por exemplo, agentes, representantes de imprensa, clientes, estudantes etc.).
 
 ## Práticas recomendadas para o controle de qualidade {#best-practices-for-quality-assurance}
 
@@ -301,7 +299,7 @@ O desempenho é de importância primordial para o seu ambiente de publicação. 
 
 Esta seção tem como objetivo fornecer uma visão geral padronizada dos problemas envolvidos na definição de um conceito de teste especificamente para testes de desempenho em seu ambiente *publish*. Isso interessa principalmente aos engenheiros de controle de qualidade, gerentes de projeto e administradores de sistema.
 
-A seguir está uma abordagem padronizada para testes de desempenho para um aplicativo CQ no ambiente *Publicar*. Isso envolve as seguintes cinco fases:
+A seguir está uma abordagem padronizada para testes de desempenho de um aplicativo AEM no ambiente *Publicar*. Isso envolve as seguintes cinco fases:
 
 * [Verificação do conhecimento](#verification-of-knowledge)
 * [Definição de âmbito](#scope-definition)
@@ -315,8 +313,8 @@ O controle é um processo adicional e abrangente - necessário, mas não limitad
 
 Um primeiro passo é documento das informações básicas que você precisa saber antes de poder testar o start:
 
-* a arquitetura do seu ambiente de teste
-* um mapa de aplicações que detalhe os elementos internos que necessitarão de ensaio (isoladamente ou em combinação)
+* A arquitetura do seu ambiente de teste
+* Um mapa de aplicativos que detalha os elementos internos que precisarão de teste (isolado e combinado)
 
 #### Arquitetura de teste {#test-architecture}
 
@@ -336,8 +334,8 @@ Um aplicativo geralmente terá uma seleção de casos de uso. Alguns serão muit
 
 Para focar o escopo do teste de desempenho na publicação, recomendamos que você defina o seguinte:
 
-* casos mais importantes de uso de negócios
-* casos de uso técnico mais críticos
+* Casos de uso mais importantes da empresa
+* Maioria dos casos de uso técnico crítico
 
 O número de casos de uso depende de você, mas deve ser limitado a um número facilmente gerenciável (por exemplo, entre 5 e 10).
 
@@ -362,14 +360,14 @@ Este conceito tem quatro cenários usados para definir e testar as metas de dese
 
 Com base nos seguintes princípios:
 
-**Pontos de interrupção do componente**
+#### Pontos de interrupção de componente {#component-breakpoints}
 
 * Cada componente tem um ponto de interrupção específico quando relacionado ao desempenho. Isso significa que um componente pode mostrar um bom desempenho até que um ponto específico seja atingido, e depois disso o desempenho diminuirá rapidamente.
 * Para obter uma visão geral completa do aplicativo, verifique primeiro seus componentes para determinar quando o ponto de interrupção de cada um é atingido.
 * Para localizar o ponto de interrupção, é possível executar um teste de carga no qual, durante um período de tempo, você aumenta o número de usuários para criar uma carga crescente. Ao monitorar essa carga e a resposta dos componentes, você encontrará um comportamento de desempenho específico quando o ponto de quebra do componente for atingido. O ponto pode ser qualificado pelo número de transações simultâneas por segundo, juntamente com o número de usuários simultâneos (se o componente for sensível a esse KPI).
 * Essas informações podem servir de referência para melhorias, indicar a eficiência das medidas utilizadas e ajudar a definir cenários de teste.
 
-**Transações**
+#### Transações {#transactions}
 
 * O termo transação é utilizado para representar a solicitação de uma página da Web completa, incluindo a própria página e todas as chamadas subsequentes; Ou seja, a solicitação de página, quaisquer chamadas AJAX, imagens e outros objetos.**Solicitar Drill-Down**
 * Para analisar completamente cada solicitação, você pode representar cada elemento da pilha de chamadas, em seguida, totalizar o tempo médio de processamento de cada uma.
@@ -388,18 +386,18 @@ Os componentes críticos terão de ser testados - em condições médias e de pi
 
 Em ambos os casos, você pode definir o número esperado de transações por segundo quando um número predefinido de usuários estiver usando o sistema.
 
-| Componente | Tipo de teste | #Usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
+| Componente | Tipo de teste | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Página inicial - Usuário único | Média | 1 | 3 |  |  |
-|  | Pico | 1 | 3 |  |  |
+| Página inicial - Usuário único | Média | 1 | 1 |  |  |
+|  | Pico | 3 | 3 |  |  |
 | Usuários da página inicial 100 | Média | 100 | 1 |  |  |
-|  | Pico | 100 | 1 |  |
+|  | Pico | 100 | 3 |  |
 
 #### Testes de componentes combinados {#combined-component-tests}
 
 O teste dos componentes em combinação oferece uma reflexão mais detalhada sobre o comportamento dos aplicativos. Novamente, as condições médias e de pico devem ser testadas.
 
-| Cenário | Componente | #Usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
+| Cenário | Componente | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
 | Média mista | Página inicial | 10 | 1 |  |  |
 |  | Pesquisar   | 10 | 1 |  |  |
@@ -416,7 +414,7 @@ O teste dos componentes em combinação oferece uma reflexão mais detalhada sob
 
 Durante os primeiros dias após o site ser disponibilizado, você pode esperar um maior nível de interesse. Isso provavelmente será ainda maior do que os valores de pico que você tem testado. É altamente recomendável testar cenários do Google Live para garantir que o sistema possa atender a essa situação.
 
-| Cenário | Tipo de teste | #Usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
+| Cenário | Tipo de teste | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
 | Pico ao vivo | Página inicial | 200 | 20 |  |  |
 |  | Pesquisar   | 100 | 10 |  |  |
@@ -428,38 +426,38 @@ Durante os primeiros dias após o site ser disponibilizado, você pode esperar u
 
 Os cenários de erro também devem ser testados para garantir que o sistema reaja corretamente e apropriadamente. Não apenas na forma como o erro em si é tratado, mas no impacto que ele pode ter no desempenho. Por exemplo:
 
-* o que acontece quando o usuário tenta inserir um termo de pesquisa inválido na caixa de pesquisa
-* o que acontece quando o termo de pesquisa é tão geral que retorna um número excessivo de resultados
+* O que acontece quando o usuário tenta inserir um termo de pesquisa inválido na caixa de pesquisa
+* O que acontece quando o termo de pesquisa é tão geral que retorna um número excessivo de resultados
 
 Ao elaborar esses testes, lembre-se de que nem todos os cenários ocorrerão regularmente. No entanto, o seu impacto em todo o sistema é importante.
 
-| Cenário de erro | Tipo de erro | #Usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
+| Cenário de erro | Tipo de erro | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
 | Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 1 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
 |  | Palavra de interrupção | 20 | 2 |  | Procurando uma palavra de parada. |
-|  | Sequência vazia | 10 | 3 |  | Procurando uma string vazia. |
+|  | Sequência vazia | 10 | 1 |  | Procurando uma string vazia. |
 |  | Caracteres especiais | 10 | 1 |  | Procurando caracteres especiais. |
 
 #### Testes de resistência {#endurance-tests}
 
 Determinados problemas só serão encontrados depois que o sistema estiver em execução por um período contínuo; sejam horas ou mesmo dias. É utilizado um ensaio de resistência para testar uma carga média constante durante um período de tempo necessário. Qualquer degradação do desempenho pode então ser analisada.
 
-| Cenário | Tipo de teste | #Usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
+| Cenário | Tipo de teste | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Teste de resistência (72 horas) | Página inicial | 10 | 1 |  |  |
-|  | Pesquisar   | 10 | 3 |  |  |
+| Teste de resistência (72 horas) | Página inicial | 10 | 3 |  |  |
+|  | Pesquisar   | 10 | 1 |  |  |
 |  | Notícias | 20 | 2 |  |  |
 |  | Eventos | 10 | 1 |  |  |
-|  | Ativações | 1 | 1 |  | Simulação do comportamento do autor. |
+|  | Ativações | 3 | 1 |  | Simulação do comportamento do autor. |
 
 ### Otimização {#optimization}
 
-Nos estágios posteriores de implementação, você precisará otimizar o aplicativo para atingir/maximizar as metas de desempenho.
+Nas etapas posteriores da implementação, você precisará otimizar o aplicativo para atingir/maximizar as metas de desempenho.
 
 Todas as otimizações realizadas devem ser testadas para garantir que elas tenham:
 
-* não afetou a funcionalidade
-* foram verificados com os ensaios de carga antes de serem libertados
+* Funcionalidade não afetada
+* Foi verificado com os testes de carga antes de ser liberado
 
 Uma seleção de ferramentas está disponível para ajudá-lo com a geração de carga, monitoramento de desempenho e/ou análise de resultados:
 
@@ -474,14 +472,14 @@ Após a otimização, você precisará testar novamente para confirmar o impacto
 
 ### Relatório {#reporting}
 
-Será necessário um relatórios permanente para manter todos informados do estatuto; como mencionado anteriormente com codificação de cores, o Mapa de arquitetura pode ser usado para isso.
+O relatórios contínuo será necessário para manter todos informados sobre o status, como mencionado anteriormente com a codificação por cores, o mapa de arquitetura pode ser usado para isso.
 
 Depois que todos os testes tiverem sido concluídos, você deverá informar sobre:
 
-* qualquer erro crítico encontrado
-* questões não críticas que ainda necessitam de uma investigação mais aprofundada
-* quaisquer suposições feitas durante os testes
-* quaisquer recomendações que possam surgir do teste
+* Quaisquer erros críticos encontrados
+* Questões não críticas que ainda necessitam de mais investigação
+* Quaisquer suposições feitas durante os testes
+* Eventuais recomendações que possam surgir do teste
 
 ## Otimizando o desempenho ao usar o Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
@@ -499,8 +497,8 @@ O Dispatcher oferta vários mecanismos integrados que você pode usar para otimi
 >
 >Pode ajudar você a lembrar que o Dispatcher armazena o cache em um servidor da Web padrão. Isso significa que você:
 >
->* pode armazenar em cache tudo o que você pode armazenar como uma página e solicitar usando um URL
->* não é possível armazenar outras coisas, como cookies, dados de sessão e dados de formulário.
+>* É possível armazenar em cache tudo o que você pode armazenar como uma página e solicitar usando um URL
+>* Não é possível armazenar outras coisas, como cookies, dados de sessão e dados de formulário.
 
 >
 >
@@ -556,7 +554,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->Esse URL chama a mesma página e o mesmo modelo que gallery.html. Na definição do modelo, é possível especificar qual script renderiza a página ou usar o mesmo script para todas as páginas.
+>Esse URL chama a mesma página e o mesmo modelo de `gallery.html`. Na definição do modelo, é possível especificar qual script renderiza a página ou usar o mesmo script para todas as páginas.
 
 #### Personalizar por URL {#customize-by-url}
 
@@ -574,7 +572,7 @@ www.myCompany.com/news/main.large.html
 >
 >Para a maioria dos aspectos de layout, também é possível usar folhas de estilos e/ou scripts do cliente. Normalmente, eles funcionam muito bem com o cache.
 >
->Isso também é útil para uma versão impressa, onde você pode usar um URL como: &quot;
+>Isso também é útil para uma versão impressa, onde você pode usar um URL como:
 >
 >`www.myCompany.com/news/main.print.html`
 >
@@ -589,7 +587,7 @@ Se você renderizar títulos de página, ou outro texto, como imagens, é recome
 
    `<page file name>.<image file name>`
 
-Por exemplo, você pode armazenar o título da página myPage.html no arquivo myPage.title.gif. Esse arquivo será excluído automaticamente se a página for atualizada, de modo que qualquer alteração no título da página será refletida automaticamente no cache.
+Por exemplo, você pode armazenar o título da página `myPage.html` em `file myPage.title.gif`. Esse arquivo será excluído automaticamente se a página for atualizada, de modo que qualquer alteração no título da página será refletida automaticamente no cache.
 
 >[!NOTE]
 >
@@ -609,23 +607,24 @@ Para páginas que não são modificadas, as imagens ainda permanecem no cache, e
 
 #### Personalização {#personalization}
 
-O Dispatcher não pode armazenar dados personalizados em cache, portanto, recomenda-se que você limite a personalização para onde ela for necessária. Para ilustrar por que:
+É recomendável limitar a personalização ao local necessário. Para ilustrar por que:
 
 * Se você usar uma página de start personalizável livremente, essa página deverá ser composta sempre que um usuário a solicitar.
 * Se, por outro lado, você oferta uma escolha de 10 páginas de start diferentes, você pode armazenar cada uma delas em cache, melhorando assim o desempenho.
 
->[!NOTE]
->
->Se você personalizar cada página (por exemplo, colocando o nome do usuário na barra de título) não poderá armazená-la em cache, o que pode causar um grande impacto no desempenho.
->
->No entanto, se você precisar fazer isso, poderá:
->
->* use iFrames para dividir a página em uma parte que é a mesma para todos os usuários e uma parte que é a mesma para todas as páginas do usuário. Em seguida, é possível armazenar essas duas partes em cache.
->* use o JavaScript do lado do cliente para exibir informações personalizadas. No entanto, é necessário verificar se a página ainda é exibida corretamente se um usuário desativa o JavaScript.
+>[!TIP]
+>Para obter mais detalhes sobre como configurar o cache do Dispatcher, consulte o [AEM Tutorial do Cache do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) e sua seção em [Armazenamento em Cache de Conteúdo Protegido.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
+Se você personalizar cada página (por exemplo, colocando o nome do usuário na barra de título), isso pode afetar o desempenho.
+
+>[!TIP]
+>Para armazenar conteúdo protegido em cache, consulte [Armazenar conteúdo protegido em cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) no guia do Dispatcher.
+
+No que diz respeito à mistura de conteúdo restrito e público em uma página, você pode considerar uma estratégia que aproveita as inclusões do lado do servidor no Dispatcher ou as inclusões do lado do cliente via Ajax no navegador.
+
+>[!TIP]
 >
-
-
+>Para lidar com conteúdo misto público e restrito, consulte [Configurar inclusão dinâmica do Sling.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### Conexões aderentes {#sticky-connections}
 
@@ -635,12 +634,12 @@ O Dispatcher não pode armazenar dados personalizados em cache, portanto, recome
 
 Há duas maneiras de um navegador determinar o tipo de arquivo:
 
-1. Pela sua extensão (por exemplo, .html, .gif, .jpg etc)
+1. Pela sua extensão (por exemplo, `.html`, `.gif`, `.jpg`, etc.)
 1. Pelo tipo MIME que o servidor envia com o arquivo.
 
 Para a maioria dos arquivos, o tipo MIME está implícito na extensão do arquivo. i.e.:
 
-1. Pela sua extensão (por exemplo, .html, .gif, .jpg etc)
+1. Pela sua extensão (por exemplo, `.html`, `.gif`, `.jpg`, etc.)
 1. Pelo tipo MIME que o servidor envia com o arquivo.
 
 Se o nome do arquivo não tiver extensão, ele será exibido como texto sem formatação.
@@ -650,11 +649,11 @@ Com a versão 4.1.11 do Dispatcher, é possível armazenar em cache os cabeçalh
 Para garantir que os arquivos sejam armazenados em cache corretamente, siga estas diretrizes:
 
 * Verifique se os arquivos sempre têm a extensão correta.
-* Evite scripts de servidor de arquivos genéricos, que têm URLs como download.jsp?file=2214. regravar o script para usar URLs que contenham a especificação do arquivo; para o exemplo anterior, este seria download.2214.pdf.
+* Evite scripts genéricos do servidor de arquivos, que têm URLs como `download.jsp?file=2214`. Grave novamente o script para usar URLs que contêm a especificação do arquivo. No exemplo anterior, isso seria `download.2214.pdf`.
 
 ## Desempenho do backup {#backup-performance}
 
-Esta seção apresenta uma série de benchmarks usados para avaliar o desempenho de backups de CQ e os efeitos da atividade de backup sobre o desempenho do aplicativo. O backup do CQ apresenta uma carga significativa no sistema durante sua execução, e nós medimos isso, bem como os efeitos das configurações de atraso de backup que tentam modular esses efeitos. O objetivo é oferta de alguns dados de referência sobre o desempenho esperado dos backups em configurações realistas e quantidades de dados de produção, além de fornecer orientações sobre como estimar os tempos de backup para sistemas planejados.
+Esta seção apresenta uma série de benchmarks usados para avaliar o desempenho de backups AEM e os efeitos da atividade de backup no desempenho do aplicativo. AEM backups apresentam uma carga significativa no sistema durante sua execução, e nós medimos isso, bem como os efeitos das configurações de atraso de backup que tentam modular esses efeitos. O objetivo é oferta de alguns dados de referência sobre o desempenho esperado dos backups em configurações realistas e quantidades de dados de produção, além de fornecer orientações sobre como estimar os tempos de backup para sistemas planejados.
 
 ### Ambiente de referência {#reference-environment}
 
@@ -667,72 +666,43 @@ Os resultados reportados neste documento foram obtidos a partir de benchmarks ex
 * Controladora RAID de hardware; 8 unidades em uma matriz RAID0+5
 * Imagem VMware CPU x 2 Intel Xeon E5540 a 2,53 GHz
 * RedHat Linux 2.6.18-194.el5; Java 1.6.0_29
-* Instância de autor único executando o CQ 5.5 GM.
+* Instância de autor único
 
 O subsistema de disco desse servidor é muito rápido, representando uma configuração RAID de alto desempenho que pode ser usada em um servidor de produção. O desempenho do backup pode ser sensível ao desempenho do disco, e os resultados nesse ambiente refletem o desempenho em uma configuração RAID muito rápida. A imagem VMWare está configurada para ter um único grande volume de disco que reside fisicamente no armazenamento de disco local, na matriz RAID.
 
-A configuração do CQ coloca o repositório e o armazenamento de dados no mesmo volume lógico, ao lado de todo o sistema operacional e do software CQ. O diretório de públicos alvos para backups também reside neste sistema de arquivos lógico.
+A configuração AEM coloca o repositório e o armazenamento de dados no mesmo volume lógico, ao lado de todo o sistema operacional e software AEM. O diretório de públicos alvos para backups também reside neste sistema de arquivos lógico.
 
 #### Volumes de dados {#data-volumes}
 
 A tabela a seguir ilustra o tamanho dos volumes de dados usados nos benchmarks de backup. O conteúdo inicial da linha de base é instalado primeiro, e então quantidades conhecidas adicionais de dados são adicionadas para aumentar o tamanho do conteúdo do backup. Os backups serão criados em incrementos específicos para representar um grande aumento no conteúdo e no que pode ser produzido em um dia. A distribuição de conteúdo (páginas, imagens, tags) será basicamente baseada na composição realista do ativo de produção. As páginas, imagens e tags serão limitadas a um máximo de 800 páginas secundárias. Cada página incluirá componentes de título, Flash, texto/imagem, vídeo, apresentação de slides, formulário, tabela, nuvem e carrossel. O upload das imagens será feito a partir de um pool de 400 arquivos únicos que variam de 37 kB a 594 kB.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Conteúdo</strong></td>
-   <td><strong>Nós</strong></td>
-   <td><strong>Páginas</strong></td>
-   <td><strong>Imagens</strong></td>
-   <td><strong>Tags</strong></td>
-  </tr>
-  <tr>
-   <td>Instalação básica</td>
-   <td>69 610</td>
-   <td>562</td>
-   <td>256</td>
-   <td>237</td>
-  </tr>
-  <tr>
-   <td>Conteúdo pequeno para backup incremental</td>
-   <td><br type="_moz" /> </td>
-   <td>+100</td>
-   <td>+2</td>
-   <td>+2</td>
-  </tr>
-  <tr>
-   <td>Conteúdo grande para backup completo</td>
-   <td><br type="_moz" /> </td>
-   <td>+10.000</td>
-   <td>+100</td>
-   <td>+100</td>
-  </tr>
- </tbody>
-</table>
+|Conteúdo|Nós|Páginas|Imagens|Tags|
+|—|—|—|—
+|Instalação básica|69 610|562|256|237|
+|Conteúdo pequeno para backup incremental||+100|+2|+2|
+|Grande conteúdo para cópia de segurança completa||+10 000|+100|+100|
 
 O benchmark de backup é repetido com os conjuntos de conteúdo adicionais adicionados a cada repetição.
 
 #### Cenários de benchmark {#benchmark-scenarios}
 
-Os benchmarks de backup abrangem dois cenários principais: é feito backup quando o sistema está sob uma carga significativa do aplicativo e quando o sistema está ocioso. Embora a recomendação geral seja que os backups sejam executados quando o sistema CQ estiver o mais ocioso possível, há situações em que é necessário que o backup seja executado quando o sistema estiver sendo carregado.
+Os benchmarks de backup abrangem dois cenários principais: é feito backup quando o sistema está sob uma carga significativa do aplicativo e quando o sistema está ocioso. Embora a recomendação geral seja que os backups sejam executados quando o AEM estiver o mais ocioso possível, há situações em que é necessário que o backup seja executado quando o sistema estiver sendo carregado.
 
-**Idle** StateBackups são executados sem nenhuma outra atividade no CQ.
+* **Estado**  ocioso - os backups são executados sem nenhuma outra atividade no AEM.
+* **Em Load**  - Backups são executados enquanto o sistema está com menos de 80% de carga dos processos on-line. O atraso do backup variou para ver o impacto na carga.
 
-**Em** LoadBackups são executados enquanto o sistema está com menos de 80% de carga dos processos on-line. O atraso do backup variou para ver o impacto na carga.
-
-Os tempos de backup e o tamanho do backup resultante são obtidos dos registros do servidor CQ. Normalmente, é recomendável que os backups sejam programados para períodos fora do horário em que o CQ estiver ocioso, como no meio da noite. Esse cenário é representativo da abordagem recomendada.
+Os tempos de backup e o tamanho do backup resultante são obtidos dos registros do servidor AEM. Normalmente, é recomendável que os backups sejam programados para períodos fora do horário em que o AEM estiver ocioso, como no meio da noite. Esse cenário é representativo da abordagem recomendada.
 
 O carregamento consistirá em criar/excluir páginas, traversais e query com a maioria da carga proveniente de query e cruzamentos de páginas. A adição e remoção de muitas páginas aumenta continuamente o tamanho do espaço de trabalho e impede que as backups sejam concluídas. A distribuição da carga que o script usará é 75% de traversais de página, 24% de query e 1% de criações de página (nível único sem subpáginas aninhadas). A média de pico de transações por segundo em um sistema ocioso é alcançada com 4 threads simultâneos, que é o que será usado ao testar backups sob carga.
 
 O impacto da carga no desempenho do backup pode ser estimado pela diferença entre o desempenho com e sem essa carga do aplicativo. O impacto do backup no throughput do aplicativo é encontrado comparando o throughput de cenário em transações por hora com e sem um backup simultâneo em andamento e com backups operando com diferentes configurações de &quot;atraso de backup&quot;.
 
-**Atraso na** configuraçãoPara vários dos cenários, também alteramos a configuração de atraso de backup, usando valores de 10 ms (padrão), 1 ms e 0 ms, para explorar como essa configuração afetava o desempenho dos backups.
-
-**Tipo** de backupTodos os backups eram backups externos do repositório feito em um diretório de backup sem criar um zip, exceto em uma vez para comparação em que o comando tar era usado diretamente. Como os backups incrementais não podem ser criados em um arquivo zip, ou quando o backup completo anterior é um arquivo zip, o método do diretório de backup é o mais usado em situações de produção.
+* **Configuração**  de atraso - para vários cenários, também alteramos a configuração de atraso de backup, usando valores de 10 ms (padrão), 1 ms e 0 ms, para explorar como essa configuração afetava o desempenho dos backups.
+* **Tipo**  de backup: todos os backups eram backups externos do repositório feitos em um diretório de backup sem criar um zip, exceto em uma única vez para comparação em que o comando tar era usado diretamente. Como os backups incrementais não podem ser criados em um arquivo zip, ou quando o backup completo anterior é um arquivo zip, o método do diretório de backup é o mais usado em situações de produção.
 
 ### Resumo dos resultados {#summary-of-results}
 
-#### Tempo de backup e solução de problemas {#backup-time-and-troughput}
+#### Tempo e throughput de backup {#backup-time-and-throughput}
 
 O principal resultado desses benchmarks é mostrar como os tempos de backup variam em função do tipo de backup e da quantidade geral de dados. O gráfico a seguir mostra o tempo de backup obtido usando a configuração de backup padrão, em função do número total de páginas.
 
@@ -751,7 +721,7 @@ Este gráfico ilustra que os backups incrementais e completos seguem um padrão 
 O parâmetro de atraso de backup é fornecido para limitar a extensão em que os backups podem interferir nas cargas de trabalho de produção. O parâmetro especifica um tempo de espera em milissegundos, que é intercalado na operação de backup em uma base arquivo a arquivo. O efeito geral depende em parte do tamanho dos arquivos afetados. A avaliação do desempenho do backup em MB/s oferece uma maneira razoável de comparar os efeitos do atraso no backup.
 
 * A execução de um backup simultaneamente com carga regular do aplicativo terá um impacto negativo na throughput da carga normal.
-* O impacto pode ser leve — até 5% — ou pode ser muito significativo — causando até 75% de queda na saída, e isso provavelmente depende mais do aplicativo do que de qualquer coisa.
+* O impacto pode ser leve (até 5%) ou pode ser muito significativo, causando até 75% de queda na saída, e isso provavelmente depende do aplicativo mais do que qualquer coisa.
 * O backup não é uma carga pesada na CPU e, portanto, as cargas de trabalho de produção que exigem muita CPU seriam menos afetadas pelo backup do que as que exigem muita E/S.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
@@ -764,4 +734,3 @@ O impacto real da throughput do aplicativo de um backup contínuo depende dos de
 
 * [Administração - Backup e restauração](/help/sites-administering/backup-and-restore.md)
 * [Gerenciamento - capacidade e volume](/help/managing/best-practices-further-reference.md#capacity-and-volume)
-
