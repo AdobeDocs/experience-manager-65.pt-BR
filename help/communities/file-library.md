@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: cdbe098ada0b6c50952284f92cc2063435034a38
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 9%
@@ -42,15 +42,15 @@ Para obter as informações necessárias, visite [Informações básicas sobre c
 
 Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) forem incluídas, o componente `File Library` aparecerá desta forma:
 
-![chlimage_1-430](assets/chlimage_1-430.png)
+![file-library1](assets/file-library1.png)
 
 ### Configurando a biblioteca de arquivos {#configuring-file-library}
 
 Selecione o componente `File Library` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![chlimage_1-431](assets/chlimage_1-431.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-432](assets/chlimage_1-432.png)
+![biblioteca de arquivos2](assets/file-library2.png)
 
 #### Guia Comentários {#comments-tab}
 
