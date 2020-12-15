@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: 299c4cb377c65e49b94383704a906fdd0bb38d06
+source-git-commit: 871c42ee000eb250c1c6159d9a0c752e8ed4d7b8
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Para modificar o fluxo de trabalho [!UICONTROL DAM Update Asset] e, neste exempl
 
    * **[!UICONTROL Argumentos]**: Apagar todas as entradas para desativar a transcodificação Valores padrão:  `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
-   ![chlimage_1-372](assets/chlimage_1-372.png)
+   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
 * Selecione **[!UICONTROL OK]** para fechar a caixa de diálogo `Step Properties`.
 
