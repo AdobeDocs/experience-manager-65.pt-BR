@@ -2,9 +2,9 @@
 title: Criando e Sincronizando Live Copies
 description: Saiba como criar e sincronizar Live Copies.
 translation-type: tm+mt
-source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
+source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
 workflow-type: tm+mt
-source-wordcount: '4115'
+source-wordcount: '4114'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Para criar uma configuração de blueprint:
 1. [Navegue ](/help/sites-authoring/basic-handling.md#global-navigation) até o  **** menu Ferramentas e selecione o  **** menu Sites.
 1. Selecione **Blueprints** para abrir o console **Configurações do Blueprint**:
 
-   ![chlimage_1-209](assets/chlimage_1-209.png)
+   ![chlimage_1-209](assets/blueprint-configurations.png)
 
 1. Selecione **Criar**.
 1. Selecione o modelo blueprint e **Next** para continuar.
@@ -66,14 +66,12 @@ Você pode editar ou excluir uma configuração de blueprint existente:
 1. [Navegue ](/help/sites-authoring/basic-handling.md#global-navigation) até o  **** menu Ferramentas e selecione o  **** menu Sites.
 1. Selecione **Blueprints** para abrir o console **Configurações do Blueprint**:
 
-   ![chlimage_1-210](assets/chlimage_1-210.png)
+   ![chlimage_1-210](assets/blueprint-configurations.png)
 
 1. Selecione a configuração necessária do blueprint - as ações apropriadas estarão disponíveis na barra de ferramentas:
 
    * **Propriedades**; é possível usar essa opção para visualização e, em seguida, editar as propriedades da configuração.
    * **Excluir**
-
-   ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Criação de uma Live Copy {#creating-a-live-copy}
 
@@ -82,7 +80,7 @@ Você pode editar ou excluir uma configuração de blueprint existente:
 Você pode criar uma cópia ao vivo de qualquer página ou ramificação. Ao criar a live copy, você pode especificar as configurações de implantação a serem usadas para sincronizar o conteúdo:
 
 * As configurações de roll-out selecionadas se aplicam à página de live copy e às páginas secundárias.
-* Se você não especificar nenhuma configuração de implantação, o MSM determinará quais configurações de implantação usar. Consulte [Especificando a Configuração de Rollout a Ser Usada](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
+* Se você não especificar nenhuma configuração de implantação, o MSM determinará quais configurações de implantação usar. Consulte [Especificação da Configuração de Rollout a Ser Usada](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
 
 Você pode criar uma cópia ao vivo de qualquer página:
 
@@ -154,7 +152,7 @@ Para criar uma cópia ao vivo de um site a partir de uma configuração do bluep
 1. No console **Sites**, selecione **Criar** e **Site** no seletor suspenso.
 1. Selecione a configuração do blueprint a ser usada como a origem da live copy e continue com **Next**:
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/blueprint-configuration-select.png)
 
 1. Use o seletor **Idiomas iniciais** para especificar os idiomas do site blueprint a serem usados para a cópia online.
 
