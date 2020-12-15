@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 6d0ff6ae47688ba7f0e071bad40808fb3466246f
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 1%
@@ -391,13 +391,13 @@ Por exemplo, http://localhost:4503/system/console/configMgr
 * Selecione para abrir a configuração para edição.
 * Selecione **[!UICONTROL Salvar]**.
 
-![chlimage_1-489](assets/chlimage_1-489.png)
+![granito](assets/graniteoauth.png)
 
 >[!CAUTION]
 >
 >Tenha cuidado para não confundir o manipulador de autenticação com uma instância do Facebook ou Twitter de *Adobe Granite OAuth Application and Provider*.
 
-![chlimage_1-490](assets/chlimage_1-490.png)
+![granito1](assets/graniteoauth1.png)
 
 ### Aplicativo e Provedor OAuth do Adobe Granite {#adobe-granite-oauth-application-and-provider}
 
@@ -414,7 +414,7 @@ Para localizar a instância criada para um aplicativo do Facebook ou Twitter:
 
    * Localize a instância onde **[!UICONTROL ID do cliente]** corresponde à **[!UICONTROL ID do aplicativo]**.
 
-      ![chlimage_1-491](assets/chlimage_1-491.png)
+      ![graniteoaute2](assets/graniteoauth2.png)
 
       Exceto as seguintes propriedades, deixe as outras propriedades da configuração inalteradas:
 
@@ -493,7 +493,7 @@ Em uma instância do autor, conectado com privilégios administrativos:
 
 * Para o **nome** `oauthid-123`, substitua *123* pelo Facebook ***ID do Aplicativo*** ou pelo Twitter ***Chave do Consumidor (API)*** que é o valor do **ID do Cliente** no Adobe Configuração do aplicativo e provedor OAuth Granite](social-login.md#adobe-granite-oauth-application-and-provider).[
 
-   ![chlimage_1-492](assets/chlimage_1-492.png)
+   ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
 Para obter informações e ferramentas adicionais, consulte [Oak Query and Indexing](../../help/sites-deploying/queries-and-indexing.md).
 
