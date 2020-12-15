@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -51,15 +51,15 @@ Para obter as informações necessárias, visite [Informações básicas sobre c
 
 Quando as [bibliotecas obrigatórias do lado do cliente](essentials-featured.md#essentials-for-client-side) forem incluídas, o componente `Featured Content` aparecerá desta forma:
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![featuredcontent](assets/featuredcontent.png)
 
 ## Configuração do conteúdo em destaque {#configuring-featured-content}
 
 Selecione o componente `Featured Content` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![featuredcontent1](assets/featuredcontent1.png)
 
 ### Guia Configurações {#settings-tab}
 
@@ -83,13 +83,13 @@ A capacidade de sinalizar o conteúdo como conteúdo em destaque requer privilé
 
 Quando um moderador visualização postou conteúdo, ele tem acesso aos sinalizadores de moderação no contexto, que inclui o novo sinalizador `Feature`.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![experiência com o visitante do site](assets/site-visitor-experience.png)
 
 Depois de sinalizado como recurso, o sinalizador de moderação se torna `Unfeature`.
 
 A página que contém o componente `Featured Content` agora incluirá essa publicação.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![site-visitante-experience1](assets/site-visitor-experience1.png)
 
 `Read More` é um link para a publicação real.
 
