@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 871c42ee000eb250c1c6159d9a0c752e8ed4d7b8
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 10%
@@ -49,13 +49,13 @@ Para obter as informações necessárias, visite [Informações básicas sobre c
 
 Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-forum.md#essentials-for-client-side) forem incluídas, o componente `Forum` aparecerá desta forma:
 
-![chlimage_1-60](assets/chlimage_1-60.png)
+![componente do fórum](assets/forum-component.png)
 
 ### Configuração de um fórum {#configuring-a-forum}
 
 Selecione o componente `Forum` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![chlimage_1-61](assets/chlimage_1-61.png)
+![configure-new](assets/configure-new.png)
 
 ![forum-config](assets/forum-config.png)
 
