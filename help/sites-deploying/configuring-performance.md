@@ -677,7 +677,7 @@ A configuração AEM coloca o repositório e o armazenamento de dados no mesmo v
 A tabela a seguir ilustra o tamanho dos volumes de dados usados nos benchmarks de backup. O conteúdo inicial da linha de base é instalado primeiro, e então quantidades conhecidas adicionais de dados são adicionadas para aumentar o tamanho do conteúdo do backup. Os backups serão criados em incrementos específicos para representar um grande aumento no conteúdo e no que pode ser produzido em um dia. A distribuição de conteúdo (páginas, imagens, tags) será basicamente baseada na composição realista do ativo de produção. As páginas, imagens e tags serão limitadas a um máximo de 800 páginas secundárias. Cada página incluirá componentes de título, Flash, texto/imagem, vídeo, apresentação de slides, formulário, tabela, nuvem e carrossel. O upload das imagens será feito a partir de um pool de 400 arquivos únicos que variam de 37 kB a 594 kB.
 
 |Conteúdo|Nós|Páginas|Imagens|Tags|
-|—|—|—|—
+|---|---|---|---|---|
 |Instalação básica|69 610|562|256|237|
 |Conteúdo pequeno para backup incremental||+100|+2|+2|
 |Grande conteúdo para cópia de segurança completa||+10 000|+100|+100|
