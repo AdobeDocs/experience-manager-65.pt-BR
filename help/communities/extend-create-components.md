@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 418e7fad2d990f1a7cb3b69ab4c290ca1b7075ba
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 4%
@@ -72,7 +72,7 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
 1. Selecione **[!UICONTROL Eliminar]**
 1. Selecione **[!UICONTROL Salvar tudo]**
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![create-component](assets/create-component.png)
 
 ### Criar o componente Comentário filho {#create-the-child-comment-component}
 
@@ -83,7 +83,7 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
 1. Navegue até o nó `/apps/custom/components/comments`
 1. Clique com o botão direito do mouse no nó
 
-   * Selecione **[!UICONTROL Criar] > **[!UICONTROL Componente...]**
+   * Selecione **[!UICONTROL Criar]** > **[!UICONTROL Componente...]**
 
       * **Rótulo**:  *comentário*
       * **Título**:  *Comentário alternativo*
@@ -102,9 +102,9 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
 1. Selecione **[!UICONTROL Eliminar]**
 1. Selecione **[!UICONTROL Salvar tudo]**
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![create-child-component](assets/create-child-component.png)
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![create-component-crxde](assets/create-component-crxde.png)
 
 ### Copiar e modificar os scripts HBS padrão {#copy-and-modify-the-default-hbs-scripts}
 
@@ -168,7 +168,7 @@ Usando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 * Digite &#39;customcommentsystem.js&#39; como conteúdo de `js.txt`
 * Selecione **[!UICONTROL Salvar tudo]**
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![comments-clientlibs](assets/comments-clientlibs.png)
 
 ## Registre o Modelo SCF e a Visualização {#register-the-scf-model-view}
 
@@ -200,9 +200,9 @@ Digite o seguinte texto como conteúdo de `customcommentsystem.js`:
 
 Para experimentar o componente estendido no ambiente de publicação, é necessário replicar o componente personalizado.
 
-Uma maneira de o fazer é
+Uma maneira de fazer isso é:
 
-* Da navegação global
+* Da navegação global,
 
    * Selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]**
    * Selecione **[!UICONTROL Ativar árvore]**
