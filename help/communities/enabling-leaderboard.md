@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 9%
@@ -44,15 +44,15 @@ Para obter as informações necessárias, visite [Informações básicas sobre c
 
 Quando colocado pela primeira vez em uma página de um site da comunidade, é assim que o componente aparece:
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![quadro](assets/leaderboard.png)
 
 ### Configurando o Quadro de líderes {#configuring-leaderboard}
 
 Selecione o componente `Leaderboard` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![configure-líder](assets/configure-leaderboard.png)
 
 #### Guia Configurações {#settings-tab}
 
@@ -120,7 +120,7 @@ Configuração do componente de quadro de líderes:
    * Regra para insígnias = `/libs/settings/community/badging/rules//reference-badging`
    * Limite de exibição = `10`
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![quadro de líderes de participantes](assets/participants-leaderboard.png)
 
 ### Exemplo: Painel de líderes de especialistas {#example-experts-leaderboard}
 
@@ -143,7 +143,7 @@ Configuração do componente de quadro de líderes:
    * Regra para insígnias = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite de exibição = `10`
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![comitê de peritos](assets/experts-leaderboard.png)
 
 ### Informações adicionais {#additional-information}
 
