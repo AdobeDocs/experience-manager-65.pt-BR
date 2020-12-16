@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 932601c849b3a1ddd196e6570a9cf05710cd3e6a
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 22%
+source-wordcount: '753'
+ht-degree: 21%
 
 ---
 
@@ -37,8 +37,12 @@ Para ativar os modelos de fragmento de conteúdo, é necessário:
 
 Para [criar um novo Modelo de fragmento de conteúdo](#creating-a-content-fragment-model) você **deve** primeiro ativá-los usando o Configuration Manager:
 
+>[!CAUTION]
+>
+>Sub-configurações (uma configuração aninhada em uma configuração) não são suportadas para uso com Fragmentos de conteúdo.
+
 1. Navegue até **Ferramentas**, **Gerale** abra o **Navegador de configuração**.
-1. Selecione o local apropriado para seu site.
+
 1. Use **Criar** para abrir a caixa de diálogo, onde você:
 
    1. Especifique um **Título**.
@@ -47,6 +51,8 @@ Para [criar um novo Modelo de fragmento de conteúdo](#creating-a-content-fragme
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Selecione **Criar** para guardar a definição.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Aplicar a configuração à sua pasta Assets {#apply-the-configuration-to-your-assets-folder}
 
