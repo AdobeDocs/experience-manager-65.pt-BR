@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3133f712be1380ae98e18e63c9598d760d2e7595
+source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 6%
@@ -51,7 +51,7 @@ Quando uma função da comunidade é adicionada a um modelo de site da comunidad
 
 #### Detalhes da função de configuração {#configuration-function-details}
 
-![chlimage_1-380](assets/chlimage_1-380.png)
+![title-url-details](assets/title-url-details.png)
 
 * **Título**
 
@@ -70,7 +70,7 @@ Em seguida, o URL da página é https://localhost:4503/content/sites/engage/en/p
 
 e o link de menu da página é exibido como:
 
-![chlimage_1-381](assets/chlimage_1-381.png)
+![página de envolvimento](assets/engage-page.png)
 
 ### Função de fluxo de atividades {#activity-stream-function}
 
@@ -80,7 +80,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 #### Detalhes da função de configuração {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![detalhes da função](assets/function-details.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -110,7 +110,7 @@ A função de blog é uma página com um [Componente de blog](/help/communities/
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
-![chlimage_1-383](assets/chlimage_1-383.png)
+![componente de blog](assets/blog-component.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -136,7 +136,7 @@ A função de calendário é uma página com um [componente de calendário](/hel
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![detalhes do calendário](assets/calendar-details.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -201,7 +201,7 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
 #### Detalhes da função de configuração {#configuration-function-details-2}
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![forum-component1](assets/forum-component1.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -243,7 +243,7 @@ A partir de Communities [feature pack 1](/help/communities/deploy-communities.md
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
-![chlimage_1-386](assets/chlimage_1-386.png)
+![group-template-config](assets/group-template-config.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -266,7 +266,7 @@ A função ideation é uma página com um [componente Ideation](/help/communitie
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, que especifica os nomes padrão de Título e URL, bem como as configurações de exibição padrão do modelo:
 
-![chlimage_1-387](assets/chlimage_1-387.png)
+![função de ideação](assets/ideation-function.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
