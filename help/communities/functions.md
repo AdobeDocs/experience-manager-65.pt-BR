@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
+source-git-commit: 94a5a8d99d052d7bcf01f237dc2b73157a2f11c2
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 6%
@@ -294,7 +294,7 @@ A função de quadro de líderes é uma página com um [componente de quadro de 
 
 Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, que especifica os nomes padrão de Título e URL, bem como as configurações de exibição padrão do modelo:
 
-![chlimage_1-388](assets/chlimage_1-388.png)
+![diálogo do quadro de líderes](assets/leaderboard-dialog.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -325,7 +325,7 @@ A função QnA é uma página com um [componente QnA](/help/communities/working-
 
 Quando adicionada a um modelo, a configuração permite a restrição para membros privilegiados:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![qna-dialog](assets/qna-dialog.png)
 
 * [Configurações de título e URL](#title-and-url-settings)
 
@@ -353,11 +353,11 @@ Quando adicionada a um modelo, a configuração permite a restrição para membr
 
 A capacidade de criar uma função da comunidade é alcançada selecionando o ícone `Create Community Function` localizado na parte superior do console Funções da comunidade. Várias funções baseadas no mesmo AEM Blueprint podem ser criadas e personalizadas exclusivamente ao abrir no modo de edição do autor.
 
-![chlimage_1-390](assets/chlimage_1-390.png)
+![função create-community](assets/create-community-function.png)
 
 ### Nome da função da comunidade {#community-function-name}
 
-![chlimage_1-391](assets/chlimage_1-391.png)
+![function-name](assets/function-name.png)
 
 No painel Nome da função da comunidade, um nome, uma descrição e se a função está ativada ou desativada são configurados:
 
@@ -375,7 +375,7 @@ No painel Nome da função da comunidade, um nome, uma descrição e se a funç�
 
 ### Blueprint AEM {#aem-blueprint}
 
-![chlimage_1-392](assets/chlimage_1-392.png)
+![aem blueprint](assets/aem-blueprint.png)
 
 No painel `AEM Blueprint`, é possível selecionar o blueprint que é a implementação subjacente da função da comunidade.
 
@@ -387,13 +387,13 @@ Consulte também [Gerenciador de vários sites](/help/sites-administering/msm.md
 
 ### Miniatura  {#thumbnail}
 
-![chlimage_1-393](assets/chlimage_1-393.png)
+![miniatura da função](assets/funtion-thumbnail.png)
 
 No painel Miniaturas, uma imagem pode ser carregada para ser exibida no [console Funções da comunidade](#community-functions-console).
 
 ## Abrir função da comunidade {#open-community-function}
 
-![chlimage_1-394](assets/chlimage_1-394.png)
+![função aberta](assets/open-function.png)
 
 Selecione o ícone `Open Community Function` para entrar no modo de edição do autor para criar o conteúdo da página e modificar a configuração dos componentes do recurso.
 
@@ -409,6 +409,6 @@ Para obter detalhes sobre a configuração, visite [Communities Components](/hel
 
 ## Editar função da comunidade {#edit-community-function}
 
-![chlimage_1-395](assets/chlimage_1-395.png)
+![função de edição](assets/edit-function.png)
 
 Selecione o ícone `Edit Community Function` para editar as propriedades da função usando os mesmos painéis que [criar uma função da comunidade](#create-community-function), incluindo ativar ou desativar a função.
