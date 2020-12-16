@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 4d21a61ed687caea2b1867d5321f75636f5310a3
 workflow-type: tm+mt
 source-wordcount: '1239'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -90,7 +90,7 @@ Se o perfil do usuário não tiver sido criado por meio de autoinscrição, na p
 
 Na próxima vez que o membro entrar, o home page, identificado pelo primeiro item do menu, será exibido.
 
-![chlimage_1-434](assets/chlimage_1-434.png)
+![inscrito](assets/enrolled-member.png)
 
 ### Atribuições {#assignments}
 
@@ -106,11 +106,11 @@ Cada atribuição fornece informações básicas sobre:
 
 O tipo de Atribuição é indicado por um ícone no canto superior esquerdo do cartão. A imagem de uma estrada é para um caminho de aprendizagem com o número de recursos de ativação incluídos.
 
-![chlimage_1-435](assets/chlimage_1-435.png)
+![atribuição1](assets/assignment1.png)
 
 Selecionar *Lições de esqui* exibirá os dois recursos de ativação referenciados pelo caminho de aprendizado.
 
-![chlimage_1-436](assets/chlimage_1-436.png)
+![atribuição2](assets/assignment2.png)
 
 Selecionar *Lição de esqui 1* abrirá a página de detalhes do recurso de ativação.
 
@@ -118,7 +118,7 @@ Na página de detalhes, o membro pode aprender [classificar](rating.md) a liçã
 
 As interações com o recurso de ativação serão anotadas na seção Relatório, acessível no ambiente do autor.
 
-![chlimage_1-437](assets/chlimage_1-437.png)
+![atribuição3](assets/assignment3.png)
 
 ### Catálogo de esqui {#ski-catalog}
 
@@ -126,7 +126,7 @@ A página Catálogo de esqui é o catálogo de recursos de ativação marcados c
 
 Quando os recursos de ativação não foram atribuídos a um membro, diretamente ou por meio de um caminho de aprendizado, é possível interagir com os recursos de ativação localizados em um catálogo e fornecer feedback por meio de comentários e classificações.
 
-![chlimage_1-438](assets/chlimage_1-438.png)
+![catálogo de esqui](assets/ski-catalog.png)
 
 ### Debates {#discussions}
 
@@ -138,7 +138,7 @@ Faça logout e login como Sidney Croft (lateral/senha) e responda à pergunta, b
 
 Observe que, além da moderação em linha, há opções para compartilhar o tópico nas redes sociais ou para enviar o tópico por email.
 
-![chlimage_1-439](assets/chlimage_1-439.png)
+![discussão](assets/discussions.png)
 
 ### Novidades {#what-s-new}
 
@@ -146,7 +146,7 @@ O item de menu `What's New` é o título dado à [função de fluxo de atividade
 
 Ainda conectado como Sidney, selecione o link `What's New` para mostrar a atividade.
 
-![chlimage_1-440](assets/chlimage_1-440.png)
+![menu-novo](assets/whats-new-menu.png)
 
 ## Membro da comunidade confiável {#trusted-community-member}
 
@@ -159,7 +159,7 @@ Logon com
 
 Depois de conectado, observe que há um novo item de menu, `Administration`, que é exibido porque o membro recebeu a função de moderador.
 
-![chlimage_1-441](assets/chlimage_1-441.png)
+![página inicial de membro confiável](assets/trusted-member-homepage.png)
 
 O home page é identificado pelo primeiro item de menu, Atribuições. Quinn é o contato de recursos de moderador e ativação e não estava inscrito em nenhum recurso de ativação ou caminhos de aprendizado, portanto não há nada para exibir.
 
@@ -171,7 +171,7 @@ Selecionar o ícone do painel lateral alterna para abrir os filtros usados para 
 
 Passar o mouse sobre um cartão de comentários exibe ações de moderação.
 
-![chlimage_1-442](assets/chlimage_1-442.png)
+![administração](assets/administration.png)
 
 ## Relatórios sobre o autor {#reports-on-author}
 
@@ -213,7 +213,7 @@ Observe que provavelmente é muito cedo para mostrar dados da Adobe Analytics, q
 
 #### Relatório de recursos de lições de esqui {#ski-lessons-resource-report}
 
-![chlimage_1-443](assets/chlimage_1-443.png)
+![relatório sobre as lições de esqui](assets/ski-lessons-report.png)
 
 #### Relatório do usuário de lições de esqui {#ski-lessons-user-report}
 
@@ -223,7 +223,7 @@ Observe que provavelmente é muito cedo para mostrar dados da Adobe Analytics, q
 * Abrir cartão `Ski Lessons`
 * Selecionar `Report > User Report`
 
-![chlimage_1-444](assets/chlimage_1-444.png)
+![relatório de esqui-aulas-usuário](assets/ski-lessons-user-report.png)
 
 ### Console de relatórios {#reports-console}
 
@@ -245,7 +245,7 @@ Para relatórios em atribuições:
 
 * Selecione **[!UICONTROL Gerar]**
 
-![chlimage_1-445](assets/chlimage_1-445.png)
+![atribuição de relatórios](assets/report-assignment.png)
 
 Para relatórios sobre visualizações:
 
@@ -259,6 +259,6 @@ Para relatórios sobre visualizações:
 
 * Selecione **[!UICONTROL Gerar]**.
 
-![chlimage_1-446](assets/chlimage_1-446.png)
+![visualizações de relatórios](assets/report-views.png)
 
 **[⇐ Criar e atribuir recursos de habilitação](resource.md)**
