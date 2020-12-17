@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3533'
 ht-degree: 1%
 
 ---
@@ -287,6 +287,14 @@ Para ver um exemplo, consulte:
 Na interface clássica com ExtJS, era comum ter ouvintes para um determinado widget na estrutura de conteúdo. Alcançar o mesmo na interface habilitada para toque é diferente do código de ouvinte JS (ou qualquer código) não é mais definido no conteúdo.
 
 A estrutura do conteúdo descreve a estrutura semântica; não deve (deve) implicar a natureza do widget subjacente. Ao não ter o código JS na estrutura de conteúdo, você pode alterar os detalhes da implementação sem precisar alterar a estrutura de conteúdo. Em outras palavras, é possível alterar a biblioteca de widgets sem precisar tocar na estrutura de conteúdo.
+
+#### Detectando a disponibilidade da caixa de diálogo {#dialog-ready}
+
+Se você tiver um JavaScript personalizado que precisa ser executado somente quando a caixa de diálogo estiver disponível e pronta, você deve acompanhar o evento `dialog-ready`.
+
+Esse evento é acionado sempre que a caixa de diálogo é carregada (ou recarregada) e está pronto para uso, o que significa que sempre que há uma alteração (criar/atualizar) no DOM da caixa de diálogo.
+
+`dialog-ready` pode ser usado para conectar-se ao código personalizado JavaScript que executa personalizações nos campos dentro de uma caixa de diálogo ou tarefas semelhantes.
 
 ### Validação de campo {#field-validation}
 
