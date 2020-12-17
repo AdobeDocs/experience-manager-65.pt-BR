@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 81707b4d57f7f15106459b91f95b1bc6ec333bf4
+source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 75%
+source-wordcount: '3250'
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 75%
 
 O [Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) é uma solução hospedada para gerenciar, aprimorar, publicar e distribuir ativos de mídia avançada para a Web, dispositivos móveis, email, impressão e monitores conectados à Internet.
 
-É possível visualizar AEM Assets publicados no Scene7 em diversos visualizadores:
+Você pode visualização ativos de Experience Manager publicados no Scene7 em vários visualizadores:
 
 * Zoom
 * Flyout
@@ -31,13 +31,13 @@ O [Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-
 * Modelo de imagem
 * Imagem
 
-É possível publicar ativos digitais diretamente do AEM para o Scene7, além de publicar ativos digitais do Scene7 para o AEM.
+Você pode publicar ativos digitais diretamente do Experience Manager para o Scene7 e pode publicar ativos digitais do Scene7 para o Experience Manager.
 
-Este documento descreve como publicar ativos digitais do AEM para o Scene7 e vice-versa. Os visualizadores também são descritos detalhadamente. Para obter informações sobre a configuração do AEM para o Scene7, consulte [Integração do Scene7 com o AEM](/help/sites-administering/scene7.md).
+Este documento descreve como publicar ativos digitais de Experience Manager para Scene7 e vice-versa. Os visualizadores também são descritos detalhadamente. Para obter informações sobre como configurar o Experience Manager para Scene7, consulte [Integração do Scene7 com o Experience Manager](/help/sites-administering/scene7.md).
 
 Consulte também [Adição de mapas de imagem](/help/assets/image-maps.md).
 
-Para obter mais informações sobre como usar componentes de vídeo no AEM, consulte o seguinte:
+Para obter mais informações sobre como usar componentes de vídeo com o Experience Manager, consulte:
 
 * [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
 
@@ -51,14 +51,14 @@ Para obter mais informações sobre como usar componentes de vídeo no AEM, cons
 
 >[!NOTE]
 >
->O AEM publica no Scene7 de maneira assíncrona. Depois de clicar em **Publicar**, pode levar alguns segundos para que o ativo seja publicado no Scene7.
+>O Experience Manager publica no Scene7 de forma assíncrona. Depois de clicar em **Publicar**, pode levar alguns segundos para que o ativo seja publicado no Scene7.
 
 
 ### Publicação por meio do console Assets {#publishing-from-the-assets-console}
 
 Para publicar no Scene7 por meio do console Assets se os ativos estiverem em uma pasta de destino do Scene7:
 
-1. Na interface clássica AEM, clique em **Ativos digitais** para acessar o gerenciador de ativos digitais.
+1. Na interface clássica do Experience Manager, clique em **Ativos digitais** para acessar o gerenciador de ativos digitais.
 
 1. Selecione o ativo (ou ativos) ou a pasta dentro da pasta de destino que deseja publicar no Scene7, clique com o botão direito do mouse e selecione **Publicar no Scene7**. Como alternativa, você pode selecionar **Publicar no Scene7** no menu **Ferramentas**.
 
@@ -80,7 +80,7 @@ Para publicar manualmente um ativo, ele deve estar localizado na pasta sincroniz
 
 Para publicar no Scene7 diretamente de um ativo digital:
 
-1. No AEM, clique em **Ativos digitais** para acessar o gerenciador de ativos digitais.
+1. No Experience Manager, clique em **Ativos digitais** para acessar o gerenciador de ativos digitais.
 
 1. Clique duas vezes para abrir um ativo.
 
@@ -92,7 +92,7 @@ Para publicar no Scene7 diretamente de um ativo digital:
 
    >[!NOTE]
    >
-   >Se o ativo não for publicado corretamente no Scene7, o link é alterado para **Falha na publicação**. Se o ativo já tiver sido publicado no Scene7, o link aparece como **Publicar novamente no Scene7**. A Republicação permite fazer alterações em um ativo no AEM e publicá-lo novamente.
+   >Se o ativo não for publicado corretamente no Scene7, o link é alterado para **Falha na publicação**. Se o ativo já tiver sido publicado no Scene7, o link aparece como **Publicar novamente no Scene7**. A republicação permite fazer alterações em um ativo no Experience Manager e republicá-los.
 
 ### Publicar ativos de fora da pasta de destino CQ {#publishing-assets-from-outside-the-cq-target-folder}
 
@@ -106,7 +106,7 @@ Para fazer isso, primeiro defina a configuração de Nuvem da página onde o ati
 
 Para publicar ativos que residem fora da pasta de destino CQ:
 
-1. Na interface do usuário clássica do AEM, clique em **Sites** e navegue até a página da Web à qual deseja acrescentar um ativo digital ainda não publicado no Scene7. (As regras usuais de herança de página se aplicam.)
+1. Na Experience Manager na interface clássica, clique em **Sites** e navegue até a página da Web à qual você deseja adicionar um ativo digital que ainda não foi publicado na Scene7. (As regras usuais de herança de página se aplicam.)
 
 1. No sidekick, clique no ícone **Página**, em seguida clique em **Propriedades da página**.
 
@@ -124,7 +124,7 @@ Para publicar ativos que residem fora da pasta de destino CQ:
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Clique em **Verificar o status de publicação do Scene7**. Se o ativo não estiver publicado, o AEM o publica no Scene7. Depois de enviado por upload, o ativo estará localizado na pasta ad-hoc. Por padrão, a pasta ad-hoc está localizada em **name_of_the_company/CQ5_adhoc**. É possível [alterar essa configuração, se necessário](#configuringtheadhocfolder).
+1. Clique em **Verificar o status de publicação do Scene7**. Se os ativos não forem publicados, o Experience Manager publicará o ativo na Scene7. Depois de enviado por upload, o ativo estará localizado na pasta ad-hoc. Por padrão, a pasta ad-hoc está localizada em **name_of_the_company/CQ5_adhoc**. É possível [alterar essa configuração, se necessário](#configuringtheadhocfolder).
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ Para publicar ativos que residem fora da pasta de destino CQ:
 
 ## Componentes do Scene7  {#scene-components}
 
-Os seguintes componentes do Scene7 estão disponíveis no AEM:
+Os seguintes componentes Scene7 estão disponíveis no Experience Manager:
 
 * Zoom
 * Flyout (Zoom)
@@ -144,7 +144,7 @@ Os seguintes componentes do Scene7 estão disponíveis no AEM:
 >
 >Esses componentes não estão disponíveis por padrão e precisam ser selecionados no modo de Design antes de serem usados.
 
-Depois que são disponibilizados no modo Design, você pode adicioná-los à sua página como qualquer outro componente do AEM. Os ativos que ainda não foram publicados no Scene7 são publicados se estiverem em uma pasta sincronizada, em uma página ou com uma configuração de nuvem do Scene7.
+Depois que eles forem disponibilizados no modo Design, você poderá adicionar os componentes à sua página como qualquer outro componente Experience Manager. Os ativos que ainda não foram publicados no Scene7 são publicados se estiverem em uma pasta sincronizada, em uma página ou com uma configuração de nuvem do Scene7.
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Adicionar um componente do Scene7 a uma página é o mesmo que adicionar um comp
 
 Para adicionar um componente/visualizador do Scene7 a uma página usando a interface do usuário clássica:
 
-1. No AEM, abra a página à qual deseja adicionar o componente do Scene7.
+1. No Experience Manager, abra a página onde deseja adicionar o componente Scene7.
 
 1. Caso nenhum componente do Scene7 esteja disponível, clique na régua no sidekick para entrar no modo de **Design**, clique em **Editar** parsys, em seguida selecione todos os componentes do **Scene7** para torná-los disponíveis.
 
@@ -180,7 +180,7 @@ Design responsivo para seus ativos significa que eles se adaptam dependendo de o
 
 Para adicionar uma experiência de exibição interativa a um site responsivo na interface do usuário clássica:
 
-1. Faça logon no AEM e certifique-se de que você tenha [configurado os Serviços de nuvem do Adobe Scene7](/help/sites-administering/scene7.md#configuring-scene-integration) e que os componentes do Scene7 estejam disponíveis.
+1. Faça logon no Experience Manager e certifique-se de que você tenha [Cloud Services Adobe Scene7](/help/sites-administering/scene7.md#configuring-scene-integration) configurados e que os componentes Scene7 estejam disponíveis.
 
    >[!NOTE]
    >
@@ -227,7 +227,7 @@ No componente do Flyout HTML5, o ativo é exibido como tela dividida; na parte �
 
 ### Imagem {#image}
 
-O componente de imagem do Scene7 permite adicionar funcionalidades do Scene7 a imagens, tais como modificadores do Scene7, predefinições de imagem ou de visualizador e nitidez. O componente de imagem do Scene7 é semelhante a outros componentes de imagem no AEM com a funcionalidade especial do Scene7. Neste exemplo, a imagem tem o modificador de URL do Scene7, **&amp;op_invert=1** aplicado.
+O componente de imagem do Scene7 permite adicionar funcionalidades do Scene7 a imagens, tais como modificadores do Scene7, predefinições de imagem ou de visualizador e nitidez. O componente de imagem do Scene7 é semelhante a outros componentes de imagem no Experience Manager com funcionalidade especial do Scene7. Neste exemplo, a imagem tem o modificador de URL do Scene7, **&amp;op_invert=1** aplicado.
 
 ![](do-not-localize/chlimage_1-4.png)
 
@@ -253,7 +253,7 @@ O componente de imagem do Scene7 permite adicionar funcionalidades do Scene7 a i
 
 ### Modelo de imagem {#image-template}
 
-Os [Modelos de imagem do Scene7](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) são o conteúdo em camadas do Photoshop que foi importado para o Scene7, onde o conteúdo e as propriedades são parametrizados para a variação. O componente do **Modelo de imagem** permite importar imagens e alterar dinamicamente o texto no AEM. Além disso, é possível configurar o componente do **Modelo de imagem** para usar valores do contexto de cliente, de modo que cada usuário experiencie a imagem de uma maneira personalizada.
+Os [Modelos de imagem do Scene7](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) são o conteúdo em camadas do Photoshop que foi importado para o Scene7, onde o conteúdo e as propriedades são parametrizados para a variação. O componente **Modelo de imagem** permite importar imagens e alterar o texto dinamicamente no Experience Manager. Além disso, é possível configurar o componente do **Modelo de imagem** para usar valores do contexto de cliente, de modo que cada usuário experiencie a imagem de uma maneira personalizada.
 
 Clique em **Editar** para configurar o componente. Você pode definir [configurações comuns a todos os componentes do Scene7](/help/sites-administering/scene7.md#settingscommontoallscene7components), bem como outras configurações descritas nesta seção.
 
@@ -327,15 +327,15 @@ Ao usar um conjunto de vídeos adaptáveis com o componente de vídeo do Scene7,
 
 ## Navegador de conteúdo do Scene7 {#scene-content-browser}
 
-O navegador de conteúdo do Scene7 permite visualizar conteúdo do Scene7 diretamente no AEM. Para acessar o navegador de conteúdo, no Localizador de conteúdo, selecione **Scene7** na interface de usuário otimizada ao toque ou o ícone **S7** na interface de usuário clássica. A funcionalidade é idêntica em ambas as interfaces do usuário.
+O navegador de conteúdo Scene7 permite que você visualização conteúdo do Scene7 diretamente no Experience Manager. Para acessar o navegador de conteúdo, no Localizador de conteúdo, selecione **Scene7** na interface de usuário otimizada ao toque ou o ícone **S7** na interface de usuário clássica. A funcionalidade é idêntica em ambas as interfaces do usuário.
 
-Caso tenha diversas configurações, o AEM exibe, por padrão, a [configuração padrão](/help/sites-administering/scene7.md#configuring-a-default-configuration). É possível selecionar diferentes configurações diretamente no navegador de conteúdo do Scene7 no menu suspenso.
+Se você tiver várias configurações, o Experience Manager por padrão exibirá a [configuração padrão](/help/sites-administering/scene7.md#configuring-a-default-configuration). É possível selecionar diferentes configurações diretamente no navegador de conteúdo do Scene7 no menu suspenso.
 
 >[!NOTE]
 >
 >* Os ativos localizados na pasta ad-hoc não aparecerão no navegador de conteúdo do Scene7.
 >* Quando a [Exibição segura estiver habilitada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), tanto os ativos publicados quanto os não publicados no Scene7 aparecerão no navegador de conteúdo do Scene7.
->* Se você não vir **Scene7** ou o ícone **S7** como uma opção no navegador de conteúdo, será necessário [configurar o Scene7 para trabalhar com AEM](/help/sites-administering/scene7.md).
+>* Se você não vir **Scene7** ou o ícone **S7** como uma opção no navegador de conteúdo, será necessário [configurar o Scene7 para trabalhar com Experience Manager](/help/sites-administering/scene7.md).
 >* Para vídeo, o navegador de conteúdo do Scene7 é compatível com:
    >   * Conjuntos de vídeos adaptáveis: contêiner de todas as representações de vídeo necessárias para uma reprodução perfeita em diversas telas
    >   * Vídeo MP4 único
@@ -368,7 +368,7 @@ Por padrão, os ativos são exibidos por nome de arquivo. Além disso, é possí
 
 ### Pesquisar ativos do Scene7 com o navegador de conteúdo {#searching-for-scene-assets-with-the-content-browser}
 
-Pesquisar ativos do Scene7 é semelhante a pesquisar ativos do AEM, exceto que quando você pesquisa, na verdade você está vendo uma visualização remota dos ativos no sistema Scene7, em vez de importá-los diretamente para o AEM.
+Pesquisar ativos Scene7 é semelhante a pesquisar ativos Experience Manager, exceto que quando você pesquisa, você está vendo uma visualização remota dos ativos no sistema Scene7, em vez de importá-los diretamente para o Experience Manager.
 
 É possível usar a interface do usuário clássica ou a otimizada para toque para visualizar e pesquisar ativos. Dependendo da interface, a maneira como você pesquisa é levemente diferente.
 
@@ -380,9 +380,9 @@ Ao pesquisar em qualquer uma das interfaces de usuário, você pode filtrar pelo
 
 **Pasta/** caminhoO nome da pasta que aparece é baseado na configuração selecionada. Para fazer uma busca detalhada, clique no ícone de pasta e selecione uma subpasta, em seguida clique na marca de seleção para selecioná-la.
 
-Se você inserir uma palavra-chave e selecionar uma pasta, o AEM procura nessa pasta e em todas as subpastas. No entanto, se você não digitar nenhuma palavra-chave ao pesquisar, selecionar a pasta exibirá somente os ativos nessa pasta e não incluirá nenhuma subpasta.
+Se você digitar uma palavra-chave e selecionar uma pasta, o Experience Manager pesquisará essa pasta e quaisquer subpastas. No entanto, se você não digitar nenhuma palavra-chave ao pesquisar, selecionar a pasta exibirá somente os ativos nessa pasta e não incluirá nenhuma subpasta.
 
-Por padrão, o AEM procura na pasta selecionada e em todas as subpastas.
+Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpastas.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -394,7 +394,7 @@ Por padrão, o AEM procura na pasta selecionada e em todas as subpastas.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Tipo de** ativoNo navegador Scene7, você pode filtrar os resultados para incluir qualquer um dos seguintes: imagens, modelos, vídeos e conjuntos de vídeo adaptáveis. Se você não selecionar nenhum tipo de ativo, o AEM procura todos os tipos de ativo por padrão.
+**Tipo de** ativoNo navegador Scene7, você pode filtrar os resultados para incluir qualquer um dos seguintes: imagens, modelos, vídeos e conjuntos de vídeo adaptáveis. Se você não selecionar nenhum tipo de ativo, o Experience Manager por padrão pesquisará todos os tipos de ativos.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -404,10 +404,10 @@ Por padrão, o AEM procura na pasta selecionada e em todas as subpastas.
    >
    >
 * Ao pesquisar por vídeo, você estará procurando uma única representação. Os resultados retornam a representação original (apenas *.mp4) e a reprodução codificada.
-* Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Caso não tenha adicionado uma palavra-chave, o AEM não pesquisará nas subpastas.
+* Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará as subpastas.
 
 
 
-**Publicar** statusVocê pode filtrar por ativos com base no status da publicação: Não publicado ou publicado. Se não selecionar um status Publicado, o AEM procura todos os status de publicação por padrão.
+**Publicar** statusVocê pode filtrar por ativos com base no status da publicação: Não publicado ou publicado. Se você não selecionar nenhum Status de publicação, o Experience Manager por padrão pesquisará todos os status de publicação.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
