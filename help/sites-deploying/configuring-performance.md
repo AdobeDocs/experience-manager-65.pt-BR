@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 7f1ae2d4ab361bc039c1098daa0ef944ec9df639
+source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
 workflow-type: tm+mt
-source-wordcount: '6648'
-ht-degree: 1%
+source-wordcount: '6658'
+ht-degree: 2%
 
 ---
 
@@ -389,9 +389,9 @@ Em ambos os casos, você pode definir o número esperado de transações por seg
 | Componente | Tipo de teste | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
 | Página inicial - Usuário único | Média | 1 | 1 |  |  |
-|  | Pico | 3 | 3 |  |  |
-| Usuários da página inicial 100 | Média | 100 | 1 |  |  |
-|  | Pico | 100 | 3 |  |
+|  | Pico | 1 | 3 |  |  |
+| Usuários da página inicial 100 | Média | 100 | 3 |  |  |
+|  | Pico | 100 | 1 |  |
 
 #### Testes de componentes combinados {#combined-component-tests}
 
@@ -433,7 +433,7 @@ Ao elaborar esses testes, lembre-se de que nem todos os cenários ocorrerão reg
 
 | Cenário de erro | Tipo de erro | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 1 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
+| Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 3 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
 |  | Palavra de interrupção | 20 | 2 |  | Procurando uma palavra de parada. |
 |  | Sequência vazia | 10 | 1 |  | Procurando uma string vazia. |
 |  | Caracteres especiais | 10 | 1 |  | Procurando caracteres especiais. |
@@ -444,11 +444,11 @@ Determinados problemas só serão encontrados depois que o sistema estiver em ex
 
 | Cenário | Tipo de teste | Não. de usuários | Tx/seg (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Teste de resistência (72 horas) | Página inicial | 10 | 3 |  |  |
+| Teste de resistência (72 horas) | Página inicial | 10 | 1 |  |  |
 |  | Pesquisar   | 10 | 1 |  |  |
 |  | Notícias | 20 | 2 |  |  |
 |  | Eventos | 10 | 1 |  |  |
-|  | Ativações | 3 | 1 |  | Simulação do comportamento do autor. |
+|  | Ativações | 1 | 1 |  | Simulação do comportamento do autor. |
 
 ### Otimização {#optimization}
 
@@ -676,11 +676,11 @@ A configuração AEM coloca o repositório e o armazenamento de dados no mesmo v
 
 A tabela a seguir ilustra o tamanho dos volumes de dados usados nos benchmarks de backup. O conteúdo inicial da linha de base é instalado primeiro, e então quantidades conhecidas adicionais de dados são adicionadas para aumentar o tamanho do conteúdo do backup. Os backups serão criados em incrementos específicos para representar um grande aumento no conteúdo e no que pode ser produzido em um dia. A distribuição de conteúdo (páginas, imagens, tags) será basicamente baseada na composição realista do ativo de produção. As páginas, imagens e tags serão limitadas a um máximo de 800 páginas secundárias. Cada página incluirá componentes de título, Flash, texto/imagem, vídeo, apresentação de slides, formulário, tabela, nuvem e carrossel. O upload das imagens será feito a partir de um pool de 400 arquivos únicos que variam de 37 kB a 594 kB.
 
-|Conteúdo|Nós|Páginas|Imagens|Tags|
+| Conteúdo | Nós | Páginas | Imagens | Tags |
 |---|---|---|---|---|
-|Instalação básica|69 610|562|256|237|
-|Conteúdo pequeno para backup incremental||+100|+2|+2|
-|Grande conteúdo para cópia de segurança completa||+10 000|+100|+100|
+| Instalação básica | 69.610 | 562 | 256 | 237 |
+| Conteúdo pequeno para backup incremental |  | +100 | +2 | +2 |
+| Conteúdo grande para backup completo |  | +10 000 | +100 | +100 |
 
 O benchmark de backup é repetido com os conjuntos de conteúdo adicionais adicionados a cada repetição.
 
