@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: e9d5a7acad04d841cbc7d62050163f3de998fab6
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 3%
@@ -70,9 +70,9 @@ Selecione o estilo desejado a ser aplicado ao modelo. Quando selecionado, o tema
 
 (Opcional) Faça upload de uma imagem de banner para ser exibida nas páginas do site. O banner é fixado na borda esquerda do navegador, entre o cabeçalho e o menu do site da comunidade (links de navegação). A altura do banner é cortada em 120 pixels. Não há redimensionamento do banner para ajustar à largura do navegador e à altura de 120 pixels.
 
-![chlimage_1-449](assets/chlimage_1-449.png)
+![marca de site1](assets/site-branding1.png)
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![marca de site2](assets/site-branding2.png)
 
 Selecione **Próximo**.
 
@@ -130,7 +130,7 @@ Por exemplo,
 
 Aceite as configurações globais padrão para [moderar](/help/communities/sites-console.md#moderation) conteúdo gerado pelo usuário (UGC).
 
-![chlimage_1-452](assets/chlimage_1-452.png)
+![moderação1](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
@@ -138,7 +138,7 @@ Na lista suspensa, selecione a estrutura de serviço em nuvem do Analytics confi
 
 A seleção vista na captura de tela, `Communities`, é o exemplo de estrutura da documentação de configuração [.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-454](assets/chlimage_1-454.png)
+![analytics](assets/analytics.png)
 
 #### TRADUÇÃO {#translation}
 
@@ -147,7 +147,7 @@ As [Configurações de tradução](/help/communities/sites-console.md#translatio
 * Marque **Permitir tradução automática**
 * Usar as configurações padrão
 
-![chlimage_1-456](assets/chlimage_1-456.png)
+![tradução](assets/translation.png)
 
 #### ATIVAÇÃO {#enablement}
 
@@ -163,7 +163,7 @@ Para uma comunidade de ativação, é necessário identificar um ou mais Gerente
 * **ID**
  de organização do Marketing Cloud (opcional) A ID de uma conta Adobe Analytics que é necessária ao incluir a  [Análise do Video Heartbeat ](/help/communities/analytics.md#video-heartbeat-analytics) no relatórios de ativação.
 
-![chlimage_1-457](assets/chlimage_1-457.png)
+![capacitação](assets/enablement.png)
 
 Selecione **Próximo**.
 
@@ -171,7 +171,7 @@ Selecione **Próximo**.
 
 Selecione **Criar.**
 
-![chlimage_1-458](assets/chlimage_1-458.png)
+![pré-visualização](assets/preview.png)
 
 Quando o processo for concluído, a pasta do novo site será exibida no console Comunidades > Sites.
 
@@ -218,11 +218,11 @@ Observe que o UGC não está incluído no pacote do site.
 
 Selecione o ícone do mundo para publicar o site da comunidade.
 
-![chlimage_1-465](assets/chlimage_1-465.png)
+![site de publicação](assets/publish-site.png)
 
 Haverá uma indicação de que o site foi publicado.
 
-![chlimage_1-466](assets/chlimage_1-466.png)
+![publicado no site](assets/site-published.png)
 
 ## Usuários da comunidade e grupos de usuários {#community-users-user-groups}
 
@@ -251,7 +251,7 @@ Neste exemplo, o grupo `Community Ski Class` é adicionado como membro do grupo 
 
 * Selecione **Salvar**
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![edit-group-settings](assets/edit-group-settings.png)
 
 ## Configurações em Publicar {#configurations-on-publish}
 
@@ -317,13 +317,13 @@ Para começar:
 >
 >Para desativar, basta anexar o valor da propriedade `sling:match` com um valor &#39;x&#39; - `xlocalhost.4503/$` - e **Salvar tudo**.
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![change-default-homepage](assets/change-default-homepage.png)
 
 #### Solução de problemas: Erro ao salvar mapa {#troubleshooting-error-saving-map}
 
 Se não for possível salvar as alterações, verifique se o nome do nó é `localhost.4503`, com um separador &#39;dot&#39; e não `localhost:4503` com um separador &#39;colon&#39;, pois `localhost` não é um prefixo de namespace válido.
 
-![chlimage_1-365](assets/chlimage_1-365.png)
+![error-map](assets/error-map.png)
 
 #### Solução de problemas: Falha ao redirecionar {#troubleshooting-fail-to-redirect}
 
@@ -361,11 +361,11 @@ Selecione o painel ESTRUTURA para adicionar um catálogo ou modificar um catálo
 
 * Selecione **Salvar**.
 
-![chlimage_1-299](assets/chlimage_1-299.png)
+![modificar a estrutura do site](assets/modify-site-structure.png)
 
 Use o ícone Posição para mover a função Catálogo para a segunda posição, após Atribuições.
 
-![chlimage_1-300](assets/chlimage_1-300.png)
+![move-Catalog-func](assets/move-catalog-func.png)
 
 Selecione **Salvar** no canto superior direito para salvar as alterações no site da comunidade.
 
