@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c863e438df45fd54c29c1b99114eea07aaeb6162
+source-git-commit: 303841896717448947aa48ece7ae86519a5450d5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 1%
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +63,7 @@ O modo herdado é para clientes que têm interfaces personalizadas baseadas em c
 
 ## Como configurar {#how-to-set-up}
 
-O Pacote de compatibilidade AEM 6.3 poderá ser instalado como um pacote usando o Gerenciador de pacotes neste [link](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+O Pacote de compatibilidade AEM 6.3 pode ser instalado como um pacote usando o Gerenciador de pacotes. Você pode baixar o [AEM Pacote de compatibilidade 6.3 do site de Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
 
 Quando o Pacote de compatibilidade estiver instalado, o roteamento poderá ser ativado ou desativado usando um comutador na configuração OSGI, como mostrado abaixo:
 
