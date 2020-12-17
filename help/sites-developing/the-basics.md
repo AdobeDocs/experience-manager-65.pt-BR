@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: d621a612556f0bea032444c2e07be101868b1905
+source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3386'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,11 @@ Alguns outros pontos são:
 * quando o Método (GET, POST) for necessário, ele será especificado em maiúsculas de acordo com a especificação HTTP, por exemplo jobs.POST.esp (consulte abaixo)
 * vários mecanismos de script são suportados:
 
-   * `.esp, .ecma`: Páginas ECMAScript (JavaScript) (execução no servidor)
-   * `.jsp`: Java Server Pages (execução no servidor)
-   * `.java`: Java Servlet Compiler (execução no servidor)
-   * `.jst`: Modelos JavaScript (execução no cliente)
+   * HTL (Linguagem de modelo HTML - sistema de modelo do lado do servidor preferencial e recomendado da Adobe Experience Manager para HTML): `.html`
+   * Páginas do ECMAScript (JavaScript) (execução no servidor): `.esp, .ecma`
+   * Páginas do servidor Java (execução no servidor): `.jsp`
+   * Java Servlet Compiler (execução no servidor): `.java`
+   * Modelos JavaScript (execução no cliente): `.jst`
 
 A lista de mecanismos de script suportados pela instância específica do AEM está listada no Console de Gerenciamento Felix ( `http://<host>:<port>/system/console/slingscripting`).
 
