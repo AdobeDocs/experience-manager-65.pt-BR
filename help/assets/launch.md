@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
 workflow-type: tm+mt
 source-wordcount: '6605'
 ht-degree: 17%
@@ -34,7 +34,7 @@ Consulte [Extensão do Adobe](https://experienceleague.adobe.com/docs/launch/usi
 * A integração Adobe Launch para visualizadores Dynamic Media não funciona no nó do autor AEM. Não é possível ver nenhum rastreamento de uma página WCM até que ela seja publicada.
 * A integração do Adobe Launch para visualizadores Dynamic Media não é compatível com o modo de operação &quot;pop-up&quot;, onde o URL do visualizador é obtido usando o botão &quot;URL&quot; na página Detalhes do ativo.
 * A integração do Adobe Launch não pode ser usada simultaneamente com a integração do Analytics de visualizadores herdados (por meio do parâmetro `config2=`).
-* O suporte para rastreamento de vídeo está limitado somente ao rastreamento de reprodução principal, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é suportado.
+* O suporte para rastreamento de vídeo está limitado somente ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é suportado.
 * A configuração da Duração do armazenamento para Elementos de dados não é compatível com Elementos de dados que usam a extensão *Dynamic Media Viewers*. A Duração do armazenamento deve ser definida como **[!UICONTROL Nenhum]**.
 
 ### Casos de uso para a integração {#use-cases-for-the-integration}
@@ -141,7 +141,7 @@ Para rastrear visualizadores Dynamic Media no AEM Sites, todas as etapas listada
 
 Após a configuração correta, qualquer visualizador do Dynamic Media que você adicionar a uma página Sites, usando um componente WCM suportado pela Dynamic Media, rastreia automaticamente os dados para o Adobe Analytics ou Adobe Analytics para Vídeo, ou ambos.
 
-<!-- To be reviewed and updated:
+<!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
@@ -155,7 +155,7 @@ Após a configuração correta, você pode adicionar o suporte ao Adobe Launch a
 
 Consulte [Adicionar o código incorporado Iniciar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) para saber mais sobre como usar o código incorporado da biblioteca de inicialização de Adobe.
 
-<!-- To be reviewed and updated:
+<!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
 -->
 
@@ -221,8 +221,7 @@ O valor exato retornado pelo Elemento de dados depende do contexto. Se o Element
    * Usa o evento do Dynamic Media Viewer **[!UICONTROL PAN]** como disparador.
    * Envia o valor de **[!UICONTROL ZoomScale]** Elemento de dados para a Adobe Analytics.
 
-* 
-   * **** TrackKeyRule com o seguinte:
+* **** TrackKeyRule com o seguinte:
 
    * Usa o evento key press da extensão Core Adobe Launch como disparador.
    * Envia o valor de **[!UICONTROL ZoomScale]** Elemento de dados para a Adobe Analytics.
