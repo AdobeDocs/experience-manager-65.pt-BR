@@ -1,13 +1,13 @@
 ---
 title: Acessibilidade no Dynamic Media
-description: Saiba mais sobre a acessibilidade no Dynamic Media e no Dynamic Media Viewers
+description: Saiba mais sobre o suporte de acessibilidade nos visualizadores Dynamic Media e Dynamic Media
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -52,12 +52,12 @@ Consulte [Editar o recorte inteligente ou a amostra inteligente de uma única im
 
 Todos os componentes prontos para uso do visualizador [!DNL Dynamic Media] oferecem suporte à acessibilidade do teclado para seus clientes.
 
-Consulte [Acessibilidade do teclado e navegação](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de Referência do Visualizador de Mídia Dinâmica.
+Consulte [Acessibilidade do teclado e navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de Referência do Dynamic Media Viewers.
 
 ## Suporte a tecnologia assistiva em visualizadores [!DNL Dynamic Media] {#assistive-technology-support-for-dm-viewers}
 
 Todos os [!DNL Dynamic Media] componentes do visualizador suportam funções e atributos ARIA (Accessible Rich Internet Applications) para melhorar a integração com tecnologias de assistência, como leitores de tela.
-Consulte o tópico **Suporte à tecnologia assistiva** Ajuda em qualquer tópico personalizado do visualizador no Guia de Referência do Visualizador de Mídia Dinâmica. Por exemplo, consulte [Suporte à tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para o Visualizador de vídeo, ou [Suporte à tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para o Visualizador de imagem interativa.
+Consulte o tópico **Suporte à tecnologia assistiva** Ajuda em qualquer tópico personalizado do visualizador no Guia de Referência do Dynamic Media Viewers. Por exemplo, consulte [Suporte à tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para o Visualizador de vídeo, ou [Suporte à tecnologia assistiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para o Visualizador de imagem interativa.
 
 >[!MORELIKETHIS]
 >
