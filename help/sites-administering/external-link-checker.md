@@ -2,9 +2,9 @@
 title: O Verificador de links
 description: O Verificador de links ajuda a validar links internos e externos e permite a regravação de links.
 translation-type: tm+mt
-source-git-commit: 861cd74e1b2fd3d210647d83dee5d9a6fcead22a
+source-git-commit: 8a551cce581056cb274b1d8567f579fc73a95d3c
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -65,14 +65,14 @@ Para usar o Verificador de links externos:
 1. Usando **Navegação**, selecione **Ferramentas** e, em seguida, **Sites**.
 1. Selecione **Verificador de links externos** e uma lista de todos os links externos será exibida.
 
-![](assets/external-link-checker.png)
+![A janela Verificador de links externos](assets/external-link-checker.png)
 
 As seguintes informações são exibidas:
 
-* **Status**  - O status de validação do link
+* **Status**  - o status de validação do link, que pode ser um dos seguintes:
    * **Válido**  - o link externo pode ser acessado pelo Verificador de links
    * **Pendente**  - o link externo foi adicionado ao conteúdo do site, mas ainda não foi validado pelo Verificador de links
-   * **Inválido**  - o link externo não pode ser alcançado pelo Verificador de links.
+   * **Inválido**  - O link externo não pode ser alcançado pelo Verificador de links
 * **URL**  - O link externo
 * **Quem indicou**  - A página de conteúdo que contém o link externo
    * Isso só é preenchido [se configurado.](#configuring)
@@ -80,7 +80,7 @@ As seguintes informações são exibidas:
    * Com que frequência os links são marcados [é configurável.](#configuring)
 * **Último status**  - O último código de status HTML retornado quando o link marcado pela última vez verificou o link externo
 * **Última Disponível**  - Tempo desde que o link foi disponibilizado pela última vez para o Verificador de links
-* **Última hora de acesso**  desde que o link foi acessado pela última vez pelo Verificador de links
+* **Último acesso**  - tempo desde que a página com o link externo foi acessada pela última vez na interface de criação
 
 É possível manipular o conteúdo da janela usando os dois botões na parte superior da lista dos links:
 
