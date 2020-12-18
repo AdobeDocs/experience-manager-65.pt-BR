@@ -4,7 +4,7 @@ description: Notas de versão específicas do [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
 source-wordcount: '4243'
 ht-degree: 4%
@@ -39,9 +39,9 @@ Os principais recursos e melhorias introduzidos em [!DNL Adobe Experience Manage
 
 * [!DNL Assets] e  [!DNL Dynamic Media] oferecem várias melhorias de acessibilidade. Os aprimoramentos estão relacionados à navegação do teclado, ao uso de leitores de tela e à habilitação dos usuários para usar a tecnologia de assistência similar (AT). Consulte [[!DNL Assets] aprimoramentos](#assets-6570) e [[!DNL Dynamic Media] aprimoramentos](#dynamic-media-6570).
 
-* Configuração do cliente HTTP do modelo de dados de formulário para otimizar o desempenho.
+* [Configuração do cliente HTTP do modelo de dados de formulário ](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration) para otimizar o desempenho.
 
-* Disponibilidade da opção Redefinir para cada componente no modo Layout
+* [Disponibilidade da opção Redefinir para cada ](../../help/forms/using/resize-using-layout-mode.md#resize-components) componente no modo Layout
 
 * [!DNL Experience Manager] 6.5 O Service Pack 7 Forms melhora o desempenho para:
 
@@ -208,7 +208,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
    * Os leitores de tela (JAWS, Narrador) registram o nome, a função e o estado dos itens de menu na opção de menu Incorporar tamanho (CQ-4290927).
    * Os usuários podem navegar na caixa de diálogo Link de email usando a tecla `Tab` (CQ-4290926).
    * O fluxo de trabalho para criar perfis de codificação de vídeo é mais fácil de usar, dado o aprimoramento do leitor de tela (CQ-4290623, CQ-4290622).
-   * Ao navegar usando a tecla `Tab`, o foco se move para os elementos apropriados da interface do usuário no fluxo de trabalho para criar um vídeo interativo (CQ-4290621, CQ-4290620, CQ-4290619).
+   * Ao navegar usando a tecla `Tab`, o foco move para os elementos apropriados da interface do usuário no fluxo de trabalho para criar um vídeo interativo (CQ-4290621, CQ-4290620, CQ-4290619).
    * A página Publicar, a página Editar ativo, a página Editar recortes inteligentes e a página Editor de conjuntos de imagens são aprimoradas para atender aos padrões da Web. Os usuários da tecnologia assistiva (AT) agora podem navegar facilmente nessas páginas e realizar ações como imagens recortadas (CQ-4290617, CQ-4290616, CQ-4290613, CQ-4290612, CQ-429 00610, CQ-4290614).
    * Os visualizadores são aprimorados para permitir que os usuários naveguem usando um teclado (CQ-4290615).
    * Os usuários do teclado e do leitor de tela podem usar a funcionalidade de corte (CQ-4290609).
