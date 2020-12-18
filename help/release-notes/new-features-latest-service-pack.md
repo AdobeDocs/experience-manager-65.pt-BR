@@ -4,9 +4,9 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1c633e87d773f864c65320d3ce658f61271d086d
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2818'
 ht-degree: 1%
 
 ---
@@ -52,11 +52,11 @@ Agora é possível executar as movimentações de página e as implantações de
 
 ### Configuração do cliente HTTP do modelo de dados de formulário para otimizar o desempenho {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] o modelo de dados de formulário ao integrar com os serviços Web RESTful como fonte de dados agora inclui configurações de cliente HTTP para otimização de desempenho.
+[!DNL Experience Manager Forms] o modelo de dados de formulário ao integrar com os serviços Web RESTful como fonte de dados agora inclui configurações de cliente HTTP para otimização de desempenho. Consulte [Configurar fontes de dados](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 ### Disponibilidade da opção Redefinir para cada componente no modo Layout {#reset-option-layout-mode}
 
-Agora é possível usar a opção de redefinição para cada componente no modo Layout de um formulário adaptável. Ao definir um layout de várias colunas para um painel, você pode usar esse recurso para redefinir componentes individuais dentro do painel.
+Agora é possível usar a opção de redefinição para cada componente no modo Layout de um formulário adaptável. Ao definir um layout de várias colunas para um painel, você pode usar esse recurso para redefinir componentes individuais dentro do painel. Consulte [Use o modo de layout para redimensionar componentes](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 ## Principais recursos dos pacotes de serviços anteriores [!DNL Experience Manager] 6.5 {#key-features-previous-service-packs}
 
@@ -211,7 +211,7 @@ Agora você pode usar a interface do usuário [!DNL Dynamic Media] para invalida
 
 Agora você pode optar por publicar ou cancelar a publicação seletiva de ativos [!DNL Experience Manager] ou [!DNL Dynamic Media] usando o assistente [!UICONTROL Publicação rápida] ou [!UICONTROL Gerenciar publicação]. Você também pode definir o modo `Publish` ou `Unpublish` no nível da pasta.
 
-#### Imagem inteligente para Dynamic Media {#smart-imaging}
+#### Imagens inteligentes para Dynamic Media {#smart-imaging}
 
 A geração de imagens inteligentes usa as características de exibição exclusivas de cada usuário para fornecer automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento. A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência no último milissegundo do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagens inteligentes](../assets/imaging-faq.md).
 
