@@ -2,9 +2,9 @@
 title: Notas de versão de [!DNL Adobe Experience Manager Assets] 6.5.
 description: Os novos recursos e melhorias para [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 39%
 
 ---
@@ -68,7 +68,7 @@ Em grandes empresa, a infraestrutura necessária para criar sites pode ser distr
 
 [!DNL Dynamic Media] fornece criação aprimorada de rich media e delivery  [!DNL Experience Manager Assets] para impulsionar experiências de ponta que são imersivas e personalizadas. Ao fazer upload de um único ativo principal de alta qualidade e usar nossos visualizadores e renderização em nuvem avançada, você pode fornecer qualquer combinação de execuções dinamicamente para suportar a estratégia de mídia de sua organização.
 
-Para obter mais detalhes sobre os novos recursos [!DNL Dynamic Media], consulte [Notas de versão do Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Para obter mais detalhes sobre os novos recursos [!DNL Dynamic Media], consulte [Notas de versão do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### Suporte a vídeo 360 {#video-support}
 
@@ -80,7 +80,7 @@ Agora é possível personalizar as miniaturas dos ativos de vídeo usando quadro
 
 ### Aprimoramentos de acessibilidade {#accessibility-enhancements}
 
-[!DNL Dynamic Media] os visualizadores agora suportam recursos de acessibilidade aprimorados, como suporte a Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Notas de versão dos visualizadores do Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] os visualizadores agora suportam recursos de acessibilidade aprimorados, como suporte a Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Notas de versão dos visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Aprimoramento da experiência de pesquisa {#experience-enhancement-for-searching}
 
