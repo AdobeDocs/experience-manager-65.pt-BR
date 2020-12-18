@@ -2,9 +2,9 @@
 title: Usar o modo Layout para redimensionar componentes para formulários adaptáveis
 description: 'Definir a posição dos componentes usando a grade responsiva disponível no modo Layout '
 translation-type: tm+mt
-source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
+source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,16 @@ Selecione **Layout** na lista suspensa que aparece na parte superior da interfac
 1. No modo Layout, toque no componente para redimensioná-lo. Os pontos azuis são exibidos no start e no final da grade responsiva.
 1. Arraste e solte os pontos azuis para definir a posição do componente na grade responsiva.
 
-   ![Redimensionamento usando o modo Layout](assets/layout_mode_resize_new_updated.png)
+   ![Redimensionamento usando o modo Layout](assets/layout_mode_resize_new_updated1.png)
 
    A barra de ferramentas que é exibida após tocar nos componentes consiste nas seguintes opções:
 
    * **Pai:** selecione o pai de um componente.
    * **Flutuar para nova linha:** alterna o componente para a linha seguinte se houver vários componentes dentro da mesma linha.
 
-   Você pode desfazer todas as alterações de redimensionamento e aplicar o layout padrão ao painel que contém componentes redimensionados usando a opção **[!UICONTROL Reverter layout do ponto de interrupção]** ( ![Reverter ponto de interrupção](assets/reverttopreviouslypublishedversion.png)). Toque no pai do componente redimensionado para visualização a opção.
+   Além disso, você pode desfazer todas as alterações de redimensionamento e aplicar o layout padrão ao painel que contém componentes redimensionados usando a opção **[!UICONTROL Reverter layout do ponto de interrupção]** ( ![Reverter ponto de interrupção](assets/reverttopreviouslypublishedversion.png)). Toque no pai do componente redimensionado para visualização a opção.
+
+   Você pode tocar no componente e usar a opção **[!UICONTROL Reverter layout do ponto de interrupção]** para desfazer todas as alterações de redimensionamento e aplicar o layout padrão no nível do componente.
 
    >[!NOTE]
    >
