@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 14%
 
 ---
@@ -34,7 +34,7 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
 >
 >No modo Dynamic Media - Scene7, as predefinições de imagens são suportadas apenas para ativos de imagem.
 
-**Para aplicar predefinições de imagens do Dynamic Media**
+**Para aplicar predefinições de imagens Dynamic Media**
 
 1. Abra o ativo e, no painel esquerdo, toque no menu suspenso e, em seguida, toque em **[!UICONTROL Representações.]**
 
@@ -57,5 +57,5 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
    >
    >Se o ativo *e* a predefinição de imagem ainda não forem publicados, o botão **[!UICONTROL URL]** (ou os botões **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se aplicável) não estarão disponíveis.
    >
-   >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor do Dynamic Media S7.
+   >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor Dynamic Media.
 
