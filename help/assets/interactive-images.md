@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '4334'
+source-wordcount: '4330'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 
 Etapas de imagens interativas:
 
-1. **(Opcional) Identificação de variáveis**  de hotspots - se você usar o AEM Assets e o Dynamic Media de forma independente, identifique as variáveis dinâmicas usadas na implementação do Quickview existente para que você possa digitar dados de hotspots ao criar a imagem interativa. Consulte [(Opcional) Identificando variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
+1. **(Opcional) Identificação de variáveis**  de hotspots - se você usar o AEM Assets e o Dynamic Media separadamente, start identificando as variáveis dinâmicas usadas na implementação existente do Quickview, para que você possa digitar dados de hotspots ao criar a imagem interativa. Consulte [(Opcional) Identificando variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
 No entanto, se você usar o AEM Sites, AEM eCommerce, ou ambos, essa etapa não será necessária.
 Consulte [conceitos de comércio eletrônico no AEM Assets](/help/sites-administering/concepts.md).
 
@@ -62,8 +62,8 @@ Consulte [Carregar um banner de imagem](#uploading-an-image-banner).
    * Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de imagem interativos.
 
 1. **Adicionando uma imagem interativa ao seu site ou ao seu site no**
-AEMIse você usar o AEM Sites, ou AEM eCommerce, ou ambos, você pode adicionar a imagem interativa diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
-Se você usar o AEM Assets e o Dynamic Media sozinhos, é necessário copiar o código incorporado em seu site e, em seguida, integrá-lo à sua exibição rápida existente. Consulte [Integrar uma imagem interativa ao seu site](#integrating-an-interactive-image-with-your-website).
+AEMIse você usar o AEM Sites, ou AEM eCommerce, ou ambos, você pode adicionar a imagem interativa diretamente a uma página da Web em AEM arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Se você usar o AEM Assets e o Dynamic Media de forma independente, é necessário copiar o código incorporado em seu site e, em seguida, integrá-lo ao seu Quickview existente. Consulte [Integrar uma imagem interativa ao seu site](#integrating-an-interactive-image-with-your-website).
 Se você estiver usando um WCM de terceiros (Web Content Manager), é necessário integrar o novo vídeo interativo com a implementação existente do Quickview usada em seu site. Consulte [Integrar uma imagem interativa a uma exibição rápida](#integrating-an-interactive-image-with-an-existing-quickview) existente.
 
 ## (Opcional) Identificação de variáveis de hotspot {#optional-identifying-hotspot-variables}
@@ -328,7 +328,7 @@ Você pode usar a Pré-visualização para ver uma representação da aparência
 Quando estiver satisfeito com a imagem interativa, você poderá publicá-la.
 Consulte [Incorporar o Visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
 Consulte [Vincular URLs ao seu aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md). Observe que o método baseado em URL de vinculação não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do AEM Sites.
-Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 **Para pré-visualização de imagens interativas**
 
@@ -345,7 +345,7 @@ Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md) para 
 
 Depois de carregar uma imagem de banner, adicionar pontos de acesso à imagem e publicar a imagem interativa, você estará pronto para adicioná-la à página do site.
 
-Se você for um cliente da AEM Sites, poderá adicionar a imagem interativa arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos de mídia dinâmica a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Se você for um cliente da AEM Sites, poderá adicionar a imagem interativa arrastando o componente de Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 Se você for um cliente independente da AEM Assets, poderá adicionar manualmente a imagem interativa ao seu site, conforme descrito nesta seção.
 
@@ -377,9 +377,9 @@ A integração é tão simples quanto remover a tag `IMG` e substituí-la pelo c
 
 Para aplicar um &quot;recorte&quot; a uma imagem interativa que pode ser comprada para um ambiente responsivo, você pode incluir o atributo de configuração de Imagem interativa `ZoomView.iscommand` no caminho, onde `ZoomView` é o componente a ser chamado e `iscommand` é o comando de serviço de imagem &quot;recorte&quot; aplicado.
 
-Consulte [Atributo de configuração ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Consulte [Atributo de configuração ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
 
-Consulte [comando de serviço de imagem ](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Consulte [comando de serviço de imagem ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
 
 Agora você está pronto para integrar a imagem interativa com uma exibição rápida existente em seu site.
 
