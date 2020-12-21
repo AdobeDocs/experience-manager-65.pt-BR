@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de versão anteriores do Servi
 description: Notas de versão para  [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
+source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
 workflow-type: tm+mt
-source-wordcount: '14804'
+source-wordcount: '14953'
 ht-degree: 20%
 
 ---
@@ -95,6 +95,15 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 * No modo de navegação, o NVDA não narra um valor selecionado na opção de menu Tipo/Tamanho. O foco visual não está no elemento selecionado. O usuário que depende de um leitor de tela não pode usar o modo de navegação (CQ-4294993).
 * Ao criar uma página da Web, os usuários podem selecionar o modelo [!UICONTROL Página de conteúdo]. Na guia [!UICONTROL Mídia social], os usuários selecionam uma [!UICONTROL Variação XF preferencial]. Para selecionar um Fragmento de experiência no modo de navegação NVDA, os usuários não podem usar teclas de teclado (CQ-4292669).
 * Atualização da biblioteca handlebars para a versão v4.7.3 mais segura (NPR-34484).
+* Várias instâncias de script entre sites em [!DNL Experience Manager Sites] componentes (NPR-33925).
+* O campo de nome da pasta ao criar uma nova pasta fica vulnerável a scripts armazenados entre sites (GRANITE-30094).
+* Os resultados da pesquisa na página [!UICONTROL  Welcome] e o modelo de conclusão de caminho são vulneráveis a scripts entre sites (NPR-33719, NPR-33718).
+* A criação de uma propriedade binária em um nó não estruturado resulta em scripts entre sites na caixa de diálogo de propriedades binárias (NPR-33717).
+* Scripts entre sites ao usar a opção [!UICONTROL Teste de Controle de acesso] na interface CRX DE (NPR-33716).
+* As entradas do usuário não são corretamente codificadas para vários componentes ao enviar informações ao cliente (NPR-33695).
+* Scripts entre sites na visualização de calendário para a Caixa de entrada do Experience Manager (NPR-33545).
+* Um URL que termina com `childrenlist.html` exibe uma página HTML em vez de uma resposta 404. Tais URLs são vulneráveis a scripts entre sites (NPR-33441).
+
 
 ### [!DNL Assets] {#assets-6560}
 
@@ -281,6 +290,8 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Os usuários existentes de um grupo da comunidade adicionados por meio do Admin Console são removidos da lista do usuário em qualquer modificação no console do grupo da comunidade (NPR-34315).
 
+* O `TagFilterServlet` vaza dados potencialmente confidenciais (NPR-33868).
+
 <!--
 * Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
 -->
@@ -329,6 +340,8 @@ Depois de instalar o pacote complementar [!DNL Experience Manager Forms] 6.5.6.0
 
 * Os usuários podem editar metadados de envio, como `afPath`, `afSubmissionTime` e `signers`, ao enviar um formulário adaptável. Para resolver o problema, os valores de metadados são removidos dos dados de envio do formulário no lado do cliente. Os usuários podem usar o objeto `FormSubmitInfo` para recuperar esses valores do servidor (NPR-33654).
 
+* As entradas do usuário não são corretamente codificadas para [!DNL Forms] componentes ao enviar informações ao cliente (NPR-33611).
+
 **Fluxo de trabalho**
 
 * Quando um aprovador de fluxo de trabalho carrega um anexo, o anexo é renomeado para `undefined` (NPR-33699).
@@ -351,7 +364,7 @@ Depois de instalar o pacote complementar [!DNL Experience Manager Forms] 6.5.6.0
 
 * Copiar e colar conteúdo de um documento [!DNL Microsoft Word] em um fragmento de documento de texto em uma carta resulta em problemas de formatação (NPR-33536).
 
-**Serviços de documentação**
+**Serviços de documento**
 
 * Ao gerar um arquivo PDF a partir de um arquivo XDP usando os serviços de Saída e Forms, isso resulta em texto ausente e sobreposto (NPR-34237, CQ-4299331).
 
@@ -557,7 +570,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Os avisos transversais são observados nos registros ao abrir uma coleção inteligente que contém mais de 10.000 ativos (NPR-32980).
 
-* Os nomes dos ativos são alterados para minúsculas ao mover ativos de uma pasta para outra em [!DNL Adobe Experience Manager] trabalhando no modo de execução do Dynamic Media Scene7 (NPR-32995).
+* Os nomes dos ativos são alterados para minúsculas ao mover ativos de uma pasta para outra em [!DNL Adobe Experience Manager] trabalhando no modo de execução Dynamic Media Scene7 (NPR-32995).
 
 * Um ativo pesquisado não pode ser excluído depois de navegar para suas propriedades a partir dos resultados da pesquisa e voltar para os resultados da pesquisa para excluí-lo (NPR-32998).
 
@@ -571,11 +584,11 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Exceção observada em registros ao abrir o painel de execuções para um PDF em uma pasta com perfil de recorte inteligente (CQ-4294201).
 
-* As predefinições de imagem não publicam se [!UICONTROL o modo de sincronização de Dynamic Media] estiver desativado por padrão no Experience Manager com o modo de execução do Dynamic Media Scene7 (CQ-4294200).
+* As predefinições de imagem não publicam se [!UICONTROL o modo de sincronização Dynamic Media] estiver desativado por padrão no Experience Manager com o modo de execução Dynamic Media Scene7 (CQ-4294200).
 
-* O processamento de ativos enquanto o carregamento em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
+* O processamento de ativos enquanto o upload em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
 
-* A criação de uma configuração de Dynamic Media no Experience Manager funciona, mas na interface do usuário nada acontece ao selecionar Salvar (CQ-4292442).
+* A criação de uma configuração Dynamic Media no Experience Manager funciona, mas na interface do usuário nada acontece ao selecionar Salvar (CQ-4292442).
 
 * A pré-visualização de ativos de vídeo F4V não está funcionando na reprodução progressiva no Safari/Mac (CQ-4289844).
 
@@ -587,11 +600,11 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * Problemas de desempenho corrigidos na versão 6.5.5.0 são (CQ-4279206):
 
-   * O carregamento de binários grandes leva muito tempo para os servidores de processamento de imagem de Dynamic Media.
+   * Leva muito tempo para carregar binários grandes para os servidores de processamento de imagem da Dynamic Media.
 
-   * O tempo de geração de miniaturas no Experience Manager aumenta devido à arquitetura do Dynamic Media Scene7.
+   * O tempo de geração de miniaturas no Experience Manager aumenta devido à arquitetura Dynamic Media Scene7.
 
-* Problemas de migração do Dynamic Media Scene7 falham para clientes com um grande número de ativos (CQ-4279206).
+* Os problemas de migração da Dynamic Media Scene7 falham para clientes com um grande número de ativos (CQ-4279206).
 
 * O layout do visualizador do vídeo 360 será quebrado se `setVideo` for usado e o vídeo for alternado para baixo ao usar `video= modifier` (CQ-4263201).
 
@@ -703,7 +716,7 @@ Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Mana
 
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.10.8.
 
-* Agora você pode sincronizar subárvores de conteúdo seletivo em *Mídia dinâmica - modo Scene7* em vez de todos os disponíveis em `content/dam`.
+* Agora você pode sincronizar subárvores de conteúdo seletivo para *Dynamic Media - modo Scene7* em vez de todos os disponíveis em `content/dam`.
 
 * A integração do modelo de dados de formulário com o serviço da Web SOAP agora oferece suporte a grupos de escolha ou atributos em elementos.
 
@@ -759,7 +772,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * O botão para acionar o fluxo de trabalho na página de coleta de ativos está desativado (NPR-32471).
 
-* Uma pasta sem nome é criada no SPS (Scene7 Publishing System) ao mover um ativo de uma pasta para outra no Experience Manager com a configuração do Dynamic Media Scene7 (NPR-32440).
+* Uma pasta sem nome é criada no SPS (Scene7 Publishing System) ao mover um ativo de uma pasta para outra no Experience Manager com a configuração Dynamic Media Scene7 (NPR-32440).
 
 * A ação para mover todos os ativos (usando Selecionar tudo e mover) para uma pasta que contém os ativos publicados falha com erro (NPR-32366).
 
@@ -791,11 +804,11 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 * A página de resultados da pesquisa de interface de toque (feita pelo Omnisearch) rola automaticamente para cima e perde a posição de rolagem do usuário (NPR-31307).
 
-* A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução do Dynamic Media Scene7 (CQ-4286705).
+* A página de detalhes de ativos de ativos PDF não mostra botões de ação exceto Para coleção e Adicionar representação no Experience Manager em execução no modo de execução Dynamic Media Scene7 (CQ-4286705).
 
 * Os ativos demoram muito para serem processados pelo processo de upload em lote do Scene7 (CQ-4286445).
 
-* O botão Salvar não importa o Conjunto Remoto quando o usuário não tiver feito nenhuma alteração no Editor de Conjunto no Cliente de Mídia Dinâmica (CQ-4285690).
+* O botão Salvar não importa o Conjunto Remoto quando o usuário não tiver feito nenhuma alteração no Editor definido no Dynamic Media Client (CQ-4285690).
 
 * A miniatura de ativos 3D não é informativa quando um modelo 3D suportado é assimilado ao Experience Manager (CQ-4283701).
 
