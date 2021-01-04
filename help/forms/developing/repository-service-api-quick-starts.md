@@ -1,8 +1,8 @@
 ---
 title: Start rápidos da API do Serviço de Repositório
 seo-title: Start rápidos da API do Serviço de Repositório
-description: 'null'
-seo-description: nulo
+description: Use o serviço AEM Forms Repository para criar uma pasta, gravar um recurso, recursos de lista, ler um recurso, atualizar um recurso, procurar recursos, criar relações entre recursos, bloquear um recurso, gerenciar listas de controles de acesso e excluir um recurso.
+seo-description: Use o serviço AEM Forms Repository para criar uma pasta, gravar um recurso, recursos de lista, ler um recurso, atualizar um recurso, procurar recursos, criar relações entre recursos, bloquear um recurso, gerenciar listas de controles de acesso e excluir um recurso.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
