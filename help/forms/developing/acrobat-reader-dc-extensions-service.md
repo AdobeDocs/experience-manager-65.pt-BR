@@ -1,16 +1,17 @@
 ---
 title: start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC
 seo-title: start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC
-description: start rápido (SOAP) da API Java do serviço de extensões do Acrobat Reader DC
+description: Use o serviço Acrobat Reader DC Extensions para aplicar direitos de uso a um documento PDF, remover direitos de uso de documentos PDF e recuperar informações sobre a credencial usada para aplicar direitos de uso a um documento PDF habilitado para direitos chamado LoanUsageRights.pdf.
+seo-description: Use o serviço Acrobat Reader DC Extensions para aplicar direitos de uso a um documento PDF, remover direitos de uso de documentos PDF e recuperar informações sobre a credencial usada para aplicar direitos de uso a um documento PDF habilitado para direitos chamado LoanUsageRights.pdf.
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
