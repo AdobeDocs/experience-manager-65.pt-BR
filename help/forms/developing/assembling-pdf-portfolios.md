@@ -1,8 +1,8 @@
 ---
 title: Montagem de Portfolio PDF
 seo-title: Montagem de Portfolio PDF
-description: 'null'
-seo-description: nulo
+description: Monte um portfólio de PDF para combinar vários documentos de vários tipos, incluindo arquivos de texto, arquivos de imagem e documentos de PDF. Você pode montar um portfólio de PDF usando uma API Java e uma API de serviço da Web.
+seo-description: Monte um portfólio de PDF para combinar vários documentos de vários tipos, incluindo arquivos de texto, arquivos de imagem e documentos de PDF. Você pode montar um portfólio de PDF usando uma API Java e uma API de serviço da Web.
 uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1851'
 ht-degree: 0%
 
 ---
