@@ -1,8 +1,8 @@
 ---
 title: Pré-preenchimento do Forms com layouts flutuantes
 seo-title: Pré-preenchimento do Forms com layouts flutuantes
-description: 'null'
-seo-description: nulo
+description: Preencha os formulários com layout flutuante para exibir dados aos usuários em um formulário renderizado usando a API Java e a API de serviço da Web.
+seo-description: Preencha os formulários com layout flutuante para exibir dados aos usuários em um formulário renderizado usando a API Java e a API de serviço da Web.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 1%
+source-wordcount: '3533'
+ht-degree: 0%
 
 ---
 
