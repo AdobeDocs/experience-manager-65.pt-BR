@@ -1,8 +1,8 @@
 ---
 title: START Java APIQuick do Serviço de utilitários PDF (SOAP)
 seo-title: START Java APIQuick do Serviço de utilitários PDF (SOAP)
-description: 'null'
-seo-description: nulo
+description: Use o serviço Utilitários PDF para converter um documento PDF em um documento XDP, converter um documento XDP em um documento PDF, recuperar propriedades do documento PDF, configurar o estilo de salvar para um documento PDF e limpar documentos PDF.
+seo-description: Use o serviço Utilitários PDF para converter um documento PDF em um documento XDP, converter um documento XDP em um documento PDF, recuperar propriedades do documento PDF, configurar o estilo de salvar para um documento PDF e limpar documentos PDF.
 uuid: 96bb2bd5-b274-43d4-a664-49cc1c526b3f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
