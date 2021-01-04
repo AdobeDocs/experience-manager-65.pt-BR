@@ -1,8 +1,8 @@
 ---
 title: Montagem de vários fragmentos XDP
 seo-title: Montagem de vários fragmentos XDP
-description: 'null'
-seo-description: nulo
+description: Monte vários fragmentos XDP em um único documento XDP usando a API Java e a API de serviço da Web.
+seo-description: Monte vários fragmentos XDP em um único documento XDP usando a API Java e a API de serviço da Web.
 uuid: 0e35ff85-ff40-4878-ae31-aa8da75bd3ec
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1908'
 ht-degree: 0%
 
 ---
