@@ -1,8 +1,8 @@
 ---
 title: Start rápidos da API de chamada
 seo-title: Start rápidos da API de chamada
-description: 'null'
-seo-description: nulo
+description: Use os Start rápidos para chamar programaticamente os serviços da AEM Forms.
+seo-description: Use os Start rápidos para chamar programaticamente os serviços da AEM Forms.
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1249'
 ht-degree: 3%
 
 ---
