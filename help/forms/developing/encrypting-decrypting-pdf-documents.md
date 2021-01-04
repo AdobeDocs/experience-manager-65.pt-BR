@@ -1,8 +1,8 @@
 ---
 title: Criptografando e descriptografando Documentos PDF
 seo-title: Criptografando e descriptografando Documentos PDF
-description: 'null'
-seo-description: nulo
+description: Use o serviço de criptografia para criptografar e descriptografar documentos. As tarefas do serviço de criptografia incluem a criptografia de um documento PDF com uma senha, a criptografia de um documento PDF com um certificado, a remoção da criptografia com base em senha de um documento PDF, a remoção da criptografia com base em certificado de um documento PDF, o desbloqueio do documento PDF para que outras operações de serviço possam ser executadas e a determinação do tipo de criptografia de um documento PDF protegido.
+seo-description: Use o serviço de criptografia para criptografar e descriptografar documentos. As tarefas do serviço de criptografia incluem a criptografia de um documento PDF com uma senha, a criptografia de um documento PDF com um certificado, a remoção da criptografia com base em senha de um documento PDF, a remoção da criptografia com base em certificado de um documento PDF, o desbloqueio do documento PDF para que outras operações de serviço possam ser executadas e a determinação do tipo de criptografia de um documento PDF protegido.
 uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '8118'
+source-wordcount: '8244'
 ht-degree: 0%
 
 ---
