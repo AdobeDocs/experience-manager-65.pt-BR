@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,6 @@ Se você selecionar [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) para pro
 
    Basicamente, o conteúdo do site é armazenado em um armazenamento de nós. Para Ativos, um armazenamento de dados pode ser configurado para armazenar dados binários. Para Comunidades, um armazenamento comum deve ser configurado para selecionar o SRP.
 
-* [Elementos do armazenamento no AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementos do armazenamento](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Descreve as implementações de armazenamento de dois nós: Tar e MongoDB.
