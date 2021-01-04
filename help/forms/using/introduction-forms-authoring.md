@@ -10,7 +10,7 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a69e0354b5599ab555df650858f8f3200e21d2b8
+source-git-commit: f3b5b22c1d5573492867aef60457413ad5cf419f
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 3%
@@ -159,11 +159,11 @@ Isso permite arrastar e soltar elementos de modelo de formulário no formulário
    <td>Adiciona um campo que lista todos os anexos carregados usando o componente Anexo de arquivo.</td>
   </tr>
   <tr>
-   <td>Rodapé<br /> </td>
+   <td>Cabeçalho<br /> </td>
    <td>Adiciona o cabeçalho da página que normalmente inclui o logotipo de uma corporação, o título do formulário e o resumo.<br /> </td>
   </tr>
   <tr>
-   <td>Cabeçalho</td>
+   <td>Rodapé</td>
    <td>Adiciona o rodapé da página que normalmente inclui informações de direitos autorais e links para outras páginas. </td>
   </tr>
   <tr>
