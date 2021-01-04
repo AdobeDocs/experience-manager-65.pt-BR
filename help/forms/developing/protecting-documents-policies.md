@@ -1,8 +1,8 @@
 ---
 title: Protegendo Documentos com políticas
 seo-title: Protegendo Documentos com políticas
-description: 'null'
-seo-description: nulo
+description: Use o serviço de Segurança do Documento para aplicar dinamicamente as configurações de confidencialidade aos documentos Adobe PDF e para manter o controle dos documentos. O serviço de Segurança do Documento também permite que os usuários mantenham o controle sobre como os recipient usam o documento PDF protegido por política.
+seo-description: Use o serviço de Segurança do Documento para aplicar dinamicamente as configurações de confidencialidade aos documentos Adobe PDF e para manter o controle dos documentos. O serviço de Segurança do Documento também permite que os usuários mantenham o controle sobre como os recipient usam o documento PDF protegido por política.
 uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '15466'
+source-wordcount: '15544'
 ht-degree: 0%
 
 ---
