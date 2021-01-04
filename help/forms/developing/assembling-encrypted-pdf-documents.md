@@ -1,8 +1,8 @@
 ---
 title: Montagem de Documentos PDF criptografados
 seo-title: Montagem de Documentos PDF criptografados
-description: 'null'
-seo-description: nulo
+description: Monte documentos PDF criptografados usando a API Java e a API de serviço da Web.
+seo-description: Monte documentos PDF criptografados usando a API Java e a API de serviço da Web.
 uuid: d0948ec9-ab67-4fe4-9062-1c4938460b43
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1661'
 ht-degree: 0%
 
 ---
