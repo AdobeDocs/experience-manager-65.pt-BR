@@ -1,8 +1,8 @@
 ---
 title: Gerenciamento Programático de Pontos de Extremidade
 seo-title: Gerenciamento Programático de Pontos de Extremidade
-description: 'null'
-seo-description: nulo
+description: Use o serviço de Registro de Ponto Final para adicionar pontos de extremidade EJB, adicionar ponto de extremidade SOAP, adicionar pontos de extremidade de Pasta Monitorada, adicionar pontos de extremidade de Email, adicionar pontos de extremidade Remoting Manager, modificar pontos de extremidade, remover pontos de extremidade e recuperar informações de conector de ponto de extremidade.
+seo-description: Use o serviço de Registro de Ponto Final para adicionar pontos de extremidade EJB, adicionar ponto de extremidade SOAP, adicionar pontos de extremidade de Pasta Monitorada, adicionar pontos de extremidade de Email, adicionar pontos de extremidade Remoting Manager, modificar pontos de extremidade, remover pontos de extremidade e recuperar informações de conector de ponto de extremidade.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '10781'
+source-wordcount: '10849'
 ht-degree: 1%
 
 ---
