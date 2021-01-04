@@ -1,8 +1,8 @@
 ---
 title: Otimizando o desempenho do serviço Forms
 seo-title: Otimizando o desempenho do serviço Forms
-description: 'null'
-seo-description: nulo
+description: Defina opções de tempo de execução ao renderizar um formulário e armazenar arquivos XDP no repositório para otimizar o desempenho do serviço Forms.
+seo-description: Defina opções de tempo de execução ao renderizar um formulário e armazenar arquivos XDP no repositório para otimizar o desempenho do serviço Forms.
 uuid: 9040c09a-e5d0-432b-b1c5-ad46ab57c4fc
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
