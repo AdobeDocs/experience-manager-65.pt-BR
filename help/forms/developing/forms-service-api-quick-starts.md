@@ -1,8 +1,8 @@
 ---
 title: Start rápidos da API de serviço da Forms
 seo-title: Start rápidos da API de serviço da Forms
-description: 'null'
-seo-description: nulo
+description: Use os Start rápidos para a Forms Service API.
+seo-description: Use os Start rápidos para a Forms Service API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
