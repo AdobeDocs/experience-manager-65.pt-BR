@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
+source-git-commit: 3202866bd38779a9784e44ab470152df61c585f5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -97,9 +97,9 @@ Para disponibilizar a configuração idêntica no ambiente publish:
 
 Na instância do autor de AEM:
 
-* Navegue do menu principal até **[!UICONTROL Ferramentas > Operações > Replicação]**.
+* Navegue do menu principal para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**
 * Selecione **Ativar árvore**
-* **Caminho** do start: navegar até  `/etc/socialconfig/srpc/`
+* **Caminho** do start: navegar até  `/conf/global/settings/communities/srpc/`
 * Desmarque **Somente Modificado**
 * Selecione **Ativar**
 
@@ -144,8 +144,8 @@ Verifique se o ASRP foi configurado para ser o provedor padrão ao verificar a c
 
 Em todas as instâncias do autor e publicação AEM, revisite o console Configuração do Armazenamento ou verifique o repositório AEM.
 
-No JCR, se [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
+No JCR, se [/conf/global/settings/Communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* Não contém um nó [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), isso significa que o provedor do armazenamento é JSRP.
-* Se o nó srpc existir e contiver o nó [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), as propriedades da configuração default definirão o ASRP como o provedor padrão.
+* Não contém um nó [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp), isso significa que o provedor do armazenamento é JSRP.
+* Se o nó srpc existir e contiver o nó [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration), as propriedades da configuração default definirão o ASRP como o provedor padrão.
 
