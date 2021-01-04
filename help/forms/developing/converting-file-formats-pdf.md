@@ -1,8 +1,8 @@
 ---
 title: Conversão entre formatos de arquivo e PDF
 seo-title: Conversão entre formatos de arquivo e PDF
-description: 'null'
-seo-description: nulo
+description: Use o serviço Gerar PDF para converter formatos de arquivo nativos em PDF. Gerar serviço PDF também converte PDF em outros formatos de arquivo e otimiza o tamanho de documentos PDF.
+seo-description: Use o serviço Gerar PDF para converter formatos de arquivo nativos em PDF. Gerar serviço PDF também converte PDF em outros formatos de arquivo e otimiza o tamanho de documentos PDF.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '7842'
+source-wordcount: '7898'
 ht-degree: 0%
 
 ---
