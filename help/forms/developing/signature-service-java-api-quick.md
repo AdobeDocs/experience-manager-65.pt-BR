@@ -1,8 +1,8 @@
 ---
 title: QuickStart(SOAP) da API Java do Serviço de Assinatura
 seo-title: QuickStart(SOAP) da API Java do Serviço de Assinatura
-description: 'null'
-seo-description: nulo
+description: Use o serviço de assinatura para adicionar um campo de assinatura a um documento PDF, recuperar nomes de campos de assinatura, modificar um campo de assinatura, assinar digitalmente um documento PDF, assinar digitalmente um formulário baseado em XFA, certificar um documento PDF, verificar uma assinatura digital, verificar várias assinaturas digitais e remover uma assinatura digital.
+seo-description: Use o serviço de assinatura para adicionar um campo de assinatura a um documento PDF, recuperar nomes de campos de assinatura, modificar um campo de assinatura, assinar digitalmente um documento PDF, assinar digitalmente um formulário baseado em XFA, certificar um documento PDF, verificar uma assinatura digital, verificar várias assinaturas digitais e remover uma assinatura digital.
 uuid: ae6adf23-b119-45f6-bd57-73d8d9ca8ecb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
