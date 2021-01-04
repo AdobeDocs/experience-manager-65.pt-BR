@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6693baecb1345c30385eb04caeb03960925f46c3
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 2%
@@ -299,7 +299,7 @@ em seguida, [configure o agente de replicação](#replication-agents-on-author)
 
 Há dois recursos do AEM Communities que exigem que todas as instâncias do servidor AEM usem as mesmas chaves de criptografia. Estes são [Analytics](/help/communities/analytics.md) e [ASRP](/help/communities/asrp.md).
 
-A partir do AEM 6.3, o material principal é armazenado no sistema de arquivos e não mais no repositório.
+A partir AEM 6.3, o material principal é armazenado no sistema de arquivos e não mais no repositório.
 
 Para copiar o material principal do autor para todas as outras instâncias, é necessário:
 
