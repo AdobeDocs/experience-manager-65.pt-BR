@@ -1,8 +1,8 @@
 ---
 title: Assinando e certificando Documentos digitalmente
 seo-title: Assinando e certificando Documentos digitalmente
-description: 'null'
-seo-description: nulo
+description: Use o serviço de assinatura para adicionar e excluir campos de assinatura digital em um documento PDF, recuperar os nomes dos campos de assinatura localizados em um documento PDF, modificar campos de assinatura, assinar documentos PDF digitalmente, certificar documentos PDF, validar assinaturas digitais localizadas em um documento PDF, validar todas as assinaturas digitais localizadas em um documento PDF e remover uma assinatura digital de um campo de assinatura.
+seo-description: Use o serviço de assinatura para adicionar e excluir campos de assinatura digital em um documento PDF, recuperar os nomes dos campos de assinatura localizados em um documento PDF, modificar campos de assinatura, assinar documentos PDF digitalmente, certificar documentos PDF, validar assinaturas digitais localizadas em um documento PDF, validar todas as assinaturas digitais localizadas em um documento PDF e remover uma assinatura digital de um campo de assinatura.
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '16977'
+source-wordcount: '17099'
 ht-degree: 0%
 
 ---
