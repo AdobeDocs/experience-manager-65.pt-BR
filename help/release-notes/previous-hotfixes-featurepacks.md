@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de versão anteriores do Servi
 description: Notas de versão para  [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
+source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
 workflow-type: tm+mt
 source-wordcount: '14953'
 ht-degree: 20%
@@ -66,7 +66,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
    ![Captura de tela para ilustrar o problema de menu ausente na interface clássica](assets/33949_missing_menu.png)
 
 * Um [!DNL Content Fragment] não pode ser usado como um `TemplatedResource` porque falha em `ContentFragmentUsePojo` (NPR-33911).
-* Operações de movimentação síncronas e assíncronas podem levar a erros devido a transferências simultâneas. As operações de movimentação de página são restritas somente à movimentação síncrona. Evita a movimentação simultânea de páginas (NPR-33875).
+* Operações de movimentação síncronas e assíncronas podem levar a erros devido a transferências simultâneas. As operações de movimentação de página são restritas somente a movimentação assíncrona. Evita a movimentação simultânea de páginas (NPR-33875).
 * [!UICONTROL A operação Gerenciar ] publicação para replicar o conteúdo da instância Autor para publicação falha e gera um erro de JavaScript (NPR-33872).
 * Quando várias páginas ou ativos são selecionados para criar versões, a nova versão é criada somente para a última página ou ativo selecionado (NPR-33866).
 * Mova uma página de blueprint com cópias online para outra pasta. Ao movê-la para a pasta original, a operação de movimentação falha sem nenhum erro (NPR-33864).
