@@ -3,9 +3,9 @@ title: Integrar [!DNL Assets] com [!DNL InDesign Server]
 description: Saiba como integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: a31fa2712e541dfdc7a5b08ee9b33782f190f00b
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1578'
 ht-degree: 4%
 
 ---
@@ -164,15 +164,15 @@ de IDSos pontos de extremidade SOAP a serem usados para comunicação com o  [!D
 
 ### Configurar o Externalizador de links do Day CQ {#configuring-day-cq-link-externalizer}
 
-Se [!DNL InDesign Server] e [!DNL Experience Manager] forem executados em hosts diferentes ou se ambos os aplicativos não forem executados em portas padrão, configure [!UICONTROL Externalizador de links do Day CQ] para definir o nome do host, a porta e o caminho do conteúdo para [!DNL InDesign Server].
+Se [!DNL InDesign Server] e [!DNL Experience Manager] estiverem em hosts diferentes ou um ou ambos os aplicativos não estiverem funcionando em portas padrão, configure [!UICONTROL Externalizador de links do Day CQ] para definir o nome do host, a porta e o caminho do conteúdo para [!DNL InDesign Server].
 
 1. Acesse o console da Web em `https://[aem_server]:[port]/system/console/configMgr`.
-1. Localize a configuração **[!UICONTROL Externalizador de links Day CQ]** e clique em **[!UICONTROL Editar]** para abri-la.
-1. Especifique o nome do host e o caminho de contexto para [!DNL Adobe InDesign Server] e clique em **Salvar**.
+1. Localize a configuração **[!UICONTROL Externalizador de links Day CQ]**. Clique em **[!UICONTROL Editar]** para abrir.
+1. As configurações do Externalizador de links ajudam a criar URLs absolutos para a implantação [!DNL Experience Manager] e para [!DNL InDesign Server]. Use o campo **[!UICONTROL Domínios]** para especificar o nome do host e o caminho do contexto para [!DNL Adobe InDesign Server]. Clique em **Salvar**.
 
-   ![chlimage_1-97](assets/chlimage_1-290.png)
+   ![Configuração do externalizador de links](assets/link-externalizer-config.png)
 
-### Habilitar processamento de trabalho paralelo para [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
+### Habilitar processamento de trabalho paralelo para [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}
 
 Agora você pode ativar o processamento paralelo de tarefas para IDS. Determine o número máximo de trabalhos paralelos (`x`) que um [!DNL InDesign Server] pode processar:
 
