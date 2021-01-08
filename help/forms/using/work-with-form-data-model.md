@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ba42f1e85216f6be4ae0dd90891e1b2d1d559bd8
 workflow-type: tm+mt
 source-wordcount: '4148'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Para adicionar objetos e serviços de modelo de dados:
 
    >[!NOTE]
    >
-   >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. Para obter mais informações, consulte [Trabalhar com propriedades de navegação dos serviços OData](#navigation-properties-odata).
+   >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. Para obter mais informações, consulte [Trabalhar com propriedades de navegação dos serviços OData](#work-with-navigation-properties-of-odata-services).
 
 1. Toque em **[!UICONTROL Salvar]** para salvar o objeto de modelo de formulário.
 
@@ -146,7 +146,7 @@ Para ler e gravar dados de um objeto de modelo de dados, faça o seguinte para c
    >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. Quando você adiciona uma fonte de dados de serviço OData a um Modelo de dados de formulário, há um serviço disponível no Modelo de dados de formulário para todas as propriedades de navegação em um objeto de modelo de dados. Você pode usar esse serviço para ler as propriedades de navegação do objeto de modelo de dados correspondente.
    >
    >
-   >Para obter mais informações sobre como usar o serviço, consulte [Trabalhar com propriedades de navegação dos serviços OData](#navigation-properties-odata).
+   >Para obter mais informações sobre como usar o serviço, consulte [Trabalhar com propriedades de navegação dos serviços OData](#work-with-navigation-properties-of-odata-services).
 
 1. Alterne **[!UICONTROL Objeto de nível superior]** para especificar se o objeto de modelo de dados é um objeto de modelo de nível superior.
 
@@ -244,7 +244,7 @@ Para adicionar uma associação:
 
    >[!NOTE]
    >
-   >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. É possível usar essas propriedades de navegação ao adicionar associações no Modelo de dados de formulário. Para obter mais informações, consulte [Trabalhar com propriedades de navegação dos serviços OData](#navigation-properties-odata).
+   >Além de objetos e serviços de modelo de dados, o documento de metadados do serviço OData inclui propriedades de navegação que definem a associação entre dois objetos de modelo de dados. É possível usar essas propriedades de navegação ao adicionar associações no Modelo de dados de formulário. Para obter mais informações, consulte [Trabalhar com propriedades de navegação dos serviços OData](#work-with-navigation-properties-of-odata-services).
 
    A caixa de diálogo Adicionar associação é aberta.
 
