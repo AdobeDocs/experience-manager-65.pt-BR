@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 86%
@@ -35,7 +35,7 @@ Há um editor de página separado com a interface de usuário clássica, com o u
 
 `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-189](assets/chlimage_1-109.png)
 
 ## Acessar ajuda {#accessing-help}
 
@@ -62,7 +62,7 @@ Use o Localizador de conteúdo para localizar uma gama de recursos. Quando aprop
 * [Imagens](#finding-images)
 * [Documentos](#finding-documents)
 * [Filmes](#finding-movies)
-* [Navegador de mídia Scene 7](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Navegador Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [](#products) [Páginas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 
 * [Parágrafos](#referencing-paragraphs-from-other-pages)
