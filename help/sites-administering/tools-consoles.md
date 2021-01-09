@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d366e9f9a1c44ff4866907e83432ab2b1438bbb3
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 44%
+source-wordcount: '619'
+ht-degree: 45%
 
 ---
 
@@ -292,7 +292,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td> </td>
-   <td>Configuração Scene7<br /> </td>
+   <td>Configuração do Dynamic Media<br /> </td>
   </tr>
   <tr>
    <td> </td>
