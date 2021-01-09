@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 2%
+source-wordcount: '1005'
+ht-degree: 1%
 
 ---
 
@@ -72,22 +72,15 @@ Opte pela integração com o Analytics e/ou o Público alvo para permitir o uso 
 
 Para obter mais informações, consulte [Optar pelo Adobe Analytics e Adobe Target.](/help/sites-administering/opt-in.md)
 
-## Integração com o Scene7 {#integrating-with-scene}
+## Integração com o Adobe Dynamic Media Classic {#integrating-with-scene}
 
-[A Adobe Scene7](https://www.adobe.com/products/scene7.html) é uma solução hospedada para publicar, gerenciar, aprimorar e fornecer ativos de marketing dinâmicos e merchandising visual avançado para Web, dispositivos móveis, email, mídia social, telas conectadas à Internet e impressão.
+O Adobe Dynamic Media Classic é uma solução hospedada para publicar, gerenciar, aprimorar e fornecer ativos de marketing dinâmicos e merchandising visual avançado para Web, dispositivos móveis, email, mídia social, telas conectadas à Internet e impressão.
 
-No AEM, você pode publicar ativos digitais diretamente do AEM para o Scene7 e pode publicar ativos digitais do Scene7 para o AEM.
+No AEM, você pode publicar ativos digitais diretamente do AEM para o Dynamic Media Classic e pode publicar ativos digitais do Dynamic Media Classic para AEM.
 
-Além disso, você pode visualização ativos AEM publicados no Scene7 em vários visualizadores:
+Além disso, você pode visualização ativos AEM publicados no Dynamic Media Classic em vários visualizadores, como Zoom básico e Vídeo.
 
-* Zoom básico
-* Zoom do DHTML Flyout
-* Zoom suspenso rápido
-* Vídeo
-* Flash Modelo
-* Modelo de imagem
-
-Para obter mais informações sobre como AEM se integra ao Scene7, consulte a [Documentação de integração com o Scene7](/help/sites-administering/scene7.md).
+Para obter mais informações sobre como AEM se integra ao Dynamic Media Classic, consulte a documentação [Integração com o Dynamic Media Classic](/help/sites-administering/scene7.md).
 
 ## Integração com o Gerenciamento dinâmico de tags do Adobe {#integrating-with-adobe-dynamic-tag-management}
 
@@ -101,7 +94,7 @@ A integração com o Audience Manager foi removida no AEM 6.3.
 
 ## Integração com o Search &amp; Promote {#integrating-with-search-promote}
 
-[O Adobe Search&amp;](https://www.omniture.com/en/products/conversion/search-and-promote) Promotepermite que os profissionais de marketing otimizem como os visitantes navegam, encontram, comparam e selecionam produtos e conteúdo relevantes em sites da Web e móveis. As empresas podem promover facilmente itens prioritários com base em objetivos de negócios e intenção de visitante, bem como automatizar a comercialização e a atividade de promoções por meio de métricas ou acionadores baseados em KPI.
+[O Adobe Search&amp;](https://www.omniture.com/en/products/conversion/search-and-promote) Promotepermite que os profissionais de marketing otimizem como visitantes navegam, encontram, comparam e selecionam produtos e conteúdo relevantes em sites da Web e móveis. As empresas podem promover facilmente itens prioritários com base em objetivos de negócios e intenção de visitante, bem como automatizar a comercialização e a atividade de promoções por meio de métricas ou acionadores baseados em KPI.
 
 O Adobe Search &amp; Promote é um aplicativo de pesquisa de site hospedado confiável e dimensionável, capaz de dimensionar para milhões de páginas ou produtos, para negócios online altamente visitados, que vão de varejo a sites de notícias. Ele oferta níveis sem precedentes de controle do comerciante e relevância baseada em métricas.
 
