@@ -1,19 +1,17 @@
 ---
 title: Vídeo
 seo-title: Vídeo
-description: Diretamente no Assets, com o gerenciamento centralizado de ativos de vídeo, é possível fazer upload de vídeos para codificar para o Scene7 e acessar vídeos do Scene7, para fins de criação de página.
-seo-description: Diretamente no Assets, com o gerenciamento centralizado de ativos de vídeo, é possível fazer upload de vídeos para codificar para o Scene7 e acessar vídeos do Scene7, para fins de criação de página.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
+description: Os ativos fornecem gerenciamento centralizado de ativos de vídeo, onde você pode fazer upload de vídeos diretamente para os Ativos para autocodificação para o Dynamic Media Classic e acessar vídeos do dia diretamente dos Ativos para criação de página.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 43%
+source-wordcount: '1698'
+ht-degree: 38%
 
 ---
 
@@ -24,8 +22,8 @@ Os ativos fornecem gerenciamento centralizado de ativos de vídeo, onde você po
 
 A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas (detecção automática de dispositivo e largura de banda).
 
-* O componente de vídeo do Dynamic Media Classic (Scene7) executa automaticamente a detecção de dispositivos e largura de banda para reproduzir o formato correto e o vídeo de qualidade correta em desktops, tablets e dispositivos móveis.
-* Assets: é possível incluir conjuntos de vídeos adaptáveis, em vez de somente ativos de vídeo individuais. Um conjunto de vídeos adaptáveis é um contêiner para todas as representações de vídeo necessárias para reproduzir o vídeo de forma contínua em várias telas. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo que são codificadas em diferentes taxas de bits e formatos, como 400 kbps, 800 kbps e 1000 kbps. Você usa um conjunto de vídeos adaptáveis, juntamente com o componente de vídeo do S7, para transmitir vídeo adaptável em vários tipos de telas, incluindo telas de computadores, e dispositivos móveis com iOS, Android, Blackberry e Windows. Consulte a [documentação do Scene7 sobre conjuntos de vídeos adaptáveis](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html) para obter mais informações.
+* O componente de vídeo do Dynamic Media Classic executa automaticamente a detecção de dispositivos e largura de banda para reproduzir o formato correto e o vídeo de qualidade correta em desktops, tablets e dispositivos móveis.
+* Assets: é possível incluir conjuntos de vídeos adaptáveis, em vez de somente ativos de vídeo individuais. Um conjunto de vídeos adaptáveis é um contêiner para todas as representações de vídeo necessárias para reproduzir o vídeo de forma contínua em várias telas. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo que são codificadas em diferentes taxas de bits e formatos, como 400 kbps, 800 kbps e 1000 kbps. Você usa um conjunto de vídeos adaptáveis, juntamente com o componente de vídeo do S7, para transmitir vídeo adaptável em vários tipos de telas, incluindo telas de computadores, e dispositivos móveis com iOS, Android, Blackberry e Windows. Consulte [a documentação do Dynamic Media Classic sobre conjuntos de vídeo adaptáveis para obter mais informações](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
 
 ## Sobre o FFMPEG e o Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -66,7 +64,7 @@ Se for necessário um fluxo de trabalho ou controle de versão para seus ativos,
 
 Se você não precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload dos ativos para o Dynamic Media Classic. Este é o fluxo de trabalho recomendado:
 
-1. No Dynamic Media Classic, [configure um carregamento e codificação FTP programados para o Dynamic Media Classic (sistema automatizado)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. No aplicativo de desktop Dynamic Media Classic, [configure um carregamento e codificação FTP programados para o Dynamic Media Classic (sistema automatizado)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
 1. No AEM, acesse ativos de vídeo no WCM na guia **[!UICONTROL Dynamic Media Classic]** do Localizador de conteúdo.
 1. Autor com o componente de vídeo do Dynamic Media Classic.
 
@@ -85,7 +83,7 @@ Se você não precisar de um fluxo de trabalho ou controle de versão para seus 
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o que as predefinições de vídeo significam, consulte a [documentação do Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >Para obter mais informações sobre o que as predefinições de vídeo significam, consulte [Predefinições de vídeo para codificação de arquivos de vídeo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
    >
    >A Adobe recomenda selecionar ambos os conjuntos de vídeos adaptáveis ao configurar as predefinições universais ou selecionar a opção **[!UICONTROL Codificação de vídeo adaptável]**.
 
@@ -112,7 +110,7 @@ Para carregar seu vídeo de origem primária no Dynamic Media Classic a partir d
 
 ### Componente de vídeo básico versus Componente de vídeo clássico do Dynamic Media {#foundation-video-component-versus-scene-video-component}
 
-Ao usar o AEM, você tem acesso ao componente Vídeo disponível no Sites e ao componente de vídeo do Dynamic Media Classic (Scene7). Esses componentes não são intercambiáveis.
+Ao usar o AEM, você tem acesso ao componente Vídeo disponível no Sites e ao componente de vídeo do Dynamic Media Classic. Esses componentes não são intercambiáveis.
 
 O componente de vídeo do Dynamic Media Classic só funciona para vídeos do Dynamic Media Classic. O componente básico funciona com vídeos armazenados do AEM (usando o ffmpeg) e do Dynamic Media Classic.
 
@@ -131,7 +129,7 @@ Mesmo se o componente de vídeo do Dynamic Media Classic for recomendado para ex
 
 ### Comparação de vídeo AEM e vídeo do Dynamic Media Classic {#aem-video-and-scene-video-comparison}
 
-A tabela a seguir fornece uma comparação avançada dos recursos suportados entre o Componente de vídeo de base do AEM e o Componente de vídeo do Scene7:
+A tabela a seguir fornece uma comparação de alto nível dos recursos suportados entre o componente AEM Foundation Video e o componente Dynamic Media Classic Video:
 
 |  | Vídeo de base do AEM | Vídeo Dynamic Media Classic |
 |---|---|---|
@@ -162,8 +160,8 @@ As várias codificações de vídeo são criadas de acordo com as predefiniçõe
 
    | Propriedade | Descrição |
    |---|---|
-   | Configuração da nuvem do Dynamic Media Classic (Scene7) | A configuração da nuvem a ser usada para as predefinições de codificação. |
-   | Predefinição de codificação do Dynamic Media Classic (Scene7) | A predefinição de codificação para mapear este perfil de vídeo. |
+   | Configuração da Dynamic Media Classic Cloud | A configuração da nuvem a ser usada para as predefinições de codificação. |
+   | Dynamic Media Classic Encoding Preset | A predefinição de codificação para mapear este perfil de vídeo. |
    | Tipo de vídeo HTML5 | Essa propriedade permite definir o valor da propriedade type do elemento de fonte de vídeo HTML5. Essas informações não são fornecidas pelas predefinições de codificação do Dynamic Media Classic, mas são necessárias para renderizar corretamente os vídeos usando o elemento de vídeo HTML5. Uma lista de formatos comuns é fornecida, mas eles podem ser substituídos por outros formatos. |
 
    Repita essa etapa para todas as predefinições de codificação selecionadas na configuração de nuvem que você deseja usar no componente de vídeo.
@@ -185,7 +183,7 @@ O componente de vídeo de base deve saber quais perfis de vídeo usar para que p
 
 #### Lista de verificação  {#checklist}
 
-1. Criar uma configuração de nuvem do Dynamic Media Classic (Scene7). Verifique se as predefinições de codificação de vídeo estão definidas e se o importador está em execução.
+1. Criar uma configuração de nuvem do Dynamic Media Classic. Verifique se as predefinições de codificação de vídeo estão definidas e se o importador está em execução.
 1. Crie um perfil de vídeo do Dynamic Media Classic para cada predefinição de codificação de vídeo selecionada na configuração da nuvem.
 1. Os perfis de vídeo devem ser ativados.
 1. Configure o design do componente de vídeo de base na sua página.
