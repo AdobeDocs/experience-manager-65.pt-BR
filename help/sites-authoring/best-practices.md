@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
-source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 83%
+source-wordcount: '302'
+ht-degree: 72%
 
 ---
 
@@ -38,7 +38,7 @@ Documentos específicos estão descritos e vinculados nas tabelas a seguir.
 
 ## Assets {#assets}
 
-As práticas recomendadas do Assets, incluindo a capacidade de Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
+As práticas recomendadas sobre o Assets, incluindo a capacidade do Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
 
 <table>
  <tbody>
@@ -55,7 +55,7 @@ As práticas recomendadas do Assets, incluindo a capacidade de Dynamic Media e a
   <tr>
    <td>Imagem dinâmica</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Práticas recomendadas de imagem dinâmica</a></td>
-   <td><p>Descreve como ajustar a nitidez de uma imagem para obter os melhores resultados e a melhor maneira de otimizar a qualidade das imagens quando você estiver usando a funcionalidade Dynamic Media ou estiver integrando com o Scene7. </p> </td>
+   <td><p>Descreve como aumentar a nitidez de uma imagem para obter melhores resultados e a melhor maneira de otimizar a qualidade de suas imagens se você estiver usando a funcionalidade do Dynamic Media ou estiver fazendo uma integração com o Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Ativos multilíngues</td>
