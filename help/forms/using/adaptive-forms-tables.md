@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
+source-git-commit: 01c30e78d1f89e8c07abeb0ac19af38722010dd0
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2428'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,14 @@ Para ativar a classificação:
    Da mesma forma, um cabeçalho de coluna com uma seta para baixo representa que os valores na coluna são exibidos na ordem decrescente.
 
    Você também pode fazer alterações na tabela no modo **Pré-visualização** e clicar no cabeçalho da coluna novamente para classificar os valores da coluna.
+
+## Definir a largura da coluna para uma tabela {#set-column-width}
+
+Execute as seguintes etapas para definir a largura da coluna de uma tabela:
+
+1. Na guia **[!UICONTROL Conteúdo]**, toque no componente **[!UICONTROL Tabela]** e toque no ícone Configurar (![Configurar](assets/configure-icon.svg)).
+
+1. Digite a lista de valores separada por vírgulas no campo **[!UICONTROL Largura da coluna]** para especificar a largura proporcional de cada coluna na tabela. Por exemplo, para uma tabela que inclui 3 colunas, especificar 2,4,6 como o valor no campo **[!UICONTROL Largura da coluna]** resulta na definição da largura das colunas como 2/12 para a primeira coluna, 4/12 para a segunda coluna e 6/12 para a terceira coluna. 2/12 dado que a largura da primeira coluna se refere a um sexto da largura da tabela. Da mesma forma, 4/12 define a largura da segunda coluna como um terço da largura da tabela e 6/12 define a largura da terceira coluna como metade da largura da tabela.
 
 ## Configurar estilo de tabela {#configure}
 
