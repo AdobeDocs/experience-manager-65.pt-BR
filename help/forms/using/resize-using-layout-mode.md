@@ -2,9 +2,9 @@
 title: Usar o modo Layout para redimensionar componentes para formulários adaptáveis
 description: 'Definir a posição dos componentes usando a grade responsiva disponível no modo Layout '
 translation-type: tm+mt
-source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
+source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,11 @@ Selecione **Layout** na lista suspensa que aparece na parte superior da interfac
 
    A barra de ferramentas que é exibida após tocar nos componentes consiste nas seguintes opções:
 
-   * **Pai:** selecione o pai de um componente.
-   * **Flutuar para nova linha:** alterna o componente para a linha seguinte se houver vários componentes dentro da mesma linha.
+   * **[!UICONTROL Pai]**: Selecione o pai de um componente.
+   * **[!UICONTROL Reverter layout]** do ponto de interrupção: Desfaça todas as alterações de redimensionamento e aplique o layout padrão ao componente.
+   * **[!UICONTROL Flutuar para nova linha]**: Alterne o componente para a linha seguinte se houver vários componentes dentro da mesma linha.
 
-   Além disso, você pode desfazer todas as alterações de redimensionamento e aplicar o layout padrão ao painel que contém componentes redimensionados usando a opção **[!UICONTROL Reverter layout do ponto de interrupção]** ( ![Reverter ponto de interrupção](assets/reverttopreviouslypublishedversion.png)). Toque no pai do componente redimensionado para visualização a opção.
-
-   Você pode tocar no componente e usar a opção **[!UICONTROL Reverter layout do ponto de interrupção]** para desfazer todas as alterações de redimensionamento e aplicar o layout padrão no nível do componente.
+   Você também pode usar a opção **[!UICONTROL Reverter layout do ponto de interrupção]** ( ![Reverter ponto de interrupção](assets/reverttopreviouslypublishedversion.png)) no nível do painel para desfazer todas as alterações de redimensionamento.
 
    >[!NOTE]
    >
