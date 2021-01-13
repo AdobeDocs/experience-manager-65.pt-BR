@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8adbf52b29cf6e548bf14df57bc12b44821c9def
+source-git-commit: 17d70e532ab5d825dd4dc0ea4c891c5b7cb8d345
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3443'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ A replicação, para uma instância ou despachante de publicação, ocorre em v�
 
 * vários ambientes de autor e publicação podem ser configurados.
 
-![chlimage_1-29](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 
 ### Replicação de Publicar para Autor {#replicating-from-publish-to-author}
 
@@ -593,19 +593,3 @@ O editor descompactará todos os itens, salvá-los e retornará ao autor.
 ## Recursos adicionais {#additional-resources}
 
 Para obter detalhes sobre a solução de problemas, você pode ler a página [Solução de problemas de replicação](/help/sites-deploying/troubleshoot-rep.md).
-
-Para obter informações adicionais, o Adobe tem uma série de artigos da Base de conhecimento relacionados à replicação:
-
-[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)
-[.](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
