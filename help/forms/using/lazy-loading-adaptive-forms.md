@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 428d675bd254c18651c1188de26b706b5ad3d55c
+source-git-commit: 4d95d0e38acc54e1ebbb9f9e31761205533e99f9
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Algumas limitações, recomendações e pontos importantes a serem considerados 
 
 * É recomendável usar formulários adaptativos baseados em schemas XSD em formulários adaptáveis baseados em XFA para configurar o carregamento lento em formulários grandes. O ganho de desempenho devido à implementação de carregamento lento em formulários adaptativos baseados em XFA é relativamente menor do que o ganho em formulários adaptativos baseados em XSD.
 * Não configure o carregamento lento em fragmentos em um formulário adaptável que use **[!UICONTROL Responsivo -tudo em uma página sem o layout]** para o painel raiz. Como resultado da configuração do layout Responsivo, todos os fragmentos são carregados simultaneamente em um formulário adaptável. Também pode resultar em desempenho degradado.
+* É recomendável não configurar o carregamento lento no primeiro fragmento em um formulário adaptável.
 * É recomendável não configurar o carregamento lento em fragmentos no primeiro painel que é renderizado ao carregar o formulário adaptável.
 * O carregamento lento é compatível com até dois níveis na hierarquia do fragmento.
 * Certifique-se de que os campos marcados como globais sejam exclusivos em um formulário adaptável.
