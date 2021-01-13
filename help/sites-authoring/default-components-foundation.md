@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '7287'
-ht-degree: 84%
+source-wordcount: '7364'
+ht-degree: 83%
 
 ---
 
@@ -311,6 +311,10 @@ A aplicação externa é integrada no sistema de parágrafo da página AEM; por 
 >
 >Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
 
+>[!CAUTION]
+>
+>Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+
 O componente Flash permite que você carregue um filme em Flash. Você pode arrastar um ativo em Flash do localizador de conteúdo para o componente ou usar a caixa de diálogo:
 
 * **Flash**
@@ -521,6 +525,10 @@ O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá ex
 >
 >Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
 
+>[!CAUTION]
+>
+>Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
+
 Fornece os campos Nome de usuário e Senha.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
@@ -556,6 +564,10 @@ Fornece os campos Nome de usuário e Senha.
       Texto para indicar que o usuário já está conectado.
 
 ### Status do pedido {#order-status}
+
+>[!CAUTION]
+>
+>Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
 
 * **Título**
 
@@ -698,7 +710,11 @@ Se necessário, é possível configurar:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) em vez disso.
+
+>[!CAUTION]
+>
+>Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
 
 Este componente permite que você carregue uma série de imagens a serem exibidas como um slideshow em sua página. Você pode adicionar ou remover imagens e atribuí-las um título. Em Avançado, também é possível especificar o tamanho da área de exibição.
 
@@ -883,7 +899,11 @@ O exemplo a seguir mostra um componente de **Título** sendo exibido; o design �
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda aproveitar o [Componente incorporado dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html).
+
+>[!CAUTION]
+>
+>Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
 
 O componente de **Vídeo** permite que você coloque um elemento “out-of-the-box” de vídeo predefinido em uma página.
 
@@ -1311,6 +1331,10 @@ O componente está configurado para uso imediato, mas é possível alterar a con
 >[!CAUTION]
 >
 >Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+
+>[!CAUTION]
+>
+>Não é mais esperado que esse componente funcione prontamente sem uma personalização abrangente no nível do projeto.
 
 O componente Captcha exige que o usuário digite uma sequência alfanumérica como exibido na tela. A sequência muda a cada atualização.
 
