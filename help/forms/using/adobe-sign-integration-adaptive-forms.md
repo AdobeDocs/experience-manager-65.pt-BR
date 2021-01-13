@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+source-git-commit: c451948c43004d084bc3fce7a2c6ad99381f1ea8
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,9 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
    **na1** refere-se ao compartilhamento de banco de dados padrão.
 
    Você pode modificar o valor do compartilhamento de banco de dados. Reinicie o servidor para poder usar o novo valor para o compartilhamento do banco de dados.
+
+   >[!NOTE]
+   Certifique-se de que suas configurações de instância de autor e publicação apontem para o mesmo compartilhamento. Se você criar várias configurações Adobe Sign para uma organização, verifique se todas as configurações utilizam o mesmo compartilhamento.
 
 1. Especifique a **ID do cliente** (também chamada de ID da aplicação) e **Segredo do cliente** copiados na etapa 8. Selecione a opção **[!UICONTROL Habilitar Adobe Sign para anexos também]** para anexar arquivos anexados a um formulário adaptável ao documento [!DNL Adobe Sign] correspondente enviado para assinatura.
 
