@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f1c932a5937e8a115e2849935b8f5ea5c2613d
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
-source-wordcount: '4833'
-ht-degree: 96%
+source-wordcount: '4901'
+ht-degree: 95%
 
 ---
 
@@ -148,7 +148,7 @@ Ao criar um novo modelo editável:
 
 >[!CAUTION]
 >
->Nunca insira qualquer informação que precise ser [internacionalizada](/help/sites-developing/i18n.md) em um modelo.
+>Nunca insira qualquer informação que precise ser [internacionalizada](/help/sites-developing/i18n.md) em um modelo. Para fins de internalização, os recursos de [localização dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) são recomendados.
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
@@ -208,6 +208,12 @@ Para exibir e/ou editar as propriedades:
 1. No **console Modelos**, selecione o modelo.
 1. Selecione **Propriedades da exibição** na barra de ferramentas ou nas opções rápidas para abrir a caixa de diálogo.
 1. Agora você pode exibir ou editar as propriedades do modelo.
+
+>[!NOTE]
+>
+>Os modelos são ferramentas poderosas para simplificar o fluxo de trabalho de criação de página. No entanto, muitos modelos podem sobrecarregar os autores e tornar a criação da página confusa. Uma boa regra é manter o número de modelos abaixo de 100.
+>
+>O Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
 
 >[!NOTE]
 >
@@ -335,7 +341,7 @@ O seletor de **Modo** na barra de ferramentas permite selecionar e editar o aspe
 * [Conteúdo inicial](#editingatemplateinitialcontent)
 * [Layout](#editingatemplatelayout)
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 Já a opção **Política de página** no menu **Informações de página** permite [selecionar as políticas de página necessárias](#editingatemplatepagepolicies):
 
