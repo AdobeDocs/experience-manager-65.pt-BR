@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '4742'
+source-wordcount: '4743'
 ht-degree: 1%
 
 ---
@@ -465,7 +465,7 @@ Os dados do AEM Forms Analytics estão disponíveis quando estão offline ou sem
 
 Para instalar e configurar o AEM Forms com o Adobe Forms, os usuários da ferramenta de conversão devem ter o seguinte:
 
-1. Acesso ao Adobe IO.
+1. Acesso ao Adobe I/O.
 
 1. Permissão para criar uma integração com o serviço Adobe Forms Conversion.
 
