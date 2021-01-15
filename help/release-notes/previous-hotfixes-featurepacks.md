@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de versão anteriores do Servi
 description: Notas de versão para  [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '14953'
+source-wordcount: '14944'
 ht-degree: 20%
 
 ---
@@ -586,7 +586,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 
 * As predefinições de imagem não publicam se [!UICONTROL o modo de sincronização Dynamic Media] estiver desativado por padrão no Experience Manager com o modo de execução Dynamic Media Scene7 (CQ-4294200).
 
-* O processamento de ativos enquanto o upload em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
+* O processamento de ativos enquanto o carregamento em massa fica travado e a instância do fluxo de trabalho mostra instâncias presas do ativo de atualização do DAM (CQ-4293916).
 
 * A criação de uma configuração Dynamic Media no Experience Manager funciona, mas na interface do usuário nada acontece ao selecionar Salvar (CQ-4292442).
 
@@ -633,7 +633,7 @@ A seguir está a lista de correções fornecidas na versão [!DNL Experience Man
 * O cache interno é apagado quando uma página com um componente Adobe Target é publicada (NPR-33162).
 * A integração com o Adobe Target não funciona no [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Ao configurar o Adobe Target, os campos [!UICONTROL Empresa] e [!UICONTROL Report Suite] não aparecem ao selecionar uma fonte de relatórios (NPR-32502).
-* Ao exportar [!DNL Experience Fragments] usando o Adobe I/O, metadados como Produto de origem não são exportados para o Adobe Target (NPR-32159).
+* Ao exportar [!DNL Experience Fragments] usando [!DNL Adobe I/O], os metadados como Produto de origem não são exportados para o Adobe Target (NPR-32159).
 * Os usuários autorizados do IMS no grupo de administração de Experience Manager local não podem criar ou modificar configurações do IMS (NPR-33045).
 * A página de configurações de inicialização de Adobe não exibe todos os registros (NPR-33011).
 * Os usuários do grupo de autores de conteúdo não podem editar as propriedades de um componente Adobe Target devido ao erro de JavaScript (NPR-32996).
@@ -704,7 +704,7 @@ O Adobe Experience Manager 6.5.4.0 é uma atualização importante que inclui no
 
 Alguns dos principais recursos e melhorias introduzidos no Adobe Experience Manager 6.5.4.0 incluem:
 
-* O Adobe Experience Manager Assets agora está configurado com o Brand Portal por meio do Adobe I/O Console.
+* O Adobe Experience Manager Assets agora está configurado com o Brand Portal por meio do console [!DNL Adobe I/O].
 
 * Uma nova etapa [Gerar saída imprimível](../forms/using/aem-forms-workflow-step-reference.md) está disponível para workflows Adobe Experience Manager Forms.
 
@@ -868,7 +868,7 @@ Para obter uma lista completa dos recursos e dos principais destaques introduzid
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Os usuários do Brand Portal não conseguem publicar ativos de pasta de contribuição para [!DNL Assets] ao atualizar para o Adobe I/O no Experience Manager 6.5.4 (CQDOC-15655). Para uma correção imediata no Experience Manager 6.5.4, é recomendável [baixar o hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalar na instância do autor.
+* Os usuários do Brand Portal não podem publicar ativos de pasta de contribuição para [!DNL Assets] na atualização para [!DNL Adobe I/O] no Experience Manager 6.5.4 (CQDOC-15655). Para uma correção imediata no Experience Manager 6.5.4, é recomendável [baixar o hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalar na instância do autor.
 
 * Os valores de pop-up de schema de metadados não estão visíveis nas propriedades do ativo (CQ-4283287).
 
