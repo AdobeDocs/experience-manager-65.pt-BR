@@ -4,9 +4,9 @@ description: Notas de versão específicas do [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fa8d8c9a001b56006f1c0a30eb5a342754e63573
+source-git-commit: ad8ca7aaacd80bf5ca8daec78f7836e883e2343b
 workflow-type: tm+mt
-source-wordcount: '4227'
+source-wordcount: '4277'
 ht-degree: 4%
 
 ---
@@ -423,6 +423,10 @@ Para conhecer as plataformas certificadas para trabalhar com esta versão, consu
 1. Verifique se você instalou o Adobe Experience Manager Service Pack.
 1. Baixe o pacote de complementos Forms correspondente listado em [Versões AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para seu sistema operacional.
 1. Instale o pacote de complementos Forms conforme descrito em [Instalação de pacotes de complementos AEM Forms](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
+
+>[!NOTE]
+>
+>AEM 6.5.7.0 inclui uma nova versão do [Pacote de compatibilidade AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Se você estiver usando uma versão mais antiga do Pacote de compatibilidade AEM Forms e atualizando para AEM 6.5.7.0, instale a versão mais recente do pacote após a instalação do Pacote complementar Forms.
 
 ### Instalar o Adobe Experience Manager Forms em JEE {#install-aem-forms-jee-installer}
 
