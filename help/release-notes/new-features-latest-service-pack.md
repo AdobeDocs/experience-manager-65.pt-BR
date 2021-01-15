@@ -4,9 +4,9 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2815'
 ht-degree: 1%
 
 ---
@@ -168,7 +168,7 @@ O suporte para imagens 3D em [!DNL Dynamic Media] permite que os clientes publiq
 
 #### Configure [!DNL Experience Manager Assets] com [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-O canal de autorização entre [!DNL Experience Manager Assets] e [!DNL Brand Portal] foi alterado. Anteriormente, [!DNL Brand Portal] era configurado na interface clássica por meio do Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização. [!DNL Experience Manager Assets] agora está configurado com  [!DNL Brand Portal] a Adobe I/O, que obtém um token IMS para autorização do seu  [!DNL Brand Portal] locatário.
+O canal de autorização entre [!DNL Experience Manager Assets] e [!DNL Brand Portal] foi alterado. Anteriormente, [!DNL Brand Portal] era configurado na interface clássica por meio do Gateway OAuth herdado, que usa a troca de token JWT para obter um Token de acesso IMS para autorização. [!DNL Experience Manager Assets] agora está configurado com  [!DNL Brand Portal] through  [!DNL Adobe I/O], que obtém um token IMS para autorização do seu  [!DNL Brand Portal] locatário.
 
 As etapas para configurar [!DNL Experience Manager Assets] com [!DNL Brand Portal] são diferentes dependendo da versão [!DNL Experience Manager] e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos do Experience Manager com o Portal de marcas](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) para obter detalhes.
 
