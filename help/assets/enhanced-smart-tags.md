@@ -3,9 +3,9 @@ title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e124025295f29d6f3999dc52467301d48bceee75
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1514'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Entender, aplicar e preparar Tags inteligentes {#enhanced-smart-tags}
 
-As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar ativos digitais de uma classe específica. Marcar ativos com um vocabulário controlado por taxonomia garante que eles possam ser facilmente identificados e recuperados por pesquisas baseadas em tags.
+As organizações que lidam com ativos digitais cada vez mais usam vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que os funcionários, parceiros e clientes normalmente usam para consultar e procurar ativos digitais de uma classe específica. Marcar ativos com um vocabulário controlado por taxonomia garante que os ativos sejam facilmente identificados e recuperados.
 
 Comparado aos vocabulários de linguagem natural, a marcação de ativos digitais com base na taxonomia comercial ajuda a alinhá-los a uma empresa empresa e garante que os ativos mais relevantes sejam exibidos nas pesquisas.
 
@@ -25,7 +25,7 @@ Depois que uma tag é treinada e pronta, o serviço pode aplicar essas tags em a
 
 Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura do Adobe Sensei AI para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-O Serviço de conteúdo inteligente é um serviço em nuvem hospedado no Adobe I/O. Para usá-la em [!DNL Adobe Experience Manager], o administrador do sistema deve integrar sua implantação [!DNL Experience Manager] com a Adobe I/O.
+O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em [!DNL Adobe I/O]. Para usá-la em [!DNL Adobe Experience Manager], o administrador do sistema deve integrar sua implantação [!DNL Experience Manager] com [!DNL Adobe I/O].
 
 Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligente:
 
@@ -34,19 +34,19 @@ Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligen
 * Treinamento do Serviço de conteúdo inteligente
 * Marcação automática
 
-![fluxograma](assets/flowchart.gif)
+![Fluxograma](assets/flowchart.gif)
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração no Adobe I/O:
+Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração em [!DNL Adobe I/O]:
 
 * Existência de uma Adobe ID com privilégios de administrador para a organização.
 * O serviço Smart Content Service está habilitado para sua organização.
-* O Pacote básico do Smart Content Services só pode ser adicionado a uma implantação na qual um [!DNL Sites] Pacote básico e [!DNL Assets] complemento foram licenciados.
+* O Pacote básico do Smart Content Services só pode ser adicionado a uma implantação na qual um [!DNL Adobe Experience Manager Sites] Pacote básico e [!DNL Assets] complemento foram licenciados.
 
 ## Integração {#onboarding}
 
-O Serviço de conteúdo inteligente está disponível para compra como um complemento para [!DNL Experience Manager]. Após a compra, um email é enviado ao administrador da sua organização com um link para a Adobe I/O.
+O Serviço de conteúdo inteligente está disponível para compra como um complemento para [!DNL Experience Manager]. Após a compra, um email é enviado ao administrador da sua organização com um link para [!DNL Adobe I/O].
 
 O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente com [!DNL Experience Manager]. Para integrar o serviço com [!DNL Experience Manager Assets], consulte [Configurar Tags Inteligentes](config-smart-tagging.md).
 
@@ -73,17 +73,17 @@ Adicione os ativos a uma pasta e aplique as tags a cada ativo da página de prop
 
 ## Compreender [!DNL Experience Manager] os resultados da pesquisa com tags inteligentes {#understandsearch}
 
-Por padrão, a pesquisa [!DNL Experience Manager] combina os termos de pesquisa com uma cláusula `AND`. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma cláusula `OR` adicional para localizar qualquer um dos termos de pesquisa nas tags inteligentes aplicadas. Por exemplo, considere pesquisar por `woman running`. Os ativos com apenas `woman` ou apenas `running` palavra-chave nos metadados não aparecem nos resultados da pesquisa por padrão. No entanto, um ativo marcado com `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
+Por padrão, a pesquisa [!DNL Experience Manager] combina os termos de pesquisa com uma cláusula `AND`. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma cláusula `OR` extra para localizar qualquer um dos termos de pesquisa relacionados às tags inteligentes. Por exemplo, considere pesquisar por `woman running`. Os ativos com apenas `woman` ou apenas `running` palavra-chave nos metadados não aparecem nos resultados da pesquisa por padrão. No entanto, um ativo marcado com `woman` ou `running` usando tags inteligentes aparece em um query de pesquisa desse tipo. Então os resultados da pesquisa são uma combinação de...
 
-* ativos com `woman` e `running` palavras-chave nos metadados.
+* Ativos com palavras-chave `woman` e `running` nos metadados.
 
-* ativos marcados com inteligência com qualquer uma das palavras-chave.
+* Ativos marcados com inteligência com qualquer uma das palavras-chave.
 
 Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos campos de metadados são exibidos primeiro, seguidos dos resultados da pesquisa que correspondem a qualquer um dos termos de pesquisa nas tags inteligentes. No exemplo acima, a ordem aproximada de exibição dos resultados da pesquisa é:
 
-1. corresponde a `woman running` nos vários campos de metadados.
-1. corresponde a `woman running` em tags inteligentes.
-1. corresponde de `woman` ou de `running` em tags inteligentes.
+1. Corresponde a `woman running` nos vários campos de metadados.
+1. Corresponde a `woman running` em tags inteligentes.
+1. Corresponde de `woman` ou de `running` em tags inteligentes.
 
 >[!CAUTION]
 >
@@ -140,7 +140,7 @@ Você pode acionar o fluxo de trabalho de marcação do console do fluxo de trab
 
 >[!NOTE]
 >
->Nos ciclos de marcação subsequentes, somente os ativos modificados são marcados novamente com tags treinadas recentemente.No entanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede 6 meses.
+>Nos ciclos subsequentes de marcação, somente os ativos modificados são marcados novamente com tags recém-treinadas. Entretanto, mesmo ativos inalterados são marcados se a diferença entre os últimos e os atuais ciclos de marcação do fluxo de trabalho de marcação exceder 24 horas. Para workflows de marcação periódica, os ativos inalterados são marcados quando o intervalo de tempo excede seis meses.
 
 ## Preparar ou moderar as tags inteligentes aplicadas {#manage-smart-tags}
 
