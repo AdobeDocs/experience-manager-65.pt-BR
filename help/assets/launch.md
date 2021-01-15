@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '6605'
+source-wordcount: '6596'
 ht-degree: 17%
 
 ---
@@ -409,7 +409,7 @@ A tabela a seguir lista eventos do Dynamic Media Viewer e seus argumentos suport
 
 Caso ainda não o tenha feito, o Adobe recomenda que você analise toda a documentação antes desta seção para entender a integração completa.
 
-Esta seção explica as etapas de configuração necessárias para integrar os visualizadores Dynamic Media ao Adobe Analytics e Adobe Analytics para áudio e vídeo. Embora seja possível usar a extensão Dynamic Media Viewers para outros fins na inicialização do Adobe, esses cenários não são abordados nesta documentação.
+Esta seção explica as etapas de configuração necessárias para integrar os visualizadores Dynamic Media ao Adobe Analytics e Adobe Analytics para áudio e vídeo. Embora seja possível usar a extensão Dynamic Media Viewers para outros fins na inicialização do Adobe, tais cenários não são abordados nesta documentação.
 
 Você configurará a integração nos seguintes produtos de Adobe:
 
@@ -418,7 +418,7 @@ Você configurará a integração nos seguintes produtos de Adobe:
 
 Além disso, se essa solução de integração for usada com a AEM Sites, a seguinte configuração também precisará ser feita:
 
-* Adobe I/O Console - a integração é criada para o Adobe Launch.
+* [!DNL Adobe I/O] Console - a integração é criada para o Adobe Launch.
 * AEM nó do autor - configuração IMS e configuração da nuvem Adobe Launch.
 
 Como parte da configuração, verifique se você tem acesso a uma empresa no Adobe Experience Cloud que já tenha o Adobe Analytics e o Adobe Launch habilitados.
@@ -693,7 +693,7 @@ A configuração AEM consiste nas duas etapas principais a seguir:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Em uma nova guia do navegador, navegue até [Console do Adobe I/O](https://console.adobe.io/integrations).
+1. Em uma nova guia do navegador, navegue até [[!DNL Adobe I/O] Console](https://console.adobe.io/integrations).
 
 1. Na página **[!UICONTROL Integrações do Adobe I/O Console]**, próximo ao canto superior direito, clique em **[!UICONTROL Nova integração]**.
 1. Na caixa de diálogo **[!UICONTROL Criar uma nova integração]**, verifique se o botão de opção **[!UICONTROL Acessar uma API]** está selecionado e clique em **[!UICONTROL Continuar]**.
@@ -850,4 +850,4 @@ No entanto, ele é suportado no nó de publicação AEM. Usando as configuraçõ
 
 É possível contornar essa limitação especificando o URL de desenvolvimento ou armazenamento temporário da biblioteca de inicialização do Adobe na configuração da Adobe Launch Cloud para AEM publicação acima. Isso faz com que o nó de publicação AEM use a versão de Desenvolvimento ou Preparação da biblioteca de Adobe Launch.
 
-Consulte [Integrar AEM com o Adobe Launch Via Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) para obter mais informações sobre como configurar a Configuração da Adobe Launch Cloud.
+Consulte [Integrar AEM com o Adobe Launch Via [!DNL Adobe I/O]](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) para obter mais informações sobre como configurar a Configuração da Adobe Launch Cloud.
