@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a876a1a8d4aeb9e9a94c93a16742a4058307b0a8
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Um desenvolvedor AEM é responsável pelas seguintes tarefas ao criar um aplicat
 * [Mobile com sincronização de conteúdo](/help/mobile/mobile-ondemand-contentsync.md)
 * [Propriedades de conteúdo e exportação de conteúdo](/help/mobile/on-demand-content-properties-exporting.md)
 
-Consulte [Desenvolvimento do AEM Mobile Content Services](//help/mobile/developing-content-services.md) para desenvolver o Content Services.
+Consulte [Desenvolvimento do AEM Mobile Content Services](/help/mobile/developing-content-services.md) para desenvolver o Content Services.
 
 >[!NOTE]
 >
