@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: dc6891cd-19cc-4dff-8bda-a41ed8af8bfb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a876a1a8d4aeb9e9a94c93a16742a4058307b0a8
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 1%
@@ -84,7 +84,7 @@ Um desenvolvedor AEM é responsável pelas seguintes tarefas ao criar um aplicat
 * [Modelos e componentes do aplicativo](/help/mobile/app-templates-and-components1.md)
 * [Mobile com sincronização de conteúdo](/help/mobile/mobile-ondemand-contentsync.md)
 * [Propriedades de conteúdo e exportação de conteúdo](/help/mobile/on-demand-content-properties-exporting.md)
-* [Desenvolvimento dos serviços de conteúdo da AEM Mobile](//help/mobile/developing-content-services.md)
+* [Desenvolvimento dos serviços de conteúdo da AEM Mobile](/help/mobile/developing-content-services.md)
 
 Para começar a usar as funções e responsabilidades do desenvolvedor, consulte [Desenvolvimento de conteúdo AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md).
 
