@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
+source-git-commit: bb50e530f0d015c0e7d06650157e3e3994082483
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -34,5 +34,4 @@ As opções de Filtro de descarte de conteúdo fornecem a seguinte funcionalidad
 
 * Caminhos de recursos excluídos: uma lista de recursos excluídos, cada caminho de recurso deve ser fornecido como caminho absoluto e totalmente qualificado. Correspondência de prefixo/curingas não são suportados.
 
-* Ativar Para Todos Os Caminhos De Recurso: esse sinalizador controla se esse filtro deve ser ativado para todos os caminhos, exceto para os caminhos excluídos definidos pelos Caminhos de recursos excluídos. Definir isso como &quot;true&quot; leva a ignorar os Caminhos de Disposição de Conteúdo. Independentemente da configuração, somente os caminhos de recursos são abordados, que contêm uma propriedade chamada &#39;jcr:data&#39; ou &#39;jcr:content jcr:data&#39;.
-
+* Ativar Para Todos Os Caminhos De Recurso: esse sinalizador controla se esse filtro deve ser ativado para todos os caminhos, exceto para os caminhos excluídos definidos pelos Caminhos de recursos excluídos. Definir isso como &quot;true&quot; leva a ignorar os Caminhos de Disposição de Conteúdo. Independentemente da configuração, somente os caminhos de recursos são abordados que contêm uma propriedade chamada &#39;jcr:data&#39; ou &#39;jcr:content/jcr:data&#39;.
