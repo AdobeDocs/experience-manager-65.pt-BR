@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a876a1a8d4aeb9e9a94c93a16742a4058307b0a8
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 2%
@@ -53,7 +53,7 @@ Um administrador de AEM é responsável pelas seguintes tarefas ao criar um apli
 
 * [Configuração dos grupos de usuários e usuários](/help/mobile/aem-mobile-configure-users.md)
 * [Visualização com o Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md)
-* [Administração de serviços de conteúdo](//help/mobile/developing-content-services.md)
+* [Administração de serviços de conteúdo](/help/mobile/developing-content-services.md)
 
 ## Recursos adicionais {#additional-resources}
 
