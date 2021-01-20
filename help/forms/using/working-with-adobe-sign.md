@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70fff9b4029ba70fe0667dafa69fc6172f4b1733
+source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
 workflow-type: tm+mt
-source-wordcount: '3755'
+source-wordcount: '3827'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Execute as seguintes etapas para adicionar campos a um formulário adaptável e 
    >[!NOTE]
    >
    >    * O uso do bloco [!DNL Adobe Sign] não é obrigatório para usar [!DNL Adobe Sign] em um formulário adaptável. Se você não usar [!DNL Adobe Sign] bloquear e adicionar campos para os signatários, o campo de assinatura padrão será exibido na parte inferior dos documentos de assinatura.
-   >    * Use o bloco [!DNL Adobe Sign] somente para os formulários adaptáveis que geram automaticamente o Documento de Registro. Se você estiver usando um XDP personalizado para gerar Documento de Registro ou um formulário adaptável baseado em modelo de formulário, o bloco [!DNL Adobe Sign] não será necessário.
+   >    * Use o bloco [!DNL Adobe Sign] somente para os formulários adaptáveis que geram automaticamente o Documento de Registro. Se você estiver usando um XDP personalizado para gerar um Documento de Registro ou um formulário adaptável baseado em modelo de formulário, o bloco [!DNL Adobe Sign] não será suportado.
 
 
 1. Selecione o componente **[!UICONTROL Adobe Sign Block]** e toque no ícone **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png). Exibe opções para adicionar campos e formatar a aparência de um campo.
@@ -300,7 +300,8 @@ Execute as seguintes etapas para configurar o componente Etapa de assinatura:
       > Algumas práticas recomendadas são:
    > * O painel de formulário adaptável que contém a etapa Assinatura está sempre no último ou no segundo painel de um formulário adaptável. Ele pode ser o segundo painel somente quando o último painel contiver a etapa Resumo.
    > * O painel que contém o componente da etapa Assinatura ou Resumo não pode conter nenhum outro componente.
-   > * Formulários adaptáveis que contêm Etapa de assinatura não podem ter o botão Enviar. O envio é realizado por meio de um serviço em segundo plano ou da etapa Resumo.
+   > * Formulários adaptáveis que contêm Etapa de assinatura não podem ter o botão Enviar.
+   > * O envio dos formulários adaptáveis que contêm a etapa de assinatura é feito por meio de um serviço em segundo plano ou da etapa de resumo. Se houver um assinante configurado que também esteja preenchendo o formulário, a vantagem de manipular o envio do formulário adaptável usando a etapa Resumo é que ele imediatamente avalia que o assinante assinou o formulário e chama a ação de envio. Um serviço em segundo plano demora mais tempo para avaliar se todos os signatários configurados assinaram o formulário e atrasam o envio do formulário adaptável.
    > * Projete o formulário para não permitir que um usuário navegue de volta de um painel que contém a etapa Assinatura ou Resumo.
 
 
