@@ -4,9 +4,9 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2770'
 ht-degree: 1%
 
 ---
@@ -21,10 +21,6 @@ ht-degree: 1%
 Este artigo destaca os recursos incluídos no Service Pack 6.5 mais recente, [os principais recursos incluídos nos pacotes de serviços 6.5 anteriores](#key-features-previous-service-packs) e as versões de [chave AEM desde a última versão do service pack](#key-releases-since-last-sp).
 
 ## Adobe [!DNL Experience Manager Sites] {#aem-sites}
-
-### Classificar as páginas da Live Copy disponíveis para implantação {#sort-livecopy-pages}
-
-Agora você pode classificar as páginas de Live Copy disponíveis para implantação usando as propriedades [!UICONTROL Name], [!UICONTROL Data da última modificação] e [!UICONTROL Data da última implantação]. A [!UICONTROL Data da última implementação] de uma página é uma nova propriedade introduzida nesta versão.
 
 ### Disponibilidade de movimentações de página e implantações de MSM como operações assíncronas {#page-moves-msm-asynchronous}
 
