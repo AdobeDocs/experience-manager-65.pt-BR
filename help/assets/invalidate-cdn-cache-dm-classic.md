@@ -1,42 +1,34 @@
 ---
-title: Invalidar o cache CDN por meio do Dynamic Media Classic
-description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite atualizar rapidamente os ativos entregues pelo Dynamic Media Classic, em vez de aguardar a expiração do cache.
-uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
+title: Como invalidar o cache CDN por meio do Dynamic Media Classic
+description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pelo Dynamic Media Classic, em vez de aguardar a expiração do cache.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '700'
+ht-degree: 24%
 
 ---
 
 
-# Invalidando o cache CDN por meio do Dynamic Media Classic {#invalidating-your-cdn-cached-content}
+# Invalidar o cache CDN por meio do Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-Os ativos de Dynamic Media são armazenados em cache pelo CDN para delivery rápido. No entanto, ao fazer atualizações em um ativo, você pode desejar que essas alterações entrem em vigor imediatamente. A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pelo Dynamic Media, em vez de aguardar a expiração do cache.
+Os ativos Dynamic Media são armazenados em cache pelo CDN para delivery rápido. No entanto, ao fazer atualizações em um ativo, você pode desejar que essas alterações entrem em vigor imediatamente. A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pela Dynamic Media, em vez de aguardar a expiração do cache.
 
 >[!IMPORTANT]
 >
->As etapas a seguir se aplicam somente ao Dynamic Media no AEM 6.5, Service Pack 5 (AEM 6.5.5) ou anterior.<br>Se você usar o Dynamic Media no AEM 6.5, Service Pack 6 (AEM 6.5.6) ou posterior, siga as etapas encontradas em  [Invalidar o cache CDN por meio do Dynamic Media.](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>As etapas a seguir se aplicam apenas à Dynamic Media no AEM 6.5, Service Pack 5 (AEM 6.5.5) ou anterior.<br>Se você usar o Dynamic Media no AEM 6.5, Service Pack 6 (AEM 6.5.6) ou posterior, siga as etapas encontradas em  [Invalidar o cache CDN por meio do Dynamic Media.](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 
 Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
 **Para invalidar o cache CDN por meio do Dynamic Media Classic:**
 
-1. Faça uma das seguintes opções:
+1. Abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) e faça logon em sua conta.
 
-   * No navegador da Web, faça logon na sua conta do Dynamic Media Classic:
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
-
-   * Abra o aplicativo Dynamic Media Classic e faça logon na sua conta.
+   Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
 
 1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Configuração > Configuração de Aplicativo > Configurações Gerais.]**
 1. Na página Configurações gerais do aplicativo, no cabeçalho do grupo Servidores, localize a caixa de texto **[!UICONTROL Modelo de invalidação CDN]**.
@@ -47,7 +39,7 @@ Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   Se o Modelo contiver apenas `<ID>`, o Dynamic Media preencherá `https://<server>/is/image`, onde `<server>` é o Nome do Servidor de Publicação definido em Configurações Gerais, e &lt;ID> serão os ativos selecionados para invalidação.
+   Se o Modelo contiver apenas `<ID>`, a Dynamic Media preencherá `https://<server>/is/image`, onde `<server>` é o Nome do Servidor de Publicação definido em Configurações Gerais, e &lt;ID> serão os ativos selecionados para serem invalidados.
 
 1. No canto inferior direito da página, clique em **[!UICONTROL Fechar.]**
 1. Na interface do usuário do Dynamic Media Classic, selecione um ou mais ativos e clique em **[!UICONTROL Arquivo > Invalidar CDN.]** Você verá uma lista de um ou mais URLs gerados a partir do modelo criado e dos ativos selecionados. Ele usa o URL do servidor listado em &quot;Published Server Name&quot; nas Configurações gerais do aplicativo.
