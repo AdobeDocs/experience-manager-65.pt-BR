@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1870'
+ht-degree: 2%
 
 ---
 
@@ -47,15 +47,15 @@ Aprimoramentos na versão mais recente do Smart Imaging:
 * A Imagem inteligente pode ser desativada usando o parâmetro de URL &quot;bfc&quot;.
 * TTL (Tempo de vida) independente. Anteriormente, um TTL mínimo de 12 horas era obrigatório para que a Imagem inteligente funcionasse.
 * Anteriormente, as imagens original e derivada eram armazenadas em cache e era um processo de 2 etapas para invalidar o cache. Na última geração de imagens inteligentes, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de etapa única.
-* Os clientes que usam cabeçalhos personalizados em seus conjuntos de regras (por exemplo, &quot;Timing Allow Origem&quot;, &quot;X-Robot&quot;, conforme sugerido em [Adicionar um valor de cabeçalho personalizado a respostas de imagem|O Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarão da Imagem inteligente mais recente, já que esses cabeçalhos não estão bloqueados, ao contrário da versão anterior do Smart Imaging.
+* Os clientes que usam cabeçalhos personalizados em seus conjuntos de regras (por exemplo, &quot;Origem de permissão de tempo&quot;, &quot;Robô X&quot;, conforme sugerido em [Adicionar um valor de cabeçalho personalizado a respostas de imagem|O Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se beneficiarão da Imagem inteligente mais recente, já que esses cabeçalhos não estão bloqueados, ao contrário da versão anterior da Imagem inteligente.
 
 ## Há algum custo de licenciamento associado à geração de imagens inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Não. O Smart Imaging está incluído na licença existente do Dynamic Media Classic ou do Adobe Experience Manager - Dynamic Media (no Prem, AMS e AEM como Cloud Service).
+Não. O Smart Imaging está incluído na sua licença existente do Dynamic Media Classic ou do Adobe Experience Manager - Dynamic Media (no Prem, AMS e AEM como Cloud Service).
 
 >[!NOTE]
 >
->O Smart Imaging não está disponível para clientes do Dynamic Media - Hybrid.
+>O Smart Imaging não está disponível para clientes Dynamic Media - Híbrido.
 
 
 ## Como funciona a geração de imagens inteligentes? {#how-does-smart-imaging-work}
@@ -118,16 +118,16 @@ O Smart Imaging funciona com imagens entregues por HTTP ou HTTPS. Além disso, t
 
 ## Estou qualificado para usar imagens inteligentes? {#am-i-eligible-to-use-smart-imaging}
 
-Para usar o Smart Imaging, seu empresa Dynamic Media Classic ou o Dynamic Media em AEM conta deve atender aos seguintes requisitos:
+Para usar o Smart Imaging, seu empresa Dynamic Media Classic ou Dynamic Media em AEM conta deve atender aos seguintes requisitos:
 
 * Use a CDN (Content Delivery Network, Rede de Adobe de conteúdo) como parte da sua licença.
 * Use um domínio dedicado (por exemplo, `images.company.com` ou `mycompany.scene7.com`), não um domínio genérico (por exemplo, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-Para localizar seus domínios, faça logon em sua conta ou contas de empresa.
+Para localizar seus domínios, abra o [aplicativo Dynamic Media Classic desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas de empresa.
 
 Toque em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais.]** Procure o campo Nome do servidor  **[!UICONTROL publicado.]** Se você estiver usando um domínio genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição ao enviar um ticket de suporte técnico.
 
-Seu primeiro domínio personalizado não tem custo adicional com uma licença do Dynamic Media.
+Seu primeiro domínio personalizado não tem custo adicional com uma licença da Dynamic Media.
 
 ## Qual é o processo para ativar a criação de imagens inteligentes em minha conta? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
@@ -139,7 +139,7 @@ Você deve iniciar a solicitação para usar a geração inteligente de imagens;
    1. Nome do contato principal, email, telefone.
    1. Todos os domínios a serem ativados para geração de imagens inteligente (ou seja, `images.company.com` ou `mycompany.scene7.com`).
 
-      Para localizar seus domínios, faça logon em sua conta ou contas de empresa.
+      Para localizar seus domínios, abra o [aplicativo Dynamic Media Classic desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas de empresa.
 
       Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais.]**
 
@@ -147,11 +147,11 @@ Você deve iniciar a solicitação para usar a geração inteligente de imagens;
    1. Verifique se você está usando o CDN através do Adobe e não é gerenciado com uma relação direta.
    1. Verifique se você está usando um domínio dedicado, como `images.company.com` ou `mycompany.scene7.com`, e não um domínio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Para localizar seus domínios, faça logon em sua conta ou contas de empresa.
+      Para localizar seus domínios, abra o [aplicativo Dynamic Media Classic desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas de empresa.
 
       Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais.]**
 
-      Procure o campo **[!UICONTROL Nome do servidor publicado.]** Se você estiver usando um domínio genérico do Dynamic Media Classic, é possível solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
+      Procure o campo **[!UICONTROL Nome do servidor publicado.]** Se você estiver usando um domínio genérico do Dynamic Media Classic, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
    1. Indique se você também precisa que isso funcione em HTTP/2.
 
 1. O suporte técnico adicionará você à Lista de espera do cliente de Smart Imaging com base na ordem em que as solicitações foram enviadas.
@@ -178,7 +178,7 @@ Durante a transição inicial, as imagens não armazenadas em cache acessam dire
 
 ## Como posso verificar se a geração de imagens inteligentes está funcionando como esperado?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Depois que sua conta for configurada com imagens inteligentes, carregue um URL de imagem do Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media no navegador.
+1. Depois que sua conta for configurada com imagens inteligentes, carregue um URL de imagem Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media no navegador.
 1. Abra o painel do desenvolvedor do Chrome clicando em **[!UICONTROL Visualização > Desenvolvedor > Ferramentas do desenvolvedor]** no navegador. Ou escolha qualquer ferramenta de desenvolvedor de navegador de sua escolha.
 
 1. Certifique-se de que o cache esteja desativado quando as ferramentas do desenvolvedor estiverem abertas.
