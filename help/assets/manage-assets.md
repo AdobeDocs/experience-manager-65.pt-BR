@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '9562'
+source-wordcount: '9590'
 ht-degree: 4%
 
 ---
@@ -153,7 +153,7 @@ Por padrão, o carregamento em série de ativos é ativado. Para desativar o rec
 
 ### Carregar ativos usando FTP {#uploading-assets-using-ftp}
 
-O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FTP. Se você pretende carregar ativos grandes (>1 GB) ou pastas e subpastas inteiras, deve usar o FTP. Você pode até mesmo configurar o upload do FTP para que ocorra de forma recorrente e programada.
+A Dynamic Media permite o carregamento em lote de ativos por meio do servidor FTP. Se você pretende carregar ativos grandes (>1 GB) ou pastas e subpastas inteiras, deve usar o FTP. Você pode até mesmo configurar o upload do FTP para que ocorra de forma recorrente e programada.
 
 >[!NOTE]
 >
@@ -168,8 +168,12 @@ O Dynamic Media permite o carregamento em lote de ativos por meio do servidor FT
 **Para fazer upload de ativos usando FTP**
 
 1. Usando sua escolha de cliente FTP, faça logon no servidor FTP usando o nome de usuário e a senha FTP recebidos do email de provisionamento. No cliente FTP, carregue arquivos ou pastas no servidor FTP.
-1. [Faça logon no Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicusando as credenciais recebidas do email de provisionamento. Na barra de navegação global, clique em **[!UICONTROL Carregar]**.
 
+1. Abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) e faça logon em sua conta.
+
+   Suas credenciais e logon foram fornecidas pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte Técnico.
+
+1. Na barra de navegação global, clique em **[!UICONTROL Carregar]**.
 1. Na página Carregar, próximo ao canto superior esquerdo, clique na guia **[!UICONTROL Via FTP]**.
 1. No lado esquerdo da página, escolha uma pasta FTP da qual fazer upload de arquivos; no lado direito da página, escolha uma pasta de destino.
 1. Perto do canto inferior direito da página, clique em **[!UICONTROL Opções de trabalho]** e defina as opções desejadas com base nos ativos na pasta selecionada.
@@ -205,7 +209,7 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 |  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cor.<br> Observe que não há suporte para eCatalogs em  [!DNL Experience Manager]. <br> Consulte  [Configuração de opções](#setting-pdf-upload-options) de upload de PDF. |
 |  | Opções do Illustrator | Você pode rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cor.<br> Consulte  [Configuração de opções](#setting-postscript-and-illustrator-upload-options) de upload de PostScript e Illustrator. |
 |  | Opções de vídeo | Você pode transcodificar um arquivo de vídeo escolhendo uma predefinição de vídeo.<br> Consulte  [Configuração de opções](#setting-evideo-upload-options) de upload de eVideo. |
-|  | Predefinições do conjunto de lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Predefinições de Configuração de aplicativo/Conjunto de lotes do Dynamic Media Classic.<br> Consulte  [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) configurações de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte  [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
+|  | Predefinições do conjunto de lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. As predefinições são criadas na página Configuração de aplicativo/Predefinições de conjunto de lotes do Dynamic Media Classic.<br> Consulte  [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) configurações de rotação para saber mais sobre como criar predefinições de conjuntos de lotes.<br> Consulte  [Configuração de predefinições de conjuntos de lotes no upload](#setting-batch-set-presets-at-upload). |
 
 #### Definir opções de edição de imagem no upload {#setting-image-editing-options-at-upload}
 
@@ -252,7 +256,7 @@ Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode 
 
 Os arquivos do Photoshop Documento (PSD) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela Carregar).
 
-O Dynamic Media cria várias imagens a partir de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
+O Dynamic Media cria várias imagens de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
 
 Use as [!UICONTROL Opções de corte] e [!UICONTROL Opções de Perfil de cor], descritas acima, com as opções de upload do Photoshop.
 
@@ -369,7 +373,7 @@ Para pré-visualização de um ativo usando o teclado, siga estas etapas:
 
 >[!MORELIKETHIS]
 >
->* [Pré-visualização de ativos](/help/assets/previewing-assets.md) de mídia dinâmica.
+>* [Pré-visualização do Dynamic Media Assets](/help/assets/previewing-assets.md).
 >* [subativos](managing-linked-subassets.md#viewing-subassets) de visualização.
 
 
@@ -583,7 +587,7 @@ Consulte [Baixar ativos de Experience Manager](/help/assets/download-assets-from
 
 >[!NOTE]
 >
->Para obter mais informações específicas do Dynamic Media, consulte [Publicando ativos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
+>Para obter mais informações específicas ao Dynamic Media, consulte [Publicar ativos Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Navegue até o local do(s) ativo(s)/pasta que deseja publicar.
 
