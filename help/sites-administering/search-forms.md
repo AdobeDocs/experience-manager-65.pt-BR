@@ -1,18 +1,14 @@
 ---
 title: Configuração de formulários de pesquisa
-seo-title: Configuração de formulários de pesquisa
 description: Saiba como configurar o Search Forms.
-seo-description: Saiba como configurar o Search Forms.
-uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2060'
 ht-degree: 12%
 
 ---
@@ -64,7 +60,7 @@ As configurações padrão disponíveis são:
 
    Essa configuração define as opções disponíveis ao procurar produtos no navegador de ativos (ao editar uma página).
 
-* **Editor de páginas (pesquisa do Scene7)**:
+* **Editor de páginas (Dynamic Media Classic  [antigo Scene7] search)**:
 
    Essa configuração define as opções disponíveis ao pesquisar recursos do Scene7 no navegador de ativos (ao editar uma página).
 
@@ -453,7 +449,7 @@ Você pode adicionar ou editar campos e definir/atualizar suas configurações:
       Selecione o campo predicado (à direita) e abra a guia **Configurações**.
    Por exemplo, as configurações para **Predicado de intervalo de datas**:
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
 1. Faça as alterações necessárias e confirme com **Done**.
 
