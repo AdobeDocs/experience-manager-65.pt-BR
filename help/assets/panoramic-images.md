@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Para fazer upload de ativos para uso com o visualizador de Imagem panorâmica, c
 
 Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é necessário sincronizar as predefinições do visualizador de Imagem panorâmica com os metadados específicos do Dynamic Media Classic e do Dynamic Media Classic para que as predefinições do visualizador sejam atualizadas no JCR. Para fazer isso, configure o Dynamic Media Classic da seguinte maneira:
 
-1. [Faça logon na sua instância do Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicpara cada conta de empresa.
+1. Abra o [aplicativo Dynamic Media Classic para desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
 1. Perto do canto superior direito da página, clique em **[!UICONTROL Configuração > Configuração de Aplicativo > Configurar Publicação > Servidor de Imagem.]**
 1. Na página de Publicação do Servidor de Imagens, no menu suspenso **[!UICONTROL Publicar Contexto]** próximo ao topo, selecione **[!UICONTROL Serviço de Imagens.]**
@@ -72,7 +72,7 @@ Para que o visualizador de Imagem panorâmica funcione corretamente no AEM, é n
 
 Se você soltou uma imagem no componente de Mídia panorâmica em seu WCM e o espaço reservado do componente desabou, talvez você queira solucionar o seguinte problema:
 
-* Se você encontrar um erro 403 Proibido, ele pode ter sido causado pelo tamanho da imagem solicitada ser muito grande. Revise as configurações **[!UICONTROL Reply Image Size Limit]** em [Configuração do Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Se você encontrar um erro 403 Proibido, ele pode ter sido causado pelo tamanho da imagem solicitada ser muito grande. Revise as configurações **[!UICONTROL Limite de tamanho de imagem de resposta]** em [Configuração do Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Para um &quot;Bloqueio inválido&quot; no ativo ou &quot;Erro de análise&quot; exibido na página, marque Modo de ofuscação de solicitação e Modo de bloqueio de solicitação para garantir que eles estejam desativados.
 * Para um erro de tela contaminada, configure um Caminho de arquivo de definição de conjunto de regras e Invalide o CTN para as solicitações anteriores do ativo de imagem.
