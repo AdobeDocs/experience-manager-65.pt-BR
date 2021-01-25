@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 19faa273908e67a744e52d173a5352f0a52f7345
 workflow-type: tm+mt
 source-wordcount: '2060'
 ht-degree: 12%
@@ -414,7 +414,7 @@ Os rótulos das caixas de seleção de publicação e live copy para o predicado
 
 ### Criando/Abrindo uma Configuração Personalizada {#creating-opening-a-customized-configuration}
 
-1. Navegue até **Ferramentas**, **Operações**, **Pesquisar Forms**.
+1. Navegue até **Ferramentas**, **Geral**, **Pesquisar Forms**.
 
 1. Selecione a configuração que deseja personalizar.
 1. Use o ícone **Editar** para abrir a configuração para atualização.
