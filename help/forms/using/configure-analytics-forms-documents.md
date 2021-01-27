@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 5aa2fe48578633cbe5e4324f9e956e1dbbdab8af
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
@@ -111,7 +111,7 @@ Execute as seguintes etapas para criar um conjunto de relatórios.
 A configuração de Cloud Service é informação sobre sua conta Adobe Analytics. A configuração permite que a Adobe Experience Manager (AEM) se conecte ao Adobe Analytics. Crie uma configuração separada para cada conta do Analytics usada.
 
 1. Faça logon na instância do autor AEM como administrador.
-1. No canto superior esquerdo, clique em **Adobe Experience Manager** > **Ferramentas** ![](/help/forms/using/assets/tools.png) > **Implantação** > **Cloud Services**.
+1. No canto superior esquerdo, clique em **Adobe Experience Manager** > **Ferramentas** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services herdados**.
 1. Localize o ícone **Adobe Analytics**. Clique em **Mostrar configurações** e prossiga para clicar em **[+]** para adicionar uma nova configuração.
 
    Se você for um usuário pela primeira vez, clique em **Configurar agora**.
@@ -163,7 +163,7 @@ Uma estrutura do Adobe Analytics é um conjunto de mapeamentos entre variáveis 
 1. Especifique os valores apropriados para os seguintes campos e clique em **Salvar**.
 
    * **Estrutura** do SiteCatalyst: Selecione a estrutura/configuração definida na seção Configurar uma estrutura para rastreamento.
-   * **Linha de base** de rastreamento de tempo do campo: Especifique a duração, em segundos, após a qual a visita de campo deve ser rastreada. O valor padrão é 0. Quando o valor for maior que 0 (zero), dois eventos de rastreamento separados serão enviados para o servidor Adobe Analytics. O primeiro evento instrui o servidor do Analytics a parar de rastrear o campo encerrado. O segundo evento é enviado depois que a duração especificada decorre. O segundo evento instrui o servidor do Analytics a rastrear o start do campo visitado. O uso de dois eventos separados ajuda a medir com precisão o tempo gasto em um campo. Quando o valor for 0 (zero), um único evento de rastreamento será enviado para o servidor Adobe Analytics.
+   * **Linha de base** de rastreamento de tempo do campo: Especifique a duração, em segundos, após a qual a visita de campo deve ser acompanhada. O valor padrão é 0. Quando o valor for maior que 0 (zero), dois eventos de rastreamento separados serão enviados para o servidor Adobe Analytics. O primeiro evento instrui o servidor do Analytics a parar de rastrear o campo encerrado. O segundo evento é enviado depois que a duração especificada decorre. O segundo evento instrui o servidor do Analytics a rastrear o start do campo visitado. O uso de dois eventos separados ajuda a medir com precisão o tempo gasto em um campo. Quando o valor for 0 (zero), um único evento de rastreamento será enviado para o servidor Adobe Analytics.
 
    * **Cron** de sincronização de relatórios do Analytics: Especifique a expressão cron para obter relatórios do Adobe Analytics. O valor padrão é 0 0 2 ? * *.
 
