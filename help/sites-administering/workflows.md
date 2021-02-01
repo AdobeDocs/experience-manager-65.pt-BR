@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Um fluxo de trabalho pode ter um dos seguintes status:
 * **EM EXECUÇÃO**: A instância do fluxo de trabalho está em execução.
 * **CONCLUÍDO**: A instância do fluxo de trabalho foi encerrada com êxito.
 
-* **SUSPENSA**: A instância do fluxo de trabalho foi suspensa.
+* **SUSPENSA**: Marca o fluxo de trabalho como suspenso. No entanto, consulte a Nota de precaução abaixo sobre um problema conhecido com esse estado.
 * **ABORTADO**: A instância do fluxo de trabalho foi encerrada.
 * **ESCALA**: A progressão da instância do fluxo de trabalho requer que um trabalho em segundo plano seja executado, no entanto, o trabalho não pode ser encontrado no sistema. Essa situação pode ocorrer quando ocorre um erro ao executar o fluxo de trabalho.
 
@@ -107,7 +107,12 @@ Um fluxo de trabalho pode ter um dos seguintes status:
 
 Dependendo do status atual, você pode executar ações em executar instâncias de fluxo de trabalho quando precisar intervir na progressão normal de uma instância de fluxo de trabalho:
 
-* **Suspender**: Interrompe temporariamente a execução do fluxo de trabalho. A suspensão é útil em casos excepcionais quando você não deseja que o fluxo de trabalho continue, por exemplo, para manutenção. A suspensão altera o estado do fluxo de trabalho para Suspenso.
+* **Suspender**: A suspensão altera o estado do fluxo de trabalho para Suspenso. Consulte Precaução abaixo:
+
+>[!CAUTION]
+>
+>Marcar um estado de fluxo de trabalho como &quot;Suspender&quot; tem um problema conhecido. Nesse estado, é possível executar ações em itens de fluxo de trabalho suspensos em uma Caixa de entrada.
+
 * **Retomar**: Reinicie um fluxo de trabalho suspenso no mesmo ponto de execução em que ele foi suspenso, usando a mesma configuração.
 * **Terminar**: Termina a execução do fluxo de trabalho e altera o estado para  **ABORTED**. Uma instância de fluxo de trabalho abortada não pode ser reiniciada.
 
