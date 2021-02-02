@@ -7,10 +7,10 @@ user-guide-title: Guia do usuário de criação do AEM 6.5
 breadcrumb-title: Guia de criação
 user-guide-description: Saiba mais sobre os principais conceitos para criação de conteúdo e criação no AEM.
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: a74be2627dd63c246eaf4576827f1b2ea16d3146
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 90%
+source-wordcount: '298'
+ht-degree: 88%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 90%
    + [Participação em fluxos de trabalho](workflows-participating.md)
    + [Trabalhar com fluxos de trabalho de projeto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Desempenho da página {#page-performance}
-   + [Content Insight](content-insights.md)
+   + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
    + [Análise do desempenho das páginas](ci-analyze.md)
    + [Visualizar dados de análise de página](pa-using.md)
    + [Adicionar recursos Search&amp;Promote à sua página](search-and-promote.md)
