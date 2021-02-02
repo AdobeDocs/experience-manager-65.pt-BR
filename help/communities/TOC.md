@@ -6,10 +6,10 @@ user-guide-title: Guia do usuário do AEM 6.5 Communities
 breadcrumb-title: Guia do Communities
 user-guide-description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais.
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 11%
+source-wordcount: '501'
+ht-degree: 10%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 11%
 + Introdução ao AEM Communities {#introduction}
    + [Sites de comunidades](administer-landing.md)
    + [Visão geral do AEM Communities](overview.md)
-   + [Notas de versão do AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [Notas de versão do AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Introdução ao AEM Communities](getting-started.md)
    + [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
    + [Configuração inicial](setup.md)
@@ -38,7 +38,7 @@ ht-degree: 11%
    + [Configuração do Dispatcher para Comunidades](dispatcher.md)
 + Administração {#administer}
    + [Serviço de gerenciamento de usuário e UGC no AEM Communities](user-ugc-management-service.md)
-   + [Sites de comunidades](administer-landing.md)
+   + [Sites de comunidades](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Consoles de comunidades](consoles.md)
    + [Configuração do Analytics para recursos de comunidades](analytics.md)
    + [Configuração dos recursos de ativação](enablement.md)
@@ -165,4 +165,4 @@ ht-degree: 11%
    + [Tendências de atividade](trends.md)
    + [Uso da Nuvem de tags sociais](tagcloud.md)
    + [Uso da votação](voting.md)
-   + [Criar uma página de amostra](create-sample-page.md)
+   + [Criar uma página de amostra](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
