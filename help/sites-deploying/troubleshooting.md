@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 9b65f7194dc648ba9a6dbc127bc8d5951f126269
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1181'
 ht-degree: 1%
 
 ---
@@ -130,3 +130,20 @@ Se a instalação do AEM usar um armazenamento externo, por exemplo, um servidor
 
 Se você instalar ou atualizar arquivos JSP para o Experience Manager no JBoss e os servlets correspondentes não forem compilados, verifique se o compilador JSP JBoss está configurado corretamente. Para obter informações, consulte a
 [Problemas de compilação JSP no artigo JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
+
+### O site não carrega ou falha intermitentemente com o Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+
+Há um problema conhecido com a execução AEM 6.5 no Java 11, em que o site pode não carregar ou falhar intermitentemente.
+
+Se isso acontecer, siga as seguintes soluções:
+
+1. Abra o arquivo `sling.properties` na pasta `crx-quickstart/conf/`
+1. Localize a seguinte linha:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.`
+
+1. Substitua-o pelo seguinte:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
+
+1. Reinicie a instância.
