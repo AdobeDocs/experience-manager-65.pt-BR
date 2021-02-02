@@ -4,7 +4,7 @@ solution-title: Aprendizagem e suporte
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Introdução
-getting-started-url: https://experienceleague.corp.adobe.com/docs/experience-manager-tutorials.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
@@ -13,7 +13,7 @@ solution: Experience Manager
 type: Documentation
 index: y
 translation-type: tm+mt
-source-git-commit: 5f9fb08a59dd7cac5436b9c7836fb45de9cda007
+source-git-commit: fff2c39561f54436f8e5613ac648cb91af888c66
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 9%
@@ -37,7 +37,7 @@ O arquivo metadata.md inclui metadados de nível de acordo de recompra que passa
 
 No arquivo TOC.md
 
-| metadata | o que ele faz |
+| metadados | o que ele faz |
 |--- |--- |
 | user-guide-title | Usado no cabeçalho do artigo como link. |
 | user-guide-url | Abre a página de hub de Aprendizagem e suporte. |
