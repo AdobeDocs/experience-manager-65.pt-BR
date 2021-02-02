@@ -7,10 +7,10 @@ user-guide-title: Guia de implementação do AEM 6.5
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5, incluindo a implantação do Adobe Managed Services na nuvem.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 18%
+source-wordcount: '352'
+ht-degree: 17%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 18%
    + [Descarregamento de tarefas](offloading.md)
    + [Logon único](single-sign-on.md)
    + [Mapeamento de recursos](resource-mapping.md)
-   + [Habilitando HTTP por SSL](/help/sites-administering/ssl-by-default.md)
+   + [Habilitando HTTP por SSL](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ssl-by-default.html)
    + [Verificações de consistência e transversal](consistency-check.md)
    + [Diretrizes de desempenho](performance-guidelines.md)
    + [Otimização do desempenho](configuring-performance.md)
@@ -84,7 +84,7 @@ ht-degree: 18%
    + [Reestruturação comum dos repositórios no AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório Sites no AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório de ativos no AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
-   + [Reestruturação do repositório de Dynamic Media no AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [Reestruturação do repositório Dynamic Media no AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório Forms no AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório de comércio eletrônico no AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório para AEM Communities no 6.5](communities-repository-restructuring-in-aem-6-5.md)
