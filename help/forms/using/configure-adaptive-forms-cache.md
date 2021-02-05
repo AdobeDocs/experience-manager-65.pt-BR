@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '934'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,6 @@ Você também pode configurar o cache de formulários adaptáveis no dispatcher 
 ### Pré-requisitos {#pre-requisites}
 
 * Habilite a opção [unir ou pré-preencher dados no cliente](prepopulate-adaptive-form-fields.md#prefill-at-client). Ajuda a unir dados exclusivos para cada instância de um formulário pré-preenchido.
-* [Ative o agente de liberação para cada instância](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) de publicação. Ele ajuda a melhorar o desempenho do cache para formulários adaptáveis. O URL padrão dos agentes de liberação é `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Considerações para armazenar formulários adaptativos em cache em um dispatcher {#considerations}
 
@@ -63,7 +62,7 @@ Você também pode configurar o cache de formulários adaptáveis no dispatcher 
 
 Execute as etapas listadas abaixo para ativar e configurar o cache de formulários adaptáveis no dispatcher:
 
-1. Abra o seguinte URL para cada instância de publicação do seu ambiente e configure o agente de replicação:
+1. Abra o URL a seguir para cada instância de publicação do seu ambiente e [habilite o agente de liberação para instâncias de publicação do seu ambiente](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Adicione o seguinte ao arquivo](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) dispatcher.any:
@@ -143,17 +142,7 @@ Quando você seleciona e adiciona imagens ou vídeos por meio do navegador de at
 
 Depois de publicar as imagens e o vídeo, cancele a publicação e publique explicitamente os formulários adaptativos que fazem referência a esses ativos.
 
-### Alguns formulários adaptáveis contendo fragmentos de conteúdo ou fragmentos de experiência não são automaticamente invalidados do cache do dispatcher {#content-or-experience-fragment-not-auto-invalidated}
-
-#### Problema {#issue2}
-
-Quando você adiciona um fragmento de conteúdo ou um fragmento de experiência a um formulário adaptável e esses ativos são editados e publicados independentemente, os formulários adaptáveis contendo esses ativos não são invalidados automaticamente do cache do dispatcher.
-
-#### Solução {#Solution2}
-
-Depois de publicar fragmentos de conteúdo ou fragmentos de experiência atualizados, cancele a publicação e publique explicitamente os formulários adaptativos que usam esses ativos.
-
-### Somente a primeira instância de um formulário adaptável é armazenada em cache{#only-first-insatnce-of-adptive-forms-is-cached}
+### Somente a primeira instância de um formulário adaptável é armazenada em cache {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Problema {#issue3}
 
