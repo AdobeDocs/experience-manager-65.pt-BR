@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
+source-git-commit: fd9ee8e4eb35bd5d303d7bbdd9660a94c54925ff
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3859'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ Em um cenário típico de [!DNL Adobe Sign] e formulários adaptativos, um usuá
 * Assinar formulários como um usuário anônimo ou conectado
 * Processos de assinatura dinâmica (integração com AEM [!DNL Forms] fluxo de trabalho)
 * Autenticação por meio de uma base de conhecimento, telefone e perfis sociais
+
+Saiba mais sobre as [práticas recomendadas de usar o Adobe Sign com formulários adaptáveis](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) para criar experiências de assinatura melhores.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -358,5 +360,5 @@ Quando  [!DNL Adobe Sign] está configurado para um formulário adaptável, o fl
 ## Artigos relacionados {#related-articles}
 
 * [Integrar o Adobe Sign ao AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
-* [Uso do Adobe Sign em um formulário adaptável](../../forms/using/working-with-adobe-sign.md)
+* [Práticas recomendadas para usar o Adobe Sign com formulários adaptáveis](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 * [Uso do Adobe Sign com AEM Forms (Vídeo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
