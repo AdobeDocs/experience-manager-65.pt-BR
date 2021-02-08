@@ -1,12 +1,12 @@
 ---
-title: Introdução à [!DNL Adobe Experience Manager Assets].
+title: Introdução à [!DNL Adobe Experience Manager Assets]
 description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e  [!DNL Adobe Experience Manager Asset] oferta.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 41%
+source-wordcount: '868'
+ht-degree: 39%
 
 ---
 
@@ -38,7 +38,7 @@ A interface básica do usuário é a mesma de [!DNL Sites]. Consulte [Visão ger
 
 Ao determinar se uma imagem deve ser colocada no repositório DAM ou usar o componente de imagem, considere o ciclo de vida da imagem:
 
-* Se a imagem tiver o mesmo ciclo de vida que a página, use o Componente de imagem.
+* Se a imagem tiver o mesmo ciclo de vida que a página, use o componente Imagem.
 * Se a imagem tiver um ciclo de vida separado, por exemplo, se você usar a imagem duas vezes ou fora do WCM, use o [!DNL Assets].
 
 ## O que são ativos digitais? {#what-are-digital-assets}
@@ -67,11 +67,11 @@ Ao trabalhar com ativos digitais em [!DNL Experience Manager], é necessário co
 
 * **Representações**: Uma representação é a representação binária de um ativo. [!DNL Assets] sempre tem uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações adicionais que são criadas, por exemplo, por etapas de fluxo de trabalho personalizadas ou quando um ativo é carregado. As representações podem ter tamanhos diferentes, com uma resolução diferente, com uma marca d&#39;água adicionada ou alguma outra característica alterada.
 
-* **Versões**: O controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. Consulte [controle de versão em Assets](manage-assets.md#asset-versioning).
+* **Versões**: O controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. Consulte [controle de versão em [!DNL Assets]](manage-assets.md#asset-versioning).
 
 * **Sub-ativos**: Subativos são ativos que compõem um ativo, por exemplo, camadas em um  [!DNL Adobe Photoshop] arquivo ou páginas em um arquivo PDF. Em [!DNL Assets], você pode gerenciar subativos como faria com os ativos.
 
-### Como trabalhar com ativos {#how-to-work-with-assets}
+### Como trabalhar com ativos digitais {#how-to-work-with-assets}
 
 Uma ação é executada em um ativo ou em uma coleção. As ações podem criar ou modificar ativos, coleções e execuções. Muitas das ações básicas executadas em ativos - carregar, excluir, atualizar, salvar subativos - acionam workflows pré-configurados. Eles são ativados automaticamente em [!DNL Assets] e são descritos detalhadamente em [!DNL Assets] manipuladores de mídia.
 
@@ -82,8 +82,13 @@ As tarefas que você pode executar com esses workflows pré-configurados:
 * Gerar representações e miniaturas para o ativo; incluindo o redimensionamento automático e a colheita, quando necessário.
 * Transcodifique o ativo, se necessário. Por exemplo, um vídeo para uso na Web e em dispositivos móveis é transcodificado com 24 quadros por segundo, e o vídeo para download com 30 quadros por segundo. O áudio para uso em dispositivos móveis e na Web é transcodificado com 128 Kbps, o áudio para download com 192 Kbps.
 
-E claro, é possível aplicar fluxos de trabalho manualmente. Consulte [Manipuladores de mídia do Assets](/help/assets/media-handlers.md) para obter uma lista de fluxos de trabalho padrão.
+E claro, é possível aplicar fluxos de trabalho manualmente. Consulte [Manipuladores de mídia do Assets](media-handlers.md) para obter uma lista de fluxos de trabalho padrão.
 
-## [!DNL Experience Manager Assets] e  [!DNL MediaLibrary] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] e  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [Ativos e MediaLibrary](/help/assets/medialibrary.md) para obter informações sobre as diferenças.
+Consulte [Ativos e Biblioteca de mídia](medialibrary.md) para obter informações sobre as diferenças.
+
+>[!MORELIKETHIS]
+>
+>* [Experience Manager Assets como um DAM moderno](https://www.youtube.com/embed/PBwQqZgC-yo)
+
