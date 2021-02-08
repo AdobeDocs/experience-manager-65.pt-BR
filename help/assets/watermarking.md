@@ -3,9 +3,9 @@ title: Adicionar marca d'água aos seus ativos digitais
 description: Saiba como usar o recurso Marca d'água para adicionar uma marca d'água digital aos ativos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: ec97cc41989cacdcae64a955a32a34d12212ca85
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ Para poder aplicar uma marca d&#39;água em ativos, adicione a etapa de marca d&
 
 1. No painel lateral, arraste a etapa **[!UICONTROL Adicionar marca d&#39;água]** para o fluxo de trabalho [!UICONTROL Ativo de atualização do DAM].
 
-   ![Arraste a etapa  [!UICONTROL Adicionar ] marca d&#39;água e adicione-a ao  [!UICONTROL DAM Update ] Assetworkflow](assets/add_watermark_step_aem_assets.png)
-2
+   ![Arraste a etapa  [!UICONTROL Adicionar ] marca d&#39;água e adicione ao fluxo de trabalho do  [!UICONTROL DAM Update ] Assetworkflow](assets/add_watermark_step_aem_assets.png)
+
    *Figura: Arraste a etapa  [!UICONTROL Adicionar ] marca d&#39;água e adicione ao fluxo de trabalho do  [!UICONTROL DAM Update ] Assetworkflow.*
 
    >[!NOTE]
@@ -33,7 +33,7 @@ Para poder aplicar uma marca d&#39;água em ativos, adicione a etapa de marca d&
 1. Abra a etapa **[!UICONTROL Adicionar marca d&#39;água]** para exibir suas propriedades.
 1. Na guia **[!UICONTROL Argumentos]**, especifique valores válidos nos vários campos, incluindo texto, tipo de fonte, tamanho, cor, posição, orientação e assim por diante. Para confirmar as alterações, clique em **[!UICONTROL Concluído]**.
 
-   ![Forneça os argumentos na etapa adicionar marca d&#39;água em Ativos](assets/arguments_add_watermark_aem_assets.png)
+   ![Forneça os argumentos na etapa adicionar marca d&#39;água em  [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
    *Figura: Forneça os argumentos na etapa adicionar marca d&#39;água em  [!DNL Assets].*
 
@@ -41,3 +41,8 @@ Para poder aplicar uma marca d&#39;água em ativos, adicione a etapa de marca d&
 1. Na interface do usuário [!DNL Assets], carregue um ativo de amostra. A marca d&#39;água é exibida com o tamanho da fonte, a cor e assim por diante, na posição configurada nas etapas acima.
 
 Para marcar documentos PDF de forma programática ou com informações dinâmicas, considere usar a oferta [Experience Manager Documento Services](/help/forms/using/overview-aem-document-services.md).
+
+## Dicas e limitações {#tips-limitations}
+
+* Somente marcas d&#39;água baseadas em texto são suportadas. As imagens não são usadas como marcas d&#39;água, mesmo que você possa fazer upload de imagens ao criar o [!UICONTROL Adicionar processo de marca d&#39;água].
+* Somente arquivos PNG e JPEG têm suporte para marca d&#39;água. Outros formatos de ativos não têm marca d&#39;água.
