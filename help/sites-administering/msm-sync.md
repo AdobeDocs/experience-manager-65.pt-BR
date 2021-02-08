@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
+source-git-commit: 31f546400f4c3335953d05b1df9394445b5feb56
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,11 @@ Execute as tarefas a seguir para controlar como e quando as cópias dinâmicas s
 
 Esta seção fornece informações sobre as configurações de implementação instaladas e as ações de sincronização que elas usam, além de como criar configurações personalizadas, se necessário.
 
-### Acionadores de implementação  {#rollout-triggers}
+>[!CAUTION]
+>
+>A atualização ou alteração de uma configuração de implementação predefinida (instalada) é **não** recomendada. Se houver um requisito para uma ação ao vivo personalizada, ela deverá ser adicionada em uma configuração de implantação personalizada.
+
+### Acionadores de implementação {#rollout-triggers}
 
 Cada configuração de implementação usa um acionador de implementação que faz com que a implementação ocorra. As configurações de implementação podem usar um dos seguintes acionadores:
 
