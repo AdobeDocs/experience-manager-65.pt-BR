@@ -4,9 +4,9 @@ description: Novidades do Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2780'
 ht-degree: 1%
 
 ---
@@ -53,6 +53,10 @@ Agora é possível executar as movimentações de página e as implantações de
 ### Disponibilidade da opção Redefinir para cada componente no modo Layout {#reset-option-layout-mode}
 
 Agora é possível usar a opção de redefinição para cada componente no modo Layout de um formulário adaptável. Ao definir um layout de várias colunas para um painel, você pode usar esse recurso para redefinir componentes individuais dentro do painel. Consulte [Use o modo de layout para redimensionar componentes](../../help/forms/using/resize-using-layout-mode.md#resize-components).
+
+### Suporte para o Microsoft SQL Server 2019
+
+[!DNL Experience Manager Forms] agora é compatível com o Microsoft SQL Server 2019.
 
 ## Principais recursos dos pacotes de serviços anteriores [!DNL Experience Manager] 6.5 {#key-features-previous-service-packs}
 
