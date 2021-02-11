@@ -3,7 +3,7 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
+source-git-commit: d05dc3af0a885e51758194783e773695086d7956
 workflow-type: tm+mt
 source-wordcount: '2263'
 ht-degree: 40%
@@ -32,7 +32,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
    |  | [!DNL Sites] como um Cloud Service | [!DNL Experience Manager] 6.5  [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] local |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]como um Cloud Service** | Compatível | Compatível | Compatível |
+   | **[!DNL Experience Manager Assets]como uma[!DNL Cloud Service]** | Compatível | Compatível | Compatível |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] local** | Incompatível | Incompatível | Incompatível |
 
@@ -51,7 +51,7 @@ As várias funções envolvidas para configurar e usar o recurso e seus grupos d
 |---|---|---|---|---|
 | [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | `admin` | Configure [!DNL Experience Manager] e configure a integração com a implantação remota [!DNL Assets]. |
 | Usuário do DAM | Local | `Authors` | `ksaner` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Local | `Authors` (com acesso de leitura no DAM remoto e acesso de autor no local  [!DNL Sites]) | `ksaner` | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar sua velocidade de conteúdo. Os autores pesquisam e navegam por ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
+| [!DNL Sites] author | Local | <ul><li>`Authors` (com acesso de leitura no DAM remoto e acesso de autor no local  [!DNL Sites]) </li> <li>`dam-users` no local  [!DNL Sites]</li></ul> | `ksaner` | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar sua velocidade de conteúdo. Os autores pesquisam e navegam por ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
 | [!DNL Assets] administrador | Remoto | [!DNL Experience Manager] `administrators` | `admin` em remoto  [!DNL Experience Manager] | Configure o CORS (Cross-Origin Resource Sharing). |
 | Usuário do DAM | Remoto | `Authors` | `ksaner` em remoto  [!DNL Experience Manager] | Função de autor na implantação remota [!DNL Experience Manager]. Pesquise e procure ativos em Ativos conectados usando o [!UICONTROL Localizador de conteúdo]. |
 | Distribuidor do DAM (usuário técnico) | Remoto | [!DNL Sites] `Authors` | `ksaner` em remoto  [!DNL Experience Manager] | Este usuário presente na implantação remota é usado pelo [!DNL Experience Manager] servidor local (não pela função de autor [!DNL Sites]) para buscar os ativos remotos, em nome do autor [!DNL Sites]. Essa função não é igual às duas funções `ksaner` acima e pertence a um grupo de usuários diferente. |
