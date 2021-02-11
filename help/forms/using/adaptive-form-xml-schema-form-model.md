@@ -1,34 +1,30 @@
 ---
-title: Criação de formulários adaptáveis usando o Schema XML
-seo-title: Criação de formulários adaptáveis usando o Schema XML
-description: Formulários adaptáveis podem usar o schema XML como modelo de formulário, permitindo que você aproveite os modelos XSD existentes para criar formulários adaptáveis. Você pode arrastar e soltar elementos do schema do XSD para o formulário adaptável.
-seo-description: Formulários adaptáveis podem usar o schema XML como modelo de formulário, permitindo que você aproveite os modelos XSD existentes para criar formulários adaptáveis. Você pode arrastar e soltar elementos do schema do XSD para o formulário adaptável.
-uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-docset: aem65
+title: Como criar um Forms adaptável usando o Schema XML?
+description: Saiba como usar o schema XML como modelo de formulário em um formulário adaptável. Você pode aplicar modelos XSD existentes para criar formulários adaptáveis e arrastar e soltar elementos do schema do XSD para o formulário adaptável. Procure mais fundo com uma amostra de um schema XML, adicione propriedades especiais a campos que usam o schema XML e limite valores aceitáveis para um componente de formulário adaptável.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: ec8a4c3941b5434f10ad0727be02fcf296cd4da7
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1073'
 ht-degree: 5%
 
 ---
 
 
-# Criação de formulários adaptáveis usando o Schema XML{#creating-adaptive-forms-using-xml-schema}
+# Criação de formulários adaptáveis usando o Schema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Pré-requisitos {#prerequisites}
 
 A criação de um formulário adaptável usando um schema XML como seu modelo de formulário requer uma compreensão básica dos schemas XML. Além disso, é recomendável ler o seguinte conteúdo antes deste artigo.
 
-* [Criação de um formulário adaptável](../../forms/using/creating-adaptive-form.md)
+* [Criação de um formulário adaptável](creating-adaptive-form.md)
 * [SCHEMA XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Uso de um schema XML como modelo de formulário {#using-an-xml-schema-as-form-model}
 
-A AEM Forms suporta a criação de um formulário adaptável usando um schema XML existente como modelo de formulário. Este schema XML representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização.
+[!DNL Experience Manager Forms] suporta a criação de um formulário adaptável usando um schema XML existente como modelo de formulário. Este schema XML representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end em sua organização.
 
 Os principais recursos do uso de um schema XML são:
 
@@ -293,7 +289,7 @@ Por exemplo, se você adicionar o elemento de schema `userFirstName`, a legenda 
 
 **Como faço para saber qual elemento na árvore está associado a qual elemento XML?**
 
-Ao clicar com o duplo em um elemento no Localizador de conteúdo, um pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no schema.
+Ao clicar com o duplo em um elemento no Localizador de conteúdo, uma janela pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no schema.
 
 ![Um campo bindref de um elemento de schema XML](assets/dblclick.png)
 
@@ -305,7 +301,7 @@ O campo bindRef</code> mostra a associação entre um elemento de árvore e um e
 
 **Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada a partir de qualquer tipo complexo) para subformulários repetitivos (os valores minOccours ou maxOccurs são maiores que 1)?**
 
-Em um subformulário repetível, é necessário usar o subformulário completo. Se você quiser apenas campos seletivos, use a estrutura inteira e exclua os não desejados.
+Em um subformulário repetível, é necessário usar o subformulário Complete. Se você quiser apenas campos seletivos, use a estrutura inteira e exclua os não desejados.
 
 **Tenho uma estrutura longa e complexa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
 
