@@ -2,9 +2,9 @@
 title: Criando e Sincronizando Live Copies
 description: Saiba como criar e sincronizar Live Copies.
 translation-type: tm+mt
-source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
+source-git-commit: 1725f19d0676680ae89ad7ea39fa3ae1deaeb8a3
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4170'
 ht-degree: 1%
 
 ---
@@ -356,6 +356,10 @@ Você pode suspender a herança da live copy para uma página de live copy para 
 >
 >Você também pode [desanexar uma live copy](#detaching-a-live-copy) de seu blueprint para remover todas as conexões. A ação Detach é permanente e não reversível.
 
+>[!NOTE]
+>
+>Se o componente estiver marcado como um container, as ações de cancelamento e suspensão não se aplicam aos componentes filhos. Consulte também [Práticas recomendadas MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obter mais informações.
+
 #### Suspender herança das propriedades da página {#suspending-inheritance-from-page-properties}
 
 Para suspender a herança em uma página:
@@ -459,6 +463,10 @@ Para especificar ou alterar a profundidade:
 ### Cancelando herança para um componente {#cancelling-inheritance-for-a-component}
 
 Cancele a herança de cópia ativa de um componente para que ele não seja mais sincronizado com o componente de origem. Você pode ativar a herança posteriormente, se necessário.
+
+>[!NOTE]
+>
+>Se o componente estiver marcado como um container, as ações de cancelamento e suspensão não se aplicam aos componentes filhos. Consulte também [Práticas recomendadas MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obter mais informações.
 
 >[!NOTE]
 >
