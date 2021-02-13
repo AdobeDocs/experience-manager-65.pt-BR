@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos como carrega
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
 source-wordcount: '9590'
 ht-degree: 4%
@@ -74,7 +74,7 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 
 O tamanho acima do qual um ativo é considerado um grande ativo é configurável. Por exemplo, você pode configurar o sistema para considerar ativos acima de 1000 MB (em vez de 500 MB) como ativos grandes. Nesse caso, **[!UICONTROL Pausar]** aparece na barra de progresso quando ativos de tamanho superior a 1000 MB são carregados.
 
-O botão Pausar não mostra se um arquivo maior que 1000 MB é carregado com um arquivo menor que 1000 MB. No entanto, se você cancelar o carregamento de arquivo com menos de 1000 MB, o botão **[!UICONTROL Pausar]** será exibido.
+A opção [!UICONTROL Pausar] não é exibida se um arquivo maior que 1000 MB for carregado com um arquivo menor que 1000 MB. No entanto, se você cancelar o carregamento de arquivo com menos de 1000 MB, a opção **[!UICONTROL Pausar]** será exibida.
 
 Para modificar o limite de tamanho, configure a propriedade `chunkUploadMinFileSize` do nó `fileupload`no repositório CRX.
 
@@ -198,7 +198,7 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 | Publicar após carregar |  | Publica automaticamente os ativos que você carrega. |
 | Substituir em qualquer pasta, o mesmo nome do ativo base, independentemente da extensão |  | Selecione essa opção se desejar que os arquivos carregados substituam os arquivos existentes pelos mesmos nomes. O nome desta opção pode ser diferente, dependendo das configurações em **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]** > **[!UICONTROL Carregar para o aplicativo]** > **[!UICONTROL Substituir imagens]**. |
 | Descompacte arquivos Zip ou Tar no upload |  |  |
-| Opções de trabalho |  | Clique em **[!UICONTROL Opções de trabalho]** para abrir a caixa de diálogo [!UICONTROL Carregar opções de trabalho] e escolha as opções que afetam todo o trabalho de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher as opções padrão para fazer upload de arquivos a partir da página Configurações gerais do aplicativo. Para abrir esta página, escolha **[!UICONTROL Configuração]** > **[!UICONTROL Configuração de Aplicativo]**. Clique no botão **[!UICONTROL Opções de carregamento padrão]** para abrir a caixa de diálogo [!UICONTROL Carregar opções de trabalho]. |
+| Opções de trabalho |  | Clique em **[!UICONTROL Opções de trabalho]** para abrir a caixa de diálogo [!UICONTROL Carregar opções de trabalho] e escolha as opções que afetam todo o trabalho de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher as opções padrão para fazer upload de arquivos a partir da página Configurações gerais do aplicativo. Para abrir esta página, escolha **[!UICONTROL Configuração]** > **[!UICONTROL Configuração de Aplicativo]**. Selecione a opção **[!UICONTROL Opções de carregamento padrão]** para abrir a caixa de diálogo [!UICONTROL Carregar opções de tarefa]. |
 |  | Quando | Selecione Uma vez ou Recorrente. Para definir um trabalho recorrente, escolha uma opção Repetir (Diário, Semanal, Mensal ou Personalizado) para especificar quando você deseja que o trabalho de upload do FTP seja repetido. Em seguida, especifique as opções de agendamento conforme necessário. |
 |  | Incluir subpastas | Carregue todas as subpastas dentro da pasta que você deseja carregar. Os nomes da pasta e suas subpastas carregadas são inseridos automaticamente em [!DNL Experience Manager Assets]. |
 |  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. A quantidade de imagens cortadas depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você digitar 75 nas caixas de texto Superior, Direita, Inferior e Esquerda, meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direita, Inferior e Esquerda para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar com base em** <ul><li>**Cor**  - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência**  - Escolha a opção Transparência.<br> **Tolerância**  - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para aparar com base na cor, especifique 0 para recortar os pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferenças de cor.<br>Para aparar com base na transparência, especifique 0 para cortar pixels somente se eles forem transparentes. Números mais próximos a 1 permitem mais transparência.</li></ul><br>Observe que essas opções de corte não são destrutivas. |
@@ -569,7 +569,7 @@ Para excluir um ativo ou uma pasta que contenha o ativo:
    * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são referenciados**. Você pode selecionar **[!UICONTROL Forçar exclusão]** ou **[!UICONTROL Cancelar]**.
    >[!NOTE]
    >
-   >* Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Além disso, desative o botão forçar exclusão usando uma sobreposição para impedir que os usuários excluam ativos referenciados e deixem links quebrados.
+   >* Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Além disso, desative a opção forçar exclusão usando uma sobreposição para impedir que os usuários excluam ativos referenciados e deixem links quebrados.
    >* É possível excluir uma *pasta* que contenha arquivos de ativos com check-out. Antes de excluir uma pasta, verifique se nenhum ativo digital foi retirado pelos usuários.
 
 
