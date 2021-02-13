@@ -3,9 +3,9 @@ title: Criar e configurar páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2125'
 ht-degree: 1%
 
 ---
@@ -268,7 +268,7 @@ O Formulário de metadados é um formulário que inclui um start e uma ação fi
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Crie uma ação Finalizar clicando em **Editar** na área Final do formulário. Por exemplo, você pode criar um botão **Enviar** para permitir que os usuários enviem suas alterações de metadados. Como opção, você pode adicionar um botão **Redefinir** que redefine os metadados para seu estado original.
+1. Crie uma ação Finalizar clicando em **Editar** na área Final do formulário. Por exemplo, você pode criar uma opção **[!UICONTROL Enviar]** para permitir que os usuários enviem suas alterações de metadados. Como opção, você pode adicionar uma opção **Redefinir** que redefine os metadados para seu estado original.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -381,7 +381,7 @@ As seguintes ações estão disponíveis:
 | [!UICONTROL Referências] | Clique para mostrar em quais páginas   o ativo está sendo usado. |
 | [!UICONTROL Versões] | Permite criar e restaurar   versões de um ativo. |
 
-1. Arraste a ação apropriada para a área **Ações** na página. Isso cria um botão que é usado para executar essa ação.
+1. Arraste a ação apropriada para a área **Ações** na página. Ela cria uma opção que é usada para executar a ação que é arrastada na página.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
