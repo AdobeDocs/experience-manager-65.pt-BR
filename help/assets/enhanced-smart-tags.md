@@ -3,10 +3,10 @@ title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 1%
+source-wordcount: '1610'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Depois que uma tag é treinada e pronta, o serviço pode aplicar essas tags em a
 
 Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura do Adobe Sensei AI para treinar seu algoritmo de reconhecimento de imagem na estrutura de tags e na taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em [!DNL Adobe I/O]. Para usá-la em [!DNL Adobe Experience Manager], o administrador do sistema deve integrar sua implantação [!DNL Experience Manager] com [!DNL Adobe I/O].
+O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em [!DNL Adobe Developer Console]. Para usá-la em [!DNL Adobe Experience Manager], o administrador do sistema deve integrar sua implantação [!DNL Experience Manager] com [!DNL Adobe Developer Console].
 
 Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligente:
 
@@ -36,13 +36,40 @@ Em resumo, veja as principais etapas para usar o Serviço de conteúdo inteligen
 
 ![Fluxograma](assets/flowchart.gif)
 
-## Pré-requisitos {#prerequisites}
+## Pré-requisitos e formatos suportados {#prerequisites}
 
-Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração em [!DNL Adobe I/O]:
+Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para criar uma integração em [!DNL Adobe Developer Console]:
 
 * Existência de uma Adobe ID com privilégios de administrador para a organização.
 * O serviço Smart Content Service está habilitado para sua organização.
 * O Pacote básico do Smart Content Services só pode ser adicionado a uma implantação na qual um [!DNL Adobe Experience Manager Sites] Pacote básico e [!DNL Assets] complemento foram licenciados.
+
+As Tags inteligentes são aplicadas somente a ativos com os seguintes tipos MIME:
+
+* image/jpeg
+* image/tiff
+* image/png
+* image/bmp
+* image/gif
+* image/pjpeg
+* image/x-portable-anymap
+* imagem/x-portable-bitmap
+* image/x-portable-graymap
+* image/x-portable-pixmap
+* image/x-rgb
+* image/x-xbitmap
+* image/x-xpixmap
+* image/x-icon
+* image/photoshop
+* image/x-photoshop
+* image/psd
+* image/vnd.adobe.photoshop
+
+A marcação inteligente de representações de ativos é suportada apenas para os seguintes tipos MIME:
+
+* image/jpeg
+* image/pjpeg
+* image/png
 
 ## Integração {#onboarding}
 
@@ -162,3 +189,4 @@ Também é possível atribuir uma classificação mais alta a uma tag para aumen
 
 * O uso do Smart Content Services é limitado a até 2 milhões de imagens marcadas por ano. Todas as imagens de duplicado que são processadas e marcadas são contadas como imagens marcadas.
 * Se você executar o fluxo de trabalho de marcação a partir da linha do tempo, poderá aplicar tags em no máximo 15 ativos de cada vez.
+* As Tags inteligentes funcionam somente para formatos de imagem PNG e JPG. Portanto, ativos suportados que têm representações criadas nesses dois formatos são marcados com Tags inteligentes.
