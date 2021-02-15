@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: 7fed51b68c626b54565b9120f69229872946016f
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 87%
+source-wordcount: '1883'
+ht-degree: 82%
 
 ---
 
@@ -53,6 +53,14 @@ As propriedades são distribuídas por várias guias.
 
    Indica se a página está visível ou oculta na navegação de página do site resultante.
 
+* **Marcas**
+
+   Aplique uma identidade de marca consistente em todas as páginas, anexando um espaçador de marca a cada título de página. Esta funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+
+   * **Substituir**  - Marque para definir o espaçador da marca nesta página.
+      * O valor será herdado por qualquer página secundária, a menos que os valores **Override** também estejam definidos.
+   * **Valor**  de substituição - O texto do espaçador da marca a ser anexado ao título da página.
+      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Ciclismo da Toscana | Sempre pronto para a WKND&quot;
 * **Título da página**
 
    Um título para ser usado na página. Normalmente usado pelos componentes do título. Caso esteja vazio, o **Título** será usado.
