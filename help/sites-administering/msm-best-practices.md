@@ -10,9 +10,9 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: cacf15a4e9c407d86aef47d7a6dda19e8eda7fb7
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1639'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 1%
 O MSM é uma estrutura configurável para automatizar a implantação de conteúdo. As implementações geralmente envolvem partes importantes de um site e abrangem organizações e geografias. Portanto, é altamente recomendável planejar implementações MSM tão cuidadosamente quanto planejar seu site:
 
 * Cuidadosamente **planeje a estrutura e os fluxos de conteúdo** antes de iniciar a implementação.
+* **Reduza ao mínimo a quantidade de cópias online.** O processamento de cópias online é uma tarefa que consome muitos recursos. Quanto mais cópias online existem no seu sistema, mais o desempenho pode ser afetado: do processamento de índices internos de live copy, de operações de live copy, como rollouts, a operações de UI, como mostrar relacionamentos de live copy no painel de referências do Administrador de sites. A prática recomendada é criar cópias online de sites ou ramificações de um site, onde as relações de cópia online são herdadas para páginas no site ou ramificação. Evite criar cópias online individuais para páginas em um site ou ramificação quando toda a estrutura puder ser transformada em uma live copy.
 * **Personalize o máximo necessário, mas o mínimo possível.** Embora o MSM suporte um alto grau de personalização (por exemplo, configurações de implementação), a prática recomendada para o desempenho, a confiabilidade e a capacidade de atualização do seu site é minimizar a personalização.
 * Estabeleça um modelo de **governança** antecipadamente e treine os usuários de acordo com isso, para garantir o sucesso. Uma prática recomendada de um ponto de visualização de controle é **minimizar a autoridade que os produtores de conteúdo local têm** para alocar/conectar conteúdo a outros usuários locais e suas respectivas cópias online. Isso ocorre porque heranças encadeadas e não governadas podem aumentar significativamente a complexidade de uma estrutura MSM e comprometer seu desempenho e confiabilidade.
 
