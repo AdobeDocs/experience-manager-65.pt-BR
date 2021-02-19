@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Start de segurança do aplicativo durante a fase de desenvolvimento. A Adobe rec
 
 ## Usar Sessão de Solicitação {#use-request-session}
 
-Seguindo o princípio de privilégios mínimos, o Adobe recomenda que cada acesso ao repositório seja feito usando a sessão vinculada à solicitação do usuário e o controle de acesso adequado.
+Seguindo o princípio de menos privilégios, o Adobe recomenda que cada acesso ao repositório seja feito usando a sessão vinculada à solicitação do usuário e ao controle de acesso adequado.
 
 ## Protect contra script entre sites (XSS) {#protect-against-cross-site-scripting-xss}
 
