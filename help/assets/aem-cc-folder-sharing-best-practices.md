@@ -3,9 +3,9 @@ title: Compartilhamento de pasta para  [!DNL Adobe Creative Cloud] práticas rec
 description: Configure [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] para trocar pastas com usuários do Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->O recurso [!DNL Experience Manager] para [!DNL Creative Cloud] Compartilhamento de pasta está obsoleto. O Adobe recomenda usar recursos mais recentes, como [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou [aplicativo de desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Saiba mais sobre as práticas recomendadas de integração [Experience Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>O recurso [!DNL Experience Manager] para [!DNL Creative Cloud] Compartilhamento de pasta está obsoleto. O Adobe recomenda usar recursos mais recentes, como [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) ou [aplicativo de desktop Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Saiba mais sobre as práticas recomendadas de integração [Experience Manager e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] pode ser configurado para permitir que os usuários compartilhem pastas  [!DNL Assets] com os usuários dos  [!DNL Adobe Creative Cloud] aplicativos, de modo que eles estejam disponíveis como pastas compartilhadas no serviço de  [!DNL Adobe Creative Cloud] ativos. O recurso pode ser usado para trocar arquivos entre equipes de criação e usuários [!DNL Assets], especialmente quando os usuários de criação não têm acesso à implantação [!DNL Assets] (eles não estão na rede corporativa).
 
