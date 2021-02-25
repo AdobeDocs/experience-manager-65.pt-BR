@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
 
 
 # Validando Documentos DDX {#validating-ddx-documents}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Você pode validar programaticamente um documento DDX usado pelo serviço Assembler. Ou seja, usando a API de serviço do Assembler, você pode determinar se um documento DX é válido ou não. Por exemplo, se você atualizou de uma versão anterior do AEM Forms e deseja garantir que seu documento DDX seja válido, é possível validá-lo usando a API de serviço do Assembler.
 
@@ -70,7 +72,7 @@ Ao validar um documento DDX, você deve definir opções específicas de tempo d
 
 **Executar a validação**
 
-Depois de criar o cliente de serviço Assembler, consultar o documento DDX e definir as opções de tempo de execução, você pode chamar a operação `invokeDDX` para validar o documento DDX. Ao validar o documento DDX, você pode passar `null` como parâmetro de mapa (esse parâmetro geralmente armazena documentos PDF que o Assembler exige para executar as operações especificadas no documento DX).
+Depois de criar o cliente do serviço Assembler, consultar o documento DDX e definir as opções de tempo de execução, você pode chamar a operação `invokeDDX` para validar o documento DDX. Ao validar o documento DDX, você pode passar `null` como parâmetro de mapa (esse parâmetro geralmente armazena documentos PDF que o Assembler exige para executar as operações especificadas no documento DX).
 
 Se a validação falhar, uma exceção será lançada e o arquivo de log conterá detalhes que explicam por que o documento DX é inválido pode ser obtido da instância `OperationException`. Após a análise básica de XML e a verificação de schema, a validação em relação à especificação DDX é realizada. Todos os erros localizados no documento DDX são especificados no log.
 
