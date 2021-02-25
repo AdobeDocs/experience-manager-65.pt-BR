@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1839'
 ht-degree: 0%
 
 ---
 
 
 # Criação de aplicativos de Flash Builder que executam autenticação SSO usando tokens HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Você pode criar um aplicativo cliente usando um Flash Builder que executa a autenticação de logon único (SSO) usando tokens HTTP. Considere, por exemplo, que você cria um aplicativo baseado na Web usando o Flash Builder. Em seguida, suponha que o aplicativo contenha visualizações diferentes, nas quais cada visualização chama uma operação diferente do AEM Forms. Em vez de autenticar um usuário para cada operação do Forms, você pode criar uma página de logon que permite que um usuário se autentique uma vez. Depois de autenticado, um usuário pode chamar várias operações sem precisar autenticar novamente. Por exemplo, se um usuário tiver feito logon no Workspace (ou em outro aplicativo do Forms), ele não precisará autenticar novamente.
 
@@ -34,7 +36,7 @@ O seguinte processo de vida curta da AEM Forms, chamado `MyApplication/EncryptDo
 
 >[!NOTE]
 >
->Esse processo não se baseia em um processo AEM Forms existente. Para seguir com os exemplos de código que discutem como invocar esse processo, crie um processo chamado `MyApplication/EncryptDocument` usando o workbench. (Consulte [Usando o Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Esse processo não se baseia em um processo AEM Forms existente. Para seguir juntamente com os exemplos de código que discutem como invocar esse processo, crie um processo chamado `MyApplication/EncryptDocument` usando o workbench. (Consulte [Usando o Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 O aplicativo cliente criado usando o Flash Builder interage com o servlet de segurança do Gerenciador de usuários configurado em `/um/login` e `/um/logout`. Ou seja, o aplicativo cliente envia uma solicitação para o URL `/um/login` durante a inicialização para determinar o status do usuário. Em seguida, o Gerenciador de usuários responde com o status do usuário. O aplicativo cliente e o servlet de segurança do Gerenciador de usuários se comunicam usando HTTP.
 
