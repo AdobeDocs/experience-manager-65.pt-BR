@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '19030'
+source-wordcount: '19044'
 ht-degree: 0%
 
 ---
 
 
 # Criando fluxos de saída de Documento {#creating-document-output-streams}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 **Sobre o Serviço de Saída**
 
@@ -525,7 +527,7 @@ Crie um documento PDF/A usando a API de saída (Java):
 
    >[!NOTE]
    >
-   >Você também pode criar um documento PDF/A chamando o método `OutputClient` `generatePDFOutput`2 do objeto. (Consulte [Passando Documentos localizados no Content Services (obsoleto) para o Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >Você também pode criar um documento PDF /A invocando o método `OutputClient` `generatePDFOutput`2 do objeto. (Consulte [Passando Documentos localizados no Content Services (obsoleto) para o Serviço de Saída](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Recupere os resultados da operação.
 
@@ -611,7 +613,7 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Você também pode criar um documento PDF /A invocando o método `OutputClient` `generatePDFOutput`2 do objeto. (Consulte [Passando Documentos localizados no Content Services (obsoleto) para o Output Service](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >Você também pode criar um documento PDF /A invocando o método `OutputClient` `generatePDFOutput`2 do objeto. (Consulte [Passando Documentos localizados no Content Services (obsoleto) para o Serviço de Saída](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Recupere os resultados da operação.
 
