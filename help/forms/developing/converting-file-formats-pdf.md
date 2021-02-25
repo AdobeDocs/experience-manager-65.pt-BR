@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '7898'
+source-wordcount: '7912'
 ht-degree: 0%
 
 ---
 
 
 # Conversão entre formatos de arquivo e PDF {#converting-between-file-formatsand-pdf}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 **Sobre o serviço Gerar PDF**
 
@@ -943,7 +945,7 @@ A AEM Forms inclui arquivos XML de amostra que fazem com que o serviço Gerar PD
 
 Este exemplo contém as caixas de diálogo adicionais para o aplicativo Bloco de notas. Essas caixas de diálogo podem ser adicionadas às especificadas pelo serviço Gerar PDF.
 
-**Caixas de diálogo do Bloco de notas(appmon.notpad.add.en_US.xml)**
+**Caixas de diálogo do Bloco de notas(appmon.notepad.add.en_US.xml)**
 
 ```xml
  <dialogs app="Notepad" locale="en_US" version="7.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dialogs.xsd">
