@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1941'
 ht-degree: 0%
 
 ---
 
 
 # Montagem de Documentos com Numeração de Bates {#assembling-documents-using-bates-numbering}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 É possível montar documentos PDF que contêm identificadores de página únicos usando a numeração de Bates. *A* numeração de Bates é um método de aplicação de identificações exclusivas a um lote de documentos relacionados. A cada página do documento (ou conjunto de documentos) é atribuído um número de Bates que identifica exclusivamente a página. Por exemplo, documentos de fabricação que contêm informações da lista de materiais e que estão associados à produção de uma montagem podem conter um identificador. Um número de Bates contém um valor numérico incrementado sequencialmente e um prefixo e sufixo opcionais. O prefixo + sufixo numérico + é chamado de *padrão de barras*.
 
