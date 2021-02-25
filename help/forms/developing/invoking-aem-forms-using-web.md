@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9990'
+source-wordcount: '10004'
 ht-degree: 0%
 
 ---
 
 
 # Invocando o AEM Forms usando os Serviços Web {#invoking-aem-forms-using-web-services}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 A maioria dos serviços da AEM Forms no container de serviço está configurada para expor um serviço da Web, com suporte total para a geração WSDL (Web Service Definition Language). Ou seja, você pode criar objetos proxy que consomem a pilha SOAP nativa de um serviço AEM Forms. Como resultado, os serviços da AEM Forms podem trocar e processar as seguintes mensagens SOAP:
 
@@ -1051,7 +1053,7 @@ Esse processo não se baseia em um processo AEM Forms existente. Para seguir com
 
 >[!NOTE]
 >
->Invocar operações de serviço AEM Forms usando DIME está obsoleto. Recomenda-se usar MTOM. (Consulte [Invocar o AEM Forms usando MTOM](#invoking-aem-forms-using-mtom).)
+>Invocar operações de serviço AEM Forms usando DIME está obsoleto. Recomenda-se a utilização de MTOM. (Consulte [Invocar o AEM Forms usando MTOM](#invoking-aem-forms-using-mtom).)
 
 ### Criação de um projeto .NET que usa DIME {#creating-a-net-project-that-uses-dime}
 
