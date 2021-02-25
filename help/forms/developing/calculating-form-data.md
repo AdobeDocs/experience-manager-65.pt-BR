@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1916'
 ht-degree: 0%
 
 ---
 
 
 # Calculando Dados de Formulário {#calculating-form-data}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 O serviço Forms pode calcular os valores que um usuário digita em um formulário e exibir os resultados. Para calcular os dados do formulário, é necessário executar duas tarefas. Primeiro, crie um script de design de formulário que calcule os dados do formulário. Um design de formulário suporta três tipos de scripts. Um tipo de script é executado no cliente, outro é executado no servidor e o terceiro tipo é executado no servidor e no cliente. O tipo de script discutido neste tópico é executado no servidor. Cálculos do lado do servidor são suportados para transformações HTML, PDF e Guia de formulário (obsoleto).
 
