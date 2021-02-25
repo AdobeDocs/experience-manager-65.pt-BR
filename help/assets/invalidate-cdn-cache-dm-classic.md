@@ -6,17 +6,21 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 24%
+source-wordcount: '710'
+ht-degree: 17%
 
 ---
 
 
 # Invalidar o cache CDN por meio do Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-Os ativos Dynamic Media são armazenados em cache pelo CDN para delivery rápido. No entanto, ao fazer atualizações em um ativo, você pode desejar que essas alterações entrem em vigor imediatamente. A invalidação do conteúdo em cache CDN (Content Delivery Network) permite que você atualize rapidamente os ativos entregues pela Dynamic Media, em vez de aguardar a expiração do cache.
+Os ativos Dynamic Media são armazenados em cache pela CDN (Content Delivery Network, Rede de conteúdo) para delivery rápido. No entanto, quando você faz atualizações em um ativo, deseja que essas alterações entrem em vigor imediatamente. A invalidação do conteúdo em cache do CDN permite atualizar rapidamente ativos entregues pela Dynamic Media, em vez de aguardar a expiração do cache.
+
+>[!NOTE]
+>
+>Os clientes devem usar o CDN fornecido com a Adobe Experience Manager Dynamic Media para se beneficiarem da invalidação do cache do CDN.
 
 >[!IMPORTANT]
 >
@@ -39,20 +43,20 @@ Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   Se o Modelo contiver apenas `<ID>`, a Dynamic Media preencherá `https://<server>/is/image`, onde `<server>` é o Nome do Servidor de Publicação definido em Configurações Gerais, e &lt;ID> serão os ativos selecionados para serem invalidados.
+   Se o Modelo contiver apenas `<ID>`, a Dynamic Media preencherá `https://<server>/is/image`, onde `<server>` é o Nome do Servidor de Publicação definido em Configurações Gerais, e &lt;ID> serão os ativos selecionados para invalidação.
 
 1. No canto inferior direito da página, clique em **[!UICONTROL Fechar.]**
 1. Na interface do usuário do Dynamic Media Classic, selecione um ou mais ativos e clique em **[!UICONTROL Arquivo > Invalidar CDN.]** Você verá uma lista de um ou mais URLs gerados a partir do modelo criado e dos ativos selecionados. Ele usa o URL do servidor listado em &quot;Published Server Name&quot; nas Configurações gerais do aplicativo.
 
-   Por exemplo, com o Modelo de Invalidação CDN definido na etapa anterior, suponha que você tenha selecionado uma única imagem de ativo de imagem chamada `Backpack_B`. Quando você clica em **[!UICONTROL Arquivo > Invalidar CDN]**, o resultado é o seguinte URL gerado na interface do usuário de Invalidação CDN:
+   Por exemplo, com o Modelo de Invalidação CDN definido na etapa anterior, suponha que você tenha selecionado uma única imagem de ativo de imagem chamada `Backpack_B`. Quando você toca em **[!UICONTROL Arquivo > Invalidar CDN]**, isso resulta no seguinte URL gerado na interface do usuário de Invalidação CDN:
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
-1. Na caixa lista do URL, clique em **[!UICONTROL Continuar]** para limpar o cache de cada URL específico. Observe que é possível editar um URL ou adicioná-lo digitando-o ou colando-o na caixa lista do URL; não é necessário definir CDN Invalidate Template antecipadamente.
+1. Na caixa lista do URL, toque em **[!UICONTROL Continuar]** para limpar o cache de cada URL específico. É possível editar um URL ou adicioná-lo digitando-o ou colando-o na caixa lista do URL; não é necessário definir CDN Invalidate Template antecipadamente.
 
    Após clicar em **[!UICONTROL Continuar]**, um indicador é exibido que fornece uma estimativa de quanto tempo levará para limpar o cache.
 
-   Se você selecionou vários ativos e clicou em **[!UICONTROL Arquivo > Invalidar CDN]**, cada ativo é referenciado no **[!UICONTROL URL de modelo salvo.]** Portanto, você pode definir um **[!UICONTROL Modelo de invalidação CDN]** referenciando cada predefinição de imagem do URL referenciada em seu site (como detalhes do produto, resultados de pesquisa e assim por diante). Em seguida, ao selecionar uma ou mais imagens para invalidação do cache, os URLs preenchem automaticamente a interface.
+   Se você selecionou vários ativos, depois tocou em **[!UICONTROL Arquivo > Invalidar CDN]**, cada ativo é referenciado no URL do modelo **[!UICONTROL salvo.]** Portanto, você pode definir um  **[!UICONTROL CDN Invalidate]** Templaterereferenciando cada predefinição de imagem de URL referenciada em seu site (como detalhes do produto e resultados de pesquisa). Em seguida, ao selecionar uma ou mais imagens para invalidação do cache, os URLs preenchem automaticamente a interface.
 
    >[!NOTE]
    >
