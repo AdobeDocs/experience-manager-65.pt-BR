@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,6 @@ A vinculação é quando um site de terceiros usa o código HTML para exibir uma
 
 [O ](https://helpx.adobe.com/support.html) Suporte a Adobe pode configurar um filtro de quem indicou no nível CDN (Content Delivery Network) para que o conteúdo do Dynamic Media seja disponibilizado somente para sites na lista de sites permitidos para o domínio.
 
-A proteção do Hotlink requer o uso do CDN fornecido pelo Adobe. Para ativar a proteção de hotlink, um administrador precisa criar um ticket de suporte para solicitar a alteração da configuração em sua conta Dynamic Media. Não há custo adicional para ativar a proteção de hotlink.
+>[!NOTE]
+>
+>A proteção de link a quente requer o uso do CDN fornecido pelo Adobe. Para ativar a proteção de hotlink, um administrador precisa criar um ticket de suporte para solicitar a alteração da configuração em sua conta Dynamic Media. Não há custo adicional para ativar a proteção de conexão automática.
