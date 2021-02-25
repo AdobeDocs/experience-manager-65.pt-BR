@@ -10,15 +10,17 @@ geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
 
 # Validar um documento DDX usando a API de serviço da Web {#validate-a-ddx-document-using-theweb-service-api}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Valide um documento DDX usando a API de serviço do Assembler (serviço da Web):
 
