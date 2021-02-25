@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 
 # Introdução ao Start rápido da API Java {#introducing-java-api-quickstart}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Start rápido de API da Adobe AEM Forms pode ajudá-lo a acelerar seus esforços para desenvolver programas que interagem com os serviços da AEM Forms. *Os* Start rápidos são programas completos que você pode copiar e colar em seus próprios projetos e usar como ponto de partida. Você pode executar um Start rápido para ver como ele se comporta e modificá-lo de acordo com suas próprias necessidades.
 
