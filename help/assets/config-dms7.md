@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '6083'
+source-wordcount: '6072'
 ht-degree: 5%
 
 ---
@@ -33,13 +33,12 @@ Com a nova arquitetura, o Experience Manager é responsável por ativos de orige
 
 >[!NOTE]
 >
->A lista de recursos a seguir exige o uso do CDN pronto para uso fornecido com o Adobe Experience Manager - Dynamic Media. Nenhum outro CDN personalizado é compatível com esses recursos.
+>A lista de recursos a seguir requer o uso do CDN pronto para uso fornecido com o Adobe Experience Manager - Dynamic Media. Nenhum outro CDN personalizado é compatível com esses recursos.
 >
 >* [Imagem inteligente](/help/assets/imaging-faq.md)
 >* [Invalidação de cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Proteção de link](/help/assets/hotlink-protection.md)
 >* [DELIVERY HTTP/2 de conteúdo](/help/assets/http2.md)
->* [Integração de visualizadores Dynamic Media com Adobe Analytics e Experience Platform Launch](/help/assets/launch.md)
 >* Redirecionamento de URL no nível CDN
 >* Akamai ChinaCDN (para um delivery ideal na China)
 
