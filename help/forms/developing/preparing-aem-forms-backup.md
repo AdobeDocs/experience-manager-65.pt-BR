@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
 
 
 # Preparando o AEM Forms para backup {#preparing-aem-forms-for-backup}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 ## Sobre o Serviço de Backup e Restauração {#about-the-backup-and-restore-service}
 
@@ -98,7 +100,7 @@ Depois de entrar no modo de backup, você pode recuperar informações sobre a s
 
 **Execute o backup do GDS e do banco de dados**
 
-Depois de entrar com êxito no modo de backup, é possível executar um backup do GDS (Global Documento Armazenamento) e do banco de dados ao qual o servidor de formulários está conectado. Esta etapa é específica da sua organização, já que você pode executar essa etapa manualmente ou outras ferramentas para executar o procedimento de backup.
+Depois de entrar com êxito no modo de backup, é possível executar um backup do GDS (Global Documento Armazenamento) e do banco de dados ao qual o servidor de formulários está conectado. Esta etapa é específica da sua organização, pois você pode executar essa etapa manualmente ou outras ferramentas para executar o procedimento de backup.
 
 ### Insira o modo de backup usando a API Java {#enter-backup-mode-using-the-java-api}
 
