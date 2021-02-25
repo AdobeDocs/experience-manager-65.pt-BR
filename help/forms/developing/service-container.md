@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
 
 
 # Container de serviço {#service-container}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Os serviços AEM Forms localizados no container de serviço (incluindo serviços padrão, como o serviço de criptografia, processos de longa duração e de curta duração) podem ser chamados usando vários provedores, como um provedor EJB. Um provedor EJB permite que os serviços AEM Forms sejam chamados por RMI/IIOP. Um provedor de serviço da Web expõe serviços como serviços da Web (Geração WSDL) usando padrões como SOAP/HTTP e SOAP/JMS.
 
@@ -54,7 +56,7 @@ A ilustração a seguir fornece uma representação visual das diferentes maneir
 
 >[!NOTE]
 >
->Além de usar o AEM Forms SDK para criar aplicativos clientes que possam chamar os serviços da AEM Forms, você também pode criar componentes que podem ser implantados no container de serviço. Por exemplo, você pode criar um componente Banco que contenha tipos de dados personalizados que podem ser usados em processos. Ou seja, você pode criar um tipo de dados como `com.adobe.idp.BankAccount`. Em seguida, você pode criar instâncias `com.adobe.idp.BankAccount` em seus aplicativos clientes.
+>Além de usar o AEM Forms SDK para criar aplicativos clientes que possam chamar os serviços da AEM Forms, você também pode criar componentes que podem ser implantados no container de serviço. Por exemplo, você pode criar um componente Banco que contenha tipos de dados personalizados que podem ser usados em processos. Ou seja, você pode criar um tipo de dados como `com.adobe.idp.BankAccount`. Em seguida, você pode criar instâncias `com.adobe.idp.BankAccount` nos aplicativos clientes.
 
 O container de serviço oferece a seguinte funcionalidade:
 
@@ -69,7 +71,7 @@ O container de serviço oferece a seguinte funcionalidade:
 
    O container de serviço envia uma resposta de invocação assim que a operação é executada. Uma resposta de chamada contém informações como os resultados da operação. Por exemplo, se a operação modificar um documento PDF, a resposta de invocação conterá o documento PDF modificado. Se a operação não foi bem-sucedida, a resposta de invocação contém uma mensagem de erro.
 
-   Uma resposta de invocação pode ser recuperada da mesma maneira em que uma solicitação de invocação é enviada. Ou seja, se a solicitação de invocação for enviada usando a API Java, uma resposta de invocação poderá ser recuperada usando a API Java. Considere, por exemplo, que uma operação modifica um documento PDF. Você pode recuperar o documento PDF modificado obtendo o valor de retorno do método Java que invocou o serviço.
+   Uma resposta de invocação pode ser recuperada da mesma forma em que uma solicitação de invocação é enviada. Ou seja, se a solicitação de invocação for enviada usando a API Java, uma resposta de invocação poderá ser recuperada usando a API Java. Considere, por exemplo, que uma operação modifica um documento PDF. Você pode recuperar o documento PDF modificado obtendo o valor de retorno do método Java que invocou o serviço.
 
    Quando um processo de longa duração é chamado, uma resposta de invocação contém um valor identificador associado à solicitação de invocação. Usando esse valor identificador, você pode verificar o status do processo posteriormente. Por exemplo, considere o serviço de longa duração da MortgageLoan. Usando o valor do identificador, você pode verificar se o processo foi concluído com êxito. (Consulte [Invocando processos de longa vida centrados em humanos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
