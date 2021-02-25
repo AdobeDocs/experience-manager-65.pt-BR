@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
 
 
 # Montagem de Portfolio PDF {#assembling-pdf-portfolios}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Você pode montar um Portfolio PDF usando o Assembler Java e a API de serviço da Web. Um portfólio pode combinar vários documentos de vários tipos, incluindo arquivos de texto, arquivos de imagem (por exemplo, um arquivo jpeg) e documentos de PDF. O layout do portfólio pode ser definido para estilos diferentes, como a *Grade com Pré-visualização*, o layout *Em uma imagem* ou até mesmo *Revolver*.
 
