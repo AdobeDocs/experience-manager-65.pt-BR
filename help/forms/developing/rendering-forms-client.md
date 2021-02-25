@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
 
 
 # Renderização do Forms no cliente {#rendering-forms-at-the-client}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 ## Renderização do Forms no cliente {#rendering-forms-at-the-client-inner}
 
