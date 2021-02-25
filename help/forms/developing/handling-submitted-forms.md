@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
 
 
 # Manuseio do Forms enviado {#handling-submitted-forms}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Aplicativos baseados na Web que permitem que um usuário preencha formulários interativos exigem que os dados sejam enviados de volta ao servidor. Usando o serviço Forms, é possível recuperar os dados inseridos pelo usuário em um formulário interativo. Depois de recuperar os dados, você pode processá-los para atender às suas necessidades comerciais. Por exemplo, você pode armazenar os dados em um banco de dados, enviar os dados para outro aplicativo, enviar os dados para outro serviço, unir os dados em um design de formulário, exibir os dados em um navegador da Web e assim por diante.
 
@@ -96,7 +98,7 @@ A tabela a seguir descreve as etapas neste diagrama.
    <td><p>O serviço Forms renderiza um formulário PDF interativo para o navegador da Web do cliente.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>O usuário preenche um formulário interativo e clica em um botão Enviar. O formulário é enviado de volta ao serviço Forms como dados PDF. Essa opção está definida no Designer.</p></td>
   </tr>
   <tr>
