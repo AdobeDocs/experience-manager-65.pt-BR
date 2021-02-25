@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4188'
 ht-degree: 1%
 
 ---
 
 
 # Renderizando o Forms como HTML {#rendering-forms-as-html}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 O serviço Forms renderiza formulários como HTML em resposta a uma solicitação HTTP de um navegador da Web. Uma vantagem de renderizar um formulário como HTML é que o computador no qual o navegador da Web do cliente está localizado não requer Adobe Reader, Acrobat ou Flash Player (para guias de formulário (obsoleto)).
 
@@ -153,7 +155,7 @@ Um navegador da Web que suporta apenas HTML 4.0 não pode suportar o modelo de s
 
 ## Manutenção das alterações de apresentação {#maintaining-presentation-changes}
 
-Conforme você se move entre páginas HTML (painéis), somente o estado dos dados é mantido. Configurações como cor de plano de fundo ou configurações de campo obrigatório não são mantidas (se diferentes das configurações iniciais). Para manter o estado da apresentação, é necessário criar campos (geralmente ocultos) que representem o estado da apresentação dos campos. Se você adicionar um script ao evento `Calculate` de um campo que altera a apresentação com base em valores de campo ocultos, poderá preservar o estado da apresentação conforme você se move para frente e para trás entre páginas HTML (painéis).
+Conforme você se move entre páginas HTML (painéis), somente o estado dos dados é mantido. Configurações como cor de plano de fundo ou configurações de campo obrigatório não são mantidas (se diferentes das configurações iniciais). Para manter o estado da apresentação, é necessário criar campos (geralmente ocultos) que representem o estado da apresentação dos campos. Se você adicionar um script ao evento `Calculate` de um campo que altera a apresentação com base em valores de campo ocultos, poderá preservar o estado da apresentação conforme você se move para frente e para trás entre as páginas HTML (painéis).
 
 O script a seguir mantém `fillColor` de um campo com base no valor de `hiddenField`. Suponha que esse script esteja localizado no evento `Calculate` de um campo.
 
