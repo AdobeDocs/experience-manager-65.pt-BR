@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ A vinculação é quando um site de terceiros usa o código HTML para exibir uma
 
 >[!NOTE]
 >
->A proteção de link a quente requer o uso do CDN fornecido pelo Adobe. Para ativar a proteção de hotlink, um administrador precisa criar um ticket de suporte para solicitar a alteração da configuração em sua conta Dynamic Media. Não há custo adicional para ativar a proteção de conexão automática.
+>Este recurso exige que você use o CDN pronto para uso fornecido com a Adobe Experience Manager Dynamic Media. Nenhum outro CDN personalizado é suportado com este recurso. Para ativar a proteção de link ativo, um administrador deve criar um ticket de suporte do Atendimento ao cliente do Adobe para solicitar a alteração da configuração em sua conta Dynamic Media. Não há custo adicional para ativar a proteção de conexão automática.
