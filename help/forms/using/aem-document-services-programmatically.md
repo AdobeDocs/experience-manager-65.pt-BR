@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
 workflow-type: tm+mt
-source-wordcount: '6355'
+source-wordcount: '6418'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,15 @@ ht-degree: 1%
 
 # Uso AEM Documento Services Programaticamente {#using-aem-document-services-programmatically}
 
-As classes de cliente necessárias para criar projetos Maven usando AEM Documento Services estão disponíveis no jar [AEM Forms Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html). Para obter informações sobre projetos maven, consulte [como criar seu projeto AEM usando Maven](/help/sites-developing/ht-projects-maven.md).
+Exemplos e exemplos neste documento ajudam você a entender e usar AEM Documento Services em um ambiente AEM Forms no OSGi. Para obter exemplos e exemplos do AEM Forms no ambiente JEE, consulte [Programação com o AEM Forms em JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee)
 
->[!NOTE]
->
->Antes de usar as APIs do serviço DocAssurance, [configure o serviço DocAssurance](/help/forms/using/install-configure-document-services.md).
+## Pré-requisitos {#prerequisite}
+
+* Antes de usar as APIs do serviço DocAssurance, [configure o serviço DocAssurance](/help/forms/using/install-configure-document-services.md).
+
+* Baixe e configure [AEM Forms Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) com você AEM projeto maven. As classes de cliente necessárias para criar projetos Maven usando AEM Documento Services estão disponíveis no [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+
+* Saiba mais [como criar seu projeto AEM usando Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## Serviço DocAssurance {#docassurance-service}
 
