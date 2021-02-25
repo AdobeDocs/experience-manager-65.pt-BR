@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2588'
 ht-degree: 0%
 
 ---
 
 
 # Montagem de Documentos PDF com marcadores {#assembling-pdf-documents-with-bookmarks}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 É possível montar um documento PDF que contenha marcadores. Por exemplo, suponha que você tenha um documento PDF que não contenha marcadores e queira modificá-lo fornecendo marcadores. Usando o serviço Assembler, você pode enviar a ele um documento PDF que não contém marcadores e recuperar um documento PDF que contém marcadores.
 
