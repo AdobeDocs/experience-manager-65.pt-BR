@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1788'
 ht-degree: 0%
 
 ---
 
 
 # Desmontagem programática de Documentos PDF {#programmatically-disassembling-pdf-documents}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Você pode desmontar um documento PDF transmitindo-o para o serviço Assembler. Normalmente, essa tarefa é útil quando o documento PDF foi criado originalmente de vários documentos individuais, como uma coleção de declarações. Na ilustração a seguir, o DocA é dividido em vários documentos resultantes, em que o primeiro marcador de nível 1 em uma página identifica o start de um novo documento resultante.
 
@@ -99,7 +101,7 @@ Você pode definir opções de tempo de execução que controlam o comportamento
 
 **Desmonte o documento PDF**
 
-Depois de criar o cliente de serviço Assembler, consulte o documento DDX, consulte um documento PDF para desmontar e defina as opções de tempo de execução, você pode desmontar um documento PDF invocando o método `invokeDDX`. Desde que o documento DDX contenha instruções para desmontar o documento PDF, o serviço Assembler retorna documentos PDF desmontados dentro de um objeto de coleção.
+Depois de criar o cliente de serviço Assembler, consultar o documento DDX, fazer referência a um documento PDF para desmontar e definir opções de tempo de execução, é possível desmontar um documento PDF invocando o método `invokeDDX`. Desde que o documento DDX contenha instruções para desmontar o documento PDF, o serviço Assembler retorna documentos PDF desmontados dentro de um objeto de coleção.
 
 **Salve os documentos PDF desmontados**
 
