@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9143'
+source-wordcount: '9157'
 ht-degree: 0%
 
 ---
 
 
 # Trabalhar com o AEM Forms Repository {#working-with-aem-forms-repository}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 **Sobre o Serviço de Repositório**
 
@@ -210,7 +212,7 @@ Crie uma pasta usando a API de serviço do Repositório (serviço da Web):
 
 Você pode criar recursos em um determinado local no repositório. O tamanho natural do arquivo está sujeito às limitações do banco de dados e ao tempo limite da sessão. Para a configuração padrão, os arquivos estão limitados a 25 MB. Para aumentar ou diminuir o tamanho máximo do arquivo, é necessário alterar a configuração do banco de dados.
 
-Gravar recursos equivale a armazenar dados no repositório. Depois que você gravar um recurso no repositório, ele se torna acessível a todos os clientes no ecossistema do repositório. Quando você grava recursos, como schemas XML, arquivos XDP e arquivos XSD, no repositório, o conteúdo é analisado com base no tipo MIME. Se o tipo MIME for suportado, o analisador determinará se há uma relação implícita com outro conteúdo. Por exemplo, se uma folha de estilos em cascata (CSS) tiver um URL relativo que faz referência a um CSS comum, espera-se que você envie o CSS comum também para o repositório. A relação entre os dois recursos é armazenada como uma relação pendente por um período não ajustável de 30 dias. Quando você envia o CSS comum para o repositório dentro do período de 30 dias, a relação é formada.
+Gravar recursos equivale a armazenar dados no repositório. Depois que você gravar um recurso no repositório, ele se tornará acessível a todos os clientes no ecossistema do repositório. Quando você grava recursos, como schemas XML, arquivos XDP e arquivos XSD, no repositório, o conteúdo é analisado com base no tipo MIME. Se o tipo MIME for suportado, o analisador determinará se há uma relação implícita com outro conteúdo. Por exemplo, se uma folha de estilos em cascata (CSS) tiver um URL relativo que faz referência a um CSS comum, espera-se que você envie o CSS comum também para o repositório. A relação entre os dois recursos é armazenada como uma relação pendente por um período não ajustável de 30 dias. Quando você envia o CSS comum para o repositório dentro do período de 30 dias, a relação é formada.
 
 Quando você cria um recurso, a lista do controle de acesso (ACL) é herdada da pasta pai. A pasta raiz tem permissões no nível do sistema até que um recurso ou pasta inicial seja criado, e nesse ponto o recurso ou a pasta recebe permissões de ACL padrão.
 
@@ -861,7 +863,7 @@ Você pode especificar relacionamentos entre recursos no repositório. Existem t
 * **Associação (sistema de arquivos)**: uma relação na qual um recurso está localizado em uma determinada pasta.
 * **Personalizado**: uma relação especificada entre recursos. Por exemplo, se um recurso tiver sido descontinuado e outro recurso tiver sido introduzido no repositório, você poderá especificar sua própria relação de substituição.
 
-Você pode criar seus próprios relacionamentos personalizados. Por exemplo, se você armazenar um arquivo HTML no repositório e ele usar uma imagem, poderá especificar uma relação personalizada para relacionar o arquivo HTML à imagem (já que normalmente somente os arquivos XML são associados a imagens usando uma relação de dependência definida pelo repositório). Outro exemplo de relacionamento personalizado seria se você quisesse criar uma visualização diferente do repositório com uma estrutura de gráfico cíclica em vez de uma estrutura em árvore. Você poderia definir um gráfico circular junto com um visualizador para atravessar essas relações. Por fim, você pode indicar que um recurso substitui outro, mesmo que os dois recursos sejam completamente diferentes. Nesse caso, você pode definir um tipo de relacionamento fora do intervalo reservado e criar uma relação entre esses dois recursos. Seu aplicativo seria o único cliente que poderia detectar e processar o relacionamento, e poderia ser usado para realizar pesquisas sobre esse relacionamento.
+Você pode criar seus próprios relacionamentos personalizados. Por exemplo, se você armazenar um arquivo HTML no repositório e ele usar uma imagem, poderá especificar uma relação personalizada para relacionar o arquivo HTML à imagem (já que normalmente somente os arquivos XML são associados a imagens usando uma relação de dependência definida pelo repositório). Outro exemplo de relacionamento personalizado seria se você quisesse criar uma visualização diferente do repositório com uma estrutura de gráfico cíclica em vez de uma estrutura em árvore. Você poderia definir um gráfico circular junto com um visualizador para atravessar essas relações. Por fim, você pode indicar que um recurso substitui outro, mesmo que os dois recursos sejam completamente diferentes. Nesse caso, você pode definir um tipo de relacionamento fora do intervalo reservado e criar uma relação entre esses dois recursos. Seu aplicativo seria o único cliente que poderia detectar e processar o relacionamento, e poderia ser usado para realizar pesquisas nesse relacionamento.
 
 Você pode especificar programaticamente relações entre recursos usando a API Java do serviço do Repositório ou a API do serviço da Web.
 
