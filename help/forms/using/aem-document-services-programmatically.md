@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
+source-git-commit: c3fddf28c0f2f5377fff7561d29f073cc847c3ca
 workflow-type: tm+mt
-source-wordcount: '6418'
+source-wordcount: '6450'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,13 @@ ht-degree: 1%
 
 # Uso AEM Documento Services Programaticamente {#using-aem-document-services-programmatically}
 
-Exemplos e exemplos neste documento ajudam você a entender e usar AEM Documento Services em um ambiente AEM Forms no OSGi. Para obter exemplos e exemplos do AEM Forms no ambiente JEE, consulte [Programação com o AEM Forms em JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee)
+Exemplos e exemplos neste documento ajudam você a entender e usar AEM Documento Services em um ambiente AEM Forms no OSGi. Para obter exemplos e exemplos para AEM Forms em ambiente JEE, consulte
+
+* [Start rápido da API Java do serviço de assinatura](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+
+* [Start rápido da API Java do serviço de criptografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+
+* [start rápido da API Java do Serviço de extensões da Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## Pré-requisitos {#prerequisite}
 
