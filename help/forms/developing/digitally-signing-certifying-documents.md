@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '17099'
+source-wordcount: '17113'
 ht-degree: 0%
 
 ---
 
 
 # Assinando e certificando Documentos digitalmente {#digitally-signing-and-certifying-documents}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 **Sobre o serviço de assinatura**
 
@@ -1481,7 +1483,7 @@ Verifique uma assinatura digital usando a Signature Service API (serviço da Web
 1. Definir opções de tempo de execução de PKI
 
    * Crie um objeto `PKIOptions` usando seu construtor.
-   * Defina o tempo de verificação atribuindo ao membro de dados `PKIOptions` do objeto &lt;a0/> um valor de lista discriminada `VerificationTime` que especifica o tempo de verificação.`verificationTime`
+   * Defina o tempo de verificação atribuindo ao membro de dados `PKIOptions` do objeto `verificationTime` um valor de lista discriminada `VerificationTime` que especifica o tempo de verificação.
    * Defina a opção de verificação de revogação atribuindo ao membro de dados `PKIOptions` do objeto `revocationCheckStyle` um valor de lista discriminada `RevocationCheckStyle` que especifica se a verificação de revogação deve ser executada.
 
 1. Verificar a assinatura digital
@@ -1696,7 +1698,7 @@ Verifique várias assinaturas digitais usando a Signature Service API (serviço 
 1. Definir opções de tempo de execução de PKI
 
    * Crie um objeto `PKIOptions` usando seu construtor.
-   * Defina o tempo de verificação atribuindo ao membro de dados `PKIOptions` do objeto &lt;a0/> um valor de lista discriminada `VerificationTime` que especifica o tempo de verificação.`verificationTime`
+   * Defina o tempo de verificação atribuindo ao membro de dados `PKIOptions` do objeto `verificationTime` um valor de lista discriminada `VerificationTime` que especifica o tempo de verificação.
    * Defina a opção de verificação de revogação atribuindo ao membro de dados `PKIOptions` do objeto `revocationCheckStyle` um valor de lista discriminada `RevocationCheckStyle` que especifica se a verificação de revogação deve ser executada.
 
 1. Recuperar todas as assinaturas digitais
