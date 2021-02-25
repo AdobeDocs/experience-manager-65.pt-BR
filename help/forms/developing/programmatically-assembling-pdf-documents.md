@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2152'
 ht-degree: 0%
 
 ---
 
 
 # Montagem programática de Documentos PDF {#programmatically-assembling-pdf-documents}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Você pode usar a API de serviço do Assembler para reunir vários documentos PDF em um único documento PDF. A ilustração a seguir mostra três documentos PDF sendo mesclados em um único documento PDF.
 
@@ -99,7 +101,7 @@ Um documento DDX deve ser referenciado para montar um documento PDF. Por exemplo
 
 Faça referência a documentos PDF de entrada que você deseja transmitir ao serviço Assembler. Por exemplo, se você quiser passar dois documentos PDF de entrada chamados Mapa e Direções, é necessário passar os arquivos PDF correspondentes.
 
-O arquivo map.pdf e o arquivo Direcções.pdf devem ser colocados em um objeto de coleção. O nome da chave deve corresponder ao valor do atributo de origem do PDF no documento DX. Não importa qual é o nome do arquivo PDF se a chave e o atributo de origem no documento DX correspondem.
+O arquivo map.pdf e o arquivo Direcções.pdf devem ser colocados em um objeto de coleção. O nome da chave deve corresponder ao valor do atributo de origem do PDF no documento DDX. Não importa qual é o nome do arquivo PDF se a chave e o atributo de origem no documento DX correspondem.
 
 >[!NOTE]
 >
