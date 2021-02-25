@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2528'
 ht-degree: 0%
 
 ---
 
 
 # Renderizando PDF forms interativos {#rendering-interactive-pdf-forms}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 O serviço Forms renderiza PDF forms interativos para dispositivos clientes, geralmente navegadores da Web, para coletar informações dos usuários. Depois que um formulário interativo é renderizado, o usuário pode inserir dados nos campos do formulário e clicar em um botão Enviar localizado no formulário para enviar informações de volta ao serviço da Forms. O Adobe Reader ou o Acrobat devem ser instalados no computador que hospeda o navegador da Web do cliente para que um formulário PDF interativo esteja visível.
 
