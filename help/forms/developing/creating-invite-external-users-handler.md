@@ -2,15 +2,17 @@
 title: Criando um Manipulador de Usuários Externos de Convite
 description: Criando um Manipulador de Usuários Externos de Convite
 translation-type: tm+mt
-source-git-commit: 92e5cc0b1934dad641357a22894e70a3660b774a
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
 
 
 # Criando um Manipulador de Usuários Externos de Convite {#create-invite-external-users-handler}
+
+**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
 
 Você pode criar um Manipulador de convidados para usuários externos para o serviço Rights Management. Um Manipulador de Usuários Externos de Convite permite que o serviço Rights Management convide usuários externos a se tornarem usuários do Rights Management. Depois que um usuário se torna Rights Management, ele é capaz de executar tarefas, como abrir um documento PDF protegido por política. Depois que o Manipulador de Usuários Externos de Convite for implantado na AEM Forms, você poderá usar o console de administração para interagir com ele.
 
