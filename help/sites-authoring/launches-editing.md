@@ -12,10 +12,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 99%
+source-wordcount: '551'
+ht-degree: 93%
 
 ---
 
@@ -28,6 +28,13 @@ Quando um lançamento foi criado para uma página (ou um conjunto de páginas), 
 
 1. Acesse [Lançamento a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
 1. Selecione **Vá para a página** para abrir a página para edição.
+
+>[!NOTE]
+>
+>Você não tem permissão para mover uma página em um lançamento. Tentar esta ação acionará uma mensagem de aviso:
+>
+>* Aviso: Esta página é a origem de um lançamento. Não é permitido mover a página.
+
 
 ### Edição de páginas de lançamento sujeitas a uma live copy {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -45,7 +52,7 @@ Você pode fazer alterações da mesma forma como pode editar uma live copy padr
 
 Consulte [Alteração do conteúdo da live copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) para obter mais informações.
 
-## Comparação de uma página de lançamento com sua página de origem  {#comparing-a-launch-page-to-its-source-page}
+## Comparação de uma página de lançamento com sua página de origem {#comparing-a-launch-page-to-its-source-page}
 
 Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
