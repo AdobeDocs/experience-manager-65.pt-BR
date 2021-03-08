@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1399'
 ht-degree: 86%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 86%
 
 # Projetos{#projects}
 
-Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Os blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
+Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Mosaicos podem incluir informações do projeto e da equipe, ativos, fluxos de trabalho e outros tipos de informações, conforme descrito detalhadamente em [Mosaicos de projetos.](#project-tiles)
 
 >[!CAUTION]
 >
->Para que os usuários em projetos vejam outros usuários/grupos ao usar a funcionalidade Projetos, como criar projetos, criar tarefas/workflows, ver e gerenciar a equipe, esses usuários precisam ter acesso de leitura em **/home/users** e **/home/groups**. A maneira mais fácil de implementar isso é dar ao grupo **projects-users** acesso de leitura a **/home/users** e**/home/groups**.
+>Para que os usuários em projetos vejam outros usuários/grupos ao usar a funcionalidade Projetos, como criar projetos, criar tarefas/fluxos de trabalho, ver e gerenciar a equipe, esses usuários precisam ter acesso de leitura em **/home/users** e **/home/groups**. A maneira mais fácil de implementar isso é fornecer ao grupo **projects-users** acesso de leitura a **/home/users** e**/home/groups**.
 
 Como usuário, você pode fazer o seguinte:
 
@@ -53,7 +53,7 @@ O console Projetos é onde você acessa e gerencia seus projetos no AEM.
 * **Alternar projetos ativos** permite alternar entre todos os projetos e somente aqueles que estão ativos.
 * **Exibir visualização de estatísticas** permite ver estatísticas de projeto referentes a conclusões de tarefas.
 
-## Blocos de Projetos {#project-tiles}
+## Blocos de Projetos  {#project-tiles}
 
 Com Projetos, você associa diferentes tipos de informações aos seus projetos. Esses informações são chamadas de **Blocos**. Cada um dos blocos e o tipo de informação que eles contêm estão descritos nesta seção.
 
@@ -126,7 +126,7 @@ O bloco Tarefa de tradução é onde você inicia uma tradução e visualiza o s
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Clique nas reticências na parte inferior do cartão **Trabalho de tradução** para visualização dos ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
+Clique nas reticências na parte inferior do cartão **Tarefa de Tradução** para exibir os ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -174,7 +174,7 @@ O bloco Lançamentos mostra todos os lançamentos que foram solicitados com um [
 
 ### Tarefas {#tasks}
 
-Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas detalhadamente em [Trabalhar com Tarefa](/help/sites-authoring/task-content.md).
+Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas detalhadamente em [Trabalhar com tarefas](/help/sites-authoring/task-content.md).
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -182,9 +182,9 @@ Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, i
 
 O AEM acompanha três modelos diferentes prontos para uso:
 
-* Um projeto simples - uma amostra de referência para quaisquer projetos que não se encaixem em outras categorias (um catch-all). Ele inclui três funções básicas (Proprietários, Editores e Observadores) e quatro fluxos de trabalho (Aprovação de projeto, Solicitar lançamento, Solicitar página de aterrissagem e Solicitar email).
-* Um projeto de mídia - um exemplo de projeto de referência para atividades relacionadas à mídia. Ele inclui várias funções de projeto relacionadas a mídia (Fotógrafos, Editores, Redatores, Designers, Proprietários e Observadores). Também inclui dois fluxos de trabalho relacionados a conteúdo de mídia - Solicitar cópia (para solicitar e revisar texto) e Sessão fotográfica do produto (para gerenciar fotos relacionadas ao produto)
-* [Projeto](/help/sites-authoring/managing-product-information.md)  fotográfico do produto - uma amostra de referência para gerenciar a fotografia de produtos relacionados ao comércio eletrônico. Ele inclui funções para Fotógrafos, Editores, Retocadores de foto, Proprietários, Diretores criativos, Comerciantes de mídia social, Diretores de marketing, Revisores e Observadores.
+* Um projeto simples - Uma amostra de referência para quaisquer projetos que não se encaixem em outras categorias (uma categoria genérica). Ele inclui três funções básicas (Proprietários, Editores e Observadores) e quatro fluxos de trabalho (Aprovação de projeto, Solicitar lançamento, Solicitar página de aterrissagem e Solicitar email).
+* Um projeto de mídia - Um projeto de amostra de referência para atividades relacionadas à mídia. Ele inclui várias funções de projeto relacionadas a mídia (Fotógrafos, Editores, Redatores, Designers, Proprietários e Observadores). Também inclui dois fluxos de trabalho relacionados a conteúdo de mídia - Solicitar cópia (para solicitar e revisar texto) e Sessão fotográfica do produto (para gerenciar fotos relacionadas ao produto)
+* [Projeto de sessão fotográfica do produto](/help/sites-authoring/managing-product-information.md)  - Uma amostra de referência para o gerenciamento de fotografias de produtos relacionados ao comércio eletrônico. Ele inclui funções para Fotógrafos, Editores, Retocadores de foto, Proprietários, Diretores criativos, Comerciantes de mídia social, Diretores de marketing, Revisores e Observadores.
 * [Um projeto de tradução](/help/sites-administering/translation.md) - Uma amostra de referência para o gerenciamento de atividades relacionadas a tradução. Ele inclui três funções básicas (Proprietários, Editores e Observadores). Também inclui dois fluxos de trabalho que são acessados na interface de usuário de Fluxos de trabalho.
 
 Com base no modelo selecionado, você tem diferentes opções disponíveis, principalmente em relação a funções de usuário e fluxos de trabalho.
@@ -203,7 +203,7 @@ Todos os projetos oferecem suporte às seguintes funções padrão, para permiti
   <tr>
    <td><p><strong>Função</strong></p> </td>
    <td><p><strong>Descrição</strong></p> </td>
-   <td><p><strong>Permissões </strong></p> </td>
+   <td><p><strong>Permissões</strong></p> </td>
    <td><p><strong>Associação de Grupo</strong></p> </td>
   </tr>
   <tr>
@@ -234,7 +234,7 @@ Todos os projetos oferecem suporte às seguintes funções padrão, para permiti
    <td>
     <ul>
      <li>Grupo de usuários do DAM (para criar um projeto)</li>
-     <li>grupo de administradores de projeto (para poder mover ativos)</li>
+     <li>grupo project-administrators (para poder criar um projeto e mover ativos)</li>
     </ul> </td>
   </tr>
  </tbody>
