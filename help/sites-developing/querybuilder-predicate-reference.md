@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 7a96ff5cdd187291efe108d1171782bcbecfaeb0
+source-git-commit: 054b49fb8aacb9e267ed23552d788f72123ed3b3
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 3%
@@ -100,7 +100,7 @@ Este é um predicado somente filtragem e não pode utilizar um índice de pesqui
 
 * **operation**
 
-   &quot;`equals`&quot; para correspondência exata, &quot;`!=`&quot; para comparação de desigualdade, &quot;`greater`&quot; para propriedade1 maior que propriedade2, &quot;`>=`&quot; para propriedade1 maior ou igual a propriedade2. O valor padrão é &quot;`equals`&quot;.
+   &quot; `equals`&quot; para correspondência exata, &quot; `!=`&quot; para comparação de desigualdade, &quot; `greater`&quot; para propriedade1 maior que propriedade2, &quot; `>=`&quot; para propriedade1 maior ou igual a propriedade2. O valor padrão é &quot; `equals`&quot;.
 
 ### intervalo de datas {#daterange}
 
@@ -370,7 +370,7 @@ Oferece suporte à extração de facetas. Fornecerá buckets para cada valor de 
 
 * **operation**
 
-   &quot;`equals`&quot; para correspondência exata (padrão), &quot;`unequals`&quot; para comparação de desigualdade, &quot;`like`&quot; para usar a função `jcr:like` xpath (opcional), &quot;`not`&quot; para nenhuma correspondência (por exemplo, &quot;`not(@prop)`&quot; no xpath, o parâmetro do valor será ignorado) ou &quot;`exists`&quot; para verificação de existência (o valor pode ser verdadeiro - a propriedade deve existir, o padrão - ou falso - o mesmo que &quot;`not`&quot;)
+   &quot;`equals`&quot; para correspondência exata (padrão), &quot; `unequals`&quot; para comparação de desigualdade, &quot; `like`&quot; para usar a função `jcr:like` xpath (opcional), &quot; `not`&quot; para nenhuma correspondência (por exemplo, &quot;`not(@prop)`&quot; no xpath, o parâmetro do valor será ignorado) ou &quot; `exists`&quot; para verificação de existência (o valor pode ser verdadeiro - a propriedade deve existir, o padrão - ou falso - o mesmo que &quot; `not`&quot;)
 
 * **profundidade**
 
