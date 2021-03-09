@@ -4,10 +4,10 @@ description: Use ativos em várias páginas/pastas que são derivadas de e vincu
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
+source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 10%
+source-wordcount: '3366'
+ht-degree: 9%
 
 ---
 
@@ -70,7 +70,7 @@ Para criar cópias ativas usando o primeiro método, siga estas etapas:
 
 1. Selecione ativos ou pastas de origem. Na barra de ferramentas, clique em **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
-   ![Criar Live Copy da interface do Experience Manager](assets/create_lc1.png)
+   ![Criar Live Copy na  [!DNL Experience Manager] interface](assets/create_lc1.png)
 
    *Figura: Crie uma live copy a partir da  [!DNL Experience Manager] interface.*
 
@@ -82,7 +82,7 @@ Para criar cópias ativas usando o segundo método, siga estas etapas:
 
 1. Na interface [!DNL Experience Manager], no canto superior direito, clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]**.
 
-   ![Criar Live Copy da interface do Experience Manager](assets/create_lc2.png)
+   ![Criar Live Copy na  [!DNL Experience Manager] interface](assets/create_lc2.png)
 
    *Figura: Crie uma live copy a partir da  [!DNL Experience Manager] interface.*
 
@@ -106,7 +106,7 @@ Os dois métodos a seguir funcionam para ativos e pastas:
 
 >[!TIP]
 >
->Para verificar o status de algumas live copies separadas, use o primeiro método para verificar a página [!UICONTROL Properties]. Para verificar os status de muitas cópias ativas, use o segundo método para verificar a página **[!UICONTROL Status do relacionamento]**.
+>Para verificar o status de algumas live copies separadas, use o primeiro método para verificar a página **[!UICONTROL Properties]**. Para verificar os status de muitas cópias ativas, use o segundo método para verificar a página **[!UICONTROL Status do relacionamento]**.
 
 ### Informações e status de uma live copy {#statuslcasset}
 
@@ -189,8 +189,9 @@ Depois que uma fonte é modificada, as alterações podem ser propagadas para as
 Você pode iniciar uma ação de implantação a partir do ativo de origem e atualizar todas ou algumas cópias em tempo real selecionadas.
 
 1. Selecione um ativo de live copy ou uma pasta. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
-1. Clique em **[!UICONTROL Origem da Live Copy]**. Clique em **[!UICONTROL Implantação]** na barra de ferramentas, na parte superior.
-1. Selecione as cópias em tempo real que deseja atualizar. Clique em **[!UICONTROL Implantação]**. Para implantar as atualizações feitas nos ativos secundários, selecione **[!UICONTROL Fonte de implantação e todos os filhos]**.
+1. Clique em **[!UICONTROL Origem da Live Copy]**. Clique em **[!UICONTROL Implantação]** na barra de ferramentas.
+1. Selecione as cópias em tempo real que deseja atualizar. Clique em **[!UICONTROL Implantação]**.
+1. Para implantar as atualizações feitas nos ativos secundários, selecione **[!UICONTROL Fonte de implantação e todos os filhos]**.
 
    ![Implementar as modificações da origem em algumas ou todas as cópias ao vivo](assets/livecopy_rollout_page.png)
 
@@ -210,7 +211,7 @@ Como alternativa, você pode iniciar uma ação de implantação no painel Refer
 
 Uma ação de sincronização extrai as modificações de uma fonte somente para a live copy selecionada. A ação de sincronização respeita e mantém as modificações locais feitas após cancelar a herança. As modificações locais não são substituídas e a herança cancelada não é restabelecida. Você pode iniciar uma ação de sincronização de três maneiras.
 
-| Onde na interface [!DNL Experience Manager] | Quando e por que usar | Como utilizar |
+| Onde na interface [!DNL Experience Manager] | Quando e por que usar | Como usar |
 |---|---|---|
 |  Painel de referência | Sincronize rapidamente quando já tiver a origem selecionada. | Consulte [Ações rápidas do painel Referências para origem](#refrailsource) |
 | Barra de ferramentas na página [!UICONTROL Propriedades] | Inicie uma sincronização quando já tiver as propriedades da live copy abertas. | Consulte [Sincronizar uma live copy](#sync-lc) |
