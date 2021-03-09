@@ -3,9 +3,9 @@ title: Gerencie metadados de seus ativos digitais em [!DNL Adobe Experience Mana
 description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] possibilita organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2388'
 ht-degree: 11%
 
 ---
@@ -78,11 +78,11 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
 1. Selecione os ativos para os quais deseja editar propriedades comuns.
 1. Na barra de ferramentas, clique em **[!UICONTROL Properties]** para abrir a página de propriedades dos ativos selecionados.
 1. Modifique as propriedades de metadados para ativos selecionados nas várias guias.
-1. Para exibir o editor de metadados para um ativo específico, desmarque os ativos restantes na lista. Os campos do editor de metadados são preenchidos com os metadados do ativo específico.
+1. Para exibir o editor de metadados para um ativo específico, cancele a seleção dos ativos restantes na lista. Os campos do editor de metadados são preenchidos com os metadados do ativo específico.
 
    >[!NOTE]
    >
-   >* Na página de propriedades, é possível remover ativos da lista de ativos ao desmarcá-los. A lista de ativos tem todos os ativos selecionados por padrão. Os metadados dos ativos que você remove da lista não são atualizados.
+   >* Na página de propriedades, é possível remover ativos da lista de ativos cancelando a seleção. A lista de ativos tem todos os ativos selecionados por padrão. Os metadados dos ativos que você remove da lista não são atualizados.
    >* Na parte superior da lista de ativos, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre selecionar os ativos e limpar a lista.
 
 
