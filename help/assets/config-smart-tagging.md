@@ -3,9 +3,9 @@ title: Configurar a marcação de ativos usando o Serviço de conteúdo intelige
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no  [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 178b1433de1d6b1e20527755414a494d4291935e
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2170'
 ht-degree: 25%
 
 ---
@@ -13,21 +13,18 @@ ht-degree: 25%
 
 # Preparar [!DNL Assets] para marcação inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Antes de começar a marcar seus ativos usando os Serviços de conteúdo inteligente, integre [!DNL Experience Manager Assets] ao Console do desenvolvedor para aproveitar o serviço inteligente de [!DNL Adobe Sensei]. Depois de configurado, treine o serviço usando algumas imagens e uma tag .
+Antes de começar a marcar seus ativos usando os Serviços de conteúdo inteligente, integre [!DNL Experience Manager Assets] ao Console do desenvolvedor do Adobe para aproveitar o serviço inteligente de [!DNL Adobe Sensei]. Depois de configurado, treine o serviço usando algumas imagens e uma tag .
 
 Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte:
 
 * [Integração com o Console do desenvolvedor](#integrate-adobe-io).
 * [Treine o Serviço de conteúdo inteligente](#training-the-smart-content-service).
 
-   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
-  -->
-
-* Instale o service pack mais recente do [Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Instale o [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) mais recente.
 
 ## Integração com o Console do desenvolvedor {#integrate-adobe-io}
 
-Ao fazer a integração com o Console do desenvolvedor, o servidor [!DNL Experience Manager] autentica suas credenciais de serviço no gateway do Console do desenvolvedor antes de encaminhar sua solicitação ao Serviço de conteúdo inteligente. Para fazer a integração, é necessário ter uma conta da Adobe ID com privilégios de administrador para a organização e a licença do Serviço de conteúdo inteligente adquirida e ativada para a organização.
+Quando você se integra ao Console do desenvolvedor do Adobe, o servidor [!DNL Experience Manager] autentica suas credenciais de serviço no gateway do Console do desenvolvedor do Adobe antes de encaminhar sua solicitação ao Serviço de conteúdo inteligente. Para fazer a integração, você precisa de uma conta da Adobe ID que tenha privilégios de administrador para a organização e a licença do Serviço de conteúdo inteligente adquirida e ativada para a organização.
 
 Para configurar o Serviço de conteúdo inteligente, siga estas etapas de nível superior:
 
@@ -35,7 +32,7 @@ Para configurar o Serviço de conteúdo inteligente, siga estas etapas de nível
 
 1. [Crie uma integração no Console do desenvolvedor](#create-adobe-i-o-integration) e faça upload da chave pública gerada.
 
-1. [Configure sua ](#configure-smart-content-service) implantação usando a chave da API e outras credenciais do Console do desenvolvedor.
+1. [Configure sua ](#configure-smart-content-service) implantação usando a chave da API e outras credenciais do Console do desenvolvedor do Adobe.
 
 1. [Teste a configuração](#validate-the-configuration).
 
@@ -45,13 +42,13 @@ Para configurar o Serviço de conteúdo inteligente, siga estas etapas de nível
 
 Um certificado público permite autenticar seu perfil no Console do desenvolvedor.
 
-1. Na interface do usuário [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços da nuvem]** > **[!UICONTROL Serviços da nuvem herdados]**.
+1. Na interface do usuário [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Cloud Services herdadas]**.
 
-1. Na página Serviços da nuvem, clique em **[!UICONTROL Configurar agora]** em **[!UICONTROL Tags inteligentes de ativos]**.
+1. Na página Cloud Services, clique em **[!UICONTROL Configurar agora]** em **[!UICONTROL Tags inteligentes de ativos]**.
 
 1. Na caixa de diálogo **[!UICONTROL Criar configuração]**, especifique um título e um nome para a configuração de Tags inteligentes. Clique em **[!UICONTROL Criar]**.
 
-1. Na caixa de diálogo **[!UICONTROL AEM Smart Content Service]**, use os seguintes valores:
+1. Na caixa de diálogo **[!UICONTROL AEM Serviço de Conteúdo Inteligente]**, use os seguintes valores:
 
    **[!UICONTROL URL do serviço]**: `https://mc.adobe.io/marketingcloud/smartcontent`
 
@@ -94,11 +91,11 @@ Depois que um certificado expira, ele não é mais confiável. Não é possível
 
 1. Para baixar um certificado público, clique em **[!UICONTROL Baixar certificado público para integração OAuth]**.
 
-1. Acesse [https://console.adobe.io](https://console.adobe.io) e navegue até os Serviços de conteúdo inteligente existentes na página **[!UICONTROL Integrações]**. Faça upload do novo certificado. Para obter mais informações, consulte as instruções em [Criar integração com o Console do desenvolvedor](#create-adobe-i-o-integration).
+1. Acesse [https://console.adobe.io](https://console.adobe.io) e navegue até os Serviços de conteúdo inteligente existentes na página **[!UICONTROL Integrações]**. Faça upload do novo certificado. Para obter mais informações, consulte as instruções em [Criar integração do Console do Desenvolvedor do Adobe](#create-adobe-i-o-integration).
 
-### Criar integração com o Console do desenvolvedor {#create-adobe-i-o-integration}
+### Criar integração do Console do Desenvolvedor do Adobe {#create-adobe-i-o-integration}
 
-Para usar APIs do Serviço de conteúdo inteligente, crie uma integração no Console do desenvolvedor para obter [!UICONTROL Chave da API] (gerada no campo [!UICONTROL ID do CLIENTE] da integração do Console do desenvolvedor), [!UICONTROL ID DA CONTA TÉCNICA], [!UICONTROL ID DA ORGANIZAÇÃO] e [!UICONTROL CLIENT a9/> para [!UICONTROL Configurações do serviço de marcação inteligente de ativos] da configuração de nuvem em [!DNL Experience Manager].]
+Para usar APIs do Serviço de conteúdo inteligente, crie uma integração no Console do desenvolvedor do Adobe para obter [!UICONTROL Chave da API] (gerada no campo [!UICONTROL ID do CLIENTE] da integração do Console do desenvolvedor do Adobe), [!UICONTROL ID DA CONTA TÉCNICA], [!UICONTROL ID DA ORGANIZAÇÃO] e [!UICONTROL CLIENT T] para [!UICONTROL Configurações do serviço de marcação inteligente de ativos] da configuração de nuvem em [!DNL Experience Manager].
 
 1. Acesse [https://console.adobe.io](https://console.adobe.io/) em um navegador. Selecione a conta e verifique se a organização associada tem a função de administrador do sistema.
 
@@ -119,13 +116,13 @@ Para usar APIs do Serviço de conteúdo inteligente, crie uma integração no Co
    ![Na guia Visão geral, é possível revisar as informações da integração.](assets/integration_details.png)
 
 
-   *Figura: Detalhes da integração no Console do desenvolvedor*
+   *Figura: Detalhes da integração no Console do desenvolvedor do Adobe*
 
 ### Configurar o Serviço de Conteúdo Inteligente {#configure-smart-content-service}
 
-Para configurar a integração, use os valores dos campos [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET] e [!UICONTROL CLIENT ID] da integração do Console do desenvolvedor. Criar uma configuração de nuvem de Tags inteligentes permite a autenticação de solicitações de API da implantação [!DNL Experience Manager].
+Para configurar a integração, use os valores dos campos [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET] e [!UICONTROL CLIENT ID] da integração do Console do Desenvolvedor do Adobe. Criar uma configuração de nuvem de Tags inteligentes permite a autenticação de solicitações de API da implantação [!DNL Experience Manager].
 
-1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** para abrir o console [!UICONTROL Cloud Services].
+1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services herdadas]** para abrir o console [!UICONTROL Cloud Services].
 
 1. Em **[!UICONTROL Tags inteligentes do Assets]**, abra a configuração criada acima. Na página de configurações do serviço, clique em **[!UICONTROL Editar]**.
 
@@ -215,7 +212,7 @@ Por exemplo, não é uma boa ideia marcar todas essas imagens como `my-party` (p
 
 ![Imagens ilustrativas para exemplificar as diretrizes de treinamento](/help/assets/assets/do-not-localize/coherence.png)
 
-**Cobertura**: Use a variedade suficiente nas imagens do treinamento. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que o Experience Manager aprenda a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
+**Cobertura**: Use a variedade suficiente nas imagens do treinamento. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que a Experience Manager aprenda a se concentrar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
 
 Por exemplo, para a tag *model-down*, inclua mais imagens de treinamento semelhantes à imagem realçada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
 
@@ -233,7 +230,7 @@ Por exemplo, para a tag *casual-shoe*, a segunda imagem não é um bom candidato
 
 >[!NOTE]
 >
->A capacidade do Serviço de conteúdo inteligente de treinar em suas tags e aplicá-las em outras imagens depende da qualidade das imagens usadas no treinamento. Para obter melhores resultados, a Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço para cada tag.
+>A capacidade do Serviço de conteúdo inteligente de treinar em suas tags e aplicá-las em outras imagens depende da qualidade das imagens usadas no treinamento. Para obter melhores resultados, o Adobe recomenda o uso de imagens visualmente semelhantes para treinar o serviço para cada tag.
 
 ### Formação contínua {#periodic-training}
 
