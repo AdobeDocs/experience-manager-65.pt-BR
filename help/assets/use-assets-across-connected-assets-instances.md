@@ -3,7 +3,7 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d17749cb8e923848f8f81360c03b9afba7989ae2
+source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 29%
@@ -225,4 +225,4 @@ Para solucionar erros comuns, siga estas etapas:
 
 * Se referências remotas não forem recuperadas e resultar em uma mensagem de erro, verifique se a implantação do Sites está disponível e verifique se há problemas de conectividade de rede. Tente novamente mais tarde para verificar. [!DNL Assets] a implantação tenta estabelecer conexão duas vezes com a  [!DNL Sites] implantação e, em seguida, relata uma falha.
 
-![falha ao tentar novamente referências remotas de ativos](assets/reference-report-failure.png)
+   ![falha ao tentar novamente referências remotas de ativos](assets/reference-report-failure.png)
