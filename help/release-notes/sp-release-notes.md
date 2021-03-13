@@ -4,7 +4,7 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d96730eed6447815c40307a8d60b6ffc9ff45c2e
+source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 4%
@@ -36,7 +36,7 @@ Os principais recursos e aprimoramentos introduzidos em [!DNL Adobe Experience M
 
 * Ao usar [a funcionalidade Ativos conectados](/help/assets/use-assets-across-connected-assets-instances.md), agora é possível visualizar uma lista de todas as páginas [!DNL Sites] que usam o ativo. Essas referências a um ativo estão disponíveis na página [!UICONTROL Propriedades] de um ativo. Isso permite que administradores, profissionais de marketing e bibliotecas tenham uma visão completa do uso dos ativos, permitindo um melhor rastreamento, gerenciamento e consistência da marca.
 
-* Ao excluir um ativo referenciado em uma página da Web, [!DNL Experience Manager] exibe um aviso. É possível forçar a exclusão de um ativo referenciado ou verificar e modificar as referências exibidas na página [!DNL Properties] do ativo. Clicar nas referências abre as páginas [!DNL Sites] locais e remotas.
+* Ao excluir um ativo referenciado em uma página da Web, [!DNL Experience Manager] [exibe um aviso](/help/assets/use-assets-across-connected-assets-instances.md#asset-usage-references). É possível forçar a exclusão de um ativo referenciado ou verificar e modificar as referências exibidas na página [!DNL Properties] do ativo. Clicar nas referências abre as páginas [!DNL Sites] locais e remotas.
 
 * Classificação das páginas da Live Copy disponíveis para implantação usando as propriedades [!UICONTROL Nome], [!UICONTROL Data da última modificação,] e [!UICONTROL Data da última implantação].
 
