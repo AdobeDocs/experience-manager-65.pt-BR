@@ -3,9 +3,9 @@ title: Gerencie metadados de seus ativos digitais em [!DNL Adobe Experience Mana
 description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] possibilita organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 31dcf48691fa849f757579e2e57dc3a9c2bbbbee
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2340'
 ht-degree: 11%
 
 ---
@@ -57,9 +57,9 @@ Para editar os metadados de um ativo na interface do usuário [!DNL Assets], sig
    >
    >Se um campo de texto estiver vazio, não há nenhum conjunto de metadados existente. Você pode inserir um valor no campo e salvá-lo para adicionar essa propriedade de metadados.
 
-Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados XMP. O fluxo de trabalho de gravação de metadados adiciona os metadados ao binário original. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e novas propriedades (incluindo propriedades personalizadas como `cq:tags`) são adicionadas com o schema .
+Quaisquer alterações nos metadados de um ativo são gravadas de volta no binário original como parte de seus dados de XMP. O fluxo de trabalho de gravação de metadados adiciona os metadados ao binário original. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e novas propriedades (incluindo propriedades personalizadas como `cq:tags`) são adicionadas com o schema .
 
-O write-back de XMP é suportado e ativado para as plataformas e os formatos de arquivo descritos em [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
+XMP gravação é suportada e ativada para as plataformas e formatos de arquivo descritos em [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
 
 ## Editar propriedades de metadados de vários ativos {#editing-metadata-properties-of-multiple-assets}
 
@@ -78,27 +78,21 @@ Para personalizar a página de propriedades de metadados, incluindo adicionar, m
 1. Selecione os ativos para os quais deseja editar propriedades comuns.
 1. Na barra de ferramentas, clique em **[!UICONTROL Properties]** para abrir a página de propriedades dos ativos selecionados.
 1. Modifique as propriedades de metadados para ativos selecionados nas várias guias.
-1. Para exibir o editor de metadados para um ativo específico, cancele a seleção dos ativos restantes na lista. Os campos do editor de metadados são preenchidos com os metadados do ativo específico.
-
-   >[!NOTE]
-   >
-   >* Na página de propriedades, é possível remover ativos da lista de ativos cancelando a seleção. A lista de ativos tem todos os ativos selecionados por padrão. Os metadados dos ativos que você remove da lista não são atualizados.
-   >* Na parte superior da lista de ativos, marque a caixa de seleção ao lado de **[!UICONTROL Título]** para alternar entre selecionar os ativos e limpar a lista.
-
-
-1. Para selecionar um esquema de metadados diferente para os ativos, clique em **[!UICONTROL Settings]** na barra de ferramentas e selecione o esquema desejado.
-1. Salve as alterações.
+1. Para exibir os metadados de um ativo específico, cancele a seleção dos ativos restantes na lista. Se você cancelar a seleção de alguns ativos na página [!UICONTROL Propriedades], os metadados desses ativos não serão atualizados.
+1. Para selecionar um esquema de metadados diferente para os ativos, clique em **[!UICONTROL Settings]** na barra de ferramentas e selecione um esquema. Clique em **[!UICONTROL Salvar e fechar]**.
 1. Para anexar os novos metadados aos existentes em campos que contêm vários valores, selecione o **[!UICONTROL Modo anexar]**. Se você não selecionar essa opção, os novos metadados substituirão os existentes nos campos. Clique em **[!UICONTROL Enviar]**.
 
-   >[!CAUTION]
-   >
-   >Em campos de valor único, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o **[!UICONTROL Modo anexar]**.
+![O esquema de metadados em massa se aplica a vários ativos](assets/metadata-schema-bulk-edit.gif)
+
+>[!CAUTION]
+>
+>Em campos de valor único, os novos metadados não são anexados ao valor existente no campo mesmo se você selecionar o **[!UICONTROL Modo anexar]**.
 
 ## Importar metadados {#import-metadata}
 
 [!DNL Assets] permite importar metadados de ativos em massa usando um arquivo CSV. É possível fazer atualizações em massa dos ativos recém-carregados ou dos ativos existentes ao importar um arquivo CSV. Também é possível assimilar metadados de ativos em massa de sistemas de terceiros no formato CSV.
 
-A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados para vários ativos pode exigir muitos recursos devido à atividade de gravação de XMP, caso o sinalizador de fluxo de trabalho esteja marcado. Planeje essa importação durante o uso do servidor simplificado para que o desempenho para outros usuários não seja afetado.
+A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados para vários ativos pode consumir muitos recursos devido XMP atividade de write-back se o sinalizador de workflow estiver marcado. Planeje essa importação durante o uso do servidor simplificado para que o desempenho para outros usuários não seja afetado.
 
 >[!NOTE]
 >
@@ -114,7 +108,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | [!UICONTROL Tamanho do lote] | Número de ativos em um lote para o qual os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
    | [!UICONTROL Separador de campos] | O valor padrão é `,` (uma vírgula). É possível especificar qualquer outro caractere. |
    | [!UICONTROL Delimitador de múltiplo valor] | Separador para valores de metadados. O valor padrão é `|`. |
-   | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definido como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho [!UICONTROL DAM Metadata WriteBack] (que grava metadados nos dados binários do XMP). Ativar workflows de inicialização torna o sistema mais lento. |
+   | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definido como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho [!UICONTROL DAM Metadata WriteBack] (que grava metadados nos dados binários de XMP). Ativar workflows de inicialização torna o sistema mais lento. |
    | [!UICONTROL Nome de coluna do caminho do ativo] | Define o nome da coluna para o arquivo CSV com ativos. |
 
 1. Clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é exibida na caixa de entrada [!UICONTROL Notification].
