@@ -4,9 +4,9 @@ description: Novidades do  [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c6d11f63420040a500bbb75f1146c29f64bdcc5
+source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
 workflow-type: tm+mt
-source-wordcount: '2883'
+source-wordcount: '3015'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,22 @@ Agora é possível classificar as páginas da Live Copy disponíveis para implan
 >[!NOTE]
 >
 >O pacote complementar de [!DNL Experience Manager Forms] é disponibilizado uma semana após a versão agendada do [!DNL Experience Manager] Service Pack.
+
+### Mostrar ou ocultar o componente CAPTCHA em um formulário adaptável com base nas regras {#show-hide-captcha}
+
+Agora é possível validar CAPTCHA no envio de formulário adaptável ou na ação do usuário. Você também pode adicionar condições para validar CAPTCHA em uma ação do usuário e mostrar ou ocultar o componente CAPTCHA em um formulário adaptável com base em regras.
+
+### Adicionar serviços CAPTCHA personalizados {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] O fornece suporte pronto para uso para usar o Google reCAPTCHA (é necessária uma licença separada de APIs do Google reCAPTCHA) como um serviço de validação CAPTCHA. Você também pode usar um serviço CAPTCHA personalizado para validar CAPTCHAs.
+
+### Outras melhorias {#other-enhancements-forms-6580}
+
+* Melhoria na acessibilidade do componente [!DNL Experience Manager Forms] do Seletor de datas.
+
+* Adição de suporte para gerar uma Comunicação interativa no formato PCL usando a API PrintChannel.
+
+* Ao executar uma conversão PDFG, agora é possível ativar ou desativar as alterações de registro [!DNL Experience Manager Forms] para geração de marcadores personalizados.
 
 ## Principais recursos dos [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs} anteriores
 
@@ -158,7 +174,7 @@ O suporte para imagens 3D em [!DNL Dynamic Media] permite que os clientes publiq
 
 O canal de autorização entre [!DNL Experience Manager Assets] e [!DNL Brand Portal] é alterado. Anteriormente, [!DNL Brand Portal] era configurado na interface clássica por meio do Gateway OAuth herdado, que usa a troca de token JWT para obter um token de Acesso IMS para autorização. [!DNL Experience Manager Assets] O agora é configurado com o  [!DNL Brand Portal] por meio do  [!DNL Adobe I/O], que obtém um token IMS para autorização do  [!DNL Brand Portal] locatário.
 
-As etapas para configurar [!DNL Experience Manager Assets] com [!DNL Brand Portal] são diferentes dependendo da sua versão [!DNL Experience Manager] e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos do Experience Manager com o Brand Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) para obter detalhes.
+As etapas para configurar [!DNL Experience Manager Assets] com [!DNL Brand Portal] são diferentes dependendo da sua versão [!DNL Experience Manager] e se você está configurando pela primeira vez ou atualizando as configurações existentes. Consulte [Configurar ativos do Experience Manager com o Brand Portal](https://docs.adobe.com/content/help/pt-BR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) para obter detalhes.
 
 #### Aprimoramentos de acessibilidade (6.5.4.0) {#accessibility-enhancements}
 
