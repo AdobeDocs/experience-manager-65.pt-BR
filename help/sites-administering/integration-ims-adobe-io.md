@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07f354ccfb8741f0de4fc85ba1575ead3b8ea6e4
+source-git-commit: 498896dccf80065195cc945b01cb8d037b8f6dab
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1557'
 ht-degree: 1%
 
 ---
@@ -231,7 +231,7 @@ A configuração agora pode ser mencionada para um Cloud Service para usar a API
 1. Insira os detalhes na guia **Configurações do Adobe Target**:
 
    * **Autenticação**: IMS
-   * **ID** do locatário: a ID do locatário do Adobe IMS. Consulte também a seção [ID do locatário e Código do cliente](#tenant-client) abaixo.
+   * **ID** do locatário: a ID do locatário do Adobe IMS. Consulte também a seção [ID do locatário e Código do cliente](#tenant-client) .
 
       >[!NOTE]
       >
@@ -242,7 +242,7 @@ A configuração agora pode ser mencionada para um Cloud Service para usar a API
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Em seguida, você usaria `yourtenantid`.
-   * **Código** do cliente: Consulte a  [ID do locatário e a ](#tenant-client) Codese do cliente abaixo.
+   * **Código** do cliente: Consulte a ID do  [locatário e a ](#tenant-client) Codesecção do cliente.
    * **Configuração** IMS: selecione o nome da Configuração IMS
    * **Tipo** de API: REST
    * **Configuração** do A4T Analytics Cloud: Selecione a configuração de nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo. Se você não vir a configuração da nuvem, consulte a observação em [Configuração do A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
