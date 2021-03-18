@@ -4,9 +4,9 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 60764db23115e7f548a82a67955331da2b858973
+source-git-commit: dfaa25ea72e50b60b8a40883ffb0241c131cc846
 workflow-type: tm+mt
-source-wordcount: '2812'
+source-wordcount: '3352'
 ht-degree: 4%
 
 ---
@@ -168,6 +168,56 @@ Esta é a lista de correções fornecidas na versão [!DNL Experience Manager] 6
 >
 >O [!DNL Experience Manager Forms] lança os pacotes complementares uma semana após a data programada de lançamento do [!DNL Experience Manager] Service Pack.
 
+**Formulários adaptáveis**
+
+* Ao inserir uma tabela com uma linha repetível em um painel repetível que tenha várias instâncias em um formulário adaptável, a tabela sempre é adicionada à primeira instância do painel (NPR-35635).
+
+* Quando o foco da guia atinge o componente CAPTCHA novamente depois de verificá-lo com êxito uma vez em um formulário adaptável, [!DNL Experience Manager Forms] exibe a mensagem de erro `Provide Captcha phrase to proceed` (NPR-35539).
+
+**Comunicação interativa**
+
+* Ao enviar um formulário traduzido, as mensagens de envio são exibidas em inglês e não são traduzidas para o idioma apropriado (NPR-35808).
+
+* Quando você inclui uma condição de ocultação no XDP ou fragmentos de documento anexados, a Comunicação interativa falha ao carregar (NPR-35745).
+
+**Gerenciamento de correspondência**
+
+* Ao editar uma carta, os módulos com condições levam mais tempo para serem carregados (NPR-35325).
+
+* Quando você seleciona um ativo do painel de navegação esquerdo que não está incluído em uma carta e, em seguida, seleciona o próximo ativo, o realce azul não é removido do ativo selecionado anteriormente (NPR-35851).
+
+* Ao editar campos de texto em uma carta, [!DNL Experience Manager Forms] exibe a mensagem de erro `Text Edit Failed` (CQ-4313770).
+
+**Fluxo de trabalho**
+
+* Quando você tenta abrir um formulário adaptável em um aplicativo móvel [!DNL Experience Manager Forms] para iOS, o aplicativo para de responder (CQ-4314825).
+
+* A guia [!UICONTROL To-do] no espaço de trabalho HTML exibe caracteres HTML (NPR-35298).
+
+**XMLFM**
+
+* Ao gerar um documento XML usando o Serviço de Saída, o erro `OutputServiceException` ocorre para alguns arquivos XML (CQ-4311341, CQ-4313893).
+
+* Ao aplicar propriedade de sobrescrito ao primeiro caractere do marcador, o tamanho do marcador fica menor (CQ-4306476).
+
+* Os PDF forms gerados usando o Serviço de saída não incluem bordas (CQ-4312564).
+
+**Designer**
+
+* Ao abrir um arquivo XDP no [!DNL Experience Manager Forms] Designer, um arquivo designer.log é gerado na mesma pasta do arquivo XDP (CQ-4309427, CQ-4310865).
+
+**Formulários HTML5**
+
+* Ao marcar uma caixa de seleção em um formulário adaptável no [!DNL Safari] navegador da Web para [!DNL iOS 14.1 or 14.2], campos adicionais não serão exibidos (NPR-35652).
+
+**Gerenciamento Forms**
+
+* Nenhuma mensagem de confirmação para indicar o upload em massa bem-sucedido de arquivos XDP no repositório CRX (NPR-35546).
+
+**Segurança de documentos**
+
+* Vários problemas relatados para a opção [!UICONTROL Editar Política] na Interface do usuário do administrador (NPR-35747).
+
 Para obter informações sobre atualizações de segurança, consulte a página [Boletins de segurança do Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Instalar 6.5.8.0 {#install}
@@ -223,6 +273,32 @@ B. Use a API HTTP [do Gerenciador de Pacotes](/help/sites-administering/package-
 1. O pacote OSGi `org.apache.jackrabbit.oak-core` é da versão 1.22.3 ou posterior (Use o Console da Web: `/system/console/bundles`).
 
 Para conhecer as plataformas certificadas para funcionar com esta versão, consulte os [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+
+### Instale o pacote complementar do Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>Pule se você não estiver usando o Experience Manager Forms. As correções no Experience Manager Forms são entregues por meio de um pacote complementar separado por uma semana após a versão agendada do [!DNL Experience Manager] Service Pack.
+
+1. Certifique-se de ter instalado o Adobe Experience Manager Service Pack.
+1. Baixe o pacote complementar do Forms correspondente listado em [Versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para seu sistema operacional.
+1. Instale o pacote complementar do Forms conforme descrito em [Instalação de pacotes complementares do AEM Forms](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
+
+>[!NOTE]
+>
+>AEM 6.5.8.0 inclui uma nova versão do [Pacote de Compatibilidade AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Se você estiver usando uma versão mais antiga do Pacote de Compatibilidade do AEM Forms e estiver atualizando para AEM 6.5.8.0, instale a versão mais recente do pacote após a instalação do Pacote de Suplementos do Forms.
+
+### Instalar o Adobe Experience Manager Forms no JEE {#install-aem-forms-jee-installer}
+
+>[!NOTE]
+>
+>Pule se você não estiver usando o AEM Forms no JEE. As correções no Adobe Experience Manager Forms no JEE são entregues por meio de um instalador separado.
+
+Para obter informações sobre como instalar o instalador cumulativo do Experience Manager Forms no JEE e na configuração pós-implantação, consulte as [notas de versão](jee-patch-installer-65.md).
+
+>[!NOTE]
+>
+>Depois de instalar o instalador cumulativo do Experience Manager Forms no JEE, instale o pacote complementar mais recente do Forms, exclua o pacote do complemento Forms da pasta `crx-repository\install` e reinicie o servidor.
 
 ### UberJar {#uber-jar}
 
