@@ -1,5 +1,5 @@
 ---
-title: Aplicar predefinições do visualizador de Dynamic Media
+title: Aplicação de predefinições do visualizador do Dynamic Media
 description: Saiba como aplicar predefinições do visualizador no Dynamic Media
 uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
 contentOwner: Rick Brough
@@ -7,10 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
+feature: Predefinições do visualizador
+role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '222'
 ht-degree: 25%
 
 ---
@@ -18,14 +20,14 @@ ht-degree: 25%
 
 # Aplicar predefinições do visualizador do Dynamic Media {#applying-viewer-presets}
 
-Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizações ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Você pode aplicar qualquer predefinição do visualizador criada pelo administrador a um ativo.
+Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Você pode aplicar predefinições do visualizador criadas pelo administrador a um ativo.
 
 Se você for um administrador e precisar gerenciar, criar, classificar e excluir predefinições do visualizador, consulte [Gerenciar predefinições do visualizador](managing-viewer-presets.md).
 
-Consulte também [Predefinições do Visualizador de Publicação](managing-viewer-presets.md#publishing-viewer-presets).
+Consulte também [Predefinições do visualizador de publicação](managing-viewer-presets.md#publishing-viewer-presets).
 
-Talvez não seja necessário publicar predefinições do visualizador, dependendo do modo de publicação utilizado.
-Qualquer problema com as predefinições do visualizador, consulte [Resolução de problemas do Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
+Talvez não seja necessário publicar predefinições do visualizador, dependendo do modo de publicação usado.
+Qualquer problema com as predefinições do visualizador, consulte [Solução de problemas do Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Aplicar uma predefinição do visualizador do Dynamic Media a um ativo {#applying-a-viewer-preset-to-an-asset}
 
@@ -40,4 +42,4 @@ Qualquer problema com as predefinições do visualizador, consulte [Resolução 
 
 ## Obter URLs predefinidos do visualizador {#obtaining-viewer-preset-urls}
 
-Para obter os URLs das predefinições do visualizador, consulte [Vincular URLs à sua Aplicação web](linking-urls-to-yourwebapplication.md).
+Para obter os URLs das Predefinições do visualizador, consulte [Vincular URLs à sua aplicação web](linking-urls-to-yourwebapplication.md).
