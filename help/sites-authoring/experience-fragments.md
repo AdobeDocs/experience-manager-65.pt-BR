@@ -1,8 +1,8 @@
 ---
 title: Fragmentos de experiência
 seo-title: Fragmentos de experiência
-description: 'null'
-seo-description: nulo
+description: Fragmentos de experiência
+seo-description: 'null'
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5c88d9cfdd6238961aa46d36ebc1206a5d0507e0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 97%
 
 ---
@@ -240,7 +240,7 @@ Agora você pode usar o Fragmento de experiência ao criar suas páginas:
 
 1. Crie uma instância do componente do fragmento de experiência arrastando o componente do navegador Componentes até o sistema de parágrafos da página:
 
-   ![xf-06](assets/xf-08.png)
+   ![xf-08](assets/xf-08.png)
 
 1. Adicione o Fragmento de experiência real à ocorrência de componente:
 
