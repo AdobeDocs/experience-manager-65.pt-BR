@@ -1,6 +1,6 @@
 ---
-title: Gerar Documento de registro para formulários adaptáveis
-seo-title: Gerar Documento de registro para formulários adaptáveis
+title: Gerar documento de registro para formulários adaptáveis
+seo-title: Gerar documento de registro para formulários adaptáveis
 description: Explica como você pode gerar um modelo para um documento de registro (DoR) para formulários adaptáveis.
 seo-description: Explica como você pode gerar um modelo para um documento de registro (DoR) para formulários adaptáveis.
 uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
@@ -9,10 +9,11 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: fa3d5923784a8d89e2b440412d2b88790de3e39e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2665'
 ht-degree: 3%
 
 ---
@@ -22,67 +23,67 @@ ht-degree: 3%
 
 ## Visão geral {#overview}
 
-Depois de enviar um formulário, os clientes geralmente desejam manter um registro, em formato impresso ou em formato de documento, das informações que preencheram no formulário para referência futura. Isso é conhecido como um documento de registro.
+Depois de enviar um formulário, os clientes geralmente desejam manter um registro, em formato impresso ou de documento, das informações que preencheram no formulário para referência futura. Isso é chamado de documento de registro.
 
 Este artigo explica como gerar um documento de registro para formulários adaptáveis.
 
 >[!NOTE]
 >
->A geração automática de documento de registro não é suportada em formulários adaptativos baseados em XFA. Entretanto, você pode usar o XDP usado para criar o formulário adaptável como documento de registro.
+>A geração automática de documento de registro não é compatível com formulários adaptáveis baseados em XFA. No entanto, você pode usar o XDP usado para criar o formulário adaptável como documento de registro.
 
-## Tipos de formulário adaptáveis e seus documentos de registro {#adaptive-form-types-and-their-documents-of-record}
+## Tipos de formulário adaptável e seus documentos de registro {#adaptive-form-types-and-their-documents-of-record}
 
 Ao criar um formulário adaptável, é possível selecionar um modelo de formulário. Suas opções são:
 
-* [Modelos ](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
-de formulárioPermite selecionar um modelo XFA para o formulário adaptável. Ao selecionar um modelo XFA, você pode usar o arquivo XDP associado para o documento de registro, conforme descrito acima.
+* [](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
+Modelos de formulárioPermite selecionar um modelo XFA para seu formulário adaptável. Ao selecionar um modelo XFA, você pode usar o arquivo XDP associado para o documento de registro, conforme descrito acima.
 
-* [Esquema XML](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
-Permite selecionar uma definição de schema XML para o formulário adaptável. Ao selecionar um schema XML para o formulário adaptável, é possível:
+* [Esquema ](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
+XML Permite selecionar uma definição de esquema XML para o formulário adaptável. Ao selecionar um esquema XML para o formulário adaptável, é possível:
 
-   * Associe um modelo XFA ao documento de registro. Certifique-se de que o modelo XFA associado use o mesmo schema XML do formulário adaptável
+   * Associe um modelo XFA para o documento de registro. Certifique-se de que o modelo XFA associado use o mesmo esquema XML que o formulário adaptável
    * Gerar automaticamente documento de registro
 
 * Nenhum
 Permite criar um formulário adaptável sem um modelo de formulário. O documento de registro é gerado automaticamente para o formulário adaptável.
 
-Ao selecionar um modelo de formulário, configure o documento de registro usando as opções disponíveis em Documento de Gravar configuração de modelo. Consulte [Documento da Configuração do Modelo de Registro](#document-of-record-template-configuration).
+Ao selecionar um modelo de formulário, configure o documento de registro usando as opções disponíveis em Document of Record Template Configuration. Consulte [Documento de configuração de modelo de registro](#document-of-record-template-configuration).
 
 ## Documento gerado automaticamente do registro {#automatically-generated-document-of-record}
 
-Um documento de registro permite que seus clientes mantenham uma cópia do formulário enviado para fins de impressão. Quando você gera automaticamente um documento de registro, toda vez que você altera o formulário, seu documento de registro é atualizado imediatamente. Por exemplo, você remove o campo de idade para clientes que selecionam Estados Unidos da América como seu país. Quando esses clientes geram um documento de registro, o campo de idade não é visível para eles no documento de registro.
+Um documento de registro permite que seus clientes mantenham uma cópia do formulário enviado para fins de impressão. Quando um documento de registro é gerado automaticamente, sempre que você altera o formulário, o documento de registro é atualizado imediatamente. Por exemplo, você remove o campo de idade dos clientes que selecionam os Estados Unidos da América como seu país. Quando esses clientes geram um documento de registro, o campo idade não é visível para eles no documento de registro.
 
 O documento de registro gerado automaticamente tem as seguintes vantagens:
 
-* Ele cuida do vínculo de dados.
-* Oculta automaticamente os campos marcados como excluídos do documento de registro no momento do envio. Não é necessário nenhum esforço adicional.
+* Ela cuida do vínculo de dados.
+* Ele oculta automaticamente os campos marcados como excluídos do documento de registro no momento do envio. Não é necessário qualquer esforço adicional.
 * Ele economiza tempo para projetar o documento do modelo de registro.
-* Ele permite que você experimente estilos e aparência diferentes usando diferentes modelos base e escolha o melhor estilo e aparência para o Documento de Registro. As aparências de estilo são opcionais e, se você não especificar estilos, os estilos do sistema serão definidos como padrão.
-* Isso garante que qualquer alteração no formulário seja refletida imediatamente no documento do registro.
+* Ele permite que você experimente diferentes estilos e aparência usando diferentes modelos base e escolha o melhor estilo e aparência para o Documento de registro. As aparências de estilo são opcionais e, se você não especificar o estilo, os estilos do sistema serão definidos como padrão.
+* Garante que qualquer alteração no formulário seja refletida imediatamente no documento de registro.
 
 ## Componentes para gerar automaticamente um documento de registro {#components-to-automatically-generate-a-document-of-record}
 
 Para gerar um documento de registro para formulários adaptáveis, você precisa dos seguintes componentes:
 
-**Formulário adaptávelFormulário** adaptativo para o qual você deseja gerar um documento de registro.
+**Adaptive** formAdaptive form para o qual você deseja gerar um documento de registro.
 
-**Modelo base (recomendado) modelo** XFA (arquivo XDP) criado no AEM Designer. O modelo básico é usado para especificar informações de estilo e marca para o documento do modelo de registro.
+**Modelo base (recomendado)** Modelo XFA (arquivo XDP) criado AEM Designer. O modelo base é usado para especificar informações de estilo e identidade visual para o documento de modelo de registro.
 
 Consulte [Modelo base de um documento de registro](#base-template-of-a-document-of-record)
 
 >[!NOTE]
 >
->O modelo básico de um documento de registro também é chamado de meta-modelo de um documento de registro.
+>O modelo base de um documento de registro também é chamado de metamodelo de um documento de registro.
 
-**Documento do modelo** XFA de registro (arquivo XDP) gerado a partir de um formulário adaptável.
+**Documento de** template de registroModelo XFA (arquivo XDP) gerado de um formulário adaptável.
 
-Consulte [Documento da Configuração do Modelo de Registro](#document-of-record-template-configuration).
+Consulte [Documento de configuração de modelo de registro](#document-of-record-template-configuration).
 
-**Dados** do formulárioInformações preenchidas por um usuário no formulário adaptável. Ele se funde com o documento do modelo de registro para gerar o documento de registro.
+**Dados** do formulárioInformações preenchidas por um usuário no formulário adaptável. Ele se mescla com o documento do template de registro para gerar o documento de registro.
 
 ## Mapeamento de elementos de formulário adaptáveis {#mapping-of-adaptive-form-elements}
 
-As seções a seguir descrevem como os elementos de formulário adaptáveis aparecem no documento do registro.
+As seções a seguir descrevem como os elementos de formulário adaptáveis aparecem no documento de registro.
 
 ### Fields {#fields}
 
@@ -91,7 +92,7 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
   <tr>
    <th>Componente de formulário adaptável</th>
    <th>Componente XFA correspondente</th>
-   <th>Incluído por padrão no documento do modelo de registro?</th>
+   <th>Incluído por padrão no documento de registro Modelo?</th>
    <th>Notas</th>
   </tr>
   <tr>
@@ -120,7 +121,7 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
   </tr>
   <tr>
    <td>Rabiscar a assinatura</td>
-   <td>Gráfico de assinatura</td>
+   <td>Scribble de assinatura</td>
    <td>verdadeiro</td>
    <td> </td>
   </tr>
@@ -170,12 +171,12 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
    <td>Anexo de arquivo</td>
    <td> </td>
    <td>falso</td>
-   <td>Não disponível no documento do modelo de registro. Disponível somente em documento de registro por meio de anexos.</td>
+   <td>Não disponível no documento do modelo de registro. Disponível apenas no documento de registro através de anexos.</td>
   </tr>
  </tbody>
 </table>
 
-### Container {#containers}
+### Contêineres {#containers}
 
 <table>
  <tbody>
@@ -196,32 +197,32 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
 
 | Componente de formulário adaptável | Componente XFA correspondente | Notas |
 |---|---|---|
-| Imagem | Imagem | Os componentes TextDraw e Image, vinculados ou não, sempre aparecem no documento de registro de um formulário adaptável baseado em XSD, a menos que seja excluído usando o documento das configurações de registro. |
+| Imagem | Imagem | Os componentes TextDraw e Image, vinculados ou não, sempre aparecem no documento de registro para um formulário adaptável baseado em XSD, a menos que sejam excluídos usando as configurações de documento de registro. |
 | Texto | Texto |
 
 >[!NOTE]
 >
->Na interface clássica, você obtém guias diferentes para editar propriedades de campos.
+>Na interface clássica, você obtém guias diferentes para editar as propriedades dos campos.
 
 ### Tabelas {#tables}
 
-Os componentes adaptáveis da tabela de formulários, como cabeçalho, rodapé e mapa de linhas, para os componentes XFA correspondentes. Você pode mapear painéis repetíveis em tabelas em documento de registro.
+Os componentes da tabela de formulários adaptáveis, como cabeçalho, rodapé e mapa de linhas para os componentes XFA correspondentes. Você pode mapear painéis repetitivos para tabelas no documento de registro.
 
-## Modelo básico de um documento de registro {#base-template-of-a-document-of-record}
+## Modelo base de um documento de registro {#base-template-of-a-document-of-record}
 
-O modelo base fornece informações de estilo e aparência ao documento do registro. Permite personalizar a aparência padrão do documento de registro gerado automaticamente. Por exemplo, você deseja adicionar o logotipo da empresa no cabeçalho e as informações de copyright no rodapé do documento de registro. A página principal do modelo base é usada como uma página principal para o documento do modelo de registro. A página principal pode ter informações como cabeçalho de página, rodapé de página e número de página que você pode aplicar ao documento de registro. Você pode aplicar essas informações ao documento de registro usando o modelo básico para a geração automática do documento de registro. O uso do modelo base permite alterar as propriedades padrão dos campos.
+O modelo base fornece informações de estilo e aparência para o documento de registro. Permite personalizar a aparência padrão do documento de registro gerado automaticamente. Por exemplo, você deseja adicionar o logotipo da empresa no cabeçalho e as informações de direitos autorais no rodapé do documento de registro. A página principal do modelo base é usada como uma página principal para o documento de modelo de registro. A página principal pode ter informações como cabeçalho de página, rodapé de página e número de página que você pode aplicar ao documento de registro. Você pode aplicar essas informações ao documento de registro usando o modelo base para a geração automática de documento de registro. O uso do template base permite alterar as propriedades padrão dos campos.
 
-Siga [Convenções de modelo básico](#base-template-conventions) ao criar o modelo base.
+Siga [Convenções de modelo base](#base-template-conventions) ao criar o modelo base.
 
 ## Convenções de modelo base {#base-template-conventions}
 
-Um modelo base é usado para definir cabeçalho, rodapé, estilo e aparência para um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página principal no modelo base é copiada e usada como uma página principal para o documento do registro, que contém cabeçalho, rodapé, número de página ou qualquer outra informação que deve aparecer em todas as páginas no documento do registro. Se você estiver usando um modelo base que não esteja em conformidade com as convenções de modelo base, a primeira página principal do modelo base ainda será usada no documento do modelo de registro. É altamente recomendável que você crie seu modelo base de acordo com suas convenções e o use para a geração automática do documento de registro.
+Um modelo base é usado para definir o cabeçalho, o rodapé, o estilo e a aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página principal no modelo base é copiada e usada como uma página principal para o documento de registro, que contém cabeçalho, rodapé, número de página ou qualquer outra informação que deve aparecer em todas as páginas no documento de registro. Se você estiver usando um modelo base que não está em conformidade com as convenções do modelo base, a primeira página principal do modelo base ainda será usada no documento de modelo de registro. É altamente recomendável criar seu modelo base de acordo com suas convenções e usá-lo para a geração automática de documento de registro.
 
 **Convenções de página principais**
 
 * No modelo base, você deve nomear o subformulário raiz como `AF_METATEMPLATE` e a página principal como `AF_MASTERPAGE`.
 
-* A página principal com o nome `AF_MASTERPAGE` localizada sob o subformulário raiz `AF_METATEMPLATE` tem preferência por extrair informações de cabeçalho, rodapé e estilo.
+* A página principal com o nome `AF_MASTERPAGE` localizado no subformulário raiz `AF_METATEMPLATE` recebe preferência por extrair informações de cabeçalho, rodapé e estilo.
 
 * Se `AF_MASTERPAGE` estiver ausente, a primeira página principal presente no modelo base será usada.
 
@@ -234,89 +235,89 @@ Um modelo base é usado para definir cabeçalho, rodapé, estilo e aparência pa
 Para criar um modelo base, faça o seguinte no AEM Designer.
 
 1. Clique em **Arquivo > Novo**.
-1. Selecione a opção **Com base em um modelo**.
+1. Selecione a opção **Baseado em um template**.
 
-1. Selecione a categoria **Forms - Documento de Record**.
+1. Selecione a categoria **Forms - Document of Record**.
 1. Selecione **Modelo Base DoR**.
 1. Clique em **Next** e forneça as informações necessárias.
 
-1. (Opcional) Modifique o estilo e a aparência dos campos que você deseja aplicar aos campos no documento de registro.
+1. (Opcional) Modifique o estilo e a aparência dos campos que deseja aplicar nos campos do documento de registro.
 1. Salve o formulário.
 
-Agora é possível usar o formulário salvo como modelo base para o documento de registro.
-Não modifique ou remova quaisquer scripts presentes no modelo base.
+Agora você pode usar o formulário salvo como um modelo base para o documento de registro.
+Não modifique ou remova nenhum script presente no modelo base.
 
-**Modificando modelo base**
+**Modificação do modelo base**
 
-* Se você não estiver aplicando nenhum estilo sobre os campos no modelo base, é aconselhável remover esses campos do modelo base para que quaisquer atualizações no modelo base sejam automaticamente coletadas.
+* Se você não estiver aplicando nenhum estilo sobre campos no template base, é aconselhável remover esses campos do template base para que todas as atualizações no template base sejam selecionadas automaticamente.
 * Ao modificar o modelo base, não remova, adicione ou modifique scripts.
 
 >[!NOTE]
 >
->Projete modelo base usando convenções e seguindo rigorosamente as etapas acima.
+>Modelo de base de design usando convenções e seguindo rigorosamente as etapas acima.
 
 ## Documento de configuração modelo de registro {#document-of-record-template-configuration}
 
-Configure o documento do modelo de registro do formulário para permitir que os clientes baixem uma cópia fácil de imprimir do formulário enviado. Um arquivo XDP serve como o documento do modelo de registro. O documento de download de clientes de registro é formatado de acordo com o layout especificado no arquivo XDP.
+Configure o documento de modelo de registro do formulário para permitir que os clientes baixem uma cópia impressa amigável do formulário enviado. Um arquivo XDP serve como o documento do modelo de registro. O documento de download de clientes de registro é formatado de acordo com o layout especificado no arquivo XDP.
 
 Execute as seguintes etapas para configurar um documento de registro para formulários adaptáveis:
 
-1. Em AEM instância do autor, clique em **Forms > Forms e Documentos.**
-1. Selecione um formulário e clique em **Propriedades da Visualização**.
+1. Na instância AEM autor, clique em **Forms > Forms e Documents.**
+1. Selecione um formulário e clique em **Exibir Propriedades**.
 1. Na janela Propriedades, toque em **Modelo de formulário**.
 Também é possível selecionar um modelo de formulário ao criar um formulário.
 
    >[!NOTE]
    >
-   >Na guia Modelo de formulário, selecione **Schema** ou **Nenhum** no menu suspenso **Selecionar de**. **[!UICONTROL O documento de registro não é compatível com formulários baseados em XFA ou adaptáveis com Modelo de formulário como modelo de formulário.]**
+   >Na guia Modelo de formulário, selecione **Esquema** ou **Nenhum** no menu suspenso **Selecionar de**. **[!UICONTROL O documento de registro não é compatível com formulários adaptáveis ou baseados em XFA com o modelo de formulário como modelo de formulário.]**
 
-1. Na seção Documento de Configuração de modelo de registro da guia Modelo de formulário, selecione uma das seguintes opções.
+1. Na seção Document of Record Template Configuration da guia Form Model , selecione uma das seguintes opções.
 
-   **** NenhumSelecione essa opção se não quiser configurar o documento de registro para o formulário.
+   **** NenhumSelecione esta opção se não quiser configurar o documento de registro para o formulário.
 
-   **Associar modelo de formulário como Documento de** modelo de registroSelecione esta opção se tiver um arquivo XDP que deseja usar como modelo para o documento de registro. Ao selecionar essa opção, todos os arquivos XDP disponíveis no repositório AEM Forms serão exibidos. Selecione o arquivo apropriado.
+   **Associar Modelo de Formulário como Documento de** Modelo de RegistroSelecione esta opção se tiver um arquivo XDP que deseja usar como modelo para o documento de registro. Ao selecionar essa opção, todos os arquivos XDP disponíveis no repositório AEM Forms são exibidos. Selecione o arquivo apropriado.
 
    O arquivo XDP selecionado é associado ao formulário adaptável.
 
-   **Gerar Documento de** RegistroSelecione esta opção para usar um arquivo XDP como modelo base para definir o estilo e a aparência do documento de registro. Ao selecionar essa opção, todos os arquivos XDP disponíveis no repositório AEM Forms serão exibidos. Selecione o arquivo apropriado.
+   **Gerar Documento de** RegistroSelecione esta opção para usar um arquivo XDP como modelo base para definir o estilo e a aparência do documento de registro. Ao selecionar essa opção, todos os arquivos XDP disponíveis no repositório AEM Forms são exibidos. Selecione o arquivo apropriado.
 
    >[!NOTE]
    >
-   >Verifique se o schema usado para criar formulários adaptáveis e schemas (schema de dados) do formulário XFA são os mesmos se:
+   >Certifique-se de que o esquema usado para criar um formulário adaptável e um esquema (esquema de dados) do Formulário XFA seja o mesmo se:
    >
    >
    >
-   >    * Seu formulário adaptável é baseado em schema
-   >    * Você está usando a opção **Associar modelo de formulário como o Documento do modelo de registro** para documento do registro
+   >    * O formulário adaptável é baseado em esquema
+   >    * Você está usando a opção **Associar Modelo de Formulário como o Documento de Registro Modelo** para o documento de registro
 
 
 1. Clique em **Concluído.**
 
-## Personalizar as informações de marca em documento do registro {#customize-the-branding-information-in-document-of-record}
+## Personalizar as informações da marca no documento de registro {#customize-the-branding-information-in-document-of-record}
 
-Ao gerar um documento de registro, você pode alterar as informações de marca do documento de registro na guia Documento de registro. A guia Documento de registro inclui opções como logotipo, aparência, layout, cabeçalho e rodapé, aviso e se você deseja incluir ou não opções de caixa de seleção e botão de opção não selecionadas.
+Ao gerar um documento de registro, você pode alterar as informações de marca do documento de registro na guia Documento de registro. A guia Documento de registro inclui opções como logotipo, aparência, layout, cabeçalho e rodapé, aviso de isenção de responsabilidade e se você deseja ou não incluir as opções de caixa de seleção e botão de opção não selecionadas.
 
-Para localizar as informações de marca inseridas na guia Documento de registro, verifique se a localidade do navegador está definida adequadamente. Para personalizar as informações de marca do documento de registro, execute as seguintes etapas:
+Para localizar as informações de marca inseridas na guia Document of Record , verifique se a localidade do navegador está definida adequadamente. Para personalizar as informações de marca do documento de registro, execute as seguintes etapas:
 
-1. Selecione um painel (painel raiz) no documento de registro e toque em ![configure](assets/configure.png).
-1. Toque em ![dortab](assets/dortab.png). A guia Documento de registro é exibida.
-1. Selecione o modelo padrão ou um modelo personalizado para renderizar o documento de registro. Se você selecionar o modelo padrão, uma pré-visualização em miniatura do documento de registro será exibida abaixo do menu suspenso Modelo.
+1. Selecione um painel (painel raiz) no documento de registro e toque em ![configurar](assets/configure.png).
+1. Toque em ![dortab](assets/dortab.png). A guia Document of Record é exibida.
+1. Selecione o modelo padrão ou um modelo personalizado para renderizar o documento de registro. Se você selecionar o modelo padrão, uma visualização em miniatura do documento de registro será exibida abaixo da lista suspensa Modelo .
 
    ![modelo de marca](assets/brandingtemplate.png)
 
-   Se você optar por selecionar um modelo personalizado, navegue por um XDP selecionado em seu servidor AEM Forms. Se você quiser usar um modelo que ainda não esteja no servidor AEM Forms, primeiro carregue o XDP no servidor AEM Forms.
+   Se você optar por selecionar um modelo personalizado, navegue por um XDP selecionado no servidor do AEM Forms. Se você quiser usar um modelo que ainda não esteja no servidor do AEM Forms, primeiro carregue o XDP no servidor do AEM Forms.
 
-1. Com base na seleção de um modelo padrão ou personalizado, algumas ou todas as propriedades a seguir são exibidas na guia Documento de registro. Especifique-os adequadamente:
+1. Com base na seleção de um modelo padrão ou personalizado, algumas ou todas as propriedades a seguir serão exibidas na guia Documento de registro. Especifique estes adequadamente:
 
-   * **Imagem** do logotipo: Você pode optar por usar a imagem do logotipo no formulário adaptável, escolher uma no DAM ou fazer upload de uma no computador.
+   * **Imagem** do logotipo: Você pode optar por usar a imagem do logotipo no formulário adaptável, escolher um DAM ou fazer upload de um de seu computador.
    * **Título do formulário**
    * **Texto do cabeçalho**
    * **Rótulo do aviso**
    * **Aviso**
    * **Texto do aviso**
-   * **Cor** do destaque: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no documento ou no PDF do registro
-   * **Família** de fontes: Família de fontes do texto no documento de gravar PDF
-   * **Para componentes de caixa de seleção e botão de opção, mostrar apenas os valores selecionados**
+   * **Cor** do destaque: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no documento ou registro em PDF
+   * **Família** de fontes: Família de fontes do texto no documento de registro PDF
+   * **Para os componentes Caixa de seleção e Botão de opção , mostrar somente os valores selecionados**
    * **Separador para vários valores selecionados**
    * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**
    * **Excluir campos ocultos do documento de registro**
@@ -324,7 +325,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
    >[!NOTE]
    >
-   >Se você estiver usando um modelo de formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades Cor do destaque e Família de fontes funcionem, verifique se o seguinte está presente no modelo de formulário adaptável sob o subformulário raiz:
+   >Se você estiver usando um modelo de formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades Cores do destaque e Família de fontes funcionem, verifique se o seguinte está presente no modelo de formulário adaptável abaixo do subformulário raiz:
 
    ```xml
    <proto>
@@ -338,13 +339,13 @@ Para localizar as informações de marca inseridas na guia Documento de registro
    </proto>
    ```
 
-1. Para salvar as alterações de marca, toque em Concluído.
+1. Para salvar as alterações da marca, toque em Concluído.
 
-## Layouts de tabela e coluna para painéis no Documento de Record {#table-and-column-layouts-for-panels-in-document-of-record}
+## Layouts de tabela e coluna para painéis no Documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Seu formulário adaptável pode ser longo, com vários campos de formulário. Talvez você não queira salvar um documento de registro como uma cópia exata do formulário adaptável. Agora é possível escolher um layout de tabela ou coluna para salvar um ou mais painéis de formulário adaptáveis no documento de gravar PDF.
+O formulário adaptável pode ser longo, com vários campos de formulário. Talvez você não queira salvar um documento de registro como uma cópia exata do formulário adaptável. Agora é possível escolher um layout de tabela ou coluna para salvar um ou mais painéis de formulário adaptáveis no documento de registrar PDF.
 
-Antes de gerar um documento de registro, nas configurações de um painel, selecione Layout para o Documento de registro desse painel como Tabela ou Coluna. Os campos no painel se organizam de acordo no documento de registro.
+Antes de gerar um documento de registro, nas configurações de um painel, selecione Layout para o documento de registro desse painel como Tabela ou Coluna. Os campos no painel são organizados adequadamente no documento de registro.
 
 ![Campos em um painel renderizado em um layout de tabela no documento de registro](assets/dortablelayout.png)
 
@@ -354,31 +355,31 @@ Campos em um painel renderizado em um layout de tabela no documento de registro
 
 Campos em um painel renderizado em um layout de coluna no documento de registro
 
-## Documento das configurações de registro {#document-of-record-settings}
+## Configurações do documento de registro {#document-of-record-settings}
 
-O documento das configurações de registro permite que você escolha as opções que deseja incluir no documento de registro. Por exemplo, um banco aceita nome, idade, número de segurança social e número de telefone em um formulário. O formulário gera um número de conta bancária e detalhes da sucursal. Você pode optar por exibir somente o nome, o número da previdência social, a conta bancária e os detalhes da ramificação no documento do registro.
+As configurações de documento de registro permitem que você escolha as opções que deseja incluir no documento de registro. Por exemplo, um banco aceita nome, idade, número de segurança social e número de telefone em um formulário. O formulário gera um número de conta bancária e detalhes da ramificação. Você pode optar por exibir somente o nome, o número da previdência social, a conta bancária e os detalhes da ramificação no documento de registro.
 
-O documento das configurações de registro de um componente está disponível em suas propriedades. Para acessar as propriedades de um componente, selecione-o e clique em ![cmppr](assets/cmppr.png) na sobreposição. As propriedades são listadas na barra lateral e você pode encontrar as seguintes configurações nela.
+O documento de configurações de registro de um componente está disponível em suas propriedades. Para acessar as propriedades de um componente, selecione o componente e clique em ![cmppr](assets/cmppr.png) na sobreposição. As propriedades são listadas na barra lateral e você pode encontrar as seguintes configurações nela.
 
 **Configurações de nível de campo**
 
-* **Excluir Do Documento Do Registro**: A definição da propriedade true exclui o campo do documento de registro. Esta é uma propriedade com capacidade de script chamada `excludeFromDoR`. Seu comportamento depende de **Excluir campos do DoR se a propriedade de nível de formulário oculta**.
+* **Excluir do documento de registro**: A definição da propriedade true exclui o campo do documento de registro. Essa é uma propriedade capaz de script chamada `excludeFromDoR`. Seu comportamento depende de **Excluir campos do DoR se a propriedade de nível de formulário oculta**.
 
-* **Exibir painel como tabela:** Configurar a propriedade exibe o painel como tabela em documento de registro se o painel tiver menos de 6 campos nela. Aplicável somente para painel.
-* **Excluir título do Documento de Registro:** Configurar a propriedade exclui o título do painel/tabela do documento de registro. Aplicável apenas para painel e tabela.
-* **Excluir descrição do Documento de Registro:** Configurar a propriedade exclui a descrição do painel/tabela do documento de registro. Aplicável apenas para painel e tabela.
+* **Exibir painel como tabela:** Definir a propriedade exibe o painel como tabela no documento de registro se o painel tiver menos de 6 campos. Aplicável somente para painel.
+* **Excluir título do Documento de registro:** Definir a propriedade exclui o título do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
+* **Excluir descrição do documento de registro:** definir a propriedade exclui a descrição do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
 
 **Configurações de nível de formulário**
 
-* **Incluir campos não vinculados em DoR:** A configuração da propriedade inclui campos não vinculados do formulário adaptativo baseado em Schema, em documento de registro. Por padrão, é verdadeiro.
-* **Excluir campos de DoR se ocultos:** Configurar a propriedade substitui o comportamento da propriedade de nível de campo &quot;Excluir do Documento do Registro&quot; quando não for verdadeiro. Se os campos estiverem ocultos no momento do envio do formulário, serão excluídos do documento do registro se a propriedade for definida como verdadeira, desde que a propriedade &quot;Excluir do Documento do registro&quot; não esteja definida.
+* **Incluir campos não vinculados no DoR:** a configuração da propriedade inclui campos não vinculados do formulário adaptável baseado em Esquema no documento de registro. Por padrão, é verdadeiro.
+* **Excluir campos do DoR se ocultos:** a configuração da propriedade substitui o comportamento da propriedade de nível de campo &quot;Excluir do documento de registro&quot; quando não é verdadeira. Se os campos estiverem ocultos no momento do envio do formulário, eles serão excluídos do documento de registro se a propriedade estiver definida como true, desde que a propriedade &quot;Excluir do documento de registro&quot; não esteja definida.
 
-## Considerações importantes ao trabalhar com o documento de registro {#key-considerations-when-working-with-document-of-record}
+## Considerações principais ao trabalhar com o documento de registro {#key-considerations-when-working-with-document-of-record}
 
-Lembre-se das seguintes considerações e limitações ao trabalhar no documento de registro para formulários adaptáveis.
+Lembre-se das considerações e limitações a seguir ao trabalhar no documento de registro de formulários adaptáveis.
 
-* O documento de modelos de registro não suporta Rich Text. Portanto, qualquer rich text no formulário adaptativo estático ou nas informações preenchidas pelo usuário final aparece como texto sem formatação no documento do registro.
-* Os fragmentos de documento em um formulário adaptável não aparecem no documento de registro. No entanto, os fragmentos de formulário adaptáveis são suportados.
-* O vínculo de conteúdo em documento de registro gerado para o formulário adaptativo baseado em Schema XML não é suportado.
-* A versão localizada do documento do registro é criada sob demanda para uma localidade quando o usuário solicita a renderização do documento do registro. A localização do documento do registro ocorre junto com a localização da forma adaptativa. Para obter mais informações sobre a localização do documento de formulários de registro e adaptativos, consulte [Usar AEM fluxo de trabalho de tradução para localizar formulários adaptáveis e documento de record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+* O documento de modelos de registro não suporta Rich Text. Portanto, qualquer rich text no formulário adaptável estático ou nas informações preenchidas pelo usuário final aparece como texto sem formatação no documento de registro.
+* Os fragmentos de documento em um formulário adaptável não aparecem no documento de registro. No entanto, fragmentos de formulário adaptáveis são compatíveis.
+* Não há suporte para vínculo de conteúdo no documento de registro gerado para o formulário adaptável baseado no Esquema XML.
+* A versão localizada do documento de registro é criada sob demanda para uma localidade quando o usuário solicita a renderização do documento de registro. A localização do documento de registro ocorre juntamente com a localização do formulário adaptável. Para obter mais informações sobre a localização do documento de formulários de registro e adaptáveis, consulte [Usar fluxo de trabalho de tradução AEM para localizar formulários adaptáveis e documentos de registro](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
