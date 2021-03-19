@@ -1,18 +1,19 @@
 ---
 title: Configuração de armazenamento
 seo-title: Configuração de armazenamento
-description: Como acessar o console de configuração do Armazenamento
-seo-description: Como acessar o console de configuração do Armazenamento
+description: Como acessar o Console de Configuração de Armazenamento
+seo-description: Como acessar o Console de Configuração de Armazenamento
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
+role: Administrador
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '209'
 ht-degree: 5%
 
 ---
@@ -20,42 +21,42 @@ ht-degree: 5%
 
 # Configuração de armazenamento {#storage-configuration}
 
-A configuração do armazenamento é o meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC).
+A configuração de armazenamento é o meio de identificar o armazenamento escolhido para o conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC).
 
-Essa configuração informa o código da AEM Communities sobre qual implementação do SRP (armazenamento resource provider, Provedor de recursos do servidor) deve ser usada ao acessar o UGC e deve refletir a topologia estabelecida quando o AEM foi implantado.
+Essa configuração informa o código AEM Communities sobre qual implementação do SRP (Storage Resource Provider, provedor de recursos de armazenamento) deve ser usada ao acessar o UGC e deve refletir a topologia estabelecida quando o AEM foi implantado.
 
-Para obter uma discussão sobre opções de armazenamento e topologias de implantação, visite:
+Para uma discussão sobre opções de armazenamento e topologias de implantação, visite:
 
 * [Armazenamento de conteúdo da comunidade](working-with-srp.md)
 * [Topologias recomendadas](topologies.md)
 
-## Console de configuração do armazenamento {#storage-configuration-console}
+## Console de configuração de armazenamento {#storage-configuration-console}
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
-No ambiente do autor, para acessar o console de configuração do armazenamento.
+No ambiente de criação, para acessar o console de configuração de armazenamento.
 
-* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuração do Armazenamento]**
+* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuração de Armazenamento]**
 
 Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 * Selecionar uma opção
-* Configurar apropriadamente
+* Configurar adequadamente
 
-   * Consulte os detalhes para [selecionar MSRP](msrp.md#select-msrp)
-   * Consulte os detalhes para [selecionar DSRP](dsrp.md#select-dsrp)
-   * Consulte os detalhes para [selecionar ASRP](asrp.md#select-asrp)
+   * Veja detalhes para [selecionar MSRP](msrp.md#select-msrp)
+   * Veja detalhes para [selecionar DSRP](dsrp.md#select-dsrp)
+   * Veja detalhes para [selecionar ASRP](asrp.md#select-asrp)
 
 * Selecione **[!UICONTROL Enviar]**.
 
-### Sobre o Armazenamento JCR {#about-jcr-storage}
+### Sobre o armazenamento JCR {#about-jcr-storage}
 
-Observe que se nenhuma seleção for feita, o padrão será o repositório AEM, JCR.
+Esteja ciente de que se nenhuma seleção for feita, o padrão será o repositório AEM, o JCR.
 
-O JCR é *e não* uma loja comum compartilhada pelos ambientes de autor e publicação. O conteúdo da comunidade estará visível somente do ambiente do autor ou publicação no qual foi criado.
+O JCR é *e não* um armazenamento comum compartilhado pelos ambientes de autor e publicação. O conteúdo da comunidade será visível somente no ambiente de criação ou publicação em que foi criado.
 
 Visite [JCR Store](jsrp.md) para obter mais informações.
 
 >[!NOTE]
 >
->A ausência do nó `srpc` em `/etc/socialconfig` indica o armazenamento padrão [JCR](jsrp.md).
+>A ausência do nó `srpc` em `/etc/socialconfig` indica o [armazenamento JCR padrão](jsrp.md).
