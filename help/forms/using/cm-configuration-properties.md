@@ -1,23 +1,24 @@
 ---
 title: Propriedades de configuração do gerenciamento de correspondência
 seo-title: Propriedades de configuração do gerenciamento de correspondência
-description: Este tópico explica como você pode modificar o Asset Composer com configurações específicas da solução. Este tópico detalha as propriedades que você pode editar, com suas descrições, valores padrão e valores aceitáveis.
-seo-description: Este tópico explica como você pode modificar o Asset Composer com configurações específicas da solução. Este tópico detalha as propriedades que você pode editar, com suas descrições, valores padrão e valores aceitáveis.
+description: Este tópico explica como você pode modificar o Asset Composer com configurações específicas da solução. Este tópico detalha as propriedades que podem ser editadas, com sua descrição, valores padrão e valores aceitáveis.
+seo-description: Este tópico explica como você pode modificar o Asset Composer com configurações específicas da solução. Este tópico detalha as propriedades que podem ser editadas, com sua descrição, valores padrão e valores aceitáveis.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
+feature: Gerenciamento de correspondência
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 3%
+source-wordcount: '879'
+ht-degree: 4%
 
 ---
 
 
-# Propriedades de Configuração do Gerenciamento de Correspondência {#correspondence-management-configuration-properties}
+# Propriedades de configuração do gerenciamento de correspondência {#correspondence-management-configuration-properties}
 
 Para configurar essas propriedades, abra o seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione **Configurações de gerenciamento de correspondência**.
 
@@ -39,42 +40,42 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr>
   <tr>
    <td>Largura mínima do número</td>
-   <td>Largura mínima a ser aplicada no campo de marcador/número, ao usar Listas numeradas além dos números romanos</td>
+   <td>Largura mínima a ser aplicada no campo marcador/número, ao usar Listas numeradas além de números romanos</td>
    <td>8,0 mm</td>
    <td>Qualquer número</td>
   </tr>
   <tr>
    <td><p>Largura mínima dos números romanos</p> </td>
-   <td><p>Largura mínima a ser aplicada no campo de marcador/número ao usar números romanos</p> </td>
+   <td><p>Largura mínima a ser aplicada no campo marcador/número, ao usar números romanos</p> </td>
    <td><p>12,7 mm</p> </td>
    <td><p>Qualquer número</p> </td>
   </tr>
   <tr>
    <td>Tipo de representação</td>
-   <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a pré-visualização da carta. </td>
+   <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a visualização da carta. </td>
    <td>Representação HTML</td>
-   <td>Representação HTML / representação de PDF</td>
+   <td>Representação HTML / Representação PDF</td>
   </tr>
   <tr>
-   <td><p>Ativar destaque do CCR PDF</p> </td>
-   <td><p>Permite destacar em PDF no aplicativo Criar correspondência</p> </td>
+   <td><p>Ativar o destaque do PDF CCR</p> </td>
+   <td><p>Habilita o destaque em PDF no aplicativo Criar correspondência</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Tipo de realce do público alvo</p> </td>
-   <td><p>Tipo de realce do público alvo no aplicativo Criar correspondência</p> </td>
+   <td><p>Tipo de realce do Target</p> </td>
+   <td><p>Tipo de realce do Target no aplicativo Criar correspondência</p> </td>
    <td><p>border</p> </td>
    <td><p>borda / preenchimento / nenhum</p> </td>
   </tr>
   <tr>
-   <td><p>Cor de realce do público alvo</p> </td>
-   <td><p>Cor de realce do público alvo no aplicativo Criar correspondência</p> </td>
+   <td><p>Cor de realce do Target</p> </td>
+   <td><p>Cor de realce do Target no aplicativo Criar correspondência</p> </td>
    <td><p>90;155;245</p> </td>
    <td><p>Qualquer cor RGB no formato R;G;B</p> </td>
   </tr>
   <tr>
-   <td><p>Tipo de realce de conteúdo</p> </td>
+   <td><p>Tipo de realce do conteúdo</p> </td>
    <td><p>Tipo de realce de conteúdo no aplicativo Criar correspondência</p> </td>
    <td><p>Preenchimento</p> </td>
    <td><p>borda / preenchimento / nenhum</p> </td>
@@ -86,7 +87,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>Qualquer cor RGB no formato R;G;B</p> </td>
   </tr>
   <tr>
-   <td><p>Tipo de realce de campo</p> </td>
+   <td><p>Tipo de realce do campo</p> </td>
    <td><p>Tipo de realce de campo no aplicativo Criar correspondência</p> </td>
    <td><p>fill</p> </td>
    <td><p>borda / preenchimento / nenhum</p> </td>
@@ -107,52 +108,52 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>Nome do parâmetro do documento PDF</p> </td>
    <td><p>Nome do parâmetro para documento PDF no pós-processo</p> </td>
    <td><p>inPDFDoc</p> </td>
-   <td><p>Qualquer nome de variável de string</p> </td>
+   <td><p>Qualquer nome da variável de string</p> </td>
   </tr>
   <tr>
    <td><p>Nome do parâmetro de dados XML</p> </td>
-   <td><p>Nome do parâmetro para documento XML (dados) no pós-processo</p> </td>
+   <td><p>Nome do parâmetro para documento XML (dados) em pós-processo</p> </td>
    <td><p>inXMLDoc</p> </td>
-   <td><p>Qualquer nome de variável de string</p> </td>
+   <td><p>Qualquer nome da variável de string</p> </td>
   </tr>
   <tr>
    <td><p>Nome do parâmetro do documento XDP</p> </td>
-   <td><p>Nome do parâmetro para o documento XDP enviado para o processo de publicação</p> </td>
+   <td><p>Nome do parâmetro para documento XDP enviado ao processo de publicação</p> </td>
    <td><p>inXDPDoc</p> </td>
-   <td><p>Qualquer nome de variável de string</p> </td>
+   <td><p>Qualquer nome da variável de string</p> </td>
   </tr>
   <tr>
-   <td><p>Redirecionar nome do parâmetro de URL</p> </td>
-   <td><p>Nome do parâmetro para o URL de redirecionamento enviado do processo de publicação Esse valor pode ser qualquer nome de variável de string</p> </td>
+   <td><p>Nome do parâmetro de URL de redirecionamento</p> </td>
+   <td><p>Nome do parâmetro para o URL de redirecionamento enviado do processo de postagem Esse valor pode ser qualquer nome de variável da string</p> </td>
    <td><p>redirectURL</p> </td>
-   <td><p>Qualquer nome de variável de string</p> </td>
+   <td><p>Qualquer nome da variável de string</p> </td>
   </tr>
   <tr>
    <td><p>Tipo de envio de PDF</p> </td>
-   <td><p>Tipo de envio de PDF (tipo de PDF gerado ao enviar pelo aplicativo Criar correspondência)</p> </td>
+   <td><p>Tipo de envio de PDF (tipo de PDF gerado ao enviar a partir do aplicativo Criar correspondência)</p> </td>
    <td><p>nonInteractive</p> </td>
-   <td><p>interativo / não interativo</p> </td>
+   <td><p>interativo/não interativo</p> </td>
   </tr>
   <tr>
-   <td><p>Otimizar instância do dicionário de dados</p> </td>
-   <td><p>Permite a transferência otimizada da instância do dicionário de dados por servidor e cliente</p> </td>
+   <td><p>Otimizar a instância do dicionário de dados</p> </td>
+   <td><p>Permite a transferência otimizada da Instância do Dicionário de Dados por servidor e cliente</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Correção automática de inconsistências </p> </td>
-   <td><p>Quando ativado, ele automaticamente lida com as possíveis inconsistências em Atribuições de carta</p> </td>
+   <td><p>Quando ativado, ele trata automaticamente as possíveis inconsistências em Atribuições de Carta</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Usar formatos de dados configurados</p> </td>
-   <td><p>Controla se os Formatos de edição de dados e o Formato de exibição de dados devem ser usados</p> </td>
+   <td><p>Usar Formatos de Dados Configurados</p> </td>
+   <td><p>Controla o uso de formatos de edição de dados configurados e do formato de exibição de dados</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Formatos de Exibição de Dados</p> </td>
+   <td><p>Formatos de exibição de dados</p> </td>
    <td><p>Especifica o formato de exibição específico da localidade para dados</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td><p>—</p> </td>
@@ -165,121 +166,121 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr>
   <tr>
    <td><p>Gerenciar instâncias de carta na publicação</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade Gerenciar carta (aplicável somente para o Servidor de publicação)</p> </td>
+   <td><p>Ativar/desativar a funcionalidade Gerenciar carta (aplicável somente para o servidor de publicação)</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar auditoria</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria. Quando falso, os logs de auditoria de todas as ações serão desativados</p> </td>
+   <td><p>Habilitar auditoria</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria. Quando falso, os logs de auditoria de todas as ações serão desativados</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar Auditoria de Leitura</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para leituras de ativos</p> </td>
+   <td><p>Habilitar Auditoria de Leitura</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para leituras de ativos</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar Criar auditoria</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para criação de ativos</p> </td>
+   <td><p>Ativar Criar Auditoria</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para criação de ativos</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar Atualizar Auditoria</p> </td>
+   <td><p>Habilitar auditoria de atualização</p> </td>
    <td><p>Ativar/desativar a funcionalidade de auditoria para atualização de ativos</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar Reverter Auditoria</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para reverter ativos</p> </td>
+   <td><p>Habilitar Auditoria de Reverter</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para a reversão de ativos</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar Auditoria de Publicação</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para publicação de ativos</p> </td>
+   <td><p>Habilitar auditoria de publicação</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para publicação de ativos</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar a auditoria SaveAsDraft</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para salvar rascunhos de letras</p> </td>
+   <td><p>Ativar auditoria SaveAsDraft</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para salvar rascunhos de cartas</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar Enviar auditoria</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para envio de carta</p> </td>
+   <td><p>Habilitar auditoria de envio</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para envio de carta</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar auditoria por email</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para cartas de correio eletrônico</p> </td>
+   <td><p>Habilitar auditoria de email</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para cartas de correio eletrônico</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar Auditoria de Impressão</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para impressão de letras</p> </td>
+   <td><p>Habilitar auditoria de impressão</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para impressão de cartas</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar auditoria de Delivery personalizados</p> </td>
-   <td><p>Ativar/Desativar a funcionalidade de auditoria para delivery personalizado de letras</p> </td>
+   <td><p>Ativar Auditoria de Entrega Personalizada</p> </td>
+   <td><p>Ativar/desativar a funcionalidade de auditoria para entrega personalizada de cartas</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Nome do parâmetro documentos de anexo</p> </td>
-   <td><p>Nome do parâmetro para documentos de anexo enviados para o processo de publicação</p> </td>
+   <td><p>Nome do parâmetro dos documentos anexos</p> </td>
+   <td><p>Nome do parâmetro para documentos do anexo enviados ao processo de publicação</p> </td>
    <td><p>inAttachmentDocs</p> </td>
-   <td><p>Qualquer nome de variável de string</p> </td>
+   <td><p>Qualquer nome da variável de string</p> </td>
   </tr>
   <tr>
-   <td><p>Raiz do usuário CM</p> </td>
+   <td><p>Raiz do usuário do CM</p> </td>
    <td><p>URL da pasta que contém todos os ativos de usuário do Gerenciamento de correspondência</p> </td>
    <td><p>—</p> </td>
-   <td><p>Local válido da pasta</p> </td>
+   <td><p>Local de pasta válido</p> </td>
   </tr>
   <tr>
-   <td><p>Tamanho do Cache Carta</p> </td>
-   <td><p>Especifique o número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory</code>.</p> </td>
+   <td><p>Tamanho do Cache de Carta</p> </td>
+   <td><p>Especifique o Número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory</code>.</p> </td>
    <td><p>100</p> </td>
    <td><p>Qualquer valor numérico</p> </td>
   </tr>
   <tr>
-   <td><p>Ativar Cache Carta</p> </td>
+   <td><p>Ativar Cache de Carta</p> </td>
    <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory </code>.</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Pedidos de elementos de dados</p> </td>
-   <td><p>Mantém os elementos de dados ordenando na criação da interface de correspondência de acordo com sua sequência em Carta</p> </td>
+   <td><p>Solicitação de elementos de dados</p> </td>
+   <td><p>Mantém os elementos de dados ordenados na interface de criação de correspondência de acordo com sua sequência em Carta</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Recarregamento de suporte</p> </td>
-   <td><p>Ative/desative o suporte para recarregamento em letras renderizadas no lado do servidor.</p> <p>Desabilitar isso melhorará o desempenho da renderização de letras.</p> </td>
+   <td><p>Ative/desative o suporte de recarregamento em letras renderizadas no lado do servidor.</p> <p>Desabilitar isso melhorará o desempenho da renderização de letras.</p> </td>
    <td><p>falso</p> </td>
    <td><p>true / false</p> <p> </p> </td>
   </tr>
   <tr>
-   <td>Pasta temporária</td>
+   <td>Pasta Temp</td>
    <td>Localização da pasta temporária.</td>
    <td>acm.tpmFolder</td>
    <td> </td>
   </tr>
   <tr>
-   <td>Salvar remoto</td>
-   <td>Salva as Instâncias de Carta no autor de processamento especificado.</td>
+   <td>Salvar Remoto</td>
+   <td>Salva as Instâncias da Carta no autor de processamento especificado.</td>
    <td> </td>
    <td> </td>
   </tr>
@@ -291,7 +292,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr>
   <tr>
    <td><p>Diretório de depuração </p> <p> </p> </td>
-   <td>Localização da pasta do sistema de arquivos para depuração. Se o diretório não <code>exists</code>, nenhum despejo de depuração será gerado.</td>
+   <td>Local da pasta do sistema de arquivos para depuração. Se o diretório não <code>exists</code>, nenhum despejo de depuração será gerado.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>
