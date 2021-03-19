@@ -1,16 +1,17 @@
 ---
 title: API para chamar o serviço de modelo de dados de formulário a partir de formulários adaptáveis
 seo-title: API para chamar o serviço de modelo de dados de formulário a partir de formulários adaptáveis
-description: Explica a API invokeWebServices que você pode usar para chamar serviços da Web escritos em WSDL de dentro de um campo de formulário adaptável.
-seo-description: Explica a API invokeWebServices que você pode usar para chamar serviços da Web escritos em WSDL de dentro de um campo de formulário adaptável.
+description: Explica a API invokeWebServices que pode ser usada para invocar serviços da Web escritos em WSDL a partir de um campo de formulário adaptável.
+seo-description: Explica a API invokeWebServices que pode ser usada para invocar serviços da Web escritos em WSDL a partir de um campo de formulário adaptável.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -20,9 +21,9 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-A AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento de formulários, chamando os serviços configurados em um modelo de dados de formulário a partir de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` no editor de código do [editor de regras](/help/forms/using/rule-editor.md).
+O AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento de formulários, chamando serviços configurados em um modelo de dados de formulário de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` no editor de códigos do [editor de regras](/help/forms/using/rule-editor.md).
 
-Este documento foca em gravar um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` para chamar um serviço.
+Este documento foca em escrever um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` para chamar um serviço.
 
 ## Uso da API {#using-the-api}
 
@@ -60,11 +61,11 @@ A estrutura da API especifica os seguintes detalhes sobre a operação do servi�
   </tr>
   <tr>
    <td><code>operationInfo</code></td>
-   <td>Estrutura para especificar o identificador do modelo de dados do formulário, o título da operação e o nome da operação</td>
+   <td>Estrutura para especificar o identificador do modelo de dados de formulário, o título da operação e o nome da operação</td>
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Especifica o caminho do repositório para o modelo de dados do formulário, incluindo seu nome</td>
+   <td>Especifica o caminho do repositório para o modelo de dados de formulário, incluindo seu nome</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -84,16 +85,16 @@ A estrutura da API especifica os seguintes detalhes sobre a operação do servi�
   </tr>
   <tr>
    <td><code>failure</code></td>
-   <td>Exibe uma mensagem de erro se a função de retorno de sucesso não exibir os valores de saída com base nos argumentos de entrada. É um parâmetro opcional usado como uma função de retorno de chamada.<br /> </td>
+   <td>Exibe uma mensagem de erro se a função de retorno de chamada de sucesso não exibir os valores de saída com base nos argumentos de entrada. É um parâmetro opcional usado como uma função de retorno de chamada.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Exemplo de script para chamar um serviço {#sample-script-to-invoke-a-service}
 
-O script de exemplo a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para chamar a operação de serviço `getAccountById` configurada no modelo de dados de formulário `employeeAccount`.
+O script de amostra a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para chamar a operação de serviço `getAccountById` configurada no modelo de dados de formulário `employeeAccount`.
 
-A operação `getAccountById` usa o valor no campo de formulário `employeeID` como entrada para o argumento `empId` e retorna o nome do funcionário, o número da conta e o saldo da conta do funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor no argumento `name` é preenchido no elemento de formulário `fullName` e no valor do argumento `accountNumber` no elemento de formulário `account`.
+A operação `getAccountById` assume o valor no campo de formulário `employeeID` como entrada para o argumento `empId` e retorna o nome do funcionário, o número da conta e o saldo da conta do funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor no argumento `name` é preenchido no elemento de formulário `fullName` e no valor do argumento `accountNumber` no elemento de formulário `account`.
 
 ```javascript
 var operationInfo = {
@@ -111,7 +112,7 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
-## Uso da API com a função de retorno de chamada {#using-the-api-callback}
+## Uso da API com função de retorno de chamada {#using-the-api-callback}
 
 Você também pode chamar o serviço de modelo de dados de formulário usando a API `guidelib.dataIntegrationUtils.executeOperation` com uma função de retorno de chamada. A sintaxe da API é a seguinte:
 
@@ -121,11 +122,11 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 
 A função de retorno de chamada pode ter `success` e `failure` funções de retorno de chamada.
 
-### Exemplo de script com funções de retorno de sucesso e falha {#callback-function-success-failure}
+### Exemplo de script com funções de retorno de chamada de sucesso e falha {#callback-function-success-failure}
 
-O script de exemplo a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para chamar a operação de serviço `GETOrder` configurada no modelo de dados de formulário `employeeOrder`.
+O script de amostra a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para chamar a operação de serviço `GETOrder` configurada no modelo de dados de formulário `employeeOrder`.
 
-A operação `GETOrder` usa o valor no campo de formulário `Order ID` como entrada para o argumento `orderId` e retorna o valor da quantidade da ordem na função de retorno de chamada `success`.  Se a função de retorno de chamada `success` não retornar a quantidade do pedido, a função de retorno de chamada `failure` exibirá a mensagem `Error occured`.
+A operação `GETOrder` pega o valor no campo de formulário `Order ID` como entrada para o argumento `orderId` e retorna o valor da quantidade da ordem na função de retorno de chamada `success`.  Se a função de retorno de chamada `success` não retornar a quantidade do pedido, a função de retorno de chamada `failure` exibirá a mensagem `Error occured`.
 
 >[!NOTE]
 >
