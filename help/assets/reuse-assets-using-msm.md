@@ -3,10 +3,11 @@ title: Reutilizar ativos usando o MSM
 description: Use ativos em várias páginas/pastas que são derivadas de e vinculadas a ativos principais. Os ativos permanecem sincronizados com uma cópia principal e, com alguns cliques, recebem as atualizações dos ativos principais.
 contentOwner: AG
 mini-toc-levels: 1
+role: Profissional de negócios, Administrador, Arquiteto
 translation-type: tm+mt
-source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3370'
 ht-degree: 9%
 
 ---
