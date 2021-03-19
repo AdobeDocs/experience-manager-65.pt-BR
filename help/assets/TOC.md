@@ -6,11 +6,12 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, entregue e otimize ativos digitais.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 38%
+ht-degree: 42%
 
 ---
 
@@ -22,13 +23,13 @@ ht-degree: 38%
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
 + [Acessibilidade em [!DNL Assets]](accessibility.md)
-+ Usar ativos do Experience Manager {#using}
++ Usar ativos Experience Manager {#using}
    + [[!DNL Assets] experiência da página inicial](assets-home-page.md)
    + [Pesquisar ativos digitais](search-assets.md)
    + [Trabalhar com metadados de ativos](metadata.md)
    + [Ativos multilíngues](multilingual-assets.md)
    + [ [!DNL Adobe Stock] Usar ativos em ativos](aem-assets-adobe-stock.md)
-   + [Visualização de ativos 3D](previewing-3d-assets.md)
+   + [Pré-visualização de ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
    + [Fluxo de atividades na linha do tempo](activity-stream.md)
@@ -40,7 +41,7 @@ ht-degree: 38%
    + [Informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
    + [Configuração do Dynamic Media](administering-dynamic-media.md)
    + [Trabalhar com o Dynamic Media](dynamic-media.md)
-   + [Configuração do Dynamic Media - Modo Scene7](config-dms7.md)
+   + [Configuração do modo Dynamic Media - Scene7](config-dms7.md)
    + [Configuração do Dynamic Media - Modo híbrido](config-dynamic.md)
    + [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
    + [Acessibilidade no Dynamic Media](accessibility-dm.md)
@@ -55,7 +56,7 @@ ht-degree: 38%
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adicionar recursos do Dynamic Media à página](scene7.md)
+   + [Adicionar recursos do Dynamic Media à sua página](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entrega de ativos de mídia dinâmica](delivering-dynamic-media-assets.md)
    + [Ativação da proteção de hotlink no Dynamic Media](hotlink-protection.md)
@@ -78,7 +79,7 @@ ht-degree: 38%
    + [Vincular URLs ao aplicativo da Web.](linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
    + [Publicação de ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Trabalhar com publicação seletiva no Dynamic Media](selective-publishing.md)
+   + [Trabalho com Publicação seletiva no Dynamic Media](selective-publishing.md)
    + [Invalidar o cache CDN por meio do Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Invalidar o cache CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instalação do Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
