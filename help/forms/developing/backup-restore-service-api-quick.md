@@ -1,41 +1,42 @@
 ---
-title: Start APIQuick do Serviço de Backup e Restauração
-seo-title: Start APIQuick do Serviço de Backup e Restauração
-description: Start APIQuick do Serviço de Backup e Restauração
+title: Serviço de Backup e Restauração APIQuick inicia
+seo-title: Serviço de Backup e Restauração APIQuick inicia
+description: Serviço de Backup e Restauração APIQuick inicia
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
+role: Desenvolvedor
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 
-# Start rápidos da API de serviço de backup e restauração {#backup-and-restore-service-apiquick-starts}
+# Início rápido da API de Serviço de Backup e Restauração {#backup-and-restore-service-apiquick-starts}
 
-**Exemplos e exemplos neste documento são apenas para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são apenas para o AEM Forms no ambiente JEE.**
 
-O SOAP (Java API Quick Start) está disponível para a API de serviço de backup e restauração.
+O Java API Quick Start (SOAP) está disponível para a API do serviço de backup e restauração.
 
-[Start rápido: Entrando no modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Início rápido: Entrar no modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Start rápido: Sair do modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Início rápido: Deixando o modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API altamente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Os Start rápidos localizados em Programação com a AEM Forms são baseados no sistema operacional Forms. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Os Inícios rápidos localizados em Programação com o AEM Forms são baseados no sistema operacional Forms. No entanto, se estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Start rápido (modo SOAP): Entrando no modo de backup usando a API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Início rápido (modo SOAP): Entrando no modo de backup usando a API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-O exemplo de código Java a seguir entra no modo de backup com uma etiqueta exclusiva por duas horas. Depois que o tempo de backup expira ou se o modo de backup for explicitamente encerrado, o servidor de formulários retornará à remoção de arquivos do Armazenamento Global Documento. (Consulte [Entrando no Modo de Backup no servidor de formulários](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+O exemplo de código Java a seguir entra no modo de backup com um rótulo exclusivo por duas horas. Depois que o tempo de backup expirar ou se o modo de backup for explicitamente fechado, o servidor de formulários retornará para limpar arquivos do Armazenamento de documentos global. (Consulte [Entrando no modo de backup no servidor de formulários](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -148,9 +149,9 @@ O exemplo de código Java a seguir entra no modo de backup com uma etiqueta excl
  
 ```
 
-## Start rápido (modo SOAP): Deixando o modo de backup usando a API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Início rápido (modo SOAP): Deixando o modo de backup usando a API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-O exemplo de código Java a seguir faz com que o Forms Server saia do modo de backup e volte para a remoção de arquivos do Armazenamento do Documento Global. (Consulte [Saindo do Modo de Backup no servidor de formulários](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+O exemplo de código Java a seguir faz com que explicitamente um Forms Server saia do modo de backup e retorne à limpeza de arquivos do Armazenamento de documentos global. (Consulte [Saindo do Modo de Backup no servidor de formulários](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
