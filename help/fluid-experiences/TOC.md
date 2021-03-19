@@ -1,18 +1,20 @@
 ---
-sub-product: AEM experiências fluidas
-user-guide-title: AEM experiências fluidas
-breadcrumb-title: Guia de experiências fluidas
-user-guide-description: AEM experiências fluidas são obtidas dos poderosos conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para o delivery de conteúdo sem cabeçalho.
+sub-product: Experiências fluídas AEM
+user-guide-title: Experiências fluídas AEM
+breadcrumb-title: Guia de experiências fluídas
+user-guide-description: AEM experiências fluídas são baseadas nos avançados conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para a entrega de conteúdo sem interface.
 index: n
+feature-set: Experience Manager Sites
+role: Líder, Arquiteto, Desenvolvedor, Arquiteto de Dados, Engenheiro de Dados, Administrador, Praticante de Negócios
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '51'
 ht-degree: 0%
 
 ---
 
 
-# Experiências fluidas AEM {#aem-fluid-experiences}
+# Experiências fluídas AEM {#aem-fluid-experiences}
 
 + [Lista de recursos](/help/fluid-experiences/feature-list.md)
