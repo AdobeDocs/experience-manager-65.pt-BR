@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
+feature: Portal do Forms
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -28,40 +29,40 @@ Conhecimento prático de HTML e CSS
 
 ## Visão geral {#overview}
 
-A interface do usuário do AEM Forms permite que você adicione metadados a qualquer formulário. Os metadados personalizados podem melhorar a experiência do usuário ao listar e pesquisar formulários de sua organização.
+A interface do usuário do AEM Forms permite adicionar metadados a qualquer formulário. Os metadados personalizados podem aprimorar a experiência do usuário ao listar e pesquisar formulários de sua organização.
 
-O Forms Portal permite que você use metadados personalizados em listagens de formulário. Ao criar modelos personalizados para ativos, você pode modificar seu layout e usar metadados personalizados com seu conjunto de estilos CSS.
+O Portal Forms permite usar metadados personalizados em listas de formulários. Ao criar modelos personalizados para ativos, você pode modificar o layout e usar metadados personalizados com seu conjunto de estilos CSS.
 
-Execute as seguintes etapas para criar um modelo personalizado para vários componentes do Forms Portal.
+Execute as etapas a seguir para criar um modelo personalizado para vários componentes do Portal Forms.
 
-## Criando um modelo personalizado {#creating-a-nbsp-custom-template}
+## Criação de um modelo personalizado {#creating-a-nbsp-custom-template}
 
 1. Criar um nó sling:Folder em /apps
 
    Adicione uma propriedade &quot;fpContentType&quot;. Especifique os valores apropriados para a propriedade, dependendo do componente para o qual você está definindo o modelo personalizado.
 
-   * Componente de pesquisa e lister: &quot;/libs/fd/fp/formTemplate&quot;
+   * Componente Pesquisar e lister: &quot;/libs/fd/fp/formTemplate&quot;
    * Componente Rascunhos e envios:
 
       * Seção de rascunhos: /libs/fd/fp/rascunhosModelo
-      * Seção de submissões: /libs/fd/fp/submitTemplate
+      * Seção Submissões: /libs/fd/fp/enviosTemplate
    * Componente do link: /libs/fd/fp/linkTemplate
 
-   Adicione um título que você deseja que seja exibido ao selecionar modelos de layout.
+   Adicione um título que deseja exibir ao selecionar modelos de layout.
 
    >[!NOTE]
    >
-   >O título pode ser diferente do nome do nó sling:Folder criado.
+   >O título pode ser diferente do nome do nó de sling:Folder que você criou.
 
-   A imagem a seguir descreve a configuração do componente de Pesquisa e Lister.
-   ![Criação de um sling:Folder](assets/1.png)
+   A imagem a seguir descreve a configuração do componente Pesquisa e Lister .
+   ![Criar um sling:Folder](assets/1.png)
 
 1. Crie um arquivo template.html nesta pasta para servir como modelo personalizado.
-1. Grave o modelo personalizado e use metadados personalizados, conforme descrito abaixo.
+1. Escreva o modelo personalizado e use os metadados personalizados conforme descrito abaixo.
 
 ## Exemplo de trabalho {#working-example}
 
-A seguir está uma amostra da implementação de um modelo personalizado em que o Forms Portal adquire um layout personalizado de cartão Gov para o componente de Pesquisa e Lister.
+A seguir encontra-se uma amostra da implementação de um modelo personalizado em que o Portal do Forms adquire um Layout de Cartão Governador do Geometrixx personalizado para o componente Pesquisar e Listar .
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -83,105 +84,105 @@ A seguir está uma amostra da implementação de um modelo personalizado em que 
 
 ## Especificações técnicas para modelos personalizados {#technical-specifications-for-custom-templates}
 
-Um modelo personalizado para qualquer componente do Forms Portal inclui entradas repetíveis e não repetíveis. As entradas repetidas são entidades básicas para listagem. Exemplos de entradas repetíveis são o Search &amp; Lister, os Rascunhos &amp; Submissões e os componentes do Link.
+Um modelo personalizado para qualquer componente do Portal Forms inclui entradas repetíveis e não repetitivas. As entradas repetíveis são entidades básicas para listagem. Exemplos de entradas repetíveis são os componentes Pesquisa e Lister, Rascunhos e Envio e Link .
 
-O Forms Portal fornece uma sintaxe para que os usuários individuais exibam metadados personalizados/OOTB. Os espaços reservados são preenchidos após a exibição dos resultados de formulários, rascunhos ou envios.
+O Portal Forms fornece uma sintaxe para os titulares locais exibirem metadados personalizados/OOTB. Os espaços reservados são preenchidos após a exibição dos resultados de formulários, rascunhos ou envios.
 
-Para incluir uma entrada repetível, configure o valor do atributo **repetitivo de dados** para **true**.
+Para incluir uma entrada repetível, configure o valor do atributo **data-repetível** para **true**.
 
-*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. A primeira, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de container para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo **repetitivo de dados**presente no elemento Div tem o valor **true**.*
+*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. A primeira, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de contêiner para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo **data-repetível**presente no elemento Div tem o valor **true**.*
 
-Cada espaço reservado tem um conjunto exclusivo de metadados OTB. Para exibir metadados personalizados em um local específico no formulário, adicione a propriedade **${metadata_prop}** no local.
+Cada espaço reservado tem um conjunto exclusivo de metadados OOTB. Para exibir metadados personalizados em um local específico no formulário, adicione a propriedade **${metadata_prop}** no local.
 
-*No exemplo, a propriedade metadata é usada em várias instâncias. Por exemplo, é usado em **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, e **path**da forma prescrita.*
+*No exemplo, a propriedade de metadados é usada em várias instâncias. Por exemplo, ele é usado em **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, e **path**da maneira prescrita.*
 
 ## Metadados prontos para uso {#out-of-the-box-metadata}
 
 Vários componentes do Forms Portal fornecem conjuntos exclusivos de metadados OOTB que podem ser usados para listagem.
 
-### Componente do Search &amp; Lister {#search-amp-lister-component}
+### Componente Pesquisar e listar {#search-amp-lister-component}
 
 * **Título:** Título do formulário
-* **name**: Nome do formulário (na maioria, é o mesmo que o título)
+* **name**: Nome do formulário (em sua maioria, é o mesmo que o título)
 * **descrição**: Descrição do formulário
 * **formUrl**: URL para renderizar o formulário como HTML
 * **pdfUrl**: URL para renderizar o formulário como PDF
 * **assetType**: Tipo do ativo. Os valores válidos incluem **Formulário**,**Formulário PDF**, **Formulário impresso** e **Formulário adaptável**
 
-* **htmlStyle**&amp;  **pdfStyle**: Estilo de exibição para ícones HTML e PDF usados respectivamente para renderização. Os valores válidos são &quot;**__FP_display_none**&quot; ou estão em branco.
+* **htmlStyle** e  **pdfStyle**: Estilo de exibição para ícones HTML e PDF usados respectivamente para renderização. Os valores válidos são &quot;**__FP_display_none**&quot; ou em branco.
 
 >[!NOTE]
 >
->Lembre-se de usar a classe __FP_display_none na sua folha de estilos personalizada.
+>Lembre-se de usar a classe __FP_display_none em sua folha de estilos personalizada.
 
 * **downloadUrl**: URL para baixar um ativo.
 
-Suporte para localização, classificação e uso das propriedades de configuração na interface do usuário (somente Search &amp; Lister):
+Suporte para localização, classificação e uso de propriedades de configuração na interface do usuário (somente Pesquisa e Lister):
 
-1. **Suporte** a localizações: Para localizar qualquer texto estático, use o atributo  `${localize-YOUR_TEXT}` e disponibilize o valor localizado, caso ainda não exista.
-   *No exemplo discutido, os atributos  `${localize-Apply}` e  `${localize-Download}` são usados para localizar o texto Aplicar e Baixar.*
+1. **Suporte** à localização: Para localizar qualquer texto estático, use o atributo  `${localize-YOUR_TEXT}` e disponibilize o valor localizado, caso ainda não exista.
+   *No exemplo discutido, os atributos  `${localize-Apply}` e  `${localize-Download}` são usados para localizar o texto Aplicar e baixar .*
 
-1. **Suporte para classificação**: Clique no elemento HTML para classificar os resultados da pesquisa. Para implementar a classificação em um layout tabulado, adicione o atributo &quot;data-sortKey&quot; no cabeçalho da tabela específica. Além disso, adicione seu valor como os metadados para os quais você deseja classificar.
-Por exemplo, para o cabeçalho &quot;Título&quot; na visualização de grade, o valor do cabeçalho &quot;data-sortKey&quot; é &quot;título&quot;. Clique no cabeçalho para classificar os valores em uma coluna específica.
+1. **Suporte para classificação**: Clique no elemento HTML para classificar os resultados da pesquisa. Para implementar a classificação em um layout com tabelas, adicione o atributo &quot;data-sortKey&quot; no cabeçalho da tabela específica. Além disso, adicione seu valor como metadados para os quais deseja classificar.
+Por exemplo, para o cabeçalho &quot;Título&quot; na exibição de grade, o valor do cabeçalho &quot;data-sortKey&quot; é &quot;title&quot;. Clique no cabeçalho para classificar os valores em uma coluna específica.
 
-1. **Uso das propriedades** de configuração: O componente de Pesquisa e Lister tem várias configurações que podem ser usadas na interface do usuário. Por exemplo, para exibir o texto da Dica de ferramenta HTML salvo pela caixa de diálogo de edição, use o atributo `${config-htmlLinkText}`. **Da mesma forma, para o texto da dica de ferramenta do PDF, use** `${config-pdfLinkText}` o atributo.
+1. **Uso das propriedades** de configuração: O componente Pesquisar e listar tem várias configurações que você pode usar na interface do usuário. Por exemplo, para exibir o texto da Dica de ferramenta HTML salvo pela caixa de diálogo de edição, use o atributo `${config-htmlLinkText}` . **Da mesma forma, para texto de dica de ferramenta em PDF, use** `${config-pdfLinkText}` o atributo .
 
 ### Componente de link {#link-component}
 
 * **Título:** Título do formulário
 * **formUrl**: URL para renderizar o formulário como HTML
-* **público alvo**: Atributo de público alvo do link. Os valores válidos são &quot;_blank&quot; e &quot;_self.&quot;
+* **target**: Atributo de meta do link. Os valores válidos são &quot;_blank&quot; e &quot;_self&quot;.
 * **linkText**: Legenda do link
 
 ### Componente Rascunhos e envios {#drafts-amp-submissions-component}
 
 * **Caminho**: Caminho do nó de metadados de rascunho/envios. Use-o com a extensão .HTML como um URL para abrir um rascunho ou envio.
-* **contextPath**: Caminho de contexto da instância AEM
-* **firstLetter**: A primeira letra (maiúscula) do título do formulário adaptável, que foi salva como Rascunho ou enviada.
-* **formName**: O título do formulário adaptável, que foi salvo como Rascunho ou submetido.
-* **draftID**: ID do rascunho listado (Use apenas no modelo para a seção Rascunho).
-* **submitID**: ID para o envio que está listado (Use apenas no modelo para a seção Envio).
-* **status**: Status do formulário enviado. (Use apenas no modelo para a seção Envio).
-* **descrição**: Descrição do formulário adaptativo associado ao rascunho ou ao envio.
-* **diffTime**: Diferença entre a hora atual e a última ação de salvar do rascunho. Como alternativa, a diferença entre a hora atual e a última ação de envio para a submissão.
-* **iconClass**: Classe CSS usada para exibir a primeira letra do rascunho/envio. O Forms Portal inclui as seguintes classes, que fornecem vários planos de fundo coloridos.
+* **contextPath**: Caminho de contexto da instância de AEM
+* **firstLetter**: Primeira letra (maiúscula) do título do formulário adaptável, que foi salva como Rascunho ou enviada.
+* **formName**: O título do formulário adaptável, que foi salvo como Rascunho ou enviado.
+* **DraftID**: ID do rascunho listado (Use somente no modelo para a seção Rascunho).
+* **submitID**: ID do envio listado (Use somente no modelo para a seção Envio).
+* **status**: Status do formulário enviado. (Use somente no modelo para a seção Enviar ).
+* **descrição**: Descrição do formulário adaptável associado ao rascunho ou ao envio.
+* **diffTime**: Diferença entre a hora atual e a última ação de salvamento do rascunho. Como alternativa, a diferença entre a hora atual e a última ação de envio para o envio.
+* **iconClass**: Classe CSS usada para exibir a primeira letra do rascunho/envio. O Portal do Forms inclui as seguintes classes, que fornecem vários planos de fundo coloridos.
 * **proprietário**: Usuário que criou o rascunho/envio.
 * **Hoje**: Data de criação do rascunho ou envio no formato DD:MM:AAAA.
 * **TimeNow**: Hora de criação do rascunho ou envio no formato HH:MM:SS de 24 horas
 
 *Nota:*
 
-1. Para a opção de exclusão na seção Rascunhos sob o componente Rascunhos e submissões, nomeie a classe CSS &quot;__FP_deleteDraft.&quot; Além disso, inclua o atributo &quot;draftID&quot; com o valor **${draftID}**, que é a ID de rascunho do rascunho correspondente.
+1. Para a opção de exclusão na seção Rascunhos sob o componente Rascunhos e envios, nomeie a classe CSS &quot;__FP_deleteDraft.&quot; Além disso, inclua o atributo &quot;rascunhoID&quot; com o valor **${rascunhoID}**, que é a ID de rascunho do rascunho correspondente.
 
-1. Ao criar links para rascunhos abertos e envios, você pode especificar **${path}.html** como o valor do atributo **href** para a tag de âncora.
+1. Ao criar links para rascunhos e envios abertos, você pode especificar **${path}.html** como o valor do atributo **href** para a tag de âncora.
 
-![Nó Rascunhos e Envio](assets/raw-image-with-index.png)
+![Rascunhos e nó de envio](assets/raw-image-with-index.png)
 
-**A**. elemento container
+**A**. Elemento do contêiner
 
 **B.**  Metadados de &quot;caminho&quot; com uma hierarquia fixa para obter a miniatura armazenada para cada formulário.
 
-**Atributo repetível C.** Data usado para a seção do modelo para cada formulário
+**C.** Atributo repetível de dados usado para a seção do modelo para cada formulário
 
-**D.** Para localizar a string &quot;Aplicar&quot;
+**D.** Para localizar a sequência de caracteres &quot;Aplicar&quot;
 
-**E.** Using the configuration property pdfLinkText
+**E.** Uso da propriedade de configuração pdfLinkText
 
 **F.** Uso dos metadados &quot;pdfUrl&quot;
 
 ## Dicas, truques e problemas conhecidos {#tips-tricks-and-known-issues}
 
 1. Não use aspas simples (&#39;) em nenhum modelo personalizado.
-1. Para metadados personalizados, armazene essa propriedade somente no nó **jcr:content/metadata**. Se você armazená-lo em qualquer outro lugar, o Forms Portal não poderá exibir os metadados.
-1. Certifique-se de que o nome de metadados personalizados ou existentes não incluam dois pontos ( : ). Se isso acontecer, você não poderá exibi-lo na interface do usuário.
-1. **data-** repetitiva não tem importância para um componente  **** do Linkcomponent. O Adobe recomenda que você evite usar essa propriedade no modelo para um componente de Link.
+1. Para metadados personalizados, armazene essa propriedade somente no nó **jcr:content/metadata** . Se você armazená-lo em qualquer outro lugar, o Portal do Forms não poderá exibir os metadados.
+1. Certifique-se de que o nome de qualquer metadado personalizado ou existente não inclua dois pontos ( : ). Se isso acontecer, você não poderá exibi-lo na interface do usuário.
+1. **data-** repetitiva não tem significância para um componente  **** do Linkcomponent. O Adobe recomenda evitar o uso dessa propriedade no modelo para um componente de Link.
 
 ## Artigos relacionados
 
 * [Ativar componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
 * [Criar página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
-* [Lista de formulários em uma página da Web usando APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
-* [Usar componente Rascunhos e envios](/help/forms/using/draft-submission-component.md)
+* [Listar formulários em uma página da Web usando APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
+* [Usar componente Rascunhos e Envios](/help/forms/using/draft-submission-component.md)
 * [Personalizar o armazenamento de rascunhos e formulários enviados](/help/forms/using/draft-submission-component.md)
 * [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md)
 * [Personalização de modelos para componentes do portal de formulários](/help/forms/using/customizing-templates-forms-portal-components.md)
