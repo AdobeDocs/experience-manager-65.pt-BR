@@ -1,36 +1,37 @@
 ---
-title: Usar o pacote de demonstração para o Asset Insights
-description: Use o pacote de demonstração para permitir que o Adobe Asset Insights capture dados e gere insights para uma página da Web.
+title: Usar pacote de demonstração do Asset Insights
+description: Use o pacote de demonstração para permitir que o Adobe Asset Insights capture dados de e gere insights para uma página da Web.
 contentOwner: AG
+role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 0%
+source-wordcount: '163'
+ht-degree: 2%
 
 ---
 
 
-# Use o pacote de demonstração dos Asset Insights {#using-demo-package-for-asset-insights}
+# Use o pacote de demonstração do Asset Insights {#using-demo-package-for-asset-insights}
 
-Usando o pacote de demonstração, você pode ativar o Adobe Asset Insights para capturar dados e gerar insights para uma página da Web de amostra.
+Usando o pacote de demonstração, você pode ativar o Adobe Asset Insights para capturar dados e gerar insights de uma página da Web de amostra.
 
-## [!DNL Use Experience Manager Assets] Insights com exemplo de página da Web   {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Insights com a página da Web de exemplo   {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configure o Asset Insights usando as instruções em [Configurando o Asset Insights](configure-asset-insights.md).
-1. Baixe o pacote de ativos de amostra abaixo e instale o pacote do gerenciador de pacotes CRXDE.
+1. Configure o Asset Insights usando as instruções em [Configuração do Asset Insights](configure-asset-insights.md).
+1. Baixe o pacote de exemplo Assets a partir abaixo e instale o pacote do gerenciador de pacotes CRXDE.
 
    [Obter arquivo](assets/insightsdemo.zip)
 
-1. Baixe o arquivo ZIP que contém a página da Web de amostra abaixo e extraia no sistema de arquivos local.
+1. Baixe o arquivo ZIP contendo a página da Web de exemplo abaixo e extraia em seu sistema de arquivos local.
 
    [Obter arquivo](assets/demosite.zip)
 
-1. Clique na página da Web para abri-la no navegador da Web.
+1. Clique na página da Web para abri-la no navegador.
 
    >[!CAUTION]
    >
-   >A Página da Web está configurada para carregar o ativo do servidor host local. Caso seu servidor esteja sendo executado em outro lugar, altere o endereço do servidor de host local para endereço do servidor no conteúdo HTML da página da Web.
+   >A Página da Web está configurada para carregar ativos do servidor host local . Caso seu servidor esteja em execução em outro lugar, altere o endereço do servidor de localhost para endereço do servidor no conteúdo HTML da página da Web.
 
    >[!NOTE]
    >
