@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
+role: Administrador
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2111'
 ht-degree: 4%
 
 ---
@@ -21,52 +22,52 @@ ht-degree: 4%
 
 # Console de moderação {#moderation-console}
 
-No AEM Communities, a moderação em massa de [conteúdo da comunidade](/help/communities/moderate-ugc.md) é possível tanto do autor quanto dos ambientes de publicação por administradores e moderadores da comunidade (membros da comunidade confiáveis atribuídos como moderadores).
+No AEM Communities, a [moderação em massa do conteúdo da comunidade](/help/communities/moderate-ugc.md) é possível nos ambientes de criação e publicação por administradores e moderadores da comunidade (membros confiáveis da comunidade atribuídos como moderadores).
 
-Os administradores e os moderadores da comunidade também podem executar [moderação no contexto](/help/communities/in-context.md) no ambiente de publicação.
+Os administradores e moderadores da comunidade também podem executar [moderação no contexto](/help/communities/in-context.md) no ambiente de publicação.
 
-Um recurso de todos os [sites da comunidade](/help/communities/sites-console.md) é um item de menu `Administration` disponível para usuários que fazem logon com privilégios administrativos. O link `Administration` fornece acesso ao console Moderação.
+Um recurso de todos os [sites da comunidade](/help/communities/sites-console.md) é um item de menu `Administration` disponível para usuários que fazem logon com privilégios administrativos. O link `Administration` fornece acesso ao console Moderação .
 
-No console Moderação, os administradores e moderadores da comunidade terão acesso a todo o conteúdo gerado pelo usuário (UGC) para o qual eles têm permissão para moderar. Se for permitido moderar vários sites, é possível visualização postagens em todos os sites ou filtrar por sites de comunidades selecionadas.
+No console Moderação, os administradores e os moderadores da comunidade terão acesso a todo o conteúdo gerado pelo usuário (UGC) para o qual têm permissão para moderar. Se for permitido moderar vários sites, é possível visualizar postagens em todos os sites ou filtrar por sites de comunidades selecionadas.
 
 Para obter informações mais detalhadas, visite [Gerenciar usuários e grupos de usuários](/help/communities/users.md).
 
-O console Moderação suporta:
+O console Moderação é compatível com:
 
-* Realização de tarefas de moderação em massa.
-* Procurando UGC.
+* Execução de tarefas de moderação em massa.
+* Pesquisando UGC.
 * Exibindo detalhes do UGC.
-* Exibindo detalhes do autor UGC.
+* Exibindo detalhes do autor do UGC.
 
 Somente quando conectado como administrador, ou um membro com ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`, as tarefas de moderação podem ser executadas.
 
-## Publicar acesso ao Ambiente {#publish-environment-access}
+## Publicar acesso ao ambiente {#publish-environment-access}
 
-O acesso ao console de Moderação de um site da comunidade publicado é feito por meio de um link de Administração que é exibido quando um moderador da comunidade está conectado.
+O acesso ao console Moderação de um site da comunidade publicado é feito por meio de um link de Administração que é exibido quando um moderador da comunidade é conectado.
 
 ![publishweretail](assets/publishweretail.png)
 
-Ao selecionar o link Administração, o console Moderação é exibido:
+Ao selecionar o link Administração , o console Moderação é exibido:
 
 ![moderation-console-publish](assets/moderation-console-publish.png)
 
-## Acesso ao Ambiente do autor {#author-environment-access}
+## Acesso ao ambiente do autor {#author-environment-access}
 
-No ambiente do autor, para acessar o console Moderação
+No ambiente de criação, para acessar o console Moderação
 
-* Na navegação global, selecione **[!UICONTROL Communities]** > **[!UICONTROL Moderação]**.
+* Na navegação global, selecione **[!UICONTROL Communities]** > **[!UICONTROL Moderation]**.
 
-Somente quando conectado como administrador, ou como membro com [permissões de moderador](/help/communities/in-context.md#identifyingtrustedmembers), as tarefas de moderação podem ser executadas. O único conteúdo da comunidade exibido é aquele que o membro conectado tem permissão para moderar.
+Somente quando conectado como administrador ou como membro com [permissões de moderador](/help/communities/in-context.md#identifyingtrustedmembers), as tarefas de moderação podem ser executadas. O único conteúdo da comunidade exibido é aquele que o membro conectado tem permissão para moderar.
 
 >[!NOTE]
 >
->O UGC do ambiente publish só estará visível no autor se o SRP escolhido implementar uma loja comum. Por exemplo, por padrão, o armazenamento é JSRP, que não é uma loja comum para autor e publicação. Consulte [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md).
+>O UGC do ambiente de publicação só será visível no autor se o SRP escolhido implementar uma loja comum. Por exemplo, por padrão, o armazenamento é o JSRP, que não é um armazenamento comum para autor e publicação. Consulte [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md).
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## Interface do usuário do console de moderação {#moderation-console-ui}
 
-Além do painel de navegação esquerdo (que aparece no autor, mas não na publicação), a interface de usuário de moderação tem as seguintes áreas principais:
+Além do painel de navegação esquerdo (que aparece no autor, mas não na publicação), a interface do usuário de moderação tem as seguintes áreas principais:
 
 * **[Barra de navegação superior](#top-navigation-bar)**
 * **[Barra de ferramentas](#toolbar)**
@@ -78,17 +79,17 @@ A barra de navegação superior é constante para todos os consoles. Para obter 
 
 ### Barra de ferramentas {#toolbar}
 
-A barra de ferramentas, localizada abaixo da barra de navegação superior, fornece a seguinte opção de alternância no lado esquerdo:
+A barra de ferramentas, localizada abaixo da barra de navegação superior, fornece o seguinte switch de alternância no lado esquerdo:
 
-* [O filtro ](/help/communities/moderation.md#filterrail)
-abre um painel que permite escolher as propriedades nas quais filtrar o conteúdo.
+* [O ](/help/communities/moderation.md#filterrail)
+painel Filtrar abre um painel que permite escolher as propriedades nas quais filtrar o conteúdo.
 
-A barra de ferramentas, localizada abaixo da barra de navegação superior, fornece a seguinte opção de alternância no lado esquerdo:
+A barra de ferramentas, localizada abaixo da barra de navegação superior, fornece o seguinte switch de alternância no lado esquerdo:
 
-![bruxa](assets/toggleswitch.png)
+![toggleswitch](assets/toggleswitch.png)
 
-[Filtrar ](/help/communities/moderation.md#filterrail)
-trilho abre um trilho ao selecionar Pesquisar, o que permite escolher as propriedades nas quais filtrar o conteúdo.
+[O filtro ](/help/communities/moderation.md#filterrail)
+abre um painel, ao selecionar Pesquisa, o que permite escolher as propriedades nas quais filtrar o conteúdo.
 
 ![filterral](assets/filterrail.png)
 
@@ -96,67 +97,67 @@ trilho abre um trilho ao selecionar Pesquisar, o que permite escolher as proprie
 
 A área de conteúdo contém informações para o UGC publicado:
 
-* UGC postado
+* UGC publicado
 * Nome do membro
-* avatar do membro
+* Avatar do membro
 * Localização da publicação.
-* Quando foi postada.
+* Quando foi postado.
 * Número de respostas à publicação.
 * [](/help/communities/moderate-ugc.md#sentiment) Sentimento associado à publicação
-* Se aprovada, uma marca de seleção será exibida.
+* Se aprovada, uma marca de seleção é exibida.
 * Se houver um anexo, um clipe de papel será exibido.
 
 >[!NOTE]
 > 
->A área de conteúdo apresenta uma *rolagem infinita*, o que significa que permitirá que você continue a rolagem até atingir o final do conteúdo. A barra de ferramentas permanece em uma posição fixa e visível acima da área de conteúdo, mesmo durante a rolagem.
+>A área de conteúdo apresenta uma *rolagem infinita*, o que significa que permitirá que você continue a rolagem até atingir o fim do conteúdo. A barra de ferramentas permanece em uma posição fixa e visível acima da área de conteúdo, mesmo durante a rolagem.
 
-### Filtrar painel {#ootbfilters}
+### Filtrar Trilho {#ootbfilters}
 
 ![open-filterrail](assets/open-filterrail.png)
 
-O ícone do painel lateral abre o painel do filtro. O painel de filtros, que aparece à esquerda da área de conteúdo, fornece filtros diferentes, cada um com um efeito imediato no UGC referenciado que aparece na área de conteúdo.
+O ícone do painel lateral abre o painel filtro. O painel de filtro, que aparece à esquerda da área de conteúdo, fornece filtros diferentes, cada um com um efeito imediato no UGC referenciado que aparece na área de conteúdo.
 
-Os filtros dentro de cada categoria são **OR**&#39;d juntos e os filtros em categorias diferentes são **AND**&#39;d juntos.
+Os filtros em cada categoria são **OR**&#39;d juntos e os filtros em categorias diferentes são **AND**&#39;d juntos.
 
 Por exemplo, se você marcar **Pergunta** e **Resposta**, verá um conteúdo que seja **Pergunta** *ou* um **Resposta**.
 
-Entretanto, se você marcar **Pergunta** e **Pendente**, verá apenas o conteúdo que é **Pergunta** e **Pendente**.
+No entanto, se marcar **Pergunta** e **Pendente**, verá apenas o conteúdo que é um **Pergunta** e **Pendente**.
 
 >[!NOTE]
 >
->Os moderadores da comunidade podem marcar os filtros predefinidos na interface do usuário do console de moderação. Como esses filtros são anexados ao final do URL (como parâmetros de string de query), os moderadores podem voltar aos filtros marcados posteriormente e também compartilhar esses links.
+>Os moderadores da comunidade podem marcar os filtros predefinidos na interface do usuário do console de moderação. Como esses filtros são anexados ao final do URL (como parâmetros de cadeias de caracteres de consulta), os moderadores podem retornar aos filtros marcados posteriormente e também compartilhar esses links.
 
-![search icon](assets/searchicon.png)
+![searchicon](assets/searchicon.png)
 
-Quando o painel de filtros estiver aberto, o ícone Pesquisar alterna o painel lateral para fechá-lo. No entanto, para fechar o painel de filtros e somente visualização o conteúdo gerado pelo usuário, clique no ícone Pesquisar e selecione a opção Somente conteúdo.
+Quando o painel de filtro estiver aberto, o ícone Pesquisar alterna o painel lateral para fechado. No entanto, para fechar o painel de filtros e exibir somente o conteúdo gerado pelo usuário, clique no ícone Pesquisar e selecione a opção Somente conteúdo .
 
 #### Caminho do conteúdo {#content-path}
 
-O Caminho do conteúdo limita o UGC de referência exibido nas postagens colocadas no repositório de conteúdo especificado.
+O Caminho do conteúdo limita o UGC de referência exibido nas publicações colocadas no repositório de conteúdo especificado.
 
-![content-path](assets/content-path.png)
+![caminho do conteúdo](assets/content-path.png)
 
 #### Pesquisa de texto {#text-search}
 
-A pesquisa de texto limita o UGC referenciado exibido às postagens que contêm o texto inserido.
+A pesquisa de texto limita o UGC referenciado exibido em publicações nas quais o texto foi inserido.
 
 ![pesquisa de texto](assets/text-search.png)
 
 #### Site {#site}
 
-O site limita o UGC referenciado exibido às postagens nos sites da comunidade selecionados. Se nenhum site for marcado, todas as referências ao UGC serão exibidas.
+O site limita o UGC referenciado exibido para postagens em sites da comunidade selecionados. Se nenhum site estiver marcado, então todas as referências ao UGC serão exibidas.
 
 ![painel do site](assets/site-panel.png)
 
 >[!NOTE]
 >
->Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são mostradas, incluindo sites não criados com o [assistente de criação de site](/help/communities/sites-console.md), como amostras de Geometrixx.
+>Quando o console de moderação em massa é acessado por um administrador, todas as referências ao UGC são mostradas, incluindo sites não criados com o [assistente de criação de site](/help/communities/sites-console.md), como os exemplos de Geometrixx.
 >
->Quando o console de moderação em massa é acessado na publicação por um membro da comunidade confiável, somente as referências ao UGC criado para sites da comunidade que o membro está autorizado a moderar são mostradas e podem ser filtradas com o filtro Site.
+>Quando o console de moderação em massa é acessado ao publicar por um membro da comunidade confiável, somente as referências ao UGC criado para sites da comunidade que o membro está autorizado a moderar são mostradas e podem ser filtradas com o filtro Site .
 
 #### Tipo de conteúdo {#content-type}
 
-O Tipo de conteúdo limita o UGC referenciado exibido às postagens do tipo de recurso selecionado. Um ou mais dos seguintes tipos podem ser selecionados. Todos os tipos são exibidos se nenhum estiver selecionado.
+O Tipo de conteúdo limita o UGC referenciado exibido para postagens do tipo de recurso selecionado. Um ou mais dos seguintes tipos podem ser selecionados. Todos os tipos são mostrados se nenhum estiver selecionado.
 
 * **Comentário**
 * **Tópico do fórum**
@@ -176,21 +177,21 @@ O Tipo de conteúdo limita o UGC referenciado exibido às postagens do tipo de r
 
 #### Tipos de conteúdo adicionais {#additional-content-types}
 
-Para adicionar recursos adicionais nos quais filtrar:
+Para adicionar recursos adicionais sobre os quais filtrar:
 
 * Faça logon na instância do autor como administrador.
-* Abra [Console Web](https://localhost:4502/system/console/configMgr).
+* Abra [Console da Web](https://localhost:4502/system/console/configMgr).
 * Localize `AEM Communities Moderation Dashboard Filters`.
-* Selecione a configuração para abrir no modo de edição.
-* Informe o ResourceType de um componente no qual filtrar:
+* Selecione a configuração a ser aberta no modo de edição.
+* Insira o ResourceType de um componente no qual filtrar:
 
-   * Por exemplo, para filtrar os componentes de Votação incluídos, informe:
+   * Por exemplo, para filtrar nos componentes de Votação incluídos, insira:
 
       `Voting=social/tally/components/hbs/voting`
-   ![tipo de conteúdo adicional](assets/additional-contenttype.png)
+   ![additional-contenttype](assets/additional-contenttype.png)
 
 * Selecione Salvar.
-* Atualize o console Comunidades - Moderação.
+* Atualize as Comunidades - Console de moderação.
 
 O resultado é um novo filtro selecionável para `Voting` no grupo de filtros `Content Type`.
 
@@ -198,58 +199,58 @@ Quando esse filtro for selecionado, o conteúdo do painel mostrará o UGC que co
 
 #### Status {#status}
 
-O status limita o UGC referenciado exibido às postagens do status selecionado, que pode ser uma ou mais de Pendente, Aprovado, Negado ou Fechado, assim como Rascunho ou Agendado para Artigos do Blog e Respondido ou Não Respondido para Perguntas QnA. Se nenhum estiver selecionado, então todos serão exibidos.
+O Status limita o UGC referenciado exibido em postagens do status selecionado, que pode ser uma ou mais de Pendente, Aprovado, Negado ou Fechado, assim como Rascunho ou Programado para Artigos de Blog e Respondido ou Não Respondido para Perguntas QnA. Se nenhum estiver selecionado, então todos serão exibidos.
 
 >[!NOTE]
 >
->Se apenas o status Não respondida for selecionado, então o moderador visualizará todo o conteúdo (para todos os tipos de conteúdo), exceto as perguntas respondidas. Isso ocorre porque a propriedade responsável pela Pergunta respondida não existe no caso de perguntas não respondidas e outros conteúdos, como tópico do fórum, artigo do blog ou comentários.
+>Se apenas o status Não respondido for selecionado, o moderador visualizará todo o conteúdo (para todos os tipos de conteúdo) exceto as perguntas respondidas. Isso ocorre porque a propriedade responsável pela Pergunta Respondida não existe no caso de perguntas não respondidas e outro conteúdo, como tópico do fórum, artigo do blog ou comentários.
 
 ![status](assets/statuses.png)
 
 #### Sinalização {#flagging}
 
-A sinalização limita a exibição do UGC referenciado em postagens que estão sinalizadas ou ocultas.
+A sinalização limita o UGC referenciado exibido a postagens que estão sinalizadas ou ocultas.
 
-Depois que um conteúdo é sinalizado, ele permanece sinalizado até que você cancele a sinalização desse único conteúdo selecionando o botão **Sinalizar** novamente. Observe que não há níveis de sinalização, como importante ou acompanhamento.
+Uma vez que um conteúdo é sinalizado, ele permanece sinalizado até que você cancele a sinalização desse conteúdo único selecionando o botão **Sinalizar** novamente. Observe que não há níveis de sinalização, como importante ou de acompanhamento.
 
 ![sinalização](assets/flagging.png)
 
 #### Membros {#members}
 
-Os membros limitam o UGC referenciado exibido ao UGC postado pelo nome do membro inserido.
+Os membros limitam o UGC referenciado exibido ao UGC publicado pelo nome do membro inserido.
 
 ![membros](assets/members.png)
 
 #### Publicado nos últimos {#posted-in-the-last}
 
-Publicado no último limite, o UGC referenciado era exibido nas postagens feitas na última hora, dia, semana, mês ou ano.
+Publicado em Últimos limites, o UGC referenciado é exibido para postagens feitas na última hora, dia, semana, mês ou ano.
 
-![post-last](assets/posted-last.png)
+![postado-last](assets/posted-last.png)
 
 #### Sentimento {#sentiment}
 
-[O ](/help/communities/moderate-ugc.md#sentiment) Sentimento limita a exibição do UGC referenciado para postagens com um valor de sentimento que seja positivo, negativo ou neutro.
+[](/help/communities/moderate-ugc.md#sentiment) O sentimento limita o UGC referenciado exibido a postagens com um valor de sentimento positivo, negativo ou neutro.
 
 ![sentimento](assets/sentiment.png)
 
 ## Filtros personalizados {#custom-filters}
 
-Além dos filtros prontos em [Filtrar painel](/help/communities/moderation.md#ootbfilters), filtros personalizados adicionais nos metadados podem ser adicionados à interface de moderação. Os desenvolvedores podem usar o código de amostra no Github para estender os filtros da interface de moderação existentes.
+Além dos filtros prontos em [Filtrar trilho](/help/communities/moderation.md#ootbfilters), filtros personalizados adicionais nos metadados podem ser adicionados à interface do usuário de moderação. Os desenvolvedores podem usar o código de amostra no Github para estender os filtros da interface do usuário de moderação existentes.
 
-![custom-tag-filter](assets/custom-tag-filter.png)
+![filtro de tag personalizado](assets/custom-tag-filter.png)
 
-O [projeto de amostra](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) no Github implementa o filtro Tag para filtrar a lista UGC com base no fato de as tags específicas serem aplicadas ao conteúdo gerado pelo usuário. Você pode seguir o código de amostra e criar filtros análogos para outros campos de metadados UGC semelhantes.
+O [projeto de amostra](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) no Github implementa o filtro Tag para filtrar a lista UGC com base no fato de as tags específicas serem aplicadas no conteúdo gerado pelo usuário. Você pode seguir o código de amostra e criar filtros análogos para outros campos de metadados UGC semelhantes.
 
 Para instalar a amostra do filtro Tags:
 
-1. Abra o gerenciador de pacote na instância do autor de AEM ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) e na instância de publicação de AEM ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
-1. Crie o pacote `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` a partir do código Github e instale e ative o mesmo.
-1. Abra o console de pacotes na instância do autor de AEM ( `https://[aem-author]:4502/system/console/bundles`) e na instância de publicação de AEM ( `https://[aem-publish]:4503/system/console/bundles`).
-1. Crie o pacote ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` do Github e instale e ative o mesmo.
+1. Abra o gerenciador de pacotes na instância do Autor do AEM ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) e na instância de Publicação do AEM ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Crie o pacote `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` a partir do código Github e instale e habilite o mesmo.
+1. Abra o console pacotes na instância do AEM Author ( `https://[aem-author]:4502/system/console/bundles`) e na instância do AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Crie o pacote ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` a partir do Github e instale e habilite o mesmo.
 1. Vá para o nó **/apps/social/moderation/facets** no AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) e AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) instância.
-1. Adicione um usuário técnico **Communities-utility-reader** com permissões `jcr:read`.
+1. Adicione um usuário técnico **communities-utility-reader** com permissões `jcr:read`.
 
-Para expor os filtros personalizados em sites existentes da Comunidade:
+Para expor os filtros personalizados nos sites existentes da Comunidade:
 
 1. Editar `Clientlibs` da página de moderação existente `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
 
@@ -265,19 +266,19 @@ Para expor os filtros personalizados em sites existentes da Comunidade:
 
 ## Ações de moderação {#moderation-actions}
 
-[As ](/help/communities/moderate-ugc.md#moderation-actions) ações de moderação podem ser executadas em uma ou mais seleções feitas na área de conteúdo ou ao exibir os detalhes do conteúdo.
+[As ](/help/communities/moderate-ugc.md#moderation-actions) ações de moderação podem ser executadas em uma ou mais seleções feitas na área de conteúdo ou durante a visualização dos detalhes do conteúdo.
 
-Para moderar as publicações em massa, na área de conteúdo, clique no ícone Selecionar (![seletor](assets/selecticon.png)) em uma publicação, que aparece ao passar o mouse (área de trabalho) ou pressionando e segurando um dedo na publicação (móvel). Ao fazer isso, você entra no modo de seleção múltipla e pode selecionar as publicações subsequentes para serem moderadas em massa simplesmente clicando nelas. Use os botões exibidos na barra de ferramentas para executar ações de moderação nas postagens selecionadas. Todas as ações solicitarão confirmação.
+Para moderar as publicações em massa, na área de conteúdo, clique no ícone Selecionar (![seletor](assets/selecticon.png)) em uma publicação, que aparece ao passar o mouse sobre ela (desktop) ou pressionando e segurando um dedo na publicação (móvel). Ao fazer isso, você insere o modo de seleção múltipla e agora pode selecionar as publicações subsequentes para moderação em massa ao simplesmente clicar nelas. Use os botões exibidos na barra de ferramentas para executar ações de moderação nas publicações selecionadas. Todas as ações solicitarão confirmação.
 
-Para moderar uma única publicação na área de conteúdo, passe o mouse sobre ela (área de trabalho) ou pressione e mantenha pressionado um dedo na publicação (móvel) para que os botões apareçam na publicação. Ao operar em um único detalhe de conteúdo, somente uma ação de exclusão solicitará a confirmação.
+Para moderar uma única publicação na área de conteúdo, passe o mouse sobre ela (desktop) ou pressione e segure o dedo na publicação (móvel) de modo que os botões apareçam na publicação. Ao operar em um único detalhe de conteúdo, somente uma ação de exclusão solicitará a confirmação.
 
 ### Moderação de várias publicações {#moderating-multiple-posts}
 
-Digite o modo de seleção em massa clicando no ícone `Select` em uma publicação:
+Entre no modo de seleção em massa clicando no ícone `Select` em uma publicação:
 
 ![ícone de seleção](assets/select-icon.png)
 
-Para sair do modo de seleção em massa, selecione o ícone de cancelamento (x) na barra de ferramentas:
+Para sair do modo de seleção em massa, selecione o ícone cancelar (x) na barra de ferramentas:
 
 As ações de moderação que podem ser executadas em várias publicações são:
 
@@ -285,62 +286,62 @@ As ações de moderação que podem ser executadas em várias publicações são
 * Excluir
 * Fechar/reabrir as publicações
 
-Os ícones que permitem essas ações só aparecem na barra de ferramentas quando várias postagens são selecionadas.
+Os ícones que permitem essas ações só aparecem na barra de ferramentas quando várias publicações são selecionadas.
 
 ![bulkmoderate](assets/bulkmoderate.png)
 
 ### Moderação de uma única publicação {#moderating-a-single-post}
 
-No modo de seleção única, é possível:
+No modo de seleção único, é possível:
 
-* Visualização dos detalhes do usuário selecionando o nome do usuário.
-* Visualização a publicação no contexto selecionando o link para a publicação.
+* Visualize os detalhes do usuário selecionando o nome do usuário.
+* Visualize a publicação no contexto selecionando o link para a publicação.
 * [Responder](#reply)
 * [Permitir](#allow)
 * [Negar ](#deny)
 * [Excluir](#delete)
 * [Fechar](#close)
-* Visualização [Histórico de moderação](#moderation-history)
+* Visualizar [Histórico de moderação](#moderation-history)
 * [Visualizar Detalhes](#viewdetails)
 
-Presente na visualização do cartão acima dos ícones de ação de moderação está o texto da publicação e abaixo estão os dados que indicam:
+Apresentado na exibição de cartão acima dos ícones de ação de moderação está o texto da publicação e abaixo estão os dados que indicam:
 
-* Se tiver respondido, e, em caso afirmativo, precedido do número de respostas.
+* Se tiver respondido e, em caso afirmativo, precedido do número de respostas.
 * Se tiver sido sinalizado.
-* Se foi aprovado.
+* Se tiver sido aprovado.
 * Quando o UGC foi postado.
 
 ![singleselectmode](assets/singleselectmode.png)
 
 #### Responder {#reply}
 
-![resposta](assets/reply.png)
+![responder](assets/reply.png)
 
-Ao trabalhar com uma única publicação, um ícone Responder será exibido se o tipo UGC suportar respostas e estiver configurado para permitir respostas.
+Ao trabalhar com uma única publicação, um ícone de Resposta será exibido se o tipo UGC suportar respostas e estiver configurado para permitir respostas.
 
 #### Permitir {#allow}
 
 ![permitir](assets/allow.png)
 
-Ao trabalhar com uma única publicação, o ícone Permitir aparecerá quando a publicação tiver sido sinalizada ou negada. Se sinalizado, selecionar Permitir apagará todos os sinalizadores.
+Ao trabalhar com uma única publicação, o ícone Permitir será exibido quando a publicação tiver sido sinalizada ou negada. Se estiver sinalizado, selecionar Permitir apagará todos os sinalizadores.
 
 #### Negar {#deny}
 
 ![negar ](assets/deny.png)
 
-A ação de moderação **Negar** está disponível somente para conteúdo moderado e não aparece em conteúdo não moderado, exceto no modo de seleção múltipla.
+A ação de moderação **Negar** só está disponível para conteúdo que é moderado e não aparece em conteúdo não moderado, exceto no modo de multiseleção.
 
 O conteúdo que não é moderado é sempre aprovado.
 
-O conteúdo moderado entra inicialmente em um estado Pendente e pode ser modificado posteriormente para ser aprovado ou negado.
+O conteúdo moderado insere inicialmente um estado Pendente e pode ser modificado posteriormente para ser aprovado ou negado.
 
-O conteúdo que deixa o estado pendente nunca poderá voltar a um estado pendente. O conteúdo marcado como aprovado ou negado pode ser alterado para um estado diferente a qualquer momento.
+O conteúdo que deixa o estado pendente nunca pode retornar a um estado pendente. O conteúdo marcado como aprovado ou negado pode ser alterado para um estado diferente a qualquer momento.
 
 #### Exclua {#delete}
 
 ![delete](assets/delete.png)
 
-No modo de seleção única ou em massa, é possível selecionar itens e excluí-los. A ação de exclusão resulta em uma caixa de diálogo de confirmação. Depois de excluídos, esses itens desaparecem imediatamente da área de conteúdo. **Depois que o UGC é excluído, ele é removido permanentemente do repositório e não pode ser recuperado** posteriormente.
+Em uma única seleção ou modo em massa, você pode selecionar itens e excluí-los. A ação de exclusão resulta em uma caixa de diálogo de confirmação. Depois de excluídos, esses itens desaparecem imediatamente da área de conteúdo. **Depois que o UGC é excluído, ele é removido permanentemente do repositório e não pode ser recuperado** posteriormente.
 
 #### Fechar {#close}
 
@@ -352,25 +353,25 @@ Ao trabalhar com uma única publicação, um ícone Fechar será exibido se o ti
 
 ![moderação](assets/moderation.png)
 
-Ao trabalhar com uma única publicação, um ícone Histórico de moderação aparecerá ao passar o mouse sobre ela. Selecionar o ícone exibirá um painel contendo um histórico de ações tomadas em relação à publicação do UGC.
+Ao trabalhar com uma única publicação, um ícone Histórico de moderação será exibido ao passar o mouse sobre ele. Selecionar o ícone exibirá um painel contendo um histórico de ações tomadas em relação à publicação do UGC.
 
-Para retornar à exibição da área de conteúdo de várias postagens UGC, selecione o X no canto superior direito do painel de detalhes da visualização.
+Para retornar à exibição da área de conteúdo de várias publicações UGC, selecione o X no canto superior direito do painel de detalhes da exibição.
 
 Por exemplo:
 
-![história de moderação](assets/moderation-history.png)
+![histórico de moderação](assets/moderation-history.png)
 
 #### Exibir detalhe {#view-detail}
 
-![visualização](assets/view.png)
+![exibir](assets/view.png)
 
-Ao trabalhar com uma única publicação, mais detalhes podem ser exibidos ao abrir o UGC no modo de detalhes.
+Ao trabalhar com uma única publicação, mais detalhes podem ser visualizados ao abrir o UGC no modo de detalhes.
 
 Para fazer isso, passe o mouse sobre a publicação para exibir o ícone `View Detail` e selecione-a para exibir um painel que contenha mais detalhes da publicação.
 
-Para retornar à exibição da área de conteúdo de várias postagens UGC, selecione o X no canto superior direito do painel de detalhes da visualização.
+Para retornar à exibição da área de conteúdo de várias publicações UGC, selecione o X no canto superior direito do painel de detalhes da exibição.
 
 Por exemplo:
 
-![visualização1](assets/view1.png)
+![view1](assets/view1.png)
 
