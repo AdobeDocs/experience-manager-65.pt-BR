@@ -1,8 +1,8 @@
 ---
 title: Ampliação da funcionalidade do fluxo de trabalho
 seo-title: Ampliação da funcionalidade do fluxo de trabalho
-description: 'null'
-seo-description: nulo
+description: Ampliação da funcionalidade do fluxo de trabalho
+seo-description: 'null'
 uuid: 9f4ea2a8-8b21-4e7c-ac73-dd37d9ada111
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,78 +10,78 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3589'
 ht-degree: 1%
 
 ---
 
 
-# Extensão da funcionalidade do fluxo de trabalho{#extending-workflow-functionality}
+# Ampliação da funcionalidade do fluxo de trabalho{#extending-workflow-functionality}
 
-Este tópico descreve como desenvolver componentes de etapa personalizados para seus workflows e, em seguida, como interagir programaticamente com workflows.
+Este tópico descreve como desenvolver componentes de etapa personalizados para seus fluxos de trabalho e, em seguida, como interagir programaticamente com fluxos de trabalho.
 
-A criação de uma etapa de fluxo de trabalho personalizado envolve as seguintes atividades:
+A criação de uma etapa de fluxo de trabalho personalizada envolve as seguintes atividades:
 
 * Desenvolva o componente de etapa do fluxo de trabalho.
-* Implemente a funcionalidade Step como um serviço OSGi ou um script ECMA.
+* Implemente a funcionalidade da etapa como um serviço OSGi ou um script ECMA.
 
-Você também pode [interagir com seus workflows de seus programas e scripts](/help/sites-developing/workflows-program-interaction.md).
+Você também pode [interagir com seus workflows a partir de seus programas e scripts](/help/sites-developing/workflows-program-interaction.md).
 
-## Componentes da Etapa do Fluxo de Trabalho - Noções básicas {#workflow-step-components-the-basics}
+## Componentes da etapa do fluxo de trabalho - Noções básicas {#workflow-step-components-the-basics}
 
-Um componente de etapa de fluxo de trabalho define a aparência e o comportamento da etapa ao criar modelos de fluxo de trabalho:
+Um componente de etapa do fluxo de trabalho define a aparência e o comportamento da etapa ao criar modelos de fluxo de trabalho:
 
-* O nome da categoria e da etapa no sidekick do fluxo de trabalho.
+* A categoria e o nome da etapa no sidekick do fluxo de trabalho.
 * A aparência da etapa em modelos de fluxo de trabalho.
-* A caixa de diálogo de edição para configurar as propriedades do componente.
-* O serviço ou script executado em tempo de execução.
+* A caixa de diálogo Editar para configurar as propriedades do componente.
+* O serviço ou script que é executado em tempo de execução.
 
-Assim como com [todos os componentes](/help/sites-developing/components.md), os componentes da etapa do fluxo de trabalho herdam do componente especificado para a propriedade `sling:resourceSuperType`. O diagrama a seguir mostra a hierarquia dos nós `cq:component` que formam a base de todos os componentes da etapa do fluxo de trabalho. O diagrama também inclui os componentes **Etapa do processo**, **Etapa do participante** e **Etapa do participante dinâmico**, uma vez que estes são os pontos de partida mais comuns (e básicos) para o desenvolvimento de componentes de etapa personalizados.
+Assim como com [todos os componentes](/help/sites-developing/components.md), os componentes da etapa do fluxo de trabalho herdam do componente especificado para a propriedade `sling:resourceSuperType`. O diagrama a seguir mostra a hierarquia de nós `cq:component` que formam a base de todos os componentes da etapa do fluxo de trabalho. O diagrama também inclui os componentes **Etapa do processo**, **Etapa do participante** e **Etapa do participante dinâmico**, pois esses são os pontos de partida mais comuns (e básicos) para o desenvolvimento de componentes de etapa personalizados.
 
-![aem_wf_componenthereit](assets/aem_wf_componentinherit.png)
+![aem_wf_componentherit](assets/aem_wf_componentinherit.png)
 
 >[!CAUTION]
 >
->Você ***deve*** não alterar nada no caminho `/libs`.
+>Você ***não deve*** alterar nada no caminho `/libs`.
 >
->Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos).
+>Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
 >
 >O método recomendado para configuração e outras alterações é:
 >
->1. Recrie o item necessário (isto é, como ele existe em `/libs` em `/apps`
+>1. Recrie o item necessário (ou seja, como ele existe em `/libs` em `/apps`
 >2. Faça quaisquer alterações em `/apps`
 
 
-O componente `/libs/cq/workflow/components/model/step` é o ancestral comum mais próximo da **Etapa do processo**, **Etapa do participante** e **Etapa do participante dinâmico**, que herdam os seguintes itens:
+O componente `/libs/cq/workflow/components/model/step` é o ancestral comum mais próximo do **Etapa do processo**, **Etapa do participante** e **Etapa do participante dinâmico**, que herdam todos os itens a seguir:
 
 * `step.jsp`
 
-   O script `step.jsp` renderiza o título do componente Step quando ele é adicionado a um modelo.
+   O script `step.jsp` renderiza o título do componente da etapa quando ele é adicionado a um modelo.
 
    ![wf-22-1](assets/wf-22-1.png)
 
-* [cq:diálogo](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
+* [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
    Uma caixa de diálogo com as seguintes guias:
 
    * **Frequentes**: para editar o título e a descrição.
-   * **Avançado**: para editar as propriedades de notificação por email.
+   * **Avançado**: para editar as propriedades de notificação de email.
 
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
    >[!NOTE]
    >
-   >Quando as guias da caixa de diálogo de edição de um componente de etapa não correspondem a essa aparência padrão, o componente Step tem scripts definidos, propriedades de nó ou guias de diálogo que substituem essas guias herdadas.
+   >Quando as guias da caixa de diálogo de edição de um componente de etapa não correspondem a essa aparência padrão, o componente de etapa tem scripts definidos, propriedades de nó ou guias de diálogo que substituem essas guias herdadas.
 
 ### Scripts ECMA {#ecma-scripts}
 
 Os seguintes objetos estão disponíveis (dependendo do tipo de etapa) nos scripts ECMA:
 
-* [Item](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) deItemDeTrabalho
-* [WorkflowSession workflowSession ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) 
-* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) WorkflowDataworkflowData
+* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) ItemDeItemDeTrabalho
+* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) WorkflowSessionworkflowSession
+* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) WorkflowDataWorkflowData
 * `args`: com os argumentos do processo.
 
 * `sling`: para acessar outros serviços osgi.
@@ -89,19 +89,19 @@ Os seguintes objetos estão disponíveis (dependendo do tipo de etapa) nos scrip
 
 ### MetaDataMaps {#metadatamaps}
 
-Você pode usar metadados de fluxo de trabalho para persistir as informações necessárias durante a vida útil do fluxo de trabalho. Um requisito comum das etapas do fluxo de trabalho é manter os dados para uso futuro no fluxo de trabalho ou recuperar os dados persistentes.
+Você pode usar metadados de workflow para manter as informações necessárias durante a vida útil do workflow. Um requisito comum de etapas do fluxo de trabalho é a persistência de dados para uso futuro no fluxo de trabalho ou a recuperação dos dados persistentes.
 
-Há três tipos de objetos MetaDataMap - para `Workflow`, `WorkflowData` e `WorkItem` objetos. Todos eles têm o mesmo objetivo pretendido - armazenar metadados.
+Há três tipos de objetos MetaDataMap - para objetos `Workflow`, `WorkflowData` e `WorkItem`. Todos têm o mesmo objetivo pretendido - armazenar metadados.
 
-Um WorkItem tem seu próprio MetaDataMap que só pode ser usado enquanto o item de trabalho (por exemplo, etapa) estiver em execução.
+Um WorkItem tem seu próprio MetaDataMap que só pode ser usado enquanto esse item de trabalho (por exemplo, etapa) está em execução.
 
-Os metadados `Workflow` e `WorkflowData` são compartilhados em todo o fluxo de trabalho. Nesses casos, é recomendável usar apenas o mapa de metadados `WorkflowData`.
+Os mapas de metadados `Workflow` e `WorkflowData` são compartilhados por todo o fluxo de trabalho. Nesses casos, é recomendável usar somente o mapa de metadados `WorkflowData`.
 
-## Criando Componentes de Etapa de Fluxo de Trabalho Personalizado {#creating-custom-workflow-step-components}
+## Criação de componentes de etapa de fluxo de trabalho personalizados {#creating-custom-workflow-step-components}
 
-Os componentes da etapa do fluxo de trabalho podem ser [criados da mesma forma que qualquer outro componente](/help/sites-developing/components.md).
+Os componentes da etapa do fluxo de trabalho podem ser [criados da mesma maneira que qualquer outro componente](/help/sites-developing/components.md).
 
-Para herdar de um dos componentes de etapa base (existente), adicione a seguinte propriedade ao nó `cq:Component`:
+Para herdar de um dos componentes da etapa base (existente), adicione a seguinte propriedade ao nó `cq:Component`:
 
 * Nome: `sling:resourceSuperType`
 * Tipo: `String`
@@ -111,13 +111,13 @@ Para herdar de um dos componentes de etapa base (existente), adicione a seguinte
    * `cq/workflow/components/model/participant`
    * `cq/workflow/components/model/dynamic_participant`
 
-### Especificação do título padrão e da descrição para instâncias de etapa {#specifying-the-default-title-and-description-for-step-instances}
+### Especificar o título padrão e a descrição para instâncias de etapa {#specifying-the-default-title-and-description-for-step-instances}
 
 Use o procedimento a seguir para especificar valores padrão para os campos **Title** e **Description** na guia **Common**.
 
 >[!NOTE]
 >
->Os valores de campo são exibidos na instância da etapa quando ambos os requisitos são atendidos:
+>Os valores de campo aparecem na instância da etapa quando ambos os requisitos a seguir são cumpridos:
 >
 >* A caixa de diálogo de edição da etapa armazena o título e a descrição nos seguintes locais: >
 >* `./jcr:title`
@@ -125,35 +125,35 @@ Use o procedimento a seguir para especificar valores padrão para os campos **Ti
 
 >
 >  
-Esse requisito é atendido quando a caixa de diálogo de edição usa a guia Comum implementada pelo componente `/libs/cq/flow/components/step/step`.
+Esse requisito é satisfeito quando a caixa de diálogo de edição usa a guia Comum que o componente `/libs/cq/flow/components/step/step` implementa.
 >
->* O componente Step ou um ancestral do componente não substitui o script `step.jsp` que o componente `/libs/cq/flow/components/step/step` implementa.
+>* O componente de etapa ou um ancestral do componente não substitui o script `step.jsp` que o componente `/libs/cq/flow/components/step/step` implementa.
 
 
-1. Abaixo do nó `cq:Component`, adicione o seguinte nó:
+1. Abaixo do nó `cq:Component` , adicione o seguinte nó:
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o nó cq:editConfig, consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
+   >Para obter mais informações sobre o nó cq:editConfig , consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
-1. Abaixo do nó `cq:EditConfig`, adicione o seguinte nó:
+1. Abaixo do nó `cq:EditConfig` , adicione o seguinte nó:
 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
 
 1. Adicione `String` propriedades dos seguintes nomes ao nó `cq:formParameters`:
 
-   * `jcr:title`: O valor preenche o  **** campo Título da  **** guia Commontab.
-   * `jcr:description`: O valor preenche o  **** campo Descrição da  **** guia Comandos.
+   * `jcr:title`: O valor preenche o  **** Título da  **** guia Commontab.
+   * `jcr:description`: O valor preenche o campo  **** Descrição da  **** guia Commontab.
 
-### Salvando valores de propriedade em metadados de fluxo de trabalho {#saving-property-values-in-workflow-metadata}
+### Salvar valores de propriedade nos metadados do fluxo de trabalho {#saving-property-values-in-workflow-metadata}
 
 >[!NOTE]
 >
->Consulte [Dados Persistentes e de Acesso](#persisting-and-accessing-data). Especificamente, para obter informações sobre como acessar o valor da propriedade no tempo de execução, consulte [Acessando Valores de Propriedade da Caixa de Diálogo em Tempo de Execução](#accessing-dialog-property-values-at-runtime).
+>Consulte [Dados persistentes e acessados](#persisting-and-accessing-data). Especificamente, para obter informações sobre como acessar o valor da propriedade no tempo de execução, consulte [Acessando Valores da Propriedade da Caixa de Diálogo em Tempo de Execução](#accessing-dialog-property-values-at-runtime).
 
 A propriedade name dos itens `cq:Widget` especifica o nó JCR que armazena o valor do widget. Quando os widgets na caixa de diálogo dos componentes da etapa do fluxo de trabalho armazenam valores abaixo do nó `./metaData`, o valor é adicionado ao fluxo de trabalho `MetaDataMap`.
 
@@ -169,26 +169,26 @@ O valor especificado nesse campo de texto é adicionado ao objeto ` [MetaDataMap
 
 >[!NOTE]
 >
->Quando a chave for `PROCESS_ARGS`, o valor estará prontamente disponível nas implementações de script ECMA por meio da variável `args`. Nesse caso, o valor da propriedade name é `./metaData/PROCESS_ARGS.`
+>Quando a chave for `PROCESS_ARGS`, o valor estará prontamente disponível nas implementações de script ECMA por meio da variável `args` . Nesse caso, o valor da propriedade name é `./metaData/PROCESS_ARGS.`
 
 ### Substituição da implementação da etapa {#overriding-the-step-implementation}
 
-Cada componente básico permite que desenvolvedores de modelo de fluxo de trabalho configurem os seguintes recursos principais no momento do projeto:
+Cada componente básico de etapa permite que os desenvolvedores do modelo de fluxo de trabalho configurem os seguintes recursos principais no momento do design:
 
-* Etapa do processo: O serviço ou script ECMA a ser executado em tempo de execução.
+* Etapa do processo: O serviço ou script ECMA a ser executado no tempo de execução.
 * Etapa do participante: A ID do usuário que recebe o item de trabalho gerado.
 * Etapa dinâmica do participante: O serviço ou script ECMA que seleciona a ID do usuário que recebe o item de trabalho.
 
-Para focalizar o componente para uso em um cenário de fluxo de trabalho específico, configure o recurso principal no design e remova a capacidade dos desenvolvedores de modelo de alterá-lo.
+Para focalizar o componente para uso em um cenário de fluxo de trabalho específico, configure o recurso principal no design e remova a capacidade dos desenvolvedores de modelo alterá-lo.
 
-1. Abaixo do nó cq:component, adicione o seguinte nó:
+1. Abaixo do nó cq:component , adicione o seguinte nó:
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
 
-   Para obter mais informações sobre o nó cq:editConfig, consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
+   Para obter mais informações sobre o nó cq:editConfig , consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
-1. Abaixo do nó cq:EditConfig, adicione o seguinte nó:
+1. Abaixo do nó cq:EditConfig , adicione o seguinte nó:
 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
@@ -205,25 +205,25 @@ Para focalizar o componente para uso em um cenário de fluxo de trabalho especí
    * `PARTICIPANT`: A ID do usuário que recebe o item de trabalho.
    * `DYNAMIC_PARTICIPANT`: O caminho para o script ECMA ou o PID do serviço que seleciona o usuário para atribuir o item de trabalho.
 
-1. Para remover a capacidade dos desenvolvedores de modelo de alterar seus valores de propriedade, substitua a caixa de diálogo do supertipo de componente.
+1. Para remover a capacidade dos desenvolvedores de modelo de alterarem seus valores de propriedade, substitua a caixa de diálogo do supertipo de componente.
 
 ### Adicionar Forms e caixas de diálogo às etapas do participante {#adding-forms-and-dialogs-to-participant-steps}
 
-Personalize o componente de etapa do participante para fornecer os recursos encontrados nos componentes [Etapa do participante do formulário](/help/sites-developing/workflows-step-ref.md#form-participant-step) e [Etapa do participante da caixa de diálogo](/help/sites-developing/workflows-step-ref.md#dialog-participant-step):
+Personalize o componente da etapa do participante para fornecer recursos que são encontrados nos componentes [Etapa do participante do formulário](/help/sites-developing/workflows-step-ref.md#form-participant-step) e [Etapa do participante da caixa de diálogo](/help/sites-developing/workflows-step-ref.md#dialog-participant-step):
 
 * Apresentar um formulário ao usuário quando ele abrir o item de trabalho gerado.
 * Apresentar uma caixa de diálogo personalizada ao usuário quando ele concluir o item de trabalho gerado.
 
-Execute o seguinte procedimento em seu novo componente (consulte [Criação de componentes de etapa de fluxo de trabalho personalizados](#creating-custom-workflow-step-components)):
+Execute o seguinte procedimento no novo componente (consulte [Criação de componentes de etapa de fluxo de trabalho personalizados](#creating-custom-workflow-step-components)):
 
-1. Abaixo do nó `cq:Component`, adicione o seguinte nó:
+1. Abaixo do nó `cq:Component` , adicione o seguinte nó:
 
    * Nome: `cq:editConfig`
    * Tipo: `cq:EditConfig`
 
-   Para obter mais informações sobre o nó cq:editConfig, consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/components-basics.md#edit-behavior).
+   Para obter mais informações sobre o nó cq:editConfig , consulte [Configuração do comportamento de edição de um componente](/help/sites-developing/components-basics.md#edit-behavior).
 
-1. Abaixo do nó cq:EditConfig, adicione o seguinte nó:
+1. Abaixo do nó cq:EditConfig , adicione o seguinte nó:
 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
@@ -240,34 +240,34 @@ Execute o seguinte procedimento em seu novo componente (consulte [Criação de c
    * Tipo: `String`
    * Valor: O caminho que resolve a caixa de diálogo
 
-### Configuração do comportamento de tempo de execução da etapa do fluxo de trabalho {#configuring-the-workflow-step-runtime-behavior}
+### Configurar o comportamento do tempo de execução da etapa do fluxo de trabalho {#configuring-the-workflow-step-runtime-behavior}
 
-Abaixo do nó `cq:Component`, adicione um nó `cq:EditConfig`. Abaixo, você pode adicionar um nó `nt:unstructured` (deve ser chamado de `cq:formParameters`) e, nesse nó, adicionar as seguintes propriedades:
+Abaixo do nó `cq:Component`, adicione um nó `cq:EditConfig`. Abaixo que adiciona um nó `nt:unstructured` (deve ser nomeado `cq:formParameters`) e, nesse nó, adiciona as seguintes propriedades:
 
 * Nome: `PROCESS_AUTO_ADVANCE`
 
    * Tipo: `Boolean`
    * Valor:
 
-      * quando definido como `true` o fluxo de trabalho executará essa etapa e continuará - isso é padrão e também recomendado
-      * quando `false`, o fluxo de trabalho será executado e parado; isso precisa de manuseio extra, portanto, `true` é recomendado
+      * quando definido como `true` o workflow executará essa etapa e continuará - isso é padrão e também recomendado
+      * quando `false`, o workflow será executado e interrompido; isso precisa de manuseio extra, então `true` é recomendado
 
 * Nome: `DO_NOTIFY`
 
    * Tipo: `Boolean`
-   * Valor: indica se as notificações por email devem ser enviadas para as etapas de participação do usuário (e assume que o servidor de email está configurado corretamente)
+   * Valor: indica se as notificações por email devem ser enviadas para etapas de participação do usuário (e assume que o servidor de email está configurado corretamente)
 
 ## Persistência e acesso a dados {#persisting-and-accessing-data}
 
 ### Dados Persistentes para Etapas de Fluxo de Trabalho Subsequentes {#persisting-data-for-subsequent-workflow-steps}
 
-Você pode usar metadados de fluxo de trabalho para persistir as informações necessárias durante a vida útil do fluxo de trabalho - e entre as etapas. Um requisito comum das etapas do fluxo de trabalho é manter os dados para uso futuro ou recuperar os dados persistentes de etapas anteriores.
+Você pode usar metadados de workflow para manter as informações necessárias durante a vida útil do workflow - e entre etapas. Um requisito comum de etapas do fluxo de trabalho é a persistência de dados para uso futuro ou a recuperação dos dados persistentes de etapas anteriores.
 
-Os metadados do fluxo de trabalho são armazenados em um objeto [`MetaDataMap`](#metadatamaps). A API Java fornece o método [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) para retornar um objeto [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) que fornece o objeto `MetaDataMap` apropriado. Esse objeto `WorkflowData` `MetaDataMap` está disponível para o serviço OSGi ou o script ECMA de um componente de etapa.
+Os metadados do workflow são armazenados em um objeto [`MetaDataMap`](#metadatamaps) . A API Java fornece o método [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) para retornar um objeto [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) que fornece o objeto `MetaDataMap` apropriado. Esse objeto `WorkflowData` `MetaDataMap` está disponível para o serviço OSGi ou o script ECMA de um componente de etapa.
 
 #### Java {#java}
 
-O método execute da implementação `WorkflowProcess` é transmitido ao objeto `WorkItem`. Use esse objeto para obter o objeto `WorkflowData` para a instância de fluxo de trabalho atual. O exemplo a seguir adiciona um item ao objeto workflow `MetaDataMap` e registra cada item. O item (&quot;mykey&quot;, &quot;My Step Value&quot;) está disponível para as etapas subsequentes no fluxo de trabalho.
+O método execute da implementação `WorkflowProcess` é passado no objeto `WorkItem`. Use esse objeto para obter o objeto `WorkflowData` para a instância de fluxo de trabalho atual. O exemplo a seguir adiciona um item ao objeto `MetaDataMap` do fluxo de trabalho e, em seguida, registra cada item. O item (&quot;mykey&quot;, &quot;My Step Value&quot;) está disponível para as etapas subsequentes no fluxo de trabalho.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -287,11 +287,11 @@ public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) th
 
 #### Script ECMA {#ecma-script}
 
-A variável `graniteWorkItem` é a representação de script ECMA do objeto Java `WorkItem` atual. Portanto, você pode usar a variável `graniteWorkItem` para obter os metadados do fluxo de trabalho. O script ECMA a seguir pode ser usado para implementar uma **Etapa do processo** para adicionar um item ao objeto `MetaDataMap` do fluxo de trabalho e, em seguida, registrar cada item. Esses itens ficam disponíveis para as etapas subsequentes no fluxo de trabalho.
+A variável `graniteWorkItem` é a representação do script ECMA do objeto Java `WorkItem` atual. Portanto, você pode usar a variável `graniteWorkItem` para obter os metadados do workflow. O script ECMA a seguir pode ser usado para implementar uma **Etapa do Processo** para adicionar um item ao objeto `MetaDataMap` do workflow e, em seguida, registrar cada item. Esses itens ficam disponíveis para as etapas subsequentes no fluxo de trabalho.
 
 >[!NOTE]
 >
->A variável `metaData` imediatamente disponível para o script Step é os metadados da etapa. Os metadados da etapa são diferentes dos metadados do fluxo de trabalho.
+>A variável `metaData` imediatamente disponível para o script da etapa são os metadados da etapa. Os metadados da etapa são diferentes dos metadados do fluxo de trabalho.
 
 ```
 var currentDateInMillis = new Date().getTime();
@@ -307,31 +307,31 @@ while (iterator.hasNext()){
 }
 ```
 
-### Acessar valores de propriedade da caixa de diálogo em tempo de execução {#accessing-dialog-property-values-at-runtime}
+### Acessar valores de propriedade da caixa de diálogo no tempo de execução {#accessing-dialog-property-values-at-runtime}
 
-O objeto `MetaDataMap` das instâncias de fluxo de trabalho é útil para armazenar e recuperar dados durante toda a vida do fluxo de trabalho. Para implementações de componentes de etapa de fluxo de trabalho, o `MetaDataMap` é especialmente útil para recuperar valores de propriedade de componente em tempo de execução.
+O objeto `MetaDataMap` de instâncias de fluxo de trabalho é útil para armazenar e recuperar dados durante toda a vida do fluxo de trabalho. Para implementações de componentes de etapa do fluxo de trabalho, o `MetaDataMap` é útil principalmente para recuperar valores de propriedade de componente no tempo de execução.
 
 >[!NOTE]
 >
->Para obter informações sobre como configurar a caixa de diálogo do componente para armazenar propriedades como metadados do fluxo de trabalho, consulte [Salvando valores de propriedade em metadados do fluxo de trabalho](#saving-property-values-in-workflow-metadata).
+>Para obter informações sobre como configurar a caixa de diálogo do componente para armazenar propriedades como metadados do fluxo de trabalho, consulte [Salvar valores de propriedade nos metadados do fluxo de trabalho](#saving-property-values-in-workflow-metadata).
 
-O fluxo de trabalho `MetaDataMap` está disponível para implementações de processos de script Java e ECMA:
+O workflow `MetaDataMap` está disponível para implementações de processos de script Java e ECMA:
 
-* Em implementações Java da interface WorkflowProcess, o parâmetro `args` é o objeto `MetaDataMap` do fluxo de trabalho.
+* Em implementações Java da interface WorkflowProcess , o parâmetro `args` é o objeto `MetaDataMap` do fluxo de trabalho.
 
-* Nas implementações de script ECMA, o valor está disponível usando as variáveis `args` e `metadata`.
+* Em implementações de script ECMA, o valor está disponível usando as variáveis `args` e `metadata`.
 
 ### Exemplo: Recuperando os Argumentos do Componente Etapa do Processo {#example-retrieving-the-arguments-of-the-process-step-component}
 
-A caixa de diálogo de edição do componente **Etapa do processo** inclui a propriedade **Arguments**. O valor da propriedade **Arguments** é armazenado nos metadados do fluxo de trabalho e está associado à chave `PROCESS_ARGS`.
+A caixa de diálogo Editar do componente **Etapa do Processo** inclui a propriedade **Argumentos**. O valor da propriedade **Arguments** é armazenado nos metadados do workflow e está associado à chave `PROCESS_ARGS`.
 
-No diagrama a seguir, o valor da propriedade **Arguments** é `argument1, argument2`:
+No diagrama a seguir, o valor da propriedade **Argumentos** é `argument1, argument2`:
 
 ![wf-24](assets/wf-24.png)
 
 #### Java {#java-1}
 
-O código Java a seguir é o método `execute` para uma implementação `WorkflowProcess`. O método registra o valor em `args` `MetaDataMap` que está associado à chave `PROCESS_ARGS`.
+O código Java a seguir é o método `execute` para uma implementação `WorkflowProcess`. O método registra o valor no `args` `MetaDataMap` que está associado à chave `PROCESS_ARGS`.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -341,7 +341,7 @@ public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) th
     }
 ```
 
-Quando uma etapa do processo que usa essa implementação Java é executada, o log contém a seguinte entrada:
+Quando uma etapa do processo que usa essa implementação do Java é executada, o log contém a seguinte entrada:
 
 ```xml
 16.02.2018 12:07:39.566 *INFO* [JobHandler: /var/workflow/instances/server0/2018-02-16/model_855140139900189:/content/we-retail/de] com.adobe.example.workflow.impl.process.LogArguments workflow metadata for key PROCESS_ARGS and value argument1, argument2
@@ -349,7 +349,7 @@ Quando uma etapa do processo que usa essa implementação Java é executada, o l
 
 #### Script ECMA {#ecma-script-1}
 
-O script ECMA a seguir é usado como o processo para **Etapa do processo**. Registra o número de argumentos e os valores do argumento:
+O script ECMA a seguir é usado como o processo para a **Etapa do Processo**. Ele registra o número de argumentos e os valores do argumento:
 
 ```
 var iterator = graniteWorkItem.getWorkflowData().getMetaDataMap().keySet().iterator();
@@ -363,30 +363,30 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 >[!NOTE]
 >
->Esta seção descreve como trabalhar com argumentos para etapas do processo. A informação também se aplica aos selecionadores de participantes dinâmicos.
+>Esta seção descreve como trabalhar com argumentos para etapas do processo. A informação também se aplica a choosers dinâmicos para participantes.
 
 >[!NOTE]
->Para obter outro exemplo de armazenamento de propriedades de componentes em metadados de fluxo de trabalho, consulte Exemplo: Criar uma Etapa do Fluxo de Trabalho do Logger. Este exemplo apresenta um diálogo que associa o valor de metadados a uma chave diferente de PROCESS_ARGS.
+>Para obter outro exemplo de armazenamento de propriedades do componente em metadados do fluxo de trabalho, consulte Exemplo: Criar uma etapa do fluxo de trabalho do logger. Este exemplo apresenta uma caixa de diálogo que associa o valor de metadados a uma chave diferente de PROCESS_ARGS.
 
-### Scripts e argumentos de processamento {#scripts-and-process-arguments}
+### Scripts e Argumentos de Processo {#scripts-and-process-arguments}
 
 Em um script para um componente **Etapa do processo**, os argumentos estão disponíveis por meio do objeto `args`.
 
 Ao criar um componente de etapa personalizado, o objeto `metaData` está disponível em um script. Esse objeto é limitado a um único argumento de string.
 
-## Implementações de Etapa do Processo de Desenvolvimento {#developing-process-step-implementations}
+## Implementações de etapas do processo de desenvolvimento {#developing-process-step-implementations}
 
-Quando as etapas do processo são iniciadas durante o processo de um fluxo de trabalho, as etapas enviam uma solicitação para um serviço OSGi ou executam um script ECMA. Desenvolva o serviço ou o script ECMA que executa as ações que seu fluxo de trabalho requer.
+Quando as etapas do processo são iniciadas durante o processo de um workflow, as etapas enviam uma solicitação para um serviço OSGi ou executam um script ECMA. Desenvolva o serviço ou o script ECMA que executa as ações necessárias ao seu fluxo de trabalho.
 
 >[!NOTE]
 >
->Para obter informações sobre como associar o componente Etapa do processo ao serviço ou script, consulte [Etapa do processo](/help/sites-developing/workflows-step-ref.md#process-step) ou [Substituição da Implementação da etapa](#overriding-the-step-implementation).
+>Para obter informações sobre como associar o componente Etapa do Processo ao serviço ou script, consulte [Etapa do Processo](/help/sites-developing/workflows-step-ref.md#process-step) ou [Substituição da Implementação da Etapa](#overriding-the-step-implementation).
 
-### Implementação de uma Etapa do Processo com uma Classe Java {#implementing-a-process-step-with-a-java-class}
+### Implementar uma etapa do processo com uma classe Java {#implementing-a-process-step-with-a-java-class}
 
 Para definir uma etapa do processo como um componente de serviço OSGI (pacote Java):
 
-1. Crie o pacote e implante-o no container OSGI. Consulte a documentação sobre como criar um pacote com [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
+1. Crie o pacote e implante-o no contêiner OSGI. Consulte a documentação sobre como criar um pacote com [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
@@ -396,10 +396,10 @@ Para definir uma etapa do processo como um componente de serviço OSGI (pacote J
    >
    >O nome do pacote precisa ser adicionado à seção `<*Private-Package*>` da configuração `maven-bundle-plugin`.
 
-1. Adicione a propriedade SCR `process.label` e defina o valor conforme necessário. Esse será o nome que sua etapa do processo será listada ao usar o componente genérico **Etapa do processo**. Consulte o exemplo abaixo.
-1. No editor **Modelos**, adicione a etapa do processo ao fluxo de trabalho usando o componente genérico **Etapa do processo**.
-1. Na caixa de diálogo de edição (da **Etapa do processo**), vá para a guia **Processo** e selecione a implementação do processo.
-1. Se você usar argumentos em seu código, defina os **Argumentos do Processo**. Por exemplo: false.
+1. Adicione a propriedade SCR `process.label` e defina o valor conforme necessário. Esse será o nome que sua etapa do processo será listada ao usar o componente genérico **Etapa do processo**. Veja o exemplo abaixo.
+1. No editor **Modelos**, adicione a etapa do processo ao workflow usando o componente genérico **Etapa do processo**.
+1. Na caixa de diálogo de edição (do **Etapa do processo**), vá para a guia **Processo** e selecione a implementação do processo.
+1. Se você usar argumentos em seu código, defina os **Argumentos de processo**. Por exemplo: falso.
 1. Salve as alterações, tanto para a etapa quanto para o modelo de fluxo de trabalho (canto superior esquerdo do editor de modelo).
 
 Os métodos java, respectivamente, as classes que implementam o método Java executável são registradas como serviços OSGI, permitindo que você adicione métodos a qualquer momento durante o tempo de execução.
@@ -468,21 +468,21 @@ public class MyProcess implements WorkflowProcess {
 
 >[!NOTE]
 >
->Se o processo falhar três vezes seguidas, um item será colocado na Caixa de entrada do administrador do fluxo de trabalho.
+>Se o processo falhar três vezes seguidas, um item é colocado na Caixa de entrada do administrador do fluxo de trabalho.
 
-### Usando o ECMAScript {#using-ecmascript}
+### Uso de ECMAScript {#using-ecmascript}
 
-Os scripts ECMA permitem que desenvolvedores de scripts implementem etapas do processo. Os scripts estão localizados no repositório JCR e são executados a partir daí.
+Os scripts ECMA permitem que os desenvolvedores de script implementem as etapas do processo. Os scripts estão localizados no repositório JCR e são executados a partir daí.
 
-A tabela a seguir lista as variáveis que estão imediatamente disponíveis para processar scripts, fornecendo acesso a objetos da API Java do fluxo de trabalho.
+A tabela a seguir lista as variáveis imediatamente disponíveis para processar scripts, fornecendo acesso a objetos da API Java do workflow.
 
 | Classe Java | Nome da variável de script | Descrição |
 |---|---|---|
 | `com.adobe.granite.workflow.exec.WorkItem` | `graniteWorkItem` | A instância da etapa atual. |
 | `com.adobe.granite.workflow.WorkflowSession` | `graniteWorkflowSession` | A sessão de fluxo de trabalho da instância da etapa atual. |
-| `String[]` (contém argumentos de processo) | `args` | Os argumentos Step. |
-| `com.adobe.granite.workflow.metadata.MetaDataMap` | `metaData` | Os metadados da instância de etapa atual. |
-| `org.apache.sling.scripting.core.impl.InternalScriptHelper` | `sling` | Fornece acesso ao ambiente de tempo de execução Sling. |
+| `String[]` (contém argumentos de processo) | `args` | Os argumentos da etapa. |
+| `com.adobe.granite.workflow.metadata.MetaDataMap` | `metaData` | Os metadados da instância da etapa atual. |
+| `org.apache.sling.scripting.core.impl.InternalScriptHelper` | `sling` | Fornece acesso ao ambiente de tempo de execução do Sling. |
 
 O script de exemplo a seguir demonstra como acessar o nó JCR que representa a carga do fluxo de trabalho. A variável `graniteWorkflowSession` é adaptada a uma variável de sessão JCR, que é usada para obter o nó do caminho de carga.
 
@@ -499,7 +499,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 }
 ```
 
-O script a seguir verifica se a carga é uma imagem ( `.png` arquivo), cria uma imagem em preto-e-branco a partir dela e a salva como um nó irmão.
+O script a seguir verifica se a carga é uma imagem (arquivo `.png`), cria uma imagem em preto-e-branco a partir dela e a salva como um nó irmão.
 
 ```
 var workflowData = graniteWorkItem.getWorkflowData();
@@ -541,32 +541,32 @@ Para usar o script:
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | O nome a ser exibido na caixa de diálogo de edição. |
 
-1. Edite a instância **Etapa do processo** e especifique o script a ser usado.
+1. Edite a instância **Process Step** e especifique o script a ser usado.
 
 ## Desenvolvendo seletores de participantes {#developing-participant-choosers}
 
-Você pode desenvolver opções de participantes para os componentes **Etapa dinâmica do participante**.
+Você pode desenvolver seletores de participantes para componentes **Etapa dinâmica do participante**.
 
-Quando um componente **Etapa dinâmica do participante** é iniciado durante um fluxo de trabalho, a etapa precisa determinar o participante ao qual o item de trabalho gerado pode ser atribuído. Para fazer isso, execute o seguinte procedimento:
+Quando um componente **Etapa dinâmica do participante** é iniciado durante um fluxo de trabalho, a etapa precisa determinar o participante ao qual o item de trabalho gerado pode ser atribuído. Para fazer isso, siga um destes procedimentos:
 
 * envia uma solicitação para um serviço OSGi
-* executa um script ECMA para selecionar o participante
+* executa um ECMA script para selecionar o participante
 
-Você pode desenvolver um serviço ou script ECMA que selecione o participante de acordo com os requisitos do seu fluxo de trabalho.
+Você pode desenvolver um serviço ou um ECMA script que selecione o participante de acordo com os requisitos do seu fluxo de trabalho.
 
 >[!NOTE]
 >
 >Para obter informações sobre como associar seu componente **Etapa dinâmica do participante** ao serviço ou script, consulte [Etapa dinâmica do participante](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) ou [Substituição da implementação da etapa](#persisting-and-accessing-data).
 
-### Desenvolvendo um Seletor de participantes usando uma classe Java {#developing-a-participant-chooser-using-a-java-class}
+### Desenvolvimento de um Seletor de participante usando uma classe Java {#developing-a-participant-chooser-using-a-java-class}
 
 Para definir uma etapa do participante como um componente de serviço OSGI (classe Java):
 
 1. O componente OSGI precisa implementar a interface `ParticipantStepChooser` com seu método `getParticipant()`. Consulte o código de exemplo abaixo.
 
-   Crie o pacote e implante-o no container OSGI.
+   Crie o pacote e implante-o no contêiner OSGI.
 
-1. Adicione a propriedade SCR `chooser.label` e defina o valor conforme necessário. Esse será o nome como o selecionador de participantes será listado, usando o componente **Etapa dinâmica do participante**. Consulte o exemplo:
+1. Adicione a propriedade SCR `chooser.label` e defina o valor conforme necessário. Esse será o nome relacionado ao escolha do participante, usando o componente **Etapa dinâmica do participante**. Veja o exemplo:
 
    ```java
    package com.adobe.example.workflow.impl.process;
@@ -615,18 +615,18 @@ Para definir uma etapa do participante como um componente de serviço OSGI (clas
    }
    ```
 
-1. No editor **Modelos**, adicione a etapa dinâmica de participante ao fluxo de trabalho usando o componente genérico **Etapa dinâmica de participante**.
-1. Na caixa de diálogo de edição, selecione a guia **Seletor de participantes** e selecione a implementação do seletor.
-1. Se você usar argumentos em seu código, defina os **Argumentos do Processo**. Neste exemplo: `/content/we-retail/de`.
+1. No editor **Modelos**, adicione a etapa dinâmica do participante ao fluxo de trabalho usando o componente genérico **Etapa dinâmica do participante**.
+1. Na caixa de diálogo de edição, selecione a guia **Seletor de Participante** e selecione a implementação do seletor.
+1. Se você usar argumentos em seu código, defina os **Argumentos do processo**. Neste exemplo: `/content/we-retail/de`.
 1. Salve as alterações, tanto para a etapa quanto para o modelo de fluxo de trabalho.
 
-### Desenvolvendo um Seletor de participantes usando um script ECMA {#developing-a-participant-chooser-using-an-ecma-script}
+### Desenvolvimento de um Seletor de participante usando um script ECMA {#developing-a-participant-chooser-using-an-ecma-script}
 
-Você pode criar um script ECMA que selecione o usuário ao qual foi atribuído o item de trabalho gerado pela **Etapa do participante**. O script deve incluir uma função chamada `getParticipant` que não requer argumentos e retorna um `String` que contenha a ID de um usuário ou grupo.
+Você pode criar um script ECMA que selecione o usuário que recebe o item de trabalho gerado pelo **Passo do Participante**. O script deve incluir uma função chamada `getParticipant` que não requer argumentos e retorna um `String` que contém a ID de um usuário ou grupo.
 
 Os scripts estão localizados no repositório JCR e são executados a partir daí.
 
-A tabela a seguir lista as variáveis que fornecem acesso imediato aos objetos Java do fluxo de trabalho em seus scripts.
+A tabela a seguir lista as variáveis que fornecem acesso imediato a objetos Java de fluxo de trabalho em seus scripts.
 
 | Classe Java | Nome da variável de script |
 |---|---|
@@ -658,15 +658,15 @@ function getParticipant() {
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | O nome a ser exibido na caixa de diálogo de edição. |
 
-1. Edite a instância [Etapa dinâmica do participante](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) e especifique o script a ser usado.
+1. Edite a instância [Dynamic Participant Step](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) e especifique o script a ser usado.
 
 ## Manuseio de pacotes de fluxo de trabalho {#handling-workflow-packages}
 
-[Os ](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) pacotes de fluxo de trabalho podem ser enviados para um fluxo de trabalho para processamento. Os pacotes de fluxo de trabalho contêm referências a recursos como páginas e ativos.
+[Os ](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) pacotes de fluxo de trabalho podem ser passados para um fluxo de trabalho para processamento. Os pacotes de fluxo de trabalho contêm referências a recursos como páginas e ativos.
 
 >[!NOTE]
 >
->As seguintes etapas do processo de fluxo de trabalho aceitam pacotes de fluxo de trabalho para ativação de página em massa:
+>As etapas do processo de fluxo de trabalho a seguir aceitam pacotes de fluxo de trabalho para ativação de página em massa:
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
@@ -675,7 +675,7 @@ function getParticipant() {
 
 
 
-Você pode desenvolver etapas de fluxo de trabalho que obtêm os recursos do pacote e processá-los. Os seguintes membros do pacote `com.day.cq.workflow.collection` fornecem acesso aos pacotes de fluxo de trabalho:
+Você pode desenvolver etapas de fluxo de trabalho que obtêm os recursos do pacote e processá-los. Os seguintes membros do pacote `com.day.cq.workflow.collection` fornecem acesso aos pacotes de workflow:
 
 * `ResourceCollection`: Classe de pacote de fluxo de trabalho.
 * `ResourceCollectionUtil`: Use para recuperar objetos ResourceCollection.
@@ -785,13 +785,13 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 }
 ```
 
-## Exemplo: Criando uma Etapa Personalizada {#example-creating-a-custom-step}
+## Exemplo: Criação de uma etapa personalizada {#example-creating-a-custom-step}
 
-Uma maneira fácil de start para criar sua própria etapa personalizada é copiar uma etapa existente de:
+Uma maneira fácil de começar a criar sua própria etapa personalizada é copiar uma etapa existente de:
 
 `/libs/cq/workflow/components/model`
 
-### Criando a Etapa Básica {#creating-the-basic-step}
+### Criando a etapa básica {#creating-the-basic-step}
 
 1. Recrie o caminho em /apps; por exemplo:
 
@@ -809,29 +809,29 @@ Uma maneira fácil de start para criar sua própria etapa personalizada é copia
 
    >[!NOTE]
    >
-   >Esta etapa não se aplica ao editor clássico do Modelo de interface do usuário.
+   >Esta etapa não se aplica ao editor de modelo de interface clássica.
 
-1. Em seguida, coloque a etapa copiada na pasta /apps; por exemplo:
+1. Em seguida, coloque a etapa copiada na pasta /apps; por exemplo, como:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
-   Este é o resultado de nossa etapa personalizada de exemplo:
+   Este é o resultado do nosso exemplo de etapa personalizada:
 
-   ![wf-34](assets/wf-34.png)
+   ![wf-36](assets/wf-34.png)
 
    >[!CAUTION]
    >
-   >Como na interface de usuário padrão, somente o título e não os detalhes não são exibidos no cartão, `details.jsp` não é necessário como era para o editor clássico de interface de usuário.
+   >Como na interface padrão, somente o título e não os detalhes não são exibidos no cartão, `details.jsp` não é necessário, como era para o editor clássico da interface.
 
-1. Aplique as seguintes propriedades ao nó:
+1. Aplique as seguintes propriedades ao nó :
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
-   **Propriedades do interesse:**
+   **Propriedades de interesse:**
 
    * `sling:resourceSuperType`
 
-      É necessário herdar de uma etapa existente.
+      Deve herdar de uma etapa existente.
 
       Neste exemplo, estamos herdando da etapa base em `cq/workflow/components/model/step`, mas você pode usar outros supertipos como `participant`, `process` etc.
 
@@ -856,11 +856,11 @@ Uma maneira fácil de start para criar sua própria etapa personalizada é copia
 
    ![wf-35](assets/wf-35.png)
 
-1. Agora é possível abrir um modelo de fluxo de trabalho para edição. Nas etapas do navegador, você pode filtrar para ver **Minha etapa personalizada**:
+1. Agora é possível abrir um modelo de fluxo de trabalho para edição. No navegador de etapas, você pode filtrar para ver **Minha etapa personalizada**:
 
-   ![wf-36](assets/wf-36.png)
+   ![wf-34](assets/wf-36.png)
 
-   Arrastar **Minha Etapa Personalizada** para o modelo exibe o cartão:
+   Arrastar **Minha etapa personalizada** para o modelo exibe o cartão:
 
    ![wf-37](assets/wf-37.png)
 
@@ -868,17 +868,17 @@ Uma maneira fácil de start para criar sua própria etapa personalizada é copia
 
    ![wf-38](assets/wf-38.png)
 
-#### Definindo a caixa de diálogo Configurar Etapa {#defining-the-step-configure-dialog}
+#### Definir a caixa de diálogo Configurar etapa {#defining-the-step-configure-dialog}
 
-Depois de [Criar a Etapa Básica](#creating-the-basic-step), defina a etapa **Configurar** da seguinte forma:
+Depois de [Criar a etapa básica](#creating-the-basic-step), defina a etapa **Configurar** da seguinte maneira:
 
 1. Configure as propriedades no nó `cq:editConfig` da seguinte maneira:
 
-   **Propriedades do interesse:**
+   **Propriedades de interesse:**
 
    * `cq:inherit`
 
-      Quando definido como `true`, o componente Step herdará as propriedades da etapa especificada em `sling:resourceSuperType`.
+      Quando definido como `true`, o componente da etapa herdará as propriedades da etapa especificada em `sling:resourceSuperType`.
 
    * `cq:disableTargeting`
 
@@ -887,19 +887,19 @@ Depois de [Criar a Etapa Básica](#creating-the-basic-step), defina a etapa **Co
 
 1. Configure as propriedades no nó `cq:formsParameter` da seguinte maneira:
 
-   **Propriedades do interesse:**
+   **Propriedades de interesse:**
 
    * `jcr:title`
 
-      Define o título padrão no cartão de etapa no mapa de modelo e no campo **Title** da caixa de diálogo de configuração **Meu personalizado - Propriedades da etapa**.
+      Define o título padrão no cartão de etapa no mapa de modelo e no campo **Título** da caixa de diálogo de configuração **Meu personalizado - Propriedades da etapa**.
 
-   * Você também pode definir suas próprias propriedades personalizadas.
+   * Também é possível definir suas próprias propriedades personalizadas.
 
    ![wf-40](assets/wf-40.png)
 
 1. Configure as propriedades no nó `cq:listeners`.
 
-   O nó `cq:listener` e suas propriedades permitem definir manipuladores de eventos que reagem a eventos no editor de modelo de interface de usuário habilitada para toque; como arrastar uma etapa para uma página de modelo ou editar as propriedades de uma etapa.
+   O nó `cq:listener` e suas propriedades permitem definir manipuladores de eventos que reagem aos eventos no editor de modelo de interface de usuário habilitada para toque; como arrastar uma etapa para uma página de modelo ou editar uma propriedade de etapa.
 
    **Propriedades de interesse:**
 
@@ -910,19 +910,19 @@ Depois de [Criar a Etapa Básica](#creating-the-basic-step), defina a etapa **Co
 
    Essa configuração é essencial para o funcionamento correto do editor. Na maioria dos casos, essa configuração não deve ser alterada.
 
-   No entanto, definir `cq:inherit` como verdadeiro (no nó `cq:editConfig`, veja acima) permite herdar essa configuração, sem precisar incluí-la explicitamente na definição da etapa. Se nenhuma herança estiver no lugar, então é necessário adicionar esse nó com as seguintes propriedades e valores.
+   No entanto, definir `cq:inherit` como true (no nó `cq:editConfig`, veja acima) permite herdar essa configuração, sem precisar incluí-la explicitamente na definição da etapa. Se nenhuma herança estiver em vigor, será necessário adicionar esse nó com as seguintes propriedades e valores.
 
    Neste exemplo, a herança foi ativada para que pudéssemos remover o nó `cq:listeners` e a etapa ainda funcionará corretamente.
 
    ![wf-41](assets/wf-41.png)
 
-1. Agora você pode adicionar uma instância da sua etapa a um modelo de fluxo de trabalho. Quando você **Configurar** a etapa você verá a caixa de diálogo:
+1. Agora é possível adicionar uma instância da etapa a um modelo de fluxo de trabalho. Ao **Configurar** a etapa, você verá a caixa de diálogo:
 
    ![wf-42](assets/wf-42.png) ![wf-43](assets/wf-43.png)
 
-#### Marcação de amostra usada neste Exemplo {#sample-markup-used-in-this-example}
+#### Marcação de exemplo usada neste exemplo {#sample-markup-used-in-this-example}
 
-A marcação para uma etapa personalizada é representada em `.content.xml` do nó raiz do componente. A amostra `.content.xml` usada para este exemplo:
+A marcação para uma etapa personalizada é representada no `.content.xml` do nó raiz do componente. A amostra `.content.xml` usada para este exemplo:
 
 `/apps/cq/workflow/components/model/myCustomStep/.content.xml`
 
@@ -1037,11 +1037,11 @@ A amostra `_cq_dialog/.content.xml` usada neste exemplo:
 
 >[!NOTE]
 >
->As caixas de diálogo do editor de modelo de interface clássica ainda funcionarão com o editor de interface de usuário padrão e habilitado para toque.
+>As caixas de diálogo do editor de modelo da interface clássica ainda funcionarão com o editor de interface de usuário padrão habilitado para toque.
 >
->Embora AEM tenha uma ferramenta [de conversão de caixa de diálogo](/help/sites-developing/dialog-conversion.md) se você quiser atualizar as caixas de diálogo da etapa clássica da interface do usuário para caixas de diálogo padrão. Após a conversão, ainda há algumas melhorias manuais que poderiam ser feitas no diálogo em certos casos.
+>Embora o AEM tenha uma ferramenta de [conversão de diálogo](/help/sites-developing/dialog-conversion.md) se você quiser atualizar suas caixas de diálogo da etapa da interface clássica para caixas de diálogo padrão da interface do usuário. Após a conversão, ainda há algumas melhorias manuais que podem ser feitas no diálogo em determinados casos.
 >
->* Nos casos em que uma caixa de diálogo atualizada está vazia, você pode observar as caixas de diálogo em `/libs` que têm funcionalidade semelhante a exemplos de como fornecer uma solução. Por exemplo:
+>* Nos casos em que uma caixa de diálogo atualizada está vazia, você pode consultar caixas de diálogo em `/libs` que tenham funcionalidade semelhante a exemplos de como fornecer uma solução. Por exemplo:
    >
    >
 * `/libs/cq/workflow/components/model`
@@ -1052,4 +1052,4 @@ A amostra `_cq_dialog/.content.xml` usada neste exemplo:
 
 >
 >  
-Você não deve modificar nada em `/libs`, basta usá-los como exemplos. Se quiser aproveitar qualquer uma das etapas existentes, copie-as para `/apps` e modifique-as ali.
+Você não deve modificar nada em `/libs`, use-os como exemplos. Se quiser aproveitar qualquer uma das etapas existentes, copie-as para `/apps` e modifique-as lá.
