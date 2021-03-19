@@ -1,19 +1,20 @@
 ---
 title: Introdução à criação de formulários adaptáveis
 seo-title: Introdução à criação de formulários adaptáveis
-description: Os AEM Forms fornecem interface fácil de usar, mas poderosa, para a criação de formulários adaptáveis. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
-seo-description: Os AEM Forms fornecem interface fácil de usar, mas poderosa, para a criação de formulários adaptáveis. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
+description: O AEM Forms oferece uma interface fácil de usar, mas eficiente, para a criação de formulários adaptáveis. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
+seo-description: O AEM Forms oferece uma interface fácil de usar, mas eficiente, para a criação de formulários adaptáveis. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: 103468b8e6e5bdf870156f85b7f547f190044561
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3169'
-ht-degree: 2%
+source-wordcount: '3171'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 2%
 
 ## Visão geral {#overview}
 
-Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atende não apenas às suas necessidades, mas estende os investimentos e ativos existentes em infraestrutura. Você pode escolher entre as seguintes opções para criar um formulário adaptável:
+Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms oferece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atende não apenas às suas necessidades, mas estende os investimentos e ativos existentes em infraestrutura. Você pode escolher entre as seguintes opções para criar um formulário adaptável:
 
 * **Uso de um modelo de dados de formulário**
    [A ](../../forms/using/data-integration.md) integração de dados permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Escolha o modelo de dados de formulário se o formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
@@ -63,7 +64,7 @@ A barra lateral permite
 
 * Consulte o conteúdo do formulário, como painéis, componentes, campos e layout.
 * Editar propriedades de componentes.
-* Pesquise, visualize e use ativos em seu repositório do AEM Digital Asset Management (DAM).
+* Pesquise, visualize e use ativos no repositório do Gerenciamento de ativos digitais do AEM (DAM).
 * Adicione componentes ao formulário.
 
 ![Barra lateral](assets/sidebar-comps.png)
