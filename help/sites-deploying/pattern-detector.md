@@ -1,8 +1,8 @@
 ---
-title: Avaliação da complexidade da atualização com o detector de padrões
-seo-title: Avaliação da complexidade da atualização com o detector de padrões
-description: Saiba como usar o Detector de padrão para avaliar a complexidade da atualização.
-seo-description: Saiba como usar o Detector de padrão para avaliar a complexidade da atualização.
+title: Avaliação da complexidade da atualização com o Detector de padrões
+seo-title: Avaliação da complexidade da atualização com o Detector de padrões
+description: Saiba como usar o Detector de padrões para avaliar a complexidade de sua atualização.
+seo-description: Saiba como usar o Detector de padrões para avaliar a complexidade de sua atualização.
 uuid: 84d0add9-3123-4188-9877-758911b1899f
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,58 +10,59 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
+feature: Atualização
 translation-type: tm+mt
-source-git-commit: ba7ac70858b7b2fd610d63355a22a69c3a7586e3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
 
 
-# Avaliação da complexidade da atualização com o detector de padrões
+# Avaliação da complexidade da atualização com o Detector de padrões
 
 ## Visão geral {#overview}
 
-Este recurso permite verificar as instâncias AEM existentes quanto à sua capacidade de atualização, detectando padrões em uso que:
+Esse recurso permite verificar instâncias de AEM existentes para sua capacidade de atualização, detectando padrões em uso que:
 
 1. Violar certas regras e são feitas em áreas que serão afetadas ou substituídas pela atualização
-1. Use um recurso AEM 6.x ou uma API que não seja compatível com versões anteriores no AEM 6.5 e que possa ser interrompida após a atualização.
+1. Use um recurso do AEM 6.x ou uma API que não seja compatível com versões anteriores do AEM 6.5 e possa ser interrompida após a atualização.
 
-Tal poderia servir de avaliação do esforço de desenvolvimento que está envolvido na atualização para a AEM 6.5.
+Tal poderia servir de avaliação do esforço de desenvolvimento que está envolvido na modernização para a AEM 6.5.
 
 ## Como configurar {#how-to-set-up}
 
-O Detector de padrão é lançado separadamente como um [um pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) trabalhando em qualquer versão de AEM de origem da versão 6.1 para a 6.5, visando AEM atualização 6.5. Ele pode ser instalado usando o [Gerenciador de pacotes](/help/sites-administering/package-manager.md).
+O Detector de padrões é lançado separadamente como um [um pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) funcionando em qualquer versão de AEM de origem de 6.1 para 6.5, direcionando AEM atualização 6.5. Ele pode ser instalado usando o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md).
 
 ## Como usar {#how-to-use}
 
 >[!NOTE]
 >
->O Detector de padrão pode ser executado em qualquer ambiente, incluindo instâncias de desenvolvimento local. No entanto, para:
+>O Detector de padrões pode ser executado em qualquer ambiente, incluindo instâncias de desenvolvimento local. No entanto, para:
 >
 >* aumentar a taxa de detecção
 >* evitar qualquer lentidão em instâncias críticas para os negócios
 
 >
 >
-ao mesmo tempo, é recomendável executá-lo **em ambientes de preparo** que estejam o mais próximos possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
+ao mesmo tempo, é recomendável executá-lo **em ambientes de preparo** que estejam o mais próximo possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
 
-Você pode usar vários métodos para verificar a saída do Detector de padrão:
+Você pode usar vários métodos para verificar a saída do Detector de padrões:
 
-* **Através do console Inventário Felix:**
+* **Através do console Felix Inventory:**
 
 1. Vá para o Console da Web AEM navegando até *https://serveraddress:serverport/system/console/configMgr*
-1. Selecione **Status - Pattern Detector** como mostrado na imagem abaixo:
+1. Selecione **Status - Pattern Detector** conforme mostrado na imagem abaixo:
 
-   ![screenshot-2018-2-5detector de padrões](assets/screenshot-2018-2-5pattern-detector.png)
+   ![captura de tela-2018-2-5detector de padrões](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Por meio de uma interface JSON comum ou baseada em texto reativo**
+* **Por meio de um texto reativo com base em uma interface JSON regular**
 * **Por meio de uma interface de linhas JSON reativa, **que gera um documento JSON separado em cada linha.
 
 Ambos os métodos estão detalhados abaixo:
 
-## Interface Reativa {#reactive-interface}
+## Interface reativa {#reactive-interface}
 
 A interface reativa permite o processamento do relatório de violação assim que uma suspeita é detectada.
 
@@ -70,9 +71,9 @@ A saída está disponível atualmente em 2 URLs:
 1. Interface de texto sem formatação
 1. Interface JSON
 
-## Manuseio da interface de texto simples {#handling-the-plain-text-interface}
+## Manipular a interface de texto simples {#handling-the-plain-text-interface}
 
-As informações na saída são formatadas como uma série de entradas de evento. Há dois canais - um para violações de publicação e o segundo para publicar o progresso atual.
+As informações na saída são formatadas como uma série de entradas de evento. Há dois canais: um para violações de publicação e outro para a publicação do progresso atual.
 
 Eles podem ser obtidos usando os seguintes comandos:
 
@@ -80,7 +81,7 @@ Eles podem ser obtidos usando os seguintes comandos:
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
 ```
 
-A saída será parecida com esta:
+A saída terá esta aparência:
 
 ```
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
@@ -100,7 +101,7 @@ O que resulta na seguinte saída:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Manuseio da interface JSON {#handling-the-json-interface}
+## Manipular a interface JSON {#handling-the-json-interface}
 
 Da mesma forma, o JSON pode ser processado usando a ferramenta [jq](https://stedolan.github.io/jq/) assim que for publicado.
 
@@ -212,18 +213,18 @@ Com a saída:
 
 >[!NOTE]
 >
->A abordagem recomendada é salvar toda a saída do ondulado no arquivo e processá-la por `jq` ou `grep` para filtrar o tipo de informação.
+>A abordagem recomendada é salvar toda a saída do curl no arquivo e processá-la por meio de `jq` ou `grep` para filtrar o tipo de informação.
 
 ## Escopo de detecção {#scope}
 
-Atualmente, o Detector de padrão permite verificar:
+Atualmente, o Detector de padrões permite verificar:
 
-* Incompatibilidade entre exportações e importações de pacotes OSGi
-* Como soltar tipos de recursos e supertipos (com sobreposições de conteúdo de caminho de pesquisa)
+* Incompatibilidade de exportações e importações de pacotes OSGi
+* Tipos de recursos Sling e supertipos (com sobreposições de conteúdo de caminho de pesquisa)
 * definições de índices Oak (compatibilidade)
-* Embalagens VLT (utilização excessiva)
-* rep:compatibilidade de nós do usuário (no contexto da configuração OAuth)
+* Pacotes VLT (utilização excessiva)
+* rep:Compatibilidade de nós do usuário (no contexto da configuração OAuth)
 
 >[!NOTE]
 >
->Observe que o Detector de padrão tenta prever com precisão os avisos para atualização. No entanto, pode gerar falsos positivos em alguns cenários.
+>Observe que o Detector de padrões tenta prever com precisão os avisos para atualização. No entanto, pode gerar falsos positivos em alguns cenários.
