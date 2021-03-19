@@ -6,20 +6,23 @@ audience: end-user
 user-guide-title: Guia de implementação do AEM 6.5
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5, incluindo a implantação do Adobe Managed Services na nuvem.
+feature-set: Experience Manager Sites
+feature: Implantação
+role: Arquiteto
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 17%
+source-wordcount: '354'
+ht-degree: 18%
 
 ---
 
 
-# Guia do usuário de implantação do AEM 6.5 {#deploying}
+# AEM 6.5 Guia de implantação do usuário {#deploying}
 
 + [Guia de implantação do usuário](home.md)
-+ Introdução à plataforma AEM {#introduction}
-   + [Introdução à AEM Platform](platform.md)
++ Introdução à plataforma de AEM {#introduction}
+   + [Introdução à plataforma de AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
    + [Elementos de armazenamento no AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM com MongoDB](aem-with-mongodb.md)
@@ -30,16 +33,16 @@ ht-degree: 17%
    + [Instalação independente personalizada](custom-standalone-install.md)
    + [Início e interrupção da linha de comando](command-line-start-and-stop.md)
    + [Configuração de armazenamentos de nó e armazenamentos de dados no AEM 6](data-store-config.md)
-   + [Limpeza de Revisão](revision-cleanup.md)
+   + [Limpeza de revisão](revision-cleanup.md)
    + [Consultas e indexação do Oak](queries-and-indexing.md)
-   + [Como executar o AEM com o TarMK Cold Standby](tarmk-cold-standby.md)
+   + [Como executar AEM com o TarMK Cold Standby](tarmk-cold-standby.md)
    + [Suporte RDBMS no AEM 6.5](rdbms-support-in-aem.md)
    + [Indexação via Jar Oak-run](indexing-via-the-oak-run-jar.md)
    + [Casos de uso da indexação Oak-run.jar](oak-run-indexing-usecases.md)
    + [Solução de problemas de índices do Oak](troubleshooting-oak-indexes.md)
    + [Aceitação Em Coleta De Estatísticas De Uso Agregado](opt-in-aggregated-usage-statistics.md)
    + [Resolução de Problemas](troubleshooting.md)
-+ Configuração do AEM {#configuring}
++ Configurar AEM {#configuring}
    + [Conceitos básicos de configuração](configuring.md)
    + [Logs](configure-logging.md)
    + [Configuração do OSGi](configuring-osgi.md)
@@ -51,7 +54,7 @@ ht-degree: 17%
    + [Solução de problemas de replicação](troubleshoot-rep.md)
    + [Expiração de objetos estáticos](expiration-static-objects.md)
    + [Limpeza de versão](version-purging.md)
-   + [Monitoramento e manutenção da sua instância do AEM](monitoring-and-maintaining.md)
+   + [Monitorar e manter sua instância do AEM](monitoring-and-maintaining.md)
    + [Descarregamento de Tarefas](offloading.md)
    + [Logon único](single-sign-on.md)
    + [Mapeamento de recursos](resource-mapping.md)
@@ -62,7 +65,7 @@ ht-degree: 17%
    + [Guia de desempenho de ativos](assets-performance-sizing.md)
    + [Artigos explicativos de configuração](ht-deploy.md)
    + [Configuração do Console da Web](configuring-web-console.md)
-+ Atualização para o AEM 6.5 {#upgrading}
++ Atualização para AEM 6.5 {#upgrading}
    + [Atualização para o AEM 6.5](upgrade.md)
    + [Planejamento da atualização](upgrade-planning.md)
    + [Avaliação da complexidade da atualização com o Detector de padrões](pattern-detector.md)
@@ -74,7 +77,7 @@ ht-degree: 17%
    + [Uso da ferramenta de migração CRX2Oak](using-crx2oak.md)
    + [Tarefas de manutenção de pré-atualização](pre-upgrade-maintenance-tasks.md)
    + [Verificação e solução de problemas da pós-atualização](post-upgrade-checks-and-troubleshooting.md)
-   + [Atualização de formulários de pesquisa personalizados](upgrading-custom-search-forms.md)
+   + [Atualizar o Forms de pesquisa personalizada](upgrading-custom-search-forms.md)
    + [Atualizações sustentáveis](sustainable-upgrades.md)
    + [Atualização de código e personalizações](upgrading-code-and-customizations.md)
    + [Etapas de atualização para instalações do servidor de aplicativos](app-server-upgrade.md)
@@ -84,13 +87,13 @@ ht-degree: 17%
    + [Reestruturação comum de repositório no AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Restruturação do repositório de sites no AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório de ativos no AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
-   + [Reestruturação do repositório do Dynamic Media no AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
-   + [Reestruturação do repositório de formulários no AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
+   + [Reestruturação do repositório Dynamic Media no AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [Reestruturação do repositório Forms no AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório de comércio eletrônico no AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório para AEM Communities no 6.5](communities-repository-restructuring-in-aem-6-5.md)
 + eCommerce {#ecommerce}
    + [Visão geral do eCommerce](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
+   + [Commerce Cloud SAP](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Práticas recomendadas     {#practices}
@@ -98,5 +101,5 @@ ht-degree: 17%
    + [Árvore de desempenho](performance-tree.md)
    + [Práticas recomendadas para testes de desempenho](best-practices-for-performance-testing.md)
    + [Práticas recomendadas para consultas e indexação](best-practices-for-queries-and-indexing.md)
-   + [Recomendações da interface do usuário para clientes](ui-recommendations.md)
+   + [Recommendations da interface do usuário para clientes](ui-recommendations.md)
    + [Desempenho e escalabilidade](performance.md)
