@@ -1,19 +1,20 @@
 ---
 title: Marcação de conteúdo gerado pelo usuário
 seo-title: Marcação de conteúdo gerado pelo usuário
-description: A marcação do conteúdo gerado pelo usuário (UGC) é a forma como os membros da comunidade podem ajudar outros membros a pesquisar o conteúdo
-seo-description: A marcação do conteúdo gerado pelo usuário (UGC) é a forma como os membros da comunidade podem ajudar outros membros a pesquisar o conteúdo
+description: A marcação do conteúdo gerado pelo usuário (UGC) é a forma como os membros da comunidade podem ajudar outros membros a pesquisar conteúdo
+seo-description: A marcação do conteúdo gerado pelo usuário (UGC) é a forma como os membros da comunidade podem ajudar outros membros a pesquisar conteúdo
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 3%
+source-wordcount: '249'
+ht-degree: 4%
 
 ---
 
@@ -22,15 +23,15 @@ ht-degree: 3%
 
 ## Visão geral {#overview}
 
-A marcação de conteúdo gerado pelo usuário (UGC) é o meio pelo qual os membros da comunidade podem ajudar outros membros a pesquisar conteúdo.
+A marcação do conteúdo gerado pelo usuário (UGC) é o meio pelo qual os membros da comunidade podem ajudar outros membros a pesquisar conteúdo.
 
-Normalmente, as tags são aplicadas por autores e administradores no ambiente do autor. A marcação UGC é exclusiva porque as tags UGC são aplicadas por membros da comunidade no ambiente de publicação.
+Normalmente, as tags são aplicadas por autores e administradores no ambiente de criação. A marcação do UGC é exclusiva no fato de as tags UGC serem aplicadas pelos membros da comunidade no ambiente de publicação.
 
-As namespaces e as taxonomias de tags são as mesmas para ambos os aplicativos.
+Os namespaces e as taxonomias de tags são iguais para ambos os aplicativos.
 
 ## Recursos das comunidades {#communities-features}
 
-Os recursos do AEM Communities que podem ser configurados para permitir marcação são:
+Os recursos do AEM Communities que podem ser configurados para permitir a marcação são:
 
 * [Blog](blog-feature.md)
 * [Calendário](calendar.md)
@@ -44,17 +45,17 @@ Consulte [Administração de tags](../../help/sites-administering/tags.md#taggin
 
 Consulte [Tag Essentials](tag.md) para obter informações sobre desenvolvedores.
 
-Consulte [Usar a Nuvem de tags sociais](tagcloud.md) para adicionar um componente da Nuvem de tags sociais a uma página para facilitar a pesquisa por UGC publicado usando as tags aplicadas.
+Consulte [Usar a nuvem de tags sociais](tagcloud.md) para adicionar um componente da nuvem de tags sociais a uma página, a fim de facilitar a pesquisa por UGC publicado usando as tags aplicadas.
 
 ### Permissões de tag {#tag-permissions}
 
-As permissões padrão estão definidas para não permitir que namespaces de tags sejam lidas por todos no ambiente publish.
+As permissões padrão são definidas para não permitir que os namespaces de tags sejam lidos por todos no ambiente de publicação.
 
-Como as tags são aplicadas ao UGC no ambiente de publicação, a permissão de leitura precisa ser ativada para membros da comunidade para que possam selecionar as tags a serem aplicadas.
+Como as tags são aplicadas ao UGC no ambiente de publicação, a permissão de leitura precisa ser ativada para os membros da comunidade para que possam selecionar tags a serem aplicadas.
 
-Consulte [Definindo permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions).
+Consulte [Definir permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-A seguir está como ele aparece no CRXDE quando um administrador aplica permissões de leitura a `/etc/tag/discussions` para o grupo `Community Engage Members`.
+Veja a seguir como ele aparece no CRXDE quando um administrador aplica permissões de leitura a `/etc/tag/discussions` para o grupo `Community Engage Members`.
 
-![tag-permissions](assets/tag-permissions.png)
+![permissões de tag](assets/tag-permissions.png)
 
