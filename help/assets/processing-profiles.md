@@ -8,10 +8,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
+role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1373'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Ao usar estratégias consistentes e apropriadas de nomeação de arquivos e past
 
 >[!NOTE]
 >
->Aplica-se a *Dynamic Media - modo Scene7* somente no AEM 6.4.6.0 ou posterior.
+>Aplica-se a *Dynamic Media - Modo Scene7* somente no AEM 6.4.6.0 ou posterior.
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de processamento existente que você alterou posteriormente.
 
@@ -52,15 +53,15 @@ Por exemplo, suponha que você criou um perfil de Imagem e o atribuiu a uma past
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo para o qual o processamento falhou na primeira vez. Dessa forma, mesmo que você não tenha editado um perfil de processamento ou aplicado um perfil de processamento, ainda poderá executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Opcionalmente, é possível ajustar o tamanho do lote do workflow de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Fluxo de trabalho Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e enviados para o servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados no AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta para o servidor do Dynamic Media.
+Opcionalmente, é possível ajustar o tamanho do lote do workflow de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Fluxo de trabalho Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e, em seguida, enviados ao servidor da Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados no AEM. Se o tamanho do lote for muito grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta para o servidor do Dynamic Media.
 
 Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-load).
 
 >[!NOTE]
 >
->Se você estiver executando uma migração em massa de ativos do Dynamic Media Classic para o AEM, deverá habilitar o agente de replicação de Migração no servidor do Dynamic Media. Quando a migração estiver concluída, desative o agente.
+>Se estiver executando uma migração em massa de ativos do Dynamic Media Classic para o AEM, você deverá habilitar o agente de replicação de Migração no servidor do Dynamic Media. Quando a migração estiver concluída, desative o agente.
 >
->O agente de publicação de Migração deve estar desativado no servidor do Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione conforme esperado.
+>O agente de publicação de Migração deve estar desabilitado no servidor do Dynamic Media para que o fluxo de trabalho de Reprocessamento funcione como esperado.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
@@ -88,11 +89,11 @@ Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-l
 
 1. Clique em **[!UICONTROL Iniciar]** e em **[!UICONTROL Confirmar.]**
 
-   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página principal do console do AEM, clique em **[!UICONTROL Tools > Workflow.]** Na página Instâncias de fluxo de trabalho , selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir Histórico.]** Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho .
+   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página AEM console principal, clique em **[!UICONTROL Tools > Workflow.]** Na página Instâncias de fluxo de trabalho , selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir Histórico.]** Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho .
 
 ### Ajustar o tamanho do lote do workflow de reprocessamento {#adjusting-load}
 
-(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é regulado pelo tamanho médio do ativo e pelos tipos MIME de ativos em que o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Dessa forma, o banner de processamento permanece nos ativos AEM por um tempo maior. No entanto, se o tamanho médio do arquivo for de 1 MB ou menos, a Adobe recomenda que você aumente o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande - centenas de megabytes - a Adobe recomenda diminuir o tamanho do lote para até 10.
+(Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é regulado pelo tamanho médio do ativo e pelos tipos MIME de ativos em que o reprocessamento é executado. Um valor mais alto significa que você terá muitos arquivos em um único trabalho de reprocessamento. Assim, o banner de processamento permanece AEM ativos por um tempo maior. No entanto, se o tamanho médio do arquivo for de 1 MB ou menos Adobe, a recomenda que você aumente o valor para várias centenas, mas nunca mais que 1000. Se o tamanho médio do arquivo for grande, centenas de megabytes-Adobe, recomenda-se reduzir o tamanho do lote para até 10.
 
 **Como opção, ajuste o tamanho do lote do workflow de reprocessamento**
 
@@ -102,12 +103,12 @@ Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-l
    ![Página Modelos de fluxo de trabalho com o Scene7: Fluxo de trabalho Reprocessar ativos selecionado na Exibição de cartão](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Editar.]** Uma nova guia do navegador abre o Scene7: Página de modelo de fluxo de trabalho Reprocessar ativos .
-1. No Scene7: Reprocessar página do fluxo de trabalho Ativos , próximo ao canto superior direito, clique em **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
+1. Na Scene7: Reprocessar página do fluxo de trabalho Ativos , próximo ao canto superior direito, clique em **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
 1. No fluxo de trabalho, selecione o componente Upload em lote do Scene7 para abrir a barra de ferramentas e clique em **[!UICONTROL Configurar]** na barra de ferramentas.
 
    ![Componente de upload em lote do Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Na caixa de diálogo **[!UICONTROL Carregamento em lote para o Scene7—Step Properties]**, defina o seguinte:
+1. Na caixa de diálogo **[!UICONTROL Upload em lote para o Scene7—Step Properties]**, defina o seguinte:
    * Nos campos de texto **[!UICONTROL Title]** e **[!UICONTROL Description]**, insira um novo título e descrição para a tarefa, se desejado.
    * Selecione **[!UICONTROL Handler Advance]** se o manipulador avançar para a próxima etapa.
    * No campo **[!UICONTROL Timeout]**, digite o tempo limite do processo externo (segundos).
@@ -117,13 +118,13 @@ Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-l
 
    ![Caixa de diálogo Propriedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregamento em lote para o Scene7 - Propriedades da etapa]**, clique em **[!UICONTROL Concluído]**.
+1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregar em lote no Scene7 - Propriedades da etapa]**, clique em **[!UICONTROL Concluído]**.
 
-1. No canto superior direito do Scene7: Reprocessar página de modelo de fluxo de trabalho do Assets, clique em **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do workflow é sincronizado e pronto para reprocessar ativos em uma pasta com êxito.
+1. No canto superior direito da Scene7: Reprocessar página de modelo de fluxo de trabalho do Assets, clique em **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do workflow é sincronizado e pronto para reprocessar ativos em uma pasta com êxito.
 
    ![Sincronização do modelo de fluxo de trabalho](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Feche a guia do navegador que mostra o Scene7: Reprocessar modelo de fluxo de trabalho do Assets.
+1. Feche a guia do navegador que mostra a Scene7: Reprocessar modelo de fluxo de trabalho do Assets.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite.]**
