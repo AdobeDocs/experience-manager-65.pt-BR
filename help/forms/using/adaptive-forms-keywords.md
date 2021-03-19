@@ -1,24 +1,25 @@
 ---
 title: Palavras-chave de formulários adaptáveis
 seo-title: Palavras-chave de formulários adaptáveis
-description: Não é possível usar essas palavras reservadas como identificadores nos formulários adaptáveis.
-seo-description: Não é possível usar essas palavras reservadas como identificadores nos formulários adaptáveis.
+description: Não é possível usar essas palavras reservadas como identificadores em seus formulários adaptáveis.
+seo-description: Não é possível usar essas palavras reservadas como identificadores em seus formulários adaptáveis.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 15%
+source-wordcount: '225'
+ht-degree: 16%
 
 ---
 
 
 # Palavras-chave de formulários adaptáveis {#adaptive-forms-keywords}
 
-As palavras-chave de formulários adaptáveis são identificadores reservados e predefinidos que têm um significado especial para formulários adaptáveis. Não é possível usar essas palavras-chave como identificadores nos formulários adaptáveis. A tabela a seguir lista todas as palavras-chave que são identificadores reservados para formulários adaptáveis.
+Palavras-chave de formulários adaptáveis são identificadores predefinidos e reservados que têm significado especial para formulários adaptáveis. Não é possível usar essas palavras-chave como identificadores em seus formulários adaptáveis. A tabela a seguir lista todas as palavras-chave que são identificadores reservados para formulários adaptáveis.
 
 <table>
  <tbody>
@@ -49,13 +50,13 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
   </tr>
   <tr>
    <td><p>resetData</p> </td>
-   <td><p>runCurrentExpressions</p> </td>
+   <td><p>runPendingExpressions</p> </td>
    <td><p>repetitivo</p> </td>
   </tr>
   <tr>
    <td><p>calcExp</p> </td>
    <td><p>queueExpressions</p> </td>
-   <td><p>instance</p> </td>
+   <td><p>instâncias</p> </td>
   </tr>
   <tr>
    <td><p>título</p> </td>
@@ -73,7 +74,7 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
    <td><p>getElement</p> </td>
   </tr>
   <tr>
-   <td><p>placeholderText</p> </td>
+   <td><p>espaço reservadoText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
    <td><p>filhos</p> </td>
   </tr>
@@ -135,7 +136,7 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
   <tr>
    <td><p>altura</p> </td>
    <td><p>showComment</p> </td>
-   <td><p>visible</p> </td>
+   <td><p>visível</p> </td>
   </tr>
   <tr>
    <td><p>cssClassName</p> </td>
@@ -149,7 +150,7 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
   </tr>
   <tr>
    <td><p>navigationChangeExp</p> </td>
-   <td><p>identificadorEvent</p> </td>
+   <td><p>handleEvent</p> </td>
    <td><p>dataType</p> </td>
   </tr>
   <tr>
@@ -188,33 +189,33 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
    <td><p>setFocus</p> </td>
   </tr>
   <tr>
-   <td><p>completionExp</p> </td>
+   <td><p>CompletionExp</p> </td>
    <td><p>sectionTitle</p> </td>
    <td><p>ativeInstance</p> </td>
   </tr>
   <tr>
-   <td><p>completionExpReq</p> </td>
-   <td><p>completionScript</p> </td>
+   <td><p>CompletionExpReq</p> </td>
+   <td><p>CompletionScript</p> </td>
    <td><p>ativePart</p> </td>
   </tr>
   <tr>
    <td><p>toolbar</p> </td>
-   <td><p>completionBeforeMessage</p> </td>
+   <td><p>completeBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceManager</p> </td>
-   <td><p>completionAfterMessage</p> </td>
+   <td><p>CompletionAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceIndex</p> </td>
-   <td><p>completionSuccessScript</p> </td>
+   <td><p>CompletionSuccessScript</p> </td>
    <td><p>currentActivePart</p> </td>
   </tr>
   <tr>
    <td><p>resumo</p> </td>
-   <td><p>completionFailureScript</p> </td>
+   <td><p>CompletionFailureScript</p> </td>
    <td><p>sectionName</p> </td>
   </tr>
   <tr>
@@ -224,7 +225,7 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
   </tr>
   <tr>
    <td><p>fetchedFromService</p> </td>
-   <td><p>repetiablePanelId</p> </td>
+   <td><p>RepeablePanelId</p> </td>
    <td><p>getSeletedIndex</p> </td>
   </tr>
   <tr>
@@ -240,4 +241,4 @@ As palavras-chave de formulários adaptáveis são identificadores reservados e 
  </tbody>
 </table>
 
-Além das palavras-chave listadas acima, evite usar nomes semelhantes a [formulários adaptáveis APIs JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Além das palavras-chave listadas acima, evite usar nomes semelhantes a [APIs JavaScript de formulários adaptáveis](https://adobe.com/go/learn_aemforms_javascript_api_63).
