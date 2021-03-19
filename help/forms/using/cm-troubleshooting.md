@@ -1,18 +1,19 @@
 ---
-title: '"Gestão de correspondência: Solução de problemas"'
-seo-title: Solução de problemas do Gerenciamento de correspondência
-description: Solução de problemas do Gerenciamento de correspondência
-seo-description: Solução de problemas do Gerenciamento de correspondência
+title: '"Gerenciamento de correspondência: Solução de problemas"'
+seo-title: Solução de problemas do gerenciamento de correspondência
+description: Solução de problemas do gerenciamento de correspondência
+seo-description: Solução de problemas do gerenciamento de correspondência
 uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
+feature: Gerenciamento de correspondência
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 5%
+source-wordcount: '207'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 5%
 
 ### Problema {#issue}
 
-Um dos seguintes erros era exibido ao salvar uma carta:
+Um dos seguintes erros é exibido ao salvar uma carta:
 
 * O vínculo de dados não está presente para o módulo de texto
 * Forneça a informação de propriedade necessária para o seguinte
@@ -32,8 +33,8 @@ Um dos seguintes erros era exibido ao salvar uma carta:
 
 Esses erros podem ocorrer devido a um dos seguintes:
 
-* Um dicionário de dados está vinculado à letra, mas não está presente no servidor.
-* Um dicionário de dados está vinculado à letra, mas tem um sublinhado (_) em seu nome.
+* Um dicionário de dados está vinculado à carta, mas não está presente no servidor.
+* Um dicionário de dados é vinculado à letra, mas tem um sublinhado (_) em seu nome.
 
 ### Solução alternativa {#workaround}
 
@@ -43,15 +44,15 @@ Certifique-se de que o dicionário de dados que você está usando na carta este
 
 ### Problema {#issue-1}
 
-Ao visualizar uma carta, o erro &quot;Erro na carta de carregamento: &quot;Não foi possível importar o ativo da entrada XML&quot; é exibido mesmo quando um ativo de texto não publicado anteriormente na carta é publicado.
+Ao visualizar uma carta, o erro &quot;Erro na carta de carregamento: Não foi possível importar o ativo da entrada XML&quot; é exibido mesmo quando um ativo de texto não publicado anteriormente na carta é publicado.
 
 ### Solução alternativa {#workaround-1}
 
-Redefina o cache de letras na instância de publicação usando as etapas a seguir e tente exibir novamente a carta:
+Redefina o cache de letras na instância de publicação usando as seguintes etapas e tente visualizar novamente a carta:
 
 1. Vá para **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
 1. Selecione **Configurações de gerenciamento de correspondência**.
 1. Em **Configurações de Gerenciamento de Correspondência**, desative **Ativar Cache de Carta** e clique em **Salvar.**
-1. Ative **Ativar Cache Carta** e clique em **Guardar**.
+1. Ative **Ativar Cache de Carta** e clique em **Salvar**.
 1. Tente novamente visualizar a carta.
 
