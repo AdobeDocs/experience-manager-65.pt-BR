@@ -1,17 +1,18 @@
 ---
 title: Atalhos de teclado do AEM Forms
 seo-title: Atalhos de teclado do AEM Forms
-description: Este artigo lista os atalhos do teclado que podem ser usados com o Editor de formulário adaptável, o Editor de temas, o Navegador de conteúdo e o Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
-seo-description: Este artigo lista os atalhos do teclado que podem ser usados com o Editor de formulário adaptável, o Editor de temas, o Navegador de conteúdo e o Gerenciamento de correspondência.
+description: Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, Editor de temas, Navegador de conteúdo e Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
+seo-description: Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, Editor de temas, Navegador de conteúdo e Gerenciamento de correspondência.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1174'
 ht-degree: 13%
 
 ---
@@ -19,28 +20,28 @@ ht-degree: 13%
 
 # Atalhos de teclado do AEM Forms {#aem-forms-keyboard-shortcuts}
 
-Este artigo lista os atalhos do teclado que podem ser usados com o Editor de formulário adaptável, o Editor de temas, o Navegador de conteúdo e o Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
+Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, Editor de temas, Navegador de conteúdo e Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
 
 ## Editor de formulário adaptável {#adaptiveformeditor}
 
 | **Ação** | **Atalho no Windows** | **Atalho no Mac OS** |
 |---|---|---|
-| Abrir o navegador Propriedades do componente de formulário adaptável selecionado | Alt+Enter | Alt+Return |
-| Fechar o navegador Propriedades do componente de formulário adaptativo selecionado | Ctrl+Alt+W | Command+Alt+W |
-| Salvar alterações no navegador Propriedades do componente de formulário adaptativo selecionado | Ctrl+S | Command+S |
+| Abra o navegador Propriedades do componente de formulário adaptável selecionado | Alt+Enter | Alt+Retornar |
+| Fechar navegador Propriedades para o componente de formulário adaptável selecionado | Ctrl+Alt+W | Command+Alt+W |
+| Salvar alterações no navegador Propriedades do componente de formulário adaptável selecionado | Ctrl+S | Command+S |
 | Editar regra para o componente de formulário adaptável selecionado | Ctrl+Alt+Enter | Command+Alt+Return |
-| Alternar entre a Pré-visualização e o modo selecionado no momento (por exemplo, Editar, Andaime etc.) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
+| Alternar entre a Visualização e o modo selecionado no momento (por exemplo, Editar, Andaime etc.) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+Y;ast; |
-| Selecionar vários componentes | Shift+Click | Shift+Click |
+| Refazer a última alteração | Ctrl+Y | Ctrl+Y&amp;ast; |
+| Selecionar vários componentes | Shift+Clique | Shift+Clique |
 | Copiar componente selecionado | Ctrl-C | Ctrl-C&amp;ast; |
-| Recortar componentes selecionados. O componente recortado não desaparece até que seja colado no novo local. | Ctrl-X | Ctrl-X&amp;ast; |
+| Recortar componentes selecionados. O componente recortado não desaparece até ser colado no novo local. | Ctrl-X | Ctrl-X&amp;ast; |
 | Colar componentes | Ctrl+V | Ctrl+V |
 | Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&amp;ast; |
 | Excluir componentes selecionados | Ctrl+Backspace | Ctrl+Backspace&amp;ast; |
-| Colocar o texto em negrito ao usar o componente Editor de Rich Text no modo de Pré-visualização | Ctrl+B | Ctrl+P&amp;ampa;ast; |
-| Colocar o texto em itálico ao usar o componente Editor de Rich Text no modo de Pré-visualização | Ctrl+I | Ctrl+I&amp;ast; |
-| Colocar o texto em negrito ao usar o componente Editor de Rich Text no modo de Pré-visualização | Ctrl+U | Ctrl+U&amp;ast; |
+| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo de Visualização | Ctrl+B | Ctrl+B&amp;ast; |
+| Coloque o texto em itálico ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+I | Ctrl+I&amp;ast; |
+| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo de Visualização | Ctrl+U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
@@ -51,7 +52,7 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 >Multisseleção em um dispositivo de desktop:
 >
 >* Windows: Ctrl+Clique nos componentes necessários.
->* MAC OS: Command+Clique nos componentes necessários.
+>* MAC OS: Clique com a tecla Command pressionada nos componentes necessários.
 
 >
 
@@ -61,10 +62,10 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 
 | **Ação** | **Atalho no Windows** | **Atalho no Mac OS** |
 |---|---|---|
-| Abrir o navegador de propriedades do componente selecionado em um tema | Alt+Enter | Alt+Return |
-| Fechar o navegador de propriedades do componente selecionado em um tema | Ctrl+Alt+W | Command+Alt+W |
+| Abra o navegador de propriedades do componente selecionado em um tema | Alt+Enter | Alt+Retornar |
+| Fechar navegador de propriedades para o componente selecionado em um tema | Ctrl+Alt+W | Command+Alt+W |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+Y;ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Salvar alterações no navegador Propriedades do componente selecionado em um tema | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
@@ -75,24 +76,24 @@ Este artigo lista os atalhos do teclado que podem ser usados com o Editor de for
 
 | **Ação** | **Atalho no Windows** | **Atalho no Mac OS** |
 |---|---|---|
-| Expandir todas as opções na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todas as opções, seguidas pela seta para a direita para expandir | Command+A para selecionar todos os acordeões seguidos pela seta para a direita para expandir |
-| Recolher todas as acordeões na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todos os acordeões seguidos de Seta para a esquerda para recolher | Command+A para selecionar todos os acordeões seguidos pela seta para a esquerda para recolher |
-| Expandir a opção selecionada na árvore Objetos de formulário | Seta para a direita | Seta para a direita |
+| Expanda todas as opções na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todas as opções, seguido de Seta para a direita para expandir | Command+A para selecionar todas as opções seguidas pela Seta para a direita para expandir |
+| Recolher todas as opções na árvore Objetos de formulário do navegador Conteúdo quando em foco | Ctrl+A para selecionar todas as opções, seguido de Seta para a Esquerda para recolher | Command+A para selecionar todas as opções seguidas pela Seta para a Esquerda para recolher |
+| Expanda a opção selecionada na árvore Objetos de formulário | Seta para a direita | Seta para a direita |
 | Recolher a opção selecionada na árvore Objetos de formulário | Seta para a esquerda | Seta para a esquerda |
-| Selecione o próximo item na árvore de objetos do Forms | Seta para baixo | Seta para baixo |
+| Selecione o próximo item na árvore Objetos do Forms | Seta para baixo | Seta para baixo |
 | Selecione o item anterior na árvore Objetos do Forms | Seta para cima | Seta para cima |
 
-[1] Substitui Ctrl + seta para a direita para Windows e Command + seta para a direita para Mac OS.\
-[2] Substitui Ctrl + seta para a esquerda para Windows e Command + seta para a esquerda para Mac OS.
+[1] Substitui Ctrl + Seta para a direita para Windows e Command + Seta para a direita para Mac OS.\
+[2] Substitui Ctrl + Seta para a esquerda para Windows e Command + Seta para a esquerda para Mac OS.
 
 ## Gerenciamento de correspondência {#correspondence-management}
 
-Esta seção lista vários teclados e atalhos de acessibilidade que podem ser usados no editor de texto do Gerenciamento de correspondência. Você pode usar esses atalhos enquanto estiver:
+Esta seção lista vários teclados e atalhos de acessibilidade que podem ser usados no editor de texto de Gerenciamento de correspondência. É possível usar esses atalhos enquanto você:
 
-* Criação ou edição de um ativo [Texto](texts-interactive-communications.md)
-* Editar um módulo de texto depois de tocar no ícone Editar relevante ( ![edittextmodule](assets/edittextmodule.png)) quando [criar uma correspondência](/help/forms/using/create-correspondence.md).
+* Criar ou editar um ativo [Texto](texts-interactive-communications.md)
+* Editar um módulo de texto depois de tocar no ícone Editar relevante ( ![edittextmodule](assets/edittextmodule.png)) ao [criar uma correspondência](/help/forms/using/create-correspondence.md).
 
-### Seleção de texto e movimento do cursor em {#text-selection-and-moving-the-cursor-around}
+### Seleção de texto e movimento do cursor em torno de {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -112,59 +113,59 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
    <td>Command+Shift+Seta para a esquerda</td> 
   </tr>
   <tr>
-   <td><p>Estende uma seleção até o início de um parágrafo</p> </td> 
+   <td><p>Estender uma seleção para o início de um parágrafo</p> </td> 
    <td><p>Ctrl+Shift+Seta para Cima</p> </td> 
-   <td>Command+Shift+Seta para cima</td> 
+   <td>Command+Shift+Seta para Cima</td> 
   </tr>
   <tr>
    <td><p>Estender uma seleção até o final de um parágrafo</p> </td> 
    <td><p>Ctrl+Shift+Seta para Baixo</p> </td> 
-   <td>Command+Shift+Seta para baixo</td> 
+   <td>Command+Shift+Seta para Baixo</td> 
   </tr>
   <tr>
-   <td><p>Selecionar todo o texto no editor de texto</p> </td> 
+   <td><p>Selecione todo o texto no editor de texto</p> </td> 
    <td><p>Ctrl+A</p> </td> 
    <td>Command+A</td> 
   </tr>
   <tr>
    <td><p>Mover o cursor para o início da próxima palavra</p> </td> 
    <td><p>Ctrl+Seta para a direita</p> </td> 
-   <td>Option+Seta para a direita <em><sup>[1]</sup></em></td> 
+   <td>Opção+Seta para a direita <em><sup>[1]</sup></em></td> 
   </tr>
   <tr>
    <td><p>Move o cursor para o início da palavra anterior</p> </td> 
    <td><p>Ctrl+Seta para a esquerda </p> </td> 
-   <td>Option+Seta para a esquerda</td> 
+   <td>Opção+Seta para a esquerda</td> 
   </tr>
   <tr>
-   <td><p>Move o cursor até o próximo parágrafo.</p> </td> 
+   <td><p>Move o cursor para o parágrafo seguinte.</p> </td> 
    <td><p>Ctrl+Seta para baixo</p> </td> 
-   <td>Option+Seta para baixo</td> 
+   <td>Opção+Seta para baixo</td> 
   </tr>
   <tr>
-   <td><p>Move o cursor até o parágrafo anterior.</p> </td> 
+   <td><p>Move o cursor para o parágrafo anterior.</p> </td> 
    <td><p>Ctrl+Seta para cima</p> </td> 
-   <td>Option+Seta para cima</td> 
+   <td>Opção+Seta para cima</td> 
   </tr>
   <tr>
-   <td><p>Selecione o texto um por um caractere na direção inversa</p> </td> 
+   <td><p>Selecionar texto um por um caractere na direção inversa</p> </td> 
    <td><p>Shift+Seta para a esquerda</p> </td> 
    <td>Shift+Seta para a esquerda</td> 
   </tr>
   <tr>
-   <td><p>Selecione o texto um por um caractere na direção direta</p> </td> 
+   <td><p>Selecionar texto um por um caractere na direção direta</p> </td> 
    <td><p>Shift+Seta para a direita</p> </td> 
    <td>Shift+Seta para a direita</td> 
   </tr>
   <tr>
    <td><p>Selecione o texto um por um parágrafo na direção inversa</p> </td> 
-   <td><p>Shift+Chave para Cima</p> </td> 
-   <td>Shift+Chave para Cima</td> 
+   <td><p>Shift+Chave Para Cima</p> </td> 
+   <td>Shift+Chave Para Cima</td> 
   </tr>
   <tr>
-   <td><p>Selecione o texto um por um parágrafo na direção direta</p> </td> 
+   <td><p>Selecionar texto um por um parágrafo na direção direta</p> </td> 
    <td><p>Shift+tecla de seta para baixo</p> </td> 
-   <td>Shift+Tecla para baixo</td> 
+   <td>Shift+Seta para baixo</td> 
   </tr>
   <tr>
    <td><p>Selecionar texto até iniciar a partir da posição atual da página</p> </td> 
@@ -174,7 +175,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
   <tr>
    <td><p>Selecionar texto até o final da posição final da página</p> </td> 
    <td><p>Shift+Page Down</p> </td> 
-   <td>Fn+Shift+Seta para baixo</td> 
+   <td>Fn+Shift+Seta para Baixo</td> 
   </tr>
   <tr>
    <td><p>Mover cursor para o final da página</p> </td> 
@@ -182,27 +183,27 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
    <td>Fn+Seta para baixo</td> 
   </tr>
   <tr>
-   <td><p>Cursor para o start da página</p> </td> 
+   <td><p>Mover cursor para o início da página</p> </td> 
    <td><p>Page Up</p> </td> 
    <td>Fn+Seta para cima</td> 
   </tr>
   <tr>
-   <td><p>Selecionar texto da posição atual até o final (do módulo)</p> </td> 
+   <td><p>Selecionar texto da posição atual até o fim (do módulo)</p> </td> 
    <td><p>Shift+Ctrl+End</p> </td> 
-   <td>Command+Shift+Seta para baixo<br /> </td> 
+   <td>Command+Shift+Seta para Baixo<br /> </td> 
   </tr>
   <tr>
-   <td><p>Selecionar texto da posição atual para o start (do módulo)</p> </td> 
+   <td><p>Selecionar texto da posição atual até o início (do módulo)</p> </td> 
    <td><p>Shift+Ctrl+Home</p> </td> 
-   <td>Command+Shift+Seta para cima</td> 
+   <td>Command+Shift+Seta para Cima</td> 
   </tr>
   <tr>
-   <td><p>Move o cursor para a posição inicial</p> </td> 
+   <td><p>Mover cursor para a posição inicial</p> </td> 
    <td><p>Ctrl+Home</p> </td> 
    <td>Command+Seta para cima</td> 
   </tr>
   <tr>
-   <td><p>Move o cursor para a posição final</p> </td> 
+   <td><p>Mover cursor para a posição final</p> </td> 
    <td><p>Ctrl+End</p> </td> 
    <td>Command+Seta para baixo</td> 
   </tr>
@@ -220,12 +221,12 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
    <th><strong>Atalho no Mac OS</strong></th> 
   </tr>
   <tr>
-   <td><p>Colocar um parágrafo no centro alinhado</p> </td> 
+   <td><p>Colocar um centro de parágrafo alinhado</p> </td> 
    <td><p>Ctrl+E</p> </td> 
    <td>Ctrl+Command+E</td> 
   </tr>
   <tr>
-   <td><p>Alinhamento à esquerda de um parágrafo</p> </td> 
+   <td><p>Alinhar um parágrafo à esquerda</p> </td> 
    <td><p>Ctrl+L</p> </td> 
    <td>Ctrl+Command+L</td> 
   </tr>
@@ -286,7 +287,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
  </tbody>
 </table>
 
-### Excluindo uma palavra {#deleting-a-word}
+### Excluir uma palavra {#deleting-a-word}
 
 <table> 
  <tbody>
@@ -298,7 +299,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
   <tr>
    <td><p>Excluir palavra à esquerda do cursor</p> </td> 
    <td><p>Ctrl+Backspace</p> </td> 
-   <td>Option+Delete</td> 
+   <td>Opção+Excluir</td> 
   </tr>
   <tr>
    <td><p>Excluir palavra à direita do cursor</p> </td> 
@@ -308,7 +309,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
  </tbody>
 </table>
 
-### Copiar e colar {#copy-and-paste}
+### Copie e cole {#copy-and-paste}
 
 <table> 
  <tbody>
@@ -319,7 +320,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
   </tr>
   <tr>
    <td><p>Colar texto </p> </td> 
-   <td><p>Ctrl+V / Shift + Insert</p> </td> 
+   <td><p>Ctrl+V / Shift + Inserir</p> </td> 
    <td>Command+V</td> 
   </tr>
   <tr>
@@ -350,12 +351,12 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
    <td>Command+B</td> 
   </tr>
   <tr>
-   <td><p>Colocar letras em itálico</p> </td> 
+   <td><p>Fazer letras em itálico</p> </td> 
    <td><p>Ctrl+Alt+I / Ctrl+I </p> </td> 
    <td>Command+I</td> 
   </tr>
   <tr>
-   <td><p>Sublinhar letras </p> </td> 
+   <td><p>Sublinhado de letras </p> </td> 
    <td><p>Ctrl+Alt+U / Ctrl+U</p> </td> 
    <td>Command+U</td> 
   </tr>
