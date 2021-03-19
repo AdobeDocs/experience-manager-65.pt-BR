@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2324'
 ht-degree: 3%
 
 ---
@@ -21,26 +22,26 @@ ht-degree: 3%
 
 ## Pré-requisitos {#prerequisites}
 
-Conhecimento da CSS e da estrutura LESS.
+Conhecimento do CSS e da estrutura LESS.
 
 ## O que pode ser personalizado {#what-can-be-customized}
 
-O artigo lista classes css de formulários adaptativos disponíveis ao público. É possível aproveitar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está além do escopo deste artigo. Use essas construções de estilização para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+O artigo lista as classes css de formulários adaptáveis disponíveis publicamente. Você pode aproveitar essas classes para criar um estilo em vários componentes de um formulário adaptável. O estilo de componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está além do escopo deste artigo. Use essas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível criar estilo de componentes usando o [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalização de estilos em formulários adaptáveis {#customizing-styles-in-adaptive-forms}
 
-A estrutura MENOS simplifica o caso de uso para personalizar estilos em formulários adaptáveis. A estrutura permite que você defina estilos usando um conjunto de variáveis e funções (combinações). A estrutura MENOS ajuda a reduzir o tamanho do código agrupado e aumenta sua capacidade de reutilização.
+A estrutura MENOS simplifica o caso de uso para personalizar estilos em formulários adaptáveis. A estrutura permite definir estilos usando um conjunto de variáveis e funções (mixins). A estrutura LESS ajuda a reduzir o tamanho do código empacotado e aumenta sua capacidade de reutilização.
 
 Você pode personalizar estilos de formulário adaptáveis das seguintes maneiras:
 
 * Alterar o tema
 * Alterar o estilo do componente
 
-## Alteração do tema {#changing-theme}
+## Alterar tema {#changing-theme}
 
-É possível alterar o tema de um formulário adaptável para garantir que sua aparência seja consistente com as páginas da Web nas quais o formulário adaptativo está incorporado.
+É possível alterar o tema de um formulário adaptável para garantir que sua aparência seja consistente com as páginas da Web em que o formulário adaptável está incorporado.
 
-As alterações na aparência geral do formulário adaptável usando as propriedades de CSS normalmente fazem parte das alterações de tema. Alterações importantes no &quot;ok e comportamento&quot; do formulário adaptativo, como alterações no layout e posicionamento dos componentes, não são consideradas mudanças de tema.
+As alterações na aparência geral do formulário adaptável usando propriedades de CSS normalmente fazem parte de alterações de tema. Alterações importantes no lo &quot;ok e comportamento do formulário adaptável, como alterações no layout e no posicionamento dos componentes, não são consideradas alterações de tema.
 
 Com base no bootstrap, o seguinte conjunto de propriedades de CSS define o tema de uma página da Web:
 
@@ -52,21 +53,21 @@ Com base no bootstrap, o seguinte conjunto de propriedades de CSS define o tema 
 * Tamanho da Fonte
 * LineHeight
 
-Atualmente, as variáveis MENOS são definidas apenas para essas propriedades dos diversos elementos em um formulário adaptável.
+Atualmente, as variáveis MENOS são definidas apenas para essas propriedades dos vários elementos em um formulário adaptável.
 
 ## Alteração do estilo do componente {#changing-component-style}
 
-É possível fazer alterações na aparência, no layout, no posicionamento e na visibilidade dos elementos. Para obter essa tarefa, crie ou atualize seus arquivos .css personalizados para incluir os construções de estilização listados neste artigo.
+Você pode fazer alterações na aparência, layout, posicionamento e visibilidade dos elementos. Para realizar essa tarefa, crie ou atualize seus arquivos .css personalizados para incluir as construções de estilo listadas neste artigo.
 
-Para aplicar um estilo a um formulário adaptável, abra o formulário adaptável na guia básica para edição, abra as propriedades do contêiner de formulário adaptável e especifique o caminho do Arquivo CSS personalizado. O estilo padrão cria construções do formulário adaptativo e é substituído pelas construções listadas no arquivo .css personalizado.
+Para aplicar um estilo a um formulário adaptável, abra o formulário adaptável no para edição, abra as propriedades do contêiner de formulário adaptável e especifique o caminho do arquivo CSS personalizado na guia básica. O estilo padrão é construído do formulário adaptável e substituído pelas construções listadas no arquivo .css personalizado.
 
 ## Componentes {#components}
 
-Os componentes discutidos neste artigo têm suas classes CSS predefinidas. É possível editar as variáveis para modificar os estilos nas classes CSS. Como alternativa, você pode regravar a classe inteira. Esta seção descreve as classes nos componentes e estilos que podem ser modificadas usando variáveis.
+Os componentes discutidos neste artigo têm classes CSS predefinidas. É possível editar as variáveis para modificar os estilos nas classes CSS. Como alternativa, você pode reescrever a classe inteira. Esta seção descreve as classes nos componentes e estilos que você pode modificar usando variáveis.
 
-## estilo de container {#container-styling}
+## Estilo do contêiner {#container-styling}
 
-Um container é o componente de nível superior. Outros painéis e campos estão sob o componente container.
+Um contêiner é o componente de nível superior. Outros painéis e campos estão no componente do contêiner.
 
 <table>
  <tbody>
@@ -85,26 +86,26 @@ Um container é o componente de nível superior. Outros painéis e campos estão
   </tr>
   <tr>
    <td><p><code>container-bgColor</code></p> </td>
-   <td><p>Cor de fundo do container</p> </td>
+   <td><p>Cor do plano de fundo do contêiner</p> </td>
   </tr>
   <tr>
    <td><p><code>container-padding</code></p> </td>
-   <td><p>Preenchimento para o container</p> </td>
+   <td><p>Preenchimento do contêiner</p> </td>
   </tr>
   <tr>
    <td><p><code>container-margin</code></p> </td>
-   <td><p>Margem para o container</p> </td>
+   <td><p>Margem do contêiner</p> </td>
   </tr>
   <tr>
    <td><p><code>container-fontColor</code></p> </td>
-   <td><p>Cor da fonte do container</p> </td>
+   <td><p>Cor da fonte do contêiner</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Estilo de campo {#field-styling}
 
-Os formulários adaptativos incluem vários tipos de campos. Cada campo tem um nome de classe exclusivo, que é o nome do campo. O campo também tem um nome de classe comum `guideFieldNode`.
+Os formulários adaptáveis incluem vários tipos de campos. Cada campo tem um nome de classe exclusivo, que é o nome do campo. O campo também tem um nome de classe comum `guideFieldNode`.
 
 Os campos incluem rótulos, widgets, descrição da Ajuda (descrição longa e curta) e ícones de Ajuda do campo (ponto de interrogação).
 
@@ -125,7 +126,7 @@ Os campos incluem rótulos, widgets, descrição da Ajuda (descrição longa e c
   </tr>
   <tr>
    <td><p><code>field-padding</code><strong></strong></p> </td>
-   <td><p>Preenchimento para o campo</p> </td>
+   <td><p>Preenchimento do campo</p> </td>
   </tr>
   <tr>
    <td><p><code>field-error-font-color</code></p> </td>
@@ -138,7 +139,7 @@ Os campos incluem rótulos, widgets, descrição da Ajuda (descrição longa e c
  </tbody>
 </table>
 
-## Estilo de etiqueta {#label-styling}
+## Estilo do rótulo {#label-styling}
 
 O elemento HTML **label** usado para o campo inclui as classes **left** ou **top**, dependendo se o rótulo está na parte superior ou à esquerda.
 
@@ -167,11 +168,11 @@ O elemento HTML **label** usado para o campo inclui as classes **left** ou **top
   </tr>
   <tr>
    <td><p><code>label-line-height</code></p> </td>
-   <td>Propriedade de altura da linha CSS para o rótulo do campo </td>
+   <td>Propriedade CSS line height para rótulo de campo </td>
   </tr>
   <tr>
    <td><p><code>label-font-weight</code></p> </td>
-   <td>Propriedade de peso de fonte CSS para o rótulo do campo </td>
+   <td>Propriedade de peso da fonte CSS para o rótulo do campo </td>
   </tr>
   <tr>
    <td><p><code>label-margin</code></p> </td>
@@ -180,11 +181,11 @@ O elemento HTML **label** usado para o campo inclui as classes **left** ou **top
  </tbody>
 </table>
 
-As regras de CSS para o rótulo são aplicadas usando o rótulo **guideFieldLabel**. Se você for um autor, substitua esta regra para tornar suas alterações personalizadas visíveis.
+As regras de CSS para o rótulo são aplicadas usando o rótulo **guideFieldLabel**. Se você for um autor, substitua essa regra para tornar suas alterações personalizadas visíveis.
 
 ## Estilo de widgets {#widgets-styling}
 
-Dependendo do tipo, os widgets também incluem classes. Normalmente, os widgets incluem a classe `guideFieldWidget`. Os widgets fornecidos com HTML normalmente usam a entrada padrão do elemento HTML e selecionam. O estilo é feito de acordo. Não é possível estilizar um widget personalizado alterando as variáveis.
+Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets incluem a classe `guideFieldWidget`. Os widgets fornecidos com HTML normalmente usam a entrada de elemento HTML padrão e selecionam. O estilo é feito adequadamente. Não é possível criar um estilo de widget personalizado alterando as variáveis.
 
 <table>
  <tbody>
@@ -203,7 +204,7 @@ Dependendo do tipo, os widgets também incluem classes. Normalmente, os widgets 
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>Cor do plano de fundo dos widgets (não funciona para caixa de seleção e botão de opção)</td>
+   <td>Cor do plano de fundo dos widgets (Não funciona para a caixa de seleção e o botão de opção)</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -239,7 +240,7 @@ Dependendo do tipo, os widgets também incluem classes. Normalmente, os widgets 
   </tr>
   <tr>
    <td><p><code>widgets-line-height</code></p> </td>
-   <td>Propriedade CSS lineheight para o widget </td>
+   <td>Propriedade CSS lineheight para widget </td>
   </tr>
   <tr>
    <td><p><code>widgets-padding</code></p> </td>
@@ -267,30 +268,30 @@ Dependendo do tipo, os widgets também incluem classes. Normalmente, os widgets 
   </tr>
   <tr>
    <td><p><code>widgets-disabled-border-color</code></p> </td>
-   <td><p>Cor da borda do widget quando o campo está desativado</p> </td>
+   <td><p>Cor da Borda do widget quando o campo está desativado</p> </td>
   </tr>
   <tr>
    <td><p><code>widget-height</code></p> </td>
-   <td>Altura do widget (não funciona para caixa de seleção e botão de opção)</td>
+   <td>Altura do widget (não funciona para a caixa de seleção e o botão de opção)</td>
   </tr>
   <tr>
    <td><p><code>checkbutton-height</code></p> </td>
-   <td><p>Altura da caixa de seleção e do botão de opção.</p> </td>
+   <td><p>Altura para caixa de seleção e botão de opção.</p> </td>
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>Altura máxima para um menu suspenso de seleção múltipla</p> </td>
+   <td><p>Altura máxima para uma lista suspensa de várias seleções</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Limitações no estilo do widget {#limitations-in-widget-styling}
+### Limitações no estilo de widget {#limitations-in-widget-styling}
 
-O estilo para campos focados, obrigatórios e desativados é restrito usando variáveis. No entanto, é possível alterá-la substituindo os estilos. A restrição que usa variáveis é fornecida principalmente para manter o número de variáveis em verificação. A restrição pode ser relaxada se a aparência de um campo mudar drasticamente porque está em qualquer um dos estados discutidos anteriormente.
+O estilo de campos focados, obrigatórios e desativados é restrito com o uso de variáveis. No entanto, é possível alterá-la substituindo os estilos. A restrição que usa variáveis é fornecida principalmente para manter o número de variáveis sob controle. A restrição pode ser relaxada se a aparência de um campo mudar drasticamente porque está em qualquer um dos estados discutidos anteriormente.
 
-## Descrição da ajuda {#help-description}
+## Descrição da Ajuda {#help-description}
 
-Um autor pode especificar o conteúdo da Ajuda nos campos usando componentes de descrição curta e longa. Ambos os componentes têm uma classe comum `.guideHelpDescription` e outra classe `.long`/ `.short`, dependendo do tipo de descrição. O conteúdo da Ajuda é incluído em um elemento de parágrafo para substituir o estilo da descrição. A descrição da Ajuda (longa e curta) é modificada usando variáveis que começam com widgetshelp, como mencionado na tabela a seguir:
+Um autor pode especificar o conteúdo da Ajuda nos campos usando componentes de Descrição curta e longa. Ambos os componentes têm uma classe comum `.guideHelpDescription` e outra classe `.long`/ `.short`, dependendo do tipo de descrição. O conteúdo da Ajuda é incluído em um elemento de parágrafo para substituir o estilo da descrição. A descrição da Ajuda (longa e curta) é modificada usando variáveis que começam com widgetshelp, como mencionado na tabela a seguir:
 
 <table>
  <tbody>
@@ -300,15 +301,15 @@ Um autor pode especificar o conteúdo da Ajuda nos campos usando componentes de 
   </tr>
   <tr>
    <td><p><code>widgets-help-long-bg-color</code></p> </td>
-   <td><p>Cor do plano de fundo da Ajuda longa dos widgets</p> </td>
+   <td><p>Cor do plano de fundo da longa Ajuda dos widgets</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-long-border-color</code></p> </td>
-   <td><p>Cor da borda da Ajuda longa dos widgets</p> </td>
+   <td><p>Cor da borda da longa Ajuda dos widgets</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-long-border-indicator-color</code></p> </td>
-   <td><p>Cor da borda do indicador esquerdo da Ajuda longa dos widgets</p> </td>
+   <td><p>Cor da borda do indicador esquerdo da longa Ajuda dos widgets</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-short-bg-color</code></p> </td>
@@ -320,7 +321,7 @@ Um autor pode especificar o conteúdo da Ajuda nos campos usando componentes de 
   </tr>
   <tr>
    <td><p><code>widgets-help-short-tooltip-bg-color</code></p> </td>
-   <td><p>Cor do plano de fundo da Ajuda da dica de ferramenta curta dos widgets</p> </td>
+   <td><p>Cor do fundo da Ajuda da dica de ferramenta curta dos widgets</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-short-tooltip-color</code></p> </td>
@@ -331,7 +332,7 @@ Um autor pode especificar o conteúdo da Ajuda nos campos usando componentes de 
 
 ## Termos e condições {#terms-and-conditions}
 
-O widget Termos e condições (TnC `` ``) permite especificar termos e condições. Você pode personalizar o widget usando as variáveis descritas na tabela a seguir.
+O widget Termos e condições (TnC `` ``) permite que você especifique termos e condições. Você pode personalizar o widget usando as variáveis descritas na tabela a seguir.
 
 <table>
  <tbody>
@@ -352,7 +353,7 @@ O widget Termos e condições (TnC `` ``) permite especificar termos e condiçõ
 
 ## Botão {#button}
 
-Botões também são widgets. No entanto, o estilo é ligeiramente diferente dos widgets. Em formulários adaptativos, qualquer um dos seguintes constitui um botão:
+Os botões também são widgets. No entanto, o estilo é um pouco diferente dos widgets. Em formulários adaptáveis, qualquer um dos itens a seguir constitui um botão:
 
 * input[type = text]
 * botão
@@ -405,11 +406,11 @@ Código HTML do botão:
   </tr>
   <tr>
    <td><p><code>button-padding</code></p> </td>
-   <td><p>Propriedade de preenchimento CSS para o botão</p> </td>
+   <td><p>Propriedade de preenchimento CSS do botão</p> </td>
   </tr>
   <tr>
    <td><p><code>button-font-size</code></p> </td>
-   <td><p>Tamanho da fonte do botão</p> </td>
+   <td><p>Tamanho da fonte para o botão</p> </td>
   </tr>
   <tr>
    <td><p><code>button-background-color</code></p> </td>
@@ -425,7 +426,7 @@ Código HTML do botão:
   </tr>
   <tr>
    <td><p><code>button-large-padding</code></p> </td>
-   <td><p>Preenchimento para botões grandes (botões com classe .buttonlarge)</p> </td>
+   <td><p>Preenchimento dos botões grandes (botões com classe .buttonlarge)</p> </td>
   </tr>
   <tr>
    <td><p><code>button-large-font-size</code></p> </td>
@@ -433,7 +434,7 @@ Código HTML do botão:
   </tr>
   <tr>
    <td><p><code>button-small-padding</code></p> </td>
-   <td><p>Preenchimento para botões pequenos (botões com classe .buttonsmall)</p> </td>
+   <td><p>Preenchimento dos botões pequenos (botões com classe .buttonsmall)</p> </td>
   </tr>
   <tr>
    <td><p><code>button-small-font-size</code></p> </td>
@@ -480,7 +481,7 @@ Código HTML do botão:
 
 ## Ponto de interrogação {#question-mark}
 
-Para os widgets, um questionMark é exibido quando um autor adiciona uma descrição longa no conteúdo da Ajuda. O ícone padrão fornecido no bootstrap é usado. Para usar um ícone personalizado, você pode personalizar os ícones de inicialização.
+Para os widgets, um ponto de interrogação é exibido quando um autor adiciona uma descrição longa no conteúdo da Ajuda. O ícone padrão fornecido no bootstrap é usado. Para usar um ícone personalizado, você pode personalizar os ícones do bootstrap.
 
 <table>
  <tbody>
@@ -503,14 +504,14 @@ Para os widgets, um questionMark é exibido quando um autor adiciona uma descri�
   </tr>
   <tr>
    <td><p><code>questionmark-hover-font-color</code></p> </td>
-   <td><p>Cor do ícone quando o mouse passa o mouse sobre ele</p> </td>
+   <td><p>Cor do ícone quando o mouse está sobre ele</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Table {#table}
 
-É possível alterar o tema de cores para linhas de cabeçalho e corpo em uma tabela usando as seguintes variáveis.
+Você pode alterar o tema de cor para linhas de cabeçalho e de corpo em uma tabela usando as seguintes variáveis.
 
 <table>
  <tbody>
@@ -520,7 +521,7 @@ Para os widgets, um questionMark é exibido quando um autor adiciona uma descri�
   </tr>
   <tr>
    <td><p><code>table-header-bg-color</code></p> </td>
-   <td><p>Cor do plano de fundo para a linha de cabeçalho. O valor padrão é <code>#333</code>.<br /> </p> </td>
+   <td><p>Cor do plano de fundo da linha de cabeçalho. O valor padrão é <code>#333</code>.<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>table-odd-row-bg-color</code></p> </td>
@@ -535,7 +536,7 @@ Para os widgets, um questionMark é exibido quando um autor adiciona uma descri�
 
 ## Anexo de arquivo {#file-attachment}
 
-O widget Anexo de arquivo de formulários adaptativos permite carregar arquivos. Você também pode personalizar o widget usando as variáveis.
+O widget Anexo de arquivo de formulários adaptáveis permite carregar arquivos. Também é possível personalizar o widget usando as variáveis.
 
 <table>
  <tbody>
@@ -557,27 +558,27 @@ O widget Anexo de arquivo de formulários adaptativos permite carregar arquivos.
   </tr>
   <tr>
    <td><p><code>fileItemColor</code></p> </td>
-   <td><p>Cor da fonte do item de arquivo</p> </td>
+   <td><p>Cor da fonte para o item de arquivo</p> </td>
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
-   <td><p>Cor do ícone de Pré-visualização (ícone de Bootstrap) no widget</p> </td>
+   <td><p>Cor do ícone de Visualização (ícone de Bootstrap) no widget</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
-   <td><p>Altura do comentário do item de arquivo</p> </td>
+   <td><p>Altura do comentário para o item de arquivo</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Estilos do Navegador {#navigator-styles}
 
-Há quatro tipos de guias de navegador. Essas incluem guias à esquerda, na parte superior, no assistente e no acordeão. Cada navegador tem uma classe diferente.
+Há quatro tipos de guias de navegador. Isso inclui guias à esquerda, na parte superior, no assistente e na opção . Cada navegador tem uma classe diferente.
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Navegador</strong></p> </td>
+   <td><p><strong>Naviagador</strong></p> </td>
    <td><p><strong>Classe CSS</strong></p> </td>
   </tr>
   <tr>
@@ -594,12 +595,12 @@ Há quatro tipos de guias de navegador. Essas incluem guias à esquerda, na part
   </tr>
   <tr>
    <td><p><code>Wizard</code></p> </td>
-   <td><p>.Wizard-navigators</p> </td>
+   <td><p>.wizard-navigators</p> </td>
   </tr>
  </tbody>
 </table>
 
-A seguir está o código HTML do elemento tab navigator (semelhante às guias bootstrap):
+Este é o código HTML para o elemento do navegador de guias (semelhante às guias do bootstrap):
 
 `<li>`
 
@@ -699,7 +700,7 @@ Além disso, há classes para navegadores de guias de estilo (esquerda e superio
   </tr>
   <tr>
    <td><p><code>nested_true</code></p> </td>
-   <td><p>Navegadores de guias (esquerda e superior) que têm navegadores aninhados/filhos/subnavegadores</p> </td>
+   <td><p>Navegadores de guias (à esquerda e à parte superior) com navegadores aninhados/filhos/subnavegadores</p> </td>
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
@@ -708,7 +709,7 @@ Além disso, há classes para navegadores de guias de estilo (esquerda e superio
  </tbody>
 </table>
 
-A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esquerda e superior) e navegadores de assistente.
+A classe guideNavigationIcon fornece um ícone padrão para navegadores de tabulação (esquerda e superior) e navegadores de assistente.
 
 <table>
  <tbody>
@@ -721,7 +722,7 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
 
 >[!NOTE]
 >
->Você pode alterar o ícone de um navegador específico fornecendo uma classe CSS no painel de criação, por exemplo &lt;CLASS_NAME>. Adicione um **&lt;CLASS_NAME>_nav** para o ícone do navegador.
+>Você pode alterar o ícone de um determinado navegador fornecendo uma classe CSS no painel em criação, no exemplo de formulário &lt;CLASS_NAME>. Você adiciona um **&lt;CLASS_NAME>_nav** para o ícone do navegador.
 
 <table>
  <tbody>
@@ -730,12 +731,12 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
    <td><p><strong>Descrição</strong></p> </td>
   </tr>
   <tr>
-   <td><p><strong>Navegadores de guia</strong></p> </td>
+   <td><p><strong>Navegadores de guias</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
    <td><p><code>navigator-bg-color</code></p> </td>
-   <td><p>Cor do plano de fundo para o navegador da guia inteira</p> </td>
+   <td><p>Cor do plano de fundo do navegador da guia inteira</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-bg-color</code></p> </td>
@@ -743,7 +744,7 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
   </tr>
   <tr>
    <td><p><code>tabs-font-color</code></p> </td>
-   <td><p>Cor da fonte para a guia</p> </td>
+   <td><p>Cor da fonte da guia</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-hover-bg-color</code></p> </td>
@@ -763,7 +764,7 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
   </tr>
   <tr>
    <td><p><code>tabs-completed-bg-color</code></p> </td>
-   <td><p>Cor do plano de fundo quando a expressão de conclusão do painel retorna verdadeiro</p> </td>
+   <td><p>Cor do plano de fundo quando a expressão de conclusão do painel retorna true</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-completed-font-color</code></p> </td>
@@ -771,11 +772,11 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
   </tr>
   <tr>
    <td><p><code>tabs-stepped-bg-color</code></p> </td>
-   <td>Cor do plano de fundo quando o painel está em foco uma vez, mas a expressão de conclusão retorna falso </td>
+   <td>Cor do plano de fundo quando o painel estava em foco uma vez, mas a expressão de conclusão retorna false </td>
   </tr>
   <tr>
    <td><p><code>tabs-stepped-font-color</code></p> </td>
-   <td>Cor da fonte quando o painel está em foco uma vez, mas a expressão de conclusão retorna falso </td>
+   <td>Cor da fonte quando o painel está em foco uma vez, mas a expressão de conclusão retorna false </td>
   </tr>
   <tr>
    <td><p><code>tabs-border-color</code></p> </td>
@@ -783,15 +784,15 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
   </tr>
   <tr>
    <td><p><code>tabs-font-size</code></p> </td>
-   <td><p>Tamanho da fonte para a guia</p> </td>
+   <td><p>Tamanho da fonte da guia</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-padding</code></p> </td>
-   <td><p>Preenchimento para a guia</p> </td>
+   <td><p>Preenchimento da guia</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-margin</code></p> </td>
-   <td><p>Margem da guia</p> </td>
+   <td><p>Margem para a guia</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-vertical-margin</code></p> </td>
@@ -810,12 +811,12 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
    <td><p>Recuo para as guias aninhadas</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Navegadores de assistente</strong></p> </td>
+   <td><p><strong>Navegadores do Assistente</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-navigator-bg-color</code></p> </td>
-   <td>Cor do plano de fundo para o navegador inteiro do assistente</td>
+   <td>Cor do plano de fundo para todo o navegador do assistente</td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-bg-color</code></p> </td>
@@ -831,11 +832,11 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
   </tr>
   <tr>
    <td><p><code>wizard-tabs-active-font-color</code></p> </td>
-   <td><p>Cor da fonte quando o painel está em foco (focado)</p> </td>
+   <td><p>Cor da fonte quando o painel está em foco (focalizado)</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td>
-   <td><p>Cor do plano de fundo quando a expressão de conclusão do painel retorna verdadeiro</p> </td>
+   <td><p>Cor do plano de fundo quando a expressão de conclusão do painel retorna true</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-completed-font-color</code></p> </td>
@@ -843,11 +844,11 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
   </tr>
   <tr>
    <td><p><code>wizard-tabs-stepped-bg-color</code></p> </td>
-   <td>Cor do plano de fundo quando o painel está em foco uma vez, mas a expressão de conclusão retorna falso</td>
+   <td>Cor do plano de fundo quando o painel estava em foco uma vez, mas a expressão de conclusão retorna falso</td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-stepped-font-color</code></p> </td>
-   <td><p>Cor da fonte quando o painel está focalizado uma vez, mas a expressão de conclusão retorna falso</p> </td>
+   <td><p>Cor da fonte quando o painel é focado uma vez, mas a expressão de conclusão retorna false</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-border-color</code></p> </td>
@@ -878,12 +879,12 @@ A classe guideNavIcon fornece um ícone padrão para navegadores de guias (esque
    <td><p>Cor de preenchimento da barra de progresso</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Acordeão - Navegadores</strong></p> </td>
+   <td><p><strong>Navegadores acordeão</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
    <td><p><code>accordion-tabs-padding</code></p> </td>
-   <td><p>Preenchimento para acordeão</p> </td>
+   <td><p>Preenchimento para opção de acordeão</p> </td>
   </tr>
  </tbody>
 </table>
@@ -942,15 +943,15 @@ Um Painel inclui uma barra de ferramentas opcional e seu conteúdo.
  </tbody>
 </table>
 
-O nó do painel é dividido em navegadores e conteúdo. `` `` não há nenhum componente de estilo separado para o conteúdo. As variáveis descritas são aplicadas no navegador e no conteúdo.
+O nó do painel é dividido em navegadores e conteúdo. `` `` não há um componente de estilo separado para o conteúdo. As variáveis descritas são aplicadas no navegador e também no conteúdo.
 
-O painel superior (Painel raiz) não tem essa classe.
+O painel mais superior (RootPanel) não tem essa classe.
 
 ## Estilo móvel {#mobile-styling}
 
 ## Barra de cabeçalho {#header-bar}
 
-Essas variáveis influenciam a barra de cabeçalho que está visível em um dispositivo móvel ou em dispositivos de tela pequena que contêm o título do painel e navegadores próximos e posteriores.
+Essas variáveis influenciam a barra de cabeçalho visível em um dispositivo móvel ou em dispositivos de tela pequena que contêm o título do painel e navegadores ao lado e ao verso.
 
 <table>
  <tbody>
@@ -973,18 +974,18 @@ Essas variáveis influenciam a barra de cabeçalho que está visível em um disp
   </tr>
   <tr>
    <td><p><code>headerbar-font-color</code></p> </td>
-   <td><p>Cor da fonte do texto na barra de cabeçalho</p> </td>
+   <td><p>Cor da fonte do texto dentro da barra de cabeçalho</p> </td>
   </tr>
   <tr>
    <td><p><code>headerbar-padding</code></p> </td>
-   <td><p>Preenchimento para a barra de cabeçalho</p> </td>
+   <td><p>Preenchimento da barra de cabeçalho</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Indicador de rolagem {#scroll-indicator}
 
-Essas variáveis influenciam o indicador de rolagem, que é uma seta laranja que aparece em um dispositivo móvel ou em dispositivos de tela pequena. Um indicador de rolagem indica que há conteúdo além da parte visível da tela. Você pode rolar para baixo para vê-lo. Quando você atinge o final do conteúdo, a seta desaparece.
+Essas variáveis influenciam o indicador de Rolagem, que é uma seta laranja que aparece em um dispositivo móvel ou em dispositivos de tela pequena. Um indicador de Rolagem indica que há conteúdo além da parte visível da tela. Você pode rolar para baixo para vê-lo. Quando você atinge o fim do conteúdo, a seta desaparece.
 
 <table>
  <tbody>
@@ -1020,9 +1021,9 @@ Essas variáveis influenciam o indicador de rolagem, que é uma seta laranja que
  </tbody>
 </table>
 
-## Variáveis específicas do layout da barra de ferramentas fixa móvel {#mobile-fixed-toolbar-layout-specific-variables}
+## Variáveis específicas do layout da barra de ferramentas fixa para dispositivos móveis {#mobile-fixed-toolbar-layout-specific-variables}
 
-Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas fixa móvel.
+Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas fixa para dispositivos móveis.
 
 <table>
  <tbody>
@@ -1069,14 +1070,14 @@ Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas
   </tr>
   <tr>
    <td><p><code>mobilefixedtoolbarbgcolor</code></p> </td>
-   <td><p>Cor de fundo da barra de ferramentas no dispositivo móvel</p> </td>
+   <td><p>Cor do plano de fundo da barra de ferramentas no dispositivo móvel</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Variável específica do tema {#theme-specific-variable}
 
-O tema **Inscrição simples** em /etc/clientlibs/fd/af/guidethemment/simpleEnrollment e a categoria `guide.theme.simpleEnrollment` também apresentam algumas variáveis. Se quiser criar um tema que aprimore a inscrição simples, você pode usar as seguintes &quot;variáveis extras:
+O tema **Simple enrollment** em /etc/clientlibs/fd/af/guidetheme/simpleEnrollment e a categoria `guide.theme.simpleEnrollment` também apresentam algumas variáveis. Se quiser criar um tema que aprimore a inscrição simples, você pode usar as seguintes &quot;variáveis extras:
 
 <table>
  <tbody>
@@ -1110,7 +1111,7 @@ O tema **Inscrição simples** em /etc/clientlibs/fd/af/guidethemment/simpleEnro
   </tr>
   <tr>
    <td><p><code>active-nav-color</code></p> </td>
-   <td>Cor do plano de fundo para o navegador atual/ativo do assistente e a barra de progresso correspondente </td>
+   <td>Cor do plano de fundo do navegador atual / ativo do assistente e barra de progresso correspondente </td>
   </tr>
   <tr>
    <td><p><code>visited-nav-color</code></p> </td>
@@ -1118,11 +1119,11 @@ O tema **Inscrição simples** em /etc/clientlibs/fd/af/guidethemment/simpleEnro
   </tr>
   <tr>
    <td><p><code>tabs-bifercating-border-color</code></p> </td>
-   <td><p>Container de bifurcação de cores da borda em navegadores e painéis</p> </td>
+   <td><p>Contêiner de bifurcação de cores da borda em navegadores e painéis</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-navigator-separator-color</code></p> </td>
-   <td><p>Presilhas de separação de cores da borda inferior para guias à esquerda (navegadores de guias).</p> </td>
+   <td><p>Guias separadoras de cores da borda inferior para guias à esquerda (navegadores de guias).</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-child-nav-bg-color</code></p> </td>
