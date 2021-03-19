@@ -1,59 +1,60 @@
 ---
-title: DELIVERY HTTP2 do conteúdo
-description: O HTTP/2 melhora a maneira como os navegadores e servidores se comunicam, permitindo uma transferência mais rápida de informações e reduzindo a quantidade de energia de processamento necessária.
+title: Entrega de conteúdo HTTP2
+description: HTTP/2 melhora a forma como os navegadores e servidores se comunicam, permitindo uma transferência mais rápida de informações e reduzindo a quantidade de poder de processamento necessário.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
+role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 0%
+source-wordcount: '727'
+ht-degree: 2%
 
 ---
 
 
-# DELIVERY HTTP/2 do conteúdo {#http-delivery-of-content}
+# Entrega HTTP/2 de conteúdo {#http-delivery-of-content}
 
-A Adobe está empolgada em anunciar a disponibilidade do delivery HTTP/2 de conteúdo com o benefício geral de um melhor desempenho.
+A Adobe está animada em anunciar a disponibilidade da entrega de conteúdo HTTP/2 com o benefício geral de um melhor desempenho.
 
 >[!NOTE]
 >
->Este recurso exige que você use o CDN pronto para uso fornecido com a Adobe Experience Manager Dynamic Media. Nenhum outro CDN personalizado é suportado com este recurso.
+>Esse recurso exige que você use a CDN predefinida fornecida com o Adobe Experience Manager Dynamic Media. Nenhum outro CDN personalizado é compatível com esse recurso.
 
 ## O que é HTTP/2? {#what-is-http}
 
-O HTTP/2 melhora a maneira como os navegadores e servidores se comunicam, permitindo uma transferência mais rápida de informações e reduzindo a quantidade de energia de processamento necessária.
+O HTTP/2 melhora a forma como os navegadores e servidores se comunicam, permitindo uma transferência mais rápida de informações e ao mesmo tempo reduzindo a quantidade de poder de processamento necessário.
 
-O site a seguir descreve o HTTP/2 e seus benefícios de uma forma breve e simples:
+O site a seguir descreve o HTTP/2 e seus benefícios de uma maneira breve e simples:
 
 [https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
 
-## Quais são os principais benefícios da mudança para HTTP/2 para o delivery de conteúdo? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
+## Quais são os principais benefícios da migração para HTTP/2 para a entrega de conteúdo? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-A melhoria no desempenho pode variar muito. Ele é baseado em vários fatores, como o código do seu site, como você usa o Dynamic Media, o dispositivo do consumidor, a tela e o local.
+A melhoria do desempenho pode variar bastante. É baseado em vários fatores, como o código do seu site, como você usa o Dynamic Media, o dispositivo do consumidor, a tela e a localização.
 
-Os resultados obtidos foram os seguintes:
+Resultados dos testes próprios:
 
-* Para imagens, o tempo de resposta melhorou de 7% a 28%, dependendo do dispositivo e do navegador. Os ganhos de desempenho mais notáveis foram nos dispositivos iOS.
-* Para visualizadores, o desempenho do tempo de carregamento melhorou 15%.
+* Para imagens, o tempo de resposta melhorou de 7% a 28%, dependendo do dispositivo e do navegador. Os ganhos de desempenho mais notáveis foram em dispositivos iOS.
+* Para visualizadores, o desempenho do tempo de carregamento melhorou em 15%.
 
-A demonstração a seguir ilustra a diferença entre o carregamento HTTP/1 versus HTTP/2:
+A demonstração a seguir ilustra a diferença entre o carregamento HTTP/1 e HTTP/2:
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Estou qualificado para alternar para HTTP/2? {#am-i-eligible-to-switch-over-to-http}
+## Posso mudar para HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 
 Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 * Use HTTPS seguro para suas solicitações de mídia avançada.
-* Use o CDN (content delivery network) fornecido no Adobe como parte de sua licença da Dynamic Media.
-* Use um domínio dedicado (não-empresa-h.assetsadobe#.com).
+* Use a CDN (rede de entrega de conteúdo) fornecida pelo Adobe como parte de sua licença da Dynamic Media.
+* Use um domínio dedicado (não-company-h.assetsadobe#.com).
 
-   Se você já tiver um domínio dedicado, poderá opt in por meio do Suporte Técnico.
+   Se você já tiver um domínio dedicado, poderá optar por participar por meio do Suporte técnico.
 
    Se você não tiver um domínio dedicado, o Adobe planeja agendar sua transição para HTTP/2 em 2018.
 
@@ -61,40 +62,40 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 Você inicia a solicitação para alternar para HTTP/2; isso não é feito automaticamente para você.
 
-1. Para alternar para HTTP/2, inicie uma solicitação de Atendimento ao cliente do Adobe. Consulte [Acessar o Portal de suporte AEM](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Para mudar para HTTP/2, inicie uma solicitação de Atendimento ao cliente do Adobe. Consulte [Acessar o portal de suporte AEM](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Forneça as seguintes informações em sua solicitação de suporte:
 
       1. Nome do contato principal, email, telefone.
       1. Todos os domínios a serem transferidos para HTTP/2.
       1. Verifique se você usa HTTPS seguro para solicitações de mídia avançada.
-      1. Verifique se você usa o CDN através do Adobe e se não é gerenciado com um relacionamento direto.
-      1. Verifique se você usa um domínio dedicado. Se você usar o Dynamic Media, você usará um domínio dedicado.
+      1. Verifique se você usa a CDN por meio do Adobe e não é gerenciada com um relacionamento direto.
+      1. Verifique se você usa um domínio dedicado. Se usar o Dynamic Media, você usará um domínio dedicado.
    1. O Atendimento ao cliente adiciona você à lista de espera do cliente HTTP/2, com base na ordem em que as solicitações foram enviadas.
-   1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Atendimento ao cliente entrará em contato com você para coordenar a transição e definir uma data de público alvo.
-   1. Você é notificado após a conclusão e pode verificar a transição bem-sucedida em HTTP2.
+   1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Atendimento ao cliente entrará em contato com você para coordenar a transição e definir uma data de destino.
+   1. Você é notificado após a conclusão e pode verificar a transição bem-sucedida para HTTP2.
 
       Como o navegador não declara esse fato, é necessário baixar uma extensão.
 
-      Para Firefox e Chrome, há uma extensão chamada &quot;Indicador HTTP/2 e SPDY&quot;. Os navegadores suportam somente http/2 com segurança, portanto, é necessário chamar um URL com https para verificar. Se http/2 for suportado, será indicado pela extensão na forma de um símbolo de Flash azul e um cabeçalho &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
+      Para o Firefox e o Chrome, há uma extensão chamada &quot;Indicador HTTP/2 e SPDY&quot;. Os navegadores só suportam http/2 com segurança, portanto, é necessário chamar um URL com https para verificar. Se http/2 for suportado, ele será indicado pela extensão na forma de um símbolo de Flash azul e um cabeçalho &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
 
 
-## Quando posso esperar a transição para HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
+## Quando posso esperar uma transição para HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
 As solicitações são processadas na ordem em que são recebidas pelo Atendimento ao cliente.
 
 >[!NOTE]
 >
->Pode haver um longo lead time porque a transição para HTTP/2 envolve a limpeza do cache. Portanto, somente algumas transições de clientes podem ser tratadas de cada vez.
+>Pode haver um lead time longo, pois a transição para HTTP/2 envolve a limpeza do cache. Portanto, apenas algumas transições de clientes podem ser tratadas por vez.
 
 ## Quais são os riscos com a mudança para HTTP/2? {#what-are-the-risks-with-moving-to-http}
 
-A transição para HTTP/2 limpa o cache no CDN porque envolve a mudança para uma nova configuração de CDN.
+A transição para HTTP/2 limpa seu cache no CDN porque envolve mudar para uma nova configuração de CDN.
 
-O conteúdo armazenado em cache atinge diretamente os servidores de Adobe não armazenados em cache até que o cache seja reconstruído novamente. Sendo assim, o Adobe planeja lidar com algumas transições do cliente de cada vez para que o desempenho aceitável seja mantido ao retirar solicitações da origem.
+O conteúdo armazenado em cache atinge diretamente os servidores de origem não-Adobe até que o cache seja recriado novamente. Dessa forma, o Adobe pretende lidar com algumas transições de clientes de cada vez, para que o desempenho aceitável seja mantido ao puxar solicitações da origem.
 
-## Como verificar se um URL ou site é ativado com HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## Como é possível verificar se um URL ou site está ativado com HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Como o navegador não declara esse fato, é necessário baixar uma extensão.
 
-Para Firefox e Chrome, há uma extensão chamada &quot;Indicador HTTP/2 e SPDY&quot;. Os navegadores suportam somente http/2 com segurança, portanto, é necessário chamar um URL com https para verificar. Se http/2 for suportado, será indicado pela extensão na forma de um símbolo de Flash azul e um cabeçalho `X-Firefox-Spdy` : `h2`.
+Para o Firefox e o Chrome, há uma extensão chamada &quot;Indicador HTTP/2 e SPDY&quot;. Os navegadores só suportam http/2 com segurança, portanto, é necessário chamar um URL com https para verificar. Se http/2 for suportado, ele será indicado pela extensão na forma de um símbolo de Flash azul e um cabeçalho `X-Firefox-Spdy` : `h2`.
