@@ -1,8 +1,8 @@
 ---
 title: Configuração dos componentes no Modo de design
 seo-title: Configuração dos componentes no Modo de design
-description: 'null'
-seo-description: nulo
+description: Configuração dos componentes no Modo de design
+seo-description: 'null'
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '911'
 ht-degree: 87%
 
 ---
@@ -36,7 +36,7 @@ Além destes, outros componentes também estarão disponíveis. Você pode usar 
 >
 >O modo de design só está disponível para configurações de design armazenadas como conteúdo em ( `/etc`).
 >
->A partir do AEM 6.4, é recomendável armazenar designs como dados de configuração em `/apps` para suportar cenários de implantação contínua. Os designs armazenados em `/apps` não são editáveis no tempo de execução e o modo Design não estará disponível para usuários não administradores para esses modelos.
+>A partir do AEM 6.4, é recomendável armazenar designs como dados de configuração em `/apps` para oferecer suporte a cenários de implantação contínua. Os designs armazenados em `/apps` não são editáveis no tempo de execução e o modo Design não estará disponível para usuários não administradores nesses modelos.
 
 Isso envolve adicionar ou remover os componentes permitidos no sistema de parágrafos da página. O sistema de parágrafo (`parsys`) é um componente composto que contém todos os outros componentes de parágrafo. O sistema de parágrafo permite aos autores adicionar componentes de diferentes tipos em uma página, pois contêm todos os outros componentes de parágrafo. Cada tipo de parágrafo é representado como um componente.
 
@@ -110,7 +110,7 @@ Para ativar ou desativar um componente:
 
    Na guia **Configurações**, é possível definir opções adicionais como para desenhar uma âncora para cada componente e definir o preenchimento da célula de cada contêiner.
 
-1. Selecione **Done** para salvar sua configuração.
+1. Selecione **Concluído** para salvar sua configuração.
 
 ## Configuração do design de um componente {#configuring-the-design-of-a-component}
 
