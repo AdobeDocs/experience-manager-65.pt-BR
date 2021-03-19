@@ -1,8 +1,8 @@
 ---
-title: Desenvolvendo e comparação de páginas
-seo-title: Desenvolvendo e comparação de páginas
-description: 'null'
-seo-description: nulo
+title: Desenvolvimento e diff de página
+seo-title: Desenvolvimento e diff de página
+description: Desenvolvimento e diff de página
+seo-description: 'null'
 uuid: 06f27bc2-f42a-4176-ab94-255e721c6933
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,27 +11,27 @@ content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 10%
+source-wordcount: '365'
+ht-degree: 11%
 
 ---
 
 
-# Desenvolvimento e comparação de páginas{#developing-and-page-diff}
+# Desenvolvimento e diff de página{#developing-and-page-diff}
 
-## Visão geral do recurso {#feature-overview}
+## Visão geral dos recursos {#feature-overview}
 
-A criação de conteúdo é um processo iterativo. Criar com eficiência exige poder ver o que mudou de uma iteração para outra. Visualizar uma versão da página e, em seguida, a outra é um processo ineficiente e propenso a erros. Um autor deseja comparar a página atual com uma versão anterior lado a lado com as diferenças destacadas.
+A criação de conteúdo é um processo iterativo. Criar com eficiência exige poder ver o que mudou de uma iteração para outra. Visualizar uma versão da página e, em seguida, a outra é um processo ineficiente e propenso a erros. Um autor deseja poder comparar a página atual com uma versão anterior lado a lado com as diferenças destacadas.
 
-O diff da página permite que um usuário compare a página atual com inicializações, versões anteriores etc. Para obter detalhes sobre esse recurso do usuário, consulte [Diferença de página](/help/sites-authoring/page-diff.md).
+O diferencial de páginas permite que um usuário compare a página atual com inicializações, versões anteriores etc. Para obter detalhes sobre esse recurso do usuário, consulte [Diff de página](/help/sites-authoring/page-diff.md).
 
-## Detalhes da operação {#operation-details}
+## Detalhes da Operação {#operation-details}
 
-Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada por AEM em segundo plano para facilitar a diferença. Isso é necessário para que seja possível renderizar o conteúdo [para comparação lado a lado](/help/sites-developing/pagediff.md#operation-details).
+Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada por AEM em segundo plano para facilitar o diferencial. Isso é necessário para poder renderizar o conteúdo [para comparação lado a lado](/help/sites-developing/pagediff.md#operation-details).
 
-Esta operação de recriação é feita por AEM interna e é transparente para o usuário e não requer intervenção. No entanto, um administrador que visualiza o repositório, por exemplo, no CRX DE Lite, veria essas versões recriadas dentro da estrutura de conteúdo.
+Essa operação de recriação é feita por AEM internamente e é transparente para o usuário e não requer intervenção. No entanto, um administrador que visualiza o repositório, por exemplo, no CRX DE Lite, veria essas versões recriadas na estrutura de conteúdo.
 
 Quando o conteúdo é comparado, a árvore inteira até a página a ser comparada é recriada no seguinte local:
 
@@ -41,11 +41,11 @@ Uma tarefa de limpeza é executada automaticamente para limpar esse conteúdo te
 
 ## Permissões  {#permissions}
 
-Anteriormente, na interface clássica, era necessário considerar um desenvolvimento especial para facilitar a difusão AEM (como usar `cq:text` tag lib ou integrar o serviço `DiffService` OSGi em componentes). Isso não é mais necessário para o novo recurso diff, pois o diff ocorre no cliente por meio da comparação DOM.
+Anteriormente, na interface do usuário clássica, era necessário considerar o desenvolvimento especial para facilitar a diferenciação AEM (como usar `cq:text` tag lib ou integrar o serviço `DiffService` OSGi em componentes). Isso não é mais necessário para o novo recurso de diferencial, pois o recurso de diferencial ocorre no lado do cliente por meio da comparação de DOM.
 
 No entanto, há várias limitações que precisam ser consideradas pelo desenvolvedor.
 
-* Este recurso usa classes CSS que não têm nomes espaçados para o Produto AEM. Se outras classes CSS personalizadas ou classes CSS de terceiros com os mesmos nomes forem incluídas na página, a exibição do diff poderá ser afetada.
+* Esse recurso usa classes CSS que não são nomeadas espaçadas para o Produto AEM. Se outras classes CSS personalizadas ou classes CSS de terceiros com os mesmos nomes forem incluídas na página, a exibição do diferencial poderá ser afetada.
 
    * `html-added`
    * `html-removed`
@@ -54,7 +54,7 @@ No entanto, há várias limitações que precisam ser consideradas pelo desenvol
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Como o diff é do lado do cliente e é executado no carregamento da página, todos os ajustes no DOM após a execução do serviço de comparação do lado do cliente não serão contabilizados. Este fato pode afetar
+* Como o diferencial é do lado do cliente e é executado no carregamento da página, os ajustes no DOM após a execução do serviço de comparação do lado do cliente não serão contabilizados. Pode afetar
 
    * Componentes que usam AJAX para incluir conteúdo
    * Aplicativos de página única
