@@ -1,43 +1,44 @@
 ---
-title: Marca d'água personalizada na pré-visualização PDF carta
-seo-title: Marca d'água personalizada na pré-visualização PDF carta
-description: Saiba como criar uma marca d'água personalizada na pré-visualização PDF carta.
-seo-description: Saiba como criar uma marca d'água personalizada na pré-visualização PDF carta.
+title: Marca d'água personalizada na visualização de PDF carta
+seo-title: Marca d'água personalizada na visualização de PDF carta
+description: Saiba como criar marca d'água personalizada na visualização de PDF de carta.
+seo-description: Saiba como criar marca d'água personalizada na visualização de PDF de carta.
 uuid: 5adfede3-9b38-4a12-bf14-6d80cfb0a05a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
+feature: Gerenciamento de correspondência
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
 
 
-# Marca d&#39;água personalizada na pré-visualização PDF da letra{#custom-watermark-in-letter-pdf-preview}
+# Marca d&#39;água personalizada na visualização em PDF carta{#custom-watermark-in-letter-pdf-preview}
 
 ## Visão geral {#overview}
 
-Na interface do usuário Criar correspondência, os usuários agentes pré-visualizações a correspondência na forma final em que é enviada para o processamento de postagens, como para envio por email ou impressão.
+Na interface Criar correspondência, os usuários do agente visualizam a correspondência na forma final em que é enviada para o processamento de postagens, como para e-mail ou impressão.
 
-Para impedir o uso não autorizado desses dados, as organizações podem impor uma marca d&#39;água no PDF da pré-visualização. A marca d&#39;água padrão é &quot;PRÉ-VISUALIZAÇÃO&quot;, que aparece no PDF.
+Para evitar o uso não autorizado desses dados, as organizações podem impor uma marca d&#39;água na visualização do PDF. A marca d&#39;água padrão é &quot;PREVIEW&quot;, que aparece no PDF.
 
-Para ativar a marca d&#39;água no PDF da pré-visualização, selecione a opção **[!UICONTROL Aplicar marca d&#39;água]** Durante a Pré-visualização em **[!UICONTROL Configurações de gerenciamento de correspondência]** em https://&#39;[server]:[port]&#39;/system/console/configMgr.
+Para ativar a marca d&#39;água no PDF de visualização, selecione a opção **[!UICONTROL Aplicar marca d&#39;água]** Durante a visualização em **[!UICONTROL Configurações de gerenciamento de correspondência]** em https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
 ![marca d&#39;água padrão](assets/default-watermark.png)
 
 Você pode usar as seguintes etapas para personalizar o texto e a aparência da marca d&#39;água:
 
-## Personalizar a marca d&#39;água na pré-visualização PDF em Criar interface do usuário de correspondência {#customizewatermark-}
+## Personalizar a marca d&#39;água na visualização de PDF em Criar interface de usuário de correspondência {#customizewatermark-}
 
 1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta apps, crie uma pasta chamada **[!UICONTROL previewwatermark]** com caminho/estrutura semelhante à pasta de marca d&#39;água da visualização na pasta libs:
+1. Na pasta apps, crie uma pasta chamada **[!UICONTROL previewwatermark]** com o caminho/estrutura semelhante à pasta de marca d&#39;água da visualização na pasta libs:
 
-   1. Clique com o botão direito do mouse na pasta **previewwatermark** no seguinte caminho e selecione **Sobreposição de nó**:
+   1. Clique com o botão direito do mouse na pasta **previewwatermark** no seguinte caminho e selecione **Overlay Node**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
@@ -45,26 +46,26 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
 
       **Caminho:** /libs/fd/cm/configFiles/previewwatermark
 
-      **Localização da sobreposição:** /apps/
+      **Local de sobreposição:** /apps/
 
-      **Tipos De Nó De Correspondência:** Marcado
+      **Corresponder Tipos De Nó:** Marcado
 
       >[!NOTE]
       >
-      >Não faça alterações na ramificação /libs. Quaisquer alterações feitas podem ser perdidas, pois essa ramificação está sujeita a alterações sempre que você:
+      >Não faça alterações na ramificação /libs. As alterações feitas podem ser perdidas, pois essa ramificação pode ser alterada sempre que você:
       >
       >    
       >    
       >    * Atualizar na sua instância
-      >    * Aplicar uma correção
+      >    * Aplicar um hotfix
       >    * Instalar um pacote de recursos
 
 
-   1. Clique em **OK** e, em seguida, clique em **Salvar tudo**. A pasta **[!UICONTROL previewwatermark]** é criada no caminho especificado.
+   1. Clique em **OK** e em **Salvar tudo**. A pasta **[!UICONTROL previewwatermark]** é criada no caminho especificado.
 
 
 
-1. Copie e cole o arquivo dx da pasta &quot;/libs/fd/cm/configFiles/previewwatermark&quot; para a pasta &quot;/apps/fd/cm/configFiles/previewwatermark&quot; e clique em **[!UICONTROL Salvar tudo]**.
+1. Copie e cole o arquivo ddx da pasta &quot;/libs/fd/cm/configFiles/previewwatermark&quot; para a pasta &quot;/apps/fd/cm/configFiles/previewmark&quot; e clique em **[!UICONTROL Salvar tudo]**.
 1. Faça as alterações desejadas no arquivo ddx em /apps/fd/cm/configFiles/previewwatermark/.
 
    ```xml
