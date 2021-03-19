@@ -1,17 +1,18 @@
 ---
 title: APIs para trabalhar com formulários enviados no portal de formulários
 seo-title: APIs para trabalhar com formulários enviados no portal de formulários
-description: A AEM Forms fornece APIs que você pode usar para query e executar ações em dados de formulários enviados no portal de formulários.
-seo-description: A AEM Forms fornece APIs que você pode usar para query e executar ações em dados de formulários enviados no portal de formulários.
+description: O AEM Forms fornece APIs que você pode usar para consultar e realizar ações nos dados de formulários enviados no portal de formulários.
+seo-description: O AEM Forms fornece APIs que você pode usar para consultar e realizar ações nos dados de formulários enviados no portal de formulários.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
+feature: Portal do Forms
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '572'
 ht-degree: 7%
 
 ---
@@ -19,11 +20,11 @@ ht-degree: 7%
 
 # APIs para trabalhar com formulários enviados no portal de formulários {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-A AEM Forms fornece APIs que podem ser usadas para o query de dados de formulários enviados pelo portal de formulários. Além disso, você pode publicar comentários ou atualizar as propriedades de formulários enviados usando as APIs explicadas neste documento.
+O AEM Forms fornece APIs que podem ser usadas para consultar dados de formulários enviados pelo portal de formulários. Além disso, você pode postar comentários ou atualizar propriedades de formulários enviados usando as APIs explicadas neste documento.
 
 >[!NOTE]
 >
->Os usuários que chamarão as APIs devem ser adicionados ao grupo de revisores, conforme descrito em [Associando os revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
+>Os usuários que chamarão as APIs devem ser adicionados ao grupo de revisores, conforme descrito em [Associando revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -47,7 +48,7 @@ O objeto response contém uma matriz JSON que inclui nomes de formulários e seu
 
 ### Exemplo {#example}
 
-**URL de solicitação**
+**URL da solicitação**
 
 ```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview
@@ -87,15 +88,15 @@ Especifique os seguintes parâmetros no URL da solicitação:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (opcional)</td>
-   <td>Especifica a propriedade para classificar os resultados. O valor padrão é <strong>jcr:lastModified</strong>, que classifica os resultados com base na última hora modificada.</td>
+   <td>Especifica a propriedade para classificar resultados. O valor padrão é <strong>jcr:lastModified</strong>, que classifica os resultados com base no último horário modificado.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (opcional)</td>
-   <td>Especifica a ordem para classificar os resultados. O valor padrão é <strong>desc</strong>, que classifica os resultados em ordem decrescente. Você pode especificar <code>asc</code> para classificar os resultados em ordem crescente.</td>
+   <td>Especifica a ordem para classificar resultados. O valor padrão é <strong>desc</strong>, que classifica os resultados em ordem decrescente. Você pode especificar <code>asc</code> para classificar os resultados em ordem crescente.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (opcional)</td>
-   <td>Especifica uma lista separada por vírgulas das propriedades do formulário a ser incluída nos resultados. As propriedades padrão são:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>Especifica uma lista separada por vírgulas de propriedades de formulário a serem incluídas nos resultados. As propriedades padrão são:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (opcional)</td>
@@ -117,7 +118,7 @@ O objeto response contém uma matriz JSON que inclui detalhes dos formulários e
 
 ### Exemplo {#example-1}
 
-**URL de solicitação**
+**URL da solicitação**
 
 ```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSubmissions&formPath=/content/dam/formsanddocuments/forms-review/form2
@@ -140,7 +141,7 @@ Especifique os seguintes parâmetros no URL da solicitação:
 | Parâmetro | Descrição |
 |---|---|
 | `submitID` | Especifica a ID de metadados associada a uma instância de envio. |
-| `Comment` | Especifica o texto do comentário a ser adicionado à instância de envio especificada. |
+| `Comment` | Especifica o texto para comentário a ser adicionado à instância de envio especificada. |
 
 ### Resposta {#response-2}
 
@@ -148,7 +149,7 @@ Retorna uma ID de comentário sobre a postagem bem-sucedida de um comentário.
 
 ### Exemplo {#example-2}
 
-**URL de solicitação**
+**URL da solicitação**
 
 ```http
 https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
@@ -186,7 +187,7 @@ O objeto response contém uma matriz JSON que inclui todos os comentários assoc
 
 ### Exemplo {#example-3}
 
-**URL de solicitação**
+**URL da solicitação**
 
 ```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
@@ -218,7 +219,7 @@ Retorna um objeto JSON com informações sobre a atualização publicada.
 
 ### Exemplo {#example-4}
 
-**URL de solicitação**
+**URL da solicitação**
 
 ```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
