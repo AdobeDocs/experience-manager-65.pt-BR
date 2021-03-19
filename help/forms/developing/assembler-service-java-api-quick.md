@@ -1,57 +1,58 @@
 ---
-title: QuickStart(SOAP) da API Java do Serviço de Assembler
-seo-title: QuickStart(SOAP) da API Java do Serviço de Assembler
-description: QuickStart(SOAP) da API Java do Serviço de Assembler
+title: Início rápido da API Java do Assembler Service (SOAP)
+seo-title: Início rápido da API Java do Assembler Service (SOAP)
+description: Início rápido da API Java do Assembler Service (SOAP)
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
+role: Desenvolvedor
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
 
 
-# QuickStart(SOAP) da API Java do Serviço de Assembler {#assembler-service-java-api-quickstart-soap}
+# Início rápido da API Java do Assembler Service (SOAP) {#assembler-service-java-api-quickstart-soap}
 
-O SOAP (Java API Quick Start) está disponível para o serviço Assembler
+O Java API Quick Start (SOAP) está disponível para o serviço Assembler
 
-[Start rápido (modo SOAP): Montagem de um documento PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de um documento PDF usando a API do Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
-[Start rápido (modo SOAP): Desmontagem de um documento PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Desmontar um documento PDF usando a API do Java](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
-[Start rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API do Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-[Start rápido (modo SOAP): Montagem de um documento PDF com a numeração de datas usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de um documento PDF com numeração de barras usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[Start rápido (modo SOAP): Montagem de um documento PDF não interativo usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de um documento PDF não interativo usando a API do Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
-[Start rápido (modo SOAP): Determinar se um documento é compatível com PDF/A usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+[Início rápido (modo SOAP): Determinar se um documento é compatível com PDF/A usando a API do Java](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
-[Start rápido (modo SOAP): Validação de documentos DDX usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
+[Início rápido (modo SOAP): Validação de documentos DDX usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
-[Start rápido (modo SOAP): Montagem de documentos PDF com marcadores usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de documentos PDF com marcadores usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
-[Start rápido (modo SOAP): Criação dinâmica de um documento DX usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[Início rápido (modo SOAP): Criação dinâmica de um documento DDX usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Start rápido (modo SOAP): Montagem de Portfolio PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de Portfolio de PDF usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
-[Start rápido (modo SOAP): Montagem de vários fragmentos XDP usando a API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Início rápido (modo SOAP): Montagem de vários fragmentos XDP usando a API do Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
+As operações do AEM Forms podem ser executadas usando a API altamente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O Start rápido localizado em Programação com a AEM Forms é baseado no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>O Início rápido localizado em Programação com o AEM Forms é baseado no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração de propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Start rápido (modo SOAP): Montagem de um documento PDF usando a API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de um documento PDF usando a API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir mescla dois documentos de origem de PDF chamados *map.pdf* e *direcçõespdf* em um único documento PDF. O nome do documento PDF único é *AssemblerResultPDF.pdf*. O nome do documento DDX é *shell.xml*. (Consulte [Montagem Programática de Documentos PDF](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+O exemplo de código Java a seguir mescla dois documentos de origem do PDF chamados *map.pdf* e *Instruções.pdf* em um único documento PDF. O nome do documento PDF único é *AssemblerResultPDF.pdf*. O nome do documento DDX é *shell.xml*. (Consulte [Montagem programática de documentos PDF](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 ```java
  /*
@@ -193,9 +194,9 @@ O exemplo de código Java a seguir mescla dois documentos de origem de PDF chama
  }
 ```
 
-## Start rápido (modo SOAP): Desmontagem de um documento PDF usando a API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): Desmontar um documento PDF usando a API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir desmonta um documento PDF chamado *AssemblerResultPDF.pdf*. Observe que o nome do documento DDX é *shell_disassemble.xml*. Cada documento PDF desmontado é chamado de `ResultPDF[Number].pdf`. Ou seja, o primeiro documento PDF desmontado é chamado de *ResultPDF1.pdf.* Para obter informações sobre o documento  *shell_disassemble.* xmlDX usado neste exemplo de código, consulte Desmontagem  [Programática de Documentos](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents) PDF.
+O seguinte exemplo de código Java desmonta um documento PDF chamado *AssemblerResultPDF.pdf*. Observe que o nome do documento DDX é *shell_disassemble.xml*. Cada documento PDF desmontado é nomeado como `ResultPDF[Number].pdf`. Ou seja, o primeiro documento PDF desmontado é chamado de *ResultPDF1.pdf.* Para obter informações sobre o documento  *shell_disassemble.* xmlDX usado neste exemplo de código, consulte Desmontar documentos PDF  [programaticamente](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```java
  /*
@@ -332,9 +333,9 @@ O exemplo de código Java a seguir desmonta um documento PDF chamado *AssemblerR
  }
 ```
 
-## Start rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir monta um documento PDF criptografado por senha. O documento PDF não protegido é chamado *Loan.pdf*. Observe que o nome do documento DDX é *shell_Encrypt.xml*. O documento PDF criptografado é chamado *AssemblerEncryptedPDF.pdf*. (Consulte [Montagem de Documentos PDF criptografados](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents).)
+O exemplo de código Java a seguir monta um documento PDF criptografado por senha. O documento PDF não seguro é chamado de *Loan.pdf*. Observe que o nome do documento DDX é *shell_Encrypt.xml*. O documento PDF criptografado é chamado de *AssemblerEncryptedPDF.pdf*. (Consulte [Montagem de documentos PDF criptografados](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents).)
 
 ```java
  /*
@@ -455,9 +456,9 @@ O exemplo de código Java a seguir monta um documento PDF criptografado por senh
  }
 ```
 
-## Start rápido (modo SOAP): Montagem de um documento PDF com a numeração de datas usando a API Java {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de um documento PDF com numeração de barras usando a API Java {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
 
-O exemplo de código Java a seguir monta um documento PDF com identificadores de página exclusivos (numeração de bates). Observe que o nome do documento DDX é *shell_Bates.xml*. O documento PDF que é retornado do serviço Assembler é salvo como um arquivo PDF chamado *AssemblerResultBatesPDF.pdf*. (Consulte [Montagem de Documentos Usando Numeração de Bates](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
+O exemplo de código Java a seguir monta um documento PDF com identificadores de página exclusivos (numeração de barras). Observe que o nome do documento DDX é *shell_Bates.xml*. O documento PDF retornado do serviço Assembler é salvo como um arquivo PDF chamado *AssemblerResultBatesPDF.pdf*. (Consulte [Montando Documentos Usando Numeração de Bates](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
 
 ```java
  /*
@@ -613,9 +614,9 @@ O exemplo de código Java a seguir monta um documento PDF com identificadores de
  }
 ```
 
-## Start rápido (modo SOAP): Montagem de um documento PDF não interativo usando a API Java {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de um documento PDF não interativo usando a API Java {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir monta um documento PDF não interativo. O documento PDF interativo passado para o serviço Assembler é chamado *Loan.pdf*. Observe que o nome do documento DDX é *shell_XFA.xml*. O documento PDF não interativo é salvo como um arquivo PDF chamado *AssemblyNonInterativePDF.pdf*. (Consulte [Montagem de Documentos PDF não interativos](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
+O exemplo de código Java a seguir monta um documento PDF não interativo. O documento PDF interativo passado para o serviço Assembler é chamado *Loan.pdf*. Observe que o nome do documento DDX é *shell_XFA.xml*. O documento PDF não interativo é salvo como um arquivo PDF chamado *AssembleNonInterativePDF.pdf*. (Consulte [Assembling Non-Interative PDF Documents](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
 
 ```java
  /*
@@ -737,9 +738,9 @@ O exemplo de código Java a seguir monta um documento PDF não interativo. O doc
  
 ```
 
-## Start rápido (modo SOAP): Determinar se um documento é compatível com PDF/A usando a API Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+## Início rápido (modo SOAP): Determinar se um documento é compatível com PDF/A usando a API Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-O exemplo de código Java a seguir determina se o documento PDF de entrada é compatível com PDF/A. O documento PDF de entrada passado para o serviço Assembler é chamado *Loan.pdf*. O nome do documento DDX é shell_PDFA.xml. O documento XML retornado pelo serviço Assembler e especifica se o documento PDF de entrada é compatível com PDF/A é salvo como um arquivo XML chamado result.xml. Para obter informações sobre o Documentos DDX *shell_PDFA.xml* usado neste exemplo de código, consulte [Determinando se os documentos são compatíveis com PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+O exemplo de código Java a seguir determina se o documento PDF de entrada é compatível com PDF/A. O documento PDF de entrada passado para o serviço Assembler é chamado *Loan.pdf*. O nome do documento DDX é shell_PDFA.xml. O documento XML retornado pelo serviço Assembler e especifica se o documento PDF de entrada é compatível com PDF/A é salvo como um arquivo XML chamado result.xml. Para obter informações sobre o documento DDX *shell_PDFA.xml* usado neste exemplo de código, consulte [Determinando se os documentos são compatíveis com PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -883,7 +884,7 @@ O exemplo de código Java a seguir determina se o documento PDF de entrada é co
  }
 ```
 
-## Start rápido (modo SOAP): Validação de documentos DDX usando a API Java {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
+## Início rápido (modo SOAP): Validação de documentos DDX usando a API Java {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
 
 O exemplo de código Java a seguir valida um documento DDX com base em um arquivo chamado *bookmarkDDX.xml*. (Consulte [Validando Documentos DDX](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents).)
 
@@ -1014,9 +1015,9 @@ O exemplo de código Java a seguir valida um documento DDX com base em um arquiv
  }
 ```
 
-## Start rápido (modo SOAP): Montagem de documentos PDF com marcadores usando a API Java {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de documentos PDF com marcadores usando a API Java {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
 
-O exemplo de código Java a seguir monta um documento PDF que contém marcadores. O nome do documento DDX é *bookmarkDDX.xml*. O nome do documento XML de marcador que descreve os marcadores a serem adicionados ao documento PDF é bookmarks.xml. O documento PDF resultante é salvo como um arquivo PDF chamado AssemblerResultBookmarks.pdf. (Consulte [Montagem de Documentos PDF com marcadores](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks).)
+O exemplo de código Java a seguir monta um documento PDF que contém marcadores. O nome do documento DDX é *bookmarkDDX.xml*. O nome do documento XML do marcador que descreve os marcadores a serem adicionados ao documento PDF é bookmarks.xml. O documento PDF resultante é salvo como um arquivo PDF chamado AssemblerResultBookmarks.pdf. (Consulte [Montagem de documentos PDF com marcadores](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks).)
 
 ```java
  /*
@@ -1184,14 +1185,14 @@ O exemplo de código Java a seguir monta um documento PDF que contém marcadores
  
 ```
 
-## Start rápido (modo SOAP): Criação dinâmica de um documento DX usando a API Java {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
+## Início rápido (modo SOAP): Criação dinâmica de um documento DDX usando a API Java {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
-O exemplo de código Java a seguir cria dinamicamente um documento DDX que desmonta um documento PDF. Um novo documento PDF é criado para cada marcador de nível 1 no documento PDF de entrada. Este exemplo de código contém dois métodos definidos pelo usuário:
+O seguinte exemplo de código Java cria dinamicamente um documento DDX que desmonta um documento PDF. Um novo documento PDF é criado para cada marcador de nível 1 no documento PDF de entrada. Este exemplo de código contém dois métodos definidos pelo usuário:
 
-* `createDDX`: Cria um  `org.w3c.dom.Document` objeto que representa o documento DDX enviado ao serviço Assembler. Esse método definido pelo usuário retorna o objeto `org.w3c.dom.Document`.
+* `createDDX`: Cria um  `org.w3c.dom.Document` objeto que representa o documento DDX enviado para o serviço Assembler. Esse método definido pelo usuário retorna o objeto `org.w3c.dom.Document`.
 * `convertDDX`: Converte um  `org.w3c.dom.Document` objeto em um  `com.adobe.idp.Document` objeto. Este método aceita um objeto `org.w3c.dom.Document` como um parâmetro de entrada e retorna um objeto `com.adobe.idp.Document`.
 
-   Ambos os métodos são chamados neste start rápido. (Consulte [Criando Documentos DDX Dinamicamente](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
+   Ambos os métodos são invocados nesta inicialização rápida. (Consulte [Criação Dinâmica de Documentos DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
 &quot;
 
 ```java
@@ -1381,9 +1382,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Start rápido (modo SOAP): Montagem de Portfolio PDF usando a API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de Portfolio de PDF usando a API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-O exemplo de código Java a seguir cria um portfólio PDF. O portfólio PDF é salvo como um arquivo PDF chamado *AssemblerResultPortfolio.pdf*. (Consulte [Montagem de Portfolio PDF](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
+O exemplo de código Java a seguir cria um portfólio de PDFs. O portfólio PDF é salvo como um arquivo PDF chamado *AssemblerResultPortfolio.pdf*. (Consulte [Montagem de Portfolio PDF](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
 
 ```java
  /*
@@ -1532,9 +1533,9 @@ O exemplo de código Java a seguir cria um portfólio PDF. O portfólio PDF é s
  
 ```
 
-## Start rápido (modo SOAP): Montagem de vários fragmentos XDP usando a API Java {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
+## Início rápido (modo SOAP): Montagem de vários fragmentos XDP usando a API Java {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
 
-O exemplo de código Java a seguir monta fragmentos XDP baseados nos seguintes arquivos XDP: *tuc018_template_flow.xdp*, *tuc018_contact.xdp* e* tuc018_paciente.xdp*. O documento XDP montado que contém todos os fragmentos é salvo como um arquivo XDP chamado *AssemblerResultXDP.xdp*. (Consulte [Montagem de Vários Fragmentos XDP](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+O seguinte exemplo de código Java monta fragmentos XDP que são baseados nos seguintes arquivos XDP: *tuc018_template_flowed.xdp*, *tuc018_contact.xdp*, e* tuc018_paciente.xdp*. O documento XDP montado que contém todos os fragmentos é salvo como um arquivo XDP chamado *AssemblerResultXDP.xdp*. (Consulte [Montagem de vários fragmentos XDP](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 ```java
  /*
@@ -1685,13 +1686,13 @@ O exemplo de código Java a seguir monta fragmentos XDP baseados nos seguintes a
  }
 ```
 
-## Start rápido (modo SOAP): Redação de um documento PDF usando a API Java {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): Redação de um documento PDF usando a API Java {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
 O exemplo de código a seguir reage um documento PDF usando `PDFUtility`.
 
 >[!NOTE]
 >
->`PDFUtility` pode redigir somente os PDFs marcados para redação usando o Acrobat.
+>`PDFUtility` O pode reproduzir somente os PDFs marcados para redefinição usando o Acrobat.
 
 ```java
 /*
