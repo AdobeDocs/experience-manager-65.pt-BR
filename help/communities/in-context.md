@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 917fceffb58883df83e96f60da4769046a18f3c0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '797'
 ht-degree: 1%
 
 ---
@@ -20,9 +21,9 @@ ht-degree: 1%
 
 # Moderação no contexto {#in-context-moderation}
 
-No AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
+Para o AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada, onde o conteúdo da comunidade foi publicado.
 
-Ao usar um [console de moderação](moderation.md), as informações exibidas para o conteúdo incluem um link para a página publicada para permitir o acesso a ações de moderação adicionais disponíveis ao moderar no contexto.
+Ao usar um [console de moderação](moderation.md), as informações exibidas para o conteúdo incluem um link para a página publicada para permitir o acesso a ações adicionais de moderação disponíveis ao moderar no contexto.
 
 ## Ações de moderação {#moderation-actions}
 
@@ -30,74 +31,74 @@ Visite a visão geral da moderação para obter uma descrição das [ações de 
 
 ## Interface do usuário de moderação {#moderation-ui}
 
-A interface do usuário apresentada ao moderador na instância de publicação está contida na caixa de diálogo para publicar e gerenciar conteúdo gerado pelo usuário (UGC). Os elementos da interface são determinados pelo status do visitante do site - se eles são...
+A interface do usuário apresentada ao moderador na instância de publicação está contida na caixa de diálogo para publicar e gerenciar conteúdo gerado pelo usuário (UGC). Os elementos da interface do usuário são determinados pelo status do visitante do site - sejam eles...
 
 1. O membro que postou o conteúdo.
 1. Um moderador de membro confiável.
 1. Um administrador.
-1. Conectado, mas nenhum administrador, moderador ou autor do conteúdo.
+1. Conectado, mas não é um administrador, moderador ou autor do conteúdo.
 1. Não conectado.
 
 ## Exemplo {#example}
 
-Usando o site [Engage](http://localhost:4503/content/sites/engage/en.html) criado quando [Introdução ao AEM Communities](getting-started.md), é possível configurar rapidamente um thread em um fórum no qual você pode experimentar várias atividades de moderação no ambiente de publicação, como visto abaixo.
+Usando o site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) criado ao [Introdução ao AEM Communities](getting-started.md), é possível configurar rapidamente um thread em um fórum no qual você pode experimentar várias atividades de moderação no ambiente de publicação, conforme mostrado abaixo.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) foi identificado como um membro confiável da comunidade ao adicioná-lo ao grupo de moderadores engajados pela comunidade ao criar o site.
+Aaron McDonald (aaron.mcdonald@mailinator.com) foi identificado como um membro confiável da comunidade ao adicioná-lo ao grupo de moderadores de engajamento da comunidade ao criar o site.
 
 Rebekah Larsen (rebekah.larsen@trashymail.com) pode ser adicionado como membro do grupo de membros engajados da comunidade usando o [console Membros](members.md).
 
 Para obter mais informações sobre grupos de usuários da comunidade, visite [Gerenciar usuários e grupos de usuários](users.md).
 
-### Criar as publicações do fórum {#create-the-forum-posts}
+### Crie as publicações do fórum {#create-the-forum-posts}
 
 * Faça logon como Rebekah Larsen (rebekah.larsen@trashymail.com)
 
-   * Selecionar fórum
-   * Selecionar nova publicação
-   * Insira o Assunto
+   * Selecionar Fórum
+   * Selecionar Nova Publicação
+   * Inserir o Assunto
 
-      Quando mudar o néctar no alimentador de aves
+      Quando mudar o néctar no alimentador de aves de barriga
 
-   * Insira o texto do corpo
+   * Inserir o texto do corpo
 
-      Não tenho tido muito sucesso quando penduro um alimentador de beija-flores todos os anos. Parece que chegam um dia ou dois, então é isso. Eu mudo uma vez por semana é muito tempo? Eu preciso mudar isso mais cedo?
+      Não tenho tido muito sucesso quando penduro um alimentador de beija-flor todos os anos. Parece que chegam um ou dois dias depois é isso. Eu mudo uma vez por semana é muito tempo? Preciso mudar isso mais cedo?
 
    * Selecionar publicação
-   * Selecione Desconectar
+   * Selecione Fazer logoff
 
 * Faça logon como Aaron McDonald (aaron.mcdonald@mailinator.com)
 
-   * Selecionar fórum
+   * Selecionar Fórum
    * Para o tópico do Hummingbird, selecione Leia mais
-   * Digite o comentário para a resposta da postagem
+   * Inserir o comentário para Resposta da postagem
 
-      Eu troco o meu uma vez por semana e os recebo de maio a outubro.
+      Eu troco os meus uma vez por semana e os recebo de maio a outubro.
 
    * Selecionar resposta
-   * Selecione Desconectar
+   * Selecione Fazer logoff
 
 * Faça logon como Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
-   * Selecionar fórum
+   * Selecionar Fórum
    * Para o tópico do Hummingbird, selecione Leia mais
-   * Digite o comentário para a resposta da postagem
+   * Inserir o comentário para Resposta da postagem
 
       Eu vendo néctar e alimentadores - visite https://my.viral.url/
 
    * Selecionar resposta
-   * Selecione Desconectar
+   * Selecione Fazer logoff
 
-### Visitante de site anônimo (#5) {#anonymous-site-visitor}
+### Visitante Anônimo do Site (#5) {#anonymous-site-visitor}
 
-Veja a seguir uma visualização do fórum visto por um visitante do site que não está conectado (5).
+A seguir, uma exibição do fórum visto por um visitante do site que não está conectado (5).
 
-Um visitante de site anônimo só pode visualização no fórum, mas não pode publicar nenhum conteúdo nem executar ações de moderação.
+Um visitante anônimo do site só pode visualizar o fórum, mas não pode publicar nenhum conteúdo nem executar ações de moderação.
 
-![community-forum-visitante](assets/community-forum-visitor.png)
+![comunidade-fórum-visitor](assets/community-forum-visitor.png)
 
 ### Novo Membro (#4) {#new-member}
 
-No autor, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dodgit.com) como um novo membro do grupo de membros engajados da comunidade usando o [console Membros](members.md) e, em seguida, faça logout.
+Ao criar, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dodgit.com) como um novo membro do grupo de membros engajados da comunidade usando o [console Membros](members.md) e, em seguida, faça logoff.
 
 Ao publicar, faça logon como Boyd Larsen e acesse o thread selecionando `Forum` e `Read more` para a publicação de beija-flor.
 
@@ -105,38 +106,38 @@ Aviso:
 
 * Boyd não participou do fórum.
 * Boyd não pode excluir nada.
-* Boyd está conectado e pode responder ou sinalizar conteúdo.
+* O Boyd está conectado e pode responder ou sinalizar conteúdo.
 
 Faça com que Boyd selecione Sinalizar para sinalizar o conteúdo publicado por Andrew.
 
 Fazer logoff
 
-![membro do fórum comunitário](assets/community-forum-member.png)
+![comunidade-fórum-membro](assets/community-forum-member.png)
 
 ### Administrador (#3) {#administrator}
 
-Faça logon como um administrador (admin) e acesse o thread selecionando Fórum e, em seguida, Leia mais para uma publicação.
+Faça logon como administrador (administrador) e acesse o thread selecionando Fórum e Leia mais para uma publicação.
 
 Aviso:
 
-* O administrador pode sinalizar, excluir, editar, negar, recortar, fechar, fixar, recurso.
+* O administrador pode Sinalizar, Excluir, Editar, Negar, Recortar, Fechar, Fixar, Recurso.
 * O administrador pode selecionar Administração para acessar o console de moderação.
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
 Selecione o item de menu Administração para acessar o [console de moderação](moderation.md) do ambiente de publicação.
 
-Observe que, para um administrador, todo o conteúdo moderável é visível, não apenas o conteúdo do site da comunidade do Geometrixx Engage.
+Observe que, para um administrador, todo o conteúdo moderável é visível, não apenas o conteúdo do site da comunidade Geometrixx Engage.
 
-O filtro de pesquisa é um painel lateral que alterna entre aberto e fechado.
+O filtro de pesquisa é um painel lateral que alterna para aberto ou fechado.
 
 Fazer logoff.
 
 ![moderation-console-publish](assets/moderation-console-publish.png)
 
-### Moderador da comunidade (#2) {#community-moderator}
+### Moderador de comunidade (#2) {#community-moderator}
 
-Faça logon como Aaron McDonald (aaron.mcdonal@mailinator.com), um moderador da comunidade, e acesse o thread selecionando Fórum e, em seguida, Leia mais para obter a publicação do beija-flor.
+Faça logon como Aaron McDonald (aaron.mcdonal@mailinator.com), um moderador da comunidade e acesse o thread selecionando Forum e, em seguida, Leia mais para a publicação de beija-flor.
 
 Aviso:
 
@@ -145,26 +146,26 @@ Aviso:
 * Aaron pode cortar o tópico do fórum para movê-lo para outro fórum para o qual ele modera.
 * Aaron pode selecionar Administração para acessar o console de moderação.
 
-![community-forum-moderator](assets/community-forum-moderator.png)
+![comunidade-fórum-moderator](assets/community-forum-moderator.png)
 
 Selecione o item de menu Administração para acessar o [console de moderação](moderation.md) do ambiente de publicação.
 
 Observe que, para um moderador da comunidade, somente o conteúdo moderável do site da comunidade do Geometrixx Engage está visível.
 
-Observe que o moderador da comunidade tem as mesmas opções que o administrador (a imagem está na barra lateral de pesquisa alternada fechada), mas não há acesso a outros consoles AEM.
+Observe que o moderador da comunidade tem as mesmas opções que o administrador (a imagem está com a barra lateral de pesquisa alternada fechada), mas não tem acesso a outros consoles de AEM.
 
 Fazer logoff.
 
-![acesso de moderador](assets/moderator-access.png)
+![acesso do moderador](assets/moderator-access.png)
 
 ### Autor de conteúdo (#1) {#content-author}
 
-Faça logon como Rebekah Larsen (rebekah.larsen@mailinator.com), um membro da comunidade que iniciou o processo, e acesse o thread selecionando Fórum e, em seguida, Leia mais para a publicação de beija-flor.
+Faça logon como Rebekah Larsen (rebekah.larsen@mailinator.com), um membro da comunidade que iniciou o thread, e acesse o thread selecionando Forum e, em seguida, Leia mais para a publicação de beija-flor.
 
 Aviso:
 
-* Rebekah pode excluir ou editar sua própria postagem.
-* Rebekah também pode responder ou sinalizar outro conteúdo.
+* Rebekah pode excluir ou editar sua própria publicação.
+* Rebekah também pode Responder ou Sinalizar outro conteúdo.
 * Rebekah não pode acessar o console de moderação.
 
 ![community-forum-author](assets/community-forum-author.png)
