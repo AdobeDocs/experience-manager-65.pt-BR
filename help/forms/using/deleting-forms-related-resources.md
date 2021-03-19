@@ -1,38 +1,39 @@
 ---
-title: Excluindo formulários e recursos relacionados
-seo-title: Excluindo formulários e recursos relacionados
-description: Como excluir um formulário ou ativo no AEM Forms e o impacto nos ativos referenciados e referenciadores e formulários XFA.
-seo-description: Como excluir um formulário ou ativo no AEM Forms e o impacto nos ativos referenciados e referenciadores e formulários XFA.
+title: Exclusão de formulários e recursos relacionados
+seo-title: Exclusão de formulários e recursos relacionados
+description: Como excluir um formulário ou ativo no AEM Forms e o impacto nos ativos referenciados e de referência e formulários XFA.
+seo-description: Como excluir um formulário ou ativo no AEM Forms e o impacto nos ativos referenciados e de referência e formulários XFA.
 uuid: df522b87-59d8-4678-922d-c9aab82b1381
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 
-# Excluindo formulários e recursos relacionados {#deleting-forms-and-related-resources}
+# Exclusão de formulários e recursos relacionados {#deleting-forms-and-related-resources}
 
 É possível excluir os formulários e ativos para remover esses ativos do repositório. A operação de exclusão funciona em todos os tipos de ativos e pastas.
 
-Se você excluir um ativo da instância Autor, o ativo também será excluído da instância Publicar. O servidor AEM Forms consiste em instâncias de autor e publicação. A instância Autor destina-se a criar e gerenciar ativos e recursos de formulários. A instância Publicar contém os ativos de formulários publicados e os recursos relacionados que estão disponíveis para usuários finais.
+Se você excluir um ativo da instância do autor, o ativo também é excluído da instância de publicação. O servidor do AEM Forms consiste em instâncias de Autor e Publicação. A instância Autor é para criar e gerenciar ativos e recursos de formulários. A instância de publicação contém os ativos de formulários publicados e os recursos relacionados disponíveis para os usuários finais.
 
 ## Como excluir um formulário {#how-to-delete-a-form}
 
 1. Faça logon na interface do usuário do AEM Forms acessando `https://[hostname]:'port'/aem/forms.html.`
-1. Navegue até o formulário que deseja excluir e selecione-o. Clique em Excluir ![aem6forms_delete2](assets/aem6forms_delete2.png) da barra de ferramentas e confirme a operação de exclusão.
+1. Navegue até o formulário que deseja excluir e selecione-o. Clique em Excluir ![aem6forms_delete2](assets/aem6forms_delete2.png) na barra de ferramentas e confirme a operação de exclusão.
 
    >[!NOTE]
    >
-   >Somente um formulário pode ser excluído por vez. Exclua vários formulários individualmente ou exclua a pasta pai.
+   >Somente um formulário pode ser excluído de cada vez. Exclua vários formulários individualmente ou exclua a pasta principal.
 
-1. Antes de excluir um ativo, a AEM Forms verifica se há referências e solicita uma confirmação explícita. Clique em Forçar exclusão se desejar excluir o ativo independentemente do status do relacionamento.
+1. Antes de excluir um ativo, o AEM Forms verifica referências e solicita uma confirmação explícita. Clique em Forçar exclusão se desejar excluir o ativo independentemente do status do relacionamento.
 
    >[!NOTE]
    >
@@ -40,12 +41,12 @@ Se você excluir um ativo da instância Autor, o ativo também será excluído d
 
    >[!NOTE]
    >
-   >Se o ativo selecionado for uma pasta e contiver esse ativo em sua hierarquia, exclua outros ativos individualmente ou exclua a pasta inteira.
+   >Se o ativo selecionado for uma pasta e contiver esse ativo na hierarquia, exclua outros ativos individualmente ou exclua a pasta inteira.
 
 ## Impacto da exclusão de um formulário XFA referenciado {#impact-of-deleting-a-referenced-xfa-form}
 
-No AEM Forms, um modelo de formulário XFA pode ser referenciado por um formulário adaptável ou outro modelo de formulário XFA. Além disso, um modelo pode fazer referência a um recurso ou outro modelo XFA.
+No AEM Forms, um template de formulário XFA pode ser referenciado por um formulário adaptável ou outro template de formulário XFA. Além disso, um template pode se referir a um recurso ou outro template XFA.
 
-Não é aconselhável excluir um formulário XFA que esteja sendo referenciado por um formulário adaptável, pois ele pode corromper o formulário adaptável. Quando um formulário adaptável se refere a um formulário XFA, seus campos são vinculados. Após a exclusão do XFA, o formulário adaptável não pode sincronizar seus campos com os campos XFA e exibe uma mensagem de erro para esses campos. Para saber mais sobre o impacto da exclusão XFA referenciada e sobre AFs sujos, consulte [Atualização de formulários XFA referenciados](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
+Não é aconselhável excluir um formulário XFA que está sendo referenciado por um formulário adaptável, pois ele pode corromper o formulário adaptável. Quando um formulário adaptável se refere a um formulário XFA, seus campos são vinculados. Após a exclusão do XFA, o formulário adaptável não poderá sincronizar seus campos com os campos XFA e exibirá uma mensagem de erro para esses campos. Para saber mais sobre o impacto da exclusão de XFA referenciada e sobre AFs sujos, consulte [Atualização de formulários XFA referenciados](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
 
-Para excluir um formulário XFA, atualize o formulário adaptável e remova os vínculos com os campos XFA.
+Para excluir esse formulário XFA, atualize o formulário adaptável e remova os vínculos com os campos XFA.
