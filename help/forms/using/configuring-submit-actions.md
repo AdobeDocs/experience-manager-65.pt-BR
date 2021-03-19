@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: 82fcc7ea1029f069aff95f50b3eb1a1581ec5c95
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1514'
 ht-degree: 1%
 
 ---
@@ -33,10 +34,10 @@ As ações de envio padrão disponíveis com formulários adaptáveis são:
 * Enviar para ponto de extremidade REST
 * Enviar e-mail
 * Enviar PDF por email
-* Chamar um fluxo de trabalho de formulários
+* Chamar um Forms Workflow
 * Enviar usando modelo de dados do formulário
-* Ação de envio do portal de formulários
-* Chamar um fluxo de trabalho do AEM
+* Ação de envio do portal do Forms
+* Chamar um fluxo de trabalho AEM
 
 >[!NOTE]
 >
@@ -61,7 +62,7 @@ A opção de envio **Enviar para o endpoint REST** passa os dados preenchidos no
 
 Conforme mostrado na imagem abaixo, `param1` e `param2` são passados como parâmetros com valores copiados dos campos **caixa de texto** e **caixa numérica** para a próxima ação.
 
-Você também pode **Habilitar solicitação POST** e fornecer um URL para postar a solicitação. Para enviar dados para o servidor do Experience Manager que hospeda o formulário, use um caminho relativo correspondente ao caminho raiz do servidor do Experience Manager. Por exemplo, /content/forms/af/SampleForm.html. Para enviar dados para qualquer outro servidor, use o caminho absoluto.
+Você também pode **Ativar a solicitação do POST** e fornecer um URL para postar a solicitação. Para enviar dados para o servidor do Experience Manager que hospeda o formulário, use um caminho relativo correspondente ao caminho raiz do servidor do Experience Manager. Por exemplo, /content/forms/af/SampleForm.html. Para enviar dados para qualquer outro servidor, use o caminho absoluto.
 
 ![Configurar a ação de envio do ponto de extremidade restante](assets/action-config.png)
 
@@ -107,11 +108,11 @@ A ação de envio **Enviar PDF por email** envia um email com um PDF contendo da
 >[!NOTE]
 Essa ação de envio está disponível para formulários adaptáveis baseados em XFA e formulários de adaptação baseados em XSD que têm o modelo Documento de registro.
 
-## Chamar um fluxo de trabalho de formulários {#invoke-a-forms-workflow}
+## Chamar um Forms Workflow {#invoke-a-forms-workflow}
 
-A opção de envio **Enviar para o Forms Workflow** envia um xml de dados e anexos de arquivo (se houver) para um Adobe LiveCycle ou AEM Forms existente no processo JEE.
+A opção de envio **Enviar para Forms Workflow** envia um xml de dados e anexos de arquivo (se houver) para um LiveCycle de Adobe ou AEM Forms existente no processo JEE.
 
-Para obter informações sobre como configurar a ação de envio do fluxo de trabalho Enviar para formulários , consulte [Enviar e processar os dados do formulário usando fluxos de trabalho de formulários](../../forms/using/submit-form-data-livecycle-process.md).
+Para obter informações sobre como configurar a ação Enviar para envio por Forms Workflow, consulte [Enviar e processar os dados do formulário usando workflows de formulários](../../forms/using/submit-form-data-livecycle-process.md).
 
 ## Enviar usando modelo de dados do formulário {#submit-using-form-data-model}
 
@@ -119,19 +120,19 @@ A ação **Enviar usando o Modelo de dados de formulário** envia dados de formu
 
 Além disso, é possível enviar um anexo de formulário usando um modelo de dados de formulário e um Documento de registro (DoR) para a fonte de dados.
 
-Para obter informações sobre o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](../../forms/using/data-integration.md).
+Para obter informações sobre o modelo de dados de formulário, consulte [AEM Forms Data Integration](../../forms/using/data-integration.md).
 
-## Ação de envio do portal de formulários {#forms-portal-submit-action}
+## Ação de envio do portal do Forms {#forms-portal-submit-action}
 
-A opção **Ação de envio do portal de formulários** disponibiliza os dados do formulário por meio de um Portal de formulários AEM.
+A opção **Ação de envio do portal do Forms** disponibiliza os dados do formulário por meio de um portal do AEM Forms.
 
-Para obter mais informações sobre o Portal de formulários e a ação de enviar, consulte [Componentes de rascunhos e envios](../../forms/using/draft-submission-component.md).
+Para obter mais informações sobre o Portal do Forms e enviar a ação, consulte [Componentes de rascunhos e envios](../../forms/using/draft-submission-component.md).
 
-## Chamar um fluxo de trabalho do AEM {#invoke-an-aem-workflow}
+## Chamar um fluxo de trabalho AEM {#invoke-an-aem-workflow}
 
-A ação de envio **Invocar um fluxo de trabalho do AEM** associa um formulário adaptável a um fluxo de trabalho do AEM. Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente no nó de processamento. Além disso, ele coloca o arquivo de dados, os anexos e o documento de registro, se aplicável, no local da carga do fluxo de trabalho.
+A ação de envio **Invoke an AEM Workflow** associa um formulário adaptável a um AEM Workflow. Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente no nó de processamento. Além disso, ele coloca o arquivo de dados, os anexos e o documento de registro, se aplicável, no local da carga do fluxo de trabalho.
 
-Antes de usar a ação de envio **Invoke an AEM Workflow**, [configure as configurações do Experience Manager DS](../../forms/using/configuring-the-processing-server-url-.md). Para obter informações sobre como criar um fluxo de trabalho do AEM, consulte [Fluxos de trabalho centrados no formulário no OSGi](../../forms/using/aem-forms-workflow.md).
+Antes de usar a ação de envio **Invoke an AEM Workflow**, [configure as configurações do Experience Manager DS](../../forms/using/configuring-the-processing-server-url-.md). Para obter informações sobre como criar um Fluxo de trabalho AEM, consulte [Fluxos de trabalho centrados no formulário no OSGi](../../forms/using/aem-forms-workflow.md).
 
 ## Revalidação do lado do servidor no formulário adaptável {#server-side-revalidation-in-adaptive-form}
 
@@ -162,7 +163,7 @@ A validação do lado do servidor valida o modelo de formulário. É recomendáv
 
 ### Suporte a funções personalizadas nas expressões de validação {#supporting-custom-functions-in-validation-expressions-br}
 
-Às vezes, se houver regras de validação complexas, o script de validação exato residirá em funções personalizadas e o autor chamará essas funções personalizadas da expressão de validação de campo. Para tornar essa biblioteca de função personalizada conhecida e disponível durante a execução de validações do lado do servidor, o autor do formulário pode configurar o nome da biblioteca do cliente AEM na guia **Basic** das propriedades do Contêiner de formulário adaptável, conforme mostrado abaixo.
+Às vezes, se houver regras de validação complexas, o script de validação exato residirá em funções personalizadas e o autor chamará essas funções personalizadas da expressão de validação de campo. Para tornar essa biblioteca de função personalizada conhecida e disponível durante a execução de validações do lado do servidor, o autor do formulário pode configurar o nome AEM biblioteca do cliente na guia **Basic** das propriedades do Contêiner de formulário adaptável, conforme mostrado abaixo.
 
 ![Suporte a funções personalizadas nas expressões de validação](assets/clientlib-cat.png)
 
