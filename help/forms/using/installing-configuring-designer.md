@@ -10,11 +10,12 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 080885a4fddbbce52968d3c324d6499ff1036de2
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 48%
+source-wordcount: '214'
+ht-degree: 49%
 
 ---
 
@@ -23,13 +24,13 @@ ht-degree: 48%
 
 ## Pré-requisitos {#pre-requisites}
 
-O instalador do AEM Forms Designer requer a versão de 32 bits do [pacote de tempo de execução redistribuível do Visual C++ 2012](https://support.microsoft.com/pt-br/help/2977003/the-latest-supported-visual-c-downloads) e [pacote de tempo de execução redistribuível do Visual C++ 2013](https://support.microsoft.com/pt-br/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Certifique-se de que os pacotes de tempo de execução redistribuíveis mencionados acima estão instalados antes de iniciar a instalação.
+O instalador do AEM Forms Designer requer a versão de 32 bits do [Pacote de tempo de execução redistribuível do Visual C++ 2012](https://support.microsoft.com/pt-br/help/2977003/the-latest-supported-visual-c-downloads) e [Pacote de tempo de execução redistribuível do Visual C++ 2013](https://support.microsoft.com/pt-br/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Certifique-se de que os pacotes de tempo de execução redistribuíveis mencionados acima estão instalados antes de iniciar a instalação.
 
 ## Instalar o Designer {#install-designer}
 
 O Designer está disponível como um instalador independente e também é fornecido com o WorkBench. Se você estiver usando um instalador independente para o Designer, execute as seguintes etapas:
 
-1. Entre em contato com o suporte ao Adobe para baixar o instalador do Designer.
+1. Entre em contato com o Suporte do Adobe para baixar o instalador do Designer.
 
    >[!NOTE]
    >
