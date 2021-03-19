@@ -1,43 +1,44 @@
 ---
 title: '"Tutorial: Teste do formulário adaptável"'
 seo-title: '"Tutorial: Teste do formulário adaptável"'
-description: Use o teste automatizado para testar vários formulários adaptáveis ao mesmo tempo.
-seo-description: Use o teste automatizado para testar vários formulários adaptáveis ao mesmo tempo.
+description: Use o teste automatizado para testar vários formulários adaptáveis de uma só vez.
+seo-description: Use o teste automatizado para testar vários formulários adaptáveis de uma só vez.
 uuid: 6d182bbc-b47a-4c97-af70-c960b52fdfac
 contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 2%
+source-wordcount: '968'
+ht-degree: 3%
 
 ---
 
 
-# Tutorial: Testando o formulário adaptável {#tutorial-testing-your-adaptive-form}
+# Tutorial: Teste do formulário adaptável {#tutorial-testing-your-adaptive-form}
 
 ![](do-not-localize/10-test-your-adaptive-form.png)
 
-Este tutorial é uma etapa da série [Criar seu primeiro formulário adaptável](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso do tutorial completo.
+Este tutorial é uma etapa da série [Create Your First Adaptive Form](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso tutorial completo.
 
-Depois que o formulário adaptativo estiver pronto, é importante testar seu adaptador antes de distribuí-lo para os usuários finais. Você pode testar manualmente (teste funcional) todos os campos ou automatizar o teste do formulário adaptável. Quando você tem vários formulários adaptáveis, testar manualmente todos os campos de todos os formulários adaptativos se torna uma tarefa assustadora.
+Depois que o formulário adaptável estiver pronto, é importante testar sua capacidade adaptável antes de rolar para os usuários finais. Você pode testar manualmente (teste funcional) cada campo ou automatizar o teste do formulário adaptável. Quando você tem vários formulários adaptáveis, testar manualmente cada campo de todos os formulários adaptáveis se torna uma tarefa intimidante.
 
-AEM [!DNL Forms] fornece uma estrutura de teste, Calvin, para automatizar o teste de seus formulários adaptáveis. Usando a estrutura, você grava e executa testes de interface diretamente em um navegador da Web. A estrutura fornece APIs JavaScript para a criação de testes. O teste automatizado permite testar a experiência de preenchimento prévio de um formulário adaptável, enviar a experiência de um formulário adaptável, regras de expressão, de validações, carregamento lento e interações de UI. Este tutorial o orienta pelas etapas para criar e executar testes automatizados em um formulário adaptável. No final deste tutorial, você poderá:
+AEM [!DNL Forms] fornece uma estrutura de teste, Calvin, para automatizar o teste de seus formulários adaptáveis. Usando a estrutura , você grava e executa testes de interface do usuário diretamente em um navegador da Web. A estrutura fornece APIs JavaScript para criar testes. O teste automatizado permite testar a experiência de preenchimento prévio de um formulário adaptável, enviar experiência de um formulário adaptável, regras de expressão, de validações, carregamento lento e interações da interface do usuário. Este tutorial o orienta pelas etapas para criar e executar testes automáticos em um formulário adaptável. Ao final deste tutorial, você poderá:
 
 * [Criar um conjunto de testes para seu formulário adaptável](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
-* [Criar testes para seu formulário adaptável](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
-* [Execute o conjunto de testes e os testes criados para seu formulário adaptável](#step-run-all-the-tests-in-a-suite-or-individual-tests-cases)
+* [Criar testes para o formulário adaptável](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
+* [Executar conjunto de testes e testes criados para seu formulário adaptável](#step-run-all-the-tests-in-a-suite-or-individual-tests-cases)
 
-## Etapa 1: Criar um conjunto de testes {#step-create-a-test-suite}
+## Etapa 1: Criar um conjunto de teste {#step-create-a-test-suite}
 
-Os conjuntos de testes têm uma coleção de casos de teste. Você pode ter vários conjuntos de testes. É recomendável ter um conjunto de testes separado para cada formulário. Para criar um conjunto de testes:
+Os conjuntos de teste têm uma coleção de casos de teste. Você pode ter vários conjuntos de testes. É recomendável ter um conjunto de testes separado para cada formulário. Para criar um conjunto de teste:
 
-1. Efetue login AEM [!DNL Forms] instância do autor como administrador. Abra [!UICONTROL CRXDE Lite]. Você pode tocar em AEM Logotipo > **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]** ou abrir o URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) em um navegador para abrir o CRXDE Lite.
+1. Faça logon em AEM instância do autor [!DNL Forms] como administrador. Abra [!UICONTROL CRXDE Lite]. Toque em AEM Logotipo > **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]** ou abra o URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) em um navegador para abrir o CRXDE Lite.
 
-1. Navegue até /etc/clientlibs em [!UICONTROL CRXDE Lite]. Clique com o botão direito do mouse na subpasta /etc/clientlibs e clique em **[!UICONTROL Criar]** > **[!UICONTROL Criar nó]**. No campo **[!UICONTROL Name]**, digite **WeRetailFormTestCasos**. Selecione o tipo como **cq:ClientLibraryFolder** e clique em **[!UICONTROL OK]**. Cria um nó. Você pode usar qualquer nome no lugar de `WeRetailFormTestCases`.
-1. Adicione as seguintes propriedades ao nó `WeRetailFormTestCases` e toque em **[!UICONTROL Salvar TODAS]**.
+1. Navegue até /etc/clientlibs em [!UICONTROL CRXDE Lite]. Clique com o botão direito do mouse na subpasta /etc/clientlibs e clique em **[!UICONTROL Create]** > **[!UICONTROL Create Node]**. No campo **[!UICONTROL Nome]** digite **WeRetailFormTestCasos**. Selecione o tipo como **cq:ClientLibraryFolder** e clique em **[!UICONTROL OK]**. Ele cria um nó. Você pode usar qualquer nome no lugar de `WeRetailFormTestCases`.
+1. Adicione as seguintes propriedades ao nó `WeRetailFormTestCases` e toque em **[!UICONTROL Salvar tudo]**.
 
    <table>
     <tbody>
@@ -75,7 +76,7 @@ Os conjuntos de testes têm uma coleção de casos de teste. Você pode ter vár
 
    ![dependências](assets/dependencies.png)
 
-1. Clique com o botão direito do mouse no nó **[!UICONTROL WeRetailFormTestCase]** clique em **[!UICONTROL Criar]** > **[!UICONTROL Criar arquivo]**. No campo **[!UICONTROL Nome]**, digite `js.txt` e clique em **[!UICONTROL OK]**.
+1. Clique com o botão direito do mouse no nó **[!UICONTROL WeRetailFormTestCasos]** clique em **[!UICONTROL Criar]** > **[!UICONTROL Criar arquivo]**. No campo **[!UICONTROL Nome]**, digite `js.txt` e clique em **[!UICONTROL OK]**.
 1. Abra o arquivo js.txt para edição, adicione o seguinte código e salve o arquivo:
 
    ```text
@@ -99,19 +100,19 @@ Os conjuntos de testes têm uma coleção de casos de teste. Você pode ter vár
    }(window, window.hobs));
    ```
 
-   O código acima cria um conjunto de testes chamado **Varejo - Testes**.
+   O código acima cria um conjunto de testes chamado **We retail - Tests**.
 
-1. Abra AEM Interface do usuário de teste (AEM > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Teste]**). O conjunto de testes - **Varejo - Testes** - está listado na interface do usuário.
+1. Abra AEM interface de teste (AEM > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Teste]**). O conjunto de testes - **We retail - Tests** - está listado na interface do usuário.
 
    ![we-retail-test-suite](assets/we-retail-test-suite.png)
 
-## Etapa 2: Crie um caso de teste para preencher valores antecipadamente em um formulário adaptável {#step-create-a-test-case-to-prefill-values-in-an-adaptive-form}
+## Etapa 2: Crie um caso de teste para preencher previamente valores em um formulário adaptável {#step-create-a-test-case-to-prefill-values-in-an-adaptive-form}
 
 Um caso de teste é um conjunto de ações para testar uma funcionalidade específica. Por exemplo, preencher todos os campos de um formulário e validar alguns campos para garantir que os valores corretos sejam inseridos.
 
 Uma ação é uma atividade específica em um formulário adaptável, como clicar em um botão. Para criar um caso de teste e ações para validar a entrada do usuário para cada campo de formulário adaptável:
 
-1. Em [!UICONTROL CRXDE lite], navegue até a pasta `/content/forms/af/create-first-adaptive-form`. Clique com o botão direito do mouse no nó da pasta **[!UICONTROL create-first-adaptive-form]** e clique em **[!UICONTROL Criar]**> **[!UICONTROL Criar arquivo]**. No campo **[!UICONTROL Nome]**, digite `prefill.xml` e clique em **[!UICONTROL OK]**. Adicione o seguinte código ao arquivo:
+1. Em [!UICONTROL CRXDE lite], navegue até a pasta `/content/forms/af/create-first-adaptive-form`. Clique com o botão direito do mouse no nó da pasta **[!UICONTROL create-first-adaptive-form]** e clique em **[!UICONTROL Create]**> **[!UICONTROL Create File]**. No campo **[!UICONTROL Nome]**, digite `prefill.xml` e clique em **[!UICONTROL OK]**. Adicione o seguinte código ao arquivo:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -130,7 +131,7 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
    </afData>
    ```
 
-1. Vá até `/etc/clientlibs`. Clique com o botão direito do mouse na subpasta `/etc/clientlibs` e clique em **[!UICONTROL Criar]**> **[!UICONTROL Criar nó]**.
+1. Vá até `/etc/clientlibs`. Clique com o botão direito do mouse na subpasta `/etc/clientlibs` e clique em **[!UICONTROL Criar]** **[!UICONTROL Criar nó]**.
 
    No campo **[!UICONTROL Nome]**, digite `WeRetailFormTests`. Selecione o tipo como `cq:ClientLibraryFolder` e clique em **[!UICONTROL OK]**.
 
@@ -166,7 +167,7 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
      </tbody>
    </table>
 
-1. Crie um arquivo, js.txt, no nó **[!UICONTROL WeRetailFormTests]**. Adicione o seguinte ao arquivo:
+1. Crie um arquivo, js.txt, no nó **[!UICONTROL WeRetailFormTests]**. Adicione o seguinte ao arquivo :
 
    ```shell
    #base=.
@@ -175,7 +176,7 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
 
    Clique em **[!UICONTROL Salvar tudo]**.
 
-1. Crie um arquivo, `prefillTest.js`, no nó **[!UICONTROL WeRetailFormTests]**. Adicione o código abaixo ao arquivo. O código cria um caso de teste. O caso de teste preenche todos os campos de um formulário e valida alguns campos para garantir que os valores corretos sejam inseridos.
+1. Crie um arquivo, `prefillTest.js`, no nó **[!UICONTROL WeRetailFormTests]**. Adicione o código abaixo ao arquivo . O código cria um caso de teste. O caso de teste preenche todos os campos de um formulário e valida alguns campos para garantir que os valores corretos sejam inseridos.
 
    ```javascript
    (function (window, hobs) {
@@ -207,30 +208,30 @@ Uma ação é uma atividade específica em um formulário adaptável, como clica
    }(window, window.hobs));
    ```
 
-   O caso de teste é criado e pronto para ser executado. É possível criar casos de teste para validar vários aspectos de um formulário adaptável, como verificar a execução do script calculate, validar padrões e validar a experiência de envio de um formulário adaptável. Para obter informações sobre vários aspectos do teste de formulários adaptáveis, consulte Automatizar o teste de formulários adaptáveis.
+   O caso de teste é criado e pronto para ser executado. Você pode criar casos de teste para validar vários aspectos de um formulário adaptável, como verificar a execução do script de cálculo, validar padrões e validar a experiência de envio de um formulário adaptável. Para obter informações sobre vários aspectos do teste de formulários adaptáveis, consulte automatizar o teste de formulários adaptáveis.
 
-## Etapa 3: Execute todos os testes em um conjunto ou casos individuais de testes {#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
+## Etapa 3: Executar todos os testes em um conjunto ou em casos de testes individuais {#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
 
-Um conjunto de testes pode ter vários casos de teste. Você pode executar todos os casos de teste em um conjunto de testes de uma vez ou individualmente. Quando você executa um teste, os ícones indicam os resultados:
+Um conjunto de testes pode ter vários casos de teste. Você pode executar todos os casos de teste em um conjunto de teste de uma só vez ou individualmente. Quando você executa testes, os ícones indicam os resultados:
 
-* Um ícone de marca de seleção indica um teste aprovado: ![save_icon](assets/save_icon.svg)
-* Um ícone &quot;X&quot; indica uma falha no teste: ![ícone de fechamento](assets/close-icon.svg)
+* Um ícone de marca de verificação indica um teste aprovado: ![save_icon](assets/save_icon.svg)
+* Um ícone &quot;X&quot; indica um teste com falha: ![ícone de fechamento](assets/close-icon.svg)
 
 1. Navegue até AEM ícone > **[!UICONTROL Ferramentas]**> **[!UICONTROL Operações]**> **[!UICONTROL Teste]**
 1. Para executar todos os testes do Test Suite:
 
-   1. No painel [!UICONTROL Testes], toque em **[!UICONTROL Varejo - Testes (1)]**. A suíte se expande para exibir a lista do teste.
+   1. No painel [!UICONTROL Testes], toque em **[!UICONTROL Varejo - Testes (1)]**. Ele O conjunto se expande para exibir uma lista de testes.
    1. Toque no botão **[!UICONTROL Executar testes]**. A área em branco no lado direito da tela é substituída pela forma adaptável à medida que o teste é executado.
 
-      ![teste &quot;run-all-test&quot;](assets/run-all-test.png)
+      ![run-all-test](assets/run-all-test.png)
 
 1. Para executar um único teste a partir do Test Suite:
 
-   1. No painel Testes, toque em **[!UICONTROL Varejo - Testes (1)]**. A suíte se expande para exibir a lista do teste.
-   1. Toque em **[!UICONTROL Prefill Test]** e toque no botão **[!UICONTROL Executar testes]**. A área em branco no lado direito da tela é substituída pela forma adaptável à medida que o teste é executado.
+   1. No painel Testes, toque em **[!UICONTROL Varejo da Web - Testes (1)]**. Ele O conjunto se expande para exibir uma lista de testes.
+   1. Toque em **[!UICONTROL Preencher Teste]** e toque no botão **[!UICONTROL Executar testes]**. A área em branco no lado direito da tela é substituída pela forma adaptável à medida que o teste é executado.
 
-1. Toque no nome do teste, Teste de preenchimento prévio, para analisar os resultados do caso de teste. Ele abre o painel [!UICONTROL Resultado]. Toque no nome do caso de teste no painel [!UICONTROL Resultado] para visualização todos os detalhes do teste.
+1. Toque no nome do teste, Teste de preenchimento prévio, para analisar os resultados do caso de teste. Ele abre o painel [!UICONTROL Resultado]. Toque no nome do Caso de teste no painel [!UICONTROL Resultado] para visualizar todos os detalhes do teste.
 
    ![resultados da revisão](assets/review-results.png)
 
-Agora o formulário adaptável está pronto para publicação.
+Agora, o formulário adaptável está pronto para publicação.
