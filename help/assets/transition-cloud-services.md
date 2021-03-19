@@ -1,33 +1,34 @@
 ---
-title: Aplicar serviços da nuvem de tradução a pastas
-description: Aplicar serviços da nuvem de tradução a pastas
+title: Aplicar serviços de nuvem de tradução a pastas
+description: Aplicar serviços de nuvem de tradução a pastas
 contentOwner: AG
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 43%
+source-wordcount: '386'
+ht-degree: 44%
 
 ---
 
 
-# Aplicar serviços de conversão em nuvem a pastas {#applying-translation-cloud-services-to-folders}
+# Aplicar serviços de nuvem de tradução a pastas {#applying-translation-cloud-services-to-folders}
 
-[!DNL Adobe Experience Manager] permite que você utilize serviços de tradução baseados em nuvem do provedor de tradução de sua escolha para garantir que seus ativos sejam traduzidos com base em suas necessidades.
+[!DNL Adobe Experience Manager] permite que você utilize os serviços de tradução em nuvem do provedor de tradução de sua escolha para garantir que seus ativos sejam traduzidos de acordo com suas necessidades.
 
-Você pode aplicar o serviço de nuvem de tradução diretamente à sua pasta de ativos para que eles possam ser utilizados durante os workflows de tradução.
+Você pode aplicar o serviço da nuvem de tradução diretamente à sua pasta de ativos para que eles possam ser utilizados durante os fluxos de trabalho de tradução.
 
 ## Aplicar os serviços de tradução {#applying-the-translation-services}
 
-A aplicação de serviços de tradução em nuvem diretamente à sua pasta de ativos elimina a necessidade de configurar os serviços de tradução ao criar ou atualizar workflows de tradução.
+A aplicação de serviços da nuvem de tradução diretamente à sua pasta de ativos elimina a necessidade de configurar os serviços de tradução ao criar ou atualizar fluxos de trabalho de tradução.
 
-1. Na interface do usuário [!DNL Assets], selecione a pasta à qual deseja aplicar os serviços de tradução.
-1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]** para exibir a página **[!UICONTROL Propriedades da pasta]**.
+1. Na interface do usuário [!DNL Assets], selecione a pasta na qual deseja aplicar os serviços de tradução.
+1. Na barra de ferramentas, clique em **[!UICONTROL Properties]** para exibir a página **[!UICONTROL Folder Properties]**.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Navegue até a guia **[!UICONTROL Serviços da nuvem]**.
-1. Na lista Configurações de Cloud Service, escolha o provedor de tradução desejado. Por exemplo, se você deseja utilizar os serviços de tradução da Microsoft, escolha **[!UICONTROL Microsoft Translator]**.
+1. Na lista Configurações do Cloud Service, escolha o provedor de tradução desejado. Por exemplo, se você quiser aproveitar os serviços de tradução da Microsoft, escolha **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -35,7 +36,7 @@ A aplicação de serviços de tradução em nuvem diretamente à sua pasta de at
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Na barra de ferramentas, clique em **[!UICONTROL Salvar]** e, em seguida, clique em **[!UICONTROL OK]** para fechar a caixa de diálogo.O serviço de tradução é aplicado à pasta.
+1. Na barra de ferramentas, clique em **[!UICONTROL Save]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo.O serviço de tradução é aplicado à pasta.
 
 ## Aplicar conector de tradução personalizado {#applying-custom-translation-connector}
 
@@ -51,7 +52,7 @@ Se quiser aplicar um conector personalizado para os serviços de tradução que 
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Especifique um título e um nome para o conector e clique em **[!UICONTROL Criar]**. O conector personalizado está disponível na lista de conectores na guia **[!UICONTROL Serviços da nuvem]** descrita na etapa 5 de [Aplicar serviços de tradução](#applying-the-translation-services).
+1. Especifique um título e nome para o conector e clique em **[!UICONTROL Criar]**. O conector personalizado está disponível na lista de conectores na guia **[!UICONTROL Serviços da nuvem]** descrita na etapa 5 de [Aplicar serviços de tradução](#applying-the-translation-services).
 1. Execute qualquer fluxo de trabalho de tradução descrito em [Criar projetos de tradução](translation-projects.md) depois de aplicar o conector personalizado. Verifique os detalhes do conector no bloco **[!UICONTROL Resumo da tradução]** do projeto de tradução no console **[!UICONTROL Projetos]**.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
