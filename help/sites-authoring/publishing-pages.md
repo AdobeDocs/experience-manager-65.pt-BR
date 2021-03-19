@@ -1,8 +1,8 @@
 ---
 title: Publicar páginas
 seo-title: Publicar páginas
-description: 'null'
-seo-description: nulo
+description: Publicar páginas
+seo-description: 'null'
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1612'
 ht-degree: 88%
 
 ---
@@ -145,7 +145,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    Clique em **Avançar** para continuar.
 
-1. Na próxima etapa do assistente Gerenciar publicação, **Escopo**, você pode definir o escopo da publicação/despublicação, como incluir páginas filhas e/ou incluir referências.
+1. Na próxima etapa do assistente Gerenciar publicação, **Escopo**, você pode definir o escopo da publicação ou do cancelamento da publicação, por exemplo, incluindo páginas filhas e/ou referências.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -195,12 +195,12 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    >[!NOTE]
    >
-   >A etapa **Fluxos de trabalho** será mostrada com base em quais direitos seu usuário pode ou não possuir. Consulte a nota [anterior desta página](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) sobre privilégios de publicação, bem como [Gerenciando o Acesso a Workflows](/help/sites-administering/workflows-managing.md) e [Aplicando Workflows a Páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obter detalhes.
+   >A etapa **Fluxos de trabalho** será mostrada com base em quais direitos seu usuário pode ou não possuir. Consulte a observação anterior [nesta página](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) sobre privilégios de publicação, bem como [Gerenciamento do acesso a fluxos de trabalho](/help/sites-administering/workflows-managing.md) e [Aplicação de fluxos de trabalho a páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obter detalhes.
 
    Os recursos são agrupados pelos fluxos de trabalho acionados e cada uma das opções especificadas para:
 
    * Definir o título do fluxo de trabalho.
-   * Mantenha o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha [suporte a vários recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+   * Manter o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha [suporte a vários recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definir um título do pacote de fluxo de trabalho se a opção para manter esse pacote tiver sido escolhida.
 
    Clique em **Publicar** ou **Publicar mais tarde** para concluir a publicação.
@@ -262,7 +262,7 @@ Você pode usar a opção [Gerenciar publicação](/help/sites-authoring/publish
 
    Lembre-se de que você também pode rever as referências a serem publicadas por meio da opção **Referências publicadas**.
 
-1. [Continue com o assistente Gerenciar publicação como ](#manage-publication) normal para concluir a publicação ou a despublicação da árvore.
+1. [Prossiga com o assistente Gerenciar publicação como de ](#manage-publication) costume para concluir a publicação ou o cancelamento da publicação da árvore.
 
 ## Determinação do status de publicação {#determining-publication-status}
 
