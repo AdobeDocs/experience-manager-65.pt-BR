@@ -1,30 +1,31 @@
 ---
-title: Usar a API de lote para gerar várias comunicações interativas
-description: Usar a API de lote para gerar várias comunicações interativas
+title: Usar a API em lote para gerar várias comunicações interativas
+description: Usar a API em lote para gerar várias comunicações interativas
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
+feature: Comunicação interativa
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2239'
 ht-degree: 1%
 
 ---
 
 
-# Gerar várias comunicações interativas usando a API de lote {#use-batch-api-to-generate-multiple-ic}
+# Gerar várias comunicações interativas usando a API em lote {#use-batch-api-to-generate-multiple-ic}
 
-Você pode usar a API de lote para produzir várias comunicações interativas a partir de um modelo. O modelo é uma comunicação interativa sem dados. A API de lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, declarações de cartão de crédito para vários clientes.
+Você pode usar a API em lote para produzir várias comunicações interativas de um modelo. O modelo é uma comunicação interativa sem dados. A API em lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito para vários clientes.
 
 A API em lote aceita registros (dados) no formato JSON e de um Modelo de dados de formulário. O número de comunicações interativas produzidas é igual aos registros especificados no arquivo JSON de entrada no Modelo de dados de formulário configurado. Você pode usar a API para produzir as saídas Imprimir e Web. A opção IMPRIMIR produz um documento PDF e a opção WEB produz dados no formato JSON para cada registro individual.
 
-## Usando a API de lote {#using-the-batch-api}
+## Uso da API em lote {#using-the-batch-api}
 
-Você pode usar a API de lote juntamente com Pastas monitoradas ou como uma API de repouso independente. Você configura um modelo, tipo de saída (HTML, IMPRESSÃO ou Ambos), localidade, serviço de preenchimento prévio e nome das comunicações interativas geradas para usar a API em lote.
+Você pode usar a API em lote em conjunto com as Pastas vigiadas ou como uma API Rest independente. Você configura um modelo, um tipo de saída (HTML, IMPRESSÃO ou Ambos), um local, um serviço de preenchimento prévio e o nome das comunicações interativas geradas para usar a API em lote.
 
-Você combina um registro com um modelo de comunicação interativa para produzir uma comunicação interativa. As APIs em lote podem ler registros (dados para modelos de comunicação interativos) diretamente de um arquivo JSON ou de uma fonte de dados externa acessada por meio do modelo de dados de formulário. Você pode manter cada registro em um arquivo JSON separado ou criar uma matriz JSON para manter todos os registros em um único arquivo.
+Você combina um registro com um template de comunicação interativo para produzir uma comunicação interativa. As APIs em lote podem ler registros (dados para modelos de comunicação interativos) diretamente de um arquivo JSON ou de uma fonte de dados externa acessada por meio do modelo de dados de formulário. Você pode manter cada registro em um arquivo JSON separado ou criar uma matriz JSON para manter todos os registros em um único arquivo.
 
 **Um único registro em um arquivo JSON**
 
@@ -66,67 +67,67 @@ Você combina um registro com um modelo de comunicação interativa para produzi
 }]
 ```
 
-### Usando a API de lote com pastas monitoradas {#using-the-batch-api-watched-folders}
+### Uso da API em lote com pastas vigiadas {#using-the-batch-api-watched-folders}
 
-Para facilitar a experiência da API, a AEM Forms fornece um serviço de Pasta assistida configurado para usar a API em lote, pronto para uso. Você pode acessar o serviço por meio da interface do usuário do AEM Forms para gerar várias comunicações interativas. Você também pode criar serviços personalizados de acordo com suas necessidades. Você pode usar os métodos listados abaixo para usar a API de lote com a pasta Monitorada:
+Para facilitar a experiência com a API, o AEM Forms fornece um serviço de Pasta assistida configurado para usar a API em lote, pronto para uso. Você pode acessar o serviço por meio da interface do usuário do AEM Forms para gerar várias comunicações interativas. Você também pode criar serviços personalizados de acordo com suas necessidades. Você pode usar os métodos listados abaixo para usar a API em lote com a pasta Assistida:
 
 * Especificar dados de entrada (registros) no formato de arquivo JSON para produzir uma comunicação interativa
-* Usar dados de entrada (registros) salvos em uma fonte externa de dados e acessados por meio de um modelo de dados de formulário para produzir uma comunicação interativa
+* Usar dados de entrada (registros) salvos em uma fonte de dados externa e acessados por um modelo de dados de formulário para produzir uma comunicação interativa
 
 #### Especificar registros de dados de entrada no formato de arquivo JSON para produzir uma comunicação interativa {#specify-input-data-in-JSON-file-format}
 
-Você combina um registro com um modelo de comunicação interativa para produzir uma comunicação interativa. Você pode criar um arquivo JSON separado para cada registro ou criar uma matriz JSON para manter todos os registros em um único arquivo:
+Você combina um registro com um template de comunicação interativo para produzir uma comunicação interativa. Você pode criar um arquivo JSON separado para cada registro ou criar uma matriz JSON para manter todos os registros em um único arquivo:
 
 Para criar comunicação interativa a partir de registros salvos em um arquivo JSON:
 
-1. Crie uma [pasta assistida](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configure-a para usar a API em lote:
+1. Crie uma [Pasta assistida](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e a configure para usar a API em lote:
    1. Faça logon na instância do autor do AEM Forms.
-   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar Pasta Monitorada]**. Toque em **[!UICONTROL Novo]**.
-   1. Especifique **[!UICONTROL Nome]** e físico **[!UICONTROL Caminho]** da pasta. Por exemplo, `c:\batchprocessing`.
-   1. Selecione a opção **[!UICONTROL Service]** no campo **[!UICONTROL Processar arquivo usando]**.
-   1. Selecione o serviço **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InterativeCommunicationBatchServiceImpl]** no campo **[!UICONTROL Nome do serviço]**.
-   1. Especifique um **[!UICONTROL Padrão de Arquivo de Saída]**. Por exemplo, o %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) especifica que a Pasta monitorada pode localizar arquivos de entrada em uma subpasta da pasta Pasta monitorada\entrada.
+   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar Pasta Assistida]**. Toque em **[!UICONTROL Novo]**.
+   1. Especifique o **[!UICONTROL Nome]** e o **[!UICONTROL Caminho]** físico da pasta. Por exemplo, `c:\batchprocessing`.
+   1. Selecione a opção **[!UICONTROL Service]** no campo **[!UICONTROL Process File Using]**.
+   1. Selecione o serviço **[!UICONTROL com.adobe.fd.ccm.multicanal.batch.impl.service.InterativeCommunicationBatchServiceImpl]** no campo **[!UICONTROL Nome do Serviço]**.
+   1. Especifique um **[!UICONTROL Padrão do arquivo de saída]**. Por exemplo, o %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) especifica que a Pasta assistida pode localizar arquivos de entrada em uma subpasta da pasta de pasta de entrada\de controle.
 1. Configurar parâmetros avançados:
    1. Abra a guia **[!UICONTROL Avançado]** e adicione as seguintes propriedades personalizadas:
 
       | Propriedade | Tipo | Descrição |
       |--- |--- |--- |
       | templatePath | Sequência de caracteres | Especifique o caminho do modelo de comunicação interativa a ser usado. Por exemplo, /content/dam/formsanddocuments/testsample/mediumic. É uma propriedade obrigatória. |
-      | recordPath | Sequência de caracteres | O valor do campo recordPath ajuda a definir o nome de uma comunicação interativa. É possível definir o caminho de um campo de um registro como valor do campo recordPath. Por exemplo, se você especificar /funcionário/Id, o valor do campo de id se tornará o nome da comunicação interativa correspondente. O valor padrão é um UUID aleatório [aleatório](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Booleano | Defina o valor como False. Você pode usar o parâmetro usePrefillService para pré-preencher a comunicação interativa com dados obtidos do serviço de pré-preenchimento configurado para a comunicação interativa correspondente. Quando usePrefillService é definido como true, os dados JSON de entrada (para cada registro) são tratados como Argumentos FDM. O valor padrão é false. |
+      | recordPath | Sequência de caracteres | O valor do campo recordPath ajuda a definir o nome de uma comunicação interativa. Você pode definir o caminho de um campo de um registro como valor do campo recordPath. Por exemplo, se você especificar /employee/Id, o valor do campo de id se tornará o nome da comunicação interativa correspondente. O valor padrão é um [UUID aleatório](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
+      | usePrefillService | Booleano | Defina o valor como False. Você pode usar o parâmetro usePrefillService para preencher previamente a comunicação interativa com os dados obtidos do serviço de preenchimento prévio configurado para a comunicação interativa correspondente. Quando usePrefillService é definido como true, os dados JSON de entrada (para cada registro) são tratados como Argumentos do FDM. O valor padrão é false. |
       | batchType | Sequência de caracteres | Defina o valor como PRINT, WEB ou WEB_AND_PRINT. O valor padrão é WEB_AND_PRINT. |
-      | locale | Sequência de caracteres | Especifique a localidade da comunicação interativa de saída. O serviço predefinido não utiliza a opção de localidade, mas é possível criar um serviço personalizado para gerar comunicações interativas localizadas. O valor padrão é en_US |
+      | locale | Sequência de caracteres | Especifique o local da comunicação interativa de saída. O serviço pronto para uso não usa a opção de local, mas você pode criar um serviço personalizado para gerar comunicações interativas localizadas. O valor padrão é en_US |
 
    1. Toque em **[!UICONTROL Criar]** A pasta assistida é criada.
 1. Use a pasta assistida para gerar comunicação interativa:
    1. Abra a pasta assistida. Navegue até a pasta de entrada.
    1. Crie uma pasta na pasta de entrada e coloque o arquivo JSON na pasta recém-criada.
-   1. Aguarde a Pasta assistida processar o arquivo. Quando os start de processamento, o arquivo de entrada e a subpasta que contém o arquivo são movidos para a pasta de preparo.
-   1. Abra a pasta de saída para visualização na saída:
-      * Quando você especifica a opção IMPRIMIR em Configuração de pasta assistida, a saída PDF para a comunicação interativa é gerada.
-      * Quando você especifica a opção WEB em Configuração de pasta assistida, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template).
-      * Quando você especifica as opções IMPRIMIR e WEB, são gerados documentos PDF e um arquivo JSON por registro.
+   1. Aguarde a Pasta assistida processar o arquivo. Quando o processamento é iniciado, o arquivo de entrada e a subpasta contendo o arquivo são movidos para a pasta de preparo.
+   1. Abra a pasta de saída para exibir a saída:
+      * Quando você especifica a opção IMPRIMIR na Configuração de pasta assistida, a saída PDF para a comunicação interativa é gerada.
+      * Quando você especifica a opção WEB na Configuração de pasta assistida, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template).
+      * Ao especificar as opções IMPRIMIR e WEB, são gerados tanto documentos PDF quanto um arquivo JSON por registro.
 
-#### Use dados de entrada salvos em uma fonte de dados externa e acessados por meio do modelo de dados de formulário para produzir uma comunicação interativa {#use-fdm-as-data-source}
+#### Use dados de entrada salvos em uma fonte de dados externa e acessados pelo modelo de dados de formulário para produzir uma comunicação interativa {#use-fdm-as-data-source}
 
-Você combina dados (registros) salvos em uma fonte de dados externa com um modelo de comunicação interativa para produzir uma comunicação interativa. Ao criar uma comunicação interativa, você a conecta a uma fonte de dados externa por meio de um Modelo de dados de formulário (FDM) para acessar os dados. Você pode configurar o serviço de processamento em lote de Pastas Monitoradas para buscar dados usando o mesmo Modelo de Dados de Formulário de uma fonte de dados externa. Para [criar uma comunicação interativa a partir de registros salvos em uma fonte externa de dados](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+Você combina dados (registros) salvos em uma fonte de dados externa com um template de comunicação interativo para produzir uma comunicação interativa. Ao criar uma comunicação interativa, você a conecta a uma fonte de dados externa por meio de um FDM (Form Data Model) para acessar os dados. Você pode configurar o serviço de processo em lote de pastas vigiadas para buscar dados usando o mesmo Modelo de dados de formulário de uma fonte de dados externa. Para [criar uma comunicação interativa a partir de registros salvos em uma fonte de dados externa](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
 
 1. Configure o Modelo de dados de formulário do modelo:
-   1. Abra o Modelo de dados de formulário associado ao modelo de comunicação interativa.
+   1. Abra o Modelo de dados de formulário associado ao modelo de comunicação interativo.
    1. Selecione o OBJETO MODELO DE NÍVEL SUPERIOR e toque em Editar propriedades.
-   1. Selecione o serviço de busca ou obtenção no campo Serviço de leitura no painel Editar propriedades.
-   1. Toque no ícone de lápis do argumento de serviço de leitura para vincular o argumento a um Atributo de solicitação e especifique o valor de vínculo. Ele vincula o argumento de serviço ao atributo de vínculo especificado ou ao valor literal, que é transmitido ao serviço como um argumento para buscar detalhes associados ao valor especificado na fonte de dados.
+   1. Selecione o serviço de busca ou obtenção no campo Serviço de leitura no painel Editar propriedades .
+   1. Toque no ícone de lápis para o argumento do serviço de leitura para vincular o argumento a um Atributo de solicitação e especifique o valor de vínculo. Ele vincula o argumento de serviço ao atributo de vínculo especificado ou ao valor literal, que é passado ao serviço como um argumento para buscar detalhes associados ao valor especificado na fonte de dados.
 
       <br>
-        Neste exemplo, o argumento id pega o valor do atributo id do perfil do usuário e o transmite como um argumento para o serviço de leitura. Ele lerá e retornará valores de propriedades associadas do objeto de modelo de dados de funcionário para a id especificada. Portanto, se você especificar 00250 no campo id no formulário, o serviço de leitura lerá detalhes do funcionário com a ID do funcionário 00250.
+        Neste exemplo, o argumento id pega o valor do atributo id do perfil do usuário e o transmite como um argumento para o serviço de leitura. Ele lerá e retornará valores de propriedades associadas do objeto de modelo de dados de funcionário para a id especificada. Portanto, se você especificar 00250 no campo id do formulário, o serviço de leitura lerá os detalhes do funcionário com a ID 00250 do funcionário.
         <br>
 
       ![Configurar atributo de solicitação](assets/request-attribute.png)
 
    1. Salve as propriedades e o Modelo de dados de formulário.
 1. Configurar valor para Atributo de solicitação:
-   1. Crie um arquivo .json no seu sistema de arquivos e abra-o para edição.
-   1. Crie uma matriz JSON e especifique o atributo principal para buscar dados do Modelo de dados de formulário. Por exemplo, o JSON a seguir solicita ao FDM que envie dados de registros, onde id é 27126 ou 27127:
+   1. Crie um arquivo .json em seu sistema de arquivos e abra-o para edição.
+   1. Crie uma matriz JSON e especifique o atributo principal para buscar dados do Modelo de dados de formulário. Por exemplo, o JSON a seguir solicita que o FDM envie dados de registros onde id é 27126 ou 27127:
 
       ```json
           [
@@ -141,43 +142,43 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um mode
 
    1. Salve e feche o arquivo.
 
-1. Crie uma [pasta assistida](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configure-a para usar o serviço de API em lote:
+1. Crie uma [Pasta assistida](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e a configure para usar o serviço de API em lote:
    1. Faça logon na instância do autor do AEM Forms.
-   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar Pasta Monitorada]**. Toque em **[!UICONTROL Novo]**.
-   1. Especifique **[!UICONTROL Nome]** e físico **[!UICONTROL Caminho]** da pasta. Por exemplo, `c:\batchprocessing`.
-   1. Selecione a opção **[!UICONTROL Service]** no campo **[!UICONTROL Processar arquivo usando]**.
-   1. Selecione o serviço **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InterativeCommunicationBatchServiceImpl]** no campo **[!UICONTROL Nome do serviço]**.
-   1. Especifique um **[!UICONTROL Padrão de Arquivo de Saída]**. Por exemplo, o %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) especifica que a Pasta monitorada pode localizar arquivos de entrada em uma subpasta da pasta Pasta monitorada\entrada.
+   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar Pasta Assistida]**. Toque em **[!UICONTROL Novo]**.
+   1. Especifique o **[!UICONTROL Nome]** e o **[!UICONTROL Caminho]** físico da pasta. Por exemplo, `c:\batchprocessing`.
+   1. Selecione a opção **[!UICONTROL Service]** no campo **[!UICONTROL Process File Using]**.
+   1. Selecione o serviço **[!UICONTROL com.adobe.fd.ccm.multicanal.batch.impl.service.InterativeCommunicationBatchServiceImpl]** no campo **[!UICONTROL Nome do Serviço]**.
+   1. Especifique um **[!UICONTROL Padrão do arquivo de saída]**. Por exemplo, o %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) especifica que a Pasta assistida pode localizar arquivos de entrada em uma subpasta da pasta de pasta de entrada\de controle.
 1. Configurar parâmetros avançados:
    1. Abra a guia **[!UICONTROL Avançado]** e adicione as seguintes propriedades personalizadas:
 
       | Propriedade | Tipo | Descrição |
       |--- |--- |--- |
       | templatePath | Sequência de caracteres | Especifique o caminho do modelo de comunicação interativa a ser usado. Por exemplo, /content/dam/formsanddocuments/testsample/mediumic. É uma propriedade obrigatória. |
-      | recordPath | Sequência de caracteres | O valor do campo recordPath ajuda a definir o nome de uma comunicação interativa. É possível definir o caminho de um campo de um registro como valor do campo recordPath. Por exemplo, se você especificar /funcionário/Id, o valor do campo de id se tornará o nome da comunicação interativa correspondente. O valor padrão é um UUID aleatório [aleatório](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
-      | usePrefillService | Booleano | Defina o valor como True. O valor padrão é false.  Quando o valor é definido como true, a API em lote lê os dados do Modelo de dados de formulário configurado e os preenche para a comunicação interativa. Quando usePrefillService é definido como true, os dados JSON de entrada (para cada registro) são tratados como Argumentos FDM. |
+      | recordPath | Sequência de caracteres | O valor do campo recordPath ajuda a definir o nome de uma comunicação interativa. Você pode definir o caminho de um campo de um registro como valor do campo recordPath. Por exemplo, se você especificar /employee/Id, o valor do campo de id se tornará o nome da comunicação interativa correspondente. O valor padrão é um [UUID aleatório](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | usePrefillService | Booleano | Defina o valor como True. O valor padrão é false.  Quando o valor é definido como true, a API em lote lê os dados do Modelo de dados de formulário configurado e os preenche para a comunicação interativa. Quando usePrefillService é definido como true, os dados JSON de entrada (para cada registro) são tratados como Argumentos do FDM. |
       | batchType | Sequência de caracteres | Defina o valor como PRINT, WEB ou WEB_AND_PRINT. O valor padrão é WEB_AND_PRINT. |
-      | locale | Sequência de caracteres | Especifique a localidade da comunicação interativa de saída. O serviço predefinido não utiliza a opção de localidade, mas é possível criar um serviço personalizado para gerar comunicações interativas localizadas. O valor padrão é en_US. |
+      | locale | Sequência de caracteres | Especifique o local da comunicação interativa de saída. O serviço pronto para uso não usa a opção de local, mas você pode criar um serviço personalizado para gerar comunicações interativas localizadas. O valor padrão é en_US. |
 
    1. Toque em **[!UICONTROL Criar]** A pasta assistida é criada.
 1. Use a pasta assistida para gerar comunicação interativa:
    1. Abra a pasta assistida. Navegue até a pasta de entrada.
    1. Crie uma pasta na pasta de entrada. Coloque o arquivo JSON criado na Etapa 2 na pasta recém-criada.
-   1. Aguarde a Pasta assistida processar o arquivo. Quando os start de processamento, o arquivo de entrada e a subpasta que contém o arquivo são movidos para a pasta de preparo.
-   1. Abra a pasta de saída para visualização na saída:
-      * Quando você especifica a opção IMPRIMIR em Configuração de pasta assistida, a saída PDF para a comunicação interativa é gerada.
-      * Quando você especifica a opção WEB em Configuração de pasta assistida, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template).
-      * Quando você especifica as opções IMPRIMIR e WEB, são gerados documentos PDF e um arquivo JSON por registro.
+   1. Aguarde a Pasta assistida processar o arquivo. Quando o processamento é iniciado, o arquivo de entrada e a subpasta contendo o arquivo são movidos para a pasta de preparo.
+   1. Abra a pasta de saída para exibir a saída:
+      * Quando você especifica a opção IMPRIMIR na Configuração de pasta assistida, a saída PDF para a comunicação interativa é gerada.
+      * Quando você especifica a opção WEB na Configuração de pasta assistida, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template).
+      * Ao especificar as opções IMPRIMIR e WEB, são gerados tanto documentos PDF quanto um arquivo JSON por registro.
 
-## Chamar a API de lote usando solicitações REST
+## Chamar a API em lote usando solicitações REST
 
-Você pode invocar [a API de lote](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) por meio de solicitações de transferência de estado de representação (REST). Ele permite que você forneça um terminal REST a outros usuários para acessar a API e configurar seus próprios métodos de processamento, armazenamento e personalização da comunicação interativa. Você pode desenvolver seu próprio servlet Java personalizado para implantar a API em sua instância AEM.
+Você pode invocar [a API em lote](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) por meio de solicitações de Transferência de Estado Representacional (REST). Ele permite fornecer um terminal REST para que outros usuários acessem a API e configurem seus próprios métodos de processamento, armazenamento e personalização da comunicação interativa. Você pode desenvolver seu próprio servlet Java personalizado para implantar a API na instância do AEM.
 
 Antes de implantar o servlet Java, verifique se você tem uma comunicação interativa e se os arquivos de dados correspondentes estão prontos. Execute as seguintes etapas para criar e implantar o servlet Java:
 
-1. Faça logon na instância AEM e crie uma Comunicação interativa. Para usar a comunicação interativa mencionada no código de amostra fornecido abaixo, [clique aqui](assets/SimpleMediumIC.zip).
+1. Faça logon na instância do AEM e crie uma Comunicação interativa. Para usar a comunicação interativa mencionada no código de amostra fornecido abaixo, [clique aqui](assets/SimpleMediumIC.zip).
 1. [Crie e implante um projeto AEM usando o Apache ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) Mavênon em sua instância AEM.
-1. Adicione [AEM Forms Client SDK versão 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou posterior na lista de dependências do arquivo POM do seu projeto AEM. Por exemplo,
+1. Adicione [AEM Forms Client SDK versão 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou posterior na lista de dependências do arquivo POM do projeto AEM. Por exemplo,
 
    ```xml
        <dependency>
@@ -187,7 +188,7 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
        </dependency>
    ```
 
-1. Abra o projeto Java e crie um arquivo .java, por exemplo CCMBatchServlet.java. Adicione o seguinte código ao arquivo:
+1. Abra o projeto do Java e crie um arquivo .java, por exemplo, CCMBatchServlet.java. Adicione o seguinte código ao arquivo:
 
    ```java
            package com.adobe.fd.ccm.multichannel.batch.integration;
@@ -325,12 +326,12 @@ Antes de implantar o servlet Java, verifique se você tem uma comunicação inte
 1. No código acima, substitua o caminho do modelo (setTemplatePath) pelo caminho do modelo e defina o valor da API setBatchType:
    * Quando você especifica a saída PDF da opção IMPRIMIR para a comunicação interativa é gerada.
    * Quando você especifica a opção WEB, um arquivo JSON por registro é gerado. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template).
-   * Quando você especifica as opções IMPRIMIR e WEB, são gerados documentos PDF e um arquivo JSON por registro.
+   * Ao especificar as opções IMPRIMIR e WEB, são gerados tanto documentos PDF quanto um arquivo JSON por registro.
 
-1. [Use maven para implantar o código atualizado na sua instância](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven) AEM.
-1. Chame a API de lote para gerar a comunicação interativa. A API em lote imprime um fluxo de arquivos PDF e .json dependendo do número de registros. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template). Se você usar o código acima, a API será implantada em `http://localhost:4502/bin/batchServlet`. O código imprime e retorna um fluxo de arquivos PDF e JSON.
+1. [Use o maven para implantar o código atualizado na sua instância](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven) do AEM.
+1. Chame a API em lote para gerar a comunicação interativa. A API em lote retorna um fluxo de arquivos PDF e .json, dependendo do número de registros. Você pode usar o arquivo JSON para [preencher previamente um modelo da Web](#web-template). Se você usar o código acima, a API será implantada em `http://localhost:4502/bin/batchServlet`. O código imprime e retorna um fluxo de arquivos PDF e JSON.
 
-### Preencher previamente um modelo da Web {#web-template}
+### Preencha previamente um modelo da Web {#web-template}
 
 Quando você define o batchType para renderizar o Canal da Web, a API gera um arquivo JSON para cada registro de dados. Você pode usar a seguinte sintaxe para unir o arquivo JSON ao Canal da Web correspondente para gerar uma comunicação interativa:
 
@@ -338,12 +339,12 @@ Quando você define o batchType para renderizar o Canal da Web, a API gera um ar
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 ****
-ExemploSe o arquivo JSON estiver no  `C:\batch\mergedJsonPath.json` e você usar o modelo de comunicação interativa abaixo:  `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
+Exemplo: se o arquivo JSON estiver em  `C:\batch\mergedJsonPath.json` e você usar o modelo de comunicação interativa abaixo:  `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
 Em seguida, o seguinte URL no nó de publicação exibe o Canal da Web da comunicação interativa
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
-Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no repositório CRX, no sistema de arquivos, no servidor da Web ou pode acessar os dados por meio do serviço de preenchimento prévio OSGI. Sintaxe para unir dados usando vários protocolos são:
+Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no repositório CRX, no sistema de arquivos, no servidor da Web ou pode acessar dados por meio do serviço de preenchimento prévio OSGI. Sintaxe para unir dados usando vários protocolos são:
 
 * **Protocolo CRX**
 
@@ -353,13 +354,13 @@ Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no
 
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
-* **Protocolo de Serviço de Pré-preenchimento**
+* **Pré-carregar protocolo de serviço**
 
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
-   SERVICE_NAME refere-se ao nome do serviço de pré-preenchimento OSGI. Consulte Criar e executar um serviço de preenchimento prévio.
+   SERVICE_NAME refere-se ao nome do serviço de preenchimento prévio OSGI. Consulte Criar e executar um serviço de preenchimento prévio.
 
-   IDENTIFIER refere-se a quaisquer metadados exigidos pelo serviço de preenchimento prévio OSGI para buscar os dados de preenchimento prévio. Um identificador do usuário conectado é um exemplo de metadados que podem ser usados.
+   IDENTIFIER refere-se a quaisquer metadados exigidos pelo serviço de preenchimento prévio OSGI para buscar os dados de preenchimento prévio. Um identificador para o usuário conectado é um exemplo de metadados que podem ser usados.
 
 * **Protocolo HTTP**
 
@@ -367,4 +368,4 @@ Além de salvar os dados no sistema de arquivos, você armazena arquivos JSON no
 
 >[!NOTE]
 >
->Somente o protocolo CRX é ativado por padrão. Para ativar outros protocolos suportados, consulte [Configurar o serviço de preenchimento prévio usando o Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>Somente o protocolo CRX é ativado por padrão. Para ativar outros protocolos compatíveis, consulte [Configuração do serviço de preenchimento prévio usando o Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
