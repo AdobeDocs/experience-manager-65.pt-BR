@@ -8,18 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8465471-0458-42d6-8209-8ba90f41154a
+feature: Formulários para publicação de conteúdo para dispositivos móveis
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 0%
+source-wordcount: '111'
+ht-degree: 1%
 
 ---
 
 
 # Idiomas da direita para a esquerda em formulários HTML5 {#right-to-left-languages-in-html-forms}
 
-Formulários HTML5 suportam idiomas da direita para a esquerda, como o hebraico. Você pode exibir e preencher formulários HTML5 em idiomas da direita para a esquerda. Você pode usar os idiomas da direita para a esquerda e da esquerda para a direita no mesmo formulário. Por exemplo, você pode usar inglês e hebraico em um campo comum. O Mobile Forms usa a localidade para exibir dias localizados e informações de data em um formulário.
+Os formulários HTML5 são compatíveis com idiomas da direita para a esquerda, como o hebraico. Você pode exibir e preencher formulários HTML5 em idiomas da direita para a esquerda. Você pode usar os idiomas da direita para a esquerda e da esquerda para a direita no mesmo formulário. Por exemplo, você pode usar inglês e hebraico em um campo comum. O Mobile Forms usa o local para exibir dias localizados e informações de datas em um formulário.
 
 **Limitação**
 
