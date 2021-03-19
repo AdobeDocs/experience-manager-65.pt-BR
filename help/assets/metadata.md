@@ -2,10 +2,12 @@
 title: Gerencie metadados de seus ativos digitais em [!DNL Adobe Experience Manager].
 description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] possibilita organizar e processar ativos automaticamente com base em seus metadados.
 contentOwner: AG
+feature: Marcação, metadados
+role: Arquiteto, Líder
 translation-type: tm+mt
-source-git-commit: 31dcf48691fa849f757579e2e57dc3a9c2bbbbee
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2344'
 ht-degree: 11%
 
 ---
