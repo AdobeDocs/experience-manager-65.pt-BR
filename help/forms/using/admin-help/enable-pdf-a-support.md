@@ -1,6 +1,6 @@
 ---
-title: Habilitar suporte a PDF/A
-seo-title: Habilitar suporte a PDF/A
+title: Ativar suporte para PDF/A
+seo-title: Ativar suporte para PDF/A
 description: Saiba como ativar o suporte a PDF/A. Arquivos compatíveis com PDF/A podem ser criados a partir de arquivos do Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
 seo-description: Saiba como ativar o suporte a PDF/A. Arquivos compatíveis com PDF/A podem ser criados a partir de arquivos do Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
 uuid: 663bc89d-9d8b-4178-9a88-6d2d5daac477
@@ -9,18 +9,19 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17a6397b-0089-4fd1-b44a-686fdf60d7a9
+feature: Gerador de PDF
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 0%
+source-wordcount: '136'
+ht-degree: 1%
 
 ---
 
 
-# Habilitar suporte a PDF/A {#enable-pdf-a-support}
+# Ativar o suporte a PDF/A {#enable-pdf-a-support}
 
-O Gerador de PDF oferece suporte à criação de arquivos compatíveis com PDF/A a partir de arquivos do Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
+O PDF Generator oferece suporte à criação de arquivos compatíveis com PDF/A a partir de arquivos do Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
 
 1. No console de administração, clique em Serviços > Gerador de PDF > Configurações de tipo de arquivo.
 1. Clique em Novo ou selecione uma configuração de tipo de arquivo existente.
