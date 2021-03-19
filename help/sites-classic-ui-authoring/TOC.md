@@ -3,20 +3,23 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guia do usuário de criação da interface de usuário clássica AEM 6.5
-user-guide-description: Este guia aborda os conceitos de criação em AEM na interface clássica do usuário.
+user-guide-title: Guia do usuário de criação da interface clássica do AEM 6.5
+user-guide-description: Este guia aborda os conceitos de criação no AEM na interface do usuário clássica.
+feature-set: Experience Manager Sites
+feature: 'Criação  '
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '274'
 ht-degree: 84%
 
 ---
 
 
-# Guia do usuário de criação da interface de usuário clássica AEM 6.5 {#classic-ui}
+# Guia do usuário de criação da interface clássica do AEM 6.5 {#classic-ui}
 
-+ [Visão geral do Guia de criação da interface clássica](home.md)
++ [Visão geral do guia de criação da interface do usuário clássica](home.md)
 + Introdução à criação da interface clássica {#introduction}
    + [Primeiros passos para autores](classic-page-author-first-steps.md)
    + [Criação na interface do usuário clássica](classicui.md)
@@ -32,7 +35,7 @@ ht-degree: 84%
    + [Criação - o Ambiente e as ferramentas](classic-page-author-env-tools.md)
    + [Criar e organizar páginas](classic-page-author-manage-pages.md)
    + [Editar conteúdo da página](classic-page-author-edit-content.md)
-   + [Editor de Rich Text](classic-page-author-rich-text-editor.md)
+   + [Editor de rich text](classic-page-author-rich-text-editor.md)
    + [Publicar páginas](classic-page-author-publish-pages.md)
    + [Editar as propriedades da página](classic-page-author-edit-page-properties.md)
    + [Anotações ao editar uma página](classic-page-author-annotations.md)
@@ -51,9 +54,9 @@ ht-degree: 84%
    + [Adicionar recursos Search&amp;Promote à sua página](classic-feature-search-promote.md)
    + [Componentes](classic-page-author-default-components.md)
 + Fluxos de trabalhos {#workflows}
-   + [Participação em fluxos de trabalho](classic-workflows-participating.md)
+   + [Participar de fluxos de trabalho](classic-workflows-participating.md)
    + [Trabalhar com fluxos de trabalho](classic-workflows.md)
-   + [Aplicação de fluxos de trabalho às páginas](classic-workflows-applying.md)
+   + [Aplicação de fluxos de trabalho a páginas](classic-workflows-applying.md)
 + Lançamentos {#launches}
    + [Lançamentos](classic-launches.md)
    + [Criação de lançamentos](classic-launches-creating.md)
