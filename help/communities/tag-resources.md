@@ -1,38 +1,39 @@
 ---
-title: Marcação de recursos de ativação
-seo-title: Marcação de recursos de ativação
-description: A marcação dos recursos de ativação permite filtrar recursos e caminhos de aprendizado à medida que os membros navegam em catálogos
-seo-description: A marcação dos recursos de ativação permite filtrar recursos e caminhos de aprendizado à medida que os membros navegam em catálogos
+title: Marcar recursos de ativação
+seo-title: Marcar recursos de ativação
+description: A marcação dos recursos de ativação permite filtrar recursos e caminhos de aprendizagem à medida que os membros navegam por catálogos
+seo-description: A marcação dos recursos de ativação permite filtrar recursos e caminhos de aprendizagem à medida que os membros navegam por catálogos
 uuid: daf8a4f4-486b-498c-99e9-d1533a830e64
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
 
 
-# Marcação de recursos de ativação {#tagging-enablement-resources}
+# Marcar recursos de ativação {#tagging-enablement-resources}
 
 ## Visão geral {#overview}
 
-A marcação dos recursos de ativação permite filtrar recursos e caminhos de aprendizado conforme os membros navegam [catálogos](functions.md#catalog-function).
+A marcação dos recursos de ativação permite filtrar recursos e caminhos de aprendizagem conforme os membros navegam [catálogos](functions.md#catalog-function).
 
 Essencialmente:
 
-* [Criar um namespace de ](../../help/sites-administering/tags.md#creating-a-namespace) tag para cada catálogo
+* [Criar um ](../../help/sites-administering/tags.md#creating-a-namespace) namespace de tag para cada catálogo
 
    * [Definir permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions)
-   * Somente para membros da comunidade (comunidade fechada)
+   * Apenas para membros da comunidade (comunidade fechada)
 
-      * Permitir acesso de leitura para o grupo de membros [do site da comunidade](users.md#publish-group-roles)
-   * Para qualquer visitante do site, seja conectado ou anônimo (comunidade aberta)
+      * Permitir acesso de leitura para o [grupo de membros do site da comunidade](users.md#publish-group-roles)
+   * Para qualquer visitante do site, independentemente de ter feito logon ou ser anônimo (comunidade aberta)
 
       * Permitir acesso de leitura para o grupo `Everyone`
    * [Publicar as tags](../../help/sites-administering/tags.md#publishing-tags)
@@ -43,65 +44,65 @@ Essencialmente:
 
    * [Configurar catálogos que existem na estrutura do site](functions.md#catalog-function)
 
-      * É possível adicionar tags à instância do catálogo para controlar a lista de tags apresentadas nos filtros da interface do usuário.
-      * É possível adicionar [filtros anteriores](catalog-developer-essentials.md#pre-filters), para restringir os recursos incluídos de um catálogo.
+      * Pode adicionar tags à instância do catálogo para controlar a lista de tags apresentadas nos filtros da interface do usuário.
+      * Pode adicionar [pré-filtros](catalog-developer-essentials.md#pre-filters), para restringir os recursos incluídos de um catálogo.
 
 * [Publicar o site da comunidade](sites-console.md#publishing-the-site)
-* [Aplique tags para ativar ](resources.md#create-a-resource) os recursos, mas elas podem ser filtradas categoricamente
+* [Aplique tags para ativar ](resources.md#create-a-resource) recursos, mas elas podem ser filtradas categoricamente
 * [Publicar os recursos de ativação](resources.md#publish)
 
 ## Tags de site da comunidade {#community-site-tags}
 
 Ao criar ou editar um site da comunidade, a [Configuração de marcação](sites-console.md#tagging) define o escopo das tags disponíveis para os recursos do site selecionando um subconjunto de namespaces de tags existentes.
 
-Embora as tags possam ser criadas e adicionadas ao site da comunidade a qualquer momento, é recomendável projetar uma taxonomia antecipadamente, semelhante à criação de um banco de dados. Consulte [Usando tags](../../help/sites-authoring/tags.md).
+Embora as tags possam ser criadas e adicionadas ao site da comunidade a qualquer momento, é recomendável projetar uma taxonomia antecipadamente, de forma semelhante à criação de um banco de dados. Consulte [Uso de tags](../../help/sites-authoring/tags.md).
 
 Posteriormente, ao adicionar tags a um site da comunidade existente, é necessário salvar a edição antes de poder adicionar a nova tag a uma função de catálogo na estrutura do site.
 
-Para um site da comunidade, depois que o site é publicado e as tags são publicadas, é necessário ativar o acesso de leitura aos membros da comunidade. Consulte [Definindo permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions).
+Para um site da comunidade, depois que o site é publicado e as tags são publicadas, é necessário habilitar o acesso de leitura aos membros da comunidade. Consulte [Definir permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-A seguir está como ele aparece no CRXDE quando um administrador aplica permissões de leitura a `/etc/tags/ski-catalog` para o grupo `Community Enable Members`.
+Veja a seguir como ele aparece no CRXDE quando um administrador aplica permissões de leitura a `/etc/tags/ski-catalog` para o grupo `Community Enable Members`.
 
 ![tags do site](assets/site-tags.png)
 
-## Namespaces de tag do catálogo {#catalog-tag-namespaces}
+## Namespaces de tag de catálogo {#catalog-tag-namespaces}
 
-O recurso de catálogo usa tags para se definir. Ao configurar a função de catálogo em um site da comunidade, o conjunto de namespaces de tags a serem escolhidas é definido pelo escopo de espaços de tags definidos para o site da comunidade.
+O recurso de catálogo usa tags para se definir. Ao configurar a função de catálogo em um site da comunidade, o conjunto de namespaces de tag a serem escolhidos é definido pelo escopo de namespaces de tag definidos para o site da comunidade.
 
-A função Catalog inclui uma configuração de tag que define as tags listadas na interface do usuário do filtro para o catálogo. A configuração &quot;Todas as Namespaces&quot; refere-se ao escopo das namespaces de tags selecionadas para o site da comunidade.
+A função Catálogo inclui uma configuração de tag que define as tags listadas na interface do usuário de filtro do catálogo. A configuração &quot;Todos os namespaces&quot; refere-se ao escopo dos namespaces de tags selecionados para o site da comunidade.
 
-![namespace de catálogo](assets/catalog-namespace.png)
+![catalog-namespace](assets/catalog-namespace.png)
 
 ## Aplicação de tags a recursos de ativação {#applying-tags-to-enablement-resources}
 
-Os recursos de ativação e os caminhos de aprendizado aparecerão em todos os catálogos quando `Show in Catalog` estiver marcado. Adicionar tags a recursos e caminhos de aprendizado permitirá a pré-filtragem em catálogos específicos, bem como a filtragem na interface do usuário do catálogo.
+Os recursos de ativação e os caminhos de aprendizado aparecerão em todos os catálogos quando `Show in Catalog` estiver marcado. Adicionar tags aos recursos e caminhos de aprendizagem permitirá a filtragem prévia em catálogos específicos, bem como a filtragem na interface do usuário do catálogo.
 
-A restrição dos recursos de ativação e dos caminhos de aprendizado para catálogos específicos é alcançada pela criação de [pré-filtros](catalog-developer-essentials.md#pre-filters).
+Restringir os recursos de ativação e os caminhos de aprendizado para catálogos específicos é feito criando [pré-filtros](catalog-developer-essentials.md#pre-filters).
 
-A interface do usuário do catálogo permite que os visitantes apliquem um filtro de tags à lista de recursos e caminhos de aprendizado exibidos nesse catálogo.
+A interface do usuário do catálogo permite que os visitantes apliquem um filtro de tags à lista de recursos e caminhos de aprendizado que aparecem nesse catálogo.
 
-O administrador que aplica as tags para ativar os recursos deve estar ciente das namespaces de tags associadas aos catálogos, bem como da taxonomia para selecionar uma subtag para uma categorização mais refinada.
+O administrador que aplica as tags aos recursos de ativação deve estar ciente dos namespaces de tags associados aos catálogos, bem como da taxonomia para selecionar uma subtag para uma categorização mais refinada.
 
-Por exemplo, se uma namespace `ski-catalog` foi criada e definida em um catálogo chamado `Ski Catalog`, ela pode ter duas tags-filho: `lesson-1` e `lesson-2`.
+Por exemplo, se um namespace `ski-catalog` foi criado e definido em um catálogo chamado `Ski Catalog`, ele pode ter duas tags-filho: `lesson-1` e `lesson-2`.
 
-Assim, qualquer recurso de ativação marcado com um dos seguintes:
+Assim, qualquer recurso de ativação marcado com um dos seguintes itens:
 
 * catálogo de esqui:lição-1
 * catálogo de esqui:lição-2
 
-aparecerá em `Ski Catalog` depois que o recurso de ativação for publicado.
+aparecerá em `Ski Catalog` após a publicação do recurso de ativação.
 
-![basic-info](assets/applytags-basicinfo.png)
+![informações básicas](assets/applytags-basicinfo.png)
 
-## Visualizando catálogo ao publicar {#viewing-catalog-on-publish}
+## Exibindo o catálogo na publicação {#viewing-catalog-on-publish}
 
-Depois que tudo tiver sido configurado a partir do ambiente do autor e publicado, a experiência de usar o catálogo para encontrar os recursos de ativação poderá ocorrer no ambiente de publicação.
+Depois que tudo tiver sido configurado no ambiente de criação e publicado, a experiência de usar o catálogo para encontrar recursos de ativação poderá ser sentida no ambiente de publicação.
 
-Se nenhuma namespace de tag for exibida no menu suspenso, verifique se as permissões foram definidas corretamente no ambiente de publicação.
+Se nenhum namespace de tag for exibido no menu suspenso, verifique se as permissões foram definidas corretamente no ambiente de publicação.
 
-Se as namespaces de tags forem adicionadas e estiverem ausentes, verifique se as tags e o site foram publicados novamente.
+Se os namespaces de tag foram adicionados e estiverem ausentes, verifique se as tags e o site foram publicados novamente.
 
-Se nenhum recurso de ativação for exibido após selecionar uma tag ao exibir o catálogo, verifique se há uma tag da(s) namespace(s) do catálogo aplicada(s) ao recurso de ativação.
+Se nenhum recurso de ativação for exibido depois de selecionar uma tag ao visualizar o catálogo, verifique se há uma tag do(s) namespace(s) do catálogo aplicada(s) ao recurso de ativação.
 
-![Catálogo de visualizações](assets/viewcatalog.png)
+![catálogo de visualização](assets/viewcatalog.png)
 
