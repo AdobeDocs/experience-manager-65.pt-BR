@@ -1,40 +1,41 @@
 ---
-title: Armazenamento personalizado para componentes de rascunhos e envios
-seo-title: Armazenamento personalizado para componentes de rascunhos e envios
-description: Veja como personalizar o armazenamento de dados do usuário para rascunhos e envios.
-seo-description: Veja como personalizar o armazenamento de dados do usuário para rascunhos e envios.
+title: Armazenamento personalizado para rascunhos e componentes de envios
+seo-title: Armazenamento personalizado para rascunhos e componentes de envios
+description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
+seo-description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
+feature: Portal do Forms
 translation-type: tm+mt
-source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
 
-# Armazenamento personalizado para o componente de rascunhos e envios {#custom-storage-for-drafts-and-submissions-component}
+# Armazenamento personalizado para rascunhos e componentes de envios {#custom-storage-for-drafts-and-submissions-component}
 
 ## Visão geral {#overview}
 
-A AEM Forms permite salvar um formulário como rascunho. A funcionalidade de rascunho permite manter um formulário de trabalho em andamento, que pode ser preenchido e enviado posteriormente de qualquer dispositivo.
+O AEM Forms permite salvar um formulário como rascunho. A funcionalidade de rascunho permite manter um formulário de trabalho em andamento, que pode ser preenchido e enviado posteriormente de qualquer dispositivo.
 
-Por padrão, a AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó `/content/forms/fp` na instância Publicar. Além disso, os componentes do portal da AEM Forms fornecem serviços de dados, que podem ser usados para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
+Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó `/content/forms/fp` na instância de Publicação. Além disso, os componentes do portal do AEM Forms fornecem serviços de dados, que podem ser usados para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
 
 ## Pré-requisitos  {#prerequisites}
 
 * Ativar [componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
-* Criar uma [página de portal de formulários](/help/forms/using/creating-form-portal-page.md)
-* Habilitar [formulários adaptáveis para o portal de formulários](/help/forms/using/draft-submission-component.md)
-* Saiba mais sobre [detalhes de implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Criar uma [página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
+* Ativar [formulários adaptáveis para o portal de formulários](/help/forms/using/draft-submission-component.md)
+* Saiba [detalhes de implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Serviço de dados de rascunho {#draft-data-service}
 
-Para personalizar o armazenamento de dados do usuário para rascunhos, é necessário implementar todos os métodos da interface `DraftDataService`. O código de amostra a seguir descreve os métodos e argumentos.
+Para personalizar o armazenamento dos dados do usuário para rascunhos, é necessário implementar todos os métodos da interface `DraftDataService`. O código de amostra a seguir descreve os métodos e argumentos.
 
 ```java
 /**
@@ -103,7 +104,7 @@ public interface DraftDataService {
 
 ## Serviço de dados de envio {#submission-data-service}
 
-Para personalizar o armazenamento de dados do usuário para envios, é necessário implementar todos os métodos da interface `SubmitDataService`. O código de amostra a seguir descreve os métodos e argumentos.
+Para personalizar o armazenamento dos dados do usuário para envios, você precisa implementar todos os métodos da interface `SubmitDataService`. O código de amostra a seguir descreve os métodos e argumentos.
 
 ```java
 /**
@@ -188,7 +189,7 @@ public interface SubmitDataService {
 }
 ```
 
-O portal da Forms usa o conceito de identificador universalmente único (UUID) para gerar uma ID exclusiva para cada rascunho e formulário enviado. Você também pode gerar uma ID exclusiva própria. Você pode implementar a interface FPKeyGeneratorService, substituir seus métodos e desenvolver uma lógica personalizada para gerar uma ID exclusiva personalizada para cada rascunho e formulário enviado. Além disso, defina a classificação de serviço da implementação de geração de ID personalizada superior a 0. Ela garante que a implementação personalizada seja usada em vez da implementação padrão.
+O portal do Forms usa o conceito de identificador universal exclusivo (UUID) para gerar uma ID exclusiva para cada rascunho e formulário enviado. Você também pode gerar uma ID exclusiva da sua. Você pode implementar a interface FPKeyGeneratorService, substituir seus métodos e desenvolver uma lógica personalizada para gerar uma ID exclusiva personalizada para cada rascunho e formulário enviado. Além disso, defina a classificação de serviço da implementação de geração de ID personalizada como maior que 0. Ela garante que a implementação personalizada seja usada em vez da implementação padrão.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -203,7 +204,7 @@ public interface FPKeyGeneratorService {
 }
 ```
 
-Você pode usar a anotação abaixo para aumentar a classificação do serviço da ID personalizada gerada com o código acima:
+Você pode usar a anotação abaixo para aumentar a classificação do serviço para a ID personalizada gerada com o código acima:
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
