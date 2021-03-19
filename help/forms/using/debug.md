@@ -1,18 +1,19 @@
 ---
 title: Depuração de formulários HTML5
 seo-title: Depuração de formulários HTML5
-description: As etapas da lista do documento para solucionar vários problemas conhecidos.
-seo-description: As etapas da lista do documento para solucionar vários problemas conhecidos.
+description: As etapas da lista de documentos para solucionar vários problemas conhecidos.
+seo-description: As etapas da lista de documentos para solucionar vários problemas conhecidos.
 uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
+feature: Formulários para publicação de conteúdo para dispositivos móveis
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -20,13 +21,13 @@ ht-degree: 1%
 
 # Depuração de formulários HTML5 {#debugging-html-forms}
 
-Este documento inclui vários cenários de solução de problemas. Para cada cenário, algumas etapas são fornecidas para solucionar o problema. Siga estas etapas e, se o problema persistir, configure o Logger para obter e revisar os registros em busca de erros/avisos. Para obter mais detalhes sobre o registro de formulários em HTML5, consulte [Geração de registros para formulários em HTML5](/help/forms/using/enable-logs.md).
+Este documento inclui vários cenários de solução de problemas. Para cada cenário, algumas etapas são fornecidas para solucionar o problema. Siga estas etapas e, se o problema persistir, configure o Logger para obter e revisar os logs quanto a erros/avisos. Para obter mais detalhes sobre o registro de formulários HTML5, consulte [Geração de logs para formulários HTML5](/help/forms/using/enable-logs.md).
 
 ## Problema: Ao renderizar o formulário, vejo a página de exceção org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
 Nos detalhes da exceção, procure a palavra **causada por**.
 
-O motivo provável é que um ou mais parâmetros no URL estejam incorretos.
+O motivo provável é que um ou mais parâmetros no URL estão incorretos.
 
 Verifique os seguintes parâmetros:
 
@@ -38,7 +39,7 @@ Verifique os seguintes parâmetros:
   </tr>
   <tr>
    <td>template</td>
-   <td>O nome de arquivo do modelo</td>
+   <td>O nome do arquivo do modelo</td>
   </tr>
   <tr>
    <td>contentRoot</td>
@@ -46,7 +47,7 @@ Verifique os seguintes parâmetros:
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Caminho absoluto do arquivo de dados que é unido ao modelo.<br /> Observação: O caminho define o caminho absoluto do arquivo de dados.</td>
+   <td>Caminho absoluto do arquivo de dados que é unido ao modelo.<br /> Observação: Path define o caminho absoluto do arquivo de dados.</td>
   </tr>
   <tr>
    <td>data</td>
@@ -58,31 +59,31 @@ Verifique os seguintes parâmetros:
 ## Problema: Não é possível renderizar um formulário (uma mensagem de erro é exibida) {#problem-unable-to-render-form}
 
 1. Verifique se os parâmetros especificados estão corretos. Para obter informações detalhadas sobre parâmetros, consulte [Renderizar parâmetros](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
-1. Faça logon no CRX Package Manager (em https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) e verifique se os seguintes pacotes estão instalados corretamente:
+1. Faça logon no Gerenciador de pacotes do CRX (em https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) e verifique se os seguintes pacotes estão instalados corretamente:
 
    * adobe-lc-forms-content-pkg-&lt;versão>.zip
    * adobe-lc-forms-runtime-pkg-&lt;versão>.zip
 
-1. Faça logon no CQ Web Console (Console do Felix) em https://&lt;servidor>:&lt;porta>/system/console/bundles.
+1. Faça logon no Console da Web CQ (Felix Console) em https://&lt;server>:&lt;port>/system/console/bundles.
 
-   Verifique se o status dos seguintes pacotes está &quot;ativo&quot;:
+   Certifique-se de que o status dos seguintes pacotes esteja &quot;ativo&quot;:
 
    * escala-lang.bundle [osgi]
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Renderizador Adobe XFA Forms
+   * Renderizador Forms do Adobe XFA
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Conector LC Adobe XFA Forms
+   * Conector LC do Adobe XFA Forms
 
-   (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
+   (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
 ## Problema: O formulário é renderizado sem estilos {#problem-form-renders-without-styles}
 
-1. No seu navegador, abra **Ferramentas do desenvolvedor**. Verifique se perfil.css está disponível.
-1. Se o arquivo perfil.css não estiver disponível, faça logon no CRX DE em https://&lt;servidor>:&lt;porta>/crx/de.
+1. No seu navegador, abra **Ferramentas do desenvolvedor**. Certifique-se de que profile.css esteja disponível.
+1. Se o arquivo profile.css não estiver disponível, faça logon no CRX DE em https://&lt;server>:&lt;port>/crx/de.
 1. Na hierarquia de pastas à esquerda, navegue até /etc/clientlibs/fd/xfaforms/. Abra os arquivos css.txt listados nas pastas.
 
    * o perfil do visitante
@@ -91,7 +92,7 @@ Verifique os seguintes parâmetros:
    * toolbar
    * xfalib
 
-1. Verifique se os arquivos mencionados dentro do css.txt estão presentes no CRX DE lite em /libs/fd/xfaforms/clientlibs/xfalib/css.
+1. Verifique se os arquivos mencionados no css.txt estão presentes no CRX DE lite em /libs/fd/xfaforms/clientlibs/xfalib/css.
 
    ```css
    #base=css
@@ -102,38 +103,38 @@ Verifique os seguintes parâmetros:
    listboxwidget.css
    ```
 
-1. Se os arquivos mencionados não estiverem disponíveis, instale novamente o pacote adobe-lc-forms-runtime-pkg-&lt;versão>.zip.
+1. Se os arquivos mencionados não estiverem disponíveis, instale o pacote adobe-lc-forms-runtime-pkg-&lt;version>.zip novamente.
 
 ### Problema: Erro inesperado encontrado {#problem-unexpected-error-encountered}
 
-1. No URL do formulário, adicione um parâmetro de query debugClientLibs e defina seu valor como true (por exemplo: https://&lt;servidor>:&lt;porta>/content/xfaforms/profiles/test.html?contentRoot=&lt;algum caminho>&amp;template=&lt;nome do arquivo xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
-1. No navegador de desktop como o chrome, vá até Developer Tools -> Console.
-1. Abra os registros para identificar o tipo de erro. Para obter informações detalhadas sobre registros, consulte [registros para formulários HTML5](/help/forms/using/enable-logs.md).
-1. Vá para Ferramentas do desenvolvedor -> Console. Use o rastreamento de pilha para localizar o código que está causando o erro. Depurar o erro para resolver o problema.
+1. No URL do formulário, adicione um parâmetro de consulta debugClientLibs e defina seu valor como true (Por exemplo: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. No navegador de desktop como o chrome, acesse Ferramentas do desenvolvedor -> Console.
+1. Abra os logs para identificar o tipo de erro. Para obter informações detalhadas sobre logs, consulte [logs para formulários HTML5](/help/forms/using/enable-logs.md).
+1. Acesse Ferramentas do desenvolvedor -> Console. Use o rastreamento de pilha para localizar o código que está causando o erro. Depurar o erro para resolver o problema.
 
    >[!NOTE]
    >
-   >Se houver falha de script, verifique se o mesmo problema ocorre durante a execução do formulário em PDF. Em caso afirmativo, há um problema na lógica de script de formulário.
+   >Se houver falha no script, verifique se o mesmo problema ocorre durante a renderização do formulário em PDF. Em caso afirmativo, há um problema na lógica de script de formulário.
 
 ## Problema: Não é possível enviar o formulário {#problem-unable-to-submit-the-form}
 
-1. Verifique se você tem direitos de acesso ao servidor AEM e se está conectado ao servidor.
+1. Certifique-se de ter direitos para acessar o servidor AEM e estar conectado ao servidor.
 1. Verifique se o parâmetro submitUrl está correto.
-1. Ative os registros do lado do cliente como mencionado em [Registros para os formulários HTML5](/help/forms/using/enable-logs.md) usando a opção de depuração como **1-a5-b5-c5**. Em seguida, renderize o formulário e clique em Enviar. Abra o console de depuração do navegador e verifique se há um erro.
-1. Localize os registros do servidor, conforme mencionado em [Registros para os formulários HTML5](/help/forms/using/enable-logs.md). Verifique se ocorreu algum erro nos registros do servidor durante o envio.
+1. Ative os logs do lado do cliente, conforme mencionado em [Registros para os formulários HTML5](/help/forms/using/enable-logs.md) usando a opção de depuração como **1-a5-b5-c5**. Em seguida, renderize o formulário e clique em enviar. Abra o console de depuração do navegador e verifique se há um erro.
+1. Localize os logs do servidor, conforme mencionado em [Registros para os formulários HTML5](/help/forms/using/enable-logs.md). Verifique se houve algum erro nos logs do servidor durante o envio.
 
-## Problema: As mensagens de erro localizadas não exibem {#problem-localized-error-messages-do-not-display}
+## Problema: Mensagens de erro localizadas não exibem {#problem-localized-error-messages-do-not-display}
 
-1. Renderize o formulário com o parâmetro de query adicional **debugClientLibs=true** no navegador da área de trabalho e vá até Developer Tools -> Resources (Ferramentas do desenvolvedor -> Recursos) e verifique o arquivo I18N.css.
-1. Se o arquivo não estiver disponível, faça logon no CRX DE em https://&lt;servidor>:&lt;porta>/crx/de.
+1. Renderize o formulário com o parâmetro de consulta adicional **debugClientLibs=true** no navegador do desktop e acesse Ferramentas do desenvolvedor -> Recursos e verifique o arquivo I18N.css.
+1. Se o arquivo não estiver disponível, faça logon no CRX DE em https://&lt;server>:&lt;port>/crx/de.
 1. Na hierarquia de pastas à esquerda, navegue até /libs/fd/xfaforms/clientlibs/I18N e verifique se os seguintes arquivos e pastas existem:
 
    * Namespace.js
    * LogMessages.js
    * Pastas para idiomas
 
-1. Se algum dos arquivos ou pastas acima não existir, instale novamente o pacote **adobe-lc-forms-runtime-pkg-&lt;version>.zip**.
-1. Navegue até a pasta que tem o mesmo nome que o nome da localidade e verifique seu conteúdo. A pasta deve conter os seguintes arquivos:
+1. Se algum dos arquivos ou pastas acima não existir, instale o pacote **adobe-lc-forms-runtime-pkg-&lt;version>.zip** novamente.
+1. Navegue até a pasta que tem o mesmo nome do local e verifique seu conteúdo. A pasta deve conter os seguintes arquivos:
 
    * I18N.js
    * js.txt
@@ -146,13 +147,13 @@ Verifique os seguintes parâmetros:
    ../LogMessages.js
    ```
 
-## Problema: Imagem não aparecendo {#problem-image-not-showing-up}
+## Problema: Imagem não mostrando {#problem-image-not-showing-up}
 
-1. Verifique se o URL da imagem está correto.
-1. Verifique se o navegador suporta esse tipo de imagem.
+1. Certifique-se de que o URL da imagem esteja correto.
+1. Verifique se o navegador aceita esse tipo de imagem.
 1. Nos detalhes da exceção, procure a palavra **causada por**.
 
-   O motivo provável é que um ou mais parâmetros no URL estejam incorretos.
+   O motivo provável é que um ou mais parâmetros no URL estão incorretos.
 
    Verifique os seguintes parâmetros:
 Texto da etapa
@@ -164,8 +165,8 @@ Texto da etapa
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td>template</td>
-   <td>O nome de arquivo do modelo</td>
+   <td>modelo</td>
+   <td>O nome do arquivo do modelo</td>
   </tr>
   <tr>
    <td>contentRoot</td>
@@ -173,15 +174,15 @@ Texto da etapa
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Caminho absoluto do arquivo de dados que é unido ao modelo.<br /> Observação: O caminho define o caminho absoluto do arquivo de dados.</td>
+   <td>Caminho absoluto do arquivo de dados que é unido ao modelo.<br /> Observação: Path define o caminho absoluto do arquivo de dados.</td>
   </tr>
   <tr>
-   <td>data</td>
+   <td>dados</td>
    <td>Bytes de dados codificados UTF-8 que são mesclados com o modelo.</td>
   </tr>
  </tbody>
 </table>
 
-1. No navegador do desktop, vá para Ferramentas do desenvolvedor -> Recursos.
+1. No navegador do desktop, acesse Ferramentas do desenvolvedor -> Recursos.
 
-   Verifique no lado esquerdo em Quadros se essa imagem é exibida.
+   Verifique o lado esquerdo em Quadros se essa imagem for exibida.
