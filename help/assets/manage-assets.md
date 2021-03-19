@@ -3,10 +3,11 @@ title: Gerenciar seus ativos digitais
 description: Saiba mais sobre as tarefas de gerenciamento de ativos, como carregar, baixar, editar, pesquisar, excluir, anotar e transformar seus ativos digitais em versão.
 contentOwner: AG
 mini-toc-levels: 1
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '9590'
+source-wordcount: '9592'
 ht-degree: 4%
 
 ---
